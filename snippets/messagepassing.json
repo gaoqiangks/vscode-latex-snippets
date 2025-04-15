@@ -1,0 +1,236 @@
+{
+
+
+	"newprocess":{
+		"prefix":"newprocess",
+		"body":[
+			"\\newprocess{${1:name}}"
+		]
+	},
+
+
+	"newprocess":{
+		"prefix":"newprocess",
+		"body":[
+			"\\newprocess{${1:name}}[${2:display name}]"
+		]
+	},
+
+
+	"newprocesswithlength":{
+		"prefix":"newprocesswithlength",
+		"body":[
+			"\\newprocesswithlength{${1:name}}{${2:length%plain}}"
+		]
+	},
+
+
+	"newprocesswithlength":{
+		"prefix":"newprocesswithlength",
+		"body":[
+			"\\newprocesswithlength{${1:name}}[${3:display name}]{${2:length%plain}}"
+		]
+	},
+
+
+	"processlength":{
+		"prefix":"processlength",
+		"body":[
+			"\\processlength{${1:name}}{${2:length%plain}}"
+		]
+	},
+
+
+	"newprocesswithstateinterval":{
+		"prefix":"newprocesswithstateinterval",
+		"body":[
+			"\\newprocesswithstateinterval{${1:name}}{${2:state name}}"
+		]
+	},
+
+
+	"newprocesswithstateinterval":{
+		"prefix":"newprocesswithstateinterval",
+		"body":[
+			"\\newprocesswithstateinterval{${1:name}}[${3:display name}]{${2:state name}}"
+		]
+	},
+
+
+	"newprocesswithcrash":{
+		"prefix":"newprocesswithcrash",
+		"body":[
+			"\\newprocesswithcrash{${1:name}}{${2:length%plain}}{${3:crash coord name}}"
+		]
+	},
+
+
+	"newprocesswithcrash":{
+		"prefix":"newprocesswithcrash",
+		"body":[
+			"\\newprocesswithcrash{${1:name}}[${4:display name}]{${2:length%plain}}{${3:crash coord name}}"
+		]
+	},
+
+
+	"drawtimeline":{
+		"prefix":"drawtimeline",
+		"body":[
+			"\\drawtimeline{${1:length%plain}}"
+		]
+	},
+
+
+	"send":{
+		"prefix":"send",
+		"body":[
+			"\\send{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}"
+		]
+	},
+
+
+	"sendwithname":{
+		"prefix":"sendwithname",
+		"body":[
+			"\\sendwithname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}"
+		]
+	},
+
+
+	"sendwithname":{
+		"prefix":"sendwithname",
+		"body":[
+			"\\sendwithname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}[${6:label options}]"
+		]
+	},
+
+
+	"sendoutofband":{
+		"prefix":"sendoutofband",
+		"body":[
+			"\\sendoutofband{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}"
+		]
+	},
+
+
+	"crash":{
+		"prefix":"crash",
+		"body":[
+			"\\crash{${1:process}}{${2:time}}{${3:name}}"
+		]
+	},
+
+
+	"restart":{
+		"prefix":"restart",
+		"body":[
+			"\\restart{${1:name}}{${2:date}}{${3:duration}}"
+		]
+	},
+
+
+	"checkpoint":{
+		"prefix":"checkpoint",
+		"body":[
+			"\\checkpoint{${1:process}}{${2:time}}{${3:name%formula}}"
+		]
+	},
+
+
+	"checkpointspecial":{
+		"prefix":"checkpointspecial",
+		"body":[
+			"\\checkpointspecial{${1:process}}{${2:time}}{${3:name%formula}}{${4:label}}"
+		]
+	},
+
+
+	"stateinterval":{
+		"prefix":"stateinterval",
+		"body":[
+			"\\stateinterval{${1:process}}{${2:time}}{${3:name%formula}}"
+		]
+	},
+
+
+	"stateintervalspecial":{
+		"prefix":"stateintervalspecial",
+		"body":[
+			"\\stateintervalspecial{${1:process}}{${2:time}}{${3:name%formula}}{${4:label}}"
+		]
+	},
+
+
+	"colouredbox":{
+		"prefix":"colouredbox",
+		"body":[
+			"\\colouredbox{${1:process1}}{${2:process2}}{${3:start time}}{${4:end time}}{${5:label}}"
+		]
+	},
+
+
+	"annotate":{
+		"prefix":"annotate",
+		"body":[
+			"\\annotate{${1:process}}{${2:time}}{${3:text}}"
+		]
+	},
+
+
+	"annotatexplicit":{
+		"prefix":"annotatexplicit",
+		"body":[
+			"\\annotatexplicit{${1:process}}{${2:time}}{${3:text}}{${4:name}}"
+		]
+	},
+
+
+	"sendwithstateinterval":{
+		"prefix":"sendwithstateinterval",
+		"body":[
+			"\\sendwithstateinterval{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}"
+		]
+	},
+
+
+	"sendwithstateintervalandname":{
+		"prefix":"sendwithstateintervalandname",
+		"body":[
+			"\\sendwithstateintervalandname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}{${6:message name}}"
+		]
+	},
+
+
+	"sendwithstateintervalandname":{
+		"prefix":"sendwithstateintervalandname",
+		"body":[
+			"\\sendwithstateintervalandname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}{${6:message name}}[${7:label options}]"
+		]
+	},
+
+
+	"colouredboxcolour":{
+		"prefix":"colouredboxcolour",
+		"body":[
+			"\\colouredboxcolour{${1:color}}"
+		]
+	},
+
+
+	"oobcolour":{
+		"prefix":"oobcolour",
+		"body":[
+			"\\oobcolour{${1:color}}"
+		]
+	},
+
+
+	"messagepassing":{
+		"prefix":"messagepassing",
+		"body":[
+			"\\begin{messagepassing}",
+			"\t$1",
+			"\\end{messagepassing}"
+		]
+	}
+}

@@ -1,0 +1,166 @@
+{
+
+
+	"IncludeTests":{
+		"prefix":"IncludeTests",
+		"body":[
+			"\\IncludeTests{${1:pattern list}}"
+		]
+	},
+
+
+	"TestErrors":{
+		"prefix":"TestErrors",
+		"body":[
+			"\\TestErrors{${1:pattern list}}"
+		]
+	},
+
+
+	"LogTests":{
+		"prefix":"LogTests",
+		"body":[
+			"\\LogTests{${1:file ext}}{${2:keywordlist1}}{${3:keywordlist2}}"
+		]
+	},
+
+
+	"LogClose":{
+		"prefix":"LogClose",
+		"body":[
+			"\\LogClose{${1:file ext}}"
+		]
+	},
+
+
+	"Expect":{
+		"prefix":"Expect",
+		"body":[
+			"\\Expect{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"Expect*":{
+		"prefix":"Expect*",
+		"body":[
+			"\\Expect*{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"Expect*":{
+		"prefix":"Expect*",
+		"body":[
+			"\\Expect*{${1:arg1}}*{${2:arg2}}"
+		]
+	},
+
+
+	"ExpectIfThen":{
+		"prefix":"ExpectIfThen",
+		"body":[
+			"\\ExpectIfThen{${1:condition}}"
+		]
+	},
+
+
+	"InRange":{
+		"prefix":"InRange",
+		"body":[
+			"\\InRange{${1:dimen1%l}}{${2:dimen2%l}}"
+		]
+	},
+
+
+	"NearTo":{
+		"prefix":"NearTo",
+		"body":[
+			"\\NearTo{${1:dimen%l}}"
+		]
+	},
+
+
+	"NearTo":{
+		"prefix":"NearTo",
+		"body":[
+			"\\NearTo[${2:opt dimen%l}]{${1:dimen%l}}"
+		]
+	},
+
+
+	"SaveValueFile":{
+		"prefix":"SaveValueFile",
+		"body":[
+			"\\SaveValueFile{${1:file name%file}}"
+		]
+	},
+
+
+	"CloseValueFile":{
+		"prefix":"CloseValueFile",
+		"body":[
+			"\\CloseValueFile"
+		]
+	},
+
+
+	"SaveValue":{
+		"prefix":"SaveValue",
+		"body":[
+			"\\SaveValue{${1:cmd}}{${2:arg}}"
+		]
+	},
+
+
+	"SaveValue":{
+		"prefix":"SaveValue",
+		"body":[
+			"\\SaveValue{${1:cmd}}*{${2:arg}}"
+		]
+	},
+
+
+	"InternalSetValue":{
+		"prefix":"InternalSetValue",
+		"body":[
+			"\\InternalSetValue"
+		]
+	},
+
+
+	"SavedValue":{
+		"prefix":"SavedValue",
+		"body":[
+			"\\SavedValue"
+		]
+	},
+
+
+	"CalledName":{
+		"prefix":"CalledName",
+		"body":[
+			"\\CalledName"
+		]
+	},
+
+
+	"ExpectCallSequence":{
+		"prefix":"ExpectCallSequence",
+		"body":[
+			"\\begin{ExpectCallSequence}",
+			"\t$1",
+			"\\end{ExpectCallSequence}"
+		]
+	},
+
+
+	"qstest":{
+		"prefix":"qstest",
+		"body":[
+			"\\begin{qstest}",
+			"\t$1",
+			"\\end{qstest}"
+		]
+	}
+}

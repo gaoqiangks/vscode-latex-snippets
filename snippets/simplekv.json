@@ -1,0 +1,74 @@
+{
+
+
+	"setKV":{
+		"prefix":"setKV",
+		"body":[
+			"\\setKV[${2:keygroup name}]{${1:key1=val1,key2=val2,...}}"
+		]
+	},
+
+
+	"setKVdefault":{
+		"prefix":"setKVdefault",
+		"body":[
+			"\\setKVdefault[${2:keygroup name}]{${1:key1=val1,key2=val2,...}}"
+		]
+	},
+
+
+	"useKV":{
+		"prefix":"useKV",
+		"body":[
+			"\\useKV[${2:keygroup}]{${1:key%plain}}"
+		]
+	},
+
+
+	"restoreKV":{
+		"prefix":"restoreKV",
+		"body":[
+			"\\restoreKV[${1:keygroup}]"
+		]
+	},
+
+
+	"useKVdefault":{
+		"prefix":"useKVdefault",
+		"body":[
+			"\\useKVdefault[${1:keygroup}]"
+		]
+	},
+
+
+	"ifboolKV":{
+		"prefix":"ifboolKV",
+		"body":[
+			"\\ifboolKV[${4:keygroup}]{${1:key%plain}}{${2:true code}}{${3:false code}}"
+		]
+	},
+
+
+	"showKV":{
+		"prefix":"showKV",
+		"body":[
+			"\\showKV[${2:keygroup}]{${1:key%plain}}"
+		]
+	},
+
+
+	"defKV":{
+		"prefix":"defKV",
+		"body":[
+			"\\defKV[${2:keygroup}]{${1:key1=code1,key2=code2,...}}"
+		]
+	},
+
+
+	"testboolKV":{
+		"prefix":"testboolKV",
+		"body":[
+			"\\testboolKV{${1:arg}}{${2:true code}}{${3:false code}}"
+		]
+	}
+}

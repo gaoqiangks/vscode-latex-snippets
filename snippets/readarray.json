@@ -1,0 +1,266 @@
+{
+
+
+	"readdef":{
+		"prefix":"readdef",
+		"body":[
+			"\\readdef{${1:file}}{${2:data-macro%cmd}}"
+		]
+	},
+
+
+	"readrecordarray":{
+		"prefix":"readrecordarray",
+		"body":[
+			"\\readrecordarray{${1:file}}{${2:array-identifier%cmd}}"
+		]
+	},
+
+
+	"readarray":{
+		"prefix":"readarray",
+		"body":[
+			"\\readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
+		]
+	},
+
+
+	"readarray":{
+		"prefix":"readarray",
+		"body":[
+			"\\readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
+		]
+	},
+
+
+	"readarray*":{
+		"prefix":"readarray*",
+		"body":[
+			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
+		]
+	},
+
+
+	"readarray*":{
+		"prefix":"readarray*",
+		"body":[
+			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
+		]
+	},
+
+
+	"initarray":{
+		"prefix":"initarray",
+		"body":[
+			"\\initarray{${1:array-identifier%cmd}}[${2:rows,columns}]"
+		]
+	},
+
+
+	"initarray":{
+		"prefix":"initarray",
+		"body":[
+			"\\initarray{${1:array-identifier%cmd}}[${2:planes,rows,columns}]"
+		]
+	},
+
+
+	"mergearray":{
+		"prefix":"mergearray",
+		"body":[
+			"\\mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:row,column}]"
+		]
+	},
+
+
+	"mergearray":{
+		"prefix":"mergearray",
+		"body":[
+			"\\mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:plane,row,column}]"
+		]
+	},
+
+
+	"typesetarray":{
+		"prefix":"typesetarray",
+		"body":[
+			"\\typesetarray{${1:array-identifier}}"
+		]
+	},
+
+
+	"arraytomacro":{
+		"prefix":"arraytomacro",
+		"body":[
+			"\\arraytomacro{${1:array-identifier}}[${3:row,column}]{${2:macro%cmd}}"
+		]
+	},
+
+
+	"arraytomacro":{
+		"prefix":"arraytomacro",
+		"body":[
+			"\\arraytomacro{${1:array-identifier}}[${3:plane,row,column}]{${2:macro%cmd}}"
+		]
+	},
+
+
+	"setvalue":{
+		"prefix":"setvalue",
+		"body":[
+			"\\setvalue{${1:array-identifier}}[${3:row,column}]{${2:value}}"
+		]
+	},
+
+
+	"setvalue":{
+		"prefix":"setvalue",
+		"body":[
+			"\\setvalue{${1:array-identifier}}[${3:plane,row,column}]{${2:value}}"
+		]
+	},
+
+
+	"readarraysepchar":{
+		"prefix":"readarraysepchar",
+		"body":[
+			"\\readarraysepchar{${1:parsing-separator-char}}"
+		]
+	},
+
+
+	"readarrayinitvalue":{
+		"prefix":"readarrayinitvalue",
+		"body":[
+			"\\readarrayinitvalue"
+		]
+	},
+
+
+	"typesetcell":{
+		"prefix":"typesetcell",
+		"body":[
+			"\\typesetcell{${1:arg}}"
+		]
+	},
+
+
+	"typesetplanesepchar":{
+		"prefix":"typesetplanesepchar",
+		"body":[
+			"\\typesetplanesepchar"
+		]
+	},
+
+
+	"typesetrowsepchar":{
+		"prefix":"typesetrowsepchar",
+		"body":[
+			"\\typesetrowsepchar"
+		]
+	},
+
+
+	"typesetcolsepchar":{
+		"prefix":"typesetcolsepchar",
+		"body":[
+			"\\typesetcolsepchar"
+		]
+	},
+
+
+	"nocheckbounds":{
+		"prefix":"nocheckbounds",
+		"body":[
+			"\\nocheckbounds"
+		]
+	},
+
+
+	"checkbounds":{
+		"prefix":"checkbounds",
+		"body":[
+			"\\checkbounds"
+		]
+	},
+
+
+	"hypercheckbounds":{
+		"prefix":"hypercheckbounds",
+		"body":[
+			"\\hypercheckbounds"
+		]
+	},
+
+
+	"ifignoreblankreadarrayrecords":{
+		"prefix":"ifignoreblankreadarrayrecords",
+		"body":[
+			"\\ifignoreblankreadarrayrecords"
+		]
+	},
+
+
+	"ignoreblankreadarrayrecordstrue":{
+		"prefix":"ignoreblankreadarrayrecordstrue",
+		"body":[
+			"\\ignoreblankreadarrayrecordstrue"
+		]
+	},
+
+
+	"ignoreblankreadarrayrecordsfalse":{
+		"prefix":"ignoreblankreadarrayrecordsfalse",
+		"body":[
+			"\\ignoreblankreadarrayrecordsfalse"
+		]
+	},
+
+
+	"nrows":{
+		"prefix":"nrows",
+		"body":[
+			"\\nrows"
+		]
+	},
+
+
+	"ncols":{
+		"prefix":"ncols",
+		"body":[
+			"\\ncols"
+		]
+	},
+
+
+	"nrecords":{
+		"prefix":"nrecords",
+		"body":[
+			"\\nrecords"
+		]
+	},
+
+
+	"ArrayRecord":{
+		"prefix":"ArrayRecord",
+		"body":[
+			"\\ArrayRecord"
+		]
+	},
+
+
+	"ArrayRecord":{
+		"prefix":"ArrayRecord",
+		"body":[
+			"\\ArrayRecord[${1:record}]"
+		]
+	},
+
+
+	"readarraybackslash":{
+		"prefix":"readarraybackslash",
+		"body":[
+			"\\readarraybackslash"
+		]
+	}
+}

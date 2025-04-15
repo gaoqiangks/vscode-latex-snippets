@@ -1,0 +1,850 @@
+{
+
+
+	"only<overlay specification>":{
+		"prefix":"only<overlay specification>",
+		"body":[
+			"\\only<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"only":{
+		"prefix":"only",
+		"body":[
+			"\\only{${1:text}}<${2:overlay specification}>"
+		]
+	},
+
+
+	"only":{
+		"prefix":"only",
+		"body":[
+			"\\only{${1:text}}"
+		]
+	},
+
+
+	"alt<overlay specification>":{
+		"prefix":"alt<overlay specification>",
+		"body":[
+			"\\alt<overlay specification>{${1:default text%text}}{${2:alternative text%text}}"
+		]
+	},
+
+
+	"alt":{
+		"prefix":"alt",
+		"body":[
+			"\\alt{${1:default text%text}}{${2:alternative text%text}}<${3:overlay specification}>"
+		]
+	},
+
+
+	"alt":{
+		"prefix":"alt",
+		"body":[
+			"\\alt{${1:default text%text}}{${2:alternative text%text}}"
+		]
+	},
+
+
+	"action<action specification>":{
+		"prefix":"action<action specification>",
+		"body":[
+			"\\action<action specification>{${1:text}}"
+		]
+	},
+
+
+	"action":{
+		"prefix":"action",
+		"body":[
+			"\\action{${1:text}}"
+		]
+	},
+
+
+	"temporal":{
+		"prefix":"temporal",
+		"body":[
+			"\\temporal{${1:before slide text%text}}{${2:default text%text}}{${3:after slide text%text}}"
+		]
+	},
+
+
+	"temporal<overlay specification>":{
+		"prefix":"temporal<overlay specification>",
+		"body":[
+			"\\temporal<overlay specification>{${1:before slide text%text}}{${2:default text%text}}{${3:after slide text%text}}"
+		]
+	},
+
+
+	"beameroriginal":{
+		"prefix":"beameroriginal",
+		"body":[
+			"\\beameroriginal{${1:command}}"
+		]
+	},
+
+
+	"newenvironment<>":{
+		"prefix":"newenvironment<>",
+		"body":[
+			"\\newenvironment<>{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"newenvironment<>":{
+		"prefix":"newenvironment<>",
+		"body":[
+			"\\newenvironment<>{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"newenvironment<>":{
+		"prefix":"newenvironment<>",
+		"body":[
+			"\\newenvironment<>{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"renewenvironment<>":{
+		"prefix":"renewenvironment<>",
+		"body":[
+			"\\renewenvironment<>{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"renewenvironment<>":{
+		"prefix":"renewenvironment<>",
+		"body":[
+			"\\renewenvironment<>{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"renewenvironment<>":{
+		"prefix":"renewenvironment<>",
+		"body":[
+			"\\renewenvironment<>{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"newcommand<>":{
+		"prefix":"newcommand<>",
+		"body":[
+			"\\newcommand<>{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"newcommand<>":{
+		"prefix":"newcommand<>",
+		"body":[
+			"\\newcommand<>{${1:cmd}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"newcommand<>":{
+		"prefix":"newcommand<>",
+		"body":[
+			"\\newcommand<>{${1:cmd}}{${2:def}}"
+		]
+	},
+
+
+	"renewcommand<>":{
+		"prefix":"renewcommand<>",
+		"body":[
+			"\\renewcommand<>{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"renewcommand<>":{
+		"prefix":"renewcommand<>",
+		"body":[
+			"\\renewcommand<>{${1:cmd}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"renewcommand<>":{
+		"prefix":"renewcommand<>",
+		"body":[
+			"\\renewcommand<>{${1:cmd}}{${2:def}}"
+		]
+	},
+
+
+	"opaqueness<overlay specification>":{
+		"prefix":"opaqueness<overlay specification>",
+		"body":[
+			"\\opaqueness<overlay specification>{${1:percentage of opaqueness}}"
+		]
+	},
+
+
+	"setbeamercovered":{
+		"prefix":"setbeamercovered",
+		"body":[
+			"\\setbeamercovered{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pause":{
+		"prefix":"pause",
+		"body":[
+			"\\pause"
+		]
+	},
+
+
+	"pause":{
+		"prefix":"pause",
+		"body":[
+			"\\pause[${1:number}]"
+		]
+	},
+
+
+	"music":{
+		"prefix":"music",
+		"body":[
+			"\\music"
+		]
+	},
+
+
+	"beamerpause":{
+		"prefix":"beamerpause",
+		"body":[
+			"\\beamerpause"
+		]
+	},
+
+
+	"onslide":{
+		"prefix":"onslide",
+		"body":[
+			"\\onslide"
+		]
+	},
+
+
+	"onslide<overlay specification>":{
+		"prefix":"onslide<overlay specification>",
+		"body":[
+			"\\onslide<overlay specification>"
+		]
+	},
+
+
+	"onslide<overlay specification>":{
+		"prefix":"onslide<overlay specification>",
+		"body":[
+			"\\onslide<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"onslide*<overlay specification>":{
+		"prefix":"onslide*<overlay specification>",
+		"body":[
+			"\\onslide*<overlay specification>"
+		]
+	},
+
+
+	"onslide*<overlay specification>":{
+		"prefix":"onslide*<overlay specification>",
+		"body":[
+			"\\onslide*<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"item<alert specification>":{
+		"prefix":"item<alert specification>",
+		"body":[
+			"\\item<alert specification>"
+		]
+	},
+
+
+	"item<alert specification>":{
+		"prefix":"item<alert specification>",
+		"body":[
+			"\\item<alert specification>[${1:item label}]"
+		]
+	},
+
+
+	"item":{
+		"prefix":"item",
+		"body":[
+			"\\item[${1:item label}]<${2:alert specification}>"
+		]
+	},
+
+
+	"beamerdefaultoverlayspecification":{
+		"prefix":"beamerdefaultoverlayspecification",
+		"body":[
+			"\\beamerdefaultoverlayspecification{${1:default overlay specification}}"
+		]
+	},
+
+
+	"uncover":{
+		"prefix":"uncover",
+		"body":[
+			"\\uncover{${1:text}}"
+		]
+	},
+
+
+	"uncover<overlay specification>":{
+		"prefix":"uncover<overlay specification>",
+		"body":[
+			"\\uncover<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"visible":{
+		"prefix":"visible",
+		"body":[
+			"\\visible{${1:text}}"
+		]
+	},
+
+
+	"visible<overlay specification>":{
+		"prefix":"visible<overlay specification>",
+		"body":[
+			"\\visible<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"invisible":{
+		"prefix":"invisible",
+		"body":[
+			"\\invisible{${1:text}}"
+		]
+	},
+
+
+	"invisible<overlay specification>":{
+		"prefix":"invisible<overlay specification>",
+		"body":[
+			"\\invisible<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"color<overlay specification>":{
+		"prefix":"color<overlay specification>",
+		"body":[
+			"\\color<overlay specification>{${1:color}}"
+		]
+	},
+
+
+	"textbf<overlay specification>":{
+		"prefix":"textbf<overlay specification>",
+		"body":[
+			"\\textbf<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textit<overlay specification>":{
+		"prefix":"textit<overlay specification>",
+		"body":[
+			"\\textit<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textmd<overlay specification>":{
+		"prefix":"textmd<overlay specification>",
+		"body":[
+			"\\textmd<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textnormal<overlay specification>":{
+		"prefix":"textnormal<overlay specification>",
+		"body":[
+			"\\textnormal<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textrm<overlay specification>":{
+		"prefix":"textrm<overlay specification>",
+		"body":[
+			"\\textrm<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textsc<overlay specification>":{
+		"prefix":"textsc<overlay specification>",
+		"body":[
+			"\\textsc<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textsf<overlay specification>":{
+		"prefix":"textsf<overlay specification>",
+		"body":[
+			"\\textsf<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textsl<overlay specification>":{
+		"prefix":"textsl<overlay specification>",
+		"body":[
+			"\\textsl<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"texttt<overlay specification>":{
+		"prefix":"texttt<overlay specification>",
+		"body":[
+			"\\texttt<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"textup<overlay specification>":{
+		"prefix":"textup<overlay specification>",
+		"body":[
+			"\\textup<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"hypertarget<overlay specification>":{
+		"prefix":"hypertarget<overlay specification>",
+		"body":[
+			"\\hypertarget<overlay specification>{${1:target name}}{${2:anchor text%text}}"
+		]
+	},
+
+
+	"hyperlink<overlay specification>":{
+		"prefix":"hyperlink<overlay specification>",
+		"body":[
+			"\\hyperlink<overlay specification>{${1:target name}}{${2:link text%text}}"
+		]
+	},
+
+
+	"emph<overlay specification>":{
+		"prefix":"emph<overlay specification>",
+		"body":[
+			"\\emph<overlay specification>{${1:text}}"
+		]
+	},
+
+
+	"transblindshorizontal":{
+		"prefix":"transblindshorizontal",
+		"body":[
+			"\\transblindshorizontal[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transblindshorizontal<overlay specification>":{
+		"prefix":"transblindshorizontal<overlay specification>",
+		"body":[
+			"\\transblindshorizontal<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transblindsvertical":{
+		"prefix":"transblindsvertical",
+		"body":[
+			"\\transblindsvertical[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transblindsvertical<overlay specification>":{
+		"prefix":"transblindsvertical<overlay specification>",
+		"body":[
+			"\\transblindsvertical<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transboxin":{
+		"prefix":"transboxin",
+		"body":[
+			"\\transboxin[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transboxin<overlay specification>":{
+		"prefix":"transboxin<overlay specification>",
+		"body":[
+			"\\transboxin<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transboxout":{
+		"prefix":"transboxout",
+		"body":[
+			"\\transboxout[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transboxout<overlay specification>":{
+		"prefix":"transboxout<overlay specification>",
+		"body":[
+			"\\transboxout<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transcover":{
+		"prefix":"transcover",
+		"body":[
+			"\\transcover[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transcover<overlay specification>":{
+		"prefix":"transcover<overlay specification>",
+		"body":[
+			"\\transcover<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transdissolve":{
+		"prefix":"transdissolve",
+		"body":[
+			"\\transdissolve[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transdissolve<overlay specification>":{
+		"prefix":"transdissolve<overlay specification>",
+		"body":[
+			"\\transdissolve<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transfade":{
+		"prefix":"transfade",
+		"body":[
+			"\\transfade[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transfade<overlay specification>":{
+		"prefix":"transfade<overlay specification>",
+		"body":[
+			"\\transfade<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transglitter":{
+		"prefix":"transglitter",
+		"body":[
+			"\\transglitter[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transglitter<overlay specification>":{
+		"prefix":"transglitter<overlay specification>",
+		"body":[
+			"\\transglitter<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transpush":{
+		"prefix":"transpush",
+		"body":[
+			"\\transpush[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transpush<overlay specification>":{
+		"prefix":"transpush<overlay specification>",
+		"body":[
+			"\\transpush<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transreplace":{
+		"prefix":"transreplace",
+		"body":[
+			"\\transreplace[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transreplace<overlay specification>":{
+		"prefix":"transreplace<overlay specification>",
+		"body":[
+			"\\transreplace<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplitverticalin":{
+		"prefix":"transsplitverticalin",
+		"body":[
+			"\\transsplitverticalin[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplitverticalin<overlay specification>":{
+		"prefix":"transsplitverticalin<overlay specification>",
+		"body":[
+			"\\transsplitverticalin<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplitverticalout":{
+		"prefix":"transsplitverticalout",
+		"body":[
+			"\\transsplitverticalout[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplitverticalout<overlay specification>":{
+		"prefix":"transsplitverticalout<overlay specification>",
+		"body":[
+			"\\transsplitverticalout<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplithorizontalin":{
+		"prefix":"transsplithorizontalin",
+		"body":[
+			"\\transsplithorizontalin[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplithorizontalin<overlay specification>":{
+		"prefix":"transsplithorizontalin<overlay specification>",
+		"body":[
+			"\\transsplithorizontalin<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplithorizontalout":{
+		"prefix":"transsplithorizontalout",
+		"body":[
+			"\\transsplithorizontalout[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transsplithorizontalout<overlay specification>":{
+		"prefix":"transsplithorizontalout<overlay specification>",
+		"body":[
+			"\\transsplithorizontalout<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transuncover":{
+		"prefix":"transuncover",
+		"body":[
+			"\\transuncover[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transuncover<overlay specification>":{
+		"prefix":"transuncover<overlay specification>",
+		"body":[
+			"\\transuncover<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transwipe":{
+		"prefix":"transwipe",
+		"body":[
+			"\\transwipe[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transwipe<overlay specification>":{
+		"prefix":"transwipe<overlay specification>",
+		"body":[
+			"\\transwipe<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transfly":{
+		"prefix":"transfly",
+		"body":[
+			"\\transfly[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transfly<overlay specification>":{
+		"prefix":"transfly<overlay specification>",
+		"body":[
+			"\\transfly<overlay specification>[${1:options%keyvals}]"
+		]
+	},
+
+
+	"transduration":{
+		"prefix":"transduration",
+		"body":[
+			"\\transduration{${1:number of seconds}}"
+		]
+	},
+
+
+	"transduration<overlay specification>":{
+		"prefix":"transduration<overlay specification>",
+		"body":[
+			"\\transduration<overlay specification>{${1:number of seconds}}"
+		]
+	},
+
+
+	"animate<overlay specification>":{
+		"prefix":"animate<overlay specification>",
+		"body":[
+			"\\animate<overlay specification>"
+		]
+	},
+
+
+	"label<overlay specification>":{
+		"prefix":"label<overlay specification>",
+		"body":[
+			"\\label<overlay specification>{${1:key%labeldef}}"
+		]
+	},
+
+
+	"visibleenv":{
+		"prefix":"visibleenv",
+		"body":[
+			"\\begin{visibleenv}",
+			"\t$1",
+			"\\end{visibleenv}"
+		]
+	},
+
+
+	"invisibleenv":{
+		"prefix":"invisibleenv",
+		"body":[
+			"\\begin{invisibleenv}",
+			"\t$1",
+			"\\end{invisibleenv}"
+		]
+	},
+
+
+	"overlayarea":{
+		"prefix":"overlayarea",
+		"body":[
+			"\\begin{overlayarea}",
+			"\t$1",
+			"\\end{overlayarea}"
+		]
+	},
+
+
+	"overprint":{
+		"prefix":"overprint",
+		"body":[
+			"\\begin{overprint}",
+			"\t$1",
+			"\\end{overprint}"
+		]
+	},
+
+
+	"uncoverenv":{
+		"prefix":"uncoverenv",
+		"body":[
+			"\\begin{uncoverenv}",
+			"\t$1",
+			"\\end{uncoverenv}"
+		]
+	},
+
+
+	"actionenv":{
+		"prefix":"actionenv",
+		"body":[
+			"\\begin{actionenv}",
+			"\t$1",
+			"\\end{actionenv}"
+		]
+	},
+
+
+	"altenv":{
+		"prefix":"altenv",
+		"body":[
+			"\\begin{altenv}",
+			"\t$1",
+			"\\end{altenv}"
+		]
+	},
+
+
+	"onlyenv":{
+		"prefix":"onlyenv",
+		"body":[
+			"\\begin{onlyenv}",
+			"\t$1",
+			"\\end{onlyenv}"
+		]
+	}
+}

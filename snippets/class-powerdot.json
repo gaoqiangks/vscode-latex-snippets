@@ -1,0 +1,212 @@
+{
+
+
+	"pdsetup":{
+		"prefix":"pdsetup",
+		"body":[
+			"\\pdsetup{${1:options%keyvals}}"
+		]
+	},
+
+
+	"maketitle":{
+		"prefix":"maketitle",
+		"body":[
+			"\\maketitle[${1:options%keyvals}]"
+		]
+	},
+
+
+	"pause":{
+		"prefix":"pause",
+		"body":[
+			"\\pause"
+		]
+	},
+
+
+	"pause":{
+		"prefix":"pause",
+		"body":[
+			"\\pause[${1:number}]"
+		]
+	},
+
+
+	"item<overlays>":{
+		"prefix":"item<overlays>",
+		"body":[
+			"\\item<overlays>"
+		]
+	},
+
+
+	"item":{
+		"prefix":"item",
+		"body":[
+			"\\item[${1:label}]<${2:overlays}>"
+		]
+	},
+
+
+	"onslide":{
+		"prefix":"onslide",
+		"body":[
+			"\\onslide{${1:overlays}}{${2:text}}"
+		]
+	},
+
+
+	"onslide*":{
+		"prefix":"onslide*",
+		"body":[
+			"\\onslide*{${1:overlays}}{${2:text}}"
+		]
+	},
+
+
+	"tableofcontents":{
+		"prefix":"tableofcontents",
+		"body":[
+			"\\tableofcontents[${1:options%keyvals}]"
+		]
+	},
+
+
+	"slidewidth":{
+		"prefix":"slidewidth",
+		"body":[
+			"\\slidewidth"
+		]
+	},
+
+
+	"slideheight":{
+		"prefix":"slideheight",
+		"body":[
+			"\\slideheight"
+		]
+	},
+
+
+	"thenote":{
+		"prefix":"thenote",
+		"body":[
+			"\\thenote"
+		]
+	},
+
+
+	"theslide":{
+		"prefix":"theslide",
+		"body":[
+			"\\theslide"
+		]
+	},
+
+
+	"twocolumn":{
+		"prefix":"twocolumn",
+		"body":[
+			"\\twocolumn{${1:left%text}}{${2:right%text}}"
+		]
+	},
+
+
+	"twocolumn":{
+		"prefix":"twocolumn",
+		"body":[
+			"\\twocolumn[${3:options%keyvals}]{${1:left%text}}{${2:right%text}}"
+		]
+	},
+
+
+	"pddefinetemplate":{
+		"prefix":"pddefinetemplate",
+		"body":[
+			"\\pddefinetemplate{${1:envname}}{${2:options}}{${3:commands}}"
+		]
+	},
+
+
+	"pddefinetemplate":{
+		"prefix":"pddefinetemplate",
+		"body":[
+			"\\pddefinetemplate[${4:basis}]{${1:envname}}{${2:options}}{${3:commands}}"
+		]
+	},
+
+
+	"pdifsetup":{
+		"prefix":"pdifsetup",
+		"body":[
+			"\\pdifsetup{${1:desired}}{${2:true}}{${3:false}}"
+		]
+	},
+
+
+	"pdbookmark":{
+		"prefix":"pdbookmark",
+		"body":[
+			"\\pdbookmark{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+		]
+	},
+
+
+	"pdcontentsline":{
+		"prefix":"pdcontentsline",
+		"body":[
+			"\\pdcontentsline{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		]
+	},
+
+
+	"note":{
+		"prefix":"note",
+		"body":[
+			"\\begin{note}",
+			"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"enumerate":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate}",
+			"\t$1",
+			"\\end{enumerate}"
+		]
+	},
+
+
+	"emptyslide":{
+		"prefix":"emptyslide",
+		"body":[
+			"\\begin{emptyslide}",
+			"\t$1",
+			"\\end{emptyslide}"
+		]
+	},
+
+
+	"pauseslide":{
+		"prefix":"pauseslide",
+		"body":[
+			"\\begin{pauseslide}",
+			"\t$1",
+			"\\end{pauseslide}"
+		]
+	},
+
+
+	"itemize":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize}",
+			"\t$1",
+			"\\end{itemize}"
+		]
+	}
+}

@@ -1,0 +1,166 @@
+{
+
+
+	"LPTNewTable":{
+		"prefix":"LPTNewTable",
+		"body":[
+			"\\LPTNewTable{${1:name%specialDef}}{${2:num cols}}{${3:preamble}}"
+		]
+	},
+
+
+	"LPTNewTable":{
+		"prefix":"LPTNewTable",
+		"body":[
+			"\\LPTNewTable{${1:name%specialDef}}{${2:num cols}}{${3:preamble}}[${4:options%keyvals}]"
+		]
+	},
+
+
+	"LPTSetCurrentTable":{
+		"prefix":"LPTSetCurrentTable",
+		"body":[
+			"\\LPTSetCurrentTable{${1:table name%keyvals}}"
+		]
+	},
+
+
+	"LPTGetCurrentTable":{
+		"prefix":"LPTGetCurrentTable",
+		"body":[
+			"\\LPTGetCurrentTable"
+		]
+	},
+
+
+	"LPTAddRow":{
+		"prefix":"LPTAddRow",
+		"body":[
+			"\\LPTAddRow"
+		]
+	},
+
+
+	"LPTAddRow":{
+		"prefix":"LPTAddRow",
+		"body":[
+			"\\LPTAddRow[${1:options%keyvals}]"
+		]
+	},
+
+
+	"LPTSetRowProp":{
+		"prefix":"LPTSetRowProp",
+		"body":[
+			"\\LPTSetRowProp{${1:index expr}}{${2:row options%keyvals}}"
+		]
+	},
+
+
+	"LPTUseTable":{
+		"prefix":"LPTUseTable",
+		"body":[
+			"\\LPTUseTable"
+		]
+	},
+
+
+	"LPTDeleteTable":{
+		"prefix":"LPTDeleteTable",
+		"body":[
+			"\\LPTDeleteTable{${1:table name%keyvals}}"
+		]
+	},
+
+
+	"LPTSetCell":{
+		"prefix":"LPTSetCell",
+		"body":[
+			"\\LPTSetCell{${1:index expr}}{${2:content}}"
+		]
+	},
+
+
+	"LPTSetCell":{
+		"prefix":"LPTSetCell",
+		"body":[
+			"\\LPTSetCell{${1:index expr}}[${3:shape}]{${2:content}}"
+		]
+	},
+
+
+	"LPTFill":{
+		"prefix":"LPTFill",
+		"body":[
+			"\\LPTFill{${1:index expr}}{${2:content}}"
+		]
+	},
+
+
+	"LPTGetTableNames":{
+		"prefix":"LPTGetTableNames",
+		"body":[
+			"\\LPTGetTableNames"
+		]
+	},
+
+
+	"LPTGetTableShape":{
+		"prefix":"LPTGetTableShape",
+		"body":[
+			"\\LPTGetTableShape"
+		]
+	},
+
+
+	"LPTGetCellData":{
+		"prefix":"LPTGetCellData",
+		"body":[
+			"\\LPTGetCellData{${1:index expr}}"
+		]
+	},
+
+
+	"LPTGetCellShape":{
+		"prefix":"LPTGetCellShape",
+		"body":[
+			"\\LPTGetCellShape{${1:index expr}}"
+		]
+	},
+
+
+	"LPTGetCellParent":{
+		"prefix":"LPTGetCellParent",
+		"body":[
+			"\\LPTGetCellParent{${1:index expr}}"
+		]
+	},
+
+
+	"LPTGetCellMetaIndex":{
+		"prefix":"LPTGetCellMetaIndex",
+		"body":[
+			"\\LPTGetCellMetaIndex{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"lptfill":{
+		"prefix":"lptfill",
+		"body":[
+			"\\begin{lptfill}",
+			"\t$1",
+			"\\end{lptfill}"
+		]
+	},
+
+
+	"lptview":{
+		"prefix":"lptview",
+		"body":[
+			"\\begin{lptview}",
+			"\t$1",
+			"\\end{lptview}"
+		]
+	}
+}

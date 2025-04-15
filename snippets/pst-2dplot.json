@@ -1,0 +1,44 @@
+{
+
+
+	"setpstgraph":{
+		"prefix":"setpstgraph",
+		"body":[
+			"\\setpstgraph{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pstlabel":{
+		"prefix":"pstlabel",
+		"body":[
+			"\\pstlabel{${1:x-label}}{${2:y-label}}"
+		]
+	},
+
+
+	"pstfileplot":{
+		"prefix":"pstfileplot",
+		"body":[
+			"\\pstfileplot{${1:file}}"
+		]
+	},
+
+
+	"pstfileplot":{
+		"prefix":"pstfileplot",
+		"body":[
+			"\\pstfileplot[${2:pstricks options}]{${1:file}}"
+		]
+	},
+
+
+	"pstgraph":{
+		"prefix":"pstgraph",
+		"body":[
+			"\\begin{pstgraph}",
+			"\t$1",
+			"\\end{pstgraph}"
+		]
+	}
+}

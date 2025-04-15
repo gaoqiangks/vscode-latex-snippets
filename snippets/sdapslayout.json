@@ -1,0 +1,80 @@
+{
+
+
+	"choice":{
+		"prefix":"choice",
+		"body":[
+			"\\choice{${1:text}}"
+		]
+	},
+
+
+	"choice":{
+		"prefix":"choice",
+		"body":[
+			"\\choice[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\question{${1:text}}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\question[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"range":{
+		"prefix":"range",
+		"body":[
+			"\\range{${1:question%text}}{${2:lower%text}}{${3:upper%text}}{${4:other%text}}"
+		]
+	},
+
+
+	"range":{
+		"prefix":"range",
+		"body":[
+			"\\range[${5:options%keyvals}]{${1:question%text}}{${2:lower%text}}{${3:upper%text}}{${4:other%text}}"
+		]
+	},
+
+
+	"choicearray":{
+		"prefix":"choicearray",
+		"body":[
+			"\\begin{choicearray}",
+			"\t$1",
+			"\\end{choicearray}"
+		]
+	},
+
+
+	"rangearray":{
+		"prefix":"rangearray",
+		"body":[
+			"\\begin{rangearray}",
+			"\t$1",
+			"\\end{rangearray}"
+		]
+	},
+
+
+	"optionarray":{
+		"prefix":"optionarray",
+		"body":[
+			"\\begin{optionarray}",
+			"\t$1",
+			"\\end{optionarray}"
+		]
+	}
+}

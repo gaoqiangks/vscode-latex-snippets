@@ -1,0 +1,108 @@
+{
+
+
+	"setmodiagram":{
+		"prefix":"setmodiagram",
+		"body":[
+			"\\setmodiagram{${1:options%keyvals}}"
+		]
+	},
+
+
+	"atom":{
+		"prefix":"atom",
+		"body":[
+			"\\atom{${1:left or right}}{${2:AO-spec%keyvals}}"
+		]
+	},
+
+
+	"atom":{
+		"prefix":"atom",
+		"body":[
+			"\\atom[${3:name}]{${1:left or right}}{${2:AO-spec%keyvals}}"
+		]
+	},
+
+
+	"molecule":{
+		"prefix":"molecule",
+		"body":[
+			"\\molecule{${1:MO-spec%keyvals}}"
+		]
+	},
+
+
+	"molecule":{
+		"prefix":"molecule",
+		"body":[
+			"\\molecule[${2:name}]{${1:MO-spec%keyvals}}"
+		]
+	},
+
+
+	"AO":{
+		"prefix":"AO",
+		"body":[
+			"\\AO(${3:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"AO":{
+		"prefix":"AO",
+		"body":[
+			"\\AO(${4:%<xshift%>}){${1:type}}[${3:options}]{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"AO":{
+		"prefix":"AO",
+		"body":[
+			"\\AO[${3:name}](${4:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"AO":{
+		"prefix":"AO",
+		"body":[
+			"\\AO[${3:name}](${5:%<xshift%>}){${1:type}}[${4:options}]{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"connect":{
+		"prefix":"connect",
+		"body":[
+			"\\connect{${1:AO-connect}}"
+		]
+	},
+
+
+	"EnergyAxis":{
+		"prefix":"EnergyAxis",
+		"body":[
+			"\\EnergyAxis"
+		]
+	},
+
+
+	"EnergyAxis":{
+		"prefix":"EnergyAxis",
+		"body":[
+			"\\EnergyAxis[${1:options%keyvals}]"
+		]
+	},
+
+
+	"modiagram":{
+		"prefix":"modiagram",
+		"body":[
+			"\\begin{modiagram}",
+			"\t$1",
+			"\\end{modiagram}"
+		]
+	}
+}

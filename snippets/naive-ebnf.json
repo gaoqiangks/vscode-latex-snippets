@@ -1,0 +1,44 @@
+{
+
+
+	"EbnfTerminal":{
+		"prefix":"EbnfTerminal",
+		"body":[
+			"\\EbnfTerminal{${1:symbol}}"
+		]
+	},
+
+
+	"EbnfNonTerminal":{
+		"prefix":"EbnfNonTerminal",
+		"body":[
+			"\\EbnfNonTerminal{${1:rule}}"
+		]
+	},
+
+
+	"EbnfSpecial":{
+		"prefix":"EbnfSpecial",
+		"body":[
+			"\\EbnfSpecial{${1:symbol}}"
+		]
+	},
+
+
+	"EbnfRegex":{
+		"prefix":"EbnfRegex",
+		"body":[
+			"\\EbnfRegex{${1:regex}}"
+		]
+	},
+
+
+	"ebnf":{
+		"prefix":"ebnf",
+		"body":[
+			"\\begin{ebnf}",
+			"\t$1",
+			"\\end{ebnf}"
+		]
+	}
+}

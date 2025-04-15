@@ -1,0 +1,470 @@
+{
+
+
+	"dbNewDatabase":{
+		"prefix":"dbNewDatabase",
+		"body":[
+			"\\dbNewDatabase{${1:database}}{${2:attr1=val1,attr2=val2,...}}"
+		]
+	},
+
+
+	"dbNewDatabase":{
+		"prefix":"dbNewDatabase",
+		"body":[
+			"\\dbNewDatabase[${3:base database}]{${1:database}}{${2:attr1=val1,attr2=val2,...}}"
+		]
+	},
+
+
+	"dbNewDatabase*":{
+		"prefix":"dbNewDatabase*",
+		"body":[
+			"\\dbNewDatabase*{${1:database}}{${2:attr1=val1,attr2=val2,...}}"
+		]
+	},
+
+
+	"dbNewDatabase*":{
+		"prefix":"dbNewDatabase*",
+		"body":[
+			"\\dbNewDatabase*{${1:database}}{${2:attr1=val1,attr2=val2,...}}"
+		]
+	},
+
+
+	"dbshow":{
+		"prefix":"dbshow",
+		"body":[
+			"\\dbshow{${1:style}}{${2:database}}"
+		]
+	},
+
+
+	"dbclear":{
+		"prefix":"dbclear",
+		"body":[
+			"\\dbclear{${1:database}}"
+		]
+	},
+
+
+	"dbNewStyle":{
+		"prefix":"dbNewStyle",
+		"body":[
+			"\\dbNewStyle{${1:style}}{${2:database}}{${3:options%keyvals}}"
+		]
+	},
+
+
+	"dbNewStyle":{
+		"prefix":"dbNewStyle",
+		"body":[
+			"\\dbNewStyle[${4:base styles}]{${1:style}}{${2:database}}{${3:options%keyvals}}"
+		]
+	},
+
+
+	"dbdatesep":{
+		"prefix":"dbdatesep",
+		"body":[
+			"\\dbdatesep{${1:separator}}"
+		]
+	},
+
+
+	"dbNewReviewPoints":{
+		"prefix":"dbNewReviewPoints",
+		"body":[
+			"\\dbNewReviewPoints{${1:name}}{${2:points}}"
+		]
+	},
+
+
+	"dbNewConditional":{
+		"prefix":"dbNewConditional",
+		"body":[
+			"\\dbNewConditional{${1:name}}{${2:attr}}{${3:cond spec}}"
+		]
+	},
+
+
+	"dbNewConditional":{
+		"prefix":"dbNewConditional",
+		"body":[
+			"\\dbNewConditional{${1:name}}{${2:attr}}{${3:cond spec}}[${4:filter info}]"
+		]
+	},
+
+
+	"dbNewConditional*":{
+		"prefix":"dbNewConditional*",
+		"body":[
+			"\\dbNewConditional*{${1:name}}{${2:attr}}{${3:cond spec}}"
+		]
+	},
+
+
+	"dbNewConditional*":{
+		"prefix":"dbNewConditional*",
+		"body":[
+			"\\dbNewConditional*{${1:name}}{${2:attr}}{${3:cond spec}}[${4:filter info}]"
+		]
+	},
+
+
+	"dbNewCond":{
+		"prefix":"dbNewCond",
+		"body":[
+			"\\dbNewCond{${1:name}}{${2:attr}}{${3:cond spec}}"
+		]
+	},
+
+
+	"dbNewCond":{
+		"prefix":"dbNewCond",
+		"body":[
+			"\\dbNewCond{${1:name}}{${2:attr}}{${3:cond spec}}[${4:filter info}]"
+		]
+	},
+
+
+	"dbNewCond*":{
+		"prefix":"dbNewCond*",
+		"body":[
+			"\\dbNewCond*{${1:name}}{${2:attr}}{${3:cond spec}}"
+		]
+	},
+
+
+	"dbNewCond*":{
+		"prefix":"dbNewCond*",
+		"body":[
+			"\\dbNewCond*{${1:name}}{${2:attr}}{${3:cond spec}}[${4:filter info}]"
+		]
+	},
+
+
+	"dbNewRawFilter":{
+		"prefix":"dbNewRawFilter",
+		"body":[
+			"\\dbNewRawFilter{${1:name}}{${2:database}}{${3:attr}}{${4:cond spec}}"
+		]
+	},
+
+
+	"dbNewRawFilter":{
+		"prefix":"dbNewRawFilter",
+		"body":[
+			"\\dbNewRawFilter{${1:name}}{${2:database}}{${3:attr}}{${4:cond spec}}[${5:filter info}]"
+		]
+	},
+
+
+	"dbNewRawFilter*":{
+		"prefix":"dbNewRawFilter*",
+		"body":[
+			"\\dbNewRawFilter*{${1:name}}{${2:database}}{${3:attr}}{${4:cond spec}}"
+		]
+	},
+
+
+	"dbNewRawFilter*":{
+		"prefix":"dbNewRawFilter*",
+		"body":[
+			"\\dbNewRawFilter*{${1:name}}{${2:database}}{${3:attr}}{${4:cond spec}}[${5:filter info}]"
+		]
+	},
+
+
+	"dbCombineConditionals":{
+		"prefix":"dbCombineConditionals",
+		"body":[
+			"\\dbCombineConditionals{${1:name}}{${2:cond combination}}"
+		]
+	},
+
+
+	"dbCombineConditionals":{
+		"prefix":"dbCombineConditionals",
+		"body":[
+			"\\dbCombineConditionals{${1:name}}{${2:cond combination}}[${3:filter info}]"
+		]
+	},
+
+
+	"dbCombCond":{
+		"prefix":"dbCombCond",
+		"body":[
+			"\\dbCombCond{${1:name}}{${2:cond combination}}"
+		]
+	},
+
+
+	"dbCombCond":{
+		"prefix":"dbCombCond",
+		"body":[
+			"\\dbCombCond{${1:name}}{${2:cond combination}}[${3:filter info}]"
+		]
+	},
+
+
+	"dbitemkv":{
+		"prefix":"dbitemkv",
+		"body":[
+			"\\dbitemkv{${1:database}}"
+		]
+	},
+
+
+	"dbitemkv":{
+		"prefix":"dbitemkv",
+		"body":[
+			"\\dbitemkv{${1:database}}[${2:attr1=val1,attr2=val2,...}]"
+		]
+	},
+
+
+	"dbsave":{
+		"prefix":"dbsave",
+		"body":[
+			"\\dbsave{${1:attr}}{${2:data}}"
+		]
+	},
+
+
+	"dbsave*":{
+		"prefix":"dbsave*",
+		"body":[
+			"\\dbsave*{${1:attr}}{${2:data}}"
+		]
+	},
+
+
+	"dbuse":{
+		"prefix":"dbuse",
+		"body":[
+			"\\dbuse{${1:attr}}"
+		]
+	},
+
+
+	"dbIfEmptyT":{
+		"prefix":"dbIfEmptyT",
+		"body":[
+			"\\dbIfEmptyT{${1:true code}}"
+		]
+	},
+
+
+	"dbIfEmptyF":{
+		"prefix":"dbIfEmptyF",
+		"body":[
+			"\\dbIfEmptyF{${1:false code}}"
+		]
+	},
+
+
+	"dbIfEmptyTF":{
+		"prefix":"dbIfEmptyTF",
+		"body":[
+			"\\dbIfEmptyTF{${1:true code}}{${2:false code}}"
+		]
+	},
+
+
+	"dbIfLastT":{
+		"prefix":"dbIfLastT",
+		"body":[
+			"\\dbIfLastT{${1:true code}}"
+		]
+	},
+
+
+	"dbIfLastF":{
+		"prefix":"dbIfLastF",
+		"body":[
+			"\\dbIfLastF{${1:false code}}"
+		]
+	},
+
+
+	"dbIfLastTF":{
+		"prefix":"dbIfLastTF",
+		"body":[
+			"\\dbIfLastTF{${1:true code}}{${2:false code}}"
+		]
+	},
+
+
+	"dbIntAbs":{
+		"prefix":"dbIntAbs",
+		"body":[
+			"\\dbIntAbs{${1:int expr}}"
+		]
+	},
+
+
+	"dbIntSign":{
+		"prefix":"dbIntSign",
+		"body":[
+			"\\dbIntSign{${1:int expr}}"
+		]
+	},
+
+
+	"dbIntDivRound":{
+		"prefix":"dbIntDivRound",
+		"body":[
+			"\\dbIntDivRound{${1:int expr1}}{${2:int expr2}}"
+		]
+	},
+
+
+	"dbIntDivTruncate":{
+		"prefix":"dbIntDivTruncate",
+		"body":[
+			"\\dbIntDivTruncate{${1:int expr1}}{${2:int expr2}}"
+		]
+	},
+
+
+	"dbIntMax":{
+		"prefix":"dbIntMax",
+		"body":[
+			"\\dbIntMax{${1:int expr1}}{${2:int expr2}}"
+		]
+	},
+
+
+	"dbIntMin":{
+		"prefix":"dbIntMin",
+		"body":[
+			"\\dbIntMin{${1:int expr1}}{${2:int expr2}}"
+		]
+	},
+
+
+	"dbIntMod":{
+		"prefix":"dbIntMod",
+		"body":[
+			"\\dbIntMod{${1:int expr1}}{${2:int expr2}}"
+		]
+	},
+
+
+	"dbFpSign":{
+		"prefix":"dbFpSign",
+		"body":[
+			"\\dbFpSign{${1:fp expr}}"
+		]
+	},
+
+
+	"dbval":{
+		"prefix":"dbval",
+		"body":[
+			"\\dbval"
+		]
+	},
+
+
+	"dbtoday":{
+		"prefix":"dbtoday",
+		"body":[
+			"\\dbtoday"
+		]
+	},
+
+
+	"dbDatabase":{
+		"prefix":"dbDatabase",
+		"body":[
+			"\\dbDatabase"
+		]
+	},
+
+
+	"dbFilterName":{
+		"prefix":"dbFilterName",
+		"body":[
+			"\\dbFilterName"
+		]
+	},
+
+
+	"dbFilterInfo":{
+		"prefix":"dbFilterInfo",
+		"body":[
+			"\\dbFilterInfo"
+		]
+	},
+
+
+	"dbIndex":{
+		"prefix":"dbIndex",
+		"body":[
+			"\\dbIndex"
+		]
+	},
+
+
+	"dbarabic":{
+		"prefix":"dbarabic",
+		"body":[
+			"\\dbarabic"
+		]
+	},
+
+
+	"dbalph":{
+		"prefix":"dbalph",
+		"body":[
+			"\\dbalph"
+		]
+	},
+
+
+	"dbAlph":{
+		"prefix":"dbAlph",
+		"body":[
+			"\\dbAlph"
+		]
+	},
+
+
+	"dbroman":{
+		"prefix":"dbroman",
+		"body":[
+			"\\dbroman"
+		]
+	},
+
+
+	"dbRoman":{
+		"prefix":"dbRoman",
+		"body":[
+			"\\dbRoman"
+		]
+	},
+
+
+	"dbFilters":{
+		"prefix":"dbFilters",
+		"body":[
+			"\\begin{dbFilters}",
+			"\t$1",
+			"\\end{dbFilters}"
+		]
+	},
+
+
+	"dbitem":{
+		"prefix":"dbitem",
+		"body":[
+			"\\begin{dbitem}",
+			"\t$1",
+			"\\end{dbitem}"
+		]
+	}
+}
