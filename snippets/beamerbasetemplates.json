@@ -1,7 +1,7 @@
 {
 
 
-	"usebeamertemplate":{
+	"usebeamertemplate{}":{
 		"prefix":"usebeamertemplate",
 		"body":[
 			"\\usebeamertemplate{${1:element name}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"usebeamertemplate*":{
-		"prefix":"usebeamertemplate*",
-		"body":[
-			"\\usebeamertemplate*{${1:element name}}"
-		]
-	},
-
-
-	"usebeamertemplate**":{
-		"prefix":"usebeamertemplate**",
-		"body":[
-			"\\usebeamertemplate**{${1:element name}}"
-		]
-	},
-
-
-	"usebeamertemplate***":{
-		"prefix":"usebeamertemplate***",
-		"body":[
-			"\\usebeamertemplate***{${1:element name}}"
-		]
-	},
-
-
-	"expandbeamertemplate":{
+	"expandbeamertemplate{}":{
 		"prefix":"expandbeamertemplate",
 		"body":[
 			"\\expandbeamertemplate{${1:beamer template name}}"
@@ -41,7 +17,7 @@
 	},
 
 
-	"ifbeamertemplateempty":{
+	"ifbeamertemplateempty{}{}{}":{
 		"prefix":"ifbeamertemplateempty",
 		"body":[
 			"\\ifbeamertemplateempty{${1:beamer template name}}{${2:executed if empty}}{${3:executed otherwise}}"
@@ -49,95 +25,15 @@
 	},
 
 
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*":{
-		"prefix":"defbeamertemplate<mode specification>*",
+	"defbeamertemplate<mode specification>*{}{}{}":{
+		"prefix":"defbeamertemplate<mode specification>",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
 		]
 	},
 
 
-	"defbeamertemplate":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
-		]
-	},
-
-
-	"defbeamertemplate":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplate":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplate":{
+	"defbeamertemplate{}{}{}":{
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
@@ -145,7 +41,7 @@
 	},
 
 
-	"defbeamertemplatealias":{
+	"defbeamertemplatealias{}{}{}":{
 		"prefix":"defbeamertemplatealias",
 		"body":[
 			"\\defbeamertemplatealias{${1:element name}}{${2:new predefined option name}}{${3:existing predefined option name}}"
@@ -153,23 +49,7 @@
 	},
 
 
-	"defbeamertemplateparent":{
-		"prefix":"defbeamertemplateparent",
-		"body":[
-			"\\defbeamertemplateparent{${1:parent template}}[${4:predefined option}]{${2:child template list}}[${5:args}][${6:default}]{${3:arguments for children}}"
-		]
-	},
-
-
-	"defbeamertemplateparent":{
-		"prefix":"defbeamertemplateparent",
-		"body":[
-			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}[${4:args}][${5:default}]{${3:args for children}}"
-		]
-	},
-
-
-	"defbeamertemplateparent":{
+	"defbeamertemplateparent{}{}{}":{
 		"prefix":"defbeamertemplateparent",
 		"body":[
 			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}{${3:args for children}}"
@@ -177,7 +57,7 @@
 	},
 
 
-	"setbeamertemplate":{
+	"setbeamertemplate{}{}":{
 		"prefix":"setbeamertemplate",
 		"body":[
 			"\\setbeamertemplate{${1:element name}}{${2:arguments}}"
@@ -185,7 +65,135 @@
 	},
 
 
-	"setbeamertemplate":{
+	"addtobeamertemplate{}{}{}":{
+		"prefix":"addtobeamertemplate",
+		"body":[
+			"\\addtobeamertemplate{${1:element name}}{${2:pre-text%text}}{${3:post-text%text}}"
+		]
+	},
+
+
+	"usebeamertemplate*{}":{
+		"prefix":"*usebeamertemplate",
+		"body":[
+			"\\usebeamertemplate*{${1:element name}}"
+		]
+	},
+
+
+	"usebeamertemplate**{}":{
+		"prefix":"*usebeamertemplate",
+		"body":[
+			"\\usebeamertemplate**{${1:element name}}"
+		]
+	},
+
+
+	"usebeamertemplate***{}":{
+		"prefix":"*usebeamertemplate",
+		"body":[
+			"\\usebeamertemplate***{${1:element name}}"
+		]
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}[][]{}[]{}":{
+		"prefix":"defbeamertemplate<mode specification>",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}[]{}[]{}":{
+		"prefix":"defbeamertemplate<mode specification>",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}{}[]{}":{
+		"prefix":"defbeamertemplate<mode specification>",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}[][]{}":{
+		"prefix":"defbeamertemplate<mode specification>",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
+		]
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}[]{}":{
+		"prefix":"defbeamertemplate<mode specification>",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
+		]
+	},
+
+
+	"defbeamertemplate{}{}[][]{}[]{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate{}{}[]{}[]{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate{}{}{}[]{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
+		]
+	},
+
+
+	"defbeamertemplate{}{}[][]{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
+		]
+	},
+
+
+	"defbeamertemplate{}{}[]{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
+		]
+	},
+
+
+	"defbeamertemplateparent{}[]{}[][]{}":{
+		"prefix":"defbeamertemplateparent",
+		"body":[
+			"\\defbeamertemplateparent{${1:parent template}}[${4:predefined option}]{${2:child template list}}[${5:args}][${6:default}]{${3:arguments for children}}"
+		]
+	},
+
+
+	"defbeamertemplateparent{}{}[][]{}":{
+		"prefix":"defbeamertemplateparent",
+		"body":[
+			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}[${4:args}][${5:default}]{${3:args for children}}"
+		]
+	},
+
+
+	"setbeamertemplate{}[]":{
 		"prefix":"setbeamertemplate",
 		"body":[
 			"\\setbeamertemplate{${1:element name}}[${2:predefined option}]"
@@ -193,18 +201,10 @@
 	},
 
 
-	"setbeamertemplate":{
+	"setbeamertemplate{}[]{}":{
 		"prefix":"setbeamertemplate",
 		"body":[
 			"\\setbeamertemplate{${1:element name}}[${3:predefined option}]{${2:arguments}}"
-		]
-	},
-
-
-	"addtobeamertemplate":{
-		"prefix":"addtobeamertemplate",
-		"body":[
-			"\\addtobeamertemplate{${1:element name}}{${2:pre-text%text}}{${3:post-text%text}}"
 		]
 	}
 }

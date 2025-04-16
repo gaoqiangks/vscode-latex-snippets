@@ -1,7 +1,7 @@
 {
 
 
-	"marg":{
+	"marg{}":{
 		"prefix":"marg",
 		"body":[
 			"\\marg{${1:abc}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"oarg":{
+	"oarg{}":{
 		"prefix":"oarg",
 		"body":[
 			"\\oarg{${1:arg}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"command":{
+	"command{}":{
 		"prefix":"command",
 		"body":[
 			"\\command{${1:cmd}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"arg":{
+	"arg{}":{
 		"prefix":"arg",
 		"body":[
 			"\\arg{${1:arg}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"environment":{
+	"environment{}":{
 		"prefix":"environment",
 		"body":[
 			"\\environment{${1:envname}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"package":{
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\package{${1:package}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"ltxclass":{
+	"ltxclass{}":{
 		"prefix":"ltxclass",
 		"body":[
 			"\\ltxclass{${1:class}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"option":{
+	"option{}":{
 		"prefix":"option",
 		"body":[
 			"\\option{${1:option}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"parameter":{
+	"parameter{}":{
 		"prefix":"parameter",
 		"body":[
 			"\\parameter{${1:parameter}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"person":{
+	"person{}":{
 		"prefix":"person",
 		"body":[
 			"\\person{${1:person}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"Default":{
+	"Default{}":{
 		"prefix":"Default",
 		"body":[
 			"\\Default{${1:arg}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"Example":{
+	"Example{}":{
 		"prefix":"Example",
 		"body":[
 			"\\Example{${1:arg}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"printCodeFromFile":{
+	"printCodeFromFile{}{}":{
 		"prefix":"printCodeFromFile",
 		"body":[
 			"\\printCodeFromFile{${1:last line}}{${2:file}}"
@@ -145,15 +145,7 @@
 	},
 
 
-	"printCodeFromFile":{
-		"prefix":"printCodeFromFile",
-		"body":[
-			"\\printCodeFromFile[${3:first line}]{${1:last line}}{${2:file}}"
-		]
-	},
-
-
-	"labelfile":{
+	"labelfile{}":{
 		"prefix":"labelfile",
 		"body":[
 			"\\labelfile{${1:file path/name%file}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:file path/name%file}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"PrintFileName":{
+	"PrintFileName{}":{
 		"prefix":"PrintFileName",
 		"body":[
 			"\\PrintFileName{${1:file}}"
@@ -209,12 +201,10 @@
 	},
 
 
-	"latexcode":{
-		"prefix":"latexcode",
+	"printCodeFromFile[]{}{}":{
+		"prefix":"printCodeFromFile",
 		"body":[
-			"\\begin{latexcode}",
-			"\t$1",
-			"\\end{latexcode}"
+			"\\printCodeFromFile[${3:first line}]{${1:last line}}{${2:file}}"
 		]
 	},
 
@@ -223,8 +213,18 @@
 		"prefix":"Optionlist",
 		"body":[
 			"\\begin{Optionlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{Optionlist}"
+		]
+	},
+
+
+	"latexcode":{
+		"prefix":"latexcode",
+		"body":[
+			"\\begin{latexcode}",
+				"\t$1",
+			"\\end{latexcode}"
 		]
 	}
 }

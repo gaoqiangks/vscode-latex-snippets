@@ -129,7 +129,7 @@
 	},
 
 
-	"m":{
+	"m{}":{
 		"prefix":"m",
 		"body":[
 			"\\m{${1:arg}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"arg":{
+	"arg{}":{
 		"prefix":"arg",
 		"body":[
 			"\\arg{${1:arg}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"oarg":{
+	"oarg{}":{
 		"prefix":"oarg",
 		"body":[
 			"\\oarg{${1:arg}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"NEWfeature":{
+	"NEWfeature{}":{
 		"prefix":"NEWfeature",
 		"body":[
 			"\\NEWfeature{${1:text}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"NEWdescription":{
+	"NEWdescription{}":{
 		"prefix":"NEWdescription",
 		"body":[
 			"\\NEWdescription{${1:text}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"URL":{
+	"URL{}":{
 		"prefix":"URL",
 		"body":[
 			"\\URL{${1:URL}}"
@@ -205,7 +205,17 @@
 		"prefix":"decl",
 		"body":[
 			"\\begin{decl}",
-			"\t$1",
+				"\t$1",
+			"\\end{decl}"
+		]
+	},
+
+
+	"decl":{
+		"prefix":"decl",
+		"body":[
+			"\\begin{decl}",
+				"\t$1",
 			"\\end{decl}"
 		]
 	}

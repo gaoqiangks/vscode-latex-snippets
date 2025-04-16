@@ -1,7 +1,7 @@
 {
 
 
-	"coversetup":{
+	"coversetup{}":{
 		"prefix":"coversetup",
 		"body":[
 			"\\coversetup{${1:options%keyvals}}"
@@ -13,14 +13,6 @@
 		"prefix":"makecover",
 		"body":[
 			"\\makecover"
-		]
-	},
-
-
-	"makecover":{
-		"prefix":"makecover",
-		"body":[
-			"\\makecover[${1:pdf file%file}]"
 		]
 	},
 
@@ -53,6 +45,14 @@
 		"prefix":"dbsong",
 		"body":[
 			"\\dbsong"
+		]
+	},
+
+
+	"makecover[]":{
+		"prefix":"makecover",
+		"body":[
+			"\\makecover[${1:pdf file%file}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"rsnumber":{
+	"rsnumber{}":{
 		"prefix":"rsnumber",
 		"body":[
 			"\\rsnumber{${1:number}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"rsnumber":{
-		"prefix":"rsnumber",
-		"body":[
-			"\\rsnumber[${2:text}]{${1:number}}"
-		]
-	},
-
-
-	"rsphrase":{
+	"rsphrase{}":{
 		"prefix":"rsphrase",
 		"body":[
 			"\\rsphrase{${1:number}}"
@@ -25,18 +17,26 @@
 	},
 
 
-	"rsphrase":{
-		"prefix":"rsphrase",
+	"iflanguage{}{}{}":{
+		"prefix":"iflanguage",
 		"body":[
-			"\\rsphrase[${2:text}]{${1:number}}"
+			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
 		]
 	},
 
 
-	"iflanguage":{
-		"prefix":"iflanguage",
+	"rsnumber[]{}":{
+		"prefix":"rsnumber",
 		"body":[
-			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
+			"\\rsnumber[${2:text}]{${1:number}}"
+		]
+	},
+
+
+	"rsphrase[]{}":{
+		"prefix":"rsphrase",
+		"body":[
+			"\\rsphrase[${2:text}]{${1:number}}"
 		]
 	}
 }

@@ -81,7 +81,7 @@
 	},
 
 
-	"makesectionbox":{
+	"makesectionbox{}":{
 		"prefix":"makesectionbox",
 		"body":[
 			"\\makesectionbox{${1:text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"makesubsectionbox":{
+	"makesubsectionbox{}":{
 		"prefix":"makesubsectionbox",
 		"body":[
 			"\\makesubsectionbox{${1:text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"makesubsubsectionbox":{
+	"makesubsubsectionbox{}":{
 		"prefix":"makesubsubsectionbox",
 		"body":[
 			"\\makesubsubsectionbox{${1:text}}"
@@ -169,21 +169,11 @@
 	},
 
 
-	"subsubsectionbox":{
-		"prefix":"subsubsectionbox",
-		"body":[
-			"\\begin{subsubsectionbox}",
-			"\t$1",
-			"\\end{subsubsectionbox}"
-		]
-	},
-
-
 	"sectionbox":{
 		"prefix":"sectionbox",
 		"body":[
 			"\\begin{sectionbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{sectionbox}"
 		]
 	},
@@ -193,8 +183,48 @@
 		"prefix":"subsectionbox",
 		"body":[
 			"\\begin{subsectionbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{subsectionbox}"
+		]
+	},
+
+
+	"subsubsectionbox":{
+		"prefix":"subsubsectionbox",
+		"body":[
+			"\\begin{subsubsectionbox}",
+				"\t$1",
+			"\\end{subsubsectionbox}"
+		]
+	},
+
+
+	"sectionbox":{
+		"prefix":"sectionbox",
+		"body":[
+			"\\begin{sectionbox}",
+				"\t$1",
+			"\\end{sectionbox}"
+		]
+	},
+
+
+	"subsectionbox":{
+		"prefix":"subsectionbox",
+		"body":[
+			"\\begin{subsectionbox}",
+				"\t$1",
+			"\\end{subsectionbox}"
+		]
+	},
+
+
+	"subsubsectionbox":{
+		"prefix":"subsubsectionbox",
+		"body":[
+			"\\begin{subsubsectionbox}",
+				"\t$1",
+			"\\end{subsubsectionbox}"
 		]
 	}
 }

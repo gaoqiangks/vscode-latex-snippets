@@ -1,7 +1,7 @@
 {
 
 
-	"TVAdefaut":{
+	"TVAdefaut{}":{
 		"prefix":"TVAdefaut",
 		"body":[
 			"\\TVAdefaut{${1:taux}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"type":{
+	"type{}":{
 		"prefix":"type",
 		"body":[
 			"\\type{${1:type}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"numero":{
+	"numero{}":{
 		"prefix":"numero",
 		"body":[
 			"\\numero{${1:numero}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"datelimite":{
+	"datelimite{}":{
 		"prefix":"datelimite",
 		"body":[
 			"\\datelimite{${1:nbjours}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"nomemet":{
+	"nomemet{}":{
 		"prefix":"nomemet",
 		"body":[
 			"\\nomemet{${1:texte%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"adresseemet":{
+	"adresseemet{}":{
 		"prefix":"adresseemet",
 		"body":[
 			"\\adresseemet{${1:texte%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"pied":{
+	"pied{}":{
 		"prefix":"pied",
 		"body":[
 			"\\pied{${1:texte%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"dest":{
+	"dest{}":{
 		"prefix":"dest",
 		"body":[
 			"\\dest{${1:adresse%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"fact":{
+	"fact{}":{
 		"prefix":"fact",
 		"body":[
 			"\\fact{${1:adresse%text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"codedest":{
+	"codedest{}":{
 		"prefix":"codedest",
 		"body":[
 			"\\codedest{${1:code}}"
@@ -89,50 +89,10 @@
 	},
 
 
-	"ligne":{
+	"ligne{}{}":{
 		"prefix":"ligne",
 		"body":[
 			"\\ligne{${1:produit%text}}{${2:prix unitaire HT}}"
-		]
-	},
-
-
-	"ligne":{
-		"prefix":"ligne",
-		"body":[
-			"\\ligne{${1:produit%text}}{${2:prix unitaire HT}}[${3:remise}]"
-		]
-	},
-
-
-	"ligne":{
-		"prefix":"ligne",
-		"body":[
-			"\\ligne{${1:produit%text}}{${2:prix unitaire HT}}[${3:remise}][${4:taux de TVA}]"
-		]
-	},
-
-
-	"ligne":{
-		"prefix":"ligne",
-		"body":[
-			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}"
-		]
-	},
-
-
-	"ligne":{
-		"prefix":"ligne",
-		"body":[
-			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}[${4:remise}]"
-		]
-	},
-
-
-	"ligne":{
-		"prefix":"ligne",
-		"body":[
-			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}[${4:remise}][${5:taux de TVA}]"
 		]
 	},
 
@@ -153,7 +113,7 @@
 	},
 
 
-	"afficheTVA":{
+	"afficheTVA{}":{
 		"prefix":"afficheTVA",
 		"body":[
 			"\\afficheTVA{${1:numero}}"
@@ -241,7 +201,7 @@
 	},
 
 
-	"libelle":{
+	"libelle{}":{
 		"prefix":"libelle",
 		"body":[
 			"\\libelle{${1:text}}"
@@ -249,7 +209,7 @@
 	},
 
 
-	"lignesansTVA":{
+	"lignesansTVA{}{}{}{}{}":{
 		"prefix":"lignesansTVA",
 		"body":[
 			"\\lignesansTVA{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
@@ -369,11 +329,51 @@
 	},
 
 
+	"ligne{}{}[]":{
+		"prefix":"ligne",
+		"body":[
+			"\\ligne{${1:produit%text}}{${2:prix unitaire HT}}[${3:remise}]"
+		]
+	},
+
+
+	"ligne{}{}[][]":{
+		"prefix":"ligne",
+		"body":[
+			"\\ligne{${1:produit%text}}{${2:prix unitaire HT}}[${3:remise}][${4:taux de TVA}]"
+		]
+	},
+
+
+	"ligne{}[]{}":{
+		"prefix":"ligne",
+		"body":[
+			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}"
+		]
+	},
+
+
+	"ligne{}[]{}[]":{
+		"prefix":"ligne",
+		"body":[
+			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}[${4:remise}]"
+		]
+	},
+
+
+	"ligne{}[]{}[][]":{
+		"prefix":"ligne",
+		"body":[
+			"\\ligne{${1:produit%text}}[${3:quantité}]{${2:prix unitaire HT}}[${4:remise}][${5:taux de TVA}]"
+		]
+	},
+
+
 	"facture":{
 		"prefix":"facture",
 		"body":[
 			"\\begin{facture}",
-			"\t$1",
+				"\t$1",
 			"\\end{facture}"
 		]
 	}

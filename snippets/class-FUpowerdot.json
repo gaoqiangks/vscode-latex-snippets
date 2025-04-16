@@ -1,7 +1,7 @@
 {
 
 
-	"inst":{
+	"inst{}":{
 		"prefix":"inst",
 		"body":[
 			"\\inst{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"framelogo":{
+	"framelogo{}":{
 		"prefix":"framelogo",
 		"body":[
 			"\\framelogo{${1:graphics code}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"titlelogo":{
+	"titlelogo{}":{
 		"prefix":"titlelogo",
 		"body":[
 			"\\titlelogo{${1:graphics code}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"fachbereich":{
+	"fachbereich{}":{
 		"prefix":"fachbereich",
 		"body":[
 			"\\fachbereich{${1:fachbereich}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:institute}}"
@@ -89,18 +89,10 @@
 	},
 
 
-	"titlegraphic":{
+	"titlegraphic{}":{
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic{${1:imagefile}}"
-		]
-	},
-
-
-	"titlegraphic":{
-		"prefix":"titlegraphic",
-		"body":[
-			"\\titlegraphic[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	},
 
@@ -209,7 +201,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -457,52 +449,10 @@
 	},
 
 
-	"sectionslide":{
-		"prefix":"sectionslide",
+	"titlegraphic[]{}":{
+		"prefix":"titlegraphic",
 		"body":[
-			"\\begin{sectionslide}",
-			"\t$1",
-			"\\end{sectionslide}"
-		]
-	},
-
-
-	"basic":{
-		"prefix":"basic",
-		"body":[
-			"\\begin{basic}",
-			"\t$1",
-			"\\end{basic}"
-		]
-	},
-
-
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\begin{slide}",
-			"\t$1",
-			"\\end{slide}"
-		]
-	},
-
-
-	"LaTeXflushleft":{
-		"prefix":"LaTeXflushleft",
-		"body":[
-			"\\begin{LaTeXflushleft}",
-			"\t$1",
-			"\\end{LaTeXflushleft}"
-		]
-	},
-
-
-	"wideslide":{
-		"prefix":"wideslide",
-		"body":[
-			"\\begin{wideslide}",
-			"\t$1",
-			"\\end{wideslide}"
+			"\\titlegraphic[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	},
 
@@ -511,18 +461,48 @@
 		"prefix":"titleslide",
 		"body":[
 			"\\begin{titleslide}",
-			"\t$1",
+				"\t$1",
 			"\\end{titleslide}"
 		]
 	},
 
 
-	"LaTeXcenter":{
-		"prefix":"LaTeXcenter",
+	"basic":{
+		"prefix":"basic",
 		"body":[
-			"\\begin{LaTeXcenter}",
-			"\t$1",
-			"\\end{LaTeXcenter}"
+			"\\begin{basic}",
+				"\t$1",
+			"\\end{basic}"
+		]
+	},
+
+
+	"wideslide":{
+		"prefix":"wideslide",
+		"body":[
+			"\\begin{wideslide}",
+				"\t$1",
+			"\\end{wideslide}"
+		]
+	},
+
+
+	"slide":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t$1",
+			"\\end{slide}"
+		]
+	},
+
+
+	"sectionslide":{
+		"prefix":"sectionslide",
+		"body":[
+			"\\begin{sectionslide}",
+				"\t$1",
+			"\\end{sectionslide}"
 		]
 	},
 
@@ -531,7 +511,97 @@
 		"prefix":"sectionwideslide",
 		"body":[
 			"\\begin{sectionwideslide}",
-			"\t$1",
+				"\t$1",
+			"\\end{sectionwideslide}"
+		]
+	},
+
+
+	"LaTeXflushleft":{
+		"prefix":"LaTeXflushleft",
+		"body":[
+			"\\begin{LaTeXflushleft}",
+				"\t$1",
+			"\\end{LaTeXflushleft}"
+		]
+	},
+
+
+	"LaTeXflushleft":{
+		"prefix":"LaTeXflushleft",
+		"body":[
+			"\\begin{LaTeXflushleft}",
+				"\t$1",
+			"\\end{LaTeXflushleft}"
+		]
+	},
+
+
+	"LaTeXcenter":{
+		"prefix":"LaTeXcenter",
+		"body":[
+			"\\begin{LaTeXcenter}",
+				"\t$1",
+			"\\end{LaTeXcenter}"
+		]
+	},
+
+
+	"titleslide":{
+		"prefix":"titleslide",
+		"body":[
+			"\\begin{titleslide}",
+				"\t$1",
+			"\\end{titleslide}"
+		]
+	},
+
+
+	"basic":{
+		"prefix":"basic",
+		"body":[
+			"\\begin{basic}",
+				"\t$1",
+			"\\end{basic}"
+		]
+	},
+
+
+	"wideslide":{
+		"prefix":"wideslide",
+		"body":[
+			"\\begin{wideslide}",
+				"\t$1",
+			"\\end{wideslide}"
+		]
+	},
+
+
+	"slide":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t$1",
+			"\\end{slide}"
+		]
+	},
+
+
+	"sectionslide":{
+		"prefix":"sectionslide",
+		"body":[
+			"\\begin{sectionslide}",
+				"\t$1",
+			"\\end{sectionslide}"
+		]
+	},
+
+
+	"sectionwideslide":{
+		"prefix":"sectionwideslide",
+		"body":[
+			"\\begin{sectionwideslide}",
+				"\t$1",
 			"\\end{sectionwideslide}"
 		]
 	}

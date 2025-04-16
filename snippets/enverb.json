@@ -1,26 +1,10 @@
 {
 
 
-	"enverb":{
+	"enverb{}":{
 		"prefix":"enverb",
 		"body":[
 			"\\enverb{${1:keyvals}}"
-		]
-	},
-
-
-	"enverb":{
-		"prefix":"enverb",
-		"body":[
-			"\\enverb{${1:keyvals}}[${2:keyvals%plain}]"
-		]
-	},
-
-
-	"enverb*":{
-		"prefix":"enverb*",
-		"body":[
-			"\\enverb*{${1:keyvals}}"
 		]
 	},
 
@@ -41,7 +25,7 @@
 	},
 
 
-	"enverbListing":{
+	"enverbListing{}{}":{
 		"prefix":"enverbListing",
 		"body":[
 			"\\enverbListing{${1:env}}{${2:args}}"
@@ -49,10 +33,26 @@
 	},
 
 
-	"enverbsetup":{
+	"enverbsetup{}":{
 		"prefix":"enverbsetup",
 		"body":[
 			"\\enverbsetup{${1:keyvals}}"
+		]
+	},
+
+
+	"enverb*{}":{
+		"prefix":"*enverb",
+		"body":[
+			"\\enverb*{${1:keyvals}}"
+		]
+	},
+
+
+	"enverb{}[]":{
+		"prefix":"enverb",
+		"body":[
+			"\\enverb{${1:keyvals}}[${2:keyvals%plain}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"incgraph":{
+	"incgraph{}":{
 		"prefix":"incgraph",
 		"body":[
 			"\\incgraph{${1:imagefile}}"
@@ -9,42 +9,10 @@
 	},
 
 
-	"incgraph":{
-		"prefix":"incgraph",
-		"body":[
-			"\\incgraph[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"incgraph":{
-		"prefix":"incgraph",
-		"body":[
-			"\\incgraph[${2:options%keyvals}][${3:graphics options}]{${1:imagefile}}"
-		]
-	},
-
-
-	"incmultigraph":{
+	"incmultigraph{}{}":{
 		"prefix":"incmultigraph",
 		"body":[
 			"\\incmultigraph{${1:file name pattern}}{${2:list}}"
-		]
-	},
-
-
-	"incmultigraph":{
-		"prefix":"incmultigraph",
-		"body":[
-			"\\incmultigraph[${3:options%keyvals}]{${1:file name pattern}}{${2:list}}"
-		]
-	},
-
-
-	"incmultigraph":{
-		"prefix":"incmultigraph",
-		"body":[
-			"\\incmultigraph[${3:options%keyvals}][${4:graphics options}]{${1:file name pattern}}{${2:list}}"
 		]
 	},
 
@@ -81,7 +49,7 @@
 	},
 
 
-	"igrset":{
+	"igrset{}":{
 		"prefix":"igrset",
 		"body":[
 			"\\igrset{${1:options%keyvals}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"igrSetPageSize":{
+	"igrSetPageSize{}{}":{
 		"prefix":"igrSetPageSize",
 		"body":[
 			"\\igrSetPageSize{${1:width}}{${2:height}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"igrGetLastPage":{
+	"igrGetLastPage{}":{
 		"prefix":"igrGetLastPage",
 		"body":[
 			"\\igrGetLastPage{${1:file}}"
@@ -137,7 +105,7 @@
 	},
 
 
-	"igfpage":{
+	"igfpage{}":{
 		"prefix":"igfpage",
 		"body":[
 			"\\igfpage{${1:text}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"igrcenter":{
+	"igrcenter{}":{
 		"prefix":"igrcenter",
 		"body":[
 			"\\igrcenter{${1:text}}"
@@ -153,7 +121,7 @@
 	},
 
 
-	"igrcenterfit":{
+	"igrcenterfit{}{}{}":{
 		"prefix":"igrcenterfit",
 		"body":[
 			"\\igrcenterfit{${1:width}}{${2:height}}{${3:text}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"igrtargetset":{
+	"igrtargetset{}":{
 		"prefix":"igrtargetset",
 		"body":[
 			"\\igrtargetset{${1:hyperref anchor}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"igfboxset":{
+	"igfboxset{}":{
 		"prefix":"igfboxset",
 		"body":[
 			"\\igfboxset{${1:text}}"
@@ -281,7 +249,7 @@
 	},
 
 
-	"igrsetmatchvalue":{
+	"igrsetmatchvalue{}{}":{
 		"prefix":"igrsetmatchvalue",
 		"body":[
 			"\\igrsetmatchvalue{${1:key%plain}}{${2:value}}"
@@ -289,7 +257,7 @@
 	},
 
 
-	"igrsetmatches":{
+	"igrsetmatches{}":{
 		"prefix":"igrsetmatches",
 		"body":[
 			"\\igrsetmatches{${1:list}}"
@@ -297,7 +265,7 @@
 	},
 
 
-	"igrifmatch":{
+	"igrifmatch{}{}{}":{
 		"prefix":"igrifmatch",
 		"body":[
 			"\\igrifmatch{${1:key%plain}}{${2:then}}{${3:else}}"
@@ -305,10 +273,42 @@
 	},
 
 
-	"igrmakezerofill":{
+	"igrmakezerofill{}{}":{
 		"prefix":"igrmakezerofill",
 		"body":[
 			"\\igrmakezerofill{${1:macro}}{${2:digits}}"
+		]
+	},
+
+
+	"incgraph[]{}":{
+		"prefix":"incgraph",
+		"body":[
+			"\\incgraph[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"incgraph[][]{}":{
+		"prefix":"incgraph",
+		"body":[
+			"\\incgraph[${2:options%keyvals}][${3:graphics options}]{${1:imagefile}}"
+		]
+	},
+
+
+	"incmultigraph[]{}{}":{
+		"prefix":"incmultigraph",
+		"body":[
+			"\\incmultigraph[${3:options%keyvals}]{${1:file name pattern}}{${2:list}}"
+		]
+	},
+
+
+	"incmultigraph[][]{}{}":{
+		"prefix":"incmultigraph",
+		"body":[
+			"\\incmultigraph[${3:options%keyvals}][${4:graphics options}]{${1:file name pattern}}{${2:list}}"
 		]
 	},
 
@@ -317,7 +317,17 @@
 		"prefix":"inctext",
 		"body":[
 			"\\begin{inctext}",
-			"\t$1",
+				"\t$1",
+			"\\end{inctext}"
+		]
+	},
+
+
+	"inctext":{
+		"prefix":"inctext",
+		"body":[
+			"\\begin{inctext}",
+				"\t$1",
 			"\\end{inctext}"
 		]
 	}

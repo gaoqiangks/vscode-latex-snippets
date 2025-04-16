@@ -1,7 +1,7 @@
 {
 
 
-	"affiliation":{
+	"affiliation{}":{
 		"prefix":"affiliation",
 		"body":[
 			"\\affiliation{${1:affiliation}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"affiliation":{
-		"prefix":"affiliation",
-		"body":[
-			"\\affiliation[${2:short affiliation}]{${1:affiliation}}"
-		]
-	},
-
-
-	"alsoaffiliation":{
+	"alsoaffiliation{}":{
 		"prefix":"alsoaffiliation",
 		"body":[
 			"\\alsoaffiliation{${1:affiliation}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"alsoaffiliation":{
-		"prefix":"alsoaffiliation",
-		"body":[
-			"\\alsoaffiliation[${2:short affiliation}]{${1:affiliation}}"
-		]
-	},
-
-
-	"altaffiliation":{
+	"altaffiliation{}":{
 		"prefix":"altaffiliation",
 		"body":[
 			"\\altaffiliation{${1:affiliation}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"fax":{
+	"fax{}":{
 		"prefix":"fax",
 		"body":[
 			"\\fax{${1:fax number}}"
@@ -57,18 +41,10 @@
 	},
 
 
-	"phone":{
+	"phone{}":{
 		"prefix":"phone",
 		"body":[
 			"\\phone{${1:phone number}}"
-		]
-	},
-
-
-	"title":{
-		"prefix":"title",
-		"body":[
-			"\\title[${2:short title%text}]{${1:text}}"
 		]
 	},
 
@@ -121,7 +97,7 @@
 	},
 
 
-	"latin":{
+	"latin{}":{
 		"prefix":"latin",
 		"body":[
 			"\\latin{${1:text}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"bibnote":{
+	"bibnote{}":{
 		"prefix":"bibnote",
 		"body":[
 			"\\bibnote{${1:text}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"bibnotetext":{
+	"bibnotetext{}":{
 		"prefix":"bibnotetext",
 		"body":[
 			"\\bibnotetext{${1:text}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"abbreviations":{
+	"abbreviations{}":{
 		"prefix":"abbreviations",
 		"body":[
 			"\\abbreviations{${1:abbreviations}}"
@@ -249,7 +225,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords}}"
@@ -361,22 +337,46 @@
 	},
 
 
-	"chart":{
-		"prefix":"chart",
+	"affiliation[]{}":{
+		"prefix":"affiliation",
 		"body":[
-			"\\begin{chart}",
-			"\t$1",
-			"\\end{chart}"
+			"\\affiliation[${2:short affiliation}]{${1:affiliation}}"
 		]
 	},
 
 
-	"tocentry":{
-		"prefix":"tocentry",
+	"alsoaffiliation[]{}":{
+		"prefix":"alsoaffiliation",
 		"body":[
-			"\\begin{tocentry}",
-			"\t$1",
-			"\\end{tocentry}"
+			"\\alsoaffiliation[${2:short affiliation}]{${1:affiliation}}"
+		]
+	},
+
+
+	"title[]{}":{
+		"prefix":"title",
+		"body":[
+			"\\title[${2:short title%text}]{${1:text}}"
+		]
+	},
+
+
+	"scheme":{
+		"prefix":"scheme",
+		"body":[
+			"\\begin{scheme}",
+				"\t$1",
+			"\\end{scheme}"
+		]
+	},
+
+
+	"chart":{
+		"prefix":"chart",
+		"body":[
+			"\\begin{chart}",
+				"\t$1",
+			"\\end{chart}"
 		]
 	},
 
@@ -385,7 +385,7 @@
 		"prefix":"graph",
 		"body":[
 			"\\begin{graph}",
-			"\t$1",
+				"\t$1",
 			"\\end{graph}"
 		]
 	},
@@ -395,7 +395,7 @@
 		"prefix":"acknowledgement",
 		"body":[
 			"\\begin{acknowledgement}",
-			"\t$1",
+				"\t$1",
 			"\\end{acknowledgement}"
 		]
 	},
@@ -405,8 +405,18 @@
 		"prefix":"suppinfo",
 		"body":[
 			"\\begin{suppinfo}",
-			"\t$1",
+				"\t$1",
 			"\\end{suppinfo}"
+		]
+	},
+
+
+	"tocentry":{
+		"prefix":"tocentry",
+		"body":[
+			"\\begin{tocentry}",
+				"\t$1",
+			"\\end{tocentry}"
 		]
 	},
 
@@ -415,8 +425,28 @@
 		"prefix":"scheme",
 		"body":[
 			"\\begin{scheme}",
-			"\t$1",
+				"\t$1",
 			"\\end{scheme}"
+		]
+	},
+
+
+	"chart":{
+		"prefix":"chart",
+		"body":[
+			"\\begin{chart}",
+				"\t$1",
+			"\\end{chart}"
+		]
+	},
+
+
+	"graph":{
+		"prefix":"graph",
+		"body":[
+			"\\begin{graph}",
+				"\t$1",
+			"\\end{graph}"
 		]
 	}
 }

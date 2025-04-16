@@ -1,18 +1,10 @@
 {
 
 
-	"animategraphics":{
+	"animategraphics{}{}{}{}":{
 		"prefix":"animategraphics",
 		"body":[
 			"\\animategraphics{${1:frame rate}}{${2:file basename}}{${3:first}}{${4:last}}"
-		]
-	},
-
-
-	"animategraphics":{
-		"prefix":"animategraphics",
-		"body":[
-			"\\animategraphics[${5:options%keyvals}]{${1:frame rate}}{${2:file basename}}{${3:first}}{${4:last}}"
 		]
 	},
 
@@ -25,31 +17,7 @@
 	},
 
 
-	"newframe":{
-		"prefix":"newframe",
-		"body":[
-			"\\newframe[${1:frame rate}]"
-		]
-	},
-
-
-	"newframe*":{
-		"prefix":"newframe*",
-		"body":[
-			"\\newframe*"
-		]
-	},
-
-
-	"newframe*":{
-		"prefix":"newframe*",
-		"body":[
-			"\\newframe*[${1:frame rate}]"
-		]
-	},
-
-
-	"multiframe":{
+	"multiframe{}{}{}":{
 		"prefix":"multiframe",
 		"body":[
 			"\\multiframe{${1:number of frames}}{${2:variables}}{${3:content%definition}}"
@@ -65,11 +33,53 @@
 	},
 
 
+	"newframe*":{
+		"prefix":"*newframe",
+		"body":[
+			"\\newframe*"
+		]
+	},
+
+
+	"newframe*[]":{
+		"prefix":"*newframe",
+		"body":[
+			"\\newframe*[${1:frame rate}]"
+		]
+	},
+
+
+	"animategraphics[]{}{}{}{}":{
+		"prefix":"animategraphics",
+		"body":[
+			"\\animategraphics[${5:options%keyvals}]{${1:frame rate}}{${2:file basename}}{${3:first}}{${4:last}}"
+		]
+	},
+
+
+	"newframe[]":{
+		"prefix":"newframe",
+		"body":[
+			"\\newframe[${1:frame rate}]"
+		]
+	},
+
+
 	"animateinline":{
 		"prefix":"animateinline",
 		"body":[
 			"\\begin{animateinline}",
-			"\t$1",
+				"\t$1",
+			"\\end{animateinline}"
+		]
+	},
+
+
+	"animateinline":{
+		"prefix":"animateinline",
+		"body":[
+			"\\begin{animateinline}",
+				"\t$1",
 			"\\end{animateinline}"
 		]
 	}

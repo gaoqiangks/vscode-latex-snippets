@@ -1,7 +1,7 @@
 {
 
 
-	"WithArrowsOptions":{
+	"WithArrowsOptions{}":{
 		"prefix":"WithArrowsOptions",
 		"body":[
 			"\\WithArrowsOptions{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"Arrow":{
+	"Arrow{}":{
 		"prefix":"Arrow",
 		"body":[
 			"\\Arrow{${1:label%plain}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"Arrow":{
-		"prefix":"Arrow",
-		"body":[
-			"\\Arrow[${2:options%keyvals}]{${1:label%plain}}"
-		]
-	},
-
-
-	"MultiArrow":{
+	"MultiArrow{}{}":{
 		"prefix":"MultiArrow",
 		"body":[
 			"\\MultiArrow{${1:row1,row2,...}}{${2:label%plain}}"
@@ -41,18 +33,10 @@
 	},
 
 
-	"tag":{
+	"tag{}":{
 		"prefix":"tag",
 		"body":[
 			"\\tag{${1:label%plain}}"
-		]
-	},
-
-
-	"tag*":{
-		"prefix":"tag*",
-		"body":[
-			"\\tag*{${1:label%plain}}"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"WithArrowsNewStyle":{
+	"WithArrowsNewStyle{}{}":{
 		"prefix":"WithArrowsNewStyle",
 		"body":[
 			"\\WithArrowsNewStyle{${1:style name%specialDef}}{${2:options%keyvals}}"
@@ -97,12 +81,18 @@
 	},
 
 
-	"DispWithArrows":{
-		"prefix":"DispWithArrows",
+	"tag*{}":{
+		"prefix":"*tag",
 		"body":[
-			"\\begin{DispWithArrows}",
-			"\t$1",
-			"\\end{DispWithArrows}"
+			"\\tag*{${1:label%plain}}"
+		]
+	},
+
+
+	"Arrow[]{}":{
+		"prefix":"Arrow",
+		"body":[
+			"\\Arrow[${2:options%keyvals}]{${1:label%plain}}"
 		]
 	},
 
@@ -111,17 +101,57 @@
 		"prefix":"WithArrows",
 		"body":[
 			"\\begin{WithArrows}",
-			"\t$1",
+				"\t$1",
 			"\\end{WithArrows}"
 		]
 	},
 
 
+	"DispWithArrows":{
+		"prefix":"DispWithArrows",
+		"body":[
+			"\\begin{DispWithArrows}",
+				"\t$1",
+			"\\end{DispWithArrows}"
+		]
+	},
+
+
 	"DispWithArrows*":{
-		"prefix":"DispWithArrows*",
+		"prefix":"*DispWithArrows",
 		"body":[
 			"\\begin{DispWithArrows*}",
-			"\t$1",
+				"\t$1",
+			"\\end{DispWithArrows*}"
+		]
+	},
+
+
+	"WithArrows":{
+		"prefix":"WithArrows",
+		"body":[
+			"\\begin{WithArrows}",
+				"\t$1",
+			"\\end{WithArrows}"
+		]
+	},
+
+
+	"DispWithArrows":{
+		"prefix":"DispWithArrows",
+		"body":[
+			"\\begin{DispWithArrows}",
+				"\t$1",
+			"\\end{DispWithArrows}"
+		]
+	},
+
+
+	"DispWithArrows*":{
+		"prefix":"DispWithArrows",
+		"body":[
+			"\\begin{DispWithArrows*}",
+				"\t$1",
 			"\\end{DispWithArrows*}"
 		]
 	}

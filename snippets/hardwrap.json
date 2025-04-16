@@ -1,7 +1,7 @@
 {
 
 
-	"HardWrap":{
+	"HardWrap{}{}{}{}{}":{
 		"prefix":"HardWrap",
 		"body":[
 			"\\HardWrap{${1:function}}{${2:width}}{${3:setup code}}{${4:newline}}{${5:text}}"
@@ -9,18 +9,10 @@
 	},
 
 
-	"GenerateLogMacros":{
+	"GenerateLogMacros{}{}":{
 		"prefix":"GenerateLogMacros",
 		"body":[
 			"\\GenerateLogMacros{${1:type%keyvals}}{${2:name}}"
-		]
-	},
-
-
-	"GenerateLogMacros":{
-		"prefix":"GenerateLogMacros",
-		"body":[
-			"\\GenerateLogMacros{${1:type%keyvals}}[${3:prefix}]{${2:name}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"setmaxprintline":{
+	"setmaxprintline{}":{
 		"prefix":"setmaxprintline",
 		"body":[
 			"\\setmaxprintline{${1:integer}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"GeneratePackageLogMacros":{
+	"GeneratePackageLogMacros{}":{
 		"prefix":"GeneratePackageLogMacros",
 		"body":[
 			"\\GeneratePackageLogMacros{${1:name}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"GeneratePackageLogMacros":{
-		"prefix":"GeneratePackageLogMacros",
-		"body":[
-			"\\GeneratePackageLogMacros[${2:prefix}]{${1:name}}"
-		]
-	},
-
-
-	"GenerateClassLogMacros":{
+	"GenerateClassLogMacros{}":{
 		"prefix":"GenerateClassLogMacros",
 		"body":[
 			"\\GenerateClassLogMacros{${1:name}}"
@@ -65,7 +49,23 @@
 	},
 
 
-	"GenerateClassLogMacros":{
+	"GenerateLogMacros{}[]{}":{
+		"prefix":"GenerateLogMacros",
+		"body":[
+			"\\GenerateLogMacros{${1:type%keyvals}}[${3:prefix}]{${2:name}}"
+		]
+	},
+
+
+	"GeneratePackageLogMacros[]{}":{
+		"prefix":"GeneratePackageLogMacros",
+		"body":[
+			"\\GeneratePackageLogMacros[${2:prefix}]{${1:name}}"
+		]
+	},
+
+
+	"GenerateClassLogMacros[]{}":{
 		"prefix":"GenerateClassLogMacros",
 		"body":[
 			"\\GenerateClassLogMacros[${2:prefix}]{${1:name}}"

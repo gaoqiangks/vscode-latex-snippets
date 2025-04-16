@@ -17,7 +17,7 @@
 	},
 
 
-	"meta":{
+	"meta{}":{
 		"prefix":"meta",
 		"body":[
 			"\\meta{${1:arg}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"command":{
+	"command{}":{
 		"prefix":"command",
 		"body":[
 			"\\command{${1:csname}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:address}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"https":{
+	"https{}":{
 		"prefix":"https",
 		"body":[
 			"\\https{${1:URL}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"http":{
+	"http{}":{
 		"prefix":"http",
 		"body":[
 			"\\http{${1:URL}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"ctan":{
+	"ctan{}":{
 		"prefix":"ctan",
 		"body":[
 			"\\ctan{${1:package}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"package":{
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\package{${1:package}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"ltxclass":{
+	"ltxclass{}":{
 		"prefix":"ltxclass",
 		"body":[
 			"\\ltxclass{${1:class}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"option":{
+	"option{}":{
 		"prefix":"option",
 		"body":[
 			"\\option{${1:option}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"filename":{
+	"filename{}":{
 		"prefix":"filename",
 		"body":[
 			"\\filename{${1:file}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"extension":{
+	"extension{}":{
 		"prefix":"extension",
 		"body":[
 			"\\extension{${1:file extension}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"New":{
+	"New{}":{
 		"prefix":"New",
 		"body":[
 			"\\New{${1:text}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"newnotice":{
+	"newnotice{}{}":{
 		"prefix":"newnotice",
 		"body":[
 			"\\newnotice{${1:envname}}{${2:text}}"
@@ -161,42 +161,10 @@
 	},
 
 
-	"alternative":{
+	"alternative{}":{
 		"prefix":"alternative",
 		"body":[
 			"\\alternative{${1:csv list}}"
-		]
-	},
-
-
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\key{${1:key name}}[${2:key value}]"
-		]
-	},
-
-
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\key{${1:key name}}[${2:key value}][${3:default value}]"
-		]
-	},
-
-
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\key[${2:options%keyvals}]{${1:key name}}[${3:key value}]"
-		]
-	},
-
-
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\key[${2:options%keyvals}]{${1:key name}}[${3:key value}][${4:default value}]"
 		]
 	},
 
@@ -217,7 +185,7 @@
 	},
 
 
-	"newdescriptionenvironment":{
+	"newdescriptionenvironment{}{}":{
 		"prefix":"newdescriptionenvironment",
 		"body":[
 			"\\newdescriptionenvironment{${1:envname}}{${2:label cmd}}"
@@ -249,7 +217,7 @@
 	},
 
 
-	"Th":{
+	"Th{}":{
 		"prefix":"Th",
 		"body":[
 			"\\Th{${1:text}}"
@@ -257,7 +225,39 @@
 	},
 
 
-	"Th":{
+	"key{}[]":{
+		"prefix":"key",
+		"body":[
+			"\\key{${1:key name}}[${2:key value}]"
+		]
+	},
+
+
+	"key{}[][]":{
+		"prefix":"key",
+		"body":[
+			"\\key{${1:key name}}[${2:key value}][${3:default value}]"
+		]
+	},
+
+
+	"key[]{}[]":{
+		"prefix":"key",
+		"body":[
+			"\\key[${2:options%keyvals}]{${1:key name}}[${3:key value}]"
+		]
+	},
+
+
+	"key[]{}[][]":{
+		"prefix":"key",
+		"body":[
+			"\\key[${2:options%keyvals}]{${1:key name}}[${3:key value}][${4:default value}]"
+		]
+	},
+
+
+	"Th[]{}":{
 		"prefix":"Th",
 		"body":[
 			"\\Th[${2:cols}]{${1:text}}"
@@ -269,28 +269,8 @@
 		"prefix":"desc",
 		"body":[
 			"\\begin{desc}",
-			"\t$1",
+				"\t$1",
 			"\\end{desc}"
-		]
-	},
-
-
-	"classes":{
-		"prefix":"classes",
-		"body":[
-			"\\begin{classes}",
-			"\t$1",
-			"\\end{classes}"
-		]
-	},
-
-
-	"advise":{
-		"prefix":"advise",
-		"body":[
-			"\\begin{advise}",
-			"\t$1",
-			"\\end{advise}"
 		]
 	},
 
@@ -299,68 +279,8 @@
 		"prefix":"latexcode",
 		"body":[
 			"\\begin{latexcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{latexcode}"
-		]
-	},
-
-
-	"bug":{
-		"prefix":"bug",
-		"body":[
-			"\\begin{bug}",
-			"\t$1",
-			"\\end{bug}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\begin{note}",
-			"\t$1",
-			"\\end{note}"
-		]
-	},
-
-
-	"keys":{
-		"prefix":"keys",
-		"body":[
-			"\\begin{keys}",
-			"\t$1",
-			"\\end{keys}"
-		]
-	},
-
-
-	"options":{
-		"prefix":"options",
-		"body":[
-			"\\begin{options}",
-			"\t$1",
-			"\\end{options}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"faq":{
-		"prefix":"faq",
-		"body":[
-			"\\begin{faq}",
-			"\t$1",
-			"\\end{faq}"
 		]
 	},
 
@@ -369,8 +289,38 @@
 		"prefix":"warning",
 		"body":[
 			"\\begin{warning}",
-			"\t$1",
+				"\t$1",
 			"\\end{warning}"
+		]
+	},
+
+
+	"note":{
+		"prefix":"note",
+		"body":[
+			"\\begin{note}",
+				"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"bug":{
+		"prefix":"bug",
+		"body":[
+			"\\begin{bug}",
+				"\t$1",
+			"\\end{bug}"
 		]
 	},
 
@@ -379,8 +329,58 @@
 		"prefix":"packages",
 		"body":[
 			"\\begin{packages}",
-			"\t$1",
+				"\t$1",
 			"\\end{packages}"
+		]
+	},
+
+
+	"classes":{
+		"prefix":"classes",
+		"body":[
+			"\\begin{classes}",
+				"\t$1",
+			"\\end{classes}"
+		]
+	},
+
+
+	"options":{
+		"prefix":"options",
+		"body":[
+			"\\begin{options}",
+				"\t$1",
+			"\\end{options}"
+		]
+	},
+
+
+	"advise":{
+		"prefix":"advise",
+		"body":[
+			"\\begin{advise}",
+				"\t$1",
+			"\\end{advise}"
+		]
+	},
+
+
+	"faq":{
+		"prefix":"faq",
+		"body":[
+			"\\begin{faq}",
+				"\t$1",
+			"\\end{faq}"
+		]
+	},
+
+
+	"keys":{
+		"prefix":"keys",
+		"body":[
+			"\\begin{keys}",
+				"\t$1",
+			"\\end{keys}"
 		]
 	}
 }

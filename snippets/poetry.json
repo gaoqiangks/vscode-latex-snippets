@@ -1,7 +1,7 @@
 {
 
 
-	"addgrouptolop":{
+	"addgrouptolop{}":{
 		"prefix":"addgrouptolop",
 		"body":[
 			"\\addgrouptolop{${1:contents line%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"addtolop":{
+	"addtolop{}":{
 		"prefix":"addtolop",
 		"body":[
 			"\\addtolop{${1:contents line%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"centerpoemon":{
+	"centerpoemon{}":{
 		"prefix":"centerpoemon",
 		"body":[
 			"\\centerpoemon{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"iofl":{
+	"iofl{}":{
 		"prefix":"iofl",
 		"body":[
 			"\\iofl{${1:entry}}"
@@ -77,14 +77,6 @@
 		"prefix":"poem",
 		"body":[
 			"\\poem"
-		]
-	},
-
-
-	"poem*":{
-		"prefix":"poem*",
-		"body":[
-			"\\poem*"
 		]
 	},
 
@@ -145,7 +137,7 @@
 	},
 
 
-	"poemfirstline":{
+	"poemfirstline{}":{
 		"prefix":"poemfirstline",
 		"body":[
 			"\\poemfirstline{${1:entry}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"poemgroupheading":{
+	"poemgroupheading{}{}":{
 		"prefix":"poemgroupheading",
 		"body":[
 			"\\poemgroupheading{${1:title%text}}{${2:other%text}}"
@@ -585,7 +577,7 @@
 	},
 
 
-	"titleauthorpoem":{
+	"titleauthorpoem{}{}":{
 		"prefix":"titleauthorpoem",
 		"body":[
 			"\\titleauthorpoem{${1:title%text}}{${2:author}}"
@@ -593,10 +585,18 @@
 	},
 
 
-	"titlepoem":{
+	"titlepoem{}":{
 		"prefix":"titlepoem",
 		"body":[
 			"\\titlepoem{${1:title%text}}"
+		]
+	},
+
+
+	"poem*":{
+		"prefix":"*poem",
+		"body":[
+			"\\poem*"
 		]
 	},
 
@@ -605,7 +605,17 @@
 		"prefix":"poem",
 		"body":[
 			"\\begin{poem}",
-			"\t$1",
+				"\t$1",
+			"\\end{poem}"
+		]
+	},
+
+
+	"poem":{
+		"prefix":"poem",
+		"body":[
+			"\\begin{poem}",
+				"\t$1",
 			"\\end{poem}"
 		]
 	},
@@ -615,7 +625,7 @@
 		"prefix":"poemgroup",
 		"body":[
 			"\\begin{poemgroup}",
-			"\t$1",
+				"\t$1",
 			"\\end{poemgroup}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"formulierung":{
+	"formulierung{}":{
 		"prefix":"formulierung",
 		"body":[
 			"\\formulierung{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"lonelyhand":{
+	"lonelyhand{}":{
 		"prefix":"lonelyhand",
 		"body":[
 			"\\lonelyhand{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"lonelytriangle":{
+	"lonelytriangle{}":{
 		"prefix":"lonelytriangle",
 		"body":[
 			"\\lonelytriangle{${1:text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"merke":{
+	"merke{}":{
 		"prefix":"merke",
 		"body":[
 			"\\merke{${1:text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"settheme":{
+	"settheme{}{}":{
 		"prefix":"settheme",
 		"body":[
 			"\\settheme{${1:thema}}{${2:datum}}"
@@ -81,15 +81,7 @@
 	},
 
 
-	"fall":{
-		"prefix":"fall",
-		"body":[
-			"\\fall[${2:quelle}]{${1:definitionstext%text}}"
-		]
-	},
-
-
-	"fall":{
+	"fall{}":{
 		"prefix":"fall",
 		"body":[
 			"\\fall{${1:definitionstext%text}}"
@@ -97,15 +89,7 @@
 	},
 
 
-	"greybox":{
-		"prefix":"greybox",
-		"body":[
-			"\\greybox[${2:width}]{${1:text}}"
-		]
-	},
-
-
-	"greybox":{
+	"greybox{}":{
 		"prefix":"greybox",
 		"body":[
 			"\\greybox{${1:text}}"
@@ -113,15 +97,7 @@
 	},
 
 
-	"jdef":{
-		"prefix":"jdef",
-		"body":[
-			"\\jdef[${2:quelle}]{${1:definitionstext%text}}"
-		]
-	},
-
-
-	"jdef":{
+	"jdef{}":{
 		"prefix":"jdef",
 		"body":[
 			"\\jdef{${1:definitionstext%text}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"lithinweis":{
+	"lithinweis{}":{
 		"prefix":"lithinweis",
 		"body":[
 			"\\lithinweis{${1:text}}"
@@ -161,22 +137,26 @@
 	},
 
 
-	"stars":{
-		"prefix":"stars",
+	"fall[]{}":{
+		"prefix":"fall",
 		"body":[
-			"\\begin{stars}",
-			"\t$1",
-			"\\end{stars}"
+			"\\fall[${2:quelle}]{${1:definitionstext%text}}"
 		]
 	},
 
 
-	"hinweis":{
-		"prefix":"hinweis",
+	"greybox[]{}":{
+		"prefix":"greybox",
 		"body":[
-			"\\begin{hinweis}",
-			"\t$1",
-			"\\end{hinweis}"
+			"\\greybox[${2:width}]{${1:text}}"
+		]
+	},
+
+
+	"jdef[]{}":{
+		"prefix":"jdef",
+		"body":[
+			"\\jdef[${2:quelle}]{${1:definitionstext%text}}"
 		]
 	},
 
@@ -185,28 +165,18 @@
 		"prefix":"aufzaehlung",
 		"body":[
 			"\\begin{aufzaehlung}",
-			"\t$1",
+				"\t$1",
 			"\\end{aufzaehlung}"
 		]
 	},
 
 
-	"uebersicht":{
-		"prefix":"uebersicht",
+	"beispiel":{
+		"prefix":"beispiel",
 		"body":[
-			"\\begin{uebersicht}",
-			"\t$1",
-			"\\end{uebersicht}"
-		]
-	},
-
-
-	"triangles":{
-		"prefix":"triangles",
-		"body":[
-			"\\begin{triangles}",
-			"\t$1",
-			"\\end{triangles}"
+			"\\begin{beispiel}",
+				"\t$1",
+			"\\end{beispiel}"
 		]
 	},
 
@@ -215,7 +185,7 @@
 		"prefix":"gesetzestext",
 		"body":[
 			"\\begin{gesetzestext}",
-			"\t$1",
+				"\t$1",
 			"\\end{gesetzestext}"
 		]
 	},
@@ -225,18 +195,48 @@
 		"prefix":"hands",
 		"body":[
 			"\\begin{hands}",
-			"\t$1",
+				"\t$1",
 			"\\end{hands}"
 		]
 	},
 
 
-	"beispiel":{
-		"prefix":"beispiel",
+	"hinweis":{
+		"prefix":"hinweis",
 		"body":[
-			"\\begin{beispiel}",
-			"\t$1",
-			"\\end{beispiel}"
+			"\\begin{hinweis}",
+				"\t$1",
+			"\\end{hinweis}"
+		]
+	},
+
+
+	"stars":{
+		"prefix":"stars",
+		"body":[
+			"\\begin{stars}",
+				"\t$1",
+			"\\end{stars}"
+		]
+	},
+
+
+	"triangles":{
+		"prefix":"triangles",
+		"body":[
+			"\\begin{triangles}",
+				"\t$1",
+			"\\end{triangles}"
+		]
+	},
+
+
+	"uebersicht":{
+		"prefix":"uebersicht",
+		"body":[
+			"\\begin{uebersicht}",
+				"\t$1",
+			"\\end{uebersicht}"
 		]
 	}
 }

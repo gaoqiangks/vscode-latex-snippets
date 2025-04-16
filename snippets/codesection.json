@@ -1,7 +1,7 @@
 {
 
 
-	"DefineCodeSection":{
+	"DefineCodeSection{}":{
 		"prefix":"DefineCodeSection",
 		"body":[
 			"\\DefineCodeSection{${1:name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"DefineCodeSection":{
-		"prefix":"DefineCodeSection",
-		"body":[
-			"\\DefineCodeSection[${2:true|false%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"SetCodeSection":{
+	"SetCodeSection{}{}":{
 		"prefix":"SetCodeSection",
 		"body":[
 			"\\SetCodeSection{${1:name}}{${2:true|false%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"BeginCodeSection":{
+	"BeginCodeSection{}":{
 		"prefix":"BeginCodeSection",
 		"body":[
 			"\\BeginCodeSection{${1:name}}"
@@ -33,10 +25,18 @@
 	},
 
 
-	"EndCodeSection":{
+	"EndCodeSection{}":{
 		"prefix":"EndCodeSection",
 		"body":[
 			"\\EndCodeSection{${1:name}}"
+		]
+	},
+
+
+	"DefineCodeSection[]{}":{
+		"prefix":"DefineCodeSection",
+		"body":[
+			"\\DefineCodeSection[${2:true|false%keyvals}]{${1:name}}"
 		]
 	}
 }

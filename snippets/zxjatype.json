@@ -25,7 +25,7 @@
 	},
 
 
-	"setjamainfont":{
+	"setjamainfont{}":{
 		"prefix":"setjamainfont",
 		"body":[
 			"\\setjamainfont{${1:font name}}"
@@ -33,23 +33,7 @@
 	},
 
 
-	"setjamainfont":{
-		"prefix":"setjamainfont",
-		"body":[
-			"\\setjamainfont{${1:font name}}[${2:font features}]"
-		]
-	},
-
-
-	"setjamainfont":{
-		"prefix":"setjamainfont",
-		"body":[
-			"\\setjamainfont[${2:font features%keyvals}]{${1:font name}}"
-		]
-	},
-
-
-	"setjasansfont":{
+	"setjasansfont{}":{
 		"prefix":"setjasansfont",
 		"body":[
 			"\\setjasansfont{${1:font name}}"
@@ -57,23 +41,7 @@
 	},
 
 
-	"setjasansfont":{
-		"prefix":"setjasansfont",
-		"body":[
-			"\\setjasansfont{${1:font name}}[${2:font features}]"
-		]
-	},
-
-
-	"setjasansfont":{
-		"prefix":"setjasansfont",
-		"body":[
-			"\\setjasansfont[${2:font features%keyvals}]{${1:font name}}"
-		]
-	},
-
-
-	"setjamonofont":{
+	"setjamonofont{}":{
 		"prefix":"setjamonofont",
 		"body":[
 			"\\setjamonofont{${1:font name}}"
@@ -81,23 +49,7 @@
 	},
 
 
-	"setjamonofont":{
-		"prefix":"setjamonofont",
-		"body":[
-			"\\setjamonofont{${1:font name}}[${2:font features}]"
-		]
-	},
-
-
-	"setjamonofont":{
-		"prefix":"setjamonofont",
-		"body":[
-			"\\setjamonofont[${2:font features%keyvals}]{${1:font name}}"
-		]
-	},
-
-
-	"setjafamilyfont":{
+	"setjafamilyfont{}{}":{
 		"prefix":"setjafamilyfont",
 		"body":[
 			"\\setjafamilyfont{${1:family}}{${2:font name}}"
@@ -105,23 +57,7 @@
 	},
 
 
-	"setjafamilyfont":{
-		"prefix":"setjafamilyfont",
-		"body":[
-			"\\setjafamilyfont{${1:family}}{${2:font name}}[${3:font features}]"
-		]
-	},
-
-
-	"setjafamilyfont":{
-		"prefix":"setjafamilyfont",
-		"body":[
-			"\\setjafamilyfont{${1:family}}[${3:font features%keyvals}]{${2:font name}}"
-		]
-	},
-
-
-	"jafamily":{
+	"jafamily{}":{
 		"prefix":"jafamily",
 		"body":[
 			"\\jafamily{${1:family}}"
@@ -153,7 +89,7 @@
 	},
 
 
-	"setjafontscale":{
+	"setjafontscale{}":{
 		"prefix":"setjafontscale",
 		"body":[
 			"\\setjafontscale{${1:factor}}"
@@ -193,7 +129,7 @@
 	},
 
 
-	"textrawja":{
+	"textrawja{}":{
 		"prefix":"textrawja",
 		"body":[
 			"\\textrawja{${1:text}}"
@@ -201,10 +137,74 @@
 	},
 
 
-	"textrawen":{
+	"textrawen{}":{
 		"prefix":"textrawen",
 		"body":[
 			"\\textrawen{${1:text}}"
+		]
+	},
+
+
+	"setjamainfont{}[]":{
+		"prefix":"setjamainfont",
+		"body":[
+			"\\setjamainfont{${1:font name}}[${2:font features}]"
+		]
+	},
+
+
+	"setjamainfont[]{}":{
+		"prefix":"setjamainfont",
+		"body":[
+			"\\setjamainfont[${2:font features%keyvals}]{${1:font name}}"
+		]
+	},
+
+
+	"setjasansfont{}[]":{
+		"prefix":"setjasansfont",
+		"body":[
+			"\\setjasansfont{${1:font name}}[${2:font features}]"
+		]
+	},
+
+
+	"setjasansfont[]{}":{
+		"prefix":"setjasansfont",
+		"body":[
+			"\\setjasansfont[${2:font features%keyvals}]{${1:font name}}"
+		]
+	},
+
+
+	"setjamonofont{}[]":{
+		"prefix":"setjamonofont",
+		"body":[
+			"\\setjamonofont{${1:font name}}[${2:font features}]"
+		]
+	},
+
+
+	"setjamonofont[]{}":{
+		"prefix":"setjamonofont",
+		"body":[
+			"\\setjamonofont[${2:font features%keyvals}]{${1:font name}}"
+		]
+	},
+
+
+	"setjafamilyfont{}{}[]":{
+		"prefix":"setjafamilyfont",
+		"body":[
+			"\\setjafamilyfont{${1:family}}{${2:font name}}[${3:font features}]"
+		]
+	},
+
+
+	"setjafamilyfont{}[]{}":{
+		"prefix":"setjafamilyfont",
+		"body":[
+			"\\setjafamilyfont{${1:family}}[${3:font features%keyvals}]{${2:font name}}"
 		]
 	},
 
@@ -213,7 +213,7 @@
 		"prefix":"rawjatext",
 		"body":[
 			"\\begin{rawjatext}",
-			"\t$1",
+				"\t$1",
 			"\\end{rawjatext}"
 		]
 	},
@@ -223,7 +223,7 @@
 		"prefix":"rawentext",
 		"body":[
 			"\\begin{rawentext}",
-			"\t$1",
+				"\t$1",
 			"\\end{rawentext}"
 		]
 	}

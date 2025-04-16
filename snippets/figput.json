@@ -1,7 +1,7 @@
 {
 
 
-	"FigPut":{
+	"FigPut{}":{
 		"prefix":"FigPut",
 		"body":[
 			"\\FigPut{${1:fig_name,fig_ht}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"FigPut":{
-		"prefix":"FigPut",
-		"body":[
-			"\\FigPut{${1:fig_name,fig_ht}}[${2:options}]"
-		]
-	},
-
-
-	"SetInnerMargin":{
+	"SetInnerMargin{}":{
 		"prefix":"SetInnerMargin",
 		"body":[
 			"\\SetInnerMargin{${1:length}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"SetOuterMargin":{
+	"SetOuterMargin{}":{
 		"prefix":"SetOuterMargin",
 		"body":[
 			"\\SetOuterMargin{${1:length}}"
@@ -49,10 +41,18 @@
 	},
 
 
-	"LoadFigureCode":{
+	"LoadFigureCode{}":{
 		"prefix":"LoadFigureCode",
 		"body":[
 			"\\LoadFigureCode{${1:file}}"
+		]
+	},
+
+
+	"FigPut{}[]":{
+		"prefix":"FigPut",
+		"body":[
+			"\\FigPut{${1:fig_name,fig_ht}}[${2:options}]"
 		]
 	},
 
@@ -61,7 +61,17 @@
 		"prefix":"figput",
 		"body":[
 			"\\begin{figput}",
-			"\t$1",
+				"\t$1",
+			"\\end{figput}"
+		]
+	},
+
+
+	"figput":{
+		"prefix":"figput",
+		"body":[
+			"\\begin{figput}",
+				"\t$1",
 			"\\end{figput}"
 		]
 	}

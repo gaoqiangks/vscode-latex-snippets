@@ -1,18 +1,10 @@
 {
 
 
-	"ch":{
+	"ch{}":{
 		"prefix":"ch",
 		"body":[
 			"\\ch{${1:chapter number}}"
-		]
-	},
-
-
-	"ch*":{
-		"prefix":"ch*",
-		"body":[
-			"\\ch*{${1:chapter number}}"
 		]
 	},
 
@@ -25,7 +17,7 @@
 	},
 
 
-	"added":{
+	"added{}":{
 		"prefix":"added",
 		"body":[
 			"\\added{${1:words%text}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"name":{
+	"name{}":{
 		"prefix":"name",
 		"body":[
 			"\\name{${1:divine name}}"
@@ -105,18 +97,10 @@
 	},
 
 
-	"scripturestyle":{
+	"scripturestyle{}{}":{
 		"prefix":"scripturestyle",
 		"body":[
 			"\\scripturestyle{${1:name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"scripturestyle*":{
-		"prefix":"scripturestyle*",
-		"body":[
-			"\\scripturestyle*{${1:name}}{${2:options%keyvals}}"
 		]
 	},
 
@@ -129,7 +113,7 @@
 	},
 
 
-	"scripturesetup":{
+	"scripturesetup{}":{
 		"prefix":"scripturesetup",
 		"body":[
 			"\\scripturesetup{${1:options%keyvals}}"
@@ -137,7 +121,7 @@
 	},
 
 
-	"textright":{
+	"textright{}":{
 		"prefix":"textright",
 		"body":[
 			"\\textright{${1:text}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"textscripture":{
+	"textscripture{}":{
 		"prefix":"textscripture",
 		"body":[
 			"\\textscripture{${1:quotation%text}}"
@@ -153,23 +137,7 @@
 	},
 
 
-	"textscripture":{
-		"prefix":"textscripture",
-		"body":[
-			"\\textscripture[${2:reference}]{${1:quotation%text}}"
-		]
-	},
-
-
-	"textscripture":{
-		"prefix":"textscripture",
-		"body":[
-			"\\textscripture[${2:reference}][${3:options%keyvals}]{${1:quotation%text}}"
-		]
-	},
-
-
-	"vs":{
+	"vs{}":{
 		"prefix":"vs",
 		"body":[
 			"\\vs{${1:verse number}}"
@@ -177,62 +145,34 @@
 	},
 
 
-	"midparachap":{
-		"prefix":"midparachap",
+	"ch*{}":{
+		"prefix":"*ch",
 		"body":[
-			"\\begin{midparachap}",
-			"\t$1",
-			"\\end{midparachap}"
+			"\\ch*{${1:chapter number}}"
 		]
 	},
 
 
-	"scripture":{
-		"prefix":"scripture",
+	"scripturestyle*{}{}":{
+		"prefix":"*scripturestyle",
 		"body":[
-			"\\begin{scripture}",
-			"\t$1",
-			"\\end{scripture}"
+			"\\scripturestyle*{${1:name}}{${2:options%keyvals}}"
 		]
 	},
 
 
-	"poetry":{
-		"prefix":"poetry",
+	"textscripture[]{}":{
+		"prefix":"textscripture",
 		"body":[
-			"\\begin{poetry}",
-			"\t$1",
-			"\\end{poetry}"
+			"\\textscripture[${2:reference}]{${1:quotation%text}}"
 		]
 	},
 
 
-	"narrow":{
-		"prefix":"narrow",
+	"textscripture[][]{}":{
+		"prefix":"textscripture",
 		"body":[
-			"\\begin{narrow}",
-			"\t$1",
-			"\\end{narrow}"
-		]
-	},
-
-
-	"flushright":{
-		"prefix":"flushright",
-		"body":[
-			"\\begin{flushright}",
-			"\t$1",
-			"\\end{flushright}"
-		]
-	},
-
-
-	"center":{
-		"prefix":"center",
-		"body":[
-			"\\begin{center}",
-			"\t$1",
-			"\\end{center}"
+			"\\textscripture[${2:reference}][${3:options%keyvals}]{${1:quotation%text}}"
 		]
 	},
 
@@ -241,8 +181,128 @@
 		"prefix":"hanging",
 		"body":[
 			"\\begin{hanging}",
-			"\t$1",
+				"\t$1",
 			"\\end{hanging}"
+		]
+	},
+
+
+	"midparachap":{
+		"prefix":"midparachap",
+		"body":[
+			"\\begin{midparachap}",
+				"\t$1",
+			"\\end{midparachap}"
+		]
+	},
+
+
+	"narrow":{
+		"prefix":"narrow",
+		"body":[
+			"\\begin{narrow}",
+				"\t$1",
+			"\\end{narrow}"
+		]
+	},
+
+
+	"poetry":{
+		"prefix":"poetry",
+		"body":[
+			"\\begin{poetry}",
+				"\t$1",
+			"\\end{poetry}"
+		]
+	},
+
+
+	"scripture":{
+		"prefix":"scripture",
+		"body":[
+			"\\begin{scripture}",
+				"\t$1",
+			"\\end{scripture}"
+		]
+	},
+
+
+	"center":{
+		"prefix":"center",
+		"body":[
+			"\\begin{center}",
+				"\t$1",
+			"\\end{center}"
+		]
+	},
+
+
+	"flushright":{
+		"prefix":"flushright",
+		"body":[
+			"\\begin{flushright}",
+				"\t$1",
+			"\\end{flushright}"
+		]
+	},
+
+
+	"hanging":{
+		"prefix":"hanging",
+		"body":[
+			"\\begin{hanging}",
+				"\t$1",
+			"\\end{hanging}"
+		]
+	},
+
+
+	"midparachap":{
+		"prefix":"midparachap",
+		"body":[
+			"\\begin{midparachap}",
+				"\t$1",
+			"\\end{midparachap}"
+		]
+	},
+
+
+	"narrow":{
+		"prefix":"narrow",
+		"body":[
+			"\\begin{narrow}",
+				"\t$1",
+			"\\end{narrow}"
+		]
+	},
+
+
+	"poetry":{
+		"prefix":"poetry",
+		"body":[
+			"\\begin{poetry}",
+				"\t$1",
+			"\\end{poetry}"
+		]
+	},
+
+
+	"scripture":{
+		"prefix":"scripture",
+		"body":[
+			"\\begin{scripture}",
+				"\t$1",
+			"\\end{scripture}"
+		]
+	},
+
+
+	"scripture":{
+		"prefix":"scripture",
+		"body":[
+			"\\begin{scripture}",
+				"\t$1",
+			"\\end{scripture}"
 		]
 	}
 }

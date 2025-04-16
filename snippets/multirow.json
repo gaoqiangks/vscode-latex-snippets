@@ -1,42 +1,10 @@
 {
 
 
-	"multirow":{
+	"multirow{}{}{}":{
 		"prefix":"multirow",
 		"body":[
 			"\\multirow{${1:number of rows}}{${2:width or *}}{${3:text}}"
-		]
-	},
-
-
-	"multirow":{
-		"prefix":"multirow",
-		"body":[
-			"\\multirow[${4:vpos%keyvals}]{${1:number of rows}}{${2:width or *}}{${3:text}}"
-		]
-	},
-
-
-	"multirow":{
-		"prefix":"multirow",
-		"body":[
-			"\\multirow{${1:number of rows}}[${4:bigstruts}]{${2:width or *}}{${3:text}}"
-		]
-	},
-
-
-	"multirow":{
-		"prefix":"multirow",
-		"body":[
-			"\\multirow{${1:number of rows}}{${2:width or *}}[${4:vmove%l}]{${3:text}}"
-		]
-	},
-
-
-	"multirow":{
-		"prefix":"multirow",
-		"body":[
-			"\\multirow[${4:vpos%keyvals}]{${1:number of rows}}[${5:bigstruts}]{${2:width or *}}[${6:vmove%l}]{${3:text}}"
 		]
 	},
 
@@ -73,10 +41,42 @@
 	},
 
 
-	"STneed":{
+	"STneed{}":{
 		"prefix":"STneed",
 		"body":[
 			"\\STneed{${1:length}}"
+		]
+	},
+
+
+	"multirow[]{}{}{}":{
+		"prefix":"multirow",
+		"body":[
+			"\\multirow[${4:vpos%keyvals}]{${1:number of rows}}{${2:width or *}}{${3:text}}"
+		]
+	},
+
+
+	"multirow{}[]{}{}":{
+		"prefix":"multirow",
+		"body":[
+			"\\multirow{${1:number of rows}}[${4:bigstruts}]{${2:width or *}}{${3:text}}"
+		]
+	},
+
+
+	"multirow{}{}[]{}":{
+		"prefix":"multirow",
+		"body":[
+			"\\multirow{${1:number of rows}}{${2:width or *}}[${4:vmove%l}]{${3:text}}"
+		]
+	},
+
+
+	"multirow[]{}[]{}[]{}":{
+		"prefix":"multirow",
+		"body":[
+			"\\multirow[${4:vpos%keyvals}]{${1:number of rows}}[${5:bigstruts}]{${2:width or *}}[${6:vmove%l}]{${3:text}}"
 		]
 	}
 }

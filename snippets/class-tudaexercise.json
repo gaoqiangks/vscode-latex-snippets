@@ -1,7 +1,7 @@
 {
 
 
-	"MechEngArrow":{
+	"MechEngArrow{}":{
 		"prefix":"MechEngArrow",
 		"body":[
 			"\\MechEngArrow{${1:Länge}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"MechEngArrow*":{
-		"prefix":"MechEngArrow*",
-		"body":[
-			"\\MechEngArrow*{${1:Länge}}"
-		]
-	},
-
-
-	"title":{
-		"prefix":"title",
-		"body":[
-			"\\title[${2:Kurztitel für die Kopfzeile%text}]{${1:text}}"
-		]
-	},
-
-
-	"term":{
+	"term{}":{
 		"prefix":"term",
 		"body":[
 			"\\term{${1:Semester}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"sheetnumber":{
+	"sheetnumber{}":{
 		"prefix":"sheetnumber",
 		"body":[
 			"\\sheetnumber{${1:Nummer des Übungsblatts}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"ConfigureHeadline":{
+	"ConfigureHeadline{}":{
 		"prefix":"ConfigureHeadline",
 		"body":[
 			"\\ConfigureHeadline{${1:keyvals}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"IfSolutionT":{
+	"IfSolutionT{}":{
 		"prefix":"IfSolutionT",
 		"body":[
 			"\\IfSolutionT{${1:true code}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"IfSolutionF":{
+	"IfSolutionF{}":{
 		"prefix":"IfSolutionF",
 		"body":[
 			"\\IfSolutionF{${1:false code}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"IfSolutionTF":{
+	"IfSolutionTF{}{}":{
 		"prefix":"IfSolutionTF",
 		"body":[
 			"\\IfSolutionTF{${1:true code}}{${2:false code}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"creditformat":{
+	"creditformat{}":{
 		"prefix":"creditformat",
 		"body":[
 			"\\creditformat{${1:text}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"creditformatsum":{
+	"creditformatsum{}":{
 		"prefix":"creditformatsum",
 		"body":[
 			"\\creditformatsum{${1:text}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"pointformat":{
+	"pointformat{}":{
 		"prefix":"pointformat",
 		"body":[
 			"\\pointformat{${1:text}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"getPoints":{
+	"getPoints{}":{
 		"prefix":"getPoints",
 		"body":[
 			"\\getPoints{${1:Nummer}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"refPoints":{
+	"refPoints{}":{
 		"prefix":"refPoints",
 		"body":[
 			"\\refPoints{${1:label}}"
@@ -177,18 +161,10 @@
 	},
 
 
-	"mapPoints":{
+	"mapPoints{}":{
 		"prefix":"mapPoints",
 		"body":[
 			"\\mapPoints{${1:code%text}}"
-		]
-	},
-
-
-	"mapPoints*":{
-		"prefix":"mapPoints*",
-		"body":[
-			"\\mapPoints*{${1:code%text}}"
 		]
 	},
 
@@ -201,7 +177,7 @@
 	},
 
 
-	"institution":{
+	"institution{}":{
 		"prefix":"institution",
 		"body":[
 			"\\institution{${1:Einrichtung}}"
@@ -273,7 +249,7 @@
 	},
 
 
-	"titleimage":{
+	"titleimage{}":{
 		"prefix":"titleimage",
 		"body":[
 			"\\titleimage{${1:graphics code}}"
@@ -281,21 +257,45 @@
 	},
 
 
-	"subtask*":{
-		"prefix":"subtask*",
+	"MechEngArrow*{}":{
+		"prefix":"*MechEngArrow",
 		"body":[
-			"\\begin{subtask*}",
-			"\t$1",
-			"\\end{subtask*}"
+			"\\MechEngArrow*{${1:Länge}}"
+		]
+	},
+
+
+	"mapPoints*{}":{
+		"prefix":"*mapPoints",
+		"body":[
+			"\\mapPoints*{${1:code%text}}"
+		]
+	},
+
+
+	"title[]{}":{
+		"prefix":"title",
+		"body":[
+			"\\title[${2:Kurztitel für die Kopfzeile%text}]{${1:text}}"
+		]
+	},
+
+
+	"task":{
+		"prefix":"task",
+		"body":[
+			"\\begin{task}",
+				"\t$1",
+			"\\end{task}"
 		]
 	},
 
 
 	"task*":{
-		"prefix":"task*",
+		"prefix":"task",
 		"body":[
 			"\\begin{task*}",
-			"\t$1",
+				"\t$1",
 			"\\end{task*}"
 		]
 	},
@@ -305,18 +305,18 @@
 		"prefix":"subtask",
 		"body":[
 			"\\begin{subtask}",
-			"\t$1",
+				"\t$1",
 			"\\end{subtask}"
 		]
 	},
 
 
-	"solution*":{
-		"prefix":"solution*",
+	"subtask*":{
+		"prefix":"subtask",
 		"body":[
-			"\\begin{solution*}",
-			"\t$1",
-			"\\end{solution*}"
+			"\\begin{subtask*}",
+				"\t$1",
+			"\\end{subtask*}"
 		]
 	},
 
@@ -325,8 +325,18 @@
 		"prefix":"solution",
 		"body":[
 			"\\begin{solution}",
-			"\t$1",
+				"\t$1",
 			"\\end{solution}"
+		]
+	},
+
+
+	"solution*":{
+		"prefix":"*solution",
+		"body":[
+			"\\begin{solution*}",
+				"\t$1",
+			"\\end{solution*}"
 		]
 	},
 
@@ -335,8 +345,38 @@
 		"prefix":"task",
 		"body":[
 			"\\begin{task}",
-			"\t$1",
+				"\t$1",
 			"\\end{task}"
+		]
+	},
+
+
+	"task*":{
+		"prefix":"task",
+		"body":[
+			"\\begin{task*}",
+				"\t$1",
+			"\\end{task*}"
+		]
+	},
+
+
+	"subtask":{
+		"prefix":"subtask",
+		"body":[
+			"\\begin{subtask}",
+				"\t$1",
+			"\\end{subtask}"
+		]
+	},
+
+
+	"subtask*":{
+		"prefix":"subtask",
+		"body":[
+			"\\begin{subtask*}",
+				"\t$1",
+			"\\end{subtask*}"
 		]
 	}
 }

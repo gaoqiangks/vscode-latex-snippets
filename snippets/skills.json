@@ -1,7 +1,7 @@
 {
 
 
-	"skilldef":{
+	"skilldef{}{}{}":{
 		"prefix":"skilldef",
 		"body":[
 			"\\skilldef{${1:label}}{${2:reference}}{${3:description%text}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"skillquestion":{
-		"prefix":"skillquestion",
-		"body":[
-			"\\skillquestion[${1:skill1,skill2,...}]"
-		]
-	},
-
-
-	"skillquestion":{
-		"prefix":"skillquestion",
-		"body":[
-			"\\skillquestion[${1:skill1,skill2,...}][${2:points}]"
-		]
-	},
-
-
-	"skills":{
+	"skills{}":{
 		"prefix":"skills",
 		"body":[
 			"\\skills{${1:skill1,skill2,...}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"globalskills":{
+	"globalskills{}":{
 		"prefix":"globalskills",
 		"body":[
 			"\\globalskills{${1:skill1,skill2,...}}"
@@ -53,14 +37,6 @@
 		"prefix":"skillstable",
 		"body":[
 			"\\skillstable"
-		]
-	},
-
-
-	"skillstable":{
-		"prefix":"skillstable",
-		"body":[
-			"\\skillstable[${1:sort type%keyvals}]"
 		]
 	},
 
@@ -121,7 +97,7 @@
 	},
 
 
-	"skillsinmarginvadjust":{
+	"skillsinmarginvadjust{}":{
 		"prefix":"skillsinmarginvadjust",
 		"body":[
 			"\\skillsinmarginvadjust{${1:length}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"skillsenclosement":{
+	"skillsenclosement{}{}":{
 		"prefix":"skillsenclosement",
 		"body":[
 			"\\skillsenclosement{${1:opening}}{${2:closing}}"
@@ -233,7 +209,7 @@
 	},
 
 
-	"globalskill":{
+	"globalskill{}":{
 		"prefix":"globalskill",
 		"body":[
 			"\\globalskill{${1:arg}}"
@@ -241,15 +217,7 @@
 	},
 
 
-	"globalskill":{
-		"prefix":"globalskill",
-		"body":[
-			"\\globalskill[${2:opt}]{${1:arg}}"
-		]
-	},
-
-
-	"glsgobblenumber":{
+	"glsgobblenumber{}":{
 		"prefix":"glsgobblenumber",
 		"body":[
 			"\\glsgobblenumber{${1:arg}}"
@@ -257,7 +225,7 @@
 	},
 
 
-	"multiskills":{
+	"multiskills{}":{
 		"prefix":"multiskills",
 		"body":[
 			"\\multiskills{${1:arg1}}"
@@ -289,10 +257,42 @@
 	},
 
 
-	"skill":{
+	"skill{}":{
 		"prefix":"skill",
 		"body":[
 			"\\skill{${1:label}}"
+		]
+	},
+
+
+	"skillquestion[]":{
+		"prefix":"skillquestion",
+		"body":[
+			"\\skillquestion[${1:skill1,skill2,...}]"
+		]
+	},
+
+
+	"skillquestion[][]":{
+		"prefix":"skillquestion",
+		"body":[
+			"\\skillquestion[${1:skill1,skill2,...}][${2:points}]"
+		]
+	},
+
+
+	"skillstable[]":{
+		"prefix":"skillstable",
+		"body":[
+			"\\skillstable[${1:sort type%keyvals}]"
+		]
+	},
+
+
+	"globalskill[]{}":{
+		"prefix":"globalskill",
+		"body":[
+			"\\globalskill[${2:opt}]{${1:arg}}"
 		]
 	},
 
@@ -301,7 +301,17 @@
 		"prefix":"skillquestions",
 		"body":[
 			"\\begin{skillquestions}",
-			"\t$1",
+				"\t$1",
+			"\\end{skillquestions}"
+		]
+	},
+
+
+	"skillquestions":{
+		"prefix":"skillquestions",
+		"body":[
+			"\\begin{skillquestions}",
+				"\t$1",
 			"\\end{skillquestions}"
 		]
 	}

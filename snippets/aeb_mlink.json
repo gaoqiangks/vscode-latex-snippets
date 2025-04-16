@@ -1,7 +1,7 @@
 {
 
 
-	"ui":{
+	"ui{}":{
 		"prefix":"ui",
 		"body":[
 			"\\ui{${1:keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mlhypertext":{
+	"mlhypertext{}":{
 		"prefix":"mlhypertext",
 		"body":[
 			"\\mlhypertext{${1:link text%text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"mlhypertext":{
-		"prefix":"mlhypertext",
-		"body":[
-			"\\mlhypertext[${2:modifications}]{${1:link text%text}}"
-		]
-	},
-
-
-	"mlsetLink":{
+	"mlsetLink{}":{
 		"prefix":"mlsetLink",
 		"body":[
 			"\\mlsetLink{${1:link text%text}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"mlsetLink":{
-		"prefix":"mlsetLink",
-		"body":[
-			"\\mlsetLink[${2:modifications}]{${1:link text%text}}"
-		]
-	},
-
-
-	"mlhyperlink":{
+	"mlhyperlink{}{}":{
 		"prefix":"mlhyperlink",
 		"body":[
 			"\\mlhyperlink{${1:target name}}{${2:link text%text}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"mlhyperlink":{
-		"prefix":"mlhyperlink",
-		"body":[
-			"\\mlhyperlink[${3:modifications}]{${1:target name}}{${2:link text%text}}"
-		]
-	},
-
-
-	"mlhyperref":{
+	"mlhyperref{}{}":{
 		"prefix":"mlhyperref",
 		"body":[
 			"\\mlhyperref{${1:label%ref}}{${2:text}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"mlhyperref":{
-		"prefix":"mlhyperref",
-		"body":[
-			"\\mlhyperref[${3:modifications}]{${1:label%ref}}{${2:text}}"
-		]
-	},
-
-
-	"mlnameref":{
+	"mlnameref{}":{
 		"prefix":"mlnameref",
 		"body":[
 			"\\mlnameref{${1:label%ref}}"
@@ -81,15 +49,7 @@
 	},
 
 
-	"mlnameref":{
-		"prefix":"mlnameref",
-		"body":[
-			"\\mlnameref[${2:modifications}]{${1:label%ref}}"
-		]
-	},
-
-
-	"mlNameref":{
+	"mlNameref{}":{
 		"prefix":"mlNameref",
 		"body":[
 			"\\mlNameref{${1:label%ref}}"
@@ -97,15 +57,7 @@
 	},
 
 
-	"mlNameref":{
-		"prefix":"mlNameref",
-		"body":[
-			"\\mlNameref[${2:modifications}]{${1:label%ref}}"
-		]
-	},
-
-
-	"mlhref":{
+	"mlhref{}{}":{
 		"prefix":"mlhref",
 		"body":[
 			"\\mlhref{${1:URL}}{${2:text}}"
@@ -113,26 +65,10 @@
 	},
 
 
-	"mlhref":{
-		"prefix":"mlhref",
-		"body":[
-			"\\mlhref[${3:modifications}]{${1:URL}}{${2:text}}"
-		]
-	},
-
-
-	"mlurl":{
+	"mlurl{}":{
 		"prefix":"mlurl",
 		"body":[
 			"\\mlurl{${1:URL}}"
-		]
-	},
-
-
-	"mlurl":{
-		"prefix":"mlurl",
-		"body":[
-			"\\mlurl[${2:modifications}]{${1:URL}}"
 		]
 	},
 
@@ -153,7 +89,7 @@
 	},
 
 
-	"mlfix":{
+	"mlfix{}":{
 		"prefix":"mlfix",
 		"body":[
 			"\\mlfix{${1:y|n}}"
@@ -161,7 +97,7 @@
 	},
 
 
-	"mlcs":{
+	"mlcs{}":{
 		"prefix":"mlcs",
 		"body":[
 			"\\mlcs{${1:csname}}"
@@ -217,7 +153,7 @@
 	},
 
 
-	"aebnameref":{
+	"aebnameref{}":{
 		"prefix":"aebnameref",
 		"body":[
 			"\\aebnameref{${1:label}}"
@@ -225,7 +161,7 @@
 	},
 
 
-	"atPage":{
+	"atPage{}":{
 		"prefix":"atPage",
 		"body":[
 			"\\atPage{${1:label}}"
@@ -233,7 +169,7 @@
 	},
 
 
-	"CMT":{
+	"CMT{}":{
 		"prefix":"CMT",
 		"body":[
 			"\\CMT{${1:arg}}"
@@ -265,7 +201,7 @@
 	},
 
 
-	"labelRef":{
+	"labelRef{}":{
 		"prefix":"labelRef",
 		"body":[
 			"\\labelRef{${1:label}}"
@@ -273,7 +209,7 @@
 	},
 
 
-	"mldb":{
+	"mldb{}{}":{
 		"prefix":"mldb",
 		"body":[
 			"\\mldb{${1:arg1}}{${2:arg2}}"
@@ -313,7 +249,7 @@
 	},
 
 
-	"mllnkcontainer":{
+	"mllnkcontainer{}":{
 		"prefix":"mllnkcontainer",
 		"body":[
 			"\\mllnkcontainer{${1:arg}}"
@@ -397,6 +333,70 @@
 		"prefix":"theView",
 		"body":[
 			"\\theView"
+		]
+	},
+
+
+	"mlhypertext[]{}":{
+		"prefix":"mlhypertext",
+		"body":[
+			"\\mlhypertext[${2:modifications}]{${1:link text%text}}"
+		]
+	},
+
+
+	"mlsetLink[]{}":{
+		"prefix":"mlsetLink",
+		"body":[
+			"\\mlsetLink[${2:modifications}]{${1:link text%text}}"
+		]
+	},
+
+
+	"mlhyperlink[]{}{}":{
+		"prefix":"mlhyperlink",
+		"body":[
+			"\\mlhyperlink[${3:modifications}]{${1:target name}}{${2:link text%text}}"
+		]
+	},
+
+
+	"mlhyperref[]{}{}":{
+		"prefix":"mlhyperref",
+		"body":[
+			"\\mlhyperref[${3:modifications}]{${1:label%ref}}{${2:text}}"
+		]
+	},
+
+
+	"mlnameref[]{}":{
+		"prefix":"mlnameref",
+		"body":[
+			"\\mlnameref[${2:modifications}]{${1:label%ref}}"
+		]
+	},
+
+
+	"mlNameref[]{}":{
+		"prefix":"mlNameref",
+		"body":[
+			"\\mlNameref[${2:modifications}]{${1:label%ref}}"
+		]
+	},
+
+
+	"mlhref[]{}{}":{
+		"prefix":"mlhref",
+		"body":[
+			"\\mlhref[${3:modifications}]{${1:URL}}{${2:text}}"
+		]
+	},
+
+
+	"mlurl[]{}":{
+		"prefix":"mlurl",
+		"body":[
+			"\\mlurl[${2:modifications}]{${1:URL}}"
 		]
 	}
 }

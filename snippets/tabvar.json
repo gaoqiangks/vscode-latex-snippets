@@ -1,7 +1,7 @@
 {
 
 
-	"niveau":{
+	"niveau{}{}":{
 		"prefix":"niveau",
 		"body":[
 			"\\niveau{${1:départ}}{${2:total}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"discont":{
+	"discont{}{}{}":{
 		"prefix":"discont",
 		"body":[
 			"\\discont{${1:valeur gauche}}{${2:ou}}{${3:valeur droite}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"discont":{
-		"prefix":"discont",
-		"body":[
-			"\\discont[${4:num}]{${1:valeur gauche}}{${2:ou}}{${3:valeur droite}}"
-		]
-	},
-
-
-	"barre":{
+	"barre{}":{
 		"prefix":"barre",
 		"body":[
 			"\\barre{${1:math%formula}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"TVcenter":{
+	"TVcenter{}":{
 		"prefix":"TVcenter",
 		"body":[
 			"\\TVcenter{${1:math%formula}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"TVstretch":{
+	"TVstretch{}":{
 		"prefix":"TVstretch",
 		"body":[
 			"\\TVstretch{${1:valeur}}"
@@ -353,11 +345,19 @@
 	},
 
 
+	"discont[]{}{}{}":{
+		"prefix":"discont",
+		"body":[
+			"\\discont[${4:num}]{${1:valeur gauche}}{${2:ou}}{${3:valeur droite}}"
+		]
+	},
+
+
 	"tabvar":{
 		"prefix":"tabvar",
 		"body":[
 			"\\begin{tabvar}",
-			"\t$1",
+				"\t$1",
 			"\\end{tabvar}"
 		]
 	}

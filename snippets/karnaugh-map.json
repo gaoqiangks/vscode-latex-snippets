@@ -9,15 +9,7 @@
 	},
 
 
-	"autoterms":{
-		"prefix":"autoterms",
-		"body":[
-			"\\autoterms[${1:content}]"
-		]
-	},
-
-
-	"indeterminants":{
+	"indeterminants{}":{
 		"prefix":"indeterminants",
 		"body":[
 			"\\indeterminants{${1:cells}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"manualterms":{
+	"manualterms{}":{
 		"prefix":"manualterms",
 		"body":[
 			"\\manualterms{${1:content}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"maxterms":{
+	"maxterms{}":{
 		"prefix":"maxterms",
 		"body":[
 			"\\maxterms{${1:cells}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"minterms":{
+	"minterms{}":{
 		"prefix":"minterms",
 		"body":[
 			"\\minterms{${1:cells}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"terms":{
+	"terms{}{}":{
 		"prefix":"terms",
 		"body":[
 			"\\terms{${1:cells}}{${2:content}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"implicant":{
+	"implicant{}{}":{
 		"prefix":"implicant",
 		"body":[
 			"\\implicant{${1:northwest cell}}{${2:southeast cell}}"
@@ -65,26 +57,10 @@
 	},
 
 
-	"implicant":{
-		"prefix":"implicant",
-		"body":[
-			"\\implicant{${1:northwest cell}}{${2:southeast cell}}[${3:submaps}]"
-		]
-	},
-
-
-	"implicantedge":{
+	"implicantedge{}{}{}{}":{
 		"prefix":"implicantedge",
 		"body":[
 			"\\implicantedge{${1:NWNW}}{${2:NWSE}}{${3:SENW}}{${4:SESE}}"
-		]
-	},
-
-
-	"implicantedge":{
-		"prefix":"implicantedge",
-		"body":[
-			"\\implicantedge{${1:NWNW}}{${2:NWSE}}{${3:SENW}}{${4:SESE}}[${5:submaps}]"
 		]
 	},
 
@@ -97,7 +73,31 @@
 	},
 
 
-	"implicantcorner":{
+	"autoterms[]":{
+		"prefix":"autoterms",
+		"body":[
+			"\\autoterms[${1:content}]"
+		]
+	},
+
+
+	"implicant{}{}[]":{
+		"prefix":"implicant",
+		"body":[
+			"\\implicant{${1:northwest cell}}{${2:southeast cell}}[${3:submaps}]"
+		]
+	},
+
+
+	"implicantedge{}{}{}{}[]":{
+		"prefix":"implicantedge",
+		"body":[
+			"\\implicantedge{${1:NWNW}}{${2:NWSE}}{${3:SENW}}{${4:SESE}}[${5:submaps}]"
+		]
+	},
+
+
+	"implicantcorner[]":{
 		"prefix":"implicantcorner",
 		"body":[
 			"\\implicantcorner[${1:submaps}]"

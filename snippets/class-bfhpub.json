@@ -9,14 +9,6 @@
 	},
 
 
-	"enableHeadLineLogo*":{
-		"prefix":"enableHeadLineLogo*",
-		"body":[
-			"\\enableHeadLineLogo*"
-		]
-	},
-
-
 	"disableHeadlineLogo":{
 		"prefix":"disableHeadlineLogo",
 		"body":[
@@ -89,7 +81,7 @@
 	},
 
 
-	"advisor":{
+	"advisor{}":{
 		"prefix":"advisor",
 		"body":[
 			"\\advisor{${1:name}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"coadvisor":{
+	"coadvisor{}":{
 		"prefix":"coadvisor",
 		"body":[
 			"\\coadvisor{${1:name}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"projectpartner":{
+	"projectpartner{}":{
 		"prefix":"projectpartner",
 		"body":[
 			"\\projectpartner{${1:name}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"expert":{
+	"expert{}":{
 		"prefix":"expert",
 		"body":[
 			"\\expert{${1:name}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"projectstartdate":{
+	"projectstartdate{}":{
 		"prefix":"projectstartdate",
 		"body":[
 			"\\projectstartdate{${1:date}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"studysubmissiondate":{
+	"studysubmissiondate{}":{
 		"prefix":"studysubmissiondate",
 		"body":[
 			"\\studysubmissiondate{${1:date}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"reportsubmissiondate":{
+	"reportsubmissiondate{}":{
 		"prefix":"reportsubmissiondate",
 		"body":[
 			"\\reportsubmissiondate{${1:date}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"presentationdate":{
+	"presentationdate{}":{
 		"prefix":"presentationdate",
 		"body":[
 			"\\presentationdate{${1:date}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"DisplayCompetenceRatingChart":{
+	"DisplayCompetenceRatingChart{}":{
 		"prefix":"DisplayCompetenceRatingChart",
 		"body":[
 			"\\DisplayCompetenceRatingChart{${1:name1=val1,name2=val2,...}}"
@@ -161,7 +153,15 @@
 	},
 
 
-	"DisplayCompetenceRatingChart":{
+	"enableHeadLineLogo*":{
+		"prefix":"*enableHeadLineLogo",
+		"body":[
+			"\\enableHeadLineLogo*"
+		]
+	},
+
+
+	"DisplayCompetenceRatingChart[]{}":{
 		"prefix":"DisplayCompetenceRatingChart",
 		"body":[
 			"\\DisplayCompetenceRatingChart[${2:options%keyvals}]{${1:name1=val1,name2=val2,...}}"
@@ -173,7 +173,7 @@
 		"prefix":"ProjectDescription",
 		"body":[
 			"\\begin{ProjectDescription}",
-			"\t$1",
+				"\t$1",
 			"\\end{ProjectDescription}"
 		]
 	}

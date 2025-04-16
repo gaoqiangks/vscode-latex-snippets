@@ -1,7 +1,7 @@
 {
 
 
-	"vwcolsetup":{
+	"vwcolsetup{}":{
 		"prefix":"vwcolsetup",
 		"body":[
 			"\\vwcolsetup{${1:options%keyvals}}"
@@ -13,7 +13,17 @@
 		"prefix":"vwcol",
 		"body":[
 			"\\begin{vwcol}",
-			"\t$1",
+				"\t$1",
+			"\\end{vwcol}"
+		]
+	},
+
+
+	"vwcol":{
+		"prefix":"vwcol",
+		"body":[
+			"\\begin{vwcol}",
+				"\t$1",
 			"\\end{vwcol}"
 		]
 	}

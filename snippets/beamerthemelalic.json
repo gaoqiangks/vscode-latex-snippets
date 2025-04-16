@@ -9,7 +9,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"dataapresentacao":{
+	"dataapresentacao{}{}{}":{
 		"prefix":"dataapresentacao",
 		"body":[
 			"\\dataapresentacao{${1:day}}{${2:month}}{${3:year}}"
@@ -29,14 +29,6 @@
 		"prefix":"agendaautomatica",
 		"body":[
 			"\\agendaautomatica"
-		]
-	},
-
-
-	"agendaautomatica":{
-		"prefix":"agendaautomatica",
-		"body":[
-			"\\agendaautomatica[${1:number}]"
 		]
 	},
 
@@ -53,6 +45,14 @@
 		"prefix":"progressbar",
 		"body":[
 			"\\progressbar"
+		]
+	},
+
+
+	"agendaautomatica[]":{
+		"prefix":"agendaautomatica",
+		"body":[
+			"\\agendaautomatica[${1:number}]"
 		]
 	}
 }

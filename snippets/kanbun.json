@@ -1,7 +1,7 @@
 {
 
 
-	"setkanbun":{
+	"setkanbun{}":{
 		"prefix":"setkanbun",
 		"body":[
 			"\\setkanbun{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"kanjiunit":{
+	"kanjiunit{}{}{}{}{}{}":{
 		"prefix":"kanjiunit",
 		"body":[
 			"\\kanjiunit{${1:}}{${2:left punct}}{${3:kanji}}{${4:other punct}}{${5:kaeriten}}{${6:}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"furiokuri":{
+	"furiokuri{}{}":{
 		"prefix":"furiokuri",
 		"body":[
 			"\\furiokuri{${1:furigana}}{${2:okurigana}}"
@@ -33,18 +33,10 @@
 	},
 
 
-	"multifuriokuri":{
+	"multifuriokuri{}{}":{
 		"prefix":"multifuriokuri",
 		"body":[
 			"\\multifuriokuri{${1:furigana}}{${2:okurigana}}"
-		]
-	},
-
-
-	"multifuriokuri":{
-		"prefix":"multifuriokuri",
-		"body":[
-			"\\multifuriokuri[${3:raise}]{${1:furigana}}{${2:okurigana}}"
 		]
 	},
 
@@ -105,7 +97,7 @@
 	},
 
 
-	"kaeriten":{
+	"kaeriten{}":{
 		"prefix":"kaeriten",
 		"body":[
 			"\\kaeriten{${1:arg}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"matchkana":{
+	"matchkana{}":{
 		"prefix":"matchkana",
 		"body":[
 			"\\matchkana{${1:arg}}"
@@ -129,11 +121,19 @@
 	},
 
 
+	"multifuriokuri[]{}{}":{
+		"prefix":"multifuriokuri",
+		"body":[
+			"\\multifuriokuri[${3:raise}]{${1:furigana}}{${2:okurigana}}"
+		]
+	},
+
+
 	"kanjipar":{
 		"prefix":"kanjipar",
 		"body":[
 			"\\begin{kanjipar}",
-			"\t$1",
+				"\t$1",
 			"\\end{kanjipar}"
 		]
 	}

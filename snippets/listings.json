@@ -1,7 +1,7 @@
 {
 
 
-	"lstloadlanguages":{
+	"lstloadlanguages{}":{
 		"prefix":"lstloadlanguages",
 		"body":[
 			"\\lstloadlanguages{${1:lang1,lang2,...%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"lstset":{
+	"lstset{}":{
 		"prefix":"lstset",
 		"body":[
 			"\\lstset{${1:keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"lstinline":{
+	"lstinline||":{
 		"prefix":"lstinline",
 		"body":[
 			"\\lstinline|${1:code}|"
@@ -25,15 +25,7 @@
 	},
 
 
-	"lstinline":{
-		"prefix":"lstinline",
-		"body":[
-			"\\lstinline[${1:options}]|${2:code}|"
-		]
-	},
-
-
-	"lstinputlisting":{
+	"lstinputlisting{}":{
 		"prefix":"lstinputlisting",
 		"body":[
 			"\\lstinputlisting{${1:file}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"lstinputlisting":{
-		"prefix":"lstinputlisting",
-		"body":[
-			"\\lstinputlisting[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"lstdefinestyle":{
+	"lstdefinestyle{}{}":{
 		"prefix":"lstdefinestyle",
 		"body":[
 			"\\lstdefinestyle{${1:style name}}{${2:keyvals}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"lstindexmacro":{
+	"lstindexmacro{}":{
 		"prefix":"lstindexmacro",
 		"body":[
 			"\\lstindexmacro{${1:arg}}"
@@ -137,23 +121,7 @@
 	},
 
 
-	"lstnewenvironment":{
-		"prefix":"lstnewenvironment",
-		"body":[
-			"\\lstnewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"lstnewenvironment":{
-		"prefix":"lstnewenvironment",
-		"body":[
-			"\\lstnewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"lstnewenvironment":{
+	"lstnewenvironment{}{}{}":{
 		"prefix":"lstnewenvironment",
 		"body":[
 			"\\lstnewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"lstdefinelanguage":{
+	"lstdefinelanguage{}{}":{
 		"prefix":"lstdefinelanguage",
 		"body":[
 			"\\lstdefinelanguage{${1:language name}}{${2:keyvals}}"
@@ -169,39 +137,7 @@
 	},
 
 
-	"lstdefinelanguage":{
-		"prefix":"lstdefinelanguage",
-		"body":[
-			"\\lstdefinelanguage{${1:language name}}{${2:keyvals}}[${3:required aspects}]"
-		]
-	},
-
-
-	"lstdefinelanguage":{
-		"prefix":"lstdefinelanguage",
-		"body":[
-			"\\lstdefinelanguage[${3:dialect}]{${1:language name}}{${2:keyvals}}"
-		]
-	},
-
-
-	"lstdefinelanguage":{
-		"prefix":"lstdefinelanguage",
-		"body":[
-			"\\lstdefinelanguage[${3:dialect}]{${1:language name}}{${2:keyvals}}[${4:required aspects}]"
-		]
-	},
-
-
-	"lstdefinelanguage":{
-		"prefix":"lstdefinelanguage",
-		"body":[
-			"\\lstdefinelanguage[${4:dialect}]{${1:language name}}[${5:base dialect}]{${2:base language}}{${3:keyvals}}[${6:required aspects}]"
-		]
-	},
-
-
-	"lstalias":{
+	"lstalias{}{}":{
 		"prefix":"lstalias",
 		"body":[
 			"\\lstalias{${1:alias}}{${2:language}}"
@@ -225,7 +161,7 @@
 	},
 
 
-	"lstloadaspects":{
+	"lstloadaspects{}":{
 		"prefix":"lstloadaspects",
 		"body":[
 			"\\lstloadaspects{${1:aspects}}"
@@ -249,7 +185,7 @@
 	},
 
 
-	"lstdefineformat":{
+	"lstdefineformat{}{}":{
 		"prefix":"lstdefineformat",
 		"body":[
 			"\\lstdefineformat{${1:name}}{${2:format}}"
@@ -265,11 +201,85 @@
 	},
 
 
+	"lstinline[]||":{
+		"prefix":"lstinline",
+		"body":[
+			"\\lstinline[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"lstinputlisting[]{}":{
+		"prefix":"lstinputlisting",
+		"body":[
+			"\\lstinputlisting[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"lstnewenvironment{}[][]{}{}":{
+		"prefix":"lstnewenvironment",
+		"body":[
+			"\\lstnewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"lstnewenvironment{}[]{}{}":{
+		"prefix":"lstnewenvironment",
+		"body":[
+			"\\lstnewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"lstdefinelanguage{}{}[]":{
+		"prefix":"lstdefinelanguage",
+		"body":[
+			"\\lstdefinelanguage{${1:language name}}{${2:keyvals}}[${3:required aspects}]"
+		]
+	},
+
+
+	"lstdefinelanguage[]{}{}":{
+		"prefix":"lstdefinelanguage",
+		"body":[
+			"\\lstdefinelanguage[${3:dialect}]{${1:language name}}{${2:keyvals}}"
+		]
+	},
+
+
+	"lstdefinelanguage[]{}{}[]":{
+		"prefix":"lstdefinelanguage",
+		"body":[
+			"\\lstdefinelanguage[${3:dialect}]{${1:language name}}{${2:keyvals}}[${4:required aspects}]"
+		]
+	},
+
+
+	"lstdefinelanguage[]{}[]{}{}[]":{
+		"prefix":"lstdefinelanguage",
+		"body":[
+			"\\lstdefinelanguage[${4:dialect}]{${1:language name}}[${5:base dialect}]{${2:base language}}{${3:keyvals}}[${6:required aspects}]"
+		]
+	},
+
+
 	"lstlisting":{
 		"prefix":"lstlisting",
 		"body":[
 			"\\begin{lstlisting}",
-			"\t$1",
+				"\t$1",
+			"\\end{lstlisting}"
+		]
+	},
+
+
+	"lstlisting":{
+		"prefix":"lstlisting",
+		"body":[
+			"\\begin{lstlisting}",
+				"\t$1",
 			"\\end{lstlisting}"
 		]
 	}

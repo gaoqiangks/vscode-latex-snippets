@@ -9,7 +9,7 @@
 	},
 
 
-	"rloop":{
+	"rloop{}":{
 		"prefix":"rloop",
 		"body":[
 			"\\rloop{${1:arg}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"IfLTXAtLeastTF":{
+	"IfLTXAtLeastTF{}{}{}":{
 		"prefix":"IfLTXAtLeastTF",
 		"body":[
 			"\\IfLTXAtLeastTF{${1:date}}{${2:then code}}{${3:else code}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"DefineFamily":{
+	"DefineFamily{}":{
 		"prefix":"DefineFamily",
 		"body":[
 			"\\DefineFamily{${1:family}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"DefineFamilyMember":{
+	"DefineFamilyMember{}":{
 		"prefix":"DefineFamilyMember",
 		"body":[
 			"\\DefineFamilyMember{${1:family}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"DefineFamilyMember":{
-		"prefix":"DefineFamilyMember",
-		"body":[
-			"\\DefineFamilyMember[${2:member}]{${1:family}}"
-		]
-	},
-
-
-	"DefineFamilyKey":{
+	"DefineFamilyKey{}{}{}":{
 		"prefix":"DefineFamilyKey",
 		"body":[
 			"\\DefineFamilyKey{${1:family}}{${2:key%plain}}{${3:action}}"
@@ -57,34 +49,10 @@
 	},
 
 
-	"DefineFamilyKey":{
-		"prefix":"DefineFamilyKey",
-		"body":[
-			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:action}}"
-		]
-	},
-
-
-	"DefineFamilyKey":{
-		"prefix":"DefineFamilyKey",
-		"body":[
-			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:action}}"
-		]
-	},
-
-
-	"RelaxFamilyKey":{
+	"RelaxFamilyKey{}{}":{
 		"prefix":"RelaxFamilyKey",
 		"body":[
 			"\\RelaxFamilyKey{${1:family}}{${2:key%plain}}"
-		]
-	},
-
-
-	"RelaxFamilyKey":{
-		"prefix":"RelaxFamilyKey",
-		"body":[
-			"\\RelaxFamilyKey[${3:member}]{${1:family}}{${2:key%plain}}"
 		]
 	},
 
@@ -145,7 +113,7 @@
 	},
 
 
-	"FamilyProcessOptions":{
+	"FamilyProcessOptions{}":{
 		"prefix":"FamilyProcessOptions",
 		"body":[
 			"\\FamilyProcessOptions{${1:family}}"
@@ -153,15 +121,7 @@
 	},
 
 
-	"FamilyProcessOptions":{
-		"prefix":"FamilyProcessOptions",
-		"body":[
-			"\\FamilyProcessOptions[${2:member}]{${1:family}}"
-		]
-	},
-
-
-	"AtEndOfFamilyOptions":{
+	"AtEndOfFamilyOptions{}":{
 		"prefix":"AtEndOfFamilyOptions",
 		"body":[
 			"\\AtEndOfFamilyOptions{${1:action}}"
@@ -169,15 +129,7 @@
 	},
 
 
-	"AtEndOfFamilyOptions*":{
-		"prefix":"AtEndOfFamilyOptions*",
-		"body":[
-			"\\AtEndOfFamilyOptions*{${1:action}}"
-		]
-	},
-
-
-	"IfArgIsEmpty":{
+	"IfArgIsEmpty{}{}{}":{
 		"prefix":"IfArgIsEmpty",
 		"body":[
 			"\\IfArgIsEmpty{${1:arg}}{${2:then code}}{${3:else code}}"
@@ -185,7 +137,7 @@
 	},
 
 
-	"XdivY":{
+	"XdivY{}{}":{
 		"prefix":"XdivY",
 		"body":[
 			"\\XdivY{${1:dividend}}{${2:divisor}}"
@@ -193,7 +145,7 @@
 	},
 
 
-	"XmodY":{
+	"XmodY{}{}":{
 		"prefix":"XmodY",
 		"body":[
 			"\\XmodY{${1:dividend}}{${2:divisor}}"
@@ -201,7 +153,7 @@
 	},
 
 
-	"Ifundefinedorrelax":{
+	"Ifundefinedorrelax{}{}{}":{
 		"prefix":"Ifundefinedorrelax",
 		"body":[
 			"\\Ifundefinedorrelax{${1:name}}{${2:then code}}{${3:else code}}"
@@ -209,7 +161,7 @@
 	},
 
 
-	"Ifnotundefined":{
+	"Ifnotundefined{}{}{}":{
 		"prefix":"Ifnotundefined",
 		"body":[
 			"\\Ifnotundefined{${1:name}}{${2:then code}}{${3:else code}}"
@@ -217,7 +169,7 @@
 	},
 
 
-	"Ifstr":{
+	"Ifstr{}{}{}{}":{
 		"prefix":"Ifstr",
 		"body":[
 			"\\Ifstr{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
@@ -225,7 +177,7 @@
 	},
 
 
-	"Ifstrstart":{
+	"Ifstrstart{}{}{}{}":{
 		"prefix":"Ifstrstart",
 		"body":[
 			"\\Ifstrstart{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
@@ -233,7 +185,7 @@
 	},
 
 
-	"Ifislengthprimitive":{
+	"Ifislengthprimitive{}{}{}":{
 		"prefix":"Ifislengthprimitive",
 		"body":[
 			"\\Ifislengthprimitive{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -241,7 +193,7 @@
 	},
 
 
-	"Ifisdimen":{
+	"Ifisdimen{}{}{}":{
 		"prefix":"Ifisdimen",
 		"body":[
 			"\\Ifisdimen{${1:string}}{${2:then code}}{${3:else code}}"
@@ -249,7 +201,7 @@
 	},
 
 
-	"Ifisskip":{
+	"Ifisskip{}{}{}":{
 		"prefix":"Ifisskip",
 		"body":[
 			"\\Ifisskip{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -257,7 +209,7 @@
 	},
 
 
-	"Ifiscount":{
+	"Ifiscount{}{}{}":{
 		"prefix":"Ifiscount",
 		"body":[
 			"\\Ifiscount{${1:count}}{${2:then code}}{${3:else code}}"
@@ -265,7 +217,7 @@
 	},
 
 
-	"Ifisdimexpr":{
+	"Ifisdimexpr{}{}{}":{
 		"prefix":"Ifisdimexpr",
 		"body":[
 			"\\Ifisdimexpr{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -273,7 +225,7 @@
 	},
 
 
-	"Ifisglueexpr":{
+	"Ifisglueexpr{}{}{}":{
 		"prefix":"Ifisglueexpr",
 		"body":[
 			"\\Ifisglueexpr{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -281,7 +233,7 @@
 	},
 
 
-	"Ifisnumexpr":{
+	"Ifisnumexpr{}{}{}":{
 		"prefix":"Ifisnumexpr",
 		"body":[
 			"\\Ifisnumexpr{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -289,7 +241,7 @@
 	},
 
 
-	"Ifisdefchar":{
+	"Ifisdefchar{}{}{}":{
 		"prefix":"Ifisdefchar",
 		"body":[
 			"\\Ifisdefchar{${1:arg}}{${2:then code}}{${3:else code}}"
@@ -297,7 +249,7 @@
 	},
 
 
-	"Ifiscounter":{
+	"Ifiscounter{}{}{}":{
 		"prefix":"Ifiscounter",
 		"body":[
 			"\\Ifiscounter{${1:counter}}{${2:then code}}{${3:else code}}"
@@ -305,7 +257,7 @@
 	},
 
 
-	"Ifisinteger":{
+	"Ifisinteger{}{}{}":{
 		"prefix":"Ifisinteger",
 		"body":[
 			"\\Ifisinteger{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -313,7 +265,7 @@
 	},
 
 
-	"Ifisdimension":{
+	"Ifisdimension{}{}{}":{
 		"prefix":"Ifisdimension",
 		"body":[
 			"\\Ifisdimension{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -321,7 +273,7 @@
 	},
 
 
-	"Ifisglue":{
+	"Ifisglue{}{}{}":{
 		"prefix":"Ifisglue",
 		"body":[
 			"\\Ifisglue{${1:expression}}{${2:then code}}{${3:else code}}"
@@ -329,7 +281,7 @@
 	},
 
 
-	"Ifnumber":{
+	"Ifnumber{}{}{}":{
 		"prefix":"Ifnumber",
 		"body":[
 			"\\Ifnumber{${1:string}}{${2:then code}}{${3:else code}}"
@@ -337,7 +289,7 @@
 	},
 
 
-	"Ifintnumber":{
+	"Ifintnumber{}{}{}":{
 		"prefix":"Ifintnumber",
 		"body":[
 			"\\Ifintnumber{${1:string}}{${2:then code}}{${3:else code}}"
@@ -345,7 +297,7 @@
 	},
 
 
-	"Ifdimen":{
+	"Ifdimen{}{}{}":{
 		"prefix":"Ifdimen",
 		"body":[
 			"\\Ifdimen{${1:string}}{${2:then code}}{${3:else code}}"
@@ -353,7 +305,7 @@
 	},
 
 
-	"Ifpdfoutput":{
+	"Ifpdfoutput{}{}":{
 		"prefix":"Ifpdfoutput",
 		"body":[
 			"\\Ifpdfoutput{${1:then code}}{${2:else code}}"
@@ -361,7 +313,7 @@
 	},
 
 
-	"Ifpsoutput":{
+	"Ifpsoutput{}{}":{
 		"prefix":"Ifpsoutput",
 		"body":[
 			"\\Ifpsoutput{${1:then code}}{${2:else code}}"
@@ -369,7 +321,7 @@
 	},
 
 
-	"Ifdvioutput":{
+	"Ifdvioutput{}{}":{
 		"prefix":"Ifdvioutput",
 		"body":[
 			"\\Ifdvioutput{${1:then code}}{${2:else code}}"
@@ -377,7 +329,7 @@
 	},
 
 
-	"IfRTL":{
+	"IfRTL{}{}":{
 		"prefix":"IfRTL",
 		"body":[
 			"\\IfRTL{${1:then code}}{${2:else code}}"
@@ -385,7 +337,7 @@
 	},
 
 
-	"IfLTR":{
+	"IfLTR{}{}":{
 		"prefix":"IfLTR",
 		"body":[
 			"\\IfLTR{${1:then code}}{${2:else code}}"
@@ -393,7 +345,7 @@
 	},
 
 
-	"PackageInfoNoLine":{
+	"PackageInfoNoLine{}{}":{
 		"prefix":"PackageInfoNoLine",
 		"body":[
 			"\\PackageInfoNoLine{${1:package}}{${2:information%text}}"
@@ -401,7 +353,7 @@
 	},
 
 
-	"ClassInfoNoLine":{
+	"ClassInfoNoLine{}{}":{
 		"prefix":"ClassInfoNoLine",
 		"body":[
 			"\\ClassInfoNoLine{${1:class}}{${2:information%text}}"
@@ -409,7 +361,7 @@
 	},
 
 
-	"IfActiveMkBoth":{
+	"IfActiveMkBoth{}{}":{
 		"prefix":"IfActiveMkBoth",
 		"body":[
 			"\\IfActiveMkBoth{${1:then code}}{${2:else code}}"
@@ -417,7 +369,7 @@
 	},
 
 
-	"BeforeFamilyProcessOptions":{
+	"BeforeFamilyProcessOptions{}{}":{
 		"prefix":"BeforeFamilyProcessOptions",
 		"body":[
 			"\\BeforeFamilyProcessOptions{${1:family}}{${2:code}}"
@@ -425,15 +377,7 @@
 	},
 
 
-	"BeforeFamilyProcessOptions":{
-		"prefix":"BeforeFamilyProcessOptions",
-		"body":[
-			"\\BeforeFamilyProcessOptions[${3:member}]{${1:family}}{${2:code}}"
-		]
-	},
-
-
-	"FamilyExecuteOptions":{
+	"FamilyExecuteOptions{}{}":{
 		"prefix":"FamilyExecuteOptions",
 		"body":[
 			"\\FamilyExecuteOptions{${1:family}}{${2:options list}}"
@@ -441,15 +385,7 @@
 	},
 
 
-	"FamilyExecuteOptions":{
-		"prefix":"FamilyExecuteOptions",
-		"body":[
-			"\\FamilyExecuteOptions[${3:member}]{${1:family}}{${2:options list}}"
-		]
-	},
-
-
-	"FamilyOptions":{
+	"FamilyOptions{}{}":{
 		"prefix":"FamilyOptions",
 		"body":[
 			"\\FamilyOptions{${1:family}}{${2:options list}}"
@@ -457,7 +393,7 @@
 	},
 
 
-	"FamilyOption":{
+	"FamilyOption{}{}{}":{
 		"prefix":"FamilyOption",
 		"body":[
 			"\\FamilyOption{${1:family}}{${2:option}}{${3:value list}}"
@@ -465,7 +401,7 @@
 	},
 
 
-	"FamilyUnknownKeyValue":{
+	"FamilyUnknownKeyValue{}{}{}{}":{
 		"prefix":"FamilyUnknownKeyValue",
 		"body":[
 			"\\FamilyUnknownKeyValue{${1:family}}{${2:key%plain}}{${3:value}}{${4:value list}}"
@@ -481,7 +417,7 @@
 	},
 
 
-	"FamilyBoolKey":{
+	"FamilyBoolKey{}{}{}":{
 		"prefix":"FamilyBoolKey",
 		"body":[
 			"\\FamilyBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
@@ -489,15 +425,7 @@
 	},
 
 
-	"FamilyBoolKey":{
-		"prefix":"FamilyBoolKey",
-		"body":[
-			"\\FamilyBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
-	},
-
-
-	"FamilySetBool":{
+	"FamilySetBool{}{}{}{}":{
 		"prefix":"FamilySetBool",
 		"body":[
 			"\\FamilySetBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
@@ -505,7 +433,7 @@
 	},
 
 
-	"FamilyInverseBoolKey":{
+	"FamilyInverseBoolKey{}{}{}":{
 		"prefix":"FamilyInverseBoolKey",
 		"body":[
 			"\\FamilyInverseBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
@@ -513,15 +441,7 @@
 	},
 
 
-	"FamilyInverseBoolKey":{
-		"prefix":"FamilyInverseBoolKey",
-		"body":[
-			"\\FamilyInverseBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
-	},
-
-
-	"FamilySetInverseBool":{
+	"FamilySetInverseBool{}{}{}{}":{
 		"prefix":"FamilySetInverseBool",
 		"body":[
 			"\\FamilySetInverseBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
@@ -529,7 +449,7 @@
 	},
 
 
-	"FamilyCounterKey":{
+	"FamilyCounterKey{}{}{}":{
 		"prefix":"FamilyCounterKey",
 		"body":[
 			"\\FamilyCounterKey{${1:family}}{${2:key%plain}}{${3:counter}}"
@@ -537,23 +457,7 @@
 	},
 
 
-	"FamilyCounterKey":{
-		"prefix":"FamilyCounterKey",
-		"body":[
-			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:counter}}"
-		]
-	},
-
-
-	"FamilyCounterKey":{
-		"prefix":"FamilyCounterKey",
-		"body":[
-			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:counter}}"
-		]
-	},
-
-
-	"FamilySetCounter":{
+	"FamilySetCounter{}{}{}{}":{
 		"prefix":"FamilySetCounter",
 		"body":[
 			"\\FamilySetCounter{${1:family}}{${2:key%plain}}{${3:counter}}{${4:value}}"
@@ -561,7 +465,7 @@
 	},
 
 
-	"FamilyCounterMacroKey":{
+	"FamilyCounterMacroKey{}{}{}":{
 		"prefix":"FamilyCounterMacroKey",
 		"body":[
 			"\\FamilyCounterMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
@@ -569,23 +473,7 @@
 	},
 
 
-	"FamilyCounterMacroKey":{
-		"prefix":"FamilyCounterMacroKey",
-		"body":[
-			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyCounterMacroKey":{
-		"prefix":"FamilyCounterMacroKey",
-		"body":[
-			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetCounterMacro":{
+	"FamilySetCounterMacro{}{}{}{}":{
 		"prefix":"FamilySetCounterMacro",
 		"body":[
 			"\\FamilySetCounterMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
@@ -593,7 +481,7 @@
 	},
 
 
-	"FamilyLengthKey":{
+	"FamilyLengthKey{}{}{}":{
 		"prefix":"FamilyLengthKey",
 		"body":[
 			"\\FamilyLengthKey{${1:family}}{${2:key%plain}}{${3:length}}"
@@ -601,23 +489,7 @@
 	},
 
 
-	"FamilyLengthKey":{
-		"prefix":"FamilyLengthKey",
-		"body":[
-			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:length}}"
-		]
-	},
-
-
-	"FamilyLengthKey":{
-		"prefix":"FamilyLengthKey",
-		"body":[
-			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:length}}"
-		]
-	},
-
-
-	"FamilySetLength":{
+	"FamilySetLength{}{}{}{}":{
 		"prefix":"FamilySetLength",
 		"body":[
 			"\\FamilySetLength{${1:family}}{${2:key%plain}}{${3:length}}{${4:value}}"
@@ -625,7 +497,7 @@
 	},
 
 
-	"FamilyLengthMacroKey":{
+	"FamilyLengthMacroKey{}{}{}":{
 		"prefix":"FamilyLengthMacroKey",
 		"body":[
 			"\\FamilyLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
@@ -633,23 +505,7 @@
 	},
 
 
-	"FamilyLengthMacroKey":{
-		"prefix":"FamilyLengthMacroKey",
-		"body":[
-			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyLengthMacroKey":{
-		"prefix":"FamilyLengthMacroKey",
-		"body":[
-			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetLengthMacro":{
+	"FamilySetLengthMacro{}{}{}{}":{
 		"prefix":"FamilySetLengthMacro",
 		"body":[
 			"\\FamilySetLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
@@ -657,7 +513,7 @@
 	},
 
 
-	"FamilyUseLengthMacroKey":{
+	"FamilyUseLengthMacroKey{}{}{}":{
 		"prefix":"FamilyUseLengthMacroKey",
 		"body":[
 			"\\FamilyUseLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
@@ -665,23 +521,7 @@
 	},
 
 
-	"FamilyUseLengthMacroKey":{
-		"prefix":"FamilyUseLengthMacroKey",
-		"body":[
-			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyUseLengthMacroKey":{
-		"prefix":"FamilyUseLengthMacroKey",
-		"body":[
-			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetUseLengthMacro":{
+	"FamilySetUseLengthMacro{}{}{}{}":{
 		"prefix":"FamilySetUseLengthMacro",
 		"body":[
 			"\\FamilySetUseLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
@@ -689,7 +529,7 @@
 	},
 
 
-	"FamilyNumericalKey":{
+	"FamilyNumericalKey{}{}{}{}":{
 		"prefix":"FamilyNumericalKey",
 		"body":[
 			"\\FamilyNumericalKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
@@ -697,23 +537,7 @@
 	},
 
 
-	"FamilyLengthMacroKey":{
-		"prefix":"FamilyLengthMacroKey",
-		"body":[
-			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
-		]
-	},
-
-
-	"FamilyLengthMacroKey":{
-		"prefix":"FamilyLengthMacroKey",
-		"body":[
-			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}[${6:default}]{${3:macro%cmd}}{${4:value list}}"
-		]
-	},
-
-
-	"FamilySetNumerical":{
+	"FamilySetNumerical{}{}{}{}{}":{
 		"prefix":"FamilySetNumerical",
 		"body":[
 			"\\FamilySetNumerical{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}{${5:value}}"
@@ -721,7 +545,7 @@
 	},
 
 
-	"FamilyStringKey":{
+	"FamilyStringKey{}{}{}":{
 		"prefix":"FamilyStringKey",
 		"body":[
 			"\\FamilyStringKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
@@ -729,23 +553,7 @@
 	},
 
 
-	"FamilyStringKey":{
-		"prefix":"FamilyStringKey",
-		"body":[
-			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyStringKey":{
-		"prefix":"FamilyStringKey",
-		"body":[
-			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyCSKey":{
+	"FamilyCSKey{}{}{}":{
 		"prefix":"FamilyCSKey",
 		"body":[
 			"\\FamilyCSKey{${1:family}}{${2:key%plain}}{${3:csname}}"
@@ -753,23 +561,7 @@
 	},
 
 
-	"FamilyLengthKey":{
-		"prefix":"FamilyLengthKey",
-		"body":[
-			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:csname}}"
-		]
-	},
-
-
-	"FamilyLengthKey":{
-		"prefix":"FamilyLengthKey",
-		"body":[
-			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:csname}}"
-		]
-	},
-
-
-	"ForDoHook":{
+	"ForDoHook{}{}":{
 		"prefix":"ForDoHook",
 		"body":[
 			"\\ForDoHook{${1:specification}}{${2:command}}"
@@ -777,7 +569,7 @@
 	},
 
 
-	"SplitDoHook":{
+	"SplitDoHook{}{}{}":{
 		"prefix":"SplitDoHook",
 		"body":[
 			"\\SplitDoHook{${1:specifier}}{${2:head macro%cmd}}{${3:remainder macro%cmd}}"
@@ -785,7 +577,7 @@
 	},
 
 
-	"ExecuteDoHook":{
+	"ExecuteDoHook{}":{
 		"prefix":"ExecuteDoHook",
 		"body":[
 			"\\ExecuteDoHook{${1:specifier}}"
@@ -793,7 +585,7 @@
 	},
 
 
-	"AddtoDoHook":{
+	"AddtoDoHook{}{}":{
 		"prefix":"AddtoDoHook",
 		"body":[
 			"\\AddtoDoHook{${1:name}}{${2:command}}"
@@ -801,7 +593,7 @@
 	},
 
 
-	"AddtoOneTimeDoHook":{
+	"AddtoOneTimeDoHook{}{}":{
 		"prefix":"AddtoOneTimeDoHook",
 		"body":[
 			"\\AddtoOneTimeDoHook{${1:name}}{${2:command}}"
@@ -809,7 +601,7 @@
 	},
 
 
-	"defcaptionname":{
+	"defcaptionname{}{}{}":{
 		"prefix":"defcaptionname",
 		"body":[
 			"\\defcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
@@ -817,15 +609,7 @@
 	},
 
 
-	"defcaptionname*":{
-		"prefix":"defcaptionname*",
-		"body":[
-			"\\defcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"providecaptionname":{
+	"providecaptionname{}{}{}":{
 		"prefix":"providecaptionname",
 		"body":[
 			"\\providecaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
@@ -833,15 +617,7 @@
 	},
 
 
-	"providecaptionname*":{
-		"prefix":"providecaptionname*",
-		"body":[
-			"\\providecaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"newcaptionname":{
+	"newcaptionname{}{}{}":{
 		"prefix":"newcaptionname",
 		"body":[
 			"\\newcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
@@ -849,15 +625,7 @@
 	},
 
 
-	"newcaptionname*":{
-		"prefix":"newcaptionname*",
-		"body":[
-			"\\newcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"renewcaptionname":{
+	"renewcaptionname{}{}{}":{
 		"prefix":"renewcaptionname",
 		"body":[
 			"\\renewcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
@@ -865,10 +633,242 @@
 	},
 
 
-	"renewcaptionname*":{
-		"prefix":"renewcaptionname*",
+	"AtEndOfFamilyOptions*{}":{
+		"prefix":"*AtEndOfFamilyOptions",
+		"body":[
+			"\\AtEndOfFamilyOptions*{${1:action}}"
+		]
+	},
+
+
+	"defcaptionname*{}{}{}":{
+		"prefix":"*defcaptionname",
+		"body":[
+			"\\defcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		]
+	},
+
+
+	"providecaptionname*{}{}{}":{
+		"prefix":"*providecaptionname",
+		"body":[
+			"\\providecaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		]
+	},
+
+
+	"newcaptionname*{}{}{}":{
+		"prefix":"*newcaptionname",
+		"body":[
+			"\\newcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		]
+	},
+
+
+	"renewcaptionname*{}{}{}":{
+		"prefix":"*renewcaptionname",
 		"body":[
 			"\\renewcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		]
+	},
+
+
+	"DefineFamilyMember[]{}":{
+		"prefix":"DefineFamilyMember",
+		"body":[
+			"\\DefineFamilyMember[${2:member}]{${1:family}}"
+		]
+	},
+
+
+	"DefineFamilyKey[]{}{}{}":{
+		"prefix":"DefineFamilyKey",
+		"body":[
+			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:action}}"
+		]
+	},
+
+
+	"DefineFamilyKey[]{}{}[]{}":{
+		"prefix":"DefineFamilyKey",
+		"body":[
+			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:action}}"
+		]
+	},
+
+
+	"RelaxFamilyKey[]{}{}":{
+		"prefix":"RelaxFamilyKey",
+		"body":[
+			"\\RelaxFamilyKey[${3:member}]{${1:family}}{${2:key%plain}}"
+		]
+	},
+
+
+	"FamilyProcessOptions[]{}":{
+		"prefix":"FamilyProcessOptions",
+		"body":[
+			"\\FamilyProcessOptions[${2:member}]{${1:family}}"
+		]
+	},
+
+
+	"BeforeFamilyProcessOptions[]{}{}":{
+		"prefix":"BeforeFamilyProcessOptions",
+		"body":[
+			"\\BeforeFamilyProcessOptions[${3:member}]{${1:family}}{${2:code}}"
+		]
+	},
+
+
+	"FamilyExecuteOptions[]{}{}":{
+		"prefix":"FamilyExecuteOptions",
+		"body":[
+			"\\FamilyExecuteOptions[${3:member}]{${1:family}}{${2:options list}}"
+		]
+	},
+
+
+	"FamilyBoolKey[]{}{}{}":{
+		"prefix":"FamilyBoolKey",
+		"body":[
+			"\\FamilyBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
+		]
+	},
+
+
+	"FamilyInverseBoolKey[]{}{}{}":{
+		"prefix":"FamilyInverseBoolKey",
+		"body":[
+			"\\FamilyInverseBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
+		]
+	},
+
+
+	"FamilyCounterKey[]{}{}{}":{
+		"prefix":"FamilyCounterKey",
+		"body":[
+			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:counter}}"
+		]
+	},
+
+
+	"FamilyCounterKey[]{}{}[]{}":{
+		"prefix":"FamilyCounterKey",
+		"body":[
+			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:counter}}"
+		]
+	},
+
+
+	"FamilyCounterMacroKey[]{}{}{}":{
+		"prefix":"FamilyCounterMacroKey",
+		"body":[
+			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyCounterMacroKey[]{}{}[]{}":{
+		"prefix":"FamilyCounterMacroKey",
+		"body":[
+			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyLengthKey[]{}{}{}":{
+		"prefix":"FamilyLengthKey",
+		"body":[
+			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:length}}"
+		]
+	},
+
+
+	"FamilyLengthKey[]{}{}[]{}":{
+		"prefix":"FamilyLengthKey",
+		"body":[
+			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:length}}"
+		]
+	},
+
+
+	"FamilyLengthMacroKey[]{}{}{}":{
+		"prefix":"FamilyLengthMacroKey",
+		"body":[
+			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyLengthMacroKey[]{}{}[]{}":{
+		"prefix":"FamilyLengthMacroKey",
+		"body":[
+			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyUseLengthMacroKey[]{}{}{}":{
+		"prefix":"FamilyUseLengthMacroKey",
+		"body":[
+			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyUseLengthMacroKey[]{}{}[]{}":{
+		"prefix":"FamilyUseLengthMacroKey",
+		"body":[
+			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyLengthMacroKey[]{}{}{}{}":{
+		"prefix":"FamilyLengthMacroKey",
+		"body":[
+			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
+		]
+	},
+
+
+	"FamilyLengthMacroKey[]{}{}[]{}{}":{
+		"prefix":"FamilyLengthMacroKey",
+		"body":[
+			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}[${6:default}]{${3:macro%cmd}}{${4:value list}}"
+		]
+	},
+
+
+	"FamilyStringKey[]{}{}{}":{
+		"prefix":"FamilyStringKey",
+		"body":[
+			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyStringKey[]{}{}[]{}":{
+		"prefix":"FamilyStringKey",
+		"body":[
+			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
+		]
+	},
+
+
+	"FamilyLengthKey[]{}{}{}":{
+		"prefix":"FamilyLengthKey",
+		"body":[
+			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:csname}}"
+		]
+	},
+
+
+	"FamilyLengthKey[]{}{}[]{}":{
+		"prefix":"FamilyLengthKey",
+		"body":[
+			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:csname}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"makebook":{
+	"makebook{}":{
 		"prefix":"makebook",
 		"body":[
 			"\\makebook{${1:entry}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"citeA":{
-		"prefix":"citeA",
-		"body":[
-			"\\citeA[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeA":{
-		"prefix":"citeA",
-		"body":[
-			"\\citeA[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeA":{
+	"citeA{}":{
 		"prefix":"citeA",
 		"body":[
 			"\\citeA{${1:bibid}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"titleref":{
+	"titleref{}":{
 		"prefix":"titleref",
 		"body":[
 			"\\titleref{${1:text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"citefullauthor":{
+	"citefullauthor{}":{
 		"prefix":"citefullauthor",
 		"body":[
 			"\\citefullauthor{${1:bibid}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"setrannum":{
+	"setrannum{}{}{}":{
 		"prefix":"setrannum",
 		"body":[
 			"\\setrannum{${1:count register}}{${2:min}}{${3:max}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"setrandim":{
+	"setrandim{}{}{}":{
 		"prefix":"setrandim",
 		"body":[
 			"\\setrandim{${1:dimen register}}{${2:min}}{${3:max}}"
@@ -117,6 +101,22 @@
 		"prefix":"ranval",
 		"body":[
 			"\\ranval"
+		]
+	},
+
+
+	"citeA[][]{}":{
+		"prefix":"citeA",
+		"body":[
+			"\\citeA[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citeA[]{}":{
+		"prefix":"citeA",
+		"body":[
+			"\\citeA[${2:postnote}]{${1:bibid}}"
 		]
 	}
 }

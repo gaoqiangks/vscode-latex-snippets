@@ -1,7 +1,7 @@
 {
 
 
-	"mkword":{
+	"mkword{}":{
 		"prefix":"mkword",
 		"body":[
 			"\\mkword{${1:word%text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"mkword":{
-		"prefix":"mkword",
-		"body":[
-			"\\mkword[${2:name}]{${1:word%text}}"
-		]
-	},
-
-
-	"mvarrow":{
+	"mvarrow{}{}":{
 		"prefix":"mvarrow",
 		"body":[
 			"\\mvarrow{${1:start}}{${2:end}}"
@@ -25,31 +17,7 @@
 	},
 
 
-	"mvarrow":{
-		"prefix":"mvarrow",
-		"body":[
-			"\\mvarrow[${3:options}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvarrow*":{
-		"prefix":"mvarrow*",
-		"body":[
-			"\\mvarrow*{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvarrow*":{
-		"prefix":"mvarrow*",
-		"body":[
-			"\\mvarrow*[${3:options}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink":{
+	"mvlink{}{}":{
 		"prefix":"mvlink",
 		"body":[
 			"\\mvlink{${1:start}}{${2:end}}"
@@ -57,31 +25,7 @@
 	},
 
 
-	"mvlink":{
-		"prefix":"mvlink",
-		"body":[
-			"\\mvlink[${3:options}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink*":{
-		"prefix":"mvlink*",
-		"body":[
-			"\\mvlink*{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink*":{
-		"prefix":"mvlink*",
-		"body":[
-			"\\mvlink*[${3:options}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"setarrowstyle":{
+	"setarrowstyle{}":{
 		"prefix":"setarrowstyle",
 		"body":[
 			"\\setarrowstyle{${1:style}}"
@@ -125,6 +69,62 @@
 		"prefix":"arrowgloss",
 		"body":[
 			"\\arrowgloss"
+		]
+	},
+
+
+	"mvarrow*{}{}":{
+		"prefix":"*mvarrow",
+		"body":[
+			"\\mvarrow*{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"mvarrow*[]{}{}":{
+		"prefix":"*mvarrow",
+		"body":[
+			"\\mvarrow*[${3:options}]{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"mvlink*{}{}":{
+		"prefix":"*mvlink",
+		"body":[
+			"\\mvlink*{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"mvlink*[]{}{}":{
+		"prefix":"*mvlink",
+		"body":[
+			"\\mvlink*[${3:options}]{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"mkword[]{}":{
+		"prefix":"mkword",
+		"body":[
+			"\\mkword[${2:name}]{${1:word%text}}"
+		]
+	},
+
+
+	"mvarrow[]{}{}":{
+		"prefix":"mvarrow",
+		"body":[
+			"\\mvarrow[${3:options}]{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"mvlink[]{}{}":{
+		"prefix":"mvlink",
+		"body":[
+			"\\mvlink[${3:options}]{${1:start}}{${2:end}}"
 		]
 	}
 }

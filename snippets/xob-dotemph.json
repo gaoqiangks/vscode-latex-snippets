@@ -1,7 +1,7 @@
 {
 
 
-	"circemph":{
+	"circemph{}":{
 		"prefix":"circemph",
 		"body":[
 			"\\circemph{${1:text}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"useremph":{
+	"useremph{}":{
 		"prefix":"useremph",
 		"body":[
 			"\\useremph{${1:text}}"
-		]
-	},
-
-
-	"useremph":{
-		"prefix":"useremph",
-		"body":[
-			"\\useremph[${2:raise%l}]{${1:text}}"
-		]
-	},
-
-
-	"useremph":{
-		"prefix":"useremph",
-		"body":[
-			"\\useremph[${2:raise%l}][${3:char}]{${1:text}}"
 		]
 	},
 
@@ -61,6 +45,22 @@
 		"prefix":"useremphstarwhite",
 		"body":[
 			"\\useremphstarwhite"
+		]
+	},
+
+
+	"useremph[]{}":{
+		"prefix":"useremph",
+		"body":[
+			"\\useremph[${2:raise%l}]{${1:text}}"
+		]
+	},
+
+
+	"useremph[][]{}":{
+		"prefix":"useremph",
+		"body":[
+			"\\useremph[${2:raise%l}][${3:char}]{${1:text}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"useavremulibrary":{
+	"useavremulibrary{}":{
 		"prefix":"useavremulibrary",
 		"body":[
 			"\\useavremulibrary{${1:list of libraries}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"avrloadc":{
+	"avrloadc{}":{
 		"prefix":"avrloadc",
 		"body":[
 			"\\avrloadc{${1:file}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"avrloadc":{
-		"prefix":"avrloadc",
-		"body":[
-			"\\avrloadc[${2:compiler options}]{${1:file}}"
-		]
-	},
-
-
-	"avrcompile":{
+	"avrcompile{}":{
 		"prefix":"avrcompile",
 		"body":[
 			"\\avrcompile{${1:file}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"avrcompile":{
-		"prefix":"avrcompile",
-		"body":[
-			"\\avrcompile[${2:compiler options}]{${1:file}}"
-		]
-	},
-
-
-	"avrloadihex":{
+	"avrloadihex{}":{
 		"prefix":"avrloadihex",
 		"body":[
 			"\\avrloadihex{${1:file}}"
@@ -77,14 +61,6 @@
 		"prefix":"avrstep",
 		"body":[
 			"\\avrstep"
-		]
-	},
-
-
-	"avrstep":{
-		"prefix":"avrstep",
-		"body":[
-			"\\avrstep[${1:number}]"
 		]
 	},
 
@@ -129,7 +105,7 @@
 	},
 
 
-	"avrdrawiter":{
+	"avrdrawiter{}":{
 		"prefix":"avrdrawiter",
 		"body":[
 			"\\avrdrawiter{${1:arg}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"avrdrawSize":{
+	"avrdrawSize{}{}":{
 		"prefix":"avrdrawSize",
 		"body":[
 			"\\avrdrawSize{${1:arg1}}{${2:arg2}}"
@@ -145,10 +121,34 @@
 	},
 
 
-	"avrdrawppm":{
+	"avrdrawppm{}":{
 		"prefix":"avrdrawppm",
 		"body":[
 			"\\avrdrawppm{${1:file}}"
+		]
+	},
+
+
+	"avrloadc[]{}":{
+		"prefix":"avrloadc",
+		"body":[
+			"\\avrloadc[${2:compiler options}]{${1:file}}"
+		]
+	},
+
+
+	"avrcompile[]{}":{
+		"prefix":"avrcompile",
+		"body":[
+			"\\avrcompile[${2:compiler options}]{${1:file}}"
+		]
+	},
+
+
+	"avrstep[]":{
+		"prefix":"avrstep",
+		"body":[
+			"\\avrstep[${1:number}]"
 		]
 	}
 }

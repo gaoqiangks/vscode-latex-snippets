@@ -9,7 +9,7 @@
 	},
 
 
-	"nextgroupplot":{
+	"nextgroupplot[]":{
 		"prefix":"nextgroupplot",
 		"body":[
 			"\\nextgroupplot[${1:options%keyvals}]"
@@ -21,7 +21,17 @@
 		"prefix":"groupplot",
 		"body":[
 			"\\begin{groupplot}",
-			"\t$1",
+				"\t$1",
+			"\\end{groupplot}"
+		]
+	},
+
+
+	"groupplot":{
+		"prefix":"groupplot",
+		"body":[
+			"\\begin{groupplot}",
+				"\t$1",
 			"\\end{groupplot}"
 		]
 	}

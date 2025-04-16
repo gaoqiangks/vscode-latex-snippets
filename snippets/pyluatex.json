@@ -1,7 +1,7 @@
 {
 
 
-	"py":{
+	"py{}":{
 		"prefix":"py",
 		"body":[
 			"\\py{${1:code%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"pyq":{
+	"pyq{}":{
 		"prefix":"pyq",
 		"body":[
 			"\\pyq{${1:code%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"pyc":{
+	"pyc{}":{
 		"prefix":"pyc",
 		"body":[
 			"\\pyc{${1:code%definition}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"pycq":{
+	"pycq{}":{
 		"prefix":"pycq",
 		"body":[
 			"\\pycq{${1:code%definition}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"pyfile":{
+	"pyfile{}":{
 		"prefix":"pyfile",
 		"body":[
 			"\\pyfile{${1:file}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"pyfileq":{
+	"pyfileq{}":{
 		"prefix":"pyfileq",
 		"body":[
 			"\\pyfileq{${1:file}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"pyfilerepl":{
+	"pyfilerepl{}":{
 		"prefix":"pyfilerepl",
 		"body":[
 			"\\pyfilerepl{${1:file}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"pysession":{
+	"pysession{}":{
 		"prefix":"pysession",
 		"body":[
 			"\\pysession{${1:session}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"pyoption":{
+	"pyoption{}{}":{
 		"prefix":"pyoption",
 		"body":[
 			"\\pyoption{${1:option%keyvals}}{${2:value}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"pyif":{
+	"pyif{}{}{}":{
 		"prefix":"pyif",
 		"body":[
 			"\\pyif{${1:test}}{${2:then clause}}{${3:else clause}}"
@@ -89,11 +89,21 @@
 	},
 
 
+	"python":{
+		"prefix":"python",
+		"body":[
+			"\\begin{python}",
+				"\t$1",
+			"\\end{python}"
+		]
+	},
+
+
 	"pythonq":{
 		"prefix":"pythonq",
 		"body":[
 			"\\begin{pythonq}",
-			"\t$1",
+				"\t$1",
 			"\\end{pythonq}"
 		]
 	},
@@ -103,18 +113,8 @@
 		"prefix":"pythonrepl",
 		"body":[
 			"\\begin{pythonrepl}",
-			"\t$1",
+				"\t$1",
 			"\\end{pythonrepl}"
-		]
-	},
-
-
-	"python":{
-		"prefix":"python",
-		"body":[
-			"\\begin{python}",
-			"\t$1",
-			"\\end{python}"
 		]
 	}
 }

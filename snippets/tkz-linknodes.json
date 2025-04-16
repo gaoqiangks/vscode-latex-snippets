@@ -1,18 +1,10 @@
 {
 
 
-	"LinkNodes":{
+	"LinkNodes{}":{
 		"prefix":"LinkNodes",
 		"body":[
 			"\\LinkNodes{${1:expression}}"
-		]
-	},
-
-
-	"LinkNodes":{
-		"prefix":"LinkNodes",
-		"body":[
-			"\\LinkNodes[${2:keyvals}]{${1:expression}}"
 		]
 	},
 
@@ -25,7 +17,15 @@
 	},
 
 
-	"AddNode":{
+	"LinkNodes[]{}":{
+		"prefix":"LinkNodes",
+		"body":[
+			"\\LinkNodes[${2:keyvals}]{${1:expression}}"
+		]
+	},
+
+
+	"AddNode[]":{
 		"prefix":"AddNode",
 		"body":[
 			"\\AddNode[${1:number}]"
@@ -37,7 +37,17 @@
 		"prefix":"NodesList",
 		"body":[
 			"\\begin{NodesList}",
-			"\t$1",
+				"\t$1",
+			"\\end{NodesList}"
+		]
+	},
+
+
+	"NodesList":{
+		"prefix":"NodesList",
+		"body":[
+			"\\begin{NodesList}",
+				"\t$1",
 			"\\end{NodesList}"
 		]
 	}

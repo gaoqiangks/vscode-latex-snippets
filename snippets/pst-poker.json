@@ -9,14 +9,6 @@
 	},
 
 
-	"crdback":{
-		"prefix":"crdback",
-		"body":[
-			"\\crdback[${1:options%keyvals}]"
-		]
-	},
-
-
 	"colorbgname":{
 		"prefix":"colorbgname",
 		"body":[
@@ -513,7 +505,7 @@
 	},
 
 
-	"icard":{
+	"icard{}{}{}":{
 		"prefix":"icard",
 		"body":[
 			"\\icard{${1:value}}{${2:suit}}{${3:color}}"
@@ -937,18 +929,10 @@
 	},
 
 
-	"drawcard":{
+	"drawcard{}{}{}":{
 		"prefix":"drawcard",
 		"body":[
 			"\\drawcard{${1:value}}{${2:suit}}{${3:color}}"
-		]
-	},
-
-
-	"drawcard":{
-		"prefix":"drawcard",
-		"body":[
-			"\\drawcard[${4:options%keyvals}]{${1:value}}{${2:suit}}{${3:color}}"
 		]
 	},
 
@@ -961,7 +945,7 @@
 	},
 
 
-	"crdpair":{
+	"crdpair{}{}":{
 		"prefix":"crdpair",
 		"body":[
 			"\\crdpair{${1:card1}}{${2:card2}}"
@@ -969,10 +953,26 @@
 	},
 
 
-	"crdflop":{
+	"crdflop{}{}{}":{
 		"prefix":"crdflop",
 		"body":[
 			"\\crdflop{${1:card1}}{${2:card2}}{${3:card3}}"
+		]
+	},
+
+
+	"crdback[]":{
+		"prefix":"crdback",
+		"body":[
+			"\\crdback[${1:options%keyvals}]"
+		]
+	},
+
+
+	"drawcard[]{}{}{}":{
+		"prefix":"drawcard",
+		"body":[
+			"\\drawcard[${4:options%keyvals}]{${1:value}}{${2:suit}}{${3:color}}"
 		]
 	}
 }

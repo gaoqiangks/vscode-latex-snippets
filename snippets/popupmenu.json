@@ -1,7 +1,7 @@
 {
 
 
-	"item":{
+	"item{}":{
 		"prefix":"item",
 		"body":[
 			"\\item{${1:keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"puUseMenus":{
+	"puUseMenus{}":{
 		"prefix":"puUseMenus",
 		"body":[
 			"\\puUseMenus{${1:menu array names}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"popUpMenu":{
+	"popUpMenu()":{
 		"prefix":"popUpMenu",
 		"body":[
 			"\\popUpMenu(${1:name})"
@@ -25,7 +25,7 @@
 	},
 
 
-	"puProcessMenu":{
+	"puProcessMenu()":{
 		"prefix":"puProcessMenu",
 		"body":[
 			"\\puProcessMenu(${1:name})"
@@ -33,7 +33,7 @@
 	},
 
 
-	"urlPath":{
+	"urlPath{}{}":{
 		"prefix":"urlPath",
 		"body":[
 			"\\urlPath{${1:cmd}}{${2:path%URL}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -129,22 +129,22 @@
 	},
 
 
-	"submenu":{
-		"prefix":"submenu",
-		"body":[
-			"\\begin{submenu}",
-			"\t$1",
-			"\\end{submenu}"
-		]
-	},
-
-
 	"popupmenu":{
 		"prefix":"popupmenu",
 		"body":[
 			"\\begin{popupmenu}",
-			"\t$1",
+				"\t$1",
 			"\\end{popupmenu}"
+		]
+	},
+
+
+	"submenu":{
+		"prefix":"submenu",
+		"body":[
+			"\\begin{submenu}",
+				"\t$1",
+			"\\end{submenu}"
 		]
 	}
 }

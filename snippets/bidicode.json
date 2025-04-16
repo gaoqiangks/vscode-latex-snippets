@@ -73,7 +73,7 @@
 	},
 
 
-	"Coord":{
+	"Coord{}":{
 		"prefix":"Coord",
 		"body":[
 			"\\Coord{${1:subscript%formula}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"coord":{
+	"coord{}":{
 		"prefix":"coord",
 		"body":[
 			"\\coord{${1:subscript%formula}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"CoordIII":{
+	"CoordIII{}":{
 		"prefix":"CoordIII",
 		"body":[
 			"\\CoordIII{${1:subscript%formula}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"coordiii":{
+	"coordiii{}":{
 		"prefix":"coordiii",
 		"body":[
 			"\\coordiii{${1:subscript%formula}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"Coordx":{
+	"Coordx{}":{
 		"prefix":"Coordx",
 		"body":[
 			"\\Coordx{${1:subscript%formula}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"coordx":{
+	"coordx{}":{
 		"prefix":"coordx",
 		"body":[
 			"\\coordx{${1:subscript%formula}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"Coordy":{
+	"Coordy{}":{
 		"prefix":"Coordy",
 		"body":[
 			"\\Coordy{${1:subscript%formula}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"coordy":{
+	"coordy{}":{
 		"prefix":"coordy",
 		"body":[
 			"\\coordy{${1:subscript%formula}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"Coordz":{
+	"Coordz{}":{
 		"prefix":"Coordz",
 		"body":[
 			"\\Coordz{${1:subscript%formula}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"coordz":{
+	"coordz{}":{
 		"prefix":"coordz",
 		"body":[
 			"\\coordz{${1:subscript%formula}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"Larg":{
+	"Larg{}":{
 		"prefix":"Larg",
 		"body":[
 			"\\Larg{${1:arg}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"Larga":{
+	"Larga{}":{
 		"prefix":"Larga",
 		"body":[
 			"\\Larga{${1:arg}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"Largb":{
+	"Largb{}":{
 		"prefix":"Largb",
 		"body":[
 			"\\Largb{${1:arg}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"Largr":{
+	"Largr{}":{
 		"prefix":"Largr",
 		"body":[
 			"\\Largr{${1:arg}}"
@@ -217,7 +217,7 @@
 	},
 
 
-	"Largs":{
+	"Largs{}":{
 		"prefix":"Largs",
 		"body":[
 			"\\Largs{${1:arg}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"LBEG":{
+	"LBEG{}":{
 		"prefix":"LBEG",
 		"body":[
 			"\\LBEG{${1:envname}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"Lcs":{
+	"Lcs{}":{
 		"prefix":"Lcs",
 		"body":[
 			"\\Lcs{${1:csname}}"
@@ -249,7 +249,7 @@
 	},
 
 
-	"LcsStar":{
+	"LcsStar{}":{
 		"prefix":"LcsStar",
 		"body":[
 			"\\LcsStar{${1:csname}}"
@@ -257,7 +257,7 @@
 	},
 
 
-	"LEND":{
+	"LEND{}":{
 		"prefix":"LEND",
 		"body":[
 			"\\LEND{${1:envname}}"
@@ -281,7 +281,7 @@
 	},
 
 
-	"nxLcs":{
+	"nxLcs{}":{
 		"prefix":"nxLcs",
 		"body":[
 			"\\nxLcs{${1:csname}}"
@@ -289,15 +289,7 @@
 	},
 
 
-	"OptArg*":{
-		"prefix":"OptArg*",
-		"body":[
-			"\\OptArg*{${1:arg}}"
-		]
-	},
-
-
-	"OptArg":{
+	"OptArg{}":{
 		"prefix":"OptArg",
 		"body":[
 			"\\OptArg{${1:arg}}"
@@ -337,32 +329,10 @@
 	},
 
 
-	"BCmd*":{
-		"prefix":"BCmd*",
+	"OptArg*{}":{
+		"prefix":"*OptArg",
 		"body":[
-			"\\begin{BCmd*}",
-			"\t$1",
-			"\\end{BCmd*}"
-		]
-	},
-
-
-	"BDef*":{
-		"prefix":"BDef*",
-		"body":[
-			"\\begin{BDef*}",
-			"\t$1",
-			"\\end{BDef*}"
-		]
-	},
-
-
-	"BDef":{
-		"prefix":"BDef",
-		"body":[
-			"\\begin{BDef}",
-			"\t$1",
-			"\\end{BDef}"
+			"\\OptArg*{${1:arg}}"
 		]
 	},
 
@@ -371,8 +341,38 @@
 		"prefix":"BCmd",
 		"body":[
 			"\\begin{BCmd}",
-			"\t$1",
+				"\t$1",
 			"\\end{BCmd}"
+		]
+	},
+
+
+	"BDef":{
+		"prefix":"BDef",
+		"body":[
+			"\\begin{BDef}",
+				"\t$1",
+			"\\end{BDef}"
+		]
+	},
+
+
+	"BCmd*":{
+		"prefix":"*BCmd",
+		"body":[
+			"\\begin{BCmd*}",
+				"\t$1",
+			"\\end{BCmd*}"
+		]
+	},
+
+
+	"BDef*":{
+		"prefix":"*BDef",
+		"body":[
+			"\\begin{BDef*}",
+				"\t$1",
+			"\\end{BDef*}"
 		]
 	}
 }

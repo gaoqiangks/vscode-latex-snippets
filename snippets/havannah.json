@@ -25,7 +25,7 @@
 	},
 
 
-	"HGame":{
+	"HGame{}":{
 		"prefix":"HGame",
 		"body":[
 			"\\HGame{${1:moves}}"
@@ -33,26 +33,10 @@
 	},
 
 
-	"HGame":{
-		"prefix":"HGame",
-		"body":[
-			"\\HGame[${2:options%keyvals}]{${1:moves}}"
-		]
-	},
-
-
-	"HStoneGroup":{
+	"HStoneGroup{}":{
 		"prefix":"HStoneGroup",
 		"body":[
 			"\\HStoneGroup{${1:moves}}"
-		]
-	},
-
-
-	"HStoneGroup":{
-		"prefix":"HStoneGroup",
-		"body":[
-			"\\HStoneGroup[${2:options%keyvals}]{${1:moves}}"
 		]
 	},
 
@@ -113,7 +97,7 @@
 	},
 
 
-	"HHexGroup":{
+	"HHexGroup{}":{
 		"prefix":"HHexGroup",
 		"body":[
 			"\\HHexGroup{${1:hexes}}"
@@ -121,10 +105,56 @@
 	},
 
 
-	"HHexGroup":{
+	"HGame[]{}":{
+		"prefix":"HGame",
+		"body":[
+			"\\HGame[${2:options%keyvals}]{${1:moves}}"
+		]
+	},
+
+
+	"HStoneGroup[]{}":{
+		"prefix":"HStoneGroup",
+		"body":[
+			"\\HStoneGroup[${2:options%keyvals}]{${1:moves}}"
+		]
+	},
+
+
+	"HHexGroup[]{}":{
 		"prefix":"HHexGroup",
 		"body":[
 			"\\HHexGroup[${2:options%keyvals}]{${1:hexes}}"
+		]
+	},
+
+
+	"HavannahBoard":{
+		"prefix":"HavannahBoard",
+		"body":[
+			"\\begin{HavannahBoard}",
+				"\t$1",
+			"\\end{HavannahBoard}"
+		]
+	},
+
+
+	"HexBoard":{
+		"prefix":"HexBoard",
+		"body":[
+			"\\begin{HexBoard}",
+				"\t$1",
+			"\\end{HexBoard}"
+		]
+	},
+
+
+	"InnerHavannahBoard":{
+		"prefix":"InnerHavannahBoard",
+		"body":[
+			"\\begin{InnerHavannahBoard}",
+				"\t$1",
+			"\\end{InnerHavannahBoard}"
 		]
 	},
 
@@ -133,7 +163,7 @@
 		"prefix":"InnerHexBoard",
 		"body":[
 			"\\begin{InnerHexBoard}",
-			"\t$1",
+				"\t$1",
 			"\\end{InnerHexBoard}"
 		]
 	},
@@ -143,18 +173,8 @@
 		"prefix":"HavannahBoard",
 		"body":[
 			"\\begin{HavannahBoard}",
-			"\t$1",
+				"\t$1",
 			"\\end{HavannahBoard}"
-		]
-	},
-
-
-	"InnerHavannahBoard":{
-		"prefix":"InnerHavannahBoard",
-		"body":[
-			"\\begin{InnerHavannahBoard}",
-			"\t$1",
-			"\\end{InnerHavannahBoard}"
 		]
 	},
 
@@ -163,8 +183,28 @@
 		"prefix":"HexBoard",
 		"body":[
 			"\\begin{HexBoard}",
-			"\t$1",
+				"\t$1",
 			"\\end{HexBoard}"
+		]
+	},
+
+
+	"InnerHavannahBoard":{
+		"prefix":"InnerHavannahBoard",
+		"body":[
+			"\\begin{InnerHavannahBoard}",
+				"\t$1",
+			"\\end{InnerHavannahBoard}"
+		]
+	},
+
+
+	"InnerHexBoard":{
+		"prefix":"InnerHexBoard",
+		"body":[
+			"\\begin{InnerHexBoard}",
+				"\t$1",
+			"\\end{InnerHexBoard}"
 		]
 	}
 }

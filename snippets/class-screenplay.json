@@ -1,7 +1,7 @@
 {
 
 
-	"realauthor":{
+	"realauthor{}":{
 		"prefix":"realauthor",
 		"body":[
 			"\\realauthor{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"address":{
+	"address{}":{
 		"prefix":"address",
 		"body":[
 			"\\address{${1:address}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"agent":{
+	"agent{}":{
 		"prefix":"agent",
 		"body":[
 			"\\agent{${1:name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"intslug":{
+	"intslug{}":{
 		"prefix":"intslug",
 		"body":[
 			"\\intslug{${1:description%text}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"intslug":{
-		"prefix":"intslug",
-		"body":[
-			"\\intslug[${2:time}]{${1:description%text}}"
-		]
-	},
-
-
-	"extslug":{
+	"extslug{}":{
 		"prefix":"extslug",
 		"body":[
 			"\\extslug{${1:description%text}}"
@@ -73,15 +65,7 @@
 	},
 
 
-	"extslug":{
-		"prefix":"extslug",
-		"body":[
-			"\\extslug[${2:time}]{${1:description%text}}"
-		]
-	},
-
-
-	"intextslug":{
+	"intextslug{}":{
 		"prefix":"intextslug",
 		"body":[
 			"\\intextslug{${1:description%text}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"intextslug":{
-		"prefix":"intextslug",
-		"body":[
-			"\\intextslug[${2:time}]{${1:description%text}}"
-		]
-	},
-
-
-	"extintslug":{
+	"extintslug{}":{
 		"prefix":"extintslug",
 		"body":[
 			"\\extintslug{${1:description%text}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"extintslug":{
-		"prefix":"extintslug",
-		"body":[
-			"\\extintslug[${2:time}]{${1:description%text}}"
-		]
-	},
-
-
-	"paren":{
+	"paren{}":{
 		"prefix":"paren",
 		"body":[
 			"\\paren{${1:text}}"
@@ -121,18 +89,10 @@
 	},
 
 
-	"dialbreak":{
+	"dialbreak{}":{
 		"prefix":"dialbreak",
 		"body":[
 			"\\dialbreak{${1:character name}}"
-		]
-	},
-
-
-	"dialbreak":{
-		"prefix":"dialbreak",
-		"body":[
-			"\\dialbreak[${2:directions%text}]{${1:character name}}"
 		]
 	},
 
@@ -145,7 +105,7 @@
 	},
 
 
-	"centretitle":{
+	"centretitle{}":{
 		"prefix":"centretitle",
 		"body":[
 			"\\centretitle{${1:text}}"
@@ -353,7 +313,7 @@
 	},
 
 
-	"sccentre":{
+	"sccentre{}":{
 		"prefix":"sccentre",
 		"body":[
 			"\\sccentre{${1:text}}"
@@ -369,7 +329,7 @@
 	},
 
 
-	"scflushright":{
+	"scflushright{}":{
 		"prefix":"scflushright",
 		"body":[
 			"\\scflushright{${1:text}}"
@@ -385,18 +345,10 @@
 	},
 
 
-	"slug":{
+	"slug{}{}":{
 		"prefix":"slug",
 		"body":[
 			"\\slug{${1:pretext}}{${2:description%text}}"
-		]
-	},
-
-
-	"slug":{
-		"prefix":"slug",
-		"body":[
-			"\\slug[${3:time}]{${1:pretext}}{${2:description%text}}"
 		]
 	},
 
@@ -441,11 +393,69 @@
 	},
 
 
+	"intslug[]{}":{
+		"prefix":"intslug",
+		"body":[
+			"\\intslug[${2:time}]{${1:description%text}}"
+		]
+	},
+
+
+	"extslug[]{}":{
+		"prefix":"extslug",
+		"body":[
+			"\\extslug[${2:time}]{${1:description%text}}"
+		]
+	},
+
+
+	"intextslug[]{}":{
+		"prefix":"intextslug",
+		"body":[
+			"\\intextslug[${2:time}]{${1:description%text}}"
+		]
+	},
+
+
+	"extintslug[]{}":{
+		"prefix":"extintslug",
+		"body":[
+			"\\extintslug[${2:time}]{${1:description%text}}"
+		]
+	},
+
+
+	"dialbreak[]{}":{
+		"prefix":"dialbreak",
+		"body":[
+			"\\dialbreak[${2:directions%text}]{${1:character name}}"
+		]
+	},
+
+
+	"slug[]{}{}":{
+		"prefix":"slug",
+		"body":[
+			"\\slug[${3:time}]{${1:pretext}}{${2:description%text}}"
+		]
+	},
+
+
+	"dialogue":{
+		"prefix":"dialogue",
+		"body":[
+			"\\begin{dialogue}",
+				"\t$1",
+			"\\end{dialogue}"
+		]
+	},
+
+
 	"titleover":{
 		"prefix":"titleover",
 		"body":[
 			"\\begin{titleover}",
-			"\t$1",
+				"\t$1",
 			"\\end{titleover}"
 		]
 	},
@@ -455,7 +465,7 @@
 		"prefix":"dialogue",
 		"body":[
 			"\\begin{dialogue}",
-			"\t$1",
+				"\t$1",
 			"\\end{dialogue}"
 		]
 	}

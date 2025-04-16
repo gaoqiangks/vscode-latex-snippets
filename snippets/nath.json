@@ -1,7 +1,7 @@
 {
 
 
-	"nathstyle":{
+	"nathstyle{}":{
 		"prefix":"nathstyle",
 		"body":[
 			"\\nathstyle{${1:keyvals}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"binom":{
+	"binom{}{}":{
 		"prefix":"binom",
 		"body":[
 			"\\binom{${1:m}}{${2:n}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"displayed":{
+	"displayed{}":{
 		"prefix":"displayed",
 		"body":[
 			"\\displayed{${1:math%formula}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"framed":{
+	"framed{}":{
 		"prefix":"framed",
 		"body":[
 			"\\framed{${1:arg}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"inline":{
+	"inline{}":{
 		"prefix":"inline",
 		"body":[
 			"\\inline{${1:math}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"makerobust":{
+	"makerobust{}":{
 		"prefix":"makerobust",
 		"body":[
 			"\\makerobust{${1:cmd}}"
@@ -297,7 +297,7 @@
 	},
 
 
-	"old":{
+	"old{}":{
 		"prefix":"old",
 		"body":[
 			"\\old{${1:csname}}"
@@ -321,7 +321,7 @@
 	},
 
 
-	"overleftrightarrow":{
+	"overleftrightarrow{}":{
 		"prefix":"overleftrightarrow",
 		"body":[
 			"\\overleftrightarrow{${1:arg}}"
@@ -329,7 +329,7 @@
 	},
 
 
-	"padded":{
+	"padded{}":{
 		"prefix":"padded",
 		"body":[
 			"\\padded{${1:arg}}"
@@ -337,7 +337,7 @@
 	},
 
 
-	"paritem":{
+	"paritem{}":{
 		"prefix":"paritem",
 		"body":[
 			"\\paritem{${1:item label}}"
@@ -353,7 +353,7 @@
 	},
 
 
-	"pdef":{
+	"pdef{}{}":{
 		"prefix":"pdef",
 		"body":[
 			"\\pdef{${1:cmd}}{${2:def}}"
@@ -441,7 +441,7 @@
 	},
 
 
-	"showverticaldimensionsofthebox":{
+	"showverticaldimensionsofthebox{}":{
 		"prefix":"showverticaldimensionsofthebox",
 		"body":[
 			"\\showverticaldimensionsofthebox{${1:arg}}"
@@ -457,7 +457,7 @@
 	},
 
 
-	"underleftarrow":{
+	"underleftarrow{}":{
 		"prefix":"underleftarrow",
 		"body":[
 			"\\underleftarrow{${1:arg}}"
@@ -465,7 +465,7 @@
 	},
 
 
-	"underleftrightarrow":{
+	"underleftrightarrow{}":{
 		"prefix":"underleftrightarrow",
 		"body":[
 			"\\underleftrightarrow{${1:arg}}"
@@ -473,7 +473,7 @@
 	},
 
 
-	"underrightarrow":{
+	"underrightarrow{}":{
 		"prefix":"underrightarrow",
 		"body":[
 			"\\underrightarrow{${1:arg}}"
@@ -481,7 +481,7 @@
 	},
 
 
-	"uo":{
+	"uo{}":{
 		"prefix":"uo",
 		"body":[
 			"\\uo{${1:arg}}"
@@ -505,7 +505,7 @@
 	},
 
 
-	"widebar":{
+	"widebar{}":{
 		"prefix":"widebar",
 		"body":[
 			"\\widebar{${1:arg}}"
@@ -517,18 +517,8 @@
 		"prefix":"cases",
 		"body":[
 			"\\begin{cases}",
-			"\t$1",
+				"\t$1",
 			"\\end{cases}"
-		]
-	},
-
-
-	"tight":{
-		"prefix":"tight",
-		"body":[
-			"\\begin{tight}",
-			"\t$1",
-			"\\end{tight}"
 		]
 	},
 
@@ -537,7 +527,7 @@
 		"prefix":"eqnarrayabc",
 		"body":[
 			"\\begin{eqnarrayabc}",
-			"\t$1",
+				"\t$1",
 			"\\end{eqnarrayabc}"
 		]
 	},
@@ -547,18 +537,8 @@
 		"prefix":"eqns",
 		"body":[
 			"\\begin{eqns}",
-			"\t$1",
+				"\t$1",
 			"\\end{eqns}"
-		]
-	},
-
-
-	"subabc":{
-		"prefix":"subabc",
-		"body":[
-			"\\begin{subabc}",
-			"\t$1",
-			"\\end{subabc}"
 		]
 	},
 
@@ -567,8 +547,28 @@
 		"prefix":"eqnsabc",
 		"body":[
 			"\\begin{eqnsabc}",
-			"\t$1",
+				"\t$1",
 			"\\end{eqnsabc}"
+		]
+	},
+
+
+	"subabc":{
+		"prefix":"subabc",
+		"body":[
+			"\\begin{subabc}",
+				"\t$1",
+			"\\end{subabc}"
+		]
+	},
+
+
+	"tight":{
+		"prefix":"tight",
+		"body":[
+			"\\begin{tight}",
+				"\t$1",
+			"\\end{tight}"
 		]
 	}
 }

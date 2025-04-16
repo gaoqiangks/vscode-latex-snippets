@@ -9,7 +9,7 @@
 	},
 
 
-	"professor":{
+	"professor{}":{
 		"prefix":"professor",
 		"body":[
 			"\\professor{${1:professor}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"course":{
+	"course{}":{
 		"prefix":"course",
 		"body":[
 			"\\course{${1:course%text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"openrangeformat":{
+	"openrangeformat{}":{
 		"prefix":"openrangeformat",
 		"body":[
 			"\\openrangeformat{${1:arg}}"
@@ -57,23 +57,7 @@
 	},
 
 
-	"headlesscite":{
-		"prefix":"headlesscite",
-		"body":[
-			"\\headlesscite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"headlesscite":{
-		"prefix":"headlesscite",
-		"body":[
-			"\\headlesscite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"headlesscite":{
+	"headlesscite{}":{
 		"prefix":"headlesscite",
 		"body":[
 			"\\headlesscite{${1:bibid}}"
@@ -81,23 +65,7 @@
 	},
 
 
-	"headlessfullcite":{
-		"prefix":"headlessfullcite",
-		"body":[
-			"\\headlessfullcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"headlessfullcite":{
-		"prefix":"headlessfullcite",
-		"body":[
-			"\\headlessfullcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"headlessfullcite":{
+	"headlessfullcite{}":{
 		"prefix":"headlessfullcite",
 		"body":[
 			"\\headlessfullcite{${1:bibid}}"
@@ -105,23 +73,7 @@
 	},
 
 
-	"titleandsubtitle":{
-		"prefix":"titleandsubtitle",
-		"body":[
-			"\\titleandsubtitle[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"titleandsubtitle":{
-		"prefix":"titleandsubtitle",
-		"body":[
-			"\\titleandsubtitle[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"titleandsubtitle":{
+	"titleandsubtitle{}":{
 		"prefix":"titleandsubtitle",
 		"body":[
 			"\\titleandsubtitle{${1:bibid}}"
@@ -129,42 +81,50 @@
 	},
 
 
-	"mlanotes":{
-		"prefix":"mlanotes",
+	"headlesscite[][]{}":{
+		"prefix":"headlesscite",
 		"body":[
-			"\\begin{mlanotes}",
-			"\t$1",
-			"\\end{mlanotes}"
+			"\\headlesscite[${2:prenote}][${3:postnote}]{${1:bibid}}"
 		]
 	},
 
 
-	"notes":{
-		"prefix":"notes",
+	"headlesscite[]{}":{
+		"prefix":"headlesscite",
 		"body":[
-			"\\begin{notes}",
-			"\t$1",
-			"\\end{notes}"
+			"\\headlesscite[${2:postnote}]{${1:bibid}}"
 		]
 	},
 
 
-	"paper":{
-		"prefix":"paper",
+	"headlessfullcite[][]{}":{
+		"prefix":"headlessfullcite",
 		"body":[
-			"\\begin{paper}",
-			"\t$1",
-			"\\end{paper}"
+			"\\headlessfullcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
 		]
 	},
 
 
-	"workscited":{
-		"prefix":"workscited",
+	"headlessfullcite[]{}":{
+		"prefix":"headlessfullcite",
 		"body":[
-			"\\begin{workscited}",
-			"\t$1",
-			"\\end{workscited}"
+			"\\headlessfullcite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"titleandsubtitle[][]{}":{
+		"prefix":"titleandsubtitle",
+		"body":[
+			"\\titleandsubtitle[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"titleandsubtitle[]{}":{
+		"prefix":"titleandsubtitle",
+		"body":[
+			"\\titleandsubtitle[${2:postnote}]{${1:bibid}}"
 		]
 	},
 
@@ -173,7 +133,7 @@
 		"prefix":"noindent",
 		"body":[
 			"\\begin{noindent}",
-			"\t$1",
+				"\t$1",
 			"\\end{noindent}"
 		]
 	},
@@ -183,8 +143,48 @@
 		"prefix":"blockquote",
 		"body":[
 			"\\begin{blockquote}",
-			"\t$1",
+				"\t$1",
 			"\\end{blockquote}"
+		]
+	},
+
+
+	"paper":{
+		"prefix":"paper",
+		"body":[
+			"\\begin{paper}",
+				"\t$1",
+			"\\end{paper}"
+		]
+	},
+
+
+	"notes":{
+		"prefix":"notes",
+		"body":[
+			"\\begin{notes}",
+				"\t$1",
+			"\\end{notes}"
+		]
+	},
+
+
+	"mlanotes":{
+		"prefix":"mlanotes",
+		"body":[
+			"\\begin{mlanotes}",
+				"\t$1",
+			"\\end{mlanotes}"
+		]
+	},
+
+
+	"workscited":{
+		"prefix":"workscited",
+		"body":[
+			"\\begin{workscited}",
+				"\t$1",
+			"\\end{workscited}"
 		]
 	}
 }

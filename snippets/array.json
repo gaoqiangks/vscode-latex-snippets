@@ -41,18 +41,10 @@
 	},
 
 
-	"newcolumntype":{
+	"newcolumntype{}{}":{
 		"prefix":"newcolumntype",
 		"body":[
 			"\\newcolumntype{${1:name%cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"newcolumntype":{
-		"prefix":"newcolumntype",
-		"body":[
-			"\\newcolumntype{${1:name%cmd}}[${3:args}]{${2:definition}}"
 		]
 	},
 
@@ -61,6 +53,14 @@
 		"prefix":"showcols",
 		"body":[
 			"\\showcols"
+		]
+	},
+
+
+	"newcolumntype{}[]{}":{
+		"prefix":"newcolumntype",
+		"body":[
+			"\\newcolumntype{${1:name%cmd}}[${3:args}]{${2:definition}}"
 		]
 	}
 }

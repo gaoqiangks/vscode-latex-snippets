@@ -1,15 +1,7 @@
 {
 
 
-	"includepdf":{
-		"prefix":"includepdf",
-		"body":[
-			"\\includepdf[${2:options%keyvals}]{${1:filename%file}}"
-		]
-	},
-
-
-	"includepdf":{
+	"includepdf{}":{
 		"prefix":"includepdf",
 		"body":[
 			"\\includepdf{${1:filename%file}}"
@@ -17,15 +9,7 @@
 	},
 
 
-	"includepdfmerge":{
-		"prefix":"includepdfmerge",
-		"body":[
-			"\\includepdfmerge[${2:options%keyvals}]{${1:file-list%definition}}"
-		]
-	},
-
-
-	"includepdfmerge":{
+	"includepdfmerge{}":{
 		"prefix":"includepdfmerge",
 		"body":[
 			"\\includepdfmerge{${1:file-list%definition}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"includepdfset":{
+	"includepdfset{}":{
 		"prefix":"includepdfset",
 		"body":[
 			"\\includepdfset{${1:global options%keyvals}}"
@@ -53,6 +37,22 @@
 		"prefix":"AddToSurvey",
 		"body":[
 			"\\AddToSurvey"
+		]
+	},
+
+
+	"includepdf[]{}":{
+		"prefix":"includepdf",
+		"body":[
+			"\\includepdf[${2:options%keyvals}]{${1:filename%file}}"
+		]
+	},
+
+
+	"includepdfmerge[]{}":{
+		"prefix":"includepdfmerge",
+		"body":[
+			"\\includepdfmerge[${2:options%keyvals}]{${1:file-list%definition}}"
 		]
 	}
 }

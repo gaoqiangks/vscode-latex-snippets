@@ -1,7 +1,7 @@
 {
 
 
-	"notebox":{
+	"notebox{}":{
 		"prefix":"notebox",
 		"body":[
 			"\\notebox{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"tipbox":{
+	"tipbox{}":{
 		"prefix":"tipbox",
 		"body":[
 			"\\tipbox{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"warningbox":{
+	"warningbox{}":{
 		"prefix":"warningbox",
 		"body":[
 			"\\warningbox{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"cautionbox":{
+	"cautionbox{}":{
 		"prefix":"cautionbox",
 		"body":[
 			"\\cautionbox{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"importantbox":{
+	"importantbox{}":{
 		"prefix":"importantbox",
 		"body":[
 			"\\importantbox{${1:text}}"
@@ -41,18 +41,10 @@
 	},
 
 
-	"awesomebox":{
+	"awesomebox{}{}{}{}":{
 		"prefix":"awesomebox",
 		"body":[
 			"\\awesomebox{${1:vrulewidth%l}}{${2:icon}}{${3:iconcolor%color}}{${4:text}}"
-		]
-	},
-
-
-	"awesomebox":{
-		"prefix":"awesomebox",
-		"body":[
-			"\\awesomebox[${5:vrulecolor%color}][${6:hrule}][${7:title}]{${1:vrulewidth%l}}{${2:icon}}{${3:iconcolor%color}}{${4:text}}"
 		]
 	},
 
@@ -249,22 +241,20 @@
 	},
 
 
-	"noteblock":{
-		"prefix":"noteblock",
+	"awesomebox[][][]{}{}{}{}":{
+		"prefix":"awesomebox",
 		"body":[
-			"\\begin{noteblock}",
-			"\t$1",
-			"\\end{noteblock}"
+			"\\awesomebox[${5:vrulecolor%color}][${6:hrule}][${7:title}]{${1:vrulewidth%l}}{${2:icon}}{${3:iconcolor%color}}{${4:text}}"
 		]
 	},
 
 
-	"cautionblock":{
-		"prefix":"cautionblock",
+	"noteblock":{
+		"prefix":"noteblock",
 		"body":[
-			"\\begin{cautionblock}",
-			"\t$1",
-			"\\end{cautionblock}"
+			"\\begin{noteblock}",
+				"\t$1",
+			"\\end{noteblock}"
 		]
 	},
 
@@ -273,7 +263,7 @@
 		"prefix":"tipblock",
 		"body":[
 			"\\begin{tipblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{tipblock}"
 		]
 	},
@@ -283,8 +273,18 @@
 		"prefix":"warningblock",
 		"body":[
 			"\\begin{warningblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{warningblock}"
+		]
+	},
+
+
+	"cautionblock":{
+		"prefix":"cautionblock",
+		"body":[
+			"\\begin{cautionblock}",
+				"\t$1",
+			"\\end{cautionblock}"
 		]
 	},
 
@@ -293,7 +293,7 @@
 		"prefix":"importantblock",
 		"body":[
 			"\\begin{importantblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{importantblock}"
 		]
 	},
@@ -303,7 +303,17 @@
 		"prefix":"awesomeblock",
 		"body":[
 			"\\begin{awesomeblock}",
-			"\t$1",
+				"\t$1",
+			"\\end{awesomeblock}"
+		]
+	},
+
+
+	"awesomeblock":{
+		"prefix":"awesomeblock",
+		"body":[
+			"\\begin{awesomeblock}",
+				"\t$1",
 			"\\end{awesomeblock}"
 		]
 	}

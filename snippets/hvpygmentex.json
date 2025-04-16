@@ -1,7 +1,7 @@
 {
 
 
-	"inputpygmented":{
+	"inputpygmented{}":{
 		"prefix":"inputpygmented",
 		"body":[
 			"\\inputpygmented{${1:file}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"inputpygmented":{
-		"prefix":"inputpygmented",
-		"body":[
-			"\\inputpygmented[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"pyginline":{
+	"pyginline||":{
 		"prefix":"pyginline",
 		"body":[
 			"\\pyginline|${1:code}|"
@@ -25,15 +17,7 @@
 	},
 
 
-	"pyginline":{
-		"prefix":"pyginline",
-		"body":[
-			"\\pyginline[${1:options}]|${2:code}|"
-		]
-	},
-
-
-	"setpygmented":{
+	"setpygmented{}":{
 		"prefix":"setpygmented",
 		"body":[
 			"\\setpygmented{${1:options%keyvals}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"widest":{
+	"widest(){}{}":{
 		"prefix":"widest",
 		"body":[
 			"\\widest(${3:string list}){${1:code}}{${2:cmd}}"
@@ -57,10 +41,36 @@
 	},
 
 
-	"FormatLineNumber":{
+	"FormatLineNumber{}":{
 		"prefix":"FormatLineNumber",
 		"body":[
 			"\\FormatLineNumber{${1:arg}}"
+		]
+	},
+
+
+	"inputpygmented[]{}":{
+		"prefix":"inputpygmented",
+		"body":[
+			"\\inputpygmented[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"pyginline[]||":{
+		"prefix":"pyginline",
+		"body":[
+			"\\pyginline[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"pygmented":{
+		"prefix":"pygmented",
+		"body":[
+			"\\begin{pygmented}",
+				"\t$1",
+			"\\end{pygmented}"
 		]
 	},
 
@@ -69,7 +79,7 @@
 		"prefix":"VerbatimOutAppend",
 		"body":[
 			"\\begin{VerbatimOutAppend}",
-			"\t$1",
+				"\t$1",
 			"\\end{VerbatimOutAppend}"
 		]
 	},
@@ -79,7 +89,7 @@
 		"prefix":"pygmented",
 		"body":[
 			"\\begin{pygmented}",
-			"\t$1",
+				"\t$1",
 			"\\end{pygmented}"
 		]
 	}

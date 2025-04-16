@@ -1,7 +1,7 @@
 {
 
 
-	"readhanjahangulfont":{
+	"readhanjahangulfont{}":{
 		"prefix":"readhanjahangulfont",
 		"body":[
 			"\\readhanjahangulfont{${1:font}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"readhanjahangulfont":{
-		"prefix":"readhanjahangulfont",
-		"body":[
-			"\\readhanjahangulfont[${2:font features}]{${1:font}}"
-		]
-	},
-
-
-	"readhanjahangulfont":{
-		"prefix":"readhanjahangulfont",
-		"body":[
-			"\\readhanjahangulfont{${1:font}}[${2:font features%keyvals}]"
-		]
-	},
-
-
-	"readhanjahangulfont":{
-		"prefix":"readhanjahangulfont",
-		"body":[
-			"\\readhanjahangulfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
-	},
-
-
-	"readhanjaraise":{
+	"readhanjaraise{}":{
 		"prefix":"readhanjaraise",
 		"body":[
 			"\\readhanjaraise{${1:dimen}}"
@@ -41,7 +17,7 @@
 	},
 
 
-	"readhanjalocate":{
+	"readhanjalocate{}":{
 		"prefix":"readhanjalocate",
 		"body":[
 			"\\readhanjalocate{${1:options}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"readhanjaunit":{
+	"readhanjaunit{}":{
 		"prefix":"readhanjaunit",
 		"body":[
 			"\\readhanjaunit{${1:options}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"readhanjareading":{
+	"readhanjareading{}{}":{
 		"prefix":"readhanjareading",
 		"body":[
 			"\\readhanjareading{${1:hanja}}{${2:reading}}"
@@ -65,10 +41,34 @@
 	},
 
 
-	"readhanjadictionary":{
+	"readhanjadictionary{}{}":{
 		"prefix":"readhanjadictionary",
 		"body":[
 			"\\readhanjadictionary{${1:hanja}}{${2:reading}}"
+		]
+	},
+
+
+	"readhanjahangulfont[]{}":{
+		"prefix":"readhanjahangulfont",
+		"body":[
+			"\\readhanjahangulfont[${2:font features}]{${1:font}}"
+		]
+	},
+
+
+	"readhanjahangulfont{}[]":{
+		"prefix":"readhanjahangulfont",
+		"body":[
+			"\\readhanjahangulfont{${1:font}}[${2:font features%keyvals}]"
+		]
+	},
+
+
+	"readhanjahangulfont[]{}[]":{
+		"prefix":"readhanjahangulfont",
+		"body":[
+			"\\readhanjahangulfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
 		]
 	},
 
@@ -77,7 +77,7 @@
 		"prefix":"readhanja",
 		"body":[
 			"\\begin{readhanja}",
-			"\t$1",
+				"\t$1",
 			"\\end{readhanja}"
 		]
 	}

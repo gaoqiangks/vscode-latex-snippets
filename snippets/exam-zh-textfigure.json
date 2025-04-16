@@ -1,7 +1,7 @@
 {
 
 
-	"textfigure":{
+	"textfigure{}{}":{
 		"prefix":"textfigure",
 		"body":[
 			"\\textfigure{${1:文本%text}}{${2:图片}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"textfigure":{
+	"textfigure[]{}{}":{
 		"prefix":"textfigure",
 		"body":[
 			"\\textfigure[${3:参数列表%keyvals}]{${1:文本%text}}{${2:图片}}"
@@ -21,7 +21,17 @@
 		"prefix":"multifigures",
 		"body":[
 			"\\begin{multifigures}",
-			"\t$1",
+				"\t$1",
+			"\\end{multifigures}"
+		]
+	},
+
+
+	"multifigures":{
+		"prefix":"multifigures",
+		"body":[
+			"\\begin{multifigures}",
+				"\t$1",
 			"\\end{multifigures}"
 		]
 	}

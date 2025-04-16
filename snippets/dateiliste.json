@@ -1,7 +1,7 @@
 {
 
 
-	"ProvideFileInfos":{
+	"ProvideFileInfos{}{}":{
 		"prefix":"ProvideFileInfos",
 		"body":[
 			"\\ProvideFileInfos{${1:id-string}}{${2:description%text}}"
@@ -21,14 +21,6 @@
 		"prefix":"printFileList",
 		"body":[
 			"\\printFileList"
-		]
-	},
-
-
-	"printFileList":{
-		"prefix":"printFileList",
-		"body":[
-			"\\printFileList[${1:section command}]"
 		]
 	},
 
@@ -85,6 +77,14 @@
 		"prefix":"pageName",
 		"body":[
 			"\\pageName"
+		]
+	},
+
+
+	"printFileList[]":{
+		"prefix":"printFileList",
+		"body":[
+			"\\printFileList[${1:section command}]"
 		]
 	}
 }

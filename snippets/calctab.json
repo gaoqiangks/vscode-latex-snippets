@@ -1,7 +1,7 @@
 {
 
 
-	"amount":{
+	"amount{}{}":{
 		"prefix":"amount",
 		"body":[
 			"\\amount{${1:description%text}}{${2:value}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"amount":{
-		"prefix":"amount",
-		"body":[
-			"\\amount[${3:options%keyvals}]{${1:description%text}}{${2:value}}"
-		]
-	},
-
-
-	"perc":{
+	"perc{}{}":{
 		"prefix":"perc",
 		"body":[
 			"\\perc{${1:description%text}}{${2:percentage}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"perc":{
-		"prefix":"perc",
-		"body":[
-			"\\perc[${3:options%keyvals}]{${1:description%text}}{${2:percentage}}"
-		]
-	},
-
-
-	"add":{
+	"add{}":{
 		"prefix":"add",
 		"body":[
 			"\\add{${1:description%text}}"
-		]
-	},
-
-
-	"add":{
-		"prefix":"add",
-		"body":[
-			"\\add[${2:options%keyvals}]{${1:description%text}}"
 		]
 	},
 
@@ -57,7 +33,7 @@
 	},
 
 
-	"amount":{
+	"amount{}{}{}":{
 		"prefix":"amount",
 		"body":[
 			"\\amount{${1:description%text}}{${2:value1}}{${3:value2}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"amount":{
-		"prefix":"amount",
-		"body":[
-			"\\amount[${4:options%keyvals}]{${1:description%text}}{${2:value1}}{${3:value2}}"
-		]
-	},
-
-
-	"ctcurrency":{
+	"ctcurrency{}":{
 		"prefix":"ctcurrency",
 		"body":[
 			"\\ctcurrency{${1:text}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"ctdescription":{
+	"ctdescription{}":{
 		"prefix":"ctdescription",
 		"body":[
 			"\\ctdescription{${1:text}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"ctontranslation":{
+	"ctontranslation{}":{
 		"prefix":"ctontranslation",
 		"body":[
 			"\\ctontranslation{${1:on translation}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"ctheaderone":{
+	"ctheaderone{}":{
 		"prefix":"ctheaderone",
 		"body":[
 			"\\ctheaderone{${1:header%text}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"ctheadertwo":{
+	"ctheadertwo{}":{
 		"prefix":"ctheadertwo",
 		"body":[
 			"\\ctheadertwo{${1:header%text}}"
@@ -121,11 +89,43 @@
 	},
 
 
+	"amount[]{}{}":{
+		"prefix":"amount",
+		"body":[
+			"\\amount[${3:options%keyvals}]{${1:description%text}}{${2:value}}"
+		]
+	},
+
+
+	"perc[]{}{}":{
+		"prefix":"perc",
+		"body":[
+			"\\perc[${3:options%keyvals}]{${1:description%text}}{${2:percentage}}"
+		]
+	},
+
+
+	"add[]{}":{
+		"prefix":"add",
+		"body":[
+			"\\add[${2:options%keyvals}]{${1:description%text}}"
+		]
+	},
+
+
+	"amount[]{}{}{}":{
+		"prefix":"amount",
+		"body":[
+			"\\amount[${4:options%keyvals}]{${1:description%text}}{${2:value1}}{${3:value2}}"
+		]
+	},
+
+
 	"calctab":{
 		"prefix":"calctab",
 		"body":[
 			"\\begin{calctab}",
-			"\t$1",
+				"\t$1",
 			"\\end{calctab}"
 		]
 	},
@@ -135,8 +135,18 @@
 		"prefix":"xcalctab",
 		"body":[
 			"\\begin{xcalctab}",
-			"\t$1",
+				"\t$1",
 			"\\end{xcalctab}"
+		]
+	},
+
+
+	"calctab":{
+		"prefix":"calctab",
+		"body":[
+			"\\begin{calctab}",
+				"\t$1",
+			"\\end{calctab}"
 		]
 	}
 }

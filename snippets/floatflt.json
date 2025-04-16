@@ -1,7 +1,7 @@
 {
 
 
-	"fltitem":{
+	"fltitem{}":{
 		"prefix":"fltitem",
 		"body":[
 			"\\fltitem{${1:text}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"fltitem":{
-		"prefix":"fltitem",
-		"body":[
-			"\\fltitem[${2:space%l}]{${1:text}}"
-		]
-	},
-
-
-	"fltditem":{
+	"fltditem{}{}":{
 		"prefix":"fltditem",
 		"body":[
 			"\\fltditem{${1:label}}{${2:text}}"
-		]
-	},
-
-
-	"fltditem":{
-		"prefix":"fltditem",
-		"body":[
-			"\\fltditem[${3:space%l}]{${1:label}}{${2:text}}"
 		]
 	},
 
@@ -489,11 +473,27 @@
 	},
 
 
+	"fltitem[]{}":{
+		"prefix":"fltitem",
+		"body":[
+			"\\fltitem[${2:space%l}]{${1:text}}"
+		]
+	},
+
+
+	"fltditem[]{}{}":{
+		"prefix":"fltditem",
+		"body":[
+			"\\fltditem[${3:space%l}]{${1:label}}{${2:text}}"
+		]
+	},
+
+
 	"floatingfigure":{
 		"prefix":"floatingfigure",
 		"body":[
 			"\\begin{floatingfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{floatingfigure}"
 		]
 	},
@@ -503,7 +503,27 @@
 		"prefix":"floatingtable",
 		"body":[
 			"\\begin{floatingtable}",
-			"\t$1",
+				"\t$1",
+			"\\end{floatingtable}"
+		]
+	},
+
+
+	"floatingfigure":{
+		"prefix":"floatingfigure",
+		"body":[
+			"\\begin{floatingfigure}",
+				"\t$1",
+			"\\end{floatingfigure}"
+		]
+	},
+
+
+	"floatingtable":{
+		"prefix":"floatingtable",
+		"body":[
+			"\\begin{floatingtable}",
+				"\t$1",
 			"\\end{floatingtable}"
 		]
 	}

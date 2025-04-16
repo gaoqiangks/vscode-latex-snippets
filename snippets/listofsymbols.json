@@ -17,7 +17,7 @@
 	},
 
 
-	"newsym":{
+	"newsym{}{}":{
 		"prefix":"newsym",
 		"body":[
 			"\\newsym{${1:name}}{${2:output%formula}}"
@@ -25,34 +25,10 @@
 	},
 
 
-	"newsym":{
-		"prefix":"newsym",
-		"body":[
-			"\\newsym[${3:description}]{${1:name}}{${2:output%formula}}"
-		]
-	},
-
-
-	"newsub":{
+	"newsub{}{}":{
 		"prefix":"newsub",
 		"body":[
 			"\\newsub{${1:name}}{${2:output%formula}}"
-		]
-	},
-
-
-	"newsub":{
-		"prefix":"newsub",
-		"body":[
-			"\\newsub[${3:description}]{${1:name}}{${2:output%formula}}"
-		]
-	},
-
-
-	"subsep":{
-		"prefix":"subsep",
-		"body":[
-			"\\subsep[${1:separator}]"
 		]
 	},
 
@@ -129,7 +105,7 @@
 	},
 
 
-	"markasused":{
+	"markasused{}":{
 		"prefix":"markasused",
 		"body":[
 			"\\markasused{${1:name}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"markasunused":{
+	"markasunused{}":{
 		"prefix":"markasunused",
 		"body":[
 			"\\markasunused{${1:name}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"dontmarkasused":{
+	"dontmarkasused{}":{
 		"prefix":"dontmarkasused",
 		"body":[
 			"\\dontmarkasused{${1:name}}"
@@ -161,7 +137,7 @@
 	},
 
 
-	"printsymline":{
+	"printsymline{}{}{}{}{}":{
 		"prefix":"printsymline",
 		"body":[
 			"\\printsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:pageno}}"
@@ -169,7 +145,7 @@
 	},
 
 
-	"addsymline":{
+	"addsymline{}{}{}{}{}":{
 		"prefix":"addsymline",
 		"body":[
 			"\\addsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:filehandle}}"
@@ -197,6 +173,30 @@
 		"prefix":"spaceaftersym",
 		"body":[
 			"\\spaceaftersym"
+		]
+	},
+
+
+	"newsym[]{}{}":{
+		"prefix":"newsym",
+		"body":[
+			"\\newsym[${3:description}]{${1:name}}{${2:output%formula}}"
+		]
+	},
+
+
+	"newsub[]{}{}":{
+		"prefix":"newsub",
+		"body":[
+			"\\newsub[${3:description}]{${1:name}}{${2:output%formula}}"
+		]
+	},
+
+
+	"subsep[]":{
+		"prefix":"subsep",
+		"body":[
+			"\\subsep[${1:separator}]"
 		]
 	}
 }

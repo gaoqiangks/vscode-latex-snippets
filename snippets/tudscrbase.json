@@ -1,7 +1,7 @@
 {
 
 
-	"TUDoptions":{
+	"TUDoptions{}":{
 		"prefix":"TUDoptions",
 		"body":[
 			"\\TUDoptions{${1:Optionenliste%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"TUDoption":{
+	"TUDoption{}{}":{
 		"prefix":"TUDoption",
 		"body":[
 			"\\TUDoption{${1:Option%keyvals}}{${2:Werteliste}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"iflanguageloaded":{
+	"iflanguageloaded{}{}{}":{
 		"prefix":"iflanguageloaded",
 		"body":[
 			"\\iflanguageloaded{${1:language}}{${2:true}}{${3:false}}"
@@ -33,26 +33,10 @@
 	},
 
 
-	"TUDProcessOptions":{
-		"prefix":"TUDProcessOptions",
-		"body":[
-			"\\TUDProcessOptions[${1:member}]"
-		]
-	},
-
-
-	"TUDExecuteOptions":{
+	"TUDExecuteOptions{}":{
 		"prefix":"TUDExecuteOptions",
 		"body":[
 			"\\TUDExecuteOptions{${1:options}}"
-		]
-	},
-
-
-	"TUDExecuteOptions":{
-		"prefix":"TUDExecuteOptions",
-		"body":[
-			"\\TUDExecuteOptions[${2:member}]{${1:options}}"
 		]
 	},
 
@@ -101,6 +85,22 @@
 		"prefix":"TUDScriptForum",
 		"body":[
 			"\\TUDScriptForum"
+		]
+	},
+
+
+	"TUDProcessOptions[]":{
+		"prefix":"TUDProcessOptions",
+		"body":[
+			"\\TUDProcessOptions[${1:member}]"
+		]
+	},
+
+
+	"TUDExecuteOptions[]{}":{
+		"prefix":"TUDExecuteOptions",
+		"body":[
+			"\\TUDExecuteOptions[${2:member}]{${1:options}}"
 		]
 	}
 }

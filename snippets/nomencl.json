@@ -17,23 +17,7 @@
 	},
 
 
-	"printnomenclature":{
-		"prefix":"printnomenclature",
-		"body":[
-			"\\printnomenclature[${1:space%l}]"
-		]
-	},
-
-
-	"nomenclature":{
-		"prefix":"nomenclature",
-		"body":[
-			"\\nomenclature[${3:prefix}]{${1:symbol}}{${2:description}}"
-		]
-	},
-
-
-	"nomenclature":{
+	"nomenclature{}{}":{
 		"prefix":"nomenclature",
 		"body":[
 			"\\nomenclature{${1:symbol}}{${2:description}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"nomenclature":{
-		"prefix":"nomenclature",
-		"body":[
-			"\\nomenclature[${5:prefix}]{${1:symbol}}{${2:description}}{${3:units}}{${4:note}}"
-		]
-	},
-
-
-	"nomenclature":{
+	"nomenclature{}{}{}{}":{
 		"prefix":"nomenclature",
 		"body":[
 			"\\nomenclature{${1:symbol}}{${2:description}}{${3:units}}{${4:note}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"setnomtableformat":{
+	"setnomtableformat{}":{
 		"prefix":"setnomtableformat",
 		"body":[
 			"\\setnomtableformat{${1:column format}}"
@@ -233,7 +209,7 @@
 	},
 
 
-	"nomeqref":{
+	"nomeqref{}":{
 		"prefix":"nomeqref",
 		"body":[
 			"\\nomeqref{${1:arg}}"
@@ -241,7 +217,7 @@
 	},
 
 
-	"nomeqref":{
+	"nomeqref{}":{
 		"prefix":"nomeqref",
 		"body":[
 			"\\nomeqref{${1:arg}}"
@@ -249,7 +225,7 @@
 	},
 
 
-	"nompageref":{
+	"nompageref{}":{
 		"prefix":"nompageref",
 		"body":[
 			"\\nompageref{${1:arg}}"
@@ -265,11 +241,35 @@
 	},
 
 
+	"printnomenclature[]":{
+		"prefix":"printnomenclature",
+		"body":[
+			"\\printnomenclature[${1:space%l}]"
+		]
+	},
+
+
+	"nomenclature[]{}{}":{
+		"prefix":"nomenclature",
+		"body":[
+			"\\nomenclature[${3:prefix}]{${1:symbol}}{${2:description}}"
+		]
+	},
+
+
+	"nomenclature[]{}{}{}{}":{
+		"prefix":"nomenclature",
+		"body":[
+			"\\nomenclature[${5:prefix}]{${1:symbol}}{${2:description}}{${3:units}}{${4:note}}"
+		]
+	},
+
+
 	"thenomenclature":{
 		"prefix":"thenomenclature",
 		"body":[
 			"\\begin{thenomenclature}",
-			"\t$1",
+				"\t$1",
 			"\\end{thenomenclature}"
 		]
 	}

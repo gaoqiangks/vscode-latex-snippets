@@ -1,7 +1,7 @@
 {
 
 
-	"includestandalone":{
+	"includestandalone{}":{
 		"prefix":"includestandalone",
 		"body":[
 			"\\includestandalone{${1:file}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"includestandalone":{
-		"prefix":"includestandalone",
-		"body":[
-			"\\includestandalone[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"standaloneconfig":{
+	"standaloneconfig{}":{
 		"prefix":"standaloneconfig",
 		"body":[
 			"\\standaloneconfig{${1:options%keyvals}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"IfStandalone":{
+	"IfStandalone{}{}":{
 		"prefix":"IfStandalone",
 		"body":[
 			"\\IfStandalone{${1:code for standalone}}{${2:code for main document}}"
@@ -89,10 +81,18 @@
 	},
 
 
-	"onlyifstandalone":{
+	"onlyifstandalone{}":{
 		"prefix":"onlyifstandalone",
 		"body":[
 			"\\onlyifstandalone{${1:code}}"
+		]
+	},
+
+
+	"includestandalone[]{}":{
+		"prefix":"includestandalone",
+		"body":[
+			"\\includestandalone[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -101,7 +101,7 @@
 		"prefix":"standalone",
 		"body":[
 			"\\begin{standalone}",
-			"\t$1",
+				"\t$1",
 			"\\end{standalone}"
 		]
 	}

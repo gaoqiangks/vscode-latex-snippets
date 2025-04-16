@@ -9,15 +9,7 @@
 	},
 
 
-	"bond":{
-		"prefix":"bond",
-		"body":[
-			"\\bond[${1:options%keyvals}]"
-		]
-	},
-
-
-	"bgelement":{
+	"bgelement{}":{
 		"prefix":"bgelement",
 		"body":[
 			"\\bgelement{${1:element}}"
@@ -25,7 +17,15 @@
 	},
 
 
-	"bgelement":{
+	"bond[]":{
+		"prefix":"bond",
+		"body":[
+			"\\bond[${1:options%keyvals}]"
+		]
+	},
+
+
+	"bgelement[]{}":{
 		"prefix":"bgelement",
 		"body":[
 			"\\bgelement[${2:options%keyvals}]{${1:element}}"
@@ -37,7 +37,17 @@
 		"prefix":"bondgraph",
 		"body":[
 			"\\begin{bondgraph}",
-			"\t$1",
+				"\t$1",
+			"\\end{bondgraph}"
+		]
+	},
+
+
+	"bondgraph":{
+		"prefix":"bondgraph",
+		"body":[
+			"\\begin{bondgraph}",
+				"\t$1",
 			"\\end{bondgraph}"
 		]
 	}

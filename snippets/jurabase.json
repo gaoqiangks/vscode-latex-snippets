@@ -49,7 +49,7 @@
 	},
 
 
-	"antrag":{
+	"antrag{}{}":{
 		"prefix":"antrag",
 		"body":[
 			"\\antrag{${1:einleitung}}{${2:antragsinhalt}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"code":{
+	"code{}":{
 		"prefix":"code",
 		"body":[
 			"\\code{${1:code}}"
@@ -225,15 +225,7 @@
 	},
 
 
-	"jbck":{
-		"prefix":"jbck",
-		"body":[
-			"\\jbck[${2:schritte}]{${1:glnum}}"
-		]
-	},
-
-
-	"jbck":{
+	"jbck{}":{
 		"prefix":"jbck",
 		"body":[
 			"\\jbck{${1:glnum}}"
@@ -241,7 +233,7 @@
 	},
 
 
-	"jfrw":{
+	"jfrw{}":{
 		"prefix":"jfrw",
 		"body":[
 			"\\jfrw{${1:glnum}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"jsme":{
+	"jsme{}":{
 		"prefix":"jsme",
 		"body":[
 			"\\jsme{${1:glnum}}"
@@ -289,7 +281,7 @@
 	},
 
 
-	"marke":{
+	"marke{}":{
 		"prefix":"marke",
 		"body":[
 			"\\marke{${1:Markennamen}}"
@@ -361,7 +353,7 @@
 	},
 
 
-	"qll":{
+	"qll{}":{
 		"prefix":"qll",
 		"body":[
 			"\\qll{${1:Quellen}}"
@@ -473,21 +465,49 @@
 	},
 
 
+	"jbck[]{}":{
+		"prefix":"jbck",
+		"body":[
+			"\\jbck[${2:schritte}]{${1:glnum}}"
+		]
+	},
+
+
 	"forwardandback":{
 		"prefix":"forwardandback",
 		"body":[
 			"\\begin{forwardandback}",
-			"\t$1",
+				"\t$1",
 			"\\end{forwardandback}"
 		]
 	},
 
 
 	"forwardandback*":{
-		"prefix":"forwardandback*",
+		"prefix":"*forwardandback",
 		"body":[
 			"\\begin{forwardandback*}",
-			"\t$1",
+				"\t$1",
+			"\\end{forwardandback*}"
+		]
+	},
+
+
+	"forwardandback":{
+		"prefix":"forwardandback",
+		"body":[
+			"\\begin{forwardandback}",
+				"\t$1",
+			"\\end{forwardandback}"
+		]
+	},
+
+
+	"forwardandback*":{
+		"prefix":"forwardandback",
+		"body":[
+			"\\begin{forwardandback*}",
+				"\t$1",
 			"\\end{forwardandback*}"
 		]
 	}

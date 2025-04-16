@@ -1,10 +1,20 @@
 {
 
 
-	"entry":{
+	"entry{}{}":{
 		"prefix":"entry",
 		"body":[
 			"\\entry{${1:description%text}}{${2:points}}"
+		]
+	},
+
+
+	"gradingscheme":{
+		"prefix":"gradingscheme",
+		"body":[
+			"\\begin{gradingscheme}",
+				"\t$1",
+			"\\end{gradingscheme}"
 		]
 	},
 
@@ -13,7 +23,7 @@
 		"prefix":"block",
 		"body":[
 			"\\begin{block}",
-			"\t$1",
+				"\t$1",
 			"\\end{block}"
 		]
 	},
@@ -23,8 +33,18 @@
 		"prefix":"gradingscheme",
 		"body":[
 			"\\begin{gradingscheme}",
-			"\t$1",
+				"\t$1",
 			"\\end{gradingscheme}"
+		]
+	},
+
+
+	"block":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block}",
+				"\t$1",
+			"\\end{block}"
 		]
 	}
 }

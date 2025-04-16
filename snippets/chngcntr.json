@@ -1,7 +1,7 @@
 {
 
 
-	"counterwithin":{
+	"counterwithin{}{}":{
 		"prefix":"counterwithin",
 		"body":[
 			"\\counterwithin{${1:counter}}{${2:within}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"counterwithin*":{
-		"prefix":"counterwithin*",
-		"body":[
-			"\\counterwithin*{${1:counter}}{${2:within}}"
-		]
-	},
-
-
-	"counterwithout":{
+	"counterwithout{}{}":{
 		"prefix":"counterwithout",
 		"body":[
 			"\\counterwithout{${1:counter}}{${2:within}}"
@@ -25,8 +17,16 @@
 	},
 
 
-	"counterwithout*":{
-		"prefix":"counterwithout*",
+	"counterwithin*{}{}":{
+		"prefix":"*counterwithin",
+		"body":[
+			"\\counterwithin*{${1:counter}}{${2:within}}"
+		]
+	},
+
+
+	"counterwithout*{}{}":{
+		"prefix":"*counterwithout",
 		"body":[
 			"\\counterwithout*{${1:counter}}{${2:within}}"
 		]

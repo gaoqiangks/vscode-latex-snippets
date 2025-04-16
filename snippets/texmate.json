@@ -97,7 +97,7 @@
 	},
 
 
-	"blackelo":{
+	"blackelo{}":{
 		"prefix":"blackelo",
 		"body":[
 			"\\blackelo{${1:rating}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"blackname":{
+	"blackname{}":{
 		"prefix":"blackname",
 		"body":[
 			"\\blackname{${1:name}}"
@@ -313,7 +313,7 @@
 	},
 
 
-	"chessevent":{
+	"chessevent{}":{
 		"prefix":"chessevent",
 		"body":[
 			"\\chessevent{${1:event name%text}}"
@@ -321,7 +321,7 @@
 	},
 
 
-	"chessopening":{
+	"chessopening{}":{
 		"prefix":"chessopening",
 		"body":[
 			"\\chessopening{${1:name}}"
@@ -345,7 +345,7 @@
 	},
 
 
-	"DiagramCache":{
+	"DiagramCache{}":{
 		"prefix":"DiagramCache",
 		"body":[
 			"\\DiagramCache{${1:number}}"
@@ -409,7 +409,7 @@
 	},
 
 
-	"ECO":{
+	"ECO{}":{
 		"prefix":"ECO",
 		"body":[
 			"\\ECO{${1:ECO}}"
@@ -641,7 +641,7 @@
 	},
 
 
-	"nextdiagrambottom":{
+	"nextdiagrambottom{}":{
 		"prefix":"nextdiagrambottom",
 		"body":[
 			"\\nextdiagrambottom{${1:footer%text}}"
@@ -649,7 +649,7 @@
 	},
 
 
-	"nextdiagramtop":{
+	"nextdiagramtop{}":{
 		"prefix":"nextdiagramtop",
 		"body":[
 			"\\nextdiagramtop{${1:header%text}}"
@@ -705,7 +705,7 @@
 	},
 
 
-	"pieceinitials":{
+	"pieceinitials{}":{
 		"prefix":"pieceinitials",
 		"body":[
 			"\\pieceinitials{${1:new initials}}"
@@ -713,15 +713,7 @@
 	},
 
 
-	"position":{
-		"prefix":"position",
-		"body":[
-			"\\position[${2:⟨w or b⟩ ⟨movenum⟩}]{${1:instructions}}"
-		]
-	},
-
-
-	"position":{
+	"position{}":{
 		"prefix":"position",
 		"body":[
 			"\\position{${1:instructions}}"
@@ -729,7 +721,7 @@
 	},
 
 
-	"preparediagram":{
+	"preparediagram{}{}":{
 		"prefix":"preparediagram",
 		"body":[
 			"\\preparediagram{${1:header%text}}{${2:footer%text}}"
@@ -753,7 +745,7 @@
 	},
 
 
-	"result":{
+	"result{}":{
 		"prefix":"result",
 		"body":[
 			"\\result{${1:result}}"
@@ -857,15 +849,7 @@
 	},
 
 
-	"toD*":{
-		"prefix":"toD*",
-		"body":[
-			"\\toD*{${1:move}}"
-		]
-	},
-
-
-	"toD":{
+	"toD{}":{
 		"prefix":"toD",
 		"body":[
 			"\\toD{${1:move}}"
@@ -889,7 +873,7 @@
 	},
 
 
-	"VariationsEnvironment":{
+	"VariationsEnvironment{}{}":{
 		"prefix":"VariationsEnvironment",
 		"body":[
 			"\\VariationsEnvironment{${1:begdef}}{${2:enddef}}"
@@ -921,7 +905,7 @@
 	},
 
 
-	"whiteelo":{
+	"whiteelo{}":{
 		"prefix":"whiteelo",
 		"body":[
 			"\\whiteelo{${1:rating}}"
@@ -929,7 +913,7 @@
 	},
 
 
-	"whitename":{
+	"whitename{}":{
 		"prefix":"whitename",
 		"body":[
 			"\\whitename{${1:name}}"
@@ -985,22 +969,18 @@
 	},
 
 
-	"variations*":{
-		"prefix":"variations*",
+	"toD*{}":{
+		"prefix":"*toD",
 		"body":[
-			"\\begin{variations*}",
-			"\t$1",
-			"\\end{variations*}"
+			"\\toD*{${1:move}}"
 		]
 	},
 
 
-	"variations":{
-		"prefix":"variations",
+	"position[]{}":{
+		"prefix":"position",
 		"body":[
-			"\\begin{variations}",
-			"\t$1",
-			"\\end{variations}"
+			"\\position[${2:⟨w or b⟩ ⟨movenum⟩}]{${1:instructions}}"
 		]
 	},
 
@@ -1009,8 +989,28 @@
 		"prefix":"texmate",
 		"body":[
 			"\\begin{texmate}",
-			"\t$1",
+				"\t$1",
 			"\\end{texmate}"
+		]
+	},
+
+
+	"variations":{
+		"prefix":"variations",
+		"body":[
+			"\\begin{variations}",
+				"\t$1",
+			"\\end{variations}"
+		]
+	},
+
+
+	"variations*":{
+		"prefix":"*variations",
+		"body":[
+			"\\begin{variations*}",
+				"\t$1",
+			"\\end{variations*}"
 		]
 	}
 }

@@ -129,7 +129,7 @@
 	},
 
 
-	"setDimOf":{
+	"setDimOf{}{}{}":{
 		"prefix":"setDimOf",
 		"body":[
 			"\\setDimOf{${1:field%keyvals}}{${2:width}}{${3:height}}"
@@ -141,14 +141,6 @@
 		"prefix":"inputRegion",
 		"body":[
 			"\\inputRegion"
-		]
-	},
-
-
-	"inputRegion":{
-		"prefix":"inputRegion",
-		"body":[
-			"\\inputRegion[${1:eform parameters}]"
 		]
 	},
 
@@ -169,26 +161,10 @@
 	},
 
 
-	"startAgain":{
-		"prefix":"startAgain",
-		"body":[
-			"\\startAgain[${1:eform parameters}]"
-		]
-	},
-
-
 	"newCard":{
 		"prefix":"newCard",
 		"body":[
 			"\\newCard"
-		]
-	},
-
-
-	"newCard":{
-		"prefix":"newCard",
-		"body":[
-			"\\newCard[${1:eform parameters}]"
 		]
 	},
 
@@ -213,14 +189,6 @@
 		"prefix":"alertbox",
 		"body":[
 			"\\alertbox"
-		]
-	},
-
-
-	"alertbox":{
-		"prefix":"alertbox",
-		"body":[
-			"\\alertbox[${1:eform parameters}]"
 		]
 	},
 
@@ -273,14 +241,6 @@
 	},
 
 
-	"cbTiming":{
-		"prefix":"cbTiming",
-		"body":[
-			"\\cbTiming[${1:eform parameters}]"
-		]
-	},
-
-
 	"fcNoTiming":{
 		"prefix":"fcNoTiming",
 		"body":[
@@ -297,14 +257,6 @@
 	},
 
 
-	"ansField":{
-		"prefix":"ansField",
-		"body":[
-			"\\ansField[${1:eform parameters}]"
-		]
-	},
-
-
 	"fmtAnswer":{
 		"prefix":"fmtAnswer",
 		"body":[
@@ -317,14 +269,6 @@
 		"prefix":"cbOperation",
 		"body":[
 			"\\cbOperation"
-		]
-	},
-
-
-	"cbOperation":{
-		"prefix":"cbOperation",
-		"body":[
-			"\\cbOperation[${1:eform parameters}]"
 		]
 	},
 
@@ -393,7 +337,7 @@
 	},
 
 
-	"DeclareArithParams":{
+	"DeclareArithParams{}":{
 		"prefix":"DeclareArithParams",
 		"body":[
 			"\\DeclareArithParams{${1:keyvals}}"
@@ -1081,11 +1025,67 @@
 	},
 
 
+	"inputRegion[]":{
+		"prefix":"inputRegion",
+		"body":[
+			"\\inputRegion[${1:eform parameters}]"
+		]
+	},
+
+
+	"startAgain[]":{
+		"prefix":"startAgain",
+		"body":[
+			"\\startAgain[${1:eform parameters}]"
+		]
+	},
+
+
+	"newCard[]":{
+		"prefix":"newCard",
+		"body":[
+			"\\newCard[${1:eform parameters}]"
+		]
+	},
+
+
+	"alertbox[]":{
+		"prefix":"alertbox",
+		"body":[
+			"\\alertbox[${1:eform parameters}]"
+		]
+	},
+
+
+	"cbTiming[]":{
+		"prefix":"cbTiming",
+		"body":[
+			"\\cbTiming[${1:eform parameters}]"
+		]
+	},
+
+
+	"ansField[]":{
+		"prefix":"ansField",
+		"body":[
+			"\\ansField[${1:eform parameters}]"
+		]
+	},
+
+
+	"cbOperation[]":{
+		"prefix":"cbOperation",
+		"body":[
+			"\\cbOperation[${1:eform parameters}]"
+		]
+	},
+
+
 	"MenuFC":{
 		"prefix":"MenuFC",
 		"body":[
 			"\\begin{MenuFC}",
-			"\t$1",
+				"\t$1",
 			"\\end{MenuFC}"
 		]
 	}

@@ -9,58 +9,10 @@
 	},
 
 
-	"task":{
-		"prefix":"task",
-		"body":[
-			"\\task[${1:label text}]"
-		]
-	},
-
-
-	"task":{
-		"prefix":"task",
-		"body":[
-			"\\task[${1:label text}](${2:cols})"
-		]
-	},
-
-
-	"task":{
+	"task()":{
 		"prefix":"task",
 		"body":[
 			"\\task(${1:cols})"
-		]
-	},
-
-
-	"task*":{
-		"prefix":"task*",
-		"body":[
-			"\\task*"
-		]
-	},
-
-
-	"task*":{
-		"prefix":"task*",
-		"body":[
-			"\\task*[${1:label text}]"
-		]
-	},
-
-
-	"task*":{
-		"prefix":"task*",
-		"body":[
-			"\\task*[${1:label text}](${2:cols})"
-		]
-	},
-
-
-	"task*":{
-		"prefix":"task*",
-		"body":[
-			"\\task*(${1:cols})"
 		]
 	},
 
@@ -73,7 +25,7 @@
 	},
 
 
-	"settasks":{
+	"settasks{}":{
 		"prefix":"settasks",
 		"body":[
 			"\\settasks{${1:keyvals}}"
@@ -81,7 +33,7 @@
 	},
 
 
-	"NewTasksEnvironment":{
+	"NewTasksEnvironment{}":{
 		"prefix":"NewTasksEnvironment",
 		"body":[
 			"\\NewTasksEnvironment{${1:envname}}"
@@ -89,15 +41,7 @@
 	},
 
 
-	"NewTasksEnvironment":{
-		"prefix":"NewTasksEnvironment",
-		"body":[
-			"\\NewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})"
-		]
-	},
-
-
-	"RenewTasksEnvironment":{
+	"RenewTasksEnvironment{}":{
 		"prefix":"RenewTasksEnvironment",
 		"body":[
 			"\\RenewTasksEnvironment{${1:envname}}"
@@ -105,15 +49,7 @@
 	},
 
 
-	"RenewTasksEnvironment":{
-		"prefix":"RenewTasksEnvironment",
-		"body":[
-			"\\RenewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})"
-		]
-	},
-
-
-	"tasksifmeasuringTF":{
+	"tasksifmeasuringTF{}{}":{
 		"prefix":"tasksifmeasuringTF",
 		"body":[
 			"\\tasksifmeasuringTF{${1:true}}{${2:false}}"
@@ -121,7 +57,7 @@
 	},
 
 
-	"tasksifmeasuringT":{
+	"tasksifmeasuringT{}":{
 		"prefix":"tasksifmeasuringT",
 		"body":[
 			"\\tasksifmeasuringT{${1:true}}"
@@ -129,7 +65,7 @@
 	},
 
 
-	"tasksifmeasuringF":{
+	"tasksifmeasuringF{}":{
 		"prefix":"tasksifmeasuringF",
 		"body":[
 			"\\tasksifmeasuringF{${1:false}}"
@@ -153,11 +89,105 @@
 	},
 
 
+	"task*":{
+		"prefix":"*task",
+		"body":[
+			"\\task*"
+		]
+	},
+
+
+	"task*[]":{
+		"prefix":"*task",
+		"body":[
+			"\\task*[${1:label text}]"
+		]
+	},
+
+
+	"task*[]()":{
+		"prefix":"*task",
+		"body":[
+			"\\task*[${1:label text}](${2:cols})"
+		]
+	},
+
+
+	"task*()":{
+		"prefix":"*task",
+		"body":[
+			"\\task*(${1:cols})"
+		]
+	},
+
+
+	"task[]":{
+		"prefix":"task",
+		"body":[
+			"\\task[${1:label text}]"
+		]
+	},
+
+
+	"task[]()":{
+		"prefix":"task",
+		"body":[
+			"\\task[${1:label text}](${2:cols})"
+		]
+	},
+
+
+	"NewTasksEnvironment[]{}[]()":{
+		"prefix":"NewTasksEnvironment",
+		"body":[
+			"\\NewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})"
+		]
+	},
+
+
+	"RenewTasksEnvironment[]{}[]()":{
+		"prefix":"RenewTasksEnvironment",
+		"body":[
+			"\\RenewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})"
+		]
+	},
+
+
 	"tasks":{
 		"prefix":"tasks",
 		"body":[
 			"\\begin{tasks}",
-			"\t$1",
+				"\t$1",
+			"\\end{tasks}"
+		]
+	},
+
+
+	"tasks":{
+		"prefix":"tasks",
+		"body":[
+			"\\begin{tasks}",
+				"\t$1",
+			"\\end{tasks}"
+		]
+	},
+
+
+	"tasks":{
+		"prefix":"tasks",
+		"body":[
+			"\\begin{tasks}",
+				"\t$1",
+			"\\end{tasks}"
+		]
+	},
+
+
+	"tasks":{
+		"prefix":"tasks",
+		"body":[
+			"\\begin{tasks}",
+				"\t$1",
 			"\\end{tasks}"
 		]
 	}

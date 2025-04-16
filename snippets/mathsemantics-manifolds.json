@@ -41,7 +41,7 @@
 	},
 
 
-	"wideparen":{
+	"wideparen{}":{
 		"prefix":"wideparen",
 		"body":[
 			"\\wideparen{${1:arg}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"geodesicArcSymbol":{
+	"geodesicArcSymbol{}":{
 		"prefix":"geodesicArcSymbol",
 		"body":[
 			"\\geodesicArcSymbol{${1:arg}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"bitangentSpace":{
+	"bitangentSpace{}":{
 		"prefix":"bitangentSpace",
 		"body":[
 			"\\bitangentSpace{${1:point}}"
@@ -105,26 +105,10 @@
 	},
 
 
-	"bitangentSpace":{
-		"prefix":"bitangentSpace",
-		"body":[
-			"\\bitangentSpace{${1:point}}[${2:manifold}]"
-		]
-	},
-
-
-	"cotangentSpace":{
+	"cotangentSpace{}":{
 		"prefix":"cotangentSpace",
 		"body":[
 			"\\cotangentSpace{${1:point}}"
-		]
-	},
-
-
-	"cotangentSpace":{
-		"prefix":"cotangentSpace",
-		"body":[
-			"\\cotangentSpace{${1:point}}[${2:manifold}]"
 		]
 	},
 
@@ -137,26 +121,10 @@
 	},
 
 
-	"cotangentBundle":{
-		"prefix":"cotangentBundle",
-		"body":[
-			"\\cotangentBundle[${1:manifold}]"
-		]
-	},
-
-
-	"covariantDerivative":{
+	"covariantDerivative{}":{
 		"prefix":"covariantDerivative",
 		"body":[
 			"\\covariantDerivative{${1:vector field}}"
-		]
-	},
-
-
-	"covariantDerivative":{
-		"prefix":"covariantDerivative",
-		"body":[
-			"\\covariantDerivative{${1:vector field}}[${2:tensor field}]"
 		]
 	},
 
@@ -169,7 +137,7 @@
 	},
 
 
-	"exponential":{
+	"exponential{}":{
 		"prefix":"exponential",
 		"body":[
 			"\\exponential{${1:base}}"
@@ -177,7 +145,7 @@
 	},
 
 
-	"exponential":{
+	"exponential{}()":{
 		"prefix":"exponential",
 		"body":[
 			"\\exponential{${1:base}}(${2:arg})"
@@ -185,23 +153,7 @@
 	},
 
 
-	"exponential":{
-		"prefix":"exponential",
-		"body":[
-			"\\exponential[${2:scale%keyvals}]{${1:base}}"
-		]
-	},
-
-
-	"exponential":{
-		"prefix":"exponential",
-		"body":[
-			"\\exponential[${2:scale%keyvals}]{${1:base}}(${3:arg})"
-		]
-	},
-
-
-	"geodesic<s>":{
+	"geodesic<s>()":{
 		"prefix":"geodesic<s>",
 		"body":[
 			"\\geodesic<s>(${1:%<eval point%>})"
@@ -209,23 +161,7 @@
 	},
 
 
-	"geodesic<s>":{
-		"prefix":"geodesic<s>",
-		"body":[
-			"\\geodesic<s>[${1:scale}]"
-		]
-	},
-
-
-	"geodesic<s>":{
-		"prefix":"geodesic<s>",
-		"body":[
-			"\\geodesic<s>[${1:scale}](${2:%<eval point%>})"
-		]
-	},
-
-
-	"geodesic<style>":{
+	"geodesic<style>{}{}":{
 		"prefix":"geodesic<style>",
 		"body":[
 			"\\geodesic<style>{${1:t0}}{${2:t1}}"
@@ -233,7 +169,7 @@
 	},
 
 
-	"geodesic<style>":{
+	"geodesic<style>{}{}()":{
 		"prefix":"geodesic<style>",
 		"body":[
 			"\\geodesic<style>{${1:t0}}{${2:t1}}(${3:eval point})"
@@ -241,23 +177,7 @@
 	},
 
 
-	"geodesic<style>":{
-		"prefix":"geodesic<style>",
-		"body":[
-			"\\geodesic<style>[${3:scale}]{${1:t0}}{${2:t1}}"
-		]
-	},
-
-
-	"geodesic<style>":{
-		"prefix":"geodesic<style>",
-		"body":[
-			"\\geodesic<style>[${3:scale}]{${1:t0}}{${2:t1}}(${4:eval point})"
-		]
-	},
-
-
-	"geodesic":{
+	"geodesic{}{}":{
 		"prefix":"geodesic",
 		"body":[
 			"\\geodesic{${1:t0}}{${2:t1}}"
@@ -265,7 +185,7 @@
 	},
 
 
-	"geodesic":{
+	"geodesic{}{}()":{
 		"prefix":"geodesic",
 		"body":[
 			"\\geodesic{${1:t0}}{${2:t1}}(${3:eval point})"
@@ -273,23 +193,7 @@
 	},
 
 
-	"geodesic":{
-		"prefix":"geodesic",
-		"body":[
-			"\\geodesic[${3:scale}]{${1:t0}}{${2:t1}}"
-		]
-	},
-
-
-	"geodesic":{
-		"prefix":"geodesic",
-		"body":[
-			"\\geodesic[${3:scale}]{${1:t0}}{${2:t1}}(${4:eval point})"
-		]
-	},
-
-
-	"geodesic":{
+	"geodesic||{}{}":{
 		"prefix":"geodesic",
 		"body":[
 			"\\geodesic|${3:symbol}|{${1:t0}}{${2:t1}}"
@@ -297,26 +201,10 @@
 	},
 
 
-	"geodesic":{
+	"geodesic||{}{}()":{
 		"prefix":"geodesic",
 		"body":[
 			"\\geodesic|${3:symbol}|{${1:t0}}{${2:t1}}(${4:%<eval point%>})"
-		]
-	},
-
-
-	"geodesic":{
-		"prefix":"geodesic",
-		"body":[
-			"\\geodesic|${4:symbol}|[${3:scale}]{${1:t0}}{${2:t1}}"
-		]
-	},
-
-
-	"geodesic":{
-		"prefix":"geodesic",
-		"body":[
-			"\\geodesic|${4:symbol}|[${3:scale}]{${1:t0}}{${2:t1}}(${5:%<eval point%>})"
 		]
 	},
 
@@ -329,7 +217,7 @@
 	},
 
 
-	"logarithm":{
+	"logarithm{}":{
 		"prefix":"logarithm",
 		"body":[
 			"\\logarithm{${1:base}}"
@@ -337,7 +225,7 @@
 	},
 
 
-	"logarithm":{
+	"logarithm{}()":{
 		"prefix":"logarithm",
 		"body":[
 			"\\logarithm{${1:base}}(${2:arg})"
@@ -345,23 +233,7 @@
 	},
 
 
-	"logarithm":{
-		"prefix":"logarithm",
-		"body":[
-			"\\logarithm[${2:scale%keyvals}]{${1:base}}"
-		]
-	},
-
-
-	"logarithm":{
-		"prefix":"logarithm",
-		"body":[
-			"\\logarithm[${2:scale%keyvals}]{${1:base}}(${3:arg})"
-		]
-	},
-
-
-	"inverseRetract":{
+	"inverseRetract{}":{
 		"prefix":"inverseRetract",
 		"body":[
 			"\\inverseRetract{${1:base}}"
@@ -369,7 +241,7 @@
 	},
 
 
-	"inverseRetract":{
+	"inverseRetract{}()":{
 		"prefix":"inverseRetract",
 		"body":[
 			"\\inverseRetract{${1:base}}(${2:arg})"
@@ -377,23 +249,7 @@
 	},
 
 
-	"inverseRetract":{
-		"prefix":"inverseRetract",
-		"body":[
-			"\\inverseRetract[${2:scale%keyvals}]{${1:base}}"
-		]
-	},
-
-
-	"inverseRetract":{
-		"prefix":"inverseRetract",
-		"body":[
-			"\\inverseRetract[${2:scale%keyvals}]{${1:base}}(${3:arg})"
-		]
-	},
-
-
-	"lie":{
+	"lie{}{}":{
 		"prefix":"lie",
 		"body":[
 			"\\lie{${1:arg1}}{${2:arg2}}"
@@ -401,15 +257,7 @@
 	},
 
 
-	"lie":{
-		"prefix":"lie",
-		"body":[
-			"\\lie[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"parallelTransport":{
+	"parallelTransport{}{}":{
 		"prefix":"parallelTransport",
 		"body":[
 			"\\parallelTransport{${1:start}}{${2:end}}"
@@ -417,7 +265,7 @@
 	},
 
 
-	"parallelTransport":{
+	"parallelTransport{}{}()":{
 		"prefix":"parallelTransport",
 		"body":[
 			"\\parallelTransport{${1:start}}{${2:end}}(${3:arg})"
@@ -425,55 +273,7 @@
 	},
 
 
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport{${1:start}}{${2:end}}[${3:sup}]"
-		]
-	},
-
-
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport{${1:start}}{${2:end}}(${4:arg})[${3:sup}]"
-		]
-	},
-
-
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${4:arg})"
-		]
-	},
-
-
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}[${4:sup}]"
-		]
-	},
-
-
-	"parallelTransport":{
-		"prefix":"parallelTransport",
-		"body":[
-			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${5:arg})[${4:sup}]"
-		]
-	},
-
-
-	"parallelTransportDir":{
+	"parallelTransportDir{}{}":{
 		"prefix":"parallelTransportDir",
 		"body":[
 			"\\parallelTransportDir{${1:start}}{${2:dir}}"
@@ -481,7 +281,7 @@
 	},
 
 
-	"parallelTransportDir":{
+	"parallelTransportDir{}{}()":{
 		"prefix":"parallelTransportDir",
 		"body":[
 			"\\parallelTransportDir{${1:start}}{${2:dir}}(${3:arg})"
@@ -489,55 +289,7 @@
 	},
 
 
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir{${1:start}}{${2:dir}}[${3:sup}]"
-		]
-	},
-
-
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir{${1:start}}{${2:dir}}(${4:arg})[${3:sup}]"
-		]
-	},
-
-
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}"
-		]
-	},
-
-
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${4:arg})"
-		]
-	},
-
-
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}[${4:sup}]"
-		]
-	},
-
-
-	"parallelTransportDir":{
-		"prefix":"parallelTransportDir",
-		"body":[
-			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${5:arg})[${4:sup}]"
-		]
-	},
-
-
-	"retract":{
+	"retract{}":{
 		"prefix":"retract",
 		"body":[
 			"\\retract{${1:base}}"
@@ -545,7 +297,7 @@
 	},
 
 
-	"retract":{
+	"retract{}()":{
 		"prefix":"retract",
 		"body":[
 			"\\retract{${1:base}}(${2:arg})"
@@ -553,23 +305,7 @@
 	},
 
 
-	"retract":{
-		"prefix":"retract",
-		"body":[
-			"\\retract[${2:scale%keyvals}]{${1:base}}"
-		]
-	},
-
-
-	"retract":{
-		"prefix":"retract",
-		"body":[
-			"\\retract[${2:scale%keyvals}]{${1:base}}(${3:arg})"
-		]
-	},
-
-
-	"riemannian":{
+	"riemannian{}{}":{
 		"prefix":"riemannian",
 		"body":[
 			"\\riemannian{${1:arg1}}{${2:arg2}}"
@@ -577,31 +313,7 @@
 	},
 
 
-	"riemannian":{
-		"prefix":"riemannian",
-		"body":[
-			"\\riemannian{${1:arg1}}{${2:arg2}}[${3:sub}]"
-		]
-	},
-
-
-	"riemannian":{
-		"prefix":"riemannian",
-		"body":[
-			"\\riemannian[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"riemannian":{
-		"prefix":"riemannian",
-		"body":[
-			"\\riemannian[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}[${4:sub}]"
-		]
-	},
-
-
-	"riemanniannorm":{
+	"riemanniannorm{}":{
 		"prefix":"riemanniannorm",
 		"body":[
 			"\\riemanniannorm{${1:arg}}"
@@ -609,31 +321,7 @@
 	},
 
 
-	"riemanniannorm":{
-		"prefix":"riemanniannorm",
-		"body":[
-			"\\riemanniannorm{${1:arg}}[${2:sub}]"
-		]
-	},
-
-
-	"riemanniannorm":{
-		"prefix":"riemanniannorm",
-		"body":[
-			"\\riemanniannorm[${2:scale%keyvals}]{${1:arg}}"
-		]
-	},
-
-
-	"riemanniannorm":{
-		"prefix":"riemanniannorm",
-		"body":[
-			"\\riemanniannorm[${2:scale%keyvals}]{${1:arg}}[${3:sub}]"
-		]
-	},
-
-
-	"secondCovariantDerivative":{
+	"secondCovariantDerivative{}{}":{
 		"prefix":"secondCovariantDerivative",
 		"body":[
 			"\\secondCovariantDerivative{${1:arg1}}{${2:arg2}}"
@@ -641,26 +329,10 @@
 	},
 
 
-	"secondCovariantDerivative":{
-		"prefix":"secondCovariantDerivative",
-		"body":[
-			"\\secondCovariantDerivative{${1:arg1}}{${2:arg2}}[${3:arg}]"
-		]
-	},
-
-
-	"tangentSpace":{
+	"tangentSpace{}":{
 		"prefix":"tangentSpace",
 		"body":[
 			"\\tangentSpace{${1:point}}"
-		]
-	},
-
-
-	"tangentSpace":{
-		"prefix":"tangentSpace",
-		"body":[
-			"\\tangentSpace{${1:point}}[${2:manifold}]"
 		]
 	},
 
@@ -673,15 +345,7 @@
 	},
 
 
-	"tangentBundle":{
-		"prefix":"tangentBundle",
-		"body":[
-			"\\tangentBundle[${1:manifold}]"
-		]
-	},
-
-
-	"tensorBundle":{
+	"tensorBundle{}{}":{
 		"prefix":"tensorBundle",
 		"body":[
 			"\\tensorBundle{${1:arg1}}{${2:arg2}}"
@@ -689,15 +353,7 @@
 	},
 
 
-	"tensorBundle":{
-		"prefix":"tensorBundle",
-		"body":[
-			"\\tensorBundle{${1:arg1}}{${2:arg2}}[${3:manifold}]"
-		]
-	},
-
-
-	"tensorSpace":{
+	"tensorSpace{}{}":{
 		"prefix":"tensorSpace",
 		"body":[
 			"\\tensorSpace{${1:arg1}}{${2:arg2}}"
@@ -705,15 +361,7 @@
 	},
 
 
-	"tensorSpace":{
-		"prefix":"tensorSpace",
-		"body":[
-			"\\tensorSpace{${1:arg1}}{${2:arg2}}[${3:vector space}]"
-		]
-	},
-
-
-	"vectorTransport":{
+	"vectorTransport{}{}":{
 		"prefix":"vectorTransport",
 		"body":[
 			"\\vectorTransport{${1:start}}{${2:end}}"
@@ -721,7 +369,7 @@
 	},
 
 
-	"vectorTransport":{
+	"vectorTransport{}{}()":{
 		"prefix":"vectorTransport",
 		"body":[
 			"\\vectorTransport{${1:start}}{${2:end}}(${3:arg})"
@@ -729,55 +377,7 @@
 	},
 
 
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport{${1:start}}{${2:end}}[${3:sup}]"
-		]
-	},
-
-
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport{${1:start}}{${2:end}}(${4:arg})[${3:sup}]"
-		]
-	},
-
-
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${4:arg})"
-		]
-	},
-
-
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}[${4:sup}]"
-		]
-	},
-
-
-	"vectorTransport":{
-		"prefix":"vectorTransport",
-		"body":[
-			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${5:arg})[${4:sup}]"
-		]
-	},
-
-
-	"vectorTransportDir":{
+	"vectorTransportDir{}{}":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir{${1:start}}{${2:dir}}"
@@ -785,7 +385,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir{}{}()":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir{${1:start}}{${2:dir}}(${3:arg})"
@@ -793,7 +393,407 @@
 	},
 
 
-	"vectorTransportDir":{
+	"bitangentSpace{}[]":{
+		"prefix":"bitangentSpace",
+		"body":[
+			"\\bitangentSpace{${1:point}}[${2:manifold}]"
+		]
+	},
+
+
+	"cotangentSpace{}[]":{
+		"prefix":"cotangentSpace",
+		"body":[
+			"\\cotangentSpace{${1:point}}[${2:manifold}]"
+		]
+	},
+
+
+	"cotangentBundle[]":{
+		"prefix":"cotangentBundle",
+		"body":[
+			"\\cotangentBundle[${1:manifold}]"
+		]
+	},
+
+
+	"covariantDerivative{}[]":{
+		"prefix":"covariantDerivative",
+		"body":[
+			"\\covariantDerivative{${1:vector field}}[${2:tensor field}]"
+		]
+	},
+
+
+	"exponential[]{}":{
+		"prefix":"exponential",
+		"body":[
+			"\\exponential[${2:scale%keyvals}]{${1:base}}"
+		]
+	},
+
+
+	"exponential[]{}()":{
+		"prefix":"exponential",
+		"body":[
+			"\\exponential[${2:scale%keyvals}]{${1:base}}(${3:arg})"
+		]
+	},
+
+
+	"geodesic<s>[]":{
+		"prefix":"geodesic<s>",
+		"body":[
+			"\\geodesic<s>[${1:scale}]"
+		]
+	},
+
+
+	"geodesic<s>[]()":{
+		"prefix":"geodesic<s>",
+		"body":[
+			"\\geodesic<s>[${1:scale}](${2:%<eval point%>})"
+		]
+	},
+
+
+	"geodesic<style>[]{}{}":{
+		"prefix":"geodesic<style>",
+		"body":[
+			"\\geodesic<style>[${3:scale}]{${1:t0}}{${2:t1}}"
+		]
+	},
+
+
+	"geodesic<style>[]{}{}()":{
+		"prefix":"geodesic<style>",
+		"body":[
+			"\\geodesic<style>[${3:scale}]{${1:t0}}{${2:t1}}(${4:eval point})"
+		]
+	},
+
+
+	"geodesic[]{}{}":{
+		"prefix":"geodesic",
+		"body":[
+			"\\geodesic[${3:scale}]{${1:t0}}{${2:t1}}"
+		]
+	},
+
+
+	"geodesic[]{}{}()":{
+		"prefix":"geodesic",
+		"body":[
+			"\\geodesic[${3:scale}]{${1:t0}}{${2:t1}}(${4:eval point})"
+		]
+	},
+
+
+	"geodesic||[]{}{}":{
+		"prefix":"geodesic",
+		"body":[
+			"\\geodesic|${4:symbol}|[${3:scale}]{${1:t0}}{${2:t1}}"
+		]
+	},
+
+
+	"geodesic||[]{}{}()":{
+		"prefix":"geodesic",
+		"body":[
+			"\\geodesic|${4:symbol}|[${3:scale}]{${1:t0}}{${2:t1}}(${5:%<eval point%>})"
+		]
+	},
+
+
+	"logarithm[]{}":{
+		"prefix":"logarithm",
+		"body":[
+			"\\logarithm[${2:scale%keyvals}]{${1:base}}"
+		]
+	},
+
+
+	"logarithm[]{}()":{
+		"prefix":"logarithm",
+		"body":[
+			"\\logarithm[${2:scale%keyvals}]{${1:base}}(${3:arg})"
+		]
+	},
+
+
+	"inverseRetract[]{}":{
+		"prefix":"inverseRetract",
+		"body":[
+			"\\inverseRetract[${2:scale%keyvals}]{${1:base}}"
+		]
+	},
+
+
+	"inverseRetract[]{}()":{
+		"prefix":"inverseRetract",
+		"body":[
+			"\\inverseRetract[${2:scale%keyvals}]{${1:base}}(${3:arg})"
+		]
+	},
+
+
+	"lie[]{}{}":{
+		"prefix":"lie",
+		"body":[
+			"\\lie[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"parallelTransport{}{}[]":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport{${1:start}}{${2:end}}[${3:sup}]"
+		]
+	},
+
+
+	"parallelTransport{}{}()[]":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport{${1:start}}{${2:end}}(${4:arg})[${3:sup}]"
+		]
+	},
+
+
+	"parallelTransport[]{}{}":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"parallelTransport[]{}{}()":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${4:arg})"
+		]
+	},
+
+
+	"parallelTransport[]{}{}[]":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}[${4:sup}]"
+		]
+	},
+
+
+	"parallelTransport[]{}{}()[]":{
+		"prefix":"parallelTransport",
+		"body":[
+			"\\parallelTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${5:arg})[${4:sup}]"
+		]
+	},
+
+
+	"parallelTransportDir{}{}[]":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir{${1:start}}{${2:dir}}[${3:sup}]"
+		]
+	},
+
+
+	"parallelTransportDir{}{}()[]":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir{${1:start}}{${2:dir}}(${4:arg})[${3:sup}]"
+		]
+	},
+
+
+	"parallelTransportDir[]{}{}":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}"
+		]
+	},
+
+
+	"parallelTransportDir[]{}{}()":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${4:arg})"
+		]
+	},
+
+
+	"parallelTransportDir[]{}{}[]":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}[${4:sup}]"
+		]
+	},
+
+
+	"parallelTransportDir[]{}{}()[]":{
+		"prefix":"parallelTransportDir",
+		"body":[
+			"\\parallelTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${5:arg})[${4:sup}]"
+		]
+	},
+
+
+	"retract[]{}":{
+		"prefix":"retract",
+		"body":[
+			"\\retract[${2:scale%keyvals}]{${1:base}}"
+		]
+	},
+
+
+	"retract[]{}()":{
+		"prefix":"retract",
+		"body":[
+			"\\retract[${2:scale%keyvals}]{${1:base}}(${3:arg})"
+		]
+	},
+
+
+	"riemannian{}{}[]":{
+		"prefix":"riemannian",
+		"body":[
+			"\\riemannian{${1:arg1}}{${2:arg2}}[${3:sub}]"
+		]
+	},
+
+
+	"riemannian[]{}{}":{
+		"prefix":"riemannian",
+		"body":[
+			"\\riemannian[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"riemannian[]{}{}[]":{
+		"prefix":"riemannian",
+		"body":[
+			"\\riemannian[${3:scale%keyvals}]{${1:arg1}}{${2:arg2}}[${4:sub}]"
+		]
+	},
+
+
+	"riemanniannorm{}[]":{
+		"prefix":"riemanniannorm",
+		"body":[
+			"\\riemanniannorm{${1:arg}}[${2:sub}]"
+		]
+	},
+
+
+	"riemanniannorm[]{}":{
+		"prefix":"riemanniannorm",
+		"body":[
+			"\\riemanniannorm[${2:scale%keyvals}]{${1:arg}}"
+		]
+	},
+
+
+	"riemanniannorm[]{}[]":{
+		"prefix":"riemanniannorm",
+		"body":[
+			"\\riemanniannorm[${2:scale%keyvals}]{${1:arg}}[${3:sub}]"
+		]
+	},
+
+
+	"secondCovariantDerivative{}{}[]":{
+		"prefix":"secondCovariantDerivative",
+		"body":[
+			"\\secondCovariantDerivative{${1:arg1}}{${2:arg2}}[${3:arg}]"
+		]
+	},
+
+
+	"tangentSpace{}[]":{
+		"prefix":"tangentSpace",
+		"body":[
+			"\\tangentSpace{${1:point}}[${2:manifold}]"
+		]
+	},
+
+
+	"tangentBundle[]":{
+		"prefix":"tangentBundle",
+		"body":[
+			"\\tangentBundle[${1:manifold}]"
+		]
+	},
+
+
+	"tensorBundle{}{}[]":{
+		"prefix":"tensorBundle",
+		"body":[
+			"\\tensorBundle{${1:arg1}}{${2:arg2}}[${3:manifold}]"
+		]
+	},
+
+
+	"tensorSpace{}{}[]":{
+		"prefix":"tensorSpace",
+		"body":[
+			"\\tensorSpace{${1:arg1}}{${2:arg2}}[${3:vector space}]"
+		]
+	},
+
+
+	"vectorTransport{}{}[]":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport{${1:start}}{${2:end}}[${3:sup}]"
+		]
+	},
+
+
+	"vectorTransport{}{}()[]":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport{${1:start}}{${2:end}}(${4:arg})[${3:sup}]"
+		]
+	},
+
+
+	"vectorTransport[]{}{}":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}"
+		]
+	},
+
+
+	"vectorTransport[]{}{}()":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${4:arg})"
+		]
+	},
+
+
+	"vectorTransport[]{}{}[]":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}[${4:sup}]"
+		]
+	},
+
+
+	"vectorTransport[]{}{}()[]":{
+		"prefix":"vectorTransport",
+		"body":[
+			"\\vectorTransport[${3:scale%keyvals}]{${1:start}}{${2:end}}(${5:arg})[${4:sup}]"
+		]
+	},
+
+
+	"vectorTransportDir{}{}[]":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir{${1:start}}{${2:dir}}[${3:sup}]"
@@ -801,7 +801,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir{}{}()[]":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir{${1:start}}{${2:dir}}(${4:arg})[${3:sup}]"
@@ -809,7 +809,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir[]{}{}":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}"
@@ -817,7 +817,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir[]{}{}()":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${4:arg})"
@@ -825,7 +825,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir[]{}{}[]":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}[${4:sup}]"
@@ -833,7 +833,7 @@
 	},
 
 
-	"vectorTransportDir":{
+	"vectorTransportDir[]{}{}()[]":{
 		"prefix":"vectorTransportDir",
 		"body":[
 			"\\vectorTransportDir[${3:scale%keyvals}]{${1:start}}{${2:dir}}(${5:arg})[${4:sup}]"

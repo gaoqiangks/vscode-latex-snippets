@@ -1,7 +1,7 @@
 {
 
 
-	"aksharStrLen":{
+	"aksharStrLen{}":{
 		"prefix":"aksharStrLen",
 		"body":[
 			"\\aksharStrLen{${1:tokens}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"aksharStrHead":{
+	"aksharStrHead{}":{
 		"prefix":"aksharStrHead",
 		"body":[
 			"\\aksharStrHead{${1:tokens}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"aksharStrTail":{
+	"aksharStrTail{}":{
 		"prefix":"aksharStrTail",
 		"body":[
 			"\\aksharStrTail{${1:tokens}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"aksharStrChar":{
+	"aksharStrChar{}{}":{
 		"prefix":"aksharStrChar",
 		"body":[
 			"\\aksharStrChar{${1:tokens}}{${2:n}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"aksharStrReplace":{
+	"aksharStrReplace{}{}{}":{
 		"prefix":"aksharStrReplace",
 		"body":[
 			"\\aksharStrReplace{${1:tokens1}}{${2:tokens2}}{${3:tokens3}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"aksharStrReplace*":{
-		"prefix":"aksharStrReplace*",
-		"body":[
-			"\\aksharStrReplace*{${1:tokens1}}{${2:tokens2}}{${3:tokens3}}"
-		]
-	},
-
-
-	"aksharStrRemove":{
+	"aksharStrRemove{}{}":{
 		"prefix":"aksharStrRemove",
 		"body":[
 			"\\aksharStrRemove{${1:tokens1}}{${2:tokens2}}"
@@ -57,8 +49,16 @@
 	},
 
 
-	"aksharStrRemove*":{
-		"prefix":"aksharStrRemove*",
+	"aksharStrReplace*{}{}{}":{
+		"prefix":"*aksharStrReplace",
+		"body":[
+			"\\aksharStrReplace*{${1:tokens1}}{${2:tokens2}}{${3:tokens3}}"
+		]
+	},
+
+
+	"aksharStrRemove*{}{}":{
+		"prefix":"*aksharStrRemove",
 		"body":[
 			"\\aksharStrRemove*{${1:tokens1}}{${2:tokens2}}"
 		]

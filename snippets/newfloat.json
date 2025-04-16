@@ -1,7 +1,7 @@
 {
 
 
-	"newfloatsetup":{
+	"newfloatsetup{}":{
 		"prefix":"newfloatsetup",
 		"body":[
 			"\\newfloatsetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"DeclareFloatingEnvironment":{
+	"DeclareFloatingEnvironment{}":{
 		"prefix":"DeclareFloatingEnvironment",
 		"body":[
 			"\\DeclareFloatingEnvironment{${1:envname}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"DeclareFloatingEnvironment":{
-		"prefix":"DeclareFloatingEnvironment",
-		"body":[
-			"\\DeclareFloatingEnvironment[${2:options%keyvals}]{${1:envname}}"
-		]
-	},
-
-
-	"SetupFloatingEnvironment":{
+	"SetupFloatingEnvironment{}{}":{
 		"prefix":"SetupFloatingEnvironment",
 		"body":[
 			"\\SetupFloatingEnvironment{${1:envname}}{${2:options%keyvals}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"ForEachFloatingEnvironment":{
+	"ForEachFloatingEnvironment{}":{
 		"prefix":"ForEachFloatingEnvironment",
 		"body":[
 			"\\ForEachFloatingEnvironment{${1:code}}"
@@ -41,10 +33,18 @@
 	},
 
 
-	"PrepareListOf":{
+	"PrepareListOf{}{}":{
 		"prefix":"PrepareListOf",
 		"body":[
 			"\\PrepareListOf{${1:envname}}{${2:code}}"
+		]
+	},
+
+
+	"DeclareFloatingEnvironment[]{}":{
+		"prefix":"DeclareFloatingEnvironment",
+		"body":[
+			"\\DeclareFloatingEnvironment[${2:options%keyvals}]{${1:envname}}"
 		]
 	}
 }

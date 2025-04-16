@@ -1,7 +1,7 @@
 {
 
 
-	"appendixref":{
+	"appendixref{}":{
 		"prefix":"appendixref",
 		"body":[
 			"\\appendixref{${1:labellist}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"chapterref":{
+	"chapterref{}":{
 		"prefix":"chapterref",
 		"body":[
 			"\\chapterref{${1:labellist}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"figureref":{
+	"figureref{}":{
 		"prefix":"figureref",
 		"body":[
 			"\\figureref{${1:labellist}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"footnoteref":{
+	"footnoteref{}":{
 		"prefix":"footnoteref",
 		"body":[
 			"\\footnoteref{${1:labellist}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"itemref":{
+	"itemref{}":{
 		"prefix":"itemref",
 		"body":[
 			"\\itemref{${1:labellist}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"paragraphref":{
+	"paragraphref{}":{
 		"prefix":"paragraphref",
 		"body":[
 			"\\paragraphref{${1:labellist}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"partref":{
+	"partref{}":{
 		"prefix":"partref",
 		"body":[
 			"\\partref{${1:labellist}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"sectionref":{
+	"sectionref{}":{
 		"prefix":"sectionref",
 		"body":[
 			"\\sectionref{${1:labellist}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"tableref":{
+	"tableref{}":{
 		"prefix":"tableref",
 		"body":[
 			"\\tableref{${1:labellist}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"equationref":{
+	"equationref{}":{
 		"prefix":"equationref",
 		"body":[
 			"\\equationref{${1:labellist}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"eqref":{
+	"eqref{}":{
 		"prefix":"eqref",
 		"body":[
 			"\\eqref{${1:label}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"refname":{
+	"refname{}{}{}":{
 		"prefix":"refname",
 		"body":[
 			"\\refname{${1:label type}}{${2:singular form%text}}{${3:plural form%text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"itemname":{
+	"itemname{}":{
 		"prefix":"itemname",
 		"body":[
 			"\\itemname{${1:label type}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"newtheorem":{
+	"newtheorem{}{}{}":{
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem{${1:envname}}{${2:singular form}}{${3:plural form}}"
@@ -113,7 +113,15 @@
 	},
 
 
-	"newtheorem":{
+	"eqname{}":{
+		"prefix":"eqname",
+		"body":[
+			"\\eqname{${1:name}}"
+		]
+	},
+
+
+	"newtheorem{}{}{}[]":{
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem{${1:envname}}{${2:singular form}}{${3:plural form}}[${4:within}]"
@@ -121,18 +129,10 @@
 	},
 
 
-	"newtheorem":{
+	"newtheorem{}{}[]{}":{
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem{${1:envname}}{${2:singular form}}[${4:numbered like}]{${3:plural form}}"
-		]
-	},
-
-
-	"eqname":{
-		"prefix":"eqname",
-		"body":[
-			"\\eqname{${1:name}}"
 		]
 	}
 }

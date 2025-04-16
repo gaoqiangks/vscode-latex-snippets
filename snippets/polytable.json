@@ -9,7 +9,7 @@
 	},
 
 
-	"defaultcolumn":{
+	"defaultcolumn{}":{
 		"prefix":"defaultcolumn",
 		"body":[
 			"\\defaultcolumn{${1:colspec}}"
@@ -17,18 +17,10 @@
 	},
 
 
-	"column":{
+	"column{}{}":{
 		"prefix":"column",
 		"body":[
 			"\\column{${1:column id}}{${2:spec}}"
-		]
-	},
-
-
-	"column":{
-		"prefix":"column",
-		"body":[
-			"\\column[${3:dimen%l}]{${1:column id}}{${2:spec}}"
 		]
 	},
 
@@ -41,22 +33,6 @@
 	},
 
 
-	">":{
-		"prefix":">",
-		"body":[
-			"\\>[${1:from id}]"
-		]
-	},
-
-
-	">":{
-		"prefix":">",
-		"body":[
-			"\\>[${1:from id}][${2:spec}]"
-		]
-	},
-
-
 	"<":{
 		"prefix":"<",
 		"body":[
@@ -65,15 +41,7 @@
 	},
 
 
-	"<":{
-		"prefix":"<",
-		"body":[
-			"\\<[${1:from id}]"
-		]
-	},
-
-
-	"fromto":{
+	"fromto{}{}{}":{
 		"prefix":"fromto",
 		"body":[
 			"\\fromto{${1:from id}}{${2:to id}}{${3:text}}"
@@ -89,26 +57,10 @@
 	},
 
 
-	"savecolumns":{
-		"prefix":"savecolumns",
-		"body":[
-			"\\savecolumns[${1:set id}]"
-		]
-	},
-
-
 	"restorecolumns":{
 		"prefix":"restorecolumns",
 		"body":[
 			"\\restorecolumns"
-		]
-	},
-
-
-	"restorecolumns":{
-		"prefix":"restorecolumns",
-		"body":[
-			"\\restorecolumns[${1:set id}]"
 		]
 	},
 
@@ -153,20 +105,58 @@
 	},
 
 
-	"nextline":{
-		"prefix":"nextline",
+	"column[]{}{}":{
+		"prefix":"column",
 		"body":[
-			"\\nextline[${1:dimen%l}]"
+			"\\column[${3:dimen%l}]{${1:column id}}{${2:spec}}"
 		]
 	},
 
 
-	"pmboxed":{
-		"prefix":"pmboxed",
+	">[]":{
+		"prefix":">",
 		"body":[
-			"\\begin{pmboxed}",
-			"\t$1",
-			"\\end{pmboxed}"
+			"\\>[${1:from id}]"
+		]
+	},
+
+
+	">[][]":{
+		"prefix":">",
+		"body":[
+			"\\>[${1:from id}][${2:spec}]"
+		]
+	},
+
+
+	"<[]":{
+		"prefix":"<",
+		"body":[
+			"\\<[${1:from id}]"
+		]
+	},
+
+
+	"savecolumns[]":{
+		"prefix":"savecolumns",
+		"body":[
+			"\\savecolumns[${1:set id}]"
+		]
+	},
+
+
+	"restorecolumns[]":{
+		"prefix":"restorecolumns",
+		"body":[
+			"\\restorecolumns[${1:set id}]"
+		]
+	},
+
+
+	"nextline[]":{
+		"prefix":"nextline",
+		"body":[
+			"\\nextline[${1:dimen%l}]"
 		]
 	},
 
@@ -175,28 +165,8 @@
 		"prefix":"pboxed",
 		"body":[
 			"\\begin{pboxed}",
-			"\t$1",
+				"\t$1",
 			"\\end{pboxed}"
-		]
-	},
-
-
-	"parray":{
-		"prefix":"parray",
-		"body":[
-			"\\begin{parray}",
-			"\t$1",
-			"\\end{parray}"
-		]
-	},
-
-
-	"ptabular":{
-		"prefix":"ptabular",
-		"body":[
-			"\\begin{ptabular}",
-			"\t$1",
-			"\\end{ptabular}"
 		]
 	},
 
@@ -205,8 +175,38 @@
 		"prefix":"ptboxed",
 		"body":[
 			"\\begin{ptboxed}",
-			"\t$1",
+				"\t$1",
 			"\\end{ptboxed}"
+		]
+	},
+
+
+	"pmboxed":{
+		"prefix":"pmboxed",
+		"body":[
+			"\\begin{pmboxed}",
+				"\t$1",
+			"\\end{pmboxed}"
+		]
+	},
+
+
+	"ptabular":{
+		"prefix":"ptabular",
+		"body":[
+			"\\begin{ptabular}",
+				"\t$1",
+			"\\end{ptabular}"
+		]
+	},
+
+
+	"parray":{
+		"prefix":"parray",
+		"body":[
+			"\\begin{parray}",
+				"\t$1",
+			"\\end{parray}"
 		]
 	}
 }

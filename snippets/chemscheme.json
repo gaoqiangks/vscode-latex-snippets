@@ -1,7 +1,7 @@
 {
 
 
-	"schemerefsub":{
+	"schemerefsub{}{}":{
 		"prefix":"schemerefsub",
 		"body":[
 			"\\schemerefsub{${1:label%keyvals}}{${2:sublabel}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"schemerefsub":{
-		"prefix":"schemerefsub",
-		"body":[
-			"\\schemerefsub[${3:marker}]{${1:label%keyvals}}{${2:sublabel}}"
-		]
-	},
-
-
-	"chemschemerefsub":{
+	"chemschemerefsub{}{}{}":{
 		"prefix":"chemschemerefsub",
 		"body":[
 			"\\chemschemerefsub{${1:marker}}{${2:label%keyvals}}{${3:sublabel}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"schemerefsub":{
+	"schemerefsub{}{}":{
 		"prefix":"schemerefsub",
 		"body":[
 			"\\schemerefsub{${1:label}}{${2:sublabel}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"schemerefsub":{
-		"prefix":"schemerefsub",
-		"body":[
-			"\\schemerefsub[${3:marker}]{${1:label}}{${2:sublabel}}"
-		]
-	},
-
-
-	"chemschemerefsub":{
+	"chemschemerefsub{}{}{}":{
 		"prefix":"chemschemerefsub",
 		"body":[
 			"\\chemschemerefsub{${1:marker}}{${2:label}}{${3:sublabel}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"schemeref":{
+	"schemeref{}":{
 		"prefix":"schemeref",
 		"body":[
 			"\\schemeref{${1:label%keyvals}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"schemeref":{
-		"prefix":"schemeref",
-		"body":[
-			"\\schemeref[${2:marker}]{${1:label%keyvals}}"
-		]
-	},
-
-
-	"chemschemeref":{
+	"chemschemeref{}{}":{
 		"prefix":"chemschemeref",
 		"body":[
 			"\\chemschemeref{${1:marker}}{${2:label%keyvals}}"
@@ -145,11 +121,45 @@
 	},
 
 
+	"schemerefsub[]{}{}":{
+		"prefix":"schemerefsub",
+		"body":[
+			"\\schemerefsub[${3:marker}]{${1:label%keyvals}}{${2:sublabel}}"
+		]
+	},
+
+
+	"schemerefsub[]{}{}":{
+		"prefix":"schemerefsub",
+		"body":[
+			"\\schemerefsub[${3:marker}]{${1:label}}{${2:sublabel}}"
+		]
+	},
+
+
+	"schemeref[]{}":{
+		"prefix":"schemeref",
+		"body":[
+			"\\schemeref[${2:marker}]{${1:label%keyvals}}"
+		]
+	},
+
+
 	"scheme":{
 		"prefix":"scheme",
 		"body":[
 			"\\begin{scheme}",
-			"\t$1",
+				"\t$1",
+			"\\end{scheme}"
+		]
+	},
+
+
+	"scheme":{
+		"prefix":"scheme",
+		"body":[
+			"\\begin{scheme}",
+				"\t$1",
 			"\\end{scheme}"
 		]
 	}

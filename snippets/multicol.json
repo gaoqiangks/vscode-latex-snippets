@@ -17,7 +17,7 @@
 	},
 
 
-	"docolaction":{
+	"docolaction{}{}{}":{
 		"prefix":"docolaction",
 		"body":[
 			"\\docolaction{${1:first}}{${2:middle}}{${3:last}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"setemergencystretch":{
+	"setemergencystretch{}{}":{
 		"prefix":"setemergencystretch",
 		"body":[
 			"\\setemergencystretch{${1:num of cols}}{${2:hsize}}"
@@ -146,10 +146,10 @@
 
 
 	"multicols*":{
-		"prefix":"multicols*",
+		"prefix":"multicols",
 		"body":[
 			"\\begin{multicols*}",
-			"\t$1",
+				"\t$1",
 			"\\end{multicols*}"
 		]
 	},
@@ -159,7 +159,47 @@
 		"prefix":"multicols",
 		"body":[
 			"\\begin{multicols}",
-			"\t$1",
+				"\t$1",
+			"\\end{multicols}"
+		]
+	},
+
+
+	"multicols*":{
+		"prefix":"multicols",
+		"body":[
+			"\\begin{multicols*}",
+				"\t$1",
+			"\\end{multicols*}"
+		]
+	},
+
+
+	"multicols*":{
+		"prefix":"multicols",
+		"body":[
+			"\\begin{multicols*}",
+				"\t$1",
+			"\\end{multicols*}"
+		]
+	},
+
+
+	"multicols":{
+		"prefix":"multicols",
+		"body":[
+			"\\begin{multicols}",
+				"\t$1",
+			"\\end{multicols}"
+		]
+	},
+
+
+	"multicols":{
+		"prefix":"multicols",
+		"body":[
+			"\\begin{multicols}",
+				"\t$1",
 			"\\end{multicols}"
 		]
 	}

@@ -1,15 +1,7 @@
 {
 
 
-	"bottomcaption":{
-		"prefix":"bottomcaption",
-		"body":[
-			"\\bottomcaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"bottomcaption":{
+	"bottomcaption{}":{
 		"prefix":"bottomcaption",
 		"body":[
 			"\\bottomcaption{${1:text}}"
@@ -17,7 +9,7 @@
 	},
 
 
-	"setSTheight":{
+	"setSTheight{}":{
 		"prefix":"setSTheight",
 		"body":[
 			"\\setSTheight{${1:value}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"shrinkheight":{
+	"shrinkheight{}":{
 		"prefix":"shrinkheight",
 		"body":[
 			"\\shrinkheight{${1:length}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"tablecaption":{
-		"prefix":"tablecaption",
-		"body":[
-			"\\tablecaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"tablecaption":{
+	"tablecaption{}":{
 		"prefix":"tablecaption",
 		"body":[
 			"\\tablecaption{${1:text}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"tablefirsthead":{
+	"tablefirsthead{}":{
 		"prefix":"tablefirsthead",
 		"body":[
 			"\\tablefirsthead{${1:text}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"tablehead":{
+	"tablehead{}":{
 		"prefix":"tablehead",
 		"body":[
 			"\\tablehead{${1:text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"tablelasttail":{
+	"tablelasttail{}":{
 		"prefix":"tablelasttail",
 		"body":[
 			"\\tablelasttail{${1:text}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"tabletail":{
+	"tabletail{}":{
 		"prefix":"tabletail",
 		"body":[
 			"\\tabletail{${1:text}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"topcaption":{
-		"prefix":"topcaption",
-		"body":[
-			"\\topcaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"topcaption":{
+	"topcaption{}":{
 		"prefix":"topcaption",
 		"body":[
 			"\\topcaption{${1:text}}"
@@ -113,21 +89,45 @@
 	},
 
 
+	"bottomcaption[]{}":{
+		"prefix":"bottomcaption",
+		"body":[
+			"\\bottomcaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
+	"tablecaption[]{}":{
+		"prefix":"tablecaption",
+		"body":[
+			"\\tablecaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
+	"topcaption[]{}":{
+		"prefix":"topcaption",
+		"body":[
+			"\\topcaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
 	"mpsupertabular":{
 		"prefix":"mpsupertabular",
 		"body":[
 			"\\begin{mpsupertabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpsupertabular}"
 		]
 	},
 
 
 	"mpsupertabular*":{
-		"prefix":"mpsupertabular*",
+		"prefix":"mpsupertabular",
 		"body":[
 			"\\begin{mpsupertabular*}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpsupertabular*}"
 		]
 	},
@@ -137,17 +137,17 @@
 		"prefix":"supertabular",
 		"body":[
 			"\\begin{supertabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{supertabular}"
 		]
 	},
 
 
 	"supertabular*":{
-		"prefix":"supertabular*",
+		"prefix":"supertabular",
 		"body":[
 			"\\begin{supertabular*}",
-			"\t$1",
+				"\t$1",
 			"\\end{supertabular*}"
 		]
 	}

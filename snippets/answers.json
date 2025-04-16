@@ -1,7 +1,7 @@
 {
 
 
-	"Newassociation":{
+	"Newassociation{}{}{}":{
 		"prefix":"Newassociation",
 		"body":[
 			"\\Newassociation{${1:envname}}{${2:name}}{${3:file}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Opensolutionfile":{
+	"Opensolutionfile{}":{
 		"prefix":"Opensolutionfile",
 		"body":[
 			"\\Opensolutionfile{${1:file}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"Opensolutionfile":{
-		"prefix":"Opensolutionfile",
-		"body":[
-			"\\Opensolutionfile{${1:file}}[${2:prefix}]"
-		]
-	},
-
-
-	"Closesolutionfile":{
+	"Closesolutionfile{}":{
 		"prefix":"Closesolutionfile",
 		"body":[
 			"\\Closesolutionfile{${1:file}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"Writetofile":{
+	"Writetofile{}{}":{
 		"prefix":"Writetofile",
 		"body":[
 			"\\Writetofile{${1:file}}{${2:text}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"Readsolutionfile":{
+	"Readsolutionfile{}":{
 		"prefix":"Readsolutionfile",
 		"body":[
 			"\\Readsolutionfile{${1:file}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"Ifanswerfiles":{
+	"Ifanswerfiles{}{}":{
 		"prefix":"Ifanswerfiles",
 		"body":[
 			"\\Ifanswerfiles{${1:true}}{${2:false}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"Iffileundefined":{
+	"Iffileundefined{}{}{}":{
 		"prefix":"Iffileundefined",
 		"body":[
 			"\\Iffileundefined{${1:file}}{${2:true}}{${3:false}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"Ifopen":{
+	"Ifopen{}{}{}":{
 		"prefix":"Ifopen",
 		"body":[
 			"\\Ifopen{${1:file}}{${2:true}}{${3:false}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"newsolution":{
+	"newsolution{}":{
 		"prefix":"newsolution",
 		"body":[
 			"\\newsolution{${1:name}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"solutionstyle":{
+	"solutionstyle{}":{
 		"prefix":"solutionstyle",
 		"body":[
 			"\\solutionstyle{${1:text}}"
@@ -137,11 +129,19 @@
 	},
 
 
+	"Opensolutionfile{}[]":{
+		"prefix":"Opensolutionfile",
+		"body":[
+			"\\Opensolutionfile{${1:file}}[${2:prefix}]"
+		]
+	},
+
+
 	"Filesave":{
 		"prefix":"Filesave",
 		"body":[
 			"\\begin{Filesave}",
-			"\t$1",
+				"\t$1",
 			"\\end{Filesave}"
 		]
 	}

@@ -1,15 +1,7 @@
 {
 
 
-	"listfiles":{
-		"prefix":"listfiles",
-		"body":[
-			"\\listfiles[${1:number}]"
-		]
-	},
-
-
-	"MaxLengthEmptyList":{
+	"MaxLengthEmptyList{}":{
 		"prefix":"MaxLengthEmptyList",
 		"body":[
 			"\\MaxLengthEmptyList{${1:⟨digit⟩⟨digit⟩}}"
@@ -17,18 +9,26 @@
 	},
 
 
-	"MaxLengthEmptyList":{
-		"prefix":"MaxLengthEmptyList",
+	"SetLongNameFileListChars{}":{
+		"prefix":"SetLongNameFileListChars",
 		"body":[
-			"\\MaxLengthEmptyList{${1:⟨digit⟩⟨digit⟩}}[${2:read-again-files}]"
+			"\\SetLongNameFileListChars{${1:number}}"
 		]
 	},
 
 
-	"SetLongNameFileListChars":{
-		"prefix":"SetLongNameFileListChars",
+	"listfiles[]":{
+		"prefix":"listfiles",
 		"body":[
-			"\\SetLongNameFileListChars{${1:number}}"
+			"\\listfiles[${1:number}]"
+		]
+	},
+
+
+	"MaxLengthEmptyList{}[]":{
+		"prefix":"MaxLengthEmptyList",
+		"body":[
+			"\\MaxLengthEmptyList{${1:⟨digit⟩⟨digit⟩}}[${2:read-again-files}]"
 		]
 	}
 }

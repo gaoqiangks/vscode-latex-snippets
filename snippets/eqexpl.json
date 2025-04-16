@@ -1,7 +1,7 @@
 {
 
 
-	"eqexplSetSpace":{
+	"eqexplSetSpace{}":{
 		"prefix":"eqexplSetSpace",
 		"body":[
 			"\\eqexplSetSpace{${1:space%l}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"eqexplSetIntro":{
+	"eqexplSetIntro{}":{
 		"prefix":"eqexplSetIntro",
 		"body":[
 			"\\eqexplSetIntro{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"eqexplSetDelim":{
+	"eqexplSetDelim{}":{
 		"prefix":"eqexplSetDelim",
 		"body":[
 			"\\eqexplSetDelim{${1:symbol}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"eqexplSetItemWidth":{
+	"eqexplSetItemWidth{}":{
 		"prefix":"eqexplSetItemWidth",
 		"body":[
 			"\\eqexplSetItemWidth{${1:width}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"eqexplSetItemAlign":{
+	"eqexplSetItemAlign{}":{
 		"prefix":"eqexplSetItemAlign",
 		"body":[
 			"\\eqexplSetItemAlign{${1:align%keyvals}}"
@@ -41,18 +41,10 @@
 	},
 
 
-	"item":{
+	"item{}":{
 		"prefix":"item",
 		"body":[
 			"\\item{${1:label}}"
-		]
-	},
-
-
-	"item":{
-		"prefix":"item",
-		"body":[
-			"\\item{${1:label}}[${2:symbol}]"
 		]
 	},
 
@@ -113,11 +105,29 @@
 	},
 
 
+	"item{}[]":{
+		"prefix":"item",
+		"body":[
+			"\\item{${1:label}}[${2:symbol}]"
+		]
+	},
+
+
 	"eqexpl":{
 		"prefix":"eqexpl",
 		"body":[
 			"\\begin{eqexpl}",
-			"\t$1",
+				"\t$1",
+			"\\end{eqexpl}"
+		]
+	},
+
+
+	"eqexpl":{
+		"prefix":"eqexpl",
+		"body":[
+			"\\begin{eqexpl}",
+				"\t$1",
 			"\\end{eqexpl}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"pbox":{
+	"pbox{}{}":{
 		"prefix":"pbox",
 		"body":[
 			"\\pbox{${1:width}}{${2:contents%text}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${3:position}]{${1:width}}{${2:contents%text}}"
-		]
-	},
-
-
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${3:position}][${4:height}]{${1:width}}{${2:contents%text}}"
-		]
-	},
-
-
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${3:position}][${4:height}][${5:inner-pos}]{${1:width}}{${2:contents%text}}"
-		]
-	},
-
-
-	"settominwidth":{
+	"settominwidth{}{}":{
 		"prefix":"settominwidth",
 		"body":[
 			"\\settominwidth{${1:cmd}}{${2:text}}"
@@ -41,18 +17,42 @@
 	},
 
 
-	"settominwidth":{
-		"prefix":"settominwidth",
+	"widthofpbox{}":{
+		"prefix":"widthofpbox",
 		"body":[
-			"\\settominwidth[${3:max-width}]{${1:cmd}}{${2:text}}"
+			"\\widthofpbox{${1:text}}"
 		]
 	},
 
 
-	"widthofpbox":{
-		"prefix":"widthofpbox",
+	"pbox[]{}{}":{
+		"prefix":"pbox",
 		"body":[
-			"\\widthofpbox{${1:text}}"
+			"\\pbox[${3:position}]{${1:width}}{${2:contents%text}}"
+		]
+	},
+
+
+	"pbox[][]{}{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox[${3:position}][${4:height}]{${1:width}}{${2:contents%text}}"
+		]
+	},
+
+
+	"pbox[][][]{}{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox[${3:position}][${4:height}][${5:inner-pos}]{${1:width}}{${2:contents%text}}"
+		]
+	},
+
+
+	"settominwidth[]{}{}":{
+		"prefix":"settominwidth",
+		"body":[
+			"\\settominwidth[${3:max-width}]{${1:cmd}}{${2:text}}"
 		]
 	}
 }

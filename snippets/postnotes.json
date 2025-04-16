@@ -1,7 +1,7 @@
 {
 
 
-	"postnote":{
+	"postnote{}":{
 		"prefix":"postnote",
 		"body":[
 			"\\postnote{${1:text}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"postnote":{
-		"prefix":"postnote",
-		"body":[
-			"\\postnote[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"postnotesection":{
+	"postnotesection{}":{
 		"prefix":"postnotesection",
 		"body":[
 			"\\postnotesection{${1:text}}"
-		]
-	},
-
-
-	"postnotesection":{
-		"prefix":"postnotesection",
-		"body":[
-			"\\postnotesection[${2:options%keyvals}]{${1:text}}"
 		]
 	},
 
@@ -41,7 +25,7 @@
 	},
 
 
-	"postnoteref":{
+	"postnoteref{}":{
 		"prefix":"postnoteref",
 		"body":[
 			"\\postnoteref{${1:label}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"postnoteref*":{
-		"prefix":"postnoteref*",
-		"body":[
-			"\\postnoteref*{${1:label}}"
-		]
-	},
-
-
-	"postnotezref":{
+	"postnotezref{}":{
 		"prefix":"postnotezref",
 		"body":[
 			"\\postnotezref{${1:label}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"postnotezref*":{
-		"prefix":"postnotezref*",
-		"body":[
-			"\\postnotezref*{${1:label}}"
-		]
-	},
-
-
-	"postnotesetup":{
+	"postnotesetup{}":{
 		"prefix":"postnotesetup",
 		"body":[
 			"\\postnotesetup{${1:options%keyvals}}"
@@ -277,6 +245,38 @@
 		"prefix":"thepostnotetext",
 		"body":[
 			"\\thepostnotetext"
+		]
+	},
+
+
+	"postnoteref*{}":{
+		"prefix":"*postnoteref",
+		"body":[
+			"\\postnoteref*{${1:label}}"
+		]
+	},
+
+
+	"postnotezref*{}":{
+		"prefix":"*postnotezref",
+		"body":[
+			"\\postnotezref*{${1:label}}"
+		]
+	},
+
+
+	"postnote[]{}":{
+		"prefix":"postnote",
+		"body":[
+			"\\postnote[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"postnotesection[]{}":{
+		"prefix":"postnotesection",
+		"body":[
+			"\\postnotesection[${2:options%keyvals}]{${1:text}}"
 		]
 	}
 }

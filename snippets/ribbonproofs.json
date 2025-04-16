@@ -1,7 +1,7 @@
 {
 
 
-	"com":{
+	"com{}":{
 		"prefix":"com",
 		"body":[
 			"\\com{${1:text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"com":{
-		"prefix":"com",
-		"body":[
-			"\\com[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"jus":{
+	"jus{}":{
 		"prefix":"jus",
 		"body":[
 			"\\jus{${1:text}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"jus":{
-		"prefix":"jus",
-		"body":[
-			"\\jus[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"startblock":{
+	"startblock{}":{
 		"prefix":"startblock",
 		"body":[
 			"\\startblock{${1:text}}"
@@ -41,26 +25,10 @@
 	},
 
 
-	"startblock":{
-		"prefix":"startblock",
-		"body":[
-			"\\startblock[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"finishblock":{
+	"finishblock{}":{
 		"prefix":"finishblock",
 		"body":[
 			"\\finishblock{${1:text}}"
-		]
-	},
-
-
-	"finishblock":{
-		"prefix":"finishblock",
-		"body":[
-			"\\finishblock[${2:options%keyvals}]{${1:text}}"
 		]
 	},
 
@@ -73,7 +41,7 @@
 	},
 
 
-	"continueblock":{
+	"continueblock{}":{
 		"prefix":"continueblock",
 		"body":[
 			"\\continueblock{${1:text}}"
@@ -81,15 +49,7 @@
 	},
 
 
-	"continueblock":{
-		"prefix":"continueblock",
-		"body":[
-			"\\continueblock[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"moveribbons":{
+	"moveribbons{}":{
 		"prefix":"moveribbons",
 		"body":[
 			"\\moveribbons{${1:ribbon1,ribbon2,...}}"
@@ -97,7 +57,7 @@
 	},
 
 
-	"swapribbons":{
+	"swapribbons{}{}":{
 		"prefix":"swapribbons",
 		"body":[
 			"\\swapribbons{${1:name1,name2,...}}{${2:name'1,name'2,...}}"
@@ -105,7 +65,7 @@
 	},
 
 
-	"moveboxes":{
+	"moveboxes{}":{
 		"prefix":"moveboxes",
 		"body":[
 			"\\moveboxes{${1:box1,box2,...}}"
@@ -113,7 +73,7 @@
 	},
 
 
-	"extendboxes":{
+	"extendboxes{}":{
 		"prefix":"extendboxes",
 		"body":[
 			"\\extendboxes{${1:box1,box2,...}}"
@@ -297,11 +257,61 @@
 	},
 
 
+	"com[]{}":{
+		"prefix":"com",
+		"body":[
+			"\\com[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"jus[]{}":{
+		"prefix":"jus",
+		"body":[
+			"\\jus[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"startblock[]{}":{
+		"prefix":"startblock",
+		"body":[
+			"\\startblock[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"finishblock[]{}":{
+		"prefix":"finishblock",
+		"body":[
+			"\\finishblock[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"continueblock[]{}":{
+		"prefix":"continueblock",
+		"body":[
+			"\\continueblock[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
 	"ribbonproof":{
 		"prefix":"ribbonproof",
 		"body":[
 			"\\begin{ribbonproof}",
-			"\t$1",
+				"\t$1",
+			"\\end{ribbonproof}"
+		]
+	},
+
+
+	"ribbonproof":{
+		"prefix":"ribbonproof",
+		"body":[
+			"\\begin{ribbonproof}",
+				"\t$1",
 			"\\end{ribbonproof}"
 		]
 	}

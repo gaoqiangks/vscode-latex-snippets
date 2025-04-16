@@ -1,7 +1,7 @@
 {
 
 
-	"set":{
+	"set{}{}":{
 		"prefix":"set",
 		"body":[
 			"\\set{${1:attribute%specialDef}}{${2:value}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"get":{
+	"get{}":{
 		"prefix":"get",
 		"body":[
 			"\\get{${1:attribute%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"mn":{
+	"mn{}":{
 		"prefix":"mn",
 		"body":[
 			"\\mn{${1:keyvals}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"alt":{
+	"alt{}":{
 		"prefix":"alt",
 		"body":[
 			"\\alt{${1:term%text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"deprecated":{
+	"deprecated{}":{
 		"prefix":"deprecated",
 		"body":[
 			"\\deprecated{${1:term%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"domain":{
+	"domain{}":{
 		"prefix":"domain",
 		"body":[
 			"\\domain{${1:domain%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"mncite":{
+	"mncite{}":{
 		"prefix":"mncite",
 		"body":[
 			"\\mncite{${1:key}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"mncite":{
+	"mncite[]{}":{
 		"prefix":"mncite",
 		"body":[
 			"\\mncite[${2:add. text%text}]{${1:key}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"mncite":{
+	"mncite{}[]":{
 		"prefix":"mncite",
 		"body":[
 			"\\mncite{${1:key}}[${2:localities}]"
@@ -73,30 +73,10 @@
 	},
 
 
-	"mncite":{
+	"mncite[]{}[]":{
 		"prefix":"mncite",
 		"body":[
 			"\\mncite[${2:add. text%text}]{${1:key}}[${3:localities}]"
-		]
-	},
-
-
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\begin{key}",
-			"\t$1",
-			"\\end{key}"
-		]
-	},
-
-
-	"specification":{
-		"prefix":"specification",
-		"body":[
-			"\\begin{specification}",
-			"\t$1",
-			"\\end{specification}"
 		]
 	},
 
@@ -105,18 +85,48 @@
 		"prefix":"example",
 		"body":[
 			"\\begin{example}",
-			"\t$1",
+				"\t$1",
 			"\\end{example}"
 		]
 	},
 
 
-	"permission":{
-		"prefix":"permission",
+	"note":{
+		"prefix":"note",
 		"body":[
-			"\\begin{permission}",
-			"\t$1",
-			"\\end{permission}"
+			"\\begin{note}",
+				"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"source":{
+		"prefix":"source",
+		"body":[
+			"\\begin{source}",
+				"\t$1",
+			"\\end{source}"
+		]
+	},
+
+
+	"key":{
+		"prefix":"key",
+		"body":[
+			"\\begin{key}",
+				"\t$1",
+			"\\end{key}"
+		]
+	},
+
+
+	"requirement":{
+		"prefix":"requirement",
+		"body":[
+			"\\begin{requirement}",
+				"\t$1",
+			"\\end{requirement}"
 		]
 	},
 
@@ -125,18 +135,58 @@
 		"prefix":"recommendation",
 		"body":[
 			"\\begin{recommendation}",
-			"\t$1",
+				"\t$1",
 			"\\end{recommendation}"
 		]
 	},
 
 
-	"warning":{
-		"prefix":"warning",
+	"permission":{
+		"prefix":"permission",
 		"body":[
-			"\\begin{warning}",
-			"\t$1",
-			"\\end{warning}"
+			"\\begin{permission}",
+				"\t$1",
+			"\\end{permission}"
+		]
+	},
+
+
+	"specification":{
+		"prefix":"specification",
+		"body":[
+			"\\begin{specification}",
+				"\t$1",
+			"\\end{specification}"
+		]
+	},
+
+
+	"verification":{
+		"prefix":"verification",
+		"body":[
+			"\\begin{verification}",
+				"\t$1",
+			"\\end{verification}"
+		]
+	},
+
+
+	"import":{
+		"prefix":"import",
+		"body":[
+			"\\begin{import}",
+				"\t$1",
+			"\\end{import}"
+		]
+	},
+
+
+	"tip":{
+		"prefix":"tip",
+		"body":[
+			"\\begin{tip}",
+				"\t$1",
+			"\\end{tip}"
 		]
 	},
 
@@ -145,7 +195,7 @@
 		"prefix":"important",
 		"body":[
 			"\\begin{important}",
-			"\t$1",
+				"\t$1",
 			"\\end{important}"
 		]
 	},
@@ -155,68 +205,18 @@
 		"prefix":"caution",
 		"body":[
 			"\\begin{caution}",
-			"\t$1",
+				"\t$1",
 			"\\end{caution}"
 		]
 	},
 
 
-	"source":{
-		"prefix":"source",
+	"warning":{
+		"prefix":"warning",
 		"body":[
-			"\\begin{source}",
-			"\t$1",
-			"\\end{source}"
-		]
-	},
-
-
-	"tip":{
-		"prefix":"tip",
-		"body":[
-			"\\begin{tip}",
-			"\t$1",
-			"\\end{tip}"
-		]
-	},
-
-
-	"import":{
-		"prefix":"import",
-		"body":[
-			"\\begin{import}",
-			"\t$1",
-			"\\end{import}"
-		]
-	},
-
-
-	"verification":{
-		"prefix":"verification",
-		"body":[
-			"\\begin{verification}",
-			"\t$1",
-			"\\end{verification}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\begin{note}",
-			"\t$1",
-			"\\end{note}"
-		]
-	},
-
-
-	"requirement":{
-		"prefix":"requirement",
-		"body":[
-			"\\begin{requirement}",
-			"\t$1",
-			"\\end{requirement}"
+			"\\begin{warning}",
+				"\t$1",
+			"\\end{warning}"
 		]
 	}
 }

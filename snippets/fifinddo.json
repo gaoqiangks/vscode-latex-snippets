@@ -9,7 +9,7 @@
 	},
 
 
-	"SetPatternCodes":{
+	"SetPatternCodes{}":{
 		"prefix":"SetPatternCodes",
 		"body":[
 			"\\SetPatternCodes{${1:commands}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"Delimiters":{
+	"Delimiters{}{}":{
 		"prefix":"Delimiters",
 		"body":[
 			"\\Delimiters{${1:delim1}}{${2:delim2}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"ResultFile":{
+	"ResultFile{}":{
 		"prefix":"ResultFile",
 		"body":[
 			"\\ResultFile{${1:output}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"WriteResult":{
+	"WriteResult{}":{
 		"prefix":"WriteResult",
 		"body":[
 			"\\WriteResult{${1:balanced}}"
@@ -97,18 +97,10 @@
 	},
 
 
-	"ProcessFileWith":{
+	"ProcessFileWith{}{}":{
 		"prefix":"ProcessFileWith",
 		"body":[
 			"\\ProcessFileWith{${1:file}}{${2:loop-body}}"
-		]
-	},
-
-
-	"ProcessFileWith":{
-		"prefix":"ProcessFileWith",
-		"body":[
-			"\\ProcessFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
 		]
 	},
 
@@ -121,34 +113,10 @@
 	},
 
 
-	"CopyFile":{
+	"CopyFile{}":{
 		"prefix":"CopyFile",
 		"body":[
 			"\\CopyFile{${1:file}}"
-		]
-	},
-
-
-	"CopyFile":{
-		"prefix":"CopyFile",
-		"body":[
-			"\\CopyFile[${2:changes}]{${1:file}}"
-		]
-	},
-
-
-	"CopyFile*":{
-		"prefix":"CopyFile*",
-		"body":[
-			"\\CopyFile*{${1:file}}"
-		]
-	},
-
-
-	"CopyFile*":{
-		"prefix":"CopyFile*",
-		"body":[
-			"\\CopyFile*[${2:changes}]{${1:file}}"
 		]
 	},
 
@@ -185,7 +153,7 @@
 	},
 
 
-	"ProcessFinalFileWith":{
+	"ProcessFinalFileWith{}{}":{
 		"prefix":"ProcessFinalFileWith",
 		"body":[
 			"\\ProcessFinalFileWith{${1:file}}{${2:loop-body}}"
@@ -193,26 +161,10 @@
 	},
 
 
-	"ProcessFinalFileWith":{
-		"prefix":"ProcessFinalFileWith",
-		"body":[
-			"\\ProcessFinalFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
-		]
-	},
-
-
-	"StartFDsetup":{
+	"StartFDsetup{}{}":{
 		"prefix":"StartFDsetup",
 		"body":[
 			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}"
-		]
-	},
-
-
-	"StartFDsetup":{
-		"prefix":"StartFDsetup",
-		"body":[
-			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}[${3:changes}]"
 		]
 	},
 
@@ -225,7 +177,7 @@
 	},
 
 
-	"MakeSetupCommand":{
+	"MakeSetupCommand{}{}{}":{
 		"prefix":"MakeSetupCommand",
 		"body":[
 			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}{${3:action}}"
@@ -233,15 +185,7 @@
 	},
 
 
-	"MakeSetupCommand":{
-		"prefix":"MakeSetupCommand",
-		"body":[
-			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}[${4:args}]{${3:action}}"
-		]
-	},
-
-
-	"MakeSubstringConditional":{
+	"MakeSubstringConditional{}{}":{
 		"prefix":"MakeSubstringConditional",
 		"body":[
 			"\\MakeSubstringConditional{${1:id}}{${2:pattern}}"
@@ -249,26 +193,10 @@
 	},
 
 
-	"MakeSubstringConditional":{
-		"prefix":"MakeSubstringConditional",
-		"body":[
-			"\\MakeSubstringConditional{${1:id}}[${3:changes}]{${2:pattern}}"
-		]
-	},
-
-
-	"MakeSetupSubstringCondition":{
+	"MakeSetupSubstringCondition{}{}{}":{
 		"prefix":"MakeSetupSubstringCondition",
 		"body":[
 			"\\MakeSetupSubstringCondition{${1:id}}{${2:pattern}}{${3:more-args}}"
-		]
-	},
-
-
-	"MakeSetupSubstringCondition":{
-		"prefix":"MakeSetupSubstringCondition",
-		"body":[
-			"\\MakeSetupSubstringCondition{${1:id}}[${4:changes}]{${2:pattern}}{${3:more-args}}"
 		]
 	},
 
@@ -281,7 +209,7 @@
 	},
 
 
-	"TildeGobbles":{
+	"TildeGobbles{}":{
 		"prefix":"TildeGobbles",
 		"body":[
 			"\\TildeGobbles{${1:arg}}"
@@ -297,7 +225,7 @@
 	},
 
 
-	"RemoveDummyPatternArg":{
+	"RemoveDummyPatternArg{}{}":{
 		"prefix":"RemoveDummyPatternArg",
 		"body":[
 			"\\RemoveDummyPatternArg{${1:macro}}{${2:arg}}"
@@ -313,7 +241,7 @@
 	},
 
 
-	"RemoveTildeArg":{
+	"RemoveTildeArg{}{}":{
 		"prefix":"RemoveTildeArg",
 		"body":[
 			"\\RemoveTildeArg{${1:macro}}{${2:arg}}"
@@ -337,7 +265,7 @@
 	},
 
 
-	"ProcessStringWith":{
+	"ProcessStringWith{}{}":{
 		"prefix":"ProcessStringWith",
 		"body":[
 			"\\ProcessStringWith{${1:target-string}}{${2:id}}"
@@ -345,7 +273,7 @@
 	},
 
 
-	"ProcessExpandedWith":{
+	"ProcessExpandedWith{}{}":{
 		"prefix":"ProcessExpandedWith",
 		"body":[
 			"\\ProcessExpandedWith{${1:string-macro}}{${2:id}}"
@@ -353,7 +281,7 @@
 	},
 
 
-	"ProcessInputWith":{
+	"ProcessInputWith{}":{
 		"prefix":"ProcessInputWith",
 		"body":[
 			"\\ProcessInputWith{${1:id}}"
@@ -361,7 +289,7 @@
 	},
 
 
-	"CopyFDconditionFromTo":{
+	"CopyFDconditionFromTo{}{}":{
 		"prefix":"CopyFDconditionFromTo",
 		"body":[
 			"\\CopyFDconditionFromTo{${1:id1}}{${2:id2}}"
@@ -369,7 +297,7 @@
 	},
 
 
-	"IfFDempty":{
+	"IfFDempty{}{}{}":{
 		"prefix":"IfFDempty",
 		"body":[
 			"\\IfFDempty{${1:arg}}{${2:when-empty}}{${3:when-not-empty}}"
@@ -377,7 +305,7 @@
 	},
 
 
-	"IfFDinputEmpty":{
+	"IfFDinputEmpty{}{}":{
 		"prefix":"IfFDinputEmpty",
 		"body":[
 			"\\IfFDinputEmpty{${1:when-empty}}{${2:when-not-empty}}"
@@ -385,7 +313,7 @@
 	},
 
 
-	"IfFDdollar":{
+	"IfFDdollar{}{}{}":{
 		"prefix":"IfFDdollar",
 		"body":[
 			"\\IfFDdollar{${1:arg}}{${2:when-dollar}}{${3:when-not-dollar}}"
@@ -393,7 +321,7 @@
 	},
 
 
-	"IfFDpreviousInputEmpty":{
+	"IfFDpreviousInputEmpty{}{}":{
 		"prefix":"IfFDpreviousInputEmpty",
 		"body":[
 			"\\IfFDpreviousInputEmpty{${1:when-empty}}{${2:when-not-empty}}"
@@ -417,7 +345,7 @@
 	},
 
 
-	"IfInputLine":{
+	"IfInputLine{}{}{}":{
 		"prefix":"IfInputLine",
 		"body":[
 			"\\IfInputLine{${1:<relation><${4:number}>}}{${2:true}}{${3:false}}"
@@ -425,7 +353,7 @@
 	},
 
 
-	"MakeExpandableAllReplacer":{
+	"MakeExpandableAllReplacer{}{}{}{}":{
 		"prefix":"MakeExpandableAllReplacer",
 		"body":[
 			"\\MakeExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}{${4:id-next}}"
@@ -433,26 +361,10 @@
 	},
 
 
-	"MakeExpandableAllReplacer":{
-		"prefix":"MakeExpandableAllReplacer",
-		"body":[
-			"\\MakeExpandableAllReplacer{${1:id}}[${5:changes}]{${2:find}}{${3:replace}}{${4:id-next}}"
-		]
-	},
-
-
-	"PrependExpandableAllReplacer":{
+	"PrependExpandableAllReplacer{}{}{}":{
 		"prefix":"PrependExpandableAllReplacer",
 		"body":[
 			"\\PrependExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}"
-		]
-	},
-
-
-	"PrependExpandableAllReplacer":{
-		"prefix":"PrependExpandableAllReplacer",
-		"body":[
-			"\\PrependExpandableAllReplacer{${1:id}}[${4:changes}]{${2:find}}{${3:replace}}"
 		]
 	},
 
@@ -465,7 +377,7 @@
 	},
 
 
-	"SetCorrectHookJob":{
+	"SetCorrectHookJob{}":{
 		"prefix":"SetCorrectHookJob",
 		"body":[
 			"\\SetCorrectHookJob{${1:job-id}}"
@@ -473,7 +385,7 @@
 	},
 
 
-	"MakeDocCorrectHook":{
+	"MakeDocCorrectHook{}":{
 		"prefix":"MakeDocCorrectHook",
 		"body":[
 			"\\MakeDocCorrectHook{${1:string}}"
@@ -497,7 +409,7 @@
 	},
 
 
-	"ApplySubstringConditional":{
+	"ApplySubstringConditional{}":{
 		"prefix":"ApplySubstringConditional",
 		"body":[
 			"\\ApplySubstringConditional{${1:id}}"
@@ -505,7 +417,7 @@
 	},
 
 
-	"ApplySubstringConditionalToExpanded":{
+	"ApplySubstringConditionalToExpanded{}":{
 		"prefix":"ApplySubstringConditionalToExpanded",
 		"body":[
 			"\\ApplySubstringConditionalToExpanded{${1:id}}"
@@ -513,10 +425,98 @@
 	},
 
 
-	"ApplySubstringConditionalToInputString":{
+	"ApplySubstringConditionalToInputString{}":{
 		"prefix":"ApplySubstringConditionalToInputString",
 		"body":[
 			"\\ApplySubstringConditionalToInputString{${1:id}}"
+		]
+	},
+
+
+	"CopyFile*{}":{
+		"prefix":"*CopyFile",
+		"body":[
+			"\\CopyFile*{${1:file}}"
+		]
+	},
+
+
+	"CopyFile*[]{}":{
+		"prefix":"*CopyFile",
+		"body":[
+			"\\CopyFile*[${2:changes}]{${1:file}}"
+		]
+	},
+
+
+	"ProcessFileWith[]{}{}":{
+		"prefix":"ProcessFileWith",
+		"body":[
+			"\\ProcessFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
+		]
+	},
+
+
+	"CopyFile[]{}":{
+		"prefix":"CopyFile",
+		"body":[
+			"\\CopyFile[${2:changes}]{${1:file}}"
+		]
+	},
+
+
+	"ProcessFinalFileWith[]{}{}":{
+		"prefix":"ProcessFinalFileWith",
+		"body":[
+			"\\ProcessFinalFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
+		]
+	},
+
+
+	"StartFDsetup{}{}[]":{
+		"prefix":"StartFDsetup",
+		"body":[
+			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}[${3:changes}]"
+		]
+	},
+
+
+	"MakeSetupCommand{}{}[]{}":{
+		"prefix":"MakeSetupCommand",
+		"body":[
+			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}[${4:args}]{${3:action}}"
+		]
+	},
+
+
+	"MakeSubstringConditional{}[]{}":{
+		"prefix":"MakeSubstringConditional",
+		"body":[
+			"\\MakeSubstringConditional{${1:id}}[${3:changes}]{${2:pattern}}"
+		]
+	},
+
+
+	"MakeSetupSubstringCondition{}[]{}{}":{
+		"prefix":"MakeSetupSubstringCondition",
+		"body":[
+			"\\MakeSetupSubstringCondition{${1:id}}[${4:changes}]{${2:pattern}}{${3:more-args}}"
+		]
+	},
+
+
+	"MakeExpandableAllReplacer{}[]{}{}{}":{
+		"prefix":"MakeExpandableAllReplacer",
+		"body":[
+			"\\MakeExpandableAllReplacer{${1:id}}[${5:changes}]{${2:find}}{${3:replace}}{${4:id-next}}"
+		]
+	},
+
+
+	"PrependExpandableAllReplacer{}[]{}{}":{
+		"prefix":"PrependExpandableAllReplacer",
+		"body":[
+			"\\PrependExpandableAllReplacer{${1:id}}[${4:changes}]{${2:find}}{${3:replace}}"
 		]
 	}
 }

@@ -1,23 +1,7 @@
 {
 
 
-	"makecommand":{
-		"prefix":"makecommand",
-		"body":[
-			"\\makecommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand":{
-		"prefix":"makecommand",
-		"body":[
-			"\\makecommand{${1:cmd}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand":{
+	"makecommand{}{}":{
 		"prefix":"makecommand",
 		"body":[
 			"\\makecommand{${1:cmd}}{${2:def}}"
@@ -25,47 +9,7 @@
 	},
 
 
-	"makecommand*":{
-		"prefix":"makecommand*",
-		"body":[
-			"\\makecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand*":{
-		"prefix":"makecommand*",
-		"body":[
-			"\\makecommand*{${1:cmd}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand*":{
-		"prefix":"makecommand*",
-		"body":[
-			"\\makecommand*{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"provideenvironment":{
-		"prefix":"provideenvironment",
-		"body":[
-			"\\provideenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment":{
-		"prefix":"provideenvironment",
-		"body":[
-			"\\provideenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment":{
+	"provideenvironment{}{}{}":{
 		"prefix":"provideenvironment",
 		"body":[
 			"\\provideenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
@@ -73,47 +17,7 @@
 	},
 
 
-	"provideenvironment*":{
-		"prefix":"provideenvironment*",
-		"body":[
-			"\\provideenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment*":{
-		"prefix":"provideenvironment*",
-		"body":[
-			"\\provideenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment*":{
-		"prefix":"provideenvironment*",
-		"body":[
-			"\\provideenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment":{
-		"prefix":"makeenvironment",
-		"body":[
-			"\\makeenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment":{
-		"prefix":"makeenvironment",
-		"body":[
-			"\\makeenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment":{
+	"makeenvironment{}{}{}":{
 		"prefix":"makeenvironment",
 		"body":[
 			"\\makeenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
@@ -121,31 +25,7 @@
 	},
 
 
-	"makeenvironment*":{
-		"prefix":"makeenvironment*",
-		"body":[
-			"\\makeenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment*":{
-		"prefix":"makeenvironment*",
-		"body":[
-			"\\makeenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment*":{
-		"prefix":"makeenvironment*",
-		"body":[
-			"\\makeenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"providelength":{
+	"providelength{}":{
 		"prefix":"providelength",
 		"body":[
 			"\\providelength{${1:cmd}}"
@@ -153,7 +33,7 @@
 	},
 
 
-	"makelength":{
+	"makelength{}":{
 		"prefix":"makelength",
 		"body":[
 			"\\makelength{${1:cmd}}"
@@ -161,7 +41,7 @@
 	},
 
 
-	"providecounter":{
+	"providecounter{}":{
 		"prefix":"providecounter",
 		"body":[
 			"\\providecounter{${1:counter name}}"
@@ -169,10 +49,130 @@
 	},
 
 
-	"makecounter":{
+	"makecounter{}":{
 		"prefix":"makecounter",
 		"body":[
 			"\\makecounter{${1:counter name}}"
+		]
+	},
+
+
+	"makecommand*{}[][]{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"makecommand*{}[]{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"makecommand*{}{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}{${2:def}}"
+		]
+	},
+
+
+	"provideenvironment*{}[][]{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"provideenvironment*{}[]{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"provideenvironment*{}{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makeenvironment*{}[][]{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makeenvironment*{}[]{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makeenvironment*{}{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makecommand{}[][]{}":{
+		"prefix":"makecommand",
+		"body":[
+			"\\makecommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"makecommand{}[]{}":{
+		"prefix":"makecommand",
+		"body":[
+			"\\makecommand{${1:cmd}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"provideenvironment{}[][]{}{}":{
+		"prefix":"provideenvironment",
+		"body":[
+			"\\provideenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"provideenvironment{}[]{}{}":{
+		"prefix":"provideenvironment",
+		"body":[
+			"\\provideenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makeenvironment{}[][]{}{}":{
+		"prefix":"makeenvironment",
+		"body":[
+			"\\makeenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"makeenvironment{}[]{}{}":{
+		"prefix":"makeenvironment",
+		"body":[
+			"\\makeenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
 		]
 	}
 }

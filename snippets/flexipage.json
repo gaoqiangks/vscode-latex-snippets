@@ -1,18 +1,10 @@
 {
 
 
-	"NewMarginPage":{
+	"NewMarginPage{}":{
 		"prefix":"NewMarginPage",
 		"body":[
 			"\\NewMarginPage{${1:marginalgrid}}"
-		]
-	},
-
-
-	"NewMarginPage":{
-		"prefix":"NewMarginPage",
-		"body":[
-			"\\NewMarginPage[${2:grid}]{${1:marginalgrid}}"
 		]
 	},
 
@@ -41,7 +33,7 @@
 	},
 
 
-	"IfNoValueOrEmptyTF":{
+	"IfNoValueOrEmptyTF{}{}{}":{
 		"prefix":"IfNoValueOrEmptyTF",
 		"body":[
 			"\\IfNoValueOrEmptyTF{${1:arg}}{${2:true}}{${3:false}}"
@@ -73,11 +65,19 @@
 	},
 
 
+	"NewMarginPage[]{}":{
+		"prefix":"NewMarginPage",
+		"body":[
+			"\\NewMarginPage[${2:grid}]{${1:marginalgrid}}"
+		]
+	},
+
+
 	"Landscape":{
 		"prefix":"Landscape",
 		"body":[
 			"\\begin{Landscape}",
-			"\t$1",
+				"\t$1",
 			"\\end{Landscape}"
 		]
 	},
@@ -87,7 +87,7 @@
 		"prefix":"landscape",
 		"body":[
 			"\\begin{landscape}",
-			"\t$1",
+				"\t$1",
 			"\\end{landscape}"
 		]
 	}

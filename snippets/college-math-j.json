@@ -1,7 +1,7 @@
 {
 
 
-	"doi":{
+	"doi{}":{
 		"prefix":"doi",
 		"body":[
 			"\\doi{${1:DOI}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"editor":{
+	"editor{}{}":{
 		"prefix":"editor",
 		"body":[
 			"\\editor{${1:name}}{${2:affiliation%text}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"editors":{
+	"editors{}{}":{
 		"prefix":"editors",
 		"body":[
 			"\\editors{${1:names}}{${2:affiliations%text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"schapter":{
+	"schapter{}":{
 		"prefix":"schapter",
 		"body":[
 			"\\schapter{${1:title}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"fillerhead":{
+	"fillerhead{}":{
 		"prefix":"fillerhead",
 		"body":[
 			"\\fillerhead{${1:title}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"fillerheadmark":{
+	"fillerheadmark{}":{
 		"prefix":"fillerheadmark",
 		"body":[
 			"\\fillerheadmark{${1:code}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"psection":{
+	"psection{}":{
 		"prefix":"psection",
 		"body":[
 			"\\psection{${1:title}}"
@@ -185,23 +185,7 @@
 	},
 
 
-	"psection":{
-		"prefix":"psection",
-		"body":[
-			"\\psection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"psection*":{
-		"prefix":"psection*",
-		"body":[
-			"\\psection*{${1:title}}"
-		]
-	},
-
-
-	"refsection":{
+	"refsection{}":{
 		"prefix":"refsection",
 		"body":[
 			"\\refsection{${1:title}}"
@@ -209,23 +193,7 @@
 	},
 
 
-	"refsection":{
-		"prefix":"refsection",
-		"body":[
-			"\\refsection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"refsection*":{
-		"prefix":"refsection*",
-		"body":[
-			"\\refsection*{${1:title}}"
-		]
-	},
-
-
-	"refsectionmark":{
+	"refsectionmark{}":{
 		"prefix":"refsectionmark",
 		"body":[
 			"\\refsectionmark{${1:code}}"
@@ -233,26 +201,10 @@
 	},
 
 
-	"boxedhead":{
+	"boxedhead{}":{
 		"prefix":"boxedhead",
 		"body":[
 			"\\boxedhead{${1:title}}"
-		]
-	},
-
-
-	"boxedhead":{
-		"prefix":"boxedhead",
-		"body":[
-			"\\boxedhead[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"boxedhead*":{
-		"prefix":"boxedhead*",
-		"body":[
-			"\\boxedhead*{${1:title}}"
 		]
 	},
 
@@ -265,7 +217,7 @@
 	},
 
 
-	"biogpic":{
+	"biogpic{}":{
 		"prefix":"biogpic",
 		"body":[
 			"\\biogpic{${1:graphics code}}"
@@ -417,72 +369,50 @@
 	},
 
 
-	"acknowledgment":{
-		"prefix":"acknowledgment",
+	"psection*{}":{
+		"prefix":"*psection",
 		"body":[
-			"\\begin{acknowledgment}",
-			"\t$1",
-			"\\end{acknowledgment}"
+			"\\psection*{${1:title}}"
 		]
 	},
 
 
-	"filler":{
-		"prefix":"filler",
+	"refsection*{}":{
+		"prefix":"*refsection",
 		"body":[
-			"\\begin{filler}",
-			"\t$1",
-			"\\end{filler}"
+			"\\refsection*{${1:title}}"
 		]
 	},
 
 
-	"dbleqnarray":{
-		"prefix":"dbleqnarray",
+	"boxedhead*{}":{
+		"prefix":"*boxedhead",
 		"body":[
-			"\\begin{dbleqnarray}",
-			"\t$1",
-			"\\end{dbleqnarray}"
+			"\\boxedhead*{${1:title}}"
 		]
 	},
 
 
-	"biog":{
-		"prefix":"biog",
+	"psection[]{}":{
+		"prefix":"psection",
 		"body":[
-			"\\begin{biog}",
-			"\t$1",
-			"\\end{biog}"
+			"\\psection[${2:short title}]{${1:title}}"
 		]
 	},
 
 
-	"unlist":{
-		"prefix":"unlist",
+	"refsection[]{}":{
+		"prefix":"refsection",
 		"body":[
-			"\\begin{unlist}",
-			"\t$1",
-			"\\end{unlist}"
+			"\\refsection[${2:short title}]{${1:title}}"
 		]
 	},
 
 
-	"dbleqnarray*":{
-		"prefix":"dbleqnarray*",
+	"boxedhead[]{}":{
+		"prefix":"boxedhead",
 		"body":[
-			"\\begin{dbleqnarray*}",
-			"\t$1",
-			"\\end{dbleqnarray*}"
-		]
-	},
-
-
-	"affil":{
-		"prefix":"affil",
-		"body":[
-			"\\begin{affil}",
-			"\t$1",
-			"\\end{affil}"
+			"\\boxedhead[${2:short title}]{${1:title}}"
 		]
 	},
 
@@ -491,18 +421,18 @@
 		"prefix":"absquotation",
 		"body":[
 			"\\begin{absquotation}",
-			"\t$1",
+				"\t$1",
 			"\\end{absquotation}"
 		]
 	},
 
 
-	"mtable":{
-		"prefix":"mtable",
+	"filler":{
+		"prefix":"filler",
 		"body":[
-			"\\begin{mtable}",
-			"\t$1",
-			"\\end{mtable}"
+			"\\begin{filler}",
+				"\t$1",
+			"\\end{filler}"
 		]
 	},
 
@@ -511,8 +441,98 @@
 		"prefix":"parlist",
 		"body":[
 			"\\begin{parlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{parlist}"
+		]
+	},
+
+
+	"unlist":{
+		"prefix":"unlist",
+		"body":[
+			"\\begin{unlist}",
+				"\t$1",
+			"\\end{unlist}"
+		]
+	},
+
+
+	"biog":{
+		"prefix":"biog",
+		"body":[
+			"\\begin{biog}",
+				"\t$1",
+			"\\end{biog}"
+		]
+	},
+
+
+	"affil":{
+		"prefix":"affil",
+		"body":[
+			"\\begin{affil}",
+				"\t$1",
+			"\\end{affil}"
+		]
+	},
+
+
+	"acknowledgment":{
+		"prefix":"acknowledgment",
+		"body":[
+			"\\begin{acknowledgment}",
+				"\t$1",
+			"\\end{acknowledgment}"
+		]
+	},
+
+
+	"mtable":{
+		"prefix":"mtable",
+		"body":[
+			"\\begin{mtable}",
+				"\t$1",
+			"\\end{mtable}"
+		]
+	},
+
+
+	"dbleqnarray":{
+		"prefix":"dbleqnarray",
+		"body":[
+			"\\begin{dbleqnarray}",
+				"\t$1",
+			"\\end{dbleqnarray}"
+		]
+	},
+
+
+	"dbleqnarray*":{
+		"prefix":"*dbleqnarray",
+		"body":[
+			"\\begin{dbleqnarray*}",
+				"\t$1",
+			"\\end{dbleqnarray*}"
+		]
+	},
+
+
+	"biog":{
+		"prefix":"biog",
+		"body":[
+			"\\begin{biog}",
+				"\t$1",
+			"\\end{biog}"
+		]
+	},
+
+
+	"acknowledgment":{
+		"prefix":"acknowledgment",
+		"body":[
+			"\\begin{acknowledgment}",
+				"\t$1",
+			"\\end{acknowledgment}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"epigraph":{
+	"epigraph{}{}":{
 		"prefix":"epigraph",
 		"body":[
 			"\\epigraph{${1:text}}{${2:source}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"qitem":{
+	"qitem{}{}":{
 		"prefix":"qitem",
 		"body":[
 			"\\qitem{${1:text}}{${2:source}}"
@@ -97,15 +97,7 @@
 	},
 
 
-	"epigraphhead":{
-		"prefix":"epigraphhead",
-		"body":[
-			"\\epigraphhead[${2:distance}]{${1:text}}"
-		]
-	},
-
-
-	"epigraphhead":{
+	"epigraphhead{}":{
 		"prefix":"epigraphhead",
 		"body":[
 			"\\epigraphhead{${1:text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"dropchapter":{
+	"dropchapter{}":{
 		"prefix":"dropchapter",
 		"body":[
 			"\\dropchapter{${1:length}}"
@@ -137,11 +129,19 @@
 	},
 
 
+	"epigraphhead[]{}":{
+		"prefix":"epigraphhead",
+		"body":[
+			"\\epigraphhead[${2:distance}]{${1:text}}"
+		]
+	},
+
+
 	"epigraphs":{
 		"prefix":"epigraphs",
 		"body":[
 			"\\begin{epigraphs}",
-			"\t$1",
+				"\t$1",
 			"\\end{epigraphs}"
 		]
 	}

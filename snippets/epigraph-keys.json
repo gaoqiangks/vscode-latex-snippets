@@ -1,7 +1,7 @@
 {
 
 
-	"epigraph":{
+	"epigraph{}":{
 		"prefix":"epigraph",
 		"body":[
 			"\\epigraph{${1:text}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"epigraph":{
-		"prefix":"epigraph",
-		"body":[
-			"\\epigraph[${2:keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"qitem":{
+	"qitem{}":{
 		"prefix":"qitem",
 		"body":[
 			"\\qitem{${1:text}}"
-		]
-	},
-
-
-	"qitem":{
-		"prefix":"qitem",
-		"body":[
-			"\\qitem[${2:keyvals}]{${1:text}}"
 		]
 	},
 
@@ -105,11 +89,27 @@
 	},
 
 
+	"epigraph[]{}":{
+		"prefix":"epigraph",
+		"body":[
+			"\\epigraph[${2:keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"qitem[]{}":{
+		"prefix":"qitem",
+		"body":[
+			"\\qitem[${2:keyvals}]{${1:text}}"
+		]
+	},
+
+
 	"epigraphs":{
 		"prefix":"epigraphs",
 		"body":[
 			"\\begin{epigraphs}",
-			"\t$1",
+				"\t$1",
 			"\\end{epigraphs}"
 		]
 	}

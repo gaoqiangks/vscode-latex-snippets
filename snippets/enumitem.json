@@ -1,7 +1,7 @@
 {
 
 
-	"newlist":{
+	"newlist{}{}{}":{
 		"prefix":"newlist",
 		"body":[
 			"\\newlist{${1:name%envname}}{${2:type%keyvals}}{${3:max-depth}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"renewlist":{
+	"renewlist{}{}{}":{
 		"prefix":"renewlist",
 		"body":[
 			"\\renewlist{${1:name%envname}}{${2:type%keyvals}}{${3:max-depth}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"setlist":{
+	"setlist{}":{
 		"prefix":"setlist",
 		"body":[
 			"\\setlist{${1:options}}"
@@ -25,31 +25,7 @@
 	},
 
 
-	"setlist*":{
-		"prefix":"setlist*",
-		"body":[
-			"\\setlist*{${1:options}}"
-		]
-	},
-
-
-	"setlist":{
-		"prefix":"setlist",
-		"body":[
-			"\\setlist[${2:names, levels}]{${1:options}}"
-		]
-	},
-
-
-	"setlist*":{
-		"prefix":"setlist*",
-		"body":[
-			"\\setlist*[${2:names, levels}]{${1:options}}"
-		]
-	},
-
-
-	"restartlist":{
+	"restartlist{}":{
 		"prefix":"restartlist",
 		"body":[
 			"\\restartlist{${1:list name}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"SetLabelAlign":{
+	"SetLabelAlign{}{}":{
 		"prefix":"SetLabelAlign",
 		"body":[
 			"\\SetLabelAlign{${1:value}}{${2:commands}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"SetEnumerateShortLabel":{
+	"SetEnumerateShortLabel{}{}":{
 		"prefix":"SetEnumerateShortLabel",
 		"body":[
 			"\\SetEnumerateShortLabel{${1:key%plain}}{${2:replacement}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"setlistdepth":{
+	"setlistdepth{}":{
 		"prefix":"setlistdepth",
 		"body":[
 			"\\setlistdepth{${1:integer}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"AddEnumerateCounter":{
+	"AddEnumerateCounter{}{}{}":{
 		"prefix":"AddEnumerateCounter",
 		"body":[
 			"\\AddEnumerateCounter{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:widest label}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"AddEnumerateCounter*":{
-		"prefix":"AddEnumerateCounter*",
-		"body":[
-			"\\AddEnumerateCounter*{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:integer}}"
-		]
-	},
-
-
-	"SetEnumitemKey":{
+	"SetEnumitemKey{}{}":{
 		"prefix":"SetEnumitemKey",
 		"body":[
 			"\\SetEnumitemKey{${1:key%specialDef}}{${2:replacement options%keyvals}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"SetEnumitemValue":{
+	"SetEnumitemValue{}{}{}":{
 		"prefix":"SetEnumitemValue",
 		"body":[
 			"\\SetEnumitemValue{${1:key%plain}}{${2:string-value}}{${3:replacement}}"
@@ -129,7 +97,7 @@
 	},
 
 
-	"SetEnumitemSize":{
+	"SetEnumitemSize{}{}":{
 		"prefix":"SetEnumitemSize",
 		"body":[
 			"\\SetEnumitemSize{${1:name}}{${2:selector}}"
@@ -145,52 +113,104 @@
 	},
 
 
-	"enumerate":{
-		"prefix":"enumerate",
+	"setlist*{}":{
+		"prefix":"*setlist",
 		"body":[
-			"\\begin{enumerate}",
-			"\t$1",
-			"\\end{enumerate}"
+			"\\setlist*{${1:options}}"
 		]
 	},
 
 
-	"description*":{
-		"prefix":"description*",
+	"setlist*[]{}":{
+		"prefix":"*setlist",
 		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
+			"\\setlist*[${2:names, levels}]{${1:options}}"
 		]
 	},
 
 
-	"itemize*":{
-		"prefix":"itemize*",
+	"AddEnumerateCounter*{}{}{}":{
+		"prefix":"*AddEnumerateCounter",
 		"body":[
-			"\\begin{itemize*}",
-			"\t$1",
-			"\\end{itemize*}"
+			"\\AddEnumerateCounter*{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:integer}}"
+		]
+	},
+
+
+	"setlist[]{}":{
+		"prefix":"setlist",
+		"body":[
+			"\\setlist[${2:names, levels}]{${1:options}}"
 		]
 	},
 
 
 	"enumerate*":{
-		"prefix":"enumerate*",
+		"prefix":"*enumerate",
 		"body":[
 			"\\begin{enumerate*}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumerate*}"
 		]
 	},
 
 
-	"description":{
+	"itemize*":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
 		"prefix":"description",
 		"body":[
-			"\\begin{description}",
-			"\t$1",
-			"\\end{description}"
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"enumerate":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate}",
+				"\t$1",
+			"\\end{enumerate}"
 		]
 	},
 
@@ -199,8 +219,18 @@
 		"prefix":"itemize",
 		"body":[
 			"\\begin{itemize}",
-			"\t$1",
+				"\t$1",
 			"\\end{itemize}"
+		]
+	},
+
+
+	"description":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description}",
+				"\t$1",
+			"\\end{description}"
 		]
 	}
 }

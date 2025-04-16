@@ -1,7 +1,7 @@
 {
 
 
-	"setocgtabularheader":{
+	"setocgtabularheader{}{}":{
 		"prefix":"setocgtabularheader",
 		"body":[
 			"\\setocgtabularheader{${1:column name}}{${2:header%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"toggleocgs":{
+	"toggleocgs{}{}":{
 		"prefix":"toggleocgs",
 		"body":[
 			"\\toggleocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"toggleocgs":{
-		"prefix":"toggleocgs",
-		"body":[
-			"\\toggleocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"showocgs":{
+	"showocgs{}{}":{
 		"prefix":"showocgs",
 		"body":[
 			"\\showocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"showocgs":{
-		"prefix":"showocgs",
-		"body":[
-			"\\showocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"hideocgs":{
+	"hideocgs{}{}":{
 		"prefix":"hideocgs",
 		"body":[
 			"\\hideocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"hideocgs":{
-		"prefix":"hideocgs",
-		"body":[
-			"\\hideocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"setocgs":{
+	"setocgs{}{}{}{}":{
 		"prefix":"setocgs",
 		"body":[
 			"\\setocgs{${1:tlayerid1 ...}}{${2:slayerid1 ...}}{${3:hlayerid1 ...}}{${4:display}}"
@@ -65,10 +41,44 @@
 	},
 
 
-	"setocgs":{
+	"toggleocgs[]{}{}":{
+		"prefix":"toggleocgs",
+		"body":[
+			"\\toggleocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
+		]
+	},
+
+
+	"showocgs[]{}{}":{
+		"prefix":"showocgs",
+		"body":[
+			"\\showocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
+		]
+	},
+
+
+	"hideocgs[]{}{}":{
+		"prefix":"hideocgs",
+		"body":[
+			"\\hideocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
+		]
+	},
+
+
+	"setocgs[]{}{}{}{}":{
 		"prefix":"setocgs",
 		"body":[
 			"\\setocgs[${5:option%keyvals}]{${1:tlayerid1 ...}}{${2:slayerid1 ...}}{${3:hlayerid1 ...}}{${4:display}}"
+		]
+	},
+
+
+	"ocgtabular":{
+		"prefix":"ocgtabular",
+		"body":[
+			"\\begin{ocgtabular}",
+				"\t$1",
+			"\\end{ocgtabular}"
 		]
 	},
 
@@ -77,7 +87,7 @@
 		"prefix":"ocg",
 		"body":[
 			"\\begin{ocg}",
-			"\t$1",
+				"\t$1",
 			"\\end{ocg}"
 		]
 	},
@@ -87,8 +97,18 @@
 		"prefix":"ocgtabular",
 		"body":[
 			"\\begin{ocgtabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{ocgtabular}"
+		]
+	},
+
+
+	"ocg":{
+		"prefix":"ocg",
+		"body":[
+			"\\begin{ocg}",
+				"\t$1",
+			"\\end{ocg}"
 		]
 	}
 }

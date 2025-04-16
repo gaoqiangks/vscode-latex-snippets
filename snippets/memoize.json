@@ -1,7 +1,7 @@
 {
 
 
-	"mmzset":{
+	"mmzset{}":{
 		"prefix":"mmzset",
 		"body":[
 			"\\mmzset{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mmznext":{
+	"mmznext{}":{
 		"prefix":"mmznext",
 		"body":[
 			"\\mmznext{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"nommzkeys":{
+	"nommzkeys{}":{
 		"prefix":"nommzkeys",
 		"body":[
 			"\\nommzkeys{${1:options%keyvals}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"mmz":{
+	"mmz{}":{
 		"prefix":"mmz",
 		"body":[
 			"\\mmz{${1:code%text}}"
@@ -33,26 +33,10 @@
 	},
 
 
-	"mmz":{
-		"prefix":"mmz",
-		"body":[
-			"\\mmz[${2:options%keyvals}]{${1:code%text}}"
-		]
-	},
-
-
-	"nommz":{
+	"nommz{}":{
 		"prefix":"nommz",
 		"body":[
 			"\\nommz{${1:code%text}}"
-		]
-	},
-
-
-	"nommz":{
-		"prefix":"nommz",
-		"body":[
-			"\\nommz[${2:options%keyvals}]{${1:code%text}}"
 		]
 	},
 
@@ -73,7 +57,7 @@
 	},
 
 
-	"mmzNoRef":{
+	"mmzNoRef{}":{
 		"prefix":"mmzNoRef",
 		"body":[
 			"\\mmzNoRef{${1:label}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"mmzForceNoRef":{
+	"mmzForceNoRef{}":{
 		"prefix":"mmzForceNoRef",
 		"body":[
 			"\\mmzForceNoRef{${1:label}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"Memoize":{
+	"Memoize{}{}":{
 		"prefix":"Memoize",
 		"body":[
 			"\\Memoize{${1:key%plain}}{${2:code}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"mmzSingleExternDriver":{
+	"mmzSingleExternDriver{}":{
 		"prefix":"mmzSingleExternDriver",
 		"body":[
 			"\\mmzSingleExternDriver{${1:code}}"
@@ -225,7 +209,7 @@
 	},
 
 
-	"mmzExternalizeBox":{
+	"mmzExternalizeBox{}{}":{
 		"prefix":"mmzExternalizeBox",
 		"body":[
 			"\\mmzExternalizeBox{${1:box}}{${2:token register}}"
@@ -257,18 +241,10 @@
 	},
 
 
-	"IfMemoizing":{
+	"IfMemoizing{}{}{}":{
 		"prefix":"IfMemoizing",
 		"body":[
 			"\\IfMemoizing{${1:name}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"IfMemoizing":{
-		"prefix":"IfMemoizing",
-		"body":[
-			"\\IfMemoizing[${4:offset}]{${1:name}}{${2:true code}}{${3:false code}}"
 		]
 	},
 
@@ -345,7 +321,7 @@
 	},
 
 
-	"mmzResource":{
+	"mmzResource{}":{
 		"prefix":"mmzResource",
 		"body":[
 			"\\mmzResource{${1:file}}"
@@ -353,15 +329,15 @@
 	},
 
 
-	"mmzIncludeExtern":{
+	"mmzIncludeExtern{}{}{}{}{}{}{}{}{}":{
 		"prefix":"mmzIncludeExtern",
 		"body":[
-			"\\mmzIncludeExtern{${1:seq}}{${2:\hbox|\vbox}}{${3:width}}{${4:height}}{${5:depth}}{${6:left}}{${7:bot}}{${8:right}}{${9:top}}"
+			"\\mmzIncludeExtern{${1:seq}}{${2:\\hbox|\\vbox}}{${3:width}}{${4:height}}{${5:depth}}{${6:left}}{${7:bot}}{${8:right}}{${9:top}}"
 		]
 	},
 
 
-	"mmzLabel":{
+	"mmzLabel{}{}":{
 		"prefix":"mmzLabel",
 		"body":[
 			"\\mmzLabel{${1:key%plain}}{${2:value}}"
@@ -385,7 +361,7 @@
 	},
 
 
-	"mmzUsedCMemo":{
+	"mmzUsedCMemo{}":{
 		"prefix":"mmzUsedCMemo",
 		"body":[
 			"\\mmzUsedCMemo{${1:filename}}"
@@ -393,7 +369,7 @@
 	},
 
 
-	"mmzUsedCCMemo":{
+	"mmzUsedCCMemo{}":{
 		"prefix":"mmzUsedCCMemo",
 		"body":[
 			"\\mmzUsedCCMemo{${1:filename}}"
@@ -401,7 +377,7 @@
 	},
 
 
-	"mmzUsedExtern":{
+	"mmzUsedExtern{}":{
 		"prefix":"mmzUsedExtern",
 		"body":[
 			"\\mmzUsedExtern{${1:filename}}"
@@ -409,7 +385,7 @@
 	},
 
 
-	"mmzNewCMemo":{
+	"mmzNewCMemo{}":{
 		"prefix":"mmzNewCMemo",
 		"body":[
 			"\\mmzNewCMemo{${1:filename}}"
@@ -417,7 +393,7 @@
 	},
 
 
-	"mmzNewCCMemo":{
+	"mmzNewCCMemo{}":{
 		"prefix":"mmzNewCCMemo",
 		"body":[
 			"\\mmzNewCCMemo{${1:filename}}"
@@ -425,7 +401,7 @@
 	},
 
 
-	"mmzNewExtern":{
+	"mmzNewExtern{}{}{}{}":{
 		"prefix":"mmzNewExtern",
 		"body":[
 			"\\mmzNewExtern{${1:filename}}{${2:page num}}{${3:width}}{${4:height}}"
@@ -433,7 +409,7 @@
 	},
 
 
-	"mmzPrefix":{
+	"mmzPrefix{}":{
 		"prefix":"mmzPrefix",
 		"body":[
 			"\\mmzPrefix{${1:path prefix}}"
@@ -465,11 +441,35 @@
 	},
 
 
+	"mmz[]{}":{
+		"prefix":"mmz",
+		"body":[
+			"\\mmz[${2:options%keyvals}]{${1:code%text}}"
+		]
+	},
+
+
+	"nommz[]{}":{
+		"prefix":"nommz",
+		"body":[
+			"\\nommz[${2:options%keyvals}]{${1:code%text}}"
+		]
+	},
+
+
+	"IfMemoizing[]{}{}{}":{
+		"prefix":"IfMemoizing",
+		"body":[
+			"\\IfMemoizing[${4:offset}]{${1:name}}{${2:true code}}{${3:false code}}"
+		]
+	},
+
+
 	"memoize":{
 		"prefix":"memoize",
 		"body":[
 			"\\begin{memoize}",
-			"\t$1",
+				"\t$1",
 			"\\end{memoize}"
 		]
 	},
@@ -479,7 +479,27 @@
 		"prefix":"nomemoize",
 		"body":[
 			"\\begin{nomemoize}",
-			"\t$1",
+				"\t$1",
+			"\\end{nomemoize}"
+		]
+	},
+
+
+	"memoize":{
+		"prefix":"memoize",
+		"body":[
+			"\\begin{memoize}",
+				"\t$1",
+			"\\end{memoize}"
+		]
+	},
+
+
+	"nomemoize":{
+		"prefix":"nomemoize",
+		"body":[
+			"\\begin{nomemoize}",
+				"\t$1",
 			"\\end{nomemoize}"
 		]
 	}

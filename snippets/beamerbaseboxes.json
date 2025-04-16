@@ -1,7 +1,7 @@
 {
 
 
-	"beamerboxesdeclarecolorscheme":{
+	"beamerboxesdeclarecolorscheme{}{}{}":{
 		"prefix":"beamerboxesdeclarecolorscheme",
 		"body":[
 			"\\beamerboxesdeclarecolorscheme{${1:name}}{${2:upper color}}{${3:lower color}}"
@@ -13,7 +13,17 @@
 		"prefix":"beamerboxesrounded",
 		"body":[
 			"\\begin{beamerboxesrounded}",
-			"\t$1",
+				"\t$1",
+			"\\end{beamerboxesrounded}"
+		]
+	},
+
+
+	"beamerboxesrounded":{
+		"prefix":"beamerboxesrounded",
+		"body":[
+			"\\begin{beamerboxesrounded}",
+				"\t$1",
 			"\\end{beamerboxesrounded}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"tabulinestyle":{
+	"tabulinestyle{}":{
 		"prefix":"tabulinestyle",
 		"body":[
 			"\\tabulinestyle{${1:style}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"usetabu":{
+	"usetabu{}":{
 		"prefix":"usetabu",
 		"body":[
 			"\\usetabu{${1:username}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"tabucline":{
+	"tabucline{}":{
 		"prefix":"tabucline",
 		"body":[
 			"\\tabucline{${1:from-to}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"tabucline":{
-		"prefix":"tabucline",
-		"body":[
-			"\\tabucline[${2:spec}]{${1:from-to}}"
-		]
-	},
-
-
-	"savetabu":{
+	"savetabu{}":{
 		"prefix":"savetabu",
 		"body":[
 			"\\savetabu{${1:username}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"preamble":{
+	"preamble{}":{
 		"prefix":"preamble",
 		"body":[
 			"\\preamble{${1:username}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"taburulecolor":{
+	"taburulecolor{}":{
 		"prefix":"taburulecolor",
 		"body":[
 			"\\taburulecolor{${1:color}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"taburulecolor":{
+	"taburulecolor||{}":{
 		"prefix":"taburulecolor",
 		"body":[
 			"\\taburulecolor|${2:doubleRuleSepColor}|{${1:color}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"newtabulinestyle":{
+	"newtabulinestyle{}":{
 		"prefix":"newtabulinestyle",
 		"body":[
 			"\\newtabulinestyle{${1:style}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"everyrow":{
+	"everyrow{}":{
 		"prefix":"everyrow",
 		"body":[
 			"\\everyrow{${1:code}}"
@@ -129,15 +121,7 @@
 	},
 
 
-	"rowfont":{
-		"prefix":"rowfont",
-		"body":[
-			"\\rowfont[${2:alignment}]{${1:fontSpec}}"
-		]
-	},
-
-
-	"tabudecimal":{
+	"tabudecimal{}":{
 		"prefix":"tabudecimal",
 		"body":[
 			"\\tabudecimal{${1:code}}"
@@ -185,7 +169,7 @@
 	},
 
 
-	"tabucolumn":{
+	"tabucolumn{}":{
 		"prefix":"tabucolumn",
 		"body":[
 			"\\tabucolumn{${1:arg}}"
@@ -265,11 +249,27 @@
 	},
 
 
+	"tabucline[]{}":{
+		"prefix":"tabucline",
+		"body":[
+			"\\tabucline[${2:spec}]{${1:from-to}}"
+		]
+	},
+
+
+	"rowfont[]{}":{
+		"prefix":"rowfont",
+		"body":[
+			"\\rowfont[${2:alignment}]{${1:fontSpec}}"
+		]
+	},
+
+
 	"tabu":{
 		"prefix":"tabu",
 		"body":[
 			"\\begin{tabu}",
-			"\t$1",
+				"\t$1",
 			"\\end{tabu}"
 		]
 	},
@@ -279,7 +279,7 @@
 		"prefix":"longtabu",
 		"body":[
 			"\\begin{longtabu}",
-			"\t$1",
+				"\t$1",
 			"\\end{longtabu}"
 		]
 	}

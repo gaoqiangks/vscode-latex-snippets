@@ -17,7 +17,7 @@
 	},
 
 
-	"PreviewMacro":{
+	"PreviewMacro{}":{
 		"prefix":"PreviewMacro",
 		"body":[
 			"\\PreviewMacro{${1:macro}}"
@@ -25,31 +25,7 @@
 	},
 
 
-	"PreviewMacro":{
-		"prefix":"PreviewMacro",
-		"body":[
-			"\\PreviewMacro[${2:arg spec}]{${1:macro}}"
-		]
-	},
-
-
-	"PreviewMacro*":{
-		"prefix":"PreviewMacro*",
-		"body":[
-			"\\PreviewMacro*{${1:macro}}"
-		]
-	},
-
-
-	"PreviewMacro*":{
-		"prefix":"PreviewMacro*",
-		"body":[
-			"\\PreviewMacro*[${2:arg spec}][${3:default}]{${1:macro}}"
-		]
-	},
-
-
-	"PreviewEnvironment":{
+	"PreviewEnvironment{}":{
 		"prefix":"PreviewEnvironment",
 		"body":[
 			"\\PreviewEnvironment{${1:envname}}"
@@ -57,42 +33,10 @@
 	},
 
 
-	"PreviewEnvironment":{
-		"prefix":"PreviewEnvironment",
-		"body":[
-			"\\PreviewEnvironment[${2:arg spec}]{${1:envname}}"
-		]
-	},
-
-
-	"PreviewEnvironment*":{
-		"prefix":"PreviewEnvironment*",
-		"body":[
-			"\\PreviewEnvironment*{${1:envname}}"
-		]
-	},
-
-
-	"PreviewEnvironment*":{
-		"prefix":"PreviewEnvironment*",
-		"body":[
-			"\\PreviewEnvironment*[${2:arg spec}][${3:default}]{${1:envname}}"
-		]
-	},
-
-
-	"PreviewSnarfEnvironment":{
+	"PreviewSnarfEnvironment{}":{
 		"prefix":"PreviewSnarfEnvironment",
 		"body":[
 			"\\PreviewSnarfEnvironment{${1:envname}}"
-		]
-	},
-
-
-	"PreviewSnarfEnvironment":{
-		"prefix":"PreviewSnarfEnvironment",
-		"body":[
-			"\\PreviewSnarfEnvironment[${2:arg spec}]{${1:envname}}"
 		]
 	},
 
@@ -121,12 +65,58 @@
 	},
 
 
-	"nopreview":{
-		"prefix":"nopreview",
+	"PreviewMacro*{}":{
+		"prefix":"*PreviewMacro",
 		"body":[
-			"\\begin{nopreview}",
-			"\t$1",
-			"\\end{nopreview}"
+			"\\PreviewMacro*{${1:macro}}"
+		]
+	},
+
+
+	"PreviewMacro*[][]{}":{
+		"prefix":"*PreviewMacro",
+		"body":[
+			"\\PreviewMacro*[${2:arg spec}][${3:default}]{${1:macro}}"
+		]
+	},
+
+
+	"PreviewEnvironment*{}":{
+		"prefix":"*PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment*{${1:envname}}"
+		]
+	},
+
+
+	"PreviewEnvironment*[][]{}":{
+		"prefix":"*PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment*[${2:arg spec}][${3:default}]{${1:envname}}"
+		]
+	},
+
+
+	"PreviewMacro[]{}":{
+		"prefix":"PreviewMacro",
+		"body":[
+			"\\PreviewMacro[${2:arg spec}]{${1:macro}}"
+		]
+	},
+
+
+	"PreviewEnvironment[]{}":{
+		"prefix":"PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment[${2:arg spec}]{${1:envname}}"
+		]
+	},
+
+
+	"PreviewSnarfEnvironment[]{}":{
+		"prefix":"PreviewSnarfEnvironment",
+		"body":[
+			"\\PreviewSnarfEnvironment[${2:arg spec}]{${1:envname}}"
 		]
 	},
 
@@ -135,8 +125,18 @@
 		"prefix":"preview",
 		"body":[
 			"\\begin{preview}",
-			"\t$1",
+				"\t$1",
 			"\\end{preview}"
+		]
+	},
+
+
+	"nopreview":{
+		"prefix":"nopreview",
+		"body":[
+			"\\begin{nopreview}",
+				"\t$1",
+			"\\end{nopreview}"
 		]
 	}
 }

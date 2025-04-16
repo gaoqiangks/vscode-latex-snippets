@@ -1,7 +1,7 @@
 {
 
 
-	"bookmarksetup":{
+	"bookmarksetup{}":{
 		"prefix":"bookmarksetup",
 		"body":[
 			"\\bookmarksetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"bookmarksetupnext":{
+	"bookmarksetupnext{}":{
 		"prefix":"bookmarksetupnext",
 		"body":[
 			"\\bookmarksetupnext{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"bookmark":{
+	"bookmark{}":{
 		"prefix":"bookmark",
 		"body":[
 			"\\bookmark{${1:title%text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"bookmark":{
-		"prefix":"bookmark",
-		"body":[
-			"\\bookmark[${2:options%keyvals}]{${1:title%text}}"
-		]
-	},
-
-
-	"bookmarkdefinestyle":{
+	"bookmarkdefinestyle{}{}":{
 		"prefix":"bookmarkdefinestyle",
 		"body":[
 			"\\bookmarkdefinestyle{${1:name}}{${2:options%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"bookmarkget":{
+	"bookmarkget{}":{
 		"prefix":"bookmarkget",
 		"body":[
 			"\\bookmarkget{${1:option%keyvals}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"BookmarkAtEnd":{
+	"BookmarkAtEnd{}":{
 		"prefix":"BookmarkAtEnd",
 		"body":[
 			"\\BookmarkAtEnd{${1:code}}"
@@ -65,10 +57,18 @@
 	},
 
 
-	"calc":{
+	"calc{}":{
 		"prefix":"calc",
 		"body":[
 			"\\calc{${1:expression}}"
+		]
+	},
+
+
+	"bookmark[]{}":{
+		"prefix":"bookmark",
+		"body":[
+			"\\bookmark[${2:options%keyvals}]{${1:title%text}}"
 		]
 	}
 }

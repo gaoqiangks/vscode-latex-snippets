@@ -17,7 +17,7 @@
 	},
 
 
-	"ruby":{
+	"ruby{}{}":{
 		"prefix":"ruby",
 		"body":[
 			"\\ruby{${1:kanji}}{${2:ruby}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"ruby":{
-		"prefix":"ruby",
-		"body":[
-			"\\ruby[${3:dimen}]{${1:kanji}}{${2:ruby}}"
-		]
-	},
-
-
-	"kenten":{
+	"kenten{}":{
 		"prefix":"kenten",
 		"body":[
 			"\\kenten{${1:text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"kintou":{
+	"kintou{}{}":{
 		"prefix":"kintou",
 		"body":[
 			"\\kintou{${1:length}}{${2:characters}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"removept":{
+	"removept{}{}":{
 		"prefix":"removept",
 		"body":[
 			"\\removept{${1:dimen register}}{${2:cmd}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"okukeytop":{
+	"okukeytop{}":{
 		"prefix":"okukeytop",
 		"body":[
 			"\\okukeytop{${1:text}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"keytop":{
+	"keytop{}":{
 		"prefix":"keytop",
 		"body":[
 			"\\keytop{${1:text}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"MARU":{
+	"MARU{}":{
 		"prefix":"MARU",
 		"body":[
 			"\\MARU{${1:text}}"
@@ -241,7 +233,7 @@
 	},
 
 
-	"namelistlabel":{
+	"namelistlabel{}":{
 		"prefix":"namelistlabel",
 		"body":[
 			"\\namelistlabel{${1:text}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"SHUTTEN":{
+	"SHUTTEN{}":{
 		"prefix":"SHUTTEN",
 		"body":[
 			"\\SHUTTEN{${1:text}}"
@@ -289,7 +281,7 @@
 	},
 
 
-	"ENDEXC":{
+	"ENDEXC{}":{
 		"prefix":"ENDEXC",
 		"body":[
 			"\\ENDEXC{${1:text}}"
@@ -297,7 +289,7 @@
 	},
 
 
-	"whichpage":{
+	"whichpage{}":{
 		"prefix":"whichpage",
 		"body":[
 			"\\whichpage{${1:label}}"
@@ -305,7 +297,7 @@
 	},
 
 
-	"migiake":{
+	"migiake{}":{
 		"prefix":"migiake",
 		"body":[
 			"\\migiake{${1:length}}"
@@ -313,7 +305,7 @@
 	},
 
 
-	"rightfig":{
+	"rightfig{}{}{}":{
 		"prefix":"rightfig",
 		"body":[
 			"\\rightfig{${1:space}}{${2:numlines}}{${3:object%text}}"
@@ -377,7 +369,7 @@
 	},
 
 
-	"FRAC":{
+	"FRAC{}{}":{
 		"prefix":"FRAC",
 		"body":[
 			"\\FRAC{${1:num}}{${2:denom}}"
@@ -401,7 +393,7 @@
 	},
 
 
-	"ANGLE":{
+	"ANGLE{}":{
 		"prefix":"ANGLE",
 		"body":[
 			"\\ANGLE{${1:text%plain}}"
@@ -409,72 +401,10 @@
 	},
 
 
-	"OUT":{
-		"prefix":"OUT",
+	"ruby[]{}{}":{
+		"prefix":"ruby",
 		"body":[
-			"\\begin{OUT}",
-			"\t$1",
-			"\\end{OUT}"
-		]
-	},
-
-
-	"FRAME":{
-		"prefix":"FRAME",
-		"body":[
-			"\\begin{FRAME}",
-			"\t$1",
-			"\\end{FRAME}"
-		]
-	},
-
-
-	"IN":{
-		"prefix":"IN",
-		"body":[
-			"\\begin{IN}",
-			"\t$1",
-			"\\end{IN}"
-		]
-	},
-
-
-	"okuscreen":{
-		"prefix":"okuscreen",
-		"body":[
-			"\\begin{okuscreen}",
-			"\t$1",
-			"\\end{okuscreen}"
-		]
-	},
-
-
-	"toi":{
-		"prefix":"toi",
-		"body":[
-			"\\begin{toi}",
-			"\t$1",
-			"\\end{toi}"
-		]
-	},
-
-
-	"sankou":{
-		"prefix":"sankou",
-		"body":[
-			"\\begin{sankou}",
-			"\t$1",
-			"\\end{sankou}"
-		]
-	},
-
-
-	"shadebox":{
-		"prefix":"shadebox",
-		"body":[
-			"\\begin{shadebox}",
-			"\t$1",
-			"\\end{shadebox}"
+			"\\ruby[${3:dimen}]{${1:kanji}}{${2:ruby}}"
 		]
 	},
 
@@ -483,18 +413,8 @@
 		"prefix":"dangerous",
 		"body":[
 			"\\begin{dangerous}",
-			"\t$1",
+				"\t$1",
 			"\\end{dangerous}"
-		]
-	},
-
-
-	"EXAMPLE":{
-		"prefix":"EXAMPLE",
-		"body":[
-			"\\begin{EXAMPLE}",
-			"\t$1",
-			"\\end{EXAMPLE}"
 		]
 	},
 
@@ -503,18 +423,8 @@
 		"prefix":"namelist",
 		"body":[
 			"\\begin{namelist}",
-			"\t$1",
+				"\t$1",
 			"\\end{namelist}"
-		]
-	},
-
-
-	"okushadebox":{
-		"prefix":"okushadebox",
-		"body":[
-			"\\begin{okushadebox}",
-			"\t$1",
-			"\\end{okushadebox}"
 		]
 	},
 
@@ -523,8 +433,28 @@
 		"prefix":"mybibliography",
 		"body":[
 			"\\begin{mybibliography}",
-			"\t$1",
+				"\t$1",
 			"\\end{mybibliography}"
+		]
+	},
+
+
+	"FRAME":{
+		"prefix":"FRAME",
+		"body":[
+			"\\begin{FRAME}",
+				"\t$1",
+			"\\end{FRAME}"
+		]
+	},
+
+
+	"okuscreen":{
+		"prefix":"okuscreen",
+		"body":[
+			"\\begin{okuscreen}",
+				"\t$1",
+			"\\end{okuscreen}"
 		]
 	},
 
@@ -533,7 +463,97 @@
 		"prefix":"screen",
 		"body":[
 			"\\begin{screen}",
-			"\t$1",
+				"\t$1",
+			"\\end{screen}"
+		]
+	},
+
+
+	"EXAMPLE":{
+		"prefix":"EXAMPLE",
+		"body":[
+			"\\begin{EXAMPLE}",
+				"\t$1",
+			"\\end{EXAMPLE}"
+		]
+	},
+
+
+	"IN":{
+		"prefix":"IN",
+		"body":[
+			"\\begin{IN}",
+				"\t$1",
+			"\\end{IN}"
+		]
+	},
+
+
+	"OUT":{
+		"prefix":"OUT",
+		"body":[
+			"\\begin{OUT}",
+				"\t$1",
+			"\\end{OUT}"
+		]
+	},
+
+
+	"okushadebox":{
+		"prefix":"okushadebox",
+		"body":[
+			"\\begin{okushadebox}",
+				"\t$1",
+			"\\end{okushadebox}"
+		]
+	},
+
+
+	"shadebox":{
+		"prefix":"shadebox",
+		"body":[
+			"\\begin{shadebox}",
+				"\t$1",
+			"\\end{shadebox}"
+		]
+	},
+
+
+	"sankou":{
+		"prefix":"sankou",
+		"body":[
+			"\\begin{sankou}",
+				"\t$1",
+			"\\end{sankou}"
+		]
+	},
+
+
+	"toi":{
+		"prefix":"toi",
+		"body":[
+			"\\begin{toi}",
+				"\t$1",
+			"\\end{toi}"
+		]
+	},
+
+
+	"okuscreen":{
+		"prefix":"okuscreen",
+		"body":[
+			"\\begin{okuscreen}",
+				"\t$1",
+			"\\end{okuscreen}"
+		]
+	},
+
+
+	"screen":{
+		"prefix":"screen",
+		"body":[
+			"\\begin{screen}",
+				"\t$1",
 			"\\end{screen}"
 		]
 	}

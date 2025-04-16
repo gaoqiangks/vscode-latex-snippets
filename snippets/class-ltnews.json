@@ -33,7 +33,7 @@
 	},
 
 
-	"class":{
+	"class{}":{
 		"prefix":"class",
 		"body":[
 			"\\class{${1:class}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:address%URL}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"excludecomment":{
+	"excludecomment{}":{
 		"prefix":"excludecomment",
 		"body":[
 			"\\excludecomment{${1:envname}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:file}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"latex":{
+	"latex{}":{
 		"prefix":"latex",
 		"body":[
 			"\\latex{${1:code}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"package":{
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\package{${1:package}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"pkg":{
+	"pkg{}":{
 		"prefix":"pkg",
 		"body":[
 			"\\pkg{${1:package}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"publicationday":{
+	"publicationday{}":{
 		"prefix":"publicationday",
 		"body":[
 			"\\publicationday{${1:day}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"publicationissue":{
+	"publicationissue{}":{
 		"prefix":"publicationissue",
 		"body":[
 			"\\publicationissue{${1:issue}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"publicationmonth":{
+	"publicationmonth{}":{
 		"prefix":"publicationmonth",
 		"body":[
 			"\\publicationmonth{${1:month}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"publicationyear":{
+	"publicationyear{}":{
 		"prefix":"publicationyear",
 		"body":[
 			"\\publicationyear{${1:year}}"
@@ -225,21 +225,11 @@
 	},
 
 
-	"latexonly":{
-		"prefix":"latexonly",
-		"body":[
-			"\\begin{latexonly}",
-			"\t$1",
-			"\\end{latexonly}"
-		]
-	},
-
-
 	"citations":{
 		"prefix":"citations",
 		"body":[
 			"\\begin{citations}",
-			"\t$1",
+				"\t$1",
 			"\\end{citations}"
 		]
 	},
@@ -249,8 +239,18 @@
 		"prefix":"htmlonly",
 		"body":[
 			"\\begin{htmlonly}",
-			"\t$1",
+				"\t$1",
 			"\\end{htmlonly}"
+		]
+	},
+
+
+	"latexonly":{
+		"prefix":"latexonly",
+		"body":[
+			"\\begin{latexonly}",
+				"\t$1",
+			"\\end{latexonly}"
 		]
 	}
 }

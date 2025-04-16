@@ -1,7 +1,7 @@
 {
 
 
-	"course":{
+	"course{}":{
 		"prefix":"course",
 		"body":[
 			"\\course{${1:title}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"course":{
-		"prefix":"course",
-		"body":[
-			"\\course[${2:footnote%text}]{${1:title}}"
-		]
-	},
-
-
-	"lecture":{
+	"lecture{}{}":{
 		"prefix":"lecture",
 		"body":[
 			"\\lecture{${1:title}}{${2:PDF file%file}}"
@@ -25,23 +17,7 @@
 	},
 
 
-	"lecture":{
-		"prefix":"lecture",
-		"body":[
-			"\\lecture{${1:title}}[${3:start}]{${2:PDF file%file}}"
-		]
-	},
-
-
-	"lecture":{
-		"prefix":"lecture",
-		"body":[
-			"\\lecture{${1:title}}[${3:start}][${4:end}]{${2:PDF file%file}}"
-		]
-	},
-
-
-	"lecturetitle":{
+	"lecturetitle{}":{
 		"prefix":"lecturetitle",
 		"body":[
 			"\\lecturetitle{${1:title}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"lectureslides":{
+	"lectureslides{}":{
 		"prefix":"lectureslides",
 		"body":[
 			"\\lectureslides{${1:PDF file%file}}"
@@ -57,23 +33,7 @@
 	},
 
 
-	"lectureslides":{
-		"prefix":"lectureslides",
-		"body":[
-			"\\lectureslides[${2:start}]{${1:PDF file%file}}"
-		]
-	},
-
-
-	"lectureslides":{
-		"prefix":"lectureslides",
-		"body":[
-			"\\lectureslides[${2:start}][${3:end}]{${1:PDF file%file}}"
-		]
-	},
-
-
-	"tocline":{
+	"tocline{}":{
 		"prefix":"tocline",
 		"body":[
 			"\\tocline{${1:arg}}"
@@ -81,7 +41,7 @@
 	},
 
 
-	"createdAt":{
+	"createdAt{}":{
 		"prefix":"createdAt",
 		"body":[
 			"\\createdAt{${1:text}}"
@@ -93,6 +53,46 @@
 		"prefix":"orientation",
 		"body":[
 			"\\orientation"
+		]
+	},
+
+
+	"course[]{}":{
+		"prefix":"course",
+		"body":[
+			"\\course[${2:footnote%text}]{${1:title}}"
+		]
+	},
+
+
+	"lecture{}[]{}":{
+		"prefix":"lecture",
+		"body":[
+			"\\lecture{${1:title}}[${3:start}]{${2:PDF file%file}}"
+		]
+	},
+
+
+	"lecture{}[][]{}":{
+		"prefix":"lecture",
+		"body":[
+			"\\lecture{${1:title}}[${3:start}][${4:end}]{${2:PDF file%file}}"
+		]
+	},
+
+
+	"lectureslides[]{}":{
+		"prefix":"lectureslides",
+		"body":[
+			"\\lectureslides[${2:start}]{${1:PDF file%file}}"
+		]
+	},
+
+
+	"lectureslides[][]{}":{
+		"prefix":"lectureslides",
+		"body":[
+			"\\lectureslides[${2:start}][${3:end}]{${1:PDF file%file}}"
 		]
 	}
 }

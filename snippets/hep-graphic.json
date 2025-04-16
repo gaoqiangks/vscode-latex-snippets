@@ -1,7 +1,7 @@
 {
 
 
-	"graphicpath":{
+	"graphicpath{}":{
 		"prefix":"graphicpath",
 		"body":[
 			"\\graphicpath{${1:path%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"includetikz":{
+	"includetikz{}":{
 		"prefix":"includetikz",
 		"body":[
 			"\\includetikz{${1:file}}"
@@ -17,34 +17,34 @@
 	},
 
 
-	"includetikz":{
-		"prefix":"includetikz",
+	"includefeynman{}":{
+		"prefix":"includefeynman",
 		"body":[
-			"\\includetikz[${2:width%plain}]{${1:file}}"
+			"\\includefeynman{${1:file}}"
 		]
 	},
 
 
-	"includetikz*":{
-		"prefix":"includetikz*",
+	"includetikz*{}":{
+		"prefix":"*includetikz",
 		"body":[
 			"\\includetikz*{${1:file}}"
 		]
 	},
 
 
-	"includetikz*":{
-		"prefix":"includetikz*",
+	"includetikz*[]{}":{
+		"prefix":"*includetikz",
 		"body":[
 			"\\includetikz*[${2:width%plain}]{${1:file}}"
 		]
 	},
 
 
-	"includefeynman":{
-		"prefix":"includefeynman",
+	"includetikz[]{}":{
+		"prefix":"includetikz",
 		"body":[
-			"\\includefeynman{${1:file}}"
+			"\\includetikz[${2:width%plain}]{${1:file}}"
 		]
 	}
 }

@@ -1,18 +1,10 @@
 {
 
 
-	"attachfile":{
+	"attachfile{}":{
 		"prefix":"attachfile",
 		"body":[
 			"\\attachfile{${1:file}}"
-		]
-	},
-
-
-	"attachfile":{
-		"prefix":"attachfile",
-		"body":[
-			"\\attachfile[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -25,15 +17,7 @@
 	},
 
 
-	"noattachfile":{
-		"prefix":"noattachfile",
-		"body":[
-			"\\noattachfile[${1:options%keyvals}]"
-		]
-	},
-
-
-	"notextattachfile":{
+	"notextattachfile{}":{
 		"prefix":"notextattachfile",
 		"body":[
 			"\\notextattachfile{${1:text}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"notextattachfile":{
-		"prefix":"notextattachfile",
-		"body":[
-			"\\notextattachfile[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"textattachfile":{
+	"textattachfile{}{}":{
 		"prefix":"textattachfile",
 		"body":[
 			"\\textattachfile{${1:file}}{${2:text}}"
@@ -57,18 +33,42 @@
 	},
 
 
-	"textattachfile":{
-		"prefix":"textattachfile",
+	"attachfilesetup{}":{
+		"prefix":"attachfilesetup",
 		"body":[
-			"\\textattachfile[${3:options%keyvals}]{${1:file}}{${2:text}}"
+			"\\attachfilesetup{${1:options%keyvals}}"
 		]
 	},
 
 
-	"attachfilesetup":{
-		"prefix":"attachfilesetup",
+	"attachfile[]{}":{
+		"prefix":"attachfile",
 		"body":[
-			"\\attachfilesetup{${1:options%keyvals}}"
+			"\\attachfile[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"noattachfile[]":{
+		"prefix":"noattachfile",
+		"body":[
+			"\\noattachfile[${1:options%keyvals}]"
+		]
+	},
+
+
+	"notextattachfile[]{}":{
+		"prefix":"notextattachfile",
+		"body":[
+			"\\notextattachfile[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"textattachfile[]{}{}":{
+		"prefix":"textattachfile",
+		"body":[
+			"\\textattachfile[${3:options%keyvals}]{${1:file}}{${2:text}}"
 		]
 	}
 }

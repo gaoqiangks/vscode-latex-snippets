@@ -1,7 +1,7 @@
 {
 
 
-	"checklistings":{
+	"checklistings{}":{
 		"prefix":"checklistings",
 		"body":[
 			"\\checklistings{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"chklistingmsg":{
+	"chklistingmsg{}":{
 		"prefix":"chklistingmsg",
 		"body":[
 			"\\chklistingmsg{${1:label}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"chklistingerr":{
+	"chklistingerr{}":{
 		"prefix":"chklistingerr",
 		"body":[
 			"\\chklistingerr{${1:label}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"setchklistingcmd":{
+	"setchklistingcmd{}":{
 		"prefix":"setchklistingcmd",
 		"body":[
 			"\\setchklistingcmd{${1:command}}"
@@ -97,21 +97,11 @@
 	},
 
 
-	"ChkListingMsg":{
-		"prefix":"ChkListingMsg",
-		"body":[
-			"\\begin{ChkListingMsg}",
-			"\t$1",
-			"\\end{ChkListingMsg}"
-		]
-	},
-
-
 	"chklisting":{
 		"prefix":"chklisting",
 		"body":[
 			"\\begin{chklisting}",
-			"\t$1",
+				"\t$1",
 			"\\end{chklisting}"
 		]
 	},
@@ -121,8 +111,28 @@
 		"prefix":"ChkListingErr",
 		"body":[
 			"\\begin{ChkListingErr}",
-			"\t$1",
+				"\t$1",
 			"\\end{ChkListingErr}"
+		]
+	},
+
+
+	"ChkListingMsg":{
+		"prefix":"ChkListingMsg",
+		"body":[
+			"\\begin{ChkListingMsg}",
+				"\t$1",
+			"\\end{ChkListingMsg}"
+		]
+	},
+
+
+	"chklisting":{
+		"prefix":"chklisting",
+		"body":[
+			"\\begin{chklisting}",
+				"\t$1",
+			"\\end{chklisting}"
 		]
 	}
 }

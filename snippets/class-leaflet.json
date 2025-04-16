@@ -1,7 +1,7 @@
 {
 
 
-	"setmargins":{
+	"setmargins{}{}{}{}":{
 		"prefix":"setmargins",
 		"body":[
 			"\\setmargins{${1:top%l}}{${2:bottom%l}}{${3:left%l}}{${4:right%l}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"CutLine":{
+	"CutLine{}":{
 		"prefix":"CutLine",
 		"body":[
 			"\\CutLine{${1:page num}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"CutLine*":{
-		"prefix":"CutLine*",
-		"body":[
-			"\\CutLine*{${1:page num}}"
-		]
-	},
-
-
-	"AddToBackground":{
+	"AddToBackground{}{}":{
 		"prefix":"AddToBackground",
 		"body":[
 			"\\AddToBackground{${1:page num}}{${2:picture commands%definition}}"
-		]
-	},
-
-
-	"AddToBackground*":{
-		"prefix":"AddToBackground*",
-		"body":[
-			"\\AddToBackground*{${1:page num}}{${2:picture commands%definition}}"
 		]
 	},
 
@@ -181,6 +165,22 @@
 		"prefix":"foldcorrfalse",
 		"body":[
 			"\\foldcorrfalse"
+		]
+	},
+
+
+	"CutLine*{}":{
+		"prefix":"*CutLine",
+		"body":[
+			"\\CutLine*{${1:page num}}"
+		]
+	},
+
+
+	"AddToBackground*{}{}":{
+		"prefix":"*AddToBackground",
+		"body":[
+			"\\AddToBackground*{${1:page num}}{${2:picture commands%definition}}"
 		]
 	}
 }

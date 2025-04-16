@@ -9,7 +9,7 @@
 	},
 
 
-	"NumberTheoremsAs":{
+	"NumberTheoremsAs{}":{
 		"prefix":"NumberTheoremsAs",
 		"body":[
 			"\\NumberTheoremsAs{${1:counter}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"NumberTheoremsIn":{
+	"NumberTheoremsIn{}":{
 		"prefix":"NumberTheoremsIn",
 		"body":[
 			"\\NumberTheoremsIn{${1:counter}}"
@@ -41,11 +41,31 @@
 	},
 
 
+	"theo":{
+		"prefix":"theo",
+		"body":[
+			"\\begin{theo}",
+				"\t$1",
+			"\\end{theo}"
+		]
+	},
+
+
+	"prop":{
+		"prefix":"prop",
+		"body":[
+			"\\begin{prop}",
+				"\t$1",
+			"\\end{prop}"
+		]
+	},
+
+
 	"conj":{
 		"prefix":"conj",
 		"body":[
 			"\\begin{conj}",
-			"\t$1",
+				"\t$1",
 			"\\end{conj}"
 		]
 	},
@@ -55,28 +75,8 @@
 		"prefix":"coro",
 		"body":[
 			"\\begin{coro}",
-			"\t$1",
+				"\t$1",
 			"\\end{coro}"
-		]
-	},
-
-
-	"defi":{
-		"prefix":"defi",
-		"body":[
-			"\\begin{defi}",
-			"\t$1",
-			"\\end{defi}"
-		]
-	},
-
-
-	"prop":{
-		"prefix":"prop",
-		"body":[
-			"\\begin{prop}",
-			"\t$1",
-			"\\end{prop}"
 		]
 	},
 
@@ -85,17 +85,57 @@
 		"prefix":"lemm",
 		"body":[
 			"\\begin{lemm}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemm}"
 		]
 	},
 
 
+	"defi":{
+		"prefix":"defi",
+		"body":[
+			"\\begin{defi}",
+				"\t$1",
+			"\\end{defi}"
+		]
+	},
+
+
+	"rema":{
+		"prefix":"rema",
+		"body":[
+			"\\begin{rema}",
+				"\t$1",
+			"\\end{rema}"
+		]
+	},
+
+
+	"exem":{
+		"prefix":"exem",
+		"body":[
+			"\\begin{exem}",
+				"\t$1",
+			"\\end{exem}"
+		]
+	},
+
+
+	"enonce":{
+		"prefix":"enonce",
+		"body":[
+			"\\begin{enonce}",
+				"\t$1",
+			"\\end{enonce}"
+		]
+	},
+
+
 	"enonce*":{
-		"prefix":"enonce*",
+		"prefix":"enonce",
 		"body":[
 			"\\begin{enonce*}",
-			"\t$1",
+				"\t$1",
 			"\\end{enonce*}"
 		]
 	},
@@ -105,28 +145,58 @@
 		"prefix":"theo",
 		"body":[
 			"\\begin{theo}",
-			"\t$1",
+				"\t$1",
 			"\\end{theo}"
 		]
 	},
 
 
-	"enonce":{
-		"prefix":"enonce",
+	"prop":{
+		"prefix":"prop",
 		"body":[
-			"\\begin{enonce}",
-			"\t$1",
-			"\\end{enonce}"
+			"\\begin{prop}",
+				"\t$1",
+			"\\end{prop}"
 		]
 	},
 
 
-	"exem":{
-		"prefix":"exem",
+	"conj":{
+		"prefix":"conj",
 		"body":[
-			"\\begin{exem}",
-			"\t$1",
-			"\\end{exem}"
+			"\\begin{conj}",
+				"\t$1",
+			"\\end{conj}"
+		]
+	},
+
+
+	"coro":{
+		"prefix":"coro",
+		"body":[
+			"\\begin{coro}",
+				"\t$1",
+			"\\end{coro}"
+		]
+	},
+
+
+	"lemm":{
+		"prefix":"lemm",
+		"body":[
+			"\\begin{lemm}",
+				"\t$1",
+			"\\end{lemm}"
+		]
+	},
+
+
+	"defi":{
+		"prefix":"defi",
+		"body":[
+			"\\begin{defi}",
+				"\t$1",
+			"\\end{defi}"
 		]
 	},
 
@@ -135,8 +205,18 @@
 		"prefix":"rema",
 		"body":[
 			"\\begin{rema}",
-			"\t$1",
+				"\t$1",
 			"\\end{rema}"
+		]
+	},
+
+
+	"exem":{
+		"prefix":"exem",
+		"body":[
+			"\\begin{exem}",
+				"\t$1",
+			"\\end{exem}"
 		]
 	}
 }

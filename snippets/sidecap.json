@@ -17,7 +17,7 @@
 	},
 
 
-	"sidecaptionvpos":{
+	"sidecaptionvpos{}{}":{
 		"prefix":"sidecaptionvpos",
 		"body":[
 			"\\sidecaptionvpos{${1:arg1}}{${2:arg2}}"
@@ -25,12 +25,12 @@
 	},
 
 
-	"SCfigure*":{
-		"prefix":"SCfigure*",
+	"SCtable":{
+		"prefix":"SCtable",
 		"body":[
-			"\\begin{SCfigure*}",
-			"\t$1",
-			"\\end{SCfigure*}"
+			"\\begin{SCtable}",
+				"\t$1",
+			"\\end{SCtable}"
 		]
 	},
 
@@ -39,7 +39,7 @@
 		"prefix":"SCfigure",
 		"body":[
 			"\\begin{SCfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{SCfigure}"
 		]
 	},
@@ -49,8 +49,28 @@
 		"prefix":"wide",
 		"body":[
 			"\\begin{wide}",
-			"\t$1",
+				"\t$1",
 			"\\end{wide}"
+		]
+	},
+
+
+	"SCtable*":{
+		"prefix":"*SCtable",
+		"body":[
+			"\\begin{SCtable*}",
+				"\t$1",
+			"\\end{SCtable*}"
+		]
+	},
+
+
+	"SCfigure*":{
+		"prefix":"*SCfigure",
+		"body":[
+			"\\begin{SCfigure*}",
+				"\t$1",
+			"\\end{SCfigure*}"
 		]
 	},
 
@@ -59,18 +79,78 @@
 		"prefix":"SCtable",
 		"body":[
 			"\\begin{SCtable}",
-			"\t$1",
+				"\t$1",
 			"\\end{SCtable}"
 		]
 	},
 
 
+	"SCtable":{
+		"prefix":"SCtable",
+		"body":[
+			"\\begin{SCtable}",
+				"\t$1",
+			"\\end{SCtable}"
+		]
+	},
+
+
+	"SCfigure":{
+		"prefix":"SCfigure",
+		"body":[
+			"\\begin{SCfigure}",
+				"\t$1",
+			"\\end{SCfigure}"
+		]
+	},
+
+
+	"SCfigure":{
+		"prefix":"SCfigure",
+		"body":[
+			"\\begin{SCfigure}",
+				"\t$1",
+			"\\end{SCfigure}"
+		]
+	},
+
+
 	"SCtable*":{
-		"prefix":"SCtable*",
+		"prefix":"SCtable",
 		"body":[
 			"\\begin{SCtable*}",
-			"\t$1",
+				"\t$1",
 			"\\end{SCtable*}"
+		]
+	},
+
+
+	"SCtable*":{
+		"prefix":"SCtable",
+		"body":[
+			"\\begin{SCtable*}",
+				"\t$1",
+			"\\end{SCtable*}"
+		]
+	},
+
+
+	"SCfigure*":{
+		"prefix":"SCfigure",
+		"body":[
+			"\\begin{SCfigure*}",
+				"\t$1",
+			"\\end{SCfigure*}"
+		]
+	},
+
+
+	"SCfigure*":{
+		"prefix":"SCfigure",
+		"body":[
+			"\\begin{SCfigure*}",
+				"\t$1",
+			"\\end{SCfigure*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"abs":{
+	"abs{}":{
 		"prefix":"abs",
 		"body":[
 			"\\abs{${1:arg}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"build":{
+	"build{}{}":{
 		"prefix":"build",
 		"body":[
 			"\\build{${1:arg1}}{${2:arg2}}"
@@ -65,14 +65,6 @@
 	},
 
 
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\example[${1:score}]"
-		]
-	},
-
-
 	"exercise":{
 		"prefix":"exercise",
 		"body":[
@@ -81,15 +73,7 @@
 	},
 
 
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\exercise[${1:score}]"
-		]
-	},
-
-
-	"fivechoices":{
+	"fivechoices{}{}{}{}{}":{
 		"prefix":"fivechoices",
 		"body":[
 			"\\fivechoices{${1:opt1}}{${2:opt2}}{${3:opt3}}{${4:opt4}}{${5:opt5}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"fourchoices":{
+	"fourchoices{}{}{}{}":{
 		"prefix":"fourchoices",
 		"body":[
 			"\\fourchoices{${1:opt1}}{${2:opt2}}{${3:opt3}}{${4:opt4}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"group":{
+	"group{}{}":{
 		"prefix":"group",
 		"body":[
 			"\\group{${1:题组%text}}{${2:题组的描述%text}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"key":{
+	"key{}":{
 		"prefix":"key",
 		"body":[
 			"\\key{${1:key%text}}"
@@ -185,7 +169,7 @@
 	},
 
 
-	"notice":{
+	"notice{}":{
 		"prefix":"notice",
 		"body":[
 			"\\notice{${1:text}}"
@@ -201,15 +185,7 @@
 	},
 
 
-	"question":{
-		"prefix":"question",
-		"body":[
-			"\\question[${1:score}]"
-		]
-	},
-
-
-	"score":{
+	"score{}{}":{
 		"prefix":"score",
 		"body":[
 			"\\score{${1:step}}{${2:total}}"
@@ -217,7 +193,7 @@
 	},
 
 
-	"sixchoices":{
+	"sixchoices{}{}{}{}{}{}":{
 		"prefix":"sixchoices",
 		"body":[
 			"\\sixchoices{${1:opt1}}{${2:opt2}}{${3:opt3}}{${4:opt4}}{${5:opt5}}{${6:opt6}}"
@@ -233,7 +209,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -281,7 +257,7 @@
 	},
 
 
-	"threechoices":{
+	"threechoices{}{}{}":{
 		"prefix":"threechoices",
 		"body":[
 			"\\threechoices{${1:opt1}}{${2:opt2}}{${3:opt3}}"
@@ -289,22 +265,26 @@
 	},
 
 
-	"subquestions":{
-		"prefix":"subquestions",
+	"example[]":{
+		"prefix":"example",
 		"body":[
-			"\\begin{subquestions}",
-			"\t$1",
-			"\\end{subquestions}"
+			"\\example[${1:score}]"
 		]
 	},
 
 
-	"solution":{
-		"prefix":"solution",
+	"exercise[]":{
+		"prefix":"exercise",
 		"body":[
-			"\\begin{solution}",
-			"\t$1",
-			"\\end{solution}"
+			"\\exercise[${1:score}]"
+		]
+	},
+
+
+	"question[]":{
+		"prefix":"question",
+		"body":[
+			"\\question[${1:score}]"
 		]
 	},
 
@@ -313,7 +293,7 @@
 		"prefix":"groups",
 		"body":[
 			"\\begin{groups}",
-			"\t$1",
+				"\t$1",
 			"\\end{groups}"
 		]
 	},
@@ -323,7 +303,37 @@
 		"prefix":"questions",
 		"body":[
 			"\\begin{questions}",
-			"\t$1",
+				"\t$1",
+			"\\end{questions}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"subquestions":{
+		"prefix":"subquestions",
+		"body":[
+			"\\begin{subquestions}",
+				"\t$1",
+			"\\end{subquestions}"
+		]
+	},
+
+
+	"questions":{
+		"prefix":"questions",
+		"body":[
+			"\\begin{questions}",
+				"\t$1",
 			"\\end{questions}"
 		]
 	}

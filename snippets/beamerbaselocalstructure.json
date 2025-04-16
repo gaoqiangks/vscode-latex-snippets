@@ -1,7 +1,7 @@
 {
 
 
-	"frametitle":{
+	"frametitle{}":{
 		"prefix":"frametitle",
 		"body":[
 			"\\frametitle{${1:title}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"frametitle":{
-		"prefix":"frametitle",
-		"body":[
-			"\\frametitle[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"frametitle<overlay specification>":{
+	"frametitle<overlay specification>{}":{
 		"prefix":"frametitle<overlay specification>",
 		"body":[
 			"\\frametitle<overlay specification>{${1:title}}"
-		]
-	},
-
-
-	"frametitle<overlay specification>":{
-		"prefix":"frametitle<overlay specification>",
-		"body":[
-			"\\frametitle<overlay specification>[${2:short title}]{${1:title}}"
 		]
 	},
 
@@ -49,15 +33,7 @@
 	},
 
 
-	"insertshortframetitle":{
-		"prefix":"insertshortframetitle",
-		"body":[
-			"\\insertshortframetitle[${1:options%keyvals}]"
-		]
-	},
-
-
-	"framesubtitle":{
+	"framesubtitle{}":{
 		"prefix":"framesubtitle",
 		"body":[
 			"\\framesubtitle{${1:title}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"framesubtitle<overlay specification>":{
+	"framesubtitle<overlay specification>{}":{
 		"prefix":"framesubtitle<overlay specification>",
 		"body":[
 			"\\framesubtitle<overlay specification>{${1:title}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"alert":{
+	"alert{}":{
 		"prefix":"alert",
 		"body":[
 			"\\alert{${1:highlighted text%text}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"alert<overlay specification>":{
+	"alert<overlay specification>{}":{
 		"prefix":"alert<overlay specification>",
 		"body":[
 			"\\alert<overlay specification>{${1:highlighted text%text}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"structure":{
+	"structure{}":{
 		"prefix":"structure",
 		"body":[
 			"\\structure{${1:text}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"structure<overlay specification>":{
+	"structure<overlay specification>{}":{
 		"prefix":"structure<overlay specification>",
 		"body":[
 			"\\structure<overlay specification>{${1:text}}"
@@ -153,15 +129,7 @@
 	},
 
 
-	"bibitem<overlay specification>":{
-		"prefix":"bibitem<overlay specification>",
-		"body":[
-			"\\bibitem<overlay specification>[${2:citation text}]{${1:citekey}}"
-		]
-	},
-
-
-	"bibitem<overlay specification>":{
+	"bibitem<overlay specification>{}":{
 		"prefix":"bibitem<overlay specification>",
 		"body":[
 			"\\bibitem<overlay specification>{${1:citekey}}"
@@ -201,82 +169,34 @@
 	},
 
 
-	"abstract":{
-		"prefix":"abstract",
+	"frametitle[]{}":{
+		"prefix":"frametitle",
 		"body":[
-			"\\begin{abstract}",
-			"\t$1",
-			"\\end{abstract}"
+			"\\frametitle[${2:short title}]{${1:title}}"
 		]
 	},
 
 
-	"quotation":{
-		"prefix":"quotation",
+	"frametitle<overlay specification>[]{}":{
+		"prefix":"frametitle<overlay specification>",
 		"body":[
-			"\\begin{quotation}",
-			"\t$1",
-			"\\end{quotation}"
+			"\\frametitle<overlay specification>[${2:short title}]{${1:title}}"
 		]
 	},
 
 
-	"alertblock":{
-		"prefix":"alertblock",
+	"insertshortframetitle[]":{
+		"prefix":"insertshortframetitle",
 		"body":[
-			"\\begin{alertblock}",
-			"\t$1",
-			"\\end{alertblock}"
+			"\\insertshortframetitle[${1:options%keyvals}]"
 		]
 	},
 
 
-	"quote":{
-		"prefix":"quote",
+	"bibitem<overlay specification>[]{}":{
+		"prefix":"bibitem<overlay specification>",
 		"body":[
-			"\\begin{quote}",
-			"\t$1",
-			"\\end{quote}"
-		]
-	},
-
-
-	"exampleblock":{
-		"prefix":"exampleblock",
-		"body":[
-			"\\begin{exampleblock}",
-			"\t$1",
-			"\\end{exampleblock}"
-		]
-	},
-
-
-	"block":{
-		"prefix":"block",
-		"body":[
-			"\\begin{block}",
-			"\t$1",
-			"\\end{block}"
-		]
-	},
-
-
-	"verse":{
-		"prefix":"verse",
-		"body":[
-			"\\begin{verse}",
-			"\t$1",
-			"\\end{verse}"
-		]
-	},
-
-
-	"structureenv":{
-		"prefix":"structureenv",
-		"body":[
-			"\\begin{structureenv}",
-			"\t$1",
-			"\\end{structureenv}"
+			"\\bibitem<overlay specification>[${2:citation text}]{${1:citekey}}"
 		]
 	},
 
@@ -285,8 +205,158 @@
 		"prefix":"alertenv",
 		"body":[
 			"\\begin{alertenv}",
-			"\t$1",
+				"\t$1",
 			"\\end{alertenv}"
+		]
+	},
+
+
+	"alertenv":{
+		"prefix":"alertenv",
+		"body":[
+			"\\begin{alertenv}",
+				"\t$1",
+			"\\end{alertenv}"
+		]
+	},
+
+
+	"structureenv":{
+		"prefix":"structureenv",
+		"body":[
+			"\\begin{structureenv}",
+				"\t$1",
+			"\\end{structureenv}"
+		]
+	},
+
+
+	"structureenv":{
+		"prefix":"structureenv",
+		"body":[
+			"\\begin{structureenv}",
+				"\t$1",
+			"\\end{structureenv}"
+		]
+	},
+
+
+	"block":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block}",
+				"\t$1",
+			"\\end{block}"
+		]
+	},
+
+
+	"block":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block}",
+				"\t$1",
+			"\\end{block}"
+		]
+	},
+
+
+	"block":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block}",
+				"\t$1",
+			"\\end{block}"
+		]
+	},
+
+
+	"alertblock":{
+		"prefix":"alertblock",
+		"body":[
+			"\\begin{alertblock}",
+				"\t$1",
+			"\\end{alertblock}"
+		]
+	},
+
+
+	"alertblock":{
+		"prefix":"alertblock",
+		"body":[
+			"\\begin{alertblock}",
+				"\t$1",
+			"\\end{alertblock}"
+		]
+	},
+
+
+	"alertblock":{
+		"prefix":"alertblock",
+		"body":[
+			"\\begin{alertblock}",
+				"\t$1",
+			"\\end{alertblock}"
+		]
+	},
+
+
+	"exampleblock":{
+		"prefix":"exampleblock",
+		"body":[
+			"\\begin{exampleblock}",
+				"\t$1",
+			"\\end{exampleblock}"
+		]
+	},
+
+
+	"exampleblock":{
+		"prefix":"exampleblock",
+		"body":[
+			"\\begin{exampleblock}",
+				"\t$1",
+			"\\end{exampleblock}"
+		]
+	},
+
+
+	"abstract":{
+		"prefix":"abstract",
+		"body":[
+			"\\begin{abstract}",
+				"\t$1",
+			"\\end{abstract}"
+		]
+	},
+
+
+	"verse":{
+		"prefix":"verse",
+		"body":[
+			"\\begin{verse}",
+				"\t$1",
+			"\\end{verse}"
+		]
+	},
+
+
+	"quotation":{
+		"prefix":"quotation",
+		"body":[
+			"\\begin{quotation}",
+				"\t$1",
+			"\\end{quotation}"
+		]
+	},
+
+
+	"quote":{
+		"prefix":"quote",
+		"body":[
+			"\\begin{quote}",
+				"\t$1",
+			"\\end{quote}"
 		]
 	}
 }

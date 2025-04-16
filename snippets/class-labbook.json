@@ -41,7 +41,7 @@
 	},
 
 
-	"experiment":{
+	"experiment{}":{
 		"prefix":"experiment",
 		"body":[
 			"\\experiment{${1:title}}"
@@ -49,23 +49,7 @@
 	},
 
 
-	"experiment":{
-		"prefix":"experiment",
-		"body":[
-			"\\experiment[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"experiment*":{
-		"prefix":"experiment*",
-		"body":[
-			"\\experiment*{${1:title}}"
-		]
-	},
-
-
-	"subexperiment":{
+	"subexperiment{}":{
 		"prefix":"subexperiment",
 		"body":[
 			"\\subexperiment{${1:title}}"
@@ -73,23 +57,7 @@
 	},
 
 
-	"subexperiment":{
-		"prefix":"subexperiment",
-		"body":[
-			"\\subexperiment[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"subexperiment*":{
-		"prefix":"subexperiment*",
-		"body":[
-			"\\subexperiment*{${1:title}}"
-		]
-	},
-
-
-	"newexperiment":{
+	"newexperiment{}{}":{
 		"prefix":"newexperiment",
 		"body":[
 			"\\newexperiment{${1:abbrev}}{${2:long form%text}}"
@@ -97,15 +65,7 @@
 	},
 
 
-	"newexperiment":{
-		"prefix":"newexperiment",
-		"body":[
-			"\\newexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
-		]
-	},
-
-
-	"newsubexperiment":{
+	"newsubexperiment{}{}":{
 		"prefix":"newsubexperiment",
 		"body":[
 			"\\newsubexperiment{${1:abbrev}}{${2:long form%text}}"
@@ -113,15 +73,7 @@
 	},
 
 
-	"newsubexperiment":{
-		"prefix":"newsubexperiment",
-		"body":[
-			"\\newsubexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
-		]
-	},
-
-
-	"experimentmark":{
+	"experimentmark{}":{
 		"prefix":"experimentmark",
 		"body":[
 			"\\experimentmark{${1:code}}"
@@ -129,7 +81,7 @@
 	},
 
 
-	"subexperimentmark":{
+	"subexperimentmark{}":{
 		"prefix":"subexperimentmark",
 		"body":[
 			"\\subexperimentmark{${1:code}}"
@@ -157,6 +109,54 @@
 		"prefix":"thesubexperiment",
 		"body":[
 			"\\thesubexperiment"
+		]
+	},
+
+
+	"experiment*{}":{
+		"prefix":"*experiment",
+		"body":[
+			"\\experiment*{${1:title}}"
+		]
+	},
+
+
+	"subexperiment*{}":{
+		"prefix":"*subexperiment",
+		"body":[
+			"\\subexperiment*{${1:title}}"
+		]
+	},
+
+
+	"experiment[]{}":{
+		"prefix":"experiment",
+		"body":[
+			"\\experiment[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"subexperiment[]{}":{
+		"prefix":"subexperiment",
+		"body":[
+			"\\subexperiment[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"newexperiment{}[]{}":{
+		"prefix":"newexperiment",
+		"body":[
+			"\\newexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
+		]
+	},
+
+
+	"newsubexperiment{}[]{}":{
+		"prefix":"newsubexperiment",
+		"body":[
+			"\\newsubexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
 		]
 	}
 }

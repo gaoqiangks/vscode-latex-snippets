@@ -1,7 +1,7 @@
 {
 
 
-	"setbeamersize":{
+	"setbeamersize{}":{
 		"prefix":"setbeamersize",
 		"body":[
 			"\\setbeamersize{${1:options%keyvals}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"column":{
+	"column{}":{
 		"prefix":"column",
 		"body":[
 			"\\column{${1:column width%l}}"
-		]
-	},
-
-
-	"column":{
-		"prefix":"column",
-		"body":[
-			"\\column[${2:placement%keyvals}]{${1:column width%l}}"
-		]
-	},
-
-
-	"column<overlay specification>":{
-		"prefix":"column<overlay specification>",
-		"body":[
-			"\\column<overlay specification>[${2:placement%keyvals}]{${1:column width%l}}"
 		]
 	},
 
@@ -57,7 +41,7 @@
 	},
 
 
-	"footnote<overlay specification>":{
+	"footnote<overlay specification>{}":{
 		"prefix":"footnote<overlay specification>",
 		"body":[
 			"\\footnote<overlay specification>{${1:text}}"
@@ -65,7 +49,23 @@
 	},
 
 
-	"footnote<overlay specification>":{
+	"column[]{}":{
+		"prefix":"column",
+		"body":[
+			"\\column[${2:placement%keyvals}]{${1:column width%l}}"
+		]
+	},
+
+
+	"column<overlay specification>[]{}":{
+		"prefix":"column<overlay specification>",
+		"body":[
+			"\\column<overlay specification>[${2:placement%keyvals}]{${1:column width%l}}"
+		]
+	},
+
+
+	"footnote<overlay specification>[]{}":{
 		"prefix":"footnote<overlay specification>",
 		"body":[
 			"\\footnote<overlay specification>[${2:options%keyvals}]{${1:text}}"
@@ -77,7 +77,7 @@
 		"prefix":"columns",
 		"body":[
 			"\\begin{columns}",
-			"\t$1",
+				"\t$1",
 			"\\end{columns}"
 		]
 	},
@@ -87,7 +87,47 @@
 		"prefix":"column",
 		"body":[
 			"\\begin{column}",
-			"\t$1",
+				"\t$1",
+			"\\end{column}"
+		]
+	},
+
+
+	"columns":{
+		"prefix":"columns",
+		"body":[
+			"\\begin{columns}",
+				"\t$1",
+			"\\end{columns}"
+		]
+	},
+
+
+	"columns":{
+		"prefix":"columns",
+		"body":[
+			"\\begin{columns}",
+				"\t$1",
+			"\\end{columns}"
+		]
+	},
+
+
+	"column":{
+		"prefix":"column",
+		"body":[
+			"\\begin{column}",
+				"\t$1",
+			"\\end{column}"
+		]
+	},
+
+
+	"column":{
+		"prefix":"column",
+		"body":[
+			"\\begin{column}",
+				"\t$1",
 			"\\end{column}"
 		]
 	}

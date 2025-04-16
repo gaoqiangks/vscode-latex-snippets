@@ -1,26 +1,10 @@
 {
 
 
-	"printlen":{
+	"printlen{}":{
 		"prefix":"printlen",
 		"body":[
 			"\\printlen{${1:dimen}}"
-		]
-	},
-
-
-	"printlen":{
-		"prefix":"printlen",
-		"body":[
-			"\\printlen[${2:digits}]{${1:dimen}}"
-		]
-	},
-
-
-	"printlen":{
-		"prefix":"printlen",
-		"body":[
-			"\\printlen[${2:digits}][${3:unit}]{${1:dimen}}"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"printlenCalculate":{
+	"printlenCalculate{}":{
 		"prefix":"printlenCalculate",
 		"body":[
 			"\\printlenCalculate{${1:dimen}}"
@@ -89,7 +73,23 @@
 	},
 
 
-	"printlenCalculate":{
+	"printlen[]{}":{
+		"prefix":"printlen",
+		"body":[
+			"\\printlen[${2:digits}]{${1:dimen}}"
+		]
+	},
+
+
+	"printlen[][]{}":{
+		"prefix":"printlen",
+		"body":[
+			"\\printlen[${2:digits}][${3:unit}]{${1:dimen}}"
+		]
+	},
+
+
+	"printlenCalculate[]{}":{
 		"prefix":"printlenCalculate",
 		"body":[
 			"\\printlenCalculate[${2:unit}]{${1:dimen}}"

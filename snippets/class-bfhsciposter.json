@@ -25,7 +25,7 @@
 	},
 
 
-	"footer":{
+	"footer{}":{
 		"prefix":"footer",
 		"body":[
 			"\\footer{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"footergraphics":{
+	"footergraphics{}":{
 		"prefix":"footergraphics",
 		"body":[
 			"\\footergraphics{${1:graphics code}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"footerqrcode*":{
-		"prefix":"footerqrcode*",
-		"body":[
-			"\\footerqrcode*{${1:URL}}"
-		]
-	},
-
-
-	"footerqrcode":{
+	"footerqrcode{}":{
 		"prefix":"footerqrcode",
 		"body":[
 			"\\footerqrcode{${1:URL}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"inst":{
+	"inst{}":{
 		"prefix":"inst",
 		"body":[
 			"\\inst{${1:arg}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:institute%text}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"titlegraphic":{
+	"titlegraphic{}":{
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic{${1:graphics code}}"
@@ -129,11 +121,19 @@
 	},
 
 
+	"footerqrcode*{}":{
+		"prefix":"*footerqrcode",
+		"body":[
+			"\\footerqrcode*{${1:URL}}"
+		]
+	},
+
+
 	"bfhTabular":{
 		"prefix":"bfhTabular",
 		"body":[
 			"\\begin{bfhTabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{bfhTabular}"
 		]
 	},
@@ -143,8 +143,18 @@
 		"prefix":"bfhTblr",
 		"body":[
 			"\\begin{bfhTblr}",
-			"\t$1",
+				"\t$1",
 			"\\end{bfhTblr}"
+		]
+	},
+
+
+	"bfhTabular":{
+		"prefix":"bfhTabular",
+		"body":[
+			"\\begin{bfhTabular}",
+				"\t$1",
+			"\\end{bfhTabular}"
 		]
 	}
 }

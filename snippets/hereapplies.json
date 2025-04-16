@@ -1,7 +1,7 @@
 {
 
 
-	"hereapplies":{
+	"hereapplies{}":{
 		"prefix":"hereapplies",
 		"body":[
 			"\\hereapplies{${1:identifiers}}"
@@ -9,42 +9,10 @@
 	},
 
 
-	"hereapplies":{
-		"prefix":"hereapplies",
-		"body":[
-			"\\hereapplies[${2:label}]{${1:identifiers}}"
-		]
-	},
-
-
-	"hereapplies*":{
-		"prefix":"hereapplies*",
-		"body":[
-			"\\hereapplies*{${1:identifiers}}"
-		]
-	},
-
-
-	"hereapplies*":{
-		"prefix":"hereapplies*",
-		"body":[
-			"\\hereapplies*[${2:label}]{${1:identifiers}}"
-		]
-	},
-
-
-	"whereapplies":{
+	"whereapplies{}":{
 		"prefix":"whereapplies",
 		"body":[
 			"\\whereapplies{${1:identifier}}"
-		]
-	},
-
-
-	"whereapplies*":{
-		"prefix":"whereapplies*",
-		"body":[
-			"\\whereapplies*{${1:identifier}}"
 		]
 	},
 
@@ -77,6 +45,38 @@
 		"prefix":"halastdelimiter",
 		"body":[
 			"\\halastdelimiter"
+		]
+	},
+
+
+	"hereapplies*{}":{
+		"prefix":"*hereapplies",
+		"body":[
+			"\\hereapplies*{${1:identifiers}}"
+		]
+	},
+
+
+	"hereapplies*[]{}":{
+		"prefix":"*hereapplies",
+		"body":[
+			"\\hereapplies*[${2:label}]{${1:identifiers}}"
+		]
+	},
+
+
+	"whereapplies*{}":{
+		"prefix":"*whereapplies",
+		"body":[
+			"\\whereapplies*{${1:identifier}}"
+		]
+	},
+
+
+	"hereapplies[]{}":{
+		"prefix":"hereapplies",
+		"body":[
+			"\\hereapplies[${2:label}]{${1:identifiers}}"
 		]
 	}
 }

@@ -9,15 +9,7 @@
 	},
 
 
-	"defineTColor":{
-		"prefix":"defineTColor",
-		"body":[
-			"\\defineTColor[${3:options%keyvals}]{${1:name}}{${2:color}}"
-		]
-	},
-
-
-	"defineTColor":{
+	"defineTColor{}{}":{
 		"prefix":"defineTColor",
 		"body":[
 			"\\defineTColor{${1:name}}{${2:color}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"psBrace":{
+	"psBrace()()":{
 		"prefix":"psBrace",
 		"body":[
 			"\\psBrace(${1:A})(${2:B})"
@@ -49,7 +41,7 @@
 	},
 
 
-	"psbrace":{
+	"psbrace()(){}":{
 		"prefix":"psbrace",
 		"body":[
 			"\\psbrace(${2:A})(${3:B}){${1:text}}"
@@ -57,39 +49,7 @@
 	},
 
 
-	"psBrace*":{
-		"prefix":"psBrace*",
-		"body":[
-			"\\psBrace*(${1:A})(${2:B})"
-		]
-	},
-
-
-	"psBrace*":{
-		"prefix":"psBrace*",
-		"body":[
-			"\\psBrace*[${1:options%keyvals}](${2:A})(${3:B})"
-		]
-	},
-
-
-	"psBrace":{
-		"prefix":"psBrace",
-		"body":[
-			"\\psBrace[${1:options%keyvals}](${2:A})(${3:B})"
-		]
-	},
-
-
-	"psbrace":{
-		"prefix":"psbrace",
-		"body":[
-			"\\psbrace[${2:options%keyvals}](${3:A})(${4:B}){${1:text}}"
-		]
-	},
-
-
-	"psCallout":{
+	"psCallout(){}":{
 		"prefix":"psCallout",
 		"body":[
 			"\\psCallout(${2:x},${3:y}){${1:text}}"
@@ -97,39 +57,7 @@
 	},
 
 
-	"psCallout":{
-		"prefix":"psCallout",
-		"body":[
-			"\\psCallout[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
-		]
-	},
-
-
-	"psCancel*":{
-		"prefix":"psCancel*",
-		"body":[
-			"\\psCancel*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"psCancel*":{
-		"prefix":"psCancel*",
-		"body":[
-			"\\psCancel*{${1:stuff}}"
-		]
-	},
-
-
-	"psCancel":{
-		"prefix":"psCancel",
-		"body":[
-			"\\psCancel[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"psCancel":{
+	"psCancel{}":{
 		"prefix":"psCancel",
 		"body":[
 			"\\psCancel{${1:stuff}}"
@@ -137,15 +65,7 @@
 	},
 
 
-	"psChart":{
-		"prefix":"psChart",
-		"body":[
-			"\\psChart[${4:options%keyvals}]{${1:list1}}{${2:list2}}{${3:radius}}"
-		]
-	},
-
-
-	"psChart":{
+	"psChart{}{}{}":{
 		"prefix":"psChart",
 		"body":[
 			"\\psChart{${1:list1}}{${2:list2}}{${3:radius}}"
@@ -153,7 +73,7 @@
 	},
 
 
-	"psCircleTangents":{
+	"psCircleTangents()(){}":{
 		"prefix":"psCircleTangents",
 		"body":[
 			"\\psCircleTangents(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:radius}}"
@@ -161,7 +81,7 @@
 	},
 
 
-	"psCircleTangents":{
+	"psCircleTangents(){}(){}":{
 		"prefix":"psCircleTangents",
 		"body":[
 			"\\psCircleTangents(${3:x1},${4:y1}){${1:radius1}}(${5:x2},${6:y2}){${2:radius2}}"
@@ -169,7 +89,7 @@
 	},
 
 
-	"psComment":{
+	"psComment()(){}":{
 		"prefix":"psComment",
 		"body":[
 			"\\psComment(${2:x0},${3:y0})(${4:x1},${5:y1}){${1:text}}"
@@ -177,111 +97,7 @@
 	},
 
 
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment(${4:x0},${5:y0})(${6:x1},${7:y1}){${1:text}}[${2:line macro}][${3:put macro}]"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*(${2:x0},${3:y0})(${4:x1},${5:y1}){${1:text}}"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*(${4:x0},${5:y0})(${6:x1},${7:y1}){${1:text}}[${2:line macro}][${3:put macro}]"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*[${2:options%keyvals}](${3:x0},${4:y0})(${5:x1},${6:y1}){${1:text}}"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*[${2:options%keyvals}](${5:x0},${6:y0})(${7:x1},${8:y1}){${1:text}}[${3:line macro}][${4:put macro}]"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*[${3:options%keyvals}]{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1}){${2:text}}"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*[${3:options%keyvals}]{${1:arrows}}(${6:x0},${7:y0})(${8:x1},${9:y1}){${2:text}}[${4:line macro}][${5:put macro}]"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1}){${2:text}}"
-		]
-	},
-
-
-	"psComment*":{
-		"prefix":"psComment*",
-		"body":[
-			"\\psComment*{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:text}}[${3:line macro}][${4:put macro}]"
-		]
-	},
-
-
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment[${2:options%keyvals}](${3:x0},${4:y0})(${5:x1},${6:y1}){${1:text}}"
-		]
-	},
-
-
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment[${2:options%keyvals}](${5:x0},${6:y0})(${7:x1},${8:y1}){${1:text}}[${3:line macro}][${4:put macro}]"
-		]
-	},
-
-
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment[${3:options%keyvals}]{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1}){${2:text}}"
-		]
-	},
-
-
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment[${3:options%keyvals}]{${1:arrows}}(${6:x0},${7:y0})(${8:x1},${9:y1}){${2:text}}[${4:line macro}][${5:put macro}]"
-		]
-	},
-
-
-	"psComment":{
+	"psComment{}()(){}":{
 		"prefix":"psComment",
 		"body":[
 			"\\psComment{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1}){${2:text}}"
@@ -289,23 +105,7 @@
 	},
 
 
-	"psComment":{
-		"prefix":"psComment",
-		"body":[
-			"\\psComment{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:text}}[${3:line macro}][${4:put macro}]"
-		]
-	},
-
-
-	"pscurvepoints":{
-		"prefix":"pscurvepoints",
-		"body":[
-			"\\pscurvepoints[${5:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function of t%definition}}{${4:root}}"
-		]
-	},
-
-
-	"pscurvepoints":{
+	"pscurvepoints{}{}{}{}":{
 		"prefix":"pscurvepoints",
 		"body":[
 			"\\pscurvepoints{${1:tmin}}{${2:tmax}}{${3:function of t%definition}}{${4:array root}}"
@@ -313,15 +113,7 @@
 	},
 
 
-	"psdice":{
-		"prefix":"psdice",
-		"body":[
-			"\\psdice[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"psdice":{
+	"psdice{}":{
 		"prefix":"psdice",
 		"body":[
 			"\\psdice{${1:number}}"
@@ -337,7 +129,7 @@
 	},
 
 
-	"psEllipseTangents":{
+	"psEllipseTangents()()()":{
 		"prefix":"psEllipseTangents",
 		"body":[
 			"\\psEllipseTangents(${1:x0},${2:y0})(${3:a},${4:b})(${5:xp},${6:yp})"
@@ -345,7 +137,7 @@
 	},
 
 
-	"psEllipseTangentsN":{
+	"psEllipseTangentsN()()(){}":{
 		"prefix":"psEllipseTangentsN",
 		"body":[
 			"\\psEllipseTangentsN(${2:x0},${3:y0})(${4:a},${5:b})(${6:xp},${7:yp}){${1:node name}}"
@@ -353,15 +145,7 @@
 	},
 
 
-	"psFormatInt":{
-		"prefix":"psFormatInt",
-		"body":[
-			"\\psFormatInt[${2:options%keyvals}]{${1:integer}}"
-		]
-	},
-
-
-	"psFormatInt":{
+	"psFormatInt{}":{
 		"prefix":"psFormatInt",
 		"body":[
 			"\\psFormatInt{${1:integer}}"
@@ -369,7 +153,7 @@
 	},
 
 
-	"psGetDistance":{
+	"psGetDistance()(){}":{
 		"prefix":"psGetDistance",
 		"body":[
 			"\\psGetDistance(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:macro%cmd}}"
@@ -377,15 +161,7 @@
 	},
 
 
-	"psGetDistance":{
-		"prefix":"psGetDistance",
-		"body":[
-			"\\psGetDistance[${2:decimals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:macro%cmd}}"
-		]
-	},
-
-
-	"psGetSlope":{
+	"psGetSlope()(){}":{
 		"prefix":"psGetSlope",
 		"body":[
 			"\\psGetSlope(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:macro%cmd}}"
@@ -393,7 +169,7 @@
 	},
 
 
-	"psGTriangle":{
+	"psGTriangle()()(){}{}{}":{
 		"prefix":"psGTriangle",
 		"body":[
 			"\\psGTriangle(${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3}){${1:color1}}{${2:color2}}{${3:color3}}"
@@ -401,7 +177,7 @@
 	},
 
 
-	"psHomothetie":{
+	"psHomothetie(){}{}":{
 		"prefix":"psHomothetie",
 		"body":[
 			"\\psHomothetie(${3:x},${4:y}){${1:factor}}{${2:stuff}}"
@@ -409,15 +185,7 @@
 	},
 
 
-	"psHomothetie":{
-		"prefix":"psHomothetie",
-		"body":[
-			"\\psHomothetie[${3:options%keyvals}](${4:x},${5:y}){${1:factor}}{${2:stuff}}"
-		]
-	},
-
-
-	"psIntersectionPoint":{
+	"psIntersectionPoint()()()(){}":{
 		"prefix":"psIntersectionPoint",
 		"body":[
 			"\\psIntersectionPoint(${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3}){${1:node name}}"
@@ -425,15 +193,7 @@
 	},
 
 
-	"psKiviat":{
-		"prefix":"psKiviat",
-		"body":[
-			"\\psKiviat[${3:options%keyvals}]{${1:number of edges}}{${2:radius}}"
-		]
-	},
-
-
-	"psKiviat":{
+	"psKiviat{}{}":{
 		"prefix":"psKiviat",
 		"body":[
 			"\\psKiviat{${1:number of edges}}{${2:radius}}"
@@ -441,15 +201,7 @@
 	},
 
 
-	"psKiviatAxes":{
-		"prefix":"psKiviatAxes",
-		"body":[
-			"\\psKiviatAxes[${3:options%keyvals}]{${1:number of edges}}{${2:radius}}"
-		]
-	},
-
-
-	"psKiviatAxes":{
+	"psKiviatAxes{}{}":{
 		"prefix":"psKiviatAxes",
 		"body":[
 			"\\psKiviatAxes{${1:number of edges}}{${2:radius}}"
@@ -457,15 +209,7 @@
 	},
 
 
-	"psKiviatLine":{
-		"prefix":"psKiviatLine",
-		"body":[
-			"\\psKiviatLine[${2:options%keyvals}]{${1:list}}"
-		]
-	},
-
-
-	"psKiviatLine":{
+	"psKiviatLine{}":{
 		"prefix":"psKiviatLine",
 		"body":[
 			"\\psKiviatLine{${1:list}}"
@@ -473,18 +217,10 @@
 	},
 
 
-	"psKiviatTicklines":{
+	"psKiviatTicklines{}{}":{
 		"prefix":"psKiviatTicklines",
 		"body":[
 			"\\psKiviatTicklines{${1:n}}{${2:radius}}"
-		]
-	},
-
-
-	"psKiviatTicklines":{
-		"prefix":"psKiviatTicklines",
-		"body":[
-			"\\psKiviatTicklines[${3:options%keyvals}]{${1:n}}{${2:radius}}"
 		]
 	},
 
@@ -497,15 +233,7 @@
 	},
 
 
-	"psMatrixPlot":{
-		"prefix":"psMatrixPlot",
-		"body":[
-			"\\psMatrixPlot[${4:options%keyvals}]{${1:rows}}{${2:columns}}{${3:data file%file}}"
-		]
-	},
-
-
-	"psMatrixPlot":{
+	"psMatrixPlot{}{}{}":{
 		"prefix":"psMatrixPlot",
 		"body":[
 			"\\psMatrixPlot{${1:rows}}{${2:columns}}{${3:data file%file}}"
@@ -521,7 +249,7 @@
 	},
 
 
-	"psOlympicRings":{
+	"psOlympicRings()":{
 		"prefix":"psOlympicRings",
 		"body":[
 			"\\psOlympicRings(${1:x},${2:y})"
@@ -529,15 +257,7 @@
 	},
 
 
-	"psOlympicRings":{
-		"prefix":"psOlympicRings",
-		"body":[
-			"\\psOlympicRings[${1:options%keyvals}](${2:x},${3:y})"
-		]
-	},
-
-
-	"psParallelLine":{
+	"psParallelLine()()(){}{}":{
 		"prefix":"psParallelLine",
 		"body":[
 			"\\psParallelLine(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:length}}{${2:end node name}}"
@@ -545,23 +265,7 @@
 	},
 
 
-	"psParallelLine":{
-		"prefix":"psParallelLine",
-		"body":[
-			"\\psParallelLine[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${1:length}}{${2:end node name}}"
-		]
-	},
-
-
-	"psParallelLine":{
-		"prefix":"psParallelLine",
-		"body":[
-			"\\psParallelLine[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2}){${2:length}}{${3:end node name}}"
-		]
-	},
-
-
-	"psParallelLine":{
+	"psParallelLine{}()()(){}{}":{
 		"prefix":"psParallelLine",
 		"body":[
 			"\\psParallelLine{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${2:length}}{${3:end node name}}"
@@ -569,7 +273,7 @@
 	},
 
 
-	"psColorLine":{
+	"psColorLine()()":{
 		"prefix":"psColorLine",
 		"body":[
 			"\\psColorLine(${1:x0},${2:y0})(${3:x1},${4:y1})"
@@ -577,7 +281,7 @@
 	},
 
 
-	"psColorLine":{
+	"psColorLine{}()()":{
 		"prefix":"psColorLine",
 		"body":[
 			"\\psColorLine{${1:arrows}}(${2:x0},${3:y0})(${4:x1},${5:y1})"
@@ -585,31 +289,7 @@
 	},
 
 
-	"psColorLine":{
-		"prefix":"psColorLine",
-		"body":[
-			"\\psColorLine[${1:options%keyvals}](${2:x0},${3:y0})(${4:x1},${5:y1})"
-		]
-	},
-
-
-	"psColorLine":{
-		"prefix":"psColorLine",
-		"body":[
-			"\\psColorLine[${2:options%keyvals}]{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1})"
-		]
-	},
-
-
-	"psparallelogrambox":{
-		"prefix":"psparallelogrambox",
-		"body":[
-			"\\psparallelogrambox[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"psparallelogrambox":{
+	"psparallelogrambox{}":{
 		"prefix":"psparallelogrambox",
 		"body":[
 			"\\psparallelogrambox{${1:stuff}}"
@@ -617,15 +297,7 @@
 	},
 
 
-	"psplotDiffEqn":{
-		"prefix":"psplotDiffEqn",
-		"body":[
-			"\\psplotDiffEqn[${5:options}]{${1:x0}}{${2:x1}}{${3:y0}}{${4:f(${6:x},${7:y},${8:y'},${9:...})}}"
-		]
-	},
-
-
-	"psplotDiffEqn":{
+	"psplotDiffEqn{}{}{}{}":{
 		"prefix":"psplotDiffEqn",
 		"body":[
 			"\\psplotDiffEqn{${1:x0}}{${2:x1}}{${3:y0}}{${4:f(${5:x},${6:y},${7:y'},${8:...})}}"
@@ -633,31 +305,7 @@
 	},
 
 
-	"psplotTangent*":{
-		"prefix":"psplotTangent*",
-		"body":[
-			"\\psplotTangent*[${4:options%keyvals}]{${1:x}}{${2:dx}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psplotTangent*":{
-		"prefix":"psplotTangent*",
-		"body":[
-			"\\psplotTangent*{${1:x}}{${2:dx}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psplotTangent":{
-		"prefix":"psplotTangent",
-		"body":[
-			"\\psplotTangent[${4:options%keyvals}]{${1:x}}{${2:dx}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psplotTangent":{
+	"psplotTangent{}{}{}":{
 		"prefix":"psplotTangent",
 		"body":[
 			"\\psplotTangent{${1:x}}{${2:dx}}{${3:function%definition}}"
@@ -665,15 +313,7 @@
 	},
 
 
-	"pspolylineticks":{
-		"prefix":"pspolylineticks",
-		"body":[
-			"\\pspolylineticks[${5:options%keyvals}]{${1:root name}}{${2:function}}{${3:first tick}}{${4:tick count}}"
-		]
-	},
-
-
-	"pspolylineticks":{
+	"pspolylineticks{}{}{}{}":{
 		"prefix":"pspolylineticks",
 		"body":[
 			"\\pspolylineticks{${1:root name}}{${2:function}}{${3:first tick}}{${4:tick count}}"
@@ -681,7 +321,7 @@
 	},
 
 
-	"psRandom":{
+	"psRandom()(){}":{
 		"prefix":"psRandom",
 		"body":[
 			"\\psRandom(${2:xmin},${3:ymin})(${4:xmax},${5:ymax}){${1:clip path}}"
@@ -689,7 +329,7 @@
 	},
 
 
-	"psRandom":{
+	"psRandom(){}":{
 		"prefix":"psRandom",
 		"body":[
 			"\\psRandom(${2:xmin},${3:ymin}){${1:clip path}}"
@@ -697,31 +337,7 @@
 	},
 
 
-	"psRandom":{
-		"prefix":"psRandom",
-		"body":[
-			"\\psRandom[${2:options%keyvals}](${3:xmin},${4:ymin})(${5:xmax},${6:ymax}){${1:clip path}}"
-		]
-	},
-
-
-	"psRandom":{
-		"prefix":"psRandom",
-		"body":[
-			"\\psRandom[${2:options%keyvals}](${3:xmin},${4:ymin}){${1:clip path}}"
-		]
-	},
-
-
-	"psRandom":{
-		"prefix":"psRandom",
-		"body":[
-			"\\psRandom[${2:options%keyvals}]{${1:}}"
-		]
-	},
-
-
-	"psRandom":{
+	"psRandom{}":{
 		"prefix":"psRandom",
 		"body":[
 			"\\psRandom{${1:}}"
@@ -729,15 +345,7 @@
 	},
 
 
-	"psRandomPointArea":{
-		"prefix":"psRandomPointArea",
-		"body":[
-			"\\psRandomPointArea[${3:options%keyvals}]{${1:number}}{${2:function%definition}}"
-		]
-	},
-
-
-	"psRandomPointArea":{
+	"psRandomPointArea{}{}":{
 		"prefix":"psRandomPointArea",
 		"body":[
 			"\\psRandomPointArea{${1:number}}{${2:function%definition}}"
@@ -745,7 +353,7 @@
 	},
 
 
-	"psRelLine":{
+	"psRelLine()(){}{}":{
 		"prefix":"psRelLine",
 		"body":[
 			"\\psRelLine(${3:x0},${4:y0})(${5:x1},${6:y1}){${1:length factor}}{${2:end node name}}"
@@ -753,23 +361,7 @@
 	},
 
 
-	"psRelLine":{
-		"prefix":"psRelLine",
-		"body":[
-			"\\psRelLine[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1}){${1:length factor}}{${2:end node name}}"
-		]
-	},
-
-
-	"psRelLine":{
-		"prefix":"psRelLine",
-		"body":[
-			"\\psRelLine[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:length factor}}{${3:end node name}}"
-		]
-	},
-
-
-	"psRelLine":{
+	"psRelLine{}()(){}{}":{
 		"prefix":"psRelLine",
 		"body":[
 			"\\psRelLine{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1}){${2:length factor}}{${3:end node name}}"
@@ -777,7 +369,7 @@
 	},
 
 
-	"psRiemannSum":{
+	"psRiemannSum(){}{}":{
 		"prefix":"psRiemannSum",
 		"body":[
 			"\\psRiemannSum(${3:x0},${4:x1}){${1:n}}{${2:function%definition}}"
@@ -793,7 +385,7 @@
 	},
 
 
-	"psrotate":{
+	"psrotate(){}{}":{
 		"prefix":"psrotate",
 		"body":[
 			"\\psrotate(${3:x},${4:y}){${1:angle}}{${2:stuff}}"
@@ -801,15 +393,7 @@
 	},
 
 
-	"psrotate":{
-		"prefix":"psrotate",
-		"body":[
-			"\\psrotate[${3:options%keyvals}](${4:x},${5:y}){${1:angle}}{${2:stuff}}"
-		]
-	},
-
-
-	"psStartPoint":{
+	"psStartPoint()":{
 		"prefix":"psStartPoint",
 		"body":[
 			"\\psStartPoint(${1:x},${2:y})"
@@ -817,15 +401,7 @@
 	},
 
 
-	"psStartPoint":{
-		"prefix":"psStartPoint",
-		"body":[
-			"\\psStartPoint[${1:node basename}](${2:x},${3:y})"
-		]
-	},
-
-
-	"psStep":{
+	"psStep(){}{}":{
 		"prefix":"psStep",
 		"body":[
 			"\\psStep(${3:x},${4:y}){${1:n}}{${2:function%definition}}"
@@ -833,15 +409,7 @@
 	},
 
 
-	"psStep":{
-		"prefix":"psStep",
-		"body":[
-			"\\psStep[${3:options%keyvals}](${4:x},${5:y}){${1:n}}{${2:function%definition}}"
-		]
-	},
-
-
-	"psTangentLine":{
+	"psTangentLine()()(){}{}":{
 		"prefix":"psTangentLine",
 		"body":[
 			"\\psTangentLine(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3}){${1:x}}{${2:dx}}"
@@ -849,23 +417,7 @@
 	},
 
 
-	"psTangentLine":{
-		"prefix":"psTangentLine",
-		"body":[
-			"\\psTangentLine[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3}){${1:x}}{${2:dx}}"
-		]
-	},
-
-
-	"pstContour":{
-		"prefix":"pstContour",
-		"body":[
-			"\\pstContour[${2:options%keyvals}]{${1:data file%file}}"
-		]
-	},
-
-
-	"pstContour":{
+	"pstContour{}":{
 		"prefix":"pstContour",
 		"body":[
 			"\\pstContour{${1:data file%file}}"
@@ -897,7 +449,7 @@
 	},
 
 
-	"Put":{
+	"Put(){}":{
 		"prefix":"Put",
 		"body":[
 			"\\Put(${2:position}){${1:stuff}}"
@@ -905,55 +457,7 @@
 	},
 
 
-	"Put*":{
-		"prefix":"Put*",
-		"body":[
-			"\\Put*(${2:position}){${1:stuff}}"
-		]
-	},
-
-
-	"Put*":{
-		"prefix":"Put*",
-		"body":[
-			"\\Put*[${2:options%keyvals}](${3:position}){${1:stuff}}"
-		]
-	},
-
-
-	"Put*":{
-		"prefix":"Put*",
-		"body":[
-			"\\Put*[${3:options%keyvals}]{${1:ref}}(${4:position}){${2:stuff}}"
-		]
-	},
-
-
-	"Put*":{
-		"prefix":"Put*",
-		"body":[
-			"\\Put*{${1:ref}}(${3:position}){${2:stuff}}"
-		]
-	},
-
-
-	"Put":{
-		"prefix":"Put",
-		"body":[
-			"\\Put[${2:options%keyvals}](${3:position}){${1:stuff}}"
-		]
-	},
-
-
-	"Put":{
-		"prefix":"Put",
-		"body":[
-			"\\Put[${3:options%keyvals}]{${1:ref}}(${4:position}){${2:stuff}}"
-		]
-	},
-
-
-	"Put":{
+	"Put{}(){}":{
 		"prefix":"Put",
 		"body":[
 			"\\Put{${1:ref}}(${3:position}){${2:stuff}}"
@@ -965,6 +469,502 @@
 		"prefix":"resetOptions",
 		"body":[
 			"\\resetOptions"
+		]
+	},
+
+
+	"psBrace*()()":{
+		"prefix":"*psBrace",
+		"body":[
+			"\\psBrace*(${1:A})(${2:B})"
+		]
+	},
+
+
+	"psBrace*[]()()":{
+		"prefix":"*psBrace",
+		"body":[
+			"\\psBrace*[${1:options%keyvals}](${2:A})(${3:B})"
+		]
+	},
+
+
+	"psCancel*[]{}":{
+		"prefix":"*psCancel",
+		"body":[
+			"\\psCancel*[${2:options%keyvals}]{${1:stuff}}"
+		]
+	},
+
+
+	"psCancel*{}":{
+		"prefix":"*psCancel",
+		"body":[
+			"\\psCancel*{${1:stuff}}"
+		]
+	},
+
+
+	"psComment*()(){}":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*(${2:x0},${3:y0})(${4:x1},${5:y1}){${1:text}}"
+		]
+	},
+
+
+	"psComment*()(){}[][]":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*(${4:x0},${5:y0})(${6:x1},${7:y1}){${1:text}}[${2:line macro}][${3:put macro}]"
+		]
+	},
+
+
+	"psComment*[]()(){}":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*[${2:options%keyvals}](${3:x0},${4:y0})(${5:x1},${6:y1}){${1:text}}"
+		]
+	},
+
+
+	"psComment*[]()(){}[][]":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*[${2:options%keyvals}](${5:x0},${6:y0})(${7:x1},${8:y1}){${1:text}}[${3:line macro}][${4:put macro}]"
+		]
+	},
+
+
+	"psComment*[]{}()(){}":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*[${3:options%keyvals}]{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1}){${2:text}}"
+		]
+	},
+
+
+	"psComment*[]{}()(){}[][]":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*[${3:options%keyvals}]{${1:arrows}}(${6:x0},${7:y0})(${8:x1},${9:y1}){${2:text}}[${4:line macro}][${5:put macro}]"
+		]
+	},
+
+
+	"psComment*{}()(){}":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1}){${2:text}}"
+		]
+	},
+
+
+	"psComment*{}()(){}[][]":{
+		"prefix":"*psComment",
+		"body":[
+			"\\psComment*{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:text}}[${3:line macro}][${4:put macro}]"
+		]
+	},
+
+
+	"psplotTangent*[]{}{}{}":{
+		"prefix":"*psplotTangent",
+		"body":[
+			"\\psplotTangent*[${4:options%keyvals}]{${1:x}}{${2:dx}}{${3:function%definition}}"
+		]
+	},
+
+
+	"psplotTangent*{}{}{}":{
+		"prefix":"*psplotTangent",
+		"body":[
+			"\\psplotTangent*{${1:x}}{${2:dx}}{${3:function%definition}}"
+		]
+	},
+
+
+	"Put*(){}":{
+		"prefix":"*Put",
+		"body":[
+			"\\Put*(${2:position}){${1:stuff}}"
+		]
+	},
+
+
+	"Put*[](){}":{
+		"prefix":"*Put",
+		"body":[
+			"\\Put*[${2:options%keyvals}](${3:position}){${1:stuff}}"
+		]
+	},
+
+
+	"Put*[]{}(){}":{
+		"prefix":"*Put",
+		"body":[
+			"\\Put*[${3:options%keyvals}]{${1:ref}}(${4:position}){${2:stuff}}"
+		]
+	},
+
+
+	"Put*{}(){}":{
+		"prefix":"*Put",
+		"body":[
+			"\\Put*{${1:ref}}(${3:position}){${2:stuff}}"
+		]
+	},
+
+
+	"defineTColor[]{}{}":{
+		"prefix":"defineTColor",
+		"body":[
+			"\\defineTColor[${3:options%keyvals}]{${1:name}}{${2:color}}"
+		]
+	},
+
+
+	"psBrace[]()()":{
+		"prefix":"psBrace",
+		"body":[
+			"\\psBrace[${1:options%keyvals}](${2:A})(${3:B})"
+		]
+	},
+
+
+	"psbrace[]()(){}":{
+		"prefix":"psbrace",
+		"body":[
+			"\\psbrace[${2:options%keyvals}](${3:A})(${4:B}){${1:text}}"
+		]
+	},
+
+
+	"psCallout[](){}":{
+		"prefix":"psCallout",
+		"body":[
+			"\\psCallout[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
+		]
+	},
+
+
+	"psCancel[]{}":{
+		"prefix":"psCancel",
+		"body":[
+			"\\psCancel[${2:options%keyvals}]{${1:stuff}}"
+		]
+	},
+
+
+	"psChart[]{}{}{}":{
+		"prefix":"psChart",
+		"body":[
+			"\\psChart[${4:options%keyvals}]{${1:list1}}{${2:list2}}{${3:radius}}"
+		]
+	},
+
+
+	"psComment()(){}[][]":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment(${4:x0},${5:y0})(${6:x1},${7:y1}){${1:text}}[${2:line macro}][${3:put macro}]"
+		]
+	},
+
+
+	"psComment[]()(){}":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment[${2:options%keyvals}](${3:x0},${4:y0})(${5:x1},${6:y1}){${1:text}}"
+		]
+	},
+
+
+	"psComment[]()(){}[][]":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment[${2:options%keyvals}](${5:x0},${6:y0})(${7:x1},${8:y1}){${1:text}}[${3:line macro}][${4:put macro}]"
+		]
+	},
+
+
+	"psComment[]{}()(){}":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment[${3:options%keyvals}]{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1}){${2:text}}"
+		]
+	},
+
+
+	"psComment[]{}()(){}[][]":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment[${3:options%keyvals}]{${1:arrows}}(${6:x0},${7:y0})(${8:x1},${9:y1}){${2:text}}[${4:line macro}][${5:put macro}]"
+		]
+	},
+
+
+	"psComment{}()(){}[][]":{
+		"prefix":"psComment",
+		"body":[
+			"\\psComment{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:text}}[${3:line macro}][${4:put macro}]"
+		]
+	},
+
+
+	"pscurvepoints[]{}{}{}{}":{
+		"prefix":"pscurvepoints",
+		"body":[
+			"\\pscurvepoints[${5:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function of t%definition}}{${4:root}}"
+		]
+	},
+
+
+	"psdice[]{}":{
+		"prefix":"psdice",
+		"body":[
+			"\\psdice[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
+	"psFormatInt[]{}":{
+		"prefix":"psFormatInt",
+		"body":[
+			"\\psFormatInt[${2:options%keyvals}]{${1:integer}}"
+		]
+	},
+
+
+	"psGetDistance[]()(){}":{
+		"prefix":"psGetDistance",
+		"body":[
+			"\\psGetDistance[${2:decimals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:macro%cmd}}"
+		]
+	},
+
+
+	"psHomothetie[](){}{}":{
+		"prefix":"psHomothetie",
+		"body":[
+			"\\psHomothetie[${3:options%keyvals}](${4:x},${5:y}){${1:factor}}{${2:stuff}}"
+		]
+	},
+
+
+	"psKiviat[]{}{}":{
+		"prefix":"psKiviat",
+		"body":[
+			"\\psKiviat[${3:options%keyvals}]{${1:number of edges}}{${2:radius}}"
+		]
+	},
+
+
+	"psKiviatAxes[]{}{}":{
+		"prefix":"psKiviatAxes",
+		"body":[
+			"\\psKiviatAxes[${3:options%keyvals}]{${1:number of edges}}{${2:radius}}"
+		]
+	},
+
+
+	"psKiviatLine[]{}":{
+		"prefix":"psKiviatLine",
+		"body":[
+			"\\psKiviatLine[${2:options%keyvals}]{${1:list}}"
+		]
+	},
+
+
+	"psKiviatTicklines[]{}{}":{
+		"prefix":"psKiviatTicklines",
+		"body":[
+			"\\psKiviatTicklines[${3:options%keyvals}]{${1:n}}{${2:radius}}"
+		]
+	},
+
+
+	"psMatrixPlot[]{}{}{}":{
+		"prefix":"psMatrixPlot",
+		"body":[
+			"\\psMatrixPlot[${4:options%keyvals}]{${1:rows}}{${2:columns}}{${3:data file%file}}"
+		]
+	},
+
+
+	"psOlympicRings[]()":{
+		"prefix":"psOlympicRings",
+		"body":[
+			"\\psOlympicRings[${1:options%keyvals}](${2:x},${3:y})"
+		]
+	},
+
+
+	"psParallelLine[]()()(){}{}":{
+		"prefix":"psParallelLine",
+		"body":[
+			"\\psParallelLine[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${1:length}}{${2:end node name}}"
+		]
+	},
+
+
+	"psParallelLine[]{}()()(){}{}":{
+		"prefix":"psParallelLine",
+		"body":[
+			"\\psParallelLine[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2}){${2:length}}{${3:end node name}}"
+		]
+	},
+
+
+	"psColorLine[]()()":{
+		"prefix":"psColorLine",
+		"body":[
+			"\\psColorLine[${1:options%keyvals}](${2:x0},${3:y0})(${4:x1},${5:y1})"
+		]
+	},
+
+
+	"psColorLine[]{}()()":{
+		"prefix":"psColorLine",
+		"body":[
+			"\\psColorLine[${2:options%keyvals}]{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1})"
+		]
+	},
+
+
+	"psparallelogrambox[]{}":{
+		"prefix":"psparallelogrambox",
+		"body":[
+			"\\psparallelogrambox[${2:options%keyvals}]{${1:stuff}}"
+		]
+	},
+
+
+	"psplotDiffEqn[]{}{}{}{}":{
+		"prefix":"psplotDiffEqn",
+		"body":[
+			"\\psplotDiffEqn[${5:options}]{${1:x0}}{${2:x1}}{${3:y0}}{${4:f(${6:x},${7:y},${8:y'},${9:...})}}"
+		]
+	},
+
+
+	"psplotTangent[]{}{}{}":{
+		"prefix":"psplotTangent",
+		"body":[
+			"\\psplotTangent[${4:options%keyvals}]{${1:x}}{${2:dx}}{${3:function%definition}}"
+		]
+	},
+
+
+	"pspolylineticks[]{}{}{}{}":{
+		"prefix":"pspolylineticks",
+		"body":[
+			"\\pspolylineticks[${5:options%keyvals}]{${1:root name}}{${2:function}}{${3:first tick}}{${4:tick count}}"
+		]
+	},
+
+
+	"psRandom[]()(){}":{
+		"prefix":"psRandom",
+		"body":[
+			"\\psRandom[${2:options%keyvals}](${3:xmin},${4:ymin})(${5:xmax},${6:ymax}){${1:clip path}}"
+		]
+	},
+
+
+	"psRandom[](){}":{
+		"prefix":"psRandom",
+		"body":[
+			"\\psRandom[${2:options%keyvals}](${3:xmin},${4:ymin}){${1:clip path}}"
+		]
+	},
+
+
+	"psRandom[]{}":{
+		"prefix":"psRandom",
+		"body":[
+			"\\psRandom[${2:options%keyvals}]{${1:}}"
+		]
+	},
+
+
+	"psRandomPointArea[]{}{}":{
+		"prefix":"psRandomPointArea",
+		"body":[
+			"\\psRandomPointArea[${3:options%keyvals}]{${1:number}}{${2:function%definition}}"
+		]
+	},
+
+
+	"psRelLine[]()(){}{}":{
+		"prefix":"psRelLine",
+		"body":[
+			"\\psRelLine[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1}){${1:length factor}}{${2:end node name}}"
+		]
+	},
+
+
+	"psRelLine[]{}()(){}{}":{
+		"prefix":"psRelLine",
+		"body":[
+			"\\psRelLine[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1}){${2:length factor}}{${3:end node name}}"
+		]
+	},
+
+
+	"psrotate[](){}{}":{
+		"prefix":"psrotate",
+		"body":[
+			"\\psrotate[${3:options%keyvals}](${4:x},${5:y}){${1:angle}}{${2:stuff}}"
+		]
+	},
+
+
+	"psStartPoint[]()":{
+		"prefix":"psStartPoint",
+		"body":[
+			"\\psStartPoint[${1:node basename}](${2:x},${3:y})"
+		]
+	},
+
+
+	"psStep[](){}{}":{
+		"prefix":"psStep",
+		"body":[
+			"\\psStep[${3:options%keyvals}](${4:x},${5:y}){${1:n}}{${2:function%definition}}"
+		]
+	},
+
+
+	"psTangentLine[]()()(){}{}":{
+		"prefix":"psTangentLine",
+		"body":[
+			"\\psTangentLine[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3}){${1:x}}{${2:dx}}"
+		]
+	},
+
+
+	"pstContour[]{}":{
+		"prefix":"pstContour",
+		"body":[
+			"\\pstContour[${2:options%keyvals}]{${1:data file%file}}"
+		]
+	},
+
+
+	"Put[](){}":{
+		"prefix":"Put",
+		"body":[
+			"\\Put[${2:options%keyvals}](${3:position}){${1:stuff}}"
+		]
+	},
+
+
+	"Put[]{}(){}":{
+		"prefix":"Put",
+		"body":[
+			"\\Put[${3:options%keyvals}]{${1:ref}}(${4:position}){${2:stuff}}"
 		]
 	}
 }

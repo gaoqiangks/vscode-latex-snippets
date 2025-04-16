@@ -1,7 +1,7 @@
 {
 
 
-	"gbsection":{
+	"gbsection{}":{
 		"prefix":"gbsection",
 		"body":[
 			"\\gbsection{${1:id%labeldef}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"gbturn":{
+	"gbturn{}":{
 		"prefix":"gbturn",
 		"body":[
 			"\\gbturn{${1:id%ref}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"gbitem":{
+	"gbitem{}{}":{
 		"prefix":"gbitem",
 		"body":[
 			"\\gbitem{${1:text}}{${2:id%ref}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"gbvillain":{
+	"gbvillain{}{}{}{}{}":{
 		"prefix":"gbvillain",
 		"body":[
 			"\\gbvillain{${1:name}}{${2:skill%text}}{${3:skill level%text}}{${4:life%text}}{${5:life level%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"gbdebugx":{
+	"gbdebugx{}":{
 		"prefix":"gbdebugx",
 		"body":[
 			"\\gbdebugx{${1:arg}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"gbdebug":{
+	"gbdebug{}":{
 		"prefix":"gbdebug",
 		"body":[
 			"\\gbdebug{${1:arg}}"
@@ -77,7 +77,7 @@
 		"prefix":"gbturnoptions",
 		"body":[
 			"\\begin{gbturnoptions}",
-			"\t$1",
+				"\t$1",
 			"\\end{gbturnoptions}"
 		]
 	},
@@ -87,8 +87,18 @@
 		"prefix":"gbtabbing",
 		"body":[
 			"\\begin{gbtabbing}",
-			"\t$1",
+				"\t$1",
 			"\\end{gbtabbing}"
+		]
+	},
+
+
+	"gbturnoptions":{
+		"prefix":"gbturnoptions",
+		"body":[
+			"\\begin{gbturnoptions}",
+				"\t$1",
+			"\\end{gbturnoptions}"
 		]
 	}
 }

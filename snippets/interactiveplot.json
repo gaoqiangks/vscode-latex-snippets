@@ -1,7 +1,7 @@
 {
 
 
-	"iplot":{
+	"iplot{}":{
 		"prefix":"iplot",
 		"body":[
 			"\\iplot{${1:function%definition}}"
@@ -9,10 +9,20 @@
 	},
 
 
-	"iplot":{
+	"iplot[]{}":{
 		"prefix":"iplot",
 		"body":[
 			"\\iplot[${2:options%keyvals}]{${1:function%definition}}"
+		]
+	},
+
+
+	"iplotdd":{
+		"prefix":"iplotdd",
+		"body":[
+			"\\begin{iplotdd}",
+				"\t$1",
+			"\\end{iplotdd}"
 		]
 	},
 
@@ -21,7 +31,7 @@
 		"prefix":"iplotddd",
 		"body":[
 			"\\begin{iplotddd}",
-			"\t$1",
+				"\t$1",
 			"\\end{iplotddd}"
 		]
 	},
@@ -31,8 +41,18 @@
 		"prefix":"iplotdd",
 		"body":[
 			"\\begin{iplotdd}",
-			"\t$1",
+				"\t$1",
 			"\\end{iplotdd}"
+		]
+	},
+
+
+	"iplotddd":{
+		"prefix":"iplotddd",
+		"body":[
+			"\\begin{iplotddd}",
+				"\t$1",
+			"\\end{iplotddd}"
 		]
 	}
 }

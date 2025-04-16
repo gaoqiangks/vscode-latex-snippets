@@ -1,7 +1,7 @@
 {
 
 
-	"MPMPlaceNotice":{
+	"MPMPlaceNotice()":{
 		"prefix":"MPMPlaceNotice",
 		"body":[
 			"\\MPMPlaceNotice(${1:coordonnées})"
@@ -9,15 +9,7 @@
 	},
 
 
-	"MPMPlaceNotice*":{
-		"prefix":"MPMPlaceNotice*",
-		"body":[
-			"\\MPMPlaceNotice*(${1:coordonnées})"
-		]
-	},
-
-
-	"MPMPlaceTache":{
+	"MPMPlaceTache()()()":{
 		"prefix":"MPMPlaceTache",
 		"body":[
 			"\\MPMPlaceTache(${1:coordonnées})(${2:Tâche})(${3:Dates})"
@@ -25,7 +17,7 @@
 	},
 
 
-	"MPMPlaceTaches":{
+	"MPMPlaceTaches{}":{
 		"prefix":"MPMPlaceTaches",
 		"body":[
 			"\\MPMPlaceTaches{${1:(${2:coordA})(${3:TâcheA})(${4:DatesA}) / (${5:coordB})(${6:TâcheB})(${7:DatesB}) / ...}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"MPMPlaceDuree":{
+	"MPMPlaceDuree{}":{
 		"prefix":"MPMPlaceDuree",
 		"body":[
 			"\\MPMPlaceDuree{${1:TâcheA>TâcheB,durée}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"MPMPlaceDuree":{
-		"prefix":"MPMPlaceDuree",
-		"body":[
-			"\\MPMPlaceDuree[${2:options}]{${1:TâcheA>TâcheB,durée}}"
-		]
-	},
-
-
-	"MPMPlaceDurees":{
+	"MPMPlaceDurees{}":{
 		"prefix":"MPMPlaceDurees",
 		"body":[
 			"\\MPMPlaceDurees{${1:TâcheA>TâcheB,durée / TâcheC>TâcheD,durée}}"
@@ -57,15 +41,7 @@
 	},
 
 
-	"MPMPlaceDurees":{
-		"prefix":"MPMPlaceDurees",
-		"body":[
-			"\\MPMPlaceDurees[${2:options}]{${1:TâcheA>TâcheB,durée / TâcheC>TâcheD,durée}}"
-		]
-	},
-
-
-	"KarnaughCasesResult":{
+	"KarnaughCasesResult{}":{
 		"prefix":"KarnaughCasesResult",
 		"body":[
 			"\\KarnaughCasesResult{${1:contenu binaire des cases}}"
@@ -73,15 +49,7 @@
 	},
 
 
-	"KarnaughCasesResult*":{
-		"prefix":"KarnaughCasesResult*",
-		"body":[
-			"\\KarnaughCasesResult*{${1:contenu binaire des cases}}"
-		]
-	},
-
-
-	"KarnaughCasesAuto":{
+	"KarnaughCasesAuto{}":{
 		"prefix":"KarnaughCasesAuto",
 		"body":[
 			"\\KarnaughCasesAuto{${1:expression booléenne}}"
@@ -89,15 +57,7 @@
 	},
 
 
-	"KarnaughCasesAuto*":{
-		"prefix":"KarnaughCasesAuto*",
-		"body":[
-			"\\KarnaughCasesAuto*{${1:expression booléenne}}"
-		]
-	},
-
-
-	"KarnaughBlocRegroup":{
+	"KarnaughBlocRegroup{}{}":{
 		"prefix":"KarnaughBlocRegroup",
 		"body":[
 			"\\KarnaughBlocRegroup{${1:coinA}}{${2:coinB}}"
@@ -105,15 +65,7 @@
 	},
 
 
-	"KarnaughBlocRegroup":{
-		"prefix":"KarnaughBlocRegroup",
-		"body":[
-			"\\KarnaughBlocRegroup[${3:clés%keyvals}]{${1:coinA}}{${2:coinB}}"
-		]
-	},
-
-
-	"SimplificationKarnaugh":{
+	"SimplificationKarnaugh{}":{
 		"prefix":"SimplificationKarnaugh",
 		"body":[
 			"\\SimplificationKarnaugh{${1:code binaire de la table}}"
@@ -121,15 +73,7 @@
 	},
 
 
-	"SimplificationKarnaugh":{
-		"prefix":"SimplificationKarnaugh",
-		"body":[
-			"\\SimplificationKarnaugh[${2:clés%keyvals}]{${1:code binaire de la table}}"
-		]
-	},
-
-
-	"SimplificationBooleenne":{
+	"SimplificationBooleenne{}":{
 		"prefix":"SimplificationBooleenne",
 		"body":[
 			"\\SimplificationBooleenne{${1:expression formatée}}"
@@ -137,15 +81,7 @@
 	},
 
 
-	"SimplificationBooleenne":{
-		"prefix":"SimplificationBooleenne",
-		"body":[
-			"\\SimplificationBooleenne[${2:clés%keyvals}]{${1:expression formatée}}"
-		]
-	},
-
-
-	"GrphPlaceSommets":{
+	"GrphPlaceSommets{}":{
 		"prefix":"GrphPlaceSommets",
 		"body":[
 			"\\GrphPlaceSommets{${1:liste coordonnées/sommet}}"
@@ -153,7 +89,7 @@
 	},
 
 
-	"GrphTraceAretes":{
+	"GrphTraceAretes{}":{
 		"prefix":"GrphTraceAretes",
 		"body":[
 			"\\GrphTraceAretes{${1:liste arêtes}}"
@@ -161,7 +97,7 @@
 	},
 
 
-	"GrphTraceAretes<options tikz>":{
+	"GrphTraceAretes<options tikz>{}":{
 		"prefix":"GrphTraceAretes<options tikz>",
 		"body":[
 			"\\GrphTraceAretes<options tikz>{${1:liste arêtes}}"
@@ -169,55 +105,7 @@
 	},
 
 
-	"GrphTraceAretes":{
-		"prefix":"GrphTraceAretes",
-		"body":[
-			"\\GrphTraceAretes[${2:type%keyvals}]{${1:liste arêtes}}"
-		]
-	},
-
-
-	"GrphTraceAretes":{
-		"prefix":"GrphTraceAretes",
-		"body":[
-			"\\GrphTraceAretes[${2:type%keyvals}]<${3:options tikz}>{${1:liste arêtes}}"
-		]
-	},
-
-
-	"GrphTraceAretes*":{
-		"prefix":"GrphTraceAretes*",
-		"body":[
-			"\\GrphTraceAretes*{${1:liste arêtes}}"
-		]
-	},
-
-
-	"GrphTraceAretes*<options tikz>":{
-		"prefix":"GrphTraceAretes*<options tikz>",
-		"body":[
-			"\\GrphTraceAretes*<options tikz>{${1:liste arêtes}}"
-		]
-	},
-
-
-	"GrphTraceAretes*":{
-		"prefix":"GrphTraceAretes*",
-		"body":[
-			"\\GrphTraceAretes*[${2:type%keyvals}]{${1:liste arêtes}}"
-		]
-	},
-
-
-	"GrphTraceAretes*":{
-		"prefix":"GrphTraceAretes*",
-		"body":[
-			"\\GrphTraceAretes*[${2:type%keyvals}]<${3:options tikz}>{${1:liste arêtes}}"
-		]
-	},
-
-
-	"DiagrammeSagittal":{
+	"DiagrammeSagittal{}":{
 		"prefix":"DiagrammeSagittal",
 		"body":[
 			"\\DiagrammeSagittal{${1:liaisons}}"
@@ -225,7 +113,7 @@
 	},
 
 
-	"DiagrammeSagittal<options TikZ>":{
+	"DiagrammeSagittal<options TikZ>{}":{
 		"prefix":"DiagrammeSagittal<options TikZ>",
 		"body":[
 			"\\DiagrammeSagittal<options TikZ>{${1:liaisons}}"
@@ -233,39 +121,7 @@
 	},
 
 
-	"DiagrammeSagittal":{
-		"prefix":"DiagrammeSagittal",
-		"body":[
-			"\\DiagrammeSagittal[${2:clés%keyvals}]{${1:liaisons}}"
-		]
-	},
-
-
-	"DiagrammeSagittal":{
-		"prefix":"DiagrammeSagittal",
-		"body":[
-			"\\DiagrammeSagittal[${2:clés%keyvals}]<${3:options TikZ}>{${1:liaisons}}"
-		]
-	},
-
-
-	"DiagrammeSagittal*":{
-		"prefix":"DiagrammeSagittal*",
-		"body":[
-			"\\DiagrammeSagittal*{${1:liaisons}}"
-		]
-	},
-
-
-	"DiagrammeSagittal*":{
-		"prefix":"DiagrammeSagittal*",
-		"body":[
-			"\\DiagrammeSagittal*[${2:clés%keyvals}]{${1:liaisons}}"
-		]
-	},
-
-
-	"DiagrammeSagittalCompo":{
+	"DiagrammeSagittalCompo{}{}":{
 		"prefix":"DiagrammeSagittalCompo",
 		"body":[
 			"\\DiagrammeSagittalCompo{${1:liaisons1}}{${2:liaisons2}}"
@@ -273,7 +129,7 @@
 	},
 
 
-	"DiagrammeSagittalCompo<options TikZ>":{
+	"DiagrammeSagittalCompo<options TikZ>{}{}":{
 		"prefix":"DiagrammeSagittalCompo<options TikZ>",
 		"body":[
 			"\\DiagrammeSagittalCompo<options TikZ>{${1:liaisons1}}{${2:liaisons2}}"
@@ -281,39 +137,7 @@
 	},
 
 
-	"DiagrammeSagittalCompo":{
-		"prefix":"DiagrammeSagittalCompo",
-		"body":[
-			"\\DiagrammeSagittalCompo[${3:clés%keyvals}]{${1:liaisons1}}{${2:liaisons2}}"
-		]
-	},
-
-
-	"DiagrammeSagittalCompo":{
-		"prefix":"DiagrammeSagittalCompo",
-		"body":[
-			"\\DiagrammeSagittalCompo[${3:clés%keyvals}]<${4:options TikZ}>{${1:liaisons1}}{${2:liaisons2}}"
-		]
-	},
-
-
-	"DiagrammeSagittalCompo*":{
-		"prefix":"DiagrammeSagittalCompo*",
-		"body":[
-			"\\DiagrammeSagittalCompo*{${1:liaisons1}}{${2:liaisons2}}"
-		]
-	},
-
-
-	"DiagrammeSagittalCompo*":{
-		"prefix":"DiagrammeSagittalCompo*",
-		"body":[
-			"\\DiagrammeSagittalCompo*[${3:clés%keyvals}]{${1:liaisons1}}{${2:liaisons2}}"
-		]
-	},
-
-
-	"TableVerite":{
+	"TableVerite{}{}{}{}":{
 		"prefix":"TableVerite",
 		"body":[
 			"\\TableVerite{${1:vars}}{${2:colonnes_vars}}{${3:calculs}}{${4:colonnes_calculs}}"
@@ -321,7 +145,7 @@
 	},
 
 
-	"TableVerite<opts nicematrix>":{
+	"TableVerite<opts nicematrix>{}{}{}{}":{
 		"prefix":"TableVerite<opts nicematrix>",
 		"body":[
 			"\\TableVerite<opts nicematrix>{${1:vars}}{${2:colonnes_vars}}{${3:calculs}}{${4:colonnes_calculs}}"
@@ -329,7 +153,183 @@
 	},
 
 
-	"TableVerite":{
+	"MPMPlaceNotice*()":{
+		"prefix":"*MPMPlaceNotice",
+		"body":[
+			"\\MPMPlaceNotice*(${1:coordonnées})"
+		]
+	},
+
+
+	"KarnaughCasesResult*{}":{
+		"prefix":"*KarnaughCasesResult",
+		"body":[
+			"\\KarnaughCasesResult*{${1:contenu binaire des cases}}"
+		]
+	},
+
+
+	"KarnaughCasesAuto*{}":{
+		"prefix":"*KarnaughCasesAuto",
+		"body":[
+			"\\KarnaughCasesAuto*{${1:expression booléenne}}"
+		]
+	},
+
+
+	"GrphTraceAretes*{}":{
+		"prefix":"*GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes*{${1:liste arêtes}}"
+		]
+	},
+
+
+	"GrphTraceAretes*<options tikz>{}":{
+		"prefix":"*GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes*<options tikz>{${1:liste arêtes}}"
+		]
+	},
+
+
+	"GrphTraceAretes*[]{}":{
+		"prefix":"*GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes*[${2:type%keyvals}]{${1:liste arêtes}}"
+		]
+	},
+
+
+	"GrphTraceAretes*[]<>{}":{
+		"prefix":"*GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes*[${2:type%keyvals}]<${3:options tikz}>{${1:liste arêtes}}"
+		]
+	},
+
+
+	"DiagrammeSagittal*{}":{
+		"prefix":"*DiagrammeSagittal",
+		"body":[
+			"\\DiagrammeSagittal*{${1:liaisons}}"
+		]
+	},
+
+
+	"DiagrammeSagittal*[]{}":{
+		"prefix":"*DiagrammeSagittal",
+		"body":[
+			"\\DiagrammeSagittal*[${2:clés%keyvals}]{${1:liaisons}}"
+		]
+	},
+
+
+	"DiagrammeSagittalCompo*{}{}":{
+		"prefix":"*DiagrammeSagittalCompo",
+		"body":[
+			"\\DiagrammeSagittalCompo*{${1:liaisons1}}{${2:liaisons2}}"
+		]
+	},
+
+
+	"DiagrammeSagittalCompo*[]{}{}":{
+		"prefix":"*DiagrammeSagittalCompo",
+		"body":[
+			"\\DiagrammeSagittalCompo*[${3:clés%keyvals}]{${1:liaisons1}}{${2:liaisons2}}"
+		]
+	},
+
+
+	"MPMPlaceDuree[]{}":{
+		"prefix":"MPMPlaceDuree",
+		"body":[
+			"\\MPMPlaceDuree[${2:options}]{${1:TâcheA>TâcheB,durée}}"
+		]
+	},
+
+
+	"MPMPlaceDurees[]{}":{
+		"prefix":"MPMPlaceDurees",
+		"body":[
+			"\\MPMPlaceDurees[${2:options}]{${1:TâcheA>TâcheB,durée / TâcheC>TâcheD,durée}}"
+		]
+	},
+
+
+	"KarnaughBlocRegroup[]{}{}":{
+		"prefix":"KarnaughBlocRegroup",
+		"body":[
+			"\\KarnaughBlocRegroup[${3:clés%keyvals}]{${1:coinA}}{${2:coinB}}"
+		]
+	},
+
+
+	"SimplificationKarnaugh[]{}":{
+		"prefix":"SimplificationKarnaugh",
+		"body":[
+			"\\SimplificationKarnaugh[${2:clés%keyvals}]{${1:code binaire de la table}}"
+		]
+	},
+
+
+	"SimplificationBooleenne[]{}":{
+		"prefix":"SimplificationBooleenne",
+		"body":[
+			"\\SimplificationBooleenne[${2:clés%keyvals}]{${1:expression formatée}}"
+		]
+	},
+
+
+	"GrphTraceAretes[]{}":{
+		"prefix":"GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes[${2:type%keyvals}]{${1:liste arêtes}}"
+		]
+	},
+
+
+	"GrphTraceAretes[]<>{}":{
+		"prefix":"GrphTraceAretes",
+		"body":[
+			"\\GrphTraceAretes[${2:type%keyvals}]<${3:options tikz}>{${1:liste arêtes}}"
+		]
+	},
+
+
+	"DiagrammeSagittal[]{}":{
+		"prefix":"DiagrammeSagittal",
+		"body":[
+			"\\DiagrammeSagittal[${2:clés%keyvals}]{${1:liaisons}}"
+		]
+	},
+
+
+	"DiagrammeSagittal[]<>{}":{
+		"prefix":"DiagrammeSagittal",
+		"body":[
+			"\\DiagrammeSagittal[${2:clés%keyvals}]<${3:options TikZ}>{${1:liaisons}}"
+		]
+	},
+
+
+	"DiagrammeSagittalCompo[]{}{}":{
+		"prefix":"DiagrammeSagittalCompo",
+		"body":[
+			"\\DiagrammeSagittalCompo[${3:clés%keyvals}]{${1:liaisons1}}{${2:liaisons2}}"
+		]
+	},
+
+
+	"DiagrammeSagittalCompo[]<>{}{}":{
+		"prefix":"DiagrammeSagittalCompo",
+		"body":[
+			"\\DiagrammeSagittalCompo[${3:clés%keyvals}]<${4:options TikZ}>{${1:liaisons1}}{${2:liaisons2}}"
+		]
+	},
+
+
+	"TableVerite[]{}{}{}{}":{
 		"prefix":"TableVerite",
 		"body":[
 			"\\TableVerite[${5:clés%keyvals}]{${1:vars}}{${2:colonnes_vars}}{${3:calculs}}{${4:colonnes_calculs}}"
@@ -337,20 +337,10 @@
 	},
 
 
-	"TableVerite":{
+	"TableVerite[]<>{}{}{}{}":{
 		"prefix":"TableVerite",
 		"body":[
 			"\\TableVerite[${5:clés%keyvals}]<${6:opts nicematrix}>{${1:vars}}{${2:colonnes_vars}}{${3:calculs}}{${4:colonnes_calculs}}"
-		]
-	},
-
-
-	"TableKarnaugh":{
-		"prefix":"TableKarnaugh",
-		"body":[
-			"\\begin{TableKarnaugh}",
-			"\t$1",
-			"\\end{TableKarnaugh}"
 		]
 	},
 
@@ -359,8 +349,38 @@
 		"prefix":"GrapheMPM",
 		"body":[
 			"\\begin{GrapheMPM}",
-			"\t$1",
+				"\t$1",
 			"\\end{GrapheMPM}"
+		]
+	},
+
+
+	"GrapheMPM":{
+		"prefix":"GrapheMPM",
+		"body":[
+			"\\begin{GrapheMPM}",
+				"\t$1",
+			"\\end{GrapheMPM}"
+		]
+	},
+
+
+	"TableKarnaugh":{
+		"prefix":"TableKarnaugh",
+		"body":[
+			"\\begin{TableKarnaugh}",
+				"\t$1",
+			"\\end{TableKarnaugh}"
+		]
+	},
+
+
+	"TableKarnaugh":{
+		"prefix":"TableKarnaugh",
+		"body":[
+			"\\begin{TableKarnaugh}",
+				"\t$1",
+			"\\end{TableKarnaugh}"
 		]
 	},
 
@@ -369,7 +389,77 @@
 		"prefix":"GrapheTikz",
 		"body":[
 			"\\begin{GrapheTikz}",
-			"\t$1",
+				"\t$1",
+			"\\end{GrapheTikz}"
+		]
+	},
+
+
+	"GrapheTikz":{
+		"prefix":"GrapheTikz",
+		"body":[
+			"\\begin{GrapheTikz}",
+				"\t$1",
+			"\\end{GrapheTikz}"
+		]
+	},
+
+
+	"GrapheMPM":{
+		"prefix":"GrapheMPM",
+		"body":[
+			"\\begin{GrapheMPM}",
+				"\t$1",
+			"\\end{GrapheMPM}"
+		]
+	},
+
+
+	"GrapheMPM":{
+		"prefix":"GrapheMPM",
+		"body":[
+			"\\begin{GrapheMPM}",
+				"\t$1",
+			"\\end{GrapheMPM}"
+		]
+	},
+
+
+	"TableKarnaugh":{
+		"prefix":"TableKarnaugh",
+		"body":[
+			"\\begin{TableKarnaugh}",
+				"\t$1",
+			"\\end{TableKarnaugh}"
+		]
+	},
+
+
+	"TableKarnaugh":{
+		"prefix":"TableKarnaugh",
+		"body":[
+			"\\begin{TableKarnaugh}",
+				"\t$1",
+			"\\end{TableKarnaugh}"
+		]
+	},
+
+
+	"GrapheTikz":{
+		"prefix":"GrapheTikz",
+		"body":[
+			"\\begin{GrapheTikz}",
+				"\t$1",
+			"\\end{GrapheTikz}"
+		]
+	},
+
+
+	"GrapheTikz":{
+		"prefix":"GrapheTikz",
+		"body":[
+			"\\begin{GrapheTikz}",
+				"\t$1",
 			"\\end{GrapheTikz}"
 		]
 	}

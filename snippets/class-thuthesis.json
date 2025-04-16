@@ -1,7 +1,7 @@
 {
 
 
-	"thusetup":{
+	"thusetup{}":{
 		"prefix":"thusetup",
 		"body":[
 			"\\thusetup{${1:options%keyvals}}"
@@ -17,30 +17,6 @@
 	},
 
 
-	"copyrightpage":{
-		"prefix":"copyrightpage",
-		"body":[
-			"\\copyrightpage[${1:file=PDF file}]"
-		]
-	},
-
-
-	"listoffigures*":{
-		"prefix":"listoffigures*",
-		"body":[
-			"\\listoffigures*"
-		]
-	},
-
-
-	"listoftables*":{
-		"prefix":"listoftables*",
-		"body":[
-			"\\listoftables*"
-		]
-	},
-
-
 	"listofequations":{
 		"prefix":"listofequations",
 		"body":[
@@ -49,23 +25,7 @@
 	},
 
 
-	"listofequations*":{
-		"prefix":"listofequations*",
-		"body":[
-			"\\listofequations*"
-		]
-	},
-
-
-	"listofalgorithms*":{
-		"prefix":"listofalgorithms*",
-		"body":[
-			"\\listofalgorithms*"
-		]
-	},
-
-
-	"equcaption":{
+	"equcaption{}":{
 		"prefix":"equcaption",
 		"body":[
 			"\\equcaption{${1:text}}"
@@ -73,7 +33,7 @@
 	},
 
 
-	"inlinecite":{
+	"inlinecite{}":{
 		"prefix":"inlinecite",
 		"body":[
 			"\\inlinecite{${1:keylist}}"
@@ -89,15 +49,7 @@
 	},
 
 
-	"statement":{
-		"prefix":"statement",
-		"body":[
-			"\\statement[${1:options%keyvals}]"
-		]
-	},
-
-
-	"record":{
+	"record{}":{
 		"prefix":"record",
 		"body":[
 			"\\record{${1:file=PDF file}}"
@@ -121,7 +73,7 @@
 	},
 
 
-	"bm":{
+	"bm{}":{
 		"prefix":"bm",
 		"body":[
 			"\\bm{${1:text%plain}}"
@@ -137,7 +89,7 @@
 	},
 
 
-	"cls":{
+	"cls{}":{
 		"prefix":"cls",
 		"body":[
 			"\\cls{${1:class}}"
@@ -145,7 +97,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -153,7 +105,7 @@
 	},
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -161,7 +113,7 @@
 	},
 
 
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:filename%file}}"
@@ -169,7 +121,7 @@
 	},
 
 
-	"pkg":{
+	"pkg{}":{
 		"prefix":"pkg",
 		"body":[
 			"\\pkg{${1:package}}"
@@ -193,7 +145,7 @@
 	},
 
 
-	"CJKmovesymbol":{
+	"CJKmovesymbol{}":{
 		"prefix":"CJKmovesymbol",
 		"body":[
 			"\\CJKmovesymbol{${1:symbol}}"
@@ -201,7 +153,7 @@
 	},
 
 
-	"CJKpunctsymbol":{
+	"CJKpunctsymbol{}":{
 		"prefix":"CJKpunctsymbol",
 		"body":[
 			"\\CJKpunctsymbol{${1:symbol}}"
@@ -209,7 +161,7 @@
 	},
 
 
-	"CJKsymbol":{
+	"CJKsymbol{}":{
 		"prefix":"CJKsymbol",
 		"body":[
 			"\\CJKsymbol{${1:symbol}}"
@@ -249,12 +201,90 @@
 	},
 
 
-	"remark":{
-		"prefix":"remark",
+	"listoffigures*":{
+		"prefix":"*listoffigures",
 		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
+			"\\listoffigures*"
+		]
+	},
+
+
+	"listoftables*":{
+		"prefix":"*listoftables",
+		"body":[
+			"\\listoftables*"
+		]
+	},
+
+
+	"listofequations*":{
+		"prefix":"*listofequations",
+		"body":[
+			"\\listofequations*"
+		]
+	},
+
+
+	"listofalgorithms*":{
+		"prefix":"*listofalgorithms",
+		"body":[
+			"\\listofalgorithms*"
+		]
+	},
+
+
+	"copyrightpage[]":{
+		"prefix":"copyrightpage",
+		"body":[
+			"\\copyrightpage[${1:file=PDF file}]"
+		]
+	},
+
+
+	"statement[]":{
+		"prefix":"statement",
+		"body":[
+			"\\statement[${1:options%keyvals}]"
+		]
+	},
+
+
+	"committee":{
+		"prefix":"committee",
+		"body":[
+			"\\begin{committee}",
+				"\t$1",
+			"\\end{committee}"
+		]
+	},
+
+
+	"abstract":{
+		"prefix":"abstract",
+		"body":[
+			"\\begin{abstract}",
+				"\t$1",
+			"\\end{abstract}"
+		]
+	},
+
+
+	"denotation":{
+		"prefix":"denotation",
+		"body":[
+			"\\begin{denotation}",
+				"\t$1",
+			"\\end{denotation}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
 		]
 	},
 
@@ -263,7 +293,7 @@
 		"prefix":"theorem",
 		"body":[
 			"\\begin{theorem}",
-			"\t$1",
+				"\t$1",
 			"\\end{theorem}"
 		]
 	},
@@ -273,98 +303,8 @@
 		"prefix":"definition",
 		"body":[
 			"\\begin{definition}",
-			"\t$1",
+				"\t$1",
 			"\\end{definition}"
-		]
-	},
-
-
-	"abstract*":{
-		"prefix":"abstract*",
-		"body":[
-			"\\begin{abstract*}",
-			"\t$1",
-			"\\end{abstract*}"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\begin{exercise}",
-			"\t$1",
-			"\\end{exercise}"
-		]
-	},
-
-
-	"achievements":{
-		"prefix":"achievements",
-		"body":[
-			"\\begin{achievements}",
-			"\t$1",
-			"\\end{achievements}"
-		]
-	},
-
-
-	"acknowledgements":{
-		"prefix":"acknowledgements",
-		"body":[
-			"\\begin{acknowledgements}",
-			"\t$1",
-			"\\end{acknowledgements}"
-		]
-	},
-
-
-	"assumption":{
-		"prefix":"assumption",
-		"body":[
-			"\\begin{assumption}",
-			"\t$1",
-			"\\end{assumption}"
-		]
-	},
-
-
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
-		]
-	},
-
-
-	"resolution":{
-		"prefix":"resolution",
-		"body":[
-			"\\begin{resolution}",
-			"\t$1",
-			"\\end{resolution}"
-		]
-	},
-
-
-	"comments":{
-		"prefix":"comments",
-		"body":[
-			"\\begin{comments}",
-			"\t$1",
-			"\\end{comments}"
-		]
-	},
-
-
-	"resume":{
-		"prefix":"resume",
-		"body":[
-			"\\begin{resume}",
-			"\t$1",
-			"\\end{resume}"
 		]
 	},
 
@@ -373,28 +313,8 @@
 		"prefix":"proposition",
 		"body":[
 			"\\begin{proposition}",
-			"\t$1",
+				"\t$1",
 			"\\end{proposition}"
-		]
-	},
-
-
-	"translation":{
-		"prefix":"translation",
-		"body":[
-			"\\begin{translation}",
-			"\t$1",
-			"\\end{translation}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
 		]
 	},
 
@@ -403,58 +323,8 @@
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"survey":{
-		"prefix":"survey",
-		"body":[
-			"\\begin{survey}",
-			"\t$1",
-			"\\end{survey}"
-		]
-	},
-
-
-	"denotation":{
-		"prefix":"denotation",
-		"body":[
-			"\\begin{denotation}",
-			"\t$1",
-			"\\end{denotation}"
-		]
-	},
-
-
-	"abstract":{
-		"prefix":"abstract",
-		"body":[
-			"\\begin{abstract}",
-			"\t$1",
-			"\\end{abstract}"
-		]
-	},
-
-
-	"problem":{
-		"prefix":"problem",
-		"body":[
-			"\\begin{problem}",
-			"\t$1",
-			"\\end{problem}"
 		]
 	},
 
@@ -463,18 +333,158 @@
 		"prefix":"conjecture",
 		"body":[
 			"\\begin{conjecture}",
-			"\t$1",
+				"\t$1",
 			"\\end{conjecture}"
 		]
 	},
 
 
-	"axiom":{
-		"prefix":"axiom",
+	"proof":{
+		"prefix":"proof",
 		"body":[
-			"\\begin{axiom}",
-			"\t$1",
-			"\\end{axiom}"
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"assumption":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"acknowledgements":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
+		]
+	},
+
+
+	"survey":{
+		"prefix":"survey",
+		"body":[
+			"\\begin{survey}",
+				"\t$1",
+			"\\end{survey}"
+		]
+	},
+
+
+	"translation":{
+		"prefix":"translation",
+		"body":[
+			"\\begin{translation}",
+				"\t$1",
+			"\\end{translation}"
+		]
+	},
+
+
+	"resume":{
+		"prefix":"resume",
+		"body":[
+			"\\begin{resume}",
+				"\t$1",
+			"\\end{resume}"
+		]
+	},
+
+
+	"achievements":{
+		"prefix":"achievements",
+		"body":[
+			"\\begin{achievements}",
+				"\t$1",
+			"\\end{achievements}"
+		]
+	},
+
+
+	"comments":{
+		"prefix":"comments",
+		"body":[
+			"\\begin{comments}",
+				"\t$1",
+			"\\end{comments}"
+		]
+	},
+
+
+	"resolution":{
+		"prefix":"resolution",
+		"body":[
+			"\\begin{resolution}",
+				"\t$1",
+			"\\end{resolution}"
+		]
+	},
+
+
+	"abstract*":{
+		"prefix":"*abstract",
+		"body":[
+			"\\begin{abstract*}",
+				"\t$1",
+			"\\end{abstract*}"
 		]
 	},
 
@@ -483,8 +493,158 @@
 		"prefix":"committee",
 		"body":[
 			"\\begin{committee}",
-			"\t$1",
+				"\t$1",
 			"\\end{committee}"
+		]
+	},
+
+
+	"denotation":{
+		"prefix":"denotation",
+		"body":[
+			"\\begin{denotation}",
+				"\t$1",
+			"\\end{denotation}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"assumption":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"comments":{
+		"prefix":"comments",
+		"body":[
+			"\\begin{comments}",
+				"\t$1",
+			"\\end{comments}"
 		]
 	}
 }

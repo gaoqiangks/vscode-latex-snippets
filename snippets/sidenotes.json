@@ -1,7 +1,7 @@
 {
 
 
-	"sidenote":{
+	"sidenote{}":{
 		"prefix":"sidenote",
 		"body":[
 			"\\sidenote{${1:text}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"sidenote":{
-		"prefix":"sidenote",
-		"body":[
-			"\\sidenote[${2:number}]{${1:text}}"
-		]
-	},
-
-
-	"sidenote":{
-		"prefix":"sidenote",
-		"body":[
-			"\\sidenote[${2:number}][${3:offset%l}]{${1:text}}"
-		]
-	},
-
-
-	"sidenotemark":{
+	"sidenotemark{}":{
 		"prefix":"sidenotemark",
 		"body":[
 			"\\sidenotemark{${1:text}}"
@@ -33,23 +17,7 @@
 	},
 
 
-	"sidenotemark":{
-		"prefix":"sidenotemark",
-		"body":[
-			"\\sidenotemark[${2:number}]{${1:text}}"
-		]
-	},
-
-
-	"sidenotemark":{
-		"prefix":"sidenotemark",
-		"body":[
-			"\\sidenotemark[${2:number}][${3:offset%l}]{${1:text}}"
-		]
-	},
-
-
-	"sidenotetext":{
+	"sidenotetext{}":{
 		"prefix":"sidenotetext",
 		"body":[
 			"\\sidenotetext{${1:text}}"
@@ -57,42 +25,10 @@
 	},
 
 
-	"sidenotetext":{
-		"prefix":"sidenotetext",
-		"body":[
-			"\\sidenotetext[${2:number}]{${1:text}}"
-		]
-	},
-
-
-	"sidenotetext":{
-		"prefix":"sidenotetext",
-		"body":[
-			"\\sidenotetext[${2:number}][${3:offset%l}]{${1:text}}"
-		]
-	},
-
-
-	"sidecaption":{
+	"sidecaption{}":{
 		"prefix":"sidecaption",
 		"body":[
 			"\\sidecaption{${1:text}}"
-		]
-	},
-
-
-	"sidecaption":{
-		"prefix":"sidecaption",
-		"body":[
-			"\\sidecaption[${2:entry}]{${1:text}}"
-		]
-	},
-
-
-	"sidecaption":{
-		"prefix":"sidecaption",
-		"body":[
-			"\\sidecaption[${2:entry}][${3:offset%l}]{${1:text}}"
 		]
 	},
 
@@ -105,11 +41,75 @@
 	},
 
 
+	"sidenote[]{}":{
+		"prefix":"sidenote",
+		"body":[
+			"\\sidenote[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"sidenote[][]{}":{
+		"prefix":"sidenote",
+		"body":[
+			"\\sidenote[${2:number}][${3:offset%l}]{${1:text}}"
+		]
+	},
+
+
+	"sidenotemark[]{}":{
+		"prefix":"sidenotemark",
+		"body":[
+			"\\sidenotemark[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"sidenotemark[][]{}":{
+		"prefix":"sidenotemark",
+		"body":[
+			"\\sidenotemark[${2:number}][${3:offset%l}]{${1:text}}"
+		]
+	},
+
+
+	"sidenotetext[]{}":{
+		"prefix":"sidenotetext",
+		"body":[
+			"\\sidenotetext[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"sidenotetext[][]{}":{
+		"prefix":"sidenotetext",
+		"body":[
+			"\\sidenotetext[${2:number}][${3:offset%l}]{${1:text}}"
+		]
+	},
+
+
+	"sidecaption[]{}":{
+		"prefix":"sidecaption",
+		"body":[
+			"\\sidecaption[${2:entry}]{${1:text}}"
+		]
+	},
+
+
+	"sidecaption[][]{}":{
+		"prefix":"sidecaption",
+		"body":[
+			"\\sidecaption[${2:entry}][${3:offset%l}]{${1:text}}"
+		]
+	},
+
+
 	"marginfigure":{
 		"prefix":"marginfigure",
 		"body":[
 			"\\begin{marginfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{marginfigure}"
 		]
 	},
@@ -119,7 +119,27 @@
 		"prefix":"margintable",
 		"body":[
 			"\\begin{margintable}",
-			"\t$1",
+				"\t$1",
+			"\\end{margintable}"
+		]
+	},
+
+
+	"marginfigure":{
+		"prefix":"marginfigure",
+		"body":[
+			"\\begin{marginfigure}",
+				"\t$1",
+			"\\end{marginfigure}"
+		]
+	},
+
+
+	"margintable":{
+		"prefix":"margintable",
+		"body":[
+			"\\begin{margintable}",
+				"\t$1",
 			"\\end{margintable}"
 		]
 	}

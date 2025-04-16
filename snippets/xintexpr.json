@@ -65,23 +65,7 @@
 	},
 
 
-	"xintDigits*":{
-		"prefix":"xintDigits*",
-		"body":[
-			"\\xintDigits*"
-		]
-	},
-
-
-	"xintSetDigits*":{
-		"prefix":"xintSetDigits*",
-		"body":[
-			"\\xintSetDigits*{${1:expr}}"
-		]
-	},
-
-
-	"xintfracSetDigits":{
+	"xintfracSetDigits{}":{
 		"prefix":"xintfracSetDigits",
 		"body":[
 			"\\xintfracSetDigits{${1:expr}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"xinteval":{
+	"xinteval{}":{
 		"prefix":"xinteval",
 		"body":[
 			"\\xinteval{${1:expr}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"xintieval":{
+	"xintieval{}":{
 		"prefix":"xintieval",
 		"body":[
 			"\\xintieval{${1:expr}}"
@@ -105,15 +89,7 @@
 	},
 
 
-	"xintieval":{
-		"prefix":"xintieval",
-		"body":[
-			"\\xintieval[${2:digits}]{${1:expr}}"
-		]
-	},
-
-
-	"xintiieval":{
+	"xintiieval{}":{
 		"prefix":"xintiieval",
 		"body":[
 			"\\xintiieval{${1:expr}}"
@@ -121,18 +97,10 @@
 	},
 
 
-	"xintfloateval":{
+	"xintfloateval{}":{
 		"prefix":"xintfloateval",
 		"body":[
 			"\\xintfloateval{${1:expr}}"
-		]
-	},
-
-
-	"xintfloateval":{
-		"prefix":"xintfloateval",
-		"body":[
-			"\\xintfloateval[${2:digits}]{${1:expr}}"
 		]
 	},
 
@@ -153,7 +121,7 @@
 	},
 
 
-	"xintifboolexpr":{
+	"xintifboolexpr{}{}{}":{
 		"prefix":"xintifboolexpr",
 		"body":[
 			"\\xintifboolexpr{${1:expr}}{${2:yes-code}}{${3:no-code}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"xintifboolfloatexpr":{
+	"xintifboolfloatexpr{}{}{}":{
 		"prefix":"xintifboolfloatexpr",
 		"body":[
 			"\\xintifboolfloatexpr{${1:expr}}{${2:yes-code}}{${3:no-code}}"
@@ -169,7 +137,7 @@
 	},
 
 
-	"xintifbooliiexpr":{
+	"xintifbooliiexpr{}{}{}":{
 		"prefix":"xintifbooliiexpr",
 		"body":[
 			"\\xintifbooliiexpr{${1:expr}}{${2:yes-code}}{${3:no-code}}"
@@ -177,7 +145,7 @@
 	},
 
 
-	"xintifsgnexpr":{
+	"xintifsgnexpr{}{}{}{}":{
 		"prefix":"xintifsgnexpr",
 		"body":[
 			"\\xintifsgnexpr{${1:expr}}{${2:less-code}}{${3:zero-code}}{${4:greater-code}}"
@@ -185,7 +153,7 @@
 	},
 
 
-	"xintifsgnfloatexpr":{
+	"xintifsgnfloatexpr{}{}{}{}":{
 		"prefix":"xintifsgnfloatexpr",
 		"body":[
 			"\\xintifsgnfloatexpr{${1:expr}}{${2:less-code}}{${3:zero-code}}{${4:greater-code}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"xintifsgniiexpr":{
+	"xintifsgniiexpr{}{}{}{}":{
 		"prefix":"xintifsgniiexpr",
 		"body":[
 			"\\xintifsgniiexpr{${1:expr}}{${2:less-code}}{${3:zero-code}}{${4:greater-code}}"
@@ -201,7 +169,7 @@
 	},
 
 
-	"xintNewExpr":{
+	"xintNewExpr{}{}":{
 		"prefix":"xintNewExpr",
 		"body":[
 			"\\xintNewExpr{${1:cmd}}{${2:definition}}"
@@ -209,15 +177,7 @@
 	},
 
 
-	"xintNewExpr":{
-		"prefix":"xintNewExpr",
-		"body":[
-			"\\xintNewExpr{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"xintNewIIExpr":{
+	"xintNewIIExpr{}{}":{
 		"prefix":"xintNewIIExpr",
 		"body":[
 			"\\xintNewIIExpr{${1:cmd}}{${2:definition}}"
@@ -225,15 +185,7 @@
 	},
 
 
-	"xintNewIIExpr":{
-		"prefix":"xintNewIIExpr",
-		"body":[
-			"\\xintNewIIExpr{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"xintNewFloatExpr":{
+	"xintNewFloatExpr{}{}":{
 		"prefix":"xintNewFloatExpr",
 		"body":[
 			"\\xintNewFloatExpr{${1:cmd}}{${2:definition}}"
@@ -241,15 +193,7 @@
 	},
 
 
-	"xintNewFloatExpr":{
-		"prefix":"xintNewFloatExpr",
-		"body":[
-			"\\xintNewFloatExpr{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"xintNewIExpr":{
+	"xintNewIExpr{}{}":{
 		"prefix":"xintNewIExpr",
 		"body":[
 			"\\xintNewIExpr{${1:cmd}}{${2:definition}}"
@@ -257,15 +201,7 @@
 	},
 
 
-	"xintNewIExpr":{
-		"prefix":"xintNewIExpr",
-		"body":[
-			"\\xintNewIExpr{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"xintNewBoolExpr":{
+	"xintNewBoolExpr{}{}":{
 		"prefix":"xintNewBoolExpr",
 		"body":[
 			"\\xintNewBoolExpr{${1:cmd}}{${2:definition}}"
@@ -273,15 +209,7 @@
 	},
 
 
-	"xintNewBoolExpr":{
-		"prefix":"xintNewBoolExpr",
-		"body":[
-			"\\xintNewBoolExpr{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"xintunassignvar":{
+	"xintunassignvar{}":{
 		"prefix":"xintunassignvar",
 		"body":[
 			"\\xintunassignvar{${1:variable}}"
@@ -289,7 +217,7 @@
 	},
 
 
-	"xintnewdummy":{
+	"xintnewdummy{}":{
 		"prefix":"xintnewdummy",
 		"body":[
 			"\\xintnewdummy{${1:character}}"
@@ -297,7 +225,7 @@
 	},
 
 
-	"xintensuredummy":{
+	"xintensuredummy{}":{
 		"prefix":"xintensuredummy",
 		"body":[
 			"\\xintensuredummy{${1:character}}"
@@ -305,7 +233,7 @@
 	},
 
 
-	"xintrestorevariable":{
+	"xintrestorevariable{}":{
 		"prefix":"xintrestorevariable",
 		"body":[
 			"\\xintrestorevariable{${1:character}}"
@@ -313,7 +241,7 @@
 	},
 
 
-	"xintrestorevariablesilently":{
+	"xintrestorevariablesilently{}":{
 		"prefix":"xintrestorevariablesilently",
 		"body":[
 			"\\xintrestorevariablesilently{${1:character}}"
@@ -321,7 +249,7 @@
 	},
 
 
-	"xintunassignexprfunc":{
+	"xintunassignexprfunc{}":{
 		"prefix":"xintunassignexprfunc",
 		"body":[
 			"\\xintunassignexprfunc{${1:name}}"
@@ -329,7 +257,7 @@
 	},
 
 
-	"xintunassigniiexprfunc":{
+	"xintunassigniiexprfunc{}":{
 		"prefix":"xintunassigniiexprfunc",
 		"body":[
 			"\\xintunassigniiexprfunc{${1:name}}"
@@ -337,7 +265,7 @@
 	},
 
 
-	"xintunassignfloatexprfunc":{
+	"xintunassignfloatexprfunc{}":{
 		"prefix":"xintunassignfloatexprfunc",
 		"body":[
 			"\\xintunassignfloatexprfunc{${1:name}}"
@@ -345,18 +273,10 @@
 	},
 
 
-	"xintNewFunction":{
+	"xintNewFunction{}{}":{
 		"prefix":"xintNewFunction",
 		"body":[
 			"\\xintNewFunction{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"xintNewFunction":{
-		"prefix":"xintNewFunction",
-		"body":[
-			"\\xintNewFunction{${1:name}}[${3:args}]{${2:definition}}"
 		]
 	},
 
@@ -505,7 +425,7 @@
 	},
 
 
-	"xintthebareeval":{
+	"xintthebareeval{}":{
 		"prefix":"xintthebareeval",
 		"body":[
 			"\\xintthebareeval{${1:expr}}"
@@ -513,7 +433,7 @@
 	},
 
 
-	"xintthebarefloateval":{
+	"xintthebarefloateval{}":{
 		"prefix":"xintthebarefloateval",
 		"body":[
 			"\\xintthebarefloateval{${1:expr}}"
@@ -521,7 +441,7 @@
 	},
 
 
-	"xintthebareiieval":{
+	"xintthebareiieval{}":{
 		"prefix":"xintthebareiieval",
 		"body":[
 			"\\xintthebareiieval{${1:expr}}"
@@ -529,7 +449,7 @@
 	},
 
 
-	"xintthebareroundedfloateval":{
+	"xintthebareroundedfloateval{}":{
 		"prefix":"xintthebareroundedfloateval",
 		"body":[
 			"\\xintthebareroundedfloateval{${1:expr}}"
@@ -537,7 +457,7 @@
 	},
 
 
-	"XINTusenoargfunc":{
+	"XINTusenoargfunc{}":{
 		"prefix":"XINTusenoargfunc",
 		"body":[
 			"\\XINTusenoargfunc{${1:func}}"
@@ -545,7 +465,7 @@
 	},
 
 
-	"XINTusefunc":{
+	"XINTusefunc{}":{
 		"prefix":"XINTusefunc",
 		"body":[
 			"\\XINTusefunc{${1:func}}"
@@ -553,7 +473,7 @@
 	},
 
 
-	"XINTuseufunc":{
+	"XINTuseufunc{}":{
 		"prefix":"XINTuseufunc",
 		"body":[
 			"\\XINTuseufunc{${1:func}}"
@@ -561,7 +481,7 @@
 	},
 
 
-	"XINTusemacrofunc":{
+	"XINTusemacrofunc{}{}{}":{
 		"prefix":"XINTusemacrofunc",
 		"body":[
 			"\\XINTusemacrofunc{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -573,6 +493,86 @@
 		"prefix":"xintNEprinthook",
 		"body":[
 			"\\xintNEprinthook"
+		]
+	},
+
+
+	"xintDigits*":{
+		"prefix":"*xintDigits",
+		"body":[
+			"\\xintDigits*"
+		]
+	},
+
+
+	"xintSetDigits*{}":{
+		"prefix":"*xintSetDigits",
+		"body":[
+			"\\xintSetDigits*{${1:expr}}"
+		]
+	},
+
+
+	"xintieval[]{}":{
+		"prefix":"xintieval",
+		"body":[
+			"\\xintieval[${2:digits}]{${1:expr}}"
+		]
+	},
+
+
+	"xintfloateval[]{}":{
+		"prefix":"xintfloateval",
+		"body":[
+			"\\xintfloateval[${2:digits}]{${1:expr}}"
+		]
+	},
+
+
+	"xintNewExpr{}[]{}":{
+		"prefix":"xintNewExpr",
+		"body":[
+			"\\xintNewExpr{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"xintNewIIExpr{}[]{}":{
+		"prefix":"xintNewIIExpr",
+		"body":[
+			"\\xintNewIIExpr{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"xintNewFloatExpr{}[]{}":{
+		"prefix":"xintNewFloatExpr",
+		"body":[
+			"\\xintNewFloatExpr{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"xintNewIExpr{}[]{}":{
+		"prefix":"xintNewIExpr",
+		"body":[
+			"\\xintNewIExpr{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"xintNewBoolExpr{}[]{}":{
+		"prefix":"xintNewBoolExpr",
+		"body":[
+			"\\xintNewBoolExpr{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"xintNewFunction{}[]{}":{
+		"prefix":"xintNewFunction",
+		"body":[
+			"\\xintNewFunction{${1:name}}[${3:args}]{${2:definition}}"
 		]
 	}
 }

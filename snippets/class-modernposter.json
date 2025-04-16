@@ -1,7 +1,7 @@
 {
 
 
-	"highlight":{
+	"highlight{}":{
 		"prefix":"highlight",
 		"body":[
 			"\\highlight{${1:text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"posterbox":{
+	"posterbox{}{}":{
 		"prefix":"posterbox",
 		"body":[
 			"\\posterbox{${1:title%text}}{${2:contents%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"doubleposterbox":{
+	"doubleposterbox{}{}{}{}":{
 		"prefix":"doubleposterbox",
 		"body":[
 			"\\doubleposterbox{${1:title1%text}}{${2:contents1%text}}{${3:title2%text}}{${4:contents2%text}}"
@@ -73,15 +73,7 @@
 	},
 
 
-	"doubleposterbox":{
-		"prefix":"doubleposterbox",
-		"body":[
-			"\\doubleposterbox[${5:height}]{${1:title1%text}}{${2:contents1%text}}{${3:title2%text}}{${4:contents2%text}}"
-		]
-	},
-
-
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -97,11 +89,19 @@
 	},
 
 
+	"doubleposterbox[]{}{}{}{}":{
+		"prefix":"doubleposterbox",
+		"body":[
+			"\\doubleposterbox[${5:height}]{${1:title1%text}}{${2:contents1%text}}{${3:title2%text}}{${4:contents2%text}}"
+		]
+	},
+
+
 	"postercolumn":{
 		"prefix":"postercolumn",
 		"body":[
 			"\\begin{postercolumn}",
-			"\t$1",
+				"\t$1",
 			"\\end{postercolumn}"
 		]
 	}

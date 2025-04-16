@@ -1,15 +1,7 @@
 {
 
 
-	"title":{
-		"prefix":"title",
-		"body":[
-			"\\title[${2:head%text}]{${1:text}}"
-		]
-	},
-
-
-	"subject":{
+	"subject{}":{
 		"prefix":"subject",
 		"body":[
 			"\\subject{${1:text}}"
@@ -17,15 +9,7 @@
 	},
 
 
-	"subject":{
-		"prefix":"subject",
-		"body":[
-			"\\subject[${2:head%text}]{${1:text}}"
-		]
-	},
-
-
-	"school":{
+	"school{}":{
 		"prefix":"school",
 		"body":[
 			"\\school{${1:text}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:text}}"
@@ -41,18 +25,10 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
-		]
-	},
-
-
-	"maketitle":{
-		"prefix":"maketitle",
-		"body":[
-			"\\maketitle[${1:rule length%l}]"
 		]
 	},
 
@@ -61,14 +37,6 @@
 		"prefix":"seprule",
 		"body":[
 			"\\seprule"
-		]
-	},
-
-
-	"seprule":{
-		"prefix":"seprule",
-		"body":[
-			"\\seprule[${1:length}]"
 		]
 	},
 
@@ -193,7 +161,7 @@
 	},
 
 
-	"boxedshape":{
+	"boxedshape{}":{
 		"prefix":"boxedshape",
 		"body":[
 			"\\boxedshape{${1:text}}"
@@ -293,6 +261,38 @@
 		"prefix":"schooldocstitles",
 		"body":[
 			"\\schooldocstitles"
+		]
+	},
+
+
+	"title[]{}":{
+		"prefix":"title",
+		"body":[
+			"\\title[${2:head%text}]{${1:text}}"
+		]
+	},
+
+
+	"subject[]{}":{
+		"prefix":"subject",
+		"body":[
+			"\\subject[${2:head%text}]{${1:text}}"
+		]
+	},
+
+
+	"maketitle[]":{
+		"prefix":"maketitle",
+		"body":[
+			"\\maketitle[${1:rule length%l}]"
+		]
+	},
+
+
+	"seprule[]":{
+		"prefix":"seprule",
+		"body":[
+			"\\seprule[${1:length}]"
 		]
 	}
 }

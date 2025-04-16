@@ -1,7 +1,7 @@
 {
 
 
-	"setsizes":{
+	"setsizes{}":{
 		"prefix":"setsizes",
 		"body":[
 			"\\setsizes{${1:chars per line}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"setsizes":{
-		"prefix":"setsizes",
-		"body":[
-			"\\setsizes[${2:line height ratio}]{${1:chars per line}}"
-		]
-	},
-
-
-	"fonttobox":{
+	"fonttobox{}{}":{
 		"prefix":"fonttobox",
 		"body":[
 			"\\fonttobox{${1:text width}}{${2:text}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"fonttobox":{
-		"prefix":"fonttobox",
-		"body":[
-			"\\fonttobox[${3:line height ratio}]{${1:text width}}{${2:text}}"
-		]
-	},
-
-
-	"mediaquery":{
+	"mediaquery{}{}{}":{
 		"prefix":"mediaquery",
 		"body":[
 			"\\mediaquery{${1:test name}}{${2:true}}{${3:false}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"DeclareMediaQueryMatcher":{
+	"DeclareMediaQueryMatcher{}{}":{
 		"prefix":"DeclareMediaQueryMatcher",
 		"body":[
 			"\\DeclareMediaQueryMatcher{${1:test name}}{${2:LaTeX3 boolean test}}"
@@ -61,6 +45,22 @@
 		"prefix":"fixtextheight",
 		"body":[
 			"\\fixtextheight"
+		]
+	},
+
+
+	"setsizes[]{}":{
+		"prefix":"setsizes",
+		"body":[
+			"\\setsizes[${2:line height ratio}]{${1:chars per line}}"
+		]
+	},
+
+
+	"fonttobox[]{}{}":{
+		"prefix":"fonttobox",
+		"body":[
+			"\\fonttobox[${3:line height ratio}]{${1:text width}}{${2:text}}"
 		]
 	}
 }

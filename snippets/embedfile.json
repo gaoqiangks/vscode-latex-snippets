@@ -1,7 +1,7 @@
 {
 
 
-	"embedfile":{
+	"embedfile{}":{
 		"prefix":"embedfile",
 		"body":[
 			"\\embedfile{${1:file}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"embedfile":{
-		"prefix":"embedfile",
-		"body":[
-			"\\embedfile[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"embedfilesetup":{
+	"embedfilesetup{}":{
 		"prefix":"embedfilesetup",
 		"body":[
 			"\\embedfilesetup{${1:options%keyvals}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"embedfilefield":{
+	"embedfilefield{}{}":{
 		"prefix":"embedfilefield",
 		"body":[
 			"\\embedfilefield{${1:key%plain}}{${2:options%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"embedfilesort":{
+	"embedfilesort{}":{
 		"prefix":"embedfilesort",
 		"body":[
 			"\\embedfilesort{${1:key-sort-list}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"embedfileifobjectexists":{
+	"embedfileifobjectexists{}{}{}{}":{
 		"prefix":"embedfileifobjectexists",
 		"body":[
 			"\\embedfileifobjectexists{${1:id}}{${2:type%keyvals}}{${3:then}}{${4:else}}"
@@ -57,10 +49,18 @@
 	},
 
 
-	"embedfilegetobject":{
+	"embedfilegetobject{}{}":{
 		"prefix":"embedfilegetobject",
 		"body":[
 			"\\embedfilegetobject{${1:id}}{${2:type%keyvals}}"
+		]
+	},
+
+
+	"embedfile[]{}":{
+		"prefix":"embedfile",
+		"body":[
+			"\\embedfile[${2:options%keyvals}]{${1:file}}"
 		]
 	}
 }

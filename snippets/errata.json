@@ -73,7 +73,7 @@
 	},
 
 
-	"erratumAdd":{
+	"erratumAdd{}{}":{
 		"prefix":"erratumAdd",
 		"body":[
 			"\\erratumAdd{${1:explanation%text}}{${2:new text%text}}"
@@ -81,15 +81,7 @@
 	},
 
 
-	"erratumAdd":{
-		"prefix":"erratumAdd",
-		"body":[
-			"\\erratumAdd[${3:options%keyvals}]{${1:explanation%text}}{${2:new text%text}}"
-		]
-	},
-
-
-	"erratumDelete":{
+	"erratumDelete{}{}":{
 		"prefix":"erratumDelete",
 		"body":[
 			"\\erratumDelete{${1:explanation%text}}{${2:deleted text%text}}"
@@ -97,15 +89,7 @@
 	},
 
 
-	"erratumDelete":{
-		"prefix":"erratumDelete",
-		"body":[
-			"\\erratumDelete[${3:options%keyvals}]{${1:explanation%text}}{${2:deleted text%text}}"
-		]
-	},
-
-
-	"erratumReplace":{
+	"erratumReplace{}{}{}":{
 		"prefix":"erratumReplace",
 		"body":[
 			"\\erratumReplace{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
@@ -113,15 +97,7 @@
 	},
 
 
-	"erratumReplace":{
-		"prefix":"erratumReplace",
-		"body":[
-			"\\erratumReplace[${4:options%keyvals}]{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
-		]
-	},
-
-
-	"erratumItem":{
+	"erratumItem{}{}":{
 		"prefix":"erratumItem",
 		"body":[
 			"\\erratumItem{${1:reference}}{${2:explanation%text}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"printerrata":{
+	"printerrata{}":{
 		"prefix":"printerrata",
 		"body":[
 			"\\printerrata{${1:file}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"PrintErrata":{
+	"PrintErrata{}":{
 		"prefix":"PrintErrata",
 		"body":[
 			"\\PrintErrata{${1:file}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"eAdd":{
+	"eAdd{}":{
 		"prefix":"eAdd",
 		"body":[
 			"\\eAdd{${1:text}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"eDelete":{
+	"eDelete{}":{
 		"prefix":"eDelete",
 		"body":[
 			"\\eDelete{${1:text}}"
@@ -161,7 +137,7 @@
 	},
 
 
-	"eReplace":{
+	"eReplace{}":{
 		"prefix":"eReplace",
 		"body":[
 			"\\eReplace{${1:text}}"
@@ -193,11 +169,45 @@
 	},
 
 
+	"erratumAdd[]{}{}":{
+		"prefix":"erratumAdd",
+		"body":[
+			"\\erratumAdd[${3:options%keyvals}]{${1:explanation%text}}{${2:new text%text}}"
+		]
+	},
+
+
+	"erratumDelete[]{}{}":{
+		"prefix":"erratumDelete",
+		"body":[
+			"\\erratumDelete[${3:options%keyvals}]{${1:explanation%text}}{${2:deleted text%text}}"
+		]
+	},
+
+
+	"erratumReplace[]{}{}{}":{
+		"prefix":"erratumReplace",
+		"body":[
+			"\\erratumReplace[${4:options%keyvals}]{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
+		]
+	},
+
+
+	"erratum":{
+		"prefix":"erratum",
+		"body":[
+			"\\begin{erratum}",
+				"\t$1",
+			"\\end{erratum}"
+		]
+	},
+
+
 	"errata":{
 		"prefix":"errata",
 		"body":[
 			"\\begin{errata}",
-			"\t$1",
+				"\t$1",
 			"\\end{errata}"
 		]
 	},
@@ -207,7 +217,7 @@
 		"prefix":"erratum",
 		"body":[
 			"\\begin{erratum}",
-			"\t$1",
+				"\t$1",
 			"\\end{erratum}"
 		]
 	}

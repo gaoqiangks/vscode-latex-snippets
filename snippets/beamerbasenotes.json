@@ -1,7 +1,7 @@
 {
 
 
-	"note":{
+	"note{}":{
 		"prefix":"note",
 		"body":[
 			"\\note{${1:note text%text}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"note<overlay specification>":{
+	"note<overlay specification>{}":{
 		"prefix":"note<overlay specification>",
 		"body":[
 			"\\note<overlay specification>{${1:note text%text}}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\note[${2:options%keyvals}]{${1:note text%text}}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\note[${2:options%keyvals}]<${3:overlay specification}>{${1:note text%text}}"
 		]
 	},
 
@@ -41,7 +25,7 @@
 	},
 
 
-	"AtBeginNote":{
+	"AtBeginNote{}":{
 		"prefix":"AtBeginNote",
 		"body":[
 			"\\AtBeginNote{${1:text}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"AtEndNote":{
+	"AtEndNote{}":{
 		"prefix":"AtEndNote",
 		"body":[
 			"\\AtEndNote{${1:text}}"
@@ -57,10 +41,26 @@
 	},
 
 
-	"insertslideintonotes":{
+	"insertslideintonotes{}":{
 		"prefix":"insertslideintonotes",
 		"body":[
 			"\\insertslideintonotes{${1:magnification}}"
+		]
+	},
+
+
+	"note[]{}":{
+		"prefix":"note",
+		"body":[
+			"\\note[${2:options%keyvals}]{${1:note text%text}}"
+		]
+	},
+
+
+	"note[]<>{}":{
+		"prefix":"note",
+		"body":[
+			"\\note[${2:options%keyvals}]<${3:overlay specification}>{${1:note text%text}}"
 		]
 	}
 }

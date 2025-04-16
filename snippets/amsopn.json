@@ -1,7 +1,7 @@
 {
 
 
-	"operatorname":{
+	"operatorname{}":{
 		"prefix":"operatorname",
 		"body":[
 			"\\operatorname{${1:name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"operatorname*":{
-		"prefix":"operatorname*",
-		"body":[
-			"\\operatorname*{${1:name}}"
-		]
-	},
-
-
-	"operatornamewithlimits":{
+	"operatornamewithlimits{}":{
 		"prefix":"operatornamewithlimits",
 		"body":[
 			"\\operatornamewithlimits{${1:name}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"qopname":{
+	"qopname{}{}{}":{
 		"prefix":"qopname",
 		"body":[
 			"\\qopname{${1:arg}}{${2:m or o}}{${3:name}}"
@@ -33,18 +25,10 @@
 	},
 
 
-	"DeclareMathOperator":{
+	"DeclareMathOperator{}{}":{
 		"prefix":"DeclareMathOperator",
 		"body":[
 			"\\DeclareMathOperator{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"DeclareMathOperator*":{
-		"prefix":"DeclareMathOperator*",
-		"body":[
-			"\\DeclareMathOperator*{${1:command}}{${2:definition}}"
 		]
 	},
 
@@ -357,6 +341,22 @@
 		"prefix":"varlimsup",
 		"body":[
 			"\\varlimsup"
+		]
+	},
+
+
+	"operatorname*{}":{
+		"prefix":"*operatorname",
+		"body":[
+			"\\operatorname*{${1:name}}"
+		]
+	},
+
+
+	"DeclareMathOperator*{}{}":{
+		"prefix":"*DeclareMathOperator",
+		"body":[
+			"\\DeclareMathOperator*{${1:command}}{${2:definition}}"
 		]
 	}
 }

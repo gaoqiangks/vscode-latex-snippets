@@ -1,7 +1,7 @@
 {
 
 
-	"ProvidesPackageSVN":{
+	"ProvidesPackageSVN{}":{
 		"prefix":"ProvidesPackageSVN",
 		"body":[
 			"\\ProvidesPackageSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"ProvidesPackageSVN":{
-		"prefix":"ProvidesPackageSVN",
-		"body":[
-			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
-	},
-
-
-	"ProvidesPackageSVN":{
-		"prefix":"ProvidesPackageSVN",
-		"body":[
-			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
-	},
-
-
-	"ProvidesPackageSVN":{
-		"prefix":"ProvidesPackageSVN",
-		"body":[
-			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
-		]
-	},
-
-
-	"ProvidesClassSVN":{
+	"ProvidesClassSVN{}":{
 		"prefix":"ProvidesClassSVN",
 		"body":[
 			"\\ProvidesClassSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
@@ -41,58 +17,10 @@
 	},
 
 
-	"ProvidesClassSVN":{
-		"prefix":"ProvidesClassSVN",
-		"body":[
-			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
-	},
-
-
-	"ProvidesClassSVN":{
-		"prefix":"ProvidesClassSVN",
-		"body":[
-			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
-	},
-
-
-	"ProvidesClassSVN":{
-		"prefix":"ProvidesClassSVN",
-		"body":[
-			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
-		]
-	},
-
-
-	"ProvidesFileSVN":{
+	"ProvidesFileSVN{}":{
 		"prefix":"ProvidesFileSVN",
 		"body":[
 			"\\ProvidesFileSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
-		]
-	},
-
-
-	"ProvidesFileSVN":{
-		"prefix":"ProvidesFileSVN",
-		"body":[
-			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
-	},
-
-
-	"ProvidesFileSVN":{
-		"prefix":"ProvidesFileSVN",
-		"body":[
-			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
-	},
-
-
-	"ProvidesFileSVN":{
-		"prefix":"ProvidesFileSVN",
-		"body":[
-			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
 		]
 	},
 
@@ -177,18 +105,10 @@
 	},
 
 
-	"GetFileInfoSVN":{
+	"GetFileInfoSVN{}":{
 		"prefix":"GetFileInfoSVN",
 		"body":[
 			"\\GetFileInfoSVN{${1:name}}"
-		]
-	},
-
-
-	"GetFileInfoSVN*":{
-		"prefix":"GetFileInfoSVN*",
-		"body":[
-			"\\GetFileInfoSVN*"
 		]
 	},
 
@@ -201,7 +121,87 @@
 	},
 
 
-	"DefineFileInfoSVN":{
+	"GetFileInfoSVN*":{
+		"prefix":"*GetFileInfoSVN",
+		"body":[
+			"\\GetFileInfoSVN*"
+		]
+	},
+
+
+	"ProvidesPackageSVN[]{}":{
+		"prefix":"ProvidesPackageSVN",
+		"body":[
+			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}"
+		]
+	},
+
+
+	"ProvidesPackageSVN[]{}[]":{
+		"prefix":"ProvidesPackageSVN",
+		"body":[
+			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
+		]
+	},
+
+
+	"ProvidesPackageSVN[]{}[][]":{
+		"prefix":"ProvidesPackageSVN",
+		"body":[
+			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
+		]
+	},
+
+
+	"ProvidesClassSVN[]{}":{
+		"prefix":"ProvidesClassSVN",
+		"body":[
+			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}"
+		]
+	},
+
+
+	"ProvidesClassSVN[]{}[]":{
+		"prefix":"ProvidesClassSVN",
+		"body":[
+			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
+		]
+	},
+
+
+	"ProvidesClassSVN[]{}[][]":{
+		"prefix":"ProvidesClassSVN",
+		"body":[
+			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
+		]
+	},
+
+
+	"ProvidesFileSVN[]{}":{
+		"prefix":"ProvidesFileSVN",
+		"body":[
+			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}"
+		]
+	},
+
+
+	"ProvidesFileSVN[]{}[]":{
+		"prefix":"ProvidesFileSVN",
+		"body":[
+			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
+		]
+	},
+
+
+	"ProvidesFileSVN[]{}[][]":{
+		"prefix":"ProvidesFileSVN",
+		"body":[
+			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
+		]
+	},
+
+
+	"DefineFileInfoSVN[]":{
 		"prefix":"DefineFileInfoSVN",
 		"body":[
 			"\\DefineFileInfoSVN[${1:name}]"

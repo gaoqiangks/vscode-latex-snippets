@@ -1,7 +1,7 @@
 {
 
 
-	"tikzinput":{
+	"tikzinput{}":{
 		"prefix":"tikzinput",
 		"body":[
 			"\\tikzinput{${1:file}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"tikzinput":{
-		"prefix":"tikzinput",
-		"body":[
-			"\\tikzinput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"ctikzinput":{
+	"ctikzinput{}":{
 		"prefix":"ctikzinput",
 		"body":[
 			"\\ctikzinput{${1:file}}"
@@ -25,7 +17,15 @@
 	},
 
 
-	"ctikzinput":{
+	"tikzinput[]{}":{
+		"prefix":"tikzinput",
+		"body":[
+			"\\tikzinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"ctikzinput[]{}":{
 		"prefix":"ctikzinput",
 		"body":[
 			"\\ctikzinput[${2:options%keyvals}]{${1:file}}"

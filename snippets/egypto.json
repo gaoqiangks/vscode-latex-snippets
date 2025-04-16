@@ -1,7 +1,7 @@
 {
 
 
-	"":{
+	"|":{
 		"prefix":"",
 		"body":[
 			"\\|"
@@ -9,7 +9,7 @@
 	},
 
 
-	"accolade":{
+	"accolade{}{}":{
 		"prefix":"accolade",
 		"body":[
 			"\\accolade{${1:arg}}{${2:sub}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"dico":{
+	"dico{}{}{}":{
 		"prefix":"dico",
 		"body":[
 			"\\dico{${1:Y}}{${2:translation%text}}{${3:comments%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"DicoIndex":{
+	"DicoIndex{}{}{}{}{}{}{}":{
 		"prefix":"DicoIndex",
 		"body":[
 			"\\DicoIndex{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"Montitre":{
+	"Montitre{}":{
 		"prefix":"Montitre",
 		"body":[
 			"\\Montitre{${1:text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"numligne":{
+	"numligne{}":{
 		"prefix":"numligne",
 		"body":[
 			"\\numligne{${1:value}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"numpage":{
+	"numpage{}":{
 		"prefix":"numpage",
 		"body":[
 			"\\numpage{${1:value}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"pile":{
+	"pile{}":{
 		"prefix":"pile",
 		"body":[
 			"\\pile{${1:text}}"
@@ -146,14 +146,14 @@
 
 
 	"*":{
-		"prefix":"*",
+		"prefix":"",
 		"body":[
 			"\\*"
 		]
 	},
 
 
-	"afficheReference":{
+	"afficheReference{}{}{}{}":{
 		"prefix":"afficheReference",
 		"body":[
 			"\\afficheReference{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"EstRectoVerso":{
+	"EstRectoVerso{}":{
 		"prefix":"EstRectoVerso",
 		"body":[
 			"\\EstRectoVerso{${1:arg}}"
@@ -233,7 +233,7 @@
 	},
 
 
-	"FixeReference":{
+	"FixeReference{}{}{}{}":{
 		"prefix":"FixeReference",
 		"body":[
 			"\\FixeReference{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -329,7 +329,7 @@
 	},
 
 
-	"setPageAndLine":{
+	"setPageAndLine{}{}":{
 		"prefix":"setPageAndLine",
 		"body":[
 			"\\setPageAndLine{${1:page}}{${2:line}}"
@@ -337,7 +337,7 @@
 	},
 
 
-	"texteg":{
+	"texteg{}":{
 		"prefix":"texteg",
 		"body":[
 			"\\texteg{${1:text%plain}}"
@@ -361,30 +361,10 @@
 	},
 
 
-	"echange":{
+	"echange{}{}{}":{
 		"prefix":"echange",
 		"body":[
 			"\\echange{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"possib":{
-		"prefix":"possib",
-		"body":[
-			"\\begin{possib}",
-			"\t$1",
-			"\\end{possib}"
-		]
-	},
-
-
-	"translit":{
-		"prefix":"translit",
-		"body":[
-			"\\begin{translit}",
-			"\t$1",
-			"\\end{translit}"
 		]
 	},
 
@@ -393,7 +373,7 @@
 		"prefix":"exemple",
 		"body":[
 			"\\begin{exemple}",
-			"\t$1",
+				"\t$1",
 			"\\end{exemple}"
 		]
 	},
@@ -403,8 +383,28 @@
 		"prefix":"gramrule",
 		"body":[
 			"\\begin{gramrule}",
-			"\t$1",
+				"\t$1",
 			"\\end{gramrule}"
+		]
+	},
+
+
+	"possib":{
+		"prefix":"possib",
+		"body":[
+			"\\begin{possib}",
+				"\t$1",
+			"\\end{possib}"
+		]
+	},
+
+
+	"translit":{
+		"prefix":"translit",
+		"body":[
+			"\\begin{translit}",
+				"\t$1",
+			"\\end{translit}"
 		]
 	}
 }

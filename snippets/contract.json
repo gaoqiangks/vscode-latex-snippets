@@ -1,26 +1,10 @@
 {
 
 
-	"contractSetup":{
+	"contractSetup{}":{
 		"prefix":"contractSetup",
 		"body":[
 			"\\contractSetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"Clause":{
-		"prefix":"Clause",
-		"body":[
-			"\\Clause[${1:properties%keyvals}]"
-		]
-	},
-
-
-	"SubClause":{
-		"prefix":"SubClause",
-		"body":[
-			"\\SubClause[${1:properties%keyvals}]"
 		]
 	},
 
@@ -81,14 +65,6 @@
 	},
 
 
-	"ellipsispar":{
-		"prefix":"ellipsispar",
-		"body":[
-			"\\ellipsispar[${1:number}]"
-		]
-	},
-
-
 	"parellipsis":{
 		"prefix":"parellipsis",
 		"body":[
@@ -129,7 +105,7 @@
 	},
 
 
-	"refL":{
+	"refL{}":{
 		"prefix":"refL",
 		"body":[
 			"\\refL{${1:label}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"refS":{
+	"refS{}":{
 		"prefix":"refS",
 		"body":[
 			"\\refS{${1:label}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"refN":{
+	"refN{}":{
 		"prefix":"refN",
 		"body":[
 			"\\refN{${1:label}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"refClause":{
+	"refClause{}":{
 		"prefix":"refClause",
 		"body":[
 			"\\refClause{${1:label}}"
@@ -161,7 +137,7 @@
 	},
 
 
-	"refClauseN":{
+	"refClauseN{}":{
 		"prefix":"refClauseN",
 		"body":[
 			"\\refClauseN{${1:label}}"
@@ -169,7 +145,7 @@
 	},
 
 
-	"refPar":{
+	"refPar{}":{
 		"prefix":"refPar",
 		"body":[
 			"\\refPar{${1:label}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"refParL":{
+	"refParL{}":{
 		"prefix":"refParL",
 		"body":[
 			"\\refParL{${1:label}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"refParS":{
+	"refParS{}":{
 		"prefix":"refParS",
 		"body":[
 			"\\refParS{${1:label}}"
@@ -193,7 +169,7 @@
 	},
 
 
-	"refParN":{
+	"refParN{}":{
 		"prefix":"refParN",
 		"body":[
 			"\\refParN{${1:label}}"
@@ -201,15 +177,7 @@
 	},
 
 
-	"refParN":{
-		"prefix":"refParN",
-		"body":[
-			"\\refParN[${2:number format}]{${1:label}}"
-		]
-	},
-
-
-	"refSentence":{
+	"refSentence{}":{
 		"prefix":"refSentence",
 		"body":[
 			"\\refSentence{${1:label}}"
@@ -217,7 +185,7 @@
 	},
 
 
-	"refSentenceL":{
+	"refSentenceL{}":{
 		"prefix":"refSentenceL",
 		"body":[
 			"\\refSentenceL{${1:label}}"
@@ -225,7 +193,7 @@
 	},
 
 
-	"refSentenceS":{
+	"refSentenceS{}":{
 		"prefix":"refSentenceS",
 		"body":[
 			"\\refSentenceS{${1:label}}"
@@ -233,7 +201,7 @@
 	},
 
 
-	"refSentenceN":{
+	"refSentenceN{}":{
 		"prefix":"refSentenceN",
 		"body":[
 			"\\refSentenceN{${1:label}}"
@@ -241,18 +209,10 @@
 	},
 
 
-	"DeclareNewJuraEnvironment":{
+	"DeclareNewJuraEnvironment{}{}{}":{
 		"prefix":"DeclareNewJuraEnvironment",
 		"body":[
 			"\\DeclareNewJuraEnvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"DeclareNewJuraEnvironment":{
-		"prefix":"DeclareNewJuraEnvironment",
-		"body":[
-			"\\DeclareNewJuraEnvironment{${1:envname}}[${4:properties%keyvals}]{${2:begdef}}{${3:enddef}}"
 		]
 	},
 
@@ -289,11 +249,51 @@
 	},
 
 
+	"Clause[]":{
+		"prefix":"Clause",
+		"body":[
+			"\\Clause[${1:properties%keyvals}]"
+		]
+	},
+
+
+	"SubClause[]":{
+		"prefix":"SubClause",
+		"body":[
+			"\\SubClause[${1:properties%keyvals}]"
+		]
+	},
+
+
+	"ellipsispar[]":{
+		"prefix":"ellipsispar",
+		"body":[
+			"\\ellipsispar[${1:number}]"
+		]
+	},
+
+
+	"refParN[]{}":{
+		"prefix":"refParN",
+		"body":[
+			"\\refParN[${2:number format}]{${1:label}}"
+		]
+	},
+
+
+	"DeclareNewJuraEnvironment{}[]{}{}":{
+		"prefix":"DeclareNewJuraEnvironment",
+		"body":[
+			"\\DeclareNewJuraEnvironment{${1:envname}}[${4:properties%keyvals}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
 	"contract":{
 		"prefix":"contract",
 		"body":[
 			"\\begin{contract}",
-			"\t$1",
+				"\t$1",
 			"\\end{contract}"
 		]
 	}

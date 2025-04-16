@@ -1,7 +1,7 @@
 {
 
 
-	"nnlayer":{
+	"nnlayer{}":{
 		"prefix":"nnlayer",
 		"body":[
 			"\\nnlayer{${1:number}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"nnlayer":{
-		"prefix":"nnlayer",
-		"body":[
-			"\\nnlayer[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"nnlayerNoText":{
+	"nnlayerNoText{}":{
 		"prefix":"nnlayerNoText",
 		"body":[
 			"\\nnlayerNoText{${1:arg}}"
@@ -193,11 +185,29 @@
 	},
 
 
+	"nnlayer[]{}":{
+		"prefix":"nnlayer",
+		"body":[
+			"\\nnlayer[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
 	"fullyconnectednn":{
 		"prefix":"fullyconnectednn",
 		"body":[
 			"\\begin{fullyconnectednn}",
-			"\t$1",
+				"\t$1",
+			"\\end{fullyconnectednn}"
+		]
+	},
+
+
+	"fullyconnectednn":{
+		"prefix":"fullyconnectednn",
+		"body":[
+			"\\begin{fullyconnectednn}",
+				"\t$1",
 			"\\end{fullyconnectednn}"
 		]
 	}

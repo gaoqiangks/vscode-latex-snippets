@@ -1,7 +1,7 @@
 {
 
 
-	"definecollection":{
+	"definecollection{}":{
 		"prefix":"definecollection",
 		"body":[
 			"\\definecollection{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"includecollection":{
+	"includecollection{}":{
 		"prefix":"includecollection",
 		"body":[
 			"\\includecollection{${1:name}}"
@@ -17,12 +17,12 @@
 	},
 
 
-	"collectinmacro":{
-		"prefix":"collectinmacro",
+	"collect*":{
+		"prefix":"collect",
 		"body":[
-			"\\begin{collectinmacro}",
-			"\t$1",
-			"\\end{collectinmacro}"
+			"\\begin{collect*}",
+				"\t$1",
+			"\\end{collect*}"
 		]
 	},
 
@@ -31,18 +31,18 @@
 		"prefix":"collect",
 		"body":[
 			"\\begin{collect}",
-			"\t$1",
+				"\t$1",
 			"\\end{collect}"
 		]
 	},
 
 
-	"collect*":{
-		"prefix":"collect*",
+	"collectinmacro":{
+		"prefix":"collectinmacro",
 		"body":[
-			"\\begin{collect*}",
-			"\t$1",
-			"\\end{collect*}"
+			"\\begin{collectinmacro}",
+				"\t$1",
+			"\\end{collectinmacro}"
 		]
 	}
 }

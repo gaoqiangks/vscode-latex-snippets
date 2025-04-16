@@ -1,7 +1,7 @@
 {
 
 
-	"collectsep":{
+	"collectsep{}":{
 		"prefix":"collectsep",
 		"body":[
 			"\\collectsep{${1:separator}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"collectsep":{
-		"prefix":"collectsep",
+	"nocollect{}":{
+		"prefix":"nocollect",
 		"body":[
-			"\\collectsep[${2:punctuation}]{${1:separator}}"
+			"\\nocollect{${1:key}}"
 		]
 	},
 
 
-	"nocollect":{
-		"prefix":"nocollect",
+	"collectsep[]{}":{
+		"prefix":"collectsep",
 		"body":[
-			"\\nocollect{${1:key}}"
+			"\\collectsep[${2:punctuation}]{${1:separator}}"
 		]
 	}
 }

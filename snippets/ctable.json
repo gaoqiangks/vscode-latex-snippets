@@ -1,7 +1,7 @@
 {
 
 
-	"setupctable":{
+	"setupctable{}":{
 		"prefix":"setupctable",
 		"body":[
 			"\\setupctable{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ctable":{
+	"ctable{}{}{}":{
 		"prefix":"ctable",
 		"body":[
 			"\\ctable{${1:preamble}}{${2:tnote cmds}}{${3:table}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"ctable":{
-		"prefix":"ctable",
-		"body":[
-			"\\ctable[${4:options%keyvals}]{${1:preamble}}{${2:tnote cmds}}{${3:table}}"
-		]
-	},
-
-
-	"tnote":{
+	"tnote{}":{
 		"prefix":"tnote",
 		"body":[
 			"\\tnote{${1:footnote text}}"
-		]
-	},
-
-
-	"tnote":{
-		"prefix":"tnote",
-		"body":[
-			"\\tnote[${2:label}]{${1:footnote text}}"
 		]
 	},
 
@@ -45,14 +29,6 @@
 		"prefix":"tmark",
 		"body":[
 			"\\tmark"
-		]
-	},
-
-
-	"tmark":{
-		"prefix":"tmark",
-		"body":[
-			"\\tmark[${1:label}]"
 		]
 	},
 
@@ -85,6 +61,30 @@
 		"prefix":"LL",
 		"body":[
 			"\\LL"
+		]
+	},
+
+
+	"ctable[]{}{}{}":{
+		"prefix":"ctable",
+		"body":[
+			"\\ctable[${4:options%keyvals}]{${1:preamble}}{${2:tnote cmds}}{${3:table}}"
+		]
+	},
+
+
+	"tnote[]{}":{
+		"prefix":"tnote",
+		"body":[
+			"\\tnote[${2:label}]{${1:footnote text}}"
+		]
+	},
+
+
+	"tmark[]":{
+		"prefix":"tmark",
+		"body":[
+			"\\tmark[${1:label}]"
 		]
 	}
 }

@@ -9,14 +9,6 @@
 	},
 
 
-	"tikzexternalize":{
-		"prefix":"tikzexternalize",
-		"body":[
-			"\\tikzexternalize[${1:options%keyvals}]"
-		]
-	},
-
-
 	"tikzexternalrealjob":{
 		"prefix":"tikzexternalrealjob",
 		"body":[
@@ -33,7 +25,7 @@
 	},
 
 
-	"tikzsetexternalprefix":{
+	"tikzsetexternalprefix{}":{
 		"prefix":"tikzsetexternalprefix",
 		"body":[
 			"\\tikzsetexternalprefix{${1:prefix}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"tikzsetnextfilename":{
+	"tikzsetnextfilename{}":{
 		"prefix":"tikzsetnextfilename",
 		"body":[
 			"\\tikzsetnextfilename{${1:file name%file}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"tikzsetfigurename":{
+	"tikzsetfigurename{}":{
 		"prefix":"tikzsetfigurename",
 		"body":[
 			"\\tikzsetfigurename{${1:name}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"tikzappendtofigurename":{
+	"tikzappendtofigurename{}":{
 		"prefix":"tikzappendtofigurename",
 		"body":[
 			"\\tikzappendtofigurename{${1:suffix}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"tikzpicturedependsonfile":{
+	"tikzpicturedependsonfile{}":{
 		"prefix":"tikzpicturedependsonfile",
 		"body":[
 			"\\tikzpicturedependsonfile{${1:file name%file}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"tikzexternalfiledependsonfile":{
+	"tikzexternalfiledependsonfile{}{}":{
 		"prefix":"tikzexternalfiledependsonfile",
 		"body":[
 			"\\tikzexternalfiledependsonfile{${1:external graphics}}{${2:file name%file}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"tikzifexternalizing":{
+	"tikzifexternalizing{}{}":{
 		"prefix":"tikzifexternalizing",
 		"body":[
 			"\\tikzifexternalizing{${1:true code}}{${2:false code}}"
@@ -113,10 +105,18 @@
 	},
 
 
-	"tikzifexternalizingnext":{
+	"tikzifexternalizingnext{}{}":{
 		"prefix":"tikzifexternalizingnext",
 		"body":[
 			"\\tikzifexternalizingnext{${1:true code}}{${2:false code}}"
+		]
+	},
+
+
+	"tikzexternalize[]":{
+		"prefix":"tikzexternalize",
+		"body":[
+			"\\tikzexternalize[${1:options%keyvals}]"
 		]
 	}
 }

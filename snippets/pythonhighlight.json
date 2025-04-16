@@ -17,7 +17,7 @@
 	},
 
 
-	"literatecolour":{
+	"literatecolour{}":{
 		"prefix":"literatecolour",
 		"body":[
 			"\\literatecolour{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"inputpythonfile":{
+	"inputpythonfile{}":{
 		"prefix":"inputpythonfile",
 		"body":[
 			"\\inputpythonfile{${1:file}}"
@@ -33,7 +33,15 @@
 	},
 
 
-	"inputpythonfile":{
+	"pyth||":{
+		"prefix":"pyth",
+		"body":[
+			"\\pyth|${1:text}|"
+		]
+	},
+
+
+	"inputpythonfile{}[]":{
 		"prefix":"inputpythonfile",
 		"body":[
 			"\\inputpythonfile{${1:file}}[${2:start num}]"
@@ -41,18 +49,10 @@
 	},
 
 
-	"inputpythonfile":{
+	"inputpythonfile{}[][]":{
 		"prefix":"inputpythonfile",
 		"body":[
 			"\\inputpythonfile{${1:file}}[${2:start num}][${3:end num}]"
-		]
-	},
-
-
-	"pyth":{
-		"prefix":"pyth",
-		"body":[
-			"\\pyth|${1:text}|"
 		]
 	},
 
@@ -61,7 +61,17 @@
 		"prefix":"python",
 		"body":[
 			"\\begin{python}",
-			"\t$1",
+				"\t$1",
+			"\\end{python}"
+		]
+	},
+
+
+	"python":{
+		"prefix":"python",
+		"body":[
+			"\\begin{python}",
+				"\t$1",
 			"\\end{python}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"rotdriver":{
+	"rotdriver{}":{
 		"prefix":"rotdriver",
 		"body":[
 			"\\rotdriver{${1:driver%keyvals}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"rotatedirection":{
+	"rotatedirection{}":{
 		"prefix":"rotatedirection",
 		"body":[
 			"\\rotatedirection{${1:direction}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"turnbox":{
+	"turnbox{}{}":{
 		"prefix":"turnbox",
 		"body":[
 			"\\turnbox{${1:angle}}{${2:content%text}}"
@@ -93,18 +93,18 @@
 		"prefix":"sideways",
 		"body":[
 			"\\begin{sideways}",
-			"\t$1",
+				"\t$1",
 			"\\end{sideways}"
 		]
 	},
 
 
-	"sidewaysfigure*":{
-		"prefix":"sidewaysfigure*",
+	"turn":{
+		"prefix":"turn",
 		"body":[
-			"\\begin{sidewaysfigure*}",
-			"\t$1",
-			"\\end{sidewaysfigure*}"
+			"\\begin{turn}",
+				"\t$1",
+			"\\end{turn}"
 		]
 	},
 
@@ -113,7 +113,7 @@
 		"prefix":"rotate",
 		"body":[
 			"\\begin{rotate}",
-			"\t$1",
+				"\t$1",
 			"\\end{rotate}"
 		]
 	},
@@ -123,28 +123,8 @@
 		"prefix":"sidewaystable",
 		"body":[
 			"\\begin{sidewaystable}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidewaystable}"
-		]
-	},
-
-
-	"sidewaystable*":{
-		"prefix":"sidewaystable*",
-		"body":[
-			"\\begin{sidewaystable*}",
-			"\t$1",
-			"\\end{sidewaystable*}"
-		]
-	},
-
-
-	"turn":{
-		"prefix":"turn",
-		"body":[
-			"\\begin{turn}",
-			"\t$1",
-			"\\end{turn}"
 		]
 	},
 
@@ -153,8 +133,28 @@
 		"prefix":"sidewaysfigure",
 		"body":[
 			"\\begin{sidewaysfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidewaysfigure}"
+		]
+	},
+
+
+	"sidewaystable*":{
+		"prefix":"*sidewaystable",
+		"body":[
+			"\\begin{sidewaystable*}",
+				"\t$1",
+			"\\end{sidewaystable*}"
+		]
+	},
+
+
+	"sidewaysfigure*":{
+		"prefix":"*sidewaysfigure",
+		"body":[
+			"\\begin{sidewaysfigure*}",
+				"\t$1",
+			"\\end{sidewaysfigure*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"sage":{
+	"sage{}":{
 		"prefix":"sage",
 		"body":[
 			"\\sage{${1:Sage code%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"sagestr":{
+	"sagestr{}":{
 		"prefix":"sagestr",
 		"body":[
 			"\\sagestr{${1:Sage code%definition}}"
@@ -25,26 +25,10 @@
 	},
 
 
-	"sageplot":{
+	"sageplot{}":{
 		"prefix":"sageplot",
 		"body":[
 			"\\sageplot{${1:graphics obj, keyword args}}"
-		]
-	},
-
-
-	"sageplot":{
-		"prefix":"sageplot",
-		"body":[
-			"\\sageplot[${2:options%keyvals}]{${1:graphics obj, keyword args}}"
-		]
-	},
-
-
-	"sageplot":{
-		"prefix":"sageplot",
-		"body":[
-			"\\sageplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args}}"
 		]
 	},
 
@@ -97,22 +81,28 @@
 	},
 
 
-	"sageblock":{
-		"prefix":"sageblock",
+	"sageplot[]{}":{
+		"prefix":"sageplot",
 		"body":[
-			"\\begin{sageblock}",
-			"\t$1",
-			"\\end{sageblock}"
+			"\\sageplot[${2:options%keyvals}]{${1:graphics obj, keyword args}}"
 		]
 	},
 
 
-	"sageverbatim":{
-		"prefix":"sageverbatim",
+	"sageplot[][]{}":{
+		"prefix":"sageplot",
 		"body":[
-			"\\begin{sageverbatim}",
-			"\t$1",
-			"\\end{sageverbatim}"
+			"\\sageplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args}}"
+		]
+	},
+
+
+	"sageblock":{
+		"prefix":"sageblock",
+		"body":[
+			"\\begin{sageblock}",
+				"\t$1",
+			"\\end{sageblock}"
 		]
 	},
 
@@ -121,18 +111,18 @@
 		"prefix":"sagesilent",
 		"body":[
 			"\\begin{sagesilent}",
-			"\t$1",
+				"\t$1",
 			"\\end{sagesilent}"
 		]
 	},
 
 
-	"sagecommandline":{
-		"prefix":"sagecommandline",
+	"sageverbatim":{
+		"prefix":"sageverbatim",
 		"body":[
-			"\\begin{sagecommandline}",
-			"\t$1",
-			"\\end{sagecommandline}"
+			"\\begin{sageverbatim}",
+				"\t$1",
+			"\\end{sageverbatim}"
 		]
 	},
 
@@ -141,8 +131,18 @@
 		"prefix":"sageexample",
 		"body":[
 			"\\begin{sageexample}",
-			"\t$1",
+				"\t$1",
 			"\\end{sageexample}"
+		]
+	},
+
+
+	"sagecommandline":{
+		"prefix":"sagecommandline",
+		"body":[
+			"\\begin{sagecommandline}",
+				"\t$1",
+			"\\end{sagecommandline}"
 		]
 	}
 }

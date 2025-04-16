@@ -1,23 +1,7 @@
 {
 
 
-	"DefineFNsymbols":{
-		"prefix":"DefineFNsymbols",
-		"body":[
-			"\\DefineFNsymbols{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
-		]
-	},
-
-
-	"DefineFNsymbols*":{
-		"prefix":"DefineFNsymbols*",
-		"body":[
-			"\\DefineFNsymbols*{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
-		]
-	},
-
-
-	"setfnsymbol":{
+	"setfnsymbol{}":{
 		"prefix":"setfnsymbol",
 		"body":[
 			"\\setfnsymbol{${1:set name%keyvals}}"
@@ -33,15 +17,7 @@
 	},
 
 
-	"mpfootnotemark":{
-		"prefix":"mpfootnotemark",
-		"body":[
-			"\\mpfootnotemark[${1:number}]"
-		]
-	},
-
-
-	"footref":{
+	"footref{}":{
 		"prefix":"footref",
 		"body":[
 			"\\footref{${1:label}}"
@@ -173,6 +149,30 @@
 		"prefix":"multfootsep",
 		"body":[
 			"\\multfootsep"
+		]
+	},
+
+
+	"DefineFNsymbols*{}[]{}":{
+		"prefix":"*DefineFNsymbols",
+		"body":[
+			"\\DefineFNsymbols*{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
+		]
+	},
+
+
+	"DefineFNsymbols{}[]{}":{
+		"prefix":"DefineFNsymbols",
+		"body":[
+			"\\DefineFNsymbols{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
+		]
+	},
+
+
+	"mpfootnotemark[]":{
+		"prefix":"mpfootnotemark",
+		"body":[
+			"\\mpfootnotemark[${1:number}]"
 		]
 	}
 }

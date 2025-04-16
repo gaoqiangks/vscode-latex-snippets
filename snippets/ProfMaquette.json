@@ -9,7 +9,7 @@
 	},
 
 
-	"TikzDMCor":{
+	"TikzDMCor{}":{
 		"prefix":"TikzDMCor",
 		"body":[
 			"\\TikzDMCor{${1:clés}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"TikzDSCor":{
+	"TikzDSCor{}":{
 		"prefix":"TikzDSCor",
 		"body":[
 			"\\TikzDSCor{${1:clés}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"TikzIECor":{
+	"TikzIECor{}":{
 		"prefix":"TikzIECor",
 		"body":[
 			"\\TikzIECor{${1:clés}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"TikzFicheCor":{
+	"TikzFicheCor{}":{
 		"prefix":"TikzFicheCor",
 		"body":[
 			"\\TikzFicheCor{${1:clés}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"TikzParcoursCor":{
+	"TikzParcoursCor{}":{
 		"prefix":"TikzParcoursCor",
 		"body":[
 			"\\TikzParcoursCor{${1:clés}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"TikzPdTCor":{
+	"TikzPdTCor{}":{
 		"prefix":"TikzPdTCor",
 		"body":[
 			"\\TikzPdTCor{${1:clés}}"
@@ -105,18 +105,10 @@
 	},
 
 
-	"Competences":{
+	"Competences{}":{
 		"prefix":"Competences",
 		"body":[
 			"\\Competences{${1:texte1/texte2/...%text}}"
-		]
-	},
-
-
-	"Competences":{
-		"prefix":"Competences",
-		"body":[
-			"\\Competences[${2:N}]{${1:col1§...§colN/texte1/texte2/...%text}}"
 		]
 	},
 
@@ -145,7 +137,7 @@
 	},
 
 
-	"brm":{
+	"brm{}":{
 		"prefix":"brm",
 		"body":[
 			"\\brm{${1:nombre}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"AfficheParcours":{
+	"AfficheParcours{}":{
 		"prefix":"AfficheParcours",
 		"body":[
 			"\\AfficheParcours{${1:parcour}}"
@@ -161,15 +153,7 @@
 	},
 
 
-	"AfficheParcours":{
-		"prefix":"AfficheParcours",
-		"body":[
-			"\\AfficheParcours[${2:clés%keyvals}]{${1:parcour}}"
-		]
-	},
-
-
-	"CheminVrai":{
+	"CheminVrai{}":{
 		"prefix":"CheminVrai",
 		"body":[
 			"\\CheminVrai{${1:noeud départ/noeud arrivée}}"
@@ -177,7 +161,7 @@
 	},
 
 
-	"CheminFaux":{
+	"CheminFaux{}":{
 		"prefix":"CheminFaux",
 		"body":[
 			"\\CheminFaux{${1:noeud départ/noeud arrivée}}"
@@ -185,52 +169,18 @@
 	},
 
 
-	"SOS":{
-		"prefix":"SOS",
+	"Competences[]{}":{
+		"prefix":"Competences",
 		"body":[
-			"\\begin{SOS}",
-			"\t$1",
-			"\\end{SOS}"
+			"\\Competences[${2:N}]{${1:col1§...§colN/texte1/texte2/...%text}}"
 		]
 	},
 
 
-	"Indice":{
-		"prefix":"Indice",
+	"AfficheParcours[]{}":{
+		"prefix":"AfficheParcours",
 		"body":[
-			"\\begin{Indice}",
-			"\t$1",
-			"\\end{Indice}"
-		]
-	},
-
-
-	"Solution":{
-		"prefix":"Solution",
-		"body":[
-			"\\begin{Solution}",
-			"\t$1",
-			"\\end{Solution}"
-		]
-	},
-
-
-	"exercice":{
-		"prefix":"exercice",
-		"body":[
-			"\\begin{exercice}",
-			"\t$1",
-			"\\end{exercice}"
-		]
-	},
-
-
-	"Reponse":{
-		"prefix":"Reponse",
-		"body":[
-			"\\begin{Reponse}",
-			"\t$1",
-			"\\end{Reponse}"
+			"\\AfficheParcours[${2:clés%keyvals}]{${1:parcour}}"
 		]
 	},
 
@@ -239,8 +189,78 @@
 		"prefix":"Maquette",
 		"body":[
 			"\\begin{Maquette}",
-			"\t$1",
+				"\t$1",
 			"\\end{Maquette}"
+		]
+	},
+
+
+	"exercice":{
+		"prefix":"exercice",
+		"body":[
+			"\\begin{exercice}",
+				"\t$1",
+			"\\end{exercice}"
+		]
+	},
+
+
+	"SOS":{
+		"prefix":"SOS",
+		"body":[
+			"\\begin{SOS}",
+				"\t$1",
+			"\\end{SOS}"
+		]
+	},
+
+
+	"Solution":{
+		"prefix":"Solution",
+		"body":[
+			"\\begin{Solution}",
+				"\t$1",
+			"\\end{Solution}"
+		]
+	},
+
+
+	"Reponse":{
+		"prefix":"Reponse",
+		"body":[
+			"\\begin{Reponse}",
+				"\t$1",
+			"\\end{Reponse}"
+		]
+	},
+
+
+	"Indice":{
+		"prefix":"Indice",
+		"body":[
+			"\\begin{Indice}",
+				"\t$1",
+			"\\end{Indice}"
+		]
+	},
+
+
+	"Maquette":{
+		"prefix":"Maquette",
+		"body":[
+			"\\begin{Maquette}",
+				"\t$1",
+			"\\end{Maquette}"
+		]
+	},
+
+
+	"exercice":{
+		"prefix":"exercice",
+		"body":[
+			"\\begin{exercice}",
+				"\t$1",
+			"\\end{exercice}"
 		]
 	}
 }

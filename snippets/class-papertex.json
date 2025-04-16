@@ -1,7 +1,7 @@
 {
 
 
-	"authorandplace":{
+	"authorandplace{}{}":{
 		"prefix":"authorandplace",
 		"body":[
 			"\\authorandplace{${1:author}}{${2:place}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"columntitle":{
+	"columntitle{}{}":{
 		"prefix":"columntitle",
 		"body":[
 			"\\columntitle{${1:type%keyvals}}{${2:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"edition":{
+	"edition{}":{
 		"prefix":"edition",
 		"body":[
 			"\\edition{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"expandedtitle":{
+	"expandedtitle{}{}":{
 		"prefix":"expandedtitle",
 		"body":[
 			"\\expandedtitle{${1:type%keyvals}}{${2:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"firstimage":{
+	"firstimage{}{}":{
 		"prefix":"firstimage",
 		"body":[
 			"\\firstimage{${1:imagefile}}{${2:caption%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"firstnews":{
+	"firstnews{}{}{}":{
 		"prefix":"firstnews",
 		"body":[
 			"\\firstnews{${1:heading%text}}{${2:text}}{${3:time}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"foot":{
+	"foot{}{}{}":{
 		"prefix":"foot",
 		"body":[
 			"\\foot{${1:left%text}}{${2:center%text}}{${3:right%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"heading":{
+	"heading{}{}{}":{
 		"prefix":"heading",
 		"body":[
 			"\\heading{${1:left%text}}{${2:center%text}}{${3:right%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"image":{
+	"image{}{}":{
 		"prefix":"image",
 		"body":[
 			"\\image{${1:imagefile}}{${2:caption%text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"indexitem":{
+	"indexitem{}{}":{
 		"prefix":"indexitem",
 		"body":[
 			"\\indexitem{${1:text}}{${2:reference}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"newsection":{
+	"newsection{}":{
 		"prefix":"newsection",
 		"body":[
 			"\\newsection{${1:name}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"secondnews":{
+	"secondnews{}{}{}{}{}":{
 		"prefix":"secondnews",
 		"body":[
 			"\\secondnews{${1:heading%text}}{${2:subheading%text}}{${3:text}}{${4:pages of}}{${5:time}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"shortnewsitem":{
+	"shortnewsitem{}{}":{
 		"prefix":"shortnewsitem",
 		"body":[
 			"\\shortnewsitem{${1:heading%text}}{${2:text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"thirdnews":{
+	"thirdnews{}{}{}{}{}":{
 		"prefix":"thirdnews",
 		"body":[
 			"\\thirdnews{${1:heading%text}}{${2:subheading%text}}{${3:text}}{${4:pages of}}{${5:time}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"timestamp":{
+	"timestamp{}":{
 		"prefix":"timestamp",
 		"body":[
 			"\\timestamp{${1:time}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"weatheritem":{
+	"weatheritem{}{}{}{}{}":{
 		"prefix":"weatheritem",
 		"body":[
 			"\\weatheritem{${1:imagefile}}{${2:day}}{${3:max}}{${4:min}}{${5:short desc%text}}"
@@ -185,15 +185,7 @@
 	},
 
 
-	"grid":{
-		"prefix":"grid",
-		"body":[
-			"\\grid[${3:show}]{${1:rows}}{${2:columns}}"
-		]
-	},
-
-
-	"grid":{
+	"grid{}{}":{
 		"prefix":"grid",
 		"body":[
 			"\\grid{${1:rows}}{${2:columns}}"
@@ -305,7 +297,7 @@
 	},
 
 
-	"mylogo":{
+	"mylogo{}":{
 		"prefix":"mylogo",
 		"body":[
 			"\\mylogo{${1:imagefile}}"
@@ -465,22 +457,30 @@
 	},
 
 
+	"grid[]{}{}":{
+		"prefix":"grid",
+		"body":[
+			"\\grid[${3:show}]{${1:rows}}{${2:columns}}"
+		]
+	},
+
+
 	"authorblock":{
 		"prefix":"authorblock",
 		"body":[
 			"\\begin{authorblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{authorblock}"
 		]
 	},
 
 
-	"weatherblock":{
-		"prefix":"weatherblock",
+	"editorial":{
+		"prefix":"editorial",
 		"body":[
-			"\\begin{weatherblock}",
-			"\t$1",
-			"\\end{weatherblock}"
+			"\\begin{editorial}",
+				"\t$1",
+			"\\end{editorial}"
 		]
 	},
 
@@ -489,7 +489,7 @@
 		"prefix":"frontpage",
 		"body":[
 			"\\begin{frontpage}",
-			"\t$1",
+				"\t$1",
 			"\\end{frontpage}"
 		]
 	},
@@ -499,18 +499,8 @@
 		"prefix":"indexblock",
 		"body":[
 			"\\begin{indexblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{indexblock}"
-		]
-	},
-
-
-	"editorial":{
-		"prefix":"editorial",
-		"body":[
-			"\\begin{editorial}",
-			"\t$1",
-			"\\end{editorial}"
 		]
 	},
 
@@ -519,7 +509,7 @@
 		"prefix":"news",
 		"body":[
 			"\\begin{news}",
-			"\t$1",
+				"\t$1",
 			"\\end{news}"
 		]
 	},
@@ -529,8 +519,18 @@
 		"prefix":"shortnews",
 		"body":[
 			"\\begin{shortnews}",
-			"\t$1",
+				"\t$1",
 			"\\end{shortnews}"
+		]
+	},
+
+
+	"weatherblock":{
+		"prefix":"weatherblock",
+		"body":[
+			"\\begin{weatherblock}",
+				"\t$1",
+			"\\end{weatherblock}"
 		]
 	}
 }

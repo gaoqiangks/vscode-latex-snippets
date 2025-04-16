@@ -1,39 +1,7 @@
 {
 
 
-	"emph*":{
-		"prefix":"emph*",
-		"body":[
-			"\\emph*{${1:text}}"
-		]
-	},
-
-
-	"textit*":{
-		"prefix":"textit*",
-		"body":[
-			"\\textit*{${1:text}}"
-		]
-	},
-
-
-	"textsl*":{
-		"prefix":"textsl*",
-		"body":[
-			"\\textsl*{${1:text}}"
-		]
-	},
-
-
-	"textsi*":{
-		"prefix":"textsi*",
-		"body":[
-			"\\textsi*{${1:text}}"
-		]
-	},
-
-
-	"AddEmph":{
+	"AddEmph{}{}":{
 		"prefix":"AddEmph",
 		"body":[
 			"\\AddEmph{${1:o}}{${2:c}}"
@@ -41,15 +9,7 @@
 	},
 
 
-	"AddEmph":{
-		"prefix":"AddEmph",
-		"body":[
-			"\\AddEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"ChangeEmph":{
+	"ChangeEmph{}{}":{
 		"prefix":"ChangeEmph",
 		"body":[
 			"\\ChangeEmph{${1:o}}{${2:c}}"
@@ -57,15 +17,7 @@
 	},
 
 
-	"ChangeEmph":{
-		"prefix":"ChangeEmph",
-		"body":[
-			"\\ChangeEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"RenewEmph":{
+	"RenewEmph{}{}":{
 		"prefix":"RenewEmph",
 		"body":[
 			"\\RenewEmph{${1:o}}{${2:c}}"
@@ -73,15 +25,7 @@
 	},
 
 
-	"RenewEmph":{
-		"prefix":"RenewEmph",
-		"body":[
-			"\\RenewEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"DeleteEmph":{
+	"DeleteEmph{}{}":{
 		"prefix":"DeleteEmph",
 		"body":[
 			"\\DeleteEmph{${1:o}}{${2:c}}"
@@ -89,55 +33,7 @@
 	},
 
 
-	"AddOpEmph":{
-		"prefix":"AddOpEmph",
-		"body":[
-			"\\AddOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
-	},
-
-
-	"AddClEmph":{
-		"prefix":"AddClEmph",
-		"body":[
-			"\\AddClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"ChangeOpEmph":{
-		"prefix":"ChangeOpEmph",
-		"body":[
-			"\\ChangeOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
-	},
-
-
-	"ChangeClEmph":{
-		"prefix":"ChangeClEmph",
-		"body":[
-			"\\ChangeClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"RenewOpEmph":{
-		"prefix":"RenewOpEmph",
-		"body":[
-			"\\RenewOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
-	},
-
-
-	"RenewClEmph":{
-		"prefix":"RenewClEmph",
-		"body":[
-			"\\RenewClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
-	},
-
-
-	"DeleteOpEmph":{
+	"DeleteOpEmph{}":{
 		"prefix":"DeleteOpEmph",
 		"body":[
 			"\\DeleteOpEmph{${1:o}}"
@@ -145,7 +41,7 @@
 	},
 
 
-	"DeleteClEmph":{
+	"DeleteClEmph{}":{
 		"prefix":"DeleteClEmph",
 		"body":[
 			"\\DeleteClEmph{${1:c}}"
@@ -153,7 +49,7 @@
 	},
 
 
-	"EmbracMakeKnown":{
+	"EmbracMakeKnown{}":{
 		"prefix":"EmbracMakeKnown",
 		"body":[
 			"\\EmbracMakeKnown{${1:cmd}}"
@@ -177,7 +73,7 @@
 	},
 
 
-	"emb":{
+	"emb{}{}{}":{
 		"prefix":"emb",
 		"body":[
 			"\\emb{${1:open}}{${2:close}}{${3:text}}"
@@ -185,7 +81,7 @@
 	},
 
 
-	"embparen":{
+	"embparen{}":{
 		"prefix":"embparen",
 		"body":[
 			"\\embparen{${1:text}}"
@@ -193,10 +89,114 @@
 	},
 
 
-	"embbracket":{
+	"embbracket{}":{
 		"prefix":"embbracket",
 		"body":[
 			"\\embbracket{${1:text}}"
+		]
+	},
+
+
+	"emph*{}":{
+		"prefix":"*emph",
+		"body":[
+			"\\emph*{${1:text}}"
+		]
+	},
+
+
+	"textit*{}":{
+		"prefix":"*textit",
+		"body":[
+			"\\textit*{${1:text}}"
+		]
+	},
+
+
+	"textsl*{}":{
+		"prefix":"*textsl",
+		"body":[
+			"\\textsl*{${1:text}}"
+		]
+	},
+
+
+	"textsi*{}":{
+		"prefix":"*textsi",
+		"body":[
+			"\\textsi*{${1:text}}"
+		]
+	},
+
+
+	"AddEmph{}[]{}[]":{
+		"prefix":"AddEmph",
+		"body":[
+			"\\AddEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
+		]
+	},
+
+
+	"ChangeEmph{}[]{}[]":{
+		"prefix":"ChangeEmph",
+		"body":[
+			"\\ChangeEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
+		]
+	},
+
+
+	"RenewEmph{}[]{}[]":{
+		"prefix":"RenewEmph",
+		"body":[
+			"\\RenewEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
+		]
+	},
+
+
+	"AddOpEmph{}[]":{
+		"prefix":"AddOpEmph",
+		"body":[
+			"\\AddOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
+		]
+	},
+
+
+	"AddClEmph{}[]":{
+		"prefix":"AddClEmph",
+		"body":[
+			"\\AddClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
+		]
+	},
+
+
+	"ChangeOpEmph{}[]":{
+		"prefix":"ChangeOpEmph",
+		"body":[
+			"\\ChangeOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
+		]
+	},
+
+
+	"ChangeClEmph{}[]":{
+		"prefix":"ChangeClEmph",
+		"body":[
+			"\\ChangeClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
+		]
+	},
+
+
+	"RenewOpEmph{}[]":{
+		"prefix":"RenewOpEmph",
+		"body":[
+			"\\RenewOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
+		]
+	},
+
+
+	"RenewClEmph{}[]":{
+		"prefix":"RenewClEmph",
+		"body":[
+			"\\RenewClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
 		]
 	}
 }

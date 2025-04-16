@@ -1,7 +1,7 @@
 {
 
 
-	"setupluaindex":{
+	"setupluaindex{}":{
 		"prefix":"setupluaindex",
 		"body":[
 			"\\setupluaindex{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"see":{
+	"see{}{}":{
 		"prefix":"see",
 		"body":[
 			"\\see{${1:text}}{${2:page}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"seealso":{
+	"seealso{}{}":{
 		"prefix":"seealso",
 		"body":[
 			"\\seealso{${1:text}}{${2:page}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"newindex":{
+	"newindex{}":{
 		"prefix":"newindex",
 		"body":[
 			"\\newindex{${1:index name}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"newindex":{
-		"prefix":"newindex",
-		"body":[
-			"\\newindex[${2:options%keyvals}]{${1:index name}}"
-		]
-	},
-
-
-	"luaindex":{
+	"luaindex{}{}":{
 		"prefix":"luaindex",
 		"body":[
 			"\\luaindex{${1:index name}}{${2:entry}}"
@@ -65,15 +57,7 @@
 	},
 
 
-	"luaindex":{
-		"prefix":"luaindex",
-		"body":[
-			"\\luaindex{${1:index name}}[${3:options%keyvals}]{${2:entry}}"
-		]
-	},
-
-
-	"luasubindex":{
+	"luasubindex{}{}{}":{
 		"prefix":"luasubindex",
 		"body":[
 			"\\luasubindex{${1:index name}}{${2:entry}}{${3:subentry}}"
@@ -81,23 +65,7 @@
 	},
 
 
-	"luasubindex":{
-		"prefix":"luasubindex",
-		"body":[
-			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}{${3:subentry}}"
-		]
-	},
-
-
-	"luasubindex":{
-		"prefix":"luasubindex",
-		"body":[
-			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}[${5:options}]{${3:subentry}}"
-		]
-	},
-
-
-	"luasubsubindex":{
+	"luasubsubindex{}{}{}{}":{
 		"prefix":"luasubsubindex",
 		"body":[
 			"\\luasubsubindex{${1:index name}}{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
@@ -105,31 +73,7 @@
 	},
 
 
-	"luasubsubindex":{
-		"prefix":"luasubsubindex",
-		"body":[
-			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
-		]
-	},
-
-
-	"luasubsubindex":{
-		"prefix":"luasubsubindex",
-		"body":[
-			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}[${6:options}]{${3:subentry}}[${7:options}]{${4:subsubentry}}"
-		]
-	},
-
-
-	"index":{
-		"prefix":"index",
-		"body":[
-			"\\index[${2:options%keyvals}]{${1:entry}}"
-		]
-	},
-
-
-	"subindex":{
+	"subindex{}{}":{
 		"prefix":"subindex",
 		"body":[
 			"\\subindex{${1:entry}}{${2:subentry}}"
@@ -137,42 +81,10 @@
 	},
 
 
-	"subindex":{
-		"prefix":"subindex",
-		"body":[
-			"\\subindex[${3:options%keyvals}]{${1:entry}}{${2:subentry}}"
-		]
-	},
-
-
-	"subindex":{
-		"prefix":"subindex",
-		"body":[
-			"\\subindex[${3:options%keyvals}]{${1:entry}}[${4:options}]{${2:subentry}}"
-		]
-	},
-
-
-	"subsubindex":{
+	"subsubindex{}{}{}":{
 		"prefix":"subsubindex",
 		"body":[
 			"\\subsubindex{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
-		]
-	},
-
-
-	"subsubindex":{
-		"prefix":"subsubindex",
-		"body":[
-			"\\subsubindex[${4:options%keyvals}]{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
-		]
-	},
-
-
-	"subsubindex":{
-		"prefix":"subsubindex",
-		"body":[
-			"\\subsubindex[${4:options%keyvals}]{${1:entry}}[${5:options}]{${2:subentry}}[${6:options}]{${3:subsubentry}}"
 		]
 	},
 
@@ -185,15 +97,7 @@
 	},
 
 
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex[${1:options%keyvals}]"
-		]
-	},
-
-
-	"indexgroup":{
+	"indexgroup{}":{
 		"prefix":"indexgroup",
 		"body":[
 			"\\indexgroup{${1:group}}"
@@ -225,7 +129,7 @@
 	},
 
 
-	"indexpagenumbers":{
+	"indexpagenumbers{}":{
 		"prefix":"indexpagenumbers",
 		"body":[
 			"\\indexpagenumbers{${1:page number}}"
@@ -233,7 +137,7 @@
 	},
 
 
-	"indexpagenumber":{
+	"indexpagenumber{}":{
 		"prefix":"indexpagenumber",
 		"body":[
 			"\\indexpagenumber{${1:page number}}"
@@ -245,6 +149,102 @@
 		"prefix":"indexpagenumbersep",
 		"body":[
 			"\\indexpagenumbersep"
+		]
+	},
+
+
+	"newindex[]{}":{
+		"prefix":"newindex",
+		"body":[
+			"\\newindex[${2:options%keyvals}]{${1:index name}}"
+		]
+	},
+
+
+	"luaindex{}[]{}":{
+		"prefix":"luaindex",
+		"body":[
+			"\\luaindex{${1:index name}}[${3:options%keyvals}]{${2:entry}}"
+		]
+	},
+
+
+	"luasubindex{}[]{}{}":{
+		"prefix":"luasubindex",
+		"body":[
+			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}{${3:subentry}}"
+		]
+	},
+
+
+	"luasubindex{}[]{}[]{}":{
+		"prefix":"luasubindex",
+		"body":[
+			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}[${5:options}]{${3:subentry}}"
+		]
+	},
+
+
+	"luasubsubindex{}[]{}{}{}":{
+		"prefix":"luasubsubindex",
+		"body":[
+			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
+		]
+	},
+
+
+	"luasubsubindex{}[]{}[]{}[]{}":{
+		"prefix":"luasubsubindex",
+		"body":[
+			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}[${6:options}]{${3:subentry}}[${7:options}]{${4:subsubentry}}"
+		]
+	},
+
+
+	"index[]{}":{
+		"prefix":"index",
+		"body":[
+			"\\index[${2:options%keyvals}]{${1:entry}}"
+		]
+	},
+
+
+	"subindex[]{}{}":{
+		"prefix":"subindex",
+		"body":[
+			"\\subindex[${3:options%keyvals}]{${1:entry}}{${2:subentry}}"
+		]
+	},
+
+
+	"subindex[]{}[]{}":{
+		"prefix":"subindex",
+		"body":[
+			"\\subindex[${3:options%keyvals}]{${1:entry}}[${4:options}]{${2:subentry}}"
+		]
+	},
+
+
+	"subsubindex[]{}{}{}":{
+		"prefix":"subsubindex",
+		"body":[
+			"\\subsubindex[${4:options%keyvals}]{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
+		]
+	},
+
+
+	"subsubindex[]{}[]{}[]{}":{
+		"prefix":"subsubindex",
+		"body":[
+			"\\subsubindex[${4:options%keyvals}]{${1:entry}}[${5:options}]{${2:subentry}}[${6:options}]{${3:subsubentry}}"
+		]
+	},
+
+
+	"printindex[]":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex[${1:options%keyvals}]"
 		]
 	}
 }

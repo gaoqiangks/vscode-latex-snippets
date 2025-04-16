@@ -17,7 +17,7 @@
 	},
 
 
-	"mon^":{
+	"mon^{}_{}":{
 		"prefix":"mon^",
 		"body":[
 			"\\mon^{${1:L}}_{${2:L}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"epi^":{
+	"epi^{}_{}":{
 		"prefix":"epi^",
 		"body":[
 			"\\epi^{${1:L}}_{${2:L}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"toleft^":{
+	"toleft^{}_{}":{
 		"prefix":"toleft^",
 		"body":[
 			"\\toleft^{${1:L}}_{${2:L}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"monleft^":{
+	"monleft^{}_{}":{
 		"prefix":"monleft^",
 		"body":[
 			"\\monleft^{${1:L}}_{${2:L}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"epileft^":{
+	"epileft^{}_{}":{
 		"prefix":"epileft^",
 		"body":[
 			"\\epileft^{${1:L}}_{${2:L}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"place":{
-		"prefix":"place",
-		"body":[
-			"\\place({${1:x}},{${2:y}})[${4:{${3:item}}}]"
-		]
-	},
-
-
-	"twoar":{
+	"twoar()":{
 		"prefix":"twoar",
 		"body":[
 			"\\twoar({${1:dx}},{${2:dy}})"
@@ -73,18 +65,26 @@
 	},
 
 
-	"node ":{
-		"prefix":"node ",
+	"Loop(){}()_{}":{
+		"prefix":"Loop",
 		"body":[
-			"\\node {${1:id}}({${2:x}},{${3:y}})[${5:{${4:N}}}]"
+			"\\Loop({${1:x}},{${2:y}}){${3:N}}({${4:dirstart}},{${5:dirend}})_{${6:L}}"
 		]
 	},
 
 
-	"Loop":{
-		"prefix":"Loop",
+	"place()[]":{
+		"prefix":"place",
 		"body":[
-			"\\Loop({${1:x}},{${2:y}}){${3:N}}({${4:dirstart}},{${5:dirend}})_{${6:L}}"
+			"\\place({${1:x}},{${2:y}})[${4:{${3:item}}}]"
+		]
+	},
+
+
+	"node {}()[]":{
+		"prefix":"node ",
+		"body":[
+			"\\node {${1:id}}({${2:x}},{${3:y}})[${5:{${4:N}}}]"
 		]
 	}
 }

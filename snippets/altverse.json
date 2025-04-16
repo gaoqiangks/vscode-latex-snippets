@@ -1,7 +1,7 @@
 {
 
 
-	"Vbreak":{
+	"Vbreak{}":{
 		"prefix":"Vbreak",
 		"body":[
 			"\\Vbreak{${1:envname}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"Vindent":{
-		"prefix":"Vindent",
-		"body":[
-			"\\Vindent[${1:inches}]"
-		]
-	},
-
-
-	"Vhead":{
+	"Vhead{}":{
 		"prefix":"Vhead",
 		"body":[
 			"\\Vhead{${1:header%text}}"
-		]
-	},
-
-
-	"Vhead":{
-		"prefix":"Vhead",
-		"body":[
-			"\\Vhead[${2:short header%text}]{${1:header%text}}"
 		]
 	},
 
@@ -65,7 +49,7 @@
 	},
 
 
-	"Vsub":{
+	"Vsub{}":{
 		"prefix":"Vsub",
 		"body":[
 			"\\Vsub{${1:subheader%text}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"Vto":{
+	"Vto{}":{
 		"prefix":"Vto",
 		"body":[
 			"\\Vto{${1:dedication%text}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"Vat":{
+	"Vat{}":{
 		"prefix":"Vat",
 		"body":[
 			"\\Vat{${1:annotation%text}}"
@@ -121,22 +105,18 @@
 	},
 
 
-	"Verse*":{
-		"prefix":"Verse*",
+	"Vindent[]":{
+		"prefix":"Vindent",
 		"body":[
-			"\\begin{Verse*}",
-			"\t$1",
-			"\\end{Verse*}"
+			"\\Vindent[${1:inches}]"
 		]
 	},
 
 
-	"VERSE":{
-		"prefix":"VERSE",
+	"Vhead[]{}":{
+		"prefix":"Vhead",
 		"body":[
-			"\\begin{VERSE}",
-			"\t$1",
-			"\\end{VERSE}"
+			"\\Vhead[${2:short header%text}]{${1:header%text}}"
 		]
 	},
 
@@ -145,8 +125,58 @@
 		"prefix":"Verse",
 		"body":[
 			"\\begin{Verse}",
-			"\t$1",
+				"\t$1",
 			"\\end{Verse}"
+		]
+	},
+
+
+	"VERSE":{
+		"prefix":"VERSE",
+		"body":[
+			"\\begin{VERSE}",
+				"\t$1",
+			"\\end{VERSE}"
+		]
+	},
+
+
+	"Verse*":{
+		"prefix":"*Verse",
+		"body":[
+			"\\begin{Verse*}",
+				"\t$1",
+			"\\end{Verse*}"
+		]
+	},
+
+
+	"Verse":{
+		"prefix":"Verse",
+		"body":[
+			"\\begin{Verse}",
+				"\t$1",
+			"\\end{Verse}"
+		]
+	},
+
+
+	"VERSE":{
+		"prefix":"VERSE",
+		"body":[
+			"\\begin{VERSE}",
+				"\t$1",
+			"\\end{VERSE}"
+		]
+	},
+
+
+	"Verse*":{
+		"prefix":"Verse",
+		"body":[
+			"\\begin{Verse*}",
+				"\t$1",
+			"\\end{Verse*}"
 		]
 	}
 }

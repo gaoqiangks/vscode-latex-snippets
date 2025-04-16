@@ -1,7 +1,7 @@
 {
 
 
-	"newoperator":{
+	"newoperator{}{}{}":{
 		"prefix":"newoperator",
 		"body":[
 			"\\newoperator{${1:cmd}}{${2:text%plain}}{${3:after code}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"renewoperator":{
+	"renewoperator{}{}{}":{
 		"prefix":"renewoperator",
 		"body":[
 			"\\renewoperator{${1:cmd}}{${2:text%plain}}{${3:after code}}"
@@ -1113,7 +1113,7 @@
 	},
 
 
-	"ped":{
+	"ped{}":{
 		"prefix":"ped",
 		"body":[
 			"\\ped{${1:text%plain}}"
@@ -1121,7 +1121,7 @@
 	},
 
 
-	"ap":{
+	"ap{}":{
 		"prefix":"ap",
 		"body":[
 			"\\ap{${1:text%plain}}"
@@ -1169,7 +1169,7 @@
 	},
 
 
-	"deriv":{
+	"deriv{}{}":{
 		"prefix":"deriv",
 		"body":[
 			"\\deriv{${1:func}}{${2:var}}"
@@ -1177,26 +1177,10 @@
 	},
 
 
-	"deriv":{
-		"prefix":"deriv",
-		"body":[
-			"\\deriv[${3:order}]{${1:func}}{${2:var}}"
-		]
-	},
-
-
-	"pderiv":{
+	"pderiv{}{}":{
 		"prefix":"pderiv",
 		"body":[
 			"\\pderiv{${1:func}}{${2:var}}"
-		]
-	},
-
-
-	"pderiv":{
-		"prefix":"pderiv",
-		"body":[
-			"\\pderiv[${3:order}]{${1:func}}{${2:var}}"
 		]
 	},
 
@@ -1525,6 +1509,22 @@
 		"prefix":"rW",
 		"body":[
 			"\\rW"
+		]
+	},
+
+
+	"deriv[]{}{}":{
+		"prefix":"deriv",
+		"body":[
+			"\\deriv[${3:order}]{${1:func}}{${2:var}}"
+		]
+	},
+
+
+	"pderiv[]{}{}":{
+		"prefix":"pderiv",
+		"body":[
+			"\\pderiv[${3:order}]{${1:func}}{${2:var}}"
 		]
 	}
 }

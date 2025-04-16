@@ -25,15 +25,7 @@
 	},
 
 
-	"comment*":{
-		"prefix":"comment*",
-		"body":[
-			"\\comment*{${1:text}}"
-		]
-	},
-
-
-	"comment":{
+	"comment{}":{
 		"prefix":"comment",
 		"body":[
 			"\\comment{${1:text}}"
@@ -45,14 +37,6 @@
 		"prefix":"derive",
 		"body":[
 			"\\derive"
-		]
-	},
-
-
-	"derive":{
-		"prefix":"derive",
-		"body":[
-			"\\derive[${1:condition}]"
 		]
 	},
 
@@ -169,7 +153,7 @@
 	},
 
 
-	"zedsize":{
+	"zedsize{}":{
 		"prefix":"zedsize",
 		"body":[
 			"\\zedsize{${1:size cmd}}"
@@ -233,7 +217,7 @@
 	},
 
 
-	"String":{
+	"String{}":{
 		"prefix":"String",
 		"body":[
 			"\\String{${1:word}}"
@@ -241,7 +225,7 @@
 	},
 
 
-	"STRING":{
+	"STRING{}":{
 		"prefix":"STRING",
 		"body":[
 			"\\STRING{${1:word}}"
@@ -465,7 +449,7 @@
 	},
 
 
-	"boldword":{
+	"boldword{}":{
 		"prefix":"boldword",
 		"body":[
 			"\\boldword{${1:word}}"
@@ -825,7 +809,7 @@
 	},
 
 
-	"dotaccent":{
+	"dotaccent{}":{
 		"prefix":"dotaccent",
 		"body":[
 			"\\dotaccent{${1:arg}}"
@@ -1353,7 +1337,7 @@
 	},
 
 
-	"infix":{
+	"infix{}":{
 		"prefix":"infix",
 		"body":[
 			"\\infix{${1:rel}}"
@@ -1497,7 +1481,7 @@
 	},
 
 
-	"keyword":{
+	"keyword{}":{
 		"prefix":"keyword",
 		"body":[
 			"\\keyword{${1:word}}"
@@ -3169,7 +3153,7 @@
 	},
 
 
-	"underboldword":{
+	"underboldword{}":{
 		"prefix":"underboldword",
 		"body":[
 			"\\underboldword{${1:word}}"
@@ -3177,7 +3161,7 @@
 	},
 
 
-	"underkeyword":{
+	"underkeyword{}":{
 		"prefix":"underkeyword",
 		"body":[
 			"\\underkeyword{${1:word}}"
@@ -3185,7 +3169,7 @@
 	},
 
 
-	"underword":{
+	"underword{}":{
 		"prefix":"underword",
 		"body":[
 			"\\underword{${1:word}}"
@@ -3385,7 +3369,7 @@
 	},
 
 
-	"word":{
+	"word{}":{
 		"prefix":"word",
 		"body":[
 			"\\word{${1:word}}"
@@ -3433,7 +3417,7 @@
 	},
 
 
-	"zbig":{
+	"zbig{}":{
 		"prefix":"zbig",
 		"body":[
 			"\\zbig{${1:arg}}"
@@ -3441,7 +3425,7 @@
 	},
 
 
-	"zBig":{
+	"zBig{}":{
 		"prefix":"zBig",
 		"body":[
 			"\\zBig{${1:arg}}"
@@ -3449,7 +3433,7 @@
 	},
 
 
-	"zBIG":{
+	"zBIG{}":{
 		"prefix":"zBIG",
 		"body":[
 			"\\zBIG{${1:arg}}"
@@ -3561,7 +3545,7 @@
 	},
 
 
-	"zsmall":{
+	"zsmall{}":{
 		"prefix":"zsmall",
 		"body":[
 			"\\zsmall{${1:arg}}"
@@ -3569,7 +3553,7 @@
 	},
 
 
-	"zSmall":{
+	"zSmall{}":{
 		"prefix":"zSmall",
 		"body":[
 			"\\zSmall{${1:arg}}"
@@ -3601,22 +3585,58 @@
 	},
 
 
+	"comment*{}":{
+		"prefix":"*comment",
+		"body":[
+			"\\comment*{${1:text}}"
+		]
+	},
+
+
+	"derive[]":{
+		"prefix":"derive",
+		"body":[
+			"\\derive[${1:condition}]"
+		]
+	},
+
+
 	"argue":{
 		"prefix":"argue",
 		"body":[
 			"\\begin{argue}",
-			"\t$1",
+				"\t$1",
 			"\\end{argue}"
 		]
 	},
 
 
-	"infrule":{
-		"prefix":"infrule",
+	"axdef":{
+		"prefix":"axdef",
 		"body":[
-			"\\begin{infrule}",
-			"\t$1",
-			"\\end{infrule}"
+			"\\begin{axdef}",
+				"\t$1",
+			"\\end{axdef}"
+		]
+	},
+
+
+	"class":{
+		"prefix":"class",
+		"body":[
+			"\\begin{class}",
+				"\t$1",
+			"\\end{class}"
+		]
+	},
+
+
+	"classcom":{
+		"prefix":"classcom",
+		"body":[
+			"\\begin{classcom}",
+				"\t$1",
+			"\\end{classcom}"
 		]
 	},
 
@@ -3625,48 +3645,38 @@
 		"prefix":"gendef",
 		"body":[
 			"\\begin{gendef}",
-			"\t$1",
+				"\t$1",
 			"\\end{gendef}"
 		]
 	},
 
 
-	"sidebyside":{
-		"prefix":"sidebyside",
+	"genschema":{
+		"prefix":"genschema",
 		"body":[
-			"\\begin{sidebyside}",
-			"\t$1",
-			"\\end{sidebyside}"
+			"\\begin{genschema}",
+				"\t$1",
+			"\\end{genschema}"
 		]
 	},
 
 
-	"state":{
-		"prefix":"state",
+	"infrule":{
+		"prefix":"infrule",
 		"body":[
-			"\\begin{state}",
-			"\t$1",
-			"\\end{state}"
+			"\\begin{infrule}",
+				"\t$1",
+			"\\end{infrule}"
 		]
 	},
 
 
-	"uniqdef":{
-		"prefix":"uniqdef",
+	"init":{
+		"prefix":"init",
 		"body":[
-			"\\begin{uniqdef}",
-			"\t$1",
-			"\\end{uniqdef}"
-		]
-	},
-
-
-	"zed":{
-		"prefix":"zed",
-		"body":[
-			"\\begin{zed}",
-			"\t$1",
-			"\\end{zed}"
+			"\\begin{init}",
+				"\t$1",
+			"\\end{init}"
 		]
 	},
 
@@ -3675,7 +3685,7 @@
 		"prefix":"op",
 		"body":[
 			"\\begin{op}",
-			"\t$1",
+				"\t$1",
 			"\\end{op}"
 		]
 	},
@@ -3685,28 +3695,28 @@
 		"prefix":"schema",
 		"body":[
 			"\\begin{schema}",
-			"\t$1",
+				"\t$1",
 			"\\end{schema}"
 		]
 	},
 
 
-	"classcom":{
-		"prefix":"classcom",
+	"sidebyside":{
+		"prefix":"sidebyside",
 		"body":[
-			"\\begin{classcom}",
-			"\t$1",
-			"\\end{classcom}"
+			"\\begin{sidebyside}",
+				"\t$1",
+			"\\end{sidebyside}"
 		]
 	},
 
 
-	"zpar":{
-		"prefix":"zpar",
+	"state":{
+		"prefix":"state",
 		"body":[
-			"\\begin{zpar}",
-			"\t$1",
-			"\\end{zpar}"
+			"\\begin{state}",
+				"\t$1",
+			"\\end{state}"
 		]
 	},
 
@@ -3715,48 +3725,48 @@
 		"prefix":"syntax",
 		"body":[
 			"\\begin{syntax}",
-			"\t$1",
+				"\t$1",
 			"\\end{syntax}"
 		]
 	},
 
 
-	"init":{
-		"prefix":"init",
+	"uniqdef":{
+		"prefix":"uniqdef",
 		"body":[
-			"\\begin{init}",
-			"\t$1",
-			"\\end{init}"
+			"\\begin{uniqdef}",
+				"\t$1",
+			"\\end{uniqdef}"
 		]
 	},
 
 
-	"class":{
-		"prefix":"class",
+	"zed":{
+		"prefix":"zed",
 		"body":[
-			"\\begin{class}",
-			"\t$1",
-			"\\end{class}"
+			"\\begin{zed}",
+				"\t$1",
+			"\\end{zed}"
 		]
 	},
 
 
-	"axdef":{
-		"prefix":"axdef",
+	"zpar":{
+		"prefix":"zpar",
 		"body":[
-			"\\begin{axdef}",
-			"\t$1",
-			"\\end{axdef}"
+			"\\begin{zpar}",
+				"\t$1",
+			"\\end{zpar}"
 		]
 	},
 
 
-	"genschema":{
-		"prefix":"genschema",
+	"sidebyside":{
+		"prefix":"sidebyside",
 		"body":[
-			"\\begin{genschema}",
-			"\t$1",
-			"\\end{genschema}"
+			"\\begin{sidebyside}",
+				"\t$1",
+			"\\end{sidebyside}"
 		]
 	}
 }

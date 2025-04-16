@@ -1,7 +1,7 @@
 {
 
 
-	"tscode":{
+	"tscode{}":{
 		"prefix":"tscode",
 		"body":[
 			"\\tscode{${1:st-name}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"tscode":{
-		"prefix":"tscode",
-		"body":[
-			"\\tscode[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tscode*":{
-		"prefix":"tscode*",
-		"body":[
-			"\\tscode*{${1:st-name}}"
-		]
-	},
-
-
-	"tscode*":{
-		"prefix":"tscode*",
-		"body":[
-			"\\tscode*[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo":{
+	"tsdemo{}":{
 		"prefix":"tsdemo",
 		"body":[
 			"\\tsdemo{${1:st-name}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"tsdemo":{
-		"prefix":"tsdemo",
-		"body":[
-			"\\tsdemo[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo*":{
-		"prefix":"tsdemo*",
-		"body":[
-			"\\tsdemo*{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo*":{
-		"prefix":"tsdemo*",
-		"body":[
-			"\\tsdemo*[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tsresult":{
+	"tsresult{}":{
 		"prefix":"tsresult",
 		"body":[
 			"\\tsresult{${1:st-name}}"
@@ -73,34 +25,82 @@
 	},
 
 
-	"tsresult":{
-		"prefix":"tsresult",
+	"setcodekeys{}":{
+		"prefix":"setcodekeys",
 		"body":[
-			"\\tsresult[${2:code-keys%keyvals}]{${1:st-name}}"
+			"\\setcodekeys{${1:code-keys%keyvals}}"
 		]
 	},
 
 
-	"tsresult*":{
-		"prefix":"tsresult*",
+	"tscode*{}":{
+		"prefix":"*tscode",
+		"body":[
+			"\\tscode*{${1:st-name}}"
+		]
+	},
+
+
+	"tscode*[]{}":{
+		"prefix":"*tscode",
+		"body":[
+			"\\tscode*[${2:code-keys%keyvals}]{${1:st-name}}"
+		]
+	},
+
+
+	"tsdemo*{}":{
+		"prefix":"*tsdemo",
+		"body":[
+			"\\tsdemo*{${1:st-name}}"
+		]
+	},
+
+
+	"tsdemo*[]{}":{
+		"prefix":"*tsdemo",
+		"body":[
+			"\\tsdemo*[${2:code-keys%keyvals}]{${1:st-name}}"
+		]
+	},
+
+
+	"tsresult*{}":{
+		"prefix":"*tsresult",
 		"body":[
 			"\\tsresult*{${1:st-name}}"
 		]
 	},
 
 
-	"tsresult*":{
-		"prefix":"tsresult*",
+	"tsresult*[]{}":{
+		"prefix":"*tsresult",
 		"body":[
 			"\\tsresult*[${2:code-keys%keyvals}]{${1:st-name}}"
 		]
 	},
 
 
-	"setcodekeys":{
-		"prefix":"setcodekeys",
+	"tscode[]{}":{
+		"prefix":"tscode",
 		"body":[
-			"\\setcodekeys{${1:code-keys%keyvals}}"
+			"\\tscode[${2:code-keys%keyvals}]{${1:st-name}}"
+		]
+	},
+
+
+	"tsdemo[]{}":{
+		"prefix":"tsdemo",
+		"body":[
+			"\\tsdemo[${2:code-keys%keyvals}]{${1:st-name}}"
+		]
+	},
+
+
+	"tsresult[]{}":{
+		"prefix":"tsresult",
+		"body":[
+			"\\tsresult[${2:code-keys%keyvals}]{${1:st-name}}"
 		]
 	},
 
@@ -109,7 +109,17 @@
 		"prefix":"codestore",
 		"body":[
 			"\\begin{codestore}",
-			"\t$1",
+				"\t$1",
+			"\\end{codestore}"
+		]
+	},
+
+
+	"codestore":{
+		"prefix":"codestore",
+		"body":[
+			"\\begin{codestore}",
+				"\t$1",
 			"\\end{codestore}"
 		]
 	}

@@ -25,7 +25,7 @@
 	},
 
 
-	"item":{
+	"item{}":{
 		"prefix":"item",
 		"body":[
 			"\\item{${1:condition}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"CALL":{
+	"CALL{}":{
 		"prefix":"CALL",
 		"body":[
 			"\\CALL{${1:function}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"ERROR":{
+	"ERROR{}":{
 		"prefix":"ERROR",
 		"body":[
 			"\\ERROR{${1:text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"algkey":{
+	"algkey{}":{
 		"prefix":"algkey",
 		"body":[
 			"\\algkey{${1:text}}"
@@ -81,12 +81,22 @@
 	},
 
 
-	"WHILE":{
-		"prefix":"WHILE",
+	"algorithm":{
+		"prefix":"algorithm",
 		"body":[
-			"\\begin{WHILE}",
-			"\t$1",
-			"\\end{WHILE}"
+			"\\begin{algorithm}",
+				"\t$1",
+			"\\end{algorithm}"
+		]
+	},
+
+
+	"IF":{
+		"prefix":"IF",
+		"body":[
+			"\\begin{IF}",
+				"\t$1",
+			"\\end{IF}"
 		]
 	},
 
@@ -95,18 +105,18 @@
 		"prefix":"FOR",
 		"body":[
 			"\\begin{FOR}",
-			"\t$1",
+				"\t$1",
 			"\\end{FOR}"
 		]
 	},
 
 
-	"algorithm":{
-		"prefix":"algorithm",
+	"WHILE":{
+		"prefix":"WHILE",
 		"body":[
-			"\\begin{algorithm}",
-			"\t$1",
-			"\\end{algorithm}"
+			"\\begin{WHILE}",
+				"\t$1",
+			"\\end{WHILE}"
 		]
 	},
 
@@ -115,7 +125,7 @@
 		"prefix":"REPEAT",
 		"body":[
 			"\\begin{REPEAT}",
-			"\t$1",
+				"\t$1",
 			"\\end{REPEAT}"
 		]
 	},
@@ -125,18 +135,8 @@
 		"prefix":"SWITCH",
 		"body":[
 			"\\begin{SWITCH}",
-			"\t$1",
+				"\t$1",
 			"\\end{SWITCH}"
-		]
-	},
-
-
-	"IF":{
-		"prefix":"IF",
-		"body":[
-			"\\begin{IF}",
-			"\t$1",
-			"\\end{IF}"
 		]
 	}
 }

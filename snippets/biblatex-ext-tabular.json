@@ -9,15 +9,7 @@
 	},
 
 
-	"printbibtabular":{
-		"prefix":"printbibtabular",
-		"body":[
-			"\\printbibtabular[${1:options%keyvals}]"
-		]
-	},
-
-
-	"defbibtabular":{
+	"defbibtabular{}{}{}{}":{
 		"prefix":"defbibtabular",
 		"body":[
 			"\\defbibtabular{${1:name}}{${2:begin code%definition}}{${3:end code%definition}}{${4:row code%definition}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"plain":{
+	"plain{}":{
 		"prefix":"plain",
 		"body":[
 			"\\plain{${1:code}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"plainlang":{
+	"plainlang{}":{
 		"prefix":"plainlang",
 		"body":[
 			"\\plainlang{${1:code}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"anchor":{
+	"anchor{}":{
 		"prefix":"anchor",
 		"body":[
 			"\\anchor{${1:code}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"anchorlang":{
+	"anchorlang{}":{
 		"prefix":"anchorlang",
 		"body":[
 			"\\anchorlang{${1:code}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"driver":{
+	"driver{}":{
 		"prefix":"driver",
 		"body":[
 			"\\driver{${1:precode}}"
@@ -65,10 +57,18 @@
 	},
 
 
-	"defbibtabulartwocolumn":{
+	"defbibtabulartwocolumn{}{}{}{}{}":{
 		"prefix":"defbibtabulartwocolumn",
 		"body":[
 			"\\defbibtabulartwocolumn{${1:name}}{${2:begin code%definition}}{${3:end code%definition}}{${4:anchor code%definition}}{${5:driver code%definition}}"
+		]
+	},
+
+
+	"printbibtabular[]":{
+		"prefix":"printbibtabular",
+		"body":[
+			"\\printbibtabular[${1:options%keyvals}]"
 		]
 	}
 }

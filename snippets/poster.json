@@ -1,18 +1,10 @@
 {
 
 
-	"poster":{
+	"poster{}":{
 		"prefix":"poster",
 		"body":[
 			"\\poster{${1:stuff%text}}"
-		]
-	},
-
-
-	"poster":{
-		"prefix":"poster",
-		"body":[
-			"\\poster[${2:options%keyvals}]{${1:stuff%text}}"
 		]
 	},
 
@@ -21,14 +13,6 @@
 		"prefix":"PosterPage",
 		"body":[
 			"\\PosterPage"
-		]
-	},
-
-
-	"PosterPage":{
-		"prefix":"PosterPage",
-		"body":[
-			"\\PosterPage[${1:options%keyvals}]"
 		]
 	},
 
@@ -105,11 +89,37 @@
 	},
 
 
+	"poster[]{}":{
+		"prefix":"poster",
+		"body":[
+			"\\poster[${2:options%keyvals}]{${1:stuff%text}}"
+		]
+	},
+
+
+	"PosterPage[]":{
+		"prefix":"PosterPage",
+		"body":[
+			"\\PosterPage[${1:options%keyvals}]"
+		]
+	},
+
+
 	"Poster":{
 		"prefix":"Poster",
 		"body":[
 			"\\begin{Poster}",
-			"\t$1",
+				"\t$1",
+			"\\end{Poster}"
+		]
+	},
+
+
+	"Poster":{
+		"prefix":"Poster",
+		"body":[
+			"\\begin{Poster}",
+				"\t$1",
 			"\\end{Poster}"
 		]
 	}

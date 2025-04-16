@@ -1,7 +1,7 @@
 {
 
 
-	"fakesubscript":{
+	"fakesubscript{}":{
 		"prefix":"fakesubscript",
 		"body":[
 			"\\fakesubscript{${1:text%plain}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"fakesuperscript":{
+	"fakesuperscript{}":{
 		"prefix":"fakesuperscript",
 		"body":[
 			"\\fakesuperscript{${1:text%plain}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"textsubscript*":{
-		"prefix":"textsubscript*",
-		"body":[
-			"\\textsubscript*{${1:text%plain}}"
-		]
-	},
-
-
-	"textsuperscript*":{
-		"prefix":"textsuperscript*",
-		"body":[
-			"\\textsuperscript*{${1:text%plain}}"
-		]
-	},
-
-
-	"realsubscript":{
+	"realsubscript{}":{
 		"prefix":"realsubscript",
 		"body":[
 			"\\realsubscript{${1:text%plain}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"realsuperscript":{
+	"realsuperscript{}":{
 		"prefix":"realsuperscript",
 		"body":[
 			"\\realsuperscript{${1:text%plain}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"textsubsuperscript":{
+	"textsubsuperscript{}{}":{
 		"prefix":"textsubsuperscript",
 		"body":[
 			"\\textsubsuperscript{${1:sub}}{${2:super}}"
@@ -65,58 +49,10 @@
 	},
 
 
-	"textsubsuperscript":{
-		"prefix":"textsubsuperscript",
-		"body":[
-			"\\textsubsuperscript[${3:align%keyvals}]{${1:sub}}{${2:super}}"
-		]
-	},
-
-
-	"textsubsuperscript*":{
-		"prefix":"textsubsuperscript*",
-		"body":[
-			"\\textsubsuperscript*{${1:sub}}{${2:super}}"
-		]
-	},
-
-
-	"textsubsuperscript*":{
-		"prefix":"textsubsuperscript*",
-		"body":[
-			"\\textsubsuperscript*[${3:align%keyvals}]{${1:sub}}{${2:super}}"
-		]
-	},
-
-
-	"textsupersubscript":{
+	"textsupersubscript{}{}":{
 		"prefix":"textsupersubscript",
 		"body":[
 			"\\textsupersubscript{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"textsupersubscript":{
-		"prefix":"textsupersubscript",
-		"body":[
-			"\\textsupersubscript[${3:align%keyvals}]{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"textsupersubscript*":{
-		"prefix":"textsupersubscript*",
-		"body":[
-			"\\textsupersubscript*{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"textsupersubscript*":{
-		"prefix":"textsupersubscript*",
-		"body":[
-			"\\textsupersubscript*[${3:align%keyvals}]{${1:super}}{${2:sub}}"
 		]
 	},
 
@@ -125,6 +61,70 @@
 		"prefix":"subsupersep",
 		"body":[
 			"\\subsupersep"
+		]
+	},
+
+
+	"textsubscript*{}":{
+		"prefix":"*textsubscript",
+		"body":[
+			"\\textsubscript*{${1:text%plain}}"
+		]
+	},
+
+
+	"textsuperscript*{}":{
+		"prefix":"*textsuperscript",
+		"body":[
+			"\\textsuperscript*{${1:text%plain}}"
+		]
+	},
+
+
+	"textsubsuperscript*{}{}":{
+		"prefix":"*textsubsuperscript",
+		"body":[
+			"\\textsubsuperscript*{${1:sub}}{${2:super}}"
+		]
+	},
+
+
+	"textsubsuperscript*[]{}{}":{
+		"prefix":"*textsubsuperscript",
+		"body":[
+			"\\textsubsuperscript*[${3:align%keyvals}]{${1:sub}}{${2:super}}"
+		]
+	},
+
+
+	"textsupersubscript*{}{}":{
+		"prefix":"*textsupersubscript",
+		"body":[
+			"\\textsupersubscript*{${1:super}}{${2:sub}}"
+		]
+	},
+
+
+	"textsupersubscript*[]{}{}":{
+		"prefix":"*textsupersubscript",
+		"body":[
+			"\\textsupersubscript*[${3:align%keyvals}]{${1:super}}{${2:sub}}"
+		]
+	},
+
+
+	"textsubsuperscript[]{}{}":{
+		"prefix":"textsubsuperscript",
+		"body":[
+			"\\textsubsuperscript[${3:align%keyvals}]{${1:sub}}{${2:super}}"
+		]
+	},
+
+
+	"textsupersubscript[]{}{}":{
+		"prefix":"textsupersubscript",
+		"body":[
+			"\\textsupersubscript[${3:align%keyvals}]{${1:super}}{${2:sub}}"
 		]
 	}
 }

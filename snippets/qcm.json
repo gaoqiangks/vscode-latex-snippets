@@ -1,7 +1,7 @@
 {
 
 
-	"headerfont":{
+	"headerfont{}":{
 		"prefix":"headerfont",
 		"body":[
 			"\\headerfont{${1:font commands}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"X":{
+	"X{}":{
 		"prefix":"X",
 		"body":[
 			"\\X{${1:symbol}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"pbs":{
+	"pbs{}":{
 		"prefix":"pbs",
 		"body":[
 			"\\pbs{${1:arg}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"answerstitle":{
+	"answerstitle{}":{
 		"prefix":"answerstitle",
 		"body":[
 			"\\answerstitle{${1:text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"answerstitlefont":{
+	"answerstitlefont{}":{
 		"prefix":"answerstitlefont",
 		"body":[
 			"\\answerstitlefont{${1:font commands}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"answernumberfont":{
+	"answernumberfont{}":{
 		"prefix":"answernumberfont",
 		"body":[
 			"\\answernumberfont{${1:font commands}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"truesymbol":{
+	"truesymbol{}":{
 		"prefix":"truesymbol",
 		"body":[
 			"\\truesymbol{${1:symbol}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"falsesymbol":{
+	"falsesymbol{}":{
 		"prefix":"falsesymbol",
 		"body":[
 			"\\falsesymbol{${1:symbol}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"correctionstyle":{
+	"correctionstyle{}":{
 		"prefix":"correctionstyle",
 		"body":[
 			"\\correctionstyle{${1:font commands}}"
@@ -121,22 +121,22 @@
 	},
 
 
-	"correction":{
-		"prefix":"correction",
-		"body":[
-			"\\begin{correction}",
-			"\t$1",
-			"\\end{correction}"
-		]
-	},
-
-
 	"question":{
 		"prefix":"question",
 		"body":[
 			"\\begin{question}",
-			"\t$1",
+				"\t$1",
 			"\\end{question}"
+		]
+	},
+
+
+	"correction":{
+		"prefix":"correction",
+		"body":[
+			"\\begin{correction}",
+				"\t$1",
+			"\\end{correction}"
 		]
 	}
 }

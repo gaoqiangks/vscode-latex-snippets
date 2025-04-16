@@ -1,7 +1,7 @@
 {
 
 
-	"setsampletext":{
+	"setsampletext{}":{
 		"prefix":"setsampletext",
 		"body":[
 			"\\setsampletext{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"printfont":{
+	"printfont{}{}":{
 		"prefix":"printfont",
 		"body":[
 			"\\printfont{${1:font}}{${2:license}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"printfont":{
-		"prefix":"printfont",
-		"body":[
-			"\\printfont[${3:options%keyvals}]{${1:font}}{${2:license}}"
-		]
-	},
-
-
-	"sampletext":{
+	"sampletext{}":{
 		"prefix":"sampletext",
 		"body":[
 			"\\sampletext{${1:arg}}"
@@ -33,18 +25,26 @@
 	},
 
 
-	"sampletext":{
-		"prefix":"sampletext",
+	"samplefeature{}":{
+		"prefix":"samplefeature",
 		"body":[
-			"\\sampletext[${2:opt}]{${1:arg}}"
+			"\\samplefeature{${1:options%keyvals}}"
 		]
 	},
 
 
-	"samplefeature":{
-		"prefix":"samplefeature",
+	"printfont[]{}{}":{
+		"prefix":"printfont",
 		"body":[
-			"\\samplefeature{${1:options%keyvals}}"
+			"\\printfont[${3:options%keyvals}]{${1:font}}{${2:license}}"
+		]
+	},
+
+
+	"sampletext[]{}":{
+		"prefix":"sampletext",
+		"body":[
+			"\\sampletext[${2:opt}]{${1:arg}}"
 		]
 	}
 }

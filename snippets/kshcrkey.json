@@ -1,18 +1,10 @@
 {
 
 
-	"hcrkey":{
+	"hcrkey{}":{
 		"prefix":"hcrkey",
 		"body":[
 			"\\hcrkey{${1:keyname%keyvals}}"
-		]
-	},
-
-
-	"hcrkeys":{
-		"prefix":"hcrkeys",
-		"body":[
-			"\\hcrkeys[${2:separator}]{${1:key, ...%keyvals}}"
 		]
 	},
 
@@ -21,6 +13,14 @@
 		"prefix":"hcrkeyfontname",
 		"body":[
 			"\\hcrkeyfontname"
+		]
+	},
+
+
+	"hcrkeys[]{}":{
+		"prefix":"hcrkeys",
+		"body":[
+			"\\hcrkeys[${2:separator}]{${1:key, ...%keyvals}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"marginskip":{
+	"marginskip{}":{
 		"prefix":"marginskip",
 		"body":[
 			"\\marginskip{${1:length}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"extendmargin":{
+	"extendmargin{}":{
 		"prefix":"extendmargin",
 		"body":[
 			"\\extendmargin{${1:length}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"mparshift":{
+	"mparshift{}":{
 		"prefix":"mparshift",
 		"body":[
 			"\\mparshift{${1:length}}"
@@ -65,14 +65,6 @@
 	},
 
 
-	"blockmargin":{
-		"prefix":"blockmargin",
-		"body":[
-			"\\blockmargin[${1:pos}]"
-		]
-	},
-
-
 	"unblockmargin":{
 		"prefix":"unblockmargin",
 		"body":[
@@ -81,26 +73,10 @@
 	},
 
 
-	"unblockmargin":{
-		"prefix":"unblockmargin",
-		"body":[
-			"\\unblockmargin[${1:pos}]"
-		]
-	},
-
-
-	"marginphantom":{
+	"marginphantom{}":{
 		"prefix":"marginphantom",
 		"body":[
 			"\\marginphantom{${1:size}}"
-		]
-	},
-
-
-	"marginphantom":{
-		"prefix":"marginphantom",
-		"body":[
-			"\\marginphantom[${2:pos}]{${1:size}}"
 		]
 	},
 
@@ -109,6 +85,30 @@
 		"prefix":"dumpmargins",
 		"body":[
 			"\\dumpmargins"
+		]
+	},
+
+
+	"blockmargin[]":{
+		"prefix":"blockmargin",
+		"body":[
+			"\\blockmargin[${1:pos}]"
+		]
+	},
+
+
+	"unblockmargin[]":{
+		"prefix":"unblockmargin",
+		"body":[
+			"\\unblockmargin[${1:pos}]"
+		]
+	},
+
+
+	"marginphantom[]{}":{
+		"prefix":"marginphantom",
+		"body":[
+			"\\marginphantom[${2:pos}]{${1:size}}"
 		]
 	}
 }

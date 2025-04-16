@@ -1,18 +1,10 @@
 {
 
 
-	"lbl":{
+	"lbl{}":{
 		"prefix":"lbl",
 		"body":[
 			"\\lbl{${1:coords;LaTeX content}}"
-		]
-	},
-
-
-	"lbl":{
-		"prefix":"lbl",
-		"body":[
-			"\\lbl[${2:pos}]{${1:coords;LaTeX content}}"
 		]
 	},
 
@@ -113,11 +105,29 @@
 	},
 
 
+	"lbl[]{}":{
+		"prefix":"lbl",
+		"body":[
+			"\\lbl[${2:pos}]{${1:coords;LaTeX content}}"
+		]
+	},
+
+
 	"lpic":{
 		"prefix":"lpic",
 		"body":[
 			"\\begin{lpic}",
-			"\t$1",
+				"\t$1",
+			"\\end{lpic}"
+		]
+	},
+
+
+	"lpic":{
+		"prefix":"lpic",
+		"body":[
+			"\\begin{lpic}",
+				"\t$1",
 			"\\end{lpic}"
 		]
 	}

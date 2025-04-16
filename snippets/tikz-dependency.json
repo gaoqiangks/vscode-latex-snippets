@@ -1,7 +1,7 @@
 {
 
 
-	"depkeys":{
+	"depkeys{}":{
 		"prefix":"depkeys",
 		"body":[
 			"\\depkeys{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"depedge":{
+	"depedge{}{}{}":{
 		"prefix":"depedge",
 		"body":[
 			"\\depedge{${1:from-word}}{${2:to-word}}{${3:label}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"depedge":{
-		"prefix":"depedge",
-		"body":[
-			"\\depedge[${4:options%keyvals}]{${1:from-word}}{${2:to-word}}{${3:label}}"
-		]
-	},
-
-
-	"deproot":{
+	"deproot{}{}":{
 		"prefix":"deproot",
 		"body":[
 			"\\deproot{${1:root-offset}}{${2:label}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"deproot":{
-		"prefix":"deproot",
-		"body":[
-			"\\deproot[${3:options%keyvals}]{${1:root-offset}}{${2:label}}"
-		]
-	},
-
-
-	"wordgroup":{
+	"wordgroup{}{}{}{}":{
 		"prefix":"wordgroup",
 		"body":[
 			"\\wordgroup{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"wordgroup":{
-		"prefix":"wordgroup",
-		"body":[
-			"\\wordgroup[${5:options%keyvals}]{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
-		]
-	},
-
-
-	"groupedge":{
+	"groupedge{}{}{}{}":{
 		"prefix":"groupedge",
 		"body":[
 			"\\groupedge{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"groupedge":{
-		"prefix":"groupedge",
-		"body":[
-			"\\groupedge[${5:options%keyvals}]{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
-		]
-	},
-
-
-	"depstyle":{
+	"depstyle{}{}":{
 		"prefix":"depstyle",
 		"body":[
 			"\\depstyle{${1:style name%specialDef}}{${2:options}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"wordref":{
+	"wordref{}{}":{
 		"prefix":"wordref",
 		"body":[
 			"\\wordref{${1:row-offset}}{${2:word-offset}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"storelabelnode":{
+	"storelabelnode{}":{
 		"prefix":"storelabelnode",
 		"body":[
 			"\\storelabelnode{${1:macro%cmd}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"storefirstcorner":{
+	"storefirstcorner{}":{
 		"prefix":"storefirstcorner",
 		"body":[
 			"\\storefirstcorner{${1:macro%cmd}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"storesecondcorner":{
+	"storesecondcorner{}":{
 		"prefix":"storesecondcorner",
 		"body":[
 			"\\storesecondcorner{${1:macro%cmd}}"
@@ -169,11 +137,43 @@
 	},
 
 
+	"depedge[]{}{}{}":{
+		"prefix":"depedge",
+		"body":[
+			"\\depedge[${4:options%keyvals}]{${1:from-word}}{${2:to-word}}{${3:label}}"
+		]
+	},
+
+
+	"deproot[]{}{}":{
+		"prefix":"deproot",
+		"body":[
+			"\\deproot[${3:options%keyvals}]{${1:root-offset}}{${2:label}}"
+		]
+	},
+
+
+	"wordgroup[]{}{}{}{}":{
+		"prefix":"wordgroup",
+		"body":[
+			"\\wordgroup[${5:options%keyvals}]{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
+		]
+	},
+
+
+	"groupedge[]{}{}{}{}":{
+		"prefix":"groupedge",
+		"body":[
+			"\\groupedge[${5:options%keyvals}]{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
+		]
+	},
+
+
 	"dependency":{
 		"prefix":"dependency",
 		"body":[
 			"\\begin{dependency}",
-			"\t$1",
+				"\t$1",
 			"\\end{dependency}"
 		]
 	},
@@ -183,7 +183,27 @@
 		"prefix":"deptext",
 		"body":[
 			"\\begin{deptext}",
-			"\t$1",
+				"\t$1",
+			"\\end{deptext}"
+		]
+	},
+
+
+	"dependency":{
+		"prefix":"dependency",
+		"body":[
+			"\\begin{dependency}",
+				"\t$1",
+			"\\end{dependency}"
+		]
+	},
+
+
+	"deptext":{
+		"prefix":"deptext",
+		"body":[
+			"\\begin{deptext}",
+				"\t$1",
 			"\\end{deptext}"
 		]
 	}

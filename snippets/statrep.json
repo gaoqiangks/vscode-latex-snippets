@@ -1,7 +1,7 @@
 {
 
 
-	"Listing":{
+	"Listing{}":{
 		"prefix":"Listing",
 		"body":[
 			"\\Listing{${1:name}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"Listing":{
-		"prefix":"Listing",
-		"body":[
-			"\\Listing[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"Graphic":{
+	"Graphic{}":{
 		"prefix":"Graphic",
 		"body":[
 			"\\Graphic{${1:name}}"
-		]
-	},
-
-
-	"Graphic":{
-		"prefix":"Graphic",
-		"body":[
-			"\\Graphic[${2:options%keyvals}]{${1:name}}"
 		]
 	},
 
@@ -225,7 +209,7 @@
 	},
 
 
-	"Boxlisting":{
+	"Boxlisting{}":{
 		"prefix":"Boxlisting",
 		"body":[
 			"\\Boxlisting{${1:file name}}"
@@ -233,10 +217,36 @@
 	},
 
 
-	"Boxgraphic":{
+	"Boxgraphic{}":{
 		"prefix":"Boxgraphic",
 		"body":[
 			"\\Boxgraphic{${1:file name}}"
+		]
+	},
+
+
+	"Listing[]{}":{
+		"prefix":"Listing",
+		"body":[
+			"\\Listing[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"Graphic[]{}":{
+		"prefix":"Graphic",
+		"body":[
+			"\\Graphic[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"Datastep":{
+		"prefix":"Datastep",
+		"body":[
+			"\\begin{Datastep}",
+				"\t$1",
+			"\\end{Datastep}"
 		]
 	},
 
@@ -245,7 +255,7 @@
 		"prefix":"Sascode",
 		"body":[
 			"\\begin{Sascode}",
-			"\t$1",
+				"\t$1",
 			"\\end{Sascode}"
 		]
 	},
@@ -255,8 +265,18 @@
 		"prefix":"Datastep",
 		"body":[
 			"\\begin{Datastep}",
-			"\t$1",
+				"\t$1",
 			"\\end{Datastep}"
+		]
+	},
+
+
+	"Sascode":{
+		"prefix":"Sascode",
+		"body":[
+			"\\begin{Sascode}",
+				"\t$1",
+			"\\end{Sascode}"
 		]
 	}
 }

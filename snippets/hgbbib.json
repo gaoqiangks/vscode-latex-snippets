@@ -9,18 +9,10 @@
 	},
 
 
-	"printtexte":{
+	"printtexte{}":{
 		"prefix":"printtexte",
 		"body":[
 			"\\printtexte{${1:text}}"
-		]
-	},
-
-
-	"printtexte":{
-		"prefix":"printtexte",
-		"body":[
-			"\\printtexte[${2:format}]{${1:text}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"apanum":{
+	"apanum{}":{
 		"prefix":"apanum",
 		"body":[
 			"\\apanum{${1:num}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"mkdaterangeapalong":{
+	"mkdaterangeapalong{}":{
 		"prefix":"mkdaterangeapalong",
 		"body":[
 			"\\mkdaterangeapalong{${1:datetype}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"mkdaterangeapalongextra":{
+	"mkdaterangeapalongextra{}":{
 		"prefix":"mkdaterangeapalongextra",
 		"body":[
 			"\\mkdaterangeapalongextra{${1:datetype}}"
@@ -105,23 +97,7 @@
 	},
 
 
-	"fullcitebib":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"fullcitebib":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"fullcitebib":{
+	"fullcitebib{}":{
 		"prefix":"fullcitebib",
 		"body":[
 			"\\fullcitebib{${1:bibid}}"
@@ -129,23 +105,7 @@
 	},
 
 
-	"nptextcite":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite":{
+	"nptextcite{}":{
 		"prefix":"nptextcite",
 		"body":[
 			"\\nptextcite{${1:bibid}}"
@@ -153,7 +113,7 @@
 	},
 
 
-	"nptextcites":{
+	"nptextcites{}{}":{
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites{${1:bibid}}{${2:bibid}}"
@@ -161,7 +121,7 @@
 	},
 
 
-	"nptextcites":{
+	"nptextcites(){}{}":{
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:post}){${1:bibid}}{${2:bibid}}"
@@ -169,7 +129,7 @@
 	},
 
 
-	"nptextcites":{
+	"nptextcites()(){}{}":{
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
@@ -177,39 +137,7 @@
 	},
 
 
-	"nptextcites":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"AddBibFile":{
+	"AddBibFile{}":{
 		"prefix":"AddBibFile",
 		"body":[
 			"\\AddBibFile{${1:bib file}}"
@@ -225,7 +153,7 @@
 	},
 
 
-	"mcite":{
+	"mcite{}{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite{${1:bibid}}{${2:bibid}}"
@@ -233,7 +161,7 @@
 	},
 
 
-	"mcite":{
+	"mcite(){}{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite(${3:post}){${1:bibid}}{${2:bibid}}"
@@ -241,7 +169,7 @@
 	},
 
 
-	"mcite":{
+	"mcite()(){}{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
@@ -249,7 +177,79 @@
 	},
 
 
-	"mcite":{
+	"printtexte[]{}":{
+		"prefix":"printtexte",
+		"body":[
+			"\\printtexte[${2:format}]{${1:text}}"
+		]
+	},
+
+
+	"fullcitebib[][]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"fullcitebib[]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"nptextcite[][]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"nptextcite[]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"nptextcites()()[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"nptextcites[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"nptextcites[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"nptextcites()()[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"mcite()()[]{}[]{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
@@ -257,7 +257,7 @@
 	},
 
 
-	"mcite":{
+	"mcite[]{}[]{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
@@ -265,7 +265,7 @@
 	},
 
 
-	"mcite":{
+	"mcite[][]{}[][]{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
@@ -273,7 +273,7 @@
 	},
 
 
-	"mcite":{
+	"mcite()()[][]{}[][]{}":{
 		"prefix":"mcite",
 		"body":[
 			"\\mcite(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
@@ -285,7 +285,7 @@
 		"prefix":"bibhyphenation",
 		"body":[
 			"\\begin{bibhyphenation}",
-			"\t$1",
+				"\t$1",
 			"\\end{bibhyphenation}"
 		]
 	}

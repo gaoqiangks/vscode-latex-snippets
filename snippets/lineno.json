@@ -9,22 +9,6 @@
 	},
 
 
-	"linenumbers*":{
-		"prefix":"linenumbers*",
-		"body":[
-			"\\linenumbers*"
-		]
-	},
-
-
-	"linenumbers":{
-		"prefix":"linenumbers",
-		"body":[
-			"\\linenumbers[${1:number}]"
-		]
-	},
-
-
 	"nolinenumbers":{
 		"prefix":"nolinenumbers",
 		"body":[
@@ -41,14 +25,6 @@
 	},
 
 
-	"resetlinenumber":{
-		"prefix":"resetlinenumber",
-		"body":[
-			"\\resetlinenumber[${1:number}]"
-		]
-	},
-
-
 	"setrunninglinenumbers":{
 		"prefix":"setrunninglinenumbers",
 		"body":[
@@ -61,22 +37,6 @@
 		"prefix":"runninglinenumbers",
 		"body":[
 			"\\runninglinenumbers"
-		]
-	},
-
-
-	"runninglinenumbers*":{
-		"prefix":"runninglinenumbers*",
-		"body":[
-			"\\runninglinenumbers*"
-		]
-	},
-
-
-	"runninglinenumbers":{
-		"prefix":"runninglinenumbers",
-		"body":[
-			"\\runninglinenumbers[${1:number}]"
 		]
 	},
 
@@ -101,14 +61,6 @@
 		"prefix":"switchlinenumbers",
 		"body":[
 			"\\switchlinenumbers"
-		]
-	},
-
-
-	"switchlinenumbers*":{
-		"prefix":"switchlinenumbers*",
-		"body":[
-			"\\switchlinenumbers*"
 		]
 	},
 
@@ -145,42 +97,10 @@
 	},
 
 
-	"leftlinenumbers*":{
-		"prefix":"leftlinenumbers*",
-		"body":[
-			"\\leftlinenumbers*"
-		]
-	},
-
-
-	"rightlinenumbers*":{
-		"prefix":"rightlinenumbers*",
-		"body":[
-			"\\rightlinenumbers*"
-		]
-	},
-
-
 	"modulolinenumbers":{
 		"prefix":"modulolinenumbers",
 		"body":[
 			"\\modulolinenumbers"
-		]
-	},
-
-
-	"modulolinenumbers*":{
-		"prefix":"modulolinenumbers*",
-		"body":[
-			"\\modulolinenumbers*"
-		]
-	},
-
-
-	"modulolinenumbers":{
-		"prefix":"modulolinenumbers",
-		"body":[
-			"\\modulolinenumbers[${1:n}]"
 		]
 	},
 
@@ -273,7 +193,7 @@
 	},
 
 
-	"linelabel":{
+	"linelabel{}":{
 		"prefix":"linelabel",
 		"body":[
 			"\\linelabel{${1:label}}"
@@ -281,7 +201,7 @@
 	},
 
 
-	"lineref":{
+	"lineref{}":{
 		"prefix":"lineref",
 		"body":[
 			"\\lineref{${1:label}}"
@@ -289,15 +209,7 @@
 	},
 
 
-	"lineref":{
-		"prefix":"lineref",
-		"body":[
-			"\\lineref[${2:offset}]{${1:label}}"
-		]
-	},
-
-
-	"linerefr":{
+	"linerefr{}":{
 		"prefix":"linerefr",
 		"body":[
 			"\\linerefr{${1:label}}"
@@ -305,26 +217,10 @@
 	},
 
 
-	"linerefr":{
-		"prefix":"linerefr",
-		"body":[
-			"\\linerefr[${2:offset}]{${1:label}}"
-		]
-	},
-
-
-	"linerefp":{
+	"linerefp{}":{
 		"prefix":"linerefp",
 		"body":[
 			"\\linerefp{${1:label}}"
-		]
-	},
-
-
-	"linerefp":{
-		"prefix":"linerefp",
-		"body":[
-			"\\linerefp[${2:offset}]{${1:label}}"
 		]
 	},
 
@@ -577,7 +473,7 @@
 	},
 
 
-	"setmakelinenumbers":{
+	"setmakelinenumbers{}":{
 		"prefix":"setmakelinenumbers",
 		"body":[
 			"\\setmakelinenumbers{${1:arg}}"
@@ -641,7 +537,7 @@
 	},
 
 
-	"testLastNumberedPage":{
+	"testLastNumberedPage{}":{
 		"prefix":"testLastNumberedPage",
 		"body":[
 			"\\testLastNumberedPage{${1:arg}}"
@@ -649,7 +545,7 @@
 	},
 
 
-	"testFirstNumberedPage":{
+	"testFirstNumberedPage{}":{
 		"prefix":"testFirstNumberedPage",
 		"body":[
 			"\\testFirstNumberedPage{${1:arg}}"
@@ -665,7 +561,7 @@
 	},
 
 
-	"testNextNumberedPage":{
+	"testNextNumberedPage{}":{
 		"prefix":"testNextNumberedPage",
 		"body":[
 			"\\testNextNumberedPage{${1:arg}}"
@@ -729,7 +625,7 @@
 	},
 
 
-	"gotNumberedPage":{
+	"gotNumberedPage{}{}{}{}":{
 		"prefix":"gotNumberedPage",
 		"body":[
 			"\\gotNumberedPage{${1:first line in col}}{${2:page num}}{${3:col num}}{${4:first line in page}}"
@@ -737,7 +633,7 @@
 	},
 
 
-	"subtractlinenumberoffset":{
+	"subtractlinenumberoffset{}":{
 		"prefix":"subtractlinenumberoffset",
 		"body":[
 			"\\subtractlinenumberoffset{${1:arg}}"
@@ -761,7 +657,7 @@
 	},
 
 
-	"getpagewiselinenumber":{
+	"getpagewiselinenumber{}":{
 		"prefix":"getpagewiselinenumber",
 		"body":[
 			"\\getpagewiselinenumber{${1:arg}}"
@@ -777,7 +673,7 @@
 	},
 
 
-	"firstlinenumber":{
+	"firstlinenumber{}":{
 		"prefix":"firstlinenumber",
 		"body":[
 			"\\firstlinenumber{${1:number}}"
@@ -809,7 +705,7 @@
 	},
 
 
-	"PostponeVadjust":{
+	"PostponeVadjust{}":{
 		"prefix":"PostponeVadjust",
 		"body":[
 			"\\PostponeVadjust{${1:arg}}"
@@ -825,122 +721,106 @@
 	},
 
 
-	"numquote":{
-		"prefix":"numquote",
+	"linenumbers*":{
+		"prefix":"*linenumbers",
 		"body":[
-			"\\begin{numquote}",
-			"\t$1",
-			"\\end{numquote}"
-		]
-	},
-
-
-	"runninglinenumbers":{
-		"prefix":"runninglinenumbers",
-		"body":[
-			"\\begin{runninglinenumbers}",
-			"\t$1",
-			"\\end{runninglinenumbers}"
-		]
-	},
-
-
-	"bframe":{
-		"prefix":"bframe",
-		"body":[
-			"\\begin{bframe}",
-			"\t$1",
-			"\\end{bframe}"
-		]
-	},
-
-
-	"linenomath":{
-		"prefix":"linenomath",
-		"body":[
-			"\\begin{linenomath}",
-			"\t$1",
-			"\\end{linenomath}"
-		]
-	},
-
-
-	"internallinenumbers":{
-		"prefix":"internallinenumbers",
-		"body":[
-			"\\begin{internallinenumbers}",
-			"\t$1",
-			"\\end{internallinenumbers}"
+			"\\linenumbers*"
 		]
 	},
 
 
 	"runninglinenumbers*":{
-		"prefix":"runninglinenumbers*",
+		"prefix":"*runninglinenumbers",
 		"body":[
-			"\\begin{runninglinenumbers*}",
-			"\t$1",
-			"\\end{runninglinenumbers*}"
+			"\\runninglinenumbers*"
 		]
 	},
 
 
-	"linenumbers*":{
-		"prefix":"linenumbers*",
+	"switchlinenumbers*":{
+		"prefix":"*switchlinenumbers",
 		"body":[
-			"\\begin{linenumbers*}",
-			"\t$1",
-			"\\end{linenumbers*}"
+			"\\switchlinenumbers*"
 		]
 	},
 
 
-	"internallinenumbers*":{
-		"prefix":"internallinenumbers*",
+	"leftlinenumbers*":{
+		"prefix":"*leftlinenumbers",
 		"body":[
-			"\\begin{internallinenumbers*}",
-			"\t$1",
-			"\\end{internallinenumbers*}"
+			"\\leftlinenumbers*"
 		]
 	},
 
 
-	"numquotation":{
-		"prefix":"numquotation",
+	"rightlinenumbers*":{
+		"prefix":"*rightlinenumbers",
 		"body":[
-			"\\begin{numquotation}",
-			"\t$1",
-			"\\end{numquotation}"
+			"\\rightlinenumbers*"
 		]
 	},
 
 
-	"numquotation*":{
-		"prefix":"numquotation*",
+	"modulolinenumbers*":{
+		"prefix":"*modulolinenumbers",
 		"body":[
-			"\\begin{numquotation*}",
-			"\t$1",
-			"\\end{numquotation*}"
+			"\\modulolinenumbers*"
 		]
 	},
 
 
-	"pagewiselinenumbers":{
-		"prefix":"pagewiselinenumbers",
+	"linenumbers[]":{
+		"prefix":"linenumbers",
 		"body":[
-			"\\begin{pagewiselinenumbers}",
-			"\t$1",
-			"\\end{pagewiselinenumbers}"
+			"\\linenumbers[${1:number}]"
 		]
 	},
 
 
-	"numquote*":{
-		"prefix":"numquote*",
+	"resetlinenumber[]":{
+		"prefix":"resetlinenumber",
 		"body":[
-			"\\begin{numquote*}",
-			"\t$1",
-			"\\end{numquote*}"
+			"\\resetlinenumber[${1:number}]"
+		]
+	},
+
+
+	"runninglinenumbers[]":{
+		"prefix":"runninglinenumbers",
+		"body":[
+			"\\runninglinenumbers[${1:number}]"
+		]
+	},
+
+
+	"modulolinenumbers[]":{
+		"prefix":"modulolinenumbers",
+		"body":[
+			"\\modulolinenumbers[${1:n}]"
+		]
+	},
+
+
+	"lineref[]{}":{
+		"prefix":"lineref",
+		"body":[
+			"\\lineref[${2:offset}]{${1:label}}"
+		]
+	},
+
+
+	"linerefr[]{}":{
+		"prefix":"linerefr",
+		"body":[
+			"\\linerefr[${2:offset}]{${1:label}}"
+		]
+	},
+
+
+	"linerefp[]{}":{
+		"prefix":"linerefp",
+		"body":[
+			"\\linerefp[${2:offset}]{${1:label}}"
 		]
 	},
 
@@ -949,18 +829,158 @@
 		"prefix":"linenumbers",
 		"body":[
 			"\\begin{linenumbers}",
-			"\t$1",
+				"\t$1",
 			"\\end{linenumbers}"
 		]
 	},
 
 
+	"runninglinenumbers":{
+		"prefix":"runninglinenumbers",
+		"body":[
+			"\\begin{runninglinenumbers}",
+				"\t$1",
+			"\\end{runninglinenumbers}"
+		]
+	},
+
+
+	"pagewiselinenumbers":{
+		"prefix":"pagewiselinenumbers",
+		"body":[
+			"\\begin{pagewiselinenumbers}",
+				"\t$1",
+			"\\end{pagewiselinenumbers}"
+		]
+	},
+
+
+	"linenomath":{
+		"prefix":"linenomath",
+		"body":[
+			"\\begin{linenomath}",
+				"\t$1",
+			"\\end{linenomath}"
+		]
+	},
+
+
+	"numquote":{
+		"prefix":"numquote",
+		"body":[
+			"\\begin{numquote}",
+				"\t$1",
+			"\\end{numquote}"
+		]
+	},
+
+
+	"numquotation":{
+		"prefix":"numquotation",
+		"body":[
+			"\\begin{numquotation}",
+				"\t$1",
+			"\\end{numquotation}"
+		]
+	},
+
+
+	"bframe":{
+		"prefix":"bframe",
+		"body":[
+			"\\begin{bframe}",
+				"\t$1",
+			"\\end{bframe}"
+		]
+	},
+
+
+	"internallinenumbers":{
+		"prefix":"internallinenumbers",
+		"body":[
+			"\\begin{internallinenumbers}",
+				"\t$1",
+			"\\end{internallinenumbers}"
+		]
+	},
+
+
+	"linenumbers*":{
+		"prefix":"*linenumbers",
+		"body":[
+			"\\begin{linenumbers*}",
+				"\t$1",
+			"\\end{linenumbers*}"
+		]
+	},
+
+
+	"runninglinenumbers*":{
+		"prefix":"*runninglinenumbers",
+		"body":[
+			"\\begin{runninglinenumbers*}",
+				"\t$1",
+			"\\end{runninglinenumbers*}"
+		]
+	},
+
+
 	"linenomath*":{
-		"prefix":"linenomath*",
+		"prefix":"*linenomath",
 		"body":[
 			"\\begin{linenomath*}",
-			"\t$1",
+				"\t$1",
 			"\\end{linenomath*}"
+		]
+	},
+
+
+	"numquote*":{
+		"prefix":"*numquote",
+		"body":[
+			"\\begin{numquote*}",
+				"\t$1",
+			"\\end{numquote*}"
+		]
+	},
+
+
+	"numquotation*":{
+		"prefix":"*numquotation",
+		"body":[
+			"\\begin{numquotation*}",
+				"\t$1",
+			"\\end{numquotation*}"
+		]
+	},
+
+
+	"internallinenumbers*":{
+		"prefix":"*internallinenumbers",
+		"body":[
+			"\\begin{internallinenumbers*}",
+				"\t$1",
+			"\\end{internallinenumbers*}"
+		]
+	},
+
+
+	"linenumbers":{
+		"prefix":"linenumbers",
+		"body":[
+			"\\begin{linenumbers}",
+				"\t$1",
+			"\\end{linenumbers}"
+		]
+	},
+
+
+	"runninglinenumbers":{
+		"prefix":"runninglinenumbers",
+		"body":[
+			"\\begin{runninglinenumbers}",
+				"\t$1",
+			"\\end{runninglinenumbers}"
 		]
 	}
 }

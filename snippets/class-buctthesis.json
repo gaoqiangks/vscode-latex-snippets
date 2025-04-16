@@ -1,7 +1,7 @@
 {
 
 
-	"buctsetup":{
+	"buctsetup{}":{
 		"prefix":"buctsetup",
 		"body":[
 			"\\buctsetup{${1:options%keyvals}}"
@@ -17,14 +17,6 @@
 	},
 
 
-	"makecover":{
-		"prefix":"makecover",
-		"body":[
-			"\\makecover[${1:imagefile}]"
-		]
-	},
-
-
 	"makedeclare":{
 		"prefix":"makedeclare",
 		"body":[
@@ -33,26 +25,10 @@
 	},
 
 
-	"makedeclare":{
-		"prefix":"makedeclare",
-		"body":[
-			"\\makedeclare[${1:imagefile}]"
-		]
-	},
-
-
 	"taskinfo":{
 		"prefix":"taskinfo",
 		"body":[
 			"\\taskinfo"
-		]
-	},
-
-
-	"taskinfo*":{
-		"prefix":"taskinfo*",
-		"body":[
-			"\\taskinfo*"
 		]
 	},
 
@@ -81,7 +57,7 @@
 	},
 
 
-	"echapter":{
+	"echapter{}":{
 		"prefix":"echapter",
 		"body":[
 			"\\echapter{${1:title}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"esection":{
+	"esection{}":{
 		"prefix":"esection",
 		"body":[
 			"\\esection{${1:title}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"esubsection":{
+	"esubsection{}":{
 		"prefix":"esubsection",
 		"body":[
 			"\\esubsection{${1:title}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"esubsubsection":{
+	"esubsubsection{}":{
 		"prefix":"esubsubsection",
 		"body":[
 			"\\esubsubsection{${1:title}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"bichapter":{
+	"bichapter{}{}":{
 		"prefix":"bichapter",
 		"body":[
 			"\\bichapter{${1:title}}{${2:English title%title}}"
@@ -121,15 +97,7 @@
 	},
 
 
-	"bichapter":{
-		"prefix":"bichapter",
-		"body":[
-			"\\bichapter[${3:short title}]{${1:title}}{${2:English title%title}}"
-		]
-	},
-
-
-	"bisection":{
+	"bisection{}{}":{
 		"prefix":"bisection",
 		"body":[
 			"\\bisection{${1:title}}{${2:English title%title}}"
@@ -137,15 +105,7 @@
 	},
 
 
-	"bisection":{
-		"prefix":"bisection",
-		"body":[
-			"\\bisection[${3:short title}]{${1:title}}{${2:English title%title}}"
-		]
-	},
-
-
-	"bisubsection":{
+	"bisubsection{}{}":{
 		"prefix":"bisubsection",
 		"body":[
 			"\\bisubsection{${1:title}}{${2:English title%title}}"
@@ -153,15 +113,7 @@
 	},
 
 
-	"bisubsection":{
-		"prefix":"bisubsection",
-		"body":[
-			"\\bisubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
-		]
-	},
-
-
-	"bisubsubsection":{
+	"bisubsubsection{}{}":{
 		"prefix":"bisubsubsection",
 		"body":[
 			"\\bisubsubsection{${1:title}}{${2:English title%title}}"
@@ -169,15 +121,7 @@
 	},
 
 
-	"bisubsubsection":{
-		"prefix":"bisubsubsection",
-		"body":[
-			"\\bisubsubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
-		]
-	},
-
-
-	"dcaption":{
+	"dcaption{}":{
 		"prefix":"dcaption",
 		"body":[
 			"\\dcaption{${1:text}}"
@@ -185,7 +129,7 @@
 	},
 
 
-	"inlinecite":{
+	"inlinecite{}":{
 		"prefix":"inlinecite",
 		"body":[
 			"\\inlinecite{${1:bibid}}"
@@ -217,12 +161,68 @@
 	},
 
 
-	"foreword":{
-		"prefix":"foreword",
+	"taskinfo*":{
+		"prefix":"*taskinfo",
 		"body":[
-			"\\begin{foreword}",
-			"\t$1",
-			"\\end{foreword}"
+			"\\taskinfo*"
+		]
+	},
+
+
+	"makecover[]":{
+		"prefix":"makecover",
+		"body":[
+			"\\makecover[${1:imagefile}]"
+		]
+	},
+
+
+	"makedeclare[]":{
+		"prefix":"makedeclare",
+		"body":[
+			"\\makedeclare[${1:imagefile}]"
+		]
+	},
+
+
+	"bichapter[]{}{}":{
+		"prefix":"bichapter",
+		"body":[
+			"\\bichapter[${3:short title}]{${1:title}}{${2:English title%title}}"
+		]
+	},
+
+
+	"bisection[]{}{}":{
+		"prefix":"bisection",
+		"body":[
+			"\\bisection[${3:short title}]{${1:title}}{${2:English title%title}}"
+		]
+	},
+
+
+	"bisubsection[]{}{}":{
+		"prefix":"bisubsection",
+		"body":[
+			"\\bisubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
+		]
+	},
+
+
+	"bisubsubsection[]{}{}":{
+		"prefix":"bisubsubsection",
+		"body":[
+			"\\bisubsubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
+		]
+	},
+
+
+	"cabstract":{
+		"prefix":"cabstract",
+		"body":[
+			"\\begin{cabstract}",
+				"\t$1",
+			"\\end{cabstract}"
 		]
 	},
 
@@ -231,8 +231,28 @@
 		"prefix":"eabstract",
 		"body":[
 			"\\begin{eabstract}",
-			"\t$1",
+				"\t$1",
 			"\\end{eabstract}"
+		]
+	},
+
+
+	"taskbook":{
+		"prefix":"taskbook",
+		"body":[
+			"\\begin{taskbook}",
+				"\t$1",
+			"\\end{taskbook}"
+		]
+	},
+
+
+	"taskbook":{
+		"prefix":"taskbook",
+		"body":[
+			"\\begin{taskbook}",
+				"\t$1",
+			"\\end{taskbook}"
 		]
 	},
 
@@ -241,7 +261,7 @@
 		"prefix":"bibenumerate",
 		"body":[
 			"\\begin{bibenumerate}",
-			"\t$1",
+				"\t$1",
 			"\\end{bibenumerate}"
 		]
 	},
@@ -251,28 +271,28 @@
 		"prefix":"denotation",
 		"body":[
 			"\\begin{denotation}",
-			"\t$1",
+				"\t$1",
 			"\\end{denotation}"
 		]
 	},
 
 
-	"theorem":{
-		"prefix":"theorem",
+	"foreword":{
+		"prefix":"foreword",
 		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
+			"\\begin{foreword}",
+				"\t$1",
+			"\\end{foreword}"
 		]
 	},
 
 
-	"taskbook":{
-		"prefix":"taskbook",
+	"dfigure":{
+		"prefix":"dfigure",
 		"body":[
-			"\\begin{taskbook}",
-			"\t$1",
-			"\\end{taskbook}"
+			"\\begin{dfigure}",
+				"\t$1",
+			"\\end{dfigure}"
 		]
 	},
 
@@ -281,18 +301,8 @@
 		"prefix":"conclusion",
 		"body":[
 			"\\begin{conclusion}",
-			"\t$1",
+				"\t$1",
 			"\\end{conclusion}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
 		]
 	},
 
@@ -301,48 +311,28 @@
 		"prefix":"translation",
 		"body":[
 			"\\begin{translation}",
-			"\t$1",
+				"\t$1",
 			"\\end{translation}"
 		]
 	},
 
 
-	"lemma":{
-		"prefix":"lemma",
+	"acknowledgement":{
+		"prefix":"acknowledgement",
 		"body":[
-			"\\begin{lemma}",
-			"\t$1",
-			"\\end{lemma}"
+			"\\begin{acknowledgement}",
+				"\t$1",
+			"\\end{acknowledgement}"
 		]
 	},
 
 
-	"proposition":{
-		"prefix":"proposition",
+	"achievements":{
+		"prefix":"achievements",
 		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"axiom":{
-		"prefix":"axiom",
-		"body":[
-			"\\begin{axiom}",
-			"\t$1",
-			"\\end{axiom}"
-		]
-	},
-
-
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
+			"\\begin{achievements}",
+				"\t$1",
+			"\\end{achievements}"
 		]
 	},
 
@@ -351,8 +341,48 @@
 		"prefix":"resume",
 		"body":[
 			"\\begin{resume}",
-			"\t$1",
+				"\t$1",
 			"\\end{resume}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
 		]
 	},
 
@@ -361,7 +391,7 @@
 		"prefix":"assumption",
 		"body":[
 			"\\begin{assumption}",
-			"\t$1",
+				"\t$1",
 			"\\end{assumption}"
 		]
 	},
@@ -371,48 +401,8 @@
 		"prefix":"definition",
 		"body":[
 			"\\begin{definition}",
-			"\t$1",
+				"\t$1",
 			"\\end{definition}"
-		]
-	},
-
-
-	"remark":{
-		"prefix":"remark",
-		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
-		]
-	},
-
-
-	"achievements":{
-		"prefix":"achievements",
-		"body":[
-			"\\begin{achievements}",
-			"\t$1",
-			"\\end{achievements}"
-		]
-	},
-
-
-	"dfigure":{
-		"prefix":"dfigure",
-		"body":[
-			"\\begin{dfigure}",
-			"\t$1",
-			"\\end{dfigure}"
-		]
-	},
-
-
-	"acknowledgement":{
-		"prefix":"acknowledgement",
-		"body":[
-			"\\begin{acknowledgement}",
-			"\t$1",
-			"\\end{acknowledgement}"
 		]
 	},
 
@@ -421,18 +411,158 @@
 		"prefix":"property",
 		"body":[
 			"\\begin{property}",
-			"\t$1",
+				"\t$1",
 			"\\end{property}"
 		]
 	},
 
 
-	"cabstract":{
-		"prefix":"cabstract",
+	"proposition":{
+		"prefix":"proposition",
 		"body":[
-			"\\begin{cabstract}",
-			"\t$1",
-			"\\end{cabstract}"
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"denotation":{
+		"prefix":"denotation",
+		"body":[
+			"\\begin{denotation}",
+				"\t$1",
+			"\\end{denotation}"
+		]
+	},
+
+
+	"dfigure":{
+		"prefix":"dfigure",
+		"body":[
+			"\\begin{dfigure}",
+				"\t$1",
+			"\\end{dfigure}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"assumption":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
 		]
 	}
 }

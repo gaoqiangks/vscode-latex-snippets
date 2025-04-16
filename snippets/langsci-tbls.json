@@ -41,7 +41,7 @@
 	},
 
 
-	"tblssy":{
+	"tblssy{}{}{}":{
 		"prefix":"tblssy",
 		"body":[
 			"\\tblssy{${1:symbol}}{${2:title%text}}{${3:text}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"tblssy":{
-		"prefix":"tblssy",
-		"body":[
-			"\\tblssy[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsli":{
+	"tblsli{}{}{}":{
 		"prefix":"tblsli",
 		"body":[
 			"\\tblsli{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
@@ -65,15 +57,7 @@
 	},
 
 
-	"tblsli":{
-		"prefix":"tblsli",
-		"body":[
-			"\\tblsli[${4:color}]{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsfi":{
+	"tblsfi{}{}":{
 		"prefix":"tblsfi",
 		"body":[
 			"\\tblsfi{${1:title%text}}{${2:text}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"tblsfi":{
-		"prefix":"tblsfi",
-		"body":[
-			"\\tblsfi[${3:color}]{${1:title%text}}{${2:text}}"
-		]
-	},
-
-
-	"tblsfr":{
+	"tblsfr{}{}{}":{
 		"prefix":"tblsfr",
 		"body":[
 			"\\tblsfr{${1:symbol}}{${2:title%text}}{${3:text}}"
@@ -97,15 +73,7 @@
 	},
 
 
-	"tblsfr":{
-		"prefix":"tblsfr",
-		"body":[
-			"\\tblsfr[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsfd":{
+	"tblsfd{}{}{}{}":{
 		"prefix":"tblsfd",
 		"body":[
 			"\\tblsfd{${1:color}}{${2:linewidth%l}}{${3:title%text}}{${4:content%text}}"
@@ -113,32 +81,34 @@
 	},
 
 
-	"tblsframedsymbol":{
-		"prefix":"tblsframedsymbol",
+	"tblssy[]{}{}{}":{
+		"prefix":"tblssy",
 		"body":[
-			"\\begin{tblsframedsymbol}",
-			"\t$1",
-			"\\end{tblsframedsymbol}"
+			"\\tblssy[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
 		]
 	},
 
 
-	"tblsfilledsymbol":{
-		"prefix":"tblsfilledsymbol",
+	"tblsli[]{}{}{}":{
+		"prefix":"tblsli",
 		"body":[
-			"\\begin{tblsfilledsymbol}",
-			"\t$1",
-			"\\end{tblsfilledsymbol}"
+			"\\tblsli[${4:color}]{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
 		]
 	},
 
 
-	"tblsfilled":{
-		"prefix":"tblsfilled",
+	"tblsfi[]{}{}":{
+		"prefix":"tblsfi",
 		"body":[
-			"\\begin{tblsfilled}",
-			"\t$1",
-			"\\end{tblsfilled}"
+			"\\tblsfi[${3:color}]{${1:title%text}}{${2:text}}"
+		]
+	},
+
+
+	"tblsfr[]{}{}{}":{
+		"prefix":"tblsfr",
+		"body":[
+			"\\tblsfr[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
 		]
 	},
 
@@ -147,8 +117,18 @@
 		"prefix":"tblslineshorizontal",
 		"body":[
 			"\\begin{tblslineshorizontal}",
-			"\t$1",
+				"\t$1",
 			"\\end{tblslineshorizontal}"
+		]
+	},
+
+
+	"tblsfilled":{
+		"prefix":"tblsfilled",
+		"body":[
+			"\\begin{tblsfilled}",
+				"\t$1",
+			"\\end{tblsfilled}"
 		]
 	},
 
@@ -157,8 +137,108 @@
 		"prefix":"tblsframed",
 		"body":[
 			"\\begin{tblsframed}",
-			"\t$1",
+				"\t$1",
 			"\\end{tblsframed}"
+		]
+	},
+
+
+	"tblsfilledsymbol":{
+		"prefix":"tblsfilledsymbol",
+		"body":[
+			"\\begin{tblsfilledsymbol}",
+				"\t$1",
+			"\\end{tblsfilledsymbol}"
+		]
+	},
+
+
+	"tblsframedsymbol":{
+		"prefix":"tblsframedsymbol",
+		"body":[
+			"\\begin{tblsframedsymbol}",
+				"\t$1",
+			"\\end{tblsframedsymbol}"
+		]
+	},
+
+
+	"tblslineshorizontal":{
+		"prefix":"tblslineshorizontal",
+		"body":[
+			"\\begin{tblslineshorizontal}",
+				"\t$1",
+			"\\end{tblslineshorizontal}"
+		]
+	},
+
+
+	"tblslineshorizontal":{
+		"prefix":"tblslineshorizontal",
+		"body":[
+			"\\begin{tblslineshorizontal}",
+				"\t$1",
+			"\\end{tblslineshorizontal}"
+		]
+	},
+
+
+	"tblsfilled":{
+		"prefix":"tblsfilled",
+		"body":[
+			"\\begin{tblsfilled}",
+				"\t$1",
+			"\\end{tblsfilled}"
+		]
+	},
+
+
+	"tblsframed":{
+		"prefix":"tblsframed",
+		"body":[
+			"\\begin{tblsframed}",
+				"\t$1",
+			"\\end{tblsframed}"
+		]
+	},
+
+
+	"tblsframed":{
+		"prefix":"tblsframed",
+		"body":[
+			"\\begin{tblsframed}",
+				"\t$1",
+			"\\end{tblsframed}"
+		]
+	},
+
+
+	"tblsfilledsymbol":{
+		"prefix":"tblsfilledsymbol",
+		"body":[
+			"\\begin{tblsfilledsymbol}",
+				"\t$1",
+			"\\end{tblsfilledsymbol}"
+		]
+	},
+
+
+	"tblsframedsymbol":{
+		"prefix":"tblsframedsymbol",
+		"body":[
+			"\\begin{tblsframedsymbol}",
+				"\t$1",
+			"\\end{tblsframedsymbol}"
+		]
+	},
+
+
+	"tblsframedsymbol":{
+		"prefix":"tblsframedsymbol",
+		"body":[
+			"\\begin{tblsframedsymbol}",
+				"\t$1",
+			"\\end{tblsframedsymbol}"
 		]
 	}
 }

@@ -2633,18 +2633,10 @@
 	},
 
 
-	"enclose":{
+	"enclose{}{}{}":{
 		"prefix":"enclose",
 		"body":[
 			"\\enclose{${1:ldelim}}{${2:arg}}{${3:rdelim}}"
-		]
-	},
-
-
-	"enclose":{
-		"prefix":"enclose",
-		"body":[
-			"\\enclose[${4:scale%keyvals}]{${1:ldelim}}{${2:arg}}{${3:rdelim}}"
 		]
 	},
 
@@ -2657,7 +2649,7 @@
 	},
 
 
-	"encloseSet":{
+	"encloseSet{}{}{}{}{}":{
 		"prefix":"encloseSet",
 		"body":[
 			"\\encloseSet{${1:ldelim}}{${2:arg1}}{${3:mdelim}}{${4:arg2}}{${5:rdelim}}"
@@ -2665,15 +2657,7 @@
 	},
 
 
-	"encloseSet":{
-		"prefix":"encloseSet",
-		"body":[
-			"\\encloseSet[${6:scale%keyvals}]{${1:ldelim}}{${2:arg1}}{${3:mdelim}}{${4:arg2}}{${5:rdelim}}"
-		]
-	},
-
-
-	"paren":{
+	"paren{}{}{}":{
 		"prefix":"paren",
 		"body":[
 			"\\paren{${1:ldelim}}{${2:rdelim}}{${3:arg}}"
@@ -2681,15 +2665,7 @@
 	},
 
 
-	"paren":{
-		"prefix":"paren",
-		"body":[
-			"\\paren[${4:scale%keyvals}]{${1:ldelim}}{${2:rdelim}}{${3:arg}}"
-		]
-	},
-
-
-	"clap":{
+	"clap{}":{
 		"prefix":"clap",
 		"body":[
 			"\\clap{${1:text}}"
@@ -2697,7 +2673,7 @@
 	},
 
 
-	"mathllap":{
+	"mathllap{}":{
 		"prefix":"mathllap",
 		"body":[
 			"\\mathllap{${1:arg}}"
@@ -2705,7 +2681,7 @@
 	},
 
 
-	"mathrlap":{
+	"mathrlap{}":{
 		"prefix":"mathrlap",
 		"body":[
 			"\\mathrlap{${1:arg}}"
@@ -2713,7 +2689,7 @@
 	},
 
 
-	"mathclap":{
+	"mathclap{}":{
 		"prefix":"mathclap",
 		"body":[
 			"\\mathclap{${1:arg}}"
@@ -2721,7 +2697,7 @@
 	},
 
 
-	"mathllapinternal":{
+	"mathllapinternal{}{}":{
 		"prefix":"mathllapinternal",
 		"body":[
 			"\\mathllapinternal{${1:arg1}}{${2:arg2}}"
@@ -2729,7 +2705,7 @@
 	},
 
 
-	"mathrlapinternal":{
+	"mathrlapinternal{}{}":{
 		"prefix":"mathrlapinternal",
 		"body":[
 			"\\mathrlapinternal{${1:arg1}}{${2:arg2}}"
@@ -2737,7 +2713,7 @@
 	},
 
 
-	"mathclapinternal":{
+	"mathclapinternal{}{}":{
 		"prefix":"mathclapinternal",
 		"body":[
 			"\\mathclapinternal{${1:arg1}}{${2:arg2}}"
@@ -2745,7 +2721,7 @@
 	},
 
 
-	"mrepinternal":{
+	"mrepinternal{}{}{}{}":{
 		"prefix":"mrepinternal",
 		"body":[
 			"\\mrepinternal{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -2753,7 +2729,7 @@
 	},
 
 
-	"mrep":{
+	"mrep{}{}":{
 		"prefix":"mrep",
 		"body":[
 			"\\mrep{${1:arg1}}{${2:arg2}}"
@@ -2761,7 +2737,31 @@
 	},
 
 
-	"mrep":{
+	"enclose[]{}{}{}":{
+		"prefix":"enclose",
+		"body":[
+			"\\enclose[${4:scale%keyvals}]{${1:ldelim}}{${2:arg}}{${3:rdelim}}"
+		]
+	},
+
+
+	"encloseSet[]{}{}{}{}{}":{
+		"prefix":"encloseSet",
+		"body":[
+			"\\encloseSet[${6:scale%keyvals}]{${1:ldelim}}{${2:arg1}}{${3:mdelim}}{${4:arg2}}{${5:rdelim}}"
+		]
+	},
+
+
+	"paren[]{}{}{}":{
+		"prefix":"paren",
+		"body":[
+			"\\paren[${4:scale%keyvals}]{${1:ldelim}}{${2:rdelim}}{${3:arg}}"
+		]
+	},
+
+
+	"mrep[]{}{}":{
 		"prefix":"mrep",
 		"body":[
 			"\\mrep[${3:align%keyvals}]{${1:arg1}}{${2:arg2}}"

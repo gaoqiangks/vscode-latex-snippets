@@ -17,14 +17,6 @@
 	},
 
 
-	"qed*":{
-		"prefix":"qed*",
-		"body":[
-			"\\qed*"
-		]
-	},
-
-
 	"qef":{
 		"prefix":"qef",
 		"body":[
@@ -65,7 +57,7 @@
 	},
 
 
-	"newtheoremtype":{
+	"newtheoremtype{}{}{}{}":{
 		"prefix":"newtheoremtype",
 		"body":[
 			"\\newtheoremtype{${1:type}}{${2:title style}}{${3:comment style}}{${4:body style}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"renewtheoremtype":{
+	"renewtheoremtype{}{}{}{}":{
 		"prefix":"renewtheoremtype",
 		"body":[
 			"\\renewtheoremtype{${1:type}}{${2:title style}}{${3:comment style}}{${4:body style}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"liketheorem":{
+	"liketheorem{}{}":{
 		"prefix":"liketheorem",
 		"body":[
 			"\\liketheorem{${1:title%text}}{${2:number}}"
@@ -89,31 +81,7 @@
 	},
 
 
-	"liketheorem":{
-		"prefix":"liketheorem",
-		"body":[
-			"\\liketheorem{${1:title%text}}{${2:number}}[${3:comment%text}]"
-		]
-	},
-
-
-	"liketheorem*":{
-		"prefix":"liketheorem*",
-		"body":[
-			"\\liketheorem*{${1:title%text}}"
-		]
-	},
-
-
-	"liketheorem*":{
-		"prefix":"liketheorem*",
-		"body":[
-			"\\liketheorem*{${1:title%text}}[${2:comment%text}]"
-		]
-	},
-
-
-	"likeremark":{
+	"likeremark{}{}":{
 		"prefix":"likeremark",
 		"body":[
 			"\\likeremark{${1:title%text}}{${2:number}}"
@@ -121,98 +89,10 @@
 	},
 
 
-	"likeremark":{
-		"prefix":"likeremark",
-		"body":[
-			"\\likeremark{${1:title%text}}{${2:number}}[${3:comment%text}]"
-		]
-	},
-
-
-	"likeremark*":{
-		"prefix":"likeremark*",
-		"body":[
-			"\\likeremark*{${1:title%text}}"
-		]
-	},
-
-
-	"likeremark*":{
-		"prefix":"likeremark*",
-		"body":[
-			"\\likeremark*{${1:title%text}}[${2:comment%text}]"
-		]
-	},
-
-
-	"newtheorem":{
-		"prefix":"newtheorem",
-		"body":[
-			"\\newtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:title%text}}"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
-		]
-	},
-
-
-	"renewtheorem":{
+	"renewtheorem{}{}":{
 		"prefix":"renewtheorem",
 		"body":[
 			"\\renewtheorem{${1:envname}}{${2:title%text}}"
-		]
-	},
-
-
-	"renewtheorem":{
-		"prefix":"renewtheorem",
-		"body":[
-			"\\renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}"
-		]
-	},
-
-
-	"renewtheorem":{
-		"prefix":"renewtheorem",
-		"body":[
-			"\\renewtheorem{${1:envname}}{${2:title%text}}[${3:type}]"
-		]
-	},
-
-
-	"renewtheorem":{
-		"prefix":"renewtheorem",
-		"body":[
-			"\\renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
-		]
-	},
-
-
-	"renewtheorem*":{
-		"prefix":"renewtheorem*",
-		"body":[
-			"\\renewtheorem*{${1:envname}}{${2:title%text}}"
-		]
-	},
-
-
-	"renewtheorem*":{
-		"prefix":"renewtheorem*",
-		"body":[
-			"\\renewtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
 		]
 	},
 
@@ -257,15 +137,7 @@
 	},
 
 
-	"apar":{
-		"prefix":"apar",
-		"body":[
-			"\\apar[${1:title%text}]"
-		]
-	},
-
-
-	"TheoremCommentDelimiters":{
+	"TheoremCommentDelimiters{}{}":{
 		"prefix":"TheoremCommentDelimiters",
 		"body":[
 			"\\TheoremCommentDelimiters{${1:left}}{${2:right}}"
@@ -273,7 +145,7 @@
 	},
 
 
-	"AfterTheoremHeaderChar":{
+	"AfterTheoremHeaderChar{}":{
 		"prefix":"AfterTheoremHeaderChar",
 		"body":[
 			"\\AfterTheoremHeaderChar{${1:char}}"
@@ -281,7 +153,7 @@
 	},
 
 
-	"AfterTheoremHeaderSkip":{
+	"AfterTheoremHeaderSkip{}":{
 		"prefix":"AfterTheoremHeaderSkip",
 		"body":[
 			"\\AfterTheoremHeaderSkip{${1:skip cmd}}"
@@ -289,7 +161,7 @@
 	},
 
 
-	"ProofStyleParameters":{
+	"ProofStyleParameters{}{}":{
 		"prefix":"ProofStyleParameters",
 		"body":[
 			"\\ProofStyleParameters{${1:style}}{${2:title%text}}"
@@ -297,10 +169,138 @@
 	},
 
 
-	"AparStyleParameters":{
+	"AparStyleParameters{}{}{}":{
 		"prefix":"AparStyleParameters",
 		"body":[
 			"\\AparStyleParameters{${1:style}}{${2:prefix}}{${3:suffix}}"
+		]
+	},
+
+
+	"qed*":{
+		"prefix":"*qed",
+		"body":[
+			"\\qed*"
+		]
+	},
+
+
+	"liketheorem*{}":{
+		"prefix":"*liketheorem",
+		"body":[
+			"\\liketheorem*{${1:title%text}}"
+		]
+	},
+
+
+	"liketheorem*{}[]":{
+		"prefix":"*liketheorem",
+		"body":[
+			"\\liketheorem*{${1:title%text}}[${2:comment%text}]"
+		]
+	},
+
+
+	"likeremark*{}":{
+		"prefix":"*likeremark",
+		"body":[
+			"\\likeremark*{${1:title%text}}"
+		]
+	},
+
+
+	"likeremark*{}[]":{
+		"prefix":"*likeremark",
+		"body":[
+			"\\likeremark*{${1:title%text}}[${2:comment%text}]"
+		]
+	},
+
+
+	"newtheorem*{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*{${1:envname}}{${2:title%text}}"
+		]
+	},
+
+
+	"newtheorem*{}{}[]":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
+		]
+	},
+
+
+	"renewtheorem*{}{}":{
+		"prefix":"*renewtheorem",
+		"body":[
+			"\\renewtheorem*{${1:envname}}{${2:title%text}}"
+		]
+	},
+
+
+	"renewtheorem*{}{}[]":{
+		"prefix":"*renewtheorem",
+		"body":[
+			"\\renewtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
+		]
+	},
+
+
+	"liketheorem{}{}[]":{
+		"prefix":"liketheorem",
+		"body":[
+			"\\liketheorem{${1:title%text}}{${2:number}}[${3:comment%text}]"
+		]
+	},
+
+
+	"likeremark{}{}[]":{
+		"prefix":"likeremark",
+		"body":[
+			"\\likeremark{${1:title%text}}{${2:number}}[${3:comment%text}]"
+		]
+	},
+
+
+	"newtheorem{}[]{}[]":{
+		"prefix":"newtheorem",
+		"body":[
+			"\\newtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
+		]
+	},
+
+
+	"renewtheorem{}[]{}":{
+		"prefix":"renewtheorem",
+		"body":[
+			"\\renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}"
+		]
+	},
+
+
+	"renewtheorem{}{}[]":{
+		"prefix":"renewtheorem",
+		"body":[
+			"\\renewtheorem{${1:envname}}{${2:title%text}}[${3:type}]"
+		]
+	},
+
+
+	"renewtheorem{}[]{}[]":{
+		"prefix":"renewtheorem",
+		"body":[
+			"\\renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
+		]
+	},
+
+
+	"apar[]":{
+		"prefix":"apar",
+		"body":[
+			"\\apar[${1:title%text}]"
 		]
 	},
 
@@ -309,7 +309,17 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
 			"\\end{proof}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"cuMarginMark":{
+	"cuMarginMark{}":{
 		"prefix":"cuMarginMark",
 		"body":[
 			"\\cuMarginMark{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"cuMarginMarkText":{
+	"cuMarginMarkText{}":{
 		"prefix":"cuMarginMarkText",
 		"body":[
 			"\\cuMarginMarkText{${1:text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"textchurchslavonic":{
-		"prefix":"textchurchslavonic",
-		"body":[
-			"\\textchurchslavonic[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"textchurchslavonic":{
+	"textchurchslavonic{}":{
 		"prefix":"textchurchslavonic",
 		"body":[
 			"\\textchurchslavonic{${1:text}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"Azbuk":{
+	"Azbuk{}":{
 		"prefix":"Azbuk",
 		"body":[
 			"\\Azbuk{${1:counter}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"azbuk":{
+	"azbuk{}":{
 		"prefix":"azbuk",
 		"body":[
 			"\\azbuk{${1:counter}}"
@@ -201,11 +193,29 @@
 	},
 
 
+	"textchurchslavonic[]{}":{
+		"prefix":"textchurchslavonic",
+		"body":[
+			"\\textchurchslavonic[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
 	"churchslavonic":{
 		"prefix":"churchslavonic",
 		"body":[
 			"\\begin{churchslavonic}",
-			"\t$1",
+				"\t$1",
+			"\\end{churchslavonic}"
+		]
+	},
+
+
+	"churchslavonic":{
+		"prefix":"churchslavonic",
+		"body":[
+			"\\begin{churchslavonic}",
+				"\t$1",
 			"\\end{churchslavonic}"
 		]
 	}

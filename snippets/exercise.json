@@ -25,42 +25,10 @@
 	},
 
 
-	"Exercise":{
-		"prefix":"Exercise",
-		"body":[
-			"\\Exercise[${1:options%keyvals}]"
-		]
-	},
-
-
-	"Exercise*":{
-		"prefix":"Exercise*",
-		"body":[
-			"\\Exercise*"
-		]
-	},
-
-
-	"Exercise*":{
-		"prefix":"Exercise*",
-		"body":[
-			"\\Exercise*[${1:options%keyvals}]"
-		]
-	},
-
-
 	"Answer":{
 		"prefix":"Answer",
 		"body":[
 			"\\Answer"
-		]
-	},
-
-
-	"Answer":{
-		"prefix":"Answer",
-		"body":[
-			"\\Answer[${1:options%keyvals}]"
 		]
 	},
 
@@ -73,42 +41,10 @@
 	},
 
 
-	"ExePart":{
-		"prefix":"ExePart",
-		"body":[
-			"\\ExePart[${1:options%keyvals}]"
-		]
-	},
-
-
-	"ExePart*":{
-		"prefix":"ExePart*",
-		"body":[
-			"\\ExePart*"
-		]
-	},
-
-
-	"ExePart*":{
-		"prefix":"ExePart*",
-		"body":[
-			"\\ExePart*[${1:options%keyvals}]"
-		]
-	},
-
-
 	"Question":{
 		"prefix":"Question",
 		"body":[
 			"\\Question"
-		]
-	},
-
-
-	"Question":{
-		"prefix":"Question",
-		"body":[
-			"\\Question[${1:options%keyvals}]"
 		]
 	},
 
@@ -121,26 +57,10 @@
 	},
 
 
-	"subQuestion":{
-		"prefix":"subQuestion",
-		"body":[
-			"\\subQuestion[${1:options%keyvals}]"
-		]
-	},
-
-
 	"subsubQuestion":{
 		"prefix":"subsubQuestion",
 		"body":[
 			"\\subsubQuestion"
-		]
-	},
-
-
-	"subsubQuestion":{
-		"prefix":"subsubQuestion",
-		"body":[
-			"\\subsubQuestion[${1:options%keyvals}]"
 		]
 	},
 
@@ -161,30 +81,6 @@
 	},
 
 
-	"ExerciseSelect":{
-		"prefix":"ExerciseSelect",
-		"body":[
-			"\\ExerciseSelect[${1:options%keyvals}]"
-		]
-	},
-
-
-	"ExerciseSelect*":{
-		"prefix":"ExerciseSelect*",
-		"body":[
-			"\\ExerciseSelect*"
-		]
-	},
-
-
-	"ExerciseSelect*":{
-		"prefix":"ExerciseSelect*",
-		"body":[
-			"\\ExerciseSelect*[${1:options%keyvals}]"
-		]
-	},
-
-
 	"ExerciseStopSelect":{
 		"prefix":"ExerciseStopSelect",
 		"body":[
@@ -193,7 +89,7 @@
 	},
 
 
-	"refAnswer":{
+	"refAnswer{}":{
 		"prefix":"refAnswer",
 		"body":[
 			"\\refAnswer{${1:label}}"
@@ -209,7 +105,7 @@
 	},
 
 
-	"marker":{
+	"marker{}{}":{
 		"prefix":"marker",
 		"body":[
 			"\\marker{${1:symbol}}{${2:number}}"
@@ -241,7 +137,7 @@
 	},
 
 
-	"ExerciseLevelInToc":{
+	"ExerciseLevelInToc{}":{
 		"prefix":"ExerciseLevelInToc",
 		"body":[
 			"\\ExerciseLevelInToc{${1:level}}"
@@ -657,18 +553,10 @@
 	},
 
 
-	"renewcounter":{
+	"renewcounter{}":{
 		"prefix":"renewcounter",
 		"body":[
 			"\\renewcounter{${1:name}}"
-		]
-	},
-
-
-	"renewcounter":{
-		"prefix":"renewcounter",
-		"body":[
-			"\\renewcounter{${1:name}}[${2:counter}]"
 		]
 	},
 
@@ -1057,7 +945,7 @@
 	},
 
 
-	"recordExerciseLabel":{
+	"recordExerciseLabel{}":{
 		"prefix":"recordExerciseLabel",
 		"body":[
 			"\\recordExerciseLabel{${1:label}}"
@@ -1137,7 +1025,7 @@
 	},
 
 
-	"termineliste":{
+	"termineliste{}":{
 		"prefix":"termineliste",
 		"body":[
 			"\\termineliste{${1:number}}"
@@ -1249,22 +1137,114 @@
 	},
 
 
-	"ExerciseList":{
-		"prefix":"ExerciseList",
+	"Exercise*":{
+		"prefix":"*Exercise",
 		"body":[
-			"\\begin{ExerciseList}",
-			"\t$1",
-			"\\end{ExerciseList}"
+			"\\Exercise*"
 		]
 	},
 
 
-	"Exercise*":{
-		"prefix":"Exercise*",
+	"Exercise*[]":{
+		"prefix":"*Exercise",
 		"body":[
-			"\\begin{Exercise*}",
-			"\t$1",
-			"\\end{Exercise*}"
+			"\\Exercise*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"ExePart*":{
+		"prefix":"*ExePart",
+		"body":[
+			"\\ExePart*"
+		]
+	},
+
+
+	"ExePart*[]":{
+		"prefix":"*ExePart",
+		"body":[
+			"\\ExePart*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"ExerciseSelect*":{
+		"prefix":"*ExerciseSelect",
+		"body":[
+			"\\ExerciseSelect*"
+		]
+	},
+
+
+	"ExerciseSelect*[]":{
+		"prefix":"*ExerciseSelect",
+		"body":[
+			"\\ExerciseSelect*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"Exercise[]":{
+		"prefix":"Exercise",
+		"body":[
+			"\\Exercise[${1:options%keyvals}]"
+		]
+	},
+
+
+	"Answer[]":{
+		"prefix":"Answer",
+		"body":[
+			"\\Answer[${1:options%keyvals}]"
+		]
+	},
+
+
+	"ExePart[]":{
+		"prefix":"ExePart",
+		"body":[
+			"\\ExePart[${1:options%keyvals}]"
+		]
+	},
+
+
+	"Question[]":{
+		"prefix":"Question",
+		"body":[
+			"\\Question[${1:options%keyvals}]"
+		]
+	},
+
+
+	"subQuestion[]":{
+		"prefix":"subQuestion",
+		"body":[
+			"\\subQuestion[${1:options%keyvals}]"
+		]
+	},
+
+
+	"subsubQuestion[]":{
+		"prefix":"subsubQuestion",
+		"body":[
+			"\\subsubQuestion[${1:options%keyvals}]"
+		]
+	},
+
+
+	"ExerciseSelect[]":{
+		"prefix":"ExerciseSelect",
+		"body":[
+			"\\ExerciseSelect[${1:options%keyvals}]"
+		]
+	},
+
+
+	"renewcounter{}[]":{
+		"prefix":"renewcounter",
+		"body":[
+			"\\renewcounter{${1:name}}[${2:counter}]"
 		]
 	},
 
@@ -1273,7 +1253,7 @@
 		"prefix":"Exercise",
 		"body":[
 			"\\begin{Exercise}",
-			"\t$1",
+				"\t$1",
 			"\\end{Exercise}"
 		]
 	},
@@ -1283,7 +1263,57 @@
 		"prefix":"Answer",
 		"body":[
 			"\\begin{Answer}",
-			"\t$1",
+				"\t$1",
+			"\\end{Answer}"
+		]
+	},
+
+
+	"ExerciseList":{
+		"prefix":"ExerciseList",
+		"body":[
+			"\\begin{ExerciseList}",
+				"\t$1",
+			"\\end{ExerciseList}"
+		]
+	},
+
+
+	"Exercise*":{
+		"prefix":"*Exercise",
+		"body":[
+			"\\begin{Exercise*}",
+				"\t$1",
+			"\\end{Exercise*}"
+		]
+	},
+
+
+	"Exercise":{
+		"prefix":"Exercise",
+		"body":[
+			"\\begin{Exercise}",
+				"\t$1",
+			"\\end{Exercise}"
+		]
+	},
+
+
+	"Exercise*":{
+		"prefix":"Exercise",
+		"body":[
+			"\\begin{Exercise*}",
+				"\t$1",
+			"\\end{Exercise*}"
+		]
+	},
+
+
+	"Answer":{
+		"prefix":"Answer",
+		"body":[
+			"\\begin{Answer}",
+				"\t$1",
 			"\\end{Answer}"
 		]
 	}

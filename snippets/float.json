@@ -1,7 +1,7 @@
 {
 
 
-	"newfloat":{
+	"newfloat{}{}{}":{
 		"prefix":"newfloat",
 		"body":[
 			"\\newfloat{${1:float type%envname}}{${2:placement}}{${3:ext}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"newfloat":{
-		"prefix":"newfloat",
-		"body":[
-			"\\newfloat{${1:float type%envname}}{${2:placement}}{${3:ext}}[${4:within}]"
-		]
-	},
-
-
-	"floatstyle":{
+	"floatstyle{}":{
 		"prefix":"floatstyle",
 		"body":[
 			"\\floatstyle{${1:default style%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"floatname":{
+	"floatname{}{}":{
 		"prefix":"floatname",
 		"body":[
 			"\\floatname{${1:float type}}{${2:name}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"floatplacement":{
+	"floatplacement{}{}":{
 		"prefix":"floatplacement",
 		"body":[
 			"\\floatplacement{${1:float type}}{${2:default placement}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"restylefloat":{
+	"restylefloat{}":{
 		"prefix":"restylefloat",
 		"body":[
 			"\\restylefloat{${1:float type}}"
@@ -49,10 +41,18 @@
 	},
 
 
-	"listof":{
+	"listof{}{}":{
 		"prefix":"listof",
 		"body":[
 			"\\listof{${1:float type}}{${2:title}}"
+		]
+	},
+
+
+	"newfloat{}{}{}[]":{
+		"prefix":"newfloat",
+		"body":[
+			"\\newfloat{${1:float type%envname}}{${2:placement}}{${3:ext}}[${4:within}]"
 		]
 	}
 }

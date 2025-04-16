@@ -1,7 +1,7 @@
 {
 
 
-	"section<decoration>":{
+	"section<decoration>{}":{
 		"prefix":"section<decoration>",
 		"body":[
 			"\\section<decoration>{${1:title}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"section<decoration>":{
-		"prefix":"section<decoration>",
-		"body":[
-			"\\section<decoration>[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"paragraph<decoration>":{
+	"paragraph<decoration>{}":{
 		"prefix":"paragraph<decoration>",
 		"body":[
 			"\\paragraph<decoration>{${1:title}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"paragraph<decoration>":{
-		"prefix":"paragraph<decoration>",
-		"body":[
-			"\\paragraph<decoration>[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"phfeaSectionDecoration":{
+	"phfeaSectionDecoration{}":{
 		"prefix":"phfeaSectionDecoration",
 		"body":[
 			"\\phfeaSectionDecoration{${1:symbol}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"phfeaParagraphDecoration":{
+	"phfeaParagraphDecoration{}":{
 		"prefix":"phfeaParagraphDecoration",
 		"body":[
 			"\\phfeaParagraphDecoration{${1:symbol}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"phfeaSectionFormatHeading":{
+	"phfeaSectionFormatHeading{}":{
 		"prefix":"phfeaSectionFormatHeading",
 		"body":[
 			"\\phfeaSectionFormatHeading{${1:text}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"phfeaParagraphFormatHeading":{
+	"phfeaParagraphFormatHeading{}":{
 		"prefix":"phfeaParagraphFormatHeading",
 		"body":[
 			"\\phfeaParagraphFormatHeading{${1:text}}"
@@ -201,11 +185,37 @@
 	},
 
 
+	"section<decoration>[]{}":{
+		"prefix":"section<decoration>",
+		"body":[
+			"\\section<decoration>[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"paragraph<decoration>[]{}":{
+		"prefix":"paragraph<decoration>",
+		"body":[
+			"\\paragraph<decoration>[${2:short title}]{${1:title}}"
+		]
+	},
+
+
 	"enumerate*":{
-		"prefix":"enumerate*",
+		"prefix":"*enumerate",
 		"body":[
 			"\\begin{enumerate*}",
-			"\t$1",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
 			"\\end{enumerate*}"
 		]
 	}

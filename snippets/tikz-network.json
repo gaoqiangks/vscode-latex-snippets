@@ -1,7 +1,7 @@
 {
 
 
-	"Vertex":{
+	"Vertex{}":{
 		"prefix":"Vertex",
 		"body":[
 			"\\Vertex{${1:name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"Vertex":{
-		"prefix":"Vertex",
-		"body":[
-			"\\Vertex[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"Edge":{
+	"Edge()()":{
 		"prefix":"Edge",
 		"body":[
 			"\\Edge(${1:vertex1})(${2:vertex2})"
@@ -25,15 +17,7 @@
 	},
 
 
-	"Edge":{
-		"prefix":"Edge",
-		"body":[
-			"\\Edge[${1:options%keyvals}](${2:vertex1})(${3:vertex2})"
-		]
-	},
-
-
-	"Text":{
+	"Text{}":{
 		"prefix":"Text",
 		"body":[
 			"\\Text{${1:text}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"Text":{
-		"prefix":"Text",
-		"body":[
-			"\\Text[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"Vertices":{
+	"Vertices{}":{
 		"prefix":"Vertices",
 		"body":[
 			"\\Vertices{${1:file}}"
@@ -57,15 +33,7 @@
 	},
 
 
-	"Vertices":{
-		"prefix":"Vertices",
-		"body":[
-			"\\Vertices[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"Edges":{
+	"Edges{}":{
 		"prefix":"Edges",
 		"body":[
 			"\\Edges{${1:file}}"
@@ -73,23 +41,7 @@
 	},
 
 
-	"Edges":{
-		"prefix":"Edges",
-		"body":[
-			"\\Edges[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"Plane":{
-		"prefix":"Plane",
-		"body":[
-			"\\Plane[${1:options%keyvals}]"
-		]
-	},
-
-
-	"SetDefaultUnit":{
+	"SetDefaultUnit{}":{
 		"prefix":"SetDefaultUnit",
 		"body":[
 			"\\SetDefaultUnit{${1:unit}}"
@@ -97,7 +49,7 @@
 	},
 
 
-	"SetDistanceScale":{
+	"SetDistanceScale{}":{
 		"prefix":"SetDistanceScale",
 		"body":[
 			"\\SetDistanceScale{${1:number}}"
@@ -105,34 +57,10 @@
 	},
 
 
-	"SetLayerDistance":{
+	"SetLayerDistance{}":{
 		"prefix":"SetLayerDistance",
 		"body":[
 			"\\SetLayerDistance{${1:length}}"
-		]
-	},
-
-
-	"SetCoordinates":{
-		"prefix":"SetCoordinates",
-		"body":[
-			"\\SetCoordinates[${1:specs%keyvals}]"
-		]
-	},
-
-
-	"SetVertexStyle":{
-		"prefix":"SetVertexStyle",
-		"body":[
-			"\\SetVertexStyle[${1:options%keyvals}]"
-		]
-	},
-
-
-	"SetEdgeStyle":{
-		"prefix":"SetEdgeStyle",
-		"body":[
-			"\\SetEdgeStyle[${1:options%keyvals}]"
 		]
 	},
 
@@ -153,23 +81,7 @@
 	},
 
 
-	"SetTextStyle":{
-		"prefix":"SetTextStyle",
-		"body":[
-			"\\SetTextStyle[${1:options%keyvals}]"
-		]
-	},
-
-
-	"SetPlaneStyle":{
-		"prefix":"SetPlaneStyle",
-		"body":[
-			"\\SetPlaneStyle[${1:options%keyvals}]"
-		]
-	},
-
-
-	"SetPlaneWidth":{
+	"SetPlaneWidth{}":{
 		"prefix":"SetPlaneWidth",
 		"body":[
 			"\\SetPlaneWidth{${1:width}}"
@@ -177,10 +89,98 @@
 	},
 
 
-	"SetPlaneHeight":{
+	"SetPlaneHeight{}":{
 		"prefix":"SetPlaneHeight",
 		"body":[
 			"\\SetPlaneHeight{${1:height}}"
+		]
+	},
+
+
+	"Vertex[]{}":{
+		"prefix":"Vertex",
+		"body":[
+			"\\Vertex[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"Edge[]()()":{
+		"prefix":"Edge",
+		"body":[
+			"\\Edge[${1:options%keyvals}](${2:vertex1})(${3:vertex2})"
+		]
+	},
+
+
+	"Text[]{}":{
+		"prefix":"Text",
+		"body":[
+			"\\Text[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"Vertices[]{}":{
+		"prefix":"Vertices",
+		"body":[
+			"\\Vertices[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"Edges[]{}":{
+		"prefix":"Edges",
+		"body":[
+			"\\Edges[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"Plane[]":{
+		"prefix":"Plane",
+		"body":[
+			"\\Plane[${1:options%keyvals}]"
+		]
+	},
+
+
+	"SetCoordinates[]":{
+		"prefix":"SetCoordinates",
+		"body":[
+			"\\SetCoordinates[${1:specs%keyvals}]"
+		]
+	},
+
+
+	"SetVertexStyle[]":{
+		"prefix":"SetVertexStyle",
+		"body":[
+			"\\SetVertexStyle[${1:options%keyvals}]"
+		]
+	},
+
+
+	"SetEdgeStyle[]":{
+		"prefix":"SetEdgeStyle",
+		"body":[
+			"\\SetEdgeStyle[${1:options%keyvals}]"
+		]
+	},
+
+
+	"SetTextStyle[]":{
+		"prefix":"SetTextStyle",
+		"body":[
+			"\\SetTextStyle[${1:options%keyvals}]"
+		]
+	},
+
+
+	"SetPlaneStyle[]":{
+		"prefix":"SetPlaneStyle",
+		"body":[
+			"\\SetPlaneStyle[${1:options%keyvals}]"
 		]
 	},
 
@@ -189,7 +189,7 @@
 		"prefix":"Layer",
 		"body":[
 			"\\begin{Layer}",
-			"\t$1",
+				"\t$1",
 			"\\end{Layer}"
 		]
 	}

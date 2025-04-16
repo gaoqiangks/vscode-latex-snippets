@@ -9,7 +9,7 @@
 	},
 
 
-	"backgroundimage":{
+	"backgroundimage{}":{
 		"prefix":"backgroundimage",
 		"body":[
 			"\\backgroundimage{${1:imagefile}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"onecolumnexos":{
+	"onecolumnexos{}":{
 		"prefix":"onecolumnexos",
 		"body":[
 			"\\onecolumnexos{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"groupexos":{
+	"groupexos{}":{
 		"prefix":"groupexos",
 		"body":[
 			"\\groupexos{${1:title%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"activity":{
+	"activity{}":{
 		"prefix":"activity",
 		"body":[
 			"\\activity{${1:title%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"window":{
+	"window{}{}{}{}":{
 		"prefix":"window",
 		"body":[
 			"\\window{${1:Xmin}}{${2:Xmax}}{${3:Ymin}}{${4:Ymax}}"
@@ -65,26 +65,10 @@
 	},
 
 
-	"axeH":{
-		"prefix":"axeH",
-		"body":[
-			"\\axeH[${1:label}]"
-		]
-	},
-
-
 	"axeV":{
 		"prefix":"axeV",
 		"body":[
 			"\\axeV"
-		]
-	},
-
-
-	"axeV":{
-		"prefix":"axeV",
-		"body":[
-			"\\axeV[${1:label}]"
 		]
 	},
 
@@ -97,26 +81,10 @@
 	},
 
 
-	"tickX":{
-		"prefix":"tickX",
-		"body":[
-			"\\tickX[${1:graduation}]"
-		]
-	},
-
-
 	"tickY":{
 		"prefix":"tickY",
 		"body":[
 			"\\tickY"
-		]
-	},
-
-
-	"tickY":{
-		"prefix":"tickY",
-		"body":[
-			"\\tickY[${1:graduation}]"
 		]
 	},
 
@@ -161,7 +129,7 @@
 	},
 
 
-	"headcoloredbg":{
+	"headcoloredbg{}":{
 		"prefix":"headcoloredbg",
 		"body":[
 			"\\headcoloredbg{${1:color}}"
@@ -169,7 +137,7 @@
 	},
 
 
-	"headcontents":{
+	"headcontents{}":{
 		"prefix":"headcontents",
 		"body":[
 			"\\headcontents{${1:text}}"
@@ -281,82 +249,34 @@
 	},
 
 
-	"method":{
-		"prefix":"method",
+	"axeH[]":{
+		"prefix":"axeH",
 		"body":[
-			"\\begin{method}",
-			"\t$1",
-			"\\end{method}"
+			"\\axeH[${1:label}]"
 		]
 	},
 
 
-	"solutions":{
-		"prefix":"solutions",
+	"axeV[]":{
+		"prefix":"axeV",
 		"body":[
-			"\\begin{solutions}",
-			"\t$1",
-			"\\end{solutions}"
+			"\\axeV[${1:label}]"
 		]
 	},
 
 
-	"windowsratio":{
-		"prefix":"windowsratio",
+	"tickX[]":{
+		"prefix":"tickX",
 		"body":[
-			"\\begin{windowsratio}",
-			"\t$1",
-			"\\end{windowsratio}"
+			"\\tickX[${1:graduation}]"
 		]
 	},
 
 
-	"cours":{
-		"prefix":"cours",
+	"tickY[]":{
+		"prefix":"tickY",
 		"body":[
-			"\\begin{cours}",
-			"\t$1",
-			"\\end{cours}"
-		]
-	},
-
-
-	"obj":{
-		"prefix":"obj",
-		"body":[
-			"\\begin{obj}",
-			"\t$1",
-			"\\end{obj}"
-		]
-	},
-
-
-	"formula":{
-		"prefix":"formula",
-		"body":[
-			"\\begin{formula}",
-			"\t$1",
-			"\\end{formula}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"property":{
-		"prefix":"property",
-		"body":[
-			"\\begin{property}",
-			"\t$1",
-			"\\end{property}"
+			"\\tickY[${1:graduation}]"
 		]
 	},
 
@@ -365,7 +285,7 @@
 		"prefix":"lesson",
 		"body":[
 			"\\begin{lesson}",
-			"\t$1",
+				"\t$1",
 			"\\end{lesson}"
 		]
 	},
@@ -375,8 +295,48 @@
 		"prefix":"activities",
 		"body":[
 			"\\begin{activities}",
-			"\t$1",
+				"\t$1",
 			"\\end{activities}"
+		]
+	},
+
+
+	"exercises":{
+		"prefix":"exercises",
+		"body":[
+			"\\begin{exercises}",
+				"\t$1",
+			"\\end{exercises}"
+		]
+	},
+
+
+	"solutions":{
+		"prefix":"solutions",
+		"body":[
+			"\\begin{solutions}",
+				"\t$1",
+			"\\end{solutions}"
+		]
+	},
+
+
+	"exo":{
+		"prefix":"exo",
+		"body":[
+			"\\begin{exo}",
+				"\t$1",
+			"\\end{exo}"
+		]
+	},
+
+
+	"sol":{
+		"prefix":"sol",
+		"body":[
+			"\\begin{sol}",
+				"\t$1",
+			"\\end{sol}"
 		]
 	},
 
@@ -385,8 +345,28 @@
 		"prefix":"activity",
 		"body":[
 			"\\begin{activity}",
-			"\t$1",
+				"\t$1",
 			"\\end{activity}"
+		]
+	},
+
+
+	"objective":{
+		"prefix":"objective",
+		"body":[
+			"\\begin{objective}",
+				"\t$1",
+			"\\end{objective}"
+		]
+	},
+
+
+	"method":{
+		"prefix":"method",
+		"body":[
+			"\\begin{method}",
+				"\t$1",
+			"\\end{method}"
 		]
 	},
 
@@ -395,8 +375,108 @@
 		"prefix":"theorem",
 		"body":[
 			"\\begin{theorem}",
-			"\t$1",
+				"\t$1",
 			"\\end{theorem}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"formula":{
+		"prefix":"formula",
+		"body":[
+			"\\begin{formula}",
+				"\t$1",
+			"\\end{formula}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"windowsratio":{
+		"prefix":"windowsratio",
+		"body":[
+			"\\begin{windowsratio}",
+				"\t$1",
+			"\\end{windowsratio}"
+		]
+	},
+
+
+	"cours":{
+		"prefix":"cours",
+		"body":[
+			"\\begin{cours}",
+				"\t$1",
+			"\\end{cours}"
+		]
+	},
+
+
+	"defi":{
+		"prefix":"defi",
+		"body":[
+			"\\begin{defi}",
+				"\t$1",
+			"\\end{defi}"
+		]
+	},
+
+
+	"form":{
+		"prefix":"form",
+		"body":[
+			"\\begin{form}",
+				"\t$1",
+			"\\end{form}"
+		]
+	},
+
+
+	"meth":{
+		"prefix":"meth",
+		"body":[
+			"\\begin{meth}",
+				"\t$1",
+			"\\end{meth}"
+		]
+	},
+
+
+	"obj":{
+		"prefix":"obj",
+		"body":[
+			"\\begin{obj}",
+				"\t$1",
+			"\\end{obj}"
 		]
 	},
 
@@ -405,7 +485,7 @@
 		"prefix":"prop",
 		"body":[
 			"\\begin{prop}",
-			"\t$1",
+				"\t$1",
 			"\\end{prop}"
 		]
 	},
@@ -415,7 +495,7 @@
 		"prefix":"Solution",
 		"body":[
 			"\\begin{Solution}",
-			"\t$1",
+				"\t$1",
 			"\\end{Solution}"
 		]
 	},
@@ -425,78 +505,18 @@
 		"prefix":"theo",
 		"body":[
 			"\\begin{theo}",
-			"\t$1",
+				"\t$1",
 			"\\end{theo}"
 		]
 	},
 
 
-	"remark":{
-		"prefix":"remark",
+	"sol*":{
+		"prefix":"*sol",
 		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
-		]
-	},
-
-
-	"meth":{
-		"prefix":"meth",
-		"body":[
-			"\\begin{meth}",
-			"\t$1",
-			"\\end{meth}"
-		]
-	},
-
-
-	"form":{
-		"prefix":"form",
-		"body":[
-			"\\begin{form}",
-			"\t$1",
-			"\\end{form}"
-		]
-	},
-
-
-	"objective":{
-		"prefix":"objective",
-		"body":[
-			"\\begin{objective}",
-			"\t$1",
-			"\\end{objective}"
-		]
-	},
-
-
-	"exercises":{
-		"prefix":"exercises",
-		"body":[
-			"\\begin{exercises}",
-			"\t$1",
-			"\\end{exercises}"
-		]
-	},
-
-
-	"sol":{
-		"prefix":"sol",
-		"body":[
-			"\\begin{sol}",
-			"\t$1",
-			"\\end{sol}"
-		]
-	},
-
-
-	"defi":{
-		"prefix":"defi",
-		"body":[
-			"\\begin{defi}",
-			"\t$1",
-			"\\end{defi}"
+			"\\begin{sol*}",
+				"\t$1",
+			"\\end{sol*}"
 		]
 	},
 
@@ -505,18 +525,78 @@
 		"prefix":"exo",
 		"body":[
 			"\\begin{exo}",
-			"\t$1",
+				"\t$1",
 			"\\end{exo}"
 		]
 	},
 
 
-	"sol*":{
-		"prefix":"sol*",
+	"method":{
+		"prefix":"method",
 		"body":[
-			"\\begin{sol*}",
-			"\t$1",
-			"\\end{sol*}"
+			"\\begin{method}",
+				"\t$1",
+			"\\end{method}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"formula":{
+		"prefix":"formula",
+		"body":[
+			"\\begin{formula}",
+				"\t$1",
+			"\\end{formula}"
+		]
+	},
+
+
+	"windowsratio":{
+		"prefix":"windowsratio",
+		"body":[
+			"\\begin{windowsratio}",
+				"\t$1",
+			"\\end{windowsratio}"
+		]
+	},
+
+
+	"cours":{
+		"prefix":"cours",
+		"body":[
+			"\\begin{cours}",
+				"\t$1",
+			"\\end{cours}"
 		]
 	}
 }

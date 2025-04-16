@@ -1,7 +1,7 @@
 {
 
 
-	"todo":{
+	"todo{}":{
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"todo":{
-		"prefix":"todo",
-		"body":[
-			"\\todo[${2:options%keyvals}]{${1:text%todo}}"
-		]
-	},
-
-
-	"setuptodonotes":{
+	"setuptodonotes{}":{
 		"prefix":"setuptodonotes",
 		"body":[
 			"\\setuptodonotes{${1:options%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"todostyle":{
+	"todostyle{}{}":{
 		"prefix":"todostyle",
 		"body":[
 			"\\todostyle{${1:name%specialDef}}{${2:options%keyvals}}"
@@ -33,18 +25,10 @@
 	},
 
 
-	"missingfigure":{
+	"missingfigure{}":{
 		"prefix":"missingfigure",
 		"body":[
 			"\\missingfigure{${1:text%todo}}"
-		]
-	},
-
-
-	"missingfigure":{
-		"prefix":"missingfigure",
-		"body":[
-			"\\missingfigure[${2:options%keyvals}]{${1:text%todo}}"
 		]
 	},
 
@@ -57,14 +41,6 @@
 	},
 
 
-	"listoftodos":{
-		"prefix":"listoftodos",
-		"body":[
-			"\\listoftodos[${1:name}]"
-		]
-	},
-
-
 	"todototoc":{
 		"prefix":"todototoc",
 		"body":[
@@ -73,10 +49,34 @@
 	},
 
 
-	"todoformat":{
+	"todoformat{}":{
 		"prefix":"todoformat",
 		"body":[
 			"\\todoformat{${1:arg}}"
+		]
+	},
+
+
+	"todo[]{}":{
+		"prefix":"todo",
+		"body":[
+			"\\todo[${2:options%keyvals}]{${1:text%todo}}"
+		]
+	},
+
+
+	"missingfigure[]{}":{
+		"prefix":"missingfigure",
+		"body":[
+			"\\missingfigure[${2:options%keyvals}]{${1:text%todo}}"
+		]
+	},
+
+
+	"listoftodos[]":{
+		"prefix":"listoftodos",
+		"body":[
+			"\\listoftodos[${1:name}]"
 		]
 	}
 }

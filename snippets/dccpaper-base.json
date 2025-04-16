@@ -1,7 +1,7 @@
 {
 
 
-	"accepted":{
+	"accepted{}":{
 		"prefix":"accepted",
 		"body":[
 			"\\accepted{${1:date}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"affil":{
+	"affil{}":{
 		"prefix":"affil",
 		"body":[
 			"\\affil{${1:name}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"conference":{
+	"conference{}":{
 		"prefix":"conference",
 		"body":[
 			"\\conference{${1:name of conference}}"
@@ -73,15 +73,7 @@
 	},
 
 
-	"conference*":{
-		"prefix":"conference*",
-		"body":[
-			"\\conference*{${1:name of conference}}"
-		]
-	},
-
-
-	"doi":{
+	"doi{}":{
 		"prefix":"doi",
 		"body":[
 			"\\doi{${1:DOI}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email address%URL}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"issue":{
+	"issue{}":{
 		"prefix":"issue",
 		"body":[
 			"\\issue{${1:number}}"
@@ -185,15 +177,7 @@
 	},
 
 
-	"raggedyright":{
-		"prefix":"raggedyright",
-		"body":[
-			"\\raggedyright[${1:length}]"
-		]
-	},
-
-
-	"received":{
+	"received{}":{
 		"prefix":"received",
 		"body":[
 			"\\received{${1:date}}"
@@ -201,7 +185,7 @@
 	},
 
 
-	"revised":{
+	"revised{}":{
 		"prefix":"revised",
 		"body":[
 			"\\revised{${1:date}}"
@@ -209,7 +193,7 @@
 	},
 
 
-	"submitted":{
+	"submitted{}":{
 		"prefix":"submitted",
 		"body":[
 			"\\submitted{${1:date}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"subno":{
+	"subno{}":{
 		"prefix":"subno",
 		"body":[
 			"\\subno{${1:number}}"
@@ -273,14 +257,6 @@
 	},
 
 
-	"title":{
-		"prefix":"title",
-		"body":[
-			"\\title[${2:name%text}]{${1:full version%text}}"
-		]
-	},
-
-
 	"TitleFoot":{
 		"prefix":"TitleFoot",
 		"body":[
@@ -297,7 +273,7 @@
 	},
 
 
-	"volume":{
+	"volume{}":{
 		"prefix":"volume",
 		"body":[
 			"\\volume{${1:number}}"
@@ -537,7 +513,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -577,7 +553,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -609,11 +585,35 @@
 	},
 
 
+	"conference*{}":{
+		"prefix":"*conference",
+		"body":[
+			"\\conference*{${1:name of conference}}"
+		]
+	},
+
+
+	"raggedyright[]":{
+		"prefix":"raggedyright",
+		"body":[
+			"\\raggedyright[${1:length}]"
+		]
+	},
+
+
+	"title[]{}":{
+		"prefix":"title",
+		"body":[
+			"\\title[${2:name%text}]{${1:full version%text}}"
+		]
+	},
+
+
 	"widequote":{
 		"prefix":"widequote",
 		"body":[
 			"\\begin{widequote}",
-			"\t$1",
+				"\t$1",
 			"\\end{widequote}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"psPlot":{
+	"psPlot{}{}{}":{
 		"prefix":"psPlot",
 		"body":[
 			"\\psPlot{${1:x0}}{${2:x1}}{${3:infix expr}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"psPlot":{
-		"prefix":"psPlot",
-		"body":[
-			"\\psPlot[${3:options%keyvals}]{${1:x0}}{${2:x1}}{infi"
-		]
-	},
-
-
-	"parametricPlot":{
+	"parametricPlot{}{}{}{}":{
 		"prefix":"parametricPlot",
 		"body":[
 			"\\parametricPlot{${1:t0}}{${2:t1}}{${3:x(${5:t})}}{${4:y(${6:t})}}"
@@ -25,7 +17,15 @@
 	},
 
 
-	"parametricPlot":{
+	"psPlot[]{}{}{infi":{
+		"prefix":"psPlot",
+		"body":[
+			"\\psPlot[${3:options%keyvals}]{${1:x0}}{${2:x1}}{infi"
+		]
+	},
+
+
+	"parametricPlot[]{}{}{}{}":{
 		"prefix":"parametricPlot",
 		"body":[
 			"\\parametricPlot[${5:options}]{${1:t0}}{${2:t1}}{${3:x(${6:t})}}{${4:y(${7:t})}}"

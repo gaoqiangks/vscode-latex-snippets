@@ -1,7 +1,7 @@
 {
 
 
-	"readhanja":{
+	"readhanja{}":{
 		"prefix":"readhanja",
 		"body":[
 			"\\readhanja{${1:hanja}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"readhanja":{
-		"prefix":"readhanja",
-		"body":[
-			"\\readhanja{${1:hanja}}[${2:number}]"
-		]
-	},
-
-
-	"readhanjaword":{
+	"readhanjaword{}":{
 		"prefix":"readhanjaword",
 		"body":[
 			"\\readhanjaword{${1:hanja}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"rwhanja":{
+	"rwhanja{}":{
 		"prefix":"rwhanja",
 		"body":[
 			"\\rwhanja{${1:hanja}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"AssignReading":{
+	"AssignReading{}{}":{
 		"prefix":"AssignReading",
 		"body":[
 			"\\AssignReading{${1:hanja}}{${2:reading}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"rpSetReading":{
+	"rpSetReading{}":{
 		"prefix":"rpSetReading",
 		"body":[
 			"\\rpSetReading{${1:hanja=reading}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"grrwhanja":{
+	"grrwhanja{}":{
 		"prefix":"grrwhanja",
 		"body":[
 			"\\grrwhanja{${1:hanja}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"rwhanjachar":{
+	"rwhanjachar{}":{
 		"prefix":"rwhanjachar",
 		"body":[
 			"\\rwhanjachar{${1:hanja}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"rpRead":{
+	"rpRead{}":{
 		"prefix":"rpRead",
 		"body":[
 			"\\rpRead{${1:options}}"
@@ -73,15 +65,7 @@
 	},
 
 
-	"rpRead":{
-		"prefix":"rpRead",
-		"body":[
-			"\\rpRead{${1:options}}[${2:hanja=reading}]"
-		]
-	},
-
-
-	"viewCodePoint":{
+	"viewCodePoint{}":{
 		"prefix":"viewCodePoint",
 		"body":[
 			"\\viewCodePoint{${1:unicode char}}"
@@ -89,18 +73,34 @@
 	},
 
 
-	"viewCodePoint*":{
-		"prefix":"viewCodePoint*",
+	"showReadings{}":{
+		"prefix":"showReadings",
+		"body":[
+			"\\showReadings{${1:hanja}}"
+		]
+	},
+
+
+	"viewCodePoint*{}":{
+		"prefix":"*viewCodePoint",
 		"body":[
 			"\\viewCodePoint*{${1:unicode char}}"
 		]
 	},
 
 
-	"showReadings":{
-		"prefix":"showReadings",
+	"readhanja{}[]":{
+		"prefix":"readhanja",
 		"body":[
-			"\\showReadings{${1:hanja}}"
+			"\\readhanja{${1:hanja}}[${2:number}]"
+		]
+	},
+
+
+	"rpRead{}[]":{
+		"prefix":"rpRead",
+		"body":[
+			"\\rpRead{${1:options}}[${2:hanja=reading}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"mcfinput":{
+	"mcfinput{}":{
 		"prefix":"mcfinput",
 		"body":[
 			"\\mcfinput{${1:file}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mcfpush":{
+	"mcfpush{}{}{}{}":{
 		"prefix":"mcfpush",
 		"body":[
 			"\\mcfpush{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"mcfpush":{
-		"prefix":"mcfpush",
-		"body":[
-			"\\mcfpush[${5:length}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
-		]
-	},
-
-
-	"mcfpush":{
-		"prefix":"mcfpush",
-		"body":[
-			"\\mcfpush[${5:length1}][${6:length2}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
-		]
-	},
-
-
-	"mcfabove":{
+	"mcfabove{}{}":{
 		"prefix":"mcfabove",
 		"body":[
 			"\\mcfabove{${1:arg1}}{${2:arg2}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"mcfaboveright":{
+	"mcfaboveright{}{}{}":{
 		"prefix":"mcfaboveright",
 		"body":[
 			"\\mcfaboveright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"mcfatomno":{
+	"mcfatomno{}":{
 		"prefix":"mcfatomno",
 		"body":[
 			"\\mcfatomno{${1:number}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"mcfbelow":{
+	"mcfbelow{}{}":{
 		"prefix":"mcfbelow",
 		"body":[
 			"\\mcfbelow{${1:arg1}}{${2:arg2}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"mcfbelowright":{
+	"mcfbelowright{}{}{}":{
 		"prefix":"mcfbelowright",
 		"body":[
 			"\\mcfbelowright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"mcfcringle":{
+	"mcfcringle{}":{
 		"prefix":"mcfcringle",
 		"body":[
 			"\\mcfcringle{${1:arg}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"mcfelmove":{
-		"prefix":"mcfelmove",
-		"body":[
-			"\\mcfelmove[${5:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
-	},
-
-
-	"mcfelmove":{
+	"mcfelmove{}{}{}{}":{
 		"prefix":"mcfelmove",
 		"body":[
 			"\\mcfelmove{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"mcfleft":{
+	"mcfleft{}{}":{
 		"prefix":"mcfleft",
 		"body":[
 			"\\mcfleft{${1:arg1}}{${2:arg2}}"
@@ -121,7 +97,7 @@
 	},
 
 
-	"mcfright":{
+	"mcfright{}{}":{
 		"prefix":"mcfright",
 		"body":[
 			"\\mcfright{${1:arg1}}{${2:arg2}}"
@@ -133,6 +109,30 @@
 		"prefix":"mcfvspace",
 		"body":[
 			"\\mcfvspace"
+		]
+	},
+
+
+	"mcfpush[]{}{}{}{}":{
+		"prefix":"mcfpush",
+		"body":[
+			"\\mcfpush[${5:length}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
+		]
+	},
+
+
+	"mcfpush[][]{}{}{}{}":{
+		"prefix":"mcfpush",
+		"body":[
+			"\\mcfpush[${5:length1}][${6:length2}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
+		]
+	},
+
+
+	"mcfelmove[]{}{}{}{}":{
+		"prefix":"mcfelmove",
+		"body":[
+			"\\mcfelmove[${5:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
 		]
 	}
 }

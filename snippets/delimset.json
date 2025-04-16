@@ -9,7 +9,7 @@
 	},
 
 
-	"kerndelim":{
+	"kerndelim{}":{
 		"prefix":"kerndelim",
 		"body":[
 			"\\kerndelim{${1:width}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"DeclareMathDelimiterSet":{
+	"DeclareMathDelimiterSet{}{}":{
 		"prefix":"DeclareMathDelimiterSet",
 		"body":[
 			"\\DeclareMathDelimiterSet{${1:command}}{${2:definition}}"
@@ -33,15 +33,7 @@
 	},
 
 
-	"DeclareMathDelimiterSet":{
-		"prefix":"DeclareMathDelimiterSet",
-		"body":[
-			"\\DeclareMathDelimiterSet{${1:command}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"selectdeliml":{
+	"selectdeliml{}":{
 		"prefix":"selectdeliml",
 		"body":[
 			"\\selectdeliml{${1:delim}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"selectdeliml*":{
-		"prefix":"selectdeliml*",
-		"body":[
-			"\\selectdeliml*{${1:delim}}"
-		]
-	},
-
-
-	"selectdelim":{
+	"selectdelim{}":{
 		"prefix":"selectdelim",
 		"body":[
 			"\\selectdelim{${1:delim}}"
@@ -65,31 +49,7 @@
 	},
 
 
-	"selectdelim*":{
-		"prefix":"selectdelim*",
-		"body":[
-			"\\selectdelim*{${1:delim}}"
-		]
-	},
-
-
-	"selectdelim":{
-		"prefix":"selectdelim",
-		"body":[
-			"\\selectdelim[${2:class%plain}]{${1:delim}}"
-		]
-	},
-
-
-	"selectdelim":{
-		"prefix":"selectdelim",
-		"body":[
-			"\\selectdelim[${2:class%plain}]*{${1:delim}}"
-		]
-	},
-
-
-	"selectdelimr":{
+	"selectdelimr{}":{
 		"prefix":"selectdelimr",
 		"body":[
 			"\\selectdelimr{${1:delim}}"
@@ -97,15 +57,7 @@
 	},
 
 
-	"selectdelimr*":{
-		"prefix":"selectdelimr*",
-		"body":[
-			"\\selectdelimr*{${1:delim}}"
-		]
-	},
-
-
-	"DeclareMathDelimiterSel":{
+	"DeclareMathDelimiterSel{}{}{}":{
 		"prefix":"DeclareMathDelimiterSel",
 		"body":[
 			"\\DeclareMathDelimiterSel{${1:command}}{${2:left-def%definition}}{${3:right-def%definition}}"
@@ -113,7 +65,7 @@
 	},
 
 
-	"parsedelimflags":{
+	"parsedelimflags{}{}":{
 		"prefix":"parsedelimflags",
 		"body":[
 			"\\parsedelimflags{${1:compositor}}{${2:selector}}"
@@ -213,6 +165,54 @@
 		"prefix":"Biggi",
 		"body":[
 			"\\Biggi"
+		]
+	},
+
+
+	"selectdeliml*{}":{
+		"prefix":"*selectdeliml",
+		"body":[
+			"\\selectdeliml*{${1:delim}}"
+		]
+	},
+
+
+	"selectdelim*{}":{
+		"prefix":"*selectdelim",
+		"body":[
+			"\\selectdelim*{${1:delim}}"
+		]
+	},
+
+
+	"selectdelimr*{}":{
+		"prefix":"*selectdelimr",
+		"body":[
+			"\\selectdelimr*{${1:delim}}"
+		]
+	},
+
+
+	"DeclareMathDelimiterSet{}[]{}":{
+		"prefix":"DeclareMathDelimiterSet",
+		"body":[
+			"\\DeclareMathDelimiterSet{${1:command}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"selectdelim[]{}":{
+		"prefix":"selectdelim",
+		"body":[
+			"\\selectdelim[${2:class%plain}]{${1:delim}}"
+		]
+	},
+
+
+	"selectdelim[]*{}":{
+		"prefix":"selectdelim",
+		"body":[
+			"\\selectdelim[${2:class%plain}]*{${1:delim}}"
 		]
 	}
 }

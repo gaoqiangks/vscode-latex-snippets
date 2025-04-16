@@ -17,20 +17,10 @@
 	},
 
 
-	"linenumberstyle":{
+	"linenumberstyle{}":{
 		"prefix":"linenumberstyle",
 		"body":[
 			"\\linenumberstyle{${1:number}}"
-		]
-	},
-
-
-	"prooftree":{
-		"prefix":"prooftree",
-		"body":[
-			"\\begin{prooftree}",
-			"\t$1",
-			"\\end{prooftree}"
 		]
 	},
 
@@ -39,8 +29,28 @@
 		"prefix":"tableau",
 		"body":[
 			"\\begin{tableau}",
-			"\t$1",
+				"\t$1",
 			"\\end{tableau}"
+		]
+	},
+
+
+	"tableau":{
+		"prefix":"tableau",
+		"body":[
+			"\\begin{tableau}",
+				"\t$1",
+			"\\end{tableau}"
+		]
+	},
+
+
+	"prooftree":{
+		"prefix":"prooftree",
+		"body":[
+			"\\begin{prooftree}",
+				"\t$1",
+			"\\end{prooftree}"
 		]
 	}
 }

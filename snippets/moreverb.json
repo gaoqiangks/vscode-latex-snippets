@@ -1,18 +1,10 @@
 {
 
 
-	"verbatimtabinput":{
+	"verbatimtabinput{}":{
 		"prefix":"verbatimtabinput",
 		"body":[
 			"\\verbatimtabinput{${1:file}}"
-		]
-	},
-
-
-	"verbatimtabinput":{
-		"prefix":"verbatimtabinput",
-		"body":[
-			"\\verbatimtabinput[${2:tab width}]{${1:file}}"
 		]
 	},
 
@@ -33,18 +25,10 @@
 	},
 
 
-	"listinginput":{
+	"listinginput{}{}":{
 		"prefix":"listinginput",
 		"body":[
 			"\\listinginput{${1:start line}}{${2:file}}"
-		]
-	},
-
-
-	"listinginput":{
-		"prefix":"listinginput",
-		"body":[
-			"\\listinginput[${3:interval}]{${1:start line}}{${2:file}}"
 		]
 	},
 
@@ -57,22 +41,18 @@
 	},
 
 
-	"listing*":{
-		"prefix":"listing*",
+	"verbatimtabinput[]{}":{
+		"prefix":"verbatimtabinput",
 		"body":[
-			"\\begin{listing*}",
-			"\t$1",
-			"\\end{listing*}"
+			"\\verbatimtabinput[${2:tab width}]{${1:file}}"
 		]
 	},
 
 
-	"listing":{
-		"prefix":"listing",
+	"listinginput[]{}{}":{
+		"prefix":"listinginput",
 		"body":[
-			"\\begin{listing}",
-			"\t$1",
-			"\\end{listing}"
+			"\\listinginput[${3:interval}]{${1:start line}}{${2:file}}"
 		]
 	},
 
@@ -81,28 +61,28 @@
 		"prefix":"verbatimtab",
 		"body":[
 			"\\begin{verbatimtab}",
-			"\t$1",
+				"\t$1",
 			"\\end{verbatimtab}"
 		]
 	},
 
 
-	"boxedverbatim":{
-		"prefix":"boxedverbatim",
+	"listing":{
+		"prefix":"listing",
 		"body":[
-			"\\begin{boxedverbatim}",
-			"\t$1",
-			"\\end{boxedverbatim}"
+			"\\begin{listing}",
+				"\t$1",
+			"\\end{listing}"
 		]
 	},
 
 
-	"verbatimwrite":{
-		"prefix":"verbatimwrite",
+	"listing*":{
+		"prefix":"listing",
 		"body":[
-			"\\begin{verbatimwrite}",
-			"\t$1",
-			"\\end{verbatimwrite}"
+			"\\begin{listing*}",
+				"\t$1",
+			"\\end{listing*}"
 		]
 	},
 
@@ -111,18 +91,68 @@
 		"prefix":"listingcont",
 		"body":[
 			"\\begin{listingcont}",
-			"\t$1",
+				"\t$1",
 			"\\end{listingcont}"
 		]
 	},
 
 
+	"verbatimwrite":{
+		"prefix":"verbatimwrite",
+		"body":[
+			"\\begin{verbatimwrite}",
+				"\t$1",
+			"\\end{verbatimwrite}"
+		]
+	},
+
+
+	"boxedverbatim":{
+		"prefix":"boxedverbatim",
+		"body":[
+			"\\begin{boxedverbatim}",
+				"\t$1",
+			"\\end{boxedverbatim}"
+		]
+	},
+
+
 	"listingcont*":{
-		"prefix":"listingcont*",
+		"prefix":"*listingcont",
 		"body":[
 			"\\begin{listingcont*}",
-			"\t$1",
+				"\t$1",
 			"\\end{listingcont*}"
+		]
+	},
+
+
+	"verbatimtab":{
+		"prefix":"verbatimtab",
+		"body":[
+			"\\begin{verbatimtab}",
+				"\t$1",
+			"\\end{verbatimtab}"
+		]
+	},
+
+
+	"listing":{
+		"prefix":"listing",
+		"body":[
+			"\\begin{listing}",
+				"\t$1",
+			"\\end{listing}"
+		]
+	},
+
+
+	"listing*":{
+		"prefix":"listing",
+		"body":[
+			"\\begin{listing*}",
+				"\t$1",
+			"\\end{listing*}"
 		]
 	}
 }

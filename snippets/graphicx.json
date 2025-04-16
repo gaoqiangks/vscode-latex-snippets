@@ -1,7 +1,7 @@
 {
 
 
-	"DeclareGraphicsExtensions":{
+	"DeclareGraphicsExtensions{}":{
 		"prefix":"DeclareGraphicsExtensions",
 		"body":[
 			"\\DeclareGraphicsExtensions{${1:ext-list}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"DeclareGraphicsRule":{
+	"DeclareGraphicsRule{}{}{}{}":{
 		"prefix":"DeclareGraphicsRule",
 		"body":[
 			"\\DeclareGraphicsRule{${1:ext}}{${2:type}}{${3:read-file}}{${4:command%plain}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"graphicspath":{
+	"graphicspath{}":{
 		"prefix":"graphicspath",
 		"body":[
 			"\\graphicspath{${1:dir-list%definition}}"
@@ -25,23 +25,7 @@
 	},
 
 
-	"includegraphics*":{
-		"prefix":"includegraphics*",
-		"body":[
-			"\\includegraphics*{${1:imagefile}}"
-		]
-	},
-
-
-	"includegraphics*":{
-		"prefix":"includegraphics*",
-		"body":[
-			"\\includegraphics*[${2:keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"reflectbox":{
+	"reflectbox{}":{
 		"prefix":"reflectbox",
 		"body":[
 			"\\reflectbox{${1:text}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"resizebox*":{
-		"prefix":"resizebox*",
-		"body":[
-			"\\resizebox*{${1:h-length%l}}{${2:v-length%l}}{${3:text}}"
-		]
-	},
-
-
-	"resizebox":{
+	"resizebox{}{}{}":{
 		"prefix":"resizebox",
 		"body":[
 			"\\resizebox{${1:h-length%l}}{${2:v-length%l}}{${3:text}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"rotatebox":{
-		"prefix":"rotatebox",
-		"body":[
-			"\\rotatebox[${3:keyvals}]{${1:angle}}{${2:text}}"
-		]
-	},
-
-
-	"rotatebox":{
+	"rotatebox{}{}":{
 		"prefix":"rotatebox",
 		"body":[
 			"\\rotatebox{${1:angle}}{${2:text}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"scalebox":{
+	"scalebox{}{}":{
 		"prefix":"scalebox",
 		"body":[
 			"\\scalebox{${1:h-scale}}{${2:text}}"
@@ -89,7 +57,39 @@
 	},
 
 
-	"scalebox":{
+	"includegraphics*{}":{
+		"prefix":"*includegraphics",
+		"body":[
+			"\\includegraphics*{${1:imagefile}}"
+		]
+	},
+
+
+	"includegraphics*[]{}":{
+		"prefix":"*includegraphics",
+		"body":[
+			"\\includegraphics*[${2:keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"resizebox*{}{}{}":{
+		"prefix":"*resizebox",
+		"body":[
+			"\\resizebox*{${1:h-length%l}}{${2:v-length%l}}{${3:text}}"
+		]
+	},
+
+
+	"rotatebox[]{}{}":{
+		"prefix":"rotatebox",
+		"body":[
+			"\\rotatebox[${3:keyvals}]{${1:angle}}{${2:text}}"
+		]
+	},
+
+
+	"scalebox{}[]{}":{
 		"prefix":"scalebox",
 		"body":[
 			"\\scalebox{${1:h-scale}}[${3:v-scale}]{${2:text}}"

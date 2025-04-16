@@ -9,7 +9,7 @@
 	},
 
 
-	"no":{
+	"no{}":{
 		"prefix":"no",
 		"body":[
 			"\\no{${1:number}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"software":{
+	"software{}":{
 		"prefix":"software",
 		"body":[
 			"\\software{${1:name}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"software":{
-		"prefix":"software",
-		"body":[
-			"\\software[${2:version}]{${1:name}}"
-		]
-	},
-
-
-	"online":{
+	"online{}{}":{
 		"prefix":"online",
 		"body":[
 			"\\online{${1:URL}}{${2:text%plain}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"prefix":{
+	"prefix{}{}":{
 		"prefix":"prefix",
 		"body":[
 			"\\prefix{${1:prefix}}{${2:word%text}}"
@@ -497,32 +489,20 @@
 	},
 
 
+	"software[]{}":{
+		"prefix":"software",
+		"body":[
+			"\\software[${2:version}]{${1:name}}"
+		]
+	},
+
+
 	"inlinelist":{
 		"prefix":"inlinelist",
 		"body":[
 			"\\begin{inlinelist}",
-			"\t$1",
+				"\t$1",
 			"\\end{inlinelist}"
-		]
-	},
-
-
-	"enumerate*":{
-		"prefix":"enumerate*",
-		"body":[
-			"\\begin{enumerate*}",
-			"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize*",
-		"body":[
-			"\\begin{itemize*}",
-			"\t$1",
-			"\\end{itemize*}"
 		]
 	},
 
@@ -531,17 +511,87 @@
 		"prefix":"enumdescript",
 		"body":[
 			"\\begin{enumdescript}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumdescript}"
 		]
 	},
 
 
+	"enumerate*":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
 	"description*":{
-		"prefix":"description*",
+		"prefix":"*description",
 		"body":[
 			"\\begin{description*}",
-			"\t$1",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"inlinelist":{
+		"prefix":"inlinelist",
+		"body":[
+			"\\begin{inlinelist}",
+				"\t$1",
+			"\\end{inlinelist}"
+		]
+	},
+
+
+	"enumdescript":{
+		"prefix":"enumdescript",
+		"body":[
+			"\\begin{enumdescript}",
+				"\t$1",
+			"\\end{enumdescript}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
 			"\\end{description*}"
 		]
 	}

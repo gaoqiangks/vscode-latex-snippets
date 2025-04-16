@@ -1,7 +1,7 @@
 {
 
 
-	"fetchJson":{
+	"fetchJson{}":{
 		"prefix":"fetchJson",
 		"body":[
 			"\\fetchJson{${1:URL}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"fetchJson":{
-		"prefix":"fetchJson",
-		"body":[
-			"\\fetchJson{${1:URL}}[${2:key1,key2,...}]"
-		]
-	},
-
-
-	"fetchJsonUsingFile":{
+	"fetchJsonUsingFile{}":{
 		"prefix":"fetchJsonUsingFile",
 		"body":[
 			"\\fetchJsonUsingFile{${1:JSON file%file}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"fetchJsonUsingFile":{
-		"prefix":"fetchJsonUsingFile",
-		"body":[
-			"\\fetchJsonUsingFile{${1:JSON file%file}}[${2:key1,key2,...}]"
-		]
-	},
-
-
-	"fetchJsonUsingQuery":{
+	"fetchJsonUsingQuery{}{}":{
 		"prefix":"fetchJsonUsingQuery",
 		"body":[
 			"\\fetchJsonUsingQuery{${1:URL}}{${2:key1,key2,...}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"fetchRss":{
+	"fetchRss{}{}":{
 		"prefix":"fetchRss",
 		"body":[
 			"\\fetchRss{${1:URL}}{${2:limit}}"
@@ -49,23 +33,7 @@
 	},
 
 
-	"fetchRss":{
-		"prefix":"fetchRss",
-		"body":[
-			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}]"
-		]
-	},
-
-
-	"fetchRss":{
-		"prefix":"fetchRss",
-		"body":[
-			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}][${4:entrykey1,...}]"
-		]
-	},
-
-
-	"fetchImage":{
+	"fetchImage{}":{
 		"prefix":"fetchImage",
 		"body":[
 			"\\fetchImage{${1:URL}}"
@@ -73,7 +41,39 @@
 	},
 
 
-	"fetchImage":{
+	"fetchJson{}[]":{
+		"prefix":"fetchJson",
+		"body":[
+			"\\fetchJson{${1:URL}}[${2:key1,key2,...}]"
+		]
+	},
+
+
+	"fetchJsonUsingFile{}[]":{
+		"prefix":"fetchJsonUsingFile",
+		"body":[
+			"\\fetchJsonUsingFile{${1:JSON file%file}}[${2:key1,key2,...}]"
+		]
+	},
+
+
+	"fetchRss{}{}[]":{
+		"prefix":"fetchRss",
+		"body":[
+			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}]"
+		]
+	},
+
+
+	"fetchRss{}{}[][]":{
+		"prefix":"fetchRss",
+		"body":[
+			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}][${4:entrykey1,...}]"
+		]
+	},
+
+
+	"fetchImage{}[]":{
 		"prefix":"fetchImage",
 		"body":[
 			"\\fetchImage{${1:URL}}[${2:width in cm}]"
@@ -81,7 +81,7 @@
 	},
 
 
-	"fetchImage":{
+	"fetchImage{}[][]":{
 		"prefix":"fetchImage",
 		"body":[
 			"\\fetchImage{${1:URL}}[${2:width in cm}][${3:height in cm}]"

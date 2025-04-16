@@ -1,7 +1,7 @@
 {
 
 
-	"EANControlDigit":{
+	"EANControlDigit{}":{
 		"prefix":"EANControlDigit",
 		"body":[
 			"\\EANControlDigit{${1:string}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"EANBarcode":{
+	"EANBarcode{}":{
 		"prefix":"EANBarcode",
 		"body":[
 			"\\EANBarcode{${1:string}}"
@@ -17,18 +17,18 @@
 	},
 
 
-	"EANBarcode":{
-		"prefix":"EANBarcode",
+	"GSSetup{}":{
+		"prefix":"GSSetup",
 		"body":[
-			"\\EANBarcode[${2:options%keyvals}]{${1:string}}"
+			"\\GSSetup{${1:options%keyvals}}"
 		]
 	},
 
 
-	"GSSetup":{
-		"prefix":"GSSetup",
+	"EANBarcode[]{}":{
+		"prefix":"EANBarcode",
 		"body":[
-			"\\GSSetup{${1:options%keyvals}}"
+			"\\EANBarcode[${2:options%keyvals}]{${1:string}}"
 		]
 	}
 }

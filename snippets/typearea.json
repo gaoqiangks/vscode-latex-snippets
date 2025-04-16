@@ -1,7 +1,7 @@
 {
 
 
-	"PaperNameToSize":{
+	"PaperNameToSize{}":{
 		"prefix":"PaperNameToSize",
 		"body":[
 			"\\PaperNameToSize{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ProvideUnknownPaperSizeError":{
+	"ProvideUnknownPaperSizeError{}{}":{
 		"prefix":"ProvideUnknownPaperSizeError",
 		"body":[
 			"\\ProvideUnknownPaperSizeError{${1:type}}{${2:code}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"isopaper":{
+	"isopaper{}":{
 		"prefix":"isopaper",
 		"body":[
 			"\\isopaper{${1:number}}"
@@ -25,26 +25,10 @@
 	},
 
 
-	"isopaper":{
-		"prefix":"isopaper",
-		"body":[
-			"\\isopaper[${2:letter}]{${1:number}}"
-		]
-	},
-
-
-	"AfterCalculatingTypearea":{
+	"AfterCalculatingTypearea{}":{
 		"prefix":"AfterCalculatingTypearea",
 		"body":[
 			"\\AfterCalculatingTypearea{${1:code}}"
-		]
-	},
-
-
-	"AfterCalculatingTypearea*":{
-		"prefix":"AfterCalculatingTypearea*",
-		"body":[
-			"\\AfterCalculatingTypearea*{${1:code}}"
 		]
 	},
 
@@ -57,18 +41,10 @@
 	},
 
 
-	"typearea":{
+	"typearea{}":{
 		"prefix":"typearea",
 		"body":[
 			"\\typearea{${1:DIV}}"
-		]
-	},
-
-
-	"typearea":{
-		"prefix":"typearea",
-		"body":[
-			"\\typearea[${2:BCOR}]{${1:DIV}}"
 		]
 	},
 
@@ -81,7 +57,7 @@
 	},
 
 
-	"storeareas":{
+	"storeareas{}":{
 		"prefix":"storeareas",
 		"body":[
 			"\\storeareas{${1:command}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"BeforeRestoreareas":{
+	"BeforeRestoreareas{}":{
 		"prefix":"BeforeRestoreareas",
 		"body":[
 			"\\BeforeRestoreareas{${1:code}}"
@@ -97,15 +73,7 @@
 	},
 
 
-	"BeforeRestoreareas*":{
-		"prefix":"BeforeRestoreareas*",
-		"body":[
-			"\\BeforeRestoreareas*{${1:code}}"
-		]
-	},
-
-
-	"AfterRestoreareas":{
+	"AfterRestoreareas{}":{
 		"prefix":"AfterRestoreareas",
 		"body":[
 			"\\AfterRestoreareas{${1:code}}"
@@ -113,15 +81,7 @@
 	},
 
 
-	"AfterRestoreareas*":{
-		"prefix":"AfterRestoreareas*",
-		"body":[
-			"\\AfterRestoreareas*{${1:code}}"
-		]
-	},
-
-
-	"areaset":{
+	"areaset{}{}":{
 		"prefix":"areaset",
 		"body":[
 			"\\areaset{${1:width}}{${2:height}}"
@@ -129,26 +89,10 @@
 	},
 
 
-	"areaset":{
-		"prefix":"areaset",
-		"body":[
-			"\\areaset[${3:BCOR}]{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"AfterSettingArea":{
+	"AfterSettingArea{}":{
 		"prefix":"AfterSettingArea",
 		"body":[
 			"\\AfterSettingArea{${1:code}}"
-		]
-	},
-
-
-	"AfterSettingArea*":{
-		"prefix":"AfterSettingArea*",
-		"body":[
-			"\\AfterSettingArea*{${1:code}}"
 		]
 	},
 
@@ -157,6 +101,62 @@
 		"prefix":"footheight",
 		"body":[
 			"\\footheight"
+		]
+	},
+
+
+	"AfterCalculatingTypearea*{}":{
+		"prefix":"*AfterCalculatingTypearea",
+		"body":[
+			"\\AfterCalculatingTypearea*{${1:code}}"
+		]
+	},
+
+
+	"BeforeRestoreareas*{}":{
+		"prefix":"*BeforeRestoreareas",
+		"body":[
+			"\\BeforeRestoreareas*{${1:code}}"
+		]
+	},
+
+
+	"AfterRestoreareas*{}":{
+		"prefix":"*AfterRestoreareas",
+		"body":[
+			"\\AfterRestoreareas*{${1:code}}"
+		]
+	},
+
+
+	"AfterSettingArea*{}":{
+		"prefix":"*AfterSettingArea",
+		"body":[
+			"\\AfterSettingArea*{${1:code}}"
+		]
+	},
+
+
+	"isopaper[]{}":{
+		"prefix":"isopaper",
+		"body":[
+			"\\isopaper[${2:letter}]{${1:number}}"
+		]
+	},
+
+
+	"typearea[]{}":{
+		"prefix":"typearea",
+		"body":[
+			"\\typearea[${2:BCOR}]{${1:DIV}}"
+		]
+	},
+
+
+	"areaset[]{}{}":{
+		"prefix":"areaset",
+		"body":[
+			"\\areaset[${3:BCOR}]{${1:width}}{${2:height}}"
 		]
 	}
 }

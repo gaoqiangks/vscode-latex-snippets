@@ -1,7 +1,7 @@
 {
 
 
-	"sidenote":{
+	"sidenote{}":{
 		"prefix":"sidenote",
 		"body":[
 			"\\sidenote{${1:text}}"
@@ -9,34 +9,10 @@
 	},
 
 
-	"sidenote":{
-		"prefix":"sidenote",
-		"body":[
-			"\\sidenote[${2:mark}]{${1:text}}"
-		]
-	},
-
-
-	"sidenote":{
+	"sidenote(){}":{
 		"prefix":"sidenote",
 		"body":[
 			"\\sidenote(${2:offset}){${1:text}}"
-		]
-	},
-
-
-	"sidenote":{
-		"prefix":"sidenote",
-		"body":[
-			"\\sidenote(${3:offset})[${2:mark}]{${1:text}}"
-		]
-	},
-
-
-	"sidenote":{
-		"prefix":"sidenote",
-		"body":[
-			"\\sidenote[${2:offset}][${3:mark}]{${1:text}}"
 		]
 	},
 
@@ -49,15 +25,7 @@
 	},
 
 
-	"sidenotemark":{
-		"prefix":"sidenotemark",
-		"body":[
-			"\\sidenotemark[${1:mark}]"
-		]
-	},
-
-
-	"sidenotetext":{
+	"sidenotetext{}":{
 		"prefix":"sidenotetext",
 		"body":[
 			"\\sidenotetext{${1:text}}"
@@ -65,15 +33,7 @@
 	},
 
 
-	"sidenotetext":{
-		"prefix":"sidenotetext",
-		"body":[
-			"\\sidenotetext[${2:mark}]{${1:text}}"
-		]
-	},
-
-
-	"newsnotezfloat":{
+	"newsnotezfloat{}":{
 		"prefix":"newsnotezfloat",
 		"body":[
 			"\\newsnotezfloat{${1:name}}"
@@ -81,18 +41,58 @@
 	},
 
 
-	"newsnotezfloat":{
-		"prefix":"newsnotezfloat",
+	"setsidenotes{}":{
+		"prefix":"setsidenotes",
 		"body":[
-			"\\newsnotezfloat[${2:code}]{${1:name}}"
+			"\\setsidenotes{${1:options%keyvals}}"
 		]
 	},
 
 
-	"setsidenotes":{
-		"prefix":"setsidenotes",
+	"sidenote[]{}":{
+		"prefix":"sidenote",
 		"body":[
-			"\\setsidenotes{${1:options%keyvals}}"
+			"\\sidenote[${2:mark}]{${1:text}}"
+		]
+	},
+
+
+	"sidenote()[]{}":{
+		"prefix":"sidenote",
+		"body":[
+			"\\sidenote(${3:offset})[${2:mark}]{${1:text}}"
+		]
+	},
+
+
+	"sidenote[][]{}":{
+		"prefix":"sidenote",
+		"body":[
+			"\\sidenote[${2:offset}][${3:mark}]{${1:text}}"
+		]
+	},
+
+
+	"sidenotemark[]":{
+		"prefix":"sidenotemark",
+		"body":[
+			"\\sidenotemark[${1:mark}]"
+		]
+	},
+
+
+	"sidenotetext[]{}":{
+		"prefix":"sidenotetext",
+		"body":[
+			"\\sidenotetext[${2:mark}]{${1:text}}"
+		]
+	},
+
+
+	"newsnotezfloat[]{}":{
+		"prefix":"newsnotezfloat",
+		"body":[
+			"\\newsnotezfloat[${2:code}]{${1:name}}"
 		]
 	},
 
@@ -101,7 +101,7 @@
 		"prefix":"sidefigure",
 		"body":[
 			"\\begin{sidefigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidefigure}"
 		]
 	},
@@ -111,7 +111,7 @@
 		"prefix":"sidetable",
 		"body":[
 			"\\begin{sidetable}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidetable}"
 		]
 	}

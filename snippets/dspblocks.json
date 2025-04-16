@@ -1,7 +1,7 @@
 {
 
 
-	"BDConnHNext":{
+	"BDConnHNext{}{}":{
 		"prefix":"BDConnHNext",
 		"body":[
 			"\\BDConnHNext{${1:n}}{${2:m}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"BDConnH":{
+	"BDConnH{}{}{}{}":{
 		"prefix":"BDConnH",
 		"body":[
 			"\\BDConnH{${1:n}}{${2:m}}{${3:p}}{${4:label text}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"BDConnH":{
-		"prefix":"BDConnH",
-		"body":[
-			"\\BDConnH[${5:options%keyvals}]{${1:n}}{${2:m}}{${3:p}}{${4:label text}}"
-		]
-	},
-
-
-	"BDConnV":{
+	"BDConnV{}{}{}{}":{
 		"prefix":"BDConnV",
 		"body":[
 			"\\BDConnV{${1:n}}{${2:m}}{${3:q}}{${4:label text}}"
-		]
-	},
-
-
-	"BDConnV":{
-		"prefix":"BDConnV",
-		"body":[
-			"\\BDConnV[${5:options%keyvals}]{${1:n}}{${2:m}}{${3:q}}{${4:label text}}"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"BDdelayN":{
+	"BDdelayN{}":{
 		"prefix":"BDdelayN",
 		"body":[
 			"\\BDdelayN{${1:N}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"BDfilter":{
+	"BDfilter{}":{
 		"prefix":"BDfilter",
 		"body":[
 			"\\BDfilter{${1:label text}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"BDfilterMulti":{
+	"BDfilterMulti{}":{
 		"prefix":"BDfilterMulti",
 		"body":[
 			"\\BDfilterMulti{${1:label text}}"
@@ -109,14 +93,6 @@
 		"prefix":"BDlowpass",
 		"body":[
 			"\\BDlowpass"
-		]
-	},
-
-
-	"BDlowpass":{
-		"prefix":"BDlowpass",
-		"body":[
-			"\\BDlowpass[${1:size%l}]"
 		]
 	},
 
@@ -137,14 +113,6 @@
 	},
 
 
-	"BDsamplerFramed":{
-		"prefix":"BDsamplerFramed",
-		"body":[
-			"\\BDsamplerFramed[${1:size%l}]"
-		]
-	},
-
-
 	"BDsinc":{
 		"prefix":"BDsinc",
 		"body":[
@@ -153,15 +121,7 @@
 	},
 
 
-	"BDsinc":{
-		"prefix":"BDsinc",
-		"body":[
-			"\\BDsinc[${1:size%l}]"
-		]
-	},
-
-
-	"BDupsmp":{
+	"BDupsmp{}":{
 		"prefix":"BDupsmp",
 		"body":[
 			"\\BDupsmp{${1:N}}"
@@ -169,7 +129,7 @@
 	},
 
 
-	"BDdwsmp":{
+	"BDdwsmp{}":{
 		"prefix":"BDdwsmp",
 		"body":[
 			"\\BDdwsmp{${1:N}}"
@@ -193,7 +153,47 @@
 	},
 
 
-	"BDclip":{
+	"BDConnH[]{}{}{}{}":{
+		"prefix":"BDConnH",
+		"body":[
+			"\\BDConnH[${5:options%keyvals}]{${1:n}}{${2:m}}{${3:p}}{${4:label text}}"
+		]
+	},
+
+
+	"BDConnV[]{}{}{}{}":{
+		"prefix":"BDConnV",
+		"body":[
+			"\\BDConnV[${5:options%keyvals}]{${1:n}}{${2:m}}{${3:q}}{${4:label text}}"
+		]
+	},
+
+
+	"BDlowpass[]":{
+		"prefix":"BDlowpass",
+		"body":[
+			"\\BDlowpass[${1:size%l}]"
+		]
+	},
+
+
+	"BDsamplerFramed[]":{
+		"prefix":"BDsamplerFramed",
+		"body":[
+			"\\BDsamplerFramed[${1:size%l}]"
+		]
+	},
+
+
+	"BDsinc[]":{
+		"prefix":"BDsinc",
+		"body":[
+			"\\BDsinc[${1:size%l}]"
+		]
+	},
+
+
+	"BDclip[]":{
 		"prefix":"BDclip",
 		"body":[
 			"\\BDclip[${1:length}]"
@@ -205,7 +205,7 @@
 		"prefix":"dspBlocks",
 		"body":[
 			"\\begin{dspBlocks}",
-			"\t$1",
+				"\t$1",
 			"\\end{dspBlocks}"
 		]
 	}

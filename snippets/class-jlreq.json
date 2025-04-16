@@ -1,26 +1,34 @@
 {
 
 
-	"chapter":{
-		"prefix":"chapter",
+	"thechapter":{
+		"prefix":"thechapter",
 		"body":[
-			"\\chapter{${1:title}}[${2:subtitle%text}]"
+			"\\thechapter"
 		]
 	},
 
 
-	"chapter":{
-		"prefix":"chapter",
+	"frontmatter":{
+		"prefix":"frontmatter",
 		"body":[
-			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+			"\\frontmatter"
 		]
 	},
 
 
-	"chapter*":{
-		"prefix":"chapter*",
+	"mainmatter":{
+		"prefix":"mainmatter",
 		"body":[
-			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+			"\\mainmatter"
+		]
+	},
+
+
+	"backmatter":{
+		"prefix":"backmatter",
+		"body":[
+			"\\backmatter"
 		]
 	},
 
@@ -57,26 +65,10 @@
 	},
 
 
-	"chapter":{
-		"prefix":"chapter",
+	"thechapter":{
+		"prefix":"thechapter",
 		"body":[
-			"\\chapter{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"chapter*":{
-		"prefix":"chapter*",
-		"body":[
-			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+			"\\thechapter"
 		]
 	},
 
@@ -89,95 +81,7 @@
 	},
 
 
-	"frontmatter":{
-		"prefix":"frontmatter",
-		"body":[
-			"\\frontmatter"
-		]
-	},
-
-
-	"mainmatter":{
-		"prefix":"mainmatter",
-		"body":[
-			"\\mainmatter"
-		]
-	},
-
-
-	"backmatter":{
-		"prefix":"backmatter",
-		"body":[
-			"\\backmatter"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"chapter*":{
-		"prefix":"chapter*",
-		"body":[
-			"\\chapter*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"thechapter":{
-		"prefix":"thechapter",
-		"body":[
-			"\\thechapter"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"chapter*":{
-		"prefix":"chapter*",
-		"body":[
-			"\\chapter*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"thechapter":{
-		"prefix":"thechapter",
-		"body":[
-			"\\thechapter"
-		]
-	},
-
-
-	"jlreqsetup":{
+	"jlreqsetup{}":{
 		"prefix":"jlreqsetup",
 		"body":[
 			"\\jlreqsetup{${1:options%keyvals}}"
@@ -185,103 +89,7 @@
 	},
 
 
-	"part":{
-		"prefix":"part",
-		"body":[
-			"\\part{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"part":{
-		"prefix":"part",
-		"body":[
-			"\\part[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"part*":{
-		"prefix":"part*",
-		"body":[
-			"\\part*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"section":{
-		"prefix":"section",
-		"body":[
-			"\\section{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"section":{
-		"prefix":"section",
-		"body":[
-			"\\section[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"section*":{
-		"prefix":"section*",
-		"body":[
-			"\\section*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"subsection":{
-		"prefix":"subsection",
-		"body":[
-			"\\subsection{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"subsection":{
-		"prefix":"subsection",
-		"body":[
-			"\\subsection[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"subsection*":{
-		"prefix":"subsection*",
-		"body":[
-			"\\subsection*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"subsubsection":{
-		"prefix":"subsubsection",
-		"body":[
-			"\\subsubsection{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"subsubsection":{
-		"prefix":"subsubsection",
-		"body":[
-			"\\subsubsection[${2:short title}]{${1:title}}[${3:subtitle%text}]"
-		]
-	},
-
-
-	"subsubsection*":{
-		"prefix":"subsubsection*",
-		"body":[
-			"\\subsubsection*{${1:title}}[${2:subtitle%text}]"
-		]
-	},
-
-
-	"sidenote":{
+	"sidenote{}{}":{
 		"prefix":"sidenote",
 		"body":[
 			"\\sidenote{${1:heading%text}}{${2:text}}"
@@ -289,7 +97,7 @@
 	},
 
 
-	"sidenotemark":{
+	"sidenotemark{}":{
 		"prefix":"sidenotemark",
 		"body":[
 			"\\sidenotemark{${1:heading%text}}"
@@ -297,15 +105,7 @@
 	},
 
 
-	"sidenotemark":{
-		"prefix":"sidenotemark",
-		"body":[
-			"\\sidenotemark[${2:number}]{${1:heading%text}}"
-		]
-	},
-
-
-	"sidenotetext":{
+	"sidenotetext{}{}":{
 		"prefix":"sidenotetext",
 		"body":[
 			"\\sidenotetext{${1:heading%text}}{${2:text}}"
@@ -313,26 +113,10 @@
 	},
 
 
-	"sidenotetext":{
-		"prefix":"sidenotetext",
-		"body":[
-			"\\sidenotetext[${3:number}]{${1:heading%text}}{${2:text}}"
-		]
-	},
-
-
-	"endnote":{
+	"endnote{}":{
 		"prefix":"endnote",
 		"body":[
 			"\\endnote{${1:text}}"
-		]
-	},
-
-
-	"endnote":{
-		"prefix":"endnote",
-		"body":[
-			"\\endnote[${2:number}]{${1:text}}"
 		]
 	},
 
@@ -345,26 +129,10 @@
 	},
 
 
-	"endnotemark":{
-		"prefix":"endnotemark",
-		"body":[
-			"\\endnotemark[${1:number}]"
-		]
-	},
-
-
-	"endnotetext":{
+	"endnotetext{}":{
 		"prefix":"endnotetext",
 		"body":[
 			"\\endnotetext{${1:text}}"
-		]
-	},
-
-
-	"endnotetext":{
-		"prefix":"endnotetext",
-		"body":[
-			"\\endnotetext[${2:number}]{${1:text}}"
 		]
 	},
 
@@ -377,7 +145,7 @@
 	},
 
 
-	"warichu":{
+	"warichu{}":{
 		"prefix":"warichu",
 		"body":[
 			"\\warichu{${1:text}}"
@@ -385,15 +153,7 @@
 	},
 
 
-	"warichu*":{
-		"prefix":"warichu*",
-		"body":[
-			"\\warichu*{${1:text}}"
-		]
-	},
-
-
-	"tatechuyoko":{
+	"tatechuyoko{}":{
 		"prefix":"tatechuyoko",
 		"body":[
 			"\\tatechuyoko{${1:text}}"
@@ -401,15 +161,7 @@
 	},
 
 
-	"tatechuyoko*":{
-		"prefix":"tatechuyoko*",
-		"body":[
-			"\\tatechuyoko*{${1:text}}"
-		]
-	},
-
-
-	"jidori":{
+	"jidori{}{}":{
 		"prefix":"jidori",
 		"body":[
 			"\\jidori{${1:width}}{${2:text}}"
@@ -417,7 +169,7 @@
 	},
 
 
-	"akigumi":{
+	"akigumi{}{}":{
 		"prefix":"akigumi",
 		"body":[
 			"\\akigumi{${1:width}}{${2:text}}"
@@ -425,7 +177,7 @@
 	},
 
 
-	"jafontsize":{
+	"jafontsize{}{}":{
 		"prefix":"jafontsize",
 		"body":[
 			"\\jafontsize{${1:size}}{${2:skip}}"
@@ -449,7 +201,7 @@
 	},
 
 
-	"NewTobiraHeading":{
+	"NewTobiraHeading{}{}{}":{
 		"prefix":"NewTobiraHeading",
 		"body":[
 			"\\NewTobiraHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -457,7 +209,7 @@
 	},
 
 
-	"RenewTobiraHeading":{
+	"RenewTobiraHeading{}{}{}":{
 		"prefix":"RenewTobiraHeading",
 		"body":[
 			"\\RenewTobiraHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -465,7 +217,7 @@
 	},
 
 
-	"ProvideTobiraHeading":{
+	"ProvideTobiraHeading{}{}{}":{
 		"prefix":"ProvideTobiraHeading",
 		"body":[
 			"\\ProvideTobiraHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -473,7 +225,7 @@
 	},
 
 
-	"DeclareTobiraHeading":{
+	"DeclareTobiraHeading{}{}{}":{
 		"prefix":"DeclareTobiraHeading",
 		"body":[
 			"\\DeclareTobiraHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -481,7 +233,7 @@
 	},
 
 
-	"NewBlockHeading":{
+	"NewBlockHeading{}{}{}":{
 		"prefix":"NewBlockHeading",
 		"body":[
 			"\\NewBlockHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -489,7 +241,7 @@
 	},
 
 
-	"RenewBlockHeading":{
+	"RenewBlockHeading{}{}{}":{
 		"prefix":"RenewBlockHeading",
 		"body":[
 			"\\RenewBlockHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -497,7 +249,7 @@
 	},
 
 
-	"ProvideBlockHeading":{
+	"ProvideBlockHeading{}{}{}":{
 		"prefix":"ProvideBlockHeading",
 		"body":[
 			"\\ProvideBlockHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -505,7 +257,7 @@
 	},
 
 
-	"DeclareBlockHeading":{
+	"DeclareBlockHeading{}{}{}":{
 		"prefix":"DeclareBlockHeading",
 		"body":[
 			"\\DeclareBlockHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -513,7 +265,7 @@
 	},
 
 
-	"SetBlockHeadingSpaces":{
+	"SetBlockHeadingSpaces{}":{
 		"prefix":"SetBlockHeadingSpaces",
 		"body":[
 			"\\SetBlockHeadingSpaces{${1:specs}}"
@@ -521,7 +273,7 @@
 	},
 
 
-	"NewRuninHeading":{
+	"NewRuninHeading{}{}{}":{
 		"prefix":"NewRuninHeading",
 		"body":[
 			"\\NewRuninHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -529,7 +281,7 @@
 	},
 
 
-	"RenewRuninHeading":{
+	"RenewRuninHeading{}{}{}":{
 		"prefix":"RenewRuninHeading",
 		"body":[
 			"\\RenewRuninHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -537,7 +289,7 @@
 	},
 
 
-	"ProvideRuninHeading":{
+	"ProvideRuninHeading{}{}{}":{
 		"prefix":"ProvideRuninHeading",
 		"body":[
 			"\\ProvideRuninHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -545,7 +297,7 @@
 	},
 
 
-	"DeclareRuninHeading":{
+	"DeclareRuninHeading{}{}{}":{
 		"prefix":"DeclareRuninHeading",
 		"body":[
 			"\\DeclareRuninHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -553,7 +305,7 @@
 	},
 
 
-	"NewCutinHeading":{
+	"NewCutinHeading{}{}{}":{
 		"prefix":"NewCutinHeading",
 		"body":[
 			"\\NewCutinHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -561,7 +313,7 @@
 	},
 
 
-	"RenewCutinHeading":{
+	"RenewCutinHeading{}{}{}":{
 		"prefix":"RenewCutinHeading",
 		"body":[
 			"\\RenewCutinHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -569,7 +321,7 @@
 	},
 
 
-	"ProvideCutinHeading":{
+	"ProvideCutinHeading{}{}{}":{
 		"prefix":"ProvideCutinHeading",
 		"body":[
 			"\\ProvideCutinHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -577,7 +329,7 @@
 	},
 
 
-	"DeclareCutinHeading":{
+	"DeclareCutinHeading{}{}{}":{
 		"prefix":"DeclareCutinHeading",
 		"body":[
 			"\\DeclareCutinHeading{${1:sectionname}}{${2:level}}{${3:options%keyvals}}"
@@ -585,7 +337,7 @@
 	},
 
 
-	"ModifyHeading":{
+	"ModifyHeading{}{}":{
 		"prefix":"ModifyHeading",
 		"body":[
 			"\\ModifyHeading{${1:sectionname}}{${2:options%keyvals}}"
@@ -593,7 +345,7 @@
 	},
 
 
-	"SaveHeading":{
+	"SaveHeading{}{}":{
 		"prefix":"SaveHeading",
 		"body":[
 			"\\SaveHeading{${1:sectionname}}{${2:command}}"
@@ -601,7 +353,7 @@
 	},
 
 
-	"NewPageStyle":{
+	"NewPageStyle{}{}":{
 		"prefix":"NewPageStyle",
 		"body":[
 			"\\NewPageStyle{${1:name%specialDef}}{${2:options%keyvals}}"
@@ -609,7 +361,7 @@
 	},
 
 
-	"RenewPageStyle":{
+	"RenewPageStyle{}{}":{
 		"prefix":"RenewPageStyle",
 		"body":[
 			"\\RenewPageStyle{${1:name}}{${2:options%keyvals}}"
@@ -617,7 +369,7 @@
 	},
 
 
-	"ProvidePageStyle":{
+	"ProvidePageStyle{}{}":{
 		"prefix":"ProvidePageStyle",
 		"body":[
 			"\\ProvidePageStyle{${1:name%specialDef}}{${2:options%keyvals}}"
@@ -625,7 +377,7 @@
 	},
 
 
-	"DeclarePageStyle":{
+	"DeclarePageStyle{}{}":{
 		"prefix":"DeclarePageStyle",
 		"body":[
 			"\\DeclarePageStyle{${1:name%specialDef}}{${2:options%keyvals}}"
@@ -633,7 +385,7 @@
 	},
 
 
-	"ModifyPageStyle":{
+	"ModifyPageStyle{}{}":{
 		"prefix":"ModifyPageStyle",
 		"body":[
 			"\\ModifyPageStyle{${1:pagestyle}}{${2:options%keyvals}}"
@@ -641,15 +393,7 @@
 	},
 
 
-	"inlinenote*":{
-		"prefix":"inlinenote*",
-		"body":[
-			"\\inlinenote*{${1:text}}"
-		]
-	},
-
-
-	"inlinenote":{
+	"inlinenote{}":{
 		"prefix":"inlinenote",
 		"body":[
 			"\\inlinenote{${1:text}}"
@@ -665,7 +409,7 @@
 	},
 
 
-	"jaspace":{
+	"jaspace{}":{
 		"prefix":"jaspace",
 		"body":[
 			"\\jaspace{${1:type}}"
@@ -741,6 +485,262 @@
 		"prefix":"toclineskip",
 		"body":[
 			"\\toclineskip"
+		]
+	},
+
+
+	"chapter*{}[]":{
+		"prefix":"*chapter",
+		"body":[
+			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter*{}[]":{
+		"prefix":"*chapter",
+		"body":[
+			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter*{}[]":{
+		"prefix":"*chapter",
+		"body":[
+			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter*{}[]":{
+		"prefix":"*chapter",
+		"body":[
+			"\\chapter*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"part*{}[]":{
+		"prefix":"*part",
+		"body":[
+			"\\part*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"section*{}[]":{
+		"prefix":"*section",
+		"body":[
+			"\\section*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"subsection*{}[]":{
+		"prefix":"*subsection",
+		"body":[
+			"\\subsection*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"subsubsection*{}[]":{
+		"prefix":"*subsubsection",
+		"body":[
+			"\\subsubsection*{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"warichu*{}":{
+		"prefix":"*warichu",
+		"body":[
+			"\\warichu*{${1:text}}"
+		]
+	},
+
+
+	"tatechuyoko*{}":{
+		"prefix":"*tatechuyoko",
+		"body":[
+			"\\tatechuyoko*{${1:text}}"
+		]
+	},
+
+
+	"inlinenote*{}":{
+		"prefix":"*inlinenote",
+		"body":[
+			"\\inlinenote*{${1:text}}"
+		]
+	},
+
+
+	"chapter{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter[]{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"chapter{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter[]{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"chapter{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter[]{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"chapter{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"chapter[]{}[]":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"part{}[]":{
+		"prefix":"part",
+		"body":[
+			"\\part{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"part[]{}[]":{
+		"prefix":"part",
+		"body":[
+			"\\part[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"section{}[]":{
+		"prefix":"section",
+		"body":[
+			"\\section{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"section[]{}[]":{
+		"prefix":"section",
+		"body":[
+			"\\section[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"subsection{}[]":{
+		"prefix":"subsection",
+		"body":[
+			"\\subsection{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"subsection[]{}[]":{
+		"prefix":"subsection",
+		"body":[
+			"\\subsection[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"subsubsection{}[]":{
+		"prefix":"subsubsection",
+		"body":[
+			"\\subsubsection{${1:title}}[${2:subtitle%text}]"
+		]
+	},
+
+
+	"subsubsection[]{}[]":{
+		"prefix":"subsubsection",
+		"body":[
+			"\\subsubsection[${2:short title}]{${1:title}}[${3:subtitle%text}]"
+		]
+	},
+
+
+	"sidenotemark[]{}":{
+		"prefix":"sidenotemark",
+		"body":[
+			"\\sidenotemark[${2:number}]{${1:heading%text}}"
+		]
+	},
+
+
+	"sidenotetext[]{}{}":{
+		"prefix":"sidenotetext",
+		"body":[
+			"\\sidenotetext[${3:number}]{${1:heading%text}}{${2:text}}"
+		]
+	},
+
+
+	"endnote[]{}":{
+		"prefix":"endnote",
+		"body":[
+			"\\endnote[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"endnotemark[]":{
+		"prefix":"endnotemark",
+		"body":[
+			"\\endnotemark[${1:number}]"
+		]
+	},
+
+
+	"endnotetext[]{}":{
+		"prefix":"endnotetext",
+		"body":[
+			"\\endnotetext[${2:number}]{${1:text}}"
 		]
 	}
 }

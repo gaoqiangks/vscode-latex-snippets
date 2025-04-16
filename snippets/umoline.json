@@ -1,7 +1,7 @@
 {
 
 
-	"Underline":{
+	"Underline{}":{
 		"prefix":"Underline",
 		"body":[
 			"\\Underline{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"Midline":{
+	"Midline{}":{
 		"prefix":"Midline",
 		"body":[
 			"\\Midline{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Overline":{
+	"Overline{}":{
 		"prefix":"Overline",
 		"body":[
 			"\\Overline{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"MidlineChar":{
+	"MidlineChar{}":{
 		"prefix":"MidlineChar",
 		"body":[
 			"\\MidlineChar{${1:char}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"UMOline":{
+	"UMOline{}{}":{
 		"prefix":"UMOline",
 		"body":[
 			"\\UMOline{${1:height}}{${2:text}}"
@@ -73,26 +73,10 @@
 	},
 
 
-	"UMOspace":{
+	"UMOspace{}":{
 		"prefix":"UMOspace",
 		"body":[
 			"\\UMOspace{${1:length}}"
-		]
-	},
-
-
-	"UMOspace":{
-		"prefix":"UMOspace",
-		"body":[
-			"\\UMOspace{${1:length}}[${2:num}]"
-		]
-	},
-
-
-	"UMOspace*":{
-		"prefix":"UMOspace*",
-		"body":[
-			"\\UMOspace*{${1:length}}"
 		]
 	},
 
@@ -105,10 +89,26 @@
 	},
 
 
+	"UMOspace*{}":{
+		"prefix":"*UMOspace",
+		"body":[
+			"\\UMOspace*{${1:length}}"
+		]
+	},
+
+
 	"UMOnewline*":{
-		"prefix":"UMOnewline*",
+		"prefix":"*UMOnewline",
 		"body":[
 			"\\UMOnewline*"
+		]
+	},
+
+
+	"UMOspace{}[]":{
+		"prefix":"UMOspace",
+		"body":[
+			"\\UMOspace{${1:length}}[${2:num}]"
 		]
 	}
 }

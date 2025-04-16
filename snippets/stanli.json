@@ -1,15 +1,7 @@
 {
 
 
-	"dsupport":{
-		"prefix":"dsupport",
-		"body":[
-			"\\dsupport{2}{${1:insertion point}}[${2:plane}]"
-		]
-	},
-
-
-	"setcoords":{
+	"setcoords{}{}":{
 		"prefix":"setcoords",
 		"body":[
 			"\\setcoords{${1:x angle}}{${2:y angle}}"
@@ -17,23 +9,7 @@
 	},
 
 
-	"setcoords":{
-		"prefix":"setcoords",
-		"body":[
-			"\\setcoords{${1:x angle}}{${2:y angle}}[${3:x dir}][${4:y dir}][${5:z dir}]"
-		]
-	},
-
-
-	"setcoords":{
-		"prefix":"setcoords",
-		"body":[
-			"\\setcoords{${1:x angle}}{${2:y angle}}[${3:x dir}][${4:y dir}][${5:z dir}][${6:z angle}]"
-		]
-	},
-
-
-	"setaxis":{
+	"setaxis{}":{
 		"prefix":"setaxis",
 		"body":[
 			"\\setaxis{1}"
@@ -41,26 +17,10 @@
 	},
 
 
-	"setaxis":{
+	"setaxis{}":{
 		"prefix":"setaxis",
 		"body":[
 			"\\setaxis{2}"
-		]
-	},
-
-
-	"setaxis":{
-		"prefix":"setaxis",
-		"body":[
-			"\\setaxis{3}[${1:Xlabel}][${2:Ylabel}][${3:Zlabel}][${4:xlabel}][${5:ylabel}][${6:zlabel}]"
-		]
-	},
-
-
-	"setaxis":{
-		"prefix":"setaxis",
-		"body":[
-			"\\setaxis{4}[${1:x orient.}][${2:y orient.}][${3:z orient.}]"
 		]
 	},
 
@@ -73,7 +33,7 @@
 	},
 
 
-	"dscaling":{
+	"dscaling{}{}":{
 		"prefix":"dscaling",
 		"body":[
 			"\\dscaling{${1:type%keyvals}}{${2:factor}}"
@@ -801,7 +761,7 @@
 	},
 
 
-	"tdplotmult":{
+	"tdplotmult{}{}{}":{
 		"prefix":"tdplotmult",
 		"body":[
 			"\\tdplotmult{${1:macro%cmd}}{${2:x}}{${3:y}}"
@@ -817,7 +777,7 @@
 	},
 
 
-	"tdplotsetrotatedcoordsorigin":{
+	"tdplotsetrotatedcoordsorigin{}":{
 		"prefix":"tdplotsetrotatedcoordsorigin",
 		"body":[
 			"\\tdplotsetrotatedcoordsorigin{${1:point}}"
@@ -825,7 +785,7 @@
 	},
 
 
-	"tdplotsetrotatedcoords":{
+	"tdplotsetrotatedcoords{}{}{}":{
 		"prefix":"tdplotsetrotatedcoords",
 		"body":[
 			"\\tdplotsetrotatedcoords{${1:angle1}}{${2:angle2}}{${3:angle3}}"
@@ -833,10 +793,50 @@
 	},
 
 
-	"tdplotsinandcos":{
+	"tdplotsinandcos{}{}{}":{
 		"prefix":"tdplotsinandcos",
 		"body":[
 			"\\tdplotsinandcos{${1:macor1%cmd}}{${2:macor2%cmd}}{${3:angle}}"
+		]
+	},
+
+
+	"dsupport{}{}[]":{
+		"prefix":"dsupport",
+		"body":[
+			"\\dsupport{2}{${1:insertion point}}[${2:plane}]"
+		]
+	},
+
+
+	"setcoords{}{}[][][]":{
+		"prefix":"setcoords",
+		"body":[
+			"\\setcoords{${1:x angle}}{${2:y angle}}[${3:x dir}][${4:y dir}][${5:z dir}]"
+		]
+	},
+
+
+	"setcoords{}{}[][][][]":{
+		"prefix":"setcoords",
+		"body":[
+			"\\setcoords{${1:x angle}}{${2:y angle}}[${3:x dir}][${4:y dir}][${5:z dir}][${6:z angle}]"
+		]
+	},
+
+
+	"setaxis{}[][][][][][]":{
+		"prefix":"setaxis",
+		"body":[
+			"\\setaxis{3}[${1:Xlabel}][${2:Ylabel}][${3:Zlabel}][${4:xlabel}][${5:ylabel}][${6:zlabel}]"
+		]
+	},
+
+
+	"setaxis{}[][][]":{
+		"prefix":"setaxis",
+		"body":[
+			"\\setaxis{4}[${1:x orient.}][${2:y orient.}][${3:z orient.}]"
 		]
 	}
 }

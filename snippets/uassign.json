@@ -1,7 +1,7 @@
 {
 
 
-	"ebox":{
+	"ebox{}":{
 		"prefix":"ebox",
 		"body":[
 			"\\ebox{${1:}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ientry":{
+	"ientry{}":{
 		"prefix":"ientry",
 		"body":[
 			"\\ientry{${1:entry%text}}"
@@ -65,12 +65,12 @@
 	},
 
 
-	"exsolution":{
-		"prefix":"exsolution",
+	"question":{
+		"prefix":"question",
 		"body":[
-			"\\begin{exsolution}",
-			"\t$1",
-			"\\end{exsolution}"
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
 		]
 	},
 
@@ -79,28 +79,8 @@
 		"prefix":"solution",
 		"body":[
 			"\\begin{solution}",
-			"\t$1",
+				"\t$1",
 			"\\end{solution}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"question":{
-		"prefix":"question",
-		"body":[
-			"\\begin{question}",
-			"\t$1",
-			"\\end{question}"
 		]
 	},
 
@@ -109,8 +89,38 @@
 		"prefix":"example",
 		"body":[
 			"\\begin{example}",
-			"\t$1",
+				"\t$1",
 			"\\end{example}"
+		]
+	},
+
+
+	"exsolution":{
+		"prefix":"exsolution",
+		"body":[
+			"\\begin{exsolution}",
+				"\t$1",
+			"\\end{exsolution}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
 		]
 	}
 }

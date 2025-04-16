@@ -1,7 +1,7 @@
 {
 
 
-	"info":{
+	"info{}{}{}":{
 		"prefix":"info",
 		"body":[
 			"\\info{${1:image-name}}{${2:category}}{${3:subcategory}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"info*":{
-		"prefix":"info*",
-		"body":[
-			"\\info*{${1:image-name}}{${2:category}}{${3:subcategory}}"
-		]
-	},
-
-
-	"chitimages":{
+	"chitimages{}":{
 		"prefix":"chitimages",
 		"body":[
 			"\\chitimages{${1:counter}}"
@@ -25,23 +17,7 @@
 	},
 
 
-	"chitimages":{
-		"prefix":"chitimages",
-		"body":[
-			"\\chitimages[${2:faction}]{${1:counter}}"
-		]
-	},
-
-
-	"chitimages":{
-		"prefix":"chitimages",
-		"body":[
-			"\\chitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
-		]
-	},
-
-
-	"doublechitimages":{
+	"doublechitimages{}":{
 		"prefix":"doublechitimages",
 		"body":[
 			"\\doublechitimages{${1:counter}}"
@@ -49,23 +25,7 @@
 	},
 
 
-	"doublechitimages":{
-		"prefix":"doublechitimages",
-		"body":[
-			"\\doublechitimages[${2:faction}]{${1:counter}}"
-		]
-	},
-
-
-	"doublechitimages":{
-		"prefix":"doublechitimages",
-		"body":[
-			"\\doublechitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
-		]
-	},
-
-
-	"dice":{
+	"dice{}{}{}":{
 		"prefix":"dice",
 		"body":[
 			"\\dice{${1:name}}{${2:name}}{${3:list}}"
@@ -73,7 +33,79 @@
 	},
 
 
-	"dice":{
+	"multimathsep":{
+		"prefix":"multimathsep",
+		"body":[
+			"\\multimathsep"
+		]
+	},
+
+
+	"multidisplaymathsep":{
+		"prefix":"multidisplaymathsep",
+		"body":[
+			"\\multidisplaymathsep"
+		]
+	},
+
+
+	"multimathsep":{
+		"prefix":"multimathsep",
+		"body":[
+			"\\multimathsep"
+		]
+	},
+
+
+	"multidisplaymathsep":{
+		"prefix":"multidisplaymathsep",
+		"body":[
+			"\\multidisplaymathsep"
+		]
+	},
+
+
+	"info*{}{}{}":{
+		"prefix":"*info",
+		"body":[
+			"\\info*{${1:image-name}}{${2:category}}{${3:subcategory}}"
+		]
+	},
+
+
+	"chitimages[]{}":{
+		"prefix":"chitimages",
+		"body":[
+			"\\chitimages[${2:faction}]{${1:counter}}"
+		]
+	},
+
+
+	"chitimages[][]{}":{
+		"prefix":"chitimages",
+		"body":[
+			"\\chitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
+		]
+	},
+
+
+	"doublechitimages[]{}":{
+		"prefix":"doublechitimages",
+		"body":[
+			"\\doublechitimages[${2:faction}]{${1:counter}}"
+		]
+	},
+
+
+	"doublechitimages[][]{}":{
+		"prefix":"doublechitimages",
+		"body":[
+			"\\doublechitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
+		]
+	},
+
+
+	"dice[]{}{}{}":{
 		"prefix":"dice",
 		"body":[
 			"\\dice[${4:tikz-options}]{${1:name}}{${2:name}}{${3:list}}"
@@ -81,7 +113,7 @@
 	},
 
 
-	"dice":{
+	"dice[][]{}{}{}":{
 		"prefix":"dice",
 		"body":[
 			"\\dice[${4:tikz-options}][${5:node-options}]{${1:name}}{${2:name}}{${3:list}}"
@@ -89,34 +121,12 @@
 	},
 
 
-	"multimathsep":{
-		"prefix":"multimathsep",
+	"imagelist":{
+		"prefix":"imagelist",
 		"body":[
-			"\\multimathsep"
-		]
-	},
-
-
-	"multidisplaymathsep":{
-		"prefix":"multidisplaymathsep",
-		"body":[
-			"\\multidisplaymathsep"
-		]
-	},
-
-
-	"multimathsep":{
-		"prefix":"multimathsep",
-		"body":[
-			"\\multimathsep"
-		]
-	},
-
-
-	"multidisplaymathsep":{
-		"prefix":"multidisplaymathsep",
-		"body":[
-			"\\multidisplaymathsep"
+			"\\begin{imagelist}",
+				"\t$1",
+			"\\end{imagelist}"
 		]
 	},
 
@@ -125,7 +135,7 @@
 		"prefix":"boardimage",
 		"body":[
 			"\\begin{boardimage}",
-			"\t$1",
+				"\t$1",
 			"\\end{boardimage}"
 		]
 	},
@@ -135,7 +145,57 @@
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-			"\t$1",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
 			"\\end{standaloneframe}"
 		]
 	},
@@ -145,7 +205,7 @@
 		"prefix":"multimath",
 		"body":[
 			"\\begin{multimath}",
-			"\t$1",
+				"\t$1",
 			"\\end{multimath}"
 		]
 	},
@@ -155,7 +215,27 @@
 		"prefix":"multidisplaymath",
 		"body":[
 			"\\begin{multidisplaymath}",
-			"\t$1",
+				"\t$1",
+			"\\end{multidisplaymath}"
+		]
+	},
+
+
+	"multimath":{
+		"prefix":"multimath",
+		"body":[
+			"\\begin{multimath}",
+				"\t$1",
+			"\\end{multimath}"
+		]
+	},
+
+
+	"multidisplaymath":{
+		"prefix":"multidisplaymath",
+		"body":[
+			"\\begin{multidisplaymath}",
+				"\t$1",
 			"\\end{multidisplaymath}"
 		]
 	},
@@ -165,8 +245,238 @@
 		"prefix":"imagelist",
 		"body":[
 			"\\begin{imagelist}",
-			"\t$1",
+				"\t$1",
 			"\\end{imagelist}"
+		]
+	},
+
+
+	"boardimage":{
+		"prefix":"boardimage",
+		"body":[
+			"\\begin{boardimage}",
+				"\t$1",
+			"\\end{boardimage}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
+		]
+	},
+
+
+	"standaloneframe":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t$1",
+			"\\end{standaloneframe}"
 		]
 	}
 }

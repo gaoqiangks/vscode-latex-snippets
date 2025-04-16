@@ -9,7 +9,7 @@
 	},
 
 
-	"lyFilename":{
+	"lyFilename{}":{
 		"prefix":"lyFilename",
 		"body":[
 			"\\lyFilename{${1:filename}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"lyIntertext":{
+	"lyIntertext{}":{
 		"prefix":"lyIntertext",
 		"body":[
 			"\\lyIntertext{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"lyVersion":{
+	"lyVersion{}":{
 		"prefix":"lyVersion",
 		"body":[
 			"\\lyVersion{${1:version}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"includely":{
+	"includely{}":{
 		"prefix":"includely",
 		"body":[
 			"\\includely{${1:file}}"
@@ -41,26 +41,10 @@
 	},
 
 
-	"includely":{
-		"prefix":"includely",
-		"body":[
-			"\\includely[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"musicxmlfile":{
+	"musicxmlfile{}":{
 		"prefix":"musicxmlfile",
 		"body":[
 			"\\musicxmlfile{${1:file}}"
-		]
-	},
-
-
-	"musicxmlfile":{
-		"prefix":"musicxmlfile",
-		"body":[
-			"\\musicxmlfile[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"lysetverbenv":{
+	"lysetverbenv{}{}":{
 		"prefix":"lysetverbenv",
 		"body":[
 			"\\lysetverbenv{${1:begdef}}{${2:enddef}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"lyenv":{
+	"lyenv{}":{
 		"prefix":"lyenv",
 		"body":[
 			"\\lyenv{${1:envname}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"lynewenvironment":{
+	"lynewenvironment{}{}{}":{
 		"prefix":"lynewenvironment",
 		"body":[
 			"\\lynewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
@@ -105,23 +89,7 @@
 	},
 
 
-	"lynewenvironment":{
-		"prefix":"lynewenvironment",
-		"body":[
-			"\\lynewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"lynewenvironment":{
-		"prefix":"lynewenvironment",
-		"body":[
-			"\\lynewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"lily":{
+	"lily{}":{
 		"prefix":"lily",
 		"body":[
 			"\\lily{${1:score}}"
@@ -129,15 +97,7 @@
 	},
 
 
-	"lily":{
-		"prefix":"lily",
-		"body":[
-			"\\lily[${2:options%keyvals}]{${1:score}}"
-		]
-	},
-
-
-	"lyscore":{
+	"lyscore{}":{
 		"prefix":"lyscore",
 		"body":[
 			"\\lyscore{${1:option%keyvals}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"lilypondfile":{
+	"lilypondfile{}":{
 		"prefix":"lilypondfile",
 		"body":[
 			"\\lilypondfile{${1:file}}"
@@ -153,15 +113,7 @@
 	},
 
 
-	"lilypondfile":{
-		"prefix":"lilypondfile",
-		"body":[
-			"\\lilypondfile[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"lilypond":{
+	"lilypond{}":{
 		"prefix":"lilypond",
 		"body":[
 			"\\lilypond{${1:score}}"
@@ -169,20 +121,58 @@
 	},
 
 
-	"lilypond":{
-		"prefix":"lilypond",
+	"includely[]{}":{
+		"prefix":"includely",
 		"body":[
-			"\\lilypond[${2:options%keyvals}]{${1:score}}"
+			"\\includely[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
 
-	"ly":{
-		"prefix":"ly",
+	"musicxmlfile[]{}":{
+		"prefix":"musicxmlfile",
 		"body":[
-			"\\begin{ly}",
-			"\t$1",
-			"\\end{ly}"
+			"\\musicxmlfile[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"lynewenvironment{}[]{}{}":{
+		"prefix":"lynewenvironment",
+		"body":[
+			"\\lynewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"lynewenvironment{}[][]{}{}":{
+		"prefix":"lynewenvironment",
+		"body":[
+			"\\lynewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		]
+	},
+
+
+	"lily[]{}":{
+		"prefix":"lily",
+		"body":[
+			"\\lily[${2:options%keyvals}]{${1:score}}"
+		]
+	},
+
+
+	"lilypondfile[]{}":{
+		"prefix":"lilypondfile",
+		"body":[
+			"\\lilypondfile[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"lilypond[]{}":{
+		"prefix":"lilypond",
+		"body":[
+			"\\lilypond[${2:options%keyvals}]{${1:score}}"
 		]
 	},
 
@@ -191,8 +181,18 @@
 		"prefix":"lysavefrag",
 		"body":[
 			"\\begin{lysavefrag}",
-			"\t$1",
+				"\t$1",
 			"\\end{lysavefrag}"
+		]
+	},
+
+
+	"ly":{
+		"prefix":"ly",
+		"body":[
+			"\\begin{ly}",
+				"\t$1",
+			"\\end{ly}"
 		]
 	},
 
@@ -201,7 +201,27 @@
 		"prefix":"lilypond",
 		"body":[
 			"\\begin{lilypond}",
-			"\t$1",
+				"\t$1",
+			"\\end{lilypond}"
+		]
+	},
+
+
+	"ly":{
+		"prefix":"ly",
+		"body":[
+			"\\begin{ly}",
+				"\t$1",
+			"\\end{ly}"
+		]
+	},
+
+
+	"lilypond":{
+		"prefix":"lilypond",
+		"body":[
+			"\\begin{lilypond}",
+				"\t$1",
 			"\\end{lilypond}"
 		]
 	}

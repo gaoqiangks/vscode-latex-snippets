@@ -1,7 +1,7 @@
 {
 
 
-	"newidxcmd":{
+	"newidxcmd{}{}":{
 		"prefix":"newidxcmd",
 		"body":[
 			"\\newidxcmd{${1:cmd}}{${2:definition}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"newidxcmd":{
-		"prefix":"newidxcmd",
-		"body":[
-			"\\newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"newidxcmd":{
-		"prefix":"newidxcmd",
-		"body":[
-			"\\newidxcmd{${1:cmd}}{${2:definition}}[${3:append}]"
-		]
-	},
-
-
-	"newidxcmd":{
-		"prefix":"newidxcmd",
-		"body":[
-			"\\newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}[${4:append}]"
-		]
-	},
-
-
-	"newsubidxcmd":{
+	"newsubidxcmd{}{}{}":{
 		"prefix":"newsubidxcmd",
 		"body":[
 			"\\newsubidxcmd{${1:cmd}}{${2:main entry}}{${3:definition}}"
@@ -41,63 +17,7 @@
 	},
 
 
-	"newsubidxcmd":{
-		"prefix":"newsubidxcmd",
-		"body":[
-			"\\newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
-		]
-	},
-
-
-	"newsubidxcmd":{
-		"prefix":"newsubidxcmd",
-		"body":[
-			"\\newsubidxcmd{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
-		]
-	},
-
-
-	"newsubidxcmd":{
-		"prefix":"newsubidxcmd",
-		"body":[
-			"\\newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
-		]
-	},
-
-
-	"newsubidxcmd*":{
-		"prefix":"newsubidxcmd*",
-		"body":[
-			"\\newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}"
-		]
-	},
-
-
-	"newsubidxcmd*":{
-		"prefix":"newsubidxcmd*",
-		"body":[
-			"\\newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
-		]
-	},
-
-
-	"newsubidxcmd*":{
-		"prefix":"newsubidxcmd*",
-		"body":[
-			"\\newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
-		]
-	},
-
-
-	"newsubidxcmd*":{
-		"prefix":"newsubidxcmd*",
-		"body":[
-			"\\newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
-		]
-	},
-
-
-	"newsubmainidxcmd":{
+	"newsubmainidxcmd{}{}":{
 		"prefix":"newsubmainidxcmd",
 		"body":[
 			"\\newsubmainidxcmd{${1:cmd}}{${2:definition}}"
@@ -105,7 +25,95 @@
 	},
 
 
-	"newsubidxcmd":{
+	"setidxcmds{}":{
+		"prefix":"setidxcmds",
+		"body":[
+			"\\setidxcmds{${1:options%keyvals}}"
+		]
+	},
+
+
+	"newsubidxcmd*{}{}{}":{
+		"prefix":"*newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}"
+		]
+	},
+
+
+	"newsubidxcmd*[]{}{}{}":{
+		"prefix":"*newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
+		]
+	},
+
+
+	"newsubidxcmd*{}{}{}[]":{
+		"prefix":"*newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
+		]
+	},
+
+
+	"newsubidxcmd*[]{}{}{}[]":{
+		"prefix":"*newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
+		]
+	},
+
+
+	"newidxcmd[]{}{}":{
+		"prefix":"newidxcmd",
+		"body":[
+			"\\newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}"
+		]
+	},
+
+
+	"newidxcmd{}{}[]":{
+		"prefix":"newidxcmd",
+		"body":[
+			"\\newidxcmd{${1:cmd}}{${2:definition}}[${3:append}]"
+		]
+	},
+
+
+	"newidxcmd[]{}{}[]":{
+		"prefix":"newidxcmd",
+		"body":[
+			"\\newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}[${4:append}]"
+		]
+	},
+
+
+	"newsubidxcmd[]{}{}{}":{
+		"prefix":"newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
+		]
+	},
+
+
+	"newsubidxcmd{}{}{}[]":{
+		"prefix":"newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
+		]
+	},
+
+
+	"newsubidxcmd[]{}{}{}[]":{
+		"prefix":"newsubidxcmd",
+		"body":[
+			"\\newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
+		]
+	},
+
+
+	"newsubidxcmd[]{}{}":{
 		"prefix":"newsubidxcmd",
 		"body":[
 			"\\newsubidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}"
@@ -113,7 +121,7 @@
 	},
 
 
-	"newsubidxcmd":{
+	"newsubidxcmd{}{}[]":{
 		"prefix":"newsubidxcmd",
 		"body":[
 			"\\newsubidxcmd{${1:cmd}}{${2:main entry}}[${3:append}]"
@@ -121,18 +129,10 @@
 	},
 
 
-	"newsubidxcmd":{
+	"newsubidxcmd[]{}{}[]":{
 		"prefix":"newsubidxcmd",
 		"body":[
 			"\\newsubidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}[${4:append}]"
-		]
-	},
-
-
-	"setidxcmds":{
-		"prefix":"setidxcmds",
-		"body":[
-			"\\setidxcmds{${1:options%keyvals}}"
 		]
 	}
 }

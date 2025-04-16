@@ -1,7 +1,7 @@
 {
 
 
-	"degree":{
+	"degree{}":{
 		"prefix":"degree",
 		"body":[
 			"\\degree{${1:degree%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"gradyear":{
+	"gradyear{}":{
 		"prefix":"gradyear",
 		"body":[
 			"\\gradyear{${1:year}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"department":{
+	"department{}":{
 		"prefix":"department",
 		"body":[
 			"\\department{${1:department%text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"department":{
-		"prefix":"department",
-		"body":[
-			"\\department[${2:pre text%text}]{${1:department%text}}"
-		]
-	},
-
-
-	"copyrighttext":{
+	"copyrighttext{}":{
 		"prefix":"copyrighttext",
 		"body":[
 			"\\copyrighttext{${1:text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"headerstyle":{
+	"headerstyle{}":{
 		"prefix":"headerstyle",
 		"body":[
 			"\\headerstyle{${1:text}}"
@@ -49,12 +41,10 @@
 	},
 
 
-	"acknowledgements":{
-		"prefix":"acknowledgements",
+	"department[]{}":{
+		"prefix":"department",
 		"body":[
-			"\\begin{acknowledgements}",
-			"\t$1",
-			"\\end{acknowledgements}"
+			"\\department[${2:pre text%text}]{${1:department%text}}"
 		]
 	},
 
@@ -63,8 +53,18 @@
 		"prefix":"dedication",
 		"body":[
 			"\\begin{dedication}",
-			"\t$1",
+				"\t$1",
 			"\\end{dedication}"
+		]
+	},
+
+
+	"acknowledgements":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
 		]
 	}
 }

@@ -33,7 +33,7 @@
 	},
 
 
-	"tabcap":{
+	"tabcap{}":{
 		"prefix":"tabcap",
 		"body":[
 			"\\tabcap{${1:text}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"tabcap":{
-		"prefix":"tabcap",
-		"body":[
-			"\\tabcap[${2:width}]{${1:text}}"
-		]
-	},
-
-
-	"figcap":{
+	"figcap{}":{
 		"prefix":"figcap",
 		"body":[
 			"\\figcap{${1:text}}"
@@ -57,7 +49,15 @@
 	},
 
 
-	"figcap":{
+	"tabcap[]{}":{
+		"prefix":"tabcap",
+		"body":[
+			"\\tabcap[${2:width}]{${1:text}}"
+		]
+	},
+
+
+	"figcap[]{}":{
 		"prefix":"figcap",
 		"body":[
 			"\\figcap[${2:width}]{${1:text}}"
@@ -69,7 +69,7 @@
 		"prefix":"topfloat",
 		"body":[
 			"\\begin{topfloat}",
-			"\t$1",
+				"\t$1",
 			"\\end{topfloat}"
 		]
 	}

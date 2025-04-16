@@ -17,7 +17,7 @@
 	},
 
 
-	"cell":{
+	"cell{}":{
 		"prefix":"cell",
 		"body":[
 			"\\cell{${1:content%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"thead":{
+	"thead{}":{
 		"prefix":"thead",
 		"body":[
 			"\\thead{${1:content%text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"tfoot":{
+	"tfoot{}":{
 		"prefix":"tfoot",
 		"body":[
 			"\\tfoot{${1:content%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"tbreak":{
+	"tbreak{}":{
 		"prefix":"tbreak",
 		"body":[
 			"\\tbreak{${1:content%text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"nullcell":{
+	"nullcell{}":{
 		"prefix":"nullcell",
 		"body":[
 			"\\nullcell{${1:location}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"spancontent":{
+	"spancontent{}":{
 		"prefix":"spancontent",
 		"body":[
 			"\\spancontent{${1:content%text}}"
@@ -101,7 +101,17 @@
 		"prefix":"calstable",
 		"body":[
 			"\\begin{calstable}",
-			"\t$1",
+				"\t$1",
+			"\\end{calstable}"
+		]
+	},
+
+
+	"calstable":{
+		"prefix":"calstable",
+		"body":[
+			"\\begin{calstable}",
+				"\t$1",
 			"\\end{calstable}"
 		]
 	}

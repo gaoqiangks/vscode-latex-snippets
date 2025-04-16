@@ -9,26 +9,10 @@
 	},
 
 
-	"EmptyFileList":{
-		"prefix":"EmptyFileList",
-		"body":[
-			"\\EmptyFileList[${1:file list}]"
-		]
-	},
-
-
 	"ListInfos":{
 		"prefix":"ListInfos",
 		"body":[
 			"\\ListInfos"
-		]
-	},
-
-
-	"ListInfos":{
-		"prefix":"ListInfos",
-		"body":[
-			"\\ListInfos[${1:filename.txt}]"
 		]
 	},
 
@@ -57,15 +41,7 @@
 	},
 
 
-	"VarListInfos":{
-		"prefix":"VarListInfos",
-		"body":[
-			"\\VarListInfos[${1:filename.txt}]"
-		]
-	},
-
-
-	"WriteFileInfosTo":{
+	"WriteFileInfosTo{}":{
 		"prefix":"WriteFileInfosTo",
 		"body":[
 			"\\WriteFileInfosTo{${1:txt file}}"
@@ -73,18 +49,10 @@
 	},
 
 
-	"ReadListFileInfos":{
+	"ReadListFileInfos{}":{
 		"prefix":"ReadListFileInfos",
 		"body":[
 			"\\ReadListFileInfos{${1:tex file list}}"
-		]
-	},
-
-
-	"ReadListFileInfos":{
-		"prefix":"ReadListFileInfos",
-		"body":[
-			"\\ReadListFileInfos[${2:txt file}]{${1:tex file list}}"
 		]
 	},
 
@@ -97,7 +65,7 @@
 	},
 
 
-	"FindReadListFileInfos":{
+	"FindReadListFileInfos{}":{
 		"prefix":"FindReadListFileInfos",
 		"body":[
 			"\\FindReadListFileInfos{${1:tex file list}}"
@@ -105,26 +73,10 @@
 	},
 
 
-	"FindReadListFileInfos":{
-		"prefix":"FindReadListFileInfos",
-		"body":[
-			"\\FindReadListFileInfos[${2:txt file}]{${1:tex file list}}"
-		]
-	},
-
-
-	"FileListRemark":{
+	"FileListRemark{}":{
 		"prefix":"FileListRemark",
 		"body":[
 			"\\FileListRemark{${1:file}}"
-		]
-	},
-
-
-	"FileListRemark":{
-		"prefix":"FileListRemark",
-		"body":[
-			"\\FileListRemark[${2:info}]{${1:file}}"
 		]
 	},
 
@@ -133,6 +85,54 @@
 		"prefix":"NoBottomLines",
 		"body":[
 			"\\NoBottomLines"
+		]
+	},
+
+
+	"EmptyFileList[]":{
+		"prefix":"EmptyFileList",
+		"body":[
+			"\\EmptyFileList[${1:file list}]"
+		]
+	},
+
+
+	"ListInfos[]":{
+		"prefix":"ListInfos",
+		"body":[
+			"\\ListInfos[${1:filename.txt}]"
+		]
+	},
+
+
+	"VarListInfos[]":{
+		"prefix":"VarListInfos",
+		"body":[
+			"\\VarListInfos[${1:filename.txt}]"
+		]
+	},
+
+
+	"ReadListFileInfos[]{}":{
+		"prefix":"ReadListFileInfos",
+		"body":[
+			"\\ReadListFileInfos[${2:txt file}]{${1:tex file list}}"
+		]
+	},
+
+
+	"FindReadListFileInfos[]{}":{
+		"prefix":"FindReadListFileInfos",
+		"body":[
+			"\\FindReadListFileInfos[${2:txt file}]{${1:tex file list}}"
+		]
+	},
+
+
+	"FileListRemark[]{}":{
+		"prefix":"FileListRemark",
+		"body":[
+			"\\FileListRemark[${2:info}]{${1:file}}"
 		]
 	}
 }

@@ -9,14 +9,6 @@
 	},
 
 
-	"eqnumber":{
-		"prefix":"eqnumber",
-		"body":[
-			"\\eqnumber[${1:text%plain}]"
-		]
-	},
-
-
 	"eqaopenskip":{
 		"prefix":"eqaopenskip",
 		"body":[
@@ -57,7 +49,7 @@
 	},
 
 
-	"newmatrix":{
+	"newmatrix{}{}":{
 		"prefix":"newmatrix",
 		"body":[
 			"\\newmatrix{${1:envname}}{${2:genmatrix args}}"
@@ -65,112 +57,10 @@
 	},
 
 
-	"spmatrix*":{
-		"prefix":"spmatrix*",
+	"eqnumber[]":{
+		"prefix":"eqnumber",
 		"body":[
-			"\\begin{spmatrix*}",
-			"\t$1",
-			"\\end{spmatrix*}"
-		]
-	},
-
-
-	"subsplit":{
-		"prefix":"subsplit",
-		"body":[
-			"\\begin{subsplit}",
-			"\t$1",
-			"\\end{subsplit}"
-		]
-	},
-
-
-	"smatrix":{
-		"prefix":"smatrix",
-		"body":[
-			"\\begin{smatrix}",
-			"\t$1",
-			"\\end{smatrix}"
-		]
-	},
-
-
-	"pmatrix":{
-		"prefix":"pmatrix",
-		"body":[
-			"\\begin{pmatrix}",
-			"\t$1",
-			"\\end{pmatrix}"
-		]
-	},
-
-
-	"sdmatrix":{
-		"prefix":"sdmatrix",
-		"body":[
-			"\\begin{sdmatrix}",
-			"\t$1",
-			"\\end{sdmatrix}"
-		]
-	},
-
-
-	"sdmatrix*":{
-		"prefix":"sdmatrix*",
-		"body":[
-			"\\begin{sdmatrix*}",
-			"\t$1",
-			"\\end{sdmatrix*}"
-		]
-	},
-
-
-	"eqnalign":{
-		"prefix":"eqnalign",
-		"body":[
-			"\\begin{eqnalign}",
-			"\t$1",
-			"\\end{eqnalign}"
-		]
-	},
-
-
-	"cases":{
-		"prefix":"cases",
-		"body":[
-			"\\begin{cases}",
-			"\t$1",
-			"\\end{cases}"
-		]
-	},
-
-
-	"eqnarray*":{
-		"prefix":"eqnarray*",
-		"body":[
-			"\\begin{eqnarray*}",
-			"\t$1",
-			"\\end{eqnarray*}"
-		]
-	},
-
-
-	"smatrix*":{
-		"prefix":"smatrix*",
-		"body":[
-			"\\begin{smatrix*}",
-			"\t$1",
-			"\\end{smatrix*}"
-		]
-	},
-
-
-	"dmatrix":{
-		"prefix":"dmatrix",
-		"body":[
-			"\\begin{dmatrix}",
-			"\t$1",
-			"\\end{dmatrix}"
+			"\\eqnumber[${1:text%plain}]"
 		]
 	},
 
@@ -179,48 +69,18 @@
 		"prefix":"eqlines",
 		"body":[
 			"\\begin{eqlines}",
-			"\t$1",
+				"\t$1",
 			"\\end{eqlines}"
 		]
 	},
 
 
-	"genmatrix":{
-		"prefix":"genmatrix",
+	"eqnalign":{
+		"prefix":"eqnalign",
 		"body":[
-			"\\begin{genmatrix}",
-			"\t$1",
-			"\\end{genmatrix}"
-		]
-	},
-
-
-	"eqlines*":{
-		"prefix":"eqlines*",
-		"body":[
-			"\\begin{eqlines*}",
-			"\t$1",
-			"\\end{eqlines*}"
-		]
-	},
-
-
-	"smcases":{
-		"prefix":"smcases",
-		"body":[
-			"\\begin{smcases}",
-			"\t$1",
-			"\\end{smcases}"
-		]
-	},
-
-
-	"eqnarray":{
-		"prefix":"eqnarray",
-		"body":[
-			"\\begin{eqnarray}",
-			"\t$1",
-			"\\end{eqnarray}"
+			"\\begin{eqnalign}",
+				"\t$1",
+			"\\end{eqnalign}"
 		]
 	},
 
@@ -229,28 +89,48 @@
 		"prefix":"spliteqn",
 		"body":[
 			"\\begin{spliteqn}",
-			"\t$1",
+				"\t$1",
 			"\\end{spliteqn}"
 		]
 	},
 
 
-	"spliteqn*":{
-		"prefix":"spliteqn*",
+	"subsplit":{
+		"prefix":"subsplit",
 		"body":[
-			"\\begin{spliteqn*}",
-			"\t$1",
-			"\\end{spliteqn*}"
+			"\\begin{subsplit}",
+				"\t$1",
+			"\\end{subsplit}"
 		]
 	},
 
 
-	"script":{
-		"prefix":"script",
+	"pmatrix":{
+		"prefix":"pmatrix",
 		"body":[
-			"\\begin{script}",
-			"\t$1",
-			"\\end{script}"
+			"\\begin{pmatrix}",
+				"\t$1",
+			"\\end{pmatrix}"
+		]
+	},
+
+
+	"dmatrix":{
+		"prefix":"dmatrix",
+		"body":[
+			"\\begin{dmatrix}",
+				"\t$1",
+			"\\end{dmatrix}"
+		]
+	},
+
+
+	"smatrix":{
+		"prefix":"smatrix",
+		"body":[
+			"\\begin{smatrix}",
+				"\t$1",
+			"\\end{smatrix}"
 		]
 	},
 
@@ -259,8 +139,148 @@
 		"prefix":"spmatrix",
 		"body":[
 			"\\begin{spmatrix}",
-			"\t$1",
+				"\t$1",
 			"\\end{spmatrix}"
+		]
+	},
+
+
+	"sdmatrix":{
+		"prefix":"sdmatrix",
+		"body":[
+			"\\begin{sdmatrix}",
+				"\t$1",
+			"\\end{sdmatrix}"
+		]
+	},
+
+
+	"sdmatrix*":{
+		"prefix":"sdmatrix",
+		"body":[
+			"\\begin{sdmatrix*}",
+				"\t$1",
+			"\\end{sdmatrix*}"
+		]
+	},
+
+
+	"genmatrix":{
+		"prefix":"genmatrix",
+		"body":[
+			"\\begin{genmatrix}",
+				"\t$1",
+			"\\end{genmatrix}"
+		]
+	},
+
+
+	"script":{
+		"prefix":"script",
+		"body":[
+			"\\begin{script}",
+				"\t$1",
+			"\\end{script}"
+		]
+	},
+
+
+	"cases":{
+		"prefix":"cases",
+		"body":[
+			"\\begin{cases}",
+				"\t$1",
+			"\\end{cases}"
+		]
+	},
+
+
+	"smcases":{
+		"prefix":"smcases",
+		"body":[
+			"\\begin{smcases}",
+				"\t$1",
+			"\\end{smcases}"
+		]
+	},
+
+
+	"eqlines*":{
+		"prefix":"*eqlines",
+		"body":[
+			"\\begin{eqlines*}",
+				"\t$1",
+			"\\end{eqlines*}"
+		]
+	},
+
+
+	"spliteqn*":{
+		"prefix":"*spliteqn",
+		"body":[
+			"\\begin{spliteqn*}",
+				"\t$1",
+			"\\end{spliteqn*}"
+		]
+	},
+
+
+	"smatrix*":{
+		"prefix":"*smatrix",
+		"body":[
+			"\\begin{smatrix*}",
+				"\t$1",
+			"\\end{smatrix*}"
+		]
+	},
+
+
+	"spmatrix*":{
+		"prefix":"*spmatrix",
+		"body":[
+			"\\begin{spmatrix*}",
+				"\t$1",
+			"\\end{spmatrix*}"
+		]
+	},
+
+
+	"eqnarray":{
+		"prefix":"eqnarray",
+		"body":[
+			"\\begin{eqnarray}",
+				"\t$1",
+			"\\end{eqnarray}"
+		]
+	},
+
+
+	"eqnarray*":{
+		"prefix":"eqnarray",
+		"body":[
+			"\\begin{eqnarray*}",
+				"\t$1",
+			"\\end{eqnarray*}"
+		]
+	},
+
+
+	"eqnalign":{
+		"prefix":"eqnalign",
+		"body":[
+			"\\begin{eqnalign}",
+				"\t$1",
+			"\\end{eqnalign}"
+		]
+	},
+
+
+	"script":{
+		"prefix":"script",
+		"body":[
+			"\\begin{script}",
+				"\t$1",
+			"\\end{script}"
 		]
 	}
 }

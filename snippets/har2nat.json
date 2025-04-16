@@ -1,15 +1,7 @@
 {
 
 
-	"cite*":{
-		"prefix":"cite*",
-		"body":[
-			"\\cite*{${1:keylist}}"
-		]
-	},
-
-
-	"citeaffixed":{
+	"citeaffixed{}{}":{
 		"prefix":"citeaffixed",
 		"body":[
 			"\\citeaffixed{${1:prefix}}{${2:keylist}}"
@@ -17,7 +9,7 @@
 	},
 
 
-	"citeasnoun":{
+	"citeasnoun{}":{
 		"prefix":"citeasnoun",
 		"body":[
 			"\\citeasnoun{${1:keylist}}"
@@ -25,23 +17,7 @@
 	},
 
 
-	"citeasnoun":{
-		"prefix":"citeasnoun",
-		"body":[
-			"\\citeasnoun[${2:postfix}]{${1:keylist}}"
-		]
-	},
-
-
-	"citeasnoun*":{
-		"prefix":"citeasnoun*",
-		"body":[
-			"\\citeasnoun*{${1:keylist}}"
-		]
-	},
-
-
-	"citename":{
+	"citename{}":{
 		"prefix":"citename",
 		"body":[
 			"\\citename{${1:keylist}}"
@@ -49,18 +25,42 @@
 	},
 
 
-	"citename*":{
-		"prefix":"citename*",
+	"cite*{}":{
+		"prefix":"*cite",
+		"body":[
+			"\\cite*{${1:keylist}}"
+		]
+	},
+
+
+	"citeasnoun*{}":{
+		"prefix":"*citeasnoun",
+		"body":[
+			"\\citeasnoun*{${1:keylist}}"
+		]
+	},
+
+
+	"citename*{}":{
+		"prefix":"*citename",
 		"body":[
 			"\\citename*{${1:keylist}}"
 		]
 	},
 
 
-	"citeyear*":{
-		"prefix":"citeyear*",
+	"citeyear*{}":{
+		"prefix":"*citeyear",
 		"body":[
 			"\\citeyear*{${1:keylist}}"
+		]
+	},
+
+
+	"citeasnoun[]{}":{
+		"prefix":"citeasnoun",
+		"body":[
+			"\\citeasnoun[${2:postfix}]{${1:keylist}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"bcell":{
+	"bcell{}":{
 		"prefix":"bcell",
 		"body":[
 			"\\bcell{${1:text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"cell":{
-		"prefix":"cell",
-		"body":[
-			"\\cell[${2:TikZ options}]{${1:text}}"
-		]
-	},
-
-
-	"cell":{
+	"cell{}":{
 		"prefix":"cell",
 		"body":[
 			"\\cell{${1:text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"cellcom":{
+	"cellcom{}":{
 		"prefix":"cellcom",
 		"body":[
 			"\\cellcom{${1:text}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"cellcomL":{
+	"cellcomL{}":{
 		"prefix":"cellcomL",
 		"body":[
 			"\\cellcomL{${1:text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"cellptr":{
+	"cellptr{}":{
 		"prefix":"cellptr",
 		"body":[
 			"\\cellptr{${1:text}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"cellround":{
+	"cellround{}":{
 		"prefix":"cellround",
 		"body":[
 			"\\cellround{${1:text}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"drawstruct":{
+	"drawstruct{}":{
 		"prefix":"drawstruct",
 		"body":[
 			"\\drawstruct{${1:(${2:x},${3:y})}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"finishframe":{
+	"finishframe{}":{
 		"prefix":"finishframe",
 		"body":[
 			"\\finishframe{${1:text}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"padding":{
+	"padding{}{}":{
 		"prefix":"padding",
 		"body":[
 			"\\padding{${1:number}}{${2:text}}"
@@ -105,23 +97,7 @@
 	},
 
 
-	"separator":{
-		"prefix":"separator",
-		"body":[
-			"\\separator[${1:TikZ options}]"
-		]
-	},
-
-
-	"stackbottom":{
-		"prefix":"stackbottom",
-		"body":[
-			"\\stackbottom[${2:TikZ options}]{${1:text}}"
-		]
-	},
-
-
-	"stackbottom":{
+	"stackbottom{}":{
 		"prefix":"stackbottom",
 		"body":[
 			"\\stackbottom{${1:text}}"
@@ -129,15 +105,7 @@
 	},
 
 
-	"stacktop":{
-		"prefix":"stacktop",
-		"body":[
-			"\\stacktop[${2:TikZ options}]{${1:text}}"
-		]
-	},
-
-
-	"stacktop":{
+	"stacktop{}":{
 		"prefix":"stacktop",
 		"body":[
 			"\\stacktop{${1:text}}"
@@ -153,15 +121,7 @@
 	},
 
 
-	"structcell":{
-		"prefix":"structcell",
-		"body":[
-			"\\structcell[${2:TikZ options}]{${1:text}}"
-		]
-	},
-
-
-	"structcell":{
+	"structcell{}":{
 		"prefix":"structcell",
 		"body":[
 			"\\structcell{${1:text}}"
@@ -169,7 +129,7 @@
 	},
 
 
-	"structname":{
+	"structname{}":{
 		"prefix":"structname",
 		"body":[
 			"\\structname{${1:text}}"
@@ -177,7 +137,7 @@
 	},
 
 
-	"bigcell":{
+	"bigcell{}{}":{
 		"prefix":"bigcell",
 		"body":[
 			"\\bigcell{${1:number}}{${2:text}}"
@@ -201,7 +161,7 @@
 	},
 
 
-	"cellptrnext":{
+	"cellptrnext{}":{
 		"prefix":"cellptrnext",
 		"body":[
 			"\\cellptrnext{${1:text}}"
@@ -209,7 +169,7 @@
 	},
 
 
-	"llcell":{
+	"llcell{}{}{}":{
 		"prefix":"llcell",
 		"body":[
 			"\\llcell{${1:number}}{${2:TikZ options}}{${3:text}}"
@@ -217,7 +177,7 @@
 	},
 
 
-	"llstructcell":{
+	"llstructcell{}{}{}":{
 		"prefix":"llstructcell",
 		"body":[
 			"\\llstructcell{${1:number}}{${2:TikZ options}}{${3:text}}"
@@ -225,7 +185,7 @@
 	},
 
 
-	"stackframe":{
+	"stackframe{}{}{}":{
 		"prefix":"stackframe",
 		"body":[
 			"\\stackframe{${1:num1}}{${2:num2}}{${3:text}}"
@@ -265,11 +225,61 @@
 	},
 
 
+	"cell[]{}":{
+		"prefix":"cell",
+		"body":[
+			"\\cell[${2:TikZ options}]{${1:text}}"
+		]
+	},
+
+
+	"separator[]":{
+		"prefix":"separator",
+		"body":[
+			"\\separator[${1:TikZ options}]"
+		]
+	},
+
+
+	"stackbottom[]{}":{
+		"prefix":"stackbottom",
+		"body":[
+			"\\stackbottom[${2:TikZ options}]{${1:text}}"
+		]
+	},
+
+
+	"stacktop[]{}":{
+		"prefix":"stacktop",
+		"body":[
+			"\\stacktop[${2:TikZ options}]{${1:text}}"
+		]
+	},
+
+
+	"structcell[]{}":{
+		"prefix":"structcell",
+		"body":[
+			"\\structcell[${2:TikZ options}]{${1:text}}"
+		]
+	},
+
+
 	"drawstack":{
 		"prefix":"drawstack",
 		"body":[
 			"\\begin{drawstack}",
-			"\t$1",
+				"\t$1",
+			"\\end{drawstack}"
+		]
+	},
+
+
+	"drawstack":{
+		"prefix":"drawstack",
+		"body":[
+			"\\begin{drawstack}",
+				"\t$1",
 			"\\end{drawstack}"
 		]
 	}

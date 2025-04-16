@@ -1,7 +1,7 @@
 {
 
 
-	"tdplotsetmaincoords":{
+	"tdplotsetmaincoords{}{}":{
 		"prefix":"tdplotsetmaincoords",
 		"body":[
 			"\\tdplotsetmaincoords{${1:θ}}{${2:φ}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"tdplotsetrotatedcoords":{
+	"tdplotsetrotatedcoords{}{}{}":{
 		"prefix":"tdplotsetrotatedcoords",
 		"body":[
 			"\\tdplotsetrotatedcoords{${1:α}}{${2:β}}{${3:γ}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"tdplotsetrotatedcoordsorigin":{
+	"tdplotsetrotatedcoordsorigin{}":{
 		"prefix":"tdplotsetrotatedcoordsorigin",
 		"body":[
 			"\\tdplotsetrotatedcoordsorigin{${1:point}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"tdplotsetthetaplanecoords":{
+	"tdplotsetthetaplanecoords{}":{
 		"prefix":"tdplotsetthetaplanecoords",
 		"body":[
 			"\\tdplotsetthetaplanecoords{${1:φ}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"tdplotsetrotatedthetaplanecoords":{
+	"tdplotsetrotatedthetaplanecoords{}":{
 		"prefix":"tdplotsetrotatedthetaplanecoords",
 		"body":[
 			"\\tdplotsetrotatedthetaplanecoords{${1:φ}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"tdplotsetcoord":{
+	"tdplotsetcoord{}{}{}{}":{
 		"prefix":"tdplotsetcoord",
 		"body":[
 			"\\tdplotsetcoord{${1:point}}{${2:r}}{${3:θ}}{${4:φ}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"tdplottransformmainrot":{
+	"tdplottransformmainrot{}{}{}":{
 		"prefix":"tdplottransformmainrot",
 		"body":[
 			"\\tdplottransformmainrot{${1:x}}{${2:y}}{${3:z}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"tdplottransformrotmain":{
+	"tdplottransformrotmain{}{}{}":{
 		"prefix":"tdplottransformrotmain",
 		"body":[
 			"\\tdplottransformrotmain{${1:x}}{${2:y}}{${3:z}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"tdplottransformmainscreen":{
+	"tdplottransformmainscreen{}{}{}":{
 		"prefix":"tdplottransformmainscreen",
 		"body":[
 			"\\tdplottransformmainscreen{${1:x}}{${2:y}}{${3:z}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"tdplotgetpolarcoords":{
+	"tdplotgetpolarcoords{}{}{}":{
 		"prefix":"tdplotgetpolarcoords",
 		"body":[
 			"\\tdplotgetpolarcoords{${1:x}}{${2:y}}{${3:z}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"tdplotcrossprod":{
+	"tdplotcrossprod()()":{
 		"prefix":"tdplotcrossprod",
 		"body":[
 			"\\tdplotcrossprod(${1:x1},${2:y1},${3:z1})(${4:x2},${5:y2},${6:z2})"
@@ -137,7 +137,7 @@
 	},
 
 
-	"tdplotdefinepoints":{
+	"tdplotdefinepoints()()()":{
 		"prefix":"tdplotdefinepoints",
 		"body":[
 			"\\tdplotdefinepoints(${1:vx},${2:vy},${3:vz})(${4:x1},${5:y1},${6:z1})(${7:x2},${8:y2},${9:z2})"
@@ -145,7 +145,7 @@
 	},
 
 
-	"tdplotdrawarc":{
+	"tdplotdrawarc{}{}{}{}{}{}":{
 		"prefix":"tdplotdrawarc",
 		"body":[
 			"\\tdplotdrawarc{${1:center}}{${2:r}}{${3:angle start}}{${4:angle end}}{${5:label options}}{${6:label}}"
@@ -153,26 +153,10 @@
 	},
 
 
-	"tdplotdrawarc":{
-		"prefix":"tdplotdrawarc",
-		"body":[
-			"\\tdplotdrawarc[${7:options%keyvals}]{${1:center}}{${2:r}}{${3:angle start}}{${4:angle end}}{${5:label options}}{${6:label}}"
-		]
-	},
-
-
-	"tdplotdrawpolytopearc":{
+	"tdplotdrawpolytopearc{}{}{}":{
 		"prefix":"tdplotdrawpolytopearc",
 		"body":[
 			"\\tdplotdrawpolytopearc{${1:r}}{${2:label options}}{${3:label}}"
-		]
-	},
-
-
-	"tdplotdrawpolytopearc":{
-		"prefix":"tdplotdrawpolytopearc",
-		"body":[
-			"\\tdplotdrawpolytopearc[${4:options%keyvals}]{${1:r}}{${2:label options}}{${3:label}}"
 		]
 	},
 
@@ -249,18 +233,10 @@
 	},
 
 
-	"tdplotsphericalsurfaceplot":{
+	"tdplotsphericalsurfaceplot{}{}{}{}{}{}{}{}":{
 		"prefix":"tdplotsphericalsurfaceplot",
 		"body":[
 			"\\tdplotsphericalsurfaceplot{${1:θ-steps}}{${2:φ-steps}}{${3:function}}{${4:line color}}{${5:fill color}}{${6:x axis}}{${7:y axis}}{${8:z axis}}"
-		]
-	},
-
-
-	"tdplotsphericalsurfaceplot":{
-		"prefix":"tdplotsphericalsurfaceplot",
-		"body":[
-			"\\tdplotsphericalsurfaceplot[${9:fill style%keyvals}]{${1:θ-steps}}{${2:φ-steps}}{${3:function}}{${4:line color}}{${5:fill color}}{${6:x axis}}{${7:y axis}}{${8:z axis}}"
 		]
 	},
 
@@ -289,7 +265,7 @@
 	},
 
 
-	"tdplotsetpolarplotrange":{
+	"tdplotsetpolarplotrange{}{}{}{}":{
 		"prefix":"tdplotsetpolarplotrange",
 		"body":[
 			"\\tdplotsetpolarplotrange{${1:θ1}}{${2:θ2}}{${3:φ1}}{${4:φ2}}"
@@ -305,7 +281,7 @@
 	},
 
 
-	"tdplotshowargcolorguide":{
+	"tdplotshowargcolorguide{}{}{}{}":{
 		"prefix":"tdplotshowargcolorguide",
 		"body":[
 			"\\tdplotshowargcolorguide{${1:x pos}}{${2:y pos}}{${3:x size}}{${4:y size}}"
@@ -313,7 +289,7 @@
 	},
 
 
-	"tdplotsinandcos":{
+	"tdplotsinandcos{}{}{}":{
 		"prefix":"tdplotsinandcos",
 		"body":[
 			"\\tdplotsinandcos{${1:sin macro%cmd}}{${2:cos macro%cmd}}{${3:θ}}"
@@ -321,7 +297,7 @@
 	},
 
 
-	"tdplotmult":{
+	"tdplotmult{}{}{}":{
 		"prefix":"tdplotmult",
 		"body":[
 			"\\tdplotmult{${1:macro%cmd}}{${2:multiplicand}}{${3:multiplicator}}"
@@ -329,7 +305,7 @@
 	},
 
 
-	"tdplotdiv":{
+	"tdplotdiv{}{}{}":{
 		"prefix":"tdplotdiv",
 		"body":[
 			"\\tdplotdiv{${1:macro%cmd}}{${2:dividend}}{${3:divisor}}"
@@ -393,7 +369,7 @@
 	},
 
 
-	"tdplotcheckdiff":{
+	"tdplotcheckdiff{}{}{}{}{}":{
 		"prefix":"tdplotcheckdiff",
 		"body":[
 			"\\tdplotcheckdiff{${1:val1}}{${2:val2}}{${3:tolerance}}{${4:true}}{${5:false}}"
@@ -401,7 +377,7 @@
 	},
 
 
-	"tdplotdosurfaceplot":{
+	"tdplotdosurfaceplot{}{}{}{}{}{}":{
 		"prefix":"tdplotdosurfaceplot",
 		"body":[
 			"\\tdplotdosurfaceplot{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}"
@@ -409,7 +385,7 @@
 	},
 
 
-	"tdplotsimplesetcoord":{
+	"tdplotsimplesetcoord{}{}{}{}":{
 		"prefix":"tdplotsimplesetcoord",
 		"body":[
 			"\\tdplotsimplesetcoord{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -549,6 +525,30 @@
 		"prefix":"tdplotstopx",
 		"body":[
 			"\\tdplotstopx"
+		]
+	},
+
+
+	"tdplotdrawarc[]{}{}{}{}{}{}":{
+		"prefix":"tdplotdrawarc",
+		"body":[
+			"\\tdplotdrawarc[${7:options%keyvals}]{${1:center}}{${2:r}}{${3:angle start}}{${4:angle end}}{${5:label options}}{${6:label}}"
+		]
+	},
+
+
+	"tdplotdrawpolytopearc[]{}{}{}":{
+		"prefix":"tdplotdrawpolytopearc",
+		"body":[
+			"\\tdplotdrawpolytopearc[${4:options%keyvals}]{${1:r}}{${2:label options}}{${3:label}}"
+		]
+	},
+
+
+	"tdplotsphericalsurfaceplot[]{}{}{}{}{}{}{}{}":{
+		"prefix":"tdplotsphericalsurfaceplot",
+		"body":[
+			"\\tdplotsphericalsurfaceplot[${9:fill style%keyvals}]{${1:θ-steps}}{${2:φ-steps}}{${3:function}}{${4:line color}}{${5:fill color}}{${6:x axis}}{${7:y axis}}{${8:z axis}}"
 		]
 	}
 }

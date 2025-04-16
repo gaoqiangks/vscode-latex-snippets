@@ -9,7 +9,7 @@
 	},
 
 
-	"EmptyName":{
+	"EmptyName{}":{
 		"prefix":"EmptyName",
 		"body":[
 			"\\EmptyName{${1:name%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"INCL":{
+	"INCL{}":{
 		"prefix":"INCL",
 		"body":[
 			"\\INCL{${1:footnote%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"LevelName":{
+	"LevelName{}{}":{
 		"prefix":"LevelName",
 		"body":[
 			"\\LevelName{${1:level}}{${2:name%text}}"
@@ -33,15 +33,7 @@
 	},
 
 
-	"Numerate":{
-		"prefix":"Numerate",
-		"body":[
-			"\\Numerate[${2:cmd}]{${1:counter}}"
-		]
-	},
-
-
-	"Numerate":{
+	"Numerate{}":{
 		"prefix":"Numerate",
 		"body":[
 			"\\Numerate{${1:counter}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"Reset":{
+	"Reset{}":{
 		"prefix":"Reset",
 		"body":[
 			"\\Reset{${1:counter}}"
@@ -217,11 +209,19 @@
 	},
 
 
+	"Numerate[]{}":{
+		"prefix":"Numerate",
+		"body":[
+			"\\Numerate[${2:cmd}]{${1:counter}}"
+		]
+	},
+
+
 	"classif":{
 		"prefix":"classif",
 		"body":[
 			"\\begin{classif}",
-			"\t$1",
+				"\t$1",
 			"\\end{classif}"
 		]
 	}

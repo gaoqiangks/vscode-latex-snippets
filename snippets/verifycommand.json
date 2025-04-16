@@ -1,7 +1,7 @@
 {
 
 
-	"VerifyCommand":{
+	"VerifyCommand{}{}":{
 		"prefix":"VerifyCommand",
 		"body":[
 			"\\VerifyCommand{${1:command}}{${2:md5 checksum}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"VerifyCommand":{
-		"prefix":"VerifyCommand",
-		"body":[
-			"\\VerifyCommand[${3:your package}]{${1:command}}{${2:md5 checksum}}"
-		]
-	},
-
-
-	"VerifyCommand":{
-		"prefix":"VerifyCommand",
-		"body":[
-			"\\VerifyCommand[${3:your package}][${4:their package}]{${1:command}}{${2:md5 checksum}}"
-		]
-	},
-
-
-	"VerifyEnvironment":{
+	"VerifyEnvironment{}{}{}":{
 		"prefix":"VerifyEnvironment",
 		"body":[
 			"\\VerifyEnvironment{${1:envname}}{${2:begin md5 checksum}}{${3:end md5 checksum}}"
@@ -33,23 +17,7 @@
 	},
 
 
-	"VerifyEnvironment":{
-		"prefix":"VerifyEnvironment",
-		"body":[
-			"\\VerifyEnvironment[${4:your package}]{${1:envname}}{${2:begin md5 checksum}}{${3:end md5 checksum}}"
-		]
-	},
-
-
-	"VerifyEnvironment":{
-		"prefix":"VerifyEnvironment",
-		"body":[
-			"\\VerifyEnvironment[${4:your package}][${5:their package}]{${1:envname}}{${2:begin md5 checksum}}{${3:end md5 checksum}}"
-		]
-	},
-
-
-	"IfVerifyCommand":{
+	"IfVerifyCommand{}{}{}{}":{
 		"prefix":"IfVerifyCommand",
 		"body":[
 			"\\IfVerifyCommand{${1:command}}{${2:md5 checksum}}{${3:true}}{${4:false}}"
@@ -57,23 +25,7 @@
 	},
 
 
-	"IfVerifyCommand":{
-		"prefix":"IfVerifyCommand",
-		"body":[
-			"\\IfVerifyCommand[${5:your package}]{${1:command}}{${2:md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyCommand":{
-		"prefix":"IfVerifyCommand",
-		"body":[
-			"\\IfVerifyCommand[${5:your package}][${6:their package}]{${1:command}}{${2:md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyEnvironmentBegin":{
+	"IfVerifyEnvironmentBegin{}{}{}{}":{
 		"prefix":"IfVerifyEnvironmentBegin",
 		"body":[
 			"\\IfVerifyEnvironmentBegin{${1:envname}}{${2:begin md5 checksum}}{${3:true}}{${4:false}}"
@@ -81,42 +33,10 @@
 	},
 
 
-	"IfVerifyEnvironmentBegin":{
-		"prefix":"IfVerifyEnvironmentBegin",
-		"body":[
-			"\\IfVerifyEnvironmentBegin[${5:your package}]{${1:envname}}{${2:begin md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyEnvironmentBegin":{
-		"prefix":"IfVerifyEnvironmentBegin",
-		"body":[
-			"\\IfVerifyEnvironmentBegin[${5:your package}][${6:their package}]{${1:envname}}{${2:begin md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyEnvironmentEnd":{
+	"IfVerifyEnvironmentEnd{}{}{}{}":{
 		"prefix":"IfVerifyEnvironmentEnd",
 		"body":[
 			"\\IfVerifyEnvironmentEnd{${1:envname}}{${2:end md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyEnvironmentEnd":{
-		"prefix":"IfVerifyEnvironmentEnd",
-		"body":[
-			"\\IfVerifyEnvironmentEnd[${5:your package}]{${1:envname}}{${2:end md5 checksum}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfVerifyEnvironmentEnd":{
-		"prefix":"IfVerifyEnvironmentEnd",
-		"body":[
-			"\\IfVerifyEnvironmentEnd[${5:your package}][${6:their package}]{${1:envname}}{${2:end md5 checksum}}{${3:true}}{${4:false}}"
 		]
 	},
 
@@ -129,7 +49,7 @@
 	},
 
 
-	"IfVerifyCommandPassed":{
+	"IfVerifyCommandPassed{}{}":{
 		"prefix":"IfVerifyCommandPassed",
 		"body":[
 			"\\IfVerifyCommandPassed{${1:true}}{${2:false}}"
@@ -137,7 +57,7 @@
 	},
 
 
-	"IfVerifyCommandFailed":{
+	"IfVerifyCommandFailed{}{}":{
 		"prefix":"IfVerifyCommandFailed",
 		"body":[
 			"\\IfVerifyCommandFailed{${1:true}}{${2:false}}"
@@ -145,10 +65,90 @@
 	},
 
 
-	"VERCMDWarning":{
+	"VERCMDWarning{}{}{}":{
 		"prefix":"VERCMDWarning",
 		"body":[
 			"\\VERCMDWarning{${1:your package}}{${2:their package}}{${3:defn name}}"
+		]
+	},
+
+
+	"VerifyCommand[]{}{}":{
+		"prefix":"VerifyCommand",
+		"body":[
+			"\\VerifyCommand[${3:your package}]{${1:command}}{${2:md5 checksum}}"
+		]
+	},
+
+
+	"VerifyCommand[][]{}{}":{
+		"prefix":"VerifyCommand",
+		"body":[
+			"\\VerifyCommand[${3:your package}][${4:their package}]{${1:command}}{${2:md5 checksum}}"
+		]
+	},
+
+
+	"VerifyEnvironment[]{}{}{}":{
+		"prefix":"VerifyEnvironment",
+		"body":[
+			"\\VerifyEnvironment[${4:your package}]{${1:envname}}{${2:begin md5 checksum}}{${3:end md5 checksum}}"
+		]
+	},
+
+
+	"VerifyEnvironment[][]{}{}{}":{
+		"prefix":"VerifyEnvironment",
+		"body":[
+			"\\VerifyEnvironment[${4:your package}][${5:their package}]{${1:envname}}{${2:begin md5 checksum}}{${3:end md5 checksum}}"
+		]
+	},
+
+
+	"IfVerifyCommand[]{}{}{}{}":{
+		"prefix":"IfVerifyCommand",
+		"body":[
+			"\\IfVerifyCommand[${5:your package}]{${1:command}}{${2:md5 checksum}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"IfVerifyCommand[][]{}{}{}{}":{
+		"prefix":"IfVerifyCommand",
+		"body":[
+			"\\IfVerifyCommand[${5:your package}][${6:their package}]{${1:command}}{${2:md5 checksum}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"IfVerifyEnvironmentBegin[]{}{}{}{}":{
+		"prefix":"IfVerifyEnvironmentBegin",
+		"body":[
+			"\\IfVerifyEnvironmentBegin[${5:your package}]{${1:envname}}{${2:begin md5 checksum}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"IfVerifyEnvironmentBegin[][]{}{}{}{}":{
+		"prefix":"IfVerifyEnvironmentBegin",
+		"body":[
+			"\\IfVerifyEnvironmentBegin[${5:your package}][${6:their package}]{${1:envname}}{${2:begin md5 checksum}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"IfVerifyEnvironmentEnd[]{}{}{}{}":{
+		"prefix":"IfVerifyEnvironmentEnd",
+		"body":[
+			"\\IfVerifyEnvironmentEnd[${5:your package}]{${1:envname}}{${2:end md5 checksum}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"IfVerifyEnvironmentEnd[][]{}{}{}{}":{
+		"prefix":"IfVerifyEnvironmentEnd",
+		"body":[
+			"\\IfVerifyEnvironmentEnd[${5:your package}][${6:their package}]{${1:envname}}{${2:end md5 checksum}}{${3:true}}{${4:false}}"
 		]
 	}
 }

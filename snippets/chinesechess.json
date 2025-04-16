@@ -9,31 +9,7 @@
 	},
 
 
-	"cchessboard":{
-		"prefix":"cchessboard",
-		"body":[
-			"\\cchessboard[${1:外观选项%keyvals}]"
-		]
-	},
-
-
-	"cchessboard*":{
-		"prefix":"cchessboard*",
-		"body":[
-			"\\cchessboard*"
-		]
-	},
-
-
-	"cchessboard*":{
-		"prefix":"cchessboard*",
-		"body":[
-			"\\cchessboard*[${1:外观选项%keyvals}]"
-		]
-	},
-
-
-	"cchessman":{
+	"cchessman{}":{
 		"prefix":"cchessman",
 		"body":[
 			"\\cchessman{${1:棋子列表}}"
@@ -41,15 +17,7 @@
 	},
 
 
-	"cchessman":{
-		"prefix":"cchessman",
-		"body":[
-			"\\cchessman[${2:外观选项%keyvals}]{${1:棋子列表}}"
-		]
-	},
-
-
-	"init":{
+	"init{}":{
 		"prefix":"init",
 		"body":[
 			"\\init{${1:棋子列表}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"set":{
+	"set{}{}":{
 		"prefix":"set",
 		"body":[
 			"\\set{${1:棋子位置}}{${2:棋子位置列表}}"
@@ -65,7 +33,7 @@
 	},
 
 
-	"del":{
+	"del{}":{
 		"prefix":"del",
 		"body":[
 			"\\del{${1:棋盘坐标}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"mov":{
+	"mov{}{}{}":{
 		"prefix":"mov",
 		"body":[
 			"\\mov{${1:棋子编码}}{${2:原棋盘坐标}}{${3:新棋盘坐标}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"printman":{
+	"printman{}":{
 		"prefix":"printman",
 		"body":[
 			"\\printman{${1:棋子编码%ref}}"
@@ -89,15 +57,7 @@
 	},
 
 
-	"printman":{
-		"prefix":"printman",
-		"body":[
-			"\\printman[${2:外观选项%keyvals}]{${1:棋子编码%ref}}"
-		]
-	},
-
-
-	"getpiece":{
+	"getpiece{}":{
 		"prefix":"getpiece",
 		"body":[
 			"\\getpiece{${1:棋子编码}}"
@@ -105,15 +65,7 @@
 	},
 
 
-	"getpiece":{
-		"prefix":"getpiece",
-		"body":[
-			"\\getpiece[${2:棋子字号}]{${1:棋子编码}}"
-		]
-	},
-
-
-	"piecechar":{
+	"piecechar{}{}":{
 		"prefix":"piecechar",
 		"body":[
 			"\\piecechar{${1:棋子编码}}{${2:棋子字符}}"
@@ -129,10 +81,58 @@
 	},
 
 
-	"cchessset":{
+	"cchessset{}":{
 		"prefix":"cchessset",
 		"body":[
 			"\\cchessset{${1:外观选项%keyvals}}"
+		]
+	},
+
+
+	"cchessboard*":{
+		"prefix":"*cchessboard",
+		"body":[
+			"\\cchessboard*"
+		]
+	},
+
+
+	"cchessboard*[]":{
+		"prefix":"*cchessboard",
+		"body":[
+			"\\cchessboard*[${1:外观选项%keyvals}]"
+		]
+	},
+
+
+	"cchessboard[]":{
+		"prefix":"cchessboard",
+		"body":[
+			"\\cchessboard[${1:外观选项%keyvals}]"
+		]
+	},
+
+
+	"cchessman[]{}":{
+		"prefix":"cchessman",
+		"body":[
+			"\\cchessman[${2:外观选项%keyvals}]{${1:棋子列表}}"
+		]
+	},
+
+
+	"printman[]{}":{
+		"prefix":"printman",
+		"body":[
+			"\\printman[${2:外观选项%keyvals}]{${1:棋子编码%ref}}"
+		]
+	},
+
+
+	"getpiece[]{}":{
+		"prefix":"getpiece",
+		"body":[
+			"\\getpiece[${2:棋子字号}]{${1:棋子编码}}"
 		]
 	},
 
@@ -141,17 +141,37 @@
 		"prefix":"setcchessman",
 		"body":[
 			"\\begin{setcchessman}",
-			"\t$1",
+				"\t$1",
 			"\\end{setcchessman}"
 		]
 	},
 
 
 	"setcchessman*":{
-		"prefix":"setcchessman*",
+		"prefix":"*setcchessman",
 		"body":[
 			"\\begin{setcchessman*}",
-			"\t$1",
+				"\t$1",
+			"\\end{setcchessman*}"
+		]
+	},
+
+
+	"setcchessman":{
+		"prefix":"setcchessman",
+		"body":[
+			"\\begin{setcchessman}",
+				"\t$1",
+			"\\end{setcchessman}"
+		]
+	},
+
+
+	"setcchessman*":{
+		"prefix":"setcchessman",
+		"body":[
+			"\\begin{setcchessman*}",
+				"\t$1",
 			"\\end{setcchessman*}"
 		]
 	}

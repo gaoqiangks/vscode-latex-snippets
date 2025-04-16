@@ -1,7 +1,7 @@
 {
 
 
-	"shchange":{
+	"shchange{}{}":{
 		"prefix":"shchange",
 		"body":[
 			"\\shchange{${1:key%keyvals}}{${2:value}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"shchangecolor":{
+	"shchangecolor{}{}":{
 		"prefix":"shchangecolor",
 		"body":[
 			"\\shchangecolor{${1:color key%keyvals}}{${2:color}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"shchangesymbol":{
+	"shchangesymbol{}{}":{
 		"prefix":"shchangesymbol",
 		"body":[
 			"\\shchangesymbol{${1:symbol key%keyvals}}{${2:symbol}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"shpreset":{
+	"shpreset{}":{
 		"prefix":"shpreset",
 		"body":[
 			"\\shpreset{${1:option%keyvals}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"shpresetdef":{
+	"shpresetdef{}{}":{
 		"prefix":"shpresetdef",
 		"body":[
 			"\\shpresetdef{${1:name}}{${2:definition}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"shuser":{
+	"shuser{}":{
 		"prefix":"shuser",
 		"body":[
 			"\\shuser{${1:user name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"shmachine":{
+	"shmachine{}":{
 		"prefix":"shmachine",
 		"body":[
 			"\\shmachine{${1:machine name}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"shline":{
+	"shline{}{}":{
 		"prefix":"shline",
 		"body":[
 			"\\shline{${1:path}}{${2:command}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"shoutput":{
+	"shoutput{}{}":{
 		"prefix":"shoutput",
 		"body":[
 			"\\shoutput{${1:shell cmd options}}{${2:text%plain}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"shlistname":{
+	"shlistname{}":{
 		"prefix":"shlistname",
 		"body":[
 			"\\shlistname{${1:sessions list name}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"shfloatname":{
+	"shfloatname{}":{
 		"prefix":"shfloatname",
 		"body":[
 			"\\shfloatname{${1:sessions float name}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"shread":{
+	"shread{}{}":{
 		"prefix":"shread",
 		"body":[
 			"\\shread{${1:init cmd}}{${2:file}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"shrun":{
+	"shrun{}":{
 		"prefix":"shrun",
 		"body":[
 			"\\shrun{${1:shell command}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"shautoread":{
+	"shautoread{}{}":{
 		"prefix":"shautoread",
 		"body":[
 			"\\shautoread{${1:init cmd}}{${2:file}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"shautorun":{
+	"shautorun{}":{
 		"prefix":"shautorun",
 		"body":[
 			"\\shautorun{${1:shell command}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"shautopath":{
+	"shautopath{}":{
 		"prefix":"shautopath",
 		"body":[
 			"\\shautopath{${1:true or false}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"shautoformat":{
+	"shautoformat{}":{
 		"prefix":"shautoformat",
 		"body":[
 			"\\shautoformat{${1:true or false}}"
@@ -169,22 +169,22 @@
 	},
 
 
-	"shbox":{
-		"prefix":"shbox",
-		"body":[
-			"\\begin{shbox}",
-			"\t$1",
-			"\\end{shbox}"
-		]
-	},
-
-
 	"sh":{
 		"prefix":"sh",
 		"body":[
 			"\\begin{sh}",
-			"\t$1",
+				"\t$1",
 			"\\end{sh}"
+		]
+	},
+
+
+	"shbox":{
+		"prefix":"shbox",
+		"body":[
+			"\\begin{shbox}",
+				"\t$1",
+			"\\end{shbox}"
 		]
 	}
 }

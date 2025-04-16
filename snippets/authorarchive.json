@@ -1,7 +1,7 @@
 {
 
 
-	"authorsetup":{
+	"authorsetup{}":{
 		"prefix":"authorsetup",
 		"body":[
 			"\\authorsetup{${1:option%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"authorat":{
+	"authorat{}":{
 		"prefix":"authorat",
 		"body":[
 			"\\authorat{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"authorwidth":{
+	"authorwidth{}":{
 		"prefix":"authorwidth",
 		"body":[
 			"\\authorwidth{${1:width}}"
@@ -41,32 +41,62 @@
 	},
 
 
-	"description*":{
-		"prefix":"description*",
-		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
-		]
-	},
-
-
 	"enumerate*":{
-		"prefix":"enumerate*",
+		"prefix":"*enumerate",
 		"body":[
 			"\\begin{enumerate*}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumerate*}"
 		]
 	},
 
 
 	"itemize*":{
-		"prefix":"itemize*",
+		"prefix":"*itemize",
 		"body":[
 			"\\begin{itemize*}",
-			"\t$1",
+				"\t$1",
 			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

@@ -9,18 +9,10 @@
 	},
 
 
-	"mupinput":{
+	"mupinput{}":{
 		"prefix":"mupinput",
 		"body":[
 			"\\mupinput{${1:file}}"
-		]
-	},
-
-
-	"mupinput":{
-		"prefix":"mupinput",
-		"body":[
-			"\\mupinput[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -33,11 +25,29 @@
 	},
 
 
+	"mupinput[]{}":{
+		"prefix":"mupinput",
+		"body":[
+			"\\mupinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
 	"mup":{
 		"prefix":"mup",
 		"body":[
 			"\\begin{mup}",
-			"\t$1",
+				"\t$1",
+			"\\end{mup}"
+		]
+	},
+
+
+	"mup":{
+		"prefix":"mup",
+		"body":[
+			"\\begin{mup}",
+				"\t$1",
 			"\\end{mup}"
 		]
 	}

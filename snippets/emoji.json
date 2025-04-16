@@ -1,7 +1,7 @@
 {
 
 
-	"setemojifont":{
+	"setemojifont{}":{
 		"prefix":"setemojifont",
 		"body":[
 			"\\setemojifont{${1:font}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"setemojifont":{
-		"prefix":"setemojifont",
+	"emoji{}":{
+		"prefix":"emoji",
 		"body":[
-			"\\setemojifont{${1:font}}[${2:font features%keyvals}]"
+			"\\emoji{${1:name}}"
 		]
 	},
 
 
-	"emoji":{
-		"prefix":"emoji",
+	"setemojifont{}[]":{
+		"prefix":"setemojifont",
 		"body":[
-			"\\emoji{${1:name}}"
+			"\\setemojifont{${1:font}}[${2:font features%keyvals}]"
 		]
 	}
 }

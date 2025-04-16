@@ -9,14 +9,6 @@
 	},
 
 
-	"startchronology":{
-		"prefix":"startchronology",
-		"body":[
-			"\\startchronology[${1:options%keyvals}]"
-		]
-	},
-
-
 	"stopchronology":{
 		"prefix":"stopchronology",
 		"body":[
@@ -25,7 +17,7 @@
 	},
 
 
-	"chronoevent":{
+	"chronoevent{}{}":{
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent{${1:year}}{${2:label text}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"chronoevent":{
+	"chronoevent{}{}":{
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent{${1:month/year}}{${2:label text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"chronoevent":{
+	"chronoevent{}{}":{
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent{${1:day/month/year}}{${2:label text}}"
@@ -49,31 +41,7 @@
 	},
 
 
-	"chronoevent":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent[${3:options}]{${1:year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoevent":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent[${3:options}]{${1:month/year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoevent":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent[${3:options}]{${1:day/month/year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoperiode":{
+	"chronoperiode{}{}{}":{
 		"prefix":"chronoperiode",
 		"body":[
 			"\\chronoperiode{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
@@ -81,15 +49,7 @@
 	},
 
 
-	"chronoperiode":{
-		"prefix":"chronoperiode",
-		"body":[
-			"\\chronoperiode[${4:options%keyvals}]{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
-		]
-	},
-
-
-	"chronoperiodecoloralternation":{
+	"chronoperiodecoloralternation{}":{
 		"prefix":"chronoperiodecoloralternation",
 		"body":[
 			"\\chronoperiodecoloralternation{${1:color1,color2,...}}"
@@ -105,15 +65,7 @@
 	},
 
 
-	"restartchronoperiodecolor":{
-		"prefix":"restartchronoperiodecolor",
-		"body":[
-			"\\restartchronoperiodecolor[${1:color}]"
-		]
-	},
-
-
-	"chronograduation":{
+	"chronograduation{}":{
 		"prefix":"chronograduation",
 		"body":[
 			"\\chronograduation{${1:integer}}"
@@ -121,23 +73,7 @@
 	},
 
 
-	"chronograduation":{
-		"prefix":"chronograduation",
-		"body":[
-			"\\chronograduation[${2:periode|event}]{${1:integer}}"
-		]
-	},
-
-
-	"chronograduation":{
-		"prefix":"chronograduation",
-		"body":[
-			"\\chronograduation[${2:periode|event}][${3:options%keyvals}]{${1:integer}}"
-		]
-	},
-
-
-	"definechronoevent":{
+	"definechronoevent{}":{
 		"prefix":"definechronoevent",
 		"body":[
 			"\\definechronoevent{${1:name}}"
@@ -145,15 +81,7 @@
 	},
 
 
-	"definechronoevent":{
-		"prefix":"definechronoevent",
-		"body":[
-			"\\definechronoevent{${1:name}}[${2:options%keyvals}]"
-		]
-	},
-
-
-	"definechronoperiode":{
+	"definechronoperiode{}":{
 		"prefix":"definechronoperiode",
 		"body":[
 			"\\definechronoperiode{${1:name}}"
@@ -161,15 +89,7 @@
 	},
 
 
-	"definechronoperiode":{
-		"prefix":"definechronoperiode",
-		"body":[
-			"\\definechronoperiode{${1:name}}[${2:options%keyvals}]"
-		]
-	},
-
-
-	"setupchronology":{
+	"setupchronology{}":{
 		"prefix":"setupchronology",
 		"body":[
 			"\\setupchronology{${1:options%keyvals}}"
@@ -177,7 +97,7 @@
 	},
 
 
-	"setupchronoevent":{
+	"setupchronoevent{}":{
 		"prefix":"setupchronoevent",
 		"body":[
 			"\\setupchronoevent{${1:options%keyvals}}"
@@ -185,15 +105,7 @@
 	},
 
 
-	"setupchronoevent":{
-		"prefix":"setupchronoevent",
-		"body":[
-			"\\setupchronoevent[${2:name}]{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronoperiode":{
+	"setupchronoperiode{}":{
 		"prefix":"setupchronoperiode",
 		"body":[
 			"\\setupchronoperiode{${1:options%keyvals}}"
@@ -201,26 +113,10 @@
 	},
 
 
-	"setupchronoperiode":{
-		"prefix":"setupchronoperiode",
-		"body":[
-			"\\setupchronoperiode[${2:name}]{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronograduation":{
+	"setupchronograduation{}":{
 		"prefix":"setupchronograduation",
 		"body":[
 			"\\setupchronograduation{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronograduation":{
-		"prefix":"setupchronograduation",
-		"body":[
-			"\\setupchronograduation[${2:periode|event}]{${1:options%keyvals}}"
 		]
 	},
 
@@ -233,11 +129,125 @@
 	},
 
 
+	"startchronology[]":{
+		"prefix":"startchronology",
+		"body":[
+			"\\startchronology[${1:options%keyvals}]"
+		]
+	},
+
+
+	"chronoevent[]{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent[${3:options}]{${1:year}}{${2:label text}}"
+		]
+	},
+
+
+	"chronoevent[]{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent[${3:options}]{${1:month/year}}{${2:label text}}"
+		]
+	},
+
+
+	"chronoevent[]{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent[${3:options}]{${1:day/month/year}}{${2:label text}}"
+		]
+	},
+
+
+	"chronoperiode[]{}{}{}":{
+		"prefix":"chronoperiode",
+		"body":[
+			"\\chronoperiode[${4:options%keyvals}]{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
+		]
+	},
+
+
+	"restartchronoperiodecolor[]":{
+		"prefix":"restartchronoperiodecolor",
+		"body":[
+			"\\restartchronoperiodecolor[${1:color}]"
+		]
+	},
+
+
+	"chronograduation[]{}":{
+		"prefix":"chronograduation",
+		"body":[
+			"\\chronograduation[${2:periode|event}]{${1:integer}}"
+		]
+	},
+
+
+	"chronograduation[][]{}":{
+		"prefix":"chronograduation",
+		"body":[
+			"\\chronograduation[${2:periode|event}][${3:options%keyvals}]{${1:integer}}"
+		]
+	},
+
+
+	"definechronoevent{}[]":{
+		"prefix":"definechronoevent",
+		"body":[
+			"\\definechronoevent{${1:name}}[${2:options%keyvals}]"
+		]
+	},
+
+
+	"definechronoperiode{}[]":{
+		"prefix":"definechronoperiode",
+		"body":[
+			"\\definechronoperiode{${1:name}}[${2:options%keyvals}]"
+		]
+	},
+
+
+	"setupchronoevent[]{}":{
+		"prefix":"setupchronoevent",
+		"body":[
+			"\\setupchronoevent[${2:name}]{${1:options%keyvals}}"
+		]
+	},
+
+
+	"setupchronoperiode[]{}":{
+		"prefix":"setupchronoperiode",
+		"body":[
+			"\\setupchronoperiode[${2:name}]{${1:options%keyvals}}"
+		]
+	},
+
+
+	"setupchronograduation[]{}":{
+		"prefix":"setupchronograduation",
+		"body":[
+			"\\setupchronograduation[${2:periode|event}]{${1:options%keyvals}}"
+		]
+	},
+
+
 	"chronology":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-			"\t$1",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
 			"\\end{chronology}"
 		]
 	}

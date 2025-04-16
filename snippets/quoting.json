@@ -1,7 +1,7 @@
 {
 
 
-	"quotingsetup":{
+	"quotingsetup{}":{
 		"prefix":"quotingsetup",
 		"body":[
 			"\\quotingsetup{${1:options%keyvals}}"
@@ -21,7 +21,17 @@
 		"prefix":"quoting",
 		"body":[
 			"\\begin{quoting}",
-			"\t$1",
+				"\t$1",
+			"\\end{quoting}"
+		]
+	},
+
+
+	"quoting":{
+		"prefix":"quoting",
+		"body":[
+			"\\begin{quoting}",
+				"\t$1",
 			"\\end{quoting}"
 		]
 	}

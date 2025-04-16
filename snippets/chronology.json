@@ -1,7 +1,7 @@
 {
 
 
-	"decimaldate":{
+	"decimaldate{}{}{}":{
 		"prefix":"decimaldate",
 		"body":[
 			"\\decimaldate{${1:day}}{${2:month}}{${3:year}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"eventspan":{
+	"eventspan{}{}{}":{
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}"
@@ -17,39 +17,7 @@
 	},
 
 
-	"eventspan":{
-		"prefix":"eventspan",
-		"body":[
-			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}]"
-		]
-	},
-
-
-	"eventspan":{
-		"prefix":"eventspan",
-		"body":[
-			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}]"
-		]
-	},
-
-
-	"eventspan":{
-		"prefix":"eventspan",
-		"body":[
-			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}]"
-		]
-	},
-
-
-	"eventspan":{
-		"prefix":"eventspan",
-		"body":[
-			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}][${7:indicator}]"
-		]
-	},
-
-
-	"eventpoint":{
+	"eventpoint{}{}":{
 		"prefix":"eventpoint",
 		"body":[
 			"\\eventpoint{${1:date}}{${2:label%text}}"
@@ -57,31 +25,7 @@
 	},
 
 
-	"eventpoint":{
-		"prefix":"eventpoint",
-		"body":[
-			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}]"
-		]
-	},
-
-
-	"eventpoint":{
-		"prefix":"eventpoint",
-		"body":[
-			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}]"
-		]
-	},
-
-
-	"eventpoint":{
-		"prefix":"eventpoint",
-		"body":[
-			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}][${5:height}]"
-		]
-	},
-
-
-	"event":{
+	"event{}{}":{
 		"prefix":"event",
 		"body":[
 			"\\event{${1:end-date}}{${2:label%text}}"
@@ -89,7 +33,63 @@
 	},
 
 
-	"event":{
+	"eventspan{}{}{}[]":{
+		"prefix":"eventspan",
+		"body":[
+			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}]"
+		]
+	},
+
+
+	"eventspan{}{}{}[][]":{
+		"prefix":"eventspan",
+		"body":[
+			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}]"
+		]
+	},
+
+
+	"eventspan{}{}{}[][][]":{
+		"prefix":"eventspan",
+		"body":[
+			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}]"
+		]
+	},
+
+
+	"eventspan{}{}{}[][][][]":{
+		"prefix":"eventspan",
+		"body":[
+			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}][${7:indicator}]"
+		]
+	},
+
+
+	"eventpoint{}{}[]":{
+		"prefix":"eventpoint",
+		"body":[
+			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}]"
+		]
+	},
+
+
+	"eventpoint{}{}[][]":{
+		"prefix":"eventpoint",
+		"body":[
+			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}]"
+		]
+	},
+
+
+	"eventpoint{}{}[][][]":{
+		"prefix":"eventpoint",
+		"body":[
+			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}][${5:height}]"
+		]
+	},
+
+
+	"event[]{}{}":{
 		"prefix":"event",
 		"body":[
 			"\\event[${3:begin-date}]{${1:end-date}}{${2:label%text}}"
@@ -101,7 +101,77 @@
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-			"\t$1",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
+			"\\end{chronology}"
+		]
+	},
+
+
+	"chronology":{
+		"prefix":"chronology",
+		"body":[
+			"\\begin{chronology}",
+				"\t$1",
 			"\\end{chronology}"
 		]
 	}

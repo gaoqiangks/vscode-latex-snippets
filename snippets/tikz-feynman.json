@@ -1,7 +1,7 @@
 {
 
 
-	"tikzfeynmanset":{
+	"tikzfeynmanset{}":{
 		"prefix":"tikzfeynmanset",
 		"body":[
 			"\\tikzfeynmanset{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"diagram":{
+	"diagram{}":{
 		"prefix":"diagram",
 		"body":[
 			"\\diagram{${1:contents}}"
@@ -17,26 +17,26 @@
 	},
 
 
-	"diagram":{
-		"prefix":"diagram",
-		"body":[
-			"\\diagram[${2:options%keyvals}]{${1:contents}}"
-		]
-	},
-
-
-	"diagram*":{
-		"prefix":"diagram*",
+	"diagram*{}":{
+		"prefix":"*diagram",
 		"body":[
 			"\\diagram*{${1:contents}}"
 		]
 	},
 
 
-	"diagram*":{
-		"prefix":"diagram*",
+	"diagram*[]{}":{
+		"prefix":"*diagram",
 		"body":[
 			"\\diagram*[${2:options%keyvals}]{${1:contents}}"
+		]
+	},
+
+
+	"diagram[]{}":{
+		"prefix":"diagram",
+		"body":[
+			"\\diagram[${2:options%keyvals}]{${1:contents}}"
 		]
 	},
 
@@ -45,7 +45,17 @@
 		"prefix":"feynman",
 		"body":[
 			"\\begin{feynman}",
-			"\t$1",
+				"\t$1",
+			"\\end{feynman}"
+		]
+	},
+
+
+	"feynman":{
+		"prefix":"feynman",
+		"body":[
+			"\\begin{feynman}",
+				"\t$1",
 			"\\end{feynman}"
 		]
 	}

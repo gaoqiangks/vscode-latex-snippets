@@ -1,7 +1,7 @@
 {
 
 
-	"ui":{
+	"ui{}":{
 		"prefix":"ui",
 		"body":[
 			"\\ui{${1:keyvals}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"useRandomSeed":{
+	"useRandomSeed{}":{
 		"prefix":"useRandomSeed",
 		"body":[
 			"\\useRandomSeed{${1:number}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"setrannum":{
+	"setrannum{}{}{}":{
 		"prefix":"setrannum",
 		"body":[
 			"\\setrannum{${1:count register}}{${2:min}}{${3:max}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"setrandim":{
+	"setrandim{}{}{}":{
 		"prefix":"setrandim",
 		"body":[
 			"\\setrandim{${1:dimen register}}{${2:min}}{${3:max}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"displaySumryTbl":{
+	"displaySumryTbl{}":{
 		"prefix":"displaySumryTbl",
 		"body":[
 			"\\displaySumryTbl{${1:quiz name}}"
@@ -129,15 +129,7 @@
 	},
 
 
-	"displaySumryTbl":{
-		"prefix":"displaySumryTbl",
-		"body":[
-			"\\displaySumryTbl[${2:options%keyvals}]{${1:quiz name}}"
-		]
-	},
-
-
-	"ccatCurrQzWith":{
+	"ccatCurrQzWith()":{
 		"prefix":"ccatCurrQzWith",
 		"body":[
 			"\\ccatCurrQzWith(${1:arg})"
@@ -217,7 +209,7 @@
 	},
 
 
-	"sumrytbllinkHook":{
+	"sumrytbllinkHook{}":{
 		"prefix":"sumrytbllinkHook",
 		"body":[
 			"\\sumrytbllinkHook{${1:code}}"
@@ -225,7 +217,7 @@
 	},
 
 
-	"sumryTblProbFmt":{
+	"sumryTblProbFmt{}":{
 		"prefix":"sumryTblProbFmt",
 		"body":[
 			"\\sumryTblProbFmt{${1:text}}"
@@ -361,135 +353,7 @@
 	},
 
 
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}{${3:samples}}{${4:precision}}{${5:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${9:%<variables%>}){${3:samples}}{${4:precision}}{${5:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${10:%<variables%>})[${7:dest}]{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${11:%<variables%>})[${7:dest}]{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}[${10:comp func}]"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${10:%<variables%>}){${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${11:%<variables%>})[${8:dest}]{${3:samples}}{${4:precision}}{${5:[${9:a1,b1}]x[${10:a2,b2}]x...}}"
-		]
-	},
-
-
-	"rbmIntrvl":{
-		"prefix":"rbmIntrvl",
-		"body":[
-			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${12:%<variables%>})[${8:dest}]{${3:samples}}{${4:precision}}{${5:[${9:a1,b1}]x[${10:a2,b2}]x...}}[${11:comp func}]"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath{${1:answer}}{${2:samples}}{${3:precision}}{${4:[${5:a1,b1}]x[${6:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath{${1:answer}}(${7:%<variables%>}){${2:samples}}{${3:precision}}{${4:[${5:a1,b1}]x[${6:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath{${1:answer}}(${8:%<variables%>})[${5:dest}]{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath{${1:answer}}(${9:%<variables%>})[${5:dest}]{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}[${8:comp func}]"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath[${5:eforms params}]{${1:answer}}{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${8:%<variables%>}){${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${9:%<variables%>})[${6:dest}]{${2:samples}}{${3:precision}}{${4:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
-		]
-	},
-
-
-	"RespBoxMath":{
-		"prefix":"RespBoxMath",
-		"body":[
-			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${10:%<variables%>})[${6:dest}]{${2:samples}}{${3:precision}}{${4:[${7:a1,b1}]x[${8:a2,b2}]x...}}[${9:comp func}]"
-		]
-	},
-
-
-	"everyRespBoxTxt":{
+	"everyRespBoxTxt{}":{
 		"prefix":"everyRespBoxTxt",
 		"body":[
 			"\\everyRespBoxTxt{${1:eforms params}}"
@@ -505,7 +369,7 @@
 	},
 
 
-	"AddAAFormat":{
+	"AddAAFormat{}":{
 		"prefix":"AddAAFormat",
 		"body":[
 			"\\AddAAFormat{${1:code}}"
@@ -513,7 +377,7 @@
 	},
 
 
-	"AddAAKeystroke":{
+	"AddAAKeystroke{}":{
 		"prefix":"AddAAKeystroke",
 		"body":[
 			"\\AddAAKeystroke{${1:code}}"
@@ -521,7 +385,7 @@
 	},
 
 
-	"AddAAMouseUpMC":{
+	"AddAAMouseUpMC{}":{
 		"prefix":"AddAAMouseUpMC",
 		"body":[
 			"\\AddAAMouseUpMC{${1:code}}"
@@ -529,7 +393,7 @@
 	},
 
 
-	"AddAAMouseUpMS":{
+	"AddAAMouseUpMS{}":{
 		"prefix":"AddAAMouseUpMS",
 		"body":[
 			"\\AddAAMouseUpMS{${1:code}}"
@@ -537,15 +401,7 @@
 	},
 
 
-	"addToAction*":{
-		"prefix":"addToAction*",
-		"body":[
-			"\\addToAction*{${1:key%plain}}{${2:code}}"
-		]
-	},
-
-
-	"addToAction":{
+	"addToAction{}{}":{
 		"prefix":"addToAction",
 		"body":[
 			"\\addToAction{${1:key%plain}}{${2:code}}"
@@ -585,7 +441,7 @@
 	},
 
 
-	"afterSplChkActn":{
+	"afterSplChkActn{}":{
 		"prefix":"afterSplChkActn",
 		"body":[
 			"\\afterSplChkActn{${1:action}}"
@@ -609,23 +465,7 @@
 	},
 
 
-	"Ans":{
-		"prefix":"Ans",
-		"body":[
-			"\\Ans[${1:partial pts}]{0 or 1}"
-		]
-	},
-
-
-	"AnswerField":{
-		"prefix":"AnswerField",
-		"body":[
-			"\\AnswerField[${2:eforms params}]{${1:base name}}"
-		]
-	},
-
-
-	"AnswerField":{
+	"AnswerField{}":{
 		"prefix":"AnswerField",
 		"body":[
 			"\\AnswerField{${1:base name}}"
@@ -633,7 +473,7 @@
 	},
 
 
-	"answersEndHook":{
+	"answersEndHook{}":{
 		"prefix":"answersEndHook",
 		"body":[
 			"\\answersEndHook{${1:content}}"
@@ -641,7 +481,7 @@
 	},
 
 
-	"Array":{
+	"Array()":{
 		"prefix":"Array",
 		"body":[
 			"\\Array(${1:JS funcs})"
@@ -649,7 +489,7 @@
 	},
 
 
-	"autoAnsFldRaiseBox":{
+	"autoAnsFldRaiseBox{}":{
 		"prefix":"autoAnsFldRaiseBox",
 		"body":[
 			"\\autoAnsFldRaiseBox{${1:length}}"
@@ -661,14 +501,6 @@
 		"prefix":"autoAnswerField",
 		"body":[
 			"\\autoAnswerField"
-		]
-	},
-
-
-	"autoAnswerField":{
-		"prefix":"autoAnswerField",
-		"body":[
-			"\\autoAnswerField[${1:eforms params}]"
 		]
 	},
 
@@ -685,14 +517,6 @@
 		"prefix":"autotabOn",
 		"body":[
 			"\\autotabOn"
-		]
-	},
-
-
-	"bChoices":{
-		"prefix":"bChoices",
-		"body":[
-			"\\bChoices[${1:options%keyvals}]"
 		]
 	},
 
@@ -721,7 +545,7 @@
 	},
 
 
-	"CorrAnsButton":{
+	"CorrAnsButton{}":{
 		"prefix":"CorrAnsButton",
 		"body":[
 			"\\CorrAnsButton{${1:display answer%definition}}"
@@ -729,7 +553,7 @@
 	},
 
 
-	"CorrAnsButton":{
+	"CorrAnsButton{}*{}":{
 		"prefix":"CorrAnsButton",
 		"body":[
 			"\\CorrAnsButton{${1:display answer%definition}}*{${2:JS function}}"
@@ -737,7 +561,7 @@
 	},
 
 
-	"CorrAnsButtonGrp":{
+	"CorrAnsButtonGrp{}":{
 		"prefix":"CorrAnsButtonGrp",
 		"body":[
 			"\\CorrAnsButtonGrp{${1:n1,n2,...}}"
@@ -745,15 +569,7 @@
 	},
 
 
-	"CorrButton":{
-		"prefix":"CorrButton",
-		"body":[
-			"\\CorrButton[${2:eforms params}]{${1:field}}"
-		]
-	},
-
-
-	"CorrButton":{
+	"CorrButton{}":{
 		"prefix":"CorrButton",
 		"body":[
 			"\\CorrButton{${1:field}}"
@@ -785,7 +601,7 @@
 	},
 
 
-	"databaseName":{
+	"databaseName{}":{
 		"prefix":"databaseName",
 		"body":[
 			"\\databaseName{${1:name}}"
@@ -793,7 +609,7 @@
 	},
 
 
-	"DeclareQuiz":{
+	"DeclareQuiz{}":{
 		"prefix":"DeclareQuiz",
 		"body":[
 			"\\DeclareQuiz{${1:name}}"
@@ -817,7 +633,7 @@
 	},
 
 
-	"defaultRDPrecision":{
+	"defaultRDPrecision{}":{
 		"prefix":"defaultRDPrecision",
 		"body":[
 			"\\defaultRDPrecision{${1:precision}}"
@@ -881,15 +697,7 @@
 	},
 
 
-	"eqButton":{
-		"prefix":"eqButton",
-		"body":[
-			"\\eqButton[${2:eforms params}]{${1:field}}"
-		]
-	},
-
-
-	"eqButton":{
+	"eqButton{}":{
 		"prefix":"eqButton",
 		"body":[
 			"\\eqButton{${1:field}}"
@@ -897,7 +705,7 @@
 	},
 
 
-	"eqCGI":{
+	"eqCGI{}":{
 		"prefix":"eqCGI",
 		"body":[
 			"\\eqCGI{${1:URL}}"
@@ -969,7 +777,7 @@
 	},
 
 
-	"eqSubmit":{
+	"eqSubmit{}{}{}":{
 		"prefix":"eqSubmit",
 		"body":[
 			"\\eqSubmit{${1:URL}}{${2:db name}}{${3:table name%text}}"
@@ -977,7 +785,7 @@
 	},
 
 
-	"everyAnswerField":{
+	"everyAnswerField{}":{
 		"prefix":"everyAnswerField",
 		"body":[
 			"\\everyAnswerField{${1:eforms params}}"
@@ -985,7 +793,7 @@
 	},
 
 
-	"everyBeginQuizButton":{
+	"everyBeginQuizButton{}":{
 		"prefix":"everyBeginQuizButton",
 		"body":[
 			"\\everyBeginQuizButton{${1:eforms params}}"
@@ -993,7 +801,7 @@
 	},
 
 
-	"everyCorrAnsButton":{
+	"everyCorrAnsButton{}":{
 		"prefix":"everyCorrAnsButton",
 		"body":[
 			"\\everyCorrAnsButton{${1:eforms params}}"
@@ -1001,7 +809,7 @@
 	},
 
 
-	"everyCorrButton":{
+	"everyCorrButton{}":{
 		"prefix":"everyCorrButton",
 		"body":[
 			"\\everyCorrButton{${1:eforms params}}"
@@ -1009,7 +817,7 @@
 	},
 
 
-	"everyEndQuizButton":{
+	"everyEndQuizButton{}":{
 		"prefix":"everyEndQuizButton",
 		"body":[
 			"\\everyEndQuizButton{${1:eforms params}}"
@@ -1017,7 +825,7 @@
 	},
 
 
-	"everyeqButtonField":{
+	"everyeqButtonField{}":{
 		"prefix":"everyeqButtonField",
 		"body":[
 			"\\everyeqButtonField{${1:eforms params}}"
@@ -1025,7 +833,7 @@
 	},
 
 
-	"everyeqTextField":{
+	"everyeqTextField{}":{
 		"prefix":"everyeqTextField",
 		"body":[
 			"\\everyeqTextField{${1:eforms params}}"
@@ -1033,7 +841,7 @@
 	},
 
 
-	"everyeqTextField":{
+	"everyeqTextField{}":{
 		"prefix":"everyeqTextField",
 		"body":[
 			"\\everyeqTextField{${1:eforms params}}"
@@ -1041,7 +849,7 @@
 	},
 
 
-	"everyGradeField":{
+	"everyGradeField{}":{
 		"prefix":"everyGradeField",
 		"body":[
 			"\\everyGradeField{${1:eforms params}}"
@@ -1049,7 +857,7 @@
 	},
 
 
-	"everyPercentField":{
+	"everyPercentField{}":{
 		"prefix":"everyPercentField",
 		"body":[
 			"\\everyPercentField{${1:eforms params}}"
@@ -1057,7 +865,7 @@
 	},
 
 
-	"everyPointsField":{
+	"everyPointsField{}":{
 		"prefix":"everyPointsField",
 		"body":[
 			"\\everyPointsField{${1:eforms params}}"
@@ -1065,7 +873,7 @@
 	},
 
 
-	"everyqRadioButton":{
+	"everyqRadioButton{}":{
 		"prefix":"everyqRadioButton",
 		"body":[
 			"\\everyqRadioButton{${1:eforms params}}"
@@ -1073,7 +881,7 @@
 	},
 
 
-	"everyRespBoxMath":{
+	"everyRespBoxMath{}":{
 		"prefix":"everyRespBoxMath",
 		"body":[
 			"\\everyRespBoxMath{${1:eforms params}}"
@@ -1081,7 +889,7 @@
 	},
 
 
-	"everyScoreField":{
+	"everyScoreField{}":{
 		"prefix":"everyScoreField",
 		"body":[
 			"\\everyScoreField{${1:eforms params}}"
@@ -1089,7 +897,7 @@
 	},
 
 
-	"everysqClearButton":{
+	"everysqClearButton{}":{
 		"prefix":"everysqClearButton",
 		"body":[
 			"\\everysqClearButton{${1:eforms params}}"
@@ -1097,7 +905,7 @@
 	},
 
 
-	"everysqRadioButton":{
+	"everysqRadioButton{}":{
 		"prefix":"everysqRadioButton",
 		"body":[
 			"\\everysqRadioButton{${1:eforms params}}"
@@ -1105,7 +913,7 @@
 	},
 
 
-	"everysqTallyBox":{
+	"everysqTallyBox{}":{
 		"prefix":"everysqTallyBox",
 		"body":[
 			"\\everysqTallyBox{${1:eforms params}}"
@@ -1113,7 +921,7 @@
 	},
 
 
-	"everysqTallyTotal":{
+	"everysqTallyTotal{}":{
 		"prefix":"everysqTallyTotal",
 		"body":[
 			"\\everysqTallyTotal{${1:eforms params}}"
@@ -1153,7 +961,7 @@
 	},
 
 
-	"expdfbookmark":{
+	"expdfbookmark{}":{
 		"prefix":"expdfbookmark",
 		"body":[
 			"\\expdfbookmark{${1:bookmark title%text}}"
@@ -1241,15 +1049,7 @@
 	},
 
 
-	"GradeField":{
-		"prefix":"GradeField",
-		"body":[
-			"\\GradeField[${2:eforms params}]{${1:base name}}"
-		]
-	},
-
-
-	"GradeField":{
+	"GradeField{}":{
 		"prefix":"GradeField",
 		"body":[
 			"\\GradeField{${1:base name}}"
@@ -1305,7 +1105,7 @@
 	},
 
 
-	"ifQuizType":{
+	"ifQuizType{}{}":{
 		"prefix":"ifQuizType",
 		"body":[
 			"\\ifQuizType{${1:quiz code}}{${2:shortquiz code}}"
@@ -1313,10 +1113,10 @@
 	},
 
 
-	"ifstaroption":{
+	"ifstaroption{}{}":{
 		"prefix":"ifstaroption",
 		"body":[
-			"\\ifstaroption{${1:code if \titlequiz*}}{${2:otherwise}}"
+			"\\ifstaroption{${1:code if \\titlequiz*}}{${2:otherwise}}"
 		]
 	},
 
@@ -1397,14 +1197,6 @@
 		"prefix":"manualAnswerField",
 		"body":[
 			"\\manualAnswerField"
-		]
-	},
-
-
-	"manualAnswerField":{
-		"prefix":"manualAnswerField",
-		"body":[
-			"\\manualAnswerField[${1:eforms params}]"
 		]
 	},
 
@@ -1497,15 +1289,7 @@
 	},
 
 
-	"PercentField":{
-		"prefix":"PercentField",
-		"body":[
-			"\\PercentField[${2:eforms params}]{${1:base name}}"
-		]
-	},
-
-
-	"PercentField":{
+	"PercentField{}":{
 		"prefix":"PercentField",
 		"body":[
 			"\\PercentField{${1:base name}}"
@@ -1513,15 +1297,7 @@
 	},
 
 
-	"PointsField":{
-		"prefix":"PointsField",
-		"body":[
-			"\\PointsField[${2:eforms params}]{${1:base name}}"
-		]
-	},
-
-
-	"PointsField":{
+	"PointsField{}":{
 		"prefix":"PointsField",
 		"body":[
 			"\\PointsField{${1:base name}}"
@@ -1545,14 +1321,6 @@
 	},
 
 
-	"promoteNewPageHere":{
-		"prefix":"promoteNewPageHere",
-		"body":[
-			"\\promoteNewPageHere[${1:height}]"
-		]
-	},
-
-
 	"proofingsymbol":{
 		"prefix":"proofingsymbol",
 		"body":[
@@ -1561,7 +1329,7 @@
 	},
 
 
-	"ptLabel":{
+	"ptLabel{}":{
 		"prefix":"ptLabel",
 		"body":[
 			"\\ptLabel{${1:text}}"
@@ -1569,7 +1337,7 @@
 	},
 
 
-	"PTs":{
+	"PTs{}":{
 		"prefix":"PTs",
 		"body":[
 			"\\PTs{${1:number}}"
@@ -1577,7 +1345,7 @@
 	},
 
 
-	"PTsHook":{
+	"PTsHook{}":{
 		"prefix":"PTsHook",
 		"body":[
 			"\\PTsHook{${1:code}}"
@@ -1585,7 +1353,7 @@
 	},
 
 
-	"ptsLabel":{
+	"ptsLabel{}":{
 		"prefix":"ptsLabel",
 		"body":[
 			"\\ptsLabel{${1:text}}"
@@ -1601,7 +1369,7 @@
 	},
 
 
-	"quesNumColor":{
+	"quesNumColor{}":{
 		"prefix":"quesNumColor",
 		"body":[
 			"\\quesNumColor{${1:color}}"
@@ -1609,7 +1377,7 @@
 	},
 
 
-	"quizpdfbookmark":{
+	"quizpdfbookmark{}":{
 		"prefix":"quizpdfbookmark",
 		"body":[
 			"\\quizpdfbookmark{${1:bookmark title%text}}"
@@ -1617,7 +1385,7 @@
 	},
 
 
-	"quiztype":{
+	"quiztype{}":{
 		"prefix":"quiztype",
 		"body":[
 			"\\quiztype{${1:f|l}}"
@@ -1641,23 +1409,7 @@
 	},
 
 
-	"rbMarkup":{
-		"prefix":"rbMarkup",
-		"body":[
-			"\\rbMarkup[${1:eforms params}]"
-		]
-	},
-
-
-	"REF*":{
-		"prefix":"REF*",
-		"body":[
-			"\\REF*{${1:label}}"
-		]
-	},
-
-
-	"REF":{
+	"REF{}":{
 		"prefix":"REF",
 		"body":[
 			"\\REF{${1:label}}"
@@ -1665,7 +1417,7 @@
 	},
 
 
-	"renameSolnAfterTo":{
+	"renameSolnAfterTo{}":{
 		"prefix":"renameSolnAfterTo",
 		"body":[
 			"\\renameSolnAfterTo{${1:text}}"
@@ -1697,15 +1449,7 @@
 	},
 
 
-	"RespBoxEssay*":{
-		"prefix":"RespBoxEssay*",
-		"body":[
-			"\\RespBoxEssay*{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"RespBoxEssay":{
+	"RespBoxEssay{}{}":{
 		"prefix":"RespBoxEssay",
 		"body":[
 			"\\RespBoxEssay{${1:width}}{${2:height}}"
@@ -1737,7 +1481,7 @@
 	},
 
 
-	"rowsep":{
+	"rowsep{}":{
 		"prefix":"rowsep",
 		"body":[
 			"\\rowsep{${1:length}}"
@@ -1745,7 +1489,7 @@
 	},
 
 
-	"rowsepDefault":{
+	"rowsepDefault{}":{
 		"prefix":"rowsepDefault",
 		"body":[
 			"\\rowsepDefault{${1:length}}"
@@ -1753,7 +1497,7 @@
 	},
 
 
-	"rpl":{
+	"rpl{}":{
 		"prefix":"rpl",
 		"body":[
 			"\\rpl{${1:text->symbol}}"
@@ -1761,7 +1505,7 @@
 	},
 
 
-	"saveDest":{
+	"saveDest{}":{
 		"prefix":"saveDest",
 		"body":[
 			"\\saveDest{${1:dest}}"
@@ -1769,15 +1513,7 @@
 	},
 
 
-	"ScoreField":{
-		"prefix":"ScoreField",
-		"body":[
-			"\\ScoreField[${2:eforms params}]{${1:base name}}"
-		]
-	},
-
-
-	"ScoreField":{
+	"ScoreField{}":{
 		"prefix":"ScoreField",
 		"body":[
 			"\\ScoreField{${1:base name}}"
@@ -1785,7 +1521,7 @@
 	},
 
 
-	"setActionKeys":{
+	"setActionKeys{}":{
 		"prefix":"setActionKeys",
 		"body":[
 			"\\setActionKeys{${1:eforms params}}"
@@ -1793,7 +1529,7 @@
 	},
 
 
-	"setAnsEnvLinewidth":{
+	"setAnsEnvLinewidth{}":{
 		"prefix":"setAnsEnvLinewidth",
 		"body":[
 			"\\setAnsEnvLinewidth{${1:length}}"
@@ -1801,7 +1537,7 @@
 	},
 
 
-	"setMClabelsep":{
+	"setMClabelsep{}":{
 		"prefix":"setMClabelsep",
 		"body":[
 			"\\setMClabelsep{${1:space cmd}}"
@@ -1809,7 +1545,7 @@
 	},
 
 
-	"setsolnspace":{
+	"setsolnspace{}":{
 		"prefix":"setsolnspace",
 		"body":[
 			"\\setsolnspace{${1:space cmd}}"
@@ -1849,14 +1585,6 @@
 	},
 
 
-	"SpellCheck":{
-		"prefix":"SpellCheck",
-		"body":[
-			"\\SpellCheck[${1:eforms params}]"
-		]
-	},
-
-
 	"sqbookmarkfmt":{
 		"prefix":"sqbookmarkfmt",
 		"body":[
@@ -1869,14 +1597,6 @@
 		"prefix":"sqClearButton",
 		"body":[
 			"\\sqClearButton"
-		]
-	},
-
-
-	"sqClearButton":{
-		"prefix":"sqClearButton",
-		"body":[
-			"\\sqClearButton[${1:eforms params}]"
 		]
 	},
 
@@ -1921,14 +1641,6 @@
 	},
 
 
-	"sqSolnBtn":{
-		"prefix":"sqSolnBtn",
-		"body":[
-			"\\sqSolnBtn[${1:eforms params}]"
-		]
-	},
-
-
 	"sqSolnMCMsg":{
 		"prefix":"sqSolnMCMsg",
 		"body":[
@@ -1961,26 +1673,10 @@
 	},
 
 
-	"sqTallyBox":{
-		"prefix":"sqTallyBox",
-		"body":[
-			"\\sqTallyBox[${1:eforms params}]"
-		]
-	},
-
-
 	"sqTallyTotal":{
 		"prefix":"sqTallyTotal",
 		"body":[
 			"\\sqTallyTotal"
-		]
-	},
-
-
-	"sqTallyTotal":{
-		"prefix":"sqTallyTotal",
-		"body":[
-			"\\sqTallyTotal[${1:eforms params}]"
 		]
 	},
 
@@ -2017,7 +1713,7 @@
 	},
 
 
-	"strongpass":{
+	"strongpass{}":{
 		"prefix":"strongpass",
 		"body":[
 			"\\strongpass{${1:n}}"
@@ -2025,7 +1721,7 @@
 	},
 
 
-	"symbolchoice":{
+	"symbolchoice{}":{
 		"prefix":"symbolchoice",
 		"body":[
 			"\\symbolchoice{${1:choice%keyvals}}"
@@ -2033,7 +1729,7 @@
 	},
 
 
-	"tableName":{
+	"tableName{}":{
 		"prefix":"tableName",
 		"body":[
 			"\\tableName{${1:name}}"
@@ -2065,15 +1761,7 @@
 	},
 
 
-	"titleQuiz*":{
-		"prefix":"titleQuiz*",
-		"body":[
-			"\\titleQuiz*{${1:text}}"
-		]
-	},
-
-
-	"titleQuiz":{
+	"titleQuiz{}":{
 		"prefix":"titleQuiz",
 		"body":[
 			"\\titleQuiz{${1:text}}"
@@ -2089,7 +1777,7 @@
 	},
 
 
-	"TUChoice":{
+	"TUChoice{}":{
 		"prefix":"TUChoice",
 		"body":[
 			"\\TUChoice{${1:text}}"
@@ -2109,14 +1797,6 @@
 		"prefix":"useBeginQuizButton",
 		"body":[
 			"\\useBeginQuizButton"
-		]
-	},
-
-
-	"useBeginQuizButton":{
-		"prefix":"useBeginQuizButton",
-		"body":[
-			"\\useBeginQuizButton[${1:eforms params}]"
 		]
 	},
 
@@ -2141,14 +1821,6 @@
 		"prefix":"useEndQuizButton",
 		"body":[
 			"\\useEndQuizButton"
-		]
-	},
-
-
-	"useEndQuizButton":{
-		"prefix":"useEndQuizButton",
-		"body":[
-			"\\useEndQuizButton[${1:eforms params}]"
 		]
 	},
 
@@ -2193,7 +1865,7 @@
 	},
 
 
-	"weakpass":{
+	"weakpass{}":{
 		"prefix":"weakpass",
 		"body":[
 			"\\weakpass{${1:n}}"
@@ -2201,7 +1873,7 @@
 	},
 
 
-	"word":{
+	"word{}":{
 		"prefix":"word",
 		"body":[
 			"\\word{${1:text}}"
@@ -2313,7 +1985,7 @@
 	},
 
 
-	"noPeekArgs":{
+	"noPeekArgs{}":{
 		"prefix":"noPeekArgs",
 		"body":[
 			"\\noPeekArgs{${1:arg}}"
@@ -2321,7 +1993,7 @@
 	},
 
 
-	"postDenyForm":{
+	"postDenyForm()":{
 		"prefix":"postDenyForm",
 		"body":[
 			"\\postDenyForm(${1:regexp})"
@@ -2329,7 +2001,7 @@
 	},
 
 
-	"preDenyForm":{
+	"preDenyForm()":{
 		"prefix":"preDenyForm",
 		"body":[
 			"\\preDenyForm(${1:regexp},${2:cMsg})"
@@ -2337,7 +2009,7 @@
 	},
 
 
-	"preReqForm":{
+	"preReqForm()":{
 		"prefix":"preReqForm",
 		"body":[
 			"\\preReqForm(${1:regexp},${2:cMsg})"
@@ -2361,7 +2033,7 @@
 	},
 
 
-	"rechrclass":{
+	"rechrclass{}":{
 		"prefix":"rechrclass",
 		"body":[
 			"\\rechrclass{${1:arg}}"
@@ -2401,7 +2073,7 @@
 	},
 
 
-	"refac":{
+	"refac{}":{
 		"prefix":"refac",
 		"body":[
 			"\\refac{${1:arg}}"
@@ -2409,7 +2081,7 @@
 	},
 
 
-	"regrp":{
+	"regrp{}":{
 		"prefix":"regrp",
 		"body":[
 			"\\regrp{${1:arg}}"
@@ -2425,7 +2097,7 @@
 	},
 
 
-	"replaceExclPt":{
+	"replaceExclPt{}":{
 		"prefix":"replaceExclPt",
 		"body":[
 			"\\replaceExclPt{${1:true|false}}"
@@ -2481,7 +2153,7 @@
 	},
 
 
-	"eqModelInfo":{
+	"eqModelInfo{}{}":{
 		"prefix":"eqModelInfo",
 		"body":[
 			"\\eqModelInfo{${1:arg1}}{${2:arg2}}"
@@ -2489,7 +2161,7 @@
 	},
 
 
-	"jsColor":{
+	"jsColor{}{}":{
 		"prefix":"jsColor",
 		"body":[
 			"\\jsColor{${1:arg1}}{${2:arg2}}"
@@ -2497,82 +2169,330 @@
 	},
 
 
-	"shortquiz":{
-		"prefix":"shortquiz",
+	"addToAction*{}{}":{
+		"prefix":"*addToAction",
 		"body":[
-			"\\begin{shortquiz}",
-			"\t$1",
-			"\\end{shortquiz}"
+			"\\addToAction*{${1:key%plain}}{${2:code}}"
 		]
 	},
 
 
-	"mathGrp":{
-		"prefix":"mathGrp",
+	"REF*{}":{
+		"prefix":"*REF",
 		"body":[
-			"\\begin{mathGrp}",
-			"\t$1",
-			"\\end{mathGrp}"
+			"\\REF*{${1:label}}"
 		]
 	},
 
 
-	"shortquiz*":{
-		"prefix":"shortquiz*",
+	"RespBoxEssay*{}{}":{
+		"prefix":"*RespBoxEssay",
 		"body":[
-			"\\begin{shortquiz*}",
-			"\t$1",
-			"\\end{shortquiz*}"
+			"\\RespBoxEssay*{${1:width}}{${2:height}}"
 		]
 	},
 
 
-	"quiz":{
-		"prefix":"quiz",
+	"titleQuiz*{}":{
+		"prefix":"*titleQuiz",
 		"body":[
-			"\\begin{quiz}",
-			"\t$1",
-			"\\end{quiz}"
+			"\\titleQuiz*{${1:text}}"
 		]
 	},
 
 
-	"answers":{
-		"prefix":"answers",
+	"displaySumryTbl[]{}":{
+		"prefix":"displaySumryTbl",
 		"body":[
-			"\\begin{answers}",
-			"\t$1",
-			"\\end{answers}"
+			"\\displaySumryTbl[${2:options%keyvals}]{${1:quiz name}}"
 		]
 	},
 
 
-	"quiz*":{
-		"prefix":"quiz*",
+	"rbmIntrvl{}{}{}{}{}":{
+		"prefix":"rbmIntrvl",
 		"body":[
-			"\\begin{quiz*}",
-			"\t$1",
-			"\\end{quiz*}"
+			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}{${3:samples}}{${4:precision}}{${5:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
 		]
 	},
 
 
-	"solution":{
-		"prefix":"solution",
+	"rbmIntrvl{}{}(){}{}{}":{
+		"prefix":"rbmIntrvl",
 		"body":[
-			"\\begin{solution}",
-			"\t$1",
-			"\\end{solution}"
+			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${9:%<variables%>}){${3:samples}}{${4:precision}}{${5:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
 		]
 	},
 
 
-	"exercise*":{
-		"prefix":"exercise*",
+	"rbmIntrvl{}{}()[]{}{}{}":{
+		"prefix":"rbmIntrvl",
 		"body":[
-			"\\begin{exercise*}",
-			"\t$1",
-			"\\end{exercise*}"
+			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${10:%<variables%>})[${7:dest}]{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
+		]
+	},
+
+
+	"rbmIntrvl{}{}()[]{}{}{}[]":{
+		"prefix":"rbmIntrvl",
+		"body":[
+			"\\rbmIntrvl{${1:[${6:a,b}]}}{${2:answer}}(${11:%<variables%>})[${7:dest}]{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}[${10:comp func}]"
+		]
+	},
+
+
+	"rbmIntrvl{}[]{}{}{}{}":{
+		"prefix":"rbmIntrvl",
+		"body":[
+			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}{${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
+		]
+	},
+
+
+	"rbmIntrvl{}[]{}(){}{}{}":{
+		"prefix":"rbmIntrvl",
+		"body":[
+			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${10:%<variables%>}){${3:samples}}{${4:precision}}{${5:[${8:a1,b1}]x[${9:a2,b2}]x...}}"
+		]
+	},
+
+
+	"rbmIntrvl{}[]{}()[]{}{}{}":{
+		"prefix":"rbmIntrvl",
+		"body":[
+			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${11:%<variables%>})[${8:dest}]{${3:samples}}{${4:precision}}{${5:[${9:a1,b1}]x[${10:a2,b2}]x...}}"
+		]
+	},
+
+
+	"rbmIntrvl{}[]{}()[]{}{}{}[]":{
+		"prefix":"rbmIntrvl",
+		"body":[
+			"\\rbmIntrvl{${1:[${6:a,b}]}}[${7:eforms params}]{${2:answer}}(${12:%<variables%>})[${8:dest}]{${3:samples}}{${4:precision}}{${5:[${9:a1,b1}]x[${10:a2,b2}]x...}}[${11:comp func}]"
+		]
+	},
+
+
+	"RespBoxMath{}{}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath{${1:answer}}{${2:samples}}{${3:precision}}{${4:[${5:a1,b1}]x[${6:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath{}(){}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath{${1:answer}}(${7:%<variables%>}){${2:samples}}{${3:precision}}{${4:[${5:a1,b1}]x[${6:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath{}()[]{}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath{${1:answer}}(${8:%<variables%>})[${5:dest}]{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath{}()[]{}{}{}[]":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath{${1:answer}}(${9:%<variables%>})[${5:dest}]{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}[${8:comp func}]"
+		]
+	},
+
+
+	"RespBoxMath[]{}{}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath[${5:eforms params}]{${1:answer}}{${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath[]{}(){}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${8:%<variables%>}){${2:samples}}{${3:precision}}{${4:[${6:a1,b1}]x[${7:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath[]{}()[]{}{}{}":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${9:%<variables%>})[${6:dest}]{${2:samples}}{${3:precision}}{${4:[${7:a1,b1}]x[${8:a2,b2}]x...}}"
+		]
+	},
+
+
+	"RespBoxMath[]{}()[]{}{}{}[]":{
+		"prefix":"RespBoxMath",
+		"body":[
+			"\\RespBoxMath[${5:eforms params}]{${1:answer}}(${10:%<variables%>})[${6:dest}]{${2:samples}}{${3:precision}}{${4:[${7:a1,b1}]x[${8:a2,b2}]x...}}[${9:comp func}]"
+		]
+	},
+
+
+	"Ans[]{}":{
+		"prefix":"Ans",
+		"body":[
+			"\\Ans[${1:partial pts}]{0 or 1}"
+		]
+	},
+
+
+	"AnswerField[]{}":{
+		"prefix":"AnswerField",
+		"body":[
+			"\\AnswerField[${2:eforms params}]{${1:base name}}"
+		]
+	},
+
+
+	"autoAnswerField[]":{
+		"prefix":"autoAnswerField",
+		"body":[
+			"\\autoAnswerField[${1:eforms params}]"
+		]
+	},
+
+
+	"bChoices[]":{
+		"prefix":"bChoices",
+		"body":[
+			"\\bChoices[${1:options%keyvals}]"
+		]
+	},
+
+
+	"CorrButton[]{}":{
+		"prefix":"CorrButton",
+		"body":[
+			"\\CorrButton[${2:eforms params}]{${1:field}}"
+		]
+	},
+
+
+	"eqButton[]{}":{
+		"prefix":"eqButton",
+		"body":[
+			"\\eqButton[${2:eforms params}]{${1:field}}"
+		]
+	},
+
+
+	"GradeField[]{}":{
+		"prefix":"GradeField",
+		"body":[
+			"\\GradeField[${2:eforms params}]{${1:base name}}"
+		]
+	},
+
+
+	"manualAnswerField[]":{
+		"prefix":"manualAnswerField",
+		"body":[
+			"\\manualAnswerField[${1:eforms params}]"
+		]
+	},
+
+
+	"PercentField[]{}":{
+		"prefix":"PercentField",
+		"body":[
+			"\\PercentField[${2:eforms params}]{${1:base name}}"
+		]
+	},
+
+
+	"PointsField[]{}":{
+		"prefix":"PointsField",
+		"body":[
+			"\\PointsField[${2:eforms params}]{${1:base name}}"
+		]
+	},
+
+
+	"promoteNewPageHere[]":{
+		"prefix":"promoteNewPageHere",
+		"body":[
+			"\\promoteNewPageHere[${1:height}]"
+		]
+	},
+
+
+	"rbMarkup[]":{
+		"prefix":"rbMarkup",
+		"body":[
+			"\\rbMarkup[${1:eforms params}]"
+		]
+	},
+
+
+	"ScoreField[]{}":{
+		"prefix":"ScoreField",
+		"body":[
+			"\\ScoreField[${2:eforms params}]{${1:base name}}"
+		]
+	},
+
+
+	"SpellCheck[]":{
+		"prefix":"SpellCheck",
+		"body":[
+			"\\SpellCheck[${1:eforms params}]"
+		]
+	},
+
+
+	"sqClearButton[]":{
+		"prefix":"sqClearButton",
+		"body":[
+			"\\sqClearButton[${1:eforms params}]"
+		]
+	},
+
+
+	"sqSolnBtn[]":{
+		"prefix":"sqSolnBtn",
+		"body":[
+			"\\sqSolnBtn[${1:eforms params}]"
+		]
+	},
+
+
+	"sqTallyBox[]":{
+		"prefix":"sqTallyBox",
+		"body":[
+			"\\sqTallyBox[${1:eforms params}]"
+		]
+	},
+
+
+	"sqTallyTotal[]":{
+		"prefix":"sqTallyTotal",
+		"body":[
+			"\\sqTallyTotal[${1:eforms params}]"
+		]
+	},
+
+
+	"useBeginQuizButton[]":{
+		"prefix":"useBeginQuizButton",
+		"body":[
+			"\\useBeginQuizButton[${1:eforms params}]"
+		]
+	},
+
+
+	"useEndQuizButton[]":{
+		"prefix":"useEndQuizButton",
+		"body":[
+			"\\useEndQuizButton[${1:eforms params}]"
 		]
 	},
 
@@ -2581,8 +2501,28 @@
 		"prefix":"sumryTblAux",
 		"body":[
 			"\\begin{sumryTblAux}",
-			"\t$1",
+				"\t$1",
 			"\\end{sumryTblAux}"
+		]
+	},
+
+
+	"answers":{
+		"prefix":"answers",
+		"body":[
+			"\\begin{answers}",
+				"\t$1",
+			"\\end{answers}"
+		]
+	},
+
+
+	"answers":{
+		"prefix":"answers",
+		"body":[
+			"\\begin{answers}",
+				"\t$1",
+			"\\end{answers}"
 		]
 	},
 
@@ -2591,48 +2531,8 @@
 		"prefix":"exEnumerate",
 		"body":[
 			"\\begin{exEnumerate}",
-			"\t$1",
+				"\t$1",
 			"\\end{exEnumerate}"
-		]
-	},
-
-
-	"questions":{
-		"prefix":"questions",
-		"body":[
-			"\\begin{questions}",
-			"\t$1",
-			"\\end{questions}"
-		]
-	},
-
-
-	"oQuestion":{
-		"prefix":"oQuestion",
-		"body":[
-			"\\begin{oQuestion}",
-			"\t$1",
-			"\\end{oQuestion}"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\begin{exercise}",
-			"\t$1",
-			"\\end{exercise}"
-		]
-	},
-
-
-	"enumex*":{
-		"prefix":"enumex*",
-		"body":[
-			"\\begin{enumex*}",
-			"\t$1",
-			"\\end{enumex*}"
 		]
 	},
 
@@ -2641,8 +2541,18 @@
 		"prefix":"enumex",
 		"body":[
 			"\\begin{enumex}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumex}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
 		]
 	},
 
@@ -2651,7 +2561,167 @@
 		"prefix":"manswers",
 		"body":[
 			"\\begin{manswers}",
-			"\t$1",
+				"\t$1",
+			"\\end{manswers}"
+		]
+	},
+
+
+	"manswers":{
+		"prefix":"manswers",
+		"body":[
+			"\\begin{manswers}",
+				"\t$1",
+			"\\end{manswers}"
+		]
+	},
+
+
+	"mathGrp":{
+		"prefix":"mathGrp",
+		"body":[
+			"\\begin{mathGrp}",
+				"\t$1",
+			"\\end{mathGrp}"
+		]
+	},
+
+
+	"oQuestion":{
+		"prefix":"oQuestion",
+		"body":[
+			"\\begin{oQuestion}",
+				"\t$1",
+			"\\end{oQuestion}"
+		]
+	},
+
+
+	"parts":{
+		"prefix":"parts",
+		"body":[
+			"\\begin{parts}",
+				"\t$1",
+			"\\end{parts}"
+		]
+	},
+
+
+	"questions":{
+		"prefix":"questions",
+		"body":[
+			"\\begin{questions}",
+				"\t$1",
+			"\\end{questions}"
+		]
+	},
+
+
+	"quiz":{
+		"prefix":"quiz",
+		"body":[
+			"\\begin{quiz}",
+				"\t$1",
+			"\\end{quiz}"
+		]
+	},
+
+
+	"quiz*":{
+		"prefix":"quiz",
+		"body":[
+			"\\begin{quiz*}",
+				"\t$1",
+			"\\end{quiz*}"
+		]
+	},
+
+
+	"shortquiz":{
+		"prefix":"shortquiz",
+		"body":[
+			"\\begin{shortquiz}",
+				"\t$1",
+			"\\end{shortquiz}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"enumex*":{
+		"prefix":"*enumex",
+		"body":[
+			"\\begin{enumex*}",
+				"\t$1",
+			"\\end{enumex*}"
+		]
+	},
+
+
+	"exercise*":{
+		"prefix":"*exercise",
+		"body":[
+			"\\begin{exercise*}",
+				"\t$1",
+			"\\end{exercise*}"
+		]
+	},
+
+
+	"shortquiz*":{
+		"prefix":"*shortquiz",
+		"body":[
+			"\\begin{shortquiz*}",
+				"\t$1",
+			"\\end{shortquiz*}"
+		]
+	},
+
+
+	"answers":{
+		"prefix":"answers",
+		"body":[
+			"\\begin{answers}",
+				"\t$1",
+			"\\end{answers}"
+		]
+	},
+
+
+	"exEnumerate":{
+		"prefix":"exEnumerate",
+		"body":[
+			"\\begin{exEnumerate}",
+				"\t$1",
+			"\\end{exEnumerate}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"manswers":{
+		"prefix":"manswers",
+		"body":[
+			"\\begin{manswers}",
+				"\t$1",
 			"\\end{manswers}"
 		]
 	},
@@ -2661,8 +2731,38 @@
 		"prefix":"parts",
 		"body":[
 			"\\begin{parts}",
-			"\t$1",
+				"\t$1",
 			"\\end{parts}"
+		]
+	},
+
+
+	"shortquiz":{
+		"prefix":"shortquiz",
+		"body":[
+			"\\begin{shortquiz}",
+				"\t$1",
+			"\\end{shortquiz}"
+		]
+	},
+
+
+	"shortquiz*":{
+		"prefix":"shortquiz",
+		"body":[
+			"\\begin{shortquiz*}",
+				"\t$1",
+			"\\end{shortquiz*}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
 		]
 	}
 }

@@ -41,7 +41,7 @@
 	},
 
 
-	"basepageargs":{
+	"basepageargs{}":{
 		"prefix":"basepageargs",
 		"body":[
 			"\\basepageargs{${1:includegraphics options%keyvals}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"commentsOddPageSetup":{
+	"commentsOddPageSetup{}{}{}":{
 		"prefix":"commentsOddPageSetup",
 		"body":[
 			"\\commentsOddPageSetup{${1:num leftcols}}{${2:num shortcols}}{${3:num rightcols}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"commentsEvenPageSetup":{
+	"commentsEvenPageSetup{}{}{}":{
 		"prefix":"commentsEvenPageSetup",
 		"body":[
 			"\\commentsEvenPageSetup{${1:num leftcols}}{${2:num shortcols}}{${3:num rightcols}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"commentsContinuationPageSetup":{
+	"commentsContinuationPageSetup{}":{
 		"prefix":"commentsContinuationPageSetup",
 		"body":[
 			"\\commentsContinuationPageSetup{${1:num cols}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"commentsHook":{
+	"commentsHook{}":{
 		"prefix":"commentsHook",
 		"body":[
 			"\\commentsHook{${1:code}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"typesetComments":{
+	"typesetComments{}":{
 		"prefix":"typesetComments",
 		"body":[
 			"\\typesetComments{${1:text}}"
@@ -141,28 +141,8 @@
 		"prefix":"commeditPreamble",
 		"body":[
 			"\\begin{commeditPreamble}",
-			"\t$1",
+				"\t$1",
 			"\\end{commeditPreamble}"
-		]
-	},
-
-
-	"commentsBox":{
-		"prefix":"commentsBox",
-		"body":[
-			"\\begin{commentsBox}",
-			"\t$1",
-			"\\end{commentsBox}"
-		]
-	},
-
-
-	"commeditText":{
-		"prefix":"commeditText",
-		"body":[
-			"\\begin{commeditText}",
-			"\t$1",
-			"\\end{commeditText}"
 		]
 	},
 
@@ -171,8 +151,28 @@
 		"prefix":"commeditComments",
 		"body":[
 			"\\begin{commeditComments}",
-			"\t$1",
+				"\t$1",
 			"\\end{commeditComments}"
+		]
+	},
+
+
+	"commeditText":{
+		"prefix":"commeditText",
+		"body":[
+			"\\begin{commeditText}",
+				"\t$1",
+			"\\end{commeditText}"
+		]
+	},
+
+
+	"commentsBox":{
+		"prefix":"commentsBox",
+		"body":[
+			"\\begin{commentsBox}",
+				"\t$1",
+			"\\end{commentsBox}"
 		]
 	}
 }

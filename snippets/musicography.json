@@ -57,18 +57,10 @@
 	},
 
 
-	"musSymbol":{
+	"musSymbol{}{}{}{}":{
 		"prefix":"musSymbol",
 		"body":[
 			"\\musSymbol{${1:kern before}}{${2:raise}}{${3:kern after}}{${4:symbol}}"
-		]
-	},
-
-
-	"musSymbol":{
-		"prefix":"musSymbol",
-		"body":[
-			"\\musSymbol[${5:font cmds}]{${1:kern before}}{${2:raise}}{${3:kern after}}{${4:symbol}}"
 		]
 	},
 
@@ -81,7 +73,7 @@
 	},
 
 
-	"musAccidental":{
+	"musAccidental{}":{
 		"prefix":"musAccidental",
 		"body":[
 			"\\musAccidental{${1:symbol code}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"musStemmedNote":{
+	"musStemmedNote{}":{
 		"prefix":"musStemmedNote",
 		"body":[
 			"\\musStemmedNote{${1:symbol}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"musFlaggedNote":{
+	"musFlaggedNote{}{}":{
 		"prefix":"musFlaggedNote",
 		"body":[
 			"\\musFlaggedNote{${1:symbol1}}{${2:symbol2}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"musDottedNote":{
+	"musDottedNote{}":{
 		"prefix":"musDottedNote",
 		"body":[
 			"\\musDottedNote{${1:symbol}}"
@@ -321,7 +313,7 @@
 	},
 
 
-	"musStack":{
+	"musStack{}":{
 		"prefix":"musStack",
 		"body":[
 			"\\musStack{${1:arg}}"
@@ -329,31 +321,7 @@
 	},
 
 
-	"musStack":{
-		"prefix":"musStack",
-		"body":[
-			"\\musStack{${1:arg}}[${2:align}]"
-		]
-	},
-
-
-	"musStack":{
-		"prefix":"musStack",
-		"body":[
-			"\\musStack[${2:font cmd}]{${1:arg}}"
-		]
-	},
-
-
-	"musStack":{
-		"prefix":"musStack",
-		"body":[
-			"\\musStack[${2:font cmd}]{${1:arg}}[${3:align}]"
-		]
-	},
-
-
-	"musSymbolMeter":{
+	"musSymbolMeter{}":{
 		"prefix":"musSymbolMeter",
 		"body":[
 			"\\musSymbolMeter{${1:symbol}}"
@@ -361,7 +329,7 @@
 	},
 
 
-	"meterPlus":{
+	"meterPlus{}{}":{
 		"prefix":"meterPlus",
 		"body":[
 			"\\meterPlus{${1:meter}}{${2:symbol}}"
@@ -385,7 +353,7 @@
 	},
 
 
-	"meterCplus":{
+	"meterCplus{}":{
 		"prefix":"meterCplus",
 		"body":[
 			"\\meterCplus{${1:symbol}}"
@@ -393,7 +361,7 @@
 	},
 
 
-	"meterCutCplus":{
+	"meterCutCplus{}":{
 		"prefix":"meterCutCplus",
 		"body":[
 			"\\meterCutCplus{${1:symbol}}"
@@ -417,18 +385,10 @@
 	},
 
 
-	"musMeter":{
+	"musMeter{}{}":{
 		"prefix":"musMeter",
 		"body":[
 			"\\musMeter{${1:upper}}{${2:lower}}"
-		]
-	},
-
-
-	"musMeter":{
-		"prefix":"musMeter",
-		"body":[
-			"\\musMeter[${3:font cmd}]{${1:upper}}{${2:lower}}"
 		]
 	},
 
@@ -449,18 +409,10 @@
 	},
 
 
-	"musFig":{
+	"musFig{}":{
 		"prefix":"musFig",
 		"body":[
 			"\\musFig{${1:content}}"
-		]
-	},
-
-
-	"musFig":{
-		"prefix":"musFig",
-		"body":[
-			"\\musFig[${2:align}]{${1:content}}"
 		]
 	},
 
@@ -469,14 +421,6 @@
 		"prefix":"noFig",
 		"body":[
 			"\\noFig"
-		]
-	},
-
-
-	"noFig":{
-		"prefix":"noFig",
-		"body":[
-			"\\noFig[${1:text%plain}]"
 		]
 	},
 
@@ -545,7 +489,7 @@
 	},
 
 
-	"musDegree":{
+	"musDegree{}":{
 		"prefix":"musDegree",
 		"body":[
 			"\\musDegree{${1:numeral}}"
@@ -553,7 +497,7 @@
 	},
 
 
-	"musPitch":{
+	"musPitch{}{}":{
 		"prefix":"musPitch",
 		"body":[
 			"\\musPitch{${1:pitch}}{${2:octave}}"
@@ -561,7 +505,7 @@
 	},
 
 
-	"symbolList":{
+	"symbolList{}{}":{
 		"prefix":"symbolList",
 		"body":[
 			"\\symbolList{${1:font cmd}}{${2:number}}"
@@ -653,6 +597,62 @@
 		"prefix":"musFusaDotted",
 		"body":[
 			"\\musFusaDotted"
+		]
+	},
+
+
+	"musSymbol[]{}{}{}{}":{
+		"prefix":"musSymbol",
+		"body":[
+			"\\musSymbol[${5:font cmds}]{${1:kern before}}{${2:raise}}{${3:kern after}}{${4:symbol}}"
+		]
+	},
+
+
+	"musStack{}[]":{
+		"prefix":"musStack",
+		"body":[
+			"\\musStack{${1:arg}}[${2:align}]"
+		]
+	},
+
+
+	"musStack[]{}":{
+		"prefix":"musStack",
+		"body":[
+			"\\musStack[${2:font cmd}]{${1:arg}}"
+		]
+	},
+
+
+	"musStack[]{}[]":{
+		"prefix":"musStack",
+		"body":[
+			"\\musStack[${2:font cmd}]{${1:arg}}[${3:align}]"
+		]
+	},
+
+
+	"musMeter[]{}{}":{
+		"prefix":"musMeter",
+		"body":[
+			"\\musMeter[${3:font cmd}]{${1:upper}}{${2:lower}}"
+		]
+	},
+
+
+	"musFig[]{}":{
+		"prefix":"musFig",
+		"body":[
+			"\\musFig[${2:align}]{${1:content}}"
+		]
+	},
+
+
+	"noFig[]":{
+		"prefix":"noFig",
+		"body":[
+			"\\noFig[${1:text%plain}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"psbarcode":{
+	"psbarcode{}{}{}":{
 		"prefix":"psbarcode",
 		"body":[
 			"\\psbarcode{${1:text or filename%file}}{${2:PS options}}{${3:barcode type}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"psbarcode":{
-		"prefix":"psbarcode",
-		"body":[
-			"\\psbarcode[${4:options%keyvals}]{${1:text or filename%file}}{${2:PS options}}{${3:barcode type}}"
-		]
-	},
-
-
-	"QR":{
+	"QR{}":{
 		"prefix":"QR",
 		"body":[
 			"\\QR{${1:URL}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"QR<label>":{
+	"QR<label>{}":{
 		"prefix":"QR<label>",
 		"body":[
 			"\\QR<label>{${1:URL}}"
@@ -33,7 +25,15 @@
 	},
 
 
-	"QR":{
+	"psbarcode[]{}{}{}":{
+		"prefix":"psbarcode",
+		"body":[
+			"\\psbarcode[${4:options%keyvals}]{${1:text or filename%file}}{${2:PS options}}{${3:barcode type}}"
+		]
+	},
+
+
+	"QR[]{}":{
 		"prefix":"QR",
 		"body":[
 			"\\QR[${2:scale}]{${1:URL}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"QR":{
+	"QR[]<>{}":{
 		"prefix":"QR",
 		"body":[
 			"\\QR[${2:scale}]<${3:label}>{${1:URL}}"

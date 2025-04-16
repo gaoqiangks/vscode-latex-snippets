@@ -1,7 +1,7 @@
 {
 
 
-	"DefineLCDchar":{
+	"DefineLCDchar{}{}":{
 		"prefix":"DefineLCDchar",
 		"body":[
 			"\\DefineLCDchar{${1:name}}{${2:binary code}}"
@@ -9,18 +9,10 @@
 	},
 
 
-	"LCDcolors":{
+	"LCDcolors{}{}":{
 		"prefix":"LCDcolors",
 		"body":[
 			"\\LCDcolors{${1:textcolor}}{${2:bgcolor}}"
-		]
-	},
-
-
-	"LCDcolors":{
-		"prefix":"LCDcolors",
-		"body":[
-			"\\LCDcolors[${3:framecolor}]{${1:textcolor}}{${2:bgcolor}}"
 		]
 	},
 
@@ -41,18 +33,10 @@
 	},
 
 
-	"textLCD":{
+	"textLCD{}||":{
 		"prefix":"textLCD",
 		"body":[
 			"\\textLCD{${1:num of chars}}|${2:text}|"
-		]
-	},
-
-
-	"textLCD":{
-		"prefix":"textLCD",
-		"body":[
-			"\\textLCD[${2:shift}]{${1:num of chars}}|${3:text}|"
 		]
 	},
 
@@ -69,6 +53,22 @@
 		"prefix":"LCDunitlength",
 		"body":[
 			"\\LCDunitlength"
+		]
+	},
+
+
+	"LCDcolors[]{}{}":{
+		"prefix":"LCDcolors",
+		"body":[
+			"\\LCDcolors[${3:framecolor}]{${1:textcolor}}{${2:bgcolor}}"
+		]
+	},
+
+
+	"textLCD[]{}||":{
+		"prefix":"textLCD",
+		"body":[
+			"\\textLCD[${2:shift}]{${1:num of chars}}|${3:text}|"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"xvec":{
+	"xvec{}":{
 		"prefix":"xvec",
 		"body":[
 			"\\xvec{${1:arg}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mat":{
+	"mat{}":{
 		"prefix":"mat",
 		"body":[
 			"\\mat{${1:letter%formula}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"tder":{
+	"tder{}{}":{
 		"prefix":"tder",
 		"body":[
 			"\\tder{${1:func}}{${2:var}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"tder":{
-		"prefix":"tder",
-		"body":[
-			"\\tder[${3:order}]{${1:func}}{${2:var}}"
-		]
-	},
-
-
-	"oi":{
+	"oi{}{}":{
 		"prefix":"oi",
 		"body":[
 			"\\oi{${1:left%formula}}{${2:right%formula}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"ci":{
+	"ci{}{}":{
 		"prefix":"ci",
 		"body":[
 			"\\ci{${1:left%formula}}{${2:right%formula}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"rci":{
+	"rci{}{}":{
 		"prefix":"rci",
 		"body":[
 			"\\rci{${1:left%formula}}{${2:right%formula}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"lci":{
+	"lci{}{}":{
 		"prefix":"lci",
 		"body":[
 			"\\lci{${1:left%formula}}{${2:right%formula}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"dif":{
+	"dif{}":{
 		"prefix":"dif",
 		"body":[
 			"\\dif{${1:arg}}"
@@ -97,14 +89,6 @@
 	},
 
 
-	"hem":{
-		"prefix":"hem",
-		"body":[
-			"\\hem[${1:width}]"
-		]
-	},
-
-
 	"htwoem":{
 		"prefix":"htwoem",
 		"body":[
@@ -121,7 +105,7 @@
 	},
 
 
-	"oover":{
+	"oover{}":{
 		"prefix":"oover",
 		"body":[
 			"\\oover{${1:arg%formula}}"
@@ -201,7 +185,7 @@
 	},
 
 
-	"varun":{
+	"varun{}{}":{
 		"prefix":"varun",
 		"body":[
 			"\\varun{${1:var%formula}}{${2:unit%formula}}"
@@ -209,7 +193,7 @@
 	},
 
 
-	"unit":{
+	"unit{}":{
 		"prefix":"unit",
 		"body":[
 			"\\unit{${1:unit}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"expv":{
+	"expv{}":{
 		"prefix":"expv",
 		"body":[
 			"\\expv{${1:arg}}"
@@ -225,7 +209,7 @@
 	},
 
 
-	"ceil":{
+	"ceil{}":{
 		"prefix":"ceil",
 		"body":[
 			"\\ceil{${1:arg}}"
@@ -233,7 +217,7 @@
 	},
 
 
-	"floor":{
+	"floor{}":{
 		"prefix":"floor",
 		"body":[
 			"\\floor{${1:arg}}"
@@ -249,7 +233,7 @@
 	},
 
 
-	"allset":{
+	"allset{}":{
 		"prefix":"allset",
 		"body":[
 			"\\allset{${1:n}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"allsetzero":{
+	"allsetzero{}":{
 		"prefix":"allsetzero",
 		"body":[
 			"\\allsetzero{${1:n}}"
@@ -273,7 +257,7 @@
 	},
 
 
-	"ccof":{
+	"ccof{}":{
 		"prefix":"ccof",
 		"body":[
 			"\\ccof{${1:superscript}}"
@@ -285,6 +269,22 @@
 		"prefix":"ccinf",
 		"body":[
 			"\\ccinf"
+		]
+	},
+
+
+	"tder[]{}{}":{
+		"prefix":"tder",
+		"body":[
+			"\\tder[${3:order}]{${1:func}}{${2:var}}"
+		]
+	},
+
+
+	"hem[]":{
+		"prefix":"hem",
+		"body":[
+			"\\hem[${1:width}]"
 		]
 	}
 }

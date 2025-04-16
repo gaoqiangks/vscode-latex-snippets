@@ -1,7 +1,7 @@
 {
 
 
-	"gmpoptions":{
+	"gmpoptions{}":{
 		"prefix":"gmpoptions",
 		"body":[
 			"\\gmpoptions{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"usempxclass":{
+	"usempxclass{}":{
 		"prefix":"usempxclass",
 		"body":[
 			"\\usempxclass{${1:class}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"usempxclass":{
-		"prefix":"usempxclass",
-		"body":[
-			"\\usempxclass[${2:options}]{${1:class}}"
-		]
-	},
-
-
-	"usempxpackage":{
+	"usempxpackage{}":{
 		"prefix":"usempxpackage",
 		"body":[
 			"\\usempxpackage{${1:package}}"
-		]
-	},
-
-
-	"usempxpackage":{
-		"prefix":"usempxpackage",
-		"body":[
-			"\\usempxpackage[${2:options}]{${1:package}}"
 		]
 	},
 
@@ -49,7 +33,7 @@
 	},
 
 
-	"mpxcommands":{
+	"mpxcommands{}":{
 		"prefix":"mpxcommands",
 		"body":[
 			"\\mpxcommands{${1:commands}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"mpdim":{
+	"mpdim{}":{
 		"prefix":"mpdim",
 		"body":[
 			"\\mpdim{${1:dimen param}}"
@@ -73,18 +57,10 @@
 	},
 
 
-	"usempost":{
+	"usempost{}":{
 		"prefix":"usempost",
 		"body":[
 			"\\usempost{${1:string}}"
-		]
-	},
-
-
-	"usempost":{
-		"prefix":"usempost",
-		"body":[
-			"\\usempost[${2:options%keyvals}]{${1:string}}"
 		]
 	},
 
@@ -105,21 +81,65 @@
 	},
 
 
+	"usempxclass[]{}":{
+		"prefix":"usempxclass",
+		"body":[
+			"\\usempxclass[${2:options}]{${1:class}}"
+		]
+	},
+
+
+	"usempxpackage[]{}":{
+		"prefix":"usempxpackage",
+		"body":[
+			"\\usempxpackage[${2:options}]{${1:package}}"
+		]
+	},
+
+
+	"usempost[]{}":{
+		"prefix":"usempost",
+		"body":[
+			"\\usempost[${2:options%keyvals}]{${1:string}}"
+		]
+	},
+
+
 	"mpost":{
 		"prefix":"mpost",
 		"body":[
 			"\\begin{mpost}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpost}"
 		]
 	},
 
 
 	"mpost*":{
-		"prefix":"mpost*",
+		"prefix":"*mpost",
 		"body":[
 			"\\begin{mpost*}",
-			"\t$1",
+				"\t$1",
+			"\\end{mpost*}"
+		]
+	},
+
+
+	"mpost":{
+		"prefix":"mpost",
+		"body":[
+			"\\begin{mpost}",
+				"\t$1",
+			"\\end{mpost}"
+		]
+	},
+
+
+	"mpost*":{
+		"prefix":"mpost",
+		"body":[
+			"\\begin{mpost*}",
+				"\t$1",
 			"\\end{mpost*}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"graphfile":{
+	"graphfile{}":{
 		"prefix":"graphfile",
 		"body":[
 			"\\graphfile{${1:imagefile}}"
@@ -9,63 +9,7 @@
 	},
 
 
-	"graphfile":{
-		"prefix":"graphfile",
-		"body":[
-			"\\graphfile{${1:imagefile}}[${2:subcaption%text}]"
-		]
-	},
-
-
-	"graphfile":{
-		"prefix":"graphfile",
-		"body":[
-			"\\graphfile[${2:width}]{${1:imagefile}}"
-		]
-	},
-
-
-	"graphfile":{
-		"prefix":"graphfile",
-		"body":[
-			"\\graphfile[${2:width}]{${1:imagefile}}[${3:subcaption%text}]"
-		]
-	},
-
-
-	"graphfile*":{
-		"prefix":"graphfile*",
-		"body":[
-			"\\graphfile*{${1:imagefile}}"
-		]
-	},
-
-
-	"graphfile*":{
-		"prefix":"graphfile*",
-		"body":[
-			"\\graphfile*{${1:imagefile}}[${2:subcaption%text}]"
-		]
-	},
-
-
-	"graphfile*":{
-		"prefix":"graphfile*",
-		"body":[
-			"\\graphfile*[${2:height}]{${1:imagefile}}"
-		]
-	},
-
-
-	"graphfile*":{
-		"prefix":"graphfile*",
-		"body":[
-			"\\graphfile*[${2:height}]{${1:imagefile}}[${3:subcaption%text}]"
-		]
-	},
-
-
-	"FigureDefaultPlacement":{
+	"FigureDefaultPlacement{}":{
 		"prefix":"FigureDefaultPlacement",
 		"body":[
 			"\\FigureDefaultPlacement{${1:placement}}"
@@ -81,11 +25,97 @@
 	},
 
 
+	"graphfile*{}":{
+		"prefix":"*graphfile",
+		"body":[
+			"\\graphfile*{${1:imagefile}}"
+		]
+	},
+
+
+	"graphfile*{}[]":{
+		"prefix":"*graphfile",
+		"body":[
+			"\\graphfile*{${1:imagefile}}[${2:subcaption%text}]"
+		]
+	},
+
+
+	"graphfile*[]{}":{
+		"prefix":"*graphfile",
+		"body":[
+			"\\graphfile*[${2:height}]{${1:imagefile}}"
+		]
+	},
+
+
+	"graphfile*[]{}[]":{
+		"prefix":"*graphfile",
+		"body":[
+			"\\graphfile*[${2:height}]{${1:imagefile}}[${3:subcaption%text}]"
+		]
+	},
+
+
+	"graphfile{}[]":{
+		"prefix":"graphfile",
+		"body":[
+			"\\graphfile{${1:imagefile}}[${2:subcaption%text}]"
+		]
+	},
+
+
+	"graphfile[]{}":{
+		"prefix":"graphfile",
+		"body":[
+			"\\graphfile[${2:width}]{${1:imagefile}}"
+		]
+	},
+
+
+	"graphfile[]{}[]":{
+		"prefix":"graphfile",
+		"body":[
+			"\\graphfile[${2:width}]{${1:imagefile}}[${3:subcaption%text}]"
+		]
+	},
+
+
 	"Figure":{
 		"prefix":"Figure",
 		"body":[
 			"\\begin{Figure}",
-			"\t$1",
+				"\t$1",
+			"\\end{Figure}"
+		]
+	},
+
+
+	"Figure":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t$1",
+			"\\end{Figure}"
+		]
+	},
+
+
+	"Figure":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t$1",
+			"\\end{Figure}"
+		]
+	},
+
+
+	"Figure":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t$1",
 			"\\end{Figure}"
 		]
 	}

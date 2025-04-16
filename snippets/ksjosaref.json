@@ -1,42 +1,10 @@
 {
 
 
-	"josaref":{
+	"josaref{}":{
 		"prefix":"josaref",
 		"body":[
 			"\\josaref{${1:label}}"
-		]
-	},
-
-
-	"josaref":{
-		"prefix":"josaref",
-		"body":[
-			"\\josaref[${2:type}]{${1:label}}"
-		]
-	},
-
-
-	"josaref":{
-		"prefix":"josaref",
-		"body":[
-			"\\josaref[${2:type}][${3:delim%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"ref":{
-		"prefix":"ref",
-		"body":[
-			"\\ref[${2:type}]{${1:label}}"
-		]
-	},
-
-
-	"ref":{
-		"prefix":"ref",
-		"body":[
-			"\\ref[${2:type}][${3:delim}]{${1:label}}"
 		]
 	},
 
@@ -53,6 +21,38 @@
 		"prefix":"nojosarefcmds",
 		"body":[
 			"\\nojosarefcmds"
+		]
+	},
+
+
+	"josaref[]{}":{
+		"prefix":"josaref",
+		"body":[
+			"\\josaref[${2:type}]{${1:label}}"
+		]
+	},
+
+
+	"josaref[][]{}":{
+		"prefix":"josaref",
+		"body":[
+			"\\josaref[${2:type}][${3:delim%keyvals}]{${1:label}}"
+		]
+	},
+
+
+	"ref[]{}":{
+		"prefix":"ref",
+		"body":[
+			"\\ref[${2:type}]{${1:label}}"
+		]
+	},
+
+
+	"ref[][]{}":{
+		"prefix":"ref",
+		"body":[
+			"\\ref[${2:type}][${3:delim}]{${1:label}}"
 		]
 	}
 }

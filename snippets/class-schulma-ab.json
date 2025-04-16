@@ -1,7 +1,7 @@
 {
 
 
-	"Kurs":{
+	"Kurs{}":{
 		"prefix":"Kurs",
 		"body":[
 			"\\Kurs{${1:Kursbezeichnung%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"Datum":{
+	"Datum{}":{
 		"prefix":"Datum",
 		"body":[
 			"\\Datum{${1:Datum}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Thema":{
+	"Thema{}":{
 		"prefix":"Thema",
 		"body":[
 			"\\Thema{${1:Thema%text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"Thema":{
-		"prefix":"Thema",
-		"body":[
-			"\\Thema[${2:Nummer}]{${1:Thema%text}}"
-		]
-	},
-
-
-	"Bearbeiter":{
+	"Bearbeiter{}":{
 		"prefix":"Bearbeiter",
 		"body":[
 			"\\Bearbeiter{${1:Name}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"schulmaalph":{
+	"schulmaalph{}":{
 		"prefix":"schulmaalph",
 		"body":[
 			"\\schulmaalph{${1:counter}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"Aufgabentitel":{
+	"Aufgabentitel{}":{
 		"prefix":"Aufgabentitel",
 		"body":[
 			"\\Aufgabentitel{${1:Bezeichnung%text}}"
@@ -73,26 +65,10 @@
 	},
 
 
-	"Aufgabe*":{
-		"prefix":"Aufgabe*",
-		"body":[
-			"\\Aufgabe*"
-		]
-	},
-
-
 	"Uebung":{
 		"prefix":"Uebung",
 		"body":[
 			"\\Uebung"
-		]
-	},
-
-
-	"Uebung*":{
-		"prefix":"Uebung*",
-		"body":[
-			"\\Uebung*"
 		]
 	},
 
@@ -121,7 +97,7 @@
 	},
 
 
-	"Luecke":{
+	"Luecke{}":{
 		"prefix":"Luecke",
 		"body":[
 			"\\Luecke{${1:Breite}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"NurAufgabe":{
+	"NurAufgabe{}":{
 		"prefix":"NurAufgabe",
 		"body":[
 			"\\NurAufgabe{${1:Teil der Aufgabe}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"NurLoesung":{
+	"NurLoesung{}":{
 		"prefix":"NurLoesung",
 		"body":[
 			"\\NurLoesung{${1:Teil der Aufgabe}}"
@@ -329,22 +305,26 @@
 	},
 
 
-	"Lsg":{
-		"prefix":"Lsg",
+	"Aufgabe*":{
+		"prefix":"*Aufgabe",
 		"body":[
-			"\\begin{Lsg}",
-			"\t$1",
-			"\\end{Lsg}"
+			"\\Aufgabe*"
 		]
 	},
 
 
-	"Teilaufgaben":{
-		"prefix":"Teilaufgaben",
+	"Uebung*":{
+		"prefix":"*Uebung",
 		"body":[
-			"\\begin{Teilaufgaben}",
-			"\t$1",
-			"\\end{Teilaufgaben}"
+			"\\Uebung*"
+		]
+	},
+
+
+	"Thema[]{}":{
+		"prefix":"Thema",
+		"body":[
+			"\\Thema[${2:Nummer}]{${1:Thema%text}}"
 		]
 	},
 
@@ -353,7 +333,7 @@
 		"prefix":"Kreisliste",
 		"body":[
 			"\\begin{Kreisliste}",
-			"\t$1",
+				"\t$1",
 			"\\end{Kreisliste}"
 		]
 	},
@@ -363,8 +343,38 @@
 		"prefix":"Aufgaben",
 		"body":[
 			"\\begin{Aufgaben}",
-			"\t$1",
+				"\t$1",
 			"\\end{Aufgaben}"
+		]
+	},
+
+
+	"Teilaufgaben":{
+		"prefix":"Teilaufgaben",
+		"body":[
+			"\\begin{Teilaufgaben}",
+				"\t$1",
+			"\\end{Teilaufgaben}"
+		]
+	},
+
+
+	"Lsg":{
+		"prefix":"Lsg",
+		"body":[
+			"\\begin{Lsg}",
+				"\t$1",
+			"\\end{Lsg}"
+		]
+	},
+
+
+	"Lsg":{
+		"prefix":"Lsg",
+		"body":[
+			"\\begin{Lsg}",
+				"\t$1",
+			"\\end{Lsg}"
 		]
 	}
 }

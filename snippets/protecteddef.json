@@ -1,7 +1,7 @@
 {
 
 
-	"ProtectedDef":{
+	"ProtectedDef{}{}":{
 		"prefix":"ProtectedDef",
 		"body":[
 			"\\ProtectedDef{${1:cmd}}{${2:definition}}"
@@ -9,26 +9,26 @@
 	},
 
 
-	"ProtectedDef":{
-		"prefix":"ProtectedDef",
-		"body":[
-			"\\ProtectedDef{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"ProtectedDef*":{
-		"prefix":"ProtectedDef*",
+	"ProtectedDef*{}{}":{
+		"prefix":"*ProtectedDef",
 		"body":[
 			"\\ProtectedDef*{${1:cmd}}{${2:definition}}"
 		]
 	},
 
 
-	"ProtectedDef*":{
-		"prefix":"ProtectedDef*",
+	"ProtectedDef*{}[]{}":{
+		"prefix":"*ProtectedDef",
 		"body":[
 			"\\ProtectedDef*{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"ProtectedDef{}[]{}":{
+		"prefix":"ProtectedDef",
+		"body":[
+			"\\ProtectedDef{${1:cmd}}[${3:args}]{${2:definition}}"
 		]
 	}
 }

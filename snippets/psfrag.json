@@ -1,34 +1,10 @@
 {
 
 
-	"psfrag":{
+	"psfrag{}{}":{
 		"prefix":"psfrag",
 		"body":[
 			"\\psfrag{${1:tag}}{${2:replacement}}"
-		]
-	},
-
-
-	"psfrag":{
-		"prefix":"psfrag",
-		"body":[
-			"\\psfrag{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
-		]
-	},
-
-
-	"psfrag*":{
-		"prefix":"psfrag*",
-		"body":[
-			"\\psfrag*{${1:tag}}{${2:replacement}}"
-		]
-	},
-
-
-	"psfrag*":{
-		"prefix":"psfrag*",
-		"body":[
-			"\\psfrag*{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
 		]
 	},
 
@@ -65,11 +41,35 @@
 	},
 
 
+	"psfrag*{}{}":{
+		"prefix":"*psfrag",
+		"body":[
+			"\\psfrag*{${1:tag}}{${2:replacement}}"
+		]
+	},
+
+
+	"psfrag*{}[][][][]{}":{
+		"prefix":"*psfrag",
+		"body":[
+			"\\psfrag*{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
+		]
+	},
+
+
+	"psfrag{}[][][][]{}":{
+		"prefix":"psfrag",
+		"body":[
+			"\\psfrag{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
+		]
+	},
+
+
 	"psfrags":{
 		"prefix":"psfrags",
 		"body":[
 			"\\begin{psfrags}",
-			"\t$1",
+				"\t$1",
 			"\\end{psfrags}"
 		]
 	}

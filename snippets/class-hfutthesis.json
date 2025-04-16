@@ -1,7 +1,7 @@
 {
 
 
-	"hfutsetup":{
+	"hfutsetup{}":{
 		"prefix":"hfutsetup",
 		"body":[
 			"\\hfutsetup{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"bm":{
+	"bm{}":{
 		"prefix":"bm",
 		"body":[
 			"\\bm{${1:text%plain}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"inlinecite":{
+	"inlinecite{}":{
 		"prefix":"inlinecite",
 		"body":[
 			"\\inlinecite{${1:bibid}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"notationlabel":{
+	"notationlabel{}":{
 		"prefix":"notationlabel",
 		"body":[
 			"\\notationlabel{${1:text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"note":{
+	"note{}":{
 		"prefix":"note",
 		"body":[
 			"\\note{${1:notes%text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"titleBox":{
+	"titleBox{}":{
 		"prefix":"titleBox",
 		"body":[
 			"\\titleBox{${1:text}}"
@@ -145,15 +145,7 @@
 	},
 
 
-	"underlineFixlen":{
-		"prefix":"underlineFixlen",
-		"body":[
-			"\\underlineFixlen[${2:width}]{${1:text}}"
-		]
-	},
-
-
-	"underlineFixlen":{
+	"underlineFixlen{}":{
 		"prefix":"underlineFixlen",
 		"body":[
 			"\\underlineFixlen{${1:text}}"
@@ -161,112 +153,10 @@
 	},
 
 
-	"publications":{
-		"prefix":"publications",
+	"underlineFixlen[]{}":{
+		"prefix":"underlineFixlen",
 		"body":[
-			"\\begin{publications}",
-			"\t$1",
-			"\\end{publications}"
-		]
-	},
-
-
-	"notation":{
-		"prefix":"notation",
-		"body":[
-			"\\begin{notation}",
-			"\t$1",
-			"\\end{notation}"
-		]
-	},
-
-
-	"proposition":{
-		"prefix":"proposition",
-		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"lemma":{
-		"prefix":"lemma",
-		"body":[
-			"\\begin{lemma}",
-			"\t$1",
-			"\\end{lemma}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"axiom":{
-		"prefix":"axiom",
-		"body":[
-			"\\begin{axiom}",
-			"\t$1",
-			"\\end{axiom}"
-		]
-	},
-
-
-	"assertion":{
-		"prefix":"assertion",
-		"body":[
-			"\\begin{assertion}",
-			"\t$1",
-			"\\end{assertion}"
-		]
-	},
-
-
-	"abstract*":{
-		"prefix":"abstract*",
-		"body":[
-			"\\begin{abstract*}",
-			"\t$1",
-			"\\end{abstract*}"
-		]
-	},
-
-
-	"notationlist":{
-		"prefix":"notationlist",
-		"body":[
-			"\\begin{notationlist}",
-			"\t$1",
-			"\\end{notationlist}"
+			"\\underlineFixlen[${2:width}]{${1:text}}"
 		]
 	},
 
@@ -275,38 +165,98 @@
 		"prefix":"acknowledgements",
 		"body":[
 			"\\begin{acknowledgements}",
-			"\t$1",
+				"\t$1",
 			"\\end{acknowledgements}"
 		]
 	},
 
 
-	"remark":{
-		"prefix":"remark",
+	"notation":{
+		"prefix":"notation",
 		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
 		]
 	},
 
 
-	"example":{
-		"prefix":"example",
+	"notationlist":{
+		"prefix":"notationlist",
 		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
+			"\\begin{notationlist}",
+				"\t$1",
+			"\\end{notationlist}"
 		]
 	},
 
 
-	"proof":{
-		"prefix":"proof",
+	"publications":{
+		"prefix":"publications",
 		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
+			"\\begin{publications}",
+				"\t$1",
+			"\\end{publications}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"assertion":{
+		"prefix":"assertion",
+		"body":[
+			"\\begin{assertion}",
+				"\t$1",
+			"\\end{assertion}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
 		]
 	},
 
@@ -315,8 +265,158 @@
 		"prefix":"assumption",
 		"body":[
 			"\\begin{assumption}",
-			"\t$1",
+				"\t$1",
 			"\\end{assumption}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"abstract*":{
+		"prefix":"*abstract",
+		"body":[
+			"\\begin{abstract*}",
+				"\t$1",
+			"\\end{abstract*}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"assertion":{
+		"prefix":"assertion",
+		"body":[
+			"\\begin{assertion}",
+				"\t$1",
+			"\\end{assertion}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"assumption":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
 		]
 	}
 }

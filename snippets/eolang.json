@@ -1,7 +1,7 @@
 {
 
 
-	"phiq":{
+	"phiq{}":{
 		"prefix":"phiq",
 		"body":[
 			"\\phiq{${1:expression%formula}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"phiSlot":{
+	"phiSlot{}":{
 		"prefix":"phiSlot",
 		"body":[
 			"\\phiSlot{${1:arg}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"phiOset":{
+	"phiOset{}{}":{
 		"prefix":"phiOset",
 		"body":[
 			"\\phiOset{${1:over}}{${2:arg}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"phiUset":{
+	"phiUset{}{}":{
 		"prefix":"phiUset",
 		"body":[
 			"\\phiUset{${1:under}}{${2:arg}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"phiMany":{
+	"phiMany{}{}{}":{
 		"prefix":"phiMany",
 		"body":[
 			"\\phiMany{${1:arg}}{${2:under}}{${3:over}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"phiSaveTo":{
+	"phiSaveTo{}":{
 		"prefix":"phiSaveTo",
 		"body":[
 			"\\phiSaveTo{${1:name}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"sodgSaveTo":{
+	"sodgSaveTo{}":{
 		"prefix":"sodgSaveTo",
 		"body":[
 			"\\sodgSaveTo{${1:name}}"
@@ -105,18 +105,10 @@
 	},
 
 
-	"eoAnon":{
+	"eoAnon{}":{
 		"prefix":"eoAnon",
 		"body":[
 			"\\eoAnon{${1:content}}"
-		]
-	},
-
-
-	"eoAnon":{
-		"prefix":"eoAnon",
-		"body":[
-			"\\eoAnon[${2:substitution}]{${1:content}}"
 		]
 	},
 
@@ -129,11 +121,19 @@
 	},
 
 
+	"eoAnon[]{}":{
+		"prefix":"eoAnon",
+		"body":[
+			"\\eoAnon[${2:substitution}]{${1:content}}"
+		]
+	},
+
+
 	"phiquation":{
 		"prefix":"phiquation",
 		"body":[
 			"\\begin{phiquation}",
-			"\t$1",
+				"\t$1",
 			"\\end{phiquation}"
 		]
 	},
@@ -143,17 +143,17 @@
 		"prefix":"sodg",
 		"body":[
 			"\\begin{sodg}",
-			"\t$1",
+				"\t$1",
 			"\\end{sodg}"
 		]
 	},
 
 
 	"phiquation*":{
-		"prefix":"phiquation*",
+		"prefix":"*phiquation",
 		"body":[
 			"\\begin{phiquation*}",
-			"\t$1",
+				"\t$1",
 			"\\end{phiquation*}"
 		]
 	}

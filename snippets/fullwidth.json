@@ -1,7 +1,7 @@
 {
 
 
-	"fullwidthsetup":{
+	"fullwidthsetup{}":{
 		"prefix":"fullwidthsetup",
 		"body":[
 			"\\fullwidthsetup{${1:options%keyvals}}"
@@ -13,7 +13,17 @@
 		"prefix":"fullwidth",
 		"body":[
 			"\\begin{fullwidth}",
-			"\t$1",
+				"\t$1",
+			"\\end{fullwidth}"
+		]
+	},
+
+
+	"fullwidth":{
+		"prefix":"fullwidth",
+		"body":[
+			"\\begin{fullwidth}",
+				"\t$1",
 			"\\end{fullwidth}"
 		]
 	}

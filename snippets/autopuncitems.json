@@ -17,7 +17,7 @@
 	},
 
 
-	"setAPeach":{
+	"setAPeach{}{}{}":{
 		"prefix":"setAPeach",
 		"body":[
 			"\\setAPeach{${1:default punct}}{${2:second last punct}}{${3:last punct}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"setAPall":{
+	"setAPall{}":{
 		"prefix":"setAPall",
 		"body":[
 			"\\setAPall{${1:punct}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"setAPdef":{
+	"setAPdef{}":{
 		"prefix":"setAPdef",
 		"body":[
 			"\\setAPdef{${1:punct}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"setAPseclast":{
+	"setAPseclast{}":{
 		"prefix":"setAPseclast",
 		"body":[
 			"\\setAPseclast{${1:punct}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"setAPlast":{
+	"setAPlast{}":{
 		"prefix":"setAPlast",
 		"body":[
 			"\\setAPlast{${1:punct}}"
@@ -89,32 +89,12 @@
 	},
 
 
-	"AutoPuncTabular":{
-		"prefix":"AutoPuncTabular",
-		"body":[
-			"\\begin{AutoPuncTabular}",
-			"\t$1",
-			"\\end{AutoPuncTabular}"
-		]
-	},
-
-
 	"AutoPuncItems":{
 		"prefix":"AutoPuncItems",
 		"body":[
 			"\\begin{AutoPuncItems}",
-			"\t$1",
+				"\t$1",
 			"\\end{AutoPuncItems}"
-		]
-	},
-
-
-	"AutoPuncItemsE":{
-		"prefix":"AutoPuncItemsE",
-		"body":[
-			"\\begin{AutoPuncItemsE}",
-			"\t$1",
-			"\\end{AutoPuncItemsE}"
 		]
 	},
 
@@ -123,8 +103,28 @@
 		"prefix":"AutoPuncItemsO",
 		"body":[
 			"\\begin{AutoPuncItemsO}",
-			"\t$1",
+				"\t$1",
 			"\\end{AutoPuncItemsO}"
+		]
+	},
+
+
+	"AutoPuncItemsE":{
+		"prefix":"AutoPuncItemsE",
+		"body":[
+			"\\begin{AutoPuncItemsE}",
+				"\t$1",
+			"\\end{AutoPuncItemsE}"
+		]
+	},
+
+
+	"AutoPuncTabular":{
+		"prefix":"AutoPuncTabular",
+		"body":[
+			"\\begin{AutoPuncTabular}",
+				"\t$1",
+			"\\end{AutoPuncTabular}"
 		]
 	}
 }

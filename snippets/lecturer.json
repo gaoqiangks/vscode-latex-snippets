@@ -9,14 +9,6 @@
 	},
 
 
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\slide[${1:attributes%keyvals}]"
-		]
-	},
-
-
 	"endslide":{
 		"prefix":"endslide",
 		"body":[
@@ -29,14 +21,6 @@
 		"prefix":"step",
 		"body":[
 			"\\step"
-		]
-	},
-
-
-	"step":{
-		"prefix":"step",
-		"body":[
-			"\\step[${1:attributes%keyvals}]"
 		]
 	},
 
@@ -57,7 +41,7 @@
 	},
 
 
-	"presentationonly":{
+	"presentationonly{}":{
 		"prefix":"presentationonly",
 		"body":[
 			"\\presentationonly{${1:material}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"handoutonly":{
+	"handoutonly{}":{
 		"prefix":"handoutonly",
 		"body":[
 			"\\handoutonly{${1:material}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"presentationorhandout":{
+	"presentationorhandout{}{}":{
 		"prefix":"presentationorhandout",
 		"body":[
 			"\\presentationorhandout{${1:presentation}}{${2:handout}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"setslide":{
+	"setslide{}":{
 		"prefix":"setslide",
 		"body":[
 			"\\setslide{${1:list of slides}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"setstep":{
+	"setstep{}":{
 		"prefix":"setstep",
 		"body":[
 			"\\setstep{${1:list of steps}}"
@@ -97,50 +81,10 @@
 	},
 
 
-	"showgrid":{
+	"showgrid{}":{
 		"prefix":"showgrid",
 		"body":[
 			"\\showgrid{${1:increment%l}}"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid{${1:increment%l}}[${2:color}]"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid{${1:increment%l}}[${2:color}][${3:line width}]"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid[${2:left,top}]{${1:increment%l}}"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid[${2:left,top}]{${1:increment%l}}[${3:color}]"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid[${2:left,top}]{${1:increment%l}}[${3:color}][${4:line width}]"
 		]
 	},
 
@@ -153,7 +97,7 @@
 	},
 
 
-	"position":{
+	"position{}{}":{
 		"prefix":"position",
 		"body":[
 			"\\position{${1:area}}{${2:material}}"
@@ -161,15 +105,7 @@
 	},
 
 
-	"position":{
-		"prefix":"position",
-		"body":[
-			"\\position{${1:area}}[${3:left,top}]{${2:material}}"
-		]
-	},
-
-
-	"setarea":{
+	"setarea{}":{
 		"prefix":"setarea",
 		"body":[
 			"\\setarea{${1:list of areas}}"
@@ -177,7 +113,7 @@
 	},
 
 
-	"createbookmark":{
+	"createbookmark{}{}":{
 		"prefix":"createbookmark",
 		"body":[
 			"\\createbookmark{${1:level}}{${2:text}}"
@@ -185,31 +121,7 @@
 	},
 
 
-	"createbookmark":{
-		"prefix":"createbookmark",
-		"body":[
-			"\\createbookmark[${3:options%keyvals}]{${1:level}}{${2:text}}"
-		]
-	},
-
-
-	"createbookmark":{
-		"prefix":"createbookmark",
-		"body":[
-			"\\createbookmark{${1:level}}[${3:anchor}]{${2:text}}"
-		]
-	},
-
-
-	"createbookmark":{
-		"prefix":"createbookmark",
-		"body":[
-			"\\createbookmark[${3:options%keyvals}]{${1:level}}[${4:anchor}]{${2:text}}"
-		]
-	},
-
-
-	"showbookmarks":{
+	"showbookmarks{}":{
 		"prefix":"showbookmarks",
 		"body":[
 			"\\showbookmarks{${1:text}}"
@@ -217,15 +129,7 @@
 	},
 
 
-	"showbookmarks":{
-		"prefix":"showbookmarks",
-		"body":[
-			"\\showbookmarks[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"anchor":{
+	"anchor{}":{
 		"prefix":"anchor",
 		"body":[
 			"\\anchor{${1:name}}"
@@ -233,7 +137,7 @@
 	},
 
 
-	"goto":{
+	"goto{}{}":{
 		"prefix":"goto",
 		"body":[
 			"\\goto{${1:name}}{${2:text}}"
@@ -241,15 +145,7 @@
 	},
 
 
-	"goto":{
-		"prefix":"goto",
-		"body":[
-			"\\goto[${3:optional style%keyvals}]{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"gotoA":{
+	"gotoA{}{}":{
 		"prefix":"gotoA",
 		"body":[
 			"\\gotoA{${1:name}}{${2:text}}"
@@ -257,15 +153,7 @@
 	},
 
 
-	"gotoA":{
-		"prefix":"gotoA",
-		"body":[
-			"\\gotoA[${3:optional style%keyvals}]{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"gotoB":{
+	"gotoB{}{}":{
 		"prefix":"gotoB",
 		"body":[
 			"\\gotoB{${1:name}}{${2:text}}"
@@ -273,15 +161,7 @@
 	},
 
 
-	"gotoB":{
-		"prefix":"gotoB",
-		"body":[
-			"\\gotoB[${3:optional style%keyvals}]{${1:name}}{${2:text}}A"
-		]
-	},
-
-
-	"firstslide":{
+	"firstslide{}":{
 		"prefix":"firstslide",
 		"body":[
 			"\\firstslide{${1:text}}"
@@ -289,15 +169,7 @@
 	},
 
 
-	"firstslide":{
-		"prefix":"firstslide",
-		"body":[
-			"\\firstslide[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"lastslide":{
+	"lastslide{}":{
 		"prefix":"lastslide",
 		"body":[
 			"\\lastslide{${1:text}}"
@@ -305,15 +177,7 @@
 	},
 
 
-	"lastslide":{
-		"prefix":"lastslide",
-		"body":[
-			"\\lastslide[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"prevslide":{
+	"prevslide{}":{
 		"prefix":"prevslide",
 		"body":[
 			"\\prevslide{${1:text}}"
@@ -321,15 +185,7 @@
 	},
 
 
-	"prevslide":{
-		"prefix":"prevslide",
-		"body":[
-			"\\prevslide[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"nextslide":{
+	"nextslide{}":{
 		"prefix":"nextslide",
 		"body":[
 			"\\nextslide{${1:text}}"
@@ -337,15 +193,7 @@
 	},
 
 
-	"nextslide":{
-		"prefix":"nextslide",
-		"body":[
-			"\\nextslide[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"prevstep":{
+	"prevstep{}":{
 		"prefix":"prevstep",
 		"body":[
 			"\\prevstep{${1:text}}"
@@ -353,15 +201,7 @@
 	},
 
 
-	"prevstep":{
-		"prefix":"prevstep",
-		"body":[
-			"\\prevstep[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"nextstep":{
+	"nextstep{}":{
 		"prefix":"nextstep",
 		"body":[
 			"\\nextstep{${1:text}}"
@@ -369,15 +209,7 @@
 	},
 
 
-	"nextstep":{
-		"prefix":"nextstep",
-		"body":[
-			"\\nextstep[${2:optional style%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"showorhide":{
+	"showorhide{}{}":{
 		"prefix":"showorhide",
 		"body":[
 			"\\showorhide{${1:actions}}{${2:text}}"
@@ -385,15 +217,7 @@
 	},
 
 
-	"showorhide":{
-		"prefix":"showorhide",
-		"body":[
-			"\\showorhide[${3:optional style%keyvals}]{${1:actions}}{${2:text}}"
-		]
-	},
-
-
-	"newcolor":{
+	"newcolor{}{}{}":{
 		"prefix":"newcolor",
 		"body":[
 			"\\newcolor{${1:name%specialDef}}{${2:color model}}{${3:values}}"
@@ -401,15 +225,7 @@
 	},
 
 
-	"newcolor":{
-		"prefix":"newcolor",
-		"body":[
-			"\\newcolor{${1:name%specialDef}}{${2:color model}}[${4:opacity}]{${3:values}}"
-		]
-	},
-
-
-	"usecolor":{
+	"usecolor{}":{
 		"prefix":"usecolor",
 		"body":[
 			"\\usecolor{${1:color}}"
@@ -417,7 +233,7 @@
 	},
 
 
-	"newshade":{
+	"newshade{}":{
 		"prefix":"newshade",
 		"body":[
 			"\\newshade{${1:name%specialDef}}"
@@ -425,7 +241,7 @@
 	},
 
 
-	"newimage":{
+	"newimage{}{}":{
 		"prefix":"newimage",
 		"body":[
 			"\\newimage{${1:name}}{${2:file}}"
@@ -433,15 +249,7 @@
 	},
 
 
-	"newimage":{
-		"prefix":"newimage",
-		"body":[
-			"\\newimage{${1:name}}[${3:width,height}]{${2:file}}"
-		]
-	},
-
-
-	"useimage":{
+	"useimage{}":{
 		"prefix":"useimage",
 		"body":[
 			"\\useimage{${1:name}}"
@@ -449,7 +257,7 @@
 	},
 
 
-	"newsymbol":{
+	"newsymbol{}{}":{
 		"prefix":"newsymbol",
 		"body":[
 			"\\newsymbol{${1:cmd}}{${2:drawing}}"
@@ -457,15 +265,7 @@
 	},
 
 
-	"newsymbol":{
-		"prefix":"newsymbol",
-		"body":[
-			"\\newsymbol{${1:cmd}}[${3:settings%keyvals}]{${2:drawing}}"
-		]
-	},
-
-
-	"symbolwidth":{
+	"symbolwidth{}":{
 		"prefix":"symbolwidth",
 		"body":[
 			"\\symbolwidth{${1:symbol cmd}}"
@@ -473,7 +273,7 @@
 	},
 
 
-	"symbolheight":{
+	"symbolheight{}":{
 		"prefix":"symbolheight",
 		"body":[
 			"\\symbolheight{${1:symbol cmd}}"
@@ -481,7 +281,7 @@
 	},
 
 
-	"symboldepth":{
+	"symboldepth{}":{
 		"prefix":"symboldepth",
 		"body":[
 			"\\symboldepth{${1:symbol cmd}}"
@@ -489,7 +289,7 @@
 	},
 
 
-	"newtransition":{
+	"newtransition{}":{
 		"prefix":"newtransition",
 		"body":[
 			"\\newtransition{${1:name}}"
@@ -497,7 +297,7 @@
 	},
 
 
-	"addtopageobject":{
+	"addtopageobject{}":{
 		"prefix":"addtopageobject",
 		"body":[
 			"\\addtopageobject{${1:code}}"
@@ -505,7 +305,7 @@
 	},
 
 
-	"addtoeachpageobject":{
+	"addtoeachpageobject{}":{
 		"prefix":"addtoeachpageobject",
 		"body":[
 			"\\addtoeachpageobject{${1:code}}"
@@ -513,7 +313,7 @@
 	},
 
 
-	"addtopageresources":{
+	"addtopageresources{}":{
 		"prefix":"addtopageresources",
 		"body":[
 			"\\addtopageresources{${1:code}}"
@@ -521,7 +321,7 @@
 	},
 
 
-	"addproperties":{
+	"addproperties{}{}":{
 		"prefix":"addproperties",
 		"body":[
 			"\\addproperties{${1:name}}{${2:object number}}"
@@ -529,7 +329,7 @@
 	},
 
 
-	"addshading":{
+	"addshading{}{}":{
 		"prefix":"addshading",
 		"body":[
 			"\\addshading{${1:name}}{${2:object number}}"
@@ -537,7 +337,7 @@
 	},
 
 
-	"addgstate":{
+	"addgstate{}{}":{
 		"prefix":"addgstate",
 		"body":[
 			"\\addgstate{${1:name}}{${2:object number}}"
@@ -545,7 +345,7 @@
 	},
 
 
-	"addOCG":{
+	"addOCG{}":{
 		"prefix":"addOCG",
 		"body":[
 			"\\addOCG{${1:object number}}"
@@ -553,10 +353,210 @@
 	},
 
 
-	"addvisibleOCG":{
+	"addvisibleOCG{}":{
 		"prefix":"addvisibleOCG",
 		"body":[
 			"\\addvisibleOCG{${1:object number}}"
+		]
+	},
+
+
+	"slide[]":{
+		"prefix":"slide",
+		"body":[
+			"\\slide[${1:attributes%keyvals}]"
+		]
+	},
+
+
+	"step[]":{
+		"prefix":"step",
+		"body":[
+			"\\step[${1:attributes%keyvals}]"
+		]
+	},
+
+
+	"showgrid{}[]":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid{${1:increment%l}}[${2:color}]"
+		]
+	},
+
+
+	"showgrid{}[][]":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid{${1:increment%l}}[${2:color}][${3:line width}]"
+		]
+	},
+
+
+	"showgrid[]{}":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid[${2:left,top}]{${1:increment%l}}"
+		]
+	},
+
+
+	"showgrid[]{}[]":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid[${2:left,top}]{${1:increment%l}}[${3:color}]"
+		]
+	},
+
+
+	"showgrid[]{}[][]":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid[${2:left,top}]{${1:increment%l}}[${3:color}][${4:line width}]"
+		]
+	},
+
+
+	"position{}[]{}":{
+		"prefix":"position",
+		"body":[
+			"\\position{${1:area}}[${3:left,top}]{${2:material}}"
+		]
+	},
+
+
+	"createbookmark[]{}{}":{
+		"prefix":"createbookmark",
+		"body":[
+			"\\createbookmark[${3:options%keyvals}]{${1:level}}{${2:text}}"
+		]
+	},
+
+
+	"createbookmark{}[]{}":{
+		"prefix":"createbookmark",
+		"body":[
+			"\\createbookmark{${1:level}}[${3:anchor}]{${2:text}}"
+		]
+	},
+
+
+	"createbookmark[]{}[]{}":{
+		"prefix":"createbookmark",
+		"body":[
+			"\\createbookmark[${3:options%keyvals}]{${1:level}}[${4:anchor}]{${2:text}}"
+		]
+	},
+
+
+	"showbookmarks[]{}":{
+		"prefix":"showbookmarks",
+		"body":[
+			"\\showbookmarks[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"goto[]{}{}":{
+		"prefix":"goto",
+		"body":[
+			"\\goto[${3:optional style%keyvals}]{${1:name}}{${2:text}}"
+		]
+	},
+
+
+	"gotoA[]{}{}":{
+		"prefix":"gotoA",
+		"body":[
+			"\\gotoA[${3:optional style%keyvals}]{${1:name}}{${2:text}}"
+		]
+	},
+
+
+	"gotoB[]{}{}A":{
+		"prefix":"gotoB",
+		"body":[
+			"\\gotoB[${3:optional style%keyvals}]{${1:name}}{${2:text}}A"
+		]
+	},
+
+
+	"firstslide[]{}":{
+		"prefix":"firstslide",
+		"body":[
+			"\\firstslide[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"lastslide[]{}":{
+		"prefix":"lastslide",
+		"body":[
+			"\\lastslide[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"prevslide[]{}":{
+		"prefix":"prevslide",
+		"body":[
+			"\\prevslide[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"nextslide[]{}":{
+		"prefix":"nextslide",
+		"body":[
+			"\\nextslide[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"prevstep[]{}":{
+		"prefix":"prevstep",
+		"body":[
+			"\\prevstep[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"nextstep[]{}":{
+		"prefix":"nextstep",
+		"body":[
+			"\\nextstep[${2:optional style%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"showorhide[]{}{}":{
+		"prefix":"showorhide",
+		"body":[
+			"\\showorhide[${3:optional style%keyvals}]{${1:actions}}{${2:text}}"
+		]
+	},
+
+
+	"newcolor{}{}[]{}":{
+		"prefix":"newcolor",
+		"body":[
+			"\\newcolor{${1:name%specialDef}}{${2:color model}}[${4:opacity}]{${3:values}}"
+		]
+	},
+
+
+	"newimage{}[]{}":{
+		"prefix":"newimage",
+		"body":[
+			"\\newimage{${1:name}}[${3:width,height}]{${2:file}}"
+		]
+	},
+
+
+	"newsymbol{}[]{}":{
+		"prefix":"newsymbol",
+		"body":[
+			"\\newsymbol{${1:cmd}}[${3:settings%keyvals}]{${2:drawing}}"
 		]
 	}
 }

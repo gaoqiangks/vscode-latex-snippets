@@ -1,7 +1,7 @@
 {
 
 
-	"yv":{
+	"yv{}":{
 		"prefix":"yv",
 		"body":[
 			"\\yv{${1:var}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"declareYAMLvarsFile":{
+	"declareYAMLvarsFile{}":{
 		"prefix":"declareYAMLvarsFile",
 		"body":[
 			"\\declareYAMLvarsFile{${1:file}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"parseYAMLvarsFile":{
+	"parseYAMLvarsFile{}":{
 		"prefix":"parseYAMLvarsFile",
 		"body":[
 			"\\parseYAMLvarsFile{${1:file}}"
@@ -65,11 +65,21 @@
 	},
 
 
+	"declareYAMLvars":{
+		"prefix":"declareYAMLvars",
+		"body":[
+			"\\begin{declareYAMLvars}",
+				"\t$1",
+			"\\end{declareYAMLvars}"
+		]
+	},
+
+
 	"parseYAMLvars":{
 		"prefix":"parseYAMLvars",
 		"body":[
 			"\\begin{parseYAMLvars}",
-			"\t$1",
+				"\t$1",
 			"\\end{parseYAMLvars}"
 		]
 	},
@@ -79,18 +89,8 @@
 		"prefix":"parseYAMLpdfdata",
 		"body":[
 			"\\begin{parseYAMLpdfdata}",
-			"\t$1",
+				"\t$1",
 			"\\end{parseYAMLpdfdata}"
-		]
-	},
-
-
-	"declareYAMLvars":{
-		"prefix":"declareYAMLvars",
-		"body":[
-			"\\begin{declareYAMLvars}",
-			"\t$1",
-			"\\end{declareYAMLvars}"
 		]
 	}
 }

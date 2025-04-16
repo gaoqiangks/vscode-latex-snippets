@@ -1,7 +1,7 @@
 {
 
 
-	"setsepchar":{
+	"setsepchar{}":{
 		"prefix":"setsepchar",
 		"body":[
 			"\\setsepchar{${1:character}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"setsepchar":{
-		"prefix":"setsepchar",
-		"body":[
-			"\\setsepchar[${2:nested sep char}]{${1:character}}"
-		]
-	},
-
-
-	"readlist":{
+	"readlist{}{}":{
 		"prefix":"readlist",
 		"body":[
 			"\\readlist{${1:cmd}}{${2:list}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"readlist*":{
-		"prefix":"readlist*",
-		"body":[
-			"\\readlist*{${1:cmd}}{${2:list}}"
-		]
-	},
-
-
-	"greadlist":{
+	"greadlist{}{}":{
 		"prefix":"greadlist",
 		"body":[
 			"\\greadlist{${1:cmd}}{${2:list}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"greadlist*":{
-		"prefix":"greadlist*",
-		"body":[
-			"\\greadlist*{${1:cmd}}{${2:list}}"
-		]
-	},
-
-
-	"showitems":{
+	"showitems{}":{
 		"prefix":"showitems",
 		"body":[
 			"\\showitems{${1:list cmd}}"
@@ -73,7 +49,39 @@
 	},
 
 
-	"itemtomacro":{
+	"defpair{}":{
+		"prefix":"defpair",
+		"body":[
+			"\\defpair{${1:<tok1><tok2>...}}"
+		]
+	},
+
+
+	"readlist*{}{}":{
+		"prefix":"*readlist",
+		"body":[
+			"\\readlist*{${1:cmd}}{${2:list}}"
+		]
+	},
+
+
+	"greadlist*{}{}":{
+		"prefix":"*greadlist",
+		"body":[
+			"\\greadlist*{${1:cmd}}{${2:list}}"
+		]
+	},
+
+
+	"setsepchar[]{}":{
+		"prefix":"setsepchar",
+		"body":[
+			"\\setsepchar[${2:nested sep char}]{${1:character}}"
+		]
+	},
+
+
+	"itemtomacro{}[]{}":{
 		"prefix":"itemtomacro",
 		"body":[
 			"\\itemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
@@ -81,7 +89,7 @@
 	},
 
 
-	"gitemtomacro":{
+	"gitemtomacro{}[]{}":{
 		"prefix":"gitemtomacro",
 		"body":[
 			"\\gitemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
@@ -89,18 +97,10 @@
 	},
 
 
-	"listlen":{
+	"listlen{}[]":{
 		"prefix":"listlen",
 		"body":[
 			"\\listlen{${1:list cmd}}[${2:index}]"
-		]
-	},
-
-
-	"defpair":{
-		"prefix":"defpair",
-		"body":[
-			"\\defpair{${1:<tok1><tok2>...}}"
 		]
 	}
 }

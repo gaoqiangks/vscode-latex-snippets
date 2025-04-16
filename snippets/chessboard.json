@@ -9,15 +9,7 @@
 	},
 
 
-	"chessboard":{
-		"prefix":"chessboard",
-		"body":[
-			"\\chessboard[${1:options%keyvals}]"
-		]
-	},
-
-
-	"setchessboard":{
+	"setchessboard{}":{
 		"prefix":"setchessboard",
 		"body":[
 			"\\setchessboard{${1:options%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"storechessboardstyle":{
+	"storechessboardstyle{}{}":{
 		"prefix":"storechessboardstyle",
 		"body":[
 			"\\storechessboardstyle{${1:name}}{${2:options%keyvals}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"cbDefineLanguage":{
+	"cbDefineLanguage{}":{
 		"prefix":"cbDefineLanguage",
 		"body":[
 			"\\cbDefineLanguage{${1:language}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"cbDefineTranslation":{
+	"cbDefineTranslation{}{}":{
 		"prefix":"cbDefineTranslation",
 		"body":[
 			"\\cbDefineTranslation{${1:piece letter}}{${2:new piece letter}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"cbDefineMoverStyle":{
+	"cbDefineMoverStyle{}{}{}{}{}":{
 		"prefix":"cbDefineMoverStyle",
 		"body":[
 			"\\cbDefineMoverStyle{${1:name}}{${2:white top}}{${3:white bot}}{${4:black top}}{${5:black bot}}"
@@ -153,15 +145,7 @@
 	},
 
 
-	"cbDefineMoverStyle":{
-		"prefix":"cbDefineMoverStyle",
-		"body":[
-			"\\cbDefineMoverStyle[${6:cmds}]{${1:name}}{${2:white top}}{${3:white bot}}{${4:black top}}{${5:black bot}}"
-		]
-	},
-
-
-	"cbDefinePgfFieldStyle":{
+	"cbDefinePgfFieldStyle{}{}":{
 		"prefix":"cbDefinePgfFieldStyle",
 		"body":[
 			"\\cbDefinePgfFieldStyle{${1:name}}{${2:definition}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"cbDefinePgfRegionStyle":{
+	"cbDefinePgfRegionStyle{}{}":{
 		"prefix":"cbDefinePgfRegionStyle",
 		"body":[
 			"\\cbDefinePgfRegionStyle{${1:name}}{${2:definition}}"
@@ -177,7 +161,7 @@
 	},
 
 
-	"cbDefinePgfMoveStyle":{
+	"cbDefinePgfMoveStyle{}{}":{
 		"prefix":"cbDefinePgfMoveStyle",
 		"body":[
 			"\\cbDefinePgfMoveStyle{${1:name}}{${2:definition}}"
@@ -185,18 +169,10 @@
 	},
 
 
-	"cbDefineNewPiece":{
+	"cbDefineNewPiece{}{}{}{}":{
 		"prefix":"cbDefineNewPiece",
 		"body":[
 			"\\cbDefineNewPiece{${1:color}}{${2:char}}{${3:on white}}{${4:on black}}"
-		]
-	},
-
-
-	"cbDefineNewPiece":{
-		"prefix":"cbDefineNewPiece",
-		"body":[
-			"\\cbDefineNewPiece[${5:game}]{${1:color}}{${2:char}}{${3:on white}}{${4:on black}}"
 		]
 	},
 
@@ -245,6 +221,30 @@
 		"prefix":"currentwq",
 		"body":[
 			"\\currentwq"
+		]
+	},
+
+
+	"chessboard[]":{
+		"prefix":"chessboard",
+		"body":[
+			"\\chessboard[${1:options%keyvals}]"
+		]
+	},
+
+
+	"cbDefineMoverStyle[]{}{}{}{}{}":{
+		"prefix":"cbDefineMoverStyle",
+		"body":[
+			"\\cbDefineMoverStyle[${6:cmds}]{${1:name}}{${2:white top}}{${3:white bot}}{${4:black top}}{${5:black bot}}"
+		]
+	},
+
+
+	"cbDefineNewPiece[]{}{}{}{}":{
+		"prefix":"cbDefineNewPiece",
+		"body":[
+			"\\cbDefineNewPiece[${5:game}]{${1:color}}{${2:char}}{${3:on white}}{${4:on black}}"
 		]
 	}
 }

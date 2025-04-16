@@ -41,7 +41,7 @@
 	},
 
 
-	"Setversedim":{
+	"Setversedim{}{}":{
 		"prefix":"Setversedim",
 		"body":[
 			"\\Setversedim{${1:half-verse-length}}{${2:separation}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"Setversedim":{
-		"prefix":"Setversedim",
-		"body":[
-			"\\Setversedim{${1:right-half-verse-length}}[${3:left-half-verse-length}]{${2:separation}}"
-		]
-	},
-
-
-	"traditionalconnverses":{
+	"traditionalconnverses{}{}{}":{
 		"prefix":"traditionalconnverses",
 		"body":[
 			"\\traditionalconnverses{${1:right-half-verse-text%text}}{${2:connection-text%text}}{${3:left-half-verse-text%text}}"
@@ -65,15 +57,7 @@
 	},
 
 
-	"traditionalhalfverses":{
-		"prefix":"traditionalhalfverses",
-		"body":[
-			"\\traditionalhalfverses{${1:right-half-verse-text%text}}[${3:connection-text%text}]{${2:left-half-verse-text%text}}"
-		]
-	},
-
-
-	"traditionalhalfverses":{
+	"traditionalhalfverses{}{}":{
 		"prefix":"traditionalhalfverses",
 		"body":[
 			"\\traditionalhalfverses{${1:right-half-verse-text%text}}{${2:left-half-verse-text%text}}"
@@ -89,32 +73,18 @@
 	},
 
 
-	"traditionalpoem*":{
-		"prefix":"traditionalpoem*",
+	"Setversedim{}[]{}":{
+		"prefix":"Setversedim",
 		"body":[
-			"\\begin{traditionalpoem*}",
-			"\t$1",
-			"\\end{traditionalpoem*}"
+			"\\Setversedim{${1:right-half-verse-length}}[${3:left-half-verse-length}]{${2:separation}}"
 		]
 	},
 
 
-	"modernpoem*":{
-		"prefix":"modernpoem*",
+	"traditionalhalfverses{}[]{}":{
+		"prefix":"traditionalhalfverses",
 		"body":[
-			"\\begin{modernpoem*}",
-			"\t$1",
-			"\\end{modernpoem*}"
-		]
-	},
-
-
-	"traditionalpoem":{
-		"prefix":"traditionalpoem",
-		"body":[
-			"\\begin{traditionalpoem}",
-			"\t$1",
-			"\\end{traditionalpoem}"
+			"\\traditionalhalfverses{${1:right-half-verse-text%text}}[${3:connection-text%text}]{${2:left-half-verse-text%text}}"
 		]
 	},
 
@@ -123,8 +93,38 @@
 		"prefix":"modernpoem",
 		"body":[
 			"\\begin{modernpoem}",
-			"\t$1",
+				"\t$1",
 			"\\end{modernpoem}"
+		]
+	},
+
+
+	"traditionalpoem":{
+		"prefix":"traditionalpoem",
+		"body":[
+			"\\begin{traditionalpoem}",
+				"\t$1",
+			"\\end{traditionalpoem}"
+		]
+	},
+
+
+	"modernpoem*":{
+		"prefix":"*modernpoem",
+		"body":[
+			"\\begin{modernpoem*}",
+				"\t$1",
+			"\\end{modernpoem*}"
+		]
+	},
+
+
+	"traditionalpoem*":{
+		"prefix":"*traditionalpoem",
+		"body":[
+			"\\begin{traditionalpoem*}",
+				"\t$1",
+			"\\end{traditionalpoem*}"
 		]
 	}
 }

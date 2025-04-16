@@ -1,7 +1,7 @@
 {
 
 
-	"tikzfeynhandset":{
+	"tikzfeynhandset{}":{
 		"prefix":"tikzfeynhandset",
 		"body":[
 			"\\tikzfeynhandset{${1:options%keyvals}}"
@@ -17,14 +17,6 @@
 	},
 
 
-	"vertex":{
-		"prefix":"vertex",
-		"body":[
-			"\\vertex[${1:options%keyvals}]"
-		]
-	},
-
-
 	"propagator":{
 		"prefix":"propagator",
 		"body":[
@@ -33,26 +25,10 @@
 	},
 
 
-	"propagator":{
-		"prefix":"propagator",
-		"body":[
-			"\\propagator[${1:options%keyvals}]"
-		]
-	},
-
-
 	"propag":{
 		"prefix":"propag",
 		"body":[
 			"\\propag"
-		]
-	},
-
-
-	"propag":{
-		"prefix":"propag",
-		"body":[
-			"\\propag[${1:options%keyvals}]"
 		]
 	},
 
@@ -153,11 +129,35 @@
 	},
 
 
+	"vertex[]":{
+		"prefix":"vertex",
+		"body":[
+			"\\vertex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"propagator[]":{
+		"prefix":"propagator",
+		"body":[
+			"\\propagator[${1:options%keyvals}]"
+		]
+	},
+
+
+	"propag[]":{
+		"prefix":"propag",
+		"body":[
+			"\\propag[${1:options%keyvals}]"
+		]
+	},
+
+
 	"feynhand":{
 		"prefix":"feynhand",
 		"body":[
 			"\\begin{feynhand}",
-			"\t$1",
+				"\t$1",
 			"\\end{feynhand}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"filecontentsprint":{
+	"filecontentsprint{}":{
 		"prefix":"filecontentsprint",
 		"body":[
 			"\\filecontentsprint{${1:macro}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"filecontentsprintviascan":{
+	"filecontentsprintviascan{}":{
 		"prefix":"filecontentsprintviascan",
 		"body":[
 			"\\filecontentsprintviascan{${1:macro}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"filecontentsexec":{
+	"filecontentsexec{}":{
 		"prefix":"filecontentsexec",
 		"body":[
 			"\\filecontentsexec{${1:code}}"
@@ -209,32 +209,22 @@
 	},
 
 
-	"filecontentsgdefmacro":{
-		"prefix":"filecontentsgdefmacro",
+	"filecontentsdef":{
+		"prefix":"filecontentsdef",
 		"body":[
-			"\\begin{filecontentsgdefmacro}",
-			"\t$1",
-			"\\end{filecontentsgdefmacro}"
+			"\\begin{filecontentsdef}",
+				"\t$1",
+			"\\end{filecontentsdef}"
 		]
 	},
 
 
 	"filecontentsdef*":{
-		"prefix":"filecontentsdef*",
-		"body":[
-			"\\begin{filecontentsdef*}",
-			"\t$1",
-			"\\end{filecontentsdef*}"
-		]
-	},
-
-
-	"filecontentsdef":{
 		"prefix":"filecontentsdef",
 		"body":[
-			"\\begin{filecontentsdef}",
-			"\t$1",
-			"\\end{filecontentsdef}"
+			"\\begin{filecontentsdef*}",
+				"\t$1",
+			"\\end{filecontentsdef*}"
 		]
 	},
 
@@ -243,47 +233,17 @@
 		"prefix":"filecontentsgdef",
 		"body":[
 			"\\begin{filecontentsgdef}",
-			"\t$1",
+				"\t$1",
 			"\\end{filecontentsgdef}"
 		]
 	},
 
 
-	"filecontentsgdefstarred":{
-		"prefix":"filecontentsgdefstarred",
-		"body":[
-			"\\begin{filecontentsgdefstarred}",
-			"\t$1",
-			"\\end{filecontentsgdefstarred}"
-		]
-	},
-
-
-	"filecontentshere*":{
-		"prefix":"filecontentshere*",
-		"body":[
-			"\\begin{filecontentshere*}",
-			"\t$1",
-			"\\end{filecontentshere*}"
-		]
-	},
-
-
-	"filecontentshere":{
-		"prefix":"filecontentshere",
-		"body":[
-			"\\begin{filecontentshere}",
-			"\t$1",
-			"\\end{filecontentshere}"
-		]
-	},
-
-
 	"filecontentsgdef*":{
-		"prefix":"filecontentsgdef*",
+		"prefix":"filecontentsgdef",
 		"body":[
 			"\\begin{filecontentsgdef*}",
-			"\t$1",
+				"\t$1",
 			"\\end{filecontentsgdef*}"
 		]
 	},
@@ -293,8 +253,18 @@
 		"prefix":"filecontentsdefstarred",
 		"body":[
 			"\\begin{filecontentsdefstarred}",
-			"\t$1",
+				"\t$1",
 			"\\end{filecontentsdefstarred}"
+		]
+	},
+
+
+	"filecontentsgdefstarred":{
+		"prefix":"filecontentsgdefstarred",
+		"body":[
+			"\\begin{filecontentsgdefstarred}",
+				"\t$1",
+			"\\end{filecontentsgdefstarred}"
 		]
 	},
 
@@ -303,8 +273,38 @@
 		"prefix":"filecontentsdefmacro",
 		"body":[
 			"\\begin{filecontentsdefmacro}",
-			"\t$1",
+				"\t$1",
 			"\\end{filecontentsdefmacro}"
+		]
+	},
+
+
+	"filecontentsgdefmacro":{
+		"prefix":"filecontentsgdefmacro",
+		"body":[
+			"\\begin{filecontentsgdefmacro}",
+				"\t$1",
+			"\\end{filecontentsgdefmacro}"
+		]
+	},
+
+
+	"filecontentshere":{
+		"prefix":"filecontentshere",
+		"body":[
+			"\\begin{filecontentshere}",
+				"\t$1",
+			"\\end{filecontentshere}"
+		]
+	},
+
+
+	"filecontentshere*":{
+		"prefix":"filecontentshere",
+		"body":[
+			"\\begin{filecontentshere*}",
+				"\t$1",
+			"\\end{filecontentshere*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"setmftdefaults":{
+	"setmftdefaults{}":{
 		"prefix":"setmftdefaults",
 		"body":[
 			"\\setmftdefaults{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mftinput":{
+	"mftinput{}":{
 		"prefix":"mftinput",
 		"body":[
 			"\\mftinput{${1:file}}"
@@ -25,18 +25,10 @@
 	},
 
 
-	"fonttable":{
+	"fonttable{}":{
 		"prefix":"fonttable",
 		"body":[
 			"\\fonttable{${1:font name}}"
-		]
-	},
-
-
-	"fonttable":{
-		"prefix":"fonttable",
-		"body":[
-			"\\fonttable[${2:options%keyvals}]{${1:font name}}"
 		]
 	},
 
@@ -81,7 +73,7 @@
 	},
 
 
-	"hex":{
+	"hex{}":{
 		"prefix":"hex",
 		"body":[
 			"\\hex{${1:arg}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"oct":{
+	"oct{}":{
 		"prefix":"oct",
 		"body":[
 			"\\oct{${1:arg}}"
@@ -169,11 +161,19 @@
 	},
 
 
+	"fonttable[]{}":{
+		"prefix":"fonttable",
+		"body":[
+			"\\fonttable[${2:options%keyvals}]{${1:font name}}"
+		]
+	},
+
+
 	"explaincode":{
 		"prefix":"explaincode",
 		"body":[
 			"\\begin{explaincode}",
-			"\t$1",
+				"\t$1",
 			"\\end{explaincode}"
 		]
 	},
@@ -183,8 +183,18 @@
 		"prefix":"wrapcomment",
 		"body":[
 			"\\begin{wrapcomment}",
-			"\t$1",
+				"\t$1",
 			"\\end{wrapcomment}"
+		]
+	},
+
+
+	"explaincode":{
+		"prefix":"explaincode",
+		"body":[
+			"\\begin{explaincode}",
+				"\t$1",
+			"\\end{explaincode}"
 		]
 	}
 }

@@ -49,42 +49,10 @@
 	},
 
 
-	"act":{
-		"prefix":"act",
-		"body":[
-			"\\act[${1:add. text%text}]"
-		]
-	},
-
-
-	"act*":{
-		"prefix":"act*",
-		"body":[
-			"\\act*"
-		]
-	},
-
-
-	"Act":{
+	"Act{}":{
 		"prefix":"Act",
 		"body":[
 			"\\Act{${1:title}}"
-		]
-	},
-
-
-	"Act":{
-		"prefix":"Act",
-		"body":[
-			"\\Act[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"Act*":{
-		"prefix":"Act*",
-		"body":[
-			"\\Act*{${1:title}}"
 		]
 	},
 
@@ -97,42 +65,10 @@
 	},
 
 
-	"scene":{
-		"prefix":"scene",
-		"body":[
-			"\\scene[${1:add. text%text}]"
-		]
-	},
-
-
-	"scene*":{
-		"prefix":"scene*",
-		"body":[
-			"\\scene*"
-		]
-	},
-
-
-	"Scene":{
+	"Scene{}":{
 		"prefix":"Scene",
 		"body":[
 			"\\Scene{${1:title}}"
-		]
-	},
-
-
-	"Scene":{
-		"prefix":"Scene",
-		"body":[
-			"\\Scene[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"Scene*":{
-		"prefix":"Scene*",
-		"body":[
-			"\\Scene*{${1:title}}"
 		]
 	},
 
@@ -297,7 +233,7 @@
 	},
 
 
-	"actmark":{
+	"actmark{}":{
 		"prefix":"actmark",
 		"body":[
 			"\\actmark{${1:code}}"
@@ -305,7 +241,7 @@
 	},
 
 
-	"scenemark":{
+	"scenemark{}":{
 		"prefix":"scenemark",
 		"body":[
 			"\\scenemark{${1:code}}"
@@ -313,18 +249,10 @@
 	},
 
 
-	"Character":{
+	"Character{}{}":{
 		"prefix":"Character",
 		"body":[
 			"\\Character{${1:name}}{${2:base}}"
-		]
-	},
-
-
-	"Character":{
-		"prefix":"Character",
-		"body":[
-			"\\Character[${3:entry text%text}]{${1:name}}{${2:base}}"
 		]
 	},
 
@@ -393,15 +321,7 @@
 	},
 
 
-	"DramPer":{
-		"prefix":"DramPer",
-		"body":[
-			"\\DramPer[${1:add. text%text}]"
-		]
-	},
-
-
-	"speaker":{
+	"speaker{}":{
 		"prefix":"speaker",
 		"body":[
 			"\\speaker{${1:name}}"
@@ -409,7 +329,7 @@
 	},
 
 
-	"GCharacter":{
+	"GCharacter{}{}{}":{
 		"prefix":"GCharacter",
 		"body":[
 			"\\GCharacter{${1:entry text%text}}{${2:name}}{${3:base}}"
@@ -441,7 +361,7 @@
 	},
 
 
-	"StageDir":{
+	"StageDir{}":{
 		"prefix":"StageDir",
 		"body":[
 			"\\StageDir{${1:direction%text}}"
@@ -449,7 +369,7 @@
 	},
 
 
-	"direct":{
+	"direct{}":{
 		"prefix":"direct",
 		"body":[
 			"\\direct{${1:direction%text}}"
@@ -457,15 +377,7 @@
 	},
 
 
-	"direct*":{
-		"prefix":"direct*",
-		"body":[
-			"\\direct*{${1:direction%text}}"
-		]
-	},
-
-
-	"StageDirConf":{
+	"StageDirConf{}{}":{
 		"prefix":"StageDirConf",
 		"body":[
 			"\\StageDirConf{${1:opening code}}{${2:closing code}}"
@@ -585,7 +497,7 @@
 	},
 
 
-	"dirdelimiter":{
+	"dirdelimiter{}":{
 		"prefix":"dirdelimiter",
 		"body":[
 			"\\dirdelimiter{${1:text}}"
@@ -617,7 +529,7 @@
 	},
 
 
-	"drampermark":{
+	"drampermark{}":{
 		"prefix":"drampermark",
 		"body":[
 			"\\drampermark{${1:text}}"
@@ -625,7 +537,7 @@
 	},
 
 
-	"grouplist":{
+	"grouplist{}":{
 		"prefix":"grouplist",
 		"body":[
 			"\\grouplist{${1:arg}}"
@@ -649,7 +561,7 @@
 	},
 
 
-	"speakslabel":{
+	"speakslabel{}":{
 		"prefix":"speakslabel",
 		"body":[
 			"\\speakslabel{${1:text}}"
@@ -697,22 +609,100 @@
 	},
 
 
-	"drama":{
-		"prefix":"drama",
+	"act*":{
+		"prefix":"*act",
 		"body":[
-			"\\begin{drama}",
-			"\t$1",
-			"\\end{drama}"
+			"\\act*"
 		]
 	},
 
 
-	"drama*":{
-		"prefix":"drama*",
+	"Act*{}":{
+		"prefix":"*Act",
 		"body":[
-			"\\begin{drama*}",
-			"\t$1",
-			"\\end{drama*}"
+			"\\Act*{${1:title}}"
+		]
+	},
+
+
+	"scene*":{
+		"prefix":"*scene",
+		"body":[
+			"\\scene*"
+		]
+	},
+
+
+	"Scene*{}":{
+		"prefix":"*Scene",
+		"body":[
+			"\\Scene*{${1:title}}"
+		]
+	},
+
+
+	"direct*{}":{
+		"prefix":"*direct",
+		"body":[
+			"\\direct*{${1:direction%text}}"
+		]
+	},
+
+
+	"act[]":{
+		"prefix":"act",
+		"body":[
+			"\\act[${1:add. text%text}]"
+		]
+	},
+
+
+	"Act[]{}":{
+		"prefix":"Act",
+		"body":[
+			"\\Act[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"scene[]":{
+		"prefix":"scene",
+		"body":[
+			"\\scene[${1:add. text%text}]"
+		]
+	},
+
+
+	"Scene[]{}":{
+		"prefix":"Scene",
+		"body":[
+			"\\Scene[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"Character[]{}{}":{
+		"prefix":"Character",
+		"body":[
+			"\\Character[${3:entry text%text}]{${1:name}}{${2:base}}"
+		]
+	},
+
+
+	"DramPer[]":{
+		"prefix":"DramPer",
+		"body":[
+			"\\DramPer[${1:add. text%text}]"
+		]
+	},
+
+
+	"drama":{
+		"prefix":"drama",
+		"body":[
+			"\\begin{drama}",
+				"\t$1",
+			"\\end{drama}"
 		]
 	},
 
@@ -721,7 +711,7 @@
 		"prefix":"CharacterGroup",
 		"body":[
 			"\\begin{CharacterGroup}",
-			"\t$1",
+				"\t$1",
 			"\\end{CharacterGroup}"
 		]
 	},
@@ -731,8 +721,18 @@
 		"prefix":"stagedir",
 		"body":[
 			"\\begin{stagedir}",
-			"\t$1",
+				"\t$1",
 			"\\end{stagedir}"
+		]
+	},
+
+
+	"drama*":{
+		"prefix":"*drama",
+		"body":[
+			"\\begin{drama*}",
+				"\t$1",
+			"\\end{drama*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"inferrule":{
+	"inferrule{}{}":{
 		"prefix":"inferrule",
 		"body":[
 			"\\inferrule{${1:premises}}{${2:conclusions}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"inferrule":{
-		"prefix":"inferrule",
-		"body":[
-			"\\inferrule[${3:label%text}]{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"inferrule*":{
-		"prefix":"inferrule*",
-		"body":[
-			"\\inferrule*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"infer":{
+	"infer{}{}":{
 		"prefix":"infer",
 		"body":[
 			"\\infer{${1:premises}}{${2:conclusions}}"
@@ -33,23 +17,7 @@
 	},
 
 
-	"infer":{
-		"prefix":"infer",
-		"body":[
-			"\\infer[${3:label%text}]{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"infer*":{
-		"prefix":"infer*",
-		"body":[
-			"\\infer*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"mprset":{
+	"mprset{}":{
 		"prefix":"mprset",
 		"body":[
 			"\\mprset{${1:keyvals}}"
@@ -81,11 +49,43 @@
 	},
 
 
+	"inferrule*[]{}{}":{
+		"prefix":"*inferrule",
+		"body":[
+			"\\inferrule*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
+		]
+	},
+
+
+	"infer*[]{}{}":{
+		"prefix":"*infer",
+		"body":[
+			"\\infer*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
+		]
+	},
+
+
+	"inferrule[]{}{}":{
+		"prefix":"inferrule",
+		"body":[
+			"\\inferrule[${3:label%text}]{${1:premises}}{${2:conclusions}}"
+		]
+	},
+
+
+	"infer[]{}{}":{
+		"prefix":"infer",
+		"body":[
+			"\\infer[${3:label%text}]{${1:premises}}{${2:conclusions}}"
+		]
+	},
+
+
 	"mathpar":{
 		"prefix":"mathpar",
 		"body":[
 			"\\begin{mathpar}",
-			"\t$1",
+				"\t$1",
 			"\\end{mathpar}"
 		]
 	}

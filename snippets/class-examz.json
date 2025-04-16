@@ -89,15 +89,7 @@
 	},
 
 
-	"questionfrombank":{
-		"prefix":"questionfrombank",
-		"body":[
-			"\\questionfrombank[${2:points}]{${1:file}}"
-		]
-	},
-
-
-	"questionfrombank":{
+	"questionfrombank{}":{
 		"prefix":"questionfrombank",
 		"body":[
 			"\\questionfrombank{${1:file}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"setcoursename":{
+	"setcoursename{}":{
 		"prefix":"setcoursename",
 		"body":[
 			"\\setcoursename{${1:text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"setcoveranswers":{
+	"setcoveranswers{}":{
 		"prefix":"setcoveranswers",
 		"body":[
 			"\\setcoveranswers{${1:format}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"setcovernoanswers":{
+	"setcovernoanswers{}":{
 		"prefix":"setcovernoanswers",
 		"body":[
 			"\\setcovernoanswers{${1:format}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"setexamname":{
+	"setexamname{}":{
 		"prefix":"setexamname",
 		"body":[
 			"\\setexamname{${1:text}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"setinstructions":{
+	"setinstructions{}":{
 		"prefix":"setinstructions",
 		"body":[
 			"\\setinstructions{${1:text}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"setinstructorname":{
+	"setinstructorname{}":{
 		"prefix":"setinstructorname",
 		"body":[
 			"\\setinstructorname{${1:text}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"setnamespace":{
+	"setnamespace{}":{
 		"prefix":"setnamespace",
 		"body":[
 			"\\setnamespace{${1:format}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"setnumberofquestions":{
+	"setnumberofquestions{}":{
 		"prefix":"setnumberofquestions",
 		"body":[
 			"\\setnumberofquestions{${1:number}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"setquestionpath":{
+	"setquestionpath{}":{
 		"prefix":"setquestionpath",
 		"body":[
 			"\\setquestionpath{${1:path%definition}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"setsolutionspace":{
+	"setsolutionspace{}":{
 		"prefix":"setsolutionspace",
 		"body":[
 			"\\setsolutionspace{${1:length}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"settermname":{
+	"settermname{}":{
 		"prefix":"settermname",
 		"body":[
 			"\\settermname{${1:text}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"setworkspace":{
+	"setworkspace{}":{
 		"prefix":"setworkspace",
 		"body":[
 			"\\setworkspace{${1:format}}"
@@ -225,12 +217,40 @@
 	},
 
 
+	"questionfrombank[]{}":{
+		"prefix":"questionfrombank",
+		"body":[
+			"\\questionfrombank[${2:points}]{${1:file}}"
+		]
+	},
+
+
+	"qbitem":{
+		"prefix":"qbitem",
+		"body":[
+			"\\begin{qbitem}",
+				"\t$1",
+			"\\end{qbitem}"
+		]
+	},
+
+
 	"qbsolution":{
 		"prefix":"qbsolution",
 		"body":[
 			"\\begin{qbsolution}",
-			"\t$1",
+				"\t$1",
 			"\\end{qbsolution}"
+		]
+	},
+
+
+	"qbsolutionbox":{
+		"prefix":"qbsolutionbox",
+		"body":[
+			"\\begin{qbsolutionbox}",
+				"\t$1",
+			"\\end{qbsolutionbox}"
 		]
 	},
 
@@ -239,18 +259,18 @@
 		"prefix":"qbsolutionorbox",
 		"body":[
 			"\\begin{qbsolutionorbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{qbsolutionorbox}"
 		]
 	},
 
 
-	"questionbank":{
-		"prefix":"questionbank",
+	"qbsolutionordottedlines":{
+		"prefix":"qbsolutionordottedlines",
 		"body":[
-			"\\begin{questionbank}",
-			"\t$1",
-			"\\end{questionbank}"
+			"\\begin{qbsolutionordottedlines}",
+				"\t$1",
+			"\\end{qbsolutionordottedlines}"
 		]
 	},
 
@@ -259,7 +279,7 @@
 		"prefix":"qbsolutionorgrid",
 		"body":[
 			"\\begin{qbsolutionorgrid}",
-			"\t$1",
+				"\t$1",
 			"\\end{qbsolutionorgrid}"
 		]
 	},
@@ -269,28 +289,18 @@
 		"prefix":"qbsolutionorlines",
 		"body":[
 			"\\begin{qbsolutionorlines}",
-			"\t$1",
+				"\t$1",
 			"\\end{qbsolutionorlines}"
 		]
 	},
 
 
-	"qbsolutionbox":{
-		"prefix":"qbsolutionbox",
+	"questionbank":{
+		"prefix":"questionbank",
 		"body":[
-			"\\begin{qbsolutionbox}",
-			"\t$1",
-			"\\end{qbsolutionbox}"
-		]
-	},
-
-
-	"qbitem":{
-		"prefix":"qbitem",
-		"body":[
-			"\\begin{qbitem}",
-			"\t$1",
-			"\\end{qbitem}"
+			"\\begin{questionbank}",
+				"\t$1",
+			"\\end{questionbank}"
 		]
 	},
 
@@ -299,18 +309,18 @@
 		"prefix":"versions",
 		"body":[
 			"\\begin{versions}",
-			"\t$1",
+				"\t$1",
 			"\\end{versions}"
 		]
 	},
 
 
-	"qbsolutionordottedlines":{
-		"prefix":"qbsolutionordottedlines",
+	"versions":{
+		"prefix":"versions",
 		"body":[
-			"\\begin{qbsolutionordottedlines}",
-			"\t$1",
-			"\\end{qbsolutionordottedlines}"
+			"\\begin{versions}",
+				"\t$1",
+			"\\end{versions}"
 		]
 	}
 }

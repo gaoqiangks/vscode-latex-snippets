@@ -1,7 +1,7 @@
 {
 
 
-	"EbnfTerminal":{
+	"EbnfTerminal{}":{
 		"prefix":"EbnfTerminal",
 		"body":[
 			"\\EbnfTerminal{${1:symbol}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"EbnfNonTerminal":{
+	"EbnfNonTerminal{}":{
 		"prefix":"EbnfNonTerminal",
 		"body":[
 			"\\EbnfNonTerminal{${1:rule}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"EbnfSpecial":{
+	"EbnfSpecial{}":{
 		"prefix":"EbnfSpecial",
 		"body":[
 			"\\EbnfSpecial{${1:symbol}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"EbnfRegex":{
+	"EbnfRegex{}":{
 		"prefix":"EbnfRegex",
 		"body":[
 			"\\EbnfRegex{${1:regex}}"
@@ -37,7 +37,17 @@
 		"prefix":"ebnf",
 		"body":[
 			"\\begin{ebnf}",
-			"\t$1",
+				"\t$1",
+			"\\end{ebnf}"
+		]
+	},
+
+
+	"ebnf":{
+		"prefix":"ebnf",
+		"body":[
+			"\\begin{ebnf}",
+				"\t$1",
 			"\\end{ebnf}"
 		]
 	}

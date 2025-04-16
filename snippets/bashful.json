@@ -1,14 +1,6 @@
 {
 
 
-	"bash":{
-		"prefix":"bash",
-		"body":[
-			"\\bash[${1:options%keyvals}]"
-		]
-	},
-
-
 	"END":{
 		"prefix":"END",
 		"body":[
@@ -33,7 +25,7 @@
 	},
 
 
-	"splice":{
+	"splice{}":{
 		"prefix":"splice",
 		"body":[
 			"\\splice{${1:shell command%definition}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"bashI":{
-		"prefix":"bashI",
-		"body":[
-			"\\bashI[${1:options}]"
-		]
-	},
-
-
-	"bashII":{
+	"bashII{}":{
 		"prefix":"bashII",
 		"body":[
 			"\\bashII{${1:arg}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"bashIII":{
+	"bashIII{}":{
 		"prefix":"bashIII",
 		"body":[
 			"\\bashIII{${1:arg}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"bashIV":{
+	"bashIV{}":{
 		"prefix":"bashIV",
 		"body":[
 			"\\bashIV{${1:shell command%definition}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"bashV":{
+	"bashV{}":{
 		"prefix":"bashV",
 		"body":[
 			"\\bashV{${1:arg}}"
@@ -81,10 +65,26 @@
 	},
 
 
-	"logBL":{
+	"logBL{}":{
 		"prefix":"logBL",
 		"body":[
 			"\\logBL{${1:message%text}}"
+		]
+	},
+
+
+	"bash[]":{
+		"prefix":"bash",
+		"body":[
+			"\\bash[${1:options%keyvals}]"
+		]
+	},
+
+
+	"bashI[]":{
+		"prefix":"bashI",
+		"body":[
+			"\\bashI[${1:options}]"
 		]
 	}
 }

@@ -425,15 +425,7 @@
 	},
 
 
-	"prob":{
-		"prefix":"prob",
-		"body":[
-			"\\prob[${1:letter}]"
-		]
-	},
-
-
-	"probX":{
+	"probX{}":{
 		"prefix":"probX",
 		"body":[
 			"\\probX{${1:event%formula}}"
@@ -441,15 +433,7 @@
 	},
 
 
-	"probX":{
-		"prefix":"probX",
-		"body":[
-			"\\probX[${2:letter}]{${1:event%formula}}"
-		]
-	},
-
-
-	"cprobX":{
+	"cprobX{}{}":{
 		"prefix":"cprobX",
 		"body":[
 			"\\cprobX{${1:event%formula}}{${2:condition%formula}}"
@@ -457,15 +441,7 @@
 	},
 
 
-	"cprobX":{
-		"prefix":"cprobX",
-		"body":[
-			"\\cprobX[${3:letter}]{${1:event%formula}}{${2:condition%formula}}"
-		]
-	},
-
-
-	"EX":{
+	"EX{}":{
 		"prefix":"EX",
 		"body":[
 			"\\EX{${1:arg}}"
@@ -473,26 +449,10 @@
 	},
 
 
-	"EX":{
-		"prefix":"EX",
-		"body":[
-			"\\EX[${2:letter}]{${1:arg%formula}}"
-		]
-	},
-
-
-	"cEX":{
+	"cEX{}{}":{
 		"prefix":"cEX",
 		"body":[
 			"\\cEX{${1:arg%formula}}{${2:condition%formula}}"
-		]
-	},
-
-
-	"cEX":{
-		"prefix":"cEX",
-		"body":[
-			"\\cEX[${3:letter}]{${1:arg%formula}}{${2:condition%formula}}"
 		]
 	},
 
@@ -505,15 +465,7 @@
 	},
 
 
-	"Var":{
-		"prefix":"Var",
-		"body":[
-			"\\Var[${1:subscript%formula}]"
-		]
-	},
-
-
-	"VarX":{
+	"VarX{}":{
 		"prefix":"VarX",
 		"body":[
 			"\\VarX{${1:arg%formula}}"
@@ -521,26 +473,10 @@
 	},
 
 
-	"VarX":{
-		"prefix":"VarX",
-		"body":[
-			"\\VarX[${2:subscript%formula}]{${1:arg%formula}}"
-		]
-	},
-
-
-	"cVarX":{
+	"cVarX{}{}":{
 		"prefix":"cVarX",
 		"body":[
 			"\\cVarX{${1:arg%formula}}{${2:condition%formula}}"
-		]
-	},
-
-
-	"cVarX":{
-		"prefix":"cVarX",
-		"body":[
-			"\\cVarX[${3:subscript%formula}]{${1:arg%formula}}{${2:condition%formula}}"
 		]
 	},
 
@@ -561,7 +497,7 @@
 	},
 
 
-	"qvar":{
+	"qvar{}{}":{
 		"prefix":"qvar",
 		"body":[
 			"\\qvar{${1:arg1}}{${2:arg2}}"
@@ -569,10 +505,74 @@
 	},
 
 
-	"cqvar":{
+	"cqvar{}{}":{
 		"prefix":"cqvar",
 		"body":[
 			"\\cqvar{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"prob[]":{
+		"prefix":"prob",
+		"body":[
+			"\\prob[${1:letter}]"
+		]
+	},
+
+
+	"probX[]{}":{
+		"prefix":"probX",
+		"body":[
+			"\\probX[${2:letter}]{${1:event%formula}}"
+		]
+	},
+
+
+	"cprobX[]{}{}":{
+		"prefix":"cprobX",
+		"body":[
+			"\\cprobX[${3:letter}]{${1:event%formula}}{${2:condition%formula}}"
+		]
+	},
+
+
+	"EX[]{}":{
+		"prefix":"EX",
+		"body":[
+			"\\EX[${2:letter}]{${1:arg%formula}}"
+		]
+	},
+
+
+	"cEX[]{}{}":{
+		"prefix":"cEX",
+		"body":[
+			"\\cEX[${3:letter}]{${1:arg%formula}}{${2:condition%formula}}"
+		]
+	},
+
+
+	"Var[]":{
+		"prefix":"Var",
+		"body":[
+			"\\Var[${1:subscript%formula}]"
+		]
+	},
+
+
+	"VarX[]{}":{
+		"prefix":"VarX",
+		"body":[
+			"\\VarX[${2:subscript%formula}]{${1:arg%formula}}"
+		]
+	},
+
+
+	"cVarX[]{}{}":{
+		"prefix":"cVarX",
+		"body":[
+			"\\cVarX[${3:subscript%formula}]{${1:arg%formula}}{${2:condition%formula}}"
 		]
 	}
 }

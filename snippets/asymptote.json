@@ -1,7 +1,7 @@
 {
 
 
-	"asyinclude":{
+	"asyinclude{}":{
 		"prefix":"asyinclude",
 		"body":[
 			"\\asyinclude{${1:imagefile}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"asyinclude":{
-		"prefix":"asyinclude",
-		"body":[
-			"\\asyinclude[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"asysetup":{
+	"asysetup{}":{
 		"prefix":"asysetup",
 		"body":[
 			"\\asysetup{${1:options%keyvals}}"
@@ -25,18 +17,10 @@
 	},
 
 
-	"ASYanimategraphics":{
+	"ASYanimategraphics{}{}{}{}":{
 		"prefix":"ASYanimategraphics",
 		"body":[
 			"\\ASYanimategraphics{${1:frame rate}}{${2:file}}{${3:first}}{${4:last}}"
-		]
-	},
-
-
-	"ASYanimategraphics":{
-		"prefix":"ASYanimategraphics",
-		"body":[
-			"\\ASYanimategraphics[${5:options%keyvals}]{${1:frame rate}}{${2:file}}{${3:first}}{${4:last}}"
 		]
 	},
 
@@ -233,7 +217,7 @@
 	},
 
 
-	"WriteAsyLine":{
+	"WriteAsyLine{}":{
 		"prefix":"WriteAsyLine",
 		"body":[
 			"\\WriteAsyLine{${1:arg}}"
@@ -249,7 +233,7 @@
 	},
 
 
-	"WriteGlobalAsyLine":{
+	"WriteGlobalAsyLine{}":{
 		"prefix":"WriteGlobalAsyLine",
 		"body":[
 			"\\WriteGlobalAsyLine{${1:arg}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"ProcessAsymptote":{
+	"ProcessAsymptote{}":{
 		"prefix":"ProcessAsymptote",
 		"body":[
 			"\\ProcessAsymptote{${1:arg}}"
@@ -337,11 +321,37 @@
 	},
 
 
+	"asyinclude[]{}":{
+		"prefix":"asyinclude",
+		"body":[
+			"\\asyinclude[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"ASYanimategraphics[]{}{}{}{}":{
+		"prefix":"ASYanimategraphics",
+		"body":[
+			"\\ASYanimategraphics[${5:options%keyvals}]{${1:frame rate}}{${2:file}}{${3:first}}{${4:last}}"
+		]
+	},
+
+
+	"asy":{
+		"prefix":"asy",
+		"body":[
+			"\\begin{asy}",
+				"\t$1",
+			"\\end{asy}"
+		]
+	},
+
+
 	"asydef":{
 		"prefix":"asydef",
 		"body":[
 			"\\begin{asydef}",
-			"\t$1",
+				"\t$1",
 			"\\end{asydef}"
 		]
 	},
@@ -351,7 +361,7 @@
 		"prefix":"asy",
 		"body":[
 			"\\begin{asy}",
-			"\t$1",
+				"\t$1",
 			"\\end{asy}"
 		]
 	}

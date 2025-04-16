@@ -1,7 +1,7 @@
 {
 
 
-	"TPoptions":{
+	"TPoptions{}":{
 		"prefix":"TPoptions",
 		"body":[
 			"\\TPoptions{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"TPGrid":{
+	"TPGrid{}{}":{
 		"prefix":"TPGrid",
 		"body":[
 			"\\TPGrid{${1:nhoriz}}{${2:nvert}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"TPGrid":{
-		"prefix":"TPGrid",
-		"body":[
-			"\\TPGrid[${3:x,y}]{${1:nhoriz}}{${2:nvert}}"
-		]
-	},
-
-
-	"TPShowGrid":{
+	"TPShowGrid{}{}":{
 		"prefix":"TPShowGrid",
 		"body":[
 			"\\TPShowGrid{${1:nhoriz}}{${2:nvert}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"TPMargin":{
+	"TPMargin{}":{
 		"prefix":"TPMargin",
 		"body":[
 			"\\TPMargin{${1:size%l}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"TPMargin*":{
-		"prefix":"TPMargin*",
-		"body":[
-			"\\TPMargin*{${1:size%l}}"
-		]
-	},
-
-
-	"TPReferencePosition":{
+	"TPReferencePosition{}":{
 		"prefix":"TPReferencePosition",
 		"body":[
 			"\\TPReferencePosition{${1:val1,val2}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"textblocklabel":{
+	"textblocklabel{}":{
 		"prefix":"textblocklabel",
 		"body":[
 			"\\textblocklabel{${1:label%plain}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"textblockorigin":{
+	"textblockorigin{}{}":{
 		"prefix":"textblockorigin",
 		"body":[
 			"\\textblockorigin{${1:hpos}}{${2:vpos}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"textblockcolour":{
+	"textblockcolour{}":{
 		"prefix":"textblockcolour",
 		"body":[
 			"\\textblockcolour{${1:color}}"
@@ -137,7 +121,7 @@
 	},
 
 
-	"textblockcolor":{
+	"textblockcolor{}":{
 		"prefix":"textblockcolor",
 		"body":[
 			"\\textblockcolor{${1:color}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"textblockrulecolour":{
+	"textblockrulecolour{}":{
 		"prefix":"textblockrulecolour",
 		"body":[
 			"\\textblockrulecolour{${1:color}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"textblockrulecolor":{
+	"textblockrulecolor{}":{
 		"prefix":"textblockrulecolor",
 		"body":[
 			"\\textblockrulecolor{${1:color}}"
@@ -161,7 +145,7 @@
 	},
 
 
-	"tekstblokkulur":{
+	"tekstblokkulur{}":{
 		"prefix":"tekstblokkulur",
 		"body":[
 			"\\tekstblokkulur{${1:color}}"
@@ -169,10 +153,26 @@
 	},
 
 
-	"tekstblokroolkulur":{
+	"tekstblokroolkulur{}":{
 		"prefix":"tekstblokroolkulur",
 		"body":[
 			"\\tekstblokroolkulur{${1:color}}"
+		]
+	},
+
+
+	"TPMargin*{}":{
+		"prefix":"*TPMargin",
+		"body":[
+			"\\TPMargin*{${1:size%l}}"
+		]
+	},
+
+
+	"TPGrid[]{}{}":{
+		"prefix":"TPGrid",
+		"body":[
+			"\\TPGrid[${3:x,y}]{${1:nhoriz}}{${2:nvert}}"
 		]
 	},
 
@@ -181,17 +181,37 @@
 		"prefix":"textblock",
 		"body":[
 			"\\begin{textblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{textblock}"
 		]
 	},
 
 
 	"textblock*":{
-		"prefix":"textblock*",
+		"prefix":"textblock",
 		"body":[
 			"\\begin{textblock*}",
-			"\t$1",
+				"\t$1",
+			"\\end{textblock*}"
+		]
+	},
+
+
+	"textblock":{
+		"prefix":"textblock",
+		"body":[
+			"\\begin{textblock}",
+				"\t$1",
+			"\\end{textblock}"
+		]
+	},
+
+
+	"textblock*":{
+		"prefix":"textblock",
+		"body":[
+			"\\begin{textblock*}",
+				"\t$1",
 			"\\end{textblock*}"
 		]
 	}

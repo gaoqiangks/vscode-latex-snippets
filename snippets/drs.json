@@ -1,7 +1,7 @@
 {
 
 
-	"drs":{
+	"drs{}{}":{
 		"prefix":"drs",
 		"body":[
 			"\\drs{${1:variables}}{${2:conditions}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"drs*":{
-		"prefix":"drs*",
-		"body":[
-			"\\drs*{${1:variables}}{${2:conditions}}"
-		]
-	},
-
-
-	"ifdrs":{
+	"ifdrs{}{}{}{}":{
 		"prefix":"ifdrs",
 		"body":[
 			"\\ifdrs{${1:lvar}}{${2:lcond}}{${3:rvar}}{${4:rcond}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"condrs":{
+	"condrs{}{}{}{}{}":{
 		"prefix":"condrs",
 		"body":[
 			"\\condrs{${1:lvar}}{${2:lcond}}{${3:connective}}{${4:rvar}}{${5:rcond}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"qdrs":{
+	"qdrs{}{}{}{}{}{}":{
 		"prefix":"qdrs",
 		"body":[
 			"\\qdrs{${1:lvar}}{${2:lcond}}{${3:quantifier}}{${4:qvar}}{${5:rvar}}{${6:rcond}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"negdrs":{
+	"negdrs{}{}":{
 		"prefix":"negdrs",
 		"body":[
 			"\\negdrs{${1:variables}}{${2:conditions}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"drsdiamond":{
+	"drsdiamond{}{}":{
 		"prefix":"drsdiamond",
 		"body":[
 			"\\drsdiamond{${1:quantifier}}{${2:variable}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"sdrs":{
+	"sdrs{}{}{}":{
 		"prefix":"sdrs",
 		"body":[
 			"\\sdrs{${1:sentence%text}}{${2:variables}}{${3:conditions}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"alifdrs":{
+	"alifdrs{}{}{}{}":{
 		"prefix":"alifdrs",
 		"body":[
 			"\\alifdrs{${1:lvar}}{${2:lcond}}{${3:rvar}}{${4:rcond}}"
@@ -133,6 +125,14 @@
 		"prefix":"drsvarfont",
 		"body":[
 			"\\drsvarfont"
+		]
+	},
+
+
+	"drs*{}{}":{
+		"prefix":"*drs",
+		"body":[
+			"\\drs*{${1:variables}}{${2:conditions}}"
 		]
 	}
 }

@@ -57,18 +57,10 @@
 	},
 
 
-	"addtodelayedfloat":{
+	"addtodelayedfloat{}{}":{
 		"prefix":"addtodelayedfloat",
 		"body":[
 			"\\addtodelayedfloat{${1:float type}}{${2:code}}"
-		]
-	},
-
-
-	"addtodelayedfloat*":{
-		"prefix":"addtodelayedfloat*",
-		"body":[
-			"\\addtodelayedfloat*{${1:float type}}{${2:code}}"
 		]
 	},
 
@@ -145,7 +137,7 @@
 	},
 
 
-	"DeclareDelayedFloatFlavor":{
+	"DeclareDelayedFloatFlavor{}{}":{
 		"prefix":"DeclareDelayedFloatFlavor",
 		"body":[
 			"\\DeclareDelayedFloatFlavor{${1:envname}}{${2:float type}}"
@@ -153,15 +145,7 @@
 	},
 
 
-	"DeclareDelayedFloatFlavor*":{
-		"prefix":"DeclareDelayedFloatFlavor*",
-		"body":[
-			"\\DeclareDelayedFloatFlavor*{${1:envname}}{${2:float type}}"
-		]
-	},
-
-
-	"DeclareDelayedFloat":{
+	"DeclareDelayedFloat{}{}":{
 		"prefix":"DeclareDelayedFloat",
 		"body":[
 			"\\DeclareDelayedFloat{${1:envname}}{${2:heading}}"
@@ -169,15 +153,7 @@
 	},
 
 
-	"DeclareDelayedFloat":{
-		"prefix":"DeclareDelayedFloat",
-		"body":[
-			"\\DeclareDelayedFloat{${1:envname}}[${3:file ext}]{${2:heading}}"
-		]
-	},
-
-
-	"SetupDelayedFloat":{
+	"SetupDelayedFloat{}{}":{
 		"prefix":"SetupDelayedFloat",
 		"body":[
 			"\\SetupDelayedFloat{${1:float type}}{${2:options%keyvals}}"
@@ -253,6 +229,30 @@
 		"prefix":"theposttable",
 		"body":[
 			"\\theposttable"
+		]
+	},
+
+
+	"addtodelayedfloat*{}{}":{
+		"prefix":"*addtodelayedfloat",
+		"body":[
+			"\\addtodelayedfloat*{${1:float type}}{${2:code}}"
+		]
+	},
+
+
+	"DeclareDelayedFloatFlavor*{}{}":{
+		"prefix":"*DeclareDelayedFloatFlavor",
+		"body":[
+			"\\DeclareDelayedFloatFlavor*{${1:envname}}{${2:float type}}"
+		]
+	},
+
+
+	"DeclareDelayedFloat{}[]{}":{
+		"prefix":"DeclareDelayedFloat",
+		"body":[
+			"\\DeclareDelayedFloat{${1:envname}}[${3:file ext}]{${2:heading}}"
 		]
 	}
 }

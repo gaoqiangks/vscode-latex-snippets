@@ -17,7 +17,7 @@
 	},
 
 
-	"makesavenoteenv":{
+	"makesavenoteenv{}":{
 		"prefix":"makesavenoteenv",
 		"body":[
 			"\\makesavenoteenv{${1:environment}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"makesavenoteenv":{
+	"makesavenoteenv[]{}":{
 		"prefix":"makesavenoteenv",
 		"body":[
 			"\\makesavenoteenv[${2:new_envname%envname}]{${1:environment}}"
@@ -33,11 +33,21 @@
 	},
 
 
+	"savenotes":{
+		"prefix":"savenotes",
+		"body":[
+			"\\begin{savenotes}",
+				"\t$1",
+			"\\end{savenotes}"
+		]
+	},
+
+
 	"minipage*":{
-		"prefix":"minipage*",
+		"prefix":"minipage",
 		"body":[
 			"\\begin{minipage*}",
-			"\t$1",
+				"\t$1",
 			"\\end{minipage*}"
 		]
 	},
@@ -47,7 +57,7 @@
 		"prefix":"footnote",
 		"body":[
 			"\\begin{footnote}",
-			"\t$1",
+				"\t$1",
 			"\\end{footnote}"
 		]
 	},
@@ -57,18 +67,38 @@
 		"prefix":"footnotetext",
 		"body":[
 			"\\begin{footnotetext}",
-			"\t$1",
+				"\t$1",
 			"\\end{footnotetext}"
 		]
 	},
 
 
-	"savenotes":{
-		"prefix":"savenotes",
+	"minipage*":{
+		"prefix":"minipage",
 		"body":[
-			"\\begin{savenotes}",
-			"\t$1",
-			"\\end{savenotes}"
+			"\\begin{minipage*}",
+				"\t$1",
+			"\\end{minipage*}"
+		]
+	},
+
+
+	"minipage*":{
+		"prefix":"minipage",
+		"body":[
+			"\\begin{minipage*}",
+				"\t$1",
+			"\\end{minipage*}"
+		]
+	},
+
+
+	"footnote":{
+		"prefix":"footnote",
+		"body":[
+			"\\begin{footnote}",
+				"\t$1",
+			"\\end{footnote}"
 		]
 	}
 }

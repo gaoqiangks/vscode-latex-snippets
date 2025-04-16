@@ -1,7 +1,7 @@
 {
 
 
-	"affiliation":{
+	"affiliation{}":{
 		"prefix":"affiliation",
 		"body":[
 			"\\affiliation{${1:affiliation%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"affilnum":{
+	"affilnum{}":{
 		"prefix":"affilnum",
 		"body":[
 			"\\affilnum{${1:number}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"corrauth":{
+	"corrauth{}":{
 		"prefix":"corrauth",
 		"body":[
 			"\\corrauth{${1:name and address%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:word1,word2,...%text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"runninghead":{
+	"runninghead{}":{
 		"prefix":"runninghead",
 		"body":[
 			"\\runninghead{${1:text}}"
@@ -129,62 +129,12 @@
 	},
 
 
-	"dci":{
-		"prefix":"dci",
-		"body":[
-			"\\begin{dci}",
-			"\t$1",
-			"\\end{dci}"
-		]
-	},
-
-
-	"sm":{
-		"prefix":"sm",
-		"body":[
-			"\\begin{sm}",
-			"\t$1",
-			"\\end{sm}"
-		]
-	},
-
-
-	"funding":{
-		"prefix":"funding",
-		"body":[
-			"\\begin{funding}",
-			"\t$1",
-			"\\end{funding}"
-		]
-	},
-
-
-	"biogs":{
-		"prefix":"biogs",
-		"body":[
-			"\\begin{biogs}",
-			"\t$1",
-			"\\end{biogs}"
-		]
-	},
-
-
 	"acks":{
 		"prefix":"acks",
 		"body":[
 			"\\begin{acks}",
-			"\t$1",
+				"\t$1",
 			"\\end{acks}"
-		]
-	},
-
-
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
 		]
 	},
 
@@ -193,8 +143,58 @@
 		"prefix":"biog",
 		"body":[
 			"\\begin{biog}",
-			"\t$1",
+				"\t$1",
 			"\\end{biog}"
+		]
+	},
+
+
+	"biogs":{
+		"prefix":"biogs",
+		"body":[
+			"\\begin{biogs}",
+				"\t$1",
+			"\\end{biogs}"
+		]
+	},
+
+
+	"dci":{
+		"prefix":"dci",
+		"body":[
+			"\\begin{dci}",
+				"\t$1",
+			"\\end{dci}"
+		]
+	},
+
+
+	"funding":{
+		"prefix":"funding",
+		"body":[
+			"\\begin{funding}",
+				"\t$1",
+			"\\end{funding}"
+		]
+	},
+
+
+	"sm":{
+		"prefix":"sm",
+		"body":[
+			"\\begin{sm}",
+				"\t$1",
+			"\\end{sm}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"bnfprod":{
+	"bnfprod{}{}":{
 		"prefix":"bnfprod",
 		"body":[
 			"\\bnfprod{${1:name}}{${2:definition}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"bnfprod*":{
-		"prefix":"bnfprod*",
-		"body":[
-			"\\bnfprod*{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"bnfmore":{
+	"bnfmore{}":{
 		"prefix":"bnfmore",
 		"body":[
 			"\\bnfmore{${1:definition}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"bnfmore*":{
-		"prefix":"bnfmore*",
-		"body":[
-			"\\bnfmore*{${1:definition}}"
-		]
-	},
-
-
-	"bnfpn":{
+	"bnfpn{}":{
 		"prefix":"bnfpn",
 		"body":[
 			"\\bnfpn{${1:name}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"bnfts":{
+	"bnfts{}":{
 		"prefix":"bnfts",
 		"body":[
 			"\\bnfts{${1:string}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"bnftd":{
+	"bnftd{}":{
 		"prefix":"bnftd",
 		"body":[
 			"\\bnftd{${1:phrase}}"
@@ -97,21 +81,37 @@
 	},
 
 
+	"bnfprod*{}{}":{
+		"prefix":"*bnfprod",
+		"body":[
+			"\\bnfprod*{${1:name}}{${2:definition}}"
+		]
+	},
+
+
+	"bnfmore*{}":{
+		"prefix":"*bnfmore",
+		"body":[
+			"\\bnfmore*{${1:definition}}"
+		]
+	},
+
+
 	"bnf":{
 		"prefix":"bnf",
 		"body":[
 			"\\begin{bnf}",
-			"\t$1",
+				"\t$1",
 			"\\end{bnf}"
 		]
 	},
 
 
 	"bnf*":{
-		"prefix":"bnf*",
+		"prefix":"*bnf",
 		"body":[
 			"\\begin{bnf*}",
-			"\t$1",
+				"\t$1",
 			"\\end{bnf*}"
 		]
 	}

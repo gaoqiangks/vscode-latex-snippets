@@ -1,7 +1,7 @@
 {
 
 
-	"ProcessPgfOptions":{
+	"ProcessPgfOptions{}":{
 		"prefix":"ProcessPgfOptions",
 		"body":[
 			"\\ProcessPgfOptions{${1:path}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"ProcessPgfOptions*":{
-		"prefix":"ProcessPgfOptions*",
-		"body":[
-			"\\ProcessPgfOptions*{${1:path}}"
-		]
-	},
-
-
-	"ProcessPgfPackageOptions":{
+	"ProcessPgfPackageOptions{}":{
 		"prefix":"ProcessPgfPackageOptions",
 		"body":[
 			"\\ProcessPgfPackageOptions{${1:path}}"
@@ -25,8 +17,16 @@
 	},
 
 
-	"ProcessPgfPackageOptions*":{
-		"prefix":"ProcessPgfPackageOptions*",
+	"ProcessPgfOptions*{}":{
+		"prefix":"*ProcessPgfOptions",
+		"body":[
+			"\\ProcessPgfOptions*{${1:path}}"
+		]
+	},
+
+
+	"ProcessPgfPackageOptions*{}":{
+		"prefix":"*ProcessPgfPackageOptions",
 		"body":[
 			"\\ProcessPgfPackageOptions*{${1:path}}"
 		]

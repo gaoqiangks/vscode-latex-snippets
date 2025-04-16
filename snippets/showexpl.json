@@ -1,18 +1,10 @@
 {
 
 
-	"LTXinputExample":{
+	"LTXinputExample{}":{
 		"prefix":"LTXinputExample",
 		"body":[
 			"\\LTXinputExample{${1:file}}"
-		]
-	},
-
-
-	"LTXinputExample":{
-		"prefix":"LTXinputExample",
-		"body":[
-			"\\LTXinputExample[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -73,10 +65,18 @@
 	},
 
 
-	"lstdefineformat":{
+	"lstdefineformat{}{}":{
 		"prefix":"lstdefineformat",
 		"body":[
 			"\\lstdefineformat{${1:name}}{${2:format}}"
+		]
+	},
+
+
+	"LTXinputExample[]{}":{
+		"prefix":"LTXinputExample",
+		"body":[
+			"\\LTXinputExample[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -85,7 +85,17 @@
 		"prefix":"LTXexample",
 		"body":[
 			"\\begin{LTXexample}",
-			"\t$1",
+				"\t$1",
+			"\\end{LTXexample}"
+		]
+	},
+
+
+	"LTXexample":{
+		"prefix":"LTXexample",
+		"body":[
+			"\\begin{LTXexample}",
+				"\t$1",
 			"\\end{LTXexample}"
 		]
 	}

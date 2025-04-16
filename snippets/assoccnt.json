@@ -1,7 +1,7 @@
 {
 
 
-	"setcounter":{
+	"setcounter{}{}":{
 		"prefix":"setcounter",
 		"body":[
 			"\\setcounter{${1:counter}}{${2:value}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"setcounter":{
-		"prefix":"setcounter",
-		"body":[
-			"\\setcounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
-		]
-	},
-
-
-	"DeclareAssociatedCounters":{
+	"DeclareAssociatedCounters{}{}":{
 		"prefix":"DeclareAssociatedCounters",
 		"body":[
 			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"AddAssociatedCounters":{
+	"AddAssociatedCounters{}{}":{
 		"prefix":"AddAssociatedCounters",
 		"body":[
 			"\\AddAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"RemoveAssociatedCounter":{
+	"RemoveAssociatedCounter{}{}":{
 		"prefix":"RemoveAssociatedCounter",
 		"body":[
 			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:associated counter}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"RemoveAssociatedCounters":{
+	"RemoveAssociatedCounters{}{}":{
 		"prefix":"RemoveAssociatedCounters",
 		"body":[
 			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"ClearAssociatedCounters":{
+	"ClearAssociatedCounters{}":{
 		"prefix":"ClearAssociatedCounters",
 		"body":[
 			"\\ClearAssociatedCounters{${1:driver counter}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"AddDriverCounter":{
+	"AddDriverCounter{}":{
 		"prefix":"AddDriverCounter",
 		"body":[
 			"\\AddDriverCounter{${1:driver counter name}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"IsAssociatedToCounter":{
+	"IsAssociatedToCounter{}{}{}{}":{
 		"prefix":"IsAssociatedToCounter",
 		"body":[
 			"\\IsAssociatedToCounter{${1:driver counter}}{${2:associated counter}}{${3:true}}{${4:false}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"GetDriverCounter":{
+	"GetDriverCounter{}":{
 		"prefix":"GetDriverCounter",
 		"body":[
 			"\\GetDriverCounter{${1:counter}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"IsAssociatedCounter":{
+	"IsAssociatedCounter{}{}{}":{
 		"prefix":"IsAssociatedCounter",
 		"body":[
 			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"IsDriverCounter":{
+	"IsDriverCounter{}{}{}":{
 		"prefix":"IsDriverCounter",
 		"body":[
 			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"IsSuspendedCounter":{
+	"IsSuspendedCounter{}{}{}":{
 		"prefix":"IsSuspendedCounter",
 		"body":[
 			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"AssociatedDriverCounterInfo":{
+	"AssociatedDriverCounterInfo{}":{
 		"prefix":"AssociatedDriverCounterInfo",
 		"body":[
 			"\\AssociatedDriverCounterInfo{${1:counter}}"
@@ -153,18 +145,10 @@
 	},
 
 
-	"PrettyPrintCounterName":{
+	"PrettyPrintCounterName{}":{
 		"prefix":"PrettyPrintCounterName",
 		"body":[
 			"\\PrettyPrintCounterName{${1:counter}}"
-		]
-	},
-
-
-	"PrettyPrintCounterName":{
-		"prefix":"PrettyPrintCounterName",
-		"body":[
-			"\\PrettyPrintCounterName[${2:options%keyvals}]{${1:counter}}"
 		]
 	},
 
@@ -193,7 +177,7 @@
 	},
 
 
-	"SuspendCounters":{
+	"SuspendCounters{}":{
 		"prefix":"SuspendCounters",
 		"body":[
 			"\\SuspendCounters{${1:counters list}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"ClearAssociatedCountersList":{
+	"ClearAssociatedCountersList{}":{
 		"prefix":"ClearAssociatedCountersList",
 		"body":[
 			"\\ClearAssociatedCountersList{${1:associated counters list}}"
@@ -233,10 +217,26 @@
 	},
 
 
-	"IsInResetList":{
+	"IsInResetList{}{}{}{}":{
 		"prefix":"IsInResetList",
 		"body":[
 			"\\IsInResetList{${1:arg1}}{${2:arg2}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"setcounter[]{}{}":{
+		"prefix":"setcounter",
+		"body":[
+			"\\setcounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
+		]
+	},
+
+
+	"PrettyPrintCounterName[]{}":{
+		"prefix":"PrettyPrintCounterName",
+		"body":[
+			"\\PrettyPrintCounterName[${2:options%keyvals}]{${1:counter}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"aalert":{
+	"aalert{}":{
 		"prefix":"aalert",
 		"body":[
 			"\\aalert{${1:highlighted text%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"aalert<overlay specification>":{
+	"aalert<overlay specification>{}":{
 		"prefix":"aalert<overlay specification>",
 		"body":[
 			"\\aalert<overlay specification>{${1:highlighted text%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"Lsty":{
+	"Lsty{}":{
 		"prefix":"Lsty",
 		"body":[
 			"\\Lsty{${1:package}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"Lsty<overlay specification>":{
+	"Lsty<overlay specification>{}":{
 		"prefix":"Lsty<overlay specification>",
 		"body":[
 			"\\Lsty<overlay specification>{${1:package}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"Lcls":{
+	"Lcls{}":{
 		"prefix":"Lcls",
 		"body":[
 			"\\Lcls{${1:class}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"Lcls<overlay specification>":{
+	"Lcls<overlay specification>{}":{
 		"prefix":"Lcls<overlay specification>",
 		"body":[
 			"\\Lcls<overlay specification>{${1:class}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"Lopt":{
+	"Lopt{}":{
 		"prefix":"Lopt",
 		"body":[
 			"\\Lopt{${1:option}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"Lenv":{
+	"Lenv{}":{
 		"prefix":"Lenv",
 		"body":[
 			"\\Lenv{${1:envname}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"LCmd":{
+	"LCmd{}":{
 		"prefix":"LCmd",
 		"body":[
 			"\\LCmd{${1:csname}}"
@@ -137,15 +137,7 @@
 	},
 
 
-	"LCmd":{
-		"prefix":"LCmd",
-		"body":[
-			"\\LCmd[${2:prefix char}]{${1:csname}}"
-		]
-	},
-
-
-	"LCmdArg":{
+	"LCmdArg{}{}":{
 		"prefix":"LCmdArg",
 		"body":[
 			"\\LCmdArg{${1:csname}}{${2:arg}}"
@@ -201,11 +193,49 @@
 	},
 
 
+	"LCmd[]{}":{
+		"prefix":"LCmd",
+		"body":[
+			"\\LCmd[${2:prefix char}]{${1:csname}}"
+		]
+	},
+
+
+	"LaTeXcode":{
+		"prefix":"LaTeXcode",
+		"body":[
+			"\\begin{LaTeXcode}",
+				"\t$1",
+			"\\end{LaTeXcode}"
+		]
+	},
+
+
+	"LaTeXcode":{
+		"prefix":"LaTeXcode",
+		"body":[
+			"\\begin{LaTeXcode}",
+				"\t$1",
+			"\\end{LaTeXcode}"
+		]
+	},
+
+
 	"LaTeXoutput":{
 		"prefix":"LaTeXoutput",
 		"body":[
 			"\\begin{LaTeXoutput}",
-			"\t$1",
+				"\t$1",
+			"\\end{LaTeXoutput}"
+		]
+	},
+
+
+	"LaTeXoutput":{
+		"prefix":"LaTeXoutput",
+		"body":[
+			"\\begin{LaTeXoutput}",
+				"\t$1",
 			"\\end{LaTeXoutput}"
 		]
 	},
@@ -215,8 +245,38 @@
 		"prefix":"LaTeXcode",
 		"body":[
 			"\\begin{LaTeXcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{LaTeXcode}"
+		]
+	},
+
+
+	"LaTeXcode":{
+		"prefix":"LaTeXcode",
+		"body":[
+			"\\begin{LaTeXcode}",
+				"\t$1",
+			"\\end{LaTeXcode}"
+		]
+	},
+
+
+	"LaTeXoutput":{
+		"prefix":"LaTeXoutput",
+		"body":[
+			"\\begin{LaTeXoutput}",
+				"\t$1",
+			"\\end{LaTeXoutput}"
+		]
+	},
+
+
+	"LaTeXoutput":{
+		"prefix":"LaTeXoutput",
+		"body":[
+			"\\begin{LaTeXoutput}",
+				"\t$1",
+			"\\end{LaTeXoutput}"
 		]
 	}
 }

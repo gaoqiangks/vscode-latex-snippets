@@ -33,7 +33,7 @@
 	},
 
 
-	"upmdate":{
+	"upmdate{}":{
 		"prefix":"upmdate",
 		"body":[
 			"\\upmdate{${1:date}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"upmdescription":{
+	"upmdescription{}":{
 		"prefix":"upmdescription",
 		"body":[
 			"\\upmdescription{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"upmstatus":{
+	"upmstatus{}":{
 		"prefix":"upmstatus",
 		"body":[
 			"\\upmstatus{${1:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"updateversion":{
+	"updateversion{}{}{}{}":{
 		"prefix":"updateversion",
 		"body":[
 			"\\updateversion{${1:version}}{${2:date}}{${3:description%text}}{${4:status%text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"initialversion":{
+	"initialversion{}{}{}":{
 		"prefix":"initialversion",
 		"body":[
 			"\\initialversion{${1:date}}{${2:description%text}}{${3:status%text}}"
@@ -97,15 +97,7 @@
 	},
 
 
-	"initialversion":{
-		"prefix":"initialversion",
-		"body":[
-			"\\initialversion[${4:version}]{${1:date}}{${2:description%text}}{${3:status%text}}"
-		]
-	},
-
-
-	"incversion":{
+	"incversion{}{}{}":{
 		"prefix":"incversion",
 		"body":[
 			"\\incversion{${1:date}}{${2:description%text}}{${3:status%text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"incsubversion":{
+	"incsubversion{}{}{}":{
 		"prefix":"incsubversion",
 		"body":[
 			"\\incsubversion{${1:date}}{${2:description%text}}{${3:status%text}}"
@@ -137,18 +129,26 @@
 	},
 
 
-	"upmhistory":{
-		"prefix":"upmhistory",
-		"body":[
-			"\\upmhistory[${1:width}]"
-		]
-	},
-
-
 	"upmcopyrightdate":{
 		"prefix":"upmcopyrightdate",
 		"body":[
 			"\\upmcopyrightdate"
+		]
+	},
+
+
+	"initialversion[]{}{}{}":{
+		"prefix":"initialversion",
+		"body":[
+			"\\initialversion[${4:version}]{${1:date}}{${2:description%text}}{${3:status%text}}"
+		]
+	},
+
+
+	"upmhistory[]":{
+		"prefix":"upmhistory",
+		"body":[
+			"\\upmhistory[${1:width}]"
 		]
 	}
 }

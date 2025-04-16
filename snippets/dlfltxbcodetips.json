@@ -25,26 +25,10 @@
 	},
 
 
-	"NewShadedTheorem":{
-		"prefix":"NewShadedTheorem",
-		"body":[
-			"\\NewShadedTheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
-		]
-	},
-
-
-	"NewShadedTheorem":{
+	"NewShadedTheorem{}{}":{
 		"prefix":"NewShadedTheorem",
 		"body":[
 			"\\NewShadedTheorem{${1:envname}}{${2:caption}}"
-		]
-	},
-
-
-	"NewShadedTheorem":{
-		"prefix":"NewShadedTheorem",
-		"body":[
-			"\\NewShadedTheorem{${1:envname}}{${2:caption}}[${3:within}]"
 		]
 	},
 
@@ -65,14 +49,6 @@
 	},
 
 
-	"InsertTheoremBreak*":{
-		"prefix":"InsertTheoremBreak*",
-		"body":[
-			"\\InsertTheoremBreak*"
-		]
-	},
-
-
 	"MathIndent":{
 		"prefix":"MathIndent",
 		"body":[
@@ -81,7 +57,7 @@
 	},
 
 
-	"SetMathIndent":{
+	"SetMathIndent{}":{
 		"prefix":"SetMathIndent",
 		"body":[
 			"\\SetMathIndent{${1:math code}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"AddtoMathIndent":{
+	"AddtoMathIndent{}":{
 		"prefix":"AddtoMathIndent",
 		"body":[
 			"\\AddtoMathIndent{${1:math code}}"
@@ -105,26 +81,10 @@
 	},
 
 
-	"PopMathIndent*":{
-		"prefix":"PopMathIndent*",
-		"body":[
-			"\\PopMathIndent*"
-		]
-	},
-
-
-	"DeclareMathSet":{
+	"DeclareMathSet{}":{
 		"prefix":"DeclareMathSet",
 		"body":[
 			"\\DeclareMathSet{${1:identifier}}"
-		]
-	},
-
-
-	"DeclareMathSet":{
-		"prefix":"DeclareMathSet",
-		"body":[
-			"\\DeclareMathSet[${2:options%keyvals}]{${1:identifier}}"
 		]
 	},
 
@@ -141,6 +101,46 @@
 		"prefix":"OverloadUnderscoreInMath",
 		"body":[
 			"\\OverloadUnderscoreInMath"
+		]
+	},
+
+
+	"InsertTheoremBreak*":{
+		"prefix":"*InsertTheoremBreak",
+		"body":[
+			"\\InsertTheoremBreak*"
+		]
+	},
+
+
+	"PopMathIndent*":{
+		"prefix":"*PopMathIndent",
+		"body":[
+			"\\PopMathIndent*"
+		]
+	},
+
+
+	"NewShadedTheorem{}[]{}":{
+		"prefix":"NewShadedTheorem",
+		"body":[
+			"\\NewShadedTheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
+		]
+	},
+
+
+	"NewShadedTheorem{}{}[]":{
+		"prefix":"NewShadedTheorem",
+		"body":[
+			"\\NewShadedTheorem{${1:envname}}{${2:caption}}[${3:within}]"
+		]
+	},
+
+
+	"DeclareMathSet[]{}":{
+		"prefix":"DeclareMathSet",
+		"body":[
+			"\\DeclareMathSet[${2:options%keyvals}]{${1:identifier}}"
 		]
 	}
 }

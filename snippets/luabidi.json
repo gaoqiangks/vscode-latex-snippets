@@ -9,18 +9,10 @@
 	},
 
 
-	"FnppOrigFootnote":{
+	"FnppOrigFootnote{}":{
 		"prefix":"FnppOrigFootnote",
 		"body":[
 			"\\FnppOrigFootnote{${1:text}}"
-		]
-	},
-
-
-	"FnppOrigFootnote":{
-		"prefix":"FnppOrigFootnote",
-		"body":[
-			"\\FnppOrigFootnote[${2:num}]{${1:text}}"
 		]
 	},
 
@@ -29,14 +21,6 @@
 		"prefix":"FnppOrigFootnotemark",
 		"body":[
 			"\\FnppOrigFootnotemark"
-		]
-	},
-
-
-	"FnppOrigFootnotemark":{
-		"prefix":"FnppOrigFootnotemark",
-		"body":[
-			"\\FnppOrigFootnotemark[${1:mark}]"
 		]
 	},
 
@@ -97,7 +81,7 @@
 	},
 
 
-	"RLE":{
+	"RLE{}":{
 		"prefix":"RLE",
 		"body":[
 			"\\RLE{${1:text}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"RL":{
+	"RL{}":{
 		"prefix":"RL",
 		"body":[
 			"\\RL{${1:text}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"LRE":{
+	"LRE{}":{
 		"prefix":"LRE",
 		"body":[
 			"\\LRE{${1:text}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"LR":{
+	"LR{}":{
 		"prefix":"LR",
 		"body":[
 			"\\LR{${1:text}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"hboxR":{
+	"hboxR{}":{
 		"prefix":"hboxR",
 		"body":[
 			"\\hboxR{${1:text}}"
@@ -137,18 +121,10 @@
 	},
 
 
-	"localnumeral":{
+	"localnumeral{}":{
 		"prefix":"localnumeral",
 		"body":[
 			"\\localnumeral{${1:number}}"
-		]
-	},
-
-
-	"localnumeral*":{
-		"prefix":"localnumeral*",
-		"body":[
-			"\\localnumeral*{${1:counter}}"
 		]
 	},
 
@@ -161,14 +137,6 @@
 	},
 
 
-	"footnotemarkLR":{
-		"prefix":"footnotemarkLR",
-		"body":[
-			"\\footnotemarkLR[${1:mark}]"
-		]
-	},
-
-
 	"footnotemarkRL":{
 		"prefix":"footnotemarkRL",
 		"body":[
@@ -177,15 +145,7 @@
 	},
 
 
-	"footnotemarkRL":{
-		"prefix":"footnotemarkRL",
-		"body":[
-			"\\footnotemarkRL[${1:mark}]"
-		]
-	},
-
-
-	"LTRfootnote":{
+	"LTRfootnote{}":{
 		"prefix":"LTRfootnote",
 		"body":[
 			"\\LTRfootnote{${1:text}}"
@@ -193,26 +153,10 @@
 	},
 
 
-	"LTRfootnote":{
-		"prefix":"LTRfootnote",
-		"body":[
-			"\\LTRfootnote[${2:num}]{${1:text}}"
-		]
-	},
-
-
-	"RTLfootnote":{
+	"RTLfootnote{}":{
 		"prefix":"RTLfootnote",
 		"body":[
 			"\\RTLfootnote{${1:text}}"
-		]
-	},
-
-
-	"RTLfootnote":{
-		"prefix":"RTLfootnote",
-		"body":[
-			"\\RTLfootnote[${2:num}]{${1:text}}"
 		]
 	},
 
@@ -281,7 +225,7 @@
 	},
 
 
-	"pLRE":{
+	"pLRE{}":{
 		"prefix":"pLRE",
 		"body":[
 			"\\pLRE{${1:text}}"
@@ -289,7 +233,7 @@
 	},
 
 
-	"pRLE":{
+	"pRLE{}":{
 		"prefix":"pRLE",
 		"body":[
 			"\\pRLE{${1:text}}"
@@ -297,12 +241,58 @@
 	},
 
 
-	"LTR":{
-		"prefix":"LTR",
+	"localnumeral*{}":{
+		"prefix":"*localnumeral",
 		"body":[
-			"\\begin{LTR}",
-			"\t$1",
-			"\\end{LTR}"
+			"\\localnumeral*{${1:counter}}"
+		]
+	},
+
+
+	"FnppOrigFootnote[]{}":{
+		"prefix":"FnppOrigFootnote",
+		"body":[
+			"\\FnppOrigFootnote[${2:num}]{${1:text}}"
+		]
+	},
+
+
+	"FnppOrigFootnotemark[]":{
+		"prefix":"FnppOrigFootnotemark",
+		"body":[
+			"\\FnppOrigFootnotemark[${1:mark}]"
+		]
+	},
+
+
+	"footnotemarkLR[]":{
+		"prefix":"footnotemarkLR",
+		"body":[
+			"\\footnotemarkLR[${1:mark}]"
+		]
+	},
+
+
+	"footnotemarkRL[]":{
+		"prefix":"footnotemarkRL",
+		"body":[
+			"\\footnotemarkRL[${1:mark}]"
+		]
+	},
+
+
+	"LTRfootnote[]{}":{
+		"prefix":"LTRfootnote",
+		"body":[
+			"\\LTRfootnote[${2:num}]{${1:text}}"
+		]
+	},
+
+
+	"RTLfootnote[]{}":{
+		"prefix":"RTLfootnote",
+		"body":[
+			"\\RTLfootnote[${2:num}]{${1:text}}"
 		]
 	},
 
@@ -311,8 +301,18 @@
 		"prefix":"RTL",
 		"body":[
 			"\\begin{RTL}",
-			"\t$1",
+				"\t$1",
 			"\\end{RTL}"
+		]
+	},
+
+
+	"LTR":{
+		"prefix":"LTR",
+		"body":[
+			"\\begin{LTR}",
+				"\t$1",
+			"\\end{LTR}"
 		]
 	}
 }

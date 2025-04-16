@@ -1,7 +1,7 @@
 {
 
 
-	"zcheck":{
+	"zcheck{}{}":{
 		"prefix":"zcheck",
 		"body":[
 			"\\zcheck{${1:labellist}}{${2:text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"zcheck":{
-		"prefix":"zcheck",
-		"body":[
-			"\\zcheck[${3:checks%keyvals}]{${1:labellist}}{${2:text}}"
-		]
-	},
-
-
-	"zctarget":{
+	"zctarget{}{}":{
 		"prefix":"zctarget",
 		"body":[
 			"\\zctarget{${1:label}}{${2:text}}"
@@ -25,10 +17,18 @@
 	},
 
 
-	"zrefchecksetup":{
+	"zrefchecksetup{}":{
 		"prefix":"zrefchecksetup",
 		"body":[
 			"\\zrefchecksetup{${1:options%keyvals}}"
+		]
+	},
+
+
+	"zcheck[]{}{}":{
+		"prefix":"zcheck",
+		"body":[
+			"\\zcheck[${3:checks%keyvals}]{${1:labellist}}{${2:text}}"
 		]
 	},
 
@@ -37,7 +37,7 @@
 		"prefix":"zcregion",
 		"body":[
 			"\\begin{zcregion}",
-			"\t$1",
+				"\t$1",
 			"\\end{zcregion}"
 		]
 	}

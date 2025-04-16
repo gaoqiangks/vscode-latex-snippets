@@ -9,7 +9,7 @@
 	},
 
 
-	"mainline":{
+	"mainline{}":{
 		"prefix":"mainline",
 		"body":[
 			"\\mainline{${1:moves}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"variation":{
+	"variation{}":{
 		"prefix":"variation",
 		"body":[
 			"\\variation{${1:moves}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"hidemoves":{
+	"hidemoves{}":{
 		"prefix":"hidemoves",
 		"body":[
 			"\\hidemoves{${1:moves}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"storegame":{
+	"storegame{}":{
 		"prefix":"storegame",
 		"body":[
 			"\\storegame{${1:name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"restoregame":{
+	"restoregame{}":{
 		"prefix":"restoregame",
 		"body":[
 			"\\restoregame{${1:name}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"savegame":{
+	"savegame{}":{
 		"prefix":"savegame",
 		"body":[
 			"\\savegame{${1:name}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"loadgame":{
+	"loadgame{}":{
 		"prefix":"loadgame",
 		"body":[
 			"\\loadgame{${1:name}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"wmove":{
+	"wmove{}":{
 		"prefix":"wmove",
 		"body":[
 			"\\wmove{${1:move}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"bmove":{
+	"bmove{}":{
 		"prefix":"bmove",
 		"body":[
 			"\\bmove{${1:move}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"lastmove":{
+	"lastmove{}":{
 		"prefix":"lastmove",
 		"body":[
 			"\\lastmove{${1:move}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"showonly":{
+	"showonly{}":{
 		"prefix":"showonly",
 		"body":[
 			"\\showonly{${1:piece1,piece2,...}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"showallbut":{
+	"showallbut{}":{
 		"prefix":"showallbut",
 		"body":[
 			"\\showallbut{${1:piece1,piece2,...}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"fenboard":{
+	"fenboard{}":{
 		"prefix":"fenboard",
 		"body":[
 			"\\fenboard{${1:instructions}}"
@@ -217,18 +217,10 @@
 	},
 
 
-	"newskaklanguage":{
+	"newskaklanguage{}{}":{
 		"prefix":"newskaklanguage",
 		"body":[
 			"\\newskaklanguage{${1:language}}{${2:pieces}}"
-		]
-	},
-
-
-	"skaklanguage":{
-		"prefix":"skaklanguage",
-		"body":[
-			"\\skaklanguage[${1:language}]"
 		]
 	},
 
@@ -305,7 +297,7 @@
 	},
 
 
-	"movecomment":{
+	"movecomment{}":{
 		"prefix":"movecomment",
 		"body":[
 			"\\movecomment{${1:moves}}"
@@ -345,7 +337,7 @@
 	},
 
 
-	"printarrow":{
+	"printarrow{}{}":{
 		"prefix":"printarrow",
 		"body":[
 			"\\printarrow{${1:from}}{${2:to}}"
@@ -353,7 +345,7 @@
 	},
 
 
-	"highlight":{
+	"highlight{}":{
 		"prefix":"highlight",
 		"body":[
 			"\\highlight{${1:square list}}"
@@ -361,18 +353,26 @@
 	},
 
 
-	"highlight":{
-		"prefix":"highlight",
+	"printknightmove{}{}":{
+		"prefix":"printknightmove",
 		"body":[
-			"\\highlight[${2:marker}]{${1:square list}}"
+			"\\printknightmove{${1:from}}{${2:to}}"
 		]
 	},
 
 
-	"printknightmove":{
-		"prefix":"printknightmove",
+	"skaklanguage[]":{
+		"prefix":"skaklanguage",
 		"body":[
-			"\\printknightmove{${1:from}}{${2:to}}"
+			"\\skaklanguage[${1:language}]"
+		]
+	},
+
+
+	"highlight[]{}":{
+		"prefix":"highlight",
+		"body":[
+			"\\highlight[${2:marker}]{${1:square list}}"
 		]
 	}
 }

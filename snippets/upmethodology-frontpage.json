@@ -1,7 +1,7 @@
 {
 
 
-	"setfrontcover":{
+	"setfrontcover{}":{
 		"prefix":"setfrontcover",
 		"body":[
 			"\\setfrontcover{${1:layout name%keyvals}}"
@@ -17,18 +17,10 @@
 	},
 
 
-	"setfrontillustration":{
+	"setfrontillustration{}":{
 		"prefix":"setfrontillustration",
 		"body":[
 			"\\setfrontillustration{${1:imagefile}}"
-		]
-	},
-
-
-	"setfrontillustration":{
-		"prefix":"setfrontillustration",
-		"body":[
-			"\\setfrontillustration[${2:scale}]{${1:imagefile}}"
 		]
 	},
 
@@ -37,6 +29,14 @@
 		"prefix":"clearfrontillustration",
 		"body":[
 			"\\clearfrontillustration"
+		]
+	},
+
+
+	"setfrontillustration[]{}":{
+		"prefix":"setfrontillustration",
+		"body":[
+			"\\setfrontillustration[${2:scale}]{${1:imagefile}}"
 		]
 	}
 }

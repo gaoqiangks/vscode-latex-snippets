@@ -73,7 +73,7 @@
 	},
 
 
-	"substitutecolormodel":{
+	"substitutecolormodel{}{}":{
 		"prefix":"substitutecolormodel",
 		"body":[
 			"\\substitutecolormodel{${1:source model}}{${2:target model-list}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"selectcolormodel":{
+	"selectcolormodel{}":{
 		"prefix":"selectcolormodel",
 		"body":[
 			"\\selectcolormodel{${1:num model}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"definecolor":{
+	"definecolor{}{}{}":{
 		"prefix":"definecolor",
 		"body":[
 			"\\definecolor{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
@@ -145,15 +145,7 @@
 	},
 
 
-	"definecolor":{
-		"prefix":"definecolor",
-		"body":[
-			"\\definecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
-		]
-	},
-
-
-	"providecolor":{
+	"providecolor{}{}{}":{
 		"prefix":"providecolor",
 		"body":[
 			"\\providecolor{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
@@ -161,74 +153,10 @@
 	},
 
 
-	"providecolor":{
-		"prefix":"providecolor",
-		"body":[
-			"\\providecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
-		]
-	},
-
-
-	"colorlet":{
+	"colorlet{}{}":{
 		"prefix":"colorlet",
 		"body":[
 			"\\colorlet{${1:name%specialDef}}{${2:color}}"
-		]
-	},
-
-
-	"colorlet":{
-		"prefix":"colorlet",
-		"body":[
-			"\\colorlet{${1:name%specialDef}}[${3:num-model}]{${2:color}}"
-		]
-	},
-
-
-	"colorlet":{
-		"prefix":"colorlet",
-		"body":[
-			"\\colorlet[${3:type}]{${1:name%specialDef}}{${2:color}}"
-		]
-	},
-
-
-	"colorlet":{
-		"prefix":"colorlet",
-		"body":[
-			"\\colorlet[${3:type}]{${1:name%specialDef}}[${4:num-model}]{${2:color}}"
-		]
-	},
-
-
-	"definecolorset":{
-		"prefix":"definecolorset",
-		"body":[
-			"\\definecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
-		]
-	},
-
-
-	"providecolorset":{
-		"prefix":"providecolorset",
-		"body":[
-			"\\providecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
-		]
-	},
-
-
-	"preparecolor":{
-		"prefix":"preparecolor",
-		"body":[
-			"\\preparecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
-		]
-	},
-
-
-	"preparecolorset":{
-		"prefix":"preparecolorset",
-		"body":[
-			"\\preparecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
 		]
 	},
 
@@ -257,7 +185,7 @@
 	},
 
 
-	"definecolors":{
+	"definecolors{}":{
 		"prefix":"definecolors",
 		"body":[
 			"\\definecolors{${1:id-list}}"
@@ -265,7 +193,7 @@
 	},
 
 
-	"providecolors":{
+	"providecolors{}":{
 		"prefix":"providecolors",
 		"body":[
 			"\\providecolors{${1:id-list}}"
@@ -305,7 +233,7 @@
 	},
 
 
-	"boxframe":{
+	"boxframe{}{}{}":{
 		"prefix":"boxframe",
 		"body":[
 			"\\boxframe{${1:width}}{${2:height}}{${3:depth}}"
@@ -313,7 +241,7 @@
 	},
 
 
-	"testcolor":{
+	"testcolor{}":{
 		"prefix":"testcolor",
 		"body":[
 			"\\testcolor{${1:color}}"
@@ -321,15 +249,7 @@
 	},
 
 
-	"testcolor":{
-		"prefix":"testcolor",
-		"body":[
-			"\\testcolor[${2:model-list}]{${1:spec-list}}"
-		]
-	},
-
-
-	"blendcolors":{
+	"blendcolors{}":{
 		"prefix":"blendcolors",
 		"body":[
 			"\\blendcolors{${1:mix-expr}}"
@@ -337,26 +257,10 @@
 	},
 
 
-	"blendcolors*":{
-		"prefix":"blendcolors*",
-		"body":[
-			"\\blendcolors*{${1:mix-expr}}"
-		]
-	},
-
-
-	"maskcolors":{
+	"maskcolors{}":{
 		"prefix":"maskcolors",
 		"body":[
 			"\\maskcolors{${1:color}}"
-		]
-	},
-
-
-	"maskcolors":{
-		"prefix":"maskcolors",
-		"body":[
-			"\\maskcolors[${2:num-model}]{${1:color}}"
 		]
 	},
 
@@ -393,26 +297,10 @@
 	},
 
 
-	"definecolorseries":{
+	"definecolorseries{}{}{}{}{}":{
 		"prefix":"definecolorseries",
 		"body":[
 			"\\definecolorseries{${1:name}}{${2:core-model}}{${3:method%keyvals}}{${4:b-spec}}{${5:s-spec}}"
-		]
-	},
-
-
-	"definecolorseries":{
-		"prefix":"definecolorseries",
-		"body":[
-			"\\definecolorseries{${1:name}}{${2:core-model}}{${3:method%keyvals}}[${6:b-model}]{${4:b-spec}}[${7:s-model}]{${5:s-spec}}"
-		]
-	},
-
-
-	"resetcolorseries":{
-		"prefix":"resetcolorseries",
-		"body":[
-			"\\resetcolorseries[${2:div}]{${1:name}}"
 		]
 	},
 
@@ -425,7 +313,7 @@
 	},
 
 
-	"extractcolorspec":{
+	"extractcolorspec{}{}":{
 		"prefix":"extractcolorspec",
 		"body":[
 			"\\extractcolorspec{${1:color}}{${2:cmd}}"
@@ -433,7 +321,7 @@
 	},
 
 
-	"extractcolorspecs":{
+	"extractcolorspecs{}{}{}":{
 		"prefix":"extractcolorspecs",
 		"body":[
 			"\\extractcolorspecs{${1:color}}{${2:model-cmd%cmd}}{${3:color-cmd%cmd}}"
@@ -441,10 +329,122 @@
 	},
 
 
-	"convertcolorspec":{
+	"convertcolorspec{}{}{}{}":{
 		"prefix":"convertcolorspec",
 		"body":[
 			"\\convertcolorspec{${1:model}}{${2:spec}}{${3:target-model}}{${4:cmd}}"
+		]
+	},
+
+
+	"blendcolors*{}":{
+		"prefix":"*blendcolors",
+		"body":[
+			"\\blendcolors*{${1:mix-expr}}"
+		]
+	},
+
+
+	"definecolor[]{}{}{}":{
+		"prefix":"definecolor",
+		"body":[
+			"\\definecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
+		]
+	},
+
+
+	"providecolor[]{}{}{}":{
+		"prefix":"providecolor",
+		"body":[
+			"\\providecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
+		]
+	},
+
+
+	"colorlet{}[]{}":{
+		"prefix":"colorlet",
+		"body":[
+			"\\colorlet{${1:name%specialDef}}[${3:num-model}]{${2:color}}"
+		]
+	},
+
+
+	"colorlet[]{}{}":{
+		"prefix":"colorlet",
+		"body":[
+			"\\colorlet[${3:type}]{${1:name%specialDef}}{${2:color}}"
+		]
+	},
+
+
+	"colorlet[]{}[]{}":{
+		"prefix":"colorlet",
+		"body":[
+			"\\colorlet[${3:type}]{${1:name%specialDef}}[${4:num-model}]{${2:color}}"
+		]
+	},
+
+
+	"definecolorset[]{}{}{}{}":{
+		"prefix":"definecolorset",
+		"body":[
+			"\\definecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
+		]
+	},
+
+
+	"providecolorset[]{}{}{}{}":{
+		"prefix":"providecolorset",
+		"body":[
+			"\\providecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
+		]
+	},
+
+
+	"preparecolor[]{}{}{}":{
+		"prefix":"preparecolor",
+		"body":[
+			"\\preparecolor[${4:type}]{${1:name%specialDef}}{${2:model-list}}{${3:spec-list}}"
+		]
+	},
+
+
+	"preparecolorset[]{}{}{}{}":{
+		"prefix":"preparecolorset",
+		"body":[
+			"\\preparecolorset[${5:type}]{${1:model-list}}{${2:head}}{${3:tail}}{${4:set-spec}}"
+		]
+	},
+
+
+	"testcolor[]{}":{
+		"prefix":"testcolor",
+		"body":[
+			"\\testcolor[${2:model-list}]{${1:spec-list}}"
+		]
+	},
+
+
+	"maskcolors[]{}":{
+		"prefix":"maskcolors",
+		"body":[
+			"\\maskcolors[${2:num-model}]{${1:color}}"
+		]
+	},
+
+
+	"definecolorseries{}{}{}[]{}[]{}":{
+		"prefix":"definecolorseries",
+		"body":[
+			"\\definecolorseries{${1:name}}{${2:core-model}}{${3:method%keyvals}}[${6:b-model}]{${4:b-spec}}[${7:s-model}]{${5:s-spec}}"
+		]
+	},
+
+
+	"resetcolorseries[]{}":{
+		"prefix":"resetcolorseries",
+		"body":[
+			"\\resetcolorseries[${2:div}]{${1:name}}"
 		]
 	},
 
@@ -453,7 +453,17 @@
 		"prefix":"testcolors",
 		"body":[
 			"\\begin{testcolors}",
-			"\t$1",
+				"\t$1",
+			"\\end{testcolors}"
+		]
+	},
+
+
+	"testcolors":{
+		"prefix":"testcolors",
+		"body":[
+			"\\begin{testcolors}",
+				"\t$1",
 			"\\end{testcolors}"
 		]
 	}

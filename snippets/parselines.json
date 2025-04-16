@@ -1,7 +1,7 @@
 {
 
 
-	"dofilebyline":{
+	"dofilebyline{}":{
 		"prefix":"dofilebyline",
 		"body":[
 			"\\dofilebyline{${1:file}}"
@@ -9,8 +9,8 @@
 	},
 
 
-	"dofilebyline*":{
-		"prefix":"dofilebyline*",
+	"dofilebyline*{}":{
+		"prefix":"*dofilebyline",
 		"body":[
 			"\\dofilebyline*{${1:file}}"
 		]
@@ -21,7 +21,17 @@
 		"prefix":"parse lines",
 		"body":[
 			"\\begin{parse lines}",
-			"\t$1",
+				"\t$1",
+			"\\end{parse lines}"
+		]
+	},
+
+
+	"parse lines":{
+		"prefix":"parse lines",
+		"body":[
+			"\\begin{parse lines}",
+				"\t$1",
 			"\\end{parse lines}"
 		]
 	}

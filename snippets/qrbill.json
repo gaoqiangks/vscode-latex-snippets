@@ -9,31 +9,7 @@
 	},
 
 
-	"QRbill":{
-		"prefix":"QRbill",
-		"body":[
-			"\\QRbill[${1:data setup%keyvals}]"
-		]
-	},
-
-
-	"QRbill*":{
-		"prefix":"QRbill*",
-		"body":[
-			"\\QRbill*"
-		]
-	},
-
-
-	"QRbill*":{
-		"prefix":"QRbill*",
-		"body":[
-			"\\QRbill*[${1:data setup%keyvals}]"
-		]
-	},
-
-
-	"qrbillsetdata":{
+	"qrbillsetdata{}":{
 		"prefix":"qrbillsetdata",
 		"body":[
 			"\\qrbillsetdata{${1:data setup%keyvals}}"
@@ -41,15 +17,7 @@
 	},
 
 
-	"qrbillsetdata*":{
-		"prefix":"qrbillsetdata*",
-		"body":[
-			"\\qrbillsetdata*{${1:data setup%keyvals}}"
-		]
-	},
-
-
-	"SetupQrBill":{
+	"SetupQrBill{}":{
 		"prefix":"SetupQrBill",
 		"body":[
 			"\\SetupQrBill{${1:data setup%keyvals}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"qrbillsetup":{
+	"qrbillsetup{}":{
 		"prefix":"qrbillsetup",
 		"body":[
 			"\\qrbillsetup{${1:data setup%keyvals}}"
@@ -65,7 +33,7 @@
 	},
 
 
-	"QRbillParseDate":{
+	"QRbillParseDate{}{}{}":{
 		"prefix":"QRbillParseDate",
 		"body":[
 			"\\QRbillParseDate{${1:year}}{${2:month}}{${3:day}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"QRbillAddCustomReplacement":{
+	"QRbillAddCustomReplacement{}{}":{
 		"prefix":"QRbillAddCustomReplacement",
 		"body":[
 			"\\QRbillAddCustomReplacement{${1:string}}{${2:replacement}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"SetStaticData":{
+	"SetStaticData{}":{
 		"prefix":"SetStaticData",
 		"body":[
 			"\\SetStaticData{${1:arg}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"SetBillingInfoScheme":{
+	"SetBillingInfoScheme{}":{
 		"prefix":"SetBillingInfoScheme",
 		"body":[
 			"\\SetBillingInfoScheme{${1:scheme data}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"SetQrScheme":{
+	"SetQrScheme{}":{
 		"prefix":"SetQrScheme",
 		"body":[
 			"\\SetQrScheme{${1:scheme data}}"
@@ -133,6 +101,38 @@
 		"prefix":"qrbillfont",
 		"body":[
 			"\\qrbillfont"
+		]
+	},
+
+
+	"QRbill*":{
+		"prefix":"*QRbill",
+		"body":[
+			"\\QRbill*"
+		]
+	},
+
+
+	"QRbill*[]":{
+		"prefix":"*QRbill",
+		"body":[
+			"\\QRbill*[${1:data setup%keyvals}]"
+		]
+	},
+
+
+	"qrbillsetdata*{}":{
+		"prefix":"*qrbillsetdata",
+		"body":[
+			"\\qrbillsetdata*{${1:data setup%keyvals}}"
+		]
+	},
+
+
+	"QRbill[]":{
+		"prefix":"QRbill",
+		"body":[
+			"\\QRbill[${1:data setup%keyvals}]"
 		]
 	}
 }

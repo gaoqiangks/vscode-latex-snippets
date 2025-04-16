@@ -1,23 +1,7 @@
 {
 
 
-	"citep":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep":{
+	"citep{}":{
 		"prefix":"citep",
 		"body":[
 			"\\citep{${1:bibid}}"
@@ -25,23 +9,7 @@
 	},
 
 
-	"citet":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet":{
+	"citet{}":{
 		"prefix":"citet",
 		"body":[
 			"\\citet{${1:bibid}}"
@@ -49,7 +17,7 @@
 	},
 
 
-	"titleimage":{
+	"titleimage{}":{
 		"prefix":"titleimage",
 		"body":[
 			"\\titleimage{${1:imagefile}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"titleimagecaption":{
+	"titleimagecaption{}":{
 		"prefix":"titleimagecaption",
 		"body":[
 			"\\titleimagecaption{${1:text}}"
@@ -65,7 +33,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"copyrightyear":{
+	"copyrightyear{}":{
 		"prefix":"copyrightyear",
 		"body":[
 			"\\copyrightyear{${1:year}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"firstpublicationyear":{
+	"firstpublicationyear{}":{
 		"prefix":"firstpublicationyear",
 		"body":[
 			"\\firstpublicationyear{${1:year}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"reportyear":{
+	"reportyear{}":{
 		"prefix":"reportyear",
 		"body":[
 			"\\reportyear{${1:year}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"reportmonth":{
+	"reportmonth{}":{
 		"prefix":"reportmonth",
 		"body":[
 			"\\reportmonth{${1:month}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"reportindex":{
+	"reportindex{}":{
 		"prefix":"reportindex",
 		"body":[
 			"\\reportindex{${1:index}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"blurb":{
+	"blurb{}":{
 		"prefix":"blurb",
 		"body":[
 			"\\blurb{${1:text}}"
@@ -169,10 +137,42 @@
 	},
 
 
-	"attribution":{
+	"attribution{}":{
 		"prefix":"attribution",
 		"body":[
 			"\\attribution{${1:text}}"
+		]
+	},
+
+
+	"citep[][]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citep[]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citet[][]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citet[]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:postnote}]{${1:bibid}}"
 		]
 	},
 
@@ -181,7 +181,17 @@
 		"prefix":"AmnestyGlossary",
 		"body":[
 			"\\begin{AmnestyGlossary}",
-			"\t$1",
+				"\t$1",
+			"\\end{AmnestyGlossary}"
+		]
+	},
+
+
+	"AmnestyGlossary":{
+		"prefix":"AmnestyGlossary",
+		"body":[
+			"\\begin{AmnestyGlossary}",
+				"\t$1",
 			"\\end{AmnestyGlossary}"
 		]
 	}

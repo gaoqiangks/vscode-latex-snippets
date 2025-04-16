@@ -1,7 +1,7 @@
 {
 
 
-	"chordbox":{
+	"chordbox{}{}":{
 		"prefix":"chordbox",
 		"body":[
 			"\\chordbox{${1:chord-name%formula}}{${2:fret-positions}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"chordbox":{
-		"prefix":"chordbox",
-		"body":[
-			"\\chordbox[${3:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}"
-		]
-	},
-
-
-	"bchordbox":{
+	"bchordbox{}{}{}":{
 		"prefix":"bchordbox",
 		"body":[
 			"\\bchordbox{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
@@ -25,7 +17,15 @@
 	},
 
 
-	"bchordbox":{
+	"chordbox[]{}{}":{
+		"prefix":"chordbox",
+		"body":[
+			"\\chordbox[${3:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}"
+		]
+	},
+
+
+	"bchordbox[]{}{}{}":{
 		"prefix":"bchordbox",
 		"body":[
 			"\\bchordbox[${4:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
@@ -37,7 +37,7 @@
 		"prefix":"chordboxenv",
 		"body":[
 			"\\begin{chordboxenv}",
-			"\t$1",
+				"\t$1",
 			"\\end{chordboxenv}"
 		]
 	}

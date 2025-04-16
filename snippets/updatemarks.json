@@ -1,7 +1,7 @@
 {
 
 
-	"AddToUpdateMarksList":{
+	"AddToUpdateMarksList{}":{
 		"prefix":"AddToUpdateMarksList",
 		"body":[
 			"\\AddToUpdateMarksList{${1:number list}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"SetUpdateMarksList":{
+	"SetUpdateMarksList{}":{
 		"prefix":"SetUpdateMarksList",
 		"body":[
 			"\\SetUpdateMarksList{${1:number list}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"RemoveFromUpdateMarksList":{
+	"RemoveFromUpdateMarksList{}":{
 		"prefix":"RemoveFromUpdateMarksList",
 		"body":[
 			"\\RemoveFromUpdateMarksList{${1:number list}}"
@@ -33,34 +33,10 @@
 	},
 
 
-	"ExtractMarks":{
+	"ExtractMarks{}":{
 		"prefix":"ExtractMarks",
 		"body":[
 			"\\ExtractMarks{${1:box number}}"
-		]
-	},
-
-
-	"ExtractMarks":{
-		"prefix":"ExtractMarks",
-		"body":[
-			"\\ExtractMarks[${2:number list}]{${1:box number}}"
-		]
-	},
-
-
-	"ExtractMarks*":{
-		"prefix":"ExtractMarks*",
-		"body":[
-			"\\ExtractMarks*{${1:text}}"
-		]
-	},
-
-
-	"ExtractMarks*":{
-		"prefix":"ExtractMarks*",
-		"body":[
-			"\\ExtractMarks*[${2:number list}]{${1:text}}"
 		]
 	},
 
@@ -73,14 +49,6 @@
 	},
 
 
-	"ExtractSplitMarks":{
-		"prefix":"ExtractSplitMarks",
-		"body":[
-			"\\ExtractSplitMarks[${1:number list}]"
-		]
-	},
-
-
 	"UpdateMarks":{
 		"prefix":"UpdateMarks",
 		"body":[
@@ -89,15 +57,7 @@
 	},
 
 
-	"UpdateMarks":{
-		"prefix":"UpdateMarks",
-		"body":[
-			"\\UpdateMarks[${1:number list}]"
-		]
-	},
-
-
-	"ExtractMarksTo":{
+	"ExtractMarksTo{}{}":{
 		"prefix":"ExtractMarksTo",
 		"body":[
 			"\\ExtractMarksTo{${1:box number}}{${2:cmd}}"
@@ -105,26 +65,66 @@
 	},
 
 
-	"ExtractMarksTo":{
-		"prefix":"ExtractMarksTo",
+	"ExtractMarks*{}":{
+		"prefix":"*ExtractMarks",
 		"body":[
-			"\\ExtractMarksTo[${3:number list}]{${1:box number}}{${2:cmd}}"
+			"\\ExtractMarks*{${1:text}}"
 		]
 	},
 
 
-	"ExtractMarksTo*":{
-		"prefix":"ExtractMarksTo*",
+	"ExtractMarks*[]{}":{
+		"prefix":"*ExtractMarks",
+		"body":[
+			"\\ExtractMarks*[${2:number list}]{${1:text}}"
+		]
+	},
+
+
+	"ExtractMarksTo*{}{}":{
+		"prefix":"*ExtractMarksTo",
 		"body":[
 			"\\ExtractMarksTo*{${1:text}}{${2:cmd}}"
 		]
 	},
 
 
-	"ExtractMarksTo*":{
-		"prefix":"ExtractMarksTo*",
+	"ExtractMarksTo*[]{}{}":{
+		"prefix":"*ExtractMarksTo",
 		"body":[
 			"\\ExtractMarksTo*[${3:number list}]{${1:text}}{${2:cmd}}"
+		]
+	},
+
+
+	"ExtractMarks[]{}":{
+		"prefix":"ExtractMarks",
+		"body":[
+			"\\ExtractMarks[${2:number list}]{${1:box number}}"
+		]
+	},
+
+
+	"ExtractSplitMarks[]":{
+		"prefix":"ExtractSplitMarks",
+		"body":[
+			"\\ExtractSplitMarks[${1:number list}]"
+		]
+	},
+
+
+	"UpdateMarks[]":{
+		"prefix":"UpdateMarks",
+		"body":[
+			"\\UpdateMarks[${1:number list}]"
+		]
+	},
+
+
+	"ExtractMarksTo[]{}{}":{
+		"prefix":"ExtractMarksTo",
+		"body":[
+			"\\ExtractMarksTo[${3:number list}]{${1:box number}}{${2:cmd}}"
 		]
 	}
 }

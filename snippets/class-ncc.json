@@ -1,7 +1,7 @@
 {
 
 
-	"setseries":{
+	"setseries{}":{
 		"prefix":"setseries",
 		"body":[
 			"\\setseries{${1:series%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"setvolume":{
+	"setvolume{}":{
 		"prefix":"setvolume",
 		"body":[
 			"\\setvolume{${1:volume%text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"setissue":{
+	"setissue{}":{
 		"prefix":"setissue",
 		"body":[
 			"\\setissue{${1:issue%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"preprint":{
+	"preprint{}":{
 		"prefix":"preprint",
 		"body":[
 			"\\preprint{${1:number}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"bookeditor":{
+	"bookeditor{}":{
 		"prefix":"bookeditor",
 		"body":[
 			"\\bookeditor{${1:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"bookeditor":{
+	"bookeditor{}":{
 		"prefix":"bookeditor",
 		"body":[
 			"\\bookeditor{${1:text}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"setyear":{
+	"setyear{}":{
 		"prefix":"setyear",
 		"body":[
 			"\\setyear{${1:year}}"
@@ -201,12 +201,12 @@
 	},
 
 
-	"theglossary":{
-		"prefix":"theglossary",
+	"alloweqbreak":{
+		"prefix":"alloweqbreak",
 		"body":[
-			"\\begin{theglossary}",
-			"\t$1",
-			"\\end{theglossary}"
+			"\\begin{alloweqbreak}",
+				"\t$1",
+			"\\end{alloweqbreak}"
 		]
 	},
 
@@ -215,18 +215,18 @@
 		"prefix":"noeqbreak",
 		"body":[
 			"\\begin{noeqbreak}",
-			"\t$1",
+				"\t$1",
 			"\\end{noeqbreak}"
 		]
 	},
 
 
-	"alloweqbreak":{
-		"prefix":"alloweqbreak",
+	"theglossary":{
+		"prefix":"theglossary",
 		"body":[
-			"\\begin{alloweqbreak}",
-			"\t$1",
-			"\\end{alloweqbreak}"
+			"\\begin{theglossary}",
+				"\t$1",
+			"\\end{theglossary}"
 		]
 	}
 }

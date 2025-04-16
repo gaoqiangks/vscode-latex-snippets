@@ -1,15 +1,7 @@
 {
 
 
-	"addtocounter":{
-		"prefix":"addtocounter",
-		"body":[
-			"\\addtocounter{${1:counter}}{${2:value}}[${3:options%keyvals}]"
-		]
-	},
-
-
-	"NewDocumentCounter":{
+	"NewDocumentCounter{}":{
 		"prefix":"NewDocumentCounter",
 		"body":[
 			"\\NewDocumentCounter{${1:counter1,counter2,...}}"
@@ -17,31 +9,7 @@
 	},
 
 
-	"NewDocumentCounter":{
-		"prefix":"NewDocumentCounter",
-		"body":[
-			"\\NewDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
-		]
-	},
-
-
-	"NewDocumentCounter":{
-		"prefix":"NewDocumentCounter",
-		"body":[
-			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"NewDocumentCounter":{
-		"prefix":"NewDocumentCounter",
-		"body":[
-			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
-		]
-	},
-
-
-	"DeclareDocumentCounter":{
+	"DeclareDocumentCounter{}":{
 		"prefix":"DeclareDocumentCounter",
 		"body":[
 			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}"
@@ -49,31 +17,7 @@
 	},
 
 
-	"DeclareDocumentCounter":{
-		"prefix":"DeclareDocumentCounter",
-		"body":[
-			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
-		]
-	},
-
-
-	"DeclareDocumentCounter":{
-		"prefix":"DeclareDocumentCounter",
-		"body":[
-			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"DeclareDocumentCounter":{
-		"prefix":"DeclareDocumentCounter",
-		"body":[
-			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
-		]
-	},
-
-
-	"SetDocumentCounter":{
+	"SetDocumentCounter{}{}":{
 		"prefix":"SetDocumentCounter",
 		"body":[
 			"\\SetDocumentCounter{${1:counter}}{${2:value}}"
@@ -81,15 +25,7 @@
 	},
 
 
-	"SetDocumentCounter":{
-		"prefix":"SetDocumentCounter",
-		"body":[
-			"\\SetDocumentCounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
-		]
-	},
-
-
-	"StepDownCounter":{
+	"StepDownCounter{}":{
 		"prefix":"StepDownCounter",
 		"body":[
 			"\\StepDownCounter{${1:counter}}"
@@ -97,7 +33,7 @@
 	},
 
 
-	"SubtractFromCounter":{
+	"SubtractFromCounter{}{}":{
 		"prefix":"SubtractFromCounter",
 		"body":[
 			"\\SubtractFromCounter{${1:counter}}{${2:delta value}}"
@@ -105,7 +41,7 @@
 	},
 
 
-	"CopyDocumentCounters":{
+	"CopyDocumentCounters{}{}":{
 		"prefix":"CopyDocumentCounters",
 		"body":[
 			"\\CopyDocumentCounters{${1:source counter}}{${2:target counter}}"
@@ -113,7 +49,7 @@
 	},
 
 
-	"SwapDocumentCounters":{
+	"SwapDocumentCounters{}{}":{
 		"prefix":"SwapDocumentCounters",
 		"body":[
 			"\\SwapDocumentCounters{${1:counter1}}{${2:counter2}}"
@@ -121,7 +57,7 @@
 	},
 
 
-	"SyncCounters":{
+	"SyncCounters{}":{
 		"prefix":"SyncCounters",
 		"body":[
 			"\\SyncCounters{${1:driver counter}}"
@@ -129,7 +65,7 @@
 	},
 
 
-	"IfIsDocumentCounterTF":{
+	"IfIsDocumentCounterTF{}{}{}":{
 		"prefix":"IfIsDocumentCounterTF",
 		"body":[
 			"\\IfIsDocumentCounterTF{${1:name}}{${2:true}}{${3:false}}"
@@ -137,7 +73,7 @@
 	},
 
 
-	"IfIsDocumentCounterT":{
+	"IfIsDocumentCounterT{}{}":{
 		"prefix":"IfIsDocumentCounterT",
 		"body":[
 			"\\IfIsDocumentCounterT{${1:name}}{${2:true}}"
@@ -145,7 +81,7 @@
 	},
 
 
-	"IfIsDocumentCounterF":{
+	"IfIsDocumentCounterF{}{}":{
 		"prefix":"IfIsDocumentCounterF",
 		"body":[
 			"\\IfIsDocumentCounterF{${1:name}}{${2:false}}"
@@ -193,7 +129,7 @@
 	},
 
 
-	"RemoveFromReset":{
+	"RemoveFromReset{}{}":{
 		"prefix":"RemoveFromReset",
 		"body":[
 			"\\RemoveFromReset{${1:counter1,counter2,...}}{${2:driver counter}}"
@@ -201,7 +137,7 @@
 	},
 
 
-	"RemoveFromFullReset":{
+	"RemoveFromFullReset{}{}":{
 		"prefix":"RemoveFromFullReset",
 		"body":[
 			"\\RemoveFromFullReset{${1:counter1,counter2,...}}{${2:driver counter}}"
@@ -209,7 +145,7 @@
 	},
 
 
-	"ClearCounterResetList":{
+	"ClearCounterResetList{}":{
 		"prefix":"ClearCounterResetList",
 		"body":[
 			"\\ClearCounterResetList{${1:driver counter}}"
@@ -217,15 +153,7 @@
 	},
 
 
-	"ClearCounterResetList*":{
-		"prefix":"ClearCounterResetList*",
-		"body":[
-			"\\ClearCounterResetList*{${1:driver counter}}"
-		]
-	},
-
-
-	"AddToReset":{
+	"AddToReset{}{}":{
 		"prefix":"AddToReset",
 		"body":[
 			"\\AddToReset{${1:counter1,counter2,...}}{${2:driver counter}}"
@@ -233,7 +161,7 @@
 	},
 
 
-	"countersresetlistcount":{
+	"countersresetlistcount{}":{
 		"prefix":"countersresetlistcount",
 		"body":[
 			"\\countersresetlistcount{${1:counter}}"
@@ -249,7 +177,7 @@
 	},
 
 
-	"CounterFullResetList":{
+	"CounterFullResetList{}":{
 		"prefix":"CounterFullResetList",
 		"body":[
 			"\\CounterFullResetList{${1:counter}}"
@@ -257,7 +185,7 @@
 	},
 
 
-	"IfInResetListTF":{
+	"IfInResetListTF{}{}{}{}":{
 		"prefix":"IfInResetListTF",
 		"body":[
 			"\\IfInResetListTF{${1:resetting counter}}{${2:counter}}{${3:true}}{${4:false}}"
@@ -265,7 +193,7 @@
 	},
 
 
-	"IfInResetListT":{
+	"IfInResetListT{}{}{}":{
 		"prefix":"IfInResetListT",
 		"body":[
 			"\\IfInResetListT{${1:resetting counter}}{${2:counter}}{${3:true}}"
@@ -273,7 +201,7 @@
 	},
 
 
-	"IfInResetListF":{
+	"IfInResetListF{}{}{}":{
 		"prefix":"IfInResetListF",
 		"body":[
 			"\\IfInResetListF{${1:resetting counter}}{${2:counter}}{${3:false}}"
@@ -281,7 +209,7 @@
 	},
 
 
-	"DisplayResetList":{
+	"DisplayResetList{}":{
 		"prefix":"DisplayResetList",
 		"body":[
 			"\\DisplayResetList{${1:resetting counter}}"
@@ -289,15 +217,7 @@
 	},
 
 
-	"DisplayResetList":{
-		"prefix":"DisplayResetList",
-		"body":[
-			"\\DisplayResetList[${2:separator}]{${1:resetting counter}}"
-		]
-	},
-
-
-	"ShowResetList":{
+	"ShowResetList{}":{
 		"prefix":"ShowResetList",
 		"body":[
 			"\\ShowResetList{${1:resetting counter}}"
@@ -313,7 +233,7 @@
 	},
 
 
-	"GetParentCounter":{
+	"GetParentCounter{}":{
 		"prefix":"GetParentCounter",
 		"body":[
 			"\\GetParentCounter{${1:counter}}"
@@ -321,7 +241,7 @@
 	},
 
 
-	"LoopAddtoCounters":{
+	"LoopAddtoCounters{}{}":{
 		"prefix":"LoopAddtoCounters",
 		"body":[
 			"\\LoopAddtoCounters{${1:counter1,counter2,...}}{${2:increment}}"
@@ -329,7 +249,7 @@
 	},
 
 
-	"LoopResetCounters":{
+	"LoopResetCounters{}":{
 		"prefix":"LoopResetCounters",
 		"body":[
 			"\\LoopResetCounters{${1:counter1,counter2,...}}"
@@ -337,7 +257,7 @@
 	},
 
 
-	"LoopRefstepCounters":{
+	"LoopRefstepCounters{}":{
 		"prefix":"LoopRefstepCounters",
 		"body":[
 			"\\LoopRefstepCounters{${1:counter1,counter2,...}}"
@@ -345,7 +265,7 @@
 	},
 
 
-	"LoopSetCounters":{
+	"LoopSetCounters{}{}":{
 		"prefix":"LoopSetCounters",
 		"body":[
 			"\\LoopSetCounters{${1:counter1,counter2,...}}{${2:value}}"
@@ -353,7 +273,7 @@
 	},
 
 
-	"LoopStepCounters":{
+	"LoopStepCounters{}":{
 		"prefix":"LoopStepCounters",
 		"body":[
 			"\\LoopStepCounters{${1:counter1,counter2,...}}"
@@ -361,7 +281,7 @@
 	},
 
 
-	"LoopCountersFunction":{
+	"LoopCountersFunction{}{}":{
 		"prefix":"LoopCountersFunction",
 		"body":[
 			"\\LoopCountersFunction{${1:counter1,counter2,...}}{${2:macro}}"
@@ -369,7 +289,7 @@
 	},
 
 
-	"LoopCounterResetList":{
+	"LoopCounterResetList{}{}":{
 		"prefix":"LoopCounterResetList",
 		"body":[
 			"\\LoopCounterResetList{${1:counter}}{${2:macro}}"
@@ -377,7 +297,7 @@
 	},
 
 
-	"LoopFullCounterResetList":{
+	"LoopFullCounterResetList{}{}":{
 		"prefix":"LoopFullCounterResetList",
 		"body":[
 			"\\LoopFullCounterResetList{${1:counter}}{${2:macro}}"
@@ -385,7 +305,7 @@
 	},
 
 
-	"CounterWithin":{
+	"CounterWithin{}{}":{
 		"prefix":"CounterWithin",
 		"body":[
 			"\\CounterWithin{${1:counter1,counter2,...}}{${2:driver counter}}"
@@ -393,15 +313,7 @@
 	},
 
 
-	"CounterWithin*":{
-		"prefix":"CounterWithin*",
-		"body":[
-			"\\CounterWithin*{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"CounterWithout":{
+	"CounterWithout{}{}":{
 		"prefix":"CounterWithout",
 		"body":[
 			"\\CounterWithout{${1:counter1,counter2,...}}{${2:driver counter}}"
@@ -409,15 +321,7 @@
 	},
 
 
-	"CounterWithout*":{
-		"prefix":"CounterWithout*",
-		"body":[
-			"\\CounterWithout*{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"BinaryValue":{
+	"BinaryValue{}":{
 		"prefix":"BinaryValue",
 		"body":[
 			"\\BinaryValue{${1:counter}}"
@@ -425,7 +329,7 @@
 	},
 
 
-	"hexValue":{
+	"hexValue{}":{
 		"prefix":"hexValue",
 		"body":[
 			"\\hexValue{${1:counter}}"
@@ -433,7 +337,7 @@
 	},
 
 
-	"HexValue":{
+	"HexValue{}":{
 		"prefix":"HexValue",
 		"body":[
 			"\\HexValue{${1:counter}}"
@@ -441,7 +345,7 @@
 	},
 
 
-	"OctalValue":{
+	"OctalValue{}":{
 		"prefix":"OctalValue",
 		"body":[
 			"\\OctalValue{${1:counter}}"
@@ -449,7 +353,7 @@
 	},
 
 
-	"xalphalph":{
+	"xalphalph{}":{
 		"prefix":"xalphalph",
 		"body":[
 			"\\xalphalph{${1:counter}}"
@@ -457,7 +361,7 @@
 	},
 
 
-	"xAlphAlph":{
+	"xAlphAlph{}":{
 		"prefix":"xAlphAlph",
 		"body":[
 			"\\xAlphAlph{${1:counter}}"
@@ -465,7 +369,7 @@
 	},
 
 
-	"CounterFormat":{
+	"CounterFormat{}":{
 		"prefix":"CounterFormat",
 		"body":[
 			"\\CounterFormat{${1:counter1!format1,counter2!format2,...}}"
@@ -473,15 +377,7 @@
 	},
 
 
-	"CounterFormat":{
-		"prefix":"CounterFormat",
-		"body":[
-			"\\CounterFormat[${2:options%keyvals}]{${1:counter1!format1,counter2!format2,...}}"
-		]
-	},
-
-
-	"StoreCounterFormats":{
+	"StoreCounterFormats{}":{
 		"prefix":"StoreCounterFormats",
 		"body":[
 			"\\StoreCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
@@ -489,15 +385,7 @@
 	},
 
 
-	"StoreCounterFormats":{
-		"prefix":"StoreCounterFormats",
-		"body":[
-			"\\StoreCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
-	},
-
-
-	"AddCounterFormats":{
+	"AddCounterFormats{}":{
 		"prefix":"AddCounterFormats",
 		"body":[
 			"\\AddCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
@@ -505,15 +393,7 @@
 	},
 
 
-	"AddCounterFormats":{
-		"prefix":"AddCounterFormats",
-		"body":[
-			"\\AddCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
-	},
-
-
-	"RemoveCounterFormats":{
+	"RemoveCounterFormats{}":{
 		"prefix":"RemoveCounterFormats",
 		"body":[
 			"\\RemoveCounterFormats{${1:shorthand1,shorthand2,...}}"
@@ -521,7 +401,7 @@
 	},
 
 
-	"DeclareAssociatedCounters":{
+	"DeclareAssociatedCounters{}{}":{
 		"prefix":"DeclareAssociatedCounters",
 		"body":[
 			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
@@ -529,15 +409,7 @@
 	},
 
 
-	"DeclareAssociatedCounters":{
-		"prefix":"DeclareAssociatedCounters",
-		"body":[
-			"\\DeclareAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"AddAssociatedCounters":{
+	"AddAssociatedCounters{}{}":{
 		"prefix":"AddAssociatedCounters",
 		"body":[
 			"\\AddAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
@@ -545,15 +417,7 @@
 	},
 
 
-	"AddAssociatedCounters":{
-		"prefix":"AddAssociatedCounters",
-		"body":[
-			"\\AddAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"RemoveAssociatedCounter":{
+	"RemoveAssociatedCounter{}{}":{
 		"prefix":"RemoveAssociatedCounter",
 		"body":[
 			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:assoc counter}}"
@@ -561,7 +425,7 @@
 	},
 
 
-	"RemoveAssociatedCounters":{
+	"RemoveAssociatedCounters{}{}":{
 		"prefix":"RemoveAssociatedCounters",
 		"body":[
 			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
@@ -569,7 +433,7 @@
 	},
 
 
-	"ClearAssociatedCounters":{
+	"ClearAssociatedCounters{}":{
 		"prefix":"ClearAssociatedCounters",
 		"body":[
 			"\\ClearAssociatedCounters{${1:driver counter}}"
@@ -577,7 +441,7 @@
 	},
 
 
-	"DeclareTotalAssociatedCounters":{
+	"DeclareTotalAssociatedCounters{}{}":{
 		"prefix":"DeclareTotalAssociatedCounters",
 		"body":[
 			"\\DeclareTotalAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
@@ -585,7 +449,7 @@
 	},
 
 
-	"AddDriverCounter":{
+	"AddDriverCounter{}":{
 		"prefix":"AddDriverCounter",
 		"body":[
 			"\\AddDriverCounter{${1:driver counter}}"
@@ -593,7 +457,7 @@
 	},
 
 
-	"RemoveDriverCounter":{
+	"RemoveDriverCounter{}":{
 		"prefix":"RemoveDriverCounter",
 		"body":[
 			"\\RemoveDriverCounter{${1:driver counter}}"
@@ -609,7 +473,7 @@
 	},
 
 
-	"IsAssociatedToCounter":{
+	"IsAssociatedToCounter{}{}{}{}":{
 		"prefix":"IsAssociatedToCounter",
 		"body":[
 			"\\IsAssociatedToCounter{${1:driver counter}}{${2:assoc counter}}{${3:true}}{${4:false}}"
@@ -617,7 +481,7 @@
 	},
 
 
-	"GetDriverCounter":{
+	"GetDriverCounter{}":{
 		"prefix":"GetDriverCounter",
 		"body":[
 			"\\GetDriverCounter{${1:counter}}"
@@ -625,7 +489,7 @@
 	},
 
 
-	"IsAssociatedCounter":{
+	"IsAssociatedCounter{}{}{}":{
 		"prefix":"IsAssociatedCounter",
 		"body":[
 			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
@@ -633,7 +497,7 @@
 	},
 
 
-	"IsDriverCounter":{
+	"IsDriverCounter{}{}{}":{
 		"prefix":"IsDriverCounter",
 		"body":[
 			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
@@ -641,7 +505,7 @@
 	},
 
 
-	"DeclareCoupledCounters":{
+	"DeclareCoupledCounters{}":{
 		"prefix":"DeclareCoupledCounters",
 		"body":[
 			"\\DeclareCoupledCounters{${1:counter1,counter2,...}}"
@@ -649,15 +513,7 @@
 	},
 
 
-	"DeclareCoupledCounters":{
-		"prefix":"DeclareCoupledCounters",
-		"body":[
-			"\\DeclareCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"DeclareCoupledCountersGroup":{
+	"DeclareCoupledCountersGroup{}":{
 		"prefix":"DeclareCoupledCountersGroup",
 		"body":[
 			"\\DeclareCoupledCountersGroup{${1:group name}}"
@@ -665,7 +521,7 @@
 	},
 
 
-	"RemoveCoupledCounters":{
+	"RemoveCoupledCounters{}":{
 		"prefix":"RemoveCoupledCounters",
 		"body":[
 			"\\RemoveCoupledCounters{${1:counter1,counter2,...}}"
@@ -673,15 +529,7 @@
 	},
 
 
-	"RemoveCoupledCounters":{
-		"prefix":"RemoveCoupledCounters",
-		"body":[
-			"\\RemoveCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"AddCoupledCounters":{
+	"AddCoupledCounters{}":{
 		"prefix":"AddCoupledCounters",
 		"body":[
 			"\\AddCoupledCounters{${1:counter1,counter2,...}}"
@@ -689,15 +537,7 @@
 	},
 
 
-	"AddCoupledCounters":{
-		"prefix":"AddCoupledCounters",
-		"body":[
-			"\\AddCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"ClearCoupledCounters":{
+	"ClearCoupledCounters{}":{
 		"prefix":"ClearCoupledCounters",
 		"body":[
 			"\\ClearCoupledCounters{${1:options%keyvals}}"
@@ -713,7 +553,7 @@
 	},
 
 
-	"IsCoupledCounterTF":{
+	"IsCoupledCounterTF{}{}{}":{
 		"prefix":"IsCoupledCounterTF",
 		"body":[
 			"\\IsCoupledCounterTF{${1:counter}}{${2:true}}{${3:false}}"
@@ -721,7 +561,7 @@
 	},
 
 
-	"IsCoupledCounterT":{
+	"IsCoupledCounterT{}{}":{
 		"prefix":"IsCoupledCounterT",
 		"body":[
 			"\\IsCoupledCounterT{${1:counter}}{${2:true}}"
@@ -729,7 +569,7 @@
 	},
 
 
-	"IsCoupledCounterF":{
+	"IsCoupledCounterF{}{}":{
 		"prefix":"IsCoupledCounterF",
 		"body":[
 			"\\IsCoupledCounterF{${1:counter}}{${2:false}}"
@@ -737,7 +577,7 @@
 	},
 
 
-	"DeclarePeriodicCounter":{
+	"DeclarePeriodicCounter{}{}":{
 		"prefix":"DeclarePeriodicCounter",
 		"body":[
 			"\\DeclarePeriodicCounter{${1:counter}}{${2:threshold value}}"
@@ -745,7 +585,7 @@
 	},
 
 
-	"AddPeriodicCounter":{
+	"AddPeriodicCounter{}{}":{
 		"prefix":"AddPeriodicCounter",
 		"body":[
 			"\\AddPeriodicCounter{${1:counter}}{${2:threshold value}}"
@@ -753,7 +593,7 @@
 	},
 
 
-	"RemovePeriodicCounter":{
+	"RemovePeriodicCounter{}":{
 		"prefix":"RemovePeriodicCounter",
 		"body":[
 			"\\RemovePeriodicCounter{${1:counter}}"
@@ -761,7 +601,7 @@
 	},
 
 
-	"RemovePeriodicCounter":{
+	"RemovePeriodicCounter{}":{
 		"prefix":"RemovePeriodicCounter",
 		"body":[
 			"\\RemovePeriodicCounter{${1:counter}}"
@@ -777,15 +617,7 @@
 	},
 
 
-	"RemoveAllPeriodicCounters":{
-		"prefix":"RemoveAllPeriodicCounters",
-		"body":[
-			"\\RemoveAllPeriodicCounters[${1:options%keyvals}]"
-		]
-	},
-
-
-	"ChangePeriodicCounterCondition":{
+	"ChangePeriodicCounterCondition{}{}":{
 		"prefix":"ChangePeriodicCounterCondition",
 		"body":[
 			"\\ChangePeriodicCounterCondition{${1:counter}}{${2:threshold value}}"
@@ -793,15 +625,7 @@
 	},
 
 
-	"ChangePeriodicCounterCondition":{
-		"prefix":"ChangePeriodicCounterCondition",
-		"body":[
-			"\\ChangePeriodicCounterCondition[${3:options%keyvals}]{${1:counter}}{${2:threshold value}}"
-		]
-	},
-
-
-	"IsPeriodicCounterTF":{
+	"IsPeriodicCounterTF{}{}{}":{
 		"prefix":"IsPeriodicCounterTF",
 		"body":[
 			"\\IsPeriodicCounterTF{${1:counter}}{${2:true}}{${3:false}}"
@@ -809,7 +633,7 @@
 	},
 
 
-	"IsPeriodicCounterT":{
+	"IsPeriodicCounterT{}{}":{
 		"prefix":"IsPeriodicCounterT",
 		"body":[
 			"\\IsPeriodicCounterT{${1:counter}}{${2:true}}"
@@ -817,7 +641,7 @@
 	},
 
 
-	"IsPeriodicCounterF":{
+	"IsPeriodicCounterF{}{}":{
 		"prefix":"IsPeriodicCounterF",
 		"body":[
 			"\\IsPeriodicCounterF{${1:counter}}{${2:false}}"
@@ -825,7 +649,7 @@
 	},
 
 
-	"SuspendCounters":{
+	"SuspendCounters{}":{
 		"prefix":"SuspendCounters",
 		"body":[
 			"\\SuspendCounters{${1:counter1,counter2,...}}"
@@ -833,7 +657,7 @@
 	},
 
 
-	"CascadeSuspendCounters":{
+	"CascadeSuspendCounters{}":{
 		"prefix":"CascadeSuspendCounters",
 		"body":[
 			"\\CascadeSuspendCounters{${1:counter1,counter2,...}}"
@@ -841,7 +665,7 @@
 	},
 
 
-	"ResumeSuspendedCounters":{
+	"ResumeSuspendedCounters{}":{
 		"prefix":"ResumeSuspendedCounters",
 		"body":[
 			"\\ResumeSuspendedCounters{${1:counter1,counter2,...}}"
@@ -857,7 +681,7 @@
 	},
 
 
-	"IsSuspendedCounter":{
+	"IsSuspendedCounter{}{}{}":{
 		"prefix":"IsSuspendedCounter",
 		"body":[
 			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
@@ -865,7 +689,7 @@
 	},
 
 
-	"RegisterTotalDocumentCounter":{
+	"RegisterTotalDocumentCounter{}":{
 		"prefix":"RegisterTotalDocumentCounter",
 		"body":[
 			"\\RegisterTotalDocumentCounter{${1:total counter}}"
@@ -873,15 +697,7 @@
 	},
 
 
-	"RegisterTotalDocumentCounter":{
-		"prefix":"RegisterTotalDocumentCounter",
-		"body":[
-			"\\RegisterTotalDocumentCounter[${2:options%keyvals}]{${1:total counter}}"
-		]
-	},
-
-
-	"TotalCounterInternalName":{
+	"TotalCounterInternalName{}":{
 		"prefix":"TotalCounterInternalName",
 		"body":[
 			"\\TotalCounterInternalName{${1:counter}}"
@@ -889,7 +705,7 @@
 	},
 
 
-	"TotalCounterInternalNameExp":{
+	"TotalCounterInternalNameExp{}":{
 		"prefix":"TotalCounterInternalNameExp",
 		"body":[
 			"\\TotalCounterInternalNameExp{${1:counter}}"
@@ -897,7 +713,7 @@
 	},
 
 
-	"TotalValue":{
+	"TotalValue{}":{
 		"prefix":"TotalValue",
 		"body":[
 			"\\TotalValue{${1:counter}}"
@@ -905,7 +721,7 @@
 	},
 
 
-	"IsTotalCounterTF":{
+	"IsTotalCounterTF{}{}{}":{
 		"prefix":"IsTotalCounterTF",
 		"body":[
 			"\\IsTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
@@ -913,7 +729,7 @@
 	},
 
 
-	"IsTotalCounterT":{
+	"IsTotalCounterT{}{}":{
 		"prefix":"IsTotalCounterT",
 		"body":[
 			"\\IsTotalCounterT{${1:counter}}{${2:true}}"
@@ -921,7 +737,7 @@
 	},
 
 
-	"IsTotalCounterF":{
+	"IsTotalCounterF{}{}":{
 		"prefix":"IsTotalCounterF",
 		"body":[
 			"\\IsTotalCounterF{${1:counter}}{${2:false}}"
@@ -929,7 +745,7 @@
 	},
 
 
-	"NewTotalDocumentCounter":{
+	"NewTotalDocumentCounter{}":{
 		"prefix":"NewTotalDocumentCounter",
 		"body":[
 			"\\NewTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
@@ -937,15 +753,7 @@
 	},
 
 
-	"NewTotalDocumentCounter":{
-		"prefix":"NewTotalDocumentCounter",
-		"body":[
-			"\\NewTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
-		]
-	},
-
-
-	"DeclareTotalDocumentCounter":{
+	"DeclareTotalDocumentCounter{}":{
 		"prefix":"DeclareTotalDocumentCounter",
 		"body":[
 			"\\DeclareTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
@@ -953,15 +761,7 @@
 	},
 
 
-	"DeclareTotalDocumentCounter":{
-		"prefix":"DeclareTotalDocumentCounter",
-		"body":[
-			"\\DeclareTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
-		]
-	},
-
-
-	"IsSuperTotalCounterTF":{
+	"IsSuperTotalCounterTF{}{}{}":{
 		"prefix":"IsSuperTotalCounterTF",
 		"body":[
 			"\\IsSuperTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
@@ -969,7 +769,7 @@
 	},
 
 
-	"IsSuperTotalCounterT":{
+	"IsSuperTotalCounterT{}{}":{
 		"prefix":"IsSuperTotalCounterT",
 		"body":[
 			"\\IsSuperTotalCounterT{${1:counter}}{${2:true}}"
@@ -977,7 +777,7 @@
 	},
 
 
-	"IsSuperTotalCounterF":{
+	"IsSuperTotalCounterF{}{}":{
 		"prefix":"IsSuperTotalCounterF",
 		"body":[
 			"\\IsSuperTotalCounterF{${1:counter}}{${2:false}}"
@@ -985,23 +785,7 @@
 	},
 
 
-	"label":{
-		"prefix":"label",
-		"body":[
-			"\\label{${1:key}}[${2:options%keyvals}]"
-		]
-	},
-
-
-	"label":{
-		"prefix":"label",
-		"body":[
-			"\\label[${2:cleveref overrule}]{${1:key}}[${3:options%keyvals}]"
-		]
-	},
-
-
-	"LaTeXLabel":{
+	"LaTeXLabel{}":{
 		"prefix":"LaTeXLabel",
 		"body":[
 			"\\LaTeXLabel{${1:key}}"
@@ -1009,15 +793,7 @@
 	},
 
 
-	"LaTeXLabel":{
-		"prefix":"LaTeXLabel",
-		"body":[
-			"\\LaTeXLabel[${2:cleveref overrule}]{${1:key}}"
-		]
-	},
-
-
-	"RegisterPreLabelHook":{
+	"RegisterPreLabelHook{}":{
 		"prefix":"RegisterPreLabelHook",
 		"body":[
 			"\\RegisterPreLabelHook{${1:cmd1,cmd2,...}}"
@@ -1025,7 +801,7 @@
 	},
 
 
-	"RegisterPostLabelHook":{
+	"RegisterPostLabelHook{}":{
 		"prefix":"RegisterPostLabelHook",
 		"body":[
 			"\\RegisterPostLabelHook{${1:cmd1,cmd2,...}}"
@@ -1049,34 +825,10 @@
 	},
 
 
-	"AddBackupCounters":{
-		"prefix":"AddBackupCounters",
-		"body":[
-			"\\AddBackupCounters[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"AddFeature":{
-		"prefix":"AddFeature",
-		"body":[
-			"\\AddFeature[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"AddLanguageMappings":{
+	"AddLanguageMappings{}{}":{
 		"prefix":"AddLanguageMappings",
 		"body":[
 			"\\AddLanguageMappings{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"AssignBackupCounters":{
-		"prefix":"AssignBackupCounters",
-		"body":[
-			"\\AssignBackupCounters[${2:options}]{${1:arg}}"
 		]
 	},
 
@@ -1089,46 +841,6 @@
 	},
 
 
-	"BackupCounterGroup":{
-		"prefix":"BackupCounterGroup",
-		"body":[
-			"\\BackupCounterGroup[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"BackupCounterValues":{
-		"prefix":"BackupCounterValues",
-		"body":[
-			"\\BackupCounterValues[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"ClearBackupCounterGroups":{
-		"prefix":"ClearBackupCounterGroups",
-		"body":[
-			"\\ClearBackupCounterGroups[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"ClearBackupState":{
-		"prefix":"ClearBackupState",
-		"body":[
-			"\\ClearBackupState[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"ClearCounterBackupState":{
-		"prefix":"ClearCounterBackupState",
-		"body":[
-			"\\ClearCounterBackupState[${3:options}]{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
 	"ClearCounterFormats":{
 		"prefix":"ClearCounterFormats",
 		"body":[
@@ -1137,7 +849,7 @@
 	},
 
 
-	"DeclareBackupCountersGroupName":{
+	"DeclareBackupCountersGroupName{}":{
 		"prefix":"DeclareBackupCountersGroupName",
 		"body":[
 			"\\DeclareBackupCountersGroupName{${1:arg}}"
@@ -1145,7 +857,7 @@
 	},
 
 
-	"DeclareLanguageMappings":{
+	"DeclareLanguageMappings{}{}":{
 		"prefix":"DeclareLanguageMappings",
 		"body":[
 			"\\DeclareLanguageMappings{${1:arg1}}{${2:arg2}}"
@@ -1153,18 +865,10 @@
 	},
 
 
-	"DeclareLanguageMap":{
+	"DeclareLanguageMap{}":{
 		"prefix":"DeclareLanguageMap",
 		"body":[
 			"\\DeclareLanguageMap{${1:arg}}"
-		]
-	},
-
-
-	"DeleteBackupCounterGroups":{
-		"prefix":"DeleteBackupCounterGroups",
-		"body":[
-			"\\DeleteBackupCounterGroups[${2:options}]{${1:arg}}"
 		]
 	},
 
@@ -1177,7 +881,7 @@
 	},
 
 
-	"EnableNumberofrunsTF":{
+	"EnableNumberofrunsTF{}{}":{
 		"prefix":"EnableNumberofrunsTF",
 		"body":[
 			"\\EnableNumberofrunsTF{${1:arg1}}{${2:arg2}}"
@@ -1193,7 +897,7 @@
 	},
 
 
-	"GetParentCounterChain":{
+	"GetParentCounterChain{}":{
 		"prefix":"GetParentCounterChain",
 		"body":[
 			"\\GetParentCounterChain{${1:arg}}"
@@ -1201,7 +905,7 @@
 	},
 
 
-	"IfExistsDriverCounterList":{
+	"IfExistsDriverCounterList{}{}{}":{
 		"prefix":"IfExistsDriverCounterList",
 		"body":[
 			"\\IfExistsDriverCounterList{${1:name}}{${2:true}}{${3:false}}"
@@ -1209,7 +913,7 @@
 	},
 
 
-	"IsBackupCounterF":{
+	"IsBackupCounterF{}{}":{
 		"prefix":"IsBackupCounterF",
 		"body":[
 			"\\IsBackupCounterF{${1:name}}{${2:false}}"
@@ -1217,7 +921,7 @@
 	},
 
 
-	"IsBackupCounterGroupF":{
+	"IsBackupCounterGroupF{}{}":{
 		"prefix":"IsBackupCounterGroupF",
 		"body":[
 			"\\IsBackupCounterGroupF{${1:name}}{${2:false}}"
@@ -1225,7 +929,7 @@
 	},
 
 
-	"IsBackupCounterGroupTF":{
+	"IsBackupCounterGroupTF{}{}{}":{
 		"prefix":"IsBackupCounterGroupTF",
 		"body":[
 			"\\IsBackupCounterGroupTF{${1:name}}{${2:true}}{${3:false}}"
@@ -1233,7 +937,7 @@
 	},
 
 
-	"IsBackupCounterGroupT":{
+	"IsBackupCounterGroupT{}{}":{
 		"prefix":"IsBackupCounterGroupT",
 		"body":[
 			"\\IsBackupCounterGroupT{${1:name}}{${2:true}}"
@@ -1241,7 +945,7 @@
 	},
 
 
-	"IsBackupCounterTF":{
+	"IsBackupCounterTF{}{}{}":{
 		"prefix":"IsBackupCounterTF",
 		"body":[
 			"\\IsBackupCounterTF{${1:name}}{${2:true}}{${3:false}}"
@@ -1249,7 +953,7 @@
 	},
 
 
-	"IsBackupCounterT":{
+	"IsBackupCounterT{}{}":{
 		"prefix":"IsBackupCounterT",
 		"body":[
 			"\\IsBackupCounterT{${1:name}}{${2:true}}"
@@ -1257,7 +961,7 @@
 	},
 
 
-	"IsBackupStateF":{
+	"IsBackupStateF{}{}":{
 		"prefix":"IsBackupStateF",
 		"body":[
 			"\\IsBackupStateF{${1:name}}{${2:false}}"
@@ -1265,7 +969,7 @@
 	},
 
 
-	"IsBackupStateTF":{
+	"IsBackupStateTF{}{}{}":{
 		"prefix":"IsBackupStateTF",
 		"body":[
 			"\\IsBackupStateTF{${1:name}}{${2:true}}{${3:false}}"
@@ -1273,7 +977,7 @@
 	},
 
 
-	"IsBackupStateT":{
+	"IsBackupStateT{}{}":{
 		"prefix":"IsBackupStateT",
 		"body":[
 			"\\IsBackupStateT{${1:name}}{${2:true}}"
@@ -1281,7 +985,7 @@
 	},
 
 
-	"NewContainer":{
+	"NewContainer{}":{
 		"prefix":"NewContainer",
 		"body":[
 			"\\NewContainer{${1:name}}"
@@ -1289,15 +993,7 @@
 	},
 
 
-	"NewCounterHierarchy":{
-		"prefix":"NewCounterHierarchy",
-		"body":[
-			"\\NewCounterHierarchy[${2:options}]{${1:name}}"
-		]
-	},
-
-
-	"PrettyPrintCounterName":{
+	"PrettyPrintCounterName{}{}":{
 		"prefix":"PrettyPrintCounterName",
 		"body":[
 			"\\PrettyPrintCounterName{${1:arg1}}{${2:arg2}}"
@@ -1321,31 +1017,7 @@
 	},
 
 
-	"RemoveCountersFromBackupGroup":{
-		"prefix":"RemoveCountersFromBackupGroup",
-		"body":[
-			"\\RemoveCountersFromBackupGroup[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"RemoveFeature":{
-		"prefix":"RemoveFeature",
-		"body":[
-			"\\RemoveFeature[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"RestoreBackupCounterGroup":{
-		"prefix":"RestoreBackupCounterGroup",
-		"body":[
-			"\\RestoreBackupCounterGroup[${2:options}]{${1:arg}}"
-		]
-	},
-
-
-	"RunLabelHooks":{
+	"RunLabelHooks{}":{
 		"prefix":"RunLabelHooks",
 		"body":[
 			"\\RunLabelHooks{${1:arg}}"
@@ -1353,7 +1025,7 @@
 	},
 
 
-	"RunPostLabelHooks":{
+	"RunPostLabelHooks{}":{
 		"prefix":"RunPostLabelHooks",
 		"body":[
 			"\\RunPostLabelHooks{${1:arg}}"
@@ -1361,7 +1033,7 @@
 	},
 
 
-	"RunPreLabelHooks":{
+	"RunPreLabelHooks{}":{
 		"prefix":"RunPreLabelHooks",
 		"body":[
 			"\\RunPreLabelHooks{${1:arg}}"
@@ -1377,7 +1049,7 @@
 	},
 
 
-	"ShowAssociatedCountersList":{
+	"ShowAssociatedCountersList{}":{
 		"prefix":"ShowAssociatedCountersList",
 		"body":[
 			"\\ShowAssociatedCountersList{${1:arg}}"
@@ -1401,7 +1073,7 @@
 	},
 
 
-	"ShowLanguageMappings":{
+	"ShowLanguageMappings{}":{
 		"prefix":"ShowLanguageMappings",
 		"body":[
 			"\\ShowLanguageMappings{${1:arg}}"
@@ -1433,10 +1105,338 @@
 	},
 
 
-	"showresetlist":{
+	"showresetlist{}":{
 		"prefix":"showresetlist",
 		"body":[
 			"\\showresetlist{${1:arg}}"
+		]
+	},
+
+
+	"ClearCounterResetList*{}":{
+		"prefix":"*ClearCounterResetList",
+		"body":[
+			"\\ClearCounterResetList*{${1:driver counter}}"
+		]
+	},
+
+
+	"CounterWithin*{}{}":{
+		"prefix":"*CounterWithin",
+		"body":[
+			"\\CounterWithin*{${1:counter1,counter2,...}}{${2:driver counter}}"
+		]
+	},
+
+
+	"CounterWithout*{}{}":{
+		"prefix":"*CounterWithout",
+		"body":[
+			"\\CounterWithout*{${1:counter1,counter2,...}}{${2:driver counter}}"
+		]
+	},
+
+
+	"addtocounter{}{}[]":{
+		"prefix":"addtocounter",
+		"body":[
+			"\\addtocounter{${1:counter}}{${2:value}}[${3:options%keyvals}]"
+		]
+	},
+
+
+	"NewDocumentCounter{}[]":{
+		"prefix":"NewDocumentCounter",
+		"body":[
+			"\\NewDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
+		]
+	},
+
+
+	"NewDocumentCounter[]{}":{
+		"prefix":"NewDocumentCounter",
+		"body":[
+			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
+		]
+	},
+
+
+	"NewDocumentCounter[]{}[]":{
+		"prefix":"NewDocumentCounter",
+		"body":[
+			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
+		]
+	},
+
+
+	"DeclareDocumentCounter{}[]":{
+		"prefix":"DeclareDocumentCounter",
+		"body":[
+			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
+		]
+	},
+
+
+	"DeclareDocumentCounter[]{}":{
+		"prefix":"DeclareDocumentCounter",
+		"body":[
+			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
+		]
+	},
+
+
+	"DeclareDocumentCounter[]{}[]":{
+		"prefix":"DeclareDocumentCounter",
+		"body":[
+			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
+		]
+	},
+
+
+	"SetDocumentCounter[]{}{}":{
+		"prefix":"SetDocumentCounter",
+		"body":[
+			"\\SetDocumentCounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
+		]
+	},
+
+
+	"DisplayResetList[]{}":{
+		"prefix":"DisplayResetList",
+		"body":[
+			"\\DisplayResetList[${2:separator}]{${1:resetting counter}}"
+		]
+	},
+
+
+	"CounterFormat[]{}":{
+		"prefix":"CounterFormat",
+		"body":[
+			"\\CounterFormat[${2:options%keyvals}]{${1:counter1!format1,counter2!format2,...}}"
+		]
+	},
+
+
+	"StoreCounterFormats[]{}":{
+		"prefix":"StoreCounterFormats",
+		"body":[
+			"\\StoreCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
+		]
+	},
+
+
+	"AddCounterFormats[]{}":{
+		"prefix":"AddCounterFormats",
+		"body":[
+			"\\AddCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
+		]
+	},
+
+
+	"DeclareAssociatedCounters[]{}{}":{
+		"prefix":"DeclareAssociatedCounters",
+		"body":[
+			"\\DeclareAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
+		]
+	},
+
+
+	"AddAssociatedCounters[]{}{}":{
+		"prefix":"AddAssociatedCounters",
+		"body":[
+			"\\AddAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
+		]
+	},
+
+
+	"DeclareCoupledCounters[]{}":{
+		"prefix":"DeclareCoupledCounters",
+		"body":[
+			"\\DeclareCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
+		]
+	},
+
+
+	"RemoveCoupledCounters[]{}":{
+		"prefix":"RemoveCoupledCounters",
+		"body":[
+			"\\RemoveCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
+		]
+	},
+
+
+	"AddCoupledCounters[]{}":{
+		"prefix":"AddCoupledCounters",
+		"body":[
+			"\\AddCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
+		]
+	},
+
+
+	"RemoveAllPeriodicCounters[]":{
+		"prefix":"RemoveAllPeriodicCounters",
+		"body":[
+			"\\RemoveAllPeriodicCounters[${1:options%keyvals}]"
+		]
+	},
+
+
+	"ChangePeriodicCounterCondition[]{}{}":{
+		"prefix":"ChangePeriodicCounterCondition",
+		"body":[
+			"\\ChangePeriodicCounterCondition[${3:options%keyvals}]{${1:counter}}{${2:threshold value}}"
+		]
+	},
+
+
+	"RegisterTotalDocumentCounter[]{}":{
+		"prefix":"RegisterTotalDocumentCounter",
+		"body":[
+			"\\RegisterTotalDocumentCounter[${2:options%keyvals}]{${1:total counter}}"
+		]
+	},
+
+
+	"NewTotalDocumentCounter[]{}":{
+		"prefix":"NewTotalDocumentCounter",
+		"body":[
+			"\\NewTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
+		]
+	},
+
+
+	"DeclareTotalDocumentCounter[]{}":{
+		"prefix":"DeclareTotalDocumentCounter",
+		"body":[
+			"\\DeclareTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
+		]
+	},
+
+
+	"label{}[]":{
+		"prefix":"label",
+		"body":[
+			"\\label{${1:key}}[${2:options%keyvals}]"
+		]
+	},
+
+
+	"label[]{}[]":{
+		"prefix":"label",
+		"body":[
+			"\\label[${2:cleveref overrule}]{${1:key}}[${3:options%keyvals}]"
+		]
+	},
+
+
+	"LaTeXLabel[]{}":{
+		"prefix":"LaTeXLabel",
+		"body":[
+			"\\LaTeXLabel[${2:cleveref overrule}]{${1:key}}"
+		]
+	},
+
+
+	"AddBackupCounters[]{}":{
+		"prefix":"AddBackupCounters",
+		"body":[
+			"\\AddBackupCounters[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"AddFeature[]{}":{
+		"prefix":"AddFeature",
+		"body":[
+			"\\AddFeature[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"AssignBackupCounters[]{}":{
+		"prefix":"AssignBackupCounters",
+		"body":[
+			"\\AssignBackupCounters[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"BackupCounterGroup[]{}":{
+		"prefix":"BackupCounterGroup",
+		"body":[
+			"\\BackupCounterGroup[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"BackupCounterValues[]{}":{
+		"prefix":"BackupCounterValues",
+		"body":[
+			"\\BackupCounterValues[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"ClearBackupCounterGroups[]{}":{
+		"prefix":"ClearBackupCounterGroups",
+		"body":[
+			"\\ClearBackupCounterGroups[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"ClearBackupState[]{}":{
+		"prefix":"ClearBackupState",
+		"body":[
+			"\\ClearBackupState[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"ClearCounterBackupState[]{}{}":{
+		"prefix":"ClearCounterBackupState",
+		"body":[
+			"\\ClearCounterBackupState[${3:options}]{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"DeleteBackupCounterGroups[]{}":{
+		"prefix":"DeleteBackupCounterGroups",
+		"body":[
+			"\\DeleteBackupCounterGroups[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"NewCounterHierarchy[]{}":{
+		"prefix":"NewCounterHierarchy",
+		"body":[
+			"\\NewCounterHierarchy[${2:options}]{${1:name}}"
+		]
+	},
+
+
+	"RemoveCountersFromBackupGroup[]{}":{
+		"prefix":"RemoveCountersFromBackupGroup",
+		"body":[
+			"\\RemoveCountersFromBackupGroup[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"RemoveFeature[]{}":{
+		"prefix":"RemoveFeature",
+		"body":[
+			"\\RemoveFeature[${2:options}]{${1:arg}}"
+		]
+	},
+
+
+	"RestoreBackupCounterGroup[]{}":{
+		"prefix":"RestoreBackupCounterGroup",
+		"body":[
+			"\\RestoreBackupCounterGroup[${2:options}]{${1:arg}}"
 		]
 	}
 }

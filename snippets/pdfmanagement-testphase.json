@@ -1,7 +1,7 @@
 {
 
 
-	"PDFManagementAdd":{
+	"PDFManagementAdd{}{}{}":{
 		"prefix":"PDFManagementAdd",
 		"body":[
 			"\\PDFManagementAdd{${1:resource path}}{${2:name}}{${3:value}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"AddToDocumentProperties":{
+	"AddToDocumentProperties{}{}":{
 		"prefix":"AddToDocumentProperties",
 		"body":[
 			"\\AddToDocumentProperties{${1:property}}{${2:value}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"AddToDocumentProperties":{
-		"prefix":"AddToDocumentProperties",
-		"body":[
-			"\\AddToDocumentProperties[${3:label}]{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"GetDocumentProperties":{
+	"GetDocumentProperties{}":{
 		"prefix":"GetDocumentProperties",
 		"body":[
 			"\\GetDocumentProperties{${1:label/property}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"url":{
-		"prefix":"url",
-		"body":[
-			"\\url[${2:options%keyvals}]{${1:URL}}"
-		]
-	},
-
-
-	"hrefurl":{
+	"hrefurl{}{}":{
 		"prefix":"hrefurl",
 		"body":[
 			"\\hrefurl{${1:URL}}{${2:text}}"
@@ -57,15 +41,7 @@
 	},
 
 
-	"hrefurl":{
-		"prefix":"hrefurl",
-		"body":[
-			"\\hrefurl[${3:options%keyvals}]{${1:URL}}{${2:text}}"
-		]
-	},
-
-
-	"hrefpdf":{
+	"hrefpdf{}{}":{
 		"prefix":"hrefpdf",
 		"body":[
 			"\\hrefpdf{${1:file}}{${2:text}}"
@@ -73,15 +49,7 @@
 	},
 
 
-	"hrefpdf":{
-		"prefix":"hrefpdf",
-		"body":[
-			"\\hrefpdf[${3:options%keyvals}]{${1:file}}{${2:text}}"
-		]
-	},
-
-
-	"hrefrun":{
+	"hrefrun{}{}":{
 		"prefix":"hrefrun",
 		"body":[
 			"\\hrefrun{${1:launch link%URL}}{${2:text}}"
@@ -89,7 +57,39 @@
 	},
 
 
-	"hrefrun":{
+	"AddToDocumentProperties[]{}{}":{
+		"prefix":"AddToDocumentProperties",
+		"body":[
+			"\\AddToDocumentProperties[${3:label}]{${1:property}}{${2:value}}"
+		]
+	},
+
+
+	"url[]{}":{
+		"prefix":"url",
+		"body":[
+			"\\url[${2:options%keyvals}]{${1:URL}}"
+		]
+	},
+
+
+	"hrefurl[]{}{}":{
+		"prefix":"hrefurl",
+		"body":[
+			"\\hrefurl[${3:options%keyvals}]{${1:URL}}{${2:text}}"
+		]
+	},
+
+
+	"hrefpdf[]{}{}":{
+		"prefix":"hrefpdf",
+		"body":[
+			"\\hrefpdf[${3:options%keyvals}]{${1:file}}{${2:text}}"
+		]
+	},
+
+
+	"hrefrun[]{}{}":{
 		"prefix":"hrefrun",
 		"body":[
 			"\\hrefrun[${3:options%keyvals}]{${1:launch link%URL}}{${2:text}}"

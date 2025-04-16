@@ -17,7 +17,7 @@
 	},
 
 
-	"newthought":{
+	"newthought{}":{
 		"prefix":"newthought",
 		"body":[
 			"\\newthought{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"publisher":{
+	"publisher{}":{
 		"prefix":"publisher",
 		"body":[
 			"\\publisher{${1:name}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"sidecite":{
+	"sidecite{}":{
 		"prefix":"sidecite",
 		"body":[
 			"\\sidecite{${1:bibid}}"
@@ -49,23 +49,7 @@
 	},
 
 
-	"sidecite":{
-		"prefix":"sidecite",
-		"body":[
-			"\\sidecite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"sidecite":{
-		"prefix":"sidecite",
-		"body":[
-			"\\sidecite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"thesis":{
+	"thesis{}":{
 		"prefix":"thesis",
 		"body":[
 			"\\thesis{${1:text}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -209,7 +193,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -241,11 +225,27 @@
 	},
 
 
+	"sidecite[]{}":{
+		"prefix":"sidecite",
+		"body":[
+			"\\sidecite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"sidecite[][]{}":{
+		"prefix":"sidecite",
+		"body":[
+			"\\sidecite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
 	"fullwidth":{
 		"prefix":"fullwidth",
 		"body":[
 			"\\begin{fullwidth}",
-			"\t$1",
+				"\t$1",
 			"\\end{fullwidth}"
 		]
 	}

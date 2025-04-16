@@ -1,7 +1,7 @@
 {
 
 
-	"sympy":{
+	"sympy{}":{
 		"prefix":"sympy",
 		"body":[
 			"\\sympy{${1:Sympy code%definition}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"sympyplot":{
+	"sympyplot{}":{
 		"prefix":"sympyplot",
 		"body":[
 			"\\sympyplot{${1:graphics obj, keyword args%definition}}"
-		]
-	},
-
-
-	"sympyplot":{
-		"prefix":"sympyplot",
-		"body":[
-			"\\sympyplot[${2:options%keyvals}]{${1:graphics obj, keyword args%definition}}"
-		]
-	},
-
-
-	"sympyplot":{
-		"prefix":"sympyplot",
-		"body":[
-			"\\sympyplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args%definition}}"
 		]
 	},
 
@@ -49,22 +33,18 @@
 	},
 
 
-	"sympyverbatim":{
-		"prefix":"sympyverbatim",
+	"sympyplot[]{}":{
+		"prefix":"sympyplot",
 		"body":[
-			"\\begin{sympyverbatim}",
-			"\t$1",
-			"\\end{sympyverbatim}"
+			"\\sympyplot[${2:options%keyvals}]{${1:graphics obj, keyword args%definition}}"
 		]
 	},
 
 
-	"comment":{
-		"prefix":"comment",
+	"sympyplot[][]{}":{
+		"prefix":"sympyplot",
 		"body":[
-			"\\begin{comment}",
-			"\t$1",
-			"\\end{comment}"
+			"\\sympyplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args%definition}}"
 		]
 	},
 
@@ -73,7 +53,7 @@
 		"prefix":"sympyblock",
 		"body":[
 			"\\begin{sympyblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{sympyblock}"
 		]
 	},
@@ -83,8 +63,28 @@
 		"prefix":"sympysilent",
 		"body":[
 			"\\begin{sympysilent}",
-			"\t$1",
+				"\t$1",
 			"\\end{sympysilent}"
+		]
+	},
+
+
+	"sympyverbatim":{
+		"prefix":"sympyverbatim",
+		"body":[
+			"\\begin{sympyverbatim}",
+				"\t$1",
+			"\\end{sympyverbatim}"
+		]
+	},
+
+
+	"comment":{
+		"prefix":"comment",
+		"body":[
+			"\\begin{comment}",
+				"\t$1",
+			"\\end{comment}"
 		]
 	}
 }

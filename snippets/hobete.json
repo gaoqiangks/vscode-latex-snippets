@@ -17,7 +17,7 @@
 	},
 
 
-	"mylogo":{
+	"mylogo{}":{
 		"prefix":"mylogo",
 		"body":[
 			"\\mylogo{${1:graphics code}}"
@@ -33,14 +33,6 @@
 	},
 
 
-	"sectionpage":{
-		"prefix":"sectionpage",
-		"body":[
-			"\\sectionpage[${1:options%keyvals}]"
-		]
-	},
-
-
 	"printframelist":{
 		"prefix":"printframelist",
 		"body":[
@@ -49,7 +41,7 @@
 	},
 
 
-	"HohenheimLogoKlein":{
+	"HohenheimLogoKlein{}":{
 		"prefix":"HohenheimLogoKlein",
 		"body":[
 			"\\HohenheimLogoKlein{${1:imagefile}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"HohenheimLogoLang":{
+	"HohenheimLogoLang{}":{
 		"prefix":"HohenheimLogoLang",
 		"body":[
 			"\\HohenheimLogoLang{${1:imagefile}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"inserthotpwokurz":{
+	"inserthotpwokurz{}":{
 		"prefix":"inserthotpwokurz",
 		"body":[
 			"\\inserthotpwokurz{${1:content%text}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"inserthotp":{
+	"inserthotp{}":{
 		"prefix":"inserthotp",
 		"body":[
 			"\\inserthotp{${1:content%text}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"HohenheimFancyTitle":{
+	"HohenheimFancyTitle{}":{
 		"prefix":"HohenheimFancyTitle",
 		"body":[
 			"\\HohenheimFancyTitle{${1:text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"posteremail":{
+	"posteremail{}":{
 		"prefix":"posteremail",
 		"body":[
 			"\\posteremail{${1:email%URL}}"
@@ -129,10 +121,18 @@
 	},
 
 
-	"posterwebsite":{
+	"posterwebsite{}":{
 		"prefix":"posterwebsite",
 		"body":[
 			"\\posterwebsite{${1:URL}}"
+		]
+	},
+
+
+	"sectionpage[]":{
+		"prefix":"sectionpage",
+		"body":[
+			"\\sectionpage[${1:options%keyvals}]"
 		]
 	},
 
@@ -141,7 +141,7 @@
 		"prefix":"posterblock",
 		"body":[
 			"\\begin{posterblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{posterblock}"
 		]
 	},
@@ -151,7 +151,7 @@
 		"prefix":"outerretainblock",
 		"body":[
 			"\\begin{outerretainblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{outerretainblock}"
 		]
 	}

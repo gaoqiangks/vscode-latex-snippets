@@ -1,7 +1,7 @@
 {
 
 
-	"egpwrite":{
+	"egpwrite{}":{
 		"prefix":"egpwrite",
 		"body":[
 			"\\egpwrite{${1:gnuplot code%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"egpprelude":{
+	"egpprelude{}":{
 		"prefix":"egpprelude",
 		"body":[
 			"\\egpprelude{${1:gnuplot prelude%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"egpaddtoprelude":{
+	"egpaddtoprelude{}":{
 		"prefix":"egpaddtoprelude",
 		"body":[
 			"\\egpaddtoprelude{${1:gnuplot code%definition}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"egpuse":{
+	"egpuse{}":{
 		"prefix":"egpuse",
 		"body":[
 			"\\egpuse{${1:name}}"
@@ -33,15 +33,7 @@
 	},
 
 
-	"egpuse":{
-		"prefix":"egpuse",
-		"body":[
-			"\\egpuse[${2:keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"egpfigprelude":{
+	"egpfigprelude{}":{
 		"prefix":"egpfigprelude",
 		"body":[
 			"\\egpfigprelude{${1:gnuplot prelude%definition}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"egpaddtofigprelude":{
+	"egpaddtofigprelude{}":{
 		"prefix":"egpaddtofigprelude",
 		"body":[
 			"\\egpaddtofigprelude{${1:gnuplot code%definition}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"egpfigepilog":{
+	"egpfigepilog{}":{
 		"prefix":"egpfigepilog",
 		"body":[
 			"\\egpfigepilog{${1:gnuplot epilog%definition}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"egpaddtofigepilog":{
+	"egpaddtofigepilog{}":{
 		"prefix":"egpaddtofigepilog",
 		"body":[
 			"\\egpaddtofigepilog{${1:gnuplot code%definition}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"egpcalc":{
+	"egpcalc{}":{
 		"prefix":"egpcalc",
 		"body":[
 			"\\egpcalc{${1:gnuplot expr%definition}}"
@@ -81,15 +73,7 @@
 	},
 
 
-	"egpcalc":{
-		"prefix":"egpcalc",
-		"body":[
-			"\\egpcalc[${2:name%definition}]{${1:gnuplot expr%definition}}"
-		]
-	},
-
-
-	"egpuseval":{
+	"egpuseval{}":{
 		"prefix":"egpuseval",
 		"body":[
 			"\\egpuseval{${1:name%definition}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"egpshowval":{
+	"egpshowval{}":{
 		"prefix":"egpshowval",
 		"body":[
 			"\\egpshowval{${1:gnuplot expr%definition}}"
@@ -105,15 +89,7 @@
 	},
 
 
-	"egpshowval":{
-		"prefix":"egpshowval",
-		"body":[
-			"\\egpshowval[${2:name%definition}]{${1:gnuplot expr%definition}}"
-		]
-	},
-
-
-	"egpassign":{
+	"egpassign{}{}":{
 		"prefix":"egpassign",
 		"body":[
 			"\\egpassign{${1:variable%definition}}{${2:gnuplot expr%definition}}"
@@ -169,12 +145,46 @@
 	},
 
 
+	"egpuse[]{}":{
+		"prefix":"egpuse",
+		"body":[
+			"\\egpuse[${2:keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"egpcalc[]{}":{
+		"prefix":"egpcalc",
+		"body":[
+			"\\egpcalc[${2:name%definition}]{${1:gnuplot expr%definition}}"
+		]
+	},
+
+
+	"egpshowval[]{}":{
+		"prefix":"egpshowval",
+		"body":[
+			"\\egpshowval[${2:name%definition}]{${1:gnuplot expr%definition}}"
+		]
+	},
+
+
 	"egpfile":{
 		"prefix":"egpfile",
 		"body":[
 			"\\begin{egpfile}",
-			"\t$1",
+				"\t$1",
 			"\\end{egpfile}"
+		]
+	},
+
+
+	"egpcmds":{
+		"prefix":"egpcmds",
+		"body":[
+			"\\begin{egpcmds}",
+				"\t$1",
+			"\\end{egpcmds}"
 		]
 	},
 
@@ -183,7 +193,7 @@
 		"prefix":"egp",
 		"body":[
 			"\\begin{egp}",
-			"\t$1",
+				"\t$1",
 			"\\end{egp}"
 		]
 	},
@@ -193,7 +203,7 @@
 		"prefix":"egpx",
 		"body":[
 			"\\begin{egpx}",
-			"\t$1",
+				"\t$1",
 			"\\end{egpx}"
 		]
 	},
@@ -203,18 +213,38 @@
 		"prefix":"egpdef",
 		"body":[
 			"\\begin{egpdef}",
-			"\t$1",
+				"\t$1",
 			"\\end{egpdef}"
 		]
 	},
 
 
-	"egpcmds":{
-		"prefix":"egpcmds",
+	"egpfile":{
+		"prefix":"egpfile",
 		"body":[
-			"\\begin{egpcmds}",
-			"\t$1",
-			"\\end{egpcmds}"
+			"\\begin{egpfile}",
+				"\t$1",
+			"\\end{egpfile}"
+		]
+	},
+
+
+	"egp":{
+		"prefix":"egp",
+		"body":[
+			"\\begin{egp}",
+				"\t$1",
+			"\\end{egp}"
+		]
+	},
+
+
+	"egpx":{
+		"prefix":"egpx",
+		"body":[
+			"\\begin{egpx}",
+				"\t$1",
+			"\\end{egpx}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"setup":{
+	"setup{}":{
 		"prefix":"setup",
 		"body":[
 			"\\setup{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"period":{
+	"period{}{}":{
 		"prefix":"period",
 		"body":[
 			"\\period{${1:date1}}{${2:date2}}"
@@ -25,26 +25,10 @@
 	},
 
 
-	"period":{
-		"prefix":"period",
-		"body":[
-			"\\period{${1:date1}}{${2:date2}}[${3:options}]"
-		]
-	},
-
-
-	"event":{
+	"event{}{}":{
 		"prefix":"event",
 		"body":[
 			"\\event{${1:date}}{${2:text}}"
-		]
-	},
-
-
-	"event":{
-		"prefix":"event",
-		"body":[
-			"\\event{${1:date}}{${2:text}}[${3:options}]"
 		]
 	},
 
@@ -153,7 +137,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -193,7 +177,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -221,6 +205,22 @@
 		"prefix":"TH",
 		"body":[
 			"\\TH"
+		]
+	},
+
+
+	"period{}{}[]":{
+		"prefix":"period",
+		"body":[
+			"\\period{${1:date1}}{${2:date2}}[${3:options}]"
+		]
+	},
+
+
+	"event{}{}[]":{
+		"prefix":"event",
+		"body":[
+			"\\event{${1:date}}{${2:text}}[${3:options}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"twemoji":{
+	"twemoji{}":{
 		"prefix":"twemoji",
 		"body":[
 			"\\twemoji{${1:emoji name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"twemoji":{
-		"prefix":"twemoji",
-		"body":[
-			"\\twemoji[${2:options%keyvals}]{${1:emoji name}}"
-		]
-	},
-
-
-	"texttwemoji":{
+	"texttwemoji{}":{
 		"prefix":"texttwemoji",
 		"body":[
 			"\\texttwemoji{${1:emoji name}}"
@@ -33,10 +25,18 @@
 	},
 
 
-	"defineTwemoji":{
+	"defineTwemoji{}{}":{
 		"prefix":"defineTwemoji",
 		"body":[
 			"\\defineTwemoji{${1:number}}{${2:name}}"
+		]
+	},
+
+
+	"twemoji[]{}":{
+		"prefix":"twemoji",
+		"body":[
+			"\\twemoji[${2:options%keyvals}]{${1:emoji name}}"
 		]
 	}
 }

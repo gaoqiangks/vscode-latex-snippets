@@ -1,7 +1,7 @@
 {
 
 
-	"mcmsetup":{
+	"mcmsetup{}":{
 		"prefix":"mcmsetup",
 		"body":[
 			"\\mcmsetup{${1:options%keyvals}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"lhaddress":{
+	"lhaddress{}":{
 		"prefix":"lhaddress",
 		"body":[
 			"\\lhaddress{${1:address%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"memodate":{
+	"memodate{}":{
 		"prefix":"memodate",
 		"body":[
 			"\\memodate{${1:date}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"memofrom":{
+	"memofrom{}":{
 		"prefix":"memofrom",
 		"body":[
 			"\\memofrom{${1:name}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"memologo":{
+	"memologo{}":{
 		"prefix":"memologo",
 		"body":[
 			"\\memologo{${1:logo code}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"memosubject":{
+	"memosubject{}":{
 		"prefix":"memosubject",
 		"body":[
 			"\\memosubject{${1:subject%text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"memoto":{
+	"memoto{}":{
 		"prefix":"memoto",
 		"body":[
 			"\\memoto{${1:name}}"
@@ -217,7 +217,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -257,7 +257,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -289,72 +289,12 @@
 	},
 
 
-	"keywords":{
-		"prefix":"keywords",
-		"body":[
-			"\\begin{keywords}",
-			"\t$1",
-			"\\end{keywords}"
-		]
-	},
-
-
 	"Corollary":{
 		"prefix":"Corollary",
 		"body":[
 			"\\begin{Corollary}",
-			"\t$1",
+				"\t$1",
 			"\\end{Corollary}"
-		]
-	},
-
-
-	"Theorem":{
-		"prefix":"Theorem",
-		"body":[
-			"\\begin{Theorem}",
-			"\t$1",
-			"\\end{Theorem}"
-		]
-	},
-
-
-	"Lemma":{
-		"prefix":"Lemma",
-		"body":[
-			"\\begin{Lemma}",
-			"\t$1",
-			"\\end{Lemma}"
-		]
-	},
-
-
-	"Proposition":{
-		"prefix":"Proposition",
-		"body":[
-			"\\begin{Proposition}",
-			"\t$1",
-			"\\end{Proposition}"
-		]
-	},
-
-
-	"memo":{
-		"prefix":"memo",
-		"body":[
-			"\\begin{memo}",
-			"\t$1",
-			"\\end{memo}"
-		]
-	},
-
-
-	"letter":{
-		"prefix":"letter",
-		"body":[
-			"\\begin{letter}",
-			"\t$1",
-			"\\end{letter}"
 		]
 	},
 
@@ -363,7 +303,7 @@
 		"prefix":"Definition",
 		"body":[
 			"\\begin{Definition}",
-			"\t$1",
+				"\t$1",
 			"\\end{Definition}"
 		]
 	},
@@ -373,8 +313,138 @@
 		"prefix":"Example",
 		"body":[
 			"\\begin{Example}",
-			"\t$1",
+				"\t$1",
 			"\\end{Example}"
+		]
+	},
+
+
+	"Lemma":{
+		"prefix":"Lemma",
+		"body":[
+			"\\begin{Lemma}",
+				"\t$1",
+			"\\end{Lemma}"
+		]
+	},
+
+
+	"letter":{
+		"prefix":"letter",
+		"body":[
+			"\\begin{letter}",
+				"\t$1",
+			"\\end{letter}"
+		]
+	},
+
+
+	"keywords":{
+		"prefix":"keywords",
+		"body":[
+			"\\begin{keywords}",
+				"\t$1",
+			"\\end{keywords}"
+		]
+	},
+
+
+	"memo":{
+		"prefix":"memo",
+		"body":[
+			"\\begin{memo}",
+				"\t$1",
+			"\\end{memo}"
+		]
+	},
+
+
+	"Proposition":{
+		"prefix":"Proposition",
+		"body":[
+			"\\begin{Proposition}",
+				"\t$1",
+			"\\end{Proposition}"
+		]
+	},
+
+
+	"Theorem":{
+		"prefix":"Theorem",
+		"body":[
+			"\\begin{Theorem}",
+				"\t$1",
+			"\\end{Theorem}"
+		]
+	},
+
+
+	"Corollary":{
+		"prefix":"Corollary",
+		"body":[
+			"\\begin{Corollary}",
+				"\t$1",
+			"\\end{Corollary}"
+		]
+	},
+
+
+	"Definition":{
+		"prefix":"Definition",
+		"body":[
+			"\\begin{Definition}",
+				"\t$1",
+			"\\end{Definition}"
+		]
+	},
+
+
+	"Example":{
+		"prefix":"Example",
+		"body":[
+			"\\begin{Example}",
+				"\t$1",
+			"\\end{Example}"
+		]
+	},
+
+
+	"Lemma":{
+		"prefix":"Lemma",
+		"body":[
+			"\\begin{Lemma}",
+				"\t$1",
+			"\\end{Lemma}"
+		]
+	},
+
+
+	"memo":{
+		"prefix":"memo",
+		"body":[
+			"\\begin{memo}",
+				"\t$1",
+			"\\end{memo}"
+		]
+	},
+
+
+	"Proposition":{
+		"prefix":"Proposition",
+		"body":[
+			"\\begin{Proposition}",
+				"\t$1",
+			"\\end{Proposition}"
+		]
+	},
+
+
+	"Theorem":{
+		"prefix":"Theorem",
+		"body":[
+			"\\begin{Theorem}",
+				"\t$1",
+			"\\end{Theorem}"
 		]
 	}
 }

@@ -9,15 +9,7 @@
 	},
 
 
-	"Touche":{
-		"prefix":"Touche",
-		"body":[
-			"\\Touche[${1:options%keyvals}]"
-		]
-	},
-
-
-	"Menu":{
+	"Menu{}":{
 		"prefix":"Menu",
 		"body":[
 			"\\Menu{${1:nom}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"Menu":{
-		"prefix":"Menu",
-		"body":[
-			"\\Menu[${2:option%keyvals}]{${1:nom}}"
-		]
-	},
-
-
-	"Ecran":{
+	"Ecran{}":{
 		"prefix":"Ecran",
 		"body":[
 			"\\Ecran{${1:contenu}}"
-		]
-	},
-
-
-	"Ecran":{
-		"prefix":"Ecran",
-		"body":[
-			"\\Ecran[${2:options%keyvals}]{${1:contenu}}"
 		]
 	},
 
@@ -53,22 +29,6 @@
 		"prefix":"Calculatrice",
 		"body":[
 			"\\Calculatrice"
-		]
-	},
-
-
-	"Calculatrice":{
-		"prefix":"Calculatrice",
-		"body":[
-			"\\Calculatrice[${1:title%text}]"
-		]
-	},
-
-
-	"Calculatrice*":{
-		"prefix":"Calculatrice*",
-		"body":[
-			"\\Calculatrice*[${1:options%keyvals}]"
 		]
 	},
 
@@ -105,10 +65,50 @@
 	},
 
 
-	"DefBool":{
+	"DefBool{}":{
 		"prefix":"DefBool",
 		"body":[
 			"\\DefBool{${1:bool name}}"
+		]
+	},
+
+
+	"Calculatrice*[]":{
+		"prefix":"*Calculatrice",
+		"body":[
+			"\\Calculatrice*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"Touche[]":{
+		"prefix":"Touche",
+		"body":[
+			"\\Touche[${1:options%keyvals}]"
+		]
+	},
+
+
+	"Menu[]{}":{
+		"prefix":"Menu",
+		"body":[
+			"\\Menu[${2:option%keyvals}]{${1:nom}}"
+		]
+	},
+
+
+	"Ecran[]{}":{
+		"prefix":"Ecran",
+		"body":[
+			"\\Ecran[${2:options%keyvals}]{${1:contenu}}"
+		]
+	},
+
+
+	"Calculatrice[]":{
+		"prefix":"Calculatrice",
+		"body":[
+			"\\Calculatrice[${1:title%text}]"
 		]
 	}
 }

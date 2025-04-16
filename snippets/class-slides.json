@@ -17,7 +17,7 @@
 	},
 
 
-	"settime":{
+	"settime{}":{
 		"prefix":"settime",
 		"body":[
 			"\\settime{${1:seconds}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"addtime":{
+	"addtime{}":{
 		"prefix":"addtime",
 		"body":[
 			"\\addtime{${1:seconds}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"onlyslides":{
+	"onlyslides{}":{
 		"prefix":"onlyslides",
 		"body":[
 			"\\onlyslides{${1:list}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"onlynotes":{
+	"onlynotes{}":{
 		"prefix":"onlynotes",
 		"body":[
 			"\\onlynotes{${1:list}}"
@@ -145,11 +145,21 @@
 	},
 
 
+	"slide":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t$1",
+			"\\end{slide}"
+		]
+	},
+
+
 	"overlay":{
 		"prefix":"overlay",
 		"body":[
 			"\\begin{overlay}",
-			"\t$1",
+				"\t$1",
 			"\\end{overlay}"
 		]
 	},
@@ -159,18 +169,8 @@
 		"prefix":"note",
 		"body":[
 			"\\begin{note}",
-			"\t$1",
+				"\t$1",
 			"\\end{note}"
-		]
-	},
-
-
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\begin{slide}",
-			"\t$1",
-			"\\end{slide}"
 		]
 	}
 }

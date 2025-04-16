@@ -1,7 +1,7 @@
 {
 
 
-	"bcbar":{
+	"bcbar{}":{
 		"prefix":"bcbar",
 		"body":[
 			"\\bcbar{${1:number}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"bcbar":{
-		"prefix":"bcbar",
-		"body":[
-			"\\bcbar[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"bcskip":{
+	"bcskip{}":{
 		"prefix":"bcskip",
 		"body":[
 			"\\bcskip{${1:length}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"bcxlabel":{
+	"bcxlabel{}":{
 		"prefix":"bcxlabel",
 		"body":[
 			"\\bcxlabel{${1:label}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"bclabel":{
+	"bclabel{}":{
 		"prefix":"bclabel",
 		"body":[
 			"\\bclabel{${1:label}}"
@@ -49,11 +41,19 @@
 	},
 
 
+	"bcbar[]{}":{
+		"prefix":"bcbar",
+		"body":[
+			"\\bcbar[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
 	"bchart":{
 		"prefix":"bchart",
 		"body":[
 			"\\begin{bchart}",
-			"\t$1",
+				"\t$1",
 			"\\end{bchart}"
 		]
 	}

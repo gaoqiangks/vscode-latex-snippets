@@ -9,34 +9,10 @@
 	},
 
 
-	"exercise":{
+	"exercise{}":{
 		"prefix":"exercise",
 		"body":[
 			"\\exercise{${1:title%text}}"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\exercise[${2:points}]{${1:title%text}}"
-		]
-	},
-
-
-	"exercise*":{
-		"prefix":"exercise*",
-		"body":[
-			"\\exercise*{${1:title%text}}"
-		]
-	},
-
-
-	"exercise*":{
-		"prefix":"exercise*",
-		"body":[
-			"\\exercise*[${2:points}]{${1:title%text}}"
 		]
 	},
 
@@ -45,14 +21,6 @@
 		"prefix":"subexercise",
 		"body":[
 			"\\subexercise"
-		]
-	},
-
-
-	"subexercise":{
-		"prefix":"subexercise",
-		"body":[
-			"\\subexercise[${1:title%text}]"
 		]
 	},
 
@@ -81,7 +49,7 @@
 	},
 
 
-	"course":{
+	"course{}":{
 		"prefix":"course",
 		"body":[
 			"\\course{${1:course%text}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"sheet":{
+	"sheet{}":{
 		"prefix":"sheet",
 		"body":[
 			"\\sheet{${1:number}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"group":{
+	"group{}":{
 		"prefix":"group",
 		"body":[
 			"\\group{${1:name}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"due":{
+	"due{}":{
 		"prefix":"due",
 		"body":[
 			"\\due{${1:date}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"member":{
+	"member{}":{
 		"prefix":"member",
 		"body":[
 			"\\member{${1:name}}"
@@ -121,15 +89,7 @@
 	},
 
 
-	"member":{
-		"prefix":"member",
-		"body":[
-			"\\member[${2:student id}]{${1:name}}"
-		]
-	},
-
-
-	"PrefixId":{
+	"PrefixId{}":{
 		"prefix":"PrefixId",
 		"body":[
 			"\\PrefixId{${1:prefix text%text}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"PrefixAuthor":{
+	"PrefixAuthor{}":{
 		"prefix":"PrefixAuthor",
 		"body":[
 			"\\PrefixAuthor{${1:prefix text%text}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"PrefixDate":{
+	"PrefixDate{}":{
 		"prefix":"PrefixDate",
 		"body":[
 			"\\PrefixDate{${1:prefix text%text}}"
@@ -209,7 +169,7 @@
 	},
 
 
-	"modring":{
+	"modring{}{}":{
 		"prefix":"modring",
 		"body":[
 			"\\modring{${1:ring}}{${2:modulus}}"
@@ -217,7 +177,7 @@
 	},
 
 
-	"derivative":{
+	"derivative{}":{
 		"prefix":"derivative",
 		"body":[
 			"\\derivative{${1:variable%formula}}"
@@ -225,7 +185,7 @@
 	},
 
 
-	"matadd":{
+	"matadd{}{}{}":{
 		"prefix":"matadd",
 		"body":[
 			"\\matadd{${1:mat1%formula}}{${2:mat2%formula}}{${3:mat3%formula}}"
@@ -233,7 +193,7 @@
 	},
 
 
-	"matmul":{
+	"matmul{}{}":{
 		"prefix":"matmul",
 		"body":[
 			"\\matmul{${1:mat1%formula}}{${2:mat2%formula}}"
@@ -241,7 +201,7 @@
 	},
 
 
-	"matswap":{
+	"matswap{}{}":{
 		"prefix":"matswap",
 		"body":[
 			"\\matswap{${1:mat1%formula}}{${2:mat2%formula}}"
@@ -249,7 +209,7 @@
 	},
 
 
-	"floor":{
+	"floor{}":{
 		"prefix":"floor",
 		"body":[
 			"\\floor{${1:arg%formula}}"
@@ -257,7 +217,7 @@
 	},
 
 
-	"ceil":{
+	"ceil{}":{
 		"prefix":"ceil",
 		"body":[
 			"\\ceil{${1:arg%formula}}"
@@ -265,7 +225,7 @@
 	},
 
 
-	"abs":{
+	"abs{}":{
 		"prefix":"abs",
 		"body":[
 			"\\abs{${1:arg%formula}}"
@@ -273,7 +233,7 @@
 	},
 
 
-	"rfrac":{
+	"rfrac{}{}":{
 		"prefix":"rfrac",
 		"body":[
 			"\\rfrac{${1:numerator}}{${2:denominator}}"
@@ -281,7 +241,7 @@
 	},
 
 
-	"rel":{
+	"rel{}":{
 		"prefix":"rel",
 		"body":[
 			"\\rel{${1:symbol%formula}}"
@@ -385,18 +345,10 @@
 	},
 
 
-	"pdfmember":{
+	"pdfmember{}":{
 		"prefix":"pdfmember",
 		"body":[
 			"\\pdfmember{${1:name}}"
-		]
-	},
-
-
-	"pdfmember":{
-		"prefix":"pdfmember",
-		"body":[
-			"\\pdfmember[${2:student id}]{${1:name}}"
 		]
 	},
 
@@ -533,6 +485,54 @@
 		"prefix":"glossaryname",
 		"body":[
 			"\\glossaryname"
+		]
+	},
+
+
+	"exercise*{}":{
+		"prefix":"*exercise",
+		"body":[
+			"\\exercise*{${1:title%text}}"
+		]
+	},
+
+
+	"exercise*[]{}":{
+		"prefix":"*exercise",
+		"body":[
+			"\\exercise*[${2:points}]{${1:title%text}}"
+		]
+	},
+
+
+	"exercise[]{}":{
+		"prefix":"exercise",
+		"body":[
+			"\\exercise[${2:points}]{${1:title%text}}"
+		]
+	},
+
+
+	"subexercise[]":{
+		"prefix":"subexercise",
+		"body":[
+			"\\subexercise[${1:title%text}]"
+		]
+	},
+
+
+	"member[]{}":{
+		"prefix":"member",
+		"body":[
+			"\\member[${2:student id}]{${1:name}}"
+		]
+	},
+
+
+	"pdfmember[]{}":{
+		"prefix":"pdfmember",
+		"body":[
+			"\\pdfmember[${2:student id}]{${1:name}}"
 		]
 	}
 }

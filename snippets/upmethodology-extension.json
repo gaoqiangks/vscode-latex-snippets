@@ -1,7 +1,7 @@
 {
 
 
-	"Ifdefined":{
+	"Ifdefined{}{}":{
 		"prefix":"Ifdefined",
 		"body":[
 			"\\Ifdefined{${1:arg}}{${2:code}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"Ifelsedefined":{
+	"Ifelsedefined{}{}{}":{
 		"prefix":"Ifelsedefined",
 		"body":[
 			"\\Ifelsedefined{${1:arg}}{${2:true code}}{${3:false code}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Ifundefined":{
+	"Ifundefined{}{}":{
 		"prefix":"Ifundefined",
 		"body":[
 			"\\Ifundefined{${1:arg}}{${2:code}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"Ifelseundefined":{
+	"Ifelseundefined{}{}{}":{
 		"prefix":"Ifelseundefined",
 		"body":[
 			"\\Ifelseundefined{${1:arg}}{${2:true code}}{${3:false code}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"Get":{
+	"Get{}":{
 		"prefix":"Get",
 		"body":[
 			"\\Get{${1:variable}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"GetLang":{
+	"GetLang{}{}":{
 		"prefix":"GetLang",
 		"body":[
 			"\\GetLang{${1:variable}}{${2:language}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"Set":{
+	"Set{}{}":{
 		"prefix":"Set",
 		"body":[
 			"\\Set{${1:variable}}{${2:name}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"Set":{
-		"prefix":"Set",
-		"body":[
-			"\\Set[${3:language}]{${1:variable}}{${2:name}}"
-		]
-	},
-
-
-	"Append":{
+	"Append{}{}":{
 		"prefix":"Append",
 		"body":[
 			"\\Append{${1:variable}}{${2:text}}"
@@ -73,15 +65,7 @@
 	},
 
 
-	"Append":{
-		"prefix":"Append",
-		"body":[
-			"\\Append[${3:language}]{${1:variable}}{${2:text}}"
-		]
-	},
-
-
-	"Unset":{
+	"Unset{}":{
 		"prefix":"Unset",
 		"body":[
 			"\\Unset{${1:variable}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"Unset":{
-		"prefix":"Unset",
-		"body":[
-			"\\Unset[${2:language}]{${1:variable}}"
-		]
-	},
-
-
-	"DeclareCopyright":{
+	"DeclareCopyright{}{}{}{}":{
 		"prefix":"DeclareCopyright",
 		"body":[
 			"\\DeclareCopyright{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"DeclareCopyright":{
-		"prefix":"DeclareCopyright",
-		"body":[
-			"\\DeclareCopyright[${5:language}]{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
-		]
-	},
-
-
-	"Put":{
+	"Put(){}":{
 		"prefix":"Put",
 		"body":[
 			"\\Put(${2:x},${3:y}){${1:stuff}}"
@@ -121,10 +89,42 @@
 	},
 
 
-	"UseExtension":{
+	"UseExtension{}":{
 		"prefix":"UseExtension",
 		"body":[
 			"\\UseExtension{${1:extname}}"
+		]
+	},
+
+
+	"Set[]{}{}":{
+		"prefix":"Set",
+		"body":[
+			"\\Set[${3:language}]{${1:variable}}{${2:name}}"
+		]
+	},
+
+
+	"Append[]{}{}":{
+		"prefix":"Append",
+		"body":[
+			"\\Append[${3:language}]{${1:variable}}{${2:text}}"
+		]
+	},
+
+
+	"Unset[]{}":{
+		"prefix":"Unset",
+		"body":[
+			"\\Unset[${2:language}]{${1:variable}}"
+		]
+	},
+
+
+	"DeclareCopyright[]{}{}{}{}":{
+		"prefix":"DeclareCopyright",
+		"body":[
+			"\\DeclareCopyright[${5:language}]{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
 		]
 	}
 }

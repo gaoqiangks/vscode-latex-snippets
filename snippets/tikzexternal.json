@@ -9,15 +9,7 @@
 	},
 
 
-	"tikzexternalize":{
-		"prefix":"tikzexternalize",
-		"body":[
-			"\\tikzexternalize[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tikzsetnextfilename":{
+	"tikzsetnextfilename{}":{
 		"prefix":"tikzsetnextfilename",
 		"body":[
 			"\\tikzsetnextfilename{${1:file name%file}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"tikzsetexternalprefix":{
+	"tikzsetexternalprefix{}":{
 		"prefix":"tikzsetexternalprefix",
 		"body":[
 			"\\tikzsetexternalprefix{${1:prefix}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"tikzsetfigurename":{
+	"tikzsetfigurename{}":{
 		"prefix":"tikzsetfigurename",
 		"body":[
 			"\\tikzsetfigurename{${1:name}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"tikzappendtofigurename":{
+	"tikzappendtofigurename{}":{
 		"prefix":"tikzappendtofigurename",
 		"body":[
 			"\\tikzappendtofigurename{${1:suffix}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"tikz":{
-		"prefix":"tikz",
-		"body":[
-			"\\tikz[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tikzset":{
+	"tikzset{}":{
 		"prefix":"tikzset",
 		"body":[
 			"\\tikzset{${1:options%keyvals}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"beginpgfgraphicnamed":{
+	"beginpgfgraphicnamed{}":{
 		"prefix":"beginpgfgraphicnamed",
 		"body":[
 			"\\beginpgfgraphicnamed{${1:file name prefix}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"tikzifinpicture":{
+	"tikzifinpicture{}{}":{
 		"prefix":"tikzifinpicture",
 		"body":[
 			"\\tikzifinpicture{${1:in code}}{${2:out code}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"pgfincludeexternalgraphics":{
+	"pgfincludeexternalgraphics{}":{
 		"prefix":"pgfincludeexternalgraphics",
 		"body":[
 			"\\pgfincludeexternalgraphics{${1:imagefile}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"pgfexternalreaddpth":{
+	"pgfexternalreaddpth{}":{
 		"prefix":"pgfexternalreaddpth",
 		"body":[
 			"\\pgfexternalreaddpth{${1:imagefile}}"
@@ -121,11 +105,37 @@
 	},
 
 
+	"tikzexternalize[]":{
+		"prefix":"tikzexternalize",
+		"body":[
+			"\\tikzexternalize[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tikz[]":{
+		"prefix":"tikz",
+		"body":[
+			"\\tikz[${1:options%keyvals}]"
+		]
+	},
+
+
 	"tikzpicture":{
 		"prefix":"tikzpicture",
 		"body":[
 			"\\begin{tikzpicture}",
-			"\t$1",
+				"\t$1",
+			"\\end{tikzpicture}"
+		]
+	},
+
+
+	"tikzpicture":{
+		"prefix":"tikzpicture",
+		"body":[
+			"\\begin{tikzpicture}",
+				"\t$1",
 			"\\end{tikzpicture}"
 		]
 	}

@@ -9,18 +9,10 @@
 	},
 
 
-	"name":{
+	"name{}":{
 		"prefix":"name",
 		"body":[
 			"\\name{${1:taxon name}}"
-		]
-	},
-
-
-	"name":{
-		"prefix":"name",
-		"body":[
-			"\\name[${2:prefix}]{${1:taxon name}}"
 		]
 	},
 
@@ -49,11 +41,29 @@
 	},
 
 
+	"name[]{}":{
+		"prefix":"name",
+		"body":[
+			"\\name[${2:prefix}]{${1:taxon name}}"
+		]
+	},
+
+
 	"Key":{
 		"prefix":"Key",
 		"body":[
 			"\\begin{Key}",
-			"\t$1",
+				"\t$1",
+			"\\end{Key}"
+		]
+	},
+
+
+	"Key":{
+		"prefix":"Key",
+		"body":[
+			"\\begin{Key}",
+				"\t$1",
 			"\\end{Key}"
 		]
 	}

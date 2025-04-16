@@ -129,26 +129,10 @@
 	},
 
 
-	"SCDCheckCommand":{
+	"SCDCheckCommand{}{}":{
 		"prefix":"SCDCheckCommand",
 		"body":[
 			"\\SCDCheckCommand{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"SCDCheckCommand":{
-		"prefix":"SCDCheckCommand",
-		"body":[
-			"\\SCDCheckCommand{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"SCDCheckCommand":{
-		"prefix":"SCDCheckCommand",
-		"body":[
-			"\\SCDCheckCommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
 		]
 	},
 
@@ -173,6 +157,22 @@
 		"prefix":"SCDSameDefinitionfalse",
 		"body":[
 			"\\SCDSameDefinitionfalse"
+		]
+	},
+
+
+	"SCDCheckCommand{}[]{}":{
+		"prefix":"SCDCheckCommand",
+		"body":[
+			"\\SCDCheckCommand{${1:cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"SCDCheckCommand{}[][]{}":{
+		"prefix":"SCDCheckCommand",
+		"body":[
+			"\\SCDCheckCommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
 		]
 	}
 }

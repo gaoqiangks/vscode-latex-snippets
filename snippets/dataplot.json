@@ -1,18 +1,10 @@
 {
 
 
-	"DTLplot":{
+	"DTLplot{}{}":{
 		"prefix":"DTLplot",
 		"body":[
 			"\\DTLplot{${1:db list%special}}{${2:settings%keyvals}}"
-		]
-	},
-
-
-	"DTLplot":{
-		"prefix":"DTLplot",
-		"body":[
-			"\\DTLplot[${3:condition}]{${1:db list%special}}{${2:settings%keyvals}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"dtlplothandlermark":{
+	"dtlplothandlermark{}":{
 		"prefix":"dtlplothandlermark",
 		"body":[
 			"\\dtlplothandlermark{${1:pgf code}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"DTLaddtoplotlegend":{
+	"DTLaddtoplotlegend{}{}{}":{
 		"prefix":"DTLaddtoplotlegend",
 		"body":[
 			"\\DTLaddtoplotlegend{${1:marker}}{${2:line style}}{${3:text}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"DTLformatlegend":{
+	"DTLformatlegend{}":{
 		"prefix":"DTLformatlegend",
 		"body":[
 			"\\DTLformatlegend{${1:legend}}"
@@ -185,18 +177,10 @@
 	},
 
 
-	"DTLplotstream":{
+	"DTLplotstream{}{}{}":{
 		"prefix":"DTLplotstream",
 		"body":[
 			"\\DTLplotstream{${1:db%special}}{${2:x key}}{${3:y key}}"
-		]
-	},
-
-
-	"DTLplotstream":{
-		"prefix":"DTLplotstream",
-		"body":[
-			"\\DTLplotstream[${4:condition}]{${1:db%special}}{${2:x key}}{${3:y key}}"
 		]
 	},
 
@@ -541,6 +525,22 @@
 		"prefix":"theDTLplotroundYvar",
 		"body":[
 			"\\theDTLplotroundYvar"
+		]
+	},
+
+
+	"DTLplot[]{}{}":{
+		"prefix":"DTLplot",
+		"body":[
+			"\\DTLplot[${3:condition}]{${1:db list%special}}{${2:settings%keyvals}}"
+		]
+	},
+
+
+	"DTLplotstream[]{}{}{}":{
+		"prefix":"DTLplotstream",
+		"body":[
+			"\\DTLplotstream[${4:condition}]{${1:db%special}}{${2:x key}}{${3:y key}}"
 		]
 	}
 }

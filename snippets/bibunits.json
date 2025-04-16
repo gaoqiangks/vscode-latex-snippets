@@ -9,30 +9,6 @@
 	},
 
 
-	"bibliographyunit":{
-		"prefix":"bibliographyunit",
-		"body":[
-			"\\bibliographyunit[${1:unit}]"
-		]
-	},
-
-
-	"cite*":{
-		"prefix":"cite*",
-		"body":[
-			"\\cite*{${1:bibid}}"
-		]
-	},
-
-
-	"nocite*":{
-		"prefix":"nocite*",
-		"body":[
-			"\\nocite*{${1:bibid}}"
-		]
-	},
-
-
 	"putbib":{
 		"prefix":"putbib",
 		"body":[
@@ -41,15 +17,7 @@
 	},
 
 
-	"putbib":{
-		"prefix":"putbib",
-		"body":[
-			"\\putbib[${1:bib file}]"
-		]
-	},
-
-
-	"defaultbibliography":{
+	"defaultbibliography{}":{
 		"prefix":"defaultbibliography",
 		"body":[
 			"\\defaultbibliography{${1:bib file}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"defaultbibliographystyle":{
+	"defaultbibliographystyle{}":{
 		"prefix":"defaultbibliographystyle",
 		"body":[
 			"\\defaultbibliographystyle{${1:style%keyvals}}"
@@ -65,18 +33,50 @@
 	},
 
 
-	"bibliography*":{
-		"prefix":"bibliography*",
+	"cite*{}":{
+		"prefix":"*cite",
+		"body":[
+			"\\cite*{${1:bibid}}"
+		]
+	},
+
+
+	"nocite*{}":{
+		"prefix":"*nocite",
+		"body":[
+			"\\nocite*{${1:bibid}}"
+		]
+	},
+
+
+	"bibliography*{}":{
+		"prefix":"*bibliography",
 		"body":[
 			"\\bibliography*{${1:bib file}}"
 		]
 	},
 
 
-	"bibliographystyle*":{
-		"prefix":"bibliographystyle*",
+	"bibliographystyle*{}":{
+		"prefix":"*bibliographystyle",
 		"body":[
 			"\\bibliographystyle*{${1:style%keyvals}}"
+		]
+	},
+
+
+	"bibliographyunit[]":{
+		"prefix":"bibliographyunit",
+		"body":[
+			"\\bibliographyunit[${1:unit}]"
+		]
+	},
+
+
+	"putbib[]":{
+		"prefix":"putbib",
+		"body":[
+			"\\putbib[${1:bib file}]"
 		]
 	},
 
@@ -85,7 +85,17 @@
 		"prefix":"bibunit",
 		"body":[
 			"\\begin{bibunit}",
-			"\t$1",
+				"\t$1",
+			"\\end{bibunit}"
+		]
+	},
+
+
+	"bibunit":{
+		"prefix":"bibunit",
+		"body":[
+			"\\begin{bibunit}",
+				"\t$1",
 			"\\end{bibunit}"
 		]
 	}

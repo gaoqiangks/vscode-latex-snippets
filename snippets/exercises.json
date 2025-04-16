@@ -25,7 +25,7 @@
 	},
 
 
-	"ifsolutionthenelse":{
+	"ifsolutionthenelse{}{}":{
 		"prefix":"ifsolutionthenelse",
 		"body":[
 			"\\ifsolutionthenelse{${1:then}}{${2:else}}"
@@ -45,7 +45,7 @@
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-			"\t$1",
+				"\t$1",
 			"\\end{exercise}"
 		]
 	},
@@ -55,7 +55,27 @@
 		"prefix":"solution",
 		"body":[
 			"\\begin{solution}",
-			"\t$1",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
 			"\\end{solution}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"plset":{
+	"plset{}":{
 		"prefix":"plset",
 		"body":[
 			"\\plset{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"listofpyglistingsname":{
+	"listofpyglistingsname{}":{
 		"prefix":"listofpyglistingsname",
 		"body":[
 			"\\listofpyglistingsname{${1:name%text}}"
@@ -29,7 +29,17 @@
 		"prefix":"pyglist",
 		"body":[
 			"\\begin{pyglist}",
-			"\t$1",
+				"\t$1",
+			"\\end{pyglist}"
+		]
+	},
+
+
+	"pyglist":{
+		"prefix":"pyglist",
+		"body":[
+			"\\begin{pyglist}",
+				"\t$1",
 			"\\end{pyglist}"
 		]
 	}

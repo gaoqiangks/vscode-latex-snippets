@@ -9,14 +9,6 @@
 	},
 
 
-	"longitem":{
-		"prefix":"longitem",
-		"body":[
-			"\\longitem[${1:label}]"
-		]
-	},
-
-
 	"eqlistinit":{
 		"prefix":"eqlistinit",
 		"body":[
@@ -49,7 +41,7 @@
 	},
 
 
-	"eqlistauto":{
+	"eqlistauto{}":{
 		"prefix":"eqlistauto",
 		"body":[
 			"\\eqlistauto{${1:max length%l}}"
@@ -65,32 +57,10 @@
 	},
 
 
-	"eqlist*":{
-		"prefix":"eqlist*",
+	"longitem[]":{
+		"prefix":"longitem",
 		"body":[
-			"\\begin{eqlist*}",
-			"\t$1",
-			"\\end{eqlist*}"
-		]
-	},
-
-
-	"Eqlist*":{
-		"prefix":"Eqlist*",
-		"body":[
-			"\\begin{Eqlist*}",
-			"\t$1",
-			"\\end{Eqlist*}"
-		]
-	},
-
-
-	"Eqlist":{
-		"prefix":"Eqlist",
-		"body":[
-			"\\begin{Eqlist}",
-			"\t$1",
-			"\\end{Eqlist}"
+			"\\longitem[${1:label}]"
 		]
 	},
 
@@ -99,8 +69,78 @@
 		"prefix":"eqlist",
 		"body":[
 			"\\begin{eqlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{eqlist}"
+		]
+	},
+
+
+	"Eqlist":{
+		"prefix":"Eqlist",
+		"body":[
+			"\\begin{Eqlist}",
+				"\t$1",
+			"\\end{Eqlist}"
+		]
+	},
+
+
+	"Eqlist*":{
+		"prefix":"Eqlist",
+		"body":[
+			"\\begin{Eqlist*}",
+				"\t$1",
+			"\\end{Eqlist*}"
+		]
+	},
+
+
+	"eqlist*":{
+		"prefix":"*eqlist",
+		"body":[
+			"\\begin{eqlist*}",
+				"\t$1",
+			"\\end{eqlist*}"
+		]
+	},
+
+
+	"eqlist":{
+		"prefix":"eqlist",
+		"body":[
+			"\\begin{eqlist}",
+				"\t$1",
+			"\\end{eqlist}"
+		]
+	},
+
+
+	"eqlist*":{
+		"prefix":"eqlist",
+		"body":[
+			"\\begin{eqlist*}",
+				"\t$1",
+			"\\end{eqlist*}"
+		]
+	},
+
+
+	"Eqlist":{
+		"prefix":"Eqlist",
+		"body":[
+			"\\begin{Eqlist}",
+				"\t$1",
+			"\\end{Eqlist}"
+		]
+	},
+
+
+	"Eqlist*":{
+		"prefix":"Eqlist",
+		"body":[
+			"\\begin{Eqlist*}",
+				"\t$1",
+			"\\end{Eqlist*}"
 		]
 	}
 }

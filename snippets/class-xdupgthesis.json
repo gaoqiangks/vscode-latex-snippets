@@ -1,7 +1,7 @@
 {
 
 
-	"xdusetup":{
+	"xdusetup{}":{
 		"prefix":"xdusetup",
 		"body":[
 			"\\xdusetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"noauxwrite":{
+	"noauxwrite{}":{
 		"prefix":"noauxwrite",
 		"body":[
 			"\\noauxwrite{${1:参考文献引用命令}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"chapter":{
+	"chapter{}{}":{
 		"prefix":"chapter",
 		"body":[
 			"\\chapter{${1:英文标题%title}}{${2:中文标题%title}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"section":{
+	"section{}{}":{
 		"prefix":"section",
 		"body":[
 			"\\section{${1:英文标题%title}}{${2:中文标题%title}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"subsection":{
+	"subsection{}{}":{
 		"prefix":"subsection",
 		"body":[
 			"\\subsection{${1:英文标题%title}}{${2:中文标题%title}}"
@@ -41,18 +41,10 @@
 	},
 
 
-	"anon":{
+	"anon{}":{
 		"prefix":"anon",
 		"body":[
 			"\\anon{${1:非匿名内容%text}}"
-		]
-	},
-
-
-	"anon":{
-		"prefix":"anon",
-		"body":[
-			"\\anon[${2:匿名内容%text}]{${1:非匿名内容%text}}"
 		]
 	},
 
@@ -81,7 +73,7 @@
 	},
 
 
-	"testCJKfirst":{
+	"testCJKfirst{}":{
 		"prefix":"testCJKfirst",
 		"body":[
 			"\\testCJKfirst{${1:field}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"multivolparser":{
+	"multivolparser{}":{
 		"prefix":"multivolparser",
 		"body":[
 			"\\multivolparser{${1:arg}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"multinumberparser":{
+	"multinumberparser{}":{
 		"prefix":"multinumberparser",
 		"body":[
 			"\\multinumberparser{${1:arg}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"mkgbnumlabel":{
+	"mkgbnumlabel{}":{
 		"prefix":"mkgbnumlabel",
 		"body":[
 			"\\mkgbnumlabel{${1:arg}}"
@@ -241,7 +233,7 @@
 	},
 
 
-	"execlanodudf":{
+	"execlanodudf{}":{
 		"prefix":"execlanodudf",
 		"body":[
 			"\\execlanodudf{${1:string}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"setlocalbibstring":{
+	"setlocalbibstring{}{}":{
 		"prefix":"setlocalbibstring",
 		"body":[
 			"\\setlocalbibstring{${1:string}}{${2:text}}"
@@ -257,7 +249,7 @@
 	},
 
 
-	"setlocalbiblstring":{
+	"setlocalbiblstring{}{}":{
 		"prefix":"setlocalbiblstring",
 		"body":[
 			"\\setlocalbiblstring{${1:string}}{${2:text}}"
@@ -401,7 +393,7 @@
 	},
 
 
-	"defdoublelangentry":{
+	"defdoublelangentry{}{}":{
 		"prefix":"defdoublelangentry",
 		"body":[
 			"\\defdoublelangentry{${1:match}}{${2:fieldvalue}}"
@@ -425,7 +417,7 @@
 	},
 
 
-	"mkbibsuperbracket":{
+	"mkbibsuperbracket{}":{
 		"prefix":"mkbibsuperbracket",
 		"body":[
 			"\\mkbibsuperbracket{${1:text}}"
@@ -433,7 +425,7 @@
 	},
 
 
-	"mkbibsuperscriptusp":{
+	"mkbibsuperscriptusp{}":{
 		"prefix":"mkbibsuperscriptusp",
 		"body":[
 			"\\mkbibsuperscriptusp{${1:text}}"
@@ -441,7 +433,7 @@
 	},
 
 
-	"upcite":{
+	"upcite{}":{
 		"prefix":"upcite",
 		"body":[
 			"\\upcite{${1:bibid}}"
@@ -449,23 +441,7 @@
 	},
 
 
-	"upcite":{
-		"prefix":"upcite",
-		"body":[
-			"\\upcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"upcite":{
-		"prefix":"upcite",
-		"body":[
-			"\\upcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"pagescite":{
+	"pagescite{}":{
 		"prefix":"pagescite",
 		"body":[
 			"\\pagescite{${1:bibid}}"
@@ -473,23 +449,7 @@
 	},
 
 
-	"pagescite":{
-		"prefix":"pagescite",
-		"body":[
-			"\\pagescite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"pagescite":{
-		"prefix":"pagescite",
-		"body":[
-			"\\pagescite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"yearpagescite":{
+	"yearpagescite{}":{
 		"prefix":"yearpagescite",
 		"body":[
 			"\\yearpagescite{${1:bibid}}"
@@ -497,23 +457,7 @@
 	},
 
 
-	"yearpagescite":{
-		"prefix":"yearpagescite",
-		"body":[
-			"\\yearpagescite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"yearpagescite":{
-		"prefix":"yearpagescite",
-		"body":[
-			"\\yearpagescite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"yearcite":{
+	"yearcite{}":{
 		"prefix":"yearcite",
 		"body":[
 			"\\yearcite{${1:bibid}}"
@@ -521,23 +465,7 @@
 	},
 
 
-	"yearcite":{
-		"prefix":"yearcite",
-		"body":[
-			"\\yearcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"yearcite":{
-		"prefix":"yearcite",
-		"body":[
-			"\\yearcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"authornumcite":{
+	"authornumcite{}":{
 		"prefix":"authornumcite",
 		"body":[
 			"\\authornumcite{${1:bibid}}"
@@ -545,23 +473,7 @@
 	},
 
 
-	"authornumcite":{
-		"prefix":"authornumcite",
-		"body":[
-			"\\authornumcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"authornumcite":{
-		"prefix":"authornumcite",
-		"body":[
-			"\\authornumcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet":{
+	"citet{}":{
 		"prefix":"citet",
 		"body":[
 			"\\citet{${1:bibid}}"
@@ -569,23 +481,7 @@
 	},
 
 
-	"citet":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep":{
+	"citep{}":{
 		"prefix":"citep",
 		"body":[
 			"\\citep{${1:bibid}}"
@@ -593,23 +489,7 @@
 	},
 
 
-	"citep":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citetns":{
+	"citetns{}":{
 		"prefix":"citetns",
 		"body":[
 			"\\citetns{${1:bibid}}"
@@ -617,23 +497,7 @@
 	},
 
 
-	"citetns":{
-		"prefix":"citetns",
-		"body":[
-			"\\citetns[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citetns":{
-		"prefix":"citetns",
-		"body":[
-			"\\citetns[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citepns":{
+	"citepns{}":{
 		"prefix":"citepns",
 		"body":[
 			"\\citepns{${1:bibid}}"
@@ -641,23 +505,7 @@
 	},
 
 
-	"citepns":{
-		"prefix":"citepns",
-		"body":[
-			"\\citepns[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citepns":{
-		"prefix":"citepns",
-		"body":[
-			"\\citepns[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"inlinecite":{
+	"inlinecite{}":{
 		"prefix":"inlinecite",
 		"body":[
 			"\\inlinecite{${1:bibid}}"
@@ -665,23 +513,7 @@
 	},
 
 
-	"inlinecite":{
-		"prefix":"inlinecite",
-		"body":[
-			"\\inlinecite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"inlinecite":{
-		"prefix":"inlinecite",
-		"body":[
-			"\\inlinecite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citec":{
+	"citec{}":{
 		"prefix":"citec",
 		"body":[
 			"\\citec{${1:bibid}}"
@@ -689,23 +521,7 @@
 	},
 
 
-	"citec":{
-		"prefix":"citec",
-		"body":[
-			"\\citec[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citec":{
-		"prefix":"citec",
-		"body":[
-			"\\citec[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citecs":{
+	"citecs{}{}":{
 		"prefix":"citecs",
 		"body":[
 			"\\citecs{${1:bibid}}{${2:bibid}}"
@@ -713,7 +529,7 @@
 	},
 
 
-	"citecs":{
+	"citecs(){}{}":{
 		"prefix":"citecs",
 		"body":[
 			"\\citecs(${3:post}){${1:bibid}}{${2:bibid}}"
@@ -721,7 +537,7 @@
 	},
 
 
-	"citecs":{
+	"citecs()(){}{}":{
 		"prefix":"citecs",
 		"body":[
 			"\\citecs(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
@@ -729,39 +545,7 @@
 	},
 
 
-	"citecs":{
-		"prefix":"citecs",
-		"body":[
-			"\\citecs(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"citecs":{
-		"prefix":"citecs",
-		"body":[
-			"\\citecs[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"citecs":{
-		"prefix":"citecs",
-		"body":[
-			"\\citecs[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"citecs":{
-		"prefix":"citecs",
-		"body":[
-			"\\citecs(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"authornumcites":{
+	"authornumcites{}{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites{${1:bibid}}{${2:bibid}}"
@@ -769,7 +553,7 @@
 	},
 
 
-	"authornumcites":{
+	"authornumcites(){}{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites(${3:post}){${1:bibid}}{${2:bibid}}"
@@ -777,7 +561,7 @@
 	},
 
 
-	"authornumcites":{
+	"authornumcites()(){}{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
@@ -785,7 +569,223 @@
 	},
 
 
-	"authornumcites":{
+	"anon[]{}":{
+		"prefix":"anon",
+		"body":[
+			"\\anon[${2:匿名内容%text}]{${1:非匿名内容%text}}"
+		]
+	},
+
+
+	"upcite[]{}":{
+		"prefix":"upcite",
+		"body":[
+			"\\upcite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"upcite[][]{}":{
+		"prefix":"upcite",
+		"body":[
+			"\\upcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"pagescite[]{}":{
+		"prefix":"pagescite",
+		"body":[
+			"\\pagescite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"pagescite[][]{}":{
+		"prefix":"pagescite",
+		"body":[
+			"\\pagescite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"yearpagescite[]{}":{
+		"prefix":"yearpagescite",
+		"body":[
+			"\\yearpagescite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"yearpagescite[][]{}":{
+		"prefix":"yearpagescite",
+		"body":[
+			"\\yearpagescite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"yearcite[]{}":{
+		"prefix":"yearcite",
+		"body":[
+			"\\yearcite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"yearcite[][]{}":{
+		"prefix":"yearcite",
+		"body":[
+			"\\yearcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"authornumcite[]{}":{
+		"prefix":"authornumcite",
+		"body":[
+			"\\authornumcite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"authornumcite[][]{}":{
+		"prefix":"authornumcite",
+		"body":[
+			"\\authornumcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citet[]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citet[][]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citep[]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citep[][]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citetns[]{}":{
+		"prefix":"citetns",
+		"body":[
+			"\\citetns[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citetns[][]{}":{
+		"prefix":"citetns",
+		"body":[
+			"\\citetns[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citepns[]{}":{
+		"prefix":"citepns",
+		"body":[
+			"\\citepns[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citepns[][]{}":{
+		"prefix":"citepns",
+		"body":[
+			"\\citepns[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"inlinecite[]{}":{
+		"prefix":"inlinecite",
+		"body":[
+			"\\inlinecite[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"inlinecite[][]{}":{
+		"prefix":"inlinecite",
+		"body":[
+			"\\inlinecite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citec[]{}":{
+		"prefix":"citec",
+		"body":[
+			"\\citec[${2:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citec[][]{}":{
+		"prefix":"citec",
+		"body":[
+			"\\citec[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		]
+	},
+
+
+	"citecs()()[]{}[]{}":{
+		"prefix":"citecs",
+		"body":[
+			"\\citecs(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"citecs[]{}[]{}":{
+		"prefix":"citecs",
+		"body":[
+			"\\citecs[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"citecs[][]{}[][]{}":{
+		"prefix":"citecs",
+		"body":[
+			"\\citecs[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"citecs()()[][]{}[][]{}":{
+		"prefix":"citecs",
+		"body":[
+			"\\citecs(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		]
+	},
+
+
+	"authornumcites()()[]{}[]{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
@@ -793,7 +793,7 @@
 	},
 
 
-	"authornumcites":{
+	"authornumcites[]{}[]{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
@@ -801,7 +801,7 @@
 	},
 
 
-	"authornumcites":{
+	"authornumcites[][]{}[][]{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
@@ -809,7 +809,7 @@
 	},
 
 
-	"authornumcites":{
+	"authornumcites()()[][]{}[][]{}":{
 		"prefix":"authornumcites",
 		"body":[
 			"\\authornumcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
@@ -821,7 +821,7 @@
 		"prefix":"edubg",
 		"body":[
 			"\\begin{edubg}",
-			"\t$1",
+				"\t$1",
 			"\\end{edubg}"
 		]
 	},
@@ -831,7 +831,7 @@
 		"prefix":"resresult",
 		"body":[
 			"\\begin{resresult}",
-			"\t$1",
+				"\t$1",
 			"\\end{resresult}"
 		]
 	}

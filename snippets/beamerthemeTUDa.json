@@ -9,15 +9,7 @@
 	},
 
 
-	"logo*":{
-		"prefix":"logo*",
-		"body":[
-			"\\logo*{${1:logo text%text}}"
-		]
-	},
-
-
-	"setupTUDaFrame":{
+	"setupTUDaFrame{}":{
 		"prefix":"setupTUDaFrame",
 		"body":[
 			"\\setupTUDaFrame{${1:options%keyvals}}"
@@ -25,8 +17,16 @@
 	},
 
 
-	"titlegraphic*":{
-		"prefix":"titlegraphic*",
+	"logo*{}":{
+		"prefix":"*logo",
+		"body":[
+			"\\logo*{${1:logo text%text}}"
+		]
+	},
+
+
+	"titlegraphic*{}":{
+		"prefix":"*titlegraphic",
 		"body":[
 			"\\titlegraphic*{${1:text}}"
 		]

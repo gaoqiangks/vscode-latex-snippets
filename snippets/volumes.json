@@ -1,7 +1,7 @@
 {
 
 
-	"allvolumescommand":{
+	"allvolumescommand{}":{
 		"prefix":"allvolumescommand",
 		"body":[
 			"\\allvolumescommand{${1:commands}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"alwaysinclude":{
+	"alwaysinclude{}":{
 		"prefix":"alwaysinclude",
 		"body":[
 			"\\alwaysinclude{${1:file}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ifnumber":{
+	"ifnumber{}{}{}":{
 		"prefix":"ifnumber",
 		"body":[
 			"\\ifnumber{${1:arg}}{${2:true}}{${3:false}}"
@@ -29,14 +29,6 @@
 		"prefix":"onlyvolume",
 		"body":[
 			"\\onlyvolume"
-		]
-	},
-
-
-	"onlyvolume":{
-		"prefix":"onlyvolume",
-		"body":[
-			"\\onlyvolume[${1:number}]"
 		]
 	},
 
@@ -57,7 +49,7 @@
 	},
 
 
-	"voladdtolof":{
+	"voladdtolof{}":{
 		"prefix":"voladdtolof",
 		"body":[
 			"\\voladdtolof{${1:text}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"voladdtolot":{
+	"voladdtolot{}":{
 		"prefix":"voladdtolot",
 		"body":[
 			"\\voladdtolot{${1:text}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"voladdtotoc":{
+	"voladdtotoc{}":{
 		"prefix":"voladdtotoc",
 		"body":[
 			"\\voladdtotoc{${1:text}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"volumecommand":{
+	"volumecommand{}{}":{
 		"prefix":"volumecommand",
 		"body":[
 			"\\volumecommand{${1:number}}{${2:commands}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"volumename":{
+	"volumename{}":{
 		"prefix":"volumename",
 		"body":[
 			"\\volumename{${1:text}}"
@@ -133,6 +125,14 @@
 		"prefix":"volumetwo",
 		"body":[
 			"\\volumetwo"
+		]
+	},
+
+
+	"onlyvolume[]":{
+		"prefix":"onlyvolume",
+		"body":[
+			"\\onlyvolume[${1:number}]"
 		]
 	}
 }

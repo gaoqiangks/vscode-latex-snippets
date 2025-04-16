@@ -1,7 +1,7 @@
 {
 
 
-	"includegraphicx":{
+	"includegraphicx{}":{
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx{${1:imagefile}}"
@@ -9,39 +9,7 @@
 	},
 
 
-	"includegraphicx":{
-		"prefix":"includegraphicx",
-		"body":[
-			"\\includegraphicx[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"includegraphicx":{
-		"prefix":"includegraphicx",
-		"body":[
-			"\\includegraphicx[${2:options%keyvals}](${3:psfrags}){${1:imagefile}}"
-		]
-	},
-
-
-	"includegraphicx":{
-		"prefix":"includegraphicx",
-		"body":[
-			"\\includegraphicx[${2:options%keyvals}](${4:psfrags})<${3:fg overpic}>{${1:imagefile}}"
-		]
-	},
-
-
-	"includegraphicx":{
-		"prefix":"includegraphicx",
-		"body":[
-			"\\includegraphicx[${2:options%keyvals}](${5:psfrags})<${4:fg overpic}>[${3:bg overpic}]{${1:imagefile}}"
-		]
-	},
-
-
-	"iflanguage":{
+	"iflanguage{}{}{}":{
 		"prefix":"iflanguage",
 		"body":[
 			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
@@ -65,7 +33,7 @@
 	},
 
 
-	"copypfxfromto":{
+	"copypfxfromto{}{}":{
 		"prefix":"copypfxfromto",
 		"body":[
 			"\\copypfxfromto{${1:EPS file}}{${2:PFX file}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"setpfxinput":{
+	"setpfxinput{}":{
 		"prefix":"setpfxinput",
 		"body":[
 			"\\setpfxinput{${1:file}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"setpfxoutput":{
+	"setpfxoutput{}":{
 		"prefix":"setpfxoutput",
 		"body":[
 			"\\setpfxoutput{${1:file}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"pfxinput":{
+	"pfxinput{}":{
 		"prefix":"pfxinput",
 		"body":[
 			"\\pfxinput{${1:file}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"ovpinput":{
+	"ovpinput{}":{
 		"prefix":"ovpinput",
 		"body":[
 			"\\ovpinput{${1:file}}"
@@ -153,11 +121,53 @@
 	},
 
 
+	"includegraphicx[]{}":{
+		"prefix":"includegraphicx",
+		"body":[
+			"\\includegraphicx[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"includegraphicx[](){}":{
+		"prefix":"includegraphicx",
+		"body":[
+			"\\includegraphicx[${2:options%keyvals}](${3:psfrags}){${1:imagefile}}"
+		]
+	},
+
+
+	"includegraphicx[]()<>{}":{
+		"prefix":"includegraphicx",
+		"body":[
+			"\\includegraphicx[${2:options%keyvals}](${4:psfrags})<${3:fg overpic}>{${1:imagefile}}"
+		]
+	},
+
+
+	"includegraphicx[]()<>[]{}":{
+		"prefix":"includegraphicx",
+		"body":[
+			"\\includegraphicx[${2:options%keyvals}](${5:psfrags})<${4:fg overpic}>[${3:bg overpic}]{${1:imagefile}}"
+		]
+	},
+
+
+	"overpix":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t$1",
+			"\\end{overpix}"
+		]
+	},
+
+
 	"onlylanguage":{
 		"prefix":"onlylanguage",
 		"body":[
 			"\\begin{onlylanguage}",
-			"\t$1",
+				"\t$1",
 			"\\end{onlylanguage}"
 		]
 	},
@@ -167,7 +177,27 @@
 		"prefix":"overpix",
 		"body":[
 			"\\begin{overpix}",
-			"\t$1",
+				"\t$1",
+			"\\end{overpix}"
+		]
+	},
+
+
+	"overpix":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t$1",
+			"\\end{overpix}"
+		]
+	},
+
+
+	"overpix":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t$1",
 			"\\end{overpix}"
 		]
 	}

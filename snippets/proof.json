@@ -1,7 +1,7 @@
 {
 
 
-	"deduce":{
+	"deduce{}{}":{
 		"prefix":"deduce",
 		"body":[
 			"\\deduce{${1:conclusions%formula}}{${2:premises%formula}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"deduce":{
-		"prefix":"deduce",
-		"body":[
-			"\\deduce[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
-	},
-
-
-	"infer":{
+	"infer{}{}":{
 		"prefix":"infer",
 		"body":[
 			"\\infer{${1:conclusions%formula}}{${2:premises%formula}}"
@@ -25,26 +17,34 @@
 	},
 
 
-	"infer":{
-		"prefix":"infer",
-		"body":[
-			"\\infer[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
-	},
-
-
-	"infer*":{
-		"prefix":"infer*",
+	"infer*{}{}":{
+		"prefix":"*infer",
 		"body":[
 			"\\infer*{${1:conclusions%formula}}{${2:premises%formula}}"
 		]
 	},
 
 
-	"infer*":{
-		"prefix":"infer*",
+	"infer*[]{}{}":{
+		"prefix":"*infer",
 		"body":[
 			"\\infer*[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
+		]
+	},
+
+
+	"deduce[]{}{}":{
+		"prefix":"deduce",
+		"body":[
+			"\\deduce[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
+		]
+	},
+
+
+	"infer[]{}{}":{
+		"prefix":"infer",
+		"body":[
+			"\\infer[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
 		]
 	}
 }

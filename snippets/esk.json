@@ -1,7 +1,7 @@
 {
 
 
-	"eskwrite":{
+	"eskwrite{}":{
 		"prefix":"eskwrite",
 		"body":[
 			"\\eskwrite{${1:Sketch code%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"eskprelude":{
+	"eskprelude{}":{
 		"prefix":"eskprelude",
 		"body":[
 			"\\eskprelude{${1:Sketch prelude%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"eskaddtoprelude":{
+	"eskaddtoprelude{}":{
 		"prefix":"eskaddtoprelude",
 		"body":[
 			"\\eskaddtoprelude{${1:Sketch code%definition}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"eskglobals":{
+	"eskglobals{}":{
 		"prefix":"eskglobals",
 		"body":[
 			"\\eskglobals{${1:Sketch properties}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"eskaddtoglobals":{
+	"eskaddtoglobals{}":{
 		"prefix":"eskaddtoglobals",
 		"body":[
 			"\\eskaddtoglobals{${1:Sketch properties}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"eskwritetoken":{
+	"eskwritetoken{}":{
 		"prefix":"eskwritetoken",
 		"body":[
 			"\\eskwritetoken{${1:code}}"
@@ -65,12 +65,12 @@
 	},
 
 
-	"eskdef":{
-		"prefix":"eskdef",
+	"esk":{
+		"prefix":"esk",
 		"body":[
-			"\\begin{eskdef}",
-			"\t$1",
-			"\\end{eskdef}"
+			"\\begin{esk}",
+				"\t$1",
+			"\\end{esk}"
 		]
 	},
 
@@ -79,7 +79,47 @@
 		"prefix":"esk",
 		"body":[
 			"\\begin{esk}",
-			"\t$1",
+				"\t$1",
+			"\\end{esk}"
+		]
+	},
+
+
+	"eskdef":{
+		"prefix":"eskdef",
+		"body":[
+			"\\begin{eskdef}",
+				"\t$1",
+			"\\end{eskdef}"
+		]
+	},
+
+
+	"eskfile":{
+		"prefix":"eskfile",
+		"body":[
+			"\\begin{eskfile}",
+				"\t$1",
+			"\\end{eskfile}"
+		]
+	},
+
+
+	"esk":{
+		"prefix":"esk",
+		"body":[
+			"\\begin{esk}",
+				"\t$1",
+			"\\end{esk}"
+		]
+	},
+
+
+	"esk":{
+		"prefix":"esk",
+		"body":[
+			"\\begin{esk}",
+				"\t$1",
 			"\\end{esk}"
 		]
 	},
@@ -89,7 +129,7 @@
 		"prefix":"eskfile",
 		"body":[
 			"\\begin{eskfile}",
-			"\t$1",
+				"\t$1",
 			"\\end{eskfile}"
 		]
 	}

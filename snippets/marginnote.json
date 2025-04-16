@@ -1,22 +1,6 @@
 {
 
 
-	"marginnote":{
-		"prefix":"marginnote",
-		"body":[
-			"\\marginnote[${2:left}]{${1:right}}"
-		]
-	},
-
-
-	"marginnote":{
-		"prefix":"marginnote",
-		"body":[
-			"\\marginnote[${2:left}]{${1:right}}[${3:voffset%l}]"
-		]
-	},
-
-
 	"marginnotetextwidth":{
 		"prefix":"marginnotetextwidth",
 		"body":[
@@ -53,6 +37,22 @@
 		"prefix":"marginfont",
 		"body":[
 			"\\marginfont"
+		]
+	},
+
+
+	"marginnote[]{}":{
+		"prefix":"marginnote",
+		"body":[
+			"\\marginnote[${2:left}]{${1:right}}"
+		]
+	},
+
+
+	"marginnote[]{}[]":{
+		"prefix":"marginnote",
+		"body":[
+			"\\marginnote[${2:left}]{${1:right}}[${3:voffset%l}]"
 		]
 	}
 }

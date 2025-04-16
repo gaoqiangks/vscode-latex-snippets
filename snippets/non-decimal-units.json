@@ -1,7 +1,7 @@
 {
 
 
-	"nduKeys":{
+	"nduKeys{}":{
 		"prefix":"nduKeys",
 		"body":[
 			"\\nduKeys{${1:options%keyvals}}"
@@ -9,18 +9,10 @@
 	},
 
 
-	"nduValue":{
+	"nduValue{}{}":{
 		"prefix":"nduValue",
 		"body":[
 			"\\nduValue{${1:unit group}}{${2:value}}"
-		]
-	},
-
-
-	"nduValue":{
-		"prefix":"nduValue",
-		"body":[
-			"\\nduValue{${1:unit group}}[${3:options%keyvals}]{${2:value}}"
 		]
 	},
 
@@ -41,7 +33,7 @@
 	},
 
 
-	"nduMath":{
+	"nduMath{}{}{}{}":{
 		"prefix":"nduMath",
 		"body":[
 			"\\nduMath{${1:unit group}}{${2:variable}}{${3:operator}}{${4:value}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"nduMath":{
-		"prefix":"nduMath",
-		"body":[
-			"\\nduMath{${1:unit group}}[${5:options%keyvals}]{${2:variable}}{${3:operator}}{${4:value}}"
-		]
-	},
-
-
-	"nduResult":{
+	"nduResult{}{}":{
 		"prefix":"nduResult",
 		"body":[
 			"\\nduResult{${1:unit group}}{${2:variable}}"
@@ -65,15 +49,7 @@
 	},
 
 
-	"nduResult":{
-		"prefix":"nduResult",
-		"body":[
-			"\\nduResult{${1:unit group}}[${3:options%keyvals}]{${2:variable}}"
-		]
-	},
-
-
-	"nduNormalize":{
+	"nduNormalize{}{}{}":{
 		"prefix":"nduNormalize",
 		"body":[
 			"\\nduNormalize{${1:unit group}}{${2:amount}}{${3:unit}}"
@@ -81,15 +57,7 @@
 	},
 
 
-	"nduNormalize":{
-		"prefix":"nduNormalize",
-		"body":[
-			"\\nduNormalize{${1:unit group}}[${4:options%keyvals}]{${2:amount}}{${3:unit}}"
-		]
-	},
-
-
-	"nduHeader":{
+	"nduHeader{}":{
 		"prefix":"nduHeader",
 		"body":[
 			"\\nduHeader{${1:unit name}}"
@@ -97,15 +65,7 @@
 	},
 
 
-	"nduHeader":{
-		"prefix":"nduHeader",
-		"body":[
-			"\\nduHeader{${1:unit name}}[${2:options%keyvals}]"
-		]
-	},
-
-
-	"nduSymbol":{
+	"nduSymbol{}":{
 		"prefix":"nduSymbol",
 		"body":[
 			"\\nduSymbol{${1:unit group}}"
@@ -113,7 +73,7 @@
 	},
 
 
-	"nduFactor":{
+	"nduFactor{}{}":{
 		"prefix":"nduFactor",
 		"body":[
 			"\\nduFactor{${1:unit group}}{${2:unit name}}"
@@ -121,7 +81,7 @@
 	},
 
 
-	"nduNewBaseUnit":{
+	"nduNewBaseUnit{}{}":{
 		"prefix":"nduNewBaseUnit",
 		"body":[
 			"\\nduNewBaseUnit{${1:unit group}}{${2:keyvals}}"
@@ -129,7 +89,7 @@
 	},
 
 
-	"nduNewUnitGroup":{
+	"nduNewUnitGroup{}{}":{
 		"prefix":"nduNewUnitGroup",
 		"body":[
 			"\\nduNewUnitGroup{${1:unit group}}{${2:base units}}"
@@ -137,7 +97,47 @@
 	},
 
 
-	"nduNewUnitGroup":{
+	"nduValue{}[]{}":{
+		"prefix":"nduValue",
+		"body":[
+			"\\nduValue{${1:unit group}}[${3:options%keyvals}]{${2:value}}"
+		]
+	},
+
+
+	"nduMath{}[]{}{}{}":{
+		"prefix":"nduMath",
+		"body":[
+			"\\nduMath{${1:unit group}}[${5:options%keyvals}]{${2:variable}}{${3:operator}}{${4:value}}"
+		]
+	},
+
+
+	"nduResult{}[]{}":{
+		"prefix":"nduResult",
+		"body":[
+			"\\nduResult{${1:unit group}}[${3:options%keyvals}]{${2:variable}}"
+		]
+	},
+
+
+	"nduNormalize{}[]{}{}":{
+		"prefix":"nduNormalize",
+		"body":[
+			"\\nduNormalize{${1:unit group}}[${4:options%keyvals}]{${2:amount}}{${3:unit}}"
+		]
+	},
+
+
+	"nduHeader{}[]":{
+		"prefix":"nduHeader",
+		"body":[
+			"\\nduHeader{${1:unit name}}[${2:options%keyvals}]"
+		]
+	},
+
+
+	"nduNewUnitGroup{}{}[]":{
 		"prefix":"nduNewUnitGroup",
 		"body":[
 			"\\nduNewUnitGroup{${1:unit group}}{${2:base units}}[${3:cmd}]"
@@ -145,7 +145,7 @@
 	},
 
 
-	"nduNewUnitGroup":{
+	"nduNewUnitGroup[]{}{}":{
 		"prefix":"nduNewUnitGroup",
 		"body":[
 			"\\nduNewUnitGroup[${3:keyvals}]{${1:unit group}}{${2:base units}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"nduNewUnitGroup":{
+	"nduNewUnitGroup[]{}{}[]":{
 		"prefix":"nduNewUnitGroup",
 		"body":[
 			"\\nduNewUnitGroup[${3:keyvals}]{${1:unit group}}{${2:base units}}[${4:cmd}]"

@@ -1,7 +1,7 @@
 {
 
 
-	"setupsc":{
+	"setupsc{}":{
 		"prefix":"setupsc",
 		"body":[
 			"\\setupsc{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"newenvsc":{
+	"newenvsc{}":{
 		"prefix":"newenvsc",
 		"body":[
 			"\\newenvsc{${1:envname}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"newenvsc":{
-		"prefix":"newenvsc",
-		"body":[
-			"\\newenvsc{${1:envname}}[${2:initial keys%keyvals}]"
-		]
-	},
-
-
-	"Scontents":{
+	"Scontents{}":{
 		"prefix":"Scontents",
 		"body":[
 			"\\Scontents{${1:argument}}"
@@ -33,31 +25,7 @@
 	},
 
 
-	"Scontents":{
-		"prefix":"Scontents",
-		"body":[
-			"\\Scontents[${2:options%keyvals}]{${1:argument}}"
-		]
-	},
-
-
-	"Scontents*":{
-		"prefix":"Scontents*",
-		"body":[
-			"\\Scontents*{${1:argument}}"
-		]
-	},
-
-
-	"Scontents*":{
-		"prefix":"Scontents*",
-		"body":[
-			"\\Scontents*[${2:options%keyvals}]{${1:argument}}"
-		]
-	},
-
-
-	"getstored":{
+	"getstored{}":{
 		"prefix":"getstored",
 		"body":[
 			"\\getstored{${1:seq name}}"
@@ -65,15 +33,7 @@
 	},
 
 
-	"getstored":{
-		"prefix":"getstored",
-		"body":[
-			"\\getstored[${2:index}]{${1:seq name}}"
-		]
-	},
-
-
-	"foreachsc":{
+	"foreachsc{}":{
 		"prefix":"foreachsc",
 		"body":[
 			"\\foreachsc{${1:seq name}}"
@@ -81,15 +41,7 @@
 	},
 
 
-	"foreachsc":{
-		"prefix":"foreachsc",
-		"body":[
-			"\\foreachsc[${2:options%keyvals}]{${1:seq name}}"
-		]
-	},
-
-
-	"typestored":{
+	"typestored{}":{
 		"prefix":"typestored",
 		"body":[
 			"\\typestored{${1:seq name}}"
@@ -97,15 +49,7 @@
 	},
 
 
-	"typestored":{
-		"prefix":"typestored",
-		"body":[
-			"\\typestored[${2:options%keyvals}]{${1:seq name}}"
-		]
-	},
-
-
-	"meaningsc":{
+	"meaningsc{}":{
 		"prefix":"meaningsc",
 		"body":[
 			"\\meaningsc{${1:seq name}}"
@@ -113,15 +57,7 @@
 	},
 
 
-	"meaningsc":{
-		"prefix":"meaningsc",
-		"body":[
-			"\\meaningsc[${2:options%keyvals}]{${1:seq name}}"
-		]
-	},
-
-
-	"countsc":{
+	"countsc{}":{
 		"prefix":"countsc",
 		"body":[
 			"\\countsc{${1:seq name}}"
@@ -129,10 +65,84 @@
 	},
 
 
-	"cleanseqsc":{
+	"cleanseqsc{}":{
 		"prefix":"cleanseqsc",
 		"body":[
 			"\\cleanseqsc{${1:seq name}}"
+		]
+	},
+
+
+	"Scontents*{}":{
+		"prefix":"*Scontents",
+		"body":[
+			"\\Scontents*{${1:argument}}"
+		]
+	},
+
+
+	"Scontents*[]{}":{
+		"prefix":"*Scontents",
+		"body":[
+			"\\Scontents*[${2:options%keyvals}]{${1:argument}}"
+		]
+	},
+
+
+	"newenvsc{}[]":{
+		"prefix":"newenvsc",
+		"body":[
+			"\\newenvsc{${1:envname}}[${2:initial keys%keyvals}]"
+		]
+	},
+
+
+	"Scontents[]{}":{
+		"prefix":"Scontents",
+		"body":[
+			"\\Scontents[${2:options%keyvals}]{${1:argument}}"
+		]
+	},
+
+
+	"getstored[]{}":{
+		"prefix":"getstored",
+		"body":[
+			"\\getstored[${2:index}]{${1:seq name}}"
+		]
+	},
+
+
+	"foreachsc[]{}":{
+		"prefix":"foreachsc",
+		"body":[
+			"\\foreachsc[${2:options%keyvals}]{${1:seq name}}"
+		]
+	},
+
+
+	"typestored[]{}":{
+		"prefix":"typestored",
+		"body":[
+			"\\typestored[${2:options%keyvals}]{${1:seq name}}"
+		]
+	},
+
+
+	"meaningsc[]{}":{
+		"prefix":"meaningsc",
+		"body":[
+			"\\meaningsc[${2:options%keyvals}]{${1:seq name}}"
+		]
+	},
+
+
+	"scontents":{
+		"prefix":"scontents",
+		"body":[
+			"\\begin{scontents}",
+				"\t$1",
+			"\\end{scontents}"
 		]
 	},
 
@@ -141,7 +151,7 @@
 		"prefix":"verbatimsc",
 		"body":[
 			"\\begin{verbatimsc}",
-			"\t$1",
+				"\t$1",
 			"\\end{verbatimsc}"
 		]
 	},
@@ -151,7 +161,7 @@
 		"prefix":"scontents",
 		"body":[
 			"\\begin{scontents}",
-			"\t$1",
+				"\t$1",
 			"\\end{scontents}"
 		]
 	}

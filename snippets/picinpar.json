@@ -17,7 +17,7 @@
 	},
 
 
-	"framepic":{
+	"framepic{}":{
 		"prefix":"framepic",
 		"body":[
 			"\\framepic{${1:boxname}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"prune":{
+	"prune{}{}":{
 		"prefix":"prune",
 		"body":[
 			"\\prune{${1:box1}}{${2:box2}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"wframepic":{
+	"wframepic{}":{
 		"prefix":"wframepic",
 		"body":[
 			"\\wframepic{${1:boxname}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"wincaption":{
+	"wincaption{}":{
 		"prefix":"wincaption",
 		"body":[
 			"\\wincaption{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"winrefstepcounter":{
+	"winrefstepcounter{}":{
 		"prefix":"winrefstepcounter",
 		"body":[
 			"\\winrefstepcounter{${1:counter}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"winstepcounter":{
+	"winstepcounter{}":{
 		"prefix":"winstepcounter",
 		"body":[
 			"\\winstepcounter{${1:counter}}"
@@ -73,22 +73,22 @@
 	},
 
 
-	"figwindow":{
-		"prefix":"figwindow",
-		"body":[
-			"\\begin{figwindow}",
-			"\t$1",
-			"\\end{figwindow}"
-		]
-	},
-
-
 	"window":{
 		"prefix":"window",
 		"body":[
 			"\\begin{window}",
-			"\t$1",
+				"\t$1",
 			"\\end{window}"
+		]
+	},
+
+
+	"figwindow":{
+		"prefix":"figwindow",
+		"body":[
+			"\\begin{figwindow}",
+				"\t$1",
+			"\\end{figwindow}"
 		]
 	},
 
@@ -97,7 +97,37 @@
 		"prefix":"tabwindow",
 		"body":[
 			"\\begin{tabwindow}",
-			"\t$1",
+				"\t$1",
+			"\\end{tabwindow}"
+		]
+	},
+
+
+	"window":{
+		"prefix":"window",
+		"body":[
+			"\\begin{window}",
+				"\t$1",
+			"\\end{window}"
+		]
+	},
+
+
+	"figwindow":{
+		"prefix":"figwindow",
+		"body":[
+			"\\begin{figwindow}",
+				"\t$1",
+			"\\end{figwindow}"
+		]
+	},
+
+
+	"tabwindow":{
+		"prefix":"tabwindow",
+		"body":[
+			"\\begin{tabwindow}",
+				"\t$1",
 			"\\end{tabwindow}"
 		]
 	}

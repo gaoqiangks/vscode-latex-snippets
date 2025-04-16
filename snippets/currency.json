@@ -1,7 +1,7 @@
 {
 
 
-	"DefineCurrency":{
+	"DefineCurrency{}{}":{
 		"prefix":"DefineCurrency",
 		"body":[
 			"\\DefineCurrency{${1:ISO}}{${2:maps%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"CurrencySetup":{
+	"CurrencySetup{}":{
 		"prefix":"CurrencySetup",
 		"body":[
 			"\\CurrencySetup{${1:maps%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"CurrencySetupAppend":{
+	"CurrencySetupAppend{}":{
 		"prefix":"CurrencySetupAppend",
 		"body":[
 			"\\CurrencySetupAppend{${1:maps%keyvals}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"displayCurrency":{
+	"displayCurrency{}{}":{
 		"prefix":"displayCurrency",
 		"body":[
 			"\\displayCurrency{${1:ISO}}{${2:value}}"
@@ -41,26 +41,10 @@
 	},
 
 
-	"displayCurrency":{
-		"prefix":"displayCurrency",
-		"body":[
-			"\\displayCurrency{${1:ISO}}[${3:options}]{${2:value}}"
-		]
-	},
-
-
-	"displayCurrencySymbol":{
+	"displayCurrencySymbol{}":{
 		"prefix":"displayCurrencySymbol",
 		"body":[
 			"\\displayCurrencySymbol{${1:ISO}}"
-		]
-	},
-
-
-	"displayCurrencySymbol":{
-		"prefix":"displayCurrencySymbol",
-		"body":[
-			"\\displayCurrencySymbol{${1:ISO}}[${2:options}]"
 		]
 	},
 
@@ -69,6 +53,22 @@
 		"prefix":"SetPrecision",
 		"body":[
 			"\\SetPrecision"
+		]
+	},
+
+
+	"displayCurrency{}[]{}":{
+		"prefix":"displayCurrency",
+		"body":[
+			"\\displayCurrency{${1:ISO}}[${3:options}]{${2:value}}"
+		]
+	},
+
+
+	"displayCurrencySymbol{}[]":{
+		"prefix":"displayCurrencySymbol",
+		"body":[
+			"\\displayCurrencySymbol{${1:ISO}}[${2:options}]"
 		]
 	}
 }

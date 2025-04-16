@@ -1,18 +1,10 @@
 {
 
 
-	"csvreader":{
+	"csvreader{}{}{}":{
 		"prefix":"csvreader",
 		"body":[
 			"\\csvreader{${1:file}}{${2:assignments}}{${3:command list%definition}}"
-		]
-	},
-
-
-	"csvreader":{
-		"prefix":"csvreader",
-		"body":[
-			"\\csvreader[${4:options%keyvals}]{${1:file}}{${2:assignments}}{${3:command list%definition}}"
 		]
 	},
 
@@ -57,7 +49,7 @@
 	},
 
 
-	"csvloop":{
+	"csvloop{}":{
 		"prefix":"csvloop",
 		"body":[
 			"\\csvloop{${1:options%keyvals}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"csvautotabular":{
+	"csvautotabular{}":{
 		"prefix":"csvautotabular",
 		"body":[
 			"\\csvautotabular{${1:file}}"
@@ -73,15 +65,7 @@
 	},
 
 
-	"csvautotabular":{
-		"prefix":"csvautotabular",
-		"body":[
-			"\\csvautotabular[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"csvautolongtable":{
+	"csvautolongtable{}":{
 		"prefix":"csvautolongtable",
 		"body":[
 			"\\csvautolongtable{${1:file}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"csvautolongtable":{
-		"prefix":"csvautolongtable",
-		"body":[
-			"\\csvautolongtable[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"csvautobooktabular":{
+	"csvautobooktabular{}":{
 		"prefix":"csvautobooktabular",
 		"body":[
 			"\\csvautobooktabular{${1:file}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"csvautobooktabular":{
-		"prefix":"csvautobooktabular",
-		"body":[
-			"\\csvautobooktabular[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"csvautobooklongtable":{
+	"csvautobooklongtable{}":{
 		"prefix":"csvautobooklongtable",
 		"body":[
 			"\\csvautobooklongtable{${1:file}}"
@@ -121,15 +89,7 @@
 	},
 
 
-	"csvautobooklongtable":{
-		"prefix":"csvautobooklongtable",
-		"body":[
-			"\\csvautobooklongtable[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"csvset":{
+	"csvset{}":{
 		"prefix":"csvset",
 		"body":[
 			"\\csvset{${1:options%keyvals}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"csvstyle":{
+	"csvstyle{}{}":{
 		"prefix":"csvstyle",
 		"body":[
 			"\\csvstyle{${1:key name%specialDef}}{${2:options%keyvals}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"csvnames":{
+	"csvnames{}{}":{
 		"prefix":"csvnames",
 		"body":[
 			"\\csvnames{${1:key name%specialDef}}{${2:assignments%definition}}"
@@ -153,7 +113,7 @@
 	},
 
 
-	"csvheadset":{
+	"csvheadset{}":{
 		"prefix":"csvheadset",
 		"body":[
 			"\\csvheadset{${1:assignments%definition}}"
@@ -161,7 +121,7 @@
 	},
 
 
-	"csviffirstrow":{
+	"csviffirstrow{}{}":{
 		"prefix":"csviffirstrow",
 		"body":[
 			"\\csviffirstrow{${1:then}}{${2:else}}"
@@ -169,7 +129,7 @@
 	},
 
 
-	"csvifoddrow":{
+	"csvifoddrow{}{}":{
 		"prefix":"csvifoddrow",
 		"body":[
 			"\\csvifoddrow{${1:then}}{${2:else}}"
@@ -233,7 +193,7 @@
 	},
 
 
-	"ifcsvstrcmp":{
+	"ifcsvstrcmp{}{}{}{}":{
 		"prefix":"ifcsvstrcmp",
 		"body":[
 			"\\ifcsvstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
@@ -241,7 +201,7 @@
 	},
 
 
-	"ifcsvnotstrcmp":{
+	"ifcsvnotstrcmp{}{}{}{}":{
 		"prefix":"ifcsvnotstrcmp",
 		"body":[
 			"\\ifcsvnotstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
@@ -249,7 +209,7 @@
 	},
 
 
-	"ifcsvstrequal":{
+	"ifcsvstrequal{}{}{}{}":{
 		"prefix":"ifcsvstrequal",
 		"body":[
 			"\\ifcsvstrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
@@ -257,7 +217,7 @@
 	},
 
 
-	"ifcsvprostrequal":{
+	"ifcsvprostrequal{}{}{}{}":{
 		"prefix":"ifcsvprostrequal",
 		"body":[
 			"\\ifcsvprostrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
@@ -269,6 +229,46 @@
 		"prefix":"tabularnewline",
 		"body":[
 			"\\tabularnewline"
+		]
+	},
+
+
+	"csvreader[]{}{}{}":{
+		"prefix":"csvreader",
+		"body":[
+			"\\csvreader[${4:options%keyvals}]{${1:file}}{${2:assignments}}{${3:command list%definition}}"
+		]
+	},
+
+
+	"csvautotabular[]{}":{
+		"prefix":"csvautotabular",
+		"body":[
+			"\\csvautotabular[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"csvautolongtable[]{}":{
+		"prefix":"csvautolongtable",
+		"body":[
+			"\\csvautolongtable[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"csvautobooktabular[]{}":{
+		"prefix":"csvautobooktabular",
+		"body":[
+			"\\csvautobooktabular[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"csvautobooklongtable[]{}":{
+		"prefix":"csvautobooklongtable",
+		"body":[
+			"\\csvautobooklongtable[${2:options%keyvals}]{${1:file}}"
 		]
 	}
 }

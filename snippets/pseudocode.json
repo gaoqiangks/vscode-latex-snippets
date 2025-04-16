@@ -33,7 +33,7 @@
 	},
 
 
-	"CALL":{
+	"CALL{}{}":{
 		"prefix":"CALL",
 		"body":[
 			"\\CALL{${1:procedure%text}}{${2:parameters}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"COMMENT":{
+	"COMMENT{}":{
 		"prefix":"COMMENT",
 		"body":[
 			"\\COMMENT{${1:text}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"EXTERNAL":{
+	"EXTERNAL{}":{
 		"prefix":"EXTERNAL",
 		"body":[
 			"\\EXTERNAL{${1:procedures}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"GLOBAL":{
+	"GLOBAL{}":{
 		"prefix":"GLOBAL",
 		"body":[
 			"\\GLOBAL{${1:variables}}"
@@ -233,7 +233,7 @@
 	},
 
 
-	"LOCAL":{
+	"LOCAL{}":{
 		"prefix":"LOCAL",
 		"body":[
 			"\\LOCAL{${1:variables}}"
@@ -273,7 +273,7 @@
 	},
 
 
-	"OUTPUT":{
+	"OUTPUT{}":{
 		"prefix":"OUTPUT",
 		"body":[
 			"\\OUTPUT{${1:values}}"
@@ -281,7 +281,7 @@
 	},
 
 
-	"PROCEDURE":{
+	"PROCEDURE{}{}":{
 		"prefix":"PROCEDURE",
 		"body":[
 			"\\PROCEDURE{${1:name%text}}{${2:parameters%formula}}"
@@ -297,7 +297,7 @@
 	},
 
 
-	"RETURN":{
+	"RETURN{}":{
 		"prefix":"RETURN",
 		"body":[
 			"\\RETURN{${1:values}}"
@@ -305,7 +305,7 @@
 	},
 
 
-	"STMTNUM":{
+	"STMTNUM{}{}":{
 		"prefix":"STMTNUM",
 		"body":[
 			"\\STMTNUM{${1:space%l}}{${2:label}}"
@@ -381,7 +381,17 @@
 		"prefix":"pseudocode",
 		"body":[
 			"\\begin{pseudocode}",
-			"\t$1",
+				"\t$1",
+			"\\end{pseudocode}"
+		]
+	},
+
+
+	"pseudocode":{
+		"prefix":"pseudocode",
+		"body":[
+			"\\begin{pseudocode}",
+				"\t$1",
 			"\\end{pseudocode}"
 		]
 	}

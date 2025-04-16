@@ -1,7 +1,7 @@
 {
 
 
-	"arg":{
+	"arg{}":{
 		"prefix":"arg",
 		"body":[
 			"\\arg{${1:text%plain}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"classname":{
+	"classname{}":{
 		"prefix":"classname",
 		"body":[
 			"\\classname{${1:name}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"classoption":{
+	"classoption{}":{
 		"prefix":"classoption",
 		"body":[
 			"\\classoption{${1:name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"cmd":{
+	"cmd{}":{
 		"prefix":"cmd",
 		"body":[
 			"\\cmd{${1:command}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"envb":{
+	"envb{}":{
 		"prefix":"envb",
 		"body":[
 			"\\envb{${1:envname}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"enve":{
+	"enve{}":{
 		"prefix":"enve",
 		"body":[
 			"\\enve{${1:envname}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:name}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"GetFileInfo":{
+	"GetFileInfo{}":{
 		"prefix":"GetFileInfo",
 		"body":[
 			"\\GetFileInfo{${1:file}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"marg":{
+	"marg{}":{
 		"prefix":"marg",
 		"body":[
 			"\\marg{${1:text%plain}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"meta":{
+	"meta{}":{
 		"prefix":"meta",
 		"body":[
 			"\\meta{${1:arg}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"oarg":{
+	"oarg{}":{
 		"prefix":"oarg",
 		"body":[
 			"\\oarg{${1:text%plain}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"scmd":{
+	"scmd{}":{
 		"prefix":"scmd",
 		"body":[
 			"\\scmd{${1:arg}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"substyle":{
+	"substyle{}":{
 		"prefix":"substyle",
 		"body":[
 			"\\substyle{${1:name}}"
@@ -217,15 +217,7 @@
 	},
 
 
-	"subsubsubsection":{
-		"prefix":"subsubsubsection",
-		"body":[
-			"\\subsubsubsection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"subsubsubsection":{
+	"subsubsubsection{}":{
 		"prefix":"subsubsubsection",
 		"body":[
 			"\\subsubsubsection{${1:title}}"
@@ -241,10 +233,18 @@
 	},
 
 
-	"url":{
+	"url{}":{
 		"prefix":"url",
 		"body":[
 			"\\url{${1:URL}}"
+		]
+	},
+
+
+	"subsubsubsection[]{}":{
+		"prefix":"subsubsubsection",
+		"body":[
+			"\\subsubsubsection[${2:short title}]{${1:title}}"
 		]
 	},
 
@@ -253,7 +253,7 @@
 		"prefix":"unnumtable",
 		"body":[
 			"\\begin{unnumtable}",
-			"\t$1",
+				"\t$1",
 			"\\end{unnumtable}"
 		]
 	}

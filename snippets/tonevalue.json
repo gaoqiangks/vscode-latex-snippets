@@ -1,7 +1,7 @@
 {
 
 
-	"untpoint":{
+	"untpoint{}{}":{
 		"prefix":"untpoint",
 		"body":[
 			"\\untpoint{${1:tone value}}{${2:tone name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"untpoint":{
-		"prefix":"untpoint",
-		"body":[
-			"\\untpoint[${3:options%keyvals}]{${1:tone value}}{${2:tone name}}"
-		]
-	},
-
-
-	"linkuntpoints":{
+	"linkuntpoints{{}{}}{{}{}}":{
 		"prefix":"linkuntpoints",
 		"body":[
 			"\\linkuntpoints{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"linkuntpoints":{
-		"prefix":"linkuntpoints",
-		"body":[
-			"\\linkuntpoints[${5:options}]{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
-		]
-	},
-
-
-	"drawuntpoint":{
+	"drawuntpoint{}{}{}{}{}{}{}{}":{
 		"prefix":"drawuntpoint",
 		"body":[
 			"\\drawuntpoint{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
-		]
-	},
-
-
-	"drawuntpoint":{
-		"prefix":"drawuntpoint",
-		"body":[
-			"\\drawuntpoint[${9:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
 		]
 	},
 
@@ -57,7 +33,7 @@
 	},
 
 
-	"sendiauToListStr":{
+	"sendiauToListStr{}":{
 		"prefix":"sendiauToListStr",
 		"body":[
 			"\\sendiauToListStr{${1:arg}}"
@@ -137,11 +113,45 @@
 	},
 
 
+	"untpoint[]{}{}":{
+		"prefix":"untpoint",
+		"body":[
+			"\\untpoint[${3:options%keyvals}]{${1:tone value}}{${2:tone name}}"
+		]
+	},
+
+
+	"linkuntpoints[]{{}{}}{{}{}}":{
+		"prefix":"linkuntpoints",
+		"body":[
+			"\\linkuntpoints[${5:options}]{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
+		]
+	},
+
+
+	"drawuntpoint[]{}{}{}{}{}{}{}{}":{
+		"prefix":"drawuntpoint",
+		"body":[
+			"\\drawuntpoint[${9:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
+		]
+	},
+
+
 	"untVisualisation":{
 		"prefix":"untVisualisation",
 		"body":[
 			"\\begin{untVisualisation}",
-			"\t$1",
+				"\t$1",
+			"\\end{untVisualisation}"
+		]
+	},
+
+
+	"untVisualisation":{
+		"prefix":"untVisualisation",
+		"body":[
+			"\\begin{untVisualisation}",
+				"\t$1",
 			"\\end{untVisualisation}"
 		]
 	}

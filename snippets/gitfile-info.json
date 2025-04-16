@@ -81,39 +81,7 @@
 	},
 
 
-	"gfiInfo":{
-		"prefix":"gfiInfo",
-		"body":[
-			"\\gfiInfo[${1:hash length}]"
-		]
-	},
-
-
-	"gfiInfo":{
-		"prefix":"gfiInfo",
-		"body":[
-			"\\gfiInfo[${1:hash length}][${2:date format}]"
-		]
-	},
-
-
-	"gfiInfo":{
-		"prefix":"gfiInfo",
-		"body":[
-			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}]"
-		]
-	},
-
-
-	"gfiInfo":{
-		"prefix":"gfiInfo",
-		"body":[
-			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}][${4:tcolorbox}]"
-		]
-	},
-
-
-	"gfiInclude":{
+	"gfiInclude{}":{
 		"prefix":"gfiInclude",
 		"body":[
 			"\\gfiInclude{${1:file}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"gfiInput":{
+	"gfiInput{}":{
 		"prefix":"gfiInput",
 		"body":[
 			"\\gfiInput{${1:file}}"
@@ -129,7 +97,7 @@
 	},
 
 
-	"gfiSetDate":{
+	"gfiSetDate{}{}{}{}{}{}":{
 		"prefix":"gfiSetDate",
 		"body":[
 			"\\gfiSetDate{${1:day}}{${2:month}}{${3:year}}{${4:hour}}{${5:minute}}{${6:long form}}"
@@ -137,7 +105,7 @@
 	},
 
 
-	"gfiSetAuthor":{
+	"gfiSetAuthor{}{}":{
 		"prefix":"gfiSetAuthor",
 		"body":[
 			"\\gfiSetAuthor{${1:name}}{${2:email%URL}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"gfiSetCommit":{
+	"gfiSetCommit{}{}":{
 		"prefix":"gfiSetCommit",
 		"body":[
 			"\\gfiSetCommit{${1:hash}}{${2:hash-abr}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"gfiInitInc":{
+	"gfiInitInc{}":{
 		"prefix":"gfiInitInc",
 		"body":[
 			"\\gfiInitInc{${1:file}}"
@@ -177,11 +145,43 @@
 	},
 
 
+	"gfiInfo[]":{
+		"prefix":"gfiInfo",
+		"body":[
+			"\\gfiInfo[${1:hash length}]"
+		]
+	},
+
+
+	"gfiInfo[][]":{
+		"prefix":"gfiInfo",
+		"body":[
+			"\\gfiInfo[${1:hash length}][${2:date format}]"
+		]
+	},
+
+
+	"gfiInfo[][][]":{
+		"prefix":"gfiInfo",
+		"body":[
+			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}]"
+		]
+	},
+
+
+	"gfiInfo[][][][]":{
+		"prefix":"gfiInfo",
+		"body":[
+			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}][${4:tcolorbox}]"
+		]
+	},
+
+
 	"gfiInfoBox":{
 		"prefix":"gfiInfoBox",
 		"body":[
 			"\\begin{gfiInfoBox}",
-			"\t$1",
+				"\t$1",
 			"\\end{gfiInfoBox}"
 		]
 	}

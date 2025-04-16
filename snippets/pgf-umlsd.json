@@ -1,7 +1,7 @@
 {
 
 
-	"newthread":{
+	"newthread{}{}":{
 		"prefix":"newthread",
 		"body":[
 			"\\newthread{${1:name}}{${2:text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"newthread":{
-		"prefix":"newthread",
-		"body":[
-			"\\newthread[${3:color}]{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"newinst":{
+	"newinst{}{}":{
 		"prefix":"newinst",
 		"body":[
 			"\\newinst{${1:name}}{${2:text}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"newinst":{
-		"prefix":"newinst",
-		"body":[
-			"\\newinst[${3:edge distance}]{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"mess":{
+	"mess{}{}{}":{
 		"prefix":"mess",
 		"body":[
 			"\\mess{${1:caller}}{${2:message%text}}{${3:callee}}"
-		]
-	},
-
-
-	"mess":{
-		"prefix":"mess",
-		"body":[
-			"\\mess[${4:delay}]{${1:caller}}{${2:message%text}}{${3:callee}}"
 		]
 	},
 
@@ -65,7 +41,7 @@
 	},
 
 
-	"setthreadbias":{
+	"setthreadbias{}":{
 		"prefix":"setthreadbias",
 		"body":[
 			"\\setthreadbias{${1:anchor%keyvals}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"drawthread":{
+	"drawthread{}{}":{
 		"prefix":"drawthread",
 		"body":[
 			"\\drawthread{${1:anchor1}}{${2:anchor2}}"
@@ -177,32 +153,26 @@
 	},
 
 
-	"call":{
-		"prefix":"call",
+	"newthread[]{}{}":{
+		"prefix":"newthread",
 		"body":[
-			"\\begin{call}",
-			"\t$1",
-			"\\end{call}"
+			"\\newthread[${3:color}]{${1:name}}{${2:text}}"
 		]
 	},
 
 
-	"callself":{
-		"prefix":"callself",
+	"newinst[]{}{}":{
+		"prefix":"newinst",
 		"body":[
-			"\\begin{callself}",
-			"\t$1",
-			"\\end{callself}"
+			"\\newinst[${3:edge distance}]{${1:name}}{${2:text}}"
 		]
 	},
 
 
-	"messcall":{
-		"prefix":"messcall",
+	"mess[]{}{}{}":{
+		"prefix":"mess",
 		"body":[
-			"\\begin{messcall}",
-			"\t$1",
-			"\\end{messcall}"
+			"\\mess[${4:delay}]{${1:caller}}{${2:message%text}}{${3:callee}}"
 		]
 	},
 
@@ -211,18 +181,28 @@
 		"prefix":"sequencediagram",
 		"body":[
 			"\\begin{sequencediagram}",
-			"\t$1",
+				"\t$1",
 			"\\end{sequencediagram}"
 		]
 	},
 
 
-	"callanother":{
-		"prefix":"callanother",
+	"call":{
+		"prefix":"call",
 		"body":[
-			"\\begin{callanother}",
-			"\t$1",
-			"\\end{callanother}"
+			"\\begin{call}",
+				"\t$1",
+			"\\end{call}"
+		]
+	},
+
+
+	"messcall":{
+		"prefix":"messcall",
+		"body":[
+			"\\begin{messcall}",
+				"\t$1",
+			"\\end{messcall}"
 		]
 	},
 
@@ -231,8 +211,78 @@
 		"prefix":"sdblock",
 		"body":[
 			"\\begin{sdblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{sdblock}"
+		]
+	},
+
+
+	"callself":{
+		"prefix":"callself",
+		"body":[
+			"\\begin{callself}",
+				"\t$1",
+			"\\end{callself}"
+		]
+	},
+
+
+	"callanother":{
+		"prefix":"callanother",
+		"body":[
+			"\\begin{callanother}",
+				"\t$1",
+			"\\end{callanother}"
+		]
+	},
+
+
+	"call":{
+		"prefix":"call",
+		"body":[
+			"\\begin{call}",
+				"\t$1",
+			"\\end{call}"
+		]
+	},
+
+
+	"messcall":{
+		"prefix":"messcall",
+		"body":[
+			"\\begin{messcall}",
+				"\t$1",
+			"\\end{messcall}"
+		]
+	},
+
+
+	"sdblock":{
+		"prefix":"sdblock",
+		"body":[
+			"\\begin{sdblock}",
+				"\t$1",
+			"\\end{sdblock}"
+		]
+	},
+
+
+	"callself":{
+		"prefix":"callself",
+		"body":[
+			"\\begin{callself}",
+				"\t$1",
+			"\\end{callself}"
+		]
+	},
+
+
+	"callanother":{
+		"prefix":"callanother",
+		"body":[
+			"\\begin{callanother}",
+				"\t$1",
+			"\\end{callanother}"
 		]
 	}
 }

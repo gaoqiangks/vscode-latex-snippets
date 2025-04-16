@@ -17,14 +17,6 @@
 	},
 
 
-	"lens":{
-		"prefix":"lens",
-		"body":[
-			"\\lens[${1:options%keyvals}]"
-		]
-	},
-
-
 	"lensCVG":{
 		"prefix":"lensCVG",
 		"body":[
@@ -49,7 +41,7 @@
 	},
 
 
-	"rayInterLens":{
+	"rayInterLens()()(){}":{
 		"prefix":"rayInterLens",
 		"body":[
 			"\\rayInterLens(${2:start node})(${3:intermediate node})(${4:lens distance}){${1:lens node}}"
@@ -65,26 +57,10 @@
 	},
 
 
-	"telescope":{
-		"prefix":"telescope",
-		"body":[
-			"\\telescope[${1:options%keyvals}]"
-		]
-	},
-
-
 	"mirrorCVG":{
 		"prefix":"mirrorCVG",
 		"body":[
 			"\\mirrorCVG"
-		]
-	},
-
-
-	"mirrorCVG":{
-		"prefix":"mirrorCVG",
-		"body":[
-			"\\mirrorCVG[${1:options%keyvals}]"
 		]
 	},
 
@@ -97,15 +73,7 @@
 	},
 
 
-	"mirrorDVG":{
-		"prefix":"mirrorDVG",
-		"body":[
-			"\\mirrorDVG[${1:options%keyvals}]"
-		]
-	},
-
-
-	"mirrorCVGRay":{
+	"mirrorCVGRay()(){}":{
 		"prefix":"mirrorCVGRay",
 		"body":[
 			"\\mirrorCVGRay(${2:node1})(${3:node2}){${1:mirror node}}"
@@ -113,15 +81,7 @@
 	},
 
 
-	"mirrorCVGRay":{
-		"prefix":"mirrorCVGRay",
-		"body":[
-			"\\mirrorCVGRay[${2:options%keyvals}](${3:node1})(${4:node2}){${1:mirror node}}"
-		]
-	},
-
-
-	"mirrorDVGRay":{
+	"mirrorDVGRay()(){}":{
 		"prefix":"mirrorDVGRay",
 		"body":[
 			"\\mirrorDVGRay(${2:node1})(${3:node2}){${1:mirror node}}"
@@ -129,15 +89,7 @@
 	},
 
 
-	"mirrorDVGRay":{
-		"prefix":"mirrorDVGRay",
-		"body":[
-			"\\mirrorDVGRay[${2:options%keyvals}](${3:node1})(${4:node2}){${1:mirror node}}"
-		]
-	},
-
-
-	"planMirrorRay":{
+	"planMirrorRay()()(){}":{
 		"prefix":"planMirrorRay",
 		"body":[
 			"\\planMirrorRay(${2:mirror begin})(${3:mirror end})(${4:original point}){${1:new point}}"
@@ -145,7 +97,7 @@
 	},
 
 
-	"symPlan":{
+	"symPlan()(){}":{
 		"prefix":"symPlan",
 		"body":[
 			"\\symPlan(${2:node1})(${3:node2}){${1:stuff}}"
@@ -161,15 +113,7 @@
 	},
 
 
-	"beamLight":{
-		"prefix":"beamLight",
-		"body":[
-			"\\beamLight[${1:options%keyvals}]"
-		]
-	},
-
-
-	"refractionRay":{
+	"refractionRay()()()(){}{}{}":{
 		"prefix":"refractionRay",
 		"body":[
 			"\\refractionRay(${4:A})(${5:B})(${6:C})(${7:D}){${1:n1}}{${2:n2}}{${3:end node}}"
@@ -185,26 +129,10 @@
 	},
 
 
-	"psprism":{
-		"prefix":"psprism",
-		"body":[
-			"\\psprism[${1:options%keyvals}]"
-		]
-	},
-
-
 	"lensSPH":{
 		"prefix":"lensSPH",
 		"body":[
 			"\\lensSPH"
-		]
-	},
-
-
-	"lensSPH":{
-		"prefix":"lensSPH",
-		"body":[
-			"\\lensSPH[${1:options%keyvals}]"
 		]
 	},
 
@@ -217,14 +145,6 @@
 	},
 
 
-	"mirrorCVG":{
-		"prefix":"mirrorCVG",
-		"body":[
-			"\\mirrorCVG[${1:options%keyvals}]"
-		]
-	},
-
-
 	"mirrorDVG":{
 		"prefix":"mirrorDVG",
 		"body":[
@@ -233,15 +153,7 @@
 	},
 
 
-	"mirrorDVG":{
-		"prefix":"mirrorDVG",
-		"body":[
-			"\\mirrorDVG[${1:options%keyvals}]"
-		]
-	},
-
-
-	"ABinterSPHLens":{
+	"ABinterSPHLens()()(){}":{
 		"prefix":"ABinterSPHLens",
 		"body":[
 			"\\ABinterSPHLens(${2:A})(${3:B})(${4:center}){${1:name}}"
@@ -249,7 +161,7 @@
 	},
 
 
-	"lensSPHRay":{
+	"lensSPHRay()(){}{}{}":{
 		"prefix":"lensSPHRay",
 		"body":[
 			"\\lensSPHRay(${4:A})(${5:B}){${1:refractA}}{${2:refractB}}{${3:node name}}"
@@ -257,26 +169,10 @@
 	},
 
 
-	"lensSPHRay":{
-		"prefix":"lensSPHRay",
-		"body":[
-			"\\lensSPHRay[${4:options%keyvals}](${5:A})(${6:B}){${1:refractA}}{${2:refractB}}{${3:node name}}"
-		]
-	},
-
-
-	"reflectionRay":{
+	"reflectionRay()(){}":{
 		"prefix":"reflectionRay",
 		"body":[
 			"\\reflectionRay(${2:A})(${3:B}){${1:node name}}"
-		]
-	},
-
-
-	"reflectionRay":{
-		"prefix":"reflectionRay",
-		"body":[
-			"\\reflectionRay[${2:options%keyvals}](${3:A})(${4:B}){${1:node name}}"
 		]
 	},
 
@@ -289,7 +185,7 @@
 	},
 
 
-	"Arrows":{
+	"Arrows()()":{
 		"prefix":"Arrows",
 		"body":[
 			"\\Arrows(${1:nodeA})(${2:nodeB})"
@@ -297,15 +193,7 @@
 	},
 
 
-	"Arrows":{
-		"prefix":"Arrows",
-		"body":[
-			"\\Arrows[${1:options%keyvals}](${2:nodeA})(${3:nodeB})"
-		]
-	},
-
-
-	"psOutLine":{
+	"psOutLine()(){}":{
 		"prefix":"psOutLine",
 		"body":[
 			"\\psOutLine(${2:nodeA})(${3:nodeB}){${1:end node}}"
@@ -313,15 +201,7 @@
 	},
 
 
-	"psOutLine":{
-		"prefix":"psOutLine",
-		"body":[
-			"\\psOutLine[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:end node}}"
-		]
-	},
-
-
-	"psBeforeLine":{
+	"psBeforeLine()(){}":{
 		"prefix":"psBeforeLine",
 		"body":[
 			"\\psBeforeLine(${2:nodeA})(${3:nodeB}){${1:start node}}"
@@ -329,15 +209,7 @@
 	},
 
 
-	"psBeforeLine":{
-		"prefix":"psBeforeLine",
-		"body":[
-			"\\psBeforeLine[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:start node}}"
-		]
-	},
-
-
-	"Parallel":{
+	"Parallel()()(){}":{
 		"prefix":"Parallel",
 		"body":[
 			"\\Parallel(${2:nodeA})(${3:nodeB})(${4:start node}){${1:end node}}"
@@ -345,15 +217,7 @@
 	},
 
 
-	"Parallel":{
-		"prefix":"Parallel",
-		"body":[
-			"\\Parallel[${2:options%keyvals}](${3:nodeA})(${4:nodeB})(${5:start node}){${1:end node}}"
-		]
-	},
-
-
-	"ABinterCD":{
+	"ABinterCD()()()(){}":{
 		"prefix":"ABinterCD",
 		"body":[
 			"\\ABinterCD(${2:A})(${3:B})(${4:C})(${5:D}){${1:E}}"
@@ -361,7 +225,7 @@
 	},
 
 
-	"nodeBetween":{
+	"nodeBetween()(){}":{
 		"prefix":"nodeBetween",
 		"body":[
 			"\\nodeBetween(${2:A})(${3:B}){${1:C}}"
@@ -369,7 +233,7 @@
 	},
 
 
-	"rotateNode":{
+	"rotateNode{}{}":{
 		"prefix":"rotateNode",
 		"body":[
 			"\\rotateNode{${1:node name}}{${2:degrees}}"
@@ -377,7 +241,7 @@
 	},
 
 
-	"rotateTriangle":{
+	"rotateTriangle{}{}{}{}":{
 		"prefix":"rotateTriangle",
 		"body":[
 			"\\rotateTriangle{${1:nodeA}}{${2:nodeB}}{${3:nodeC}}{${4:degrees}}"
@@ -385,7 +249,7 @@
 	},
 
 
-	"rotateFrame":{
+	"rotateFrame{}{}{}{}{}":{
 		"prefix":"rotateFrame",
 		"body":[
 			"\\rotateFrame{${1:nodeA}}{${2:nodeB}}{${3:nodeC}}{${4:nodeD}}{${5:degrees}}"
@@ -393,18 +257,10 @@
 	},
 
 
-	"arrowLine":{
+	"arrowLine()(){}":{
 		"prefix":"arrowLine",
 		"body":[
 			"\\arrowLine(${2:start})(${3:end}){${1:arrow number}}"
-		]
-	},
-
-
-	"arrowLine":{
-		"prefix":"arrowLine",
-		"body":[
-			"\\arrowLine[${2:options%keyvals}](${3:start})(${4:end}){${1:arrow number}}"
 		]
 	},
 
@@ -417,7 +273,7 @@
 	},
 
 
-	"pslensDVG":{
+	"pslensDVG{}{}":{
 		"prefix":"pslensDVG",
 		"body":[
 			"\\pslensDVG{${1:width}}{${2:height}}"
@@ -425,7 +281,7 @@
 	},
 
 
-	"pslensCVG":{
+	"pslensCVG{}{}":{
 		"prefix":"pslensCVG",
 		"body":[
 			"\\pslensCVG{${1:width}}{${2:height}}"
@@ -477,6 +333,150 @@
 		"prefix":"psprismColor",
 		"body":[
 			"\\psprismColor"
+		]
+	},
+
+
+	"lens[]":{
+		"prefix":"lens",
+		"body":[
+			"\\lens[${1:options%keyvals}]"
+		]
+	},
+
+
+	"telescope[]":{
+		"prefix":"telescope",
+		"body":[
+			"\\telescope[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mirrorCVG[]":{
+		"prefix":"mirrorCVG",
+		"body":[
+			"\\mirrorCVG[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mirrorDVG[]":{
+		"prefix":"mirrorDVG",
+		"body":[
+			"\\mirrorDVG[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mirrorCVGRay[]()(){}":{
+		"prefix":"mirrorCVGRay",
+		"body":[
+			"\\mirrorCVGRay[${2:options%keyvals}](${3:node1})(${4:node2}){${1:mirror node}}"
+		]
+	},
+
+
+	"mirrorDVGRay[]()(){}":{
+		"prefix":"mirrorDVGRay",
+		"body":[
+			"\\mirrorDVGRay[${2:options%keyvals}](${3:node1})(${4:node2}){${1:mirror node}}"
+		]
+	},
+
+
+	"beamLight[]":{
+		"prefix":"beamLight",
+		"body":[
+			"\\beamLight[${1:options%keyvals}]"
+		]
+	},
+
+
+	"psprism[]":{
+		"prefix":"psprism",
+		"body":[
+			"\\psprism[${1:options%keyvals}]"
+		]
+	},
+
+
+	"lensSPH[]":{
+		"prefix":"lensSPH",
+		"body":[
+			"\\lensSPH[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mirrorCVG[]":{
+		"prefix":"mirrorCVG",
+		"body":[
+			"\\mirrorCVG[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mirrorDVG[]":{
+		"prefix":"mirrorDVG",
+		"body":[
+			"\\mirrorDVG[${1:options%keyvals}]"
+		]
+	},
+
+
+	"lensSPHRay[]()(){}{}{}":{
+		"prefix":"lensSPHRay",
+		"body":[
+			"\\lensSPHRay[${4:options%keyvals}](${5:A})(${6:B}){${1:refractA}}{${2:refractB}}{${3:node name}}"
+		]
+	},
+
+
+	"reflectionRay[]()(){}":{
+		"prefix":"reflectionRay",
+		"body":[
+			"\\reflectionRay[${2:options%keyvals}](${3:A})(${4:B}){${1:node name}}"
+		]
+	},
+
+
+	"Arrows[]()()":{
+		"prefix":"Arrows",
+		"body":[
+			"\\Arrows[${1:options%keyvals}](${2:nodeA})(${3:nodeB})"
+		]
+	},
+
+
+	"psOutLine[]()(){}":{
+		"prefix":"psOutLine",
+		"body":[
+			"\\psOutLine[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:end node}}"
+		]
+	},
+
+
+	"psBeforeLine[]()(){}":{
+		"prefix":"psBeforeLine",
+		"body":[
+			"\\psBeforeLine[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:start node}}"
+		]
+	},
+
+
+	"Parallel[]()()(){}":{
+		"prefix":"Parallel",
+		"body":[
+			"\\Parallel[${2:options%keyvals}](${3:nodeA})(${4:nodeB})(${5:start node}){${1:end node}}"
+		]
+	},
+
+
+	"arrowLine[]()(){}":{
+		"prefix":"arrowLine",
+		"body":[
+			"\\arrowLine[${2:options%keyvals}](${3:start})(${4:end}){${1:arrow number}}"
 		]
 	}
 }

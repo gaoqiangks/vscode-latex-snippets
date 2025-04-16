@@ -1,7 +1,7 @@
 {
 
 
-	"CodeHigh":{
+	"CodeHigh{}":{
 		"prefix":"CodeHigh",
 		"body":[
 			"\\CodeHigh{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"dochighinput":{
+	"dochighinput{}":{
 		"prefix":"dochighinput",
 		"body":[
 			"\\dochighinput{${1:file}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"dochighinput":{
-		"prefix":"dochighinput",
-		"body":[
-			"\\dochighinput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"fakeverb":{
+	"fakeverb{}":{
 		"prefix":"fakeverb",
 		"body":[
 			"\\fakeverb{${1:verbatim content%definition}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"NewCodeHighEnv":{
+	"NewCodeHighEnv{}{}":{
 		"prefix":"NewCodeHighEnv",
 		"body":[
 			"\\NewCodeHighEnv{${1:envname}}{${2:options%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"NewCodeHighInput":{
+	"NewCodeHighInput{}{}":{
 		"prefix":"NewCodeHighInput",
 		"body":[
 			"\\NewCodeHighInput{${1:command}}{${2:options%keyvals}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"AddCodeHighRule":{
+	"AddCodeHighRule{}{}{}":{
 		"prefix":"AddCodeHighRule",
 		"body":[
 			"\\AddCodeHighRule{${1:type}}{${2:name}}{${3:regex%definition}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"AddCodeHighRule":{
-		"prefix":"AddCodeHighRule",
-		"body":[
-			"\\AddCodeHighRule[${4:language}]{${1:type}}{${2:name}}{${3:regex%definition}}"
-		]
-	},
-
-
-	"SetCodeHighStyle":{
+	"SetCodeHighStyle{}{}":{
 		"prefix":"SetCodeHighStyle",
 		"body":[
 			"\\SetCodeHighStyle{${1:type}}{${2:color}}"
@@ -73,15 +57,7 @@
 	},
 
 
-	"SetCodeHighStyle":{
-		"prefix":"SetCodeHighStyle",
-		"body":[
-			"\\SetCodeHighStyle[${3:theme}]{${1:type}}{${2:color}}"
-		]
-	},
-
-
-	"GetCodeHighStyle":{
+	"GetCodeHighStyle{}":{
 		"prefix":"GetCodeHighStyle",
 		"body":[
 			"\\GetCodeHighStyle{${1:type}}"
@@ -89,18 +65,42 @@
 	},
 
 
-	"GetCodeHighStyle":{
-		"prefix":"GetCodeHighStyle",
+	"SetCodeHighTracing{}":{
+		"prefix":"SetCodeHighTracing",
 		"body":[
-			"\\GetCodeHighStyle[${2:theme}]{${1:type}}"
+			"\\SetCodeHighTracing{${1:options%keyvals}}"
 		]
 	},
 
 
-	"SetCodeHighTracing":{
-		"prefix":"SetCodeHighTracing",
+	"dochighinput[]{}":{
+		"prefix":"dochighinput",
 		"body":[
-			"\\SetCodeHighTracing{${1:options%keyvals}}"
+			"\\dochighinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"AddCodeHighRule[]{}{}{}":{
+		"prefix":"AddCodeHighRule",
+		"body":[
+			"\\AddCodeHighRule[${4:language}]{${1:type}}{${2:name}}{${3:regex%definition}}"
+		]
+	},
+
+
+	"SetCodeHighStyle[]{}{}":{
+		"prefix":"SetCodeHighStyle",
+		"body":[
+			"\\SetCodeHighStyle[${3:theme}]{${1:type}}{${2:color}}"
+		]
+	},
+
+
+	"GetCodeHighStyle[]{}":{
+		"prefix":"GetCodeHighStyle",
+		"body":[
+			"\\GetCodeHighStyle[${2:theme}]{${1:type}}"
 		]
 	},
 
@@ -109,7 +109,7 @@
 		"prefix":"codehigh",
 		"body":[
 			"\\begin{codehigh}",
-			"\t$1",
+				"\t$1",
 			"\\end{codehigh}"
 		]
 	},
@@ -119,7 +119,27 @@
 		"prefix":"demohigh",
 		"body":[
 			"\\begin{demohigh}",
-			"\t$1",
+				"\t$1",
+			"\\end{demohigh}"
+		]
+	},
+
+
+	"codehigh":{
+		"prefix":"codehigh",
+		"body":[
+			"\\begin{codehigh}",
+				"\t$1",
+			"\\end{codehigh}"
+		]
+	},
+
+
+	"demohigh":{
+		"prefix":"demohigh",
+		"body":[
+			"\\begin{demohigh}",
+				"\t$1",
 			"\\end{demohigh}"
 		]
 	}

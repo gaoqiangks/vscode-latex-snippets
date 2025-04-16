@@ -1,7 +1,7 @@
 {
 
 
-	"OnlyIfFileExists":{
+	"OnlyIfFileExists{}{}":{
 		"prefix":"OnlyIfFileExists",
 		"body":[
 			"\\OnlyIfFileExists{${1:file}}{${2:code}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"NotIfFileExists":{
+	"NotIfFileExists{}{}":{
 		"prefix":"NotIfFileExists",
 		"body":[
 			"\\NotIfFileExists{${1:file}}{${2:code}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"matlabfig":{
+	"matlabfig{}":{
 		"prefix":"matlabfig",
 		"body":[
 			"\\matlabfig{${1:file}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"matlabfig":{
-		"prefix":"matlabfig",
-		"body":[
-			"\\matlabfig[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"mathfig":{
+	"mathfig{}":{
 		"prefix":"mathfig",
 		"body":[
 			"\\mathfig{${1:file}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"mathfig":{
-		"prefix":"mathfig",
-		"body":[
-			"\\mathfig[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"psfragfig":{
+	"psfragfig{}":{
 		"prefix":"psfragfig",
 		"body":[
 			"\\psfragfig{${1:file}}"
@@ -57,7 +41,23 @@
 	},
 
 
-	"psfragfig":{
+	"matlabfig[]{}":{
+		"prefix":"matlabfig",
+		"body":[
+			"\\matlabfig[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"mathfig[]{}":{
+		"prefix":"mathfig",
+		"body":[
+			"\\mathfig[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"psfragfig[]{}":{
 		"prefix":"psfragfig",
 		"body":[
 			"\\psfragfig[${2:options%keyvals}]{${1:file}}"

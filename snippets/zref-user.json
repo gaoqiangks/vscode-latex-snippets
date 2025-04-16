@@ -1,7 +1,7 @@
 {
 
 
-	"zlabel":{
+	"zlabel{}":{
 		"prefix":"zlabel",
 		"body":[
 			"\\zlabel{${1:label}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"zkvlabel":{
+	"zkvlabel{}{}":{
 		"prefix":"zkvlabel",
 		"body":[
 			"\\zkvlabel{${1:keyvals}}{${2:label}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"zref":{
+	"zref{}":{
 		"prefix":"zref",
 		"body":[
 			"\\zref{${1:label}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"zref":{
-		"prefix":"zref",
-		"body":[
-			"\\zref[${2:propname%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"zpageref":{
+	"zpageref{}":{
 		"prefix":"zpageref",
 		"body":[
 			"\\zpageref{${1:label}}"
@@ -41,10 +33,18 @@
 	},
 
 
-	"zrefused":{
+	"zrefused{}":{
 		"prefix":"zrefused",
 		"body":[
 			"\\zrefused{${1:label}}"
+		]
+	},
+
+
+	"zref[]{}":{
+		"prefix":"zref",
+		"body":[
+			"\\zref[${2:propname%keyvals}]{${1:label}}"
 		]
 	}
 }

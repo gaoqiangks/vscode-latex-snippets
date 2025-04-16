@@ -1,7 +1,7 @@
 {
 
 
-	"selectlanguage":{
+	"selectlanguage{}":{
 		"prefix":"selectlanguage",
 		"body":[
 			"\\selectlanguage{${1:language}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"foreignlanguage":{
+	"foreignlanguage{}{}":{
 		"prefix":"foreignlanguage",
 		"body":[
 			"\\foreignlanguage{${1:language}}{${2:text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"foreignlanguage":{
-		"prefix":"foreignlanguage",
-		"body":[
-			"\\foreignlanguage[${3:options%keyvals}]{${1:language}}{${2:text}}"
-		]
-	},
-
-
-	"babeltags":{
+	"babeltags{}":{
 		"prefix":"babeltags",
 		"body":[
 			"\\babeltags{${1:tag1=lang1,tag2=lang2,...}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"babelensure":{
+	"babelensure{}":{
 		"prefix":"babelensure",
 		"body":[
 			"\\babelensure{${1:language}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"babelensure":{
-		"prefix":"babelensure",
-		"body":[
-			"\\babelensure[${2:options%keyvals}]{${1:language}}"
-		]
-	},
-
-
-	"shorthandon":{
+	"shorthandon{}":{
 		"prefix":"shorthandon",
 		"body":[
 			"\\shorthandon{${1:characters}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"shorthandoff":{
+	"shorthandoff{}":{
 		"prefix":"shorthandoff",
 		"body":[
 			"\\shorthandoff{${1:characters}}"
@@ -65,15 +49,7 @@
 	},
 
 
-	"shorthandoff*":{
-		"prefix":"shorthandoff*",
-		"body":[
-			"\\shorthandoff*{${1:characters}}"
-		]
-	},
-
-
-	"useshorthands":{
+	"useshorthands{}":{
 		"prefix":"useshorthands",
 		"body":[
 			"\\useshorthands{${1:char}}"
@@ -81,15 +57,7 @@
 	},
 
 
-	"useshorthands*":{
-		"prefix":"useshorthands*",
-		"body":[
-			"\\useshorthands*{${1:char}}"
-		]
-	},
-
-
-	"defineshorthand":{
+	"defineshorthand{}{}":{
 		"prefix":"defineshorthand",
 		"body":[
 			"\\defineshorthand{${1:shorthand}}{${2:code}}"
@@ -97,15 +65,7 @@
 	},
 
 
-	"defineshorthand":{
-		"prefix":"defineshorthand",
-		"body":[
-			"\\defineshorthand[${3:lang1,lang2,...}]{${1:shorthand}}{${2:code}}"
-		]
-	},
-
-
-	"languageshorthands":{
+	"languageshorthands{}":{
 		"prefix":"languageshorthands",
 		"body":[
 			"\\languageshorthands{${1:language}}"
@@ -113,7 +73,7 @@
 	},
 
 
-	"babelshorthand":{
+	"babelshorthand{}":{
 		"prefix":"babelshorthand",
 		"body":[
 			"\\babelshorthand{${1:shorthand}}"
@@ -121,7 +81,7 @@
 	},
 
 
-	"ifbabelshorthand":{
+	"ifbabelshorthand{}{}{}":{
 		"prefix":"ifbabelshorthand",
 		"body":[
 			"\\ifbabelshorthand{${1:character}}{${2:true}}{${3:false}}"
@@ -129,7 +89,7 @@
 	},
 
 
-	"textormath":{
+	"textormath{}{}":{
 		"prefix":"textormath",
 		"body":[
 			"\\textormath{${1:text code}}{${2:math code%formula}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"AfterBabelLanguage":{
+	"AfterBabelLanguage{}{}":{
 		"prefix":"AfterBabelLanguage",
 		"body":[
 			"\\AfterBabelLanguage{${1:option_name}}{${2:code}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"babelfont":{
+	"babelfont{}{}":{
 		"prefix":"babelfont",
 		"body":[
 			"\\babelfont{${1:font_family}}{${2:font_name}}"
@@ -153,31 +113,7 @@
 	},
 
 
-	"babelfont":{
-		"prefix":"babelfont",
-		"body":[
-			"\\babelfont{${1:font_family}}[${3:font_options%keyvals}]{${2:font_name}}"
-		]
-	},
-
-
-	"babelfont":{
-		"prefix":"babelfont",
-		"body":[
-			"\\babelfont[${3:lang1,lang2,...}]{${1:font_family}}{${2:font_name}}"
-		]
-	},
-
-
-	"babelfont":{
-		"prefix":"babelfont",
-		"body":[
-			"\\babelfont[${3:lang1,lang2,...}]{${1:font_family}}[${4:font_options%keyvals}]{${2:font_name}}"
-		]
-	},
-
-
-	"setlocalecaption":{
+	"setlocalecaption{}{}{}":{
 		"prefix":"setlocalecaption",
 		"body":[
 			"\\setlocalecaption{${1:language}}{${2:caption_name}}{${3:string}}"
@@ -185,7 +121,7 @@
 	},
 
 
-	"BabelUppercaseMapping":{
+	"BabelUppercaseMapping{}{}{}":{
 		"prefix":"BabelUppercaseMapping",
 		"body":[
 			"\\BabelUppercaseMapping{${1:locale-name}}{${2:codepoint}}{${3:output}}"
@@ -193,7 +129,7 @@
 	},
 
 
-	"BabelLowercaseMapping":{
+	"BabelLowercaseMapping{}{}{}":{
 		"prefix":"BabelLowercaseMapping",
 		"body":[
 			"\\BabelLowercaseMapping{${1:locale-name}}{${2:codepoint}}{${3:output}}"
@@ -201,15 +137,7 @@
 	},
 
 
-	"babelprovide":{
-		"prefix":"babelprovide",
-		"body":[
-			"\\babelprovide[${2:options%keyvals}]{${1:language}}"
-		]
-	},
-
-
-	"localenumeral":{
+	"localenumeral{}{}":{
 		"prefix":"localenumeral",
 		"body":[
 			"\\localenumeral{${1:style}}{${2:number}}"
@@ -217,7 +145,7 @@
 	},
 
 
-	"localecounter":{
+	"localecounter{}{}":{
 		"prefix":"localecounter",
 		"body":[
 			"\\localecounter{${1:style}}{${2:counter}}"
@@ -225,7 +153,7 @@
 	},
 
 
-	"localedate":{
+	"localedate{}{}{}":{
 		"prefix":"localedate",
 		"body":[
 			"\\localedate{${1:year}}{${2:month}}{${3:day}}"
@@ -233,26 +161,10 @@
 	},
 
 
-	"localedate":{
-		"prefix":"localedate",
-		"body":[
-			"\\localedate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
-		]
-	},
-
-
-	"babelcalendar":{
+	"babelcalendar{}{}{}{}":{
 		"prefix":"babelcalendar",
 		"body":[
 			"\\babelcalendar{${1:calendar}}{${2:year-macro%cmd}}{${3:month-macro%cmd}}{${4:day-macro%cmd}}"
-		]
-	},
-
-
-	"babelcalendar":{
-		"prefix":"babelcalendar",
-		"body":[
-			"\\babelcalendar[${5:YYYY-MM-DD}]{${1:calendar}}{${2:year-macro%cmd}}{${3:month-macro%cmd}}{${4:day-macro%cmd}}"
 		]
 	},
 
@@ -281,7 +193,7 @@
 	},
 
 
-	"iflanguage":{
+	"iflanguage{}{}{}":{
 		"prefix":"iflanguage",
 		"body":[
 			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
@@ -289,7 +201,7 @@
 	},
 
 
-	"localeinfo":{
+	"localeinfo{}":{
 		"prefix":"localeinfo",
 		"body":[
 			"\\localeinfo{${1:field%keyvals}}"
@@ -297,15 +209,7 @@
 	},
 
 
-	"localeinfo*":{
-		"prefix":"localeinfo*",
-		"body":[
-			"\\localeinfo*{${1:field%keyvals}}"
-		]
-	},
-
-
-	"getlocaleproperty":{
+	"getlocaleproperty{}{}{}":{
 		"prefix":"getlocaleproperty",
 		"body":[
 			"\\getlocaleproperty{${1:cmd}}{${2:locale}}{${3:property}}"
@@ -313,15 +217,7 @@
 	},
 
 
-	"getlocaleproperty*":{
-		"prefix":"getlocaleproperty*",
-		"body":[
-			"\\getlocaleproperty*{${1:cmd}}{${2:locale}}{${3:property}}"
-		]
-	},
-
-
-	"ShowLocaleProperties":{
+	"ShowLocaleProperties{}":{
 		"prefix":"ShowLocaleProperties",
 		"body":[
 			"\\ShowLocaleProperties{${1:language}}"
@@ -329,7 +225,7 @@
 	},
 
 
-	"LocaleForEach":{
+	"LocaleForEach{}":{
 		"prefix":"LocaleForEach",
 		"body":[
 			"\\LocaleForEach{${1:code}}"
@@ -353,18 +249,10 @@
 	},
 
 
-	"babelhyphen":{
+	"babelhyphen{}":{
 		"prefix":"babelhyphen",
 		"body":[
 			"\\babelhyphen{${1:text}}"
-		]
-	},
-
-
-	"babelhyphen*":{
-		"prefix":"babelhyphen*",
-		"body":[
-			"\\babelhyphen*{${1:text}}"
 		]
 	},
 
@@ -377,7 +265,7 @@
 	},
 
 
-	"babelhyphenation":{
+	"babelhyphenation{}":{
 		"prefix":"babelhyphenation",
 		"body":[
 			"\\babelhyphenation{${1:exceptions}}"
@@ -385,15 +273,7 @@
 	},
 
 
-	"babelhyphenation":{
-		"prefix":"babelhyphenation",
-		"body":[
-			"\\babelhyphenation[${2:lang1,lang2,...}]{${1:exceptions}}"
-		]
-	},
-
-
-	"babelpatterns":{
+	"babelpatterns{}":{
 		"prefix":"babelpatterns",
 		"body":[
 			"\\babelpatterns{${1:patterns}}"
@@ -401,15 +281,7 @@
 	},
 
 
-	"babelpatterns":{
-		"prefix":"babelpatterns",
-		"body":[
-			"\\babelpatterns[${2:lang1,lang2,...}]{${1:patterns}}"
-		]
-	},
-
-
-	"babelhyphenmins":{
+	"babelhyphenmins{}{}":{
 		"prefix":"babelhyphenmins",
 		"body":[
 			"\\babelhyphenmins{${1:left}}{${2:right}}"
@@ -417,63 +289,7 @@
 	},
 
 
-	"babelhyphenmins":{
-		"prefix":"babelhyphenmins",
-		"body":[
-			"\\babelhyphenmins{${1:left}}{${2:right}}[${3:hyphenationmin}]"
-		]
-	},
-
-
-	"babelhyphenmins":{
-		"prefix":"babelhyphenmins",
-		"body":[
-			"\\babelhyphenmins[${3:lang1,lang2,...}]{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"babelhyphenmins":{
-		"prefix":"babelhyphenmins",
-		"body":[
-			"\\babelhyphenmins[${3:lang1,lang2,...}]{${1:left}}{${2:right}}[${4:hyphenationmin}]"
-		]
-	},
-
-
-	"babelhyphenmins*":{
-		"prefix":"babelhyphenmins*",
-		"body":[
-			"\\babelhyphenmins*{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"babelhyphenmins*":{
-		"prefix":"babelhyphenmins*",
-		"body":[
-			"\\babelhyphenmins*{${1:left}}{${2:right}}[${3:hyphenationmin}]"
-		]
-	},
-
-
-	"babelhyphenmins*":{
-		"prefix":"babelhyphenmins*",
-		"body":[
-			"\\babelhyphenmins*[${3:lang1,lang2,...}]{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"babelhyphenmins*":{
-		"prefix":"babelhyphenmins*",
-		"body":[
-			"\\babelhyphenmins*[${3:lang1,lang2,...}]{${1:left}}{${2:right}}[${4:hyphenationmin}]"
-		]
-	},
-
-
-	"babelposthyphenation":{
+	"babelposthyphenation{}{}{}":{
 		"prefix":"babelposthyphenation",
 		"body":[
 			"\\babelposthyphenation{${1:hypenrules-name}}{${2:lua-pattern}}{${3:replacement}}"
@@ -481,15 +297,7 @@
 	},
 
 
-	"babelposthyphenation":{
-		"prefix":"babelposthyphenation",
-		"body":[
-			"\\babelposthyphenation[${4:options%keyvals}]{${1:hypenrules-name}}{${2:lua-pattern}}{${3:replacement}}"
-		]
-	},
-
-
-	"babelprehyphenation":{
+	"babelprehyphenation{}{}{}":{
 		"prefix":"babelprehyphenation",
 		"body":[
 			"\\babelprehyphenation{${1:locale-name}}{${2:lua-pattern}}{${3:replacement}}"
@@ -497,15 +305,7 @@
 	},
 
 
-	"babelprehyphenation":{
-		"prefix":"babelprehyphenation",
-		"body":[
-			"\\babelprehyphenation[${4:options%keyvals}]{${1:locale-name}}{${2:lua-pattern}}{${3:replacement}}"
-		]
-	},
-
-
-	"enablelocaletransform":{
+	"enablelocaletransform{}":{
 		"prefix":"enablelocaletransform",
 		"body":[
 			"\\enablelocaletransform{${1:transform%keyvals}}"
@@ -513,7 +313,7 @@
 	},
 
 
-	"disablelocaletransform":{
+	"disablelocaletransform{}":{
 		"prefix":"disablelocaletransform",
 		"body":[
 			"\\disablelocaletransform{${1:transform%keyvals}}"
@@ -521,7 +321,7 @@
 	},
 
 
-	"localeprehyphenation":{
+	"localeprehyphenation{}":{
 		"prefix":"localeprehyphenation",
 		"body":[
 			"\\localeprehyphenation{${1:string}}"
@@ -529,7 +329,7 @@
 	},
 
 
-	"babelcharclass":{
+	"babelcharclass{}{}{}":{
 		"prefix":"babelcharclass",
 		"body":[
 			"\\babelcharclass{${1:locale}}{${2:name}}{${3:char-list}}"
@@ -537,7 +337,7 @@
 	},
 
 
-	"babelinterchar":{
+	"babelinterchar{}{}{}{}":{
 		"prefix":"babelinterchar",
 		"body":[
 			"\\babelinterchar{${1:locale}}{${2:class-first}}{${3:class-second}}{${4:code}}"
@@ -545,15 +345,7 @@
 	},
 
 
-	"babelinterchar":{
-		"prefix":"babelinterchar",
-		"body":[
-			"\\babelinterchar[${5:options%keyvals}]{${1:locale}}{${2:class-first}}{${3:class-second}}{${4:code}}"
-		]
-	},
-
-
-	"enablelocaleinterchar":{
+	"enablelocaleinterchar{}":{
 		"prefix":"enablelocaleinterchar",
 		"body":[
 			"\\enablelocaleinterchar{${1:label}}"
@@ -561,7 +353,7 @@
 	},
 
 
-	"disablelocaleinterchar":{
+	"disablelocaleinterchar{}":{
 		"prefix":"disablelocaleinterchar",
 		"body":[
 			"\\disablelocaleinterchar{${1:label}}"
@@ -569,7 +361,7 @@
 	},
 
 
-	"IfBabelIntercharT":{
+	"IfBabelIntercharT{}{}":{
 		"prefix":"IfBabelIntercharT",
 		"body":[
 			"\\IfBabelIntercharT{${1:interchar-list}}{${2:code}}"
@@ -577,7 +369,7 @@
 	},
 
 
-	"ensureascii":{
+	"ensureascii{}":{
 		"prefix":"ensureascii",
 		"body":[
 			"\\ensureascii{${1:text}}"
@@ -593,7 +385,7 @@
 	},
 
 
-	"localfootnote":{
+	"localfootnote{}":{
 		"prefix":"localfootnote",
 		"body":[
 			"\\localfootnote{${1:text}}"
@@ -601,7 +393,7 @@
 	},
 
 
-	"mainfootnote":{
+	"mainfootnote{}":{
 		"prefix":"mainfootnote",
 		"body":[
 			"\\mainfootnote{${1:text}}"
@@ -625,7 +417,7 @@
 	},
 
 
-	"babelsublr":{
+	"babelsublr{}":{
 		"prefix":"babelsublr",
 		"body":[
 			"\\babelsublr{${1:text}}"
@@ -641,7 +433,7 @@
 	},
 
 
-	"BabelPatchSection":{
+	"BabelPatchSection{}":{
 		"prefix":"BabelPatchSection",
 		"body":[
 			"\\BabelPatchSection{${1:section-name}}"
@@ -649,7 +441,7 @@
 	},
 
 
-	"BabelFootnote":{
+	"BabelFootnote{}{}{}{}":{
 		"prefix":"BabelFootnote",
 		"body":[
 			"\\BabelFootnote{${1:cmd}}{${2:language}}{${3:before}}{${4:after}}"
@@ -657,7 +449,7 @@
 	},
 
 
-	"languageattribute":{
+	"languageattribute{}{}":{
 		"prefix":"languageattribute",
 		"body":[
 			"\\languageattribute{${1:language}}{${2:list of attributes}}"
@@ -665,7 +457,7 @@
 	},
 
 
-	"AddBabelHook":{
+	"AddBabelHook{}{}{}":{
 		"prefix":"AddBabelHook",
 		"body":[
 			"\\AddBabelHook{${1:name}}{${2:event}}{${3:code}}"
@@ -673,15 +465,7 @@
 	},
 
 
-	"AddBabelHook":{
-		"prefix":"AddBabelHook",
-		"body":[
-			"\\AddBabelHook[${4:language}]{${1:name}}{${2:event}}{${3:code}}"
-		]
-	},
-
-
-	"EnableBabelHook":{
+	"EnableBabelHook{}":{
 		"prefix":"EnableBabelHook",
 		"body":[
 			"\\EnableBabelHook{${1:name}}"
@@ -689,7 +473,7 @@
 	},
 
 
-	"DisableBabelHook":{
+	"DisableBabelHook{}":{
 		"prefix":"DisableBabelHook",
 		"body":[
 			"\\DisableBabelHook{${1:name}}"
@@ -705,7 +489,7 @@
 	},
 
 
-	"babelcharproperty":{
+	"babelcharproperty{}{}{}":{
 		"prefix":"babelcharproperty",
 		"body":[
 			"\\babelcharproperty{${1:char-code}}{${2:property}}{${3:value}}"
@@ -713,15 +497,7 @@
 	},
 
 
-	"babelcharproperty":{
-		"prefix":"babelcharproperty",
-		"body":[
-			"\\babelcharproperty{${1:char-code}}[${4:to-char-code}]{${2:property}}{${3:value}}"
-		]
-	},
-
-
-	"babeladjust":{
+	"babeladjust{}":{
 		"prefix":"babeladjust",
 		"body":[
 			"\\babeladjust{${1:keyvals}}"
@@ -729,7 +505,7 @@
 	},
 
 
-	"localebox":{
+	"localebox{}":{
 		"prefix":"localebox",
 		"body":[
 			"\\localebox{${1:text}}"
@@ -921,7 +697,7 @@
 	},
 
 
-	"textlatin":{
+	"textlatin{}":{
 		"prefix":"textlatin",
 		"body":[
 			"\\textlatin{${1:text}}"
@@ -1409,7 +1185,7 @@
 	},
 
 
-	"dieresia":{
+	"dieresia{}":{
 		"prefix":"dieresia",
 		"body":[
 			"\\dieresia{${1:arg}}"
@@ -1417,7 +1193,7 @@
 	},
 
 
-	"texttilde":{
+	"texttilde{}":{
 		"prefix":"texttilde",
 		"body":[
 			"\\texttilde{${1:arg}}"
@@ -1465,7 +1241,7 @@
 	},
 
 
-	"asbuk":{
+	"asbuk{}":{
 		"prefix":"asbuk",
 		"body":[
 			"\\asbuk{${1:counter}}"
@@ -1473,7 +1249,7 @@
 	},
 
 
-	"Asbuk":{
+	"Asbuk{}":{
 		"prefix":"Asbuk",
 		"body":[
 			"\\Asbuk{${1:counter}}"
@@ -1673,7 +1449,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -2833,7 +2609,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -2889,7 +2665,7 @@
 	},
 
 
-	"weekdaynamebulgarian":{
+	"weekdaynamebulgarian{}":{
 		"prefix":"weekdaynamebulgarian",
 		"body":[
 			"\\weekdaynamebulgarian{${1:number}}"
@@ -3609,7 +3385,7 @@
 	},
 
 
-	"Romannumeral":{
+	"Romannumeral{}":{
 		"prefix":"Romannumeral",
 		"body":[
 			"\\Romannumeral{${1:number}}"
@@ -3617,7 +3393,7 @@
 	},
 
 
-	"lastJulianDatebulgarian":{
+	"lastJulianDatebulgarian{}":{
 		"prefix":"lastJulianDatebulgarian",
 		"body":[
 			"\\lastJulianDatebulgarian{${1:number}}"
@@ -3625,7 +3401,7 @@
 	},
 
 
-	"firstGregorianDatebulgarian":{
+	"firstGregorianDatebulgarian{}":{
 		"prefix":"firstGregorianDatebulgarian",
 		"body":[
 			"\\firstGregorianDatebulgarian{${1:number}}"
@@ -3705,7 +3481,7 @@
 	},
 
 
-	"up":{
+	"up{}":{
 		"prefix":"up",
 		"body":[
 			"\\up{${1:arg}}"
@@ -3793,7 +3569,7 @@
 	},
 
 
-	"dieresis":{
+	"dieresis{}":{
 		"prefix":"dieresis",
 		"body":[
 			"\\dieresis{${1:arg}}"
@@ -3945,7 +3721,7 @@
 	},
 
 
-	"q":{
+	"q{}":{
 		"prefix":"q",
 		"body":[
 			"\\q{${1:arg}}"
@@ -3953,7 +3729,7 @@
 	},
 
 
-	"w":{
+	"w{}":{
 		"prefix":"w",
 		"body":[
 			"\\w{${1:arg}}"
@@ -3961,7 +3737,7 @@
 	},
 
 
-	"uv":{
+	"uv{}":{
 		"prefix":"uv",
 		"body":[
 			"\\uv{${1:arg}}"
@@ -5489,7 +5265,7 @@
 	},
 
 
-	"Esper":{
+	"Esper{}":{
 		"prefix":"Esper",
 		"body":[
 			"\\Esper{${1:counter}}"
@@ -5497,7 +5273,7 @@
 	},
 
 
-	"esper":{
+	"esper{}":{
 		"prefix":"esper",
 		"body":[
 			"\\esper{${1:counter}}"
@@ -5753,7 +5529,7 @@
 	},
 
 
-	"frenchsetup":{
+	"frenchsetup{}":{
 		"prefix":"frenchsetup",
 		"body":[
 			"\\frenchsetup{${1:options%keyvals}}"
@@ -5809,7 +5585,7 @@
 	},
 
 
-	"bname":{
+	"bname{}":{
 		"prefix":"bname",
 		"body":[
 			"\\bname{${1:text}}"
@@ -5817,7 +5593,7 @@
 	},
 
 
-	"bsc":{
+	"bsc{}":{
 		"prefix":"bsc",
 		"body":[
 			"\\bsc{${1:text}}"
@@ -6105,15 +5881,7 @@
 	},
 
 
-	"FBsetspaces":{
-		"prefix":"FBsetspaces",
-		"body":[
-			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
-		]
-	},
-
-
-	"FBsetspaces":{
+	"FBsetspaces{}{}{}{}":{
 		"prefix":"FBsetspaces",
 		"body":[
 			"\\FBsetspaces{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
@@ -6225,7 +5993,7 @@
 	},
 
 
-	"FBWarning":{
+	"FBWarning{}":{
 		"prefix":"FBWarning",
 		"body":[
 			"\\FBWarning{${1:message%text}}"
@@ -6265,7 +6033,7 @@
 	},
 
 
-	"frenchdate":{
+	"frenchdate{}{}{}":{
 		"prefix":"frenchdate",
 		"body":[
 			"\\frenchdate{${1:day}}{${2:month}}{${3:year}}"
@@ -6273,7 +6041,7 @@
 	},
 
 
-	"FrenchEnumerate":{
+	"FrenchEnumerate{}":{
 		"prefix":"FrenchEnumerate",
 		"body":[
 			"\\FrenchEnumerate{${1:arg}}"
@@ -6313,7 +6081,7 @@
 	},
 
 
-	"FrenchPopularEnumerate":{
+	"FrenchPopularEnumerate{}":{
 		"prefix":"FrenchPopularEnumerate",
 		"body":[
 			"\\FrenchPopularEnumerate{${1:arg}}"
@@ -6393,7 +6161,7 @@
 	},
 
 
-	"frquote":{
+	"frquote{}":{
 		"prefix":"frquote",
 		"body":[
 			"\\frquote{${1:text}}"
@@ -6401,7 +6169,7 @@
 	},
 
 
-	"fup":{
+	"fup{}":{
 		"prefix":"fup",
 		"body":[
 			"\\fup{${1:text}}"
@@ -6809,7 +6577,7 @@
 	},
 
 
-	"nombre":{
+	"nombre{}":{
 		"prefix":"nombre",
 		"body":[
 			"\\nombre{${1:arg}}"
@@ -7009,7 +6777,7 @@
 	},
 
 
-	"up":{
+	"up{}":{
 		"prefix":"up",
 		"body":[
 			"\\up{${1:text}}"
@@ -7025,7 +6793,7 @@
 	},
 
 
-	"frenchsetup":{
+	"frenchsetup{}":{
 		"prefix":"frenchsetup",
 		"body":[
 			"\\frenchsetup{${1:options%keyvals}}"
@@ -7033,7 +6801,7 @@
 	},
 
 
-	"acadiandate":{
+	"acadiandate{}{}{}":{
 		"prefix":"acadiandate",
 		"body":[
 			"\\acadiandate{${1:day}}{${2:month}}{${3:year}}"
@@ -7097,7 +6865,7 @@
 	},
 
 
-	"bname":{
+	"bname{}":{
 		"prefix":"bname",
 		"body":[
 			"\\bname{${1:text}}"
@@ -7105,7 +6873,7 @@
 	},
 
 
-	"bsc":{
+	"bsc{}":{
 		"prefix":"bsc",
 		"body":[
 			"\\bsc{${1:text}}"
@@ -7409,15 +7177,7 @@
 	},
 
 
-	"FBsetspaces":{
-		"prefix":"FBsetspaces",
-		"body":[
-			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
-		]
-	},
-
-
-	"FBsetspaces":{
+	"FBsetspaces{}{}{}{}":{
 		"prefix":"FBsetspaces",
 		"body":[
 			"\\FBsetspaces{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
@@ -7529,7 +7289,7 @@
 	},
 
 
-	"FBWarning":{
+	"FBWarning{}":{
 		"prefix":"FBWarning",
 		"body":[
 			"\\FBWarning{${1:message%text}}"
@@ -7569,7 +7329,7 @@
 	},
 
 
-	"frenchdate":{
+	"frenchdate{}{}{}":{
 		"prefix":"frenchdate",
 		"body":[
 			"\\frenchdate{${1:day}}{${2:month}}{${3:year}}"
@@ -7577,7 +7337,7 @@
 	},
 
 
-	"FrenchEnumerate":{
+	"FrenchEnumerate{}":{
 		"prefix":"FrenchEnumerate",
 		"body":[
 			"\\FrenchEnumerate{${1:arg}}"
@@ -7617,7 +7377,7 @@
 	},
 
 
-	"FrenchPopularEnumerate":{
+	"FrenchPopularEnumerate{}":{
 		"prefix":"FrenchPopularEnumerate",
 		"body":[
 			"\\FrenchPopularEnumerate{${1:arg}}"
@@ -7697,7 +7457,7 @@
 	},
 
 
-	"frquote":{
+	"frquote{}":{
 		"prefix":"frquote",
 		"body":[
 			"\\frquote{${1:text}}"
@@ -7705,7 +7465,7 @@
 	},
 
 
-	"fup":{
+	"fup{}":{
 		"prefix":"fup",
 		"body":[
 			"\\fup{${1:text}}"
@@ -8121,7 +7881,7 @@
 	},
 
 
-	"nombre":{
+	"nombre{}":{
 		"prefix":"nombre",
 		"body":[
 			"\\nombre{${1:arg}}"
@@ -8321,7 +8081,7 @@
 	},
 
 
-	"up":{
+	"up{}":{
 		"prefix":"up",
 		"body":[
 			"\\up{${1:text}}"
@@ -8489,14 +8249,6 @@
 	},
 
 
-	"selectgalician*":{
-		"prefix":"selectgalician*",
-		"body":[
-			"\\selectgalician*"
-		]
-	},
-
-
 	"layoutgalician":{
 		"prefix":"layoutgalician",
 		"body":[
@@ -8617,7 +8369,7 @@
 	},
 
 
-	"galiciandeactivate":{
+	"galiciandeactivate{}":{
 		"prefix":"galiciandeactivate",
 		"body":[
 			"\\galiciandeactivate{${1:characters}}"
@@ -8649,7 +8401,7 @@
 	},
 
 
-	"galiciandecimal":{
+	"galiciandecimal{}":{
 		"prefix":"galiciandecimal",
 		"body":[
 			"\\galiciandecimal{${1:math}}"
@@ -8657,7 +8409,7 @@
 	},
 
 
-	"sptext":{
+	"sptext{}":{
 		"prefix":"sptext",
 		"body":[
 			"\\sptext{${1:arg}}"
@@ -8769,7 +8521,7 @@
 	},
 
 
-	"lsc":{
+	"lsc{}":{
 		"prefix":"lsc",
 		"body":[
 			"\\lsc{${1:text}}"
@@ -8777,7 +8529,7 @@
 	},
 
 
-	"msc":{
+	"msc{}":{
 		"prefix":"msc",
 		"body":[
 			"\\msc{${1:text}}"
@@ -9817,7 +9569,7 @@
 	},
 
 
-	"ensuregreek":{
+	"ensuregreek{}":{
 		"prefix":"ensuregreek",
 		"body":[
 			"\\ensuregreek{${1:text}}"
@@ -9825,7 +9577,7 @@
 	},
 
 
-	"lgrfont":{
+	"lgrfont{}":{
 		"prefix":"lgrfont",
 		"body":[
 			"\\lgrfont{${1:text}}"
@@ -9833,7 +9585,7 @@
 	},
 
 
-	"textgreek":{
+	"textgreek{}":{
 		"prefix":"textgreek",
 		"body":[
 			"\\textgreek{${1:text}}"
@@ -9841,7 +9593,7 @@
 	},
 
 
-	"greeknumeral":{
+	"greeknumeral{}":{
 		"prefix":"greeknumeral",
 		"body":[
 			"\\greeknumeral{${1:number}}"
@@ -9849,7 +9601,7 @@
 	},
 
 
-	"Greeknumeral":{
+	"Greeknumeral{}":{
 		"prefix":"Greeknumeral",
 		"body":[
 			"\\Greeknumeral{${1:number}}"
@@ -9921,7 +9673,7 @@
 	},
 
 
-	"textol":{
+	"textol{}":{
 		"prefix":"textol",
 		"body":[
 			"\\textol{${1:text}}"
@@ -10761,7 +10513,7 @@
 	},
 
 
-	"accdialytika":{
+	"accdialytika{}":{
 		"prefix":"accdialytika",
 		"body":[
 			"\\accdialytika{${1:arg}}"
@@ -10769,7 +10521,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -10777,7 +10529,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -10785,7 +10537,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -10793,7 +10545,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -10801,7 +10553,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -10825,7 +10577,7 @@
 	},
 
 
-	"accdialytikaperispomeni":{
+	"accdialytikaperispomeni{}":{
 		"prefix":"accdialytikaperispomeni",
 		"body":[
 			"\\accdialytikaperispomeni{${1:arg}}"
@@ -10833,7 +10585,7 @@
 	},
 
 
-	"accdialytikatonos":{
+	"accdialytikatonos{}":{
 		"prefix":"accdialytikatonos",
 		"body":[
 			"\\accdialytikatonos{${1:arg}}"
@@ -10841,7 +10593,7 @@
 	},
 
 
-	"accdialytikavaria":{
+	"accdialytikavaria{}":{
 		"prefix":"accdialytikavaria",
 		"body":[
 			"\\accdialytikavaria{${1:arg}}"
@@ -10849,7 +10601,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -10857,7 +10609,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -10865,7 +10617,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:a}}"
@@ -10873,7 +10625,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:a}}"
@@ -10881,7 +10633,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -10889,7 +10641,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -10897,7 +10649,7 @@
 	},
 
 
-	"accinvertedbrevebelow":{
+	"accinvertedbrevebelow{}":{
 		"prefix":"accinvertedbrevebelow",
 		"body":[
 			"\\accinvertedbrevebelow{${1:arg}}"
@@ -10905,7 +10657,7 @@
 	},
 
 
-	"textsubarch":{
+	"textsubarch{}":{
 		"prefix":"textsubarch",
 		"body":[
 			"\\textsubarch{${1:arg}}"
@@ -10913,7 +10665,7 @@
 	},
 
 
-	"accbrevebelow":{
+	"accbrevebelow{}":{
 		"prefix":"accbrevebelow",
 		"body":[
 			"\\accbrevebelow{${1:arg}}"
@@ -10921,7 +10673,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -10929,7 +10681,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -10937,7 +10689,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -10945,7 +10697,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -10953,7 +10705,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -10961,7 +10713,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:arg}}"
@@ -10969,7 +10721,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -10977,7 +10729,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -10985,7 +10737,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -10993,7 +10745,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -11001,7 +10753,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:arg}}"
@@ -11009,7 +10761,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -11017,7 +10769,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -11025,7 +10777,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -11193,7 +10945,7 @@
 	},
 
 
-	"ensuregreek":{
+	"ensuregreek{}":{
 		"prefix":"ensuregreek",
 		"body":[
 			"\\ensuregreek{${1:text}}"
@@ -11201,7 +10953,7 @@
 	},
 
 
-	"textgreek":{
+	"textgreek{}":{
 		"prefix":"textgreek",
 		"body":[
 			"\\textgreek{${1:text}}"
@@ -11209,7 +10961,7 @@
 	},
 
 
-	"greeknumeral":{
+	"greeknumeral{}":{
 		"prefix":"greeknumeral",
 		"body":[
 			"\\greeknumeral{${1:number}}"
@@ -11217,7 +10969,7 @@
 	},
 
 
-	"Greeknumeral":{
+	"Greeknumeral{}":{
 		"prefix":"Greeknumeral",
 		"body":[
 			"\\Greeknumeral{${1:number}}"
@@ -11233,7 +10985,7 @@
 	},
 
 
-	"textol":{
+	"textol{}":{
 		"prefix":"textol",
 		"body":[
 			"\\textol{${1:text}}"
@@ -12073,7 +11825,7 @@
 	},
 
 
-	"accdialytika":{
+	"accdialytika{}":{
 		"prefix":"accdialytika",
 		"body":[
 			"\\accdialytika{${1:arg}}"
@@ -12081,7 +11833,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -12089,7 +11841,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -12097,7 +11849,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -12105,7 +11857,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -12113,7 +11865,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -12137,7 +11889,7 @@
 	},
 
 
-	"accdialytikaperispomeni":{
+	"accdialytikaperispomeni{}":{
 		"prefix":"accdialytikaperispomeni",
 		"body":[
 			"\\accdialytikaperispomeni{${1:arg}}"
@@ -12145,7 +11897,7 @@
 	},
 
 
-	"accdialytikatonos":{
+	"accdialytikatonos{}":{
 		"prefix":"accdialytikatonos",
 		"body":[
 			"\\accdialytikatonos{${1:arg}}"
@@ -12153,7 +11905,7 @@
 	},
 
 
-	"accdialytikavaria":{
+	"accdialytikavaria{}":{
 		"prefix":"accdialytikavaria",
 		"body":[
 			"\\accdialytikavaria{${1:arg}}"
@@ -12161,7 +11913,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -12169,7 +11921,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -12177,7 +11929,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:a}}"
@@ -12185,7 +11937,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:a}}"
@@ -12193,7 +11945,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -12201,7 +11953,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -12209,7 +11961,7 @@
 	},
 
 
-	"accinvertedbrevebelow":{
+	"accinvertedbrevebelow{}":{
 		"prefix":"accinvertedbrevebelow",
 		"body":[
 			"\\accinvertedbrevebelow{${1:arg}}"
@@ -12217,7 +11969,7 @@
 	},
 
 
-	"textsubarch":{
+	"textsubarch{}":{
 		"prefix":"textsubarch",
 		"body":[
 			"\\textsubarch{${1:arg}}"
@@ -12225,7 +11977,7 @@
 	},
 
 
-	"accbrevebelow":{
+	"accbrevebelow{}":{
 		"prefix":"accbrevebelow",
 		"body":[
 			"\\accbrevebelow{${1:arg}}"
@@ -12233,7 +11985,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -12241,7 +11993,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -12249,7 +12001,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -12257,7 +12009,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -12265,7 +12017,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -12273,7 +12025,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:arg}}"
@@ -12281,7 +12033,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -12289,7 +12041,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -12297,7 +12049,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -12305,7 +12057,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -12313,7 +12065,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:arg}}"
@@ -12321,7 +12073,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -12329,7 +12081,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -12337,7 +12089,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -12489,7 +12241,7 @@
 	},
 
 
-	"ensuregreek":{
+	"ensuregreek{}":{
 		"prefix":"ensuregreek",
 		"body":[
 			"\\ensuregreek{${1:text}}"
@@ -12497,7 +12249,7 @@
 	},
 
 
-	"textgreek":{
+	"textgreek{}":{
 		"prefix":"textgreek",
 		"body":[
 			"\\textgreek{${1:text}}"
@@ -12505,7 +12257,7 @@
 	},
 
 
-	"greeknumeral":{
+	"greeknumeral{}":{
 		"prefix":"greeknumeral",
 		"body":[
 			"\\greeknumeral{${1:number}}"
@@ -12513,7 +12265,7 @@
 	},
 
 
-	"Greeknumeral":{
+	"Greeknumeral{}":{
 		"prefix":"Greeknumeral",
 		"body":[
 			"\\Greeknumeral{${1:number}}"
@@ -12529,7 +12281,7 @@
 	},
 
 
-	"textol":{
+	"textol{}":{
 		"prefix":"textol",
 		"body":[
 			"\\textol{${1:text}}"
@@ -13369,7 +13121,7 @@
 	},
 
 
-	"accdialytika":{
+	"accdialytika{}":{
 		"prefix":"accdialytika",
 		"body":[
 			"\\accdialytika{${1:arg}}"
@@ -13377,7 +13129,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -13385,7 +13137,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -13393,7 +13145,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -13401,7 +13153,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -13409,7 +13161,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -13433,7 +13185,7 @@
 	},
 
 
-	"accdialytikaperispomeni":{
+	"accdialytikaperispomeni{}":{
 		"prefix":"accdialytikaperispomeni",
 		"body":[
 			"\\accdialytikaperispomeni{${1:arg}}"
@@ -13441,7 +13193,7 @@
 	},
 
 
-	"accdialytikatonos":{
+	"accdialytikatonos{}":{
 		"prefix":"accdialytikatonos",
 		"body":[
 			"\\accdialytikatonos{${1:arg}}"
@@ -13449,7 +13201,7 @@
 	},
 
 
-	"accdialytikavaria":{
+	"accdialytikavaria{}":{
 		"prefix":"accdialytikavaria",
 		"body":[
 			"\\accdialytikavaria{${1:arg}}"
@@ -13457,7 +13209,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -13465,7 +13217,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -13473,7 +13225,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:a}}"
@@ -13481,7 +13233,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:a}}"
@@ -13489,7 +13241,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -13497,7 +13249,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -13505,7 +13257,7 @@
 	},
 
 
-	"accinvertedbrevebelow":{
+	"accinvertedbrevebelow{}":{
 		"prefix":"accinvertedbrevebelow",
 		"body":[
 			"\\accinvertedbrevebelow{${1:arg}}"
@@ -13513,7 +13265,7 @@
 	},
 
 
-	"textsubarch":{
+	"textsubarch{}":{
 		"prefix":"textsubarch",
 		"body":[
 			"\\textsubarch{${1:arg}}"
@@ -13521,7 +13273,7 @@
 	},
 
 
-	"accbrevebelow":{
+	"accbrevebelow{}":{
 		"prefix":"accbrevebelow",
 		"body":[
 			"\\accbrevebelow{${1:arg}}"
@@ -13529,7 +13281,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -13537,7 +13289,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -13545,7 +13297,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -13553,7 +13305,7 @@
 	},
 
 
-	"accdasiavaria":{
+	"accdasiavaria{}":{
 		"prefix":"accdasiavaria",
 		"body":[
 			"\\accdasiavaria{${1:arg}}"
@@ -13561,7 +13313,7 @@
 	},
 
 
-	"acctonos":{
+	"acctonos{}":{
 		"prefix":"acctonos",
 		"body":[
 			"\\acctonos{${1:arg}}"
@@ -13569,7 +13321,7 @@
 	},
 
 
-	"accdasiaoxia":{
+	"accdasiaoxia{}":{
 		"prefix":"accdasiaoxia",
 		"body":[
 			"\\accdasiaoxia{${1:arg}}"
@@ -13577,7 +13329,7 @@
 	},
 
 
-	"accpsilioxia":{
+	"accpsilioxia{}":{
 		"prefix":"accpsilioxia",
 		"body":[
 			"\\accpsilioxia{${1:arg}}"
@@ -13585,7 +13337,7 @@
 	},
 
 
-	"accpsilivaria":{
+	"accpsilivaria{}":{
 		"prefix":"accpsilivaria",
 		"body":[
 			"\\accpsilivaria{${1:arg}}"
@@ -13593,7 +13345,7 @@
 	},
 
 
-	"accperispomeni":{
+	"accperispomeni{}":{
 		"prefix":"accperispomeni",
 		"body":[
 			"\\accperispomeni{${1:arg}}"
@@ -13601,7 +13353,7 @@
 	},
 
 
-	"accdasiaperispomeni":{
+	"accdasiaperispomeni{}":{
 		"prefix":"accdasiaperispomeni",
 		"body":[
 			"\\accdasiaperispomeni{${1:arg}}"
@@ -13609,7 +13361,7 @@
 	},
 
 
-	"accpsiliperispomeni":{
+	"accpsiliperispomeni{}":{
 		"prefix":"accpsiliperispomeni",
 		"body":[
 			"\\accpsiliperispomeni{${1:arg}}"
@@ -13617,7 +13369,7 @@
 	},
 
 
-	"accvaria":{
+	"accvaria{}":{
 		"prefix":"accvaria",
 		"body":[
 			"\\accvaria{${1:arg}}"
@@ -13625,7 +13377,7 @@
 	},
 
 
-	"accdasia":{
+	"accdasia{}":{
 		"prefix":"accdasia",
 		"body":[
 			"\\accdasia{${1:arg}}"
@@ -13633,7 +13385,7 @@
 	},
 
 
-	"accpsili":{
+	"accpsili{}":{
 		"prefix":"accpsili",
 		"body":[
 			"\\accpsili{${1:arg}}"
@@ -13753,7 +13505,7 @@
 	},
 
 
-	"tala":{
+	"tala{}":{
 		"prefix":"tala",
 		"body":[
 			"\\tala{${1:arg}}"
@@ -13761,7 +13513,7 @@
 	},
 
 
-	"grada":{
+	"grada{}":{
 		"prefix":"grada",
 		"body":[
 			"\\grada{${1:arg}}"
@@ -13769,7 +13521,7 @@
 	},
 
 
-	"gradur":{
+	"gradur{}":{
 		"prefix":"gradur",
 		"body":[
 			"\\gradur{${1:arg}}"
@@ -13777,7 +13529,7 @@
 	},
 
 
-	"upp":{
+	"upp{}":{
 		"prefix":"upp",
 		"body":[
 			"\\upp{${1:arg}}"
@@ -14833,7 +14585,7 @@
 	},
 
 
-	"ap":{
+	"ap{}":{
 		"prefix":"ap",
 		"body":[
 			"\\ap{${1:text%plain}}"
@@ -14841,7 +14593,7 @@
 	},
 
 
-	"ped":{
+	"ped{}":{
 		"prefix":"ped",
 		"body":[
 			"\\ped{${1:text%plain}}"
@@ -14849,7 +14601,7 @@
 	},
 
 
-	"unit":{
+	"unit{}":{
 		"prefix":"unit",
 		"body":[
 			"\\unit{${1:unit}}"
@@ -14881,7 +14633,7 @@
 	},
 
 
-	"CaporaliFrom":{
+	"CaporaliFrom{}{}{}{}":{
 		"prefix":"CaporaliFrom",
 		"body":[
 			"\\CaporaliFrom{${1:encoding}}{${2:family}}{${3:open guill slot}}{${4:close guill slot}}"
@@ -16025,7 +15777,7 @@
 	},
 
 
-	"Romannumeral":{
+	"Romannumeral{}":{
 		"prefix":"Romannumeral",
 		"body":[
 			"\\Romannumeral{${1:number}}"
@@ -16761,7 +16513,7 @@
 	},
 
 
-	"overbar":{
+	"overbar{}":{
 		"prefix":"overbar",
 		"body":[
 			"\\overbar{${1:arg}}"
@@ -16769,7 +16521,7 @@
 	},
 
 
-	"textoverline":{
+	"textoverline{}":{
 		"prefix":"textoverline",
 		"body":[
 			"\\textoverline{${1:arg}}"
@@ -16777,7 +16529,7 @@
 	},
 
 
-	"overbarshort":{
+	"overbarshort{}":{
 		"prefix":"overbarshort",
 		"body":[
 			"\\overbarshort{${1:arg}}"
@@ -16785,7 +16537,7 @@
 	},
 
 
-	"textoverlineshort":{
+	"textoverlineshort{}":{
 		"prefix":"textoverlineshort",
 		"body":[
 			"\\textoverlineshort{${1:arg}}"
@@ -16793,7 +16545,7 @@
 	},
 
 
-	"IfItalic":{
+	"IfItalic{}{}":{
 		"prefix":"IfItalic",
 		"body":[
 			"\\IfItalic{${1:arg1}}{${2:arg2}}"
@@ -16801,7 +16553,7 @@
 	},
 
 
-	"tbar":{
+	"tbar{}":{
 		"prefix":"tbar",
 		"body":[
 			"\\tbar{${1:arg}}"
@@ -16937,23 +16689,7 @@
 	},
 
 
-	"acite*":{
-		"prefix":"acite*",
-		"body":[
-			"\\acite*{${1:keylist}}"
-		]
-	},
-
-
-	"Acite*":{
-		"prefix":"Acite*",
-		"body":[
-			"\\Acite*{${1:keylist}}"
-		]
-	},
-
-
-	"acite":{
+	"acite{}":{
 		"prefix":"acite",
 		"body":[
 			"\\acite{${1:keylist}}"
@@ -16961,7 +16697,7 @@
 	},
 
 
-	"Acite":{
+	"Acite{}":{
 		"prefix":"Acite",
 		"body":[
 			"\\Acite{${1:keylist}}"
@@ -16969,23 +16705,7 @@
 	},
 
 
-	"apageref*":{
-		"prefix":"apageref*",
-		"body":[
-			"\\apageref*{${1:label}}"
-		]
-	},
-
-
-	"Apageref*":{
-		"prefix":"Apageref*",
-		"body":[
-			"\\Apageref*{${1:label}}"
-		]
-	},
-
-
-	"apageref":{
+	"apageref{}":{
 		"prefix":"apageref",
 		"body":[
 			"\\apageref{${1:label}}"
@@ -16993,7 +16713,7 @@
 	},
 
 
-	"Apageref":{
+	"Apageref{}":{
 		"prefix":"Apageref",
 		"body":[
 			"\\Apageref{${1:label}}"
@@ -17001,7 +16721,7 @@
 	},
 
 
-	"aref":{
+	"aref()":{
 		"prefix":"aref",
 		"body":[
 			"\\aref({${1:label}})"
@@ -17009,7 +16729,7 @@
 	},
 
 
-	"Aref":{
+	"Aref()":{
 		"prefix":"Aref",
 		"body":[
 			"\\Aref({${1:label}})"
@@ -17017,23 +16737,7 @@
 	},
 
 
-	"aref*":{
-		"prefix":"aref*",
-		"body":[
-			"\\aref*{${1:label}}"
-		]
-	},
-
-
-	"Aref*":{
-		"prefix":"Aref*",
-		"body":[
-			"\\Aref*{${1:label}}"
-		]
-	},
-
-
-	"aref":{
+	"aref{}":{
 		"prefix":"aref",
 		"body":[
 			"\\aref{${1:label}}"
@@ -17041,7 +16745,7 @@
 	},
 
 
-	"Aref":{
+	"Aref{}":{
 		"prefix":"Aref",
 		"body":[
 			"\\Aref{${1:label}}"
@@ -17049,23 +16753,7 @@
 	},
 
 
-	"az*":{
-		"prefix":"az*",
-		"body":[
-			"\\az*{${1:szó}}"
-		]
-	},
-
-
-	"Az*":{
-		"prefix":"Az*",
-		"body":[
-			"\\Az*{${1:szó}}"
-		]
-	},
-
-
-	"az":{
+	"az{}":{
 		"prefix":"az",
 		"body":[
 			"\\az{${1:szó}}"
@@ -17073,7 +16761,7 @@
 	},
 
 
-	"Az":{
+	"Az{}":{
 		"prefix":"Az",
 		"body":[
 			"\\Az{${1:szó}}"
@@ -17081,7 +16769,7 @@
 	},
 
 
-	"azc":{
+	"azc{}":{
 		"prefix":"azc",
 		"body":[
 			"\\azc{${1:keylist}}"
@@ -17089,7 +16777,7 @@
 	},
 
 
-	"Azc":{
+	"Azc{}":{
 		"prefix":"Azc",
 		"body":[
 			"\\Azc{${1:keylist}}"
@@ -17097,7 +16785,7 @@
 	},
 
 
-	"azp":{
+	"azp{}":{
 		"prefix":"azp",
 		"body":[
 			"\\azp{${1:label}}"
@@ -17105,7 +16793,7 @@
 	},
 
 
-	"Azp":{
+	"Azp{}":{
 		"prefix":"Azp",
 		"body":[
 			"\\Azp{${1:label}}"
@@ -17113,7 +16801,7 @@
 	},
 
 
-	"azr":{
+	"azr{}":{
 		"prefix":"azr",
 		"body":[
 			"\\azr{${1:label}}"
@@ -17121,7 +16809,7 @@
 	},
 
 
-	"Azr":{
+	"Azr{}":{
 		"prefix":"Azr",
 		"body":[
 			"\\Azr{${1:label}}"
@@ -17129,7 +16817,7 @@
 	},
 
 
-	"editorfootnote":{
+	"editorfootnote{}":{
 		"prefix":"editorfootnote",
 		"body":[
 			"\\editorfootnote{${1:lábjegyzet-szöveg%text}}"
@@ -17137,15 +16825,7 @@
 	},
 
 
-	"emitdate":{
-		"prefix":"emitdate",
-		"body":[
-			"\\emitdate[${3:toldalék}]{${1:formátum}}{${2:dátum}}"
-		]
-	},
-
-
-	"emitdate":{
+	"emitdate{}{}":{
 		"prefix":"emitdate",
 		"body":[
 			"\\emitdate{${1:formátum}}{${2:dátum}}"
@@ -17161,7 +16841,7 @@
 	},
 
 
-	"footnotestyle":{
+	"footnotestyle{}":{
 		"prefix":"footnotestyle",
 		"body":[
 			"\\footnotestyle{${1:előírás%keyvals}}"
@@ -17169,7 +16849,7 @@
 	},
 
 
-	"hang":{
+	"hang{}":{
 		"prefix":"hang",
 		"body":[
 			"\\hang{${1:bekezdéskezdő jel}}"
@@ -17177,15 +16857,7 @@
 	},
 
 
-	"headingfootnote":{
-		"prefix":"headingfootnote",
-		"body":[
-			"\\headingfootnote[${2:szám}]{${1:lábjegyzet-szöveg%text}}"
-		]
-	},
-
-
-	"headingfootnote":{
+	"headingfootnote{}":{
 		"prefix":"headingfootnote",
 		"body":[
 			"\\headingfootnote{${1:lábjegyzet-szöveg%text}}"
@@ -17209,7 +16881,7 @@
 	},
 
 
-	"Hunumeral":{
+	"Hunumeral{}":{
 		"prefix":"Hunumeral",
 		"body":[
 			"\\Hunumeral{${1:counter}}"
@@ -17217,7 +16889,7 @@
 	},
 
 
-	"hunumeral":{
+	"hunumeral{}":{
 		"prefix":"hunumeral",
 		"body":[
 			"\\hunumeral{${1:counter}}"
@@ -17225,7 +16897,7 @@
 	},
 
 
-	"huordinal":{
+	"huordinal{}":{
 		"prefix":"huordinal",
 		"body":[
 			"\\huordinal{${1:counter}}"
@@ -17233,7 +16905,7 @@
 	},
 
 
-	"Huordinal":{
+	"Huordinal{}":{
 		"prefix":"Huordinal",
 		"body":[
 			"\\Huordinal{${1:counter}}"
@@ -17249,7 +16921,7 @@
 	},
 
 
-	"makeFootnotable":{
+	"makeFootnotable{}":{
 		"prefix":"makeFootnotable",
 		"body":[
 			"\\makeFootnotable{${1:környezet-név}}"
@@ -17257,7 +16929,7 @@
 	},
 
 
-	"MathBrk":{
+	"MathBrk{}":{
 		"prefix":"MathBrk",
 		"body":[
 			"\\MathBrk{${1:szimbólum}}"
@@ -17265,7 +16937,7 @@
 	},
 
 
-	"MathBrkAll":{
+	"MathBrkAll{}":{
 		"prefix":"MathBrkAll",
 		"body":[
 			"\\MathBrkAll{${1:szimbólum}}"
@@ -17273,7 +16945,7 @@
 	},
 
 
-	"MathReal":{
+	"MathReal{}":{
 		"prefix":"MathReal",
 		"body":[
 			"\\MathReal{${1:képlet tizedestörtekkel%formula}}"
@@ -17297,7 +16969,7 @@
 	},
 
 
-	"refstruc":{
+	"refstruc{}":{
 		"prefix":"refstruc",
 		"body":[
 			"\\refstruc{${1:label}}"
@@ -17305,7 +16977,7 @@
 	},
 
 
-	"refstrucparen":{
+	"refstrucparen{}":{
 		"prefix":"refstrucparen",
 		"body":[
 			"\\refstrucparen{${1:label}}"
@@ -17321,7 +16993,7 @@
 	},
 
 
-	"textqq":{
+	"textqq{}":{
 		"prefix":"textqq",
 		"body":[
 			"\\textqq{${1:szövegközti idézet%text}}"
@@ -17449,23 +17121,7 @@
 	},
 
 
-	"acite*":{
-		"prefix":"acite*",
-		"body":[
-			"\\acite*{${1:keylist}}"
-		]
-	},
-
-
-	"Acite*":{
-		"prefix":"Acite*",
-		"body":[
-			"\\Acite*{${1:keylist}}"
-		]
-	},
-
-
-	"acite":{
+	"acite{}":{
 		"prefix":"acite",
 		"body":[
 			"\\acite{${1:keylist}}"
@@ -17473,7 +17129,7 @@
 	},
 
 
-	"Acite":{
+	"Acite{}":{
 		"prefix":"Acite",
 		"body":[
 			"\\Acite{${1:keylist}}"
@@ -17481,23 +17137,7 @@
 	},
 
 
-	"apageref*":{
-		"prefix":"apageref*",
-		"body":[
-			"\\apageref*{${1:label}}"
-		]
-	},
-
-
-	"Apageref*":{
-		"prefix":"Apageref*",
-		"body":[
-			"\\Apageref*{${1:label}}"
-		]
-	},
-
-
-	"apageref":{
+	"apageref{}":{
 		"prefix":"apageref",
 		"body":[
 			"\\apageref{${1:label}}"
@@ -17505,7 +17145,7 @@
 	},
 
 
-	"Apageref":{
+	"Apageref{}":{
 		"prefix":"Apageref",
 		"body":[
 			"\\Apageref{${1:label}}"
@@ -17513,7 +17153,7 @@
 	},
 
 
-	"aref":{
+	"aref()":{
 		"prefix":"aref",
 		"body":[
 			"\\aref({${1:label}})"
@@ -17521,7 +17161,7 @@
 	},
 
 
-	"Aref":{
+	"Aref()":{
 		"prefix":"Aref",
 		"body":[
 			"\\Aref({${1:label}})"
@@ -17529,23 +17169,7 @@
 	},
 
 
-	"aref*":{
-		"prefix":"aref*",
-		"body":[
-			"\\aref*{${1:label}}"
-		]
-	},
-
-
-	"Aref*":{
-		"prefix":"Aref*",
-		"body":[
-			"\\Aref*{${1:label}}"
-		]
-	},
-
-
-	"aref":{
+	"aref{}":{
 		"prefix":"aref",
 		"body":[
 			"\\aref{${1:label}}"
@@ -17553,7 +17177,7 @@
 	},
 
 
-	"Aref":{
+	"Aref{}":{
 		"prefix":"Aref",
 		"body":[
 			"\\Aref{${1:label}}"
@@ -17561,23 +17185,7 @@
 	},
 
 
-	"az*":{
-		"prefix":"az*",
-		"body":[
-			"\\az*{${1:szó}}"
-		]
-	},
-
-
-	"Az*":{
-		"prefix":"Az*",
-		"body":[
-			"\\Az*{${1:szó}}"
-		]
-	},
-
-
-	"az":{
+	"az{}":{
 		"prefix":"az",
 		"body":[
 			"\\az{${1:szó}}"
@@ -17585,7 +17193,7 @@
 	},
 
 
-	"Az":{
+	"Az{}":{
 		"prefix":"Az",
 		"body":[
 			"\\Az{${1:szó}}"
@@ -17593,7 +17201,7 @@
 	},
 
 
-	"azc":{
+	"azc{}":{
 		"prefix":"azc",
 		"body":[
 			"\\azc{${1:keylist}}"
@@ -17601,7 +17209,7 @@
 	},
 
 
-	"Azc":{
+	"Azc{}":{
 		"prefix":"Azc",
 		"body":[
 			"\\Azc{${1:keylist}}"
@@ -17609,7 +17217,7 @@
 	},
 
 
-	"azp":{
+	"azp{}":{
 		"prefix":"azp",
 		"body":[
 			"\\azp{${1:label}}"
@@ -17617,7 +17225,7 @@
 	},
 
 
-	"Azp":{
+	"Azp{}":{
 		"prefix":"Azp",
 		"body":[
 			"\\Azp{${1:label}}"
@@ -17625,7 +17233,7 @@
 	},
 
 
-	"azr":{
+	"azr{}":{
 		"prefix":"azr",
 		"body":[
 			"\\azr{${1:label}}"
@@ -17633,7 +17241,7 @@
 	},
 
 
-	"Azr":{
+	"Azr{}":{
 		"prefix":"Azr",
 		"body":[
 			"\\Azr{${1:label}}"
@@ -17641,7 +17249,7 @@
 	},
 
 
-	"editorfootnote":{
+	"editorfootnote{}":{
 		"prefix":"editorfootnote",
 		"body":[
 			"\\editorfootnote{${1:lábjegyzet-szöveg%text}}"
@@ -17649,15 +17257,7 @@
 	},
 
 
-	"emitdate":{
-		"prefix":"emitdate",
-		"body":[
-			"\\emitdate[${3:toldalék}]{${1:formátum}}{${2:dátum}}"
-		]
-	},
-
-
-	"emitdate":{
+	"emitdate{}{}":{
 		"prefix":"emitdate",
 		"body":[
 			"\\emitdate{${1:formátum}}{${2:dátum}}"
@@ -17673,7 +17273,7 @@
 	},
 
 
-	"footnotestyle":{
+	"footnotestyle{}":{
 		"prefix":"footnotestyle",
 		"body":[
 			"\\footnotestyle{${1:előírás%keyvals}}"
@@ -17681,7 +17281,7 @@
 	},
 
 
-	"hang":{
+	"hang{}":{
 		"prefix":"hang",
 		"body":[
 			"\\hang{${1:bekezdéskezdő jel}}"
@@ -17689,15 +17289,7 @@
 	},
 
 
-	"headingfootnote":{
-		"prefix":"headingfootnote",
-		"body":[
-			"\\headingfootnote[${2:szám}]{${1:lábjegyzet-szöveg%text}}"
-		]
-	},
-
-
-	"headingfootnote":{
+	"headingfootnote{}":{
 		"prefix":"headingfootnote",
 		"body":[
 			"\\headingfootnote{${1:lábjegyzet-szöveg%text}}"
@@ -17721,7 +17313,7 @@
 	},
 
 
-	"Hunumeral":{
+	"Hunumeral{}":{
 		"prefix":"Hunumeral",
 		"body":[
 			"\\Hunumeral{${1:counter}}"
@@ -17729,7 +17321,7 @@
 	},
 
 
-	"hunumeral":{
+	"hunumeral{}":{
 		"prefix":"hunumeral",
 		"body":[
 			"\\hunumeral{${1:counter}}"
@@ -17737,7 +17329,7 @@
 	},
 
 
-	"huordinal":{
+	"huordinal{}":{
 		"prefix":"huordinal",
 		"body":[
 			"\\huordinal{${1:counter}}"
@@ -17745,7 +17337,7 @@
 	},
 
 
-	"Huordinal":{
+	"Huordinal{}":{
 		"prefix":"Huordinal",
 		"body":[
 			"\\Huordinal{${1:counter}}"
@@ -17761,7 +17353,7 @@
 	},
 
 
-	"makeFootnotable":{
+	"makeFootnotable{}":{
 		"prefix":"makeFootnotable",
 		"body":[
 			"\\makeFootnotable{${1:környezet-név}}"
@@ -17769,7 +17361,7 @@
 	},
 
 
-	"MathBrk":{
+	"MathBrk{}":{
 		"prefix":"MathBrk",
 		"body":[
 			"\\MathBrk{${1:szimbólum}}"
@@ -17777,7 +17369,7 @@
 	},
 
 
-	"MathBrkAll":{
+	"MathBrkAll{}":{
 		"prefix":"MathBrkAll",
 		"body":[
 			"\\MathBrkAll{${1:szimbólum}}"
@@ -17785,7 +17377,7 @@
 	},
 
 
-	"MathReal":{
+	"MathReal{}":{
 		"prefix":"MathReal",
 		"body":[
 			"\\MathReal{${1:képlet tizedestörtekkel%formula}}"
@@ -17809,7 +17401,7 @@
 	},
 
 
-	"refstruc":{
+	"refstruc{}":{
 		"prefix":"refstruc",
 		"body":[
 			"\\refstruc{${1:label}}"
@@ -17817,7 +17409,7 @@
 	},
 
 
-	"refstrucparen":{
+	"refstrucparen{}":{
 		"prefix":"refstrucparen",
 		"body":[
 			"\\refstrucparen{${1:label}}"
@@ -17833,7 +17425,7 @@
 	},
 
 
-	"textqq":{
+	"textqq{}":{
 		"prefix":"textqq",
 		"body":[
 			"\\textqq{${1:szövegközti idézet%text}}"
@@ -18393,7 +17985,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -18513,7 +18105,7 @@
 	},
 
 
-	"Useg":{
+	"Useg{}":{
 		"prefix":"Useg",
 		"body":[
 			"\\Useg{${1:counter}}"
@@ -18521,7 +18113,7 @@
 	},
 
 
-	"useg":{
+	"useg{}":{
 		"prefix":"useg",
 		"body":[
 			"\\useg{${1:counter}}"
@@ -18689,7 +18281,7 @@
 	},
 
 
-	"C":{
+	"C{}":{
 		"prefix":"C",
 		"body":[
 			"\\C{${1:arg}}"
@@ -19769,7 +19361,7 @@
 	},
 
 
-	"f":{
+	"f{}":{
 		"prefix":"f",
 		"body":[
 			"\\f{${1:arg}}"
@@ -19793,7 +19385,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -19817,7 +19409,7 @@
 	},
 
 
-	"U":{
+	"U{}":{
 		"prefix":"U",
 		"body":[
 			"\\U{${1:arg}}"
@@ -21169,7 +20761,7 @@
 	},
 
 
-	"asbuk":{
+	"asbuk{}":{
 		"prefix":"asbuk",
 		"body":[
 			"\\asbuk{${1:counter}}"
@@ -21177,7 +20769,7 @@
 	},
 
 
-	"Asbuk":{
+	"Asbuk{}":{
 		"prefix":"Asbuk",
 		"body":[
 			"\\Asbuk{${1:counter}}"
@@ -21345,7 +20937,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -22089,7 +21681,7 @@
 	},
 
 
-	"asbuk":{
+	"asbuk{}":{
 		"prefix":"asbuk",
 		"body":[
 			"\\asbuk{${1:counter}}"
@@ -22097,7 +21689,7 @@
 	},
 
 
-	"Asbuk":{
+	"Asbuk{}":{
 		"prefix":"Asbuk",
 		"body":[
 			"\\Asbuk{${1:counter}}"
@@ -22265,7 +21857,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -23305,7 +22897,7 @@
 	},
 
 
-	"spanishindexchars":{
+	"spanishindexchars{}{}{}":{
 		"prefix":"spanishindexchars",
 		"body":[
 			"\\spanishindexchars{${1:encap}}{${2:open}}{${3:close}}"
@@ -23345,7 +22937,7 @@
 	},
 
 
-	"spanishdate":{
+	"spanishdate{}{}{}":{
 		"prefix":"spanishdate",
 		"body":[
 			"\\spanishdate{${1:año}}{${2:mes}}{${3:día}}"
@@ -23353,7 +22945,7 @@
 	},
 
 
-	"spanishDate":{
+	"spanishDate{}{}{}":{
 		"prefix":"spanishDate",
 		"body":[
 			"\\spanishDate{${1:año}}{${2:mes}}{${3:día}}"
@@ -23385,7 +22977,7 @@
 	},
 
 
-	"spanishdatefirst":{
+	"spanishdatefirst{}":{
 		"prefix":"spanishdatefirst",
 		"body":[
 			"\\spanishdatefirst{${1:día-uno}}"
@@ -23393,7 +22985,7 @@
 	},
 
 
-	"spanishdeactivate":{
+	"spanishdeactivate{}":{
 		"prefix":"spanishdeactivate",
 		"body":[
 			"\\spanishdeactivate{${1:caracteres}}"
@@ -23417,7 +23009,7 @@
 	},
 
 
-	"spanishdecimal":{
+	"spanishdecimal{}":{
 		"prefix":"spanishdecimal",
 		"body":[
 			"\\spanishdecimal{${1:math%formula}}"
@@ -23425,7 +23017,7 @@
 	},
 
 
-	"sptext":{
+	"sptext{}":{
 		"prefix":"sptext",
 		"body":[
 			"\\sptext{${1:text}}"
@@ -23449,7 +23041,7 @@
 	},
 
 
-	"lsc":{
+	"lsc{}":{
 		"prefix":"lsc",
 		"body":[
 			"\\lsc{${1:text}}"
@@ -23905,26 +23497,10 @@
 	},
 
 
-	"today*":{
-		"prefix":"today*",
-		"body":[
-			"\\today*"
-		]
-	},
-
-
 	"todayRoman":{
 		"prefix":"todayRoman",
 		"body":[
 			"\\todayRoman"
-		]
-	},
-
-
-	"todayRoman*":{
-		"prefix":"todayRoman*",
-		"body":[
-			"\\todayRoman*"
 		]
 	},
 
@@ -24521,7 +24097,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -24541,14 +24117,6 @@
 		"prefix":"todayRoman",
 		"body":[
 			"\\todayRoman"
-		]
-	},
-
-
-	"todayRoman*":{
-		"prefix":"todayRoman*",
-		"body":[
-			"\\todayRoman*"
 		]
 	},
 
@@ -25233,7 +24801,7 @@
 	},
 
 
-	"q":{
+	"q{}":{
 		"prefix":"q",
 		"body":[
 			"\\q{${1:arg}}"
@@ -25257,7 +24825,7 @@
 	},
 
 
-	"uv":{
+	"uv{}":{
 		"prefix":"uv",
 		"body":[
 			"\\uv{${1:arg}}"
@@ -26273,7 +25841,7 @@
 	},
 
 
-	"textthai":{
+	"textthai{}":{
 		"prefix":"textthai",
 		"body":[
 			"\\textthai{${1:text}}"
@@ -26281,7 +25849,7 @@
 	},
 
 
-	"textpali":{
+	"textpali{}":{
 		"prefix":"textpali",
 		"body":[
 			"\\textpali{${1:text}}"
@@ -26297,7 +25865,7 @@
 	},
 
 
-	"thainum":{
+	"thainum{}":{
 		"prefix":"thainum",
 		"body":[
 			"\\thainum{${1:counter}}"
@@ -26305,7 +25873,7 @@
 	},
 
 
-	"thaibracenum":{
+	"thaibracenum{}":{
 		"prefix":"thaibracenum",
 		"body":[
 			"\\thaibracenum{${1:counter}}"
@@ -26313,7 +25881,7 @@
 	},
 
 
-	"thaialph":{
+	"thaialph{}":{
 		"prefix":"thaialph",
 		"body":[
 			"\\thaialph{${1:counter}}"
@@ -26321,7 +25889,7 @@
 	},
 
 
-	"thaiAlph":{
+	"thaiAlph{}":{
 		"prefix":"thaiAlph",
 		"body":[
 			"\\thaiAlph{${1:counter}}"
@@ -28185,7 +27753,7 @@
 	},
 
 
-	"textcyrillic":{
+	"textcyrillic{}":{
 		"prefix":"textcyrillic",
 		"body":[
 			"\\textcyrillic{${1:text}}"
@@ -28953,7 +28521,7 @@
 	},
 
 
-	"textviet":{
+	"textviet{}":{
 		"prefix":"textviet",
 		"body":[
 			"\\textviet{${1:text}}"
@@ -29193,7 +28761,7 @@
 	},
 
 
-	"h":{
+	"h{}":{
 		"prefix":"h",
 		"body":[
 			"\\h{${1:arg}}"
@@ -29401,92 +28969,434 @@
 	},
 
 
-	"listFB":{
-		"prefix":"listFB",
+	"shorthandoff*{}":{
+		"prefix":"*shorthandoff",
 		"body":[
-			"\\begin{listFB}",
-			"\t$1",
-			"\\end{listFB}"
+			"\\shorthandoff*{${1:characters}}"
 		]
 	},
 
 
-	"itemizeFB":{
-		"prefix":"itemizeFB",
+	"useshorthands*{}":{
+		"prefix":"*useshorthands",
 		"body":[
-			"\\begin{itemizeFB}",
-			"\t$1",
-			"\\end{itemizeFB}"
+			"\\useshorthands*{${1:char}}"
 		]
 	},
 
 
-	"enumerateFB":{
-		"prefix":"enumerateFB",
+	"localeinfo*{}":{
+		"prefix":"*localeinfo",
 		"body":[
-			"\\begin{enumerateFB}",
-			"\t$1",
-			"\\end{enumerateFB}"
+			"\\localeinfo*{${1:field%keyvals}}"
 		]
 	},
 
 
-	"otherlanguage*":{
-		"prefix":"otherlanguage*",
+	"getlocaleproperty*{}{}{}":{
+		"prefix":"*getlocaleproperty",
 		"body":[
-			"\\begin{otherlanguage*}",
-			"\t$1",
-			"\\end{otherlanguage*}"
+			"\\getlocaleproperty*{${1:cmd}}{${2:locale}}{${3:property}}"
 		]
 	},
 
 
-	"descriptionFB":{
-		"prefix":"descriptionFB",
+	"babelhyphen*{}":{
+		"prefix":"*babelhyphen",
 		"body":[
-			"\\begin{descriptionFB}",
-			"\t$1",
-			"\\end{descriptionFB}"
+			"\\babelhyphen*{${1:text}}"
 		]
 	},
 
 
-	"quoting":{
-		"prefix":"quoting",
+	"babelhyphenmins*{}{}":{
+		"prefix":"*babelhyphenmins",
 		"body":[
-			"\\begin{quoting}",
-			"\t$1",
-			"\\end{quoting}"
+			"\\babelhyphenmins*{${1:left}}{${2:right}}"
 		]
 	},
 
 
-	"listORI":{
-		"prefix":"listORI",
+	"babelhyphenmins*{}{}[]":{
+		"prefix":"*babelhyphenmins",
 		"body":[
-			"\\begin{listORI}",
-			"\t$1",
-			"\\end{listORI}"
+			"\\babelhyphenmins*{${1:left}}{${2:right}}[${3:hyphenationmin}]"
 		]
 	},
 
 
-	"otherlanguage":{
-		"prefix":"otherlanguage",
+	"babelhyphenmins*[]{}{}":{
+		"prefix":"*babelhyphenmins",
 		"body":[
-			"\\begin{otherlanguage}",
-			"\t$1",
-			"\\end{otherlanguage}"
+			"\\babelhyphenmins*[${3:lang1,lang2,...}]{${1:left}}{${2:right}}"
 		]
 	},
 
 
-	"hyphenrules":{
-		"prefix":"hyphenrules",
+	"babelhyphenmins*[]{}{}[]":{
+		"prefix":"*babelhyphenmins",
 		"body":[
-			"\\begin{hyphenrules}",
-			"\t$1",
-			"\\end{hyphenrules}"
+			"\\babelhyphenmins*[${3:lang1,lang2,...}]{${1:left}}{${2:right}}[${4:hyphenationmin}]"
+		]
+	},
+
+
+	"selectgalician*":{
+		"prefix":"*selectgalician",
+		"body":[
+			"\\selectgalician*"
+		]
+	},
+
+
+	"acite*{}":{
+		"prefix":"*acite",
+		"body":[
+			"\\acite*{${1:keylist}}"
+		]
+	},
+
+
+	"Acite*{}":{
+		"prefix":"*Acite",
+		"body":[
+			"\\Acite*{${1:keylist}}"
+		]
+	},
+
+
+	"apageref*{}":{
+		"prefix":"*apageref",
+		"body":[
+			"\\apageref*{${1:label}}"
+		]
+	},
+
+
+	"Apageref*{}":{
+		"prefix":"*Apageref",
+		"body":[
+			"\\Apageref*{${1:label}}"
+		]
+	},
+
+
+	"aref*{}":{
+		"prefix":"*aref",
+		"body":[
+			"\\aref*{${1:label}}"
+		]
+	},
+
+
+	"Aref*{}":{
+		"prefix":"*Aref",
+		"body":[
+			"\\Aref*{${1:label}}"
+		]
+	},
+
+
+	"az*{}":{
+		"prefix":"*az",
+		"body":[
+			"\\az*{${1:szó}}"
+		]
+	},
+
+
+	"Az*{}":{
+		"prefix":"*Az",
+		"body":[
+			"\\Az*{${1:szó}}"
+		]
+	},
+
+
+	"acite*{}":{
+		"prefix":"*acite",
+		"body":[
+			"\\acite*{${1:keylist}}"
+		]
+	},
+
+
+	"Acite*{}":{
+		"prefix":"*Acite",
+		"body":[
+			"\\Acite*{${1:keylist}}"
+		]
+	},
+
+
+	"apageref*{}":{
+		"prefix":"*apageref",
+		"body":[
+			"\\apageref*{${1:label}}"
+		]
+	},
+
+
+	"Apageref*{}":{
+		"prefix":"*Apageref",
+		"body":[
+			"\\Apageref*{${1:label}}"
+		]
+	},
+
+
+	"aref*{}":{
+		"prefix":"*aref",
+		"body":[
+			"\\aref*{${1:label}}"
+		]
+	},
+
+
+	"Aref*{}":{
+		"prefix":"*Aref",
+		"body":[
+			"\\Aref*{${1:label}}"
+		]
+	},
+
+
+	"az*{}":{
+		"prefix":"*az",
+		"body":[
+			"\\az*{${1:szó}}"
+		]
+	},
+
+
+	"Az*{}":{
+		"prefix":"*Az",
+		"body":[
+			"\\Az*{${1:szó}}"
+		]
+	},
+
+
+	"today*":{
+		"prefix":"*today",
+		"body":[
+			"\\today*"
+		]
+	},
+
+
+	"todayRoman*":{
+		"prefix":"*todayRoman",
+		"body":[
+			"\\todayRoman*"
+		]
+	},
+
+
+	"todayRoman*":{
+		"prefix":"*todayRoman",
+		"body":[
+			"\\todayRoman*"
+		]
+	},
+
+
+	"foreignlanguage[]{}{}":{
+		"prefix":"foreignlanguage",
+		"body":[
+			"\\foreignlanguage[${3:options%keyvals}]{${1:language}}{${2:text}}"
+		]
+	},
+
+
+	"babelensure[]{}":{
+		"prefix":"babelensure",
+		"body":[
+			"\\babelensure[${2:options%keyvals}]{${1:language}}"
+		]
+	},
+
+
+	"defineshorthand[]{}{}":{
+		"prefix":"defineshorthand",
+		"body":[
+			"\\defineshorthand[${3:lang1,lang2,...}]{${1:shorthand}}{${2:code}}"
+		]
+	},
+
+
+	"babelfont{}[]{}":{
+		"prefix":"babelfont",
+		"body":[
+			"\\babelfont{${1:font_family}}[${3:font_options%keyvals}]{${2:font_name}}"
+		]
+	},
+
+
+	"babelfont[]{}{}":{
+		"prefix":"babelfont",
+		"body":[
+			"\\babelfont[${3:lang1,lang2,...}]{${1:font_family}}{${2:font_name}}"
+		]
+	},
+
+
+	"babelfont[]{}[]{}":{
+		"prefix":"babelfont",
+		"body":[
+			"\\babelfont[${3:lang1,lang2,...}]{${1:font_family}}[${4:font_options%keyvals}]{${2:font_name}}"
+		]
+	},
+
+
+	"babelprovide[]{}":{
+		"prefix":"babelprovide",
+		"body":[
+			"\\babelprovide[${2:options%keyvals}]{${1:language}}"
+		]
+	},
+
+
+	"localedate[]{}{}{}":{
+		"prefix":"localedate",
+		"body":[
+			"\\localedate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
+		]
+	},
+
+
+	"babelcalendar[]{}{}{}{}":{
+		"prefix":"babelcalendar",
+		"body":[
+			"\\babelcalendar[${5:YYYY-MM-DD}]{${1:calendar}}{${2:year-macro%cmd}}{${3:month-macro%cmd}}{${4:day-macro%cmd}}"
+		]
+	},
+
+
+	"babelhyphenation[]{}":{
+		"prefix":"babelhyphenation",
+		"body":[
+			"\\babelhyphenation[${2:lang1,lang2,...}]{${1:exceptions}}"
+		]
+	},
+
+
+	"babelpatterns[]{}":{
+		"prefix":"babelpatterns",
+		"body":[
+			"\\babelpatterns[${2:lang1,lang2,...}]{${1:patterns}}"
+		]
+	},
+
+
+	"babelhyphenmins{}{}[]":{
+		"prefix":"babelhyphenmins",
+		"body":[
+			"\\babelhyphenmins{${1:left}}{${2:right}}[${3:hyphenationmin}]"
+		]
+	},
+
+
+	"babelhyphenmins[]{}{}":{
+		"prefix":"babelhyphenmins",
+		"body":[
+			"\\babelhyphenmins[${3:lang1,lang2,...}]{${1:left}}{${2:right}}"
+		]
+	},
+
+
+	"babelhyphenmins[]{}{}[]":{
+		"prefix":"babelhyphenmins",
+		"body":[
+			"\\babelhyphenmins[${3:lang1,lang2,...}]{${1:left}}{${2:right}}[${4:hyphenationmin}]"
+		]
+	},
+
+
+	"babelposthyphenation[]{}{}{}":{
+		"prefix":"babelposthyphenation",
+		"body":[
+			"\\babelposthyphenation[${4:options%keyvals}]{${1:hypenrules-name}}{${2:lua-pattern}}{${3:replacement}}"
+		]
+	},
+
+
+	"babelprehyphenation[]{}{}{}":{
+		"prefix":"babelprehyphenation",
+		"body":[
+			"\\babelprehyphenation[${4:options%keyvals}]{${1:locale-name}}{${2:lua-pattern}}{${3:replacement}}"
+		]
+	},
+
+
+	"babelinterchar[]{}{}{}{}":{
+		"prefix":"babelinterchar",
+		"body":[
+			"\\babelinterchar[${5:options%keyvals}]{${1:locale}}{${2:class-first}}{${3:class-second}}{${4:code}}"
+		]
+	},
+
+
+	"AddBabelHook[]{}{}{}":{
+		"prefix":"AddBabelHook",
+		"body":[
+			"\\AddBabelHook[${4:language}]{${1:name}}{${2:event}}{${3:code}}"
+		]
+	},
+
+
+	"babelcharproperty{}[]{}{}":{
+		"prefix":"babelcharproperty",
+		"body":[
+			"\\babelcharproperty{${1:char-code}}[${4:to-char-code}]{${2:property}}{${3:value}}"
+		]
+	},
+
+
+	"FBsetspaces[]{}{}{}{}":{
+		"prefix":"FBsetspaces",
+		"body":[
+			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
+		]
+	},
+
+
+	"FBsetspaces[]{}{}{}{}":{
+		"prefix":"FBsetspaces",
+		"body":[
+			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
+		]
+	},
+
+
+	"emitdate[]{}{}":{
+		"prefix":"emitdate",
+		"body":[
+			"\\emitdate[${3:toldalék}]{${1:formátum}}{${2:dátum}}"
+		]
+	},
+
+
+	"headingfootnote[]{}":{
+		"prefix":"headingfootnote",
+		"body":[
+			"\\headingfootnote[${2:szám}]{${1:lábjegyzet-szöveg%text}}"
+		]
+	},
+
+
+	"emitdate[]{}{}":{
+		"prefix":"emitdate",
+		"body":[
+			"\\emitdate[${3:toldalék}]{${1:formátum}}{${2:dátum}}"
+		]
+	},
+
+
+	"headingfootnote[]{}":{
+		"prefix":"headingfootnote",
+		"body":[
+			"\\headingfootnote[${2:szám}]{${1:lábjegyzet-szöveg%text}}"
 		]
 	},
 
@@ -29495,8 +29405,168 @@
 		"prefix":"selectlanguage",
 		"body":[
 			"\\begin{selectlanguage}",
-			"\t$1",
+				"\t$1",
 			"\\end{selectlanguage}"
+		]
+	},
+
+
+	"otherlanguage":{
+		"prefix":"otherlanguage",
+		"body":[
+			"\\begin{otherlanguage}",
+				"\t$1",
+			"\\end{otherlanguage}"
+		]
+	},
+
+
+	"otherlanguage*":{
+		"prefix":"otherlanguage",
+		"body":[
+			"\\begin{otherlanguage*}",
+				"\t$1",
+			"\\end{otherlanguage*}"
+		]
+	},
+
+
+	"hyphenrules":{
+		"prefix":"hyphenrules",
+		"body":[
+			"\\begin{hyphenrules}",
+				"\t$1",
+			"\\end{hyphenrules}"
+		]
+	},
+
+
+	"descriptionFB":{
+		"prefix":"descriptionFB",
+		"body":[
+			"\\begin{descriptionFB}",
+				"\t$1",
+			"\\end{descriptionFB}"
+		]
+	},
+
+
+	"enumerateFB":{
+		"prefix":"enumerateFB",
+		"body":[
+			"\\begin{enumerateFB}",
+				"\t$1",
+			"\\end{enumerateFB}"
+		]
+	},
+
+
+	"itemizeFB":{
+		"prefix":"itemizeFB",
+		"body":[
+			"\\begin{itemizeFB}",
+				"\t$1",
+			"\\end{itemizeFB}"
+		]
+	},
+
+
+	"listFB":{
+		"prefix":"listFB",
+		"body":[
+			"\\begin{listFB}",
+				"\t$1",
+			"\\end{listFB}"
+		]
+	},
+
+
+	"listORI":{
+		"prefix":"listORI",
+		"body":[
+			"\\begin{listORI}",
+				"\t$1",
+			"\\end{listORI}"
+		]
+	},
+
+
+	"descriptionFB":{
+		"prefix":"descriptionFB",
+		"body":[
+			"\\begin{descriptionFB}",
+				"\t$1",
+			"\\end{descriptionFB}"
+		]
+	},
+
+
+	"enumerateFB":{
+		"prefix":"enumerateFB",
+		"body":[
+			"\\begin{enumerateFB}",
+				"\t$1",
+			"\\end{enumerateFB}"
+		]
+	},
+
+
+	"itemizeFB":{
+		"prefix":"itemizeFB",
+		"body":[
+			"\\begin{itemizeFB}",
+				"\t$1",
+			"\\end{itemizeFB}"
+		]
+	},
+
+
+	"listFB":{
+		"prefix":"listFB",
+		"body":[
+			"\\begin{listFB}",
+				"\t$1",
+			"\\end{listFB}"
+		]
+	},
+
+
+	"listORI":{
+		"prefix":"listORI",
+		"body":[
+			"\\begin{listORI}",
+				"\t$1",
+			"\\end{listORI}"
+		]
+	},
+
+
+	"quoting":{
+		"prefix":"quoting",
+		"body":[
+			"\\begin{quoting}",
+				"\t$1",
+			"\\end{quoting}"
+		]
+	},
+
+
+	"quoting":{
+		"prefix":"quoting",
+		"body":[
+			"\\begin{quoting}",
+				"\t$1",
+			"\\end{quoting}"
+		]
+	},
+
+
+	"otherlanguage*":{
+		"prefix":"otherlanguage",
+		"body":[
+			"\\begin{otherlanguage*}",
+				"\t$1",
+			"\\end{otherlanguage*}"
 		]
 	}
 }

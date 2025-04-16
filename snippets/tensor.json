@@ -1,7 +1,7 @@
 {
 
 
-	"indices":{
+	"indices{}":{
 		"prefix":"indices",
 		"body":[
 			"\\indices{${1:^sup1_sub1^sup2_sub2...}}"
@@ -9,42 +9,10 @@
 	},
 
 
-	"indices*":{
-		"prefix":"indices*",
-		"body":[
-			"\\indices*{${1:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor":{
+	"tensor{}{}":{
 		"prefix":"tensor",
 		"body":[
 			"\\tensor{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor":{
-		"prefix":"tensor",
-		"body":[
-			"\\tensor[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor*":{
-		"prefix":"tensor*",
-		"body":[
-			"\\tensor*{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor*":{
-		"prefix":"tensor*",
-		"body":[
-			"\\tensor*[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
 		]
 	},
 
@@ -57,26 +25,10 @@
 	},
 
 
-	"nuclide":{
+	"nuclide{}":{
 		"prefix":"nuclide",
 		"body":[
 			"\\nuclide{${1:symbol%formula}}"
-		]
-	},
-
-
-	"nuclide":{
-		"prefix":"nuclide",
-		"body":[
-			"\\nuclide[${2:mass no%formula}]{${1:symbol%formula}}"
-		]
-	},
-
-
-	"nuclide":{
-		"prefix":"nuclide",
-		"body":[
-			"\\nuclide[${2:mass no%formula}][${3:atomic no%formula}]{${1:symbol%formula}}"
 		]
 	},
 
@@ -109,6 +61,54 @@
 		"prefix":"tensorStrut",
 		"body":[
 			"\\tensorStrut"
+		]
+	},
+
+
+	"indices*{}":{
+		"prefix":"*indices",
+		"body":[
+			"\\indices*{${1:^sup1_sub1^sup2_sub2...}}"
+		]
+	},
+
+
+	"tensor*{}{}":{
+		"prefix":"*tensor",
+		"body":[
+			"\\tensor*{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		]
+	},
+
+
+	"tensor*[]{}{}":{
+		"prefix":"*tensor",
+		"body":[
+			"\\tensor*[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		]
+	},
+
+
+	"tensor[]{}{}":{
+		"prefix":"tensor",
+		"body":[
+			"\\tensor[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		]
+	},
+
+
+	"nuclide[]{}":{
+		"prefix":"nuclide",
+		"body":[
+			"\\nuclide[${2:mass no%formula}]{${1:symbol%formula}}"
+		]
+	},
+
+
+	"nuclide[][]{}":{
+		"prefix":"nuclide",
+		"body":[
+			"\\nuclide[${2:mass no%formula}][${3:atomic no%formula}]{${1:symbol%formula}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"njustsetup":{
+	"njustsetup{}":{
 		"prefix":"njustsetup",
 		"body":[
 			"\\njustsetup{${1:options%keyvals}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"njustwhole":{
+	"njustwhole[]":{
 		"prefix":"njustwhole",
 		"body":[
 			"\\njustwhole[${1:color}]"
@@ -41,7 +41,7 @@
 	},
 
 
-	"njustwhole":{
+	"njustwhole[][]":{
 		"prefix":"njustwhole",
 		"body":[
 			"\\njustwhole[${1:color}][${2:scale}]"
@@ -53,38 +53,8 @@
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-			"\t$1",
+				"\t$1",
 			"\\end{abstract}"
-		]
-	},
-
-
-	"keyword":{
-		"prefix":"keyword",
-		"body":[
-			"\\begin{keyword}",
-			"\t$1",
-			"\\end{keyword}"
-		]
-	},
-
-
-	"keyword*":{
-		"prefix":"keyword*",
-		"body":[
-			"\\begin{keyword*}",
-			"\t$1",
-			"\\end{keyword*}"
-		]
-	},
-
-
-	"abstract*":{
-		"prefix":"abstract*",
-		"body":[
-			"\\begin{abstract*}",
-			"\t$1",
-			"\\end{abstract*}"
 		]
 	},
 
@@ -93,8 +63,38 @@
 		"prefix":"acknowledgement",
 		"body":[
 			"\\begin{acknowledgement}",
-			"\t$1",
+				"\t$1",
 			"\\end{acknowledgement}"
+		]
+	},
+
+
+	"keyword":{
+		"prefix":"keyword",
+		"body":[
+			"\\begin{keyword}",
+				"\t$1",
+			"\\end{keyword}"
+		]
+	},
+
+
+	"abstract*":{
+		"prefix":"*abstract",
+		"body":[
+			"\\begin{abstract*}",
+				"\t$1",
+			"\\end{abstract*}"
+		]
+	},
+
+
+	"keyword*":{
+		"prefix":"*keyword",
+		"body":[
+			"\\begin{keyword*}",
+				"\t$1",
+			"\\end{keyword*}"
 		]
 	}
 }

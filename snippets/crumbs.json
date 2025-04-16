@@ -25,7 +25,7 @@
 	},
 
 
-	"appendtofile":{
+	"appendtofile{}{}":{
 		"prefix":"appendtofile",
 		"body":[
 			"\\appendtofile{${1:file}}{${2:content}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"crumbection":{
+	"crumbection{}":{
 		"prefix":"crumbection",
 		"body":[
 			"\\crumbection{${1:title}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"crumbection":{
-		"prefix":"crumbection",
-		"body":[
-			"\\crumbection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"subcrumbection":{
+	"subcrumbection{}":{
 		"prefix":"subcrumbection",
 		"body":[
 			"\\subcrumbection{${1:title}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"subcrumbection":{
-		"prefix":"subcrumbection",
-		"body":[
-			"\\subcrumbection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"crumb":{
+	"crumb{}{}":{
 		"prefix":"crumb",
 		"body":[
 			"\\crumb{${1:arg1}}{${2:arg2}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"subcrumb":{
+	"subcrumb{}{}":{
 		"prefix":"subcrumb",
 		"body":[
 			"\\subcrumb{${1:arg1}}{${2:arg2}}"
@@ -93,6 +77,22 @@
 		"prefix":"thesubcrumbi",
 		"body":[
 			"\\thesubcrumbi"
+		]
+	},
+
+
+	"crumbection[]{}":{
+		"prefix":"crumbection",
+		"body":[
+			"\\crumbection[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"subcrumbection[]{}":{
+		"prefix":"subcrumbection",
+		"body":[
+			"\\subcrumbection[${2:short title}]{${1:title}}"
 		]
 	}
 }

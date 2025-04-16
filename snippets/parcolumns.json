@@ -1,18 +1,10 @@
 {
 
 
-	"colchunk":{
+	"colchunk{}":{
 		"prefix":"colchunk",
 		"body":[
 			"\\colchunk{${1:chunk%text}}"
-		]
-	},
-
-
-	"colchunk":{
-		"prefix":"colchunk",
-		"body":[
-			"\\colchunk[${2:column}]{${1:chunk%text}}"
 		]
 	},
 
@@ -25,11 +17,29 @@
 	},
 
 
+	"colchunk[]{}":{
+		"prefix":"colchunk",
+		"body":[
+			"\\colchunk[${2:column}]{${1:chunk%text}}"
+		]
+	},
+
+
 	"parcolumns":{
 		"prefix":"parcolumns",
 		"body":[
 			"\\begin{parcolumns}",
-			"\t$1",
+				"\t$1",
+			"\\end{parcolumns}"
+		]
+	},
+
+
+	"parcolumns":{
+		"prefix":"parcolumns",
+		"body":[
+			"\\begin{parcolumns}",
+				"\t$1",
 			"\\end{parcolumns}"
 		]
 	}

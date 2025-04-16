@@ -1,7 +1,7 @@
 {
 
 
-	"bboxOf":{
+	"bboxOf{}":{
 		"prefix":"bboxOf",
 		"body":[
 			"\\bboxOf{${1:name%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"llxOf":{
+	"llxOf{}":{
 		"prefix":"llxOf",
 		"body":[
 			"\\llxOf{${1:name%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"llyOf":{
+	"llyOf{}":{
 		"prefix":"llyOf",
 		"body":[
 			"\\llyOf{${1:name%keyvals}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"urxOf":{
+	"urxOf{}":{
 		"prefix":"urxOf",
 		"body":[
 			"\\urxOf{${1:name%keyvals}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"uryOf":{
+	"uryOf{}":{
 		"prefix":"uryOf",
 		"body":[
 			"\\uryOf{${1:name%keyvals}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"heightOf":{
+	"heightOf{}":{
 		"prefix":"heightOf",
 		"body":[
 			"\\heightOf{${1:name%keyvals}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"widthOf":{
+	"widthOf{}":{
 		"prefix":"widthOf",
 		"body":[
 			"\\widthOf{${1:name%keyvals}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"csOf":{
+	"csOf{}":{
 		"prefix":"csOf",
 		"body":[
 			"\\csOf{${1:name%keyvals}}"
@@ -65,18 +65,10 @@
 	},
 
 
-	"insertEPS":{
+	"insertEPS{}":{
 		"prefix":"insertEPS",
 		"body":[
 			"\\insertEPS{${1:name}}"
-		]
-	},
-
-
-	"insertEPS":{
-		"prefix":"insertEPS",
-		"body":[
-			"\\insertEPS[${2:options%keyvals}]{${1:name}}"
 		]
 	},
 
@@ -105,7 +97,7 @@
 	},
 
 
-	"AddToEmbeddedEPSs":{
+	"AddToEmbeddedEPSs{}":{
 		"prefix":"AddToEmbeddedEPSs",
 		"body":[
 			"\\AddToEmbeddedEPSs{${1:code}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"setSMask":{
+	"setSMask{}":{
 		"prefix":"setSMask",
 		"body":[
 			"\\setSMask{${1:options}}"
@@ -121,7 +113,15 @@
 	},
 
 
-	"setSMask":{
+	"insertEPS[]{}":{
+		"prefix":"insertEPS",
+		"body":[
+			"\\insertEPS[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"setSMask[]{}":{
 		"prefix":"setSMask",
 		"body":[
 			"\\setSMask[${2:group}]{${1:options}}"
@@ -133,7 +133,17 @@
 		"prefix":"createImage",
 		"body":[
 			"\\begin{createImage}",
-			"\t$1",
+				"\t$1",
+			"\\end{createImage}"
+		]
+	},
+
+
+	"createImage":{
+		"prefix":"createImage",
+		"body":[
+			"\\begin{createImage}",
+				"\t$1",
 			"\\end{createImage}"
 		]
 	}

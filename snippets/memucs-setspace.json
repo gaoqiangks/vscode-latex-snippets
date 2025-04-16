@@ -9,7 +9,7 @@
 	},
 
 
-	"setdisplayskipstretch":{
+	"setdisplayskipstretch{}":{
 		"prefix":"setdisplayskipstretch",
 		"body":[
 			"\\setdisplayskipstretch{${1:factor}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"setstretch":{
+	"setstretch{}":{
 		"prefix":"setstretch",
 		"body":[
 			"\\setstretch{${1:factor}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"SetSinglespace":{
+	"SetSinglespace{}":{
 		"prefix":"SetSinglespace",
 		"body":[
 			"\\SetSinglespace{${1:factor}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"SetHangulspace":{
+	"SetHangulspace{}{}":{
 		"prefix":"SetHangulspace",
 		"body":[
 			"\\SetHangulspace{${1:factor1}}{${2:factor2}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"SetHangulVerbatimSpace":{
+	"SetHangulVerbatimSpace{}":{
 		"prefix":"SetHangulVerbatimSpace",
 		"body":[
 			"\\SetHangulVerbatimSpace{${1:factor}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"ResetHangulspace":{
+	"ResetHangulspace{}{}":{
 		"prefix":"ResetHangulspace",
 		"body":[
 			"\\ResetHangulspace{${1:factor1}}{${2:factor2}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"epigraphspacing":{
+	"epigraphspacing{}":{
 		"prefix":"epigraphspacing",
 		"body":[
 			"\\epigraphspacing{${1:factor}}"
@@ -173,7 +173,7 @@
 		"prefix":"singlespace",
 		"body":[
 			"\\begin{singlespace}",
-			"\t$1",
+				"\t$1",
 			"\\end{singlespace}"
 		]
 	},
@@ -183,7 +183,7 @@
 		"prefix":"spacing",
 		"body":[
 			"\\begin{spacing}",
-			"\t$1",
+				"\t$1",
 			"\\end{spacing}"
 		]
 	},
@@ -193,7 +193,7 @@
 		"prefix":"onehalfspace",
 		"body":[
 			"\\begin{onehalfspace}",
-			"\t$1",
+				"\t$1",
 			"\\end{onehalfspace}"
 		]
 	},
@@ -203,17 +203,17 @@
 		"prefix":"doublespace",
 		"body":[
 			"\\begin{doublespace}",
-			"\t$1",
+				"\t$1",
 			"\\end{doublespace}"
 		]
 	},
 
 
 	"singlespace*":{
-		"prefix":"singlespace*",
+		"prefix":"*singlespace",
 		"body":[
 			"\\begin{singlespace*}",
-			"\t$1",
+				"\t$1",
 			"\\end{singlespace*}"
 		]
 	}

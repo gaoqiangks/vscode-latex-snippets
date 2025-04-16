@@ -1,18 +1,10 @@
 {
 
 
-	"PstGanttChart":{
+	"PstGanttChart{}{}":{
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\PstGanttChart{${1:vertical units}}{${2:horizontal units}}"
-		]
-	},
-
-
-	"PstGanttChart":{
-		"prefix":"PstGanttChart",
-		"body":[
-			"\\PstGanttChart[${3:options%keyvals}]{${1:vertical units}}{${2:horizontal units}}"
 		]
 	},
 
@@ -25,7 +17,7 @@
 	},
 
 
-	"PstGanttTask":{
+	"PstGanttTask{}{}":{
 		"prefix":"PstGanttTask",
 		"body":[
 			"\\PstGanttTask{${1:start}}{${2:end}}"
@@ -33,7 +25,15 @@
 	},
 
 
-	"PstGanttTask":{
+	"PstGanttChart[]{}{}":{
+		"prefix":"PstGanttChart",
+		"body":[
+			"\\PstGanttChart[${3:options%keyvals}]{${1:vertical units}}{${2:horizontal units}}"
+		]
+	},
+
+
+	"PstGanttTask[]{}{}":{
 		"prefix":"PstGanttTask",
 		"body":[
 			"\\PstGanttTask[${3:options%keyvals}]{${1:start}}{${2:end}}"
@@ -45,7 +45,17 @@
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\begin{PstGanttChart}",
-			"\t$1",
+				"\t$1",
+			"\\end{PstGanttChart}"
+		]
+	},
+
+
+	"PstGanttChart":{
+		"prefix":"PstGanttChart",
+		"body":[
+			"\\begin{PstGanttChart}",
+				"\t$1",
 			"\\end{PstGanttChart}"
 		]
 	}

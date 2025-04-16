@@ -1,7 +1,7 @@
 {
 
 
-	"DeclareCaption":{
+	"DeclareCaption{}{}{}":{
 		"prefix":"DeclareCaption",
 		"body":[
 			"\\DeclareCaption{${1:caption%cmd}}{${2:language}}{${3:definition}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"DeclareCaption":{
-		"prefix":"DeclareCaption",
-		"body":[
-			"\\DeclareCaption{${1:caption%cmd}}{${2:language}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"DeclareCaption":{
-		"prefix":"DeclareCaption",
-		"body":[
-			"\\DeclareCaption{${1:caption%cmd}}{${2:language}}[${4:args}][${5:default}]{${3:definition}}"
-		]
-	},
-
-
-	"ProvideCaption":{
+	"ProvideCaption{}{}{}":{
 		"prefix":"ProvideCaption",
 		"body":[
 			"\\ProvideCaption{${1:caption%cmd}}{${2:language}}{${3:definition}}"
@@ -33,23 +17,7 @@
 	},
 
 
-	"ProvideCaption":{
-		"prefix":"ProvideCaption",
-		"body":[
-			"\\ProvideCaption{${1:caption%cmd}}{${2:language}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"ProvideCaption":{
-		"prefix":"ProvideCaption",
-		"body":[
-			"\\ProvideCaption{${1:caption%cmd}}{${2:language}}[${4:args}][${5:default}]{${3:definition}}"
-		]
-	},
-
-
-	"UseCaption":{
+	"UseCaption{}{}":{
 		"prefix":"UseCaption",
 		"body":[
 			"\\UseCaption{${1:language}}{${2:caption}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"DeclareCaptionDefault":{
+	"DeclareCaptionDefault{}{}":{
 		"prefix":"DeclareCaptionDefault",
 		"body":[
 			"\\DeclareCaptionDefault{${1:caption%cmd}}{${2:definition}}"
@@ -65,23 +33,7 @@
 	},
 
 
-	"DeclareCaptionDefault":{
-		"prefix":"DeclareCaptionDefault",
-		"body":[
-			"\\DeclareCaptionDefault{${1:caption%cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"DeclareCaptionDefault":{
-		"prefix":"DeclareCaptionDefault",
-		"body":[
-			"\\DeclareCaptionDefault{${1:caption%cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"ProvideCaptionDefault":{
+	"ProvideCaptionDefault{}{}":{
 		"prefix":"ProvideCaptionDefault",
 		"body":[
 			"\\ProvideCaptionDefault{${1:caption%cmd}}{${2:definition}}"
@@ -89,23 +41,7 @@
 	},
 
 
-	"ProvideCaptionDefault":{
-		"prefix":"ProvideCaptionDefault",
-		"body":[
-			"\\ProvideCaptionDefault{${1:caption%cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"ProvideCaptionDefault":{
-		"prefix":"ProvideCaptionDefault",
-		"body":[
-			"\\ProvideCaptionDefault{${1:caption%cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"BeforeAtBeginDocument":{
+	"BeforeAtBeginDocument{}":{
 		"prefix":"BeforeAtBeginDocument",
 		"body":[
 			"\\BeforeAtBeginDocument{${1:code}}"
@@ -113,7 +49,7 @@
 	},
 
 
-	"AfterAtBeginDocument":{
+	"AfterAtBeginDocument{}":{
 		"prefix":"AfterAtBeginDocument",
 		"body":[
 			"\\AfterAtBeginDocument{${1:code}}"
@@ -121,10 +57,74 @@
 	},
 
 
-	"BeforeAtEndDocument":{
+	"BeforeAtEndDocument{}":{
 		"prefix":"BeforeAtEndDocument",
 		"body":[
 			"\\BeforeAtEndDocument{${1:code}}"
+		]
+	},
+
+
+	"DeclareCaption{}{}[]{}":{
+		"prefix":"DeclareCaption",
+		"body":[
+			"\\DeclareCaption{${1:caption%cmd}}{${2:language}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"DeclareCaption{}{}[][]{}":{
+		"prefix":"DeclareCaption",
+		"body":[
+			"\\DeclareCaption{${1:caption%cmd}}{${2:language}}[${4:args}][${5:default}]{${3:definition}}"
+		]
+	},
+
+
+	"ProvideCaption{}{}[]{}":{
+		"prefix":"ProvideCaption",
+		"body":[
+			"\\ProvideCaption{${1:caption%cmd}}{${2:language}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"ProvideCaption{}{}[][]{}":{
+		"prefix":"ProvideCaption",
+		"body":[
+			"\\ProvideCaption{${1:caption%cmd}}{${2:language}}[${4:args}][${5:default}]{${3:definition}}"
+		]
+	},
+
+
+	"DeclareCaptionDefault{}[]{}":{
+		"prefix":"DeclareCaptionDefault",
+		"body":[
+			"\\DeclareCaptionDefault{${1:caption%cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"DeclareCaptionDefault{}[][]{}":{
+		"prefix":"DeclareCaptionDefault",
+		"body":[
+			"\\DeclareCaptionDefault{${1:caption%cmd}}[${3:args}][${4:default}]{${2:definition}}"
+		]
+	},
+
+
+	"ProvideCaptionDefault{}[]{}":{
+		"prefix":"ProvideCaptionDefault",
+		"body":[
+			"\\ProvideCaptionDefault{${1:caption%cmd}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"ProvideCaptionDefault{}[][]{}":{
+		"prefix":"ProvideCaptionDefault",
+		"body":[
+			"\\ProvideCaptionDefault{${1:caption%cmd}}[${3:args}][${4:default}]{${2:definition}}"
 		]
 	}
 }

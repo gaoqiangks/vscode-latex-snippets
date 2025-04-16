@@ -1,7 +1,7 @@
 {
 
 
-	"line":{
+	"line(){}":{
 		"prefix":"line",
 		"body":[
 			"\\line(${2:x},${3:y}){${1:length}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"vector":{
+	"vector(){}":{
 		"prefix":"vector",
 		"body":[
 			"\\vector(${2:x},${3:y}){${1:length}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"circle":{
+	"circle{}":{
 		"prefix":"circle",
 		"body":[
 			"\\circle{${1:diameter}}"
@@ -25,42 +25,10 @@
 	},
 
 
-	"circle*":{
-		"prefix":"circle*",
-		"body":[
-			"\\circle*{${1:diameter}}"
-		]
-	},
-
-
-	"oval":{
+	"oval()":{
 		"prefix":"oval",
 		"body":[
 			"\\oval(${1:x},${2:y})"
-		]
-	},
-
-
-	"oval":{
-		"prefix":"oval",
-		"body":[
-			"\\oval[${1:radius}](${2:x},${3:y})"
-		]
-	},
-
-
-	"oval":{
-		"prefix":"oval",
-		"body":[
-			"\\oval(${2:x},${3:y})[${1:pos}]"
-		]
-	},
-
-
-	"oval":{
-		"prefix":"oval",
-		"body":[
-			"\\oval[${1:radius}](${3:x},${4:y})[${2:pos}]"
 		]
 	},
 
@@ -73,7 +41,7 @@
 	},
 
 
-	"bezier":{
+	"bezier{}()()()":{
 		"prefix":"bezier",
 		"body":[
 			"\\bezier{${1:n}}(${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
@@ -81,7 +49,7 @@
 	},
 
 
-	"qbezier":{
+	"qbezier()()()":{
 		"prefix":"qbezier",
 		"body":[
 			"\\qbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})"
@@ -89,26 +57,10 @@
 	},
 
 
-	"qbezier":{
-		"prefix":"qbezier",
-		"body":[
-			"\\qbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
-		]
-	},
-
-
-	"cbezier":{
+	"cbezier()()()()":{
 		"prefix":"cbezier",
 		"body":[
 			"\\cbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})(${7:dx},${8:dy})"
-		]
-	},
-
-
-	"cbezier":{
-		"prefix":"cbezier",
-		"body":[
-			"\\cbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})(${8:dx},${9:dy})"
 		]
 	},
 
@@ -121,7 +73,7 @@
 	},
 
 
-	"arc":{
+	"arc{}":{
 		"prefix":"arc",
 		"body":[
 			"\\arc{${1:radius}}"
@@ -129,31 +81,7 @@
 	},
 
 
-	"arc":{
-		"prefix":"arc",
-		"body":[
-			"\\arc[${2:angle1,angle2}]{${1:radius}}"
-		]
-	},
-
-
-	"arc*":{
-		"prefix":"arc*",
-		"body":[
-			"\\arc*{${1:radius}}"
-		]
-	},
-
-
-	"arc*":{
-		"prefix":"arc*",
-		"body":[
-			"\\arc*[${2:angle1,angle2}]{${1:radius}}"
-		]
-	},
-
-
-	"Line":{
+	"Line()()":{
 		"prefix":"Line",
 		"body":[
 			"\\Line(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -161,7 +89,7 @@
 	},
 
 
-	"Vector":{
+	"Vector()()":{
 		"prefix":"Vector",
 		"body":[
 			"\\Vector(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -169,7 +97,7 @@
 	},
 
 
-	"moveto":{
+	"moveto()":{
 		"prefix":"moveto",
 		"body":[
 			"\\moveto(${1:x},${2:y})"
@@ -177,7 +105,7 @@
 	},
 
 
-	"lineto":{
+	"lineto()":{
 		"prefix":"lineto",
 		"body":[
 			"\\lineto(${1:x},${2:y})"
@@ -185,7 +113,7 @@
 	},
 
 
-	"curveto":{
+	"curveto()()()":{
 		"prefix":"curveto",
 		"body":[
 			"\\curveto(${1:x2},${2:y2})(${3:x3},${4:y3})(${5:x4},${6:y4})"
@@ -193,18 +121,10 @@
 	},
 
 
-	"circlearc":{
+	"circlearc{}{}{}{}{}":{
 		"prefix":"circlearc",
 		"body":[
 			"\\circlearc{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
-		]
-	},
-
-
-	"circlearc":{
-		"prefix":"circlearc",
-		"body":[
-			"\\circlearc[${6:n}]{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
 		]
 	},
 
@@ -317,6 +237,86 @@
 		"prefix":"OriginalPictureCmds",
 		"body":[
 			"\\OriginalPictureCmds"
+		]
+	},
+
+
+	"circle*{}":{
+		"prefix":"*circle",
+		"body":[
+			"\\circle*{${1:diameter}}"
+		]
+	},
+
+
+	"arc*{}":{
+		"prefix":"*arc",
+		"body":[
+			"\\arc*{${1:radius}}"
+		]
+	},
+
+
+	"arc*[]{}":{
+		"prefix":"*arc",
+		"body":[
+			"\\arc*[${2:angle1,angle2}]{${1:radius}}"
+		]
+	},
+
+
+	"oval[]()":{
+		"prefix":"oval",
+		"body":[
+			"\\oval[${1:radius}](${2:x},${3:y})"
+		]
+	},
+
+
+	"oval()[]":{
+		"prefix":"oval",
+		"body":[
+			"\\oval(${2:x},${3:y})[${1:pos}]"
+		]
+	},
+
+
+	"oval[]()[]":{
+		"prefix":"oval",
+		"body":[
+			"\\oval[${1:radius}](${3:x},${4:y})[${2:pos}]"
+		]
+	},
+
+
+	"qbezier[]()()()":{
+		"prefix":"qbezier",
+		"body":[
+			"\\qbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
+		]
+	},
+
+
+	"cbezier[]()()()()":{
+		"prefix":"cbezier",
+		"body":[
+			"\\cbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})(${8:dx},${9:dy})"
+		]
+	},
+
+
+	"arc[]{}":{
+		"prefix":"arc",
+		"body":[
+			"\\arc[${2:angle1,angle2}]{${1:radius}}"
+		]
+	},
+
+
+	"circlearc[]{}{}{}{}{}":{
+		"prefix":"circlearc",
+		"body":[
+			"\\circlearc[${6:n}]{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
 		]
 	}
 }

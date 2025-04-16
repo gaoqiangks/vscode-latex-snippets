@@ -33,7 +33,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:institute%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"version":{
+	"version{}":{
 		"prefix":"version",
 		"body":[
 			"\\version{${1:version}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"ekv":{
+	"ekv{}":{
 		"prefix":"ekv",
 		"body":[
 			"\\ekv{${1:keyvals}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"IfEmpty":{
+	"IfEmpty{}":{
 		"prefix":"IfEmpty",
 		"body":[
 			"\\IfEmpty{${1:arg}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"ifempty":{
+	"ifempty{}":{
 		"prefix":"ifempty",
 		"body":[
 			"\\ifempty{${1:arg}}"
@@ -153,22 +153,12 @@
 	},
 
 
-	"note":{
-		"prefix":"note",
+	"theorem":{
+		"prefix":"theorem",
 		"body":[
-			"\\begin{note}",
-			"\t$1",
-			"\\end{note}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
 		]
 	},
 
@@ -177,78 +167,8 @@
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"description*":{
-		"prefix":"description*",
-		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize*",
-		"body":[
-			"\\begin{itemize*}",
-			"\t$1",
-			"\\end{itemize*}"
-		]
-	},
-
-
-	"enumerate*":{
-		"prefix":"enumerate*",
-		"body":[
-			"\\begin{enumerate*}",
-			"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"case":{
-		"prefix":"case",
-		"body":[
-			"\\begin{case}",
-			"\t$1",
-			"\\end{case}"
-		]
-	},
-
-
-	"remark":{
-		"prefix":"remark",
-		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
 		]
 	},
 
@@ -257,8 +177,18 @@
 		"prefix":"proposition",
 		"body":[
 			"\\begin{proposition}",
-			"\t$1",
+				"\t$1",
 			"\\end{proposition}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
 		]
 	},
 
@@ -267,7 +197,7 @@
 		"prefix":"definition",
 		"body":[
 			"\\begin{definition}",
-			"\t$1",
+				"\t$1",
 			"\\end{definition}"
 		]
 	},
@@ -277,8 +207,208 @@
 		"prefix":"conjecture",
 		"body":[
 			"\\begin{conjecture}",
-			"\t$1",
+				"\t$1",
 			"\\end{conjecture}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"note":{
+		"prefix":"note",
+		"body":[
+			"\\begin{note}",
+				"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"case":{
+		"prefix":"case",
+		"body":[
+			"\\begin{case}",
+				"\t$1",
+			"\\end{case}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"note":{
+		"prefix":"note",
+		"body":[
+			"\\begin{note}",
+				"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"case":{
+		"prefix":"case",
+		"body":[
+			"\\begin{case}",
+				"\t$1",
+			"\\end{case}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"setoutputdir":{
+	"setoutputdir{}":{
 		"prefix":"setoutputdir",
 		"body":[
 			"\\setoutputdir{${1:directory%definition}}"
@@ -41,11 +41,21 @@
 	},
 
 
+	"dot2tex":{
+		"prefix":"dot2tex",
+		"body":[
+			"\\begin{dot2tex}",
+				"\t$1",
+			"\\end{dot2tex}"
+		]
+	},
+
+
 	"dottotexverbatimwrite":{
 		"prefix":"dottotexverbatimwrite",
 		"body":[
 			"\\begin{dottotexverbatimwrite}",
-			"\t$1",
+				"\t$1",
 			"\\end{dottotexverbatimwrite}"
 		]
 	},
@@ -55,7 +65,7 @@
 		"prefix":"dot2tex",
 		"body":[
 			"\\begin{dot2tex}",
-			"\t$1",
+				"\t$1",
 			"\\end{dot2tex}"
 		]
 	}

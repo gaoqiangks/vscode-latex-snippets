@@ -1,26 +1,10 @@
 {
 
 
-	"isotope":{
+	"isotope{}":{
 		"prefix":"isotope",
 		"body":[
 			"\\isotope{${1:name%formula}}"
-		]
-	},
-
-
-	"isotope":{
-		"prefix":"isotope",
-		"body":[
-			"\\isotope[${2:nucleon num%formula}]{${1:name%formula}}"
-		]
-	},
-
-
-	"isotope":{
-		"prefix":"isotope",
-		"body":[
-			"\\isotope[${2:nucleon num%formula}][${3:atomic num%formula}]{${1:name%formula}}"
 		]
 	},
 
@@ -29,6 +13,22 @@
 		"prefix":"isotopestyle",
 		"body":[
 			"\\isotopestyle"
+		]
+	},
+
+
+	"isotope[]{}":{
+		"prefix":"isotope",
+		"body":[
+			"\\isotope[${2:nucleon num%formula}]{${1:name%formula}}"
+		]
+	},
+
+
+	"isotope[][]{}":{
+		"prefix":"isotope",
+		"body":[
+			"\\isotope[${2:nucleon num%formula}][${3:atomic num%formula}]{${1:name%formula}}"
 		]
 	}
 }

@@ -169,12 +169,12 @@
 	},
 
 
-	"FlushRight":{
-		"prefix":"FlushRight",
+	"Center":{
+		"prefix":"Center",
 		"body":[
-			"\\begin{FlushRight}",
-			"\t$1",
-			"\\end{FlushRight}"
+			"\\begin{Center}",
+				"\t$1",
+			"\\end{Center}"
 		]
 	},
 
@@ -183,8 +183,18 @@
 		"prefix":"FlushLeft",
 		"body":[
 			"\\begin{FlushLeft}",
-			"\t$1",
+				"\t$1",
 			"\\end{FlushLeft}"
+		]
+	},
+
+
+	"FlushRight":{
+		"prefix":"FlushRight",
+		"body":[
+			"\\begin{FlushRight}",
+				"\t$1",
+			"\\end{FlushRight}"
 		]
 	},
 
@@ -193,28 +203,8 @@
 		"prefix":"justify",
 		"body":[
 			"\\begin{justify}",
-			"\t$1",
+				"\t$1",
 			"\\end{justify}"
-		]
-	},
-
-
-	"LaTeXcenter":{
-		"prefix":"LaTeXcenter",
-		"body":[
-			"\\begin{LaTeXcenter}",
-			"\t$1",
-			"\\end{LaTeXcenter}"
-		]
-	},
-
-
-	"Center":{
-		"prefix":"Center",
-		"body":[
-			"\\begin{Center}",
-			"\t$1",
-			"\\end{Center}"
 		]
 	},
 
@@ -223,8 +213,28 @@
 		"prefix":"LaTeXflushleft",
 		"body":[
 			"\\begin{LaTeXflushleft}",
-			"\t$1",
+				"\t$1",
 			"\\end{LaTeXflushleft}"
+		]
+	},
+
+
+	"LaTeXflushleft":{
+		"prefix":"LaTeXflushleft",
+		"body":[
+			"\\begin{LaTeXflushleft}",
+				"\t$1",
+			"\\end{LaTeXflushleft}"
+		]
+	},
+
+
+	"LaTeXcenter":{
+		"prefix":"LaTeXcenter",
+		"body":[
+			"\\begin{LaTeXcenter}",
+				"\t$1",
+			"\\end{LaTeXcenter}"
 		]
 	}
 }

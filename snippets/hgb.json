@@ -1,7 +1,7 @@
 {
 
 
-	"calibrationbox":{
+	"calibrationbox{}{}":{
 		"prefix":"calibrationbox",
 		"body":[
 			"\\calibrationbox{${1:width in mm}}{${2:height in mm}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"fitem":{
+	"fitem{}":{
 		"prefix":"fitem",
 		"body":[
 			"\\fitem{${1:path%URL}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"hgbWarnOldPackage":{
+	"hgbWarnOldPackage{}":{
 		"prefix":"hgbWarnOldPackage",
 		"body":[
 			"\\hgbWarnOldPackage{${1:number}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"PackageToDTMdate":{
+	"PackageToDTMdate{}{}":{
 		"prefix":"PackageToDTMdate",
 		"body":[
 			"\\PackageToDTMdate{${1:YYYY/MM/DD}}{${2:name}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"ShowParameter":{
+	"ShowParameter{}":{
 		"prefix":"ShowParameter",
 		"body":[
 			"\\ShowParameter{${1:param}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -233,7 +233,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -473,11 +473,41 @@
 	},
 
 
+	"block":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block}",
+				"\t$1",
+			"\\end{block}"
+		]
+	},
+
+
+	"english":{
+		"prefix":"english",
+		"body":[
+			"\\begin{english}",
+				"\t$1",
+			"\\end{english}"
+		]
+	},
+
+
+	"FileList":{
+		"prefix":"FileList",
+		"body":[
+			"\\begin{FileList}",
+				"\t$1",
+			"\\end{FileList}"
+		]
+	},
+
+
 	"german":{
 		"prefix":"german",
 		"body":[
 			"\\begin{german}",
-			"\t$1",
+				"\t$1",
 			"\\end{german}"
 		]
 	},
@@ -487,18 +517,8 @@
 		"prefix":"NarrowList",
 		"body":[
 			"\\begin{NarrowList}",
-			"\t$1",
+				"\t$1",
 			"\\end{NarrowList}"
-		]
-	},
-
-
-	"block":{
-		"prefix":"block",
-		"body":[
-			"\\begin{block}",
-			"\t$1",
-			"\\end{block}"
 		]
 	},
 
@@ -507,28 +527,8 @@
 		"prefix":"nowidows",
 		"body":[
 			"\\begin{nowidows}",
-			"\t$1",
+				"\t$1",
 			"\\end{nowidows}"
-		]
-	},
-
-
-	"FileList":{
-		"prefix":"FileList",
-		"body":[
-			"\\begin{FileList}",
-			"\t$1",
-			"\\end{FileList}"
-		]
-	},
-
-
-	"english":{
-		"prefix":"english",
-		"body":[
-			"\\begin{english}",
-			"\t$1",
-			"\\end{english}"
 		]
 	}
 }

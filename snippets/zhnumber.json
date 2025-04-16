@@ -1,7 +1,7 @@
 {
 
 
-	"zhnumber":{
+	"zhnumber{}":{
 		"prefix":"zhnumber",
 		"body":[
 			"\\zhnumber{${1:number}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"zhnumber":{
-		"prefix":"zhnumber",
-		"body":[
-			"\\zhnumber[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"zhdigits":{
+	"zhdigits{}":{
 		"prefix":"zhdigits",
 		"body":[
 			"\\zhdigits{${1:number}}"
@@ -25,31 +17,7 @@
 	},
 
 
-	"zhdigits":{
-		"prefix":"zhdigits",
-		"body":[
-			"\\zhdigits[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"zhdigits*":{
-		"prefix":"zhdigits*",
-		"body":[
-			"\\zhdigits*{${1:number}}"
-		]
-	},
-
-
-	"zhdigits*":{
-		"prefix":"zhdigits*",
-		"body":[
-			"\\zhdigits*[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"zhnum":{
+	"zhnum{}":{
 		"prefix":"zhnum",
 		"body":[
 			"\\zhnum{${1:counter}}"
@@ -57,15 +25,7 @@
 	},
 
 
-	"zhnum":{
-		"prefix":"zhnum",
-		"body":[
-			"\\zhnum[${2:options%keyvals}]{${1:counter}}"
-		]
-	},
-
-
-	"zhdig":{
+	"zhdig{}":{
 		"prefix":"zhdig",
 		"body":[
 			"\\zhdig{${1:counter}}"
@@ -73,15 +33,7 @@
 	},
 
 
-	"zhdig":{
-		"prefix":"zhdig",
-		"body":[
-			"\\zhdig[${2:options%keyvals}]{${1:counter}}"
-		]
-	},
-
-
-	"zhweekday":{
+	"zhweekday{}":{
 		"prefix":"zhweekday",
 		"body":[
 			"\\zhweekday{${1:yyyy/mm/dd}}"
@@ -89,18 +41,10 @@
 	},
 
 
-	"zhdate":{
+	"zhdate{}":{
 		"prefix":"zhdate",
 		"body":[
 			"\\zhdate{${1:yyyy/mm/dd}}"
-		]
-	},
-
-
-	"zhdate*":{
-		"prefix":"zhdate*",
-		"body":[
-			"\\zhdate*{${1:yyyy/mm/dd}}"
 		]
 	},
 
@@ -113,7 +57,7 @@
 	},
 
 
-	"zhtime":{
+	"zhtime{}":{
 		"prefix":"zhtime",
 		"body":[
 			"\\zhtime{${1:hh:mm}}"
@@ -129,7 +73,7 @@
 	},
 
 
-	"zhtiangan":{
+	"zhtiangan{}":{
 		"prefix":"zhtiangan",
 		"body":[
 			"\\zhtiangan{${1:number}}"
@@ -137,7 +81,7 @@
 	},
 
 
-	"zhdizhi":{
+	"zhdizhi{}":{
 		"prefix":"zhdizhi",
 		"body":[
 			"\\zhdizhi{${1:number}}"
@@ -145,7 +89,7 @@
 	},
 
 
-	"zhganzhi":{
+	"zhganzhi{}":{
 		"prefix":"zhganzhi",
 		"body":[
 			"\\zhganzhi{${1:number}}"
@@ -153,7 +97,7 @@
 	},
 
 
-	"zhganzhinian":{
+	"zhganzhinian{}":{
 		"prefix":"zhganzhinian",
 		"body":[
 			"\\zhganzhinian{${1:year}}"
@@ -161,7 +105,7 @@
 	},
 
 
-	"zhnumExtendScaleMap":{
+	"zhnumExtendScaleMap{}":{
 		"prefix":"zhnumExtendScaleMap",
 		"body":[
 			"\\zhnumExtendScaleMap{${1:character1, character2, ..., charactern}}"
@@ -169,15 +113,7 @@
 	},
 
 
-	"zhnumExtendScaleMap":{
-		"prefix":"zhnumExtendScaleMap",
-		"body":[
-			"\\zhnumExtendScaleMap[${2:character}]{${1:character1, character2, ..., charactern}}"
-		]
-	},
-
-
-	"zhnumsetup":{
+	"zhnumsetup{}":{
 		"prefix":"zhnumsetup",
 		"body":[
 			"\\zhnumsetup{${1:options%keyvals}}"
@@ -197,6 +133,70 @@
 		"prefix":"zhnumResetWrapper",
 		"body":[
 			"\\zhnumResetWrapper"
+		]
+	},
+
+
+	"zhdigits*{}":{
+		"prefix":"*zhdigits",
+		"body":[
+			"\\zhdigits*{${1:number}}"
+		]
+	},
+
+
+	"zhdigits*[]{}":{
+		"prefix":"*zhdigits",
+		"body":[
+			"\\zhdigits*[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
+	"zhdate*{}":{
+		"prefix":"*zhdate",
+		"body":[
+			"\\zhdate*{${1:yyyy/mm/dd}}"
+		]
+	},
+
+
+	"zhnumber[]{}":{
+		"prefix":"zhnumber",
+		"body":[
+			"\\zhnumber[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
+	"zhdigits[]{}":{
+		"prefix":"zhdigits",
+		"body":[
+			"\\zhdigits[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
+	"zhnum[]{}":{
+		"prefix":"zhnum",
+		"body":[
+			"\\zhnum[${2:options%keyvals}]{${1:counter}}"
+		]
+	},
+
+
+	"zhdig[]{}":{
+		"prefix":"zhdig",
+		"body":[
+			"\\zhdig[${2:options%keyvals}]{${1:counter}}"
+		]
+	},
+
+
+	"zhnumExtendScaleMap[]{}":{
+		"prefix":"zhnumExtendScaleMap",
+		"body":[
+			"\\zhnumExtendScaleMap[${2:character}]{${1:character1, character2, ..., charactern}}"
 		]
 	}
 }

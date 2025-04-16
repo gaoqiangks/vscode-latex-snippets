@@ -1,7 +1,7 @@
 {
 
 
-	"scalerel":{
+	"scalerel{}{}":{
 		"prefix":"scalerel",
 		"body":[
 			"\\scalerel{${1:object}}{${2:reference}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"scalerel":{
-		"prefix":"scalerel",
-		"body":[
-			"\\scalerel[${3:max width}]{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"scalerel*":{
-		"prefix":"scalerel*",
-		"body":[
-			"\\scalerel*{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"scalerel*":{
-		"prefix":"scalerel*",
-		"body":[
-			"\\scalerel*[${3:max width}]{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"stretchrel":{
+	"stretchrel{}{}":{
 		"prefix":"stretchrel",
 		"body":[
 			"\\stretchrel{${1:object}}{${2:reference}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"stretchrel":{
-		"prefix":"stretchrel",
-		"body":[
-			"\\stretchrel[${3:narrowest aspect}]{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"stretchrel*":{
-		"prefix":"stretchrel*",
-		"body":[
-			"\\stretchrel*{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"stretchrel*":{
-		"prefix":"stretchrel*",
-		"body":[
-			"\\stretchrel*[${3:narrowest aspect}]{${1:object}}{${2:reference}}"
-		]
-	},
-
-
-	"scaleto":{
+	"scaleto{}{}":{
 		"prefix":"scaleto",
 		"body":[
 			"\\scaleto{${1:object}}{${2:height}}"
@@ -73,15 +25,7 @@
 	},
 
 
-	"scaleto":{
-		"prefix":"scaleto",
-		"body":[
-			"\\scaleto[${3:max width}]{${1:object}}{${2:height}}"
-		]
-	},
-
-
-	"stretchto":{
+	"stretchto{}{}":{
 		"prefix":"stretchto",
 		"body":[
 			"\\stretchto{${1:object}}{${2:height}}"
@@ -89,15 +33,7 @@
 	},
 
 
-	"stretchto":{
-		"prefix":"stretchto",
-		"body":[
-			"\\stretchto[${3:narrowest aspect}]{${1:object}}{${2:height}}"
-		]
-	},
-
-
-	"scaleleftright":{
+	"scaleleftright{}{}{}":{
 		"prefix":"scaleleftright",
 		"body":[
 			"\\scaleleftright{${1:left obj}}{${2:reference}}{${3:right obj}}"
@@ -105,15 +41,7 @@
 	},
 
 
-	"scaleleftright":{
-		"prefix":"scaleleftright",
-		"body":[
-			"\\scaleleftright[${4:max width}]{${1:left obj}}{${2:reference}}{${3:right obj}}"
-		]
-	},
-
-
-	"stretchleftright":{
+	"stretchleftright{}{}{}":{
 		"prefix":"stretchleftright",
 		"body":[
 			"\\stretchleftright{${1:left obj}}{${2:reference}}{${3:right obj}}"
@@ -121,15 +49,7 @@
 	},
 
 
-	"stretchleftright":{
-		"prefix":"stretchleftright",
-		"body":[
-			"\\stretchleftright[${4:narrowest aspect}]{${1:left obj}}{${2:reference}}{${3:right obj}}"
-		]
-	},
-
-
-	"hstretch":{
+	"hstretch{}{}":{
 		"prefix":"hstretch",
 		"body":[
 			"\\hstretch{${1:scale}}{${2:object}}"
@@ -137,7 +57,7 @@
 	},
 
 
-	"vstretch":{
+	"vstretch{}{}":{
 		"prefix":"vstretch",
 		"body":[
 			"\\vstretch{${1:scale}}{${2:object}}"
@@ -145,7 +65,7 @@
 	},
 
 
-	"scaleobj":{
+	"scaleobj{}{}":{
 		"prefix":"scaleobj",
 		"body":[
 			"\\scaleobj{${1:scale}}{${2:object}}"
@@ -153,7 +73,7 @@
 	},
 
 
-	"ThisStyle":{
+	"ThisStyle{}":{
 		"prefix":"ThisStyle",
 		"body":[
 			"\\ThisStyle{${1:definition}}"
@@ -201,18 +121,10 @@
 	},
 
 
-	"Isnextbyte":{
+	"Isnextbyte{}{}":{
 		"prefix":"Isnextbyte",
 		"body":[
 			"\\Isnextbyte{${1:test byte}}{${2:string}}"
-		]
-	},
-
-
-	"Isnextbyte":{
-		"prefix":"Isnextbyte",
-		"body":[
-			"\\Isnextbyte[${3:q}]{${1:test byte}}{${2:string}}"
 		]
 	},
 
@@ -229,14 +141,6 @@
 		"prefix":"ignoremathstyle",
 		"body":[
 			"\\ignoremathstyle"
-		]
-	},
-
-
-	"ignoremathstyle":{
-		"prefix":"ignoremathstyle",
-		"body":[
-			"\\ignoremathstyle[${1:mode}]"
 		]
 	},
 
@@ -285,6 +189,102 @@
 		"prefix":"mnxsrwidth",
 		"body":[
 			"\\mnxsrwidth"
+		]
+	},
+
+
+	"scalerel*{}{}":{
+		"prefix":"*scalerel",
+		"body":[
+			"\\scalerel*{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"scalerel*[]{}{}":{
+		"prefix":"*scalerel",
+		"body":[
+			"\\scalerel*[${3:max width}]{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"stretchrel*{}{}":{
+		"prefix":"*stretchrel",
+		"body":[
+			"\\stretchrel*{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"stretchrel*[]{}{}":{
+		"prefix":"*stretchrel",
+		"body":[
+			"\\stretchrel*[${3:narrowest aspect}]{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"scalerel[]{}{}":{
+		"prefix":"scalerel",
+		"body":[
+			"\\scalerel[${3:max width}]{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"stretchrel[]{}{}":{
+		"prefix":"stretchrel",
+		"body":[
+			"\\stretchrel[${3:narrowest aspect}]{${1:object}}{${2:reference}}"
+		]
+	},
+
+
+	"scaleto[]{}{}":{
+		"prefix":"scaleto",
+		"body":[
+			"\\scaleto[${3:max width}]{${1:object}}{${2:height}}"
+		]
+	},
+
+
+	"stretchto[]{}{}":{
+		"prefix":"stretchto",
+		"body":[
+			"\\stretchto[${3:narrowest aspect}]{${1:object}}{${2:height}}"
+		]
+	},
+
+
+	"scaleleftright[]{}{}{}":{
+		"prefix":"scaleleftright",
+		"body":[
+			"\\scaleleftright[${4:max width}]{${1:left obj}}{${2:reference}}{${3:right obj}}"
+		]
+	},
+
+
+	"stretchleftright[]{}{}{}":{
+		"prefix":"stretchleftright",
+		"body":[
+			"\\stretchleftright[${4:narrowest aspect}]{${1:left obj}}{${2:reference}}{${3:right obj}}"
+		]
+	},
+
+
+	"Isnextbyte[]{}{}":{
+		"prefix":"Isnextbyte",
+		"body":[
+			"\\Isnextbyte[${3:q}]{${1:test byte}}{${2:string}}"
+		]
+	},
+
+
+	"ignoremathstyle[]":{
+		"prefix":"ignoremathstyle",
+		"body":[
+			"\\ignoremathstyle[${1:mode}]"
 		]
 	}
 }

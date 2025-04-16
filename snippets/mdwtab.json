@@ -17,15 +17,7 @@
 	},
 
 
-	"vline":{
-		"prefix":"vline",
-		"body":[
-			"\\vline[${1:width}]"
-		]
-	},
-
-
-	"vgap":{
+	"vgap{}":{
 		"prefix":"vgap",
 		"body":[
 			"\\vgap{${1:length}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"vgap":{
-		"prefix":"vgap",
-		"body":[
-			"\\vgap[${2:cols}]{${1:length}}"
-		]
-	},
-
-
-	"hlx":{
+	"hlx{}":{
 		"prefix":"hlx",
 		"body":[
 			"\\hlx{${1:colspec}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"newcolumntype":{
+	"newcolumntype{}{}":{
 		"prefix":"newcolumntype",
 		"body":[
 			"\\newcolumntype{${1:name}}{${2:definition}}"
@@ -105,23 +89,7 @@
 	},
 
 
-	"newcolumntype":{
-		"prefix":"newcolumntype",
-		"body":[
-			"\\newcolumntype{${1:name}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"newcolumntype":{
-		"prefix":"newcolumntype",
-		"body":[
-			"\\newcolumntype{${1:name}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"colset":{
+	"colset{}":{
 		"prefix":"colset",
 		"body":[
 			"\\colset{${1:set-name}}"
@@ -129,7 +97,7 @@
 	},
 
 
-	"colpush":{
+	"colpush{}":{
 		"prefix":"colpush",
 		"body":[
 			"\\colpush{${1:set-name}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"tabcoltype":{
+	"tabcoltype{}{}":{
 		"prefix":"tabcoltype",
 		"body":[
 			"\\tabcoltype{${1:pre-text}}{${2:post-text}}"
@@ -153,7 +121,7 @@
 	},
 
 
-	"tabuserpretype":{
+	"tabuserpretype{}":{
 		"prefix":"tabuserpretype",
 		"body":[
 			"\\tabuserpretype{${1:text}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"tabuserposttype":{
+	"tabuserposttype{}":{
 		"prefix":"tabuserposttype",
 		"body":[
 			"\\tabuserposttype{${1:text}}"
@@ -169,7 +137,7 @@
 	},
 
 
-	"tabspctype":{
+	"tabspctype{}":{
 		"prefix":"tabspctype",
 		"body":[
 			"\\tabspctype{${1:text}}"
@@ -177,7 +145,7 @@
 	},
 
 
-	"tabruletype":{
+	"tabruletype{}":{
 		"prefix":"tabruletype",
 		"body":[
 			"\\tabruletype{${1:text}}"
@@ -185,7 +153,7 @@
 	},
 
 
-	"ifinrange":{
+	"ifinrange{}{}{}{}":{
 		"prefix":"ifinrange",
 		"body":[
 			"\\ifinrange{${1:number}}{${2:range-list}}{${3:then}}{${4:else}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"ranges":{
+	"ranges{}{}":{
 		"prefix":"ranges",
 		"body":[
 			"\\ranges{${1:macro}}{${2:range-list}}"
@@ -201,7 +169,7 @@
 	},
 
 
-	"showcol":{
+	"showcol{}":{
 		"prefix":"showcol",
 		"body":[
 			"\\showcol{${1:name}}"
@@ -209,7 +177,7 @@
 	},
 
 
-	"showpream":{
+	"showpream{}":{
 		"prefix":"showpream",
 		"body":[
 			"\\showpream{${1:preamble}}"
@@ -233,22 +201,44 @@
 	},
 
 
-	"array":{
-		"prefix":"array",
+	"vline[]":{
+		"prefix":"vline",
 		"body":[
-			"\\begin{array}",
-			"\t$1",
-			"\\end{array}"
+			"\\vline[${1:width}]"
 		]
 	},
 
 
-	"savenotes":{
-		"prefix":"savenotes",
+	"vgap[]{}":{
+		"prefix":"vgap",
 		"body":[
-			"\\begin{savenotes}",
-			"\t$1",
-			"\\end{savenotes}"
+			"\\vgap[${2:cols}]{${1:length}}"
+		]
+	},
+
+
+	"newcolumntype{}[]{}":{
+		"prefix":"newcolumntype",
+		"body":[
+			"\\newcolumntype{${1:name}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"newcolumntype{}[][]{}":{
+		"prefix":"newcolumntype",
+		"body":[
+			"\\newcolumntype{${1:name}}[${3:args}][${4:default}]{${2:definition}}"
+		]
+	},
+
+
+	"array":{
+		"prefix":"array",
+		"body":[
+			"\\begin{array}",
+				"\t$1",
+			"\\end{array}"
 		]
 	},
 
@@ -257,7 +247,37 @@
 		"prefix":"smarray",
 		"body":[
 			"\\begin{smarray}",
-			"\t$1",
+				"\t$1",
+			"\\end{smarray}"
+		]
+	},
+
+
+	"savenotes":{
+		"prefix":"savenotes",
+		"body":[
+			"\\begin{savenotes}",
+				"\t$1",
+			"\\end{savenotes}"
+		]
+	},
+
+
+	"array":{
+		"prefix":"array",
+		"body":[
+			"\\begin{array}",
+				"\t$1",
+			"\\end{array}"
+		]
+	},
+
+
+	"smarray":{
+		"prefix":"smarray",
+		"body":[
+			"\\begin{smarray}",
+				"\t$1",
 			"\\end{smarray}"
 		]
 	}

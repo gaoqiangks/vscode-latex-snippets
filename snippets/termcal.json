@@ -9,18 +9,10 @@
 	},
 
 
-	"calday":{
+	"calday{}":{
 		"prefix":"calday",
 		"body":[
 			"\\calday{${1:option list}}"
-		]
-	},
-
-
-	"calday":{
-		"prefix":"calday",
-		"body":[
-			"\\calday[${2:head%text}]{${1:option list}}"
 		]
 	},
 
@@ -41,7 +33,7 @@
 	},
 
 
-	"weeklytext":{
+	"weeklytext{}":{
 		"prefix":"weeklytext",
 		"body":[
 			"\\weeklytext{${1:text}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"options":{
+	"options{}{}":{
 		"prefix":"options",
 		"body":[
 			"\\options{${1:day}}{${2:option list}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"caltext":{
+	"caltext{}{}":{
 		"prefix":"caltext",
 		"body":[
 			"\\caltext{${1:day}}{${2:text}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"caltexton":{
+	"caltexton{}{}":{
 		"prefix":"caltexton",
 		"body":[
 			"\\caltexton{${1:day}}{${2:text}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"caltextnext":{
+	"caltextnext{}":{
 		"prefix":"caltextnext",
 		"body":[
 			"\\caltextnext{${1:text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"addtotoks":{
+	"addtotoks{}{}":{
 		"prefix":"addtotoks",
 		"body":[
 			"\\addtotoks{${1:token box}}{${2:new tokens}}"
@@ -233,7 +225,7 @@
 	},
 
 
-	"ordinal":{
+	"ordinal{}":{
 		"prefix":"ordinal",
 		"body":[
 			"\\ordinal{${1:register}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"setdate":{
+	"setdate{}":{
 		"prefix":"setdate",
 		"body":[
 			"\\setdate{${1:mm/dd/yyyy}}"
@@ -305,11 +297,19 @@
 	},
 
 
+	"calday[]{}":{
+		"prefix":"calday",
+		"body":[
+			"\\calday[${2:head%text}]{${1:option list}}"
+		]
+	},
+
+
 	"calendar":{
 		"prefix":"calendar",
 		"body":[
 			"\\begin{calendar}",
-			"\t$1",
+				"\t$1",
 			"\\end{calendar}"
 		]
 	}

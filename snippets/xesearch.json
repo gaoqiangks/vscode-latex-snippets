@@ -1,7 +1,7 @@
 {
 
 
-	"SearchList":{
+	"SearchList{}{}{}":{
 		"prefix":"SearchList",
 		"body":[
 			"\\SearchList{${1:name}}{${2:replacement text}}{${3:list of words}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"SearchList*":{
-		"prefix":"SearchList*",
-		"body":[
-			"\\SearchList*{${1:name}}{${2:replacement text}}{${3:list of words}}"
-		]
-	},
-
-
-	"StopList":{
+	"StopList{}":{
 		"prefix":"StopList",
 		"body":[
 			"\\StopList{${1:list of lists}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"AddToList":{
+	"AddToList{}{}":{
 		"prefix":"AddToList",
 		"body":[
 			"\\AddToList{${1:name}}{${2:list of words}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"AddToList*":{
-		"prefix":"AddToList*",
-		"body":[
-			"\\AddToList*{${1:name}}{${2:list of words}}"
-		]
-	},
-
-
-	"MakeBoundary":{
+	"MakeBoundary{}":{
 		"prefix":"MakeBoundary",
 		"body":[
 			"\\MakeBoundary{${1:characters}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"UndoBoundary":{
+	"UndoBoundary{}":{
 		"prefix":"UndoBoundary",
 		"body":[
 			"\\UndoBoundary{${1:characters}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"SortByLength":{
+	"SortByLength{}":{
 		"prefix":"SortByLength",
 		"body":[
 			"\\SortByLength{${1:pPsS}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"SortByLength*":{
-		"prefix":"SortByLength*",
-		"body":[
-			"\\SortByLength*{${1:pPsS}}"
-		]
-	},
-
-
-	"DoNotSort":{
+	"DoNotSort{}":{
 		"prefix":"DoNotSort",
 		"body":[
 			"\\DoNotSort{${1:pPsS}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"SearchAll":{
+	"SearchAll{}":{
 		"prefix":"SearchAll",
 		"body":[
 			"\\SearchAll{${1:pPsS}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"SearchOnlyOne":{
+	"SearchOnlyOne{}":{
 		"prefix":"SearchOnlyOne",
 		"body":[
 			"\\SearchOnlyOne{${1:pPsS}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"SearchOrder":{
+	"SearchOrder{}":{
 		"prefix":"SearchOrder",
 		"body":[
 			"\\SearchOrder{${1:order and inhibitions}}"
@@ -173,6 +149,30 @@
 		"prefix":"NormalTracing",
 		"body":[
 			"\\NormalTracing"
+		]
+	},
+
+
+	"SearchList*{}{}{}":{
+		"prefix":"*SearchList",
+		"body":[
+			"\\SearchList*{${1:name}}{${2:replacement text}}{${3:list of words}}"
+		]
+	},
+
+
+	"AddToList*{}{}":{
+		"prefix":"*AddToList",
+		"body":[
+			"\\AddToList*{${1:name}}{${2:list of words}}"
+		]
+	},
+
+
+	"SortByLength*{}":{
+		"prefix":"*SortByLength",
+		"body":[
+			"\\SortByLength*{${1:pPsS}}"
 		]
 	}
 }

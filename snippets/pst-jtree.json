@@ -9,14 +9,6 @@
 	},
 
 
-	"jtree":{
-		"prefix":"jtree",
-		"body":[
-			"\\jtree[${1:options%keyvals}]"
-		]
-	},
-
-
 	"endjtree":{
 		"prefix":"endjtree",
 		"body":[
@@ -25,7 +17,7 @@
 	},
 
 
-	"defbranch<name>":{
+	"defbranch<name>()()":{
 		"prefix":"defbranch<name>",
 		"body":[
 			"\\defbranch<name>(${1:height})(${2:slope})"
@@ -33,7 +25,7 @@
 	},
 
 
-	"deftriangle<name>":{
+	"deftriangle<name>()()()":{
 		"prefix":"deftriangle<name>",
 		"body":[
 			"\\deftriangle<name>(${1:height})(${2:slopeA})(${3:slopeB})"
@@ -41,7 +33,7 @@
 	},
 
 
-	"triline":{
+	"triline{}":{
 		"prefix":"triline",
 		"body":[
 			"\\triline{${1:text%plain}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"defvartriangle<name>":{
+	"defvartriangle<name>()":{
 		"prefix":"defvartriangle<name>",
 		"body":[
 			"\\defvartriangle<name>(${1:height})"
@@ -137,22 +129,6 @@
 	},
 
 
-	"stuff":{
-		"prefix":"stuff",
-		"body":[
-			"\\stuff[${1:tag}]"
-		]
-	},
-
-
-	"defstuff":{
-		"prefix":"defstuff",
-		"body":[
-			"\\defstuff[${2:tag}]{${1:code}}"
-		]
-	},
-
-
 	"multiline":{
 		"prefix":"multiline",
 		"body":[
@@ -169,7 +145,7 @@
 	},
 
 
-	"psinterpolate":{
+	"psinterpolate()(){}{}":{
 		"prefix":"psinterpolate",
 		"body":[
 			"\\psinterpolate(${3:node1})(${4:node2}){${1:num}}{${2:node name}}"
@@ -177,18 +153,10 @@
 	},
 
 
-	"elc":{
+	"elc{}":{
 		"prefix":"elc",
 		"body":[
 			"\\elc{${1:text%plain}}"
-		]
-	},
-
-
-	"elc":{
-		"prefix":"elc",
-		"body":[
-			"\\elc[${2:options%keyvals}]{${1:text%plain}}"
 		]
 	},
 
@@ -201,7 +169,7 @@
 	},
 
 
-	"jtreevalue":{
+	"jtreevalue{}{}{}":{
 		"prefix":"jtreevalue",
 		"body":[
 			"\\jtreevalue{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -217,11 +185,53 @@
 	},
 
 
+	"jtree[]":{
+		"prefix":"jtree",
+		"body":[
+			"\\jtree[${1:options%keyvals}]"
+		]
+	},
+
+
+	"stuff[]":{
+		"prefix":"stuff",
+		"body":[
+			"\\stuff[${1:tag}]"
+		]
+	},
+
+
+	"defstuff[]{}":{
+		"prefix":"defstuff",
+		"body":[
+			"\\defstuff[${2:tag}]{${1:code}}"
+		]
+	},
+
+
+	"elc[]{}":{
+		"prefix":"elc",
+		"body":[
+			"\\elc[${2:options%keyvals}]{${1:text%plain}}"
+		]
+	},
+
+
+	"jtree":{
+		"prefix":"jtree",
+		"body":[
+			"\\begin{jtree}",
+				"\t$1",
+			"\\end{jtree}"
+		]
+	},
+
+
 	"multiline":{
 		"prefix":"multiline",
 		"body":[
 			"\\begin{multiline}",
-			"\t$1",
+				"\t$1",
 			"\\end{multiline}"
 		]
 	},
@@ -231,7 +241,7 @@
 		"prefix":"jtree",
 		"body":[
 			"\\begin{jtree}",
-			"\t$1",
+				"\t$1",
 			"\\end{jtree}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"mathlig":{
+	"mathlig{}{}":{
 		"prefix":"mathlig",
 		"body":[
 			"\\mathlig{${1:characters}}{${2:ligature commands%formula}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"mathligprotect":{
+	"mathligprotect{}":{
 		"prefix":"mathligprotect",
 		"body":[
 			"\\mathligprotect{${1:macro%cmd}}"
@@ -33,39 +33,15 @@
 	},
 
 
-	"inference":{
+	"inference{}{}":{
 		"prefix":"inference",
 		"body":[
-			"\\inference{${1:line1 \\ ... \\ lineN%formula}}{${2:conclusion%formula}}"
+			"\\inference{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
 		]
 	},
 
 
-	"inference":{
-		"prefix":"inference",
-		"body":[
-			"\\inference[${3:name}]{${1:line1 \\ ... \\ lineN%formula}}{${2:conclusion%formula}}"
-		]
-	},
-
-
-	"inference*":{
-		"prefix":"inference*",
-		"body":[
-			"\\inference*{${1:line1 \\ ... \\ lineN%formula}}{${2:conclusion%formula}}"
-		]
-	},
-
-
-	"inference*":{
-		"prefix":"inference*",
-		"body":[
-			"\\inference*[${3:name}]{${1:line1 \\ ... \\ lineN%formula}}{${2:conclusion%formula}}"
-		]
-	},
-
-
-	"setpremisesend":{
+	"setpremisesend{}":{
 		"prefix":"setpremisesend",
 		"body":[
 			"\\setpremisesend{${1:length}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"setpremisesspace":{
+	"setpremisesspace{}":{
 		"prefix":"setpremisesspace",
 		"body":[
 			"\\setpremisesspace{${1:length}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"setnamespace":{
+	"setnamespace{}":{
 		"prefix":"setnamespace",
 		"body":[
 			"\\setnamespace{${1:length}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"predicate":{
+	"predicate{}":{
 		"prefix":"predicate",
 		"body":[
 			"\\predicate{${1:formula}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"compiler":{
+	"compiler{}":{
 		"prefix":"compiler",
 		"body":[
 			"\\compiler{${1:source,machine,target}}"
@@ -121,7 +97,7 @@
 	},
 
 
-	"interpreter":{
+	"interpreter{}":{
 		"prefix":"interpreter",
 		"body":[
 			"\\interpreter{${1:source,language}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"program":{
+	"program{}":{
 		"prefix":"program",
 		"body":[
 			"\\program{${1:program,language}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"machine":{
+	"machine{}":{
 		"prefix":"machine",
 		"body":[
 			"\\machine{${1:machine}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"reservestyle":{
+	"reservestyle{}{}":{
 		"prefix":"reservestyle",
 		"body":[
 			"\\reservestyle{${1:macro%cmd}}{${2:formatting%definition}}"
@@ -153,15 +129,7 @@
 	},
 
 
-	"reservestyle":{
-		"prefix":"reservestyle",
-		"body":[
-			"\\reservestyle[${3:spacing cmd}]{${1:macro%cmd}}{${2:formatting%definition}}"
-		]
-	},
-
-
-	"comp":{
+	"comp{}{}":{
 		"prefix":"comp",
 		"body":[
 			"\\comp{${1:command%plain}}{${2:environment%formula}}"
@@ -169,7 +137,7 @@
 	},
 
 
-	"eval":{
+	"eval{}{}":{
 		"prefix":"eval",
 		"body":[
 			"\\eval{${1:command%plain}}{${2:environment%formula}}"
@@ -185,14 +153,6 @@
 	},
 
 
-	"evalsymbol":{
-		"prefix":"evalsymbol",
-		"body":[
-			"\\evalsymbol[${1:superscript%formula}]"
-		]
-	},
-
-
 	"compsymbol":{
 		"prefix":"compsymbol",
 		"body":[
@@ -201,15 +161,7 @@
 	},
 
 
-	"compsymbol":{
-		"prefix":"compsymbol",
-		"body":[
-			"\\compsymbol[${1:superscript%formula}]"
-		]
-	},
-
-
-	"exe":{
+	"exe{}{}":{
 		"prefix":"exe",
 		"body":[
 			"\\exe{${1:program}}{${2:data%formula}}"
@@ -217,18 +169,66 @@
 	},
 
 
-	"exe":{
-		"prefix":"exe",
+	"TestForConflict{}":{
+		"prefix":"TestForConflict",
 		"body":[
-			"\\exe{${1:program}}[${3:machine%formula}]{${2:data%formula}}"
+			"\\TestForConflict{${1:command list}}"
 		]
 	},
 
 
-	"TestForConflict":{
-		"prefix":"TestForConflict",
+	"inference*{}{}":{
+		"prefix":"*inference",
 		"body":[
-			"\\TestForConflict{${1:command list}}"
+			"\\inference*{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
+		]
+	},
+
+
+	"inference*[]{}{}":{
+		"prefix":"*inference",
+		"body":[
+			"\\inference*[${3:name}]{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
+		]
+	},
+
+
+	"inference[]{}{}":{
+		"prefix":"inference",
+		"body":[
+			"\\inference[${3:name}]{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
+		]
+	},
+
+
+	"reservestyle[]{}{}":{
+		"prefix":"reservestyle",
+		"body":[
+			"\\reservestyle[${3:spacing cmd}]{${1:macro%cmd}}{${2:formatting%definition}}"
+		]
+	},
+
+
+	"evalsymbol[]":{
+		"prefix":"evalsymbol",
+		"body":[
+			"\\evalsymbol[${1:superscript%formula}]"
+		]
+	},
+
+
+	"compsymbol[]":{
+		"prefix":"compsymbol",
+		"body":[
+			"\\compsymbol[${1:superscript%formula}]"
+		]
+	},
+
+
+	"exe{}[]{}":{
+		"prefix":"exe",
+		"body":[
+			"\\exe{${1:program}}[${3:machine%formula}]{${2:data%formula}}"
 		]
 	}
 }

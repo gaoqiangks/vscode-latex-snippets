@@ -1,7 +1,7 @@
 {
 
 
-	"leftindex^":{
+	"leftindex^{}{}":{
 		"prefix":"leftindex^",
 		"body":[
 			"\\leftindex^{${1:sup}}{${2:symbol}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"leftindex_":{
+	"leftindex_{}{}":{
 		"prefix":"leftindex_",
 		"body":[
 			"\\leftindex_{${1:sub}}{${2:symbol}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"leftindex^":{
+	"leftindex^{}_{}{}":{
 		"prefix":"leftindex^",
 		"body":[
 			"\\leftindex^{${1:sup}}_{${2:sub}}{${3:symbol}}"
@@ -25,23 +25,7 @@
 	},
 
 
-	"leftindex":{
-		"prefix":"leftindex",
-		"body":[
-			"\\leftindex[${4:slanting phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
-		]
-	},
-
-
-	"leftindex":{
-		"prefix":"leftindex",
-		"body":[
-			"\\leftindex[${4:slanting phantom}][${5:height phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
-		]
-	},
-
-
-	"LeftIndex^":{
+	"LeftIndex^{}":{
 		"prefix":"LeftIndex^",
 		"body":[
 			"\\LeftIndex^{${1:sup}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"LeftIndex_":{
+	"LeftIndex_{}":{
 		"prefix":"LeftIndex_",
 		"body":[
 			"\\LeftIndex_{${1:sub}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"LeftIndex^":{
+	"LeftIndex^{}_{}":{
 		"prefix":"LeftIndex^",
 		"body":[
 			"\\LeftIndex^{${1:sup}}_{${2:sub}}"
@@ -65,7 +49,31 @@
 	},
 
 
-	"LeftIndex":{
+	"manualleftindex{}{}{}{}":{
+		"prefix":"manualleftindex",
+		"body":[
+			"\\manualleftindex{${1:height phantom}}{${2:slanting phantom}}{${3:sup}}{${4:sub}}"
+		]
+	},
+
+
+	"leftindex[]^{}_{}{}":{
+		"prefix":"leftindex",
+		"body":[
+			"\\leftindex[${4:slanting phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
+		]
+	},
+
+
+	"leftindex[][]^{}_{}{}":{
+		"prefix":"leftindex",
+		"body":[
+			"\\leftindex[${4:slanting phantom}][${5:height phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
+		]
+	},
+
+
+	"LeftIndex[]^{}_{}":{
 		"prefix":"LeftIndex",
 		"body":[
 			"\\LeftIndex[${3:slanting phantom}]^{${1:sup}}_{${2:sub}}"
@@ -73,18 +81,10 @@
 	},
 
 
-	"LeftIndex":{
+	"LeftIndex[][]^{}_{}":{
 		"prefix":"LeftIndex",
 		"body":[
 			"\\LeftIndex[${3:slanting phantom}][${4:height phantom}]^{${1:sup}}_{${2:sub}}"
-		]
-	},
-
-
-	"manualleftindex":{
-		"prefix":"manualleftindex",
-		"body":[
-			"\\manualleftindex{${1:height phantom}}{${2:slanting phantom}}{${3:sup}}{${4:sub}}"
 		]
 	}
 }

@@ -1,8 +1,8 @@
 {
 
 
-	"*":{
-		"prefix":"*",
+	"*{}":{
+		"prefix":"",
 		"body":[
 			"\\*{${1:index entry}}"
 		]
@@ -25,7 +25,7 @@
 	},
 
 
-	"addbslash":{
+	"addbslash{}":{
 		"prefix":"addbslash",
 		"body":[
 			"\\addbslash{${1:arg}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"arg":{
+	"arg{}":{
 		"prefix":"arg",
 		"body":[
 			"\\arg{${1:arg}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"autoindex":{
+	"autoindex{}":{
 		"prefix":"autoindex",
 		"body":[
 			"\\autoindex{${1:entry}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"bst":{
+	"bst{}":{
 		"prefix":"bst",
 		"body":[
 			"\\bst{${1:BibTeX style}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"cls":{
+	"cls{}":{
 		"prefix":"cls",
 		"body":[
 			"\\cls{${1:class}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"cn":{
+	"cn{}":{
 		"prefix":"cn",
 		"body":[
 			"\\cn{${1:csname}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"cnm":{
+	"cnm{}{}":{
 		"prefix":"cnm",
 		"body":[
 			"\\cnm{${1:csname}}{${2:arg}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"cnmm":{
+	"cnmm{}{}{}":{
 		"prefix":"cnmm",
 		"body":[
 			"\\cnmm{${1:csname}}{${2:arg1}}{${3:arg2}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"cnmsm":{
+	"cnmsm{}{}*{}":{
 		"prefix":"cnmsm",
 		"body":[
 			"\\cnmsm{${1:csname}}{${2:arg1}}*{${3:arg2}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"cnom":{
+	"cnom{}{}{}":{
 		"prefix":"cnom",
 		"body":[
 			"\\cnom{${1:csname}}{${2:optarg}}{${3:arg}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"cnt":{
+	"cnt{}":{
 		"prefix":"cnt",
 		"body":[
 			"\\cnt{${1:counter}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"embrace":{
+	"embrace{}":{
 		"prefix":"embrace",
 		"body":[
 			"\\embrace{${1:text}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -217,7 +217,7 @@
 	},
 
 
-	"errora":{
+	"errora{}":{
 		"prefix":"errora",
 		"body":[
 			"\\errora{${1:message%text}}"
@@ -233,7 +233,7 @@
 	},
 
 
-	"fn":{
+	"fn{}":{
 		"prefix":"fn",
 		"body":[
 			"\\fn{${1:file name}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"fnt":{
+	"fnt{}":{
 		"prefix":"fnt",
 		"body":[
 			"\\fnt{${1:font name}}"
@@ -249,7 +249,7 @@
 	},
 
 
-	"gloss":{
+	"gloss{}":{
 		"prefix":"gloss",
 		"body":[
 			"\\gloss{${1:arg}}"
@@ -257,7 +257,7 @@
 	},
 
 
-	"indexcs":{
+	"indexcs{}":{
 		"prefix":"indexcs",
 		"body":[
 			"\\indexcs{${1:cs}}"
@@ -281,7 +281,7 @@
 	},
 
 
-	"mail":{
+	"mail{}":{
 		"prefix":"mail",
 		"body":[
 			"\\mail{${1:email%URL}}"
@@ -297,7 +297,7 @@
 	},
 
 
-	"ncn":{
+	"ncn{}":{
 		"prefix":"ncn",
 		"body":[
 			"\\ncn{${1:csname}}"
@@ -313,7 +313,7 @@
 	},
 
 
-	"nobslash":{
+	"nobslash{}":{
 		"prefix":"nobslash",
 		"body":[
 			"\\nobslash{${1:arg}}"
@@ -329,15 +329,7 @@
 	},
 
 
-	"ommitude":{
-		"prefix":"ommitude",
-		"body":[
-			"\\ommitude[${2:optarg}]{${1:arg}}"
-		]
-	},
-
-
-	"ommitude":{
+	"ommitude{}":{
 		"prefix":"ommitude",
 		"body":[
 			"\\ommitude{${1:arg}}"
@@ -353,7 +345,7 @@
 	},
 
 
-	"opt":{
+	"opt{}":{
 		"prefix":"opt",
 		"body":[
 			"\\opt{${1:option}}"
@@ -361,7 +353,7 @@
 	},
 
 
-	"pkg":{
+	"pkg{}":{
 		"prefix":"pkg",
 		"body":[
 			"\\pkg{${1:package}}"
@@ -369,10 +361,10 @@
 	},
 
 
-	"qc":{
+	"qc{}":{
 		"prefix":"qc",
 		"body":[
-			"\\qc{${1:\<${2:char}>}}"
+			"\\qc{${1:\\<${2:char}>}}"
 		]
 	},
 
@@ -409,7 +401,7 @@
 	},
 
 
-	"qq":{
+	"qq{}":{
 		"prefix":"qq",
 		"body":[
 			"\\qq{${1:text}}"
@@ -433,7 +425,7 @@
 	},
 
 
-	"secref":{
+	"secref{}":{
 		"prefix":"secref",
 		"body":[
 			"\\secref{${1:label}}"
@@ -457,12 +449,10 @@
 	},
 
 
-	"histnote":{
-		"prefix":"histnote",
+	"ommitude[]{}":{
+		"prefix":"ommitude",
 		"body":[
-			"\\begin{histnote}",
-			"\t$1",
-			"\\end{histnote}"
+			"\\ommitude[${2:optarg}]{${1:arg}}"
 		]
 	},
 
@@ -471,7 +461,7 @@
 		"prefix":"ctab",
 		"body":[
 			"\\begin{ctab}",
-			"\t$1",
+				"\t$1",
 			"\\end{ctab}"
 		]
 	},
@@ -481,8 +471,28 @@
 		"prefix":"error",
 		"body":[
 			"\\begin{error}",
-			"\t$1",
+				"\t$1",
 			"\\end{error}"
+		]
+	},
+
+
+	"histnote":{
+		"prefix":"histnote",
+		"body":[
+			"\\begin{histnote}",
+				"\t$1",
+			"\\end{histnote}"
+		]
+	},
+
+
+	"ctab":{
+		"prefix":"ctab",
+		"body":[
+			"\\begin{ctab}",
+				"\t$1",
+			"\\end{ctab}"
 		]
 	}
 }

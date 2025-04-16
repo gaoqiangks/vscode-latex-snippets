@@ -1,7 +1,7 @@
 {
 
 
-	"metricsymbols":{
+	"metricsymbols{}":{
 		"prefix":"metricsymbols",
 		"body":[
 			"\\metricsymbols{${1:symbols}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"metricsymbols*":{
-		"prefix":"metricsymbols*",
-		"body":[
-			"\\metricsymbols*{${1:symbols}}"
-		]
-	},
-
-
-	"metricsymbols":{
-		"prefix":"metricsymbols",
-		"body":[
-			"\\metricsymbols[${2:number=higlighting}]{${1:symbols}}"
-		]
-	},
-
-
-	"metricsymbols*":{
-		"prefix":"metricsymbols*",
-		"body":[
-			"\\metricsymbols*[${2:number=higlighting}]{${1:symbols}}"
-		]
-	},
-
-
-	"metrics":{
+	"metrics{}{}":{
 		"prefix":"metrics",
 		"body":[
 			"\\metrics{${1:symbols}}{${2:syllables}}"
@@ -41,15 +17,7 @@
 	},
 
 
-	"metrics":{
-		"prefix":"metrics",
-		"body":[
-			"\\metrics[${3:number=higlighting}]{${1:symbols}}{${2:syllables}}"
-		]
-	},
-
-
-	"acct":{
+	"acct{}":{
 		"prefix":"acct",
 		"body":[
 			"\\acct{${1:vowel}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"brv":{
+	"brv{}":{
 		"prefix":"brv",
 		"body":[
 			"\\brv{${1:vowel}}"
@@ -65,7 +33,7 @@
 	},
 
 
-	"lng":{
+	"lng{}":{
 		"prefix":"lng",
 		"body":[
 			"\\lng{${1:vowel}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"bow":{
+	"bow{}":{
 		"prefix":"bow",
 		"body":[
 			"\\bow{${1:syllables}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"verseref":{
+	"verseref{}":{
 		"prefix":"verseref",
 		"body":[
 			"\\verseref{${1:reference}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"setmetrixvar":{
+	"setmetrixvar{}{}":{
 		"prefix":"setmetrixvar",
 		"body":[
 			"\\setmetrixvar{${1:variable%keyvals}}{${2:value}}"
@@ -97,10 +65,42 @@
 	},
 
 
-	"usemetrixvar":{
+	"usemetrixvar{}":{
 		"prefix":"usemetrixvar",
 		"body":[
 			"\\usemetrixvar{${1:variable%keyvals}}"
+		]
+	},
+
+
+	"metricsymbols*{}":{
+		"prefix":"*metricsymbols",
+		"body":[
+			"\\metricsymbols*{${1:symbols}}"
+		]
+	},
+
+
+	"metricsymbols*[]{}":{
+		"prefix":"*metricsymbols",
+		"body":[
+			"\\metricsymbols*[${2:number=higlighting}]{${1:symbols}}"
+		]
+	},
+
+
+	"metricsymbols[]{}":{
+		"prefix":"metricsymbols",
+		"body":[
+			"\\metricsymbols[${2:number=higlighting}]{${1:symbols}}"
+		]
+	},
+
+
+	"metrics[]{}{}":{
+		"prefix":"metrics",
+		"body":[
+			"\\metrics[${3:number=higlighting}]{${1:symbols}}{${2:syllables}}"
 		]
 	},
 
@@ -109,7 +109,7 @@
 		"prefix":"symbolline",
 		"body":[
 			"\\begin{symbolline}",
-			"\t$1",
+				"\t$1",
 			"\\end{symbolline}"
 		]
 	},
@@ -119,7 +119,17 @@
 		"prefix":"metricverses",
 		"body":[
 			"\\begin{metricverses}",
-			"\t$1",
+				"\t$1",
+			"\\end{metricverses}"
+		]
+	},
+
+
+	"metricverses":{
+		"prefix":"metricverses",
+		"body":[
+			"\\begin{metricverses}",
+				"\t$1",
 			"\\end{metricverses}"
 		]
 	}

@@ -65,7 +65,7 @@
 	},
 
 
-	"tcbposterset":{
+	"tcbposterset{}":{
 		"prefix":"tcbposterset",
 		"body":[
 			"\\tcbposterset{${1:options%keyvals}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"posterbox":{
+	"posterbox{}{}":{
 		"prefix":"posterbox",
 		"body":[
 			"\\posterbox{${1:placement}}{${2:box content%text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"posterbox":{
+	"posterbox[]{}{}":{
 		"prefix":"posterbox",
 		"body":[
 			"\\posterbox[${3:options%keyvals}]{${1:placement}}{${2:box content%text}}"
@@ -93,7 +93,7 @@
 		"prefix":"tcbposter",
 		"body":[
 			"\\begin{tcbposter}",
-			"\t$1",
+				"\t$1",
 			"\\end{tcbposter}"
 		]
 	},
@@ -103,7 +103,27 @@
 		"prefix":"posterboxenv",
 		"body":[
 			"\\begin{posterboxenv}",
-			"\t$1",
+				"\t$1",
+			"\\end{posterboxenv}"
+		]
+	},
+
+
+	"tcbposter":{
+		"prefix":"tcbposter",
+		"body":[
+			"\\begin{tcbposter}",
+				"\t$1",
+			"\\end{tcbposter}"
+		]
+	},
+
+
+	"posterboxenv":{
+		"prefix":"posterboxenv",
+		"body":[
+			"\\begin{posterboxenv}",
+				"\t$1",
 			"\\end{posterboxenv}"
 		]
 	}

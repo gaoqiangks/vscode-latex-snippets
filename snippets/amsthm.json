@@ -1,15 +1,7 @@
 {
 
 
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:caption}}"
-		]
-	},
-
-
-	"theoremstyle":{
+	"theoremstyle{}":{
 		"prefix":"theoremstyle",
 		"body":[
 			"\\theoremstyle{${1:style%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"newtheoremstyle":{
+	"newtheoremstyle{}{}{}{}{}{}{}{}{}":{
 		"prefix":"newtheoremstyle",
 		"body":[
 			"\\newtheoremstyle{${1:style name%specialDef}}{${2:space above}}{${3:space below}}{${4:body font}}{${5:indent amount}}{${6:head font}}{${7:head punct}}{${8:after head space}}{${9:head spec}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"thmname":{
+	"thmname{}":{
 		"prefix":"thmname",
 		"body":[
 			"\\thmname{${1:arg}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"thmnumber":{
+	"thmnumber{}":{
 		"prefix":"thmnumber",
 		"body":[
 			"\\thmnumber{${1:arg}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"thmnote":{
+	"thmnote{}":{
 		"prefix":"thmnote",
 		"body":[
 			"\\thmnote{${1:arg}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"thmhead":{
+	"thmhead{}{}{}":{
 		"prefix":"thmhead",
 		"body":[
 			"\\thmhead{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"swappedhead":{
+	"swappedhead{}{}{}":{
 		"prefix":"swappedhead",
 		"body":[
 			"\\swappedhead{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"pushQED":{
+	"pushQED{}":{
 		"prefix":"pushQED",
 		"body":[
 			"\\pushQED{${1:arg}}"
@@ -161,11 +153,29 @@
 	},
 
 
+	"newtheorem*{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*{${1:envname}}{${2:caption}}"
+		]
+	},
+
+
 	"proof":{
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
 			"\\end{proof}"
 		]
 	}

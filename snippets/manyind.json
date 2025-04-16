@@ -9,7 +9,7 @@
 	},
 
 
-	"setindex":{
+	"setindex{}":{
 		"prefix":"setindex",
 		"body":[
 			"\\setindex{${1:tag}}"
@@ -17,18 +17,10 @@
 	},
 
 
-	"sindex":{
+	"sindex{}":{
 		"prefix":"sindex",
 		"body":[
 			"\\sindex{${1:entry}}"
-		]
-	},
-
-
-	"sindex":{
-		"prefix":"sindex",
-		"body":[
-			"\\sindex[${2:tag}]{${1:entry}}"
 		]
 	},
 
@@ -153,10 +145,18 @@
 	},
 
 
-	"indexcapstyle":{
+	"indexcapstyle{}":{
 		"prefix":"indexcapstyle",
 		"body":[
 			"\\indexcapstyle{${1:arg}}"
+		]
+	},
+
+
+	"sindex[]{}":{
+		"prefix":"sindex",
+		"body":[
+			"\\sindex[${2:tag}]{${1:entry}}"
 		]
 	}
 }

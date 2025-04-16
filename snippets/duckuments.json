@@ -9,14 +9,6 @@
 	},
 
 
-	"duckument":{
-		"prefix":"duckument",
-		"body":[
-			"\\duckument[${1:options%keyvals}]"
-		]
-	},
-
-
 	"blindduck":{
 		"prefix":"blindduck",
 		"body":[
@@ -25,15 +17,7 @@
 	},
 
 
-	"blindduck":{
-		"prefix":"blindduck",
-		"body":[
-			"\\blindduck[${1:options%keyvals}]"
-		]
-	},
-
-
-	"ducklist":{
+	"ducklist{}":{
 		"prefix":"ducklist",
 		"body":[
 			"\\ducklist{${1:environment}}"
@@ -41,26 +25,10 @@
 	},
 
 
-	"ducklist*":{
-		"prefix":"ducklist*",
-		"body":[
-			"\\ducklist*{${1:environment}}"
-		]
-	},
-
-
-	"ducklistlist":{
+	"ducklistlist{}":{
 		"prefix":"ducklistlist",
 		"body":[
 			"\\ducklistlist{${1:environment}}"
-		]
-	},
-
-
-	"ducklistlist*":{
-		"prefix":"ducklistlist*",
-		"body":[
-			"\\ducklistlist*{${1:environment}}"
 		]
 	},
 
@@ -105,26 +73,58 @@
 	},
 
 
-	"duckumentsDrawRandomDucks":{
-		"prefix":"duckumentsDrawRandomDucks",
+	"ducklist*{}":{
+		"prefix":"*ducklist",
 		"body":[
-			"\\duckumentsDrawRandomDucks[${1:number}]"
+			"\\ducklist*{${1:environment}}"
+		]
+	},
+
+
+	"ducklistlist*{}":{
+		"prefix":"*ducklistlist",
+		"body":[
+			"\\ducklistlist*{${1:environment}}"
 		]
 	},
 
 
 	"duckumentsDrawRandomDucks*":{
-		"prefix":"duckumentsDrawRandomDucks*",
+		"prefix":"*duckumentsDrawRandomDucks",
 		"body":[
 			"\\duckumentsDrawRandomDucks*"
 		]
 	},
 
 
-	"duckumentsDrawRandomDucks*":{
-		"prefix":"duckumentsDrawRandomDucks*",
+	"duckumentsDrawRandomDucks*[]":{
+		"prefix":"*duckumentsDrawRandomDucks",
 		"body":[
 			"\\duckumentsDrawRandomDucks*[${1:number}]"
+		]
+	},
+
+
+	"duckument[]":{
+		"prefix":"duckument",
+		"body":[
+			"\\duckument[${1:options%keyvals}]"
+		]
+	},
+
+
+	"blindduck[]":{
+		"prefix":"blindduck",
+		"body":[
+			"\\blindduck[${1:options%keyvals}]"
+		]
+	},
+
+
+	"duckumentsDrawRandomDucks[]":{
+		"prefix":"duckumentsDrawRandomDucks",
+		"body":[
+			"\\duckumentsDrawRandomDucks[${1:number}]"
 		]
 	}
 }

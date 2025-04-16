@@ -1,18 +1,10 @@
 {
 
 
-	"gnuplotloadfile":{
+	"gnuplotloadfile{}":{
 		"prefix":"gnuplotloadfile",
 		"body":[
 			"\\gnuplotloadfile{${1:file}}"
-		]
-	},
-
-
-	"gnuplotloadfile":{
-		"prefix":"gnuplotloadfile",
-		"body":[
-			"\\gnuplotloadfile[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -193,10 +185,18 @@
 	},
 
 
-	"gnuplotloadfilewrite":{
+	"gnuplotloadfilewrite{}{}":{
 		"prefix":"gnuplotloadfilewrite",
 		"body":[
 			"\\gnuplotloadfilewrite{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"gnuplotloadfile[]{}":{
+		"prefix":"gnuplotloadfile",
+		"body":[
+			"\\gnuplotloadfile[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -205,7 +205,17 @@
 		"prefix":"gnuplot",
 		"body":[
 			"\\begin{gnuplot}",
-			"\t$1",
+				"\t$1",
+			"\\end{gnuplot}"
+		]
+	},
+
+
+	"gnuplot":{
+		"prefix":"gnuplot",
+		"body":[
+			"\\begin{gnuplot}",
+				"\t$1",
 			"\\end{gnuplot}"
 		]
 	}

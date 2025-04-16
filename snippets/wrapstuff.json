@@ -1,7 +1,7 @@
 {
 
 
-	"wrapstuffset":{
+	"wrapstuffset{}":{
 		"prefix":"wrapstuffset",
 		"body":[
 			"\\wrapstuffset{${1:options%keyvals}}"
@@ -21,7 +21,17 @@
 		"prefix":"wrapstuff",
 		"body":[
 			"\\begin{wrapstuff}",
-			"\t$1",
+				"\t$1",
+			"\\end{wrapstuff}"
+		]
+	},
+
+
+	"wrapstuff":{
+		"prefix":"wrapstuff",
+		"body":[
+			"\\begin{wrapstuff}",
+				"\t$1",
 			"\\end{wrapstuff}"
 		]
 	}

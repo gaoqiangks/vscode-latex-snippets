@@ -73,7 +73,7 @@
 	},
 
 
-	"gentryheader":{
+	"gentryheader{}{}{}{}":{
 		"prefix":"gentryheader",
 		"body":[
 			"\\gentryheader{${1:counterIdx}}{${2:fixedIdx}}{${3:code}}{${4:title%text}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"outputfootnotes":{
+	"outputfootnotes{}":{
 		"prefix":"outputfootnotes",
 		"body":[
 			"\\outputfootnotes{${1:maxIdx}}"
@@ -125,7 +125,27 @@
 		"prefix":"gentry",
 		"body":[
 			"\\begin{gentry}",
-			"\t$1",
+				"\t$1",
+			"\\end{gentry}"
+		]
+	},
+
+
+	"gentry":{
+		"prefix":"gentry",
+		"body":[
+			"\\begin{gentry}",
+				"\t$1",
+			"\\end{gentry}"
+		]
+	},
+
+
+	"gentry":{
+		"prefix":"gentry",
+		"body":[
+			"\\begin{gentry}",
+				"\t$1",
 			"\\end{gentry}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"SimpleTextField":{
+	"SimpleTextField{}":{
 		"prefix":"SimpleTextField",
 		"body":[
 			"\\SimpleTextField{${1:id}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"SimpleTextFieldReadonly":{
+	"SimpleTextFieldReadonly{}":{
 		"prefix":"SimpleTextFieldReadonly",
 		"body":[
 			"\\SimpleTextFieldReadonly{${1:id}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"SimpleGET":{
+	"SimpleGET{}{}{}{}":{
 		"prefix":"SimpleGET",
 		"body":[
 			"\\SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}"
@@ -25,26 +25,10 @@
 	},
 
 
-	"SimpleGET":{
-		"prefix":"SimpleGET",
-		"body":[
-			"\\SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}[${5:target}]"
-		]
-	},
-
-
-	"SimplePOST":{
+	"SimplePOST{}{}{}{}{}{}":{
 		"prefix":"SimplePOST",
 		"body":[
 			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}"
-		]
-	},
-
-
-	"SimplePOST":{
-		"prefix":"SimplePOST",
-		"body":[
-			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}[${7:target}]"
 		]
 	},
 
@@ -53,6 +37,22 @@
 		"prefix":"ErrorField",
 		"body":[
 			"\\ErrorField"
+		]
+	},
+
+
+	"SimpleGET{}{}{}{}[]":{
+		"prefix":"SimpleGET",
+		"body":[
+			"\\SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}[${5:target}]"
+		]
+	},
+
+
+	"SimplePOST{}{}{}{}{}{}[]":{
+		"prefix":"SimplePOST",
+		"body":[
+			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}[${7:target}]"
 		]
 	}
 }

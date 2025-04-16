@@ -1,23 +1,23 @@
 {
 
 
-	"shortverb":{
+	"shortverb{}":{
 		"prefix":"shortverb",
 		"body":[
-			"\\shortverb{${1:\<${2:char}>}}"
+			"\\shortverb{${1:\\<${2:char}>}}"
 		]
 	},
 
 
-	"unverb":{
+	"unverb{}":{
 		"prefix":"unverb",
 		"body":[
-			"\\unverb{${1:\<${2:char}>}}"
+			"\\unverb{${1:\\<${2:char}>}}"
 		]
 	},
 
 
-	"synt":{
+	"synt{}":{
 		"prefix":"synt",
 		"body":[
 			"\\synt{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"lit":{
+	"lit{}":{
 		"prefix":"lit",
 		"body":[
 			"\\lit{${1:text}}"
@@ -33,15 +33,7 @@
 	},
 
 
-	"lit*":{
-		"prefix":"lit*",
-		"body":[
-			"\\lit*{${1:text}}"
-		]
-	},
-
-
-	"syntax":{
+	"syntax{}":{
 		"prefix":"syntax",
 		"body":[
 			"\\syntax{${1:syntax}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"tok":{
+	"tok{}":{
 		"prefix":"tok",
 		"body":[
 			"\\tok{${1:text}}"
@@ -225,12 +217,40 @@
 	},
 
 
-	"syntdiag*":{
-		"prefix":"syntdiag*",
+	"lit*{}":{
+		"prefix":"*lit",
 		"body":[
-			"\\begin{syntdiag*}",
-			"\t$1",
-			"\\end{syntdiag*}"
+			"\\lit*{${1:text}}"
+		]
+	},
+
+
+	"shortverb":{
+		"prefix":"shortverb",
+		"body":[
+			"\\begin{shortverb}",
+				"\t$1",
+			"\\end{shortverb}"
+		]
+	},
+
+
+	"synshorts":{
+		"prefix":"synshorts",
+		"body":[
+			"\\begin{synshorts}",
+				"\t$1",
+			"\\end{synshorts}"
+		]
+	},
+
+
+	"grammar":{
+		"prefix":"grammar",
+		"body":[
+			"\\begin{grammar}",
+				"\t$1",
+			"\\end{grammar}"
 		]
 	},
 
@@ -239,7 +259,7 @@
 		"prefix":"syntdiag",
 		"body":[
 			"\\begin{syntdiag}",
-			"\t$1",
+				"\t$1",
 			"\\end{syntdiag}"
 		]
 	},
@@ -249,18 +269,8 @@
 		"prefix":"stack",
 		"body":[
 			"\\begin{stack}",
-			"\t$1",
+				"\t$1",
 			"\\end{stack}"
-		]
-	},
-
-
-	"synshorts":{
-		"prefix":"synshorts",
-		"body":[
-			"\\begin{synshorts}",
-			"\t$1",
-			"\\end{synshorts}"
 		]
 	},
 
@@ -269,28 +279,38 @@
 		"prefix":"rep",
 		"body":[
 			"\\begin{rep}",
-			"\t$1",
+				"\t$1",
 			"\\end{rep}"
 		]
 	},
 
 
-	"grammar":{
-		"prefix":"grammar",
+	"syntdiag*":{
+		"prefix":"*syntdiag",
 		"body":[
-			"\\begin{grammar}",
-			"\t$1",
-			"\\end{grammar}"
+			"\\begin{syntdiag*}",
+				"\t$1",
+			"\\end{syntdiag*}"
 		]
 	},
 
 
-	"shortverb":{
-		"prefix":"shortverb",
+	"syntdiag":{
+		"prefix":"syntdiag",
 		"body":[
-			"\\begin{shortverb}",
-			"\t$1",
-			"\\end{shortverb}"
+			"\\begin{syntdiag}",
+				"\t$1",
+			"\\end{syntdiag}"
+		]
+	},
+
+
+	"syntdiag*":{
+		"prefix":"syntdiag",
+		"body":[
+			"\\begin{syntdiag*}",
+				"\t$1",
+			"\\end{syntdiag*}"
 		]
 	}
 }

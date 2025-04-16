@@ -9,63 +9,7 @@
 	},
 
 
-	"AKA*":{
-		"prefix":"AKA*",
-		"body":[
-			"\\AKA*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
-		]
-	},
-
-
-	"AKA*":{
-		"prefix":"AKA*",
-		"body":[
-			"\\AKA*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
-		]
-	},
-
-
-	"AKA*":{
-		"prefix":"AKA*",
-		"body":[
-			"\\AKA*[${3:forename}]{${1:surname}}{${2:xref surname}}"
-		]
-	},
-
-
-	"AKA*":{
-		"prefix":"AKA*",
-		"body":[
-			"\\AKA*{${1:surname,affix}}{${2:xref surname,affix}}"
-		]
-	},
-
-
-	"AKA":{
-		"prefix":"AKA",
-		"body":[
-			"\\AKA[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
-		]
-	},
-
-
-	"AKA":{
-		"prefix":"AKA",
-		"body":[
-			"\\AKA[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
-		]
-	},
-
-
-	"AKA":{
-		"prefix":"AKA",
-		"body":[
-			"\\AKA[${3:forename}]{${1:surname}}{${2:xref surname}}"
-		]
-	},
-
-
-	"AKA":{
+	"AKA{}{}":{
 		"prefix":"AKA",
 		"body":[
 			"\\AKA{${1:surname,affix}}{${2:xref surname,affix}}"
@@ -73,7 +17,7 @@
 	},
 
 
-	"AKA":{
+	"AKA{}{}":{
 		"prefix":"AKA",
 		"body":[
 			"\\AKA{${1:surname,affix}}{${2:xref surname,affix}}"
@@ -97,7 +41,7 @@
 	},
 
 
-	"AltCaps":{
+	"AltCaps{}":{
 		"prefix":"AltCaps",
 		"body":[
 			"\\AltCaps{${1:arg}}"
@@ -109,14 +53,6 @@
 		"prefix":"AltFormatActive",
 		"body":[
 			"\\AltFormatActive"
-		]
-	},
-
-
-	"AltFormatActive*":{
-		"prefix":"AltFormatActive*",
-		"body":[
-			"\\AltFormatActive*"
 		]
 	},
 
@@ -169,23 +105,7 @@
 	},
 
 
-	"ExcludeName":{
-		"prefix":"ExcludeName",
-		"body":[
-			"\\ExcludeName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ExcludeName":{
-		"prefix":"ExcludeName",
-		"body":[
-			"\\ExcludeName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ExcludeName":{
+	"ExcludeName{}":{
 		"prefix":"ExcludeName",
 		"body":[
 			"\\ExcludeName{${1:surname,affix}}"
@@ -193,23 +113,7 @@
 	},
 
 
-	"FName":{
-		"prefix":"FName",
-		"body":[
-			"\\FName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"FName":{
-		"prefix":"FName",
-		"body":[
-			"\\FName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"FName":{
+	"FName{}":{
 		"prefix":"FName",
 		"body":[
 			"\\FName{${1:surname,affix}}"
@@ -233,23 +137,7 @@
 	},
 
 
-	"ForgetName":{
-		"prefix":"ForgetName",
-		"body":[
-			"\\ForgetName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ForgetName":{
-		"prefix":"ForgetName",
-		"body":[
-			"\\ForgetName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ForgetName":{
+	"ForgetName{}":{
 		"prefix":"ForgetName",
 		"body":[
 			"\\ForgetName{${1:surname,affix}}"
@@ -281,23 +169,7 @@
 	},
 
 
-	"IfAKA":{
-		"prefix":"IfAKA",
-		"body":[
-			"\\IfAKA[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfAKA":{
-		"prefix":"IfAKA",
-		"body":[
-			"\\IfAKA[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfAKA":{
+	"IfAKA{}{}{}":{
 		"prefix":"IfAKA",
 		"body":[
 			"\\IfAKA{${1:surname,affix}}{${2:yes}}{${3:no}}"
@@ -305,23 +177,7 @@
 	},
 
 
-	"IfFrontName":{
-		"prefix":"IfFrontName",
-		"body":[
-			"\\IfFrontName[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfFrontName":{
-		"prefix":"IfFrontName",
-		"body":[
-			"\\IfFrontName[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfFrontName":{
+	"IfFrontName{}{}{}":{
 		"prefix":"IfFrontName",
 		"body":[
 			"\\IfFrontName{${1:surname,affix}}{${2:yes}}{${3:no}}"
@@ -329,23 +185,7 @@
 	},
 
 
-	"IfMainName":{
-		"prefix":"IfMainName",
-		"body":[
-			"\\IfMainName[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfMainName":{
-		"prefix":"IfMainName",
-		"body":[
-			"\\IfMainName[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
-		]
-	},
-
-
-	"IfMainName":{
+	"IfMainName{}{}{}":{
 		"prefix":"IfMainName",
 		"body":[
 			"\\IfMainName{${1:surname,affix}}{${2:yes}}{${3:no}}"
@@ -353,47 +193,7 @@
 	},
 
 
-	"IncludeName*":{
-		"prefix":"IncludeName*",
-		"body":[
-			"\\IncludeName*[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"IncludeName*":{
-		"prefix":"IncludeName*",
-		"body":[
-			"\\IncludeName*[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"IncludeName*":{
-		"prefix":"IncludeName*",
-		"body":[
-			"\\IncludeName*{${1:surname,affix}}"
-		]
-	},
-
-
-	"IncludeName":{
-		"prefix":"IncludeName",
-		"body":[
-			"\\IncludeName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"IncludeName":{
-		"prefix":"IncludeName",
-		"body":[
-			"\\IncludeName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"IncludeName":{
+	"IncludeName{}":{
 		"prefix":"IncludeName",
 		"body":[
 			"\\IncludeName{${1:surname,affix}}"
@@ -425,23 +225,7 @@
 	},
 
 
-	"IndexName":{
-		"prefix":"IndexName",
-		"body":[
-			"\\IndexName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"IndexName":{
-		"prefix":"IndexName",
-		"body":[
-			"\\IndexName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"IndexName":{
+	"IndexName{}":{
 		"prefix":"IndexName",
 		"body":[
 			"\\IndexName{${1:surname,affix}}"
@@ -457,23 +241,7 @@
 	},
 
 
-	"IndexRef":{
-		"prefix":"IndexRef",
-		"body":[
-			"\\IndexRef[${3:forename}]{${1:surname}}[${4:alternate}]{${2:ref target}}"
-		]
-	},
-
-
-	"IndexRef":{
-		"prefix":"IndexRef",
-		"body":[
-			"\\IndexRef[${3:forename}]{${1:surname}}{${2:ref target}}"
-		]
-	},
-
-
-	"IndexRef":{
+	"IndexRef{}{}":{
 		"prefix":"IndexRef",
 		"body":[
 			"\\IndexRef{${1:surname,affix}}{${2:ref target}}"
@@ -537,47 +305,7 @@
 	},
 
 
-	"Name*":{
-		"prefix":"Name*",
-		"body":[
-			"\\Name*[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"Name*":{
-		"prefix":"Name*",
-		"body":[
-			"\\Name*[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"Name*":{
-		"prefix":"Name*",
-		"body":[
-			"\\Name*{${1:surname,affix}}"
-		]
-	},
-
-
-	"Name":{
-		"prefix":"Name",
-		"body":[
-			"\\Name[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"Name":{
-		"prefix":"Name",
-		"body":[
-			"\\Name[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"Name":{
+	"Name{}":{
 		"prefix":"Name",
 		"body":[
 			"\\Name{${1:surname,affix}}"
@@ -585,23 +313,7 @@
 	},
 
 
-	"NameAddInfo":{
-		"prefix":"NameAddInfo",
-		"body":[
-			"\\NameAddInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
-		]
-	},
-
-
-	"NameAddInfo":{
-		"prefix":"NameAddInfo",
-		"body":[
-			"\\NameAddInfo[${3:forename}]{${1:surname}}{${2:tag}}"
-		]
-	},
-
-
-	"NameAddInfo":{
+	"NameAddInfo{}{}":{
 		"prefix":"NameAddInfo",
 		"body":[
 			"\\NameAddInfo{${1:surname,affix}}{${2:tag}}"
@@ -617,23 +329,7 @@
 	},
 
 
-	"NameClearInfo":{
-		"prefix":"NameClearInfo",
-		"body":[
-			"\\NameClearInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
-		]
-	},
-
-
-	"NameClearInfo":{
-		"prefix":"NameClearInfo",
-		"body":[
-			"\\NameClearInfo[${3:forename}]{${1:surname}}{${2:tag}}"
-		]
-	},
-
-
-	"NameClearInfo":{
+	"NameClearInfo{}{}":{
 		"prefix":"NameClearInfo",
 		"body":[
 			"\\NameClearInfo{${1:surname,affix}}{${2:tag}}"
@@ -641,23 +337,7 @@
 	},
 
 
-	"NameQueryInfo":{
-		"prefix":"NameQueryInfo",
-		"body":[
-			"\\NameQueryInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
-		]
-	},
-
-
-	"NameQueryInfo":{
-		"prefix":"NameQueryInfo",
-		"body":[
-			"\\NameQueryInfo[${3:forename}]{${1:surname}}{${2:tag}}"
-		]
-	},
-
-
-	"NameQueryInfo":{
+	"NameQueryInfo{}{}":{
 		"prefix":"NameQueryInfo",
 		"body":[
 			"\\NameQueryInfo{${1:surname,affix}}{${2:tag}}"
@@ -689,79 +369,7 @@
 	},
 
 
-	"PName*":{
-		"prefix":"PName*",
-		"body":[
-			"\\PName*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
-		]
-	},
-
-
-	"PName*":{
-		"prefix":"PName*",
-		"body":[
-			"\\PName*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
-		]
-	},
-
-
-	"PName*":{
-		"prefix":"PName*",
-		"body":[
-			"\\PName*[${3:forename}]{${1:surname}}{${2:xref surname}}"
-		]
-	},
-
-
-	"PName*":{
-		"prefix":"PName*",
-		"body":[
-			"\\PName*{${1:surname,affix}}{${2:xref surname,affix}}"
-		]
-	},
-
-
-	"PName":{
-		"prefix":"PName",
-		"body":[
-			"\\PName[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
-		]
-	},
-
-
-	"PName":{
-		"prefix":"PName",
-		"body":[
-			"\\PName[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
-		]
-	},
-
-
-	"PName":{
-		"prefix":"PName",
-		"body":[
-			"\\PName[${3:forename}]{${1:surname}}{${2:xref surname}}"
-		]
-	},
-
-
-	"PretagName":{
-		"prefix":"PretagName",
-		"body":[
-			"\\PretagName[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
-		]
-	},
-
-
-	"PretagName":{
-		"prefix":"PretagName",
-		"body":[
-			"\\PretagName[${3:forename}]{${1:surname}}{${2:tag}}"
-		]
-	},
-
-
-	"PretagName":{
+	"PretagName{}{}":{
 		"prefix":"PretagName",
 		"body":[
 			"\\PretagName{${1:surname,affix}}{${2:tag}}"
@@ -841,23 +449,7 @@
 	},
 
 
-	"SubvertName":{
-		"prefix":"SubvertName",
-		"body":[
-			"\\SubvertName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"SubvertName":{
-		"prefix":"SubvertName",
-		"body":[
-			"\\SubvertName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"SubvertName":{
+	"SubvertName{}":{
 		"prefix":"SubvertName",
 		"body":[
 			"\\SubvertName{${1:surname,affix}}"
@@ -873,23 +465,7 @@
 	},
 
 
-	"TagName":{
-		"prefix":"TagName",
-		"body":[
-			"\\TagName[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
-		]
-	},
-
-
-	"TagName":{
-		"prefix":"TagName",
-		"body":[
-			"\\TagName[${3:forename}]{${1:surname}}{${2:tag}}"
-		]
-	},
-
-
-	"TagName":{
+	"TagName{}{}":{
 		"prefix":"TagName",
 		"body":[
 			"\\TagName{${1:surname,affix}}{${2:tag}}"
@@ -897,7 +473,7 @@
 	},
 
 
-	"textBF":{
+	"textBF{}":{
 		"prefix":"textBF",
 		"body":[
 			"\\textBF{${1:text}}"
@@ -905,7 +481,7 @@
 	},
 
 
-	"textIT":{
+	"textIT{}":{
 		"prefix":"textIT",
 		"body":[
 			"\\textIT{${1:text}}"
@@ -913,7 +489,7 @@
 	},
 
 
-	"textSC":{
+	"textSC{}":{
 		"prefix":"textSC",
 		"body":[
 			"\\textSC{${1:text}}"
@@ -921,7 +497,7 @@
 	},
 
 
-	"textUC":{
+	"textUC{}":{
 		"prefix":"textUC",
 		"body":[
 			"\\textUC{${1:text}}"
@@ -929,23 +505,7 @@
 	},
 
 
-	"UntagName":{
-		"prefix":"UntagName",
-		"body":[
-			"\\UntagName[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"UntagName":{
-		"prefix":"UntagName",
-		"body":[
-			"\\UntagName[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"UntagName":{
+	"UntagName{}":{
 		"prefix":"UntagName",
 		"body":[
 			"\\UntagName{${1:surname,affix}}"
@@ -1041,47 +601,7 @@
 	},
 
 
-	"ShowIdxPageref*":{
-		"prefix":"ShowIdxPageref*",
-		"body":[
-			"\\ShowIdxPageref*[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ShowIdxPageref*":{
-		"prefix":"ShowIdxPageref*",
-		"body":[
-			"\\ShowIdxPageref*[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ShowIdxPageref*":{
-		"prefix":"ShowIdxPageref*",
-		"body":[
-			"\\ShowIdxPageref*{${1:surname,affix}}"
-		]
-	},
-
-
-	"ShowIdxPageref":{
-		"prefix":"ShowIdxPageref",
-		"body":[
-			"\\ShowIdxPageref[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ShowIdxPageref":{
-		"prefix":"ShowIdxPageref",
-		"body":[
-			"\\ShowIdxPageref[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ShowIdxPageref":{
+	"ShowIdxPageref{}":{
 		"prefix":"ShowIdxPageref",
 		"body":[
 			"\\ShowIdxPageref{${1:surname,affix}}"
@@ -1089,23 +609,7 @@
 	},
 
 
-	"ShowNameInfo":{
-		"prefix":"ShowNameInfo",
-		"body":[
-			"\\ShowNameInfo[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ShowNameInfo":{
-		"prefix":"ShowNameInfo",
-		"body":[
-			"\\ShowNameInfo[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ShowNameInfo":{
+	"ShowNameInfo{}":{
 		"prefix":"ShowNameInfo",
 		"body":[
 			"\\ShowNameInfo{${1:surname,affix}}"
@@ -1113,23 +617,7 @@
 	},
 
 
-	"ShowNameState":{
-		"prefix":"ShowNameState",
-		"body":[
-			"\\ShowNameState[${2:forename}]{${1:surname}}"
-		]
-	},
-
-
-	"ShowNameState":{
-		"prefix":"ShowNameState",
-		"body":[
-			"\\ShowNameState[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ShowNameState":{
+	"ShowNameState{}":{
 		"prefix":"ShowNameState",
 		"body":[
 			"\\ShowNameState{${1:surname,affix}}"
@@ -1137,7 +625,527 @@
 	},
 
 
-	"ShowPattern":{
+	"ShowPattern{}":{
+		"prefix":"ShowPattern",
+		"body":[
+			"\\ShowPattern{${1:surname,affix}}"
+		]
+	},
+
+
+	"AKA*[]{}[]{}":{
+		"prefix":"*AKA",
+		"body":[
+			"\\AKA*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
+		]
+	},
+
+
+	"AKA*[]{}[]{}[]":{
+		"prefix":"*AKA",
+		"body":[
+			"\\AKA*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
+		]
+	},
+
+
+	"AKA*[]{}{}":{
+		"prefix":"*AKA",
+		"body":[
+			"\\AKA*[${3:forename}]{${1:surname}}{${2:xref surname}}"
+		]
+	},
+
+
+	"AKA*{}{}":{
+		"prefix":"*AKA",
+		"body":[
+			"\\AKA*{${1:surname,affix}}{${2:xref surname,affix}}"
+		]
+	},
+
+
+	"AltFormatActive*":{
+		"prefix":"*AltFormatActive",
+		"body":[
+			"\\AltFormatActive*"
+		]
+	},
+
+
+	"IncludeName*[]{}":{
+		"prefix":"*IncludeName",
+		"body":[
+			"\\IncludeName*[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"IncludeName*[]{}[]":{
+		"prefix":"*IncludeName",
+		"body":[
+			"\\IncludeName*[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"IncludeName*{}":{
+		"prefix":"*IncludeName",
+		"body":[
+			"\\IncludeName*{${1:surname,affix}}"
+		]
+	},
+
+
+	"Name*[]{}":{
+		"prefix":"*Name",
+		"body":[
+			"\\Name*[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"Name*[]{}[]":{
+		"prefix":"*Name",
+		"body":[
+			"\\Name*[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"Name*{}":{
+		"prefix":"*Name",
+		"body":[
+			"\\Name*{${1:surname,affix}}"
+		]
+	},
+
+
+	"PName*[]{}[]{}":{
+		"prefix":"*PName",
+		"body":[
+			"\\PName*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
+		]
+	},
+
+
+	"PName*[]{}[]{}[]":{
+		"prefix":"*PName",
+		"body":[
+			"\\PName*[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
+		]
+	},
+
+
+	"PName*[]{}{}":{
+		"prefix":"*PName",
+		"body":[
+			"\\PName*[${3:forename}]{${1:surname}}{${2:xref surname}}"
+		]
+	},
+
+
+	"PName*{}{}":{
+		"prefix":"*PName",
+		"body":[
+			"\\PName*{${1:surname,affix}}{${2:xref surname,affix}}"
+		]
+	},
+
+
+	"ShowIdxPageref*[]{}":{
+		"prefix":"*ShowIdxPageref",
+		"body":[
+			"\\ShowIdxPageref*[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ShowIdxPageref*[]{}[]":{
+		"prefix":"*ShowIdxPageref",
+		"body":[
+			"\\ShowIdxPageref*[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ShowIdxPageref*{}":{
+		"prefix":"*ShowIdxPageref",
+		"body":[
+			"\\ShowIdxPageref*{${1:surname,affix}}"
+		]
+	},
+
+
+	"AKA[]{}[]{}":{
+		"prefix":"AKA",
+		"body":[
+			"\\AKA[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
+		]
+	},
+
+
+	"AKA[]{}[]{}[]":{
+		"prefix":"AKA",
+		"body":[
+			"\\AKA[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
+		]
+	},
+
+
+	"AKA[]{}{}":{
+		"prefix":"AKA",
+		"body":[
+			"\\AKA[${3:forename}]{${1:surname}}{${2:xref surname}}"
+		]
+	},
+
+
+	"ExcludeName[]{}":{
+		"prefix":"ExcludeName",
+		"body":[
+			"\\ExcludeName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ExcludeName[]{}[]":{
+		"prefix":"ExcludeName",
+		"body":[
+			"\\ExcludeName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"FName[]{}":{
+		"prefix":"FName",
+		"body":[
+			"\\FName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"FName[]{}[]":{
+		"prefix":"FName",
+		"body":[
+			"\\FName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ForgetName[]{}":{
+		"prefix":"ForgetName",
+		"body":[
+			"\\ForgetName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ForgetName[]{}[]":{
+		"prefix":"ForgetName",
+		"body":[
+			"\\ForgetName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"IfAKA[]{}[]{}{}":{
+		"prefix":"IfAKA",
+		"body":[
+			"\\IfAKA[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IfAKA[]{}{}{}":{
+		"prefix":"IfAKA",
+		"body":[
+			"\\IfAKA[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IfFrontName[]{}[]{}{}":{
+		"prefix":"IfFrontName",
+		"body":[
+			"\\IfFrontName[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IfFrontName[]{}{}{}":{
+		"prefix":"IfFrontName",
+		"body":[
+			"\\IfFrontName[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IfMainName[]{}[]{}{}":{
+		"prefix":"IfMainName",
+		"body":[
+			"\\IfMainName[${4:forename}]{${1:surname}}[${5:alternate}]{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IfMainName[]{}{}{}":{
+		"prefix":"IfMainName",
+		"body":[
+			"\\IfMainName[${4:forename}]{${1:surname}}{${2:yes}}{${3:no}}"
+		]
+	},
+
+
+	"IncludeName[]{}":{
+		"prefix":"IncludeName",
+		"body":[
+			"\\IncludeName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"IncludeName[]{}[]":{
+		"prefix":"IncludeName",
+		"body":[
+			"\\IncludeName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"IndexName[]{}":{
+		"prefix":"IndexName",
+		"body":[
+			"\\IndexName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"IndexName[]{}[]":{
+		"prefix":"IndexName",
+		"body":[
+			"\\IndexName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"IndexRef[]{}[]{}":{
+		"prefix":"IndexRef",
+		"body":[
+			"\\IndexRef[${3:forename}]{${1:surname}}[${4:alternate}]{${2:ref target}}"
+		]
+	},
+
+
+	"IndexRef[]{}{}":{
+		"prefix":"IndexRef",
+		"body":[
+			"\\IndexRef[${3:forename}]{${1:surname}}{${2:ref target}}"
+		]
+	},
+
+
+	"Name[]{}":{
+		"prefix":"Name",
+		"body":[
+			"\\Name[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"Name[]{}[]":{
+		"prefix":"Name",
+		"body":[
+			"\\Name[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"NameAddInfo[]{}[]{}":{
+		"prefix":"NameAddInfo",
+		"body":[
+			"\\NameAddInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
+		]
+	},
+
+
+	"NameAddInfo[]{}{}":{
+		"prefix":"NameAddInfo",
+		"body":[
+			"\\NameAddInfo[${3:forename}]{${1:surname}}{${2:tag}}"
+		]
+	},
+
+
+	"NameClearInfo[]{}[]{}":{
+		"prefix":"NameClearInfo",
+		"body":[
+			"\\NameClearInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
+		]
+	},
+
+
+	"NameClearInfo[]{}{}":{
+		"prefix":"NameClearInfo",
+		"body":[
+			"\\NameClearInfo[${3:forename}]{${1:surname}}{${2:tag}}"
+		]
+	},
+
+
+	"NameQueryInfo[]{}[]{}":{
+		"prefix":"NameQueryInfo",
+		"body":[
+			"\\NameQueryInfo[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
+		]
+	},
+
+
+	"NameQueryInfo[]{}{}":{
+		"prefix":"NameQueryInfo",
+		"body":[
+			"\\NameQueryInfo[${3:forename}]{${1:surname}}{${2:tag}}"
+		]
+	},
+
+
+	"PName[]{}[]{}":{
+		"prefix":"PName",
+		"body":[
+			"\\PName[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}"
+		]
+	},
+
+
+	"PName[]{}[]{}[]":{
+		"prefix":"PName",
+		"body":[
+			"\\PName[${3:forename}]{${1:surname}}[${4:xref forename}]{${2:xref surname}}[${5:xref alternate}]"
+		]
+	},
+
+
+	"PName[]{}{}":{
+		"prefix":"PName",
+		"body":[
+			"\\PName[${3:forename}]{${1:surname}}{${2:xref surname}}"
+		]
+	},
+
+
+	"PretagName[]{}[]{}":{
+		"prefix":"PretagName",
+		"body":[
+			"\\PretagName[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
+		]
+	},
+
+
+	"PretagName[]{}{}":{
+		"prefix":"PretagName",
+		"body":[
+			"\\PretagName[${3:forename}]{${1:surname}}{${2:tag}}"
+		]
+	},
+
+
+	"SubvertName[]{}":{
+		"prefix":"SubvertName",
+		"body":[
+			"\\SubvertName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"SubvertName[]{}[]":{
+		"prefix":"SubvertName",
+		"body":[
+			"\\SubvertName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"TagName[]{}[]{}":{
+		"prefix":"TagName",
+		"body":[
+			"\\TagName[${3:forename}]{${1:surname}}[${4:alternate}]{${2:tag}}"
+		]
+	},
+
+
+	"TagName[]{}{}":{
+		"prefix":"TagName",
+		"body":[
+			"\\TagName[${3:forename}]{${1:surname}}{${2:tag}}"
+		]
+	},
+
+
+	"UntagName[]{}":{
+		"prefix":"UntagName",
+		"body":[
+			"\\UntagName[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"UntagName[]{}[]":{
+		"prefix":"UntagName",
+		"body":[
+			"\\UntagName[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ShowIdxPageref[]{}":{
+		"prefix":"ShowIdxPageref",
+		"body":[
+			"\\ShowIdxPageref[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ShowIdxPageref[]{}[]":{
+		"prefix":"ShowIdxPageref",
+		"body":[
+			"\\ShowIdxPageref[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ShowNameInfo[]{}":{
+		"prefix":"ShowNameInfo",
+		"body":[
+			"\\ShowNameInfo[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ShowNameInfo[]{}[]":{
+		"prefix":"ShowNameInfo",
+		"body":[
+			"\\ShowNameInfo[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ShowNameState[]{}":{
+		"prefix":"ShowNameState",
+		"body":[
+			"\\ShowNameState[${2:forename}]{${1:surname}}"
+		]
+	},
+
+
+	"ShowNameState[]{}[]":{
+		"prefix":"ShowNameState",
+		"body":[
+			"\\ShowNameState[${2:forename}]{${1:surname}}[${3:alternate}]"
+		]
+	},
+
+
+	"ShowPattern[]{}":{
 		"prefix":"ShowPattern",
 		"body":[
 			"\\ShowPattern[${2:forename}]{${1:surname}}"
@@ -1145,18 +1153,10 @@
 	},
 
 
-	"ShowPattern":{
+	"ShowPattern[]{}[]":{
 		"prefix":"ShowPattern",
 		"body":[
 			"\\ShowPattern[${2:forename}]{${1:surname}}[${3:alternate}]"
-		]
-	},
-
-
-	"ShowPattern":{
-		"prefix":"ShowPattern",
-		"body":[
-			"\\ShowPattern{${1:surname,affix}}"
 		]
 	},
 
@@ -1165,7 +1165,7 @@
 		"prefix":"nameauth",
 		"body":[
 			"\\begin{nameauth}",
-			"\t$1",
+				"\t$1",
 			"\\end{nameauth}"
 		]
 	}

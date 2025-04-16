@@ -1,7 +1,7 @@
 {
 
 
-	"pptLeft":{
+	"pptLeft{}":{
 		"prefix":"pptLeft",
 		"body":[
 			"\\pptLeft{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"pptRight":{
+	"pptRight{}":{
 		"prefix":"pptRight",
 		"body":[
 			"\\pptRight{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"pptLeft":{
+	"pptLeft{}":{
 		"prefix":"pptLeft",
 		"body":[
 			"\\pptLeft{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"pptRight":{
+	"pptRight{}":{
 		"prefix":"pptRight",
 		"body":[
 			"\\pptRight{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"pptBanner":{
+	"pptBanner{}":{
 		"prefix":"pptBanner",
 		"body":[
 			"\\pptBanner{${1:text}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"pptBanner":{
-		"prefix":"pptBanner",
-		"body":[
-			"\\pptBanner[${2:color}]{${1:text}}"
-		]
-	},
-
-
-	"pptChapter":{
+	"pptChapter{}":{
 		"prefix":"pptChapter",
 		"body":[
 			"\\pptChapter{${1:title}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"pptChapter":{
-		"prefix":"pptChapter",
-		"body":[
-			"\\pptChapter[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"pptSection":{
+	"pptSection{}":{
 		"prefix":"pptSection",
 		"body":[
 			"\\pptSection{${1:title}}"
@@ -73,15 +57,7 @@
 	},
 
 
-	"pptSection":{
-		"prefix":"pptSection",
-		"body":[
-			"\\pptSection[${2:short title}]{${1:title}}"
-		]
-	},
-
-
-	"pptHeader":{
+	"pptHeader{}":{
 		"prefix":"pptHeader",
 		"body":[
 			"\\pptHeader{${1:text}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"pptTitle":{
+	"pptTitle{}{}":{
 		"prefix":"pptTitle",
 		"body":[
 			"\\pptTitle{${1:title%text}}{${2:subtitle%text}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"pptToc":{
-		"prefix":"pptToc",
-		"body":[
-			"\\pptToc[${1:text}]"
-		]
-	},
-
-
-	"pptQuote":{
+	"pptQuote{}{}{}":{
 		"prefix":"pptQuote",
 		"body":[
 			"\\pptQuote{${1:imagefile}}{${2:quote%text}}{${3:author}}"
@@ -121,15 +89,7 @@
 	},
 
 
-	"pptQuote":{
-		"prefix":"pptQuote",
-		"body":[
-			"\\pptQuote[${4:name}]{${1:imagefile}}{${2:quote%text}}{${3:author}}"
-		]
-	},
-
-
-	"pptPic":{
+	"pptPic{}{}":{
 		"prefix":"pptPic",
 		"body":[
 			"\\pptPic{${1:width factor}}{${2:imagefile}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"pptPin":{
+	"pptPin{}":{
 		"prefix":"pptPin",
 		"body":[
 			"\\pptPin{${1:text}}"
@@ -145,15 +105,7 @@
 	},
 
 
-	"pptPin":{
-		"prefix":"pptPin",
-		"body":[
-			"\\pptPin[${2:right|left}]{${1:text}}"
-		]
-	},
-
-
-	"pptThought":{
+	"pptThought{}":{
 		"prefix":"pptThought",
 		"body":[
 			"\\pptThought{${1:text}}"
@@ -161,7 +113,7 @@
 	},
 
 
-	"pptSnippet":{
+	"pptSnippet{}":{
 		"prefix":"pptSnippet",
 		"body":[
 			"\\pptSnippet{${1:file}}"
@@ -169,15 +121,7 @@
 	},
 
 
-	"pptSnippet":{
-		"prefix":"pptSnippet",
-		"body":[
-			"\\pptSnippet[${2:before code}]{${1:file}}"
-		]
-	},
-
-
-	"pptQR":{
+	"pptQR{}":{
 		"prefix":"pptQR",
 		"body":[
 			"\\pptQR{${1:URL}}"
@@ -185,15 +129,7 @@
 	},
 
 
-	"pptQR":{
-		"prefix":"pptQR",
-		"body":[
-			"\\pptQR[${2:height}]{${1:URL}}"
-		]
-	},
-
-
-	"pptPinQR":{
+	"pptPinQR{}":{
 		"prefix":"pptPinQR",
 		"body":[
 			"\\pptPinQR{${1:URL}}"
@@ -201,30 +137,74 @@
 	},
 
 
-	"pptPinQR":{
+	"pptBanner[]{}":{
+		"prefix":"pptBanner",
+		"body":[
+			"\\pptBanner[${2:color}]{${1:text}}"
+		]
+	},
+
+
+	"pptChapter[]{}":{
+		"prefix":"pptChapter",
+		"body":[
+			"\\pptChapter[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"pptSection[]{}":{
+		"prefix":"pptSection",
+		"body":[
+			"\\pptSection[${2:short title}]{${1:title}}"
+		]
+	},
+
+
+	"pptToc[]":{
+		"prefix":"pptToc",
+		"body":[
+			"\\pptToc[${1:text}]"
+		]
+	},
+
+
+	"pptQuote[]{}{}{}":{
+		"prefix":"pptQuote",
+		"body":[
+			"\\pptQuote[${4:name}]{${1:imagefile}}{${2:quote%text}}{${3:author}}"
+		]
+	},
+
+
+	"pptPin[]{}":{
+		"prefix":"pptPin",
+		"body":[
+			"\\pptPin[${2:right|left}]{${1:text}}"
+		]
+	},
+
+
+	"pptSnippet[]{}":{
+		"prefix":"pptSnippet",
+		"body":[
+			"\\pptSnippet[${2:before code}]{${1:file}}"
+		]
+	},
+
+
+	"pptQR[]{}":{
+		"prefix":"pptQR",
+		"body":[
+			"\\pptQR[${2:height}]{${1:URL}}"
+		]
+	},
+
+
+	"pptPinQR[]{}":{
 		"prefix":"pptPinQR",
 		"body":[
 			"\\pptPinQR[${2:right|left}]{${1:URL}}"
-		]
-	},
-
-
-	"pptWideOne":{
-		"prefix":"pptWideOne",
-		"body":[
-			"\\begin{pptWideOne}",
-			"\t$1",
-			"\\end{pptWideOne}"
-		]
-	},
-
-
-	"enumerate*":{
-		"prefix":"enumerate*",
-		"body":[
-			"\\begin{enumerate*}",
-			"\t$1",
-			"\\end{enumerate*}"
 		]
 	},
 
@@ -233,28 +213,18 @@
 		"prefix":"pptMiddle",
 		"body":[
 			"\\begin{pptMiddle}",
-			"\t$1",
+				"\t$1",
 			"\\end{pptMiddle}"
 		]
 	},
 
 
-	"description*":{
-		"prefix":"description*",
+	"pptWideOne":{
+		"prefix":"pptWideOne",
 		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize*",
-		"body":[
-			"\\begin{itemize*}",
-			"\t$1",
-			"\\end{itemize*}"
+			"\\begin{pptWideOne}",
+				"\t$1",
+			"\\end{pptWideOne}"
 		]
 	},
 
@@ -263,8 +233,68 @@
 		"prefix":"pptWide",
 		"body":[
 			"\\begin{pptWide}",
-			"\t$1",
+				"\t$1",
 			"\\end{pptWide}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

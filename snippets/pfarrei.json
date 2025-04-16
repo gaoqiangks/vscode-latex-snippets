@@ -9,15 +9,7 @@
 	},
 
 
-	"AvToAiv":{
-		"prefix":"AvToAiv",
-		"body":[
-			"\\AvToAiv[${1:Original-Datei}]"
-		]
-	},
-
-
-	"ifbooklet":{
+	"ifbooklet{}{}":{
 		"prefix":"ifbooklet",
 		"body":[
 			"\\ifbooklet{${1:Dann-Code}}{${2:Sonst-Code}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"motto":{
+	"motto{}":{
 		"prefix":"motto",
 		"body":[
 			"\\motto{${1:Motto%text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"titlepicture":{
+	"titlepicture{}":{
 		"prefix":"titlepicture",
 		"body":[
 			"\\titlepicture{${1:Bild}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"parish":{
+	"parish{}":{
 		"prefix":"parish",
 		"body":[
 			"\\parish{${1:Gemeinde}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"setupprayer":{
+	"setupprayer{}":{
 		"prefix":"setupprayer",
 		"body":[
 			"\\setupprayer{${1:Optionen%keyvals}}"
@@ -161,30 +153,18 @@
 	},
 
 
-	"printbookletpagebox":{
+	"AvToAiv[]":{
+		"prefix":"AvToAiv",
+		"body":[
+			"\\AvToAiv[${1:Original-Datei}]"
+		]
+	},
+
+
+	"printbookletpagebox[]":{
 		"prefix":"printbookletpagebox",
 		"body":[
 			"\\printbookletpagebox[${1:opt}]"
-		]
-	},
-
-
-	"bookletemptypage":{
-		"prefix":"bookletemptypage",
-		"body":[
-			"\\begin{bookletemptypage}",
-			"\t$1",
-			"\\end{bookletemptypage}"
-		]
-	},
-
-
-	"bookletbackpage":{
-		"prefix":"bookletbackpage",
-		"body":[
-			"\\begin{bookletbackpage}",
-			"\t$1",
-			"\\end{bookletbackpage}"
 		]
 	},
 
@@ -193,18 +173,28 @@
 		"prefix":"bookletfrontpage",
 		"body":[
 			"\\begin{bookletfrontpage}",
-			"\t$1",
+				"\t$1",
 			"\\end{bookletfrontpage}"
 		]
 	},
 
 
-	"prayer":{
-		"prefix":"prayer",
+	"bookletbackpage":{
+		"prefix":"bookletbackpage",
 		"body":[
-			"\\begin{prayer}",
-			"\t$1",
-			"\\end{prayer}"
+			"\\begin{bookletbackpage}",
+				"\t$1",
+			"\\end{bookletbackpage}"
+		]
+	},
+
+
+	"bookletemptypage":{
+		"prefix":"bookletemptypage",
+		"body":[
+			"\\begin{bookletemptypage}",
+				"\t$1",
+			"\\end{bookletemptypage}"
 		]
 	},
 
@@ -213,8 +203,28 @@
 		"prefix":"samedoublepage",
 		"body":[
 			"\\begin{samedoublepage}",
-			"\t$1",
+				"\t$1",
 			"\\end{samedoublepage}"
+		]
+	},
+
+
+	"prayer":{
+		"prefix":"prayer",
+		"body":[
+			"\\begin{prayer}",
+				"\t$1",
+			"\\end{prayer}"
+		]
+	},
+
+
+	"prayer":{
+		"prefix":"prayer",
+		"body":[
+			"\\begin{prayer}",
+				"\t$1",
+			"\\end{prayer}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"xcomment":{
+	"xcomment{}":{
 		"prefix":"xcomment",
 		"body":[
 			"\\xcomment{${1:envname list}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"rescanfile":{
+	"rescanfile{}":{
 		"prefix":"rescanfile",
 		"body":[
 			"\\rescanfile{${1:arg}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"newxcomment":{
+	"newxcomment{}":{
 		"prefix":"newxcomment",
 		"body":[
 			"\\newxcomment{${1:envname}}"
@@ -49,18 +49,18 @@
 	},
 
 
-	"newxcomment":{
-		"prefix":"newxcomment",
+	"nofloat{}":{
+		"prefix":"nofloat",
 		"body":[
-			"\\newxcomment[${2:envname list}]{${1:envname}}"
+			"\\nofloat{${1:envname list}}"
 		]
 	},
 
 
-	"nofloat":{
-		"prefix":"nofloat",
+	"newxcomment[]{}":{
+		"prefix":"newxcomment",
 		"body":[
-			"\\nofloat{${1:envname list}}"
+			"\\newxcomment[${2:envname list}]{${1:envname}}"
 		]
 	},
 
@@ -69,7 +69,7 @@
 		"prefix":"xcomment",
 		"body":[
 			"\\begin{xcomment}",
-			"\t$1",
+				"\t$1",
 			"\\end{xcomment}"
 		]
 	}

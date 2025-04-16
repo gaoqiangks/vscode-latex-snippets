@@ -1,23 +1,7 @@
 {
 
 
-	"part":{
-		"prefix":"part",
-		"body":[
-			"\\part[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"part":{
-		"prefix":"part",
-		"body":[
-			"\\part[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"part":{
+	"part(){}":{
 		"prefix":"part",
 		"body":[
 			"\\part(${2:pdf outline entry}){${1:title}}"
@@ -25,23 +9,7 @@
 	},
 
 
-	"section":{
-		"prefix":"section",
-		"body":[
-			"\\section[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"section":{
-		"prefix":"section",
-		"body":[
-			"\\section[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"section":{
+	"section(){}":{
 		"prefix":"section",
 		"body":[
 			"\\section(${2:pdf outline entry}){${1:title}}"
@@ -49,23 +17,7 @@
 	},
 
 
-	"subsection":{
-		"prefix":"subsection",
-		"body":[
-			"\\subsection[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"subsection":{
-		"prefix":"subsection",
-		"body":[
-			"\\subsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subsection":{
+	"subsection(){}":{
 		"prefix":"subsection",
 		"body":[
 			"\\subsection(${2:pdf outline entry}){${1:title}}"
@@ -73,23 +25,7 @@
 	},
 
 
-	"subsubsection":{
-		"prefix":"subsubsection",
-		"body":[
-			"\\subsubsection[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"subsubsection":{
-		"prefix":"subsubsection",
-		"body":[
-			"\\subsubsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subsubsection":{
+	"subsubsection(){}":{
 		"prefix":"subsubsection",
 		"body":[
 			"\\subsubsection(${2:pdf outline entry}){${1:title}}"
@@ -97,23 +33,7 @@
 	},
 
 
-	"paragraph":{
-		"prefix":"paragraph",
-		"body":[
-			"\\paragraph[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"paragraph":{
-		"prefix":"paragraph",
-		"body":[
-			"\\paragraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"paragraph":{
+	"paragraph(){}":{
 		"prefix":"paragraph",
 		"body":[
 			"\\paragraph(${2:pdf outline entry}){${1:title}}"
@@ -121,23 +41,7 @@
 	},
 
 
-	"subparagraph":{
-		"prefix":"subparagraph",
-		"body":[
-			"\\subparagraph[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
-	},
-
-
-	"subparagraph":{
-		"prefix":"subparagraph",
-		"body":[
-			"\\subparagraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subparagraph":{
+	"subparagraph(){}":{
 		"prefix":"subparagraph",
 		"body":[
 			"\\subparagraph(${2:pdf outline entry}){${1:title}}"
@@ -145,7 +49,111 @@
 	},
 
 
-	"chapter":{
+	"chapter(){}":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter(${2:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"part[][]{}":{
+		"prefix":"part",
+		"body":[
+			"\\part[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"part[](){}":{
+		"prefix":"part",
+		"body":[
+			"\\part[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"section[][]{}":{
+		"prefix":"section",
+		"body":[
+			"\\section[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"section[](){}":{
+		"prefix":"section",
+		"body":[
+			"\\section[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"subsection[][]{}":{
+		"prefix":"subsection",
+		"body":[
+			"\\subsection[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"subsection[](){}":{
+		"prefix":"subsection",
+		"body":[
+			"\\subsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"subsubsection[][]{}":{
+		"prefix":"subsubsection",
+		"body":[
+			"\\subsubsection[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"subsubsection[](){}":{
+		"prefix":"subsubsection",
+		"body":[
+			"\\subsubsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"paragraph[][]{}":{
+		"prefix":"paragraph",
+		"body":[
+			"\\paragraph[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"paragraph[](){}":{
+		"prefix":"paragraph",
+		"body":[
+			"\\paragraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"subparagraph[][]{}":{
+		"prefix":"subparagraph",
+		"body":[
+			"\\subparagraph[${2:short title}][${3:outline entry}]{${1:title}}"
+		]
+	},
+
+
+	"subparagraph[](){}":{
+		"prefix":"subparagraph",
+		"body":[
+			"\\subparagraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
+		]
+	},
+
+
+	"chapter[][]{}":{
 		"prefix":"chapter",
 		"body":[
 			"\\chapter[${2:short title}][${3:outline entry}]{${1:title}}"
@@ -153,18 +161,10 @@
 	},
 
 
-	"chapter":{
+	"chapter[](){}":{
 		"prefix":"chapter",
 		"body":[
 			"\\chapter[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"chapter":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter(${2:pdf outline entry}){${1:title}}"
 		]
 	}
 }

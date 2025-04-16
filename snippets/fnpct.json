@@ -1,39 +1,7 @@
 {
 
 
-	"footnote*":{
-		"prefix":"footnote*",
-		"body":[
-			"\\footnote*[${2:number}]{${1:text}}"
-		]
-	},
-
-
-	"footnote*":{
-		"prefix":"footnote*",
-		"body":[
-			"\\footnote*{${1:text}}"
-		]
-	},
-
-
-	"footnotemark*":{
-		"prefix":"footnotemark*",
-		"body":[
-			"\\footnotemark*"
-		]
-	},
-
-
-	"footnotemark*":{
-		"prefix":"footnotemark*",
-		"body":[
-			"\\footnotemark*[${1:number}]"
-		]
-	},
-
-
-	"setfnpct":{
+	"setfnpct{}":{
 		"prefix":"setfnpct",
 		"body":[
 			"\\setfnpct{${1:options%keyvals}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"multfootnote":{
+	"multfootnote{}":{
 		"prefix":"multfootnote",
 		"body":[
 			"\\multfootnote{${1:fn1;fn2;...}}"
@@ -65,15 +33,7 @@
 	},
 
 
-	"multfootnote*":{
-		"prefix":"multfootnote*",
-		"body":[
-			"\\multfootnote*{${1:fn1;fn2;...}}"
-		]
-	},
-
-
-	"AdaptNote":{
+	"AdaptNote{}{}{}":{
 		"prefix":"AdaptNote",
 		"body":[
 			"\\AdaptNote{${1:cmd}}{${2:args}}{${3:code}}"
@@ -81,15 +41,7 @@
 	},
 
 
-	"AdaptNote":{
-		"prefix":"AdaptNote",
-		"body":[
-			"\\AdaptNote{${1:cmd}}{${2:args}}[${4:counter}]{${3:code}}"
-		]
-	},
-
-
-	"AdaptNoteName":{
+	"AdaptNoteName{}{}{}":{
 		"prefix":"AdaptNoteName",
 		"body":[
 			"\\AdaptNoteName{${1:csname}}{${2:args}}{${3:code}}"
@@ -97,15 +49,7 @@
 	},
 
 
-	"AdaptNoteName":{
-		"prefix":"AdaptNoteName",
-		"body":[
-			"\\AdaptNoteName{${1:csname}}{${2:args}}[${4:counter}]{${3:code}}"
-		]
-	},
-
-
-	"MultVariant":{
+	"MultVariant{}":{
 		"prefix":"MultVariant",
 		"body":[
 			"\\MultVariant{${1:cmd}}"
@@ -113,10 +57,66 @@
 	},
 
 
-	"MultVariantName":{
+	"MultVariantName{}":{
 		"prefix":"MultVariantName",
 		"body":[
 			"\\MultVariantName{${1:csname}}"
+		]
+	},
+
+
+	"footnote*[]{}":{
+		"prefix":"*footnote",
+		"body":[
+			"\\footnote*[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"footnote*{}":{
+		"prefix":"*footnote",
+		"body":[
+			"\\footnote*{${1:text}}"
+		]
+	},
+
+
+	"footnotemark*":{
+		"prefix":"*footnotemark",
+		"body":[
+			"\\footnotemark*"
+		]
+	},
+
+
+	"footnotemark*[]":{
+		"prefix":"*footnotemark",
+		"body":[
+			"\\footnotemark*[${1:number}]"
+		]
+	},
+
+
+	"multfootnote*{}":{
+		"prefix":"*multfootnote",
+		"body":[
+			"\\multfootnote*{${1:fn1;fn2;...}}"
+		]
+	},
+
+
+	"AdaptNote{}{}[]{}":{
+		"prefix":"AdaptNote",
+		"body":[
+			"\\AdaptNote{${1:cmd}}{${2:args}}[${4:counter}]{${3:code}}"
+		]
+	},
+
+
+	"AdaptNoteName{}{}[]{}":{
+		"prefix":"AdaptNoteName",
+		"body":[
+			"\\AdaptNoteName{${1:csname}}{${2:args}}[${4:counter}]{${3:code}}"
 		]
 	}
 }

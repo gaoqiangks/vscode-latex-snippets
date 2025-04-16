@@ -1,7 +1,7 @@
 {
 
 
-	"ctparttext":{
+	"ctparttext{}":{
 		"prefix":"ctparttext",
 		"body":[
 			"\\ctparttext{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"spacedallcaps":{
+	"spacedallcaps{}":{
 		"prefix":"spacedallcaps",
 		"body":[
 			"\\spacedallcaps{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"spacedlowsmallcaps":{
+	"spacedlowsmallcaps{}":{
 		"prefix":"spacedlowsmallcaps",
 		"body":[
 			"\\spacedlowsmallcaps{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"chapterNumber":{
+	"chapterNumber{}":{
 		"prefix":"chapterNumber",
 		"body":[
 			"\\chapterNumber{${1:text}}"
@@ -97,18 +97,10 @@
 	},
 
 
-	"oldmarginpar":{
+	"oldmarginpar{}":{
 		"prefix":"oldmarginpar",
 		"body":[
 			"\\oldmarginpar{${1:right%text}}"
-		]
-	},
-
-
-	"oldmarginpar":{
-		"prefix":"oldmarginpar",
-		"body":[
-			"\\oldmarginpar[${2:left}]{${1:right%text}}"
 		]
 	},
 
@@ -121,7 +113,7 @@
 	},
 
 
-	"tocEntry":{
+	"tocEntry{}":{
 		"prefix":"tocEntry",
 		"body":[
 			"\\tocEntry{${1:text}}"
@@ -137,11 +129,19 @@
 	},
 
 
+	"oldmarginpar[]{}":{
+		"prefix":"oldmarginpar",
+		"body":[
+			"\\oldmarginpar[${2:left}]{${1:right%text}}"
+		]
+	},
+
+
 	"aenumerate":{
 		"prefix":"aenumerate",
 		"body":[
 			"\\begin{aenumerate}",
-			"\t$1",
+				"\t$1",
 			"\\end{aenumerate}"
 		]
 	}

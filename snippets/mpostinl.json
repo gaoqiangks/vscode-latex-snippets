@@ -1,7 +1,7 @@
 {
 
 
-	"mpostsetup":{
+	"mpostsetup{}":{
 		"prefix":"mpostsetup",
 		"body":[
 			"\\mpostsetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mpostuse":{
+	"mpostuse{}":{
 		"prefix":"mpostuse",
 		"body":[
 			"\\mpostuse{${1:label}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"mpostuse":{
-		"prefix":"mpostuse",
-		"body":[
-			"\\mpostuse[${2:options%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"mpostgetname":{
+	"mpostgetname{}":{
 		"prefix":"mpostgetname",
 		"body":[
 			"\\mpostgetname{${1:label}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"mpostplaceholder":{
+	"mpostplaceholder{}":{
 		"prefix":"mpostplaceholder",
 		"body":[
 			"\\mpostplaceholder{${1:name}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"mpostplaceholder":{
-		"prefix":"mpostplaceholder",
-		"body":[
-			"\\mpostplaceholder[${2:type%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"mpostdisplaylabel":{
+	"mpostdisplaylabel{}":{
 		"prefix":"mpostdisplaylabel",
 		"body":[
 			"\\mpostdisplaylabel{${1:label}}"
@@ -73,18 +57,10 @@
 	},
 
 
-	"mpostfile":{
+	"mpostfile{}":{
 		"prefix":"mpostfile",
 		"body":[
 			"\\mpostfile{${1:file}}"
-		]
-	},
-
-
-	"mpostfile":{
-		"prefix":"mpostfile",
-		"body":[
-			"\\mpostfile[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -97,11 +73,35 @@
 	},
 
 
+	"mpostuse[]{}":{
+		"prefix":"mpostuse",
+		"body":[
+			"\\mpostuse[${2:options%keyvals}]{${1:label}}"
+		]
+	},
+
+
+	"mpostplaceholder[]{}":{
+		"prefix":"mpostplaceholder",
+		"body":[
+			"\\mpostplaceholder[${2:type%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"mpostfile[]{}":{
+		"prefix":"mpostfile",
+		"body":[
+			"\\mpostfile[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
 	"mpostfig":{
 		"prefix":"mpostfig",
 		"body":[
 			"\\begin{mpostfig}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpostfig}"
 		]
 	},
@@ -111,7 +111,7 @@
 		"prefix":"mpostdef",
 		"body":[
 			"\\begin{mpostdef}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpostdef}"
 		]
 	},
@@ -121,7 +121,37 @@
 		"prefix":"mposttex",
 		"body":[
 			"\\begin{mposttex}",
-			"\t$1",
+				"\t$1",
+			"\\end{mposttex}"
+		]
+	},
+
+
+	"mpostfig":{
+		"prefix":"mpostfig",
+		"body":[
+			"\\begin{mpostfig}",
+				"\t$1",
+			"\\end{mpostfig}"
+		]
+	},
+
+
+	"mpostdef":{
+		"prefix":"mpostdef",
+		"body":[
+			"\\begin{mpostdef}",
+				"\t$1",
+			"\\end{mpostdef}"
+		]
+	},
+
+
+	"mposttex":{
+		"prefix":"mposttex",
+		"body":[
+			"\\begin{mposttex}",
+				"\t$1",
 			"\\end{mposttex}"
 		]
 	}

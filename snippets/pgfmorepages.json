@@ -1,7 +1,7 @@
 {
 
 
-	"pgfpagesuselayout":{
+	"pgfpagesuselayout{}":{
 		"prefix":"pgfpagesuselayout",
 		"body":[
 			"\\pgfpagesuselayout{${1:layout}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"pgfpagesuselayout":{
-		"prefix":"pgfpagesuselayout",
-		"body":[
-			"\\pgfpagesuselayout{${1:layout}}[${2:options%keyvals}]"
-		]
-	},
-
-
-	"pgfpagesdeclarelayout":{
+	"pgfpagesdeclarelayout{}{}{}":{
 		"prefix":"pgfpagesdeclarelayout",
 		"body":[
 			"\\pgfpagesdeclarelayout{${1:layout}}{${2:before actions}}{${3:after actions}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"pgfpagesphysicalpageoptions":{
+	"pgfpagesphysicalpageoptions{}":{
 		"prefix":"pgfpagesphysicalpageoptions",
 		"body":[
 			"\\pgfpagesphysicalpageoptions{${1:options%keyvals}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"pgfpageslogicalpageoptions":{
+	"pgfpageslogicalpageoptions{}{}":{
 		"prefix":"pgfpageslogicalpageoptions",
 		"body":[
 			"\\pgfpageslogicalpageoptions{${1:logical page number}}{${2:options%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"pgfpagesshipoutlogicalpage":{
+	"pgfpagesshipoutlogicalpage{}":{
 		"prefix":"pgfpagesshipoutlogicalpage",
 		"body":[
 			"\\pgfpagesshipoutlogicalpage{${1:number}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"pgfpagescurrentpagewillbelogicalpage":{
+	"pgfpagescurrentpagewillbelogicalpage{}":{
 		"prefix":"pgfpagescurrentpagewillbelogicalpage",
 		"body":[
 			"\\pgfpagescurrentpagewillbelogicalpage{${1:number}}"
@@ -241,7 +233,7 @@
 	},
 
 
-	"pgfpagesphysicalpage":{
+	"pgfpagesphysicalpage{}{}":{
 		"prefix":"pgfpagesphysicalpage",
 		"body":[
 			"\\pgfpagesphysicalpage{${1:number}}{${2:options}}"
@@ -249,10 +241,18 @@
 	},
 
 
-	"pgfpagessetdefaults":{
+	"pgfpagessetdefaults{}":{
 		"prefix":"pgfpagessetdefaults",
 		"body":[
 			"\\pgfpagessetdefaults{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pgfpagesuselayout{}[]":{
+		"prefix":"pgfpagesuselayout",
+		"body":[
+			"\\pgfpagesuselayout{${1:layout}}[${2:options%keyvals}]"
 		]
 	}
 }

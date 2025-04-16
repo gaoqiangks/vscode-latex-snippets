@@ -1,7 +1,7 @@
 {
 
 
-	"blackout":{
+	"blackout{}":{
 		"prefix":"blackout",
 		"body":[
 			"\\blackout{${1:text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"censor*":{
-		"prefix":"censor*",
-		"body":[
-			"\\censor*{${1:width multiplier}}"
-		]
-	},
-
-
-	"censor":{
+	"censor{}":{
 		"prefix":"censor",
 		"body":[
 			"\\censor{${1:text}}"
@@ -33,31 +25,7 @@
 	},
 
 
-	"censorbox*":{
-		"prefix":"censorbox*",
-		"body":[
-			"\\censorbox*[${4:pre-commands}]{${1:width mult}}{${2:height mult}}{${3:depth mult}}"
-		]
-	},
-
-
-	"censorbox*":{
-		"prefix":"censorbox*",
-		"body":[
-			"\\censorbox*{${1:width mult}}{${2:height mult}}{${3:depth mult}}"
-		]
-	},
-
-
-	"censorbox":{
-		"prefix":"censorbox",
-		"body":[
-			"\\censorbox[${2:pre-commands}]{${1:contents%text}}"
-		]
-	},
-
-
-	"censorbox":{
+	"censorbox{}":{
 		"prefix":"censorbox",
 		"body":[
 			"\\censorbox{${1:contents%text}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"censorrule":{
+	"censorrule{}":{
 		"prefix":"censorrule",
 		"body":[
 			"\\censorrule{${1:length}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"xblackout":{
+	"xblackout{}":{
 		"prefix":"xblackout",
 		"body":[
 			"\\xblackout{${1:text}}"
@@ -157,6 +125,38 @@
 		"prefix":"xblackoutenv",
 		"body":[
 			"\\xblackoutenv"
+		]
+	},
+
+
+	"censor*{}":{
+		"prefix":"*censor",
+		"body":[
+			"\\censor*{${1:width multiplier}}"
+		]
+	},
+
+
+	"censorbox*[]{}{}{}":{
+		"prefix":"*censorbox",
+		"body":[
+			"\\censorbox*[${4:pre-commands}]{${1:width mult}}{${2:height mult}}{${3:depth mult}}"
+		]
+	},
+
+
+	"censorbox*{}{}{}":{
+		"prefix":"*censorbox",
+		"body":[
+			"\\censorbox*{${1:width mult}}{${2:height mult}}{${3:depth mult}}"
+		]
+	},
+
+
+	"censorbox[]{}":{
+		"prefix":"censorbox",
+		"body":[
+			"\\censorbox[${2:pre-commands}]{${1:contents%text}}"
 		]
 	}
 }

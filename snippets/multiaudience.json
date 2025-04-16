@@ -9,7 +9,7 @@
 	},
 
 
-	"DefCurrentAudience":{
+	"DefCurrentAudience{}":{
 		"prefix":"DefCurrentAudience",
 		"body":[
 			"\\DefCurrentAudience{${1:audiences}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"SetNewAudience":{
+	"SetNewAudience{}":{
 		"prefix":"SetNewAudience",
 		"body":[
 			"\\SetNewAudience{${1:audience%specialDef}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"showto":{
+	"showto{}{}":{
 		"prefix":"showto",
 		"body":[
 			"\\showto{${1:audiences%keyvals}}{${2:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"Footnote":{
+	"Footnote{}{}":{
 		"prefix":"Footnote",
 		"body":[
 			"\\Footnote{${1:audiences%keyvals}}{${2:text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"DefMultiaudienceCommand":{
+	"DefMultiaudienceCommand{}{}":{
 		"prefix":"DefMultiaudienceCommand",
 		"body":[
 			"\\DefMultiaudienceCommand{${1:new command%cmd}}{${2:old command%definition}}"
@@ -49,30 +49,10 @@
 	},
 
 
-	"NewMultiaudienceSectionEnv":{
+	"NewMultiaudienceSectionEnv{}{}":{
 		"prefix":"NewMultiaudienceSectionEnv",
 		"body":[
 			"\\NewMultiaudienceSectionEnv{${1:envname}}{${2:command}}"
-		]
-	},
-
-
-	"Subsubsection":{
-		"prefix":"Subsubsection",
-		"body":[
-			"\\begin{Subsubsection}",
-			"\t$1",
-			"\\end{Subsubsection}"
-		]
-	},
-
-
-	"Section":{
-		"prefix":"Section",
-		"body":[
-			"\\begin{Section}",
-			"\t$1",
-			"\\end{Section}"
 		]
 	},
 
@@ -81,18 +61,18 @@
 		"prefix":"shownto",
 		"body":[
 			"\\begin{shownto}",
-			"\t$1",
+				"\t$1",
 			"\\end{shownto}"
 		]
 	},
 
 
-	"Subparagraph":{
-		"prefix":"Subparagraph",
+	"Section":{
+		"prefix":"Section",
 		"body":[
-			"\\begin{Subparagraph}",
-			"\t$1",
-			"\\end{Subparagraph}"
+			"\\begin{Section}",
+				"\t$1",
+			"\\end{Section}"
 		]
 	},
 
@@ -101,8 +81,18 @@
 		"prefix":"Subsection",
 		"body":[
 			"\\begin{Subsection}",
-			"\t$1",
+				"\t$1",
 			"\\end{Subsection}"
+		]
+	},
+
+
+	"Subsubsection":{
+		"prefix":"Subsubsection",
+		"body":[
+			"\\begin{Subsubsection}",
+				"\t$1",
+			"\\end{Subsubsection}"
 		]
 	},
 
@@ -111,8 +101,68 @@
 		"prefix":"Paragraph",
 		"body":[
 			"\\begin{Paragraph}",
-			"\t$1",
+				"\t$1",
 			"\\end{Paragraph}"
+		]
+	},
+
+
+	"Subparagraph":{
+		"prefix":"Subparagraph",
+		"body":[
+			"\\begin{Subparagraph}",
+				"\t$1",
+			"\\end{Subparagraph}"
+		]
+	},
+
+
+	"Section":{
+		"prefix":"Section",
+		"body":[
+			"\\begin{Section}",
+				"\t$1",
+			"\\end{Section}"
+		]
+	},
+
+
+	"Subsection":{
+		"prefix":"Subsection",
+		"body":[
+			"\\begin{Subsection}",
+				"\t$1",
+			"\\end{Subsection}"
+		]
+	},
+
+
+	"Subsubsection":{
+		"prefix":"Subsubsection",
+		"body":[
+			"\\begin{Subsubsection}",
+				"\t$1",
+			"\\end{Subsubsection}"
+		]
+	},
+
+
+	"Paragraph":{
+		"prefix":"Paragraph",
+		"body":[
+			"\\begin{Paragraph}",
+				"\t$1",
+			"\\end{Paragraph}"
+		]
+	},
+
+
+	"Subparagraph":{
+		"prefix":"Subparagraph",
+		"body":[
+			"\\begin{Subparagraph}",
+				"\t$1",
+			"\\end{Subparagraph}"
 		]
 	}
 }

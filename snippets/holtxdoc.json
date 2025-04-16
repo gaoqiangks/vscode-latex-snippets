@@ -17,7 +17,7 @@
 	},
 
 
-	"HistVersion":{
+	"HistVersion{}":{
 		"prefix":"HistVersion",
 		"body":[
 			"\\HistVersion{${1:title}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"HistLabel":{
+	"HistLabel{}":{
 		"prefix":"HistLabel",
 		"body":[
 			"\\HistLabel{${1:label}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"URL":{
+	"URL{}{}":{
 		"prefix":"URL",
 		"body":[
 			"\\URL{${1:text%plain}}{${2:URL}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"NameEmail":{
+	"NameEmail{}{}":{
 		"prefix":"NameEmail",
 		"body":[
 			"\\NameEmail{${1:name}}{${2:email%URL}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"Package":{
+	"Package{}":{
 		"prefix":"Package",
 		"body":[
 			"\\Package{${1:package name}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"File":{
+	"File{}":{
 		"prefix":"File",
 		"body":[
 			"\\File{${1:file name}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"Verb":{
+	"Verb{}":{
 		"prefix":"Verb",
 		"body":[
 			"\\Verb{${1:text%plain}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"CS":{
+	"CS{}":{
 		"prefix":"CS",
 		"body":[
 			"\\CS{${1:csname}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"bibpackage":{
+	"bibpackage{}{}{}{}":{
 		"prefix":"bibpackage",
 		"body":[
 			"\\bibpackage{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"CTAN":{
+	"CTAN{}":{
 		"prefix":"CTAN",
 		"body":[
 			"\\CTAN{${1:path%URL}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"CTANinstall":{
+	"CTANinstall{}":{
 		"prefix":"CTANinstall",
 		"body":[
 			"\\CTANinstall{${1:path%URL}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"CTANpkg":{
+	"CTANpkg{}":{
 		"prefix":"CTANpkg",
 		"body":[
 			"\\CTANpkg{${1:package name}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"Newsgroup":{
+	"Newsgroup{}":{
 		"prefix":"Newsgroup",
 		"body":[
 			"\\Newsgroup{${1:path%URL}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"xpackage":{
+	"xpackage{}":{
 		"prefix":"xpackage",
 		"body":[
 			"\\xpackage{${1:package name}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"xmodule":{
+	"xmodule{}":{
 		"prefix":"xmodule",
 		"body":[
 			"\\xmodule{${1:module name}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"xclass":{
+	"xclass{}":{
 		"prefix":"xclass",
 		"body":[
 			"\\xclass{${1:class name}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"xoption":{
+	"xoption{}":{
 		"prefix":"xoption",
 		"body":[
 			"\\xoption{${1:option name}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"xfile":{
+	"xfile{}":{
 		"prefix":"xfile",
 		"body":[
 			"\\xfile{${1:file name}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"xext":{
+	"xext{}":{
 		"prefix":"xext",
 		"body":[
 			"\\xext{${1:ext name}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"xemail":{
+	"xemail{}":{
 		"prefix":"xemail",
 		"body":[
 			"\\xemail{${1:email%URL}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"xnewsgroup":{
+	"xnewsgroup{}":{
 		"prefix":"xnewsgroup",
 		"body":[
 			"\\xnewsgroup{${1:URL}}"
@@ -305,22 +305,22 @@
 	},
 
 
-	"Version":{
-		"prefix":"Version",
-		"body":[
-			"\\begin{Version}",
-			"\t$1",
-			"\\end{Version}"
-		]
-	},
-
-
 	"History":{
 		"prefix":"History",
 		"body":[
 			"\\begin{History}",
-			"\t$1",
+				"\t$1",
 			"\\end{History}"
+		]
+	},
+
+
+	"Version":{
+		"prefix":"Version",
+		"body":[
+			"\\begin{Version}",
+				"\t$1",
+			"\\end{Version}"
 		]
 	},
 
@@ -329,7 +329,7 @@
 		"prefix":"declcs",
 		"body":[
 			"\\begin{declcs}",
-			"\t$1",
+				"\t$1",
 			"\\end{declcs}"
 		]
 	}

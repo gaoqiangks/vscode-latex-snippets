@@ -89,7 +89,7 @@
 	},
 
 
-	"pgfdeclaredecoration":{
+	"pgfdeclaredecoration{}{}{}":{
 		"prefix":"pgfdeclaredecoration",
 		"body":[
 			"\\pgfdeclaredecoration{${1:name}}{${2:initial state}}{${3:states}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"state":{
+	"state{}{}":{
 		"prefix":"state",
 		"body":[
 			"\\state{${1:name}}{${2:code}}"
@@ -105,15 +105,7 @@
 	},
 
 
-	"state":{
-		"prefix":"state",
-		"body":[
-			"\\state{${1:name}}[${3:options%keyvals}]{${2:code}}"
-		]
-	},
-
-
-	"pgfdeclaremetadecoration":{
+	"pgfdeclaremetadecoration{}{}{}":{
 		"prefix":"pgfdeclaremetadecoration",
 		"body":[
 			"\\pgfdeclaremetadecoration{${1:name}}{${2:initial state}}{${3:states}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"decoration":{
+	"decoration{}":{
 		"prefix":"decoration",
 		"body":[
 			"\\decoration{${1:name}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"beforedecoration":{
+	"beforedecoration{}":{
 		"prefix":"beforedecoration",
 		"body":[
 			"\\beforedecoration{${1:before code}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"afterdecoration":{
+	"afterdecoration{}":{
 		"prefix":"afterdecoration",
 		"body":[
 			"\\afterdecoration{${1:after code}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"pgfdecoratepath":{
+	"pgfdecoratepath{}{}":{
 		"prefix":"pgfdecoratepath",
 		"body":[
 			"\\pgfdecoratepath{${1:name}}{${2:path commands}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"pgfdecoratecurrentpath":{
+	"pgfdecoratecurrentpath{}":{
 		"prefix":"pgfdecoratecurrentpath",
 		"body":[
 			"\\pgfdecoratecurrentpath{${1:name}}"
@@ -273,7 +265,7 @@
 	},
 
 
-	"pgfsetdecorationsegmenttransformation":{
+	"pgfsetdecorationsegmenttransformation{}":{
 		"prefix":"pgfsetdecorationsegmenttransformation",
 		"body":[
 			"\\pgfsetdecorationsegmenttransformation{${1:code}}"
@@ -321,11 +313,19 @@
 	},
 
 
+	"state{}[]{}":{
+		"prefix":"state",
+		"body":[
+			"\\state{${1:name}}[${3:options%keyvals}]{${2:code}}"
+		]
+	},
+
+
 	"pgfdecoration":{
 		"prefix":"pgfdecoration",
 		"body":[
 			"\\begin{pgfdecoration}",
-			"\t$1",
+				"\t$1",
 			"\\end{pgfdecoration}"
 		]
 	},
@@ -335,7 +335,7 @@
 		"prefix":"pgfmetadecoration",
 		"body":[
 			"\\begin{pgfmetadecoration}",
-			"\t$1",
+				"\t$1",
 			"\\end{pgfmetadecoration}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"systeme":{
+	"systeme{}":{
 		"prefix":"systeme",
 		"body":[
 			"\\systeme{${1:eq1,eq2,...%formula}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"systeme":{
-		"prefix":"systeme",
-		"body":[
-			"\\systeme[${2:alignment_chars%formula}]{${1:eq1,eq2,...%formula}}"
-		]
-	},
-
-
-	"syslineskipcoeff":{
+	"syslineskipcoeff{}":{
 		"prefix":"syslineskipcoeff",
 		"body":[
 			"\\syslineskipcoeff{${1:value}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"sysdelim":{
+	"sysdelim{}{}":{
 		"prefix":"sysdelim",
 		"body":[
 			"\\sysdelim{${1:delim1%formula}}{${2:delim2%formula}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"sysequivsign":{
+	"sysequivsign{}{}":{
 		"prefix":"sysequivsign",
 		"body":[
 			"\\sysequivsign{${1:sign%formula}}{${2:substitution%formula}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"sysaddeqsign":{
+	"sysaddeqsign{}":{
 		"prefix":"sysaddeqsign",
 		"body":[
 			"\\sysaddeqsign{${1:sign%formula}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"sysremoveeqsign":{
+	"sysremoveeqsign{}":{
 		"prefix":"sysremoveeqsign",
 		"body":[
 			"\\sysremoveeqsign{${1:sign%formula}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"syseqsep":{
+	"syseqsep{}":{
 		"prefix":"syseqsep",
 		"body":[
 			"\\syseqsep{${1:character%formula}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"sysalign":{
+	"sysalign{}":{
 		"prefix":"sysalign",
 		"body":[
 			"\\sysalign{${1:l|${2:c}|${3:r,l}|${4:c}|r}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"syssignspace":{
+	"syssignspace{}":{
 		"prefix":"syssignspace",
 		"body":[
 			"\\syssignspace{${1:dimen%l}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"syseqspace":{
+	"syseqspace{}":{
 		"prefix":"syseqspace",
 		"body":[
 			"\\syseqspace{${1:dimen%l}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"sysextracolsign":{
+	"sysextracolsign{}":{
 		"prefix":"sysextracolsign",
 		"body":[
 			"\\sysextracolsign{${1:sign%formula}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"syscodeextracol":{
+	"syscodeextracol{}{}":{
 		"prefix":"syscodeextracol",
 		"body":[
 			"\\syscodeextracol{${1:start code}}{${2:end code}}"
@@ -105,18 +97,10 @@
 	},
 
 
-	"sysautonum":{
+	"sysautonum{}":{
 		"prefix":"sysautonum",
 		"body":[
 			"\\sysautonum{${1:expression%formula}}"
-		]
-	},
-
-
-	"sysautonum*":{
-		"prefix":"sysautonum*",
-		"body":[
-			"\\sysautonum*{${1:expression%formula}}"
 		]
 	},
 
@@ -141,6 +125,22 @@
 		"prefix":"sysnosubstitute",
 		"body":[
 			"\\sysnosubstitute"
+		]
+	},
+
+
+	"sysautonum*{}":{
+		"prefix":"*sysautonum",
+		"body":[
+			"\\sysautonum*{${1:expression%formula}}"
+		]
+	},
+
+
+	"systeme[]{}":{
+		"prefix":"systeme",
+		"body":[
+			"\\systeme[${2:alignment_chars%formula}]{${1:eq1,eq2,...%formula}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"hvFloatSet":{
+	"hvFloatSet{}":{
 		"prefix":"hvFloatSet",
 		"body":[
 			"\\hvFloatSet{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"hvFloat":{
+	"hvFloat{}{}{}{}":{
 		"prefix":"hvFloat",
 		"body":[
 			"\\hvFloat{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
@@ -25,63 +25,7 @@
 	},
 
 
-	"hvFloat":{
-		"prefix":"hvFloat",
-		"body":[
-			"\\hvFloat{${1:float type}}{${2:object}}[${5:short caption%text}]{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat":{
-		"prefix":"hvFloat",
-		"body":[
-			"\\hvFloat[${5:options%keyvals}]{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat":{
-		"prefix":"hvFloat",
-		"body":[
-			"\\hvFloat[${5:options%keyvals}]{${1:float type}}{${2:object}}[${6:short caption%text}]{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat*":{
-		"prefix":"hvFloat*",
-		"body":[
-			"\\hvFloat*{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat*":{
-		"prefix":"hvFloat*",
-		"body":[
-			"\\hvFloat*{${1:float type}}{${2:object}}[${5:short caption%text}]{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat*":{
-		"prefix":"hvFloat*",
-		"body":[
-			"\\hvFloat*[${5:options%keyvals}]{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"hvFloat*":{
-		"prefix":"hvFloat*",
-		"body":[
-			"\\hvFloat*[${5:options%keyvals}]{${1:float type}}{${2:object}}[${6:short caption%text}]{${3:caption%text}}{${4:label}}"
-		]
-	},
-
-
-	"figcaption":{
+	"figcaption{}":{
 		"prefix":"figcaption",
 		"body":[
 			"\\figcaption{${1:caption%text}}"
@@ -89,15 +33,7 @@
 	},
 
 
-	"figcaption":{
-		"prefix":"figcaption",
-		"body":[
-			"\\figcaption[${2:short caption%text}]{${1:caption%text}}"
-		]
-	},
-
-
-	"tabcaption":{
+	"tabcaption{}":{
 		"prefix":"tabcaption",
 		"body":[
 			"\\tabcaption{${1:caption%text}}"
@@ -105,15 +41,7 @@
 	},
 
 
-	"tabcaption":{
-		"prefix":"tabcaption",
-		"body":[
-			"\\tabcaption[${2:short caption%text}]{${1:caption%text}}"
-		]
-	},
-
-
-	"tabcaptionbelow":{
+	"tabcaptionbelow{}":{
 		"prefix":"tabcaptionbelow",
 		"body":[
 			"\\tabcaptionbelow{${1:caption%text}}"
@@ -121,15 +49,7 @@
 	},
 
 
-	"tabcaptionbelow":{
-		"prefix":"tabcaptionbelow",
-		"body":[
-			"\\tabcaptionbelow[${2:short caption%text}]{${1:caption%text}}"
-		]
-	},
-
-
-	"hvDefFloatStyle":{
+	"hvDefFloatStyle{}{}":{
 		"prefix":"hvDefFloatStyle",
 		"body":[
 			"\\hvDefFloatStyle{${1:name}}{${2:options%keyvals}}"
@@ -137,7 +57,7 @@
 	},
 
 
-	"IncludeGraphics":{
+	"IncludeGraphics{}":{
 		"prefix":"IncludeGraphics",
 		"body":[
 			"\\IncludeGraphics{${1:imagefile}}"
@@ -145,15 +65,7 @@
 	},
 
 
-	"IncludeGraphics":{
-		"prefix":"IncludeGraphics",
-		"body":[
-			"\\IncludeGraphics[${2:keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"LenToUnit":{
+	"LenToUnit{}":{
 		"prefix":"LenToUnit",
 		"body":[
 			"\\LenToUnit{${1:length}}"
@@ -345,11 +257,109 @@
 	},
 
 
+	"hvFloat*{}{}{}{}":{
+		"prefix":"*hvFloat",
+		"body":[
+			"\\hvFloat*{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat*{}{}[]{}{}":{
+		"prefix":"*hvFloat",
+		"body":[
+			"\\hvFloat*{${1:float type}}{${2:object}}[${5:short caption%text}]{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat*[]{}{}{}{}":{
+		"prefix":"*hvFloat",
+		"body":[
+			"\\hvFloat*[${5:options%keyvals}]{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat*[]{}{}[]{}{}":{
+		"prefix":"*hvFloat",
+		"body":[
+			"\\hvFloat*[${5:options%keyvals}]{${1:float type}}{${2:object}}[${6:short caption%text}]{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat{}{}[]{}{}":{
+		"prefix":"hvFloat",
+		"body":[
+			"\\hvFloat{${1:float type}}{${2:object}}[${5:short caption%text}]{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat[]{}{}{}{}":{
+		"prefix":"hvFloat",
+		"body":[
+			"\\hvFloat[${5:options%keyvals}]{${1:float type}}{${2:object}}{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"hvFloat[]{}{}[]{}{}":{
+		"prefix":"hvFloat",
+		"body":[
+			"\\hvFloat[${5:options%keyvals}]{${1:float type}}{${2:object}}[${6:short caption%text}]{${3:caption%text}}{${4:label}}"
+		]
+	},
+
+
+	"figcaption[]{}":{
+		"prefix":"figcaption",
+		"body":[
+			"\\figcaption[${2:short caption%text}]{${1:caption%text}}"
+		]
+	},
+
+
+	"tabcaption[]{}":{
+		"prefix":"tabcaption",
+		"body":[
+			"\\tabcaption[${2:short caption%text}]{${1:caption%text}}"
+		]
+	},
+
+
+	"tabcaptionbelow[]{}":{
+		"prefix":"tabcaptionbelow",
+		"body":[
+			"\\tabcaptionbelow[${2:short caption%text}]{${1:caption%text}}"
+		]
+	},
+
+
+	"IncludeGraphics[]{}":{
+		"prefix":"IncludeGraphics",
+		"body":[
+			"\\IncludeGraphics[${2:keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
 	"hvFloatEnv":{
 		"prefix":"hvFloatEnv",
 		"body":[
 			"\\begin{hvFloatEnv}",
-			"\t$1",
+				"\t$1",
+			"\\end{hvFloatEnv}"
+		]
+	},
+
+
+	"hvFloatEnv":{
+		"prefix":"hvFloatEnv",
+		"body":[
+			"\\begin{hvFloatEnv}",
+				"\t$1",
 			"\\end{hvFloatEnv}"
 		]
 	}

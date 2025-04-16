@@ -9,14 +9,6 @@
 	},
 
 
-	"chordscheme":{
-		"prefix":"chordscheme",
-		"body":[
-			"\\chordscheme[${1:options%keyvals}]"
-		]
-	},
-
-
 	"scales":{
 		"prefix":"scales",
 		"body":[
@@ -25,15 +17,7 @@
 	},
 
 
-	"scales":{
-		"prefix":"scales",
-		"body":[
-			"\\scales[${1:options%keyvals}]"
-		]
-	},
-
-
-	"setfingering":{
+	"setfingering{}{}{}":{
 		"prefix":"setfingering",
 		"body":[
 			"\\setfingering{${1:name}}{${2:fingers}}{${3:roots}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"setchordscheme":{
+	"setchordscheme{}":{
 		"prefix":"setchordscheme",
 		"body":[
 			"\\setchordscheme{${1:options%keyvals}}"
@@ -77,6 +61,22 @@
 		"prefix":"mutedstring",
 		"body":[
 			"\\mutedstring"
+		]
+	},
+
+
+	"chordscheme[]":{
+		"prefix":"chordscheme",
+		"body":[
+			"\\chordscheme[${1:options%keyvals}]"
+		]
+	},
+
+
+	"scales[]":{
+		"prefix":"scales",
+		"body":[
+			"\\scales[${1:options%keyvals}]"
 		]
 	}
 }

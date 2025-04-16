@@ -9,7 +9,7 @@
 	},
 
 
-	"regfield":{
+	"regfield{}{}{}{}":{
 		"prefix":"regfield",
 		"body":[
 			"\\regfield{${1:name}}{${2:length%plain}}{${3:start bit}}{${4:reset value}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"regfieldb":{
+	"regfieldb{}{}{}":{
 		"prefix":"regfieldb",
 		"body":[
 			"\\regfieldb{${1:name}}{${2:length%plain}}{${3:start bit}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"regbits":{
+	"regbits{}{}{}":{
 		"prefix":"regbits",
 		"body":[
 			"\\regbits{${1:name}}{${2:length%plain}}{${3:reset value}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"reglabel":{
+	"reglabel{}":{
 		"prefix":"reglabel",
 		"body":[
 			"\\reglabel{${1:reset label}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"reglabelb":{
+	"reglabelb{}":{
 		"prefix":"reglabelb",
 		"body":[
 			"\\reglabelb{${1:reset label}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"TR":{
+	"TR{}":{
 		"prefix":"TR",
 		"body":[
 			"\\TR{${1:flag}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"GetTRPageRef":{
+	"GetTRPageRef{}":{
 		"prefix":"GetTRPageRef",
 		"body":[
 			"\\GetTRPageRef{${1:key}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"TRleftlabel":{
+	"TRleftlabel{}":{
 		"prefix":"TRleftlabel",
 		"body":[
 			"\\TRleftlabel{${1:label}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"TRrightlabel":{
+	"TRrightlabel{}":{
 		"prefix":"TRrightlabel",
 		"body":[
 			"\\TRrightlabel{${1:label}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"TRwriteout":{
+	"TRwriteout{}":{
 		"prefix":"TRwriteout",
 		"body":[
 			"\\TRwriteout{${1:text}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"regFiller":{
+	"regFiller{}":{
 		"prefix":"regFiller",
 		"body":[
 			"\\regFiller{${1:arg}}"
@@ -217,7 +217,7 @@
 	},
 
 
-	"regMakeFieldName":{
+	"regMakeFieldName{}":{
 		"prefix":"regMakeFieldName",
 		"body":[
 			"\\regMakeFieldName{${1:name}}"
@@ -289,7 +289,7 @@
 	},
 
 
-	"regSpreadaux":{
+	"regSpreadaux{}{}":{
 		"prefix":"regSpreadaux",
 		"body":[
 			"\\regSpreadaux{${1:arg1}}{${2:arg2}}"
@@ -297,7 +297,7 @@
 	},
 
 
-	"regSpread":{
+	"regSpread{}":{
 		"prefix":"regSpread",
 		"body":[
 			"\\regSpread{${1:arg}}"
@@ -337,7 +337,7 @@
 	},
 
 
-	"regfieldColor":{
+	"regfieldColor{}{}{}{}{}":{
 		"prefix":"regfieldColor",
 		"body":[
 			"\\regfieldColor{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
@@ -345,7 +345,7 @@
 	},
 
 
-	"regfieldNoColor":{
+	"regfieldNoColor{}{}{}{}":{
 		"prefix":"regfieldNoColor",
 		"body":[
 			"\\regfieldNoColor{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -353,7 +353,7 @@
 	},
 
 
-	"regfieldbColor":{
+	"regfieldbColor{}{}{}{}":{
 		"prefix":"regfieldbColor",
 		"body":[
 			"\\regfieldbColor{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -361,7 +361,7 @@
 	},
 
 
-	"regfieldbNoColor":{
+	"regfieldbNoColor{}{}{}":{
 		"prefix":"regfieldbNoColor",
 		"body":[
 			"\\regfieldbNoColor{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -369,7 +369,7 @@
 	},
 
 
-	"regspace":{
+	"regspace{}":{
 		"prefix":"regspace",
 		"body":[
 			"\\regspace{${1:bit width}}"
@@ -401,7 +401,7 @@
 	},
 
 
-	"typesetRegBits":{
+	"typesetRegBits{}":{
 		"prefix":"typesetRegBits",
 		"body":[
 			"\\typesetRegBits{${1:arg1}}"
@@ -409,7 +409,7 @@
 	},
 
 
-	"typesetRegColorBits":{
+	"typesetRegColorBits{}{}":{
 		"prefix":"typesetRegColorBits",
 		"body":[
 			"\\typesetRegColorBits{${1:arg1}}{${2:arg2}}"
@@ -417,7 +417,7 @@
 	},
 
 
-	"typesetRegColorReset":{
+	"typesetRegColorReset{}{}":{
 		"prefix":"typesetRegColorReset",
 		"body":[
 			"\\typesetRegColorReset{${1:arg1}}{${2:arg2}}"
@@ -425,7 +425,7 @@
 	},
 
 
-	"typesetRegReset":{
+	"typesetRegReset{}":{
 		"prefix":"typesetRegReset",
 		"body":[
 			"\\typesetRegReset{${1:arg1}}"
@@ -437,27 +437,17 @@
 		"prefix":"register",
 		"body":[
 			"\\begin{register}",
-			"\t$1",
+				"\t$1",
 			"\\end{register}"
 		]
 	},
 
 
-	"reglist":{
-		"prefix":"reglist",
-		"body":[
-			"\\begin{reglist}",
-			"\t$1",
-			"\\end{reglist}"
-		]
-	},
-
-
 	"register*":{
-		"prefix":"register*",
+		"prefix":"register",
 		"body":[
 			"\\begin{register*}",
-			"\t$1",
+				"\t$1",
 			"\\end{register*}"
 		]
 	},
@@ -467,8 +457,18 @@
 		"prefix":"regdesc",
 		"body":[
 			"\\begin{regdesc}",
-			"\t$1",
+				"\t$1",
 			"\\end{regdesc}"
+		]
+	},
+
+
+	"reglist":{
+		"prefix":"reglist",
+		"body":[
+			"\\begin{reglist}",
+				"\t$1",
+			"\\end{reglist}"
 		]
 	}
 }

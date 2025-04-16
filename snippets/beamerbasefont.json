@@ -1,7 +1,7 @@
 {
 
 
-	"setbeamerfont":{
+	"setbeamerfont{}{}":{
 		"prefix":"setbeamerfont",
 		"body":[
 			"\\setbeamerfont{${1:beamer-font name}}{${2:attributes%keyvals}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"setbeamerfont*":{
-		"prefix":"setbeamerfont*",
-		"body":[
-			"\\setbeamerfont*{${1:beamer-font name}}{${2:attributes%keyvals}}"
-		]
-	},
-
-
-	"usebeamerfont":{
+	"usebeamerfont{}":{
 		"prefix":"usebeamerfont",
 		"body":[
 			"\\usebeamerfont{${1:beamer-font name}}"
-		]
-	},
-
-
-	"usebeamerfont*":{
-		"prefix":"usebeamerfont*",
-		"body":[
-			"\\usebeamerfont*{${1:beamer-font name}}"
 		]
 	},
 
@@ -45,6 +29,22 @@
 		"prefix":"TINY",
 		"body":[
 			"\\TINY"
+		]
+	},
+
+
+	"setbeamerfont*{}{}":{
+		"prefix":"*setbeamerfont",
+		"body":[
+			"\\setbeamerfont*{${1:beamer-font name}}{${2:attributes%keyvals}}"
+		]
+	},
+
+
+	"usebeamerfont*{}":{
+		"prefix":"*usebeamerfont",
+		"body":[
+			"\\usebeamerfont*{${1:beamer-font name}}"
 		]
 	}
 }

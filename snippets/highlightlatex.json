@@ -9,7 +9,7 @@
 	},
 
 
-	"updatehighlight":{
+	"updatehighlight{}":{
 		"prefix":"updatehighlight",
 		"body":[
 			"\\updatehighlight{${1:highlight rules%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"useblock":{
+	"useblock{}":{
 		"prefix":"useblock",
 		"body":[
 			"\\useblock{${1:name}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"consumeblock":{
+	"consumeblock{}":{
 		"prefix":"consumeblock",
 		"body":[
 			"\\consumeblock{${1:name}}"
@@ -37,7 +37,7 @@
 		"prefix":"highlightblock",
 		"body":[
 			"\\begin{highlightblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{highlightblock}"
 		]
 	},
@@ -47,8 +47,18 @@
 		"prefix":"saveblock",
 		"body":[
 			"\\begin{saveblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{saveblock}"
+		]
+	},
+
+
+	"highlightblock":{
+		"prefix":"highlightblock",
+		"body":[
+			"\\begin{highlightblock}",
+				"\t$1",
+			"\\end{highlightblock}"
 		]
 	}
 }

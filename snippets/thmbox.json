@@ -1,26 +1,10 @@
 {
 
 
-	"thmboxoptions":{
+	"thmboxoptions{}":{
 		"prefix":"thmboxoptions",
 		"body":[
 			"\\thmboxoptions{${1:options%keyvals}}"
-		]
-	},
-
-
-	"newtheorem":{
-		"prefix":"newtheorem",
-		"body":[
-			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}"
-		]
-	},
-
-
-	"newtheorem":{
-		"prefix":"newtheorem",
-		"body":[
-			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}[${4:within}]"
 		]
 	},
 
@@ -41,12 +25,18 @@
 	},
 
 
-	"leftbar":{
-		"prefix":"leftbar",
+	"newtheorem[]{}{}":{
+		"prefix":"newtheorem",
 		"body":[
-			"\\begin{leftbar}",
-			"\t$1",
-			"\\end{leftbar}"
+			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}"
+		]
+	},
+
+
+	"newtheorem[]{}{}[]":{
+		"prefix":"newtheorem",
+		"body":[
+			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}[${4:within}]"
 		]
 	},
 
@@ -55,18 +45,18 @@
 		"prefix":"thmbox",
 		"body":[
 			"\\begin{thmbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{thmbox}"
 		]
 	},
 
 
-	"example":{
-		"prefix":"example",
+	"leftbar":{
+		"prefix":"leftbar",
 		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
+			"\\begin{leftbar}",
+				"\t$1",
+			"\\end{leftbar}"
 		]
 	},
 
@@ -75,8 +65,58 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
 			"\\end{proof}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"thmbox":{
+		"prefix":"thmbox",
+		"body":[
+			"\\begin{thmbox}",
+				"\t$1",
+			"\\end{thmbox}"
+		]
+	},
+
+
+	"leftbar":{
+		"prefix":"leftbar",
+		"body":[
+			"\\begin{leftbar}",
+				"\t$1",
+			"\\end{leftbar}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
 		]
 	}
 }

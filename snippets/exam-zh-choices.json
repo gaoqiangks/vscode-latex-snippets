@@ -1,7 +1,7 @@
 {
 
 
-	"setchoices":{
+	"setchoices{}":{
 		"prefix":"setchoices",
 		"body":[
 			"\\setchoices{${1:键值列表%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"AddChoicesCounter":{
+	"AddChoicesCounter{}{}":{
 		"prefix":"AddChoicesCounter",
 		"body":[
 			"\\AddChoicesCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
@@ -21,7 +21,17 @@
 		"prefix":"choices",
 		"body":[
 			"\\begin{choices}",
-			"\t$1",
+				"\t$1",
+			"\\end{choices}"
+		]
+	},
+
+
+	"choices":{
+		"prefix":"choices",
+		"body":[
+			"\\begin{choices}",
+				"\t$1",
 			"\\end{choices}"
 		]
 	}

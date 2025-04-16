@@ -1,7 +1,7 @@
 {
 
 
-	"figcontent":{
+	"figcontent{}":{
 		"prefix":"figcontent",
 		"body":[
 			"\\figcontent{${1:code}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"figpdf":{
+	"figpdf{}":{
 		"prefix":"figpdf",
 		"body":[
 			"\\figpdf{${1:file}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"figpdf":{
-		"prefix":"figpdf",
-		"body":[
-			"\\figpdf[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"figpageside":{
+	"figpageside{}":{
 		"prefix":"figpageside",
 		"body":[
 			"\\figpageside{${1:option%keyvals}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"figplacement":{
+	"figplacement{}":{
 		"prefix":"figplacement",
 		"body":[
 			"\\figplacement{${1:position%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"figcapmaxheight":{
+	"figcapmaxheight{}":{
 		"prefix":"figcapmaxheight",
 		"body":[
 			"\\figcapmaxheight{${1:length}}"
@@ -65,14 +57,6 @@
 	},
 
 
-	"FlushAllFullPageFigures":{
-		"prefix":"FlushAllFullPageFigures",
-		"body":[
-			"\\FlushAllFullPageFigures[${1:clear cmd}]"
-		]
-	},
-
-
 	"phffpfFloatBarrier":{
 		"prefix":"phffpfFloatBarrier",
 		"body":[
@@ -81,11 +65,37 @@
 	},
 
 
+	"figpdf[]{}":{
+		"prefix":"figpdf",
+		"body":[
+			"\\figpdf[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"FlushAllFullPageFigures[]":{
+		"prefix":"FlushAllFullPageFigures",
+		"body":[
+			"\\FlushAllFullPageFigures[${1:clear cmd}]"
+		]
+	},
+
+
 	"fullpagefigure":{
 		"prefix":"fullpagefigure",
 		"body":[
 			"\\begin{fullpagefigure}",
-			"\t$1",
+				"\t$1",
+			"\\end{fullpagefigure}"
+		]
+	},
+
+
+	"fullpagefigure":{
+		"prefix":"fullpagefigure",
+		"body":[
+			"\\begin{fullpagefigure}",
+				"\t$1",
 			"\\end{fullpagefigure}"
 		]
 	}

@@ -1,34 +1,10 @@
 {
 
 
-	"stubs":{
+	"stubs{}{}":{
 		"prefix":"stubs",
 		"body":[
 			"\\stubs{${1:width}}{${2:text front%text}}"
-		]
-	},
-
-
-	"stubs":{
-		"prefix":"stubs",
-		"body":[
-			"\\stubs{${1:width}}[${3:text back%text}]{${2:text front%text}}"
-		]
-	},
-
-
-	"stubs":{
-		"prefix":"stubs",
-		"body":[
-			"\\stubs[${3:number}]{${1:width}}{${2:text front%text}}"
-		]
-	},
-
-
-	"stubs":{
-		"prefix":"stubs",
-		"body":[
-			"\\stubs[${3:number}]{${1:width}}[${4:text back%text}]{${2:text front%text}}"
 		]
 	},
 
@@ -53,6 +29,30 @@
 		"prefix":"stubbmargin",
 		"body":[
 			"\\stubbmargin"
+		]
+	},
+
+
+	"stubs{}[]{}":{
+		"prefix":"stubs",
+		"body":[
+			"\\stubs{${1:width}}[${3:text back%text}]{${2:text front%text}}"
+		]
+	},
+
+
+	"stubs[]{}{}":{
+		"prefix":"stubs",
+		"body":[
+			"\\stubs[${3:number}]{${1:width}}{${2:text front%text}}"
+		]
+	},
+
+
+	"stubs[]{}[]{}":{
+		"prefix":"stubs",
+		"body":[
+			"\\stubs[${3:number}]{${1:width}}[${4:text back%text}]{${2:text front%text}}"
 		]
 	}
 }

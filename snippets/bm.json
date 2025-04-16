@@ -1,7 +1,7 @@
 {
 
 
-	"bm":{
+	"bm{}":{
 		"prefix":"bm",
 		"body":[
 			"\\bm{${1:math expression}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"hm":{
+	"hm{}":{
 		"prefix":"hm",
 		"body":[
 			"\\hm{${1:math expression}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"bmdefine":{
+	"bmdefine{}{}":{
 		"prefix":"bmdefine",
 		"body":[
 			"\\bmdefine{${1:cmd}}{${2:def}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"hmdefine":{
+	"hmdefine{}{}":{
 		"prefix":"hmdefine",
 		"body":[
 			"\\hmdefine{${1:cmd}}{${2:def}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"boldsymbol":{
+	"boldsymbol{}":{
 		"prefix":"boldsymbol",
 		"body":[
 			"\\boldsymbol{${1:math expression}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"heavysymbol":{
+	"heavysymbol{}":{
 		"prefix":"heavysymbol",
 		"body":[
 			"\\heavysymbol{${1:math expression}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"DeclareBoldMathCommand":{
-		"prefix":"DeclareBoldMathCommand",
-		"body":[
-			"\\DeclareBoldMathCommand[${3:math version%keyvals}]{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"DeclareBoldMathCommand":{
+	"DeclareBoldMathCommand{}{}":{
 		"prefix":"DeclareBoldMathCommand",
 		"body":[
 			"\\DeclareBoldMathCommand{${1:cmd}}{${2:def}}"
@@ -77,6 +69,14 @@
 		"prefix":"hmmax",
 		"body":[
 			"\\hmmax"
+		]
+	},
+
+
+	"DeclareBoldMathCommand[]{}{}":{
+		"prefix":"DeclareBoldMathCommand",
+		"body":[
+			"\\DeclareBoldMathCommand[${3:math version%keyvals}]{${1:cmd}}{${2:def}}"
 		]
 	}
 }

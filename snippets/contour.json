@@ -1,7 +1,7 @@
 {
 
 
-	"contour":{
+	"contour{}{}":{
 		"prefix":"contour",
 		"body":[
 			"\\contour{${1:color}}{${2:text}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"contour*":{
-		"prefix":"contour*",
-		"body":[
-			"\\contour*{${1:color}}{${2:text}}"
-		]
-	},
-
-
-	"contour":{
-		"prefix":"contour",
-		"body":[
-			"\\contour[${3:number}]{${1:color}}{${2:text}}"
-		]
-	},
-
-
-	"contourlength":{
+	"contourlength{}":{
 		"prefix":"contourlength",
 		"body":[
 			"\\contourlength{${1:length}}"
@@ -33,10 +17,26 @@
 	},
 
 
-	"contournumber":{
+	"contournumber{}":{
 		"prefix":"contournumber",
 		"body":[
 			"\\contournumber{${1:number}}"
+		]
+	},
+
+
+	"contour*{}{}":{
+		"prefix":"*contour",
+		"body":[
+			"\\contour*{${1:color}}{${2:text}}"
+		]
+	},
+
+
+	"contour[]{}{}":{
+		"prefix":"contour",
+		"body":[
+			"\\contour[${3:number}]{${1:color}}{${2:text}}"
 		]
 	}
 }

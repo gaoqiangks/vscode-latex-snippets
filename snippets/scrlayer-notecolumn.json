@@ -1,7 +1,7 @@
 {
 
 
-	"DeclareNoteColumn":{
+	"DeclareNoteColumn{}":{
 		"prefix":"DeclareNoteColumn",
 		"body":[
 			"\\DeclareNoteColumn{${1:note-column name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"DeclareNoteColumn":{
-		"prefix":"DeclareNoteColumn",
-		"body":[
-			"\\DeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
-	},
-
-
-	"DeclareNewNoteColumn":{
+	"DeclareNewNoteColumn{}":{
 		"prefix":"DeclareNewNoteColumn",
 		"body":[
 			"\\DeclareNewNoteColumn{${1:note-column name}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"DeclareNewNoteColumn":{
-		"prefix":"DeclareNewNoteColumn",
-		"body":[
-			"\\DeclareNewNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
-	},
-
-
-	"ProvideNoteColumn":{
+	"ProvideNoteColumn{}":{
 		"prefix":"ProvideNoteColumn",
 		"body":[
 			"\\ProvideNoteColumn{${1:note-column name}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"ProvideNoteColumn":{
-		"prefix":"ProvideNoteColumn",
-		"body":[
-			"\\ProvideNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
-	},
-
-
-	"RedeclareNoteColumn":{
+	"RedeclareNoteColumn{}":{
 		"prefix":"RedeclareNoteColumn",
 		"body":[
 			"\\RedeclareNoteColumn{${1:note-column name}}"
@@ -57,42 +33,10 @@
 	},
 
 
-	"RedeclareNoteColumn":{
-		"prefix":"RedeclareNoteColumn",
-		"body":[
-			"\\RedeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
-	},
-
-
-	"makenote":{
+	"makenote{}":{
 		"prefix":"makenote",
 		"body":[
 			"\\makenote{${1:note%text}}"
-		]
-	},
-
-
-	"makenote":{
-		"prefix":"makenote",
-		"body":[
-			"\\makenote[${2:note-column name}]{${1:note%text}}"
-		]
-	},
-
-
-	"makenote*":{
-		"prefix":"makenote*",
-		"body":[
-			"\\makenote*{${1:note%text}}"
-		]
-	},
-
-
-	"makenote*":{
-		"prefix":"makenote*",
-		"body":[
-			"\\makenote*[${2:note-column name}]{${1:note%text}}"
 		]
 	},
 
@@ -113,26 +57,10 @@
 	},
 
 
-	"clearnotecolumn":{
-		"prefix":"clearnotecolumn",
-		"body":[
-			"\\clearnotecolumn[${1:note-column name}]"
-		]
-	},
-
-
 	"clearnotecolumns":{
 		"prefix":"clearnotecolumns",
 		"body":[
 			"\\clearnotecolumns"
-		]
-	},
-
-
-	"clearnotecolumns":{
-		"prefix":"clearnotecolumns",
-		"body":[
-			"\\clearnotecolumns[${1:note-column name list}]"
 		]
 	},
 
@@ -145,14 +73,6 @@
 	},
 
 
-	"syncwithnotecolumn":{
-		"prefix":"syncwithnotecolumn",
-		"body":[
-			"\\syncwithnotecolumn[${1:note-column name}]"
-		]
-	},
-
-
 	"syncwithnotecolumns":{
 		"prefix":"syncwithnotecolumns",
 		"body":[
@@ -161,7 +81,87 @@
 	},
 
 
-	"syncwithnotecolumns":{
+	"makenote*{}":{
+		"prefix":"*makenote",
+		"body":[
+			"\\makenote*{${1:note%text}}"
+		]
+	},
+
+
+	"makenote*[]{}":{
+		"prefix":"*makenote",
+		"body":[
+			"\\makenote*[${2:note-column name}]{${1:note%text}}"
+		]
+	},
+
+
+	"DeclareNoteColumn[]{}":{
+		"prefix":"DeclareNoteColumn",
+		"body":[
+			"\\DeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
+		]
+	},
+
+
+	"DeclareNewNoteColumn[]{}":{
+		"prefix":"DeclareNewNoteColumn",
+		"body":[
+			"\\DeclareNewNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
+		]
+	},
+
+
+	"ProvideNoteColumn[]{}":{
+		"prefix":"ProvideNoteColumn",
+		"body":[
+			"\\ProvideNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
+		]
+	},
+
+
+	"RedeclareNoteColumn[]{}":{
+		"prefix":"RedeclareNoteColumn",
+		"body":[
+			"\\RedeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
+		]
+	},
+
+
+	"makenote[]{}":{
+		"prefix":"makenote",
+		"body":[
+			"\\makenote[${2:note-column name}]{${1:note%text}}"
+		]
+	},
+
+
+	"clearnotecolumn[]":{
+		"prefix":"clearnotecolumn",
+		"body":[
+			"\\clearnotecolumn[${1:note-column name}]"
+		]
+	},
+
+
+	"clearnotecolumns[]":{
+		"prefix":"clearnotecolumns",
+		"body":[
+			"\\clearnotecolumns[${1:note-column name list}]"
+		]
+	},
+
+
+	"syncwithnotecolumn[]":{
+		"prefix":"syncwithnotecolumn",
+		"body":[
+			"\\syncwithnotecolumn[${1:note-column name}]"
+		]
+	},
+
+
+	"syncwithnotecolumns[]":{
 		"prefix":"syncwithnotecolumns",
 		"body":[
 			"\\syncwithnotecolumns[${1:note-column name list}]"

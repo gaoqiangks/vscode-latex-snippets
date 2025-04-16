@@ -1,7 +1,7 @@
 {
 
 
-	"headcommand":{
+	"headcommand{}":{
 		"prefix":"headcommand",
 		"body":[
 			"\\headcommand{${1:code}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"partentry":{
+	"partentry{}{}":{
 		"prefix":"partentry",
 		"body":[
 			"\\partentry{${1:arg1}}{${2:arg2}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"slideentry":{
+	"slideentry{}{}{}{}{}{}":{
 		"prefix":"slideentry",
 		"body":[
 			"\\slideentry{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"sectionentry":{
+	"sectionentry{}{}{}{}{}":{
 		"prefix":"sectionentry",
 		"body":[
 			"\\sectionentry{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"includegraphics<overlay specification>":{
+	"includegraphics<overlay specification>{}":{
 		"prefix":"includegraphics<overlay specification>",
 		"body":[
 			"\\includegraphics<overlay specification>{${1:imagefile}}"
@@ -89,15 +89,7 @@
 	},
 
 
-	"includegraphics<overlay specification>":{
-		"prefix":"includegraphics<overlay specification>",
-		"body":[
-			"\\includegraphics<overlay specification>[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"pgfuseimage<overlay specification>":{
+	"pgfuseimage<overlay specification>{}":{
 		"prefix":"pgfuseimage<overlay specification>",
 		"body":[
 			"\\pgfuseimage<overlay specification>{${1:image name}}"
@@ -105,18 +97,26 @@
 	},
 
 
-	"pgfimage<overlay specification>":{
+	"pgfimage<overlay specification>{}":{
 		"prefix":"pgfimage<overlay specification>",
 		"body":[
-			"\\pgfimage<overlay specification>[${2:options%keyvals}]{${1:imagefile}}"
+			"\\pgfimage<overlay specification>{${1:imagefile}}"
 		]
 	},
 
 
-	"pgfimage<overlay specification>":{
+	"includegraphics<overlay specification>[]{}":{
+		"prefix":"includegraphics<overlay specification>",
+		"body":[
+			"\\includegraphics<overlay specification>[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"pgfimage<overlay specification>[]{}":{
 		"prefix":"pgfimage<overlay specification>",
 		"body":[
-			"\\pgfimage<overlay specification>{${1:imagefile}}"
+			"\\pgfimage<overlay specification>[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	}
 }

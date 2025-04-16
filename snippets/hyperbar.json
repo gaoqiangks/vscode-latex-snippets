@@ -1,18 +1,10 @@
 {
 
 
-	"BarcodeField":{
+	"BarcodeField{}":{
 		"prefix":"BarcodeField",
 		"body":[
 			"\\BarcodeField{${1:label}}"
-		]
-	},
-
-
-	"BarcodeField":{
-		"prefix":"BarcodeField",
-		"body":[
-			"\\BarcodeField[${2:options%keyvals}]{${1:label}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"LayoutBarcodeField":{
+	"LayoutBarcodeField{}{}":{
 		"prefix":"LayoutBarcodeField",
 		"body":[
 			"\\LayoutBarcodeField{${1:arg1}}{${2:arg2}}"
@@ -41,10 +33,18 @@
 	},
 
 
-	"MakeBarcodeField":{
+	"MakeBarcodeField{}{}":{
 		"prefix":"MakeBarcodeField",
 		"body":[
 			"\\MakeBarcodeField{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"BarcodeField[]{}":{
+		"prefix":"BarcodeField",
+		"body":[
+			"\\BarcodeField[${2:options%keyvals}]{${1:label}}"
 		]
 	}
 }

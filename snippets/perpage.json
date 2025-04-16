@@ -1,18 +1,10 @@
 {
 
 
-	"MakePerPage":{
+	"MakePerPage{}":{
 		"prefix":"MakePerPage",
 		"body":[
 			"\\MakePerPage{${1:counter}}"
-		]
-	},
-
-
-	"MakePerPage":{
-		"prefix":"MakePerPage",
-		"body":[
-			"\\MakePerPage[${2:value}]{${1:counter}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"MakeSorted":{
+	"MakeSorted{}":{
 		"prefix":"MakeSorted",
 		"body":[
 			"\\MakeSorted{${1:counter}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"MakeSortedPerPage":{
+	"MakeSortedPerPage{}":{
 		"prefix":"MakeSortedPerPage",
 		"body":[
 			"\\MakeSortedPerPage{${1:counter}}"
@@ -49,18 +41,26 @@
 	},
 
 
-	"MakeSortedPerPage":{
-		"prefix":"MakeSortedPerPage",
+	"AddAbsoluteCounter{}":{
+		"prefix":"AddAbsoluteCounter",
 		"body":[
-			"\\MakeSortedPerPage[${2:value}]{${1:counter}}"
+			"\\AddAbsoluteCounter{${1:name}}"
 		]
 	},
 
 
-	"AddAbsoluteCounter":{
-		"prefix":"AddAbsoluteCounter",
+	"MakePerPage[]{}":{
+		"prefix":"MakePerPage",
 		"body":[
-			"\\AddAbsoluteCounter{${1:name}}"
+			"\\MakePerPage[${2:value}]{${1:counter}}"
+		]
+	},
+
+
+	"MakeSortedPerPage[]{}":{
+		"prefix":"MakeSortedPerPage",
+		"body":[
+			"\\MakeSortedPerPage[${2:value}]{${1:counter}}"
 		]
 	}
 }

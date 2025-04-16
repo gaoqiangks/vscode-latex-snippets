@@ -1,7 +1,7 @@
 {
 
 
-	"tikzmarkin":{
+	"tikzmarkin{}":{
 		"prefix":"tikzmarkin",
 		"body":[
 			"\\tikzmarkin{${1:marker-id}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"tikzmarkin":{
+	"tikzmarkin{}()()":{
 		"prefix":"tikzmarkin",
 		"body":[
 			"\\tikzmarkin{${1:marker-id}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
@@ -17,15 +17,7 @@
 	},
 
 
-	"tikzmarkin":{
-		"prefix":"tikzmarkin",
-		"body":[
-			"\\tikzmarkin[${2:options%keyvals}]{${1:marker-id}}"
-		]
-	},
-
-
-	"tikzmarkend":{
+	"tikzmarkend{}":{
 		"prefix":"tikzmarkend",
 		"body":[
 			"\\tikzmarkend{${1:marker-id}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"hfsetfillcolor":{
+	"hfsetfillcolor{}":{
 		"prefix":"hfsetfillcolor",
 		"body":[
 			"\\hfsetfillcolor{${1:color}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"hfsetbordercolor":{
+	"hfsetbordercolor{}":{
 		"prefix":"hfsetbordercolor",
 		"body":[
 			"\\hfsetbordercolor{${1:color}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"savepointas":{
+	"savepointas{}{}":{
 		"prefix":"savepointas",
 		"body":[
 			"\\savepointas{${1:name}}{${2:point}}"
@@ -105,10 +97,18 @@
 	},
 
 
-	"pgfsyspdfmark":{
+	"pgfsyspdfmark{}{}{}":{
 		"prefix":"pgfsyspdfmark",
 		"body":[
 			"\\pgfsyspdfmark{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		]
+	},
+
+
+	"tikzmarkin[]{}":{
+		"prefix":"tikzmarkin",
+		"body":[
+			"\\tikzmarkin[${2:options%keyvals}]{${1:marker-id}}"
 		]
 	}
 }

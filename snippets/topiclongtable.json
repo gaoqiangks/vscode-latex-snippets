@@ -49,14 +49,6 @@
 	},
 
 
-	"Topic":{
-		"prefix":"Topic",
-		"body":[
-			"\\Topic[${1:content}]"
-		]
-	},
-
-
 	"TopicLine":{
 		"prefix":"TopicLine",
 		"body":[
@@ -65,7 +57,7 @@
 	},
 
 
-	"TopicSetContinuationCode":{
+	"TopicSetContinuationCode{}":{
 		"prefix":"TopicSetContinuationCode",
 		"body":[
 			"\\TopicSetContinuationCode{${1:code}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"TopicSetVPos":{
+	"TopicSetVPos{}":{
 		"prefix":"TopicSetVPos",
 		"body":[
 			"\\TopicSetVPos{${1:vpos%keyvals}}"
@@ -81,10 +73,18 @@
 	},
 
 
-	"TopicSetWidth":{
+	"TopicSetWidth{}":{
 		"prefix":"TopicSetWidth",
 		"body":[
 			"\\TopicSetWidth{${1:width spec%keyvals}}"
+		]
+	},
+
+
+	"Topic[]":{
+		"prefix":"Topic",
+		"body":[
+			"\\Topic[${1:content}]"
 		]
 	},
 
@@ -93,7 +93,7 @@
 		"prefix":"topiclongtable",
 		"body":[
 			"\\begin{topiclongtable}",
-			"\t$1",
+				"\t$1",
 			"\\end{topiclongtable}"
 		]
 	}

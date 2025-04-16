@@ -1,7 +1,7 @@
 {
 
 
-	"Block":{
+	"Block{}":{
 		"prefix":"Block",
 		"body":[
 			"\\Block{${1:title}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"WideBlock":{
+	"WideBlock{}":{
 		"prefix":"WideBlock",
 		"body":[
 			"\\WideBlock{${1:content%text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"MapTOC":{
+	"MapTOC{}":{
 		"prefix":"MapTOC",
 		"body":[
 			"\\MapTOC{${1:text}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"MapBlockStartHook":{
+	"MapBlockStartHook{}":{
 		"prefix":"MapBlockStartHook",
 		"body":[
 			"\\MapBlockStartHook{${1:code}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"MapBlockTOC":{
+	"MapBlockTOC{}":{
 		"prefix":"MapBlockTOC",
 		"body":[
 			"\\MapBlockTOC{${1:text}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"defineLimapLanguage":{
+	"defineLimapLanguage{}{}{}{}{}":{
 		"prefix":"defineLimapLanguage",
 		"body":[
 			"\\defineLimapLanguage{${1:name}}{${2:continued}}{${3:continuing}}{${4:TOCname}}{${5:TOCpage}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"MapContinuingFormat":{
+	"MapContinuingFormat{}":{
 		"prefix":"MapContinuingFormat",
 		"body":[
 			"\\MapContinuingFormat{${1:text}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"MapContinuedFormat":{
+	"MapContinuedFormat{}":{
 		"prefix":"MapContinuedFormat",
 		"body":[
 			"\\MapContinuedFormat{${1:text}}"
@@ -209,22 +209,22 @@
 	},
 
 
-	"MapTabular":{
-		"prefix":"MapTabular",
-		"body":[
-			"\\begin{MapTabular}",
-			"\t$1",
-			"\\end{MapTabular}"
-		]
-	},
-
-
 	"Map":{
 		"prefix":"Map",
 		"body":[
 			"\\begin{Map}",
-			"\t$1",
+				"\t$1",
 			"\\end{Map}"
+		]
+	},
+
+
+	"MapTabular":{
+		"prefix":"MapTabular",
+		"body":[
+			"\\begin{MapTabular}",
+				"\t$1",
+			"\\end{MapTabular}"
 		]
 	}
 }

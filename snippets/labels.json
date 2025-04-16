@@ -81,15 +81,7 @@
 	},
 
 
-	"addresslabel":{
-		"prefix":"addresslabel",
-		"body":[
-			"\\addresslabel[${2:font commands}]{${1:text}}"
-		]
-	},
-
-
-	"addresslabel":{
+	"addresslabel{}":{
 		"prefix":"addresslabel",
 		"body":[
 			"\\addresslabel{${1:text}}"
@@ -105,15 +97,7 @@
 	},
 
 
-	"boxedaddresslabel":{
-		"prefix":"boxedaddresslabel",
-		"body":[
-			"\\boxedaddresslabel[${2:font commands}]{${1:text}}"
-		]
-	},
-
-
-	"boxedaddresslabel":{
+	"boxedaddresslabel{}":{
 		"prefix":"boxedaddresslabel",
 		"body":[
 			"\\boxedaddresslabel{${1:text}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"genericlabel":{
+	"genericlabel{}":{
 		"prefix":"genericlabel",
 		"body":[
 			"\\genericlabel{${1:text}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"labelfile":{
+	"labelfile{}":{
 		"prefix":"labelfile",
 		"body":[
 			"\\labelfile{${1:file}}"
@@ -241,7 +225,7 @@
 	},
 
 
-	"skiplabels":{
+	"skiplabels{}":{
 		"prefix":"skiplabels",
 		"body":[
 			"\\skiplabels{${1:integer}}"
@@ -265,11 +249,27 @@
 	},
 
 
+	"addresslabel[]{}":{
+		"prefix":"addresslabel",
+		"body":[
+			"\\addresslabel[${2:font commands}]{${1:text}}"
+		]
+	},
+
+
+	"boxedaddresslabel[]{}":{
+		"prefix":"boxedaddresslabel",
+		"body":[
+			"\\boxedaddresslabel[${2:font commands}]{${1:text}}"
+		]
+	},
+
+
 	"labels":{
 		"prefix":"labels",
 		"body":[
 			"\\begin{labels}",
-			"\t$1",
+				"\t$1",
 			"\\end{labels}"
 		]
 	}

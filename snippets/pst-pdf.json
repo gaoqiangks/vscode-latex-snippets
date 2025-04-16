@@ -9,7 +9,7 @@
 	},
 
 
-	"savepicture":{
+	"savepicture{}":{
 		"prefix":"savepicture",
 		"body":[
 			"\\savepicture{${1:name}}"
@@ -17,18 +17,10 @@
 	},
 
 
-	"usepicture":{
+	"usepicture{}":{
 		"prefix":"usepicture",
 		"body":[
 			"\\usepicture{${1:name}}"
-		]
-	},
-
-
-	"usepicture":{
-		"prefix":"usepicture",
-		"body":[
-			"\\usepicture[${2:options%keyvals}]{${1:name}}"
 		]
 	},
 
@@ -41,11 +33,29 @@
 	},
 
 
+	"usepicture[]{}":{
+		"prefix":"usepicture",
+		"body":[
+			"\\usepicture[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
 	"postscript":{
 		"prefix":"postscript",
 		"body":[
 			"\\begin{postscript}",
-			"\t$1",
+				"\t$1",
+			"\\end{postscript}"
+		]
+	},
+
+
+	"postscript":{
+		"prefix":"postscript",
+		"body":[
+			"\\begin{postscript}",
+				"\t$1",
 			"\\end{postscript}"
 		]
 	}

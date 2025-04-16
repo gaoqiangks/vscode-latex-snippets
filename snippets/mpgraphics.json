@@ -25,34 +25,10 @@
 	},
 
 
-	"NoProcess":{
-		"prefix":"NoProcess",
-		"body":[
-			"\\NoProcess[${1:ranges}]"
-		]
-	},
-
-
-	"configure":{
-		"prefix":"configure",
-		"body":[
-			"\\configure[${1:mpgraphic}][${2:keyvals}]"
-		]
-	},
-
-
-	"ArrayIterator":{
+	"ArrayIterator{}{}":{
 		"prefix":"ArrayIterator",
 		"body":[
 			"\\ArrayIterator{${1:array}}{${2:arg}}"
-		]
-	},
-
-
-	"Array":{
-		"prefix":"Array",
-		"body":[
-			"\\Array{${1:name}}[${3:length%plain}]{${2:arg}}"
 		]
 	},
 
@@ -73,7 +49,7 @@
 	},
 
 
-	"DeclareArray":{
+	"DeclareArray{}":{
 		"prefix":"DeclareArray",
 		"body":[
 			"\\DeclareArray{${1:name}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"MPDEFSverbatimwrite":{
+	"MPDEFSverbatimwrite{}":{
 		"prefix":"MPDEFSverbatimwrite",
 		"body":[
 			"\\MPDEFSverbatimwrite{${1:file}}"
@@ -121,7 +97,7 @@
 	},
 
 
-	"MPGverbatimwrite":{
+	"MPGverbatimwrite{}":{
 		"prefix":"MPGverbatimwrite",
 		"body":[
 			"\\MPGverbatimwrite{${1:file}}"
@@ -129,7 +105,7 @@
 	},
 
 
-	"NotIfFileExists":{
+	"NotIfFileExists{}{}":{
 		"prefix":"NotIfFileExists",
 		"body":[
 			"\\NotIfFileExists{${1:file}}{${2:code}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"OnlyIfFileExists":{
+	"OnlyIfFileExists{}{}":{
 		"prefix":"OnlyIfFileExists",
 		"body":[
 			"\\OnlyIfFileExists{${1:file}}{${2:code}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"addToArray":{
+	"addToArray{}{}":{
 		"prefix":"addToArray",
 		"body":[
 			"\\addToArray{${1:array}}{${2:arg}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"clearArray":{
+	"clearArray{}":{
 		"prefix":"clearArray",
 		"body":[
 			"\\clearArray{${1:array}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"getArraylength":{
+	"getArraylength{}":{
 		"prefix":"getArraylength",
 		"body":[
 			"\\getArraylength{${1:array}}"
@@ -257,12 +233,26 @@
 	},
 
 
-	"ltxpreamble":{
-		"prefix":"ltxpreamble",
+	"NoProcess[]":{
+		"prefix":"NoProcess",
 		"body":[
-			"\\begin{ltxpreamble}",
-			"\t$1",
-			"\\end{ltxpreamble}"
+			"\\NoProcess[${1:ranges}]"
+		]
+	},
+
+
+	"configure[][]":{
+		"prefix":"configure",
+		"body":[
+			"\\configure[${1:mpgraphic}][${2:keyvals}]"
+		]
+	},
+
+
+	"Array{}[]{}":{
+		"prefix":"Array",
+		"body":[
+			"\\Array{${1:name}}[${3:length%plain}]{${2:arg}}"
 		]
 	},
 
@@ -271,18 +261,8 @@
 		"prefix":"mpdisplay",
 		"body":[
 			"\\begin{mpdisplay}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpdisplay}"
-		]
-	},
-
-
-	"mpdefs":{
-		"prefix":"mpdefs",
-		"body":[
-			"\\begin{mpdefs}",
-			"\t$1",
-			"\\end{mpdefs}"
 		]
 	},
 
@@ -291,8 +271,28 @@
 		"prefix":"mpinline",
 		"body":[
 			"\\begin{mpinline}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpinline}"
+		]
+	},
+
+
+	"mpdefs":{
+		"prefix":"mpdefs",
+		"body":[
+			"\\begin{mpdefs}",
+				"\t$1",
+			"\\end{mpdefs}"
+		]
+	},
+
+
+	"ltxpreamble":{
+		"prefix":"ltxpreamble",
+		"body":[
+			"\\begin{ltxpreamble}",
+				"\t$1",
+			"\\end{ltxpreamble}"
 		]
 	}
 }

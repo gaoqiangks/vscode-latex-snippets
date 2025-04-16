@@ -1,7 +1,7 @@
 {
 
 
-	"rtpara":{
+	"rtpara{}{}":{
 		"prefix":"rtpara",
 		"body":[
 			"\\rtpara{${1:name%specialDef}}{${2:richtext paragraph%text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"rtpara":{
-		"prefix":"rtpara",
-		"body":[
-			"\\rtpara[${3:options%keyvals}]{${1:name%specialDef}}{${2:richtext paragraph%text}}"
-		]
-	},
-
-
-	"span":{
+	"span{}{}":{
 		"prefix":"span",
 		"body":[
 			"\\span{${1:options%keyvals}}{${2:richtext string%text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"useRV":{
+	"useRV{}":{
 		"prefix":"useRV",
 		"body":[
 			"\\useRV{${1:name%keyvals}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"useV":{
+	"useV{}":{
 		"prefix":"useV",
 		"body":[
 			"\\useV{${1:name%keyvals}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"sub":{
+	"sub{}":{
 		"prefix":"sub",
 		"body":[
 			"\\sub{${1:text}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"sup":{
+	"sup{}":{
 		"prefix":"sup",
 		"body":[
 			"\\sup{${1:text}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"RV":{
+	"RV{}":{
 		"prefix":"RV",
 		"body":[
 			"\\RV{${1:rich value}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"DS":{
+	"DS{}":{
 		"prefix":"DS",
 		"body":[
 			"\\DS{${1:default style}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"setDefaultStyle":{
+	"setDefaultStyle{}{}":{
 		"prefix":"setDefaultStyle",
 		"body":[
 			"\\setDefaultStyle{${1:name%specialDef}}{${2:options%keyvals}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"useDS":{
+	"useDS{}":{
 		"prefix":"useDS",
 		"body":[
 			"\\useDS{${1:name%keyvals}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"useRVContent":{
+	"useRVContent{}":{
 		"prefix":"useRVContent",
 		"body":[
 			"\\useRVContent{${1:name%keyvals}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"useVContent":{
+	"useVContent{}":{
 		"prefix":"useVContent",
 		"body":[
 			"\\useVContent{${1:name%keyvals}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"displayRV":{
+	"displayRV{}":{
 		"prefix":"displayRV",
 		"body":[
 			"\\displayRV{${1:name%keyvals}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"displayV":{
+	"displayV{}":{
 		"prefix":"displayV",
 		"body":[
 			"\\displayV{${1:name%keyvals}}"
@@ -209,10 +201,18 @@
 	},
 
 
-	"rvorvstring":{
+	"rvorvstring{}{}":{
 		"prefix":"rvorvstring",
 		"body":[
 			"\\rvorvstring{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"rtpara[]{}{}":{
+		"prefix":"rtpara",
+		"body":[
+			"\\rtpara[${3:options%keyvals}]{${1:name%specialDef}}{${2:richtext paragraph%text}}"
 		]
 	},
 
@@ -221,17 +221,17 @@
 		"prefix":"displayRtPara",
 		"body":[
 			"\\begin{displayRtPara}",
-			"\t$1",
+				"\t$1",
 			"\\end{displayRtPara}"
 		]
 	},
 
 
 	"displayRtPara*":{
-		"prefix":"displayRtPara*",
+		"prefix":"displayRtPara",
 		"body":[
 			"\\begin{displayRtPara*}",
-			"\t$1",
+				"\t$1",
 			"\\end{displayRtPara*}"
 		]
 	}

@@ -9,23 +9,7 @@
 	},
 
 
-	"setdo":{
-		"prefix":"setdo",
-		"body":[
-			"\\setdo[${2:digit}]{${1:do%definition}}"
-		]
-	},
-
-
-	"setdo":{
-		"prefix":"setdo",
-		"body":[
-			"\\setdo[${2:digit}][${3:default}]{${1:do%definition}}"
-		]
-	},
-
-
-	"DoWithAllOf":{
+	"DoWithAllOf{}{}":{
 		"prefix":"DoWithAllOf",
 		"body":[
 			"\\DoWithAllOf{${1:repeat}}{${2:<arg1><arg2>...<${3:argN}>}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"DoWithAllIn":{
+	"DoWithAllIn{}{}":{
 		"prefix":"DoWithAllIn",
 		"body":[
 			"\\DoWithAllIn{${1:repeat}}{${2:list macro}}"
@@ -61,6 +45,22 @@
 		"prefix":"PopLetterCatAt",
 		"body":[
 			"\\PopLetterCatAt"
+		]
+	},
+
+
+	"setdo[]{}":{
+		"prefix":"setdo",
+		"body":[
+			"\\setdo[${2:digit}]{${1:do%definition}}"
+		]
+	},
+
+
+	"setdo[][]{}":{
+		"prefix":"setdo",
+		"body":[
+			"\\setdo[${2:digit}][${3:default}]{${1:do%definition}}"
 		]
 	}
 }

@@ -1,26 +1,10 @@
 {
 
 
-	"DeclareLex":{
+	"DeclareLex{}{}":{
 		"prefix":"DeclareLex",
 		"body":[
 			"\\DeclareLex{${1:csname}}{${2:abbrev}}"
-		]
-	},
-
-
-	"DeclareLex":{
-		"prefix":"DeclareLex",
-		"body":[
-			"\\DeclareLex{${1:csname}}{${2:abbrev}}[${3:full name}]"
-		]
-	},
-
-
-	"DeclareLex":{
-		"prefix":"DeclareLex",
-		"body":[
-			"\\DeclareLex{${1:csname}}{${2:abbrev}}[${3:full name}][${4:alt}]"
 		]
 	},
 
@@ -105,7 +89,7 @@
 	},
 
 
-	"RenewLexShortcut":{
+	"RenewLexShortcut{}{}":{
 		"prefix":"RenewLexShortcut",
 		"body":[
 			"\\RenewLexShortcut{${1:shortcut}}{${2:redefinition}}"
@@ -113,15 +97,7 @@
 	},
 
 
-	"RenewLexShortcut":{
-		"prefix":"RenewLexShortcut",
-		"body":[
-			"\\RenewLexShortcut{${1:shortcut}}{${2:redefinition}}[${3:nomenclature}]"
-		]
-	},
-
-
-	"NewLexShortcut":{
+	"NewLexShortcut{}{}":{
 		"prefix":"NewLexShortcut",
 		"body":[
 			"\\NewLexShortcut{${1:shortcut}}{${2:definition}}"
@@ -129,15 +105,7 @@
 	},
 
 
-	"NewLexShortcut":{
-		"prefix":"NewLexShortcut",
-		"body":[
-			"\\NewLexShortcut{${1:shortcut}}{${2:definition}}[${3:nomenclature}]"
-		]
-	},
-
-
-	"LexRefPrefixTests":{
+	"LexRefPrefixTests{}":{
 		"prefix":"LexRefPrefixTests",
 		"body":[
 			"\\LexRefPrefixTests{${1:arg}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"LexRef":{
+	"LexRef{}{}":{
 		"prefix":"LexRef",
 		"body":[
 			"\\LexRef{${1:name}}{${2:art. num}}"
@@ -153,15 +121,7 @@
 	},
 
 
-	"LexRef":{
-		"prefix":"LexRef",
-		"body":[
-			"\\LexRef{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
-		]
-	},
-
-
-	"LexRefns":{
+	"LexRefns{}{}":{
 		"prefix":"LexRefns",
 		"body":[
 			"\\LexRefns{${1:name}}{${2:art. num}}"
@@ -169,15 +129,7 @@
 	},
 
 
-	"LexRefns":{
-		"prefix":"LexRefns",
-		"body":[
-			"\\LexRefns{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
-		]
-	},
-
-
-	"npLexRef":{
+	"npLexRef{}{}":{
 		"prefix":"npLexRef",
 		"body":[
 			"\\npLexRef{${1:name}}{${2:art. num}}"
@@ -185,15 +137,7 @@
 	},
 
 
-	"npLexRef":{
-		"prefix":"npLexRef",
-		"body":[
-			"\\npLexRef{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
-		]
-	},
-
-
-	"npLexRefns":{
+	"npLexRefns{}{}":{
 		"prefix":"npLexRefns",
 		"body":[
 			"\\npLexRefns{${1:name}}{${2:art. num}}"
@@ -201,15 +145,7 @@
 	},
 
 
-	"npLexRefns":{
-		"prefix":"npLexRefns",
-		"body":[
-			"\\npLexRefns{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
-		]
-	},
-
-
-	"LexIndex":{
+	"LexIndex{}{}{}":{
 		"prefix":"LexIndex",
 		"body":[
 			"\\LexIndex{${1:csname}}{${2:art. num}}{${3:abbrev}}"
@@ -217,7 +153,71 @@
 	},
 
 
-	"LexIndex":{
+	"DeclareLex{}{}[]":{
+		"prefix":"DeclareLex",
+		"body":[
+			"\\DeclareLex{${1:csname}}{${2:abbrev}}[${3:full name}]"
+		]
+	},
+
+
+	"DeclareLex{}{}[][]":{
+		"prefix":"DeclareLex",
+		"body":[
+			"\\DeclareLex{${1:csname}}{${2:abbrev}}[${3:full name}][${4:alt}]"
+		]
+	},
+
+
+	"RenewLexShortcut{}{}[]":{
+		"prefix":"RenewLexShortcut",
+		"body":[
+			"\\RenewLexShortcut{${1:shortcut}}{${2:redefinition}}[${3:nomenclature}]"
+		]
+	},
+
+
+	"NewLexShortcut{}{}[]":{
+		"prefix":"NewLexShortcut",
+		"body":[
+			"\\NewLexShortcut{${1:shortcut}}{${2:definition}}[${3:nomenclature}]"
+		]
+	},
+
+
+	"LexRef{}{}[][][]":{
+		"prefix":"LexRef",
+		"body":[
+			"\\LexRef{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
+		]
+	},
+
+
+	"LexRefns{}{}[][][]":{
+		"prefix":"LexRefns",
+		"body":[
+			"\\LexRefns{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
+		]
+	},
+
+
+	"npLexRef{}{}[][][]":{
+		"prefix":"npLexRef",
+		"body":[
+			"\\npLexRef{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
+		]
+	},
+
+
+	"npLexRefns{}{}[][][]":{
+		"prefix":"npLexRefns",
+		"body":[
+			"\\npLexRefns{${1:name}}{${2:art. num}}[${3:para num}][${4:num}][${5:letter}]"
+		]
+	},
+
+
+	"LexIndex{}{}[][][]{}":{
 		"prefix":"LexIndex",
 		"body":[
 			"\\LexIndex{${1:csname}}{${2:art. num}}[${4:para num}][${5:num}][${6:letter}]{${3:abbrev}}"

@@ -1,7 +1,7 @@
 {
 
 
-	"scr":{
+	"scr{}":{
 		"prefix":"scr",
 		"body":[
 			"\\scr{${1:text%plain}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mathrsfs":{
+	"mathrsfs{}":{
 		"prefix":"mathrsfs",
 		"body":[
 			"\\mathrsfs{${1:text%plain}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"vect":{
+	"vect{}":{
 		"prefix":"vect",
 		"body":[
 			"\\vect{${1:arg}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"angl":{
+	"angl{}":{
 		"prefix":"angl",
 		"body":[
 			"\\angl{${1:arg}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"frc":{
+	"frc{}{}":{
 		"prefix":"frc",
 		"body":[
 			"\\frc{${1:numerator}}{${2:denominator}}"
@@ -265,7 +265,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -305,7 +305,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -337,7 +337,7 @@
 	},
 
 
-	"frenchsetup":{
+	"frenchsetup{}":{
 		"prefix":"frenchsetup",
 		"body":[
 			"\\frenchsetup{${1:options%keyvals}}"
@@ -345,7 +345,7 @@
 	},
 
 
-	"frenchbsetup":{
+	"frenchbsetup{}":{
 		"prefix":"frenchbsetup",
 		"body":[
 			"\\frenchbsetup{${1:options%keyvals}}"
@@ -401,7 +401,7 @@
 	},
 
 
-	"bsc":{
+	"bsc{}":{
 		"prefix":"bsc",
 		"body":[
 			"\\bsc{${1:text}}"
@@ -681,15 +681,7 @@
 	},
 
 
-	"FBsetspaces":{
-		"prefix":"FBsetspaces",
-		"body":[
-			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
-		]
-	},
-
-
-	"FBsetspaces":{
+	"FBsetspaces{}{}{}{}":{
 		"prefix":"FBsetspaces",
 		"body":[
 			"\\FBsetspaces{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
@@ -801,7 +793,7 @@
 	},
 
 
-	"FBWarning":{
+	"FBWarning{}":{
 		"prefix":"FBWarning",
 		"body":[
 			"\\FBWarning{${1:message%text}}"
@@ -841,7 +833,7 @@
 	},
 
 
-	"frenchdate":{
+	"frenchdate{}{}{}":{
 		"prefix":"frenchdate",
 		"body":[
 			"\\frenchdate{${1:day}}{${2:month}}{${3:year}}"
@@ -849,7 +841,7 @@
 	},
 
 
-	"FrenchEnumerate":{
+	"FrenchEnumerate{}":{
 		"prefix":"FrenchEnumerate",
 		"body":[
 			"\\FrenchEnumerate{${1:arg}}"
@@ -889,7 +881,7 @@
 	},
 
 
-	"FrenchPopularEnumerate":{
+	"FrenchPopularEnumerate{}":{
 		"prefix":"FrenchPopularEnumerate",
 		"body":[
 			"\\FrenchPopularEnumerate{${1:arg}}"
@@ -969,7 +961,7 @@
 	},
 
 
-	"frquote":{
+	"frquote{}":{
 		"prefix":"frquote",
 		"body":[
 			"\\frquote{${1:text}}"
@@ -977,7 +969,7 @@
 	},
 
 
-	"fup":{
+	"fup{}":{
 		"prefix":"fup",
 		"body":[
 			"\\fup{${1:text}}"
@@ -1393,7 +1385,7 @@
 	},
 
 
-	"nombre":{
+	"nombre{}":{
 		"prefix":"nombre",
 		"body":[
 			"\\nombre{${1:arg}}"
@@ -1593,7 +1585,7 @@
 	},
 
 
-	"up":{
+	"up{}":{
 		"prefix":"up",
 		"body":[
 			"\\up{${1:text}}"
@@ -1609,12 +1601,10 @@
 	},
 
 
-	"enumerateFB":{
-		"prefix":"enumerateFB",
+	"FBsetspaces[]{}{}{}{}":{
+		"prefix":"FBsetspaces",
 		"body":[
-			"\\begin{enumerateFB}",
-			"\t$1",
-			"\\end{enumerateFB}"
+			"\\FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
 		]
 	},
 
@@ -1623,8 +1613,18 @@
 		"prefix":"descriptionFB",
 		"body":[
 			"\\begin{descriptionFB}",
-			"\t$1",
+				"\t$1",
 			"\\end{descriptionFB}"
+		]
+	},
+
+
+	"enumerateFB":{
+		"prefix":"enumerateFB",
+		"body":[
+			"\\begin{enumerateFB}",
+				"\t$1",
+			"\\end{enumerateFB}"
 		]
 	},
 
@@ -1633,7 +1633,7 @@
 		"prefix":"itemizeFB",
 		"body":[
 			"\\begin{itemizeFB}",
-			"\t$1",
+				"\t$1",
 			"\\end{itemizeFB}"
 		]
 	},
@@ -1643,7 +1643,7 @@
 		"prefix":"listFB",
 		"body":[
 			"\\begin{listFB}",
-			"\t$1",
+				"\t$1",
 			"\\end{listFB}"
 		]
 	},
@@ -1653,7 +1653,7 @@
 		"prefix":"listORI",
 		"body":[
 			"\\begin{listORI}",
-			"\t$1",
+				"\t$1",
 			"\\end{listORI}"
 		]
 	}

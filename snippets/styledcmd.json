@@ -1,7 +1,7 @@
 {
 
 
-	"newstyledcmd":{
+	"newstyledcmd{}{}{}":{
 		"prefix":"newstyledcmd",
 		"body":[
 			"\\newstyledcmd{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"newstyledcmd":{
-		"prefix":"newstyledcmd",
-		"body":[
-			"\\newstyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"renewstyledcmd":{
+	"renewstyledcmd{}{}{}":{
 		"prefix":"renewstyledcmd",
 		"body":[
 			"\\renewstyledcmd{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"renewstyledcmd":{
-		"prefix":"renewstyledcmd",
-		"body":[
-			"\\renewstyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"providestyledcmd":{
+	"providestyledcmd{}{}{}":{
 		"prefix":"providestyledcmd",
 		"body":[
 			"\\providestyledcmd{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"providestyledcmd":{
-		"prefix":"providestyledcmd",
-		"body":[
-			"\\providestyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"setGlobalStyle":{
+	"setGlobalStyle{}{}":{
 		"prefix":"setGlobalStyle",
 		"body":[
 			"\\setGlobalStyle{${1:cmd}}{${2:new style name}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"NewDocStyledCMD":{
+	"NewDocStyledCMD{}{}{}{}":{
 		"prefix":"NewDocStyledCMD",
 		"body":[
 			"\\NewDocStyledCMD{${1:cmd}}{${2:style name}}{${3:xargs}}{${4:definition}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"RenewDocStyledCMD":{
+	"RenewDocStyledCMD{}{}{}{}":{
 		"prefix":"RenewDocStyledCMD",
 		"body":[
 			"\\RenewDocStyledCMD{${1:cmd}}{${2:style name}}{${3:xargs}}{${4:definition}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"ProvideDocStyledCMD":{
+	"ProvideDocStyledCMD{}{}{}{}":{
 		"prefix":"ProvideDocStyledCMD",
 		"body":[
 			"\\ProvideDocStyledCMD{${1:cmd}}{${2:style name}}{${3:xargs}}{${4:definition}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"newstyledcmdExp":{
+	"newstyledcmdExp{}{}{}":{
 		"prefix":"newstyledcmdExp",
 		"body":[
 			"\\newstyledcmdExp{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -89,15 +65,7 @@
 	},
 
 
-	"newstyledcmdExp":{
-		"prefix":"newstyledcmdExp",
-		"body":[
-			"\\newstyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"renewstyledcmdExp":{
+	"renewstyledcmdExp{}{}{}":{
 		"prefix":"renewstyledcmdExp",
 		"body":[
 			"\\renewstyledcmdExp{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -105,15 +73,7 @@
 	},
 
 
-	"renewstyledcmdExp":{
-		"prefix":"renewstyledcmdExp",
-		"body":[
-			"\\renewstyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"providestyledcmdExp":{
+	"providestyledcmdExp{}{}{}":{
 		"prefix":"providestyledcmdExp",
 		"body":[
 			"\\providestyledcmdExp{${1:cmd}}{${2:style name}}{${3:definition}}"
@@ -121,15 +81,7 @@
 	},
 
 
-	"providestyledcmdExp":{
-		"prefix":"providestyledcmdExp",
-		"body":[
-			"\\providestyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
-		]
-	},
-
-
-	"AddCMDToGroup":{
+	"AddCMDToGroup{}{}":{
 		"prefix":"AddCMDToGroup",
 		"body":[
 			"\\AddCMDToGroup{${1:group name}}{${2:cmd1,cmd2,...}}"
@@ -137,10 +89,58 @@
 	},
 
 
-	"SetGroupStyle":{
+	"SetGroupStyle{}{}":{
 		"prefix":"SetGroupStyle",
 		"body":[
 			"\\SetGroupStyle{${1:group name}}{${2:style name}}"
+		]
+	},
+
+
+	"newstyledcmd{}{}[]{}":{
+		"prefix":"newstyledcmd",
+		"body":[
+			"\\newstyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"renewstyledcmd{}{}[]{}":{
+		"prefix":"renewstyledcmd",
+		"body":[
+			"\\renewstyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"providestyledcmd{}{}[]{}":{
+		"prefix":"providestyledcmd",
+		"body":[
+			"\\providestyledcmd{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"newstyledcmdExp{}{}[]{}":{
+		"prefix":"newstyledcmdExp",
+		"body":[
+			"\\newstyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"renewstyledcmdExp{}{}[]{}":{
+		"prefix":"renewstyledcmdExp",
+		"body":[
+			"\\renewstyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
+		]
+	},
+
+
+	"providestyledcmdExp{}{}[]{}":{
+		"prefix":"providestyledcmdExp",
+		"body":[
+			"\\providestyledcmdExp{${1:cmd}}{${2:style name}}[${4:args}]{${3:definition}}"
 		]
 	}
 }

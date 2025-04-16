@@ -1,7 +1,7 @@
 {
 
 
-	"keyindexfile":{
+	"keyindexfile{}":{
 		"prefix":"keyindexfile",
 		"body":[
 			"\\keyindexfile{${1:file}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"keyindexformat":{
+	"keyindexformat{}":{
 		"prefix":"keyindexformat",
 		"body":[
 			"\\keyindexformat{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"missingkeyindexformat":{
+	"missingkeyindexformat{}":{
 		"prefix":"missingkeyindexformat",
 		"body":[
 			"\\missingkeyindexformat{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"keyindexcommand":{
+	"keyindexcommand{}":{
 		"prefix":"keyindexcommand",
 		"body":[
 			"\\keyindexcommand{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"keyindexprint":{
+	"keyindexprint{}":{
 		"prefix":"keyindexprint",
 		"body":[
 			"\\keyindexprint{${1:key%plain}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"keyindexonly":{
+	"keyindexonly{}":{
 		"prefix":"keyindexonly",
 		"body":[
 			"\\keyindexonly{${1:key%plain}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"keyindexonly":{
-		"prefix":"keyindexonly",
-		"body":[
-			"\\keyindexonly[${2:index option}]{${1:key%plain}}"
-		]
-	},
-
-
-	"keyindex":{
+	"keyindex{}":{
 		"prefix":"keyindex",
 		"body":[
 			"\\keyindex{${1:key%plain}}"
@@ -65,18 +57,26 @@
 	},
 
 
-	"keyindex":{
-		"prefix":"keyindex",
+	"keyindexentry{}{}{}":{
+		"prefix":"keyindexentry",
 		"body":[
-			"\\keyindex[${2:index option}]{${1:key%plain}}"
+			"\\keyindexentry{${1:key%plain}}{${2:print text}}{${3:index text}}"
 		]
 	},
 
 
-	"keyindexentry":{
-		"prefix":"keyindexentry",
+	"keyindexonly[]{}":{
+		"prefix":"keyindexonly",
 		"body":[
-			"\\keyindexentry{${1:key%plain}}{${2:print text}}{${3:index text}}"
+			"\\keyindexonly[${2:index option}]{${1:key%plain}}"
+		]
+	},
+
+
+	"keyindex[]{}":{
+		"prefix":"keyindex",
+		"body":[
+			"\\keyindex[${2:index option}]{${1:key%plain}}"
 		]
 	}
 }

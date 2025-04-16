@@ -1,7 +1,7 @@
 {
 
 
-	"gprKeys":{
+	"gprKeys{}":{
 		"prefix":"gprKeys",
 		"body":[
 			"\\gprKeys{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"gprName":{
+	"gprName{}":{
 		"prefix":"gprName",
 		"body":[
 			"\\gprName{${1:name}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"gprName*":{
-		"prefix":"gprName*",
-		"body":[
-			"\\gprName*{${1:name}}"
-		]
-	},
-
-
-	"gprRef":{
+	"gprRef{}":{
 		"prefix":"gprRef",
 		"body":[
 			"\\gprRef{${1:name}}"
@@ -33,31 +25,7 @@
 	},
 
 
-	"gprRef":{
-		"prefix":"gprRef",
-		"body":[
-			"\\gprRef[${2:id}]{${1:name}}"
-		]
-	},
-
-
-	"gprRef*":{
-		"prefix":"gprRef*",
-		"body":[
-			"\\gprRef*{${1:name}}"
-		]
-	},
-
-
-	"gprRef*":{
-		"prefix":"gprRef*",
-		"body":[
-			"\\gprRef*[${2:id}]{${1:name}}"
-		]
-	},
-
-
-	"gprYear":{
+	"gprYear{}":{
 		"prefix":"gprYear",
 		"body":[
 			"\\gprYear{${1:year}}"
@@ -65,26 +33,10 @@
 	},
 
 
-	"gprYear*":{
-		"prefix":"gprYear*",
-		"body":[
-			"\\gprYear*{${1:year}}"
-		]
-	},
-
-
-	"gprYears":{
+	"gprYears{}":{
 		"prefix":"gprYears",
 		"body":[
 			"\\gprYears{${1:year range}}"
-		]
-	},
-
-
-	"gprYears*":{
-		"prefix":"gprYears*",
-		"body":[
-			"\\gprYears*{${1:year range}}"
 		]
 	},
 
@@ -161,11 +113,69 @@
 	},
 
 
+	"gprName*{}":{
+		"prefix":"*gprName",
+		"body":[
+			"\\gprName*{${1:name}}"
+		]
+	},
+
+
+	"gprRef*{}":{
+		"prefix":"*gprRef",
+		"body":[
+			"\\gprRef*{${1:name}}"
+		]
+	},
+
+
+	"gprRef*[]{}":{
+		"prefix":"*gprRef",
+		"body":[
+			"\\gprRef*[${2:id}]{${1:name}}"
+		]
+	},
+
+
+	"gprYear*{}":{
+		"prefix":"*gprYear",
+		"body":[
+			"\\gprYear*{${1:year}}"
+		]
+	},
+
+
+	"gprYears*{}":{
+		"prefix":"*gprYears",
+		"body":[
+			"\\gprYears*{${1:year range}}"
+		]
+	},
+
+
+	"gprRef[]{}":{
+		"prefix":"gprRef",
+		"body":[
+			"\\gprRef[${2:id}]{${1:name}}"
+		]
+	},
+
+
+	"gprProfile":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t$1",
+			"\\end{gprProfile}"
+		]
+	},
+
+
 	"gprProfile*":{
-		"prefix":"gprProfile*",
+		"prefix":"gprProfile",
 		"body":[
 			"\\begin{gprProfile*}",
-			"\t$1",
+				"\t$1",
 			"\\end{gprProfile*}"
 		]
 	},
@@ -175,8 +185,38 @@
 		"prefix":"gprProfile",
 		"body":[
 			"\\begin{gprProfile}",
-			"\t$1",
+				"\t$1",
 			"\\end{gprProfile}"
+		]
+	},
+
+
+	"gprProfile":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t$1",
+			"\\end{gprProfile}"
+		]
+	},
+
+
+	"gprProfile":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t$1",
+			"\\end{gprProfile}"
+		]
+	},
+
+
+	"gprProfile*":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile*}",
+				"\t$1",
+			"\\end{gprProfile*}"
 		]
 	}
 }

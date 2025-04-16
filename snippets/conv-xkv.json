@@ -1,7 +1,7 @@
 {
 
 
-	"cxkvsetkeys":{
+	"cxkvsetkeys{}{}":{
 		"prefix":"cxkvsetkeys",
 		"body":[
 			"\\cxkvsetkeys{${1:family}}{${2:keyval pairs}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"cxkvsetkeys":{
+	"cxkvsetkeys(){}{}":{
 		"prefix":"cxkvsetkeys",
 		"body":[
 			"\\cxkvsetkeys(${3:name}){${1:family}}{${2:keyval pairs}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"cxkvsetkeys":{
-		"prefix":"cxkvsetkeys",
-		"body":[
-			"\\cxkvsetkeys(${4:name})[${3:prefix}]{${1:family}}{${2:keyval pairs}}"
-		]
-	},
-
-
-	"cxkvsetkeys":{
-		"prefix":"cxkvsetkeys",
-		"body":[
-			"\\cxkvsetkeys(${5:name})[${3:prefix}]{${1:family}}[${4:na}]{${2:keyval pairs}}"
-		]
-	},
-
-
-	"DeclareDelimiter":{
+	"DeclareDelimiter{}{}":{
 		"prefix":"DeclareDelimiter",
 		"body":[
 			"\\DeclareDelimiter{${1:name}}{${2:delimiter}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"usekvdelim":{
+	"usekvdelim{}":{
 		"prefix":"usekvdelim",
 		"body":[
 			"\\usekvdelim{${1:name}}"
@@ -49,10 +33,26 @@
 	},
 
 
-	"cxkvSetup":{
+	"cxkvSetup{}":{
 		"prefix":"cxkvSetup",
 		"body":[
 			"\\cxkvSetup{${1:file}}"
+		]
+	},
+
+
+	"cxkvsetkeys()[]{}{}":{
+		"prefix":"cxkvsetkeys",
+		"body":[
+			"\\cxkvsetkeys(${4:name})[${3:prefix}]{${1:family}}{${2:keyval pairs}}"
+		]
+	},
+
+
+	"cxkvsetkeys()[]{}[]{}":{
+		"prefix":"cxkvsetkeys",
+		"body":[
+			"\\cxkvsetkeys(${5:name})[${3:prefix}]{${1:family}}[${4:na}]{${2:keyval pairs}}"
 		]
 	}
 }

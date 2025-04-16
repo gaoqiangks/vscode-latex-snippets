@@ -9,7 +9,7 @@
 	},
 
 
-	"point":{
+	"point{}{}{}":{
 		"prefix":"point",
 		"body":[
 			"\\point{${1:path1}}{${2:path2}}{${3:intersection}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"point":{
-		"prefix":"point",
-		"body":[
-			"\\point[${4:styles}]{${1:path1}}{${2:path2}}{${3:intersection}}"
-		]
-	},
-
-
-	"ruler":{
+	"ruler{}{}":{
 		"prefix":"ruler",
 		"body":[
 			"\\ruler{${1:point1}}{${2:point2}}"
@@ -33,26 +25,10 @@
 	},
 
 
-	"ruler":{
-		"prefix":"ruler",
-		"body":[
-			"\\ruler[${3:styles}]{${1:point1}}{${2:point2}}"
-		]
-	},
-
-
-	"compass":{
+	"compass{}{}":{
 		"prefix":"compass",
 		"body":[
 			"\\compass{${1:point1}}{${2:point2}}"
-		]
-	},
-
-
-	"compass":{
-		"prefix":"compass",
-		"body":[
-			"\\compass[${3:styles}]{${1:point1}}{${2:point2}}"
 		]
 	},
 
@@ -61,6 +37,30 @@
 		"prefix":"constrain",
 		"body":[
 			"\\constrain"
+		]
+	},
+
+
+	"point[]{}{}{}":{
+		"prefix":"point",
+		"body":[
+			"\\point[${4:styles}]{${1:path1}}{${2:path2}}{${3:intersection}}"
+		]
+	},
+
+
+	"ruler[]{}{}":{
+		"prefix":"ruler",
+		"body":[
+			"\\ruler[${3:styles}]{${1:point1}}{${2:point2}}"
+		]
+	},
+
+
+	"compass[]{}{}":{
+		"prefix":"compass",
+		"body":[
+			"\\compass[${3:styles}]{${1:point1}}{${2:point2}}"
 		]
 	}
 }

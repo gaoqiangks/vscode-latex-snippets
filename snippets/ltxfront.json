@@ -9,15 +9,7 @@
 	},
 
 
-	"accepted":{
-		"prefix":"accepted",
-		"body":[
-			"\\accepted[${2:optional text%text}]{${1:date}}"
-		]
-	},
-
-
-	"accepted":{
+	"accepted{}":{
 		"prefix":"accepted",
 		"body":[
 			"\\accepted{${1:date}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"affiliation":{
+	"affiliation{}":{
 		"prefix":"affiliation",
 		"body":[
 			"\\affiliation{${1:affiliation%text}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"altaffiliation":{
-		"prefix":"altaffiliation",
-		"body":[
-			"\\altaffiliation[${2:optional text%text}]{${1:affiliation%text}}"
-		]
-	},
-
-
-	"altaffiliation":{
+	"altaffiliation{}":{
 		"prefix":"altaffiliation",
 		"body":[
 			"\\altaffiliation{${1:affiliation%text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"collaboration":{
+	"collaboration{}":{
 		"prefix":"collaboration",
 		"body":[
 			"\\collaboration{${1:collaboration%text}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"doauthor":{
+	"doauthor{}{}{}":{
 		"prefix":"doauthor",
 		"body":[
 			"\\doauthor{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"eid":{
+	"eid{}":{
 		"prefix":"eid",
 		"body":[
 			"\\eid{${1:eid}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"email":{
-		"prefix":"email",
-		"body":[
-			"\\email[${2:optional text%text}]{${1:email address%URL}}"
-		]
-	},
-
-
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email address%URL}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"endpage":{
+	"endpage{}":{
 		"prefix":"endpage",
 		"body":[
 			"\\endpage{${1:endpage}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"firstname":{
+	"firstname{}":{
 		"prefix":"firstname",
 		"body":[
 			"\\firstname{${1:firstname}}"
@@ -121,15 +97,7 @@
 	},
 
 
-	"homepage":{
-		"prefix":"homepage",
-		"body":[
-			"\\homepage[${2:optional text%text}]{${1:URL}}"
-		]
-	},
-
-
-	"homepage":{
+	"homepage{}":{
 		"prefix":"homepage",
 		"body":[
 			"\\homepage{${1:URL}}"
@@ -137,7 +105,7 @@
 	},
 
 
-	"issuenumber":{
+	"issuenumber{}":{
 		"prefix":"issuenumber",
 		"body":[
 			"\\issuenumber{${1:number}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:word1; word2; ...%text}}"
@@ -161,7 +129,7 @@
 	},
 
 
-	"pacs":{
+	"pacs{}":{
 		"prefix":"pacs",
 		"body":[
 			"\\pacs{${1:PACS codes}}"
@@ -169,7 +137,7 @@
 	},
 
 
-	"preprint":{
+	"preprint{}":{
 		"prefix":"preprint",
 		"body":[
 			"\\preprint{${1:text%plain}}"
@@ -177,15 +145,7 @@
 	},
 
 
-	"published":{
-		"prefix":"published",
-		"body":[
-			"\\published[${2:optional text%text}]{${1:date}}"
-		]
-	},
-
-
-	"published":{
+	"published{}":{
 		"prefix":"published",
 		"body":[
 			"\\published{${1:date}}"
@@ -193,15 +153,7 @@
 	},
 
 
-	"received":{
-		"prefix":"received",
-		"body":[
-			"\\received[${2:optional text%text}]{${1:date}}"
-		]
-	},
-
-
-	"received":{
+	"received{}":{
 		"prefix":"received",
 		"body":[
 			"\\received{${1:date}}"
@@ -209,15 +161,7 @@
 	},
 
 
-	"revised":{
-		"prefix":"revised",
-		"body":[
-			"\\revised[${2:optional text%text}]{${1:date}}"
-		]
-	},
-
-
-	"revised":{
+	"revised{}":{
 		"prefix":"revised",
 		"body":[
 			"\\revised{${1:date}}"
@@ -225,7 +169,7 @@
 	},
 
 
-	"startpage":{
+	"startpage{}":{
 		"prefix":"startpage",
 		"body":[
 			"\\startpage{${1:startpage}}"
@@ -233,7 +177,7 @@
 	},
 
 
-	"surname":{
+	"surname{}":{
 		"prefix":"surname",
 		"body":[
 			"\\surname{${1:surname}}"
@@ -257,7 +201,7 @@
 	},
 
 
-	"volumenumber":{
+	"volumenumber{}":{
 		"prefix":"volumenumber",
 		"body":[
 			"\\volumenumber{${1:number}}"
@@ -265,10 +209,66 @@
 	},
 
 
-	"volumeyear":{
+	"volumeyear{}":{
 		"prefix":"volumeyear",
 		"body":[
 			"\\volumeyear{${1:year}}"
+		]
+	},
+
+
+	"accepted[]{}":{
+		"prefix":"accepted",
+		"body":[
+			"\\accepted[${2:optional text%text}]{${1:date}}"
+		]
+	},
+
+
+	"altaffiliation[]{}":{
+		"prefix":"altaffiliation",
+		"body":[
+			"\\altaffiliation[${2:optional text%text}]{${1:affiliation%text}}"
+		]
+	},
+
+
+	"email[]{}":{
+		"prefix":"email",
+		"body":[
+			"\\email[${2:optional text%text}]{${1:email address%URL}}"
+		]
+	},
+
+
+	"homepage[]{}":{
+		"prefix":"homepage",
+		"body":[
+			"\\homepage[${2:optional text%text}]{${1:URL}}"
+		]
+	},
+
+
+	"published[]{}":{
+		"prefix":"published",
+		"body":[
+			"\\published[${2:optional text%text}]{${1:date}}"
+		]
+	},
+
+
+	"received[]{}":{
+		"prefix":"received",
+		"body":[
+			"\\received[${2:optional text%text}]{${1:date}}"
+		]
+	},
+
+
+	"revised[]{}":{
+		"prefix":"revised",
+		"body":[
+			"\\revised[${2:optional text%text}]{${1:date}}"
 		]
 	}
 }

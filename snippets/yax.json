@@ -9,18 +9,10 @@
 	},
 
 
-	"setparameterlist":{
+	"setparameterlist{}{}":{
 		"prefix":"setparameterlist",
 		"body":[
 			"\\setparameterlist{${1:parameters}}{${2:keyvals}}"
-		]
-	},
-
-
-	"setparameterlist":{
-		"prefix":"setparameterlist",
-		"body":[
-			"\\setparameterlist{${1:parameters}}[${3:optional macro}]{${2:keyvals}}"
 		]
 	},
 
@@ -29,6 +21,14 @@
 		"prefix":"endval",
 		"body":[
 			"\\endval"
+		]
+	},
+
+
+	"setparameterlist{}[]{}":{
+		"prefix":"setparameterlist",
+		"body":[
+			"\\setparameterlist{${1:parameters}}[${3:optional macro}]{${2:keyvals}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"NiceDescribeMacro":{
+	"NiceDescribeMacro{}{}":{
 		"prefix":"NiceDescribeMacro",
 		"body":[
 			"\\NiceDescribeMacro{${1:macro%cmd}}{${2:parameters}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"NiceDescribeMacro":{
-		"prefix":"NiceDescribeMacro",
-		"body":[
-			"\\NiceDescribeMacro[${3:idx}]{${1:macro%cmd}}{${2:parameters}}"
-		]
-	},
-
-
-	"NiceDescribeEnv":{
+	"NiceDescribeEnv{}{}":{
 		"prefix":"NiceDescribeEnv",
 		"body":[
 			"\\NiceDescribeEnv{${1:envname}}{${2:parameters}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"NiceDescribeEnv":{
-		"prefix":"NiceDescribeEnv",
-		"body":[
-			"\\NiceDescribeEnv[${3:idx}]{${1:envname}}{${2:parameters}}"
-		]
-	},
-
-
-	"NiceDescribeCounter":{
+	"NiceDescribeCounter{}{}":{
 		"prefix":"NiceDescribeCounter",
 		"body":[
 			"\\NiceDescribeCounter{${1:counter}}{${2:qualifiers}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"NiceDescribeCounter":{
-		"prefix":"NiceDescribeCounter",
-		"body":[
-			"\\NiceDescribeCounter[${3:idx}]{${1:counter}}{${2:qualifiers}}"
-		]
-	},
-
-
-	"NiceDescribeKey":{
+	"NiceDescribeKey{}{}":{
 		"prefix":"NiceDescribeKey",
 		"body":[
 			"\\NiceDescribeKey{${1:keyname}}{${2:keyconfig}}"
@@ -57,15 +33,7 @@
 	},
 
 
-	"NiceDescribeKey":{
-		"prefix":"NiceDescribeKey",
-		"body":[
-			"\\NiceDescribeKey[${3:idx}]{${1:keyname}}{${2:keyconfig}}"
-		]
-	},
-
-
-	"NewNiceDescription":{
+	"NewNiceDescription{}{}{}{}":{
 		"prefix":"NewNiceDescription",
 		"body":[
 			"\\NewNiceDescription{${1:type}}{${2:efmt}}{${3:afmt}}{${4:icmd}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"SpecialOtherIndex":{
+	"SpecialOtherIndex{}{}{}":{
 		"prefix":"SpecialOtherIndex",
 		"body":[
 			"\\SpecialOtherIndex{${1:type}}{${2:types}}{${3:name}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"pkgname":{
+	"pkgname{}":{
 		"prefix":"pkgname",
 		"body":[
 			"\\pkgname{${1:package}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"pkgnames":{
+	"pkgnames{}":{
 		"prefix":"pkgnames",
 		"body":[
 			"\\pkgnames{${1:package1,package2,...}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"cmarg":{
+	"cmarg{}":{
 		"prefix":"cmarg",
 		"body":[
 			"\\cmarg{${1:arg}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"coarg":{
+	"coarg{}":{
 		"prefix":"coarg",
 		"body":[
 			"\\coarg{${1:arg}}"
@@ -289,7 +257,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -401,7 +369,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -425,32 +393,94 @@
 	},
 
 
-	"description*":{
-		"prefix":"description*",
+	"NiceDescribeMacro[]{}{}":{
+		"prefix":"NiceDescribeMacro",
 		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
+			"\\NiceDescribeMacro[${3:idx}]{${1:macro%cmd}}{${2:parameters}}"
+		]
+	},
+
+
+	"NiceDescribeEnv[]{}{}":{
+		"prefix":"NiceDescribeEnv",
+		"body":[
+			"\\NiceDescribeEnv[${3:idx}]{${1:envname}}{${2:parameters}}"
+		]
+	},
+
+
+	"NiceDescribeCounter[]{}{}":{
+		"prefix":"NiceDescribeCounter",
+		"body":[
+			"\\NiceDescribeCounter[${3:idx}]{${1:counter}}{${2:qualifiers}}"
+		]
+	},
+
+
+	"NiceDescribeKey[]{}{}":{
+		"prefix":"NiceDescribeKey",
+		"body":[
+			"\\NiceDescribeKey[${3:idx}]{${1:keyname}}{${2:keyconfig}}"
 		]
 	},
 
 
 	"enumerate*":{
-		"prefix":"enumerate*",
+		"prefix":"*enumerate",
 		"body":[
 			"\\begin{enumerate*}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumerate*}"
 		]
 	},
 
 
 	"itemize*":{
-		"prefix":"itemize*",
+		"prefix":"*itemize",
 		"body":[
 			"\\begin{itemize*}",
-			"\t$1",
+				"\t$1",
 			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

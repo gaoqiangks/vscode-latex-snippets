@@ -1,7 +1,7 @@
 {
 
 
-	"pretitle":{
+	"pretitle{}":{
 		"prefix":"pretitle",
 		"body":[
 			"\\pretitle{${1:text}}"
@@ -9,10 +9,20 @@
 	},
 
 
-	"ManualNumbering":{
+	"ManualNumbering{}{}":{
 		"prefix":"ManualNumbering",
 		"body":[
 			"\\ManualNumbering{${1:envname}}{${2:number}}"
+		]
+	},
+
+
+	"answer":{
+		"prefix":"answer",
+		"body":[
+			"\\begin{answer}",
+				"\t$1",
+			"\\end{answer}"
 		]
 	},
 
@@ -21,7 +31,7 @@
 		"prefix":"solution",
 		"body":[
 			"\\begin{solution}",
-			"\t$1",
+				"\t$1",
 			"\\end{solution}"
 		]
 	},
@@ -31,8 +41,18 @@
 		"prefix":"answer",
 		"body":[
 			"\\begin{answer}",
-			"\t$1",
+				"\t$1",
 			"\\end{answer}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"empuse":{
+	"empuse{}":{
 		"prefix":"empuse",
 		"body":[
 			"\\empuse{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"empTeX":{
+	"empTeX{}":{
 		"prefix":"empTeX",
 		"body":[
 			"\\empTeX{${1:LaTeX prelude%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"empaddtoTeX":{
+	"empaddtoTeX{}":{
 		"prefix":"empaddtoTeX",
 		"body":[
 			"\\empaddtoTeX{${1:LaTeX code%definition}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"empprelude":{
+	"empprelude{}":{
 		"prefix":"empprelude",
 		"body":[
 			"\\empprelude{${1:METAPOST prelude%definition}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"empaddtoprelude":{
+	"empaddtoprelude{}":{
 		"prefix":"empaddtoprelude",
 		"body":[
 			"\\empaddtoprelude{${1:METAPOST code%definition}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"empwrite":{
+	"empwrite{}":{
 		"prefix":"empwrite",
 		"body":[
 			"\\empwrite{${1:METAPOST code%definition}}"
@@ -65,12 +65,32 @@
 	},
 
 
+	"empfile":{
+		"prefix":"empfile",
+		"body":[
+			"\\begin{empfile}",
+				"\t$1",
+			"\\end{empfile}"
+		]
+	},
+
+
 	"emp":{
 		"prefix":"emp",
 		"body":[
 			"\\begin{emp}",
-			"\t$1",
+				"\t$1",
 			"\\end{emp}"
+		]
+	},
+
+
+	"empdef":{
+		"prefix":"empdef",
+		"body":[
+			"\\begin{empdef}",
+				"\t$1",
+			"\\end{empdef}"
 		]
 	},
 
@@ -79,7 +99,7 @@
 		"prefix":"empcmds",
 		"body":[
 			"\\begin{empcmds}",
-			"\t$1",
+				"\t$1",
 			"\\end{empcmds}"
 		]
 	},
@@ -89,7 +109,7 @@
 		"prefix":"empgraph",
 		"body":[
 			"\\begin{empgraph}",
-			"\t$1",
+				"\t$1",
 			"\\end{empgraph}"
 		]
 	},
@@ -99,8 +119,18 @@
 		"prefix":"empfile",
 		"body":[
 			"\\begin{empfile}",
-			"\t$1",
+				"\t$1",
 			"\\end{empfile}"
+		]
+	},
+
+
+	"emp":{
+		"prefix":"emp",
+		"body":[
+			"\\begin{emp}",
+				"\t$1",
+			"\\end{emp}"
 		]
 	},
 
@@ -109,8 +139,18 @@
 		"prefix":"empdef",
 		"body":[
 			"\\begin{empdef}",
-			"\t$1",
+				"\t$1",
 			"\\end{empdef}"
+		]
+	},
+
+
+	"empgraph":{
+		"prefix":"empgraph",
+		"body":[
+			"\\begin{empgraph}",
+				"\t$1",
+			"\\end{empgraph}"
 		]
 	}
 }

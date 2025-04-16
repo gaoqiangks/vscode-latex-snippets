@@ -1,7 +1,7 @@
 {
 
 
-	"binary":{
+	"binary{}":{
 		"prefix":"binary",
 		"body":[
 			"\\binary{${1:package}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"cmdline":{
+	"cmdline{}":{
 		"prefix":"cmdline",
 		"body":[
 			"\\cmdline{${1:specs}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"DeclareLogreqAttribute":{
-		"prefix":"DeclareLogreqAttribute",
-		"body":[
-			"\\DeclareLogreqAttribute{${1:element}}[${4:default}]{${2:attribute}}{${3:dtd specs}}"
-		]
-	},
-
-
-	"DeclareLogreqAttribute":{
+	"DeclareLogreqAttribute{}{}{}":{
 		"prefix":"DeclareLogreqAttribute",
 		"body":[
 			"\\DeclareLogreqAttribute{${1:element}}{${2:attribute}}{${3:dtd specs}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"DeclareLogreqContainer":{
+	"DeclareLogreqContainer{}{}":{
 		"prefix":"DeclareLogreqContainer",
 		"body":[
 			"\\DeclareLogreqContainer{${1:element}}{${2:dtd specs}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"DeclareLogreqElement":{
+	"DeclareLogreqElement{}{}":{
 		"prefix":"DeclareLogreqElement",
 		"body":[
 			"\\DeclareLogreqElement{${1:element}}{${2:dtd specs}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"external":{
-		"prefix":"external",
-		"body":[
-			"\\external[${2:keyvals}]{${1:specs}}"
-		]
-	},
-
-
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:file}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"generic":{
+	"generic{}":{
 		"prefix":"generic",
 		"body":[
 			"\\generic{${1:package}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"infile":{
+	"infile{}":{
 		"prefix":"infile",
 		"body":[
 			"\\infile{${1:file}}"
@@ -81,23 +65,7 @@
 	},
 
 
-	"internal":{
-		"prefix":"internal",
-		"body":[
-			"\\internal[${2:keyvals}]{${1:specs}}"
-		]
-	},
-
-
-	"logrequest":{
-		"prefix":"logrequest",
-		"body":[
-			"\\logrequest[${2:options%keyvals}]{${1:request}}"
-		]
-	},
-
-
-	"logrequest":{
+	"logrequest{}":{
 		"prefix":"logrequest",
 		"body":[
 			"\\logrequest{${1:request}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"ltxrequest":{
+	"ltxrequest{}{}{}":{
 		"prefix":"ltxrequest",
 		"body":[
 			"\\ltxrequest{${1:package}}{${2:active}}{${3:request}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"option":{
+	"option{}":{
 		"prefix":"option",
 		"body":[
 			"\\option{${1:option}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"outfile":{
+	"outfile{}":{
 		"prefix":"outfile",
 		"body":[
 			"\\outfile{${1:file}}"
@@ -129,7 +97,39 @@
 	},
 
 
-	"provides":{
+	"DeclareLogreqAttribute{}[]{}{}":{
+		"prefix":"DeclareLogreqAttribute",
+		"body":[
+			"\\DeclareLogreqAttribute{${1:element}}[${4:default}]{${2:attribute}}{${3:dtd specs}}"
+		]
+	},
+
+
+	"external[]{}":{
+		"prefix":"external",
+		"body":[
+			"\\external[${2:keyvals}]{${1:specs}}"
+		]
+	},
+
+
+	"internal[]{}":{
+		"prefix":"internal",
+		"body":[
+			"\\internal[${2:keyvals}]{${1:specs}}"
+		]
+	},
+
+
+	"logrequest[]{}":{
+		"prefix":"logrequest",
+		"body":[
+			"\\logrequest[${2:options%keyvals}]{${1:request}}"
+		]
+	},
+
+
+	"provides[]{}":{
 		"prefix":"provides",
 		"body":[
 			"\\provides[${2:keyvals}]{${1:file specs}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"requests":{
+	"requests[]{}":{
 		"prefix":"requests",
 		"body":[
 			"\\requests[${2:keyvals}]{${1:specs}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"requires":{
+	"requires[]{}":{
 		"prefix":"requires",
 		"body":[
 			"\\requires[${2:keyvals}]{${1:file specs}}"

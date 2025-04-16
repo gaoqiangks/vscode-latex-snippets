@@ -1,7 +1,7 @@
 {
 
 
-	"cnltxacronym":{
+	"cnltxacronym{}{}":{
 		"prefix":"cnltxacronym",
 		"body":[
 			"\\cnltxacronym{${1:string}}{${2:acronym}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"newabbr":{
+	"newabbr{}{}":{
 		"prefix":"newabbr",
 		"body":[
 			"\\newabbr{${1:cmd}}{${2:definition}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"newabbr*":{
-		"prefix":"newabbr*",
-		"body":[
-			"\\newabbr*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"renewabbr":{
+	"renewabbr{}{}":{
 		"prefix":"renewabbr",
 		"body":[
 			"\\renewabbr{${1:cmd}}{${2:definition}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"renewabbr*":{
-		"prefix":"renewabbr*",
-		"body":[
-			"\\renewabbr*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"defabbr":{
+	"defabbr{}{}":{
 		"prefix":"defabbr",
 		"body":[
 			"\\defabbr{${1:cmd}}{${2:definition}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"defabbr*":{
-		"prefix":"defabbr*",
-		"body":[
-			"\\defabbr*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"cnltxlatin":{
+	"cnltxlatin{}":{
 		"prefix":"cnltxlatin",
 		"body":[
 			"\\cnltxlatin{${1:abbreviation}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"cnltxtimeformat":{
+	"cnltxtimeformat{}":{
 		"prefix":"cnltxtimeformat",
 		"body":[
 			"\\cnltxtimeformat{${1:abbreviation}}"
@@ -225,7 +201,7 @@
 	},
 
 
-	"nohyperpage":{
+	"nohyperpage{}":{
 		"prefix":"nohyperpage",
 		"body":[
 			"\\nohyperpage{${1:arg}}"
@@ -233,10 +209,34 @@
 	},
 
 
-	"texorpdfstring":{
+	"texorpdfstring{}{}":{
 		"prefix":"texorpdfstring",
 		"body":[
 			"\\texorpdfstring{${1:TEXstring}}{${2:PDFstring}}"
+		]
+	},
+
+
+	"newabbr*{}{}":{
+		"prefix":"*newabbr",
+		"body":[
+			"\\newabbr*{${1:cmd}}{${2:definition}}"
+		]
+	},
+
+
+	"renewabbr*{}{}":{
+		"prefix":"*renewabbr",
+		"body":[
+			"\\renewabbr*{${1:cmd}}{${2:definition}}"
+		]
+	},
+
+
+	"defabbr*{}{}":{
+		"prefix":"*defabbr",
+		"body":[
+			"\\defabbr*{${1:cmd}}{${2:definition}}"
 		]
 	}
 }

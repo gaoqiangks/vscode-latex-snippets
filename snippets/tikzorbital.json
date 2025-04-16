@@ -1,7 +1,15 @@
 {
 
 
-	"drawLevel":{
+	"setOrbitalDrawing{}":{
+		"prefix":"setOrbitalDrawing",
+		"body":[
+			"\\setOrbitalDrawing{${1:TikZ options}}"
+		]
+	},
+
+
+	"drawLevel[]{}":{
 		"prefix":"drawLevel",
 		"body":[
 			"\\drawLevel[${2:options%keyvals}]{${1:name}}"
@@ -9,7 +17,7 @@
 	},
 
 
-	"orbital":{
+	"orbital[]{}":{
 		"prefix":"orbital",
 		"body":[
 			"\\orbital[${2:options%keyvals}]{${1:type}}"
@@ -17,7 +25,7 @@
 	},
 
 
-	"satom":{
+	"satom[]{}":{
 		"prefix":"satom",
 		"body":[
 			"\\satom[${2:options}]{${1:color/rotation-angle/anchor/number of electrons/scale}}"
@@ -25,18 +33,10 @@
 	},
 
 
-	"atom":{
+	"atom[]{}":{
 		"prefix":"atom",
 		"body":[
 			"\\atom[${2:options}]{${1:color/rotation-angle/anchor/number of electrons/scale}}"
-		]
-	},
-
-
-	"setOrbitalDrawing":{
-		"prefix":"setOrbitalDrawing",
-		"body":[
-			"\\setOrbitalDrawing{${1:TikZ options}}"
 		]
 	}
 }

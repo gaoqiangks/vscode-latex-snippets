@@ -1,7 +1,7 @@
 {
 
 
-	"centered":{
+	"centered{}":{
 		"prefix":"centered",
 		"body":[
 			"\\centered{${1:text}}"
@@ -25,18 +25,10 @@
 	},
 
 
-	"footnt":{
+	"footnt{}":{
 		"prefix":"footnt",
 		"body":[
 			"\\footnt{${1:text}}"
-		]
-	},
-
-
-	"footnt":{
-		"prefix":"footnt",
-		"body":[
-			"\\footnt[${2:number}]{${1:text}}"
 		]
 	},
 
@@ -57,7 +49,7 @@
 	},
 
 
-	"vstrut":{
+	"vstrut{}":{
 		"prefix":"vstrut",
 		"body":[
 			"\\vstrut{${1:height}}"
@@ -65,15 +57,7 @@
 	},
 
 
-	"vstrut":{
-		"prefix":"vstrut",
-		"body":[
-			"\\vstrut[${2:depth}]{${1:height}}"
-		]
-	},
-
-
-	"cstrut":{
+	"cstrut{}":{
 		"prefix":"cstrut",
 		"body":[
 			"\\cstrut{${1:height}}"
@@ -169,34 +153,10 @@
 	},
 
 
-	"dualboxes":{
+	"dualboxes{}{}":{
 		"prefix":"dualboxes",
 		"body":[
 			"\\dualboxes{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"dualboxes":{
-		"prefix":"dualboxes",
-		"body":[
-			"\\dualboxes[${3:pos}]{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"dualboxes*":{
-		"prefix":"dualboxes*",
-		"body":[
-			"\\dualboxes*{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"dualboxes*":{
-		"prefix":"dualboxes*",
-		"body":[
-			"\\dualboxes*[${3:pos}]{${1:left}}{${2:right}}"
 		]
 	},
 
@@ -233,12 +193,42 @@
 	},
 
 
-	"compactlist":{
-		"prefix":"compactlist",
+	"dualboxes*{}{}":{
+		"prefix":"*dualboxes",
 		"body":[
-			"\\begin{compactlist}",
-			"\t$1",
-			"\\end{compactlist}"
+			"\\dualboxes*{${1:left}}{${2:right}}"
+		]
+	},
+
+
+	"dualboxes*[]{}{}":{
+		"prefix":"*dualboxes",
+		"body":[
+			"\\dualboxes*[${3:pos}]{${1:left}}{${2:right}}"
+		]
+	},
+
+
+	"footnt[]{}":{
+		"prefix":"footnt",
+		"body":[
+			"\\footnt[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"vstrut[]{}":{
+		"prefix":"vstrut",
+		"body":[
+			"\\vstrut[${2:depth}]{${1:height}}"
+		]
+	},
+
+
+	"dualboxes[]{}{}":{
+		"prefix":"dualboxes",
+		"body":[
+			"\\dualboxes[${3:pos}]{${1:left}}{${2:right}}"
 		]
 	},
 
@@ -247,8 +237,18 @@
 		"prefix":"indentblock",
 		"body":[
 			"\\begin{indentblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{indentblock}"
+		]
+	},
+
+
+	"compactlist":{
+		"prefix":"compactlist",
+		"body":[
+			"\\begin{compactlist}",
+				"\t$1",
+			"\\end{compactlist}"
 		]
 	},
 
@@ -257,7 +257,37 @@
 		"prefix":"juxtapose",
 		"body":[
 			"\\begin{juxtapose}",
-			"\t$1",
+				"\t$1",
+			"\\end{juxtapose}"
+		]
+	},
+
+
+	"indentblock":{
+		"prefix":"indentblock",
+		"body":[
+			"\\begin{indentblock}",
+				"\t$1",
+			"\\end{indentblock}"
+		]
+	},
+
+
+	"compactlist":{
+		"prefix":"compactlist",
+		"body":[
+			"\\begin{compactlist}",
+				"\t$1",
+			"\\end{compactlist}"
+		]
+	},
+
+
+	"juxtapose":{
+		"prefix":"juxtapose",
+		"body":[
+			"\\begin{juxtapose}",
+				"\t$1",
 			"\\end{juxtapose}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"questionsetup":{
+	"questionsetup{}":{
 		"prefix":"questionsetup",
 		"body":[
 			"\\questionsetup{${1:键值列表%keyvals}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"paren":{
-		"prefix":"paren",
-		"body":[
-			"\\paren[${1:答案}]"
-		]
-	},
-
-
-	"AddQuestionCounter":{
+	"AddQuestionCounter{}{}":{
 		"prefix":"AddQuestionCounter",
 		"body":[
 			"\\AddQuestionCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
@@ -33,18 +25,10 @@
 	},
 
 
-	"circlednumber":{
+	"circlednumber{}":{
 		"prefix":"circlednumber",
 		"body":[
 			"\\circlednumber{${1:数字或计数器名字}}"
-		]
-	},
-
-
-	"circlednumber*":{
-		"prefix":"circlednumber*",
-		"body":[
-			"\\circlednumber*{${1:数字或计数器名字}}"
 		]
 	},
 
@@ -57,47 +41,7 @@
 	},
 
 
-	"fillin":{
-		"prefix":"fillin",
-		"body":[
-			"\\fillin[${1:答案}]"
-		]
-	},
-
-
-	"fillin":{
-		"prefix":"fillin",
-		"body":[
-			"\\fillin[${1:键值列表%keyvals}][${2:答案}]"
-		]
-	},
-
-
-	"fillin*":{
-		"prefix":"fillin*",
-		"body":[
-			"\\fillin*"
-		]
-	},
-
-
-	"fillin*":{
-		"prefix":"fillin*",
-		"body":[
-			"\\fillin*[${1:答案}]"
-		]
-	},
-
-
-	"fillin*":{
-		"prefix":"fillin*",
-		"body":[
-			"\\fillin*[${1:键值列表%keyvals}][${2:答案}]"
-		]
-	},
-
-
-	"fillinsetup":{
+	"fillinsetup{}":{
 		"prefix":"fillinsetup",
 		"body":[
 			"\\fillinsetup{${1:键值列表%keyvals}}"
@@ -105,7 +49,7 @@
 	},
 
 
-	"AddFillinCounter":{
+	"AddFillinCounter{}{}":{
 		"prefix":"AddFillinCounter",
 		"body":[
 			"\\AddFillinCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
@@ -113,7 +57,7 @@
 	},
 
 
-	"score":{
+	"score{}":{
 		"prefix":"score",
 		"body":[
 			"\\score{${1:分数}}"
@@ -121,22 +65,58 @@
 	},
 
 
-	"solution":{
-		"prefix":"solution",
+	"circlednumber*{}":{
+		"prefix":"*circlednumber",
 		"body":[
-			"\\begin{solution}",
-			"\t$1",
-			"\\end{solution}"
+			"\\circlednumber*{${1:数字或计数器名字}}"
 		]
 	},
 
 
-	"problem":{
-		"prefix":"problem",
+	"fillin*":{
+		"prefix":"*fillin",
 		"body":[
-			"\\begin{problem}",
-			"\t$1",
-			"\\end{problem}"
+			"\\fillin*"
+		]
+	},
+
+
+	"fillin*[]":{
+		"prefix":"*fillin",
+		"body":[
+			"\\fillin*[${1:答案}]"
+		]
+	},
+
+
+	"fillin*[][]":{
+		"prefix":"*fillin",
+		"body":[
+			"\\fillin*[${1:键值列表%keyvals}][${2:答案}]"
+		]
+	},
+
+
+	"paren[]":{
+		"prefix":"paren",
+		"body":[
+			"\\paren[${1:答案}]"
+		]
+	},
+
+
+	"fillin[]":{
+		"prefix":"fillin",
+		"body":[
+			"\\fillin[${1:答案}]"
+		]
+	},
+
+
+	"fillin[][]":{
+		"prefix":"fillin",
+		"body":[
+			"\\fillin[${1:键值列表%keyvals}][${2:答案}]"
 		]
 	},
 
@@ -145,8 +125,58 @@
 		"prefix":"question",
 		"body":[
 			"\\begin{question}",
-			"\t$1",
+				"\t$1",
 			"\\end{question}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
 		]
 	}
 }

@@ -1,34 +1,10 @@
 {
 
 
-	"Verb":{
+	"Verb||":{
 		"prefix":"Verb",
 		"body":[
 			"\\Verb|${1:code}|"
-		]
-	},
-
-
-	"Verb":{
-		"prefix":"Verb",
-		"body":[
-			"\\Verb[${1:options}]|${2:code}|"
-		]
-	},
-
-
-	"Verb*":{
-		"prefix":"Verb*",
-		"body":[
-			"\\Verb*|${1:code}|"
-		]
-	},
-
-
-	"Verb*":{
-		"prefix":"Verb*",
-		"body":[
-			"\\Verb*[${1:options}]|${2:code}|"
 		]
 	},
 
@@ -41,31 +17,23 @@
 	},
 
 
-	"DefineShortVerb":{
+	"DefineShortVerb{}":{
 		"prefix":"DefineShortVerb",
 		"body":[
-			"\\DefineShortVerb{${1:\character}}"
+			"\\DefineShortVerb{${1:\\character}}"
 		]
 	},
 
 
-	"DefineShortVerb":{
-		"prefix":"DefineShortVerb",
-		"body":[
-			"\\DefineShortVerb[${2:options}]{${1:\character}}"
-		]
-	},
-
-
-	"UndefineShortVerb":{
+	"UndefineShortVerb{}":{
 		"prefix":"UndefineShortVerb",
 		"body":[
-			"\\UndefineShortVerb{${1:\character}}"
+			"\\UndefineShortVerb{${1:\\character}}"
 		]
 	},
 
 
-	"fvset":{
+	"fvset{}":{
 		"prefix":"fvset",
 		"body":[
 			"\\fvset{${1:options%keyvals}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"DefineVerbatimEnvironment":{
+	"DefineVerbatimEnvironment{}{}{}":{
 		"prefix":"DefineVerbatimEnvironment",
 		"body":[
 			"\\DefineVerbatimEnvironment{${1:envname}}{${2:env type}}{${3:options%keyvals}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"CustomVerbatimEnvironment":{
+	"CustomVerbatimEnvironment{}{}{}":{
 		"prefix":"CustomVerbatimEnvironment",
 		"body":[
 			"\\CustomVerbatimEnvironment{${1:envname}}{${2:env type}}{${3:options%keyvals}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"RecustomVerbatimEnvironment":{
+	"RecustomVerbatimEnvironment{}{}{}":{
 		"prefix":"RecustomVerbatimEnvironment",
 		"body":[
 			"\\RecustomVerbatimEnvironment{${1:envname}}{${2:env type}}{${3:options%keyvals}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"CustomVerbatimCommand":{
+	"CustomVerbatimCommand{}{}{}":{
 		"prefix":"CustomVerbatimCommand",
 		"body":[
 			"\\CustomVerbatimCommand{${1:command}}{${2:cmd type}}{${3:options%keyvals}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"RecustomVerbatimCommand":{
+	"RecustomVerbatimCommand{}{}{}":{
 		"prefix":"RecustomVerbatimCommand",
 		"body":[
 			"\\RecustomVerbatimCommand{${1:command}}{${2:cmd type}}{${3:options%keyvals}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"SaveVerb":{
+	"SaveVerb{}||":{
 		"prefix":"SaveVerb",
 		"body":[
 			"\\SaveVerb{${1:name}}|${2:code}|"
@@ -121,31 +89,7 @@
 	},
 
 
-	"SaveVerb":{
-		"prefix":"SaveVerb",
-		"body":[
-			"\\SaveVerb[${2:options}]{${1:name}}|${3:code}|"
-		]
-	},
-
-
-	"SaveVerb*":{
-		"prefix":"SaveVerb*",
-		"body":[
-			"\\SaveVerb*{${1:name}}|${2:code}|"
-		]
-	},
-
-
-	"SaveVerb*":{
-		"prefix":"SaveVerb*",
-		"body":[
-			"\\SaveVerb*[${2:options}]{${1:name}}|${3:code}|"
-		]
-	},
-
-
-	"UseVerb":{
+	"UseVerb{}":{
 		"prefix":"UseVerb",
 		"body":[
 			"\\UseVerb{${1:name}}"
@@ -153,31 +97,7 @@
 	},
 
 
-	"UseVerb":{
-		"prefix":"UseVerb",
-		"body":[
-			"\\UseVerb[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"UseVerb*":{
-		"prefix":"UseVerb*",
-		"body":[
-			"\\UseVerb*{${1:name}}"
-		]
-	},
-
-
-	"UseVerb*":{
-		"prefix":"UseVerb*",
-		"body":[
-			"\\UseVerb*[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"UseVerbatim":{
+	"UseVerbatim{}":{
 		"prefix":"UseVerbatim",
 		"body":[
 			"\\UseVerbatim{${1:name}}"
@@ -185,31 +105,7 @@
 	},
 
 
-	"UseVerbatim":{
-		"prefix":"UseVerbatim",
-		"body":[
-			"\\UseVerbatim[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"UseVerbatim*":{
-		"prefix":"UseVerbatim*",
-		"body":[
-			"\\UseVerbatim*{${1:name}}"
-		]
-	},
-
-
-	"UseVerbatim*":{
-		"prefix":"UseVerbatim*",
-		"body":[
-			"\\UseVerbatim*[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"BUseVerbatim":{
+	"BUseVerbatim{}":{
 		"prefix":"BUseVerbatim",
 		"body":[
 			"\\BUseVerbatim{${1:name}}"
@@ -217,31 +113,7 @@
 	},
 
 
-	"BUseVerbatim":{
-		"prefix":"BUseVerbatim",
-		"body":[
-			"\\BUseVerbatim[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"BUseVerbatim*":{
-		"prefix":"BUseVerbatim*",
-		"body":[
-			"\\BUseVerbatim*{${1:name}}"
-		]
-	},
-
-
-	"BUseVerbatim*":{
-		"prefix":"BUseVerbatim*",
-		"body":[
-			"\\BUseVerbatim*[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"LUseVerbatim":{
+	"LUseVerbatim{}":{
 		"prefix":"LUseVerbatim",
 		"body":[
 			"\\LUseVerbatim{${1:name}}"
@@ -249,31 +121,7 @@
 	},
 
 
-	"LUseVerbatim":{
-		"prefix":"LUseVerbatim",
-		"body":[
-			"\\LUseVerbatim[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"LUseVerbatim*":{
-		"prefix":"LUseVerbatim*",
-		"body":[
-			"\\LUseVerbatim*{${1:name}}"
-		]
-	},
-
-
-	"LUseVerbatim*":{
-		"prefix":"LUseVerbatim*",
-		"body":[
-			"\\LUseVerbatim*[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"VerbatimInput":{
+	"VerbatimInput{}":{
 		"prefix":"VerbatimInput",
 		"body":[
 			"\\VerbatimInput{${1:file}}"
@@ -281,31 +129,7 @@
 	},
 
 
-	"VerbatimInput":{
-		"prefix":"VerbatimInput",
-		"body":[
-			"\\VerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"VerbatimInput*":{
-		"prefix":"VerbatimInput*",
-		"body":[
-			"\\VerbatimInput*{${1:file}}"
-		]
-	},
-
-
-	"VerbatimInput*":{
-		"prefix":"VerbatimInput*",
-		"body":[
-			"\\VerbatimInput*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"BVerbatimInput":{
+	"BVerbatimInput{}":{
 		"prefix":"BVerbatimInput",
 		"body":[
 			"\\BVerbatimInput{${1:file}}"
@@ -313,58 +137,10 @@
 	},
 
 
-	"BVerbatimInput":{
-		"prefix":"BVerbatimInput",
-		"body":[
-			"\\BVerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"BVerbatimInput*":{
-		"prefix":"BVerbatimInput*",
-		"body":[
-			"\\BVerbatimInput*{${1:file}}"
-		]
-	},
-
-
-	"BVerbatimInput*":{
-		"prefix":"BVerbatimInput*",
-		"body":[
-			"\\BVerbatimInput*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput":{
+	"LVerbatimInput{}":{
 		"prefix":"LVerbatimInput",
 		"body":[
 			"\\LVerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput":{
-		"prefix":"LVerbatimInput",
-		"body":[
-			"\\LVerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput*":{
-		"prefix":"LVerbatimInput*",
-		"body":[
-			"\\LVerbatimInput*{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput*":{
-		"prefix":"LVerbatimInput*",
-		"body":[
-			"\\LVerbatimInput*[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -569,11 +345,265 @@
 	},
 
 
+	"Verb*||":{
+		"prefix":"*Verb",
+		"body":[
+			"\\Verb*|${1:code}|"
+		]
+	},
+
+
+	"Verb*[]||":{
+		"prefix":"*Verb",
+		"body":[
+			"\\Verb*[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"SaveVerb*{}||":{
+		"prefix":"*SaveVerb",
+		"body":[
+			"\\SaveVerb*{${1:name}}|${2:code}|"
+		]
+	},
+
+
+	"SaveVerb*[]{}||":{
+		"prefix":"*SaveVerb",
+		"body":[
+			"\\SaveVerb*[${2:options}]{${1:name}}|${3:code}|"
+		]
+	},
+
+
+	"UseVerb*{}":{
+		"prefix":"*UseVerb",
+		"body":[
+			"\\UseVerb*{${1:name}}"
+		]
+	},
+
+
+	"UseVerb*[]{}":{
+		"prefix":"*UseVerb",
+		"body":[
+			"\\UseVerb*[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"UseVerbatim*{}":{
+		"prefix":"*UseVerbatim",
+		"body":[
+			"\\UseVerbatim*{${1:name}}"
+		]
+	},
+
+
+	"UseVerbatim*[]{}":{
+		"prefix":"*UseVerbatim",
+		"body":[
+			"\\UseVerbatim*[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"BUseVerbatim*{}":{
+		"prefix":"*BUseVerbatim",
+		"body":[
+			"\\BUseVerbatim*{${1:name}}"
+		]
+	},
+
+
+	"BUseVerbatim*[]{}":{
+		"prefix":"*BUseVerbatim",
+		"body":[
+			"\\BUseVerbatim*[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"LUseVerbatim*{}":{
+		"prefix":"*LUseVerbatim",
+		"body":[
+			"\\LUseVerbatim*{${1:name}}"
+		]
+	},
+
+
+	"LUseVerbatim*[]{}":{
+		"prefix":"*LUseVerbatim",
+		"body":[
+			"\\LUseVerbatim*[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"VerbatimInput*{}":{
+		"prefix":"*VerbatimInput",
+		"body":[
+			"\\VerbatimInput*{${1:file}}"
+		]
+	},
+
+
+	"VerbatimInput*[]{}":{
+		"prefix":"*VerbatimInput",
+		"body":[
+			"\\VerbatimInput*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"BVerbatimInput*{}":{
+		"prefix":"*BVerbatimInput",
+		"body":[
+			"\\BVerbatimInput*{${1:file}}"
+		]
+	},
+
+
+	"BVerbatimInput*[]{}":{
+		"prefix":"*BVerbatimInput",
+		"body":[
+			"\\BVerbatimInput*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"LVerbatimInput*{}":{
+		"prefix":"*LVerbatimInput",
+		"body":[
+			"\\LVerbatimInput*{${1:file}}"
+		]
+	},
+
+
+	"LVerbatimInput*[]{}":{
+		"prefix":"*LVerbatimInput",
+		"body":[
+			"\\LVerbatimInput*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"Verb[]||":{
+		"prefix":"Verb",
+		"body":[
+			"\\Verb[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"DefineShortVerb[]{}":{
+		"prefix":"DefineShortVerb",
+		"body":[
+			"\\DefineShortVerb[${2:options}]{${1:\\character}}"
+		]
+	},
+
+
+	"SaveVerb[]{}||":{
+		"prefix":"SaveVerb",
+		"body":[
+			"\\SaveVerb[${2:options}]{${1:name}}|${3:code}|"
+		]
+	},
+
+
+	"UseVerb[]{}":{
+		"prefix":"UseVerb",
+		"body":[
+			"\\UseVerb[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"UseVerbatim[]{}":{
+		"prefix":"UseVerbatim",
+		"body":[
+			"\\UseVerbatim[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"BUseVerbatim[]{}":{
+		"prefix":"BUseVerbatim",
+		"body":[
+			"\\BUseVerbatim[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"LUseVerbatim[]{}":{
+		"prefix":"LUseVerbatim",
+		"body":[
+			"\\LUseVerbatim[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"VerbatimInput[]{}":{
+		"prefix":"VerbatimInput",
+		"body":[
+			"\\VerbatimInput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"BVerbatimInput[]{}":{
+		"prefix":"BVerbatimInput",
+		"body":[
+			"\\BVerbatimInput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"LVerbatimInput[]{}":{
+		"prefix":"LVerbatimInput",
+		"body":[
+			"\\LVerbatimInput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"Verbatim":{
+		"prefix":"Verbatim",
+		"body":[
+			"\\begin{Verbatim}",
+				"\t$1",
+			"\\end{Verbatim}"
+		]
+	},
+
+
+	"BVerbatim":{
+		"prefix":"BVerbatim",
+		"body":[
+			"\\begin{BVerbatim}",
+				"\t$1",
+			"\\end{BVerbatim}"
+		]
+	},
+
+
+	"LVerbatim":{
+		"prefix":"LVerbatim",
+		"body":[
+			"\\begin{LVerbatim}",
+				"\t$1",
+			"\\end{LVerbatim}"
+		]
+	},
+
+
 	"SaveVerbatim":{
 		"prefix":"SaveVerbatim",
 		"body":[
 			"\\begin{SaveVerbatim}",
-			"\t$1",
+				"\t$1",
 			"\\end{SaveVerbatim}"
 		]
 	},
@@ -583,8 +613,38 @@
 		"prefix":"VerbatimOut",
 		"body":[
 			"\\begin{VerbatimOut}",
-			"\t$1",
+				"\t$1",
 			"\\end{VerbatimOut}"
+		]
+	},
+
+
+	"Verbatim*":{
+		"prefix":"*Verbatim",
+		"body":[
+			"\\begin{Verbatim*}",
+				"\t$1",
+			"\\end{Verbatim*}"
+		]
+	},
+
+
+	"BVerbatim*":{
+		"prefix":"*BVerbatim",
+		"body":[
+			"\\begin{BVerbatim*}",
+				"\t$1",
+			"\\end{BVerbatim*}"
+		]
+	},
+
+
+	"LVerbatim*":{
+		"prefix":"*LVerbatim",
+		"body":[
+			"\\begin{LVerbatim*}",
+				"\t$1",
+			"\\end{LVerbatim*}"
 		]
 	},
 
@@ -593,17 +653,17 @@
 		"prefix":"Verbatim",
 		"body":[
 			"\\begin{Verbatim}",
-			"\t$1",
+				"\t$1",
 			"\\end{Verbatim}"
 		]
 	},
 
 
 	"Verbatim*":{
-		"prefix":"Verbatim*",
+		"prefix":"Verbatim",
 		"body":[
 			"\\begin{Verbatim*}",
-			"\t$1",
+				"\t$1",
 			"\\end{Verbatim*}"
 		]
 	},
@@ -613,18 +673,18 @@
 		"prefix":"BVerbatim",
 		"body":[
 			"\\begin{BVerbatim}",
-			"\t$1",
+				"\t$1",
 			"\\end{BVerbatim}"
 		]
 	},
 
 
-	"LVerbatim*":{
-		"prefix":"LVerbatim*",
+	"BVerbatim*":{
+		"prefix":"BVerbatim",
 		"body":[
-			"\\begin{LVerbatim*}",
-			"\t$1",
-			"\\end{LVerbatim*}"
+			"\\begin{BVerbatim*}",
+				"\t$1",
+			"\\end{BVerbatim*}"
 		]
 	},
 
@@ -633,18 +693,28 @@
 		"prefix":"LVerbatim",
 		"body":[
 			"\\begin{LVerbatim}",
-			"\t$1",
+				"\t$1",
 			"\\end{LVerbatim}"
 		]
 	},
 
 
-	"BVerbatim*":{
-		"prefix":"BVerbatim*",
+	"LVerbatim*":{
+		"prefix":"LVerbatim",
 		"body":[
-			"\\begin{BVerbatim*}",
-			"\t$1",
-			"\\end{BVerbatim*}"
+			"\\begin{LVerbatim*}",
+				"\t$1",
+			"\\end{LVerbatim*}"
+		]
+	},
+
+
+	"SaveVerbatim":{
+		"prefix":"SaveVerbatim",
+		"body":[
+			"\\begin{SaveVerbatim}",
+				"\t$1",
+			"\\end{SaveVerbatim}"
 		]
 	}
 }

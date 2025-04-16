@@ -9,7 +9,7 @@
 	},
 
 
-	"setupdocument":{
+	"setupdocument{}":{
 		"prefix":"setupdocument",
 		"body":[
 			"\\setupdocument{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"letter":{
+	"letter{}":{
 		"prefix":"letter",
 		"body":[
 			"\\letter{${1:content%text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"letter":{
-		"prefix":"letter",
-		"body":[
-			"\\letter[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"invoice":{
+	"invoice{}":{
 		"prefix":"invoice",
 		"body":[
 			"\\invoice{${1:content%text}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"invoice":{
-		"prefix":"invoice",
-		"body":[
-			"\\invoice[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"itable":{
+	"itable{}":{
 		"prefix":"itable",
 		"body":[
 			"\\itable{${1:table contents%text}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"iitem":{
+	"iitem{}{}":{
 		"prefix":"iitem",
 		"body":[
 			"\\iitem{${1:item}}{${2:amount}}"
@@ -65,18 +49,10 @@
 	},
 
 
-	"itotal":{
+	"itotal{}":{
 		"prefix":"itotal",
 		"body":[
 			"\\itotal{${1:amount}}"
-		]
-	},
-
-
-	"itotal":{
-		"prefix":"itotal",
-		"body":[
-			"\\itotal[${2:text}]{${1:amount}}"
 		]
 	},
 
@@ -89,7 +65,7 @@
 	},
 
 
-	"autograph":{
+	"autograph{}{}{}{}{}{}":{
 		"prefix":"autograph",
 		"body":[
 			"\\autograph{${1:number}}{${2:height}}{${3:v-pos-closing}}{${4:v-pos-sig}}{${5:margin-pos}}{${6:image}}"
@@ -169,7 +145,7 @@
 	},
 
 
-	"Undefined":{
+	"Undefined{}":{
 		"prefix":"Undefined",
 		"body":[
 			"\\Undefined{${1:arg}}"
@@ -705,7 +681,7 @@
 	},
 
 
-	"processto":{
+	"processto{}":{
 		"prefix":"processto",
 		"body":[
 			"\\processto{${1:arg1}}"
@@ -969,7 +945,7 @@
 	},
 
 
-	"xproc":{
+	"xproc{}":{
 		"prefix":"xproc",
 		"body":[
 			"\\xproc{${1:arg}}"
@@ -1049,7 +1025,7 @@
 	},
 
 
-	"yproc":{
+	"yproc{}":{
 		"prefix":"yproc",
 		"body":[
 			"\\yproc{${1:arg}}"
@@ -1069,6 +1045,30 @@
 		"prefix":"zippedcity",
 		"body":[
 			"\\zippedcity"
+		]
+	},
+
+
+	"letter[]{}":{
+		"prefix":"letter",
+		"body":[
+			"\\letter[${2:options%keyvals}]{${1:content%text}}"
+		]
+	},
+
+
+	"invoice[]{}":{
+		"prefix":"invoice",
+		"body":[
+			"\\invoice[${2:options%keyvals}]{${1:content%text}}"
+		]
+	},
+
+
+	"itotal[]{}":{
+		"prefix":"itotal",
+		"body":[
+			"\\itotal[${2:text}]{${1:amount}}"
 		]
 	}
 }

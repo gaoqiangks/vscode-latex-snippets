@@ -1,7 +1,7 @@
 {
 
 
-	"edition":{
+	"edition{}":{
 		"prefix":"edition",
 		"body":[
 			"\\edition{${1:edition%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"Article":{
+	"Article{}":{
 		"prefix":"Article",
 		"body":[
 			"\\Article{${1:title}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"Article":{
-		"prefix":"Article",
-		"body":[
-			"\\Article[${2:options%keyvals}]{${1:title}}"
-		]
-	},
-
-
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords%text}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"TocAuthorEntry":{
+	"TocAuthorEntry{}{}":{
 		"prefix":"TocAuthorEntry",
 		"body":[
 			"\\TocAuthorEntry{${1:arg1}}{${2:arg2}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"citeimprint":{
+	"citeimprint{}":{
 		"prefix":"citeimprint",
 		"body":[
 			"\\citeimprint{${1:bibid}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"citearticleauthor":{
+	"citearticleauthor{}":{
 		"prefix":"citearticleauthor",
 		"body":[
 			"\\citearticleauthor{${1:bibid}}"
@@ -121,10 +113,18 @@
 	},
 
 
-	"publishersaddress":{
+	"publishersaddress{}":{
 		"prefix":"publishersaddress",
 		"body":[
 			"\\publishersaddress{${1:address%text}}"
+		]
+	},
+
+
+	"Article[]{}":{
+		"prefix":"Article",
+		"body":[
+			"\\Article[${2:options%keyvals}]{${1:title}}"
 		]
 	},
 
@@ -133,7 +133,7 @@
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-			"\t$1",
+				"\t$1",
 			"\\end{abstract}"
 		]
 	}

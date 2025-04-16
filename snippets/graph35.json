@@ -1,7 +1,7 @@
 {
 
 
-	"setgraphcolor":{
+	"setgraphcolor{}":{
 		"prefix":"setgraphcolor",
 		"body":[
 			"\\setgraphcolor{${1:color setting%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"calculator":{
+	"calculator{}":{
 		"prefix":"calculator",
 		"body":[
 			"\\calculator{${1:model}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"calculator":{
-		"prefix":"calculator",
-		"body":[
-			"\\calculator[${2:options%keyvals}]{${1:model}}"
-		]
-	},
-
-
-	"tikzcalculator":{
+	"tikzcalculator{}":{
 		"prefix":"tikzcalculator",
 		"body":[
 			"\\tikzcalculator{${1:model}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"key":{
+	"key{}":{
 		"prefix":"key",
 		"body":[
 			"\\key{${1:key%plain}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"key":{
-		"prefix":"key",
-		"body":[
-			"\\key[${2:options%keyvals}]{${1:key%plain}}"
-		]
-	},
-
-
-	"tikzkey":{
+	"tikzkey{}{}":{
 		"prefix":"tikzkey",
 		"body":[
 			"\\tikzkey{${1:key%plain}}{${2:coordinates}}"
@@ -57,15 +41,7 @@
 	},
 
 
-	"tikzkey":{
-		"prefix":"tikzkey",
-		"body":[
-			"\\tikzkey[${3:options%keyvals}]{${1:key%plain}}{${2:coordinates}}"
-		]
-	},
-
-
-	"menu":{
+	"menu{}{}":{
 		"prefix":"menu",
 		"body":[
 			"\\menu{${1:icon}}{${2:shortcut}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"tikzmenu":{
+	"tikzmenu{}{}{}":{
 		"prefix":"tikzmenu",
 		"body":[
 			"\\tikzmenu{${1:icon}}{${2:shortcut}}{${3:coordinates}}"
@@ -81,15 +57,7 @@
 	},
 
 
-	"tikzmenu":{
-		"prefix":"tikzmenu",
-		"body":[
-			"\\tikzmenu[${4:options%keyvals}]{${1:icon}}{${2:shortcut}}{${3:coordinates}}"
-		]
-	},
-
-
-	"function":{
+	"function{}":{
 		"prefix":"function",
 		"body":[
 			"\\function{${1:function}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"tikzfunction":{
+	"tikzfunction{}{}":{
 		"prefix":"tikzfunction",
 		"body":[
 			"\\tikzfunction{${1:function}}{${2:coordinates}}"
@@ -105,15 +73,7 @@
 	},
 
 
-	"tikzfunction":{
-		"prefix":"tikzfunction",
-		"body":[
-			"\\tikzfunction[${3:options%keyvals}]{${1:function}}{${2:coordinates}}"
-		]
-	},
-
-
-	"battery":{
+	"battery{}":{
 		"prefix":"battery",
 		"body":[
 			"\\battery{${1:state}}"
@@ -121,7 +81,7 @@
 	},
 
 
-	"tikzbattery":{
+	"tikzbattery{}{}":{
 		"prefix":"tikzbattery",
 		"body":[
 			"\\tikzbattery{${1:state}}{${2:coordinates}}"
@@ -129,7 +89,47 @@
 	},
 
 
-	"tikzbattery":{
+	"calculator[]{}":{
+		"prefix":"calculator",
+		"body":[
+			"\\calculator[${2:options%keyvals}]{${1:model}}"
+		]
+	},
+
+
+	"key[]{}":{
+		"prefix":"key",
+		"body":[
+			"\\key[${2:options%keyvals}]{${1:key%plain}}"
+		]
+	},
+
+
+	"tikzkey[]{}{}":{
+		"prefix":"tikzkey",
+		"body":[
+			"\\tikzkey[${3:options%keyvals}]{${1:key%plain}}{${2:coordinates}}"
+		]
+	},
+
+
+	"tikzmenu[]{}{}{}":{
+		"prefix":"tikzmenu",
+		"body":[
+			"\\tikzmenu[${4:options%keyvals}]{${1:icon}}{${2:shortcut}}{${3:coordinates}}"
+		]
+	},
+
+
+	"tikzfunction[]{}{}":{
+		"prefix":"tikzfunction",
+		"body":[
+			"\\tikzfunction[${3:options%keyvals}]{${1:function}}{${2:coordinates}}"
+		]
+	},
+
+
+	"tikzbattery[]{}{}":{
 		"prefix":"tikzbattery",
 		"body":[
 			"\\tikzbattery[${3:options%keyvals}]{${1:state}}{${2:coordinates}}"

@@ -73,7 +73,7 @@
 	},
 
 
-	"pmemlabel":{
+	"pmemlabel{}":{
 		"prefix":"pmemlabel",
 		"body":[
 			"\\pmemlabel{${1:label}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"newpmemlabel":{
+	"newpmemlabel{}{}":{
 		"prefix":"newpmemlabel",
 		"body":[
 			"\\newpmemlabel{${1:label}}{${2:page num}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"pmemlabelref":{
+	"pmemlabelref{}":{
 		"prefix":"pmemlabelref",
 		"body":[
 			"\\pmemlabelref{${1:label}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"changetext":{
+	"changetext{}{}{}{}{}":{
 		"prefix":"changetext",
 		"body":[
 			"\\changetext{${1:textheight%l}}{${2:textwidth%l}}{${3:evenmargin%l}}{${4:oddmargin%l}}{${5:colsep%l}}"
@@ -113,20 +113,10 @@
 	},
 
 
-	"changepage":{
+	"changepage{}{}{}{}{}{}{}{}{}":{
 		"prefix":"changepage",
 		"body":[
 			"\\changepage{${1:textheight%l}}{${2:textwidth%l}}{${3:evenmargin%l}}{${4:oddmargin%l}}{${5:colsep%l}}{${6:topmargin%l}}{${7:headheight%l}}{${8:headsep%l}}{${9:footskip%l}}"
-		]
-	},
-
-
-	"adjustwidth*":{
-		"prefix":"adjustwidth*",
-		"body":[
-			"\\begin{adjustwidth*}",
-			"\t$1",
-			"\\end{adjustwidth*}"
 		]
 	},
 
@@ -135,8 +125,18 @@
 		"prefix":"adjustwidth",
 		"body":[
 			"\\begin{adjustwidth}",
-			"\t$1",
+				"\t$1",
 			"\\end{adjustwidth}"
+		]
+	},
+
+
+	"adjustwidth*":{
+		"prefix":"adjustwidth",
+		"body":[
+			"\\begin{adjustwidth*}",
+				"\t$1",
+			"\\end{adjustwidth*}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"cpsspformat":{
+	"cpsspformat{}":{
 		"prefix":"cpsspformat",
 		"body":[
 			"\\cpsspformat{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"cpsspinput":{
+	"cpsspinput{}":{
 		"prefix":"cpsspinput",
 		"body":[
 			"\\cpsspinput{${1:file}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"cpsspinput":{
-		"prefix":"cpsspinput",
-		"body":[
-			"\\cpsspinput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"cpsspGap":{
+	"cpsspGap{}{}{}":{
 		"prefix":"cpsspGap",
 		"body":[
 			"\\cpsspGap{${1:y}}{${2:x1}}{${3:x2}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"cpsspBridge":{
+	"cpsspBridge{}{}{}":{
 		"prefix":"cpsspBridge",
 		"body":[
 			"\\cpsspBridge{${1:y}}{${2:x1}}{${3:x2}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"cpsspCoil":{
+	"cpsspCoil{}{}{}":{
 		"prefix":"cpsspCoil",
 		"body":[
 			"\\cpsspCoil{${1:y}}{${2:x1}}{${3:x2}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"cpsspSheet":{
+	"cpsspSheet{}{}{}":{
 		"prefix":"cpsspSheet",
 		"body":[
 			"\\cpsspSheet{${1:y}}{${2:x1}}{${3:x2}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"cpsspSheetT":{
+	"cpsspSheetT{}{}{}":{
 		"prefix":"cpsspSheetT",
 		"body":[
 			"\\cpsspSheetT{${1:y}}{${2:x1}}{${3:x2}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"cpsspThreeTenHelix":{
+	"cpsspThreeTenHelix{}{}{}":{
 		"prefix":"cpsspThreeTenHelix",
 		"body":[
 			"\\cpsspThreeTenHelix{${1:y}}{${2:x1}}{${3:x2}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"cpsspAlphaHelix":{
+	"cpsspAlphaHelix{}{}{}":{
 		"prefix":"cpsspAlphaHelix",
 		"body":[
 			"\\cpsspAlphaHelix{${1:y}}{${2:x1}}{${3:x2}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"cpsspPiHelix":{
+	"cpsspPiHelix{}{}{}":{
 		"prefix":"cpsspPiHelix",
 		"body":[
 			"\\cpsspPiHelix{${1:y}}{${2:x1}}{${3:x2}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"cpsspBend":{
+	"cpsspBend{}{}{}":{
 		"prefix":"cpsspBend",
 		"body":[
 			"\\cpsspBend{${1:y}}{${2:x1}}{${3:x2}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"cpsspTurn":{
+	"cpsspTurn{}{}{}":{
 		"prefix":"cpsspTurn",
 		"body":[
 			"\\cpsspTurn{${1:y}}{${2:x1}}{${3:x2}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"cpsspLabel":{
+	"cpsspLabel{}{}":{
 		"prefix":"cpsspLabel",
 		"body":[
 			"\\cpsspLabel{${1:y}}{${2:text}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"cpsspStartRes":{
+	"cpsspStartRes{}{}{}":{
 		"prefix":"cpsspStartRes",
 		"body":[
 			"\\cpsspStartRes{${1:y}}{${2:x}}{${3:text}}"
@@ -121,10 +113,18 @@
 	},
 
 
-	"cpsspEndRes":{
+	"cpsspEndRes{}{}{}":{
 		"prefix":"cpsspEndRes",
 		"body":[
 			"\\cpsspEndRes{${1:y}}{${2:x}}{${3:text}}"
+		]
+	},
+
+
+	"cpsspinput[]{}":{
+		"prefix":"cpsspinput",
+		"body":[
+			"\\cpsspinput[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -133,7 +133,17 @@
 		"prefix":"cpsspimage",
 		"body":[
 			"\\begin{cpsspimage}",
-			"\t$1",
+				"\t$1",
+			"\\end{cpsspimage}"
+		]
+	},
+
+
+	"cpsspimage":{
+		"prefix":"cpsspimage",
+		"body":[
+			"\\begin{cpsspimage}",
+				"\t$1",
 			"\\end{cpsspimage}"
 		]
 	}

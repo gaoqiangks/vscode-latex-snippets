@@ -9,15 +9,7 @@
 	},
 
 
-	"helpgrid":{
-		"prefix":"helpgrid",
-		"body":[
-			"\\helpgrid[${1:color}]"
-		]
-	},
-
-
-	"callout":{
+	"callout{}{}{}":{
 		"prefix":"callout",
 		"body":[
 			"\\callout{${1:center-coords}}{${2:note%text}}{${3:tip-coords}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"note":{
+	"note{}{}":{
 		"prefix":"note",
 		"body":[
 			"\\note{${1:coords}}{${2:note%text}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"arrow":{
+	"arrow{}{}":{
 		"prefix":"arrow",
 		"body":[
 			"\\arrow{${1:center-coords}}{${2:tip-coords}}"
@@ -81,11 +73,19 @@
 	},
 
 
+	"helpgrid[]":{
+		"prefix":"helpgrid",
+		"body":[
+			"\\helpgrid[${1:color}]"
+		]
+	},
+
+
 	"annotate":{
 		"prefix":"annotate",
 		"body":[
 			"\\begin{annotate}",
-			"\t$1",
+				"\t$1",
 			"\\end{annotate}"
 		]
 	}

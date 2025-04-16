@@ -169,7 +169,7 @@
 	},
 
 
-	"noRouteParameter":{
+	"noRouteParameter{}":{
 		"prefix":"noRouteParameter",
 		"body":[
 			"\\noRouteParameter{${1:text}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"noRouteResponse":{
+	"noRouteResponse{}":{
 		"prefix":"noRouteResponse",
 		"body":[
 			"\\noRouteResponse{${1:text}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"routeParamItem":{
+	"routeParamItem{}{}":{
 		"prefix":"routeParamItem",
 		"body":[
 			"\\routeParamItem{${1:name}}{${2:description%text}}"
@@ -321,7 +321,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -361,7 +361,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -393,61 +393,11 @@
 	},
 
 
-	"routeRequestBody":{
-		"prefix":"routeRequestBody",
-		"body":[
-			"\\begin{routeRequestBody}",
-			"\t$1",
-			"\\end{routeRequestBody}"
-		]
-	},
-
-
-	"routeResponseItemBody":{
-		"prefix":"routeResponseItemBody",
-		"body":[
-			"\\begin{routeResponseItemBody}",
-			"\t$1",
-			"\\end{routeResponseItemBody}"
-		]
-	},
-
-
-	"routeResponse":{
-		"prefix":"routeResponse",
-		"body":[
-			"\\begin{routeResponse}",
-			"\t$1",
-			"\\end{routeResponse}"
-		]
-	},
-
-
-	"routeResponseItem":{
-		"prefix":"routeResponseItem",
-		"body":[
-			"\\begin{routeResponseItem}",
-			"\t$1",
-			"\\end{routeResponseItem}"
-		]
-	},
-
-
-	"routeRequest":{
-		"prefix":"routeRequest",
-		"body":[
-			"\\begin{routeRequest}",
-			"\t$1",
-			"\\end{routeRequest}"
-		]
-	},
-
-
 	"apiRoute":{
 		"prefix":"apiRoute",
 		"body":[
 			"\\begin{apiRoute}",
-			"\t$1",
+				"\t$1",
 			"\\end{apiRoute}"
 		]
 	},
@@ -457,8 +407,58 @@
 		"prefix":"routeParameter",
 		"body":[
 			"\\begin{routeParameter}",
-			"\t$1",
+				"\t$1",
 			"\\end{routeParameter}"
+		]
+	},
+
+
+	"routeRequest":{
+		"prefix":"routeRequest",
+		"body":[
+			"\\begin{routeRequest}",
+				"\t$1",
+			"\\end{routeRequest}"
+		]
+	},
+
+
+	"routeRequestBody":{
+		"prefix":"routeRequestBody",
+		"body":[
+			"\\begin{routeRequestBody}",
+				"\t$1",
+			"\\end{routeRequestBody}"
+		]
+	},
+
+
+	"routeResponse":{
+		"prefix":"routeResponse",
+		"body":[
+			"\\begin{routeResponse}",
+				"\t$1",
+			"\\end{routeResponse}"
+		]
+	},
+
+
+	"routeResponseItem":{
+		"prefix":"routeResponseItem",
+		"body":[
+			"\\begin{routeResponseItem}",
+				"\t$1",
+			"\\end{routeResponseItem}"
+		]
+	},
+
+
+	"routeResponseItemBody":{
+		"prefix":"routeResponseItemBody",
+		"body":[
+			"\\begin{routeResponseItemBody}",
+				"\t$1",
+			"\\end{routeResponseItemBody}"
 		]
 	}
 }

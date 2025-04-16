@@ -1,7 +1,7 @@
 {
 
 
-	"mhtikzinput":{
+	"mhtikzinput{}":{
 		"prefix":"mhtikzinput",
 		"body":[
 			"\\mhtikzinput{${1:file}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"mhtikzinput":{
-		"prefix":"mhtikzinput",
-		"body":[
-			"\\mhtikzinput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"cmhtikzinput":{
+	"cmhtikzinput{}":{
 		"prefix":"cmhtikzinput",
 		"body":[
 			"\\cmhtikzinput{${1:file}}"
@@ -25,18 +17,26 @@
 	},
 
 
-	"cmhtikzinput":{
-		"prefix":"cmhtikzinput",
+	"libusetikzlibrary{}":{
+		"prefix":"libusetikzlibrary",
 		"body":[
-			"\\cmhtikzinput[${2:options%keyvals}]{${1:file}}"
+			"\\libusetikzlibrary{${1:library}}"
 		]
 	},
 
 
-	"libusetikzlibrary":{
-		"prefix":"libusetikzlibrary",
+	"mhtikzinput[]{}":{
+		"prefix":"mhtikzinput",
 		"body":[
-			"\\libusetikzlibrary{${1:library}}"
+			"\\mhtikzinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"cmhtikzinput[]{}":{
+		"prefix":"cmhtikzinput",
+		"body":[
+			"\\cmhtikzinput[${2:options%keyvals}]{${1:file}}"
 		]
 	}
 }

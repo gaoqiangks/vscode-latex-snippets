@@ -57,7 +57,7 @@
 	},
 
 
-	"SetDim":{
+	"SetDim{}":{
 		"prefix":"SetDim",
 		"body":[
 			"\\SetDim{${1:options%keyvals}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"step":{
+	"step{}{}":{
 		"prefix":"step",
 		"body":[
 			"\\step{${1:expression}}{${2:rule}}"
@@ -73,31 +73,7 @@
 	},
 
 
-	"step":{
-		"prefix":"step",
-		"body":[
-			"\\step{${1:expression}}{${2:rule}}[${3:label}]"
-		]
-	},
-
-
-	"step":{
-		"prefix":"step",
-		"body":[
-			"\\step[${3:line number}]{${1:expression}}{${2:rule}}"
-		]
-	},
-
-
-	"step":{
-		"prefix":"step",
-		"body":[
-			"\\step[${3:line number}]{${1:expression}}{${2:rule}}[${4:label}]"
-		]
-	},
-
-
-	"LineNum":{
+	"LineNum{}":{
 		"prefix":"LineNum",
 		"body":[
 			"\\LineNum{${1:number}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"newctr":{
+	"newctr{}":{
 		"prefix":"newctr",
 		"body":[
 			"\\newctr{${1:counter name}}"
@@ -233,11 +209,45 @@
 	},
 
 
+	"step{}{}[]":{
+		"prefix":"step",
+		"body":[
+			"\\step{${1:expression}}{${2:rule}}[${3:label}]"
+		]
+	},
+
+
+	"step[]{}{}":{
+		"prefix":"step",
+		"body":[
+			"\\step[${3:line number}]{${1:expression}}{${2:rule}}"
+		]
+	},
+
+
+	"step[]{}{}[]":{
+		"prefix":"step",
+		"body":[
+			"\\step[${3:line number}]{${1:expression}}{${2:rule}}[${4:label}]"
+		]
+	},
+
+
 	"synproof":{
 		"prefix":"synproof",
 		"body":[
 			"\\begin{synproof}",
-			"\t$1",
+				"\t$1",
+			"\\end{synproof}"
+		]
+	},
+
+
+	"synproof":{
+		"prefix":"synproof",
+		"body":[
+			"\\begin{synproof}",
+				"\t$1",
 			"\\end{synproof}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"sethandouttitle":{
+	"sethandouttitle{}":{
 		"prefix":"sethandouttitle",
 		"body":[
 			"\\sethandouttitle{${1:title%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"importhandout":{
+	"importhandout{}{}":{
 		"prefix":"importhandout",
 		"body":[
 			"\\importhandout{${1:unit number}}{${2:handout number}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"importonlyunits":{
+	"importonlyunits{}":{
 		"prefix":"importonlyunits",
 		"body":[
 			"\\importonlyunits{${1:unit numbers}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"importonlyhandouts":{
+	"importonlyhandouts{}":{
 		"prefix":"importonlyhandouts",
 		"body":[
 			"\\importonlyhandouts{${1:handout numbers}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"setunittitle":{
+	"setunittitle{}{}":{
 		"prefix":"setunittitle",
 		"body":[
 			"\\setunittitle{${1:unit number}}{${2:unit title%text}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"gnewcommand":{
+	"gnewcommand{}{}":{
 		"prefix":"gnewcommand",
 		"body":[
 			"\\gnewcommand{${1:cmd}}{${2:def}}"
@@ -193,23 +193,7 @@
 	},
 
 
-	"gnewcommand":{
-		"prefix":"gnewcommand",
-		"body":[
-			"\\gnewcommand{${1:cmd}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"gnewcommand":{
-		"prefix":"gnewcommand",
-		"body":[
-			"\\gnewcommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"grenewcommand":{
+	"grenewcommand{}{}":{
 		"prefix":"grenewcommand",
 		"body":[
 			"\\grenewcommand{${1:cmd}}{${2:def}}"
@@ -217,7 +201,23 @@
 	},
 
 
-	"grenewcommand":{
+	"gnewcommand{}[]{}":{
+		"prefix":"gnewcommand",
+		"body":[
+			"\\gnewcommand{${1:cmd}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"gnewcommand{}[][]{}":{
+		"prefix":"gnewcommand",
+		"body":[
+			"\\gnewcommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"grenewcommand{}[]{}":{
 		"prefix":"grenewcommand",
 		"body":[
 			"\\grenewcommand{${1:cmd}}[${3:args}]{${2:def}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"grenewcommand":{
+	"grenewcommand{}[][]{}":{
 		"prefix":"grenewcommand",
 		"body":[
 			"\\grenewcommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"

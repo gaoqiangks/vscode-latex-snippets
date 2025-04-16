@@ -9,7 +9,7 @@
 	},
 
 
-	"Rcmd":{
+	"Rcmd{}":{
 		"prefix":"Rcmd",
 		"body":[
 			"\\Rcmd{${1:R command%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Rvalue":{
+	"Rvalue{}":{
 		"prefix":"Rvalue",
 		"body":[
 			"\\Rvalue{${1:expr}}"
@@ -25,31 +25,7 @@
 	},
 
 
-	"Rvalue":{
-		"prefix":"Rvalue",
-		"body":[
-			"\\Rvalue[${2:sig figs}]{${1:expr}}"
-		]
-	},
-
-
-	"Rvalue*":{
-		"prefix":"Rvalue*",
-		"body":[
-			"\\Rvalue*{${1:expr}}"
-		]
-	},
-
-
-	"Rvalue*":{
-		"prefix":"Rvalue*",
-		"body":[
-			"\\Rvalue*[${2:sig figs}]{${1:expr}}"
-		]
-	},
-
-
-	"Rtable":{
+	"Rtable{}{}":{
 		"prefix":"Rtable",
 		"body":[
 			"\\Rtable{${1:col1,col2,...%definition}}{${2:number of rows}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"Rset":{
+	"Rset{}{}":{
 		"prefix":"Rset",
 		"body":[
 			"\\Rset{${1:variable}}{${2:expr}}"
@@ -65,34 +41,58 @@
 	},
 
 
-	"Rset":{
-		"prefix":"Rset",
+	"Rcode{}":{
+		"prefix":"Rcode",
 		"body":[
-			"\\Rset[${3:sig figs}]{${1:variable}}{${2:expr}}"
+			"\\Rcode{${1:R code%definition}}"
 		]
 	},
 
 
-	"Rset*":{
-		"prefix":"Rset*",
+	"Rvalue*{}":{
+		"prefix":"*Rvalue",
+		"body":[
+			"\\Rvalue*{${1:expr}}"
+		]
+	},
+
+
+	"Rvalue*[]{}":{
+		"prefix":"*Rvalue",
+		"body":[
+			"\\Rvalue*[${2:sig figs}]{${1:expr}}"
+		]
+	},
+
+
+	"Rset*{}{}":{
+		"prefix":"*Rset",
 		"body":[
 			"\\Rset*{${1:variable}}{${2:expr}}"
 		]
 	},
 
 
-	"Rset*":{
-		"prefix":"Rset*",
+	"Rset*[]{}{}":{
+		"prefix":"*Rset",
 		"body":[
 			"\\Rset*[${3:sig figs}]{${1:variable}}{${2:expr}}"
 		]
 	},
 
 
-	"Rcode":{
-		"prefix":"Rcode",
+	"Rvalue[]{}":{
+		"prefix":"Rvalue",
 		"body":[
-			"\\Rcode{${1:R code%definition}}"
+			"\\Rvalue[${2:sig figs}]{${1:expr}}"
+		]
+	},
+
+
+	"Rset[]{}{}":{
+		"prefix":"Rset",
+		"body":[
+			"\\Rset[${3:sig figs}]{${1:variable}}{${2:expr}}"
 		]
 	}
 }

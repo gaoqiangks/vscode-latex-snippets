@@ -297,7 +297,7 @@
 	},
 
 
-	"setpostvennhook":{
+	"setpostvennhook{}":{
 		"prefix":"setpostvennhook",
 		"body":[
 			"\\setpostvennhook{${1:code}}"
@@ -357,7 +357,7 @@
 		"prefix":"venndiagram3sets",
 		"body":[
 			"\\begin{venndiagram3sets}",
-			"\t$1",
+				"\t$1",
 			"\\end{venndiagram3sets}"
 		]
 	},
@@ -367,7 +367,27 @@
 		"prefix":"venndiagram2sets",
 		"body":[
 			"\\begin{venndiagram2sets}",
-			"\t$1",
+				"\t$1",
+			"\\end{venndiagram2sets}"
+		]
+	},
+
+
+	"venndiagram3sets":{
+		"prefix":"venndiagram3sets",
+		"body":[
+			"\\begin{venndiagram3sets}",
+				"\t$1",
+			"\\end{venndiagram3sets}"
+		]
+	},
+
+
+	"venndiagram2sets":{
+		"prefix":"venndiagram2sets",
+		"body":[
+			"\\begin{venndiagram2sets}",
+				"\t$1",
 			"\\end{venndiagram2sets}"
 		]
 	}

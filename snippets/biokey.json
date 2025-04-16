@@ -33,7 +33,7 @@
 	},
 
 
-	"DD":{
+	"DD{}":{
 		"prefix":"DD",
 		"body":[
 			"\\DD{${1:label}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"FK":{
+	"FK{}":{
 		"prefix":"FK",
 		"body":[
 			"\\FK{${1:comment%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"KOM":{
+	"KOM{}":{
 		"prefix":"KOM",
 		"body":[
 			"\\KOM{${1:comment%text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"SE":{
+	"SE{}{}":{
 		"prefix":"SE",
 		"body":[
 			"\\SE{${1:label}}{${2:reflabel%ref}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"SS":{
+	"SS{}":{
 		"prefix":"SS",
 		"body":[
 			"\\SS{${1:label}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"SSYLKA":{
+	"SSYLKA{}":{
 		"prefix":"SSYLKA",
 		"body":[
 			"\\SSYLKA{${1:label}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"STEZA":{
+	"STEZA{}{}":{
 		"prefix":"STEZA",
 		"body":[
 			"\\STEZA{${1:label}}{${2:reflabel%ref}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"TE":{
+	"TE{}":{
 		"prefix":"TE",
 		"body":[
 			"\\TE{${1:label}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"TEZA":{
+	"TEZA{}":{
 		"prefix":"TEZA",
 		"body":[
 			"\\TEZA{${1:label}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"VPRAVO":{
+	"VPRAVO{}":{
 		"prefix":"VPRAVO",
 		"body":[
 			"\\VPRAVO{${1:comment%text}}"
@@ -145,20 +145,10 @@
 	},
 
 
-	"ZZZ":{
+	"ZZZ{}":{
 		"prefix":"ZZZ",
 		"body":[
 			"\\ZZZ{${1:symbol}}"
-		]
-	},
-
-
-	"LE":{
-		"prefix":"LE",
-		"body":[
-			"\\begin{LE}",
-			"\t$1",
-			"\\end{LE}"
 		]
 	},
 
@@ -167,7 +157,7 @@
 		"prefix":"biokey",
 		"body":[
 			"\\begin{biokey}",
-			"\t$1",
+				"\t$1",
 			"\\end{biokey}"
 		]
 	},
@@ -177,8 +167,38 @@
 		"prefix":"SDVIG",
 		"body":[
 			"\\begin{SDVIG}",
-			"\t$1",
+				"\t$1",
 			"\\end{SDVIG}"
+		]
+	},
+
+
+	"LE":{
+		"prefix":"LE",
+		"body":[
+			"\\begin{LE}",
+				"\t$1",
+			"\\end{LE}"
+		]
+	},
+
+
+	"SDVIG":{
+		"prefix":"SDVIG",
+		"body":[
+			"\\begin{SDVIG}",
+				"\t$1",
+			"\\end{SDVIG}"
+		]
+	},
+
+
+	"LE":{
+		"prefix":"LE",
+		"body":[
+			"\\begin{LE}",
+				"\t$1",
+			"\\end{LE}"
 		]
 	}
 }

@@ -41,7 +41,7 @@
 	},
 
 
-	"btCiteSect":{
+	"btCiteSect{}":{
 		"prefix":"btCiteSect",
 		"body":[
 			"\\btCiteSect{${1:key%plain}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"btGetVal":{
+	"btGetVal{}":{
 		"prefix":"btGetVal",
 		"body":[
 			"\\btGetVal{${1:key%plain}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"btRef":{
+	"btRef{}{}":{
 		"prefix":"btRef",
 		"body":[
 			"\\btRef{${1:key%plain}}{${2:type}}"
@@ -73,11 +73,21 @@
 	},
 
 
+	"btSect":{
+		"prefix":"btSect",
+		"body":[
+			"\\begin{btSect}",
+				"\t$1",
+			"\\end{btSect}"
+		]
+	},
+
+
 	"btUnit":{
 		"prefix":"btUnit",
 		"body":[
 			"\\begin{btUnit}",
-			"\t$1",
+				"\t$1",
 			"\\end{btUnit}"
 		]
 	},
@@ -87,7 +97,7 @@
 		"prefix":"btSect",
 		"body":[
 			"\\begin{btSect}",
-			"\t$1",
+				"\t$1",
 			"\\end{btSect}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"IndexList":{
+	"IndexList{}{}":{
 		"prefix":"IndexList",
 		"body":[
 			"\\IndexList{${1:name}}{${2:list of entries}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"IndexList*":{
-		"prefix":"IndexList*",
-		"body":[
-			"\\IndexList*{${1:name}}{${2:list of entries}}"
-		]
-	},
-
-
-	"StopIndexList":{
+	"StopIndexList{}":{
 		"prefix":"StopIndexList",
 		"body":[
 			"\\StopIndexList{${1:lists}}"
@@ -33,10 +25,18 @@
 	},
 
 
-	"NoIndex":{
+	"NoIndex{}":{
 		"prefix":"NoIndex",
 		"body":[
 			"\\NoIndex{${1:text}}"
+		]
+	},
+
+
+	"IndexList*{}{}":{
+		"prefix":"*IndexList",
+		"body":[
+			"\\IndexList*{${1:name}}{${2:list of entries}}"
 		]
 	}
 }

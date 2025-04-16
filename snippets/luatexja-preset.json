@@ -49,7 +49,7 @@
 	},
 
 
-	"texteb":{
+	"texteb{}":{
 		"prefix":"texteb",
 		"body":[
 			"\\texteb{${1:text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"textlt":{
+	"textlt{}":{
 		"prefix":"textlt",
 		"body":[
 			"\\textlt{${1:text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"textmg":{
+	"textmg{}":{
 		"prefix":"textmg",
 		"body":[
 			"\\textmg{${1:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"ltjnewpreset":{
+	"ltjnewpreset{}{}":{
 		"prefix":"ltjnewpreset",
 		"body":[
 			"\\ltjnewpreset{${1:name%specialDef}}{${2:specification%keyvals}}"
@@ -89,18 +89,18 @@
 	},
 
 
-	"ltjnewpreset*":{
-		"prefix":"ltjnewpreset*",
+	"ltjapplypreset{}":{
+		"prefix":"ltjapplypreset",
 		"body":[
-			"\\ltjnewpreset*{${1:name%specialDef}}{${2:specification%keyvals}}"
+			"\\ltjapplypreset{${1:name%keyvals}}"
 		]
 	},
 
 
-	"ltjapplypreset":{
-		"prefix":"ltjapplypreset",
+	"ltjnewpreset*{}{}":{
+		"prefix":"*ltjnewpreset",
 		"body":[
-			"\\ltjapplypreset{${1:name%keyvals}}"
+			"\\ltjnewpreset*{${1:name%specialDef}}{${2:specification%keyvals}}"
 		]
 	}
 }

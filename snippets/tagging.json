@@ -1,7 +1,7 @@
 {
 
 
-	"tagged":{
+	"tagged{}{}":{
 		"prefix":"tagged",
 		"body":[
 			"\\tagged{${1:tag list}}{${2:source text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"untagged":{
+	"untagged{}{}":{
 		"prefix":"untagged",
 		"body":[
 			"\\untagged{${1:tag list}}{${2:alt text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"iftagged":{
+	"iftagged{}{}{}":{
 		"prefix":"iftagged",
 		"body":[
 			"\\iftagged{${1:tag list}}{${2:source text}}{${3:alt text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"usetag":{
+	"usetag{}":{
 		"prefix":"usetag",
 		"body":[
 			"\\usetag{${1:tag list}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"droptag":{
+	"droptag{}":{
 		"prefix":"droptag",
 		"body":[
 			"\\droptag{${1:tag list}}"
@@ -57,22 +57,22 @@
 	},
 
 
-	"untaggedblock":{
-		"prefix":"untaggedblock",
-		"body":[
-			"\\begin{untaggedblock}",
-			"\t$1",
-			"\\end{untaggedblock}"
-		]
-	},
-
-
 	"taggedblock":{
 		"prefix":"taggedblock",
 		"body":[
 			"\\begin{taggedblock}",
-			"\t$1",
+				"\t$1",
 			"\\end{taggedblock}"
+		]
+	},
+
+
+	"untaggedblock":{
+		"prefix":"untaggedblock",
+		"body":[
+			"\\begin{untaggedblock}",
+				"\t$1",
+			"\\end{untaggedblock}"
 		]
 	}
 }

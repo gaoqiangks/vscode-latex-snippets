@@ -1,15 +1,7 @@
 {
 
 
-	"black":{
-		"prefix":"black",
-		"body":[
-			"\\black[${2:glyph}]{${1:intersection-list}}"
-		]
-	},
-
-
-	"black":{
+	"black{}":{
 		"prefix":"black",
 		"body":[
 			"\\black{${1:intersection-list}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"blackstone":{
-		"prefix":"blackstone",
-		"body":[
-			"\\blackstone[${1:glyph}]"
-		]
-	},
-
-
-	"clear":{
+	"clear{}":{
 		"prefix":"clear",
 		"body":[
 			"\\clear{${1:intersection-list}}"
@@ -49,14 +33,6 @@
 	},
 
 
-	"cleargoban":{
-		"prefix":"cleargoban",
-		"body":[
-			"\\cleargoban[${1:intersection-pair}]"
-		]
-	},
-
-
 	"cleargobansymbols":{
 		"prefix":"cleargobansymbols",
 		"body":[
@@ -65,7 +41,7 @@
 	},
 
 
-	"copyfromgoban":{
+	"copyfromgoban{}":{
 		"prefix":"copyfromgoban",
 		"body":[
 			"\\copyfromgoban{${1:n}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"copygoban":{
+	"copygoban{}":{
 		"prefix":"copygoban",
 		"body":[
 			"\\copygoban{${1:n}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"copytogoban":{
+	"copytogoban{}":{
 		"prefix":"copytogoban",
 		"body":[
 			"\\copytogoban{${1:n}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"gobansize":{
+	"gobansize{}":{
 		"prefix":"gobansize",
 		"body":[
 			"\\gobansize{${1:n}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"gobansymbol":{
+	"gobansymbol{}{}":{
 		"prefix":"gobansymbol",
 		"body":[
 			"\\gobansymbol{${1:intersection-list}}{${2:symbol}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"gobansymbols":{
+	"gobansymbols{}{}":{
 		"prefix":"gobansymbols",
 		"body":[
 			"\\gobansymbols{${1:intersection-list}}{${2:symbol}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"igofontsize":{
+	"igofontsize{}":{
 		"prefix":"igofontsize",
 		"body":[
 			"\\igofontsize{${1:n}}"
@@ -241,14 +217,6 @@
 	},
 
 
-	"showgoban":{
-		"prefix":"showgoban",
-		"body":[
-			"\\showgoban[${1:intersection-pair}]"
-		]
-	},
-
-
 	"smallgoban":{
 		"prefix":"smallgoban",
 		"body":[
@@ -265,7 +233,7 @@
 	},
 
 
-	"usegoban":{
+	"usegoban{}":{
 		"prefix":"usegoban",
 		"body":[
 			"\\usegoban{${1:n}}"
@@ -281,15 +249,7 @@
 	},
 
 
-	"white":{
-		"prefix":"white",
-		"body":[
-			"\\white[${2:glyph}]{${1:intersection-list}}"
-		]
-	},
-
-
-	"white":{
+	"white{}":{
 		"prefix":"white",
 		"body":[
 			"\\white{${1:intersection-list}}"
@@ -305,14 +265,6 @@
 	},
 
 
-	"whitestone":{
-		"prefix":"whitestone",
-		"body":[
-			"\\whitestone[${1:glyph}]"
-		]
-	},
-
-
 	"breakrepeat":{
 		"prefix":"breakrepeat",
 		"body":[
@@ -321,7 +273,7 @@
 	},
 
 
-	"by":{
+	"by{}":{
 		"prefix":"by",
 		"body":[
 			"\\by{${1:step}}"
@@ -329,7 +281,7 @@
 	},
 
 
-	"downto":{
+	"downto{}":{
 		"prefix":"downto",
 		"body":[
 			"\\downto{${1:end}}"
@@ -337,7 +289,7 @@
 	},
 
 
-	"for":{
+	"for{}":{
 		"prefix":"for",
 		"body":[
 			"\\for{${1:var}}"
@@ -345,7 +297,7 @@
 	},
 
 
-	"from":{
+	"from{}":{
 		"prefix":"from",
 		"body":[
 			"\\from{${1:start}}"
@@ -353,7 +305,7 @@
 	},
 
 
-	"to":{
+	"to{}":{
 		"prefix":"to",
 		"body":[
 			"\\to{${1:end}}"
@@ -361,7 +313,7 @@
 	},
 
 
-	"until":{
+	"until{}":{
 		"prefix":"until",
 		"body":[
 			"\\until{${1:cond}}"
@@ -369,10 +321,58 @@
 	},
 
 
-	"while":{
+	"while{}":{
 		"prefix":"while",
 		"body":[
 			"\\while{${1:cond}}"
+		]
+	},
+
+
+	"black[]{}":{
+		"prefix":"black",
+		"body":[
+			"\\black[${2:glyph}]{${1:intersection-list}}"
+		]
+	},
+
+
+	"blackstone[]":{
+		"prefix":"blackstone",
+		"body":[
+			"\\blackstone[${1:glyph}]"
+		]
+	},
+
+
+	"cleargoban[]":{
+		"prefix":"cleargoban",
+		"body":[
+			"\\cleargoban[${1:intersection-pair}]"
+		]
+	},
+
+
+	"showgoban[]":{
+		"prefix":"showgoban",
+		"body":[
+			"\\showgoban[${1:intersection-pair}]"
+		]
+	},
+
+
+	"white[]{}":{
+		"prefix":"white",
+		"body":[
+			"\\white[${2:glyph}]{${1:intersection-list}}"
+		]
+	},
+
+
+	"whitestone[]":{
+		"prefix":"whitestone",
+		"body":[
+			"\\whitestone[${1:glyph}]"
 		]
 	}
 }

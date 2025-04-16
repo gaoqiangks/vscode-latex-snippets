@@ -1,18 +1,10 @@
 {
 
 
-	"ksforloop":{
+	"ksforloop{}{}{}":{
 		"prefix":"ksforloop",
 		"body":[
 			"\\ksforloop{${1:counter=start+step}}{${2:end}}{${3:code}}"
-		]
-	},
-
-
-	"ksforloop*":{
-		"prefix":"ksforloop*",
-		"body":[
-			"\\ksforloop*{${1:counter=start+step}}{${2:end}}{${3:code}}"
 		]
 	},
 
@@ -21,6 +13,14 @@
 		"prefix":"ksforquit",
 		"body":[
 			"\\ksforquit"
+		]
+	},
+
+
+	"ksforloop*{}{}{}":{
+		"prefix":"*ksforloop",
+		"body":[
+			"\\ksforloop*{${1:counter=start+step}}{${2:end}}{${3:code}}"
 		]
 	}
 }

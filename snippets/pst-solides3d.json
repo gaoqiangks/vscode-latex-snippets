@@ -1,7 +1,7 @@
 {
 
 
-	"axesIIID":{
+	"axesIIID()()":{
 		"prefix":"axesIIID",
 		"body":[
 			"\\axesIIID(${1:x1},${2:y1},${3:z1})(${4:x2},${5:y2},${6:z2})"
@@ -9,47 +9,7 @@
 	},
 
 
-	"axesIIID":{
-		"prefix":"axesIIID",
-		"body":[
-			"\\axesIIID[${1:options%keyvals}](${2:x1},${3:y1},${4:z1})(${5:x2},${6:y2},${7:z2})"
-		]
-	},
-
-
-	"psSolid":{
-		"prefix":"psSolid",
-		"body":[
-			"\\psSolid[${1:object=name}]"
-		]
-	},
-
-
-	"psSolid":{
-		"prefix":"psSolid",
-		"body":[
-			"\\psSolid[${1:object=name,options}]"
-		]
-	},
-
-
-	"psSolid":{
-		"prefix":"psSolid",
-		"body":[
-			"\\psSolid[${1:object=name}](${2:x},${3:y},${4:z})"
-		]
-	},
-
-
-	"psSolid":{
-		"prefix":"psSolid",
-		"body":[
-			"\\psSolid[${1:object=name,options}](${2:x},${3:y},${4:z})"
-		]
-	},
-
-
-	"codejps":{
+	"codejps{}":{
 		"prefix":"codejps",
 		"body":[
 			"\\codejps{${1:jps code}}"
@@ -57,7 +17,7 @@
 	},
 
 
-	"defFunction":{
+	"defFunction{}(){}{}{}":{
 		"prefix":"defFunction",
 		"body":[
 			"\\defFunction{${1:name%specialDef}}(${5:var}){${2:x}}{${3:y}}{${4:z}}"
@@ -65,42 +25,10 @@
 	},
 
 
-	"defFunction":{
-		"prefix":"defFunction",
-		"body":[
-			"\\defFunction[${5:options%keyvals}]{${1:name%specialDef}}(${6:var}){${2:x}}{${3:y}}{${4:z}}"
-		]
-	},
-
-
-	"psSurface":{
+	"psSurface()(){}":{
 		"prefix":"psSurface",
 		"body":[
 			"\\psSurface(${2:xmin},${3:ymin})(${4:xmax},${5:ymax}){${1:surface definition%definition}}"
-		]
-	},
-
-
-	"psSurface":{
-		"prefix":"psSurface",
-		"body":[
-			"\\psSurface[${2:options%keyvals}](${3:xmin},${4:ymin})(${5:xmax},${6:ymax}){${1:surface definition%definition}}"
-		]
-	},
-
-
-	"psImplicitSurface":{
-		"prefix":"psImplicitSurface",
-		"body":[
-			"\\psImplicitSurface[${1:options%keyvals}]"
-		]
-	},
-
-
-	"psImplicitSurface":{
-		"prefix":"psImplicitSurface",
-		"body":[
-			"\\psImplicitSurface[${1:options%keyvals}](${2:x},${3:y},${4:z})"
 		]
 	},
 
@@ -113,7 +41,7 @@
 	},
 
 
-	"psPoint":{
+	"psPoint(){}":{
 		"prefix":"psPoint",
 		"body":[
 			"\\psPoint(${2:x},${3:y},${4:z}){${1:name}}"
@@ -121,50 +49,10 @@
 	},
 
 
-	"psTransformPoint":{
+	"psTransformPoint()(){}":{
 		"prefix":"psTransformPoint",
 		"body":[
 			"\\psTransformPoint(${2:x},${3:y},${4:z})(${5:vx},${6:vy},${7:vz}){${1:name}}"
-		]
-	},
-
-
-	"psTransformPoint":{
-		"prefix":"psTransformPoint",
-		"body":[
-			"\\psTransformPoint[${2:options%keyvals}](${3:x},${4:y},${5:z})(${6:vx},${7:vy},${8:vz}){${1:name}}"
-		]
-	},
-
-
-	"psProjection":{
-		"prefix":"psProjection",
-		"body":[
-			"\\psProjection[${1:object=name}]"
-		]
-	},
-
-
-	"psProjection":{
-		"prefix":"psProjection",
-		"body":[
-			"\\psProjection[${1:object=name,options}]"
-		]
-	},
-
-
-	"psProjection":{
-		"prefix":"psProjection",
-		"body":[
-			"\\psProjection[${1:object=name}](${2:x},${3:y},${4:z})"
-		]
-	},
-
-
-	"psProjection":{
-		"prefix":"psProjection",
-		"body":[
-			"\\psProjection[${1:object=name,options}](${2:x},${3:y},${4:z})"
 		]
 	},
 
@@ -177,7 +65,7 @@
 	},
 
 
-	"gridIIID":{
+	"gridIIID()()":{
 		"prefix":"gridIIID",
 		"body":[
 			"\\gridIIID(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -185,47 +73,7 @@
 	},
 
 
-	"gridIIID":{
-		"prefix":"gridIIID",
-		"body":[
-			"\\gridIIID[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"psImage":{
-		"prefix":"psImage",
-		"body":[
-			"\\psImage[${1:filename=imagefile}]"
-		]
-	},
-
-
-	"psImage":{
-		"prefix":"psImage",
-		"body":[
-			"\\psImage[${1:filename=imagefile,options}]"
-		]
-	},
-
-
-	"psImage":{
-		"prefix":"psImage",
-		"body":[
-			"\\psImage[${1:filename=imagefile}](${2:x},${3:y})"
-		]
-	},
-
-
-	"psImage":{
-		"prefix":"psImage",
-		"body":[
-			"\\psImage[${1:filename=imagefile,options}](${2:x},${3:y})"
-		]
-	},
-
-
-	"Normale":{
+	"Normale()":{
 		"prefix":"Normale",
 		"body":[
 			"\\Normale(${1:radius},${2:longitude},${3:latitude})"
@@ -233,10 +81,162 @@
 	},
 
 
-	"addtosolideslistobject":{
+	"addtosolideslistobject{}":{
 		"prefix":"addtosolideslistobject",
 		"body":[
 			"\\addtosolideslistobject{${1:name}}"
+		]
+	},
+
+
+	"axesIIID[]()()":{
+		"prefix":"axesIIID",
+		"body":[
+			"\\axesIIID[${1:options%keyvals}](${2:x1},${3:y1},${4:z1})(${5:x2},${6:y2},${7:z2})"
+		]
+	},
+
+
+	"psSolid[]":{
+		"prefix":"psSolid",
+		"body":[
+			"\\psSolid[${1:object=name}]"
+		]
+	},
+
+
+	"psSolid[]":{
+		"prefix":"psSolid",
+		"body":[
+			"\\psSolid[${1:object=name,options}]"
+		]
+	},
+
+
+	"psSolid[]()":{
+		"prefix":"psSolid",
+		"body":[
+			"\\psSolid[${1:object=name}](${2:x},${3:y},${4:z})"
+		]
+	},
+
+
+	"psSolid[]()":{
+		"prefix":"psSolid",
+		"body":[
+			"\\psSolid[${1:object=name,options}](${2:x},${3:y},${4:z})"
+		]
+	},
+
+
+	"defFunction[]{}(){}{}{}":{
+		"prefix":"defFunction",
+		"body":[
+			"\\defFunction[${5:options%keyvals}]{${1:name%specialDef}}(${6:var}){${2:x}}{${3:y}}{${4:z}}"
+		]
+	},
+
+
+	"psSurface[]()(){}":{
+		"prefix":"psSurface",
+		"body":[
+			"\\psSurface[${2:options%keyvals}](${3:xmin},${4:ymin})(${5:xmax},${6:ymax}){${1:surface definition%definition}}"
+		]
+	},
+
+
+	"psImplicitSurface[]":{
+		"prefix":"psImplicitSurface",
+		"body":[
+			"\\psImplicitSurface[${1:options%keyvals}]"
+		]
+	},
+
+
+	"psImplicitSurface[]()":{
+		"prefix":"psImplicitSurface",
+		"body":[
+			"\\psImplicitSurface[${1:options%keyvals}](${2:x},${3:y},${4:z})"
+		]
+	},
+
+
+	"psTransformPoint[]()(){}":{
+		"prefix":"psTransformPoint",
+		"body":[
+			"\\psTransformPoint[${2:options%keyvals}](${3:x},${4:y},${5:z})(${6:vx},${7:vy},${8:vz}){${1:name}}"
+		]
+	},
+
+
+	"psProjection[]":{
+		"prefix":"psProjection",
+		"body":[
+			"\\psProjection[${1:object=name}]"
+		]
+	},
+
+
+	"psProjection[]":{
+		"prefix":"psProjection",
+		"body":[
+			"\\psProjection[${1:object=name,options}]"
+		]
+	},
+
+
+	"psProjection[]()":{
+		"prefix":"psProjection",
+		"body":[
+			"\\psProjection[${1:object=name}](${2:x},${3:y},${4:z})"
+		]
+	},
+
+
+	"psProjection[]()":{
+		"prefix":"psProjection",
+		"body":[
+			"\\psProjection[${1:object=name,options}](${2:x},${3:y},${4:z})"
+		]
+	},
+
+
+	"gridIIID[]()()":{
+		"prefix":"gridIIID",
+		"body":[
+			"\\gridIIID[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		]
+	},
+
+
+	"psImage[]":{
+		"prefix":"psImage",
+		"body":[
+			"\\psImage[${1:filename=imagefile}]"
+		]
+	},
+
+
+	"psImage[]":{
+		"prefix":"psImage",
+		"body":[
+			"\\psImage[${1:filename=imagefile,options}]"
+		]
+	},
+
+
+	"psImage[]()":{
+		"prefix":"psImage",
+		"body":[
+			"\\psImage[${1:filename=imagefile}](${2:x},${3:y})"
+		]
+	},
+
+
+	"psImage[]()":{
+		"prefix":"psImage",
+		"body":[
+			"\\psImage[${1:filename=imagefile,options}](${2:x},${3:y})"
 		]
 	}
 }

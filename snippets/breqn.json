@@ -1,7 +1,7 @@
 {
 
 
-	"breqnsetup":{
+	"breqnsetup{}":{
 		"prefix":"breqnsetup",
 		"body":[
 			"\\breqnsetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"condition":{
+	"condition{}":{
 		"prefix":"condition",
 		"body":[
 			"\\condition{${1:text}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"condition":{
-		"prefix":"condition",
-		"body":[
-			"\\condition[${2:punctuation mark}]{${1:text}}"
-		]
-	},
-
-
-	"condition*":{
-		"prefix":"condition*",
-		"body":[
-			"\\condition*{${1:formula}}"
-		]
-	},
-
-
-	"hiderel":{
+	"hiderel{}":{
 		"prefix":"hiderel",
 		"body":[
 			"\\hiderel{${1:rel symbol}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"intertext":{
+	"intertext{}":{
 		"prefix":"intertext",
 		"body":[
 			"\\intertext{${1:text}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"debugwr":{
+	"debugwr{}":{
 		"prefix":"debugwr",
 		"body":[
 			"\\debugwr{${1:text}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"DeclareTwang":{
+	"DeclareTwang{}{}":{
 		"prefix":"DeclareTwang",
 		"body":[
 			"\\DeclareTwang{${1:symbol}}{${2:number}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"eqframe":{
+	"eqframe{}{}":{
 		"prefix":"eqframe",
 		"body":[
 			"\\eqframe{${1:width}}{${2:height}}"
@@ -369,7 +353,7 @@
 	},
 
 
-	"nref":{
+	"nref{}":{
 		"prefix":"nref",
 		"body":[
 			"\\nref{${1:label}}"
@@ -409,7 +393,7 @@
 	},
 
 
-	"replicate":{
+	"replicate{}":{
 		"prefix":"replicate",
 		"body":[
 			"\\replicate{${1:token list}}"
@@ -425,22 +409,48 @@
 	},
 
 
-	"dgroup*":{
-		"prefix":"dgroup*",
+	"condition*{}":{
+		"prefix":"*condition",
 		"body":[
-			"\\begin{dgroup*}",
-			"\t$1",
-			"\\end{dgroup*}"
+			"\\condition*{${1:formula}}"
 		]
 	},
 
 
-	"dmath*":{
-		"prefix":"dmath*",
+	"condition[]{}":{
+		"prefix":"condition",
 		"body":[
-			"\\begin{dmath*}",
-			"\t$1",
-			"\\end{dmath*}"
+			"\\condition[${2:punctuation mark}]{${1:text}}"
+		]
+	},
+
+
+	"dmath":{
+		"prefix":"dmath",
+		"body":[
+			"\\begin{dmath}",
+				"\t$1",
+			"\\end{dmath}"
+		]
+	},
+
+
+	"dseries":{
+		"prefix":"dseries",
+		"body":[
+			"\\begin{dseries}",
+				"\t$1",
+			"\\end{dseries}"
+		]
+	},
+
+
+	"dgroup":{
+		"prefix":"dgroup",
+		"body":[
+			"\\begin{dgroup}",
+				"\t$1",
+			"\\end{dgroup}"
 		]
 	},
 
@@ -449,17 +459,57 @@
 		"prefix":"darray",
 		"body":[
 			"\\begin{darray}",
-			"\t$1",
+				"\t$1",
 			"\\end{darray}"
 		]
 	},
 
 
+	"dsuspend":{
+		"prefix":"dsuspend",
+		"body":[
+			"\\begin{dsuspend}",
+				"\t$1",
+			"\\end{dsuspend}"
+		]
+	},
+
+
+	"dmath*":{
+		"prefix":"*dmath",
+		"body":[
+			"\\begin{dmath*}",
+				"\t$1",
+			"\\end{dmath*}"
+		]
+	},
+
+
+	"dseries*":{
+		"prefix":"*dseries",
+		"body":[
+			"\\begin{dseries*}",
+				"\t$1",
+			"\\end{dseries*}"
+		]
+	},
+
+
+	"dgroup*":{
+		"prefix":"*dgroup",
+		"body":[
+			"\\begin{dgroup*}",
+				"\t$1",
+			"\\end{dgroup*}"
+		]
+	},
+
+
 	"darray*":{
-		"prefix":"darray*",
+		"prefix":"*darray",
 		"body":[
 			"\\begin{darray*}",
-			"\t$1",
+				"\t$1",
 			"\\end{darray*}"
 		]
 	},
@@ -469,38 +519,18 @@
 		"prefix":"dmath",
 		"body":[
 			"\\begin{dmath}",
-			"\t$1",
+				"\t$1",
 			"\\end{dmath}"
 		]
 	},
 
 
-	"dseries*":{
-		"prefix":"dseries*",
+	"dmath*":{
+		"prefix":"dmath",
 		"body":[
-			"\\begin{dseries*}",
-			"\t$1",
-			"\\end{dseries*}"
-		]
-	},
-
-
-	"dsuspend":{
-		"prefix":"dsuspend",
-		"body":[
-			"\\begin{dsuspend}",
-			"\t$1",
-			"\\end{dsuspend}"
-		]
-	},
-
-
-	"dgroup":{
-		"prefix":"dgroup",
-		"body":[
-			"\\begin{dgroup}",
-			"\t$1",
-			"\\end{dgroup}"
+			"\\begin{dmath*}",
+				"\t$1",
+			"\\end{dmath*}"
 		]
 	},
 
@@ -509,8 +539,58 @@
 		"prefix":"dseries",
 		"body":[
 			"\\begin{dseries}",
-			"\t$1",
+				"\t$1",
 			"\\end{dseries}"
+		]
+	},
+
+
+	"dseries*":{
+		"prefix":"dseries",
+		"body":[
+			"\\begin{dseries*}",
+				"\t$1",
+			"\\end{dseries*}"
+		]
+	},
+
+
+	"dgroup":{
+		"prefix":"dgroup",
+		"body":[
+			"\\begin{dgroup}",
+				"\t$1",
+			"\\end{dgroup}"
+		]
+	},
+
+
+	"dgroup*":{
+		"prefix":"dgroup",
+		"body":[
+			"\\begin{dgroup*}",
+				"\t$1",
+			"\\end{dgroup*}"
+		]
+	},
+
+
+	"darray":{
+		"prefix":"darray",
+		"body":[
+			"\\begin{darray}",
+				"\t$1",
+			"\\end{darray}"
+		]
+	},
+
+
+	"darray*":{
+		"prefix":"darray",
+		"body":[
+			"\\begin{darray*}",
+				"\t$1",
+			"\\end{darray*}"
 		]
 	}
 }

@@ -1,18 +1,10 @@
 {
 
 
-	"interrowspace":{
+	"interrowspace{}":{
 		"prefix":"interrowspace",
 		"body":[
 			"\\interrowspace{${1:height spec%keyvals}}"
-		]
-	},
-
-
-	"interrowspace":{
-		"prefix":"interrowspace",
-		"body":[
-			"\\interrowspace[${2:line num list}]{${1:height spec%keyvals}}"
 		]
 	},
 
@@ -25,26 +17,10 @@
 	},
 
 
-	"interrowfill":{
-		"prefix":"interrowfill",
-		"body":[
-			"\\interrowfill[${1:line num list}]"
-		]
-	},
-
-
 	"interrowstart":{
 		"prefix":"interrowstart",
 		"body":[
 			"\\interrowstart"
-		]
-	},
-
-
-	"interrowstart":{
-		"prefix":"interrowstart",
-		"body":[
-			"\\interrowstart[${1:line num list}]"
 		]
 	},
 
@@ -57,21 +33,45 @@
 	},
 
 
-	"tabularhtx":{
-		"prefix":"tabularhtx",
+	"interrowspace[]{}":{
+		"prefix":"interrowspace",
 		"body":[
-			"\\begin{tabularhtx}",
-			"\t$1",
-			"\\end{tabularhtx}"
+			"\\interrowspace[${2:line num list}]{${1:height spec%keyvals}}"
+		]
+	},
+
+
+	"interrowfill[]":{
+		"prefix":"interrowfill",
+		"body":[
+			"\\interrowfill[${1:line num list}]"
+		]
+	},
+
+
+	"interrowstart[]":{
+		"prefix":"interrowstart",
+		"body":[
+			"\\interrowstart[${1:line num list}]"
+		]
+	},
+
+
+	"tabularht":{
+		"prefix":"tabularht",
+		"body":[
+			"\\begin{tabularht}",
+				"\t$1",
+			"\\end{tabularht}"
 		]
 	},
 
 
 	"tabularht*":{
-		"prefix":"tabularht*",
+		"prefix":"tabularht",
 		"body":[
 			"\\begin{tabularht*}",
-			"\t$1",
+				"\t$1",
 			"\\end{tabularht*}"
 		]
 	},
@@ -81,18 +81,18 @@
 		"prefix":"arrayht",
 		"body":[
 			"\\begin{arrayht}",
-			"\t$1",
+				"\t$1",
 			"\\end{arrayht}"
 		]
 	},
 
 
-	"tabularht":{
-		"prefix":"tabularht",
+	"tabularhtx":{
+		"prefix":"tabularhtx",
 		"body":[
-			"\\begin{tabularht}",
-			"\t$1",
-			"\\end{tabularht}"
+			"\\begin{tabularhtx}",
+				"\t$1",
+			"\\end{tabularhtx}"
 		]
 	}
 }

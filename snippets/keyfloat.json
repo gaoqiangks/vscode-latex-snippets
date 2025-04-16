@@ -1,7 +1,7 @@
 {
 
 
-	"keyfig":{
+	"keyfig{}{}":{
 		"prefix":"keyfig",
 		"body":[
 			"\\keyfig{${1:keyvals}}{${2:imagefile}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"keyfig":{
-		"prefix":"keyfig",
-		"body":[
-			"\\keyfig[${3:loc}]{${1:keyvals}}{${2:imagefile}}"
-		]
-	},
-
-
-	"keyfig*":{
-		"prefix":"keyfig*",
-		"body":[
-			"\\keyfig*{${1:keyvals}}{${2:imagefile}}"
-		]
-	},
-
-
-	"keyfig*":{
-		"prefix":"keyfig*",
-		"body":[
-			"\\keyfig*[${3:loc}]{${1:keyvals}}{${2:imagefile}}"
-		]
-	},
-
-
-	"keytab":{
+	"keytab{}{}":{
 		"prefix":"keytab",
 		"body":[
 			"\\keytab{${1:keyvals}}{${2:tabular contents}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"keytab":{
-		"prefix":"keytab",
-		"body":[
-			"\\keytab[${3:loc}]{${1:keyvals}}{${2:tabular contents}}"
-		]
-	},
-
-
-	"keytab*":{
-		"prefix":"keytab*",
-		"body":[
-			"\\keytab*{${1:keyvals}}{${2:tabular contents}}"
-		]
-	},
-
-
-	"keytab*":{
-		"prefix":"keytab*",
-		"body":[
-			"\\keytab*[${3:loc}]{${1:keyvals}}{${2:tabular contents}}"
-		]
-	},
-
-
-	"keyflt":{
+	"keyflt{}{}{}":{
 		"prefix":"keyflt",
 		"body":[
 			"\\keyflt{${1:float type}}{${2:keyvals}}{${3:contents}}"
@@ -73,31 +25,7 @@
 	},
 
 
-	"keyflt":{
-		"prefix":"keyflt",
-		"body":[
-			"\\keyflt[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}"
-		]
-	},
-
-
-	"keyflt*":{
-		"prefix":"keyflt*",
-		"body":[
-			"\\keyflt*{${1:float type}}{${2:keyvals}}{${3:contents}}"
-		]
-	},
-
-
-	"keyflt*":{
-		"prefix":"keyflt*",
-		"body":[
-			"\\keyflt*[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}"
-		]
-	},
-
-
-	"keyfigbox":{
+	"keyfigbox{}{}":{
 		"prefix":"keyfigbox",
 		"body":[
 			"\\keyfigbox{${1:keyvals}}{${2:box contents}}"
@@ -105,31 +33,7 @@
 	},
 
 
-	"keyfigbox":{
-		"prefix":"keyfigbox",
-		"body":[
-			"\\keyfigbox[${3:loc}]{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"keyfigbox*":{
-		"prefix":"keyfigbox*",
-		"body":[
-			"\\keyfigbox*{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"keyfigbox*":{
-		"prefix":"keyfigbox*",
-		"body":[
-			"\\keyfigbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"keyparbox":{
+	"keyparbox{}{}":{
 		"prefix":"keyparbox",
 		"body":[
 			"\\keyparbox{${1:keyvals}}{${2:box contents}}"
@@ -137,31 +41,7 @@
 	},
 
 
-	"keyparbox":{
-		"prefix":"keyparbox",
-		"body":[
-			"\\keyparbox[${3:loc}]{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"keyparbox*":{
-		"prefix":"keyparbox*",
-		"body":[
-			"\\keyparbox*{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"keyparbox*":{
-		"prefix":"keyparbox*",
-		"body":[
-			"\\keyparbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}"
-		]
-	},
-
-
-	"KFLTtightframe":{
+	"KFLTtightframe{}":{
 		"prefix":"KFLTtightframe",
 		"body":[
 			"\\KFLTtightframe{${1:contents}}"
@@ -169,7 +49,7 @@
 	},
 
 
-	"KFLTlooseframe":{
+	"KFLTlooseframe{}":{
 		"prefix":"KFLTlooseframe",
 		"body":[
 			"\\KFLTlooseframe{${1:contents}}"
@@ -201,62 +81,142 @@
 	},
 
 
+	"keyfig*{}{}":{
+		"prefix":"*keyfig",
+		"body":[
+			"\\keyfig*{${1:keyvals}}{${2:imagefile}}"
+		]
+	},
+
+
+	"keyfig*[]{}{}":{
+		"prefix":"*keyfig",
+		"body":[
+			"\\keyfig*[${3:loc}]{${1:keyvals}}{${2:imagefile}}"
+		]
+	},
+
+
+	"keytab*{}{}":{
+		"prefix":"*keytab",
+		"body":[
+			"\\keytab*{${1:keyvals}}{${2:tabular contents}}"
+		]
+	},
+
+
+	"keytab*[]{}{}":{
+		"prefix":"*keytab",
+		"body":[
+			"\\keytab*[${3:loc}]{${1:keyvals}}{${2:tabular contents}}"
+		]
+	},
+
+
+	"keyflt*{}{}{}":{
+		"prefix":"*keyflt",
+		"body":[
+			"\\keyflt*{${1:float type}}{${2:keyvals}}{${3:contents}}"
+		]
+	},
+
+
+	"keyflt*[]{}{}{}":{
+		"prefix":"*keyflt",
+		"body":[
+			"\\keyflt*[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}"
+		]
+	},
+
+
+	"keyfigbox*{}{}":{
+		"prefix":"*keyfigbox",
+		"body":[
+			"\\keyfigbox*{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
+	"keyfigbox*[]{}{}":{
+		"prefix":"*keyfigbox",
+		"body":[
+			"\\keyfigbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
+	"keyparbox*{}{}":{
+		"prefix":"*keyparbox",
+		"body":[
+			"\\keyparbox*{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
+	"keyparbox*[]{}{}":{
+		"prefix":"*keyparbox",
+		"body":[
+			"\\keyparbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
+	"keyfig[]{}{}":{
+		"prefix":"keyfig",
+		"body":[
+			"\\keyfig[${3:loc}]{${1:keyvals}}{${2:imagefile}}"
+		]
+	},
+
+
+	"keytab[]{}{}":{
+		"prefix":"keytab",
+		"body":[
+			"\\keytab[${3:loc}]{${1:keyvals}}{${2:tabular contents}}"
+		]
+	},
+
+
+	"keyflt[]{}{}{}":{
+		"prefix":"keyflt",
+		"body":[
+			"\\keyflt[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}"
+		]
+	},
+
+
+	"keyfigbox[]{}{}":{
+		"prefix":"keyfigbox",
+		"body":[
+			"\\keyfigbox[${3:loc}]{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
+	"keyparbox[]{}{}":{
+		"prefix":"keyparbox",
+		"body":[
+			"\\keyparbox[${3:loc}]{${1:keyvals}}{${2:box contents}}"
+		]
+	},
+
+
 	"keyfigure":{
 		"prefix":"keyfigure",
 		"body":[
 			"\\begin{keyfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{keyfigure}"
 		]
 	},
 
 
-	"keysubfloats":{
-		"prefix":"keysubfloats",
+	"keyfigure":{
+		"prefix":"keyfigure",
 		"body":[
-			"\\begin{keysubfloats}",
-			"\t$1",
-			"\\end{keysubfloats}"
-		]
-	},
-
-
-	"keysubtabs":{
-		"prefix":"keysubtabs",
-		"body":[
-			"\\begin{keysubtabs}",
-			"\t$1",
-			"\\end{keysubtabs}"
-		]
-	},
-
-
-	"keyfloats":{
-		"prefix":"keyfloats",
-		"body":[
-			"\\begin{keyfloats}",
-			"\t$1",
-			"\\end{keyfloats}"
-		]
-	},
-
-
-	"margintable":{
-		"prefix":"margintable",
-		"body":[
-			"\\begin{margintable}",
-			"\t$1",
-			"\\end{margintable}"
-		]
-	},
-
-
-	"keywrap":{
-		"prefix":"keywrap",
-		"body":[
-			"\\begin{keywrap}",
-			"\t$1",
-			"\\end{keywrap}"
+			"\\begin{keyfigure}",
+				"\t$1",
+			"\\end{keyfigure}"
 		]
 	},
 
@@ -265,7 +225,17 @@
 		"prefix":"keytable",
 		"body":[
 			"\\begin{keytable}",
-			"\t$1",
+				"\t$1",
+			"\\end{keytable}"
+		]
+	},
+
+
+	"keytable":{
+		"prefix":"keytable",
+		"body":[
+			"\\begin{keytable}",
+				"\t$1",
 			"\\end{keytable}"
 		]
 	},
@@ -275,38 +245,28 @@
 		"prefix":"keyfloat",
 		"body":[
 			"\\begin{keyfloat}",
-			"\t$1",
+				"\t$1",
 			"\\end{keyfloat}"
 		]
 	},
 
 
-	"tablehere":{
-		"prefix":"tablehere",
+	"keyfloat":{
+		"prefix":"keyfloat",
 		"body":[
-			"\\begin{tablehere}",
-			"\t$1",
-			"\\end{tablehere}"
+			"\\begin{keyfloat}",
+				"\t$1",
+			"\\end{keyfloat}"
 		]
 	},
 
 
-	"figurehere":{
-		"prefix":"figurehere",
+	"keyfloats":{
+		"prefix":"keyfloats",
 		"body":[
-			"\\begin{figurehere}",
-			"\t$1",
-			"\\end{figurehere}"
-		]
-	},
-
-
-	"marginfigure":{
-		"prefix":"marginfigure",
-		"body":[
-			"\\begin{marginfigure}",
-			"\t$1",
-			"\\end{marginfigure}"
+			"\\begin{keyfloats}",
+				"\t$1",
+			"\\end{keyfloats}"
 		]
 	},
 
@@ -315,8 +275,378 @@
 		"prefix":"keysubfigs",
 		"body":[
 			"\\begin{keysubfigs}",
-			"\t$1",
+				"\t$1",
 			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keywrap":{
+		"prefix":"keywrap",
+		"body":[
+			"\\begin{keywrap}",
+				"\t$1",
+			"\\end{keywrap}"
+		]
+	},
+
+
+	"marginfigure":{
+		"prefix":"marginfigure",
+		"body":[
+			"\\begin{marginfigure}",
+				"\t$1",
+			"\\end{marginfigure}"
+		]
+	},
+
+
+	"margintable":{
+		"prefix":"margintable",
+		"body":[
+			"\\begin{margintable}",
+				"\t$1",
+			"\\end{margintable}"
+		]
+	},
+
+
+	"figurehere":{
+		"prefix":"figurehere",
+		"body":[
+			"\\begin{figurehere}",
+				"\t$1",
+			"\\end{figurehere}"
+		]
+	},
+
+
+	"tablehere":{
+		"prefix":"tablehere",
+		"body":[
+			"\\begin{tablehere}",
+				"\t$1",
+			"\\end{tablehere}"
+		]
+	},
+
+
+	"keyfigure":{
+		"prefix":"keyfigure",
+		"body":[
+			"\\begin{keyfigure}",
+				"\t$1",
+			"\\end{keyfigure}"
+		]
+	},
+
+
+	"keyfigure":{
+		"prefix":"keyfigure",
+		"body":[
+			"\\begin{keyfigure}",
+				"\t$1",
+			"\\end{keyfigure}"
+		]
+	},
+
+
+	"keytable":{
+		"prefix":"keytable",
+		"body":[
+			"\\begin{keytable}",
+				"\t$1",
+			"\\end{keytable}"
+		]
+	},
+
+
+	"keytable":{
+		"prefix":"keytable",
+		"body":[
+			"\\begin{keytable}",
+				"\t$1",
+			"\\end{keytable}"
+		]
+	},
+
+
+	"keyfloat":{
+		"prefix":"keyfloat",
+		"body":[
+			"\\begin{keyfloat}",
+				"\t$1",
+			"\\end{keyfloat}"
+		]
+	},
+
+
+	"keyfloat":{
+		"prefix":"keyfloat",
+		"body":[
+			"\\begin{keyfloat}",
+				"\t$1",
+			"\\end{keyfloat}"
+		]
+	},
+
+
+	"keyfloats":{
+		"prefix":"keyfloats",
+		"body":[
+			"\\begin{keyfloats}",
+				"\t$1",
+			"\\end{keyfloats}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubfigs":{
+		"prefix":"keysubfigs",
+		"body":[
+			"\\begin{keysubfigs}",
+				"\t$1",
+			"\\end{keysubfigs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubtabs":{
+		"prefix":"keysubtabs",
+		"body":[
+			"\\begin{keysubtabs}",
+				"\t$1",
+			"\\end{keysubtabs}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"keysubfloats":{
+		"prefix":"keysubfloats",
+		"body":[
+			"\\begin{keysubfloats}",
+				"\t$1",
+			"\\end{keysubfloats}"
+		]
+	},
+
+
+	"marginfigure":{
+		"prefix":"marginfigure",
+		"body":[
+			"\\begin{marginfigure}",
+				"\t$1",
+			"\\end{marginfigure}"
+		]
+	},
+
+
+	"margintable":{
+		"prefix":"margintable",
+		"body":[
+			"\\begin{margintable}",
+				"\t$1",
+			"\\end{margintable}"
 		]
 	}
 }

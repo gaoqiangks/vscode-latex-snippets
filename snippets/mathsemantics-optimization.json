@@ -33,7 +33,7 @@
 	},
 
 
-	"radialcone":{
+	"radialcone{}{}":{
 		"prefix":"radialcone",
 		"body":[
 			"\\radialcone{${1:sub}}{${2:arg}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"radialcone":{
-		"prefix":"radialcone",
-		"body":[
-			"\\radialcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
-		]
-	},
-
-
-	"tangentcone":{
+	"tangentcone{}{}":{
 		"prefix":"tangentcone",
 		"body":[
 			"\\tangentcone{${1:sub}}{${2:arg}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"tangentcone":{
-		"prefix":"tangentcone",
-		"body":[
-			"\\tangentcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
-		]
-	},
-
-
-	"linearizingcone":{
+	"linearizingcone{}{}":{
 		"prefix":"linearizingcone",
 		"body":[
 			"\\linearizingcone{${1:sub}}{${2:arg}}"
@@ -73,15 +57,7 @@
 	},
 
 
-	"linearizingcone":{
-		"prefix":"linearizingcone",
-		"body":[
-			"\\linearizingcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
-		]
-	},
-
-
-	"normalcone":{
+	"normalcone{}{}":{
 		"prefix":"normalcone",
 		"body":[
 			"\\normalcone{${1:sub}}{${2:arg}}"
@@ -89,18 +65,42 @@
 	},
 
 
-	"normalcone":{
-		"prefix":"normalcone",
+	"polarcone{}":{
+		"prefix":"polarcone",
 		"body":[
-			"\\normalcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
+			"\\polarcone{${1:arg}}"
 		]
 	},
 
 
-	"polarcone":{
-		"prefix":"polarcone",
+	"radialcone[]{}{}":{
+		"prefix":"radialcone",
 		"body":[
-			"\\polarcone{${1:arg}}"
+			"\\radialcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
+		]
+	},
+
+
+	"tangentcone[]{}{}":{
+		"prefix":"tangentcone",
+		"body":[
+			"\\tangentcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
+		]
+	},
+
+
+	"linearizingcone[]{}{}":{
+		"prefix":"linearizingcone",
+		"body":[
+			"\\linearizingcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
+		]
+	},
+
+
+	"normalcone[]{}{}":{
+		"prefix":"normalcone",
+		"body":[
+			"\\normalcone[${3:scale%keyvals}]{${1:sub}}{${2:arg}}"
 		]
 	}
 }

@@ -33,7 +33,7 @@
 	},
 
 
-	"Opt":{
+	"Opt{}":{
 		"prefix":"Opt",
 		"body":[
 			"\\Opt{${1:option}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"Arg":{
+	"Arg{}":{
 		"prefix":"Arg",
 		"body":[
 			"\\Arg{${1:argument}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"OptArg":{
+	"OptArg{}{}":{
 		"prefix":"OptArg",
 		"body":[
 			"\\OptArg{${1:option}}{${2:argument}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"OptoArg":{
+	"OptoArg{}{}":{
 		"prefix":"OptoArg",
 		"body":[
 			"\\OptoArg{${1:option}}{${2:argument}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"oOpt":{
+	"oOpt{}":{
 		"prefix":"oOpt",
 		"body":[
 			"\\oOpt{${1:option}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"oArg":{
+	"oArg{}":{
 		"prefix":"oArg",
 		"body":[
 			"\\oArg{${1:option}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"oOptArg":{
+	"oOptArg{}{}":{
 		"prefix":"oOptArg",
 		"body":[
 			"\\oOptArg{${1:option}}{${2:argument}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"oOptoArg":{
+	"oOptoArg{}{}":{
 		"prefix":"oOptoArg",
 		"body":[
 			"\\oOptoArg{${1:option}}{${2:argument}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"File":{
+	"File{}":{
 		"prefix":"File",
 		"body":[
 			"\\File{${1:file%file}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"Prog":{
+	"Prog{}":{
 		"prefix":"Prog",
 		"body":[
 			"\\Prog{${1:program}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"Cmd":{
+	"Cmd{}{}":{
 		"prefix":"Cmd",
 		"body":[
 			"\\Cmd{${1:command%plain}}{${2:chapter}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"setVersion":{
+	"setVersion{}":{
 		"prefix":"setVersion",
 		"body":[
 			"\\setVersion{${1:version}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"setVersionWord":{
+	"setVersionWord{}":{
 		"prefix":"setVersionWord",
 		"body":[
 			"\\setVersionWord{${1:word%text}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"Email":{
+	"Email{}":{
 		"prefix":"Email",
 		"body":[
 			"\\Email{${1:email%URL}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"URL":{
+	"URL{}":{
 		"prefix":"URL",
 		"body":[
 			"\\URL{${1:URL}}"
@@ -325,7 +325,7 @@
 		"prefix":"Name",
 		"body":[
 			"\\begin{Name}",
-			"\t$1",
+				"\t$1",
 			"\\end{Name}"
 		]
 	},
@@ -335,7 +335,17 @@
 		"prefix":"Table",
 		"body":[
 			"\\begin{Table}",
-			"\t$1",
+				"\t$1",
+			"\\end{Table}"
+		]
+	},
+
+
+	"Table":{
+		"prefix":"Table",
+		"body":[
+			"\\begin{Table}",
+				"\t$1",
 			"\\end{Table}"
 		]
 	}

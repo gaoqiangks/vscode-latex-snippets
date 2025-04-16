@@ -1,7 +1,7 @@
 {
 
 
-	"phfMakeTheorem":{
+	"phfMakeTheorem{}{}":{
 		"prefix":"phfMakeTheorem",
 		"body":[
 			"\\phfMakeTheorem{${1:envname}}{${2:theorem name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"phfMakeTheorem":{
-		"prefix":"phfMakeTheorem",
-		"body":[
-			"\\phfMakeTheorem[${3:options%keyvals}]{${1:envname}}{${2:theorem name}}"
-		]
-	},
-
-
-	"phfLoadThmSet":{
+	"phfLoadThmSet{}{}{}":{
 		"prefix":"phfLoadThmSet",
 		"body":[
 			"\\phfLoadThmSet{${1:thm options}}{${2:def options}}{${3:thmset name%keyvals}}"
@@ -137,18 +129,10 @@
 	},
 
 
-	"phfMakeProofEnv":{
+	"phfMakeProofEnv{}":{
 		"prefix":"phfMakeProofEnv",
 		"body":[
 			"\\phfMakeProofEnv{${1:envname}}"
-		]
-	},
-
-
-	"phfMakeProofEnv":{
-		"prefix":"phfMakeProofEnv",
-		"body":[
-			"\\phfMakeProofEnv[${2:options%keyvals}]{${1:envname}}"
 		]
 	},
 
@@ -169,18 +153,10 @@
 	},
 
 
-	"phfMakeThmheadingEnvironment":{
+	"phfMakeThmheadingEnvironment{}":{
 		"prefix":"phfMakeThmheadingEnvironment",
 		"body":[
 			"\\phfMakeThmheadingEnvironment{${1:envname}}"
-		]
-	},
-
-
-	"phfMakeThmheadingEnvironment":{
-		"prefix":"phfMakeThmheadingEnvironment",
-		"body":[
-			"\\phfMakeThmheadingEnvironment[${2:options%keyvals}]{${1:envname}}"
 		]
 	},
 
@@ -217,7 +193,7 @@
 	},
 
 
-	"proofonname":{
+	"proofonname{}{}":{
 		"prefix":"proofonname",
 		"body":[
 			"\\proofonname{${1:label name}}{${2:page ref}}"
@@ -241,42 +217,26 @@
 	},
 
 
-	"conj":{
-		"prefix":"conj",
+	"phfMakeTheorem[]{}{}":{
+		"prefix":"phfMakeTheorem",
 		"body":[
-			"\\begin{conj}",
-			"\t$1",
-			"\\end{conj}"
+			"\\phfMakeTheorem[${3:options%keyvals}]{${1:envname}}{${2:theorem name}}"
 		]
 	},
 
 
-	"corollary*":{
-		"prefix":"corollary*",
+	"phfMakeProofEnv[]{}":{
+		"prefix":"phfMakeProofEnv",
 		"body":[
-			"\\begin{corollary*}",
-			"\t$1",
-			"\\end{corollary*}"
+			"\\phfMakeProofEnv[${2:options%keyvals}]{${1:envname}}"
 		]
 	},
 
 
-	"defn":{
-		"prefix":"defn",
+	"phfMakeThmheadingEnvironment[]{}":{
+		"prefix":"phfMakeThmheadingEnvironment",
 		"body":[
-			"\\begin{defn}",
-			"\t$1",
-			"\\end{defn}"
-		]
-	},
-
-
-	"conj*":{
-		"prefix":"conj*",
-		"body":[
-			"\\begin{conj*}",
-			"\t$1",
-			"\\end{conj*}"
+			"\\phfMakeThmheadingEnvironment[${2:options%keyvals}]{${1:envname}}"
 		]
 	},
 
@@ -285,18 +245,8 @@
 		"prefix":"thm",
 		"body":[
 			"\\begin{thm}",
-			"\t$1",
+				"\t$1",
 			"\\end{thm}"
-		]
-	},
-
-
-	"question*":{
-		"prefix":"question*",
-		"body":[
-			"\\begin{question*}",
-			"\t$1",
-			"\\end{question*}"
 		]
 	},
 
@@ -305,118 +255,18 @@
 		"prefix":"prop",
 		"body":[
 			"\\begin{prop}",
-			"\t$1",
+				"\t$1",
 			"\\end{prop}"
 		]
 	},
 
 
-	"problem*":{
-		"prefix":"problem*",
+	"lem":{
+		"prefix":"lem",
 		"body":[
-			"\\begin{problem*}",
-			"\t$1",
-			"\\end{problem*}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"rem*":{
-		"prefix":"rem*",
-		"body":[
-			"\\begin{rem*}",
-			"\t$1",
-			"\\end{rem*}"
-		]
-	},
-
-
-	"conjecture*":{
-		"prefix":"conjecture*",
-		"body":[
-			"\\begin{conjecture*}",
-			"\t$1",
-			"\\end{conjecture*}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"proposition":{
-		"prefix":"proposition",
-		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"defn*":{
-		"prefix":"defn*",
-		"body":[
-			"\\begin{defn*}",
-			"\t$1",
-			"\\end{defn*}"
-		]
-	},
-
-
-	"idea":{
-		"prefix":"idea",
-		"body":[
-			"\\begin{idea}",
-			"\t$1",
-			"\\end{idea}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"definition*":{
-		"prefix":"definition*",
-		"body":[
-			"\\begin{definition*}",
-			"\t$1",
-			"\\end{definition*}"
-		]
-	},
-
-
-	"lemma*":{
-		"prefix":"lemma*",
-		"body":[
-			"\\begin{lemma*}",
-			"\t$1",
-			"\\end{lemma*}"
+			"\\begin{lem}",
+				"\t$1",
+			"\\end{lem}"
 		]
 	},
 
@@ -425,48 +275,138 @@
 		"prefix":"cor",
 		"body":[
 			"\\begin{cor}",
-			"\t$1",
+				"\t$1",
 			"\\end{cor}"
 		]
 	},
 
 
-	"remark*":{
-		"prefix":"remark*",
+	"conj":{
+		"prefix":"conj",
 		"body":[
-			"\\begin{remark*}",
-			"\t$1",
-			"\\end{remark*}"
+			"\\begin{conj}",
+				"\t$1",
+			"\\end{conj}"
 		]
 	},
 
 
-	"proposition*":{
-		"prefix":"proposition*",
+	"rem":{
+		"prefix":"rem",
 		"body":[
-			"\\begin{proposition*}",
-			"\t$1",
-			"\\end{proposition*}"
+			"\\begin{rem}",
+				"\t$1",
+			"\\end{rem}"
 		]
 	},
 
 
-	"idea*":{
-		"prefix":"idea*",
+	"defn":{
+		"prefix":"defn",
 		"body":[
-			"\\begin{idea*}",
-			"\t$1",
-			"\\end{idea*}"
+			"\\begin{defn}",
+				"\t$1",
+			"\\end{defn}"
 		]
 	},
 
 
-	"theorem*":{
-		"prefix":"theorem*",
+	"theorem":{
+		"prefix":"theorem",
 		"body":[
-			"\\begin{theorem*}",
-			"\t$1",
-			"\\end{theorem*}"
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"idea":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea}",
+				"\t$1",
+			"\\end{idea}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
 		]
 	},
 
@@ -475,7 +415,7 @@
 		"prefix":"problem",
 		"body":[
 			"\\begin{problem}",
-			"\t$1",
+				"\t$1",
 			"\\end{problem}"
 		]
 	},
@@ -485,88 +425,208 @@
 		"prefix":"thmheading",
 		"body":[
 			"\\begin{thmheading}",
-			"\t$1",
+				"\t$1",
 			"\\end{thmheading}"
 		]
 	},
 
 
 	"thm*":{
-		"prefix":"thm*",
+		"prefix":"*thm",
 		"body":[
 			"\\begin{thm*}",
-			"\t$1",
+				"\t$1",
 			"\\end{thm*}"
 		]
 	},
 
 
-	"remark":{
-		"prefix":"remark",
+	"prop*":{
+		"prefix":"*prop",
 		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
-		]
-	},
-
-
-	"cor*":{
-		"prefix":"cor*",
-		"body":[
-			"\\begin{cor*}",
-			"\t$1",
-			"\\end{cor*}"
-		]
-	},
-
-
-	"conjecture":{
-		"prefix":"conjecture",
-		"body":[
-			"\\begin{conjecture}",
-			"\t$1",
-			"\\end{conjecture}"
-		]
-	},
-
-
-	"question":{
-		"prefix":"question",
-		"body":[
-			"\\begin{question}",
-			"\t$1",
-			"\\end{question}"
+			"\\begin{prop*}",
+				"\t$1",
+			"\\end{prop*}"
 		]
 	},
 
 
 	"lem*":{
-		"prefix":"lem*",
+		"prefix":"*lem",
 		"body":[
 			"\\begin{lem*}",
-			"\t$1",
+				"\t$1",
 			"\\end{lem*}"
 		]
 	},
 
 
-	"rem":{
-		"prefix":"rem",
+	"cor*":{
+		"prefix":"*cor",
 		"body":[
-			"\\begin{rem}",
-			"\t$1",
-			"\\end{rem}"
+			"\\begin{cor*}",
+				"\t$1",
+			"\\end{cor*}"
 		]
 	},
 
 
-	"prop*":{
-		"prefix":"prop*",
+	"conj*":{
+		"prefix":"*conj",
 		"body":[
-			"\\begin{prop*}",
-			"\t$1",
-			"\\end{prop*}"
+			"\\begin{conj*}",
+				"\t$1",
+			"\\end{conj*}"
+		]
+	},
+
+
+	"rem*":{
+		"prefix":"*rem",
+		"body":[
+			"\\begin{rem*}",
+				"\t$1",
+			"\\end{rem*}"
+		]
+	},
+
+
+	"defn*":{
+		"prefix":"*defn",
+		"body":[
+			"\\begin{defn*}",
+				"\t$1",
+			"\\end{defn*}"
+		]
+	},
+
+
+	"theorem*":{
+		"prefix":"*theorem",
+		"body":[
+			"\\begin{theorem*}",
+				"\t$1",
+			"\\end{theorem*}"
+		]
+	},
+
+
+	"proposition*":{
+		"prefix":"*proposition",
+		"body":[
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
+		]
+	},
+
+
+	"lemma*":{
+		"prefix":"*lemma",
+		"body":[
+			"\\begin{lemma*}",
+				"\t$1",
+			"\\end{lemma*}"
+		]
+	},
+
+
+	"corollary*":{
+		"prefix":"*corollary",
+		"body":[
+			"\\begin{corollary*}",
+				"\t$1",
+			"\\end{corollary*}"
+		]
+	},
+
+
+	"definition*":{
+		"prefix":"*definition",
+		"body":[
+			"\\begin{definition*}",
+				"\t$1",
+			"\\end{definition*}"
+		]
+	},
+
+
+	"conjecture*":{
+		"prefix":"*conjecture",
+		"body":[
+			"\\begin{conjecture*}",
+				"\t$1",
+			"\\end{conjecture*}"
+		]
+	},
+
+
+	"remark*":{
+		"prefix":"*remark",
+		"body":[
+			"\\begin{remark*}",
+				"\t$1",
+			"\\end{remark*}"
+		]
+	},
+
+
+	"proposition*":{
+		"prefix":"*proposition",
+		"body":[
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
+		]
+	},
+
+
+	"idea*":{
+		"prefix":"*idea",
+		"body":[
+			"\\begin{idea*}",
+				"\t$1",
+			"\\end{idea*}"
+		]
+	},
+
+
+	"question*":{
+		"prefix":"*question",
+		"body":[
+			"\\begin{question*}",
+				"\t$1",
+			"\\end{question*}"
+		]
+	},
+
+
+	"problem*":{
+		"prefix":"*problem",
+		"body":[
+			"\\begin{problem*}",
+				"\t$1",
+			"\\end{problem*}"
+		]
+	},
+
+
+	"thm":{
+		"prefix":"thm",
+		"body":[
+			"\\begin{thm}",
+				"\t$1",
+			"\\end{thm}"
+		]
+	},
+
+
+	"prop":{
+		"prefix":"prop",
+		"body":[
+			"\\begin{prop}",
+				"\t$1",
+			"\\end{prop}"
 		]
 	},
 
@@ -575,8 +635,138 @@
 		"prefix":"lem",
 		"body":[
 			"\\begin{lem}",
-			"\t$1",
+				"\t$1",
 			"\\end{lem}"
+		]
+	},
+
+
+	"cor":{
+		"prefix":"cor",
+		"body":[
+			"\\begin{cor}",
+				"\t$1",
+			"\\end{cor}"
+		]
+	},
+
+
+	"conj":{
+		"prefix":"conj",
+		"body":[
+			"\\begin{conj}",
+				"\t$1",
+			"\\end{conj}"
+		]
+	},
+
+
+	"rem":{
+		"prefix":"rem",
+		"body":[
+			"\\begin{rem}",
+				"\t$1",
+			"\\end{rem}"
+		]
+	},
+
+
+	"defn":{
+		"prefix":"defn",
+		"body":[
+			"\\begin{defn}",
+				"\t$1",
+			"\\end{defn}"
+		]
+	},
+
+
+	"thm*":{
+		"prefix":"thm",
+		"body":[
+			"\\begin{thm*}",
+				"\t$1",
+			"\\end{thm*}"
+		]
+	},
+
+
+	"prop*":{
+		"prefix":"prop",
+		"body":[
+			"\\begin{prop*}",
+				"\t$1",
+			"\\end{prop*}"
+		]
+	},
+
+
+	"lem*":{
+		"prefix":"lem",
+		"body":[
+			"\\begin{lem*}",
+				"\t$1",
+			"\\end{lem*}"
+		]
+	},
+
+
+	"cor*":{
+		"prefix":"cor",
+		"body":[
+			"\\begin{cor*}",
+				"\t$1",
+			"\\end{cor*}"
+		]
+	},
+
+
+	"conj*":{
+		"prefix":"conj",
+		"body":[
+			"\\begin{conj*}",
+				"\t$1",
+			"\\end{conj*}"
+		]
+	},
+
+
+	"rem*":{
+		"prefix":"rem",
+		"body":[
+			"\\begin{rem*}",
+				"\t$1",
+			"\\end{rem*}"
+		]
+	},
+
+
+	"defn*":{
+		"prefix":"defn",
+		"body":[
+			"\\begin{defn*}",
+				"\t$1",
+			"\\end{defn*}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
 		]
 	},
 
@@ -585,8 +775,198 @@
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"idea":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea}",
+				"\t$1",
+			"\\end{idea}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"theorem*":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem*}",
+				"\t$1",
+			"\\end{theorem*}"
+		]
+	},
+
+
+	"proposition*":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
+		]
+	},
+
+
+	"lemma*":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma*}",
+				"\t$1",
+			"\\end{lemma*}"
+		]
+	},
+
+
+	"corollary*":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary*}",
+				"\t$1",
+			"\\end{corollary*}"
+		]
+	},
+
+
+	"definition*":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition*}",
+				"\t$1",
+			"\\end{definition*}"
+		]
+	},
+
+
+	"conjecture*":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture*}",
+				"\t$1",
+			"\\end{conjecture*}"
+		]
+	},
+
+
+	"remark*":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark*}",
+				"\t$1",
+			"\\end{remark*}"
+		]
+	},
+
+
+	"proposition*":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
+		]
+	},
+
+
+	"idea*":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea*}",
+				"\t$1",
+			"\\end{idea*}"
+		]
+	},
+
+
+	"question*":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question*}",
+				"\t$1",
+			"\\end{question*}"
+		]
+	},
+
+
+	"problem*":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem*}",
+				"\t$1",
+			"\\end{problem*}"
 		]
 	}
 }

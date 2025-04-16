@@ -1,7 +1,7 @@
 {
 
 
-	"mkpagegrouped":{
+	"mkpagegrouped{}":{
 		"prefix":"mkpagegrouped",
 		"body":[
 			"\\mkpagegrouped{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mkonepagegrouped":{
+	"mkonepagegrouped{}":{
 		"prefix":"mkonepagegrouped",
 		"body":[
 			"\\mkonepagegrouped{${1:text}}"
@@ -53,14 +53,6 @@
 		"prefix":"copyrightspace",
 		"body":[
 			"\\copyrightspace"
-		]
-	},
-
-
-	"copyrightspace":{
-		"prefix":"copyrightspace",
-		"body":[
-			"\\copyrightspace[${1:length}]"
 		]
 	},
 
@@ -217,7 +209,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -257,7 +249,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -289,12 +281,10 @@
 	},
 
 
-	"Itemize":{
-		"prefix":"Itemize",
+	"copyrightspace[]":{
+		"prefix":"copyrightspace",
 		"body":[
-			"\\begin{Itemize}",
-			"\t$1",
-			"\\end{Itemize}"
+			"\\copyrightspace[${1:length}]"
 		]
 	},
 
@@ -303,8 +293,18 @@
 		"prefix":"Enumerate",
 		"body":[
 			"\\begin{Enumerate}",
-			"\t$1",
+				"\t$1",
 			"\\end{Enumerate}"
+		]
+	},
+
+
+	"Itemize":{
+		"prefix":"Itemize",
+		"body":[
+			"\\begin{Itemize}",
+				"\t$1",
+			"\\end{Itemize}"
 		]
 	},
 
@@ -313,7 +313,7 @@
 		"prefix":"Description",
 		"body":[
 			"\\begin{Description}",
-			"\t$1",
+				"\t$1",
 			"\\end{Description}"
 		]
 	}

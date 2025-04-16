@@ -9,26 +9,10 @@
 	},
 
 
-	"toprule":{
-		"prefix":"toprule",
-		"body":[
-			"\\toprule[${1:line width%l}]"
-		]
-	},
-
-
 	"midrule":{
 		"prefix":"midrule",
 		"body":[
 			"\\midrule"
-		]
-	},
-
-
-	"midrule":{
-		"prefix":"midrule",
-		"body":[
-			"\\midrule[${1:line width%l}]"
 		]
 	},
 
@@ -41,15 +25,7 @@
 	},
 
 
-	"bottomrule":{
-		"prefix":"bottomrule",
-		"body":[
-			"\\bottomrule[${1:line width%l}]"
-		]
-	},
-
-
-	"cmidrule":{
+	"cmidrule{}":{
 		"prefix":"cmidrule",
 		"body":[
 			"\\cmidrule{${1:a-b}}"
@@ -57,18 +33,10 @@
 	},
 
 
-	"cmidrule":{
+	"cmidrule(){}":{
 		"prefix":"cmidrule",
 		"body":[
 			"\\cmidrule(${2:trim}){${1:a-b}}"
-		]
-	},
-
-
-	"cmidrule":{
-		"prefix":"cmidrule",
-		"body":[
-			"\\cmidrule[${2:line width%l}](${3:trim}){${1:a-b}}"
 		]
 	},
 
@@ -81,7 +49,7 @@
 	},
 
 
-	"specialrule":{
+	"specialrule{}{}{}":{
 		"prefix":"specialrule",
 		"body":[
 			"\\specialrule{${1:line width%l}}{${2:above space}}{${3:below space}}"
@@ -93,14 +61,6 @@
 		"prefix":"addlinespace",
 		"body":[
 			"\\addlinespace"
-		]
-	},
-
-
-	"addlinespace":{
-		"prefix":"addlinespace",
-		"body":[
-			"\\addlinespace[${1:vspace}]"
 		]
 	},
 
@@ -181,6 +141,46 @@
 		"prefix":"defaultaddspace",
 		"body":[
 			"\\defaultaddspace"
+		]
+	},
+
+
+	"toprule[]":{
+		"prefix":"toprule",
+		"body":[
+			"\\toprule[${1:line width%l}]"
+		]
+	},
+
+
+	"midrule[]":{
+		"prefix":"midrule",
+		"body":[
+			"\\midrule[${1:line width%l}]"
+		]
+	},
+
+
+	"bottomrule[]":{
+		"prefix":"bottomrule",
+		"body":[
+			"\\bottomrule[${1:line width%l}]"
+		]
+	},
+
+
+	"cmidrule[](){}":{
+		"prefix":"cmidrule",
+		"body":[
+			"\\cmidrule[${2:line width%l}](${3:trim}){${1:a-b}}"
+		]
+	},
+
+
+	"addlinespace[]":{
+		"prefix":"addlinespace",
+		"body":[
+			"\\addlinespace[${1:vspace}]"
 		]
 	}
 }

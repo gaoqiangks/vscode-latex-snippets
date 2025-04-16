@@ -9,10 +9,20 @@
 	},
 
 
-	"noaccsupp":{
+	"noaccsupp{}":{
 		"prefix":"noaccsupp",
 		"body":[
 			"\\noaccsupp{${1:text}}"
+		]
+	},
+
+
+	"PSTcode":{
+		"prefix":"PSTcode",
+		"body":[
+			"\\begin{PSTcode}",
+				"\t$1",
+			"\\end{PSTcode}"
 		]
 	},
 
@@ -21,7 +31,7 @@
 		"prefix":"PSTexample",
 		"body":[
 			"\\begin{PSTexample}",
-			"\t$1",
+				"\t$1",
 			"\\end{PSTexample}"
 		]
 	},
@@ -31,8 +41,18 @@
 		"prefix":"PSTcode",
 		"body":[
 			"\\begin{PSTcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{PSTcode}"
+		]
+	},
+
+
+	"PSTexample":{
+		"prefix":"PSTexample",
+		"body":[
+			"\\begin{PSTexample}",
+				"\t$1",
+			"\\end{PSTexample}"
 		]
 	}
 }

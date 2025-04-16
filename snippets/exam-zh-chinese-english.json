@@ -1,7 +1,7 @@
 {
 
 
-	"linelistset":{
+	"linelistset{}":{
 		"prefix":"linelistset",
 		"body":[
 			"\\linelistset{${1:list}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"linelistset":{
-		"prefix":"linelistset",
-		"body":[
-			"\\linelistset[${2:键值列表%keyvals}]{${1:list}}"
-		]
-	},
-
-
-	"lineconnect":{
+	"lineconnect{}":{
 		"prefix":"lineconnect",
 		"body":[
 			"\\lineconnect{${1:list}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"lineconnect":{
-		"prefix":"lineconnect",
-		"body":[
-			"\\lineconnect[${2:TikZ keys}]{${1:list}}"
-		]
-	},
-
-
-	"zhu":{
+	"zhu{}":{
 		"prefix":"zhu",
 		"body":[
 			"\\zhu{${1:注释%text}}"
@@ -41,20 +25,26 @@
 	},
 
 
-	"zhu":{
-		"prefix":"zhu",
+	"linelistset[]{}":{
+		"prefix":"linelistset",
 		"body":[
-			"\\zhu[${2:数}]{${1:注释%text}}"
+			"\\linelistset[${2:键值列表%keyvals}]{${1:list}}"
 		]
 	},
 
 
-	"poem":{
-		"prefix":"poem",
+	"lineconnect[]{}":{
+		"prefix":"lineconnect",
 		"body":[
-			"\\begin{poem}",
-			"\t$1",
-			"\\end{poem}"
+			"\\lineconnect[${2:TikZ keys}]{${1:list}}"
+		]
+	},
+
+
+	"zhu[]{}":{
+		"prefix":"zhu",
+		"body":[
+			"\\zhu[${2:数}]{${1:注释%text}}"
 		]
 	},
 
@@ -63,7 +53,7 @@
 		"prefix":"select",
 		"body":[
 			"\\begin{select}",
-			"\t$1",
+				"\t$1",
 			"\\end{select}"
 		]
 	},
@@ -73,7 +63,7 @@
 		"prefix":"lineto",
 		"body":[
 			"\\begin{lineto}",
-			"\t$1",
+				"\t$1",
 			"\\end{lineto}"
 		]
 	},
@@ -83,8 +73,18 @@
 		"prefix":"material",
 		"body":[
 			"\\begin{material}",
-			"\t$1",
+				"\t$1",
 			"\\end{material}"
+		]
+	},
+
+
+	"poem":{
+		"prefix":"poem",
+		"body":[
+			"\\begin{poem}",
+				"\t$1",
+			"\\end{poem}"
 		]
 	},
 
@@ -93,7 +93,57 @@
 		"prefix":"writingbox",
 		"body":[
 			"\\begin{writingbox}",
-			"\t$1",
+				"\t$1",
+			"\\end{writingbox}"
+		]
+	},
+
+
+	"select":{
+		"prefix":"select",
+		"body":[
+			"\\begin{select}",
+				"\t$1",
+			"\\end{select}"
+		]
+	},
+
+
+	"lineto":{
+		"prefix":"lineto",
+		"body":[
+			"\\begin{lineto}",
+				"\t$1",
+			"\\end{lineto}"
+		]
+	},
+
+
+	"material":{
+		"prefix":"material",
+		"body":[
+			"\\begin{material}",
+				"\t$1",
+			"\\end{material}"
+		]
+	},
+
+
+	"poem":{
+		"prefix":"poem",
+		"body":[
+			"\\begin{poem}",
+				"\t$1",
+			"\\end{poem}"
+		]
+	},
+
+
+	"writingbox":{
+		"prefix":"writingbox",
+		"body":[
+			"\\begin{writingbox}",
+				"\t$1",
 			"\\end{writingbox}"
 		]
 	}

@@ -1,18 +1,10 @@
 {
 
 
-	"avm":{
+	"avm{}":{
 		"prefix":"avm",
 		"body":[
 			"\\avm{${1:structure}}"
-		]
-	},
-
-
-	"avm":{
-		"prefix":"avm",
-		"body":[
-			"\\avm[${2:options%keyvals}]{${1:structure}}"
 		]
 	},
 
@@ -33,7 +25,7 @@
 	},
 
 
-	"tag":{
+	"tag{}":{
 		"prefix":"tag",
 		"body":[
 			"\\tag{${1:identifier}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"type":{
+	"type{}":{
 		"prefix":"type",
 		"body":[
 			"\\type{${1:type}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"type*":{
-		"prefix":"type*",
-		"body":[
-			"\\type*{${1:type}}"
-		]
-	},
-
-
-	"id":{
+	"id{}{}":{
 		"prefix":"id",
 		"body":[
 			"\\id{${1:id}}{${2:structure}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"punk":{
+	"punk{}{}":{
 		"prefix":"punk",
 		"body":[
 			"\\punk{${1:attribute}}{${2:type}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"avmsetup":{
+	"avmsetup{}":{
 		"prefix":"avmsetup",
 		"body":[
 			"\\avmsetup{${1:options%keyvals}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"avmdefinestyle":{
+	"avmdefinestyle{}{}":{
 		"prefix":"avmdefinestyle",
 		"body":[
 			"\\avmdefinestyle{${1:name}}{${2:settings%keyvals}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"avmdefinecommand":{
+	"avmdefinecommand{}{}":{
 		"prefix":"avmdefinecommand",
 		"body":[
 			"\\avmdefinecommand{${1:name}}{${2:settings%keyvals}}"
@@ -105,7 +89,23 @@
 	},
 
 
-	"avmdefinecommand":{
+	"type*{}":{
+		"prefix":"*type",
+		"body":[
+			"\\type*{${1:type}}"
+		]
+	},
+
+
+	"avm[]{}":{
+		"prefix":"avm",
+		"body":[
+			"\\avm[${2:options%keyvals}]{${1:structure}}"
+		]
+	},
+
+
+	"avmdefinecommand{}[]{}":{
 		"prefix":"avmdefinecommand",
 		"body":[
 			"\\avmdefinecommand{${1:name}}[${3:label}]{${2:settings%keyvals}}"

@@ -1,10 +1,20 @@
 {
 
 
-	"setOverpic":{
+	"setOverpic{}":{
 		"prefix":"setOverpic",
 		"body":[
 			"\\setOverpic{${1:options%keyvals}}"
+		]
+	},
+
+
+	"overpic":{
+		"prefix":"overpic",
+		"body":[
+			"\\begin{overpic}",
+				"\t$1",
+			"\\end{overpic}"
 		]
 	},
 
@@ -13,7 +23,7 @@
 		"prefix":"Overpic",
 		"body":[
 			"\\begin{Overpic}",
-			"\t$1",
+				"\t$1",
 			"\\end{Overpic}"
 		]
 	},
@@ -23,8 +33,18 @@
 		"prefix":"overpic",
 		"body":[
 			"\\begin{overpic}",
-			"\t$1",
+				"\t$1",
 			"\\end{overpic}"
+		]
+	},
+
+
+	"Overpic":{
+		"prefix":"Overpic",
+		"body":[
+			"\\begin{Overpic}",
+				"\t$1",
+			"\\end{Overpic}"
 		]
 	}
 }

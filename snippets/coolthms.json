@@ -1,7 +1,7 @@
 {
 
 
-	"definetheorem":{
+	"definetheorem{}{}":{
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem{${1:envname}}{${2:thm name}}"
@@ -9,50 +9,10 @@
 	},
 
 
-	"definetheorem":{
-		"prefix":"definetheorem",
-		"body":[
-			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}"
-		]
-	},
-
-
-	"definetheorem":{
-		"prefix":"definetheorem",
-		"body":[
-			"\\definetheorem{${1:envname}}{${2:thm name}}[${3:counter within}]"
-		]
-	},
-
-
-	"definetheorem":{
-		"prefix":"definetheorem",
-		"body":[
-			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}[${4:counter within}]"
-		]
-	},
-
-
-	"definetheorem":{
-		"prefix":"definetheorem",
-		"body":[
-			"\\definetheorem{${1:envname}}[${3:thm plural name}]{${2:thm name}}"
-		]
-	},
-
-
-	"Label":{
+	"Label{}":{
 		"prefix":"Label",
 		"body":[
 			"\\Label{${1:key}}"
-		]
-	},
-
-
-	"theoremmarkup":{
-		"prefix":"theoremmarkup",
-		"body":[
-			"\\theoremmarkup[${1:header font}][${2:body font}][${3:symbol}][${4:indent}][${5:separator}][${6:numbering}]"
 		]
 	},
 
@@ -65,10 +25,50 @@
 	},
 
 
-	"theoremsymbol":{
+	"theoremsymbol{}":{
 		"prefix":"theoremsymbol",
 		"body":[
 			"\\theoremsymbol{${1:symbol}}"
+		]
+	},
+
+
+	"definetheorem[]{}{}":{
+		"prefix":"definetheorem",
+		"body":[
+			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}"
+		]
+	},
+
+
+	"definetheorem{}{}[]":{
+		"prefix":"definetheorem",
+		"body":[
+			"\\definetheorem{${1:envname}}{${2:thm name}}[${3:counter within}]"
+		]
+	},
+
+
+	"definetheorem[]{}{}[]":{
+		"prefix":"definetheorem",
+		"body":[
+			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}[${4:counter within}]"
+		]
+	},
+
+
+	"definetheorem{}[]{}":{
+		"prefix":"definetheorem",
+		"body":[
+			"\\definetheorem{${1:envname}}[${3:thm plural name}]{${2:thm name}}"
+		]
+	},
+
+
+	"theoremmarkup[][][][][][]":{
+		"prefix":"theoremmarkup",
+		"body":[
+			"\\theoremmarkup[${1:header font}][${2:body font}][${3:symbol}][${4:indent}][${5:separator}][${6:numbering}]"
 		]
 	},
 
@@ -77,7 +77,7 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
 			"\\end{proof}"
 		]
 	}

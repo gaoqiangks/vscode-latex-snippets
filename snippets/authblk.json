@@ -1,26 +1,10 @@
 {
 
 
-	"author":{
-		"prefix":"author",
-		"body":[
-			"\\author[${2:mark}]{${1:names}}"
-		]
-	},
-
-
-	"affil":{
+	"affil{}":{
 		"prefix":"affil",
 		"body":[
 			"\\affil{${1:affiliation%text}}"
-		]
-	},
-
-
-	"affil":{
-		"prefix":"affil",
-		"body":[
-			"\\affil[${2:mark}]{${1:affiliation%text}}"
 		]
 	},
 
@@ -125,6 +109,22 @@
 		"prefix":"newaffilfalse",
 		"body":[
 			"\\newaffilfalse"
+		]
+	},
+
+
+	"author[]{}":{
+		"prefix":"author",
+		"body":[
+			"\\author[${2:mark}]{${1:names}}"
+		]
+	},
+
+
+	"affil[]{}":{
+		"prefix":"affil",
+		"body":[
+			"\\affil[${2:mark}]{${1:affiliation%text}}"
 		]
 	}
 }

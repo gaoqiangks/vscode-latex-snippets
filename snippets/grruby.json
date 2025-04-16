@@ -1,7 +1,7 @@
 {
 
 
-	"grrubystyle":{
+	"grrubystyle{}":{
 		"prefix":"grrubystyle",
 		"body":[
 			"\\grrubystyle{${1:options}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"grrubycolor":{
+	"grrubycolor{}":{
 		"prefix":"grrubycolor",
 		"body":[
 			"\\grrubycolor{${1:color}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"grexpos":{
-		"prefix":"grexpos",
-		"body":[
-			"\\grexpos[${1:options}]"
-		]
-	},
-
-
-	"grrubyUserDefined":{
+	"grrubyUserDefined{}{}":{
 		"prefix":"grrubyUserDefined",
 		"body":[
 			"\\grrubyUserDefined{${1:hangul}}{${2:hanja}}"
@@ -41,12 +33,10 @@
 	},
 
 
-	"grrubypars":{
-		"prefix":"grrubypars",
+	"grexpos[]":{
+		"prefix":"grexpos",
 		"body":[
-			"\\begin{grrubypars}",
-			"\t$1",
-			"\\end{grrubypars}"
+			"\\grexpos[${1:options}]"
 		]
 	},
 
@@ -55,8 +45,18 @@
 		"prefix":"grruby",
 		"body":[
 			"\\begin{grruby}",
-			"\t$1",
+				"\t$1",
 			"\\end{grruby}"
+		]
+	},
+
+
+	"grrubypars":{
+		"prefix":"grrubypars",
+		"body":[
+			"\\begin{grrubypars}",
+				"\t$1",
+			"\\end{grrubypars}"
 		]
 	}
 }

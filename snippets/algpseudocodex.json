@@ -1,7 +1,7 @@
 {
 
 
-	"Call":{
+	"Call{}{}":{
 		"prefix":"Call",
 		"body":[
 			"\\Call{${1:name}}{${2:args}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"While":{
+	"While{}":{
 		"prefix":"While",
 		"body":[
 			"\\While{${1:condition}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"For":{
+	"For{}":{
 		"prefix":"For",
 		"body":[
 			"\\For{${1:condition}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"ForAll":{
+	"ForAll{}":{
 		"prefix":"ForAll",
 		"body":[
 			"\\ForAll{${1:condition}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"Until":{
+	"Until{}":{
 		"prefix":"Until",
 		"body":[
 			"\\Until{${1:condition}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"If":{
+	"If{}":{
 		"prefix":"If",
 		"body":[
 			"\\If{${1:condition}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"ElsIf":{
+	"ElsIf{}":{
 		"prefix":"ElsIf",
 		"body":[
 			"\\ElsIf{${1:condition}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"Procedure":{
+	"Procedure{}{}":{
 		"prefix":"Procedure",
 		"body":[
 			"\\Procedure{${1:name}}{${2:parameters}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"Function":{
+	"Function{}{}":{
 		"prefix":"Function",
 		"body":[
 			"\\Function{${1:name}}{${2:parameters}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"LComment":{
+	"LComment{}":{
 		"prefix":"LComment",
 		"body":[
 			"\\LComment{${1:text}}"
@@ -193,14 +193,6 @@
 	},
 
 
-	"BeginBox":{
-		"prefix":"BeginBox",
-		"body":[
-			"\\BeginBox[${1:TikZ options}]"
-		]
-	},
-
-
 	"EndBox":{
 		"prefix":"EndBox",
 		"body":[
@@ -209,18 +201,10 @@
 	},
 
 
-	"BoxedString":{
+	"BoxedString{}":{
 		"prefix":"BoxedString",
 		"body":[
 			"\\BoxedString{${1:text}}"
-		]
-	},
-
-
-	"BoxedString":{
-		"prefix":"BoxedString",
-		"body":[
-			"\\BoxedString[${2:TikZ options}]{${1:text}}"
 		]
 	},
 
@@ -357,6 +341,22 @@
 		"prefix":"algorithmicoutput",
 		"body":[
 			"\\algorithmicoutput"
+		]
+	},
+
+
+	"BeginBox[]":{
+		"prefix":"BeginBox",
+		"body":[
+			"\\BeginBox[${1:TikZ options}]"
+		]
+	},
+
+
+	"BoxedString[]{}":{
+		"prefix":"BoxedString",
+		"body":[
+			"\\BoxedString[${2:TikZ options}]{${1:text}}"
 		]
 	}
 }

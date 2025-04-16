@@ -1,7 +1,7 @@
 {
 
 
-	"Arc":{
+	"Arc()(){}":{
 		"prefix":"Arc",
 		"body":[
 			"\\Arc(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:angle}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"AutoGrid":{
+	"AutoGrid()":{
 		"prefix":"AutoGrid",
 		"body":[
 			"\\AutoGrid(${1:coordinates})"
@@ -49,7 +49,7 @@
 	},
 
 
-	"Dashline":{
+	"Dashline()(){}":{
 		"prefix":"Dashline",
 		"body":[
 			"\\Dashline(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dash length}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"defaultlinethickness":{
+	"defaultlinethickness{}":{
 		"prefix":"defaultlinethickness",
 		"body":[
 			"\\defaultlinethickness{${1:dimension%l}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"Divvect":{
+	"Divvect{}{}{}":{
 		"prefix":"Divvect",
 		"body":[
 			"\\Divvect{${1:vector1}}{${2:vector2}}{${3:vector macro}}"
@@ -81,18 +81,10 @@
 	},
 
 
-	"Dotline":{
+	"Dotline()(){}":{
 		"prefix":"Dotline",
 		"body":[
 			"\\Dotline(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dot gap}}"
-		]
-	},
-
-
-	"Dotline":{
-		"prefix":"Dotline",
-		"body":[
-			"\\Dotline(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dot gap}}[${2:dot diameter}]"
 		]
 	},
 
@@ -113,7 +105,7 @@
 	},
 
 
-	"fpdowhile":{
+	"fpdowhile{}{}":{
 		"prefix":"fpdowhile",
 		"body":[
 			"\\fpdowhile{${1:test}}{${2:code}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"fptest":{
+	"fptest{}{}{}":{
 		"prefix":"fptest",
 		"body":[
 			"\\fptest{${1:test}}{${2:true}}{${3:false}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"fpwhiledo":{
+	"fpwhiledo{}{}":{
 		"prefix":"fpwhiledo",
 		"body":[
 			"\\fpwhiledo{${1:test}}{${2:code}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"GetCoord":{
+	"GetCoord(){}{}":{
 		"prefix":"GetCoord",
 		"body":[
 			"\\GetCoord(${3:cmd}){${1:x}}{${2:y}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"GraphGrid":{
+	"GraphGrid()":{
 		"prefix":"GraphGrid",
 		"body":[
 			"\\GraphGrid(${1:coordinates})"
@@ -153,7 +145,7 @@
 	},
 
 
-	"Integer":{
+	"Integer{}":{
 		"prefix":"Integer",
 		"body":[
 			"\\Integer{${1:number}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"IsPolar":{
+	"IsPolar{}":{
 		"prefix":"IsPolar",
 		"body":[
 			"\\IsPolar{${1:arg1}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"legenda":{
+	"legenda(){}":{
 		"prefix":"legenda",
 		"body":[
 			"\\legenda(${2:coordinates}){${1:formula}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"LIne":{
+	"LIne()":{
 		"prefix":"LIne",
 		"body":[
 			"\\LIne(${1:cmd})"
@@ -193,7 +185,7 @@
 	},
 
 
-	"Multvect":{
+	"Multvect{}*{}*{}":{
 		"prefix":"Multvect",
 		"body":[
 			"\\Multvect{${1:vector1}}*{${2:vector2}}*{${3:vector macro}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"Multvect":{
+	"Multvect{}*{}{}":{
 		"prefix":"Multvect",
 		"body":[
 			"\\Multvect{${1:vector1}}*{${2:vector2}}{${3:vector macro}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"Multvect":{
+	"Multvect{}{}*{}":{
 		"prefix":"Multvect",
 		"body":[
 			"\\Multvect{${1:vector1}}{${2:vector2}}*{${3:vector macro}}"
@@ -217,7 +209,7 @@
 	},
 
 
-	"Multvect":{
+	"Multvect{}{}{}":{
 		"prefix":"Multvect",
 		"body":[
 			"\\Multvect{${1:vector1}}{${2:vector2}}{${3:vector macro}}"
@@ -225,7 +217,7 @@
 	},
 
 
-	"Numero":{
+	"Numero{}{}":{
 		"prefix":"Numero",
 		"body":[
 			"\\Numero{${1:cmd}}{${2:dimen}}"
@@ -241,71 +233,7 @@
 	},
 
 
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${3:coordinates})[${2:position}]{${1:formula}}"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${3:coordinates})[${2:position}]{${1:formula}}*"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}*<${3:angle}>"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]*"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${5:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]*<${4:angle}>"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${5:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]<${4:angle}>"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}<${3:angle}>"
-		]
-	},
-
-
-	"Pbox":{
+	"Pbox(){}":{
 		"prefix":"Pbox",
 		"body":[
 			"\\Pbox(${2:coordinates}){${1:formula}}"
@@ -313,7 +241,7 @@
 	},
 
 
-	"Pbox":{
+	"Pbox(){}*":{
 		"prefix":"Pbox",
 		"body":[
 			"\\Pbox(${2:coordinates}){${1:formula}}*"
@@ -321,7 +249,7 @@
 	},
 
 
-	"Pbox":{
+	"Pbox(){}*<>":{
 		"prefix":"Pbox",
 		"body":[
 			"\\Pbox(${3:coordinates}){${1:formula}}*<${2:angle}>"
@@ -329,39 +257,7 @@
 	},
 
 
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${3:coordinates}){${1:formula}}[${2:dot diameter}]"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${3:coordinates}){${1:formula}}[${2:dot diameter}]*"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates}){${1:formula}}[${2:dot diameter}]*<${3:angle}>"
-		]
-	},
-
-
-	"Pbox":{
-		"prefix":"Pbox",
-		"body":[
-			"\\Pbox(${4:coordinates}){${1:formula}}[${2:dot diameter}]<${3:angle}>"
-		]
-	},
-
-
-	"Pbox":{
+	"Pbox(){}<>":{
 		"prefix":"Pbox",
 		"body":[
 			"\\Pbox(${3:coordinates}){${1:formula}}<${2:angle}>"
@@ -369,7 +265,7 @@
 	},
 
 
-	"segment":{
+	"segment()()":{
 		"prefix":"segment",
 		"body":[
 			"\\segment(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -377,7 +273,7 @@
 	},
 
 
-	"SplitCartesian":{
+	"SplitCartesian(){}{}":{
 		"prefix":"SplitCartesian",
 		"body":[
 			"\\SplitCartesian(${3:x},${4:y}){${1:xmacro%cmd}}{${2:ymacro%cmd}}"
@@ -385,7 +281,7 @@
 	},
 
 
-	"SplitPolar":{
+	"SplitPolar(){}{}":{
 		"prefix":"SplitPolar",
 		"body":[
 			"\\SplitPolar(${3:angle:radius}){${1:anglemacro%cmd}}{${2:radiusmacro%cmd}}"
@@ -409,7 +305,7 @@
 	},
 
 
-	"VECTOR":{
+	"VECTOR()()":{
 		"prefix":"VECTOR",
 		"body":[
 			"\\VECTOR(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -417,7 +313,7 @@
 	},
 
 
-	"VectorArc":{
+	"VectorArc()(){}":{
 		"prefix":"VectorArc",
 		"body":[
 			"\\VectorArc(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:angle}}"
@@ -425,7 +321,7 @@
 	},
 
 
-	"VectorARC":{
+	"VectorARC()(){}":{
 		"prefix":"VectorARC",
 		"body":[
 			"\\VectorARC(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:angle}}"
@@ -433,7 +329,7 @@
 	},
 
 
-	"VVECTOR":{
+	"VVECTOR()()":{
 		"prefix":"VVECTOR",
 		"body":[
 			"\\VVECTOR(${1:x1},${2:y1})(${3:x2},${4:y2})"
@@ -441,7 +337,7 @@
 	},
 
 
-	"VVectorArc":{
+	"VVectorArc()(){}":{
 		"prefix":"VVectorArc",
 		"body":[
 			"\\VVectorArc(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:angle}}"
@@ -449,7 +345,7 @@
 	},
 
 
-	"xmultiput":{
+	"xmultiput()(){}{}":{
 		"prefix":"xmultiput",
 		"body":[
 			"\\xmultiput(${3:x},${4:y})(${5:Δx},${6:Δy}){${1:copies}}{${2:object}}"
@@ -457,31 +353,7 @@
 	},
 
 
-	"xmultiput":{
-		"prefix":"xmultiput",
-		"body":[
-			"\\xmultiput[${3:center}](${4:x},${5:y})(${6:Δx},${7:Δy}){${1:copies}}{${2:object}}"
-		]
-	},
-
-
-	"Zbox":{
-		"prefix":"Zbox",
-		"body":[
-			"\\Zbox(${3:coordinates})[${2:position}]{${1:formula}}"
-		]
-	},
-
-
-	"Zbox":{
-		"prefix":"Zbox",
-		"body":[
-			"\\Zbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]"
-		]
-	},
-
-
-	"Zbox":{
+	"Zbox(){}":{
 		"prefix":"Zbox",
 		"body":[
 			"\\Zbox(${2:coordinates}){${1:formula}}"
@@ -489,7 +361,135 @@
 	},
 
 
-	"Zbox":{
+	"Dotline()(){}[]":{
+		"prefix":"Dotline",
+		"body":[
+			"\\Dotline(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dot gap}}[${2:dot diameter}]"
+		]
+	},
+
+
+	"Pbox()[]{}":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${3:coordinates})[${2:position}]{${1:formula}}"
+		]
+	},
+
+
+	"Pbox()[]{}*":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${3:coordinates})[${2:position}]{${1:formula}}*"
+		]
+	},
+
+
+	"Pbox()[]{}*<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}*<${3:angle}>"
+		]
+	},
+
+
+	"Pbox()[]{}[]":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]"
+		]
+	},
+
+
+	"Pbox()[]{}[]*":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]*"
+		]
+	},
+
+
+	"Pbox()[]{}[]*<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${5:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]*<${4:angle}>"
+		]
+	},
+
+
+	"Pbox()[]{}[]<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${5:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]<${4:angle}>"
+		]
+	},
+
+
+	"Pbox()[]{}<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates})[${2:position}]{${1:formula}}<${3:angle}>"
+		]
+	},
+
+
+	"Pbox(){}[]":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${3:coordinates}){${1:formula}}[${2:dot diameter}]"
+		]
+	},
+
+
+	"Pbox(){}[]*":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${3:coordinates}){${1:formula}}[${2:dot diameter}]*"
+		]
+	},
+
+
+	"Pbox(){}[]*<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates}){${1:formula}}[${2:dot diameter}]*<${3:angle}>"
+		]
+	},
+
+
+	"Pbox(){}[]<>":{
+		"prefix":"Pbox",
+		"body":[
+			"\\Pbox(${4:coordinates}){${1:formula}}[${2:dot diameter}]<${3:angle}>"
+		]
+	},
+
+
+	"xmultiput[]()(){}{}":{
+		"prefix":"xmultiput",
+		"body":[
+			"\\xmultiput[${3:center}](${4:x},${5:y})(${6:Δx},${7:Δy}){${1:copies}}{${2:object}}"
+		]
+	},
+
+
+	"Zbox()[]{}":{
+		"prefix":"Zbox",
+		"body":[
+			"\\Zbox(${3:coordinates})[${2:position}]{${1:formula}}"
+		]
+	},
+
+
+	"Zbox()[]{}[]":{
+		"prefix":"Zbox",
+		"body":[
+			"\\Zbox(${4:coordinates})[${2:position}]{${1:formula}}[${3:dot diameter}]"
+		]
+	},
+
+
+	"Zbox(){}[]":{
 		"prefix":"Zbox",
 		"body":[
 			"\\Zbox(${3:coordinates}){${1:formula}}[${2:dot diameter}]"

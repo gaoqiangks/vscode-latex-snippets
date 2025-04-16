@@ -1,111 +1,7 @@
 {
 
 
-	"tkzInit":{
-		"prefix":"tkzInit",
-		"body":[
-			"\\tkzInit[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzDrawX":{
-		"prefix":"tkzDrawX",
-		"body":[
-			"\\tkzDrawX[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzLabelX":{
-		"prefix":"tkzLabelX",
-		"body":[
-			"\\tkzLabelX[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzDrawY":{
-		"prefix":"tkzDrawY",
-		"body":[
-			"\\tkzDrawY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzLabelY":{
-		"prefix":"tkzLabelY",
-		"body":[
-			"\\tkzLabelY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzAxeX":{
-		"prefix":"tkzAxeX",
-		"body":[
-			"\\tkzAxeX[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzAxeY":{
-		"prefix":"tkzAxeY",
-		"body":[
-			"\\tkzAxeY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzAxeXY":{
-		"prefix":"tkzAxeXY",
-		"body":[
-			"\\tkzAxeXY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzDrawXY":{
-		"prefix":"tkzDrawXY",
-		"body":[
-			"\\tkzDrawXY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzLabelXY":{
-		"prefix":"tkzLabelXY",
-		"body":[
-			"\\tkzLabelXY[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzSetUpAxis":{
-		"prefix":"tkzSetUpAxis",
-		"body":[
-			"\\tkzSetUpAxis[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzGrid":{
-		"prefix":"tkzGrid",
-		"body":[
-			"\\tkzGrid[${1:options}]"
-		]
-	},
-
-
-	"tkzGrid":{
-		"prefix":"tkzGrid",
-		"body":[
-			"\\tkzGrid[${1:options}](${2:%<x1%>},${3:%<y1%>})(${4:%<x2%>},${5:%<y2%>})"
-		]
-	},
-
-
-	"tkzDefPoint":{
+	"tkzDefPoint(){}":{
 		"prefix":"tkzDefPoint",
 		"body":[
 			"\\tkzDefPoint(${2:%<x%>},${3:%<y%>}){${1:name}}"
@@ -113,15 +9,7 @@
 	},
 
 
-	"tkzDefPoint":{
-		"prefix":"tkzDefPoint",
-		"body":[
-			"\\tkzDefPoint[${2:options}](${3:%<x%>},${4:%<y%>}){${1:name}}"
-		]
-	},
-
-
-	"tkzDefPoint":{
+	"tkzDefPoint(){}":{
 		"prefix":"tkzDefPoint",
 		"body":[
 			"\\tkzDefPoint(${2:%<angle%>:%<radius%>}){${1:name}}"
@@ -129,15 +17,7 @@
 	},
 
 
-	"tkzDefPoint":{
-		"prefix":"tkzDefPoint",
-		"body":[
-			"\\tkzDefPoint[${2:options}](${3:%<angle%>:%<radius%>}){${1:name}}"
-		]
-	},
-
-
-	"tkzDefPoints":{
+	"tkzDefPoints{}":{
 		"prefix":"tkzDefPoints",
 		"body":[
 			"\\tkzDefPoints{${1:x1/y1/name1,x2/y2/name2,...}}"
@@ -145,47 +25,7 @@
 	},
 
 
-	"tkzDefPoints":{
-		"prefix":"tkzDefPoints",
-		"body":[
-			"\\tkzDefPoints[${2:options}]{${1:x1/y1/name1,x2/y2/name2,...}}"
-		]
-	},
-
-
-	"tkzDefShiftPoint":{
-		"prefix":"tkzDefShiftPoint",
-		"body":[
-			"\\tkzDefShiftPoint[${2:point}](${3:x},${4:y}){${1:name}}"
-		]
-	},
-
-
-	"tkzDefShiftPoint":{
-		"prefix":"tkzDefShiftPoint",
-		"body":[
-			"\\tkzDefShiftPoint[${2:point}](${3:angle:radius}){${1:name}}"
-		]
-	},
-
-
-	"tkzDefShiftPointCoord":{
-		"prefix":"tkzDefShiftPointCoord",
-		"body":[
-			"\\tkzDefShiftPointCoord[${2:a,b}](${3:x},${4:y}){${1:name}}"
-		]
-	},
-
-
-	"tkzDefShiftPointCoord":{
-		"prefix":"tkzDefShiftPointCoord",
-		"body":[
-			"\\tkzDefShiftPointCoord[${2:a,b}](${3:angle:radius}){${1:name}}"
-		]
-	},
-
-
-	"tkzDrawPoint":{
+	"tkzDrawPoint()":{
 		"prefix":"tkzDrawPoint",
 		"body":[
 			"\\tkzDrawPoint(${1:point})"
@@ -193,15 +33,7 @@
 	},
 
 
-	"tkzDrawPoint":{
-		"prefix":"tkzDrawPoint",
-		"body":[
-			"\\tkzDrawPoint[${1:options%keyvals}](${2:point})"
-		]
-	},
-
-
-	"tkzDrawPoints":{
+	"tkzDrawPoints()":{
 		"prefix":"tkzDrawPoints",
 		"body":[
 			"\\tkzDrawPoints(${1:point1},${2:point2},${3:...})"
@@ -209,15 +41,7 @@
 	},
 
 
-	"tkzDrawPoints":{
-		"prefix":"tkzDrawPoints",
-		"body":[
-			"\\tkzDrawPoints[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
-		]
-	},
-
-
-	"tkzLabelPoint":{
+	"tkzLabelPoint(){}":{
 		"prefix":"tkzLabelPoint",
 		"body":[
 			"\\tkzLabelPoint(${2:point}){${1:label%plain}}"
@@ -225,15 +49,7 @@
 	},
 
 
-	"tkzLabelPoint":{
-		"prefix":"tkzLabelPoint",
-		"body":[
-			"\\tkzLabelPoint[${2:TikZ options}](${3:point}){${1:label%plain}}"
-		]
-	},
-
-
-	"tkzLabelPoints":{
+	"tkzLabelPoints()":{
 		"prefix":"tkzLabelPoints",
 		"body":[
 			"\\tkzLabelPoints(${1:point1},${2:point2},${3:...})"
@@ -241,31 +57,7 @@
 	},
 
 
-	"tkzLabelPoints":{
-		"prefix":"tkzLabelPoints",
-		"body":[
-			"\\tkzLabelPoints[${1:TikZ options}](${2:point1},${3:point2},${4:...})"
-		]
-	},
-
-
-	"tkzAutoLabelPoints":{
-		"prefix":"tkzAutoLabelPoints",
-		"body":[
-			"\\tkzAutoLabelPoints[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
-		]
-	},
-
-
-	"tkzSetUpPoint":{
-		"prefix":"tkzSetUpPoint",
-		"body":[
-			"\\tkzSetUpPoint[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzPointShowCoord":{
+	"tkzPointShowCoord()":{
 		"prefix":"tkzPointShowCoord",
 		"body":[
 			"\\tkzPointShowCoord(${1:point})"
@@ -273,26 +65,10 @@
 	},
 
 
-	"tkzPointShowCoord":{
-		"prefix":"tkzPointShowCoord",
-		"body":[
-			"\\tkzPointShowCoord[${1:options%keyvals}](${2:point})"
-		]
-	},
-
-
-	"tkzShowPointCoord":{
+	"tkzShowPointCoord()":{
 		"prefix":"tkzShowPointCoord",
 		"body":[
 			"\\tkzShowPointCoord(${1:point})"
-		]
-	},
-
-
-	"tkzShowPointCoord":{
-		"prefix":"tkzShowPointCoord",
-		"body":[
-			"\\tkzShowPointCoord[${1:options%keyvals}](${2:point})"
 		]
 	},
 
@@ -305,22 +81,6 @@
 	},
 
 
-	"tkzClip":{
-		"prefix":"tkzClip",
-		"body":[
-			"\\tkzClip[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzShowBB":{
-		"prefix":"tkzShowBB",
-		"body":[
-			"\\tkzShowBB[${1:TikZ options}]"
-		]
-	},
-
-
 	"tkzClipBB":{
 		"prefix":"tkzClipBB",
 		"body":[
@@ -329,7 +89,7 @@
 	},
 
 
-	"tkzSetBB":{
+	"tkzSetBB()()":{
 		"prefix":"tkzSetBB",
 		"body":[
 			"\\tkzSetBB(${1:point1})(${2:point2})"
@@ -353,15 +113,7 @@
 	},
 
 
-	"tkzRep":{
-		"prefix":"tkzRep",
-		"body":[
-			"\\tkzRep[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzHLine":{
+	"tkzHLine{}":{
 		"prefix":"tkzHLine",
 		"body":[
 			"\\tkzHLine{${1:decimal number}}"
@@ -369,15 +121,7 @@
 	},
 
 
-	"tkzHLine":{
-		"prefix":"tkzHLine",
-		"body":[
-			"\\tkzHLine[${2:options%keyvals}]{${1:decimal number}}"
-		]
-	},
-
-
-	"tkzHLines":{
+	"tkzHLines{}":{
 		"prefix":"tkzHLines",
 		"body":[
 			"\\tkzHLines{${1:list of decimal numbers}}"
@@ -385,15 +129,7 @@
 	},
 
 
-	"tkzHLines":{
-		"prefix":"tkzHLines",
-		"body":[
-			"\\tkzHLines[${2:options%keyvals}]{${1:list of decimal numbers}}"
-		]
-	},
-
-
-	"tkzVLine":{
+	"tkzVLine{}":{
 		"prefix":"tkzVLine",
 		"body":[
 			"\\tkzVLine{${1:decimal number}}"
@@ -401,15 +137,7 @@
 	},
 
 
-	"tkzVLine":{
-		"prefix":"tkzVLine",
-		"body":[
-			"\\tkzVLine[${2:options%keyvals}]{${1:decimal number}}"
-		]
-	},
-
-
-	"tkzVLines":{
+	"tkzVLines{}":{
 		"prefix":"tkzVLines",
 		"body":[
 			"\\tkzVLines{${1:list of decimal numbers}}"
@@ -417,15 +145,7 @@
 	},
 
 
-	"tkzVLines":{
-		"prefix":"tkzVLines",
-		"body":[
-			"\\tkzVLines[${2:options%keyvals}]{${1:list of decimal numbers}}"
-		]
-	},
-
-
-	"tkzHTick":{
+	"tkzHTick{}":{
 		"prefix":"tkzHTick",
 		"body":[
 			"\\tkzHTick{${1:decimal number}}"
@@ -433,15 +153,7 @@
 	},
 
 
-	"tkzHTick":{
-		"prefix":"tkzHTick",
-		"body":[
-			"\\tkzHTick[${2:options%keyvals}]{${1:decimal number}}"
-		]
-	},
-
-
-	"tkzHTicks":{
+	"tkzHTicks{}":{
 		"prefix":"tkzHTicks",
 		"body":[
 			"\\tkzHTicks{${1:list of decimal numbers}}"
@@ -449,15 +161,7 @@
 	},
 
 
-	"tkzHTicks":{
-		"prefix":"tkzHTicks",
-		"body":[
-			"\\tkzHTicks[${2:options%keyvals}]{${1:list of decimal numbers}}"
-		]
-	},
-
-
-	"tkzVTick":{
+	"tkzVTick{}":{
 		"prefix":"tkzVTick",
 		"body":[
 			"\\tkzVTick{${1:decimal number}}"
@@ -465,15 +169,7 @@
 	},
 
 
-	"tkzVTick":{
-		"prefix":"tkzVTick",
-		"body":[
-			"\\tkzVTick[${2:options%keyvals}]{${1:decimal number}}"
-		]
-	},
-
-
-	"tkzVTicks":{
+	"tkzVTicks{}":{
 		"prefix":"tkzVTicks",
 		"body":[
 			"\\tkzVTicks{${1:list of decimal numbers}}"
@@ -481,15 +177,7 @@
 	},
 
 
-	"tkzVTicks":{
-		"prefix":"tkzVTicks",
-		"body":[
-			"\\tkzVTicks[${2:options%keyvals}]{${1:list of decimal numbers}}"
-		]
-	},
-
-
-	"tkzDefSetOfPoints":{
+	"tkzDefSetOfPoints{}":{
 		"prefix":"tkzDefSetOfPoints",
 		"body":[
 			"\\tkzDefSetOfPoints{${1:x1/y1,x2/y2,...}}"
@@ -497,31 +185,7 @@
 	},
 
 
-	"tkzDefSetOfPoints":{
-		"prefix":"tkzDefSetOfPoints",
-		"body":[
-			"\\tkzDefSetOfPoints[${2:options%keyvals}]{${1:x1/y1,x2/y2,...}}"
-		]
-	},
-
-
-	"tkzDrawSetOfPoints":{
-		"prefix":"tkzDrawSetOfPoints",
-		"body":[
-			"\\tkzDrawSetOfPoints[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzJoinSetOfPoints":{
-		"prefix":"tkzJoinSetOfPoints",
-		"body":[
-			"\\tkzJoinSetOfPoints[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzDrawMark":{
+	"tkzDrawMark()":{
 		"prefix":"tkzDrawMark",
 		"body":[
 			"\\tkzDrawMark(${1:point})"
@@ -529,15 +193,7 @@
 	},
 
 
-	"tkzDrawMark":{
-		"prefix":"tkzDrawMark",
-		"body":[
-			"\\tkzDrawMark[${1:options%keyvals}](${2:point})"
-		]
-	},
-
-
-	"tkzDrawMarks":{
+	"tkzDrawMarks()":{
 		"prefix":"tkzDrawMarks",
 		"body":[
 			"\\tkzDrawMarks(${1:point1},${2:point2},${3:...})"
@@ -545,23 +201,7 @@
 	},
 
 
-	"tkzDrawMarks":{
-		"prefix":"tkzDrawMarks",
-		"body":[
-			"\\tkzDrawMarks[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
-		]
-	},
-
-
-	"tkzSetUpMark":{
-		"prefix":"tkzSetUpMark",
-		"body":[
-			"\\tkzSetUpMark[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tkzText":{
+	"tkzText(){}":{
 		"prefix":"tkzText",
 		"body":[
 			"\\tkzText(${2:x},${3:y}){${1:text}}"
@@ -569,15 +209,7 @@
 	},
 
 
-	"tkzText":{
-		"prefix":"tkzText",
-		"body":[
-			"\\tkzText[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
-		]
-	},
-
-
-	"tkzLegend":{
+	"tkzLegend{}":{
 		"prefix":"tkzLegend",
 		"body":[
 			"\\tkzLegend{${1:style/size/color/text}}"
@@ -585,15 +217,7 @@
 	},
 
 
-	"tkzLegend":{
-		"prefix":"tkzLegend",
-		"body":[
-			"\\tkzLegend[${2:options%keyvals}]{${1:style/size/color/text}}"
-		]
-	},
-
-
-	"tkzGetPoint":{
+	"tkzGetPoint{}":{
 		"prefix":"tkzGetPoint",
 		"body":[
 			"\\tkzGetPoint{${1:point}}"
@@ -601,7 +225,7 @@
 	},
 
 
-	"tkzGetFirstPoint":{
+	"tkzGetFirstPoint{}":{
 		"prefix":"tkzGetFirstPoint",
 		"body":[
 			"\\tkzGetFirstPoint{${1:point}}"
@@ -609,7 +233,7 @@
 	},
 
 
-	"tkzGetSecondPoint":{
+	"tkzGetSecondPoint{}":{
 		"prefix":"tkzGetSecondPoint",
 		"body":[
 			"\\tkzGetSecondPoint{${1:point}}"
@@ -705,15 +329,7 @@
 	},
 
 
-	"tkzSetUpStyle":{
-		"prefix":"tkzSetUpStyle",
-		"body":[
-			"\\tkzSetUpStyle[${2:TikZ options}]{${1:style name}}"
-		]
-	},
-
-
-	"usetkzobj":{
+	"usetkzobj{}":{
 		"prefix":"usetkzobj",
 		"body":[
 			"\\usetkzobj{${1:list of objects}}"
@@ -721,7 +337,7 @@
 	},
 
 
-	"usetkztool":{
+	"usetkztool{}":{
 		"prefix":"usetkztool",
 		"body":[
 			"\\usetkztool{${1:list of tools}}"
@@ -729,7 +345,7 @@
 	},
 
 
-	"tkzPrintFrac":{
+	"tkzPrintFrac{}{}":{
 		"prefix":"tkzPrintFrac",
 		"body":[
 			"\\tkzPrintFrac{${1:arg1}}{${2:arg2}}"
@@ -737,7 +353,7 @@
 	},
 
 
-	"tkzPrintFracWithPi":{
+	"tkzPrintFracWithPi{}{}":{
 		"prefix":"tkzPrintFracWithPi",
 		"body":[
 			"\\tkzPrintFracWithPi{${1:arg1}}{${2:arg2}}"
@@ -745,7 +361,7 @@
 	},
 
 
-	"tkzfactors":{
+	"tkzfactors{}":{
 		"prefix":"tkzfactors",
 		"body":[
 			"\\tkzfactors{${1:arg}}"
@@ -753,7 +369,7 @@
 	},
 
 
-	"tkzReducFrac":{
+	"tkzReducFrac{}{}":{
 		"prefix":"tkzReducFrac",
 		"body":[
 			"\\tkzReducFrac{${1:arg1}}{${2:arg2}}"
@@ -777,7 +393,7 @@
 	},
 
 
-	"extractxy":{
+	"extractxy{}":{
 		"prefix":"extractxy",
 		"body":[
 			"\\extractxy{${1:arg}}"
@@ -785,7 +401,7 @@
 	},
 
 
-	"iftkznodedefined":{
+	"iftkznodedefined{}{}{}":{
 		"prefix":"iftkznodedefined",
 		"body":[
 			"\\iftkznodedefined{${1:node}}{${2:true}}{${3:false}}"
@@ -833,7 +449,7 @@
 	},
 
 
-	"CountToken":{
+	"CountToken{}":{
 		"prefix":"CountToken",
 		"body":[
 			"\\CountToken{${1:arg}}"
@@ -841,7 +457,7 @@
 	},
 
 
-	"SubStringConditional":{
+	"SubStringConditional{}{}":{
 		"prefix":"SubStringConditional",
 		"body":[
 			"\\SubStringConditional{${1:arg1}}{${2:arg2}}"
@@ -849,7 +465,7 @@
 	},
 
 
-	"RecursionMacroEnd":{
+	"RecursionMacroEnd{}{}{}":{
 		"prefix":"RecursionMacroEnd",
 		"body":[
 			"\\RecursionMacroEnd{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -857,7 +473,7 @@
 	},
 
 
-	"ReplaceSubStrings":{
+	"ReplaceSubStrings{}{}{}":{
 		"prefix":"ReplaceSubStrings",
 		"body":[
 			"\\ReplaceSubStrings{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -881,7 +497,7 @@
 	},
 
 
-	"tkzSwapPoints":{
+	"tkzSwapPoints()":{
 		"prefix":"tkzSwapPoints",
 		"body":[
 			"\\tkzSwapPoints(${1:A},${2:B})"
@@ -889,7 +505,7 @@
 	},
 
 
-	"tkzPermute":{
+	"tkzPermute()":{
 		"prefix":"tkzPermute",
 		"body":[
 			"\\tkzPermute(${1:A},${2:B},${3:C})"
@@ -897,7 +513,7 @@
 	},
 
 
-	"tkzDotProduct":{
+	"tkzDotProduct()":{
 		"prefix":"tkzDotProduct",
 		"body":[
 			"\\tkzDotProduct(${1:A},${2:B},${3:C})"
@@ -905,7 +521,7 @@
 	},
 
 
-	"tkzGetResult":{
+	"tkzGetResult{}":{
 		"prefix":"tkzGetResult",
 		"body":[
 			"\\tkzGetResult{${1:name}}"
@@ -913,7 +529,7 @@
 	},
 
 
-	"tkzIsLinear":{
+	"tkzIsLinear()":{
 		"prefix":"tkzIsLinear",
 		"body":[
 			"\\tkzIsLinear(${1:A},${2:B},${3:C})"
@@ -921,7 +537,7 @@
 	},
 
 
-	"tkzIsOrtho":{
+	"tkzIsOrtho()":{
 		"prefix":"tkzIsOrtho",
 		"body":[
 			"\\tkzIsOrtho(${1:A},${2:B},${3:C})"
@@ -937,34 +553,10 @@
 	},
 
 
-	"setupcolorkeys":{
+	"setupcolorkeys{}":{
 		"prefix":"setupcolorkeys",
 		"body":[
 			"\\setupcolorkeys{${1:color keys}}"
-		]
-	},
-
-
-	"tkzSetUpColors":{
-		"prefix":"tkzSetUpColors",
-		"body":[
-			"\\tkzSetUpColors[${1:options}]"
-		]
-	},
-
-
-	"tkzSetUpAllColors":{
-		"prefix":"tkzSetUpAllColors",
-		"body":[
-			"\\tkzSetUpAllColors[${1:options}]"
-		]
-	},
-
-
-	"tkzAddName":{
-		"prefix":"tkzAddName",
-		"body":[
-			"\\tkzAddName[${2:TikZ options}]{${1:name}}"
 		]
 	},
 
@@ -1001,7 +593,7 @@
 	},
 
 
-	"tkzgetinteger":{
+	"tkzgetinteger{}":{
 		"prefix":"tkzgetinteger",
 		"body":[
 			"\\tkzgetinteger{${1:arg}}"
@@ -1009,15 +601,7 @@
 	},
 
 
-	"tkzSetUpGrid":{
-		"prefix":"tkzSetUpGrid",
-		"body":[
-			"\\tkzSetUpGrid[${1:options}]"
-		]
-	},
-
-
-	"tkzRenamePoint":{
+	"tkzRenamePoint(){}":{
 		"prefix":"tkzRenamePoint",
 		"body":[
 			"\\tkzRenamePoint(${2:arg1}){${1:arg2}}"
@@ -1025,7 +609,7 @@
 	},
 
 
-	"tkzGetPoints":{
+	"tkzGetPoints{}{}":{
 		"prefix":"tkzGetPoints",
 		"body":[
 			"\\tkzGetPoints{${1:arg1}}{${2:arg2}}"
@@ -1033,15 +617,7 @@
 	},
 
 
-	"tkzSetUpLabel":{
-		"prefix":"tkzSetUpLabel",
-		"body":[
-			"\\tkzSetUpLabel[${1:options}]"
-		]
-	},
-
-
-	"tkzGetPointCoord":{
+	"tkzGetPointCoord(){}":{
 		"prefix":"tkzGetPointCoord",
 		"body":[
 			"\\tkzGetPointCoord(${2:arg1}){${1:arg2}}"
@@ -1049,10 +625,434 @@
 	},
 
 
-	"tkzGetPointxy":{
+	"tkzGetPointxy(){}":{
 		"prefix":"tkzGetPointxy",
 		"body":[
 			"\\tkzGetPointxy(${2:arg1}){${1:arg2}}"
+		]
+	},
+
+
+	"tkzInit[]":{
+		"prefix":"tkzInit",
+		"body":[
+			"\\tkzInit[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzDrawX[]":{
+		"prefix":"tkzDrawX",
+		"body":[
+			"\\tkzDrawX[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzLabelX[]":{
+		"prefix":"tkzLabelX",
+		"body":[
+			"\\tkzLabelX[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzDrawY[]":{
+		"prefix":"tkzDrawY",
+		"body":[
+			"\\tkzDrawY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzLabelY[]":{
+		"prefix":"tkzLabelY",
+		"body":[
+			"\\tkzLabelY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzAxeX[]":{
+		"prefix":"tkzAxeX",
+		"body":[
+			"\\tkzAxeX[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzAxeY[]":{
+		"prefix":"tkzAxeY",
+		"body":[
+			"\\tkzAxeY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzAxeXY[]":{
+		"prefix":"tkzAxeXY",
+		"body":[
+			"\\tkzAxeXY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzDrawXY[]":{
+		"prefix":"tkzDrawXY",
+		"body":[
+			"\\tkzDrawXY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzLabelXY[]":{
+		"prefix":"tkzLabelXY",
+		"body":[
+			"\\tkzLabelXY[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzSetUpAxis[]":{
+		"prefix":"tkzSetUpAxis",
+		"body":[
+			"\\tkzSetUpAxis[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzGrid[]":{
+		"prefix":"tkzGrid",
+		"body":[
+			"\\tkzGrid[${1:options}]"
+		]
+	},
+
+
+	"tkzGrid[]()()":{
+		"prefix":"tkzGrid",
+		"body":[
+			"\\tkzGrid[${1:options}](${2:%<x1%>},${3:%<y1%>})(${4:%<x2%>},${5:%<y2%>})"
+		]
+	},
+
+
+	"tkzDefPoint[](){}":{
+		"prefix":"tkzDefPoint",
+		"body":[
+			"\\tkzDefPoint[${2:options}](${3:%<x%>},${4:%<y%>}){${1:name}}"
+		]
+	},
+
+
+	"tkzDefPoint[](){}":{
+		"prefix":"tkzDefPoint",
+		"body":[
+			"\\tkzDefPoint[${2:options}](${3:%<angle%>:%<radius%>}){${1:name}}"
+		]
+	},
+
+
+	"tkzDefPoints[]{}":{
+		"prefix":"tkzDefPoints",
+		"body":[
+			"\\tkzDefPoints[${2:options}]{${1:x1/y1/name1,x2/y2/name2,...}}"
+		]
+	},
+
+
+	"tkzDefShiftPoint[](){}":{
+		"prefix":"tkzDefShiftPoint",
+		"body":[
+			"\\tkzDefShiftPoint[${2:point}](${3:x},${4:y}){${1:name}}"
+		]
+	},
+
+
+	"tkzDefShiftPoint[](){}":{
+		"prefix":"tkzDefShiftPoint",
+		"body":[
+			"\\tkzDefShiftPoint[${2:point}](${3:angle:radius}){${1:name}}"
+		]
+	},
+
+
+	"tkzDefShiftPointCoord[](){}":{
+		"prefix":"tkzDefShiftPointCoord",
+		"body":[
+			"\\tkzDefShiftPointCoord[${2:a,b}](${3:x},${4:y}){${1:name}}"
+		]
+	},
+
+
+	"tkzDefShiftPointCoord[](){}":{
+		"prefix":"tkzDefShiftPointCoord",
+		"body":[
+			"\\tkzDefShiftPointCoord[${2:a,b}](${3:angle:radius}){${1:name}}"
+		]
+	},
+
+
+	"tkzDrawPoint[]()":{
+		"prefix":"tkzDrawPoint",
+		"body":[
+			"\\tkzDrawPoint[${1:options%keyvals}](${2:point})"
+		]
+	},
+
+
+	"tkzDrawPoints[]()":{
+		"prefix":"tkzDrawPoints",
+		"body":[
+			"\\tkzDrawPoints[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
+		]
+	},
+
+
+	"tkzLabelPoint[](){}":{
+		"prefix":"tkzLabelPoint",
+		"body":[
+			"\\tkzLabelPoint[${2:TikZ options}](${3:point}){${1:label%plain}}"
+		]
+	},
+
+
+	"tkzLabelPoints[]()":{
+		"prefix":"tkzLabelPoints",
+		"body":[
+			"\\tkzLabelPoints[${1:TikZ options}](${2:point1},${3:point2},${4:...})"
+		]
+	},
+
+
+	"tkzAutoLabelPoints[]()":{
+		"prefix":"tkzAutoLabelPoints",
+		"body":[
+			"\\tkzAutoLabelPoints[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
+		]
+	},
+
+
+	"tkzSetUpPoint[]":{
+		"prefix":"tkzSetUpPoint",
+		"body":[
+			"\\tkzSetUpPoint[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzPointShowCoord[]()":{
+		"prefix":"tkzPointShowCoord",
+		"body":[
+			"\\tkzPointShowCoord[${1:options%keyvals}](${2:point})"
+		]
+	},
+
+
+	"tkzShowPointCoord[]()":{
+		"prefix":"tkzShowPointCoord",
+		"body":[
+			"\\tkzShowPointCoord[${1:options%keyvals}](${2:point})"
+		]
+	},
+
+
+	"tkzClip[]":{
+		"prefix":"tkzClip",
+		"body":[
+			"\\tkzClip[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzShowBB[]":{
+		"prefix":"tkzShowBB",
+		"body":[
+			"\\tkzShowBB[${1:TikZ options}]"
+		]
+	},
+
+
+	"tkzRep[]":{
+		"prefix":"tkzRep",
+		"body":[
+			"\\tkzRep[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzHLine[]{}":{
+		"prefix":"tkzHLine",
+		"body":[
+			"\\tkzHLine[${2:options%keyvals}]{${1:decimal number}}"
+		]
+	},
+
+
+	"tkzHLines[]{}":{
+		"prefix":"tkzHLines",
+		"body":[
+			"\\tkzHLines[${2:options%keyvals}]{${1:list of decimal numbers}}"
+		]
+	},
+
+
+	"tkzVLine[]{}":{
+		"prefix":"tkzVLine",
+		"body":[
+			"\\tkzVLine[${2:options%keyvals}]{${1:decimal number}}"
+		]
+	},
+
+
+	"tkzVLines[]{}":{
+		"prefix":"tkzVLines",
+		"body":[
+			"\\tkzVLines[${2:options%keyvals}]{${1:list of decimal numbers}}"
+		]
+	},
+
+
+	"tkzHTick[]{}":{
+		"prefix":"tkzHTick",
+		"body":[
+			"\\tkzHTick[${2:options%keyvals}]{${1:decimal number}}"
+		]
+	},
+
+
+	"tkzHTicks[]{}":{
+		"prefix":"tkzHTicks",
+		"body":[
+			"\\tkzHTicks[${2:options%keyvals}]{${1:list of decimal numbers}}"
+		]
+	},
+
+
+	"tkzVTick[]{}":{
+		"prefix":"tkzVTick",
+		"body":[
+			"\\tkzVTick[${2:options%keyvals}]{${1:decimal number}}"
+		]
+	},
+
+
+	"tkzVTicks[]{}":{
+		"prefix":"tkzVTicks",
+		"body":[
+			"\\tkzVTicks[${2:options%keyvals}]{${1:list of decimal numbers}}"
+		]
+	},
+
+
+	"tkzDefSetOfPoints[]{}":{
+		"prefix":"tkzDefSetOfPoints",
+		"body":[
+			"\\tkzDefSetOfPoints[${2:options%keyvals}]{${1:x1/y1,x2/y2,...}}"
+		]
+	},
+
+
+	"tkzDrawSetOfPoints[]":{
+		"prefix":"tkzDrawSetOfPoints",
+		"body":[
+			"\\tkzDrawSetOfPoints[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzJoinSetOfPoints[]":{
+		"prefix":"tkzJoinSetOfPoints",
+		"body":[
+			"\\tkzJoinSetOfPoints[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzDrawMark[]()":{
+		"prefix":"tkzDrawMark",
+		"body":[
+			"\\tkzDrawMark[${1:options%keyvals}](${2:point})"
+		]
+	},
+
+
+	"tkzDrawMarks[]()":{
+		"prefix":"tkzDrawMarks",
+		"body":[
+			"\\tkzDrawMarks[${1:options%keyvals}](${2:point1},${3:point2},${4:...})"
+		]
+	},
+
+
+	"tkzSetUpMark[]":{
+		"prefix":"tkzSetUpMark",
+		"body":[
+			"\\tkzSetUpMark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tkzText[](){}":{
+		"prefix":"tkzText",
+		"body":[
+			"\\tkzText[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
+		]
+	},
+
+
+	"tkzLegend[]{}":{
+		"prefix":"tkzLegend",
+		"body":[
+			"\\tkzLegend[${2:options%keyvals}]{${1:style/size/color/text}}"
+		]
+	},
+
+
+	"tkzSetUpStyle[]{}":{
+		"prefix":"tkzSetUpStyle",
+		"body":[
+			"\\tkzSetUpStyle[${2:TikZ options}]{${1:style name}}"
+		]
+	},
+
+
+	"tkzSetUpColors[]":{
+		"prefix":"tkzSetUpColors",
+		"body":[
+			"\\tkzSetUpColors[${1:options}]"
+		]
+	},
+
+
+	"tkzSetUpAllColors[]":{
+		"prefix":"tkzSetUpAllColors",
+		"body":[
+			"\\tkzSetUpAllColors[${1:options}]"
+		]
+	},
+
+
+	"tkzAddName[]{}":{
+		"prefix":"tkzAddName",
+		"body":[
+			"\\tkzAddName[${2:TikZ options}]{${1:name}}"
+		]
+	},
+
+
+	"tkzSetUpGrid[]":{
+		"prefix":"tkzSetUpGrid",
+		"body":[
+			"\\tkzSetUpGrid[${1:options}]"
+		]
+	},
+
+
+	"tkzSetUpLabel[]":{
+		"prefix":"tkzSetUpLabel",
+		"body":[
+			"\\tkzSetUpLabel[${1:options}]"
 		]
 	}
 }

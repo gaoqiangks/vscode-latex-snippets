@@ -1,7 +1,7 @@
 {
 
 
-	"TangramTikz":{
+	"TangramTikz{}":{
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz{${1:tangram name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"TangramTikz<TikZ options>":{
+	"TangramTikz<TikZ options>{}":{
 		"prefix":"TangramTikz<TikZ options>",
 		"body":[
 			"\\TangramTikz<TikZ options>{${1:tangram name}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"TangramTikz":{
+	"TangramTikz[]{}":{
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz[${2:options%keyvals}]{${1:tangram name}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"TangramTikz":{
+	"TangramTikz[]<>{}":{
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz[${2:options%keyvals}]<${3:TikZ options}>{${1:tangram name}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"PieceTangram":{
+	"PieceTangram[](){}":{
 		"prefix":"PieceTangram",
 		"body":[
 			"\\PieceTangram[${2:options%keyvals}](${3:x},${4:y}){${1:piece name}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"PieceTangram":{
+	"PieceTangram[]<>(){}":{
 		"prefix":"PieceTangram",
 		"body":[
 			"\\PieceTangram[${2:options%keyvals}]<${3:TikZ options}>(${4:x},${5:y}){${1:piece name}}"
@@ -53,7 +53,27 @@
 		"prefix":"EnvTangramTikz",
 		"body":[
 			"\\begin{EnvTangramTikz}",
-			"\t$1",
+				"\t$1",
+			"\\end{EnvTangramTikz}"
+		]
+	},
+
+
+	"EnvTangramTikz":{
+		"prefix":"EnvTangramTikz",
+		"body":[
+			"\\begin{EnvTangramTikz}",
+				"\t$1",
+			"\\end{EnvTangramTikz}"
+		]
+	},
+
+
+	"EnvTangramTikz":{
+		"prefix":"EnvTangramTikz",
+		"body":[
+			"\\begin{EnvTangramTikz}",
+				"\t$1",
 			"\\end{EnvTangramTikz}"
 		]
 	}

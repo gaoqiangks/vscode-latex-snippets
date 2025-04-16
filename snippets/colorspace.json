@@ -1,7 +1,7 @@
 {
 
 
-	"definespotcolor":{
+	"definespotcolor{}{}{}":{
 		"prefix":"definespotcolor",
 		"body":[
 			"\\definespotcolor{${1:name%specialDef}}{${2:PDF name}}{${3:CMYK-equivalent}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"definespotcolor":{
-		"prefix":"definespotcolor",
-		"body":[
-			"\\definespotcolor{${1:name%specialDef}}{${2:PDF name}}[${4:model}]{${3:equivalent}}"
-		]
-	},
-
-
-	"definespotcolor":{
-		"prefix":"definespotcolor",
-		"body":[
-			"\\definespotcolor{${1:name}}{${2:PDF name}}[${4:alt=lab}]{${3:lab-values}}"
-		]
-	},
-
-
-	"definecolorspace":{
+	"definecolorspace{}{}{}":{
 		"prefix":"definecolorspace",
 		"body":[
 			"\\definecolorspace{${1:name}}{${2:mixed}}{${3:color-list}}"
@@ -33,15 +17,7 @@
 	},
 
 
-	"definecolorspace*":{
-		"prefix":"definecolorspace*",
-		"body":[
-			"\\definecolorspace*{${1:name}}{${2:iccbased}}{${3:icc-file}}"
-		]
-	},
-
-
-	"pagecolorspace":{
+	"pagecolorspace{}":{
 		"prefix":"pagecolorspace",
 		"body":[
 			"\\pagecolorspace{${1:colorspace list}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"overprintstate":{
+	"overprintstate{}":{
 		"prefix":"overprintstate",
 		"body":[
 			"\\overprintstate{${1:state}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"textoverprint":{
+	"textoverprint{}":{
 		"prefix":"textoverprint",
 		"body":[
 			"\\textoverprint{${1:text}}"
@@ -73,7 +49,31 @@
 	},
 
 
-	"textoverprint":{
+	"definecolorspace*{}{}{}":{
+		"prefix":"*definecolorspace",
+		"body":[
+			"\\definecolorspace*{${1:name}}{${2:iccbased}}{${3:icc-file}}"
+		]
+	},
+
+
+	"definespotcolor{}{}[]{}":{
+		"prefix":"definespotcolor",
+		"body":[
+			"\\definespotcolor{${1:name%specialDef}}{${2:PDF name}}[${4:model}]{${3:equivalent}}"
+		]
+	},
+
+
+	"definespotcolor{}{}[]{}":{
+		"prefix":"definespotcolor",
+		"body":[
+			"\\definespotcolor{${1:name}}{${2:PDF name}}[${4:alt=lab}]{${3:lab-values}}"
+		]
+	},
+
+
+	"textoverprint[]{}":{
 		"prefix":"textoverprint",
 		"body":[
 			"\\textoverprint[${2:state}]{${1:text}}"

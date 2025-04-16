@@ -1,7 +1,7 @@
 {
 
 
-	"SetBNFLayout":{
+	"SetBNFLayout{}":{
 		"prefix":"SetBNFLayout",
 		"body":[
 			"\\SetBNFLayout{${1:tblr options}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"SetBNFConfig":{
+	"SetBNFConfig{}":{
 		"prefix":"SetBNFConfig",
 		"body":[
 			"\\SetBNFConfig{${1:options%keyvals}}"
@@ -21,7 +21,37 @@
 		"prefix":"bnf",
 		"body":[
 			"\\begin{bnf}",
-			"\t$1",
+				"\t$1",
+			"\\end{bnf}"
+		]
+	},
+
+
+	"bnf":{
+		"prefix":"bnf",
+		"body":[
+			"\\begin{bnf}",
+				"\t$1",
+			"\\end{bnf}"
+		]
+	},
+
+
+	"bnf":{
+		"prefix":"bnf",
+		"body":[
+			"\\begin{bnf}",
+				"\t$1",
+			"\\end{bnf}"
+		]
+	},
+
+
+	"bnf":{
+		"prefix":"bnf",
+		"body":[
+			"\\begin{bnf}",
+				"\t$1",
 			"\\end{bnf}"
 		]
 	}

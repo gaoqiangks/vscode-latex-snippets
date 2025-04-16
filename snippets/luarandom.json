@@ -1,7 +1,7 @@
 {
 
 
-	"makeSimpleRandomNumberList":{
+	"makeSimpleRandomNumberList{}{}{}":{
 		"prefix":"makeSimpleRandomNumberList",
 		"body":[
 			"\\makeSimpleRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"makeSimpleRandomNumberList":{
-		"prefix":"makeSimpleRandomNumberList",
-		"body":[
-			"\\makeSimpleRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
-		]
-	},
-
-
-	"makeRandomNumberList":{
+	"makeRandomNumberList{}{}{}":{
 		"prefix":"makeRandomNumberList",
 		"body":[
 			"\\makeRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
@@ -25,18 +17,26 @@
 	},
 
 
-	"makeRandomNumberList":{
-		"prefix":"makeRandomNumberList",
+	"getNumberFromList{}":{
+		"prefix":"getNumberFromList",
 		"body":[
-			"\\makeRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
+			"\\getNumberFromList{${1:number}}"
 		]
 	},
 
 
-	"getNumberFromList":{
-		"prefix":"getNumberFromList",
+	"makeSimpleRandomNumberList[]{}{}{}":{
+		"prefix":"makeSimpleRandomNumberList",
 		"body":[
-			"\\getNumberFromList{${1:number}}"
+			"\\makeSimpleRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
+		]
+	},
+
+
+	"makeRandomNumberList[]{}{}{}":{
+		"prefix":"makeRandomNumberList",
+		"body":[
+			"\\makeRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"blackcase":{
+	"blackcase{}{}":{
 		"prefix":"blackcase",
 		"body":[
 			"\\blackcase{${1:x}}{${2:y}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"blackcases":{
+	"blackcases{}":{
 		"prefix":"blackcases",
 		"body":[
 			"\\blackcases{${1:x1/y1,x2/y2,...}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"word":{
+	"word{}{}{}":{
 		"prefix":"word",
 		"body":[
 			"\\word{${1:x}}{${2:y}}{${3:MOT}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"word":{
-		"prefix":"word",
-		"body":[
-			"\\word[${4:options%keyvals}]{${1:x}}{${2:y}}{${3:MOT}}"
-		]
-	},
-
-
-	"words":{
+	"words{}":{
 		"prefix":"words",
 		"body":[
 			"\\words{${1:x1/y1/MOT1,x2/y2.MOT2,...}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"words":{
-		"prefix":"words",
-		"body":[
-			"\\words[${2:options%keyvals}]{${1:x1/y1/MOT1,x2/y2.MOT2,...}}"
-		]
-	},
-
-
-	"gridcross":{
+	"gridcross{}":{
 		"prefix":"gridcross",
 		"body":[
 			"\\gridcross{${1:MOT1*MOT2,MOT3*MOT4,...}}"
@@ -57,18 +41,10 @@
 	},
 
 
-	"printDef":{
+	"printDef{}{}":{
 		"prefix":"printDef",
 		"body":[
 			"\\printDef{${1:h|v}}{${2:la définition%text}}"
-		]
-	},
-
-
-	"printDef":{
-		"prefix":"printDef",
-		"body":[
-			"\\printDef[${3:s}]{${1:h|v}}{${2:la définition}}"
 		]
 	},
 
@@ -89,7 +65,7 @@
 	},
 
 
-	"cRM":{
+	"cRM{}":{
 		"prefix":"cRM",
 		"body":[
 			"\\cRM{${1:text}}"
@@ -121,11 +97,45 @@
 	},
 
 
+	"word[]{}{}{}":{
+		"prefix":"word",
+		"body":[
+			"\\word[${4:options%keyvals}]{${1:x}}{${2:y}}{${3:MOT}}"
+		]
+	},
+
+
+	"words[]{}":{
+		"prefix":"words",
+		"body":[
+			"\\words[${2:options%keyvals}]{${1:x1/y1/MOT1,x2/y2.MOT2,...}}"
+		]
+	},
+
+
+	"printDef[]{}{}":{
+		"prefix":"printDef",
+		"body":[
+			"\\printDef[${3:s}]{${1:h|v}}{${2:la définition}}"
+		]
+	},
+
+
 	"crossgrid":{
 		"prefix":"crossgrid",
 		"body":[
 			"\\begin{crossgrid}",
-			"\t$1",
+				"\t$1",
+			"\\end{crossgrid}"
+		]
+	},
+
+
+	"crossgrid":{
+		"prefix":"crossgrid",
+		"body":[
+			"\\begin{crossgrid}",
+				"\t$1",
 			"\\end{crossgrid}"
 		]
 	}

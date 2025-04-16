@@ -1,7 +1,7 @@
 {
 
 
-	"pydatasetfilehandle":{
+	"pydatasetfilehandle{}":{
 		"prefix":"pydatasetfilehandle",
 		"body":[
 			"\\pydatasetfilehandle{${1:filehandle}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"pydatareleasefilehandle":{
+	"pydatareleasefilehandle{}":{
 		"prefix":"pydatareleasefilehandle",
 		"body":[
 			"\\pydatareleasefilehandle{${1:filehandle}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"pydatasetfilename":{
+	"pydatasetfilename{}":{
 		"prefix":"pydatasetfilename",
 		"body":[
 			"\\pydatasetfilename{${1:file}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"pydataclosefilename":{
+	"pydataclosefilename{}":{
 		"prefix":"pydataclosefilename",
 		"body":[
 			"\\pydataclosefilename{${1:file}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"pydatasetschemamissing":{
+	"pydatasetschemamissing{}":{
 		"prefix":"pydatasetschemamissing",
 		"body":[
 			"\\pydatasetschemamissing{${1:missing behavior}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"pydatasetschemakeytype":{
+	"pydatasetschemakeytype{}{}":{
 		"prefix":"pydatasetschemakeytype",
 		"body":[
 			"\\pydatasetschemakeytype{${1:key%plain}}{${2:value type}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"pydatawritekey":{
+	"pydatawritekey{}":{
 		"prefix":"pydatawritekey",
 		"body":[
 			"\\pydatawritekey{${1:key%plain}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"pydatawritevalue":{
+	"pydatawritevalue{}":{
 		"prefix":"pydatawritevalue",
 		"body":[
 			"\\pydatawritevalue{${1:value}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"pydatawritekeyedefvalue":{
+	"pydatawritekeyedefvalue{}{}":{
 		"prefix":"pydatawritekeyedefvalue",
 		"body":[
 			"\\pydatawritekeyedefvalue{${1:key%plain}}{${2:value}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"pydatawritekeyvalue":{
+	"pydatawritekeyvalue{}{}":{
 		"prefix":"pydatawritekeyvalue",
 		"body":[
 			"\\pydatawritekeyvalue{${1:key%plain}}{${2:value}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"pydatasetbuffername":{
+	"pydatasetbuffername{}":{
 		"prefix":"pydatasetbuffername",
 		"body":[
 			"\\pydatasetbuffername{${1:buffername}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"pydataclearbuffername":{
+	"pydataclearbuffername{}":{
 		"prefix":"pydataclearbuffername",
 		"body":[
 			"\\pydataclearbuffername{${1:buffername}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"pydatabufferkey":{
+	"pydatabufferkey{}":{
 		"prefix":"pydatabufferkey",
 		"body":[
 			"\\pydatabufferkey{${1:key%plain}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"pydatabuffervalue":{
+	"pydatabuffervalue{}":{
 		"prefix":"pydatabuffervalue",
 		"body":[
 			"\\pydatabuffervalue{${1:value}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"pydatabufferkeyedefvalue":{
+	"pydatabufferkeyedefvalue{}{}":{
 		"prefix":"pydatabufferkeyedefvalue",
 		"body":[
 			"\\pydatabufferkeyedefvalue{${1:key%plain}}{${2:value}}"
@@ -193,20 +193,10 @@
 	},
 
 
-	"pydatabufferkeyvalue":{
+	"pydatabufferkeyvalue{}{}":{
 		"prefix":"pydatabufferkeyvalue",
 		"body":[
 			"\\pydatabufferkeyvalue{${1:key%plain}}{${2:value}}"
-		]
-	},
-
-
-	"pydatabuffermlvalue":{
-		"prefix":"pydatabuffermlvalue",
-		"body":[
-			"\\begin{pydatabuffermlvalue}",
-			"\t$1",
-			"\\end{pydatabuffermlvalue}"
 		]
 	},
 
@@ -215,8 +205,18 @@
 		"prefix":"pydatawritemlvalue",
 		"body":[
 			"\\begin{pydatawritemlvalue}",
-			"\t$1",
+				"\t$1",
 			"\\end{pydatawritemlvalue}"
+		]
+	},
+
+
+	"pydatabuffermlvalue":{
+		"prefix":"pydatabuffermlvalue",
+		"body":[
+			"\\begin{pydatabuffermlvalue}",
+				"\t$1",
+			"\\end{pydatabuffermlvalue}"
 		]
 	}
 }

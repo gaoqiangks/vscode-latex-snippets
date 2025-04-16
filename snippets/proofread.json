@@ -9,15 +9,7 @@
 	},
 
 
-	"skp":{
-		"prefix":"skp",
-		"body":[
-			"\\skp[${1:number}]"
-		]
-	},
-
-
-	"del":{
+	"del{}":{
 		"prefix":"del",
 		"body":[
 			"\\del{${1:phrase%text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"yel":{
+	"yel{}":{
 		"prefix":"yel",
 		"body":[
 			"\\yel{${1:phrase%text}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"yel":{
-		"prefix":"yel",
-		"body":[
-			"\\yel[${2:comment%text}]{${1:phrase%text}}"
-		]
-	},
-
-
-	"add":{
+	"add{}":{
 		"prefix":"add",
 		"body":[
 			"\\add{${1:phrase%text}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"rep":{
+	"rep{}{}":{
 		"prefix":"rep",
 		"body":[
 			"\\rep{${1:phrase%text}}{${2:replacement}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"com":{
+	"com{}":{
 		"prefix":"com",
 		"body":[
 			"\\com{${1:comment%text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"hilite":{
+	"hilite{}":{
 		"prefix":"hilite",
 		"body":[
 			"\\hilite{${1:phrase%text}}"
@@ -73,7 +57,23 @@
 	},
 
 
-	"hilite":{
+	"skp[]":{
+		"prefix":"skp",
+		"body":[
+			"\\skp[${1:number}]"
+		]
+	},
+
+
+	"yel[]{}":{
+		"prefix":"yel",
+		"body":[
+			"\\yel[${2:comment%text}]{${1:phrase%text}}"
+		]
+	},
+
+
+	"hilite[]{}":{
 		"prefix":"hilite",
 		"body":[
 			"\\hilite[${2:options%keyvals}]{${1:phrase%text}}"

@@ -1,7 +1,7 @@
 {
 
 
-	"nto":{
+	"nto{}{}":{
 		"prefix":"nto",
 		"body":[
 			"\\nto{${1:num1}}{${2:num2}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ito":{
+	"ito{}":{
 		"prefix":"ito",
 		"body":[
 			"\\ito{${1:num}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"oto":{
+	"oto{}":{
 		"prefix":"oto",
 		"body":[
 			"\\oto{${1:num}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"setOTMstyle":{
+	"setOTMstyle{}":{
 		"prefix":"setOTMstyle",
 		"body":[
 			"\\setOTMstyle{${1:style}}"
@@ -33,15 +33,7 @@
 	},
 
 
-	"setOTMstyle":{
-		"prefix":"setOTMstyle",
-		"body":[
-			"\\setOTMstyle[${2:params%keyvals}]{${1:style}}"
-		]
-	},
-
-
-	"newOTMstyle":{
+	"newOTMstyle{}{}":{
 		"prefix":"newOTMstyle",
 		"body":[
 			"\\newOTMstyle{${1:name}}{${2:definition}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"newOTMstyle":{
-		"prefix":"newOTMstyle",
-		"body":[
-			"\\newOTMstyle[${3:params}]{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"getOTMparameter":{
+	"getOTMparameter{}":{
 		"prefix":"getOTMparameter",
 		"body":[
 			"\\getOTMparameter{${1:param}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"renewOTMstyle":{
+	"renewOTMstyle{}{}":{
 		"prefix":"renewOTMstyle",
 		"body":[
 			"\\renewOTMstyle{${1:name}}{${2:definition}}"
@@ -73,7 +57,23 @@
 	},
 
 
-	"newOTMstyle":{
+	"newOTMparameter{}{}{}":{
+		"prefix":"newOTMparameter",
+		"body":[
+			"\\newOTMparameter{${1:style}}{${2:param}}{${3:value}}"
+		]
+	},
+
+
+	"setOTMstyle[]{}":{
+		"prefix":"setOTMstyle",
+		"body":[
+			"\\setOTMstyle[${2:params%keyvals}]{${1:style}}"
+		]
+	},
+
+
+	"newOTMstyle[]{}{}":{
 		"prefix":"newOTMstyle",
 		"body":[
 			"\\newOTMstyle[${3:params}]{${1:name}}{${2:definition}}"
@@ -81,10 +81,10 @@
 	},
 
 
-	"newOTMparameter":{
-		"prefix":"newOTMparameter",
+	"newOTMstyle[]{}{}":{
+		"prefix":"newOTMstyle",
 		"body":[
-			"\\newOTMparameter{${1:style}}{${2:param}}{${3:value}}"
+			"\\newOTMstyle[${3:params}]{${1:name}}{${2:definition}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"version":{
+	"version{}":{
 		"prefix":"version",
 		"body":[
 			"\\version{${1:version}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"versionformat":{
+	"versionformat{}":{
 		"prefix":"versionformat",
 		"body":[
 			"\\versionformat{${1:text%plain}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"partnerlogo":{
+	"partnerlogo{}":{
 		"prefix":"partnerlogo",
 		"body":[
 			"\\partnerlogo{${1:graphics code}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"titlegraphic*":{
-		"prefix":"titlegraphic*",
-		"body":[
-			"\\titlegraphic*{${1:text}}"
-		]
-	},
-
-
-	"inserttitleVcenter":{
+	"inserttitleVcenter{}":{
 		"prefix":"inserttitleVcenter",
 		"body":[
 			"\\inserttitleVcenter{${1:text}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"separatorpage":{
+	"separatorpage{}":{
 		"prefix":"separatorpage",
 		"body":[
 			"\\separatorpage{${1:type}}"
@@ -73,8 +65,16 @@
 	},
 
 
-	"separatorpage*":{
-		"prefix":"separatorpage*",
+	"titlegraphic*{}":{
+		"prefix":"*titlegraphic",
+		"body":[
+			"\\titlegraphic*{${1:text}}"
+		]
+	},
+
+
+	"separatorpage*{}":{
+		"prefix":"*separatorpage",
 		"body":[
 			"\\separatorpage*{${1:type}}"
 		]

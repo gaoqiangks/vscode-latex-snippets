@@ -73,7 +73,7 @@
 	},
 
 
-	"curvesymbol":{
+	"curvesymbol{}":{
 		"prefix":"curvesymbol",
 		"body":[
 			"\\curvesymbol{${1:symbol}}"
@@ -81,18 +81,10 @@
 	},
 
 
-	"curvedashes":{
+	"curvedashes{}":{
 		"prefix":"curvedashes",
 		"body":[
 			"\\curvedashes{${1:dash pattern}}"
-		]
-	},
-
-
-	"curvedashes":{
-		"prefix":"curvedashes",
-		"body":[
-			"\\curvedashes[${2:length}]{${1:dash pattern}}"
 		]
 	},
 
@@ -145,7 +137,7 @@
 	},
 
 
-	"arc":{
+	"arc(){}":{
 		"prefix":"arc",
 		"body":[
 			"\\arc(${2:x},${3:y}){${1:angle}}"
@@ -153,15 +145,7 @@
 	},
 
 
-	"arc":{
-		"prefix":"arc",
-		"body":[
-			"\\arc[${2:n}](${3:x},${4:y}){${1:angle}}"
-		]
-	},
-
-
-	"bigcircle":{
+	"bigcircle{}":{
 		"prefix":"bigcircle",
 		"body":[
 			"\\bigcircle{${1:diameter}}"
@@ -169,15 +153,7 @@
 	},
 
 
-	"bigcircle":{
-		"prefix":"bigcircle",
-		"body":[
-			"\\bigcircle[${2:n}]{${1:diameter}}"
-		]
-	},
-
-
-	"closecurve":{
+	"closecurve()":{
 		"prefix":"closecurve",
 		"body":[
 			"\\closecurve(${1:coords})"
@@ -185,15 +161,7 @@
 	},
 
 
-	"closecurve":{
-		"prefix":"closecurve",
-		"body":[
-			"\\closecurve[${1:n}](${2:coords})"
-		]
-	},
-
-
-	"curve":{
+	"curve()":{
 		"prefix":"curve",
 		"body":[
 			"\\curve(${1:coords})"
@@ -201,15 +169,7 @@
 	},
 
 
-	"curve":{
-		"prefix":"curve",
-		"body":[
-			"\\curve[${1:n}](${2:coords})"
-		]
-	},
-
-
-	"scaleput":{
+	"scaleput(){}":{
 		"prefix":"scaleput",
 		"body":[
 			"\\scaleput(${2:x},${3:y}){${1:object}}"
@@ -217,7 +177,7 @@
 	},
 
 
-	"tagcurve":{
+	"tagcurve()":{
 		"prefix":"tagcurve",
 		"body":[
 			"\\tagcurve(${1:coords})"
@@ -225,7 +185,47 @@
 	},
 
 
-	"tagcurve":{
+	"curvedashes[]{}":{
+		"prefix":"curvedashes",
+		"body":[
+			"\\curvedashes[${2:length}]{${1:dash pattern}}"
+		]
+	},
+
+
+	"arc[](){}":{
+		"prefix":"arc",
+		"body":[
+			"\\arc[${2:n}](${3:x},${4:y}){${1:angle}}"
+		]
+	},
+
+
+	"bigcircle[]{}":{
+		"prefix":"bigcircle",
+		"body":[
+			"\\bigcircle[${2:n}]{${1:diameter}}"
+		]
+	},
+
+
+	"closecurve[]()":{
+		"prefix":"closecurve",
+		"body":[
+			"\\closecurve[${1:n}](${2:coords})"
+		]
+	},
+
+
+	"curve[]()":{
+		"prefix":"curve",
+		"body":[
+			"\\curve[${1:n}](${2:coords})"
+		]
+	},
+
+
+	"tagcurve[]()":{
 		"prefix":"tagcurve",
 		"body":[
 			"\\tagcurve[${1:n}](${2:coords})"

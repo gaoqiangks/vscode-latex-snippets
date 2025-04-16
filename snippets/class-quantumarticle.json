@@ -9,7 +9,7 @@
 	},
 
 
-	"addauthortolabel":{
+	"addauthortolabel{}{}":{
 		"prefix":"addauthortolabel",
 		"body":[
 			"\\addauthortolabel{${1:arg1}}{${2:arg2}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"address":{
-		"prefix":"address",
-		"body":[
-			"\\address[${2:id}]{${1:affiliation}}"
-		]
-	},
-
-
-	"address":{
+	"address{}":{
 		"prefix":"address",
 		"body":[
 			"\\address{${1:affiliation}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"affil":{
-		"prefix":"affil",
-		"body":[
-			"\\affil[${2:id}]{${1:affiliation}}"
-		]
-	},
-
-
-	"affil":{
+	"affil{}":{
 		"prefix":"affil",
 		"body":[
 			"\\affil{${1:affiliation}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"affiliation":{
+	"affiliation{}":{
 		"prefix":"affiliation",
 		"body":[
 			"\\affiliation{${1:affiliation}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"altaffiliation":{
+	"altaffiliation{}":{
 		"prefix":"altaffiliation",
 		"body":[
 			"\\altaffiliation{${1:affiliation}}"
@@ -65,15 +49,7 @@
 	},
 
 
-	"author":{
-		"prefix":"author",
-		"body":[
-			"\\author[${2:id}]{${1:name}}"
-		]
-	},
-
-
-	"collaboration":{
+	"collaboration{}":{
 		"prefix":"collaboration",
 		"body":[
 			"\\collaboration{${1:name}}"
@@ -81,15 +57,7 @@
 	},
 
 
-	"ead":{
-		"prefix":"ead",
-		"body":[
-			"\\ead[${2:url}]{${1:URL}}"
-		]
-	},
-
-
-	"ead":{
+	"ead{}":{
 		"prefix":"ead",
 		"body":[
 			"\\ead{${1:email%URL}}"
@@ -97,15 +65,7 @@
 	},
 
 
-	"email":{
-		"prefix":"email",
-		"body":[
-			"\\email[${2:prefix}]{${1:email%URL}}"
-		]
-	},
-
-
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -113,15 +73,7 @@
 	},
 
 
-	"homepage":{
-		"prefix":"homepage",
-		"body":[
-			"\\homepage[${2:prefix}]{${1:URL}}"
-		]
-	},
-
-
-	"homepage":{
+	"homepage{}":{
 		"prefix":"homepage",
 		"body":[
 			"\\homepage{${1:URL}}"
@@ -129,7 +81,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords}}"
@@ -137,7 +89,7 @@
 	},
 
 
-	"nocontentsline":{
+	"nocontentsline{}{}{}":{
 		"prefix":"nocontentsline",
 		"body":[
 			"\\nocontentsline{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -153,15 +105,7 @@
 	},
 
 
-	"orcid":{
-		"prefix":"orcid",
-		"body":[
-			"\\orcid[${2:prefix}]{${1:ORCID}}"
-		]
-	},
-
-
-	"orcid":{
+	"orcid{}":{
 		"prefix":"orcid",
 		"body":[
 			"\\orcid{${1:ORCID}}"
@@ -185,7 +129,63 @@
 	},
 
 
-	"thanks":{
+	"address[]{}":{
+		"prefix":"address",
+		"body":[
+			"\\address[${2:id}]{${1:affiliation}}"
+		]
+	},
+
+
+	"affil[]{}":{
+		"prefix":"affil",
+		"body":[
+			"\\affil[${2:id}]{${1:affiliation}}"
+		]
+	},
+
+
+	"author[]{}":{
+		"prefix":"author",
+		"body":[
+			"\\author[${2:id}]{${1:name}}"
+		]
+	},
+
+
+	"ead[]{}":{
+		"prefix":"ead",
+		"body":[
+			"\\ead[${2:url}]{${1:URL}}"
+		]
+	},
+
+
+	"email[]{}":{
+		"prefix":"email",
+		"body":[
+			"\\email[${2:prefix}]{${1:email%URL}}"
+		]
+	},
+
+
+	"homepage[]{}":{
+		"prefix":"homepage",
+		"body":[
+			"\\homepage[${2:prefix}]{${1:URL}}"
+		]
+	},
+
+
+	"orcid[]{}":{
+		"prefix":"orcid",
+		"body":[
+			"\\orcid[${2:prefix}]{${1:ORCID}}"
+		]
+	},
+
+
+	"thanks[]{}":{
 		"prefix":"thanks",
 		"body":[
 			"\\thanks[${2:prefix}]{${1:text}}"
@@ -197,7 +197,7 @@
 		"prefix":"acknowledgements",
 		"body":[
 			"\\begin{acknowledgements}",
-			"\t$1",
+				"\t$1",
 			"\\end{acknowledgements}"
 		]
 	},
@@ -207,7 +207,7 @@
 		"prefix":"widetext",
 		"body":[
 			"\\begin{widetext}",
-			"\t$1",
+				"\t$1",
 			"\\end{widetext}"
 		]
 	}

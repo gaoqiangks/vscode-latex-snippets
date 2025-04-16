@@ -1,7 +1,7 @@
 {
 
 
-	"IncludeTests":{
+	"IncludeTests{}":{
 		"prefix":"IncludeTests",
 		"body":[
 			"\\IncludeTests{${1:pattern list}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"TestErrors":{
+	"TestErrors{}":{
 		"prefix":"TestErrors",
 		"body":[
 			"\\TestErrors{${1:pattern list}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"LogTests":{
+	"LogTests{}{}{}":{
 		"prefix":"LogTests",
 		"body":[
 			"\\LogTests{${1:file ext}}{${2:keywordlist1}}{${3:keywordlist2}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"LogClose":{
+	"LogClose{}":{
 		"prefix":"LogClose",
 		"body":[
 			"\\LogClose{${1:file ext}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"Expect":{
+	"Expect{}{}":{
 		"prefix":"Expect",
 		"body":[
 			"\\Expect{${1:arg1}}{${2:arg2}}"
@@ -41,23 +41,7 @@
 	},
 
 
-	"Expect*":{
-		"prefix":"Expect*",
-		"body":[
-			"\\Expect*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"Expect*":{
-		"prefix":"Expect*",
-		"body":[
-			"\\Expect*{${1:arg1}}*{${2:arg2}}"
-		]
-	},
-
-
-	"ExpectIfThen":{
+	"ExpectIfThen{}":{
 		"prefix":"ExpectIfThen",
 		"body":[
 			"\\ExpectIfThen{${1:condition}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"InRange":{
+	"InRange{}{}":{
 		"prefix":"InRange",
 		"body":[
 			"\\InRange{${1:dimen1%l}}{${2:dimen2%l}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"NearTo":{
+	"NearTo{}":{
 		"prefix":"NearTo",
 		"body":[
 			"\\NearTo{${1:dimen%l}}"
@@ -81,15 +65,7 @@
 	},
 
 
-	"NearTo":{
-		"prefix":"NearTo",
-		"body":[
-			"\\NearTo[${2:opt dimen%l}]{${1:dimen%l}}"
-		]
-	},
-
-
-	"SaveValueFile":{
+	"SaveValueFile{}":{
 		"prefix":"SaveValueFile",
 		"body":[
 			"\\SaveValueFile{${1:file name%file}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"SaveValue":{
+	"SaveValue{}{}":{
 		"prefix":"SaveValue",
 		"body":[
 			"\\SaveValue{${1:cmd}}{${2:arg}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"SaveValue":{
+	"SaveValue{}*{}":{
 		"prefix":"SaveValue",
 		"body":[
 			"\\SaveValue{${1:cmd}}*{${2:arg}}"
@@ -145,12 +121,26 @@
 	},
 
 
-	"ExpectCallSequence":{
-		"prefix":"ExpectCallSequence",
+	"Expect*{}{}":{
+		"prefix":"*Expect",
 		"body":[
-			"\\begin{ExpectCallSequence}",
-			"\t$1",
-			"\\end{ExpectCallSequence}"
+			"\\Expect*{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"Expect*{}*{}":{
+		"prefix":"*Expect",
+		"body":[
+			"\\Expect*{${1:arg1}}*{${2:arg2}}"
+		]
+	},
+
+
+	"NearTo[]{}":{
+		"prefix":"NearTo",
+		"body":[
+			"\\NearTo[${2:opt dimen%l}]{${1:dimen%l}}"
 		]
 	},
 
@@ -159,8 +149,18 @@
 		"prefix":"qstest",
 		"body":[
 			"\\begin{qstest}",
-			"\t$1",
+				"\t$1",
 			"\\end{qstest}"
+		]
+	},
+
+
+	"ExpectCallSequence":{
+		"prefix":"ExpectCallSequence",
+		"body":[
+			"\\begin{ExpectCallSequence}",
+				"\t$1",
+			"\\end{ExpectCallSequence}"
 		]
 	}
 }

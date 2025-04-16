@@ -1,7 +1,7 @@
 {
 
 
-	"setmodiagram":{
+	"setmodiagram{}":{
 		"prefix":"setmodiagram",
 		"body":[
 			"\\setmodiagram{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"atom":{
+	"atom{}{}":{
 		"prefix":"atom",
 		"body":[
 			"\\atom{${1:left or right}}{${2:AO-spec%keyvals}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"atom":{
-		"prefix":"atom",
-		"body":[
-			"\\atom[${3:name}]{${1:left or right}}{${2:AO-spec%keyvals}}"
-		]
-	},
-
-
-	"molecule":{
+	"molecule{}":{
 		"prefix":"molecule",
 		"body":[
 			"\\molecule{${1:MO-spec%keyvals}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"molecule":{
-		"prefix":"molecule",
-		"body":[
-			"\\molecule[${2:name}]{${1:MO-spec%keyvals}}"
-		]
-	},
-
-
-	"AO":{
+	"AO(){}{}":{
 		"prefix":"AO",
 		"body":[
 			"\\AO(${3:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
@@ -49,31 +33,7 @@
 	},
 
 
-	"AO":{
-		"prefix":"AO",
-		"body":[
-			"\\AO(${4:%<xshift%>}){${1:type}}[${3:options}]{${2:energy; el-spec}}"
-		]
-	},
-
-
-	"AO":{
-		"prefix":"AO",
-		"body":[
-			"\\AO[${3:name}](${4:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
-		]
-	},
-
-
-	"AO":{
-		"prefix":"AO",
-		"body":[
-			"\\AO[${3:name}](${5:%<xshift%>}){${1:type}}[${4:options}]{${2:energy; el-spec}}"
-		]
-	},
-
-
-	"connect":{
+	"connect{}":{
 		"prefix":"connect",
 		"body":[
 			"\\connect{${1:AO-connect}}"
@@ -89,7 +49,47 @@
 	},
 
 
-	"EnergyAxis":{
+	"atom[]{}{}":{
+		"prefix":"atom",
+		"body":[
+			"\\atom[${3:name}]{${1:left or right}}{${2:AO-spec%keyvals}}"
+		]
+	},
+
+
+	"molecule[]{}":{
+		"prefix":"molecule",
+		"body":[
+			"\\molecule[${2:name}]{${1:MO-spec%keyvals}}"
+		]
+	},
+
+
+	"AO(){}[]{}":{
+		"prefix":"AO",
+		"body":[
+			"\\AO(${4:%<xshift%>}){${1:type}}[${3:options}]{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"AO[](){}{}":{
+		"prefix":"AO",
+		"body":[
+			"\\AO[${3:name}](${4:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"AO[](){}[]{}":{
+		"prefix":"AO",
+		"body":[
+			"\\AO[${3:name}](${5:%<xshift%>}){${1:type}}[${4:options}]{${2:energy; el-spec}}"
+		]
+	},
+
+
+	"EnergyAxis[]":{
 		"prefix":"EnergyAxis",
 		"body":[
 			"\\EnergyAxis[${1:options%keyvals}]"
@@ -101,7 +101,17 @@
 		"prefix":"modiagram",
 		"body":[
 			"\\begin{modiagram}",
-			"\t$1",
+				"\t$1",
+			"\\end{modiagram}"
+		]
+	},
+
+
+	"modiagram":{
+		"prefix":"modiagram",
+		"body":[
+			"\\begin{modiagram}",
+				"\t$1",
 			"\\end{modiagram}"
 		]
 	}

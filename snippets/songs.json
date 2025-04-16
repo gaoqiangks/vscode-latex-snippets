@@ -73,7 +73,7 @@
 	},
 
 
-	"includeonlysongs":{
+	"includeonlysongs{}":{
 		"prefix":"includeonlysongs",
 		"body":[
 			"\\includeonlysongs{${1:songlist}}"
@@ -81,18 +81,10 @@
 	},
 
 
-	"beginsong":{
+	"beginsong{}":{
 		"prefix":"beginsong",
 		"body":[
 			"\\beginsong{${1:titles%text}}"
-		]
-	},
-
-
-	"beginsong":{
-		"prefix":"beginsong",
-		"body":[
-			"\\beginsong{${1:titles%text}}[${2:otherinfo%keyvals}]"
 		]
 	},
 
@@ -105,7 +97,7 @@
 	},
 
 
-	"setlicense":{
+	"setlicense{}":{
 		"prefix":"setlicense",
 		"body":[
 			"\\setlicense{${1:license}}"
@@ -117,14 +109,6 @@
 		"prefix":"beginverse",
 		"body":[
 			"\\beginverse"
-		]
-	},
-
-
-	"beginverse*":{
-		"prefix":"beginverse*",
-		"body":[
-			"\\beginverse*"
 		]
 	},
 
@@ -153,14 +137,6 @@
 	},
 
 
-	"":{
-		"prefix":"",
-		"body":[
-			"\\[${1:chordname}]"
-		]
-	},
-
-
 	"nolyrics":{
 		"prefix":"nolyrics",
 		"body":[
@@ -169,7 +145,7 @@
 	},
 
 
-	"DeclareLyricChar":{
+	"DeclareLyricChar{}":{
 		"prefix":"DeclareLyricChar",
 		"body":[
 			"\\DeclareLyricChar{${1:token}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"DeclareNonLyric":{
+	"DeclareNonLyric{}":{
 		"prefix":"DeclareNonLyric",
 		"body":[
 			"\\DeclareNonLyric{${1:token}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"DeclareNoHyphen":{
+	"DeclareNoHyphen{}":{
 		"prefix":"DeclareNoHyphen",
 		"body":[
 			"\\DeclareNoHyphen{${1:token}}"
@@ -225,15 +201,7 @@
 	},
 
 
-	"memorize":{
-		"prefix":"memorize",
-		"body":[
-			"\\memorize[${1:regname}]"
-		]
-	},
-
-
-	"newchords":{
+	"newchords{}":{
 		"prefix":"newchords",
 		"body":[
 			"\\newchords{${1:regname}}"
@@ -245,14 +213,6 @@
 		"prefix":"replay",
 		"body":[
 			"\\replay"
-		]
-	},
-
-
-	"replay":{
-		"prefix":"replay",
-		"body":[
-			"\\replay[${1:regname}]"
 		]
 	},
 
@@ -305,7 +265,7 @@
 	},
 
 
-	"echo":{
+	"echo{}":{
 		"prefix":"echo",
 		"body":[
 			"\\echo{${1:lyrics and chords}}"
@@ -313,7 +273,7 @@
 	},
 
 
-	"rep":{
+	"rep{}":{
 		"prefix":"rep",
 		"body":[
 			"\\rep{${1:n}}"
@@ -345,7 +305,7 @@
 	},
 
 
-	"meter":{
+	"meter{}{}":{
 		"prefix":"meter",
 		"body":[
 			"\\meter{${1:n}}{${2:d}}"
@@ -353,7 +313,7 @@
 	},
 
 
-	"mbar":{
+	"mbar{}{}":{
 		"prefix":"mbar",
 		"body":[
 			"\\mbar{${1:n}}{${2:d}}"
@@ -361,7 +321,7 @@
 	},
 
 
-	"textnote":{
+	"textnote{}":{
 		"prefix":"textnote",
 		"body":[
 			"\\textnote{${1:text}}"
@@ -369,7 +329,7 @@
 	},
 
 
-	"musicnote":{
+	"musicnote{}":{
 		"prefix":"musicnote",
 		"body":[
 			"\\musicnote{${1:text}}"
@@ -377,7 +337,7 @@
 	},
 
 
-	"capo":{
+	"capo{}":{
 		"prefix":"capo",
 		"body":[
 			"\\capo{${1:n}}"
@@ -385,7 +345,7 @@
 	},
 
 
-	"ch":{
+	"ch{}{}{}{}":{
 		"prefix":"ch",
 		"body":[
 			"\\ch{${1:chord}}{${2:pre}}{${3:post}}{${4:full}}"
@@ -393,7 +353,7 @@
 	},
 
 
-	"mch":{
+	"mch{}{}{}{}":{
 		"prefix":"mch",
 		"body":[
 			"\\mch{${1:chord}}{${2:pre}}{${3:post}}{${4:full}}"
@@ -401,7 +361,7 @@
 	},
 
 
-	"gtab":{
+	"gtab{}{}":{
 		"prefix":"gtab",
 		"body":[
 			"\\gtab{${1:chord}}{${2:fret:strings:fingering}}"
@@ -409,7 +369,7 @@
 	},
 
 
-	"transpose":{
+	"transpose{}":{
 		"prefix":"transpose",
 		"body":[
 			"\\transpose{${1:n}}"
@@ -433,7 +393,7 @@
 	},
 
 
-	"trchordformat":{
+	"trchordformat{}{}":{
 		"prefix":"trchordformat",
 		"body":[
 			"\\trchordformat{${1:chordname}}{${2:transposed-chordname}}"
@@ -457,7 +417,7 @@
 	},
 
 
-	"notenames":{
+	"notenames{}{}{}{}{}{}{}":{
 		"prefix":"notenames",
 		"body":[
 			"\\notenames{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
@@ -465,7 +425,7 @@
 	},
 
 
-	"notenamesin":{
+	"notenamesin{}{}{}{}{}{}{}":{
 		"prefix":"notenamesin",
 		"body":[
 			"\\notenamesin{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
@@ -473,7 +433,7 @@
 	},
 
 
-	"notenamesout":{
+	"notenamesout{}{}{}{}{}{}{}":{
 		"prefix":"notenamesout",
 		"body":[
 			"\\notenamesout{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
@@ -481,7 +441,7 @@
 	},
 
 
-	"transposehere":{
+	"transposehere{}":{
 		"prefix":"transposehere",
 		"body":[
 			"\\transposehere{${1:chords}}"
@@ -489,7 +449,7 @@
 	},
 
 
-	"notrans":{
+	"notrans{}":{
 		"prefix":"notrans",
 		"body":[
 			"\\notrans{${1:chords}}"
@@ -497,7 +457,7 @@
 	},
 
 
-	"gtabtrans":{
+	"gtabtrans{}{}":{
 		"prefix":"gtabtrans",
 		"body":[
 			"\\gtabtrans{${1:chord}}{${2:fret:strings:fingering}}"
@@ -505,7 +465,7 @@
 	},
 
 
-	"beginscripture":{
+	"beginscripture{}":{
 		"prefix":"beginscripture",
 		"body":[
 			"\\beginscripture{${1:ref}}"
@@ -561,7 +521,7 @@
 	},
 
 
-	"songsection":{
+	"songsection{}":{
 		"prefix":"songsection",
 		"body":[
 			"\\songsection{${1:title}}"
@@ -569,7 +529,7 @@
 	},
 
 
-	"songchapter":{
+	"songchapter{}":{
 		"prefix":"songchapter",
 		"body":[
 			"\\songchapter{${1:title}}"
@@ -577,7 +537,7 @@
 	},
 
 
-	"newindex":{
+	"newindex{}{}":{
 		"prefix":"newindex",
 		"body":[
 			"\\newindex{${1:id}}{${2:filename%file}}"
@@ -585,7 +545,7 @@
 	},
 
 
-	"newauthorindex":{
+	"newauthorindex{}{}":{
 		"prefix":"newauthorindex",
 		"body":[
 			"\\newauthorindex{${1:id}}{${2:filename%file}}"
@@ -593,7 +553,7 @@
 	},
 
 
-	"newscripindex":{
+	"newscripindex{}{}":{
 		"prefix":"newscripindex",
 		"body":[
 			"\\newscripindex{${1:id}}{${2:filename%file}}"
@@ -601,7 +561,7 @@
 	},
 
 
-	"showindex":{
+	"showindex{}{}":{
 		"prefix":"showindex",
 		"body":[
 			"\\showindex{${1:title%text}}{${2:id}}"
@@ -609,15 +569,7 @@
 	},
 
 
-	"showindex":{
-		"prefix":"showindex",
-		"body":[
-			"\\showindex[${3:columns}]{${1:title%text}}{${2:id}}"
-		]
-	},
-
-
-	"indexentry":{
+	"indexentry{}":{
 		"prefix":"indexentry",
 		"body":[
 			"\\indexentry{${1:lyrics%text}}"
@@ -625,26 +577,10 @@
 	},
 
 
-	"indexentry":{
-		"prefix":"indexentry",
-		"body":[
-			"\\indexentry[${2:indexes}]{${1:lyrics%text}}"
-		]
-	},
-
-
-	"indextitleentry":{
+	"indextitleentry{}":{
 		"prefix":"indextitleentry",
 		"body":[
 			"\\indextitleentry{${1:title%text}}"
-		]
-	},
-
-
-	"indextitleentry":{
-		"prefix":"indextitleentry",
-		"body":[
-			"\\indextitleentry[${2:indexes}]{${1:title%text}}"
 		]
 	},
 
@@ -657,7 +593,7 @@
 	},
 
 
-	"printsongnum":{
+	"printsongnum{}":{
 		"prefix":"printsongnum",
 		"body":[
 			"\\printsongnum{${1:arg}}"
@@ -689,7 +625,7 @@
 	},
 
 
-	"printversenum":{
+	"printversenum{}":{
 		"prefix":"printversenum",
 		"body":[
 			"\\printversenum{${1:arg}}"
@@ -713,7 +649,7 @@
 	},
 
 
-	"placeversenum":{
+	"placeversenum{}":{
 		"prefix":"placeversenum",
 		"body":[
 			"\\placeversenum{${1:arg}}"
@@ -793,7 +729,7 @@
 	},
 
 
-	"printchord":{
+	"printchord{}":{
 		"prefix":"printchord",
 		"body":[
 			"\\printchord{${1:arg}}"
@@ -1041,7 +977,7 @@
 	},
 
 
-	"printscrcite":{
+	"printscrcite{}":{
 		"prefix":"printscrcite",
 		"body":[
 			"\\printscrcite{${1:arg}}"
@@ -1145,7 +1081,7 @@
 	},
 
 
-	"songcolumns":{
+	"songcolumns{}":{
 		"prefix":"songcolumns",
 		"body":[
 			"\\songcolumns{${1:n}}"
@@ -1177,7 +1113,7 @@
 	},
 
 
-	"songpos":{
+	"songpos{}":{
 		"prefix":"songpos",
 		"body":[
 			"\\songpos{${1:level}}"
@@ -1273,7 +1209,7 @@
 	},
 
 
-	"idxbook":{
+	"idxbook{}":{
 		"prefix":"idxbook",
 		"body":[
 			"\\idxbook{${1:text}}"
@@ -1281,7 +1217,7 @@
 	},
 
 
-	"idxcont":{
+	"idxcont{}":{
 		"prefix":"idxcont",
 		"body":[
 			"\\idxcont{${1:text}}"
@@ -1289,7 +1225,7 @@
 	},
 
 
-	"indexsongsas":{
+	"indexsongsas{}{}":{
 		"prefix":"indexsongsas",
 		"body":[
 			"\\indexsongsas{${1:id}}{${2:number}}"
@@ -1297,7 +1233,7 @@
 	},
 
 
-	"songtarget":{
+	"songtarget{}{}":{
 		"prefix":"songtarget",
 		"body":[
 			"\\songtarget{${1:level}}{${2:name}}"
@@ -1305,7 +1241,7 @@
 	},
 
 
-	"songlink":{
+	"songlink{}{}":{
 		"prefix":"songlink",
 		"body":[
 			"\\songlink{${1:name}}{${2:text}}"
@@ -1313,7 +1249,7 @@
 	},
 
 
-	"titleprefixword":{
+	"titleprefixword{}":{
 		"prefix":"titleprefixword",
 		"body":[
 			"\\titleprefixword{${1:word}}"
@@ -1321,7 +1257,7 @@
 	},
 
 
-	"authsepword":{
+	"authsepword{}":{
 		"prefix":"authsepword",
 		"body":[
 			"\\authsepword{${1:word}}"
@@ -1329,7 +1265,7 @@
 	},
 
 
-	"authbyword":{
+	"authbyword{}":{
 		"prefix":"authbyword",
 		"body":[
 			"\\authbyword{${1:word}}"
@@ -1337,7 +1273,7 @@
 	},
 
 
-	"authignoreword":{
+	"authignoreword{}":{
 		"prefix":"authignoreword",
 		"body":[
 			"\\authignoreword{${1:word}}"
@@ -1369,18 +1305,10 @@
 	},
 
 
-	"newsongkey":{
+	"newsongkey{}{}{}":{
 		"prefix":"newsongkey",
 		"body":[
 			"\\newsongkey{${1:keyname%specialDef}}{${2:initcode}}{${3:setcode}}"
-		]
-	},
-
-
-	"newsongkey":{
-		"prefix":"newsongkey",
-		"body":[
-			"\\newsongkey{${1:keyname%specialDef}}{${2:initcode}}[${4:default}]{${3:setcode}}"
 		]
 	},
 
@@ -1393,7 +1321,7 @@
 	},
 
 
-	"shiftdblquotes":{
+	"shiftdblquotes{}{}{}{}":{
 		"prefix":"shiftdblquotes",
 		"body":[
 			"\\shiftdblquotes{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
@@ -1457,7 +1385,7 @@
 	},
 
 
-	"foreachtitle":{
+	"foreachtitle{}":{
 		"prefix":"foreachtitle",
 		"body":[
 			"\\foreachtitle{${1:code}}"
@@ -1473,22 +1401,74 @@
 	},
 
 
-	"songgroup":{
-		"prefix":"songgroup",
+	"beginverse*":{
+		"prefix":"*beginverse",
 		"body":[
-			"\\begin{songgroup}",
-			"\t$1",
-			"\\end{songgroup}"
+			"\\beginverse*"
 		]
 	},
 
 
-	"intersong":{
-		"prefix":"intersong",
+	"beginsong{}[]":{
+		"prefix":"beginsong",
 		"body":[
-			"\\begin{intersong}",
-			"\t$1",
-			"\\end{intersong}"
+			"\\beginsong{${1:titles%text}}[${2:otherinfo%keyvals}]"
+		]
+	},
+
+
+	"[]":{
+		"prefix":"",
+		"body":[
+			"\\[${1:chordname}]"
+		]
+	},
+
+
+	"memorize[]":{
+		"prefix":"memorize",
+		"body":[
+			"\\memorize[${1:regname}]"
+		]
+	},
+
+
+	"replay[]":{
+		"prefix":"replay",
+		"body":[
+			"\\replay[${1:regname}]"
+		]
+	},
+
+
+	"showindex[]{}{}":{
+		"prefix":"showindex",
+		"body":[
+			"\\showindex[${3:columns}]{${1:title%text}}{${2:id}}"
+		]
+	},
+
+
+	"indexentry[]{}":{
+		"prefix":"indexentry",
+		"body":[
+			"\\indexentry[${2:indexes}]{${1:lyrics%text}}"
+		]
+	},
+
+
+	"indextitleentry[]{}":{
+		"prefix":"indextitleentry",
+		"body":[
+			"\\indextitleentry[${2:indexes}]{${1:title%text}}"
+		]
+	},
+
+
+	"newsongkey{}{}[]{}":{
+		"prefix":"newsongkey",
+		"body":[
+			"\\newsongkey{${1:keyname%specialDef}}{${2:initcode}}[${4:default}]{${3:setcode}}"
 		]
 	},
 
@@ -1497,17 +1477,37 @@
 		"prefix":"songs",
 		"body":[
 			"\\begin{songs}",
-			"\t$1",
+				"\t$1",
 			"\\end{songs}"
 		]
 	},
 
 
+	"intersong":{
+		"prefix":"intersong",
+		"body":[
+			"\\begin{intersong}",
+				"\t$1",
+			"\\end{intersong}"
+		]
+	},
+
+
+	"songgroup":{
+		"prefix":"songgroup",
+		"body":[
+			"\\begin{songgroup}",
+				"\t$1",
+			"\\end{songgroup}"
+		]
+	},
+
+
 	"intersong*":{
-		"prefix":"intersong*",
+		"prefix":"*intersong",
 		"body":[
 			"\\begin{intersong*}",
-			"\t$1",
+				"\t$1",
 			"\\end{intersong*}"
 		]
 	}

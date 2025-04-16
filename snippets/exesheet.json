@@ -1,7 +1,7 @@
 {
 
 
-	"exesheetset":{
+	"exesheetset{}":{
 		"prefix":"exesheetset",
 		"body":[
 			"\\exesheetset{${1:options%keyvals}}"
@@ -13,14 +13,6 @@
 		"prefix":"exercise",
 		"body":[
 			"\\exercise"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\exercise[${1:text}]"
 		]
 	},
 
@@ -57,34 +49,10 @@
 	},
 
 
-	"exercise*":{
-		"prefix":"exercise*",
-		"body":[
-			"\\exercise*{${1:label%text}}"
-		]
-	},
-
-
-	"exercise*":{
-		"prefix":"exercise*",
-		"body":[
-			"\\exercise*[${2:text}]{${1:label%text}}"
-		]
-	},
-
-
 	"subpart":{
 		"prefix":"subpart",
 		"body":[
 			"\\subpart"
-		]
-	},
-
-
-	"subpart":{
-		"prefix":"subpart",
-		"body":[
-			"\\subpart[${1:text}]"
 		]
 	},
 
@@ -121,34 +89,10 @@
 	},
 
 
-	"subpart*":{
-		"prefix":"subpart*",
-		"body":[
-			"\\subpart*{${1:label%text}}"
-		]
-	},
-
-
-	"subpart*":{
-		"prefix":"subpart*",
-		"body":[
-			"\\subpart*[${2:text}]{${1:label%text}}"
-		]
-	},
-
-
 	"annex":{
 		"prefix":"annex",
 		"body":[
 			"\\annex"
-		]
-	},
-
-
-	"annex":{
-		"prefix":"annex",
-		"body":[
-			"\\annex[${1:text}]"
 		]
 	},
 
@@ -201,14 +145,6 @@
 	},
 
 
-	"exe*":{
-		"prefix":"exe*",
-		"body":[
-			"\\exe*"
-		]
-	},
-
-
 	"labelenumone":{
 		"prefix":"labelenumone",
 		"body":[
@@ -249,7 +185,7 @@
 	},
 
 
-	"question":{
+	"question{}":{
 		"prefix":"question",
 		"body":[
 			"\\question{${1:question%text}}"
@@ -257,15 +193,7 @@
 	},
 
 
-	"question*":{
-		"prefix":"question*",
-		"body":[
-			"\\question*{${1:question%text}}"
-		]
-	},
-
-
-	"answer":{
+	"answer{}":{
 		"prefix":"answer",
 		"body":[
 			"\\answer{${1:answer%text}}"
@@ -273,15 +201,7 @@
 	},
 
 
-	"answer*":{
-		"prefix":"answer*",
-		"body":[
-			"\\answer*{${1:answer%text}}"
-		]
-	},
-
-
-	"answerspace":{
+	"answerspace{}":{
 		"prefix":"answerspace",
 		"body":[
 			"\\answerspace{${1:height}}"
@@ -289,7 +209,7 @@
 	},
 
 
-	"points":{
+	"points{}":{
 		"prefix":"points",
 		"body":[
 			"\\points{${1:number}}"
@@ -321,7 +241,7 @@
 	},
 
 
-	"pts":{
+	"pts{}":{
 		"prefix":"pts",
 		"body":[
 			"\\pts{${1:number}}"
@@ -353,7 +273,7 @@
 	},
 
 
-	"totalexe":{
+	"totalexe{}":{
 		"prefix":"totalexe",
 		"body":[
 			"\\totalexe{${1:number}}"
@@ -361,26 +281,10 @@
 	},
 
 
-	"note":{
+	"note{}":{
 		"prefix":"note",
 		"body":[
 			"\\note{${1:comment%text}}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\note[${2:points}]{${1:comment%text}}"
-		]
-	},
-
-
-	"note*":{
-		"prefix":"note*",
-		"body":[
-			"\\note*{${1:points}}"
 		]
 	},
 
@@ -409,7 +313,7 @@
 	},
 
 
-	"totalpoints":{
+	"totalpoints{}":{
 		"prefix":"totalpoints",
 		"body":[
 			"\\totalpoints{${1:number}}"
@@ -417,10 +321,106 @@
 	},
 
 
-	"totalsheet":{
+	"totalsheet{}":{
 		"prefix":"totalsheet",
 		"body":[
 			"\\totalsheet{${1:number}}"
+		]
+	},
+
+
+	"exercise*{}":{
+		"prefix":"*exercise",
+		"body":[
+			"\\exercise*{${1:label%text}}"
+		]
+	},
+
+
+	"exercise*[]{}":{
+		"prefix":"*exercise",
+		"body":[
+			"\\exercise*[${2:text}]{${1:label%text}}"
+		]
+	},
+
+
+	"subpart*{}":{
+		"prefix":"*subpart",
+		"body":[
+			"\\subpart*{${1:label%text}}"
+		]
+	},
+
+
+	"subpart*[]{}":{
+		"prefix":"*subpart",
+		"body":[
+			"\\subpart*[${2:text}]{${1:label%text}}"
+		]
+	},
+
+
+	"exe*":{
+		"prefix":"*exe",
+		"body":[
+			"\\exe*"
+		]
+	},
+
+
+	"question*{}":{
+		"prefix":"*question",
+		"body":[
+			"\\question*{${1:question%text}}"
+		]
+	},
+
+
+	"answer*{}":{
+		"prefix":"*answer",
+		"body":[
+			"\\answer*{${1:answer%text}}"
+		]
+	},
+
+
+	"note*{}":{
+		"prefix":"*note",
+		"body":[
+			"\\note*{${1:points}}"
+		]
+	},
+
+
+	"exercise[]":{
+		"prefix":"exercise",
+		"body":[
+			"\\exercise[${1:text}]"
+		]
+	},
+
+
+	"subpart[]":{
+		"prefix":"subpart",
+		"body":[
+			"\\subpart[${1:text}]"
+		]
+	},
+
+
+	"annex[]":{
+		"prefix":"annex",
+		"body":[
+			"\\annex[${1:text}]"
+		]
+	},
+
+
+	"note[]{}":{
+		"prefix":"note",
+		"body":[
+			"\\note[${2:points}]{${1:comment%text}}"
 		]
 	},
 
@@ -429,98 +429,8 @@
 		"prefix":"exenumerate",
 		"body":[
 			"\\begin{exenumerate}",
-			"\t$1",
+				"\t$1",
 			"\\end{exenumerate}"
-		]
-	},
-
-
-	"tablenuma*":{
-		"prefix":"tablenuma*",
-		"body":[
-			"\\begin{tablenuma*}",
-			"\t$1",
-			"\\end{tablenuma*}"
-		]
-	},
-
-
-	"answers*":{
-		"prefix":"answers*",
-		"body":[
-			"\\begin{answers*}",
-			"\t$1",
-			"\\end{answers*}"
-		]
-	},
-
-
-	"tablenuma":{
-		"prefix":"tablenuma",
-		"body":[
-			"\\begin{tablenuma}",
-			"\t$1",
-			"\\end{tablenuma}"
-		]
-	},
-
-
-	"answers":{
-		"prefix":"answers",
-		"body":[
-			"\\begin{answers}",
-			"\t$1",
-			"\\end{answers}"
-		]
-	},
-
-
-	"colsitem":{
-		"prefix":"colsitem",
-		"body":[
-			"\\begin{colsitem}",
-			"\t$1",
-			"\\end{colsitem}"
-		]
-	},
-
-
-	"questions":{
-		"prefix":"questions",
-		"body":[
-			"\\begin{questions}",
-			"\t$1",
-			"\\end{questions}"
-		]
-	},
-
-
-	"tablitem":{
-		"prefix":"tablitem",
-		"body":[
-			"\\begin{tablitem}",
-			"\t$1",
-			"\\end{tablitem}"
-		]
-	},
-
-
-	"tablenum1":{
-		"prefix":"tablenum1",
-		"body":[
-			"\\begin{tablenum1}",
-			"\t$1",
-			"\\end{tablenum1}"
-		]
-	},
-
-
-	"colsenum*":{
-		"prefix":"colsenum*",
-		"body":[
-			"\\begin{colsenum*}",
-			"\t$1",
-			"\\end{colsenum*}"
 		]
 	},
 
@@ -529,28 +439,238 @@
 		"prefix":"colsenum",
 		"body":[
 			"\\begin{colsenum}",
-			"\t$1",
+				"\t$1",
 			"\\end{colsenum}"
 		]
 	},
 
 
-	"tablitem*":{
-		"prefix":"tablitem*",
+	"colsenum*":{
+		"prefix":"colsenum",
 		"body":[
-			"\\begin{tablitem*}",
-			"\t$1",
-			"\\end{tablitem*}"
+			"\\begin{colsenum*}",
+				"\t$1",
+			"\\end{colsenum*}"
+		]
+	},
+
+
+	"colsitem":{
+		"prefix":"colsitem",
+		"body":[
+			"\\begin{colsitem}",
+				"\t$1",
+			"\\end{colsitem}"
 		]
 	},
 
 
 	"colsitem*":{
-		"prefix":"colsitem*",
+		"prefix":"colsitem",
 		"body":[
 			"\\begin{colsitem*}",
-			"\t$1",
+				"\t$1",
 			"\\end{colsitem*}"
+		]
+	},
+
+
+	"tablenum1":{
+		"prefix":"tablenum1",
+		"body":[
+			"\\begin{tablenum1}",
+				"\t$1",
+			"\\end{tablenum1}"
+		]
+	},
+
+
+	"tablenum1":{
+		"prefix":"tablenum1",
+		"body":[
+			"\\begin{tablenum1}",
+				"\t$1",
+			"\\end{tablenum1}"
+		]
+	},
+
+
+	"tablenuma":{
+		"prefix":"tablenuma",
+		"body":[
+			"\\begin{tablenuma}",
+				"\t$1",
+			"\\end{tablenuma}"
+		]
+	},
+
+
+	"tablenuma":{
+		"prefix":"tablenuma",
+		"body":[
+			"\\begin{tablenuma}",
+				"\t$1",
+			"\\end{tablenuma}"
+		]
+	},
+
+
+	"tablitem":{
+		"prefix":"tablitem",
+		"body":[
+			"\\begin{tablitem}",
+				"\t$1",
+			"\\end{tablitem}"
+		]
+	},
+
+
+	"tablitem":{
+		"prefix":"tablitem",
+		"body":[
+			"\\begin{tablitem}",
+				"\t$1",
+			"\\end{tablitem}"
+		]
+	},
+
+
+	"questions":{
+		"prefix":"questions",
+		"body":[
+			"\\begin{questions}",
+				"\t$1",
+			"\\end{questions}"
+		]
+	},
+
+
+	"answers":{
+		"prefix":"answers",
+		"body":[
+			"\\begin{answers}",
+				"\t$1",
+			"\\end{answers}"
+		]
+	},
+
+
+	"tablenuma*":{
+		"prefix":"*tablenuma",
+		"body":[
+			"\\begin{tablenuma*}",
+				"\t$1",
+			"\\end{tablenuma*}"
+		]
+	},
+
+
+	"tablitem*":{
+		"prefix":"*tablitem",
+		"body":[
+			"\\begin{tablitem*}",
+				"\t$1",
+			"\\end{tablitem*}"
+		]
+	},
+
+
+	"answers*":{
+		"prefix":"*answers",
+		"body":[
+			"\\begin{answers*}",
+				"\t$1",
+			"\\end{answers*}"
+		]
+	},
+
+
+	"exenumerate":{
+		"prefix":"exenumerate",
+		"body":[
+			"\\begin{exenumerate}",
+				"\t$1",
+			"\\end{exenumerate}"
+		]
+	},
+
+
+	"colsenum":{
+		"prefix":"colsenum",
+		"body":[
+			"\\begin{colsenum}",
+				"\t$1",
+			"\\end{colsenum}"
+		]
+	},
+
+
+	"colsenum*":{
+		"prefix":"colsenum",
+		"body":[
+			"\\begin{colsenum*}",
+				"\t$1",
+			"\\end{colsenum*}"
+		]
+	},
+
+
+	"colsitem":{
+		"prefix":"colsitem",
+		"body":[
+			"\\begin{colsitem}",
+				"\t$1",
+			"\\end{colsitem}"
+		]
+	},
+
+
+	"colsitem*":{
+		"prefix":"colsitem",
+		"body":[
+			"\\begin{colsitem*}",
+				"\t$1",
+			"\\end{colsitem*}"
+		]
+	},
+
+
+	"tablenum1":{
+		"prefix":"tablenum1",
+		"body":[
+			"\\begin{tablenum1}",
+				"\t$1",
+			"\\end{tablenum1}"
+		]
+	},
+
+
+	"tablenuma":{
+		"prefix":"tablenuma",
+		"body":[
+			"\\begin{tablenuma}",
+				"\t$1",
+			"\\end{tablenuma}"
+		]
+	},
+
+
+	"tablitem":{
+		"prefix":"tablitem",
+		"body":[
+			"\\begin{tablitem}",
+				"\t$1",
+			"\\end{tablitem}"
+		]
+	},
+
+
+	"answers":{
+		"prefix":"answers",
+		"body":[
+			"\\begin{answers}",
+				"\t$1",
+			"\\end{answers}"
 		]
 	}
 }

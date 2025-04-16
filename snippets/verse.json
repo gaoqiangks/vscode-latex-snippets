@@ -1,7 +1,7 @@
 {
 
 
-	"indentpattern":{
+	"indentpattern{}":{
 		"prefix":"indentpattern",
 		"body":[
 			"\\indentpattern{${1:digits}}"
@@ -65,15 +65,7 @@
 	},
 
 
-	"verselinebreak":{
-		"prefix":"verselinebreak",
-		"body":[
-			"\\verselinebreak[${1:length}]"
-		]
-	},
-
-
-	"flagverse":{
+	"flagverse{}":{
 		"prefix":"flagverse",
 		"body":[
 			"\\flagverse{${1:flag}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"poemlines":{
+	"poemlines{}":{
 		"prefix":"poemlines",
 		"body":[
 			"\\poemlines{${1:nth}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"setverselinenums":{
+	"setverselinenums{}{}":{
 		"prefix":"setverselinenums",
 		"body":[
 			"\\setverselinenums{${1:first line num}}{${2:start nums at}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"verselinenumfont":{
+	"verselinenumfont{}":{
 		"prefix":"verselinenumfont",
 		"body":[
 			"\\verselinenumfont{${1:font-spec}}"
@@ -145,18 +137,10 @@
 	},
 
 
-	"poemtitle":{
+	"poemtitle{}{}":{
 		"prefix":"poemtitle",
 		"body":[
 			"\\poemtitle{${1:short}}{${2:long}}"
-		]
-	},
-
-
-	"poemtitle*":{
-		"prefix":"poemtitle*",
-		"body":[
-			"\\poemtitle*{${1:short}}{${2:long}}"
 		]
 	},
 
@@ -193,7 +177,7 @@
 	},
 
 
-	"poemtitlemark":{
+	"poemtitlemark{}":{
 		"prefix":"poemtitlemark",
 		"body":[
 			"\\poemtitlemark{${1:title}}"
@@ -201,7 +185,7 @@
 	},
 
 
-	"newarray":{
+	"newarray{}{}{}":{
 		"prefix":"newarray",
 		"body":[
 			"\\newarray{${1:array name}}{${2:low}}{${3:high}}"
@@ -209,7 +193,7 @@
 	},
 
 
-	"setarrayelement":{
+	"setarrayelement{}{}{}":{
 		"prefix":"setarrayelement",
 		"body":[
 			"\\setarrayelement{${1:array name}}{${2:index}}{${3:text}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"getarrayelement":{
+	"getarrayelement{}{}{}":{
 		"prefix":"getarrayelement",
 		"body":[
 			"\\getarrayelement{${1:array name}}{${2:index}}{${3:result}}"
@@ -225,7 +209,7 @@
 	},
 
 
-	"checkarrayindex":{
+	"checkarrayindex{}{}":{
 		"prefix":"checkarrayindex",
 		"body":[
 			"\\checkarrayindex{${1:array name}}{${2:index}}"
@@ -233,7 +217,7 @@
 	},
 
 
-	"stringtoarray":{
+	"stringtoarray{}{}":{
 		"prefix":"stringtoarray",
 		"body":[
 			"\\stringtoarray{${1:array name}}{${2:string}}"
@@ -241,7 +225,7 @@
 	},
 
 
-	"arraytostring":{
+	"arraytostring{}{}":{
 		"prefix":"arraytostring",
 		"body":[
 			"\\arraytostring{${1:array name}}{${2:result}}"
@@ -249,7 +233,7 @@
 	},
 
 
-	"checkifinteger":{
+	"checkifinteger{}":{
 		"prefix":"checkifinteger",
 		"body":[
 			"\\checkifinteger{${1:number}}"
@@ -289,7 +273,7 @@
 	},
 
 
-	"gobm":{
+	"gobm{}":{
 		"prefix":"gobm",
 		"body":[
 			"\\gobm{${1:number}}"
@@ -425,32 +409,18 @@
 	},
 
 
-	"patverse":{
-		"prefix":"patverse",
+	"poemtitle*{}{}":{
+		"prefix":"*poemtitle",
 		"body":[
-			"\\begin{patverse}",
-			"\t$1",
-			"\\end{patverse}"
+			"\\poemtitle*{${1:short}}{${2:long}}"
 		]
 	},
 
 
-	"patverse*":{
-		"prefix":"patverse*",
+	"verselinebreak[]":{
+		"prefix":"verselinebreak",
 		"body":[
-			"\\begin{patverse*}",
-			"\t$1",
-			"\\end{patverse*}"
-		]
-	},
-
-
-	"altverse":{
-		"prefix":"altverse",
-		"body":[
-			"\\begin{altverse}",
-			"\t$1",
-			"\\end{altverse}"
+			"\\verselinebreak[${1:length}]"
 		]
 	},
 
@@ -459,7 +429,47 @@
 		"prefix":"verse",
 		"body":[
 			"\\begin{verse}",
-			"\t$1",
+				"\t$1",
+			"\\end{verse}"
+		]
+	},
+
+
+	"altverse":{
+		"prefix":"altverse",
+		"body":[
+			"\\begin{altverse}",
+				"\t$1",
+			"\\end{altverse}"
+		]
+	},
+
+
+	"patverse":{
+		"prefix":"patverse",
+		"body":[
+			"\\begin{patverse}",
+				"\t$1",
+			"\\end{patverse}"
+		]
+	},
+
+
+	"patverse*":{
+		"prefix":"*patverse",
+		"body":[
+			"\\begin{patverse*}",
+				"\t$1",
+			"\\end{patverse*}"
+		]
+	},
+
+
+	"verse":{
+		"prefix":"verse",
+		"body":[
+			"\\begin{verse}",
+				"\t$1",
 			"\\end{verse}"
 		]
 	}

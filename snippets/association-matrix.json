@@ -1,7 +1,7 @@
 {
 
 
-	"amxrow":{
+	"amxrow{}{}":{
 		"prefix":"amxrow",
 		"body":[
 			"\\amxrow{${1:key%plain}}{${2:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"amxcol":{
+	"amxcol{}{}":{
 		"prefix":"amxcol",
 		"body":[
 			"\\amxcol{${1:key%plain}}{${2:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"amxassociate":{
+	"amxassociate{}{}":{
 		"prefix":"amxassociate",
 		"body":[
 			"\\amxassociate{${1:col-key}}{${2:row-key}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"amxrowtext":{
+	"amxrowtext{}":{
 		"prefix":"amxrowtext",
 		"body":[
 			"\\amxrowtext{${1:key%plain}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"amxcoltext":{
+	"amxcoltext{}":{
 		"prefix":"amxcoltext",
 		"body":[
 			"\\amxcoltext{${1:key%plain}}"
@@ -65,15 +65,7 @@
 	},
 
 
-	"amxgenerate":{
-		"prefix":"amxgenerate",
-		"body":[
-			"\\amxgenerate[${1:row-key}]"
-		]
-	},
-
-
-	"amxsetTopCorner":{
+	"amxsetTopCorner{}":{
 		"prefix":"amxsetTopCorner",
 		"body":[
 			"\\amxsetTopCorner{${1:heading%text}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"amxsetColumnHeading":{
+	"amxsetColumnHeading{}":{
 		"prefix":"amxsetColumnHeading",
 		"body":[
 			"\\amxsetColumnHeading{${1:render-command}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"amxsetRowFormat":{
+	"amxsetRowFormat{}":{
 		"prefix":"amxsetRowFormat",
 		"body":[
 			"\\amxsetRowFormat{${1:render-command}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"amxsetRowFormatHighlighted":{
+	"amxsetRowFormatHighlighted{}":{
 		"prefix":"amxsetRowFormatHighlighted",
 		"body":[
 			"\\amxsetRowFormatHighlighted{${1:render-command}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"amxsetIndicator":{
+	"amxsetIndicator{}":{
 		"prefix":"amxsetIndicator",
 		"body":[
 			"\\amxsetIndicator{${1:indicator}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"amxsetIndicatorHighlighted":{
+	"amxsetIndicatorHighlighted{}{}":{
 		"prefix":"amxsetIndicatorHighlighted",
 		"body":[
 			"\\amxsetIndicatorHighlighted{${1:hl-indicator}}{${2:ot-indicator}}"
@@ -125,6 +117,14 @@
 		"prefix":"amxReset",
 		"body":[
 			"\\amxReset"
+		]
+	},
+
+
+	"amxgenerate[]":{
+		"prefix":"amxgenerate",
+		"body":[
+			"\\amxgenerate[${1:row-key}]"
 		]
 	}
 }

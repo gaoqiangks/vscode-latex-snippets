@@ -1,7 +1,7 @@
 {
 
 
-	"alert":{
+	"alert{}{}":{
 		"prefix":"alert",
 		"body":[
 			"\\alert{${1:overlay specification}}{${2:content%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"visible":{
+	"visible{}{}":{
 		"prefix":"visible",
 		"body":[
 			"\\visible{${1:overlay specification}}{${2:content%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"only":{
+	"only{}{}":{
 		"prefix":"only",
 		"body":[
 			"\\only{${1:overlay specification}}{${2:content%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"savecounterbetweenoverlays":{
+	"savecounterbetweenoverlays{}":{
 		"prefix":"savecounterbetweenoverlays",
 		"body":[
 			"\\savecounterbetweenoverlays{${1:counter}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"saveseriesbetweenoverlays":{
+	"saveseriesbetweenoverlays{}":{
 		"prefix":"saveseriesbetweenoverlays",
 		"body":[
 			"\\saveseriesbetweenoverlays{${1:series name}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"psalert":{
+	"psalert{}{}":{
 		"prefix":"psalert",
 		"body":[
 			"\\psalert{${1:overlay specification}}{${2:content%text}}"
@@ -65,20 +65,10 @@
 	},
 
 
-	"psvisible":{
+	"psvisible{}{}":{
 		"prefix":"psvisible",
 		"body":[
 			"\\psvisible{${1:overlay specification}}{${2:content%text}}"
-		]
-	},
-
-
-	"fragileoverlays":{
-		"prefix":"fragileoverlays",
-		"body":[
-			"\\begin{fragileoverlays}",
-			"\t$1",
-			"\\end{fragileoverlays}"
 		]
 	},
 
@@ -87,8 +77,18 @@
 		"prefix":"overlays",
 		"body":[
 			"\\begin{overlays}",
-			"\t$1",
+				"\t$1",
 			"\\end{overlays}"
+		]
+	},
+
+
+	"fragileoverlays":{
+		"prefix":"fragileoverlays",
+		"body":[
+			"\\begin{fragileoverlays}",
+				"\t$1",
+			"\\end{fragileoverlays}"
 		]
 	}
 }

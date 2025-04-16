@@ -1,7 +1,7 @@
 {
 
 
-	"addvskip":{
+	"addvskip{}":{
 		"prefix":"addvskip",
 		"body":[
 			"\\addvskip{${1:length}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"lbox":{
-		"prefix":"lbox",
-		"body":[
-			"\\lbox[${2:options}]{${1:content%text}}"
-		]
-	},
-
-
-	"lbox":{
+	"lbox{}":{
 		"prefix":"lbox",
 		"body":[
 			"\\lbox{${1:content%text}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"unvcolorbox":{
+	"unvcolorbox{}{}":{
 		"prefix":"unvcolorbox",
 		"body":[
 			"\\unvcolorbox{${1:color}}{${2:vboxname}}"
@@ -49,10 +41,18 @@
 	},
 
 
-	"vcolorbox":{
+	"vcolorbox{}{}":{
 		"prefix":"vcolorbox",
 		"body":[
 			"\\vcolorbox{${1:color}}{${2:vboxname}}"
+		]
+	},
+
+
+	"lbox[]{}":{
+		"prefix":"lbox",
+		"body":[
+			"\\lbox[${2:options}]{${1:content%text}}"
 		]
 	},
 
@@ -61,7 +61,7 @@
 		"prefix":"longbox",
 		"body":[
 			"\\begin{longbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{longbox}"
 		]
 	},
@@ -71,8 +71,18 @@
 		"prefix":"lvbox",
 		"body":[
 			"\\begin{lvbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{lvbox}"
+		]
+	},
+
+
+	"longbox":{
+		"prefix":"longbox",
+		"body":[
+			"\\begin{longbox}",
+				"\t$1",
+			"\\end{longbox}"
 		]
 	}
 }

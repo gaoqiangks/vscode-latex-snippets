@@ -1,7 +1,7 @@
 {
 
 
-	"version":{
+	"version{}":{
 		"prefix":"version",
 		"body":[
 			"\\version{${1:version}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"degreeprogramme":{
+	"degreeprogramme{}":{
 		"prefix":"degreeprogramme",
 		"body":[
 			"\\degreeprogramme{${1:programme-name}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"matrnumber":{
+	"matrnumber{}":{
 		"prefix":"matrnumber",
 		"body":[
 			"\\matrnumber{${1:matriculation-number}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"supervisor":{
+	"supervisor{}":{
 		"prefix":"supervisor",
 		"body":[
 			"\\supervisor{${1:name}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"cosupervisor":{
+	"cosupervisor{}":{
 		"prefix":"cosupervisor",
 		"body":[
 			"\\cosupervisor{${1:name}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"advisor":{
+	"advisor{}":{
 		"prefix":"advisor",
 		"body":[
 			"\\advisor{${1:name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"coadvisor":{
+	"coadvisor{}":{
 		"prefix":"coadvisor",
 		"body":[
 			"\\coadvisor{${1:name}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"department":{
+	"department{}":{
 		"prefix":"department",
 		"body":[
 			"\\department{${1:name}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:name}}"
@@ -73,15 +73,7 @@
 	},
 
 
-	"institute":{
-		"prefix":"institute",
-		"body":[
-			"\\institute[${2:short-name}]{${1:name}}"
-		]
-	},
-
-
-	"external":{
+	"external{}":{
 		"prefix":"external",
 		"body":[
 			"\\external{${1:name}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"location":{
+	"location{}":{
 		"prefix":"location",
 		"body":[
 			"\\location{${1:name-of-town}}"
@@ -105,15 +97,7 @@
 	},
 
 
-	"authorshipDeclaration":{
-		"prefix":"authorshipDeclaration",
-		"body":[
-			"\\authorshipDeclaration[${1:location}]"
-		]
-	},
-
-
-	"signatureBox":{
+	"signatureBox{}":{
 		"prefix":"signatureBox",
 		"body":[
 			"\\signatureBox{${1:signature-name}}"
@@ -121,15 +105,7 @@
 	},
 
 
-	"signatureBox":{
-		"prefix":"signatureBox",
-		"body":[
-			"\\signatureBox[${2:width}]{${1:signature-name}}"
-		]
-	},
-
-
-	"summarybox":{
+	"summarybox{}{}":{
 		"prefix":"summarybox",
 		"body":[
 			"\\summarybox{${1:label text%text}}{${2:text}}"
@@ -145,22 +121,26 @@
 	},
 
 
-	"summary":{
-		"prefix":"summary",
+	"institute[]{}":{
+		"prefix":"institute",
 		"body":[
-			"\\begin{summary}",
-			"\t$1",
-			"\\end{summary}"
+			"\\institute[${2:short-name}]{${1:name}}"
 		]
 	},
 
 
-	"resq":{
-		"prefix":"resq",
+	"authorshipDeclaration[]":{
+		"prefix":"authorshipDeclaration",
 		"body":[
-			"\\begin{resq}",
-			"\t$1",
-			"\\end{resq}"
+			"\\authorshipDeclaration[${1:location}]"
+		]
+	},
+
+
+	"signatureBox[]{}":{
+		"prefix":"signatureBox",
+		"body":[
+			"\\signatureBox[${2:width}]{${1:signature-name}}"
 		]
 	},
 
@@ -169,8 +149,18 @@
 		"prefix":"acknowledgements",
 		"body":[
 			"\\begin{acknowledgements}",
-			"\t$1",
+				"\t$1",
 			"\\end{acknowledgements}"
+		]
+	},
+
+
+	"resq":{
+		"prefix":"resq",
+		"body":[
+			"\\begin{resq}",
+				"\t$1",
+			"\\end{resq}"
 		]
 	},
 
@@ -179,8 +169,18 @@
 		"prefix":"hyp",
 		"body":[
 			"\\begin{hyp}",
-			"\t$1",
+				"\t$1",
 			"\\end{hyp}"
+		]
+	},
+
+
+	"summary":{
+		"prefix":"summary",
+		"body":[
+			"\\begin{summary}",
+				"\t$1",
+			"\\end{summary}"
 		]
 	},
 
@@ -189,8 +189,38 @@
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-			"\t$1",
+				"\t$1",
 			"\\end{abstract}"
+		]
+	},
+
+
+	"acknowledgements":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
+		]
+	},
+
+
+	"resq":{
+		"prefix":"resq",
+		"body":[
+			"\\begin{resq}",
+				"\t$1",
+			"\\end{resq}"
+		]
+	},
+
+
+	"hyp":{
+		"prefix":"hyp",
+		"body":[
+			"\\begin{hyp}",
+				"\t$1",
+			"\\end{hyp}"
 		]
 	}
 }

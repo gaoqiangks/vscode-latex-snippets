@@ -49,7 +49,7 @@
 	},
 
 
-	"MaxBaseEmptyList":{
+	"MaxBaseEmptyList{}":{
 		"prefix":"MaxBaseEmptyList",
 		"body":[
 			"\\MaxBaseEmptyList{${1:longest-name}}"
@@ -57,26 +57,26 @@
 	},
 
 
-	"MaxBaseEmptyList":{
-		"prefix":"MaxBaseEmptyList",
-		"body":[
-			"\\MaxBaseEmptyList{${1:longest-name}}[${2:read-again-files}]"
-		]
-	},
-
-
 	"MaxBaseEmptyList*":{
-		"prefix":"MaxBaseEmptyList*",
+		"prefix":"*MaxBaseEmptyList",
 		"body":[
 			"\\MaxBaseEmptyList*"
 		]
 	},
 
 
-	"MaxBaseEmptyList*":{
-		"prefix":"MaxBaseEmptyList*",
+	"MaxBaseEmptyList*[]":{
+		"prefix":"*MaxBaseEmptyList",
 		"body":[
 			"\\MaxBaseEmptyList*[${1:read-again-files}]"
+		]
+	},
+
+
+	"MaxBaseEmptyList{}[]":{
+		"prefix":"MaxBaseEmptyList",
+		"body":[
+			"\\MaxBaseEmptyList{${1:longest-name}}[${2:read-again-files}]"
 		]
 	}
 }

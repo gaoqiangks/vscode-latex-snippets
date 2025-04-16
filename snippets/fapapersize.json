@@ -1,7 +1,7 @@
 {
 
 
-	"usefastocksize":{
+	"usefastocksize{}":{
 		"prefix":"usefastocksize",
 		"body":[
 			"\\usefastocksize{${1:width,height}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"usefapapersize":{
+	"usefapapersize{}":{
 		"prefix":"usefapapersize",
 		"body":[
 			"\\usefapapersize{${1:width,height,lmargin,rmargin,tmargin,bmargin}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"definefageometry":{
+	"definefageometry{}{}":{
 		"prefix":"definefageometry",
 		"body":[
 			"\\definefageometry{${1:name%specialDef}}{${2:layout}}"
@@ -25,42 +25,10 @@
 	},
 
 
-	"definefageometry":{
-		"prefix":"definefageometry",
-		"body":[
-			"\\definefageometry{${1:name}}{${2:layout}}[${3:after}]"
-		]
-	},
-
-
-	"definefageometry":{
-		"prefix":"definefageometry",
-		"body":[
-			"\\definefageometry{${1:name}}[${3:before}]{${2:layout}}"
-		]
-	},
-
-
-	"definefageometry":{
-		"prefix":"definefageometry",
-		"body":[
-			"\\definefageometry{${1:name}}[${3:before}]{${2:layout}}[${4:after}]"
-		]
-	},
-
-
-	"selectfageometry":{
+	"selectfageometry{}":{
 		"prefix":"selectfageometry",
 		"body":[
 			"\\selectfageometry{${1:name%keyvals}}"
-		]
-	},
-
-
-	"selectfageometry*":{
-		"prefix":"selectfageometry*",
-		"body":[
-			"\\selectfageometry*{${1:name%keyvals}}"
 		]
 	},
 
@@ -69,6 +37,38 @@
 		"prefix":"evenmarginsameasodd",
 		"body":[
 			"\\evenmarginsameasodd"
+		]
+	},
+
+
+	"selectfageometry*{}":{
+		"prefix":"*selectfageometry",
+		"body":[
+			"\\selectfageometry*{${1:name%keyvals}}"
+		]
+	},
+
+
+	"definefageometry{}{}[]":{
+		"prefix":"definefageometry",
+		"body":[
+			"\\definefageometry{${1:name}}{${2:layout}}[${3:after}]"
+		]
+	},
+
+
+	"definefageometry{}[]{}":{
+		"prefix":"definefageometry",
+		"body":[
+			"\\definefageometry{${1:name}}[${3:before}]{${2:layout}}"
+		]
+	},
+
+
+	"definefageometry{}[]{}[]":{
+		"prefix":"definefageometry",
+		"body":[
+			"\\definefageometry{${1:name}}[${3:before}]{${2:layout}}[${4:after}]"
 		]
 	}
 }

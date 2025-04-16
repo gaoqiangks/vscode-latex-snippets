@@ -1,7 +1,7 @@
 {
 
 
-	"embedIcon":{
+	"embedIcon{}":{
 		"prefix":"embedIcon",
 		"body":[
 			"\\embedIcon{${1:imagefile}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"embedIcon":{
-		"prefix":"embedIcon",
-		"body":[
-			"\\embedIcon[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"csOf":{
+	"csOf{}":{
 		"prefix":"csOf",
 		"body":[
 			"\\csOf{${1:name}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"heightOf":{
+	"heightOf{}":{
 		"prefix":"heightOf",
 		"body":[
 			"\\heightOf{${1:name}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"widthOf":{
+	"widthOf{}":{
 		"prefix":"widthOf",
 		"body":[
 			"\\widthOf{${1:name}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"sortitem":{
+	"sortitem{}":{
 		"prefix":"sortitem",
 		"body":[
 			"\\sortitem{${1:arg}}"
@@ -49,7 +41,15 @@
 	},
 
 
-	"sortitem":{
+	"embedIcon[]{}":{
+		"prefix":"embedIcon",
+		"body":[
+			"\\embedIcon[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"sortitem[]{}":{
 		"prefix":"sortitem",
 		"body":[
 			"\\sortitem[${2:opt}]{${1:arg}}"
@@ -61,7 +61,7 @@
 		"prefix":"embedding",
 		"body":[
 			"\\begin{embedding}",
-			"\t$1",
+				"\t$1",
 			"\\end{embedding}"
 		]
 	},
@@ -71,7 +71,7 @@
 		"prefix":"sortedlist",
 		"body":[
 			"\\begin{sortedlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{sortedlist}"
 		]
 	}

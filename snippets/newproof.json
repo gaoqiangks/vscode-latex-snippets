@@ -1,7 +1,7 @@
 {
 
 
-	"newproof":{
+	"newproof{}{}{}":{
 		"prefix":"newproof",
 		"body":[
 			"\\newproof{${1:envname}}{${2:start text}}{${3:finish text}}"
@@ -29,7 +29,17 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
 			"\\end{proof}"
 		]
 	}

@@ -9,7 +9,7 @@
 	},
 
 
-	"pytag":{
+	"pytag{}{}":{
 		"prefix":"pytag",
 		"body":[
 			"\\pytag{${1:tag}}{${2:code}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"py":{
+	"py{}":{
 		"prefix":"py",
 		"body":[
 			"\\py{${1:tag}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"py*":{
-		"prefix":"py*",
-		"body":[
-			"\\py*{${1:tag}}"
-		]
-	},
-
-
-	"Py":{
+	"Py{}":{
 		"prefix":"Py",
 		"body":[
 			"\\Py{${1:tag}}"
@@ -41,23 +33,7 @@
 	},
 
 
-	"Py*":{
-		"prefix":"Py*",
-		"body":[
-			"\\Py*{${1:tag}}"
-		]
-	},
-
-
-	"Py*":{
-		"prefix":"Py*",
-		"body":[
-			"\\Py*[${2:space%l}]{${1:tag}}"
-		]
-	},
-
-
-	"Dmath":{
+	"Dmath{}":{
 		"prefix":"Dmath",
 		"body":[
 			"\\Dmath{${1:formula}}"
@@ -65,31 +41,7 @@
 	},
 
 
-	"Dmath":{
-		"prefix":"Dmath",
-		"body":[
-			"\\Dmath[${2:options%keyvals}]{${1:formula}}"
-		]
-	},
-
-
-	"Dmath*":{
-		"prefix":"Dmath*",
-		"body":[
-			"\\Dmath*{${1:formula}}"
-		]
-	},
-
-
-	"Dmath*":{
-		"prefix":"Dmath*",
-		"body":[
-			"\\Dmath*[${2:options%keyvals}]{${1:formula}}"
-		]
-	},
-
-
-	"ttTag":{
+	"ttTag{}":{
 		"prefix":"ttTag",
 		"body":[
 			"\\ttTag{${1:tag}}"
@@ -97,10 +49,58 @@
 	},
 
 
-	"pglabel":{
+	"pglabel{}":{
 		"prefix":"pglabel",
 		"body":[
 			"\\pglabel{${1:label}}"
+		]
+	},
+
+
+	"py*{}":{
+		"prefix":"*py",
+		"body":[
+			"\\py*{${1:tag}}"
+		]
+	},
+
+
+	"Py*{}":{
+		"prefix":"*Py",
+		"body":[
+			"\\Py*{${1:tag}}"
+		]
+	},
+
+
+	"Py*[]{}":{
+		"prefix":"*Py",
+		"body":[
+			"\\Py*[${2:space%l}]{${1:tag}}"
+		]
+	},
+
+
+	"Dmath*{}":{
+		"prefix":"*Dmath",
+		"body":[
+			"\\Dmath*{${1:formula}}"
+		]
+	},
+
+
+	"Dmath*[]{}":{
+		"prefix":"*Dmath",
+		"body":[
+			"\\Dmath*[${2:options%keyvals}]{${1:formula}}"
+		]
+	},
+
+
+	"Dmath[]{}":{
+		"prefix":"Dmath",
+		"body":[
+			"\\Dmath[${2:options%keyvals}]{${1:formula}}"
 		]
 	}
 }

@@ -1,15 +1,7 @@
 {
 
 
-	"TitlePageStyle":{
-		"prefix":"TitlePageStyle",
-		"body":[
-			"\\TitlePageStyle[${2:option=value,...%keyvals}]{${1:style}}"
-		]
-	},
-
-
-	"TitleOption":{
+	"TitleOption{}{}":{
 		"prefix":"TitleOption",
 		"body":[
 			"\\TitleOption{${1:option%keyvals}}{${2:value}}"
@@ -17,15 +9,7 @@
 	},
 
 
-	"maketitle":{
-		"prefix":"maketitle",
-		"body":[
-			"\\maketitle[${1:option=value,...%keyvals}]"
-		]
-	},
-
-
-	"TitleOptions":{
+	"TitleOptions{}":{
 		"prefix":"TitleOptions",
 		"body":[
 			"\\TitleOptions{${1:option=value,...%keyvals}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"NowButAfterBeginDocument":{
+	"NowButAfterBeginDocument{}":{
 		"prefix":"NowButAfterBeginDocument",
 		"body":[
 			"\\NowButAfterBeginDocument{${1:code}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"usetitleelement":{
+	"usetitleelement{}":{
 		"prefix":"usetitleelement",
 		"body":[
 			"\\usetitleelement{${1:element%keyvals}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"usenonemptytitleelement":{
+	"usenonemptytitleelement{}":{
 		"prefix":"usenonemptytitleelement",
 		"body":[
 			"\\usenonemptytitleelement{${1:element%keyvals}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"DefineReplaceTitleKey":{
+	"DefineReplaceTitleKey{}{}":{
 		"prefix":"DefineReplaceTitleKey",
 		"body":[
 			"\\DefineReplaceTitleKey{${1:name}}{${2:alias}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"DefineSimpleTitleKey":{
+	"DefineSimpleTitleKey{}":{
 		"prefix":"DefineSimpleTitleKey",
 		"body":[
 			"\\DefineSimpleTitleKey{${1:name}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"englishordinal":{
+	"englishordinal{}":{
 		"prefix":"englishordinal",
 		"body":[
 			"\\englishordinal{${1:number}}"
@@ -209,7 +193,7 @@
 	},
 
 
-	"extratitle":{
+	"extratitle{}":{
 		"prefix":"extratitle",
 		"body":[
 			"\\extratitle{${1:text}}"
@@ -217,7 +201,7 @@
 	},
 
 
-	"femaleordinal":{
+	"femaleordinal{}":{
 		"prefix":"femaleordinal",
 		"body":[
 			"\\femaleordinal{${1:number}}"
@@ -249,7 +233,7 @@
 	},
 
 
-	"germanfemaleordinal":{
+	"germanfemaleordinal{}":{
 		"prefix":"germanfemaleordinal",
 		"body":[
 			"\\germanfemaleordinal{${1:number}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"germanmaleordinal":{
+	"germanmaleordinal{}":{
 		"prefix":"germanmaleordinal",
 		"body":[
 			"\\germanmaleordinal{${1:number}}"
@@ -265,7 +249,7 @@
 	},
 
 
-	"germanordinal":{
+	"germanordinal{}":{
 		"prefix":"germanordinal",
 		"body":[
 			"\\germanordinal{${1:number}}"
@@ -305,7 +289,7 @@
 	},
 
 
-	"homepage":{
+	"homepage{}":{
 		"prefix":"homepage",
 		"body":[
 			"\\homepage{${1:URL}}"
@@ -353,7 +337,7 @@
 	},
 
 
-	"lowertitleback":{
+	"lowertitleback{}":{
 		"prefix":"lowertitleback",
 		"body":[
 			"\\lowertitleback{${1:text}}"
@@ -417,7 +401,7 @@
 	},
 
 
-	"maleordinal":{
+	"maleordinal{}":{
 		"prefix":"maleordinal",
 		"body":[
 			"\\maleordinal{${1:number}}"
@@ -473,7 +457,7 @@
 	},
 
 
-	"ordinal":{
+	"ordinal{}":{
 		"prefix":"ordinal",
 		"body":[
 			"\\ordinal{${1:number}}"
@@ -641,7 +625,7 @@
 	},
 
 
-	"titlehead":{
+	"titlehead{}":{
 		"prefix":"titlehead",
 		"body":[
 			"\\titlehead{${1:text}}"
@@ -657,7 +641,7 @@
 	},
 
 
-	"uppertitleback":{
+	"uppertitleback{}":{
 		"prefix":"uppertitleback",
 		"body":[
 			"\\uppertitleback{${1:text}}"
@@ -665,12 +649,18 @@
 	},
 
 
-	"fullsizetitle":{
-		"prefix":"fullsizetitle",
+	"TitlePageStyle[]{}":{
+		"prefix":"TitlePageStyle",
 		"body":[
-			"\\begin{fullsizetitle}",
-			"\t$1",
-			"\\end{fullsizetitle}"
+			"\\TitlePageStyle[${2:option=value,...%keyvals}]{${1:style}}"
+		]
+	},
+
+
+	"maketitle[]":{
+		"prefix":"maketitle",
+		"body":[
+			"\\maketitle[${1:option=value,...%keyvals}]"
 		]
 	},
 
@@ -679,8 +669,18 @@
 		"prefix":"titlepage",
 		"body":[
 			"\\begin{titlepage}",
-			"\t$1",
+				"\t$1",
 			"\\end{titlepage}"
+		]
+	},
+
+
+	"fullsizetitle":{
+		"prefix":"fullsizetitle",
+		"body":[
+			"\\begin{fullsizetitle}",
+				"\t$1",
+			"\\end{fullsizetitle}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"taskform":{
+	"taskform{}{}":{
 		"prefix":"taskform",
 		"body":[
 			"\\taskform{${1:Ziele%text}}{${2:Schwerpunkte%text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"taskform":{
-		"prefix":"taskform",
-		"body":[
-			"\\taskform[${3:Parameterliste%keyvals}]{${1:Ziele%text}}{${2:Schwerpunkte%text}}"
-		]
-	},
-
-
-	"chairman":{
+	"chairman{}":{
 		"prefix":"chairman",
 		"body":[
 			"\\chairman{${1:Prüfungsausschussvorsitzender}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"issuedate":{
+	"issuedate{}":{
 		"prefix":"issuedate",
 		"body":[
 			"\\issuedate{${1:Ausgabedatum}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"duedate":{
+	"duedate{}":{
 		"prefix":"duedate",
 		"body":[
 			"\\duedate{${1:Abgabetermin}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"evaluationform":{
+	"evaluationform{}{}{}{}":{
 		"prefix":"evaluationform",
 		"body":[
 			"\\evaluationform{${1:Aufgabe%text}}{${2:Inhalt%text}}{${3:Bewertung%text}}{${4:Note%text}}"
@@ -49,15 +41,7 @@
 	},
 
 
-	"evaluationform":{
-		"prefix":"evaluationform",
-		"body":[
-			"\\evaluationform[${5:Parameterliste%keyvals}]{${1:Aufgabe%text}}{${2:Inhalt%text}}{${3:Bewertung%text}}{${4:Note%text}}"
-		]
-	},
-
-
-	"grade":{
+	"grade{}":{
 		"prefix":"grade",
 		"body":[
 			"\\grade{${1:Note%text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"noticeform":{
+	"noticeform{}{}":{
 		"prefix":"noticeform",
 		"body":[
 			"\\noticeform{${1:Inhalt%text}}{${2:Schwerpunkte%text}}"
@@ -73,15 +57,7 @@
 	},
 
 
-	"noticeform":{
-		"prefix":"noticeform",
-		"body":[
-			"\\noticeform[${3:Parameterliste%keyvals}]{${1:Inhalt%text}}{${2:Schwerpunkte%text}}"
-		]
-	},
-
-
-	"contactperson":{
+	"contactperson{}":{
 		"prefix":"contactperson",
 		"body":[
 			"\\contactperson{${1:Kontaktperson(${2:en})}}"
@@ -89,7 +65,7 @@
 	},
 
 
-	"office":{
+	"office{}":{
 		"prefix":"office",
 		"body":[
 			"\\office{${1:Dienstsitz%text}}"
@@ -97,7 +73,7 @@
 	},
 
 
-	"telephone":{
+	"telephone{}":{
 		"prefix":"telephone",
 		"body":[
 			"\\telephone{${1:Telefonnummer}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"telefax":{
+	"telefax{}":{
 		"prefix":"telefax",
 		"body":[
 			"\\telefax{${1:Telefaxnummer}}"
@@ -249,7 +225,7 @@
 	},
 
 
-	"student":{
+	"student{}":{
 		"prefix":"student",
 		"body":[
 			"\\student{${1:name}}"
@@ -257,22 +233,26 @@
 	},
 
 
-	"notice":{
-		"prefix":"notice",
+	"taskform[]{}{}":{
+		"prefix":"taskform",
 		"body":[
-			"\\begin{notice}",
-			"\t$1",
-			"\\end{notice}"
+			"\\taskform[${3:Parameterliste%keyvals}]{${1:Ziele%text}}{${2:Schwerpunkte%text}}"
 		]
 	},
 
 
-	"evaluation":{
-		"prefix":"evaluation",
+	"evaluationform[]{}{}{}{}":{
+		"prefix":"evaluationform",
 		"body":[
-			"\\begin{evaluation}",
-			"\t$1",
-			"\\end{evaluation}"
+			"\\evaluationform[${5:Parameterliste%keyvals}]{${1:Aufgabe%text}}{${2:Inhalt%text}}{${3:Bewertung%text}}{${4:Note%text}}"
+		]
+	},
+
+
+	"noticeform[]{}{}":{
+		"prefix":"noticeform",
+		"body":[
+			"\\noticeform[${3:Parameterliste%keyvals}]{${1:Inhalt%text}}{${2:Schwerpunkte%text}}"
 		]
 	},
 
@@ -281,8 +261,58 @@
 		"prefix":"task",
 		"body":[
 			"\\begin{task}",
-			"\t$1",
+				"\t$1",
 			"\\end{task}"
+		]
+	},
+
+
+	"evaluation":{
+		"prefix":"evaluation",
+		"body":[
+			"\\begin{evaluation}",
+				"\t$1",
+			"\\end{evaluation}"
+		]
+	},
+
+
+	"notice":{
+		"prefix":"notice",
+		"body":[
+			"\\begin{notice}",
+				"\t$1",
+			"\\end{notice}"
+		]
+	},
+
+
+	"task":{
+		"prefix":"task",
+		"body":[
+			"\\begin{task}",
+				"\t$1",
+			"\\end{task}"
+		]
+	},
+
+
+	"evaluation":{
+		"prefix":"evaluation",
+		"body":[
+			"\\begin{evaluation}",
+				"\t$1",
+			"\\end{evaluation}"
+		]
+	},
+
+
+	"notice":{
+		"prefix":"notice",
+		"body":[
+			"\\begin{notice}",
+				"\t$1",
+			"\\end{notice}"
 		]
 	}
 }

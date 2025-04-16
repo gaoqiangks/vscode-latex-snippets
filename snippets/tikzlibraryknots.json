@@ -1,7 +1,7 @@
 {
 
 
-	"flipcrossings":{
+	"flipcrossings{}":{
 		"prefix":"flipcrossings",
 		"body":[
 			"\\flipcrossings{${1:list of crossings}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"redraw":{
+	"redraw{}{}":{
 		"prefix":"redraw",
 		"body":[
 			"\\redraw{${1:strand number}}{${2:point}}"
@@ -21,7 +21,17 @@
 		"prefix":"knot",
 		"body":[
 			"\\begin{knot}",
-			"\t$1",
+				"\t$1",
+			"\\end{knot}"
+		]
+	},
+
+
+	"knot":{
+		"prefix":"knot",
+		"body":[
+			"\\begin{knot}",
+				"\t$1",
 			"\\end{knot}"
 		]
 	}

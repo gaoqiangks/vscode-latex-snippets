@@ -273,14 +273,6 @@
 	},
 
 
-	"maketop*":{
-		"prefix":"maketop*",
-		"body":[
-			"\\maketop*"
-		]
-	},
-
-
 	"numbertop":{
 		"prefix":"numbertop",
 		"body":[
@@ -465,18 +457,10 @@
 	},
 
 
-	"incipit":{
+	"incipit{}":{
 		"prefix":"incipit",
 		"body":[
 			"\\incipit{${1:text}}"
-		]
-	},
-
-
-	"incipit*":{
-		"prefix":"incipit*",
-		"body":[
-			"\\incipit*{${1:text}}"
 		]
 	},
 
@@ -593,14 +577,6 @@
 	},
 
 
-	"ptind*":{
-		"prefix":"ptind*",
-		"body":[
-			"\\ptind*"
-		]
-	},
-
-
 	"poemtitleformat":{
 		"prefix":"poemtitleformat",
 		"body":[
@@ -649,26 +625,10 @@
 	},
 
 
-	"ptspacer*":{
-		"prefix":"ptspacer*",
-		"body":[
-			"\\ptspacer*"
-		]
-	},
-
-
-	"linktopoem":{
+	"linktopoem{}":{
 		"prefix":"linktopoem",
 		"body":[
 			"\\linktopoem{${1:link text}}"
-		]
-	},
-
-
-	"linktopoem":{
-		"prefix":"linktopoem",
-		"body":[
-			"\\linktopoem[${2:number}]{${1:link text}}"
 		]
 	},
 
@@ -681,7 +641,7 @@
 	},
 
 
-	"poemgroup":{
+	"poemgroup{}":{
 		"prefix":"poemgroup",
 		"body":[
 			"\\poemgroup{${1:contents}}"
@@ -689,26 +649,10 @@
 	},
 
 
-	"poemgroup*":{
-		"prefix":"poemgroup*",
-		"body":[
-			"\\poemgroup*{${1:contents}}"
-		]
-	},
-
-
-	"setpoemgroup":{
+	"setpoemgroup{}":{
 		"prefix":"setpoemgroup",
 		"body":[
 			"\\setpoemgroup{${1:contents}}"
-		]
-	},
-
-
-	"setpoemgroup*":{
-		"prefix":"setpoemgroup*",
-		"body":[
-			"\\setpoemgroup*{${1:contents}}"
 		]
 	},
 
@@ -809,11 +753,77 @@
 	},
 
 
+	"maketop*":{
+		"prefix":"*maketop",
+		"body":[
+			"\\maketop*"
+		]
+	},
+
+
+	"incipit*{}":{
+		"prefix":"*incipit",
+		"body":[
+			"\\incipit*{${1:text}}"
+		]
+	},
+
+
+	"ptind*":{
+		"prefix":"*ptind",
+		"body":[
+			"\\ptind*"
+		]
+	},
+
+
+	"ptspacer*":{
+		"prefix":"*ptspacer",
+		"body":[
+			"\\ptspacer*"
+		]
+	},
+
+
+	"poemgroup*{}":{
+		"prefix":"*poemgroup",
+		"body":[
+			"\\poemgroup*{${1:contents}}"
+		]
+	},
+
+
+	"setpoemgroup*{}":{
+		"prefix":"*setpoemgroup",
+		"body":[
+			"\\setpoemgroup*{${1:contents}}"
+		]
+	},
+
+
+	"linktopoem[]{}":{
+		"prefix":"linktopoem",
+		"body":[
+			"\\linktopoem[${2:number}]{${1:link text}}"
+		]
+	},
+
+
+	"poem":{
+		"prefix":"poem",
+		"body":[
+			"\\begin{poem}",
+				"\t$1",
+			"\\end{poem}"
+		]
+	},
+
+
 	"annotation":{
 		"prefix":"annotation",
 		"body":[
 			"\\begin{annotation}",
-			"\t$1",
+				"\t$1",
 			"\\end{annotation}"
 		]
 	},
@@ -823,8 +833,18 @@
 		"prefix":"poem",
 		"body":[
 			"\\begin{poem}",
-			"\t$1",
+				"\t$1",
 			"\\end{poem}"
+		]
+	},
+
+
+	"annotation":{
+		"prefix":"annotation",
+		"body":[
+			"\\begin{annotation}",
+				"\t$1",
+			"\\end{annotation}"
 		]
 	}
 }

@@ -1,18 +1,10 @@
 {
 
 
-	"abcinput":{
+	"abcinput{}":{
 		"prefix":"abcinput",
 		"body":[
 			"\\abcinput{${1:file}}"
-		]
-	},
-
-
-	"abcinput":{
-		"prefix":"abcinput",
-		"body":[
-			"\\abcinput[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -41,18 +33,10 @@
 	},
 
 
-	"mupinput":{
+	"mupinput{}":{
 		"prefix":"mupinput",
 		"body":[
 			"\\mupinput{${1:file}}"
-		]
-	},
-
-
-	"mupinput":{
-		"prefix":"mupinput",
-		"body":[
-			"\\mupinput[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -65,11 +49,27 @@
 	},
 
 
+	"abcinput[]{}":{
+		"prefix":"abcinput",
+		"body":[
+			"\\abcinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"mupinput[]{}":{
+		"prefix":"mupinput",
+		"body":[
+			"\\mupinput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
 	"abc":{
 		"prefix":"abc",
 		"body":[
 			"\\begin{abc}",
-			"\t$1",
+				"\t$1",
 			"\\end{abc}"
 		]
 	},
@@ -79,7 +79,27 @@
 		"prefix":"mup",
 		"body":[
 			"\\begin{mup}",
-			"\t$1",
+				"\t$1",
+			"\\end{mup}"
+		]
+	},
+
+
+	"abc":{
+		"prefix":"abc",
+		"body":[
+			"\\begin{abc}",
+				"\t$1",
+			"\\end{abc}"
+		]
+	},
+
+
+	"mup":{
+		"prefix":"mup",
+		"body":[
+			"\\begin{mup}",
+				"\t$1",
 			"\\end{mup}"
 		]
 	}

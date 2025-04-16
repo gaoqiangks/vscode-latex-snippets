@@ -1,22 +1,6 @@
 {
 
 
-	"endnote*":{
-		"prefix":"endnote*",
-		"body":[
-			"\\endnote*{${1:text}}"
-		]
-	},
-
-
-	"endnote*":{
-		"prefix":"endnote*",
-		"body":[
-			"\\endnote*[${2:number}]{${1:text}}"
-		]
-	},
-
-
 	"phantomendnote":{
 		"prefix":"phantomendnote",
 		"body":[
@@ -29,6 +13,22 @@
 		"prefix":"endnoteautorefname",
 		"body":[
 			"\\endnoteautorefname"
+		]
+	},
+
+
+	"endnote*{}":{
+		"prefix":"*endnote",
+		"body":[
+			"\\endnote*{${1:text}}"
+		]
+	},
+
+
+	"endnote*[]{}":{
+		"prefix":"*endnote",
+		"body":[
+			"\\endnote*[${2:number}]{${1:text}}"
 		]
 	}
 }

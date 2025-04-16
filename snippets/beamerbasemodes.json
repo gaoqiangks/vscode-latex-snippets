@@ -1,7 +1,7 @@
 {
 
 
-	"mode<mode specification>":{
+	"mode<mode specification>{}":{
 		"prefix":"mode<mode specification>",
 		"body":[
 			"\\mode<mode specification>{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"mode":{
+	"mode{}":{
 		"prefix":"mode",
 		"body":[
 			"\\mode{${1:text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"mode*":{
-		"prefix":"mode*",
-		"body":[
-			"\\mode*"
-		]
-	},
-
-
-	"includeslide":{
+	"includeslide{}":{
 		"prefix":"includeslide",
 		"body":[
 			"\\includeslide{${1:label name}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"includeslide":{
-		"prefix":"includeslide",
-		"body":[
-			"\\includeslide[${2:options%keyvals}]{${1:label name}}"
-		]
-	},
-
-
-	"setjobnamebeamerversion":{
+	"setjobnamebeamerversion{}":{
 		"prefix":"setjobnamebeamerversion",
 		"body":[
 			"\\setjobnamebeamerversion{${1:filename without extension%file}}"
@@ -69,6 +53,22 @@
 		"prefix":"jobnamebeamerversion",
 		"body":[
 			"\\jobnamebeamerversion"
+		]
+	},
+
+
+	"mode*":{
+		"prefix":"*mode",
+		"body":[
+			"\\mode*"
+		]
+	},
+
+
+	"includeslide[]{}":{
+		"prefix":"includeslide",
+		"body":[
+			"\\includeslide[${2:options%keyvals}]{${1:label name}}"
 		]
 	}
 }

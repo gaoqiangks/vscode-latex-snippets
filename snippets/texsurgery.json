@@ -25,7 +25,7 @@
 	},
 
 
-	"lstinlinesafe":{
+	"lstinlinesafe||":{
 		"prefix":"lstinlinesafe",
 		"body":[
 			"\\lstinlinesafe|${1:code}|"
@@ -33,7 +33,7 @@
 	},
 
 
-	"eval":{
+	"eval{}":{
 		"prefix":"eval",
 		"body":[
 			"\\eval{${1:code%definition}}"
@@ -41,7 +41,15 @@
 	},
 
 
-	"eval":{
+	"sage{}":{
+		"prefix":"sage",
+		"body":[
+			"\\sage{${1:code%definition}}"
+		]
+	},
+
+
+	"eval[]{}":{
 		"prefix":"eval",
 		"body":[
 			"\\eval[${2:language}]{${1:code%definition}}"
@@ -49,10 +57,12 @@
 	},
 
 
-	"sage":{
-		"prefix":"sage",
+	"run":{
+		"prefix":"run",
 		"body":[
-			"\\sage{${1:code%definition}}"
+			"\\begin{run}",
+				"\t$1",
+			"\\end{run}"
 		]
 	},
 
@@ -61,7 +71,7 @@
 		"prefix":"runsilent",
 		"body":[
 			"\\begin{runsilent}",
-			"\t$1",
+				"\t$1",
 			"\\end{runsilent}"
 		]
 	},
@@ -71,8 +81,18 @@
 		"prefix":"run",
 		"body":[
 			"\\begin{run}",
-			"\t$1",
+				"\t$1",
 			"\\end{run}"
+		]
+	},
+
+
+	"runsilent":{
+		"prefix":"runsilent",
+		"body":[
+			"\\begin{runsilent}",
+				"\t$1",
+			"\\end{runsilent}"
 		]
 	}
 }

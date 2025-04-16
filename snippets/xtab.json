@@ -1,15 +1,7 @@
 {
 
 
-	"bottomcaption":{
-		"prefix":"bottomcaption",
-		"body":[
-			"\\bottomcaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"bottomcaption":{
+	"bottomcaption{}":{
 		"prefix":"bottomcaption",
 		"body":[
 			"\\bottomcaption{${1:text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"shrinkheight":{
+	"shrinkheight{}":{
 		"prefix":"shrinkheight",
 		"body":[
 			"\\shrinkheight{${1:length}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"tablecaption":{
-		"prefix":"tablecaption",
-		"body":[
-			"\\tablecaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"tablecaption":{
+	"tablecaption{}":{
 		"prefix":"tablecaption",
 		"body":[
 			"\\tablecaption{${1:text}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"tablefirsthead":{
+	"tablefirsthead{}":{
 		"prefix":"tablefirsthead",
 		"body":[
 			"\\tablefirsthead{${1:text}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"tablehead":{
+	"tablehead{}":{
 		"prefix":"tablehead",
 		"body":[
 			"\\tablehead{${1:text}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"tablelasthead":{
+	"tablelasthead{}":{
 		"prefix":"tablelasthead",
 		"body":[
 			"\\tablelasthead{${1:text}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"tablelasttail":{
+	"tablelasttail{}":{
 		"prefix":"tablelasttail",
 		"body":[
 			"\\tablelasttail{${1:text}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"tabletail":{
+	"tabletail{}":{
 		"prefix":"tabletail",
 		"body":[
 			"\\tabletail{${1:text}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"topcaption":{
-		"prefix":"topcaption",
-		"body":[
-			"\\topcaption[${2:short}]{${1:text}}"
-		]
-	},
-
-
-	"topcaption":{
+	"topcaption{}":{
 		"prefix":"topcaption",
 		"body":[
 			"\\topcaption{${1:text}}"
@@ -105,7 +81,7 @@
 	},
 
 
-	"xentrystretch":{
+	"xentrystretch{}":{
 		"prefix":"xentrystretch",
 		"body":[
 			"\\xentrystretch{${1:decimal-fraction}}"
@@ -217,7 +193,7 @@
 	},
 
 
-	"setSTheight":{
+	"setSTheight{}":{
 		"prefix":"setSTheight",
 		"body":[
 			"\\setSTheight{${1:dimen%l}}"
@@ -265,22 +241,46 @@
 	},
 
 
+	"bottomcaption[]{}":{
+		"prefix":"bottomcaption",
+		"body":[
+			"\\bottomcaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
+	"tablecaption[]{}":{
+		"prefix":"tablecaption",
+		"body":[
+			"\\tablecaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
+	"topcaption[]{}":{
+		"prefix":"topcaption",
+		"body":[
+			"\\topcaption[${2:short}]{${1:text}}"
+		]
+	},
+
+
 	"mpxtabular":{
 		"prefix":"mpxtabular",
 		"body":[
 			"\\begin{mpxtabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpxtabular}"
 		]
 	},
 
 
-	"xtabular*":{
-		"prefix":"xtabular*",
+	"mpxtabular*":{
+		"prefix":"mpxtabular",
 		"body":[
-			"\\begin{xtabular*}",
-			"\t$1",
-			"\\end{xtabular*}"
+			"\\begin{mpxtabular*}",
+				"\t$1",
+			"\\end{mpxtabular*}"
 		]
 	},
 
@@ -289,18 +289,58 @@
 		"prefix":"xtabular",
 		"body":[
 			"\\begin{xtabular}",
-			"\t$1",
+				"\t$1",
 			"\\end{xtabular}"
 		]
 	},
 
 
+	"xtabular*":{
+		"prefix":"xtabular",
+		"body":[
+			"\\begin{xtabular*}",
+				"\t$1",
+			"\\end{xtabular*}"
+		]
+	},
+
+
+	"mpxtabular":{
+		"prefix":"mpxtabular",
+		"body":[
+			"\\begin{mpxtabular}",
+				"\t$1",
+			"\\end{mpxtabular}"
+		]
+	},
+
+
 	"mpxtabular*":{
-		"prefix":"mpxtabular*",
+		"prefix":"mpxtabular",
 		"body":[
 			"\\begin{mpxtabular*}",
-			"\t$1",
+				"\t$1",
 			"\\end{mpxtabular*}"
+		]
+	},
+
+
+	"xtabular":{
+		"prefix":"xtabular",
+		"body":[
+			"\\begin{xtabular}",
+				"\t$1",
+			"\\end{xtabular}"
+		]
+	},
+
+
+	"xtabular*":{
+		"prefix":"xtabular",
+		"body":[
+			"\\begin{xtabular*}",
+				"\t$1",
+			"\\end{xtabular*}"
 		]
 	}
 }

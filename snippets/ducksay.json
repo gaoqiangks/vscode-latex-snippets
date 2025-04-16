@@ -1,7 +1,7 @@
 {
 
 
-	"DefaultAnimal":{
+	"DefaultAnimal{}":{
 		"prefix":"DefaultAnimal",
 		"body":[
 			"\\DefaultAnimal{${1:animal%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"DucksayOptions":{
+	"DucksayOptions{}":{
 		"prefix":"DucksayOptions",
 		"body":[
 			"\\DucksayOptions{${1:keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"AnimalOptions":{
+	"AnimalOptions{}{}":{
 		"prefix":"AnimalOptions",
 		"body":[
 			"\\AnimalOptions{${1:animal}}{${2:options%keyvals}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"AnimalOptions*":{
-		"prefix":"AnimalOptions*",
-		"body":[
-			"\\AnimalOptions*{${1:animal}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"ducksay":{
+	"ducksay{}":{
 		"prefix":"ducksay",
 		"body":[
 			"\\ducksay{${1:message}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"ducksay":{
-		"prefix":"ducksay",
-		"body":[
-			"\\ducksay[${2:options%keyvals}]{${1:message}}"
-		]
-	},
-
-
-	"duckthink":{
+	"duckthink{}":{
 		"prefix":"duckthink",
 		"body":[
 			"\\duckthink{${1:message}}"
@@ -57,7 +41,23 @@
 	},
 
 
-	"duckthink":{
+	"AnimalOptions*{}{}":{
+		"prefix":"*AnimalOptions",
+		"body":[
+			"\\AnimalOptions*{${1:animal}}{${2:options%keyvals}}"
+		]
+	},
+
+
+	"ducksay[]{}":{
+		"prefix":"ducksay",
+		"body":[
+			"\\ducksay[${2:options%keyvals}]{${1:message}}"
+		]
+	},
+
+
+	"duckthink[]{}":{
 		"prefix":"duckthink",
 		"body":[
 			"\\duckthink[${2:options%keyvals}]{${1:message}}"

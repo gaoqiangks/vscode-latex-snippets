@@ -81,7 +81,7 @@
 	},
 
 
-	"delimiterprefix":{
+	"delimiterprefix{}":{
 		"prefix":"delimiterprefix",
 		"body":[
 			"\\delimiterprefix{${1:prefix}}"
@@ -141,17 +141,37 @@
 		"prefix":"longmath",
 		"body":[
 			"\\begin{longmath}",
-			"\t$1",
+				"\t$1",
 			"\\end{longmath}"
 		]
 	},
 
 
 	"longmath*":{
-		"prefix":"longmath*",
+		"prefix":"longmath",
 		"body":[
 			"\\begin{longmath*}",
-			"\t$1",
+				"\t$1",
+			"\\end{longmath*}"
+		]
+	},
+
+
+	"longmath":{
+		"prefix":"longmath",
+		"body":[
+			"\\begin{longmath}",
+				"\t$1",
+			"\\end{longmath}"
+		]
+	},
+
+
+	"longmath*":{
+		"prefix":"longmath",
+		"body":[
+			"\\begin{longmath*}",
+				"\t$1",
 			"\\end{longmath*}"
 		]
 	}

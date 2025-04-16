@@ -1,7 +1,7 @@
 {
 
 
-	"shortversion":{
+	"shortversion{}":{
 		"prefix":"shortversion",
 		"body":[
 			"\\shortversion{${1:options%keyvals}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"newchangelogsection":{
+	"newchangelogsection{}{}":{
 		"prefix":"newchangelogsection",
 		"body":[
 			"\\newchangelogsection{${1:command}}{${2:description%text}}"
@@ -81,30 +81,10 @@
 	},
 
 
-	"changelogremark":{
+	"changelogremark{}":{
 		"prefix":"changelogremark",
 		"body":[
 			"\\changelogremark{${1:remark%text}}"
-		]
-	},
-
-
-	"changelogitemize":{
-		"prefix":"changelogitemize",
-		"body":[
-			"\\begin{changelogitemize}",
-			"\t$1",
-			"\\end{changelogitemize}"
-		]
-	},
-
-
-	"version":{
-		"prefix":"version",
-		"body":[
-			"\\begin{version}",
-			"\t$1",
-			"\\end{version}"
 		]
 	},
 
@@ -113,8 +93,18 @@
 		"prefix":"changelog",
 		"body":[
 			"\\begin{changelog}",
-			"\t$1",
+				"\t$1",
 			"\\end{changelog}"
+		]
+	},
+
+
+	"version":{
+		"prefix":"version",
+		"body":[
+			"\\begin{version}",
+				"\t$1",
+			"\\end{version}"
 		]
 	},
 
@@ -123,8 +113,38 @@
 		"prefix":"changelogdescription",
 		"body":[
 			"\\begin{changelogdescription}",
-			"\t$1",
+				"\t$1",
 			"\\end{changelogdescription}"
+		]
+	},
+
+
+	"changelogitemize":{
+		"prefix":"changelogitemize",
+		"body":[
+			"\\begin{changelogitemize}",
+				"\t$1",
+			"\\end{changelogitemize}"
+		]
+	},
+
+
+	"changelog":{
+		"prefix":"changelog",
+		"body":[
+			"\\begin{changelog}",
+				"\t$1",
+			"\\end{changelog}"
+		]
+	},
+
+
+	"version":{
+		"prefix":"version",
+		"body":[
+			"\\begin{version}",
+				"\t$1",
+			"\\end{version}"
 		]
 	}
 }

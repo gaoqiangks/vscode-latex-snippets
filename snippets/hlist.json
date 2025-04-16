@@ -17,23 +17,7 @@
 	},
 
 
-	"hitem*":{
-		"prefix":"hitem*",
-		"body":[
-			"\\hitem*"
-		]
-	},
-
-
-	"hitem*>":{
-		"prefix":"hitem*>",
-		"body":[
-			"\\hitem*>"
-		]
-	},
-
-
-	"hitem":{
+	"hitem()":{
 		"prefix":"hitem",
 		"body":[
 			"\\hitem(${1:num})"
@@ -41,7 +25,7 @@
 	},
 
 
-	"sethlist":{
+	"sethlist{}":{
 		"prefix":"sethlist",
 		"body":[
 			"\\sethlist{${1:keyvals}}"
@@ -49,10 +33,26 @@
 	},
 
 
-	"setdefaulthlist":{
+	"setdefaulthlist{}":{
 		"prefix":"setdefaulthlist",
 		"body":[
 			"\\setdefaulthlist{${1:keyvals}}"
+		]
+	},
+
+
+	"hitem*":{
+		"prefix":"*hitem",
+		"body":[
+			"\\hitem*"
+		]
+	},
+
+
+	"hitem*>":{
+		"prefix":"*hitem",
+		"body":[
+			"\\hitem*>"
 		]
 	},
 
@@ -61,7 +61,7 @@
 		"prefix":"hlist",
 		"body":[
 			"\\begin{hlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{hlist}"
 		]
 	}

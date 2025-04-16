@@ -1,7 +1,7 @@
 {
 
 
-	"makemembertable":{
+	"makemembertable{}":{
 		"prefix":"makemembertable",
 		"body":[
 			"\\makemembertable{${1:number of blank rows}}"
@@ -9,34 +9,10 @@
 	},
 
 
-	"makeprestable":{
+	"makeprestable{}":{
 		"prefix":"makeprestable",
 		"body":[
 			"\\makeprestable{${1:number of blank rows}}"
-		]
-	},
-
-
-	"makeprestable":{
-		"prefix":"makeprestable",
-		"body":[
-			"\\makeprestable[${2:number of sessions}]{${1:number of blank rows}}"
-		]
-	},
-
-
-	"makeprestable*":{
-		"prefix":"makeprestable*",
-		"body":[
-			"\\makeprestable*{${1:number of blank rows}}"
-		]
-	},
-
-
-	"makeprestable*":{
-		"prefix":"makeprestable*",
-		"body":[
-			"\\makeprestable*[${2:number of sessions}]{${1:number of blank rows}}"
 		]
 	},
 
@@ -85,6 +61,30 @@
 		"prefix":"jssigheader",
 		"body":[
 			"\\jssigheader"
+		]
+	},
+
+
+	"makeprestable*{}":{
+		"prefix":"*makeprestable",
+		"body":[
+			"\\makeprestable*{${1:number of blank rows}}"
+		]
+	},
+
+
+	"makeprestable*[]{}":{
+		"prefix":"*makeprestable",
+		"body":[
+			"\\makeprestable*[${2:number of sessions}]{${1:number of blank rows}}"
+		]
+	},
+
+
+	"makeprestable[]{}":{
+		"prefix":"makeprestable",
+		"body":[
+			"\\makeprestable[${2:number of sessions}]{${1:number of blank rows}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"opset":{
+	"opset{}":{
 		"prefix":"opset",
 		"body":[
 			"\\opset{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"opadd":{
+	"opadd{}{}":{
 		"prefix":"opadd",
 		"body":[
 			"\\opadd{${1:num1}}{${2:num2}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"opadd":{
-		"prefix":"opadd",
-		"body":[
-			"\\opadd[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"opsub":{
+	"opsub{}{}":{
 		"prefix":"opsub",
 		"body":[
 			"\\opsub{${1:num1}}{${2:num2}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"opsub":{
-		"prefix":"opsub",
-		"body":[
-			"\\opsub[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"opmul":{
+	"opmul{}{}":{
 		"prefix":"opmul",
 		"body":[
 			"\\opmul{${1:num1}}{${2:num2}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"opmul":{
-		"prefix":"opmul",
-		"body":[
-			"\\opmul[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"opdiv":{
+	"opdiv{}{}":{
 		"prefix":"opdiv",
 		"body":[
 			"\\opdiv{${1:num1}}{${2:num2}}"
@@ -65,26 +41,10 @@
 	},
 
 
-	"opdiv":{
-		"prefix":"opdiv",
-		"body":[
-			"\\opdiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"opidiv":{
+	"opidiv{}{}":{
 		"prefix":"opidiv",
 		"body":[
 			"\\opidiv{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"opidiv":{
-		"prefix":"opidiv",
-		"body":[
-			"\\opidiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
 		]
 	},
 
@@ -105,55 +65,7 @@
 	},
 
 
-	"opadd*":{
-		"prefix":"opadd*",
-		"body":[
-			"\\opadd*{${1:num1}}{${2:num2}}{${3:variable}}"
-		]
-	},
-
-
-	"opsub*":{
-		"prefix":"opsub*",
-		"body":[
-			"\\opsub*{${1:num1}}{${2:num2}}{${3:variable}}"
-		]
-	},
-
-
-	"opmul*":{
-		"prefix":"opmul*",
-		"body":[
-			"\\opmul*{${1:num1}}{${2:num2}}{${3:variable}}"
-		]
-	},
-
-
-	"opdiv*":{
-		"prefix":"opdiv*",
-		"body":[
-			"\\opdiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
-		]
-	},
-
-
-	"opdiv*":{
-		"prefix":"opdiv*",
-		"body":[
-			"\\opdiv*[${5:options%keyvals}]{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
-		]
-	},
-
-
-	"opidiv*":{
-		"prefix":"opidiv*",
-		"body":[
-			"\\opidiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
-		]
-	},
-
-
-	"opcopy":{
+	"opcopy{}{}":{
 		"prefix":"opcopy",
 		"body":[
 			"\\opcopy{${1:number}}{${2:variable}}"
@@ -161,7 +73,7 @@
 	},
 
 
-	"opprint":{
+	"opprint{}":{
 		"prefix":"opprint",
 		"body":[
 			"\\opprint{${1:arg}}"
@@ -169,7 +81,7 @@
 	},
 
 
-	"opdisplay":{
+	"opdisplay{}{}":{
 		"prefix":"opdisplay",
 		"body":[
 			"\\opdisplay{${1:style%keyvals}}{${2:number}}"
@@ -177,15 +89,7 @@
 	},
 
 
-	"opdisplay":{
-		"prefix":"opdisplay",
-		"body":[
-			"\\opdisplay[${3:specs}]{${1:style}}{${2:number}}"
-		]
-	},
-
-
-	"oplput":{
+	"oplput(){}":{
 		"prefix":"oplput",
 		"body":[
 			"\\oplput(${2:x},${3:y}){${1:text}}"
@@ -193,7 +97,7 @@
 	},
 
 
-	"oprput":{
+	"oprput(){}":{
 		"prefix":"oprput",
 		"body":[
 			"\\oprput(${2:x},${3:y}){${1:text}}"
@@ -201,7 +105,7 @@
 	},
 
 
-	"ophline":{
+	"ophline(){}":{
 		"prefix":"ophline",
 		"body":[
 			"\\ophline(${2:x},${3:y}){${1:length}}"
@@ -209,7 +113,7 @@
 	},
 
 
-	"opvline":{
+	"opvline(){}":{
 		"prefix":"opvline",
 		"body":[
 			"\\opvline(${2:x},${3:y}){${1:length}}"
@@ -217,7 +121,7 @@
 	},
 
 
-	"opexport":{
+	"opexport{}{}":{
 		"prefix":"opexport",
 		"body":[
 			"\\opexport{${1:number}}{${2:cmd}}"
@@ -225,7 +129,7 @@
 	},
 
 
-	"opwidth":{
+	"opwidth{}{}":{
 		"prefix":"opwidth",
 		"body":[
 			"\\opwidth{${1:number}}{${2:variable}}"
@@ -233,7 +137,7 @@
 	},
 
 
-	"opintegerwidth":{
+	"opintegerwidth{}{}":{
 		"prefix":"opintegerwidth",
 		"body":[
 			"\\opintegerwidth{${1:number}}{${2:variable}}"
@@ -241,7 +145,7 @@
 	},
 
 
-	"opdecimalwidth":{
+	"opdecimalwidth{}{}":{
 		"prefix":"opdecimalwidth",
 		"body":[
 			"\\opdecimalwidth{${1:number}}{${2:variable}}"
@@ -249,7 +153,7 @@
 	},
 
 
-	"opunzero":{
+	"opunzero{}":{
 		"prefix":"opunzero",
 		"body":[
 			"\\opunzero{${1:number}}"
@@ -257,7 +161,7 @@
 	},
 
 
-	"opinteger":{
+	"opinteger{}{}":{
 		"prefix":"opinteger",
 		"body":[
 			"\\opinteger{${1:number}}{${2:variable}}"
@@ -265,7 +169,7 @@
 	},
 
 
-	"opdecimal":{
+	"opdecimal{}{}":{
 		"prefix":"opdecimal",
 		"body":[
 			"\\opdecimal{${1:number}}{${2:variable}}"
@@ -273,7 +177,7 @@
 	},
 
 
-	"opgetdigit":{
+	"opgetdigit{}{}{}":{
 		"prefix":"opgetdigit",
 		"body":[
 			"\\opgetdigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -281,7 +185,7 @@
 	},
 
 
-	"opsetdigit":{
+	"opsetdigit{}{}{}":{
 		"prefix":"opsetdigit",
 		"body":[
 			"\\opsetdigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -289,7 +193,7 @@
 	},
 
 
-	"opgetintegerdigit":{
+	"opgetintegerdigit{}{}{}":{
 		"prefix":"opgetintegerdigit",
 		"body":[
 			"\\opgetintegerdigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -297,7 +201,7 @@
 	},
 
 
-	"opsetintegerdigit":{
+	"opsetintegerdigit{}{}{}":{
 		"prefix":"opsetintegerdigit",
 		"body":[
 			"\\opsetintegerdigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -305,7 +209,7 @@
 	},
 
 
-	"opgetdecimaldigit":{
+	"opgetdecimaldigit{}{}{}":{
 		"prefix":"opgetdecimaldigit",
 		"body":[
 			"\\opgetdecimaldigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -313,7 +217,7 @@
 	},
 
 
-	"opsetdecimaldigit":{
+	"opsetdecimaldigit{}{}{}":{
 		"prefix":"opsetdecimaldigit",
 		"body":[
 			"\\opsetdecimaldigit{${1:number}}{${2:index}}{${3:variable}}"
@@ -321,7 +225,7 @@
 	},
 
 
-	"opcmp":{
+	"opcmp{}{}":{
 		"prefix":"opcmp",
 		"body":[
 			"\\opcmp{${1:num1}}{${2:num2}}"
@@ -377,7 +281,7 @@
 	},
 
 
-	"opgcd":{
+	"opgcd{}{}{}":{
 		"prefix":"opgcd",
 		"body":[
 			"\\opgcd{${1:num1}}{${2:num2}}{${3:variable}}"
@@ -385,7 +289,7 @@
 	},
 
 
-	"opdivperiod":{
+	"opdivperiod{}{}{}":{
 		"prefix":"opdivperiod",
 		"body":[
 			"\\opdivperiod{${1:num1}}{${2:num2}}{${3:variable}}"
@@ -393,7 +297,7 @@
 	},
 
 
-	"opcastingoutnines":{
+	"opcastingoutnines{}{}":{
 		"prefix":"opcastingoutnines",
 		"body":[
 			"\\opcastingoutnines{${1:number}}{${2:variable}}"
@@ -401,7 +305,7 @@
 	},
 
 
-	"opcastingoutelevens":{
+	"opcastingoutelevens{}{}":{
 		"prefix":"opcastingoutelevens",
 		"body":[
 			"\\opcastingoutelevens{${1:number}}{${2:variable}}"
@@ -409,7 +313,7 @@
 	},
 
 
-	"oppower":{
+	"oppower{}{}{}":{
 		"prefix":"oppower",
 		"body":[
 			"\\oppower{${1:number}}{${2:power}}{${3:variable}}"
@@ -417,7 +321,7 @@
 	},
 
 
-	"opfloor":{
+	"opfloor{}{}{}":{
 		"prefix":"opfloor",
 		"body":[
 			"\\opfloor{${1:number}}{${2:approx rank}}{${3:variable}}"
@@ -425,7 +329,7 @@
 	},
 
 
-	"opceil":{
+	"opceil{}{}{}":{
 		"prefix":"opceil",
 		"body":[
 			"\\opceil{${1:number}}{${2:approx rank}}{${3:variable}}"
@@ -433,7 +337,7 @@
 	},
 
 
-	"opround":{
+	"opround{}{}{}":{
 		"prefix":"opround",
 		"body":[
 			"\\opround{${1:number}}{${2:approx rank}}{${3:variable}}"
@@ -441,7 +345,7 @@
 	},
 
 
-	"opsqrt":{
+	"opsqrt{}{}":{
 		"prefix":"opsqrt",
 		"body":[
 			"\\opsqrt{${1:number}}{${2:variable}}"
@@ -449,15 +353,7 @@
 	},
 
 
-	"opsqrt":{
-		"prefix":"opsqrt",
-		"body":[
-			"\\opsqrt[${3:options%keyvals}]{${1:number}}{${2:variable}}"
-		]
-	},
-
-
-	"opgfsqrt":{
+	"opgfsqrt{}":{
 		"prefix":"opgfsqrt",
 		"body":[
 			"\\opgfsqrt{${1:number}}"
@@ -465,15 +361,7 @@
 	},
 
 
-	"opgfsqrt":{
-		"prefix":"opgfsqrt",
-		"body":[
-			"\\opgfsqrt[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"opexpr":{
+	"opexpr{}{}":{
 		"prefix":"opexpr",
 		"body":[
 			"\\opexpr{${1:expression}}{${2:variable}}"
@@ -481,15 +369,7 @@
 	},
 
 
-	"opexpr":{
-		"prefix":"opexpr",
-		"body":[
-			"\\opexpr[${3:options%keyvals}]{${1:expression}}{${2:variable}}"
-		]
-	},
-
-
-	"opabs":{
+	"opabs{}{}":{
 		"prefix":"opabs",
 		"body":[
 			"\\opabs{${1:number}}{${2:variable}}"
@@ -497,10 +377,130 @@
 	},
 
 
-	"opneg":{
+	"opneg{}{}":{
 		"prefix":"opneg",
 		"body":[
 			"\\opneg{${1:number}}{${2:variable}}"
+		]
+	},
+
+
+	"opadd*{}{}{}":{
+		"prefix":"*opadd",
+		"body":[
+			"\\opadd*{${1:num1}}{${2:num2}}{${3:variable}}"
+		]
+	},
+
+
+	"opsub*{}{}{}":{
+		"prefix":"*opsub",
+		"body":[
+			"\\opsub*{${1:num1}}{${2:num2}}{${3:variable}}"
+		]
+	},
+
+
+	"opmul*{}{}{}":{
+		"prefix":"*opmul",
+		"body":[
+			"\\opmul*{${1:num1}}{${2:num2}}{${3:variable}}"
+		]
+	},
+
+
+	"opdiv*{}{}{}{}":{
+		"prefix":"*opdiv",
+		"body":[
+			"\\opdiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
+		]
+	},
+
+
+	"opdiv*[]{}{}{}{}":{
+		"prefix":"*opdiv",
+		"body":[
+			"\\opdiv*[${5:options%keyvals}]{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
+		]
+	},
+
+
+	"opidiv*{}{}{}{}":{
+		"prefix":"*opidiv",
+		"body":[
+			"\\opidiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
+		]
+	},
+
+
+	"opadd[]{}{}":{
+		"prefix":"opadd",
+		"body":[
+			"\\opadd[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"opsub[]{}{}":{
+		"prefix":"opsub",
+		"body":[
+			"\\opsub[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"opmul[]{}{}":{
+		"prefix":"opmul",
+		"body":[
+			"\\opmul[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"opdiv[]{}{}":{
+		"prefix":"opdiv",
+		"body":[
+			"\\opdiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"opidiv[]{}{}":{
+		"prefix":"opidiv",
+		"body":[
+			"\\opidiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"opdisplay[]{}{}":{
+		"prefix":"opdisplay",
+		"body":[
+			"\\opdisplay[${3:specs}]{${1:style}}{${2:number}}"
+		]
+	},
+
+
+	"opsqrt[]{}{}":{
+		"prefix":"opsqrt",
+		"body":[
+			"\\opsqrt[${3:options%keyvals}]{${1:number}}{${2:variable}}"
+		]
+	},
+
+
+	"opgfsqrt[]{}":{
+		"prefix":"opgfsqrt",
+		"body":[
+			"\\opgfsqrt[${2:options%keyvals}]{${1:number}}"
+		]
+	},
+
+
+	"opexpr[]{}{}":{
+		"prefix":"opexpr",
+		"body":[
+			"\\opexpr[${3:options%keyvals}]{${1:expression}}{${2:variable}}"
 		]
 	}
 }

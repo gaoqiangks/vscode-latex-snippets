@@ -105,7 +105,7 @@
 	},
 
 
-	"PrintMacroImpl":{
+	"PrintMacroImpl{}":{
 		"prefix":"PrintMacroImpl",
 		"body":[
 			"\\PrintMacroImpl{${1:arg}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"PrintMacroImplName":{
+	"PrintMacroImplName{}":{
 		"prefix":"PrintMacroImplName",
 		"body":[
 			"\\PrintMacroImplName{${1:arg}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"PrintEnvImplName":{
+	"PrintEnvImplName{}":{
 		"prefix":"PrintEnvImplName",
 		"body":[
 			"\\PrintEnvImplName{${1:arg}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"PrintStyleImplName":{
+	"PrintStyleImplName{}":{
 		"prefix":"PrintStyleImplName",
 		"body":[
 			"\\PrintStyleImplName{${1:arg}}"
@@ -145,22 +145,12 @@
 	},
 
 
-	"style":{
-		"prefix":"style",
+	"macrocode":{
+		"prefix":"macrocode",
 		"body":[
-			"\\begin{style}",
-			"\t$1",
-			"\\end{style}"
-		]
-	},
-
-
-	"environment":{
-		"prefix":"environment",
-		"body":[
-			"\\begin{environment}",
-			"\t$1",
-			"\\end{environment}"
+			"\\begin{macrocode}",
+				"\t$1",
+			"\\end{macrocode}"
 		]
 	},
 
@@ -169,18 +159,28 @@
 		"prefix":"macro",
 		"body":[
 			"\\begin{macro}",
-			"\t$1",
+				"\t$1",
 			"\\end{macro}"
 		]
 	},
 
 
-	"macrocode":{
-		"prefix":"macrocode",
+	"environment":{
+		"prefix":"environment",
 		"body":[
-			"\\begin{macrocode}",
-			"\t$1",
-			"\\end{macrocode}"
+			"\\begin{environment}",
+				"\t$1",
+			"\\end{environment}"
+		]
+	},
+
+
+	"style":{
+		"prefix":"style",
+		"body":[
+			"\\begin{style}",
+				"\t$1",
+			"\\end{style}"
 		]
 	},
 
@@ -189,7 +189,7 @@
 		"prefix":"key",
 		"body":[
 			"\\begin{key}",
-			"\t$1",
+				"\t$1",
 			"\\end{key}"
 		]
 	}

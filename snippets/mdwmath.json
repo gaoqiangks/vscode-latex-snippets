@@ -1,23 +1,7 @@
 {
 
 
-	"sqrt*":{
-		"prefix":"sqrt*",
-		"body":[
-			"\\sqrt*{${1:arg}}"
-		]
-	},
-
-
-	"sqrt*":{
-		"prefix":"sqrt*",
-		"body":[
-			"\\sqrt*[${2:root}]{${1:arg}}"
-		]
-	},
-
-
-	"sqrtdel":{
+	"sqrtdel{}":{
 		"prefix":"sqrtdel",
 		"body":[
 			"\\sqrtdel{${1:arg}}"
@@ -85,6 +69,22 @@
 		"prefix":"bbiggm",
 		"body":[
 			"\\bbiggm"
+		]
+	},
+
+
+	"sqrt*{}":{
+		"prefix":"*sqrt",
+		"body":[
+			"\\sqrt*{${1:arg}}"
+		]
+	},
+
+
+	"sqrt*[]{}":{
+		"prefix":"*sqrt",
+		"body":[
+			"\\sqrt*[${2:root}]{${1:arg}}"
 		]
 	}
 }

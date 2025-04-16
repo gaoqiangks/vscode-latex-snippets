@@ -1,7 +1,7 @@
 {
 
 
-	"todo":{
+	"todo{}":{
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"todolist":{
+	"todolist{}":{
 		"prefix":"todolist",
 		"body":[
 			"\\todolist{${1:contents%todo}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"newaffil":{
+	"newaffil{}{}":{
 		"prefix":"newaffil",
 		"body":[
 			"\\newaffil{${1:shorthand}}{${2:description%text}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"inlinecomment":{
+	"inlinecomment{}":{
 		"prefix":"inlinecomment",
 		"body":[
 			"\\inlinecomment{${1:text}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"linecomment":{
+	"linecomment{}":{
 		"prefix":"linecomment",
 		"body":[
 			"\\linecomment{${1:text}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"booloption":{
+	"booloption{}{}{}":{
 		"prefix":"booloption",
 		"body":[
 			"\\booloption{${1:boolean name}}{${2:option name}}{${3:true|false}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"newnew":{
+	"newnew{}{}":{
 		"prefix":"newnew",
 		"body":[
 			"\\newnew{${1:name}}{${2:definition}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"definelanguagealias":{
+	"definelanguagealias{}{}":{
 		"prefix":"definelanguagealias",
 		"body":[
 			"\\definelanguagealias{${1:alias}}{${2:language}}"
@@ -385,11 +385,21 @@
 	},
 
 
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
 	"lemma":{
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
 		]
 	},
@@ -399,8 +409,18 @@
 		"prefix":"theorem",
 		"body":[
 			"\\begin{theorem}",
-			"\t$1",
+				"\t$1",
 			"\\end{theorem}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"SetZUGFeRDData":{
+	"SetZUGFeRDData{}":{
 		"prefix":"SetZUGFeRDData",
 		"body":[
 			"\\SetZUGFeRDData{${1:keyvals}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"SetZUGFeRDData*":{
-		"prefix":"SetZUGFeRDData*",
-		"body":[
-			"\\SetZUGFeRDData*{${1:keyvals}}"
-		]
-	},
-
-
-	"InsertZUGFeRDData":{
+	"InsertZUGFeRDData{}":{
 		"prefix":"InsertZUGFeRDData",
 		"body":[
 			"\\InsertZUGFeRDData{${1:data-selection}}"
-		]
-	},
-
-
-	"InsertZUGFeRDData":{
-		"prefix":"InsertZUGFeRDData",
-		"body":[
-			"\\InsertZUGFeRDData[${2:special mode option}]{${1:data-selection}}"
 		]
 	},
 
@@ -49,10 +33,26 @@
 	},
 
 
-	"setupZUGFeRDStrings":{
+	"setupZUGFeRDStrings{}{}":{
 		"prefix":"setupZUGFeRDStrings",
 		"body":[
 			"\\setupZUGFeRDStrings{${1:property}}{${2:settings}}"
+		]
+	},
+
+
+	"SetZUGFeRDData*{}":{
+		"prefix":"*SetZUGFeRDData",
+		"body":[
+			"\\SetZUGFeRDData*{${1:keyvals}}"
+		]
+	},
+
+
+	"InsertZUGFeRDData[]{}":{
+		"prefix":"InsertZUGFeRDData",
+		"body":[
+			"\\InsertZUGFeRDData[${2:special mode option}]{${1:data-selection}}"
 		]
 	},
 
@@ -61,7 +61,7 @@
 		"prefix":"ZUGFeRD",
 		"body":[
 			"\\begin{ZUGFeRD}",
-			"\t$1",
+				"\t$1",
 			"\\end{ZUGFeRD}"
 		]
 	}

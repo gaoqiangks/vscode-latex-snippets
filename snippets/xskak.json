@@ -9,23 +9,7 @@
 	},
 
 
-	"newchessgame":{
-		"prefix":"newchessgame",
-		"body":[
-			"\\newchessgame[${1:options%keyvals}]"
-		]
-	},
-
-
-	"resumechessgame":{
-		"prefix":"resumechessgame",
-		"body":[
-			"\\resumechessgame[${1:options%keyvals}]"
-		]
-	},
-
-
-	"xskaknewpgninfo":{
+	"xskaknewpgninfo{}":{
 		"prefix":"xskaknewpgninfo",
 		"body":[
 			"\\xskaknewpgninfo{${1:keyname%specialDef}}"
@@ -33,15 +17,7 @@
 	},
 
 
-	"xskaknewpgninfo":{
-		"prefix":"xskaknewpgninfo",
-		"body":[
-			"\\xskaknewpgninfo[${2:default}]{${1:keyname%specialDef}}"
-		]
-	},
-
-
-	"xskakgetgame":{
+	"xskakgetgame{}":{
 		"prefix":"xskakgetgame",
 		"body":[
 			"\\xskakgetgame{${1:type%keyvals}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"xskakget":{
+	"xskakget{}":{
 		"prefix":"xskakget",
 		"body":[
 			"\\xskakget{${1:type%keyvals}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"xskakcomment":{
+	"xskakcomment{}":{
 		"prefix":"xskakcomment",
 		"body":[
 			"\\xskakcomment{${1:text}}"
@@ -69,14 +45,6 @@
 		"prefix":"xskakexportgames",
 		"body":[
 			"\\xskakexportgames"
-		]
-	},
-
-
-	"xskakexportgames":{
-		"prefix":"xskakexportgames",
-		"body":[
-			"\\xskakexportgames[${1:options%keyvals}]"
 		]
 	},
 
@@ -97,7 +65,7 @@
 	},
 
 
-	"xskakset":{
+	"xskakset{}":{
 		"prefix":"xskakset",
 		"body":[
 			"\\xskakset{${1:options%keyvals}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"xskaktestmoveid":{
+	"xskaktestmoveid{}{}":{
 		"prefix":"xskaktestmoveid",
 		"body":[
 			"\\xskaktestmoveid{${1:movenr}}{${2:player}}"
@@ -113,18 +81,10 @@
 	},
 
 
-	"xskakloop":{
+	"xskakloop{}":{
 		"prefix":"xskakloop",
 		"body":[
 			"\\xskakloop{${1:code}}"
-		]
-	},
-
-
-	"xskakloop":{
-		"prefix":"xskakloop",
-		"body":[
-			"\\xskakloop[${2:options%keyvals}]{${1:code}}"
 		]
 	},
 
@@ -137,23 +97,7 @@
 	},
 
 
-	"mainline":{
-		"prefix":"mainline",
-		"body":[
-			"\\mainline[${2:option%keyvals}]{${1:moves}}"
-		]
-	},
-
-
-	"variation":{
-		"prefix":"variation",
-		"body":[
-			"\\variation[${2:option%keyvals}]{${1:moves}}"
-		]
-	},
-
-
-	"xskaknewstyleitem":{
+	"xskaknewstyleitem{}":{
 		"prefix":"xskaknewstyleitem",
 		"body":[
 			"\\xskaknewstyleitem{${1:item}}"
@@ -161,15 +105,7 @@
 	},
 
 
-	"xskaknewstyleitem":{
-		"prefix":"xskaknewstyleitem",
-		"body":[
-			"\\xskaknewstyleitem[${2:options%keyvals}]{${1:item}}"
-		]
-	},
-
-
-	"xskaknewstyle":{
+	"xskaknewstyle{}":{
 		"prefix":"xskaknewstyle",
 		"body":[
 			"\\xskaknewstyle{${1:style}}"
@@ -177,26 +113,10 @@
 	},
 
 
-	"xskaknewstyle":{
-		"prefix":"xskaknewstyle",
-		"body":[
-			"\\xskaknewstyle[${2:options%keyvals}]{${1:style}}"
-		]
-	},
-
-
-	"xskakaddtostyle":{
+	"xskakaddtostyle{}":{
 		"prefix":"xskakaddtostyle",
 		"body":[
 			"\\xskakaddtostyle{${1:style}}"
-		]
-	},
-
-
-	"xskakaddtostyle":{
-		"prefix":"xskakaddtostyle",
-		"body":[
-			"\\xskakaddtostyle[${2:options%keyvals}]{${1:style}}"
 		]
 	},
 
@@ -205,14 +125,6 @@
 		"prefix":"printchessgame",
 		"body":[
 			"\\printchessgame"
-		]
-	},
-
-
-	"printchessgame":{
-		"prefix":"printchessgame",
-		"body":[
-			"\\printchessgame[${1:options%keyvals}]"
 		]
 	},
 
@@ -245,6 +157,94 @@
 		"prefix":"xskakmovehyphen",
 		"body":[
 			"\\xskakmovehyphen"
+		]
+	},
+
+
+	"newchessgame[]":{
+		"prefix":"newchessgame",
+		"body":[
+			"\\newchessgame[${1:options%keyvals}]"
+		]
+	},
+
+
+	"resumechessgame[]":{
+		"prefix":"resumechessgame",
+		"body":[
+			"\\resumechessgame[${1:options%keyvals}]"
+		]
+	},
+
+
+	"xskaknewpgninfo[]{}":{
+		"prefix":"xskaknewpgninfo",
+		"body":[
+			"\\xskaknewpgninfo[${2:default}]{${1:keyname%specialDef}}"
+		]
+	},
+
+
+	"xskakexportgames[]":{
+		"prefix":"xskakexportgames",
+		"body":[
+			"\\xskakexportgames[${1:options%keyvals}]"
+		]
+	},
+
+
+	"xskakloop[]{}":{
+		"prefix":"xskakloop",
+		"body":[
+			"\\xskakloop[${2:options%keyvals}]{${1:code}}"
+		]
+	},
+
+
+	"mainline[]{}":{
+		"prefix":"mainline",
+		"body":[
+			"\\mainline[${2:option%keyvals}]{${1:moves}}"
+		]
+	},
+
+
+	"variation[]{}":{
+		"prefix":"variation",
+		"body":[
+			"\\variation[${2:option%keyvals}]{${1:moves}}"
+		]
+	},
+
+
+	"xskaknewstyleitem[]{}":{
+		"prefix":"xskaknewstyleitem",
+		"body":[
+			"\\xskaknewstyleitem[${2:options%keyvals}]{${1:item}}"
+		]
+	},
+
+
+	"xskaknewstyle[]{}":{
+		"prefix":"xskaknewstyle",
+		"body":[
+			"\\xskaknewstyle[${2:options%keyvals}]{${1:style}}"
+		]
+	},
+
+
+	"xskakaddtostyle[]{}":{
+		"prefix":"xskakaddtostyle",
+		"body":[
+			"\\xskakaddtostyle[${2:options%keyvals}]{${1:style}}"
+		]
+	},
+
+
+	"printchessgame[]":{
+		"prefix":"printchessgame",
+		"body":[
+			"\\printchessgame[${1:options%keyvals}]"
 		]
 	}
 }

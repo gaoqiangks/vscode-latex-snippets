@@ -9,15 +9,7 @@
 	},
 
 
-	"MoveEqLeft":{
-		"prefix":"MoveEqLeft",
-		"body":[
-			"\\MoveEqLeft[${1:length%plain}]"
-		]
-	},
-
-
-	"everybeforeautobreak":{
+	"everybeforeautobreak{}":{
 		"prefix":"everybeforeautobreak",
 		"body":[
 			"\\everybeforeautobreak{${1:tokens}}"
@@ -25,10 +17,18 @@
 	},
 
 
-	"everyaftereautobreak":{
+	"everyaftereautobreak{}":{
 		"prefix":"everyaftereautobreak",
 		"body":[
 			"\\everyaftereautobreak{${1:tokens}}"
+		]
+	},
+
+
+	"MoveEqLeft[]":{
+		"prefix":"MoveEqLeft",
+		"body":[
+			"\\MoveEqLeft[${1:length%plain}]"
 		]
 	},
 
@@ -37,7 +37,7 @@
 		"prefix":"autobreak",
 		"body":[
 			"\\begin{autobreak}",
-			"\t$1",
+				"\t$1",
 			"\\end{autobreak}"
 		]
 	}

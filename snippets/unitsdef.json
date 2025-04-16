@@ -17,14 +17,6 @@
 	},
 
 
-	"Ohm":{
-		"prefix":"Ohm",
-		"body":[
-			"\\Ohm[${1:value}]"
-		]
-	},
-
-
 	"Celsius":{
 		"prefix":"Celsius",
 		"body":[
@@ -33,26 +25,10 @@
 	},
 
 
-	"Celsius":{
-		"prefix":"Celsius",
-		"body":[
-			"\\Celsius[${1:value}]"
-		]
-	},
-
-
 	"Degree":{
 		"prefix":"Degree",
 		"body":[
 			"\\Degree"
-		]
-	},
-
-
-	"Degree":{
-		"prefix":"Degree",
-		"body":[
-			"\\Degree[${1:value}]"
 		]
 	},
 
@@ -89,15 +65,15 @@
 	},
 
 
-	"unitsignonly":{
+	"unitsignonly{}":{
 		"prefix":"unitsignonly",
 		"body":[
-			"\\unitsignonly{${1:\unitmacro}}"
+			"\\unitsignonly{${1:\\unitmacro}}"
 		]
 	},
 
 
-	"ilu":{
+	"ilu{}":{
 		"prefix":"ilu",
 		"body":[
 			"\\ilu{${1:unit}}"
@@ -105,15 +81,7 @@
 	},
 
 
-	"ilu":{
-		"prefix":"ilu",
-		"body":[
-			"\\ilu[${2:value}]{${1:unit}}"
-		]
-	},
-
-
-	"arc":{
+	"arc{}":{
 		"prefix":"arc",
 		"body":[
 			"\\arc{${1:degree;min;sec}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"SI":{
+	"SI{}{}":{
 		"prefix":"SI",
 		"body":[
 			"\\SI{${1:value}}{${2:unit}}"
@@ -137,39 +105,39 @@
 	},
 
 
-	"newunit":{
+	"newunit{}{}":{
 		"prefix":"newunit",
 		"body":[
-			"\\newunit{${1:\unitmacro%cmd}}{${2:unitsign}}"
+			"\\newunit{${1:\\unitmacro%cmd}}{${2:unitsign}}"
 		]
 	},
 
 
-	"renewunit":{
+	"renewunit{}{}":{
 		"prefix":"renewunit",
 		"body":[
-			"\\renewunit{${1:\unitmacro%cmd}}{${2:unitsign}}"
+			"\\renewunit{${1:\\unitmacro%cmd}}{${2:unitsign}}"
 		]
 	},
 
 
-	"newnosepunit":{
+	"newnosepunit{}{}":{
 		"prefix":"newnosepunit",
 		"body":[
-			"\\newnosepunit{${1:\unitmacro%cmd}}{${2:unitsign}}"
+			"\\newnosepunit{${1:\\unitmacro%cmd}}{${2:unitsign}}"
 		]
 	},
 
 
-	"renewnosepunit":{
+	"renewnosepunit{}{}":{
 		"prefix":"renewnosepunit",
 		"body":[
-			"\\renewnosepunit{${1:\unitmacro%cmd}}{${2:unitsign}}"
+			"\\renewnosepunit{${1:\\unitmacro%cmd}}{${2:unitsign}}"
 		]
 	},
 
 
-	"per":{
+	"per{}{}":{
 		"prefix":"per",
 		"body":[
 			"\\per{${1:numerator}}{${2:denominator}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"unitsuperscript":{
+	"unitsuperscript{}":{
 		"prefix":"unitsuperscript",
 		"body":[
 			"\\unitsuperscript{${1:sup}}"
@@ -201,7 +169,7 @@
 	},
 
 
-	"setTextOmega":{
+	"setTextOmega{}{}":{
 		"prefix":"setTextOmega",
 		"body":[
 			"\\setTextOmega{${1:serif-def}}{${2:sans-serif-def}}"
@@ -209,7 +177,7 @@
 	},
 
 
-	"setMathOmega":{
+	"setMathOmega{}":{
 		"prefix":"setMathOmega",
 		"body":[
 			"\\setMathOmega{${1:def}}"
@@ -217,7 +185,7 @@
 	},
 
 
-	"setTextmu":{
+	"setTextmu{}{}":{
 		"prefix":"setTextmu",
 		"body":[
 			"\\setTextmu{${1:serif-def}}{${2:sans-serif-def}}"
@@ -225,7 +193,7 @@
 	},
 
 
-	"setMathmu":{
+	"setMathmu{}":{
 		"prefix":"setMathmu",
 		"body":[
 			"\\setMathmu{${1:def}}"
@@ -233,7 +201,7 @@
 	},
 
 
-	"setTextCelsius":{
+	"setTextCelsius{}{}":{
 		"prefix":"setTextCelsius",
 		"body":[
 			"\\setTextCelsius{${1:serif-def}}{${2:sans-serif-def}}"
@@ -241,7 +209,7 @@
 	},
 
 
-	"setMathCelsius":{
+	"setMathCelsius{}":{
 		"prefix":"setMathCelsius",
 		"body":[
 			"\\setMathCelsius{${1:def}}"
@@ -249,7 +217,7 @@
 	},
 
 
-	"setTextDegree":{
+	"setTextDegree{}{}":{
 		"prefix":"setTextDegree",
 		"body":[
 			"\\setTextDegree{${1:serif-def}}{${2:sans-serif-def}}"
@@ -257,7 +225,7 @@
 	},
 
 
-	"setMathDegree":{
+	"setMathDegree{}":{
 		"prefix":"setMathDegree",
 		"body":[
 			"\\setMathDegree{${1:def}}"
@@ -433,26 +401,10 @@
 	},
 
 
-	"meter":{
-		"prefix":"meter",
-		"body":[
-			"\\meter[${1:value}]"
-		]
-	},
-
-
 	"gram":{
 		"prefix":"gram",
 		"body":[
 			"\\gram"
-		]
-	},
-
-
-	"gram":{
-		"prefix":"gram",
-		"body":[
-			"\\gram[${1:value}]"
 		]
 	},
 
@@ -465,26 +417,10 @@
 	},
 
 
-	"kilogram":{
-		"prefix":"kilogram",
-		"body":[
-			"\\kilogram[${1:value}]"
-		]
-	},
-
-
 	"mole":{
 		"prefix":"mole",
 		"body":[
 			"\\mole"
-		]
-	},
-
-
-	"mole":{
-		"prefix":"mole",
-		"body":[
-			"\\mole[${1:value}]"
 		]
 	},
 
@@ -497,26 +433,10 @@
 	},
 
 
-	"second":{
-		"prefix":"second",
-		"body":[
-			"\\second[${1:value}]"
-		]
-	},
-
-
 	"ampere":{
 		"prefix":"ampere",
 		"body":[
 			"\\ampere"
-		]
-	},
-
-
-	"ampere":{
-		"prefix":"ampere",
-		"body":[
-			"\\ampere[${1:value}]"
 		]
 	},
 
@@ -529,26 +449,10 @@
 	},
 
 
-	"kelvin":{
-		"prefix":"kelvin",
-		"body":[
-			"\\kelvin[${1:value}]"
-		]
-	},
-
-
 	"candela":{
 		"prefix":"candela",
 		"body":[
 			"\\candela"
-		]
-	},
-
-
-	"candela":{
-		"prefix":"candela",
-		"body":[
-			"\\candela[${1:value}]"
 		]
 	},
 
@@ -561,26 +465,10 @@
 	},
 
 
-	"picometer":{
-		"prefix":"picometer",
-		"body":[
-			"\\picometer[${1:value}]"
-		]
-	},
-
-
 	"nanometer":{
 		"prefix":"nanometer",
 		"body":[
 			"\\nanometer"
-		]
-	},
-
-
-	"nanometer":{
-		"prefix":"nanometer",
-		"body":[
-			"\\nanometer[${1:value}]"
 		]
 	},
 
@@ -593,26 +481,10 @@
 	},
 
 
-	"micrometer":{
-		"prefix":"micrometer",
-		"body":[
-			"\\micrometer[${1:value}]"
-		]
-	},
-
-
 	"millimeter":{
 		"prefix":"millimeter",
 		"body":[
 			"\\millimeter"
-		]
-	},
-
-
-	"millimeter":{
-		"prefix":"millimeter",
-		"body":[
-			"\\millimeter[${1:value}]"
 		]
 	},
 
@@ -625,26 +497,10 @@
 	},
 
 
-	"centimeter":{
-		"prefix":"centimeter",
-		"body":[
-			"\\centimeter[${1:value}]"
-		]
-	},
-
-
 	"decimeter":{
 		"prefix":"decimeter",
 		"body":[
 			"\\decimeter"
-		]
-	},
-
-
-	"decimeter":{
-		"prefix":"decimeter",
-		"body":[
-			"\\decimeter[${1:value}]"
 		]
 	},
 
@@ -657,26 +513,10 @@
 	},
 
 
-	"kilometer":{
-		"prefix":"kilometer",
-		"body":[
-			"\\kilometer[${1:value}]"
-		]
-	},
-
-
 	"femtogram":{
 		"prefix":"femtogram",
 		"body":[
 			"\\femtogram"
-		]
-	},
-
-
-	"femtogram":{
-		"prefix":"femtogram",
-		"body":[
-			"\\femtogram[${1:value}]"
 		]
 	},
 
@@ -689,26 +529,10 @@
 	},
 
 
-	"picogram":{
-		"prefix":"picogram",
-		"body":[
-			"\\picogram[${1:value}]"
-		]
-	},
-
-
 	"nanogram":{
 		"prefix":"nanogram",
 		"body":[
 			"\\nanogram"
-		]
-	},
-
-
-	"nanogram":{
-		"prefix":"nanogram",
-		"body":[
-			"\\nanogram[${1:value}]"
 		]
 	},
 
@@ -721,26 +545,10 @@
 	},
 
 
-	"microgram":{
-		"prefix":"microgram",
-		"body":[
-			"\\microgram[${1:value}]"
-		]
-	},
-
-
 	"milligram":{
 		"prefix":"milligram",
 		"body":[
 			"\\milligram"
-		]
-	},
-
-
-	"milligram":{
-		"prefix":"milligram",
-		"body":[
-			"\\milligram[${1:value}]"
 		]
 	},
 
@@ -753,26 +561,10 @@
 	},
 
 
-	"femtomole":{
-		"prefix":"femtomole",
-		"body":[
-			"\\femtomole[${1:value}]"
-		]
-	},
-
-
 	"picomole":{
 		"prefix":"picomole",
 		"body":[
 			"\\picomole"
-		]
-	},
-
-
-	"picomole":{
-		"prefix":"picomole",
-		"body":[
-			"\\picomole[${1:value}]"
 		]
 	},
 
@@ -785,26 +577,10 @@
 	},
 
 
-	"nanomole":{
-		"prefix":"nanomole",
-		"body":[
-			"\\nanomole[${1:value}]"
-		]
-	},
-
-
 	"micromole":{
 		"prefix":"micromole",
 		"body":[
 			"\\micromole"
-		]
-	},
-
-
-	"micromole":{
-		"prefix":"micromole",
-		"body":[
-			"\\micromole[${1:value}]"
 		]
 	},
 
@@ -817,26 +593,10 @@
 	},
 
 
-	"millimole":{
-		"prefix":"millimole",
-		"body":[
-			"\\millimole[${1:value}]"
-		]
-	},
-
-
 	"attosecond":{
 		"prefix":"attosecond",
 		"body":[
 			"\\attosecond"
-		]
-	},
-
-
-	"attosecond":{
-		"prefix":"attosecond",
-		"body":[
-			"\\attosecond[${1:value}]"
 		]
 	},
 
@@ -849,26 +609,10 @@
 	},
 
 
-	"femtosecond":{
-		"prefix":"femtosecond",
-		"body":[
-			"\\femtosecond[${1:value}]"
-		]
-	},
-
-
 	"picosecond":{
 		"prefix":"picosecond",
 		"body":[
 			"\\picosecond"
-		]
-	},
-
-
-	"picosecond":{
-		"prefix":"picosecond",
-		"body":[
-			"\\picosecond[${1:value}]"
 		]
 	},
 
@@ -881,26 +625,10 @@
 	},
 
 
-	"nanosecond":{
-		"prefix":"nanosecond",
-		"body":[
-			"\\nanosecond[${1:value}]"
-		]
-	},
-
-
 	"microsecond":{
 		"prefix":"microsecond",
 		"body":[
 			"\\microsecond"
-		]
-	},
-
-
-	"microsecond":{
-		"prefix":"microsecond",
-		"body":[
-			"\\microsecond[${1:value}]"
 		]
 	},
 
@@ -913,26 +641,10 @@
 	},
 
 
-	"millisecond":{
-		"prefix":"millisecond",
-		"body":[
-			"\\millisecond[${1:value}]"
-		]
-	},
-
-
 	"picoampere":{
 		"prefix":"picoampere",
 		"body":[
 			"\\picoampere"
-		]
-	},
-
-
-	"picoampere":{
-		"prefix":"picoampere",
-		"body":[
-			"\\picoampere[${1:value}]"
 		]
 	},
 
@@ -945,26 +657,10 @@
 	},
 
 
-	"nanoampere":{
-		"prefix":"nanoampere",
-		"body":[
-			"\\nanoampere[${1:value}]"
-		]
-	},
-
-
 	"microampere":{
 		"prefix":"microampere",
 		"body":[
 			"\\microampere"
-		]
-	},
-
-
-	"microampere":{
-		"prefix":"microampere",
-		"body":[
-			"\\microampere[${1:value}]"
 		]
 	},
 
@@ -977,26 +673,10 @@
 	},
 
 
-	"milliampere":{
-		"prefix":"milliampere",
-		"body":[
-			"\\milliampere[${1:value}]"
-		]
-	},
-
-
 	"kiloampere":{
 		"prefix":"kiloampere",
 		"body":[
 			"\\kiloampere"
-		]
-	},
-
-
-	"kiloampere":{
-		"prefix":"kiloampere",
-		"body":[
-			"\\kiloampere[${1:value}]"
 		]
 	},
 
@@ -1009,26 +689,10 @@
 	},
 
 
-	"percent":{
-		"prefix":"percent",
-		"body":[
-			"\\percent[${1:value}]"
-		]
-	},
-
-
 	"liter":{
 		"prefix":"liter",
 		"body":[
 			"\\liter"
-		]
-	},
-
-
-	"liter":{
-		"prefix":"liter",
-		"body":[
-			"\\liter[${1:value}]"
 		]
 	},
 
@@ -1041,26 +705,10 @@
 	},
 
 
-	"femtoliter":{
-		"prefix":"femtoliter",
-		"body":[
-			"\\femtoliter[${1:value}]"
-		]
-	},
-
-
 	"picoliter":{
 		"prefix":"picoliter",
 		"body":[
 			"\\picoliter"
-		]
-	},
-
-
-	"picoliter":{
-		"prefix":"picoliter",
-		"body":[
-			"\\picoliter[${1:value}]"
 		]
 	},
 
@@ -1073,26 +721,10 @@
 	},
 
 
-	"nanoliter":{
-		"prefix":"nanoliter",
-		"body":[
-			"\\nanoliter[${1:value}]"
-		]
-	},
-
-
 	"microliter":{
 		"prefix":"microliter",
 		"body":[
 			"\\microliter"
-		]
-	},
-
-
-	"microliter":{
-		"prefix":"microliter",
-		"body":[
-			"\\microliter[${1:value}]"
 		]
 	},
 
@@ -1105,26 +737,10 @@
 	},
 
 
-	"milliliter":{
-		"prefix":"milliliter",
-		"body":[
-			"\\milliliter[${1:value}]"
-		]
-	},
-
-
 	"centiliter":{
 		"prefix":"centiliter",
 		"body":[
 			"\\centiliter"
-		]
-	},
-
-
-	"centiliter":{
-		"prefix":"centiliter",
-		"body":[
-			"\\centiliter[${1:value}]"
 		]
 	},
 
@@ -1137,26 +753,10 @@
 	},
 
 
-	"deciliter":{
-		"prefix":"deciliter",
-		"body":[
-			"\\deciliter[${1:value}]"
-		]
-	},
-
-
 	"hectoliter":{
 		"prefix":"hectoliter",
 		"body":[
 			"\\hectoliter"
-		]
-	},
-
-
-	"hectoliter":{
-		"prefix":"hectoliter",
-		"body":[
-			"\\hectoliter[${1:value}]"
 		]
 	},
 
@@ -1169,26 +769,10 @@
 	},
 
 
-	"cubicmeter":{
-		"prefix":"cubicmeter",
-		"body":[
-			"\\cubicmeter[${1:value}]"
-		]
-	},
-
-
 	"cubicmicrometer":{
 		"prefix":"cubicmicrometer",
 		"body":[
 			"\\cubicmicrometer"
-		]
-	},
-
-
-	"cubicmicrometer":{
-		"prefix":"cubicmicrometer",
-		"body":[
-			"\\cubicmicrometer[${1:value}]"
 		]
 	},
 
@@ -1201,26 +785,10 @@
 	},
 
 
-	"cubicmillimeter":{
-		"prefix":"cubicmillimeter",
-		"body":[
-			"\\cubicmillimeter[${1:value}]"
-		]
-	},
-
-
 	"squaremeter":{
 		"prefix":"squaremeter",
 		"body":[
 			"\\squaremeter"
-		]
-	},
-
-
-	"squaremeter":{
-		"prefix":"squaremeter",
-		"body":[
-			"\\squaremeter[${1:value}]"
 		]
 	},
 
@@ -1233,26 +801,10 @@
 	},
 
 
-	"ar":{
-		"prefix":"ar",
-		"body":[
-			"\\ar[${1:value}]"
-		]
-	},
-
-
 	"hektar":{
 		"prefix":"hektar",
 		"body":[
 			"\\hektar"
-		]
-	},
-
-
-	"hektar":{
-		"prefix":"hektar",
-		"body":[
-			"\\hektar[${1:value}]"
 		]
 	},
 
@@ -1265,26 +817,10 @@
 	},
 
 
-	"squarecentimeter":{
-		"prefix":"squarecentimeter",
-		"body":[
-			"\\squarecentimeter[${1:value}]"
-		]
-	},
-
-
 	"squaremillimeter":{
 		"prefix":"squaremillimeter",
 		"body":[
 			"\\squaremillimeter"
-		]
-	},
-
-
-	"squaremillimeter":{
-		"prefix":"squaremillimeter",
-		"body":[
-			"\\squaremillimeter[${1:value}]"
 		]
 	},
 
@@ -1297,26 +833,10 @@
 	},
 
 
-	"squarekilometer":{
-		"prefix":"squarekilometer",
-		"body":[
-			"\\squarekilometer[${1:value}]"
-		]
-	},
-
-
 	"ton":{
 		"prefix":"ton",
 		"body":[
 			"\\ton"
-		]
-	},
-
-
-	"ton":{
-		"prefix":"ton",
-		"body":[
-			"\\ton[${1:value}]"
 		]
 	},
 
@@ -1329,26 +849,10 @@
 	},
 
 
-	"volt":{
-		"prefix":"volt",
-		"body":[
-			"\\volt[${1:value}]"
-		]
-	},
-
-
 	"millivolt":{
 		"prefix":"millivolt",
 		"body":[
 			"\\millivolt"
-		]
-	},
-
-
-	"millivolt":{
-		"prefix":"millivolt",
-		"body":[
-			"\\millivolt[${1:value}]"
 		]
 	},
 
@@ -1361,26 +865,10 @@
 	},
 
 
-	"kilovolt":{
-		"prefix":"kilovolt",
-		"body":[
-			"\\kilovolt[${1:value}]"
-		]
-	},
-
-
 	"watt":{
 		"prefix":"watt",
 		"body":[
 			"\\watt"
-		]
-	},
-
-
-	"watt":{
-		"prefix":"watt",
-		"body":[
-			"\\watt[${1:value}]"
 		]
 	},
 
@@ -1393,26 +881,10 @@
 	},
 
 
-	"milliwatt":{
-		"prefix":"milliwatt",
-		"body":[
-			"\\milliwatt[${1:value}]"
-		]
-	},
-
-
 	"kilowatt":{
 		"prefix":"kilowatt",
 		"body":[
 			"\\kilowatt"
-		]
-	},
-
-
-	"kilowatt":{
-		"prefix":"kilowatt",
-		"body":[
-			"\\kilowatt[${1:value}]"
 		]
 	},
 
@@ -1425,26 +897,10 @@
 	},
 
 
-	"megawatt":{
-		"prefix":"megawatt",
-		"body":[
-			"\\megawatt[${1:value}]"
-		]
-	},
-
-
 	"coulomb":{
 		"prefix":"coulomb",
 		"body":[
 			"\\coulomb"
-		]
-	},
-
-
-	"coulomb":{
-		"prefix":"coulomb",
-		"body":[
-			"\\coulomb[${1:value}]"
 		]
 	},
 
@@ -1457,26 +913,10 @@
 	},
 
 
-	"ohm":{
-		"prefix":"ohm",
-		"body":[
-			"\\ohm[${1:value}]"
-		]
-	},
-
-
 	"kiloohm":{
 		"prefix":"kiloohm",
 		"body":[
 			"\\kiloohm"
-		]
-	},
-
-
-	"kiloohm":{
-		"prefix":"kiloohm",
-		"body":[
-			"\\kiloohm[${1:value}]"
 		]
 	},
 
@@ -1489,26 +929,10 @@
 	},
 
 
-	"megaohm":{
-		"prefix":"megaohm",
-		"body":[
-			"\\megaohm[${1:value}]"
-		]
-	},
-
-
 	"gigaohm":{
 		"prefix":"gigaohm",
 		"body":[
 			"\\gigaohm"
-		]
-	},
-
-
-	"gigaohm":{
-		"prefix":"gigaohm",
-		"body":[
-			"\\gigaohm[${1:value}]"
 		]
 	},
 
@@ -1521,26 +945,10 @@
 	},
 
 
-	"siemens":{
-		"prefix":"siemens",
-		"body":[
-			"\\siemens[${1:value}]"
-		]
-	},
-
-
 	"millisiemens":{
 		"prefix":"millisiemens",
 		"body":[
 			"\\millisiemens"
-		]
-	},
-
-
-	"millisiemens":{
-		"prefix":"millisiemens",
-		"body":[
-			"\\millisiemens[${1:value}]"
 		]
 	},
 
@@ -1553,26 +961,10 @@
 	},
 
 
-	"farad":{
-		"prefix":"farad",
-		"body":[
-			"\\farad[${1:value}]"
-		]
-	},
-
-
 	"femtofarad":{
 		"prefix":"femtofarad",
 		"body":[
 			"\\femtofarad"
-		]
-	},
-
-
-	"femtofarad":{
-		"prefix":"femtofarad",
-		"body":[
-			"\\femtofarad[${1:value}]"
 		]
 	},
 
@@ -1585,26 +977,10 @@
 	},
 
 
-	"picofarad":{
-		"prefix":"picofarad",
-		"body":[
-			"\\picofarad[${1:value}]"
-		]
-	},
-
-
 	"nanofarad":{
 		"prefix":"nanofarad",
 		"body":[
 			"\\nanofarad"
-		]
-	},
-
-
-	"nanofarad":{
-		"prefix":"nanofarad",
-		"body":[
-			"\\nanofarad[${1:value}]"
 		]
 	},
 
@@ -1617,26 +993,10 @@
 	},
 
 
-	"microfarad":{
-		"prefix":"microfarad",
-		"body":[
-			"\\microfarad[${1:value}]"
-		]
-	},
-
-
 	"millifarad":{
 		"prefix":"millifarad",
 		"body":[
 			"\\millifarad"
-		]
-	},
-
-
-	"millifarad":{
-		"prefix":"millifarad",
-		"body":[
-			"\\millifarad[${1:value}]"
 		]
 	},
 
@@ -1649,26 +1009,10 @@
 	},
 
 
-	"joule":{
-		"prefix":"joule",
-		"body":[
-			"\\joule[${1:value}]"
-		]
-	},
-
-
 	"millijoule":{
 		"prefix":"millijoule",
 		"body":[
 			"\\millijoule"
-		]
-	},
-
-
-	"millijoule":{
-		"prefix":"millijoule",
-		"body":[
-			"\\millijoule[${1:value}]"
 		]
 	},
 
@@ -1681,26 +1025,10 @@
 	},
 
 
-	"kilojoule":{
-		"prefix":"kilojoule",
-		"body":[
-			"\\kilojoule[${1:value}]"
-		]
-	},
-
-
 	"megajoule":{
 		"prefix":"megajoule",
 		"body":[
 			"\\megajoule"
-		]
-	},
-
-
-	"megajoule":{
-		"prefix":"megajoule",
-		"body":[
-			"\\megajoule[${1:value}]"
 		]
 	},
 
@@ -1713,26 +1041,10 @@
 	},
 
 
-	"calory":{
-		"prefix":"calory",
-		"body":[
-			"\\calory[${1:value}]"
-		]
-	},
-
-
 	"kilocalory":{
 		"prefix":"kilocalory",
 		"body":[
 			"\\kilocalory"
-		]
-	},
-
-
-	"kilocalory":{
-		"prefix":"kilocalory",
-		"body":[
-			"\\kilocalory[${1:value}]"
 		]
 	},
 
@@ -1745,26 +1057,10 @@
 	},
 
 
-	"electronvolt":{
-		"prefix":"electronvolt",
-		"body":[
-			"\\electronvolt[${1:value}]"
-		]
-	},
-
-
 	"millielectronvolt":{
 		"prefix":"millielectronvolt",
 		"body":[
 			"\\millielectronvolt"
-		]
-	},
-
-
-	"millielectronvolt":{
-		"prefix":"millielectronvolt",
-		"body":[
-			"\\millielectronvolt[${1:value}]"
 		]
 	},
 
@@ -1777,26 +1073,10 @@
 	},
 
 
-	"kiloelectronvolt":{
-		"prefix":"kiloelectronvolt",
-		"body":[
-			"\\kiloelectronvolt[${1:value}]"
-		]
-	},
-
-
 	"megaelectronvolt":{
 		"prefix":"megaelectronvolt",
 		"body":[
 			"\\megaelectronvolt"
-		]
-	},
-
-
-	"megaelectronvolt":{
-		"prefix":"megaelectronvolt",
-		"body":[
-			"\\megaelectronvolt[${1:value}]"
 		]
 	},
 
@@ -1809,26 +1089,10 @@
 	},
 
 
-	"gigaelectronvolt":{
-		"prefix":"gigaelectronvolt",
-		"body":[
-			"\\gigaelectronvolt[${1:value}]"
-		]
-	},
-
-
 	"teraelectronvolt":{
 		"prefix":"teraelectronvolt",
 		"body":[
 			"\\teraelectronvolt"
-		]
-	},
-
-
-	"teraelectronvolt":{
-		"prefix":"teraelectronvolt",
-		"body":[
-			"\\teraelectronvolt[${1:value}]"
 		]
 	},
 
@@ -1841,26 +1105,10 @@
 	},
 
 
-	"minute":{
-		"prefix":"minute",
-		"body":[
-			"\\minute[${1:value}]"
-		]
-	},
-
-
 	"hour":{
 		"prefix":"hour",
 		"body":[
 			"\\hour"
-		]
-	},
-
-
-	"hour":{
-		"prefix":"hour",
-		"body":[
-			"\\hour[${1:value}]"
 		]
 	},
 
@@ -1873,26 +1121,10 @@
 	},
 
 
-	"days":{
-		"prefix":"days",
-		"body":[
-			"\\days[${1:value}]"
-		]
-	},
-
-
 	"celsius":{
 		"prefix":"celsius",
 		"body":[
 			"\\celsius"
-		]
-	},
-
-
-	"celsius":{
-		"prefix":"celsius",
-		"body":[
-			"\\celsius[${1:value}]"
 		]
 	},
 
@@ -1905,26 +1137,10 @@
 	},
 
 
-	"radian":{
-		"prefix":"radian",
-		"body":[
-			"\\radian[${1:value}]"
-		]
-	},
-
-
 	"steradian":{
 		"prefix":"steradian",
 		"body":[
 			"\\steradian"
-		]
-	},
-
-
-	"steradian":{
-		"prefix":"steradian",
-		"body":[
-			"\\steradian[${1:value}]"
 		]
 	},
 
@@ -1937,26 +1153,10 @@
 	},
 
 
-	"degree":{
-		"prefix":"degree",
-		"body":[
-			"\\degree[${1:value}]"
-		]
-	},
-
-
 	"arcmin":{
 		"prefix":"arcmin",
 		"body":[
 			"\\arcmin"
-		]
-	},
-
-
-	"arcmin":{
-		"prefix":"arcmin",
-		"body":[
-			"\\arcmin[${1:value}]"
 		]
 	},
 
@@ -1969,26 +1169,10 @@
 	},
 
 
-	"arcsec":{
-		"prefix":"arcsec",
-		"body":[
-			"\\arcsec[${1:value}]"
-		]
-	},
-
-
 	"hertz":{
 		"prefix":"hertz",
 		"body":[
 			"\\hertz"
-		]
-	},
-
-
-	"hertz":{
-		"prefix":"hertz",
-		"body":[
-			"\\hertz[${1:value}]"
 		]
 	},
 
@@ -2001,26 +1185,10 @@
 	},
 
 
-	"kilohertz":{
-		"prefix":"kilohertz",
-		"body":[
-			"\\kilohertz[${1:value}]"
-		]
-	},
-
-
 	"megahertz":{
 		"prefix":"megahertz",
 		"body":[
 			"\\megahertz"
-		]
-	},
-
-
-	"megahertz":{
-		"prefix":"megahertz",
-		"body":[
-			"\\megahertz[${1:value}]"
 		]
 	},
 
@@ -2033,26 +1201,10 @@
 	},
 
 
-	"gigahertz":{
-		"prefix":"gigahertz",
-		"body":[
-			"\\gigahertz[${1:value}]"
-		]
-	},
-
-
 	"newton":{
 		"prefix":"newton",
 		"body":[
 			"\\newton"
-		]
-	},
-
-
-	"newton":{
-		"prefix":"newton",
-		"body":[
-			"\\newton[${1:value}]"
 		]
 	},
 
@@ -2065,26 +1217,10 @@
 	},
 
 
-	"millinewton":{
-		"prefix":"millinewton",
-		"body":[
-			"\\millinewton[${1:value}]"
-		]
-	},
-
-
 	"kilonewton":{
 		"prefix":"kilonewton",
 		"body":[
 			"\\kilonewton"
-		]
-	},
-
-
-	"kilonewton":{
-		"prefix":"kilonewton",
-		"body":[
-			"\\kilonewton[${1:value}]"
 		]
 	},
 
@@ -2097,26 +1233,10 @@
 	},
 
 
-	"pascal":{
-		"prefix":"pascal",
-		"body":[
-			"\\pascal[${1:value}]"
-		]
-	},
-
-
 	"hectopascal":{
 		"prefix":"hectopascal",
 		"body":[
 			"\\hectopascal"
-		]
-	},
-
-
-	"hectopascal":{
-		"prefix":"hectopascal",
-		"body":[
-			"\\hectopascal[${1:value}]"
 		]
 	},
 
@@ -2129,26 +1249,10 @@
 	},
 
 
-	"uBar":{
-		"prefix":"uBar",
-		"body":[
-			"\\uBar[${1:value}]"
-		]
-	},
-
-
 	"millibar":{
 		"prefix":"millibar",
 		"body":[
 			"\\millibar"
-		]
-	},
-
-
-	"millibar":{
-		"prefix":"millibar",
-		"body":[
-			"\\millibar[${1:value}]"
 		]
 	},
 
@@ -2161,26 +1265,10 @@
 	},
 
 
-	"weber":{
-		"prefix":"weber",
-		"body":[
-			"\\weber[${1:value}]"
-		]
-	},
-
-
 	"tesla":{
 		"prefix":"tesla",
 		"body":[
 			"\\tesla"
-		]
-	},
-
-
-	"tesla":{
-		"prefix":"tesla",
-		"body":[
-			"\\tesla[${1:value}]"
 		]
 	},
 
@@ -2193,26 +1281,10 @@
 	},
 
 
-	"henry":{
-		"prefix":"henry",
-		"body":[
-			"\\henry[${1:value}]"
-		]
-	},
-
-
 	"lumen":{
 		"prefix":"lumen",
 		"body":[
 			"\\lumen"
-		]
-	},
-
-
-	"lumen":{
-		"prefix":"lumen",
-		"body":[
-			"\\lumen[${1:value}]"
 		]
 	},
 
@@ -2225,26 +1297,10 @@
 	},
 
 
-	"lux":{
-		"prefix":"lux",
-		"body":[
-			"\\lux[${1:value}]"
-		]
-	},
-
-
 	"becquerel":{
 		"prefix":"becquerel",
 		"body":[
 			"\\becquerel"
-		]
-	},
-
-
-	"becquerel":{
-		"prefix":"becquerel",
-		"body":[
-			"\\becquerel[${1:value}]"
 		]
 	},
 
@@ -2257,26 +1313,10 @@
 	},
 
 
-	"megabecquerel":{
-		"prefix":"megabecquerel",
-		"body":[
-			"\\megabecquerel[${1:value}]"
-		]
-	},
-
-
 	"curie":{
 		"prefix":"curie",
 		"body":[
 			"\\curie"
-		]
-	},
-
-
-	"curie":{
-		"prefix":"curie",
-		"body":[
-			"\\curie[${1:value}]"
 		]
 	},
 
@@ -2289,26 +1329,10 @@
 	},
 
 
-	"sievert":{
-		"prefix":"sievert",
-		"body":[
-			"\\sievert[${1:value}]"
-		]
-	},
-
-
 	"millisievert":{
 		"prefix":"millisievert",
 		"body":[
 			"\\millisievert"
-		]
-	},
-
-
-	"millisievert":{
-		"prefix":"millisievert",
-		"body":[
-			"\\millisievert[${1:value}]"
 		]
 	},
 
@@ -2417,26 +1441,10 @@
 	},
 
 
-	"pA":{
-		"prefix":"pA",
-		"body":[
-			"\\pA[${1:value}]"
-		]
-	},
-
-
 	"nA":{
 		"prefix":"nA",
 		"body":[
 			"\\nA"
-		]
-	},
-
-
-	"nA":{
-		"prefix":"nA",
-		"body":[
-			"\\nA[${1:value}]"
 		]
 	},
 
@@ -2449,26 +1457,10 @@
 	},
 
 
-	"micA":{
-		"prefix":"micA",
-		"body":[
-			"\\micA[${1:value}]"
-		]
-	},
-
-
 	"mA":{
 		"prefix":"mA",
 		"body":[
 			"\\mA"
-		]
-	},
-
-
-	"mA":{
-		"prefix":"mA",
-		"body":[
-			"\\mA[${1:value}]"
 		]
 	},
 
@@ -2481,26 +1473,10 @@
 	},
 
 
-	"kA":{
-		"prefix":"kA",
-		"body":[
-			"\\kA[${1:value}]"
-		]
-	},
-
-
 	"kJ":{
 		"prefix":"kJ",
 		"body":[
 			"\\kJ"
-		]
-	},
-
-
-	"kJ":{
-		"prefix":"kJ",
-		"body":[
-			"\\kJ[${1:value}]"
 		]
 	},
 
@@ -2513,26 +1489,10 @@
 	},
 
 
-	"eV":{
-		"prefix":"eV",
-		"body":[
-			"\\eV[${1:value}]"
-		]
-	},
-
-
 	"meV":{
 		"prefix":"meV",
 		"body":[
 			"\\meV"
-		]
-	},
-
-
-	"meV":{
-		"prefix":"meV",
-		"body":[
-			"\\meV[${1:value}]"
 		]
 	},
 
@@ -2545,26 +1505,10 @@
 	},
 
 
-	"keV":{
-		"prefix":"keV",
-		"body":[
-			"\\keV[${1:value}]"
-		]
-	},
-
-
 	"MeV":{
 		"prefix":"MeV",
 		"body":[
 			"\\MeV"
-		]
-	},
-
-
-	"MeV":{
-		"prefix":"MeV",
-		"body":[
-			"\\MeV[${1:value}]"
 		]
 	},
 
@@ -2577,26 +1521,10 @@
 	},
 
 
-	"GeV":{
-		"prefix":"GeV",
-		"body":[
-			"\\GeV[${1:value}]"
-		]
-	},
-
-
 	"TeV":{
 		"prefix":"TeV",
 		"body":[
 			"\\TeV"
-		]
-	},
-
-
-	"TeV":{
-		"prefix":"TeV",
-		"body":[
-			"\\TeV[${1:value}]"
 		]
 	},
 
@@ -2609,26 +1537,10 @@
 	},
 
 
-	"kHz":{
-		"prefix":"kHz",
-		"body":[
-			"\\kHz[${1:value}]"
-		]
-	},
-
-
 	"MHz":{
 		"prefix":"MHz",
 		"body":[
 			"\\MHz"
-		]
-	},
-
-
-	"MHz":{
-		"prefix":"MHz",
-		"body":[
-			"\\MHz[${1:value}]"
 		]
 	},
 
@@ -2641,26 +1553,10 @@
 	},
 
 
-	"GHz":{
-		"prefix":"GHz",
-		"body":[
-			"\\GHz[${1:value}]"
-		]
-	},
-
-
 	"picom":{
 		"prefix":"picom",
 		"body":[
 			"\\picom"
-		]
-	},
-
-
-	"picom":{
-		"prefix":"picom",
-		"body":[
-			"\\picom[${1:value}]"
 		]
 	},
 
@@ -2673,26 +1569,10 @@
 	},
 
 
-	"nm":{
-		"prefix":"nm",
-		"body":[
-			"\\nm[${1:value}]"
-		]
-	},
-
-
 	"micm":{
 		"prefix":"micm",
 		"body":[
 			"\\micm"
-		]
-	},
-
-
-	"micm":{
-		"prefix":"micm",
-		"body":[
-			"\\micm[${1:value}]"
 		]
 	},
 
@@ -2705,26 +1585,10 @@
 	},
 
 
-	"mm":{
-		"prefix":"mm",
-		"body":[
-			"\\mm[${1:value}]"
-		]
-	},
-
-
 	"cm":{
 		"prefix":"cm",
 		"body":[
 			"\\cm"
-		]
-	},
-
-
-	"cm":{
-		"prefix":"cm",
-		"body":[
-			"\\cm[${1:value}]"
 		]
 	},
 
@@ -2737,26 +1601,10 @@
 	},
 
 
-	"dm":{
-		"prefix":"dm",
-		"body":[
-			"\\dm[${1:value}]"
-		]
-	},
-
-
 	"km":{
 		"prefix":"km",
 		"body":[
 			"\\km"
-		]
-	},
-
-
-	"km":{
-		"prefix":"km",
-		"body":[
-			"\\km[${1:value}]"
 		]
 	},
 
@@ -2769,26 +1617,10 @@
 	},
 
 
-	"fmol":{
-		"prefix":"fmol",
-		"body":[
-			"\\fmol[${1:value}]"
-		]
-	},
-
-
 	"pmol":{
 		"prefix":"pmol",
 		"body":[
 			"\\pmol"
-		]
-	},
-
-
-	"pmol":{
-		"prefix":"pmol",
-		"body":[
-			"\\pmol[${1:value}]"
 		]
 	},
 
@@ -2801,26 +1633,10 @@
 	},
 
 
-	"nmol":{
-		"prefix":"nmol",
-		"body":[
-			"\\nmol[${1:value}]"
-		]
-	},
-
-
 	"micmol":{
 		"prefix":"micmol",
 		"body":[
 			"\\micmol"
-		]
-	},
-
-
-	"micmol":{
-		"prefix":"micmol",
-		"body":[
-			"\\micmol[${1:value}]"
 		]
 	},
 
@@ -2833,26 +1649,10 @@
 	},
 
 
-	"mmol":{
-		"prefix":"mmol",
-		"body":[
-			"\\mmol[${1:value}]"
-		]
-	},
-
-
 	"sek":{
 		"prefix":"sek",
 		"body":[
 			"\\sek"
-		]
-	},
-
-
-	"sek":{
-		"prefix":"sek",
-		"body":[
-			"\\sek[${1:value}]"
 		]
 	},
 
@@ -2865,26 +1665,10 @@
 	},
 
 
-	"fs":{
-		"prefix":"fs",
-		"body":[
-			"\\fs[${1:value}]"
-		]
-	},
-
-
 	"ps":{
 		"prefix":"ps",
 		"body":[
 			"\\ps"
-		]
-	},
-
-
-	"ps":{
-		"prefix":"ps",
-		"body":[
-			"\\ps[${1:value}]"
 		]
 	},
 
@@ -2897,26 +1681,10 @@
 	},
 
 
-	"ns":{
-		"prefix":"ns",
-		"body":[
-			"\\ns[${1:value}]"
-		]
-	},
-
-
 	"mics":{
 		"prefix":"mics",
 		"body":[
 			"\\mics"
-		]
-	},
-
-
-	"mics":{
-		"prefix":"mics",
-		"body":[
-			"\\mics[${1:value}]"
 		]
 	},
 
@@ -2929,26 +1697,10 @@
 	},
 
 
-	"ms":{
-		"prefix":"ms",
-		"body":[
-			"\\ms[${1:value}]"
-		]
-	},
-
-
 	"kg":{
 		"prefix":"kg",
 		"body":[
 			"\\kg"
-		]
-	},
-
-
-	"kg":{
-		"prefix":"kg",
-		"body":[
-			"\\kg[${1:value}]"
 		]
 	},
 
@@ -2961,26 +1713,10 @@
 	},
 
 
-	"fg":{
-		"prefix":"fg",
-		"body":[
-			"\\fg[${1:value}]"
-		]
-	},
-
-
 	"pg":{
 		"prefix":"pg",
 		"body":[
 			"\\pg"
-		]
-	},
-
-
-	"pg":{
-		"prefix":"pg",
-		"body":[
-			"\\pg[${1:value}]"
 		]
 	},
 
@@ -2993,26 +1729,10 @@
 	},
 
 
-	"nanog":{
-		"prefix":"nanog",
-		"body":[
-			"\\nanog[${1:value}]"
-		]
-	},
-
-
 	"micg":{
 		"prefix":"micg",
 		"body":[
 			"\\micg"
-		]
-	},
-
-
-	"micg":{
-		"prefix":"micg",
-		"body":[
-			"\\micg[${1:value}]"
 		]
 	},
 
@@ -3025,26 +1745,10 @@
 	},
 
 
-	"mg":{
-		"prefix":"mg",
-		"body":[
-			"\\mg[${1:value}]"
-		]
-	},
-
-
 	"kv":{
 		"prefix":"kv",
 		"body":[
 			"\\kv"
-		]
-	},
-
-
-	"kv":{
-		"prefix":"kv",
-		"body":[
-			"\\kv[${1:value}]"
 		]
 	},
 
@@ -3057,26 +1761,10 @@
 	},
 
 
-	"mv":{
-		"prefix":"mv",
-		"body":[
-			"\\mv[${1:value}]"
-		]
-	},
-
-
 	"fl":{
 		"prefix":"fl",
 		"body":[
 			"\\fl"
-		]
-	},
-
-
-	"fl":{
-		"prefix":"fl",
-		"body":[
-			"\\fl[${1:value}]"
 		]
 	},
 
@@ -3089,26 +1777,10 @@
 	},
 
 
-	"pl":{
-		"prefix":"pl",
-		"body":[
-			"\\pl[${1:value}]"
-		]
-	},
-
-
 	"nl":{
 		"prefix":"nl",
 		"body":[
 			"\\nl"
-		]
-	},
-
-
-	"nl":{
-		"prefix":"nl",
-		"body":[
-			"\\nl[${1:value}]"
 		]
 	},
 
@@ -3121,26 +1793,10 @@
 	},
 
 
-	"micl":{
-		"prefix":"micl",
-		"body":[
-			"\\micl[${1:value}]"
-		]
-	},
-
-
 	"ml":{
 		"prefix":"ml",
 		"body":[
 			"\\ml"
-		]
-	},
-
-
-	"ml":{
-		"prefix":"ml",
-		"body":[
-			"\\ml[${1:value}]"
 		]
 	},
 
@@ -3153,26 +1809,10 @@
 	},
 
 
-	"cl":{
-		"prefix":"cl",
-		"body":[
-			"\\cl[${1:value}]"
-		]
-	},
-
-
 	"dl":{
 		"prefix":"dl",
 		"body":[
 			"\\dl"
-		]
-	},
-
-
-	"dl":{
-		"prefix":"dl",
-		"body":[
-			"\\dl[${1:value}]"
 		]
 	},
 
@@ -3273,7 +1913,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -3313,7 +1953,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -3341,6 +1981,1366 @@
 		"prefix":"TH",
 		"body":[
 			"\\TH"
+		]
+	},
+
+
+	"Ohm[]":{
+		"prefix":"Ohm",
+		"body":[
+			"\\Ohm[${1:value}]"
+		]
+	},
+
+
+	"Celsius[]":{
+		"prefix":"Celsius",
+		"body":[
+			"\\Celsius[${1:value}]"
+		]
+	},
+
+
+	"Degree[]":{
+		"prefix":"Degree",
+		"body":[
+			"\\Degree[${1:value}]"
+		]
+	},
+
+
+	"ilu[]{}":{
+		"prefix":"ilu",
+		"body":[
+			"\\ilu[${2:value}]{${1:unit}}"
+		]
+	},
+
+
+	"meter[]":{
+		"prefix":"meter",
+		"body":[
+			"\\meter[${1:value}]"
+		]
+	},
+
+
+	"gram[]":{
+		"prefix":"gram",
+		"body":[
+			"\\gram[${1:value}]"
+		]
+	},
+
+
+	"kilogram[]":{
+		"prefix":"kilogram",
+		"body":[
+			"\\kilogram[${1:value}]"
+		]
+	},
+
+
+	"mole[]":{
+		"prefix":"mole",
+		"body":[
+			"\\mole[${1:value}]"
+		]
+	},
+
+
+	"second[]":{
+		"prefix":"second",
+		"body":[
+			"\\second[${1:value}]"
+		]
+	},
+
+
+	"ampere[]":{
+		"prefix":"ampere",
+		"body":[
+			"\\ampere[${1:value}]"
+		]
+	},
+
+
+	"kelvin[]":{
+		"prefix":"kelvin",
+		"body":[
+			"\\kelvin[${1:value}]"
+		]
+	},
+
+
+	"candela[]":{
+		"prefix":"candela",
+		"body":[
+			"\\candela[${1:value}]"
+		]
+	},
+
+
+	"picometer[]":{
+		"prefix":"picometer",
+		"body":[
+			"\\picometer[${1:value}]"
+		]
+	},
+
+
+	"nanometer[]":{
+		"prefix":"nanometer",
+		"body":[
+			"\\nanometer[${1:value}]"
+		]
+	},
+
+
+	"micrometer[]":{
+		"prefix":"micrometer",
+		"body":[
+			"\\micrometer[${1:value}]"
+		]
+	},
+
+
+	"millimeter[]":{
+		"prefix":"millimeter",
+		"body":[
+			"\\millimeter[${1:value}]"
+		]
+	},
+
+
+	"centimeter[]":{
+		"prefix":"centimeter",
+		"body":[
+			"\\centimeter[${1:value}]"
+		]
+	},
+
+
+	"decimeter[]":{
+		"prefix":"decimeter",
+		"body":[
+			"\\decimeter[${1:value}]"
+		]
+	},
+
+
+	"kilometer[]":{
+		"prefix":"kilometer",
+		"body":[
+			"\\kilometer[${1:value}]"
+		]
+	},
+
+
+	"femtogram[]":{
+		"prefix":"femtogram",
+		"body":[
+			"\\femtogram[${1:value}]"
+		]
+	},
+
+
+	"picogram[]":{
+		"prefix":"picogram",
+		"body":[
+			"\\picogram[${1:value}]"
+		]
+	},
+
+
+	"nanogram[]":{
+		"prefix":"nanogram",
+		"body":[
+			"\\nanogram[${1:value}]"
+		]
+	},
+
+
+	"microgram[]":{
+		"prefix":"microgram",
+		"body":[
+			"\\microgram[${1:value}]"
+		]
+	},
+
+
+	"milligram[]":{
+		"prefix":"milligram",
+		"body":[
+			"\\milligram[${1:value}]"
+		]
+	},
+
+
+	"femtomole[]":{
+		"prefix":"femtomole",
+		"body":[
+			"\\femtomole[${1:value}]"
+		]
+	},
+
+
+	"picomole[]":{
+		"prefix":"picomole",
+		"body":[
+			"\\picomole[${1:value}]"
+		]
+	},
+
+
+	"nanomole[]":{
+		"prefix":"nanomole",
+		"body":[
+			"\\nanomole[${1:value}]"
+		]
+	},
+
+
+	"micromole[]":{
+		"prefix":"micromole",
+		"body":[
+			"\\micromole[${1:value}]"
+		]
+	},
+
+
+	"millimole[]":{
+		"prefix":"millimole",
+		"body":[
+			"\\millimole[${1:value}]"
+		]
+	},
+
+
+	"attosecond[]":{
+		"prefix":"attosecond",
+		"body":[
+			"\\attosecond[${1:value}]"
+		]
+	},
+
+
+	"femtosecond[]":{
+		"prefix":"femtosecond",
+		"body":[
+			"\\femtosecond[${1:value}]"
+		]
+	},
+
+
+	"picosecond[]":{
+		"prefix":"picosecond",
+		"body":[
+			"\\picosecond[${1:value}]"
+		]
+	},
+
+
+	"nanosecond[]":{
+		"prefix":"nanosecond",
+		"body":[
+			"\\nanosecond[${1:value}]"
+		]
+	},
+
+
+	"microsecond[]":{
+		"prefix":"microsecond",
+		"body":[
+			"\\microsecond[${1:value}]"
+		]
+	},
+
+
+	"millisecond[]":{
+		"prefix":"millisecond",
+		"body":[
+			"\\millisecond[${1:value}]"
+		]
+	},
+
+
+	"picoampere[]":{
+		"prefix":"picoampere",
+		"body":[
+			"\\picoampere[${1:value}]"
+		]
+	},
+
+
+	"nanoampere[]":{
+		"prefix":"nanoampere",
+		"body":[
+			"\\nanoampere[${1:value}]"
+		]
+	},
+
+
+	"microampere[]":{
+		"prefix":"microampere",
+		"body":[
+			"\\microampere[${1:value}]"
+		]
+	},
+
+
+	"milliampere[]":{
+		"prefix":"milliampere",
+		"body":[
+			"\\milliampere[${1:value}]"
+		]
+	},
+
+
+	"kiloampere[]":{
+		"prefix":"kiloampere",
+		"body":[
+			"\\kiloampere[${1:value}]"
+		]
+	},
+
+
+	"percent[]":{
+		"prefix":"percent",
+		"body":[
+			"\\percent[${1:value}]"
+		]
+	},
+
+
+	"liter[]":{
+		"prefix":"liter",
+		"body":[
+			"\\liter[${1:value}]"
+		]
+	},
+
+
+	"femtoliter[]":{
+		"prefix":"femtoliter",
+		"body":[
+			"\\femtoliter[${1:value}]"
+		]
+	},
+
+
+	"picoliter[]":{
+		"prefix":"picoliter",
+		"body":[
+			"\\picoliter[${1:value}]"
+		]
+	},
+
+
+	"nanoliter[]":{
+		"prefix":"nanoliter",
+		"body":[
+			"\\nanoliter[${1:value}]"
+		]
+	},
+
+
+	"microliter[]":{
+		"prefix":"microliter",
+		"body":[
+			"\\microliter[${1:value}]"
+		]
+	},
+
+
+	"milliliter[]":{
+		"prefix":"milliliter",
+		"body":[
+			"\\milliliter[${1:value}]"
+		]
+	},
+
+
+	"centiliter[]":{
+		"prefix":"centiliter",
+		"body":[
+			"\\centiliter[${1:value}]"
+		]
+	},
+
+
+	"deciliter[]":{
+		"prefix":"deciliter",
+		"body":[
+			"\\deciliter[${1:value}]"
+		]
+	},
+
+
+	"hectoliter[]":{
+		"prefix":"hectoliter",
+		"body":[
+			"\\hectoliter[${1:value}]"
+		]
+	},
+
+
+	"cubicmeter[]":{
+		"prefix":"cubicmeter",
+		"body":[
+			"\\cubicmeter[${1:value}]"
+		]
+	},
+
+
+	"cubicmicrometer[]":{
+		"prefix":"cubicmicrometer",
+		"body":[
+			"\\cubicmicrometer[${1:value}]"
+		]
+	},
+
+
+	"cubicmillimeter[]":{
+		"prefix":"cubicmillimeter",
+		"body":[
+			"\\cubicmillimeter[${1:value}]"
+		]
+	},
+
+
+	"squaremeter[]":{
+		"prefix":"squaremeter",
+		"body":[
+			"\\squaremeter[${1:value}]"
+		]
+	},
+
+
+	"ar[]":{
+		"prefix":"ar",
+		"body":[
+			"\\ar[${1:value}]"
+		]
+	},
+
+
+	"hektar[]":{
+		"prefix":"hektar",
+		"body":[
+			"\\hektar[${1:value}]"
+		]
+	},
+
+
+	"squarecentimeter[]":{
+		"prefix":"squarecentimeter",
+		"body":[
+			"\\squarecentimeter[${1:value}]"
+		]
+	},
+
+
+	"squaremillimeter[]":{
+		"prefix":"squaremillimeter",
+		"body":[
+			"\\squaremillimeter[${1:value}]"
+		]
+	},
+
+
+	"squarekilometer[]":{
+		"prefix":"squarekilometer",
+		"body":[
+			"\\squarekilometer[${1:value}]"
+		]
+	},
+
+
+	"ton[]":{
+		"prefix":"ton",
+		"body":[
+			"\\ton[${1:value}]"
+		]
+	},
+
+
+	"volt[]":{
+		"prefix":"volt",
+		"body":[
+			"\\volt[${1:value}]"
+		]
+	},
+
+
+	"millivolt[]":{
+		"prefix":"millivolt",
+		"body":[
+			"\\millivolt[${1:value}]"
+		]
+	},
+
+
+	"kilovolt[]":{
+		"prefix":"kilovolt",
+		"body":[
+			"\\kilovolt[${1:value}]"
+		]
+	},
+
+
+	"watt[]":{
+		"prefix":"watt",
+		"body":[
+			"\\watt[${1:value}]"
+		]
+	},
+
+
+	"milliwatt[]":{
+		"prefix":"milliwatt",
+		"body":[
+			"\\milliwatt[${1:value}]"
+		]
+	},
+
+
+	"kilowatt[]":{
+		"prefix":"kilowatt",
+		"body":[
+			"\\kilowatt[${1:value}]"
+		]
+	},
+
+
+	"megawatt[]":{
+		"prefix":"megawatt",
+		"body":[
+			"\\megawatt[${1:value}]"
+		]
+	},
+
+
+	"coulomb[]":{
+		"prefix":"coulomb",
+		"body":[
+			"\\coulomb[${1:value}]"
+		]
+	},
+
+
+	"ohm[]":{
+		"prefix":"ohm",
+		"body":[
+			"\\ohm[${1:value}]"
+		]
+	},
+
+
+	"kiloohm[]":{
+		"prefix":"kiloohm",
+		"body":[
+			"\\kiloohm[${1:value}]"
+		]
+	},
+
+
+	"megaohm[]":{
+		"prefix":"megaohm",
+		"body":[
+			"\\megaohm[${1:value}]"
+		]
+	},
+
+
+	"gigaohm[]":{
+		"prefix":"gigaohm",
+		"body":[
+			"\\gigaohm[${1:value}]"
+		]
+	},
+
+
+	"siemens[]":{
+		"prefix":"siemens",
+		"body":[
+			"\\siemens[${1:value}]"
+		]
+	},
+
+
+	"millisiemens[]":{
+		"prefix":"millisiemens",
+		"body":[
+			"\\millisiemens[${1:value}]"
+		]
+	},
+
+
+	"farad[]":{
+		"prefix":"farad",
+		"body":[
+			"\\farad[${1:value}]"
+		]
+	},
+
+
+	"femtofarad[]":{
+		"prefix":"femtofarad",
+		"body":[
+			"\\femtofarad[${1:value}]"
+		]
+	},
+
+
+	"picofarad[]":{
+		"prefix":"picofarad",
+		"body":[
+			"\\picofarad[${1:value}]"
+		]
+	},
+
+
+	"nanofarad[]":{
+		"prefix":"nanofarad",
+		"body":[
+			"\\nanofarad[${1:value}]"
+		]
+	},
+
+
+	"microfarad[]":{
+		"prefix":"microfarad",
+		"body":[
+			"\\microfarad[${1:value}]"
+		]
+	},
+
+
+	"millifarad[]":{
+		"prefix":"millifarad",
+		"body":[
+			"\\millifarad[${1:value}]"
+		]
+	},
+
+
+	"joule[]":{
+		"prefix":"joule",
+		"body":[
+			"\\joule[${1:value}]"
+		]
+	},
+
+
+	"millijoule[]":{
+		"prefix":"millijoule",
+		"body":[
+			"\\millijoule[${1:value}]"
+		]
+	},
+
+
+	"kilojoule[]":{
+		"prefix":"kilojoule",
+		"body":[
+			"\\kilojoule[${1:value}]"
+		]
+	},
+
+
+	"megajoule[]":{
+		"prefix":"megajoule",
+		"body":[
+			"\\megajoule[${1:value}]"
+		]
+	},
+
+
+	"calory[]":{
+		"prefix":"calory",
+		"body":[
+			"\\calory[${1:value}]"
+		]
+	},
+
+
+	"kilocalory[]":{
+		"prefix":"kilocalory",
+		"body":[
+			"\\kilocalory[${1:value}]"
+		]
+	},
+
+
+	"electronvolt[]":{
+		"prefix":"electronvolt",
+		"body":[
+			"\\electronvolt[${1:value}]"
+		]
+	},
+
+
+	"millielectronvolt[]":{
+		"prefix":"millielectronvolt",
+		"body":[
+			"\\millielectronvolt[${1:value}]"
+		]
+	},
+
+
+	"kiloelectronvolt[]":{
+		"prefix":"kiloelectronvolt",
+		"body":[
+			"\\kiloelectronvolt[${1:value}]"
+		]
+	},
+
+
+	"megaelectronvolt[]":{
+		"prefix":"megaelectronvolt",
+		"body":[
+			"\\megaelectronvolt[${1:value}]"
+		]
+	},
+
+
+	"gigaelectronvolt[]":{
+		"prefix":"gigaelectronvolt",
+		"body":[
+			"\\gigaelectronvolt[${1:value}]"
+		]
+	},
+
+
+	"teraelectronvolt[]":{
+		"prefix":"teraelectronvolt",
+		"body":[
+			"\\teraelectronvolt[${1:value}]"
+		]
+	},
+
+
+	"minute[]":{
+		"prefix":"minute",
+		"body":[
+			"\\minute[${1:value}]"
+		]
+	},
+
+
+	"hour[]":{
+		"prefix":"hour",
+		"body":[
+			"\\hour[${1:value}]"
+		]
+	},
+
+
+	"days[]":{
+		"prefix":"days",
+		"body":[
+			"\\days[${1:value}]"
+		]
+	},
+
+
+	"celsius[]":{
+		"prefix":"celsius",
+		"body":[
+			"\\celsius[${1:value}]"
+		]
+	},
+
+
+	"radian[]":{
+		"prefix":"radian",
+		"body":[
+			"\\radian[${1:value}]"
+		]
+	},
+
+
+	"steradian[]":{
+		"prefix":"steradian",
+		"body":[
+			"\\steradian[${1:value}]"
+		]
+	},
+
+
+	"degree[]":{
+		"prefix":"degree",
+		"body":[
+			"\\degree[${1:value}]"
+		]
+	},
+
+
+	"arcmin[]":{
+		"prefix":"arcmin",
+		"body":[
+			"\\arcmin[${1:value}]"
+		]
+	},
+
+
+	"arcsec[]":{
+		"prefix":"arcsec",
+		"body":[
+			"\\arcsec[${1:value}]"
+		]
+	},
+
+
+	"hertz[]":{
+		"prefix":"hertz",
+		"body":[
+			"\\hertz[${1:value}]"
+		]
+	},
+
+
+	"kilohertz[]":{
+		"prefix":"kilohertz",
+		"body":[
+			"\\kilohertz[${1:value}]"
+		]
+	},
+
+
+	"megahertz[]":{
+		"prefix":"megahertz",
+		"body":[
+			"\\megahertz[${1:value}]"
+		]
+	},
+
+
+	"gigahertz[]":{
+		"prefix":"gigahertz",
+		"body":[
+			"\\gigahertz[${1:value}]"
+		]
+	},
+
+
+	"newton[]":{
+		"prefix":"newton",
+		"body":[
+			"\\newton[${1:value}]"
+		]
+	},
+
+
+	"millinewton[]":{
+		"prefix":"millinewton",
+		"body":[
+			"\\millinewton[${1:value}]"
+		]
+	},
+
+
+	"kilonewton[]":{
+		"prefix":"kilonewton",
+		"body":[
+			"\\kilonewton[${1:value}]"
+		]
+	},
+
+
+	"pascal[]":{
+		"prefix":"pascal",
+		"body":[
+			"\\pascal[${1:value}]"
+		]
+	},
+
+
+	"hectopascal[]":{
+		"prefix":"hectopascal",
+		"body":[
+			"\\hectopascal[${1:value}]"
+		]
+	},
+
+
+	"uBar[]":{
+		"prefix":"uBar",
+		"body":[
+			"\\uBar[${1:value}]"
+		]
+	},
+
+
+	"millibar[]":{
+		"prefix":"millibar",
+		"body":[
+			"\\millibar[${1:value}]"
+		]
+	},
+
+
+	"weber[]":{
+		"prefix":"weber",
+		"body":[
+			"\\weber[${1:value}]"
+		]
+	},
+
+
+	"tesla[]":{
+		"prefix":"tesla",
+		"body":[
+			"\\tesla[${1:value}]"
+		]
+	},
+
+
+	"henry[]":{
+		"prefix":"henry",
+		"body":[
+			"\\henry[${1:value}]"
+		]
+	},
+
+
+	"lumen[]":{
+		"prefix":"lumen",
+		"body":[
+			"\\lumen[${1:value}]"
+		]
+	},
+
+
+	"lux[]":{
+		"prefix":"lux",
+		"body":[
+			"\\lux[${1:value}]"
+		]
+	},
+
+
+	"becquerel[]":{
+		"prefix":"becquerel",
+		"body":[
+			"\\becquerel[${1:value}]"
+		]
+	},
+
+
+	"megabecquerel[]":{
+		"prefix":"megabecquerel",
+		"body":[
+			"\\megabecquerel[${1:value}]"
+		]
+	},
+
+
+	"curie[]":{
+		"prefix":"curie",
+		"body":[
+			"\\curie[${1:value}]"
+		]
+	},
+
+
+	"sievert[]":{
+		"prefix":"sievert",
+		"body":[
+			"\\sievert[${1:value}]"
+		]
+	},
+
+
+	"millisievert[]":{
+		"prefix":"millisievert",
+		"body":[
+			"\\millisievert[${1:value}]"
+		]
+	},
+
+
+	"pA[]":{
+		"prefix":"pA",
+		"body":[
+			"\\pA[${1:value}]"
+		]
+	},
+
+
+	"nA[]":{
+		"prefix":"nA",
+		"body":[
+			"\\nA[${1:value}]"
+		]
+	},
+
+
+	"micA[]":{
+		"prefix":"micA",
+		"body":[
+			"\\micA[${1:value}]"
+		]
+	},
+
+
+	"mA[]":{
+		"prefix":"mA",
+		"body":[
+			"\\mA[${1:value}]"
+		]
+	},
+
+
+	"kA[]":{
+		"prefix":"kA",
+		"body":[
+			"\\kA[${1:value}]"
+		]
+	},
+
+
+	"kJ[]":{
+		"prefix":"kJ",
+		"body":[
+			"\\kJ[${1:value}]"
+		]
+	},
+
+
+	"eV[]":{
+		"prefix":"eV",
+		"body":[
+			"\\eV[${1:value}]"
+		]
+	},
+
+
+	"meV[]":{
+		"prefix":"meV",
+		"body":[
+			"\\meV[${1:value}]"
+		]
+	},
+
+
+	"keV[]":{
+		"prefix":"keV",
+		"body":[
+			"\\keV[${1:value}]"
+		]
+	},
+
+
+	"MeV[]":{
+		"prefix":"MeV",
+		"body":[
+			"\\MeV[${1:value}]"
+		]
+	},
+
+
+	"GeV[]":{
+		"prefix":"GeV",
+		"body":[
+			"\\GeV[${1:value}]"
+		]
+	},
+
+
+	"TeV[]":{
+		"prefix":"TeV",
+		"body":[
+			"\\TeV[${1:value}]"
+		]
+	},
+
+
+	"kHz[]":{
+		"prefix":"kHz",
+		"body":[
+			"\\kHz[${1:value}]"
+		]
+	},
+
+
+	"MHz[]":{
+		"prefix":"MHz",
+		"body":[
+			"\\MHz[${1:value}]"
+		]
+	},
+
+
+	"GHz[]":{
+		"prefix":"GHz",
+		"body":[
+			"\\GHz[${1:value}]"
+		]
+	},
+
+
+	"picom[]":{
+		"prefix":"picom",
+		"body":[
+			"\\picom[${1:value}]"
+		]
+	},
+
+
+	"nm[]":{
+		"prefix":"nm",
+		"body":[
+			"\\nm[${1:value}]"
+		]
+	},
+
+
+	"micm[]":{
+		"prefix":"micm",
+		"body":[
+			"\\micm[${1:value}]"
+		]
+	},
+
+
+	"mm[]":{
+		"prefix":"mm",
+		"body":[
+			"\\mm[${1:value}]"
+		]
+	},
+
+
+	"cm[]":{
+		"prefix":"cm",
+		"body":[
+			"\\cm[${1:value}]"
+		]
+	},
+
+
+	"dm[]":{
+		"prefix":"dm",
+		"body":[
+			"\\dm[${1:value}]"
+		]
+	},
+
+
+	"km[]":{
+		"prefix":"km",
+		"body":[
+			"\\km[${1:value}]"
+		]
+	},
+
+
+	"fmol[]":{
+		"prefix":"fmol",
+		"body":[
+			"\\fmol[${1:value}]"
+		]
+	},
+
+
+	"pmol[]":{
+		"prefix":"pmol",
+		"body":[
+			"\\pmol[${1:value}]"
+		]
+	},
+
+
+	"nmol[]":{
+		"prefix":"nmol",
+		"body":[
+			"\\nmol[${1:value}]"
+		]
+	},
+
+
+	"micmol[]":{
+		"prefix":"micmol",
+		"body":[
+			"\\micmol[${1:value}]"
+		]
+	},
+
+
+	"mmol[]":{
+		"prefix":"mmol",
+		"body":[
+			"\\mmol[${1:value}]"
+		]
+	},
+
+
+	"sek[]":{
+		"prefix":"sek",
+		"body":[
+			"\\sek[${1:value}]"
+		]
+	},
+
+
+	"fs[]":{
+		"prefix":"fs",
+		"body":[
+			"\\fs[${1:value}]"
+		]
+	},
+
+
+	"ps[]":{
+		"prefix":"ps",
+		"body":[
+			"\\ps[${1:value}]"
+		]
+	},
+
+
+	"ns[]":{
+		"prefix":"ns",
+		"body":[
+			"\\ns[${1:value}]"
+		]
+	},
+
+
+	"mics[]":{
+		"prefix":"mics",
+		"body":[
+			"\\mics[${1:value}]"
+		]
+	},
+
+
+	"ms[]":{
+		"prefix":"ms",
+		"body":[
+			"\\ms[${1:value}]"
+		]
+	},
+
+
+	"kg[]":{
+		"prefix":"kg",
+		"body":[
+			"\\kg[${1:value}]"
+		]
+	},
+
+
+	"fg[]":{
+		"prefix":"fg",
+		"body":[
+			"\\fg[${1:value}]"
+		]
+	},
+
+
+	"pg[]":{
+		"prefix":"pg",
+		"body":[
+			"\\pg[${1:value}]"
+		]
+	},
+
+
+	"nanog[]":{
+		"prefix":"nanog",
+		"body":[
+			"\\nanog[${1:value}]"
+		]
+	},
+
+
+	"micg[]":{
+		"prefix":"micg",
+		"body":[
+			"\\micg[${1:value}]"
+		]
+	},
+
+
+	"mg[]":{
+		"prefix":"mg",
+		"body":[
+			"\\mg[${1:value}]"
+		]
+	},
+
+
+	"kv[]":{
+		"prefix":"kv",
+		"body":[
+			"\\kv[${1:value}]"
+		]
+	},
+
+
+	"mv[]":{
+		"prefix":"mv",
+		"body":[
+			"\\mv[${1:value}]"
+		]
+	},
+
+
+	"fl[]":{
+		"prefix":"fl",
+		"body":[
+			"\\fl[${1:value}]"
+		]
+	},
+
+
+	"pl[]":{
+		"prefix":"pl",
+		"body":[
+			"\\pl[${1:value}]"
+		]
+	},
+
+
+	"nl[]":{
+		"prefix":"nl",
+		"body":[
+			"\\nl[${1:value}]"
+		]
+	},
+
+
+	"micl[]":{
+		"prefix":"micl",
+		"body":[
+			"\\micl[${1:value}]"
+		]
+	},
+
+
+	"ml[]":{
+		"prefix":"ml",
+		"body":[
+			"\\ml[${1:value}]"
+		]
+	},
+
+
+	"cl[]":{
+		"prefix":"cl",
+		"body":[
+			"\\cl[${1:value}]"
+		]
+	},
+
+
+	"dl[]":{
+		"prefix":"dl",
+		"body":[
+			"\\dl[${1:value}]"
 		]
 	}
 }

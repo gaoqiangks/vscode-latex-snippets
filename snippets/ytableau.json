@@ -1,7 +1,7 @@
 {
 
 
-	"ytableausetup":{
+	"ytableausetup{}":{
 		"prefix":"ytableausetup",
 		"body":[
 			"\\ytableausetup{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ytableaushort":{
+	"ytableaushort{}":{
 		"prefix":"ytableaushort",
 		"body":[
 			"\\ytableaushort{${1:line1,line2,...%formula}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"ytableaushort":{
-		"prefix":"ytableaushort",
-		"body":[
-			"\\ytableaushort[${2:formatting%formula}]{${1:line1,line2,...%formula}}"
-		]
-	},
-
-
-	"ytableaushort":{
+	"ytableaushort{}":{
 		"prefix":"ytableaushort",
 		"body":[
 			"\\ytableaushort{${1:line1,line2,...%plain}}"
@@ -41,18 +33,26 @@
 	},
 
 
-	"ytableaushort":{
-		"prefix":"ytableaushort",
+	"ydiagram{}":{
+		"prefix":"ydiagram",
 		"body":[
-			"\\ytableaushort[${2:formatting%plain}]{${1:line1,line2,...%plain}}"
+			"\\ydiagram{${1:offset+num1,num2,...}}"
 		]
 	},
 
 
-	"ydiagram":{
-		"prefix":"ydiagram",
+	"ytableaushort[]{}":{
+		"prefix":"ytableaushort",
 		"body":[
-			"\\ydiagram{${1:offset+num1,num2,...}}"
+			"\\ytableaushort[${2:formatting%formula}]{${1:line1,line2,...%formula}}"
+		]
+	},
+
+
+	"ytableaushort[]{}":{
+		"prefix":"ytableaushort",
+		"body":[
+			"\\ytableaushort[${2:formatting%plain}]{${1:line1,line2,...%plain}}"
 		]
 	},
 
@@ -61,7 +61,17 @@
 		"prefix":"ytableau",
 		"body":[
 			"\\begin{ytableau}",
-			"\t$1",
+				"\t$1",
+			"\\end{ytableau}"
+		]
+	},
+
+
+	"ytableau":{
+		"prefix":"ytableau",
+		"body":[
+			"\\begin{ytableau}",
+				"\t$1",
 			"\\end{ytableau}"
 		]
 	}

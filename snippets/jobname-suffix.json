@@ -9,7 +9,7 @@
 	},
 
 
-	"IfSuffixTF":{
+	"IfSuffixTF{}{}":{
 		"prefix":"IfSuffixTF",
 		"body":[
 			"\\IfSuffixTF{${1:true condition}}{${2:false condition}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"IfSuffixTF":{
-		"prefix":"IfSuffixTF",
-		"body":[
-			"\\IfSuffixTF[${3:suffixes}]{${1:true condition}}{${2:false condition}}"
-		]
-	},
-
-
-	"IfSuffixT":{
+	"IfSuffixT{}":{
 		"prefix":"IfSuffixT",
 		"body":[
 			"\\IfSuffixT{${1:true condition}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"IfSuffixT":{
-		"prefix":"IfSuffixT",
-		"body":[
-			"\\IfSuffixT[${2:suffixes}]{${1:true condition}}"
-		]
-	},
-
-
-	"IfSuffixF":{
+	"IfSuffixF{}":{
 		"prefix":"IfSuffixF",
 		"body":[
 			"\\IfSuffixF{${1:false condition}}"
@@ -49,18 +33,34 @@
 	},
 
 
-	"IfSuffixF":{
-		"prefix":"IfSuffixF",
+	"OverrideSuffix{}":{
+		"prefix":"OverrideSuffix",
 		"body":[
-			"\\IfSuffixF[${2:suffixes}]{${1:false condition}}"
+			"\\OverrideSuffix{${1:suffix}}"
 		]
 	},
 
 
-	"OverrideSuffix":{
-		"prefix":"OverrideSuffix",
+	"IfSuffixTF[]{}{}":{
+		"prefix":"IfSuffixTF",
 		"body":[
-			"\\OverrideSuffix{${1:suffix}}"
+			"\\IfSuffixTF[${3:suffixes}]{${1:true condition}}{${2:false condition}}"
+		]
+	},
+
+
+	"IfSuffixT[]{}":{
+		"prefix":"IfSuffixT",
+		"body":[
+			"\\IfSuffixT[${2:suffixes}]{${1:true condition}}"
+		]
+	},
+
+
+	"IfSuffixF[]{}":{
+		"prefix":"IfSuffixF",
+		"body":[
+			"\\IfSuffixF[${2:suffixes}]{${1:false condition}}"
 		]
 	},
 
@@ -69,7 +69,17 @@
 		"prefix":"IfSuffix",
 		"body":[
 			"\\begin{IfSuffix}",
-			"\t$1",
+				"\t$1",
+			"\\end{IfSuffix}"
+		]
+	},
+
+
+	"IfSuffix":{
+		"prefix":"IfSuffix",
+		"body":[
+			"\\begin{IfSuffix}",
+				"\t$1",
 			"\\end{IfSuffix}"
 		]
 	}

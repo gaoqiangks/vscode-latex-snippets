@@ -25,7 +25,7 @@
 	},
 
 
-	"titlestretch":{
+	"titlestretch{}":{
 		"prefix":"titlestretch",
 		"body":[
 			"\\titlestretch{${1:value}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"titlestyle":{
+	"titlestyle{}":{
 		"prefix":"titlestyle",
 		"body":[
 			"\\titlestyle{${1:style}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"titlehead":{
+	"titlehead{}":{
 		"prefix":"titlehead",
 		"body":[
 			"\\titlehead{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"titlesign":{
+	"titlesign{}":{
 		"prefix":"titlesign",
 		"body":[
 			"\\titlesign{${1:text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"titlefoot":{
+	"titlefoot{}":{
 		"prefix":"titlefoot",
 		"body":[
 			"\\titlefoot{${1:text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"titlecomment":{
+	"titlecomment{}":{
 		"prefix":"titlecomment",
 		"body":[
 			"\\titlecomment{${1:text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"abstractstyle":{
+	"abstractstyle{}":{
 		"prefix":"abstractstyle",
 		"body":[
 			"\\abstractstyle{${1:style}}"
@@ -81,15 +81,7 @@
 	},
 
 
-	"bibindex":{
-		"prefix":"bibindex",
-		"body":[
-			"\\bibindex[${2:style}]{${1:bibindex}}"
-		]
-	},
-
-
-	"bibindex":{
+	"bibindex{}":{
 		"prefix":"bibindex",
 		"body":[
 			"\\bibindex{${1:bibindex}}"
@@ -97,31 +89,15 @@
 	},
 
 
-	"copyrighttable":{
+	"copyrighttable{}{}":{
 		"prefix":"copyrighttable",
 		"body":[
-			"\\copyrighttable[${3:style}]{${1:label}}{${2:\item copyright\\ \item copyright ...}}"
+			"\\copyrighttable{${1:label}}{${2:\\item copyright\\\\ \\item copyright ...}}"
 		]
 	},
 
 
-	"copyrighttable":{
-		"prefix":"copyrighttable",
-		"body":[
-			"\\copyrighttable{${1:label}}{${2:\item copyright\\ \item copyright ...}}"
-		]
-	},
-
-
-	"fulltitle":{
-		"prefix":"fulltitle",
-		"body":[
-			"\\fulltitle[${3:style}]{${1:authors}}{${2:full title%text}}"
-		]
-	},
-
-
-	"fulltitle":{
+	"fulltitle{}{}":{
 		"prefix":"fulltitle",
 		"body":[
 			"\\fulltitle{${1:authors}}{${2:full title%text}}"
@@ -137,7 +113,7 @@
 	},
 
 
-	"lastpagestretch":{
+	"lastpagestretch{}":{
 		"prefix":"lastpagestretch",
 		"body":[
 			"\\lastpagestretch{${1:value}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"lastpagestyle":{
+	"lastpagestyle{}":{
 		"prefix":"lastpagestyle",
 		"body":[
 			"\\lastpagestyle{${1:style}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"lastpagehead":{
+	"lastpagehead{}":{
 		"prefix":"lastpagehead",
 		"body":[
 			"\\lastpagehead{${1:text}}"
@@ -161,18 +137,42 @@
 	},
 
 
-	"lastpageinfo":{
+	"lastpageinfo{}{}{}":{
 		"prefix":"lastpageinfo",
 		"body":[
-			"\\lastpageinfo[${4:style}]{${1:designers}}{${2:publishing attributes%text}}{${3:publisher}}"
+			"\\lastpageinfo{${1:designers}}{${2:publishing attributes%text}}{${3:publisher}}"
 		]
 	},
 
 
-	"lastpageinfo":{
+	"bibindex[]{}":{
+		"prefix":"bibindex",
+		"body":[
+			"\\bibindex[${2:style}]{${1:bibindex}}"
+		]
+	},
+
+
+	"copyrighttable[]{}{}":{
+		"prefix":"copyrighttable",
+		"body":[
+			"\\copyrighttable[${3:style}]{${1:label}}{${2:\\item copyright\\\\ \\item copyright ...}}"
+		]
+	},
+
+
+	"fulltitle[]{}{}":{
+		"prefix":"fulltitle",
+		"body":[
+			"\\fulltitle[${3:style}]{${1:authors}}{${2:full title%text}}"
+		]
+	},
+
+
+	"lastpageinfo[]{}{}{}":{
 		"prefix":"lastpageinfo",
 		"body":[
-			"\\lastpageinfo{${1:designers}}{${2:publishing attributes%text}}{${3:publisher}}"
+			"\\lastpageinfo[${4:style}]{${1:designers}}{${2:publishing attributes%text}}{${3:publisher}}"
 		]
 	}
 }

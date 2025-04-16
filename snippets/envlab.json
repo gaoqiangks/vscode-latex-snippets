@@ -1,7 +1,7 @@
 {
 
 
-	"printreturnlabels":{
+	"printreturnlabels{}{}":{
 		"prefix":"printreturnlabels",
 		"body":[
 			"\\printreturnlabels{${1:number}}{${2:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"SetEnvelope":{
+	"SetEnvelope{}{}":{
 		"prefix":"SetEnvelope",
 		"body":[
 			"\\SetEnvelope{${1:width}}{${2:height}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"SetEnvelope":{
-		"prefix":"SetEnvelope",
-		"body":[
-			"\\SetEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"SetLabel":{
+	"SetLabel{}{}{}{}{}{}{}":{
 		"prefix":"SetLabel",
 		"body":[
 			"\\SetLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"SetBigLabel":{
+	"SetBigLabel{}{}{}{}{}{}{}":{
 		"prefix":"SetBigLabel",
 		"body":[
 			"\\SetBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"AtBeginLabels":{
+	"AtBeginLabels{}":{
 		"prefix":"AtBeginLabels",
 		"body":[
 			"\\AtBeginLabels{${1:commands}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"AtBeginLabelPage":{
+	"AtBeginLabelPage{}":{
 		"prefix":"AtBeginLabelPage",
 		"body":[
 			"\\AtBeginLabelPage{${1:commands}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"FirstLabel":{
+	"FirstLabel{}{}":{
 		"prefix":"FirstLabel",
 		"body":[
 			"\\FirstLabel{${1:row}}{${2:column}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"ChangeEnvelope":{
+	"ChangeEnvelope{}{}":{
 		"prefix":"ChangeEnvelope",
 		"body":[
 			"\\ChangeEnvelope{${1:width}}{${2:height}}"
@@ -113,15 +105,7 @@
 	},
 
 
-	"ChangeEnvelope":{
-		"prefix":"ChangeEnvelope",
-		"body":[
-			"\\ChangeEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"ChangeLabel":{
+	"ChangeLabel{}{}{}{}{}{}{}":{
 		"prefix":"ChangeLabel",
 		"body":[
 			"\\ChangeLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"ChangeBigLabel":{
+	"ChangeBigLabel{}{}{}{}{}{}{}":{
 		"prefix":"ChangeBigLabel",
 		"body":[
 			"\\ChangeBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
@@ -137,7 +121,7 @@
 	},
 
 
-	"re":{
+	"re{}":{
 		"prefix":"re",
 		"body":[
 			"\\re{${1:subject%text}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"PrintAddress":{
+	"PrintAddress{}":{
 		"prefix":"PrintAddress",
 		"body":[
 			"\\PrintAddress{${1:text}}"
@@ -265,7 +249,7 @@
 	},
 
 
-	"PrintBarCode":{
+	"PrintBarCode{}":{
 		"prefix":"PrintBarCode",
 		"body":[
 			"\\PrintBarCode{${1:code}}"
@@ -273,7 +257,7 @@
 	},
 
 
-	"PrintBigLabel":{
+	"PrintBigLabel{}{}":{
 		"prefix":"PrintBigLabel",
 		"body":[
 			"\\PrintBigLabel{${1:return address}}{${2:address}}"
@@ -281,7 +265,7 @@
 	},
 
 
-	"PrintEnvelope":{
+	"PrintEnvelope{}{}":{
 		"prefix":"PrintEnvelope",
 		"body":[
 			"\\PrintEnvelope{${1:return address}}{${2:address}}"
@@ -289,7 +273,7 @@
 	},
 
 
-	"PrintLabel":{
+	"PrintLabel{}":{
 		"prefix":"PrintLabel",
 		"body":[
 			"\\PrintLabel{${1:text}}"
@@ -305,7 +289,7 @@
 	},
 
 
-	"PrintReturnAddress":{
+	"PrintReturnAddress{}":{
 		"prefix":"PrintReturnAddress",
 		"body":[
 			"\\PrintReturnAddress{${1:text}}"
@@ -405,6 +389,22 @@
 		"prefix":"ToAddressWidth",
 		"body":[
 			"\\ToAddressWidth"
+		]
+	},
+
+
+	"SetEnvelope[]{}{}":{
+		"prefix":"SetEnvelope",
+		"body":[
+			"\\SetEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
+		]
+	},
+
+
+	"ChangeEnvelope[]{}{}":{
+		"prefix":"ChangeEnvelope",
+		"body":[
+			"\\ChangeEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
 		]
 	}
 }

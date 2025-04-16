@@ -1,7 +1,7 @@
 {
 
 
-	"menu":{
+	"menu{}":{
 		"prefix":"menu",
 		"body":[
 			"\\menu{${1:entry1!entry2!!...%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"menuitem":{
+	"menuitem{}":{
 		"prefix":"menuitem",
 		"body":[
 			"\\menuitem{${1:item%text}}"
@@ -17,26 +17,10 @@
 	},
 
 
-	"menuitem":{
-		"prefix":"menuitem",
-		"body":[
-			"\\menuitem[${2:length}]{${1:item%text}}"
-		]
-	},
-
-
-	"menuitemactive":{
+	"menuitemactive{}":{
 		"prefix":"menuitemactive",
 		"body":[
 			"\\menuitemactive{${1:item%text}}"
-		]
-	},
-
-
-	"menuitemactive":{
-		"prefix":"menuitemactive",
-		"body":[
-			"\\menuitemactive[${2:length}]{${1:item%text}}"
 		]
 	},
 
@@ -49,15 +33,7 @@
 	},
 
 
-	"menuseparator":{
-		"prefix":"menuseparator",
-		"body":[
-			"\\menuseparator[${1:length}]"
-		]
-	},
-
-
-	"menutext":{
+	"menutext{}":{
 		"prefix":"menutext",
 		"body":[
 			"\\menutext{${1:text}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"menumathsymbols":{
+	"menumathsymbols{}{}":{
 		"prefix":"menumathsymbols",
 		"body":[
 			"\\menumathsymbols{${1:symbol1%formula}}{${2:symbol2%formula}}"
@@ -73,15 +49,7 @@
 	},
 
 
-	"menumathsymbols":{
-		"prefix":"menumathsymbols",
-		"body":[
-			"\\menumathsymbols[${3:start%formula}]{${1:symbol1%formula}}{${2:symbol2%formula}}"
-		]
-	},
-
-
-	"menusymbols":{
+	"menusymbols{}{}":{
 		"prefix":"menusymbols",
 		"body":[
 			"\\menusymbols{${1:symbol1}}{${2:symbol2}}"
@@ -89,42 +57,10 @@
 	},
 
 
-	"menusymbols":{
-		"prefix":"menusymbols",
-		"body":[
-			"\\menusymbols[${3:start}]{${1:symbol1}}{${2:symbol2}}"
-		]
-	},
-
-
-	"menusymbols":{
-		"prefix":"menusymbols",
-		"body":[
-			"\\menusymbols{${1:symbol1}}{${2:symbol2}}[${3:end}]"
-		]
-	},
-
-
-	"menusymbols":{
-		"prefix":"menusymbols",
-		"body":[
-			"\\menusymbols[${3:start}]{${1:symbol1}}{${2:symbol2}}[${4:end}]"
-		]
-	},
-
-
-	"menufolderentry":{
+	"menufolderentry{}":{
 		"prefix":"menufolderentry",
 		"body":[
 			"\\menufolderentry{${1:title%text}}"
-		]
-	},
-
-
-	"menufolderentry":{
-		"prefix":"menufolderentry",
-		"body":[
-			"\\menufolderentry[${2:length}]{${1:title%text}}"
 		]
 	},
 
@@ -225,11 +161,85 @@
 	},
 
 
+	"menuitem[]{}":{
+		"prefix":"menuitem",
+		"body":[
+			"\\menuitem[${2:length}]{${1:item%text}}"
+		]
+	},
+
+
+	"menuitemactive[]{}":{
+		"prefix":"menuitemactive",
+		"body":[
+			"\\menuitemactive[${2:length}]{${1:item%text}}"
+		]
+	},
+
+
+	"menuseparator[]":{
+		"prefix":"menuseparator",
+		"body":[
+			"\\menuseparator[${1:length}]"
+		]
+	},
+
+
+	"menumathsymbols[]{}{}":{
+		"prefix":"menumathsymbols",
+		"body":[
+			"\\menumathsymbols[${3:start%formula}]{${1:symbol1%formula}}{${2:symbol2%formula}}"
+		]
+	},
+
+
+	"menusymbols[]{}{}":{
+		"prefix":"menusymbols",
+		"body":[
+			"\\menusymbols[${3:start}]{${1:symbol1}}{${2:symbol2}}"
+		]
+	},
+
+
+	"menusymbols{}{}[]":{
+		"prefix":"menusymbols",
+		"body":[
+			"\\menusymbols{${1:symbol1}}{${2:symbol2}}[${3:end}]"
+		]
+	},
+
+
+	"menusymbols[]{}{}[]":{
+		"prefix":"menusymbols",
+		"body":[
+			"\\menusymbols[${3:start}]{${1:symbol1}}{${2:symbol2}}[${4:end}]"
+		]
+	},
+
+
+	"menufolderentry[]{}":{
+		"prefix":"menufolderentry",
+		"body":[
+			"\\menufolderentry[${2:length}]{${1:title%text}}"
+		]
+	},
+
+
 	"menufolder":{
 		"prefix":"menufolder",
 		"body":[
 			"\\begin{menufolder}",
-			"\t$1",
+				"\t$1",
+			"\\end{menufolder}"
+		]
+	},
+
+
+	"menufolder":{
+		"prefix":"menufolder",
+		"body":[
+			"\\begin{menufolder}",
+				"\t$1",
 			"\\end{menufolder}"
 		]
 	}

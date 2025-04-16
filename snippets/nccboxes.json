@@ -1,7 +1,7 @@
 {
 
 
-	"jhbox":{
+	"jhbox{}{}":{
 		"prefix":"jhbox",
 		"body":[
 			"\\jhbox{${1:prototype}}{${2:text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"jhbox":{
-		"prefix":"jhbox",
-		"body":[
-			"\\jhbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"jvbox":{
+	"jvbox{}{}":{
 		"prefix":"jvbox",
 		"body":[
 			"\\jvbox{${1:prototype}}{${2:text}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"jvbox":{
-		"prefix":"jvbox",
-		"body":[
-			"\\jvbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"jparbox":{
+	"jparbox{}{}{}":{
 		"prefix":"jparbox",
 		"body":[
 			"\\jparbox{${1:prototype}}{${2:text}}{${3:width}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"jparbox":{
-		"prefix":"jparbox",
-		"body":[
-			"\\jparbox{${1:prototype}}[${4:pos%keyvals}]{${2:width}}{${3:text}}"
-		]
-	},
-
-
-	"addbox":{
+	"addbox{}{}{}":{
 		"prefix":"addbox",
 		"body":[
 			"\\addbox{${1:height-adjust%l}}{${2:depth-adjust%l}}{${3:text}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"pbox":{
+	"pbox{}":{
 		"prefix":"pbox",
 		"body":[
 			"\\pbox{${1:body%text}}"
@@ -65,15 +41,7 @@
 	},
 
 
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${2:pos}]{${1:body%text}}"
-		]
-	},
-
-
-	"picbox":{
+	"picbox{}":{
 		"prefix":"picbox",
 		"body":[
 			"\\picbox{${1:picture code}}"
@@ -121,34 +89,10 @@
 	},
 
 
-	"cbox":{
+	"cbox{}":{
 		"prefix":"cbox",
 		"body":[
 			"\\cbox{${1:body%text}}"
-		]
-	},
-
-
-	"cbox":{
-		"prefix":"cbox",
-		"body":[
-			"\\cbox[${2:pos}]{${1:body%text}}"
-		]
-	},
-
-
-	"cbox*":{
-		"prefix":"cbox*",
-		"body":[
-			"\\cbox*{${1:body%text}}"
-		]
-	},
-
-
-	"cbox*":{
-		"prefix":"cbox*",
-		"body":[
-			"\\cbox*[${2:pos}]{${1:body%text}}"
 		]
 	},
 
@@ -161,10 +105,66 @@
 	},
 
 
-	"tc":{
+	"tc{}":{
 		"prefix":"tc",
 		"body":[
 			"\\tc{${1:field%text}}"
+		]
+	},
+
+
+	"cbox*{}":{
+		"prefix":"*cbox",
+		"body":[
+			"\\cbox*{${1:body%text}}"
+		]
+	},
+
+
+	"cbox*[]{}":{
+		"prefix":"*cbox",
+		"body":[
+			"\\cbox*[${2:pos}]{${1:body%text}}"
+		]
+	},
+
+
+	"jhbox{}[]{}":{
+		"prefix":"jhbox",
+		"body":[
+			"\\jhbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"jvbox{}[]{}":{
+		"prefix":"jvbox",
+		"body":[
+			"\\jvbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"jparbox{}[]{}{}":{
+		"prefix":"jparbox",
+		"body":[
+			"\\jparbox{${1:prototype}}[${4:pos%keyvals}]{${2:width}}{${3:text}}"
+		]
+	},
+
+
+	"pbox[]{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox[${2:pos}]{${1:body%text}}"
+		]
+	},
+
+
+	"cbox[]{}":{
+		"prefix":"cbox",
+		"body":[
+			"\\cbox[${2:pos}]{${1:body%text}}"
 		]
 	}
 }

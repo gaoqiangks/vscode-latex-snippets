@@ -1,7 +1,7 @@
 {
 
 
-	"rcsid":{
+	"rcsid{}":{
 		"prefix":"rcsid",
 		"body":[
 			"\\rcsid{$%<Id%>$}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"rcs":{
+	"rcs{}":{
 		"prefix":"rcs",
 		"body":[
 			"\\rcs{$%<keyword%>$}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"rcskwsave":{
+	"rcskwsave{}":{
 		"prefix":"rcskwsave",
 		"body":[
 			"\\rcskwsave{$%<keyword%>$}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"rcskw":{
+	"rcskw{}":{
 		"prefix":"rcskw",
 		"body":[
 			"\\rcskw{${1:keyword}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"rcskwdef":{
+	"rcskwdef{}{}":{
 		"prefix":"rcskwdef",
 		"body":[
 			"\\rcskwdef{${1:keyword}}{${2:value}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"rcsRegisterAuthor":{
+	"rcsRegisterAuthor{}{}":{
 		"prefix":"rcsRegisterAuthor",
 		"body":[
 			"\\rcsRegisterAuthor{${1:author}}{${2:full name}}"
@@ -249,7 +249,7 @@
 	},
 
 
-	"rcsFullAuthor":{
+	"rcsFullAuthor{}":{
 		"prefix":"rcsFullAuthor",
 		"body":[
 			"\\rcsFullAuthor{${1:author name or macro}}"
@@ -257,15 +257,7 @@
 	},
 
 
-	"rcsFullAuthor*":{
-		"prefix":"rcsFullAuthor*",
-		"body":[
-			"\\rcsFullAuthor*{${1:author name or macro}}"
-		]
-	},
-
-
-	"rcsRegisterRevision":{
+	"rcsRegisterRevision{}{}":{
 		"prefix":"rcsRegisterRevision",
 		"body":[
 			"\\rcsRegisterRevision{${1:revision number}}{${2:tag name}}"
@@ -273,7 +265,7 @@
 	},
 
 
-	"rcsFullRevision":{
+	"rcsFullRevision{}":{
 		"prefix":"rcsFullRevision",
 		"body":[
 			"\\rcsFullRevision{${1:revision number or macro}}"
@@ -281,15 +273,7 @@
 	},
 
 
-	"rcsFullRevision*":{
-		"prefix":"rcsFullRevision*",
-		"body":[
-			"\\rcsFullRevision*{${1:revision number or macro}}"
-		]
-	},
-
-
-	"rcsnolinkurl":{
+	"rcsnolinkurl{}":{
 		"prefix":"rcsnolinkurl",
 		"body":[
 			"\\rcsnolinkurl{${1:macro}}"
@@ -341,6 +325,22 @@
 		"prefix":"rcsurl",
 		"body":[
 			"\\rcsurl"
+		]
+	},
+
+
+	"rcsFullAuthor*{}":{
+		"prefix":"*rcsFullAuthor",
+		"body":[
+			"\\rcsFullAuthor*{${1:author name or macro}}"
+		]
+	},
+
+
+	"rcsFullRevision*{}":{
+		"prefix":"*rcsFullRevision",
+		"body":[
+			"\\rcsFullRevision*{${1:revision number or macro}}"
 		]
 	}
 }

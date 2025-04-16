@@ -1,7 +1,7 @@
 {
 
 
-	"fetch":{
+	"fetch{}":{
 		"prefix":"fetch",
 		"body":[
 			"\\fetch{${1:name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"store":{
-		"prefix":"store",
-		"body":[
-			"\\store{${1:name}}[${2:alt-name}]"
-		]
-	},
-
-
-	"print":{
+	"print{}":{
 		"prefix":"print",
 		"body":[
 			"\\print{${1:expr}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"print*":{
-		"prefix":"print*",
-		"body":[
-			"\\print*{${1:expr}}"
-		]
-	},
-
-
-	"vprint":{
+	"vprint{}":{
 		"prefix":"vprint",
 		"body":[
 			"\\vprint{${1:expr}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"vprint*":{
-		"prefix":"vprint*",
-		"body":[
-			"\\vprint*{${1:expr}}"
-		]
-	},
-
-
-	"lprint":{
+	"lprint{}":{
 		"prefix":"lprint",
 		"body":[
 			"\\lprint{${1:expr}}"
@@ -57,26 +33,10 @@
 	},
 
 
-	"lprint":{
-		"prefix":"lprint",
-		"body":[
-			"\\lprint{${1:expr}}[${2:low,upp}]"
-		]
-	},
-
-
-	"parseforest":{
+	"parseforest{}":{
 		"prefix":"parseforest",
 		"body":[
 			"\\parseforest{${1:expr}}"
-		]
-	},
-
-
-	"parseforest*":{
-		"prefix":"parseforest*",
-		"body":[
-			"\\parseforest*{${1:expr}}"
 		]
 	},
 
@@ -89,18 +49,10 @@
 	},
 
 
-	"parseshrub":{
+	"parseshrub{}":{
 		"prefix":"parseshrub",
 		"body":[
 			"\\parseshrub{${1:expr}}"
-		]
-	},
-
-
-	"parseshrub*":{
-		"prefix":"parseshrub*",
-		"body":[
-			"\\parseshrub*{${1:expr}}"
 		]
 	},
 
@@ -113,7 +65,7 @@
 	},
 
 
-	"whatis":{
+	"whatis{}":{
 		"prefix":"whatis",
 		"body":[
 			"\\whatis{${1:expr}}"
@@ -121,7 +73,7 @@
 	},
 
 
-	"printshrub":{
+	"printshrub{}":{
 		"prefix":"printshrub",
 		"body":[
 			"\\printshrub{${1:expr}}"
@@ -129,15 +81,7 @@
 	},
 
 
-	"printshrub*":{
-		"prefix":"printshrub*",
-		"body":[
-			"\\printshrub*{${1:expr}}"
-		]
-	},
-
-
-	"printtree":{
+	"printtree{}":{
 		"prefix":"printtree",
 		"body":[
 			"\\printtree{${1:expr}}"
@@ -145,10 +89,66 @@
 	},
 
 
-	"printtree*":{
-		"prefix":"printtree*",
+	"print*{}":{
+		"prefix":"*print",
+		"body":[
+			"\\print*{${1:expr}}"
+		]
+	},
+
+
+	"vprint*{}":{
+		"prefix":"*vprint",
+		"body":[
+			"\\vprint*{${1:expr}}"
+		]
+	},
+
+
+	"parseforest*{}":{
+		"prefix":"*parseforest",
+		"body":[
+			"\\parseforest*{${1:expr}}"
+		]
+	},
+
+
+	"parseshrub*{}":{
+		"prefix":"*parseshrub",
+		"body":[
+			"\\parseshrub*{${1:expr}}"
+		]
+	},
+
+
+	"printshrub*{}":{
+		"prefix":"*printshrub",
+		"body":[
+			"\\printshrub*{${1:expr}}"
+		]
+	},
+
+
+	"printtree*{}":{
+		"prefix":"*printtree",
 		"body":[
 			"\\printtree*{${1:expr}}"
+		]
+	},
+
+
+	"store{}[]":{
+		"prefix":"store",
+		"body":[
+			"\\store{${1:name}}[${2:alt-name}]"
+		]
+	},
+
+
+	"lprint{}[]":{
+		"prefix":"lprint",
+		"body":[
+			"\\lprint{${1:expr}}[${2:low,upp}]"
 		]
 	},
 
@@ -157,7 +157,7 @@
 		"prefix":"CAS",
 		"body":[
 			"\\begin{CAS}",
-			"\t$1",
+				"\t$1",
 			"\\end{CAS}"
 		]
 	}

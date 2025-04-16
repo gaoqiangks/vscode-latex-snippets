@@ -1,7 +1,7 @@
 {
 
 
-	"arrayrulecolor":{
+	"arrayrulecolor{}":{
 		"prefix":"arrayrulecolor",
 		"body":[
 			"\\arrayrulecolor{${1:color}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"arrayrulecolor":{
-		"prefix":"arrayrulecolor",
-		"body":[
-			"\\arrayrulecolor[${2:color model}]{${1:color}}"
-		]
-	},
-
-
-	"cellcolor":{
+	"cellcolor{}":{
 		"prefix":"cellcolor",
 		"body":[
 			"\\cellcolor{${1:color}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"cellcolor":{
-		"prefix":"cellcolor",
-		"body":[
-			"\\cellcolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
-		]
-	},
-
-
-	"columncolor":{
+	"columncolor{}":{
 		"prefix":"columncolor",
 		"body":[
 			"\\columncolor{${1:color}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"columncolor":{
-		"prefix":"columncolor",
-		"body":[
-			"\\columncolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
-		]
-	},
-
-
-	"doublerulesepcolor":{
+	"doublerulesepcolor{}":{
 		"prefix":"doublerulesepcolor",
 		"body":[
 			"\\doublerulesepcolor{${1:color}}"
@@ -57,26 +33,10 @@
 	},
 
 
-	"doublerulesepcolor":{
-		"prefix":"doublerulesepcolor",
-		"body":[
-			"\\doublerulesepcolor[${2:color model}]{${1:color}}"
-		]
-	},
-
-
-	"rowcolor":{
+	"rowcolor{}":{
 		"prefix":"rowcolor",
 		"body":[
 			"\\rowcolor{${1:color}}"
-		]
-	},
-
-
-	"rowcolor":{
-		"prefix":"rowcolor",
-		"body":[
-			"\\rowcolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
 		]
 	},
 
@@ -89,34 +49,10 @@
 	},
 
 
-	"rowcolors":{
+	"rowcolors{}{}{}":{
 		"prefix":"rowcolors",
 		"body":[
 			"\\rowcolors{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
-		]
-	},
-
-
-	"rowcolors":{
-		"prefix":"rowcolors",
-		"body":[
-			"\\rowcolors[${4:commands}]{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
-		]
-	},
-
-
-	"rowcolors*":{
-		"prefix":"rowcolors*",
-		"body":[
-			"\\rowcolors*{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
-		]
-	},
-
-
-	"rowcolors*":{
-		"prefix":"rowcolors*",
-		"body":[
-			"\\rowcolors*[${4:commands}]{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
 		]
 	},
 
@@ -149,6 +85,70 @@
 		"prefix":"therownum",
 		"body":[
 			"\\therownum"
+		]
+	},
+
+
+	"rowcolors*{}{}{}":{
+		"prefix":"*rowcolors",
+		"body":[
+			"\\rowcolors*{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
+		]
+	},
+
+
+	"rowcolors*[]{}{}{}":{
+		"prefix":"*rowcolors",
+		"body":[
+			"\\rowcolors*[${4:commands}]{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
+		]
+	},
+
+
+	"arrayrulecolor[]{}":{
+		"prefix":"arrayrulecolor",
+		"body":[
+			"\\arrayrulecolor[${2:color model}]{${1:color}}"
+		]
+	},
+
+
+	"cellcolor[]{}[][]":{
+		"prefix":"cellcolor",
+		"body":[
+			"\\cellcolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
+		]
+	},
+
+
+	"columncolor[]{}[][]":{
+		"prefix":"columncolor",
+		"body":[
+			"\\columncolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
+		]
+	},
+
+
+	"doublerulesepcolor[]{}":{
+		"prefix":"doublerulesepcolor",
+		"body":[
+			"\\doublerulesepcolor[${2:color model}]{${1:color}}"
+		]
+	},
+
+
+	"rowcolor[]{}[][]":{
+		"prefix":"rowcolor",
+		"body":[
+			"\\rowcolor[${2:color model}]{${1:color}}[${3:left overhang}][${4:right overhang}]"
+		]
+	},
+
+
+	"rowcolors[]{}{}{}":{
+		"prefix":"rowcolors",
+		"body":[
+			"\\rowcolors[${4:commands}]{${1:row}}{${2:odd-row-color}}{${3:even-row-color}}"
 		]
 	}
 }

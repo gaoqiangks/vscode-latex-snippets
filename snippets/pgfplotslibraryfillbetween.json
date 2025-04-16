@@ -9,15 +9,7 @@
 	},
 
 
-	"tikzfillbetween":{
-		"prefix":"tikzfillbetween",
-		"body":[
-			"\\tikzfillbetween[${2:options%keyvals}]{${1:draw style}}"
-		]
-	},
-
-
-	"tikzgetnamedpath":{
+	"tikzgetnamedpath{}":{
 		"prefix":"tikzgetnamedpath",
 		"body":[
 			"\\tikzgetnamedpath{${1:path name}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"tikznamecurrentpath":{
+	"tikznamecurrentpath{}":{
 		"prefix":"tikznamecurrentpath",
 		"body":[
 			"\\tikznamecurrentpath{${1:name}}"
@@ -33,7 +25,15 @@
 	},
 
 
-	"tikzpathintersectionsegments":{
+	"tikzfillbetween[]{}":{
+		"prefix":"tikzfillbetween",
+		"body":[
+			"\\tikzfillbetween[${2:options%keyvals}]{${1:draw style}}"
+		]
+	},
+
+
+	"tikzpathintersectionsegments[]":{
 		"prefix":"tikzpathintersectionsegments",
 		"body":[
 			"\\tikzpathintersectionsegments[${1:options%keyvals}]"

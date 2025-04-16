@@ -9,7 +9,7 @@
 	},
 
 
-	"IF":{
+	"IF{}":{
 		"prefix":"IF",
 		"body":[
 			"\\IF{${1:condition}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"ELSIF":{
+	"ELSIF{}":{
 		"prefix":"ELSIF",
 		"body":[
 			"\\ELSIF{${1:condition}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"FOR":{
+	"FOR{}":{
 		"prefix":"FOR",
 		"body":[
 			"\\FOR{${1:condition}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"FORALL":{
+	"FORALL{}":{
 		"prefix":"FORALL",
 		"body":[
 			"\\FORALL{${1:condition}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"WHILE":{
+	"WHILE{}":{
 		"prefix":"WHILE",
 		"body":[
 			"\\WHILE{${1:condition}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"UNTIL":{
+	"UNTIL{}":{
 		"prefix":"UNTIL",
 		"body":[
 			"\\UNTIL{${1:condition}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"COMMENT":{
+	"COMMENT{}":{
 		"prefix":"COMMENT",
 		"body":[
 			"\\COMMENT{${1:text}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"algsetup":{
+	"algsetup{}":{
 		"prefix":"algsetup",
 		"body":[
 			"\\algsetup{${1:options%keyvals}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"INPUTS":{
+	"INPUTS{}":{
 		"prefix":"INPUTS",
 		"body":[
 			"\\INPUTS{${1:arg}}"
@@ -241,7 +241,7 @@
 	},
 
 
-	"OUTPUTS":{
+	"OUTPUTS{}":{
 		"prefix":"OUTPUTS",
 		"body":[
 			"\\OUTPUTS{${1:arg}}"
@@ -265,7 +265,7 @@
 	},
 
 
-	"BODY":{
+	"BODY{}":{
 		"prefix":"BODY",
 		"body":[
 			"\\BODY{${1:arg}}"
@@ -297,7 +297,7 @@
 	},
 
 
-	"algorithmiccomment":{
+	"algorithmiccomment{}":{
 		"prefix":"algorithmiccomment",
 		"body":[
 			"\\algorithmiccomment{${1:text}}"
@@ -541,7 +541,17 @@
 		"prefix":"algorithmic",
 		"body":[
 			"\\begin{algorithmic}",
-			"\t$1",
+				"\t$1",
+			"\\end{algorithmic}"
+		]
+	},
+
+
+	"algorithmic":{
+		"prefix":"algorithmic",
+		"body":[
+			"\\begin{algorithmic}",
+				"\t$1",
 			"\\end{algorithmic}"
 		]
 	}

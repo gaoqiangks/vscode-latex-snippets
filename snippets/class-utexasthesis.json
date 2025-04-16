@@ -1,7 +1,7 @@
 {
 
 
-	"cosupervisor":{
+	"cosupervisor{}":{
 		"prefix":"cosupervisor",
 		"body":[
 			"\\cosupervisor{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"declaretypist":{
+	"declaretypist{}":{
 		"prefix":"declaretypist",
 		"body":[
 			"\\declaretypist{${1:name}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"graduationdate":{
+	"graduationdate{}":{
 		"prefix":"graduationdate",
 		"body":[
 			"\\graduationdate{${1:date}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"makebibliography":{
+	"makebibliography{}":{
 		"prefix":"makebibliography",
 		"body":[
 			"\\makebibliography{${1:bib file}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"othercommitteemembers":{
+	"othercommitteemembers{}":{
 		"prefix":"othercommitteemembers",
 		"body":[
 			"\\othercommitteemembers{${1:name1,name2,...}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"supervisor":{
+	"supervisor{}":{
 		"prefix":"supervisor",
 		"body":[
 			"\\supervisor{${1:name}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -241,22 +241,12 @@
 	},
 
 
-	"vita":{
-		"prefix":"vita",
+	"acknowledgments":{
+		"prefix":"acknowledgments",
 		"body":[
-			"\\begin{vita}",
-			"\t$1",
-			"\\end{vita}"
-		]
-	},
-
-
-	"middlecenter":{
-		"prefix":"middlecenter",
-		"body":[
-			"\\begin{middlecenter}",
-			"\t$1",
-			"\\end{middlecenter}"
+			"\\begin{acknowledgments}",
+				"\t$1",
+			"\\end{acknowledgments}"
 		]
 	},
 
@@ -265,18 +255,8 @@
 		"prefix":"address",
 		"body":[
 			"\\begin{address}",
-			"\t$1",
+				"\t$1",
 			"\\end{address}"
-		]
-	},
-
-
-	"acknowledgments":{
-		"prefix":"acknowledgments",
-		"body":[
-			"\\begin{acknowledgments}",
-			"\t$1",
-			"\\end{acknowledgments}"
 		]
 	},
 
@@ -285,8 +265,28 @@
 		"prefix":"dedication",
 		"body":[
 			"\\begin{dedication}",
-			"\t$1",
+				"\t$1",
 			"\\end{dedication}"
+		]
+	},
+
+
+	"middlecenter":{
+		"prefix":"middlecenter",
+		"body":[
+			"\\begin{middlecenter}",
+				"\t$1",
+			"\\end{middlecenter}"
+		]
+	},
+
+
+	"vita":{
+		"prefix":"vita",
+		"body":[
+			"\\begin{vita}",
+				"\t$1",
+			"\\end{vita}"
 		]
 	}
 }

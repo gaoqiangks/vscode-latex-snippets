@@ -1,7 +1,7 @@
 {
 
 
-	"digraph":{
+	"digraph{}{}":{
 		"prefix":"digraph",
 		"body":[
 			"\\digraph{${1:name}}{${2:graph}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"digraph":{
-		"prefix":"digraph",
-		"body":[
-			"\\digraph[${3:options%keyvals}]{${1:name}}{${2:graph}}"
-		]
-	},
-
-
-	"neatograph":{
+	"neatograph{}{}":{
 		"prefix":"neatograph",
 		"body":[
 			"\\neatograph{${1:name}}{${2:graph}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"neatograph":{
-		"prefix":"neatograph",
-		"body":[
-			"\\neatograph[${3:options%keyvals}]{${1:name}}{${2:graph}}"
-		]
-	},
-
-
-	"inputdigraph":{
+	"inputdigraph{}{}{}":{
 		"prefix":"inputdigraph",
 		"body":[
 			"\\inputdigraph{${1:name}}{${2:graph}}{${3:type}}"
-		]
-	},
-
-
-	"inputdigraph":{
-		"prefix":"inputdigraph",
-		"body":[
-			"\\inputdigraph[${4:options%keyvals}]{${1:name}}{${2:graph}}{${3:type}}"
 		]
 	},
 
@@ -93,6 +69,30 @@
 		"prefix":"psfragfalse",
 		"body":[
 			"\\psfragfalse"
+		]
+	},
+
+
+	"digraph[]{}{}":{
+		"prefix":"digraph",
+		"body":[
+			"\\digraph[${3:options%keyvals}]{${1:name}}{${2:graph}}"
+		]
+	},
+
+
+	"neatograph[]{}{}":{
+		"prefix":"neatograph",
+		"body":[
+			"\\neatograph[${3:options%keyvals}]{${1:name}}{${2:graph}}"
+		]
+	},
+
+
+	"inputdigraph[]{}{}{}":{
+		"prefix":"inputdigraph",
+		"body":[
+			"\\inputdigraph[${4:options%keyvals}]{${1:name}}{${2:graph}}{${3:type}}"
 		]
 	}
 }

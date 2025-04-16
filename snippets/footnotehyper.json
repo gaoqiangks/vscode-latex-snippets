@@ -17,18 +17,10 @@
 	},
 
 
-	"makesavenoteenv":{
+	"makesavenoteenv{}":{
 		"prefix":"makesavenoteenv",
 		"body":[
 			"\\makesavenoteenv{${1:environment}}"
-		]
-	},
-
-
-	"makesavenoteenv":{
-		"prefix":"makesavenoteenv",
-		"body":[
-			"\\makesavenoteenv[${2:new_envname%envname}]{${1:environment}}"
 		]
 	},
 
@@ -41,11 +33,39 @@
 	},
 
 
+	"makesavenoteenv[]{}":{
+		"prefix":"makesavenoteenv",
+		"body":[
+			"\\makesavenoteenv[${2:new_envname%envname}]{${1:environment}}"
+		]
+	},
+
+
+	"savenotes":{
+		"prefix":"savenotes",
+		"body":[
+			"\\begin{savenotes}",
+				"\t$1",
+			"\\end{savenotes}"
+		]
+	},
+
+
+	"footnote":{
+		"prefix":"footnote",
+		"body":[
+			"\\begin{footnote}",
+				"\t$1",
+			"\\end{footnote}"
+		]
+	},
+
+
 	"footnotetext":{
 		"prefix":"footnotetext",
 		"body":[
 			"\\begin{footnotetext}",
-			"\t$1",
+				"\t$1",
 			"\\end{footnotetext}"
 		]
 	},
@@ -55,18 +75,8 @@
 		"prefix":"footnote",
 		"body":[
 			"\\begin{footnote}",
-			"\t$1",
+				"\t$1",
 			"\\end{footnote}"
-		]
-	},
-
-
-	"savenotes":{
-		"prefix":"savenotes",
-		"body":[
-			"\\begin{savenotes}",
-			"\t$1",
-			"\\end{savenotes}"
 		]
 	}
 }

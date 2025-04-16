@@ -1,14 +1,6 @@
 {
 
 
-	"ea":{
-		"prefix":"ea",
-		"body":[
-			"\\ea[${2:judgment}]{${1:example%text}}"
-		]
-	},
-
-
 	"z":{
 		"prefix":"z",
 		"body":[
@@ -17,23 +9,7 @@
 	},
 
 
-	"ex":{
-		"prefix":"ex",
-		"body":[
-			"\\ex[${2:judgment}]{${1:example%text}}"
-		]
-	},
-
-
-	"exi":{
-		"prefix":"exi",
-		"body":[
-			"\\exi{${1:identifier}}[${3:judgment}]{${2:example%text}}"
-		]
-	},
-
-
-	"exr":{
+	"exr{}":{
 		"prefix":"exr",
 		"body":[
 			"\\exr{${1:label}}"
@@ -41,15 +17,7 @@
 	},
 
 
-	"exr":{
-		"prefix":"exr",
-		"body":[
-			"\\exr{${1:label}}[${3:judgment}]{${2:example%text}}"
-		]
-	},
-
-
-	"exp":{
+	"exp{}":{
 		"prefix":"exp",
 		"body":[
 			"\\exp{${1:label}}"
@@ -57,15 +25,7 @@
 	},
 
 
-	"exp":{
-		"prefix":"exp",
-		"body":[
-			"\\exp{${1:label}}[${3:judgment}]{${2:example%text}}"
-		]
-	},
-
-
-	"xref":{
+	"xref{}":{
 		"prefix":"xref",
 		"body":[
 			"\\xref{${1:label}}"
@@ -73,7 +33,7 @@
 	},
 
 
-	"xxref":{
+	"xxref{}{}":{
 		"prefix":"xxref",
 		"body":[
 			"\\xxref{${1:label1%ref}}{${2:label2%ref}}"
@@ -81,15 +41,7 @@
 	},
 
 
-	"sn":{
-		"prefix":"sn",
-		"body":[
-			"\\sn[${2:judgment}]{${1:example%text}}"
-		]
-	},
-
-
-	"exewidth":{
+	"exewidth{}":{
 		"prefix":"exewidth",
 		"body":[
 			"\\exewidth{${1:labeltext}}"
@@ -257,26 +209,10 @@
 	},
 
 
-	"jambox":{
+	"jambox{}":{
 		"prefix":"jambox",
 		"body":[
 			"\\jambox{${1:text}}"
-		]
-	},
-
-
-	"jambox":{
-		"prefix":"jambox",
-		"body":[
-			"\\jambox[${2:width}]{${1:text}}"
-		]
-	},
-
-
-	"jambox*":{
-		"prefix":"jambox*",
-		"body":[
-			"\\jambox*{${1:text}}"
 		]
 	},
 
@@ -289,7 +225,7 @@
 	},
 
 
-	"atcenter":{
+	"atcenter{}":{
 		"prefix":"atcenter",
 		"body":[
 			"\\atcenter{${1:content}}"
@@ -297,7 +233,7 @@
 	},
 
 
-	"attop":{
+	"attop{}":{
 		"prefix":"attop",
 		"body":[
 			"\\attop{${1:content}}"
@@ -433,7 +369,7 @@
 	},
 
 
-	"gblabelsep":{
+	"gblabelsep{}":{
 		"prefix":"gblabelsep",
 		"body":[
 			"\\gblabelsep{${1:length}}"
@@ -457,7 +393,7 @@
 	},
 
 
-	"judgewidth":{
+	"judgewidth{}":{
 		"prefix":"judgewidth",
 		"body":[
 			"\\judgewidth{${1:judgment}}"
@@ -465,7 +401,7 @@
 	},
 
 
-	"lastword":{
+	"lastword{}{}{}":{
 		"prefix":"lastword",
 		"body":[
 			"\\lastword{${1:each}}{${2:line box}}{${3:word box}}"
@@ -481,7 +417,7 @@
 	},
 
 
-	"nobreakbox":{
+	"nobreakbox{}":{
 		"prefix":"nobreakbox",
 		"body":[
 			"\\nobreakbox{${1:text}}"
@@ -505,7 +441,7 @@
 	},
 
 
-	"subexsep":{
+	"subexsep{}":{
 		"prefix":"subexsep",
 		"body":[
 			"\\subexsep{${1:length}}"
@@ -569,7 +505,7 @@
 	},
 
 
-	"xbox":{
+	"xbox{}{}":{
 		"prefix":"xbox",
 		"body":[
 			"\\xbox{${1:width}}{${2:text}}"
@@ -609,12 +545,66 @@
 	},
 
 
-	"xlistA":{
-		"prefix":"xlistA",
+	"jambox*{}":{
+		"prefix":"*jambox",
 		"body":[
-			"\\begin{xlistA}",
-			"\t$1",
-			"\\end{xlistA}"
+			"\\jambox*{${1:text}}"
+		]
+	},
+
+
+	"ea[]{}":{
+		"prefix":"ea",
+		"body":[
+			"\\ea[${2:judgment}]{${1:example%text}}"
+		]
+	},
+
+
+	"ex[]{}":{
+		"prefix":"ex",
+		"body":[
+			"\\ex[${2:judgment}]{${1:example%text}}"
+		]
+	},
+
+
+	"exi{}[]{}":{
+		"prefix":"exi",
+		"body":[
+			"\\exi{${1:identifier}}[${3:judgment}]{${2:example%text}}"
+		]
+	},
+
+
+	"exr{}[]{}":{
+		"prefix":"exr",
+		"body":[
+			"\\exr{${1:label}}[${3:judgment}]{${2:example%text}}"
+		]
+	},
+
+
+	"exp{}[]{}":{
+		"prefix":"exp",
+		"body":[
+			"\\exp{${1:label}}[${3:judgment}]{${2:example%text}}"
+		]
+	},
+
+
+	"sn[]{}":{
+		"prefix":"sn",
+		"body":[
+			"\\sn[${2:judgment}]{${1:example%text}}"
+		]
+	},
+
+
+	"jambox[]{}":{
+		"prefix":"jambox",
+		"body":[
+			"\\jambox[${2:width}]{${1:text}}"
 		]
 	},
 
@@ -623,7 +613,7 @@
 		"prefix":"exe",
 		"body":[
 			"\\begin{exe}",
-			"\t$1",
+				"\t$1",
 			"\\end{exe}"
 		]
 	},
@@ -633,28 +623,8 @@
 		"prefix":"xlist",
 		"body":[
 			"\\begin{xlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{xlist}"
-		]
-	},
-
-
-	"xlista":{
-		"prefix":"xlista",
-		"body":[
-			"\\begin{xlista}",
-			"\t$1",
-			"\\end{xlista}"
-		]
-	},
-
-
-	"xlistI":{
-		"prefix":"xlistI",
-		"body":[
-			"\\begin{xlistI}",
-			"\t$1",
-			"\\end{xlistI}"
 		]
 	},
 
@@ -663,8 +633,48 @@
 		"prefix":"qlist",
 		"body":[
 			"\\begin{qlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{qlist}"
+		]
+	},
+
+
+	"xlistA":{
+		"prefix":"xlistA",
+		"body":[
+			"\\begin{xlistA}",
+				"\t$1",
+			"\\end{xlistA}"
+		]
+	},
+
+
+	"xlista":{
+		"prefix":"xlista",
+		"body":[
+			"\\begin{xlista}",
+				"\t$1",
+			"\\end{xlista}"
+		]
+	},
+
+
+	"xlistabr":{
+		"prefix":"xlistabr",
+		"body":[
+			"\\begin{xlistabr}",
+				"\t$1",
+			"\\end{xlistabr}"
+		]
+	},
+
+
+	"xlistI":{
+		"prefix":"xlistI",
+		"body":[
+			"\\begin{xlistI}",
+				"\t$1",
+			"\\end{xlistI}"
 		]
 	},
 
@@ -673,7 +683,7 @@
 		"prefix":"xlisti",
 		"body":[
 			"\\begin{xlisti}",
-			"\t$1",
+				"\t$1",
 			"\\end{xlisti}"
 		]
 	},
@@ -683,18 +693,28 @@
 		"prefix":"xlistn",
 		"body":[
 			"\\begin{xlistn}",
-			"\t$1",
+				"\t$1",
 			"\\end{xlistn}"
 		]
 	},
 
 
-	"xlistabr":{
-		"prefix":"xlistabr",
+	"exe":{
+		"prefix":"exe",
 		"body":[
-			"\\begin{xlistabr}",
-			"\t$1",
-			"\\end{xlistabr}"
+			"\\begin{exe}",
+				"\t$1",
+			"\\end{exe}"
+		]
+	},
+
+
+	"xlist":{
+		"prefix":"xlist",
+		"body":[
+			"\\begin{xlist}",
+				"\t$1",
+			"\\end{xlist}"
 		]
 	}
 }

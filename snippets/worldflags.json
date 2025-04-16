@@ -1,23 +1,7 @@
 {
 
 
-	"worldflag":{
-		"prefix":"worldflag",
-		"body":[
-			"\\worldflag[${2:options%keyvals}]{${1:flag code}}"
-		]
-	},
-
-
-	"flagsdefault":{
-		"prefix":"flagsdefault",
-		"body":[
-			"\\flagsdefault[${1:options%keyvals}]"
-		]
-	},
-
-
-	"framecode":{
+	"framecode{}":{
 		"prefix":"framecode",
 		"body":[
 			"\\framecode{${1:code}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"hstripesII":{
+	"hstripesII{}{}":{
 		"prefix":"hstripesII",
 		"body":[
 			"\\hstripesII{${1:color1%color}}{${2:color2%color}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"hstripesIII":{
+	"hstripesIII{}{}{}":{
 		"prefix":"hstripesIII",
 		"body":[
 			"\\hstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"hstripesIV":{
+	"hstripesIV{}{}{}{}":{
 		"prefix":"hstripesIV",
 		"body":[
 			"\\hstripesIV{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}{${4:color4%color}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"vstripesII":{
+	"vstripesII{}{}":{
 		"prefix":"vstripesII",
 		"body":[
 			"\\vstripesII{${1:color1%color}}{${2:color2%color}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"vstripesIII":{
+	"vstripesIII{}{}{}":{
 		"prefix":"vstripesIII",
 		"body":[
 			"\\vstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"hbar":{
+	"hbar{}{}{}":{
 		"prefix":"hbar",
 		"body":[
 			"\\hbar{${1:color}}{${2:ycoord}}{${3:width}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"vbar":{
+	"vbar{}{}{}":{
 		"prefix":"vbar",
 		"body":[
 			"\\vbar{${1:color}}{${2:xcoord}}{${3:width}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"chevron":{
+	"chevron{}{}":{
 		"prefix":"chevron",
 		"body":[
 			"\\chevron{${1:color}}{${2:xcoord}}"
@@ -137,7 +121,7 @@
 	},
 
 
-	"starV":{
+	"starV{}{}{}{}":{
 		"prefix":"starV",
 		"body":[
 			"\\starV{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"starVI":{
+	"starVI{}{}{}{}":{
 		"prefix":"starVI",
 		"body":[
 			"\\starVI{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"starn":{
+	"starn{}{}{}{}{}":{
 		"prefix":"starn",
 		"body":[
 			"\\starn{${1:color}}{${2:coord}}{${3:outer radius}}{${4:inner radius}}{${5:angle}}"
@@ -161,7 +145,7 @@
 	},
 
 
-	"moon":{
+	"moon{}{}{}{}{}":{
 		"prefix":"moon",
 		"body":[
 			"\\moon{${1:color}}{${2:coord1}}{${3:radius1}}{${4:coord2}}{${5:radius2}}"
@@ -169,10 +153,26 @@
 	},
 
 
-	"unionjack":{
+	"unionjack{}{}{}{}":{
 		"prefix":"unionjack",
 		"body":[
 			"\\unionjack{${1:xcoord1}}{${2:ycoord1}}{${3:xcoord2}}{${4:ycoord2}}"
+		]
+	},
+
+
+	"worldflag[]{}":{
+		"prefix":"worldflag",
+		"body":[
+			"\\worldflag[${2:options%keyvals}]{${1:flag code}}"
+		]
+	},
+
+
+	"flagsdefault[]":{
+		"prefix":"flagsdefault",
+		"body":[
+			"\\flagsdefault[${1:options%keyvals}]"
 		]
 	},
 
@@ -181,7 +181,7 @@
 		"prefix":"flagdescription",
 		"body":[
 			"\\begin{flagdescription}",
-			"\t$1",
+				"\t$1",
 			"\\end{flagdescription}"
 		]
 	}

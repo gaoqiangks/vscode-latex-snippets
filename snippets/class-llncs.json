@@ -1,7 +1,7 @@
 {
 
 
-	"authorrunning":{
+	"authorrunning{}":{
 		"prefix":"authorrunning",
 		"body":[
 			"\\authorrunning{${1:abbreviated author list}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email address%URL}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"inst":{
+	"inst{}":{
 		"prefix":"inst",
 		"body":[
 			"\\inst{${1:number}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"institute":{
+	"institute{}":{
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:institutes%text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"orcidID":{
+	"orcidID{}":{
 		"prefix":"orcidID",
 		"body":[
 			"\\orcidID{${1:ORCID identifier}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"titlerunning":{
+	"titlerunning{}":{
 		"prefix":"titlerunning",
 		"body":[
 			"\\titlerunning{${1:abbreviated title%text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"url":{
+	"url{}":{
 		"prefix":"url",
 		"body":[
 			"\\url{${1:URL}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"spnewtheorem":{
+	"spnewtheorem{}{}{}{}":{
 		"prefix":"spnewtheorem",
 		"body":[
 			"\\spnewtheorem{${1:envname}}{${2:caption}}{${3:cap font}}{${4:body font}}"
@@ -233,23 +233,7 @@
 	},
 
 
-	"spnewtheorem":{
-		"prefix":"spnewtheorem",
-		"body":[
-			"\\spnewtheorem{${1:envname}}[${5:numbered like}]{${2:caption}}{${3:cap font}}{${4:body font}}"
-		]
-	},
-
-
-	"spnewtheorem*":{
-		"prefix":"spnewtheorem*",
-		"body":[
-			"\\spnewtheorem*{${1:envname}}{${2:caption}}{${3:cap font}}{${4:body font}}"
-		]
-	},
-
-
-	"doi":{
+	"doi{}":{
 		"prefix":"doi",
 		"body":[
 			"\\doi{${1:DOI}}"
@@ -265,7 +249,7 @@
 	},
 
 
-	"addcontentsmark":{
+	"addcontentsmark{}{}{}":{
 		"prefix":"addcontentsmark",
 		"body":[
 			"\\addcontentsmark{${1:file}}{${2:type}}{${3:text}}"
@@ -273,7 +257,7 @@
 	},
 
 
-	"addcontentsmarkwop":{
+	"addcontentsmarkwop{}{}{}":{
 		"prefix":"addcontentsmarkwop",
 		"body":[
 			"\\addcontentsmarkwop{${1:file}}{${2:type}}{${3:text}}"
@@ -281,7 +265,7 @@
 	},
 
 
-	"addnumcontentsmark":{
+	"addnumcontentsmark{}{}{}":{
 		"prefix":"addnumcontentsmark",
 		"body":[
 			"\\addnumcontentsmark{${1:file}}{${2:type}}{${3:text}}"
@@ -289,15 +273,7 @@
 	},
 
 
-	"addtocmark":{
-		"prefix":"addtocmark",
-		"body":[
-			"\\addtocmark[${4:num}]{${1:file}}{${2:type}}{${3:text}}"
-		]
-	},
-
-
-	"addtocmark":{
+	"addtocmark{}{}{}":{
 		"prefix":"addtocmark",
 		"body":[
 			"\\addtocmark{${1:file}}{${2:type}}{${3:text}}"
@@ -313,7 +289,7 @@
 	},
 
 
-	"authcount":{
+	"authcount{}":{
 		"prefix":"authcount",
 		"body":[
 			"\\authcount{${1:arg}}"
@@ -697,7 +673,7 @@
 	},
 
 
-	"tocauthor":{
+	"tocauthor{}":{
 		"prefix":"tocauthor",
 		"body":[
 			"\\tocauthor{${1:name}}"
@@ -785,7 +761,7 @@
 	},
 
 
-	"toctitle":{
+	"toctitle{}":{
 		"prefix":"toctitle",
 		"body":[
 			"\\toctitle{${1:text}}"
@@ -817,22 +793,36 @@
 	},
 
 
-	"theorem":{
-		"prefix":"theorem",
+	"spnewtheorem*{}{}{}{}":{
+		"prefix":"*spnewtheorem",
 		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
+			"\\spnewtheorem*{${1:envname}}{${2:caption}}{${3:cap font}}{${4:body font}}"
 		]
 	},
 
 
-	"definition":{
-		"prefix":"definition",
+	"spnewtheorem{}[]{}{}{}":{
+		"prefix":"spnewtheorem",
 		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
+			"\\spnewtheorem{${1:envname}}[${5:numbered like}]{${2:caption}}{${3:cap font}}{${4:body font}}"
+		]
+	},
+
+
+	"addtocmark[]{}{}{}":{
+		"prefix":"addtocmark",
+		"body":[
+			"\\addtocmark[${4:num}]{${1:file}}{${2:type}}{${3:text}}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
 		]
 	},
 
@@ -841,7 +831,7 @@
 		"prefix":"claim",
 		"body":[
 			"\\begin{claim}",
-			"\t$1",
+				"\t$1",
 			"\\end{claim}"
 		]
 	},
@@ -851,7 +841,7 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
 			"\\end{proof}"
 		]
 	},
@@ -861,48 +851,8 @@
 		"prefix":"case",
 		"body":[
 			"\\begin{case}",
-			"\t$1",
+				"\t$1",
 			"\\end{case}"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\begin{exercise}",
-			"\t$1",
-			"\\end{exercise}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"property":{
-		"prefix":"property",
-		"body":[
-			"\\begin{property}",
-			"\t$1",
-			"\\end{property}"
-		]
-	},
-
-
-	"note":{
-		"prefix":"note",
-		"body":[
-			"\\begin{note}",
-			"\t$1",
-			"\\end{note}"
 		]
 	},
 
@@ -911,68 +861,28 @@
 		"prefix":"conjecture",
 		"body":[
 			"\\begin{conjecture}",
-			"\t$1",
+				"\t$1",
 			"\\end{conjecture}"
 		]
 	},
 
 
-	"credits":{
-		"prefix":"credits",
+	"corollary":{
+		"prefix":"corollary",
 		"body":[
-			"\\begin{credits}",
-			"\t$1",
-			"\\end{credits}"
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
 		]
 	},
 
 
-	"proposition":{
-		"prefix":"proposition",
+	"definition":{
+		"prefix":"definition",
 		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-			"\t$1",
-			"\\end{solution}"
-		]
-	},
-
-
-	"problem":{
-		"prefix":"problem",
-		"body":[
-			"\\begin{problem}",
-			"\t$1",
-			"\\end{problem}"
-		]
-	},
-
-
-	"remark":{
-		"prefix":"remark",
-		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
-		]
-	},
-
-
-	"lemma":{
-		"prefix":"lemma",
-		"body":[
-			"\\begin{lemma}",
-			"\t$1",
-			"\\end{lemma}"
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
 		]
 	},
 
@@ -981,8 +891,68 @@
 		"prefix":"example",
 		"body":[
 			"\\begin{example}",
-			"\t$1",
+				"\t$1",
 			"\\end{example}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"note":{
+		"prefix":"note",
+		"body":[
+			"\\begin{note}",
+				"\t$1",
+			"\\end{note}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
 		]
 	},
 
@@ -991,8 +961,38 @@
 		"prefix":"question",
 		"body":[
 			"\\begin{question}",
-			"\t$1",
+				"\t$1",
 			"\\end{question}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"credits":{
+		"prefix":"credits",
+		"body":[
+			"\\begin{credits}",
+				"\t$1",
+			"\\end{credits}"
 		]
 	}
 }

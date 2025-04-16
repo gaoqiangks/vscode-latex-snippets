@@ -1,22 +1,6 @@
 {
 
 
-	"subpart*":{
-		"prefix":"subpart*",
-		"body":[
-			"\\subpart*{${1:title}}"
-		]
-	},
-
-
-	"subpart":{
-		"prefix":"subpart",
-		"body":[
-			"\\subpart[${2:short title}]{${1:title}}"
-		]
-	},
-
-
 	"subpartname":{
 		"prefix":"subpartname",
 		"body":[
@@ -25,7 +9,7 @@
 	},
 
 
-	"subpart":{
+	"subpart{}":{
 		"prefix":"subpart",
 		"body":[
 			"\\subpart{${1:title}}"
@@ -45,6 +29,22 @@
 		"prefix":"subpartname",
 		"body":[
 			"\\subpartname"
+		]
+	},
+
+
+	"subpart*{}":{
+		"prefix":"*subpart",
+		"body":[
+			"\\subpart*{${1:title}}"
+		]
+	},
+
+
+	"subpart[]{}":{
+		"prefix":"subpart",
+		"body":[
+			"\\subpart[${2:short title}]{${1:title}}"
 		]
 	}
 }

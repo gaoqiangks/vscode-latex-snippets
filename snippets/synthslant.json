@@ -17,7 +17,7 @@
 	},
 
 
-	"textsynthslant":{
+	"textsynthslant{}":{
 		"prefix":"textsynthslant",
 		"body":[
 			"\\textsynthslant{${1:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"textsynthuprightitalic":{
+	"textsynthuprightitalic{}":{
 		"prefix":"textsynthuprightitalic",
 		"body":[
 			"\\textsynthuprightitalic{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"synthslantbox":{
+	"synthslantbox{}{}":{
 		"prefix":"synthslantbox",
 		"body":[
 			"\\synthslantbox{${1:slant}}{${2:text}}"
@@ -57,22 +57,22 @@
 	},
 
 
-	"negslantenvironment":{
-		"prefix":"negslantenvironment",
-		"body":[
-			"\\begin{negslantenvironment}",
-			"\t$1",
-			"\\end{negslantenvironment}"
-		]
-	},
-
-
 	"slantenvironment":{
 		"prefix":"slantenvironment",
 		"body":[
 			"\\begin{slantenvironment}",
-			"\t$1",
+				"\t$1",
 			"\\end{slantenvironment}"
+		]
+	},
+
+
+	"negslantenvironment":{
+		"prefix":"negslantenvironment",
+		"body":[
+			"\\begin{negslantenvironment}",
+				"\t$1",
+			"\\end{negslantenvironment}"
 		]
 	}
 }

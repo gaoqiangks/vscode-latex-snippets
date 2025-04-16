@@ -1,7 +1,7 @@
 {
 
 
-	"phon":{
+	"phon{}{}":{
 		"prefix":"phon",
 		"body":[
 			"\\phon{${1:input}}{${2:output}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"phonc":{
+	"phonc{}{}{}":{
 		"prefix":"phonc",
 		"body":[
 			"\\phonc{${1:input}}{${2:output}}{${3:context}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"phonl":{
+	"phonl{}{}{}":{
 		"prefix":"phonl",
 		"body":[
 			"\\phonl{${1:input}}{${2:output}}{${3:context}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"phonr":{
+	"phonr{}{}{}":{
 		"prefix":"phonr",
 		"body":[
 			"\\phonr{${1:input}}{${2:output}}{${3:context}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"phonb":{
+	"phonb{}{}{}":{
 		"prefix":"phonb",
 		"body":[
 			"\\phonb{${1:input}}{${2:output}}{${3:context}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"oneof":{
+	"oneof{}":{
 		"prefix":"oneof",
 		"body":[
 			"\\oneof{${1:contexts}}"
@@ -49,26 +49,10 @@
 	},
 
 
-	"oneof":{
-		"prefix":"oneof",
-		"body":[
-			"\\oneof[${2:alignment%keyvals}]{${1:contexts}}"
-		]
-	},
-
-
-	"phonfeat":{
+	"phonfeat{}":{
 		"prefix":"phonfeat",
 		"body":[
 			"\\phonfeat{${1:features}}"
-		]
-	},
-
-
-	"phonfeat":{
-		"prefix":"phonfeat",
-		"body":[
-			"\\phonfeat[${2:alignment%keyvals}]{${1:features}}"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"env":{
+	"env{}{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:output}}{${2:env}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"envl":{
+	"envl{}{}":{
 		"prefix":"envl",
 		"body":[
 			"\\envl{${1:output}}{${2:env}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"envr":{
+	"envr{}{}":{
 		"prefix":"envr",
 		"body":[
 			"\\envr{${1:output}}{${2:env}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"envb":{
+	"envb{}{}":{
 		"prefix":"envb",
 		"body":[
 			"\\envb{${1:output}}{${2:env}}"
@@ -113,34 +97,50 @@
 	},
 
 
-	"env*":{
-		"prefix":"env*",
+	"env*{}{}":{
+		"prefix":"*env",
 		"body":[
 			"\\env*{${1:output}}{${2:env}}"
 		]
 	},
 
 
-	"envl*":{
-		"prefix":"envl*",
+	"envl*{}{}":{
+		"prefix":"*envl",
 		"body":[
 			"\\envl*{${1:output}}{${2:env}}"
 		]
 	},
 
 
-	"envr*":{
-		"prefix":"envr*",
+	"envr*{}{}":{
+		"prefix":"*envr",
 		"body":[
 			"\\envr*{${1:output}}{${2:env}}"
 		]
 	},
 
 
-	"envb*":{
-		"prefix":"envb*",
+	"envb*{}{}":{
+		"prefix":"*envb",
 		"body":[
 			"\\envb*{${1:output}}{${2:env}}"
+		]
+	},
+
+
+	"oneof[]{}":{
+		"prefix":"oneof",
+		"body":[
+			"\\oneof[${2:alignment%keyvals}]{${1:contexts}}"
+		]
+	},
+
+
+	"phonfeat[]{}":{
+		"prefix":"phonfeat",
+		"body":[
+			"\\phonfeat[${2:alignment%keyvals}]{${1:features}}"
 		]
 	}
 }

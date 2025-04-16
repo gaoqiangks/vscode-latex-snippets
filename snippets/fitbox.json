@@ -1,7 +1,7 @@
 {
 
 
-	"fitbox":{
+	"fitbox{}":{
 		"prefix":"fitbox",
 		"body":[
 			"\\fitbox{${1:content%text}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"fitbox":{
-		"prefix":"fitbox",
-		"body":[
-			"\\fitbox[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"fitbox*":{
-		"prefix":"fitbox*",
-		"body":[
-			"\\fitbox*{${1:content%text}}"
-		]
-	},
-
-
-	"fitbox*":{
-		"prefix":"fitbox*",
-		"body":[
-			"\\fitbox*[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"fitboxset":{
+	"fitboxset{}":{
 		"prefix":"fitboxset",
 		"body":[
 			"\\fitboxset{${1:options%keyvals}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"SetFitboxLayout":{
+	"SetFitboxLayout{}{}":{
 		"prefix":"SetFitboxLayout",
 		"body":[
 			"\\SetFitboxLayout{${1:rows}}{${2:columns}}"
@@ -65,7 +41,31 @@
 	},
 
 
-	"SetFitboxLayout":{
+	"fitbox*{}":{
+		"prefix":"*fitbox",
+		"body":[
+			"\\fitbox*{${1:content%text}}"
+		]
+	},
+
+
+	"fitbox*[]{}":{
+		"prefix":"*fitbox",
+		"body":[
+			"\\fitbox*[${2:options%keyvals}]{${1:content%text}}"
+		]
+	},
+
+
+	"fitbox[]{}":{
+		"prefix":"fitbox",
+		"body":[
+			"\\fitbox[${2:options%keyvals}]{${1:content%text}}"
+		]
+	},
+
+
+	"SetFitboxLayout[]{}{}":{
 		"prefix":"SetFitboxLayout",
 		"body":[
 			"\\SetFitboxLayout[${3:options%keyvals}]{${1:rows}}{${2:columns}}"

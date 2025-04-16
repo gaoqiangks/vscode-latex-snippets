@@ -49,7 +49,7 @@
 	},
 
 
-	"SetCatcodeRange":{
+	"SetCatcodeRange{}{}{}":{
 		"prefix":"SetCatcodeRange",
 		"body":[
 			"\\SetCatcodeRange{${1:start}}{${2:end}}{${3:catcode}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"newluatexcatcodetable":{
+	"newluatexcatcodetable{}":{
 		"prefix":"newluatexcatcodetable",
 		"body":[
 			"\\newluatexcatcodetable{${1:catcodetable%cmd}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"RequireLuaModule":{
+	"RequireLuaModule{}":{
 		"prefix":"RequireLuaModule",
 		"body":[
 			"\\RequireLuaModule{${1:file}}"
@@ -113,15 +113,7 @@
 	},
 
 
-	"RequireLuaModule":{
-		"prefix":"RequireLuaModule",
-		"body":[
-			"\\RequireLuaModule{${1:file}}[${2:info}]"
-		]
-	},
-
-
-	"newluatexattribute":{
+	"newluatexattribute{}":{
 		"prefix":"newluatexattribute",
 		"body":[
 			"\\newluatexattribute{${1:attribute}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"setluatexattribute":{
+	"setluatexattribute{}{}":{
 		"prefix":"setluatexattribute",
 		"body":[
 			"\\setluatexattribute{${1:attribute}}{${2:value}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"unsetluatexattribute":{
+	"unsetluatexattribute{}":{
 		"prefix":"unsetluatexattribute",
 		"body":[
 			"\\unsetluatexattribute{${1:attribute}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"luatexluaescapestring":{
+	"luatexluaescapestring{}":{
 		"prefix":"luatexluaescapestring",
 		"body":[
 			"\\luatexluaescapestring{${1:TeX code}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"luatexlatelua":{
+	"luatexlatelua{}":{
 		"prefix":"luatexlatelua",
 		"body":[
 			"\\luatexlatelua{${1:lua code}}"
@@ -165,6 +157,14 @@
 		"prefix":"luatexscantextokens",
 		"body":[
 			"\\luatexscantextokens"
+		]
+	},
+
+
+	"RequireLuaModule{}[]":{
+		"prefix":"RequireLuaModule",
+		"body":[
+			"\\RequireLuaModule{${1:file}}[${2:info}]"
 		]
 	}
 }

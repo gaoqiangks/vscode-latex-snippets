@@ -1,34 +1,10 @@
 {
 
 
-	"newtheoremrep":{
+	"newtheoremrep{}{}":{
 		"prefix":"newtheoremrep",
 		"body":[
 			"\\newtheoremrep{${1:envname}}{${2:title%text}}"
-		]
-	},
-
-
-	"newtheoremrep":{
-		"prefix":"newtheoremrep",
-		"body":[
-			"\\newtheoremrep{${1:envname}}[${3:counter}]{${2:title%text}}"
-		]
-	},
-
-
-	"newtheoremrep":{
-		"prefix":"newtheoremrep",
-		"body":[
-			"\\newtheoremrep{${1:envname}}{${2:title%text}}[${3:countersec}]"
-		]
-	},
-
-
-	"newtheoremrep":{
-		"prefix":"newtheoremrep",
-		"body":[
-			"\\newtheoremrep{${1:envname}}[${3:counter}]{${2:title%text}}[${4:countersec}]"
 		]
 	},
 
@@ -41,7 +17,7 @@
 	},
 
 
-	"appendixsectionformat":{
+	"appendixsectionformat{}{}":{
 		"prefix":"appendixsectionformat",
 		"body":[
 			"\\appendixsectionformat{${1:number}}{${2:title%text}}"
@@ -97,12 +73,56 @@
 	},
 
 
+	"newtheoremrep{}[]{}":{
+		"prefix":"newtheoremrep",
+		"body":[
+			"\\newtheoremrep{${1:envname}}[${3:counter}]{${2:title%text}}"
+		]
+	},
+
+
+	"newtheoremrep{}{}[]":{
+		"prefix":"newtheoremrep",
+		"body":[
+			"\\newtheoremrep{${1:envname}}{${2:title%text}}[${3:countersec}]"
+		]
+	},
+
+
+	"newtheoremrep{}[]{}[]":{
+		"prefix":"newtheoremrep",
+		"body":[
+			"\\newtheoremrep{${1:envname}}[${3:counter}]{${2:title%text}}[${4:countersec}]"
+		]
+	},
+
+
 	"toappendix":{
 		"prefix":"toappendix",
 		"body":[
 			"\\begin{toappendix}",
-			"\t$1",
+				"\t$1",
 			"\\end{toappendix}"
+		]
+	},
+
+
+	"appendixproof":{
+		"prefix":"appendixproof",
+		"body":[
+			"\\begin{appendixproof}",
+				"\t$1",
+			"\\end{appendixproof}"
+		]
+	},
+
+
+	"proofsketch":{
+		"prefix":"proofsketch",
+		"body":[
+			"\\begin{proofsketch}",
+				"\t$1",
+			"\\end{proofsketch}"
 		]
 	},
 
@@ -111,7 +131,7 @@
 		"prefix":"inlineproof",
 		"body":[
 			"\\begin{inlineproof}",
-			"\t$1",
+				"\t$1",
 			"\\end{inlineproof}"
 		]
 	},
@@ -121,28 +141,8 @@
 		"prefix":"nestedproof",
 		"body":[
 			"\\begin{nestedproof}",
-			"\t$1",
+				"\t$1",
 			"\\end{nestedproof}"
-		]
-	},
-
-
-	"proofsketch":{
-		"prefix":"proofsketch",
-		"body":[
-			"\\begin{proofsketch}",
-			"\t$1",
-			"\\end{proofsketch}"
-		]
-	},
-
-
-	"appendixproof":{
-		"prefix":"appendixproof",
-		"body":[
-			"\\begin{appendixproof}",
-			"\t$1",
-			"\\end{appendixproof}"
 		]
 	}
 }

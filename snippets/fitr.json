@@ -9,30 +9,6 @@
 	},
 
 
-	"jdRect":{
-		"prefix":"jdRect",
-		"body":[
-			"\\jdRect[${1:options%keyvals}]"
-		]
-	},
-
-
-	"jdRect*":{
-		"prefix":"jdRect*",
-		"body":[
-			"\\jdRect*{${1:content%text}}"
-		]
-	},
-
-
-	"jdRect*":{
-		"prefix":"jdRect*",
-		"body":[
-			"\\jdRect*[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
 	"restoreOverlayPresets":{
 		"prefix":"restoreOverlayPresets",
 		"body":[
@@ -81,7 +57,7 @@
 	},
 
 
-	"FitRbboxB":{
+	"FitRbboxB{}{}":{
 		"prefix":"FitRbboxB",
 		"body":[
 			"\\FitRbboxB{${1:width}}{${2:height}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"setFitRDest":{
+	"setFitRDest{}{}{}":{
 		"prefix":"setFitRDest",
 		"body":[
 			"\\setFitRDest{${1:width}}{${2:height}}{${3:name}}"
@@ -205,6 +181,30 @@
 		"prefix":"viewMagWintrue",
 		"body":[
 			"\\viewMagWintrue"
+		]
+	},
+
+
+	"jdRect*{}":{
+		"prefix":"*jdRect",
+		"body":[
+			"\\jdRect*{${1:content%text}}"
+		]
+	},
+
+
+	"jdRect*[]{}":{
+		"prefix":"*jdRect",
+		"body":[
+			"\\jdRect*[${2:options%keyvals}]{${1:content%text}}"
+		]
+	},
+
+
+	"jdRect[]":{
+		"prefix":"jdRect",
+		"body":[
+			"\\jdRect[${1:options%keyvals}]"
 		]
 	}
 }

@@ -25,7 +25,7 @@
 	},
 
 
-	"hexboard":{
+	"hexboard{}":{
 		"prefix":"hexboard",
 		"body":[
 			"\\hexboard{${1:number}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"hexbottomsubborder":{
+	"hexbottomsubborder{}{}":{
 		"prefix":"hexbottomsubborder",
 		"body":[
 			"\\hexbottomsubborder{${1:start}}{${2:end}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"hexcell":{
+	"hexcell{}{}":{
 		"prefix":"hexcell",
 		"body":[
 			"\\hexcell{${1:x}}{${2:y}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"hexcellshaded":{
-		"prefix":"hexcellshaded",
-		"body":[
-			"\\hexcellshaded[${3:color}]{${1:x}}{${2:y}}"
-		]
-	},
-
-
-	"hexcellshaded":{
+	"hexcellshaded{}{}":{
 		"prefix":"hexcellshaded",
 		"body":[
 			"\\hexcellshaded{${1:x}}{${2:y}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"hexconnect":{
+	"hexconnect{}{}{}{}":{
 		"prefix":"hexconnect",
 		"body":[
 			"\\hexconnect{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"hexcontent":{
+	"hexcontent{}{}{}":{
 		"prefix":"hexcontent",
 		"body":[
 			"\\hexcontent{${1:x}}{${2:y}}{${3:content}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"hexcoord":{
+	"hexcoord{}{}":{
 		"prefix":"hexcoord",
 		"body":[
 			"\\hexcoord{${1:x}}{${2:y}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"hexcounter":{
+	"hexcounter{}{}{}":{
 		"prefix":"hexcounter",
 		"body":[
 			"\\hexcounter{${1:x}}{${2:y}}{${3:player}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"hexcounterlabel":{
+	"hexcounterlabel{}{}{}{}":{
 		"prefix":"hexcounterlabel",
 		"body":[
 			"\\hexcounterlabel{${1:x}}{${2:y}}{${3:player}}{${4:content}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"hexdot":{
+	"hexdot{}{}":{
 		"prefix":"hexdot",
 		"body":[
 			"\\hexdot{${1:x}}{${2:y}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"hexgrid":{
+	"hexgrid{}{}":{
 		"prefix":"hexgrid",
 		"body":[
 			"\\hexgrid{${1:columns}}{${2:rows}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"hexgridnolabel":{
+	"hexgridnolabel{}{}":{
 		"prefix":"hexgridnolabel",
 		"body":[
 			"\\hexgridnolabel{${1:columns}}{${2:rows}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"hexmove":{
+	"hexmove{}{}":{
 		"prefix":"hexmove",
 		"body":[
 			"\\hexmove{${1:x}}{${2:y}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"hexreducing":{
+	"hexreducing{}{}":{
 		"prefix":"hexreducing",
 		"body":[
 			"\\hexreducing{${1:columns}}{${2:rows}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"hexreducingnoborder":{
+	"hexreducingnoborder{}{}":{
 		"prefix":"hexreducingnoborder",
 		"body":[
 			"\\hexreducingnoborder{${1:columns}}{${2:rows}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"hexscale":{
+	"hexscale{}":{
 		"prefix":"hexscale",
 		"body":[
 			"\\hexscale{${1:number}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"hexshadedsubrow":{
+	"hexshadedsubrow{}{}{}":{
 		"prefix":"hexshadedsubrow",
 		"body":[
 			"\\hexshadedsubrow{${1:start}}{${2:end}}{${3:row}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"hexsubrow":{
+	"hexsubrow{}{}{}":{
 		"prefix":"hexsubrow",
 		"body":[
 			"\\hexsubrow{${1:start}}{${2:end}}{${3:row}}"
@@ -273,7 +265,7 @@
 	},
 
 
-	"setcolorA":{
+	"setcolorA{}":{
 		"prefix":"setcolorA",
 		"body":[
 			"\\setcolorA{${1:color}}"
@@ -281,7 +273,7 @@
 	},
 
 
-	"setcolorB":{
+	"setcolorB{}":{
 		"prefix":"setcolorB",
 		"body":[
 			"\\setcolorB{${1:color}}"
@@ -353,12 +345,10 @@
 	},
 
 
-	"hexgamelabels":{
-		"prefix":"hexgamelabels",
+	"hexcellshaded[]{}{}":{
+		"prefix":"hexcellshaded",
 		"body":[
-			"\\begin{hexgamelabels}",
-			"\t$1",
-			"\\end{hexgamelabels}"
+			"\\hexcellshaded[${3:color}]{${1:x}}{${2:y}}"
 		]
 	},
 
@@ -367,7 +357,7 @@
 		"prefix":"hexpicture",
 		"body":[
 			"\\begin{hexpicture}",
-			"\t$1",
+				"\t$1",
 			"\\end{hexpicture}"
 		]
 	},
@@ -377,8 +367,38 @@
 		"prefix":"hexgame",
 		"body":[
 			"\\begin{hexgame}",
-			"\t$1",
+				"\t$1",
 			"\\end{hexgame}"
+		]
+	},
+
+
+	"hexgamelabels":{
+		"prefix":"hexgamelabels",
+		"body":[
+			"\\begin{hexgamelabels}",
+				"\t$1",
+			"\\end{hexgamelabels}"
+		]
+	},
+
+
+	"hexgame":{
+		"prefix":"hexgame",
+		"body":[
+			"\\begin{hexgame}",
+				"\t$1",
+			"\\end{hexgame}"
+		]
+	},
+
+
+	"hexgamelabels":{
+		"prefix":"hexgamelabels",
+		"body":[
+			"\\begin{hexgamelabels}",
+				"\t$1",
+			"\\end{hexgamelabels}"
 		]
 	}
 }

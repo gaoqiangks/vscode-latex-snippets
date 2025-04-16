@@ -1,7 +1,7 @@
 {
 
 
-	"bra":{
+	"bra{}":{
 		"prefix":"bra",
 		"body":[
 			"\\bra{${1:arg%formula}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ket":{
+	"ket{}":{
 		"prefix":"ket",
 		"body":[
 			"\\ket{${1:arg%formula}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ip":{
+	"ip{}{}":{
 		"prefix":"ip",
 		"body":[
 			"\\ip{${1:arg1%formula}}{${2:arg2%formula}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"melem":{
+	"melem{}{}{}":{
 		"prefix":"melem",
 		"body":[
 			"\\melem{${1:arg1%formula}}{${2:arg2%formula}}{${3:arg3%formula}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"expval":{
+	"expval{}":{
 		"prefix":"expval",
 		"body":[
 			"\\expval{${1:arg%formula}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"op":{
+	"op{}{}":{
 		"prefix":"op",
 		"body":[
 			"\\op{${1:arg1%formula}}{${2:arg2%formula}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"Qcircuit ":{
+	"Qcircuit {}":{
 		"prefix":"Qcircuit ",
 		"body":[
 			"\\Qcircuit {${1:matrix}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"barrier":{
-		"prefix":"barrier",
-		"body":[
-			"\\barrier[${2:length}]{${1:integer}}"
-		]
-	},
-
-
-	"barrier":{
+	"barrier{}":{
 		"prefix":"barrier",
 		"body":[
 			"\\barrier{${1:integer}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"cctrl":{
+	"cctrl{}":{
 		"prefix":"cctrl",
 		"body":[
 			"\\cctrl{${1:integer}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"cctrlo":{
+	"cctrlo{}":{
 		"prefix":"cctrlo",
 		"body":[
 			"\\cctrlo{${1:integer}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"cds":{
+	"cds{}{}":{
 		"prefix":"cds",
 		"body":[
 			"\\cds{${1:integer}}{${2:label}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"cghost":{
+	"cghost{}":{
 		"prefix":"cghost",
 		"body":[
 			"\\cghost{${1:arg}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"ctrl":{
+	"ctrl{}":{
 		"prefix":"ctrl",
 		"body":[
 			"\\ctrl{${1:integer}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"ctrlo":{
+	"ctrlo{}":{
 		"prefix":"ctrlo",
 		"body":[
 			"\\ctrlo{${1:integer}}"
@@ -145,26 +137,10 @@
 	},
 
 
-	"cw":{
-		"prefix":"cw",
-		"body":[
-			"\\cw[${1:integer}]"
-		]
-	},
-
-
 	"cwa":{
 		"prefix":"cwa",
 		"body":[
 			"\\cwa"
-		]
-	},
-
-
-	"cwa":{
-		"prefix":"cwa",
-		"body":[
-			"\\cwa[${1:integer}]"
 		]
 	},
 
@@ -177,15 +153,7 @@
 	},
 
 
-	"cwx":{
-		"prefix":"cwx",
-		"body":[
-			"\\cwx[${1:integer}]"
-		]
-	},
-
-
-	"dstick":{
+	"dstick{}":{
 		"prefix":"dstick",
 		"body":[
 			"\\dstick{${1:label}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"gate":{
+	"gate{}":{
 		"prefix":"gate",
 		"body":[
 			"\\gate{${1:label}}"
@@ -201,7 +169,7 @@
 	},
 
 
-	"gategroup":{
+	"gategroup{}{}{}{}{}{}":{
 		"prefix":"gategroup",
 		"body":[
 			"\\gategroup{${1:row1}}{${2:col1}}{${3:row2}}{${4:col2}}{${5:length}}{${6:hl-type}}"
@@ -209,7 +177,7 @@
 	},
 
 
-	"ghost":{
+	"ghost{}":{
 		"prefix":"ghost",
 		"body":[
 			"\\ghost{${1:arg}}"
@@ -217,7 +185,7 @@
 	},
 
 
-	"inputgroup":{
+	"inputgroup{}{}{}{}":{
 		"prefix":"inputgroup",
 		"body":[
 			"\\inputgroup{${1:row1}}{${2:row2}}{${3:length}}{${4:label}}"
@@ -225,7 +193,7 @@
 	},
 
 
-	"inputgrouph":{
+	"inputgrouph{}{}{}{}{}":{
 		"prefix":"inputgrouph",
 		"body":[
 			"\\inputgrouph{${1:row1}}{${2:row2}}{${3:length1}}{${4:label}}{${5:length2}}"
@@ -233,7 +201,7 @@
 	},
 
 
-	"inputgroupv":{
+	"inputgroupv{}{}{}{}{}":{
 		"prefix":"inputgroupv",
 		"body":[
 			"\\inputgroupv{${1:row1}}{${2:row2}}{${3:length1}}{${4:length2}}{${5:label}}"
@@ -241,7 +209,7 @@
 	},
 
 
-	"link":{
+	"link{}{}":{
 		"prefix":"link",
 		"body":[
 			"\\link{${1:integer1}}{${2:integer2}}"
@@ -249,7 +217,7 @@
 	},
 
 
-	"lstick":{
+	"lstick{}":{
 		"prefix":"lstick",
 		"body":[
 			"\\lstick{${1:label}}"
@@ -257,7 +225,7 @@
 	},
 
 
-	"measure":{
+	"measure{}":{
 		"prefix":"measure",
 		"body":[
 			"\\measure{${1:label}}"
@@ -265,7 +233,7 @@
 	},
 
 
-	"measureD":{
+	"measureD{}":{
 		"prefix":"measureD",
 		"body":[
 			"\\measureD{${1:label}}"
@@ -273,7 +241,7 @@
 	},
 
 
-	"measuretab":{
+	"measuretab{}":{
 		"prefix":"measuretab",
 		"body":[
 			"\\measuretab{${1:label}}"
@@ -289,7 +257,7 @@
 	},
 
 
-	"meterB":{
+	"meterB{}":{
 		"prefix":"meterB",
 		"body":[
 			"\\meterB{${1:label}}"
@@ -305,7 +273,7 @@
 	},
 
 
-	"multigate":{
+	"multigate{}{}":{
 		"prefix":"multigate",
 		"body":[
 			"\\multigate{${1:integer}}{${2:label}}"
@@ -313,7 +281,7 @@
 	},
 
 
-	"multimeasure":{
+	"multimeasure{}{}":{
 		"prefix":"multimeasure",
 		"body":[
 			"\\multimeasure{${1:integer}}{${2:label}}"
@@ -321,7 +289,7 @@
 	},
 
 
-	"multimeasureD":{
+	"multimeasureD{}{}":{
 		"prefix":"multimeasureD",
 		"body":[
 			"\\multimeasureD{${1:integer}}{${2:label}}"
@@ -329,7 +297,7 @@
 	},
 
 
-	"nghost":{
+	"nghost{}":{
 		"prefix":"nghost",
 		"body":[
 			"\\nghost{${1:arg}}"
@@ -337,7 +305,7 @@
 	},
 
 
-	"pureghost":{
+	"pureghost{}":{
 		"prefix":"pureghost",
 		"body":[
 			"\\pureghost{${1:arg}}"
@@ -345,7 +313,7 @@
 	},
 
 
-	"push":{
+	"push{}":{
 		"prefix":"push",
 		"body":[
 			"\\push{${1:label}}"
@@ -369,26 +337,10 @@
 	},
 
 
-	"qw":{
-		"prefix":"qw",
-		"body":[
-			"\\qw[${1:integer}]"
-		]
-	},
-
-
 	"qwa":{
 		"prefix":"qwa",
 		"body":[
 			"\\qwa"
-		]
-	},
-
-
-	"qwa":{
-		"prefix":"qwa",
-		"body":[
-			"\\qwa[${1:integer}]"
 		]
 	},
 
@@ -401,15 +353,7 @@
 	},
 
 
-	"qwx":{
-		"prefix":"qwx",
-		"body":[
-			"\\qwx[${1:integer}]"
-		]
-	},
-
-
-	"rstick":{
+	"rstick{}":{
 		"prefix":"rstick",
 		"body":[
 			"\\rstick{${1:label}}"
@@ -417,7 +361,7 @@
 	},
 
 
-	"sgate":{
+	"sgate{}{}":{
 		"prefix":"sgate",
 		"body":[
 			"\\sgate{${1:label}}{${2:integer}}"
@@ -425,7 +369,7 @@
 	},
 
 
-	"smeterB":{
+	"smeterB{}{}":{
 		"prefix":"smeterB",
 		"body":[
 			"\\smeterB{${1:label}}{${2:integer}}"
@@ -441,10 +385,66 @@
 	},
 
 
-	"ustick":{
+	"ustick{}":{
 		"prefix":"ustick",
 		"body":[
 			"\\ustick{${1:label}}"
+		]
+	},
+
+
+	"barrier[]{}":{
+		"prefix":"barrier",
+		"body":[
+			"\\barrier[${2:length}]{${1:integer}}"
+		]
+	},
+
+
+	"cw[]":{
+		"prefix":"cw",
+		"body":[
+			"\\cw[${1:integer}]"
+		]
+	},
+
+
+	"cwa[]":{
+		"prefix":"cwa",
+		"body":[
+			"\\cwa[${1:integer}]"
+		]
+	},
+
+
+	"cwx[]":{
+		"prefix":"cwx",
+		"body":[
+			"\\cwx[${1:integer}]"
+		]
+	},
+
+
+	"qw[]":{
+		"prefix":"qw",
+		"body":[
+			"\\qw[${1:integer}]"
+		]
+	},
+
+
+	"qwa[]":{
+		"prefix":"qwa",
+		"body":[
+			"\\qwa[${1:integer}]"
+		]
+	},
+
+
+	"qwx[]":{
+		"prefix":"qwx",
+		"body":[
+			"\\qwx[${1:integer}]"
 		]
 	}
 }

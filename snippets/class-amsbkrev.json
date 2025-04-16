@@ -1,7 +1,7 @@
 {
 
 
-	"reviewer":{
+	"reviewer{}":{
 		"prefix":"reviewer",
 		"body":[
 			"\\reviewer{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"publisher":{
+	"publisher{}":{
 		"prefix":"publisher",
 		"body":[
 			"\\publisher{${1:name}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"publaddr":{
+	"publaddr{}":{
 		"prefix":"publaddr",
 		"body":[
 			"\\publaddr{${1:address%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"yr":{
+	"yr{}":{
 		"prefix":"yr",
 		"body":[
 			"\\yr{${1:year}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"pages":{
+	"pages{}":{
 		"prefix":"pages",
 		"body":[
 			"\\pages{${1:pages}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"binding":{
+	"binding{}":{
 		"prefix":"binding",
 		"body":[
 			"\\binding{${1:hardcover|softcover}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"price":{
+	"price{}":{
 		"prefix":"price",
 		"body":[
 			"\\price{${1:price}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"isbn":{
+	"isbn{}":{
 		"prefix":"isbn",
 		"body":[
 			"\\isbn{${1:ISBN}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"revtransl":{
+	"revtransl{}":{
 		"prefix":"revtransl",
 		"body":[
 			"\\revtransl{${1:review translator}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"msc":{
+	"msc{}":{
 		"prefix":"msc",
 		"body":[
 			"\\msc{${1:msc}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"editor":{
+	"editor{}":{
 		"prefix":"editor",
 		"body":[
 			"\\editor{${1:name}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"bktransl":{
+	"bktransl{}":{
 		"prefix":"bktransl",
 		"body":[
 			"\\bktransl{${1:book translator}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"bkcontrib":{
+	"bkcontrib{}":{
 		"prefix":"bkcontrib",
 		"body":[
 			"\\bkcontrib{${1:name}}"
@@ -105,15 +105,7 @@
 	},
 
 
-	"bkcontrib":{
-		"prefix":"bkcontrib",
-		"body":[
-			"\\bkcontrib[${2:prefix text%text}]{${1:name}}"
-		]
-	},
-
-
-	"edition":{
+	"edition{}":{
 		"prefix":"edition",
 		"body":[
 			"\\edition{${1:edition}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"series":{
+	"series{}":{
 		"prefix":"series",
 		"body":[
 			"\\series{${1:series}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"serieseditor":{
+	"serieseditor{}":{
 		"prefix":"serieseditor",
 		"body":[
 			"\\serieseditor{${1:name}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"volume":{
+	"volume{}":{
 		"prefix":"volume",
 		"body":[
 			"\\volume{${1:volume}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"journal":{
+	"journal{}":{
 		"prefix":"journal",
 		"body":[
 			"\\journal{${1:journal}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"cmheight":{
+	"cmheight{}":{
 		"prefix":"cmheight",
 		"body":[
 			"\\cmheight{${1:number}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"note":{
+	"note{}":{
 		"prefix":"note",
 		"body":[
 			"\\note{${1:text}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"lang":{
+	"lang{}":{
 		"prefix":"lang",
 		"body":[
 			"\\lang{${1:language}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"altpages":{
+	"altpages{}":{
 		"prefix":"altpages",
 		"body":[
 			"\\altpages{${1:pages}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"ednote":{
+	"ednote{}":{
 		"prefix":"ednote",
 		"body":[
 			"\\ednote{${1:text}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"num":{
+	"num{}":{
 		"prefix":"num",
 		"body":[
 			"\\num{${1:arg}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -297,12 +289,10 @@
 	},
 
 
-	"revinfo":{
-		"prefix":"revinfo",
+	"bkcontrib[]{}":{
+		"prefix":"bkcontrib",
 		"body":[
-			"\\begin{revinfo}",
-			"\t$1",
-			"\\end{revinfo}"
+			"\\bkcontrib[${2:prefix text%text}]{${1:name}}"
 		]
 	},
 
@@ -311,7 +301,7 @@
 		"prefix":"bookinfo",
 		"body":[
 			"\\begin{bookinfo}",
-			"\t$1",
+				"\t$1",
 			"\\end{bookinfo}"
 		]
 	},
@@ -321,8 +311,18 @@
 		"prefix":"review",
 		"body":[
 			"\\begin{review}",
-			"\t$1",
+				"\t$1",
 			"\\end{review}"
+		]
+	},
+
+
+	"revinfo":{
+		"prefix":"revinfo",
+		"body":[
+			"\\begin{revinfo}",
+				"\t$1",
+			"\\end{revinfo}"
 		]
 	}
 }

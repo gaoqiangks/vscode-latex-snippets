@@ -1,7 +1,7 @@
 {
 
 
-	"Figure":{
+	"Figure{}":{
 		"prefix":"Figure",
 		"body":[
 			"\\Figure{${1:imagefile}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"Figure":{
-		"prefix":"Figure",
-		"body":[
-			"\\Figure[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"Figure*":{
-		"prefix":"Figure*",
-		"body":[
-			"\\Figure*{${1:imagefile}}"
-		]
-	},
-
-
-	"Figure*":{
-		"prefix":"Figure*",
-		"body":[
-			"\\Figure*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"easyfigdefault":{
+	"easyfigdefault{}":{
 		"prefix":"easyfigdefault",
 		"body":[
 			"\\easyfigdefault{${1:options%keyvals}}"
@@ -41,10 +17,34 @@
 	},
 
 
-	"easyfigdefault*":{
-		"prefix":"easyfigdefault*",
+	"Figure*{}":{
+		"prefix":"*Figure",
+		"body":[
+			"\\Figure*{${1:imagefile}}"
+		]
+	},
+
+
+	"Figure*[]{}":{
+		"prefix":"*Figure",
+		"body":[
+			"\\Figure*[${2:options%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"easyfigdefault*{}":{
+		"prefix":"*easyfigdefault",
 		"body":[
 			"\\easyfigdefault*{${1:options%keyvals}}"
+		]
+	},
+
+
+	"Figure[]{}":{
+		"prefix":"Figure",
+		"body":[
+			"\\Figure[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	}
 }

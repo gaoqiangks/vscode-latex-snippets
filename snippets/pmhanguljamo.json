@@ -1,7 +1,7 @@
 {
 
 
-	"jamoword":{
+	"jamoword{}":{
 		"prefix":"jamoword",
 		"body":[
 			"\\jamoword{${1:words}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"jmcc":{
+	"jmcc{}":{
 		"prefix":"jmcc",
 		"body":[
 			"\\jmcc{${1:single jamo}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"jamoul":{
+	"jamoul{}{}":{
 		"prefix":"jamoul",
 		"body":[
 			"\\jamoul{${1:ulem csname}}{${2:jamo text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"jamotextcmd":{
+	"jamotextcmd{}":{
 		"prefix":"jamotextcmd",
 		"body":[
 			"\\jamotextcmd{${1:arg}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"setpmhangulfont":{
+	"setpmhangulfont{}":{
 		"prefix":"setpmhangulfont",
 		"body":[
 			"\\setpmhangulfont{${1:font name}}"
@@ -89,15 +89,7 @@
 	},
 
 
-	"setpmhangulfont":{
-		"prefix":"setpmhangulfont",
-		"body":[
-			"\\setpmhangulfont{${1:font name}}[${2:font features}]"
-		]
-	},
-
-
-	"hg":{
+	"hg{}":{
 		"prefix":"hg",
 		"body":[
 			"\\hg{${1:words}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"frcc":{
+	"frcc{}":{
 		"prefix":"frcc",
 		"body":[
 			"\\frcc{${1:char}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"AddRule":{
+	"AddRule{}{}":{
 		"prefix":"AddRule",
 		"body":[
 			"\\AddRule{${1:cho|${3:jung}|jong}}{${2:keyvals}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"RenewVowels":{
+	"RenewVowels{}":{
 		"prefix":"RenewVowels",
 		"body":[
 			"\\RenewVowels{${1:vowels}}"
@@ -217,7 +209,7 @@
 	},
 
 
-	"RenewLeadingZero":{
+	"RenewLeadingZero{}":{
 		"prefix":"RenewLeadingZero",
 		"body":[
 			"\\RenewLeadingZero{${1:arg}}"
@@ -225,7 +217,7 @@
 	},
 
 
-	"hg":{
+	"hg{}":{
 		"prefix":"hg",
 		"body":[
 			"\\hg{${1:words}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"frcc":{
+	"frcc{}":{
 		"prefix":"frcc",
 		"body":[
 			"\\frcc{${1:char}}"
@@ -329,7 +321,7 @@
 	},
 
 
-	"AddRule":{
+	"AddRule{}{}":{
 		"prefix":"AddRule",
 		"body":[
 			"\\AddRule{${1:cho|${3:jung}|jong}}{${2:keyvals}}"
@@ -337,7 +329,7 @@
 	},
 
 
-	"RenewVowels":{
+	"RenewVowels{}":{
 		"prefix":"RenewVowels",
 		"body":[
 			"\\RenewVowels{${1:vowels}}"
@@ -345,7 +337,7 @@
 	},
 
 
-	"RenewLeadingZero":{
+	"RenewLeadingZero{}":{
 		"prefix":"RenewLeadingZero",
 		"body":[
 			"\\RenewLeadingZero{${1:arg}}"
@@ -705,11 +697,19 @@
 	},
 
 
+	"setpmhangulfont{}[]":{
+		"prefix":"setpmhangulfont",
+		"body":[
+			"\\setpmhangulfont{${1:font name}}[${2:font features}]"
+		]
+	},
+
+
 	"jamotext":{
 		"prefix":"jamotext",
 		"body":[
 			"\\begin{jamotext}",
-			"\t$1",
+				"\t$1",
 			"\\end{jamotext}"
 		]
 	}

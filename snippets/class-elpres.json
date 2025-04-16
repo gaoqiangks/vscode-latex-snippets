@@ -1,7 +1,7 @@
 {
 
 
-	"distance":{
+	"distance{}":{
 		"prefix":"distance",
 		"body":[
 			"\\distance{${1:number}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"auvimm":{
+	"auvimm{}{}":{
 		"prefix":"auvimm",
 		"body":[
 			"\\auvimm{${1:text}}{${2:media file%file}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"fromlinktext":{
+	"fromlinktext{}{}":{
 		"prefix":"fromlinktext",
 		"body":[
 			"\\fromlinktext{${1:text}}{${2:link label}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"totargettext":{
+	"totargettext{}{}":{
 		"prefix":"totargettext",
 		"body":[
 			"\\totargettext{${1:text}}{${2:link label}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"slidetitlecolor":{
+	"slidetitlecolor{}":{
 		"prefix":"slidetitlecolor",
 		"body":[
 			"\\slidetitlecolor{${1:color}}"
@@ -73,30 +73,10 @@
 	},
 
 
-	"abstand":{
+	"abstand{}":{
 		"prefix":"abstand",
 		"body":[
 			"\\abstand{${1:number}}"
-		]
-	},
-
-
-	"cdescription":{
-		"prefix":"cdescription",
-		"body":[
-			"\\begin{cdescription}",
-			"\t$1",
-			"\\end{cdescription}"
-		]
-	},
-
-
-	"cenumerate":{
-		"prefix":"cenumerate",
-		"body":[
-			"\\begin{cenumerate}",
-			"\t$1",
-			"\\end{cenumerate}"
 		]
 	},
 
@@ -105,7 +85,7 @@
 		"prefix":"psli",
 		"body":[
 			"\\begin{psli}",
-			"\t$1",
+				"\t$1",
 			"\\end{psli}"
 		]
 	},
@@ -115,7 +95,7 @@
 		"prefix":"rsli",
 		"body":[
 			"\\begin{rsli}",
-			"\t$1",
+				"\t$1",
 			"\\end{rsli}"
 		]
 	},
@@ -125,8 +105,38 @@
 		"prefix":"citemize",
 		"body":[
 			"\\begin{citemize}",
-			"\t$1",
+				"\t$1",
 			"\\end{citemize}"
+		]
+	},
+
+
+	"cenumerate":{
+		"prefix":"cenumerate",
+		"body":[
+			"\\begin{cenumerate}",
+				"\t$1",
+			"\\end{cenumerate}"
+		]
+	},
+
+
+	"cdescription":{
+		"prefix":"cdescription",
+		"body":[
+			"\\begin{cdescription}",
+				"\t$1",
+			"\\end{cdescription}"
+		]
+	},
+
+
+	"psli":{
+		"prefix":"psli",
+		"body":[
+			"\\begin{psli}",
+				"\t$1",
+			"\\end{psli}"
 		]
 	}
 }

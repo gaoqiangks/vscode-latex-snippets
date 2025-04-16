@@ -1,7 +1,7 @@
 {
 
 
-	"longest":{
+	"longest{}":{
 		"prefix":"longest",
 		"body":[
 			"\\longest{${1:song line}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"inputsong":{
+	"inputsong{}{}":{
 		"prefix":"inputsong",
 		"body":[
 			"\\inputsong{${1:file}}{${2:stanzas per slide}}"
@@ -25,26 +25,26 @@
 	},
 
 
-	"inputsong":{
-		"prefix":"inputsong",
-		"body":[
-			"\\inputsong{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
-		]
-	},
-
-
-	"inputsong*":{
-		"prefix":"inputsong*",
+	"inputsong*{}{}":{
+		"prefix":"*inputsong",
 		"body":[
 			"\\inputsong*{${1:file}}{${2:stanzas per slide}}"
 		]
 	},
 
 
-	"inputsong*":{
-		"prefix":"inputsong*",
+	"inputsong*{}{}[]":{
+		"prefix":"*inputsong",
 		"body":[
 			"\\inputsong*{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
+		]
+	},
+
+
+	"inputsong{}{}[]":{
+		"prefix":"inputsong",
+		"body":[
+			"\\inputsong{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
 		]
 	},
 
@@ -53,28 +53,8 @@
 		"prefix":"song",
 		"body":[
 			"\\begin{song}",
-			"\t$1",
+				"\t$1",
 			"\\end{song}"
-		]
-	},
-
-
-	"refrain":{
-		"prefix":"refrain",
-		"body":[
-			"\\begin{refrain}",
-			"\t$1",
-			"\\end{refrain}"
-		]
-	},
-
-
-	"final":{
-		"prefix":"final",
-		"body":[
-			"\\begin{final}",
-			"\t$1",
-			"\\end{final}"
 		]
 	},
 
@@ -83,8 +63,18 @@
 		"prefix":"intro",
 		"body":[
 			"\\begin{intro}",
-			"\t$1",
+				"\t$1",
 			"\\end{intro}"
+		]
+	},
+
+
+	"refrain":{
+		"prefix":"refrain",
+		"body":[
+			"\\begin{refrain}",
+				"\t$1",
+			"\\end{refrain}"
 		]
 	},
 
@@ -93,8 +83,28 @@
 		"prefix":"couplet",
 		"body":[
 			"\\begin{couplet}",
-			"\t$1",
+				"\t$1",
 			"\\end{couplet}"
+		]
+	},
+
+
+	"final":{
+		"prefix":"final",
+		"body":[
+			"\\begin{final}",
+				"\t$1",
+			"\\end{final}"
+		]
+	},
+
+
+	"song":{
+		"prefix":"song",
+		"body":[
+			"\\begin{song}",
+				"\t$1",
+			"\\end{song}"
 		]
 	}
 }

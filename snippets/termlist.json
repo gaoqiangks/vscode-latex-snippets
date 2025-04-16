@@ -25,31 +25,11 @@
 	},
 
 
-	"term*":{
-		"prefix":"term*",
-		"body":[
-			"\\begin{term*}",
-			"\t$1",
-			"\\end{term*}"
-		]
-	},
-
-
-	"termlist*":{
-		"prefix":"termlist*",
-		"body":[
-			"\\begin{termlist*}",
-			"\t$1",
-			"\\end{termlist*}"
-		]
-	},
-
-
 	"termlist":{
 		"prefix":"termlist",
 		"body":[
 			"\\begin{termlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{termlist}"
 		]
 	},
@@ -59,8 +39,28 @@
 		"prefix":"term",
 		"body":[
 			"\\begin{term}",
-			"\t$1",
+				"\t$1",
 			"\\end{term}"
+		]
+	},
+
+
+	"termlist*":{
+		"prefix":"*termlist",
+		"body":[
+			"\\begin{termlist*}",
+				"\t$1",
+			"\\end{termlist*}"
+		]
+	},
+
+
+	"term*":{
+		"prefix":"*term",
+		"body":[
+			"\\begin{term*}",
+				"\t$1",
+			"\\end{term*}"
 		]
 	}
 }

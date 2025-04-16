@@ -1,7 +1,7 @@
 {
 
 
-	"forceNewPageGeometry":{
+	"forceNewPageGeometry{}":{
 		"prefix":"forceNewPageGeometry",
 		"body":[
 			"\\forceNewPageGeometry{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"hl":{
+	"hl{}":{
 		"prefix":"hl",
 		"body":[
 			"\\hl{${1:text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"hl":{
-		"prefix":"hl",
-		"body":[
-			"\\hl[${2:color}]{${1:text}}"
-		]
-	},
-
-
-	"st":{
+	"st{}":{
 		"prefix":"st",
 		"body":[
 			"\\st{${1:text}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"st":{
-		"prefix":"st",
-		"body":[
-			"\\st[${2:color}]{${1:text}}"
-		]
-	},
-
-
-	"ul":{
+	"ul{}":{
 		"prefix":"ul",
 		"body":[
 			"\\ul{${1:text}}"
@@ -49,18 +33,34 @@
 	},
 
 
-	"ul":{
-		"prefix":"ul",
+	"namedLabel{}{}":{
+		"prefix":"namedLabel",
 		"body":[
-			"\\ul[${2:color}]{${1:text}}"
+			"\\namedLabel{${1:label}}{${2:name}}"
 		]
 	},
 
 
-	"namedLabel":{
-		"prefix":"namedLabel",
+	"hl[]{}":{
+		"prefix":"hl",
 		"body":[
-			"\\namedLabel{${1:label}}{${2:name}}"
+			"\\hl[${2:color}]{${1:text}}"
+		]
+	},
+
+
+	"st[]{}":{
+		"prefix":"st",
+		"body":[
+			"\\st[${2:color}]{${1:text}}"
+		]
+	},
+
+
+	"ul[]{}":{
+		"prefix":"ul",
+		"body":[
+			"\\ul[${2:color}]{${1:text}}"
 		]
 	}
 }

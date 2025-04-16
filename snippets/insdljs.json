@@ -1,7 +1,7 @@
 {
 
 
-	"flJSStr":{
+	"flJSStr{}{}":{
 		"prefix":"flJSStr",
 		"body":[
 			"\\flJSStr{${1:cmd}}{${2:JS string%definition}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"flJSStr":{
-		"prefix":"flJSStr",
-		"body":[
-			"\\flJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"flJSStr*":{
-		"prefix":"flJSStr*",
-		"body":[
-			"\\flJSStr*{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"flJSStr*":{
-		"prefix":"flJSStr*",
-		"body":[
-			"\\flJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"defineJSStr":{
+	"defineJSStr{}{}":{
 		"prefix":"defineJSStr",
 		"body":[
 			"\\defineJSStr{${1:cmd}}{${2:JS string%definition}}"
@@ -41,7 +17,7 @@
 	},
 
 
-	"fieldJSStr":{
+	"fieldJSStr{}{}":{
 		"prefix":"fieldJSStr",
 		"body":[
 			"\\fieldJSStr{${1:cmd}}{${2:JS string%definition}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"dlJSStr":{
+	"dlJSStr{}{}":{
 		"prefix":"dlJSStr",
 		"body":[
 			"\\dlJSStr{${1:cmd}}{${2:JS string%definition}}"
@@ -57,31 +33,7 @@
 	},
 
 
-	"dlJSStr":{
-		"prefix":"dlJSStr",
-		"body":[
-			"\\dlJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"dlJSStr*":{
-		"prefix":"dlJSStr*",
-		"body":[
-			"\\dlJSStr*{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"dlJSStr*":{
-		"prefix":"dlJSStr*",
-		"body":[
-			"\\dlJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -105,7 +57,7 @@
 	},
 
 
-	"OpenAction":{
+	"OpenAction{}":{
 		"prefix":"OpenAction",
 		"body":[
 			"\\OpenAction{${1:action code}}"
@@ -113,7 +65,7 @@
 	},
 
 
-	"thisPageAction":{
+	"thisPageAction{}{}":{
 		"prefix":"thisPageAction",
 		"body":[
 			"\\thisPageAction{${1:open script}}{${2:close script}}"
@@ -121,7 +73,7 @@
 	},
 
 
-	"JS":{
+	"JS{}":{
 		"prefix":"JS",
 		"body":[
 			"\\JS{${1:string}}"
@@ -129,7 +81,7 @@
 	},
 
 
-	"Named":{
+	"Named{}":{
 		"prefix":"Named",
 		"body":[
 			"\\Named{${1:string}}"
@@ -265,42 +217,50 @@
 	},
 
 
-	"newsegment":{
-		"prefix":"newsegment",
+	"flJSStr*{}{}":{
+		"prefix":"*flJSStr",
 		"body":[
-			"\\begin{newsegment}",
-			"\t$1",
-			"\\end{newsegment}"
+			"\\flJSStr*{${1:cmd}}{${2:JS string%definition}}"
 		]
 	},
 
 
-	"defineJS*":{
-		"prefix":"defineJS*",
+	"flJSStr*[]{}{}":{
+		"prefix":"*flJSStr",
 		"body":[
-			"\\begin{defineJS*}",
-			"\t$1",
-			"\\end{defineJS*}"
+			"\\flJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
 		]
 	},
 
 
-	"defineJS":{
-		"prefix":"defineJS",
+	"dlJSStr*{}{}":{
+		"prefix":"*dlJSStr",
 		"body":[
-			"\\begin{defineJS}",
-			"\t$1",
-			"\\end{defineJS}"
+			"\\dlJSStr*{${1:cmd}}{${2:JS string%definition}}"
 		]
 	},
 
 
-	"execJS":{
-		"prefix":"execJS",
+	"dlJSStr*[]{}{}":{
+		"prefix":"*dlJSStr",
 		"body":[
-			"\\begin{execJS}",
-			"\t$1",
-			"\\end{execJS}"
+			"\\dlJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
+		]
+	},
+
+
+	"flJSStr[]{}{}":{
+		"prefix":"flJSStr",
+		"body":[
+			"\\flJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
+		]
+	},
+
+
+	"dlJSStr[]{}{}":{
+		"prefix":"dlJSStr",
+		"body":[
+			"\\dlJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
 		]
 	},
 
@@ -309,18 +269,98 @@
 		"prefix":"insDLJS",
 		"body":[
 			"\\begin{insDLJS}",
-			"\t$1",
+				"\t$1",
 			"\\end{insDLJS}"
 		]
 	},
 
 
 	"insDLJS*":{
-		"prefix":"insDLJS*",
+		"prefix":"insDLJS",
 		"body":[
 			"\\begin{insDLJS*}",
-			"\t$1",
+				"\t$1",
 			"\\end{insDLJS*}"
+		]
+	},
+
+
+	"newsegment":{
+		"prefix":"newsegment",
+		"body":[
+			"\\begin{newsegment}",
+				"\t$1",
+			"\\end{newsegment}"
+		]
+	},
+
+
+	"execJS":{
+		"prefix":"execJS",
+		"body":[
+			"\\begin{execJS}",
+				"\t$1",
+			"\\end{execJS}"
+		]
+	},
+
+
+	"defineJS":{
+		"prefix":"defineJS",
+		"body":[
+			"\\begin{defineJS}",
+				"\t$1",
+			"\\end{defineJS}"
+		]
+	},
+
+
+	"defineJS*":{
+		"prefix":"defineJS",
+		"body":[
+			"\\begin{defineJS*}",
+				"\t$1",
+			"\\end{defineJS*}"
+		]
+	},
+
+
+	"insDLJS":{
+		"prefix":"insDLJS",
+		"body":[
+			"\\begin{insDLJS}",
+				"\t$1",
+			"\\end{insDLJS}"
+		]
+	},
+
+
+	"insDLJS*":{
+		"prefix":"insDLJS",
+		"body":[
+			"\\begin{insDLJS*}",
+				"\t$1",
+			"\\end{insDLJS*}"
+		]
+	},
+
+
+	"defineJS":{
+		"prefix":"defineJS",
+		"body":[
+			"\\begin{defineJS}",
+				"\t$1",
+			"\\end{defineJS}"
+		]
+	},
+
+
+	"defineJS*":{
+		"prefix":"defineJS",
+		"body":[
+			"\\begin{defineJS*}",
+				"\t$1",
+			"\\end{defineJS*}"
 		]
 	}
 }

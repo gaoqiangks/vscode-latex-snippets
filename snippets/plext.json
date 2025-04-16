@@ -57,7 +57,7 @@
 	},
 
 
-	"layoutfloat":{
+	"layoutfloat{}":{
 		"prefix":"layoutfloat",
 		"body":[
 			"\\layoutfloat{${1:content}}"
@@ -65,15 +65,7 @@
 	},
 
 
-	"layoutfloat":{
-		"prefix":"layoutfloat",
-		"body":[
-			"\\layoutfloat[${2:pos}]{${1:content}}"
-		]
-	},
-
-
-	"layoutfloat":{
+	"layoutfloat(){}":{
 		"prefix":"layoutfloat",
 		"body":[
 			"\\layoutfloat(${2:width},${3:height}){${1:content}}"
@@ -81,31 +73,7 @@
 	},
 
 
-	"layoutfloat":{
-		"prefix":"layoutfloat",
-		"body":[
-			"\\layoutfloat(${3:width},${4:height})[${2:pos}]{${1:content}}"
-		]
-	},
-
-
-	"DeclareLayoutCaption":{
-		"prefix":"DeclareLayoutCaption",
-		"body":[
-			"\\DeclareLayoutCaption{${1:type}}<${3:dir}>(${4:width})[${2:⟨pos1⟩⟨pos2⟩}]"
-		]
-	},
-
-
-	"layoutcaption<dir>":{
-		"prefix":"layoutcaption<dir>",
-		"body":[
-			"\\layoutcaption<dir>(${2:width})[${1:pos}]"
-		]
-	},
-
-
-	"pcaption":{
+	"pcaption{}":{
 		"prefix":"pcaption",
 		"body":[
 			"\\pcaption{${1:text}}"
@@ -113,15 +81,7 @@
 	},
 
 
-	"pcaption":{
-		"prefix":"pcaption",
-		"body":[
-			"\\pcaption[${2:short text}]{${1:text}}"
-		]
-	},
-
-
-	"pbox":{
+	"pbox{}":{
 		"prefix":"pbox",
 		"body":[
 			"\\pbox{${1:obj}}"
@@ -129,23 +89,7 @@
 	},
 
 
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${2:width}]{${1:obj}}"
-		]
-	},
-
-
-	"pbox":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox[${2:width}][${3:pos}]{${1:obj}}"
-		]
-	},
-
-
-	"pbox<dir>":{
+	"pbox<dir>{}":{
 		"prefix":"pbox<dir>",
 		"body":[
 			"\\pbox<dir>{${1:obj}}"
@@ -153,50 +97,10 @@
 	},
 
 
-	"pbox<dir>":{
-		"prefix":"pbox<dir>",
-		"body":[
-			"\\pbox<dir>[${2:width}]{${1:obj}}"
-		]
-	},
-
-
-	"pbox<dir>":{
-		"prefix":"pbox<dir>",
-		"body":[
-			"\\pbox<dir>[${2:width}][${3:pos}]{${1:obj}}"
-		]
-	},
-
-
-	"rensuji":{
+	"rensuji{}":{
 		"prefix":"rensuji",
 		"body":[
 			"\\rensuji{${1:text}}"
-		]
-	},
-
-
-	"rensuji":{
-		"prefix":"rensuji",
-		"body":[
-			"\\rensuji[${2:pos%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"rensuji*":{
-		"prefix":"rensuji*",
-		"body":[
-			"\\rensuji*{${1:text}}"
-		]
-	},
-
-
-	"rensuji*":{
-		"prefix":"rensuji*",
-		"body":[
-			"\\rensuji*[${2:pos%keyvals}]{${1:text}}"
 		]
 	},
 
@@ -209,7 +113,7 @@
 	},
 
 
-	"Kanji":{
+	"Kanji{}":{
 		"prefix":"Kanji",
 		"body":[
 			"\\Kanji{${1:counter}}"
@@ -225,7 +129,7 @@
 	},
 
 
-	"bou":{
+	"bou{}":{
 		"prefix":"bou",
 		"body":[
 			"\\bou{${1:text}}"
@@ -233,10 +137,106 @@
 	},
 
 
-	"kasen":{
+	"kasen{}":{
 		"prefix":"kasen",
 		"body":[
 			"\\kasen{${1:text}}"
+		]
+	},
+
+
+	"rensuji*{}":{
+		"prefix":"*rensuji",
+		"body":[
+			"\\rensuji*{${1:text}}"
+		]
+	},
+
+
+	"rensuji*[]{}":{
+		"prefix":"*rensuji",
+		"body":[
+			"\\rensuji*[${2:pos%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"layoutfloat[]{}":{
+		"prefix":"layoutfloat",
+		"body":[
+			"\\layoutfloat[${2:pos}]{${1:content}}"
+		]
+	},
+
+
+	"layoutfloat()[]{}":{
+		"prefix":"layoutfloat",
+		"body":[
+			"\\layoutfloat(${3:width},${4:height})[${2:pos}]{${1:content}}"
+		]
+	},
+
+
+	"DeclareLayoutCaption{}<>()[]":{
+		"prefix":"DeclareLayoutCaption",
+		"body":[
+			"\\DeclareLayoutCaption{${1:type}}<${3:dir}>(${4:width})[${2:⟨pos1⟩⟨pos2⟩}]"
+		]
+	},
+
+
+	"layoutcaption<dir>()[]":{
+		"prefix":"layoutcaption<dir>",
+		"body":[
+			"\\layoutcaption<dir>(${2:width})[${1:pos}]"
+		]
+	},
+
+
+	"pcaption[]{}":{
+		"prefix":"pcaption",
+		"body":[
+			"\\pcaption[${2:short text}]{${1:text}}"
+		]
+	},
+
+
+	"pbox[]{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox[${2:width}]{${1:obj}}"
+		]
+	},
+
+
+	"pbox[][]{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox[${2:width}][${3:pos}]{${1:obj}}"
+		]
+	},
+
+
+	"pbox<dir>[]{}":{
+		"prefix":"pbox<dir>",
+		"body":[
+			"\\pbox<dir>[${2:width}]{${1:obj}}"
+		]
+	},
+
+
+	"pbox<dir>[][]{}":{
+		"prefix":"pbox<dir>",
+		"body":[
+			"\\pbox<dir>[${2:width}][${3:pos}]{${1:obj}}"
+		]
+	},
+
+
+	"rensuji[]{}":{
+		"prefix":"rensuji",
+		"body":[
+			"\\rensuji[${2:pos%keyvals}]{${1:text}}"
 		]
 	}
 }

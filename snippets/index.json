@@ -1,7 +1,7 @@
 {
 
 
-	"newindex":{
+	"newindex{}{}{}{}":{
 		"prefix":"newindex",
 		"body":[
 			"\\newindex{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"newindex":{
-		"prefix":"newindex",
-		"body":[
-			"\\newindex[${5:number cmd}]{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
-		]
-	},
-
-
-	"renewindex":{
+	"renewindex{}{}{}{}":{
 		"prefix":"renewindex",
 		"body":[
 			"\\renewindex{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
-		]
-	},
-
-
-	"renewindex":{
-		"prefix":"renewindex",
-		"body":[
-			"\\renewindex[${5:number cmd}]{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
 		]
 	},
 
@@ -37,30 +21,6 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex"
-		]
-	},
-
-
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex[${1:tag}]"
-		]
-	},
-
-
-	"index*":{
-		"prefix":"index*",
-		"body":[
-			"\\index*{${1:entry}}"
-		]
-	},
-
-
-	"index":{
-		"prefix":"index",
-		"body":[
-			"\\index[${2:tag}]{${1:entry}}"
 		]
 	},
 
@@ -97,7 +57,7 @@
 	},
 
 
-	"indexproofstyle":{
+	"indexproofstyle{}":{
 		"prefix":"indexproofstyle",
 		"body":[
 			"\\indexproofstyle{${1:code}}"
@@ -121,10 +81,50 @@
 	},
 
 
-	"see":{
+	"see{}{}":{
 		"prefix":"see",
 		"body":[
 			"\\see{${1:text}}{${2:page number}}"
+		]
+	},
+
+
+	"index*{}":{
+		"prefix":"*index",
+		"body":[
+			"\\index*{${1:entry}}"
+		]
+	},
+
+
+	"newindex[]{}{}{}{}":{
+		"prefix":"newindex",
+		"body":[
+			"\\newindex[${5:number cmd}]{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
+		]
+	},
+
+
+	"renewindex[]{}{}{}{}":{
+		"prefix":"renewindex",
+		"body":[
+			"\\renewindex[${5:number cmd}]{${1:author tag}}{${2:output ext}}{${3:input ext}}{${4:title%plain}}"
+		]
+	},
+
+
+	"printindex[]":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex[${1:tag}]"
+		]
+	},
+
+
+	"index[]{}":{
+		"prefix":"index",
+		"body":[
+			"\\index[${2:tag}]{${1:entry}}"
 		]
 	},
 
@@ -133,7 +133,7 @@
 		"prefix":"shortindexingon",
 		"body":[
 			"\\begin{shortindexingon}",
-			"\t$1",
+				"\t$1",
 			"\\end{shortindexingon}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"itemLabel":{
+	"itemLabel{}":{
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"itemLabel":{
+	"itemLabel{}[]":{
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}[${2:skipA}]"
@@ -17,7 +17,7 @@
 	},
 
 
-	"itemLabel":{
+	"itemLabel{}[][]":{
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}[${2:skipA}][${3:skipB}]"
@@ -29,7 +29,17 @@
 		"prefix":"easylist",
 		"body":[
 			"\\begin{easylist}",
-			"\t$1",
+				"\t$1",
+			"\\end{easylist}"
+		]
+	},
+
+
+	"easylist":{
+		"prefix":"easylist",
+		"body":[
+			"\\begin{easylist}",
+				"\t$1",
 			"\\end{easylist}"
 		]
 	}

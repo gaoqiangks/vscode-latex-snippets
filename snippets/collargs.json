@@ -1,7 +1,7 @@
 {
 
 
-	"CollectArguments":{
+	"CollectArguments{}{}":{
 		"prefix":"CollectArguments",
 		"body":[
 			"\\CollectArguments{${1:argspec}}{${2:next-code}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"CollectArguments":{
-		"prefix":"CollectArguments",
+	"CollectArgumentsRaw{}{}{}":{
+		"prefix":"CollectArgumentsRaw",
 		"body":[
-			"\\CollectArguments[${3:options%keyvals}]{${1:argspec}}{${2:next-code}}"
+			"\\CollectArgumentsRaw{${1:option-setting code}}{${2:argspec}}{${3:next-code}}"
 		]
 	},
 
 
-	"CollectArgumentsRaw":{
-		"prefix":"CollectArgumentsRaw",
+	"CollectArguments[]{}{}":{
+		"prefix":"CollectArguments",
 		"body":[
-			"\\CollectArgumentsRaw{${1:option-setting code}}{${2:argspec}}{${3:next-code}}"
+			"\\CollectArguments[${3:options%keyvals}]{${1:argspec}}{${2:next-code}}"
 		]
 	}
 }

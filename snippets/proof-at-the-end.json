@@ -1,15 +1,7 @@
 {
 
 
-	"includeExternalAppendix":{
-		"prefix":"includeExternalAppendix",
-		"body":[
-			"\\includeExternalAppendix[${2:category}]{${1:file}}"
-		]
-	},
-
-
-	"includeExternalAppendix":{
+	"includeExternalAppendix{}":{
 		"prefix":"includeExternalAppendix",
 		"body":[
 			"\\includeExternalAppendix{${1:file}}"
@@ -17,15 +9,7 @@
 	},
 
 
-	"newEndProof":{
-		"prefix":"newEndProof",
-		"body":[
-			"\\newEndProof[${2:options%keyvals}]{${1:envname}}"
-		]
-	},
-
-
-	"newEndProof":{
+	"newEndProof{}":{
 		"prefix":"newEndProof",
 		"body":[
 			"\\newEndProof{${1:envname}}"
@@ -33,15 +17,7 @@
 	},
 
 
-	"newEndThm":{
-		"prefix":"newEndThm",
-		"body":[
-			"\\newEndThm[${3:options%keyvals}]{${1:envname}}{${2:old envname}}"
-		]
-	},
-
-
-	"newEndThm":{
+	"newEndThm{}{}":{
 		"prefix":"newEndThm",
 		"body":[
 			"\\newEndThm{${1:envname}}{${2:old envname}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"pratendRef":{
+	"pratendRef{}":{
 		"prefix":"pratendRef",
 		"body":[
 			"\\pratendRef{${1:label}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"pratendSetGlobal":{
+	"pratendSetGlobal{}":{
 		"prefix":"pratendSetGlobal",
 		"body":[
 			"\\pratendSetGlobal{${1:options%keyvals}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"pratendSetLocal":{
+	"pratendSetLocal{}":{
 		"prefix":"pratendSetLocal",
 		"body":[
 			"\\pratendSetLocal{${1:options%keyvals}}"
@@ -97,23 +73,7 @@
 	},
 
 
-	"printProofs":{
-		"prefix":"printProofs",
-		"body":[
-			"\\printProofs[${1:category}]"
-		]
-	},
-
-
-	"textEnd":{
-		"prefix":"textEnd",
-		"body":[
-			"\\textEnd[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"textEnd":{
+	"textEnd{}":{
 		"prefix":"textEnd",
 		"body":[
 			"\\textEnd{${1:text}}"
@@ -121,7 +81,7 @@
 	},
 
 
-	"appendtofile":{
+	"appendtofile{}{}":{
 		"prefix":"appendtofile",
 		"body":[
 			"\\appendtofile{${1:file}}{${2:code}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"eraseIfNeeded":{
+	"eraseIfNeeded{}":{
 		"prefix":"eraseIfNeeded",
 		"body":[
 			"\\eraseIfNeeded{${1:category}}"
@@ -193,7 +153,7 @@
 	},
 
 
-	"pratendGeneratePrefixFile":{
+	"pratendGeneratePrefixFile{}":{
 		"prefix":"pratendGeneratePrefixFile",
 		"body":[
 			"\\pratendGeneratePrefixFile{${1:prefix}}"
@@ -249,12 +209,52 @@
 	},
 
 
-	"propertyE":{
-		"prefix":"propertyE",
+	"includeExternalAppendix[]{}":{
+		"prefix":"includeExternalAppendix",
 		"body":[
-			"\\begin{propertyE}",
-			"\t$1",
-			"\\end{propertyE}"
+			"\\includeExternalAppendix[${2:category}]{${1:file}}"
+		]
+	},
+
+
+	"newEndProof[]{}":{
+		"prefix":"newEndProof",
+		"body":[
+			"\\newEndProof[${2:options%keyvals}]{${1:envname}}"
+		]
+	},
+
+
+	"newEndThm[]{}{}":{
+		"prefix":"newEndThm",
+		"body":[
+			"\\newEndThm[${3:options%keyvals}]{${1:envname}}{${2:old envname}}"
+		]
+	},
+
+
+	"printProofs[]":{
+		"prefix":"printProofs",
+		"body":[
+			"\\printProofs[${1:category}]"
+		]
+	},
+
+
+	"textEnd[]{}":{
+		"prefix":"textEnd",
+		"body":[
+			"\\textEnd[${2:options%keyvals}]{${1:text}}"
+		]
+	},
+
+
+	"proofE":{
+		"prefix":"proofE",
+		"body":[
+			"\\begin{proofE}",
+				"\t$1",
+			"\\end{proofE}"
 		]
 	},
 
@@ -263,7 +263,7 @@
 		"prefix":"thmE",
 		"body":[
 			"\\begin{thmE}",
-			"\t$1",
+				"\t$1",
 			"\\end{thmE}"
 		]
 	},
@@ -273,58 +273,8 @@
 		"prefix":"lemmaE",
 		"body":[
 			"\\begin{lemmaE}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemmaE}"
-		]
-	},
-
-
-	"theoremEnd":{
-		"prefix":"theoremEnd",
-		"body":[
-			"\\begin{theoremEnd}",
-			"\t$1",
-			"\\end{theoremEnd}"
-		]
-	},
-
-
-	"proofEnd":{
-		"prefix":"proofEnd",
-		"body":[
-			"\\begin{proofEnd}",
-			"\t$1",
-			"\\end{proofEnd}"
-		]
-	},
-
-
-	"propositionE":{
-		"prefix":"propositionE",
-		"body":[
-			"\\begin{propositionE}",
-			"\t$1",
-			"\\end{propositionE}"
-		]
-	},
-
-
-	"factE":{
-		"prefix":"factE",
-		"body":[
-			"\\begin{factE}",
-			"\t$1",
-			"\\end{factE}"
-		]
-	},
-
-
-	"textAtEnd":{
-		"prefix":"textAtEnd",
-		"body":[
-			"\\begin{textAtEnd}",
-			"\t$1",
-			"\\end{textAtEnd}"
 		]
 	},
 
@@ -333,7 +283,7 @@
 		"prefix":"theoremE",
 		"body":[
 			"\\begin{theoremE}",
-			"\t$1",
+				"\t$1",
 			"\\end{theoremE}"
 		]
 	},
@@ -343,18 +293,138 @@
 		"prefix":"corollaryE",
 		"body":[
 			"\\begin{corollaryE}",
-			"\t$1",
+				"\t$1",
 			"\\end{corollaryE}"
 		]
 	},
 
 
-	"proofE":{
-		"prefix":"proofE",
+	"propositionE":{
+		"prefix":"propositionE",
 		"body":[
-			"\\begin{proofE}",
-			"\t$1",
-			"\\end{proofE}"
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"thmE":{
+		"prefix":"thmE",
+		"body":[
+			"\\begin{thmE}",
+				"\t$1",
+			"\\end{thmE}"
+		]
+	},
+
+
+	"lemmaE":{
+		"prefix":"lemmaE",
+		"body":[
+			"\\begin{lemmaE}",
+				"\t$1",
+			"\\end{lemmaE}"
+		]
+	},
+
+
+	"theoremE":{
+		"prefix":"theoremE",
+		"body":[
+			"\\begin{theoremE}",
+				"\t$1",
+			"\\end{theoremE}"
+		]
+	},
+
+
+	"corollaryE":{
+		"prefix":"corollaryE",
+		"body":[
+			"\\begin{corollaryE}",
+				"\t$1",
+			"\\end{corollaryE}"
+		]
+	},
+
+
+	"propositionE":{
+		"prefix":"propositionE",
+		"body":[
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"textAtEnd":{
+		"prefix":"textAtEnd",
+		"body":[
+			"\\begin{textAtEnd}",
+				"\t$1",
+			"\\end{textAtEnd}"
+		]
+	},
+
+
+	"proofEnd":{
+		"prefix":"proofEnd",
+		"body":[
+			"\\begin{proofEnd}",
+				"\t$1",
+			"\\end{proofEnd}"
+		]
+	},
+
+
+	"theoremEnd":{
+		"prefix":"theoremEnd",
+		"body":[
+			"\\begin{theoremEnd}",
+				"\t$1",
+			"\\end{theoremEnd}"
 		]
 	},
 
@@ -363,7 +433,357 @@
 		"prefix":"theoremEndRestateBefore",
 		"body":[
 			"\\begin{theoremEndRestateBefore}",
-			"\t$1",
+				"\t$1",
+			"\\end{theoremEndRestateBefore}"
+		]
+	},
+
+
+	"proofE":{
+		"prefix":"proofE",
+		"body":[
+			"\\begin{proofE}",
+				"\t$1",
+			"\\end{proofE}"
+		]
+	},
+
+
+	"thmE":{
+		"prefix":"thmE",
+		"body":[
+			"\\begin{thmE}",
+				"\t$1",
+			"\\end{thmE}"
+		]
+	},
+
+
+	"thmE":{
+		"prefix":"thmE",
+		"body":[
+			"\\begin{thmE}",
+				"\t$1",
+			"\\end{thmE}"
+		]
+	},
+
+
+	"lemmaE":{
+		"prefix":"lemmaE",
+		"body":[
+			"\\begin{lemmaE}",
+				"\t$1",
+			"\\end{lemmaE}"
+		]
+	},
+
+
+	"lemmaE":{
+		"prefix":"lemmaE",
+		"body":[
+			"\\begin{lemmaE}",
+				"\t$1",
+			"\\end{lemmaE}"
+		]
+	},
+
+
+	"theoremE":{
+		"prefix":"theoremE",
+		"body":[
+			"\\begin{theoremE}",
+				"\t$1",
+			"\\end{theoremE}"
+		]
+	},
+
+
+	"theoremE":{
+		"prefix":"theoremE",
+		"body":[
+			"\\begin{theoremE}",
+				"\t$1",
+			"\\end{theoremE}"
+		]
+	},
+
+
+	"corollaryE":{
+		"prefix":"corollaryE",
+		"body":[
+			"\\begin{corollaryE}",
+				"\t$1",
+			"\\end{corollaryE}"
+		]
+	},
+
+
+	"corollaryE":{
+		"prefix":"corollaryE",
+		"body":[
+			"\\begin{corollaryE}",
+				"\t$1",
+			"\\end{corollaryE}"
+		]
+	},
+
+
+	"propositionE":{
+		"prefix":"propositionE",
+		"body":[
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propositionE":{
+		"prefix":"propositionE",
+		"body":[
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"thmE":{
+		"prefix":"thmE",
+		"body":[
+			"\\begin{thmE}",
+				"\t$1",
+			"\\end{thmE}"
+		]
+	},
+
+
+	"thmE":{
+		"prefix":"thmE",
+		"body":[
+			"\\begin{thmE}",
+				"\t$1",
+			"\\end{thmE}"
+		]
+	},
+
+
+	"lemmaE":{
+		"prefix":"lemmaE",
+		"body":[
+			"\\begin{lemmaE}",
+				"\t$1",
+			"\\end{lemmaE}"
+		]
+	},
+
+
+	"lemmaE":{
+		"prefix":"lemmaE",
+		"body":[
+			"\\begin{lemmaE}",
+				"\t$1",
+			"\\end{lemmaE}"
+		]
+	},
+
+
+	"theoremE":{
+		"prefix":"theoremE",
+		"body":[
+			"\\begin{theoremE}",
+				"\t$1",
+			"\\end{theoremE}"
+		]
+	},
+
+
+	"theoremE":{
+		"prefix":"theoremE",
+		"body":[
+			"\\begin{theoremE}",
+				"\t$1",
+			"\\end{theoremE}"
+		]
+	},
+
+
+	"corollaryE":{
+		"prefix":"corollaryE",
+		"body":[
+			"\\begin{corollaryE}",
+				"\t$1",
+			"\\end{corollaryE}"
+		]
+	},
+
+
+	"corollaryE":{
+		"prefix":"corollaryE",
+		"body":[
+			"\\begin{corollaryE}",
+				"\t$1",
+			"\\end{corollaryE}"
+		]
+	},
+
+
+	"propositionE":{
+		"prefix":"propositionE",
+		"body":[
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propositionE":{
+		"prefix":"propositionE",
+		"body":[
+			"\\begin{propositionE}",
+				"\t$1",
+			"\\end{propositionE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"propertyE":{
+		"prefix":"propertyE",
+		"body":[
+			"\\begin{propertyE}",
+				"\t$1",
+			"\\end{propertyE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"factE":{
+		"prefix":"factE",
+		"body":[
+			"\\begin{factE}",
+				"\t$1",
+			"\\end{factE}"
+		]
+	},
+
+
+	"textAtEnd":{
+		"prefix":"textAtEnd",
+		"body":[
+			"\\begin{textAtEnd}",
+				"\t$1",
+			"\\end{textAtEnd}"
+		]
+	},
+
+
+	"proofEnd":{
+		"prefix":"proofEnd",
+		"body":[
+			"\\begin{proofEnd}",
+				"\t$1",
+			"\\end{proofEnd}"
+		]
+	},
+
+
+	"theoremEnd":{
+		"prefix":"theoremEnd",
+		"body":[
+			"\\begin{theoremEnd}",
+				"\t$1",
+			"\\end{theoremEnd}"
+		]
+	},
+
+
+	"theoremEnd":{
+		"prefix":"theoremEnd",
+		"body":[
+			"\\begin{theoremEnd}",
+				"\t$1",
+			"\\end{theoremEnd}"
+		]
+	},
+
+
+	"theoremEnd":{
+		"prefix":"theoremEnd",
+		"body":[
+			"\\begin{theoremEnd}",
+				"\t$1",
+			"\\end{theoremEnd}"
+		]
+	},
+
+
+	"theoremEndRestateBefore":{
+		"prefix":"theoremEndRestateBefore",
+		"body":[
+			"\\begin{theoremEndRestateBefore}",
+				"\t$1",
 			"\\end{theoremEndRestateBefore}"
 		]
 	}

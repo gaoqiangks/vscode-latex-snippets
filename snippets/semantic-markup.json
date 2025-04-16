@@ -73,7 +73,7 @@
 	},
 
 
-	"strong":{
+	"strong{}":{
 		"prefix":"strong",
 		"body":[
 			"\\strong{${1:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"quoted":{
+	"quoted{}":{
 		"prefix":"quoted",
 		"body":[
 			"\\quoted{${1:text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"soCalled":{
+	"soCalled{}":{
 		"prefix":"soCalled",
 		"body":[
 			"\\soCalled{${1:text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"code":{
+	"code{}":{
 		"prefix":"code",
 		"body":[
 			"\\code{${1:text%plain}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"term":{
+	"term{}":{
 		"prefix":"term",
 		"body":[
 			"\\term{${1:text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"mentioned":{
+	"mentioned{}":{
 		"prefix":"mentioned",
 		"body":[
 			"\\mentioned{${1:text}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"foreign":{
+	"foreign{}":{
 		"prefix":"foreign",
 		"body":[
 			"\\foreign{${1:text}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"worktitle":{
+	"worktitle{}":{
 		"prefix":"worktitle",
 		"body":[
 			"\\worktitle{${1:text}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"parttitle":{
+	"parttitle{}":{
 		"prefix":"parttitle",
 		"body":[
 			"\\parttitle{${1:text}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"wtitle":{
+	"wtitle{}":{
 		"prefix":"wtitle",
 		"body":[
 			"\\wtitle{${1:text}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"ptitle":{
+	"ptitle{}":{
 		"prefix":"ptitle",
 		"body":[
 			"\\ptitle{${1:text}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"add":{
+	"add{}":{
 		"prefix":"add",
 		"body":[
 			"\\add{${1:text}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"gloss":{
+	"gloss{}{}":{
 		"prefix":"gloss",
 		"body":[
 			"\\gloss{${1:term%text}}{${2:def%text}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"quotedgloss":{
+	"quotedgloss{}{}":{
 		"prefix":"quotedgloss",
 		"body":[
 			"\\quotedgloss{${1:term%text}}{${2:def%text}}"
@@ -201,26 +201,10 @@
 	},
 
 
-	"XXX":{
-		"prefix":"XXX",
-		"body":[
-			"\\XXX[${1:text}]"
-		]
-	},
-
-
 	"citXXX":{
 		"prefix":"citXXX",
 		"body":[
 			"\\citXXX"
-		]
-	},
-
-
-	"citXXX":{
-		"prefix":"citXXX",
-		"body":[
-			"\\citXXX[${1:text}]"
 		]
 	},
 
@@ -249,7 +233,7 @@
 	},
 
 
-	"octave":{
+	"octave{}":{
 		"prefix":"octave",
 		"body":[
 			"\\octave{${1:text}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"musfig":{
+	"musfig{}{}":{
 		"prefix":"musfig",
 		"body":[
 			"\\musfig{${1:upper}}{${2:lower}}"
@@ -265,10 +249,26 @@
 	},
 
 
-	"meter":{
+	"meter{}{}":{
 		"prefix":"meter",
 		"body":[
 			"\\meter{${1:upper}}{${2:lower}}"
+		]
+	},
+
+
+	"XXX[]":{
+		"prefix":"XXX",
+		"body":[
+			"\\XXX[${1:text}]"
+		]
+	},
+
+
+	"citXXX[]":{
+		"prefix":"citXXX",
+		"body":[
+			"\\citXXX[${1:text}]"
 		]
 	},
 
@@ -277,7 +277,7 @@
 		"prefix":"Footnote",
 		"body":[
 			"\\begin{Footnote}",
-			"\t$1",
+				"\t$1",
 			"\\end{Footnote}"
 		]
 	}

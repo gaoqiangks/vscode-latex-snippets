@@ -1,7 +1,7 @@
 {
 
 
-	"qauthor":{
+	"qauthor{}":{
 		"prefix":"qauthor",
 		"body":[
 			"\\qauthor{${1:author}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"qsetcnfont":{
+	"qsetcnfont{}":{
 		"prefix":"qsetcnfont",
 		"body":[
 			"\\qsetcnfont{${1:font family}}"
@@ -69,7 +69,17 @@
 		"prefix":"savequote",
 		"body":[
 			"\\begin{savequote}",
-			"\t$1",
+				"\t$1",
+			"\\end{savequote}"
+		]
+	},
+
+
+	"savequote":{
+		"prefix":"savequote",
+		"body":[
+			"\\begin{savequote}",
+				"\t$1",
 			"\\end{savequote}"
 		]
 	}

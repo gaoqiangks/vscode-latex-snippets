@@ -1,7 +1,7 @@
 {
 
 
-	"newkomavar":{
+	"newkomavar{}":{
 		"prefix":"newkomavar",
 		"body":[
 			"\\newkomavar{${1:name}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"newkomavar":{
-		"prefix":"newkomavar",
-		"body":[
-			"\\newkomavar[${2:description}]{${1:name}}"
-		]
-	},
-
-
-	"newkomavar*":{
-		"prefix":"newkomavar*",
-		"body":[
-			"\\newkomavar*{${1:name}}"
-		]
-	},
-
-
-	"newkomavar*":{
-		"prefix":"newkomavar*",
-		"body":[
-			"\\newkomavar*[${2:description}]{${1:name}}"
-		]
-	},
-
-
-	"setkomavar":{
+	"setkomavar{}{}":{
 		"prefix":"setkomavar",
 		"body":[
 			"\\setkomavar{${1:name%keyvals}}{${2:content}}"
@@ -41,23 +17,7 @@
 	},
 
 
-	"setkomavar":{
-		"prefix":"setkomavar",
-		"body":[
-			"\\setkomavar{${1:name%keyvals}}[${3:description}]{${2:content}}"
-		]
-	},
-
-
-	"setkomavar*":{
-		"prefix":"setkomavar*",
-		"body":[
-			"\\setkomavar*{${1:name%keyvals}}{${2:content}}"
-		]
-	},
-
-
-	"usekomavar":{
+	"usekomavar{}":{
 		"prefix":"usekomavar",
 		"body":[
 			"\\usekomavar{${1:name%keyvals}}"
@@ -65,31 +25,7 @@
 	},
 
 
-	"usekomavar":{
-		"prefix":"usekomavar",
-		"body":[
-			"\\usekomavar[${2:command}]{${1:name%keyvals}}"
-		]
-	},
-
-
-	"usekomavar*":{
-		"prefix":"usekomavar*",
-		"body":[
-			"\\usekomavar*{${1:name%keyvals}}"
-		]
-	},
-
-
-	"usekomavar*":{
-		"prefix":"usekomavar*",
-		"body":[
-			"\\usekomavar*[${2:command}]{${1:name%keyvals}}"
-		]
-	},
-
-
-	"ifkomavarempty":{
+	"ifkomavarempty{}{}{}":{
 		"prefix":"ifkomavarempty",
 		"body":[
 			"\\ifkomavarempty{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
@@ -97,15 +33,7 @@
 	},
 
 
-	"ifkomavarempty*":{
-		"prefix":"ifkomavarempty*",
-		"body":[
-			"\\ifkomavarempty*{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"ifkomavar":{
+	"ifkomavar{}{}{}":{
 		"prefix":"ifkomavar",
 		"body":[
 			"\\ifkomavar{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
@@ -113,15 +41,7 @@
 	},
 
 
-	"ifkomavar*":{
-		"prefix":"ifkomavar*",
-		"body":[
-			"\\ifkomavar*{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"LoadLetterOption":{
+	"LoadLetterOption{}":{
 		"prefix":"LoadLetterOption",
 		"body":[
 			"\\LoadLetterOption{${1:file}}"
@@ -129,7 +49,7 @@
 	},
 
 
-	"LoadLetterOptions":{
+	"LoadLetterOptions{}":{
 		"prefix":"LoadLetterOptions",
 		"body":[
 			"\\LoadLetterOptions{${1:file list}}"
@@ -137,7 +57,7 @@
 	},
 
 
-	"ifkomavarenabled":{
+	"ifkomavarenabled{}{}{}":{
 		"prefix":"ifkomavarenabled",
 		"body":[
 			"\\ifkomavarenabled{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
@@ -145,7 +65,7 @@
 	},
 
 
-	"emaillink":{
+	"emaillink{}":{
 		"prefix":"emaillink",
 		"body":[
 			"\\emaillink{${1:URL}}"
@@ -153,15 +73,7 @@
 	},
 
 
-	"emaillink":{
-		"prefix":"emaillink",
-		"body":[
-			"\\emaillink[${2:link text}]{${1:URL}}"
-		]
-	},
-
-
-	"httplink":{
+	"httplink{}":{
 		"prefix":"httplink",
 		"body":[
 			"\\httplink{${1:URL}}"
@@ -169,15 +81,7 @@
 	},
 
 
-	"httplink":{
-		"prefix":"httplink",
-		"body":[
-			"\\httplink[${2:link text}]{${1:URL}}"
-		]
-	},
-
-
-	"httpslink":{
+	"httpslink{}":{
 		"prefix":"httpslink",
 		"body":[
 			"\\httpslink{${1:URL}}"
@@ -185,7 +89,103 @@
 	},
 
 
-	"httpslink":{
+	"newkomavar*{}":{
+		"prefix":"*newkomavar",
+		"body":[
+			"\\newkomavar*{${1:name}}"
+		]
+	},
+
+
+	"newkomavar*[]{}":{
+		"prefix":"*newkomavar",
+		"body":[
+			"\\newkomavar*[${2:description}]{${1:name}}"
+		]
+	},
+
+
+	"setkomavar*{}{}":{
+		"prefix":"*setkomavar",
+		"body":[
+			"\\setkomavar*{${1:name%keyvals}}{${2:content}}"
+		]
+	},
+
+
+	"usekomavar*{}":{
+		"prefix":"*usekomavar",
+		"body":[
+			"\\usekomavar*{${1:name%keyvals}}"
+		]
+	},
+
+
+	"usekomavar*[]{}":{
+		"prefix":"*usekomavar",
+		"body":[
+			"\\usekomavar*[${2:command}]{${1:name%keyvals}}"
+		]
+	},
+
+
+	"ifkomavarempty*{}{}{}":{
+		"prefix":"*ifkomavarempty",
+		"body":[
+			"\\ifkomavarempty*{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
+		]
+	},
+
+
+	"ifkomavar*{}{}{}":{
+		"prefix":"*ifkomavar",
+		"body":[
+			"\\ifkomavar*{${1:name%keyvals}}{${2:true code}}{${3:false code}}"
+		]
+	},
+
+
+	"newkomavar[]{}":{
+		"prefix":"newkomavar",
+		"body":[
+			"\\newkomavar[${2:description}]{${1:name}}"
+		]
+	},
+
+
+	"setkomavar{}[]{}":{
+		"prefix":"setkomavar",
+		"body":[
+			"\\setkomavar{${1:name%keyvals}}[${3:description}]{${2:content}}"
+		]
+	},
+
+
+	"usekomavar[]{}":{
+		"prefix":"usekomavar",
+		"body":[
+			"\\usekomavar[${2:command}]{${1:name%keyvals}}"
+		]
+	},
+
+
+	"emaillink[]{}":{
+		"prefix":"emaillink",
+		"body":[
+			"\\emaillink[${2:link text}]{${1:URL}}"
+		]
+	},
+
+
+	"httplink[]{}":{
+		"prefix":"httplink",
+		"body":[
+			"\\httplink[${2:link text}]{${1:URL}}"
+		]
+	},
+
+
+	"httpslink[]{}":{
 		"prefix":"httpslink",
 		"body":[
 			"\\httpslink[${2:link text}]{${1:URL}}"

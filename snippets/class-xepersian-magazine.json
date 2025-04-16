@@ -1,7 +1,7 @@
 {
 
 
-	"firstimage":{
+	"firstimage{}{}":{
 		"prefix":"firstimage",
 		"body":[
 			"\\firstimage{${1:imagefile}}{${2:description%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"firstarticle":{
+	"firstarticle{}{}{}":{
 		"prefix":"firstarticle",
 		"body":[
 			"\\firstarticle{${1:title%text}}{${2:opening%text}}{${3:time}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"secondarticle":{
+	"secondarticle{}{}{}{}{}":{
 		"prefix":"secondarticle",
 		"body":[
 			"\\secondarticle{${1:title%text}}{${2:subtitle%text}}{${3:opening%text}}{${4:pagesof}}{${5:time}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"thirdarticle":{
+	"thirdarticle{}{}{}{}{}":{
 		"prefix":"thirdarticle",
 		"body":[
 			"\\thirdarticle{${1:title%text}}{${2:subtitle%text}}{${3:opening%text}}{${4:pagesof}}{${5:time}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"indexitem":{
+	"indexitem{}{}":{
 		"prefix":"indexitem",
 		"body":[
 			"\\indexitem{${1:title%text}}{${2:label}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"weatheritem":{
+	"weatheritem{}{}{}{}{}":{
 		"prefix":"weatheritem",
 		"body":[
 			"\\weatheritem{${1:imagefile}}{${2:day}}{${3:max}}{${4:min}}{${5:description%text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"authorandplace":{
+	"authorandplace{}{}":{
 		"prefix":"authorandplace",
 		"body":[
 			"\\authorandplace{${1:author}}{${2:place%text}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"timestamp":{
+	"timestamp{}":{
 		"prefix":"timestamp",
 		"body":[
 			"\\timestamp{${1:time}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"image":{
+	"image{}{}":{
 		"prefix":"image",
 		"body":[
 			"\\image{${1:imagefile}}{${2:description%text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"columntitle":{
+	"columntitle{}{}":{
 		"prefix":"columntitle",
 		"body":[
 			"\\columntitle{${1:type%keyvals}}{${2:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"expandedtitle":{
+	"expandedtitle{}{}":{
 		"prefix":"expandedtitle",
 		"body":[
 			"\\expandedtitle{${1:type%keyvals}}{${2:text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"shortarticleitem":{
+	"shortarticleitem{}{}":{
 		"prefix":"shortarticleitem",
 		"body":[
 			"\\shortarticleitem{${1:title%text}}{${2:text}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"newsection":{
+	"newsection{}":{
 		"prefix":"newsection",
 		"body":[
 			"\\newsection{${1:name%text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"customlogo":{
+	"customlogo{}":{
 		"prefix":"customlogo",
 		"body":[
 			"\\customlogo{${1:text}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"customminilogo":{
+	"customminilogo{}":{
 		"prefix":"customminilogo",
 		"body":[
 			"\\customminilogo{${1:text}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"custommagazinename":{
+	"custommagazinename{}":{
 		"prefix":"custommagazinename",
 		"body":[
 			"\\custommagazinename{${1:text}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"edition":{
+	"edition{}":{
 		"prefix":"edition",
 		"body":[
 			"\\edition{${1:edition}}"
@@ -377,7 +377,7 @@
 	},
 
 
-	"heading":{
+	"heading{}{}{}":{
 		"prefix":"heading",
 		"body":[
 			"\\heading{${1:left%text}}{${2:center%text}}{${3:right%text}}"
@@ -385,7 +385,7 @@
 	},
 
 
-	"foot":{
+	"foot{}{}{}":{
 		"prefix":"foot",
 		"body":[
 			"\\foot{${1:left%text}}{${2:center%text}}{${3:right%text}}"
@@ -401,7 +401,7 @@
 	},
 
 
-	"customwwwTxt":{
+	"customwwwTxt{}":{
 		"prefix":"customwwwTxt",
 		"body":[
 			"\\customwwwTxt{${1:text}}"
@@ -425,18 +425,10 @@
 	},
 
 
-	"grid":{
+	"grid{}{}":{
 		"prefix":"grid",
 		"body":[
 			"\\grid{${1:cols}}{${2:rows}}"
-		]
-	},
-
-
-	"grid":{
-		"prefix":"grid",
-		"body":[
-			"\\grid[${3:show}]{${1:cols}}{${2:rows}}"
 		]
 	},
 
@@ -465,7 +457,7 @@
 	},
 
 
-	"mylogo":{
+	"mylogo{}":{
 		"prefix":"mylogo",
 		"body":[
 			"\\mylogo{${1:text}}"
@@ -505,12 +497,10 @@
 	},
 
 
-	"indexblock":{
-		"prefix":"indexblock",
+	"grid[]{}{}":{
+		"prefix":"grid",
 		"body":[
-			"\\begin{indexblock}",
-			"\t$1",
-			"\\end{indexblock}"
+			"\\grid[${3:show}]{${1:cols}}{${2:rows}}"
 		]
 	},
 
@@ -519,8 +509,48 @@
 		"prefix":"frontpage",
 		"body":[
 			"\\begin{frontpage}",
-			"\t$1",
+				"\t$1",
 			"\\end{frontpage}"
+		]
+	},
+
+
+	"indexblock":{
+		"prefix":"indexblock",
+		"body":[
+			"\\begin{indexblock}",
+				"\t$1",
+			"\\end{indexblock}"
+		]
+	},
+
+
+	"authorblock":{
+		"prefix":"authorblock",
+		"body":[
+			"\\begin{authorblock}",
+				"\t$1",
+			"\\end{authorblock}"
+		]
+	},
+
+
+	"weatherblock":{
+		"prefix":"weatherblock",
+		"body":[
+			"\\begin{weatherblock}",
+				"\t$1",
+			"\\end{weatherblock}"
+		]
+	},
+
+
+	"article":{
+		"prefix":"article",
+		"body":[
+			"\\begin{article}",
+				"\t$1",
+			"\\end{article}"
 		]
 	},
 
@@ -529,7 +559,7 @@
 		"prefix":"editorial",
 		"body":[
 			"\\begin{editorial}",
-			"\t$1",
+				"\t$1",
 			"\\end{editorial}"
 		]
 	},
@@ -539,38 +569,8 @@
 		"prefix":"shortarticle",
 		"body":[
 			"\\begin{shortarticle}",
-			"\t$1",
+				"\t$1",
 			"\\end{shortarticle}"
-		]
-	},
-
-
-	"article":{
-		"prefix":"article",
-		"body":[
-			"\\begin{article}",
-			"\t$1",
-			"\\end{article}"
-		]
-	},
-
-
-	"weatherblock":{
-		"prefix":"weatherblock",
-		"body":[
-			"\\begin{weatherblock}",
-			"\t$1",
-			"\\end{weatherblock}"
-		]
-	},
-
-
-	"authorblock":{
-		"prefix":"authorblock",
-		"body":[
-			"\\begin{authorblock}",
-			"\t$1",
-			"\\end{authorblock}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"BAnewcolumntype":{
+	"BAnewcolumntype{}{}":{
 		"prefix":"BAnewcolumntype",
 		"body":[
 			"\\BAnewcolumntype{${1:name%cmd}}{${2:argument}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"BAnewcolumntype":{
-		"prefix":"BAnewcolumntype",
-		"body":[
-			"\\BAnewcolumntype[${3:args}]{${1:name%cmd}}{${2:argument}}"
-		]
-	},
-
-
-	"BAmulticolumn":{
+	"BAmulticolumn{}{}{}":{
 		"prefix":"BAmulticolumn",
 		"body":[
 			"\\BAmulticolumn{${1:cols}}{${2:pos}}{${3:text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"Left":{
+	"Left{}{}":{
 		"prefix":"Left",
 		"body":[
 			"\\Left{${1:text}}{${2:delim}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"Right":{
+	"Right{}{}":{
 		"prefix":"Right",
 		"body":[
 			"\\Right{${1:text}}{${2:delim}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"testBAtablenotes":{
+	"testBAtablenotes{}{}":{
 		"prefix":"testBAtablenotes",
 		"body":[
 			"\\testBAtablenotes{${1:arg1}}{${2:arg2}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"BAnoalign":{
+	"BAnoalign{}":{
 		"prefix":"BAnoalign",
 		"body":[
 			"\\BAnoalign{${1:text}}"
@@ -97,15 +89,7 @@
 	},
 
 
-	"BAnoalign*":{
-		"prefix":"BAnoalign*",
-		"body":[
-			"\\BAnoalign*{${1:text}}"
-		]
-	},
-
-
-	"BAmultirow":{
+	"BAmultirow{}":{
 		"prefix":"BAmultirow",
 		"body":[
 			"\\BAmultirow{${1:dimen%l}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"BAmultirow":{
+	"BAmultirow{}{}":{
 		"prefix":"BAmultirow",
 		"body":[
 			"\\BAmultirow{${1:dimen%l}}{${2:text}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"BAhhline":{
+	"BAhhline{}":{
 		"prefix":"BAhhline",
 		"body":[
 			"\\BAhhline{${1:colspec}}"
@@ -177,12 +161,18 @@
 	},
 
 
-	"block*":{
-		"prefix":"block*",
+	"BAnoalign*{}":{
+		"prefix":"*BAnoalign",
 		"body":[
-			"\\begin{block*}",
-			"\t$1",
-			"\\end{block*}"
+			"\\BAnoalign*{${1:text}}"
+		]
+	},
+
+
+	"BAnewcolumntype[]{}{}":{
+		"prefix":"BAnewcolumntype",
+		"body":[
+			"\\BAnewcolumntype[${3:args}]{${1:name%cmd}}{${2:argument}}"
 		]
 	},
 
@@ -191,7 +181,7 @@
 		"prefix":"blockarray",
 		"body":[
 			"\\begin{blockarray}",
-			"\t$1",
+				"\t$1",
 			"\\end{blockarray}"
 		]
 	},
@@ -201,8 +191,18 @@
 		"prefix":"block",
 		"body":[
 			"\\begin{block}",
-			"\t$1",
+				"\t$1",
 			"\\end{block}"
+		]
+	},
+
+
+	"block*":{
+		"prefix":"block",
+		"body":[
+			"\\begin{block*}",
+				"\t$1",
+			"\\end{block*}"
 		]
 	}
 }

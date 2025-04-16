@@ -1,26 +1,10 @@
 {
 
 
-	"autoaligne":{
+	"autoaligne{}":{
 		"prefix":"autoaligne",
 		"body":[
-			"\\autoaligne{${1:eq1\\eq2\\...%formula}}"
-		]
-	},
-
-
-	"autoaligne":{
-		"prefix":"autoaligne",
-		"body":[
-			"\\autoaligne[${2:hor_align}]{${1:eq1\\eq2\\...%formula}}"
-		]
-	},
-
-
-	"autoaligne":{
-		"prefix":"autoaligne",
-		"body":[
-			"\\autoaligne[${2:hor_align}](${3:vert_align}){${1:eq1\\eq2\\...%formula}}"
+			"\\autoaligne{${1:eq1\\\\eq2\\\\...%formula}}"
 		]
 	},
 
@@ -33,7 +17,7 @@
 	},
 
 
-	"aavcoeff":{
+	"aavcoeff{}":{
 		"prefix":"aavcoeff",
 		"body":[
 			"\\aavcoeff{${1:value}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"definirseparateurs":{
+	"definirseparateurs{}{}{}":{
 		"prefix":"definirseparateurs",
 		"body":[
 			"\\definirseparateurs{${1:sep_line}}{${2:sep_members}}{${3:sep_terms}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"definirespacements":{
+	"definirespacements{}{}":{
 		"prefix":"definirespacements",
 		"body":[
 			"\\definirespacements{${1:space_members}}{${2:space_terms}}"
@@ -57,7 +41,23 @@
 	},
 
 
-	"definirespacements":{
+	"autoaligne[]{}":{
+		"prefix":"autoaligne",
+		"body":[
+			"\\autoaligne[${2:hor_align}]{${1:eq1\\\\eq2\\\\...%formula}}"
+		]
+	},
+
+
+	"autoaligne[](){}":{
+		"prefix":"autoaligne",
+		"body":[
+			"\\autoaligne[${2:hor_align}](${3:vert_align}){${1:eq1\\\\eq2\\\\...%formula}}"
+		]
+	},
+
+
+	"definirespacements[]{}{}":{
 		"prefix":"definirespacements",
 		"body":[
 			"\\definirespacements[${3:dimen1,dimen2}]{${1:space_members}}{${2:space_terms}}"

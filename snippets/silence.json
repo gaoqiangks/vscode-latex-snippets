@@ -9,42 +9,10 @@
 	},
 
 
-	"WarningsOff":{
-		"prefix":"WarningsOff",
-		"body":[
-			"\\WarningsOff[${1:list}]"
-		]
-	},
-
-
-	"WarningsOff*":{
-		"prefix":"WarningsOff*",
-		"body":[
-			"\\WarningsOff*"
-		]
-	},
-
-
 	"ErrorsOff":{
 		"prefix":"ErrorsOff",
 		"body":[
 			"\\ErrorsOff"
-		]
-	},
-
-
-	"ErrorsOff":{
-		"prefix":"ErrorsOff",
-		"body":[
-			"\\ErrorsOff[${1:list}]"
-		]
-	},
-
-
-	"ErrorsOff*":{
-		"prefix":"ErrorsOff*",
-		"body":[
-			"\\ErrorsOff*"
 		]
 	},
 
@@ -57,14 +25,6 @@
 	},
 
 
-	"WarningsOn":{
-		"prefix":"WarningsOn",
-		"body":[
-			"\\WarningsOn[${1:list}]"
-		]
-	},
-
-
 	"ErrorsOn":{
 		"prefix":"ErrorsOn",
 		"body":[
@@ -73,15 +33,7 @@
 	},
 
 
-	"ErrorsOn":{
-		"prefix":"ErrorsOn",
-		"body":[
-			"\\ErrorsOn[${1:list}]"
-		]
-	},
-
-
-	"WarningFilter":{
+	"WarningFilter{}{}":{
 		"prefix":"WarningFilter",
 		"body":[
 			"\\WarningFilter{${1:package}}{${2:message}}"
@@ -89,26 +41,10 @@
 	},
 
 
-	"WarningFilter":{
-		"prefix":"WarningFilter",
-		"body":[
-			"\\WarningFilter[${3:family}]{${1:package}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter":{
+	"ErrorFilter{}{}":{
 		"prefix":"ErrorFilter",
 		"body":[
 			"\\ErrorFilter{${1:package}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter":{
-		"prefix":"ErrorFilter",
-		"body":[
-			"\\ErrorFilter[${3:family}]{${1:package}}{${2:message}}"
 		]
 	},
 
@@ -121,26 +57,10 @@
 	},
 
 
-	"ActivateWarningFilters":{
-		"prefix":"ActivateWarningFilters",
-		"body":[
-			"\\ActivateWarningFilters[${1:list}]"
-		]
-	},
-
-
 	"ActivateErrorFilters":{
 		"prefix":"ActivateErrorFilters",
 		"body":[
 			"\\ActivateErrorFilters"
-		]
-	},
-
-
-	"ActivateErrorFilters":{
-		"prefix":"ActivateErrorFilters",
-		"body":[
-			"\\ActivateErrorFilters[${1:list}]"
 		]
 	},
 
@@ -153,26 +73,10 @@
 	},
 
 
-	"DeactivateWarningFilters":{
-		"prefix":"DeactivateWarningFilters",
-		"body":[
-			"\\DeactivateWarningFilters[${1:list}]"
-		]
-	},
-
-
 	"DeactivateErrorFilters":{
 		"prefix":"DeactivateErrorFilters",
 		"body":[
 			"\\DeactivateErrorFilters"
-		]
-	},
-
-
-	"DeactivateErrorFilters":{
-		"prefix":"DeactivateErrorFilters",
-		"body":[
-			"\\DeactivateErrorFilters[${1:list}]"
 		]
 	},
 
@@ -185,58 +89,10 @@
 	},
 
 
-	"ActivateFilters":{
-		"prefix":"ActivateFilters",
-		"body":[
-			"\\ActivateFilters[${1:list}]"
-		]
-	},
-
-
 	"DeactivateFilters":{
 		"prefix":"DeactivateFilters",
 		"body":[
 			"\\DeactivateFilters"
-		]
-	},
-
-
-	"DeactivateFilters":{
-		"prefix":"DeactivateFilters",
-		"body":[
-			"\\DeactivateFilters[${1:list}]"
-		]
-	},
-
-
-	"WarningFilter*":{
-		"prefix":"WarningFilter*",
-		"body":[
-			"\\WarningFilter*{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"WarningFilter*":{
-		"prefix":"WarningFilter*",
-		"body":[
-			"\\WarningFilter*[${3:family}]{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter*":{
-		"prefix":"ErrorFilter*",
-		"body":[
-			"\\ErrorFilter*{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter*":{
-		"prefix":"ErrorFilter*",
-		"body":[
-			"\\ErrorFilter*[${3:family}]{${1:name}}{${2:message}}"
 		]
 	},
 
@@ -253,6 +109,150 @@
 		"prefix":"BoldMode",
 		"body":[
 			"\\BoldMode"
+		]
+	},
+
+
+	"WarningsOff*":{
+		"prefix":"*WarningsOff",
+		"body":[
+			"\\WarningsOff*"
+		]
+	},
+
+
+	"ErrorsOff*":{
+		"prefix":"*ErrorsOff",
+		"body":[
+			"\\ErrorsOff*"
+		]
+	},
+
+
+	"WarningFilter*{}{}":{
+		"prefix":"*WarningFilter",
+		"body":[
+			"\\WarningFilter*{${1:name}}{${2:message}}"
+		]
+	},
+
+
+	"WarningFilter*[]{}{}":{
+		"prefix":"*WarningFilter",
+		"body":[
+			"\\WarningFilter*[${3:family}]{${1:name}}{${2:message}}"
+		]
+	},
+
+
+	"ErrorFilter*{}{}":{
+		"prefix":"*ErrorFilter",
+		"body":[
+			"\\ErrorFilter*{${1:name}}{${2:message}}"
+		]
+	},
+
+
+	"ErrorFilter*[]{}{}":{
+		"prefix":"*ErrorFilter",
+		"body":[
+			"\\ErrorFilter*[${3:family}]{${1:name}}{${2:message}}"
+		]
+	},
+
+
+	"WarningsOff[]":{
+		"prefix":"WarningsOff",
+		"body":[
+			"\\WarningsOff[${1:list}]"
+		]
+	},
+
+
+	"ErrorsOff[]":{
+		"prefix":"ErrorsOff",
+		"body":[
+			"\\ErrorsOff[${1:list}]"
+		]
+	},
+
+
+	"WarningsOn[]":{
+		"prefix":"WarningsOn",
+		"body":[
+			"\\WarningsOn[${1:list}]"
+		]
+	},
+
+
+	"ErrorsOn[]":{
+		"prefix":"ErrorsOn",
+		"body":[
+			"\\ErrorsOn[${1:list}]"
+		]
+	},
+
+
+	"WarningFilter[]{}{}":{
+		"prefix":"WarningFilter",
+		"body":[
+			"\\WarningFilter[${3:family}]{${1:package}}{${2:message}}"
+		]
+	},
+
+
+	"ErrorFilter[]{}{}":{
+		"prefix":"ErrorFilter",
+		"body":[
+			"\\ErrorFilter[${3:family}]{${1:package}}{${2:message}}"
+		]
+	},
+
+
+	"ActivateWarningFilters[]":{
+		"prefix":"ActivateWarningFilters",
+		"body":[
+			"\\ActivateWarningFilters[${1:list}]"
+		]
+	},
+
+
+	"ActivateErrorFilters[]":{
+		"prefix":"ActivateErrorFilters",
+		"body":[
+			"\\ActivateErrorFilters[${1:list}]"
+		]
+	},
+
+
+	"DeactivateWarningFilters[]":{
+		"prefix":"DeactivateWarningFilters",
+		"body":[
+			"\\DeactivateWarningFilters[${1:list}]"
+		]
+	},
+
+
+	"DeactivateErrorFilters[]":{
+		"prefix":"DeactivateErrorFilters",
+		"body":[
+			"\\DeactivateErrorFilters[${1:list}]"
+		]
+	},
+
+
+	"ActivateFilters[]":{
+		"prefix":"ActivateFilters",
+		"body":[
+			"\\ActivateFilters[${1:list}]"
+		]
+	},
+
+
+	"DeactivateFilters[]":{
+		"prefix":"DeactivateFilters",
+		"body":[
+			"\\DeactivateFilters[${1:list}]"
 		]
 	}
 }

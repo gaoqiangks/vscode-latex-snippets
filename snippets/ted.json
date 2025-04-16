@@ -1,7 +1,7 @@
 {
 
 
-	"Substitute":{
+	"Substitute{}{}{}":{
 		"prefix":"Substitute",
 		"body":[
 			"\\Substitute{${1:input}}{${2:from}}{${3:to}}"
@@ -9,42 +9,10 @@
 	},
 
 
-	"Substitute*":{
-		"prefix":"Substitute*",
-		"body":[
-			"\\Substitute*{${1:input}}{${2:from}}{${3:to}}"
-		]
-	},
-
-
-	"Substitute":{
-		"prefix":"Substitute",
-		"body":[
-			"\\Substitute[${4:output}]{${1:input}}{${2:from}}{${3:to}}"
-		]
-	},
-
-
-	"Substitute*":{
-		"prefix":"Substitute*",
-		"body":[
-			"\\Substitute*[${4:output}]{${1:input}}{${2:from}}{${3:to}}"
-		]
-	},
-
-
-	"ShowTokens":{
+	"ShowTokens{}":{
 		"prefix":"ShowTokens",
 		"body":[
 			"\\ShowTokens{${1:token list}}"
-		]
-	},
-
-
-	"ShowTokens*":{
-		"prefix":"ShowTokens*",
-		"body":[
-			"\\ShowTokens*{${1:token list}}"
 		]
 	},
 
@@ -61,6 +29,38 @@
 		"prefix":"ShowTokensOnline",
 		"body":[
 			"\\ShowTokensOnline"
+		]
+	},
+
+
+	"Substitute*{}{}{}":{
+		"prefix":"*Substitute",
+		"body":[
+			"\\Substitute*{${1:input}}{${2:from}}{${3:to}}"
+		]
+	},
+
+
+	"Substitute*[]{}{}{}":{
+		"prefix":"*Substitute",
+		"body":[
+			"\\Substitute*[${4:output}]{${1:input}}{${2:from}}{${3:to}}"
+		]
+	},
+
+
+	"ShowTokens*{}":{
+		"prefix":"*ShowTokens",
+		"body":[
+			"\\ShowTokens*{${1:token list}}"
+		]
+	},
+
+
+	"Substitute[]{}{}{}":{
+		"prefix":"Substitute",
+		"body":[
+			"\\Substitute[${4:output}]{${1:input}}{${2:from}}{${3:to}}"
 		]
 	}
 }

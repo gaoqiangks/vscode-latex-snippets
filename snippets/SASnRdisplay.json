@@ -1,7 +1,7 @@
 {
 
 
-	"inputSAScode":{
+	"inputSAScode{}":{
 		"prefix":"inputSAScode",
 		"body":[
 			"\\inputSAScode{${1:file}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"inputSAScode":{
-		"prefix":"inputSAScode",
-		"body":[
-			"\\inputSAScode[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputSAScode*":{
-		"prefix":"inputSAScode*",
-		"body":[
-			"\\inputSAScode*{${1:file}}"
-		]
-	},
-
-
-	"inputSAScode*":{
-		"prefix":"inputSAScode*",
-		"body":[
-			"\\inputSAScode*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput":{
+	"inputSASoutput{}":{
 		"prefix":"inputSASoutput",
 		"body":[
 			"\\inputSASoutput{${1:file}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"inputSASoutput":{
-		"prefix":"inputSASoutput",
-		"body":[
-			"\\inputSASoutput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput*":{
-		"prefix":"inputSASoutput*",
-		"body":[
-			"\\inputSASoutput*{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput*":{
-		"prefix":"inputSASoutput*",
-		"body":[
-			"\\inputSASoutput*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRcode":{
+	"inputRcode{}":{
 		"prefix":"inputRcode",
 		"body":[
 			"\\inputRcode{${1:file}}"
@@ -73,31 +25,7 @@
 	},
 
 
-	"inputRcode":{
-		"prefix":"inputRcode",
-		"body":[
-			"\\inputRcode[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRcode*":{
-		"prefix":"inputRcode*",
-		"body":[
-			"\\inputRcode*{${1:file}}"
-		]
-	},
-
-
-	"inputRcode*":{
-		"prefix":"inputRcode*",
-		"body":[
-			"\\inputRcode*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput":{
+	"inputRoutput{}":{
 		"prefix":"inputRoutput",
 		"body":[
 			"\\inputRoutput{${1:file}}"
@@ -105,31 +33,7 @@
 	},
 
 
-	"inputRoutput":{
-		"prefix":"inputRoutput",
-		"body":[
-			"\\inputRoutput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput*":{
-		"prefix":"inputRoutput*",
-		"body":[
-			"\\inputRoutput*{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput*":{
-		"prefix":"inputRoutput*",
-		"body":[
-			"\\inputRoutput*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"SASinline":{
+	"SASinline||":{
 		"prefix":"SASinline",
 		"body":[
 			"\\SASinline|${1:code}|"
@@ -137,26 +41,10 @@
 	},
 
 
-	"SASinline":{
-		"prefix":"SASinline",
-		"body":[
-			"\\SASinline[${1:options}]|${2:code}|"
-		]
-	},
-
-
-	"Rinline":{
+	"Rinline||":{
 		"prefix":"Rinline",
 		"body":[
 			"\\Rinline|${1:code}|"
-		]
-	},
-
-
-	"Rinline":{
-		"prefix":"Rinline",
-		"body":[
-			"\\Rinline[${1:options}]|${2:code}|"
 		]
 	},
 
@@ -169,7 +57,7 @@
 	},
 
 
-	"lstdefineformat":{
+	"lstdefineformat{}{}":{
 		"prefix":"lstdefineformat",
 		"body":[
 			"\\lstdefineformat{${1:name}}{${2:format}}"
@@ -217,21 +105,213 @@
 	},
 
 
-	"Routput*":{
-		"prefix":"Routput*",
+	"inputSAScode*{}":{
+		"prefix":"*inputSAScode",
 		"body":[
-			"\\begin{Routput*}",
-			"\t$1",
-			"\\end{Routput*}"
+			"\\inputSAScode*{${1:file}}"
+		]
+	},
+
+
+	"inputSAScode*[]{}":{
+		"prefix":"*inputSAScode",
+		"body":[
+			"\\inputSAScode*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputSASoutput*{}":{
+		"prefix":"*inputSASoutput",
+		"body":[
+			"\\inputSASoutput*{${1:file}}"
+		]
+	},
+
+
+	"inputSASoutput*[]{}":{
+		"prefix":"*inputSASoutput",
+		"body":[
+			"\\inputSASoutput*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputRcode*{}":{
+		"prefix":"*inputRcode",
+		"body":[
+			"\\inputRcode*{${1:file}}"
+		]
+	},
+
+
+	"inputRcode*[]{}":{
+		"prefix":"*inputRcode",
+		"body":[
+			"\\inputRcode*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputRoutput*{}":{
+		"prefix":"*inputRoutput",
+		"body":[
+			"\\inputRoutput*{${1:file}}"
+		]
+	},
+
+
+	"inputRoutput*[]{}":{
+		"prefix":"*inputRoutput",
+		"body":[
+			"\\inputRoutput*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputSAScode[]{}":{
+		"prefix":"inputSAScode",
+		"body":[
+			"\\inputSAScode[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputSASoutput[]{}":{
+		"prefix":"inputSASoutput",
+		"body":[
+			"\\inputSASoutput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputRcode[]{}":{
+		"prefix":"inputRcode",
+		"body":[
+			"\\inputRcode[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"inputRoutput[]{}":{
+		"prefix":"inputRoutput",
+		"body":[
+			"\\inputRoutput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"SASinline[]||":{
+		"prefix":"SASinline",
+		"body":[
+			"\\SASinline[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"Rinline[]||":{
+		"prefix":"Rinline",
+		"body":[
+			"\\Rinline[${1:options}]|${2:code}|"
+		]
+	},
+
+
+	"SAScode":{
+		"prefix":"SAScode",
+		"body":[
+			"\\begin{SAScode}",
+				"\t$1",
+			"\\end{SAScode}"
+		]
+	},
+
+
+	"SASoutput":{
+		"prefix":"SASoutput",
+		"body":[
+			"\\begin{SASoutput}",
+				"\t$1",
+			"\\end{SASoutput}"
+		]
+	},
+
+
+	"Rcode":{
+		"prefix":"Rcode",
+		"body":[
+			"\\begin{Rcode}",
+				"\t$1",
+			"\\end{Rcode}"
+		]
+	},
+
+
+	"Routput":{
+		"prefix":"Routput",
+		"body":[
+			"\\begin{Routput}",
+				"\t$1",
+			"\\end{Routput}"
 		]
 	},
 
 
 	"SAScode*":{
-		"prefix":"SAScode*",
+		"prefix":"*SAScode",
 		"body":[
 			"\\begin{SAScode*}",
-			"\t$1",
+				"\t$1",
+			"\\end{SAScode*}"
+		]
+	},
+
+
+	"SASoutput*":{
+		"prefix":"*SASoutput",
+		"body":[
+			"\\begin{SASoutput*}",
+				"\t$1",
+			"\\end{SASoutput*}"
+		]
+	},
+
+
+	"Rcode*":{
+		"prefix":"*Rcode",
+		"body":[
+			"\\begin{Rcode*}",
+				"\t$1",
+			"\\end{Rcode*}"
+		]
+	},
+
+
+	"Routput*":{
+		"prefix":"*Routput",
+		"body":[
+			"\\begin{Routput*}",
+				"\t$1",
+			"\\end{Routput*}"
+		]
+	},
+
+
+	"SAScode":{
+		"prefix":"SAScode",
+		"body":[
+			"\\begin{SAScode}",
+				"\t$1",
+			"\\end{SAScode}"
+		]
+	},
+
+
+	"SAScode*":{
+		"prefix":"SAScode",
+		"body":[
+			"\\begin{SAScode*}",
+				"\t$1",
 			"\\end{SAScode*}"
 		]
 	},
@@ -241,48 +321,18 @@
 		"prefix":"SASoutput",
 		"body":[
 			"\\begin{SASoutput}",
-			"\t$1",
+				"\t$1",
 			"\\end{SASoutput}"
 		]
 	},
 
 
-	"Routput":{
-		"prefix":"Routput",
-		"body":[
-			"\\begin{Routput}",
-			"\t$1",
-			"\\end{Routput}"
-		]
-	},
-
-
 	"SASoutput*":{
-		"prefix":"SASoutput*",
+		"prefix":"SASoutput",
 		"body":[
 			"\\begin{SASoutput*}",
-			"\t$1",
+				"\t$1",
 			"\\end{SASoutput*}"
-		]
-	},
-
-
-	"SAScode":{
-		"prefix":"SAScode",
-		"body":[
-			"\\begin{SAScode}",
-			"\t$1",
-			"\\end{SAScode}"
-		]
-	},
-
-
-	"Rcode*":{
-		"prefix":"Rcode*",
-		"body":[
-			"\\begin{Rcode*}",
-			"\t$1",
-			"\\end{Rcode*}"
 		]
 	},
 
@@ -291,8 +341,38 @@
 		"prefix":"Rcode",
 		"body":[
 			"\\begin{Rcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{Rcode}"
+		]
+	},
+
+
+	"Rcode*":{
+		"prefix":"Rcode",
+		"body":[
+			"\\begin{Rcode*}",
+				"\t$1",
+			"\\end{Rcode*}"
+		]
+	},
+
+
+	"Routput":{
+		"prefix":"Routput",
+		"body":[
+			"\\begin{Routput}",
+				"\t$1",
+			"\\end{Routput}"
+		]
+	},
+
+
+	"Routput*":{
+		"prefix":"Routput",
+		"body":[
+			"\\begin{Routput*}",
+				"\t$1",
+			"\\end{Routput*}"
 		]
 	}
 }

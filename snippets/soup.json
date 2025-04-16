@@ -1,7 +1,7 @@
 {
 
 
-	"hideinsoup":{
+	"hideinsoup{}{}{}{}":{
 		"prefix":"hideinsoup",
 		"body":[
 			"\\hideinsoup{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"hideinsoup":{
-		"prefix":"hideinsoup",
-		"body":[
-			"\\hideinsoup{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}[${5:clue}]"
-		]
-	},
-
-
-	"hideinsoup*":{
-		"prefix":"hideinsoup*",
-		"body":[
-			"\\hideinsoup*{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}"
-		]
-	},
-
-
-	"hideinsoup*":{
-		"prefix":"hideinsoup*",
-		"body":[
-			"\\hideinsoup*{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}[${5:clue}]"
-		]
-	},
-
-
-	"highlightinsoup":{
+	"highlightinsoup{}{}{}{}":{
 		"prefix":"highlightinsoup",
 		"body":[
 			"\\highlightinsoup{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}"
@@ -49,14 +25,6 @@
 	},
 
 
-	"listofclues":{
-		"prefix":"listofclues",
-		"body":[
-			"\\listofclues[${1:format}]"
-		]
-	},
-
-
 	"theclue":{
 		"prefix":"theclue",
 		"body":[
@@ -65,22 +33,34 @@
 	},
 
 
-	"homemadesoup":{
-		"prefix":"homemadesoup",
+	"hideinsoup*{}{}{}{}":{
+		"prefix":"*hideinsoup",
 		"body":[
-			"\\begin{homemadesoup}",
-			"\t$1",
-			"\\end{homemadesoup}"
+			"\\hideinsoup*{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}"
 		]
 	},
 
 
-	"numbersoup":{
-		"prefix":"numbersoup",
+	"hideinsoup*{}{}{}{}[]":{
+		"prefix":"*hideinsoup",
 		"body":[
-			"\\begin{numbersoup}",
-			"\t$1",
-			"\\end{numbersoup}"
+			"\\hideinsoup*{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}[${5:clue}]"
+		]
+	},
+
+
+	"hideinsoup{}{}{}{}[]":{
+		"prefix":"hideinsoup",
+		"body":[
+			"\\hideinsoup{${1:x}}{${2:y}}{${3:dir}}{${4:seq}}[${5:clue}]"
+		]
+	},
+
+
+	"listofclues[]":{
+		"prefix":"listofclues",
+		"body":[
+			"\\listofclues[${1:format}]"
 		]
 	},
 
@@ -89,7 +69,17 @@
 		"prefix":"alphabetsoup",
 		"body":[
 			"\\begin{alphabetsoup}",
-			"\t$1",
+				"\t$1",
+			"\\end{alphabetsoup}"
+		]
+	},
+
+
+	"alphabetsoup":{
+		"prefix":"alphabetsoup",
+		"body":[
+			"\\begin{alphabetsoup}",
+				"\t$1",
 			"\\end{alphabetsoup}"
 		]
 	},
@@ -99,8 +89,138 @@
 		"prefix":"Alphabetsoup",
 		"body":[
 			"\\begin{Alphabetsoup}",
-			"\t$1",
+				"\t$1",
 			"\\end{Alphabetsoup}"
+		]
+	},
+
+
+	"Alphabetsoup":{
+		"prefix":"Alphabetsoup",
+		"body":[
+			"\\begin{Alphabetsoup}",
+				"\t$1",
+			"\\end{Alphabetsoup}"
+		]
+	},
+
+
+	"numbersoup":{
+		"prefix":"numbersoup",
+		"body":[
+			"\\begin{numbersoup}",
+				"\t$1",
+			"\\end{numbersoup}"
+		]
+	},
+
+
+	"numbersoup":{
+		"prefix":"numbersoup",
+		"body":[
+			"\\begin{numbersoup}",
+				"\t$1",
+			"\\end{numbersoup}"
+		]
+	},
+
+
+	"homemadesoup":{
+		"prefix":"homemadesoup",
+		"body":[
+			"\\begin{homemadesoup}",
+				"\t$1",
+			"\\end{homemadesoup}"
+		]
+	},
+
+
+	"homemadesoup":{
+		"prefix":"homemadesoup",
+		"body":[
+			"\\begin{homemadesoup}",
+				"\t$1",
+			"\\end{homemadesoup}"
+		]
+	},
+
+
+	"alphabetsoup":{
+		"prefix":"alphabetsoup",
+		"body":[
+			"\\begin{alphabetsoup}",
+				"\t$1",
+			"\\end{alphabetsoup}"
+		]
+	},
+
+
+	"alphabetsoup":{
+		"prefix":"alphabetsoup",
+		"body":[
+			"\\begin{alphabetsoup}",
+				"\t$1",
+			"\\end{alphabetsoup}"
+		]
+	},
+
+
+	"Alphabetsoup":{
+		"prefix":"Alphabetsoup",
+		"body":[
+			"\\begin{Alphabetsoup}",
+				"\t$1",
+			"\\end{Alphabetsoup}"
+		]
+	},
+
+
+	"Alphabetsoup":{
+		"prefix":"Alphabetsoup",
+		"body":[
+			"\\begin{Alphabetsoup}",
+				"\t$1",
+			"\\end{Alphabetsoup}"
+		]
+	},
+
+
+	"numbersoup":{
+		"prefix":"numbersoup",
+		"body":[
+			"\\begin{numbersoup}",
+				"\t$1",
+			"\\end{numbersoup}"
+		]
+	},
+
+
+	"numbersoup":{
+		"prefix":"numbersoup",
+		"body":[
+			"\\begin{numbersoup}",
+				"\t$1",
+			"\\end{numbersoup}"
+		]
+	},
+
+
+	"homemadesoup":{
+		"prefix":"homemadesoup",
+		"body":[
+			"\\begin{homemadesoup}",
+				"\t$1",
+			"\\end{homemadesoup}"
+		]
+	},
+
+
+	"homemadesoup":{
+		"prefix":"homemadesoup",
+		"body":[
+			"\\begin{homemadesoup}",
+				"\t$1",
+			"\\end{homemadesoup}"
 		]
 	}
 }

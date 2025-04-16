@@ -1,7 +1,7 @@
 {
 
 
-	"abstract":{
+	"abstract{}":{
 		"prefix":"abstract",
 		"body":[
 			"\\abstract{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"acknowledgments":{
+	"acknowledgments{}":{
 		"prefix":"acknowledgments",
 		"body":[
 			"\\acknowledgments{${1:text}}"
@@ -25,10 +25,10 @@
 	},
 
 
-	"authordegrees":{
+	"authordegrees{}":{
 		"prefix":"authordegrees",
 		"body":[
-			"\\authordegrees{${1:degree1 \\ degree2 \\ ...%text}}"
+			"\\authordegrees{${1:degree1 \\\\ degree2 \\\\ ...%text}}"
 		]
 	},
 
@@ -49,7 +49,7 @@
 	},
 
 
-	"chapternamefont":{
+	"chapternamefont{}":{
 		"prefix":"chapternamefont",
 		"body":[
 			"\\chapternamefont{${1:font cmds}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"chapternamesize":{
+	"chapternamesize{}":{
 		"prefix":"chapternamesize",
 		"body":[
 			"\\chapternamesize{${1:size cmd}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"chaptertitlefont":{
+	"chaptertitlefont{}":{
 		"prefix":"chaptertitlefont",
 		"body":[
 			"\\chaptertitlefont{${1:font cmds}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"chaptertitlesize":{
+	"chaptertitlesize{}":{
 		"prefix":"chaptertitlesize",
 		"body":[
 			"\\chaptertitlesize{${1:size cmd}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"ColumnSaveHeading":{
+	"ColumnSaveHeading{}":{
 		"prefix":"ColumnSaveHeading",
 		"body":[
 			"\\ColumnSaveHeading{${1:text}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"committee":{
+	"committee{}{}{}{}{}":{
 		"prefix":"committee",
 		"body":[
 			"\\committee{${1:member1}}{${2:member2}}{${3:member3}}{${4:member4}}{${5:member5}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"copyrightyear":{
+	"copyrightyear{}":{
 		"prefix":"copyrightyear",
 		"body":[
 			"\\copyrightyear{${1:year}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"dedication":{
+	"dedication{}":{
 		"prefix":"dedication",
 		"body":[
 			"\\dedication{${1:text}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"degreemonth":{
+	"degreemonth{}":{
 		"prefix":"degreemonth",
 		"body":[
 			"\\degreemonth{${1:month}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"degreeyear":{
+	"degreeyear{}":{
 		"prefix":"degreeyear",
 		"body":[
 			"\\degreeyear{${1:year}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"graduateprogram":{
+	"graduateprogram{}":{
 		"prefix":"graduateprogram",
 		"body":[
 			"\\graduateprogram{${1:program%text}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"officialmajor":{
+	"officialmajor{}":{
 		"prefix":"officialmajor",
 		"body":[
 			"\\officialmajor{${1:major%text}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"secfontsize":{
+	"secfontsize{}":{
 		"prefix":"secfontsize",
 		"body":[
 			"\\secfontsize{${1:size cmd}}"
@@ -201,7 +201,7 @@
 	},
 
 
-	"SetSinglespace":{
+	"SetSinglespace{}":{
 		"prefix":"SetSinglespace",
 		"body":[
 			"\\SetSinglespace{${1:factor}}"
@@ -209,7 +209,7 @@
 	},
 
 
-	"setstretch":{
+	"setstretch{}":{
 		"prefix":"setstretch",
 		"body":[
 			"\\setstretch{${1:factor}}"
@@ -225,7 +225,7 @@
 	},
 
 
-	"ssubsecfontsize":{
+	"ssubsecfontsize{}":{
 		"prefix":"ssubsecfontsize",
 		"body":[
 			"\\ssubsecfontsize{${1:size cmd}}"
@@ -233,7 +233,7 @@
 	},
 
 
-	"subsecfontsize":{
+	"subsecfontsize{}":{
 		"prefix":"subsecfontsize",
 		"body":[
 			"\\subsecfontsize{${1:size cmd}}"
@@ -265,7 +265,7 @@
 	},
 
 
-	"titlesize":{
+	"titlesize{}":{
 		"prefix":"titlesize",
 		"body":[
 			"\\titlesize{${1:size cmd}}"
@@ -281,14 +281,6 @@
 	},
 
 
-	"UMIabstract":{
-		"prefix":"UMIabstract",
-		"body":[
-			"\\UMIabstract[${1:text}]"
-		]
-	},
-
-
 	"UMIfoliosep":{
 		"prefix":"UMIfoliosep",
 		"body":[
@@ -297,11 +289,19 @@
 	},
 
 
+	"UMIabstract[]":{
+		"prefix":"UMIabstract",
+		"body":[
+			"\\UMIabstract[${1:text}]"
+		]
+	},
+
+
 	"code":{
 		"prefix":"code",
 		"body":[
 			"\\begin{code}",
-			"\t$1",
+				"\t$1",
 			"\\end{code}"
 		]
 	},
@@ -311,7 +311,7 @@
 		"prefix":"UMImargins",
 		"body":[
 			"\\begin{UMImargins}",
-			"\t$1",
+				"\t$1",
 			"\\end{UMImargins}"
 		]
 	}

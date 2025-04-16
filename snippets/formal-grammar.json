@@ -1,7 +1,7 @@
 {
 
 
-	"firstcase":{
+	"firstcase{}{}{}":{
 		"prefix":"firstcase",
 		"body":[
 			"\\firstcase{${1:letter}}{${2:definition%formula}}{${3:explanation%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"otherform":{
+	"otherform{}{}":{
 		"prefix":"otherform",
 		"body":[
 			"\\otherform{${1:definition%formula}}{${2:explanation%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"nonterm":{
+	"nonterm{}":{
 		"prefix":"nonterm",
 		"body":[
 			"\\nonterm{${1:text%plain}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"nontermsubtil":{
+	"nontermsubtil{}":{
 		"prefix":"nontermsubtil",
 		"body":[
 			"\\nontermsubtil{${1:arg}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"firstcasesubtil":{
+	"firstcasesubtil{}{}{}":{
 		"prefix":"firstcasesubtil",
 		"body":[
 			"\\firstcasesubtil{${1:arg}}{${2:definition%formula}}{${3:explanation%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"lochighlight":{
+	"lochighlight{}":{
 		"prefix":"lochighlight",
 		"body":[
 			"\\lochighlight{${1:text}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"rowstyle":{
+	"rowstyle{}":{
 		"prefix":"rowstyle",
 		"body":[
 			"\\rowstyle{${1:style code}}"
@@ -85,7 +85,7 @@
 		"prefix":"grammar",
 		"body":[
 			"\\begin{grammar}",
-			"\t$1",
+				"\t$1",
 			"\\end{grammar}"
 		]
 	},
@@ -95,8 +95,28 @@
 		"prefix":"floatgrammar",
 		"body":[
 			"\\begin{floatgrammar}",
-			"\t$1",
+				"\t$1",
 			"\\end{floatgrammar}"
+		]
+	},
+
+
+	"grammar":{
+		"prefix":"grammar",
+		"body":[
+			"\\begin{grammar}",
+				"\t$1",
+			"\\end{grammar}"
+		]
+	},
+
+
+	"grammar":{
+		"prefix":"grammar",
+		"body":[
+			"\\begin{grammar}",
+				"\t$1",
+			"\\end{grammar}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"introduce":{
+	"introduce{}{}{}":{
 		"prefix":"introduce",
 		"body":[
 			"\\introduce{${1:label}}{${2:formula}}{${3:comment%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"assume":{
+	"assume{}{}{}":{
 		"prefix":"assume",
 		"body":[
 			"\\assume{${1:label}}{${2:formula}}{${3:comment%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"step":{
+	"step{}{}{}":{
 		"prefix":"step",
 		"body":[
 			"\\step{${1:label}}{${2:formula}}{${3:comment%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"conclude":{
+	"conclude{}{}{}":{
 		"prefix":"conclude",
 		"body":[
 			"\\conclude{${1:label}}{${2:formula}}{${3:comment%text}}"
@@ -33,66 +33,10 @@
 	},
 
 
-	"conclude":{
-		"prefix":"conclude",
-		"body":[
-			"\\conclude[${4:number}]{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"introduce*":{
-		"prefix":"introduce*",
-		"body":[
-			"\\introduce*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"assume*":{
-		"prefix":"assume*",
-		"body":[
-			"\\assume*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"step*":{
-		"prefix":"step*",
-		"body":[
-			"\\step*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"conclude*":{
-		"prefix":"conclude*",
-		"body":[
-			"\\conclude*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"conclude*":{
-		"prefix":"conclude*",
-		"body":[
-			"\\conclude*[${4:number}]{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"skipsteps":{
+	"skipsteps{}{}{}":{
 		"prefix":"skipsteps",
 		"body":[
 			"\\skipsteps{${1:number}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"skipsteps*":{
-		"prefix":"skipsteps*",
-		"body":[
-			"\\skipsteps*{${1:formula}}{${2:comment%text}}"
 		]
 	},
 
@@ -101,14 +45,6 @@
 		"prefix":"done",
 		"body":[
 			"\\done"
-		]
-	},
-
-
-	"done":{
-		"prefix":"done",
-		"body":[
-			"\\done[${1:number}]"
 		]
 	},
 
@@ -201,21 +137,105 @@
 	},
 
 
+	"introduce*{}{}{}":{
+		"prefix":"*introduce",
+		"body":[
+			"\\introduce*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"assume*{}{}{}":{
+		"prefix":"*assume",
+		"body":[
+			"\\assume*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"step*{}{}{}":{
+		"prefix":"*step",
+		"body":[
+			"\\step*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"conclude*{}{}{}":{
+		"prefix":"*conclude",
+		"body":[
+			"\\conclude*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"conclude*[]{}{}{}":{
+		"prefix":"*conclude",
+		"body":[
+			"\\conclude*[${4:number}]{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"skipsteps*{}{}":{
+		"prefix":"*skipsteps",
+		"body":[
+			"\\skipsteps*{${1:formula}}{${2:comment%text}}"
+		]
+	},
+
+
+	"conclude[]{}{}{}":{
+		"prefix":"conclude",
+		"body":[
+			"\\conclude[${4:number}]{${1:label}}{${2:formula}}{${3:comment%text}}"
+		]
+	},
+
+
+	"done[]":{
+		"prefix":"done",
+		"body":[
+			"\\done[${1:number}]"
+		]
+	},
+
+
 	"flagderiv":{
 		"prefix":"flagderiv",
 		"body":[
 			"\\begin{flagderiv}",
-			"\t$1",
+				"\t$1",
 			"\\end{flagderiv}"
 		]
 	},
 
 
 	"flagderiv*":{
-		"prefix":"flagderiv*",
+		"prefix":"*flagderiv",
 		"body":[
 			"\\begin{flagderiv*}",
-			"\t$1",
+				"\t$1",
+			"\\end{flagderiv*}"
+		]
+	},
+
+
+	"flagderiv":{
+		"prefix":"flagderiv",
+		"body":[
+			"\\begin{flagderiv}",
+				"\t$1",
+			"\\end{flagderiv}"
+		]
+	},
+
+
+	"flagderiv*":{
+		"prefix":"flagderiv",
+		"body":[
+			"\\begin{flagderiv*}",
+				"\t$1",
 			"\\end{flagderiv*}"
 		]
 	}

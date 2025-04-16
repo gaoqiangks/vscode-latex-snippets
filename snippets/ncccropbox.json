@@ -1,7 +1,7 @@
 {
 
 
-	"cropbox":{
+	"cropbox{}":{
 		"prefix":"cropbox",
 		"body":[
 			"\\cropbox{${1:content%text}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"cropbox":{
-		"prefix":"cropbox",
-		"body":[
-			"\\cropbox[${2:width}]{${1:content%text}}"
-		]
-	},
-
-
-	"cropbox":{
-		"prefix":"cropbox",
-		"body":[
-			"\\cropbox[${2:width}][${3:height}]{${1:content%text}}"
-		]
-	},
-
-
-	"cropboxsep":{
+	"cropboxsep{}":{
 		"prefix":"cropboxsep",
 		"body":[
 			"\\cropboxsep{${1:length}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"croplinewidth":{
+	"croplinewidth{}":{
 		"prefix":"croplinewidth",
 		"body":[
 			"\\croplinewidth{${1:length}}"
@@ -41,10 +25,26 @@
 	},
 
 
-	"croplinelength":{
+	"croplinelength{}":{
 		"prefix":"croplinelength",
 		"body":[
 			"\\croplinelength{${1:length}}"
+		]
+	},
+
+
+	"cropbox[]{}":{
+		"prefix":"cropbox",
+		"body":[
+			"\\cropbox[${2:width}]{${1:content%text}}"
+		]
+	},
+
+
+	"cropbox[][]{}":{
+		"prefix":"cropbox",
+		"body":[
+			"\\cropbox[${2:width}][${3:height}]{${1:content%text}}"
 		]
 	}
 }

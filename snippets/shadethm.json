@@ -1,18 +1,10 @@
 {
 
 
-	"newshadetheorem":{
+	"newshadetheorem{}{}":{
 		"prefix":"newshadetheorem",
 		"body":[
 			"\\newshadetheorem{${1:envname}}{${2:label text}}"
-		]
-	},
-
-
-	"newshadetheorem":{
-		"prefix":"newshadetheorem",
-		"body":[
-			"\\newshadetheorem{${1:envname}}{${2:label text}}[${3:counter}]"
 		]
 	},
 
@@ -81,11 +73,19 @@
 	},
 
 
+	"newshadetheorem{}{}[]":{
+		"prefix":"newshadetheorem",
+		"body":[
+			"\\newshadetheorem{${1:envname}}{${2:label text}}[${3:counter}]"
+		]
+	},
+
+
 	"shadebox":{
 		"prefix":"shadebox",
 		"body":[
 			"\\begin{shadebox}",
-			"\t$1",
+				"\t$1",
 			"\\end{shadebox}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"psPrintValue":{
+	"psPrintValue{}":{
 		"prefix":"psPrintValue",
 		"body":[
 			"\\psPrintValue{${1:PS code}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"psPrintValue":{
-		"prefix":"psPrintValue",
-		"body":[
-			"\\psPrintValue[${2:options%keyvals}]{${1:PS code}}"
-		]
-	},
-
-
-	"psPrintValueNew":{
+	"psPrintValueNew{}":{
 		"prefix":"psPrintValueNew",
 		"body":[
 			"\\psPrintValueNew{${1:PS code}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"psPrintValueNew":{
-		"prefix":"psPrintValueNew",
-		"body":[
-			"\\psPrintValueNew[${2:options%keyvals}]{${1:PS code}}"
-		]
-	},
-
-
-	"psRegisterList":{
+	"psRegisterList{}{}":{
 		"prefix":"psRegisterList",
 		"body":[
 			"\\psRegisterList{${1:name}}{${2:value list}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"setrannum":{
+	"setrannum{}{}{}":{
 		"prefix":"setrannum",
 		"body":[
 			"\\setrannum{${1:count register%cmd}}{${2:min}}{${3:max}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"setrandim":{
+	"setrandim{}{}{}":{
 		"prefix":"setrandim",
 		"body":[
 			"\\setrandim{${1:dimen register%cmd}}{${2:min}}{${3:max}}"
@@ -93,6 +77,22 @@
 		"prefix":"ranval",
 		"body":[
 			"\\ranval"
+		]
+	},
+
+
+	"psPrintValue[]{}":{
+		"prefix":"psPrintValue",
+		"body":[
+			"\\psPrintValue[${2:options%keyvals}]{${1:PS code}}"
+		]
+	},
+
+
+	"psPrintValueNew[]{}":{
+		"prefix":"psPrintValueNew",
+		"body":[
+			"\\psPrintValueNew[${2:options%keyvals}]{${1:PS code}}"
 		]
 	}
 }

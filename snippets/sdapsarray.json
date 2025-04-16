@@ -1,7 +1,7 @@
 {
 
 
-	"sdapsnested":{
+	"sdapsnested{}":{
 		"prefix":"sdapsnested",
 		"body":[
 			"\\sdapsnested{${1:content%text}}"
@@ -13,7 +13,17 @@
 		"prefix":"sdapsarray",
 		"body":[
 			"\\begin{sdapsarray}",
-			"\t$1",
+				"\t$1",
+			"\\end{sdapsarray}"
+		]
+	},
+
+
+	"sdapsarray":{
+		"prefix":"sdapsarray",
+		"body":[
+			"\\begin{sdapsarray}",
+				"\t$1",
 			"\\end{sdapsarray}"
 		]
 	}

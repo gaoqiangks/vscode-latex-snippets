@@ -1,7 +1,7 @@
 {
 
 
-	"MNOTE":{
+	"MNOTE{}":{
 		"prefix":"MNOTE",
 		"body":[
 			"\\MNOTE{${1:text%todo}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"MNOTE":{
-		"prefix":"MNOTE",
-		"body":[
-			"\\MNOTE[${2:TikZ options}]{${1:text%todo}}"
-		]
-	},
-
-
-	"Mnewauthor":{
+	"Mnewauthor{}{}":{
 		"prefix":"Mnewauthor",
 		"body":[
 			"\\Mnewauthor{${1:name}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"Mnewauthor":{
-		"prefix":"Mnewauthor",
-		"body":[
-			"\\Mnewauthor[${3:initials}]{${1:name}}{${2:TikZ options}}"
 		]
 	},
 
@@ -89,7 +73,7 @@
 	},
 
 
-	"MNOTEon":{
+	"MNOTEon{}":{
 		"prefix":"MNOTEon",
 		"body":[
 			"\\MNOTEon{${1:text}}"
@@ -97,15 +81,7 @@
 	},
 
 
-	"MNOTEon":{
-		"prefix":"MNOTEon",
-		"body":[
-			"\\MNOTEon[${2:TikZ options}]{${1:text}}"
-		]
-	},
-
-
-	"mnoteseastlink":{
+	"mnoteseastlink{}":{
 		"prefix":"mnoteseastlink",
 		"body":[
 			"\\mnoteseastlink{${1:TikZ options}}"
@@ -113,10 +89,34 @@
 	},
 
 
-	"mnoteswestlink":{
+	"mnoteswestlink{}":{
 		"prefix":"mnoteswestlink",
 		"body":[
 			"\\mnoteswestlink{${1:TikZ options}}"
+		]
+	},
+
+
+	"MNOTE[]{}":{
+		"prefix":"MNOTE",
+		"body":[
+			"\\MNOTE[${2:TikZ options}]{${1:text%todo}}"
+		]
+	},
+
+
+	"Mnewauthor[]{}{}":{
+		"prefix":"Mnewauthor",
+		"body":[
+			"\\Mnewauthor[${3:initials}]{${1:name}}{${2:TikZ options}}"
+		]
+	},
+
+
+	"MNOTEon[]{}":{
+		"prefix":"MNOTEon",
+		"body":[
+			"\\MNOTEon[${2:TikZ options}]{${1:text}}"
 		]
 	}
 }

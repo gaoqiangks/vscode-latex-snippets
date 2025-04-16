@@ -1,7 +1,7 @@
 {
 
 
-	"joinbox":{
+	"joinbox{}{}":{
 		"prefix":"joinbox",
 		"body":[
 			"\\joinbox{${1:content1%text}}{${2:content2%text}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"joinbox":{
-		"prefix":"joinbox",
-		"body":[
-			"\\joinbox[${3:options%keyvals}]{${1:content1%text}}{${2:content2%text}}"
-		]
-	},
-
-
-	"joinbox*":{
-		"prefix":"joinbox*",
-		"body":[
-			"\\joinbox*{${1:content1%text}}{${2:content2%text}}"
-		]
-	},
-
-
-	"joinbox*":{
-		"prefix":"joinbox*",
-		"body":[
-			"\\joinbox*[${3:options%keyvals}]{${1:content1%text}}{${2:content2%text}}"
-		]
-	},
-
-
-	"joinboxes":{
+	"joinboxes{}":{
 		"prefix":"joinboxes",
 		"body":[
 			"\\joinboxes{${1:content1,content2,...%text}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"joinboxes":{
-		"prefix":"joinboxes",
-		"body":[
-			"\\joinboxes[${2:options%keyvals}]{${1:content1,content2,...%text}}"
-		]
-	},
-
-
-	"joinboxes*":{
-		"prefix":"joinboxes*",
-		"body":[
-			"\\joinboxes*{${1:content1,content2,...%text}}"
-		]
-	},
-
-
-	"joinboxes*":{
-		"prefix":"joinboxes*",
-		"body":[
-			"\\joinboxes*[${2:options%keyvals}]{${1:content1,content2,...%text}}"
-		]
-	},
-
-
-	"joinfigs":{
+	"joinfigs{}":{
 		"prefix":"joinfigs",
 		"body":[
 			"\\joinfigs{${1:imagefile1,imagefile2,...%definition}}"
@@ -73,34 +25,82 @@
 	},
 
 
-	"joinfigs":{
-		"prefix":"joinfigs",
+	"joinset{}":{
+		"prefix":"joinset",
 		"body":[
-			"\\joinfigs[${2:options%keyvals}]{${1:imagefile1,imagefile2,...%definition}}"
+			"\\joinset{${1:options%keyvals}}"
 		]
 	},
 
 
-	"joinfigs*":{
-		"prefix":"joinfigs*",
+	"joinbox*{}{}":{
+		"prefix":"*joinbox",
+		"body":[
+			"\\joinbox*{${1:content1%text}}{${2:content2%text}}"
+		]
+	},
+
+
+	"joinbox*[]{}{}":{
+		"prefix":"*joinbox",
+		"body":[
+			"\\joinbox*[${3:options%keyvals}]{${1:content1%text}}{${2:content2%text}}"
+		]
+	},
+
+
+	"joinboxes*{}":{
+		"prefix":"*joinboxes",
+		"body":[
+			"\\joinboxes*{${1:content1,content2,...%text}}"
+		]
+	},
+
+
+	"joinboxes*[]{}":{
+		"prefix":"*joinboxes",
+		"body":[
+			"\\joinboxes*[${2:options%keyvals}]{${1:content1,content2,...%text}}"
+		]
+	},
+
+
+	"joinfigs*{}":{
+		"prefix":"*joinfigs",
 		"body":[
 			"\\joinfigs*{${1:imagefile1,imagefile2,...%definition}}"
 		]
 	},
 
 
-	"joinfigs*":{
-		"prefix":"joinfigs*",
+	"joinfigs*[]{}":{
+		"prefix":"*joinfigs",
 		"body":[
 			"\\joinfigs*[${2:options%keyvals}]{${1:imagefile1,imagefile2,...%definition}}"
 		]
 	},
 
 
-	"joinset":{
-		"prefix":"joinset",
+	"joinbox[]{}{}":{
+		"prefix":"joinbox",
 		"body":[
-			"\\joinset{${1:options%keyvals}}"
+			"\\joinbox[${3:options%keyvals}]{${1:content1%text}}{${2:content2%text}}"
+		]
+	},
+
+
+	"joinboxes[]{}":{
+		"prefix":"joinboxes",
+		"body":[
+			"\\joinboxes[${2:options%keyvals}]{${1:content1,content2,...%text}}"
+		]
+	},
+
+
+	"joinfigs[]{}":{
+		"prefix":"joinfigs",
+		"body":[
+			"\\joinfigs[${2:options%keyvals}]{${1:imagefile1,imagefile2,...%definition}}"
 		]
 	}
 }

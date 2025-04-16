@@ -1,7 +1,7 @@
 {
 
 
-	"printcolorvalue":{
+	"printcolorvalue{}":{
 		"prefix":"printcolorvalue",
 		"body":[
 			"\\printcolorvalue{${1:color}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"printcolorvalue":{
-		"prefix":"printcolorvalue",
-		"body":[
-			"\\printcolorvalue[${2:model}]{${1:color}}"
-		]
-	},
-
-
-	"colorsample":{
+	"colorsample{}":{
 		"prefix":"colorsample",
 		"body":[
 			"\\colorsample{${1:color}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"colorsample":{
-		"prefix":"colorsample",
-		"body":[
-			"\\colorsample[${2:model}][${3:textcolor%color}][${4:box width%l}]{${1:color}}[${5:title%text}]"
-		]
-	},
-
-
-	"colorpalette":{
+	"colorpalette{}":{
 		"prefix":"colorpalette",
 		"body":[
 			"\\colorpalette{${1:color}}"
@@ -41,7 +25,23 @@
 	},
 
 
-	"colorpalette":{
+	"printcolorvalue[]{}":{
+		"prefix":"printcolorvalue",
+		"body":[
+			"\\printcolorvalue[${2:model}]{${1:color}}"
+		]
+	},
+
+
+	"colorsample[][][]{}[]":{
+		"prefix":"colorsample",
+		"body":[
+			"\\colorsample[${2:model}][${3:textcolor%color}][${4:box width%l}]{${1:color}}[${5:title%text}]"
+		]
+	},
+
+
+	"colorpalette[]{}":{
 		"prefix":"colorpalette",
 		"body":[
 			"\\colorpalette[${2:options%keyvals}]{${1:color}}"

@@ -1,7 +1,7 @@
 {
 
 
-	"leftheader":{
+	"leftheader{}":{
 		"prefix":"leftheader",
 		"body":[
 			"\\leftheader{${1:contents%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"rightheader":{
+	"rightheader{}":{
 		"prefix":"rightheader",
 		"body":[
 			"\\rightheader{${1:contents%text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"photo":{
+	"photo{}":{
 		"prefix":"photo",
 		"body":[
 			"\\photo{${1:imagefile}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"photo":{
-		"prefix":"photo",
-		"body":[
-			"\\photo[${2:hpos%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"photoscale":{
+	"photoscale{}":{
 		"prefix":"photoscale",
 		"body":[
 			"\\photoscale{${1:scale}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"headerscale":{
+	"headerscale{}":{
 		"prefix":"headerscale",
 		"body":[
 			"\\headerscale{${1:scale}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"subtitle":{
+	"subtitle{}":{
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"titlealignment":{
+	"titlealignment{}":{
 		"prefix":"titlealignment",
 		"body":[
 			"\\titlealignment{${1:hpos%keyvals}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"titlefont":{
+	"titlefont{}":{
 		"prefix":"titlefont",
 		"body":[
 			"\\titlefont{${1:cmds}}"
@@ -97,7 +89,7 @@
 	},
 
 
-	"subtitlefont":{
+	"subtitlefont{}":{
 		"prefix":"subtitlefont",
 		"body":[
 			"\\subtitlefont{${1:cmds}}"
@@ -113,15 +105,7 @@
 	},
 
 
-	"makeheaders":{
-		"prefix":"makeheaders",
-		"body":[
-			"\\makeheaders[${1:vpos%keyvals}]"
-		]
-	},
-
-
-	"flavor":{
+	"flavor{}":{
 		"prefix":"flavor",
 		"body":[
 			"\\flavor{${1:key%plain}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"makerubric":{
+	"makerubric{}":{
 		"prefix":"makerubric",
 		"body":[
 			"\\makerubric{${1:file}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"rubricalignment":{
+	"rubricalignment{}":{
 		"prefix":"rubricalignment",
 		"body":[
 			"\\rubricalignment{${1:hpos%keyvals}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"rubricfont":{
+	"rubricfont{}":{
 		"prefix":"rubricfont",
 		"body":[
 			"\\rubricfont{${1:cmds}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"entry":{
+	"entry{}":{
 		"prefix":"entry",
 		"body":[
 			"\\entry{${1:contents%text}}"
@@ -177,31 +161,7 @@
 	},
 
 
-	"entry":{
-		"prefix":"entry",
-		"body":[
-			"\\entry[${2:key%plain}]{${1:contents%text}}"
-		]
-	},
-
-
-	"entry*":{
-		"prefix":"entry*",
-		"body":[
-			"\\entry*"
-		]
-	},
-
-
-	"entry*":{
-		"prefix":"entry*",
-		"body":[
-			"\\entry*[${1:key%plain}]"
-		]
-	},
-
-
-	"keyalignment":{
+	"keyalignment{}":{
 		"prefix":"keyalignment",
 		"body":[
 			"\\keyalignment{${1:hpos%keyvals}}"
@@ -217,7 +177,7 @@
 	},
 
 
-	"prefix":{
+	"prefix{}":{
 		"prefix":"prefix",
 		"body":[
 			"\\prefix{${1:cmds}}"
@@ -225,7 +185,7 @@
 	},
 
 
-	"noentry":{
+	"noentry{}":{
 		"prefix":"noentry",
 		"body":[
 			"\\noentry{${1:key%plain}}"
@@ -233,7 +193,7 @@
 	},
 
 
-	"subrubric":{
+	"subrubric{}":{
 		"prefix":"subrubric",
 		"body":[
 			"\\subrubric{${1:title%text}}"
@@ -241,7 +201,7 @@
 	},
 
 
-	"subrubricalignment":{
+	"subrubricalignment{}":{
 		"prefix":"subrubricalignment",
 		"body":[
 			"\\subrubricalignment{${1:hpos%keyvals}}"
@@ -249,7 +209,7 @@
 	},
 
 
-	"subrubricfont":{
+	"subrubricfont{}":{
 		"prefix":"subrubricfont",
 		"body":[
 			"\\subrubricfont{${1:cmds}}"
@@ -273,7 +233,7 @@
 	},
 
 
-	"continuedname":{
+	"continuedname{}":{
 		"prefix":"continuedname",
 		"body":[
 			"\\continuedname{${1:text}}"
@@ -281,7 +241,7 @@
 	},
 
 
-	"listpubname":{
+	"listpubname{}":{
 		"prefix":"listpubname",
 		"body":[
 			"\\listpubname{${1:title%text}}"
@@ -305,11 +265,51 @@
 	},
 
 
+	"entry*":{
+		"prefix":"*entry",
+		"body":[
+			"\\entry*"
+		]
+	},
+
+
+	"entry*[]":{
+		"prefix":"*entry",
+		"body":[
+			"\\entry*[${1:key%plain}]"
+		]
+	},
+
+
+	"photo[]{}":{
+		"prefix":"photo",
+		"body":[
+			"\\photo[${2:hpos%keyvals}]{${1:imagefile}}"
+		]
+	},
+
+
+	"makeheaders[]":{
+		"prefix":"makeheaders",
+		"body":[
+			"\\makeheaders[${1:vpos%keyvals}]"
+		]
+	},
+
+
+	"entry[]{}":{
+		"prefix":"entry",
+		"body":[
+			"\\entry[${2:key%plain}]{${1:contents%text}}"
+		]
+	},
+
+
 	"rubric":{
 		"prefix":"rubric",
 		"body":[
 			"\\begin{rubric}",
-			"\t$1",
+				"\t$1",
 			"\\end{rubric}"
 		]
 	}

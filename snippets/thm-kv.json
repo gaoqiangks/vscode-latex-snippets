@@ -1,7 +1,7 @@
 {
 
 
-	"declaretheoremstyle":{
+	"declaretheoremstyle{}":{
 		"prefix":"declaretheoremstyle",
 		"body":[
 			"\\declaretheoremstyle{${1:style name}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"declaretheoremstyle":{
-		"prefix":"declaretheoremstyle",
-		"body":[
-			"\\declaretheoremstyle[${2:options%keyvals}]{${1:style name}}"
-		]
-	},
-
-
-	"declaretheorem":{
+	"declaretheorem{}":{
 		"prefix":"declaretheorem",
 		"body":[
 			"\\declaretheorem{${1:envname}}"
@@ -25,7 +17,23 @@
 	},
 
 
-	"declaretheorem":{
+	"thmcontinues{}":{
+		"prefix":"thmcontinues",
+		"body":[
+			"\\thmcontinues{${1:key}}"
+		]
+	},
+
+
+	"declaretheoremstyle[]{}":{
+		"prefix":"declaretheoremstyle",
+		"body":[
+			"\\declaretheoremstyle[${2:options%keyvals}]{${1:style name}}"
+		]
+	},
+
+
+	"declaretheorem[]{}":{
 		"prefix":"declaretheorem",
 		"body":[
 			"\\declaretheorem[${2:options%keyvals}]{${1:envname}}"
@@ -33,7 +41,7 @@
 	},
 
 
-	"declaretheorem":{
+	"declaretheorem[]{}[]":{
 		"prefix":"declaretheorem",
 		"body":[
 			"\\declaretheorem[${2:options%keyvals}]{${1:envname}}[${3:options}]"
@@ -41,18 +49,10 @@
 	},
 
 
-	"declaretheorem":{
+	"declaretheorem{}[]":{
 		"prefix":"declaretheorem",
 		"body":[
 			"\\declaretheorem{${1:envname}}[${2:options}]"
-		]
-	},
-
-
-	"thmcontinues":{
-		"prefix":"thmcontinues",
-		"body":[
-			"\\thmcontinues{${1:key}}"
 		]
 	}
 }

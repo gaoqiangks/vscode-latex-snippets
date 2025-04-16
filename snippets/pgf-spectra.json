@@ -9,26 +9,10 @@
 	},
 
 
-	"pgfspectra":{
-		"prefix":"pgfspectra",
-		"body":[
-			"\\pgfspectra[${1:options%keyvals}]"
-		]
-	},
-
-
-	"wlcolor":{
+	"wlcolor{}":{
 		"prefix":"wlcolor",
 		"body":[
 			"\\wlcolor{${1:wavelength}}"
-		]
-	},
-
-
-	"pgfspectraStyle":{
-		"prefix":"pgfspectraStyle",
-		"body":[
-			"\\pgfspectraStyle[${1:options%keyvals}]"
 		]
 	},
 
@@ -41,7 +25,7 @@
 	},
 
 
-	"pgfspectrashade":{
+	"pgfspectrashade(){}":{
 		"prefix":"pgfspectrashade",
 		"body":[
 			"\\pgfspectrashade(${2:start},${3:end}){${1:name}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"pgfspectrashade":{
-		"prefix":"pgfspectrashade",
-		"body":[
-			"\\pgfspectrashade[${2:h|v}](${3:start},${4:end}){${1:name}}"
-		]
-	},
-
-
-	"usepgfspectralibrary":{
+	"usepgfspectralibrary{}":{
 		"prefix":"usepgfspectralibrary",
 		"body":[
 			"\\usepgfspectralibrary{${1:libraries%keyvals}}"
@@ -65,18 +41,10 @@
 	},
 
 
-	"pgfspectradata":{
+	"pgfspectradata{}":{
 		"prefix":"pgfspectradata",
 		"body":[
 			"\\pgfspectradata{${1:options%keyvals}}"
-		]
-	},
-
-
-	"pgfspectradata":{
-		"prefix":"pgfspectradata",
-		"body":[
-			"\\pgfspectradata[${2:name}]{${1:options%keyvals}}"
 		]
 	},
 
@@ -89,26 +57,10 @@
 	},
 
 
-	"pgfspectratable":{
+	"pgfspectratable{}":{
 		"prefix":"pgfspectratable",
 		"body":[
 			"\\pgfspectratable{${1:dataset names}}"
-		]
-	},
-
-
-	"pgfspectratable":{
-		"prefix":"pgfspectratable",
-		"body":[
-			"\\pgfspectratable[${1:options%keyvals}]"
-		]
-	},
-
-
-	"pgfspectratable":{
-		"prefix":"pgfspectratable",
-		"body":[
-			"\\pgfspectratable[${2:options%keyvals}]{${1:dataset names}}"
 		]
 	},
 
@@ -121,7 +73,7 @@
 	},
 
 
-	"pgfspectrawrite":{
+	"pgfspectrawrite{}":{
 		"prefix":"pgfspectrawrite",
 		"body":[
 			"\\pgfspectrawrite{${1:dataset names}}"
@@ -129,23 +81,7 @@
 	},
 
 
-	"pgfspectrawrite":{
-		"prefix":"pgfspectrawrite",
-		"body":[
-			"\\pgfspectrawrite[${1:filename}]"
-		]
-	},
-
-
-	"pgfspectrawrite":{
-		"prefix":"pgfspectrawrite",
-		"body":[
-			"\\pgfspectrawrite[${2:filename}]{${1:dataset names}}"
-		]
-	},
-
-
-	"pgfspectraplotmap":{
+	"pgfspectraplotmap{}":{
 		"prefix":"pgfspectraplotmap",
 		"body":[
 			"\\pgfspectraplotmap{${1:name}}"
@@ -153,15 +89,7 @@
 	},
 
 
-	"pgfspectraplotmap":{
-		"prefix":"pgfspectraplotmap",
-		"body":[
-			"\\pgfspectraplotmap[${2:l|h}]{${1:name}}"
-		]
-	},
-
-
-	"pgfspectraplotshade":{
+	"pgfspectraplotshade{}":{
 		"prefix":"pgfspectraplotshade",
 		"body":[
 			"\\pgfspectraplotshade{${1:name}}"
@@ -169,15 +97,7 @@
 	},
 
 
-	"pgfspectraplotshade":{
-		"prefix":"pgfspectraplotshade",
-		"body":[
-			"\\pgfspectraplotshade[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"tempercolor":{
+	"tempercolor{}":{
 		"prefix":"tempercolor",
 		"body":[
 			"\\tempercolor{${1:Kelvin}}"
@@ -185,7 +105,7 @@
 	},
 
 
-	"pgfspectrarainbow":{
+	"pgfspectrarainbow{}":{
 		"prefix":"pgfspectrarainbow",
 		"body":[
 			"\\pgfspectrarainbow{${1:radius}}"
@@ -193,7 +113,7 @@
 	},
 
 
-	"pgfspectrarainbow":{
+	"pgfspectrarainbow(){}":{
 		"prefix":"pgfspectrarainbow",
 		"body":[
 			"\\pgfspectrarainbow(${2:options%keyvals}){${1:radius}}"
@@ -201,7 +121,87 @@
 	},
 
 
-	"pgfspectrarainbow":{
+	"pgfspectra[]":{
+		"prefix":"pgfspectra",
+		"body":[
+			"\\pgfspectra[${1:options%keyvals}]"
+		]
+	},
+
+
+	"pgfspectraStyle[]":{
+		"prefix":"pgfspectraStyle",
+		"body":[
+			"\\pgfspectraStyle[${1:options%keyvals}]"
+		]
+	},
+
+
+	"pgfspectrashade[](){}":{
+		"prefix":"pgfspectrashade",
+		"body":[
+			"\\pgfspectrashade[${2:h|v}](${3:start},${4:end}){${1:name}}"
+		]
+	},
+
+
+	"pgfspectradata[]{}":{
+		"prefix":"pgfspectradata",
+		"body":[
+			"\\pgfspectradata[${2:name}]{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pgfspectratable[]":{
+		"prefix":"pgfspectratable",
+		"body":[
+			"\\pgfspectratable[${1:options%keyvals}]"
+		]
+	},
+
+
+	"pgfspectratable[]{}":{
+		"prefix":"pgfspectratable",
+		"body":[
+			"\\pgfspectratable[${2:options%keyvals}]{${1:dataset names}}"
+		]
+	},
+
+
+	"pgfspectrawrite[]":{
+		"prefix":"pgfspectrawrite",
+		"body":[
+			"\\pgfspectrawrite[${1:filename}]"
+		]
+	},
+
+
+	"pgfspectrawrite[]{}":{
+		"prefix":"pgfspectrawrite",
+		"body":[
+			"\\pgfspectrawrite[${2:filename}]{${1:dataset names}}"
+		]
+	},
+
+
+	"pgfspectraplotmap[]{}":{
+		"prefix":"pgfspectraplotmap",
+		"body":[
+			"\\pgfspectraplotmap[${2:l|h}]{${1:name}}"
+		]
+	},
+
+
+	"pgfspectraplotshade[]{}":{
+		"prefix":"pgfspectraplotshade",
+		"body":[
+			"\\pgfspectraplotshade[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"pgfspectrarainbow[](){}":{
 		"prefix":"pgfspectrarainbow",
 		"body":[
 			"\\pgfspectrarainbow[${2:TikZ options}](${3:options%keyvals}){${1:radius}}"

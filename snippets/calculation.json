@@ -1,7 +1,7 @@
 {
 
 
-	"step":{
+	"step{}":{
 		"prefix":"step",
 		"body":[
 			"\\step{${1:text}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"step*":{
-		"prefix":"step*",
-		"body":[
-			"\\step*{${1:text}}"
-		]
-	},
-
-
-	"step":{
-		"prefix":"step",
-		"body":[
-			"\\step[${2:symbol}]{${1:text}}"
-		]
-	},
-
-
-	"step*":{
-		"prefix":"step*",
-		"body":[
-			"\\step*[${2:symbol}]{${1:text}}"
-		]
-	},
-
-
-	"comment":{
+	"comment{}":{
 		"prefix":"comment",
 		"body":[
 			"\\comment{${1:text}}"
@@ -121,11 +97,45 @@
 	},
 
 
+	"step*{}":{
+		"prefix":"*step",
+		"body":[
+			"\\step*{${1:text}}"
+		]
+	},
+
+
+	"step*[]{}":{
+		"prefix":"*step",
+		"body":[
+			"\\step*[${2:symbol}]{${1:text}}"
+		]
+	},
+
+
+	"step[]{}":{
+		"prefix":"step",
+		"body":[
+			"\\step[${2:symbol}]{${1:text}}"
+		]
+	},
+
+
+	"calculation":{
+		"prefix":"calculation",
+		"body":[
+			"\\begin{calculation}",
+				"\t$1",
+			"\\end{calculation}"
+		]
+	},
+
+
 	"subcalculation":{
 		"prefix":"subcalculation",
 		"body":[
 			"\\begin{subcalculation}",
-			"\t$1",
+				"\t$1",
 			"\\end{subcalculation}"
 		]
 	},
@@ -135,8 +145,18 @@
 		"prefix":"calculation",
 		"body":[
 			"\\begin{calculation}",
-			"\t$1",
+				"\t$1",
 			"\\end{calculation}"
+		]
+	},
+
+
+	"subcalculation":{
+		"prefix":"subcalculation",
+		"body":[
+			"\\begin{subcalculation}",
+				"\t$1",
+			"\\end{subcalculation}"
 		]
 	}
 }

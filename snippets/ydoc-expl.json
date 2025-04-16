@@ -81,7 +81,7 @@
 	},
 
 
-	"makeOther":{
+	"makeOther{}":{
 		"prefix":"makeOther",
 		"body":[
 			"\\makeOther{${1:arg}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"includefiles":{
+	"includefiles{}{}":{
 		"prefix":"includefiles",
 		"body":[
 			"\\includefiles{${1:in file%file}}{${2:out file}}"
@@ -129,11 +129,21 @@
 	},
 
 
+	"examplecode":{
+		"prefix":"examplecode",
+		"body":[
+			"\\begin{examplecode}",
+				"\t$1",
+			"\\end{examplecode}"
+		]
+	},
+
+
 	"exampletable":{
 		"prefix":"exampletable",
 		"body":[
 			"\\begin{exampletable}",
-			"\t$1",
+				"\t$1",
 			"\\end{exampletable}"
 		]
 	},
@@ -143,18 +153,8 @@
 		"prefix":"example",
 		"body":[
 			"\\begin{example}",
-			"\t$1",
+				"\t$1",
 			"\\end{example}"
-		]
-	},
-
-
-	"examplecode":{
-		"prefix":"examplecode",
-		"body":[
-			"\\begin{examplecode}",
-			"\t$1",
-			"\\end{examplecode}"
 		]
 	}
 }

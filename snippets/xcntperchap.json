@@ -1,7 +1,7 @@
 {
 
 
-	"RegisterTrackCounter":{
+	"RegisterTrackCounter{}{}":{
 		"prefix":"RegisterTrackCounter",
 		"body":[
 			"\\RegisterTrackCounter{${1:track counter}}{${2:counter1,counter2,...}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"RegisterMultipleTrackCounters":{
+	"RegisterMultipleTrackCounters{}{}":{
 		"prefix":"RegisterMultipleTrackCounters",
 		"body":[
 			"\\RegisterMultipleTrackCounters{${1:trackcounter1,trackcounter2,...}}{${2:counter1,counter2,...}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ObtainTrackedValue":{
+	"ObtainTrackedValue{}{}":{
 		"prefix":"ObtainTrackedValue",
 		"body":[
 			"\\ObtainTrackedValue{${1:track level}}{${2:tracked counter}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"ObtainTrackedValue":{
-		"prefix":"ObtainTrackedValue",
-		"body":[
-			"\\ObtainTrackedValue[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"ObtainTrackedValueExp":{
+	"ObtainTrackedValueExp{}{}":{
 		"prefix":"ObtainTrackedValueExp",
 		"body":[
 			"\\ObtainTrackedValueExp{${1:track level}}{${2:tracked counter}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"ObtainTrackedValueExp":{
-		"prefix":"ObtainTrackedValueExp",
-		"body":[
-			"\\ObtainTrackedValueExp[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"tracklabel":{
+	"tracklabel{}":{
 		"prefix":"tracklabel",
 		"body":[
 			"\\tracklabel{${1:label}}"
@@ -57,31 +41,7 @@
 	},
 
 
-	"tracklabel":{
-		"prefix":"tracklabel",
-		"body":[
-			"\\tracklabel[${2:counter}]{${1:label}}"
-		]
-	},
-
-
-	"tracklabel*":{
-		"prefix":"tracklabel*",
-		"body":[
-			"\\tracklabel*{${1:label}}"
-		]
-	},
-
-
-	"tracklabel*":{
-		"prefix":"tracklabel*",
-		"body":[
-			"\\tracklabel*[${2:counter}]{${1:label}}"
-		]
-	},
-
-
-	"ObtainTrackedValueByLabel":{
+	"ObtainTrackedValueByLabel{}{}":{
 		"prefix":"ObtainTrackedValueByLabel",
 		"body":[
 			"\\ObtainTrackedValueByLabel{${1:label}}{${2:tracked counter}}"
@@ -89,15 +49,7 @@
 	},
 
 
-	"ObtainTrackedValueByLabel":{
-		"prefix":"ObtainTrackedValueByLabel",
-		"body":[
-			"\\ObtainTrackedValueByLabel[${3:counter}]{${1:label}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"AddToTrackedCounters":{
+	"AddToTrackedCounters{}{}":{
 		"prefix":"AddToTrackedCounters",
 		"body":[
 			"\\AddToTrackedCounters{${1:trackedcounter1,trackedcounter2,...}}{${2:counter value}}"
@@ -129,7 +81,7 @@
 	},
 
 
-	"OpenTrackFileForWrite":{
+	"OpenTrackFileForWrite{}":{
 		"prefix":"OpenTrackFileForWrite",
 		"body":[
 			"\\OpenTrackFileForWrite{${1:file}}"
@@ -137,7 +89,7 @@
 	},
 
 
-	"StoreCounterValues":{
+	"StoreCounterValues{}":{
 		"prefix":"StoreCounterValues",
 		"body":[
 			"\\StoreCounterValues{${1:arg}}"
@@ -149,6 +101,54 @@
 		"prefix":"TrackCounters",
 		"body":[
 			"\\TrackCounters"
+		]
+	},
+
+
+	"tracklabel*{}":{
+		"prefix":"*tracklabel",
+		"body":[
+			"\\tracklabel*{${1:label}}"
+		]
+	},
+
+
+	"tracklabel*[]{}":{
+		"prefix":"*tracklabel",
+		"body":[
+			"\\tracklabel*[${2:counter}]{${1:label}}"
+		]
+	},
+
+
+	"ObtainTrackedValue[]{}{}":{
+		"prefix":"ObtainTrackedValue",
+		"body":[
+			"\\ObtainTrackedValue[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
+		]
+	},
+
+
+	"ObtainTrackedValueExp[]{}{}":{
+		"prefix":"ObtainTrackedValueExp",
+		"body":[
+			"\\ObtainTrackedValueExp[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
+		]
+	},
+
+
+	"tracklabel[]{}":{
+		"prefix":"tracklabel",
+		"body":[
+			"\\tracklabel[${2:counter}]{${1:label}}"
+		]
+	},
+
+
+	"ObtainTrackedValueByLabel[]{}{}":{
+		"prefix":"ObtainTrackedValueByLabel",
+		"body":[
+			"\\ObtainTrackedValueByLabel[${3:counter}]{${1:label}}{${2:tracked counter}}"
 		]
 	}
 }

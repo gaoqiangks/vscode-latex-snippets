@@ -1,18 +1,10 @@
 {
 
 
-	"endnote":{
+	"endnote{}":{
 		"prefix":"endnote",
 		"body":[
 			"\\endnote{${1:text}}"
-		]
-	},
-
-
-	"endnote":{
-		"prefix":"endnote",
-		"body":[
-			"\\endnote[${2:mark}]{${1:text}}"
 		]
 	},
 
@@ -25,15 +17,7 @@
 	},
 
 
-	"endnotemark":{
-		"prefix":"endnotemark",
-		"body":[
-			"\\endnotemark[${1:mark}]"
-		]
-	},
-
-
-	"endnotetext":{
+	"endnotetext{}":{
 		"prefix":"endnotetext",
 		"body":[
 			"\\endnotetext{${1:text}}"
@@ -65,31 +49,7 @@
 	},
 
 
-	"printendnotes":{
-		"prefix":"printendnotes",
-		"body":[
-			"\\printendnotes[${1:style%keyvals}]"
-		]
-	},
-
-
-	"printendnotes*":{
-		"prefix":"printendnotes*",
-		"body":[
-			"\\printendnotes*"
-		]
-	},
-
-
-	"printendnotes*":{
-		"prefix":"printendnotes*",
-		"body":[
-			"\\printendnotes*[${1:style%keyvals}]"
-		]
-	},
-
-
-	"AtEveryEndnotesList":{
+	"AtEveryEndnotesList{}":{
 		"prefix":"AtEveryEndnotesList",
 		"body":[
 			"\\AtEveryEndnotesList{${1:text}}"
@@ -97,7 +57,7 @@
 	},
 
 
-	"AtNextEndnotesList":{
+	"AtNextEndnotesList{}":{
 		"prefix":"AtNextEndnotesList",
 		"body":[
 			"\\AtNextEndnotesList{${1:text}}"
@@ -105,7 +65,7 @@
 	},
 
 
-	"AfterEveryEndnotesList":{
+	"AfterEveryEndnotesList{}":{
 		"prefix":"AfterEveryEndnotesList",
 		"body":[
 			"\\AfterEveryEndnotesList{${1:text}}"
@@ -113,7 +73,7 @@
 	},
 
 
-	"AfterNextEndnotesList":{
+	"AfterNextEndnotesList{}":{
 		"prefix":"AfterNextEndnotesList",
 		"body":[
 			"\\AfterNextEndnotesList{${1:text}}"
@@ -121,7 +81,7 @@
 	},
 
 
-	"setenotez":{
+	"setenotez{}":{
 		"prefix":"setenotez",
 		"body":[
 			"\\setenotez{${1:options%keyvals}}"
@@ -129,7 +89,7 @@
 	},
 
 
-	"enmark":{
+	"enmark{}":{
 		"prefix":"enmark",
 		"body":[
 			"\\enmark{${1:arg}}"
@@ -137,7 +97,7 @@
 	},
 
 
-	"AtEveryListSplit":{
+	"AtEveryListSplit{}":{
 		"prefix":"AtEveryListSplit",
 		"body":[
 			"\\AtEveryListSplit{${1:code}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"AfterEveryListSplit":{
+	"AfterEveryListSplit{}":{
 		"prefix":"AfterEveryListSplit",
 		"body":[
 			"\\AfterEveryListSplit{${1:code}}"
@@ -161,7 +121,7 @@
 	},
 
 
-	"NewSplitTitleTag":{
+	"NewSplitTitleTag{}{}":{
 		"prefix":"NewSplitTitleTag",
 		"body":[
 			"\\NewSplitTitleTag{${1:tag}}{${2:replacement}}"
@@ -169,7 +129,7 @@
 	},
 
 
-	"enotezlistheading":{
+	"enotezlistheading{}":{
 		"prefix":"enotezlistheading",
 		"body":[
 			"\\enotezlistheading{${1:text}}"
@@ -197,6 +157,46 @@
 		"prefix":"theendnote",
 		"body":[
 			"\\theendnote"
+		]
+	},
+
+
+	"printendnotes*":{
+		"prefix":"*printendnotes",
+		"body":[
+			"\\printendnotes*"
+		]
+	},
+
+
+	"printendnotes*[]":{
+		"prefix":"*printendnotes",
+		"body":[
+			"\\printendnotes*[${1:style%keyvals}]"
+		]
+	},
+
+
+	"endnote[]{}":{
+		"prefix":"endnote",
+		"body":[
+			"\\endnote[${2:mark}]{${1:text}}"
+		]
+	},
+
+
+	"endnotemark[]":{
+		"prefix":"endnotemark",
+		"body":[
+			"\\endnotemark[${1:mark}]"
+		]
+	},
+
+
+	"printendnotes[]":{
+		"prefix":"printendnotes",
+		"body":[
+			"\\printendnotes[${1:style%keyvals}]"
 		]
 	}
 }

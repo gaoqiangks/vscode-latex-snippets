@@ -1,7 +1,7 @@
 {
 
 
-	"csxdefall":{
+	"csxdefall{}{}":{
 		"prefix":"csxdefall",
 		"body":[
 			"\\csxdefall{${1:csname}}{${2:replacement}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"csxdefaux":{
+	"csxdefaux{}{}":{
 		"prefix":"csxdefaux",
 		"body":[
 			"\\csxdefaux{${1:csname}}{${2:replacement}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ifcsedef":{
+	"ifcsedef{}{}{}":{
 		"prefix":"ifcsedef",
 		"body":[
 			"\\ifcsedef{${1:csname}}{${2:true}}{${3:false}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"newcommandsequence":{
+	"newcommandsequence{}{}":{
 		"prefix":"newcommandsequence",
 		"body":[
 			"\\newcommandsequence{${1:csname}}{${2:def}}"
@@ -33,23 +33,7 @@
 	},
 
 
-	"newcommandsequence":{
-		"prefix":"newcommandsequence",
-		"body":[
-			"\\newcommandsequence{${1:csname}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"newcommandsequence":{
-		"prefix":"newcommandsequence",
-		"body":[
-			"\\newcommandsequence{${1:csname}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"renewcommandsequence":{
+	"renewcommandsequence{}{}":{
 		"prefix":"renewcommandsequence",
 		"body":[
 			"\\renewcommandsequence{${1:csname}}{${2:def}}"
@@ -57,23 +41,7 @@
 	},
 
 
-	"renewcommandsequence":{
-		"prefix":"renewcommandsequence",
-		"body":[
-			"\\renewcommandsequence{${1:csname}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"renewcommandsequence":{
-		"prefix":"renewcommandsequence",
-		"body":[
-			"\\renewcommandsequence{${1:csname}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"skipInPDFTOC":{
+	"skipInPDFTOC{}":{
 		"prefix":"skipInPDFTOC",
 		"body":[
 			"\\skipInPDFTOC{${1:arg}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"vanishprotect":{
+	"vanishprotect{}":{
 		"prefix":"vanishprotect",
 		"body":[
 			"\\vanishprotect{${1:arg}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"CsLetLtxMacro":{
+	"CsLetLtxMacro{}{}":{
 		"prefix":"CsLetLtxMacro",
 		"body":[
 			"\\CsLetLtxMacro{${1:csname}}{${2:cmd}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"LetCsLtxMacro":{
+	"LetCsLtxMacro{}{}":{
 		"prefix":"LetCsLtxMacro",
 		"body":[
 			"\\LetCsLtxMacro{${1:cmd}}{${2:csname}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"CsLetCsLtxMacro":{
+	"CsLetCsLtxMacro{}{}":{
 		"prefix":"CsLetCsLtxMacro",
 		"body":[
 			"\\CsLetCsLtxMacro{${1:csname}}{${2:csname}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"GlobalCsLetLtxMacro":{
+	"GlobalCsLetLtxMacro{}{}":{
 		"prefix":"GlobalCsLetLtxMacro",
 		"body":[
 			"\\GlobalCsLetLtxMacro{${1:csname}}{${2:cmd}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"GlobalLetCsLtxMacro":{
+	"GlobalLetCsLtxMacro{}{}":{
 		"prefix":"GlobalLetCsLtxMacro",
 		"body":[
 			"\\GlobalLetCsLtxMacro{${1:cmd}}{${2:csname}}"
@@ -129,10 +97,42 @@
 	},
 
 
-	"GlobalCsLetCsLtxMacro":{
+	"GlobalCsLetCsLtxMacro{}{}":{
 		"prefix":"GlobalCsLetCsLtxMacro",
 		"body":[
 			"\\GlobalCsLetCsLtxMacro{${1:csname}}{${2:csname}}"
+		]
+	},
+
+
+	"newcommandsequence{}[]{}":{
+		"prefix":"newcommandsequence",
+		"body":[
+			"\\newcommandsequence{${1:csname}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"newcommandsequence{}[][]{}":{
+		"prefix":"newcommandsequence",
+		"body":[
+			"\\newcommandsequence{${1:csname}}[${3:args}][${4:default}]{${2:def}}"
+		]
+	},
+
+
+	"renewcommandsequence{}[]{}":{
+		"prefix":"renewcommandsequence",
+		"body":[
+			"\\renewcommandsequence{${1:csname}}[${3:args}]{${2:def}}"
+		]
+	},
+
+
+	"renewcommandsequence{}[][]{}":{
+		"prefix":"renewcommandsequence",
+		"body":[
+			"\\renewcommandsequence{${1:csname}}[${3:args}][${4:default}]{${2:def}}"
 		]
 	}
 }

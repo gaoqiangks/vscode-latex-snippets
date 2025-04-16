@@ -1,7 +1,7 @@
 {
 
 
-	"NVerb":{
+	"NVerb||":{
 		"prefix":"NVerb",
 		"body":[
 			"\\NVerb|${1:text}|"
@@ -9,15 +9,7 @@
 	},
 
 
-	"NVerb":{
-		"prefix":"NVerb",
-		"body":[
-			"\\NVerb[${1:opt}]|${2:text}|"
-		]
-	},
-
-
-	"HardNVerb":{
+	"HardNVerb||":{
 		"prefix":"HardNVerb",
 		"body":[
 			"\\HardNVerb|${1:text}|"
@@ -25,15 +17,7 @@
 	},
 
 
-	"HardNVerb":{
-		"prefix":"HardNVerb",
-		"body":[
-			"\\HardNVerb[${1:opt}]|${2:text}|"
-		]
-	},
-
-
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:csname}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"cstx":{
+	"cstx{}{}":{
 		"prefix":"cstx",
 		"body":[
 			"\\cstx{${1:csname}}{${2:arg}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"cstx":{
+	"cstx{}*{}":{
 		"prefix":"cstx",
 		"body":[
 			"\\cstx{${1:csname}}*{${2:arg}}"
@@ -57,23 +41,7 @@
 	},
 
 
-	"cstx":{
-		"prefix":"cstx",
-		"body":[
-			"\\cstx{${1:csname}}[${3:option}]{${2:arg}}"
-		]
-	},
-
-
-	"cstx":{
-		"prefix":"cstx",
-		"body":[
-			"\\cstx{${1:csname}}*[${3:option}]{${2:arg}}"
-		]
-	},
-
-
-	"GenCmdBox":{
+	"GenCmdBox||":{
 		"prefix":"GenCmdBox",
 		"body":[
 			"\\GenCmdBox|${1:chars}|"
@@ -81,7 +49,7 @@
 	},
 
 
-	"HardVerbBox":{
+	"HardVerbBox||":{
 		"prefix":"HardVerbBox",
 		"body":[
 			"\\HardVerbBox|${1:chars}|"
@@ -89,7 +57,7 @@
 	},
 
 
-	"VerticalCmdBox":{
+	"VerticalCmdBox{}":{
 		"prefix":"VerticalCmdBox",
 		"body":[
 			"\\VerticalCmdBox{${1:content}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"InlineCmdBox":{
+	"InlineCmdBox{}":{
 		"prefix":"InlineCmdBox",
 		"body":[
 			"\\InlineCmdBox{${1:content}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"cmdboxitem":{
+	"cmdboxitem||":{
 		"prefix":"cmdboxitem",
 		"body":[
 			"\\cmdboxitem|${1:text}|"
@@ -129,7 +97,7 @@
 	},
 
 
-	"qtd":{
+	"qtd{}":{
 		"prefix":"qtd",
 		"body":[
 			"\\qtd{${1:text}}"
@@ -137,7 +105,7 @@
 	},
 
 
-	"dqtd":{
+	"dqtd{}":{
 		"prefix":"dqtd",
 		"body":[
 			"\\dqtd{${1:text}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"qtdnverb":{
+	"qtdnverb||":{
 		"prefix":"qtdnverb",
 		"body":[
 			"\\qtdnverb|${1:text}|"
@@ -169,7 +137,7 @@
 	},
 
 
-	"IfTypesetting":{
+	"IfTypesetting{}{}":{
 		"prefix":"IfTypesetting",
 		"body":[
 			"\\IfTypesetting{${1:if}}{${2:unless}}"
@@ -177,7 +145,7 @@
 	},
 
 
-	"nvSelfProtect":{
+	"nvSelfProtect{}{}":{
 		"prefix":"nvSelfProtect",
 		"body":[
 			"\\nvSelfProtect{${1:cmd-char}}{${2:typeset}}"
@@ -185,7 +153,7 @@
 	},
 
 
-	"NewSelfProtectedCommand":{
+	"NewSelfProtectedCommand{}{}":{
 		"prefix":"NewSelfProtectedCommand",
 		"body":[
 			"\\NewSelfProtectedCommand{${1:cmd}}{${2:def}}"
@@ -193,7 +161,7 @@
 	},
 
 
-	"nvShowProtectedEdef":{
+	"nvShowProtectedEdef{}{}":{
 		"prefix":"nvShowProtectedEdef",
 		"body":[
 			"\\nvShowProtectedEdef{${1:cmd}}{${2:def}}"
@@ -217,18 +185,10 @@
 	},
 
 
-	"NiceMaybeMetaVerb":{
+	"NiceMaybeMetaVerb||":{
 		"prefix":"NiceMaybeMetaVerb",
 		"body":[
 			"\\NiceMaybeMetaVerb|${1:chars}|"
-		]
-	},
-
-
-	"NiceMaybeMetaVerb":{
-		"prefix":"NiceMaybeMetaVerb",
-		"body":[
-			"\\NiceMaybeMetaVerb[${1:opt}]|${2:chars}|"
 		]
 	},
 
@@ -273,7 +233,7 @@
 	},
 
 
-	"NormalCommand":{
+	"NormalCommand{}":{
 		"prefix":"NormalCommand",
 		"body":[
 			"\\NormalCommand{${1:csname}}"
@@ -289,7 +249,7 @@
 	},
 
 
-	"AddToMacro":{
+	"AddToMacro{}{}":{
 		"prefix":"AddToMacro",
 		"body":[
 			"\\AddToMacro{${1:cmd}}{${2:macros}}"
@@ -297,7 +257,7 @@
 	},
 
 
-	"AddToNoVerbList":{
+	"AddToNoVerbList{}":{
 		"prefix":"AddToNoVerbList",
 		"body":[
 			"\\AddToNoVerbList{${1:macros}}"
@@ -305,7 +265,7 @@
 	},
 
 
-	"AutoCmdInput":{
+	"AutoCmdInput{}":{
 		"prefix":"AutoCmdInput",
 		"body":[
 			"\\AutoCmdInput{${1:file}}"
@@ -353,7 +313,7 @@
 	},
 
 
-	"NiceVerbMove":{
+	"NiceVerbMove{}":{
 		"prefix":"NiceVerbMove",
 		"body":[
 			"\\NiceVerbMove{${1:text}}"
@@ -425,7 +385,7 @@
 	},
 
 
-	"NiceVerbMove":{
+	"NiceVerbMove{}":{
 		"prefix":"NiceVerbMove",
 		"body":[
 			"\\NiceVerbMove{${1:text}}"
@@ -445,6 +405,46 @@
 		"prefix":"useNiceVerb",
 		"body":[
 			"\\useNiceVerb"
+		]
+	},
+
+
+	"NVerb[]||":{
+		"prefix":"NVerb",
+		"body":[
+			"\\NVerb[${1:opt}]|${2:text}|"
+		]
+	},
+
+
+	"HardNVerb[]||":{
+		"prefix":"HardNVerb",
+		"body":[
+			"\\HardNVerb[${1:opt}]|${2:text}|"
+		]
+	},
+
+
+	"cstx{}[]{}":{
+		"prefix":"cstx",
+		"body":[
+			"\\cstx{${1:csname}}[${3:option}]{${2:arg}}"
+		]
+	},
+
+
+	"cstx{}*[]{}":{
+		"prefix":"cstx",
+		"body":[
+			"\\cstx{${1:csname}}*[${3:option}]{${2:arg}}"
+		]
+	},
+
+
+	"NiceMaybeMetaVerb[]||":{
+		"prefix":"NiceMaybeMetaVerb",
+		"body":[
+			"\\NiceMaybeMetaVerb[${1:opt}]|${2:chars}|"
 		]
 	}
 }

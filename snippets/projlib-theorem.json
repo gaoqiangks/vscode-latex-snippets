@@ -1,7 +1,7 @@
 {
 
 
-	"DisableTheoremNumbering":{
+	"DisableTheoremNumbering{}":{
 		"prefix":"DisableTheoremNumbering",
 		"body":[
 			"\\DisableTheoremNumbering{${1:envname}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"SwitchTheoremNumbering":{
+	"SwitchTheoremNumbering{}":{
 		"prefix":"SwitchTheoremNumbering",
 		"body":[
 			"\\SwitchTheoremNumbering{${1:envname}}"
@@ -233,92 +233,12 @@
 	},
 
 
-	"construction*":{
-		"prefix":"construction*",
+	"application":{
+		"prefix":"application",
 		"body":[
-			"\\begin{construction*}",
-			"\t$1",
-			"\\end{construction*}"
-		]
-	},
-
-
-	"conclusion":{
-		"prefix":"conclusion",
-		"body":[
-			"\\begin{conclusion}",
-			"\t$1",
-			"\\end{conclusion}"
-		]
-	},
-
-
-	"assumption":{
-		"prefix":"assumption",
-		"body":[
-			"\\begin{assumption}",
-			"\t$1",
-			"\\end{assumption}"
-		]
-	},
-
-
-	"axiom*":{
-		"prefix":"axiom*",
-		"body":[
-			"\\begin{axiom*}",
-			"\t$1",
-			"\\end{axiom*}"
-		]
-	},
-
-
-	"question*":{
-		"prefix":"question*",
-		"body":[
-			"\\begin{question*}",
-			"\t$1",
-			"\\end{question*}"
-		]
-	},
-
-
-	"proposition*":{
-		"prefix":"proposition*",
-		"body":[
-			"\\begin{proposition*}",
-			"\t$1",
-			"\\end{proposition*}"
-		]
-	},
-
-
-	"postulate*":{
-		"prefix":"postulate*",
-		"body":[
-			"\\begin{postulate*}",
-			"\t$1",
-			"\\end{postulate*}"
-		]
-	},
-
-
-	"lemma":{
-		"prefix":"lemma",
-		"body":[
-			"\\begin{lemma}",
-			"\t$1",
-			"\\end{lemma}"
-		]
-	},
-
-
-	"conclusion*":{
-		"prefix":"conclusion*",
-		"body":[
-			"\\begin{conclusion*}",
-			"\t$1",
-			"\\end{conclusion*}"
+			"\\begin{application}",
+				"\t$1",
+			"\\end{application}"
 		]
 	},
 
@@ -327,38 +247,28 @@
 		"prefix":"assertion",
 		"body":[
 			"\\begin{assertion}",
-			"\t$1",
+				"\t$1",
 			"\\end{assertion}"
 		]
 	},
 
 
-	"conjecture*":{
-		"prefix":"conjecture*",
+	"assumption":{
+		"prefix":"assumption",
 		"body":[
-			"\\begin{conjecture*}",
-			"\t$1",
-			"\\end{conjecture*}"
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
 		]
 	},
 
 
-	"remark*":{
-		"prefix":"remark*",
+	"axiom":{
+		"prefix":"axiom",
 		"body":[
-			"\\begin{remark*}",
-			"\t$1",
-			"\\end{remark*}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
 		]
 	},
 
@@ -367,68 +277,18 @@
 		"prefix":"claim",
 		"body":[
 			"\\begin{claim}",
-			"\t$1",
+				"\t$1",
 			"\\end{claim}"
 		]
 	},
 
 
-	"application":{
-		"prefix":"application",
+	"conclusion":{
+		"prefix":"conclusion",
 		"body":[
-			"\\begin{application}",
-			"\t$1",
-			"\\end{application}"
-		]
-	},
-
-
-	"convention*":{
-		"prefix":"convention*",
-		"body":[
-			"\\begin{convention*}",
-			"\t$1",
-			"\\end{convention*}"
-		]
-	},
-
-
-	"hypothesis*":{
-		"prefix":"hypothesis*",
-		"body":[
-			"\\begin{hypothesis*}",
-			"\t$1",
-			"\\end{hypothesis*}"
-		]
-	},
-
-
-	"problem":{
-		"prefix":"problem",
-		"body":[
-			"\\begin{problem}",
-			"\t$1",
-			"\\end{problem}"
-		]
-	},
-
-
-	"claim*":{
-		"prefix":"claim*",
-		"body":[
-			"\\begin{claim*}",
-			"\t$1",
-			"\\end{claim*}"
-		]
-	},
-
-
-	"exercise*":{
-		"prefix":"exercise*",
-		"body":[
-			"\\begin{exercise*}",
-			"\t$1",
-			"\\end{exercise*}"
+			"\\begin{conclusion}",
+				"\t$1",
+			"\\end{conclusion}"
 		]
 	},
 
@@ -437,28 +297,158 @@
 		"prefix":"conjecture",
 		"body":[
 			"\\begin{conjecture}",
-			"\t$1",
+				"\t$1",
 			"\\end{conjecture}"
 		]
 	},
 
 
-	"proof*":{
-		"prefix":"proof*",
+	"construction":{
+		"prefix":"construction",
 		"body":[
-			"\\begin{proof*}",
-			"\t$1",
-			"\\end{proof*}"
+			"\\begin{construction}",
+				"\t$1",
+			"\\end{construction}"
 		]
 	},
 
 
-	"proof":{
-		"prefix":"proof",
+	"convention":{
+		"prefix":"convention",
 		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
+			"\\begin{convention}",
+				"\t$1",
+			"\\end{convention}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"fact":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact}",
+				"\t$1",
+			"\\end{fact}"
+		]
+	},
+
+
+	"hypothesis":{
+		"prefix":"hypothesis",
+		"body":[
+			"\\begin{hypothesis}",
+				"\t$1",
+			"\\end{hypothesis}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"notation":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
+		]
+	},
+
+
+	"observation":{
+		"prefix":"observation",
+		"body":[
+			"\\begin{observation}",
+				"\t$1",
+			"\\end{observation}"
+		]
+	},
+
+
+	"postulate":{
+		"prefix":"postulate",
+		"body":[
+			"\\begin{postulate}",
+				"\t$1",
+			"\\end{postulate}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
 		]
 	},
 
@@ -467,7 +457,7 @@
 		"prefix":"question",
 		"body":[
 			"\\begin{question}",
-			"\t$1",
+				"\t$1",
 			"\\end{question}"
 		]
 	},
@@ -477,28 +467,8 @@
 		"prefix":"recall",
 		"body":[
 			"\\begin{recall}",
-			"\t$1",
+				"\t$1",
 			"\\end{recall}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"construction":{
-		"prefix":"construction",
-		"body":[
-			"\\begin{construction}",
-			"\t$1",
-			"\\end{construction}"
 		]
 	},
 
@@ -507,128 +477,348 @@
 		"prefix":"remark",
 		"body":[
 			"\\begin{remark}",
-			"\t$1",
+				"\t$1",
 			"\\end{remark}"
 		]
 	},
 
 
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"application*":{
+		"prefix":"*application",
+		"body":[
+			"\\begin{application*}",
+				"\t$1",
+			"\\end{application*}"
+		]
+	},
+
+
+	"assertion*":{
+		"prefix":"*assertion",
+		"body":[
+			"\\begin{assertion*}",
+				"\t$1",
+			"\\end{assertion*}"
+		]
+	},
+
+
 	"assumption*":{
-		"prefix":"assumption*",
+		"prefix":"*assumption",
 		"body":[
 			"\\begin{assumption*}",
-			"\t$1",
+				"\t$1",
 			"\\end{assumption*}"
 		]
 	},
 
 
-	"recall*":{
-		"prefix":"recall*",
+	"axiom*":{
+		"prefix":"*axiom",
 		"body":[
-			"\\begin{recall*}",
-			"\t$1",
-			"\\end{recall*}"
+			"\\begin{axiom*}",
+				"\t$1",
+			"\\end{axiom*}"
+		]
+	},
+
+
+	"claim*":{
+		"prefix":"*claim",
+		"body":[
+			"\\begin{claim*}",
+				"\t$1",
+			"\\end{claim*}"
+		]
+	},
+
+
+	"conclusion*":{
+		"prefix":"*conclusion",
+		"body":[
+			"\\begin{conclusion*}",
+				"\t$1",
+			"\\end{conclusion*}"
+		]
+	},
+
+
+	"conjecture*":{
+		"prefix":"*conjecture",
+		"body":[
+			"\\begin{conjecture*}",
+				"\t$1",
+			"\\end{conjecture*}"
+		]
+	},
+
+
+	"construction*":{
+		"prefix":"*construction",
+		"body":[
+			"\\begin{construction*}",
+				"\t$1",
+			"\\end{construction*}"
+		]
+	},
+
+
+	"convention*":{
+		"prefix":"*convention",
+		"body":[
+			"\\begin{convention*}",
+				"\t$1",
+			"\\end{convention*}"
+		]
+	},
+
+
+	"corollary*":{
+		"prefix":"*corollary",
+		"body":[
+			"\\begin{corollary*}",
+				"\t$1",
+			"\\end{corollary*}"
+		]
+	},
+
+
+	"definition*":{
+		"prefix":"*definition",
+		"body":[
+			"\\begin{definition*}",
+				"\t$1",
+			"\\end{definition*}"
+		]
+	},
+
+
+	"example*":{
+		"prefix":"*example",
+		"body":[
+			"\\begin{example*}",
+				"\t$1",
+			"\\end{example*}"
+		]
+	},
+
+
+	"exercise*":{
+		"prefix":"*exercise",
+		"body":[
+			"\\begin{exercise*}",
+				"\t$1",
+			"\\end{exercise*}"
+		]
+	},
+
+
+	"fact*":{
+		"prefix":"*fact",
+		"body":[
+			"\\begin{fact*}",
+				"\t$1",
+			"\\end{fact*}"
+		]
+	},
+
+
+	"hypothesis*":{
+		"prefix":"*hypothesis",
+		"body":[
+			"\\begin{hypothesis*}",
+				"\t$1",
+			"\\end{hypothesis*}"
+		]
+	},
+
+
+	"lemma*":{
+		"prefix":"*lemma",
+		"body":[
+			"\\begin{lemma*}",
+				"\t$1",
+			"\\end{lemma*}"
 		]
 	},
 
 
 	"notation*":{
-		"prefix":"notation*",
+		"prefix":"*notation",
 		"body":[
 			"\\begin{notation*}",
-			"\t$1",
+				"\t$1",
 			"\\end{notation*}"
 		]
 	},
 
 
-	"theorem*":{
-		"prefix":"theorem*",
+	"observation*":{
+		"prefix":"*observation",
 		"body":[
-			"\\begin{theorem*}",
-			"\t$1",
-			"\\end{theorem*}"
+			"\\begin{observation*}",
+				"\t$1",
+			"\\end{observation*}"
 		]
 	},
 
 
-	"hypothesis":{
-		"prefix":"hypothesis",
+	"postulate*":{
+		"prefix":"*postulate",
 		"body":[
-			"\\begin{hypothesis}",
-			"\t$1",
-			"\\end{hypothesis}"
-		]
-	},
-
-
-	"property":{
-		"prefix":"property",
-		"body":[
-			"\\begin{property}",
-			"\t$1",
-			"\\end{property}"
-		]
-	},
-
-
-	"property*":{
-		"prefix":"property*",
-		"body":[
-			"\\begin{property*}",
-			"\t$1",
-			"\\end{property*}"
+			"\\begin{postulate*}",
+				"\t$1",
+			"\\end{postulate*}"
 		]
 	},
 
 
 	"problem*":{
-		"prefix":"problem*",
+		"prefix":"*problem",
 		"body":[
 			"\\begin{problem*}",
-			"\t$1",
+				"\t$1",
 			"\\end{problem*}"
 		]
 	},
 
 
-	"proposition":{
-		"prefix":"proposition",
+	"property*":{
+		"prefix":"*property",
 		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
+			"\\begin{property*}",
+				"\t$1",
+			"\\end{property*}"
 		]
 	},
 
 
-	"postulate":{
-		"prefix":"postulate",
+	"proposition*":{
+		"prefix":"*proposition",
 		"body":[
-			"\\begin{postulate}",
-			"\t$1",
-			"\\end{postulate}"
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
 		]
 	},
 
 
-	"fact":{
-		"prefix":"fact",
+	"question*":{
+		"prefix":"*question",
 		"body":[
-			"\\begin{fact}",
-			"\t$1",
-			"\\end{fact}"
+			"\\begin{question*}",
+				"\t$1",
+			"\\end{question*}"
 		]
 	},
 
 
-	"observation*":{
-		"prefix":"observation*",
+	"recall*":{
+		"prefix":"*recall",
 		"body":[
-			"\\begin{observation*}",
-			"\t$1",
-			"\\end{observation*}"
+			"\\begin{recall*}",
+				"\t$1",
+			"\\end{recall*}"
+		]
+	},
+
+
+	"remark*":{
+		"prefix":"*remark",
+		"body":[
+			"\\begin{remark*}",
+				"\t$1",
+			"\\end{remark*}"
+		]
+	},
+
+
+	"theorem*":{
+		"prefix":"*theorem",
+		"body":[
+			"\\begin{theorem*}",
+				"\t$1",
+			"\\end{theorem*}"
+		]
+	},
+
+
+	"proof*":{
+		"prefix":"*proof",
+		"body":[
+			"\\begin{proof*}",
+				"\t$1",
+			"\\end{proof*}"
+		]
+	},
+
+
+	"application":{
+		"prefix":"application",
+		"body":[
+			"\\begin{application}",
+				"\t$1",
+			"\\end{application}"
+		]
+	},
+
+
+	"application*":{
+		"prefix":"application",
+		"body":[
+			"\\begin{application*}",
+				"\t$1",
+			"\\end{application*}"
+		]
+	},
+
+
+	"assertion":{
+		"prefix":"assertion",
+		"body":[
+			"\\begin{assertion}",
+				"\t$1",
+			"\\end{assertion}"
+		]
+	},
+
+
+	"assertion*":{
+		"prefix":"assertion",
+		"body":[
+			"\\begin{assertion*}",
+				"\t$1",
+			"\\end{assertion*}"
+		]
+	},
+
+
+	"assumption":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption}",
+				"\t$1",
+			"\\end{assumption}"
+		]
+	},
+
+
+	"assumption*":{
+		"prefix":"assumption",
+		"body":[
+			"\\begin{assumption*}",
+				"\t$1",
+			"\\end{assumption*}"
 		]
 	},
 
@@ -637,8 +827,98 @@
 		"prefix":"axiom",
 		"body":[
 			"\\begin{axiom}",
-			"\t$1",
+				"\t$1",
 			"\\end{axiom}"
+		]
+	},
+
+
+	"axiom*":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom*}",
+				"\t$1",
+			"\\end{axiom*}"
+		]
+	},
+
+
+	"claim":{
+		"prefix":"claim",
+		"body":[
+			"\\begin{claim}",
+				"\t$1",
+			"\\end{claim}"
+		]
+	},
+
+
+	"claim*":{
+		"prefix":"claim",
+		"body":[
+			"\\begin{claim*}",
+				"\t$1",
+			"\\end{claim*}"
+		]
+	},
+
+
+	"conclusion":{
+		"prefix":"conclusion",
+		"body":[
+			"\\begin{conclusion}",
+				"\t$1",
+			"\\end{conclusion}"
+		]
+	},
+
+
+	"conclusion*":{
+		"prefix":"conclusion",
+		"body":[
+			"\\begin{conclusion*}",
+				"\t$1",
+			"\\end{conclusion*}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"conjecture*":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture*}",
+				"\t$1",
+			"\\end{conjecture*}"
+		]
+	},
+
+
+	"construction":{
+		"prefix":"construction",
+		"body":[
+			"\\begin{construction}",
+				"\t$1",
+			"\\end{construction}"
+		]
+	},
+
+
+	"construction*":{
+		"prefix":"construction",
+		"body":[
+			"\\begin{construction*}",
+				"\t$1",
+			"\\end{construction*}"
 		]
 	},
 
@@ -647,98 +927,38 @@
 		"prefix":"convention",
 		"body":[
 			"\\begin{convention}",
-			"\t$1",
+				"\t$1",
 			"\\end{convention}"
 		]
 	},
 
 
-	"example":{
-		"prefix":"example",
+	"convention*":{
+		"prefix":"convention",
 		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
+			"\\begin{convention*}",
+				"\t$1",
+			"\\end{convention*}"
 		]
 	},
 
 
-	"fact*":{
-		"prefix":"fact*",
+	"corollary":{
+		"prefix":"corollary",
 		"body":[
-			"\\begin{fact*}",
-			"\t$1",
-			"\\end{fact*}"
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
 		]
 	},
 
 
 	"corollary*":{
-		"prefix":"corollary*",
+		"prefix":"corollary",
 		"body":[
 			"\\begin{corollary*}",
-			"\t$1",
+				"\t$1",
 			"\\end{corollary*}"
-		]
-	},
-
-
-	"notation":{
-		"prefix":"notation",
-		"body":[
-			"\\begin{notation}",
-			"\t$1",
-			"\\end{notation}"
-		]
-	},
-
-
-	"assertion*":{
-		"prefix":"assertion*",
-		"body":[
-			"\\begin{assertion*}",
-			"\t$1",
-			"\\end{assertion*}"
-		]
-	},
-
-
-	"observation":{
-		"prefix":"observation",
-		"body":[
-			"\\begin{observation}",
-			"\t$1",
-			"\\end{observation}"
-		]
-	},
-
-
-	"definition*":{
-		"prefix":"definition*",
-		"body":[
-			"\\begin{definition*}",
-			"\t$1",
-			"\\end{definition*}"
-		]
-	},
-
-
-	"exercise":{
-		"prefix":"exercise",
-		"body":[
-			"\\begin{exercise}",
-			"\t$1",
-			"\\end{exercise}"
-		]
-	},
-
-
-	"example*":{
-		"prefix":"example*",
-		"body":[
-			"\\begin{example*}",
-			"\t$1",
-			"\\end{example*}"
 		]
 	},
 
@@ -747,28 +967,338 @@
 		"prefix":"definition",
 		"body":[
 			"\\begin{definition}",
-			"\t$1",
+				"\t$1",
 			"\\end{definition}"
 		]
 	},
 
 
-	"application*":{
-		"prefix":"application*",
+	"definition*":{
+		"prefix":"definition",
 		"body":[
-			"\\begin{application*}",
-			"\t$1",
-			"\\end{application*}"
+			"\\begin{definition*}",
+				"\t$1",
+			"\\end{definition*}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"example*":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example*}",
+				"\t$1",
+			"\\end{example*}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"exercise*":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise*}",
+				"\t$1",
+			"\\end{exercise*}"
+		]
+	},
+
+
+	"fact":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact}",
+				"\t$1",
+			"\\end{fact}"
+		]
+	},
+
+
+	"fact*":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact*}",
+				"\t$1",
+			"\\end{fact*}"
+		]
+	},
+
+
+	"hypothesis":{
+		"prefix":"hypothesis",
+		"body":[
+			"\\begin{hypothesis}",
+				"\t$1",
+			"\\end{hypothesis}"
+		]
+	},
+
+
+	"hypothesis*":{
+		"prefix":"hypothesis",
+		"body":[
+			"\\begin{hypothesis*}",
+				"\t$1",
+			"\\end{hypothesis*}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
 		]
 	},
 
 
 	"lemma*":{
-		"prefix":"lemma*",
+		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma*}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma*}"
+		]
+	},
+
+
+	"notation":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
+		]
+	},
+
+
+	"notation*":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation*}",
+				"\t$1",
+			"\\end{notation*}"
+		]
+	},
+
+
+	"observation":{
+		"prefix":"observation",
+		"body":[
+			"\\begin{observation}",
+				"\t$1",
+			"\\end{observation}"
+		]
+	},
+
+
+	"observation*":{
+		"prefix":"observation",
+		"body":[
+			"\\begin{observation*}",
+				"\t$1",
+			"\\end{observation*}"
+		]
+	},
+
+
+	"postulate":{
+		"prefix":"postulate",
+		"body":[
+			"\\begin{postulate}",
+				"\t$1",
+			"\\end{postulate}"
+		]
+	},
+
+
+	"postulate*":{
+		"prefix":"postulate",
+		"body":[
+			"\\begin{postulate*}",
+				"\t$1",
+			"\\end{postulate*}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"problem*":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem*}",
+				"\t$1",
+			"\\end{problem*}"
+		]
+	},
+
+
+	"property":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property}",
+				"\t$1",
+			"\\end{property}"
+		]
+	},
+
+
+	"property*":{
+		"prefix":"property",
+		"body":[
+			"\\begin{property*}",
+				"\t$1",
+			"\\end{property*}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"proposition*":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition*}",
+				"\t$1",
+			"\\end{proposition*}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
+		]
+	},
+
+
+	"question*":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question*}",
+				"\t$1",
+			"\\end{question*}"
+		]
+	},
+
+
+	"recall":{
+		"prefix":"recall",
+		"body":[
+			"\\begin{recall}",
+				"\t$1",
+			"\\end{recall}"
+		]
+	},
+
+
+	"recall*":{
+		"prefix":"recall",
+		"body":[
+			"\\begin{recall*}",
+				"\t$1",
+			"\\end{recall*}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"remark*":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark*}",
+				"\t$1",
+			"\\end{remark*}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"theorem*":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem*}",
+				"\t$1",
+			"\\end{theorem*}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"proof*":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof*}",
+				"\t$1",
+			"\\end{proof*}"
 		]
 	}
 }

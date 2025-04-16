@@ -1,7 +1,7 @@
 {
 
 
-	"import":{
+	"import{}":{
 		"prefix":"import",
 		"body":[
 			"\\import{${1:file}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"bodytitle":{
+	"bodytitle{}":{
 		"prefix":"bodytitle",
 		"body":[
 			"\\bodytitle{${1:long title}}"
@@ -113,15 +113,7 @@
 	},
 
 
-	"bodytitle":{
-		"prefix":"bodytitle",
-		"body":[
-			"\\bodytitle[${2:short title}]{${1:long title}}"
-		]
-	},
-
-
-	"bodytitlemark":{
+	"bodytitlemark{}":{
 		"prefix":"bodytitlemark",
 		"body":[
 			"\\bodytitlemark{${1:text}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"coltoctitle":{
+	"coltoctitle{}":{
 		"prefix":"coltoctitle",
 		"body":[
 			"\\coltoctitle{${1:title%text}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"coltoctitle":{
+	"coltoctitle{}":{
 		"prefix":"coltoctitle",
 		"body":[
 			"\\coltoctitle{${1:author}}"
@@ -145,18 +137,10 @@
 	},
 
 
-	"published":{
+	"published{}":{
 		"prefix":"published",
 		"body":[
 			"\\published{${1:long%text}}"
-		]
-	},
-
-
-	"published":{
-		"prefix":"published",
-		"body":[
-			"\\published[${2:short}]{${1:long%text}}"
 		]
 	},
 
@@ -233,7 +217,7 @@
 	},
 
 
-	"provideenvironment":{
+	"provideenvironment{}{}{}":{
 		"prefix":"provideenvironment",
 		"body":[
 			"\\provideenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
@@ -241,7 +225,7 @@
 	},
 
 
-	"providelength":{
+	"providelength{}":{
 		"prefix":"providelength",
 		"body":[
 			"\\providelength{${1:newlength%cmd}}"
@@ -249,7 +233,7 @@
 	},
 
 
-	"providecounter":{
+	"providecounter{}":{
 		"prefix":"providecounter",
 		"body":[
 			"\\providecounter{${1:counter name}}"
@@ -265,7 +249,7 @@
 	},
 
 
-	"appendiargdef":{
+	"appendiargdef{}{}":{
 		"prefix":"appendiargdef",
 		"body":[
 			"\\appendiargdef{${1:macro}}{${2:stuff}}"
@@ -305,11 +289,27 @@
 	},
 
 
+	"bodytitle[]{}":{
+		"prefix":"bodytitle",
+		"body":[
+			"\\bodytitle[${2:short title}]{${1:long title}}"
+		]
+	},
+
+
+	"published[]{}":{
+		"prefix":"published",
+		"body":[
+			"\\published[${2:short}]{${1:long%text}}"
+		]
+	},
+
+
 	"papers":{
 		"prefix":"papers",
 		"body":[
 			"\\begin{papers}",
-			"\t$1",
+				"\t$1",
 			"\\end{papers}"
 		]
 	},
@@ -319,8 +319,18 @@
 		"prefix":"tocindent",
 		"body":[
 			"\\begin{tocindent}",
-			"\t$1",
+				"\t$1",
 			"\\end{tocindent}"
+		]
+	},
+
+
+	"papers":{
+		"prefix":"papers",
+		"body":[
+			"\\begin{papers}",
+				"\t$1",
+			"\\end{papers}"
 		]
 	}
 }

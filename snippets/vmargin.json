@@ -1,7 +1,7 @@
 {
 
 
-	"setpapersize":{
+	"setpapersize{}":{
 		"prefix":"setpapersize",
 		"body":[
 			"\\setpapersize{${1:size%keyvals}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"setpapersize":{
-		"prefix":"setpapersize",
-		"body":[
-			"\\setpapersize[${2:landscape|portrait}]{${1:size%keyvals}}"
-		]
-	},
-
-
-	"setpapersize":{
+	"setpapersize{}{}{}":{
 		"prefix":"setpapersize",
 		"body":[
 			"\\setpapersize{${1:custom}}{${2:width}}{${3:height}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"setmargins":{
+	"setmargins{}{}{}{}{}{}{}{}":{
 		"prefix":"setmargins",
 		"body":[
 			"\\setmargins{${1:left}}{${2:top}}{${3:textwidth}}{${4:textheight}}{${5:headheight}}{${6:headsep}}{${7:footheight}}{${8:footskip}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"setmarginsrb":{
+	"setmarginsrb{}{}{}{}{}{}{}{}":{
 		"prefix":"setmarginsrb",
 		"body":[
 			"\\setmarginsrb{${1:left}}{${2:top}}{${3:right}}{${4:bottom}}{${5:headheight}}{${6:headsep}}{${7:footheight}}{${8:footskip}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"setmargnohf":{
+	"setmargnohf{}{}{}{}":{
 		"prefix":"setmargnohf",
 		"body":[
 			"\\setmargnohf{${1:left}}{${2:top}}{${3:textwidth}}{${4:textheight}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"setmargnohfrb":{
+	"setmargnohfrb{}{}{}{}":{
 		"prefix":"setmargnohfrb",
 		"body":[
 			"\\setmargnohfrb{${1:left}}{${2:top}}{${3:right}}{${4:bottom}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"setmarg":{
+	"setmarg{}{}{}{}":{
 		"prefix":"setmarg",
 		"body":[
 			"\\setmarg{${1:left}}{${2:top}}{${3:textwidth}}{${4:textheight}}"
@@ -89,7 +81,7 @@
 	},
 
 
-	"setmargrb":{
+	"setmargrb{}{}{}{}":{
 		"prefix":"setmargrb",
 		"body":[
 			"\\setmargrb{${1:left}}{${2:top}}{${3:right}}{${4:bottom}}"
@@ -101,6 +93,14 @@
 		"prefix":"shiftmargins",
 		"body":[
 			"\\shiftmargins"
+		]
+	},
+
+
+	"setpapersize[]{}":{
+		"prefix":"setpapersize",
+		"body":[
+			"\\setpapersize[${2:landscape|portrait}]{${1:size%keyvals}}"
 		]
 	}
 }

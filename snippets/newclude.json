@@ -1,39 +1,7 @@
 {
 
 
-	"include":{
-		"prefix":"include",
-		"body":[
-			"\\include[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"include":{
-		"prefix":"include",
-		"body":[
-			"\\include[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"include*":{
-		"prefix":"include*",
-		"body":[
-			"\\include*[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"include*":{
-		"prefix":"include*",
-		"body":[
-			"\\include*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"AtBeginInclude":{
+	"AtBeginInclude{}":{
 		"prefix":"AtBeginInclude",
 		"body":[
 			"\\AtBeginInclude{${1:tokens}}"
@@ -41,7 +9,7 @@
 	},
 
 
-	"AtEndInclude":{
+	"AtEndInclude{}":{
 		"prefix":"AtEndInclude",
 		"body":[
 			"\\AtEndInclude{${1:tokens}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"IncludeEnv":{
+	"IncludeEnv{}{}{}":{
 		"prefix":"IncludeEnv",
 		"body":[
 			"\\IncludeEnv{${1:file}}{${2:envname}}{${3:instance}}"
@@ -81,95 +49,7 @@
 	},
 
 
-	"IncludeEnv":{
-		"prefix":"IncludeEnv",
-		"body":[
-			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IncludeEnv":{
-		"prefix":"IncludeEnv",
-		"body":[
-			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
-		]
-	},
-
-
-	"IncludeEnv*":{
-		"prefix":"IncludeEnv*",
-		"body":[
-			"\\IncludeEnv*{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IncludeEnv*":{
-		"prefix":"IncludeEnv*",
-		"body":[
-			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IncludeEnv*":{
-		"prefix":"IncludeEnv*",
-		"body":[
-			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
-		]
-	},
-
-
-	"includedoc":{
-		"prefix":"includedoc",
-		"body":[
-			"\\includedoc[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"includedoc":{
-		"prefix":"includedoc",
-		"body":[
-			"\\includedoc[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"includedoc*":{
-		"prefix":"includedoc*",
-		"body":[
-			"\\includedoc*[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"includedoc*":{
-		"prefix":"includedoc*",
-		"body":[
-			"\\includedoc*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"includedocskip":{
-		"prefix":"includedocskip",
-		"body":[
-			"\\includedocskip[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"includedocskip*":{
-		"prefix":"includedocskip*",
-		"body":[
-			"\\includedocskip*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"IfAllowed":{
+	"IfAllowed{}{}{}":{
 		"prefix":"IfAllowed",
 		"body":[
 			"\\IfAllowed{${1:part name}}{${2:true}}{${3:false}}"
@@ -193,7 +73,7 @@
 	},
 
 
-	"DeclareFormattingPackage":{
+	"DeclareFormattingPackage{}":{
 		"prefix":"DeclareFormattingPackage",
 		"body":[
 			"\\DeclareFormattingPackage{${1:package name}}"
@@ -225,7 +105,7 @@
 	},
 
 
-	"Disable":{
+	"Disable{}":{
 		"prefix":"Disable",
 		"body":[
 			"\\Disable{${1:tokens}}"
@@ -257,7 +137,7 @@
 	},
 
 
-	"StaticAux":{
+	"StaticAux{}":{
 		"prefix":"StaticAux",
 		"body":[
 			"\\StaticAux{${1:number of streams}}"
@@ -265,7 +145,7 @@
 	},
 
 
-	"InitWheel":{
+	"InitWheel{}":{
 		"prefix":"InitWheel",
 		"body":[
 			"\\InitWheel{${1:cmd}}"
@@ -273,7 +153,7 @@
 	},
 
 
-	"DefWheel":{
+	"DefWheel{}{}":{
 		"prefix":"DefWheel",
 		"body":[
 			"\\DefWheel{${1:cmd}}{${2:spokes}}"
@@ -281,7 +161,7 @@
 	},
 
 
-	"Roll":{
+	"Roll{}":{
 		"prefix":"Roll",
 		"body":[
 			"\\Roll{${1:wheel}}"
@@ -289,7 +169,7 @@
 	},
 
 
-	"Top":{
+	"Top{}":{
 		"prefix":"Top",
 		"body":[
 			"\\Top{${1:wheel}}"
@@ -297,7 +177,7 @@
 	},
 
 
-	"AddSpokes":{
+	"AddSpokes{}{}":{
 		"prefix":"AddSpokes",
 		"body":[
 			"\\AddSpokes{${1:wheel}}{${2:spokes}}"
@@ -305,10 +185,130 @@
 	},
 
 
-	"IfTop":{
+	"IfTop{}{}{}{}":{
 		"prefix":"IfTop",
 		"body":[
 			"\\IfTop{${1:wheel}}{${2:spoke}}{${3:true}}{${4:false}}"
+		]
+	},
+
+
+	"include*[]{}":{
+		"prefix":"*include",
+		"body":[
+			"\\include*[${2:prehook}]{${1:file}}"
+		]
+	},
+
+
+	"include*[]{}[]":{
+		"prefix":"*include",
+		"body":[
+			"\\include*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		]
+	},
+
+
+	"IncludeEnv*{}{}{}":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*{${1:file}}{${2:envname}}{${3:instance}}"
+		]
+	},
+
+
+	"IncludeEnv*[]{}{}{}":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
+		]
+	},
+
+
+	"IncludeEnv*[]{}{}{}[]":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
+		]
+	},
+
+
+	"includedoc*[]{}":{
+		"prefix":"*includedoc",
+		"body":[
+			"\\includedoc*[${2:prehook}]{${1:file}}"
+		]
+	},
+
+
+	"includedoc*[]{}[]":{
+		"prefix":"*includedoc",
+		"body":[
+			"\\includedoc*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		]
+	},
+
+
+	"includedocskip*[]{}[]":{
+		"prefix":"*includedocskip",
+		"body":[
+			"\\includedocskip*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		]
+	},
+
+
+	"include[]{}":{
+		"prefix":"include",
+		"body":[
+			"\\include[${2:prehook}]{${1:file}}"
+		]
+	},
+
+
+	"include[]{}[]":{
+		"prefix":"include",
+		"body":[
+			"\\include[${2:prehook}]{${1:file}}[${3:posthook}]"
+		]
+	},
+
+
+	"IncludeEnv[]{}{}{}":{
+		"prefix":"IncludeEnv",
+		"body":[
+			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
+		]
+	},
+
+
+	"IncludeEnv[]{}{}{}[]":{
+		"prefix":"IncludeEnv",
+		"body":[
+			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
+		]
+	},
+
+
+	"includedoc[]{}":{
+		"prefix":"includedoc",
+		"body":[
+			"\\includedoc[${2:prehook}]{${1:file}}"
+		]
+	},
+
+
+	"includedoc[]{}[]":{
+		"prefix":"includedoc",
+		"body":[
+			"\\includedoc[${2:prehook}]{${1:file}}[${3:posthook}]"
+		]
+	},
+
+
+	"includedocskip[]{}[]":{
+		"prefix":"includedocskip",
+		"body":[
+			"\\includedocskip[${2:prehook}]{${1:file}}[${3:posthook}]"
 		]
 	}
 }

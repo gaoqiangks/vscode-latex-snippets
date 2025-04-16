@@ -9,30 +9,6 @@
 	},
 
 
-	"switchcolumn":{
-		"prefix":"switchcolumn",
-		"body":[
-			"\\switchcolumn[${1:column}]"
-		]
-	},
-
-
-	"switchcolumn*":{
-		"prefix":"switchcolumn*",
-		"body":[
-			"\\switchcolumn*[${1:text}]"
-		]
-	},
-
-
-	"switchcolumn":{
-		"prefix":"switchcolumn",
-		"body":[
-			"\\switchcolumn[${1:column}]*[${2:text}]"
-		]
-	},
-
-
 	"thecolumn":{
 		"prefix":"thecolumn",
 		"body":[
@@ -41,7 +17,7 @@
 	},
 
 
-	"definecolumnpreamble":{
+	"definecolumnpreamble{}{}":{
 		"prefix":"definecolumnpreamble",
 		"body":[
 			"\\definecolumnpreamble{${1:column}}{${2:preamble}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"ensurevspace":{
+	"ensurevspace{}":{
 		"prefix":"ensurevspace",
 		"body":[
 			"\\ensurevspace{${1:length}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"columnratio":{
+	"columnratio{}":{
 		"prefix":"columnratio",
 		"body":[
 			"\\columnratio{${1:ratio 0,...,ratio k}}"
@@ -65,26 +41,10 @@
 	},
 
 
-	"columnratio":{
-		"prefix":"columnratio",
-		"body":[
-			"\\columnratio{${1:ratio 0,...,ratio k}}[${2:ratio' 0,...,ratio' k}]"
-		]
-	},
-
-
-	"setcolumnwidth":{
+	"setcolumnwidth{}":{
 		"prefix":"setcolumnwidth",
 		"body":[
 			"\\setcolumnwidth{${1:gap 0,...,gap k}}"
-		]
-	},
-
-
-	"setcolumnwidth":{
-		"prefix":"setcolumnwidth",
-		"body":[
-			"\\setcolumnwidth{${1:gap 0,...,gap k}}[${2:gap' 0,...,gap' k}]"
 		]
 	},
 
@@ -97,15 +57,7 @@
 	},
 
 
-	"twosided":{
-		"prefix":"twosided",
-		"body":[
-			"\\twosided[${1:t1t2...tk}]"
-		]
-	},
-
-
-	"marginparthreshold":{
+	"marginparthreshold{}":{
 		"prefix":"marginparthreshold",
 		"body":[
 			"\\marginparthreshold{${1:columns}}"
@@ -113,15 +65,7 @@
 	},
 
 
-	"marginparthreshold":{
-		"prefix":"marginparthreshold",
-		"body":[
-			"\\marginparthreshold{${1:columns}}[${2:columns'}]"
-		]
-	},
-
-
-	"globalcounter":{
+	"globalcounter{}":{
 		"prefix":"globalcounter",
 		"body":[
 			"\\globalcounter{${1:counter}}"
@@ -129,15 +73,7 @@
 	},
 
 
-	"globalcounter*":{
-		"prefix":"globalcounter*",
-		"body":[
-			"\\globalcounter*"
-		]
-	},
-
-
-	"localcounter":{
+	"localcounter{}":{
 		"prefix":"localcounter",
 		"body":[
 			"\\localcounter{${1:counter}}"
@@ -145,7 +81,7 @@
 	},
 
 
-	"definethecounter":{
+	"definethecounter{}{}{}":{
 		"prefix":"definethecounter",
 		"body":[
 			"\\definethecounter{${1:counter}}{${2:column}}{${3:definition}}"
@@ -153,7 +89,7 @@
 	},
 
 
-	"synccounter":{
+	"synccounter{}":{
 		"prefix":"synccounter",
 		"body":[
 			"\\synccounter{${1:counter}}"
@@ -169,58 +105,10 @@
 	},
 
 
-	"footnotelayout":{
+	"footnotelayout{}":{
 		"prefix":"footnotelayout",
 		"body":[
 			"\\footnotelayout{${1:layout}}"
-		]
-	},
-
-
-	"footnote*":{
-		"prefix":"footnote*",
-		"body":[
-			"\\footnote*{${1:text}}"
-		]
-	},
-
-
-	"footnote*":{
-		"prefix":"footnote*",
-		"body":[
-			"\\footnote*[${2:number}]{${1:text}}"
-		]
-	},
-
-
-	"footnotemark*":{
-		"prefix":"footnotemark*",
-		"body":[
-			"\\footnotemark*"
-		]
-	},
-
-
-	"footnotemark*":{
-		"prefix":"footnotemark*",
-		"body":[
-			"\\footnotemark*[${1:number}]"
-		]
-	},
-
-
-	"footnotetext*":{
-		"prefix":"footnotetext*",
-		"body":[
-			"\\footnotetext*{${1:text}}"
-		]
-	},
-
-
-	"footnotetext*":{
-		"prefix":"footnotetext*",
-		"body":[
-			"\\footnotetext*[${2:number}]{${1:text}}"
 		]
 	},
 
@@ -249,34 +137,10 @@
 	},
 
 
-	"columncolor":{
+	"columncolor{}":{
 		"prefix":"columncolor",
 		"body":[
 			"\\columncolor{${1:color}}"
-		]
-	},
-
-
-	"columncolor":{
-		"prefix":"columncolor",
-		"body":[
-			"\\columncolor{${1:color}}[${2:column}]"
-		]
-	},
-
-
-	"columncolor":{
-		"prefix":"columncolor",
-		"body":[
-			"\\columncolor[${2:mode}]{${1:color}}"
-		]
-	},
-
-
-	"columncolor":{
-		"prefix":"columncolor",
-		"body":[
-			"\\columncolor[${2:mode}]{${1:color}}[${3:column}]"
 		]
 	},
 
@@ -285,14 +149,6 @@
 		"prefix":"normalcolumncolor",
 		"body":[
 			"\\normalcolumncolor"
-		]
-	},
-
-
-	"normalcolumncolor":{
-		"prefix":"normalcolumncolor",
-		"body":[
-			"\\normalcolumncolor[${1:column}]"
 		]
 	},
 
@@ -313,34 +169,10 @@
 	},
 
 
-	"colseprulecolor":{
+	"colseprulecolor{}":{
 		"prefix":"colseprulecolor",
 		"body":[
 			"\\colseprulecolor{${1:color}}"
-		]
-	},
-
-
-	"colseprulecolor":{
-		"prefix":"colseprulecolor",
-		"body":[
-			"\\colseprulecolor{${1:color}}[${2:column}]"
-		]
-	},
-
-
-	"colseprulecolor":{
-		"prefix":"colseprulecolor",
-		"body":[
-			"\\colseprulecolor[${2:mode}]{${1:color}}"
-		]
-	},
-
-
-	"colseprulecolor":{
-		"prefix":"colseprulecolor",
-		"body":[
-			"\\colseprulecolor[${2:mode}]{${1:color}}[${3:column}]"
 		]
 	},
 
@@ -353,15 +185,7 @@
 	},
 
 
-	"normalcolseprulecolor":{
-		"prefix":"normalcolseprulecolor",
-		"body":[
-			"\\normalcolseprulecolor[${1:column}]"
-		]
-	},
-
-
-	"backgroundcolor":{
+	"backgroundcolor{}{}":{
 		"prefix":"backgroundcolor",
 		"body":[
 			"\\backgroundcolor{${1:region}}{${2:color}}"
@@ -369,15 +193,7 @@
 	},
 
 
-	"backgroundcolor":{
-		"prefix":"backgroundcolor",
-		"body":[
-			"\\backgroundcolor{${1:region}}[${3:mode}]{${2:color}}"
-		]
-	},
-
-
-	"nobackgroundcolor":{
+	"nobackgroundcolor{}":{
 		"prefix":"nobackgroundcolor",
 		"body":[
 			"\\nobackgroundcolor{${1:region}}"
@@ -401,7 +217,7 @@
 	},
 
 
-	"addcontentsonly":{
+	"addcontentsonly{}{}":{
 		"prefix":"addcontentsonly",
 		"body":[
 			"\\addcontentsonly{${1:file%keyvals}}{${2:column}}"
@@ -417,82 +233,186 @@
 	},
 
 
-	"leftcolumn*":{
-		"prefix":"leftcolumn*",
+	"switchcolumn*[]":{
+		"prefix":"*switchcolumn",
 		"body":[
-			"\\begin{leftcolumn*}",
-			"\t$1",
-			"\\end{leftcolumn*}"
+			"\\switchcolumn*[${1:text}]"
 		]
 	},
 
 
-	"leftcolumn":{
-		"prefix":"leftcolumn",
+	"globalcounter*":{
+		"prefix":"*globalcounter",
 		"body":[
-			"\\begin{leftcolumn}",
-			"\t$1",
-			"\\end{leftcolumn}"
+			"\\globalcounter*"
 		]
 	},
 
 
-	"nthcolumn*":{
-		"prefix":"nthcolumn*",
+	"footnote*{}":{
+		"prefix":"*footnote",
 		"body":[
-			"\\begin{nthcolumn*}",
-			"\t$1",
-			"\\end{nthcolumn*}"
+			"\\footnote*{${1:text}}"
 		]
 	},
 
 
-	"column":{
-		"prefix":"column",
+	"footnote*[]{}":{
+		"prefix":"*footnote",
 		"body":[
-			"\\begin{column}",
-			"\t$1",
-			"\\end{column}"
+			"\\footnote*[${2:number}]{${1:text}}"
 		]
 	},
 
 
-	"rightcolumn*":{
-		"prefix":"rightcolumn*",
+	"footnotemark*":{
+		"prefix":"*footnotemark",
 		"body":[
-			"\\begin{rightcolumn*}",
-			"\t$1",
-			"\\end{rightcolumn*}"
+			"\\footnotemark*"
 		]
 	},
 
 
-	"nthcolumn":{
-		"prefix":"nthcolumn",
+	"footnotemark*[]":{
+		"prefix":"*footnotemark",
 		"body":[
-			"\\begin{nthcolumn}",
-			"\t$1",
-			"\\end{nthcolumn}"
+			"\\footnotemark*[${1:number}]"
 		]
 	},
 
 
-	"rightcolumn":{
-		"prefix":"rightcolumn",
+	"footnotetext*{}":{
+		"prefix":"*footnotetext",
 		"body":[
-			"\\begin{rightcolumn}",
-			"\t$1",
-			"\\end{rightcolumn}"
+			"\\footnotetext*{${1:text}}"
 		]
 	},
 
 
-	"column*":{
-		"prefix":"column*",
+	"footnotetext*[]{}":{
+		"prefix":"*footnotetext",
 		"body":[
-			"\\begin{column*}",
-			"\t$1",
-			"\\end{column*}"
+			"\\footnotetext*[${2:number}]{${1:text}}"
+		]
+	},
+
+
+	"switchcolumn[]":{
+		"prefix":"switchcolumn",
+		"body":[
+			"\\switchcolumn[${1:column}]"
+		]
+	},
+
+
+	"switchcolumn[]*[]":{
+		"prefix":"switchcolumn",
+		"body":[
+			"\\switchcolumn[${1:column}]*[${2:text}]"
+		]
+	},
+
+
+	"columnratio{}[]":{
+		"prefix":"columnratio",
+		"body":[
+			"\\columnratio{${1:ratio 0,...,ratio k}}[${2:ratio' 0,...,ratio' k}]"
+		]
+	},
+
+
+	"setcolumnwidth{}[]":{
+		"prefix":"setcolumnwidth",
+		"body":[
+			"\\setcolumnwidth{${1:gap 0,...,gap k}}[${2:gap' 0,...,gap' k}]"
+		]
+	},
+
+
+	"twosided[]":{
+		"prefix":"twosided",
+		"body":[
+			"\\twosided[${1:t1t2...tk}]"
+		]
+	},
+
+
+	"marginparthreshold{}[]":{
+		"prefix":"marginparthreshold",
+		"body":[
+			"\\marginparthreshold{${1:columns}}[${2:columns'}]"
+		]
+	},
+
+
+	"columncolor{}[]":{
+		"prefix":"columncolor",
+		"body":[
+			"\\columncolor{${1:color}}[${2:column}]"
+		]
+	},
+
+
+	"columncolor[]{}":{
+		"prefix":"columncolor",
+		"body":[
+			"\\columncolor[${2:mode}]{${1:color}}"
+		]
+	},
+
+
+	"columncolor[]{}[]":{
+		"prefix":"columncolor",
+		"body":[
+			"\\columncolor[${2:mode}]{${1:color}}[${3:column}]"
+		]
+	},
+
+
+	"normalcolumncolor[]":{
+		"prefix":"normalcolumncolor",
+		"body":[
+			"\\normalcolumncolor[${1:column}]"
+		]
+	},
+
+
+	"colseprulecolor{}[]":{
+		"prefix":"colseprulecolor",
+		"body":[
+			"\\colseprulecolor{${1:color}}[${2:column}]"
+		]
+	},
+
+
+	"colseprulecolor[]{}":{
+		"prefix":"colseprulecolor",
+		"body":[
+			"\\colseprulecolor[${2:mode}]{${1:color}}"
+		]
+	},
+
+
+	"colseprulecolor[]{}[]":{
+		"prefix":"colseprulecolor",
+		"body":[
+			"\\colseprulecolor[${2:mode}]{${1:color}}[${3:column}]"
+		]
+	},
+
+
+	"normalcolseprulecolor[]":{
+		"prefix":"normalcolseprulecolor",
+		"body":[
+			"\\normalcolseprulecolor[${1:column}]"
+		]
+	},
+
+
+	"backgroundcolor{}[]{}":{
+		"prefix":"backgroundcolor",
+		"body":[
+			"\\backgroundcolor{${1:region}}[${3:mode}]{${2:color}}"
 		]
 	},
 
@@ -501,8 +421,158 @@
 		"prefix":"paracol",
 		"body":[
 			"\\begin{paracol}",
-			"\t$1",
+				"\t$1",
 			"\\end{paracol}"
+		]
+	},
+
+
+	"column":{
+		"prefix":"column",
+		"body":[
+			"\\begin{column}",
+				"\t$1",
+			"\\end{column}"
+		]
+	},
+
+
+	"nthcolumn":{
+		"prefix":"nthcolumn",
+		"body":[
+			"\\begin{nthcolumn}",
+				"\t$1",
+			"\\end{nthcolumn}"
+		]
+	},
+
+
+	"nthcolumn*":{
+		"prefix":"nthcolumn",
+		"body":[
+			"\\begin{nthcolumn*}",
+				"\t$1",
+			"\\end{nthcolumn*}"
+		]
+	},
+
+
+	"leftcolumn":{
+		"prefix":"leftcolumn",
+		"body":[
+			"\\begin{leftcolumn}",
+				"\t$1",
+			"\\end{leftcolumn}"
+		]
+	},
+
+
+	"rightcolumn":{
+		"prefix":"rightcolumn",
+		"body":[
+			"\\begin{rightcolumn}",
+				"\t$1",
+			"\\end{rightcolumn}"
+		]
+	},
+
+
+	"column*":{
+		"prefix":"*column",
+		"body":[
+			"\\begin{column*}",
+				"\t$1",
+			"\\end{column*}"
+		]
+	},
+
+
+	"leftcolumn*":{
+		"prefix":"*leftcolumn",
+		"body":[
+			"\\begin{leftcolumn*}",
+				"\t$1",
+			"\\end{leftcolumn*}"
+		]
+	},
+
+
+	"rightcolumn*":{
+		"prefix":"*rightcolumn",
+		"body":[
+			"\\begin{rightcolumn*}",
+				"\t$1",
+			"\\end{rightcolumn*}"
+		]
+	},
+
+
+	"paracol":{
+		"prefix":"paracol",
+		"body":[
+			"\\begin{paracol}",
+				"\t$1",
+			"\\end{paracol}"
+		]
+	},
+
+
+	"paracol":{
+		"prefix":"paracol",
+		"body":[
+			"\\begin{paracol}",
+				"\t$1",
+			"\\end{paracol}"
+		]
+	},
+
+
+	"paracol":{
+		"prefix":"paracol",
+		"body":[
+			"\\begin{paracol}",
+				"\t$1",
+			"\\end{paracol}"
+		]
+	},
+
+
+	"column*":{
+		"prefix":"column",
+		"body":[
+			"\\begin{column*}",
+				"\t$1",
+			"\\end{column*}"
+		]
+	},
+
+
+	"nthcolumn*":{
+		"prefix":"nthcolumn",
+		"body":[
+			"\\begin{nthcolumn*}",
+				"\t$1",
+			"\\end{nthcolumn*}"
+		]
+	},
+
+
+	"leftcolumn*":{
+		"prefix":"leftcolumn",
+		"body":[
+			"\\begin{leftcolumn*}",
+				"\t$1",
+			"\\end{leftcolumn*}"
+		]
+	},
+
+
+	"rightcolumn*":{
+		"prefix":"rightcolumn",
+		"body":[
+			"\\begin{rightcolumn*}",
+				"\t$1",
+			"\\end{rightcolumn*}"
 		]
 	}
 }

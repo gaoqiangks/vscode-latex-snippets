@@ -1,7 +1,7 @@
 {
 
 
-	"":{
+	"|":{
 		"prefix":"",
 		"body":[
 			"\\|"
@@ -25,7 +25,7 @@
 	},
 
 
-	"vttt":{
+	"vttt{}":{
 		"prefix":"vttt",
 		"body":[
 			"\\vttt{${1:thickness%l}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"vtttr":{
+	"vtttr{}":{
 		"prefix":"vtttr",
 		"body":[
 			"\\vtttr{${1:thickness%l}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"stpar":{
+	"stpar{}{}":{
 		"prefix":"stpar",
 		"body":[
 			"\\stpar{${1:dimen%l}}{${2:content%text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"elttt":{
+	"elttt{}":{
 		"prefix":"elttt",
 		"body":[
 			"\\elttt{${1:thickness%l}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"tttrule":{
+	"tttrule{}":{
 		"prefix":"tttrule",
 		"body":[
 			"\\tttrule{${1:thickness%l}}"
@@ -545,7 +545,7 @@
 	},
 
 
-	"stmultispan":{
+	"stmultispan{}":{
 		"prefix":"stmultispan",
 		"body":[
 			"\\stmultispan{${1:number}}"
@@ -577,22 +577,22 @@
 	},
 
 
-	"stableto":{
-		"prefix":"stableto",
-		"body":[
-			"\\begin{stableto}",
-			"\t$1",
-			"\\end{stableto}"
-		]
-	},
-
-
 	"stable":{
 		"prefix":"stable",
 		"body":[
 			"\\begin{stable}",
-			"\t$1",
+				"\t$1",
 			"\\end{stable}"
+		]
+	},
+
+
+	"stableto":{
+		"prefix":"stableto",
+		"body":[
+			"\\begin{stableto}",
+				"\t$1",
+			"\\end{stableto}"
 		]
 	},
 
@@ -601,7 +601,7 @@
 		"prefix":"stablesp",
 		"body":[
 			"\\begin{stablesp}",
-			"\t$1",
+				"\t$1",
 			"\\end{stablesp}"
 		]
 	}

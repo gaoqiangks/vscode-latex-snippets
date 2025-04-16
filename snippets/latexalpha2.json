@@ -1,7 +1,7 @@
 {
 
 
-	"wolfram":{
+	"wolfram{}":{
 		"prefix":"wolfram",
 		"body":[
 			"\\wolfram{${1:code%definition}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"wolfram":{
-		"prefix":"wolfram",
-		"body":[
-			"\\wolfram[${2:format%keyvals}]{${1:code%definition}}"
-		]
-	},
-
-
-	"wolframgraphics":{
+	"wolframgraphics{}{}":{
 		"prefix":"wolframgraphics",
 		"body":[
 			"\\wolframgraphics{${1:code%definition}}{${2:file}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"wolframgraphics":{
-		"prefix":"wolframgraphics",
-		"body":[
-			"\\wolframgraphics[${3:format%keyvals}]{${1:code%definition}}{${2:file}}"
-		]
-	},
-
-
-	"wolframalpha":{
+	"wolframalpha{}":{
 		"prefix":"wolframalpha",
 		"body":[
 			"\\wolframalpha{${1:query}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"wolframalpha":{
-		"prefix":"wolframalpha",
-		"body":[
-			"\\wolframalpha[${2:format%keyvals}]{${1:query}}"
-		]
-	},
-
-
-	"wolframsolve":{
+	"wolframsolve{}{}{}":{
 		"prefix":"wolframsolve",
 		"body":[
 			"\\wolframsolve{${1:equation%definition}}{${2:independent variable%definition}}{${3:dependent variable%definition}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"wolframsolve":{
+	"wolframsolve{}{}{}":{
 		"prefix":"wolframsolve",
 		"body":[
 			"\\wolframsolve{${1:equation%definition}}{${2:independent variable%definition}}{${3:dependent variable%definition}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"wolframdsolve":{
+	"wolframdsolve{}{}{}":{
 		"prefix":"wolframdsolve",
 		"body":[
 			"\\wolframdsolve{${1:equation%definition}}{${2:independent variable%definition}}{${3:dependent variable%definition}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"wolframdsolve":{
+	"wolframdsolve{}{}{}":{
 		"prefix":"wolframdsolve",
 		"body":[
 			"\\wolframdsolve{${1:equation%definition}}{${2:independent variable%definition}}{${3:dependent variable%definition}}"
@@ -81,7 +57,7 @@
 	},
 
 
-	"wolframtex":{
+	"wolframtex{}":{
 		"prefix":"wolframtex",
 		"body":[
 			"\\wolframtex{${1:code%definition}}"
@@ -89,15 +65,7 @@
 	},
 
 
-	"wolframtex":{
-		"prefix":"wolframtex",
-		"body":[
-			"\\wolframtex[${2:format%keyvals}]{${1:code%definition}}"
-		]
-	},
-
-
-	"wolframanimation":{
+	"wolframanimation{}{}":{
 		"prefix":"wolframanimation",
 		"body":[
 			"\\wolframanimation{${1:code%definition}}{${2:folder name%definition}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"instring":{
+	"instring{}{}":{
 		"prefix":"instring",
 		"body":[
 			"\\instring{${1:char}}{${2:string}}"
@@ -133,6 +101,38 @@
 		"prefix":"wsreturncode",
 		"body":[
 			"\\wsreturncode"
+		]
+	},
+
+
+	"wolfram[]{}":{
+		"prefix":"wolfram",
+		"body":[
+			"\\wolfram[${2:format%keyvals}]{${1:code%definition}}"
+		]
+	},
+
+
+	"wolframgraphics[]{}{}":{
+		"prefix":"wolframgraphics",
+		"body":[
+			"\\wolframgraphics[${3:format%keyvals}]{${1:code%definition}}{${2:file}}"
+		]
+	},
+
+
+	"wolframalpha[]{}":{
+		"prefix":"wolframalpha",
+		"body":[
+			"\\wolframalpha[${2:format%keyvals}]{${1:query}}"
+		]
+	},
+
+
+	"wolframtex[]{}":{
+		"prefix":"wolframtex",
+		"body":[
+			"\\wolframtex[${2:format%keyvals}]{${1:code%definition}}"
 		]
 	}
 }

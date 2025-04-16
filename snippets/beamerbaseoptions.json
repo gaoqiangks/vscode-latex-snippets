@@ -9,7 +9,7 @@
 	},
 
 
-	"ExecuteOptionsBeamer":{
+	"ExecuteOptionsBeamer{}":{
 		"prefix":"ExecuteOptionsBeamer",
 		"body":[
 			"\\ExecuteOptionsBeamer{${1:options}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"DeclareOptionBeamer":{
+	"DeclareOptionBeamer{}{}":{
 		"prefix":"DeclareOptionBeamer",
 		"body":[
 			"\\DeclareOptionBeamer{${1:option}}{${2:definition}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"DeclareOptionBeamer":{
-		"prefix":"DeclareOptionBeamer",
-		"body":[
-			"\\DeclareOptionBeamer{${1:option}}[${3:default}]{${2:definition}}"
-		]
-	},
-
-
-	"defbeameroption":{
+	"defbeameroption{}{}":{
 		"prefix":"defbeameroption",
 		"body":[
 			"\\defbeameroption{${1:option%specialDef}}{${2:definition}}"
@@ -41,10 +33,18 @@
 	},
 
 
-	"setbeameroption":{
+	"setbeameroption{}":{
 		"prefix":"setbeameroption",
 		"body":[
 			"\\setbeameroption{${1:options%keyvals}}"
+		]
+	},
+
+
+	"DeclareOptionBeamer{}[]{}":{
+		"prefix":"DeclareOptionBeamer",
+		"body":[
+			"\\DeclareOptionBeamer{${1:option}}[${3:default}]{${2:definition}}"
 		]
 	}
 }

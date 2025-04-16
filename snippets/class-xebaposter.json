@@ -1,7 +1,7 @@
 {
 
 
-	"background":{
+	"background{}":{
 		"prefix":"background",
 		"body":[
 			"\\background{${1:graphics code}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"headerbox":{
+	"headerbox{}{}{}":{
 		"prefix":"headerbox",
 		"body":[
 			"\\headerbox{${1:title}}{${2:options%keyvals}}{${3:content%text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"xebaposterBoxDrawBackground":{
+	"xebaposterBoxDrawBackground{}{}":{
 		"prefix":"xebaposterBoxDrawBackground",
 		"body":[
 			"\\xebaposterBoxDrawBackground{${1:color}}{${2:color}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"xebaposterBoxDrawBorder":{
+	"xebaposterBoxDrawBorder{}":{
 		"prefix":"xebaposterBoxDrawBorder",
 		"body":[
 			"\\xebaposterBoxDrawBorder{${1:color}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"xebaposterHeaderDrawBackground":{
+	"xebaposterHeaderDrawBackground{}{}{}":{
 		"prefix":"xebaposterHeaderDrawBackground",
 		"body":[
 			"\\xebaposterHeaderDrawBackground{${1:color}}{${2:color}}{${3:color}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"xebaposterHeaderDrawBorder":{
+	"xebaposterHeaderDrawBorder{}":{
 		"prefix":"xebaposterHeaderDrawBorder",
 		"body":[
 			"\\xebaposterHeaderDrawBorder{${1:color}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"xebaposterHeaderDrawText":{
+	"xebaposterHeaderDrawText{}":{
 		"prefix":"xebaposterHeaderDrawText",
 		"body":[
 			"\\xebaposterHeaderDrawText{${1:color}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"xebaposterHeaderSetShade":{
+	"xebaposterHeaderSetShade{}{}{}":{
 		"prefix":"xebaposterHeaderSetShade",
 		"body":[
 			"\\xebaposterHeaderSetShade{${1:color}}{${2:color}}{${3:color}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"xebaposterPosterDrawBackground":{
+	"xebaposterPosterDrawBackground{}{}":{
 		"prefix":"xebaposterPosterDrawBackground",
 		"body":[
 			"\\xebaposterPosterDrawBackground{${1:color}}{${2:color}}"
@@ -249,7 +249,7 @@
 	},
 
 
-	"k":{
+	"k{}":{
 		"prefix":"k",
 		"body":[
 			"\\k{${1:arg}}"
@@ -289,7 +289,7 @@
 	},
 
 
-	"textogonekcentered":{
+	"textogonekcentered{}":{
 		"prefix":"textogonekcentered",
 		"body":[
 			"\\textogonekcentered{${1:arg}}"
@@ -321,22 +321,32 @@
 	},
 
 
+	"poster":{
+		"prefix":"poster",
+		"body":[
+			"\\begin{poster}",
+				"\t$1",
+			"\\end{poster}"
+		]
+	},
+
+
 	"posterbox":{
 		"prefix":"posterbox",
 		"body":[
 			"\\begin{posterbox}",
-			"\t$1",
+				"\t$1",
 			"\\end{posterbox}"
 		]
 	},
 
 
-	"poster":{
-		"prefix":"poster",
+	"posterbox":{
+		"prefix":"posterbox",
 		"body":[
-			"\\begin{poster}",
-			"\t$1",
-			"\\end{poster}"
+			"\\begin{posterbox}",
+				"\t$1",
+			"\\end{posterbox}"
 		]
 	}
 }

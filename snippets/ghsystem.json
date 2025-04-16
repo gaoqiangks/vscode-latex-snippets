@@ -1,7 +1,7 @@
 {
 
 
-	"ghssetup":{
+	"ghssetup{}":{
 		"prefix":"ghssetup",
 		"body":[
 			"\\ghssetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ghs":{
+	"ghs{}{}":{
 		"prefix":"ghs",
 		"body":[
 			"\\ghs{${1:type}}{${2:number}}"
@@ -17,42 +17,10 @@
 	},
 
 
-	"ghs":{
-		"prefix":"ghs",
-		"body":[
-			"\\ghs[${3:options%keyvals}]{${1:type}}{${2:number}}"
-		]
-	},
-
-
-	"ghs*":{
-		"prefix":"ghs*",
-		"body":[
-			"\\ghs*{${1:type}}{${2:number}}"
-		]
-	},
-
-
-	"ghs*":{
-		"prefix":"ghs*",
-		"body":[
-			"\\ghs*[${3:options%keyvals}]{${1:type}}{${2:number}}"
-		]
-	},
-
-
-	"ghspic":{
+	"ghspic{}":{
 		"prefix":"ghspic",
 		"body":[
 			"\\ghspic{${1:name}}"
-		]
-	},
-
-
-	"ghspic":{
-		"prefix":"ghspic",
-		"body":[
-			"\\ghspic[${2:options%keyvals}]{${1:name}}"
 		]
 	},
 
@@ -61,14 +29,6 @@
 		"prefix":"ghslistall",
 		"body":[
 			"\\ghslistall"
-		]
-	},
-
-
-	"ghslistall":{
-		"prefix":"ghslistall",
-		"body":[
-			"\\ghslistall[${1:options%keyvals}]"
 		]
 	},
 
@@ -101,6 +61,46 @@
 		"prefix":"GHSpounds",
 		"body":[
 			"\\GHSpounds"
+		]
+	},
+
+
+	"ghs*{}{}":{
+		"prefix":"*ghs",
+		"body":[
+			"\\ghs*{${1:type}}{${2:number}}"
+		]
+	},
+
+
+	"ghs*[]{}{}":{
+		"prefix":"*ghs",
+		"body":[
+			"\\ghs*[${3:options%keyvals}]{${1:type}}{${2:number}}"
+		]
+	},
+
+
+	"ghs[]{}{}":{
+		"prefix":"ghs",
+		"body":[
+			"\\ghs[${3:options%keyvals}]{${1:type}}{${2:number}}"
+		]
+	},
+
+
+	"ghspic[]{}":{
+		"prefix":"ghspic",
+		"body":[
+			"\\ghspic[${2:options%keyvals}]{${1:name}}"
+		]
+	},
+
+
+	"ghslistall[]":{
+		"prefix":"ghslistall",
+		"body":[
+			"\\ghslistall[${1:options%keyvals}]"
 		]
 	}
 }

@@ -17,7 +17,7 @@
 	},
 
 
-	"setMultiColRow":{
+	"setMultiColRow{}{}{}{}{}{}{}{}{}":{
 		"prefix":"setMultiColRow",
 		"body":[
 			"\\setMultiColRow{${1:col num}}{${2:row num}}{${3:max width%l}}{${4:min width%l}}{${5:hmode}}{${6:vmode}}{${7:left sep%l}}{${8:right sep%l}}{${9:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"setMultiColumn":{
+	"setMultiColumn{}{}{}{}{}{}{}{}":{
 		"prefix":"setMultiColumn",
 		"body":[
 			"\\setMultiColumn{${1:col num}}{${2:max width%l}}{${3:min width%l}}{${4:hmode}}{${5:vmode}}{${6:left sep%l}}{${7:right sep%l}}{${8:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"setMultiRow":{
+	"setMultiRow{}{}":{
 		"prefix":"setMultiRow",
 		"body":[
 			"\\setMultiRow{${1:col num}}{${2:text}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"setMultiRow":{
-		"prefix":"setMultiRow",
-		"body":[
-			"\\setMultiRow{${1:col num}}[${3:min height%l}]{${2:text}}"
-		]
-	},
-
-
-	"tableFormatedCell":{
+	"tableFormatedCell{}{}{}":{
 		"prefix":"tableFormatedCell",
 		"body":[
 			"\\tableFormatedCell{${1:max width%l}}{${2:hmode}}{${3:vmode}}"
@@ -57,18 +49,26 @@
 	},
 
 
-	"tableFormatedCell":{
-		"prefix":"tableFormatedCell",
+	"forceRowHeight{}":{
+		"prefix":"forceRowHeight",
 		"body":[
-			"\\tableFormatedCell{${1:max width%l}}[${4:min width%l}]{${2:hmode}}{${3:vmode}}"
+			"\\forceRowHeight{${1:height}}"
 		]
 	},
 
 
-	"forceRowHeight":{
-		"prefix":"forceRowHeight",
+	"setMultiRow{}[]{}":{
+		"prefix":"setMultiRow",
 		"body":[
-			"\\forceRowHeight{${1:height}}"
+			"\\setMultiRow{${1:col num}}[${3:min height%l}]{${2:text}}"
+		]
+	},
+
+
+	"tableFormatedCell{}[]{}{}":{
+		"prefix":"tableFormatedCell",
+		"body":[
+			"\\tableFormatedCell{${1:max width%l}}[${4:min width%l}]{${2:hmode}}{${3:vmode}}"
 		]
 	}
 }

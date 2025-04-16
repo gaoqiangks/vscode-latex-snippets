@@ -1,7 +1,7 @@
 {
 
 
-	"attribute":{
+	"attribute{}":{
 		"prefix":"attribute",
 		"body":[
 			"\\attribute{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"operation":{
+	"operation{}":{
 		"prefix":"operation",
 		"body":[
 			"\\operation{${1:text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"operation":{
-		"prefix":"operation",
-		"body":[
-			"\\operation[${2:0}]{${1:text}}"
-		]
-	},
-
-
-	"instanceOf":{
+	"instanceOf{}":{
 		"prefix":"instanceOf",
 		"body":[
 			"\\instanceOf{${1:class name}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"inherit":{
+	"inherit{}":{
 		"prefix":"inherit",
 		"body":[
 			"\\inherit{${1:class name}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"implement":{
+	"implement{}":{
 		"prefix":"implement",
 		"body":[
 			"\\implement{${1:interface name}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"association":{
+	"association{}{}{}{}{}{}":{
 		"prefix":"association",
 		"body":[
 			"\\association{${1:class1}}{${2:abovetext1}}{${3:belowtext1}}{${4:class2}}{${5:abovetext2}}{${6:belowtext2}}"
@@ -65,7 +57,7 @@
 	},
 
 
-	"unidirectionalAssociation":{
+	"unidirectionalAssociation{}{}{}{}":{
 		"prefix":"unidirectionalAssociation",
 		"body":[
 			"\\unidirectionalAssociation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
@@ -73,7 +65,7 @@
 	},
 
 
-	"aggregation":{
+	"aggregation{}{}{}{}":{
 		"prefix":"aggregation",
 		"body":[
 			"\\aggregation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
@@ -81,7 +73,7 @@
 	},
 
 
-	"composition":{
+	"composition{}{}{}{}":{
 		"prefix":"composition",
 		"body":[
 			"\\composition{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
@@ -249,12 +241,40 @@
 	},
 
 
+	"operation[]{}":{
+		"prefix":"operation",
+		"body":[
+			"\\operation[${2:0}]{${1:text}}"
+		]
+	},
+
+
+	"class":{
+		"prefix":"class",
+		"body":[
+			"\\begin{class}",
+				"\t$1",
+			"\\end{class}"
+		]
+	},
+
+
 	"abstractclass":{
 		"prefix":"abstractclass",
 		"body":[
 			"\\begin{abstractclass}",
-			"\t$1",
+				"\t$1",
 			"\\end{abstractclass}"
+		]
+	},
+
+
+	"interface":{
+		"prefix":"interface",
+		"body":[
+			"\\begin{interface}",
+				"\t$1",
+			"\\end{interface}"
 		]
 	},
 
@@ -263,7 +283,7 @@
 		"prefix":"object",
 		"body":[
 			"\\begin{object}",
-			"\t$1",
+				"\t$1",
 			"\\end{object}"
 		]
 	},
@@ -273,7 +293,7 @@
 		"prefix":"package",
 		"body":[
 			"\\begin{package}",
-			"\t$1",
+				"\t$1",
 			"\\end{package}"
 		]
 	},
@@ -283,18 +303,8 @@
 		"prefix":"classAndInterfaceCommon",
 		"body":[
 			"\\begin{classAndInterfaceCommon}",
-			"\t$1",
+				"\t$1",
 			"\\end{classAndInterfaceCommon}"
-		]
-	},
-
-
-	"interface":{
-		"prefix":"interface",
-		"body":[
-			"\\begin{interface}",
-			"\t$1",
-			"\\end{interface}"
 		]
 	},
 
@@ -303,8 +313,38 @@
 		"prefix":"class",
 		"body":[
 			"\\begin{class}",
-			"\t$1",
+				"\t$1",
 			"\\end{class}"
+		]
+	},
+
+
+	"abstractclass":{
+		"prefix":"abstractclass",
+		"body":[
+			"\\begin{abstractclass}",
+				"\t$1",
+			"\\end{abstractclass}"
+		]
+	},
+
+
+	"interface":{
+		"prefix":"interface",
+		"body":[
+			"\\begin{interface}",
+				"\t$1",
+			"\\end{interface}"
+		]
+	},
+
+
+	"object":{
+		"prefix":"object",
+		"body":[
+			"\\begin{object}",
+				"\t$1",
+			"\\end{object}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"inp":{
+	"inp{}":{
 		"prefix":"inp",
 		"body":[
 			"\\inp{${1:input%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ips":{
+	"ips{}":{
 		"prefix":"ips",
 		"body":[
 			"\\ips{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"const":{
+	"const{}":{
 		"prefix":"const",
 		"body":[
 			"\\const{${1:constraint%text}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"const*":{
-		"prefix":"const*",
-		"body":[
-			"\\const*{${1:constraint%text}}"
-		]
-	},
-
-
-	"cand":{
+	"cand{}":{
 		"prefix":"cand",
 		"body":[
 			"\\cand{${1:candidate%text}}"
@@ -41,31 +33,7 @@
 	},
 
 
-	"cand":{
-		"prefix":"cand",
-		"body":[
-			"\\cand[${2:symbol}]{${1:candidate%text}}"
-		]
-	},
-
-
-	"cand*":{
-		"prefix":"cand*",
-		"body":[
-			"\\cand*{${1:candidate%text}}"
-		]
-	},
-
-
-	"cand*":{
-		"prefix":"cand*",
-		"body":[
-			"\\cand*[${2:symbol}]{${1:candidate%text}}"
-		]
-	},
-
-
-	"vio":{
+	"vio{}":{
 		"prefix":"vio",
 		"body":[
 			"\\vio{${1:violation%text}}"
@@ -73,15 +41,7 @@
 	},
 
 
-	"vio*":{
-		"prefix":"vio*",
-		"body":[
-			"\\vio*{${1:violation%text}}"
-		]
-	},
-
-
-	"SetCellShading":{
+	"SetCellShading{}":{
 		"prefix":"SetCellShading",
 		"body":[
 			"\\SetCellShading{${1:factor}}"
@@ -185,7 +145,7 @@
 	},
 
 
-	"mcand":{
+	"mcand{}":{
 		"prefix":"mcand",
 		"body":[
 			"\\mcand{${1:candidate%text}}"
@@ -193,26 +153,66 @@
 	},
 
 
-	"mcand":{
-		"prefix":"mcand",
+	"const*{}":{
+		"prefix":"*const",
 		"body":[
-			"\\mcand[${2:symbol}]{${1:candidate%text}}"
+			"\\const*{${1:constraint%text}}"
 		]
 	},
 
 
-	"mcand*":{
-		"prefix":"mcand*",
+	"cand*{}":{
+		"prefix":"*cand",
+		"body":[
+			"\\cand*{${1:candidate%text}}"
+		]
+	},
+
+
+	"cand*[]{}":{
+		"prefix":"*cand",
+		"body":[
+			"\\cand*[${2:symbol}]{${1:candidate%text}}"
+		]
+	},
+
+
+	"vio*{}":{
+		"prefix":"*vio",
+		"body":[
+			"\\vio*{${1:violation%text}}"
+		]
+	},
+
+
+	"mcand*{}":{
+		"prefix":"*mcand",
 		"body":[
 			"\\mcand*{${1:candidate%text}}"
 		]
 	},
 
 
-	"mcand*":{
-		"prefix":"mcand*",
+	"mcand*[]{}":{
+		"prefix":"*mcand",
 		"body":[
 			"\\mcand*[${2:symbol}]{${1:candidate%text}}"
+		]
+	},
+
+
+	"cand[]{}":{
+		"prefix":"cand",
+		"body":[
+			"\\cand[${2:symbol}]{${1:candidate%text}}"
+		]
+	},
+
+
+	"mcand[]{}":{
+		"prefix":"mcand",
+		"body":[
+			"\\mcand[${2:symbol}]{${1:candidate%text}}"
 		]
 	},
 
@@ -221,7 +221,7 @@
 		"prefix":"tableau",
 		"body":[
 			"\\begin{tableau}",
-			"\t$1",
+				"\t$1",
 			"\\end{tableau}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"tocotherhead":{
+	"tocotherhead{}":{
 		"prefix":"tocotherhead",
 		"body":[
 			"\\tocotherhead{${1:headingname}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"setindexname":{
+	"setindexname{}":{
 		"prefix":"setindexname",
 		"body":[
 			"\\setindexname{${1:name}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"settocname":{
+	"settocname{}":{
 		"prefix":"settocname",
 		"body":[
 			"\\settocname{${1:name}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"setlotname":{
+	"setlotname{}":{
 		"prefix":"setlotname",
 		"body":[
 			"\\setlotname{${1:name}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"setlofname":{
+	"setlofname{}":{
 		"prefix":"setlofname",
 		"body":[
 			"\\setlofname{${1:name}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"settocbibname":{
+	"settocbibname{}":{
 		"prefix":"settocbibname",
 		"body":[
 			"\\settocbibname{${1:name}}"
@@ -61,14 +61,6 @@
 		"prefix":"simplechapter",
 		"body":[
 			"\\simplechapter"
-		]
-	},
-
-
-	"simplechapter":{
-		"prefix":"simplechapter",
-		"body":[
-			"\\simplechapter[${1:name}]"
 		]
 	},
 
@@ -105,7 +97,7 @@
 	},
 
 
-	"tocfile":{
+	"tocfile{}{}":{
 		"prefix":"tocfile",
 		"body":[
 			"\\tocfile{${1:text}}{${2:file-extension}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"tocetcmark":{
+	"tocetcmark{}":{
 		"prefix":"tocetcmark",
 		"body":[
 			"\\tocetcmark{${1:head}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"PRWPackageNote":{
+	"PRWPackageNote{}{}":{
 		"prefix":"PRWPackageNote",
 		"body":[
 			"\\PRWPackageNote{${1:package}}{${2:note text}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"PRWPackageNoteNoLine":{
+	"PRWPackageNoteNoLine{}{}":{
 		"prefix":"PRWPackageNoteNoLine",
 		"body":[
 			"\\PRWPackageNoteNoLine{${1:package}}{${2:note text}}"
@@ -145,11 +137,19 @@
 	},
 
 
+	"simplechapter[]":{
+		"prefix":"simplechapter",
+		"body":[
+			"\\simplechapter[${1:name}]"
+		]
+	},
+
+
 	"thebibitemlist":{
 		"prefix":"thebibitemlist",
 		"body":[
 			"\\begin{thebibitemlist}",
-			"\t$1",
+				"\t$1",
 			"\\end{thebibitemlist}"
 		]
 	}

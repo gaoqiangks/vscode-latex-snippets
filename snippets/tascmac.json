@@ -1,7 +1,7 @@
 {
 
 
-	"mask":{
+	"mask{}{}":{
 		"prefix":"mask",
 		"body":[
 			"\\mask{${1:text}}{${2:pattern%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"maskbox":{
+	"maskbox{}{}{}{}{}":{
 		"prefix":"maskbox",
 		"body":[
 			"\\maskbox{${1:width}}{${2:height}}{${3:pattern%keyvals}}{${4:pos}}{${5:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"Maskbox":{
+	"Maskbox{}{}{}{}{}{}":{
 		"prefix":"Maskbox",
 		"body":[
 			"\\Maskbox{${1:width}}{${2:height}}{${3:pattern%keyvals}}{${4:pos}}{${5:thickness%l}}{${6:text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"keytop":{
+	"keytop{}":{
 		"prefix":"keytop",
 		"body":[
 			"\\keytop{${1:text}}"
@@ -81,32 +81,22 @@
 	},
 
 
-	"screen":{
-		"prefix":"screen",
-		"body":[
-			"\\begin{screen}",
-			"\t$1",
-			"\\end{screen}"
-		]
-	},
-
-
 	"boxnote":{
 		"prefix":"boxnote",
 		"body":[
 			"\\begin{boxnote}",
-			"\t$1",
+				"\t$1",
 			"\\end{boxnote}"
 		]
 	},
 
 
-	"shadebox":{
-		"prefix":"shadebox",
+	"screen":{
+		"prefix":"screen",
 		"body":[
-			"\\begin{shadebox}",
-			"\t$1",
-			"\\end{shadebox}"
+			"\\begin{screen}",
+				"\t$1",
+			"\\end{screen}"
 		]
 	},
 
@@ -115,7 +105,37 @@
 		"prefix":"itembox",
 		"body":[
 			"\\begin{itembox}",
-			"\t$1",
+				"\t$1",
+			"\\end{itembox}"
+		]
+	},
+
+
+	"shadebox":{
+		"prefix":"shadebox",
+		"body":[
+			"\\begin{shadebox}",
+				"\t$1",
+			"\\end{shadebox}"
+		]
+	},
+
+
+	"screen":{
+		"prefix":"screen",
+		"body":[
+			"\\begin{screen}",
+				"\t$1",
+			"\\end{screen}"
+		]
+	},
+
+
+	"itembox":{
+		"prefix":"itembox",
+		"body":[
+			"\\begin{itembox}",
+				"\t$1",
 			"\\end{itembox}"
 		]
 	}

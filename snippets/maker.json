@@ -1,7 +1,7 @@
 {
 
 
-	"ArduinoSketch":{
+	"ArduinoSketch{}{}":{
 		"prefix":"ArduinoSketch",
 		"body":[
 			"\\ArduinoSketch{${1:file}}{${2:caption%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"ArduinoInline":{
+	"ArduinoInline{}":{
 		"prefix":"ArduinoInline",
 		"body":[
 			"\\ArduinoInline{${1:code%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"ProcessingSketch":{
+	"ProcessingSketch{}{}":{
 		"prefix":"ProcessingSketch",
 		"body":[
 			"\\ProcessingSketch{${1:file}}{${2:caption%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"ProcessingInline":{
+	"ProcessingInline{}":{
 		"prefix":"ProcessingInline",
 		"body":[
 			"\\ProcessingInline{${1:code%definition}}"
@@ -33,10 +33,20 @@
 	},
 
 
-	"FormatDigit":{
+	"FormatDigit{}":{
 		"prefix":"FormatDigit",
 		"body":[
 			"\\FormatDigit{${1:digits}}"
+		]
+	},
+
+
+	"ArduinoSketchBox":{
+		"prefix":"ArduinoSketchBox",
+		"body":[
+			"\\begin{ArduinoSketchBox}",
+				"\t$1",
+			"\\end{ArduinoSketchBox}"
 		]
 	},
 
@@ -45,7 +55,7 @@
 		"prefix":"ProcessingSketchBox",
 		"body":[
 			"\\begin{ProcessingSketchBox}",
-			"\t$1",
+				"\t$1",
 			"\\end{ProcessingSketchBox}"
 		]
 	},
@@ -55,8 +65,18 @@
 		"prefix":"ArduinoSketchBox",
 		"body":[
 			"\\begin{ArduinoSketchBox}",
-			"\t$1",
+				"\t$1",
 			"\\end{ArduinoSketchBox}"
+		]
+	},
+
+
+	"ProcessingSketchBox":{
+		"prefix":"ProcessingSketchBox",
+		"body":[
+			"\\begin{ProcessingSketchBox}",
+				"\t$1",
+			"\\end{ProcessingSketchBox}"
 		]
 	}
 }

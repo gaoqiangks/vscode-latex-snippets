@@ -1,7 +1,7 @@
 {
 
 
-	"VautoSubF":{
+	"VautoSubF{}{}{}{}{}":{
 		"prefix":"VautoSubF",
 		"body":[
 			"\\VautoSubF{${1:startline}}{${2:endline}}{${3:file}}{${4:caption}}{${5:label}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"VautoSubF":{
-		"prefix":"VautoSubF",
-		"body":[
-			"\\VautoSubF[${6:lines-numbered}]{${1:startline}}{${2:endline}}{${3:file}}{${4:caption}}{${5:label}}"
-		]
-	},
-
-
-	"VautoSfFont":{
+	"VautoSfFont{}":{
 		"prefix":"VautoSfFont",
 		"body":[
 			"\\VautoSfFont{${1:font commands}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"VautoSfFont":{
-		"prefix":"VautoSfFont",
-		"body":[
-			"\\VautoSfFont[${2:linenum-font-commands}]{${1:font-commands}}"
-		]
-	},
-
-
-	"VautoPl":{
+	"VautoPl{}":{
 		"prefix":"VautoPl",
 		"body":[
 			"\\VautoPl{${1:placement}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"VautoLines":{
+	"VautoLines{}":{
 		"prefix":"VautoLines",
 		"body":[
 			"\\VautoLines{${1:lines-per-page}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"VautoLines":{
-		"prefix":"VautoLines",
-		"body":[
-			"\\VautoLines[${2:first-page-lines}]{${1:lines-per-page}}"
-		]
-	},
-
-
-	"VautoSubFF":{
+	"VautoSubFF{}":{
 		"prefix":"VautoSubFF",
 		"body":[
 			"\\VautoSubFF{${1:font commands}}"
@@ -65,18 +41,42 @@
 	},
 
 
-	"VautoSubFF":{
-		"prefix":"VautoSubFF",
+	"ifsubstr{}{}{}{}":{
+		"prefix":"ifsubstr",
 		"body":[
-			"\\VautoSubFF[${2:linenum-font-commands}]{${1:font-commands}}"
+			"\\ifsubstr{${1:string}}{${2:substring}}{${3:true}}{${4:false}}"
 		]
 	},
 
 
-	"ifsubstr":{
-		"prefix":"ifsubstr",
+	"VautoSubF[]{}{}{}{}{}":{
+		"prefix":"VautoSubF",
 		"body":[
-			"\\ifsubstr{${1:string}}{${2:substring}}{${3:true}}{${4:false}}"
+			"\\VautoSubF[${6:lines-numbered}]{${1:startline}}{${2:endline}}{${3:file}}{${4:caption}}{${5:label}}"
+		]
+	},
+
+
+	"VautoSfFont[]{}":{
+		"prefix":"VautoSfFont",
+		"body":[
+			"\\VautoSfFont[${2:linenum-font-commands}]{${1:font-commands}}"
+		]
+	},
+
+
+	"VautoLines[]{}":{
+		"prefix":"VautoLines",
+		"body":[
+			"\\VautoLines[${2:first-page-lines}]{${1:lines-per-page}}"
+		]
+	},
+
+
+	"VautoSubFF[]{}":{
+		"prefix":"VautoSubFF",
+		"body":[
+			"\\VautoSubFF[${2:linenum-font-commands}]{${1:font-commands}}"
 		]
 	}
 }

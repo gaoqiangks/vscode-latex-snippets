@@ -9,7 +9,7 @@
 	},
 
 
-	"BlockElementEnd":{
+	"BlockElementEnd{}":{
 		"prefix":"BlockElementEnd",
 		"body":[
 			"\\BlockElementEnd{${1:name}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"BlockElementStart":{
+	"BlockElementStart{}{}":{
 		"prefix":"BlockElementStart",
 		"body":[
 			"\\BlockElementStart{${1:name}}{${2:additional-attributes}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"ConfigureEnv":{
+	"ConfigureEnv{}{}{}{}{}":{
 		"prefix":"ConfigureEnv",
 		"body":[
 			"\\ConfigureEnv{${1:envname}}{${2:before-env}}{${3:after-env}}{${4:before-list}}{${5:after-list}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"ConfigureList":{
+	"ConfigureList{}{}{}{}{}":{
 		"prefix":"ConfigureList",
 		"body":[
 			"\\ConfigureList{${1:list-name}}{${2:before-list}}{${3:after-list}}{${4:before-label}}{${5:after-label}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"ConfigureMark":{
+	"ConfigureMark{}{}":{
 		"prefix":"ConfigureMark",
 		"body":[
 			"\\ConfigureMark{${1:unit-name}}{${2:print-section-number}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"ConfigureToc":{
+	"ConfigureToc{}{}{}{}{}":{
 		"prefix":"ConfigureToc",
 		"body":[
 			"\\ConfigureToc{${1:unit-name}}{${2:before-unit-number}}{${3:before-content}}{${4:before-page-number}}{${5:at-end}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"ContCutAt":{
+	"ContCutAt{}":{
 		"prefix":"ContCutAt",
 		"body":[
 			"\\ContCutAt{${1:section-type}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"Css":{
+	"Css{}":{
 		"prefix":"Css",
 		"body":[
 			"\\Css{${1:CSS code}}"
@@ -73,15 +73,7 @@
 	},
 
 
-	"CssFile":{
-		"prefix":"CssFile",
-		"body":[
-			"\\CssFile[${1:list of CSS files}]"
-		]
-	},
-
-
-	"CutAt":{
+	"CutAt{}":{
 		"prefix":"CutAt",
 		"body":[
 			"\\CutAt{${1:at-unit,until-unit1,until-unit2,...}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"HCode":{
+	"HCode{}":{
 		"prefix":"HCode",
 		"body":[
 			"\\HCode{${1:markup}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"HPage":{
+	"HPage{}":{
 		"prefix":"HPage",
 		"body":[
 			"\\HPage{${1:anchor}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"ifOption":{
+	"ifOption{}{}{}":{
 		"prefix":"ifOption",
 		"body":[
 			"\\ifOption{${1:option}}{${2:true}}{${3:false}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"ifTag":{
+	"ifTag{}{}{}":{
 		"prefix":"ifTag",
 		"body":[
 			"\\ifTag{${1:label}}{${2:true}}{${3:false}}"
@@ -225,7 +217,7 @@
 	},
 
 
-	"InlineElementEnd":{
+	"InlineElementEnd{}":{
 		"prefix":"InlineElementEnd",
 		"body":[
 			"\\InlineElementEnd{${1:name}}"
@@ -233,7 +225,7 @@
 	},
 
 
-	"InlineElementStart":{
+	"InlineElementStart{}{}":{
 		"prefix":"InlineElementStart",
 		"body":[
 			"\\InlineElementStart{${1:name}}{${2:additional-attributes}}"
@@ -249,7 +241,7 @@
 	},
 
 
-	"LikeRef":{
+	"LikeRef{}":{
 		"prefix":"LikeRef",
 		"body":[
 			"\\LikeRef{${1:label}}"
@@ -257,15 +249,7 @@
 	},
 
 
-	"Link":{
-		"prefix":"Link",
-		"body":[
-			"\\Link[${3:target-file args}]{${1:target-loc}}{${2:cur-loc}}"
-		]
-	},
-
-
-	"Link":{
+	"Link{}{}":{
 		"prefix":"Link",
 		"body":[
 			"\\Link{${1:target-loc}}{${2:cur-loc}}"
@@ -273,7 +257,7 @@
 	},
 
 
-	"LinkCommand":{
+	"LinkCommand{}{}":{
 		"prefix":"LinkCommand",
 		"body":[
 			"\\LinkCommand{${1:cmd}}{${2:def}}"
@@ -281,15 +265,7 @@
 	},
 
 
-	"NewConfigure":{
-		"prefix":"NewConfigure",
-		"body":[
-			"\\NewConfigure{${1:name}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"NewConfigure":{
+	"NewConfigure{}{}":{
 		"prefix":"NewConfigure",
 		"body":[
 			"\\NewConfigure{${1:name}}{${2:definition}}"
@@ -297,7 +273,7 @@
 	},
 
 
-	"NewLogicalBlock":{
+	"NewLogicalBlock{}":{
 		"prefix":"NewLogicalBlock",
 		"body":[
 			"\\NewLogicalBlock{${1:name}}"
@@ -305,7 +281,7 @@
 	},
 
 
-	"NewSection":{
+	"NewSection{}{}":{
 		"prefix":"NewSection",
 		"body":[
 			"\\NewSection{${1:cmd}}{${2:mark-for-toc}}"
@@ -313,7 +289,7 @@
 	},
 
 
-	"NextPictureFile":{
+	"NextPictureFile{}":{
 		"prefix":"NextPictureFile",
 		"body":[
 			"\\NextPictureFile{${1:filename%file}}"
@@ -329,7 +305,7 @@
 	},
 
 
-	"NoLink":{
+	"NoLink{}":{
 		"prefix":"NoLink",
 		"body":[
 			"\\NoLink{${1:section-name}}"
@@ -337,7 +313,7 @@
 	},
 
 
-	"PauseCutAt":{
+	"PauseCutAt{}":{
 		"prefix":"PauseCutAt",
 		"body":[
 			"\\PauseCutAt{${1:section-type}}"
@@ -345,31 +321,7 @@
 	},
 
 
-	"Picture*":{
-		"prefix":"Picture*",
-		"body":[
-			"\\Picture*[${2:replacement-for-text-browsers}]{${1:file-name attributes}}"
-		]
-	},
-
-
-	"Picture*":{
-		"prefix":"Picture*",
-		"body":[
-			"\\Picture*{${1:file-name attributes}}"
-		]
-	},
-
-
-	"Picture":{
-		"prefix":"Picture",
-		"body":[
-			"\\Picture[${2:replacement-for-textual-browser}]{${1:file-name attributes}}"
-		]
-	},
-
-
-	"Picture":{
+	"Picture{}":{
 		"prefix":"Picture",
 		"body":[
 			"\\Picture{${1:file-name attributes}}"
@@ -385,7 +337,7 @@
 	},
 
 
-	"Preamble":{
+	"Preamble{}":{
 		"prefix":"Preamble",
 		"body":[
 			"\\Preamble{${1:TeX4ht options}}"
@@ -409,7 +361,7 @@
 	},
 
 
-	"Ref":{
+	"Ref{}":{
 		"prefix":"Ref",
 		"body":[
 			"\\Ref{${1:label}}"
@@ -433,7 +385,7 @@
 	},
 
 
-	"ScriptCommand":{
+	"ScriptCommand{}{}{}":{
 		"prefix":"ScriptCommand",
 		"body":[
 			"\\ScriptCommand{${1:command}}{${2:prefix}}{${3:postfix}}"
@@ -441,7 +393,7 @@
 	},
 
 
-	"ScriptEnv":{
+	"ScriptEnv{}{}{}":{
 		"prefix":"ScriptEnv",
 		"body":[
 			"\\ScriptEnv{${1:environment}}{${2:prefix}}{${3:postfix}}"
@@ -449,7 +401,7 @@
 	},
 
 
-	"SetBlockProperty":{
+	"SetBlockProperty{}{}{}":{
 		"prefix":"SetBlockProperty",
 		"body":[
 			"\\SetBlockProperty{${1:name}}{${2:attribute-name}}{${3:value}}"
@@ -457,7 +409,7 @@
 	},
 
 
-	"SetTag":{
+	"SetTag{}":{
 		"prefix":"SetTag",
 		"body":[
 			"\\SetTag{${1:name}}"
@@ -505,23 +457,7 @@
 	},
 
 
-	"tableofcontents":{
-		"prefix":"tableofcontents",
-		"body":[
-			"\\tableofcontents[${1:unit1,unit2,...}]"
-		]
-	},
-
-
-	"TableOfContents":{
-		"prefix":"TableOfContents",
-		"body":[
-			"\\TableOfContents[${1:unit1,unit2,...}]"
-		]
-	},
-
-
-	"Tag":{
+	"Tag{}{}":{
 		"prefix":"Tag",
 		"body":[
 			"\\Tag{${1:label}}{${2:content}}"
@@ -553,7 +489,7 @@
 	},
 
 
-	"TocAt":{
+	"TocAt{}":{
 		"prefix":"TocAt",
 		"body":[
 			"\\TocAt{${1:section-type1,section-type2,...}}"
@@ -569,7 +505,7 @@
 	},
 
 
-	"VerbMath":{
+	"VerbMath{}":{
 		"prefix":"VerbMath",
 		"body":[
 			"\\VerbMath{${1:envname}}"
@@ -577,7 +513,7 @@
 	},
 
 
-	"fixmathjaxtoc":{
+	"fixmathjaxtoc{}":{
 		"prefix":"fixmathjaxtoc",
 		"body":[
 			"\\fixmathjaxtoc{${1:math cmd%cmd}}"
@@ -585,7 +521,7 @@
 	},
 
 
-	"NewConfigureOO":{
+	"NewConfigureOO{}":{
 		"prefix":"NewConfigureOO",
 		"body":[
 			"\\NewConfigureOO{${1:configname}}"
@@ -593,7 +529,7 @@
 	},
 
 
-	"ConfigureOO":{
+	"ConfigureOO{}{}":{
 		"prefix":"ConfigureOO",
 		"body":[
 			"\\ConfigureOO{${1:configname}}{${2:configuration}}"
@@ -601,7 +537,7 @@
 	},
 
 
-	"xeuniregisterchar":{
+	"xeuniregisterchar{}":{
 		"prefix":"xeuniregisterchar",
 		"body":[
 			"\\xeuniregisterchar{${1:char-code}}"
@@ -609,7 +545,7 @@
 	},
 
 
-	"xeuniunregisterchar":{
+	"xeuniunregisterchar{}":{
 		"prefix":"xeuniunregisterchar",
 		"body":[
 			"\\xeuniunregisterchar{${1:char-code}}"
@@ -617,7 +553,7 @@
 	},
 
 
-	"xeuniregisterblock":{
+	"xeuniregisterblock{}{}":{
 		"prefix":"xeuniregisterblock",
 		"body":[
 			"\\xeuniregisterblock{${1:char-code1}}{${2:char-code2}}"
@@ -625,7 +561,7 @@
 	},
 
 
-	"xeuniregisterblockhex":{
+	"xeuniregisterblockhex{}{}":{
 		"prefix":"xeuniregisterblockhex",
 		"body":[
 			"\\xeuniregisterblockhex{${1:hex-num1}}{${2:hex-num2}}"
@@ -633,7 +569,7 @@
 	},
 
 
-	"xeuniblockdef":{
+	"xeuniblockdef{}{}":{
 		"prefix":"xeuniblockdef",
 		"body":[
 			"\\xeuniblockdef{${1:name}}{${2:definition}}"
@@ -641,7 +577,7 @@
 	},
 
 
-	"xeuniuseblock":{
+	"xeuniuseblock{}":{
 		"prefix":"xeuniuseblock",
 		"body":[
 			"\\xeuniuseblock{${1:block-name}}"
@@ -649,10 +585,74 @@
 	},
 
 
-	"xenunidelblock":{
+	"xenunidelblock{}":{
 		"prefix":"xenunidelblock",
 		"body":[
 			"\\xenunidelblock{${1:block-name}}"
+		]
+	},
+
+
+	"Picture*[]{}":{
+		"prefix":"*Picture",
+		"body":[
+			"\\Picture*[${2:replacement-for-text-browsers}]{${1:file-name attributes}}"
+		]
+	},
+
+
+	"Picture*{}":{
+		"prefix":"*Picture",
+		"body":[
+			"\\Picture*{${1:file-name attributes}}"
+		]
+	},
+
+
+	"CssFile[]":{
+		"prefix":"CssFile",
+		"body":[
+			"\\CssFile[${1:list of CSS files}]"
+		]
+	},
+
+
+	"Link[]{}{}":{
+		"prefix":"Link",
+		"body":[
+			"\\Link[${3:target-file args}]{${1:target-loc}}{${2:cur-loc}}"
+		]
+	},
+
+
+	"NewConfigure{}[]{}":{
+		"prefix":"NewConfigure",
+		"body":[
+			"\\NewConfigure{${1:name}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"Picture[]{}":{
+		"prefix":"Picture",
+		"body":[
+			"\\Picture[${2:replacement-for-textual-browser}]{${1:file-name attributes}}"
+		]
+	},
+
+
+	"tableofcontents[]":{
+		"prefix":"tableofcontents",
+		"body":[
+			"\\tableofcontents[${1:unit1,unit2,...}]"
+		]
+	},
+
+
+	"TableOfContents[]":{
+		"prefix":"TableOfContents",
+		"body":[
+			"\\TableOfContents[${1:unit1,unit2,...}]"
 		]
 	}
 }

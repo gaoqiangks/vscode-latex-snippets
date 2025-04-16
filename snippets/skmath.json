@@ -105,7 +105,7 @@
 	},
 
 
-	"norm":{
+	"norm{}":{
 		"prefix":"norm",
 		"body":[
 			"\\norm{${1:expr}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"abs":{
+	"abs{}":{
 		"prefix":"abs",
 		"body":[
 			"\\abs{${1:expr}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"d":{
+	"d{}":{
 		"prefix":"d",
 		"body":[
 			"\\d{${1:var%formula}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"pd":{
+	"pd{}{}":{
 		"prefix":"pd",
 		"body":[
 			"\\pd{${1:func%formula}}{${2:var1,var2,...%formula}}"
@@ -137,15 +137,7 @@
 	},
 
 
-	"pd*":{
-		"prefix":"pd*",
-		"body":[
-			"\\pd*{${1:func%formula}}{${2:var1,var2,...%formula}}"
-		]
-	},
-
-
-	"td":{
+	"td{}{}":{
 		"prefix":"td",
 		"body":[
 			"\\td{${1:func%formula}}{${2:var1,var2,...%formula}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"E":{
+	"E{}":{
 		"prefix":"E",
 		"body":[
 			"\\E{${1:expr%formula}}"
@@ -161,15 +153,15 @@
 	},
 
 
-	"P":{
+	"P{}":{
 		"prefix":"P",
 		"body":[
-			"\\P{${1:<expr1>\given<expr2>}}"
+			"\\P{${1:<expr1>\\given<expr2>}}"
 		]
 	},
 
 
-	"var":{
+	"var{}":{
 		"prefix":"var",
 		"body":[
 			"\\var{${1:expr%formula}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"cov":{
+	"cov{}{}":{
 		"prefix":"cov",
 		"body":[
 			"\\cov{${1:expr1%formula}}{${2:expr2%formula}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"sin":{
+	"sin{}":{
 		"prefix":"sin",
 		"body":[
 			"\\sin{${1:expr%formula}}"
@@ -193,15 +185,7 @@
 	},
 
 
-	"sin":{
-		"prefix":"sin",
-		"body":[
-			"\\sin[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"arcsin":{
+	"arcsin{}":{
 		"prefix":"arcsin",
 		"body":[
 			"\\arcsin{${1:expr%formula}}"
@@ -209,15 +193,7 @@
 	},
 
 
-	"arcsin":{
-		"prefix":"arcsin",
-		"body":[
-			"\\arcsin[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"cos":{
+	"cos{}":{
 		"prefix":"cos",
 		"body":[
 			"\\cos{${1:expr%formula}}"
@@ -225,15 +201,7 @@
 	},
 
 
-	"cos":{
-		"prefix":"cos",
-		"body":[
-			"\\cos[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"arccos":{
+	"arccos{}":{
 		"prefix":"arccos",
 		"body":[
 			"\\arccos{${1:expr%formula}}"
@@ -241,15 +209,7 @@
 	},
 
 
-	"arccos":{
-		"prefix":"arccos",
-		"body":[
-			"\\arccos[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"tan":{
+	"tan{}":{
 		"prefix":"tan",
 		"body":[
 			"\\tan{${1:expr%formula}}"
@@ -257,15 +217,7 @@
 	},
 
 
-	"tan":{
-		"prefix":"tan",
-		"body":[
-			"\\tan[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"arctan":{
+	"arctan{}":{
 		"prefix":"arctan",
 		"body":[
 			"\\arctan{${1:expr%formula}}"
@@ -273,15 +225,7 @@
 	},
 
 
-	"arctan":{
-		"prefix":"arctan",
-		"body":[
-			"\\arctan[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"cot":{
+	"cot{}":{
 		"prefix":"cot",
 		"body":[
 			"\\cot{${1:expr%formula}}"
@@ -289,15 +233,7 @@
 	},
 
 
-	"cot":{
-		"prefix":"cot",
-		"body":[
-			"\\cot[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"sinh":{
+	"sinh{}":{
 		"prefix":"sinh",
 		"body":[
 			"\\sinh{${1:expr%formula}}"
@@ -305,15 +241,7 @@
 	},
 
 
-	"sinh":{
-		"prefix":"sinh",
-		"body":[
-			"\\sinh[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"cosh":{
+	"cosh{}":{
 		"prefix":"cosh",
 		"body":[
 			"\\cosh{${1:expr%formula}}"
@@ -321,15 +249,7 @@
 	},
 
 
-	"cosh":{
-		"prefix":"cosh",
-		"body":[
-			"\\cosh[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"tanh":{
+	"tanh{}":{
 		"prefix":"tanh",
 		"body":[
 			"\\tanh{${1:expr%formula}}"
@@ -337,15 +257,7 @@
 	},
 
 
-	"tanh":{
-		"prefix":"tanh",
-		"body":[
-			"\\tanh[${2:power%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"ln":{
+	"ln{}":{
 		"prefix":"ln",
 		"body":[
 			"\\ln{${1:expr%formula}}"
@@ -353,7 +265,7 @@
 	},
 
 
-	"log":{
+	"log{}":{
 		"prefix":"log",
 		"body":[
 			"\\log{${1:expr%formula}}"
@@ -361,15 +273,7 @@
 	},
 
 
-	"log":{
-		"prefix":"log",
-		"body":[
-			"\\log[${2:base%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"exp":{
+	"exp{}":{
 		"prefix":"exp",
 		"body":[
 			"\\exp{${1:expr%formula}}"
@@ -377,15 +281,7 @@
 	},
 
 
-	"exp*":{
-		"prefix":"exp*",
-		"body":[
-			"\\exp*{${1:expr%formula}}"
-		]
-	},
-
-
-	"min":{
+	"min{}":{
 		"prefix":"min",
 		"body":[
 			"\\min{${1:expr%formula}}"
@@ -393,31 +289,7 @@
 	},
 
 
-	"min":{
-		"prefix":"min",
-		"body":[
-			"\\min[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"min*":{
-		"prefix":"min*",
-		"body":[
-			"\\min*{${1:expr%formula}}"
-		]
-	},
-
-
-	"min*":{
-		"prefix":"min*",
-		"body":[
-			"\\min*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmin":{
+	"argmin{}":{
 		"prefix":"argmin",
 		"body":[
 			"\\argmin{${1:expr%formula}}"
@@ -425,31 +297,7 @@
 	},
 
 
-	"argmin":{
-		"prefix":"argmin",
-		"body":[
-			"\\argmin[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmin*":{
-		"prefix":"argmin*",
-		"body":[
-			"\\argmin*{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmin*":{
-		"prefix":"argmin*",
-		"body":[
-			"\\argmin*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"max":{
+	"max{}":{
 		"prefix":"max",
 		"body":[
 			"\\max{${1:expr%formula}}"
@@ -457,31 +305,7 @@
 	},
 
 
-	"max":{
-		"prefix":"max",
-		"body":[
-			"\\max[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"max*":{
-		"prefix":"max*",
-		"body":[
-			"\\max*{${1:expr%formula}}"
-		]
-	},
-
-
-	"max*":{
-		"prefix":"max*",
-		"body":[
-			"\\max*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmax":{
+	"argmax{}":{
 		"prefix":"argmax",
 		"body":[
 			"\\argmax{${1:expr%formula}}"
@@ -489,31 +313,7 @@
 	},
 
 
-	"argmax":{
-		"prefix":"argmax",
-		"body":[
-			"\\argmax[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmax*":{
-		"prefix":"argmax*",
-		"body":[
-			"\\argmax*{${1:expr%formula}}"
-		]
-	},
-
-
-	"argmax*":{
-		"prefix":"argmax*",
-		"body":[
-			"\\argmax*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"sup":{
+	"sup{}":{
 		"prefix":"sup",
 		"body":[
 			"\\sup{${1:expr%formula}}"
@@ -521,31 +321,7 @@
 	},
 
 
-	"sup":{
-		"prefix":"sup",
-		"body":[
-			"\\sup[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"sup*":{
-		"prefix":"sup*",
-		"body":[
-			"\\sup*{${1:expr%formula}}"
-		]
-	},
-
-
-	"sup*":{
-		"prefix":"sup*",
-		"body":[
-			"\\sup*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"inf":{
+	"inf{}":{
 		"prefix":"inf",
 		"body":[
 			"\\inf{${1:expr%formula}}"
@@ -553,31 +329,7 @@
 	},
 
 
-	"inf":{
-		"prefix":"inf",
-		"body":[
-			"\\inf[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"inf*":{
-		"prefix":"inf*",
-		"body":[
-			"\\inf*{${1:expr%formula}}"
-		]
-	},
-
-
-	"inf*":{
-		"prefix":"inf*",
-		"body":[
-			"\\inf*[${2:domain%formula}]{${1:expr%formula}}"
-		]
-	},
-
-
-	"Re":{
+	"Re{}":{
 		"prefix":"Re",
 		"body":[
 			"\\Re{${1:expr%formula}}"
@@ -585,10 +337,258 @@
 	},
 
 
-	"Im":{
+	"Im{}":{
 		"prefix":"Im",
 		"body":[
 			"\\Im{${1:expr%formula}}"
+		]
+	},
+
+
+	"pd*{}{}":{
+		"prefix":"*pd",
+		"body":[
+			"\\pd*{${1:func%formula}}{${2:var1,var2,...%formula}}"
+		]
+	},
+
+
+	"exp*{}":{
+		"prefix":"*exp",
+		"body":[
+			"\\exp*{${1:expr%formula}}"
+		]
+	},
+
+
+	"min*{}":{
+		"prefix":"*min",
+		"body":[
+			"\\min*{${1:expr%formula}}"
+		]
+	},
+
+
+	"min*[]{}":{
+		"prefix":"*min",
+		"body":[
+			"\\min*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmin*{}":{
+		"prefix":"*argmin",
+		"body":[
+			"\\argmin*{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmin*[]{}":{
+		"prefix":"*argmin",
+		"body":[
+			"\\argmin*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"max*{}":{
+		"prefix":"*max",
+		"body":[
+			"\\max*{${1:expr%formula}}"
+		]
+	},
+
+
+	"max*[]{}":{
+		"prefix":"*max",
+		"body":[
+			"\\max*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmax*{}":{
+		"prefix":"*argmax",
+		"body":[
+			"\\argmax*{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmax*[]{}":{
+		"prefix":"*argmax",
+		"body":[
+			"\\argmax*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"sup*{}":{
+		"prefix":"*sup",
+		"body":[
+			"\\sup*{${1:expr%formula}}"
+		]
+	},
+
+
+	"sup*[]{}":{
+		"prefix":"*sup",
+		"body":[
+			"\\sup*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"inf*{}":{
+		"prefix":"*inf",
+		"body":[
+			"\\inf*{${1:expr%formula}}"
+		]
+	},
+
+
+	"inf*[]{}":{
+		"prefix":"*inf",
+		"body":[
+			"\\inf*[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"sin[]{}":{
+		"prefix":"sin",
+		"body":[
+			"\\sin[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"arcsin[]{}":{
+		"prefix":"arcsin",
+		"body":[
+			"\\arcsin[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"cos[]{}":{
+		"prefix":"cos",
+		"body":[
+			"\\cos[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"arccos[]{}":{
+		"prefix":"arccos",
+		"body":[
+			"\\arccos[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"tan[]{}":{
+		"prefix":"tan",
+		"body":[
+			"\\tan[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"arctan[]{}":{
+		"prefix":"arctan",
+		"body":[
+			"\\arctan[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"cot[]{}":{
+		"prefix":"cot",
+		"body":[
+			"\\cot[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"sinh[]{}":{
+		"prefix":"sinh",
+		"body":[
+			"\\sinh[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"cosh[]{}":{
+		"prefix":"cosh",
+		"body":[
+			"\\cosh[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"tanh[]{}":{
+		"prefix":"tanh",
+		"body":[
+			"\\tanh[${2:power%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"log[]{}":{
+		"prefix":"log",
+		"body":[
+			"\\log[${2:base%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"min[]{}":{
+		"prefix":"min",
+		"body":[
+			"\\min[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmin[]{}":{
+		"prefix":"argmin",
+		"body":[
+			"\\argmin[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"max[]{}":{
+		"prefix":"max",
+		"body":[
+			"\\max[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"argmax[]{}":{
+		"prefix":"argmax",
+		"body":[
+			"\\argmax[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"sup[]{}":{
+		"prefix":"sup",
+		"body":[
+			"\\sup[${2:domain%formula}]{${1:expr%formula}}"
+		]
+	},
+
+
+	"inf[]{}":{
+		"prefix":"inf",
+		"body":[
+			"\\inf[${2:domain%formula}]{${1:expr%formula}}"
 		]
 	}
 }

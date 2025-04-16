@@ -1,7 +1,7 @@
 {
 
 
-	"bohr":{
+	"bohr{}{}":{
 		"prefix":"bohr",
 		"body":[
 			"\\bohr{${1:num of electrons}}{${2:atom name}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"bohr":{
-		"prefix":"bohr",
+	"setbohr{}":{
+		"prefix":"setbohr",
 		"body":[
-			"\\bohr[${3:num of shells}]{${1:num of electrons}}{${2:atom name}}"
+			"\\setbohr{${1:options%keyvals}}"
 		]
 	},
 
 
-	"setbohr":{
-		"prefix":"setbohr",
+	"bohr[]{}{}":{
+		"prefix":"bohr",
 		"body":[
-			"\\setbohr{${1:options%keyvals}}"
+			"\\bohr[${3:num of shells}]{${1:num of electrons}}{${2:atom name}}"
 		]
 	}
 }

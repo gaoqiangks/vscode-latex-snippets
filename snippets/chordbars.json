@@ -1,7 +1,7 @@
 {
 
 
-	"addHalfBar":{
+	"addHalfBar{}":{
 		"prefix":"addHalfBar",
 		"body":[
 			"\\addHalfBar{${1:note}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"addMeasures":{
+	"addMeasures{}":{
 		"prefix":"addMeasures",
 		"body":[
 			"\\addMeasures{${1:number}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"bpm":{
+	"bpm{}":{
 		"prefix":"bpm",
 		"body":[
 			"\\bpm{${1:number}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"chordf":{
+	"chordf{}":{
 		"prefix":"chordf",
 		"body":[
 			"\\chordf{${1:note}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"chordh":{
+	"chordh{}{}":{
 		"prefix":"chordh",
 		"body":[
 			"\\chordh{${1:note1}}{${2:note2}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"chordline":{
+	"chordline{}{}{}":{
 		"prefix":"chordline",
 		"body":[
 			"\\chordline{${1:note}}{${2:num of bars}}{${3:name}}"
@@ -201,11 +201,21 @@
 	},
 
 
+	"chordbar":{
+		"prefix":"chordbar",
+		"body":[
+			"\\begin{chordbar}",
+				"\t$1",
+			"\\end{chordbar}"
+		]
+	},
+
+
 	"chordbar*":{
-		"prefix":"chordbar*",
+		"prefix":"chordbar",
 		"body":[
 			"\\begin{chordbar*}",
-			"\t$1",
+				"\t$1",
 			"\\end{chordbar*}"
 		]
 	},
@@ -215,8 +225,18 @@
 		"prefix":"chordbar",
 		"body":[
 			"\\begin{chordbar}",
-			"\t$1",
+				"\t$1",
 			"\\end{chordbar}"
+		]
+	},
+
+
+	"chordbar*":{
+		"prefix":"chordbar",
+		"body":[
+			"\\begin{chordbar*}",
+				"\t$1",
+			"\\end{chordbar*}"
 		]
 	}
 }

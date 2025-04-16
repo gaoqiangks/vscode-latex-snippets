@@ -1,7 +1,7 @@
 {
 
 
-	"abs":{
+	"abs{}":{
 		"prefix":"abs",
 		"body":[
 			"\\abs{${1:arg}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"cmmathcal":{
+	"cmmathcal{}":{
 		"prefix":"cmmathcal",
 		"body":[
 			"\\cmmathcal{${1:letter}}"
@@ -289,14 +289,6 @@
 	},
 
 
-	"eqdef*":{
-		"prefix":"eqdef*",
-		"body":[
-			"\\eqdef*"
-		]
-	},
-
-
 	"erf":{
 		"prefix":"erf",
 		"body":[
@@ -321,7 +313,7 @@
 	},
 
 
-	"hlbar":{
+	"hlbar{}":{
 		"prefix":"hlbar",
 		"body":[
 			"\\hlbar{${1:arg}}"
@@ -329,7 +321,7 @@
 	},
 
 
-	"hvec":{
+	"hvec{}":{
 		"prefix":"hvec",
 		"body":[
 			"\\hvec{${1:arg}}"
@@ -337,7 +329,7 @@
 	},
 
 
-	"hvect":{
+	"hvect{}":{
 		"prefix":"hvect",
 		"body":[
 			"\\hvect{${1:arg}}"
@@ -401,7 +393,7 @@
 	},
 
 
-	"lbar":{
+	"lbar{}":{
 		"prefix":"lbar",
 		"body":[
 			"\\lbar{${1:arg}}"
@@ -417,7 +409,7 @@
 	},
 
 
-	"lfrac":{
+	"lfrac{}{}":{
 		"prefix":"lfrac",
 		"body":[
 			"\\lfrac{${1:numerator}}{${2:denominator}}"
@@ -433,7 +425,7 @@
 	},
 
 
-	"mathbfsfit":{
+	"mathbfsfit{}":{
 		"prefix":"mathbfsfit",
 		"body":[
 			"\\mathbfsfit{${1:text%plain}}"
@@ -441,7 +433,7 @@
 	},
 
 
-	"MathFamily":{
+	"MathFamily{}{}":{
 		"prefix":"MathFamily",
 		"body":[
 			"\\MathFamily{${1:char}}{${2:num}}"
@@ -449,7 +441,7 @@
 	},
 
 
-	"MathIt":{
+	"MathIt{}":{
 		"prefix":"MathIt",
 		"body":[
 			"\\MathIt{${1:char}}"
@@ -457,7 +449,7 @@
 	},
 
 
-	"MathNormal":{
+	"MathNormal{}":{
 		"prefix":"MathNormal",
 		"body":[
 			"\\MathNormal{${1:chars}}"
@@ -465,7 +457,7 @@
 	},
 
 
-	"MathNumbers":{
+	"MathNumbers{}":{
 		"prefix":"MathNumbers",
 		"body":[
 			"\\MathNumbers{${1:chars}}"
@@ -473,7 +465,7 @@
 	},
 
 
-	"MathProba":{
+	"MathProba{}":{
 		"prefix":"MathProba",
 		"body":[
 			"\\MathProba{${1:chars}}"
@@ -481,7 +473,7 @@
 	},
 
 
-	"mathset":{
+	"mathset{}":{
 		"prefix":"mathset",
 		"body":[
 			"\\mathset{${1:text%plain}}"
@@ -489,7 +481,7 @@
 	},
 
 
-	"MathUp":{
+	"MathUp{}":{
 		"prefix":"MathUp",
 		"body":[
 			"\\MathUp{${1:char}}"
@@ -497,7 +489,7 @@
 	},
 
 
-	"mathup":{
+	"mathup{}":{
 		"prefix":"mathup",
 		"body":[
 			"\\mathup{${1:text%plain}}"
@@ -521,7 +513,7 @@
 	},
 
 
-	"norm":{
+	"norm{}":{
 		"prefix":"norm",
 		"body":[
 			"\\norm{${1:arg}}"
@@ -569,7 +561,7 @@
 	},
 
 
-	"pifonts":{
+	"pifonts{}":{
 		"prefix":"pifonts",
 		"body":[
 			"\\pifonts{${1:options%keyvals}}"
@@ -593,15 +585,7 @@
 	},
 
 
-	"pinumber":{
-		"prefix":"pinumber",
-		"body":[
-			"\\pinumber[${1:option%keyvals}]"
-		]
-	},
-
-
-	"pow":{
+	"pow{}{}":{
 		"prefix":"pow",
 		"body":[
 			"\\pow{${1:expr}}{${2:exponent}}"
@@ -713,7 +697,7 @@
 	},
 
 
-	"txt":{
+	"txt{}":{
 		"prefix":"txt",
 		"body":[
 			"\\txt{${1:text}}"
@@ -721,7 +705,7 @@
 	},
 
 
-	"unbr":{
+	"unbr{}":{
 		"prefix":"unbr",
 		"body":[
 			"\\unbr{${1:arg}}"
@@ -753,7 +737,7 @@
 	},
 
 
-	"vect":{
+	"vect{}":{
 		"prefix":"vect",
 		"body":[
 			"\\vect{${1:arg}}"
@@ -833,12 +817,18 @@
 	},
 
 
-	"spmatrix":{
-		"prefix":"spmatrix",
+	"eqdef*":{
+		"prefix":"*eqdef",
 		"body":[
-			"\\begin{spmatrix}",
-			"\t$1",
-			"\\end{spmatrix}"
+			"\\eqdef*"
+		]
+	},
+
+
+	"pinumber[]":{
+		"prefix":"pinumber",
+		"body":[
+			"\\pinumber[${1:option%keyvals}]"
 		]
 	},
 
@@ -847,8 +837,18 @@
 		"prefix":"system",
 		"body":[
 			"\\begin{system}",
-			"\t$1",
+				"\t$1",
 			"\\end{system}"
+		]
+	},
+
+
+	"spmatrix":{
+		"prefix":"spmatrix",
+		"body":[
+			"\\begin{spmatrix}",
+				"\t$1",
+			"\\end{spmatrix}"
 		]
 	},
 
@@ -857,8 +857,18 @@
 		"prefix":"mathcols",
 		"body":[
 			"\\begin{mathcols}",
-			"\t$1",
+				"\t$1",
 			"\\end{mathcols}"
+		]
+	},
+
+
+	"system":{
+		"prefix":"system",
+		"body":[
+			"\\begin{system}",
+				"\t$1",
+			"\\end{system}"
 		]
 	}
 }

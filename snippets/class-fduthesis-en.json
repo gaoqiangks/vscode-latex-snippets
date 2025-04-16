@@ -1,7 +1,7 @@
 {
 
 
-	"fdusetup":{
+	"fdusetup{}":{
 		"prefix":"fdusetup",
 		"body":[
 			"\\fdusetup{${1:keyvals}}"
@@ -33,31 +33,7 @@
 	},
 
 
-	"newtheorem":{
-		"prefix":"newtheorem",
-		"body":[
-			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"DeclareCoverTemplate":{
+	"DeclareCoverTemplate{}{}":{
 		"prefix":"DeclareCoverTemplate",
 		"body":[
 			"\\DeclareCoverTemplate{${1:arg1}}{${2:arg2}}"
@@ -65,10 +41,94 @@
 	},
 
 
-	"theoremsymbol":{
+	"theoremsymbol{}":{
 		"prefix":"theoremsymbol",
 		"body":[
 			"\\theoremsymbol{${1:symbol}}"
+		]
+	},
+
+
+	"newtheorem*{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
+		]
+	},
+
+
+	"newtheorem*[]{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
+		]
+	},
+
+
+	"newtheorem[]{}{}":{
+		"prefix":"newtheorem",
+		"body":[
+			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
+		]
+	},
+
+
+	"notation":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
+		]
+	},
+
+
+	"acknowledgements":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
 		]
 	},
 
@@ -77,7 +137,7 @@
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
 		]
 	},
@@ -87,38 +147,8 @@
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-			"\t$1",
+				"\t$1",
 			"\\end{proof}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"notation":{
-		"prefix":"notation",
-		"body":[
-			"\\begin{notation}",
-			"\t$1",
-			"\\end{notation}"
 		]
 	},
 
@@ -127,18 +157,18 @@
 		"prefix":"theorem",
 		"body":[
 			"\\begin{theorem}",
-			"\t$1",
+				"\t$1",
 			"\\end{theorem}"
 		]
 	},
 
 
-	"definition":{
-		"prefix":"definition",
+	"notation":{
+		"prefix":"notation",
 		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
 		]
 	},
 
@@ -147,18 +177,68 @@
 		"prefix":"axiom",
 		"body":[
 			"\\begin{axiom}",
-			"\t$1",
+				"\t$1",
 			"\\end{axiom}"
 		]
 	},
 
 
-	"acknowledgements":{
-		"prefix":"acknowledgements",
+	"corollary":{
+		"prefix":"corollary",
 		"body":[
-			"\\begin{acknowledgements}",
-			"\t$1",
-			"\\end{acknowledgements}"
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
 		]
 	}
 }

@@ -17,7 +17,7 @@
 	},
 
 
-	"parttext":{
+	"parttext{}":{
 		"prefix":"parttext",
 		"body":[
 			"\\parttext{${1:text}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"IndexHeading":{
+	"IndexHeading{}":{
 		"prefix":"IndexHeading",
 		"body":[
 			"\\IndexHeading{${1:text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"keywords":{
+	"keywords{}":{
 		"prefix":"keywords",
 		"body":[
 			"\\keywords{${1:keywords%text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"dedicatory":{
+	"dedicatory{}":{
 		"prefix":"dedicatory",
 		"body":[
 			"\\dedicatory{${1:text}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"subjclass":{
+	"subjclass{}":{
 		"prefix":"subjclass",
 		"body":[
 			"\\subjclass{${1:classification}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"subjclass":{
+	"subjclass[]{}":{
 		"prefix":"subjclass",
 		"body":[
 			"\\subjclass[${2:year}]{${1:classification}}"
@@ -125,18 +125,8 @@
 		"prefix":"keyword",
 		"body":[
 			"\\begin{keyword}",
-			"\t$1",
+				"\t$1",
 			"\\end{keyword}"
-		]
-	},
-
-
-	"description*":{
-		"prefix":"description*",
-		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
 		]
 	},
 
@@ -145,28 +135,68 @@
 		"prefix":"emphasis",
 		"body":[
 			"\\begin{emphasis}",
-			"\t$1",
+				"\t$1",
 			"\\end{emphasis}"
 		]
 	},
 
 
+	"enumerate*":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
 	"itemize*":{
-		"prefix":"itemize*",
+		"prefix":"*itemize",
 		"body":[
 			"\\begin{itemize*}",
-			"\t$1",
+				"\t$1",
 			"\\end{itemize*}"
 		]
 	},
 
 
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
 	"enumerate*":{
-		"prefix":"enumerate*",
+		"prefix":"enumerate",
 		"body":[
 			"\\begin{enumerate*}",
-			"\t$1",
+				"\t$1",
 			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

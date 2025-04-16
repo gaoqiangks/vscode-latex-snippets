@@ -9,15 +9,7 @@
 	},
 
 
-	"scoped":{
-		"prefix":"scoped",
-		"body":[
-			"\\scoped[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tikzset":{
+	"tikzset{}":{
 		"prefix":"tikzset",
 		"body":[
 			"\\tikzset{${1:options%keyvals}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"tikzoption":{
+	"tikzoption{}{}":{
 		"prefix":"tikzoption",
 		"body":[
 			"\\tikzoption{${1:key%plain}}{${2:value}}"
@@ -73,15 +65,7 @@
 	},
 
 
-	"tikz":{
-		"prefix":"tikz",
-		"body":[
-			"\\tikz[${1:options%keyvals}]"
-		]
-	},
-
-
-	"tikzdeclarecoordinatesystem":{
+	"tikzdeclarecoordinatesystem{}{}":{
 		"prefix":"tikzdeclarecoordinatesystem",
 		"body":[
 			"\\tikzdeclarecoordinatesystem{${1:name}}{${2:code}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"tikzaliascoordinatesystem":{
+	"tikzaliascoordinatesystem{}{}":{
 		"prefix":"tikzaliascoordinatesystem",
 		"body":[
 			"\\tikzaliascoordinatesystem{${1:new name}}{${2:old name}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"tikzifinpicture":{
+	"tikzifinpicture{}{}":{
 		"prefix":"tikzifinpicture",
 		"body":[
 			"\\tikzifinpicture{${1:in code}}{${2:out code}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"tikzaddtikzonlycommandshortcutlet":{
+	"tikzaddtikzonlycommandshortcutlet{}{}":{
 		"prefix":"tikzaddtikzonlycommandshortcutlet",
 		"body":[
 			"\\tikzaddtikzonlycommandshortcutlet{${1:short cmd%cmd}}{${2:cmd}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"tikzaddtikzonlycommandshortcutdef":{
+	"tikzaddtikzonlycommandshortcutdef{}{}":{
 		"prefix":"tikzaddtikzonlycommandshortcutdef",
 		"body":[
 			"\\tikzaddtikzonlycommandshortcutdef{${1:short cmd%cmd}}{${2:def}}"
@@ -121,7 +105,7 @@
 	},
 
 
-	"nodepart":{
+	"nodepart{}":{
 		"prefix":"nodepart",
 		"body":[
 			"\\nodepart{${1:part name}}"
@@ -129,15 +113,7 @@
 	},
 
 
-	"nodepart":{
-		"prefix":"nodepart",
-		"body":[
-			"\\nodepart[${2:options%keyvals}]{${1:part name}}"
-		]
-	},
-
-
-	"pgfextra":{
+	"pgfextra{}":{
 		"prefix":"pgfextra",
 		"body":[
 			"\\pgfextra{${1:code}}"
@@ -241,7 +217,7 @@
 	},
 
 
-	"usetikzlibrary":{
+	"usetikzlibrary{}":{
 		"prefix":"usetikzlibrary",
 		"body":[
 			"\\usetikzlibrary{${1:library list%keyvals}}"
@@ -257,7 +233,7 @@
 	},
 
 
-	"pgfsetplottension":{
+	"pgfsetplottension{}":{
 		"prefix":"pgfsetplottension",
 		"body":[
 			"\\pgfsetplottension{${1:tension}}"
@@ -337,7 +313,7 @@
 	},
 
 
-	"pgfplotxzerolevelstreamconstant":{
+	"pgfplotxzerolevelstreamconstant{}":{
 		"prefix":"pgfplotxzerolevelstreamconstant",
 		"body":[
 			"\\pgfplotxzerolevelstreamconstant{${1:dimen%l}}"
@@ -345,7 +321,7 @@
 	},
 
 
-	"pgfplotyzerolevelstreamconstant":{
+	"pgfplotyzerolevelstreamconstant{}":{
 		"prefix":"pgfplotyzerolevelstreamconstant",
 		"body":[
 			"\\pgfplotyzerolevelstreamconstant{${1:dimen%l}}"
@@ -457,7 +433,7 @@
 	},
 
 
-	"pgfplothandlermark":{
+	"pgfplothandlermark{}":{
 		"prefix":"pgfplothandlermark",
 		"body":[
 			"\\pgfplothandlermark{${1:mark code}}"
@@ -465,7 +441,7 @@
 	},
 
 
-	"pgfsetplotmarkrepeat":{
+	"pgfsetplotmarkrepeat{}":{
 		"prefix":"pgfsetplotmarkrepeat",
 		"body":[
 			"\\pgfsetplotmarkrepeat{${1:repeat count}}"
@@ -473,7 +449,7 @@
 	},
 
 
-	"pgfsetplotmarkphase":{
+	"pgfsetplotmarkphase{}":{
 		"prefix":"pgfsetplotmarkphase",
 		"body":[
 			"\\pgfsetplotmarkphase{${1:index}}"
@@ -481,7 +457,7 @@
 	},
 
 
-	"pgfplothandlermarklisted":{
+	"pgfplothandlermarklisted{}{}":{
 		"prefix":"pgfplothandlermarklisted",
 		"body":[
 			"\\pgfplothandlermarklisted{${1:code}}{${2:positions}}"
@@ -489,7 +465,7 @@
 	},
 
 
-	"pgfdeclareplotmark":{
+	"pgfdeclareplotmark{}{}":{
 		"prefix":"pgfdeclareplotmark",
 		"body":[
 			"\\pgfdeclareplotmark{${1:name}}{${2:code}}"
@@ -497,7 +473,7 @@
 	},
 
 
-	"pgfsetplotmarksize":{
+	"pgfsetplotmarksize{}":{
 		"prefix":"pgfsetplotmarksize",
 		"body":[
 			"\\pgfsetplotmarksize{${1:size%l}}"
@@ -513,7 +489,7 @@
 	},
 
 
-	"pgfuseplotmark":{
+	"pgfuseplotmark{}":{
 		"prefix":"pgfuseplotmark",
 		"body":[
 			"\\pgfuseplotmark{${1:name}}"
@@ -553,7 +529,7 @@
 	},
 
 
-	"pgfmatrixbeforeassemblenode":{
+	"pgfmatrixbeforeassemblenode{}":{
 		"prefix":"pgfmatrixbeforeassemblenode",
 		"body":[
 			"\\pgfmatrixbeforeassemblenode{${1:code}}"
@@ -561,7 +537,7 @@
 	},
 
 
-	"pgfsetmatrixrowsep":{
+	"pgfsetmatrixrowsep{}":{
 		"prefix":"pgfsetmatrixrowsep",
 		"body":[
 			"\\pgfsetmatrixrowsep{${1:sep list}}"
@@ -569,7 +545,7 @@
 	},
 
 
-	"pgfsetmatrixcolumnsep":{
+	"pgfsetmatrixcolumnsep{}":{
 		"prefix":"pgfsetmatrixcolumnsep",
 		"body":[
 			"\\pgfsetmatrixcolumnsep{${1:sep list}}"
@@ -593,7 +569,7 @@
 	},
 
 
-	"pgfmatrix":{
+	"pgfmatrix{}{}{}{}{}{}{}":{
 		"prefix":"pgfmatrix",
 		"body":[
 			"\\pgfmatrix{${1:shape}}{${2:anchor}}{${3:name}}{${4:usage}}{${5:shift}}{${6:precode}}{${7:matrix cells}}"
@@ -605,14 +581,6 @@
 		"prefix":"pgfmatrixnextcell",
 		"body":[
 			"\\pgfmatrixnextcell"
-		]
-	},
-
-
-	"pgfmatrixnextcell":{
-		"prefix":"pgfmatrixnextcell",
-		"body":[
-			"\\pgfmatrixnextcell[${1:additional sep list}]"
 		]
 	},
 
@@ -649,7 +617,39 @@
 	},
 
 
-	"pgfmatrixendrow":{
+	"scoped[]":{
+		"prefix":"scoped",
+		"body":[
+			"\\scoped[${1:options%keyvals}]"
+		]
+	},
+
+
+	"tikz[]":{
+		"prefix":"tikz",
+		"body":[
+			"\\tikz[${1:options%keyvals}]"
+		]
+	},
+
+
+	"nodepart[]{}":{
+		"prefix":"nodepart",
+		"body":[
+			"\\nodepart[${2:options%keyvals}]{${1:part name}}"
+		]
+	},
+
+
+	"pgfmatrixnextcell[]":{
+		"prefix":"pgfmatrixnextcell",
+		"body":[
+			"\\pgfmatrixnextcell[${1:additional sep list}]"
+		]
+	},
+
+
+	"pgfmatrixendrow[]":{
 		"prefix":"pgfmatrixendrow",
 		"body":[
 			"\\pgfmatrixendrow[${1:additional sep list}]"
@@ -661,7 +661,7 @@
 		"prefix":"scope",
 		"body":[
 			"\\begin{scope}",
-			"\t$1",
+				"\t$1",
 			"\\end{scope}"
 		]
 	},
@@ -671,7 +671,27 @@
 		"prefix":"tikzpicture",
 		"body":[
 			"\\begin{tikzpicture}",
-			"\t$1",
+				"\t$1",
+			"\\end{tikzpicture}"
+		]
+	},
+
+
+	"scope":{
+		"prefix":"scope",
+		"body":[
+			"\\begin{scope}",
+				"\t$1",
+			"\\end{scope}"
+		]
+	},
+
+
+	"tikzpicture":{
+		"prefix":"tikzpicture",
+		"body":[
+			"\\begin{tikzpicture}",
+				"\t$1",
 			"\\end{tikzpicture}"
 		]
 	}

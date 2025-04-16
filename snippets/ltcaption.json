@@ -74,10 +74,20 @@
 
 
 	"longtable*":{
-		"prefix":"longtable*",
+		"prefix":"longtable",
 		"body":[
 			"\\begin{longtable*}",
-			"\t$1",
+				"\t$1",
+			"\\end{longtable*}"
+		]
+	},
+
+
+	"longtable*":{
+		"prefix":"longtable",
+		"body":[
+			"\\begin{longtable*}",
+				"\t$1",
 			"\\end{longtable*}"
 		]
 	}

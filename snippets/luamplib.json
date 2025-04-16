@@ -25,14 +25,6 @@
 	},
 
 
-	"mpfig*":{
-		"prefix":"mpfig*",
-		"body":[
-			"\\mpfig*"
-		]
-	},
-
-
 	"endmpfig":{
 		"prefix":"endmpfig",
 		"body":[
@@ -49,7 +41,7 @@
 	},
 
 
-	"mpliblegacybehavior":{
+	"mpliblegacybehavior{}":{
 		"prefix":"mpliblegacybehavior",
 		"body":[
 			"\\mpliblegacybehavior{${1:choice%keyvals}}"
@@ -105,7 +97,7 @@
 	},
 
 
-	"everymplib":{
+	"everymplib{}":{
 		"prefix":"everymplib",
 		"body":[
 			"\\everymplib{${1:MetaPost code%definition}}"
@@ -113,15 +105,7 @@
 	},
 
 
-	"everymplib":{
-		"prefix":"everymplib",
-		"body":[
-			"\\everymplib[${2:instance name}]{${1:MetaPost code%definition}}"
-		]
-	},
-
-
-	"everyendmplib":{
+	"everyendmplib{}":{
 		"prefix":"everyendmplib",
 		"body":[
 			"\\everyendmplib{${1:MetaPost code%definition}}"
@@ -129,15 +113,7 @@
 	},
 
 
-	"everyendmplib":{
-		"prefix":"everyendmplib",
-		"body":[
-			"\\everyendmplib[${2:instance name}]{${1:MetaPost code%definition}}"
-		]
-	},
-
-
-	"mpdim":{
+	"mpdim{}":{
 		"prefix":"mpdim",
 		"body":[
 			"\\mpdim{${1:dimen%l}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"mpcolor":{
+	"mpcolor{}":{
 		"prefix":"mpcolor",
 		"body":[
 			"\\mpcolor{${1:color}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"mplibnumbersystem":{
+	"mplibnumbersystem{}":{
 		"prefix":"mplibnumbersystem",
 		"body":[
 			"\\mplibnumbersystem{${1:type%keyvals}}"
@@ -161,7 +137,7 @@
 	},
 
 
-	"mplibmakenocache":{
+	"mplibmakenocache{}":{
 		"prefix":"mplibmakenocache",
 		"body":[
 			"\\mplibmakenocache{${1:file1,file2,...%file}}"
@@ -169,7 +145,7 @@
 	},
 
 
-	"mplibcancelnocache":{
+	"mplibcancelnocache{}":{
 		"prefix":"mplibcancelnocache",
 		"body":[
 			"\\mplibcancelnocache{${1:file1,file2,...%file}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"mplibcachedir":{
+	"mplibcachedir{}":{
 		"prefix":"mplibcachedir",
 		"body":[
 			"\\mplibcachedir{${1:directory path%definition}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"mplibtextextlabel":{
+	"mplibtextextlabel{}":{
 		"prefix":"mplibtextextlabel",
 		"body":[
 			"\\mplibtextextlabel{${1:choice%keyvals}}"
@@ -193,7 +169,7 @@
 	},
 
 
-	"mplibcodeinherit":{
+	"mplibcodeinherit{}":{
 		"prefix":"mplibcodeinherit",
 		"body":[
 			"\\mplibcodeinherit{${1:choice%keyvals}}"
@@ -209,7 +185,7 @@
 	},
 
 
-	"mplibglobaltextext":{
+	"mplibglobaltextext{}":{
 		"prefix":"mplibglobaltextext",
 		"body":[
 			"\\mplibglobaltextext{${1:choice%keyvals}}"
@@ -217,7 +193,7 @@
 	},
 
 
-	"mplibverbatim":{
+	"mplibverbatim{}":{
 		"prefix":"mplibverbatim",
 		"body":[
 			"\\mplibverbatim{${1:choice%keyvals}}"
@@ -225,7 +201,7 @@
 	},
 
 
-	"mplibshowlog":{
+	"mplibshowlog{}":{
 		"prefix":"mplibshowlog",
 		"body":[
 			"\\mplibshowlog{${1:choice%keyvals}}"
@@ -233,7 +209,7 @@
 	},
 
 
-	"mplibsetformat":{
+	"mplibsetformat{}":{
 		"prefix":"mplibsetformat",
 		"body":[
 			"\\mplibsetformat{${1:format name%keyvals}}"
@@ -241,10 +217,34 @@
 	},
 
 
-	"usemplibgroup":{
+	"usemplibgroup{}":{
 		"prefix":"usemplibgroup",
 		"body":[
 			"\\usemplibgroup{${1:name}}"
+		]
+	},
+
+
+	"mpfig*":{
+		"prefix":"*mpfig",
+		"body":[
+			"\\mpfig*"
+		]
+	},
+
+
+	"everymplib[]{}":{
+		"prefix":"everymplib",
+		"body":[
+			"\\everymplib[${2:instance name}]{${1:MetaPost code%definition}}"
+		]
+	},
+
+
+	"everyendmplib[]{}":{
+		"prefix":"everyendmplib",
+		"body":[
+			"\\everyendmplib[${2:instance name}]{${1:MetaPost code%definition}}"
 		]
 	},
 
@@ -253,18 +253,8 @@
 		"prefix":"mplibcode",
 		"body":[
 			"\\begin{mplibcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{mplibcode}"
-		]
-	},
-
-
-	"mplibgroup":{
-		"prefix":"mplibgroup",
-		"body":[
-			"\\begin{mplibgroup}",
-			"\t$1",
-			"\\end{mplibgroup}"
 		]
 	},
 
@@ -273,8 +263,48 @@
 		"prefix":"mppattern",
 		"body":[
 			"\\begin{mppattern}",
-			"\t$1",
+				"\t$1",
 			"\\end{mppattern}"
+		]
+	},
+
+
+	"mplibgroup":{
+		"prefix":"mplibgroup",
+		"body":[
+			"\\begin{mplibgroup}",
+				"\t$1",
+			"\\end{mplibgroup}"
+		]
+	},
+
+
+	"mplibcode":{
+		"prefix":"mplibcode",
+		"body":[
+			"\\begin{mplibcode}",
+				"\t$1",
+			"\\end{mplibcode}"
+		]
+	},
+
+
+	"mppattern":{
+		"prefix":"mppattern",
+		"body":[
+			"\\begin{mppattern}",
+				"\t$1",
+			"\\end{mppattern}"
+		]
+	},
+
+
+	"mplibgroup":{
+		"prefix":"mplibgroup",
+		"body":[
+			"\\begin{mplibgroup}",
+				"\t$1",
+			"\\end{mplibgroup}"
 		]
 	}
 }

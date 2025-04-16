@@ -17,7 +17,7 @@
 	},
 
 
-	"Bar":{
+	"Bar{}":{
 		"prefix":"Bar",
 		"body":[
 			"\\Bar{${1:text%plain}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"barretta":{
+	"barretta{}":{
 		"prefix":"barretta",
 		"body":[
 			"\\barretta{${1:text%plain}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"dubbio":{
+	"dubbio{}":{
 		"prefix":"dubbio",
 		"body":[
 			"\\dubbio{${1:text%plain}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"dubious":{
+	"dubious{}":{
 		"prefix":"dubious",
 		"body":[
 			"\\dubious{${1:text%plain}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"Ov":{
+	"Ov{}":{
 		"prefix":"Ov",
 		"body":[
 			"\\Ov{${1:text%plain}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"Overline":{
+	"Overline{}":{
 		"prefix":"Overline",
 		"body":[
 			"\\Overline{${1:text%plain}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"pont":{
+	"pont{}":{
 		"prefix":"pont",
 		"body":[
 			"\\pont{${1:text%plain}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"puntonero":{
+	"puntonero{}":{
 		"prefix":"puntonero",
 		"body":[
 			"\\puntonero{${1:number}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"sic":{
+	"sic{}":{
 		"prefix":"sic",
 		"body":[
 			"\\sic{${1:text%plain}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"textcopte":{
+	"textcopte{}":{
 		"prefix":"textcopte",
 		"body":[
 			"\\textcopte{${1:text%plain}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"textcoptic":{
+	"textcoptic{}":{
 		"prefix":"textcoptic",
 		"body":[
 			"\\textcoptic{${1:text%plain}}"
@@ -177,7 +177,7 @@
 	},
 
 
-	"textcopto":{
+	"textcopto{}":{
 		"prefix":"textcopto",
 		"body":[
 			"\\textcopto{${1:text%plain}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"textlatin":{
+	"textlatin{}":{
 		"prefix":"textlatin",
 		"body":[
 			"\\textlatin{${1:text}}"
@@ -233,11 +233,21 @@
 	},
 
 
+	"coptic":{
+		"prefix":"coptic",
+		"body":[
+			"\\begin{coptic}",
+				"\t$1",
+			"\\end{coptic}"
+		]
+	},
+
+
 	"copte":{
 		"prefix":"copte",
 		"body":[
 			"\\begin{copte}",
-			"\t$1",
+				"\t$1",
 			"\\end{copte}"
 		]
 	},
@@ -247,18 +257,8 @@
 		"prefix":"copto",
 		"body":[
 			"\\begin{copto}",
-			"\t$1",
+				"\t$1",
 			"\\end{copto}"
-		]
-	},
-
-
-	"coptic":{
-		"prefix":"coptic",
-		"body":[
-			"\\begin{coptic}",
-			"\t$1",
-			"\\end{coptic}"
 		]
 	}
 }

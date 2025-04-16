@@ -41,18 +41,10 @@
 	},
 
 
-	"scene":{
+	"scene{}":{
 		"prefix":"scene",
 		"body":[
 			"\\scene{${1:setting%text}}"
-		]
-	},
-
-
-	"scene":{
-		"prefix":"scene",
-		"body":[
-			"\\scene[${2:title}]{${1:setting%text}}"
 		]
 	},
 
@@ -73,7 +65,7 @@
 	},
 
 
-	"rehearsalmark":{
+	"rehearsalmark{}":{
 		"prefix":"rehearsalmark",
 		"body":[
 			"\\rehearsalmark{${1:mark}}"
@@ -89,14 +81,6 @@
 	},
 
 
-	"transition":{
-		"prefix":"transition",
-		"body":[
-			"\\transition[${1:name}]"
-		]
-	},
-
-
 	"speechmargin":{
 		"prefix":"speechmargin",
 		"body":[
@@ -105,7 +89,7 @@
 	},
 
 
-	"dialogfootnote":{
+	"dialogfootnote{}":{
 		"prefix":"dialogfootnote",
 		"body":[
 			"\\dialogfootnote{${1:text}}"
@@ -113,7 +97,7 @@
 	},
 
 
-	"dialog":{
+	"dialog{}{}":{
 		"prefix":"dialog",
 		"body":[
 			"\\dialog{${1:character}}{${2:text}}"
@@ -129,7 +113,7 @@
 	},
 
 
-	"lyrics":{
+	"lyrics{}{}":{
 		"prefix":"lyrics",
 		"body":[
 			"\\lyrics{${1:character}}{${2:lyrics%text}}"
@@ -137,7 +121,7 @@
 	},
 
 
-	"spacer":{
+	"spacer{}":{
 		"prefix":"spacer",
 		"body":[
 			"\\spacer{${1:text%plain}}"
@@ -145,7 +129,7 @@
 	},
 
 
-	"stdir":{
+	"stdir{}":{
 		"prefix":"stdir",
 		"body":[
 			"\\stdir{${1:direction%text}}"
@@ -153,7 +137,7 @@
 	},
 
 
-	"music":{
+	"music{}":{
 		"prefix":"music",
 		"body":[
 			"\\music{${1:title%text}}"
@@ -161,7 +145,7 @@
 	},
 
 
-	"dance":{
+	"dance{}":{
 		"prefix":"dance",
 		"body":[
 			"\\dance{${1:title%text}}"
@@ -177,7 +161,7 @@
 	},
 
 
-	"dialogue":{
+	"dialogue{}{}":{
 		"prefix":"dialogue",
 		"body":[
 			"\\dialogue{${1:character}}{${2:text}}"
@@ -201,7 +185,7 @@
 	},
 
 
-	"addcharacter":{
+	"addcharacter{}{}":{
 		"prefix":"addcharacter",
 		"body":[
 			"\\addcharacter{${1:name}}{${2:description%text}}"
@@ -209,15 +193,7 @@
 	},
 
 
-	"addcharacter":{
-		"prefix":"addcharacter",
-		"body":[
-			"\\addcharacter[${3:nickname}]{${1:name}}{${2:description%text}}"
-		]
-	},
-
-
-	"character":{
+	"character{}":{
 		"prefix":"character",
 		"body":[
 			"\\character{${1:name}}"
@@ -225,10 +201,44 @@
 	},
 
 
-	"comment":{
+	"comment{}":{
 		"prefix":"comment",
 		"body":[
 			"\\comment{${1:comment%text}}"
+		]
+	},
+
+
+	"scene[]{}":{
+		"prefix":"scene",
+		"body":[
+			"\\scene[${2:title}]{${1:setting%text}}"
+		]
+	},
+
+
+	"transition[]":{
+		"prefix":"transition",
+		"body":[
+			"\\transition[${1:name}]"
+		]
+	},
+
+
+	"addcharacter[]{}{}":{
+		"prefix":"addcharacter",
+		"body":[
+			"\\addcharacter[${3:nickname}]{${1:name}}{${2:description%text}}"
+		]
+	},
+
+
+	"script":{
+		"prefix":"script",
+		"body":[
+			"\\begin{script}",
+				"\t$1",
+			"\\end{script}"
 		]
 	},
 
@@ -237,7 +247,7 @@
 		"prefix":"spokentext",
 		"body":[
 			"\\begin{spokentext}",
-			"\t$1",
+				"\t$1",
 			"\\end{spokentext}"
 		]
 	},
@@ -247,18 +257,8 @@
 		"prefix":"lyrictext",
 		"body":[
 			"\\begin{lyrictext}",
-			"\t$1",
+				"\t$1",
 			"\\end{lyrictext}"
-		]
-	},
-
-
-	"script":{
-		"prefix":"script",
-		"body":[
-			"\\begin{script}",
-			"\t$1",
-			"\\end{script}"
 		]
 	}
 }

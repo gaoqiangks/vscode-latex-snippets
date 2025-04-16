@@ -1,7 +1,7 @@
 {
 
 
-	"luadirect":{
+	"luadirect{}":{
 		"prefix":"luadirect",
 		"body":[
 			"\\luadirect{${1:lua code%definition}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"luaexec":{
+	"luaexec{}":{
 		"prefix":"luaexec",
 		"body":[
 			"\\luaexec{${1:lua code%definition}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"luastring":{
+	"luastring{}":{
 		"prefix":"luastring",
 		"body":[
 			"\\luastring{${1:string}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"luastringN":{
+	"luastringN{}":{
 		"prefix":"luastringN",
 		"body":[
 			"\\luastringN{${1:string}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"luastringO":{
+	"luastringO{}":{
 		"prefix":"luastringO",
 		"body":[
 			"\\luastringO{${1:string}}"
@@ -57,22 +57,22 @@
 	},
 
 
-	"luacode*":{
-		"prefix":"luacode*",
-		"body":[
-			"\\begin{luacode*}",
-			"\t$1",
-			"\\end{luacode*}"
-		]
-	},
-
-
 	"luacode":{
 		"prefix":"luacode",
 		"body":[
 			"\\begin{luacode}",
-			"\t$1",
+				"\t$1",
 			"\\end{luacode}"
+		]
+	},
+
+
+	"luacode*":{
+		"prefix":"*luacode",
+		"body":[
+			"\\begin{luacode*}",
+				"\t$1",
+			"\\end{luacode*}"
 		]
 	}
 }

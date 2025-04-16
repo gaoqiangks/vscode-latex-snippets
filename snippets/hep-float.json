@@ -1,7 +1,7 @@
 {
 
 
-	"panel":{
+	"panel{}":{
 		"prefix":"panel",
 		"body":[
 			"\\panel{${1:width}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"graphic":{
+	"graphic{}":{
 		"prefix":"graphic",
 		"body":[
 			"\\graphic{${1:imagefile}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"graphic":{
-		"prefix":"graphic",
-		"body":[
-			"\\graphic[${2:width}]{${1:imagefile}}"
-		]
-	},
-
-
-	"graphics":{
+	"graphics{}":{
 		"prefix":"graphics",
 		"body":[
 			"\\graphics{${1:file path}}"
@@ -81,10 +73,18 @@
 	},
 
 
-	"tikzsetnextfilename":{
+	"tikzsetnextfilename{}":{
 		"prefix":"tikzsetnextfilename",
 		"body":[
 			"\\tikzsetnextfilename{${1:imagefile}}"
+		]
+	},
+
+
+	"graphic[]{}":{
+		"prefix":"graphic",
+		"body":[
+			"\\graphic[${2:width}]{${1:imagefile}}"
 		]
 	},
 
@@ -93,7 +93,7 @@
 		"prefix":"figures",
 		"body":[
 			"\\begin{figures}",
-			"\t$1",
+				"\t$1",
 			"\\end{figures}"
 		]
 	},
@@ -103,7 +103,7 @@
 		"prefix":"panels",
 		"body":[
 			"\\begin{panels}",
-			"\t$1",
+				"\t$1",
 			"\\end{panels}"
 		]
 	},
@@ -113,7 +113,37 @@
 		"prefix":"tables",
 		"body":[
 			"\\begin{tables}",
-			"\t$1",
+				"\t$1",
+			"\\end{tables}"
+		]
+	},
+
+
+	"figures":{
+		"prefix":"figures",
+		"body":[
+			"\\begin{figures}",
+				"\t$1",
+			"\\end{figures}"
+		]
+	},
+
+
+	"panels":{
+		"prefix":"panels",
+		"body":[
+			"\\begin{panels}",
+				"\t$1",
+			"\\end{panels}"
+		]
+	},
+
+
+	"tables":{
+		"prefix":"tables",
+		"body":[
+			"\\begin{tables}",
+				"\t$1",
 			"\\end{tables}"
 		]
 	}

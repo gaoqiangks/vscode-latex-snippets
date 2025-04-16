@@ -9,7 +9,7 @@
 	},
 
 
-	"dmlbsetdate":{
+	"dmlbsetdate{}{}{}":{
 		"prefix":"dmlbsetdate",
 		"body":[
 			"\\dmlbsetdate{${1:YYYY}}{${2:MM}}{${3:DD}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"dmlbsetdate":{
-		"prefix":"dmlbsetdate",
-		"body":[
-			"\\dmlbsetdate{${1:YYYY}}{${2:MM}}{${3:DD}}[${4:rel path}]"
-		]
-	},
-
-
-	"QQQ":{
+	"QQQ{}{}{}{}{}{}{}":{
 		"prefix":"QQQ",
 		"body":[
 			"\\QQQ{${1:time}}{${2:blood glucose}}{${3:insulin}}{${4:carbohydrates}}{${5:protein}}{${6:fat}}{${7:remarks%text}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"QQQ":{
-		"prefix":"QQQ",
-		"body":[
-			"\\QQQ[${8:date}]{${1:time}}{${2:blood glucose}}{${3:insulin}}{${4:carbohydrates}}{${5:protein}}{${6:fat}}{${7:remarks%text}}"
-		]
-	},
-
-
-	"autoFileInput":{
+	"autoFileInput{}":{
 		"prefix":"autoFileInput",
 		"body":[
 			"\\autoFileInput{${1:rel path}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"rowstyle":{
+	"rowstyle{}":{
 		"prefix":"rowstyle",
 		"body":[
 			"\\rowstyle{${1:style commands}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"TwoDigits":{
+	"TwoDigits{}":{
 		"prefix":"TwoDigits",
 		"body":[
 			"\\TwoDigits{${1:num}}"
@@ -245,6 +229,22 @@
 		"prefix":"glossaryname",
 		"body":[
 			"\\glossaryname"
+		]
+	},
+
+
+	"dmlbsetdate{}{}{}[]":{
+		"prefix":"dmlbsetdate",
+		"body":[
+			"\\dmlbsetdate{${1:YYYY}}{${2:MM}}{${3:DD}}[${4:rel path}]"
+		]
+	},
+
+
+	"QQQ[]{}{}{}{}{}{}{}":{
+		"prefix":"QQQ",
+		"body":[
+			"\\QQQ[${8:date}]{${1:time}}{${2:blood glucose}}{${3:insulin}}{${4:carbohydrates}}{${5:protein}}{${6:fat}}{${7:remarks%text}}"
 		]
 	}
 }

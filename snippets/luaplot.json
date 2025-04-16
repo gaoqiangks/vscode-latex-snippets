@@ -1,7 +1,7 @@
 {
 
 
-	"luaplot":{
+	"luaplot{}":{
 		"prefix":"luaplot",
 		"body":[
 			"\\luaplot{${1:function%definition}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"luaplot":{
-		"prefix":"luaplot",
+	"luatikzpath{}{}{}{}":{
+		"prefix":"luatikzpath",
 		"body":[
-			"\\luaplot[${2:options%keyvals}]{${1:function%definition}}"
+			"\\luatikzpath{${1:function%definition}}{${2:xmin}}{${3:xmax}}{${4:plot points}}"
 		]
 	},
 
 
-	"luatikzpath":{
-		"prefix":"luatikzpath",
+	"luaplot[]{}":{
+		"prefix":"luaplot",
 		"body":[
-			"\\luatikzpath{${1:function%definition}}{${2:xmin}}{${3:xmax}}{${4:plot points}}"
+			"\\luaplot[${2:options%keyvals}]{${1:function%definition}}"
 		]
 	}
 }

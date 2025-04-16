@@ -1,7 +1,7 @@
 {
 
 
-	"authoranon":{
+	"authoranon{}":{
 		"prefix":"authoranon",
 		"body":[
 			"\\authoranon{${1:author information%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"textanon":{
+	"textanon{}{}":{
 		"prefix":"textanon",
 		"body":[
 			"\\textanon{${1:text}}{${2:placeholder}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"linkanon":{
+	"linkanon{}{}":{
 		"prefix":"linkanon",
 		"body":[
 			"\\linkanon{${1:URL}}{${2:display link%plain}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"textlinkanon":{
+	"textlinkanon{}{}":{
 		"prefix":"textlinkanon",
 		"body":[
 			"\\textlinkanon{${1:URL}}{${2:text%plain}}"
@@ -33,18 +33,10 @@
 	},
 
 
-	"citeanon":{
+	"citeanon{}":{
 		"prefix":"citeanon",
 		"body":[
 			"\\citeanon{${1:bibid}}"
-		]
-	},
-
-
-	"citeanon":{
-		"prefix":"citeanon",
-		"body":[
-			"\\citeanon[${2:add. text}]{${1:bibid}}"
 		]
 	},
 
@@ -69,6 +61,14 @@
 		"prefix":"AnonConditionfalse",
 		"body":[
 			"\\AnonConditionfalse"
+		]
+	},
+
+
+	"citeanon[]{}":{
+		"prefix":"citeanon",
+		"body":[
+			"\\citeanon[${2:add. text}]{${1:bibid}}"
 		]
 	}
 }

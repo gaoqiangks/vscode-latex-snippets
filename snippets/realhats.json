@@ -1,14 +1,6 @@
 {
 
 
-	"hat":{
-		"prefix":"hat",
-		"body":[
-			"\\hat[${2:type%keyvals}]{${1:arg}}"
-		]
-	},
-
-
 	"hatwidth":{
 		"prefix":"hatwidth",
 		"body":[
@@ -49,7 +41,7 @@
 	},
 
 
-	"hatn":{
+	"hatn{}{}":{
 		"prefix":"hatn",
 		"body":[
 			"\\hatn{${1:arg}}{${2:type%keyvals}}"
@@ -57,10 +49,18 @@
 	},
 
 
-	"hatnoptions":{
+	"hatnoptions{}{}{}{}":{
 		"prefix":"hatnoptions",
 		"body":[
 			"\\hatnoptions{${1:arg}}{${2:type%keyvals}}{${3:hshift%l}}{${4:vshift%l}}"
+		]
+	},
+
+
+	"hat[]{}":{
+		"prefix":"hat",
+		"body":[
+			"\\hat[${2:type%keyvals}]{${1:arg}}"
 		]
 	}
 }

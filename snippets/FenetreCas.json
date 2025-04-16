@@ -1,7 +1,7 @@
 {
 
 
-	"LigneCalculsGeogebra":{
+	"LigneCalculsGeogebra{}{}":{
 		"prefix":"LigneCalculsGeogebra",
 		"body":[
 			"\\LigneCalculsGeogebra{${1:commande}}{${2:résultat}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"LigneCalculsGeogebra":{
-		"prefix":"LigneCalculsGeogebra",
-		"body":[
-			"\\LigneCalculsGeogebra[${3:clés%keyvals}]{${1:commande}}{${2:résultat}}"
-		]
-	},
-
-
-	"LigneCalculsXcas":{
+	"LigneCalculsXcas{}{}":{
 		"prefix":"LigneCalculsXcas",
 		"body":[
 			"\\LigneCalculsXcas{${1:commande}}{${2:résultat}}"
@@ -25,7 +17,15 @@
 	},
 
 
-	"LigneCalculsXcas":{
+	"LigneCalculsGeogebra[]{}{}":{
+		"prefix":"LigneCalculsGeogebra",
+		"body":[
+			"\\LigneCalculsGeogebra[${3:clés%keyvals}]{${1:commande}}{${2:résultat}}"
+		]
+	},
+
+
+	"LigneCalculsXcas[]{}{}":{
 		"prefix":"LigneCalculsXcas",
 		"body":[
 			"\\LigneCalculsXcas[${3:clés%keyvals}]{${1:commande}}{${2:résultat}}"
@@ -37,7 +37,17 @@
 		"prefix":"CalculFormelGeogebra",
 		"body":[
 			"\\begin{CalculFormelGeogebra}",
-			"\t$1",
+				"\t$1",
+			"\\end{CalculFormelGeogebra}"
+		]
+	},
+
+
+	"CalculFormelGeogebra":{
+		"prefix":"CalculFormelGeogebra",
+		"body":[
+			"\\begin{CalculFormelGeogebra}",
+				"\t$1",
 			"\\end{CalculFormelGeogebra}"
 		]
 	},
@@ -47,7 +57,57 @@
 		"prefix":"CalculFormelXcas",
 		"body":[
 			"\\begin{CalculFormelXcas}",
-			"\t$1",
+				"\t$1",
+			"\\end{CalculFormelXcas}"
+		]
+	},
+
+
+	"CalculFormelXcas":{
+		"prefix":"CalculFormelXcas",
+		"body":[
+			"\\begin{CalculFormelXcas}",
+				"\t$1",
+			"\\end{CalculFormelXcas}"
+		]
+	},
+
+
+	"CalculFormelGeogebra":{
+		"prefix":"CalculFormelGeogebra",
+		"body":[
+			"\\begin{CalculFormelGeogebra}",
+				"\t$1",
+			"\\end{CalculFormelGeogebra}"
+		]
+	},
+
+
+	"CalculFormelGeogebra":{
+		"prefix":"CalculFormelGeogebra",
+		"body":[
+			"\\begin{CalculFormelGeogebra}",
+				"\t$1",
+			"\\end{CalculFormelGeogebra}"
+		]
+	},
+
+
+	"CalculFormelXcas":{
+		"prefix":"CalculFormelXcas",
+		"body":[
+			"\\begin{CalculFormelXcas}",
+				"\t$1",
+			"\\end{CalculFormelXcas}"
+		]
+	},
+
+
+	"CalculFormelXcas":{
+		"prefix":"CalculFormelXcas",
+		"body":[
+			"\\begin{CalculFormelXcas}",
+				"\t$1",
 			"\\end{CalculFormelXcas}"
 		]
 	}

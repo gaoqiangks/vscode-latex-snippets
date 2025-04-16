@@ -1,7 +1,7 @@
 {
 
 
-	"fdusetup":{
+	"fdusetup{}":{
 		"prefix":"fdusetup",
 		"body":[
 			"\\fdusetup{${1:keyvals}}"
@@ -33,31 +33,7 @@
 	},
 
 
-	"newtheorem":{
-		"prefix":"newtheorem",
-		"body":[
-			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"newtheorem*":{
-		"prefix":"newtheorem*",
-		"body":[
-			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"DeclareCoverTemplate":{
+	"DeclareCoverTemplate{}{}":{
 		"prefix":"DeclareCoverTemplate",
 		"body":[
 			"\\DeclareCoverTemplate{${1:arg1}}{${2:arg2}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"theoremsymbol":{
+	"theoremsymbol{}":{
 		"prefix":"theoremsymbol",
 		"body":[
 			"\\theoremsymbol{${1:symbol}}"
@@ -73,92 +49,26 @@
 	},
 
 
-	"lemma":{
-		"prefix":"lemma",
+	"newtheorem*{}{}":{
+		"prefix":"*newtheorem",
 		"body":[
-			"\\begin{lemma}",
-			"\t$1",
-			"\\end{lemma}"
+			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
 		]
 	},
 
 
-	"example":{
-		"prefix":"example",
+	"newtheorem*[]{}{}":{
+		"prefix":"*newtheorem",
 		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
+			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
 		]
 	},
 
 
-	"abstract*":{
-		"prefix":"abstract*",
+	"newtheorem[]{}{}":{
+		"prefix":"newtheorem",
 		"body":[
-			"\\begin{abstract*}",
-			"\t$1",
-			"\\end{abstract*}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"axiom":{
-		"prefix":"axiom",
-		"body":[
-			"\\begin{axiom}",
-			"\t$1",
-			"\\end{axiom}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-			"\t$1",
-			"\\end{proof}"
-		]
-	},
-
-
-	"acknowledgements":{
-		"prefix":"acknowledgements",
-		"body":[
-			"\\begin{acknowledgements}",
-			"\t$1",
-			"\\end{acknowledgements}"
+			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
 		]
 	},
 
@@ -167,8 +77,178 @@
 		"prefix":"notation",
 		"body":[
 			"\\begin{notation}",
-			"\t$1",
+				"\t$1",
 			"\\end{notation}"
+		]
+	},
+
+
+	"acknowledgements":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"abstract*":{
+		"prefix":"*abstract",
+		"body":[
+			"\\begin{abstract*}",
+				"\t$1",
+			"\\end{abstract*}"
+		]
+	},
+
+
+	"notation":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"proof":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t$1",
+			"\\end{proof}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
 		]
 	}
 }

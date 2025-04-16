@@ -1,7 +1,7 @@
 {
 
 
-	"acknowledgement":{
+	"acknowledgement{}":{
 		"prefix":"acknowledgement",
 		"body":[
 			"\\acknowledgement{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"alt":{
+	"alt{}":{
 		"prefix":"alt",
 		"body":[
 			"\\alt{${1:alt text%text}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"answer":{
-		"prefix":"answer",
-		"body":[
-			"\\answer[${2:options%keyvals}]{${1:answer}}"
-		]
-	},
-
-
-	"answer":{
+	"answer{}":{
 		"prefix":"answer",
 		"body":[
 			"\\answer{${1:answer}}"
@@ -41,15 +33,7 @@
 	},
 
 
-	"choice":{
-		"prefix":"choice",
-		"body":[
-			"\\choice[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"choice":{
+	"choice{}":{
 		"prefix":"choice",
 		"body":[
 			"\\choice{${1:text}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"desmos":{
+	"desmos{}{}{}":{
 		"prefix":"desmos",
 		"body":[
 			"\\desmos{${1:desmos id}}{${2:width}}{${3:height}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"desmosThreeD":{
+	"desmosThreeD{}{}{}":{
 		"prefix":"desmosThreeD",
 		"body":[
 			"\\desmosThreeD{${1:desmos3D id}}{${2:width}}{${3:height}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"geogebra":{
+	"geogebra{}{}{}":{
 		"prefix":"geogebra",
 		"body":[
 			"\\geogebra{${1:geogebra id}}{${2:width}}{${3:height}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"googleSheet":{
+	"googleSheet{}{}{}{}{}":{
 		"prefix":"googleSheet",
 		"body":[
 			"\\googleSheet{${1:id}}{${2:width}}{${3:height}}{${4:sheet id}}{${5:cell range}}"
@@ -89,15 +73,7 @@
 	},
 
 
-	"graph":{
-		"prefix":"graph",
-		"body":[
-			"\\graph[${2:options%keyvals}]{${1:formula}}"
-		]
-	},
-
-
-	"graph":{
+	"graph{}":{
 		"prefix":"graph",
 		"body":[
 			"\\graph{${1:formula}}"
@@ -129,15 +105,7 @@
 	},
 
 
-	"includeinteractive":{
-		"prefix":"includeinteractive",
-		"body":[
-			"\\includeinteractive[${2:id=id}]{${1:js file}}"
-		]
-	},
-
-
-	"includeinteractive":{
+	"includeinteractive{}":{
 		"prefix":"includeinteractive",
 		"body":[
 			"\\includeinteractive{${1:js file%file}}"
@@ -145,7 +113,7 @@
 	},
 
 
-	"js":{
+	"js{}":{
 		"prefix":"js",
 		"body":[
 			"\\js{${1:js code}}"
@@ -153,7 +121,7 @@
 	},
 
 
-	"license":{
+	"license{}":{
 		"prefix":"license",
 		"body":[
 			"\\license{${1:text}}"
@@ -161,15 +129,7 @@
 	},
 
 
-	"link":{
-		"prefix":"link",
-		"body":[
-			"\\link[${2:text}]{${1:URL}}"
-		]
-	},
-
-
-	"link":{
+	"link{}":{
 		"prefix":"link",
 		"body":[
 			"\\link{${1:URL}}"
@@ -177,7 +137,7 @@
 	},
 
 
-	"outcome":{
+	"outcome{}":{
 		"prefix":"outcome",
 		"body":[
 			"\\outcome{${1:text}}"
@@ -185,7 +145,7 @@
 	},
 
 
-	"pdfOnly":{
+	"pdfOnly{}":{
 		"prefix":"pdfOnly",
 		"body":[
 			"\\pdfOnly{${1:content%text}}"
@@ -201,7 +161,7 @@
 	},
 
 
-	"wordChoice":{
+	"wordChoice{}":{
 		"prefix":"wordChoice",
 		"body":[
 			"\\wordChoice{${1:choices%text}}"
@@ -209,7 +169,7 @@
 	},
 
 
-	"xkcd":{
+	"xkcd{}":{
 		"prefix":"xkcd",
 		"body":[
 			"\\xkcd{${1:xkcd name}}"
@@ -217,7 +177,7 @@
 	},
 
 
-	"youtube":{
+	"youtube{}":{
 		"prefix":"youtube",
 		"body":[
 			"\\youtube{${1:youtube id}}"
@@ -225,52 +185,72 @@
 	},
 
 
-	"description*":{
-		"prefix":"description*",
+	"answer[]{}":{
+		"prefix":"answer",
 		"body":[
-			"\\begin{description*}",
-			"\t$1",
-			"\\end{description*}"
+			"\\answer[${2:options%keyvals}]{${1:answer}}"
 		]
 	},
 
 
-	"instructorIntro":{
-		"prefix":"instructorIntro",
+	"choice[]{}":{
+		"prefix":"choice",
 		"body":[
-			"\\begin{instructorIntro}",
-			"\t$1",
-			"\\end{instructorIntro}"
+			"\\choice[${2:options%keyvals}]{${1:text}}"
 		]
 	},
 
 
-	"selectAll":{
-		"prefix":"selectAll",
+	"graph[]{}":{
+		"prefix":"graph",
 		"body":[
-			"\\begin{selectAll}",
-			"\t$1",
-			"\\end{selectAll}"
+			"\\graph[${2:options%keyvals}]{${1:formula}}"
 		]
 	},
 
 
-	"prompt":{
-		"prefix":"prompt",
+	"includeinteractive[]{}":{
+		"prefix":"includeinteractive",
 		"body":[
-			"\\begin{prompt}",
-			"\t$1",
-			"\\end{prompt}"
+			"\\includeinteractive[${2:id=id}]{${1:js file}}"
 		]
 	},
 
 
-	"condition":{
-		"prefix":"condition",
+	"link[]{}":{
+		"prefix":"link",
 		"body":[
-			"\\begin{condition}",
-			"\t$1",
-			"\\end{condition}"
+			"\\link[${2:text}]{${1:URL}}"
+		]
+	},
+
+
+	"algorithm":{
+		"prefix":"algorithm",
+		"body":[
+			"\\begin{algorithm}",
+				"\t$1",
+			"\\end{algorithm}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"claim":{
+		"prefix":"claim",
+		"body":[
+			"\\begin{claim}",
+				"\t$1",
+			"\\end{claim}"
 		]
 	},
 
@@ -279,18 +259,58 @@
 		"prefix":"conclusion",
 		"body":[
 			"\\begin{conclusion}",
-			"\t$1",
+				"\t$1",
 			"\\end{conclusion}"
 		]
 	},
 
 
-	"foldable":{
-		"prefix":"foldable",
+	"condition":{
+		"prefix":"condition",
 		"body":[
-			"\\begin{foldable}",
-			"\t$1",
-			"\\end{foldable}"
+			"\\begin{condition}",
+				"\t$1",
+			"\\end{condition}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"criterion":{
+		"prefix":"criterion",
+		"body":[
+			"\\begin{criterion}",
+				"\t$1",
+			"\\end{criterion}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
 		]
 	},
 
@@ -299,8 +319,128 @@
 		"prefix":"dialogue",
 		"body":[
 			"\\begin{dialogue}",
-			"\t$1",
+				"\t$1",
 			"\\end{dialogue}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"expandable":{
+		"prefix":"expandable",
+		"body":[
+			"\\begin{expandable}",
+				"\t$1",
+			"\\end{expandable}"
+		]
+	},
+
+
+	"explanation":{
+		"prefix":"explanation",
+		"body":[
+			"\\begin{explanation}",
+				"\t$1",
+			"\\end{explanation}"
+		]
+	},
+
+
+	"exploration":{
+		"prefix":"exploration",
+		"body":[
+			"\\begin{exploration}",
+				"\t$1",
+			"\\end{exploration}"
+		]
+	},
+
+
+	"fact":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact}",
+				"\t$1",
+			"\\end{fact}"
+		]
+	},
+
+
+	"feedback":{
+		"prefix":"feedback",
+		"body":[
+			"\\begin{feedback}",
+				"\t$1",
+			"\\end{feedback}"
+		]
+	},
+
+
+	"foldable":{
+		"prefix":"foldable",
+		"body":[
+			"\\begin{foldable}",
+				"\t$1",
+			"\\end{foldable}"
+		]
+	},
+
+
+	"formula":{
+		"prefix":"formula",
+		"body":[
+			"\\begin{formula}",
+				"\t$1",
+			"\\end{formula}"
+		]
+	},
+
+
+	"freeResponse":{
+		"prefix":"freeResponse",
+		"body":[
+			"\\begin{freeResponse}",
+				"\t$1",
+			"\\end{freeResponse}"
+		]
+	},
+
+
+	"hint":{
+		"prefix":"hint",
+		"body":[
+			"\\begin{hint}",
+				"\t$1",
+			"\\end{hint}"
+		]
+	},
+
+
+	"idea":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea}",
+				"\t$1",
+			"\\end{idea}"
 		]
 	},
 
@@ -309,7 +449,447 @@
 		"prefix":"image",
 		"body":[
 			"\\begin{image}",
-			"\t$1",
+				"\t$1",
+			"\\end{image}"
+		]
+	},
+
+
+	"instructorIntro":{
+		"prefix":"instructorIntro",
+		"body":[
+			"\\begin{instructorIntro}",
+				"\t$1",
+			"\\end{instructorIntro}"
+		]
+	},
+
+
+	"instructorNotes":{
+		"prefix":"instructorNotes",
+		"body":[
+			"\\begin{instructorNotes}",
+				"\t$1",
+			"\\end{instructorNotes}"
+		]
+	},
+
+
+	"javascript":{
+		"prefix":"javascript",
+		"body":[
+			"\\begin{javascript}",
+				"\t$1",
+			"\\end{javascript}"
+		]
+	},
+
+
+	"lemma":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t$1",
+			"\\end{lemma}"
+		]
+	},
+
+
+	"model":{
+		"prefix":"model",
+		"body":[
+			"\\begin{model}",
+				"\t$1",
+			"\\end{model}"
+		]
+	},
+
+
+	"multipleChoice":{
+		"prefix":"multipleChoice",
+		"body":[
+			"\\begin{multipleChoice}",
+				"\t$1",
+			"\\end{multipleChoice}"
+		]
+	},
+
+
+	"notation":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
+		]
+	},
+
+
+	"observation":{
+		"prefix":"observation",
+		"body":[
+			"\\begin{observation}",
+				"\t$1",
+			"\\end{observation}"
+		]
+	},
+
+
+	"onlineOnly":{
+		"prefix":"onlineOnly",
+		"body":[
+			"\\begin{onlineOnly}",
+				"\t$1",
+			"\\end{onlineOnly}"
+		]
+	},
+
+
+	"paradox":{
+		"prefix":"paradox",
+		"body":[
+			"\\begin{paradox}",
+				"\t$1",
+			"\\end{paradox}"
+		]
+	},
+
+
+	"problem":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t$1",
+			"\\end{problem}"
+		]
+	},
+
+
+	"procedure":{
+		"prefix":"procedure",
+		"body":[
+			"\\begin{procedure}",
+				"\t$1",
+			"\\end{procedure}"
+		]
+	},
+
+
+	"prompt":{
+		"prefix":"prompt",
+		"body":[
+			"\\begin{prompt}",
+				"\t$1",
+			"\\end{prompt}"
+		]
+	},
+
+
+	"proposition":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
+		]
+	},
+
+
+	"question":{
+		"prefix":"question",
+		"body":[
+			"\\begin{question}",
+				"\t$1",
+			"\\end{question}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
+		]
+	},
+
+
+	"sageCell":{
+		"prefix":"sageCell",
+		"body":[
+			"\\begin{sageCell}",
+				"\t$1",
+			"\\end{sageCell}"
+		]
+	},
+
+
+	"sageOutput":{
+		"prefix":"sageOutput",
+		"body":[
+			"\\begin{sageOutput}",
+				"\t$1",
+			"\\end{sageOutput}"
+		]
+	},
+
+
+	"selectAll":{
+		"prefix":"selectAll",
+		"body":[
+			"\\begin{selectAll}",
+				"\t$1",
+			"\\end{selectAll}"
+		]
+	},
+
+
+	"solution":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t$1",
+			"\\end{solution}"
+		]
+	},
+
+
+	"summary":{
+		"prefix":"summary",
+		"body":[
+			"\\begin{summary}",
+				"\t$1",
+			"\\end{summary}"
+		]
+	},
+
+
+	"template":{
+		"prefix":"template",
+		"body":[
+			"\\begin{template}",
+				"\t$1",
+			"\\end{template}"
+		]
+	},
+
+
+	"theorem":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"ungraded":{
+		"prefix":"ungraded",
+		"body":[
+			"\\begin{ungraded}",
+				"\t$1",
+			"\\end{ungraded}"
+		]
+	},
+
+
+	"warning":{
+		"prefix":"warning",
+		"body":[
+			"\\begin{warning}",
+				"\t$1",
+			"\\end{warning}"
+		]
+	},
+
+
+	"enumerate*":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
+		]
+	},
+
+
+	"itemize*":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
+		]
+	},
+
+
+	"description*":{
+		"prefix":"*description",
+		"body":[
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
+		]
+	},
+
+
+	"algorithm":{
+		"prefix":"algorithm",
+		"body":[
+			"\\begin{algorithm}",
+				"\t$1",
+			"\\end{algorithm}"
+		]
+	},
+
+
+	"axiom":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t$1",
+			"\\end{axiom}"
+		]
+	},
+
+
+	"claim":{
+		"prefix":"claim",
+		"body":[
+			"\\begin{claim}",
+				"\t$1",
+			"\\end{claim}"
+		]
+	},
+
+
+	"conclusion":{
+		"prefix":"conclusion",
+		"body":[
+			"\\begin{conclusion}",
+				"\t$1",
+			"\\end{conclusion}"
+		]
+	},
+
+
+	"condition":{
+		"prefix":"condition",
+		"body":[
+			"\\begin{condition}",
+				"\t$1",
+			"\\end{condition}"
+		]
+	},
+
+
+	"conjecture":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t$1",
+			"\\end{conjecture}"
+		]
+	},
+
+
+	"corollary":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t$1",
+			"\\end{corollary}"
+		]
+	},
+
+
+	"criterion":{
+		"prefix":"criterion",
+		"body":[
+			"\\begin{criterion}",
+				"\t$1",
+			"\\end{criterion}"
+		]
+	},
+
+
+	"definition":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t$1",
+			"\\end{definition}"
+		]
+	},
+
+
+	"example":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t$1",
+			"\\end{example}"
+		]
+	},
+
+
+	"explanation":{
+		"prefix":"explanation",
+		"body":[
+			"\\begin{explanation}",
+				"\t$1",
+			"\\end{explanation}"
+		]
+	},
+
+
+	"fact":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact}",
+				"\t$1",
+			"\\end{fact}"
+		]
+	},
+
+
+	"feedback":{
+		"prefix":"feedback",
+		"body":[
+			"\\begin{feedback}",
+				"\t$1",
+			"\\end{feedback}"
+		]
+	},
+
+
+	"formula":{
+		"prefix":"formula",
+		"body":[
+			"\\begin{formula}",
+				"\t$1",
+			"\\end{formula}"
+		]
+	},
+
+
+	"idea":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea}",
+				"\t$1",
+			"\\end{idea}"
+		]
+	},
+
+
+	"image":{
+		"prefix":"image",
+		"body":[
+			"\\begin{image}",
+				"\t$1",
 			"\\end{image}"
 		]
 	},
@@ -319,58 +899,8 @@
 		"prefix":"lemma",
 		"body":[
 			"\\begin{lemma}",
-			"\t$1",
+				"\t$1",
 			"\\end{lemma}"
-		]
-	},
-
-
-	"sageCell":{
-		"prefix":"sageCell",
-		"body":[
-			"\\begin{sageCell}",
-			"\t$1",
-			"\\end{sageCell}"
-		]
-	},
-
-
-	"proposition":{
-		"prefix":"proposition",
-		"body":[
-			"\\begin{proposition}",
-			"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"fact":{
-		"prefix":"fact",
-		"body":[
-			"\\begin{fact}",
-			"\t$1",
-			"\\end{fact}"
-		]
-	},
-
-
-	"criterion":{
-		"prefix":"criterion",
-		"body":[
-			"\\begin{criterion}",
-			"\t$1",
-			"\\end{criterion}"
-		]
-	},
-
-
-	"onlineOnly":{
-		"prefix":"onlineOnly",
-		"body":[
-			"\\begin{onlineOnly}",
-			"\t$1",
-			"\\end{onlineOnly}"
 		]
 	},
 
@@ -379,48 +909,28 @@
 		"prefix":"model",
 		"body":[
 			"\\begin{model}",
-			"\t$1",
+				"\t$1",
 			"\\end{model}"
 		]
 	},
 
 
-	"remark":{
-		"prefix":"remark",
+	"multipleChoice":{
+		"prefix":"multipleChoice",
 		"body":[
-			"\\begin{remark}",
-			"\t$1",
-			"\\end{remark}"
+			"\\begin{multipleChoice}",
+				"\t$1",
+			"\\end{multipleChoice}"
 		]
 	},
 
 
-	"exercise":{
-		"prefix":"exercise",
+	"notation":{
+		"prefix":"notation",
 		"body":[
-			"\\begin{exercise}",
-			"\t$1",
-			"\\end{exercise}"
-		]
-	},
-
-
-	"hint":{
-		"prefix":"hint",
-		"body":[
-			"\\begin{hint}",
-			"\t$1",
-			"\\end{hint}"
-		]
-	},
-
-
-	"algorithm":{
-		"prefix":"algorithm",
-		"body":[
-			"\\begin{algorithm}",
-			"\t$1",
-			"\\end{algorithm}"
+			"\\begin{notation}",
+				"\t$1",
+			"\\end{notation}"
 		]
 	},
 
@@ -429,178 +939,8 @@
 		"prefix":"observation",
 		"body":[
 			"\\begin{observation}",
-			"\t$1",
+				"\t$1",
 			"\\end{observation}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-			"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize*",
-		"body":[
-			"\\begin{itemize*}",
-			"\t$1",
-			"\\end{itemize*}"
-		]
-	},
-
-
-	"instructorNotes":{
-		"prefix":"instructorNotes",
-		"body":[
-			"\\begin{instructorNotes}",
-			"\t$1",
-			"\\end{instructorNotes}"
-		]
-	},
-
-
-	"enumerate*":{
-		"prefix":"enumerate*",
-		"body":[
-			"\\begin{enumerate*}",
-			"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"formula":{
-		"prefix":"formula",
-		"body":[
-			"\\begin{formula}",
-			"\t$1",
-			"\\end{formula}"
-		]
-	},
-
-
-	"summary":{
-		"prefix":"summary",
-		"body":[
-			"\\begin{summary}",
-			"\t$1",
-			"\\end{summary}"
-		]
-	},
-
-
-	"ungraded":{
-		"prefix":"ungraded",
-		"body":[
-			"\\begin{ungraded}",
-			"\t$1",
-			"\\end{ungraded}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-			"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"idea":{
-		"prefix":"idea",
-		"body":[
-			"\\begin{idea}",
-			"\t$1",
-			"\\end{idea}"
-		]
-	},
-
-
-	"template":{
-		"prefix":"template",
-		"body":[
-			"\\begin{template}",
-			"\t$1",
-			"\\end{template}"
-		]
-	},
-
-
-	"expandable":{
-		"prefix":"expandable",
-		"body":[
-			"\\begin{expandable}",
-			"\t$1",
-			"\\end{expandable}"
-		]
-	},
-
-
-	"conjecture":{
-		"prefix":"conjecture",
-		"body":[
-			"\\begin{conjecture}",
-			"\t$1",
-			"\\end{conjecture}"
-		]
-	},
-
-
-	"validator":{
-		"prefix":"validator",
-		"body":[
-			"\\begin{validator}",
-			"\t$1",
-			"\\end{validator}"
-		]
-	},
-
-
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-			"\t$1",
-			"\\end{solution}"
-		]
-	},
-
-
-	"sageOutput":{
-		"prefix":"sageOutput",
-		"body":[
-			"\\begin{sageOutput}",
-			"\t$1",
-			"\\end{sageOutput}"
-		]
-	},
-
-
-	"question":{
-		"prefix":"question",
-		"body":[
-			"\\begin{question}",
-			"\t$1",
-			"\\end{question}"
-		]
-	},
-
-
-	"claim":{
-		"prefix":"claim",
-		"body":[
-			"\\begin{claim}",
-			"\t$1",
-			"\\end{claim}"
 		]
 	},
 
@@ -609,7 +949,7 @@
 		"prefix":"paradox",
 		"body":[
 			"\\begin{paradox}",
-			"\t$1",
+				"\t$1",
 			"\\end{paradox}"
 		]
 	},
@@ -619,58 +959,68 @@
 		"prefix":"procedure",
 		"body":[
 			"\\begin{procedure}",
-			"\t$1",
+				"\t$1",
 			"\\end{procedure}"
 		]
 	},
 
 
-	"problem":{
-		"prefix":"problem",
+	"proposition":{
+		"prefix":"proposition",
 		"body":[
-			"\\begin{problem}",
-			"\t$1",
-			"\\end{problem}"
+			"\\begin{proposition}",
+				"\t$1",
+			"\\end{proposition}"
 		]
 	},
 
 
-	"example":{
-		"prefix":"example",
+	"remark":{
+		"prefix":"remark",
 		"body":[
-			"\\begin{example}",
-			"\t$1",
-			"\\end{example}"
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
 		]
 	},
 
 
-	"multipleChoice":{
-		"prefix":"multipleChoice",
+	"summary":{
+		"prefix":"summary",
 		"body":[
-			"\\begin{multipleChoice}",
-			"\t$1",
-			"\\end{multipleChoice}"
+			"\\begin{summary}",
+				"\t$1",
+			"\\end{summary}"
 		]
 	},
 
 
-	"exploration":{
-		"prefix":"exploration",
+	"template":{
+		"prefix":"template",
 		"body":[
-			"\\begin{exploration}",
-			"\t$1",
-			"\\end{exploration}"
+			"\\begin{template}",
+				"\t$1",
+			"\\end{template}"
 		]
 	},
 
 
-	"axiom":{
-		"prefix":"axiom",
+	"theorem":{
+		"prefix":"theorem",
 		"body":[
-			"\\begin{axiom}",
-			"\t$1",
-			"\\end{axiom}"
+			"\\begin{theorem}",
+				"\t$1",
+			"\\end{theorem}"
+		]
+	},
+
+
+	"validator":{
+		"prefix":"validator",
+		"body":[
+			"\\begin{validator}",
+				"\t$1",
+			"\\end{validator}"
 		]
 	},
 
@@ -679,68 +1029,38 @@
 		"prefix":"warning",
 		"body":[
 			"\\begin{warning}",
-			"\t$1",
+				"\t$1",
 			"\\end{warning}"
 		]
 	},
 
 
-	"freeResponse":{
-		"prefix":"freeResponse",
+	"enumerate*":{
+		"prefix":"enumerate",
 		"body":[
-			"\\begin{freeResponse}",
-			"\t$1",
-			"\\end{freeResponse}"
+			"\\begin{enumerate*}",
+				"\t$1",
+			"\\end{enumerate*}"
 		]
 	},
 
 
-	"definition":{
-		"prefix":"definition",
+	"itemize*":{
+		"prefix":"itemize",
 		"body":[
-			"\\begin{definition}",
-			"\t$1",
-			"\\end{definition}"
+			"\\begin{itemize*}",
+				"\t$1",
+			"\\end{itemize*}"
 		]
 	},
 
 
-	"notation":{
-		"prefix":"notation",
+	"description*":{
+		"prefix":"description",
 		"body":[
-			"\\begin{notation}",
-			"\t$1",
-			"\\end{notation}"
-		]
-	},
-
-
-	"explanation":{
-		"prefix":"explanation",
-		"body":[
-			"\\begin{explanation}",
-			"\t$1",
-			"\\end{explanation}"
-		]
-	},
-
-
-	"javascript":{
-		"prefix":"javascript",
-		"body":[
-			"\\begin{javascript}",
-			"\t$1",
-			"\\end{javascript}"
-		]
-	},
-
-
-	"feedback":{
-		"prefix":"feedback",
-		"body":[
-			"\\begin{feedback}",
-			"\t$1",
-			"\\end{feedback}"
+			"\\begin{description*}",
+				"\t$1",
+			"\\end{description*}"
 		]
 	}
 }

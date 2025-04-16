@@ -1,7 +1,7 @@
 {
 
 
-	"boxalert":{
+	"boxalert{}":{
 		"prefix":"boxalert",
 		"body":[
 			"\\boxalert{${1:text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"boxalert<overlay specification>":{
+	"boxalert<overlay specification>{}":{
 		"prefix":"boxalert<overlay specification>",
 		"body":[
 			"\\boxalert<overlay specification>{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"collaboration":{
+	"collaboration{}":{
 		"prefix":"collaboration",
 		"body":[
 			"\\collaboration{${1:collaboration%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"framesection":{
+	"framesection{}":{
 		"prefix":"framesection",
 		"body":[
 			"\\framesection{${1:text}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"mail":{
+	"mail{}":{
 		"prefix":"mail",
 		"body":[
 			"\\mail{${1:email%URL}}"
@@ -49,23 +49,7 @@
 	},
 
 
-	"sepframe":{
-		"prefix":"sepframe",
-		"body":[
-			"\\sepframe[${1:options%keyvals}]"
-		]
-	},
-
-
-	"thanksframe":{
-		"prefix":"thanksframe",
-		"body":[
-			"\\thanksframe[${2:graphic}]{${1:title}}"
-		]
-	},
-
-
-	"thanksframe":{
+	"thanksframe{}":{
 		"prefix":"thanksframe",
 		"body":[
 			"\\thanksframe{${1:title}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"webpage":{
+	"webpage{}":{
 		"prefix":"webpage",
 		"body":[
 			"\\webpage{${1:URL}}"
@@ -89,22 +73,28 @@
 	},
 
 
-	"information":{
-		"prefix":"information",
+	"sepframe[]":{
+		"prefix":"sepframe",
 		"body":[
-			"\\begin{information}",
-			"\t$1",
-			"\\end{information}"
+			"\\sepframe[${1:options%keyvals}]"
 		]
 	},
 
 
-	"boxalertenv":{
-		"prefix":"boxalertenv",
+	"thanksframe[]{}":{
+		"prefix":"thanksframe",
 		"body":[
-			"\\begin{boxalertenv}",
-			"\t$1",
-			"\\end{boxalertenv}"
+			"\\thanksframe[${2:graphic}]{${1:title}}"
+		]
+	},
+
+
+	"information":{
+		"prefix":"information",
+		"body":[
+			"\\begin{information}",
+				"\t$1",
+			"\\end{information}"
 		]
 	},
 
@@ -113,8 +103,28 @@
 		"prefix":"remark",
 		"body":[
 			"\\begin{remark}",
-			"\t$1",
+				"\t$1",
 			"\\end{remark}"
+		]
+	},
+
+
+	"boxalertenv":{
+		"prefix":"boxalertenv",
+		"body":[
+			"\\begin{boxalertenv}",
+				"\t$1",
+			"\\end{boxalertenv}"
+		]
+	},
+
+
+	"information":{
+		"prefix":"information",
+		"body":[
+			"\\begin{information}",
+				"\t$1",
+			"\\end{information}"
 		]
 	},
 
@@ -123,8 +133,18 @@
 		"prefix":"quotation",
 		"body":[
 			"\\begin{quotation}",
-			"\t$1",
+				"\t$1",
 			"\\end{quotation}"
+		]
+	},
+
+
+	"remark":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t$1",
+			"\\end{remark}"
 		]
 	}
 }

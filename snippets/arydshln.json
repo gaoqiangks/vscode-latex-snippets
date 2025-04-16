@@ -9,26 +9,10 @@
 	},
 
 
-	"hdashline":{
-		"prefix":"hdashline",
-		"body":[
-			"\\hdashline[${1:dash/gap}]"
-		]
-	},
-
-
-	"cdashline":{
+	"cdashline{}":{
 		"prefix":"cdashline",
 		"body":[
 			"\\cdashline{${1:i-j}}"
-		]
-	},
-
-
-	"cdashline":{
-		"prefix":"cdashline",
-		"body":[
-			"\\cdashline{${1:i-j}}[${2:dash/gap}]"
 		]
 	},
 
@@ -81,7 +65,7 @@
 	},
 
 
-	"ADLdrawingmode":{
+	"ADLdrawingmode{}":{
 		"prefix":"ADLdrawingmode",
 		"body":[
 			"\\ADLdrawingmode{${1:mode number%keyvals}}"
@@ -129,18 +113,10 @@
 	},
 
 
-	"dashgapcolor":{
+	"dashgapcolor{}":{
 		"prefix":"dashgapcolor",
 		"body":[
 			"\\dashgapcolor{${1:color}}"
-		]
-	},
-
-
-	"dashgapcolor":{
-		"prefix":"dashgapcolor",
-		"body":[
-			"\\dashgapcolor[${2:model}]{${1:color specs}}"
 		]
 	},
 
@@ -153,32 +129,26 @@
 	},
 
 
-	"Longtable":{
-		"prefix":"Longtable",
+	"hdashline[]":{
+		"prefix":"hdashline",
 		"body":[
-			"\\begin{Longtable}",
-			"\t$1",
-			"\\end{Longtable}"
+			"\\hdashline[${1:dash/gap}]"
 		]
 	},
 
 
-	"Tabular":{
-		"prefix":"Tabular",
+	"cdashline{}[]":{
+		"prefix":"cdashline",
 		"body":[
-			"\\begin{Tabular}",
-			"\t$1",
-			"\\end{Tabular}"
+			"\\cdashline{${1:i-j}}[${2:dash/gap}]"
 		]
 	},
 
 
-	"Tabular*":{
-		"prefix":"Tabular*",
+	"dashgapcolor[]{}":{
+		"prefix":"dashgapcolor",
 		"body":[
-			"\\begin{Tabular*}",
-			"\t$1",
-			"\\end{Tabular*}"
+			"\\dashgapcolor[${2:model}]{${1:color specs}}"
 		]
 	},
 
@@ -187,8 +157,78 @@
 		"prefix":"Array",
 		"body":[
 			"\\begin{Array}",
-			"\t$1",
+				"\t$1",
 			"\\end{Array}"
+		]
+	},
+
+
+	"Tabular":{
+		"prefix":"Tabular",
+		"body":[
+			"\\begin{Tabular}",
+				"\t$1",
+			"\\end{Tabular}"
+		]
+	},
+
+
+	"Tabular*":{
+		"prefix":"Tabular",
+		"body":[
+			"\\begin{Tabular*}",
+				"\t$1",
+			"\\end{Tabular*}"
+		]
+	},
+
+
+	"Longtable":{
+		"prefix":"Longtable",
+		"body":[
+			"\\begin{Longtable}",
+				"\t$1",
+			"\\end{Longtable}"
+		]
+	},
+
+
+	"Array":{
+		"prefix":"Array",
+		"body":[
+			"\\begin{Array}",
+				"\t$1",
+			"\\end{Array}"
+		]
+	},
+
+
+	"Tabular":{
+		"prefix":"Tabular",
+		"body":[
+			"\\begin{Tabular}",
+				"\t$1",
+			"\\end{Tabular}"
+		]
+	},
+
+
+	"Tabular*":{
+		"prefix":"Tabular",
+		"body":[
+			"\\begin{Tabular*}",
+				"\t$1",
+			"\\end{Tabular*}"
+		]
+	},
+
+
+	"Longtable":{
+		"prefix":"Longtable",
+		"body":[
+			"\\begin{Longtable}",
+				"\t$1",
+			"\\end{Longtable}"
 		]
 	}
 }

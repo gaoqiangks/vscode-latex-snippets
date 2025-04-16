@@ -1,7 +1,7 @@
 {
 
 
-	"invoiceoptions":{
+	"invoiceoptions{}":{
 		"prefix":"invoiceoptions",
 		"body":[
 			"\\invoiceoptions{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"invoiceitem":{
+	"invoiceitem{}{}{}":{
 		"prefix":"invoiceitem",
 		"body":[
 			"\\invoiceitem{${1:amount}}{${2:item name%text}}{${3:unit price}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"invoiceitem":{
-		"prefix":"invoiceitem",
-		"body":[
-			"\\invoiceitem[${4:VAT}]{${1:amount}}{${2:item name%text}}{${3:unit price}}"
-		]
-	},
-
-
-	"invoicesingleitem":{
+	"invoicesingleitem{}{}":{
 		"prefix":"invoicesingleitem",
 		"body":[
 			"\\invoicesingleitem{${1:item name%text}}{${2:unit price}}"
@@ -33,7 +25,15 @@
 	},
 
 
-	"invoicesingleitem":{
+	"invoiceitem[]{}{}{}":{
+		"prefix":"invoiceitem",
+		"body":[
+			"\\invoiceitem[${4:VAT}]{${1:amount}}{${2:item name%text}}{${3:unit price}}"
+		]
+	},
+
+
+	"invoicesingleitem[]{}{}":{
 		"prefix":"invoicesingleitem",
 		"body":[
 			"\\invoicesingleitem[${3:VAT}]{${1:item name%text}}{${2:unit price}}"
@@ -45,7 +45,17 @@
 		"prefix":"invoice",
 		"body":[
 			"\\begin{invoice}",
-			"\t$1",
+				"\t$1",
+			"\\end{invoice}"
+		]
+	},
+
+
+	"invoice":{
+		"prefix":"invoice",
+		"body":[
+			"\\begin{invoice}",
+				"\t$1",
 			"\\end{invoice}"
 		]
 	}

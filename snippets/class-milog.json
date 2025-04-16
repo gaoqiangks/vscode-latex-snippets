@@ -1,18 +1,10 @@
 {
 
 
-	"milog":{
+	"milog{}":{
 		"prefix":"milog",
 		"body":[
 			"\\milog{${1:CSV file%file}}"
-		]
-	},
-
-
-	"milog":{
-		"prefix":"milog",
-		"body":[
-			"\\milog[${2:options%keyvals}]{${1:CSV file%file}}"
 		]
 	},
 
@@ -25,10 +17,18 @@
 	},
 
 
-	"milogsetup":{
+	"milogsetup{}":{
 		"prefix":"milogsetup",
 		"body":[
 			"\\milogsetup{${1:options%keyvals}}"
+		]
+	},
+
+
+	"milog[]{}":{
+		"prefix":"milog",
+		"body":[
+			"\\milog[${2:options%keyvals}]{${1:CSV file%file}}"
 		]
 	}
 }

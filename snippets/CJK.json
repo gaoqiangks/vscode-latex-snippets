@@ -25,7 +25,7 @@
 	},
 
 
-	"CJKsymbol":{
+	"CJKsymbol{}":{
 		"prefix":"CJKsymbol",
 		"body":[
 			"\\CJKsymbol{${1:n}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"CJKpunctsymbol":{
+	"CJKpunctsymbol{}":{
 		"prefix":"CJKpunctsymbol",
 		"body":[
 			"\\CJKpunctsymbol{${1:n}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"CJKsymbols":{
+	"CJKsymbols{}{}":{
 		"prefix":"CJKsymbols",
 		"body":[
 			"\\CJKsymbols{${1:codepoint1}}{${2:codepoint2}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"CJKchar":{
+	"CJKchar{}{}":{
 		"prefix":"CJKchar",
 		"body":[
 			"\\CJKchar{${1:byte1}}{${2:byte2}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"CJKchar":{
-		"prefix":"CJKchar",
-		"body":[
-			"\\CJKchar[${3:UTF8}]{${1:byte1}}{${2:byte2}}"
-		]
-	},
-
-
-	"Unicode":{
+	"Unicode{}{}":{
 		"prefix":"Unicode",
 		"body":[
 			"\\Unicode{${1:byte1}}{${2:byte2}}"
@@ -113,7 +105,7 @@
 	},
 
 
-	"CJKenc":{
+	"CJKenc{}":{
 		"prefix":"CJKenc",
 		"body":[
 			"\\CJKenc{${1:encoding}}"
@@ -121,7 +113,7 @@
 	},
 
 
-	"CJKfontenc":{
+	"CJKfontenc{}{}":{
 		"prefix":"CJKfontenc",
 		"body":[
 			"\\CJKfontenc{${1:encoding}}{${2:font encoding}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"CJKfamily":{
+	"CJKfamily{}":{
 		"prefix":"CJKfamily",
 		"body":[
 			"\\CJKfamily{${1:family}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"CJKencfamily":{
+	"CJKencfamily{}{}":{
 		"prefix":"CJKencfamily",
 		"body":[
 			"\\CJKencfamily{${1:encoding}}{${2:family}}"
@@ -145,15 +137,7 @@
 	},
 
 
-	"CJKencfamily":{
-		"prefix":"CJKencfamily",
-		"body":[
-			"\\CJKencfamily[${3:font encoding}]{${1:encoding}}{${2:family}}"
-		]
-	},
-
-
-	"CJKshape":{
+	"CJKshape{}":{
 		"prefix":"CJKshape",
 		"body":[
 			"\\CJKshape{${1:family}}"
@@ -161,7 +145,7 @@
 	},
 
 
-	"CJKencshape":{
+	"CJKencshape{}{}":{
 		"prefix":"CJKencshape",
 		"body":[
 			"\\CJKencshape{${1:encoding}}{${2:family}}"
@@ -169,15 +153,7 @@
 	},
 
 
-	"CJKencshape":{
-		"prefix":"CJKencshape",
-		"body":[
-			"\\CJKencshape[${3:font encoding}]{${1:encoding}}{${2:family}}"
-		]
-	},
-
-
-	"CJKaddEncHook":{
+	"CJKaddEncHook{}{}":{
 		"prefix":"CJKaddEncHook",
 		"body":[
 			"\\CJKaddEncHook{${1:encoding}}{${2:code}}"
@@ -273,7 +249,7 @@
 	},
 
 
-	"CJKcaption":{
+	"CJKcaption{}":{
 		"prefix":"CJKcaption",
 		"body":[
 			"\\CJKcaption{${1:caption}}"
@@ -281,7 +257,7 @@
 	},
 
 
-	"CJKhdef":{
+	"CJKhdef{}{}":{
 		"prefix":"CJKhdef",
 		"body":[
 			"\\CJKhdef{${1:arg1}}{${2:arg2}}"
@@ -289,7 +265,7 @@
 	},
 
 
-	"CJKhlet":{
+	"CJKhlet{}{}":{
 		"prefix":"CJKhlet",
 		"body":[
 			"\\CJKhlet{${1:arg1}}{${2:arg2}}"
@@ -297,7 +273,7 @@
 	},
 
 
-	"CJKvdef":{
+	"CJKvdef{}{}":{
 		"prefix":"CJKvdef",
 		"body":[
 			"\\CJKvdef{${1:arg1}}{${2:arg2}}"
@@ -305,7 +281,7 @@
 	},
 
 
-	"CJKvlet":{
+	"CJKvlet{}{}":{
 		"prefix":"CJKvlet",
 		"body":[
 			"\\CJKvlet{${1:arg1}}{${2:arg2}}"
@@ -313,11 +289,45 @@
 	},
 
 
+	"CJKchar[]{}{}":{
+		"prefix":"CJKchar",
+		"body":[
+			"\\CJKchar[${3:UTF8}]{${1:byte1}}{${2:byte2}}"
+		]
+	},
+
+
+	"CJKencfamily[]{}{}":{
+		"prefix":"CJKencfamily",
+		"body":[
+			"\\CJKencfamily[${3:font encoding}]{${1:encoding}}{${2:family}}"
+		]
+	},
+
+
+	"CJKencshape[]{}{}":{
+		"prefix":"CJKencshape",
+		"body":[
+			"\\CJKencshape[${3:font encoding}]{${1:encoding}}{${2:family}}"
+		]
+	},
+
+
+	"CJK":{
+		"prefix":"CJK",
+		"body":[
+			"\\begin{CJK}",
+				"\t$1",
+			"\\end{CJK}"
+		]
+	},
+
+
 	"CJK*":{
-		"prefix":"CJK*",
+		"prefix":"CJK",
 		"body":[
 			"\\begin{CJK*}",
-			"\t$1",
+				"\t$1",
 			"\\end{CJK*}"
 		]
 	},
@@ -327,8 +337,18 @@
 		"prefix":"CJK",
 		"body":[
 			"\\begin{CJK}",
-			"\t$1",
+				"\t$1",
 			"\\end{CJK}"
+		]
+	},
+
+
+	"CJK*":{
+		"prefix":"CJK",
+		"body":[
+			"\\begin{CJK*}",
+				"\t$1",
+			"\\end{CJK*}"
 		]
 	}
 }

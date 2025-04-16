@@ -1,7 +1,7 @@
 {
 
 
-	"sortArray":{
+	"sortArray{}{}":{
 		"prefix":"sortArray",
 		"body":[
 			"\\sortArray{${1:integer}}{${2:array}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"sortArray":{
-		"prefix":"sortArray",
-		"body":[
-			"\\sortArray[${3:comparator%keyvals}]{${1:integer}}{${2:array}}"
-		]
-	},
-
-
-	"sortArray":{
-		"prefix":"sortArray",
-		"body":[
-			"\\sortArray[${3:comparator%keyvals}][${4:start}]{${1:integer}}{${2:array}}"
-		]
-	},
-
-
-	"arraysortcomparestr":{
+	"arraysortcomparestr{}{}":{
 		"prefix":"arraysortcomparestr",
 		"body":[
 			"\\arraysortcomparestr{${1:arg1}}{${2:arg2}}"
@@ -33,7 +17,7 @@
 	},
 
 
-	"arraysortcomparenum":{
+	"arraysortcomparenum{}{}":{
 		"prefix":"arraysortcomparenum",
 		"body":[
 			"\\arraysortcomparenum{${1:arg1}}{${2:arg2}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"sortArrayPartitionRand":{
+	"sortArrayPartitionRand{}{}{}{}":{
 		"prefix":"sortArrayPartitionRand",
 		"body":[
 			"\\sortArrayPartitionRand{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"sortArrayPartitionMed":{
+	"sortArrayPartitionMed{}{}{}{}":{
 		"prefix":"sortArrayPartitionMed",
 		"body":[
 			"\\sortArrayPartitionMed{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"sortArrayPartitionMid":{
+	"sortArrayPartitionMid{}{}{}{}":{
 		"prefix":"sortArrayPartitionMid",
 		"body":[
 			"\\sortArrayPartitionMid{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
@@ -65,10 +49,26 @@
 	},
 
 
-	"sortArrayPartitionFirst":{
+	"sortArrayPartitionFirst{}{}{}{}":{
 		"prefix":"sortArrayPartitionFirst",
 		"body":[
 			"\\sortArrayPartitionFirst{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
+		]
+	},
+
+
+	"sortArray[]{}{}":{
+		"prefix":"sortArray",
+		"body":[
+			"\\sortArray[${3:comparator%keyvals}]{${1:integer}}{${2:array}}"
+		]
+	},
+
+
+	"sortArray[][]{}{}":{
+		"prefix":"sortArray",
+		"body":[
+			"\\sortArray[${3:comparator%keyvals}][${4:start}]{${1:integer}}{${2:array}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"todo":{
+	"todo{}":{
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
@@ -9,58 +9,10 @@
 	},
 
 
-	"todo":{
-		"prefix":"todo",
-		"body":[
-			"\\todo[${2:mark text}]{${1:text%todo}}"
-		]
-	},
-
-
-	"todo*":{
-		"prefix":"todo*",
-		"body":[
-			"\\todo*{${1:text%todo}}"
-		]
-	},
-
-
-	"todo*":{
-		"prefix":"todo*",
-		"body":[
-			"\\todo*[${2:mark text}]{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo":{
+	"Todo{}":{
 		"prefix":"Todo",
 		"body":[
 			"\\Todo{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo":{
-		"prefix":"Todo",
-		"body":[
-			"\\Todo[${2:mark text}]{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo*":{
-		"prefix":"Todo*",
-		"body":[
-			"\\Todo*{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo*":{
-		"prefix":"Todo*",
-		"body":[
-			"\\Todo*[${2:mark text%text}]{${1:text%todo}}"
 		]
 	},
 
@@ -89,14 +41,6 @@
 	},
 
 
-	"done":{
-		"prefix":"done",
-		"body":[
-			"\\done[${1:done text%text}]"
-		]
-	},
-
-
 	"todoopen":{
 		"prefix":"todoopen",
 		"body":[
@@ -113,7 +57,7 @@
 	},
 
 
-	"astodos":{
+	"astodos{}":{
 		"prefix":"astodos",
 		"body":[
 			"\\astodos{${1:mark text%text}}"
@@ -153,7 +97,7 @@
 	},
 
 
-	"doneitem":{
+	"doneitem{}{}":{
 		"prefix":"doneitem",
 		"body":[
 			"\\doneitem{${1:arg1}}{${2:arg2}}"
@@ -161,10 +105,66 @@
 	},
 
 
-	"todoitem":{
+	"todoitem{}{}":{
 		"prefix":"todoitem",
 		"body":[
 			"\\todoitem{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"todo*{}":{
+		"prefix":"*todo",
+		"body":[
+			"\\todo*{${1:text%todo}}"
+		]
+	},
+
+
+	"todo*[]{}":{
+		"prefix":"*todo",
+		"body":[
+			"\\todo*[${2:mark text}]{${1:text%todo}}"
+		]
+	},
+
+
+	"Todo*{}":{
+		"prefix":"*Todo",
+		"body":[
+			"\\Todo*{${1:text%todo}}"
+		]
+	},
+
+
+	"Todo*[]{}":{
+		"prefix":"*Todo",
+		"body":[
+			"\\Todo*[${2:mark text%text}]{${1:text%todo}}"
+		]
+	},
+
+
+	"todo[]{}":{
+		"prefix":"todo",
+		"body":[
+			"\\todo[${2:mark text}]{${1:text%todo}}"
+		]
+	},
+
+
+	"Todo[]{}":{
+		"prefix":"Todo",
+		"body":[
+			"\\Todo[${2:mark text}]{${1:text%todo}}"
+		]
+	},
+
+
+	"done[]":{
+		"prefix":"done",
+		"body":[
+			"\\done[${1:done text%text}]"
 		]
 	},
 
@@ -173,7 +173,7 @@
 		"prefix":"todoenv",
 		"body":[
 			"\\begin{todoenv}",
-			"\t$1",
+				"\t$1",
 			"\\end{todoenv}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"bitbox":{
+	"bitbox{}{}":{
 		"prefix":"bitbox",
 		"body":[
 			"\\bitbox{${1:width}}{${2:text}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"bitbox":{
-		"prefix":"bitbox",
-		"body":[
-			"\\bitbox[${3:sides}]{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"bitbox":{
-		"prefix":"bitbox",
-		"body":[
-			"\\bitbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"bitbox":{
-		"prefix":"bitbox",
-		"body":[
-			"\\bitbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"wordbox":{
+	"wordbox{}{}":{
 		"prefix":"wordbox",
 		"body":[
 			"\\wordbox{${1:width}}{${2:text}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"wordbox":{
-		"prefix":"wordbox",
-		"body":[
-			"\\wordbox[${3:sides}]{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"wordbox":{
-		"prefix":"wordbox",
-		"body":[
-			"\\wordbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"wordbox":{
-		"prefix":"wordbox",
-		"body":[
-			"\\wordbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
-		]
-	},
-
-
-	"bitboxes":{
+	"bitboxes{}{}":{
 		"prefix":"bitboxes",
 		"body":[
 			"\\bitboxes{${1:width}}{${2:tokens}}"
@@ -73,74 +25,10 @@
 	},
 
 
-	"bitboxes":{
-		"prefix":"bitboxes",
-		"body":[
-			"\\bitboxes[${3:sides}]{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes":{
-		"prefix":"bitboxes",
-		"body":[
-			"\\bitboxes{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes":{
-		"prefix":"bitboxes",
-		"body":[
-			"\\bitboxes[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*":{
-		"prefix":"bitboxes*",
-		"body":[
-			"\\bitboxes*{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*":{
-		"prefix":"bitboxes*",
-		"body":[
-			"\\bitboxes*[${3:sides}]{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*":{
-		"prefix":"bitboxes*",
-		"body":[
-			"\\bitboxes*{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*":{
-		"prefix":"bitboxes*",
-		"body":[
-			"\\bitboxes*[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
-		]
-	},
-
-
-	"bitheader":{
+	"bitheader{}":{
 		"prefix":"bitheader",
 		"body":[
 			"\\bitheader{${1:bit-positions}}"
-		]
-	},
-
-
-	"bitheader":{
-		"prefix":"bitheader",
-		"body":[
-			"\\bitheader[${2:options%keyvals}]{${1:bit-positions}}"
 		]
 	},
 
@@ -153,7 +41,7 @@
 	},
 
 
-	"bytefieldsetup":{
+	"bytefieldsetup{}":{
 		"prefix":"bytefieldsetup",
 		"body":[
 			"\\bytefieldsetup{${1:options%keyvals}}"
@@ -225,11 +113,123 @@
 	},
 
 
+	"bitboxes*{}{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*{${1:width}}{${2:tokens}}"
+		]
+	},
+
+
+	"bitboxes*[]{}{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*[${3:sides}]{${1:width}}{${2:tokens}}"
+		]
+	},
+
+
+	"bitboxes*{}[]{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
+		]
+	},
+
+
+	"bitboxes*[]{}[]{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
+		]
+	},
+
+
+	"bitbox[]{}{}":{
+		"prefix":"bitbox",
+		"body":[
+			"\\bitbox[${3:sides}]{${1:width}}{${2:text}}"
+		]
+	},
+
+
+	"bitbox{}[]{}":{
+		"prefix":"bitbox",
+		"body":[
+			"\\bitbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"bitbox[]{}[]{}":{
+		"prefix":"bitbox",
+		"body":[
+			"\\bitbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"wordbox[]{}{}":{
+		"prefix":"wordbox",
+		"body":[
+			"\\wordbox[${3:sides}]{${1:width}}{${2:text}}"
+		]
+	},
+
+
+	"wordbox{}[]{}":{
+		"prefix":"wordbox",
+		"body":[
+			"\\wordbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"wordbox[]{}[]{}":{
+		"prefix":"wordbox",
+		"body":[
+			"\\wordbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
+		]
+	},
+
+
+	"bitboxes[]{}{}":{
+		"prefix":"bitboxes",
+		"body":[
+			"\\bitboxes[${3:sides}]{${1:width}}{${2:tokens}}"
+		]
+	},
+
+
+	"bitboxes{}[]{}":{
+		"prefix":"bitboxes",
+		"body":[
+			"\\bitboxes{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
+		]
+	},
+
+
+	"bitboxes[]{}[]{}":{
+		"prefix":"bitboxes",
+		"body":[
+			"\\bitboxes[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
+		]
+	},
+
+
+	"bitheader[]{}":{
+		"prefix":"bitheader",
+		"body":[
+			"\\bitheader[${2:options%keyvals}]{${1:bit-positions}}"
+		]
+	},
+
+
 	"bytefield":{
 		"prefix":"bytefield",
 		"body":[
 			"\\begin{bytefield}",
-			"\t$1",
+				"\t$1",
 			"\\end{bytefield}"
 		]
 	},
@@ -239,7 +239,7 @@
 		"prefix":"rightwordgroup",
 		"body":[
 			"\\begin{rightwordgroup}",
-			"\t$1",
+				"\t$1",
 			"\\end{rightwordgroup}"
 		]
 	},
@@ -249,7 +249,37 @@
 		"prefix":"leftwordgroup",
 		"body":[
 			"\\begin{leftwordgroup}",
-			"\t$1",
+				"\t$1",
+			"\\end{leftwordgroup}"
+		]
+	},
+
+
+	"bytefield":{
+		"prefix":"bytefield",
+		"body":[
+			"\\begin{bytefield}",
+				"\t$1",
+			"\\end{bytefield}"
+		]
+	},
+
+
+	"rightwordgroup":{
+		"prefix":"rightwordgroup",
+		"body":[
+			"\\begin{rightwordgroup}",
+				"\t$1",
+			"\\end{rightwordgroup}"
+		]
+	},
+
+
+	"leftwordgroup":{
+		"prefix":"leftwordgroup",
+		"body":[
+			"\\begin{leftwordgroup}",
+				"\t$1",
 			"\\end{leftwordgroup}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"declarecompound":{
+	"declarecompound{}":{
 		"prefix":"declarecompound",
 		"body":[
 			"\\declarecompound{${1:label%specialDef}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"declarecompound":{
-		"prefix":"declarecompound",
-		"body":[
-			"\\declarecompound[${2:name}]{${1:label}}"
-		]
-	},
-
-
-	"compound":{
+	"compound{}":{
 		"prefix":"compound",
 		"body":[
 			"\\compound{${1:label1,label2,...%keyvals}}"
-		]
-	},
-
-
-	"compound*":{
-		"prefix":"compound*",
-		"body":[
-			"\\compound*{${1:label1,label2,...%keyvals}}"
 		]
 	},
 
@@ -81,10 +65,26 @@
 	},
 
 
-	"printcompound":{
+	"printcompound{}":{
 		"prefix":"printcompound",
 		"body":[
 			"\\printcompound{${1:text%plain}}"
+		]
+	},
+
+
+	"compound*{}":{
+		"prefix":"*compound",
+		"body":[
+			"\\compound*{${1:label1,label2,...%keyvals}}"
+		]
+	},
+
+
+	"declarecompound[]{}":{
+		"prefix":"declarecompound",
+		"body":[
+			"\\declarecompound[${2:name}]{${1:label}}"
 		]
 	}
 }

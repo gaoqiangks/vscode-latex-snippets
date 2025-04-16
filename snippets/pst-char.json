@@ -9,23 +9,7 @@
 	},
 
 
-	"pscharclip":{
-		"prefix":"pscharclip",
-		"body":[
-			"\\pscharclip[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharclip*":{
-		"prefix":"pscharclip*",
-		"body":[
-			"\\pscharclip*[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharclip":{
+	"pscharclip{}":{
 		"prefix":"pscharclip",
 		"body":[
 			"\\pscharclip{${1:text}}"
@@ -33,31 +17,7 @@
 	},
 
 
-	"pscharclip*":{
-		"prefix":"pscharclip*",
-		"body":[
-			"\\pscharclip*{${1:text}}"
-		]
-	},
-
-
-	"pscharpath":{
-		"prefix":"pscharpath",
-		"body":[
-			"\\pscharpath[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharpath*":{
-		"prefix":"pscharpath*",
-		"body":[
-			"\\pscharpath*[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharpath":{
+	"pscharpath{}":{
 		"prefix":"pscharpath",
 		"body":[
 			"\\pscharpath{${1:text}}"
@@ -65,10 +25,50 @@
 	},
 
 
-	"pscharpath*":{
-		"prefix":"pscharpath*",
+	"pscharclip*[]{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*[${2:par}]{${1:text}}"
+		]
+	},
+
+
+	"pscharclip*{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*{${1:text}}"
+		]
+	},
+
+
+	"pscharpath*[]{}":{
+		"prefix":"*pscharpath",
+		"body":[
+			"\\pscharpath*[${2:par}]{${1:text}}"
+		]
+	},
+
+
+	"pscharpath*{}":{
+		"prefix":"*pscharpath",
 		"body":[
 			"\\pscharpath*{${1:text}}"
+		]
+	},
+
+
+	"pscharclip[]{}":{
+		"prefix":"pscharclip",
+		"body":[
+			"\\pscharclip[${2:par}]{${1:text}}"
+		]
+	},
+
+
+	"pscharpath[]{}":{
+		"prefix":"pscharpath",
+		"body":[
+			"\\pscharpath[${2:par}]{${1:text}}"
 		]
 	},
 
@@ -77,17 +77,37 @@
 		"prefix":"charclip",
 		"body":[
 			"\\begin{charclip}",
-			"\t$1",
+				"\t$1",
 			"\\end{charclip}"
 		]
 	},
 
 
 	"charclip*":{
-		"prefix":"charclip*",
+		"prefix":"charclip",
 		"body":[
 			"\\begin{charclip*}",
-			"\t$1",
+				"\t$1",
+			"\\end{charclip*}"
+		]
+	},
+
+
+	"charclip":{
+		"prefix":"charclip",
+		"body":[
+			"\\begin{charclip}",
+				"\t$1",
+			"\\end{charclip}"
+		]
+	},
+
+
+	"charclip*":{
+		"prefix":"charclip",
+		"body":[
+			"\\begin{charclip*}",
+				"\t$1",
 			"\\end{charclip*}"
 		]
 	}

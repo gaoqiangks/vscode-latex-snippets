@@ -41,7 +41,7 @@
 	},
 
 
-	"Ch":{
+	"Ch{}{}":{
 		"prefix":"Ch",
 		"body":[
 			"\\Ch{${1:chord}}{${2:syllable}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"Chr":{
+	"Chr{}{}":{
 		"prefix":"Chr",
 		"body":[
 			"\\Chr{${1:chord}}{${2:syllable}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"ChX":{
+	"ChX{}{}":{
 		"prefix":"ChX",
 		"body":[
 			"\\ChX{${1:chord}}{${2:syllable}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"artistIndex":{
+	"artistIndex{}{}":{
 		"prefix":"artistIndex",
 		"body":[
 			"\\artistIndex{${1:artist}}{${2:title and number%text}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"keyIndex":{
+	"keyIndex{}{}":{
 		"prefix":"keyIndex",
 		"body":[
 			"\\keyIndex{${1:key and title%text}}{${2:number}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"titleContents":{
+	"titleContents{}{}":{
 		"prefix":"titleContents",
 		"body":[
 			"\\titleContents{${1:number}}{${2:title%text}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"titleContentsSkip":{
+	"titleContentsSkip{}{}":{
 		"prefix":"titleContentsSkip",
 		"body":[
 			"\\titleContentsSkip{${1:number}}{${2:title%text}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"titleIndex":{
+	"titleIndex{}{}":{
 		"prefix":"titleIndex",
 		"body":[
 			"\\titleIndex{${1:title%text}}{${2:number}}"
@@ -185,7 +185,7 @@
 	},
 
 
-	"SBBridge":{
+	"SBBridge{}":{
 		"prefix":"SBBridge",
 		"body":[
 			"\\SBBridge{${1:bridge}}"
@@ -193,7 +193,7 @@
 	},
 
 
-	"SBEnd":{
+	"SBEnd{}":{
 		"prefix":"SBEnd",
 		"body":[
 			"\\SBEnd{${1:ending%text}}"
@@ -201,15 +201,7 @@
 	},
 
 
-	"SBEnd":{
-		"prefix":"SBEnd",
-		"body":[
-			"\\SBEnd[${2:words-only}]{${1:ending%text}}"
-		]
-	},
-
-
-	"SBIntro":{
+	"SBIntro{}":{
 		"prefix":"SBIntro",
 		"body":[
 			"\\SBIntro{${1:intro%text}}"
@@ -217,15 +209,7 @@
 	},
 
 
-	"SBIntro":{
-		"prefix":"SBIntro",
-		"body":[
-			"\\SBIntro[${2:words-only}]{${1:intro%text}}"
-		]
-	},
-
-
-	"SBMargNote":{
+	"SBMargNote{}":{
 		"prefix":"SBMargNote",
 		"body":[
 			"\\SBMargNote{${1:text}}"
@@ -233,7 +217,7 @@
 	},
 
 
-	"SBRef":{
+	"SBRef{}{}":{
 		"prefix":"SBRef",
 		"body":[
 			"\\SBRef{${1:book title%text}}{${2:page or song number}}"
@@ -257,7 +241,7 @@
 	},
 
 
-	"STitle":{
+	"STitle{}{}":{
 		"prefix":"STitle",
 		"body":[
 			"\\STitle{${1:song title%text}}{${2:key%plain}}"
@@ -281,7 +265,7 @@
 	},
 
 
-	"CpyRt":{
+	"CpyRt{}":{
 		"prefix":"CpyRt",
 		"body":[
 			"\\CpyRt{${1:copyright info%text}}"
@@ -289,7 +273,7 @@
 	},
 
 
-	"FLineIdx":{
+	"FLineIdx{}":{
 		"prefix":"FLineIdx",
 		"body":[
 			"\\FLineIdx{${1:first line%text}}"
@@ -345,7 +329,7 @@
 	},
 
 
-	"ScriptRef":{
+	"ScriptRef{}":{
 		"prefix":"ScriptRef",
 		"body":[
 			"\\ScriptRef{${1:scripture address}}"
@@ -353,7 +337,7 @@
 	},
 
 
-	"WAndM":{
+	"WAndM{}":{
 		"prefix":"WAndM",
 		"body":[
 			"\\WAndM{${1:lyricist and composer}}"
@@ -1225,92 +1209,18 @@
 	},
 
 
-	"SBExtraKeys":{
-		"prefix":"SBExtraKeys",
+	"SBEnd[]{}":{
+		"prefix":"SBEnd",
 		"body":[
-			"\\begin{SBExtraKeys}",
-			"\t$1",
-			"\\end{SBExtraKeys}"
+			"\\SBEnd[${2:words-only}]{${1:ending%text}}"
 		]
 	},
 
 
-	"SBVerse*":{
-		"prefix":"SBVerse*",
+	"SBIntro[]{}":{
+		"prefix":"SBIntro",
 		"body":[
-			"\\begin{SBVerse*}",
-			"\t$1",
-			"\\end{SBVerse*}"
-		]
-	},
-
-
-	"SBVerse":{
-		"prefix":"SBVerse",
-		"body":[
-			"\\begin{SBVerse}",
-			"\t$1",
-			"\\end{SBVerse}"
-		]
-	},
-
-
-	"SBSection":{
-		"prefix":"SBSection",
-		"body":[
-			"\\begin{SBSection}",
-			"\t$1",
-			"\\end{SBSection}"
-		]
-	},
-
-
-	"SBBracket*":{
-		"prefix":"SBBracket*",
-		"body":[
-			"\\begin{SBBracket*}",
-			"\t$1",
-			"\\end{SBBracket*}"
-		]
-	},
-
-
-	"songTranslation":{
-		"prefix":"songTranslation",
-		"body":[
-			"\\begin{songTranslation}",
-			"\t$1",
-			"\\end{songTranslation}"
-		]
-	},
-
-
-	"song":{
-		"prefix":"song",
-		"body":[
-			"\\begin{song}",
-			"\t$1",
-			"\\end{song}"
-		]
-	},
-
-
-	"SBChorus":{
-		"prefix":"SBChorus",
-		"body":[
-			"\\begin{SBChorus}",
-			"\t$1",
-			"\\end{SBChorus}"
-		]
-	},
-
-
-	"SBOccurs":{
-		"prefix":"SBOccurs",
-		"body":[
-			"\\begin{SBOccurs}",
-			"\t$1",
-			"\\end{SBOccurs}"
+			"\\SBIntro[${2:words-only}]{${1:intro%text}}"
 		]
 	},
 
@@ -1319,28 +1229,48 @@
 		"prefix":"SBBracket",
 		"body":[
 			"\\begin{SBBracket}",
-			"\t$1",
+				"\t$1",
 			"\\end{SBBracket}"
 		]
 	},
 
 
-	"SBSection*":{
-		"prefix":"SBSection*",
+	"SBBracket*":{
+		"prefix":"SBBracket",
 		"body":[
-			"\\begin{SBSection*}",
-			"\t$1",
-			"\\end{SBSection*}"
+			"\\begin{SBBracket*}",
+				"\t$1",
+			"\\end{SBBracket*}"
 		]
 	},
 
 
-	"xlatn":{
-		"prefix":"xlatn",
+	"SBChorus":{
+		"prefix":"SBChorus",
 		"body":[
-			"\\begin{xlatn}",
-			"\t$1",
-			"\\end{xlatn}"
+			"\\begin{SBChorus}",
+				"\t$1",
+			"\\end{SBChorus}"
+		]
+	},
+
+
+	"SBExtraKeys":{
+		"prefix":"SBExtraKeys",
+		"body":[
+			"\\begin{SBExtraKeys}",
+				"\t$1",
+			"\\end{SBExtraKeys}"
+		]
+	},
+
+
+	"SBOccurs":{
+		"prefix":"SBOccurs",
+		"body":[
+			"\\begin{SBOccurs}",
+				"\t$1",
+			"\\end{SBOccurs}"
 		]
 	},
 
@@ -1349,18 +1279,98 @@
 		"prefix":"SBOpGroup",
 		"body":[
 			"\\begin{SBOpGroup}",
-			"\t$1",
+				"\t$1",
 			"\\end{SBOpGroup}"
 		]
 	},
 
 
+	"SBSection":{
+		"prefix":"SBSection",
+		"body":[
+			"\\begin{SBSection}",
+				"\t$1",
+			"\\end{SBSection}"
+		]
+	},
+
+
+	"SBVerse":{
+		"prefix":"SBVerse",
+		"body":[
+			"\\begin{SBVerse}",
+				"\t$1",
+			"\\end{SBVerse}"
+		]
+	},
+
+
+	"song":{
+		"prefix":"song",
+		"body":[
+			"\\begin{song}",
+				"\t$1",
+			"\\end{song}"
+		]
+	},
+
+
+	"songTranslation":{
+		"prefix":"songTranslation",
+		"body":[
+			"\\begin{songTranslation}",
+				"\t$1",
+			"\\end{songTranslation}"
+		]
+	},
+
+
+	"xlatn":{
+		"prefix":"xlatn",
+		"body":[
+			"\\begin{xlatn}",
+				"\t$1",
+			"\\end{xlatn}"
+		]
+	},
+
+
 	"SBChorus*":{
-		"prefix":"SBChorus*",
+		"prefix":"*SBChorus",
 		"body":[
 			"\\begin{SBChorus*}",
-			"\t$1",
+				"\t$1",
 			"\\end{SBChorus*}"
+		]
+	},
+
+
+	"SBSection*":{
+		"prefix":"*SBSection",
+		"body":[
+			"\\begin{SBSection*}",
+				"\t$1",
+			"\\end{SBSection*}"
+		]
+	},
+
+
+	"SBVerse*":{
+		"prefix":"*SBVerse",
+		"body":[
+			"\\begin{SBVerse*}",
+				"\t$1",
+			"\\end{SBVerse*}"
+		]
+	},
+
+
+	"song":{
+		"prefix":"song",
+		"body":[
+			"\\begin{song}",
+				"\t$1",
+			"\\end{song}"
 		]
 	}
 }

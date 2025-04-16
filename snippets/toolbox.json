@@ -1,7 +1,7 @@
 {
 
 
-	"toolboxMakeDef":{
+	"toolboxMakeDef{}{}":{
 		"prefix":"toolboxMakeDef",
 		"body":[
 			"\\toolboxMakeDef{${1:name}}{${2:replacement}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"toolboxMakeDef":{
-		"prefix":"toolboxMakeDef",
-		"body":[
-			"\\toolboxMakeDef[${3:prefix}]{${1:name}}{${2:replacement}}"
-		]
-	},
-
-
-	"toolboxFreeDef":{
+	"toolboxFreeDef{}":{
 		"prefix":"toolboxFreeDef",
 		"body":[
 			"\\toolboxFreeDef{${1:name}}"
@@ -25,31 +17,7 @@
 	},
 
 
-	"toolboxFreeDef":{
-		"prefix":"toolboxFreeDef",
-		"body":[
-			"\\toolboxFreeDef[${2:prefix}]{${1:name}}"
-		]
-	},
-
-
-	"toolboxFreeDef*":{
-		"prefix":"toolboxFreeDef*",
-		"body":[
-			"\\toolboxFreeDef*{${1:name}}"
-		]
-	},
-
-
-	"toolboxFreeDef*":{
-		"prefix":"toolboxFreeDef*",
-		"body":[
-			"\\toolboxFreeDef*[${2:prefix}]{${1:name}}"
-		]
-	},
-
-
-	"toolboxGobbleNext":{
+	"toolboxGobbleNext{}":{
 		"prefix":"toolboxGobbleNext",
 		"body":[
 			"\\toolboxGobbleNext{${1:cmd}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"toolboxIfNextToken":{
+	"toolboxIfNextToken{}{}{}":{
 		"prefix":"toolboxIfNextToken",
 		"body":[
 			"\\toolboxIfNextToken{${1:token}}{${2:if}}{${3:else}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"toolboxIfNextGobbling":{
+	"toolboxIfNextGobbling{}{}{}":{
 		"prefix":"toolboxIfNextGobbling",
 		"body":[
 			"\\toolboxIfNextGobbling{${1:token}}{${2:if}}{${3:else}}"
@@ -81,7 +49,7 @@
 	},
 
 
-	"toolboxIfEmpty":{
+	"toolboxIfEmpty{}{}{}":{
 		"prefix":"toolboxIfEmpty",
 		"body":[
 			"\\toolboxIfEmpty{${1:arg}}{${2:if}}{${3:else}}"
@@ -89,7 +57,7 @@
 	},
 
 
-	"toolboxIfX":{
+	"toolboxIfX{}{}{}{}":{
 		"prefix":"toolboxIfX",
 		"body":[
 			"\\toolboxIfX{${1:arg1}}{${2:arg2}}{${3:if}}{${4:else}}"
@@ -97,7 +65,7 @@
 	},
 
 
-	"toolboxIfElse":{
+	"toolboxIfElse{}{}{}":{
 		"prefix":"toolboxIfElse",
 		"body":[
 			"\\toolboxIfElse{${1:ifcmd}}{${2:if}}{${3:else}}"
@@ -105,7 +73,7 @@
 	},
 
 
-	"toolboxLoop":{
+	"toolboxLoop{}{}":{
 		"prefix":"toolboxLoop",
 		"body":[
 			"\\toolboxLoop{${1:items}}{${2:action}}"
@@ -113,7 +81,7 @@
 	},
 
 
-	"toolboxLoopName":{
+	"toolboxLoopName{}{}{}":{
 		"prefix":"toolboxLoopName",
 		"body":[
 			"\\toolboxLoopName{${1:name}}{${2:items}}{${3:action}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"toolboxTokenLoop":{
+	"toolboxTokenLoop{}{}":{
 		"prefix":"toolboxTokenLoop",
 		"body":[
 			"\\toolboxTokenLoop{${1:tokens}}{${2:action}}"
@@ -129,7 +97,7 @@
 	},
 
 
-	"toolboxTokenLoopName":{
+	"toolboxTokenLoopName{}{}{}":{
 		"prefix":"toolboxTokenLoopName",
 		"body":[
 			"\\toolboxTokenLoopName{${1:name}}{${2:tokens}}{${3:action}}"
@@ -145,23 +113,15 @@
 	},
 
 
-	"toolboxSplitAt":{
+	"toolboxSplitAt{}{}{}{}":{
 		"prefix":"toolboxSplitAt",
 		"body":[
-			"\\toolboxSplitAt{${1:argument}}{${2:search}}{${3:\beforestring%cmd}}{${4:\afterstring%cmd}}"
+			"\\toolboxSplitAt{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
 		]
 	},
 
 
-	"toolboxSplitAt*":{
-		"prefix":"toolboxSplitAt*",
-		"body":[
-			"\\toolboxSplitAt*{${1:argument}}{${2:search}}{${3:\beforestring%cmd}}{${4:\afterstring%cmd}}"
-		]
-	},
-
-
-	"toolboxMakeSplit":{
+	"toolboxMakeSplit{}{}":{
 		"prefix":"toolboxMakeSplit",
 		"body":[
 			"\\toolboxMakeSplit{${1:search}}{${2:cmd}}"
@@ -169,15 +129,7 @@
 	},
 
 
-	"toolboxMakeSplit*":{
-		"prefix":"toolboxMakeSplit*",
-		"body":[
-			"\\toolboxMakeSplit*{${1:search}}{${2:cmd}}"
-		]
-	},
-
-
-	"toolboxFreeSplit":{
+	"toolboxFreeSplit{}":{
 		"prefix":"toolboxFreeSplit",
 		"body":[
 			"\\toolboxFreeSplit{${1:cmd}}"
@@ -185,7 +137,7 @@
 	},
 
 
-	"toolboxMakeHarmless":{
+	"toolboxMakeHarmless{}":{
 		"prefix":"toolboxMakeHarmless",
 		"body":[
 			"\\toolboxMakeHarmless{${1:cmd}}"
@@ -193,7 +145,7 @@
 	},
 
 
-	"toolboxDropBrace":{
+	"toolboxDropBrace{}":{
 		"prefix":"toolboxDropBrace",
 		"body":[
 			"\\toolboxDropBrace{${1:cmd}}"
@@ -201,7 +153,7 @@
 	},
 
 
-	"toolboxNewiftrue":{
+	"toolboxNewiftrue{}":{
 		"prefix":"toolboxNewiftrue",
 		"body":[
 			"\\toolboxNewiftrue{${1:name}}"
@@ -209,7 +161,7 @@
 	},
 
 
-	"toolboxNewiffalse":{
+	"toolboxNewiffalse{}":{
 		"prefix":"toolboxNewiffalse",
 		"body":[
 			"\\toolboxNewiffalse{${1:name}}"
@@ -217,7 +169,7 @@
 	},
 
 
-	"toolboxNewifTrue":{
+	"toolboxNewifTrue{}":{
 		"prefix":"toolboxNewifTrue",
 		"body":[
 			"\\toolboxNewifTrue{${1:name}}"
@@ -225,7 +177,7 @@
 	},
 
 
-	"toolboxNewifFalse":{
+	"toolboxNewifFalse{}":{
 		"prefix":"toolboxNewifFalse",
 		"body":[
 			"\\toolboxNewifFalse{${1:name}}"
@@ -249,7 +201,7 @@
 	},
 
 
-	"toolboxFirstOfTwo":{
+	"toolboxFirstOfTwo{}{}":{
 		"prefix":"toolboxFirstOfTwo",
 		"body":[
 			"\\toolboxFirstOfTwo{${1:arg1}}{${2:arg2}}"
@@ -257,7 +209,7 @@
 	},
 
 
-	"toolboxSecondOfTwo":{
+	"toolboxSecondOfTwo{}{}":{
 		"prefix":"toolboxSecondOfTwo",
 		"body":[
 			"\\toolboxSecondOfTwo{${1:arg1}}{${2:arg2}}"
@@ -265,10 +217,58 @@
 	},
 
 
-	"toolboxGobbleArg":{
+	"toolboxGobbleArg{}":{
 		"prefix":"toolboxGobbleArg",
 		"body":[
 			"\\toolboxGobbleArg{${1:arg}}"
+		]
+	},
+
+
+	"toolboxFreeDef*{}":{
+		"prefix":"*toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef*{${1:name}}"
+		]
+	},
+
+
+	"toolboxFreeDef*[]{}":{
+		"prefix":"*toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef*[${2:prefix}]{${1:name}}"
+		]
+	},
+
+
+	"toolboxSplitAt*{}{}{}{}":{
+		"prefix":"*toolboxSplitAt",
+		"body":[
+			"\\toolboxSplitAt*{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
+		]
+	},
+
+
+	"toolboxMakeSplit*{}{}":{
+		"prefix":"*toolboxMakeSplit",
+		"body":[
+			"\\toolboxMakeSplit*{${1:search}}{${2:cmd}}"
+		]
+	},
+
+
+	"toolboxMakeDef[]{}{}":{
+		"prefix":"toolboxMakeDef",
+		"body":[
+			"\\toolboxMakeDef[${3:prefix}]{${1:name}}{${2:replacement}}"
+		]
+	},
+
+
+	"toolboxFreeDef[]{}":{
+		"prefix":"toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef[${2:prefix}]{${1:name}}"
 		]
 	}
 }

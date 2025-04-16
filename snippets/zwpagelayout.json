@@ -33,7 +33,7 @@
 	},
 
 
-	"textoverprint":{
+	"textoverprint{}":{
 		"prefix":"textoverprint",
 		"body":[
 			"\\textoverprint{${1:text}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"textknockout":{
+	"textknockout{}":{
 		"prefix":"textknockout",
 		"body":[
 			"\\textknockout{${1:text}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"SetPDFminorversion":{
+	"SetPDFminorversion{}":{
 		"prefix":"SetPDFminorversion",
 		"body":[
 			"\\SetPDFminorversion{${1:version}}"
@@ -73,14 +73,6 @@
 	},
 
 
-	"vb":{
-		"prefix":"vb",
-		"body":[
-			"\\vb[${1:number}]"
-		]
-	},
-
-
 	"NewOddPage":{
 		"prefix":"NewOddPage",
 		"body":[
@@ -89,31 +81,7 @@
 	},
 
 
-	"NewOddPage":{
-		"prefix":"NewOddPage",
-		"body":[
-			"\\NewOddPage[${1:style}]"
-		]
-	},
-
-
-	"NewOddPage*":{
-		"prefix":"NewOddPage*",
-		"body":[
-			"\\NewOddPage*"
-		]
-	},
-
-
-	"NewOddPage*":{
-		"prefix":"NewOddPage*",
-		"body":[
-			"\\NewOddPage*[${1:style}]"
-		]
-	},
-
-
-	"SetOddPageMessage":{
+	"SetOddPageMessage{}":{
 		"prefix":"SetOddPageMessage",
 		"body":[
 			"\\SetOddPageMessage{${1:text}}"
@@ -129,31 +97,7 @@
 	},
 
 
-	"NewEvenPage":{
-		"prefix":"NewEvenPage",
-		"body":[
-			"\\NewEvenPage[${1:style}]"
-		]
-	},
-
-
-	"NewEvenPage*":{
-		"prefix":"NewEvenPage*",
-		"body":[
-			"\\NewEvenPage*"
-		]
-	},
-
-
-	"NewEvenPage*":{
-		"prefix":"NewEvenPage*",
-		"body":[
-			"\\NewEvenPage*[${1:style}]"
-		]
-	},
-
-
-	"SetEvenPageMessage":{
+	"SetEvenPageMessage{}":{
 		"prefix":"SetEvenPageMessage",
 		"body":[
 			"\\SetEvenPageMessage{${1:text}}"
@@ -257,7 +201,7 @@
 	},
 
 
-	"ZWifdriver":{
+	"ZWifdriver{}{}":{
 		"prefix":"ZWifdriver",
 		"body":[
 			"\\ZWifdriver{${1:driver}}{${2:code}}"
@@ -265,10 +209,66 @@
 	},
 
 
-	"ZWsetkeys":{
+	"ZWsetkeys{}{}":{
 		"prefix":"ZWsetkeys",
 		"body":[
 			"\\ZWsetkeys{${1:family}}{${2:keyvals}}"
+		]
+	},
+
+
+	"NewOddPage*":{
+		"prefix":"*NewOddPage",
+		"body":[
+			"\\NewOddPage*"
+		]
+	},
+
+
+	"NewOddPage*[]":{
+		"prefix":"*NewOddPage",
+		"body":[
+			"\\NewOddPage*[${1:style}]"
+		]
+	},
+
+
+	"NewEvenPage*":{
+		"prefix":"*NewEvenPage",
+		"body":[
+			"\\NewEvenPage*"
+		]
+	},
+
+
+	"NewEvenPage*[]":{
+		"prefix":"*NewEvenPage",
+		"body":[
+			"\\NewEvenPage*[${1:style}]"
+		]
+	},
+
+
+	"vb[]":{
+		"prefix":"vb",
+		"body":[
+			"\\vb[${1:number}]"
+		]
+	},
+
+
+	"NewOddPage[]":{
+		"prefix":"NewOddPage",
+		"body":[
+			"\\NewOddPage[${1:style}]"
+		]
+	},
+
+
+	"NewEvenPage[]":{
+		"prefix":"NewEvenPage",
+		"body":[
+			"\\NewEvenPage[${1:style}]"
 		]
 	}
 }

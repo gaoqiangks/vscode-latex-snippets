@@ -1,18 +1,10 @@
 {
 
 
-	"coverimage":{
+	"coverimage{}":{
 		"prefix":"coverimage",
 		"body":[
 			"\\coverimage{${1:imagefile}}"
-		]
-	},
-
-
-	"coverimage":{
-		"prefix":"coverimage",
-		"body":[
-			"\\coverimage[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	},
 
@@ -25,7 +17,7 @@
 	},
 
 
-	"DeclareLanguageEbook":{
+	"DeclareLanguageEbook{}{}":{
 		"prefix":"DeclareLanguageEbook",
 		"body":[
 			"\\DeclareLanguageEbook{${1:lang name}}{${2:lang code}}"
@@ -37,6 +29,14 @@
 		"prefix":"GetLanguage",
 		"body":[
 			"\\GetLanguage"
+		]
+	},
+
+
+	"coverimage[]{}":{
+		"prefix":"coverimage",
+		"body":[
+			"\\coverimage[${2:options%keyvals}]{${1:imagefile}}"
 		]
 	}
 }

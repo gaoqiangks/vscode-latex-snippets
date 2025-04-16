@@ -1,7 +1,7 @@
 {
 
 
-	"termfile":{
+	"termfile{}{}":{
 		"prefix":"termfile",
 		"body":[
 			"\\termfile{${1:title%text}}{${2:file}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"termfile":{
-		"prefix":"termfile",
-		"body":[
-			"\\termfile[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"termfile*":{
-		"prefix":"termfile*",
-		"body":[
-			"\\termfile*[${3:options%keyvals}][${4:comments%text}]{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"termset":{
+	"termset{}":{
 		"prefix":"termset",
 		"body":[
 			"\\termset{${1:options%keyvals}}"
@@ -65,21 +49,47 @@
 	},
 
 
+	"termfile*[][]{}{}":{
+		"prefix":"*termfile",
+		"body":[
+			"\\termfile*[${3:options%keyvals}][${4:comments%text}]{${1:title%text}}{${2:file}}"
+		]
+	},
+
+
+	"termfile[]{}{}":{
+		"prefix":"termfile",
+		"body":[
+			"\\termfile[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
+		]
+	},
+
+
 	"terminal":{
 		"prefix":"terminal",
 		"body":[
 			"\\begin{terminal}",
-			"\t$1",
+				"\t$1",
+			"\\end{terminal}"
+		]
+	},
+
+
+	"terminal":{
+		"prefix":"terminal",
+		"body":[
+			"\\begin{terminal}",
+				"\t$1",
 			"\\end{terminal}"
 		]
 	},
 
 
 	"terminal*":{
-		"prefix":"terminal*",
+		"prefix":"terminal",
 		"body":[
 			"\\begin{terminal*}",
-			"\t$1",
+				"\t$1",
 			"\\end{terminal*}"
 		]
 	}

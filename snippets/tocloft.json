@@ -1,7 +1,7 @@
 {
 
 
-	"tocloftpagestyle":{
+	"tocloftpagestyle{}":{
 		"prefix":"tocloftpagestyle",
 		"body":[
 			"\\tocloftpagestyle{${1:style}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"cftdotfill":{
+	"cftdotfill{}":{
 		"prefix":"cftdotfill",
 		"body":[
 			"\\cftdotfill{${1:sep}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"cftsetpnumwidth":{
+	"cftsetpnumwidth{}":{
 		"prefix":"cftsetpnumwidth",
 		"body":[
 			"\\cftsetpnumwidth{${1:length}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"cftsetrmarg":{
+	"cftsetrmarg{}":{
 		"prefix":"cftsetrmarg",
 		"body":[
 			"\\cftsetrmarg{${1:length}}"
@@ -1161,7 +1161,7 @@
 	},
 
 
-	"cftsetindents":{
+	"cftsetindents{}{}{}":{
 		"prefix":"cftsetindents",
 		"body":[
 			"\\cftsetindents{${1:entry}}{${2:indent}}{${3:numwidth}}"
@@ -1169,7 +1169,7 @@
 	},
 
 
-	"cftpagenumbersoff":{
+	"cftpagenumbersoff{}":{
 		"prefix":"cftpagenumbersoff",
 		"body":[
 			"\\cftpagenumbersoff{${1:entry}}"
@@ -1177,7 +1177,7 @@
 	},
 
 
-	"cftpagenumberson":{
+	"cftpagenumberson{}":{
 		"prefix":"cftpagenumberson",
 		"body":[
 			"\\cftpagenumberson{${1:entry}}"
@@ -1185,15 +1185,7 @@
 	},
 
 
-	"newlistof":{
-		"prefix":"newlistof",
-		"body":[
-			"\\newlistof[${4:within}]{${1:entry}}{${2:ext}}{${3:listofname}}"
-		]
-	},
-
-
-	"newlistof":{
+	"newlistof{}{}{}":{
 		"prefix":"newlistof",
 		"body":[
 			"\\newlistof{${1:entry}}{${2:ext}}{${3:listofname}}"
@@ -1225,15 +1217,7 @@
 	},
 
 
-	"newlistentry":{
-		"prefix":"newlistentry",
-		"body":[
-			"\\newlistentry[${4:within}]{${1:entry}}{${2:ext}}{${3:level-1}}"
-		]
-	},
-
-
-	"cftchapterprecis":{
+	"cftchapterprecis{}":{
 		"prefix":"cftchapterprecis",
 		"body":[
 			"\\cftchapterprecis{${1:text}}"
@@ -1241,7 +1225,7 @@
 	},
 
 
-	"cftchapterprecishere":{
+	"cftchapterprecishere{}":{
 		"prefix":"cftchapterprecishere",
 		"body":[
 			"\\cftchapterprecishere{${1:text}}"
@@ -1249,7 +1233,7 @@
 	},
 
 
-	"cftchapterprecistoc":{
+	"cftchapterprecistoc{}":{
 		"prefix":"cftchapterprecistoc",
 		"body":[
 			"\\cftchapterprecistoc{${1:text}}"
@@ -1257,7 +1241,7 @@
 	},
 
 
-	"cftlocalchange":{
+	"cftlocalchange{}{}{}":{
 		"prefix":"cftlocalchange",
 		"body":[
 			"\\cftlocalchange{${1:file}}{${2:pnumwidth}}{${3:tocrmarg}}"
@@ -1265,7 +1249,7 @@
 	},
 
 
-	"cftaddtitleline":{
+	"cftaddtitleline{}{}{}{}":{
 		"prefix":"cftaddtitleline",
 		"body":[
 			"\\cftaddtitleline{${1:file}}{${2:kind}}{${3:title}}{${4:page}}"
@@ -1273,7 +1257,7 @@
 	},
 
 
-	"cftaddnumtitleline":{
+	"cftaddnumtitleline{}{}{}{}{}":{
 		"prefix":"cftaddnumtitleline",
 		"body":[
 			"\\cftaddnumtitleline{${1:file}}{${2:kind}}{${3:num}}{${4:title}}{${5:page}}"
@@ -1509,6 +1493,22 @@
 		"prefix":"cftparfillskip",
 		"body":[
 			"\\cftparfillskip"
+		]
+	},
+
+
+	"newlistof[]{}{}{}":{
+		"prefix":"newlistof",
+		"body":[
+			"\\newlistof[${4:within}]{${1:entry}}{${2:ext}}{${3:listofname}}"
+		]
+	},
+
+
+	"newlistentry[]{}{}{}":{
+		"prefix":"newlistentry",
+		"body":[
+			"\\newlistentry[${4:within}]{${1:entry}}{${2:ext}}{${3:level-1}}"
 		]
 	}
 }

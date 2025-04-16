@@ -17,7 +17,7 @@
 	},
 
 
-	"puyoboard":{
+	"puyoboard{}{}":{
 		"prefix":"puyoboard",
 		"body":[
 			"\\puyoboard{${1:board string}}{${2:next puyos string}}"
@@ -25,15 +25,7 @@
 	},
 
 
-	"puyoboard":{
-		"prefix":"puyoboard",
-		"body":[
-			"\\puyoboard[${3:options%keyvals}]{${1:board string}}{${2:next puyos string}}"
-		]
-	},
-
-
-	"puyomarker":{
+	"puyomarker{}":{
 		"prefix":"puyomarker",
 		"body":[
 			"\\puyomarker{${1:marker string}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"puyogrid":{
+	"puyogrid{}":{
 		"prefix":"puyogrid",
 		"body":[
 			"\\puyogrid{${1:board string}}"
@@ -49,18 +41,26 @@
 	},
 
 
-	"puyogrid":{
-		"prefix":"puyogrid",
+	"puyocolor{}{}":{
+		"prefix":"puyocolor",
 		"body":[
-			"\\puyogrid[${2:options%keyvals}]{${1:board string}}"
+			"\\puyocolor{${1:name}}{${2:r,g,b}}"
 		]
 	},
 
 
-	"puyocolor":{
-		"prefix":"puyocolor",
+	"puyoboard[]{}{}":{
+		"prefix":"puyoboard",
 		"body":[
-			"\\puyocolor{${1:name}}{${2:r,g,b}}"
+			"\\puyoboard[${3:options%keyvals}]{${1:board string}}{${2:next puyos string}}"
+		]
+	},
+
+
+	"puyogrid[]{}":{
+		"prefix":"puyogrid",
+		"body":[
+			"\\puyogrid[${2:options%keyvals}]{${1:board string}}"
 		]
 	},
 
@@ -69,7 +69,17 @@
 		"prefix":"puyotikz",
 		"body":[
 			"\\begin{puyotikz}",
-			"\t$1",
+				"\t$1",
+			"\\end{puyotikz}"
+		]
+	},
+
+
+	"puyotikz":{
+		"prefix":"puyotikz",
+		"body":[
+			"\\begin{puyotikz}",
+				"\t$1",
 			"\\end{puyotikz}"
 		]
 	}

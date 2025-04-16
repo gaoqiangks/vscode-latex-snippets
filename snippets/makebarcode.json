@@ -1,7 +1,7 @@
 {
 
 
-	"barcode":{
+	"barcode{}":{
 		"prefix":"barcode",
 		"body":[
 			"\\barcode{${1:code}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"barcode":{
-		"prefix":"barcode",
-		"body":[
-			"\\barcode[${2:options%keyvals}]{${1:code}}"
-		]
-	},
-
-
-	"HPlabel":{
+	"HPlabel{}":{
 		"prefix":"HPlabel",
 		"body":[
 			"\\HPlabel{${1:code}}"
@@ -25,18 +17,10 @@
 	},
 
 
-	"ITFbarcode":{
+	"ITFbarcode{}":{
 		"prefix":"ITFbarcode",
 		"body":[
 			"\\ITFbarcode{${1:code}}"
-		]
-	},
-
-
-	"ITFbarcode":{
-		"prefix":"ITFbarcode",
-		"body":[
-			"\\ITFbarcode[${2:options%keyvals}]{${1:code}}"
 		]
 	},
 
@@ -45,6 +29,22 @@
 		"prefix":"BarcodeSanitize",
 		"body":[
 			"\\BarcodeSanitize"
+		]
+	},
+
+
+	"barcode[]{}":{
+		"prefix":"barcode",
+		"body":[
+			"\\barcode[${2:options%keyvals}]{${1:code}}"
+		]
+	},
+
+
+	"ITFbarcode[]{}":{
+		"prefix":"ITFbarcode",
+		"body":[
+			"\\ITFbarcode[${2:options%keyvals}]{${1:code}}"
 		]
 	}
 }

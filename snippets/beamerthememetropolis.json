@@ -1,7 +1,7 @@
 {
 
 
-	"metroset":{
+	"metroset{}":{
 		"prefix":"metroset",
 		"body":[
 			"\\metroset{${1:options%keyvals}}"
@@ -9,18 +9,10 @@
 	},
 
 
-	"plain":{
+	"plain{}":{
 		"prefix":"plain",
 		"body":[
 			"\\plain{${1:title%text}}"
-		]
-	},
-
-
-	"plain":{
-		"prefix":"plain",
-		"body":[
-			"\\plain[${2:format%keyvals}]{${1:title%text}}"
 		]
 	},
 
@@ -41,7 +33,7 @@
 	},
 
 
-	"checkfont":{
+	"checkfont{}":{
 		"prefix":"checkfont",
 		"body":[
 			"\\checkfont{${1:font name}}"
@@ -49,10 +41,18 @@
 	},
 
 
-	"iffontsavailable":{
+	"iffontsavailable{}{}{}":{
 		"prefix":"iffontsavailable",
 		"body":[
 			"\\iffontsavailable{${1:font list}}{${2:true}}{${3:false}}"
+		]
+	},
+
+
+	"plain[]{}":{
+		"prefix":"plain",
+		"body":[
+			"\\plain[${2:format%keyvals}]{${1:title%text}}"
 		]
 	}
 }

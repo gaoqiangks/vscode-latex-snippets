@@ -1,7 +1,7 @@
 {
 
 
-	"controlbutton":{
+	"controlbutton{}{}{}":{
 		"prefix":"controlbutton",
 		"body":[
 			"\\controlbutton{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"controlbutton":{
+	"controlbutton[]{}{}{}":{
 		"prefix":"controlbutton",
 		"body":[
 			"\\controlbutton[${4:sequence file,start page}]{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"controlbutton":{
+	"controlbutton[]{}{}{}":{
 		"prefix":"controlbutton",
 		"body":[
 			"\\controlbutton[${4:sequence file,start page,end page}]{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}"
@@ -29,7 +29,7 @@
 		"prefix":"animation",
 		"body":[
 			"\\begin{animation}",
-			"\t$1",
+				"\t$1",
 			"\\end{animation}"
 		]
 	},
@@ -39,7 +39,17 @@
 		"prefix":"aframe",
 		"body":[
 			"\\begin{aframe}",
-			"\t$1",
+				"\t$1",
+			"\\end{aframe}"
+		]
+	},
+
+
+	"aframe":{
+		"prefix":"aframe",
+		"body":[
+			"\\begin{aframe}",
+				"\t$1",
 			"\\end{aframe}"
 		]
 	}

@@ -9,7 +9,7 @@
 	},
 
 
-	"DeclareInterlinearStyle":{
+	"DeclareInterlinearStyle{}{}":{
 		"prefix":"DeclareInterlinearStyle",
 		"body":[
 			"\\DeclareInterlinearStyle{${1:name}}{${2:options%keyvals}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"interlinearstyle":{
+	"interlinearstyle{}":{
 		"prefix":"interlinearstyle",
 		"body":[
 			"\\interlinearstyle{${1:options%keyvals}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"UseInterlinearStyle":{
+	"UseInterlinearStyle{}":{
 		"prefix":"UseInterlinearStyle",
 		"body":[
 			"\\UseInterlinearStyle{${1:name}}"
@@ -117,7 +117,17 @@
 		"prefix":"interlinear",
 		"body":[
 			"\\begin{interlinear}",
-			"\t$1",
+				"\t$1",
+			"\\end{interlinear}"
+		]
+	},
+
+
+	"interlinear":{
+		"prefix":"interlinear",
+		"body":[
+			"\\begin{interlinear}",
+				"\t$1",
 			"\\end{interlinear}"
 		]
 	}

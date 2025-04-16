@@ -1,7 +1,7 @@
 {
 
 
-	"env":{
+	"env{}":{
 		"prefix":"env",
 		"body":[
 			"\\env{${1:envname}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"bst":{
+	"bst{}":{
 		"prefix":"bst",
 		"body":[
 			"\\bst{${1:bibstyle}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"package":{
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\package{${1:package}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"cat":{
+	"cat{}":{
 		"prefix":"cat",
 		"body":[
 			"\\cat{${1:category}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"class":{
+	"class{}":{
 		"prefix":"class",
 		"body":[
 			"\\class{${1:class}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"file":{
+	"file{}":{
 		"prefix":"file",
 		"body":[
 			"\\file{${1:file}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"ext":{
+	"ext{}":{
 		"prefix":"ext",
 		"body":[
 			"\\ext{${1:extension}}"
@@ -57,7 +57,7 @@
 	},
 
 
-	"caveat":{
+	"caveat{}":{
 		"prefix":"caveat",
 		"body":[
 			"\\caveat{${1:warning text%text}}"
@@ -65,7 +65,7 @@
 	},
 
 
-	"todo":{
+	"todo{}":{
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
@@ -73,7 +73,7 @@
 	},
 
 
-	"code":{
+	"code{}":{
 		"prefix":"code",
 		"body":[
 			"\\code{${1:verbatim text%definition}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"typeset":{
+	"typeset{}":{
 		"prefix":"typeset",
 		"body":[
 			"\\typeset{${1:text}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"option":{
+	"option{}":{
 		"prefix":"option",
 		"body":[
 			"\\option{${1:option}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"program":{
+	"program{}":{
 		"prefix":"program",
 		"body":[
 			"\\program{${1:program}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"cs":{
+	"cs{}":{
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:cmd}}"
@@ -121,7 +121,7 @@
 	},
 
 
-	"cmd":{
+	"cmd{}":{
 		"prefix":"cmd",
 		"body":[
 			"\\cmd{${1:cmd}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"cname":{
+	"cname{}":{
 		"prefix":"cname",
 		"body":[
 			"\\cname{${1:csname}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"marg":{
+	"marg{}":{
 		"prefix":"marg",
 		"body":[
 			"\\marg{${1:arg}}"
@@ -145,7 +145,7 @@
 	},
 
 
-	"oarg":{
+	"oarg{}":{
 		"prefix":"oarg",
 		"body":[
 			"\\oarg{${1:arg}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"meta":{
+	"meta{}":{
 		"prefix":"meta",
 		"body":[
 			"\\meta{${1:arg}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"newprogram":{
+	"newprogram{}{}":{
 		"prefix":"newprogram",
 		"body":[
 			"\\newprogram{${1:cmd}}{${2:initial}}"
@@ -169,15 +169,7 @@
 	},
 
 
-	"newprogram":{
-		"prefix":"newprogram",
-		"body":[
-			"\\newprogram{${1:cmd}}{${2:initial}}[${3:subsequent}]"
-		]
-	},
-
-
-	"ProcessDTXFile":{
+	"ProcessDTXFile{}":{
 		"prefix":"ProcessDTXFile",
 		"body":[
 			"\\ProcessDTXFile{${1:file name%file}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"AddToCheckSum":{
+	"AddToCheckSum{}":{
 		"prefix":"AddToCheckSum",
 		"body":[
 			"\\AddToCheckSum{${1:number}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"IfCitations":{
+	"IfCitations{}":{
 		"prefix":"IfCitations",
 		"body":[
 			"\\IfCitations{${1:arg}}"
@@ -217,7 +209,7 @@
 	},
 
 
-	"IfJustLoadInformation":{
+	"IfJustLoadInformation{}":{
 		"prefix":"IfJustLoadInformation",
 		"body":[
 			"\\IfJustLoadInformation{${1:arg}}"
@@ -345,62 +337,10 @@
 	},
 
 
-	"codeexample":{
-		"prefix":"codeexample",
+	"newprogram{}{}[]":{
+		"prefix":"newprogram",
 		"body":[
-			"\\begin{codeexample}",
-			"\t$1",
-			"\\end{codeexample}"
-		]
-	},
-
-
-	"codeexample*":{
-		"prefix":"codeexample*",
-		"body":[
-			"\\begin{codeexample*}",
-			"\t$1",
-			"\\end{codeexample*}"
-		]
-	},
-
-
-	"typesetexample":{
-		"prefix":"typesetexample",
-		"body":[
-			"\\begin{typesetexample}",
-			"\t$1",
-			"\\end{typesetexample}"
-		]
-	},
-
-
-	"todoenv":{
-		"prefix":"todoenv",
-		"body":[
-			"\\begin{todoenv}",
-			"\t$1",
-			"\\end{todoenv}"
-		]
-	},
-
-
-	"codeexamplex":{
-		"prefix":"codeexamplex",
-		"body":[
-			"\\begin{codeexamplex}",
-			"\t$1",
-			"\\end{codeexamplex}"
-		]
-	},
-
-
-	"bothexample*":{
-		"prefix":"bothexample*",
-		"body":[
-			"\\begin{bothexample*}",
-			"\t$1",
-			"\\end{bothexample*}"
+			"\\newprogram{${1:cmd}}{${2:initial}}[${3:subsequent}]"
 		]
 	},
 
@@ -409,28 +349,48 @@
 		"prefix":"warning",
 		"body":[
 			"\\begin{warning}",
-			"\t$1",
+				"\t$1",
 			"\\end{warning}"
 		]
 	},
 
 
-	"splitexample":{
-		"prefix":"splitexample",
+	"todoenv":{
+		"prefix":"todoenv",
 		"body":[
-			"\\begin{splitexample}",
-			"\t$1",
-			"\\end{splitexample}"
+			"\\begin{todoenv}",
+				"\t$1",
+			"\\end{todoenv}"
 		]
 	},
 
 
-	"splitexample*":{
-		"prefix":"splitexample*",
+	"typesetexample":{
+		"prefix":"typesetexample",
 		"body":[
-			"\\begin{splitexample*}",
-			"\t$1",
-			"\\end{splitexample*}"
+			"\\begin{typesetexample}",
+				"\t$1",
+			"\\end{typesetexample}"
+		]
+	},
+
+
+	"codeexample":{
+		"prefix":"codeexample",
+		"body":[
+			"\\begin{codeexample}",
+				"\t$1",
+			"\\end{codeexample}"
+		]
+	},
+
+
+	"codeexamplex":{
+		"prefix":"codeexamplex",
+		"body":[
+			"\\begin{codeexamplex}",
+				"\t$1",
+			"\\end{codeexamplex}"
 		]
 	},
 
@@ -439,8 +399,48 @@
 		"prefix":"bothexample",
 		"body":[
 			"\\begin{bothexample}",
-			"\t$1",
+				"\t$1",
 			"\\end{bothexample}"
+		]
+	},
+
+
+	"splitexample":{
+		"prefix":"splitexample",
+		"body":[
+			"\\begin{splitexample}",
+				"\t$1",
+			"\\end{splitexample}"
+		]
+	},
+
+
+	"codeexample*":{
+		"prefix":"*codeexample",
+		"body":[
+			"\\begin{codeexample*}",
+				"\t$1",
+			"\\end{codeexample*}"
+		]
+	},
+
+
+	"bothexample*":{
+		"prefix":"*bothexample",
+		"body":[
+			"\\begin{bothexample*}",
+				"\t$1",
+			"\\end{bothexample*}"
+		]
+	},
+
+
+	"splitexample*":{
+		"prefix":"*splitexample",
+		"body":[
+			"\\begin{splitexample*}",
+				"\t$1",
+			"\\end{splitexample*}"
 		]
 	}
 }

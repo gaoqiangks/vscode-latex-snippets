@@ -1,7 +1,7 @@
 {
 
 
-	"NodetreeSet":{
+	"NodetreeSet{}":{
 		"prefix":"NodetreeSet",
 		"body":[
 			"\\NodetreeSet{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"NodetreeEmbedCmd":{
+	"NodetreeEmbedCmd{}":{
 		"prefix":"NodetreeEmbedCmd",
 		"body":[
 			"\\NodetreeEmbedCmd{${1:TeX markup}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"NodetreeEmbedCmd":{
-		"prefix":"NodetreeEmbedCmd",
-		"body":[
-			"\\NodetreeEmbedCmd[${2:options%keyvals}]{${1:TeX markup}}"
-		]
-	},
-
-
-	"NodetreeEmbedInput":{
+	"NodetreeEmbedInput{}":{
 		"prefix":"NodetreeEmbedInput",
 		"body":[
 			"\\NodetreeEmbedInput{${1:file}}"
@@ -33,23 +25,7 @@
 	},
 
 
-	"NodetreeEmbedInput":{
-		"prefix":"NodetreeEmbedInput",
-		"body":[
-			"\\NodetreeEmbedInput[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"NodetreeSetOption":{
-		"prefix":"NodetreeSetOption",
-		"body":[
-			"\\NodetreeSetOption[${2:option%keyvals}]{${1:value}}"
-		]
-	},
-
-
-	"NodetreeResetOption":{
+	"NodetreeResetOption{}":{
 		"prefix":"NodetreeResetOption",
 		"body":[
 			"\\NodetreeResetOption{${1:option%keyvals}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"NodetreeRegisterCallback":{
+	"NodetreeRegisterCallback{}":{
 		"prefix":"NodetreeRegisterCallback",
 		"body":[
 			"\\NodetreeRegisterCallback{${1:callbacks}}"
@@ -73,10 +49,44 @@
 	},
 
 
-	"NodetreeUnregisterCallback":{
+	"NodetreeUnregisterCallback{}":{
 		"prefix":"NodetreeUnregisterCallback",
 		"body":[
 			"\\NodetreeUnregisterCallback{${1:callbacks}}"
+		]
+	},
+
+
+	"NodetreeEmbedCmd[]{}":{
+		"prefix":"NodetreeEmbedCmd",
+		"body":[
+			"\\NodetreeEmbedCmd[${2:options%keyvals}]{${1:TeX markup}}"
+		]
+	},
+
+
+	"NodetreeEmbedInput[]{}":{
+		"prefix":"NodetreeEmbedInput",
+		"body":[
+			"\\NodetreeEmbedInput[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"NodetreeSetOption[]{}":{
+		"prefix":"NodetreeSetOption",
+		"body":[
+			"\\NodetreeSetOption[${2:option%keyvals}]{${1:value}}"
+		]
+	},
+
+
+	"NodetreeEmbedView":{
+		"prefix":"NodetreeEmbedView",
+		"body":[
+			"\\begin{NodetreeEmbedView}",
+				"\t$1",
+			"\\end{NodetreeEmbedView}"
 		]
 	},
 
@@ -85,7 +95,7 @@
 		"prefix":"NodetreeEmbedEnv",
 		"body":[
 			"\\begin{NodetreeEmbedEnv}",
-			"\t$1",
+				"\t$1",
 			"\\end{NodetreeEmbedEnv}"
 		]
 	},
@@ -95,8 +105,18 @@
 		"prefix":"NodetreeEmbedView",
 		"body":[
 			"\\begin{NodetreeEmbedView}",
-			"\t$1",
+				"\t$1",
 			"\\end{NodetreeEmbedView}"
+		]
+	},
+
+
+	"NodetreeEmbedEnv":{
+		"prefix":"NodetreeEmbedEnv",
+		"body":[
+			"\\begin{NodetreeEmbedEnv}",
+				"\t$1",
+			"\\end{NodetreeEmbedEnv}"
 		]
 	}
 }

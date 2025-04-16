@@ -1,7 +1,7 @@
 {
 
 
-	"readgraph":{
+	"readgraph{}":{
 		"prefix":"readgraph",
 		"body":[
 			"\\readgraph{${1:graph specs}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"readgraph*":{
-		"prefix":"readgraph*",
-		"body":[
-			"\\readgraph*{${1:graph specs}}"
-		]
-	},
-
-
-	"dijkstra":{
+	"dijkstra{}{}":{
 		"prefix":"dijkstra",
 		"body":[
 			"\\dijkstra{${1:vertex1}}{${2:vertex2}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"dijkstra":{
-		"prefix":"dijkstra",
-		"body":[
-			"\\dijkstra[${3:options%keyvals}]{${1:vertex1}}{${2:vertex2}}"
-		]
-	},
-
-
-	"setdijk":{
+	"setdijk{}":{
 		"prefix":"setdijk",
 		"body":[
 			"\\setdijk{${1:options%keyvals}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"setdijkdefault":{
+	"setdijkdefault{}":{
 		"prefix":"setdijkdefault",
 		"body":[
 			"\\setdijkdefault{${1:options%keyvals}}"
@@ -73,7 +57,7 @@
 	},
 
 
-	"formatnodewithprev":{
+	"formatnodewithprev{}{}":{
 		"prefix":"formatnodewithprev",
 		"body":[
 			"\\formatnodewithprev{${1:arg1}}{${2:arg2}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"highlightfirstnode":{
+	"highlightfirstnode{}":{
 		"prefix":"highlightfirstnode",
 		"body":[
 			"\\highlightfirstnode{${1:arg}}"
@@ -89,10 +73,26 @@
 	},
 
 
-	"highlightnode":{
+	"highlightnode{}{}":{
 		"prefix":"highlightnode",
 		"body":[
 			"\\highlightnode{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"readgraph*{}":{
+		"prefix":"*readgraph",
+		"body":[
+			"\\readgraph*{${1:graph specs}}"
+		]
+	},
+
+
+	"dijkstra[]{}{}":{
+		"prefix":"dijkstra",
+		"body":[
+			"\\dijkstra[${3:options%keyvals}]{${1:vertex1}}{${2:vertex2}}"
 		]
 	}
 }

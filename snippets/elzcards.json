@@ -1,7 +1,7 @@
 {
 
 
-	"BusinessCard":{
+	"BusinessCard{}":{
 		"prefix":"BusinessCard",
 		"body":[
 			"\\BusinessCard{${1:front side%text}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"BusinessCard":{
-		"prefix":"BusinessCard",
-		"body":[
-			"\\BusinessCard{${1:front side%text}}[${2:back side%text}]"
-		]
-	},
-
-
-	"IndexCard":{
+	"IndexCard{}":{
 		"prefix":"IndexCard",
 		"body":[
 			"\\IndexCard{${1:front side%text}}"
@@ -25,26 +17,10 @@
 	},
 
 
-	"IndexCard":{
-		"prefix":"IndexCard",
-		"body":[
-			"\\IndexCard{${1:front side%text}}[${2:back side%text}]"
-		]
-	},
-
-
-	"FlashCard":{
+	"FlashCard{}":{
 		"prefix":"FlashCard",
 		"body":[
 			"\\FlashCard{${1:front side%text}}"
-		]
-	},
-
-
-	"FlashCard":{
-		"prefix":"FlashCard",
-		"body":[
-			"\\FlashCard{${1:front side%text}}[${2:back side%text}]"
 		]
 	},
 
@@ -89,30 +65,6 @@
 	},
 
 
-	"MakeBC":{
-		"prefix":"MakeBC",
-		"body":[
-			"\\MakeBC[${1:options%keyvals}]"
-		]
-	},
-
-
-	"MakeBC*":{
-		"prefix":"MakeBC*",
-		"body":[
-			"\\MakeBC*"
-		]
-	},
-
-
-	"MakeBC*":{
-		"prefix":"MakeBC*",
-		"body":[
-			"\\MakeBC*[${1:options%keyvals}]"
-		]
-	},
-
-
 	"MakeIC":{
 		"prefix":"MakeIC",
 		"body":[
@@ -121,58 +73,10 @@
 	},
 
 
-	"MakeIC":{
-		"prefix":"MakeIC",
-		"body":[
-			"\\MakeIC[${1:options%keyvals}]"
-		]
-	},
-
-
-	"MakeIC*":{
-		"prefix":"MakeIC*",
-		"body":[
-			"\\MakeIC*"
-		]
-	},
-
-
-	"MakeIC*":{
-		"prefix":"MakeIC*",
-		"body":[
-			"\\MakeIC*[${1:options%keyvals}]"
-		]
-	},
-
-
 	"MakeFC":{
 		"prefix":"MakeFC",
 		"body":[
 			"\\MakeFC"
-		]
-	},
-
-
-	"MakeFC":{
-		"prefix":"MakeFC",
-		"body":[
-			"\\MakeFC[${1:options%keyvals}]"
-		]
-	},
-
-
-	"MakeFC*":{
-		"prefix":"MakeFC*",
-		"body":[
-			"\\MakeFC*"
-		]
-	},
-
-
-	"MakeFC*":{
-		"prefix":"MakeFC*",
-		"body":[
-			"\\MakeFC*[${1:options%keyvals}]"
 		]
 	},
 
@@ -193,7 +97,7 @@
 	},
 
 
-	"BCdim":{
+	"BCdim{}{}":{
 		"prefix":"BCdim",
 		"body":[
 			"\\BCdim{${1:h-size}}{${2:v-size}}"
@@ -201,7 +105,7 @@
 	},
 
 
-	"ICdim":{
+	"ICdim{}{}":{
 		"prefix":"ICdim",
 		"body":[
 			"\\ICdim{${1:h-size}}{${2:v-size}}"
@@ -209,7 +113,7 @@
 	},
 
 
-	"FCdim":{
+	"FCdim{}{}":{
 		"prefix":"FCdim",
 		"body":[
 			"\\FCdim{${1:h-size}}{${2:v-size}}"
@@ -217,7 +121,7 @@
 	},
 
 
-	"CardGap":{
+	"CardGap{}{}":{
 		"prefix":"CardGap",
 		"body":[
 			"\\CardGap{${1:h-gap}}{${2:v-gap}}"
@@ -289,7 +193,7 @@
 	},
 
 
-	"SegmentLength":{
+	"SegmentLength{}":{
 		"prefix":"SegmentLength",
 		"body":[
 			"\\SegmentLength{${1:length}}"
@@ -297,7 +201,7 @@
 	},
 
 
-	"LineThickness":{
+	"LineThickness{}":{
 		"prefix":"LineThickness",
 		"body":[
 			"\\LineThickness{${1:thickness}}"
@@ -305,7 +209,7 @@
 	},
 
 
-	"DotSize":{
+	"DotSize{}":{
 		"prefix":"DotSize",
 		"body":[
 			"\\DotSize{${1:size}}"
@@ -313,10 +217,106 @@
 	},
 
 
-	"CropColor":{
+	"CropColor{}":{
 		"prefix":"CropColor",
 		"body":[
 			"\\CropColor{${1:color}}"
+		]
+	},
+
+
+	"MakeBC*":{
+		"prefix":"*MakeBC",
+		"body":[
+			"\\MakeBC*"
+		]
+	},
+
+
+	"MakeBC*[]":{
+		"prefix":"*MakeBC",
+		"body":[
+			"\\MakeBC*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"MakeIC*":{
+		"prefix":"*MakeIC",
+		"body":[
+			"\\MakeIC*"
+		]
+	},
+
+
+	"MakeIC*[]":{
+		"prefix":"*MakeIC",
+		"body":[
+			"\\MakeIC*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"MakeFC*":{
+		"prefix":"*MakeFC",
+		"body":[
+			"\\MakeFC*"
+		]
+	},
+
+
+	"MakeFC*[]":{
+		"prefix":"*MakeFC",
+		"body":[
+			"\\MakeFC*[${1:options%keyvals}]"
+		]
+	},
+
+
+	"BusinessCard{}[]":{
+		"prefix":"BusinessCard",
+		"body":[
+			"\\BusinessCard{${1:front side%text}}[${2:back side%text}]"
+		]
+	},
+
+
+	"IndexCard{}[]":{
+		"prefix":"IndexCard",
+		"body":[
+			"\\IndexCard{${1:front side%text}}[${2:back side%text}]"
+		]
+	},
+
+
+	"FlashCard{}[]":{
+		"prefix":"FlashCard",
+		"body":[
+			"\\FlashCard{${1:front side%text}}[${2:back side%text}]"
+		]
+	},
+
+
+	"MakeBC[]":{
+		"prefix":"MakeBC",
+		"body":[
+			"\\MakeBC[${1:options%keyvals}]"
+		]
+	},
+
+
+	"MakeIC[]":{
+		"prefix":"MakeIC",
+		"body":[
+			"\\MakeIC[${1:options%keyvals}]"
+		]
+	},
+
+
+	"MakeFC[]":{
+		"prefix":"MakeFC",
+		"body":[
+			"\\MakeFC[${1:options%keyvals}]"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"cbcolor":{
+	"cbcolor{}":{
 		"prefix":"cbcolor",
 		"body":[
 			"\\cbcolor{${1:color}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"cbcolor":{
+	"cbcolor{}":{
 		"prefix":"cbcolor",
 		"body":[
 			"\\cbcolor{${1:color}}"
@@ -37,14 +37,6 @@
 		"prefix":"cbdelete",
 		"body":[
 			"\\cbdelete"
-		]
-	},
-
-
-	"cbdelete":{
-		"prefix":"cbdelete",
-		"body":[
-			"\\cbdelete[${1:width}]"
 		]
 	},
 
@@ -89,10 +81,18 @@
 	},
 
 
-	"driver":{
+	"driver{}":{
 		"prefix":"driver",
 		"body":[
 			"\\driver{${1:driver name}}"
+		]
+	},
+
+
+	"cbdelete[]":{
+		"prefix":"cbdelete",
+		"body":[
+			"\\cbdelete[${1:width}]"
 		]
 	},
 
@@ -101,7 +101,7 @@
 		"prefix":"changebar",
 		"body":[
 			"\\begin{changebar}",
-			"\t$1",
+				"\t$1",
 			"\\end{changebar}"
 		]
 	}

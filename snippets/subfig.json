@@ -1,7 +1,7 @@
 {
 
 
-	"subfigure":{
+	"subfigure{}":{
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure{${1:body%text}}"
@@ -9,23 +9,7 @@
 	},
 
 
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\subfigure[${2:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\subfigure[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"subtable":{
+	"subtable{}":{
 		"prefix":"subtable",
 		"body":[
 			"\\subtable{${1:body%text}}"
@@ -33,23 +17,7 @@
 	},
 
 
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable[${2:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"Subref":{
+	"Subref{}":{
 		"prefix":"Subref",
 		"body":[
 			"\\Subref{${1:label}}"
@@ -57,7 +25,7 @@
 	},
 
 
-	"newsubfloat":{
+	"newsubfloat{}":{
 		"prefix":"newsubfloat",
 		"body":[
 			"\\newsubfloat{${1:float name}}"
@@ -65,15 +33,7 @@
 	},
 
 
-	"newsubfloat":{
-		"prefix":"newsubfloat",
-		"body":[
-			"\\newsubfloat[${2:kv-list}]{${1:float name}}"
-		]
-	},
-
-
-	"DeclareCaptionListOfFormat":{
+	"DeclareCaptionListOfFormat{}{}":{
 		"prefix":"DeclareCaptionListOfFormat",
 		"body":[
 			"\\DeclareCaptionListOfFormat{${1:keyword}}{${2:code}}"
@@ -81,7 +41,7 @@
 	},
 
 
-	"DeclareSubrefFormat":{
+	"DeclareSubrefFormat{}{}":{
 		"prefix":"DeclareSubrefFormat",
 		"body":[
 			"\\DeclareSubrefFormat{${1:keyword}}{${2:code}}"
@@ -89,7 +49,7 @@
 	},
 
 
-	"subfloat":{
+	"subfloat{}":{
 		"prefix":"subfloat",
 		"body":[
 			"\\subfloat{${1:body%text}}"
@@ -97,34 +57,10 @@
 	},
 
 
-	"subfloat":{
-		"prefix":"subfloat",
-		"body":[
-			"\\subfloat[${2:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"subfloat":{
-		"prefix":"subfloat",
-		"body":[
-			"\\subfloat[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
-	},
-
-
-	"subref":{
+	"subref{}":{
 		"prefix":"subref",
 		"body":[
 			"\\subref{${1:label}}"
-		]
-	},
-
-
-	"subref*":{
-		"prefix":"subref*",
-		"body":[
-			"\\subref*{${1:label}}"
 		]
 	},
 
@@ -165,6 +101,70 @@
 		"prefix":"subtablename",
 		"body":[
 			"\\subtablename"
+		]
+	},
+
+
+	"subref*{}":{
+		"prefix":"*subref",
+		"body":[
+			"\\subref*{${1:label}}"
+		]
+	},
+
+
+	"subfigure[]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\subfigure[${2:subcaption%text}]{${1:body%text}}"
+		]
+	},
+
+
+	"subfigure[][]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\subfigure[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
+		]
+	},
+
+
+	"subtable[]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable[${2:subcaption%text}]{${1:body%text}}"
+		]
+	},
+
+
+	"subtable[][]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
+		]
+	},
+
+
+	"newsubfloat[]{}":{
+		"prefix":"newsubfloat",
+		"body":[
+			"\\newsubfloat[${2:kv-list}]{${1:float name}}"
+		]
+	},
+
+
+	"subfloat[]{}":{
+		"prefix":"subfloat",
+		"body":[
+			"\\subfloat[${2:subcaption%text}]{${1:body%text}}"
+		]
+	},
+
+
+	"subfloat[][]{}":{
+		"prefix":"subfloat",
+		"body":[
+			"\\subfloat[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
 		]
 	}
 }

@@ -1,7 +1,7 @@
 {
 
 
-	"MakeFramed":{
+	"MakeFramed{}":{
 		"prefix":"MakeFramed",
 		"body":[
 			"\\MakeFramed{${1:settings}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"CustomFBox":{
+	"CustomFBox{}{}{}{}{}{}":{
 		"prefix":"CustomFBox",
 		"body":[
 			"\\CustomFBox{${1:after-top}}{${2:above-bottom}}{${3:trulewidth}}{${4:brulewidth}}{${5:lrulewidth}}{${6:rrulewidth}}"
@@ -97,7 +97,7 @@
 	},
 
 
-	"OpenFBox":{
+	"OpenFBox{}{}":{
 		"prefix":"OpenFBox",
 		"body":[
 			"\\OpenFBox{${1:trulewidth}}{${2:brulewidth}}"
@@ -105,7 +105,7 @@
 	},
 
 
-	"TitleBarFrame":{
+	"TitleBarFrame[]{}{}":{
 		"prefix":"TitleBarFrame",
 		"body":[
 			"\\TitleBarFrame[${3:marker}]{${1:title}}{${2:contents}}"
@@ -113,12 +113,12 @@
 	},
 
 
-	"snugshade":{
-		"prefix":"snugshade",
+	"framed":{
+		"prefix":"framed",
 		"body":[
-			"\\begin{snugshade}",
-			"\t$1",
-			"\\end{snugshade}"
+			"\\begin{framed}",
+				"\t$1",
+			"\\end{framed}"
 		]
 	},
 
@@ -127,7 +127,7 @@
 		"prefix":"oframed",
 		"body":[
 			"\\begin{oframed}",
-			"\t$1",
+				"\t$1",
 			"\\end{oframed}"
 		]
 	},
@@ -137,38 +137,18 @@
 		"prefix":"shaded",
 		"body":[
 			"\\begin{shaded}",
-			"\t$1",
+				"\t$1",
 			"\\end{shaded}"
 		]
 	},
 
 
-	"framed":{
-		"prefix":"framed",
+	"snugshade":{
+		"prefix":"snugshade",
 		"body":[
-			"\\begin{framed}",
-			"\t$1",
-			"\\end{framed}"
-		]
-	},
-
-
-	"snugshade*":{
-		"prefix":"snugshade*",
-		"body":[
-			"\\begin{snugshade*}",
-			"\t$1",
-			"\\end{snugshade*}"
-		]
-	},
-
-
-	"shaded*":{
-		"prefix":"shaded*",
-		"body":[
-			"\\begin{shaded*}",
-			"\t$1",
-			"\\end{shaded*}"
+			"\\begin{snugshade}",
+				"\t$1",
+			"\\end{snugshade}"
 		]
 	},
 
@@ -177,8 +157,28 @@
 		"prefix":"leftbar",
 		"body":[
 			"\\begin{leftbar}",
-			"\t$1",
+				"\t$1",
 			"\\end{leftbar}"
+		]
+	},
+
+
+	"shaded*":{
+		"prefix":"*shaded",
+		"body":[
+			"\\begin{shaded*}",
+				"\t$1",
+			"\\end{shaded*}"
+		]
+	},
+
+
+	"snugshade*":{
+		"prefix":"*snugshade",
+		"body":[
+			"\\begin{snugshade*}",
+				"\t$1",
+			"\\end{snugshade*}"
 		]
 	}
 }

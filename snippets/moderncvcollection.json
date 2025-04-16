@@ -1,7 +1,7 @@
 {
 
 
-	"collectionnew":{
+	"collectionnew{}":{
 		"prefix":"collectionnew",
 		"body":[
 			"\\collectionnew{${1:name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"collectionadd":{
+	"collectionadd{}{}":{
 		"prefix":"collectionadd",
 		"body":[
 			"\\collectionadd{${1:name}}{${2:item to add}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"collectionadd":{
-		"prefix":"collectionadd",
-		"body":[
-			"\\collectionadd[${3:key%plain}]{${1:name}}{${2:item to add}}"
-		]
-	},
-
-
-	"collectioncount":{
+	"collectioncount{}":{
 		"prefix":"collectioncount",
 		"body":[
 			"\\collectioncount{${1:name}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"collectiongetitem":{
+	"collectiongetitem{}{}":{
 		"prefix":"collectiongetitem",
 		"body":[
 			"\\collectiongetitem{${1:name}}{${2:element id}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"collectiongetkey":{
+	"collectiongetkey{}{}":{
 		"prefix":"collectiongetkey",
 		"body":[
 			"\\collectiongetkey{${1:name}}{${2:element id}}"
@@ -57,7 +49,7 @@
 	},
 
 
-	"collectionloop":{
+	"collectionloop{}{}":{
 		"prefix":"collectionloop",
 		"body":[
 			"\\collectionloop{${1:name}}{${2:operation sequence}}"
@@ -89,10 +81,18 @@
 	},
 
 
-	"collectionfindbykey":{
+	"collectionfindbykey{}{}":{
 		"prefix":"collectionfindbykey",
 		"body":[
 			"\\collectionfindbykey{${1:name}}{${2:key%plain}}"
+		]
+	},
+
+
+	"collectionadd[]{}{}":{
+		"prefix":"collectionadd",
+		"body":[
+			"\\collectionadd[${3:key%plain}]{${1:name}}{${2:item to add}}"
 		]
 	}
 }

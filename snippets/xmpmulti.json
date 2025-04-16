@@ -1,7 +1,15 @@
 {
 
 
-	"multiinclude":{
+	"multiinclude{}":{
+		"prefix":"multiinclude",
+		"body":[
+			"\\multiinclude{${1:base file name%file}}"
+		]
+	},
+
+
+	"multiinclude[][]{}":{
 		"prefix":"multiinclude",
 		"body":[
 			"\\multiinclude[${2:<default overlay specification>}][${3:options%keyvals}]{${1:base file name%file}}"
@@ -9,18 +17,10 @@
 	},
 
 
-	"multiinclude":{
+	"multiinclude[]{}":{
 		"prefix":"multiinclude",
 		"body":[
 			"\\multiinclude[${2:<default overlay specification>}]{${1:base file name%file}}"
-		]
-	},
-
-
-	"multiinclude":{
-		"prefix":"multiinclude",
-		"body":[
-			"\\multiinclude{${1:base file name%file}}"
 		]
 	}
 }

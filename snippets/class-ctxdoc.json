@@ -1,7 +1,7 @@
 {
 
 
-	"email":{
+	"email{}":{
 		"prefix":"email",
 		"body":[
 			"\\email{${1:email%URL}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"TPTtagStyle":{
+	"TPTtagStyle{}":{
 		"prefix":"TPTtagStyle",
 		"body":[
 			"\\TPTtagStyle{${1:link text}}"
@@ -113,7 +113,7 @@
 	},
 
 
-	"zihaopt":{
+	"zihaopt{}":{
 		"prefix":"zihaopt",
 		"body":[
 			"\\zihaopt{${1:size}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"package":{
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\package{${1:package}}"
@@ -137,15 +137,7 @@
 	},
 
 
-	"package":{
-		"prefix":"package",
-		"body":[
-			"\\package[${2:CTAN path%URL}]{${1:package}}"
-		]
-	},
-
-
-	"GetFileId":{
+	"GetFileId{}":{
 		"prefix":"GetFileId",
 		"body":[
 			"\\GetFileId{${1:file}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"defaultval":{
+	"defaultval{}":{
 		"prefix":"defaultval",
 		"body":[
 			"\\defaultval{${1:value}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"defaultvalaux":{
+	"defaultvalaux{}":{
 		"prefix":"defaultvalaux",
 		"body":[
 			"\\defaultvalaux{${1:value}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"opt":{
+	"opt{}":{
 		"prefix":"opt",
 		"body":[
 			"\\opt{${1:option}}"
@@ -289,7 +281,7 @@
 	},
 
 
-	"bashcmd":{
+	"bashcmd{}":{
 		"prefix":"bashcmd",
 		"body":[
 			"\\bashcmd{${1:command%plain}}"
@@ -321,7 +313,7 @@
 	},
 
 
-	"ctexkitrev":{
+	"ctexkitrev{}":{
 		"prefix":"ctexkitrev",
 		"body":[
 			"\\ctexkitrev{${1:commit}}"
@@ -337,7 +329,7 @@
 	},
 
 
-	"CTEXnumberline":{
+	"CTEXnumberline{}":{
 		"prefix":"CTEXnumberline",
 		"body":[
 			"\\CTEXnumberline{${1:arg}}"
@@ -345,12 +337,50 @@
 	},
 
 
-	"tablenotes":{
-		"prefix":"tablenotes",
+	"package[]{}":{
+		"prefix":"package",
 		"body":[
-			"\\begin{tablenotes}",
-			"\t$1",
-			"\\end{tablenotes}"
+			"\\package[${2:CTAN path%URL}]{${1:package}}"
+		]
+	},
+
+
+	"optdesc":{
+		"prefix":"optdesc",
+		"body":[
+			"\\begin{optdesc}",
+				"\t$1",
+			"\\end{optdesc}"
+		]
+	},
+
+
+	"frameverb":{
+		"prefix":"frameverb",
+		"body":[
+			"\\begin{frameverb}",
+				"\t$1",
+			"\\end{frameverb}"
+		]
+	},
+
+
+	"ctexexam":{
+		"prefix":"ctexexam",
+		"body":[
+			"\\begin{ctexexam}",
+				"\t$1",
+			"\\end{ctexexam}"
+		]
+	},
+
+
+	"defaultcapconfig":{
+		"prefix":"defaultcapconfig",
+		"body":[
+			"\\begin{defaultcapconfig}",
+				"\t$1",
+			"\\end{defaultcapconfig}"
 		]
 	},
 
@@ -359,7 +389,7 @@
 		"prefix":"arguments",
 		"body":[
 			"\\begin{arguments}",
-			"\t$1",
+				"\t$1",
 			"\\end{arguments}"
 		]
 	},
@@ -369,28 +399,18 @@
 		"prefix":"optdesc",
 		"body":[
 			"\\begin{optdesc}",
-			"\t$1",
+				"\t$1",
 			"\\end{optdesc}"
 		]
 	},
 
 
-	"defaultcapconfig":{
-		"prefix":"defaultcapconfig",
+	"tablenotes":{
+		"prefix":"tablenotes",
 		"body":[
-			"\\begin{defaultcapconfig}",
-			"\t$1",
-			"\\end{defaultcapconfig}"
-		]
-	},
-
-
-	"ctexexam":{
-		"prefix":"ctexexam",
-		"body":[
-			"\\begin{ctexexam}",
-			"\t$1",
-			"\\end{ctexexam}"
+			"\\begin{tablenotes}",
+				"\t$1",
+			"\\end{tablenotes}"
 		]
 	},
 
@@ -399,8 +419,18 @@
 		"prefix":"frameverb",
 		"body":[
 			"\\begin{frameverb}",
-			"\t$1",
+				"\t$1",
 			"\\end{frameverb}"
+		]
+	},
+
+
+	"ctexexam":{
+		"prefix":"ctexexam",
+		"body":[
+			"\\begin{ctexexam}",
+				"\t$1",
+			"\\end{ctexexam}"
 		]
 	}
 }

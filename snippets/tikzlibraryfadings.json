@@ -1,7 +1,7 @@
 {
 
 
-	"tikzfading":{
+	"tikzfading[]":{
 		"prefix":"tikzfading",
 		"body":[
 			"\\tikzfading[${1:options%keyvals}]"
@@ -13,7 +13,17 @@
 		"prefix":"tikzfadingfrompicture",
 		"body":[
 			"\\begin{tikzfadingfrompicture}",
-			"\t$1",
+				"\t$1",
+			"\\end{tikzfadingfrompicture}"
+		]
+	},
+
+
+	"tikzfadingfrompicture":{
+		"prefix":"tikzfadingfrompicture",
+		"body":[
+			"\\begin{tikzfadingfrompicture}",
+				"\t$1",
 			"\\end{tikzfadingfrompicture}"
 		]
 	}

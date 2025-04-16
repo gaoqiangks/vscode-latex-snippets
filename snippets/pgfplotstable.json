@@ -1,7 +1,7 @@
 {
 
 
-	"pgfplotstableset":{
+	"pgfplotstableset{}":{
 		"prefix":"pgfplotstableset",
 		"body":[
 			"\\pgfplotstableset{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"pgfplotstabletypeset":{
+	"pgfplotstabletypeset{}":{
 		"prefix":"pgfplotstabletypeset",
 		"body":[
 			"\\pgfplotstabletypeset{${1:table}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"pgfplotstabletypeset":{
-		"prefix":"pgfplotstabletypeset",
-		"body":[
-			"\\pgfplotstabletypeset[${2:options%keyvals}]{${1:table}}"
-		]
-	},
-
-
-	"pgfplotstabletypesetfile":{
+	"pgfplotstabletypesetfile{}":{
 		"prefix":"pgfplotstabletypesetfile",
 		"body":[
 			"\\pgfplotstabletypesetfile{${1:file}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"pgfplotstabletypesetfile":{
-		"prefix":"pgfplotstabletypesetfile",
-		"body":[
-			"\\pgfplotstabletypesetfile[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"pgfplotstableread":{
+	"pgfplotstableread{}{}":{
 		"prefix":"pgfplotstableread",
 		"body":[
 			"\\pgfplotstableread{${1:table}}{${2:macro%cmd}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"pgfplotstablenew":{
+	"pgfplotstablenew{}{}":{
 		"prefix":"pgfplotstablenew",
 		"body":[
 			"\\pgfplotstablenew{${1:row count}}{${2:macro%cmd}}"
@@ -113,31 +97,7 @@
 	},
 
 
-	"pgfplotstablenew":{
-		"prefix":"pgfplotstablenew",
-		"body":[
-			"\\pgfplotstablenew[${3:options%keyvals}]{${1:row count}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"pgfplotstablenew*":{
-		"prefix":"pgfplotstablenew*",
-		"body":[
-			"\\pgfplotstablenew*{${1:row count}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"pgfplotstablenew*":{
-		"prefix":"pgfplotstablenew*",
-		"body":[
-			"\\pgfplotstablenew*[${3:options%keyvals}]{${1:row count}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"pgfplotstablevertcat":{
+	"pgfplotstablevertcat{}{}":{
 		"prefix":"pgfplotstablevertcat",
 		"body":[
 			"\\pgfplotstablevertcat{${1:table1%cmd}}{${2:table2}}"
@@ -145,7 +105,7 @@
 	},
 
 
-	"pgfplotstableclear":{
+	"pgfplotstableclear{}":{
 		"prefix":"pgfplotstableclear",
 		"body":[
 			"\\pgfplotstableclear{${1:table}}"
@@ -153,7 +113,7 @@
 	},
 
 
-	"pgfplotstablecreatecol":{
+	"pgfplotstablecreatecol{}{}":{
 		"prefix":"pgfplotstablecreatecol",
 		"body":[
 			"\\pgfplotstablecreatecol{${1:new col name}}{${2:table}}"
@@ -161,15 +121,7 @@
 	},
 
 
-	"pgfplotstablecreatecol":{
-		"prefix":"pgfplotstablecreatecol",
-		"body":[
-			"\\pgfplotstablecreatecol[${3:options%keyvals}]{${1:new col name}}{${2:table}}"
-		]
-	},
-
-
-	"prevrow":{
+	"prevrow{}":{
 		"prefix":"prevrow",
 		"body":[
 			"\\prevrow{${1:col name}}"
@@ -177,7 +129,7 @@
 	},
 
 
-	"getprevrow":{
+	"getprevrow{}{}":{
 		"prefix":"getprevrow",
 		"body":[
 			"\\getprevrow{${1:col name}}{${2:macro%cmd}}"
@@ -185,7 +137,7 @@
 	},
 
 
-	"thisrow":{
+	"thisrow{}":{
 		"prefix":"thisrow",
 		"body":[
 			"\\thisrow{${1:col name}}"
@@ -193,7 +145,7 @@
 	},
 
 
-	"getthisrow":{
+	"getthisrow{}{}":{
 		"prefix":"getthisrow",
 		"body":[
 			"\\getthisrow{${1:col name}}{${2:macro%cmd}}"
@@ -201,7 +153,7 @@
 	},
 
 
-	"nextrow":{
+	"nextrow{}":{
 		"prefix":"nextrow",
 		"body":[
 			"\\nextrow{${1:col name}}"
@@ -209,7 +161,7 @@
 	},
 
 
-	"getnextrow":{
+	"getnextrow{}{}":{
 		"prefix":"getnextrow",
 		"body":[
 			"\\getnextrow{${1:col name}}{${2:macro%cmd}}"
@@ -233,7 +185,7 @@
 	},
 
 
-	"pgfplotstablesave":{
+	"pgfplotstablesave{}{}":{
 		"prefix":"pgfplotstablesave",
 		"body":[
 			"\\pgfplotstablesave{${1:table}}{${2:output-file name}}"
@@ -241,15 +193,7 @@
 	},
 
 
-	"pgfplotstablesave":{
-		"prefix":"pgfplotstablesave",
-		"body":[
-			"\\pgfplotstablesave[${3:options%keyvals}]{${1:table}}{${2:output-file name}}"
-		]
-	},
-
-
-	"pgfplotstablegetrowsof":{
+	"pgfplotstablegetrowsof{}":{
 		"prefix":"pgfplotstablegetrowsof",
 		"body":[
 			"\\pgfplotstablegetrowsof{${1:table}}"
@@ -257,7 +201,7 @@
 	},
 
 
-	"pgfplotstablegetcolsof":{
+	"pgfplotstablegetcolsof{}":{
 		"prefix":"pgfplotstablegetcolsof",
 		"body":[
 			"\\pgfplotstablegetcolsof{${1:table}}"
@@ -265,7 +209,7 @@
 	},
 
 
-	"pgfplotstabletranspose":{
+	"pgfplotstabletranspose{}{}":{
 		"prefix":"pgfplotstabletranspose",
 		"body":[
 			"\\pgfplotstabletranspose{${1:macro%cmd}}{${2:table}}"
@@ -273,42 +217,10 @@
 	},
 
 
-	"pgfplotstabletranspose":{
-		"prefix":"pgfplotstabletranspose",
-		"body":[
-			"\\pgfplotstabletranspose[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
-		]
-	},
-
-
-	"pgfplotstabletranspose*":{
-		"prefix":"pgfplotstabletranspose*",
-		"body":[
-			"\\pgfplotstabletranspose*{${1:macro%cmd}}{${2:table}}"
-		]
-	},
-
-
-	"pgfplotstabletranspose*":{
-		"prefix":"pgfplotstabletranspose*",
-		"body":[
-			"\\pgfplotstabletranspose*[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
-		]
-	},
-
-
-	"pgfplotstablesort":{
+	"pgfplotstablesort{}{}":{
 		"prefix":"pgfplotstablesort",
 		"body":[
 			"\\pgfplotstablesort{${1:macro%cmd}}{${2:table}}"
-		]
-	},
-
-
-	"pgfplotstablesort":{
-		"prefix":"pgfplotstablesort",
-		"body":[
-			"\\pgfplotstablesort[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
 		]
 	},
 
@@ -409,7 +321,7 @@
 	},
 
 
-	"prevrowno":{
+	"prevrowno{}":{
 		"prefix":"prevrowno",
 		"body":[
 			"\\prevrowno{${1:col name}}"
@@ -417,7 +329,7 @@
 	},
 
 
-	"thisrowno":{
+	"thisrowno{}":{
 		"prefix":"thisrowno",
 		"body":[
 			"\\thisrowno{${1:col name}}"
@@ -425,7 +337,7 @@
 	},
 
 
-	"nextrowno":{
+	"nextrowno{}":{
 		"prefix":"nextrowno",
 		"body":[
 			"\\nextrowno{${1:col name}}"
@@ -461,6 +373,94 @@
 		"prefix":"endpgfplotstablecoltype",
 		"body":[
 			"\\endpgfplotstablecoltype"
+		]
+	},
+
+
+	"pgfplotstablenew*{}{}":{
+		"prefix":"*pgfplotstablenew",
+		"body":[
+			"\\pgfplotstablenew*{${1:row count}}{${2:macro%cmd}}"
+		]
+	},
+
+
+	"pgfplotstablenew*[]{}{}":{
+		"prefix":"*pgfplotstablenew",
+		"body":[
+			"\\pgfplotstablenew*[${3:options%keyvals}]{${1:row count}}{${2:macro%cmd}}"
+		]
+	},
+
+
+	"pgfplotstabletranspose*{}{}":{
+		"prefix":"*pgfplotstabletranspose",
+		"body":[
+			"\\pgfplotstabletranspose*{${1:macro%cmd}}{${2:table}}"
+		]
+	},
+
+
+	"pgfplotstabletranspose*[]{}{}":{
+		"prefix":"*pgfplotstabletranspose",
+		"body":[
+			"\\pgfplotstabletranspose*[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
+		]
+	},
+
+
+	"pgfplotstabletypeset[]{}":{
+		"prefix":"pgfplotstabletypeset",
+		"body":[
+			"\\pgfplotstabletypeset[${2:options%keyvals}]{${1:table}}"
+		]
+	},
+
+
+	"pgfplotstabletypesetfile[]{}":{
+		"prefix":"pgfplotstabletypesetfile",
+		"body":[
+			"\\pgfplotstabletypesetfile[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"pgfplotstablenew[]{}{}":{
+		"prefix":"pgfplotstablenew",
+		"body":[
+			"\\pgfplotstablenew[${3:options%keyvals}]{${1:row count}}{${2:macro%cmd}}"
+		]
+	},
+
+
+	"pgfplotstablecreatecol[]{}{}":{
+		"prefix":"pgfplotstablecreatecol",
+		"body":[
+			"\\pgfplotstablecreatecol[${3:options%keyvals}]{${1:new col name}}{${2:table}}"
+		]
+	},
+
+
+	"pgfplotstablesave[]{}{}":{
+		"prefix":"pgfplotstablesave",
+		"body":[
+			"\\pgfplotstablesave[${3:options%keyvals}]{${1:table}}{${2:output-file name}}"
+		]
+	},
+
+
+	"pgfplotstabletranspose[]{}{}":{
+		"prefix":"pgfplotstabletranspose",
+		"body":[
+			"\\pgfplotstabletranspose[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
+		]
+	},
+
+
+	"pgfplotstablesort[]{}{}":{
+		"prefix":"pgfplotstablesort",
+		"body":[
+			"\\pgfplotstablesort[${3:options%keyvals}]{${1:macro%cmd}}{${2:table}}"
 		]
 	}
 }

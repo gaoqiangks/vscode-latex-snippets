@@ -17,14 +17,6 @@
 	},
 
 
-	"numdate":{
-		"prefix":"numdate",
-		"body":[
-			"\\numdate[${1:counter}]"
-		]
-	},
-
-
 	"shortdate":{
 		"prefix":"shortdate",
 		"body":[
@@ -121,7 +113,7 @@
 	},
 
 
-	"printdate":{
+	"printdate{}":{
 		"prefix":"printdate",
 		"body":[
 			"\\printdate{${1:date}}"
@@ -129,7 +121,7 @@
 	},
 
 
-	"printdateTeX":{
+	"printdateTeX{}":{
 		"prefix":"printdateTeX",
 		"body":[
 			"\\printdateTeX{${1:yyyy/mm/dd}}"
@@ -137,7 +129,7 @@
 	},
 
 
-	"daterange":{
+	"daterange{}{}":{
 		"prefix":"daterange",
 		"body":[
 			"\\daterange{${1:start date}}{${2:end date}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"isodash":{
+	"isodash{}":{
 		"prefix":"isodash",
 		"body":[
 			"\\isodash{${1:symbol}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"isospacebeforeday":{
+	"isospacebeforeday{}":{
 		"prefix":"isospacebeforeday",
 		"body":[
 			"\\isospacebeforeday{${1:space cmd}}"
@@ -161,7 +153,7 @@
 	},
 
 
-	"isospacebeforemonth":{
+	"isospacebeforemonth{}":{
 		"prefix":"isospacebeforemonth",
 		"body":[
 			"\\isospacebeforemonth{${1:space cmd}}"
@@ -169,7 +161,7 @@
 	},
 
 
-	"isospacebeforeyear":{
+	"isospacebeforeyear{}":{
 		"prefix":"isospacebeforeyear",
 		"body":[
 			"\\isospacebeforeyear{${1:space cmd}}"
@@ -177,7 +169,7 @@
 	},
 
 
-	"shortyearsign":{
+	"shortyearsign{}":{
 		"prefix":"shortyearsign",
 		"body":[
 			"\\shortyearsign{${1:symbol}}"
@@ -185,7 +177,7 @@
 	},
 
 
-	"isorangesign":{
+	"isorangesign{}":{
 		"prefix":"isorangesign",
 		"body":[
 			"\\isorangesign{${1:symbol}}"
@@ -193,7 +185,7 @@
 	},
 
 
-	"daymonthsepgerman":{
+	"daymonthsepgerman{}":{
 		"prefix":"daymonthsepgerman",
 		"body":[
 			"\\daymonthsepgerman{${1:space cmd}}"
@@ -201,7 +193,7 @@
 	},
 
 
-	"monthyearsepgerman":{
+	"monthyearsepgerman{}":{
 		"prefix":"monthyearsepgerman",
 		"body":[
 			"\\monthyearsepgerman{${1:space cmd}}"
@@ -209,7 +201,7 @@
 	},
 
 
-	"monthyearsepnodaygerman":{
+	"monthyearsepnodaygerman{}":{
 		"prefix":"monthyearsepnodaygerman",
 		"body":[
 			"\\monthyearsepnodaygerman{${1:space cmd}}"
@@ -257,7 +249,7 @@
 	},
 
 
-	"twodigitarabic":{
+	"twodigitarabic{}":{
 		"prefix":"twodigitarabic",
 		"body":[
 			"\\twodigitarabic{${1:counter}}"
@@ -265,10 +257,18 @@
 	},
 
 
-	"dateinputformat":{
+	"dateinputformat{}":{
 		"prefix":"dateinputformat",
 		"body":[
 			"\\dateinputformat{${1:format%keyvals}}"
+		]
+	},
+
+
+	"numdate[]":{
+		"prefix":"numdate",
+		"body":[
+			"\\numdate[${1:counter}]"
 		]
 	}
 }

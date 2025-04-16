@@ -1,7 +1,7 @@
 {
 
 
-	"pgfmolbioset":{
+	"pgfmolbioset{}":{
 		"prefix":"pgfmolbioset",
 		"body":[
 			"\\pgfmolbioset{${1:options%keyvals}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"pgfmolbioset":{
-		"prefix":"pgfmolbioset",
-		"body":[
-			"\\pgfmolbioset[${2:module}]{${1:options%keyvals}}"
-		]
-	},
-
-
-	"pmbprotocolsizes":{
+	"pmbprotocolsizes{}{}":{
 		"prefix":"pmbprotocolsizes",
 		"body":[
 			"\\pmbprotocolsizes{${1:x}}{${2:y}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"pmbchromatogram":{
+	"pmbchromatogram{}":{
 		"prefix":"pmbchromatogram",
 		"body":[
 			"\\pmbchromatogram{${1:scf file%file}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"pmbchromatogram":{
-		"prefix":"pmbchromatogram",
-		"body":[
-			"\\pmbchromatogram[${2:options%keyvals}]{${1:scf file%file}}"
-		]
-	},
-
-
-	"addfeature":{
+	"addfeature{}{}{}":{
 		"prefix":"addfeature",
 		"body":[
 			"\\addfeature{${1:type}}{${2:start}}{${3:stop}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"addfeature":{
-		"prefix":"addfeature",
-		"body":[
-			"\\addfeature[${4:options%keyvals}]{${1:type}}{${2:start}}{${3:stop}}"
-		]
-	},
-
-
-	"setfeaturestyle":{
+	"setfeaturestyle{}{}":{
 		"prefix":"setfeaturestyle",
 		"body":[
 			"\\setfeaturestyle{${1:type}}{${2:style list}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"setfeaturestylealias":{
+	"setfeaturestylealias{}{}":{
 		"prefix":"setfeaturestylealias",
 		"body":[
 			"\\setfeaturestylealias{${1:new type}}{${2:existing type}}"
@@ -73,7 +49,7 @@
 	},
 
 
-	"setfeatureshape":{
+	"setfeatureshape{}{}":{
 		"prefix":"setfeatureshape",
 		"body":[
 			"\\setfeatureshape{${1:type}}{${2:TikZ code}}"
@@ -113,7 +89,7 @@
 	},
 
 
-	"pmbdomvalueof":{
+	"pmbdomvalueof{}":{
 		"prefix":"pmbdomvalueof",
 		"body":[
 			"\\pmbdomvalueof{${1:key%plain}}"
@@ -145,7 +121,7 @@
 	},
 
 
-	"setfeatureshapealias":{
+	"setfeatureshapealias{}{}":{
 		"prefix":"setfeatureshapealias",
 		"body":[
 			"\\setfeatureshapealias{${1:new type}}{${2:existing type}}"
@@ -153,7 +129,7 @@
 	},
 
 
-	"setfeaturealias":{
+	"setfeaturealias{}{}":{
 		"prefix":"setfeaturealias",
 		"body":[
 			"\\setfeaturealias{${1:new type}}{${2:existing type}}"
@@ -161,7 +137,7 @@
 	},
 
 
-	"setdisulfidefeatures":{
+	"setdisulfidefeatures{}":{
 		"prefix":"setdisulfidefeatures",
 		"body":[
 			"\\setdisulfidefeatures{${1:key list}}"
@@ -169,7 +145,7 @@
 	},
 
 
-	"adddisulfidefeatures":{
+	"adddisulfidefeatures{}":{
 		"prefix":"adddisulfidefeatures",
 		"body":[
 			"\\adddisulfidefeatures{${1:key list}}"
@@ -177,7 +153,7 @@
 	},
 
 
-	"removedisulfidefeatures":{
+	"removedisulfidefeatures{}":{
 		"prefix":"removedisulfidefeatures",
 		"body":[
 			"\\removedisulfidefeatures{${1:key list}}"
@@ -185,7 +161,7 @@
 	},
 
 
-	"setfeatureprintfunction":{
+	"setfeatureprintfunction{}{}":{
 		"prefix":"setfeatureprintfunction",
 		"body":[
 			"\\setfeatureprintfunction{${1:key list}}{${2:Lua function}}"
@@ -193,7 +169,7 @@
 	},
 
 
-	"removefeatureprintfunction":{
+	"removefeatureprintfunction{}":{
 		"prefix":"removefeatureprintfunction",
 		"body":[
 			"\\removefeatureprintfunction{${1:key list}}"
@@ -201,7 +177,7 @@
 	},
 
 
-	"pmbdomdrawfeature":{
+	"pmbdomdrawfeature{}":{
 		"prefix":"pmbdomdrawfeature",
 		"body":[
 			"\\pmbdomdrawfeature{${1:type}}"
@@ -209,7 +185,7 @@
 	},
 
 
-	"inputuniprot":{
+	"inputuniprot{}":{
 		"prefix":"inputuniprot",
 		"body":[
 			"\\inputuniprot{${1:Uniprot file%file}}"
@@ -217,10 +193,34 @@
 	},
 
 
-	"inputgff":{
+	"inputgff{}":{
 		"prefix":"inputgff",
 		"body":[
 			"\\inputgff{${1:gff file%file}}"
+		]
+	},
+
+
+	"pgfmolbioset[]{}":{
+		"prefix":"pgfmolbioset",
+		"body":[
+			"\\pgfmolbioset[${2:module}]{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pmbchromatogram[]{}":{
+		"prefix":"pmbchromatogram",
+		"body":[
+			"\\pmbchromatogram[${2:options%keyvals}]{${1:scf file%file}}"
+		]
+	},
+
+
+	"addfeature[]{}{}{}":{
+		"prefix":"addfeature",
+		"body":[
+			"\\addfeature[${4:options%keyvals}]{${1:type}}{${2:start}}{${3:stop}}"
 		]
 	},
 
@@ -229,7 +229,17 @@
 		"prefix":"pmbdomains",
 		"body":[
 			"\\begin{pmbdomains}",
-			"\t$1",
+				"\t$1",
+			"\\end{pmbdomains}"
+		]
+	},
+
+
+	"pmbdomains":{
+		"prefix":"pmbdomains",
+		"body":[
+			"\\begin{pmbdomains}",
+				"\t$1",
 			"\\end{pmbdomains}"
 		]
 	}

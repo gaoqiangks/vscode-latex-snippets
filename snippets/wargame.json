@@ -1,7 +1,7 @@
 {
 
 
-	"hex":{
+	"hex()":{
 		"prefix":"hex",
 		"body":[
 			"\\hex(${1:location})"
@@ -9,7 +9,7 @@
 	},
 
 
-	"hex":{
+	"hex()()":{
 		"prefix":"hex",
 		"body":[
 			"\\hex(${1:location})(${2:name})"
@@ -17,23 +17,7 @@
 	},
 
 
-	"hex":{
-		"prefix":"hex",
-		"body":[
-			"\\hex[${1:options%keyvals}](${2:location})"
-		]
-	},
-
-
-	"hex":{
-		"prefix":"hex",
-		"body":[
-			"\\hex[${1:options%keyvals}](${2:location})(${3:name})"
-		]
-	},
-
-
-	"boardframe":{
+	"boardframe()()":{
 		"prefix":"boardframe",
 		"body":[
 			"\\boardframe(${1:lower-left})(${2:upper-right})"
@@ -41,15 +25,7 @@
 	},
 
 
-	"boardframe":{
-		"prefix":"boardframe",
-		"body":[
-			"\\boardframe[${1:margin}](${2:lower-left})(${3:upper-right})"
-		]
-	},
-
-
-	"boardclip":{
+	"boardclip()(){}":{
 		"prefix":"boardclip",
 		"body":[
 			"\\boardclip(${2:lower-left})(${3:upper-right}){${1:options}}"
@@ -57,7 +33,7 @@
 	},
 
 
-	"splitboard":{
+	"splitboard{}":{
 		"prefix":"splitboard",
 		"body":[
 			"\\splitboard{${1:options%keyvals}}"
@@ -81,26 +57,10 @@
 	},
 
 
-	"fortmark":{
-		"prefix":"fortmark",
-		"body":[
-			"\\fortmark[${1:options%keyvals}]"
-		]
-	},
-
-
-	"terrainmark":{
+	"terrainmark{}":{
 		"prefix":"terrainmark",
 		"body":[
 			"\\terrainmark{${1:terrain-keys}}"
-		]
-	},
-
-
-	"terrainmark":{
-		"prefix":"terrainmark",
-		"body":[
-			"\\terrainmark[${2:options%keyvals}]{${1:terrain-keys}}"
 		]
 	},
 
@@ -113,26 +73,10 @@
 	},
 
 
-	"clearhex":{
-		"prefix":"clearhex",
-		"body":[
-			"\\clearhex[${1:options%keyvals}]"
-		]
-	},
-
-
 	"woodshex":{
 		"prefix":"woodshex",
 		"body":[
 			"\\woodshex"
-		]
-	},
-
-
-	"woodshex":{
-		"prefix":"woodshex",
-		"body":[
-			"\\woodshex[${1:options%keyvals}]"
 		]
 	},
 
@@ -145,26 +89,10 @@
 	},
 
 
-	"mountainhex":{
-		"prefix":"mountainhex",
-		"body":[
-			"\\mountainhex[${1:options%keyvals}]"
-		]
-	},
-
-
 	"cityhex":{
 		"prefix":"cityhex",
 		"body":[
 			"\\cityhex"
-		]
-	},
-
-
-	"cityhex":{
-		"prefix":"cityhex",
-		"body":[
-			"\\cityhex[${1:options%keyvals}]"
 		]
 	},
 
@@ -177,26 +105,10 @@
 	},
 
 
-	"beachhex":{
-		"prefix":"beachhex",
-		"body":[
-			"\\beachhex[${1:options%keyvals}]"
-		]
-	},
-
-
 	"seahex":{
 		"prefix":"seahex",
 		"body":[
 			"\\seahex"
-		]
-	},
-
-
-	"seahex":{
-		"prefix":"seahex",
-		"body":[
-			"\\seahex[${1:options%keyvals}]"
 		]
 	},
 
@@ -209,14 +121,6 @@
 	},
 
 
-	"riverhex":{
-		"prefix":"riverhex",
-		"body":[
-			"\\riverhex[${1:options%keyvals}]"
-		]
-	},
-
-
 	"roadhex":{
 		"prefix":"roadhex",
 		"body":[
@@ -225,15 +129,7 @@
 	},
 
 
-	"roadhex":{
-		"prefix":"roadhex",
-		"body":[
-			"\\roadhex[${1:options%keyvals}]"
-		]
-	},
-
-
-	"shiftScalePath":{
+	"shiftScalePath{}{}":{
 		"prefix":"shiftScalePath",
 		"body":[
 			"\\shiftScalePath{${1:macro}}{${2:relative-coords}}"
@@ -249,7 +145,7 @@
 	},
 
 
-	"boardpath":{
+	"boardpath()()":{
 		"prefix":"boardpath",
 		"body":[
 			"\\boardpath(${1:lower-left})(${2:upper-right})"
@@ -265,7 +161,7 @@
 	},
 
 
-	"boardhexes":{
+	"boardhexes()()":{
 		"prefix":"boardhexes",
 		"body":[
 			"\\boardhexes(${1:arg1})(${2:arg2})"
@@ -273,15 +169,7 @@
 	},
 
 
-	"boardhexes":{
-		"prefix":"boardhexes",
-		"body":[
-			"\\boardhexes[${1:options%keyvals}](${2:arg1})(${3:arg2})"
-		]
-	},
-
-
-	"segment":{
+	"segment()(){}{}{}{}":{
 		"prefix":"segment",
 		"body":[
 			"\\segment(${5:arg1})(${6:arg2}){${1:arg3}}{${2:arg4}}{${3:arg5}}{${4:arg6}}"
@@ -297,14 +185,6 @@
 	},
 
 
-	"wargamelogo":{
-		"prefix":"wargamelogo",
-		"body":[
-			"\\wargamelogo[${1:options%keyvals}]"
-		]
-	},
-
-
 	"wargamedbglvl":{
 		"prefix":"wargamedbglvl",
 		"body":[
@@ -313,7 +193,7 @@
 	},
 
 
-	"natoapp":{
+	"natoapp()":{
 		"prefix":"natoapp",
 		"body":[
 			"\\natoapp(${1:location})"
@@ -321,26 +201,10 @@
 	},
 
 
-	"natoapp":{
+	"natoapp()()":{
 		"prefix":"natoapp",
 		"body":[
 			"\\natoapp(${1:location})(${2:name})"
-		]
-	},
-
-
-	"natoapp":{
-		"prefix":"natoapp",
-		"body":[
-			"\\natoapp[${1:options%keyvals}](${2:location})"
-		]
-	},
-
-
-	"natoapp":{
-		"prefix":"natoapp",
-		"body":[
-			"\\natoapp[${1:options%keyvals}](${2:location})(${3:name})"
 		]
 	},
 
@@ -353,7 +217,7 @@
 	},
 
 
-	"natoappmark":{
+	"natoappmark{}":{
 		"prefix":"natoappmark",
 		"body":[
 			"\\natoappmark{${1:mains}}"
@@ -361,26 +225,10 @@
 	},
 
 
-	"natoappmark":{
-		"prefix":"natoappmark",
-		"body":[
-			"\\natoappmark[${2:options%keyvals}]{${1:mains}}"
-		]
-	},
-
-
-	"echelonmark":{
+	"echelonmark{}":{
 		"prefix":"echelonmark",
 		"body":[
 			"\\echelonmark{${1:arg}}"
-		]
-	},
-
-
-	"echelonmark":{
-		"prefix":"echelonmark",
-		"body":[
-			"\\echelonmark[${2:options%keyvals}]{${1:arg}}"
 		]
 	},
 
@@ -393,26 +241,10 @@
 	},
 
 
-	"armouredmark":{
-		"prefix":"armouredmark",
-		"body":[
-			"\\armouredmark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"infantrymark":{
 		"prefix":"infantrymark",
 		"body":[
 			"\\infantrymark"
-		]
-	},
-
-
-	"infantrymark":{
-		"prefix":"infantrymark",
-		"body":[
-			"\\infantrymark[${1:options%keyvals}]"
 		]
 	},
 
@@ -425,26 +257,10 @@
 	},
 
 
-	"artillerymark":{
-		"prefix":"artillerymark",
-		"body":[
-			"\\artillerymark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"combinedmark":{
 		"prefix":"combinedmark",
 		"body":[
 			"\\combinedmark"
-		]
-	},
-
-
-	"combinedmark":{
-		"prefix":"combinedmark",
-		"body":[
-			"\\combinedmark[${1:options%keyvals}]"
 		]
 	},
 
@@ -457,26 +273,10 @@
 	},
 
 
-	"pgmark":{
-		"prefix":"pgmark",
-		"body":[
-			"\\pgmark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"reconnaissancemark":{
 		"prefix":"reconnaissancemark",
 		"body":[
 			"\\reconnaissancemark"
-		]
-	},
-
-
-	"reconnaissancemark":{
-		"prefix":"reconnaissancemark",
-		"body":[
-			"\\reconnaissancemark[${1:options%keyvals}]"
 		]
 	},
 
@@ -489,26 +289,10 @@
 	},
 
 
-	"corpsmark":{
-		"prefix":"corpsmark",
-		"body":[
-			"\\corpsmark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"divisionmark":{
 		"prefix":"divisionmark",
 		"body":[
 			"\\divisionmark"
-		]
-	},
-
-
-	"divisionmark":{
-		"prefix":"divisionmark",
-		"body":[
-			"\\divisionmark[${1:options%keyvals}]"
 		]
 	},
 
@@ -521,26 +305,10 @@
 	},
 
 
-	"brigademark":{
-		"prefix":"brigademark",
-		"body":[
-			"\\brigademark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"regimentmark":{
 		"prefix":"regimentmark",
 		"body":[
 			"\\regimentmark"
-		]
-	},
-
-
-	"regimentmark":{
-		"prefix":"regimentmark",
-		"body":[
-			"\\regimentmark[${1:options%keyvals}]"
 		]
 	},
 
@@ -553,26 +321,10 @@
 	},
 
 
-	"sofmark":{
-		"prefix":"sofmark",
-		"body":[
-			"\\sofmark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"mountaineermark":{
 		"prefix":"mountaineermark",
 		"body":[
 			"\\mountaineermark"
-		]
-	},
-
-
-	"mountaineermark":{
-		"prefix":"mountaineermark",
-		"body":[
-			"\\mountaineermark[${1:options%keyvals}]"
 		]
 	},
 
@@ -585,26 +337,10 @@
 	},
 
 
-	"airbornemark":{
-		"prefix":"airbornemark",
-		"body":[
-			"\\airbornemark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"amphibiousmark":{
 		"prefix":"amphibiousmark",
 		"body":[
 			"\\amphibiousmark"
-		]
-	},
-
-
-	"amphibiousmark":{
-		"prefix":"amphibiousmark",
-		"body":[
-			"\\amphibiousmark[${1:options%keyvals}]"
 		]
 	},
 
@@ -617,15 +353,7 @@
 	},
 
 
-	"airassaultmark":{
-		"prefix":"airassaultmark",
-		"body":[
-			"\\airassaultmark[${1:options%keyvals}]"
-		]
-	},
-
-
-	"testpath":{
+	"testpath{}":{
 		"prefix":"testpath",
 		"body":[
 			"\\testpath{${1:arg}}"
@@ -633,7 +361,7 @@
 	},
 
 
-	"chit":{
+	"chit()":{
 		"prefix":"chit",
 		"body":[
 			"\\chit(${1:location})"
@@ -641,26 +369,10 @@
 	},
 
 
-	"chit":{
+	"chit()()":{
 		"prefix":"chit",
 		"body":[
 			"\\chit(${1:location})(${2:name})"
-		]
-	},
-
-
-	"chit":{
-		"prefix":"chit",
-		"body":[
-			"\\chit[${1:options%keyvals}](${2:location})"
-		]
-	},
-
-
-	"chit":{
-		"prefix":"chit",
-		"body":[
-			"\\chit[${1:options%keyvals}](${2:location})(${3:name})"
 		]
 	},
 
@@ -673,7 +385,7 @@
 	},
 
 
-	"shadechit":{
+	"shadechit()":{
 		"prefix":"shadechit",
 		"body":[
 			"\\shadechit(${1:arg})"
@@ -681,7 +393,7 @@
 	},
 
 
-	"eliminatechit":{
+	"eliminatechit()":{
 		"prefix":"eliminatechit",
 		"body":[
 			"\\eliminatechit(${1:arg})"
@@ -689,7 +401,7 @@
 	},
 
 
-	"stackchits":{
+	"stackchits()(){}":{
 		"prefix":"stackchits",
 		"body":[
 			"\\stackchits(${2:arg1})(${3:arg2}){${1:arg3}}"
@@ -697,7 +409,7 @@
 	},
 
 
-	"chits":{
+	"chits{}{}{}":{
 		"prefix":"chits",
 		"body":[
 			"\\chits{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -705,15 +417,7 @@
 	},
 
 
-	"chits*":{
-		"prefix":"chits*",
-		"body":[
-			"\\chits*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"chitgrid":{
+	"chitgrid{}{}{}":{
 		"prefix":"chitgrid",
 		"body":[
 			"\\chitgrid{${1:columns}}{${2:rows}}{${3:cell size}}"
@@ -721,7 +425,7 @@
 	},
 
 
-	"doublechits":{
+	"doublechits{}{}{}":{
 		"prefix":"doublechits",
 		"body":[
 			"\\doublechits{${1:arg1}}{${2:arg2}}{${3:arg3}}"
@@ -729,15 +433,7 @@
 	},
 
 
-	"doublechits*":{
-		"prefix":"doublechits*",
-		"body":[
-			"\\doublechits*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"doublechitgrid":{
+	"doublechitgrid{}{}{}":{
 		"prefix":"doublechitgrid",
 		"body":[
 			"\\doublechitgrid{${1:columns}}{${2:rows}}{${3:cell size}}"
@@ -745,18 +441,10 @@
 	},
 
 
-	"chitmark":{
+	"chitmark{}":{
 		"prefix":"chitmark",
 		"body":[
 			"\\chitmark{${1:chit-keys}}"
-		]
-	},
-
-
-	"chitmark":{
-		"prefix":"chitmark",
-		"body":[
-			"\\chitmark[${2:options%keyvals}]{${1:chit-keys}}"
 		]
 	},
 
@@ -769,14 +457,6 @@
 	},
 
 
-	"stackmark":{
-		"prefix":"stackmark",
-		"body":[
-			"\\stackmark[${1:options%keyvals}]"
-		]
-	},
-
-
 	"zocmark":{
 		"prefix":"zocmark",
 		"body":[
@@ -785,15 +465,7 @@
 	},
 
 
-	"zocmark":{
-		"prefix":"zocmark",
-		"body":[
-			"\\zocmark[${1:options%keyvals}]"
-		]
-	},
-
-
-	"dicemark":{
+	"dicemark{}":{
 		"prefix":"dicemark",
 		"body":[
 			"\\dicemark{${1:arg}}"
@@ -801,20 +473,338 @@
 	},
 
 
-	"dicemark":{
-		"prefix":"dicemark",
+	"chits*{}{}{}":{
+		"prefix":"*chits",
 		"body":[
-			"\\dicemark[${2:options%keyvals}]{${1:arg}}"
+			"\\chits*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
 		]
 	},
 
 
-	"getbb":{
-		"prefix":"getbb",
+	"doublechits*{}{}{}":{
+		"prefix":"*doublechits",
 		"body":[
-			"\\begin{getbb}",
-			"\t$1",
-			"\\end{getbb}"
+			"\\doublechits*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		]
+	},
+
+
+	"hex[]()":{
+		"prefix":"hex",
+		"body":[
+			"\\hex[${1:options%keyvals}](${2:location})"
+		]
+	},
+
+
+	"hex[]()()":{
+		"prefix":"hex",
+		"body":[
+			"\\hex[${1:options%keyvals}](${2:location})(${3:name})"
+		]
+	},
+
+
+	"boardframe[]()()":{
+		"prefix":"boardframe",
+		"body":[
+			"\\boardframe[${1:margin}](${2:lower-left})(${3:upper-right})"
+		]
+	},
+
+
+	"fortmark[]":{
+		"prefix":"fortmark",
+		"body":[
+			"\\fortmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"terrainmark[]{}":{
+		"prefix":"terrainmark",
+		"body":[
+			"\\terrainmark[${2:options%keyvals}]{${1:terrain-keys}}"
+		]
+	},
+
+
+	"clearhex[]":{
+		"prefix":"clearhex",
+		"body":[
+			"\\clearhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"woodshex[]":{
+		"prefix":"woodshex",
+		"body":[
+			"\\woodshex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mountainhex[]":{
+		"prefix":"mountainhex",
+		"body":[
+			"\\mountainhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"cityhex[]":{
+		"prefix":"cityhex",
+		"body":[
+			"\\cityhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"beachhex[]":{
+		"prefix":"beachhex",
+		"body":[
+			"\\beachhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"seahex[]":{
+		"prefix":"seahex",
+		"body":[
+			"\\seahex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"riverhex[]":{
+		"prefix":"riverhex",
+		"body":[
+			"\\riverhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"roadhex[]":{
+		"prefix":"roadhex",
+		"body":[
+			"\\roadhex[${1:options%keyvals}]"
+		]
+	},
+
+
+	"boardhexes[]()()":{
+		"prefix":"boardhexes",
+		"body":[
+			"\\boardhexes[${1:options%keyvals}](${2:arg1})(${3:arg2})"
+		]
+	},
+
+
+	"wargamelogo[]":{
+		"prefix":"wargamelogo",
+		"body":[
+			"\\wargamelogo[${1:options%keyvals}]"
+		]
+	},
+
+
+	"natoapp[]()":{
+		"prefix":"natoapp",
+		"body":[
+			"\\natoapp[${1:options%keyvals}](${2:location})"
+		]
+	},
+
+
+	"natoapp[]()()":{
+		"prefix":"natoapp",
+		"body":[
+			"\\natoapp[${1:options%keyvals}](${2:location})(${3:name})"
+		]
+	},
+
+
+	"natoappmark[]{}":{
+		"prefix":"natoappmark",
+		"body":[
+			"\\natoappmark[${2:options%keyvals}]{${1:mains}}"
+		]
+	},
+
+
+	"echelonmark[]{}":{
+		"prefix":"echelonmark",
+		"body":[
+			"\\echelonmark[${2:options%keyvals}]{${1:arg}}"
+		]
+	},
+
+
+	"armouredmark[]":{
+		"prefix":"armouredmark",
+		"body":[
+			"\\armouredmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"infantrymark[]":{
+		"prefix":"infantrymark",
+		"body":[
+			"\\infantrymark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"artillerymark[]":{
+		"prefix":"artillerymark",
+		"body":[
+			"\\artillerymark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"combinedmark[]":{
+		"prefix":"combinedmark",
+		"body":[
+			"\\combinedmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"pgmark[]":{
+		"prefix":"pgmark",
+		"body":[
+			"\\pgmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"reconnaissancemark[]":{
+		"prefix":"reconnaissancemark",
+		"body":[
+			"\\reconnaissancemark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"corpsmark[]":{
+		"prefix":"corpsmark",
+		"body":[
+			"\\corpsmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"divisionmark[]":{
+		"prefix":"divisionmark",
+		"body":[
+			"\\divisionmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"brigademark[]":{
+		"prefix":"brigademark",
+		"body":[
+			"\\brigademark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"regimentmark[]":{
+		"prefix":"regimentmark",
+		"body":[
+			"\\regimentmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"sofmark[]":{
+		"prefix":"sofmark",
+		"body":[
+			"\\sofmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"mountaineermark[]":{
+		"prefix":"mountaineermark",
+		"body":[
+			"\\mountaineermark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"airbornemark[]":{
+		"prefix":"airbornemark",
+		"body":[
+			"\\airbornemark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"amphibiousmark[]":{
+		"prefix":"amphibiousmark",
+		"body":[
+			"\\amphibiousmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"airassaultmark[]":{
+		"prefix":"airassaultmark",
+		"body":[
+			"\\airassaultmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"chit[]()":{
+		"prefix":"chit",
+		"body":[
+			"\\chit[${1:options%keyvals}](${2:location})"
+		]
+	},
+
+
+	"chit[]()()":{
+		"prefix":"chit",
+		"body":[
+			"\\chit[${1:options%keyvals}](${2:location})(${3:name})"
+		]
+	},
+
+
+	"chitmark[]{}":{
+		"prefix":"chitmark",
+		"body":[
+			"\\chitmark[${2:options%keyvals}]{${1:chit-keys}}"
+		]
+	},
+
+
+	"stackmark[]":{
+		"prefix":"stackmark",
+		"body":[
+			"\\stackmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"zocmark[]":{
+		"prefix":"zocmark",
+		"body":[
+			"\\zocmark[${1:options%keyvals}]"
+		]
+	},
+
+
+	"dicemark[]{}":{
+		"prefix":"dicemark",
+		"body":[
+			"\\dicemark[${2:options%keyvals}]{${1:arg}}"
 		]
 	},
 
@@ -823,8 +813,18 @@
 		"prefix":"getbbl",
 		"body":[
 			"\\begin{getbbl}",
-			"\t$1",
+				"\t$1",
 			"\\end{getbbl}"
+		]
+	},
+
+
+	"getbb":{
+		"prefix":"getbb",
+		"body":[
+			"\\begin{getbb}",
+				"\t$1",
+			"\\end{getbb}"
 		]
 	}
 }

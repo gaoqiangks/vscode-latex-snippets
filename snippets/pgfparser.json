@@ -1,7 +1,7 @@
 {
 
 
-	"pgfparserparse":{
+	"pgfparserparse{}":{
 		"prefix":"pgfparserparse",
 		"body":[
 			"\\pgfparserparse{${1:parser name}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"pgfparserdef":{
+	"pgfparserdef{}{}{}{}":{
 		"prefix":"pgfparserdef",
 		"body":[
 			"\\pgfparserdef{${1:parser name}}{${2:state}}{${3:symbol meaning}}{${4:action}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"pgfparserdef":{
-		"prefix":"pgfparserdef",
-		"body":[
-			"\\pgfparserdef{${1:parser name}}{${2:state}}{${3:symbol meaning}}[${5:args}]{${4:action}}"
-		]
-	},
-
-
-	"pgfparserlet":{
+	"pgfparserlet{}{}{}{}":{
 		"prefix":"pgfparserlet",
 		"body":[
 			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}{${4:meaning2}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"pgfparserlet":{
-		"prefix":"pgfparserlet",
-		"body":[
-			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}[${5:opt1}][${6:opt2}]{${4:meaning2}}"
-		]
-	},
-
-
-	"pgfparserdefunknown":{
+	"pgfparserdefunknown{}{}{}":{
 		"prefix":"pgfparserdefunknown",
 		"body":[
 			"\\pgfparserdefunknown{${1:parser name}}{${2:state}}{${3:action}}"
@@ -49,7 +33,7 @@
 	},
 
 
-	"pgfparserdeffinal":{
+	"pgfparserdeffinal{}{}":{
 		"prefix":"pgfparserdeffinal",
 		"body":[
 			"\\pgfparserdeffinal{${1:parser name}}{${2:action}}"
@@ -57,7 +41,7 @@
 	},
 
 
-	"pgfparserswitch":{
+	"pgfparserswitch{}":{
 		"prefix":"pgfparserswitch",
 		"body":[
 			"\\pgfparserswitch{${1:state}}"
@@ -65,7 +49,7 @@
 	},
 
 
-	"pgfparserifmark":{
+	"pgfparserifmark{}{}{}":{
 		"prefix":"pgfparserifmark",
 		"body":[
 			"\\pgfparserifmark{${1:arg}}{${2:true}}{${3:false}}"
@@ -105,10 +89,26 @@
 	},
 
 
-	"pgfparserset":{
+	"pgfparserset{}":{
 		"prefix":"pgfparserset",
 		"body":[
 			"\\pgfparserset{${1:options%keyvals}}"
+		]
+	},
+
+
+	"pgfparserdef{}{}{}[]{}":{
+		"prefix":"pgfparserdef",
+		"body":[
+			"\\pgfparserdef{${1:parser name}}{${2:state}}{${3:symbol meaning}}[${5:args}]{${4:action}}"
+		]
+	},
+
+
+	"pgfparserlet{}{}{}[][]{}":{
+		"prefix":"pgfparserlet",
+		"body":[
+			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}[${5:opt1}][${6:opt2}]{${4:meaning2}}"
 		]
 	}
 }

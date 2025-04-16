@@ -1,7 +1,7 @@
 {
 
 
-	"empheqset":{
+	"empheqset{}":{
 		"prefix":"empheqset",
 		"body":[
 			"\\empheqset{${1:markup instructions%keyvals}}"
@@ -265,14 +265,6 @@
 	},
 
 
-	"shadowbox*":{
-		"prefix":"shadowbox*",
-		"body":[
-			"\\shadowbox*{${1:arg}}"
-		]
-	},
-
-
 	"mintagvsep":{
 		"prefix":"mintagvsep",
 		"body":[
@@ -281,7 +273,7 @@
 	},
 
 
-	"DeclareLeftDelimiter":{
+	"DeclareLeftDelimiter{}":{
 		"prefix":"DeclareLeftDelimiter",
 		"body":[
 			"\\DeclareLeftDelimiter{${1:delimiter}}"
@@ -289,26 +281,10 @@
 	},
 
 
-	"DeclareLeftDelimiter":{
-		"prefix":"DeclareLeftDelimiter",
-		"body":[
-			"\\DeclareLeftDelimiter[${2:space adjustment}]{${1:delimiter}}"
-		]
-	},
-
-
-	"DeclareRightDelimiter":{
+	"DeclareRightDelimiter{}":{
 		"prefix":"DeclareRightDelimiter",
 		"body":[
 			"\\DeclareRightDelimiter{${1:delimiter}}"
-		]
-	},
-
-
-	"DeclareRightDelimiter":{
-		"prefix":"DeclareRightDelimiter",
-		"body":[
-			"\\DeclareRightDelimiter[${2:space adjustment}]{${1:delimiter}}"
 		]
 	},
 
@@ -361,102 +337,26 @@
 	},
 
 
-	"align*":{
-		"prefix":"align*",
+	"shadowbox*{}":{
+		"prefix":"*shadowbox",
 		"body":[
-			"\\begin{align*}",
-			"\t$1",
-			"\\end{align*}"
+			"\\shadowbox*{${1:arg}}"
 		]
 	},
 
 
-	"gather":{
-		"prefix":"gather",
+	"DeclareLeftDelimiter[]{}":{
+		"prefix":"DeclareLeftDelimiter",
 		"body":[
-			"\\begin{gather}",
-			"\t$1",
-			"\\end{gather}"
+			"\\DeclareLeftDelimiter[${2:space adjustment}]{${1:delimiter}}"
 		]
 	},
 
 
-	"AmSalign*":{
-		"prefix":"AmSalign*",
+	"DeclareRightDelimiter[]{}":{
+		"prefix":"DeclareRightDelimiter",
 		"body":[
-			"\\begin{AmSalign*}",
-			"\t$1",
-			"\\end{AmSalign*}"
-		]
-	},
-
-
-	"MTmultlined":{
-		"prefix":"MTmultlined",
-		"body":[
-			"\\begin{MTmultlined}",
-			"\t$1",
-			"\\end{MTmultlined}"
-		]
-	},
-
-
-	"AmSflalign*":{
-		"prefix":"AmSflalign*",
-		"body":[
-			"\\begin{AmSflalign*}",
-			"\t$1",
-			"\\end{AmSflalign*}"
-		]
-	},
-
-
-	"AmSmultline*":{
-		"prefix":"AmSmultline*",
-		"body":[
-			"\\begin{AmSmultline*}",
-			"\t$1",
-			"\\end{AmSmultline*}"
-		]
-	},
-
-
-	"AmSmultline":{
-		"prefix":"AmSmultline",
-		"body":[
-			"\\begin{AmSmultline}",
-			"\t$1",
-			"\\end{AmSmultline}"
-		]
-	},
-
-
-	"multline*":{
-		"prefix":"multline*",
-		"body":[
-			"\\begin{multline*}",
-			"\t$1",
-			"\\end{multline*}"
-		]
-	},
-
-
-	"flalign":{
-		"prefix":"flalign",
-		"body":[
-			"\\begin{flalign}",
-			"\t$1",
-			"\\end{flalign}"
-		]
-	},
-
-
-	"AmSalignat*":{
-		"prefix":"AmSalignat*",
-		"body":[
-			"\\begin{AmSalignat*}",
-			"\t$1",
-			"\\end{AmSalignat*}"
+			"\\DeclareRightDelimiter[${2:space adjustment}]{${1:delimiter}}"
 		]
 	},
 
@@ -465,8 +365,18 @@
 		"prefix":"empheq",
 		"body":[
 			"\\begin{empheq}",
-			"\t$1",
+				"\t$1",
 			"\\end{empheq}"
+		]
+	},
+
+
+	"MTmultlined":{
+		"prefix":"MTmultlined",
+		"body":[
+			"\\begin{MTmultlined}",
+				"\t$1",
+			"\\end{MTmultlined}"
 		]
 	},
 
@@ -475,78 +385,8 @@
 		"prefix":"AmSalign",
 		"body":[
 			"\\begin{AmSalign}",
-			"\t$1",
+				"\t$1",
 			"\\end{AmSalign}"
-		]
-	},
-
-
-	"alignat":{
-		"prefix":"alignat",
-		"body":[
-			"\\begin{alignat}",
-			"\t$1",
-			"\\end{alignat}"
-		]
-	},
-
-
-	"align":{
-		"prefix":"align",
-		"body":[
-			"\\begin{align}",
-			"\t$1",
-			"\\end{align}"
-		]
-	},
-
-
-	"AmSgather*":{
-		"prefix":"AmSgather*",
-		"body":[
-			"\\begin{AmSgather*}",
-			"\t$1",
-			"\\end{AmSgather*}"
-		]
-	},
-
-
-	"equation":{
-		"prefix":"equation",
-		"body":[
-			"\\begin{equation}",
-			"\t$1",
-			"\\end{equation}"
-		]
-	},
-
-
-	"AmSequation*":{
-		"prefix":"AmSequation*",
-		"body":[
-			"\\begin{AmSequation*}",
-			"\t$1",
-			"\\end{AmSequation*}"
-		]
-	},
-
-
-	"AmSflalign":{
-		"prefix":"AmSflalign",
-		"body":[
-			"\\begin{AmSflalign}",
-			"\t$1",
-			"\\end{AmSflalign}"
-		]
-	},
-
-
-	"AmSequation":{
-		"prefix":"AmSequation",
-		"body":[
-			"\\begin{AmSequation}",
-			"\t$1",
-			"\\end{AmSequation}"
 		]
 	},
 
@@ -555,8 +395,38 @@
 		"prefix":"AmSalignat",
 		"body":[
 			"\\begin{AmSalignat}",
-			"\t$1",
+				"\t$1",
 			"\\end{AmSalignat}"
+		]
+	},
+
+
+	"AmSalignat*":{
+		"prefix":"AmSalignat",
+		"body":[
+			"\\begin{AmSalignat*}",
+				"\t$1",
+			"\\end{AmSalignat*}"
+		]
+	},
+
+
+	"AmSequation":{
+		"prefix":"AmSequation",
+		"body":[
+			"\\begin{AmSequation}",
+				"\t$1",
+			"\\end{AmSequation}"
+		]
+	},
+
+
+	"AmSflalign":{
+		"prefix":"AmSflalign",
+		"body":[
+			"\\begin{AmSflalign}",
+				"\t$1",
+			"\\end{AmSflalign}"
 		]
 	},
 
@@ -565,8 +435,308 @@
 		"prefix":"AmSgather",
 		"body":[
 			"\\begin{AmSgather}",
-			"\t$1",
+				"\t$1",
 			"\\end{AmSgather}"
+		]
+	},
+
+
+	"AmSmultline":{
+		"prefix":"AmSmultline",
+		"body":[
+			"\\begin{AmSmultline}",
+				"\t$1",
+			"\\end{AmSmultline}"
+		]
+	},
+
+
+	"AmSalign":{
+		"prefix":"AmSalign",
+		"body":[
+			"\\begin{AmSalign}",
+				"\t$1",
+			"\\end{AmSalign}"
+		]
+	},
+
+
+	"AmSalignat":{
+		"prefix":"AmSalignat",
+		"body":[
+			"\\begin{AmSalignat}",
+				"\t$1",
+			"\\end{AmSalignat}"
+		]
+	},
+
+
+	"AmSalignat*":{
+		"prefix":"AmSalignat",
+		"body":[
+			"\\begin{AmSalignat*}",
+				"\t$1",
+			"\\end{AmSalignat*}"
+		]
+	},
+
+
+	"AmSequation":{
+		"prefix":"AmSequation",
+		"body":[
+			"\\begin{AmSequation}",
+				"\t$1",
+			"\\end{AmSequation}"
+		]
+	},
+
+
+	"AmSflalign":{
+		"prefix":"AmSflalign",
+		"body":[
+			"\\begin{AmSflalign}",
+				"\t$1",
+			"\\end{AmSflalign}"
+		]
+	},
+
+
+	"AmSgather":{
+		"prefix":"AmSgather",
+		"body":[
+			"\\begin{AmSgather}",
+				"\t$1",
+			"\\end{AmSgather}"
+		]
+	},
+
+
+	"AmSmultline":{
+		"prefix":"AmSmultline",
+		"body":[
+			"\\begin{AmSmultline}",
+				"\t$1",
+			"\\end{AmSmultline}"
+		]
+	},
+
+
+	"AmSalign*":{
+		"prefix":"*AmSalign",
+		"body":[
+			"\\begin{AmSalign*}",
+				"\t$1",
+			"\\end{AmSalign*}"
+		]
+	},
+
+
+	"AmSequation*":{
+		"prefix":"*AmSequation",
+		"body":[
+			"\\begin{AmSequation*}",
+				"\t$1",
+			"\\end{AmSequation*}"
+		]
+	},
+
+
+	"AmSflalign*":{
+		"prefix":"*AmSflalign",
+		"body":[
+			"\\begin{AmSflalign*}",
+				"\t$1",
+			"\\end{AmSflalign*}"
+		]
+	},
+
+
+	"AmSgather*":{
+		"prefix":"*AmSgather",
+		"body":[
+			"\\begin{AmSgather*}",
+				"\t$1",
+			"\\end{AmSgather*}"
+		]
+	},
+
+
+	"AmSmultline*":{
+		"prefix":"*AmSmultline",
+		"body":[
+			"\\begin{AmSmultline*}",
+				"\t$1",
+			"\\end{AmSmultline*}"
+		]
+	},
+
+
+	"AmSalign*":{
+		"prefix":"*AmSalign",
+		"body":[
+			"\\begin{AmSalign*}",
+				"\t$1",
+			"\\end{AmSalign*}"
+		]
+	},
+
+
+	"AmSequation*":{
+		"prefix":"*AmSequation",
+		"body":[
+			"\\begin{AmSequation*}",
+				"\t$1",
+			"\\end{AmSequation*}"
+		]
+	},
+
+
+	"AmSflalign*":{
+		"prefix":"*AmSflalign",
+		"body":[
+			"\\begin{AmSflalign*}",
+				"\t$1",
+			"\\end{AmSflalign*}"
+		]
+	},
+
+
+	"AmSgather*":{
+		"prefix":"*AmSgather",
+		"body":[
+			"\\begin{AmSgather*}",
+				"\t$1",
+			"\\end{AmSgather*}"
+		]
+	},
+
+
+	"AmSmultline*":{
+		"prefix":"*AmSmultline",
+		"body":[
+			"\\begin{AmSmultline*}",
+				"\t$1",
+			"\\end{AmSmultline*}"
+		]
+	},
+
+
+	"empheq":{
+		"prefix":"empheq",
+		"body":[
+			"\\begin{empheq}",
+				"\t$1",
+			"\\end{empheq}"
+		]
+	},
+
+
+	"MTmultlined":{
+		"prefix":"MTmultlined",
+		"body":[
+			"\\begin{MTmultlined}",
+				"\t$1",
+			"\\end{MTmultlined}"
+		]
+	},
+
+
+	"align":{
+		"prefix":"align",
+		"body":[
+			"\\begin{align}",
+				"\t$1",
+			"\\end{align}"
+		]
+	},
+
+
+	"align*":{
+		"prefix":"align",
+		"body":[
+			"\\begin{align*}",
+				"\t$1",
+			"\\end{align*}"
+		]
+	},
+
+
+	"alignat":{
+		"prefix":"alignat",
+		"body":[
+			"\\begin{alignat}",
+				"\t$1",
+			"\\end{alignat}"
+		]
+	},
+
+
+	"alignat*":{
+		"prefix":"alignat",
+		"body":[
+			"\\begin{alignat*}",
+				"\t$1",
+			"\\end{alignat*}"
+		]
+	},
+
+
+	"equation":{
+		"prefix":"equation",
+		"body":[
+			"\\begin{equation}",
+				"\t$1",
+			"\\end{equation}"
+		]
+	},
+
+
+	"equation*":{
+		"prefix":"equation",
+		"body":[
+			"\\begin{equation*}",
+				"\t$1",
+			"\\end{equation*}"
+		]
+	},
+
+
+	"flalign":{
+		"prefix":"flalign",
+		"body":[
+			"\\begin{flalign}",
+				"\t$1",
+			"\\end{flalign}"
+		]
+	},
+
+
+	"flalign*":{
+		"prefix":"flalign",
+		"body":[
+			"\\begin{flalign*}",
+				"\t$1",
+			"\\end{flalign*}"
+		]
+	},
+
+
+	"gather":{
+		"prefix":"gather",
+		"body":[
+			"\\begin{gather}",
+				"\t$1",
+			"\\end{gather}"
+		]
+	},
+
+
+	"gather*":{
+		"prefix":"gather",
+		"body":[
+			"\\begin{gather*}",
+				"\t$1",
+			"\\end{gather*}"
 		]
 	},
 
@@ -575,48 +745,138 @@
 		"prefix":"multline",
 		"body":[
 			"\\begin{multline}",
-			"\t$1",
+				"\t$1",
 			"\\end{multline}"
 		]
 	},
 
 
-	"flalign*":{
-		"prefix":"flalign*",
+	"multline*":{
+		"prefix":"multline",
 		"body":[
-			"\\begin{flalign*}",
-			"\t$1",
-			"\\end{flalign*}"
+			"\\begin{multline*}",
+				"\t$1",
+			"\\end{multline*}"
+		]
+	},
+
+
+	"align":{
+		"prefix":"align",
+		"body":[
+			"\\begin{align}",
+				"\t$1",
+			"\\end{align}"
+		]
+	},
+
+
+	"align*":{
+		"prefix":"align",
+		"body":[
+			"\\begin{align*}",
+				"\t$1",
+			"\\end{align*}"
+		]
+	},
+
+
+	"alignat":{
+		"prefix":"alignat",
+		"body":[
+			"\\begin{alignat}",
+				"\t$1",
+			"\\end{alignat}"
 		]
 	},
 
 
 	"alignat*":{
-		"prefix":"alignat*",
+		"prefix":"alignat",
 		"body":[
 			"\\begin{alignat*}",
-			"\t$1",
+				"\t$1",
 			"\\end{alignat*}"
 		]
 	},
 
 
-	"gather*":{
-		"prefix":"gather*",
+	"equation":{
+		"prefix":"equation",
 		"body":[
-			"\\begin{gather*}",
-			"\t$1",
-			"\\end{gather*}"
+			"\\begin{equation}",
+				"\t$1",
+			"\\end{equation}"
 		]
 	},
 
 
 	"equation*":{
-		"prefix":"equation*",
+		"prefix":"equation",
 		"body":[
 			"\\begin{equation*}",
-			"\t$1",
+				"\t$1",
 			"\\end{equation*}"
+		]
+	},
+
+
+	"flalign":{
+		"prefix":"flalign",
+		"body":[
+			"\\begin{flalign}",
+				"\t$1",
+			"\\end{flalign}"
+		]
+	},
+
+
+	"flalign*":{
+		"prefix":"flalign",
+		"body":[
+			"\\begin{flalign*}",
+				"\t$1",
+			"\\end{flalign*}"
+		]
+	},
+
+
+	"gather":{
+		"prefix":"gather",
+		"body":[
+			"\\begin{gather}",
+				"\t$1",
+			"\\end{gather}"
+		]
+	},
+
+
+	"gather*":{
+		"prefix":"gather",
+		"body":[
+			"\\begin{gather*}",
+				"\t$1",
+			"\\end{gather*}"
+		]
+	},
+
+
+	"multline":{
+		"prefix":"multline",
+		"body":[
+			"\\begin{multline}",
+				"\t$1",
+			"\\end{multline}"
+		]
+	},
+
+
+	"multline*":{
+		"prefix":"multline",
+		"body":[
+			"\\begin{multline*}",
+				"\t$1",
+			"\\end{multline*}"
 		]
 	}
 }

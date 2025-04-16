@@ -1,7 +1,7 @@
 {
 
 
-	"BITSetup":{
+	"BITSetup{}":{
 		"prefix":"BITSetup",
 		"body":[
 			"\\BITSetup{${1:键值对%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"addpub":{
+	"addpub{}":{
 		"prefix":"addpub",
 		"body":[
 			"\\addpub{${1:bibid}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"addpubs":{
+	"addpubs{}":{
 		"prefix":"addpubs",
 		"body":[
 			"\\addpubs{${1:bibid}}"
@@ -33,58 +33,10 @@
 	},
 
 
-	"Author":{
-		"prefix":"Author",
-		"body":[
-			"\\Author[${1:n}]"
-		]
-	},
-
-
-	"Author":{
-		"prefix":"Author",
-		"body":[
-			"\\Author[${1:n}][${2:覆盖普通模式下内容}]"
-		]
-	},
-
-
-	"Author":{
-		"prefix":"Author",
-		"body":[
-			"\\Author[${1:n}][${2:覆盖普通模式下内容}][${3:覆盖盲审模式下内容}]"
-		]
-	},
-
-
 	"AuthorEn":{
 		"prefix":"AuthorEn",
 		"body":[
 			"\\AuthorEn"
-		]
-	},
-
-
-	"AuthorEn":{
-		"prefix":"AuthorEn",
-		"body":[
-			"\\AuthorEn[${1:n}]"
-		]
-	},
-
-
-	"AuthorEn":{
-		"prefix":"AuthorEn",
-		"body":[
-			"\\AuthorEn[${1:n}][${2:覆盖普通模式下内容}]"
-		]
-	},
-
-
-	"AuthorEn":{
-		"prefix":"AuthorEn",
-		"body":[
-			"\\AuthorEn[${1:n}][${2:覆盖普通模式下内容}][${3:覆盖盲审模式下内容}]"
 		]
 	},
 
@@ -129,7 +81,7 @@
 	},
 
 
-	"pubsection":{
+	"pubsection{}":{
 		"prefix":"pubsection",
 		"body":[
 			"\\pubsection{${1:text}}"
@@ -137,7 +89,7 @@
 	},
 
 
-	"SecretInfo":{
+	"SecretInfo{}":{
 		"prefix":"SecretInfo",
 		"body":[
 			"\\SecretInfo{${1:arg}}"
@@ -145,15 +97,7 @@
 	},
 
 
-	"SecretInfo":{
-		"prefix":"SecretInfo",
-		"body":[
-			"\\SecretInfo{${1:arg}}[${2:opt}]"
-		]
-	},
-
-
-	"arabicHeiti":{
+	"arabicHeiti{}":{
 		"prefix":"arabicHeiti",
 		"body":[
 			"\\arabicHeiti{${1:arg}}"
@@ -177,15 +121,7 @@
 	},
 
 
-	"circled":{
-		"prefix":"circled",
-		"body":[
-			"\\circled[${2:opt}]{${1:arg}}"
-		]
-	},
-
-
-	"circled":{
+	"circled{}":{
 		"prefix":"circled",
 		"body":[
 			"\\circled{${1:arg}}"
@@ -193,15 +129,7 @@
 	},
 
 
-	"dunderline":{
-		"prefix":"dunderline",
-		"body":[
-			"\\dunderline[${3:opt}]{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"dunderline":{
+	"dunderline{}{}":{
 		"prefix":"dunderline",
 		"body":[
 			"\\dunderline{${1:arg1}}{${2:arg2}}"
@@ -209,112 +137,74 @@
 	},
 
 
-	"resume":{
-		"prefix":"resume",
+	"Author[]":{
+		"prefix":"Author",
 		"body":[
-			"\\begin{resume}",
-			"\t$1",
-			"\\end{resume}"
+			"\\Author[${1:n}]"
 		]
 	},
 
 
-	"conclusion":{
-		"prefix":"conclusion",
+	"Author[][]":{
+		"prefix":"Author",
 		"body":[
-			"\\begin{conclusion}",
-			"\t$1",
-			"\\end{conclusion}"
+			"\\Author[${1:n}][${2:覆盖普通模式下内容}]"
 		]
 	},
 
 
-	"algo":{
-		"prefix":"algo",
+	"Author[][][]":{
+		"prefix":"Author",
 		"body":[
-			"\\begin{algo}",
-			"\t$1",
-			"\\end{algo}"
+			"\\Author[${1:n}][${2:覆盖普通模式下内容}][${3:覆盖盲审模式下内容}]"
 		]
 	},
 
 
-	"bibprint":{
-		"prefix":"bibprint",
+	"AuthorEn[]":{
+		"prefix":"AuthorEn",
 		"body":[
-			"\\begin{bibprint}",
-			"\t$1",
-			"\\end{bibprint}"
+			"\\AuthorEn[${1:n}]"
 		]
 	},
 
 
-	"cor":{
-		"prefix":"cor",
+	"AuthorEn[][]":{
+		"prefix":"AuthorEn",
 		"body":[
-			"\\begin{cor}",
-			"\t$1",
-			"\\end{cor}"
+			"\\AuthorEn[${1:n}][${2:覆盖普通模式下内容}]"
 		]
 	},
 
 
-	"axi":{
-		"prefix":"axi",
+	"AuthorEn[][][]":{
+		"prefix":"AuthorEn",
 		"body":[
-			"\\begin{axi}",
-			"\t$1",
-			"\\end{axi}"
+			"\\AuthorEn[${1:n}][${2:覆盖普通模式下内容}][${3:覆盖盲审模式下内容}]"
 		]
 	},
 
 
-	"acknowledgements":{
-		"prefix":"acknowledgements",
+	"SecretInfo{}[]":{
+		"prefix":"SecretInfo",
 		"body":[
-			"\\begin{acknowledgements}",
-			"\t$1",
-			"\\end{acknowledgements}"
+			"\\SecretInfo{${1:arg}}[${2:opt}]"
 		]
 	},
 
 
-	"rem":{
-		"prefix":"rem",
+	"circled[]{}":{
+		"prefix":"circled",
 		"body":[
-			"\\begin{rem}",
-			"\t$1",
-			"\\end{rem}"
+			"\\circled[${2:opt}]{${1:arg}}"
 		]
 	},
 
 
-	"lem":{
-		"prefix":"lem",
+	"dunderline[]{}{}":{
+		"prefix":"dunderline",
 		"body":[
-			"\\begin{lem}",
-			"\t$1",
-			"\\end{lem}"
-		]
-	},
-
-
-	"symbols":{
-		"prefix":"symbols",
-		"body":[
-			"\\begin{symbols}",
-			"\t$1",
-			"\\end{symbols}"
-		]
-	},
-
-
-	"them":{
-		"prefix":"them",
-		"body":[
-			"\\begin{them}",
-			"\t$1",
-			"\\end{them}"
+			"\\dunderline[${3:opt}]{${1:arg1}}{${2:arg2}}"
 		]
 	},
 
@@ -323,48 +213,28 @@
 		"prefix":"abstractEn",
 		"body":[
 			"\\begin{abstractEn}",
-			"\t$1",
+				"\t$1",
 			"\\end{abstractEn}"
 		]
 	},
 
 
-	"blindPeerReview":{
-		"prefix":"blindPeerReview",
+	"acknowledgements":{
+		"prefix":"acknowledgements",
 		"body":[
-			"\\begin{blindPeerReview}",
-			"\t$1",
-			"\\end{blindPeerReview}"
+			"\\begin{acknowledgements}",
+				"\t$1",
+			"\\end{acknowledgements}"
 		]
 	},
 
 
-	"exmp":{
-		"prefix":"exmp",
+	"algo":{
+		"prefix":"algo",
 		"body":[
-			"\\begin{exmp}",
-			"\t$1",
-			"\\end{exmp}"
-		]
-	},
-
-
-	"case":{
-		"prefix":"case",
-		"body":[
-			"\\begin{case}",
-			"\t$1",
-			"\\end{case}"
-		]
-	},
-
-
-	"defn":{
-		"prefix":"defn",
-		"body":[
-			"\\begin{defn}",
-			"\t$1",
-			"\\end{defn}"
+			"\\begin{algo}",
+				"\t$1",
+			"\\end{algo}"
 		]
 	},
 
@@ -373,8 +243,48 @@
 		"prefix":"appendices",
 		"body":[
 			"\\begin{appendices}",
-			"\t$1",
+				"\t$1",
 			"\\end{appendices}"
+		]
+	},
+
+
+	"axi":{
+		"prefix":"axi",
+		"body":[
+			"\\begin{axi}",
+				"\t$1",
+			"\\end{axi}"
+		]
+	},
+
+
+	"bibprint":{
+		"prefix":"bibprint",
+		"body":[
+			"\\begin{bibprint}",
+				"\t$1",
+			"\\end{bibprint}"
+		]
+	},
+
+
+	"case":{
+		"prefix":"case",
+		"body":[
+			"\\begin{case}",
+				"\t$1",
+			"\\end{case}"
+		]
+	},
+
+
+	"conclusion":{
+		"prefix":"conclusion",
+		"body":[
+			"\\begin{conclusion}",
+				"\t$1",
+			"\\end{conclusion}"
 		]
 	},
 
@@ -383,8 +293,48 @@
 		"prefix":"conj",
 		"body":[
 			"\\begin{conj}",
-			"\t$1",
+				"\t$1",
 			"\\end{conj}"
+		]
+	},
+
+
+	"cor":{
+		"prefix":"cor",
+		"body":[
+			"\\begin{cor}",
+				"\t$1",
+			"\\end{cor}"
+		]
+	},
+
+
+	"defn":{
+		"prefix":"defn",
+		"body":[
+			"\\begin{defn}",
+				"\t$1",
+			"\\end{defn}"
+		]
+	},
+
+
+	"exmp":{
+		"prefix":"exmp",
+		"body":[
+			"\\begin{exmp}",
+				"\t$1",
+			"\\end{exmp}"
+		]
+	},
+
+
+	"lem":{
+		"prefix":"lem",
+		"body":[
+			"\\begin{lem}",
+				"\t$1",
+			"\\end{lem}"
 		]
 	},
 
@@ -393,7 +343,7 @@
 		"prefix":"prop",
 		"body":[
 			"\\begin{prop}",
-			"\t$1",
+				"\t$1",
 			"\\end{prop}"
 		]
 	},
@@ -403,8 +353,168 @@
 		"prefix":"publications",
 		"body":[
 			"\\begin{publications}",
-			"\t$1",
+				"\t$1",
 			"\\end{publications}"
+		]
+	},
+
+
+	"rem":{
+		"prefix":"rem",
+		"body":[
+			"\\begin{rem}",
+				"\t$1",
+			"\\end{rem}"
+		]
+	},
+
+
+	"resume":{
+		"prefix":"resume",
+		"body":[
+			"\\begin{resume}",
+				"\t$1",
+			"\\end{resume}"
+		]
+	},
+
+
+	"symbols":{
+		"prefix":"symbols",
+		"body":[
+			"\\begin{symbols}",
+				"\t$1",
+			"\\end{symbols}"
+		]
+	},
+
+
+	"them":{
+		"prefix":"them",
+		"body":[
+			"\\begin{them}",
+				"\t$1",
+			"\\end{them}"
+		]
+	},
+
+
+	"blindPeerReview":{
+		"prefix":"blindPeerReview",
+		"body":[
+			"\\begin{blindPeerReview}",
+				"\t$1",
+			"\\end{blindPeerReview}"
+		]
+	},
+
+
+	"algo":{
+		"prefix":"algo",
+		"body":[
+			"\\begin{algo}",
+				"\t$1",
+			"\\end{algo}"
+		]
+	},
+
+
+	"axi":{
+		"prefix":"axi",
+		"body":[
+			"\\begin{axi}",
+				"\t$1",
+			"\\end{axi}"
+		]
+	},
+
+
+	"case":{
+		"prefix":"case",
+		"body":[
+			"\\begin{case}",
+				"\t$1",
+			"\\end{case}"
+		]
+	},
+
+
+	"conj":{
+		"prefix":"conj",
+		"body":[
+			"\\begin{conj}",
+				"\t$1",
+			"\\end{conj}"
+		]
+	},
+
+
+	"cor":{
+		"prefix":"cor",
+		"body":[
+			"\\begin{cor}",
+				"\t$1",
+			"\\end{cor}"
+		]
+	},
+
+
+	"defn":{
+		"prefix":"defn",
+		"body":[
+			"\\begin{defn}",
+				"\t$1",
+			"\\end{defn}"
+		]
+	},
+
+
+	"exmp":{
+		"prefix":"exmp",
+		"body":[
+			"\\begin{exmp}",
+				"\t$1",
+			"\\end{exmp}"
+		]
+	},
+
+
+	"lem":{
+		"prefix":"lem",
+		"body":[
+			"\\begin{lem}",
+				"\t$1",
+			"\\end{lem}"
+		]
+	},
+
+
+	"prop":{
+		"prefix":"prop",
+		"body":[
+			"\\begin{prop}",
+				"\t$1",
+			"\\end{prop}"
+		]
+	},
+
+
+	"rem":{
+		"prefix":"rem",
+		"body":[
+			"\\begin{rem}",
+				"\t$1",
+			"\\end{rem}"
+		]
+	},
+
+
+	"them":{
+		"prefix":"them",
+		"body":[
+			"\\begin{them}",
+				"\t$1",
+			"\\end{them}"
 		]
 	}
 }

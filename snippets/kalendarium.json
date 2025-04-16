@@ -1,7 +1,7 @@
 {
 
 
-	"KalDate":{
+	"KalDate{}{}{}":{
 		"prefix":"KalDate",
 		"body":[
 			"\\KalDate{${1:year}}{${2:month}}{${3:day}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"KalDate":{
-		"prefix":"KalDate",
-		"body":[
-			"\\KalDate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
-		]
-	},
-
-
-	"KalDateStr":{
+	"KalDateStr{}{}{}":{
 		"prefix":"KalDateStr",
 		"body":[
 			"\\KalDateStr{${1:format}}{${2:delimiter}}{${3:date string}}"
-		]
-	},
-
-
-	"KalDateStr":{
-		"prefix":"KalDateStr",
-		"body":[
-			"\\KalDateStr[${4:options%keyvals}]{${1:format}}{${2:delimiter}}{${3:date string}}"
 		]
 	},
 
@@ -41,15 +25,7 @@
 	},
 
 
-	"KalToday":{
-		"prefix":"KalToday",
-		"body":[
-			"\\KalToday[${1:options%keyvals}]"
-		]
-	},
-
-
-	"KalWeekday":{
+	"KalWeekday{}{}{}":{
 		"prefix":"KalWeekday",
 		"body":[
 			"\\KalWeekday{${1:year}}{${2:month}}{${3:day}}"
@@ -57,15 +33,7 @@
 	},
 
 
-	"KalWeekday":{
-		"prefix":"KalWeekday",
-		"body":[
-			"\\KalWeekday[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
-		]
-	},
-
-
-	"KalAbbrFormat":{
+	"KalAbbrFormat{}":{
 		"prefix":"KalAbbrFormat",
 		"body":[
 			"\\KalAbbrFormat{${1:abbreviation}}"
@@ -73,7 +41,7 @@
 	},
 
 
-	"KalDayFormat":{
+	"KalDayFormat{}":{
 		"prefix":"KalDayFormat",
 		"body":[
 			"\\KalDayFormat{${1:day}}"
@@ -81,10 +49,42 @@
 	},
 
 
-	"KalYearFormat":{
+	"KalYearFormat{}":{
 		"prefix":"KalYearFormat",
 		"body":[
 			"\\KalYearFormat{${1:year}}"
+		]
+	},
+
+
+	"KalDate[]{}{}{}":{
+		"prefix":"KalDate",
+		"body":[
+			"\\KalDate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
+		]
+	},
+
+
+	"KalDateStr[]{}{}{}":{
+		"prefix":"KalDateStr",
+		"body":[
+			"\\KalDateStr[${4:options%keyvals}]{${1:format}}{${2:delimiter}}{${3:date string}}"
+		]
+	},
+
+
+	"KalToday[]":{
+		"prefix":"KalToday",
+		"body":[
+			"\\KalToday[${1:options%keyvals}]"
+		]
+	},
+
+
+	"KalWeekday[]{}{}{}":{
+		"prefix":"KalWeekday",
+		"body":[
+			"\\KalWeekday[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
 		]
 	}
 }

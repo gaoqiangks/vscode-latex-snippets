@@ -1,7 +1,7 @@
 {
 
 
-	"score":{
+	"score{}":{
 		"prefix":"score",
 		"body":[
 			"\\score{${1:score}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"learningtargets":{
+	"learningtargets{}":{
 		"prefix":"learningtargets",
 		"body":[
 			"\\learningtargets{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"occurrence":{
+	"occurrence{}":{
 		"prefix":"occurrence",
 		"body":[
 			"\\occurrence{${1:text}}"
@@ -129,7 +129,7 @@
 	},
 
 
-	"worksheetTitle":{
+	"worksheetTitle{}":{
 		"prefix":"worksheetTitle",
 		"body":[
 			"\\worksheetTitle{${1:text}}"
@@ -137,7 +137,7 @@
 	},
 
 
-	"worksheetSubTitle":{
+	"worksheetSubTitle{}":{
 		"prefix":"worksheetSubTitle",
 		"body":[
 			"\\worksheetSubTitle{${1:text}}"
@@ -153,7 +153,7 @@
 	},
 
 
-	"worksheetAuthors":{
+	"worksheetAuthors{}":{
 		"prefix":"worksheetAuthors",
 		"body":[
 			"\\worksheetAuthors{${1:names}}"
@@ -161,7 +161,7 @@
 	},
 
 
-	"worksheetCourseName":{
+	"worksheetCourseName{}":{
 		"prefix":"worksheetCourseName",
 		"body":[
 			"\\worksheetCourseName{${1:text}}"
@@ -169,7 +169,7 @@
 	},
 
 
-	"worksheetChangelvFile":{
+	"worksheetChangelvFile{}":{
 		"prefix":"worksheetChangelvFile",
 		"body":[
 			"\\worksheetChangelvFile{${1:file}}"
@@ -197,7 +197,17 @@
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-			"\t$1",
+				"\t$1",
+			"\\end{exercise}"
+		]
+	},
+
+
+	"exercise":{
+		"prefix":"exercise",
+		"body":[
+			"\\begin{exercise}",
+				"\t$1",
 			"\\end{exercise}"
 		]
 	}

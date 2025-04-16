@@ -1,7 +1,7 @@
 {
 
 
-	"turnbox":{
+	"turnbox{}{}":{
 		"prefix":"turnbox",
 		"body":[
 			"\\turnbox{${1:angle}}{${2:contents}}"
@@ -25,41 +25,11 @@
 	},
 
 
-	"rotate":{
-		"prefix":"rotate",
-		"body":[
-			"\\begin{rotate}",
-			"\t$1",
-			"\\end{rotate}"
-		]
-	},
-
-
-	"sidewaystable*":{
-		"prefix":"sidewaystable*",
-		"body":[
-			"\\begin{sidewaystable*}",
-			"\t$1",
-			"\\end{sidewaystable*}"
-		]
-	},
-
-
-	"sidewaysfigure*":{
-		"prefix":"sidewaysfigure*",
-		"body":[
-			"\\begin{sidewaysfigure*}",
-			"\t$1",
-			"\\end{sidewaysfigure*}"
-		]
-	},
-
-
 	"sidewaystable":{
 		"prefix":"sidewaystable",
 		"body":[
 			"\\begin{sidewaystable}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidewaystable}"
 		]
 	},
@@ -69,7 +39,7 @@
 		"prefix":"sidewaysfigure",
 		"body":[
 			"\\begin{sidewaysfigure}",
-			"\t$1",
+				"\t$1",
 			"\\end{sidewaysfigure}"
 		]
 	},
@@ -79,7 +49,7 @@
 		"prefix":"sideways",
 		"body":[
 			"\\begin{sideways}",
-			"\t$1",
+				"\t$1",
 			"\\end{sideways}"
 		]
 	},
@@ -89,8 +59,38 @@
 		"prefix":"turn",
 		"body":[
 			"\\begin{turn}",
-			"\t$1",
+				"\t$1",
 			"\\end{turn}"
+		]
+	},
+
+
+	"rotate":{
+		"prefix":"rotate",
+		"body":[
+			"\\begin{rotate}",
+				"\t$1",
+			"\\end{rotate}"
+		]
+	},
+
+
+	"sidewaystable*":{
+		"prefix":"*sidewaystable",
+		"body":[
+			"\\begin{sidewaystable*}",
+				"\t$1",
+			"\\end{sidewaystable*}"
+		]
+	},
+
+
+	"sidewaysfigure*":{
+		"prefix":"*sidewaysfigure",
+		"body":[
+			"\\begin{sidewaysfigure*}",
+				"\t$1",
+			"\\end{sidewaysfigure*}"
 		]
 	}
 }

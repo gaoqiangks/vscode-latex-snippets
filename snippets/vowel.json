@@ -1,7 +1,7 @@
 {
 
 
-	"putcvowel":{
+	"putcvowel{}{}":{
 		"prefix":"putcvowel",
 		"body":[
 			"\\putcvowel{${1:symbol}}{${2:num}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"putcvowel":{
-		"prefix":"putcvowel",
-		"body":[
-			"\\putcvowel[${3:dot pos%keyvals}]{${1:symbol}}{${2:num}}"
-		]
-	},
-
-
-	"putvowel":{
+	"putvowel{}{}{}":{
 		"prefix":"putvowel",
 		"body":[
 			"\\putvowel{${1:symbol}}{${2:x%l}}{${3:y%l}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"putvowel":{
-		"prefix":"putvowel",
-		"body":[
-			"\\putvowel[${4:dot pos%keyvals}]{${1:symbol}}{${2:x%l}}{${3:y%l}}"
-		]
-	},
-
-
-	"super":{
+	"super{}":{
 		"prefix":"super",
 		"body":[
 			"\\super{${1:text}}"
@@ -185,10 +169,26 @@
 	},
 
 
-	"diagline":{
+	"diagline{}{}":{
 		"prefix":"diagline",
 		"body":[
 			"\\diagline{${1:arg1}}{${2:arg2}}"
+		]
+	},
+
+
+	"putcvowel[]{}{}":{
+		"prefix":"putcvowel",
+		"body":[
+			"\\putcvowel[${3:dot pos%keyvals}]{${1:symbol}}{${2:num}}"
+		]
+	},
+
+
+	"putvowel[]{}{}{}":{
+		"prefix":"putvowel",
+		"body":[
+			"\\putvowel[${4:dot pos%keyvals}]{${1:symbol}}{${2:x%l}}{${3:y%l}}"
 		]
 	},
 
@@ -197,7 +197,17 @@
 		"prefix":"vowel",
 		"body":[
 			"\\begin{vowel}",
-			"\t$1",
+				"\t$1",
+			"\\end{vowel}"
+		]
+	},
+
+
+	"vowel":{
+		"prefix":"vowel",
+		"body":[
+			"\\begin{vowel}",
+				"\t$1",
 			"\\end{vowel}"
 		]
 	}

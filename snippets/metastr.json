@@ -1,7 +1,7 @@
 {
 
 
-	"metadef":{
+	"metadef{}":{
 		"prefix":"metadef",
 		"body":[
 			"\\metadef{${1:reg}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"metaset":{
+	"metaset{}{}":{
 		"prefix":"metaset",
 		"body":[
 			"\\metaset{${1:reg}}{${2:def}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"metaset":{
-		"prefix":"metaset",
-		"body":[
-			"\\metaset[${3:var}]{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metasetlang":{
+	"metasetlang{}":{
 		"prefix":"metasetlang",
 		"body":[
 			"\\metasetlang{${1:ln-CN}}"
@@ -33,31 +25,7 @@
 	},
 
 
-	"metasetlang*":{
-		"prefix":"metasetlang*",
-		"body":[
-			"\\metasetlang*{${1:ln-CN}}"
-		]
-	},
-
-
-	"metaget":{
-		"prefix":"metaget",
-		"body":[
-			"\\metaget[${3:var}]{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metaif":{
-		"prefix":"metaif",
-		"body":[
-			"\\metaif[${4:}]{${1:reg}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"metaunset":{
+	"metaunset{}":{
 		"prefix":"metaunset",
 		"body":[
 			"\\metaunset{${1:reg}}"
@@ -65,15 +33,7 @@
 	},
 
 
-	"metaunset":{
-		"prefix":"metaunset",
-		"body":[
-			"\\metaunset[${2:var}]{${1:reg}}"
-		]
-	},
-
-
-	"metaappend":{
+	"metaappend{}{}":{
 		"prefix":"metaappend",
 		"body":[
 			"\\metaappend{${1:reg}}{${2:def}}"
@@ -81,15 +41,7 @@
 	},
 
 
-	"metaappend":{
-		"prefix":"metaappend",
-		"body":[
-			"\\metaappend[${3:var}]{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metaprepend":{
+	"metaprepend{}{}":{
 		"prefix":"metaprepend",
 		"body":[
 			"\\metaprepend{${1:reg}}{${2:def}}"
@@ -97,66 +49,10 @@
 	},
 
 
-	"metaprepend":{
-		"prefix":"metaprepend",
-		"body":[
-			"\\metaprepend[${3:var}]{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metaaddsep":{
+	"metaaddsep{}{}{}":{
 		"prefix":"metaaddsep",
 		"body":[
 			"\\metaaddsep{${1:reg}}{${2:sep}}{${3:def}}"
-		]
-	},
-
-
-	"metaaddsep":{
-		"prefix":"metaaddsep",
-		"body":[
-			"\\metaaddsep[${4:var}]{${1:reg}}{${2:sep}}{${3:def}}"
-		]
-	},
-
-
-	"metapick":{
-		"prefix":"metapick",
-		"body":[
-			"\\metapick[${2:var}]{${1:reg}}"
-		]
-	},
-
-
-	"metaifpick":{
-		"prefix":"metaifpick",
-		"body":[
-			"\\metaifpick[${4:var}]{${1:reg}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"metacompose":{
-		"prefix":"metacompose",
-		"body":[
-			"\\metacompose[${5:var}]{${1:reg}}{${2:prefix}}{${3:postfix}}{${4:empty}}"
-		]
-	},
-
-
-	"metatitleline":{
-		"prefix":"metatitleline",
-		"body":[
-			"\\metatitleline[${2:var}]{${1:reg}}"
-		]
-	},
-
-
-	"metatitlelinetwo":{
-		"prefix":"metatitlelinetwo",
-		"body":[
-			"\\metatitlelinetwo[${3:var1}]{${1:reg1}}[${4:var2}]{${2:reg2}}"
 		]
 	},
 
@@ -209,7 +105,7 @@
 	},
 
 
-	"metacopyright":{
+	"metacopyright{}":{
 		"prefix":"metacopyright",
 		"body":[
 			"\\metacopyright{${1:preset%keyvals}}"
@@ -217,7 +113,7 @@
 	},
 
 
-	"metalicense":{
+	"metalicense{}":{
 		"prefix":"metalicense",
 		"body":[
 			"\\metalicense{${1:preset%keyvals}}"
@@ -225,7 +121,7 @@
 	},
 
 
-	"metalicensecc":{
+	"metalicensecc{}":{
 		"prefix":"metalicensecc",
 		"body":[
 			"\\metalicensecc{${1:license%keyvals}}"
@@ -241,23 +137,7 @@
 	},
 
 
-	"metatranslate":{
-		"prefix":"metatranslate",
-		"body":[
-			"\\metatranslate[${2:ln}]{${1:term}}"
-		]
-	},
-
-
-	"metasetterm":{
-		"prefix":"metasetterm",
-		"body":[
-			"\\metasetterm[${3:ln}]{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metasetup":{
+	"metasetup{}":{
 		"prefix":"metasetup",
 		"body":[
 			"\\metasetup{${1:options%keyvals}}"
@@ -277,6 +157,126 @@
 		"prefix":"metatilde",
 		"body":[
 			"\\metatilde"
+		]
+	},
+
+
+	"metasetlang*{}":{
+		"prefix":"*metasetlang",
+		"body":[
+			"\\metasetlang*{${1:ln-CN}}"
+		]
+	},
+
+
+	"metaset[]{}{}":{
+		"prefix":"metaset",
+		"body":[
+			"\\metaset[${3:var}]{${1:reg}}{${2:def}}"
+		]
+	},
+
+
+	"metaget[]{}{}":{
+		"prefix":"metaget",
+		"body":[
+			"\\metaget[${3:var}]{${1:reg}}{${2:def}}"
+		]
+	},
+
+
+	"metaif[]{}{}{}":{
+		"prefix":"metaif",
+		"body":[
+			"\\metaif[${4:}]{${1:reg}}{${2:true}}{${3:false}}"
+		]
+	},
+
+
+	"metaunset[]{}":{
+		"prefix":"metaunset",
+		"body":[
+			"\\metaunset[${2:var}]{${1:reg}}"
+		]
+	},
+
+
+	"metaappend[]{}{}":{
+		"prefix":"metaappend",
+		"body":[
+			"\\metaappend[${3:var}]{${1:reg}}{${2:def}}"
+		]
+	},
+
+
+	"metaprepend[]{}{}":{
+		"prefix":"metaprepend",
+		"body":[
+			"\\metaprepend[${3:var}]{${1:reg}}{${2:def}}"
+		]
+	},
+
+
+	"metaaddsep[]{}{}{}":{
+		"prefix":"metaaddsep",
+		"body":[
+			"\\metaaddsep[${4:var}]{${1:reg}}{${2:sep}}{${3:def}}"
+		]
+	},
+
+
+	"metapick[]{}":{
+		"prefix":"metapick",
+		"body":[
+			"\\metapick[${2:var}]{${1:reg}}"
+		]
+	},
+
+
+	"metaifpick[]{}{}{}":{
+		"prefix":"metaifpick",
+		"body":[
+			"\\metaifpick[${4:var}]{${1:reg}}{${2:true}}{${3:false}}"
+		]
+	},
+
+
+	"metacompose[]{}{}{}{}":{
+		"prefix":"metacompose",
+		"body":[
+			"\\metacompose[${5:var}]{${1:reg}}{${2:prefix}}{${3:postfix}}{${4:empty}}"
+		]
+	},
+
+
+	"metatitleline[]{}":{
+		"prefix":"metatitleline",
+		"body":[
+			"\\metatitleline[${2:var}]{${1:reg}}"
+		]
+	},
+
+
+	"metatitlelinetwo[]{}[]{}":{
+		"prefix":"metatitlelinetwo",
+		"body":[
+			"\\metatitlelinetwo[${3:var1}]{${1:reg1}}[${4:var2}]{${2:reg2}}"
+		]
+	},
+
+
+	"metatranslate[]{}":{
+		"prefix":"metatranslate",
+		"body":[
+			"\\metatranslate[${2:ln}]{${1:term}}"
+		]
+	},
+
+
+	"metasetterm[]{}{}":{
+		"prefix":"metasetterm",
+		"body":[
+			"\\metasetterm[${3:ln}]{${1:reg}}{${2:def}}"
 		]
 	}
 }

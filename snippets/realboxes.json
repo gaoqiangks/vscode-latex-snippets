@@ -1,7 +1,7 @@
 {
 
 
-	"Mbox":{
+	"Mbox{}":{
 		"prefix":"Mbox",
 		"body":[
 			"\\Mbox{${1:content%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"Makebox":{
+	"Makebox{}":{
 		"prefix":"Makebox",
 		"body":[
 			"\\Makebox{${1:content%text}}"
@@ -17,23 +17,7 @@
 	},
 
 
-	"Makebox":{
-		"prefix":"Makebox",
-		"body":[
-			"\\Makebox[${2:width}]{${1:content%text}}"
-		]
-	},
-
-
-	"Makebox":{
-		"prefix":"Makebox",
-		"body":[
-			"\\Makebox[${2:width}][${3:position}]{${1:content%text}}"
-		]
-	},
-
-
-	"Fbox":{
+	"Fbox{}":{
 		"prefix":"Fbox",
 		"body":[
 			"\\Fbox{${1:content%text}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"Framebox":{
+	"Framebox{}":{
 		"prefix":"Framebox",
 		"body":[
 			"\\Framebox{${1:content%text}}"
@@ -49,23 +33,7 @@
 	},
 
 
-	"Framebox":{
-		"prefix":"Framebox",
-		"body":[
-			"\\Framebox[${2:width}]{${1:content%text}}"
-		]
-	},
-
-
-	"Framebox":{
-		"prefix":"Framebox",
-		"body":[
-			"\\Framebox[${2:width}][${3:position}]{${1:content%text}}"
-		]
-	},
-
-
-	"Raisebox":{
+	"Raisebox{}{}":{
 		"prefix":"Raisebox",
 		"body":[
 			"\\Raisebox{${1:length}}{${2:content%text}}"
@@ -73,23 +41,7 @@
 	},
 
 
-	"Raisebox":{
-		"prefix":"Raisebox",
-		"body":[
-			"\\Raisebox{${1:length}}[${3:height}]{${2:content%text}}"
-		]
-	},
-
-
-	"Raisebox":{
-		"prefix":"Raisebox",
-		"body":[
-			"\\Raisebox{${1:length}}[${3:height}][${4:depth}]{${2:content%text}}"
-		]
-	},
-
-
-	"Centerline":{
+	"Centerline{}":{
 		"prefix":"Centerline",
 		"body":[
 			"\\Centerline{${1:content%text}}"
@@ -97,7 +49,7 @@
 	},
 
 
-	"Leftline":{
+	"Leftline{}":{
 		"prefix":"Leftline",
 		"body":[
 			"\\Leftline{${1:content%text}}"
@@ -105,7 +57,7 @@
 	},
 
 
-	"Rightline":{
+	"Rightline{}":{
 		"prefix":"Rightline",
 		"body":[
 			"\\Rightline{${1:content%text}}"
@@ -113,7 +65,7 @@
 	},
 
 
-	"Rlap":{
+	"Rlap{}":{
 		"prefix":"Rlap",
 		"body":[
 			"\\Rlap{${1:content%text}}"
@@ -121,7 +73,7 @@
 	},
 
 
-	"Llap":{
+	"Llap{}":{
 		"prefix":"Llap",
 		"body":[
 			"\\Llap{${1:content%text}}"
@@ -129,23 +81,7 @@
 	},
 
 
-	"parbox":{
-		"prefix":"parbox",
-		"body":[
-			"\\parbox[${3:position}][${4:height}][${5:inner-pos}]{${1:width}}{${2:content%text}}"
-		]
-	},
-
-
-	"parbox":{
-		"prefix":"parbox",
-		"body":[
-			"\\parbox[${3:position}][${4:height}]{${1:width}}{${2:content%text}}"
-		]
-	},
-
-
-	"Sbox":{
+	"Sbox{}{}":{
 		"prefix":"Sbox",
 		"body":[
 			"\\Sbox{${1:register}}{${2:content%text}}"
@@ -153,7 +89,7 @@
 	},
 
 
-	"Savebox":{
+	"Savebox{}{}":{
 		"prefix":"Savebox",
 		"body":[
 			"\\Savebox{${1:register}}{${2:content%text}}"
@@ -161,7 +97,303 @@
 	},
 
 
-	"Savebox":{
+	"Colorbox{}{}":{
+		"prefix":"Colorbox",
+		"body":[
+			"\\Colorbox{${1:color}}{${2:content%text}}"
+		]
+	},
+
+
+	"Fcolorbox{}{}{}":{
+		"prefix":"Fcolorbox",
+		"body":[
+			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
+		]
+	},
+
+
+	"Colorbox{}{}":{
+		"prefix":"Colorbox",
+		"body":[
+			"\\Colorbox{${1:color}}{${2:content%text}}"
+		]
+	},
+
+
+	"Fcolorbox{}{}{}":{
+		"prefix":"Fcolorbox",
+		"body":[
+			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
+		]
+	},
+
+
+	"Rotatebox{}{}":{
+		"prefix":"Rotatebox",
+		"body":[
+			"\\Rotatebox{${1:angle}}{${2:content%text}}"
+		]
+	},
+
+
+	"Scalebox{}{}":{
+		"prefix":"Scalebox",
+		"body":[
+			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
+		]
+	},
+
+
+	"Reflectbox{}":{
+		"prefix":"Reflectbox",
+		"body":[
+			"\\Reflectbox{${1:contents%text}}"
+		]
+	},
+
+
+	"Resizebox{}{}{}":{
+		"prefix":"Resizebox",
+		"body":[
+			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
+		]
+	},
+
+
+	"Rotatebox{}{}":{
+		"prefix":"Rotatebox",
+		"body":[
+			"\\Rotatebox{${1:angle}}{${2:content%text}}"
+		]
+	},
+
+
+	"Scalebox{}{}":{
+		"prefix":"Scalebox",
+		"body":[
+			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
+		]
+	},
+
+
+	"Reflectbox{}":{
+		"prefix":"Reflectbox",
+		"body":[
+			"\\Reflectbox{${1:contents%text}}"
+		]
+	},
+
+
+	"Resizebox{}{}{}":{
+		"prefix":"Resizebox",
+		"body":[
+			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
+		]
+	},
+
+
+	"Dbox{}":{
+		"prefix":"Dbox",
+		"body":[
+			"\\Dbox{${1:content%text}}"
+		]
+	},
+
+
+	"Dashbox{}":{
+		"prefix":"Dashbox",
+		"body":[
+			"\\Dashbox{${1:content%text}}"
+		]
+	},
+
+
+	"Lbox{}":{
+		"prefix":"Lbox",
+		"body":[
+			"\\Lbox{${1:content%text}}"
+		]
+	},
+
+
+	"Dlbox{}":{
+		"prefix":"Dlbox",
+		"body":[
+			"\\Dlbox{${1:content%text}}"
+		]
+	},
+
+
+	"Colorbox{}{}":{
+		"prefix":"Colorbox",
+		"body":[
+			"\\Colorbox{${1:color}}{${2:content%text}}"
+		]
+	},
+
+
+	"Fcolorbox{}{}{}":{
+		"prefix":"Fcolorbox",
+		"body":[
+			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
+		]
+	},
+
+
+	"Rotatebox{}{}":{
+		"prefix":"Rotatebox",
+		"body":[
+			"\\Rotatebox{${1:angle}}{${2:content%text}}"
+		]
+	},
+
+
+	"Scalebox{}{}":{
+		"prefix":"Scalebox",
+		"body":[
+			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
+		]
+	},
+
+
+	"Reflectbox{}":{
+		"prefix":"Reflectbox",
+		"body":[
+			"\\Reflectbox{${1:contents%text}}"
+		]
+	},
+
+
+	"Resizebox{}{}{}":{
+		"prefix":"Resizebox",
+		"body":[
+			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
+		]
+	},
+
+
+	"Dbox{}":{
+		"prefix":"Dbox",
+		"body":[
+			"\\Dbox{${1:content%text}}"
+		]
+	},
+
+
+	"Dashbox{}":{
+		"prefix":"Dashbox",
+		"body":[
+			"\\Dashbox{${1:content%text}}"
+		]
+	},
+
+
+	"Lbox{}":{
+		"prefix":"Lbox",
+		"body":[
+			"\\Lbox{${1:content%text}}"
+		]
+	},
+
+
+	"Dlbox{}":{
+		"prefix":"Dlbox",
+		"body":[
+			"\\Dlbox{${1:content%text}}"
+		]
+	},
+
+
+	"Resizebox*{}{}{}":{
+		"prefix":"*Resizebox",
+		"body":[
+			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
+		]
+	},
+
+
+	"Resizebox*{}{}{}":{
+		"prefix":"*Resizebox",
+		"body":[
+			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
+		]
+	},
+
+
+	"Resizebox*{}{}{}":{
+		"prefix":"*Resizebox",
+		"body":[
+			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
+		]
+	},
+
+
+	"Makebox[]{}":{
+		"prefix":"Makebox",
+		"body":[
+			"\\Makebox[${2:width}]{${1:content%text}}"
+		]
+	},
+
+
+	"Makebox[][]{}":{
+		"prefix":"Makebox",
+		"body":[
+			"\\Makebox[${2:width}][${3:position}]{${1:content%text}}"
+		]
+	},
+
+
+	"Framebox[]{}":{
+		"prefix":"Framebox",
+		"body":[
+			"\\Framebox[${2:width}]{${1:content%text}}"
+		]
+	},
+
+
+	"Framebox[][]{}":{
+		"prefix":"Framebox",
+		"body":[
+			"\\Framebox[${2:width}][${3:position}]{${1:content%text}}"
+		]
+	},
+
+
+	"Raisebox{}[]{}":{
+		"prefix":"Raisebox",
+		"body":[
+			"\\Raisebox{${1:length}}[${3:height}]{${2:content%text}}"
+		]
+	},
+
+
+	"Raisebox{}[][]{}":{
+		"prefix":"Raisebox",
+		"body":[
+			"\\Raisebox{${1:length}}[${3:height}][${4:depth}]{${2:content%text}}"
+		]
+	},
+
+
+	"parbox[][][]{}{}":{
+		"prefix":"parbox",
+		"body":[
+			"\\parbox[${3:position}][${4:height}][${5:inner-pos}]{${1:width}}{${2:content%text}}"
+		]
+	},
+
+
+	"parbox[][]{}{}":{
+		"prefix":"parbox",
+		"body":[
+			"\\parbox[${3:position}][${4:height}]{${1:width}}{${2:content%text}}"
+		]
+	},
+
+
+	"Savebox{}[]{}":{
 		"prefix":"Savebox",
 		"body":[
 			"\\Savebox{${1:register}}[${3:width}]{${2:content%text}}"
@@ -169,7 +401,7 @@
 	},
 
 
-	"Savebox":{
+	"Savebox{}[][]{}":{
 		"prefix":"Savebox",
 		"body":[
 			"\\Savebox{${1:register}}[${3:width}][${4:position}]{${2:content%text}}"
@@ -177,15 +409,7 @@
 	},
 
 
-	"Colorbox":{
-		"prefix":"Colorbox",
-		"body":[
-			"\\Colorbox{${1:color}}{${2:content%text}}"
-		]
-	},
-
-
-	"Colorbox":{
+	"Colorbox[]{}{}":{
 		"prefix":"Colorbox",
 		"body":[
 			"\\Colorbox[${3:color model}]{${1:color}}{${2:content%text}}"
@@ -193,15 +417,7 @@
 	},
 
 
-	"Fcolorbox":{
-		"prefix":"Fcolorbox",
-		"body":[
-			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
-		]
-	},
-
-
-	"Fcolorbox":{
+	"Fcolorbox[]{}[]{}{}":{
 		"prefix":"Fcolorbox",
 		"body":[
 			"\\Fcolorbox[${4:fc model}]{${1:fcolor}}[${5:bg model}]{${2:bgcolor}}{${3:content%text}}"
@@ -209,15 +425,7 @@
 	},
 
 
-	"Colorbox":{
-		"prefix":"Colorbox",
-		"body":[
-			"\\Colorbox{${1:color}}{${2:content%text}}"
-		]
-	},
-
-
-	"Colorbox":{
+	"Colorbox[]{}{}":{
 		"prefix":"Colorbox",
 		"body":[
 			"\\Colorbox[${3:color model}]{${1:color}}{${2:content%text}}"
@@ -225,15 +433,7 @@
 	},
 
 
-	"Fcolorbox":{
-		"prefix":"Fcolorbox",
-		"body":[
-			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
-		]
-	},
-
-
-	"Fcolorbox":{
+	"Fcolorbox[]{}[]{}{}":{
 		"prefix":"Fcolorbox",
 		"body":[
 			"\\Fcolorbox[${4:fc model}]{${1:fcolor}}[${5:bg model}]{${2:bgcolor}}{${3:content%text}}"
@@ -241,23 +441,7 @@
 	},
 
 
-	"Rotatebox":{
-		"prefix":"Rotatebox",
-		"body":[
-			"\\Rotatebox{${1:angle}}{${2:content%text}}"
-		]
-	},
-
-
-	"Scalebox":{
-		"prefix":"Scalebox",
-		"body":[
-			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
-		]
-	},
-
-
-	"Scalebox":{
+	"Scalebox{}[]{}":{
 		"prefix":"Scalebox",
 		"body":[
 			"\\Scalebox{${1:h-scale}}[${3:v-scale}]{${2:content%text}}"
@@ -265,47 +449,7 @@
 	},
 
 
-	"Reflectbox":{
-		"prefix":"Reflectbox",
-		"body":[
-			"\\Reflectbox{${1:contents%text}}"
-		]
-	},
-
-
-	"Resizebox":{
-		"prefix":"Resizebox",
-		"body":[
-			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
-		]
-	},
-
-
-	"Resizebox*":{
-		"prefix":"Resizebox*",
-		"body":[
-			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
-		]
-	},
-
-
-	"Rotatebox":{
-		"prefix":"Rotatebox",
-		"body":[
-			"\\Rotatebox{${1:angle}}{${2:content%text}}"
-		]
-	},
-
-
-	"Scalebox":{
-		"prefix":"Scalebox",
-		"body":[
-			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
-		]
-	},
-
-
-	"Scalebox":{
+	"Scalebox{}[]{}":{
 		"prefix":"Scalebox",
 		"body":[
 			"\\Scalebox{${1:h-scale}}[${3:v-scale}]{${2:content%text}}"
@@ -313,47 +457,7 @@
 	},
 
 
-	"Reflectbox":{
-		"prefix":"Reflectbox",
-		"body":[
-			"\\Reflectbox{${1:contents%text}}"
-		]
-	},
-
-
-	"Resizebox":{
-		"prefix":"Resizebox",
-		"body":[
-			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
-		]
-	},
-
-
-	"Resizebox*":{
-		"prefix":"Resizebox*",
-		"body":[
-			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
-		]
-	},
-
-
-	"Dbox":{
-		"prefix":"Dbox",
-		"body":[
-			"\\Dbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dashbox":{
-		"prefix":"Dashbox",
-		"body":[
-			"\\Dashbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dashbox":{
+	"Dashbox[]{}":{
 		"prefix":"Dashbox",
 		"body":[
 			"\\Dashbox[${2:width}]{${1:content%text}}"
@@ -361,7 +465,7 @@
 	},
 
 
-	"Dashbox":{
+	"Dashbox[][]{}":{
 		"prefix":"Dashbox",
 		"body":[
 			"\\Dashbox[${2:width}][${3:position}]{${1:content%text}}"
@@ -369,15 +473,7 @@
 	},
 
 
-	"Lbox":{
-		"prefix":"Lbox",
-		"body":[
-			"\\Lbox{${1:content%text}}"
-		]
-	},
-
-
-	"Lbox":{
+	"Lbox[]{}":{
 		"prefix":"Lbox",
 		"body":[
 			"\\Lbox[${2:layers}]{${1:content%text}}"
@@ -385,15 +481,7 @@
 	},
 
 
-	"Dlbox":{
-		"prefix":"Dlbox",
-		"body":[
-			"\\Dlbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dlbox":{
+	"Dlbox[]{}":{
 		"prefix":"Dlbox",
 		"body":[
 			"\\Dlbox[${2:layers}]{${1:content%text}}"
@@ -401,15 +489,7 @@
 	},
 
 
-	"Colorbox":{
-		"prefix":"Colorbox",
-		"body":[
-			"\\Colorbox{${1:color}}{${2:content%text}}"
-		]
-	},
-
-
-	"Colorbox":{
+	"Colorbox[]{}{}":{
 		"prefix":"Colorbox",
 		"body":[
 			"\\Colorbox[${3:color model}]{${1:color}}{${2:content%text}}"
@@ -417,15 +497,7 @@
 	},
 
 
-	"Fcolorbox":{
-		"prefix":"Fcolorbox",
-		"body":[
-			"\\Fcolorbox{${1:fcolor}}{${2:bgcolor}}{${3:content%text}}"
-		]
-	},
-
-
-	"Fcolorbox":{
+	"Fcolorbox[]{}[]{}{}":{
 		"prefix":"Fcolorbox",
 		"body":[
 			"\\Fcolorbox[${4:fc model}]{${1:fcolor}}[${5:bg model}]{${2:bgcolor}}{${3:content%text}}"
@@ -433,23 +505,7 @@
 	},
 
 
-	"Rotatebox":{
-		"prefix":"Rotatebox",
-		"body":[
-			"\\Rotatebox{${1:angle}}{${2:content%text}}"
-		]
-	},
-
-
-	"Scalebox":{
-		"prefix":"Scalebox",
-		"body":[
-			"\\Scalebox{${1:h-scale}}{${2:contents%text}}"
-		]
-	},
-
-
-	"Scalebox":{
+	"Scalebox{}[]{}":{
 		"prefix":"Scalebox",
 		"body":[
 			"\\Scalebox{${1:h-scale}}[${3:v-scale}]{${2:content%text}}"
@@ -457,47 +513,7 @@
 	},
 
 
-	"Reflectbox":{
-		"prefix":"Reflectbox",
-		"body":[
-			"\\Reflectbox{${1:contents%text}}"
-		]
-	},
-
-
-	"Resizebox":{
-		"prefix":"Resizebox",
-		"body":[
-			"\\Resizebox{${1:width}}{${2:height}}{${3:content%text}}"
-		]
-	},
-
-
-	"Resizebox*":{
-		"prefix":"Resizebox*",
-		"body":[
-			"\\Resizebox*{${1:width}}{${2:totalheight}}{${3:content%text}}"
-		]
-	},
-
-
-	"Dbox":{
-		"prefix":"Dbox",
-		"body":[
-			"\\Dbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dashbox":{
-		"prefix":"Dashbox",
-		"body":[
-			"\\Dashbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dashbox":{
+	"Dashbox[]{}":{
 		"prefix":"Dashbox",
 		"body":[
 			"\\Dashbox[${2:width}]{${1:content%text}}"
@@ -505,7 +521,7 @@
 	},
 
 
-	"Dashbox":{
+	"Dashbox[][]{}":{
 		"prefix":"Dashbox",
 		"body":[
 			"\\Dashbox[${2:width}][${3:position}]{${1:content%text}}"
@@ -513,15 +529,7 @@
 	},
 
 
-	"Lbox":{
-		"prefix":"Lbox",
-		"body":[
-			"\\Lbox{${1:content%text}}"
-		]
-	},
-
-
-	"Lbox":{
+	"Lbox[]{}":{
 		"prefix":"Lbox",
 		"body":[
 			"\\Lbox[${2:layers}]{${1:content%text}}"
@@ -529,15 +537,7 @@
 	},
 
 
-	"Dlbox":{
-		"prefix":"Dlbox",
-		"body":[
-			"\\Dlbox{${1:content%text}}"
-		]
-	},
-
-
-	"Dlbox":{
+	"Dlbox[]{}":{
 		"prefix":"Dlbox",
 		"body":[
 			"\\Dlbox[${2:layers}]{${1:content%text}}"

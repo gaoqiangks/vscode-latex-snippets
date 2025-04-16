@@ -9,34 +9,34 @@
 	},
 
 
-	"thistime":{
-		"prefix":"thistime",
+	"settime{}":{
+		"prefix":"settime",
 		"body":[
-			"\\thistime[${1:delimiter}]"
+			"\\settime{${1:time}}"
 		]
 	},
 
 
 	"thistime*":{
-		"prefix":"thistime*",
+		"prefix":"*thistime",
 		"body":[
 			"\\thistime*"
 		]
 	},
 
 
-	"thistime*":{
-		"prefix":"thistime*",
+	"thistime*[]":{
+		"prefix":"*thistime",
 		"body":[
 			"\\thistime*[${1:delimiter}]"
 		]
 	},
 
 
-	"settime":{
-		"prefix":"settime",
+	"thistime[]":{
+		"prefix":"thistime",
 		"body":[
-			"\\settime{${1:time}}"
+			"\\thistime[${1:delimiter}]"
 		]
 	}
 }

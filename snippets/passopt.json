@@ -1,7 +1,7 @@
 {
 
 
-	"SetOptionsToPackage":{
+	"SetOptionsToPackage{}{}":{
 		"prefix":"SetOptionsToPackage",
 		"body":[
 			"\\SetOptionsToPackage{${1:options list}}{${2:package}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"SetOptionsToPackage*":{
-		"prefix":"SetOptionsToPackage*",
-		"body":[
-			"\\SetOptionsToPackage*{${1:options list}}{${2:package}}"
-		]
-	},
-
-
-	"SetOptionsToClass":{
+	"SetOptionsToClass{}{}":{
 		"prefix":"SetOptionsToClass",
 		"body":[
 			"\\SetOptionsToClass{${1:options list}}{${2:class}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"SetOptionsToClass*":{
-		"prefix":"SetOptionsToClass*",
-		"body":[
-			"\\SetOptionsToClass*{${1:options list}}{${2:class}}"
-		]
-	},
-
-
-	"ClearPackageOptions":{
+	"ClearPackageOptions{}":{
 		"prefix":"ClearPackageOptions",
 		"body":[
 			"\\ClearPackageOptions{${1:package}}"
@@ -41,10 +25,26 @@
 	},
 
 
-	"ClearClassOptions":{
+	"ClearClassOptions{}":{
 		"prefix":"ClearClassOptions",
 		"body":[
 			"\\ClearClassOptions{${1:class}}"
+		]
+	},
+
+
+	"SetOptionsToPackage*{}{}":{
+		"prefix":"*SetOptionsToPackage",
+		"body":[
+			"\\SetOptionsToPackage*{${1:options list}}{${2:package}}"
+		]
+	},
+
+
+	"SetOptionsToClass*{}{}":{
+		"prefix":"*SetOptionsToClass",
+		"body":[
+			"\\SetOptionsToClass*{${1:options list}}{${2:class}}"
 		]
 	}
 }

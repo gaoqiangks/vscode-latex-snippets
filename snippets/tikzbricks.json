@@ -1,7 +1,7 @@
 {
 
 
-	"brick":{
+	"brick{}{}":{
 		"prefix":"brick",
 		"body":[
 			"\\brick{${1:length%plain}}{${2:width%plain}}"
@@ -9,26 +9,10 @@
 	},
 
 
-	"brick":{
-		"prefix":"brick",
-		"body":[
-			"\\brick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
-		]
-	},
-
-
-	"wallbrick":{
+	"wallbrick{}{}":{
 		"prefix":"wallbrick",
 		"body":[
 			"\\wallbrick{${1:length%plain}}{${2:width%plain}}"
-		]
-	},
-
-
-	"wallbrick":{
-		"prefix":"wallbrick",
-		"body":[
-			"\\wallbrick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
 		]
 	},
 
@@ -65,11 +49,27 @@
 	},
 
 
+	"brick[]{}{}":{
+		"prefix":"brick",
+		"body":[
+			"\\brick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
+		]
+	},
+
+
+	"wallbrick[]{}{}":{
+		"prefix":"wallbrick",
+		"body":[
+			"\\wallbrick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
+		]
+	},
+
+
 	"wall":{
 		"prefix":"wall",
 		"body":[
 			"\\begin{wall}",
-			"\t$1",
+				"\t$1",
 			"\\end{wall}"
 		]
 	}

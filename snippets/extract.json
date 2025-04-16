@@ -1,7 +1,7 @@
 {
 
 
-	"extractionlabel":{
+	"extractionlabel{}":{
 		"prefix":"extractionlabel",
 		"body":[
 			"\\extractionlabel{${1:name}}"
@@ -18,7 +18,7 @@
 
 
 	"extractline*":{
-		"prefix":"extractline*",
+		"prefix":"*extractline",
 		"body":[
 			"\\extractline*"
 		]
@@ -29,7 +29,7 @@
 		"prefix":"extract",
 		"body":[
 			"\\begin{extract}",
-			"\t$1",
+				"\t$1",
 			"\\end{extract}"
 		]
 	},
@@ -39,18 +39,48 @@
 		"prefix":"extractskip",
 		"body":[
 			"\\begin{extractskip}",
-			"\t$1",
+				"\t$1",
 			"\\end{extractskip}"
 		]
 	},
 
 
 	"extract*":{
-		"prefix":"extract*",
+		"prefix":"*extract",
 		"body":[
 			"\\begin{extract*}",
-			"\t$1",
+				"\t$1",
 			"\\end{extract*}"
+		]
+	},
+
+
+	"extract":{
+		"prefix":"extract",
+		"body":[
+			"\\begin{extract}",
+				"\t$1",
+			"\\end{extract}"
+		]
+	},
+
+
+	"extract*":{
+		"prefix":"extract",
+		"body":[
+			"\\begin{extract*}",
+				"\t$1",
+			"\\end{extract*}"
+		]
+	},
+
+
+	"extractskip":{
+		"prefix":"extractskip",
+		"body":[
+			"\\begin{extractskip}",
+				"\t$1",
+			"\\end{extractskip}"
 		]
 	}
 }

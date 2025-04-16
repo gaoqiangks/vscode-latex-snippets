@@ -1,7 +1,7 @@
 {
 
 
-	"setkeys":{
+	"setkeys{}{}":{
 		"prefix":"setkeys",
 		"body":[
 			"\\setkeys{${1:families}}{${2:keyvals}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"setkeys":{
-		"prefix":"setkeys",
-		"body":[
-			"\\setkeys[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
-	},
-
-
-	"setkeys*":{
-		"prefix":"setkeys*",
-		"body":[
-			"\\setkeys*{${1:families}}{${2:keyvals}}"
-		]
-	},
-
-
-	"setkeys*":{
-		"prefix":"setkeys*",
-		"body":[
-			"\\setkeys*[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
-	},
-
-
-	"setrmkeys":{
+	"setrmkeys{}":{
 		"prefix":"setrmkeys",
 		"body":[
 			"\\setrmkeys{${1:families}}"
@@ -41,31 +17,7 @@
 	},
 
 
-	"setrmkeys":{
-		"prefix":"setrmkeys",
-		"body":[
-			"\\setrmkeys[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
-	},
-
-
-	"setrmkeys*":{
-		"prefix":"setrmkeys*",
-		"body":[
-			"\\setrmkeys*{${1:families}}"
-		]
-	},
-
-
-	"setrmkeys*":{
-		"prefix":"setrmkeys*",
-		"body":[
-			"\\setrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
-	},
-
-
-	"savevalue":{
+	"savevalue{}":{
 		"prefix":"savevalue",
 		"body":[
 			"\\savevalue{${1:key%plain}}"
@@ -73,7 +25,7 @@
 	},
 
 
-	"gsavevalue":{
+	"gsavevalue{}":{
 		"prefix":"gsavevalue",
 		"body":[
 			"\\gsavevalue{${1:key%plain}}"
@@ -81,7 +33,7 @@
 	},
 
 
-	"savekeys":{
+	"savekeys{}{}":{
 		"prefix":"savekeys",
 		"body":[
 			"\\savekeys{${1:family}}{${2:keyvals}}"
@@ -89,15 +41,7 @@
 	},
 
 
-	"savekeys":{
-		"prefix":"savekeys",
-		"body":[
-			"\\savekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"gsavekeys":{
+	"gsavekeys{}{}":{
 		"prefix":"gsavekeys",
 		"body":[
 			"\\gsavekeys{${1:family}}{${2:keyvals}}"
@@ -105,15 +49,7 @@
 	},
 
 
-	"gsavekeys":{
-		"prefix":"gsavekeys",
-		"body":[
-			"\\gsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"delsavekeys":{
+	"delsavekeys{}{}":{
 		"prefix":"delsavekeys",
 		"body":[
 			"\\delsavekeys{${1:family}}{${2:keyvals}}"
@@ -121,15 +57,7 @@
 	},
 
 
-	"delsavekeys":{
-		"prefix":"delsavekeys",
-		"body":[
-			"\\delsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"gdelsavekeys":{
+	"gdelsavekeys{}{}":{
 		"prefix":"gdelsavekeys",
 		"body":[
 			"\\gdelsavekeys{${1:family}}{${2:keyvals}}"
@@ -137,15 +65,7 @@
 	},
 
 
-	"gdelsavekeys":{
-		"prefix":"gdelsavekeys",
-		"body":[
-			"\\gdelsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"unsavekeys":{
+	"unsavekeys{}":{
 		"prefix":"unsavekeys",
 		"body":[
 			"\\unsavekeys{${1:family}}"
@@ -153,15 +73,7 @@
 	},
 
 
-	"unsavekeys":{
-		"prefix":"unsavekeys",
-		"body":[
-			"\\unsavekeys[${2:prefix}]{${1:family}}"
-		]
-	},
-
-
-	"gunsavekeys":{
+	"gunsavekeys{}":{
 		"prefix":"gunsavekeys",
 		"body":[
 			"\\gunsavekeys{${1:family}}"
@@ -169,15 +81,7 @@
 	},
 
 
-	"gunsavekeys":{
-		"prefix":"gunsavekeys",
-		"body":[
-			"\\gunsavekeys[${2:prefix}]{${1:family}}"
-		]
-	},
-
-
-	"global":{
+	"global{}":{
 		"prefix":"global",
 		"body":[
 			"\\global{${1:key%plain}}"
@@ -185,7 +89,7 @@
 	},
 
 
-	"usevalue":{
+	"usevalue{}":{
 		"prefix":"usevalue",
 		"body":[
 			"\\usevalue{${1:key%plain}}"
@@ -193,7 +97,7 @@
 	},
 
 
-	"presetkeys":{
+	"presetkeys{}{}{}":{
 		"prefix":"presetkeys",
 		"body":[
 			"\\presetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
@@ -201,15 +105,7 @@
 	},
 
 
-	"presetkeys":{
-		"prefix":"presetkeys",
-		"body":[
-			"\\presetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"gpresetkeys":{
+	"gpresetkeys{}{}{}":{
 		"prefix":"gpresetkeys",
 		"body":[
 			"\\gpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
@@ -217,15 +113,7 @@
 	},
 
 
-	"gpresetkeys":{
-		"prefix":"gpresetkeys",
-		"body":[
-			"\\gpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"delpresetkeys":{
+	"delpresetkeys{}{}{}":{
 		"prefix":"delpresetkeys",
 		"body":[
 			"\\delpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
@@ -233,15 +121,7 @@
 	},
 
 
-	"delpresetkeys":{
-		"prefix":"delpresetkeys",
-		"body":[
-			"\\delpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"gdelpresetkeys":{
+	"gdelpresetkeys{}{}{}":{
 		"prefix":"gdelpresetkeys",
 		"body":[
 			"\\gdelpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
@@ -249,15 +129,7 @@
 	},
 
 
-	"gdelpresetkeys":{
-		"prefix":"gdelpresetkeys",
-		"body":[
-			"\\gdelpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"unpresetkeys":{
+	"unpresetkeys{}":{
 		"prefix":"unpresetkeys",
 		"body":[
 			"\\unpresetkeys{${1:family}}"
@@ -265,15 +137,7 @@
 	},
 
 
-	"unpresetkeys":{
-		"prefix":"unpresetkeys",
-		"body":[
-			"\\unpresetkeys[${2:prefix}]{${1:family}}"
-		]
-	},
-
-
-	"gunpresetkeys":{
+	"gunpresetkeys{}":{
 		"prefix":"gunpresetkeys",
 		"body":[
 			"\\gunpresetkeys{${1:family}}"
@@ -281,15 +145,7 @@
 	},
 
 
-	"gunpresetkeys":{
-		"prefix":"gunpresetkeys",
-		"body":[
-			"\\gunpresetkeys[${2:prefix}]{${1:family}}"
-		]
-	},
-
-
-	"DeclareOptionX":{
+	"DeclareOptionX{}{}":{
 		"prefix":"DeclareOptionX",
 		"body":[
 			"\\DeclareOptionX{${1:key%plain}}{${2:function}}"
@@ -297,34 +153,10 @@
 	},
 
 
-	"DeclareOptionX":{
-		"prefix":"DeclareOptionX",
-		"body":[
-			"\\DeclareOptionX[${3:prefix}]<${5:family}>{${1:key%plain}}[${4:default}]{${2:function}}"
-		]
-	},
-
-
-	"DeclareOptionX*":{
-		"prefix":"DeclareOptionX*",
-		"body":[
-			"\\DeclareOptionX*{${1:function}}"
-		]
-	},
-
-
-	"ExecuteOptionsX":{
+	"ExecuteOptionsX{}":{
 		"prefix":"ExecuteOptionsX",
 		"body":[
 			"\\ExecuteOptionsX{${1:keyvals}}"
-		]
-	},
-
-
-	"ExecuteOptionsX":{
-		"prefix":"ExecuteOptionsX",
-		"body":[
-			"\\ExecuteOptionsX[${2:prefix}]<${4:families}>[${3:ignored keys}]{${1:keyvals}}"
 		]
 	},
 
@@ -337,26 +169,194 @@
 	},
 
 
-	"ProcessOptionsX":{
-		"prefix":"ProcessOptionsX",
+	"setkeys*{}{}":{
+		"prefix":"*setkeys",
 		"body":[
-			"\\ProcessOptionsX[${1:prefix}]<${3:families}>[${2:ignored keys}]"
+			"\\setkeys*{${1:families}}{${2:keyvals}}"
+		]
+	},
+
+
+	"setkeys*[]{}[]{}":{
+		"prefix":"*setkeys",
+		"body":[
+			"\\setkeys*[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
+		]
+	},
+
+
+	"setrmkeys*{}":{
+		"prefix":"*setrmkeys",
+		"body":[
+			"\\setrmkeys*{${1:families}}"
+		]
+	},
+
+
+	"setrmkeys*[]{}[]":{
+		"prefix":"*setrmkeys",
+		"body":[
+			"\\setrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
+		]
+	},
+
+
+	"DeclareOptionX*{}":{
+		"prefix":"*DeclareOptionX",
+		"body":[
+			"\\DeclareOptionX*{${1:function}}"
 		]
 	},
 
 
 	"ProcessOptionsX*":{
-		"prefix":"ProcessOptionsX*",
+		"prefix":"*ProcessOptionsX",
 		"body":[
 			"\\ProcessOptionsX*"
 		]
 	},
 
 
-	"ProcessOptionsX*":{
-		"prefix":"ProcessOptionsX*",
+	"ProcessOptionsX*[]<>[]":{
+		"prefix":"*ProcessOptionsX",
 		"body":[
 			"\\ProcessOptionsX*[${1:prefix}]<${3:families}>[${2:ignored keys}]"
+		]
+	},
+
+
+	"setkeys[]{}[]{}":{
+		"prefix":"setkeys",
+		"body":[
+			"\\setkeys[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
+		]
+	},
+
+
+	"setrmkeys[]{}[]":{
+		"prefix":"setrmkeys",
+		"body":[
+			"\\setrmkeys[${2:prefix}]{${1:families}}[${3:ignored keys}]"
+		]
+	},
+
+
+	"savekeys[]{}{}":{
+		"prefix":"savekeys",
+		"body":[
+			"\\savekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
+		]
+	},
+
+
+	"gsavekeys[]{}{}":{
+		"prefix":"gsavekeys",
+		"body":[
+			"\\gsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
+		]
+	},
+
+
+	"delsavekeys[]{}{}":{
+		"prefix":"delsavekeys",
+		"body":[
+			"\\delsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
+		]
+	},
+
+
+	"gdelsavekeys[]{}{}":{
+		"prefix":"gdelsavekeys",
+		"body":[
+			"\\gdelsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
+		]
+	},
+
+
+	"unsavekeys[]{}":{
+		"prefix":"unsavekeys",
+		"body":[
+			"\\unsavekeys[${2:prefix}]{${1:family}}"
+		]
+	},
+
+
+	"gunsavekeys[]{}":{
+		"prefix":"gunsavekeys",
+		"body":[
+			"\\gunsavekeys[${2:prefix}]{${1:family}}"
+		]
+	},
+
+
+	"presetkeys[]{}{}{}":{
+		"prefix":"presetkeys",
+		"body":[
+			"\\presetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		]
+	},
+
+
+	"gpresetkeys[]{}{}{}":{
+		"prefix":"gpresetkeys",
+		"body":[
+			"\\gpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		]
+	},
+
+
+	"delpresetkeys[]{}{}{}":{
+		"prefix":"delpresetkeys",
+		"body":[
+			"\\delpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		]
+	},
+
+
+	"gdelpresetkeys[]{}{}{}":{
+		"prefix":"gdelpresetkeys",
+		"body":[
+			"\\gdelpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		]
+	},
+
+
+	"unpresetkeys[]{}":{
+		"prefix":"unpresetkeys",
+		"body":[
+			"\\unpresetkeys[${2:prefix}]{${1:family}}"
+		]
+	},
+
+
+	"gunpresetkeys[]{}":{
+		"prefix":"gunpresetkeys",
+		"body":[
+			"\\gunpresetkeys[${2:prefix}]{${1:family}}"
+		]
+	},
+
+
+	"DeclareOptionX[]<>{}[]{}":{
+		"prefix":"DeclareOptionX",
+		"body":[
+			"\\DeclareOptionX[${3:prefix}]<${5:family}>{${1:key%plain}}[${4:default}]{${2:function}}"
+		]
+	},
+
+
+	"ExecuteOptionsX[]<>[]{}":{
+		"prefix":"ExecuteOptionsX",
+		"body":[
+			"\\ExecuteOptionsX[${2:prefix}]<${4:families}>[${3:ignored keys}]{${1:keyvals}}"
+		]
+	},
+
+
+	"ProcessOptionsX[]<>[]":{
+		"prefix":"ProcessOptionsX",
+		"body":[
+			"\\ProcessOptionsX[${1:prefix}]<${3:families}>[${2:ignored keys}]"
 		]
 	}
 }

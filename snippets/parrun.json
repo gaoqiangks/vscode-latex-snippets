@@ -1,15 +1,7 @@
 {
 
 
-	"Place*":{
-		"prefix":"Place*",
-		"body":[
-			"\\Place*"
-		]
-	},
-
-
-	"Place":{
+	"Place{}{}":{
 		"prefix":"Place",
 		"body":[
 			"\\Place{${1:fraction1}}{${2:fraction2}}"
@@ -145,7 +137,7 @@
 	},
 
 
-	"UserDefWidths":{
+	"UserDefWidths{}{}":{
 		"prefix":"UserDefWidths",
 		"body":[
 			"\\UserDefWidths{${1:fraction1}}{${2:fraction2}}"
@@ -169,11 +161,19 @@
 	},
 
 
+	"Place*":{
+		"prefix":"*Place",
+		"body":[
+			"\\Place*"
+		]
+	},
+
+
 	"fframe":{
 		"prefix":"fframe",
 		"body":[
 			"\\begin{fframe}",
-			"\t$1",
+				"\t$1",
 			"\\end{fframe}"
 		]
 	},
@@ -183,7 +183,7 @@
 		"prefix":"sframe",
 		"body":[
 			"\\begin{sframe}",
-			"\t$1",
+				"\t$1",
 			"\\end{sframe}"
 		]
 	}

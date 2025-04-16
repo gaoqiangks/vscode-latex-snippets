@@ -1,7 +1,7 @@
 {
 
 
-	"subfigure":{
+	"subfigure{}":{
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure{${1:figure%text}}"
@@ -9,42 +9,10 @@
 	},
 
 
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\subfigure[${2:caption%text}]{${1:figure%text}}"
-		]
-	},
-
-
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\subfigure[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
-		]
-	},
-
-
-	"subtable":{
+	"subtable{}":{
 		"prefix":"subtable",
 		"body":[
 			"\\subtable{${1:figure%text}}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable[${2:caption%text}]{${1:figure%text}}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
 		]
 	},
 
@@ -113,7 +81,7 @@
 	},
 
 
-	"subref":{
+	"subref{}":{
 		"prefix":"subref",
 		"body":[
 			"\\subref{${1:label}}"
@@ -121,7 +89,7 @@
 	},
 
 
-	"Subref":{
+	"Subref{}":{
 		"prefix":"Subref",
 		"body":[
 			"\\Subref{${1:label}}"
@@ -241,7 +209,7 @@
 	},
 
 
-	"label":{
+	"label(){}":{
 		"prefix":"label",
 		"body":[
 			"\\label(${2:bookmark}){${1:key%labeldef}}"
@@ -285,6 +253,38 @@
 		"prefix":"thelotdepth",
 		"body":[
 			"\\thelotdepth"
+		]
+	},
+
+
+	"subfigure[]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\subfigure[${2:caption%text}]{${1:figure%text}}"
+		]
+	},
+
+
+	"subfigure[][]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\subfigure[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
+		]
+	},
+
+
+	"subtable[]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable[${2:caption%text}]{${1:figure%text}}"
+		]
+	},
+
+
+	"subtable[][]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
 		]
 	}
 }

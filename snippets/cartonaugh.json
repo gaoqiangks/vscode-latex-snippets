@@ -1,15 +1,7 @@
 {
 
 
-	"autoterms":{
-		"prefix":"autoterms",
-		"body":[
-			"\\autoterms[${1:content}]"
-		]
-	},
-
-
-	"indeterminants":{
+	"indeterminants{}":{
 		"prefix":"indeterminants",
 		"body":[
 			"\\indeterminants{${1:cells}}"
@@ -17,7 +9,7 @@
 	},
 
 
-	"manualterms":{
+	"manualterms{}":{
 		"prefix":"manualterms",
 		"body":[
 			"\\manualterms{${1:contents}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"maxterms":{
+	"maxterms{}":{
 		"prefix":"maxterms",
 		"body":[
 			"\\maxterms{${1:cells}}"
@@ -33,7 +25,7 @@
 	},
 
 
-	"minterms":{
+	"minterms{}":{
 		"prefix":"minterms",
 		"body":[
 			"\\minterms{${1:cells}}"
@@ -41,7 +33,7 @@
 	},
 
 
-	"terms":{
+	"terms{}{}":{
 		"prefix":"terms",
 		"body":[
 			"\\terms{${1:cells}}{${2:content}}"
@@ -49,7 +41,7 @@
 	},
 
 
-	"implicant":{
+	"implicant{}{}":{
 		"prefix":"implicant",
 		"body":[
 			"\\implicant{${1:NWcell}}{${2:SEcell}}"
@@ -57,15 +49,7 @@
 	},
 
 
-	"implicant":{
-		"prefix":"implicant",
-		"body":[
-			"\\implicant{${1:NWcell}}{${2:SEcell}}[${3:submaps}]"
-		]
-	},
-
-
-	"implicantedge":{
+	"implicantedge{}{}{}{}":{
 		"prefix":"implicantedge",
 		"body":[
 			"\\implicantedge{${1:NWpart_NWcell}}{${2:NWpart_SEcell}}{${3:SEpart_NWcell}}{${4:SEpart_SEcell}}"
@@ -73,23 +57,7 @@
 	},
 
 
-	"implicantedge":{
-		"prefix":"implicantedge",
-		"body":[
-			"\\implicantedge{${1:NWpart_NWcell}}{${2:NWpart_SEcell}}{${3:SEpart_NWcell}}{${4:SEpart_SEcell}}[${5:submaps}]"
-		]
-	},
-
-
-	"implicantcorner":{
-		"prefix":"implicantcorner",
-		"body":[
-			"\\implicantcorner[${1:submaps}]"
-		]
-	},
-
-
-	"implicantspread":{
+	"implicantspread{}{}":{
 		"prefix":"implicantspread",
 		"body":[
 			"\\implicantspread{${1:inner%l}}{${2:outer%l}}"
@@ -105,10 +73,42 @@
 	},
 
 
-	"changecolor":{
+	"changecolor{}":{
 		"prefix":"changecolor",
 		"body":[
 			"\\changecolor{${1:color}}"
+		]
+	},
+
+
+	"autoterms[]":{
+		"prefix":"autoterms",
+		"body":[
+			"\\autoterms[${1:content}]"
+		]
+	},
+
+
+	"implicant{}{}[]":{
+		"prefix":"implicant",
+		"body":[
+			"\\implicant{${1:NWcell}}{${2:SEcell}}[${3:submaps}]"
+		]
+	},
+
+
+	"implicantedge{}{}{}{}[]":{
+		"prefix":"implicantedge",
+		"body":[
+			"\\implicantedge{${1:NWpart_NWcell}}{${2:NWpart_SEcell}}{${3:SEpart_NWcell}}{${4:SEpart_SEcell}}[${5:submaps}]"
+		]
+	},
+
+
+	"implicantcorner[]":{
+		"prefix":"implicantcorner",
+		"body":[
+			"\\implicantcorner[${1:submaps}]"
 		]
 	},
 
@@ -117,7 +117,37 @@
 		"prefix":"cartonaugh",
 		"body":[
 			"\\begin{cartonaugh}",
-			"\t$1",
+				"\t$1",
+			"\\end{cartonaugh}"
+		]
+	},
+
+
+	"cartonaugh":{
+		"prefix":"cartonaugh",
+		"body":[
+			"\\begin{cartonaugh}",
+				"\t$1",
+			"\\end{cartonaugh}"
+		]
+	},
+
+
+	"cartonaugh":{
+		"prefix":"cartonaugh",
+		"body":[
+			"\\begin{cartonaugh}",
+				"\t$1",
+			"\\end{cartonaugh}"
+		]
+	},
+
+
+	"cartonaugh":{
+		"prefix":"cartonaugh",
+		"body":[
+			"\\begin{cartonaugh}",
+				"\t$1",
 			"\\end{cartonaugh}"
 		]
 	}

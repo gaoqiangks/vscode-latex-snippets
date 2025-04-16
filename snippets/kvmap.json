@@ -1,7 +1,7 @@
 {
 
 
-	"kvmapsetup":{
+	"kvmapsetup{}":{
 		"prefix":"kvmapsetup",
 		"body":[
 			"\\kvmapsetup{${1:options%keyvals}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"kvlist":{
+	"kvlist{}{}{}{}":{
 		"prefix":"kvlist",
 		"body":[
 			"\\kvlist{${1:width}}{${2:height}}{${3:elements%formula}}{${4:variables%formula}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"bundle":{
+	"bundle{}{}{}{}":{
 		"prefix":"bundle",
 		"body":[
 			"\\bundle{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}"
@@ -25,10 +25,20 @@
 	},
 
 
-	"bundle":{
+	"bundle[]{}{}{}{}":{
 		"prefix":"bundle",
 		"body":[
 			"\\bundle[${5:options%keyvals}]{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}"
+		]
+	},
+
+
+	"kvmap":{
+		"prefix":"kvmap",
+		"body":[
+			"\\begin{kvmap}",
+				"\t$1",
+			"\\end{kvmap}"
 		]
 	},
 
@@ -37,7 +47,7 @@
 		"prefix":"kvmatrix",
 		"body":[
 			"\\begin{kvmatrix}",
-			"\t$1",
+				"\t$1",
 			"\\end{kvmatrix}"
 		]
 	},
@@ -47,7 +57,7 @@
 		"prefix":"kvmap",
 		"body":[
 			"\\begin{kvmap}",
-			"\t$1",
+				"\t$1",
 			"\\end{kvmap}"
 		]
 	}

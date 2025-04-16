@@ -1,7 +1,7 @@
 {
 
 
-	"tsvtemplate":{
+	"tsvtemplate{}{}":{
 		"prefix":"tsvtemplate",
 		"body":[
 			"\\tsvtemplate{${1:template}}{${2:file}}"
@@ -9,18 +9,18 @@
 	},
 
 
-	"tsvtemplate":{
-		"prefix":"tsvtemplate",
+	"applytemplate{}{}{}{}":{
+		"prefix":"applytemplate",
 		"body":[
-			"\\tsvtemplate[${3:colname1,colname2,...}]{${1:template}}{${2:file}}"
+			"\\applytemplate{${1:separator}}{${2:colnames}}{${3:template}}{${4:file}}"
 		]
 	},
 
 
-	"applytemplate":{
-		"prefix":"applytemplate",
+	"tsvtemplate[]{}{}":{
+		"prefix":"tsvtemplate",
 		"body":[
-			"\\applytemplate{${1:separator}}{${2:colnames}}{${3:template}}{${4:file}}"
+			"\\tsvtemplate[${3:colname1,colname2,...}]{${1:template}}{${2:file}}"
 		]
 	},
 
@@ -29,7 +29,17 @@
 		"prefix":"tsv template",
 		"body":[
 			"\\begin{tsv template}",
-			"\t$1",
+				"\t$1",
+			"\\end{tsv template}"
+		]
+	},
+
+
+	"tsv template":{
+		"prefix":"tsv template",
+		"body":[
+			"\\begin{tsv template}",
+				"\t$1",
 			"\\end{tsv template}"
 		]
 	}

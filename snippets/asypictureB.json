@@ -1,7 +1,7 @@
 {
 
 
-	"asyset":{
+	"asyset{}":{
 		"prefix":"asyset",
 		"body":[
 			"\\asyset{${1:options%keyvals}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"ASYPICcomparefiles":{
+	"ASYPICcomparefiles{}{}":{
 		"prefix":"ASYPICcomparefiles",
 		"body":[
 			"\\ASYPICcomparefiles{${1:file1%file}}{${2:file2%file}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"copyfile":{
+	"copyfile{}{}":{
 		"prefix":"copyfile",
 		"body":[
 			"\\copyfile{${1:file1%file}}{${2:file2%file}}"
@@ -57,20 +57,10 @@
 	},
 
 
-	"deletefile":{
+	"deletefile{}":{
 		"prefix":"deletefile",
 		"body":[
 			"\\deletefile{${1:file%file}}"
-		]
-	},
-
-
-	"asyheader":{
-		"prefix":"asyheader",
-		"body":[
-			"\\begin{asyheader}",
-			"\t$1",
-			"\\end{asyheader}"
 		]
 	},
 
@@ -79,8 +69,18 @@
 		"prefix":"asypicture",
 		"body":[
 			"\\begin{asypicture}",
-			"\t$1",
+				"\t$1",
 			"\\end{asypicture}"
+		]
+	},
+
+
+	"asyheader":{
+		"prefix":"asyheader",
+		"body":[
+			"\\begin{asyheader}",
+				"\t$1",
+			"\\end{asyheader}"
 		]
 	}
 }

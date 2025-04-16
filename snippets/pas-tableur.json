@@ -1,7 +1,7 @@
 {
 
 
-	"tableur":{
+	"tableur{}":{
 		"prefix":"tableur",
 		"body":[
 			"\\tableur{${1:colonnes}}"
@@ -9,31 +9,7 @@
 	},
 
 
-	"tableur":{
-		"prefix":"tableur",
-		"body":[
-			"\\tableur[${2:nombre de lignes}]{${1:colonnes}}"
-		]
-	},
-
-
-	"tableur*":{
-		"prefix":"tableur*",
-		"body":[
-			"\\tableur*{${1:col1/dim1,col2/dim2,...}}"
-		]
-	},
-
-
-	"tableur*":{
-		"prefix":"tableur*",
-		"body":[
-			"\\tableur*[${2:nombre de lignes}]{${1:col1/dim1,col2/dim2,...}}"
-		]
-	},
-
-
-	"tabcolwidth":{
+	"tabcolwidth{}":{
 		"prefix":"tabcolwidth",
 		"body":[
 			"\\tabcolwidth{${1:width}}"
@@ -41,7 +17,7 @@
 	},
 
 
-	"tabnumlinewidth":{
+	"tabnumlinewidth{}":{
 		"prefix":"tabnumlinewidth",
 		"body":[
 			"\\tabnumlinewidth{${1:width}}"
@@ -49,7 +25,7 @@
 	},
 
 
-	"tablineheight":{
+	"tablineheight{}":{
 		"prefix":"tablineheight",
 		"body":[
 			"\\tablineheight{${1:height}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"celtxt":{
+	"celtxt{}{}{}":{
 		"prefix":"celtxt",
 		"body":[
 			"\\celtxt{${1:colonne}}{${2:ligne}}{${3:texte}}"
@@ -73,31 +49,7 @@
 	},
 
 
-	"celtxt":{
-		"prefix":"celtxt",
-		"body":[
-			"\\celtxt[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}"
-		]
-	},
-
-
-	"celtxt*":{
-		"prefix":"celtxt*",
-		"body":[
-			"\\celtxt*{${1:colonne}}{${2:ligne}}{${3:texte}}"
-		]
-	},
-
-
-	"celtxt*":{
-		"prefix":"celtxt*",
-		"body":[
-			"\\celtxt*[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}"
-		]
-	},
-
-
-	"selecCell":{
+	"selecCell{}{}":{
 		"prefix":"selecCell",
 		"body":[
 			"\\selecCell{${1:colonne}}{${2:ligne}}"
@@ -105,7 +57,7 @@
 	},
 
 
-	"multiSelec":{
+	"multiSelec{}{}":{
 		"prefix":"multiSelec",
 		"body":[
 			"\\multiSelec{${1:colonnes}}{${2:lignes}}"
@@ -113,10 +65,58 @@
 	},
 
 
-	"multimultiSelec":{
+	"multimultiSelec{}{}{}":{
 		"prefix":"multimultiSelec",
 		"body":[
 			"\\multimultiSelec{${1:ligne1}}{${2:ligne2}}{${3:ligne3}}"
+		]
+	},
+
+
+	"tableur*{}":{
+		"prefix":"*tableur",
+		"body":[
+			"\\tableur*{${1:col1/dim1,col2/dim2,...}}"
+		]
+	},
+
+
+	"tableur*[]{}":{
+		"prefix":"*tableur",
+		"body":[
+			"\\tableur*[${2:nombre de lignes}]{${1:col1/dim1,col2/dim2,...}}"
+		]
+	},
+
+
+	"celtxt*{}{}{}":{
+		"prefix":"*celtxt",
+		"body":[
+			"\\celtxt*{${1:colonne}}{${2:ligne}}{${3:texte}}"
+		]
+	},
+
+
+	"celtxt*[]{}{}{}":{
+		"prefix":"*celtxt",
+		"body":[
+			"\\celtxt*[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}"
+		]
+	},
+
+
+	"tableur[]{}":{
+		"prefix":"tableur",
+		"body":[
+			"\\tableur[${2:nombre de lignes}]{${1:colonnes}}"
+		]
+	},
+
+
+	"celtxt[]{}{}{}":{
+		"prefix":"celtxt",
+		"body":[
+			"\\celtxt[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}"
 		]
 	}
 }

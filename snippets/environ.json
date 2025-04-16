@@ -1,7 +1,7 @@
 {
 
 
-	"NewEnviron":{
+	"NewEnviron{}{}":{
 		"prefix":"NewEnviron",
 		"body":[
 			"\\NewEnviron{${1:envname}}{${2:definition}}"
@@ -9,58 +9,10 @@
 	},
 
 
-	"NewEnviron":{
-		"prefix":"NewEnviron",
-		"body":[
-			"\\NewEnviron{${1:envname}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"NewEnviron":{
-		"prefix":"NewEnviron",
-		"body":[
-			"\\NewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"NewEnviron":{
-		"prefix":"NewEnviron",
-		"body":[
-			"\\NewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}[${5:final code}]"
-		]
-	},
-
-
-	"RenewEnviron":{
+	"RenewEnviron{}{}":{
 		"prefix":"RenewEnviron",
 		"body":[
 			"\\RenewEnviron{${1:envname}}{${2:definition}}"
-		]
-	},
-
-
-	"RenewEnviron":{
-		"prefix":"RenewEnviron",
-		"body":[
-			"\\RenewEnviron{${1:envname}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"RenewEnviron":{
-		"prefix":"RenewEnviron",
-		"body":[
-			"\\RenewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"RenewEnviron":{
-		"prefix":"RenewEnviron",
-		"body":[
-			"\\RenewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}[${5:final code}]"
 		]
 	},
 
@@ -73,7 +25,7 @@
 	},
 
 
-	"environfinalcode":{
+	"environfinalcode{}":{
 		"prefix":"environfinalcode",
 		"body":[
 			"\\environfinalcode{${1:code}}"
@@ -81,10 +33,58 @@
 	},
 
 
-	"environbodyname":{
+	"environbodyname{}":{
 		"prefix":"environbodyname",
 		"body":[
 			"\\environbodyname{${1:cmd}}"
+		]
+	},
+
+
+	"NewEnviron{}[]{}":{
+		"prefix":"NewEnviron",
+		"body":[
+			"\\NewEnviron{${1:envname}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"NewEnviron{}[][]{}":{
+		"prefix":"NewEnviron",
+		"body":[
+			"\\NewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}"
+		]
+	},
+
+
+	"NewEnviron{}[][]{}[]":{
+		"prefix":"NewEnviron",
+		"body":[
+			"\\NewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}[${5:final code}]"
+		]
+	},
+
+
+	"RenewEnviron{}[]{}":{
+		"prefix":"RenewEnviron",
+		"body":[
+			"\\RenewEnviron{${1:envname}}[${3:args}]{${2:definition}}"
+		]
+	},
+
+
+	"RenewEnviron{}[][]{}":{
+		"prefix":"RenewEnviron",
+		"body":[
+			"\\RenewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}"
+		]
+	},
+
+
+	"RenewEnviron{}[][]{}[]":{
+		"prefix":"RenewEnviron",
+		"body":[
+			"\\RenewEnviron{${1:envname}}[${3:args}][${4:default}]{${2:definition}}[${5:final code}]"
 		]
 	}
 }

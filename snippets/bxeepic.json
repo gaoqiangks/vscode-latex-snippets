@@ -1,7 +1,7 @@
 {
 
 
-	"bxGridLabelForm":{
+	"bxGridLabelForm{}":{
 		"prefix":"bxGridLabelForm",
 		"body":[
 			"\\bxGridLabelForm{${1:real}}"
@@ -89,7 +89,7 @@
 	},
 
 
-	"multiputlist":{
+	"multiputlist()(){}":{
 		"prefix":"multiputlist",
 		"body":[
 			"\\multiputlist(${2:x},${3:y})(${4:Δx},${5:Δy}){${1:item1,item2,...}}"
@@ -97,15 +97,7 @@
 	},
 
 
-	"multiputlist":{
-		"prefix":"multiputlist",
-		"body":[
-			"\\multiputlist(${3:x},${4:y})(${5:Δx},${6:Δy})[${2:pos}]{${1:item1,item2,...}}"
-		]
-	},
-
-
-	"matrixput":{
+	"matrixput()(){}(){}{}":{
 		"prefix":"matrixput",
 		"body":[
 			"\\matrixput(${4:x},${5:y})(${6:Δx1},${7:Δy1}){${1:n1}}(${8:Δx2},${9:Δy2}){${2:n2}}{${3:object}}"
@@ -113,18 +105,10 @@
 	},
 
 
-	"grid":{
+	"grid()()":{
 		"prefix":"grid",
 		"body":[
 			"\\grid(${1:width},${2:height})(${3:Δwidth},${4:Δheight})"
-		]
-	},
-
-
-	"grid":{
-		"prefix":"grid",
-		"body":[
-			"\\grid(${2:width},${3:height})(${4:Δwidth},${5:Δheight})[${1:x0,y0}]"
 		]
 	},
 
@@ -145,7 +129,7 @@
 	},
 
 
-	"jput":{
+	"jput(){}":{
 		"prefix":"jput",
 		"body":[
 			"\\jput(${2:x},${3:y}){${1:object}}"
@@ -161,7 +145,7 @@
 	},
 
 
-	"putfile":{
+	"putfile{}{}":{
 		"prefix":"putfile",
 		"body":[
 			"\\putfile{${1:file}}{${2:object}}"
@@ -169,7 +153,7 @@
 	},
 
 
-	"line":{
+	"line(){}":{
 		"prefix":"line",
 		"body":[
 			"\\line(${2:x},${3:y}){${1:length}}"
@@ -177,7 +161,7 @@
 	},
 
 
-	"circle":{
+	"circle{}":{
 		"prefix":"circle",
 		"body":[
 			"\\circle{${1:diameter}}"
@@ -185,26 +169,10 @@
 	},
 
 
-	"circle*":{
-		"prefix":"circle*",
-		"body":[
-			"\\circle*{${1:diameter}}"
-		]
-	},
-
-
-	"oval":{
+	"oval()":{
 		"prefix":"oval",
 		"body":[
 			"\\oval(${1:width},${2:height})"
-		]
-	},
-
-
-	"oval":{
-		"prefix":"oval",
-		"body":[
-			"\\oval(${2:width},${3:height})[${1:portion}]"
 		]
 	},
 
@@ -217,7 +185,7 @@
 	},
 
 
-	"allinethickness":{
+	"allinethickness{}":{
 		"prefix":"allinethickness",
 		"body":[
 			"\\allinethickness{${1:dimen}}"
@@ -233,7 +201,7 @@
 	},
 
 
-	"ellipse":{
+	"ellipse{}{}":{
 		"prefix":"ellipse",
 		"body":[
 			"\\ellipse{${1:x diameter}}{${2:y diameter}}"
@@ -241,18 +209,50 @@
 	},
 
 
-	"ellipse*":{
-		"prefix":"ellipse*",
+	"arc{}{}{}":{
+		"prefix":"arc",
+		"body":[
+			"\\arc{${1:diameter}}{${2:start angle}}{${3:end angle}}"
+		]
+	},
+
+
+	"circle*{}":{
+		"prefix":"*circle",
+		"body":[
+			"\\circle*{${1:diameter}}"
+		]
+	},
+
+
+	"ellipse*{}{}":{
+		"prefix":"*ellipse",
 		"body":[
 			"\\ellipse*{${1:x diameter}}{${2:y diameter}}"
 		]
 	},
 
 
-	"arc":{
-		"prefix":"arc",
+	"multiputlist()()[]{}":{
+		"prefix":"multiputlist",
 		"body":[
-			"\\arc{${1:diameter}}{${2:start angle}}{${3:end angle}}"
+			"\\multiputlist(${3:x},${4:y})(${5:Δx},${6:Δy})[${2:pos}]{${1:item1,item2,...}}"
+		]
+	},
+
+
+	"grid()()[]":{
+		"prefix":"grid",
+		"body":[
+			"\\grid(${2:width},${3:height})(${4:Δwidth},${5:Δheight})[${1:x0,y0}]"
+		]
+	},
+
+
+	"oval()[]":{
+		"prefix":"oval",
+		"body":[
+			"\\oval(${2:width},${3:height})[${1:portion}]"
 		]
 	},
 
@@ -261,18 +261,8 @@
 		"prefix":"dottedjoin",
 		"body":[
 			"\\begin{dottedjoin}",
-			"\t$1",
+				"\t$1",
 			"\\end{dottedjoin}"
-		]
-	},
-
-
-	"drawjoin":{
-		"prefix":"drawjoin",
-		"body":[
-			"\\begin{drawjoin}",
-			"\t$1",
-			"\\end{drawjoin}"
 		]
 	},
 
@@ -281,8 +271,68 @@
 		"prefix":"dashjoin",
 		"body":[
 			"\\begin{dashjoin}",
-			"\t$1",
+				"\t$1",
 			"\\end{dashjoin}"
+		]
+	},
+
+
+	"drawjoin":{
+		"prefix":"drawjoin",
+		"body":[
+			"\\begin{drawjoin}",
+				"\t$1",
+			"\\end{drawjoin}"
+		]
+	},
+
+
+	"dottedjoin":{
+		"prefix":"dottedjoin",
+		"body":[
+			"\\begin{dottedjoin}",
+				"\t$1",
+			"\\end{dottedjoin}"
+		]
+	},
+
+
+	"dashjoin":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t$1",
+			"\\end{dashjoin}"
+		]
+	},
+
+
+	"dashjoin":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t$1",
+			"\\end{dashjoin}"
+		]
+	},
+
+
+	"dashjoin":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t$1",
+			"\\end{dashjoin}"
+		]
+	},
+
+
+	"drawjoin":{
+		"prefix":"drawjoin",
+		"body":[
+			"\\begin{drawjoin}",
+				"\t$1",
+			"\\end{drawjoin}"
 		]
 	}
 }

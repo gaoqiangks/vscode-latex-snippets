@@ -1,7 +1,7 @@
 {
 
 
-	"MiniPostIt":{
+	"MiniPostIt{}":{
 		"prefix":"MiniPostIt",
 		"body":[
 			"\\MiniPostIt{${1:contenu%text}}"
@@ -9,7 +9,23 @@
 	},
 
 
-	"MiniPostIt":{
+	"MiniPostIt*{}":{
+		"prefix":"*MiniPostIt",
+		"body":[
+			"\\MiniPostIt*{${1:contenu%text}}"
+		]
+	},
+
+
+	"MiniPostIt*[]{}":{
+		"prefix":"*MiniPostIt",
+		"body":[
+			"\\MiniPostIt*[${2:color}]{${1:contenu%text}}"
+		]
+	},
+
+
+	"MiniPostIt[]{}":{
 		"prefix":"MiniPostIt",
 		"body":[
 			"\\MiniPostIt[${2:color}]{${1:contenu%text}}"
@@ -17,18 +33,22 @@
 	},
 
 
-	"MiniPostIt*":{
-		"prefix":"MiniPostIt*",
+	"PostIt":{
+		"prefix":"PostIt",
 		"body":[
-			"\\MiniPostIt*{${1:contenu%text}}"
+			"\\begin{PostIt}",
+				"\t$1",
+			"\\end{PostIt}"
 		]
 	},
 
 
-	"MiniPostIt*":{
-		"prefix":"MiniPostIt*",
+	"PostIt":{
+		"prefix":"PostIt",
 		"body":[
-			"\\MiniPostIt*[${2:color}]{${1:contenu%text}}"
+			"\\begin{PostIt}",
+				"\t$1",
+			"\\end{PostIt}"
 		]
 	},
 
@@ -37,7 +57,17 @@
 		"prefix":"PostItNote",
 		"body":[
 			"\\begin{PostItNote}",
-			"\t$1",
+				"\t$1",
+			"\\end{PostItNote}"
+		]
+	},
+
+
+	"PostItNote":{
+		"prefix":"PostItNote",
+		"body":[
+			"\\begin{PostItNote}",
+				"\t$1",
 			"\\end{PostItNote}"
 		]
 	},
@@ -47,8 +77,38 @@
 		"prefix":"PostIt",
 		"body":[
 			"\\begin{PostIt}",
-			"\t$1",
+				"\t$1",
 			"\\end{PostIt}"
+		]
+	},
+
+
+	"PostIt":{
+		"prefix":"PostIt",
+		"body":[
+			"\\begin{PostIt}",
+				"\t$1",
+			"\\end{PostIt}"
+		]
+	},
+
+
+	"PostItNote":{
+		"prefix":"PostItNote",
+		"body":[
+			"\\begin{PostItNote}",
+				"\t$1",
+			"\\end{PostItNote}"
+		]
+	},
+
+
+	"PostItNote":{
+		"prefix":"PostItNote",
+		"body":[
+			"\\begin{PostItNote}",
+				"\t$1",
+			"\\end{PostItNote}"
 		]
 	}
 }

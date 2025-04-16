@@ -1,18 +1,10 @@
 {
 
 
-	"truncate":{
+	"truncate{}{}":{
 		"prefix":"truncate",
 		"body":[
 			"\\truncate{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"truncate":{
-		"prefix":"truncate",
-		"body":[
-			"\\truncate[${3:marker}]{${1:width}}{${2:text}}"
 		]
 	},
 
@@ -21,6 +13,14 @@
 		"prefix":"TruncateMarker",
 		"body":[
 			"\\TruncateMarker"
+		]
+	},
+
+
+	"truncate[]{}{}":{
+		"prefix":"truncate",
+		"body":[
+			"\\truncate[${3:marker}]{${1:width}}{${2:text}}"
 		]
 	}
 }

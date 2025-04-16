@@ -9,7 +9,7 @@
 	},
 
 
-	"tnotex":{
+	"tnotex{}":{
 		"prefix":"tnotex",
 		"body":[
 			"\\tnotex{${1:label}}"
@@ -17,15 +17,7 @@
 	},
 
 
-	"tnotex*":{
-		"prefix":"tnotex*",
-		"body":[
-			"\\tnotex*{${1:label}}"
-		]
-	},
-
-
-	"setTableNoteFont":{
+	"setTableNoteFont{}":{
 		"prefix":"setTableNoteFont",
 		"body":[
 			"\\setTableNoteFont{${1:font cmds}}"
@@ -73,11 +65,19 @@
 	},
 
 
+	"tnotex*{}":{
+		"prefix":"*tnotex",
+		"body":[
+			"\\tnotex*{${1:label}}"
+		]
+	},
+
+
 	"ThreePartTable":{
 		"prefix":"ThreePartTable",
 		"body":[
 			"\\begin{ThreePartTable}",
-			"\t$1",
+				"\t$1",
 			"\\end{ThreePartTable}"
 		]
 	},
@@ -87,7 +87,7 @@
 		"prefix":"TableNotes",
 		"body":[
 			"\\begin{TableNotes}",
-			"\t$1",
+				"\t$1",
 			"\\end{TableNotes}"
 		]
 	}

@@ -1,7 +1,7 @@
 {
 
 
-	"cardfrontstyle":{
+	"cardfrontstyle{}":{
 		"prefix":"cardfrontstyle",
 		"body":[
 			"\\cardfrontstyle{${1:style%keyvals}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"cardfrontstyle":{
-		"prefix":"cardfrontstyle",
-		"body":[
-			"\\cardfrontstyle[${2:font commands}]{${1:style%keyvals}}"
-		]
-	},
-
-
-	"cardfrontfoot":{
+	"cardfrontfoot{}":{
 		"prefix":"cardfrontfoot",
 		"body":[
 			"\\cardfrontfoot{${1:text}}"
@@ -25,7 +17,7 @@
 	},
 
 
-	"cardbackstyle":{
+	"cardbackstyle{}":{
 		"prefix":"cardbackstyle",
 		"body":[
 			"\\cardbackstyle{${1:style%keyvals}}"
@@ -33,15 +25,7 @@
 	},
 
 
-	"cardbackstyle":{
-		"prefix":"cardbackstyle",
-		"body":[
-			"\\cardbackstyle[${2:font commands}]{${1:style%keyvals}}"
-		]
-	},
-
-
-	"cardfrontheadstyle":{
+	"cardfrontheadstyle{}":{
 		"prefix":"cardfrontheadstyle",
 		"body":[
 			"\\cardfrontheadstyle{${1:style%keyvals}}"
@@ -49,26 +33,10 @@
 	},
 
 
-	"cardfrontheadstyle":{
-		"prefix":"cardfrontheadstyle",
-		"body":[
-			"\\cardfrontheadstyle[${2:font commands}]{${1:style%keyvals}}"
-		]
-	},
-
-
-	"cardfrontfootstyle":{
+	"cardfrontfootstyle{}":{
 		"prefix":"cardfrontfootstyle",
 		"body":[
 			"\\cardfrontfootstyle{${1:style%keyvals}}"
-		]
-	},
-
-
-	"cardfrontfootstyle":{
-		"prefix":"cardfrontfootstyle",
-		"body":[
-			"\\cardfrontfootstyle[${2:font commands}]{${1:style%keyvals}}"
 		]
 	},
 
@@ -177,11 +145,53 @@
 	},
 
 
+	"cardfrontstyle[]{}":{
+		"prefix":"cardfrontstyle",
+		"body":[
+			"\\cardfrontstyle[${2:font commands}]{${1:style%keyvals}}"
+		]
+	},
+
+
+	"cardbackstyle[]{}":{
+		"prefix":"cardbackstyle",
+		"body":[
+			"\\cardbackstyle[${2:font commands}]{${1:style%keyvals}}"
+		]
+	},
+
+
+	"cardfrontheadstyle[]{}":{
+		"prefix":"cardfrontheadstyle",
+		"body":[
+			"\\cardfrontheadstyle[${2:font commands}]{${1:style%keyvals}}"
+		]
+	},
+
+
+	"cardfrontfootstyle[]{}":{
+		"prefix":"cardfrontfootstyle",
+		"body":[
+			"\\cardfrontfootstyle[${2:font commands}]{${1:style%keyvals}}"
+		]
+	},
+
+
 	"flashcard":{
 		"prefix":"flashcard",
 		"body":[
 			"\\begin{flashcard}",
-			"\t$1",
+				"\t$1",
+			"\\end{flashcard}"
+		]
+	},
+
+
+	"flashcard":{
+		"prefix":"flashcard",
+		"body":[
+			"\\begin{flashcard}",
+				"\t$1",
 			"\\end{flashcard}"
 		]
 	}

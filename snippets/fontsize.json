@@ -1,7 +1,7 @@
 {
 
 
-	"changefontsize":{
+	"changefontsize{}":{
 		"prefix":"changefontsize",
 		"body":[
 			"\\changefontsize{${1:fontsize}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"changefontsize":{
-		"prefix":"changefontsize",
-		"body":[
-			"\\changefontsize[${2:baselineskip}]{${1:fontsize}}"
-		]
-	},
-
-
-	"generateclofile":{
+	"generateclofile{}{}":{
 		"prefix":"generateclofile",
 		"body":[
 			"\\generateclofile{${1:name}}{${2:fontsize}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"generateclofile":{
-		"prefix":"generateclofile",
-		"body":[
-			"\\generateclofile{${1:name}}[${3:baselineskip}]{${2:fontsize}}"
-		]
-	},
-
-
-	"printsamples":{
+	"printsamples{}{}":{
 		"prefix":"printsamples",
 		"body":[
 			"\\printsamples{${1:baselineskip}}{${2:fontsize}}"
@@ -41,15 +25,7 @@
 	},
 
 
-	"printsamples":{
-		"prefix":"printsamples",
-		"body":[
-			"\\printsamples{${1:baselineskip}}{${2:fontsize}}[${3:sizes}]"
-		]
-	},
-
-
-	"sampletext":{
+	"sampletext{}":{
 		"prefix":"sampletext",
 		"body":[
 			"\\sampletext{${1:text}}"
@@ -325,6 +301,30 @@
 		"prefix":"HUGErrr",
 		"body":[
 			"\\HUGErrr"
+		]
+	},
+
+
+	"changefontsize[]{}":{
+		"prefix":"changefontsize",
+		"body":[
+			"\\changefontsize[${2:baselineskip}]{${1:fontsize}}"
+		]
+	},
+
+
+	"generateclofile{}[]{}":{
+		"prefix":"generateclofile",
+		"body":[
+			"\\generateclofile{${1:name}}[${3:baselineskip}]{${2:fontsize}}"
+		]
+	},
+
+
+	"printsamples{}{}[]":{
+		"prefix":"printsamples",
+		"body":[
+			"\\printsamples{${1:baselineskip}}{${2:fontsize}}[${3:sizes}]"
 		]
 	}
 }

@@ -9,7 +9,7 @@
 	},
 
 
-	"circput":{
+	"circput()(){}{}":{
 		"prefix":"circput",
 		"body":[
 			"\\circput(${3:nodeA})(${4:nodeB}){${1:stuffA}}{${2:stuffB}}"
@@ -81,7 +81,7 @@
 	},
 
 
-	"node":{
+	"node()":{
 		"prefix":"node",
 		"body":[
 			"\\node(${1:name})"
@@ -105,18 +105,10 @@
 	},
 
 
-	"psArrowCivil":{
+	"psArrowCivil()(){}":{
 		"prefix":"psArrowCivil",
 		"body":[
 			"\\psArrowCivil(${2:nodeA})(${3:nodeB}){${1:stuff}}"
-		]
-	},
-
-
-	"psArrowCivil":{
-		"prefix":"psArrowCivil",
-		"body":[
-			"\\psArrowCivil[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:stuff}}"
 		]
 	},
 
@@ -145,7 +137,15 @@
 	},
 
 
-	"triload":{
+	"psArrowCivil[]()(){}":{
+		"prefix":"psArrowCivil",
+		"body":[
+			"\\psArrowCivil[${2:options%keyvals}](${3:nodeA})(${4:nodeB}){${1:stuff}}"
+		]
+	},
+
+
+	"triload[]":{
 		"prefix":"triload",
 		"body":[
 			"\\triload[${1:options%keyvals}]"

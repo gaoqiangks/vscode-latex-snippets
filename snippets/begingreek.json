@@ -9,7 +9,7 @@
 	},
 
 
-	"greektxt":{
+	"greektxt{}":{
 		"prefix":"greektxt",
 		"body":[
 			"\\greektxt{${1:greek text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"greektxt":{
+	"greektxt[]{}":{
 		"prefix":"greektxt",
 		"body":[
 			"\\greektxt[${2:font family}]{${1:greek text}}"
@@ -29,7 +29,17 @@
 		"prefix":"greek",
 		"body":[
 			"\\begin{greek}",
-			"\t$1",
+				"\t$1",
+			"\\end{greek}"
+		]
+	},
+
+
+	"greek":{
+		"prefix":"greek",
+		"body":[
+			"\\begin{greek}",
+				"\t$1",
 			"\\end{greek}"
 		]
 	}

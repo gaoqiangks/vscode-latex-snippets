@@ -1,7 +1,7 @@
 {
 
 
-	"titlelabel":{
+	"titlelabel{}":{
 		"prefix":"titlelabel",
 		"body":[
 			"\\titlelabel{${1:label-format}}"
@@ -17,34 +17,10 @@
 	},
 
 
-	"titleformat*":{
-		"prefix":"titleformat*",
-		"body":[
-			"\\titleformat*{${1:command%plain}}{${2:format}}"
-		]
-	},
-
-
-	"titleformat":{
+	"titleformat{}{}{}{}{}":{
 		"prefix":"titleformat",
 		"body":[
 			"\\titleformat{${1:command%plain}}{${2:format}}{${3:label}}{${4:sep%l}}{${5:before-code}}"
-		]
-	},
-
-
-	"titleformat":{
-		"prefix":"titleformat",
-		"body":[
-			"\\titleformat{${1:command%plain}}[${6:shape%keyvals}]{${2:format}}{${3:label}}{${4:sep%l}}{${5:before-code}}"
-		]
-	},
-
-
-	"titleformat":{
-		"prefix":"titleformat",
-		"body":[
-			"\\titleformat{${1:command%plain}}[${6:shape%keyvals}]{${2:format}}{${3:label}}{${4:sep%l}}{${5:before-code}}[${7:after-code}]"
 		]
 	},
 
@@ -57,34 +33,10 @@
 	},
 
 
-	"titlespacing":{
+	"titlespacing{}{}{}{}":{
 		"prefix":"titlespacing",
 		"body":[
 			"\\titlespacing{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}"
-		]
-	},
-
-
-	"titlespacing":{
-		"prefix":"titlespacing",
-		"body":[
-			"\\titlespacing{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}[${5:right-sep%l}]"
-		]
-	},
-
-
-	"titlespacing*":{
-		"prefix":"titlespacing*",
-		"body":[
-			"\\titlespacing*{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}"
-		]
-	},
-
-
-	"titlespacing*":{
-		"prefix":"titlespacing*",
-		"body":[
-			"\\titlespacing*{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}[${5:right-sep%l}]"
 		]
 	},
 
@@ -177,34 +129,10 @@
 	},
 
 
-	"titleline":{
+	"titleline{}":{
 		"prefix":"titleline",
 		"body":[
 			"\\titleline{${1:horizontal material%text}}"
-		]
-	},
-
-
-	"titleline":{
-		"prefix":"titleline",
-		"body":[
-			"\\titleline[${2:align%keyvals}]{${1:horizontal material%text}}"
-		]
-	},
-
-
-	"titleline*":{
-		"prefix":"titleline*",
-		"body":[
-			"\\titleline*{${1:horizontal material%text}}"
-		]
-	},
-
-
-	"titleline*":{
-		"prefix":"titleline*",
-		"body":[
-			"\\titleline*[${2:align%keyvals}]{${1:horizontal material%text}}"
 		]
 	},
 
@@ -213,30 +141,6 @@
 		"prefix":"titlerule",
 		"body":[
 			"\\titlerule"
-		]
-	},
-
-
-	"titlerule":{
-		"prefix":"titlerule",
-		"body":[
-			"\\titlerule[${1:height}]"
-		]
-	},
-
-
-	"titlerule*":{
-		"prefix":"titlerule*",
-		"body":[
-			"\\titlerule*{${1:text}}"
-		]
-	},
-
-
-	"titlerule*":{
-		"prefix":"titlerule*",
-		"body":[
-			"\\titlerule*[${2:width}]{${1:text}}"
 		]
 	},
 
@@ -265,7 +169,7 @@
 	},
 
 
-	"iftitlemeasuring":{
+	"iftitlemeasuring{}{}":{
 		"prefix":"iftitlemeasuring",
 		"body":[
 			"\\iftitlemeasuring{${1:true}}{${2:false}}"
@@ -273,7 +177,7 @@
 	},
 
 
-	"assignpagestyle":{
+	"assignpagestyle{}{}":{
 		"prefix":"assignpagestyle",
 		"body":[
 			"\\assignpagestyle{${1:command%plain}}{${2:pagestyle}}"
@@ -329,7 +233,7 @@
 	},
 
 
-	"titleclass":{
+	"titleclass{}{}":{
 		"prefix":"titleclass",
 		"body":[
 			"\\titleclass{${1:name%cmd}}{${2:class%keyvals}}"
@@ -337,7 +241,103 @@
 	},
 
 
-	"titleclass":{
+	"titleformat*{}{}":{
+		"prefix":"*titleformat",
+		"body":[
+			"\\titleformat*{${1:command%plain}}{${2:format}}"
+		]
+	},
+
+
+	"titlespacing*{}{}{}{}":{
+		"prefix":"*titlespacing",
+		"body":[
+			"\\titlespacing*{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}"
+		]
+	},
+
+
+	"titlespacing*{}{}{}{}[]":{
+		"prefix":"*titlespacing",
+		"body":[
+			"\\titlespacing*{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}[${5:right-sep%l}]"
+		]
+	},
+
+
+	"titleline*{}":{
+		"prefix":"*titleline",
+		"body":[
+			"\\titleline*{${1:horizontal material%text}}"
+		]
+	},
+
+
+	"titleline*[]{}":{
+		"prefix":"*titleline",
+		"body":[
+			"\\titleline*[${2:align%keyvals}]{${1:horizontal material%text}}"
+		]
+	},
+
+
+	"titlerule*{}":{
+		"prefix":"*titlerule",
+		"body":[
+			"\\titlerule*{${1:text}}"
+		]
+	},
+
+
+	"titlerule*[]{}":{
+		"prefix":"*titlerule",
+		"body":[
+			"\\titlerule*[${2:width}]{${1:text}}"
+		]
+	},
+
+
+	"titleformat{}[]{}{}{}{}":{
+		"prefix":"titleformat",
+		"body":[
+			"\\titleformat{${1:command%plain}}[${6:shape%keyvals}]{${2:format}}{${3:label}}{${4:sep%l}}{${5:before-code}}"
+		]
+	},
+
+
+	"titleformat{}[]{}{}{}{}[]":{
+		"prefix":"titleformat",
+		"body":[
+			"\\titleformat{${1:command%plain}}[${6:shape%keyvals}]{${2:format}}{${3:label}}{${4:sep%l}}{${5:before-code}}[${7:after-code}]"
+		]
+	},
+
+
+	"titlespacing{}{}{}{}[]":{
+		"prefix":"titlespacing",
+		"body":[
+			"\\titlespacing{${1:command%plain}}{${2:left%l}}{${3:before-sep%l}}{${4:after-sep%l}}[${5:right-sep%l}]"
+		]
+	},
+
+
+	"titleline[]{}":{
+		"prefix":"titleline",
+		"body":[
+			"\\titleline[${2:align%keyvals}]{${1:horizontal material%text}}"
+		]
+	},
+
+
+	"titlerule[]":{
+		"prefix":"titlerule",
+		"body":[
+			"\\titlerule[${1:height}]"
+		]
+	},
+
+
+	"titleclass{}{}[]":{
 		"prefix":"titleclass",
 		"body":[
 			"\\titleclass{${1:name%cmd}}{${2:class%keyvals}}[${3:super-level-cmd}]"
@@ -345,7 +345,7 @@
 	},
 
 
-	"titleclass":{
+	"titleclass{}[]{}":{
 		"prefix":"titleclass",
 		"body":[
 			"\\titleclass{${1:name%cmd}}[${3:start-level-num}]{${2:class%keyvals}}"

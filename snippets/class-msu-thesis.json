@@ -1,7 +1,7 @@
 {
 
 
-	"abbrev":{
+	"abbrev{}{}":{
 		"prefix":"abbrev",
 		"body":[
 			"\\abbrev{${1:abbreviation}}{${2:explanation%text}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"dedication":{
+	"dedication{}":{
 		"prefix":"dedication",
 		"body":[
 			"\\dedication{${1:text}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"dualmajor":{
+	"dualmajor{}{}":{
 		"prefix":"dualmajor",
 		"body":[
 			"\\dualmajor{${1:major1%text}}{${2:major2%text}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"fieldofstudy":{
+	"fieldofstudy{}":{
 		"prefix":"fieldofstudy",
 		"body":[
 			"\\fieldofstudy{${1:field%text}}"
@@ -73,14 +73,6 @@
 	},
 
 
-	"makecopyrightpage*":{
-		"prefix":"makecopyrightpage*",
-		"body":[
-			"\\makecopyrightpage*"
-		]
-	},
-
-
 	"makededicationpage":{
 		"prefix":"makededicationpage",
 		"body":[
@@ -113,7 +105,7 @@
 	},
 
 
-	"msuabbrevwidth":{
+	"msuabbrevwidth{}":{
 		"prefix":"msuabbrevwidth",
 		"body":[
 			"\\msuabbrevwidth{${1:width}}"
@@ -153,7 +145,7 @@
 	},
 
 
-	"setabstractnamespace":{
+	"setabstractnamespace{}":{
 		"prefix":"setabstractnamespace",
 		"body":[
 			"\\setabstractnamespace{${1:factor}}"
@@ -177,12 +169,10 @@
 	},
 
 
-	"appendix":{
-		"prefix":"appendix",
+	"makecopyrightpage*":{
+		"prefix":"*makecopyrightpage",
 		"body":[
-			"\\begin{appendix}",
-			"\t$1",
-			"\\end{appendix}"
+			"\\makecopyrightpage*"
 		]
 	},
 
@@ -191,8 +181,18 @@
 		"prefix":"abbreviations",
 		"body":[
 			"\\begin{abbreviations}",
-			"\t$1",
+				"\t$1",
 			"\\end{abbreviations}"
+		]
+	},
+
+
+	"appendix":{
+		"prefix":"appendix",
+		"body":[
+			"\\begin{appendix}",
+				"\t$1",
+			"\\end{appendix}"
 		]
 	}
 }

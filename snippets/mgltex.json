@@ -1,7 +1,7 @@
 {
 
 
-	"mglplot":{
+	"mglplot{}":{
 		"prefix":"mglplot",
 		"body":[
 			"\\mglplot{${1:MGL code}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"mglplot":{
-		"prefix":"mglplot",
-		"body":[
-			"\\mglplot[${2:options%keyvals}]{${1:MGL code}}"
-		]
-	},
-
-
-	"mglgraphics":{
+	"mglgraphics{}":{
 		"prefix":"mglgraphics",
 		"body":[
 			"\\mglgraphics{${1:file}}"
@@ -25,42 +17,10 @@
 	},
 
 
-	"mglgraphics":{
-		"prefix":"mglgraphics",
-		"body":[
-			"\\mglgraphics[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"mglinclude":{
+	"mglinclude{}":{
 		"prefix":"mglinclude",
 		"body":[
 			"\\mglinclude{${1:file}}"
-		]
-	},
-
-
-	"mglinclude":{
-		"prefix":"mglinclude",
-		"body":[
-			"\\mglinclude[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"mglinclude*":{
-		"prefix":"mglinclude*",
-		"body":[
-			"\\mglinclude*{${1:file}}"
-		]
-	},
-
-
-	"mglinclude*":{
-		"prefix":"mglinclude*",
-		"body":[
-			"\\mglinclude*[${2:options%keyvals}]{${1:file}}"
 		]
 	},
 
@@ -81,15 +41,7 @@
 	},
 
 
-	"mglTeX*":{
-		"prefix":"mglTeX*",
-		"body":[
-			"\\mglTeX*"
-		]
-	},
-
-
-	"mglswitch":{
+	"mglswitch{}":{
 		"prefix":"mglswitch",
 		"body":[
 			"\\mglswitch{${1:off|on}}"
@@ -97,7 +49,7 @@
 	},
 
 
-	"mglcomments":{
+	"mglcomments{}":{
 		"prefix":"mglcomments",
 		"body":[
 			"\\mglcomments{${1:off|on}}"
@@ -105,7 +57,7 @@
 	},
 
 
-	"mglgray":{
+	"mglgray{}":{
 		"prefix":"mglgray",
 		"body":[
 			"\\mglgray{${1:off|on}}"
@@ -113,7 +65,7 @@
 	},
 
 
-	"mglscale":{
+	"mglscale{}":{
 		"prefix":"mglscale",
 		"body":[
 			"\\mglscale{${1:factor}}"
@@ -121,7 +73,7 @@
 	},
 
 
-	"mglquality":{
+	"mglquality{}":{
 		"prefix":"mglquality",
 		"body":[
 			"\\mglquality{${1:integer}}"
@@ -129,7 +81,7 @@
 	},
 
 
-	"mglvariant":{
+	"mglvariant{}":{
 		"prefix":"mglvariant",
 		"body":[
 			"\\mglvariant{${1:variant}}"
@@ -137,7 +89,7 @@
 	},
 
 
-	"mglimgext":{
+	"mglimgext{}":{
 		"prefix":"mglimgext",
 		"body":[
 			"\\mglimgext{${1:image extension}}"
@@ -145,7 +97,7 @@
 	},
 
 
-	"mglname":{
+	"mglname{}":{
 		"prefix":"mglname",
 		"body":[
 			"\\mglname{${1:script name}}"
@@ -153,7 +105,7 @@
 	},
 
 
-	"mgldir":{
+	"mgldir{}":{
 		"prefix":"mgldir",
 		"body":[
 			"\\mgldir{${1:directory%definition}}"
@@ -161,7 +113,7 @@
 	},
 
 
-	"mglscriptsdir":{
+	"mglscriptsdir{}":{
 		"prefix":"mglscriptsdir",
 		"body":[
 			"\\mglscriptsdir{${1:directory%definition}}"
@@ -169,7 +121,7 @@
 	},
 
 
-	"mglgraphicsdir":{
+	"mglgraphicsdir{}":{
 		"prefix":"mglgraphicsdir",
 		"body":[
 			"\\mglgraphicsdir{${1:directory%definition}}"
@@ -177,7 +129,7 @@
 	},
 
 
-	"mglbackupsdir":{
+	"mglbackupsdir{}":{
 		"prefix":"mglbackupsdir",
 		"body":[
 			"\\mglbackupsdir{${1:directory%definition}}"
@@ -185,7 +137,7 @@
 	},
 
 
-	"mglpaths":{
+	"mglpaths{}":{
 		"prefix":"mglpaths",
 		"body":[
 			"\\mglpaths{${1:directory list%definition}}"
@@ -193,7 +145,7 @@
 	},
 
 
-	"mglsettings":{
+	"mglsettings{}":{
 		"prefix":"mglsettings",
 		"body":[
 			"\\mglsettings{${1:options%keyvals}}"
@@ -265,12 +217,70 @@
 	},
 
 
+	"mglinclude*{}":{
+		"prefix":"*mglinclude",
+		"body":[
+			"\\mglinclude*{${1:file}}"
+		]
+	},
+
+
+	"mglinclude*[]{}":{
+		"prefix":"*mglinclude",
+		"body":[
+			"\\mglinclude*[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"mglTeX*":{
+		"prefix":"*mglTeX",
+		"body":[
+			"\\mglTeX*"
+		]
+	},
+
+
+	"mglplot[]{}":{
+		"prefix":"mglplot",
+		"body":[
+			"\\mglplot[${2:options%keyvals}]{${1:MGL code}}"
+		]
+	},
+
+
+	"mglgraphics[]{}":{
+		"prefix":"mglgraphics",
+		"body":[
+			"\\mglgraphics[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
+	"mglinclude[]{}":{
+		"prefix":"mglinclude",
+		"body":[
+			"\\mglinclude[${2:options%keyvals}]{${1:file}}"
+		]
+	},
+
+
 	"mgl":{
 		"prefix":"mgl",
 		"body":[
 			"\\begin{mgl}",
-			"\t$1",
+				"\t$1",
 			"\\end{mgl}"
+		]
+	},
+
+
+	"mgladdon":{
+		"prefix":"mgladdon",
+		"body":[
+			"\\begin{mgladdon}",
+				"\t$1",
+			"\\end{mgladdon}"
 		]
 	},
 
@@ -279,7 +289,7 @@
 		"prefix":"mglfunc",
 		"body":[
 			"\\begin{mglfunc}",
-			"\t$1",
+				"\t$1",
 			"\\end{mglfunc}"
 		]
 	},
@@ -289,88 +299,8 @@
 		"prefix":"mglcode",
 		"body":[
 			"\\begin{mglcode}",
-			"\t$1",
+				"\t$1",
 			"\\end{mglcode}"
-		]
-	},
-
-
-	"mglcomment":{
-		"prefix":"mglcomment",
-		"body":[
-			"\\begin{mglcomment}",
-			"\t$1",
-			"\\end{mglcomment}"
-		]
-	},
-
-
-	"mgladdon":{
-		"prefix":"mgladdon",
-		"body":[
-			"\\begin{mgladdon}",
-			"\t$1",
-			"\\end{mgladdon}"
-		]
-	},
-
-
-	"mglverbatim*":{
-		"prefix":"mglverbatim*",
-		"body":[
-			"\\begin{mglverbatim*}",
-			"\t$1",
-			"\\end{mglverbatim*}"
-		]
-	},
-
-
-	"mglverbatim":{
-		"prefix":"mglverbatim",
-		"body":[
-			"\\begin{mglverbatim}",
-			"\t$1",
-			"\\end{mglverbatim}"
-		]
-	},
-
-
-	"mglsetup":{
-		"prefix":"mglsetup",
-		"body":[
-			"\\begin{mglsetup}",
-			"\t$1",
-			"\\end{mglsetup}"
-		]
-	},
-
-
-	"mglblock*":{
-		"prefix":"mglblock*",
-		"body":[
-			"\\begin{mglblock*}",
-			"\t$1",
-			"\\end{mglblock*}"
-		]
-	},
-
-
-	"mglblock":{
-		"prefix":"mglblock",
-		"body":[
-			"\\begin{mglblock}",
-			"\t$1",
-			"\\end{mglblock}"
-		]
-	},
-
-
-	"mglsetupscript":{
-		"prefix":"mglsetupscript",
-		"body":[
-			"\\begin{mglsetupscript}",
-			"\t$1",
-			"\\end{mglsetupscript}"
 		]
 	},
 
@@ -379,8 +309,148 @@
 		"prefix":"mglscript",
 		"body":[
 			"\\begin{mglscript}",
-			"\t$1",
+				"\t$1",
 			"\\end{mglscript}"
+		]
+	},
+
+
+	"mglsetupscript":{
+		"prefix":"mglsetupscript",
+		"body":[
+			"\\begin{mglsetupscript}",
+				"\t$1",
+			"\\end{mglsetupscript}"
+		]
+	},
+
+
+	"mglsetup":{
+		"prefix":"mglsetup",
+		"body":[
+			"\\begin{mglsetup}",
+				"\t$1",
+			"\\end{mglsetup}"
+		]
+	},
+
+
+	"mglblock":{
+		"prefix":"mglblock",
+		"body":[
+			"\\begin{mglblock}",
+				"\t$1",
+			"\\end{mglblock}"
+		]
+	},
+
+
+	"mglblock*":{
+		"prefix":"mglblock",
+		"body":[
+			"\\begin{mglblock*}",
+				"\t$1",
+			"\\end{mglblock*}"
+		]
+	},
+
+
+	"mglverbatim":{
+		"prefix":"mglverbatim",
+		"body":[
+			"\\begin{mglverbatim}",
+				"\t$1",
+			"\\end{mglverbatim}"
+		]
+	},
+
+
+	"mglcomment":{
+		"prefix":"mglcomment",
+		"body":[
+			"\\begin{mglcomment}",
+				"\t$1",
+			"\\end{mglcomment}"
+		]
+	},
+
+
+	"mglverbatim*":{
+		"prefix":"*mglverbatim",
+		"body":[
+			"\\begin{mglverbatim*}",
+				"\t$1",
+			"\\end{mglverbatim*}"
+		]
+	},
+
+
+	"mgl":{
+		"prefix":"mgl",
+		"body":[
+			"\\begin{mgl}",
+				"\t$1",
+			"\\end{mgl}"
+		]
+	},
+
+
+	"mglfunc":{
+		"prefix":"mglfunc",
+		"body":[
+			"\\begin{mglfunc}",
+				"\t$1",
+			"\\end{mglfunc}"
+		]
+	},
+
+
+	"mglcode":{
+		"prefix":"mglcode",
+		"body":[
+			"\\begin{mglcode}",
+				"\t$1",
+			"\\end{mglcode}"
+		]
+	},
+
+
+	"mglblock":{
+		"prefix":"mglblock",
+		"body":[
+			"\\begin{mglblock}",
+				"\t$1",
+			"\\end{mglblock}"
+		]
+	},
+
+
+	"mglblock*":{
+		"prefix":"mglblock",
+		"body":[
+			"\\begin{mglblock*}",
+				"\t$1",
+			"\\end{mglblock*}"
+		]
+	},
+
+
+	"mglverbatim":{
+		"prefix":"mglverbatim",
+		"body":[
+			"\\begin{mglverbatim}",
+				"\t$1",
+			"\\end{mglverbatim}"
+		]
+	},
+
+
+	"mglverbatim*":{
+		"prefix":"mglverbatim",
+		"body":[
+			"\\begin{mglverbatim*}",
+				"\t$1",
+			"\\end{mglverbatim*}"
 		]
 	}
 }

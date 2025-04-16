@@ -1,7 +1,7 @@
 {
 
 
-	"macronewlist":{
+	"macronewlist{}":{
 		"prefix":"macronewlist",
 		"body":[
 			"\\macronewlist{${1:listname%specialDef}}"
@@ -9,7 +9,7 @@
 	},
 
 
-	"macrolistexists":{
+	"macrolistexists{}{}{}":{
 		"prefix":"macrolistexists",
 		"body":[
 			"\\macrolistexists{${1:listname%keyvals}}{${2:true}}{${3:false}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"macrolistelement":{
+	"macrolistelement{}{}":{
 		"prefix":"macrolistelement",
 		"body":[
 			"\\macrolistelement{${1:listname%keyvals}}{${2:position}}"
@@ -25,7 +25,7 @@
 	},
 
 
-	"macrolistindexof":{
+	"macrolistindexof{}{}":{
 		"prefix":"macrolistindexof",
 		"body":[
 			"\\macrolistindexof{${1:listname%keyvals}}{${2:element}}"
@@ -33,7 +33,7 @@
 	},
 
 
-	"macrolistcontains":{
+	"macrolistcontains{}{}{}{}":{
 		"prefix":"macrolistcontains",
 		"body":[
 			"\\macrolistcontains{${1:listname%keyvals}}{${2:element}}{${3:true}}{${4:false}}"
@@ -41,7 +41,7 @@
 	},
 
 
-	"macrolistadd":{
+	"macrolistadd{}{}":{
 		"prefix":"macrolistadd",
 		"body":[
 			"\\macrolistadd{${1:listname%keyvals}}{${2:element}}"
@@ -49,15 +49,7 @@
 	},
 
 
-	"macrolistadd":{
-		"prefix":"macrolistadd",
-		"body":[
-			"\\macrolistadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
-		]
-	},
-
-
-	"macrolisteadd":{
+	"macrolisteadd{}{}":{
 		"prefix":"macrolisteadd",
 		"body":[
 			"\\macrolisteadd{${1:listname%keyvals}}{${2:element}}"
@@ -65,15 +57,7 @@
 	},
 
 
-	"macrolisteadd":{
-		"prefix":"macrolisteadd",
-		"body":[
-			"\\macrolisteadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
-		]
-	},
-
-
-	"macrolistremove":{
+	"macrolistremove{}{}":{
 		"prefix":"macrolistremove",
 		"body":[
 			"\\macrolistremove{${1:listname%keyvals}}{${2:position}}"
@@ -81,7 +65,7 @@
 	},
 
 
-	"macrolistremovelast":{
+	"macrolistremovelast{}":{
 		"prefix":"macrolistremovelast",
 		"body":[
 			"\\macrolistremovelast{${1:listname%keyvals}}"
@@ -89,7 +73,7 @@
 	},
 
 
-	"macrolistclear":{
+	"macrolistclear{}":{
 		"prefix":"macrolistclear",
 		"body":[
 			"\\macrolistclear{${1:listname%keyvals}}"
@@ -97,7 +81,7 @@
 	},
 
 
-	"macrolistsize":{
+	"macrolistsize{}":{
 		"prefix":"macrolistsize",
 		"body":[
 			"\\macrolistsize{${1:listname%keyvals}}"
@@ -105,7 +89,7 @@
 	},
 
 
-	"macrolistforeach":{
+	"macrolistforeach{}{}{}":{
 		"prefix":"macrolistforeach",
 		"body":[
 			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}{${3:action}}"
@@ -113,18 +97,34 @@
 	},
 
 
-	"macrolistforeach":{
-		"prefix":"macrolistforeach",
+	"macrolistjoin{}{}":{
+		"prefix":"macrolistjoin",
 		"body":[
-			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}[${4:begin}][${5:end}]{${3:action}}"
+			"\\macrolistjoin{${1:listname%keyvals}}{${2:joiner}}"
 		]
 	},
 
 
-	"macrolistjoin":{
-		"prefix":"macrolistjoin",
+	"macrolistadd{}[]{}":{
+		"prefix":"macrolistadd",
 		"body":[
-			"\\macrolistjoin{${1:listname%keyvals}}{${2:joiner}}"
+			"\\macrolistadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
+		]
+	},
+
+
+	"macrolisteadd{}[]{}":{
+		"prefix":"macrolisteadd",
+		"body":[
+			"\\macrolisteadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
+		]
+	},
+
+
+	"macrolistforeach{}{}[][]{}":{
+		"prefix":"macrolistforeach",
+		"body":[
+			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}[${4:begin}][${5:end}]{${3:action}}"
 		]
 	}
 }

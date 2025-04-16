@@ -9,7 +9,7 @@
 	},
 
 
-	"labyrinthset":{
+	"labyrinthset{}":{
 		"prefix":"labyrinthset",
 		"body":[
 			"\\labyrinthset{${1:options%keyvals}}"
@@ -17,7 +17,7 @@
 	},
 
 
-	"putsymbol":{
+	"putsymbol(){}":{
 		"prefix":"putsymbol",
 		"body":[
 			"\\putsymbol(${2:x},${3:y}){${1:symbol}}"
@@ -49,7 +49,7 @@
 	},
 
 
-	"labyrinthsolution":{
+	"labyrinthsolution(){}":{
 		"prefix":"labyrinthsolution",
 		"body":[
 			"\\labyrinthsolution(${2:x},${3:y}){${1:solution code}}"
@@ -57,15 +57,7 @@
 	},
 
 
-	"labyrinthsolution":{
-		"prefix":"labyrinthsolution",
-		"body":[
-			"\\labyrinthsolution[${2:options%keyvals}](${3:x},${4:y}){${1:solution code}}"
-		]
-	},
-
-
-	"solutionset":{
+	"solutionset{}":{
 		"prefix":"solutionset",
 		"body":[
 			"\\solutionset{${1:options%keyvals}}"
@@ -73,18 +65,10 @@
 	},
 
 
-	"autosolution":{
+	"autosolution()(){}":{
 		"prefix":"autosolution",
 		"body":[
 			"\\autosolution(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:first direction}}"
-		]
-	},
-
-
-	"autosolution":{
-		"prefix":"autosolution",
-		"body":[
-			"\\autosolution[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:first direction}}"
 		]
 	},
 
@@ -97,10 +81,26 @@
 	},
 
 
-	"truncdiv":{
+	"truncdiv{}{}":{
 		"prefix":"truncdiv",
 		"body":[
 			"\\truncdiv{${1:num1}}{${2:num2}}"
+		]
+	},
+
+
+	"labyrinthsolution[](){}":{
+		"prefix":"labyrinthsolution",
+		"body":[
+			"\\labyrinthsolution[${2:options%keyvals}](${3:x},${4:y}){${1:solution code}}"
+		]
+	},
+
+
+	"autosolution[]()(){}":{
+		"prefix":"autosolution",
+		"body":[
+			"\\autosolution[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:first direction}}"
 		]
 	},
 
@@ -109,7 +109,17 @@
 		"prefix":"labyrinth",
 		"body":[
 			"\\begin{labyrinth}",
-			"\t$1",
+				"\t$1",
+			"\\end{labyrinth}"
+		]
+	},
+
+
+	"labyrinth":{
+		"prefix":"labyrinth",
+		"body":[
+			"\\begin{labyrinth}",
+				"\t$1",
 			"\\end{labyrinth}"
 		]
 	}

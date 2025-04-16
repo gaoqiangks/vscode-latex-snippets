@@ -1,7 +1,7 @@
 {
 
 
-	"JSONParse":{
+	"JSONParse{}{}":{
 		"prefix":"JSONParse",
 		"body":[
 			"\\JSONParse{${1:token variable%cmd}}{${2:JSON string}}"
@@ -9,15 +9,7 @@
 	},
 
 
-	"JSONParse":{
-		"prefix":"JSONParse",
-		"body":[
-			"\\JSONParse[${3:options%keyvals}]{${1:token variable%cmd}}{${2:JSON string}}"
-		]
-	},
-
-
-	"JSONParseFromFile":{
+	"JSONParseFromFile{}{}":{
 		"prefix":"JSONParseFromFile",
 		"body":[
 			"\\JSONParseFromFile{${1:token variable%cmd}}{${2:JSON file%file}}"
@@ -25,15 +17,7 @@
 	},
 
 
-	"JSONParseFromFile":{
-		"prefix":"JSONParseFromFile",
-		"body":[
-			"\\JSONParseFromFile[${3:options%keyvals}]{${1:token variable%cmd}}{${2:JSON file%file}}"
-		]
-	},
-
-
-	"JSONParseKeys":{
+	"JSONParseKeys{}{}":{
 		"prefix":"JSONParseKeys",
 		"body":[
 			"\\JSONParseKeys{${1:token variable}}{${2:token variable%cmd}}"
@@ -41,7 +25,7 @@
 	},
 
 
-	"JSONParseValue":{
+	"JSONParseValue{}{}":{
 		"prefix":"JSONParseValue",
 		"body":[
 			"\\JSONParseValue{${1:token variable}}{${2:key%plain}}"
@@ -49,15 +33,7 @@
 	},
 
 
-	"JSONParseValue":{
-		"prefix":"JSONParseValue",
-		"body":[
-			"\\JSONParseValue[${3:options%keyvals}]{${1:token variable}}{${2:key%plain}}"
-		]
-	},
-
-
-	"JSONParseExpandableValue":{
+	"JSONParseExpandableValue{}{}":{
 		"prefix":"JSONParseExpandableValue",
 		"body":[
 			"\\JSONParseExpandableValue{${1:token variable}}{${2:key%plain}}"
@@ -65,7 +41,7 @@
 	},
 
 
-	"JSONParseArrayValues":{
+	"JSONParseArrayValues{}{}{}":{
 		"prefix":"JSONParseArrayValues",
 		"body":[
 			"\\JSONParseArrayValues{${1:token variable}}{${2:key%plain}}{${3:string}}"
@@ -73,58 +49,10 @@
 	},
 
 
-	"JSONParseArrayValues":{
-		"prefix":"JSONParseArrayValues",
-		"body":[
-			"\\JSONParseArrayValues{${1:token variable}}{${2:key%plain}}[${4:subkey}]{${3:string}}"
-		]
-	},
-
-
-	"JSONParseArrayValues":{
-		"prefix":"JSONParseArrayValues",
-		"body":[
-			"\\JSONParseArrayValues[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}{${3:string}}"
-		]
-	},
-
-
-	"JSONParseArrayValues":{
-		"prefix":"JSONParseArrayValues",
-		"body":[
-			"\\JSONParseArrayValues[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}[${5:subkey}]{${3:string}}"
-		]
-	},
-
-
-	"JSONParseArrayValuesMap":{
+	"JSONParseArrayValuesMap{}{}{}":{
 		"prefix":"JSONParseArrayValuesMap",
 		"body":[
 			"\\JSONParseArrayValuesMap{${1:token variable}}{${2:key%plain}}{${3:command name}}"
-		]
-	},
-
-
-	"JSONParseArrayValuesMap":{
-		"prefix":"JSONParseArrayValuesMap",
-		"body":[
-			"\\JSONParseArrayValuesMap{${1:token variable}}{${2:key%plain}}[${4:subkey}]{${3:command name}}"
-		]
-	},
-
-
-	"JSONParseArrayValuesMap":{
-		"prefix":"JSONParseArrayValuesMap",
-		"body":[
-			"\\JSONParseArrayValuesMap[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}{${3:command name}}"
-		]
-	},
-
-
-	"JSONParseArrayValuesMap":{
-		"prefix":"JSONParseArrayValuesMap",
-		"body":[
-			"\\JSONParseArrayValuesMap[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}[${5:subkey}]{${3:command name}}"
 		]
 	},
 
@@ -153,7 +81,7 @@
 	},
 
 
-	"JSONParseArrayCount":{
+	"JSONParseArrayCount{}{}":{
 		"prefix":"JSONParseArrayCount",
 		"body":[
 			"\\JSONParseArrayCount{${1:token variable}}{${2:key%plain}}"
@@ -161,10 +89,82 @@
 	},
 
 
-	"JSONParseSet":{
+	"JSONParseSet{}":{
 		"prefix":"JSONParseSet",
 		"body":[
 			"\\JSONParseSet{${1:keyvals}}"
+		]
+	},
+
+
+	"JSONParse[]{}{}":{
+		"prefix":"JSONParse",
+		"body":[
+			"\\JSONParse[${3:options%keyvals}]{${1:token variable%cmd}}{${2:JSON string}}"
+		]
+	},
+
+
+	"JSONParseFromFile[]{}{}":{
+		"prefix":"JSONParseFromFile",
+		"body":[
+			"\\JSONParseFromFile[${3:options%keyvals}]{${1:token variable%cmd}}{${2:JSON file%file}}"
+		]
+	},
+
+
+	"JSONParseValue[]{}{}":{
+		"prefix":"JSONParseValue",
+		"body":[
+			"\\JSONParseValue[${3:options%keyvals}]{${1:token variable}}{${2:key%plain}}"
+		]
+	},
+
+
+	"JSONParseArrayValues{}{}[]{}":{
+		"prefix":"JSONParseArrayValues",
+		"body":[
+			"\\JSONParseArrayValues{${1:token variable}}{${2:key%plain}}[${4:subkey}]{${3:string}}"
+		]
+	},
+
+
+	"JSONParseArrayValues[]{}{}{}":{
+		"prefix":"JSONParseArrayValues",
+		"body":[
+			"\\JSONParseArrayValues[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}{${3:string}}"
+		]
+	},
+
+
+	"JSONParseArrayValues[]{}{}[]{}":{
+		"prefix":"JSONParseArrayValues",
+		"body":[
+			"\\JSONParseArrayValues[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}[${5:subkey}]{${3:string}}"
+		]
+	},
+
+
+	"JSONParseArrayValuesMap{}{}[]{}":{
+		"prefix":"JSONParseArrayValuesMap",
+		"body":[
+			"\\JSONParseArrayValuesMap{${1:token variable}}{${2:key%plain}}[${4:subkey}]{${3:command name}}"
+		]
+	},
+
+
+	"JSONParseArrayValuesMap[]{}{}{}":{
+		"prefix":"JSONParseArrayValuesMap",
+		"body":[
+			"\\JSONParseArrayValuesMap[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}{${3:command name}}"
+		]
+	},
+
+
+	"JSONParseArrayValuesMap[]{}{}[]{}":{
+		"prefix":"JSONParseArrayValuesMap",
+		"body":[
+			"\\JSONParseArrayValuesMap[${4:options%keyvals}]{${1:token variable}}{${2:key%plain}}[${5:subkey}]{${3:command name}}"
 		]
 	}
 }

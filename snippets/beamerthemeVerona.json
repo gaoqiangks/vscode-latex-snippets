@@ -33,7 +33,7 @@
 	},
 
 
-	"titlegraphic":{
+	"titlegraphic{}{}":{
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic{${1:imagefile}}{${2:TikZ options}}"
@@ -41,15 +41,7 @@
 	},
 
 
-	"titlegraphic":{
-		"prefix":"titlegraphic",
-		"body":[
-			"\\titlegraphic[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"sidegraphics":{
+	"sidegraphics{}{}":{
 		"prefix":"sidegraphics",
 		"body":[
 			"\\sidegraphics{${1:imagefile}}{${2:TikZ options}}"
@@ -57,26 +49,10 @@
 	},
 
 
-	"sidegraphics":{
-		"prefix":"sidegraphics",
-		"body":[
-			"\\sidegraphics[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"sidegraphics<overlay specification>":{
+	"sidegraphics<overlay specification>{}{}":{
 		"prefix":"sidegraphics<overlay specification>",
 		"body":[
 			"\\sidegraphics<overlay specification>{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"sidegraphics<overlay specification>":{
-		"prefix":"sidegraphics<overlay specification>",
-		"body":[
-			"\\sidegraphics<overlay specification>[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
 		]
 	},
 
@@ -97,7 +73,7 @@
 	},
 
 
-	"mail":{
+	"mail{}":{
 		"prefix":"mail",
 		"body":[
 			"\\mail{${1:address%text}}"
@@ -113,11 +89,65 @@
 	},
 
 
+	"titlegraphic[]{}{}":{
+		"prefix":"titlegraphic",
+		"body":[
+			"\\titlegraphic[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
+		]
+	},
+
+
+	"sidegraphics[]{}{}":{
+		"prefix":"sidegraphics",
+		"body":[
+			"\\sidegraphics[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
+		]
+	},
+
+
+	"sidegraphics<overlay specification>[]{}{}":{
+		"prefix":"sidegraphics<overlay specification>",
+		"body":[
+			"\\sidegraphics<overlay specification>[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
+		]
+	},
+
+
 	"citazione":{
 		"prefix":"citazione",
 		"body":[
 			"\\begin{citazione}",
-			"\t$1",
+				"\t$1",
+			"\\end{citazione}"
+		]
+	},
+
+
+	"citazione":{
+		"prefix":"citazione",
+		"body":[
+			"\\begin{citazione}",
+				"\t$1",
+			"\\end{citazione}"
+		]
+	},
+
+
+	"citazione":{
+		"prefix":"citazione",
+		"body":[
+			"\\begin{citazione}",
+				"\t$1",
+			"\\end{citazione}"
+		]
+	},
+
+
+	"citazione":{
+		"prefix":"citazione",
+		"body":[
+			"\\begin{citazione}",
+				"\t$1",
 			"\\end{citazione}"
 		]
 	},
@@ -127,7 +157,17 @@
 		"prefix":"quotation",
 		"body":[
 			"\\begin{quotation}",
-			"\t$1",
+				"\t$1",
+			"\\end{quotation}"
+		]
+	},
+
+
+	"quotation":{
+		"prefix":"quotation",
+		"body":[
+			"\\begin{quotation}",
+				"\t$1",
 			"\\end{quotation}"
 		]
 	}
