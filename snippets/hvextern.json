@@ -5,71 +5,8 @@
 		"prefix":"runExtCmd",
 		"body":[
 			"\\runExtCmd{${1:command with arguments%definition}}{${2:filename%file}}"
-		]
-	},
-
-
-	"hvExternSetKeys{}":{
-		"prefix":"hvExternSetKeys",
-		"body":[
-			"\\hvExternSetKeys{${1:options%keyvals}}"
-		]
-	},
-
-
-	"defMarkerType{}{}{}{}{}":{
-		"prefix":"defMarkerType",
-		"body":[
-			"\\defMarkerType{${1:name}}{${2:start-main}}{${3:stop-main}}{${4:start-preamble}}{${5:stop-preamble}}"
-		]
-	},
-
-
-	"ResetKeys":{
-		"prefix":"ResetKeys",
-		"body":[
-			"\\ResetKeys"
-		]
-	},
-
-
-	"PreambleVerbatim{}":{
-		"prefix":"PreambleVerbatim",
-		"body":[
-			"\\PreambleVerbatim{${1:file}}"
-		]
-	},
-
-
-	"BodyVerbatim{}":{
-		"prefix":"BodyVerbatim",
-		"body":[
-			"\\BodyVerbatim{${1:file}}"
-		]
-	},
-
-
-	"PreambleListing{}":{
-		"prefix":"PreambleListing",
-		"body":[
-			"\\PreambleListing{${1:file}}"
-		]
-	},
-
-
-	"BodyListing{}":{
-		"prefix":"BodyListing",
-		"body":[
-			"\\BodyListing{${1:file}}"
-		]
-	},
-
-
-	"hvExternLineWidth":{
-		"prefix":"hvExternLineWidth",
-		"body":[
-			"\\hvExternLineWidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,44 @@
 		"prefix":"runExtCmd",
 		"body":[
 			"\\runExtCmd[${3:options%keyvals}]{${1:command with arguments%definition}}{${2:filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hvExternSetKeys{}":{
+		"prefix":"hvExternSetKeys",
+		"body":[
+			"\\hvExternSetKeys{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defMarkerType{}{}{}{}{}":{
+		"prefix":"defMarkerType",
+		"body":[
+			"\\defMarkerType{${1:name}}{${2:start-main}}{${3:stop-main}}{${4:start-preamble}}{${5:stop-preamble}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResetKeys":{
+		"prefix":"ResetKeys",
+		"body":[
+			"\\ResetKeys"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PreambleVerbatim{}":{
+		"prefix":"PreambleVerbatim",
+		"body":[
+			"\\PreambleVerbatim{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +59,17 @@
 		"prefix":"PreambleVerbatim",
 		"body":[
 			"\\PreambleVerbatim[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BodyVerbatim{}":{
+		"prefix":"BodyVerbatim",
+		"body":[
+			"\\BodyVerbatim{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +77,17 @@
 		"prefix":"BodyVerbatim",
 		"body":[
 			"\\BodyVerbatim[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PreambleListing{}":{
+		"prefix":"PreambleListing",
+		"body":[
+			"\\PreambleListing{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +95,17 @@
 		"prefix":"PreambleListing",
 		"body":[
 			"\\PreambleListing[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BodyListing{}":{
+		"prefix":"BodyListing",
+		"body":[
+			"\\BodyListing{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,26 +113,38 @@
 		"prefix":"BodyListing",
 		"body":[
 			"\\BodyListing[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"externalDocument":{
-		"prefix":"externalDocument",
+	"hvExternLineWidth":{
+		"prefix":"hvExternLineWidth",
 		"body":[
-			"\\begin{externalDocument}",
-				"\t$1",
-			"\\end{externalDocument}"
-		]
+			"\\hvExternLineWidth"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"externalDocument":{
+	"externalDocument{}":{
 		"prefix":"externalDocument",
 		"body":[
 			"\\begin{externalDocument}",
-				"\t$1",
+				"\t{${1:filename%file}}",
 			"\\end{externalDocument}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"externalDocument[]{}":{
+		"prefix":"externalDocument",
+		"body":[
+			"\\begin{externalDocument}",
+				"\t[${2:options%keyvals}]{${1:filename%file}}",
+			"\\end{externalDocument}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

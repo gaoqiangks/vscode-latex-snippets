@@ -5,7 +5,8 @@
 		"prefix":"leftindex^",
 		"body":[
 			"\\leftindex^{${1:sup}}{${2:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"leftindex_",
 		"body":[
 			"\\leftindex_{${1:sub}}{${2:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,39 +23,8 @@
 		"prefix":"leftindex^",
 		"body":[
 			"\\leftindex^{${1:sup}}_{${2:sub}}{${3:symbol}}"
-		]
-	},
-
-
-	"LeftIndex^{}":{
-		"prefix":"LeftIndex^",
-		"body":[
-			"\\LeftIndex^{${1:sup}}"
-		]
-	},
-
-
-	"LeftIndex_{}":{
-		"prefix":"LeftIndex_",
-		"body":[
-			"\\LeftIndex_{${1:sub}}"
-		]
-	},
-
-
-	"LeftIndex^{}_{}":{
-		"prefix":"LeftIndex^",
-		"body":[
-			"\\LeftIndex^{${1:sup}}_{${2:sub}}"
-		]
-	},
-
-
-	"manualleftindex{}{}{}{}":{
-		"prefix":"manualleftindex",
-		"body":[
-			"\\manualleftindex{${1:height phantom}}{${2:slanting phantom}}{${3:sup}}{${4:sub}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,8 @@
 		"prefix":"leftindex",
 		"body":[
 			"\\leftindex[${4:slanting phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +41,35 @@
 		"prefix":"leftindex",
 		"body":[
 			"\\leftindex[${4:slanting phantom}][${5:height phantom}]^{${1:sup}}_{${2:sub}}{${3:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LeftIndex^{}":{
+		"prefix":"LeftIndex^",
+		"body":[
+			"\\LeftIndex^{${1:sup}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftIndex_{}":{
+		"prefix":"LeftIndex_",
+		"body":[
+			"\\LeftIndex_{${1:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftIndex^{}_{}":{
+		"prefix":"LeftIndex^",
+		"body":[
+			"\\LeftIndex^{${1:sup}}_{${2:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +77,8 @@
 		"prefix":"LeftIndex",
 		"body":[
 			"\\LeftIndex[${3:slanting phantom}]^{${1:sup}}_{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,6 +86,16 @@
 		"prefix":"LeftIndex",
 		"body":[
 			"\\LeftIndex[${3:slanting phantom}][${4:height phantom}]^{${1:sup}}_{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"manualleftindex{}{}{}{}":{
+		"prefix":"manualleftindex",
+		"body":[
+			"\\manualleftindex{${1:height phantom}}{${2:slanting phantom}}{${3:sup}}{${4:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

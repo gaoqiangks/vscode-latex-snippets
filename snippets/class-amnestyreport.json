@@ -1,155 +1,12 @@
 {
 
 
-	"citep{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep{${1:bibid}}"
-		]
-	},
-
-
-	"citet{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet{${1:bibid}}"
-		]
-	},
-
-
-	"titleimage{}":{
-		"prefix":"titleimage",
-		"body":[
-			"\\titleimage{${1:imagefile}}"
-		]
-	},
-
-
-	"titleimagecaption{}":{
-		"prefix":"titleimagecaption",
-		"body":[
-			"\\titleimagecaption{${1:text}}"
-		]
-	},
-
-
-	"subtitle{}":{
-		"prefix":"subtitle",
-		"body":[
-			"\\subtitle{${1:text}}"
-		]
-	},
-
-
-	"copyrightyear{}":{
-		"prefix":"copyrightyear",
-		"body":[
-			"\\copyrightyear{${1:year}}"
-		]
-	},
-
-
-	"firstpublicationyear{}":{
-		"prefix":"firstpublicationyear",
-		"body":[
-			"\\firstpublicationyear{${1:year}}"
-		]
-	},
-
-
-	"reportyear{}":{
-		"prefix":"reportyear",
-		"body":[
-			"\\reportyear{${1:year}}"
-		]
-	},
-
-
-	"reportmonth{}":{
-		"prefix":"reportmonth",
-		"body":[
-			"\\reportmonth{${1:month}}"
-		]
-	},
-
-
-	"reportindex{}":{
-		"prefix":"reportindex",
-		"body":[
-			"\\reportindex{${1:index}}"
-		]
-	},
-
-
-	"blurb{}":{
-		"prefix":"blurb",
-		"body":[
-			"\\blurb{${1:text}}"
-		]
-	},
-
-
-	"mainmatter":{
-		"prefix":"mainmatter",
-		"body":[
-			"\\mainmatter"
-		]
-	},
-
-
-	"sideTableCaptions":{
-		"prefix":"sideTableCaptions",
-		"body":[
-			"\\sideTableCaptions"
-		]
-	},
-
-
-	"normalTableCaptions":{
-		"prefix":"normalTableCaptions",
-		"body":[
-			"\\normalTableCaptions"
-		]
-	},
-
-
-	"sideFigureCaptions":{
-		"prefix":"sideFigureCaptions",
-		"body":[
-			"\\sideFigureCaptions"
-		]
-	},
-
-
-	"normalFigureCaptions":{
-		"prefix":"normalFigureCaptions",
-		"body":[
-			"\\normalFigureCaptions"
-		]
-	},
-
-
-	"backmatter":{
-		"prefix":"backmatter",
-		"body":[
-			"\\backmatter"
-		]
-	},
-
-
-	"attribution{}":{
-		"prefix":"attribution",
-		"body":[
-			"\\attribution{${1:text}}"
-		]
-	},
-
-
 	"citep[][]{}":{
 		"prefix":"citep",
 		"body":[
 			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +14,17 @@
 		"prefix":"citep",
 		"body":[
 			"\\citep[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citep{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +32,8 @@
 		"prefix":"citet",
 		"body":[
 			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +41,161 @@
 		"prefix":"citet",
 		"body":[
 			"\\citet[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleimage{}":{
+		"prefix":"titleimage",
+		"body":[
+			"\\titleimage{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleimagecaption{}":{
+		"prefix":"titleimagecaption",
+		"body":[
+			"\\titleimagecaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtitle{}":{
+		"prefix":"subtitle",
+		"body":[
+			"\\subtitle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"copyrightyear{}":{
+		"prefix":"copyrightyear",
+		"body":[
+			"\\copyrightyear{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firstpublicationyear{}":{
+		"prefix":"firstpublicationyear",
+		"body":[
+			"\\firstpublicationyear{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reportyear{}":{
+		"prefix":"reportyear",
+		"body":[
+			"\\reportyear{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reportmonth{}":{
+		"prefix":"reportmonth",
+		"body":[
+			"\\reportmonth{${1:month}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reportindex{}":{
+		"prefix":"reportindex",
+		"body":[
+			"\\reportindex{${1:index}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blurb{}":{
+		"prefix":"blurb",
+		"body":[
+			"\\blurb{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mainmatter":{
+		"prefix":"mainmatter",
+		"body":[
+			"\\mainmatter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sideTableCaptions":{
+		"prefix":"sideTableCaptions",
+		"body":[
+			"\\sideTableCaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalTableCaptions":{
+		"prefix":"normalTableCaptions",
+		"body":[
+			"\\normalTableCaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sideFigureCaptions":{
+		"prefix":"sideFigureCaptions",
+		"body":[
+			"\\sideFigureCaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalFigureCaptions":{
+		"prefix":"normalFigureCaptions",
+		"body":[
+			"\\normalFigureCaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"backmatter":{
+		"prefix":"backmatter",
+		"body":[
+			"\\backmatter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"attribution{}":{
+		"prefix":"attribution",
+		"body":[
+			"\\attribution{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -183,16 +205,18 @@
 			"\\begin{AmnestyGlossary}",
 				"\t$1",
 			"\\end{AmnestyGlossary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"AmnestyGlossary":{
+	"AmnestyGlossary[]":{
 		"prefix":"AmnestyGlossary",
 		"body":[
 			"\\begin{AmnestyGlossary}",
-				"\t$1",
+				"\t[${1:width}]",
 			"\\end{AmnestyGlossary}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

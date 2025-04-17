@@ -5,7 +5,8 @@
 		"prefix":"fdPatternCodes",
 		"body":[
 			"\\fdPatternCodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"SetPatternCodes",
 		"body":[
 			"\\SetPatternCodes{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ResetPatternCodes",
 		"body":[
 			"\\ResetPatternCodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"PatternCodes",
 		"body":[
 			"\\PatternCodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Delimiters",
 		"body":[
 			"\\Delimiters{${1:delim1}}{${2:delim2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"PercentChar",
 		"body":[
 			"\\PercentChar"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"BackslashChar",
 		"body":[
 			"\\BackslashChar"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"BasicNormalCatCodes",
 		"body":[
 			"\\BasicNormalCatCodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"ResultFile",
 		"body":[
 			"\\ResultFile{${1:output}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"WriteResult",
 		"body":[
 			"\\WriteResult{${1:balanced}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"WriteProvides",
 		"body":[
 			"\\WriteProvides"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"CloseResultFile",
 		"body":[
 			"\\CloseResultFile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,351 +113,8 @@
 		"prefix":"ProcessFileWith",
 		"body":[
 			"\\ProcessFileWith{${1:file}}{${2:loop-body}}"
-		]
-	},
-
-
-	"fdInputLine":{
-		"prefix":"fdInputLine",
-		"body":[
-			"\\fdInputLine"
-		]
-	},
-
-
-	"CopyFile{}":{
-		"prefix":"CopyFile",
-		"body":[
-			"\\CopyFile{${1:file}}"
-		]
-	},
-
-
-	"CopyLine":{
-		"prefix":"CopyLine",
-		"body":[
-			"\\CopyLine"
-		]
-	},
-
-
-	"ifFinalInputFile":{
-		"prefix":"ifFinalInputFile",
-		"body":[
-			"\\ifFinalInputFile"
-		]
-	},
-
-
-	"FinalInputFiletrue":{
-		"prefix":"FinalInputFiletrue",
-		"body":[
-			"\\FinalInputFiletrue"
-		]
-	},
-
-
-	"FinalInputFilefalse":{
-		"prefix":"FinalInputFilefalse",
-		"body":[
-			"\\FinalInputFilefalse"
-		]
-	},
-
-
-	"ProcessFinalFileWith{}{}":{
-		"prefix":"ProcessFinalFileWith",
-		"body":[
-			"\\ProcessFinalFileWith{${1:file}}{${2:loop-body}}"
-		]
-	},
-
-
-	"StartFDsetup{}{}":{
-		"prefix":"StartFDsetup",
-		"body":[
-			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}"
-		]
-	},
-
-
-	"fdParserId":{
-		"prefix":"fdParserId",
-		"body":[
-			"\\fdParserId"
-		]
-	},
-
-
-	"MakeSetupCommand{}{}{}":{
-		"prefix":"MakeSetupCommand",
-		"body":[
-			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}{${3:action}}"
-		]
-	},
-
-
-	"MakeSubstringConditional{}{}":{
-		"prefix":"MakeSubstringConditional",
-		"body":[
-			"\\MakeSubstringConditional{${1:id}}{${2:pattern}}"
-		]
-	},
-
-
-	"MakeSetupSubstringCondition{}{}{}":{
-		"prefix":"MakeSetupSubstringCondition",
-		"body":[
-			"\\MakeSetupSubstringCondition{${1:id}}{${2:pattern}}{${3:more-args}}"
-		]
-	},
-
-
-	"noexpandcsname":{
-		"prefix":"noexpandcsname",
-		"body":[
-			"\\noexpandcsname"
-		]
-	},
-
-
-	"TildeGobbles{}":{
-		"prefix":"TildeGobbles",
-		"body":[
-			"\\TildeGobbles{${1:arg}}"
-		]
-	},
-
-
-	"RemoveDummyPattern":{
-		"prefix":"RemoveDummyPattern",
-		"body":[
-			"\\RemoveDummyPattern"
-		]
-	},
-
-
-	"RemoveDummyPatternArg{}{}":{
-		"prefix":"RemoveDummyPatternArg",
-		"body":[
-			"\\RemoveDummyPatternArg{${1:macro}}{${2:arg}}"
-		]
-	},
-
-
-	"RemoveTilde":{
-		"prefix":"RemoveTilde",
-		"body":[
-			"\\RemoveTilde"
-		]
-	},
-
-
-	"RemoveTildeArg{}{}":{
-		"prefix":"RemoveTildeArg",
-		"body":[
-			"\\RemoveTildeArg{${1:macro}}{${2:arg}}"
-		]
-	},
-
-
-	"FDnormalTilde":{
-		"prefix":"FDnormalTilde",
-		"body":[
-			"\\FDnormalTilde"
-		]
-	},
-
-
-	"FDpseudoTilde":{
-		"prefix":"FDpseudoTilde",
-		"body":[
-			"\\FDpseudoTilde"
-		]
-	},
-
-
-	"ProcessStringWith{}{}":{
-		"prefix":"ProcessStringWith",
-		"body":[
-			"\\ProcessStringWith{${1:target-string}}{${2:id}}"
-		]
-	},
-
-
-	"ProcessExpandedWith{}{}":{
-		"prefix":"ProcessExpandedWith",
-		"body":[
-			"\\ProcessExpandedWith{${1:string-macro}}{${2:id}}"
-		]
-	},
-
-
-	"ProcessInputWith{}":{
-		"prefix":"ProcessInputWith",
-		"body":[
-			"\\ProcessInputWith{${1:id}}"
-		]
-	},
-
-
-	"CopyFDconditionFromTo{}{}":{
-		"prefix":"CopyFDconditionFromTo",
-		"body":[
-			"\\CopyFDconditionFromTo{${1:id1}}{${2:id2}}"
-		]
-	},
-
-
-	"IfFDempty{}{}{}":{
-		"prefix":"IfFDempty",
-		"body":[
-			"\\IfFDempty{${1:arg}}{${2:when-empty}}{${3:when-not-empty}}"
-		]
-	},
-
-
-	"IfFDinputEmpty{}{}":{
-		"prefix":"IfFDinputEmpty",
-		"body":[
-			"\\IfFDinputEmpty{${1:when-empty}}{${2:when-not-empty}}"
-		]
-	},
-
-
-	"IfFDdollar{}{}{}":{
-		"prefix":"IfFDdollar",
-		"body":[
-			"\\IfFDdollar{${1:arg}}{${2:when-dollar}}{${3:when-not-dollar}}"
-		]
-	},
-
-
-	"IfFDpreviousInputEmpty{}{}":{
-		"prefix":"IfFDpreviousInputEmpty",
-		"body":[
-			"\\IfFDpreviousInputEmpty{${1:when-empty}}{${2:when-not-empty}}"
-		]
-	},
-
-
-	"thefdInputLine":{
-		"prefix":"thefdInputLine",
-		"body":[
-			"\\thefdInputLine"
-		]
-	},
-
-
-	"CountInputLines":{
-		"prefix":"CountInputLines",
-		"body":[
-			"\\CountInputLines"
-		]
-	},
-
-
-	"IfInputLine{}{}{}":{
-		"prefix":"IfInputLine",
-		"body":[
-			"\\IfInputLine{${1:<relation><${4:number}>}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"MakeExpandableAllReplacer{}{}{}{}":{
-		"prefix":"MakeExpandableAllReplacer",
-		"body":[
-			"\\MakeExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}{${4:id-next}}"
-		]
-	},
-
-
-	"PrependExpandableAllReplacer{}{}{}":{
-		"prefix":"PrependExpandableAllReplacer",
-		"body":[
-			"\\PrependExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}"
-		]
-	},
-
-
-	"StartPrependingChain":{
-		"prefix":"StartPrependingChain",
-		"body":[
-			"\\StartPrependingChain"
-		]
-	},
-
-
-	"SetCorrectHookJob{}":{
-		"prefix":"SetCorrectHookJob",
-		"body":[
-			"\\SetCorrectHookJob{${1:job-id}}"
-		]
-	},
-
-
-	"MakeDocCorrectHook{}":{
-		"prefix":"MakeDocCorrectHook",
-		"body":[
-			"\\MakeDocCorrectHook{${1:string}}"
-		]
-	},
-
-
-	"SetCorrectHookJobLast":{
-		"prefix":"SetCorrectHookJobLast",
-		"body":[
-			"\\SetCorrectHookJobLast"
-		]
-	},
-
-
-	"CorrectedInputLine":{
-		"prefix":"CorrectedInputLine",
-		"body":[
-			"\\CorrectedInputLine"
-		]
-	},
-
-
-	"ApplySubstringConditional{}":{
-		"prefix":"ApplySubstringConditional",
-		"body":[
-			"\\ApplySubstringConditional{${1:id}}"
-		]
-	},
-
-
-	"ApplySubstringConditionalToExpanded{}":{
-		"prefix":"ApplySubstringConditionalToExpanded",
-		"body":[
-			"\\ApplySubstringConditionalToExpanded{${1:id}}"
-		]
-	},
-
-
-	"ApplySubstringConditionalToInputString{}":{
-		"prefix":"ApplySubstringConditionalToInputString",
-		"body":[
-			"\\ApplySubstringConditionalToInputString{${1:id}}"
-		]
-	},
-
-
-	"CopyFile*{}":{
-		"prefix":"*CopyFile",
-		"body":[
-			"\\CopyFile*{${1:file}}"
-		]
-	},
-
-
-	"CopyFile*[]{}":{
-		"prefix":"*CopyFile",
-		"body":[
-			"\\CopyFile*[${2:changes}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +122,26 @@
 		"prefix":"ProcessFileWith",
 		"body":[
 			"\\ProcessFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fdInputLine":{
+		"prefix":"fdInputLine",
+		"body":[
+			"\\fdInputLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CopyFile{}":{
+		"prefix":"CopyFile",
+		"body":[
+			"\\CopyFile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +149,71 @@
 		"prefix":"CopyFile",
 		"body":[
 			"\\CopyFile[${2:changes}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CopyFile*{}":{
+		"prefix":"*CopyFile",
+		"body":[
+			"\\CopyFile*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"CopyFile*[]{}":{
+		"prefix":"*CopyFile",
+		"body":[
+			"\\CopyFile*[${2:changes}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"CopyLine":{
+		"prefix":"CopyLine",
+		"body":[
+			"\\CopyLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifFinalInputFile":{
+		"prefix":"ifFinalInputFile",
+		"body":[
+			"\\ifFinalInputFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FinalInputFiletrue":{
+		"prefix":"FinalInputFiletrue",
+		"body":[
+			"\\FinalInputFiletrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FinalInputFilefalse":{
+		"prefix":"FinalInputFilefalse",
+		"body":[
+			"\\FinalInputFilefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProcessFinalFileWith{}{}":{
+		"prefix":"ProcessFinalFileWith",
+		"body":[
+			"\\ProcessFinalFileWith{${1:file}}{${2:loop-body}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +221,17 @@
 		"prefix":"ProcessFinalFileWith",
 		"body":[
 			"\\ProcessFinalFileWith[${3:changes}]{${1:file}}{${2:loop-body}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StartFDsetup{}{}":{
+		"prefix":"StartFDsetup",
+		"body":[
+			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +239,26 @@
 		"prefix":"StartFDsetup",
 		"body":[
 			"\\StartFDsetup{${1:do-setup}}{${2:job-id}}[${3:changes}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fdParserId":{
+		"prefix":"fdParserId",
+		"body":[
+			"\\fdParserId"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeSetupCommand{}{}{}":{
+		"prefix":"MakeSetupCommand",
+		"body":[
+			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +266,17 @@
 		"prefix":"MakeSetupCommand",
 		"body":[
 			"\\MakeSetupCommand{${1:setup-cmd%cmd}}{${2:do-setup}}[${4:args}]{${3:action}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeSubstringConditional{}{}":{
+		"prefix":"MakeSubstringConditional",
+		"body":[
+			"\\MakeSubstringConditional{${1:id}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +284,17 @@
 		"prefix":"MakeSubstringConditional",
 		"body":[
 			"\\MakeSubstringConditional{${1:id}}[${3:changes}]{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeSetupSubstringCondition{}{}{}":{
+		"prefix":"MakeSetupSubstringCondition",
+		"body":[
+			"\\MakeSetupSubstringCondition{${1:id}}{${2:pattern}}{${3:more-args}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +302,188 @@
 		"prefix":"MakeSetupSubstringCondition",
 		"body":[
 			"\\MakeSetupSubstringCondition{${1:id}}[${4:changes}]{${2:pattern}}{${3:more-args}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"noexpandcsname":{
+		"prefix":"noexpandcsname",
+		"body":[
+			"\\noexpandcsname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TildeGobbles{}":{
+		"prefix":"TildeGobbles",
+		"body":[
+			"\\TildeGobbles{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveDummyPattern":{
+		"prefix":"RemoveDummyPattern",
+		"body":[
+			"\\RemoveDummyPattern"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveDummyPatternArg{}{}":{
+		"prefix":"RemoveDummyPatternArg",
+		"body":[
+			"\\RemoveDummyPatternArg{${1:macro}}{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveTilde":{
+		"prefix":"RemoveTilde",
+		"body":[
+			"\\RemoveTilde"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveTildeArg{}{}":{
+		"prefix":"RemoveTildeArg",
+		"body":[
+			"\\RemoveTildeArg{${1:macro}}{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FDnormalTilde":{
+		"prefix":"FDnormalTilde",
+		"body":[
+			"\\FDnormalTilde"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FDpseudoTilde":{
+		"prefix":"FDpseudoTilde",
+		"body":[
+			"\\FDpseudoTilde"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProcessStringWith{}{}":{
+		"prefix":"ProcessStringWith",
+		"body":[
+			"\\ProcessStringWith{${1:target-string}}{${2:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProcessExpandedWith{}{}":{
+		"prefix":"ProcessExpandedWith",
+		"body":[
+			"\\ProcessExpandedWith{${1:string-macro}}{${2:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProcessInputWith{}":{
+		"prefix":"ProcessInputWith",
+		"body":[
+			"\\ProcessInputWith{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CopyFDconditionFromTo{}{}":{
+		"prefix":"CopyFDconditionFromTo",
+		"body":[
+			"\\CopyFDconditionFromTo{${1:id1}}{${2:id2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfFDempty{}{}{}":{
+		"prefix":"IfFDempty",
+		"body":[
+			"\\IfFDempty{${1:arg}}{${2:when-empty}}{${3:when-not-empty}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfFDinputEmpty{}{}":{
+		"prefix":"IfFDinputEmpty",
+		"body":[
+			"\\IfFDinputEmpty{${1:when-empty}}{${2:when-not-empty}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfFDdollar{}{}{}":{
+		"prefix":"IfFDdollar",
+		"body":[
+			"\\IfFDdollar{${1:arg}}{${2:when-dollar}}{${3:when-not-dollar}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfFDpreviousInputEmpty{}{}":{
+		"prefix":"IfFDpreviousInputEmpty",
+		"body":[
+			"\\IfFDpreviousInputEmpty{${1:when-empty}}{${2:when-not-empty}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thefdInputLine":{
+		"prefix":"thefdInputLine",
+		"body":[
+			"\\thefdInputLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CountInputLines":{
+		"prefix":"CountInputLines",
+		"body":[
+			"\\CountInputLines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInputLine{}{}{}":{
+		"prefix":"IfInputLine",
+		"body":[
+			"\\IfInputLine{${1:<relation><${4:number}>}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeExpandableAllReplacer{}{}{}{}":{
+		"prefix":"MakeExpandableAllReplacer",
+		"body":[
+			"\\MakeExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}{${4:id-next}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +491,17 @@
 		"prefix":"MakeExpandableAllReplacer",
 		"body":[
 			"\\MakeExpandableAllReplacer{${1:id}}[${5:changes}]{${2:find}}{${3:replace}}{${4:id-next}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PrependExpandableAllReplacer{}{}{}":{
+		"prefix":"PrependExpandableAllReplacer",
+		"body":[
+			"\\PrependExpandableAllReplacer{${1:id}}{${2:find}}{${3:replace}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,6 +509,79 @@
 		"prefix":"PrependExpandableAllReplacer",
 		"body":[
 			"\\PrependExpandableAllReplacer{${1:id}}[${4:changes}]{${2:find}}{${3:replace}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StartPrependingChain":{
+		"prefix":"StartPrependingChain",
+		"body":[
+			"\\StartPrependingChain"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetCorrectHookJob{}":{
+		"prefix":"SetCorrectHookJob",
+		"body":[
+			"\\SetCorrectHookJob{${1:job-id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeDocCorrectHook{}":{
+		"prefix":"MakeDocCorrectHook",
+		"body":[
+			"\\MakeDocCorrectHook{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetCorrectHookJobLast":{
+		"prefix":"SetCorrectHookJobLast",
+		"body":[
+			"\\SetCorrectHookJobLast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CorrectedInputLine":{
+		"prefix":"CorrectedInputLine",
+		"body":[
+			"\\CorrectedInputLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ApplySubstringConditional{}":{
+		"prefix":"ApplySubstringConditional",
+		"body":[
+			"\\ApplySubstringConditional{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ApplySubstringConditionalToExpanded{}":{
+		"prefix":"ApplySubstringConditionalToExpanded",
+		"body":[
+			"\\ApplySubstringConditionalToExpanded{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ApplySubstringConditionalToInputString{}":{
+		"prefix":"ApplySubstringConditionalToInputString",
+		"body":[
+			"\\ApplySubstringConditionalToInputString{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

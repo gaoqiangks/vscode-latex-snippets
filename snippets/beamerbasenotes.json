@@ -5,7 +5,8 @@
 		"prefix":"note",
 		"body":[
 			"\\note{${1:note text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,39 +14,8 @@
 		"prefix":"note<overlay specification>",
 		"body":[
 			"\\note<overlay specification>{${1:note text%text}}"
-		]
-	},
-
-
-	"insertnote":{
-		"prefix":"insertnote",
-		"body":[
-			"\\insertnote"
-		]
-	},
-
-
-	"AtBeginNote{}":{
-		"prefix":"AtBeginNote",
-		"body":[
-			"\\AtBeginNote{${1:text}}"
-		]
-	},
-
-
-	"AtEndNote{}":{
-		"prefix":"AtEndNote",
-		"body":[
-			"\\AtEndNote{${1:text}}"
-		]
-	},
-
-
-	"insertslideintonotes{}":{
-		"prefix":"insertslideintonotes",
-		"body":[
-			"\\insertslideintonotes{${1:magnification}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,8 @@
 		"prefix":"note",
 		"body":[
 			"\\note[${2:options%keyvals}]{${1:note text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,6 +32,43 @@
 		"prefix":"note",
 		"body":[
 			"\\note[${2:options%keyvals}]<${3:overlay specification}>{${1:note text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"insertnote":{
+		"prefix":"insertnote",
+		"body":[
+			"\\insertnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtBeginNote{}":{
+		"prefix":"AtBeginNote",
+		"body":[
+			"\\AtBeginNote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndNote{}":{
+		"prefix":"AtEndNote",
+		"body":[
+			"\\AtEndNote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertslideintonotes{}":{
+		"prefix":"insertslideintonotes",
+		"body":[
+			"\\insertslideintonotes{${1:magnification}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

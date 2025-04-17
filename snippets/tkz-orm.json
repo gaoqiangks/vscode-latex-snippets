@@ -5,271 +5,8 @@
 		"prefix":"entity",
 		"body":[
 			"\\entity"
-		]
-	},
-
-
-	"value":{
-		"prefix":"value",
-		"body":[
-			"\\value"
-		]
-	},
-
-
-	"unary":{
-		"prefix":"unary",
-		"body":[
-			"\\unary"
-		]
-	},
-
-
-	"role":{
-		"prefix":"role",
-		"body":[
-			"\\role"
-		]
-	},
-
-
-	"binary":{
-		"prefix":"binary",
-		"body":[
-			"\\binary"
-		]
-	},
-
-
-	"roles":{
-		"prefix":"roles",
-		"body":[
-			"\\roles"
-		]
-	},
-
-
-	"ternary":{
-		"prefix":"ternary",
-		"body":[
-			"\\ternary"
-		]
-	},
-
-
-	"vunary":{
-		"prefix":"vunary",
-		"body":[
-			"\\vunary"
-		]
-	},
-
-
-	"vrole":{
-		"prefix":"vrole",
-		"body":[
-			"\\vrole"
-		]
-	},
-
-
-	"vbinary":{
-		"prefix":"vbinary",
-		"body":[
-			"\\vbinary"
-		]
-	},
-
-
-	"vroles":{
-		"prefix":"vroles",
-		"body":[
-			"\\vroles"
-		]
-	},
-
-
-	"vternary":{
-		"prefix":"vternary",
-		"body":[
-			"\\vternary"
-		]
-	},
-
-
-	"plays":{
-		"prefix":"plays",
-		"body":[
-			"\\plays"
-		]
-	},
-
-
-	"limits":{
-		"prefix":"limits",
-		"body":[
-			"\\limits"
-		]
-	},
-
-
-	"limitsto":{
-		"prefix":"limitsto",
-		"body":[
-			"\\limitsto"
-		]
-	},
-
-
-	"rules":{
-		"prefix":"rules",
-		"body":[
-			"\\rules"
-		]
-	},
-
-
-	"constraintdeclare{}{}":{
-		"prefix":"constraintdeclare",
-		"body":[
-			"\\constraintdeclare{${1:name}}{${2:path code}}"
-		]
-	},
-
-
-	"constraintdeclarealias{}{}":{
-		"prefix":"constraintdeclarealias",
-		"body":[
-			"\\constraintdeclarealias{${1:alias name}}{${2:existing name}}"
-		]
-	},
-
-
-	"constraintdeclareasnode{}{}":{
-		"prefix":"constraintdeclareasnode",
-		"body":[
-			"\\constraintdeclareasnode{${1:name}}{${2:TikZ code}}"
-		]
-	},
-
-
-	"ormtext":{
-		"prefix":"ormtext",
-		"body":[
-			"\\ormtext"
-		]
-	},
-
-
-	"ormbf":{
-		"prefix":"ormbf",
-		"body":[
-			"\\ormbf"
-		]
-	},
-
-
-	"ormc":{
-		"prefix":"ormc",
-		"body":[
-			"\\ormc"
-		]
-	},
-
-
-	"ormsup{}":{
-		"prefix":"ormsup",
-		"body":[
-			"\\ormsup{${1:text}}"
-		]
-	},
-
-
-	"ormsub{}":{
-		"prefix":"ormsub",
-		"body":[
-			"\\ormsub{${1:text}}"
-		]
-	},
-
-
-	"ormind{}":{
-		"prefix":"ormind",
-		"body":[
-			"\\ormind{${1:text}}"
-		]
-	},
-
-
-	"ormbraces{}":{
-		"prefix":"ormbraces",
-		"body":[
-			"\\ormbraces{${1:text}}"
-		]
-	},
-
-
-	"ormvalues{}":{
-		"prefix":"ormvalues",
-		"body":[
-			"\\ormvalues{${1:text}}"
-		]
-	},
-
-
-	"ormleft{}":{
-		"prefix":"ormleft",
-		"body":[
-			"\\ormleft{${1:text}}"
-		]
-	},
-
-
-	"ormup{}":{
-		"prefix":"ormup",
-		"body":[
-			"\\ormup{${1:text}}"
-		]
-	},
-
-
-	"tkzorm":{
-		"prefix":"tkzorm",
-		"body":[
-			"\\tkzorm"
-		]
-	},
-
-
-	"ormarrowup":{
-		"prefix":"ormarrowup",
-		"body":[
-			"\\ormarrowup"
-		]
-	},
-
-
-	"ormarrowdown":{
-		"prefix":"ormarrowdown",
-		"body":[
-			"\\ormarrowdown"
-		]
-	},
-
-
-	"ormarrowleft":{
-		"prefix":"ormarrowleft",
-		"body":[
-			"\\ormarrowleft"
-		]
-	},
-
-
-	"ormarrowright":{
-		"prefix":"ormarrowright",
-		"body":[
-			"\\ormarrowright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +14,17 @@
 		"prefix":"entity",
 		"body":[
 			"\\entity[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"value":{
+		"prefix":"value",
+		"body":[
+			"\\value"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +32,17 @@
 		"prefix":"value",
 		"body":[
 			"\\value[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"unary":{
+		"prefix":"unary",
+		"body":[
+			"\\unary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +50,17 @@
 		"prefix":"unary",
 		"body":[
 			"\\unary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"role":{
+		"prefix":"role",
+		"body":[
+			"\\role"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +68,17 @@
 		"prefix":"role",
 		"body":[
 			"\\role[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"binary":{
+		"prefix":"binary",
+		"body":[
+			"\\binary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +86,17 @@
 		"prefix":"binary",
 		"body":[
 			"\\binary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"roles":{
+		"prefix":"roles",
+		"body":[
+			"\\roles"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +104,17 @@
 		"prefix":"roles",
 		"body":[
 			"\\roles[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ternary":{
+		"prefix":"ternary",
+		"body":[
+			"\\ternary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +122,17 @@
 		"prefix":"ternary",
 		"body":[
 			"\\ternary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vunary":{
+		"prefix":"vunary",
+		"body":[
+			"\\vunary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +140,17 @@
 		"prefix":"vunary",
 		"body":[
 			"\\vunary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vrole":{
+		"prefix":"vrole",
+		"body":[
+			"\\vrole"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +158,17 @@
 		"prefix":"vrole",
 		"body":[
 			"\\vrole[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vbinary":{
+		"prefix":"vbinary",
+		"body":[
+			"\\vbinary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +176,17 @@
 		"prefix":"vbinary",
 		"body":[
 			"\\vbinary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vroles":{
+		"prefix":"vroles",
+		"body":[
+			"\\vroles"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +194,17 @@
 		"prefix":"vroles",
 		"body":[
 			"\\vroles[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vternary":{
+		"prefix":"vternary",
+		"body":[
+			"\\vternary"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +212,17 @@
 		"prefix":"vternary",
 		"body":[
 			"\\vternary[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plays":{
+		"prefix":"plays",
+		"body":[
+			"\\plays"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,7 +230,17 @@
 		"prefix":"plays",
 		"body":[
 			"\\plays[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"limits":{
+		"prefix":"limits",
+		"body":[
+			"\\limits"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +248,17 @@
 		"prefix":"limits",
 		"body":[
 			"\\limits[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"limitsto":{
+		"prefix":"limitsto",
+		"body":[
+			"\\limitsto"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,6 +266,178 @@
 		"prefix":"limitsto",
 		"body":[
 			"\\limitsto[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rules":{
+		"prefix":"rules",
+		"body":[
+			"\\rules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"constraintdeclare{}{}":{
+		"prefix":"constraintdeclare",
+		"body":[
+			"\\constraintdeclare{${1:name}}{${2:path code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"constraintdeclarealias{}{}":{
+		"prefix":"constraintdeclarealias",
+		"body":[
+			"\\constraintdeclarealias{${1:alias name}}{${2:existing name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"constraintdeclareasnode{}{}":{
+		"prefix":"constraintdeclareasnode",
+		"body":[
+			"\\constraintdeclareasnode{${1:name}}{${2:TikZ code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormtext":{
+		"prefix":"ormtext",
+		"body":[
+			"\\ormtext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormbf":{
+		"prefix":"ormbf",
+		"body":[
+			"\\ormbf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormc":{
+		"prefix":"ormc",
+		"body":[
+			"\\ormc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormsup{}":{
+		"prefix":"ormsup",
+		"body":[
+			"\\ormsup{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormsub{}":{
+		"prefix":"ormsub",
+		"body":[
+			"\\ormsub{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormind{}":{
+		"prefix":"ormind",
+		"body":[
+			"\\ormind{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormbraces{}":{
+		"prefix":"ormbraces",
+		"body":[
+			"\\ormbraces{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormvalues{}":{
+		"prefix":"ormvalues",
+		"body":[
+			"\\ormvalues{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormleft{}":{
+		"prefix":"ormleft",
+		"body":[
+			"\\ormleft{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormup{}":{
+		"prefix":"ormup",
+		"body":[
+			"\\ormup{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzorm":{
+		"prefix":"tkzorm",
+		"body":[
+			"\\tkzorm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormarrowup":{
+		"prefix":"ormarrowup",
+		"body":[
+			"\\ormarrowup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormarrowdown":{
+		"prefix":"ormarrowdown",
+		"body":[
+			"\\ormarrowdown"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormarrowleft":{
+		"prefix":"ormarrowleft",
+		"body":[
+			"\\ormarrowleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ormarrowright":{
+		"prefix":"ormarrowright",
+		"body":[
+			"\\ormarrowright"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

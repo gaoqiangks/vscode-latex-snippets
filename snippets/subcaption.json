@@ -5,127 +5,8 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox{${1:heading%text}}{${2:content%text}}"
-		]
-	},
-
-
-	"subcaption{}":{
-		"prefix":"subcaption",
-		"body":[
-			"\\subcaption{${1:heading%text}}"
-		]
-	},
-
-
-	"subref{}":{
-		"prefix":"subref",
-		"body":[
-			"\\subref{${1:key}}"
-		]
-	},
-
-
-	"thesubfigure":{
-		"prefix":"thesubfigure",
-		"body":[
-			"\\thesubfigure"
-		]
-	},
-
-
-	"thesubtable":{
-		"prefix":"thesubtable",
-		"body":[
-			"\\thesubtable"
-		]
-	},
-
-
-	"phantomsubcaption":{
-		"prefix":"phantomsubcaption",
-		"body":[
-			"\\phantomsubcaption"
-		]
-	},
-
-
-	"subfloat{}":{
-		"prefix":"subfloat",
-		"body":[
-			"\\subfloat{${1:body%text}}"
-		]
-	},
-
-
-	"subcaptionlistentry{}":{
-		"prefix":"subcaptionlistentry",
-		"body":[
-			"\\subcaptionlistentry{${1:list entry}}"
-		]
-	},
-
-
-	"subcaptiontext{}":{
-		"prefix":"subcaptiontext",
-		"body":[
-			"\\subcaptiontext{${1:text}}"
-		]
-	},
-
-
-	"subcaptionbox*{}{}":{
-		"prefix":"*subcaptionbox",
-		"body":[
-			"\\subcaptionbox*{${1:heading%text}}{${2:content%text}}"
-		]
-	},
-
-
-	"subcaptionbox*{}[]{}":{
-		"prefix":"*subcaptionbox",
-		"body":[
-			"\\subcaptionbox*{${1:heading%text}}[${3:width}]{${2:content%text}}"
-		]
-	},
-
-
-	"subcaptionbox*{}[][]{}":{
-		"prefix":"*subcaptionbox",
-		"body":[
-			"\\subcaptionbox*{${1:heading%text}}[${3:width}][${4:inner-pos}]{${2:content%text}}"
-		]
-	},
-
-
-	"subcaption*{}":{
-		"prefix":"*subcaption",
-		"body":[
-			"\\subcaption*{${1:heading%text}}"
-		]
-	},
-
-
-	"subref*{}":{
-		"prefix":"*subref",
-		"body":[
-			"\\subref*{${1:key}}"
-		]
-	},
-
-
-	"subcaptiontext*{}":{
-		"prefix":"*subcaptiontext",
-		"body":[
-			"\\subcaptiontext*{${1:text}}"
-		]
-	},
-
-
-	"subcaptiontext*[]{}":{
-		"prefix":"*subcaptiontext",
-		"body":[
-			"\\subcaptiontext*[${2:number}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +14,8 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox{${1:heading%text}}[${3:width}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +23,8 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox{${1:heading%text}}[${3:width}][${4:inner-pos}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +32,8 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox[${3:list entry}]{${1:heading%text}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +41,8 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox[${3:list entry}]{${1:heading%text}}[${4:width}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +50,44 @@
 		"prefix":"subcaptionbox",
 		"body":[
 			"\\subcaptionbox[${3:list entry}]{${1:heading%text}}[${4:width}][${5:inner-pos}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subcaptionbox*{}{}":{
+		"prefix":"*subcaptionbox",
+		"body":[
+			"\\subcaptionbox*{${1:heading%text}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subcaptionbox*{}[]{}":{
+		"prefix":"*subcaptionbox",
+		"body":[
+			"\\subcaptionbox*{${1:heading%text}}[${3:width}]{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subcaptionbox*{}[][]{}":{
+		"prefix":"*subcaptionbox",
+		"body":[
+			"\\subcaptionbox*{${1:heading%text}}[${3:width}][${4:inner-pos}]{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subcaption{}":{
+		"prefix":"subcaption",
+		"body":[
+			"\\subcaption{${1:heading%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +95,62 @@
 		"prefix":"subcaption",
 		"body":[
 			"\\subcaption[${2:list entry}]{${1:heading%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subcaption*{}":{
+		"prefix":"*subcaption",
+		"body":[
+			"\\subcaption*{${1:heading%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subref{}":{
+		"prefix":"subref",
+		"body":[
+			"\\subref{${1:key}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subref*{}":{
+		"prefix":"*subref",
+		"body":[
+			"\\subref*{${1:key}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"thesubfigure":{
+		"prefix":"thesubfigure",
+		"body":[
+			"\\thesubfigure"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubtable":{
+		"prefix":"thesubtable",
+		"body":[
+			"\\thesubtable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phantomsubcaption":{
+		"prefix":"phantomsubcaption",
+		"body":[
+			"\\phantomsubcaption"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +158,8 @@
 		"prefix":"subfloat",
 		"body":[
 			"\\subfloat[${2:list entry}][${3:sub-caption}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +167,35 @@
 		"prefix":"subfloat",
 		"body":[
 			"\\subfloat[${2:sub-caption}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subfloat{}":{
+		"prefix":"subfloat",
+		"body":[
+			"\\subfloat{${1:body%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcaptionlistentry{}":{
+		"prefix":"subcaptionlistentry",
+		"body":[
+			"\\subcaptionlistentry{${1:list entry}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcaptiontext{}":{
+		"prefix":"subcaptiontext",
+		"body":[
+			"\\subcaptiontext{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,37 +203,158 @@
 		"prefix":"subcaptiontext",
 		"body":[
 			"\\subcaptiontext[${2:number}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"subfigure":{
+	"subcaptiontext*{}":{
+		"prefix":"*subcaptiontext",
+		"body":[
+			"\\subcaptiontext*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subcaptiontext*[]{}":{
+		"prefix":"*subcaptiontext",
+		"body":[
+			"\\subcaptiontext*[${2:number}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subfigure[][][]{}":{
 		"prefix":"subfigure",
 		"body":[
 			"\\begin{subfigure}",
-				"\t$1",
+				"\t[${2:position}][${3:height}][${4:inner pos}]{${1:width}}",
 			"\\end{subfigure}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"subtable":{
+	"subfigure[][]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\begin{subfigure}",
+				"\t[${2:position}][${3:height}]{${1:width}}",
+			"\\end{subfigure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subfigure[]{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\begin{subfigure}",
+				"\t[${2:position}]{${1:width}}",
+			"\\end{subfigure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subfigure{}":{
+		"prefix":"subfigure",
+		"body":[
+			"\\begin{subfigure}",
+				"\t{${1:width}}",
+			"\\end{subfigure}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtable[][][]{}":{
 		"prefix":"subtable",
 		"body":[
 			"\\begin{subtable}",
-				"\t$1",
+				"\t[${2:position}][${3:height}][${4:inner pos}]{${1:width}}",
 			"\\end{subtable}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"subcaptionblock":{
+	"subtable[][]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\begin{subtable}",
+				"\t[${2:position}][${3:height}]{${1:width}}",
+			"\\end{subtable}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtable[]{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\begin{subtable}",
+				"\t[${2:position}]{${1:width}}",
+			"\\end{subtable}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtable{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\begin{subtable}",
+				"\t{${1:width}}",
+			"\\end{subtable}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcaptionblock{}":{
 		"prefix":"subcaptionblock",
 		"body":[
 			"\\begin{subcaptionblock}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{subcaptionblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcaptionblock[]{}":{
+		"prefix":"subcaptionblock",
+		"body":[
+			"\\begin{subcaptionblock}",
+				"\t[${2:position}]{${1:width}}",
+			"\\end{subcaptionblock}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subcaptionblock[][]{}":{
+		"prefix":"subcaptionblock",
+		"body":[
+			"\\begin{subcaptionblock}",
+				"\t[${2:position}][${3:height}]{${1:width}}",
+			"\\end{subcaptionblock}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subcaptionblock[][][]{}":{
+		"prefix":"subcaptionblock",
+		"body":[
+			"\\begin{subcaptionblock}",
+				"\t[${2:position}][${3:height}][${4:inner pos}]{${1:width}}",
+			"\\end{subcaptionblock}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +364,8 @@
 			"\\begin{subcaptiongroup}",
 				"\t$1",
 			"\\end{subcaptiongroup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -247,96 +375,7 @@
 			"\\begin{subcaptiongroup*}",
 				"\t$1",
 			"\\end{subcaptiongroup*}"
-		]
-	},
-
-
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\begin{subfigure}",
-				"\t$1",
-			"\\end{subfigure}"
-		]
-	},
-
-
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\begin{subfigure}",
-				"\t$1",
-			"\\end{subfigure}"
-		]
-	},
-
-
-	"subfigure":{
-		"prefix":"subfigure",
-		"body":[
-			"\\begin{subfigure}",
-				"\t$1",
-			"\\end{subfigure}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\begin{subtable}",
-				"\t$1",
-			"\\end{subtable}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\begin{subtable}",
-				"\t$1",
-			"\\end{subtable}"
-		]
-	},
-
-
-	"subtable":{
-		"prefix":"subtable",
-		"body":[
-			"\\begin{subtable}",
-				"\t$1",
-			"\\end{subtable}"
-		]
-	},
-
-
-	"subcaptionblock":{
-		"prefix":"subcaptionblock",
-		"body":[
-			"\\begin{subcaptionblock}",
-				"\t$1",
-			"\\end{subcaptionblock}"
-		]
-	},
-
-
-	"subcaptionblock":{
-		"prefix":"subcaptionblock",
-		"body":[
-			"\\begin{subcaptionblock}",
-				"\t$1",
-			"\\end{subcaptionblock}"
-		]
-	},
-
-
-	"subcaptionblock":{
-		"prefix":"subcaptionblock",
-		"body":[
-			"\\begin{subcaptionblock}",
-				"\t$1",
-			"\\end{subcaptionblock}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

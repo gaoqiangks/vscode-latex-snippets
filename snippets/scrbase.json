@@ -5,7 +5,8 @@
 		"prefix":"KOMAScriptVersion",
 		"body":[
 			"\\KOMAScriptVersion"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"rloop",
 		"body":[
 			"\\rloop{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"IfLTXAtLeastTF",
 		"body":[
 			"\\IfLTXAtLeastTF{${1:date}}{${2:then code}}{${3:else code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"DefineFamily",
 		"body":[
 			"\\DefineFamily{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,639 +41,8 @@
 		"prefix":"DefineFamilyMember",
 		"body":[
 			"\\DefineFamilyMember{${1:family}}"
-		]
-	},
-
-
-	"DefineFamilyKey{}{}{}":{
-		"prefix":"DefineFamilyKey",
-		"body":[
-			"\\DefineFamilyKey{${1:family}}{${2:key%plain}}{${3:action}}"
-		]
-	},
-
-
-	"RelaxFamilyKey{}{}":{
-		"prefix":"RelaxFamilyKey",
-		"body":[
-			"\\RelaxFamilyKey{${1:family}}{${2:key%plain}}"
-		]
-	},
-
-
-	"FamilyKeyState":{
-		"prefix":"FamilyKeyState",
-		"body":[
-			"\\FamilyKeyState"
-		]
-	},
-
-
-	"FamilyKeyStateUnknown":{
-		"prefix":"FamilyKeyStateUnknown",
-		"body":[
-			"\\FamilyKeyStateUnknown"
-		]
-	},
-
-
-	"FamilyKeyStateUnknownValue":{
-		"prefix":"FamilyKeyStateUnknownValue",
-		"body":[
-			"\\FamilyKeyStateUnknownValue"
-		]
-	},
-
-
-	"FamilyKeyStateNeedValue":{
-		"prefix":"FamilyKeyStateNeedValue",
-		"body":[
-			"\\FamilyKeyStateNeedValue"
-		]
-	},
-
-
-	"FamilyKeyStateProcessed":{
-		"prefix":"FamilyKeyStateProcessed",
-		"body":[
-			"\\FamilyKeyStateProcessed"
-		]
-	},
-
-
-	"FamilyOfKey":{
-		"prefix":"FamilyOfKey",
-		"body":[
-			"\\FamilyOfKey"
-		]
-	},
-
-
-	"FamilyMemberOfKey":{
-		"prefix":"FamilyMemberOfKey",
-		"body":[
-			"\\FamilyMemberOfKey"
-		]
-	},
-
-
-	"FamilyProcessOptions{}":{
-		"prefix":"FamilyProcessOptions",
-		"body":[
-			"\\FamilyProcessOptions{${1:family}}"
-		]
-	},
-
-
-	"AtEndOfFamilyOptions{}":{
-		"prefix":"AtEndOfFamilyOptions",
-		"body":[
-			"\\AtEndOfFamilyOptions{${1:action}}"
-		]
-	},
-
-
-	"IfArgIsEmpty{}{}{}":{
-		"prefix":"IfArgIsEmpty",
-		"body":[
-			"\\IfArgIsEmpty{${1:arg}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"XdivY{}{}":{
-		"prefix":"XdivY",
-		"body":[
-			"\\XdivY{${1:dividend}}{${2:divisor}}"
-		]
-	},
-
-
-	"XmodY{}{}":{
-		"prefix":"XmodY",
-		"body":[
-			"\\XmodY{${1:dividend}}{${2:divisor}}"
-		]
-	},
-
-
-	"Ifundefinedorrelax{}{}{}":{
-		"prefix":"Ifundefinedorrelax",
-		"body":[
-			"\\Ifundefinedorrelax{${1:name}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifnotundefined{}{}{}":{
-		"prefix":"Ifnotundefined",
-		"body":[
-			"\\Ifnotundefined{${1:name}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifstr{}{}{}{}":{
-		"prefix":"Ifstr",
-		"body":[
-			"\\Ifstr{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
-		]
-	},
-
-
-	"Ifstrstart{}{}{}{}":{
-		"prefix":"Ifstrstart",
-		"body":[
-			"\\Ifstrstart{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
-		]
-	},
-
-
-	"Ifislengthprimitive{}{}{}":{
-		"prefix":"Ifislengthprimitive",
-		"body":[
-			"\\Ifislengthprimitive{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisdimen{}{}{}":{
-		"prefix":"Ifisdimen",
-		"body":[
-			"\\Ifisdimen{${1:string}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisskip{}{}{}":{
-		"prefix":"Ifisskip",
-		"body":[
-			"\\Ifisskip{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifiscount{}{}{}":{
-		"prefix":"Ifiscount",
-		"body":[
-			"\\Ifiscount{${1:count}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisdimexpr{}{}{}":{
-		"prefix":"Ifisdimexpr",
-		"body":[
-			"\\Ifisdimexpr{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisglueexpr{}{}{}":{
-		"prefix":"Ifisglueexpr",
-		"body":[
-			"\\Ifisglueexpr{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisnumexpr{}{}{}":{
-		"prefix":"Ifisnumexpr",
-		"body":[
-			"\\Ifisnumexpr{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisdefchar{}{}{}":{
-		"prefix":"Ifisdefchar",
-		"body":[
-			"\\Ifisdefchar{${1:arg}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifiscounter{}{}{}":{
-		"prefix":"Ifiscounter",
-		"body":[
-			"\\Ifiscounter{${1:counter}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisinteger{}{}{}":{
-		"prefix":"Ifisinteger",
-		"body":[
-			"\\Ifisinteger{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisdimension{}{}{}":{
-		"prefix":"Ifisdimension",
-		"body":[
-			"\\Ifisdimension{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifisglue{}{}{}":{
-		"prefix":"Ifisglue",
-		"body":[
-			"\\Ifisglue{${1:expression}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifnumber{}{}{}":{
-		"prefix":"Ifnumber",
-		"body":[
-			"\\Ifnumber{${1:string}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifintnumber{}{}{}":{
-		"prefix":"Ifintnumber",
-		"body":[
-			"\\Ifintnumber{${1:string}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifdimen{}{}{}":{
-		"prefix":"Ifdimen",
-		"body":[
-			"\\Ifdimen{${1:string}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifpdfoutput{}{}":{
-		"prefix":"Ifpdfoutput",
-		"body":[
-			"\\Ifpdfoutput{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"Ifpsoutput{}{}":{
-		"prefix":"Ifpsoutput",
-		"body":[
-			"\\Ifpsoutput{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"Ifdvioutput{}{}":{
-		"prefix":"Ifdvioutput",
-		"body":[
-			"\\Ifdvioutput{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"IfRTL{}{}":{
-		"prefix":"IfRTL",
-		"body":[
-			"\\IfRTL{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"IfLTR{}{}":{
-		"prefix":"IfLTR",
-		"body":[
-			"\\IfLTR{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"PackageInfoNoLine{}{}":{
-		"prefix":"PackageInfoNoLine",
-		"body":[
-			"\\PackageInfoNoLine{${1:package}}{${2:information%text}}"
-		]
-	},
-
-
-	"ClassInfoNoLine{}{}":{
-		"prefix":"ClassInfoNoLine",
-		"body":[
-			"\\ClassInfoNoLine{${1:class}}{${2:information%text}}"
-		]
-	},
-
-
-	"IfActiveMkBoth{}{}":{
-		"prefix":"IfActiveMkBoth",
-		"body":[
-			"\\IfActiveMkBoth{${1:then code}}{${2:else code}}"
-		]
-	},
-
-
-	"BeforeFamilyProcessOptions{}{}":{
-		"prefix":"BeforeFamilyProcessOptions",
-		"body":[
-			"\\BeforeFamilyProcessOptions{${1:family}}{${2:code}}"
-		]
-	},
-
-
-	"FamilyExecuteOptions{}{}":{
-		"prefix":"FamilyExecuteOptions",
-		"body":[
-			"\\FamilyExecuteOptions{${1:family}}{${2:options list}}"
-		]
-	},
-
-
-	"FamilyOptions{}{}":{
-		"prefix":"FamilyOptions",
-		"body":[
-			"\\FamilyOptions{${1:family}}{${2:options list}}"
-		]
-	},
-
-
-	"FamilyOption{}{}{}":{
-		"prefix":"FamilyOption",
-		"body":[
-			"\\FamilyOption{${1:family}}{${2:option}}{${3:value list}}"
-		]
-	},
-
-
-	"FamilyUnknownKeyValue{}{}{}{}":{
-		"prefix":"FamilyUnknownKeyValue",
-		"body":[
-			"\\FamilyUnknownKeyValue{${1:family}}{${2:key%plain}}{${3:value}}{${4:value list}}"
-		]
-	},
-
-
-	"FamilyElseValues":{
-		"prefix":"FamilyElseValues",
-		"body":[
-			"\\FamilyElseValues"
-		]
-	},
-
-
-	"FamilyBoolKey{}{}{}":{
-		"prefix":"FamilyBoolKey",
-		"body":[
-			"\\FamilyBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
-	},
-
-
-	"FamilySetBool{}{}{}{}":{
-		"prefix":"FamilySetBool",
-		"body":[
-			"\\FamilySetBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyInverseBoolKey{}{}{}":{
-		"prefix":"FamilyInverseBoolKey",
-		"body":[
-			"\\FamilyInverseBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
-	},
-
-
-	"FamilySetInverseBool{}{}{}{}":{
-		"prefix":"FamilySetInverseBool",
-		"body":[
-			"\\FamilySetInverseBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyCounterKey{}{}{}":{
-		"prefix":"FamilyCounterKey",
-		"body":[
-			"\\FamilyCounterKey{${1:family}}{${2:key%plain}}{${3:counter}}"
-		]
-	},
-
-
-	"FamilySetCounter{}{}{}{}":{
-		"prefix":"FamilySetCounter",
-		"body":[
-			"\\FamilySetCounter{${1:family}}{${2:key%plain}}{${3:counter}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyCounterMacroKey{}{}{}":{
-		"prefix":"FamilyCounterMacroKey",
-		"body":[
-			"\\FamilyCounterMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetCounterMacro{}{}{}{}":{
-		"prefix":"FamilySetCounterMacro",
-		"body":[
-			"\\FamilySetCounterMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyLengthKey{}{}{}":{
-		"prefix":"FamilyLengthKey",
-		"body":[
-			"\\FamilyLengthKey{${1:family}}{${2:key%plain}}{${3:length}}"
-		]
-	},
-
-
-	"FamilySetLength{}{}{}{}":{
-		"prefix":"FamilySetLength",
-		"body":[
-			"\\FamilySetLength{${1:family}}{${2:key%plain}}{${3:length}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyLengthMacroKey{}{}{}":{
-		"prefix":"FamilyLengthMacroKey",
-		"body":[
-			"\\FamilyLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetLengthMacro{}{}{}{}":{
-		"prefix":"FamilySetLengthMacro",
-		"body":[
-			"\\FamilySetLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyUseLengthMacroKey{}{}{}":{
-		"prefix":"FamilyUseLengthMacroKey",
-		"body":[
-			"\\FamilyUseLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilySetUseLengthMacro{}{}{}{}":{
-		"prefix":"FamilySetUseLengthMacro",
-		"body":[
-			"\\FamilySetUseLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
-		]
-	},
-
-
-	"FamilyNumericalKey{}{}{}{}":{
-		"prefix":"FamilyNumericalKey",
-		"body":[
-			"\\FamilyNumericalKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
-		]
-	},
-
-
-	"FamilySetNumerical{}{}{}{}{}":{
-		"prefix":"FamilySetNumerical",
-		"body":[
-			"\\FamilySetNumerical{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}{${5:value}}"
-		]
-	},
-
-
-	"FamilyStringKey{}{}{}":{
-		"prefix":"FamilyStringKey",
-		"body":[
-			"\\FamilyStringKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
-	},
-
-
-	"FamilyCSKey{}{}{}":{
-		"prefix":"FamilyCSKey",
-		"body":[
-			"\\FamilyCSKey{${1:family}}{${2:key%plain}}{${3:csname}}"
-		]
-	},
-
-
-	"ForDoHook{}{}":{
-		"prefix":"ForDoHook",
-		"body":[
-			"\\ForDoHook{${1:specification}}{${2:command}}"
-		]
-	},
-
-
-	"SplitDoHook{}{}{}":{
-		"prefix":"SplitDoHook",
-		"body":[
-			"\\SplitDoHook{${1:specifier}}{${2:head macro%cmd}}{${3:remainder macro%cmd}}"
-		]
-	},
-
-
-	"ExecuteDoHook{}":{
-		"prefix":"ExecuteDoHook",
-		"body":[
-			"\\ExecuteDoHook{${1:specifier}}"
-		]
-	},
-
-
-	"AddtoDoHook{}{}":{
-		"prefix":"AddtoDoHook",
-		"body":[
-			"\\AddtoDoHook{${1:name}}{${2:command}}"
-		]
-	},
-
-
-	"AddtoOneTimeDoHook{}{}":{
-		"prefix":"AddtoOneTimeDoHook",
-		"body":[
-			"\\AddtoOneTimeDoHook{${1:name}}{${2:command}}"
-		]
-	},
-
-
-	"defcaptionname{}{}{}":{
-		"prefix":"defcaptionname",
-		"body":[
-			"\\defcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"providecaptionname{}{}{}":{
-		"prefix":"providecaptionname",
-		"body":[
-			"\\providecaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"newcaptionname{}{}{}":{
-		"prefix":"newcaptionname",
-		"body":[
-			"\\newcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"renewcaptionname{}{}{}":{
-		"prefix":"renewcaptionname",
-		"body":[
-			"\\renewcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"AtEndOfFamilyOptions*{}":{
-		"prefix":"*AtEndOfFamilyOptions",
-		"body":[
-			"\\AtEndOfFamilyOptions*{${1:action}}"
-		]
-	},
-
-
-	"defcaptionname*{}{}{}":{
-		"prefix":"*defcaptionname",
-		"body":[
-			"\\defcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"providecaptionname*{}{}{}":{
-		"prefix":"*providecaptionname",
-		"body":[
-			"\\providecaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"newcaptionname*{}{}{}":{
-		"prefix":"*newcaptionname",
-		"body":[
-			"\\newcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
-	},
-
-
-	"renewcaptionname*{}{}{}":{
-		"prefix":"*renewcaptionname",
-		"body":[
-			"\\renewcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +50,17 @@
 		"prefix":"DefineFamilyMember",
 		"body":[
 			"\\DefineFamilyMember[${2:member}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineFamilyKey{}{}{}":{
+		"prefix":"DefineFamilyKey",
+		"body":[
+			"\\DefineFamilyKey{${1:family}}{${2:key%plain}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +68,8 @@
 		"prefix":"DefineFamilyKey",
 		"body":[
 			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:action}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -693,7 +77,17 @@
 		"prefix":"DefineFamilyKey",
 		"body":[
 			"\\DefineFamilyKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:action}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RelaxFamilyKey{}{}":{
+		"prefix":"RelaxFamilyKey",
+		"body":[
+			"\\RelaxFamilyKey{${1:family}}{${2:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -701,7 +95,80 @@
 		"prefix":"RelaxFamilyKey",
 		"body":[
 			"\\RelaxFamilyKey[${3:member}]{${1:family}}{${2:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilyKeyState":{
+		"prefix":"FamilyKeyState",
+		"body":[
+			"\\FamilyKeyState"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyKeyStateUnknown":{
+		"prefix":"FamilyKeyStateUnknown",
+		"body":[
+			"\\FamilyKeyStateUnknown"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyKeyStateUnknownValue":{
+		"prefix":"FamilyKeyStateUnknownValue",
+		"body":[
+			"\\FamilyKeyStateUnknownValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyKeyStateNeedValue":{
+		"prefix":"FamilyKeyStateNeedValue",
+		"body":[
+			"\\FamilyKeyStateNeedValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyKeyStateProcessed":{
+		"prefix":"FamilyKeyStateProcessed",
+		"body":[
+			"\\FamilyKeyStateProcessed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyOfKey":{
+		"prefix":"FamilyOfKey",
+		"body":[
+			"\\FamilyOfKey"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyMemberOfKey":{
+		"prefix":"FamilyMemberOfKey",
+		"body":[
+			"\\FamilyMemberOfKey"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyProcessOptions{}":{
+		"prefix":"FamilyProcessOptions",
+		"body":[
+			"\\FamilyProcessOptions{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -709,7 +176,305 @@
 		"prefix":"FamilyProcessOptions",
 		"body":[
 			"\\FamilyProcessOptions[${2:member}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AtEndOfFamilyOptions{}":{
+		"prefix":"AtEndOfFamilyOptions",
+		"body":[
+			"\\AtEndOfFamilyOptions{${1:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndOfFamilyOptions*{}":{
+		"prefix":"*AtEndOfFamilyOptions",
+		"body":[
+			"\\AtEndOfFamilyOptions*{${1:action}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IfArgIsEmpty{}{}{}":{
+		"prefix":"IfArgIsEmpty",
+		"body":[
+			"\\IfArgIsEmpty{${1:arg}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XdivY{}{}":{
+		"prefix":"XdivY",
+		"body":[
+			"\\XdivY{${1:dividend}}{${2:divisor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XmodY{}{}":{
+		"prefix":"XmodY",
+		"body":[
+			"\\XmodY{${1:dividend}}{${2:divisor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifundefinedorrelax{}{}{}":{
+		"prefix":"Ifundefinedorrelax",
+		"body":[
+			"\\Ifundefinedorrelax{${1:name}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifnotundefined{}{}{}":{
+		"prefix":"Ifnotundefined",
+		"body":[
+			"\\Ifnotundefined{${1:name}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifstr{}{}{}{}":{
+		"prefix":"Ifstr",
+		"body":[
+			"\\Ifstr{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifstrstart{}{}{}{}":{
+		"prefix":"Ifstrstart",
+		"body":[
+			"\\Ifstrstart{${1:string1}}{${2:string2}}{${3:then code}}{${4:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifislengthprimitive{}{}{}":{
+		"prefix":"Ifislengthprimitive",
+		"body":[
+			"\\Ifislengthprimitive{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisdimen{}{}{}":{
+		"prefix":"Ifisdimen",
+		"body":[
+			"\\Ifisdimen{${1:string}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisskip{}{}{}":{
+		"prefix":"Ifisskip",
+		"body":[
+			"\\Ifisskip{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifiscount{}{}{}":{
+		"prefix":"Ifiscount",
+		"body":[
+			"\\Ifiscount{${1:count}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisdimexpr{}{}{}":{
+		"prefix":"Ifisdimexpr",
+		"body":[
+			"\\Ifisdimexpr{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisglueexpr{}{}{}":{
+		"prefix":"Ifisglueexpr",
+		"body":[
+			"\\Ifisglueexpr{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisnumexpr{}{}{}":{
+		"prefix":"Ifisnumexpr",
+		"body":[
+			"\\Ifisnumexpr{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisdefchar{}{}{}":{
+		"prefix":"Ifisdefchar",
+		"body":[
+			"\\Ifisdefchar{${1:arg}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifiscounter{}{}{}":{
+		"prefix":"Ifiscounter",
+		"body":[
+			"\\Ifiscounter{${1:counter}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisinteger{}{}{}":{
+		"prefix":"Ifisinteger",
+		"body":[
+			"\\Ifisinteger{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisdimension{}{}{}":{
+		"prefix":"Ifisdimension",
+		"body":[
+			"\\Ifisdimension{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifisglue{}{}{}":{
+		"prefix":"Ifisglue",
+		"body":[
+			"\\Ifisglue{${1:expression}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifnumber{}{}{}":{
+		"prefix":"Ifnumber",
+		"body":[
+			"\\Ifnumber{${1:string}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifintnumber{}{}{}":{
+		"prefix":"Ifintnumber",
+		"body":[
+			"\\Ifintnumber{${1:string}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifdimen{}{}{}":{
+		"prefix":"Ifdimen",
+		"body":[
+			"\\Ifdimen{${1:string}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifpdfoutput{}{}":{
+		"prefix":"Ifpdfoutput",
+		"body":[
+			"\\Ifpdfoutput{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifpsoutput{}{}":{
+		"prefix":"Ifpsoutput",
+		"body":[
+			"\\Ifpsoutput{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifdvioutput{}{}":{
+		"prefix":"Ifdvioutput",
+		"body":[
+			"\\Ifdvioutput{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfRTL{}{}":{
+		"prefix":"IfRTL",
+		"body":[
+			"\\IfRTL{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfLTR{}{}":{
+		"prefix":"IfLTR",
+		"body":[
+			"\\IfLTR{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PackageInfoNoLine{}{}":{
+		"prefix":"PackageInfoNoLine",
+		"body":[
+			"\\PackageInfoNoLine{${1:package}}{${2:information%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClassInfoNoLine{}{}":{
+		"prefix":"ClassInfoNoLine",
+		"body":[
+			"\\ClassInfoNoLine{${1:class}}{${2:information%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfActiveMkBoth{}{}":{
+		"prefix":"IfActiveMkBoth",
+		"body":[
+			"\\IfActiveMkBoth{${1:then code}}{${2:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeforeFamilyProcessOptions{}{}":{
+		"prefix":"BeforeFamilyProcessOptions",
+		"body":[
+			"\\BeforeFamilyProcessOptions{${1:family}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -717,7 +482,17 @@
 		"prefix":"BeforeFamilyProcessOptions",
 		"body":[
 			"\\BeforeFamilyProcessOptions[${3:member}]{${1:family}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilyExecuteOptions{}{}":{
+		"prefix":"FamilyExecuteOptions",
+		"body":[
+			"\\FamilyExecuteOptions{${1:family}}{${2:options list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -725,7 +500,53 @@
 		"prefix":"FamilyExecuteOptions",
 		"body":[
 			"\\FamilyExecuteOptions[${3:member}]{${1:family}}{${2:options list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilyOptions{}{}":{
+		"prefix":"FamilyOptions",
+		"body":[
+			"\\FamilyOptions{${1:family}}{${2:options list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyOption{}{}{}":{
+		"prefix":"FamilyOption",
+		"body":[
+			"\\FamilyOption{${1:family}}{${2:option}}{${3:value list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyUnknownKeyValue{}{}{}{}":{
+		"prefix":"FamilyUnknownKeyValue",
+		"body":[
+			"\\FamilyUnknownKeyValue{${1:family}}{${2:key%plain}}{${3:value}}{${4:value list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyElseValues":{
+		"prefix":"FamilyElseValues",
+		"body":[
+			"\\FamilyElseValues"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyBoolKey{}{}{}":{
+		"prefix":"FamilyBoolKey",
+		"body":[
+			"\\FamilyBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -733,7 +554,26 @@
 		"prefix":"FamilyBoolKey",
 		"body":[
 			"\\FamilyBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetBool{}{}{}{}":{
+		"prefix":"FamilySetBool",
+		"body":[
+			"\\FamilySetBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyInverseBoolKey{}{}{}":{
+		"prefix":"FamilyInverseBoolKey",
+		"body":[
+			"\\FamilyInverseBoolKey{${1:family}}{${2:key%plain}}{${3:switch name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -741,7 +581,26 @@
 		"prefix":"FamilyInverseBoolKey",
 		"body":[
 			"\\FamilyInverseBoolKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:switch name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetInverseBool{}{}{}{}":{
+		"prefix":"FamilySetInverseBool",
+		"body":[
+			"\\FamilySetInverseBool{${1:family}}{${2:key%plain}}{${3:switch name}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyCounterKey{}{}{}":{
+		"prefix":"FamilyCounterKey",
+		"body":[
+			"\\FamilyCounterKey{${1:family}}{${2:key%plain}}{${3:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -749,7 +608,8 @@
 		"prefix":"FamilyCounterKey",
 		"body":[
 			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -757,7 +617,26 @@
 		"prefix":"FamilyCounterKey",
 		"body":[
 			"\\FamilyCounterKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetCounter{}{}{}{}":{
+		"prefix":"FamilySetCounter",
+		"body":[
+			"\\FamilySetCounter{${1:family}}{${2:key%plain}}{${3:counter}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyCounterMacroKey{}{}{}":{
+		"prefix":"FamilyCounterMacroKey",
+		"body":[
+			"\\FamilyCounterMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +644,8 @@
 		"prefix":"FamilyCounterMacroKey",
 		"body":[
 			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -773,7 +653,26 @@
 		"prefix":"FamilyCounterMacroKey",
 		"body":[
 			"\\FamilyCounterMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetCounterMacro{}{}{}{}":{
+		"prefix":"FamilySetCounterMacro",
+		"body":[
+			"\\FamilySetCounterMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyLengthKey{}{}{}":{
+		"prefix":"FamilyLengthKey",
+		"body":[
+			"\\FamilyLengthKey{${1:family}}{${2:key%plain}}{${3:length}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +680,8 @@
 		"prefix":"FamilyLengthKey",
 		"body":[
 			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:length}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -789,7 +689,26 @@
 		"prefix":"FamilyLengthKey",
 		"body":[
 			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:length}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetLength{}{}{}{}":{
+		"prefix":"FamilySetLength",
+		"body":[
+			"\\FamilySetLength{${1:family}}{${2:key%plain}}{${3:length}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyLengthMacroKey{}{}{}":{
+		"prefix":"FamilyLengthMacroKey",
+		"body":[
+			"\\FamilyLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +716,8 @@
 		"prefix":"FamilyLengthMacroKey",
 		"body":[
 			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -805,7 +725,26 @@
 		"prefix":"FamilyLengthMacroKey",
 		"body":[
 			"\\FamilyLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetLengthMacro{}{}{}{}":{
+		"prefix":"FamilySetLengthMacro",
+		"body":[
+			"\\FamilySetLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyUseLengthMacroKey{}{}{}":{
+		"prefix":"FamilyUseLengthMacroKey",
+		"body":[
+			"\\FamilyUseLengthMacroKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -813,7 +752,8 @@
 		"prefix":"FamilyUseLengthMacroKey",
 		"body":[
 			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -821,7 +761,26 @@
 		"prefix":"FamilyUseLengthMacroKey",
 		"body":[
 			"\\FamilyUseLengthMacroKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetUseLengthMacro{}{}{}{}":{
+		"prefix":"FamilySetUseLengthMacro",
+		"body":[
+			"\\FamilySetUseLengthMacro{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyNumericalKey{}{}{}{}":{
+		"prefix":"FamilyNumericalKey",
+		"body":[
+			"\\FamilyNumericalKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -829,7 +788,8 @@
 		"prefix":"FamilyLengthMacroKey",
 		"body":[
 			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -837,7 +797,26 @@
 		"prefix":"FamilyLengthMacroKey",
 		"body":[
 			"\\FamilyLengthMacroKey[${5:member}]{${1:family}}{${2:key%plain}}[${6:default}]{${3:macro%cmd}}{${4:value list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilySetNumerical{}{}{}{}{}":{
+		"prefix":"FamilySetNumerical",
+		"body":[
+			"\\FamilySetNumerical{${1:family}}{${2:key%plain}}{${3:macro%cmd}}{${4:value list}}{${5:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FamilyStringKey{}{}{}":{
+		"prefix":"FamilyStringKey",
+		"body":[
+			"\\FamilyStringKey{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -845,7 +824,8 @@
 		"prefix":"FamilyStringKey",
 		"body":[
 			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -853,7 +833,17 @@
 		"prefix":"FamilyStringKey",
 		"body":[
 			"\\FamilyStringKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FamilyCSKey{}{}{}":{
+		"prefix":"FamilyCSKey",
+		"body":[
+			"\\FamilyCSKey{${1:family}}{${2:key%plain}}{${3:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -861,7 +851,8 @@
 		"prefix":"FamilyLengthKey",
 		"body":[
 			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}{${3:csname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -869,6 +860,124 @@
 		"prefix":"FamilyLengthKey",
 		"body":[
 			"\\FamilyLengthKey[${4:member}]{${1:family}}{${2:key%plain}}[${5:default}]{${3:csname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ForDoHook{}{}":{
+		"prefix":"ForDoHook",
+		"body":[
+			"\\ForDoHook{${1:specification}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SplitDoHook{}{}{}":{
+		"prefix":"SplitDoHook",
+		"body":[
+			"\\SplitDoHook{${1:specifier}}{${2:head macro%cmd}}{${3:remainder macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExecuteDoHook{}":{
+		"prefix":"ExecuteDoHook",
+		"body":[
+			"\\ExecuteDoHook{${1:specifier}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoDoHook{}{}":{
+		"prefix":"AddtoDoHook",
+		"body":[
+			"\\AddtoDoHook{${1:name}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoOneTimeDoHook{}{}":{
+		"prefix":"AddtoOneTimeDoHook",
+		"body":[
+			"\\AddtoOneTimeDoHook{${1:name}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defcaptionname{}{}{}":{
+		"prefix":"defcaptionname",
+		"body":[
+			"\\defcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defcaptionname*{}{}{}":{
+		"prefix":"*defcaptionname",
+		"body":[
+			"\\defcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"providecaptionname{}{}{}":{
+		"prefix":"providecaptionname",
+		"body":[
+			"\\providecaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"providecaptionname*{}{}{}":{
+		"prefix":"*providecaptionname",
+		"body":[
+			"\\providecaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newcaptionname{}{}{}":{
+		"prefix":"newcaptionname",
+		"body":[
+			"\\newcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newcaptionname*{}{}{}":{
+		"prefix":"*newcaptionname",
+		"body":[
+			"\\newcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewcaptionname{}{}{}":{
+		"prefix":"renewcaptionname",
+		"body":[
+			"\\renewcaptionname{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewcaptionname*{}{}{}":{
+		"prefix":"*renewcaptionname",
+		"body":[
+			"\\renewcaptionname*{${1:language list}}{${2:term%cmd}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

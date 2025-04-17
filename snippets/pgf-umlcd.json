@@ -5,7 +5,8 @@
 		"prefix":"attribute",
 		"body":[
 			"\\attribute{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,231 +14,8 @@
 		"prefix":"operation",
 		"body":[
 			"\\operation{${1:text}}"
-		]
-	},
-
-
-	"instanceOf{}":{
-		"prefix":"instanceOf",
-		"body":[
-			"\\instanceOf{${1:class name}}"
-		]
-	},
-
-
-	"switchUmlcdSchool":{
-		"prefix":"switchUmlcdSchool",
-		"body":[
-			"\\switchUmlcdSchool"
-		]
-	},
-
-
-	"inherit{}":{
-		"prefix":"inherit",
-		"body":[
-			"\\inherit{${1:class name}}"
-		]
-	},
-
-
-	"implement{}":{
-		"prefix":"implement",
-		"body":[
-			"\\implement{${1:interface name}}"
-		]
-	},
-
-
-	"association{}{}{}{}{}{}":{
-		"prefix":"association",
-		"body":[
-			"\\association{${1:class1}}{${2:abovetext1}}{${3:belowtext1}}{${4:class2}}{${5:abovetext2}}{${6:belowtext2}}"
-		]
-	},
-
-
-	"unidirectionalAssociation{}{}{}{}":{
-		"prefix":"unidirectionalAssociation",
-		"body":[
-			"\\unidirectionalAssociation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
-		]
-	},
-
-
-	"aggregation{}{}{}{}":{
-		"prefix":"aggregation",
-		"body":[
-			"\\aggregation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
-		]
-	},
-
-
-	"composition{}{}{}{}":{
-		"prefix":"composition",
-		"body":[
-			"\\composition{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
-		]
-	},
-
-
-	"calcuateNumberOfParts":{
-		"prefix":"calcuateNumberOfParts",
-		"body":[
-			"\\calcuateNumberOfParts"
-		]
-	},
-
-
-	"insertAttributesAndOperations":{
-		"prefix":"insertAttributesAndOperations",
-		"body":[
-			"\\insertAttributesAndOperations"
-		]
-	},
-
-
-	"theumlcdClassAbstractClassNum":{
-		"prefix":"theumlcdClassAbstractClassNum",
-		"body":[
-			"\\theumlcdClassAbstractClassNum"
-		]
-	},
-
-
-	"theumlcdClassAttributesNum":{
-		"prefix":"theumlcdClassAttributesNum",
-		"body":[
-			"\\theumlcdClassAttributesNum"
-		]
-	},
-
-
-	"theumlcdClassInterfaceNum":{
-		"prefix":"theumlcdClassInterfaceNum",
-		"body":[
-			"\\theumlcdClassInterfaceNum"
-		]
-	},
-
-
-	"theumlcdClassOperationsNum":{
-		"prefix":"theumlcdClassOperationsNum",
-		"body":[
-			"\\theumlcdClassOperationsNum"
-		]
-	},
-
-
-	"theumlcdClassSplitPartNum":{
-		"prefix":"theumlcdClassSplitPartNum",
-		"body":[
-			"\\theumlcdClassSplitPartNum"
-		]
-	},
-
-
-	"umlcdClassAbstractClass":{
-		"prefix":"umlcdClassAbstractClass",
-		"body":[
-			"\\umlcdClassAbstractClass"
-		]
-	},
-
-
-	"umlcdClassAttributes":{
-		"prefix":"umlcdClassAttributes",
-		"body":[
-			"\\umlcdClassAttributes"
-		]
-	},
-
-
-	"umlcdClassInterface":{
-		"prefix":"umlcdClassInterface",
-		"body":[
-			"\\umlcdClassInterface"
-		]
-	},
-
-
-	"umlcdClassName":{
-		"prefix":"umlcdClassName",
-		"body":[
-			"\\umlcdClassName"
-		]
-	},
-
-
-	"umlcdClassOperations":{
-		"prefix":"umlcdClassOperations",
-		"body":[
-			"\\umlcdClassOperations"
-		]
-	},
-
-
-	"umlcdClassPos":{
-		"prefix":"umlcdClassPos",
-		"body":[
-			"\\umlcdClassPos"
-		]
-	},
-
-
-	"umlcdPackageFit":{
-		"prefix":"umlcdPackageFit",
-		"body":[
-			"\\umlcdPackageFit"
-		]
-	},
-
-
-	"umlcdPackageName":{
-		"prefix":"umlcdPackageName",
-		"body":[
-			"\\umlcdPackageName"
-		]
-	},
-
-
-	"umldObjectName":{
-		"prefix":"umldObjectName",
-		"body":[
-			"\\umldObjectName"
-		]
-	},
-
-
-	"umldrawcolor":{
-		"prefix":"umldrawcolor",
-		"body":[
-			"\\umldrawcolor"
-		]
-	},
-
-
-	"umlfillcolor":{
-		"prefix":"umlfillcolor",
-		"body":[
-			"\\umlfillcolor"
-		]
-	},
-
-
-	"umltextcolor":{
-		"prefix":"umltextcolor",
-		"body":[
-			"\\umltextcolor"
-		]
-	},
-
-
-	"virtualoperation":{
-		"prefix":"virtualoperation",
-		"body":[
-			"\\virtualoperation"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,106 +23,369 @@
 		"prefix":"operation",
 		"body":[
 			"\\operation[${2:0}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"class":{
+	"instanceOf{}":{
+		"prefix":"instanceOf",
+		"body":[
+			"\\instanceOf{${1:class name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"switchUmlcdSchool":{
+		"prefix":"switchUmlcdSchool",
+		"body":[
+			"\\switchUmlcdSchool"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inherit{}":{
+		"prefix":"inherit",
+		"body":[
+			"\\inherit{${1:class name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"implement{}":{
+		"prefix":"implement",
+		"body":[
+			"\\implement{${1:interface name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"association{}{}{}{}{}{}":{
+		"prefix":"association",
+		"body":[
+			"\\association{${1:class1}}{${2:abovetext1}}{${3:belowtext1}}{${4:class2}}{${5:abovetext2}}{${6:belowtext2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unidirectionalAssociation{}{}{}{}":{
+		"prefix":"unidirectionalAssociation",
+		"body":[
+			"\\unidirectionalAssociation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aggregation{}{}{}{}":{
+		"prefix":"aggregation",
+		"body":[
+			"\\aggregation{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"composition{}{}{}{}":{
+		"prefix":"composition",
+		"body":[
+			"\\composition{${1:class1}}{${2:abovetext}}{${3:belowtext}}{${4:class2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"calcuateNumberOfParts":{
+		"prefix":"calcuateNumberOfParts",
+		"body":[
+			"\\calcuateNumberOfParts"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertAttributesAndOperations":{
+		"prefix":"insertAttributesAndOperations",
+		"body":[
+			"\\insertAttributesAndOperations"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theumlcdClassAbstractClassNum":{
+		"prefix":"theumlcdClassAbstractClassNum",
+		"body":[
+			"\\theumlcdClassAbstractClassNum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theumlcdClassAttributesNum":{
+		"prefix":"theumlcdClassAttributesNum",
+		"body":[
+			"\\theumlcdClassAttributesNum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theumlcdClassInterfaceNum":{
+		"prefix":"theumlcdClassInterfaceNum",
+		"body":[
+			"\\theumlcdClassInterfaceNum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theumlcdClassOperationsNum":{
+		"prefix":"theumlcdClassOperationsNum",
+		"body":[
+			"\\theumlcdClassOperationsNum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theumlcdClassSplitPartNum":{
+		"prefix":"theumlcdClassSplitPartNum",
+		"body":[
+			"\\theumlcdClassSplitPartNum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassAbstractClass":{
+		"prefix":"umlcdClassAbstractClass",
+		"body":[
+			"\\umlcdClassAbstractClass"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassAttributes":{
+		"prefix":"umlcdClassAttributes",
+		"body":[
+			"\\umlcdClassAttributes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassInterface":{
+		"prefix":"umlcdClassInterface",
+		"body":[
+			"\\umlcdClassInterface"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassName":{
+		"prefix":"umlcdClassName",
+		"body":[
+			"\\umlcdClassName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassOperations":{
+		"prefix":"umlcdClassOperations",
+		"body":[
+			"\\umlcdClassOperations"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdClassPos":{
+		"prefix":"umlcdClassPos",
+		"body":[
+			"\\umlcdClassPos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdPackageFit":{
+		"prefix":"umlcdPackageFit",
+		"body":[
+			"\\umlcdPackageFit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlcdPackageName":{
+		"prefix":"umlcdPackageName",
+		"body":[
+			"\\umlcdPackageName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umldObjectName":{
+		"prefix":"umldObjectName",
+		"body":[
+			"\\umldObjectName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umldrawcolor":{
+		"prefix":"umldrawcolor",
+		"body":[
+			"\\umldrawcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umlfillcolor":{
+		"prefix":"umlfillcolor",
+		"body":[
+			"\\umlfillcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"umltextcolor":{
+		"prefix":"umltextcolor",
+		"body":[
+			"\\umltextcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"virtualoperation":{
+		"prefix":"virtualoperation",
+		"body":[
+			"\\virtualoperation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"class{}{}":{
 		"prefix":"class",
 		"body":[
 			"\\begin{class}",
-				"\t$1",
+				"\t{${1:class name%text}}{${2:x,y}}",
 			"\\end{class}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"abstractclass":{
+	"class[]{}{}":{
+		"prefix":"class",
+		"body":[
+			"\\begin{class}",
+				"\t[${3:TikZ options}]{${1:class name%text}}{${2:x,y}}",
+			"\\end{class}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"abstractclass{}{}":{
 		"prefix":"abstractclass",
 		"body":[
 			"\\begin{abstractclass}",
-				"\t$1",
+				"\t{${1:class name%text}}{${2:x,y}}",
 			"\\end{abstractclass}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"interface":{
+	"abstractclass[]{}{}":{
+		"prefix":"abstractclass",
+		"body":[
+			"\\begin{abstractclass}",
+				"\t[${3:TikZ options}]{${1:class name%text}}{${2:x,y}}",
+			"\\end{abstractclass}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"interface{}{}":{
 		"prefix":"interface",
 		"body":[
 			"\\begin{interface}",
-				"\t$1",
+				"\t{${1:interface name%text}}{${2:x,y}}",
 			"\\end{interface}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"object":{
+	"interface[]{}{}":{
+		"prefix":"interface",
+		"body":[
+			"\\begin{interface}",
+				"\t[${3:TikZ options}]{${1:interface name%text}}{${2:x,y}}",
+			"\\end{interface}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"object{}{}":{
 		"prefix":"object",
 		"body":[
 			"\\begin{object}",
-				"\t$1",
+				"\t{${1:object name%text}}{${2:x,y}}",
 			"\\end{object}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"package":{
+	"object[]{}{}":{
+		"prefix":"object",
+		"body":[
+			"\\begin{object}",
+				"\t[${3:TikZ options}]{${1:object name%text}}{${2:x,y}}",
+			"\\end{object}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"package{}":{
 		"prefix":"package",
 		"body":[
 			"\\begin{package}",
-				"\t$1",
+				"\t{${1:package name%text}}",
 			"\\end{package}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"classAndInterfaceCommon":{
+	"classAndInterfaceCommon{}{}{}":{
 		"prefix":"classAndInterfaceCommon",
 		"body":[
 			"\\begin{classAndInterfaceCommon}",
-				"\t$1",
+				"\t{${1:TikZ options}}{${2:name%text}}{${3:x,y}}",
 			"\\end{classAndInterfaceCommon}"
-		]
-	},
-
-
-	"class":{
-		"prefix":"class",
-		"body":[
-			"\\begin{class}",
-				"\t$1",
-			"\\end{class}"
-		]
-	},
-
-
-	"abstractclass":{
-		"prefix":"abstractclass",
-		"body":[
-			"\\begin{abstractclass}",
-				"\t$1",
-			"\\end{abstractclass}"
-		]
-	},
-
-
-	"interface":{
-		"prefix":"interface",
-		"body":[
-			"\\begin{interface}",
-				"\t$1",
-			"\\end{interface}"
-		]
-	},
-
-
-	"object":{
-		"prefix":"object",
-		"body":[
-			"\\begin{object}",
-				"\t$1",
-			"\\end{object}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

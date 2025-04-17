@@ -5,7 +5,8 @@
 		"prefix":"gfiGetDay",
 		"body":[
 			"\\gfiGetDay"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"gfiGetMonth",
 		"body":[
 			"\\gfiGetMonth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"gfiGetYear",
 		"body":[
 			"\\gfiGetYear"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"gfiGetHour",
 		"body":[
 			"\\gfiGetHour"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"gfiGetMin",
 		"body":[
 			"\\gfiGetMin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"gfiGetAuthorName",
 		"body":[
 			"\\gfiGetAuthorName"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"gfiGetAuthorMail",
 		"body":[
 			"\\gfiGetAuthorMail"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"gfiGetDate",
 		"body":[
 			"\\gfiGetDate"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"gfiGetCommit",
 		"body":[
 			"\\gfiGetCommit"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,71 +86,8 @@
 		"prefix":"gfiGetCommitAbr",
 		"body":[
 			"\\gfiGetCommitAbr"
-		]
-	},
-
-
-	"gfiInclude{}":{
-		"prefix":"gfiInclude",
-		"body":[
-			"\\gfiInclude{${1:file}}"
-		]
-	},
-
-
-	"gfiInput{}":{
-		"prefix":"gfiInput",
-		"body":[
-			"\\gfiInput{${1:file}}"
-		]
-	},
-
-
-	"gfiSetDate{}{}{}{}{}{}":{
-		"prefix":"gfiSetDate",
-		"body":[
-			"\\gfiSetDate{${1:day}}{${2:month}}{${3:year}}{${4:hour}}{${5:minute}}{${6:long form}}"
-		]
-	},
-
-
-	"gfiSetAuthor{}{}":{
-		"prefix":"gfiSetAuthor",
-		"body":[
-			"\\gfiSetAuthor{${1:name}}{${2:email%URL}}"
-		]
-	},
-
-
-	"gfiSetCommit{}{}":{
-		"prefix":"gfiSetCommit",
-		"body":[
-			"\\gfiSetCommit{${1:hash}}{${2:hash-abr}}"
-		]
-	},
-
-
-	"gfiCurrentConfig":{
-		"prefix":"gfiCurrentConfig",
-		"body":[
-			"\\gfiCurrentConfig"
-		]
-	},
-
-
-	"gfiInitInc{}":{
-		"prefix":"gfiInitInc",
-		"body":[
-			"\\gfiInitInc{${1:file}}"
-		]
-	},
-
-
-	"gfiInitJob":{
-		"prefix":"gfiInitJob",
-		"body":[
-			"\\gfiInitJob"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +95,8 @@
 		"prefix":"gfiInfo",
 		"body":[
 			"\\gfiInfo[${1:hash length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +104,8 @@
 		"prefix":"gfiInfo",
 		"body":[
 			"\\gfiInfo[${1:hash length}][${2:date format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +113,8 @@
 		"prefix":"gfiInfo",
 		"body":[
 			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +122,80 @@
 		"prefix":"gfiInfo",
 		"body":[
 			"\\gfiInfo[${1:hash length}][${2:date format}][${3:author format}][${4:tcolorbox}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gfiInclude{}":{
+		"prefix":"gfiInclude",
+		"body":[
+			"\\gfiInclude{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiInput{}":{
+		"prefix":"gfiInput",
+		"body":[
+			"\\gfiInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiSetDate{}{}{}{}{}{}":{
+		"prefix":"gfiSetDate",
+		"body":[
+			"\\gfiSetDate{${1:day}}{${2:month}}{${3:year}}{${4:hour}}{${5:minute}}{${6:long form}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiSetAuthor{}{}":{
+		"prefix":"gfiSetAuthor",
+		"body":[
+			"\\gfiSetAuthor{${1:name}}{${2:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiSetCommit{}{}":{
+		"prefix":"gfiSetCommit",
+		"body":[
+			"\\gfiSetCommit{${1:hash}}{${2:hash-abr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiCurrentConfig":{
+		"prefix":"gfiCurrentConfig",
+		"body":[
+			"\\gfiCurrentConfig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiInitInc{}":{
+		"prefix":"gfiInitInc",
+		"body":[
+			"\\gfiInitInc{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gfiInitJob":{
+		"prefix":"gfiInitJob",
+		"body":[
+			"\\gfiInitJob"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -183,6 +205,7 @@
 			"\\begin{gfiInfoBox}",
 				"\t$1",
 			"\\end{gfiInfoBox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"defaultgobble",
 		"body":[
 			"\\defaultgobble"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"updatehighlight",
 		"body":[
 			"\\updatehighlight{${1:highlight rules%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"useblock",
 		"body":[
 			"\\useblock{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"consumeblock",
 		"body":[
 			"\\consumeblock{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -39,26 +43,29 @@
 			"\\begin{highlightblock}",
 				"\t$1",
 			"\\end{highlightblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"saveblock":{
+	"highlightblock[]":{
+		"prefix":"highlightblock",
+		"body":[
+			"\\begin{highlightblock}",
+				"\t[${1:options%keyvals}]",
+			"\\end{highlightblock}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"saveblock{}":{
 		"prefix":"saveblock",
 		"body":[
 			"\\begin{saveblock}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{saveblock}"
-		]
-	},
-
-
-	"highlightblock":{
-		"prefix":"highlightblock",
-		"body":[
-			"\\begin{highlightblock}",
-				"\t$1",
-			"\\end{highlightblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

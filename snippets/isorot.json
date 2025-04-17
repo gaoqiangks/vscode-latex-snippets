@@ -5,7 +5,8 @@
 		"prefix":"rotdriver",
 		"body":[
 			"\\rotdriver{${1:driver%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"clockwise",
 		"body":[
 			"\\clockwise"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"counterclockwise",
 		"body":[
 			"\\counterclockwise"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"figuresright",
 		"body":[
 			"\\figuresright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"figuresleft",
 		"body":[
 			"\\figuresleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"rotcaption",
 		"body":[
 			"\\rotcaption"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"controtcaption",
 		"body":[
 			"\\controtcaption"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"rotcapfont",
 		"body":[
 			"\\rotcapfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"rotatedirection",
 		"body":[
 			"\\rotatedirection{${1:direction}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"turnbox",
 		"body":[
 			"\\turnbox{${1:angle}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"therpage",
 		"body":[
 			"\\therpage"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -95,27 +106,30 @@
 			"\\begin{sideways}",
 				"\t$1",
 			"\\end{sideways}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"turn":{
+	"turn{}":{
 		"prefix":"turn",
 		"body":[
 			"\\begin{turn}",
-				"\t$1",
+				"\t{${1:angle}}",
 			"\\end{turn}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"rotate":{
+	"rotate{}":{
 		"prefix":"rotate",
 		"body":[
 			"\\begin{rotate}",
-				"\t$1",
+				"\t{${1:angle}}",
 			"\\end{rotate}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,17 +139,8 @@
 			"\\begin{sidewaystable}",
 				"\t$1",
 			"\\end{sidewaystable}"
-		]
-	},
-
-
-	"sidewaysfigure":{
-		"prefix":"sidewaysfigure",
-		"body":[
-			"\\begin{sidewaysfigure}",
-				"\t$1",
-			"\\end{sidewaysfigure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -145,7 +150,19 @@
 			"\\begin{sidewaystable*}",
 				"\t$1",
 			"\\end{sidewaystable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sidewaysfigure":{
+		"prefix":"sidewaysfigure",
+		"body":[
+			"\\begin{sidewaysfigure}",
+				"\t$1",
+			"\\end{sidewaysfigure}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -155,6 +172,7 @@
 			"\\begin{sidewaysfigure*}",
 				"\t$1",
 			"\\end{sidewaysfigure*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

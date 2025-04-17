@@ -5,103 +5,8 @@
 		"prefix":"gl",
 		"body":[
 			"\\gl{${1:gloss}}"
-		]
-	},
-
-
-	"xo{}":{
-		"prefix":"xo",
-		"body":[
-			"\\xo{${1:orthography}}"
-		]
-	},
-
-
-	"xt{}":{
-		"prefix":"xt",
-		"body":[
-			"\\xt{${1:phonetic}}"
-		]
-	},
-
-
-	"xm{}":{
-		"prefix":"xm",
-		"body":[
-			"\\xm{${1:phonemic}}"
-		]
-	},
-
-
-	"xv{}":{
-		"prefix":"xv",
-		"body":[
-			"\\xv{${1:vernacular}}"
-		]
-	},
-
-
-	"xh{}":{
-		"prefix":"xh",
-		"body":[
-			"\\xh{${1:reconstruction}}"
-		]
-	},
-
-
-	"lingprestyle{}":{
-		"prefix":"lingprestyle",
-		"body":[
-			"\\lingprestyle{${1:text}}"
-		]
-	},
-
-
-	"lingpoststyle{}":{
-		"prefix":"lingpoststyle",
-		"body":[
-			"\\lingpoststyle{${1:text}}"
-		]
-	},
-
-
-	"lingexample{}{}":{
-		"prefix":"lingexample",
-		"body":[
-			"\\lingexample{${1:csname}}{${2:template}}"
-		]
-	},
-
-
-	"shorteq":{
-		"prefix":"shorteq",
-		"body":[
-			"\\shorteq"
-		]
-	},
-
-
-	"nbrhyph":{
-		"prefix":"nbrhyph",
-		"body":[
-			"\\nbrhyph"
-		]
-	},
-
-
-	"nbreq":{
-		"prefix":"nbreq",
-		"body":[
-			"\\nbreq"
-		]
-	},
-
-
-	"nbrpunct{}":{
-		"prefix":"nbrpunct",
-		"body":[
-			"\\nbrpunct{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,8 @@
 		"prefix":"gl",
 		"body":[
 			"\\gl[${2:postfix}]{${1:gloss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +23,17 @@
 		"prefix":"gl",
 		"body":[
 			"\\gl[${2:prefix}][${3:postfix}]{${1:gloss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xo{}":{
+		"prefix":"xo",
+		"body":[
+			"\\xo{${1:orthography}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +41,8 @@
 		"prefix":"xo",
 		"body":[
 			"\\xo[${2:postfix}]{${1:orthography}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +50,17 @@
 		"prefix":"xo",
 		"body":[
 			"\\xo[${2:prefix}][${3:postfix}]{${1:orthography}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xt{}":{
+		"prefix":"xt",
+		"body":[
+			"\\xt{${1:phonetic}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +68,8 @@
 		"prefix":"xt",
 		"body":[
 			"\\xt[${2:postfix}]{${1:phonetic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +77,17 @@
 		"prefix":"xt",
 		"body":[
 			"\\xt[${2:prefix}][${3:postfix}]{${1:phonetic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xm{}":{
+		"prefix":"xm",
+		"body":[
+			"\\xm{${1:phonemic}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +95,8 @@
 		"prefix":"xm",
 		"body":[
 			"\\xm[${2:postfix}]{${1:phonemic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +104,17 @@
 		"prefix":"xm",
 		"body":[
 			"\\xm[${2:prefix}][${3:postfix}]{${1:phonemic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xv{}":{
+		"prefix":"xv",
+		"body":[
+			"\\xv{${1:vernacular}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +122,8 @@
 		"prefix":"xv",
 		"body":[
 			"\\xv[${2:postfix}]{${1:vernacular}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +131,17 @@
 		"prefix":"xv",
 		"body":[
 			"\\xv[${2:prefix}][${3:postfix}]{${1:vernacular}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xh{}":{
+		"prefix":"xh",
+		"body":[
+			"\\xh{${1:reconstruction}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +149,8 @@
 		"prefix":"xh",
 		"body":[
 			"\\xh[${2:postfix}]{${1:reconstruction}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,6 +158,70 @@
 		"prefix":"xh",
 		"body":[
 			"\\xh[${2:prefix}][${3:postfix}]{${1:reconstruction}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lingprestyle{}":{
+		"prefix":"lingprestyle",
+		"body":[
+			"\\lingprestyle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lingpoststyle{}":{
+		"prefix":"lingpoststyle",
+		"body":[
+			"\\lingpoststyle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lingexample{}{}":{
+		"prefix":"lingexample",
+		"body":[
+			"\\lingexample{${1:csname}}{${2:template}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shorteq":{
+		"prefix":"shorteq",
+		"body":[
+			"\\shorteq"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nbrhyph":{
+		"prefix":"nbrhyph",
+		"body":[
+			"\\nbrhyph"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nbreq":{
+		"prefix":"nbreq",
+		"body":[
+			"\\nbreq"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nbrpunct{}":{
+		"prefix":"nbrpunct",
+		"body":[
+			"\\nbrpunct{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

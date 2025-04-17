@@ -5,7 +5,8 @@
 		"prefix":"DeclareSubstance",
 		"body":[
 			"\\DeclareSubstance{${1:id%specialDef}}{${2:properties%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"LoadSubstances",
 		"body":[
 			"\\LoadSubstances{${1:database name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"SubstancesDatabase",
 		"body":[
 			"\\SubstancesDatabase{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"CAS",
 		"body":[
 			"\\CAS{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,191 +41,8 @@
 		"prefix":"SubstancesStyle",
 		"body":[
 			"\\SubstancesStyle{${1:style name}}"
-		]
-	},
-
-
-	"LoadSubstancesStyle{}":{
-		"prefix":"LoadSubstancesStyle",
-		"body":[
-			"\\LoadSubstancesStyle{${1:style name}}"
-		]
-	},
-
-
-	"DeclareSubstanceProperty{}":{
-		"prefix":"DeclareSubstanceProperty",
-		"body":[
-			"\\DeclareSubstanceProperty{${1:name%specialDef}}"
-		]
-	},
-
-
-	"chem{}":{
-		"prefix":"chem",
-		"body":[
-			"\\chem{${1:id%keyvals}}"
-		]
-	},
-
-
-	"GetSubstanceProperty{}{}":{
-		"prefix":"GetSubstanceProperty",
-		"body":[
-			"\\GetSubstanceProperty{${1:id%keyvals}}{${2:property}}"
-		]
-	},
-
-
-	"RetrieveSubstanceProperty{}{}":{
-		"prefix":"RetrieveSubstanceProperty",
-		"body":[
-			"\\RetrieveSubstanceProperty{${1:id%keyvals}}{${2:property}}"
-		]
-	},
-
-
-	"ForAllSubstancesDo{}":{
-		"prefix":"ForAllSubstancesDo",
-		"body":[
-			"\\ForAllSubstancesDo{${1:code}}"
-		]
-	},
-
-
-	"AllSubstancesSequence":{
-		"prefix":"AllSubstancesSequence",
-		"body":[
-			"\\AllSubstancesSequence"
-		]
-	},
-
-
-	"AllSubstancesClist":{
-		"prefix":"AllSubstancesClist",
-		"body":[
-			"\\AllSubstancesClist"
-		]
-	},
-
-
-	"IfSubstancePropertyTF{}{}{}{}":{
-		"prefix":"IfSubstancePropertyTF",
-		"body":[
-			"\\IfSubstancePropertyTF{${1:id}}{${2:field}}{${3:true code}}{${4:false code}}"
-		]
-	},
-
-
-	"IfSubstancePropertyT{}{}{}":{
-		"prefix":"IfSubstancePropertyT",
-		"body":[
-			"\\IfSubstancePropertyT{${1:id}}{${2:field}}{${3:true code}}"
-		]
-	},
-
-
-	"IfSubstancePropertyF{}{}{}":{
-		"prefix":"IfSubstancePropertyF",
-		"body":[
-			"\\IfSubstancePropertyF{${1:id}}{${2:field}}{${3:false code}}"
-		]
-	},
-
-
-	"IfSubstanceFieldTF{}{}{}":{
-		"prefix":"IfSubstanceFieldTF",
-		"body":[
-			"\\IfSubstanceFieldTF{${1:field}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"IfSubstanceFieldT{}{}":{
-		"prefix":"IfSubstanceFieldT",
-		"body":[
-			"\\IfSubstanceFieldT{${1:field}}{${2:true code}}"
-		]
-	},
-
-
-	"IfSubstanceFieldF{}{}":{
-		"prefix":"IfSubstanceFieldF",
-		"body":[
-			"\\IfSubstanceFieldF{${1:field}}{${2:false code}}"
-		]
-	},
-
-
-	"IfSubstanceExistTF{}{}{}":{
-		"prefix":"IfSubstanceExistTF",
-		"body":[
-			"\\IfSubstanceExistTF{${1:id}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"IfSubstanceExistT{}{}{}":{
-		"prefix":"IfSubstanceExistT",
-		"body":[
-			"\\IfSubstanceExistT{${1:id}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"IfSubstanceExistF{}{}{}":{
-		"prefix":"IfSubstanceExistF",
-		"body":[
-			"\\IfSubstanceExistF{${1:id}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"SubstanceIndex{}":{
-		"prefix":"SubstanceIndex",
-		"body":[
-			"\\SubstanceIndex{${1:id}}"
-		]
-	},
-
-
-	"SubstanceIndexNameEntry{}{}":{
-		"prefix":"SubstanceIndexNameEntry",
-		"body":[
-			"\\SubstanceIndexNameEntry{${1:sort}}{${2:name}}"
-		]
-	},
-
-
-	"SubstanceIndexNameAltEntry{}{}{}":{
-		"prefix":"SubstanceIndexNameAltEntry",
-		"body":[
-			"\\SubstanceIndexNameAltEntry{${1:sort}}{${2:name}}{${3:alt}}"
-		]
-	},
-
-
-	"SubstanceIndexAltEntry{}{}{}":{
-		"prefix":"SubstanceIndexAltEntry",
-		"body":[
-			"\\SubstanceIndexAltEntry{${1:alt sort}}{${2:name}}{${3:alt}}"
-		]
-	},
-
-
-	"ghspictograms{}":{
-		"prefix":"ghspictograms",
-		"body":[
-			"\\ghspictograms{${1:arg}}"
-		]
-	},
-
-
-	"ghsstatements{}{}":{
-		"prefix":"ghsstatements",
-		"body":[
-			"\\ghsstatements{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,79 +50,26 @@
 		"prefix":"*SubstancesStyle",
 		"body":[
 			"\\SubstancesStyle*{${1:style name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"DeclareSubstanceProperty*{}":{
-		"prefix":"*DeclareSubstanceProperty",
+	"LoadSubstancesStyle{}":{
+		"prefix":"LoadSubstancesStyle",
 		"body":[
-			"\\DeclareSubstanceProperty*{${1:name%specialDef}}"
-		]
+			"\\LoadSubstancesStyle{${1:style name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"DeclareSubstanceProperty*{}[]":{
-		"prefix":"*DeclareSubstanceProperty",
+	"DeclareSubstanceProperty{}":{
+		"prefix":"DeclareSubstanceProperty",
 		"body":[
-			"\\DeclareSubstanceProperty*{${1:name%specialDef}}[${2:pre code}]"
-		]
-	},
-
-
-	"DeclareSubstanceProperty*{}[][]":{
-		"prefix":"*DeclareSubstanceProperty",
-		"body":[
-			"\\DeclareSubstanceProperty*{${1:name%specialDef}}[${2:pre code}][${3:post code}]"
-		]
-	},
-
-
-	"chem*{}":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*{${1:id%keyvals}}"
-		]
-	},
-
-
-	"chem*{}[]":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*{${1:id%keyvals}}[${2:property}]"
-		]
-	},
-
-
-	"chem*[]{}":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*[${2:pre}]{${1:id%keyvals}}"
-		]
-	},
-
-
-	"chem*[]{}[]":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*[${2:pre}]{${1:id%keyvals}}[${3:property}]"
-		]
-	},
-
-
-	"chem*[][]{}":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*[${2:pre}][${3:post}]{${1:id%keyvals}}"
-		]
-	},
-
-
-	"chem*[][]{}[]":{
-		"prefix":"*chem",
-		"body":[
-			"\\chem*[${2:pre}][${3:post}]{${1:id%keyvals}}[${4:property}]"
-		]
+			"\\DeclareSubstanceProperty{${1:name%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +77,8 @@
 		"prefix":"DeclareSubstanceProperty",
 		"body":[
 			"\\DeclareSubstanceProperty{${1:name%specialDef}}[${2:pre code}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -317,7 +86,44 @@
 		"prefix":"DeclareSubstanceProperty",
 		"body":[
 			"\\DeclareSubstanceProperty{${1:name%specialDef}}[${2:pre code}][${3:post code}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareSubstanceProperty*{}":{
+		"prefix":"*DeclareSubstanceProperty",
+		"body":[
+			"\\DeclareSubstanceProperty*{${1:name%specialDef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeclareSubstanceProperty*{}[]":{
+		"prefix":"*DeclareSubstanceProperty",
+		"body":[
+			"\\DeclareSubstanceProperty*{${1:name%specialDef}}[${2:pre code}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeclareSubstanceProperty*{}[][]":{
+		"prefix":"*DeclareSubstanceProperty",
+		"body":[
+			"\\DeclareSubstanceProperty*{${1:name%specialDef}}[${2:pre code}][${3:post code}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem{}":{
+		"prefix":"chem",
+		"body":[
+			"\\chem{${1:id%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +131,8 @@
 		"prefix":"chem",
 		"body":[
 			"\\chem{${1:id%keyvals}}[${2:property}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +140,8 @@
 		"prefix":"chem",
 		"body":[
 			"\\chem[${2:pre}]{${1:id%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +149,8 @@
 		"prefix":"chem",
 		"body":[
 			"\\chem[${2:pre}]{${1:id%keyvals}}[${3:property}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -349,7 +158,8 @@
 		"prefix":"chem",
 		"body":[
 			"\\chem[${2:pre}][${3:post}]{${1:id%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -357,7 +167,197 @@
 		"prefix":"chem",
 		"body":[
 			"\\chem[${2:pre}][${3:post}]{${1:id%keyvals}}[${4:property}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chem*{}":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*{${1:id%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem*{}[]":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*{${1:id%keyvals}}[${2:property}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem*[]{}":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*[${2:pre}]{${1:id%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem*[]{}[]":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*[${2:pre}]{${1:id%keyvals}}[${3:property}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem*[][]{}":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*[${2:pre}][${3:post}]{${1:id%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chem*[][]{}[]":{
+		"prefix":"*chem",
+		"body":[
+			"\\chem*[${2:pre}][${3:post}]{${1:id%keyvals}}[${4:property}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"GetSubstanceProperty{}{}":{
+		"prefix":"GetSubstanceProperty",
+		"body":[
+			"\\GetSubstanceProperty{${1:id%keyvals}}{${2:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RetrieveSubstanceProperty{}{}":{
+		"prefix":"RetrieveSubstanceProperty",
+		"body":[
+			"\\RetrieveSubstanceProperty{${1:id%keyvals}}{${2:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForAllSubstancesDo{}":{
+		"prefix":"ForAllSubstancesDo",
+		"body":[
+			"\\ForAllSubstancesDo{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AllSubstancesSequence":{
+		"prefix":"AllSubstancesSequence",
+		"body":[
+			"\\AllSubstancesSequence"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AllSubstancesClist":{
+		"prefix":"AllSubstancesClist",
+		"body":[
+			"\\AllSubstancesClist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstancePropertyTF{}{}{}{}":{
+		"prefix":"IfSubstancePropertyTF",
+		"body":[
+			"\\IfSubstancePropertyTF{${1:id}}{${2:field}}{${3:true code}}{${4:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstancePropertyT{}{}{}":{
+		"prefix":"IfSubstancePropertyT",
+		"body":[
+			"\\IfSubstancePropertyT{${1:id}}{${2:field}}{${3:true code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstancePropertyF{}{}{}":{
+		"prefix":"IfSubstancePropertyF",
+		"body":[
+			"\\IfSubstancePropertyF{${1:id}}{${2:field}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceFieldTF{}{}{}":{
+		"prefix":"IfSubstanceFieldTF",
+		"body":[
+			"\\IfSubstanceFieldTF{${1:field}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceFieldT{}{}":{
+		"prefix":"IfSubstanceFieldT",
+		"body":[
+			"\\IfSubstanceFieldT{${1:field}}{${2:true code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceFieldF{}{}":{
+		"prefix":"IfSubstanceFieldF",
+		"body":[
+			"\\IfSubstanceFieldF{${1:field}}{${2:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceExistTF{}{}{}":{
+		"prefix":"IfSubstanceExistTF",
+		"body":[
+			"\\IfSubstanceExistTF{${1:id}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceExistT{}{}{}":{
+		"prefix":"IfSubstanceExistT",
+		"body":[
+			"\\IfSubstanceExistT{${1:id}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSubstanceExistF{}{}{}":{
+		"prefix":"IfSubstanceExistF",
+		"body":[
+			"\\IfSubstanceExistF{${1:id}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SubstanceIndex{}":{
+		"prefix":"SubstanceIndex",
+		"body":[
+			"\\SubstanceIndex{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,6 +365,52 @@
 		"prefix":"SubstanceIndex",
 		"body":[
 			"\\SubstanceIndex[${2:opt}]{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SubstanceIndexNameEntry{}{}":{
+		"prefix":"SubstanceIndexNameEntry",
+		"body":[
+			"\\SubstanceIndexNameEntry{${1:sort}}{${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SubstanceIndexNameAltEntry{}{}{}":{
+		"prefix":"SubstanceIndexNameAltEntry",
+		"body":[
+			"\\SubstanceIndexNameAltEntry{${1:sort}}{${2:name}}{${3:alt}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SubstanceIndexAltEntry{}{}{}":{
+		"prefix":"SubstanceIndexAltEntry",
+		"body":[
+			"\\SubstanceIndexAltEntry{${1:alt sort}}{${2:name}}{${3:alt}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ghspictograms{}":{
+		"prefix":"ghspictograms",
+		"body":[
+			"\\ghspictograms{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ghsstatements{}{}":{
+		"prefix":"ghsstatements",
+		"body":[
+			"\\ghsstatements{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

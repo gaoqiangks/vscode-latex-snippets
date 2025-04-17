@@ -5,23 +5,8 @@
 		"prefix":"thmboxoptions",
 		"body":[
 			"\\thmboxoptions{${1:options%keyvals}}"
-		]
-	},
-
-
-	"examplename":{
-		"prefix":"examplename",
-		"body":[
-			"\\examplename"
-		]
-	},
-
-
-	"proofname":{
-		"prefix":"proofname",
-		"body":[
-			"\\proofname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,8 @@
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,17 +23,48 @@
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:caption}}[${4:within}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"thmbox":{
+	"examplename":{
+		"prefix":"examplename",
+		"body":[
+			"\\examplename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proofname":{
+		"prefix":"proofname",
+		"body":[
+			"\\proofname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thmbox{}":{
 		"prefix":"thmbox",
 		"body":[
 			"\\begin{thmbox}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{thmbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thmbox[]{}":{
+		"prefix":"thmbox",
+		"body":[
+			"\\begin{thmbox}",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
+			"\\end{thmbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -57,47 +74,19 @@
 			"\\begin{leftbar}",
 				"\t$1",
 			"\\end{leftbar}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-				"\t$1",
-			"\\end{proof}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-				"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"thmbox":{
-		"prefix":"thmbox",
-		"body":[
-			"\\begin{thmbox}",
-				"\t$1",
-			"\\end{thmbox}"
-		]
-	},
-
-
-	"leftbar":{
+	"leftbar[]":{
 		"prefix":"leftbar",
 		"body":[
 			"\\begin{leftbar}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{leftbar}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -107,7 +96,19 @@
 			"\\begin{proof}",
 				"\t$1",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proof[]":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t[${1:postfix}]",
+			"\\end{proof}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,6 +118,18 @@
 			"\\begin{example}",
 				"\t$1",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"example[]":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t[${1:label text}]",
+			"\\end{example}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

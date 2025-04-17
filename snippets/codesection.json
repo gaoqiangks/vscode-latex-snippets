@@ -5,31 +5,8 @@
 		"prefix":"DefineCodeSection",
 		"body":[
 			"\\DefineCodeSection{${1:name}}"
-		]
-	},
-
-
-	"SetCodeSection{}{}":{
-		"prefix":"SetCodeSection",
-		"body":[
-			"\\SetCodeSection{${1:name}}{${2:true|false%keyvals}}"
-		]
-	},
-
-
-	"BeginCodeSection{}":{
-		"prefix":"BeginCodeSection",
-		"body":[
-			"\\BeginCodeSection{${1:name}}"
-		]
-	},
-
-
-	"EndCodeSection{}":{
-		"prefix":"EndCodeSection",
-		"body":[
-			"\\EndCodeSection{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +14,34 @@
 		"prefix":"DefineCodeSection",
 		"body":[
 			"\\DefineCodeSection[${2:true|false%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetCodeSection{}{}":{
+		"prefix":"SetCodeSection",
+		"body":[
+			"\\SetCodeSection{${1:name}}{${2:true|false%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeginCodeSection{}":{
+		"prefix":"BeginCodeSection",
+		"body":[
+			"\\BeginCodeSection{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EndCodeSection{}":{
+		"prefix":"EndCodeSection",
+		"body":[
+			"\\EndCodeSection{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

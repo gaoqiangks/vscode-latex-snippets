@@ -5,143 +5,8 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo{}":{
-		"prefix":"Todo",
-		"body":[
-			"\\Todo{${1:text%todo}}"
-		]
-	},
-
-
-	"todoformat":{
-		"prefix":"todoformat",
-		"body":[
-			"\\todoformat"
-		]
-	},
-
-
-	"todomark":{
-		"prefix":"todomark",
-		"body":[
-			"\\todomark"
-		]
-	},
-
-
-	"done":{
-		"prefix":"done",
-		"body":[
-			"\\done"
-		]
-	},
-
-
-	"todoopen":{
-		"prefix":"todoopen",
-		"body":[
-			"\\todoopen"
-		]
-	},
-
-
-	"todoclose":{
-		"prefix":"todoclose",
-		"body":[
-			"\\todoclose"
-		]
-	},
-
-
-	"astodos{}":{
-		"prefix":"astodos",
-		"body":[
-			"\\astodos{${1:mark text%text}}"
-		]
-	},
-
-
-	"todoenvformat":{
-		"prefix":"todoenvformat",
-		"body":[
-			"\\todoenvformat"
-		]
-	},
-
-
-	"todos":{
-		"prefix":"todos",
-		"body":[
-			"\\todos"
-		]
-	},
-
-
-	"todoname":{
-		"prefix":"todoname",
-		"body":[
-			"\\todoname"
-		]
-	},
-
-
-	"thetodo":{
-		"prefix":"thetodo",
-		"body":[
-			"\\thetodo"
-		]
-	},
-
-
-	"doneitem{}{}":{
-		"prefix":"doneitem",
-		"body":[
-			"\\doneitem{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"todoitem{}{}":{
-		"prefix":"todoitem",
-		"body":[
-			"\\todoitem{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"todo*{}":{
-		"prefix":"*todo",
-		"body":[
-			"\\todo*{${1:text%todo}}"
-		]
-	},
-
-
-	"todo*[]{}":{
-		"prefix":"*todo",
-		"body":[
-			"\\todo*[${2:mark text}]{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo*{}":{
-		"prefix":"*Todo",
-		"body":[
-			"\\Todo*{${1:text%todo}}"
-		]
-	},
-
-
-	"Todo*[]{}":{
-		"prefix":"*Todo",
-		"body":[
-			"\\Todo*[${2:mark text%text}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,35 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo[${2:mark text}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"todo*{}":{
+		"prefix":"*todo",
+		"body":[
+			"\\todo*{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"todo*[]{}":{
+		"prefix":"*todo",
+		"body":[
+			"\\todo*[${2:mark text}]{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Todo{}":{
+		"prefix":"Todo",
+		"body":[
+			"\\Todo{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +50,53 @@
 		"prefix":"Todo",
 		"body":[
 			"\\Todo[${2:mark text}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Todo*{}":{
+		"prefix":"*Todo",
+		"body":[
+			"\\Todo*{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Todo*[]{}":{
+		"prefix":"*Todo",
+		"body":[
+			"\\Todo*[${2:mark text%text}]{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"todoformat":{
+		"prefix":"todoformat",
+		"body":[
+			"\\todoformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todomark":{
+		"prefix":"todomark",
+		"body":[
+			"\\todomark"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"done":{
+		"prefix":"done",
+		"body":[
+			"\\done"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +104,89 @@
 		"prefix":"done",
 		"body":[
 			"\\done[${1:done text%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"todoopen":{
+		"prefix":"todoopen",
+		"body":[
+			"\\todoopen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todoclose":{
+		"prefix":"todoclose",
+		"body":[
+			"\\todoclose"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"astodos{}":{
+		"prefix":"astodos",
+		"body":[
+			"\\astodos{${1:mark text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todoenvformat":{
+		"prefix":"todoenvformat",
+		"body":[
+			"\\todoenvformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todos":{
+		"prefix":"todos",
+		"body":[
+			"\\todos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todoname":{
+		"prefix":"todoname",
+		"body":[
+			"\\todoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thetodo":{
+		"prefix":"thetodo",
+		"body":[
+			"\\thetodo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"doneitem{}{}":{
+		"prefix":"doneitem",
+		"body":[
+			"\\doneitem{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todoitem{}{}":{
+		"prefix":"todoitem",
+		"body":[
+			"\\todoitem{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -175,6 +196,7 @@
 			"\\begin{todoenv}",
 				"\t$1",
 			"\\end{todoenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

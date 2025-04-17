@@ -5,7 +5,8 @@
 		"prefix":"shadowbox",
 		"body":[
 			"\\shadowbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"doublebox",
 		"body":[
 			"\\doublebox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ovalbox",
 		"body":[
 			"\\ovalbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Ovalbox",
 		"body":[
 			"\\Ovalbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"thinlines",
 		"body":[
 			"\\thinlines"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"thicklines",
 		"body":[
 			"\\thicklines"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"shadowsize",
 		"body":[
 			"\\shadowsize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,351 +68,8 @@
 		"prefix":"cornersize",
 		"body":[
 			"\\cornersize{${1:number}}"
-		]
-	},
-
-
-	"fancyoval()":{
-		"prefix":"fancyoval",
-		"body":[
-			"\\fancyoval(${1:width},${2:height})"
-		]
-	},
-
-
-	"TheSbox":{
-		"prefix":"TheSbox",
-		"body":[
-			"\\TheSbox"
-		]
-	},
-
-
-	"GenericCaption{}":{
-		"prefix":"GenericCaption",
-		"body":[
-			"\\GenericCaption{${1:text}}"
-		]
-	},
-
-
-	"item()":{
-		"prefix":"item",
-		"body":[
-			"\\item(${1:vspace%l})"
-		]
-	},
-
-
-	"boxput(){}{}":{
-		"prefix":"boxput",
-		"body":[
-			"\\boxput(${3:x},${4:y}){${1:contents1}}{${2:contents2}}"
-		]
-	},
-
-
-	"fancyput(){}":{
-		"prefix":"fancyput",
-		"body":[
-			"\\fancyput(${2:x},${3:y}){${1:contents}}"
-		]
-	},
-
-
-	"fancypage{}{}":{
-		"prefix":"fancypage",
-		"body":[
-			"\\fancypage{${1:cmds1}}{${2:cmds2}}"
-		]
-	},
-
-
-	"thisfancypage{}{}":{
-		"prefix":"thisfancypage",
-		"body":[
-			"\\thisfancypage{${1:cmds1}}{${2:cmds2}}"
-		]
-	},
-
-
-	"LandScape{}":{
-		"prefix":"LandScape",
-		"body":[
-			"\\LandScape{${1:cmd}}"
-		]
-	},
-
-
-	"Landscape{}{}{}":{
-		"prefix":"Landscape",
-		"body":[
-			"\\Landscape{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}"
-		]
-	},
-
-
-	"UsePageParameters":{
-		"prefix":"UsePageParameters",
-		"body":[
-			"\\UsePageParameters"
-		]
-	},
-
-
-	"VerbBox{}{}":{
-		"prefix":"VerbBox",
-		"body":[
-			"\\VerbBox{${1:cmd}}{${2:contents}}"
-		]
-	},
-
-
-	"VerbatimFootnotes":{
-		"prefix":"VerbatimFootnotes",
-		"body":[
-			"\\VerbatimFootnotes"
-		]
-	},
-
-
-	"AltGetVerbatim":{
-		"prefix":"AltGetVerbatim",
-		"body":[
-			"\\AltGetVerbatim"
-		]
-	},
-
-
-	"EndVerbatimTokens":{
-		"prefix":"EndVerbatimTokens",
-		"body":[
-			"\\EndVerbatimTokens"
-		]
-	},
-
-
-	"VerbatimEnvironment":{
-		"prefix":"VerbatimEnvironment",
-		"body":[
-			"\\VerbatimEnvironment"
-		]
-	},
-
-
-	"VerbatimInput{}":{
-		"prefix":"VerbatimInput",
-		"body":[
-			"\\VerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput{}":{
-		"prefix":"LVerbatimInput",
-		"body":[
-			"\\LVerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"BVerbatimInput{}":{
-		"prefix":"BVerbatimInput",
-		"body":[
-			"\\BVerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"UseVerbatim{}":{
-		"prefix":"UseVerbatim",
-		"body":[
-			"\\UseVerbatim{${1:cmd}}"
-		]
-	},
-
-
-	"LUseVerbatim{}":{
-		"prefix":"LUseVerbatim",
-		"body":[
-			"\\LUseVerbatim{${1:cmd}}"
-		]
-	},
-
-
-	"BUseVerbatim{}":{
-		"prefix":"BUseVerbatim",
-		"body":[
-			"\\BUseVerbatim{${1:cmd}}"
-		]
-	},
-
-
-	"Verb||":{
-		"prefix":"Verb",
-		"body":[
-			"\\Verb|${1:code}|"
-		]
-	},
-
-
-	"UseVerb{}":{
-		"prefix":"UseVerb",
-		"body":[
-			"\\UseVerb{${1:cmd}}"
-		]
-	},
-
-
-	"SaveVerb{}||":{
-		"prefix":"SaveVerb",
-		"body":[
-			"\\SaveVerb{${1:cmd}}|${2:code}|"
-		]
-	},
-
-
-	"VerbatimSpace":{
-		"prefix":"VerbatimSpace",
-		"body":[
-			"\\VerbatimSpace"
-		]
-	},
-
-
-	"VerbatimTab":{
-		"prefix":"VerbatimTab",
-		"body":[
-			"\\VerbatimTab"
-		]
-	},
-
-
-	"VerbatimFont":{
-		"prefix":"VerbatimFont",
-		"body":[
-			"\\VerbatimFont"
-		]
-	},
-
-
-	"VerbatimFuzz":{
-		"prefix":"VerbatimFuzz",
-		"body":[
-			"\\VerbatimFuzz"
-		]
-	},
-
-
-	"EveryVerbatimLine":{
-		"prefix":"EveryVerbatimLine",
-		"body":[
-			"\\EveryVerbatimLine"
-		]
-	},
-
-
-	"EveryVerbatim":{
-		"prefix":"EveryVerbatim",
-		"body":[
-			"\\EveryVerbatim"
-		]
-	},
-
-
-	"ThisVerb":{
-		"prefix":"ThisVerb",
-		"body":[
-			"\\ThisVerb"
-		]
-	},
-
-
-	"EveryVerbatimCodes":{
-		"prefix":"EveryVerbatimCodes",
-		"body":[
-			"\\EveryVerbatimCodes"
-		]
-	},
-
-
-	"ThisVerbCodes":{
-		"prefix":"ThisVerbCodes",
-		"body":[
-			"\\ThisVerbCodes"
-		]
-	},
-
-
-	"VerbSpace":{
-		"prefix":"VerbSpace",
-		"body":[
-			"\\VerbSpace"
-		]
-	},
-
-
-	"VerbTab":{
-		"prefix":"VerbTab",
-		"body":[
-			"\\VerbTab"
-		]
-	},
-
-
-	"VerbFont":{
-		"prefix":"VerbFont",
-		"body":[
-			"\\VerbFont"
-		]
-	},
-
-
-	"EveryVerb":{
-		"prefix":"EveryVerb",
-		"body":[
-			"\\EveryVerb"
-		]
-	},
-
-
-	"ThisVerb":{
-		"prefix":"ThisVerb",
-		"body":[
-			"\\ThisVerb"
-		]
-	},
-
-
-	"EveryVerbCodes":{
-		"prefix":"EveryVerbCodes",
-		"body":[
-			"\\EveryVerbCodes"
-		]
-	},
-
-
-	"ThisVerbCodes":{
-		"prefix":"ThisVerbCodes",
-		"body":[
-			"\\ThisVerbCodes"
-		]
-	},
-
-
-	"EveryVerbOutCodes":{
-		"prefix":"EveryVerbOutCodes",
-		"body":[
-			"\\EveryVerbOutCodes"
-		]
-	},
-
-
-	"EveryVerbOutLine":{
-		"prefix":"EveryVerbOutLine",
-		"body":[
-			"\\EveryVerbOutLine"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,47 +77,17 @@
 		"prefix":"*cornersize",
 		"body":[
 			"\\cornersize*{${1:dimen%l}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"boxput*(){}{}":{
-		"prefix":"*boxput",
+	"fancyoval()":{
+		"prefix":"fancyoval",
 		"body":[
-			"\\boxput*(${3:x},${4:y}){${1:contents1}}{${2:contents2}}"
-		]
-	},
-
-
-	"fancyput*(){}":{
-		"prefix":"*fancyput",
-		"body":[
-			"\\fancyput*(${2:x},${3:y}){${1:contents}}"
-		]
-	},
-
-
-	"thisfancyput*(){}":{
-		"prefix":"*thisfancyput",
-		"body":[
-			"\\thisfancyput*(${2:x},${3:y}){${1:contents}}"
-		]
-	},
-
-
-	"thisfancyput*(){}":{
-		"prefix":"*thisfancyput",
-		"body":[
-			"\\thisfancyput*(${2:x},${3:y}){${1:contents}}"
-		]
-	},
-
-
-	"Landscape*{}{}{}":{
-		"prefix":"*Landscape",
-		"body":[
-			"\\Landscape*{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}"
-		]
+			"\\fancyoval(${1:width},${2:height})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +95,35 @@
 		"prefix":"fancyoval",
 		"body":[
 			"\\fancyoval(${2:width},${3:height})[${1:portion%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TheSbox":{
+		"prefix":"TheSbox",
+		"body":[
+			"\\TheSbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GenericCaption{}":{
+		"prefix":"GenericCaption",
+		"body":[
+			"\\GenericCaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"item()":{
+		"prefix":"item",
+		"body":[
+			"\\item(${1:vspace%l})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +131,188 @@
 		"prefix":"item",
 		"body":[
 			"\\item(${2:vspace%l})[${1:label%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"boxput(){}{}":{
+		"prefix":"boxput",
+		"body":[
+			"\\boxput(${3:x},${4:y}){${1:contents1}}{${2:contents2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxput*(){}{}":{
+		"prefix":"*boxput",
+		"body":[
+			"\\boxput*(${3:x},${4:y}){${1:contents1}}{${2:contents2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancyput(){}":{
+		"prefix":"fancyput",
+		"body":[
+			"\\fancyput(${2:x},${3:y}){${1:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancyput*(){}":{
+		"prefix":"*fancyput",
+		"body":[
+			"\\fancyput*(${2:x},${3:y}){${1:contents}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"thisfancyput*(){}":{
+		"prefix":"*thisfancyput",
+		"body":[
+			"\\thisfancyput*(${2:x},${3:y}){${1:contents}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"thisfancyput*(){}":{
+		"prefix":"*thisfancyput",
+		"body":[
+			"\\thisfancyput*(${2:x},${3:y}){${1:contents}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancypage{}{}":{
+		"prefix":"fancypage",
+		"body":[
+			"\\fancypage{${1:cmds1}}{${2:cmds2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thisfancypage{}{}":{
+		"prefix":"thisfancypage",
+		"body":[
+			"\\thisfancypage{${1:cmds1}}{${2:cmds2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LandScape{}":{
+		"prefix":"LandScape",
+		"body":[
+			"\\LandScape{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Landscape{}{}{}":{
+		"prefix":"Landscape",
+		"body":[
+			"\\Landscape{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Landscape*{}{}{}":{
+		"prefix":"*Landscape",
+		"body":[
+			"\\Landscape*{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"UsePageParameters":{
+		"prefix":"UsePageParameters",
+		"body":[
+			"\\UsePageParameters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbBox{}{}":{
+		"prefix":"VerbBox",
+		"body":[
+			"\\VerbBox{${1:cmd}}{${2:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimFootnotes":{
+		"prefix":"VerbatimFootnotes",
+		"body":[
+			"\\VerbatimFootnotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AltGetVerbatim":{
+		"prefix":"AltGetVerbatim",
+		"body":[
+			"\\AltGetVerbatim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EndVerbatimTokens":{
+		"prefix":"EndVerbatimTokens",
+		"body":[
+			"\\EndVerbatimTokens"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimEnvironment":{
+		"prefix":"VerbatimEnvironment",
+		"body":[
+			"\\VerbatimEnvironment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimInput{}":{
+		"prefix":"VerbatimInput",
+		"body":[
+			"\\VerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LVerbatimInput{}":{
+		"prefix":"LVerbatimInput",
+		"body":[
+			"\\LVerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BVerbatimInput{}":{
+		"prefix":"BVerbatimInput",
+		"body":[
+			"\\BVerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +320,35 @@
 		"prefix":"BVerbatimInput",
 		"body":[
 			"\\BVerbatimInput[${2:alignment%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"UseVerbatim{}":{
+		"prefix":"UseVerbatim",
+		"body":[
+			"\\UseVerbatim{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LUseVerbatim{}":{
+		"prefix":"LUseVerbatim",
+		"body":[
+			"\\LUseVerbatim{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BUseVerbatim{}":{
+		"prefix":"BUseVerbatim",
+		"body":[
+			"\\BUseVerbatim{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +356,35 @@
 		"prefix":"BUseVerbatim",
 		"body":[
 			"\\BUseVerbatim[${2:alignment%keyvals}]{${1:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Verb||":{
+		"prefix":"Verb",
+		"body":[
+			"\\Verb|${1:code}|"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UseVerb{}":{
+		"prefix":"UseVerb",
+		"body":[
+			"\\UseVerb{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SaveVerb{}||":{
+		"prefix":"SaveVerb",
+		"body":[
+			"\\SaveVerb{${1:cmd}}|${2:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +392,170 @@
 		"prefix":"SaveVerb",
 		"body":[
 			"\\SaveVerb[${2:default}]{${1:cmd}}|${3:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VerbatimSpace":{
+		"prefix":"VerbatimSpace",
+		"body":[
+			"\\VerbatimSpace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimTab":{
+		"prefix":"VerbatimTab",
+		"body":[
+			"\\VerbatimTab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimFont":{
+		"prefix":"VerbatimFont",
+		"body":[
+			"\\VerbatimFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimFuzz":{
+		"prefix":"VerbatimFuzz",
+		"body":[
+			"\\VerbatimFuzz"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbatimLine":{
+		"prefix":"EveryVerbatimLine",
+		"body":[
+			"\\EveryVerbatimLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbatim":{
+		"prefix":"EveryVerbatim",
+		"body":[
+			"\\EveryVerbatim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ThisVerb":{
+		"prefix":"ThisVerb",
+		"body":[
+			"\\ThisVerb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbatimCodes":{
+		"prefix":"EveryVerbatimCodes",
+		"body":[
+			"\\EveryVerbatimCodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ThisVerbCodes":{
+		"prefix":"ThisVerbCodes",
+		"body":[
+			"\\ThisVerbCodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbSpace":{
+		"prefix":"VerbSpace",
+		"body":[
+			"\\VerbSpace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbTab":{
+		"prefix":"VerbTab",
+		"body":[
+			"\\VerbTab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbFont":{
+		"prefix":"VerbFont",
+		"body":[
+			"\\VerbFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerb":{
+		"prefix":"EveryVerb",
+		"body":[
+			"\\EveryVerb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ThisVerb":{
+		"prefix":"ThisVerb",
+		"body":[
+			"\\ThisVerb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbCodes":{
+		"prefix":"EveryVerbCodes",
+		"body":[
+			"\\EveryVerbCodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ThisVerbCodes":{
+		"prefix":"ThisVerbCodes",
+		"body":[
+			"\\ThisVerbCodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbOutCodes":{
+		"prefix":"EveryVerbOutCodes",
+		"body":[
+			"\\EveryVerbOutCodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EveryVerbOutLine":{
+		"prefix":"EveryVerbOutLine",
+		"body":[
+			"\\EveryVerbOutLine"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -503,7 +565,8 @@
 			"\\begin{Sbox}",
 				"\t$1",
 			"\\end{Sbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -513,137 +576,8 @@
 			"\\begin{Beqnarray}",
 				"\t$1",
 			"\\end{Beqnarray}"
-		]
-	},
-
-
-	"landfloat":{
-		"prefix":"landfloat",
-		"body":[
-			"\\begin{landfloat}",
-				"\t$1",
-			"\\end{landfloat}"
-		]
-	},
-
-
-	"Bcenter":{
-		"prefix":"Bcenter",
-		"body":[
-			"\\begin{Bcenter}",
-				"\t$1",
-			"\\end{Bcenter}"
-		]
-	},
-
-
-	"Bflushleft":{
-		"prefix":"Bflushleft",
-		"body":[
-			"\\begin{Bflushleft}",
-				"\t$1",
-			"\\end{Bflushleft}"
-		]
-	},
-
-
-	"Bflushright":{
-		"prefix":"Bflushright",
-		"body":[
-			"\\begin{Bflushright}",
-				"\t$1",
-			"\\end{Bflushright}"
-		]
-	},
-
-
-	"Blist":{
-		"prefix":"Blist",
-		"body":[
-			"\\begin{Blist}",
-				"\t$1",
-			"\\end{Blist}"
-		]
-	},
-
-
-	"LandScape":{
-		"prefix":"LandScape",
-		"body":[
-			"\\begin{LandScape}",
-				"\t$1",
-			"\\end{LandScape}"
-		]
-	},
-
-
-	"Landscape":{
-		"prefix":"Landscape",
-		"body":[
-			"\\begin{Landscape}",
-				"\t$1",
-			"\\end{Landscape}"
-		]
-	},
-
-
-	"Landscape*":{
-		"prefix":"Landscape",
-		"body":[
-			"\\begin{Landscape*}",
-				"\t$1",
-			"\\end{Landscape*}"
-		]
-	},
-
-
-	"Verbatim":{
-		"prefix":"Verbatim",
-		"body":[
-			"\\begin{Verbatim}",
-				"\t$1",
-			"\\end{Verbatim}"
-		]
-	},
-
-
-	"LVerbatim":{
-		"prefix":"LVerbatim",
-		"body":[
-			"\\begin{LVerbatim}",
-				"\t$1",
-			"\\end{LVerbatim}"
-		]
-	},
-
-
-	"BVerbatim":{
-		"prefix":"BVerbatim",
-		"body":[
-			"\\begin{BVerbatim}",
-				"\t$1",
-			"\\end{BVerbatim}"
-		]
-	},
-
-
-	"VerbatimOut":{
-		"prefix":"VerbatimOut",
-		"body":[
-			"\\begin{VerbatimOut}",
-				"\t$1",
-			"\\end{VerbatimOut}"
-		]
-	},
-
-
-	"SaveVerbatim":{
-		"prefix":"SaveVerbatim",
-		"body":[
-			"\\begin{SaveVerbatim}",
-				"\t$1",
-			"\\end{SaveVerbatim}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +587,19 @@
 			"\\begin{Beqnarray*}",
 				"\t$1",
 			"\\end{Beqnarray*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"landfloat{}{}":{
+		"prefix":"landfloat",
+		"body":[
+			"\\begin{landfloat}",
+				"\t{${1:float}}{${2:rotation_command}}",
+			"\\end{landfloat}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -663,7 +609,19 @@
 			"\\begin{Bcenter}",
 				"\t$1",
 			"\\end{Bcenter}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Bcenter[]":{
+		"prefix":"Bcenter",
+		"body":[
+			"\\begin{Bcenter}",
+				"\t[${1:alignment%keyvals}]",
+			"\\end{Bcenter}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -673,7 +631,19 @@
 			"\\begin{Bflushleft}",
 				"\t$1",
 			"\\end{Bflushleft}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Bflushleft[]":{
+		"prefix":"Bflushleft",
+		"body":[
+			"\\begin{Bflushleft}",
+				"\t[${1:alignment%keyvals}]",
+			"\\end{Bflushleft}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -683,17 +653,96 @@
 			"\\begin{Bflushright}",
 				"\t$1",
 			"\\end{Bflushright}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Blist":{
+	"Bflushright[]":{
+		"prefix":"Bflushright",
+		"body":[
+			"\\begin{Bflushright}",
+				"\t[${1:alignment%keyvals}]",
+			"\\end{Bflushright}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Blist{}{}":{
 		"prefix":"Blist",
 		"body":[
 			"\\begin{Blist}",
-				"\t$1",
+				"\t{${1:item_type}}{${2:code}}",
 			"\\end{Blist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Blist{}{}[]":{
+		"prefix":"Blist",
+		"body":[
+			"\\begin{Blist}",
+				"\t{${1:item_type}}{${2:code}}[${3:alignment%keyvals}]",
+			"\\end{Blist}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LandScape{}":{
+		"prefix":"LandScape",
+		"body":[
+			"\\begin{LandScape}",
+				"\t{${1:cmd}}",
+			"\\end{LandScape}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Landscape{}{}{}":{
+		"prefix":"Landscape",
+		"body":[
+			"\\begin{Landscape}",
+				"\t{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}",
+			"\\end{Landscape}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Landscape*{}{}{}":{
+		"prefix":"*Landscape",
+		"body":[
+			"\\begin{Landscape*}",
+				"\t{${1:paperwidth%l}}{${2:paperheight%l}}{${3:cmd}}",
+			"\\end{Landscape*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Verbatim":{
+		"prefix":"Verbatim",
+		"body":[
+			"\\begin{Verbatim}",
+				"\t$1",
+			"\\end{Verbatim}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LVerbatim":{
+		"prefix":"LVerbatim",
+		"body":[
+			"\\begin{LVerbatim}",
+				"\t$1",
+			"\\end{LVerbatim}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -703,6 +752,40 @@
 			"\\begin{BVerbatim}",
 				"\t$1",
 			"\\end{BVerbatim}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BVerbatim[]":{
+		"prefix":"BVerbatim",
+		"body":[
+			"\\begin{BVerbatim}",
+				"\t[${1:alignment%keyvals}]",
+			"\\end{BVerbatim}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VerbatimOut{}":{
+		"prefix":"VerbatimOut",
+		"body":[
+			"\\begin{VerbatimOut}",
+				"\t{${1:file}}",
+			"\\end{VerbatimOut}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SaveVerbatim{}":{
+		"prefix":"SaveVerbatim",
+		"body":[
+			"\\begin{SaveVerbatim}",
+				"\t{${1:cmd}}",
+			"\\end{SaveVerbatim}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

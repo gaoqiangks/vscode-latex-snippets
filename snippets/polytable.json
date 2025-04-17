@@ -5,7 +5,8 @@
 		"prefix":"nodefaultcolumn",
 		"body":[
 			"\\nodefaultcolumn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"defaultcolumn",
 		"body":[
 			"\\defaultcolumn{${1:colspec}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,87 +23,8 @@
 		"prefix":"column",
 		"body":[
 			"\\column{${1:column id}}{${2:spec}}"
-		]
-	},
-
-
-	">":{
-		"prefix":">",
-		"body":[
-			"\\>"
-		]
-	},
-
-
-	"<":{
-		"prefix":"<",
-		"body":[
-			"\\<"
-		]
-	},
-
-
-	"fromto{}{}{}":{
-		"prefix":"fromto",
-		"body":[
-			"\\fromto{${1:from id}}{${2:to id}}{${3:text}}"
-		]
-	},
-
-
-	"savecolumns":{
-		"prefix":"savecolumns",
-		"body":[
-			"\\savecolumns"
-		]
-	},
-
-
-	"restorecolumns":{
-		"prefix":"restorecolumns",
-		"body":[
-			"\\restorecolumns"
-		]
-	},
-
-
-	"beginpolytable":{
-		"prefix":"beginpolytable",
-		"body":[
-			"\\beginpolytable"
-		]
-	},
-
-
-	"disktables":{
-		"prefix":"disktables",
-		"body":[
-			"\\disktables"
-		]
-	},
-
-
-	"maxcolumn":{
-		"prefix":"maxcolumn",
-		"body":[
-			"\\maxcolumn"
-		]
-	},
-
-
-	"memorytables":{
-		"prefix":"memorytables",
-		"body":[
-			"\\memorytables"
-		]
-	},
-
-
-	"nextline":{
-		"prefix":"nextline",
-		"body":[
-			"\\nextline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +32,17 @@
 		"prefix":"column",
 		"body":[
 			"\\column[${3:dimen%l}]{${1:column id}}{${2:spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	">":{
+		"prefix":">",
+		"body":[
+			"\\>"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +50,8 @@
 		"prefix":">",
 		"body":[
 			"\\>[${1:from id}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +59,17 @@
 		"prefix":">",
 		"body":[
 			"\\>[${1:from id}][${2:spec}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"<":{
+		"prefix":"<",
+		"body":[
+			"\\<"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +77,26 @@
 		"prefix":"<",
 		"body":[
 			"\\<[${1:from id}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromto{}{}{}":{
+		"prefix":"fromto",
+		"body":[
+			"\\fromto{${1:from id}}{${2:to id}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savecolumns":{
+		"prefix":"savecolumns",
+		"body":[
+			"\\savecolumns"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +104,17 @@
 		"prefix":"savecolumns",
 		"body":[
 			"\\savecolumns[${1:set id}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"restorecolumns":{
+		"prefix":"restorecolumns",
+		"body":[
+			"\\restorecolumns"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +122,53 @@
 		"prefix":"restorecolumns",
 		"body":[
 			"\\restorecolumns[${1:set id}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"beginpolytable":{
+		"prefix":"beginpolytable",
+		"body":[
+			"\\beginpolytable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"disktables":{
+		"prefix":"disktables",
+		"body":[
+			"\\disktables"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maxcolumn":{
+		"prefix":"maxcolumn",
+		"body":[
+			"\\maxcolumn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"memorytables":{
+		"prefix":"memorytables",
+		"body":[
+			"\\memorytables"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextline":{
+		"prefix":"nextline",
+		"body":[
+			"\\nextline"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"nextline",
 		"body":[
 			"\\nextline[${1:dimen%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -167,7 +187,8 @@
 			"\\begin{pboxed}",
 				"\t$1",
 			"\\end{pboxed}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -177,7 +198,8 @@
 			"\\begin{ptboxed}",
 				"\t$1",
 			"\\end{ptboxed}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -187,7 +209,8 @@
 			"\\begin{pmboxed}",
 				"\t$1",
 			"\\end{pmboxed}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +220,8 @@
 			"\\begin{ptabular}",
 				"\t$1",
 			"\\end{ptabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -207,6 +231,7 @@
 			"\\begin{parray}",
 				"\t$1",
 			"\\end{parray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

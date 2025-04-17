@@ -5,7 +5,8 @@
 		"prefix":"binary",
 		"body":[
 			"\\binary{${1:package}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,87 +14,8 @@
 		"prefix":"cmdline",
 		"body":[
 			"\\cmdline{${1:specs}}"
-		]
-	},
-
-
-	"DeclareLogreqAttribute{}{}{}":{
-		"prefix":"DeclareLogreqAttribute",
-		"body":[
-			"\\DeclareLogreqAttribute{${1:element}}{${2:attribute}}{${3:dtd specs}}"
-		]
-	},
-
-
-	"DeclareLogreqContainer{}{}":{
-		"prefix":"DeclareLogreqContainer",
-		"body":[
-			"\\DeclareLogreqContainer{${1:element}}{${2:dtd specs}}"
-		]
-	},
-
-
-	"DeclareLogreqElement{}{}":{
-		"prefix":"DeclareLogreqElement",
-		"body":[
-			"\\DeclareLogreqElement{${1:element}}{${2:dtd specs}}"
-		]
-	},
-
-
-	"file{}":{
-		"prefix":"file",
-		"body":[
-			"\\file{${1:file}}"
-		]
-	},
-
-
-	"generic{}":{
-		"prefix":"generic",
-		"body":[
-			"\\generic{${1:package}}"
-		]
-	},
-
-
-	"infile{}":{
-		"prefix":"infile",
-		"body":[
-			"\\infile{${1:file}}"
-		]
-	},
-
-
-	"logrequest{}":{
-		"prefix":"logrequest",
-		"body":[
-			"\\logrequest{${1:request}}"
-		]
-	},
-
-
-	"ltxrequest{}{}{}":{
-		"prefix":"ltxrequest",
-		"body":[
-			"\\ltxrequest{${1:package}}{${2:active}}{${3:request}}"
-		]
-	},
-
-
-	"option{}":{
-		"prefix":"option",
-		"body":[
-			"\\option{${1:option}}"
-		]
-	},
-
-
-	"outfile{}":{
-		"prefix":"outfile",
-		"body":[
-			"\\outfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +23,35 @@
 		"prefix":"DeclareLogreqAttribute",
 		"body":[
 			"\\DeclareLogreqAttribute{${1:element}}[${4:default}]{${2:attribute}}{${3:dtd specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareLogreqAttribute{}{}{}":{
+		"prefix":"DeclareLogreqAttribute",
+		"body":[
+			"\\DeclareLogreqAttribute{${1:element}}{${2:attribute}}{${3:dtd specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLogreqContainer{}{}":{
+		"prefix":"DeclareLogreqContainer",
+		"body":[
+			"\\DeclareLogreqContainer{${1:element}}{${2:dtd specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLogreqElement{}{}":{
+		"prefix":"DeclareLogreqElement",
+		"body":[
+			"\\DeclareLogreqElement{${1:element}}{${2:dtd specs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +59,35 @@
 		"prefix":"external",
 		"body":[
 			"\\external[${2:keyvals}]{${1:specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"file{}":{
+		"prefix":"file",
+		"body":[
+			"\\file{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"generic{}":{
+		"prefix":"generic",
+		"body":[
+			"\\generic{${1:package}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"infile{}":{
+		"prefix":"infile",
+		"body":[
+			"\\infile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +95,8 @@
 		"prefix":"internal",
 		"body":[
 			"\\internal[${2:keyvals}]{${1:specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +104,44 @@
 		"prefix":"logrequest",
 		"body":[
 			"\\logrequest[${2:options%keyvals}]{${1:request}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logrequest{}":{
+		"prefix":"logrequest",
+		"body":[
+			"\\logrequest{${1:request}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ltxrequest{}{}{}":{
+		"prefix":"ltxrequest",
+		"body":[
+			"\\ltxrequest{${1:package}}{${2:active}}{${3:request}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"option{}":{
+		"prefix":"option",
+		"body":[
+			"\\option{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outfile{}":{
+		"prefix":"outfile",
+		"body":[
+			"\\outfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"provides",
 		"body":[
 			"\\provides[${2:keyvals}]{${1:file specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"requests",
 		"body":[
 			"\\requests[${2:keyvals}]{${1:specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,6 +167,7 @@
 		"prefix":"requires",
 		"body":[
 			"\\requires[${2:keyvals}]{${1:file specs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

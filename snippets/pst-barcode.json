@@ -5,23 +5,8 @@
 		"prefix":"psbarcode",
 		"body":[
 			"\\psbarcode{${1:text or filename%file}}{${2:PS options}}{${3:barcode type}}"
-		]
-	},
-
-
-	"QR{}":{
-		"prefix":"QR",
-		"body":[
-			"\\QR{${1:URL}}"
-		]
-	},
-
-
-	"QR<label>{}":{
-		"prefix":"QR<label>",
-		"body":[
-			"\\QR<label>{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"psbarcode",
 		"body":[
 			"\\psbarcode[${4:options%keyvals}]{${1:text or filename%file}}{${2:PS options}}{${3:barcode type}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"QR{}":{
+		"prefix":"QR",
+		"body":[
+			"\\QR{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"QR<label>{}":{
+		"prefix":"QR<label>",
+		"body":[
+			"\\QR<label>{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"QR",
 		"body":[
 			"\\QR[${2:scale}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"QR",
 		"body":[
 			"\\QR[${2:scale}]<${3:label}>{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

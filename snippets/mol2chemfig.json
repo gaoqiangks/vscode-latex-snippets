@@ -5,7 +5,8 @@
 		"prefix":"mcfinput",
 		"body":[
 			"\\mcfinput{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,103 +14,8 @@
 		"prefix":"mcfpush",
 		"body":[
 			"\\mcfpush{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
-		]
-	},
-
-
-	"mcfabove{}{}":{
-		"prefix":"mcfabove",
-		"body":[
-			"\\mcfabove{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"mcfaboveright{}{}{}":{
-		"prefix":"mcfaboveright",
-		"body":[
-			"\\mcfaboveright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"mcfatomno{}":{
-		"prefix":"mcfatomno",
-		"body":[
-			"\\mcfatomno{${1:number}}"
-		]
-	},
-
-
-	"mcfbelow{}{}":{
-		"prefix":"mcfbelow",
-		"body":[
-			"\\mcfbelow{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"mcfbelowright{}{}{}":{
-		"prefix":"mcfbelowright",
-		"body":[
-			"\\mcfbelowright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"mcfcringle{}":{
-		"prefix":"mcfcringle",
-		"body":[
-			"\\mcfcringle{${1:arg}}"
-		]
-	},
-
-
-	"mcfelmove{}{}{}{}":{
-		"prefix":"mcfelmove",
-		"body":[
-			"\\mcfelmove{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
-	},
-
-
-	"mcfleft{}{}":{
-		"prefix":"mcfleft",
-		"body":[
-			"\\mcfleft{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"mcfminus":{
-		"prefix":"mcfminus",
-		"body":[
-			"\\mcfminus"
-		]
-	},
-
-
-	"mcfplus":{
-		"prefix":"mcfplus",
-		"body":[
-			"\\mcfplus"
-		]
-	},
-
-
-	"mcfright{}{}":{
-		"prefix":"mcfright",
-		"body":[
-			"\\mcfright{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"mcfvspace":{
-		"prefix":"mcfvspace",
-		"body":[
-			"\\mcfvspace"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +23,8 @@
 		"prefix":"mcfpush",
 		"body":[
 			"\\mcfpush[${5:length}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +32,62 @@
 		"prefix":"mcfpush",
 		"body":[
 			"\\mcfpush[${5:length1}][${6:length2}]{${1:anchor1}}{${2:angle1:dist1}}{${3:anchor2}}{${4:angle2:dist2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mcfabove{}{}":{
+		"prefix":"mcfabove",
+		"body":[
+			"\\mcfabove{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfaboveright{}{}{}":{
+		"prefix":"mcfaboveright",
+		"body":[
+			"\\mcfaboveright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfatomno{}":{
+		"prefix":"mcfatomno",
+		"body":[
+			"\\mcfatomno{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfbelow{}{}":{
+		"prefix":"mcfbelow",
+		"body":[
+			"\\mcfbelow{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfbelowright{}{}{}":{
+		"prefix":"mcfbelowright",
+		"body":[
+			"\\mcfbelowright{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfcringle{}":{
+		"prefix":"mcfcringle",
+		"body":[
+			"\\mcfcringle{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,6 +95,61 @@
 		"prefix":"mcfelmove",
 		"body":[
 			"\\mcfelmove[${5:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mcfelmove{}{}{}{}":{
+		"prefix":"mcfelmove",
+		"body":[
+			"\\mcfelmove{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfleft{}{}":{
+		"prefix":"mcfleft",
+		"body":[
+			"\\mcfleft{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfminus":{
+		"prefix":"mcfminus",
+		"body":[
+			"\\mcfminus"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfplus":{
+		"prefix":"mcfplus",
+		"body":[
+			"\\mcfplus"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfright{}{}":{
+		"prefix":"mcfright",
+		"body":[
+			"\\mcfright{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcfvspace":{
+		"prefix":"mcfvspace",
+		"body":[
+			"\\mcfvspace"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

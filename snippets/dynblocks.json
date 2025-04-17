@@ -5,207 +5,8 @@
 		"prefix":"opaqueblock<overlay specification>",
 		"body":[
 			"\\opaqueblock<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"invblock<overlay specification>":{
-		"prefix":"invblock<overlay specification>",
-		"body":[
-			"\\invblock<overlay specification>"
-		]
-	},
-
-
-	"setalignment{}":{
-		"prefix":"setalignment",
-		"body":[
-			"\\setalignment{${1:alignment%keyvals}}"
-		]
-	},
-
-
-	"setvisopacity{}":{
-		"prefix":"setvisopacity",
-		"body":[
-			"\\setvisopacity{${1:opacity}}"
-		]
-	},
-
-
-	"setinvopacity{}":{
-		"prefix":"setinvopacity",
-		"body":[
-			"\\setinvopacity{${1:opacity}}"
-		]
-	},
-
-
-	"dynalert<overlay specification>{}":{
-		"prefix":"dynalert<overlay specification>",
-		"body":[
-			"\\dynalert<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"setwordscolor{}":{
-		"prefix":"setwordscolor",
-		"body":[
-			"\\setwordscolor{${1:color}}"
-		]
-	},
-
-
-	"setshadowopacity{}":{
-		"prefix":"setshadowopacity",
-		"body":[
-			"\\setshadowopacity{${1:opacity}}"
-		]
-	},
-
-
-	"setblockcolor{}":{
-		"prefix":"setblockcolor",
-		"body":[
-			"\\setblockcolor{${1:color}}"
-		]
-	},
-
-
-	"setbordercolor{}":{
-		"prefix":"setbordercolor",
-		"body":[
-			"\\setbordercolor{${1:color}}"
-		]
-	},
-
-
-	"setinnercolor{}":{
-		"prefix":"setinnercolor",
-		"body":[
-			"\\setinnercolor{${1:color}}"
-		]
-	},
-
-
-	"setoutercolor{}":{
-		"prefix":"setoutercolor",
-		"body":[
-			"\\setoutercolor{${1:color}}"
-		]
-	},
-
-
-	"settopcolor{}":{
-		"prefix":"settopcolor",
-		"body":[
-			"\\settopcolor{${1:color}}"
-		]
-	},
-
-
-	"setbottomcolor{}":{
-		"prefix":"setbottomcolor",
-		"body":[
-			"\\setbottomcolor{${1:color}}"
-		]
-	},
-
-
-	"setleftcolor{}":{
-		"prefix":"setleftcolor",
-		"body":[
-			"\\setleftcolor{${1:color}}"
-		]
-	},
-
-
-	"setrightcolor{}":{
-		"prefix":"setrightcolor",
-		"body":[
-			"\\setrightcolor{${1:color}}"
-		]
-	},
-
-
-	"fancyblock<overlay specification>{}":{
-		"prefix":"fancyblock<overlay specification>",
-		"body":[
-			"\\fancyblock<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"vshadeblock<overlay specification>{}":{
-		"prefix":"vshadeblock<overlay specification>",
-		"body":[
-			"\\vshadeblock<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"oshadeblock<overlay specification>{}":{
-		"prefix":"oshadeblock<overlay specification>",
-		"body":[
-			"\\oshadeblock<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"thecol":{
-		"prefix":"thecol",
-		"body":[
-			"\\thecol"
-		]
-	},
-
-
-	"thebordercol":{
-		"prefix":"thebordercol",
-		"body":[
-			"\\thebordercol"
-		]
-	},
-
-
-	"myalert{}":{
-		"prefix":"myalert",
-		"body":[
-			"\\myalert{${1:text}}"
-		]
-	},
-
-
-	"printthistext{}":{
-		"prefix":"printthistext",
-		"body":[
-			"\\printthistext{${1:id}}"
-		]
-	},
-
-
-	"savetext{}{}":{
-		"prefix":"savetext",
-		"body":[
-			"\\savetext{${1:id}}{${2:text}}"
-		]
-	},
-
-
-	"thethistext":{
-		"prefix":"thethistext",
-		"body":[
-			"\\thethistext"
-		]
-	},
-
-
-	"intdimension":{
-		"prefix":"intdimension",
-		"body":[
-			"\\intdimension"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +14,152 @@
 		"prefix":"opaqueblock<overlay specification>",
 		"body":[
 			"\\opaqueblock<overlay specification>[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"invblock<overlay specification>":{
+		"prefix":"invblock<overlay specification>",
+		"body":[
+			"\\invblock<overlay specification>"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setalignment{}":{
+		"prefix":"setalignment",
+		"body":[
+			"\\setalignment{${1:alignment%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setvisopacity{}":{
+		"prefix":"setvisopacity",
+		"body":[
+			"\\setvisopacity{${1:opacity}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setinvopacity{}":{
+		"prefix":"setinvopacity",
+		"body":[
+			"\\setinvopacity{${1:opacity}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dynalert<overlay specification>{}":{
+		"prefix":"dynalert<overlay specification>",
+		"body":[
+			"\\dynalert<overlay specification>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setwordscolor{}":{
+		"prefix":"setwordscolor",
+		"body":[
+			"\\setwordscolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setshadowopacity{}":{
+		"prefix":"setshadowopacity",
+		"body":[
+			"\\setshadowopacity{${1:opacity}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setblockcolor{}":{
+		"prefix":"setblockcolor",
+		"body":[
+			"\\setblockcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setbordercolor{}":{
+		"prefix":"setbordercolor",
+		"body":[
+			"\\setbordercolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setinnercolor{}":{
+		"prefix":"setinnercolor",
+		"body":[
+			"\\setinnercolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setoutercolor{}":{
+		"prefix":"setoutercolor",
+		"body":[
+			"\\setoutercolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"settopcolor{}":{
+		"prefix":"settopcolor",
+		"body":[
+			"\\settopcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setbottomcolor{}":{
+		"prefix":"setbottomcolor",
+		"body":[
+			"\\setbottomcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setleftcolor{}":{
+		"prefix":"setleftcolor",
+		"body":[
+			"\\setleftcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setrightcolor{}":{
+		"prefix":"setrightcolor",
+		"body":[
+			"\\setrightcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancyblock<overlay specification>{}":{
+		"prefix":"fancyblock<overlay specification>",
+		"body":[
+			"\\fancyblock<overlay specification>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +167,17 @@
 		"prefix":"fancyblock<overlay specification>",
 		"body":[
 			"\\fancyblock<overlay specification>[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vshadeblock<overlay specification>{}":{
+		"prefix":"vshadeblock<overlay specification>",
+		"body":[
+			"\\vshadeblock<overlay specification>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +185,17 @@
 		"prefix":"vshadeblock<overlay specification>",
 		"body":[
 			"\\vshadeblock<overlay specification>[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"oshadeblock<overlay specification>{}":{
+		"prefix":"oshadeblock<overlay specification>",
+		"body":[
+			"\\oshadeblock<overlay specification>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +203,71 @@
 		"prefix":"oshadeblock<overlay specification>",
 		"body":[
 			"\\oshadeblock<overlay specification>[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thecol":{
+		"prefix":"thecol",
+		"body":[
+			"\\thecol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebordercol":{
+		"prefix":"thebordercol",
+		"body":[
+			"\\thebordercol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"myalert{}":{
+		"prefix":"myalert",
+		"body":[
+			"\\myalert{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printthistext{}":{
+		"prefix":"printthistext",
+		"body":[
+			"\\printthistext{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savetext{}{}":{
+		"prefix":"savetext",
+		"body":[
+			"\\savetext{${1:id}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thethistext":{
+		"prefix":"thethistext",
+		"body":[
+			"\\thethistext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"intdimension":{
+		"prefix":"intdimension",
+		"body":[
+			"\\intdimension"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -247,6 +277,7 @@
 			"\\begin{dynblock}",
 				"\t$1",
 			"\\end{dynblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

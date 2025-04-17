@@ -5,7 +5,8 @@
 		"prefix":"sethideanswer",
 		"body":[
 			"\\sethideanswer"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"unsethideanswer",
 		"body":[
 			"\\unsethideanswer"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,39 +23,8 @@
 		"prefix":"hideanswer",
 		"body":[
 			"\\hideanswer{${1:text}}"
-		]
-	},
-
-
-	"smashanswer{}":{
-		"prefix":"smashanswer",
-		"body":[
-			"\\smashanswer{${1:text}}"
-		]
-	},
-
-
-	"hidegraphics{}":{
-		"prefix":"hidegraphics",
-		"body":[
-			"\\hidegraphics{${1:imagefile}}"
-		]
-	},
-
-
-	"smashgraphics{}":{
-		"prefix":"smashgraphics",
-		"body":[
-			"\\smashgraphics{${1:imagefile}}"
-		]
-	},
-
-
-	"switchanswer{}{}":{
-		"prefix":"switchanswer",
-		"body":[
-			"\\switchanswer{${1:sethide-text%text}}{${2:unsethide-text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,17 @@
 		"prefix":"*hideanswer",
 		"body":[
 			"\\hideanswer*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smashanswer{}":{
+		"prefix":"smashanswer",
+		"body":[
+			"\\smashanswer{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,47 +50,17 @@
 		"prefix":"*smashanswer",
 		"body":[
 			"\\smashanswer*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"hidegraphics*{}":{
-		"prefix":"*hidegraphics",
+	"hidegraphics{}":{
+		"prefix":"hidegraphics",
 		"body":[
-			"\\hidegraphics*{${1:imagefile}}"
-		]
-	},
-
-
-	"hidegraphics*[]{}":{
-		"prefix":"*hidegraphics",
-		"body":[
-			"\\hidegraphics*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"smashgraphics*{}":{
-		"prefix":"*smashgraphics",
-		"body":[
-			"\\smashgraphics*{${1:imagefile}}"
-		]
-	},
-
-
-	"smashgraphics*[]{}":{
-		"prefix":"*smashgraphics",
-		"body":[
-			"\\smashgraphics*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"switchanswer*{}{}":{
-		"prefix":"*switchanswer",
-		"body":[
-			"\\switchanswer*{${1:unsethide-text%text}}{${2:sethide-text%text}}"
-		]
+			"\\hidegraphics{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +68,35 @@
 		"prefix":"hidegraphics",
 		"body":[
 			"\\hidegraphics[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hidegraphics*{}":{
+		"prefix":"*hidegraphics",
+		"body":[
+			"\\hidegraphics*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hidegraphics*[]{}":{
+		"prefix":"*hidegraphics",
+		"body":[
+			"\\hidegraphics*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smashgraphics{}":{
+		"prefix":"smashgraphics",
+		"body":[
+			"\\smashgraphics{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +104,44 @@
 		"prefix":"smashgraphics",
 		"body":[
 			"\\smashgraphics[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"smashgraphics*{}":{
+		"prefix":"*smashgraphics",
+		"body":[
+			"\\smashgraphics*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smashgraphics*[]{}":{
+		"prefix":"*smashgraphics",
+		"body":[
+			"\\smashgraphics*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"switchanswer{}{}":{
+		"prefix":"switchanswer",
+		"body":[
+			"\\switchanswer{${1:sethide-text%text}}{${2:unsethide-text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"switchanswer*{}{}":{
+		"prefix":"*switchanswer",
+		"body":[
+			"\\switchanswer*{${1:unsethide-text%text}}{${2:sethide-text%text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -135,17 +151,8 @@
 			"\\begin{hideanswerdiv}",
 				"\t$1",
 			"\\end{hideanswerdiv}"
-		]
-	},
-
-
-	"smashanswerdiv":{
-		"prefix":"smashanswerdiv",
-		"body":[
-			"\\begin{smashanswerdiv}",
-				"\t$1",
-			"\\end{smashanswerdiv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -155,7 +162,19 @@
 			"\\begin{hideanswerdiv*}",
 				"\t$1",
 			"\\end{hideanswerdiv*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smashanswerdiv":{
+		"prefix":"smashanswerdiv",
+		"body":[
+			"\\begin{smashanswerdiv}",
+				"\t$1",
+			"\\end{smashanswerdiv}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +184,7 @@
 			"\\begin{smashanswerdiv*}",
 				"\t$1",
 			"\\end{smashanswerdiv*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

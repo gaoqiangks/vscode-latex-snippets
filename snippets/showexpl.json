@@ -5,71 +5,8 @@
 		"prefix":"LTXinputExample",
 		"body":[
 			"\\LTXinputExample{${1:file}}"
-		]
-	},
-
-
-	"ResultBox":{
-		"prefix":"ResultBox",
-		"body":[
-			"\\ResultBox"
-		]
-	},
-
-
-	"ResultBoxSep":{
-		"prefix":"ResultBoxSep",
-		"body":[
-			"\\ResultBoxSep"
-		]
-	},
-
-
-	"ResultBoxRule":{
-		"prefix":"ResultBoxRule",
-		"body":[
-			"\\ResultBoxRule"
-		]
-	},
-
-
-	"theltxexample":{
-		"prefix":"theltxexample",
-		"body":[
-			"\\theltxexample"
-		]
-	},
-
-
-	"MakePercentIgnore":{
-		"prefix":"MakePercentIgnore",
-		"body":[
-			"\\MakePercentIgnore"
-		]
-	},
-
-
-	"MakePercentComment":{
-		"prefix":"MakePercentComment",
-		"body":[
-			"\\MakePercentComment"
-		]
-	},
-
-
-	"lstlgrindeffile":{
-		"prefix":"lstlgrindeffile",
-		"body":[
-			"\\lstlgrindeffile"
-		]
-	},
-
-
-	"lstdefineformat{}{}":{
-		"prefix":"lstdefineformat",
-		"body":[
-			"\\lstdefineformat{${1:name}}{${2:format}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,80 @@
 		"prefix":"LTXinputExample",
 		"body":[
 			"\\LTXinputExample[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ResultBox":{
+		"prefix":"ResultBox",
+		"body":[
+			"\\ResultBox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResultBoxSep":{
+		"prefix":"ResultBoxSep",
+		"body":[
+			"\\ResultBoxSep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResultBoxRule":{
+		"prefix":"ResultBoxRule",
+		"body":[
+			"\\ResultBoxRule"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theltxexample":{
+		"prefix":"theltxexample",
+		"body":[
+			"\\theltxexample"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePercentIgnore":{
+		"prefix":"MakePercentIgnore",
+		"body":[
+			"\\MakePercentIgnore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePercentComment":{
+		"prefix":"MakePercentComment",
+		"body":[
+			"\\MakePercentComment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lstlgrindeffile":{
+		"prefix":"lstlgrindeffile",
+		"body":[
+			"\\lstlgrindeffile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lstdefineformat{}{}":{
+		"prefix":"lstdefineformat",
+		"body":[
+			"\\lstdefineformat{${1:name}}{${2:format}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -87,16 +97,18 @@
 			"\\begin{LTXexample}",
 				"\t$1",
 			"\\end{LTXexample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"LTXexample":{
+	"LTXexample[]":{
 		"prefix":"LTXexample",
 		"body":[
 			"\\begin{LTXexample}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{LTXexample}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

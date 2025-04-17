@@ -5,263 +5,8 @@
 		"prefix":"postnote",
 		"body":[
 			"\\postnote{${1:text}}"
-		]
-	},
-
-
-	"postnotesection{}":{
-		"prefix":"postnotesection",
-		"body":[
-			"\\postnotesection{${1:text}}"
-		]
-	},
-
-
-	"printpostnotes":{
-		"prefix":"printpostnotes",
-		"body":[
-			"\\printpostnotes"
-		]
-	},
-
-
-	"postnoteref{}":{
-		"prefix":"postnoteref",
-		"body":[
-			"\\postnoteref{${1:label}}"
-		]
-	},
-
-
-	"postnotezref{}":{
-		"prefix":"postnotezref",
-		"body":[
-			"\\postnotezref{${1:label}}"
-		]
-	},
-
-
-	"postnotesetup{}":{
-		"prefix":"postnotesetup",
-		"body":[
-			"\\postnotesetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"pnhdchapfirst":{
-		"prefix":"pnhdchapfirst",
-		"body":[
-			"\\pnhdchapfirst"
-		]
-	},
-
-
-	"pnhdchaplast":{
-		"prefix":"pnhdchaplast",
-		"body":[
-			"\\pnhdchaplast"
-		]
-	},
-
-
-	"pnhdnamefirst":{
-		"prefix":"pnhdnamefirst",
-		"body":[
-			"\\pnhdnamefirst"
-		]
-	},
-
-
-	"pnhdnamefirst":{
-		"prefix":"pnhdnamefirst",
-		"body":[
-			"\\pnhdnamefirst"
-		]
-	},
-
-
-	"pnhdnamelast":{
-		"prefix":"pnhdnamelast",
-		"body":[
-			"\\pnhdnamelast"
-		]
-	},
-
-
-	"pnhdnamelast":{
-		"prefix":"pnhdnamelast",
-		"body":[
-			"\\pnhdnamelast"
-		]
-	},
-
-
-	"pnhdnotes":{
-		"prefix":"pnhdnotes",
-		"body":[
-			"\\pnhdnotes"
-		]
-	},
-
-
-	"pnhdpagefirst":{
-		"prefix":"pnhdpagefirst",
-		"body":[
-			"\\pnhdpagefirst"
-		]
-	},
-
-
-	"pnhdpagelast":{
-		"prefix":"pnhdpagelast",
-		"body":[
-			"\\pnhdpagelast"
-		]
-	},
-
-
-	"pnhdsectfirst":{
-		"prefix":"pnhdsectfirst",
-		"body":[
-			"\\pnhdsectfirst"
-		]
-	},
-
-
-	"pnhdsectlast":{
-		"prefix":"pnhdsectlast",
-		"body":[
-			"\\pnhdsectlast"
-		]
-	},
-
-
-	"pnhdtopage":{
-		"prefix":"pnhdtopage",
-		"body":[
-			"\\pnhdtopage"
-		]
-	},
-
-
-	"pnhdtopages":{
-		"prefix":"pnhdtopages",
-		"body":[
-			"\\pnhdtopages"
-		]
-	},
-
-
-	"pnheaderdefault":{
-		"prefix":"pnheaderdefault",
-		"body":[
-			"\\pnheaderdefault"
-		]
-	},
-
-
-	"pnheading":{
-		"prefix":"pnheading",
-		"body":[
-			"\\pnheading"
-		]
-	},
-
-
-	"pnidnextnote":{
-		"prefix":"pnidnextnote",
-		"body":[
-			"\\pnidnextnote"
-		]
-	},
-
-
-	"pnthechapter":{
-		"prefix":"pnthechapter",
-		"body":[
-			"\\pnthechapter"
-		]
-	},
-
-
-	"pnthechapternextnote":{
-		"prefix":"pnthechapternextnote",
-		"body":[
-			"\\pnthechapternextnote"
-		]
-	},
-
-
-	"pnthepage":{
-		"prefix":"pnthepage",
-		"body":[
-			"\\pnthepage"
-		]
-	},
-
-
-	"pnthesection":{
-		"prefix":"pnthesection",
-		"body":[
-			"\\pnthesection"
-		]
-	},
-
-
-	"pnthesectionnextnote":{
-		"prefix":"pnthesectionnextnote",
-		"body":[
-			"\\pnthesectionnextnote"
-		]
-	},
-
-
-	"pntitle":{
-		"prefix":"pntitle",
-		"body":[
-			"\\pntitle"
-		]
-	},
-
-
-	"thepostnote":{
-		"prefix":"thepostnote",
-		"body":[
-			"\\thepostnote"
-		]
-	},
-
-
-	"thepostnotesection":{
-		"prefix":"thepostnotesection",
-		"body":[
-			"\\thepostnotesection"
-		]
-	},
-
-
-	"thepostnotetext":{
-		"prefix":"thepostnotetext",
-		"body":[
-			"\\thepostnotetext"
-		]
-	},
-
-
-	"postnoteref*{}":{
-		"prefix":"*postnoteref",
-		"body":[
-			"\\postnoteref*{${1:label}}"
-		]
-	},
-
-
-	"postnotezref*{}":{
-		"prefix":"*postnotezref",
-		"body":[
-			"\\postnotezref*{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +14,17 @@
 		"prefix":"postnote",
 		"body":[
 			"\\postnote[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"postnotesection{}":{
+		"prefix":"postnotesection",
+		"body":[
+			"\\postnotesection{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,6 +32,286 @@
 		"prefix":"postnotesection",
 		"body":[
 			"\\postnotesection[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printpostnotes":{
+		"prefix":"printpostnotes",
+		"body":[
+			"\\printpostnotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postnoteref{}":{
+		"prefix":"postnoteref",
+		"body":[
+			"\\postnoteref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postnoteref*{}":{
+		"prefix":"*postnoteref",
+		"body":[
+			"\\postnoteref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"postnotezref{}":{
+		"prefix":"postnotezref",
+		"body":[
+			"\\postnotezref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postnotezref*{}":{
+		"prefix":"*postnotezref",
+		"body":[
+			"\\postnotezref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"postnotesetup{}":{
+		"prefix":"postnotesetup",
+		"body":[
+			"\\postnotesetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdchapfirst":{
+		"prefix":"pnhdchapfirst",
+		"body":[
+			"\\pnhdchapfirst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdchaplast":{
+		"prefix":"pnhdchaplast",
+		"body":[
+			"\\pnhdchaplast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdnamefirst":{
+		"prefix":"pnhdnamefirst",
+		"body":[
+			"\\pnhdnamefirst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdnamefirst":{
+		"prefix":"pnhdnamefirst",
+		"body":[
+			"\\pnhdnamefirst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdnamelast":{
+		"prefix":"pnhdnamelast",
+		"body":[
+			"\\pnhdnamelast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdnamelast":{
+		"prefix":"pnhdnamelast",
+		"body":[
+			"\\pnhdnamelast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdnotes":{
+		"prefix":"pnhdnotes",
+		"body":[
+			"\\pnhdnotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdpagefirst":{
+		"prefix":"pnhdpagefirst",
+		"body":[
+			"\\pnhdpagefirst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdpagelast":{
+		"prefix":"pnhdpagelast",
+		"body":[
+			"\\pnhdpagelast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdsectfirst":{
+		"prefix":"pnhdsectfirst",
+		"body":[
+			"\\pnhdsectfirst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdsectlast":{
+		"prefix":"pnhdsectlast",
+		"body":[
+			"\\pnhdsectlast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdtopage":{
+		"prefix":"pnhdtopage",
+		"body":[
+			"\\pnhdtopage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhdtopages":{
+		"prefix":"pnhdtopages",
+		"body":[
+			"\\pnhdtopages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnheaderdefault":{
+		"prefix":"pnheaderdefault",
+		"body":[
+			"\\pnheaderdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnheading":{
+		"prefix":"pnheading",
+		"body":[
+			"\\pnheading"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnidnextnote":{
+		"prefix":"pnidnextnote",
+		"body":[
+			"\\pnidnextnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnthechapter":{
+		"prefix":"pnthechapter",
+		"body":[
+			"\\pnthechapter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnthechapternextnote":{
+		"prefix":"pnthechapternextnote",
+		"body":[
+			"\\pnthechapternextnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnthepage":{
+		"prefix":"pnthepage",
+		"body":[
+			"\\pnthepage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnthesection":{
+		"prefix":"pnthesection",
+		"body":[
+			"\\pnthesection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnthesectionnextnote":{
+		"prefix":"pnthesectionnextnote",
+		"body":[
+			"\\pnthesectionnextnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pntitle":{
+		"prefix":"pntitle",
+		"body":[
+			"\\pntitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thepostnote":{
+		"prefix":"thepostnote",
+		"body":[
+			"\\thepostnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thepostnotesection":{
+		"prefix":"thepostnotesection",
+		"body":[
+			"\\thepostnotesection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thepostnotetext":{
+		"prefix":"thepostnotetext",
+		"body":[
+			"\\thepostnotetext"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

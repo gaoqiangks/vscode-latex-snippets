@@ -5,7 +5,8 @@
 		"prefix":"addrchar",
 		"body":[
 			"\\addrchar{${1:initial letter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,607 +14,8 @@
 		"prefix":"addrentry",
 		"body":[
 			"\\addrentry{${1:last name}}{${2:first name}}{${3:address}}{${4:phone}}{${5:F1}}{${6:F2}}{${7:F3}}{${8:F4}}{${9:key%plain}}"
-		]
-	},
-
-
-	"addtolengthplength{}{}":{
-		"prefix":"addtolengthplength",
-		"body":[
-			"\\addtolengthplength{${1:length}}{${2:pseudo-length%keyvals}}"
-		]
-	},
-
-
-	"addtoplength{}{}":{
-		"prefix":"addtoplength",
-		"body":[
-			"\\addtoplength{${1:pseudo-length%keyvals}}{${2:value}}"
-		]
-	},
-
-
-	"addtoreffields{}":{
-		"prefix":"addtoreffields",
-		"body":[
-			"\\addtoreffields{${1:name}}"
-		]
-	},
-
-
-	"AtBeginLetter{}":{
-		"prefix":"AtBeginLetter",
-		"body":[
-			"\\AtBeginLetter{${1:code}}"
-		]
-	},
-
-
-	"AtEndLetter{}":{
-		"prefix":"AtEndLetter",
-		"body":[
-			"\\AtEndLetter{${1:code}}"
-		]
-	},
-
-
-	"bankname":{
-		"prefix":"bankname",
-		"body":[
-			"\\bankname"
-		]
-	},
-
-
-	"cc{}":{
-		"prefix":"cc",
-		"body":[
-			"\\cc{${1:distribution list%text}}"
-		]
-	},
-
-
-	"ccname":{
-		"prefix":"ccname",
-		"body":[
-			"\\ccname"
-		]
-	},
-
-
-	"closing{}":{
-		"prefix":"closing",
-		"body":[
-			"\\closing{${1:concluding text%text}}"
-		]
-	},
-
-
-	"customername":{
-		"prefix":"customername",
-		"body":[
-			"\\customername"
-		]
-	},
-
-
-	"datename":{
-		"prefix":"datename",
-		"body":[
-			"\\datename"
-		]
-	},
-
-
-	"defaultreffields":{
-		"prefix":"defaultreffields",
-		"body":[
-			"\\defaultreffields"
-		]
-	},
-
-
-	"emailname":{
-		"prefix":"emailname",
-		"body":[
-			"\\emailname"
-		]
-	},
-
-
-	"encl{}":{
-		"prefix":"encl",
-		"body":[
-			"\\encl{${1:enclosures%text}}"
-		]
-	},
-
-
-	"enclname":{
-		"prefix":"enclname",
-		"body":[
-			"\\enclname"
-		]
-	},
-
-
-	"faxname":{
-		"prefix":"faxname",
-		"body":[
-			"\\faxname"
-		]
-	},
-
-
-	"foreachemptykomavar{}{}":{
-		"prefix":"foreachemptykomavar",
-		"body":[
-			"\\foreachemptykomavar{${1:list of variables}}{${2:command}}"
-		]
-	},
-
-
-	"foreachkomavar{}{}":{
-		"prefix":"foreachkomavar",
-		"body":[
-			"\\foreachkomavar{${1:list of variables}}{${2:command}}"
-		]
-	},
-
-
-	"foreachkomavarifempty{}{}{}":{
-		"prefix":"foreachkomavarifempty",
-		"body":[
-			"\\foreachkomavarifempty{${1:list of variables}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"foreachnonemptykomavar{}{}":{
-		"prefix":"foreachnonemptykomavar",
-		"body":[
-			"\\foreachnonemptykomavar{${1:list of variables}}{${2:command}}"
-		]
-	},
-
-
-	"headfromname":{
-		"prefix":"headfromname",
-		"body":[
-			"\\headfromname"
-		]
-	},
-
-
-	"headtoname":{
-		"prefix":"headtoname",
-		"body":[
-			"\\headtoname"
-		]
-	},
-
-
-	"Ifkomavar{}{}{}":{
-		"prefix":"Ifkomavar",
-		"body":[
-			"\\Ifkomavar{${1:name}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"Ifkomavarempty{}{}{}":{
-		"prefix":"Ifkomavarempty",
-		"body":[
-			"\\Ifkomavarempty{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"Ifplength{}{}{}":{
-		"prefix":"Ifplength",
-		"body":[
-			"\\Ifplength{${1:pseudo-length}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"invoicename":{
-		"prefix":"invoicename",
-		"body":[
-			"\\invoicename"
-		]
-	},
-
-
-	"letterlastpage":{
-		"prefix":"letterlastpage",
-		"body":[
-			"\\letterlastpage"
-		]
-	},
-
-
-	"LetterOptionNeedsPapersize{}{}":{
-		"prefix":"LetterOptionNeedsPapersize",
-		"body":[
-			"\\LetterOptionNeedsPapersize{${1:option name}}{${2:paper size}}"
-		]
-	},
-
-
-	"letterpagemark":{
-		"prefix":"letterpagemark",
-		"body":[
-			"\\letterpagemark"
-		]
-	},
-
-
-	"letterpagestyle":{
-		"prefix":"letterpagestyle",
-		"body":[
-			"\\letterpagestyle"
-		]
-	},
-
-
-	"LoadLetterOption{}":{
-		"prefix":"LoadLetterOption",
-		"body":[
-			"\\LoadLetterOption{${1:name%keyvals}}"
-		]
-	},
-
-
-	"LoadLetterOptions{}":{
-		"prefix":"LoadLetterOptions",
-		"body":[
-			"\\LoadLetterOptions{${1:list of names%keyvals}}"
-		]
-	},
-
-
-	"mobilephonename":{
-		"prefix":"mobilephonename",
-		"body":[
-			"\\mobilephonename"
-		]
-	},
-
-
-	"myrefname":{
-		"prefix":"myrefname",
-		"body":[
-			"\\myrefname"
-		]
-	},
-
-
-	"newkomavar{}":{
-		"prefix":"newkomavar",
-		"body":[
-			"\\newkomavar{${1:name}}"
-		]
-	},
-
-
-	"newplength{}":{
-		"prefix":"newplength",
-		"body":[
-			"\\newplength{${1:name}}"
-		]
-	},
-
-
-	"opening{}":{
-		"prefix":"opening",
-		"body":[
-			"\\opening{${1:salutation%text}}"
-		]
-	},
-
-
-	"phonename":{
-		"prefix":"phonename",
-		"body":[
-			"\\phonename"
-		]
-	},
-
-
-	"ps":{
-		"prefix":"ps",
-		"body":[
-			"\\ps"
-		]
-	},
-
-
-	"raggedsignature":{
-		"prefix":"raggedsignature",
-		"body":[
-			"\\raggedsignature"
-		]
-	},
-
-
-	"raggedsubject":{
-		"prefix":"raggedsubject",
-		"body":[
-			"\\raggedsubject"
-		]
-	},
-
-
-	"removereffields":{
-		"prefix":"removereffields",
-		"body":[
-			"\\removereffields"
-		]
-	},
-
-
-	"setkomavar{}{}":{
-		"prefix":"setkomavar",
-		"body":[
-			"\\setkomavar{${1:name%keyvals}}{${2:content%text}}"
-		]
-	},
-
-
-	"setlengthtoplength{}{}":{
-		"prefix":"setlengthtoplength",
-		"body":[
-			"\\setlengthtoplength{${1:length}}{${2:pseudo-length%keyvals}}"
-		]
-	},
-
-
-	"setparsizes{}{}{}":{
-		"prefix":"setparsizes",
-		"body":[
-			"\\setparsizes{${1:indent%l}}{${2:distance%l}}{${3:last-line end space}}"
-		]
-	},
-
-
-	"setplength{}{}":{
-		"prefix":"setplength",
-		"body":[
-			"\\setplength{${1:pseudo-length%keyvals}}{${2:value}}"
-		]
-	},
-
-
-	"setplengthtodepth{}{}":{
-		"prefix":"setplengthtodepth",
-		"body":[
-			"\\setplengthtodepth{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
-	},
-
-
-	"setplengthtoheight{}{}":{
-		"prefix":"setplengthtoheight",
-		"body":[
-			"\\setplengthtoheight{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
-	},
-
-
-	"setplengthtototalheight{}{}":{
-		"prefix":"setplengthtototalheight",
-		"body":[
-			"\\setplengthtototalheight{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
-	},
-
-
-	"setplengthtowidth{}{}":{
-		"prefix":"setplengthtowidth",
-		"body":[
-			"\\setplengthtowidth{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
-	},
-
-
-	"startbreaks":{
-		"prefix":"startbreaks",
-		"body":[
-			"\\startbreaks"
-		]
-	},
-
-
-	"stopbreaks":{
-		"prefix":"stopbreaks",
-		"body":[
-			"\\stopbreaks"
-		]
-	},
-
-
-	"stopletter":{
-		"prefix":"stopletter",
-		"body":[
-			"\\stopletter"
-		]
-	},
-
-
-	"subjectname":{
-		"prefix":"subjectname",
-		"body":[
-			"\\subjectname"
-		]
-	},
-
-
-	"thisletter":{
-		"prefix":"thisletter",
-		"body":[
-			"\\thisletter"
-		]
-	},
-
-
-	"usekomavar{}":{
-		"prefix":"usekomavar",
-		"body":[
-			"\\usekomavar{${1:name%keyvals}}"
-		]
-	},
-
-
-	"useplength{}":{
-		"prefix":"useplength",
-		"body":[
-			"\\useplength{${1:pseudo-length%keyvals}}"
-		]
-	},
-
-
-	"wwwname":{
-		"prefix":"wwwname",
-		"body":[
-			"\\wwwname"
-		]
-	},
-
-
-	"yourmailname":{
-		"prefix":"yourmailname",
-		"body":[
-			"\\yourmailname"
-		]
-	},
-
-
-	"yourrefname":{
-		"prefix":"yourrefname",
-		"body":[
-			"\\yourrefname"
-		]
-	},
-
-
-	"showfields{}":{
-		"prefix":"showfields",
-		"body":[
-			"\\showfields{${1:field list}}"
-		]
-	},
-
-
-	"setshowstyle{}":{
-		"prefix":"setshowstyle",
-		"body":[
-			"\\setshowstyle{${1:style%keyvals}}"
-		]
-	},
-
-
-	"edgesize":{
-		"prefix":"edgesize",
-		"body":[
-			"\\edgesize"
-		]
-	},
-
-
-	"showenvelope()()":{
-		"prefix":"showenvelope",
-		"body":[
-			"\\showenvelope(${1:width},${2:height})(${3:h-offset},${4:v-offset})"
-		]
-	},
-
-
-	"showISOenvelope{}":{
-		"prefix":"showISOenvelope",
-		"body":[
-			"\\showISOenvelope{${1:format%keyvals}}"
-		]
-	},
-
-
-	"showUScommercial{}":{
-		"prefix":"showUScommercial",
-		"body":[
-			"\\showUScommercial{${1:format%keyvals}}"
-		]
-	},
-
-
-	"showUScheck":{
-		"prefix":"showUScheck",
-		"body":[
-			"\\showUScheck"
-		]
-	},
-
-
-	"unitfactor":{
-		"prefix":"unitfactor",
-		"body":[
-			"\\unitfactor"
-		]
-	},
-
-
-	"Ifkomavarempty*{}{}{}":{
-		"prefix":"*Ifkomavarempty",
-		"body":[
-			"\\Ifkomavarempty*{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"newkomavar*[]{}":{
-		"prefix":"*newkomavar",
-		"body":[
-			"\\newkomavar*[${2:description}]{${1:name}}"
-		]
-	},
-
-
-	"newkomavar*{}":{
-		"prefix":"*newkomavar",
-		"body":[
-			"\\newkomavar*{${1:name}}"
-		]
-	},
-
-
-	"setkomavar*{}{}":{
-		"prefix":"*setkomavar",
-		"body":[
-			"\\setkomavar*{${1:name%keyvals}}{${2:description%text}}"
-		]
-	},
-
-
-	"setkomavar*{}{}":{
-		"prefix":"*setkomavar",
-		"body":[
-			"\\setkomavar*{${1:name%keyvals}}{${2:description%text}}"
-		]
-	},
-
-
-	"usekomavar*[]{}":{
-		"prefix":"*usekomavar",
-		"body":[
-			"\\usekomavar*[${2:command}]{${1:name%keyvals}}"
-		]
-	},
-
-
-	"usekomavar*{}":{
-		"prefix":"*usekomavar",
-		"body":[
-			"\\usekomavar*{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +23,17 @@
 		"prefix":"addtolengthplength",
 		"body":[
 			"\\addtolengthplength[${3:factor}]{${1:length}}{${2:pseudo-length%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtolengthplength{}{}":{
+		"prefix":"addtolengthplength",
+		"body":[
+			"\\addtolengthplength{${1:length}}{${2:pseudo-length%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -629,7 +41,332 @@
 		"prefix":"addtoplength",
 		"body":[
 			"\\addtoplength[${3:factor}]{${1:pseudo-length%keyvals}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtoplength{}{}":{
+		"prefix":"addtoplength",
+		"body":[
+			"\\addtoplength{${1:pseudo-length%keyvals}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtoreffields{}":{
+		"prefix":"addtoreffields",
+		"body":[
+			"\\addtoreffields{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtBeginLetter{}":{
+		"prefix":"AtBeginLetter",
+		"body":[
+			"\\AtBeginLetter{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndLetter{}":{
+		"prefix":"AtEndLetter",
+		"body":[
+			"\\AtEndLetter{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bankname":{
+		"prefix":"bankname",
+		"body":[
+			"\\bankname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cc{}":{
+		"prefix":"cc",
+		"body":[
+			"\\cc{${1:distribution list%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccname":{
+		"prefix":"ccname",
+		"body":[
+			"\\ccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"closing{}":{
+		"prefix":"closing",
+		"body":[
+			"\\closing{${1:concluding text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customername":{
+		"prefix":"customername",
+		"body":[
+			"\\customername"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"datename":{
+		"prefix":"datename",
+		"body":[
+			"\\datename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultreffields":{
+		"prefix":"defaultreffields",
+		"body":[
+			"\\defaultreffields"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emailname":{
+		"prefix":"emailname",
+		"body":[
+			"\\emailname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"encl{}":{
+		"prefix":"encl",
+		"body":[
+			"\\encl{${1:enclosures%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enclname":{
+		"prefix":"enclname",
+		"body":[
+			"\\enclname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"faxname":{
+		"prefix":"faxname",
+		"body":[
+			"\\faxname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"foreachemptykomavar{}{}":{
+		"prefix":"foreachemptykomavar",
+		"body":[
+			"\\foreachemptykomavar{${1:list of variables}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"foreachkomavar{}{}":{
+		"prefix":"foreachkomavar",
+		"body":[
+			"\\foreachkomavar{${1:list of variables}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"foreachkomavarifempty{}{}{}":{
+		"prefix":"foreachkomavarifempty",
+		"body":[
+			"\\foreachkomavarifempty{${1:list of variables}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"foreachnonemptykomavar{}{}":{
+		"prefix":"foreachnonemptykomavar",
+		"body":[
+			"\\foreachnonemptykomavar{${1:list of variables}}{${2:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headfromname":{
+		"prefix":"headfromname",
+		"body":[
+			"\\headfromname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headtoname":{
+		"prefix":"headtoname",
+		"body":[
+			"\\headtoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifkomavar{}{}{}":{
+		"prefix":"Ifkomavar",
+		"body":[
+			"\\Ifkomavar{${1:name}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifkomavarempty*{}{}{}":{
+		"prefix":"*Ifkomavarempty",
+		"body":[
+			"\\Ifkomavarempty*{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Ifkomavarempty{}{}{}":{
+		"prefix":"Ifkomavarempty",
+		"body":[
+			"\\Ifkomavarempty{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifplength{}{}{}":{
+		"prefix":"Ifplength",
+		"body":[
+			"\\Ifplength{${1:pseudo-length}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"invoicename":{
+		"prefix":"invoicename",
+		"body":[
+			"\\invoicename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letterlastpage":{
+		"prefix":"letterlastpage",
+		"body":[
+			"\\letterlastpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LetterOptionNeedsPapersize{}{}":{
+		"prefix":"LetterOptionNeedsPapersize",
+		"body":[
+			"\\LetterOptionNeedsPapersize{${1:option name}}{${2:paper size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letterpagemark":{
+		"prefix":"letterpagemark",
+		"body":[
+			"\\letterpagemark"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letterpagestyle":{
+		"prefix":"letterpagestyle",
+		"body":[
+			"\\letterpagestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoadLetterOption{}":{
+		"prefix":"LoadLetterOption",
+		"body":[
+			"\\LoadLetterOption{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoadLetterOptions{}":{
+		"prefix":"LoadLetterOptions",
+		"body":[
+			"\\LoadLetterOptions{${1:list of names%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mobilephonename":{
+		"prefix":"mobilephonename",
+		"body":[
+			"\\mobilephonename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"myrefname":{
+		"prefix":"myrefname",
+		"body":[
+			"\\myrefname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newkomavar*[]{}":{
+		"prefix":"*newkomavar",
+		"body":[
+			"\\newkomavar*[${2:description}]{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newkomavar*{}":{
+		"prefix":"*newkomavar",
+		"body":[
+			"\\newkomavar*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -637,7 +374,98 @@
 		"prefix":"newkomavar",
 		"body":[
 			"\\newkomavar[${2:description}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newkomavar{}":{
+		"prefix":"newkomavar",
+		"body":[
+			"\\newkomavar{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newplength{}":{
+		"prefix":"newplength",
+		"body":[
+			"\\newplength{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"opening{}":{
+		"prefix":"opening",
+		"body":[
+			"\\opening{${1:salutation%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phonename":{
+		"prefix":"phonename",
+		"body":[
+			"\\phonename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ps":{
+		"prefix":"ps",
+		"body":[
+			"\\ps"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"raggedsignature":{
+		"prefix":"raggedsignature",
+		"body":[
+			"\\raggedsignature"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"raggedsubject":{
+		"prefix":"raggedsubject",
+		"body":[
+			"\\raggedsubject"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removereffields":{
+		"prefix":"removereffields",
+		"body":[
+			"\\removereffields"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setkomavar*{}{}":{
+		"prefix":"*setkomavar",
+		"body":[
+			"\\setkomavar*{${1:name%keyvals}}{${2:description%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setkomavar*{}{}":{
+		"prefix":"*setkomavar",
+		"body":[
+			"\\setkomavar*{${1:name%keyvals}}{${2:description%text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -645,7 +473,17 @@
 		"prefix":"setkomavar",
 		"body":[
 			"\\setkomavar{${1:name%keyvals}}[${3:description%text}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setkomavar{}{}":{
+		"prefix":"setkomavar",
+		"body":[
+			"\\setkomavar{${1:name%keyvals}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +491,26 @@
 		"prefix":"setlengthtoplength",
 		"body":[
 			"\\setlengthtoplength[${3:factor}]{${1:length}}{${2:pseudo-length%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setlengthtoplength{}{}":{
+		"prefix":"setlengthtoplength",
+		"body":[
+			"\\setlengthtoplength{${1:length}}{${2:pseudo-length%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setparsizes{}{}{}":{
+		"prefix":"setparsizes",
+		"body":[
+			"\\setparsizes{${1:indent%l}}{${2:distance%l}}{${3:last-line end space}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +518,17 @@
 		"prefix":"setplength",
 		"body":[
 			"\\setplength[${3:factor}]{${1:pseudo-length%keyvals}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setplength{}{}":{
+		"prefix":"setplength",
+		"body":[
+			"\\setplength{${1:pseudo-length%keyvals}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,7 +536,17 @@
 		"prefix":"setplengthtodepth",
 		"body":[
 			"\\setplengthtodepth[${3:factor}]{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setplengthtodepth{}{}":{
+		"prefix":"setplengthtodepth",
+		"body":[
+			"\\setplengthtodepth{${1:pseudo-length%keyvals}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +554,17 @@
 		"prefix":"setplengthtoheight",
 		"body":[
 			"\\setplengthtoheight[${3:factor}]{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setplengthtoheight{}{}":{
+		"prefix":"setplengthtoheight",
+		"body":[
+			"\\setplengthtoheight{${1:pseudo-length%keyvals}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +572,17 @@
 		"prefix":"setplengthtototalheight",
 		"body":[
 			"\\setplengthtototalheight[${3:factor}]{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setplengthtototalheight{}{}":{
+		"prefix":"setplengthtototalheight",
+		"body":[
+			"\\setplengthtototalheight{${1:pseudo-length%keyvals}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -693,7 +590,80 @@
 		"prefix":"setplengthtowidth",
 		"body":[
 			"\\setplengthtowidth[${3:factor}]{${1:pseudo-length%keyvals}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setplengthtowidth{}{}":{
+		"prefix":"setplengthtowidth",
+		"body":[
+			"\\setplengthtowidth{${1:pseudo-length%keyvals}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startbreaks":{
+		"prefix":"startbreaks",
+		"body":[
+			"\\startbreaks"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopbreaks":{
+		"prefix":"stopbreaks",
+		"body":[
+			"\\stopbreaks"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopletter":{
+		"prefix":"stopletter",
+		"body":[
+			"\\stopletter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subjectname":{
+		"prefix":"subjectname",
+		"body":[
+			"\\subjectname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thisletter":{
+		"prefix":"thisletter",
+		"body":[
+			"\\thisletter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usekomavar*[]{}":{
+		"prefix":"*usekomavar",
+		"body":[
+			"\\usekomavar*[${2:command}]{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"usekomavar*{}":{
+		"prefix":"*usekomavar",
+		"body":[
+			"\\usekomavar*{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -701,7 +671,89 @@
 		"prefix":"usekomavar",
 		"body":[
 			"\\usekomavar[${2:command}]{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usekomavar{}":{
+		"prefix":"usekomavar",
+		"body":[
+			"\\usekomavar{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useplength{}":{
+		"prefix":"useplength",
+		"body":[
+			"\\useplength{${1:pseudo-length%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wwwname":{
+		"prefix":"wwwname",
+		"body":[
+			"\\wwwname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yourmailname":{
+		"prefix":"yourmailname",
+		"body":[
+			"\\yourmailname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yourrefname":{
+		"prefix":"yourrefname",
+		"body":[
+			"\\yourrefname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showfields{}":{
+		"prefix":"showfields",
+		"body":[
+			"\\showfields{${1:field list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setshowstyle{}":{
+		"prefix":"setshowstyle",
+		"body":[
+			"\\setshowstyle{${1:style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"edgesize":{
+		"prefix":"edgesize",
+		"body":[
+			"\\edgesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showenvelope()()":{
+		"prefix":"showenvelope",
+		"body":[
+			"\\showenvelope(${1:width},${2:height})(${3:h-offset},${4:v-offset})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -709,7 +761,17 @@
 		"prefix":"showenvelope",
 		"body":[
 			"\\showenvelope(${2:width},${3:height})(${4:h-offset},${5:v-offset})[${1:instructions}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"showISOenvelope{}":{
+		"prefix":"showISOenvelope",
+		"body":[
+			"\\showISOenvelope{${1:format%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -717,7 +779,17 @@
 		"prefix":"showISOenvelope",
 		"body":[
 			"\\showISOenvelope{${1:format%keyvals}}[${2:instructions}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"showUScommercial{}":{
+		"prefix":"showUScommercial",
+		"body":[
+			"\\showUScommercial{${1:format%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -725,7 +797,17 @@
 		"prefix":"showUScommercial",
 		"body":[
 			"\\showUScommercial{${1:format%keyvals}}[${2:instructions}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"showUScheck":{
+		"prefix":"showUScheck",
+		"body":[
+			"\\showUScheck"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -733,26 +815,38 @@
 		"prefix":"showUScheck",
 		"body":[
 			"\\showUScheck[${1:instructions}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"letter":{
-		"prefix":"letter",
+	"unitfactor":{
+		"prefix":"unitfactor",
 		"body":[
-			"\\begin{letter}",
-				"\t$1",
-			"\\end{letter}"
-		]
+			"\\unitfactor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"letter":{
+	"letter[]{}":{
 		"prefix":"letter",
 		"body":[
 			"\\begin{letter}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:recipient}}",
 			"\\end{letter}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"letter{}":{
+		"prefix":"letter",
+		"body":[
+			"\\begin{letter}",
+				"\t{${1:recipient}}",
+			"\\end{letter}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

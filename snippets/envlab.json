@@ -5,7 +5,8 @@
 		"prefix":"printreturnlabels",
 		"body":[
 			"\\printreturnlabels{${1:number}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,383 +14,8 @@
 		"prefix":"SetEnvelope",
 		"body":[
 			"\\SetEnvelope{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"SetLabel{}{}{}{}{}{}{}":{
-		"prefix":"SetLabel",
-		"body":[
-			"\\SetLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
-		]
-	},
-
-
-	"SetBigLabel{}{}{}{}{}{}{}":{
-		"prefix":"SetBigLabel",
-		"body":[
-			"\\SetBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
-		]
-	},
-
-
-	"AtBeginLabels{}":{
-		"prefix":"AtBeginLabels",
-		"body":[
-			"\\AtBeginLabels{${1:commands}}"
-		]
-	},
-
-
-	"AtBeginLabelPage{}":{
-		"prefix":"AtBeginLabelPage",
-		"body":[
-			"\\AtBeginLabelPage{${1:commands}}"
-		]
-	},
-
-
-	"EnvelopeLeftMargin":{
-		"prefix":"EnvelopeLeftMargin",
-		"body":[
-			"\\EnvelopeLeftMargin"
-		]
-	},
-
-
-	"FirstLabel{}{}":{
-		"prefix":"FirstLabel",
-		"body":[
-			"\\FirstLabel{${1:row}}{${2:column}}"
-		]
-	},
-
-
-	"suppresslabels":{
-		"prefix":"suppresslabels",
-		"body":[
-			"\\suppresslabels"
-		]
-	},
-
-
-	"resumelabels":{
-		"prefix":"resumelabels",
-		"body":[
-			"\\resumelabels"
-		]
-	},
-
-
-	"suppressonelabel":{
-		"prefix":"suppressonelabel",
-		"body":[
-			"\\suppressonelabel"
-		]
-	},
-
-
-	"resumeonelabel":{
-		"prefix":"resumeonelabel",
-		"body":[
-			"\\resumeonelabel"
-		]
-	},
-
-
-	"ChangeEnvelope{}{}":{
-		"prefix":"ChangeEnvelope",
-		"body":[
-			"\\ChangeEnvelope{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"ChangeLabel{}{}{}{}{}{}{}":{
-		"prefix":"ChangeLabel",
-		"body":[
-			"\\ChangeLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
-		]
-	},
-
-
-	"ChangeBigLabel{}{}{}{}{}{}{}":{
-		"prefix":"ChangeBigLabel",
-		"body":[
-			"\\ChangeBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
-		]
-	},
-
-
-	"re{}":{
-		"prefix":"re",
-		"body":[
-			"\\re{${1:subject%text}}"
-		]
-	},
-
-
-	"ReName":{
-		"prefix":"ReName",
-		"body":[
-			"\\ReName"
-		]
-	},
-
-
-	"PSwait":{
-		"prefix":"PSwait",
-		"body":[
-			"\\PSwait"
-		]
-	},
-
-
-	"EnvelopeHeight":{
-		"prefix":"EnvelopeHeight",
-		"body":[
-			"\\EnvelopeHeight"
-		]
-	},
-
-
-	"EnvelopeTopMargin":{
-		"prefix":"EnvelopeTopMargin",
-		"body":[
-			"\\EnvelopeTopMargin"
-		]
-	},
-
-
-	"EnvelopeWidth":{
-		"prefix":"EnvelopeWidth",
-		"body":[
-			"\\EnvelopeWidth"
-		]
-	},
-
-
-	"FromAddressHeight":{
-		"prefix":"FromAddressHeight",
-		"body":[
-			"\\FromAddressHeight"
-		]
-	},
-
-
-	"FromAddressLeftMargin":{
-		"prefix":"FromAddressLeftMargin",
-		"body":[
-			"\\FromAddressLeftMargin"
-		]
-	},
-
-
-	"FromAddressTopMargin":{
-		"prefix":"FromAddressTopMargin",
-		"body":[
-			"\\FromAddressTopMargin"
-		]
-	},
-
-
-	"FromAddressWidth":{
-		"prefix":"FromAddressWidth",
-		"body":[
-			"\\FromAddressWidth"
-		]
-	},
-
-
-	"LabelHeight":{
-		"prefix":"LabelHeight",
-		"body":[
-			"\\LabelHeight"
-		]
-	},
-
-
-	"LabelLeftMargin":{
-		"prefix":"LabelLeftMargin",
-		"body":[
-			"\\LabelLeftMargin"
-		]
-	},
-
-
-	"LabelRightMargin":{
-		"prefix":"LabelRightMargin",
-		"body":[
-			"\\LabelRightMargin"
-		]
-	},
-
-
-	"LabelTopMargin":{
-		"prefix":"LabelTopMargin",
-		"body":[
-			"\\LabelTopMargin"
-		]
-	},
-
-
-	"LabelWidth":{
-		"prefix":"LabelWidth",
-		"body":[
-			"\\LabelWidth"
-		]
-	},
-
-
-	"PrintAddress{}":{
-		"prefix":"PrintAddress",
-		"body":[
-			"\\PrintAddress{${1:text}}"
-		]
-	},
-
-
-	"PrintBarCode{}":{
-		"prefix":"PrintBarCode",
-		"body":[
-			"\\PrintBarCode{${1:code}}"
-		]
-	},
-
-
-	"PrintBigLabel{}{}":{
-		"prefix":"PrintBigLabel",
-		"body":[
-			"\\PrintBigLabel{${1:return address}}{${2:address}}"
-		]
-	},
-
-
-	"PrintEnvelope{}{}":{
-		"prefix":"PrintEnvelope",
-		"body":[
-			"\\PrintEnvelope{${1:return address}}{${2:address}}"
-		]
-	},
-
-
-	"PrintLabel{}":{
-		"prefix":"PrintLabel",
-		"body":[
-			"\\PrintLabel{${1:text}}"
-		]
-	},
-
-
-	"printonelabel":{
-		"prefix":"printonelabel",
-		"body":[
-			"\\printonelabel"
-		]
-	},
-
-
-	"PrintReturnAddress{}":{
-		"prefix":"PrintReturnAddress",
-		"body":[
-			"\\PrintReturnAddress{${1:text}}"
-		]
-	},
-
-
-	"PSautotray":{
-		"prefix":"PSautotray",
-		"body":[
-			"\\PSautotray"
-		]
-	},
-
-
-	"PSEnvelopeTray":{
-		"prefix":"PSEnvelopeTray",
-		"body":[
-			"\\PSEnvelopeTray"
-		]
-	},
-
-
-	"recontents":{
-		"prefix":"recontents",
-		"body":[
-			"\\recontents"
-		]
-	},
-
-
-	"theLabelCountCol":{
-		"prefix":"theLabelCountCol",
-		"body":[
-			"\\theLabelCountCol"
-		]
-	},
-
-
-	"theLabelCountRow":{
-		"prefix":"theLabelCountRow",
-		"body":[
-			"\\theLabelCountRow"
-		]
-	},
-
-
-	"theLabelMaxCol":{
-		"prefix":"theLabelMaxCol",
-		"body":[
-			"\\theLabelMaxCol"
-		]
-	},
-
-
-	"theLabelMaxRow":{
-		"prefix":"theLabelMaxRow",
-		"body":[
-			"\\theLabelMaxRow"
-		]
-	},
-
-
-	"theLabelOffsetCol":{
-		"prefix":"theLabelOffsetCol",
-		"body":[
-			"\\theLabelOffsetCol"
-		]
-	},
-
-
-	"theLabelOffsetRow":{
-		"prefix":"theLabelOffsetRow",
-		"body":[
-			"\\theLabelOffsetRow"
-		]
-	},
-
-
-	"ToAddressLeftMargin":{
-		"prefix":"ToAddressLeftMargin",
-		"body":[
-			"\\ToAddressLeftMargin"
-		]
-	},
-
-
-	"ToAddressTopMargin":{
-		"prefix":"ToAddressTopMargin",
-		"body":[
-			"\\ToAddressTopMargin"
-		]
-	},
-
-
-	"ToAddressWidth":{
-		"prefix":"ToAddressWidth",
-		"body":[
-			"\\ToAddressWidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +23,107 @@
 		"prefix":"SetEnvelope",
 		"body":[
 			"\\SetEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetLabel{}{}{}{}{}{}{}":{
+		"prefix":"SetLabel",
+		"body":[
+			"\\SetLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetBigLabel{}{}{}{}{}{}{}":{
+		"prefix":"SetBigLabel",
+		"body":[
+			"\\SetBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtBeginLabels{}":{
+		"prefix":"AtBeginLabels",
+		"body":[
+			"\\AtBeginLabels{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtBeginLabelPage{}":{
+		"prefix":"AtBeginLabelPage",
+		"body":[
+			"\\AtBeginLabelPage{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnvelopeLeftMargin":{
+		"prefix":"EnvelopeLeftMargin",
+		"body":[
+			"\\EnvelopeLeftMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FirstLabel{}{}":{
+		"prefix":"FirstLabel",
+		"body":[
+			"\\FirstLabel{${1:row}}{${2:column}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"suppresslabels":{
+		"prefix":"suppresslabels",
+		"body":[
+			"\\suppresslabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resumelabels":{
+		"prefix":"resumelabels",
+		"body":[
+			"\\resumelabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"suppressonelabel":{
+		"prefix":"suppressonelabel",
+		"body":[
+			"\\suppressonelabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resumeonelabel":{
+		"prefix":"resumeonelabel",
+		"body":[
+			"\\resumeonelabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ChangeEnvelope{}{}":{
+		"prefix":"ChangeEnvelope",
+		"body":[
+			"\\ChangeEnvelope{${1:width}}{${2:height}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -405,6 +131,331 @@
 		"prefix":"ChangeEnvelope",
 		"body":[
 			"\\ChangeEnvelope[${3:top margin}]{${1:width}}{${2:height}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ChangeLabel{}{}{}{}{}{}{}":{
+		"prefix":"ChangeLabel",
+		"body":[
+			"\\ChangeLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ChangeBigLabel{}{}{}{}{}{}{}":{
+		"prefix":"ChangeBigLabel",
+		"body":[
+			"\\ChangeBigLabel{${1:W}}{${2:H}}{${3:t}}{${4:l}}{${5:r}}{${6:Nc}}{${7:Nr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"re{}":{
+		"prefix":"re",
+		"body":[
+			"\\re{${1:subject%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ReName":{
+		"prefix":"ReName",
+		"body":[
+			"\\ReName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSwait":{
+		"prefix":"PSwait",
+		"body":[
+			"\\PSwait"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnvelopeHeight":{
+		"prefix":"EnvelopeHeight",
+		"body":[
+			"\\EnvelopeHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnvelopeTopMargin":{
+		"prefix":"EnvelopeTopMargin",
+		"body":[
+			"\\EnvelopeTopMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnvelopeWidth":{
+		"prefix":"EnvelopeWidth",
+		"body":[
+			"\\EnvelopeWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FromAddressHeight":{
+		"prefix":"FromAddressHeight",
+		"body":[
+			"\\FromAddressHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FromAddressLeftMargin":{
+		"prefix":"FromAddressLeftMargin",
+		"body":[
+			"\\FromAddressLeftMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FromAddressTopMargin":{
+		"prefix":"FromAddressTopMargin",
+		"body":[
+			"\\FromAddressTopMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FromAddressWidth":{
+		"prefix":"FromAddressWidth",
+		"body":[
+			"\\FromAddressWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LabelHeight":{
+		"prefix":"LabelHeight",
+		"body":[
+			"\\LabelHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LabelLeftMargin":{
+		"prefix":"LabelLeftMargin",
+		"body":[
+			"\\LabelLeftMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LabelRightMargin":{
+		"prefix":"LabelRightMargin",
+		"body":[
+			"\\LabelRightMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LabelTopMargin":{
+		"prefix":"LabelTopMargin",
+		"body":[
+			"\\LabelTopMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LabelWidth":{
+		"prefix":"LabelWidth",
+		"body":[
+			"\\LabelWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintAddress{}":{
+		"prefix":"PrintAddress",
+		"body":[
+			"\\PrintAddress{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintBarCode{}":{
+		"prefix":"PrintBarCode",
+		"body":[
+			"\\PrintBarCode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintBigLabel{}{}":{
+		"prefix":"PrintBigLabel",
+		"body":[
+			"\\PrintBigLabel{${1:return address}}{${2:address}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintEnvelope{}{}":{
+		"prefix":"PrintEnvelope",
+		"body":[
+			"\\PrintEnvelope{${1:return address}}{${2:address}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintLabel{}":{
+		"prefix":"PrintLabel",
+		"body":[
+			"\\PrintLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printonelabel":{
+		"prefix":"printonelabel",
+		"body":[
+			"\\printonelabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintReturnAddress{}":{
+		"prefix":"PrintReturnAddress",
+		"body":[
+			"\\PrintReturnAddress{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSautotray":{
+		"prefix":"PSautotray",
+		"body":[
+			"\\PSautotray"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSEnvelopeTray":{
+		"prefix":"PSEnvelopeTray",
+		"body":[
+			"\\PSEnvelopeTray"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"recontents":{
+		"prefix":"recontents",
+		"body":[
+			"\\recontents"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelCountCol":{
+		"prefix":"theLabelCountCol",
+		"body":[
+			"\\theLabelCountCol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelCountRow":{
+		"prefix":"theLabelCountRow",
+		"body":[
+			"\\theLabelCountRow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelMaxCol":{
+		"prefix":"theLabelMaxCol",
+		"body":[
+			"\\theLabelMaxCol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelMaxRow":{
+		"prefix":"theLabelMaxRow",
+		"body":[
+			"\\theLabelMaxRow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelOffsetCol":{
+		"prefix":"theLabelOffsetCol",
+		"body":[
+			"\\theLabelOffsetCol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theLabelOffsetRow":{
+		"prefix":"theLabelOffsetRow",
+		"body":[
+			"\\theLabelOffsetRow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ToAddressLeftMargin":{
+		"prefix":"ToAddressLeftMargin",
+		"body":[
+			"\\ToAddressLeftMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ToAddressTopMargin":{
+		"prefix":"ToAddressTopMargin",
+		"body":[
+			"\\ToAddressTopMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ToAddressWidth":{
+		"prefix":"ToAddressWidth",
+		"body":[
+			"\\ToAddressWidth"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

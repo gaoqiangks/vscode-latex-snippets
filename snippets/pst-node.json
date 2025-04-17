@@ -5,7 +5,8 @@
 		"prefix":"actualscale",
 		"body":[
 			"\\actualscale{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"algparnode",
 		"body":[
 			"\\algparnode{${1:t}}{${2:expr in t%definition}}{${3:node name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"AplusB",
 		"body":[
 			"\\AplusB(${2:A})(${3:B}){${1:C}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ArrowNotch",
 		"body":[
 			"\\ArrowNotch{${1:node name}}{${2:node index}}{${3:direction}}{${4:notch}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,1103 +41,8 @@
 		"prefix":"AtoB",
 		"body":[
 			"\\AtoB(${2:A})(${3:B}){${1:C}}"
-		]
-	},
-
-
-	"Circlenode{}{}":{
-		"prefix":"Circlenode",
-		"body":[
-			"\\Circlenode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"circlenode{}{}":{
-		"prefix":"circlenode",
-		"body":[
-			"\\circlenode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnode(){}":{
-		"prefix":"Cnode",
-		"body":[
-			"\\Cnode(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"cnode(){}{}":{
-		"prefix":"cnode",
-		"body":[
-			"\\cnode(${3:x},${4:y}){${1:radius}}{${2:name}}"
-		]
-	},
-
-
-	"Cnodeput(){}{}{}":{
-		"prefix":"Cnodeput",
-		"body":[
-			"\\Cnodeput(${4:x},${5:y}){${1:angle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"cnodeput(){}{}":{
-		"prefix":"cnodeput",
-		"body":[
-			"\\cnodeput(${3:x},${4:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnodeput(){}{}":{
-		"prefix":"Cnodeput",
-		"body":[
-			"\\Cnodeput(${3:x},${4:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"cnodeput{}(){}{}":{
-		"prefix":"cnodeput",
-		"body":[
-			"\\cnodeput{${1:angle}}(${4:x},${5:y}){${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"curvepnode{}{}{}":{
-		"prefix":"curvepnode",
-		"body":[
-			"\\curvepnode{${1:tval}}{${2:expr in t%definition}}{${3:node name}}"
-		]
-	},
-
-
-	"curvepnodes{}{}{}{}":{
-		"prefix":"curvepnodes",
-		"body":[
-			"\\curvepnodes{${1:tmin}}{${2:tmax}}{${3:expr in t%definition}}{${4:node root}}"
-		]
-	},
-
-
-	"defaultvalue{}{}":{
-		"prefix":"defaultvalue",
-		"body":[
-			"\\defaultvalue{${1:cmd}}{${2:val}}"
-		]
-	},
-
-
-	"dianode{}{}":{
-		"prefix":"dianode",
-		"body":[
-			"\\dianode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"dotnode(){}":{
-		"prefix":"dotnode",
-		"body":[
-			"\\dotnode(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"endpsmatrix":{
-		"prefix":"endpsmatrix",
-		"body":[
-			"\\endpsmatrix"
-		]
-	},
-
-
-	"fnode(){}":{
-		"prefix":"fnode",
-		"body":[
-			"\\fnode(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"fnpnode{}{}{}":{
-		"prefix":"fnpnode",
-		"body":[
-			"\\fnpnode{${1:xval}}{${2:expr in x%definition}}{${3:node name}}"
-		]
-	},
-
-
-	"fnpnodes{}{}{}{}":{
-		"prefix":"fnpnodes",
-		"body":[
-			"\\fnpnodes{${1:xmin}}{${2:xmax}}{${3:expr in x%definition}}{${4:node root}}"
-		]
-	},
-
-
-	"getnodelist{}{}":{
-		"prefix":"getnodelist",
-		"body":[
-			"\\getnodelist{${1:node root}}{${2:next command}}"
-		]
-	},
-
-
-	"hasparen":{
-		"prefix":"hasparen",
-		"body":[
-			"\\hasparen"
-		]
-	},
-
-
-	"hasequal":{
-		"prefix":"hasequal",
-		"body":[
-			"\\hasequal"
-		]
-	},
-
-
-	"hascolon":{
-		"prefix":"hascolon",
-		"body":[
-			"\\hascolon"
-		]
-	},
-
-
-	"MakeShortNab{}{}":{
-		"prefix":"MakeShortNab",
-		"body":[
-			"\\MakeShortNab{${1:char1}}{${2:char2}}"
-		]
-	},
-
-
-	"MakeShortTab{}{}":{
-		"prefix":"MakeShortTab",
-		"body":[
-			"\\MakeShortTab{${1:char1}}{${2:char2}}"
-		]
-	},
-
-
-	"MakeShortTablr{}{}{}{}":{
-		"prefix":"MakeShortTablr",
-		"body":[
-			"\\MakeShortTablr{${1:char1}}{${2:char2}}{${3:char3}}{${4:char4}}"
-		]
-	},
-
-
-	"midAB()(){}":{
-		"prefix":"midAB",
-		"body":[
-			"\\midAB(${2:A})(${3:B}){${1:C}}"
-		]
-	},
-
-
-	"naput{}":{
-		"prefix":"naput",
-		"body":[
-			"\\naput{${1:stuff}}"
-		]
-	},
-
-
-	"nbput{}":{
-		"prefix":"nbput",
-		"body":[
-			"\\nbput{${1:stuff}}"
-		]
-	},
-
-
-	"ncangle{}{}{}":{
-		"prefix":"ncangle",
-		"body":[
-			"\\ncangle{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangle{}{}":{
-		"prefix":"ncangle",
-		"body":[
-			"\\ncangle{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncangles{}{}{}":{
-		"prefix":"ncangles",
-		"body":[
-			"\\ncangles{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangles{}{}":{
-		"prefix":"ncangles",
-		"body":[
-			"\\ncangles{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarc{}{}{}":{
-		"prefix":"ncarc",
-		"body":[
-			"\\ncarc{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncarc{}{}":{
-		"prefix":"ncarc",
-		"body":[
-			"\\ncarc{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarcbox{}{}":{
-		"prefix":"ncarcbox",
-		"body":[
-			"\\ncarcbox{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbar{}{}{}":{
-		"prefix":"ncbar",
-		"body":[
-			"\\ncbar{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncbar{}{}":{
-		"prefix":"ncbar",
-		"body":[
-			"\\ncbar{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbarr{}{}":{
-		"prefix":"ncbarr",
-		"body":[
-			"\\ncbarr{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbox{}{}":{
-		"prefix":"ncbox",
-		"body":[
-			"\\ncbox{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccircle{}{}{}":{
-		"prefix":"nccircle",
-		"body":[
-			"\\nccircle{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccircle{}{}":{
-		"prefix":"nccircle",
-		"body":[
-			"\\nccircle{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccoil{}{}{}":{
-		"prefix":"nccoil",
-		"body":[
-			"\\nccoil{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccoil{}{}":{
-		"prefix":"nccoil",
-		"body":[
-			"\\nccoil{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccurve{}{}{}":{
-		"prefix":"nccurve",
-		"body":[
-			"\\nccurve{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccurve{}{}":{
-		"prefix":"nccurve",
-		"body":[
-			"\\nccurve{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiag{}{}{}":{
-		"prefix":"ncdiag",
-		"body":[
-			"\\ncdiag{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiag{}{}":{
-		"prefix":"ncdiag",
-		"body":[
-			"\\ncdiag{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg{}{}{}":{
-		"prefix":"ncdiagg",
-		"body":[
-			"\\ncdiagg{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg{}{}":{
-		"prefix":"ncdiagg",
-		"body":[
-			"\\ncdiagg{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncline{}{}{}":{
-		"prefix":"ncline",
-		"body":[
-			"\\ncline{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncLine{}{}{}":{
-		"prefix":"ncLine",
-		"body":[
-			"\\ncLine{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncline{}{}":{
-		"prefix":"ncline",
-		"body":[
-			"\\ncline{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncLine{}{}":{
-		"prefix":"ncLine",
-		"body":[
-			"\\ncLine{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nclines{}{}{}":{
-		"prefix":"nclines",
-		"body":[
-			"\\nclines{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nclines{}{}":{
-		"prefix":"nclines",
-		"body":[
-			"\\nclines{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncloop{}{}{}":{
-		"prefix":"ncloop",
-		"body":[
-			"\\ncloop{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncloop{}{}":{
-		"prefix":"ncloop",
-		"body":[
-			"\\ncloop{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncput{}":{
-		"prefix":"ncput",
-		"body":[
-			"\\ncput{${1:stuff}}"
-		]
-	},
-
-
-	"nczigzag{}{}{}":{
-		"prefix":"nczigzag",
-		"body":[
-			"\\nczigzag{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nczigzag{}{}":{
-		"prefix":"nczigzag",
-		"body":[
-			"\\nczigzag{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nlput()(){}{}":{
-		"prefix":"nlput",
-		"body":[
-			"\\nlput(${3:A})(${4:B}){${1:distance%l}}{${2:text}}"
-		]
-	},
-
-
-	"nodenameA":{
-		"prefix":"nodenameA",
-		"body":[
-			"\\nodenameA"
-		]
-	},
-
-
-	"nodenameB":{
-		"prefix":"nodenameB",
-		"body":[
-			"\\nodenameB"
-		]
-	},
-
-
-	"nodex{}":{
-		"prefix":"nodex",
-		"body":[
-			"\\nodex{${1:expr%definition}}"
-		]
-	},
-
-
-	"nodexn{}{}":{
-		"prefix":"nodexn",
-		"body":[
-			"\\nodexn{${1:expr%definition}}{${2:node name}}"
-		]
-	},
-
-
-	"normalvec(){}":{
-		"prefix":"normalvec",
-		"body":[
-			"\\normalvec(${2:coords}){${1:node name}}"
-		]
-	},
-
-
-	"nput{}{}{}":{
-		"prefix":"nput",
-		"body":[
-			"\\nput{${1:refangle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"ovalnode{}{}":{
-		"prefix":"ovalnode",
-		"body":[
-			"\\ovalnode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"parsenodexn{}(){}":{
-		"prefix":"parsenodexn",
-		"body":[
-			"\\parsenodexn{${1:arg1}}(${3:arg2}){${2:arg3}}"
-		]
-	},
-
-
-	"pcangle()()":{
-		"prefix":"pcangle",
-		"body":[
-			"\\pcangle(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcangle{}()()":{
-		"prefix":"pcangle",
-		"body":[
-			"\\pcangle{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcangles{}()()":{
-		"prefix":"pcangles",
-		"body":[
-			"\\pcangles{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcangles{}()()":{
-		"prefix":"pcangles",
-		"body":[
-			"\\pcangles{${1:nodeA}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcarc()()":{
-		"prefix":"pcarc",
-		"body":[
-			"\\pcarc(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcarc{}()()":{
-		"prefix":"pcarc",
-		"body":[
-			"\\pcarc{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcarcbox()()":{
-		"prefix":"pcarcbox",
-		"body":[
-			"\\pcarcbox(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcbar()()":{
-		"prefix":"pcbar",
-		"body":[
-			"\\pcbar(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcbar{}()()":{
-		"prefix":"pcbar",
-		"body":[
-			"\\pcbar{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcbox()()":{
-		"prefix":"pcbox",
-		"body":[
-			"\\pcbox(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pccurve()()":{
-		"prefix":"pccurve",
-		"body":[
-			"\\pccurve(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pccurve{}()()":{
-		"prefix":"pccurve",
-		"body":[
-			"\\pccurve{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcdiag()()":{
-		"prefix":"pcdiag",
-		"body":[
-			"\\pcdiag(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcdiag{}()()":{
-		"prefix":"pcdiag",
-		"body":[
-			"\\pcdiag{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcdiagg()()":{
-		"prefix":"pcdiagg",
-		"body":[
-			"\\pcdiagg(${1:nodeA})(${2:nodeB})"
-		]
-	},
-
-
-	"pcline()()":{
-		"prefix":"pcline",
-		"body":[
-			"\\pcline(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcline{}()()":{
-		"prefix":"pcline",
-		"body":[
-			"\\pcline{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcloop()()":{
-		"prefix":"pcloop",
-		"body":[
-			"\\pcloop(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcloop{}()()":{
-		"prefix":"pcloop",
-		"body":[
-			"\\pcloop{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pnode(){}":{
-		"prefix":"pnode",
-		"body":[
-			"\\pnode(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"polyIntersections{}{}()(){}{}":{
-		"prefix":"polyIntersections",
-		"body":[
-			"\\polyIntersections{${1:name1}}{${2:name2}}(${5:A})(${6:B}){${3:P}}{${4:number}}"
-		]
-	},
-
-
-	"pscloseNodeFile":{
-		"prefix":"pscloseNodeFile",
-		"body":[
-			"\\pscloseNodeFile"
-		]
-	},
-
-
-	"psDefBoxNodes{}{}":{
-		"prefix":"psDefBoxNodes",
-		"body":[
-			"\\psDefBoxNodes{${1:node name}}{${2:text}}"
-		]
-	},
-
-
-	"psDefPSPNodes":{
-		"prefix":"psDefPSPNodes",
-		"body":[
-			"\\psDefPSPNodes"
-		]
-	},
-
-
-	"psGetCenter{}":{
-		"prefix":"psGetCenter",
-		"body":[
-			"\\psGetCenter{${1:node name}}"
-		]
-	},
-
-
-	"psGetEdgeA{}{}":{
-		"prefix":"psGetEdgeA",
-		"body":[
-			"\\psGetEdgeA{${1:node1}}{${2:node2}}"
-		]
-	},
-
-
-	"psGetEdgeB{}{}":{
-		"prefix":"psGetEdgeB",
-		"body":[
-			"\\psGetEdgeB{${1:node1}}{${2:node2}}"
-		]
-	},
-
-
-	"psGetNodeCenter{}":{
-		"prefix":"psGetNodeCenter",
-		"body":[
-			"\\psGetNodeCenter{${1:node name}}"
-		]
-	},
-
-
-	"psGetNodeEdgeA{}":{
-		"prefix":"psGetNodeEdgeA",
-		"body":[
-			"\\psGetNodeEdgeA{${1:node name}}"
-		]
-	},
-
-
-	"psGetNodeEdgeB{}":{
-		"prefix":"psGetNodeEdgeB",
-		"body":[
-			"\\psGetNodeEdgeB{${1:node name}}"
-		]
-	},
-
-
-	"psLCNode{}{}{}":{
-		"prefix":"psLCNode",
-		"body":[
-			"\\psLCNode{${1:val1}}{${2:val2}}{${3:node name}}"
-		]
-	},
-
-
-	"psLCNodeVar()()(){}":{
-		"prefix":"psLCNodeVar",
-		"body":[
-			"\\psLCNodeVar(${2:nodeA})(${3:nodeB})(${4:factorA},${5:factorB}){${1:node name}}"
-		]
-	},
-
-
-	"psLDNode()(){}{}":{
-		"prefix":"psLDNode",
-		"body":[
-			"\\psLDNode(${3:A})(${4:B}){${1:distance%l}}{${2:node name}}"
-		]
-	},
-
-
-	"psLNode{}{}":{
-		"prefix":"psLNode",
-		"body":[
-			"\\psLNode{${1:value}}{${2:node name}}"
-		]
-	},
-
-
-	"psmatrix":{
-		"prefix":"psmatrix",
-		"body":[
-			"\\psmatrix"
-		]
-	},
-
-
-	"psncurve(){}":{
-		"prefix":"psncurve",
-		"body":[
-			"\\psncurve(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"psncurve{}(){}":{
-		"prefix":"psncurve",
-		"body":[
-			"\\psncurve{${1:arrows}}(${3:x},${4:y}){${2:name}}"
-		]
-	},
-
-
-	"psnccurve(){}":{
-		"prefix":"psnccurve",
-		"body":[
-			"\\psnccurve(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"psnccurve{}(){}":{
-		"prefix":"psnccurve",
-		"body":[
-			"\\psnccurve{${1:arrows}}(${3:x},${4:y}){${2:name}}"
-		]
-	},
-
-
-	"psnline(){}":{
-		"prefix":"psnline",
-		"body":[
-			"\\psnline(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"psnline{}(){}":{
-		"prefix":"psnline",
-		"body":[
-			"\\psnline{${1:arrows}}(${3:x},${4:y}){${2:name}}"
-		]
-	},
-
-
-	"psnode(){}{}":{
-		"prefix":"psnode",
-		"body":[
-			"\\psnode(${3:x},${4:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"psnpolygon(){}":{
-		"prefix":"psnpolygon",
-		"body":[
-			"\\psnpolygon(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"psnpolygon{}(){}":{
-		"prefix":"psnpolygon",
-		"body":[
-			"\\psnpolygon{${1:arrows}}(${3:x},${4:y}){${2:name}}"
-		]
-	},
-
-
-	"psopenNodeFile":{
-		"prefix":"psopenNodeFile",
-		"body":[
-			"\\psopenNodeFile"
-		]
-	},
-
-
-	"psparnode{}{}{}":{
-		"prefix":"psparnode",
-		"body":[
-			"\\psparnode{${1:t}}{${2:expr in t%definition}}{${3:node name}}"
-		]
-	},
-
-
-	"psRelLineVar()()(){}":{
-		"prefix":"psRelLineVar",
-		"body":[
-			"\\psRelLineVar(${2:nodeA})(${3:nodeB})(${4:radius;angle}){${1:node name}}"
-		]
-	},
-
-
-	"psRelNode{}{}":{
-		"prefix":"psRelNode",
-		"body":[
-			"\\psRelNode{${1:length factor}}{${2:end node name}}"
-		]
-	},
-
-
-	"psRelNodeVar()()(){}":{
-		"prefix":"psRelNodeVar",
-		"body":[
-			"\\psRelNodeVar(${2:nodeA})(${3:nodeB})(${4:radius;angle}){${1:node name}}"
-		]
-	},
-
-
-	"psspan{}":{
-		"prefix":"psspan",
-		"body":[
-			"\\psspan{${1:integer}}"
-		]
-	},
-
-
-	"pstiterate":{
-		"prefix":"pstiterate",
-		"body":[
-			"\\pstiterate"
-		]
-	},
-
-
-	"pstloop{}":{
-		"prefix":"pstloop",
-		"body":[
-			"\\pstloop{${1:arg}}"
-		]
-	},
-
-
-	"psxline(){}{}":{
-		"prefix":"psxline",
-		"body":[
-			"\\psxline(${3:basept}){${1:nodeexpr1%definition}}{${2:nodeexpr2%definition}}"
-		]
-	},
-
-
-	"psxline{}(){}{}":{
-		"prefix":"psxline",
-		"body":[
-			"\\psxline{${1:arrows}}(${4:basept}){${2:nodeexpr1%definition}}{${3:nodeexpr2%definition}}"
-		]
-	},
-
-
-	"rhombus{}()(){}{}":{
-		"prefix":"rhombus",
-		"body":[
-			"\\rhombus{${1:edge length}}(${4:A})(${5:B}){${2:C}}{${3:D}}"
-		]
-	},
-
-
-	"Rnode{}{}":{
-		"prefix":"Rnode",
-		"body":[
-			"\\Rnode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"rnode{}{}":{
-		"prefix":"rnode",
-		"body":[
-			"\\rnode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"saveDataAsNodes{}{}":{
-		"prefix":"saveDataAsNodes",
-		"body":[
-			"\\saveDataAsNodes{${1:data}}{${2:node prefix}}"
-		]
-	},
-
-
-	"shownode()":{
-		"prefix":"shownode",
-		"body":[
-			"\\shownode(${1:P})"
-		]
-	},
-
-
-	"taput{}":{
-		"prefix":"taput",
-		"body":[
-			"\\taput{${1:stuff}}"
-		]
-	},
-
-
-	"tbput{}":{
-		"prefix":"tbput",
-		"body":[
-			"\\tbput{${1:stuff}}"
-		]
-	},
-
-
-	"testAlg":{
-		"prefix":"testAlg",
-		"body":[
-			"\\testAlg"
-		]
-	},
-
-
-	"thput{}":{
-		"prefix":"thput",
-		"body":[
-			"\\thput{${1:stuff}}"
-		]
-	},
-
-
-	"tlput{}":{
-		"prefix":"tlput",
-		"body":[
-			"\\tlput{${1:stuff}}"
-		]
-	},
-
-
-	"trim":{
-		"prefix":"trim",
-		"body":[
-			"\\trim"
-		]
-	},
-
-
-	"trinode{}{}":{
-		"prefix":"trinode",
-		"body":[
-			"\\trinode{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"trput{}":{
-		"prefix":"trput",
-		"body":[
-			"\\trput{${1:stuff}}"
-		]
-	},
-
-
-	"tvput{}":{
-		"prefix":"tvput",
-		"body":[
-			"\\tvput{${1:stuff}}"
-		]
-	},
-
-
-	"unbrace{}":{
-		"prefix":"unbrace",
-		"body":[
-			"\\unbrace{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1141,7 +50,8 @@
 		"prefix":"*Circlenode",
 		"body":[
 			"\\Circlenode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -1149,1095 +59,8 @@
 		"prefix":"*Circlenode",
 		"body":[
 			"\\Circlenode*{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"circlenode*[]{}{}":{
-		"prefix":"*circlenode",
-		"body":[
-			"\\circlenode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"circlenode*{}{}":{
-		"prefix":"*circlenode",
-		"body":[
-			"\\circlenode*{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnode*(){}":{
-		"prefix":"*Cnode",
-		"body":[
-			"\\Cnode*(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"cnode*(){}{}":{
-		"prefix":"*cnode",
-		"body":[
-			"\\cnode*(${3:x},${4:y}){${1:radius}}{${2:name}}"
-		]
-	},
-
-
-	"Cnode*[](){}":{
-		"prefix":"*Cnode",
-		"body":[
-			"\\Cnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
-	},
-
-
-	"cnode*[](){}{}":{
-		"prefix":"*cnode",
-		"body":[
-			"\\cnode*[${3:options%keyvals}](${4:x},${5:y}){${1:radius}}{${2:name}}"
-		]
-	},
-
-
-	"Cnodeput*(){}{}{}":{
-		"prefix":"*Cnodeput",
-		"body":[
-			"\\Cnodeput*(${4:x},${5:y}){${1:angle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"cnodeput*(){}{}":{
-		"prefix":"*cnodeput",
-		"body":[
-			"\\cnodeput*(${3:x},${4:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnodeput*(){}{}":{
-		"prefix":"*Cnodeput",
-		"body":[
-			"\\Cnodeput*(${3:x},${4:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnodeput*[](){}{}{}":{
-		"prefix":"*Cnodeput",
-		"body":[
-			"\\Cnodeput*[${4:options%keyvals}](${5:x},${6:y}){${1:angle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"cnodeput*[](){}{}":{
-		"prefix":"*cnodeput",
-		"body":[
-			"\\cnodeput*[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"Cnodeput*[](){}{}":{
-		"prefix":"*Cnodeput",
-		"body":[
-			"\\Cnodeput*[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"cnodeput*[]{}(){}{}":{
-		"prefix":"*cnodeput",
-		"body":[
-			"\\cnodeput*[${4:options%keyvals}]{${1:angle}}(${5:x},${6:y}){${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"cnodeput*{}(){}{}":{
-		"prefix":"*cnodeput",
-		"body":[
-			"\\cnodeput*{${1:angle}}(${4:x},${5:y}){${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"dianode*[]{}{}":{
-		"prefix":"*dianode",
-		"body":[
-			"\\dianode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"dianode*{}{}":{
-		"prefix":"*dianode",
-		"body":[
-			"\\dianode*{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"dotnode*(){}":{
-		"prefix":"*dotnode",
-		"body":[
-			"\\dotnode*(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"dotnode*[](){}":{
-		"prefix":"*dotnode",
-		"body":[
-			"\\dotnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
-	},
-
-
-	"fnode*(){}":{
-		"prefix":"*fnode",
-		"body":[
-			"\\fnode*(${2:x},${3:y}){${1:name}}"
-		]
-	},
-
-
-	"fnode*[](){}":{
-		"prefix":"*fnode",
-		"body":[
-			"\\fnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
-	},
-
-
-	"naput*[]{}":{
-		"prefix":"*naput",
-		"body":[
-			"\\naput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"naput*{}":{
-		"prefix":"*naput",
-		"body":[
-			"\\naput*{${1:stuff}}"
-		]
-	},
-
-
-	"nbput*[]{}":{
-		"prefix":"*nbput",
-		"body":[
-			"\\nbput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"nbput*{}":{
-		"prefix":"*nbput",
-		"body":[
-			"\\nbput*{${1:stuff}}"
-		]
-	},
-
-
-	"ncangle*[]{}{}{}":{
-		"prefix":"*ncangle",
-		"body":[
-			"\\ncangle*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangle*[]{}{}":{
-		"prefix":"*ncangle",
-		"body":[
-			"\\ncangle*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncangle*{}{}{}":{
-		"prefix":"*ncangle",
-		"body":[
-			"\\ncangle*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangle*{}{}":{
-		"prefix":"*ncangle",
-		"body":[
-			"\\ncangle*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncangles*[]{}{}{}":{
-		"prefix":"*ncangles",
-		"body":[
-			"\\ncangles*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangles*[]{}{}":{
-		"prefix":"*ncangles",
-		"body":[
-			"\\ncangles*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncangles*{}{}{}":{
-		"prefix":"*ncangles",
-		"body":[
-			"\\ncangles*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncangles*{}{}":{
-		"prefix":"*ncangles",
-		"body":[
-			"\\ncangles*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarc*[]{}{}{}":{
-		"prefix":"*ncarc",
-		"body":[
-			"\\ncarc*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncarc*[]{}{}":{
-		"prefix":"*ncarc",
-		"body":[
-			"\\ncarc*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarc*{}{}{}":{
-		"prefix":"*ncarc",
-		"body":[
-			"\\ncarc*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncarc*{}{}":{
-		"prefix":"*ncarc",
-		"body":[
-			"\\ncarc*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarcbox*[]{}{}":{
-		"prefix":"*ncarcbox",
-		"body":[
-			"\\ncarcbox*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncarcbox*{}{}":{
-		"prefix":"*ncarcbox",
-		"body":[
-			"\\ncarcbox*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbar*[]{}{}{}":{
-		"prefix":"*ncbar",
-		"body":[
-			"\\ncbar*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncbar*[]{}{}":{
-		"prefix":"*ncbar",
-		"body":[
-			"\\ncbar*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbar*{}{}{}":{
-		"prefix":"*ncbar",
-		"body":[
-			"\\ncbar*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncbar*{}{}":{
-		"prefix":"*ncbar",
-		"body":[
-			"\\ncbar*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbox*[]{}{}":{
-		"prefix":"*ncbox",
-		"body":[
-			"\\ncbox*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncbox*{}{}":{
-		"prefix":"*ncbox",
-		"body":[
-			"\\ncbox*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccircle*[]{}{}{}":{
-		"prefix":"*nccircle",
-		"body":[
-			"\\nccircle*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccircle*[]{}{}":{
-		"prefix":"*nccircle",
-		"body":[
-			"\\nccircle*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccircle*{}{}{}":{
-		"prefix":"*nccircle",
-		"body":[
-			"\\nccircle*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccircle*{}{}":{
-		"prefix":"*nccircle",
-		"body":[
-			"\\nccircle*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccoil*[]{}{}{}":{
-		"prefix":"*nccoil",
-		"body":[
-			"\\nccoil*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccoil*[]{}{}":{
-		"prefix":"*nccoil",
-		"body":[
-			"\\nccoil*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccoil*{}{}{}":{
-		"prefix":"*nccoil",
-		"body":[
-			"\\nccoil*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccoil*{}{}":{
-		"prefix":"*nccoil",
-		"body":[
-			"\\nccoil*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccurve*[]{}{}{}":{
-		"prefix":"*nccurve",
-		"body":[
-			"\\nccurve*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccurve*[]{}{}":{
-		"prefix":"*nccurve",
-		"body":[
-			"\\nccurve*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nccurve*{}{}{}":{
-		"prefix":"*nccurve",
-		"body":[
-			"\\nccurve*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nccurve*{}{}":{
-		"prefix":"*nccurve",
-		"body":[
-			"\\nccurve*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiag*[]{}{}{}":{
-		"prefix":"*ncdiag",
-		"body":[
-			"\\ncdiag*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiag*[]{}{}":{
-		"prefix":"*ncdiag",
-		"body":[
-			"\\ncdiag*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiag*{}{}{}":{
-		"prefix":"*ncdiag",
-		"body":[
-			"\\ncdiag*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiag*{}{}":{
-		"prefix":"*ncdiag",
-		"body":[
-			"\\ncdiag*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg*[]{}{}{}":{
-		"prefix":"*ncdiagg",
-		"body":[
-			"\\ncdiagg*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg*[]{}{}":{
-		"prefix":"*ncdiagg",
-		"body":[
-			"\\ncdiagg*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg*{}{}{}":{
-		"prefix":"*ncdiagg",
-		"body":[
-			"\\ncdiagg*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncdiagg*{}{}":{
-		"prefix":"*ncdiagg",
-		"body":[
-			"\\ncdiagg*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncline*[]{}{}{}":{
-		"prefix":"*ncline",
-		"body":[
-			"\\ncline*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncLine*[]{}{}{}":{
-		"prefix":"*ncLine",
-		"body":[
-			"\\ncLine*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncline*[]{}{}":{
-		"prefix":"*ncline",
-		"body":[
-			"\\ncline*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncLine*[]{}{}":{
-		"prefix":"*ncLine",
-		"body":[
-			"\\ncLine*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncline*{}{}{}":{
-		"prefix":"*ncline",
-		"body":[
-			"\\ncline*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncLine*{}{}{}":{
-		"prefix":"*ncLine",
-		"body":[
-			"\\ncLine*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncline*{}{}":{
-		"prefix":"*ncline",
-		"body":[
-			"\\ncline*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncLine*{}{}":{
-		"prefix":"*ncLine",
-		"body":[
-			"\\ncLine*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncloop*[]{}{}{}":{
-		"prefix":"*ncloop",
-		"body":[
-			"\\ncloop*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncloop*[]{}{}":{
-		"prefix":"*ncloop",
-		"body":[
-			"\\ncloop*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncloop*{}{}{}":{
-		"prefix":"*ncloop",
-		"body":[
-			"\\ncloop*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"ncloop*{}{}":{
-		"prefix":"*ncloop",
-		"body":[
-			"\\ncloop*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"ncput*[]{}":{
-		"prefix":"*ncput",
-		"body":[
-			"\\ncput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"ncput*{}":{
-		"prefix":"*ncput",
-		"body":[
-			"\\ncput*{${1:stuff}}"
-		]
-	},
-
-
-	"nczigzag*[]{}{}{}":{
-		"prefix":"*nczigzag",
-		"body":[
-			"\\nczigzag*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nczigzag*[]{}{}":{
-		"prefix":"*nczigzag",
-		"body":[
-			"\\nczigzag*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nczigzag*{}{}{}":{
-		"prefix":"*nczigzag",
-		"body":[
-			"\\nczigzag*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
-	},
-
-
-	"nczigzag*{}{}":{
-		"prefix":"*nczigzag",
-		"body":[
-			"\\nczigzag*{${1:nodeA}}{${2:nodeB}}"
-		]
-	},
-
-
-	"nput*[]{}{}{}":{
-		"prefix":"*nput",
-		"body":[
-			"\\nput*[${4:options%keyvals}]{${1:refangle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"nput*{}{}{}":{
-		"prefix":"*nput",
-		"body":[
-			"\\nput*{${1:refangle}}{${2:name}}{${3:stuff}}"
-		]
-	},
-
-
-	"ovalnode*[]{}{}":{
-		"prefix":"*ovalnode",
-		"body":[
-			"\\ovalnode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"ovalnode*{}{}":{
-		"prefix":"*ovalnode",
-		"body":[
-			"\\ovalnode*{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"pcangle*()()":{
-		"prefix":"*pcangle",
-		"body":[
-			"\\pcangle*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcangle*[]()()":{
-		"prefix":"*pcangle",
-		"body":[
-			"\\pcangle*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcangle*[]{}()()":{
-		"prefix":"*pcangle",
-		"body":[
-			"\\pcangle*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcangle*{}()()":{
-		"prefix":"*pcangle",
-		"body":[
-			"\\pcangle*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcangles*()()":{
-		"prefix":"*pcangles",
-		"body":[
-			"\\pcangles*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcangles*[]()()":{
-		"prefix":"*pcangles",
-		"body":[
-			"\\pcangles*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcangles*[]{}()()":{
-		"prefix":"*pcangles",
-		"body":[
-			"\\pcangles*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcangles*{}()()":{
-		"prefix":"*pcangles",
-		"body":[
-			"\\pcangles*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcarc*()()":{
-		"prefix":"*pcarc",
-		"body":[
-			"\\pcarc*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcarc*[]()()":{
-		"prefix":"*pcarc",
-		"body":[
-			"\\pcarc*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcarc*[]{}()()":{
-		"prefix":"*pcarc",
-		"body":[
-			"\\pcarc*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcarc*{}()()":{
-		"prefix":"*pcarc",
-		"body":[
-			"\\pcarc*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcarcbox*()()":{
-		"prefix":"*pcarcbox",
-		"body":[
-			"\\pcarcbox*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcarcbox*[]()()":{
-		"prefix":"*pcarcbox",
-		"body":[
-			"\\pcarcbox*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcbar*()()":{
-		"prefix":"*pcbar",
-		"body":[
-			"\\pcbar*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcbar*[]()()":{
-		"prefix":"*pcbar",
-		"body":[
-			"\\pcbar*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcbar*[]{}()()":{
-		"prefix":"*pcbar",
-		"body":[
-			"\\pcbar*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcbar*{}()()":{
-		"prefix":"*pcbar",
-		"body":[
-			"\\pcbar*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcbox*()()":{
-		"prefix":"*pcbox",
-		"body":[
-			"\\pcbox*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcbox*[]()()":{
-		"prefix":"*pcbox",
-		"body":[
-			"\\pcbox*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pccurve*()()":{
-		"prefix":"*pccurve",
-		"body":[
-			"\\pccurve*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pccurve*[]()()":{
-		"prefix":"*pccurve",
-		"body":[
-			"\\pccurve*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pccurve*[]{}()()":{
-		"prefix":"*pccurve",
-		"body":[
-			"\\pccurve*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pccurve*{}()()":{
-		"prefix":"*pccurve",
-		"body":[
-			"\\pccurve*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcdiag*()()":{
-		"prefix":"*pcdiag",
-		"body":[
-			"\\pcdiag*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcdiag*[]()()":{
-		"prefix":"*pcdiag",
-		"body":[
-			"\\pcdiag*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcdiag*[]{}()()":{
-		"prefix":"*pcdiag",
-		"body":[
-			"\\pcdiag*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcdiag*{}()()":{
-		"prefix":"*pcdiag",
-		"body":[
-			"\\pcdiag*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcline*()()":{
-		"prefix":"*pcline",
-		"body":[
-			"\\pcline*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcline*[]()()":{
-		"prefix":"*pcline",
-		"body":[
-			"\\pcline*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcline*[]{}()()":{
-		"prefix":"*pcline",
-		"body":[
-			"\\pcline*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcline*{}()()":{
-		"prefix":"*pcline",
-		"body":[
-			"\\pcline*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcloop*()()":{
-		"prefix":"*pcloop",
-		"body":[
-			"\\pcloop*(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pcloop*[]()()":{
-		"prefix":"*pcloop",
-		"body":[
-			"\\pcloop*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"pcloop*[]{}()()":{
-		"prefix":"*pcloop",
-		"body":[
-			"\\pcloop*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"pcloop*{}()()":{
-		"prefix":"*pcloop",
-		"body":[
-			"\\pcloop*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
-	},
-
-
-	"taput*[]{}":{
-		"prefix":"*taput",
-		"body":[
-			"\\taput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"taput*{}":{
-		"prefix":"*taput",
-		"body":[
-			"\\taput*{${1:stuff}}"
-		]
-	},
-
-
-	"tbput*[]{}":{
-		"prefix":"*tbput",
-		"body":[
-			"\\tbput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"tbput*{}":{
-		"prefix":"*tbput",
-		"body":[
-			"\\tbput*{${1:stuff}}"
-		]
-	},
-
-
-	"thput*[]{}":{
-		"prefix":"*thput",
-		"body":[
-			"\\thput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"thput*{}":{
-		"prefix":"*thput",
-		"body":[
-			"\\thput*{${1:stuff}}"
-		]
-	},
-
-
-	"tlput*[]{}":{
-		"prefix":"*tlput",
-		"body":[
-			"\\tlput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"tlput*{}":{
-		"prefix":"*tlput",
-		"body":[
-			"\\tlput*{${1:stuff}}"
-		]
-	},
-
-
-	"trinode*[]{}{}":{
-		"prefix":"*trinode",
-		"body":[
-			"\\trinode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"trinode*{}{}":{
-		"prefix":"*trinode",
-		"body":[
-			"\\trinode*{${1:name}}{${2:stuff}}"
-		]
-	},
-
-
-	"trput*[]{}":{
-		"prefix":"*trput",
-		"body":[
-			"\\trput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"trput*{}":{
-		"prefix":"*trput",
-		"body":[
-			"\\trput*{${1:stuff}}"
-		]
-	},
-
-
-	"tvput*[]{}":{
-		"prefix":"*tvput",
-		"body":[
-			"\\tvput*[${2:options%keyvals}]{${1:stuff}}"
-		]
-	},
-
-
-	"tvput*{}":{
-		"prefix":"*tvput",
-		"body":[
-			"\\tvput*{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2245,7 +68,35 @@
 		"prefix":"Circlenode",
 		"body":[
 			"\\Circlenode[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Circlenode{}{}":{
+		"prefix":"Circlenode",
+		"body":[
+			"\\Circlenode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circlenode*[]{}{}":{
+		"prefix":"*circlenode",
+		"body":[
+			"\\circlenode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"circlenode*{}{}":{
+		"prefix":"*circlenode",
+		"body":[
+			"\\circlenode*{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2253,7 +104,71 @@
 		"prefix":"circlenode",
 		"body":[
 			"\\circlenode[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"circlenode{}{}":{
+		"prefix":"circlenode",
+		"body":[
+			"\\circlenode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cnode(){}":{
+		"prefix":"Cnode",
+		"body":[
+			"\\Cnode(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cnode(){}{}":{
+		"prefix":"cnode",
+		"body":[
+			"\\cnode(${3:x},${4:y}){${1:radius}}{${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cnode*(){}":{
+		"prefix":"*Cnode",
+		"body":[
+			"\\Cnode*(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnode*(){}{}":{
+		"prefix":"*cnode",
+		"body":[
+			"\\cnode*(${3:x},${4:y}){${1:radius}}{${2:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Cnode*[](){}":{
+		"prefix":"*Cnode",
+		"body":[
+			"\\Cnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnode*[](){}{}":{
+		"prefix":"*cnode",
+		"body":[
+			"\\cnode*[${3:options%keyvals}](${4:x},${5:y}){${1:radius}}{${2:name}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2261,7 +176,8 @@
 		"prefix":"Cnode",
 		"body":[
 			"\\Cnode[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2269,7 +185,107 @@
 		"prefix":"cnode",
 		"body":[
 			"\\cnode[${3:options%keyvals}](${4:x},${5:y}){${1:radius}}{${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cnodeput(){}{}{}":{
+		"prefix":"Cnodeput",
+		"body":[
+			"\\Cnodeput(${4:x},${5:y}){${1:angle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cnodeput(){}{}":{
+		"prefix":"cnodeput",
+		"body":[
+			"\\cnodeput(${3:x},${4:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cnodeput(){}{}":{
+		"prefix":"Cnodeput",
+		"body":[
+			"\\Cnodeput(${3:x},${4:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cnodeput*(){}{}{}":{
+		"prefix":"*Cnodeput",
+		"body":[
+			"\\Cnodeput*(${4:x},${5:y}){${1:angle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnodeput*(){}{}":{
+		"prefix":"*cnodeput",
+		"body":[
+			"\\cnodeput*(${3:x},${4:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Cnodeput*(){}{}":{
+		"prefix":"*Cnodeput",
+		"body":[
+			"\\Cnodeput*(${3:x},${4:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Cnodeput*[](){}{}{}":{
+		"prefix":"*Cnodeput",
+		"body":[
+			"\\Cnodeput*[${4:options%keyvals}](${5:x},${6:y}){${1:angle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnodeput*[](){}{}":{
+		"prefix":"*cnodeput",
+		"body":[
+			"\\cnodeput*[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Cnodeput*[](){}{}":{
+		"prefix":"*Cnodeput",
+		"body":[
+			"\\Cnodeput*[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnodeput*[]{}(){}{}":{
+		"prefix":"*cnodeput",
+		"body":[
+			"\\cnodeput*[${4:options%keyvals}]{${1:angle}}(${5:x},${6:y}){${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cnodeput*{}(){}{}":{
+		"prefix":"*cnodeput",
+		"body":[
+			"\\cnodeput*{${1:angle}}(${4:x},${5:y}){${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2277,7 +293,8 @@
 		"prefix":"Cnodeput",
 		"body":[
 			"\\Cnodeput[${4:options%keyvals}](${5:x},${6:y}){${1:angle}}{${2:name}}{${3:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2285,7 +302,8 @@
 		"prefix":"cnodeput",
 		"body":[
 			"\\cnodeput[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2293,7 +311,8 @@
 		"prefix":"Cnodeput",
 		"body":[
 			"\\Cnodeput[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2301,7 +320,62 @@
 		"prefix":"cnodeput",
 		"body":[
 			"\\cnodeput[${4:options%keyvals}]{${1:angle}}(${5:x},${6:y}){${2:name}}{${3:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cnodeput{}(){}{}":{
+		"prefix":"cnodeput",
+		"body":[
+			"\\cnodeput{${1:angle}}(${4:x},${5:y}){${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curvepnode{}{}{}":{
+		"prefix":"curvepnode",
+		"body":[
+			"\\curvepnode{${1:tval}}{${2:expr in t%definition}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curvepnodes{}{}{}{}":{
+		"prefix":"curvepnodes",
+		"body":[
+			"\\curvepnodes{${1:tmin}}{${2:tmax}}{${3:expr in t%definition}}{${4:node root}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultvalue{}{}":{
+		"prefix":"defaultvalue",
+		"body":[
+			"\\defaultvalue{${1:cmd}}{${2:val}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dianode*[]{}{}":{
+		"prefix":"*dianode",
+		"body":[
+			"\\dianode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"dianode*{}{}":{
+		"prefix":"*dianode",
+		"body":[
+			"\\dianode*{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2309,7 +383,44 @@
 		"prefix":"dianode",
 		"body":[
 			"\\dianode[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dianode{}{}":{
+		"prefix":"dianode",
+		"body":[
+			"\\dianode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dotnode(){}":{
+		"prefix":"dotnode",
+		"body":[
+			"\\dotnode(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dotnode*(){}":{
+		"prefix":"*dotnode",
+		"body":[
+			"\\dotnode*(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"dotnode*[](){}":{
+		"prefix":"*dotnode",
+		"body":[
+			"\\dotnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2317,7 +428,44 @@
 		"prefix":"dotnode",
 		"body":[
 			"\\dotnode[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"endpsmatrix":{
+		"prefix":"endpsmatrix",
+		"body":[
+			"\\endpsmatrix"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fnode(){}":{
+		"prefix":"fnode",
+		"body":[
+			"\\fnode(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fnode*(){}":{
+		"prefix":"*fnode",
+		"body":[
+			"\\fnode*(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fnode*[](){}":{
+		"prefix":"*fnode",
+		"body":[
+			"\\fnode*[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2325,7 +473,116 @@
 		"prefix":"fnode",
 		"body":[
 			"\\fnode[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fnpnode{}{}{}":{
+		"prefix":"fnpnode",
+		"body":[
+			"\\fnpnode{${1:xval}}{${2:expr in x%definition}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fnpnodes{}{}{}{}":{
+		"prefix":"fnpnodes",
+		"body":[
+			"\\fnpnodes{${1:xmin}}{${2:xmax}}{${3:expr in x%definition}}{${4:node root}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getnodelist{}{}":{
+		"prefix":"getnodelist",
+		"body":[
+			"\\getnodelist{${1:node root}}{${2:next command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hasparen":{
+		"prefix":"hasparen",
+		"body":[
+			"\\hasparen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hasequal":{
+		"prefix":"hasequal",
+		"body":[
+			"\\hasequal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hascolon":{
+		"prefix":"hascolon",
+		"body":[
+			"\\hascolon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeShortNab{}{}":{
+		"prefix":"MakeShortNab",
+		"body":[
+			"\\MakeShortNab{${1:char1}}{${2:char2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeShortTab{}{}":{
+		"prefix":"MakeShortTab",
+		"body":[
+			"\\MakeShortTab{${1:char1}}{${2:char2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeShortTablr{}{}{}{}":{
+		"prefix":"MakeShortTablr",
+		"body":[
+			"\\MakeShortTablr{${1:char1}}{${2:char2}}{${3:char3}}{${4:char4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"midAB()(){}":{
+		"prefix":"midAB",
+		"body":[
+			"\\midAB(${2:A})(${3:B}){${1:C}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"naput*[]{}":{
+		"prefix":"*naput",
+		"body":[
+			"\\naput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"naput*{}":{
+		"prefix":"*naput",
+		"body":[
+			"\\naput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2333,7 +590,35 @@
 		"prefix":"naput",
 		"body":[
 			"\\naput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"naput{}":{
+		"prefix":"naput",
+		"body":[
+			"\\naput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nbput*[]{}":{
+		"prefix":"*nbput",
+		"body":[
+			"\\nbput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nbput*{}":{
+		"prefix":"*nbput",
+		"body":[
+			"\\nbput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2341,7 +626,53 @@
 		"prefix":"nbput",
 		"body":[
 			"\\nbput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nbput{}":{
+		"prefix":"nbput",
+		"body":[
+			"\\nbput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncangle*[]{}{}{}":{
+		"prefix":"*ncangle",
+		"body":[
+			"\\ncangle*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangle*[]{}{}":{
+		"prefix":"*ncangle",
+		"body":[
+			"\\ncangle*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangle*{}{}{}":{
+		"prefix":"*ncangle",
+		"body":[
+			"\\ncangle*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangle*{}{}":{
+		"prefix":"*ncangle",
+		"body":[
+			"\\ncangle*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2349,7 +680,8 @@
 		"prefix":"ncangle",
 		"body":[
 			"\\ncangle[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2357,7 +689,62 @@
 		"prefix":"ncangle",
 		"body":[
 			"\\ncangle[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncangle{}{}{}":{
+		"prefix":"ncangle",
+		"body":[
+			"\\ncangle{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncangle{}{}":{
+		"prefix":"ncangle",
+		"body":[
+			"\\ncangle{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncangles*[]{}{}{}":{
+		"prefix":"*ncangles",
+		"body":[
+			"\\ncangles*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangles*[]{}{}":{
+		"prefix":"*ncangles",
+		"body":[
+			"\\ncangles*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangles*{}{}{}":{
+		"prefix":"*ncangles",
+		"body":[
+			"\\ncangles*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncangles*{}{}":{
+		"prefix":"*ncangles",
+		"body":[
+			"\\ncangles*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2365,7 +752,8 @@
 		"prefix":"ncangles",
 		"body":[
 			"\\ncangles[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2373,7 +761,62 @@
 		"prefix":"ncangles",
 		"body":[
 			"\\ncangles[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncangles{}{}{}":{
+		"prefix":"ncangles",
+		"body":[
+			"\\ncangles{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncangles{}{}":{
+		"prefix":"ncangles",
+		"body":[
+			"\\ncangles{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncarc*[]{}{}{}":{
+		"prefix":"*ncarc",
+		"body":[
+			"\\ncarc*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncarc*[]{}{}":{
+		"prefix":"*ncarc",
+		"body":[
+			"\\ncarc*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncarc*{}{}{}":{
+		"prefix":"*ncarc",
+		"body":[
+			"\\ncarc*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncarc*{}{}":{
+		"prefix":"*ncarc",
+		"body":[
+			"\\ncarc*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2381,7 +824,8 @@
 		"prefix":"ncarc",
 		"body":[
 			"\\ncarc[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2389,7 +833,44 @@
 		"prefix":"ncarc",
 		"body":[
 			"\\ncarc[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncarc{}{}{}":{
+		"prefix":"ncarc",
+		"body":[
+			"\\ncarc{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncarc{}{}":{
+		"prefix":"ncarc",
+		"body":[
+			"\\ncarc{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncarcbox*[]{}{}":{
+		"prefix":"*ncarcbox",
+		"body":[
+			"\\ncarcbox*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncarcbox*{}{}":{
+		"prefix":"*ncarcbox",
+		"body":[
+			"\\ncarcbox*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2397,7 +878,53 @@
 		"prefix":"ncarcbox",
 		"body":[
 			"\\ncarcbox[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncarcbox{}{}":{
+		"prefix":"ncarcbox",
+		"body":[
+			"\\ncarcbox{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncbar*[]{}{}{}":{
+		"prefix":"*ncbar",
+		"body":[
+			"\\ncbar*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncbar*[]{}{}":{
+		"prefix":"*ncbar",
+		"body":[
+			"\\ncbar*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncbar*{}{}{}":{
+		"prefix":"*ncbar",
+		"body":[
+			"\\ncbar*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncbar*{}{}":{
+		"prefix":"*ncbar",
+		"body":[
+			"\\ncbar*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2405,7 +932,8 @@
 		"prefix":"ncbar",
 		"body":[
 			"\\ncbar[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2413,7 +941,26 @@
 		"prefix":"ncbar",
 		"body":[
 			"\\ncbar[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncbar{}{}{}":{
+		"prefix":"ncbar",
+		"body":[
+			"\\ncbar{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncbar{}{}":{
+		"prefix":"ncbar",
+		"body":[
+			"\\ncbar{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2421,7 +968,35 @@
 		"prefix":"ncbarr",
 		"body":[
 			"\\ncbarr[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncbarr{}{}":{
+		"prefix":"ncbarr",
+		"body":[
+			"\\ncbarr{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncbox*[]{}{}":{
+		"prefix":"*ncbox",
+		"body":[
+			"\\ncbox*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncbox*{}{}":{
+		"prefix":"*ncbox",
+		"body":[
+			"\\ncbox*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2429,7 +1004,53 @@
 		"prefix":"ncbox",
 		"body":[
 			"\\ncbox[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncbox{}{}":{
+		"prefix":"ncbox",
+		"body":[
+			"\\ncbox{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccircle*[]{}{}{}":{
+		"prefix":"*nccircle",
+		"body":[
+			"\\nccircle*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccircle*[]{}{}":{
+		"prefix":"*nccircle",
+		"body":[
+			"\\nccircle*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccircle*{}{}{}":{
+		"prefix":"*nccircle",
+		"body":[
+			"\\nccircle*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccircle*{}{}":{
+		"prefix":"*nccircle",
+		"body":[
+			"\\nccircle*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2437,7 +1058,8 @@
 		"prefix":"nccircle",
 		"body":[
 			"\\nccircle[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2445,7 +1067,62 @@
 		"prefix":"nccircle",
 		"body":[
 			"\\nccircle[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nccircle{}{}{}":{
+		"prefix":"nccircle",
+		"body":[
+			"\\nccircle{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccircle{}{}":{
+		"prefix":"nccircle",
+		"body":[
+			"\\nccircle{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccoil*[]{}{}{}":{
+		"prefix":"*nccoil",
+		"body":[
+			"\\nccoil*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccoil*[]{}{}":{
+		"prefix":"*nccoil",
+		"body":[
+			"\\nccoil*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccoil*{}{}{}":{
+		"prefix":"*nccoil",
+		"body":[
+			"\\nccoil*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccoil*{}{}":{
+		"prefix":"*nccoil",
+		"body":[
+			"\\nccoil*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2453,7 +1130,8 @@
 		"prefix":"nccoil",
 		"body":[
 			"\\nccoil[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2461,7 +1139,62 @@
 		"prefix":"nccoil",
 		"body":[
 			"\\nccoil[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nccoil{}{}{}":{
+		"prefix":"nccoil",
+		"body":[
+			"\\nccoil{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccoil{}{}":{
+		"prefix":"nccoil",
+		"body":[
+			"\\nccoil{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccurve*[]{}{}{}":{
+		"prefix":"*nccurve",
+		"body":[
+			"\\nccurve*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccurve*[]{}{}":{
+		"prefix":"*nccurve",
+		"body":[
+			"\\nccurve*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccurve*{}{}{}":{
+		"prefix":"*nccurve",
+		"body":[
+			"\\nccurve*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nccurve*{}{}":{
+		"prefix":"*nccurve",
+		"body":[
+			"\\nccurve*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2469,7 +1202,8 @@
 		"prefix":"nccurve",
 		"body":[
 			"\\nccurve[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2477,7 +1211,62 @@
 		"prefix":"nccurve",
 		"body":[
 			"\\nccurve[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nccurve{}{}{}":{
+		"prefix":"nccurve",
+		"body":[
+			"\\nccurve{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nccurve{}{}":{
+		"prefix":"nccurve",
+		"body":[
+			"\\nccurve{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncdiag*[]{}{}{}":{
+		"prefix":"*ncdiag",
+		"body":[
+			"\\ncdiag*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiag*[]{}{}":{
+		"prefix":"*ncdiag",
+		"body":[
+			"\\ncdiag*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiag*{}{}{}":{
+		"prefix":"*ncdiag",
+		"body":[
+			"\\ncdiag*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiag*{}{}":{
+		"prefix":"*ncdiag",
+		"body":[
+			"\\ncdiag*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2485,7 +1274,8 @@
 		"prefix":"ncdiag",
 		"body":[
 			"\\ncdiag[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2493,7 +1283,62 @@
 		"prefix":"ncdiag",
 		"body":[
 			"\\ncdiag[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncdiag{}{}{}":{
+		"prefix":"ncdiag",
+		"body":[
+			"\\ncdiag{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncdiag{}{}":{
+		"prefix":"ncdiag",
+		"body":[
+			"\\ncdiag{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncdiagg*[]{}{}{}":{
+		"prefix":"*ncdiagg",
+		"body":[
+			"\\ncdiagg*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiagg*[]{}{}":{
+		"prefix":"*ncdiagg",
+		"body":[
+			"\\ncdiagg*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiagg*{}{}{}":{
+		"prefix":"*ncdiagg",
+		"body":[
+			"\\ncdiagg*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncdiagg*{}{}":{
+		"prefix":"*ncdiagg",
+		"body":[
+			"\\ncdiagg*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2501,7 +1346,8 @@
 		"prefix":"ncdiagg",
 		"body":[
 			"\\ncdiagg[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2509,7 +1355,98 @@
 		"prefix":"ncdiagg",
 		"body":[
 			"\\ncdiagg[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncdiagg{}{}{}":{
+		"prefix":"ncdiagg",
+		"body":[
+			"\\ncdiagg{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncdiagg{}{}":{
+		"prefix":"ncdiagg",
+		"body":[
+			"\\ncdiagg{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncline*[]{}{}{}":{
+		"prefix":"*ncline",
+		"body":[
+			"\\ncline*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncLine*[]{}{}{}":{
+		"prefix":"*ncLine",
+		"body":[
+			"\\ncLine*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncline*[]{}{}":{
+		"prefix":"*ncline",
+		"body":[
+			"\\ncline*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncLine*[]{}{}":{
+		"prefix":"*ncLine",
+		"body":[
+			"\\ncLine*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncline*{}{}{}":{
+		"prefix":"*ncline",
+		"body":[
+			"\\ncline*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncLine*{}{}{}":{
+		"prefix":"*ncLine",
+		"body":[
+			"\\ncLine*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncline*{}{}":{
+		"prefix":"*ncline",
+		"body":[
+			"\\ncline*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncLine*{}{}":{
+		"prefix":"*ncLine",
+		"body":[
+			"\\ncLine*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2517,7 +1454,8 @@
 		"prefix":"ncline",
 		"body":[
 			"\\ncline[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2525,7 +1463,8 @@
 		"prefix":"ncLine",
 		"body":[
 			"\\ncLine[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2533,7 +1472,8 @@
 		"prefix":"ncline",
 		"body":[
 			"\\ncline[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2541,7 +1481,44 @@
 		"prefix":"ncLine",
 		"body":[
 			"\\ncLine[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncline{}{}{}":{
+		"prefix":"ncline",
+		"body":[
+			"\\ncline{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncLine{}{}{}":{
+		"prefix":"ncLine",
+		"body":[
+			"\\ncLine{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncline{}{}":{
+		"prefix":"ncline",
+		"body":[
+			"\\ncline{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncLine{}{}":{
+		"prefix":"ncLine",
+		"body":[
+			"\\ncLine{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2549,7 +1526,8 @@
 		"prefix":"nclines",
 		"body":[
 			"\\nclines[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2557,7 +1535,62 @@
 		"prefix":"nclines",
 		"body":[
 			"\\nclines[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nclines{}{}{}":{
+		"prefix":"nclines",
+		"body":[
+			"\\nclines{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nclines{}{}":{
+		"prefix":"nclines",
+		"body":[
+			"\\nclines{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncloop*[]{}{}{}":{
+		"prefix":"*ncloop",
+		"body":[
+			"\\ncloop*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncloop*[]{}{}":{
+		"prefix":"*ncloop",
+		"body":[
+			"\\ncloop*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncloop*{}{}{}":{
+		"prefix":"*ncloop",
+		"body":[
+			"\\ncloop*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncloop*{}{}":{
+		"prefix":"*ncloop",
+		"body":[
+			"\\ncloop*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2565,7 +1598,8 @@
 		"prefix":"ncloop",
 		"body":[
 			"\\ncloop[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2573,7 +1607,44 @@
 		"prefix":"ncloop",
 		"body":[
 			"\\ncloop[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncloop{}{}{}":{
+		"prefix":"ncloop",
+		"body":[
+			"\\ncloop{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncloop{}{}":{
+		"prefix":"ncloop",
+		"body":[
+			"\\ncloop{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncput*[]{}":{
+		"prefix":"*ncput",
+		"body":[
+			"\\ncput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncput*{}":{
+		"prefix":"*ncput",
+		"body":[
+			"\\ncput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2581,7 +1652,53 @@
 		"prefix":"ncput",
 		"body":[
 			"\\ncput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncput{}":{
+		"prefix":"ncput",
+		"body":[
+			"\\ncput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nczigzag*[]{}{}{}":{
+		"prefix":"*nczigzag",
+		"body":[
+			"\\nczigzag*[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nczigzag*[]{}{}":{
+		"prefix":"*nczigzag",
+		"body":[
+			"\\nczigzag*[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nczigzag*{}{}{}":{
+		"prefix":"*nczigzag",
+		"body":[
+			"\\nczigzag*{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nczigzag*{}{}":{
+		"prefix":"*nczigzag",
+		"body":[
+			"\\nczigzag*{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2589,7 +1706,8 @@
 		"prefix":"nczigzag",
 		"body":[
 			"\\nczigzag[${4:options%keyvals}]{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2597,7 +1715,35 @@
 		"prefix":"nczigzag",
 		"body":[
 			"\\nczigzag[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nczigzag{}{}{}":{
+		"prefix":"nczigzag",
+		"body":[
+			"\\nczigzag{${1:arrows}}{${2:nodeA}}{${3:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nczigzag{}{}":{
+		"prefix":"nczigzag",
+		"body":[
+			"\\nczigzag{${1:nodeA}}{${2:nodeB}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nlput()(){}{}":{
+		"prefix":"nlput",
+		"body":[
+			"\\nlput(${3:A})(${4:B}){${1:distance%l}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2605,7 +1751,71 @@
 		"prefix":"nlput",
 		"body":[
 			"\\nlput[${3:options%keyvals}](${4:A})(${5:B}){${1:distance%l}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nodenameA":{
+		"prefix":"nodenameA",
+		"body":[
+			"\\nodenameA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nodenameB":{
+		"prefix":"nodenameB",
+		"body":[
+			"\\nodenameB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nodex{}":{
+		"prefix":"nodex",
+		"body":[
+			"\\nodex{${1:expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nodexn{}{}":{
+		"prefix":"nodexn",
+		"body":[
+			"\\nodexn{${1:expr%definition}}{${2:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalvec(){}":{
+		"prefix":"normalvec",
+		"body":[
+			"\\normalvec(${2:coords}){${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nput*[]{}{}{}":{
+		"prefix":"*nput",
+		"body":[
+			"\\nput*[${4:options%keyvals}]{${1:refangle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nput*{}{}{}":{
+		"prefix":"*nput",
+		"body":[
+			"\\nput*{${1:refangle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2613,7 +1823,35 @@
 		"prefix":"nput",
 		"body":[
 			"\\nput[${4:options%keyvals}]{${1:refangle}}{${2:name}}{${3:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nput{}{}{}":{
+		"prefix":"nput",
+		"body":[
+			"\\nput{${1:refangle}}{${2:name}}{${3:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ovalnode*[]{}{}":{
+		"prefix":"*ovalnode",
+		"body":[
+			"\\ovalnode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ovalnode*{}{}":{
+		"prefix":"*ovalnode",
+		"body":[
+			"\\ovalnode*{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2621,7 +1859,71 @@
 		"prefix":"ovalnode",
 		"body":[
 			"\\ovalnode[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ovalnode{}{}":{
+		"prefix":"ovalnode",
+		"body":[
+			"\\ovalnode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parsenodexn{}(){}":{
+		"prefix":"parsenodexn",
+		"body":[
+			"\\parsenodexn{${1:arg1}}(${3:arg2}){${2:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcangle()()":{
+		"prefix":"pcangle",
+		"body":[
+			"\\pcangle(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcangle*()()":{
+		"prefix":"*pcangle",
+		"body":[
+			"\\pcangle*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangle*[]()()":{
+		"prefix":"*pcangle",
+		"body":[
+			"\\pcangle*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangle*[]{}()()":{
+		"prefix":"*pcangle",
+		"body":[
+			"\\pcangle*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangle*{}()()":{
+		"prefix":"*pcangle",
+		"body":[
+			"\\pcangle*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2629,7 +1931,8 @@
 		"prefix":"pcangle",
 		"body":[
 			"\\pcangle[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2637,7 +1940,53 @@
 		"prefix":"pcangle",
 		"body":[
 			"\\pcangle[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcangle{}()()":{
+		"prefix":"pcangle",
+		"body":[
+			"\\pcangle{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcangles*()()":{
+		"prefix":"*pcangles",
+		"body":[
+			"\\pcangles*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangles*[]()()":{
+		"prefix":"*pcangles",
+		"body":[
+			"\\pcangles*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangles*[]{}()()":{
+		"prefix":"*pcangles",
+		"body":[
+			"\\pcangles*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcangles*{}()()":{
+		"prefix":"*pcangles",
+		"body":[
+			"\\pcangles*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2645,7 +1994,8 @@
 		"prefix":"pcangles",
 		"body":[
 			"\\pcangles[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2653,7 +2003,71 @@
 		"prefix":"pcangles",
 		"body":[
 			"\\pcangles[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcangles{}()()":{
+		"prefix":"pcangles",
+		"body":[
+			"\\pcangles{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcangles{}()()":{
+		"prefix":"pcangles",
+		"body":[
+			"\\pcangles{${1:nodeA}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcarc()()":{
+		"prefix":"pcarc",
+		"body":[
+			"\\pcarc(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcarc*()()":{
+		"prefix":"*pcarc",
+		"body":[
+			"\\pcarc*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcarc*[]()()":{
+		"prefix":"*pcarc",
+		"body":[
+			"\\pcarc*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcarc*[]{}()()":{
+		"prefix":"*pcarc",
+		"body":[
+			"\\pcarc*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcarc*{}()()":{
+		"prefix":"*pcarc",
+		"body":[
+			"\\pcarc*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2661,7 +2075,8 @@
 		"prefix":"pcarc",
 		"body":[
 			"\\pcarc[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2669,7 +2084,44 @@
 		"prefix":"pcarc",
 		"body":[
 			"\\pcarc[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcarc{}()()":{
+		"prefix":"pcarc",
+		"body":[
+			"\\pcarc{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcarcbox()()":{
+		"prefix":"pcarcbox",
+		"body":[
+			"\\pcarcbox(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcarcbox*()()":{
+		"prefix":"*pcarcbox",
+		"body":[
+			"\\pcarcbox*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcarcbox*[]()()":{
+		"prefix":"*pcarcbox",
+		"body":[
+			"\\pcarcbox*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2677,7 +2129,53 @@
 		"prefix":"pcarcbox",
 		"body":[
 			"\\pcarcbox[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcbar()()":{
+		"prefix":"pcbar",
+		"body":[
+			"\\pcbar(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcbar*()()":{
+		"prefix":"*pcbar",
+		"body":[
+			"\\pcbar*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcbar*[]()()":{
+		"prefix":"*pcbar",
+		"body":[
+			"\\pcbar*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcbar*[]{}()()":{
+		"prefix":"*pcbar",
+		"body":[
+			"\\pcbar*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcbar*{}()()":{
+		"prefix":"*pcbar",
+		"body":[
+			"\\pcbar*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2685,7 +2183,8 @@
 		"prefix":"pcbar",
 		"body":[
 			"\\pcbar[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2693,7 +2192,44 @@
 		"prefix":"pcbar",
 		"body":[
 			"\\pcbar[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcbar{}()()":{
+		"prefix":"pcbar",
+		"body":[
+			"\\pcbar{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcbox()()":{
+		"prefix":"pcbox",
+		"body":[
+			"\\pcbox(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcbox*()()":{
+		"prefix":"*pcbox",
+		"body":[
+			"\\pcbox*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcbox*[]()()":{
+		"prefix":"*pcbox",
+		"body":[
+			"\\pcbox*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2701,7 +2237,53 @@
 		"prefix":"pcbox",
 		"body":[
 			"\\pcbox[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pccurve()()":{
+		"prefix":"pccurve",
+		"body":[
+			"\\pccurve(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pccurve*()()":{
+		"prefix":"*pccurve",
+		"body":[
+			"\\pccurve*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pccurve*[]()()":{
+		"prefix":"*pccurve",
+		"body":[
+			"\\pccurve*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pccurve*[]{}()()":{
+		"prefix":"*pccurve",
+		"body":[
+			"\\pccurve*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pccurve*{}()()":{
+		"prefix":"*pccurve",
+		"body":[
+			"\\pccurve*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2709,7 +2291,8 @@
 		"prefix":"pccurve",
 		"body":[
 			"\\pccurve[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2717,7 +2300,62 @@
 		"prefix":"pccurve",
 		"body":[
 			"\\pccurve[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pccurve{}()()":{
+		"prefix":"pccurve",
+		"body":[
+			"\\pccurve{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcdiag()()":{
+		"prefix":"pcdiag",
+		"body":[
+			"\\pcdiag(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcdiag*()()":{
+		"prefix":"*pcdiag",
+		"body":[
+			"\\pcdiag*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcdiag*[]()()":{
+		"prefix":"*pcdiag",
+		"body":[
+			"\\pcdiag*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcdiag*[]{}()()":{
+		"prefix":"*pcdiag",
+		"body":[
+			"\\pcdiag*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcdiag*{}()()":{
+		"prefix":"*pcdiag",
+		"body":[
+			"\\pcdiag*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2725,7 +2363,8 @@
 		"prefix":"pcdiag",
 		"body":[
 			"\\pcdiag[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2733,7 +2372,26 @@
 		"prefix":"pcdiag",
 		"body":[
 			"\\pcdiag[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcdiag{}()()":{
+		"prefix":"pcdiag",
+		"body":[
+			"\\pcdiag{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcdiagg()()":{
+		"prefix":"pcdiagg",
+		"body":[
+			"\\pcdiagg(${1:nodeA})(${2:nodeB})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2741,7 +2399,53 @@
 		"prefix":"pcdiagg",
 		"body":[
 			"\\pcdiagg[${1:options%keyvals}](${2:nodeA})(${3:nodeB})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcline()()":{
+		"prefix":"pcline",
+		"body":[
+			"\\pcline(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcline*()()":{
+		"prefix":"*pcline",
+		"body":[
+			"\\pcline*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcline*[]()()":{
+		"prefix":"*pcline",
+		"body":[
+			"\\pcline*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcline*[]{}()()":{
+		"prefix":"*pcline",
+		"body":[
+			"\\pcline*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcline*{}()()":{
+		"prefix":"*pcline",
+		"body":[
+			"\\pcline*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2749,7 +2453,8 @@
 		"prefix":"pcline",
 		"body":[
 			"\\pcline[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2757,7 +2462,62 @@
 		"prefix":"pcline",
 		"body":[
 			"\\pcline[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcline{}()()":{
+		"prefix":"pcline",
+		"body":[
+			"\\pcline{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcloop()()":{
+		"prefix":"pcloop",
+		"body":[
+			"\\pcloop(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pcloop*()()":{
+		"prefix":"*pcloop",
+		"body":[
+			"\\pcloop*(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcloop*[]()()":{
+		"prefix":"*pcloop",
+		"body":[
+			"\\pcloop*[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcloop*[]{}()()":{
+		"prefix":"*pcloop",
+		"body":[
+			"\\pcloop*[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pcloop*{}()()":{
+		"prefix":"*pcloop",
+		"body":[
+			"\\pcloop*{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2765,7 +2525,8 @@
 		"prefix":"pcloop",
 		"body":[
 			"\\pcloop[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2773,7 +2534,26 @@
 		"prefix":"pcloop",
 		"body":[
 			"\\pcloop[${2:options%keyvals}]{${1:arrows}}(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pcloop{}()()":{
+		"prefix":"pcloop",
+		"body":[
+			"\\pcloop{${1:arrows}}(${2:x1},${3:y1})(${4:x2},${5:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnode(){}":{
+		"prefix":"pnode",
+		"body":[
+			"\\pnode(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2781,7 +2561,98 @@
 		"prefix":"pnode",
 		"body":[
 			"\\pnode[${2:offset}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"polyIntersections{}{}()(){}{}":{
+		"prefix":"polyIntersections",
+		"body":[
+			"\\polyIntersections{${1:name1}}{${2:name2}}(${5:A})(${6:B}){${3:P}}{${4:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pscloseNodeFile":{
+		"prefix":"pscloseNodeFile",
+		"body":[
+			"\\pscloseNodeFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psDefBoxNodes{}{}":{
+		"prefix":"psDefBoxNodes",
+		"body":[
+			"\\psDefBoxNodes{${1:node name}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psDefPSPNodes":{
+		"prefix":"psDefPSPNodes",
+		"body":[
+			"\\psDefPSPNodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetCenter{}":{
+		"prefix":"psGetCenter",
+		"body":[
+			"\\psGetCenter{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetEdgeA{}{}":{
+		"prefix":"psGetEdgeA",
+		"body":[
+			"\\psGetEdgeA{${1:node1}}{${2:node2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetEdgeB{}{}":{
+		"prefix":"psGetEdgeB",
+		"body":[
+			"\\psGetEdgeB{${1:node1}}{${2:node2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetNodeCenter{}":{
+		"prefix":"psGetNodeCenter",
+		"body":[
+			"\\psGetNodeCenter{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetNodeEdgeA{}":{
+		"prefix":"psGetNodeEdgeA",
+		"body":[
+			"\\psGetNodeEdgeA{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetNodeEdgeB{}":{
+		"prefix":"psGetNodeEdgeB",
+		"body":[
+			"\\psGetNodeEdgeB{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2789,7 +2660,35 @@
 		"prefix":"psLCNode",
 		"body":[
 			"\\psLCNode[${4:P1}]{${1:val1}}[${5:P2}]{${2:val2}}{${3:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLCNode{}{}{}":{
+		"prefix":"psLCNode",
+		"body":[
+			"\\psLCNode{${1:val1}}{${2:val2}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psLCNodeVar()()(){}":{
+		"prefix":"psLCNodeVar",
+		"body":[
+			"\\psLCNodeVar(${2:nodeA})(${3:nodeB})(${4:factorA},${5:factorB}){${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psLDNode()(){}{}":{
+		"prefix":"psLDNode",
+		"body":[
+			"\\psLDNode(${3:A})(${4:B}){${1:distance%l}}{${2:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2797,7 +2696,8 @@
 		"prefix":"psLDNode",
 		"body":[
 			"\\psLDNode[${3:options%keyvals}](${4:A})(${5:B}){${1:distance%l}}{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2805,7 +2705,8 @@
 		"prefix":"psLNode",
 		"body":[
 			"\\psLNode[${3:P1}][${4:P2}]{${1:value}}{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2813,7 +2714,26 @@
 		"prefix":"psLNode",
 		"body":[
 			"\\psLNode[${3:P1}]{${1:value}}{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLNode{}{}":{
+		"prefix":"psLNode",
+		"body":[
+			"\\psLNode{${1:value}}{${2:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psmatrix":{
+		"prefix":"psmatrix",
+		"body":[
+			"\\psmatrix"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2821,7 +2741,17 @@
 		"prefix":"psmatrix",
 		"body":[
 			"\\psmatrix[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psncurve(){}":{
+		"prefix":"psncurve",
+		"body":[
+			"\\psncurve(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2829,7 +2759,8 @@
 		"prefix":"psncurve",
 		"body":[
 			"\\psncurve[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2837,7 +2768,26 @@
 		"prefix":"psncurve",
 		"body":[
 			"\\psncurve[${3:options%keyvals}]{${1:arrows}}(${4:x},${5:y}){${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psncurve{}(){}":{
+		"prefix":"psncurve",
+		"body":[
+			"\\psncurve{${1:arrows}}(${3:x},${4:y}){${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psnccurve(){}":{
+		"prefix":"psnccurve",
+		"body":[
+			"\\psnccurve(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2845,7 +2795,8 @@
 		"prefix":"psnccurve",
 		"body":[
 			"\\psnccurve[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2853,7 +2804,26 @@
 		"prefix":"psnccurve",
 		"body":[
 			"\\psnccurve[${3:options%keyvals}]{${1:arrows}}(${4:x},${5:y}){${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psnccurve{}(){}":{
+		"prefix":"psnccurve",
+		"body":[
+			"\\psnccurve{${1:arrows}}(${3:x},${4:y}){${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psnline(){}":{
+		"prefix":"psnline",
+		"body":[
+			"\\psnline(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2861,7 +2831,8 @@
 		"prefix":"psnline",
 		"body":[
 			"\\psnline[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2869,7 +2840,26 @@
 		"prefix":"psnline",
 		"body":[
 			"\\psnline[${3:options%keyvals}]{${1:arrows}}(${4:x},${5:y}){${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psnline{}(){}":{
+		"prefix":"psnline",
+		"body":[
+			"\\psnline{${1:arrows}}(${3:x},${4:y}){${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psnode(){}{}":{
+		"prefix":"psnode",
+		"body":[
+			"\\psnode(${3:x},${4:y}){${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2877,7 +2867,17 @@
 		"prefix":"psnode",
 		"body":[
 			"\\psnode[${3:options%keyvals}](${4:x},${5:y}){${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psnpolygon(){}":{
+		"prefix":"psnpolygon",
+		"body":[
+			"\\psnpolygon(${2:x},${3:y}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2885,7 +2885,8 @@
 		"prefix":"psnpolygon",
 		"body":[
 			"\\psnpolygon[${2:options%keyvals}](${3:x},${4:y}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2893,7 +2894,44 @@
 		"prefix":"psnpolygon",
 		"body":[
 			"\\psnpolygon[${3:options%keyvals}]{${1:arrows}}(${4:x},${5:y}){${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psnpolygon{}(){}":{
+		"prefix":"psnpolygon",
+		"body":[
+			"\\psnpolygon{${1:arrows}}(${3:x},${4:y}){${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psopenNodeFile":{
+		"prefix":"psopenNodeFile",
+		"body":[
+			"\\psopenNodeFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psparnode{}{}{}":{
+		"prefix":"psparnode",
+		"body":[
+			"\\psparnode{${1:t}}{${2:expr in t%definition}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psRelLineVar()()(){}":{
+		"prefix":"psRelLineVar",
+		"body":[
+			"\\psRelLineVar(${2:nodeA})(${3:nodeB})(${4:radius;angle}){${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2901,7 +2939,8 @@
 		"prefix":"psRelNode",
 		"body":[
 			"\\psRelNode[${3:P0}][${4:P1}]{${1:length factor}}{${2:end node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2909,7 +2948,62 @@
 		"prefix":"psRelNode",
 		"body":[
 			"\\psRelNode[${3:P0}]{${1:length factor}}{${2:end node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psRelNode{}{}":{
+		"prefix":"psRelNode",
+		"body":[
+			"\\psRelNode{${1:length factor}}{${2:end node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psRelNodeVar()()(){}":{
+		"prefix":"psRelNodeVar",
+		"body":[
+			"\\psRelNodeVar(${2:nodeA})(${3:nodeB})(${4:radius;angle}){${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psspan{}":{
+		"prefix":"psspan",
+		"body":[
+			"\\psspan{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstiterate":{
+		"prefix":"pstiterate",
+		"body":[
+			"\\pstiterate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstloop{}":{
+		"prefix":"pstloop",
+		"body":[
+			"\\pstloop{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psxline(){}{}":{
+		"prefix":"psxline",
+		"body":[
+			"\\psxline(${3:basept}){${1:nodeexpr1%definition}}{${2:nodeexpr2%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2917,7 +3011,8 @@
 		"prefix":"psxline",
 		"body":[
 			"\\psxline[${3:options%keyvals}](${4:basept}){${1:nodeexpr1%definition}}{${2:nodeexpr2%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2925,7 +3020,26 @@
 		"prefix":"psxline",
 		"body":[
 			"\\psxline[${4:options%keyvals}]{${1:arrows}}(${5:basept}){${2:nodeexpr1%definition}}{${3:nodeexpr2%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psxline{}(){}{}":{
+		"prefix":"psxline",
+		"body":[
+			"\\psxline{${1:arrows}}(${4:basept}){${2:nodeexpr1%definition}}{${3:nodeexpr2%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rhombus{}()(){}{}":{
+		"prefix":"rhombus",
+		"body":[
+			"\\rhombus{${1:edge length}}(${4:A})(${5:B}){${2:C}}{${3:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2933,7 +3047,62 @@
 		"prefix":"rnode",
 		"body":[
 			"\\rnode[${3:refpoint}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rnode{}{}":{
+		"prefix":"Rnode",
+		"body":[
+			"\\Rnode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rnode{}{}":{
+		"prefix":"rnode",
+		"body":[
+			"\\rnode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"saveDataAsNodes{}{}":{
+		"prefix":"saveDataAsNodes",
+		"body":[
+			"\\saveDataAsNodes{${1:data}}{${2:node prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shownode()":{
+		"prefix":"shownode",
+		"body":[
+			"\\shownode(${1:P})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"taput*[]{}":{
+		"prefix":"*taput",
+		"body":[
+			"\\taput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"taput*{}":{
+		"prefix":"*taput",
+		"body":[
+			"\\taput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2941,7 +3110,35 @@
 		"prefix":"taput",
 		"body":[
 			"\\taput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"taput{}":{
+		"prefix":"taput",
+		"body":[
+			"\\taput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tbput*[]{}":{
+		"prefix":"*tbput",
+		"body":[
+			"\\tbput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tbput*{}":{
+		"prefix":"*tbput",
+		"body":[
+			"\\tbput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2949,7 +3146,44 @@
 		"prefix":"tbput",
 		"body":[
 			"\\tbput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tbput{}":{
+		"prefix":"tbput",
+		"body":[
+			"\\tbput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testAlg":{
+		"prefix":"testAlg",
+		"body":[
+			"\\testAlg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thput*[]{}":{
+		"prefix":"*thput",
+		"body":[
+			"\\thput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"thput*{}":{
+		"prefix":"*thput",
+		"body":[
+			"\\thput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2957,7 +3191,35 @@
 		"prefix":"thput",
 		"body":[
 			"\\thput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thput{}":{
+		"prefix":"thput",
+		"body":[
+			"\\thput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tlput*[]{}":{
+		"prefix":"*tlput",
+		"body":[
+			"\\tlput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tlput*{}":{
+		"prefix":"*tlput",
+		"body":[
+			"\\tlput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2965,7 +3227,44 @@
 		"prefix":"tlput",
 		"body":[
 			"\\tlput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tlput{}":{
+		"prefix":"tlput",
+		"body":[
+			"\\tlput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trim":{
+		"prefix":"trim",
+		"body":[
+			"\\trim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trinode*[]{}{}":{
+		"prefix":"*trinode",
+		"body":[
+			"\\trinode*[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"trinode*{}{}":{
+		"prefix":"*trinode",
+		"body":[
+			"\\trinode*{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2973,7 +3272,35 @@
 		"prefix":"trinode",
 		"body":[
 			"\\trinode[${3:options%keyvals}]{${1:name}}{${2:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"trinode{}{}":{
+		"prefix":"trinode",
+		"body":[
+			"\\trinode{${1:name}}{${2:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trput*[]{}":{
+		"prefix":"*trput",
+		"body":[
+			"\\trput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"trput*{}":{
+		"prefix":"*trput",
+		"body":[
+			"\\trput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2981,7 +3308,35 @@
 		"prefix":"trput",
 		"body":[
 			"\\trput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"trput{}":{
+		"prefix":"trput",
+		"body":[
+			"\\trput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tvput*[]{}":{
+		"prefix":"*tvput",
+		"body":[
+			"\\tvput*[${2:options%keyvals}]{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tvput*{}":{
+		"prefix":"*tvput",
+		"body":[
+			"\\tvput*{${1:stuff}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -2989,7 +3344,26 @@
 		"prefix":"tvput",
 		"body":[
 			"\\tvput[${2:options%keyvals}]{${1:stuff}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tvput{}":{
+		"prefix":"tvput",
+		"body":[
+			"\\tvput{${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unbrace{}":{
+		"prefix":"unbrace",
+		"body":[
+			"\\unbrace{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2999,16 +3373,18 @@
 			"\\begin{psmatrix}",
 				"\t$1",
 			"\\end{psmatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"psmatrix":{
+	"psmatrix[]":{
 		"prefix":"psmatrix",
 		"body":[
 			"\\begin{psmatrix}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{psmatrix}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

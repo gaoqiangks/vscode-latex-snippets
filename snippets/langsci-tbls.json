@@ -5,7 +5,8 @@
 		"prefix":"langscisymbol",
 		"body":[
 			"\\langscisymbol"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"trennlinie",
 		"body":[
 			"\\trennlinie"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"tblsboxcolor",
 		"body":[
 			"\\tblsboxcolor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tblslinecolour",
 		"body":[
 			"\\tblslinecolour"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"tblsfillcolour",
 		"body":[
 			"\\tblsfillcolour"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,39 +50,8 @@
 		"prefix":"tblssy",
 		"body":[
 			"\\tblssy{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsli{}{}{}":{
-		"prefix":"tblsli",
-		"body":[
-			"\\tblsli{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsfi{}{}":{
-		"prefix":"tblsfi",
-		"body":[
-			"\\tblsfi{${1:title%text}}{${2:text}}"
-		]
-	},
-
-
-	"tblsfr{}{}{}":{
-		"prefix":"tblsfr",
-		"body":[
-			"\\tblsfr{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
-	},
-
-
-	"tblsfd{}{}{}{}":{
-		"prefix":"tblsfd",
-		"body":[
-			"\\tblsfd{${1:color}}{${2:linewidth%l}}{${3:title%text}}{${4:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +59,17 @@
 		"prefix":"tblssy",
 		"body":[
 			"\\tblssy[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsli{}{}{}":{
+		"prefix":"tblsli",
+		"body":[
+			"\\tblsli{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +77,17 @@
 		"prefix":"tblsli",
 		"body":[
 			"\\tblsli[${4:color}]{${1:linewidth%l}}{${2:title%text}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsfi{}{}":{
+		"prefix":"tblsfi",
+		"body":[
+			"\\tblsfi{${1:title%text}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +95,17 @@
 		"prefix":"tblsfi",
 		"body":[
 			"\\tblsfi[${3:color}]{${1:title%text}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsfr{}{}{}":{
+		"prefix":"tblsfr",
+		"body":[
+			"\\tblsfr{${1:symbol}}{${2:title%text}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,136 +113,159 @@
 		"prefix":"tblsfr",
 		"body":[
 			"\\tblsfr[${4:color}]{${1:symbol}}{${2:title%text}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tblslineshorizontal":{
+	"tblsfd{}{}{}{}":{
+		"prefix":"tblsfd",
+		"body":[
+			"\\tblsfd{${1:color}}{${2:linewidth%l}}{${3:title%text}}{${4:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tblslineshorizontal{}":{
 		"prefix":"tblslineshorizontal",
 		"body":[
 			"\\begin{tblslineshorizontal}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{tblslineshorizontal}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tblsfilled":{
+	"tblslineshorizontal{}[]":{
+		"prefix":"tblslineshorizontal",
+		"body":[
+			"\\begin{tblslineshorizontal}",
+				"\t{${1:title%text}}[${2:width}]",
+			"\\end{tblslineshorizontal}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblslineshorizontal{}[][]":{
+		"prefix":"tblslineshorizontal",
+		"body":[
+			"\\begin{tblslineshorizontal}",
+				"\t{${1:title%text}}[${2:width}][${3:color}]",
+			"\\end{tblslineshorizontal}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsfilled{}":{
 		"prefix":"tblsfilled",
 		"body":[
 			"\\begin{tblsfilled}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{tblsfilled}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tblsframed":{
-		"prefix":"tblsframed",
-		"body":[
-			"\\begin{tblsframed}",
-				"\t$1",
-			"\\end{tblsframed}"
-		]
-	},
-
-
-	"tblsfilledsymbol":{
-		"prefix":"tblsfilledsymbol",
-		"body":[
-			"\\begin{tblsfilledsymbol}",
-				"\t$1",
-			"\\end{tblsfilledsymbol}"
-		]
-	},
-
-
-	"tblsframedsymbol":{
-		"prefix":"tblsframedsymbol",
-		"body":[
-			"\\begin{tblsframedsymbol}",
-				"\t$1",
-			"\\end{tblsframedsymbol}"
-		]
-	},
-
-
-	"tblslineshorizontal":{
-		"prefix":"tblslineshorizontal",
-		"body":[
-			"\\begin{tblslineshorizontal}",
-				"\t$1",
-			"\\end{tblslineshorizontal}"
-		]
-	},
-
-
-	"tblslineshorizontal":{
-		"prefix":"tblslineshorizontal",
-		"body":[
-			"\\begin{tblslineshorizontal}",
-				"\t$1",
-			"\\end{tblslineshorizontal}"
-		]
-	},
-
-
-	"tblsfilled":{
+	"tblsfilled{}[]":{
 		"prefix":"tblsfilled",
 		"body":[
 			"\\begin{tblsfilled}",
-				"\t$1",
+				"\t{${1:title%text}}[${2:color}]",
 			"\\end{tblsfilled}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tblsframed":{
+	"tblsframed{}":{
 		"prefix":"tblsframed",
 		"body":[
 			"\\begin{tblsframed}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{tblsframed}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tblsframed":{
+	"tblsframed{}[]":{
 		"prefix":"tblsframed",
 		"body":[
 			"\\begin{tblsframed}",
-				"\t$1",
+				"\t{${1:title%text}}[${2:width}]",
 			"\\end{tblsframed}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tblsfilledsymbol":{
+	"tblsframed{}[][]":{
+		"prefix":"tblsframed",
+		"body":[
+			"\\begin{tblsframed}",
+				"\t{${1:title%text}}[${2:width}][${3:color}]",
+			"\\end{tblsframed}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsfilledsymbol{}{}":{
 		"prefix":"tblsfilledsymbol",
 		"body":[
 			"\\begin{tblsfilledsymbol}",
-				"\t$1",
+				"\t{${1:title%text}}{${2:PDF file%file}}",
 			"\\end{tblsfilledsymbol}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tblsframedsymbol":{
-		"prefix":"tblsframedsymbol",
+	"tblsfilledsymbol{}[]{}":{
+		"prefix":"tblsfilledsymbol",
 		"body":[
-			"\\begin{tblsframedsymbol}",
-				"\t$1",
-			"\\end{tblsframedsymbol}"
-		]
+			"\\begin{tblsfilledsymbol}",
+				"\t{${1:title%text}}[${3:color}]{${2:PDF file%file}}",
+			"\\end{tblsfilledsymbol}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tblsframedsymbol":{
+	"tblsframedsymbol{}{}":{
 		"prefix":"tblsframedsymbol",
 		"body":[
 			"\\begin{tblsframedsymbol}",
-				"\t$1",
+				"\t{${1:title%text}}{${2:PDF file%file}}",
 			"\\end{tblsframedsymbol}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tblsframedsymbol{}[]{}":{
+		"prefix":"tblsframedsymbol",
+		"body":[
+			"\\begin{tblsframedsymbol}",
+				"\t{${1:title%text}}[${3:color}]{${2:PDF file%file}}",
+			"\\end{tblsframedsymbol}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tblsframedsymbol{}[][]{}":{
+		"prefix":"tblsframedsymbol",
+		"body":[
+			"\\begin{tblsframedsymbol}",
+				"\t{${1:title%text}}[${3:color}][${4:width}]{${2:PDF file%file}}",
+			"\\end{tblsframedsymbol}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

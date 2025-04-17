@@ -5,79 +5,8 @@
 		"prefix":"includespread",
 		"body":[
 			"\\includespread"
-		]
-	},
-
-
-	"tabletemplate{}{}":{
-		"prefix":"tabletemplate",
-		"body":[
-			"\\tabletemplate{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"AddString{}{}":{
-		"prefix":"AddString",
-		"body":[
-			"\\AddString{${1:text}}{${2:position}}"
-		]
-	},
-
-
-	"AddNumber{}{}":{
-		"prefix":"AddNumber",
-		"body":[
-			"\\AddNumber{${1:number}}{${2:position}}"
-		]
-	},
-
-
-	"loadodsfile{}":{
-		"prefix":"loadodsfile",
-		"body":[
-			"\\loadodsfile{${1:file}}"
-		]
-	},
-
-
-	"savespreadsheet":{
-		"prefix":"savespreadsheet",
-		"body":[
-			"\\savespreadsheet"
-		]
-	},
-
-
-	"OdsNl":{
-		"prefix":"OdsNl",
-		"body":[
-			"\\OdsNl"
-		]
-	},
-
-
-	"OdsLastNl":{
-		"prefix":"OdsLastNl",
-		"body":[
-			"\\OdsLastNl"
-		]
-	},
-
-
-	"includespread*":{
-		"prefix":"*includespread",
-		"body":[
-			"\\includespread*"
-		]
-	},
-
-
-	"includespread*[]":{
-		"prefix":"*includespread",
-		"body":[
-			"\\includespread*[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,62 @@
 		"prefix":"includespread",
 		"body":[
 			"\\includespread[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includespread*":{
+		"prefix":"*includespread",
+		"body":[
+			"\\includespread*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"includespread*[]":{
+		"prefix":"*includespread",
+		"body":[
+			"\\includespread*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tabletemplate{}{}":{
+		"prefix":"tabletemplate",
+		"body":[
+			"\\tabletemplate{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddString{}{}":{
+		"prefix":"AddString",
+		"body":[
+			"\\AddString{${1:text}}{${2:position}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddNumber{}{}":{
+		"prefix":"AddNumber",
+		"body":[
+			"\\AddNumber{${1:number}}{${2:position}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"loadodsfile{}":{
+		"prefix":"loadodsfile",
+		"body":[
+			"\\loadodsfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +77,35 @@
 		"prefix":"loadodsfile",
 		"body":[
 			"\\loadodsfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"savespreadsheet":{
+		"prefix":"savespreadsheet",
+		"body":[
+			"\\savespreadsheet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OdsNl":{
+		"prefix":"OdsNl",
+		"body":[
+			"\\OdsNl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OdsLastNl":{
+		"prefix":"OdsLastNl",
+		"body":[
+			"\\OdsLastNl"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -103,16 +115,18 @@
 			"\\begin{AddRow}",
 				"\t$1",
 			"\\end{AddRow}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"AddRow":{
+	"AddRow[]":{
 		"prefix":"AddRow",
 		"body":[
 			"\\begin{AddRow}",
-				"\t$1",
+				"\t[${1:row number}]",
 			"\\end{AddRow}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"ebox",
 		"body":[
 			"\\ebox{${1:}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ientry",
 		"body":[
 			"\\ientry{${1:entry%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"thequestioncounter",
 		"body":[
 			"\\thequestioncounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"thesolutioncounter",
 		"body":[
 			"\\thesolutioncounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"trashcan",
 		"body":[
 			"\\trashcan"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"theexamplecounter",
 		"body":[
 			"\\theexamplecounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"theexsolutioncounter",
 		"body":[
 			"\\theexsolutioncounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"thedefcounter",
 		"body":[
 			"\\thedefcounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,7 +79,8 @@
 			"\\begin{question}",
 				"\t$1",
 			"\\end{question}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -81,7 +90,19 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solution[]":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t[${1:length}]",
+			"\\end{solution}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -91,7 +112,8 @@
 			"\\begin{example}",
 				"\t$1",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +123,8 @@
 			"\\begin{exsolution}",
 				"\t$1",
 			"\\end{exsolution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,16 +134,7 @@
 			"\\begin{definition}",
 				"\t$1",
 			"\\end{definition}"
-		]
-	},
-
-
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-				"\t$1",
-			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"mpgOff",
 		"body":[
 			"\\mpgOff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mpgOn",
 		"body":[
 			"\\mpgOn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,215 +23,8 @@
 		"prefix":"NoProcess",
 		"body":[
 			"\\NoProcess"
-		]
-	},
-
-
-	"ArrayIterator{}{}":{
-		"prefix":"ArrayIterator",
-		"body":[
-			"\\ArrayIterator{${1:array}}{${2:arg}}"
-		]
-	},
-
-
-	"BeforeMPDEFSStream":{
-		"prefix":"BeforeMPDEFSStream",
-		"body":[
-			"\\BeforeMPDEFSStream"
-		]
-	},
-
-
-	"BeforeMPGStream":{
-		"prefix":"BeforeMPGStream",
-		"body":[
-			"\\BeforeMPGStream"
-		]
-	},
-
-
-	"DeclareArray{}":{
-		"prefix":"DeclareArray",
-		"body":[
-			"\\DeclareArray{${1:name}}"
-		]
-	},
-
-
-	"MPDEFSverbatimwrite{}":{
-		"prefix":"MPDEFSverbatimwrite",
-		"body":[
-			"\\MPDEFSverbatimwrite{${1:file}}"
-		]
-	},
-
-
-	"MPGCutFile":{
-		"prefix":"MPGCutFile",
-		"body":[
-			"\\MPGCutFile"
-		]
-	},
-
-
-	"MPGgraphicsProcess":{
-		"prefix":"MPGgraphicsProcess",
-		"body":[
-			"\\MPGgraphicsProcess"
-		]
-	},
-
-
-	"MPGgraphicsinclude":{
-		"prefix":"MPGgraphicsinclude",
-		"body":[
-			"\\MPGgraphicsinclude"
-		]
-	},
-
-
-	"MPGinlinegraphicsinclude":{
-		"prefix":"MPGinlinegraphicsinclude",
-		"body":[
-			"\\MPGinlinegraphicsinclude"
-		]
-	},
-
-
-	"MPGverbatimwrite{}":{
-		"prefix":"MPGverbatimwrite",
-		"body":[
-			"\\MPGverbatimwrite{${1:file}}"
-		]
-	},
-
-
-	"NotIfFileExists{}{}":{
-		"prefix":"NotIfFileExists",
-		"body":[
-			"\\NotIfFileExists{${1:file}}{${2:code}}"
-		]
-	},
-
-
-	"OnlyIfFileExists{}{}":{
-		"prefix":"OnlyIfFileExists",
-		"body":[
-			"\\OnlyIfFileExists{${1:file}}{${2:code}}"
-		]
-	},
-
-
-	"addToArray{}{}":{
-		"prefix":"addToArray",
-		"body":[
-			"\\addToArray{${1:array}}{${2:arg}}"
-		]
-	},
-
-
-	"clearArray{}":{
-		"prefix":"clearArray",
-		"body":[
-			"\\clearArray{${1:array}}"
-		]
-	},
-
-
-	"endMPDEFSverbatimwrite":{
-		"prefix":"endMPDEFSverbatimwrite",
-		"body":[
-			"\\endMPDEFSverbatimwrite"
-		]
-	},
-
-
-	"endMPGhook":{
-		"prefix":"endMPGhook",
-		"body":[
-			"\\endMPGhook"
-		]
-	},
-
-
-	"endMPGverbatimwrite":{
-		"prefix":"endMPGverbatimwrite",
-		"body":[
-			"\\endMPGverbatimwrite"
-		]
-	},
-
-
-	"getArraylength{}":{
-		"prefix":"getArraylength",
-		"body":[
-			"\\getArraylength{${1:array}}"
-		]
-	},
-
-
-	"mpgfigname":{
-		"prefix":"mpgfigname",
-		"body":[
-			"\\mpgfigname"
-		]
-	},
-
-
-	"mpgnoprocess":{
-		"prefix":"mpgnoprocess",
-		"body":[
-			"\\mpgnoprocess"
-		]
-	},
-
-
-	"theArrayIndex":{
-		"prefix":"theArrayIndex",
-		"body":[
-			"\\theArrayIndex"
-		]
-	},
-
-
-	"theCtr":{
-		"prefix":"theCtr",
-		"body":[
-			"\\theCtr"
-		]
-	},
-
-
-	"thearraylength":{
-		"prefix":"thearraylength",
-		"body":[
-			"\\thearraylength"
-		]
-	},
-
-
-	"thempgfig":{
-		"prefix":"thempgfig",
-		"body":[
-			"\\thempgfig"
-		]
-	},
-
-
-	"therecordCtr":{
-		"prefix":"therecordCtr",
-		"body":[
-			"\\therecordCtr"
-		]
-	},
-
-
-	"thezeroCtr":{
-		"prefix":"thezeroCtr",
-		"body":[
-			"\\thezeroCtr"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +32,8 @@
 		"prefix":"NoProcess",
 		"body":[
 			"\\NoProcess[${1:ranges}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +41,17 @@
 		"prefix":"configure",
 		"body":[
 			"\\configure[${1:mpgraphic}][${2:keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrayIterator{}{}":{
+		"prefix":"ArrayIterator",
+		"body":[
+			"\\ArrayIterator{${1:array}}{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +59,233 @@
 		"prefix":"Array",
 		"body":[
 			"\\Array{${1:name}}[${3:length%plain}]{${2:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BeforeMPDEFSStream":{
+		"prefix":"BeforeMPDEFSStream",
+		"body":[
+			"\\BeforeMPDEFSStream"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeforeMPGStream":{
+		"prefix":"BeforeMPGStream",
+		"body":[
+			"\\BeforeMPGStream"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareArray{}":{
+		"prefix":"DeclareArray",
+		"body":[
+			"\\DeclareArray{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPDEFSverbatimwrite{}":{
+		"prefix":"MPDEFSverbatimwrite",
+		"body":[
+			"\\MPDEFSverbatimwrite{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPGCutFile":{
+		"prefix":"MPGCutFile",
+		"body":[
+			"\\MPGCutFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPGgraphicsProcess":{
+		"prefix":"MPGgraphicsProcess",
+		"body":[
+			"\\MPGgraphicsProcess"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPGgraphicsinclude":{
+		"prefix":"MPGgraphicsinclude",
+		"body":[
+			"\\MPGgraphicsinclude"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPGinlinegraphicsinclude":{
+		"prefix":"MPGinlinegraphicsinclude",
+		"body":[
+			"\\MPGinlinegraphicsinclude"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPGverbatimwrite{}":{
+		"prefix":"MPGverbatimwrite",
+		"body":[
+			"\\MPGverbatimwrite{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NotIfFileExists{}{}":{
+		"prefix":"NotIfFileExists",
+		"body":[
+			"\\NotIfFileExists{${1:file}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OnlyIfFileExists{}{}":{
+		"prefix":"OnlyIfFileExists",
+		"body":[
+			"\\OnlyIfFileExists{${1:file}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addToArray{}{}":{
+		"prefix":"addToArray",
+		"body":[
+			"\\addToArray{${1:array}}{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearArray{}":{
+		"prefix":"clearArray",
+		"body":[
+			"\\clearArray{${1:array}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endMPDEFSverbatimwrite":{
+		"prefix":"endMPDEFSverbatimwrite",
+		"body":[
+			"\\endMPDEFSverbatimwrite"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endMPGhook":{
+		"prefix":"endMPGhook",
+		"body":[
+			"\\endMPGhook"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endMPGverbatimwrite":{
+		"prefix":"endMPGverbatimwrite",
+		"body":[
+			"\\endMPGverbatimwrite"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getArraylength{}":{
+		"prefix":"getArraylength",
+		"body":[
+			"\\getArraylength{${1:array}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpgfigname":{
+		"prefix":"mpgfigname",
+		"body":[
+			"\\mpgfigname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpgnoprocess":{
+		"prefix":"mpgnoprocess",
+		"body":[
+			"\\mpgnoprocess"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theArrayIndex":{
+		"prefix":"theArrayIndex",
+		"body":[
+			"\\theArrayIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theCtr":{
+		"prefix":"theCtr",
+		"body":[
+			"\\theCtr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thearraylength":{
+		"prefix":"thearraylength",
+		"body":[
+			"\\thearraylength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thempgfig":{
+		"prefix":"thempgfig",
+		"body":[
+			"\\thempgfig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"therecordCtr":{
+		"prefix":"therecordCtr",
+		"body":[
+			"\\therecordCtr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thezeroCtr":{
+		"prefix":"thezeroCtr",
+		"body":[
+			"\\thezeroCtr"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -263,7 +295,8 @@
 			"\\begin{mpdisplay}",
 				"\t$1",
 			"\\end{mpdisplay}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -273,7 +306,8 @@
 			"\\begin{mpinline}",
 				"\t$1",
 			"\\end{mpinline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -283,7 +317,8 @@
 			"\\begin{mpdefs}",
 				"\t$1",
 			"\\end{mpdefs}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,6 +328,7 @@
 			"\\begin{ltxpreamble}",
 				"\t$1",
 			"\\end{ltxpreamble}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

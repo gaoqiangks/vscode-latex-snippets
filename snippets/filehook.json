@@ -5,7 +5,8 @@
 		"prefix":"AtBeginOfEveryFile",
 		"body":[
 			"\\AtBeginOfEveryFile{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"AtEndOfEveryFile",
 		"body":[
 			"\\AtEndOfEveryFile{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"AtBeginOfFiles",
 		"body":[
 			"\\AtBeginOfFiles{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"AtEndOfFiles",
 		"body":[
 			"\\AtEndOfFiles{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"AtBeginOfFile",
 		"body":[
 			"\\AtBeginOfFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"AtEndOfFile",
 		"body":[
 			"\\AtEndOfFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"AtBeginOfIncludes",
 		"body":[
 			"\\AtBeginOfIncludes{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"AtEndOfIncludes",
 		"body":[
 			"\\AtEndOfIncludes{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"AfterIncludes",
 		"body":[
 			"\\AfterIncludes{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"AtBeginOfIncludeFile",
 		"body":[
 			"\\AtBeginOfIncludeFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"AtEndOfIncludeFile",
 		"body":[
 			"\\AtEndOfIncludeFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"AfterIncludeFile",
 		"body":[
 			"\\AfterIncludeFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"AtBeginOfInputs",
 		"body":[
 			"\\AtBeginOfInputs{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"AtEndOfInputs",
 		"body":[
 			"\\AtEndOfInputs{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"AtBeginOfInputFile",
 		"body":[
 			"\\AtBeginOfInputFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"AtEndOfInputFile",
 		"body":[
 			"\\AtEndOfInputFile{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"AtBeginOfPackageFile",
 		"body":[
 			"\\AtBeginOfPackageFile{${1:package}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,31 +158,8 @@
 		"prefix":"AtEndOfPackageFile",
 		"body":[
 			"\\AtEndOfPackageFile{${1:package}}{${2:code}}"
-		]
-	},
-
-
-	"AtBeginOfClassFile{}{}":{
-		"prefix":"AtBeginOfClassFile",
-		"body":[
-			"\\AtBeginOfClassFile{${1:class}}{${2:code}}"
-		]
-	},
-
-
-	"AtEndOfClassFile{}{}":{
-		"prefix":"AtEndOfClassFile",
-		"body":[
-			"\\AtEndOfClassFile{${1:class}}{${2:code}}"
-		]
-	},
-
-
-	"ClearHook":{
-		"prefix":"ClearHook",
-		"body":[
-			"\\ClearHook"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +167,8 @@
 		"prefix":"*AtBeginOfPackageFile",
 		"body":[
 			"\\AtBeginOfPackageFile*{${1:package}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -181,7 +176,26 @@
 		"prefix":"*AtEndOfPackageFile",
 		"body":[
 			"\\AtEndOfPackageFile*{${1:package}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AtBeginOfClassFile{}{}":{
+		"prefix":"AtBeginOfClassFile",
+		"body":[
+			"\\AtBeginOfClassFile{${1:class}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndOfClassFile{}{}":{
+		"prefix":"AtEndOfClassFile",
+		"body":[
+			"\\AtEndOfClassFile{${1:class}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +203,8 @@
 		"prefix":"*AtBeginOfClassFile",
 		"body":[
 			"\\AtBeginOfClassFile*{${1:class}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -197,6 +212,16 @@
 		"prefix":"*AtEndOfClassFile",
 		"body":[
 			"\\AtEndOfClassFile*{${1:class}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ClearHook":{
+		"prefix":"ClearHook",
+		"body":[
+			"\\ClearHook"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

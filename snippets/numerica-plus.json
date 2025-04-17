@@ -5,335 +5,8 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter{${1:expression}}"
-		]
-	},
-
-
-	"nmcIterate{}":{
-		"prefix":"nmcIterate",
-		"body":[
-			"\\nmcIterate{${1:expression}}"
-		]
-	},
-
-
-	"solve{}":{
-		"prefix":"solve",
-		"body":[
-			"\\solve{${1:expression}}"
-		]
-	},
-
-
-	"nmcSolve{}":{
-		"prefix":"nmcSolve",
-		"body":[
-			"\\nmcSolve{${1:expression}}"
-		]
-	},
-
-
-	"recur{}":{
-		"prefix":"recur",
-		"body":[
-			"\\recur{${1:expression}}"
-		]
-	},
-
-
-	"nmcRecur{}":{
-		"prefix":"nmcRecur",
-		"body":[
-			"\\nmcRecur{${1:expression}}"
-		]
-	},
-
-
-	"iter*{}":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*{${1:expression}}"
-		]
-	},
-
-
-	"iter*[]{}":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"iter*{}[]":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"iter*[]{}[]":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"iter*{}[][]":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"iter*[]{}[][]":{
-		"prefix":"*iter",
-		"body":[
-			"\\iter*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"nmcIterate*{}":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*{${1:expression}}"
-		]
-	},
-
-
-	"nmcIterate*[]{}":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"nmcIterate*{}[]":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcIterate*[]{}[]":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcIterate*{}[][]":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"nmcIterate*[]{}[][]":{
-		"prefix":"*nmcIterate",
-		"body":[
-			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"solve*{}":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*{${1:expression}}"
-		]
-	},
-
-
-	"solve*[]{}":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"solve*{}[]":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"solve*[]{}[]":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"solve*{}[][]":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"solve*[]{}[][]":{
-		"prefix":"*solve",
-		"body":[
-			"\\solve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"nmcSolve*{}":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*{${1:expression}}"
-		]
-	},
-
-
-	"nmcSolve*[]{}":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"nmcSolve*{}[]":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcSolve*[]{}[]":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcSolve*{}[][]":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"nmcSolve*[]{}[][]":{
-		"prefix":"*nmcSolve",
-		"body":[
-			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"recur*{}":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*{${1:expression}}"
-		]
-	},
-
-
-	"recur*[]{}":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"recur*{}[]":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"recur*[]{}[]":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"recur*{}[][]":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"recur*[]{}[][]":{
-		"prefix":"*recur",
-		"body":[
-			"\\recur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"nmcRecur*{}":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*{${1:expression}}"
-		]
-	},
-
-
-	"nmcRecur*[]{}":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}"
-		]
-	},
-
-
-	"nmcRecur*{}[]":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*{${1:expression}}[${2:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcRecur*[]{}[]":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcRecur*{}[][]":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
-	},
-
-
-	"nmcRecur*[]{}[][]":{
-		"prefix":"*nmcRecur",
-		"body":[
-			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +14,8 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -349,7 +23,8 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter{${1:expression}}[${2:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -357,7 +32,8 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,7 +41,8 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -373,7 +50,71 @@
 		"prefix":"iter",
 		"body":[
 			"\\iter[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"iter*{}":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"iter*[]{}":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"iter*{}[]":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"iter*[]{}[]":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"iter*{}[][]":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"iter*[]{}[][]":{
+		"prefix":"*iter",
+		"body":[
+			"\\iter*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate{}":{
+		"prefix":"nmcIterate",
+		"body":[
+			"\\nmcIterate{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +122,8 @@
 		"prefix":"nmcIterate",
 		"body":[
 			"\\nmcIterate[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -389,7 +131,8 @@
 		"prefix":"nmcIterate",
 		"body":[
 			"\\nmcIterate{${1:expression}}[${2:vv-list%formula}]v"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -397,7 +140,8 @@
 		"prefix":"nmcIterate",
 		"body":[
 			"\\nmcIterate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +149,8 @@
 		"prefix":"nmcIterate",
 		"body":[
 			"\\nmcIterate{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -413,7 +158,71 @@
 		"prefix":"nmcIterate",
 		"body":[
 			"\\nmcIterate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nmcIterate*{}":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate*[]{}":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate*{}[]":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate*[]{}[]":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate*{}[][]":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcIterate*[]{}[][]":{
+		"prefix":"*nmcIterate",
+		"body":[
+			"\\nmcIterate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve{}":{
+		"prefix":"solve",
+		"body":[
+			"\\solve{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +230,8 @@
 		"prefix":"solve",
 		"body":[
 			"\\solve[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,7 +239,8 @@
 		"prefix":"solve",
 		"body":[
 			"\\solve{${1:expression}}[${2:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -437,7 +248,8 @@
 		"prefix":"solve",
 		"body":[
 			"\\solve[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -445,7 +257,8 @@
 		"prefix":"solve",
 		"body":[
 			"\\solve{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -453,7 +266,71 @@
 		"prefix":"solve",
 		"body":[
 			"\\solve[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"solve*{}":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve*[]{}":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve*{}[]":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve*[]{}[]":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve*{}[][]":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"solve*[]{}[][]":{
+		"prefix":"*solve",
+		"body":[
+			"\\solve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve{}":{
+		"prefix":"nmcSolve",
+		"body":[
+			"\\nmcSolve{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +338,8 @@
 		"prefix":"nmcSolve",
 		"body":[
 			"\\nmcSolve[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -469,7 +347,8 @@
 		"prefix":"nmcSolve",
 		"body":[
 			"\\nmcSolve{${1:expression}}[${2:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -477,7 +356,8 @@
 		"prefix":"nmcSolve",
 		"body":[
 			"\\nmcSolve[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -485,7 +365,8 @@
 		"prefix":"nmcSolve",
 		"body":[
 			"\\nmcSolve{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -493,7 +374,71 @@
 		"prefix":"nmcSolve",
 		"body":[
 			"\\nmcSolve[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nmcSolve*{}":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve*[]{}":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve*{}[]":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve*[]{}[]":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve*{}[][]":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcSolve*[]{}[][]":{
+		"prefix":"*nmcSolve",
+		"body":[
+			"\\nmcSolve*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur{}":{
+		"prefix":"recur",
+		"body":[
+			"\\recur{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +446,8 @@
 		"prefix":"recur",
 		"body":[
 			"\\recur[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -509,7 +455,8 @@
 		"prefix":"recur",
 		"body":[
 			"\\recur{${1:expression}}[${2:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -517,7 +464,8 @@
 		"prefix":"recur",
 		"body":[
 			"\\recur[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -525,7 +473,8 @@
 		"prefix":"recur",
 		"body":[
 			"\\recur{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -533,7 +482,71 @@
 		"prefix":"recur",
 		"body":[
 			"\\recur[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"recur*{}":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur*[]{}":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur*{}[]":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur*[]{}[]":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur*{}[][]":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"recur*[]{}[][]":{
+		"prefix":"*recur",
+		"body":[
+			"\\recur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur{}":{
+		"prefix":"nmcRecur",
+		"body":[
+			"\\nmcRecur{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +554,8 @@
 		"prefix":"nmcRecur",
 		"body":[
 			"\\nmcRecur[${2:settings%keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -549,7 +563,8 @@
 		"prefix":"nmcRecur",
 		"body":[
 			"\\nmcRecur{${1:expression}}[${2:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -557,7 +572,8 @@
 		"prefix":"nmcRecur",
 		"body":[
 			"\\nmcRecur[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -565,7 +581,8 @@
 		"prefix":"nmcRecur",
 		"body":[
 			"\\nmcRecur{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -573,6 +590,61 @@
 		"prefix":"nmcRecur",
 		"body":[
 			"\\nmcRecur[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nmcRecur*{}":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur*[]{}":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur*{}[]":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*{${1:expression}}[${2:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur*[]{}[]":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur*{}[][]":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*{${1:expression}}[${2:vv-list%formula}][${3:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcRecur*[]{}[][]":{
+		"prefix":"*nmcRecur",
+		"body":[
+			"\\nmcRecur*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

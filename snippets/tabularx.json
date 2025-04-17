@@ -5,7 +5,8 @@
 		"prefix":"arraybackslash",
 		"body":[
 			"\\arraybackslash"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tabularxcolumn",
 		"body":[
 			"\\tabularxcolumn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,26 +23,29 @@
 		"prefix":"tracingtabularx",
 		"body":[
 			"\\tracingtabularx"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabularx":{
+	"tabularx{}{}":{
 		"prefix":"tabularx",
 		"body":[
 			"\\begin{tabularx}",
-				"\t$1",
+				"\t{${1:width}}{${2:preamble}}",
 			"\\end{tabularx}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabularx":{
+	"tabularx{}[]{}":{
 		"prefix":"tabularx",
 		"body":[
 			"\\begin{tabularx}",
-				"\t$1",
+				"\t{${1:width}}[${3:pos}]{${2:preamble}}",
 			"\\end{tabularx}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

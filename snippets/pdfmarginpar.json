@@ -5,15 +5,8 @@
 		"prefix":"pdfmarginpar",
 		"body":[
 			"\\pdfmarginpar{${1:text}}"
-		]
-	},
-
-
-	"pdfmarginparset{}":{
-		"prefix":"pdfmarginparset",
-		"body":[
-			"\\pdfmarginparset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"pdfmarginpar",
 		"body":[
 			"\\pdfmarginpar[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfmarginparset{}":{
+		"prefix":"pdfmarginparset",
+		"body":[
+			"\\pdfmarginparset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

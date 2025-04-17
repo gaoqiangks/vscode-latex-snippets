@@ -5,7 +5,8 @@
 		"prefix":"bfig",
 		"body":[
 			"\\bfig"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"efig",
 		"body":[
 			"\\efig"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"mon^",
 		"body":[
 			"\\mon^{${1:L}}_{${2:L}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"epi^",
 		"body":[
 			"\\epi^{${1:L}}_{${2:L}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"toleft^",
 		"body":[
 			"\\toleft^{${1:L}}_{${2:L}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"monleft^",
 		"body":[
 			"\\monleft^{${1:L}}_{${2:L}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,23 +59,8 @@
 		"prefix":"epileft^",
 		"body":[
 			"\\epileft^{${1:L}}_{${2:L}}"
-		]
-	},
-
-
-	"twoar()":{
-		"prefix":"twoar",
-		"body":[
-			"\\twoar({${1:dx}},{${2:dy}})"
-		]
-	},
-
-
-	"Loop(){}()_{}":{
-		"prefix":"Loop",
-		"body":[
-			"\\Loop({${1:x}},{${2:y}}){${3:N}}({${4:dirstart}},{${5:dirend}})_{${6:L}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +68,17 @@
 		"prefix":"place",
 		"body":[
 			"\\place({${1:x}},{${2:y}})[${4:{${3:item}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"twoar()":{
+		"prefix":"twoar",
+		"body":[
+			"\\twoar({${1:dx}},{${2:dy}})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,6 +86,16 @@
 		"prefix":"node ",
 		"body":[
 			"\\node {${1:id}}({${2:x}},{${3:y}})[${5:{${4:N}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Loop(){}()_{}":{
+		"prefix":"Loop",
+		"body":[
+			"\\Loop({${1:x}},{${2:y}}){${3:N}}({${4:dirstart}},{${5:dirend}})_{${6:L}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

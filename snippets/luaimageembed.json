@@ -5,23 +5,8 @@
 		"prefix":"includegraphicsembedded",
 		"body":[
 			"\\includegraphicsembedded{${1:base64-encoded image}}"
-		]
-	},
-
-
-	"pgfdeclareimageembedded{}{}":{
-		"prefix":"pgfdeclareimageembedded",
-		"body":[
-			"\\pgfdeclareimageembedded{${1:image name}}{${2:base64-encoded image}}"
-		]
-	},
-
-
-	"pgfimageembedded{}":{
-		"prefix":"pgfimageembedded",
-		"body":[
-			"\\pgfimageembedded{${1:base64-encoded image}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"includegraphicsembedded",
 		"body":[
 			"\\includegraphicsembedded[${2:options%keyvals}]{${1:base64-encoded image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfdeclareimageembedded{}{}":{
+		"prefix":"pgfdeclareimageembedded",
+		"body":[
+			"\\pgfdeclareimageembedded{${1:image name}}{${2:base64-encoded image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"pgfdeclareimageembedded",
 		"body":[
 			"\\pgfdeclareimageembedded[${3:options%keyvals}]{${1:image name}}{${2:base64-encoded image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfimageembedded{}":{
+		"prefix":"pgfimageembedded",
+		"body":[
+			"\\pgfimageembedded{${1:base64-encoded image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"pgfimageembedded",
 		"body":[
 			"\\pgfimageembedded[${2:options%keyvals}]{${1:base64-encoded image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

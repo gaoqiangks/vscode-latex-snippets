@@ -5,7 +5,8 @@
 		"prefix":"settabular",
 		"body":[
 			"\\settabular{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"lttdebugON",
 		"body":[
 			"\\lttdebugON"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"lttdebugOFF",
 		"body":[
 			"\\lttdebugOFF"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"lttdebugprt",
 		"body":[
 			"\\lttdebugprt"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,167 +41,8 @@
 		"prefix":"MC",
 		"body":[
 			"\\MC{${1:contents%text}}"
-		]
-	},
-
-
-	"setMCrepl{}{}":{
-		"prefix":"setMCrepl",
-		"body":[
-			"\\setMCrepl{${1:column}}{${2:spec}}"
-		]
-	},
-
-
-	"setMChordef{}{}":{
-		"prefix":"setMChordef",
-		"body":[
-			"\\setMChordef{${1:column}}{${2:alignments}}"
-		]
-	},
-
-
-	"setMCverdef{}{}":{
-		"prefix":"setMCverdef",
-		"body":[
-			"\\setMCverdef{${1:column}}{${2:alignments}}"
-		]
-	},
-
-
-	"addMCsicol{}":{
-		"prefix":"addMCsicol",
-		"body":[
-			"\\addMCsicol{${1:column}}"
-		]
-	},
-
-
-	"midrulesat{}":{
-		"prefix":"midrulesat",
-		"body":[
-			"\\midrulesat{${1:row1,row2,...}}"
-		]
-	},
-
-
-	"gmidrule{}":{
-		"prefix":"gmidrule",
-		"body":[
-			"\\gmidrule{${1:colspecs}}"
-		]
-	},
-
-
-	"gmidrule(){}":{
-		"prefix":"gmidrule",
-		"body":[
-			"\\gmidrule(${2:trim}){${1:colspecs}}"
-		]
-	},
-
-
-	"gcmidrule{}":{
-		"prefix":"gcmidrule",
-		"body":[
-			"\\gcmidrule{${1:colspecs}}"
-		]
-	},
-
-
-	"gcmidrule(){}":{
-		"prefix":"gcmidrule",
-		"body":[
-			"\\gcmidrule(${2:trim}){${1:colspecs}}"
-		]
-	},
-
-
-	"gcmidrules{}":{
-		"prefix":"gcmidrules",
-		"body":[
-			"\\gcmidrules{${1:colspecs}}"
-		]
-	},
-
-
-	"gcmidrules(){}":{
-		"prefix":"gcmidrules",
-		"body":[
-			"\\gcmidrules(${2:trim}){${1:colspecs}}"
-		]
-	},
-
-
-	"cmidrules{}":{
-		"prefix":"cmidrules",
-		"body":[
-			"\\cmidrules{${1:colspecs}}"
-		]
-	},
-
-
-	"cmidrules(){}":{
-		"prefix":"cmidrules",
-		"body":[
-			"\\cmidrules(${2:trim}){${1:colspecs}}"
-		]
-	},
-
-
-	"midruleX{}":{
-		"prefix":"midruleX",
-		"body":[
-			"\\midruleX{${1:keyvals}}"
-		]
-	},
-
-
-	"resetmidruleX":{
-		"prefix":"resetmidruleX",
-		"body":[
-			"\\resetmidruleX"
-		]
-	},
-
-
-	"MC*{}":{
-		"prefix":"*MC",
-		"body":[
-			"\\MC*{${1:contents%text}}"
-		]
-	},
-
-
-	"MC*[]{}":{
-		"prefix":"*MC",
-		"body":[
-			"\\MC*[${2:cell spec}]{${1:contents%text}}"
-		]
-	},
-
-
-	"MC*[][]<>{}":{
-		"prefix":"*MC",
-		"body":[
-			"\\MC*[${2:cell spec}][${3:override multicol}]<${4:cell format}>{${1:contents%text}}"
-		]
-	},
-
-
-	"midruleX*{}":{
-		"prefix":"*midruleX",
-		"body":[
-			"\\midruleX*{${1:keyvals}}"
-		]
-	},
-
-
-	"midruleX*[]{}":{
-		"prefix":"*midruleX",
-		"body":[
-			"\\midruleX*[${2:o|${3:n}|f}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +50,8 @@
 		"prefix":"MC",
 		"body":[
 			"\\MC[${2:cell spec}]{${1:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +59,161 @@
 		"prefix":"MC",
 		"body":[
 			"\\MC[${2:cell spec}][${3:override multicol}]<${4:cell format}>{${1:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MC*{}":{
+		"prefix":"*MC",
+		"body":[
+			"\\MC*{${1:contents%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MC*[]{}":{
+		"prefix":"*MC",
+		"body":[
+			"\\MC*[${2:cell spec}]{${1:contents%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MC*[][]<>{}":{
+		"prefix":"*MC",
+		"body":[
+			"\\MC*[${2:cell spec}][${3:override multicol}]<${4:cell format}>{${1:contents%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setMCrepl{}{}":{
+		"prefix":"setMCrepl",
+		"body":[
+			"\\setMCrepl{${1:column}}{${2:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setMChordef{}{}":{
+		"prefix":"setMChordef",
+		"body":[
+			"\\setMChordef{${1:column}}{${2:alignments}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setMCverdef{}{}":{
+		"prefix":"setMCverdef",
+		"body":[
+			"\\setMCverdef{${1:column}}{${2:alignments}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addMCsicol{}":{
+		"prefix":"addMCsicol",
+		"body":[
+			"\\addMCsicol{${1:column}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"midrulesat{}":{
+		"prefix":"midrulesat",
+		"body":[
+			"\\midrulesat{${1:row1,row2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gmidrule{}":{
+		"prefix":"gmidrule",
+		"body":[
+			"\\gmidrule{${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gmidrule(){}":{
+		"prefix":"gmidrule",
+		"body":[
+			"\\gmidrule(${2:trim}){${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gcmidrule{}":{
+		"prefix":"gcmidrule",
+		"body":[
+			"\\gcmidrule{${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gcmidrule(){}":{
+		"prefix":"gcmidrule",
+		"body":[
+			"\\gcmidrule(${2:trim}){${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gcmidrules{}":{
+		"prefix":"gcmidrules",
+		"body":[
+			"\\gcmidrules{${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gcmidrules(){}":{
+		"prefix":"gcmidrules",
+		"body":[
+			"\\gcmidrules(${2:trim}){${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrules{}":{
+		"prefix":"cmidrules",
+		"body":[
+			"\\cmidrules{${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrules(){}":{
+		"prefix":"cmidrules",
+		"body":[
+			"\\cmidrules(${2:trim}){${1:colspecs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"midruleX{}":{
+		"prefix":"midruleX",
+		"body":[
+			"\\midruleX{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +221,35 @@
 		"prefix":"midruleX",
 		"body":[
 			"\\midruleX[${2:o|${3:n}|f}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"midruleX*{}":{
+		"prefix":"*midruleX",
+		"body":[
+			"\\midruleX*{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"midruleX*[]{}":{
+		"prefix":"*midruleX",
+		"body":[
+			"\\midruleX*[${2:o|${3:n}|f}]{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"resetmidruleX":{
+		"prefix":"resetmidruleX",
+		"body":[
+			"\\resetmidruleX"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,6 +257,7 @@
 		"prefix":"resetmidruleX",
 		"body":[
 			"\\resetmidruleX[${1:counter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

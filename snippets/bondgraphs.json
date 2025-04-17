@@ -5,15 +5,8 @@
 		"prefix":"bond",
 		"body":[
 			"\\bond"
-		]
-	},
-
-
-	"bgelement{}":{
-		"prefix":"bgelement",
-		"body":[
-			"\\bgelement{${1:element}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"bond",
 		"body":[
 			"\\bond[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgelement{}":{
+		"prefix":"bgelement",
+		"body":[
+			"\\bgelement{${1:element}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"bgelement",
 		"body":[
 			"\\bgelement[${2:options%keyvals}]{${1:element}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -39,16 +43,18 @@
 			"\\begin{bondgraph}",
 				"\t$1",
 			"\\end{bondgraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bondgraph":{
+	"bondgraph[]":{
 		"prefix":"bondgraph",
 		"body":[
 			"\\begin{bondgraph}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{bondgraph}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

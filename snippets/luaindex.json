@@ -5,7 +5,8 @@
 		"prefix":"setupluaindex",
 		"body":[
 			"\\setupluaindex{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"see",
 		"body":[
 			"\\see{${1:text}}{${2:page}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"seealso",
 		"body":[
 			"\\seealso{${1:text}}{${2:page}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"seename",
 		"body":[
 			"\\seename"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"alsoname",
 		"body":[
 			"\\alsoname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,111 +50,8 @@
 		"prefix":"newindex",
 		"body":[
 			"\\newindex{${1:index name}}"
-		]
-	},
-
-
-	"luaindex{}{}":{
-		"prefix":"luaindex",
-		"body":[
-			"\\luaindex{${1:index name}}{${2:entry}}"
-		]
-	},
-
-
-	"luasubindex{}{}{}":{
-		"prefix":"luasubindex",
-		"body":[
-			"\\luasubindex{${1:index name}}{${2:entry}}{${3:subentry}}"
-		]
-	},
-
-
-	"luasubsubindex{}{}{}{}":{
-		"prefix":"luasubsubindex",
-		"body":[
-			"\\luasubsubindex{${1:index name}}{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
-		]
-	},
-
-
-	"subindex{}{}":{
-		"prefix":"subindex",
-		"body":[
-			"\\subindex{${1:entry}}{${2:subentry}}"
-		]
-	},
-
-
-	"subsubindex{}{}{}":{
-		"prefix":"subsubindex",
-		"body":[
-			"\\subsubindex{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
-		]
-	},
-
-
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex"
-		]
-	},
-
-
-	"indexgroup{}":{
-		"prefix":"indexgroup",
-		"body":[
-			"\\indexgroup{${1:group}}"
-		]
-	},
-
-
-	"indexspace":{
-		"prefix":"indexspace",
-		"body":[
-			"\\indexspace"
-		]
-	},
-
-
-	"symbolsname":{
-		"prefix":"symbolsname",
-		"body":[
-			"\\symbolsname"
-		]
-	},
-
-
-	"numbersname":{
-		"prefix":"numbersname",
-		"body":[
-			"\\numbersname"
-		]
-	},
-
-
-	"indexpagenumbers{}":{
-		"prefix":"indexpagenumbers",
-		"body":[
-			"\\indexpagenumbers{${1:page number}}"
-		]
-	},
-
-
-	"indexpagenumber{}":{
-		"prefix":"indexpagenumber",
-		"body":[
-			"\\indexpagenumber{${1:page number}}"
-		]
-	},
-
-
-	"indexpagenumbersep":{
-		"prefix":"indexpagenumbersep",
-		"body":[
-			"\\indexpagenumbersep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +59,17 @@
 		"prefix":"newindex",
 		"body":[
 			"\\newindex[${2:options%keyvals}]{${1:index name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luaindex{}{}":{
+		"prefix":"luaindex",
+		"body":[
+			"\\luaindex{${1:index name}}{${2:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +77,17 @@
 		"prefix":"luaindex",
 		"body":[
 			"\\luaindex{${1:index name}}[${3:options%keyvals}]{${2:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luasubindex{}{}{}":{
+		"prefix":"luasubindex",
+		"body":[
+			"\\luasubindex{${1:index name}}{${2:entry}}{${3:subentry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +95,8 @@
 		"prefix":"luasubindex",
 		"body":[
 			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}{${3:subentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +104,17 @@
 		"prefix":"luasubindex",
 		"body":[
 			"\\luasubindex{${1:index name}}[${4:options%keyvals}]{${2:entry}}[${5:options}]{${3:subentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luasubsubindex{}{}{}{}":{
+		"prefix":"luasubsubindex",
+		"body":[
+			"\\luasubsubindex{${1:index name}}{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +122,8 @@
 		"prefix":"luasubsubindex",
 		"body":[
 			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}{${3:subentry}}{${4:subsubentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +131,8 @@
 		"prefix":"luasubsubindex",
 		"body":[
 			"\\luasubsubindex{${1:index name}}[${5:options%keyvals}]{${2:entry}}[${6:options}]{${3:subentry}}[${7:options}]{${4:subsubentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +140,17 @@
 		"prefix":"index",
 		"body":[
 			"\\index[${2:options%keyvals}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subindex{}{}":{
+		"prefix":"subindex",
+		"body":[
+			"\\subindex{${1:entry}}{${2:subentry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +158,8 @@
 		"prefix":"subindex",
 		"body":[
 			"\\subindex[${3:options%keyvals}]{${1:entry}}{${2:subentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +167,17 @@
 		"prefix":"subindex",
 		"body":[
 			"\\subindex[${3:options%keyvals}]{${1:entry}}[${4:options}]{${2:subentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subsubindex{}{}{}":{
+		"prefix":"subsubindex",
+		"body":[
+			"\\subsubindex{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +185,8 @@
 		"prefix":"subsubindex",
 		"body":[
 			"\\subsubindex[${4:options%keyvals}]{${1:entry}}{${2:subentry}}{${3:subsubentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +194,17 @@
 		"prefix":"subsubindex",
 		"body":[
 			"\\subsubindex[${4:options%keyvals}]{${1:entry}}[${5:options}]{${2:subentry}}[${6:options}]{${3:subsubentry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printindex":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,6 +212,70 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"indexgroup{}":{
+		"prefix":"indexgroup",
+		"body":[
+			"\\indexgroup{${1:group}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexspace":{
+		"prefix":"indexspace",
+		"body":[
+			"\\indexspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symbolsname":{
+		"prefix":"symbolsname",
+		"body":[
+			"\\symbolsname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numbersname":{
+		"prefix":"numbersname",
+		"body":[
+			"\\numbersname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexpagenumbers{}":{
+		"prefix":"indexpagenumbers",
+		"body":[
+			"\\indexpagenumbers{${1:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexpagenumber{}":{
+		"prefix":"indexpagenumber",
+		"body":[
+			"\\indexpagenumber{${1:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexpagenumbersep":{
+		"prefix":"indexpagenumbersep",
+		"body":[
+			"\\indexpagenumbersep"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

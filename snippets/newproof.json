@@ -5,7 +5,8 @@
 		"prefix":"newproof",
 		"body":[
 			"\\newproof{${1:envname}}{${2:start text}}{${3:finish text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"qed",
 		"body":[
 			"\\qed"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"qedtext",
 		"body":[
 			"\\qedtext"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,16 +34,18 @@
 			"\\begin{proof}",
 				"\t$1",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"proof":{
+	"proof[]":{
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-				"\t$1",
+				"\t[${1:label}]",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

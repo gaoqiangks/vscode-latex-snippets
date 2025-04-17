@@ -1,19 +1,12 @@
 {
 
 
-	"captcont{}":{
-		"prefix":"captcont",
-		"body":[
-			"\\captcont{${1:text}}"
-		]
-	},
-
-
 	"caption*{}":{
 		"prefix":"*caption",
 		"body":[
 			"\\caption*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -21,7 +14,8 @@
 		"prefix":"*caption",
 		"body":[
 			"\\caption*[${2:short text%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -29,7 +23,8 @@
 		"prefix":"*captcont",
 		"body":[
 			"\\captcont*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"*captcont",
 		"body":[
 			"\\captcont*[${2:short text%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"captcont{}":{
+		"prefix":"captcont",
+		"body":[
+			"\\captcont{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"captcont",
 		"body":[
 			"\\captcont[${2:short text%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

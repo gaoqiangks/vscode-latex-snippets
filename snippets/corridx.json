@@ -5,7 +5,8 @@
 		"prefix":"ia",
 		"body":[
 			"\\ia{${1:expanded text}}{${2:acronym}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"noia",
 		"body":[
 			"\\noia{${1:expanded text}}{${2:acronym}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ic",
 		"body":[
 			"\\ic{${1:index entry}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"noic",
 		"body":[
 			"\\noic{${1:index entry}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"ib",
 		"body":[
 			"\\ib{${1:expanded text}}{${2:acronym}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"noib",
 		"body":[
 			"\\noib{${1:expanded text}}{${2:acronym}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,39 +59,8 @@
 		"prefix":"ig",
 		"body":[
 			"\\ig{${1:index entry}}"
-		]
-	},
-
-
-	"noig{}":{
-		"prefix":"noig",
-		"body":[
-			"\\noig{${1:index entry}}"
-		]
-	},
-
-
-	"crrdxformatpage{}{}":{
-		"prefix":"crrdxformatpage",
-		"body":[
-			"\\crrdxformatpage{${1:type}}{${2:format}}"
-		]
-	},
-
-
-	"sectioncrrdx{}":{
-		"prefix":"sectioncrrdx",
-		"body":[
-			"\\sectioncrrdx{${1:index heading}}"
-		]
-	},
-
-
-	"swallow":{
-		"prefix":"swallow",
-		"body":[
-			"\\swallow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +68,17 @@
 		"prefix":"ig",
 		"body":[
 			"\\ig[${2:subentry}]{${1:index entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"noig{}":{
+		"prefix":"noig",
+		"body":[
+			"\\noig{${1:index entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +86,35 @@
 		"prefix":"noig",
 		"body":[
 			"\\noig[${2:subentry}]{${1:index entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"crrdxformatpage{}{}":{
+		"prefix":"crrdxformatpage",
+		"body":[
+			"\\crrdxformatpage{${1:type}}{${2:format}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectioncrrdx{}":{
+		"prefix":"sectioncrrdx",
+		"body":[
+			"\\sectioncrrdx{${1:index heading}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"swallow":{
+		"prefix":"swallow",
+		"body":[
+			"\\swallow"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,7 +124,8 @@
 			"\\begin{crrdxchem}",
 				"\t$1",
 			"\\end{crrdxchem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -121,6 +135,7 @@
 			"\\begin{crrdxacr}",
 				"\t$1",
 			"\\end{crrdxacr}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

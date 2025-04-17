@@ -5,103 +5,8 @@
 		"prefix":"lbl",
 		"body":[
 			"\\lbl{${1:coords;LaTeX content}}"
-		]
-	},
-
-
-	"lpunitlength":{
-		"prefix":"lpunitlength",
-		"body":[
-			"\\lpunitlength"
-		]
-	},
-
-
-	"lpmarginright":{
-		"prefix":"lpmarginright",
-		"body":[
-			"\\lpmarginright"
-		]
-	},
-
-
-	"lpmarginleft":{
-		"prefix":"lpmarginleft",
-		"body":[
-			"\\lpmarginleft"
-		]
-	},
-
-
-	"lpmargintop":{
-		"prefix":"lpmargintop",
-		"body":[
-			"\\lpmargintop"
-		]
-	},
-
-
-	"lpmarginbottom":{
-		"prefix":"lpmarginbottom",
-		"body":[
-			"\\lpmarginbottom"
-		]
-	},
-
-
-	"lpbgsep":{
-		"prefix":"lpbgsep",
-		"body":[
-			"\\lpbgsep"
-		]
-	},
-
-
-	"lpgridthickness":{
-		"prefix":"lpgridthickness",
-		"body":[
-			"\\lpgridthickness"
-		]
-	},
-
-
-	"lpframethickness":{
-		"prefix":"lpframethickness",
-		"body":[
-			"\\lpframethickness"
-		]
-	},
-
-
-	"lplblframethickness":{
-		"prefix":"lplblframethickness",
-		"body":[
-			"\\lplblframethickness"
-		]
-	},
-
-
-	"lpfigframethickness":{
-		"prefix":"lpfigframethickness",
-		"body":[
-			"\\lpfigframethickness"
-		]
-	},
-
-
-	"thelpgridstep":{
-		"prefix":"thelpgridstep",
-		"body":[
-			"\\thelpgridstep"
-		]
-	},
-
-
-	"thelpcoordstep":{
-		"prefix":"thelpcoordstep",
-		"body":[
-			"\\thelpcoordstep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,26 +14,137 @@
 		"prefix":"lbl",
 		"body":[
 			"\\lbl[${2:pos}]{${1:coords;LaTeX content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"lpic":{
-		"prefix":"lpic",
+	"lpunitlength":{
+		"prefix":"lpunitlength",
 		"body":[
-			"\\begin{lpic}",
-				"\t$1",
-			"\\end{lpic}"
-		]
+			"\\lpunitlength"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"lpic":{
+	"lpmarginright":{
+		"prefix":"lpmarginright",
+		"body":[
+			"\\lpmarginright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpmarginleft":{
+		"prefix":"lpmarginleft",
+		"body":[
+			"\\lpmarginleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpmargintop":{
+		"prefix":"lpmargintop",
+		"body":[
+			"\\lpmargintop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpmarginbottom":{
+		"prefix":"lpmarginbottom",
+		"body":[
+			"\\lpmarginbottom"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpbgsep":{
+		"prefix":"lpbgsep",
+		"body":[
+			"\\lpbgsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpgridthickness":{
+		"prefix":"lpgridthickness",
+		"body":[
+			"\\lpgridthickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpframethickness":{
+		"prefix":"lpframethickness",
+		"body":[
+			"\\lpframethickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lplblframethickness":{
+		"prefix":"lplblframethickness",
+		"body":[
+			"\\lplblframethickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpfigframethickness":{
+		"prefix":"lpfigframethickness",
+		"body":[
+			"\\lpfigframethickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thelpgridstep":{
+		"prefix":"thelpgridstep",
+		"body":[
+			"\\thelpgridstep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thelpcoordstep":{
+		"prefix":"thelpcoordstep",
+		"body":[
+			"\\thelpcoordstep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpic{}":{
 		"prefix":"lpic",
 		"body":[
 			"\\begin{lpic}",
-				"\t$1",
+				"\t{${1:filename(${2:x},${3:y})}}",
 			"\\end{lpic}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpic[]{}":{
+		"prefix":"lpic",
+		"body":[
+			"\\begin{lpic}",
+				"\t[${2:options}]{${1:filename(${3:x},${4:y})}}",
+			"\\end{lpic}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

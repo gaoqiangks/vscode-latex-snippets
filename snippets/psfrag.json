@@ -5,55 +5,8 @@
 		"prefix":"psfrag",
 		"body":[
 			"\\psfrag{${1:tag}}{${2:replacement}}"
-		]
-	},
-
-
-	"psfragscanon":{
-		"prefix":"psfragscanon",
-		"body":[
-			"\\psfragscanon"
-		]
-	},
-
-
-	"psfragscanoff":{
-		"prefix":"psfragscanoff",
-		"body":[
-			"\\psfragscanoff"
-		]
-	},
-
-
-	"psfragdebugon":{
-		"prefix":"psfragdebugon",
-		"body":[
-			"\\psfragdebugon"
-		]
-	},
-
-
-	"psfragdebugoff":{
-		"prefix":"psfragdebugoff",
-		"body":[
-			"\\psfragdebugoff"
-		]
-	},
-
-
-	"psfrag*{}{}":{
-		"prefix":"*psfrag",
-		"body":[
-			"\\psfrag*{${1:tag}}{${2:replacement}}"
-		]
-	},
-
-
-	"psfrag*{}[][][][]{}":{
-		"prefix":"*psfrag",
-		"body":[
-			"\\psfrag*{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,62 @@
 		"prefix":"psfrag",
 		"body":[
 			"\\psfrag{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psfrag*{}{}":{
+		"prefix":"*psfrag",
+		"body":[
+			"\\psfrag*{${1:tag}}{${2:replacement}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psfrag*{}[][][][]{}":{
+		"prefix":"*psfrag",
+		"body":[
+			"\\psfrag*{${1:tag}}[${3:posn}][${4:psposn}][${5:scale}][${6:rot}]{${2:replacement}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psfragscanon":{
+		"prefix":"psfragscanon",
+		"body":[
+			"\\psfragscanon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psfragscanoff":{
+		"prefix":"psfragscanoff",
+		"body":[
+			"\\psfragscanoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psfragdebugon":{
+		"prefix":"psfragdebugon",
+		"body":[
+			"\\psfragdebugon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psfragdebugoff":{
+		"prefix":"psfragdebugoff",
+		"body":[
+			"\\psfragdebugoff"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,6 +79,7 @@
 			"\\begin{psfrags}",
 				"\t$1",
 			"\\end{psfrags}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

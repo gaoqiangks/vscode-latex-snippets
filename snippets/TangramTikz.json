@@ -5,7 +5,8 @@
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz{${1:tangram name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"TangramTikz<TikZ options>",
 		"body":[
 			"\\TangramTikz<TikZ options>{${1:tangram name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz[${2:options%keyvals}]{${1:tangram name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"TangramTikz",
 		"body":[
 			"\\TangramTikz[${2:options%keyvals}]<${3:TikZ options}>{${1:tangram name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"PieceTangram",
 		"body":[
 			"\\PieceTangram[${2:options%keyvals}](${3:x},${4:y}){${1:piece name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"PieceTangram",
 		"body":[
 			"\\PieceTangram[${2:options%keyvals}]<${3:TikZ options}>(${4:x},${5:y}){${1:piece name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -55,26 +61,29 @@
 			"\\begin{EnvTangramTikz}",
 				"\t$1",
 			"\\end{EnvTangramTikz}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"EnvTangramTikz":{
+	"EnvTangramTikz[]":{
 		"prefix":"EnvTangramTikz",
 		"body":[
 			"\\begin{EnvTangramTikz}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{EnvTangramTikz}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"EnvTangramTikz":{
+	"EnvTangramTikz[]<>":{
 		"prefix":"EnvTangramTikz",
 		"body":[
 			"\\begin{EnvTangramTikz}",
-				"\t$1",
+				"\t[${1:options%keyvals}]<${2:TikZ options}>",
 			"\\end{EnvTangramTikz}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

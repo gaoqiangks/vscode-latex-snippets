@@ -5,7 +5,8 @@
 		"prefix":"PDFManagementAdd",
 		"body":[
 			"\\PDFManagementAdd{${1:resource path}}{${2:name}}{${3:value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,47 +14,8 @@
 		"prefix":"AddToDocumentProperties",
 		"body":[
 			"\\AddToDocumentProperties{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"GetDocumentProperties{}":{
-		"prefix":"GetDocumentProperties",
-		"body":[
-			"\\GetDocumentProperties{${1:label/property}}"
-		]
-	},
-
-
-	"ShowDocumentProperties":{
-		"prefix":"ShowDocumentProperties",
-		"body":[
-			"\\ShowDocumentProperties"
-		]
-	},
-
-
-	"hrefurl{}{}":{
-		"prefix":"hrefurl",
-		"body":[
-			"\\hrefurl{${1:URL}}{${2:text}}"
-		]
-	},
-
-
-	"hrefpdf{}{}":{
-		"prefix":"hrefpdf",
-		"body":[
-			"\\hrefpdf{${1:file}}{${2:text}}"
-		]
-	},
-
-
-	"hrefrun{}{}":{
-		"prefix":"hrefrun",
-		"body":[
-			"\\hrefrun{${1:launch link%URL}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +23,26 @@
 		"prefix":"AddToDocumentProperties",
 		"body":[
 			"\\AddToDocumentProperties[${3:label}]{${1:property}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GetDocumentProperties{}":{
+		"prefix":"GetDocumentProperties",
+		"body":[
+			"\\GetDocumentProperties{${1:label/property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowDocumentProperties":{
+		"prefix":"ShowDocumentProperties",
+		"body":[
+			"\\ShowDocumentProperties"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +50,17 @@
 		"prefix":"url",
 		"body":[
 			"\\url[${2:options%keyvals}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hrefurl{}{}":{
+		"prefix":"hrefurl",
+		"body":[
+			"\\hrefurl{${1:URL}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +68,17 @@
 		"prefix":"hrefurl",
 		"body":[
 			"\\hrefurl[${3:options%keyvals}]{${1:URL}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hrefpdf{}{}":{
+		"prefix":"hrefpdf",
+		"body":[
+			"\\hrefpdf{${1:file}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +86,17 @@
 		"prefix":"hrefpdf",
 		"body":[
 			"\\hrefpdf[${3:options%keyvals}]{${1:file}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hrefrun{}{}":{
+		"prefix":"hrefrun",
+		"body":[
+			"\\hrefrun{${1:launch link%URL}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,6 +104,7 @@
 		"prefix":"hrefrun",
 		"body":[
 			"\\hrefrun[${3:options%keyvals}]{${1:launch link%URL}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

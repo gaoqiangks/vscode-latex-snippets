@@ -1,42 +1,46 @@
 {
 
 
-	"boxedminipage":{
+	"boxedminipage{}":{
 		"prefix":"boxedminipage",
 		"body":[
 			"\\begin{boxedminipage}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{boxedminipage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"boxedminipage":{
+	"boxedminipage[]{}":{
 		"prefix":"boxedminipage",
 		"body":[
 			"\\begin{boxedminipage}",
-				"\t$1",
+				"\t[${2:pos}]{${1:width}}",
 			"\\end{boxedminipage}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"boxedminipage":{
+	"boxedminipage[][]{}":{
 		"prefix":"boxedminipage",
 		"body":[
 			"\\begin{boxedminipage}",
-				"\t$1",
+				"\t[${2:pos}][${3:height}]{${1:width}}",
 			"\\end{boxedminipage}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"boxedminipage":{
+	"boxedminipage[][][]{}":{
 		"prefix":"boxedminipage",
 		"body":[
 			"\\begin{boxedminipage}",
-				"\t$1",
+				"\t[${2:pos}][${3:height}][${4:inner-pos}]{${1:width}}",
 			"\\end{boxedminipage}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

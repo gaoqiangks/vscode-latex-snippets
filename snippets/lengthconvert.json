@@ -5,15 +5,8 @@
 		"prefix":"Convert",
 		"body":[
 			"\\Convert{${1:length}}"
-		]
-	},
-
-
-	"Convertsetup{}":{
-		"prefix":"Convertsetup",
-		"body":[
-			"\\Convertsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"Convert",
 		"body":[
 			"\\Convert[${2:options%keyvals}]{${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Convertsetup{}":{
+		"prefix":"Convertsetup",
+		"body":[
+			"\\Convertsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

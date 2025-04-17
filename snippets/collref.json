@@ -5,15 +5,8 @@
 		"prefix":"collectsep",
 		"body":[
 			"\\collectsep{${1:separator}}"
-		]
-	},
-
-
-	"nocollect{}":{
-		"prefix":"nocollect",
-		"body":[
-			"\\nocollect{${1:key}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"collectsep",
 		"body":[
 			"\\collectsep[${2:punctuation}]{${1:separator}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nocollect{}":{
+		"prefix":"nocollect",
+		"body":[
+			"\\nocollect{${1:key}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

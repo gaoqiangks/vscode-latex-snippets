@@ -5,175 +5,8 @@
 		"prefix":"acronym",
 		"body":[
 			"\\acronym{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"sentence":{
-		"prefix":"sentence",
-		"body":[
-			"\\sentence"
-		]
-	},
-
-
-	"shortacronym{}{}":{
-		"prefix":"shortacronym",
-		"body":[
-			"\\shortacronym{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"longacronym{}{}":{
-		"prefix":"longacronym",
-		"body":[
-			"\\longacronym{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"resetacronym{}":{
-		"prefix":"resetacronym",
-		"body":[
-			"\\resetacronym{${1:key%plain}}"
-		]
-	},
-
-
-	"dummyacronym{}":{
-		"prefix":"dummyacronym",
-		"body":[
-			"\\dummyacronym{${1:key%plain}}"
-		]
-	},
-
-
-	"acronymalternative{}{}{}":{
-		"prefix":"acronymalternative",
-		"body":[
-			"\\acronymalternative{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"acronymalternative{}{}*{}":{
-		"prefix":"acronymalternative",
-		"body":[
-			"\\acronymalternative{${1:arg1}}{${2:arg2}}*{${3:arg3}}"
-		]
-	},
-
-
-	"mathdef{}{}":{
-		"prefix":"mathdef",
-		"body":[
-			"\\mathdef{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"acronyms{}":{
-		"prefix":"acronyms",
-		"body":[
-			"\\acronyms{${1:name}}"
-		]
-	},
-
-
-	"acronym*{}{}":{
-		"prefix":"*acronym",
-		"body":[
-			"\\acronym*{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"acronym*[]{}{}":{
-		"prefix":"*acronym",
-		"body":[
-			"\\acronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"acronym*{}{}[]":{
-		"prefix":"*acronym",
-		"body":[
-			"\\acronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
-	},
-
-
-	"acronym*[]{}{}[]":{
-		"prefix":"*acronym",
-		"body":[
-			"\\acronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
-	},
-
-
-	"shortacronym*{}{}":{
-		"prefix":"*shortacronym",
-		"body":[
-			"\\shortacronym*{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"shortacronym*[]{}{}":{
-		"prefix":"*shortacronym",
-		"body":[
-			"\\shortacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"shortacronym*{}{}[]":{
-		"prefix":"*shortacronym",
-		"body":[
-			"\\shortacronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
-	},
-
-
-	"shortacronym*[]{}{}[]":{
-		"prefix":"*shortacronym",
-		"body":[
-			"\\shortacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
-	},
-
-
-	"longacronym*{}{}":{
-		"prefix":"*longacronym",
-		"body":[
-			"\\longacronym*{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"longacronym*[]{}{}":{
-		"prefix":"*longacronym",
-		"body":[
-			"\\longacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
-	},
-
-
-	"longacronym*{}{}[]":{
-		"prefix":"*longacronym",
-		"body":[
-			"\\longacronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
-	},
-
-
-	"longacronym*[]{}{}[]":{
-		"prefix":"*longacronym",
-		"body":[
-			"\\longacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +14,8 @@
 		"prefix":"acronym",
 		"body":[
 			"\\acronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +23,8 @@
 		"prefix":"acronym",
 		"body":[
 			"\\acronym{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +32,62 @@
 		"prefix":"acronym",
 		"body":[
 			"\\acronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"acronym*{}{}":{
+		"prefix":"*acronym",
+		"body":[
+			"\\acronym*{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"acronym*[]{}{}":{
+		"prefix":"*acronym",
+		"body":[
+			"\\acronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"acronym*{}{}[]":{
+		"prefix":"*acronym",
+		"body":[
+			"\\acronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"acronym*[]{}{}[]":{
+		"prefix":"*acronym",
+		"body":[
+			"\\acronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sentence":{
+		"prefix":"sentence",
+		"body":[
+			"\\sentence"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shortacronym{}{}":{
+		"prefix":"shortacronym",
+		"body":[
+			"\\shortacronym{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +95,8 @@
 		"prefix":"shortacronym",
 		"body":[
 			"\\shortacronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +104,8 @@
 		"prefix":"shortacronym",
 		"body":[
 			"\\shortacronym{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +113,53 @@
 		"prefix":"shortacronym",
 		"body":[
 			"\\shortacronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"shortacronym*{}{}":{
+		"prefix":"*shortacronym",
+		"body":[
+			"\\shortacronym*{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shortacronym*[]{}{}":{
+		"prefix":"*shortacronym",
+		"body":[
+			"\\shortacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shortacronym*{}{}[]":{
+		"prefix":"*shortacronym",
+		"body":[
+			"\\shortacronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shortacronym*[]{}{}[]":{
+		"prefix":"*shortacronym",
+		"body":[
+			"\\shortacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"longacronym{}{}":{
+		"prefix":"longacronym",
+		"body":[
+			"\\longacronym{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +167,8 @@
 		"prefix":"longacronym",
 		"body":[
 			"\\longacronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +176,8 @@
 		"prefix":"longacronym",
 		"body":[
 			"\\longacronym{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +185,89 @@
 		"prefix":"longacronym",
 		"body":[
 			"\\longacronym[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"longacronym*{}{}":{
+		"prefix":"*longacronym",
+		"body":[
+			"\\longacronym*{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"longacronym*[]{}{}":{
+		"prefix":"*longacronym",
+		"body":[
+			"\\longacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"longacronym*{}{}[]":{
+		"prefix":"*longacronym",
+		"body":[
+			"\\longacronym*{${1:abbr}}{${2:def%text}}[${3:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"longacronym*[]{}{}[]":{
+		"prefix":"*longacronym",
+		"body":[
+			"\\longacronym*[${3:typeset abbr}]{${1:abbr}}{${2:def%text}}[${4:plural def%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"resetacronym{}":{
+		"prefix":"resetacronym",
+		"body":[
+			"\\resetacronym{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dummyacronym{}":{
+		"prefix":"dummyacronym",
+		"body":[
+			"\\dummyacronym{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"acronymalternative{}{}{}":{
+		"prefix":"acronymalternative",
+		"body":[
+			"\\acronymalternative{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"acronymalternative{}{}*{}":{
+		"prefix":"acronymalternative",
+		"body":[
+			"\\acronymalternative{${1:arg1}}{${2:arg2}}*{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mathdef{}{}":{
+		"prefix":"mathdef",
+		"body":[
+			"\\mathdef{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +275,17 @@
 		"prefix":"mathdef",
 		"body":[
 			"\\mathdef{${1:cmd}}[${3:args}]{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"acronyms{}":{
+		"prefix":"acronyms",
+		"body":[
+			"\\acronyms{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,6 +293,7 @@
 		"prefix":"acronyms",
 		"body":[
 			"\\acronyms[${2:opt}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

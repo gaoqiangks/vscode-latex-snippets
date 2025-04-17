@@ -5,95 +5,8 @@
 		"prefix":"avm",
 		"body":[
 			"\\avm{${1:structure}}"
-		]
-	},
-
-
-	"lframe":{
-		"prefix":"lframe",
-		"body":[
-			"\\lframe"
-		]
-	},
-
-
-	"rframe":{
-		"prefix":"rframe",
-		"body":[
-			"\\rframe"
-		]
-	},
-
-
-	"tag{}":{
-		"prefix":"tag",
-		"body":[
-			"\\tag{${1:identifier}}"
-		]
-	},
-
-
-	"type{}":{
-		"prefix":"type",
-		"body":[
-			"\\type{${1:type}}"
-		]
-	},
-
-
-	"id{}{}":{
-		"prefix":"id",
-		"body":[
-			"\\id{${1:id}}{${2:structure}}"
-		]
-	},
-
-
-	"punk{}{}":{
-		"prefix":"punk",
-		"body":[
-			"\\punk{${1:attribute}}{${2:type}}"
-		]
-	},
-
-
-	"shuffle":{
-		"prefix":"shuffle",
-		"body":[
-			"\\shuffle"
-		]
-	},
-
-
-	"avmsetup{}":{
-		"prefix":"avmsetup",
-		"body":[
-			"\\avmsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"avmdefinestyle{}{}":{
-		"prefix":"avmdefinestyle",
-		"body":[
-			"\\avmdefinestyle{${1:name}}{${2:settings%keyvals}}"
-		]
-	},
-
-
-	"avmdefinecommand{}{}":{
-		"prefix":"avmdefinecommand",
-		"body":[
-			"\\avmdefinecommand{${1:name}}{${2:settings%keyvals}}"
-		]
-	},
-
-
-	"type*{}":{
-		"prefix":"*type",
-		"body":[
-			"\\type*{${1:type}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,107 @@
 		"prefix":"avm",
 		"body":[
 			"\\avm[${2:options%keyvals}]{${1:structure}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lframe":{
+		"prefix":"lframe",
+		"body":[
+			"\\lframe"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rframe":{
+		"prefix":"rframe",
+		"body":[
+			"\\rframe"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tag{}":{
+		"prefix":"tag",
+		"body":[
+			"\\tag{${1:identifier}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"type{}":{
+		"prefix":"type",
+		"body":[
+			"\\type{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"type*{}":{
+		"prefix":"*type",
+		"body":[
+			"\\type*{${1:type}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"id{}{}":{
+		"prefix":"id",
+		"body":[
+			"\\id{${1:id}}{${2:structure}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"punk{}{}":{
+		"prefix":"punk",
+		"body":[
+			"\\punk{${1:attribute}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shuffle":{
+		"prefix":"shuffle",
+		"body":[
+			"\\shuffle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avmsetup{}":{
+		"prefix":"avmsetup",
+		"body":[
+			"\\avmsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avmdefinestyle{}{}":{
+		"prefix":"avmdefinestyle",
+		"body":[
+			"\\avmdefinestyle{${1:name}}{${2:settings%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avmdefinecommand{}{}":{
+		"prefix":"avmdefinecommand",
+		"body":[
+			"\\avmdefinecommand{${1:name}}{${2:settings%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +122,7 @@
 		"prefix":"avmdefinecommand",
 		"body":[
 			"\\avmdefinecommand{${1:name}}[${3:label}]{${2:settings%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -1,19 +1,12 @@
 {
 
 
-	"testboolKV{}{}{}":{
-		"prefix":"testboolKV",
-		"body":[
-			"\\testboolKV{${1:arg}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
 	"setKV[]{}":{
 		"prefix":"setKV",
 		"body":[
 			"\\setKV[${2:keygroup name}]{${1:key1=val1,key2=val2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -21,7 +14,8 @@
 		"prefix":"setKVdefault",
 		"body":[
 			"\\setKVdefault[${2:keygroup name}]{${1:key1=val1,key2=val2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -29,7 +23,8 @@
 		"prefix":"useKV",
 		"body":[
 			"\\useKV[${2:keygroup}]{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +32,8 @@
 		"prefix":"restoreKV",
 		"body":[
 			"\\restoreKV[${1:keygroup}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +41,8 @@
 		"prefix":"useKVdefault",
 		"body":[
 			"\\useKVdefault[${1:keygroup}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +50,8 @@
 		"prefix":"ifboolKV",
 		"body":[
 			"\\ifboolKV[${4:keygroup}]{${1:key%plain}}{${2:true code}}{${3:false code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +59,8 @@
 		"prefix":"showKV",
 		"body":[
 			"\\showKV[${2:keygroup}]{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,6 +68,16 @@
 		"prefix":"defKV",
 		"body":[
 			"\\defKV[${2:keygroup}]{${1:key1=code1,key2=code2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"testboolKV{}{}{}":{
+		"prefix":"testboolKV",
+		"body":[
+			"\\testboolKV{${1:arg}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

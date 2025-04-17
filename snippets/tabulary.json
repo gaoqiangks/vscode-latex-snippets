@@ -5,7 +5,8 @@
 		"prefix":"arraybackslash",
 		"body":[
 			"\\arraybackslash"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tyformat",
 		"body":[
 			"\\tyformat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"tymin",
 		"body":[
 			"\\tymin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,16 +32,18 @@
 		"prefix":"tymax",
 		"body":[
 			"\\tymax"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabulary":{
+	"tabulary{}{}":{
 		"prefix":"tabulary",
 		"body":[
 			"\\begin{tabulary}",
-				"\t$1",
+				"\t{${1:width}}{${2:preamble}}",
 			"\\end{tabulary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

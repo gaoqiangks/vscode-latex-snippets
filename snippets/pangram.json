@@ -5,23 +5,8 @@
 		"prefix":"pangram",
 		"body":[
 			"\\pangram"
-		]
-	},
-
-
-	"PangramSetup{}":{
-		"prefix":"PangramSetup",
-		"body":[
-			"\\PangramSetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"NewPangramClass{}{}":{
-		"prefix":"NewPangramClass",
-		"body":[
-			"\\NewPangramClass{${1:text class}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +14,25 @@
 		"prefix":"pangram",
 		"body":[
 			"\\pangram[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PangramSetup{}":{
+		"prefix":"PangramSetup",
+		"body":[
+			"\\PangramSetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewPangramClass{}{}":{
+		"prefix":"NewPangramClass",
+		"body":[
+			"\\NewPangramClass{${1:text class}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

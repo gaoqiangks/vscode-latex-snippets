@@ -5,159 +5,8 @@
 		"prefix":"zhnumber",
 		"body":[
 			"\\zhnumber{${1:number}}"
-		]
-	},
-
-
-	"zhdigits{}":{
-		"prefix":"zhdigits",
-		"body":[
-			"\\zhdigits{${1:number}}"
-		]
-	},
-
-
-	"zhnum{}":{
-		"prefix":"zhnum",
-		"body":[
-			"\\zhnum{${1:counter}}"
-		]
-	},
-
-
-	"zhdig{}":{
-		"prefix":"zhdig",
-		"body":[
-			"\\zhdig{${1:counter}}"
-		]
-	},
-
-
-	"zhweekday{}":{
-		"prefix":"zhweekday",
-		"body":[
-			"\\zhweekday{${1:yyyy/mm/dd}}"
-		]
-	},
-
-
-	"zhdate{}":{
-		"prefix":"zhdate",
-		"body":[
-			"\\zhdate{${1:yyyy/mm/dd}}"
-		]
-	},
-
-
-	"zhtoday":{
-		"prefix":"zhtoday",
-		"body":[
-			"\\zhtoday"
-		]
-	},
-
-
-	"zhtime{}":{
-		"prefix":"zhtime",
-		"body":[
-			"\\zhtime{${1:hh:mm}}"
-		]
-	},
-
-
-	"zhcurrtime":{
-		"prefix":"zhcurrtime",
-		"body":[
-			"\\zhcurrtime"
-		]
-	},
-
-
-	"zhtiangan{}":{
-		"prefix":"zhtiangan",
-		"body":[
-			"\\zhtiangan{${1:number}}"
-		]
-	},
-
-
-	"zhdizhi{}":{
-		"prefix":"zhdizhi",
-		"body":[
-			"\\zhdizhi{${1:number}}"
-		]
-	},
-
-
-	"zhganzhi{}":{
-		"prefix":"zhganzhi",
-		"body":[
-			"\\zhganzhi{${1:number}}"
-		]
-	},
-
-
-	"zhganzhinian{}":{
-		"prefix":"zhganzhinian",
-		"body":[
-			"\\zhganzhinian{${1:year}}"
-		]
-	},
-
-
-	"zhnumExtendScaleMap{}":{
-		"prefix":"zhnumExtendScaleMap",
-		"body":[
-			"\\zhnumExtendScaleMap{${1:character1, character2, ..., charactern}}"
-		]
-	},
-
-
-	"zhnumsetup{}":{
-		"prefix":"zhnumsetup",
-		"body":[
-			"\\zhnumsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"zhnumClearWrapper":{
-		"prefix":"zhnumClearWrapper",
-		"body":[
-			"\\zhnumClearWrapper"
-		]
-	},
-
-
-	"zhnumResetWrapper":{
-		"prefix":"zhnumResetWrapper",
-		"body":[
-			"\\zhnumResetWrapper"
-		]
-	},
-
-
-	"zhdigits*{}":{
-		"prefix":"*zhdigits",
-		"body":[
-			"\\zhdigits*{${1:number}}"
-		]
-	},
-
-
-	"zhdigits*[]{}":{
-		"prefix":"*zhdigits",
-		"body":[
-			"\\zhdigits*[${2:options%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"zhdate*{}":{
-		"prefix":"*zhdate",
-		"body":[
-			"\\zhdate*{${1:yyyy/mm/dd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +14,17 @@
 		"prefix":"zhnumber",
 		"body":[
 			"\\zhnumber[${2:options%keyvals}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhdigits{}":{
+		"prefix":"zhdigits",
+		"body":[
+			"\\zhdigits{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +32,35 @@
 		"prefix":"zhdigits",
 		"body":[
 			"\\zhdigits[${2:options%keyvals}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhdigits*{}":{
+		"prefix":"*zhdigits",
+		"body":[
+			"\\zhdigits*{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zhdigits*[]{}":{
+		"prefix":"*zhdigits",
+		"body":[
+			"\\zhdigits*[${2:options%keyvals}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zhnum{}":{
+		"prefix":"zhnum",
+		"body":[
+			"\\zhnum{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +68,17 @@
 		"prefix":"zhnum",
 		"body":[
 			"\\zhnum[${2:options%keyvals}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhdig{}":{
+		"prefix":"zhdig",
+		"body":[
+			"\\zhdig{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +86,107 @@
 		"prefix":"zhdig",
 		"body":[
 			"\\zhdig[${2:options%keyvals}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhweekday{}":{
+		"prefix":"zhweekday",
+		"body":[
+			"\\zhweekday{${1:yyyy/mm/dd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhdate{}":{
+		"prefix":"zhdate",
+		"body":[
+			"\\zhdate{${1:yyyy/mm/dd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhdate*{}":{
+		"prefix":"*zhdate",
+		"body":[
+			"\\zhdate*{${1:yyyy/mm/dd}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zhtoday":{
+		"prefix":"zhtoday",
+		"body":[
+			"\\zhtoday"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhtime{}":{
+		"prefix":"zhtime",
+		"body":[
+			"\\zhtime{${1:hh:mm}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhcurrtime":{
+		"prefix":"zhcurrtime",
+		"body":[
+			"\\zhcurrtime"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhtiangan{}":{
+		"prefix":"zhtiangan",
+		"body":[
+			"\\zhtiangan{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhdizhi{}":{
+		"prefix":"zhdizhi",
+		"body":[
+			"\\zhdizhi{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhganzhi{}":{
+		"prefix":"zhganzhi",
+		"body":[
+			"\\zhganzhi{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhganzhinian{}":{
+		"prefix":"zhganzhinian",
+		"body":[
+			"\\zhganzhinian{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhnumExtendScaleMap{}":{
+		"prefix":"zhnumExtendScaleMap",
+		"body":[
+			"\\zhnumExtendScaleMap{${1:character1, character2, ..., charactern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,6 +194,34 @@
 		"prefix":"zhnumExtendScaleMap",
 		"body":[
 			"\\zhnumExtendScaleMap[${2:character}]{${1:character1, character2, ..., charactern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhnumsetup{}":{
+		"prefix":"zhnumsetup",
+		"body":[
+			"\\zhnumsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhnumClearWrapper":{
+		"prefix":"zhnumClearWrapper",
+		"body":[
+			"\\zhnumClearWrapper"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zhnumResetWrapper":{
+		"prefix":"zhnumResetWrapper",
+		"body":[
+			"\\zhnumResetWrapper"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

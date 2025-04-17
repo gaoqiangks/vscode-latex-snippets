@@ -5,71 +5,8 @@
 		"prefix":"toprule",
 		"body":[
 			"\\toprule"
-		]
-	},
-
-
-	"midrule":{
-		"prefix":"midrule",
-		"body":[
-			"\\midrule"
-		]
-	},
-
-
-	"cmidrule{}":{
-		"prefix":"cmidrule",
-		"body":[
-			"\\cmidrule{${1:i-j}}"
-		]
-	},
-
-
-	"bottomrule":{
-		"prefix":"bottomrule",
-		"body":[
-			"\\bottomrule"
-		]
-	},
-
-
-	"cmidrulemore{}":{
-		"prefix":"cmidrulemore",
-		"body":[
-			"\\cmidrulemore{${1:i-j}}"
-		]
-	},
-
-
-	"morecmidrules":{
-		"prefix":"morecmidrules",
-		"body":[
-			"\\morecmidrules"
-		]
-	},
-
-
-	"specialrule{}{}{}":{
-		"prefix":"specialrule",
-		"body":[
-			"\\specialrule{${1:options%keyvals}}{${2:belowsep}}{${3:abovesep}}"
-		]
-	},
-
-
-	"addrowspace":{
-		"prefix":"addrowspace",
-		"body":[
-			"\\addrowspace"
-		]
-	},
-
-
-	"addlinespace":{
-		"prefix":"addlinespace",
-		"body":[
-			"\\addlinespace"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,17 @@
 		"prefix":"toprule",
 		"body":[
 			"\\toprule[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"midrule":{
+		"prefix":"midrule",
+		"body":[
+			"\\midrule"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +32,17 @@
 		"prefix":"midrule",
 		"body":[
 			"\\midrule[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cmidrule{}":{
+		"prefix":"cmidrule",
+		"body":[
+			"\\cmidrule{${1:i-j}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +50,17 @@
 		"prefix":"cmidrule",
 		"body":[
 			"\\cmidrule[${2:options%keyvals}]{${1:i-j}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bottomrule":{
+		"prefix":"bottomrule",
+		"body":[
+			"\\bottomrule"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"bottomrule",
 		"body":[
 			"\\bottomrule[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cmidrulemore{}":{
+		"prefix":"cmidrulemore",
+		"body":[
+			"\\cmidrulemore{${1:i-j}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,35 @@
 		"prefix":"cmidrulemore",
 		"body":[
 			"\\cmidrulemore[${2:options%keyvals}]{${1:i-j}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"morecmidrules":{
+		"prefix":"morecmidrules",
+		"body":[
+			"\\morecmidrules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specialrule{}{}{}":{
+		"prefix":"specialrule",
+		"body":[
+			"\\specialrule{${1:options%keyvals}}{${2:belowsep}}{${3:abovesep}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addrowspace":{
+		"prefix":"addrowspace",
+		"body":[
+			"\\addrowspace"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +122,17 @@
 		"prefix":"addrowspace",
 		"body":[
 			"\\addrowspace[${1:space%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addlinespace":{
+		"prefix":"addlinespace",
+		"body":[
+			"\\addlinespace"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,36 +140,40 @@
 		"prefix":"addlinespace",
 		"body":[
 			"\\addlinespace[${1:space%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"booktabs":{
+	"booktabs{}":{
 		"prefix":"booktabs",
 		"body":[
 			"\\begin{booktabs}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{booktabs}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"longtabs":{
+	"longtabs{}":{
 		"prefix":"longtabs",
 		"body":[
 			"\\begin{longtabs}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{longtabs}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"talltabs":{
+	"talltabs{}":{
 		"prefix":"talltabs",
 		"body":[
 			"\\begin{talltabs}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{talltabs}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

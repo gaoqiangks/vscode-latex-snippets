@@ -5,7 +5,8 @@
 		"prefix":"acknowledgement",
 		"body":[
 			"\\acknowledgement{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,175 +14,8 @@
 		"prefix":"alt",
 		"body":[
 			"\\alt{${1:alt text%text}}"
-		]
-	},
-
-
-	"answer{}":{
-		"prefix":"answer",
-		"body":[
-			"\\answer{${1:answer}}"
-		]
-	},
-
-
-	"chapterstyle":{
-		"prefix":"chapterstyle",
-		"body":[
-			"\\chapterstyle"
-		]
-	},
-
-
-	"choice{}":{
-		"prefix":"choice",
-		"body":[
-			"\\choice{${1:text}}"
-		]
-	},
-
-
-	"desmos{}{}{}":{
-		"prefix":"desmos",
-		"body":[
-			"\\desmos{${1:desmos id}}{${2:width}}{${3:height}}"
-		]
-	},
-
-
-	"desmosThreeD{}{}{}":{
-		"prefix":"desmosThreeD",
-		"body":[
-			"\\desmosThreeD{${1:desmos3D id}}{${2:width}}{${3:height}}"
-		]
-	},
-
-
-	"geogebra{}{}{}":{
-		"prefix":"geogebra",
-		"body":[
-			"\\geogebra{${1:geogebra id}}{${2:width}}{${3:height}}"
-		]
-	},
-
-
-	"googleSheet{}{}{}{}{}":{
-		"prefix":"googleSheet",
-		"body":[
-			"\\googleSheet{${1:id}}{${2:width}}{${3:height}}{${4:sheet id}}{${5:cell range}}"
-		]
-	},
-
-
-	"graph{}":{
-		"prefix":"graph",
-		"body":[
-			"\\graph{${1:formula}}"
-		]
-	},
-
-
-	"handoutfalse":{
-		"prefix":"handoutfalse",
-		"body":[
-			"\\handoutfalse"
-		]
-	},
-
-
-	"handouttrue":{
-		"prefix":"handouttrue",
-		"body":[
-			"\\handouttrue"
-		]
-	},
-
-
-	"ifhandout":{
-		"prefix":"ifhandout",
-		"body":[
-			"\\ifhandout"
-		]
-	},
-
-
-	"includeinteractive{}":{
-		"prefix":"includeinteractive",
-		"body":[
-			"\\includeinteractive{${1:js file%file}}"
-		]
-	},
-
-
-	"js{}":{
-		"prefix":"js",
-		"body":[
-			"\\js{${1:js code}}"
-		]
-	},
-
-
-	"license{}":{
-		"prefix":"license",
-		"body":[
-			"\\license{${1:text}}"
-		]
-	},
-
-
-	"link{}":{
-		"prefix":"link",
-		"body":[
-			"\\link{${1:URL}}"
-		]
-	},
-
-
-	"outcome{}":{
-		"prefix":"outcome",
-		"body":[
-			"\\outcome{${1:text}}"
-		]
-	},
-
-
-	"pdfOnly{}":{
-		"prefix":"pdfOnly",
-		"body":[
-			"\\pdfOnly{${1:content%text}}"
-		]
-	},
-
-
-	"sectionstyle":{
-		"prefix":"sectionstyle",
-		"body":[
-			"\\sectionstyle"
-		]
-	},
-
-
-	"wordChoice{}":{
-		"prefix":"wordChoice",
-		"body":[
-			"\\wordChoice{${1:choices%text}}"
-		]
-	},
-
-
-	"xkcd{}":{
-		"prefix":"xkcd",
-		"body":[
-			"\\xkcd{${1:xkcd name}}"
-		]
-	},
-
-
-	"youtube{}":{
-		"prefix":"youtube",
-		"body":[
-			"\\youtube{${1:youtube id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +23,26 @@
 		"prefix":"answer",
 		"body":[
 			"\\answer[${2:options%keyvals}]{${1:answer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"answer{}":{
+		"prefix":"answer",
+		"body":[
+			"\\answer{${1:answer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chapterstyle":{
+		"prefix":"chapterstyle",
+		"body":[
+			"\\chapterstyle"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +50,53 @@
 		"prefix":"choice",
 		"body":[
 			"\\choice[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"choice{}":{
+		"prefix":"choice",
+		"body":[
+			"\\choice{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"desmos{}{}{}":{
+		"prefix":"desmos",
+		"body":[
+			"\\desmos{${1:desmos id}}{${2:width}}{${3:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"desmosThreeD{}{}{}":{
+		"prefix":"desmosThreeD",
+		"body":[
+			"\\desmosThreeD{${1:desmos3D id}}{${2:width}}{${3:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"geogebra{}{}{}":{
+		"prefix":"geogebra",
+		"body":[
+			"\\geogebra{${1:geogebra id}}{${2:width}}{${3:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"googleSheet{}{}{}{}{}":{
+		"prefix":"googleSheet",
+		"body":[
+			"\\googleSheet{${1:id}}{${2:width}}{${3:height}}{${4:sheet id}}{${5:cell range}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +104,44 @@
 		"prefix":"graph",
 		"body":[
 			"\\graph[${2:options%keyvals}]{${1:formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"graph{}":{
+		"prefix":"graph",
+		"body":[
+			"\\graph{${1:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"handoutfalse":{
+		"prefix":"handoutfalse",
+		"body":[
+			"\\handoutfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"handouttrue":{
+		"prefix":"handouttrue",
+		"body":[
+			"\\handouttrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifhandout":{
+		"prefix":"ifhandout",
+		"body":[
+			"\\ifhandout"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +149,35 @@
 		"prefix":"includeinteractive",
 		"body":[
 			"\\includeinteractive[${2:id=id}]{${1:js file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includeinteractive{}":{
+		"prefix":"includeinteractive",
+		"body":[
+			"\\includeinteractive{${1:js file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"js{}":{
+		"prefix":"js",
+		"body":[
+			"\\js{${1:js code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"license{}":{
+		"prefix":"license",
+		"body":[
+			"\\license{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +185,71 @@
 		"prefix":"link",
 		"body":[
 			"\\link[${2:text}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"link{}":{
+		"prefix":"link",
+		"body":[
+			"\\link{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outcome{}":{
+		"prefix":"outcome",
+		"body":[
+			"\\outcome{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfOnly{}":{
+		"prefix":"pdfOnly",
+		"body":[
+			"\\pdfOnly{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionstyle":{
+		"prefix":"sectionstyle",
+		"body":[
+			"\\sectionstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wordChoice{}":{
+		"prefix":"wordChoice",
+		"body":[
+			"\\wordChoice{${1:choices%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xkcd{}":{
+		"prefix":"xkcd",
+		"body":[
+			"\\xkcd{${1:xkcd name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"youtube{}":{
+		"prefix":"youtube",
+		"body":[
+			"\\youtube{${1:youtube id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -231,7 +259,19 @@
 			"\\begin{algorithm}",
 				"\t$1",
 			"\\end{algorithm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"algorithm[]":{
+		"prefix":"algorithm",
+		"body":[
+			"\\begin{algorithm}",
+				"\t[${1:heading%text}]",
+			"\\end{algorithm}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -241,7 +281,19 @@
 			"\\begin{axiom}",
 				"\t$1",
 			"\\end{axiom}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axiom[]":{
+		"prefix":"axiom",
+		"body":[
+			"\\begin{axiom}",
+				"\t[${1:heading%text}]",
+			"\\end{axiom}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -251,7 +303,19 @@
 			"\\begin{claim}",
 				"\t$1",
 			"\\end{claim}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"claim[]":{
+		"prefix":"claim",
+		"body":[
+			"\\begin{claim}",
+				"\t[${1:heading%text}]",
+			"\\end{claim}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -261,7 +325,19 @@
 			"\\begin{conclusion}",
 				"\t$1",
 			"\\end{conclusion}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conclusion[]":{
+		"prefix":"conclusion",
+		"body":[
+			"\\begin{conclusion}",
+				"\t[${1:heading%text}]",
+			"\\end{conclusion}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -271,7 +347,19 @@
 			"\\begin{condition}",
 				"\t$1",
 			"\\end{condition}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"condition[]":{
+		"prefix":"condition",
+		"body":[
+			"\\begin{condition}",
+				"\t[${1:heading%text}]",
+			"\\end{condition}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -281,7 +369,19 @@
 			"\\begin{conjecture}",
 				"\t$1",
 			"\\end{conjecture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conjecture[]":{
+		"prefix":"conjecture",
+		"body":[
+			"\\begin{conjecture}",
+				"\t[${1:heading%text}]",
+			"\\end{conjecture}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -291,7 +391,19 @@
 			"\\begin{corollary}",
 				"\t$1",
 			"\\end{corollary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"corollary[]":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t[${1:heading%text}]",
+			"\\end{corollary}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -301,7 +413,19 @@
 			"\\begin{criterion}",
 				"\t$1",
 			"\\end{criterion}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"criterion[]":{
+		"prefix":"criterion",
+		"body":[
+			"\\begin{criterion}",
+				"\t[${1:heading%text}]",
+			"\\end{criterion}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -311,7 +435,19 @@
 			"\\begin{definition}",
 				"\t$1",
 			"\\end{definition}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definition[]":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t[${1:heading%text}]",
+			"\\end{definition}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -321,7 +457,8 @@
 			"\\begin{dialogue}",
 				"\t$1",
 			"\\end{dialogue}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -331,7 +468,19 @@
 			"\\begin{example}",
 				"\t$1",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"example[]":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t[${1:heading%text}]",
+			"\\end{example}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +490,8 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -351,7 +501,8 @@
 			"\\begin{expandable}",
 				"\t$1",
 			"\\end{expandable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -361,7 +512,19 @@
 			"\\begin{explanation}",
 				"\t$1",
 			"\\end{explanation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"explanation[]":{
+		"prefix":"explanation",
+		"body":[
+			"\\begin{explanation}",
+				"\t[${1:heading%text}]",
+			"\\end{explanation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -371,7 +534,8 @@
 			"\\begin{exploration}",
 				"\t$1",
 			"\\end{exploration}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +545,19 @@
 			"\\begin{fact}",
 				"\t$1",
 			"\\end{fact}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fact[]":{
+		"prefix":"fact",
+		"body":[
+			"\\begin{fact}",
+				"\t[${1:heading%text}]",
+			"\\end{fact}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -391,7 +567,19 @@
 			"\\begin{feedback}",
 				"\t$1",
 			"\\end{feedback}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"feedback[]":{
+		"prefix":"feedback",
+		"body":[
+			"\\begin{feedback}",
+				"\t[${1:header%text}]",
+			"\\end{feedback}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -401,7 +589,8 @@
 			"\\begin{foldable}",
 				"\t$1",
 			"\\end{foldable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -411,7 +600,19 @@
 			"\\begin{formula}",
 				"\t$1",
 			"\\end{formula}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formula[]":{
+		"prefix":"formula",
+		"body":[
+			"\\begin{formula}",
+				"\t[${1:heading%text}]",
+			"\\end{formula}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -421,7 +622,8 @@
 			"\\begin{freeResponse}",
 				"\t$1",
 			"\\end{freeResponse}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -431,7 +633,8 @@
 			"\\begin{hint}",
 				"\t$1",
 			"\\end{hint}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -441,7 +644,19 @@
 			"\\begin{idea}",
 				"\t$1",
 			"\\end{idea}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"idea[]":{
+		"prefix":"idea",
+		"body":[
+			"\\begin{idea}",
+				"\t[${1:heading%text}]",
+			"\\end{idea}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -451,7 +666,19 @@
 			"\\begin{image}",
 				"\t$1",
 			"\\end{image}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"image[]":{
+		"prefix":"image",
+		"body":[
+			"\\begin{image}",
+				"\t[${1:width}]",
+			"\\end{image}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -461,7 +688,8 @@
 			"\\begin{instructorIntro}",
 				"\t$1",
 			"\\end{instructorIntro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -471,7 +699,8 @@
 			"\\begin{instructorNotes}",
 				"\t$1",
 			"\\end{instructorNotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -481,7 +710,8 @@
 			"\\begin{javascript}",
 				"\t$1",
 			"\\end{javascript}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -491,7 +721,19 @@
 			"\\begin{lemma}",
 				"\t$1",
 			"\\end{lemma}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lemma[]":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t[${1:heading%text}]",
+			"\\end{lemma}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -501,7 +743,19 @@
 			"\\begin{model}",
 				"\t$1",
 			"\\end{model}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"model[]":{
+		"prefix":"model",
+		"body":[
+			"\\begin{model}",
+				"\t[${1:heading%text}]",
+			"\\end{model}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -511,7 +765,19 @@
 			"\\begin{multipleChoice}",
 				"\t$1",
 			"\\end{multipleChoice}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multipleChoice[]":{
+		"prefix":"multipleChoice",
+		"body":[
+			"\\begin{multipleChoice}",
+				"\t[${1:id=id}]",
+			"\\end{multipleChoice}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -521,7 +787,19 @@
 			"\\begin{notation}",
 				"\t$1",
 			"\\end{notation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notation[]":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t[${1:heading%text}]",
+			"\\end{notation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -531,7 +809,19 @@
 			"\\begin{observation}",
 				"\t$1",
 			"\\end{observation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"observation[]":{
+		"prefix":"observation",
+		"body":[
+			"\\begin{observation}",
+				"\t[${1:heading%text}]",
+			"\\end{observation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -541,7 +831,8 @@
 			"\\begin{onlineOnly}",
 				"\t$1",
 			"\\end{onlineOnly}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -551,7 +842,19 @@
 			"\\begin{paradox}",
 				"\t$1",
 			"\\end{paradox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paradox[]":{
+		"prefix":"paradox",
+		"body":[
+			"\\begin{paradox}",
+				"\t[${1:heading%text}]",
+			"\\end{paradox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -561,7 +864,8 @@
 			"\\begin{problem}",
 				"\t$1",
 			"\\end{problem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -571,7 +875,19 @@
 			"\\begin{procedure}",
 				"\t$1",
 			"\\end{procedure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"procedure[]":{
+		"prefix":"procedure",
+		"body":[
+			"\\begin{procedure}",
+				"\t[${1:heading%text}]",
+			"\\end{procedure}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -581,7 +897,8 @@
 			"\\begin{prompt}",
 				"\t$1",
 			"\\end{prompt}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -591,7 +908,19 @@
 			"\\begin{proposition}",
 				"\t$1",
 			"\\end{proposition}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proposition[]":{
+		"prefix":"proposition",
+		"body":[
+			"\\begin{proposition}",
+				"\t[${1:heading%text}]",
+			"\\end{proposition}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -601,7 +930,8 @@
 			"\\begin{question}",
 				"\t$1",
 			"\\end{question}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -611,7 +941,19 @@
 			"\\begin{remark}",
 				"\t$1",
 			"\\end{remark}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"remark[]":{
+		"prefix":"remark",
+		"body":[
+			"\\begin{remark}",
+				"\t[${1:heading%text}]",
+			"\\end{remark}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -621,7 +963,8 @@
 			"\\begin{sageCell}",
 				"\t$1",
 			"\\end{sageCell}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -631,7 +974,8 @@
 			"\\begin{sageOutput}",
 				"\t$1",
 			"\\end{sageOutput}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -641,7 +985,8 @@
 			"\\begin{selectAll}",
 				"\t$1",
 			"\\end{selectAll}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -651,7 +996,8 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +1007,19 @@
 			"\\begin{summary}",
 				"\t$1",
 			"\\end{summary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"summary[]":{
+		"prefix":"summary",
+		"body":[
+			"\\begin{summary}",
+				"\t[${1:heading%text}]",
+			"\\end{summary}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -671,7 +1029,19 @@
 			"\\begin{template}",
 				"\t$1",
 			"\\end{template}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"template[]":{
+		"prefix":"template",
+		"body":[
+			"\\begin{template}",
+				"\t[${1:heading%text}]",
+			"\\end{template}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -681,7 +1051,19 @@
 			"\\begin{theorem}",
 				"\t$1",
 			"\\end{theorem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theorem[]":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t[${1:heading%text}]",
+			"\\end{theorem}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -691,7 +1073,19 @@
 			"\\begin{ungraded}",
 				"\t$1",
 			"\\end{ungraded}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"validator[]":{
+		"prefix":"validator",
+		"body":[
+			"\\begin{validator}",
+				"\t[${1:expr}]",
+			"\\end{validator}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -701,7 +1095,19 @@
 			"\\begin{warning}",
 				"\t$1",
 			"\\end{warning}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"warning[]":{
+		"prefix":"warning",
+		"body":[
+			"\\begin{warning}",
+				"\t[${1:heading%text}]",
+			"\\end{warning}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -711,7 +1117,19 @@
 			"\\begin{enumerate*}",
 				"\t$1",
 			"\\end{enumerate*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"enumerate*[]":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{enumerate*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -721,7 +1139,19 @@
 			"\\begin{itemize*}",
 				"\t$1",
 			"\\end{itemize*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"itemize*[]":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{itemize*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -731,336 +1161,18 @@
 			"\\begin{description*}",
 				"\t$1",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"algorithm":{
-		"prefix":"algorithm",
-		"body":[
-			"\\begin{algorithm}",
-				"\t$1",
-			"\\end{algorithm}"
-		]
-	},
-
-
-	"axiom":{
-		"prefix":"axiom",
-		"body":[
-			"\\begin{axiom}",
-				"\t$1",
-			"\\end{axiom}"
-		]
-	},
-
-
-	"claim":{
-		"prefix":"claim",
-		"body":[
-			"\\begin{claim}",
-				"\t$1",
-			"\\end{claim}"
-		]
-	},
-
-
-	"conclusion":{
-		"prefix":"conclusion",
-		"body":[
-			"\\begin{conclusion}",
-				"\t$1",
-			"\\end{conclusion}"
-		]
-	},
-
-
-	"condition":{
-		"prefix":"condition",
-		"body":[
-			"\\begin{condition}",
-				"\t$1",
-			"\\end{condition}"
-		]
-	},
-
-
-	"conjecture":{
-		"prefix":"conjecture",
-		"body":[
-			"\\begin{conjecture}",
-				"\t$1",
-			"\\end{conjecture}"
-		]
-	},
-
-
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-				"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"criterion":{
-		"prefix":"criterion",
-		"body":[
-			"\\begin{criterion}",
-				"\t$1",
-			"\\end{criterion}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-				"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-				"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"explanation":{
-		"prefix":"explanation",
-		"body":[
-			"\\begin{explanation}",
-				"\t$1",
-			"\\end{explanation}"
-		]
-	},
-
-
-	"fact":{
-		"prefix":"fact",
-		"body":[
-			"\\begin{fact}",
-				"\t$1",
-			"\\end{fact}"
-		]
-	},
-
-
-	"feedback":{
-		"prefix":"feedback",
-		"body":[
-			"\\begin{feedback}",
-				"\t$1",
-			"\\end{feedback}"
-		]
-	},
-
-
-	"formula":{
-		"prefix":"formula",
-		"body":[
-			"\\begin{formula}",
-				"\t$1",
-			"\\end{formula}"
-		]
-	},
-
-
-	"idea":{
-		"prefix":"idea",
-		"body":[
-			"\\begin{idea}",
-				"\t$1",
-			"\\end{idea}"
-		]
-	},
-
-
-	"image":{
-		"prefix":"image",
-		"body":[
-			"\\begin{image}",
-				"\t$1",
-			"\\end{image}"
-		]
-	},
-
-
-	"lemma":{
-		"prefix":"lemma",
-		"body":[
-			"\\begin{lemma}",
-				"\t$1",
-			"\\end{lemma}"
-		]
-	},
-
-
-	"model":{
-		"prefix":"model",
-		"body":[
-			"\\begin{model}",
-				"\t$1",
-			"\\end{model}"
-		]
-	},
-
-
-	"multipleChoice":{
-		"prefix":"multipleChoice",
-		"body":[
-			"\\begin{multipleChoice}",
-				"\t$1",
-			"\\end{multipleChoice}"
-		]
-	},
-
-
-	"notation":{
-		"prefix":"notation",
-		"body":[
-			"\\begin{notation}",
-				"\t$1",
-			"\\end{notation}"
-		]
-	},
-
-
-	"observation":{
-		"prefix":"observation",
-		"body":[
-			"\\begin{observation}",
-				"\t$1",
-			"\\end{observation}"
-		]
-	},
-
-
-	"paradox":{
-		"prefix":"paradox",
-		"body":[
-			"\\begin{paradox}",
-				"\t$1",
-			"\\end{paradox}"
-		]
-	},
-
-
-	"procedure":{
-		"prefix":"procedure",
-		"body":[
-			"\\begin{procedure}",
-				"\t$1",
-			"\\end{procedure}"
-		]
-	},
-
-
-	"proposition":{
-		"prefix":"proposition",
-		"body":[
-			"\\begin{proposition}",
-				"\t$1",
-			"\\end{proposition}"
-		]
-	},
-
-
-	"remark":{
-		"prefix":"remark",
-		"body":[
-			"\\begin{remark}",
-				"\t$1",
-			"\\end{remark}"
-		]
-	},
-
-
-	"summary":{
-		"prefix":"summary",
-		"body":[
-			"\\begin{summary}",
-				"\t$1",
-			"\\end{summary}"
-		]
-	},
-
-
-	"template":{
-		"prefix":"template",
-		"body":[
-			"\\begin{template}",
-				"\t$1",
-			"\\end{template}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-				"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"validator":{
-		"prefix":"validator",
-		"body":[
-			"\\begin{validator}",
-				"\t$1",
-			"\\end{validator}"
-		]
-	},
-
-
-	"warning":{
-		"prefix":"warning",
-		"body":[
-			"\\begin{warning}",
-				"\t$1",
-			"\\end{warning}"
-		]
-	},
-
-
-	"enumerate*":{
-		"prefix":"enumerate",
-		"body":[
-			"\\begin{enumerate*}",
-				"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize",
-		"body":[
-			"\\begin{itemize*}",
-				"\t$1",
-			"\\end{itemize*}"
-		]
-	},
-
-
-	"description*":{
-		"prefix":"description",
+	"description*[]":{
+		"prefix":"*description",
 		"body":[
 			"\\begin{description*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"opensymdef",
 		"body":[
 			"\\opensymdef"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"closesymdef",
 		"body":[
 			"\\closesymdef"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,159 +23,8 @@
 		"prefix":"newsym",
 		"body":[
 			"\\newsym{${1:name}}{${2:output%formula}}"
-		]
-	},
-
-
-	"newsub{}{}":{
-		"prefix":"newsub",
-		"body":[
-			"\\newsub{${1:name}}{${2:output%formula}}"
-		]
-	},
-
-
-	"listofsymbols":{
-		"prefix":"listofsymbols",
-		"body":[
-			"\\listofsymbols"
-		]
-	},
-
-
-	"symwidth":{
-		"prefix":"symwidth",
-		"body":[
-			"\\symwidth"
-		]
-	},
-
-
-	"symindent":{
-		"prefix":"symindent",
-		"body":[
-			"\\symindent"
-		]
-	},
-
-
-	"sympagenowidth":{
-		"prefix":"sympagenowidth",
-		"body":[
-			"\\sympagenowidth"
-		]
-	},
-
-
-	"listofsubscripts":{
-		"prefix":"listofsubscripts",
-		"body":[
-			"\\listofsubscripts"
-		]
-	},
-
-
-	"listofboth":{
-		"prefix":"listofboth",
-		"body":[
-			"\\listofboth"
-		]
-	},
-
-
-	"symheadingname":{
-		"prefix":"symheadingname",
-		"body":[
-			"\\symheadingname"
-		]
-	},
-
-
-	"subheadingname":{
-		"prefix":"subheadingname",
-		"body":[
-			"\\subheadingname"
-		]
-	},
-
-
-	"bothheadingname":{
-		"prefix":"bothheadingname",
-		"body":[
-			"\\bothheadingname"
-		]
-	},
-
-
-	"markasused{}":{
-		"prefix":"markasused",
-		"body":[
-			"\\markasused{${1:name}}"
-		]
-	},
-
-
-	"markasunused{}":{
-		"prefix":"markasunused",
-		"body":[
-			"\\markasunused{${1:name}}"
-		]
-	},
-
-
-	"dontmarkasused{}":{
-		"prefix":"dontmarkasused",
-		"body":[
-			"\\dontmarkasused{${1:name}}"
-		]
-	},
-
-
-	"losstring":{
-		"prefix":"losstring",
-		"body":[
-			"\\losstring"
-		]
-	},
-
-
-	"printsymline{}{}{}{}{}":{
-		"prefix":"printsymline",
-		"body":[
-			"\\printsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:pageno}}"
-		]
-	},
-
-
-	"addsymline{}{}{}{}{}":{
-		"prefix":"addsymline",
-		"body":[
-			"\\addsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:filehandle}}"
-		]
-	},
-
-
-	"symheading":{
-		"prefix":"symheading",
-		"body":[
-			"\\symheading"
-		]
-	},
-
-
-	"subheading":{
-		"prefix":"subheading",
-		"body":[
-			"\\subheading"
-		]
-	},
-
-
-	"spaceaftersym":{
-		"prefix":"spaceaftersym",
-		"body":[
-			"\\spaceaftersym"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +32,17 @@
 		"prefix":"newsym",
 		"body":[
 			"\\newsym[${3:description}]{${1:name}}{${2:output%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newsub{}{}":{
+		"prefix":"newsub",
+		"body":[
+			"\\newsub{${1:name}}{${2:output%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +50,8 @@
 		"prefix":"newsub",
 		"body":[
 			"\\newsub[${3:description}]{${1:name}}{${2:output%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,6 +59,169 @@
 		"prefix":"subsep",
 		"body":[
 			"\\subsep[${1:separator}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listofsymbols":{
+		"prefix":"listofsymbols",
+		"body":[
+			"\\listofsymbols"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symwidth":{
+		"prefix":"symwidth",
+		"body":[
+			"\\symwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symindent":{
+		"prefix":"symindent",
+		"body":[
+			"\\symindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sympagenowidth":{
+		"prefix":"sympagenowidth",
+		"body":[
+			"\\sympagenowidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofsubscripts":{
+		"prefix":"listofsubscripts",
+		"body":[
+			"\\listofsubscripts"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofboth":{
+		"prefix":"listofboth",
+		"body":[
+			"\\listofboth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symheadingname":{
+		"prefix":"symheadingname",
+		"body":[
+			"\\symheadingname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subheadingname":{
+		"prefix":"subheadingname",
+		"body":[
+			"\\subheadingname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bothheadingname":{
+		"prefix":"bothheadingname",
+		"body":[
+			"\\bothheadingname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"markasused{}":{
+		"prefix":"markasused",
+		"body":[
+			"\\markasused{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"markasunused{}":{
+		"prefix":"markasunused",
+		"body":[
+			"\\markasunused{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dontmarkasused{}":{
+		"prefix":"dontmarkasused",
+		"body":[
+			"\\dontmarkasused{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"losstring":{
+		"prefix":"losstring",
+		"body":[
+			"\\losstring"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printsymline{}{}{}{}{}":{
+		"prefix":"printsymline",
+		"body":[
+			"\\printsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:pageno}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addsymline{}{}{}{}{}":{
+		"prefix":"addsymline",
+		"body":[
+			"\\addsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:filehandle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symheading":{
+		"prefix":"symheading",
+		"body":[
+			"\\symheading"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subheading":{
+		"prefix":"subheading",
+		"body":[
+			"\\subheading"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spaceaftersym":{
+		"prefix":"spaceaftersym",
+		"body":[
+			"\\spaceaftersym"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

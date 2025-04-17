@@ -5,7 +5,8 @@
 		"prefix":"CurrentAudience",
 		"body":[
 			"\\CurrentAudience"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"DefCurrentAudience",
 		"body":[
 			"\\DefCurrentAudience{${1:audiences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"SetNewAudience",
 		"body":[
 			"\\SetNewAudience{${1:audience%specialDef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"showto",
 		"body":[
 			"\\showto{${1:audiences%keyvals}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Footnote",
 		"body":[
 			"\\Footnote{${1:audiences%keyvals}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"DefMultiaudienceCommand",
 		"body":[
 			"\\DefMultiaudienceCommand{${1:new command%cmd}}{${2:old command%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,116 +59,128 @@
 		"prefix":"NewMultiaudienceSectionEnv",
 		"body":[
 			"\\NewMultiaudienceSectionEnv{${1:envname}}{${2:command}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"shownto":{
+	"shownto{}":{
 		"prefix":"shownto",
 		"body":[
 			"\\begin{shownto}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}",
 			"\\end{shownto}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Section":{
+	"Section{}{}":{
 		"prefix":"Section",
 		"body":[
 			"\\begin{Section}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}{${2:title}}",
 			"\\end{Section}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Subsection":{
-		"prefix":"Subsection",
-		"body":[
-			"\\begin{Subsection}",
-				"\t$1",
-			"\\end{Subsection}"
-		]
-	},
-
-
-	"Subsubsection":{
-		"prefix":"Subsubsection",
-		"body":[
-			"\\begin{Subsubsection}",
-				"\t$1",
-			"\\end{Subsubsection}"
-		]
-	},
-
-
-	"Paragraph":{
-		"prefix":"Paragraph",
-		"body":[
-			"\\begin{Paragraph}",
-				"\t$1",
-			"\\end{Paragraph}"
-		]
-	},
-
-
-	"Subparagraph":{
-		"prefix":"Subparagraph",
-		"body":[
-			"\\begin{Subparagraph}",
-				"\t$1",
-			"\\end{Subparagraph}"
-		]
-	},
-
-
-	"Section":{
+	"Section{}[]{}":{
 		"prefix":"Section",
 		"body":[
 			"\\begin{Section}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}[${3:short title}]{${2:title}}",
 			"\\end{Section}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"Subsection":{
+	"Subsection{}{}":{
 		"prefix":"Subsection",
 		"body":[
 			"\\begin{Subsection}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}{${2:title}}",
 			"\\end{Subsection}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Subsubsection":{
+	"Subsection{}[]{}":{
+		"prefix":"Subsection",
+		"body":[
+			"\\begin{Subsection}",
+				"\t{${1:audiences%keyvals}}[${3:short title}]{${2:title}}",
+			"\\end{Subsection}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Subsubsection{}{}":{
 		"prefix":"Subsubsection",
 		"body":[
 			"\\begin{Subsubsection}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}{${2:title}}",
 			"\\end{Subsubsection}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Paragraph":{
+	"Subsubsection{}[]{}":{
+		"prefix":"Subsubsection",
+		"body":[
+			"\\begin{Subsubsection}",
+				"\t{${1:audiences%keyvals}}[${3:short title}]{${2:title}}",
+			"\\end{Subsubsection}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Paragraph{}{}":{
 		"prefix":"Paragraph",
 		"body":[
 			"\\begin{Paragraph}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}{${2:title}}",
 			"\\end{Paragraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Subparagraph":{
+	"Paragraph{}[]{}":{
+		"prefix":"Paragraph",
+		"body":[
+			"\\begin{Paragraph}",
+				"\t{${1:audiences%keyvals}}[${3:short title}]{${2:title}}",
+			"\\end{Paragraph}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Subparagraph{}{}":{
 		"prefix":"Subparagraph",
 		"body":[
 			"\\begin{Subparagraph}",
-				"\t$1",
+				"\t{${1:audiences%keyvals}}{${2:title}}",
 			"\\end{Subparagraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Subparagraph{}[]{}":{
+		"prefix":"Subparagraph",
+		"body":[
+			"\\begin{Subparagraph}",
+				"\t{${1:audiences%keyvals}}[${3:short title}]{${2:title}}",
+			"\\end{Subparagraph}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

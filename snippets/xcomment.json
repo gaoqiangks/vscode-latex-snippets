@@ -5,7 +5,8 @@
 		"prefix":"xcomment",
 		"body":[
 			"\\xcomment{${1:envname list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"xcommentchar",
 		"body":[
 			"\\xcommentchar"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"rescanfile",
 		"body":[
 			"\\rescanfile{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"norescanfile",
 		"body":[
 			"\\norescanfile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"envirsep",
 		"body":[
 			"\\envirsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,15 +50,8 @@
 		"prefix":"newxcomment",
 		"body":[
 			"\\newxcomment{${1:envname}}"
-		]
-	},
-
-
-	"nofloat{}":{
-		"prefix":"nofloat",
-		"body":[
-			"\\nofloat{${1:envname list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,16 +59,27 @@
 		"prefix":"newxcomment",
 		"body":[
 			"\\newxcomment[${2:envname list}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"xcomment":{
+	"nofloat{}":{
+		"prefix":"nofloat",
+		"body":[
+			"\\nofloat{${1:envname list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xcomment{}":{
 		"prefix":"xcomment",
 		"body":[
 			"\\begin{xcomment}",
-				"\t$1",
+				"\t{${1:envname list}}",
 			"\\end{xcomment}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

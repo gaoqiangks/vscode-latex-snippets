@@ -5,7 +5,8 @@
 		"prefix":"makepagenote",
 		"body":[
 			"\\makepagenote"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,231 +14,8 @@
 		"prefix":"printnotes",
 		"body":[
 			"\\printnotes"
-		]
-	},
-
-
-	"pagenote{}":{
-		"prefix":"pagenote",
-		"body":[
-			"\\pagenote{${1:text}}"
-		]
-	},
-
-
-	"notenumintext{}":{
-		"prefix":"notenumintext",
-		"body":[
-			"\\notenumintext{${1:number}}"
-		]
-	},
-
-
-	"noteentry{}{}{}{}":{
-		"prefix":"noteentry",
-		"body":[
-			"\\noteentry{${1:note number}}{${2:id}}{${3:text}}{${4:page number}}"
-		]
-	},
-
-
-	"prenoteinnotes":{
-		"prefix":"prenoteinnotes",
-		"body":[
-			"\\prenoteinnotes"
-		]
-	},
-
-
-	"noteidinnotes{}{}":{
-		"prefix":"noteidinnotes",
-		"body":[
-			"\\noteidinnotes{${1:note number}}{${2:id}}"
-		]
-	},
-
-
-	"pageinnotes{}":{
-		"prefix":"pageinnotes",
-		"body":[
-			"\\pageinnotes{${1:page number}}"
-		]
-	},
-
-
-	"noteinnotes{}":{
-		"prefix":"noteinnotes",
-		"body":[
-			"\\noteinnotes{${1:text}}"
-		]
-	},
-
-
-	"postnoteinnotes":{
-		"prefix":"postnoteinnotes",
-		"body":[
-			"\\postnoteinnotes"
-		]
-	},
-
-
-	"notedivision":{
-		"prefix":"notedivision",
-		"body":[
-			"\\notedivision"
-		]
-	},
-
-
-	"notesname":{
-		"prefix":"notesname",
-		"body":[
-			"\\notesname"
-		]
-	},
-
-
-	"addtonotes{}":{
-		"prefix":"addtonotes",
-		"body":[
-			"\\addtonotes{${1:text}}"
-		]
-	},
-
-
-	"pagenotesubhead{}{}":{
-		"prefix":"pagenotesubhead",
-		"body":[
-			"\\pagenotesubhead{${1:number}}{${2:title%plain}}"
-		]
-	},
-
-
-	"chaptername":{
-		"prefix":"chaptername",
-		"body":[
-			"\\chaptername"
-		]
-	},
-
-
-	"sectionname":{
-		"prefix":"sectionname",
-		"body":[
-			"\\sectionname"
-		]
-	},
-
-
-	"ifpnhaschapter":{
-		"prefix":"ifpnhaschapter",
-		"body":[
-			"\\ifpnhaschapter"
-		]
-	},
-
-
-	"pnhaschapterfalse":{
-		"prefix":"pnhaschapterfalse",
-		"body":[
-			"\\pnhaschapterfalse"
-		]
-	},
-
-
-	"pnhaschaptertrue":{
-		"prefix":"pnhaschaptertrue",
-		"body":[
-			"\\pnhaschaptertrue"
-		]
-	},
-
-
-	"ifpnpageopt":{
-		"prefix":"ifpnpageopt",
-		"body":[
-			"\\ifpnpageopt"
-		]
-	},
-
-
-	"pnpageoptfalse":{
-		"prefix":"pnpageoptfalse",
-		"body":[
-			"\\pnpageoptfalse"
-		]
-	},
-
-
-	"pnpageopttrue":{
-		"prefix":"pnpageopttrue",
-		"body":[
-			"\\pnpageopttrue"
-		]
-	},
-
-
-	"ifpncontopt":{
-		"prefix":"ifpncontopt",
-		"body":[
-			"\\ifpncontopt"
-		]
-	},
-
-
-	"pncontoptfalse":{
-		"prefix":"pncontoptfalse",
-		"body":[
-			"\\pncontoptfalse"
-		]
-	},
-
-
-	"pncontopttrue":{
-		"prefix":"pncontopttrue",
-		"body":[
-			"\\pncontopttrue"
-		]
-	},
-
-
-	"thepagenote":{
-		"prefix":"thepagenote",
-		"body":[
-			"\\thepagenote"
-		]
-	},
-
-
-	"ifmakingpagenotes":{
-		"prefix":"ifmakingpagenotes",
-		"body":[
-			"\\ifmakingpagenotes"
-		]
-	},
-
-
-	"makingpagenotesfalse":{
-		"prefix":"makingpagenotesfalse",
-		"body":[
-			"\\makingpagenotesfalse"
-		]
-	},
-
-
-	"makingpagenotestrue":{
-		"prefix":"makingpagenotestrue",
-		"body":[
-			"\\makingpagenotestrue"
-		]
-	},
-
-
-	"pnofilewarn":{
-		"prefix":"pnofilewarn",
-		"body":[
-			"\\pnofilewarn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +23,17 @@
 		"prefix":"*printnotes",
 		"body":[
 			"\\printnotes*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pagenote{}":{
+		"prefix":"pagenote",
+		"body":[
+			"\\pagenote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,6 +41,250 @@
 		"prefix":"pagenote",
 		"body":[
 			"\\pagenote[${2:id}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"notenumintext{}":{
+		"prefix":"notenumintext",
+		"body":[
+			"\\notenumintext{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noteentry{}{}{}{}":{
+		"prefix":"noteentry",
+		"body":[
+			"\\noteentry{${1:note number}}{${2:id}}{${3:text}}{${4:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prenoteinnotes":{
+		"prefix":"prenoteinnotes",
+		"body":[
+			"\\prenoteinnotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noteidinnotes{}{}":{
+		"prefix":"noteidinnotes",
+		"body":[
+			"\\noteidinnotes{${1:note number}}{${2:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pageinnotes{}":{
+		"prefix":"pageinnotes",
+		"body":[
+			"\\pageinnotes{${1:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noteinnotes{}":{
+		"prefix":"noteinnotes",
+		"body":[
+			"\\noteinnotes{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postnoteinnotes":{
+		"prefix":"postnoteinnotes",
+		"body":[
+			"\\postnoteinnotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notedivision":{
+		"prefix":"notedivision",
+		"body":[
+			"\\notedivision"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notesname":{
+		"prefix":"notesname",
+		"body":[
+			"\\notesname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtonotes{}":{
+		"prefix":"addtonotes",
+		"body":[
+			"\\addtonotes{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagenotesubhead{}{}":{
+		"prefix":"pagenotesubhead",
+		"body":[
+			"\\pagenotesubhead{${1:number}}{${2:title%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaptername":{
+		"prefix":"chaptername",
+		"body":[
+			"\\chaptername"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionname":{
+		"prefix":"sectionname",
+		"body":[
+			"\\sectionname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpnhaschapter":{
+		"prefix":"ifpnhaschapter",
+		"body":[
+			"\\ifpnhaschapter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhaschapterfalse":{
+		"prefix":"pnhaschapterfalse",
+		"body":[
+			"\\pnhaschapterfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnhaschaptertrue":{
+		"prefix":"pnhaschaptertrue",
+		"body":[
+			"\\pnhaschaptertrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpnpageopt":{
+		"prefix":"ifpnpageopt",
+		"body":[
+			"\\ifpnpageopt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnpageoptfalse":{
+		"prefix":"pnpageoptfalse",
+		"body":[
+			"\\pnpageoptfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnpageopttrue":{
+		"prefix":"pnpageopttrue",
+		"body":[
+			"\\pnpageopttrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpncontopt":{
+		"prefix":"ifpncontopt",
+		"body":[
+			"\\ifpncontopt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pncontoptfalse":{
+		"prefix":"pncontoptfalse",
+		"body":[
+			"\\pncontoptfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pncontopttrue":{
+		"prefix":"pncontopttrue",
+		"body":[
+			"\\pncontopttrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thepagenote":{
+		"prefix":"thepagenote",
+		"body":[
+			"\\thepagenote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmakingpagenotes":{
+		"prefix":"ifmakingpagenotes",
+		"body":[
+			"\\ifmakingpagenotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makingpagenotesfalse":{
+		"prefix":"makingpagenotesfalse",
+		"body":[
+			"\\makingpagenotesfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makingpagenotestrue":{
+		"prefix":"makingpagenotestrue",
+		"body":[
+			"\\makingpagenotestrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnofilewarn":{
+		"prefix":"pnofilewarn",
+		"body":[
+			"\\pnofilewarn"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,71 +5,8 @@
 		"prefix":"setsepchar",
 		"body":[
 			"\\setsepchar{${1:character}}"
-		]
-	},
-
-
-	"readlist{}{}":{
-		"prefix":"readlist",
-		"body":[
-			"\\readlist{${1:cmd}}{${2:list}}"
-		]
-	},
-
-
-	"greadlist{}{}":{
-		"prefix":"greadlist",
-		"body":[
-			"\\greadlist{${1:cmd}}{${2:list}}"
-		]
-	},
-
-
-	"showitems{}":{
-		"prefix":"showitems",
-		"body":[
-			"\\showitems{${1:list cmd}}"
-		]
-	},
-
-
-	"ignoreemptyitems":{
-		"prefix":"ignoreemptyitems",
-		"body":[
-			"\\ignoreemptyitems"
-		]
-	},
-
-
-	"reademptyitems":{
-		"prefix":"reademptyitems",
-		"body":[
-			"\\reademptyitems"
-		]
-	},
-
-
-	"defpair{}":{
-		"prefix":"defpair",
-		"body":[
-			"\\defpair{${1:<tok1><tok2>...}}"
-		]
-	},
-
-
-	"readlist*{}{}":{
-		"prefix":"*readlist",
-		"body":[
-			"\\readlist*{${1:cmd}}{${2:list}}"
-		]
-	},
-
-
-	"greadlist*{}{}":{
-		"prefix":"*greadlist",
-		"body":[
-			"\\greadlist*{${1:cmd}}{${2:list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,71 @@
 		"prefix":"setsepchar",
 		"body":[
 			"\\setsepchar[${2:nested sep char}]{${1:character}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readlist{}{}":{
+		"prefix":"readlist",
+		"body":[
+			"\\readlist{${1:cmd}}{${2:list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readlist*{}{}":{
+		"prefix":"*readlist",
+		"body":[
+			"\\readlist*{${1:cmd}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"greadlist{}{}":{
+		"prefix":"greadlist",
+		"body":[
+			"\\greadlist{${1:cmd}}{${2:list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greadlist*{}{}":{
+		"prefix":"*greadlist",
+		"body":[
+			"\\greadlist*{${1:cmd}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"showitems{}":{
+		"prefix":"showitems",
+		"body":[
+			"\\showitems{${1:list cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ignoreemptyitems":{
+		"prefix":"ignoreemptyitems",
+		"body":[
+			"\\ignoreemptyitems"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reademptyitems":{
+		"prefix":"reademptyitems",
+		"body":[
+			"\\reademptyitems"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +86,8 @@
 		"prefix":"itemtomacro",
 		"body":[
 			"\\itemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +95,8 @@
 		"prefix":"gitemtomacro",
 		"body":[
 			"\\gitemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,6 +104,16 @@
 		"prefix":"listlen",
 		"body":[
 			"\\listlen{${1:list cmd}}[${2:index}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defpair{}":{
+		"prefix":"defpair",
+		"body":[
+			"\\defpair{${1:<tok1><tok2>...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

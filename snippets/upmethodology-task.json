@@ -5,7 +5,8 @@
 		"prefix":"taskname",
 		"body":[
 			"\\taskname{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tasksuper",
 		"body":[
 			"\\tasksuper{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"taskcomment",
 		"body":[
 			"\\taskcomment{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"taskprogress",
 		"body":[
 			"\\taskprogress{${1:percent}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"taskstart",
 		"body":[
 			"\\taskstart{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"taskend",
 		"body":[
 			"\\taskend{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"taskmanager",
 		"body":[
 			"\\taskmanager{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"taskmember",
 		"body":[
 			"\\taskmember{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"taskmilestone",
 		"body":[
 			"\\taskmilestone{${1:date}}{${2:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"thetasksuper",
 		"body":[
 			"\\thetasksuper{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"thetaskname",
 		"body":[
 			"\\thetaskname{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"thetaskcomment",
 		"body":[
 			"\\thetaskcomment{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"thetaskprogress",
 		"body":[
 			"\\thetaskprogress{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"thetaskstart",
 		"body":[
 			"\\thetaskstart{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"thetaskend",
 		"body":[
 			"\\thetaskend{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"thetaskmanagers",
 		"body":[
 			"\\thetaskmanagers{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"thetaskmembers",
 		"body":[
 			"\\thetaskmembers{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"thetaskmilestones",
 		"body":[
 			"\\thetaskmilestones{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"thetaskmilestonecomment",
 		"body":[
 			"\\thetaskmilestonecomment{${1:id}}{${2:date}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"thetaskdescription",
 		"body":[
 			"\\thetaskdescription{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,26 +185,29 @@
 		"prefix":"thetaskdescription",
 		"body":[
 			"\\thetaskdescription[${2:width}]{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"taskdescription":{
+	"taskdescription{}":{
 		"prefix":"taskdescription",
 		"body":[
 			"\\begin{taskdescription}",
-				"\t$1",
+				"\t{${1:id}}",
 			"\\end{taskdescription}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"taskdescription*":{
-		"prefix":"taskdescription",
+	"taskdescription*{}":{
+		"prefix":"*taskdescription",
 		"body":[
 			"\\begin{taskdescription*}",
-				"\t$1",
+				"\t{${1:id}}",
 			"\\end{taskdescription*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

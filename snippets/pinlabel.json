@@ -5,7 +5,8 @@
 		"prefix":"endlabellist",
 		"body":[
 			"\\endlabellist"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"hair",
 		"body":[
 			"\\hair"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"hyperactivelabels",
 		"body":[
 			"\\hyperactivelabels"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"labellist",
 		"body":[
 			"\\labellist"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,15 +41,8 @@
 		"prefix":"psfig",
 		"body":[
 			"\\psfig{${1:keyvals}}"
-		]
-	},
-
-
-	"reallyincludegraphics{}":{
-		"prefix":"reallyincludegraphics",
-		"body":[
-			"\\reallyincludegraphics{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +50,16 @@
 		"prefix":"reallyincludegraphics",
 		"body":[
 			"\\reallyincludegraphics[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"reallyincludegraphics{}":{
+		"prefix":"reallyincludegraphics",
+		"body":[
+			"\\reallyincludegraphics{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

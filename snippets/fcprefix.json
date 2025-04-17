@@ -5,15 +5,8 @@
 		"prefix":"latinnumeralstring",
 		"body":[
 			"\\latinnumeralstring{${1:counter}}"
-		]
-	},
-
-
-	"latinnumeralstringnum{}":{
-		"prefix":"latinnumeralstringnum",
-		"body":[
-			"\\latinnumeralstringnum{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"latinnumeralstring",
 		"body":[
 			"\\latinnumeralstring{${1:counter}}[${2:prefix options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"latinnumeralstringnum{}":{
+		"prefix":"latinnumeralstringnum",
+		"body":[
+			"\\latinnumeralstringnum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +32,7 @@
 		"prefix":"latinnumeralstringnum",
 		"body":[
 			"\\latinnumeralstringnum{${1:number}}[${2:prefix options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

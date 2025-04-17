@@ -5,7 +5,8 @@
 		"prefix":"opening",
 		"body":[
 			"\\opening{${1:salutations%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"closing",
 		"body":[
 			"\\closing{${1:salutations%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"Nref",
 		"body":[
 			"\\Nref{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Vref",
 		"body":[
 			"\\Vref{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"telex",
 		"body":[
 			"\\telex{${1:numéro}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ccp",
 		"body":[
 			"\\ccp{${1:numéro}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,863 +59,8 @@
 		"prefix":"makelabels",
 		"body":[
 			"\\makelabels"
-		]
-	},
-
-
-	"address{}":{
-		"prefix":"address",
-		"body":[
-			"\\address{${1:adresse%text}}"
-		]
-	},
-
-
-	"location{}":{
-		"prefix":"location",
-		"body":[
-			"\\location{${1:location%text}}"
-		]
-	},
-
-
-	"addpages{}":{
-		"prefix":"addpages",
-		"body":[
-			"\\addpages{${1:n}}"
-		]
-	},
-
-
-	"telephone{}":{
-		"prefix":"telephone",
-		"body":[
-			"\\telephone{${1:numéro}}"
-		]
-	},
-
-
-	"fax{}":{
-		"prefix":"fax",
-		"body":[
-			"\\fax{${1:numéro}}"
-		]
-	},
-
-
-	"email{}":{
-		"prefix":"email",
-		"body":[
-			"\\email{${1:email%URL}}"
-		]
-	},
-
-
-	"lieu{}":{
-		"prefix":"lieu",
-		"body":[
-			"\\lieu{${1:lieu%text}}"
-		]
-	},
-
-
-	"name{}":{
-		"prefix":"name",
-		"body":[
-			"\\name{${1:nom}}"
-		]
-	},
-
-
-	"signature{}":{
-		"prefix":"signature",
-		"body":[
-			"\\signature{${1:signature}}"
-		]
-	},
-
-
-	"secondsignature{}":{
-		"prefix":"secondsignature",
-		"body":[
-			"\\secondsignature{${1:signature}}"
-		]
-	},
-
-
-	"thirdsignature{}":{
-		"prefix":"thirdsignature",
-		"body":[
-			"\\thirdsignature{${1:signature}}"
-		]
-	},
-
-
-	"username{}":{
-		"prefix":"username",
-		"body":[
-			"\\username{${1:nom}}"
-		]
-	},
-
-
-	"bitnet{}":{
-		"prefix":"bitnet",
-		"body":[
-			"\\bitnet{${1:adresse}}"
-		]
-	},
-
-
-	"ccitt{}":{
-		"prefix":"ccitt",
-		"body":[
-			"\\ccitt{${1:adresse}}"
-		]
-	},
-
-
-	"decnet{}":{
-		"prefix":"decnet",
-		"body":[
-			"\\decnet{${1:adresse}}"
-		]
-	},
-
-
-	"internet{}":{
-		"prefix":"internet",
-		"body":[
-			"\\internet{${1:adresse}}"
-		]
-	},
-
-
-	"telepac{}":{
-		"prefix":"telepac",
-		"body":[
-			"\\telepac{${1:adresse}}"
-		]
-	},
-
-
-	"lettreselectlanguage{}":{
-		"prefix":"lettreselectlanguage",
-		"body":[
-			"\\lettreselectlanguage{${1:language%keyvals}}"
-		]
-	},
-
-
-	"tension{}":{
-		"prefix":"tension",
-		"body":[
-			"\\tension{${1:valeur}}"
-		]
-	},
-
-
-	"marge{}":{
-		"prefix":"marge",
-		"body":[
-			"\\marge{${1:dimen%l}}"
-		]
-	},
-
-
-	"basdepage{}":{
-		"prefix":"basdepage",
-		"body":[
-			"\\basdepage{${1:contenu%text}}"
-		]
-	},
-
-
-	"conc{}":{
-		"prefix":"conc",
-		"body":[
-			"\\conc{${1:sujet%text}}"
-		]
-	},
-
-
-	"ps{}{}":{
-		"prefix":"ps",
-		"body":[
-			"\\ps{${1:label}}{${2:text}}"
-		]
-	},
-
-
-	"encl{}":{
-		"prefix":"encl",
-		"body":[
-			"\\encl{${1:annexes%text}}"
-		]
-	},
-
-
-	"mencl":{
-		"prefix":"mencl",
-		"body":[
-			"\\mencl"
-		]
-	},
-
-
-	"cc{}":{
-		"prefix":"cc",
-		"body":[
-			"\\cc{${1:destinataires}}"
-		]
-	},
-
-
-	"detailledaddress":{
-		"prefix":"detailledaddress",
-		"body":[
-			"\\detailledaddress"
-		]
-	},
-
-
-	"institut{}":{
-		"prefix":"institut",
-		"body":[
-			"\\institut{${1:fichier}}"
-		]
-	},
-
-
-	"notelephone":{
-		"prefix":"notelephone",
-		"body":[
-			"\\notelephone"
-		]
-	},
-
-
-	"nofax":{
-		"prefix":"nofax",
-		"body":[
-			"\\nofax"
-		]
-	},
-
-
-	"nolieu":{
-		"prefix":"nolieu",
-		"body":[
-			"\\nolieu"
-		]
-	},
-
-
-	"nodate":{
-		"prefix":"nodate",
-		"body":[
-			"\\nodate"
-		]
-	},
-
-
-	"faxwarning":{
-		"prefix":"faxwarning",
-		"body":[
-			"\\faxwarning"
-		]
-	},
-
-
-	"telefaxstring":{
-		"prefix":"telefaxstring",
-		"body":[
-			"\\telefaxstring"
-		]
-	},
-
-
-	"telephonelabelname":{
-		"prefix":"telephonelabelname",
-		"body":[
-			"\\telephonelabelname"
-		]
-	},
-
-
-	"telefaxlabelname":{
-		"prefix":"telefaxlabelname",
-		"body":[
-			"\\telefaxlabelname"
-		]
-	},
-
-
-	"telefaxname":{
-		"prefix":"telefaxname",
-		"body":[
-			"\\telefaxname"
-		]
-	},
-
-
-	"tellabelname":{
-		"prefix":"tellabelname",
-		"body":[
-			"\\tellabelname"
-		]
-	},
-
-
-	"faxlabelname":{
-		"prefix":"faxlabelname",
-		"body":[
-			"\\faxlabelname"
-		]
-	},
-
-
-	"telexlabelname":{
-		"prefix":"telexlabelname",
-		"body":[
-			"\\telexlabelname"
-		]
-	},
-
-
-	"headtoname":{
-		"prefix":"headtoname",
-		"body":[
-			"\\headtoname"
-		]
-	},
-
-
-	"headfromname":{
-		"prefix":"headfromname",
-		"body":[
-			"\\headfromname"
-		]
-	},
-
-
-	"pagetotalname":{
-		"prefix":"pagetotalname",
-		"body":[
-			"\\pagetotalname"
-		]
-	},
-
-
-	"concname":{
-		"prefix":"concname",
-		"body":[
-			"\\concname"
-		]
-	},
-
-
-	"ccname":{
-		"prefix":"ccname",
-		"body":[
-			"\\ccname"
-		]
-	},
-
-
-	"enclname":{
-		"prefix":"enclname",
-		"body":[
-			"\\enclname"
-		]
-	},
-
-
-	"mentionname":{
-		"prefix":"mentionname",
-		"body":[
-			"\\mentionname"
-		]
-	},
-
-
-	"vrefname":{
-		"prefix":"vrefname",
-		"body":[
-			"\\vrefname"
-		]
-	},
-
-
-	"nrefname":{
-		"prefix":"nrefname",
-		"body":[
-			"\\nrefname"
-		]
-	},
-
-
-	"letterwidth":{
-		"prefix":"letterwidth",
-		"body":[
-			"\\letterwidth"
-		]
-	},
-
-
-	"lettermargin":{
-		"prefix":"lettermargin",
-		"body":[
-			"\\lettermargin"
-		]
-	},
-
-
-	"listmargin":{
-		"prefix":"listmargin",
-		"body":[
-			"\\listmargin"
-		]
-	},
-
-
-	"openingspace":{
-		"prefix":"openingspace",
-		"body":[
-			"\\openingspace"
-		]
-	},
-
-
-	"openingindent":{
-		"prefix":"openingindent",
-		"body":[
-			"\\openingindent"
-		]
-	},
-
-
-	"sigspace":{
-		"prefix":"sigspace",
-		"body":[
-			"\\sigspace"
-		]
-	},
-
-
-	"ssigwidth":{
-		"prefix":"ssigwidth",
-		"body":[
-			"\\ssigwidth"
-		]
-	},
-
-
-	"ssigindent":{
-		"prefix":"ssigindent",
-		"body":[
-			"\\ssigindent"
-		]
-	},
-
-
-	"msigwidth":{
-		"prefix":"msigwidth",
-		"body":[
-			"\\msigwidth"
-		]
-	},
-
-
-	"FAXSTR":{
-		"prefix":"FAXSTR",
-		"body":[
-			"\\FAXSTR"
-		]
-	},
-
-
-	"auxcount":{
-		"prefix":"auxcount",
-		"body":[
-			"\\auxcount"
-		]
-	},
-
-
-	"auxflag":{
-		"prefix":"auxflag",
-		"body":[
-			"\\auxflag"
-		]
-	},
-
-
-	"auxline":{
-		"prefix":"auxline",
-		"body":[
-			"\\auxline"
-		]
-	},
-
-
-	"bdp":{
-		"prefix":"bdp",
-		"body":[
-			"\\bdp"
-		]
-	},
-
-
-	"bitnetnum":{
-		"prefix":"bitnetnum",
-		"body":[
-			"\\bitnetnum"
-		]
-	},
-
-
-	"ccittnum":{
-		"prefix":"ccittnum",
-		"body":[
-			"\\ccittnum"
-		]
-	},
-
-
-	"ccpnum":{
-		"prefix":"ccpnum",
-		"body":[
-			"\\ccpnum"
-		]
-	},
-
-
-	"concdecl":{
-		"prefix":"concdecl",
-		"body":[
-			"\\concdecl"
-		]
-	},
-
-
-	"concline":{
-		"prefix":"concline",
-		"body":[
-			"\\concline"
-		]
-	},
-
-
-	"decnetnum":{
-		"prefix":"decnetnum",
-		"body":[
-			"\\decnetnum"
-		]
-	},
-
-
-	"emailcount":{
-		"prefix":"emailcount",
-		"body":[
-			"\\emailcount"
-		]
-	},
-
-
-	"emailflag":{
-		"prefix":"emailflag",
-		"body":[
-			"\\emailflag"
-		]
-	},
-
-
-	"emailine":{
-		"prefix":"emailine",
-		"body":[
-			"\\emailine"
-		]
-	},
-
-
-	"emailnum":{
-		"prefix":"emailnum",
-		"body":[
-			"\\emailnum"
-		]
-	},
-
-
-	"faxopening{}":{
-		"prefix":"faxopening",
-		"body":[
-			"\\faxopening{${1:text}}"
-		]
-	},
-
-
-	"faxpage":{
-		"prefix":"faxpage",
-		"body":[
-			"\\faxpage"
-		]
-	},
-
-
-	"flushleft":{
-		"prefix":"flushleft",
-		"body":[
-			"\\flushleft"
-		]
-	},
-
-
-	"fromaddress":{
-		"prefix":"fromaddress",
-		"body":[
-			"\\fromaddress"
-		]
-	},
-
-
-	"fromlocation":{
-		"prefix":"fromlocation",
-		"body":[
-			"\\fromlocation"
-		]
-	},
-
-
-	"fromref":{
-		"prefix":"fromref",
-		"body":[
-			"\\fromref"
-		]
-	},
-
-
-	"fromsig":{
-		"prefix":"fromsig",
-		"body":[
-			"\\fromsig"
-		]
-	},
-
-
-	"fromssig":{
-		"prefix":"fromssig",
-		"body":[
-			"\\fromssig"
-		]
-	},
-
-
-	"fromtsig":{
-		"prefix":"fromtsig",
-		"body":[
-			"\\fromtsig"
-		]
-	},
-
-
-	"infos":{
-		"prefix":"infos",
-		"body":[
-			"\\infos"
-		]
-	},
-
-
-	"internetnum":{
-		"prefix":"internetnum",
-		"body":[
-			"\\internetnum"
-		]
-	},
-
-
-	"letteropening{}":{
-		"prefix":"letteropening",
-		"body":[
-			"\\letteropening{${1:text}}"
-		]
-	},
-
-
-	"LettreDeclareLanguage{}{}":{
-		"prefix":"LettreDeclareLanguage",
-		"body":[
-			"\\LettreDeclareLanguage{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"lettrelabelselectlanguage{}":{
-		"prefix":"lettrelabelselectlanguage",
-		"body":[
-			"\\lettrelabelselectlanguage{${1:language}}"
-		]
-	},
-
-
-	"lettrelmpselectlanguage{}":{
-		"prefix":"lettrelmpselectlanguage",
-		"body":[
-			"\\lettrelmpselectlanguage{${1:language}}"
-		]
-	},
-
-
-	"lettreloadlang{}":{
-		"prefix":"lettreloadlang",
-		"body":[
-			"\\lettreloadlang{${1:language}}"
-		]
-	},
-
-
-	"LettreProvidesLanguage{}":{
-		"prefix":"LettreProvidesLanguage",
-		"body":[
-			"\\LettreProvidesLanguage{${1:name}}"
-		]
-	},
-
-
-	"mlabel{}":{
-		"prefix":"mlabel",
-		"body":[
-			"\\mlabel{${1:l’étiquette}}"
-		]
-	},
-
-
-	"noinfos":{
-		"prefix":"noinfos",
-		"body":[
-			"\\noinfos"
-		]
-	},
-
-
-	"pdate":{
-		"prefix":"pdate",
-		"body":[
-			"\\pdate"
-		]
-	},
-
-
-	"resetauxenv":{
-		"prefix":"resetauxenv",
-		"body":[
-			"\\resetauxenv"
-		]
-	},
-
-
-	"resetcloseenv":{
-		"prefix":"resetcloseenv",
-		"body":[
-			"\\resetcloseenv"
-		]
-	},
-
-
-	"resetemailenv":{
-		"prefix":"resetemailenv",
-		"body":[
-			"\\resetemailenv"
-		]
-	},
-
-
-	"resetopenenv":{
-		"prefix":"resetopenenv",
-		"body":[
-			"\\resetopenenv"
-		]
-	},
-
-
-	"sigflag":{
-		"prefix":"sigflag",
-		"body":[
-			"\\sigflag"
-		]
-	},
-
-
-	"signum":{
-		"prefix":"signum",
-		"body":[
-			"\\signum"
-		]
-	},
-
-
-	"startlabels":{
-		"prefix":"startlabels",
-		"body":[
-			"\\startlabels"
-		]
-	},
-
-
-	"stopfax":{
-		"prefix":"stopfax",
-		"body":[
-			"\\stopfax"
-		]
-	},
-
-
-	"stopletter":{
-		"prefix":"stopletter",
-		"body":[
-			"\\stopletter"
-		]
-	},
-
-
-	"telepacnum":{
-		"prefix":"telepacnum",
-		"body":[
-			"\\telepacnum"
-		]
-	},
-
-
-	"telexnum":{
-		"prefix":"telexnum",
-		"body":[
-			"\\telexnum"
-		]
-	},
-
-
-	"tofaxnum":{
-		"prefix":"tofaxnum",
-		"body":[
-			"\\tofaxnum"
-		]
-	},
-
-
-	"toref":{
-		"prefix":"toref",
-		"body":[
-			"\\toref"
-		]
-	},
-
-
-	"totalpages":{
-		"prefix":"totalpages",
-		"body":[
-			"\\totalpages"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -917,26 +68,992 @@
 		"prefix":"makelabels",
 		"body":[
 			"\\makelabels[${1:n}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"letter":{
+	"address{}":{
+		"prefix":"address",
+		"body":[
+			"\\address{${1:adresse%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"location{}":{
+		"prefix":"location",
+		"body":[
+			"\\location{${1:location%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addpages{}":{
+		"prefix":"addpages",
+		"body":[
+			"\\addpages{${1:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telephone{}":{
+		"prefix":"telephone",
+		"body":[
+			"\\telephone{${1:numéro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fax{}":{
+		"prefix":"fax",
+		"body":[
+			"\\fax{${1:numéro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"email{}":{
+		"prefix":"email",
+		"body":[
+			"\\email{${1:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lieu{}":{
+		"prefix":"lieu",
+		"body":[
+			"\\lieu{${1:lieu%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"name{}":{
+		"prefix":"name",
+		"body":[
+			"\\name{${1:nom}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"signature{}":{
+		"prefix":"signature",
+		"body":[
+			"\\signature{${1:signature}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"secondsignature{}":{
+		"prefix":"secondsignature",
+		"body":[
+			"\\secondsignature{${1:signature}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thirdsignature{}":{
+		"prefix":"thirdsignature",
+		"body":[
+			"\\thirdsignature{${1:signature}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"username{}":{
+		"prefix":"username",
+		"body":[
+			"\\username{${1:nom}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bitnet{}":{
+		"prefix":"bitnet",
+		"body":[
+			"\\bitnet{${1:adresse}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccitt{}":{
+		"prefix":"ccitt",
+		"body":[
+			"\\ccitt{${1:adresse}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"decnet{}":{
+		"prefix":"decnet",
+		"body":[
+			"\\decnet{${1:adresse}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"internet{}":{
+		"prefix":"internet",
+		"body":[
+			"\\internet{${1:adresse}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telepac{}":{
+		"prefix":"telepac",
+		"body":[
+			"\\telepac{${1:adresse}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lettreselectlanguage{}":{
+		"prefix":"lettreselectlanguage",
+		"body":[
+			"\\lettreselectlanguage{${1:language%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tension{}":{
+		"prefix":"tension",
+		"body":[
+			"\\tension{${1:valeur}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marge{}":{
+		"prefix":"marge",
+		"body":[
+			"\\marge{${1:dimen%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"basdepage{}":{
+		"prefix":"basdepage",
+		"body":[
+			"\\basdepage{${1:contenu%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conc{}":{
+		"prefix":"conc",
+		"body":[
+			"\\conc{${1:sujet%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ps{}{}":{
+		"prefix":"ps",
+		"body":[
+			"\\ps{${1:label}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"encl{}":{
+		"prefix":"encl",
+		"body":[
+			"\\encl{${1:annexes%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mencl":{
+		"prefix":"mencl",
+		"body":[
+			"\\mencl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cc{}":{
+		"prefix":"cc",
+		"body":[
+			"\\cc{${1:destinataires}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"detailledaddress":{
+		"prefix":"detailledaddress",
+		"body":[
+			"\\detailledaddress"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"institut{}":{
+		"prefix":"institut",
+		"body":[
+			"\\institut{${1:fichier}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notelephone":{
+		"prefix":"notelephone",
+		"body":[
+			"\\notelephone"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nofax":{
+		"prefix":"nofax",
+		"body":[
+			"\\nofax"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nolieu":{
+		"prefix":"nolieu",
+		"body":[
+			"\\nolieu"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nodate":{
+		"prefix":"nodate",
+		"body":[
+			"\\nodate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"faxwarning":{
+		"prefix":"faxwarning",
+		"body":[
+			"\\faxwarning"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telefaxstring":{
+		"prefix":"telefaxstring",
+		"body":[
+			"\\telefaxstring"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telephonelabelname":{
+		"prefix":"telephonelabelname",
+		"body":[
+			"\\telephonelabelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telefaxlabelname":{
+		"prefix":"telefaxlabelname",
+		"body":[
+			"\\telefaxlabelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telefaxname":{
+		"prefix":"telefaxname",
+		"body":[
+			"\\telefaxname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tellabelname":{
+		"prefix":"tellabelname",
+		"body":[
+			"\\tellabelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"faxlabelname":{
+		"prefix":"faxlabelname",
+		"body":[
+			"\\faxlabelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telexlabelname":{
+		"prefix":"telexlabelname",
+		"body":[
+			"\\telexlabelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headtoname":{
+		"prefix":"headtoname",
+		"body":[
+			"\\headtoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headfromname":{
+		"prefix":"headfromname",
+		"body":[
+			"\\headfromname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagetotalname":{
+		"prefix":"pagetotalname",
+		"body":[
+			"\\pagetotalname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"concname":{
+		"prefix":"concname",
+		"body":[
+			"\\concname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccname":{
+		"prefix":"ccname",
+		"body":[
+			"\\ccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enclname":{
+		"prefix":"enclname",
+		"body":[
+			"\\enclname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mentionname":{
+		"prefix":"mentionname",
+		"body":[
+			"\\mentionname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefname":{
+		"prefix":"vrefname",
+		"body":[
+			"\\vrefname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nrefname":{
+		"prefix":"nrefname",
+		"body":[
+			"\\nrefname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letterwidth":{
+		"prefix":"letterwidth",
+		"body":[
+			"\\letterwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lettermargin":{
+		"prefix":"lettermargin",
+		"body":[
+			"\\lettermargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listmargin":{
+		"prefix":"listmargin",
+		"body":[
+			"\\listmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"openingspace":{
+		"prefix":"openingspace",
+		"body":[
+			"\\openingspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"openingindent":{
+		"prefix":"openingindent",
+		"body":[
+			"\\openingindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sigspace":{
+		"prefix":"sigspace",
+		"body":[
+			"\\sigspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ssigwidth":{
+		"prefix":"ssigwidth",
+		"body":[
+			"\\ssigwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ssigindent":{
+		"prefix":"ssigindent",
+		"body":[
+			"\\ssigindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"msigwidth":{
+		"prefix":"msigwidth",
+		"body":[
+			"\\msigwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FAXSTR":{
+		"prefix":"FAXSTR",
+		"body":[
+			"\\FAXSTR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"auxcount":{
+		"prefix":"auxcount",
+		"body":[
+			"\\auxcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"auxflag":{
+		"prefix":"auxflag",
+		"body":[
+			"\\auxflag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"auxline":{
+		"prefix":"auxline",
+		"body":[
+			"\\auxline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bdp":{
+		"prefix":"bdp",
+		"body":[
+			"\\bdp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bitnetnum":{
+		"prefix":"bitnetnum",
+		"body":[
+			"\\bitnetnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccittnum":{
+		"prefix":"ccittnum",
+		"body":[
+			"\\ccittnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccpnum":{
+		"prefix":"ccpnum",
+		"body":[
+			"\\ccpnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"concdecl":{
+		"prefix":"concdecl",
+		"body":[
+			"\\concdecl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"concline":{
+		"prefix":"concline",
+		"body":[
+			"\\concline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"decnetnum":{
+		"prefix":"decnetnum",
+		"body":[
+			"\\decnetnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emailcount":{
+		"prefix":"emailcount",
+		"body":[
+			"\\emailcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emailflag":{
+		"prefix":"emailflag",
+		"body":[
+			"\\emailflag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emailine":{
+		"prefix":"emailine",
+		"body":[
+			"\\emailine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emailnum":{
+		"prefix":"emailnum",
+		"body":[
+			"\\emailnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"faxopening{}":{
+		"prefix":"faxopening",
+		"body":[
+			"\\faxopening{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"faxpage":{
+		"prefix":"faxpage",
+		"body":[
+			"\\faxpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flushleft":{
+		"prefix":"flushleft",
+		"body":[
+			"\\flushleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromaddress":{
+		"prefix":"fromaddress",
+		"body":[
+			"\\fromaddress"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromlocation":{
+		"prefix":"fromlocation",
+		"body":[
+			"\\fromlocation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromref":{
+		"prefix":"fromref",
+		"body":[
+			"\\fromref"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromsig":{
+		"prefix":"fromsig",
+		"body":[
+			"\\fromsig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromssig":{
+		"prefix":"fromssig",
+		"body":[
+			"\\fromssig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromtsig":{
+		"prefix":"fromtsig",
+		"body":[
+			"\\fromtsig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"infos":{
+		"prefix":"infos",
+		"body":[
+			"\\infos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"internetnum":{
+		"prefix":"internetnum",
+		"body":[
+			"\\internetnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letteropening{}":{
+		"prefix":"letteropening",
+		"body":[
+			"\\letteropening{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LettreDeclareLanguage{}{}":{
+		"prefix":"LettreDeclareLanguage",
+		"body":[
+			"\\LettreDeclareLanguage{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lettrelabelselectlanguage{}":{
+		"prefix":"lettrelabelselectlanguage",
+		"body":[
+			"\\lettrelabelselectlanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lettrelmpselectlanguage{}":{
+		"prefix":"lettrelmpselectlanguage",
+		"body":[
+			"\\lettrelmpselectlanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lettreloadlang{}":{
+		"prefix":"lettreloadlang",
+		"body":[
+			"\\lettreloadlang{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LettreProvidesLanguage{}":{
+		"prefix":"LettreProvidesLanguage",
+		"body":[
+			"\\LettreProvidesLanguage{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mlabel{}":{
+		"prefix":"mlabel",
+		"body":[
+			"\\mlabel{${1:l’étiquette}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noinfos":{
+		"prefix":"noinfos",
+		"body":[
+			"\\noinfos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdate":{
+		"prefix":"pdate",
+		"body":[
+			"\\pdate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetauxenv":{
+		"prefix":"resetauxenv",
+		"body":[
+			"\\resetauxenv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetcloseenv":{
+		"prefix":"resetcloseenv",
+		"body":[
+			"\\resetcloseenv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetemailenv":{
+		"prefix":"resetemailenv",
+		"body":[
+			"\\resetemailenv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetopenenv":{
+		"prefix":"resetopenenv",
+		"body":[
+			"\\resetopenenv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sigflag":{
+		"prefix":"sigflag",
+		"body":[
+			"\\sigflag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"signum":{
+		"prefix":"signum",
+		"body":[
+			"\\signum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startlabels":{
+		"prefix":"startlabels",
+		"body":[
+			"\\startlabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopfax":{
+		"prefix":"stopfax",
+		"body":[
+			"\\stopfax"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopletter":{
+		"prefix":"stopletter",
+		"body":[
+			"\\stopletter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telepacnum":{
+		"prefix":"telepacnum",
+		"body":[
+			"\\telepacnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"telexnum":{
+		"prefix":"telexnum",
+		"body":[
+			"\\telexnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tofaxnum":{
+		"prefix":"tofaxnum",
+		"body":[
+			"\\tofaxnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toref":{
+		"prefix":"toref",
+		"body":[
+			"\\toref"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"totalpages":{
+		"prefix":"totalpages",
+		"body":[
+			"\\totalpages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letter{}":{
 		"prefix":"letter",
 		"body":[
 			"\\begin{letter}",
-				"\t$1",
+				"\t{${1:destinataire%text}}",
 			"\\end{letter}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"telefax":{
+	"telefax{}{}":{
 		"prefix":"telefax",
 		"body":[
 			"\\begin{telefax}",
-				"\t$1",
+				"\t{${1:numéro}}{${2:destinataire \\\\ adresse%text}}",
 			"\\end{telefax}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"GetExcessWidth",
 		"body":[
 			"\\GetExcessWidth{${1:column}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ExcessWidth",
 		"body":[
 			"\\ExcessWidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"spew",
 		"body":[
 			"\\spew{${1:factor}}{${2:column}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"CurrentColumn",
 		"body":[
 			"\\CurrentColumn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,16 +41,18 @@
 		"prefix":"NumberOfColumns",
 		"body":[
 			"\\NumberOfColumns"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabularew":{
+	"tabularew{}":{
 		"prefix":"tabularew",
 		"body":[
 			"\\begin{tabularew}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{tabularew}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

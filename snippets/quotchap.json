@@ -5,7 +5,8 @@
 		"prefix":"qauthor",
 		"body":[
 			"\\qauthor{${1:author}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"qsetcnfont",
 		"body":[
 			"\\qsetcnfont{${1:font family}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"quotefont",
 		"body":[
 			"\\quotefont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"qauthorfont",
 		"body":[
 			"\\qauthorfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"chapnumfont",
 		"body":[
 			"\\chapnumfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"sectfont",
 		"body":[
 			"\\sectfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"chapterheadendvskip",
 		"body":[
 			"\\chapterheadendvskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"chapterheadstartvskip",
 		"body":[
 			"\\chapterheadstartvskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,16 +79,18 @@
 			"\\begin{savequote}",
 				"\t$1",
 			"\\end{savequote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"savequote":{
+	"savequote[]":{
 		"prefix":"savequote",
 		"body":[
 			"\\begin{savequote}",
-				"\t$1",
+				"\t[${1:width}]",
 			"\\end{savequote}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

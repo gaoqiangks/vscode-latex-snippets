@@ -5,7 +5,8 @@
 		"prefix":"ResetKeys",
 		"body":[
 			"\\ResetKeys"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"LineWidth",
 		"body":[
 			"\\LineWidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"DoubleperCent",
 		"body":[
 			"\\DoubleperCent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"dtkExternDateiname",
 		"body":[
 			"\\dtkExternDateiname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,46 +41,51 @@
 		"prefix":"perCent",
 		"body":[
 			"\\perCent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"externalDocument":{
+	"externalDocument{}":{
 		"prefix":"externalDocument",
 		"body":[
 			"\\begin{externalDocument}",
-				"\t$1",
+				"\t{${1:Dateiname}}",
 			"\\end{externalDocument}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ErstelleGrafik":{
-		"prefix":"ErstelleGrafik",
-		"body":[
-			"\\begin{ErstelleGrafik}",
-				"\t$1",
-			"\\end{ErstelleGrafik}"
-		]
-	},
-
-
-	"externalDocument":{
+	"externalDocument[]{}":{
 		"prefix":"externalDocument",
 		"body":[
 			"\\begin{externalDocument}",
-				"\t$1",
+				"\t[${2:Optionen%keyvals}]{${1:Dateiname}}",
 			"\\end{externalDocument}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"ErstelleGrafik":{
+	"ErstelleGrafik{}":{
 		"prefix":"ErstelleGrafik",
 		"body":[
 			"\\begin{ErstelleGrafik}",
-				"\t$1",
+				"\t{${1:Dateiname}}",
 			"\\end{ErstelleGrafik}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ErstelleGrafik[]{}":{
+		"prefix":"ErstelleGrafik",
+		"body":[
+			"\\begin{ErstelleGrafik}",
+				"\t[${2:Optionen%keyvals}]{${1:Dateiname}}",
+			"\\end{ErstelleGrafik}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

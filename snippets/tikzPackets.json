@@ -5,7 +5,8 @@
 		"prefix":"packetsInit",
 		"body":[
 			"\\packetsInit"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"packetsPrintBitScale",
 		"body":[
 			"\\packetsPrintBitScale{${1:last bit value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"packetsBitFont",
 		"body":[
 			"\\packetsBitFont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"packetsPrintBitNumber",
 		"body":[
 			"\\packetsPrintBitNumber"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,63 +41,8 @@
 		"prefix":"packetsPutField",
 		"body":[
 			"\\packetsPutField{${1:num of bits}}{${2:name}}"
-		]
-	},
-
-
-	"packetsPrintRangeOnLeft{}{}":{
-		"prefix":"packetsPrintRangeOnLeft",
-		"body":[
-			"\\packetsPrintRangeOnLeft{${1:first bit}}{${2:last bit}}"
-		]
-	},
-
-
-	"packetsPrintRangeOnRight{}{}":{
-		"prefix":"packetsPrintRangeOnRight",
-		"body":[
-			"\\packetsPrintRangeOnRight{${1:first bit}}{${2:last bit}}"
-		]
-	},
-
-
-	"packetsNextLine":{
-		"prefix":"packetsNextLine",
-		"body":[
-			"\\packetsNextLine"
-		]
-	},
-
-
-	"packetsEndLine{}{}":{
-		"prefix":"packetsEndLine",
-		"body":[
-			"\\packetsEndLine{${1:first bit}}{${2:last bit}}"
-		]
-	},
-
-
-	"packetsLastNode":{
-		"prefix":"packetsLastNode",
-		"body":[
-			"\\packetsLastNode"
-		]
-	},
-
-
-	"packetsFirstNodeInLastLine":{
-		"prefix":"packetsFirstNodeInLastLine",
-		"body":[
-			"\\packetsFirstNodeInLastLine"
-		]
-	},
-
-
-	"packetsBitWidth":{
-		"prefix":"packetsBitWidth",
-		"body":[
-			"\\packetsBitWidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +50,8 @@
 		"prefix":"packetsPutField",
 		"body":[
 			"\\packetsPutField[${3:TikZ keys%keyvals}]{${1:num of bits}}{${2:display name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +59,8 @@
 		"prefix":"packetsPutField",
 		"body":[
 			"\\packetsPutField{${1:num of bits}}[${3:node name}]{${2:display name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +68,17 @@
 		"prefix":"packetsPutField",
 		"body":[
 			"\\packetsPutField[${3:TikZ keys%keyvals}]{${1:num of bits}}[${4:node name}]{${2:display name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"packetsPrintRangeOnLeft{}{}":{
+		"prefix":"packetsPrintRangeOnLeft",
+		"body":[
+			"\\packetsPrintRangeOnLeft{${1:first bit}}{${2:last bit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +86,17 @@
 		"prefix":"packetsPrintRangeOnLeft",
 		"body":[
 			"\\packetsPrintRangeOnLeft[${3:node name}]{${1:first bit}}{${2:last bit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"packetsPrintRangeOnRight{}{}":{
+		"prefix":"packetsPrintRangeOnRight",
+		"body":[
+			"\\packetsPrintRangeOnRight{${1:first bit}}{${2:last bit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,6 +104,52 @@
 		"prefix":"packetsPrintRangeOnRight",
 		"body":[
 			"\\packetsPrintRangeOnRight[${3:node name}]{${1:first bit}}{${2:last bit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"packetsNextLine":{
+		"prefix":"packetsNextLine",
+		"body":[
+			"\\packetsNextLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"packetsEndLine{}{}":{
+		"prefix":"packetsEndLine",
+		"body":[
+			"\\packetsEndLine{${1:first bit}}{${2:last bit}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"packetsLastNode":{
+		"prefix":"packetsLastNode",
+		"body":[
+			"\\packetsLastNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"packetsFirstNodeInLastLine":{
+		"prefix":"packetsFirstNodeInLastLine",
+		"body":[
+			"\\packetsFirstNodeInLastLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"packetsBitWidth":{
+		"prefix":"packetsBitWidth",
+		"body":[
+			"\\packetsBitWidth"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

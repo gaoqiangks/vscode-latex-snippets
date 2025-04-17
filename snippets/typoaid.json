@@ -5,79 +5,8 @@
 		"prefix":"typrintalph",
 		"body":[
 			"\\typrintalph{${1:font switch}}"
-		]
-	},
-
-
-	"typrintex{}":{
-		"prefix":"typrintex",
-		"body":[
-			"\\typrintex{${1:font switch}}"
-		]
-	},
-
-
-	"typrintem{}":{
-		"prefix":"typrintem",
-		"body":[
-			"\\typrintem{${1:font switch}}"
-		]
-	},
-
-
-	"tyallsimple{}":{
-		"prefix":"tyallsimple",
-		"body":[
-			"\\tyallsimple{${1:font switch}}"
-		]
-	},
-
-
-	"tychperwidth{}":{
-		"prefix":"tychperwidth",
-		"body":[
-			"\\tychperwidth{${1:font switch}}"
-		]
-	},
-
-
-	"tywidthgivchar{}":{
-		"prefix":"tywidthgivchar",
-		"body":[
-			"\\tywidthgivchar{${1:number}}"
-		]
-	},
-
-
-	"tyheight{}{}":{
-		"prefix":"tyheight",
-		"body":[
-			"\\tyheight{${1:height}}{${2:baselineskip}}"
-		]
-	},
-
-
-	"tyfonttable{}":{
-		"prefix":"tyfonttable",
-		"body":[
-			"\\tyfonttable{${1:font switch}}"
-		]
-	},
-
-
-	"tywidthtable{}":{
-		"prefix":"tywidthtable",
-		"body":[
-			"\\tywidthtable{${1:font switch}}"
-		]
-	},
-
-
-	"tyformfactorheight{}{}":{
-		"prefix":"tyformfactorheight",
-		"body":[
-			"\\tyformfactorheight{${1:height}}{${2:form factor}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,17 @@
 		"prefix":"*typrintalph",
 		"body":[
 			"\\typrintalph*{${1:font switch}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"typrintex{}":{
+		"prefix":"typrintex",
+		"body":[
+			"\\typrintex{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +32,17 @@
 		"prefix":"*typrintex",
 		"body":[
 			"\\typrintex*{${1:font switch}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"typrintem{}":{
+		"prefix":"typrintem",
+		"body":[
+			"\\typrintem{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +50,17 @@
 		"prefix":"*typrintem",
 		"body":[
 			"\\typrintem*{${1:font switch}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyallsimple{}":{
+		"prefix":"tyallsimple",
+		"body":[
+			"\\tyallsimple{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,103 +68,17 @@
 		"prefix":"*tyallsimple",
 		"body":[
 			"\\tyallsimple*{${1:font switch}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"tychperwidth*{}":{
-		"prefix":"*tychperwidth",
+	"tychperwidth{}":{
+		"prefix":"tychperwidth",
 		"body":[
-			"\\tychperwidth*{${1:font switch}}"
-		]
-	},
-
-
-	"tychperwidth*[]{}":{
-		"prefix":"*tychperwidth",
-		"body":[
-			"\\tychperwidth*[${2:width}]{${1:font switch}}"
-		]
-	},
-
-
-	"tywidthgivchar*{}":{
-		"prefix":"*tywidthgivchar",
-		"body":[
-			"\\tywidthgivchar*{${1:number}}"
-		]
-	},
-
-
-	"tywidthgivchar*[]{}":{
-		"prefix":"*tywidthgivchar",
-		"body":[
-			"\\tywidthgivchar*[${2:font switch}]{${1:number}}"
-		]
-	},
-
-
-	"tyheight*{}{}":{
-		"prefix":"*tyheight",
-		"body":[
-			"\\tyheight*{${1:height}}{${2:baselineskip}}"
-		]
-	},
-
-
-	"tyheight*[]{}{}":{
-		"prefix":"*tyheight",
-		"body":[
-			"\\tyheight*[${3:font switch}]{${1:height}}{${2:baselineskip}}"
-		]
-	},
-
-
-	"tyheight*[]{}{}[]":{
-		"prefix":"*tyheight",
-		"body":[
-			"\\tyheight*[${3:font switch}]{${1:height}}{${2:baselineskip}}[${4:font size}]"
-		]
-	},
-
-
-	"tyfonttable*{}":{
-		"prefix":"*tyfonttable",
-		"body":[
-			"\\tyfonttable*{${1:font switch}}"
-		]
-	},
-
-
-	"tywidthtable*{}":{
-		"prefix":"*tywidthtable",
-		"body":[
-			"\\tywidthtable*{${1:font switch}}"
-		]
-	},
-
-
-	"tyformfactorheight*{}{}":{
-		"prefix":"*tyformfactorheight",
-		"body":[
-			"\\tyformfactorheight*{${1:height}}{${2:form factor}}"
-		]
-	},
-
-
-	"tyformfactorheight*[]{}{}":{
-		"prefix":"*tyformfactorheight",
-		"body":[
-			"\\tyformfactorheight*[${3:font switch}]{${1:height}}{${2:form factor}}"
-		]
-	},
-
-
-	"tyformfactorheight*[]{}{}[]":{
-		"prefix":"*tyformfactorheight",
-		"body":[
-			"\\tyformfactorheight*[${3:font switch}]{${1:height}}{${2:form factor}}[${4:baselineskip}]"
-		]
+			"\\tychperwidth{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +86,35 @@
 		"prefix":"tychperwidth",
 		"body":[
 			"\\tychperwidth[${2:width}]{${1:font switch}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tychperwidth*{}":{
+		"prefix":"*tychperwidth",
+		"body":[
+			"\\tychperwidth*{${1:font switch}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tychperwidth*[]{}":{
+		"prefix":"*tychperwidth",
+		"body":[
+			"\\tychperwidth*[${2:width}]{${1:font switch}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tywidthgivchar{}":{
+		"prefix":"tywidthgivchar",
+		"body":[
+			"\\tywidthgivchar{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +122,35 @@
 		"prefix":"tywidthgivchar",
 		"body":[
 			"\\tywidthgivchar[${2:font switch}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tywidthgivchar*{}":{
+		"prefix":"*tywidthgivchar",
+		"body":[
+			"\\tywidthgivchar*{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tywidthgivchar*[]{}":{
+		"prefix":"*tywidthgivchar",
+		"body":[
+			"\\tywidthgivchar*[${2:font switch}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyheight{}{}":{
+		"prefix":"tyheight",
+		"body":[
+			"\\tyheight{${1:height}}{${2:baselineskip}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +158,8 @@
 		"prefix":"tyheight",
 		"body":[
 			"\\tyheight[${3:font switch}]{${1:height}}{${2:baselineskip}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +167,80 @@
 		"prefix":"tyheight",
 		"body":[
 			"\\tyheight[${3:font switch}]{${1:height}}{${2:baselineskip}}[${4:font size}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tyheight*{}{}":{
+		"prefix":"*tyheight",
+		"body":[
+			"\\tyheight*{${1:height}}{${2:baselineskip}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyheight*[]{}{}":{
+		"prefix":"*tyheight",
+		"body":[
+			"\\tyheight*[${3:font switch}]{${1:height}}{${2:baselineskip}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyheight*[]{}{}[]":{
+		"prefix":"*tyheight",
+		"body":[
+			"\\tyheight*[${3:font switch}]{${1:height}}{${2:baselineskip}}[${4:font size}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyfonttable{}":{
+		"prefix":"tyfonttable",
+		"body":[
+			"\\tyfonttable{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tyfonttable*{}":{
+		"prefix":"*tyfonttable",
+		"body":[
+			"\\tyfonttable*{${1:font switch}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tywidthtable{}":{
+		"prefix":"tywidthtable",
+		"body":[
+			"\\tywidthtable{${1:font switch}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tywidthtable*{}":{
+		"prefix":"*tywidthtable",
+		"body":[
+			"\\tywidthtable*{${1:font switch}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyformfactorheight{}{}":{
+		"prefix":"tyformfactorheight",
+		"body":[
+			"\\tyformfactorheight{${1:height}}{${2:form factor}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +248,8 @@
 		"prefix":"tyformfactorheight",
 		"body":[
 			"\\tyformfactorheight[${3:font switch}]{${1:height}}{${2:form factor}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,6 +257,34 @@
 		"prefix":"tyformfactorheight",
 		"body":[
 			"\\tyformfactorheight[${3:font switch}]{${1:height}}{${2:form factor}}[${4:baselineskip}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tyformfactorheight*{}{}":{
+		"prefix":"*tyformfactorheight",
+		"body":[
+			"\\tyformfactorheight*{${1:height}}{${2:form factor}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyformfactorheight*[]{}{}":{
+		"prefix":"*tyformfactorheight",
+		"body":[
+			"\\tyformfactorheight*[${3:font switch}]{${1:height}}{${2:form factor}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tyformfactorheight*[]{}{}[]":{
+		"prefix":"*tyformfactorheight",
+		"body":[
+			"\\tyformfactorheight*[${3:font switch}]{${1:height}}{${2:form factor}}[${4:baselineskip}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

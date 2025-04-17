@@ -5,23 +5,8 @@
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\PstGanttChart{${1:vertical units}}{${2:horizontal units}}"
-		]
-	},
-
-
-	"endPstGanttChart":{
-		"prefix":"endPstGanttChart",
-		"body":[
-			"\\endPstGanttChart"
-		]
-	},
-
-
-	"PstGanttTask{}{}":{
-		"prefix":"PstGanttTask",
-		"body":[
-			"\\PstGanttTask{${1:start}}{${2:end}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\PstGanttChart[${3:options%keyvals}]{${1:vertical units}}{${2:horizontal units}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"endPstGanttChart":{
+		"prefix":"endPstGanttChart",
+		"body":[
+			"\\endPstGanttChart"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PstGanttTask{}{}":{
+		"prefix":"PstGanttTask",
+		"body":[
+			"\\PstGanttTask{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,26 +41,29 @@
 		"prefix":"PstGanttTask",
 		"body":[
 			"\\PstGanttTask[${3:options%keyvals}]{${1:start}}{${2:end}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"PstGanttChart":{
+	"PstGanttChart{}{}":{
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\begin{PstGanttChart}",
-				"\t$1",
+				"\t{${1:vertical units}}{${2:horizontal units}}",
 			"\\end{PstGanttChart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PstGanttChart":{
+	"PstGanttChart[]{}{}":{
 		"prefix":"PstGanttChart",
 		"body":[
 			"\\begin{PstGanttChart}",
-				"\t$1",
+				"\t[${3:options%keyvals}]{${1:vertical units}}{${2:horizontal units}}",
 			"\\end{PstGanttChart}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

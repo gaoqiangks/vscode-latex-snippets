@@ -1,11 +1,21 @@
 {
 
 
+	"attach[]":{
+		"prefix":"attach",
+		"body":[
+			"\\attach[${1:name}]"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"DDDannot{}":{
 		"prefix":"DDDannot",
 		"body":[
 			"\\DDDannot{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,95 +23,8 @@
 		"prefix":"DDDcontext",
 		"body":[
 			"\\DDDcontext{${1:name}}"
-		]
-	},
-
-
-	"duplexdisplay":{
-		"prefix":"duplexdisplay",
-		"body":[
-			"\\duplexdisplay"
-		]
-	},
-
-
-	"fullscreen":{
-		"prefix":"fullscreen",
-		"body":[
-			"\\fullscreen"
-		]
-	},
-
-
-	"initpageattributes":{
-		"prefix":"initpageattributes",
-		"body":[
-			"\\initpageattributes"
-		]
-	},
-
-
-	"lininglinks":{
-		"prefix":"lininglinks",
-		"body":[
-			"\\lininglinks"
-		]
-	},
-
-
-	"nolininglinks":{
-		"prefix":"nolininglinks",
-		"body":[
-			"\\nolininglinks"
-		]
-	},
-
-
-	"pageattributes":{
-		"prefix":"pageattributes",
-		"body":[
-			"\\pageattributes"
-		]
-	},
-
-
-	"renditionautoplay":{
-		"prefix":"renditionautoplay",
-		"body":[
-			"\\renditionautoplay"
-		]
-	},
-
-
-	"sdef{}{}":{
-		"prefix":"sdef",
-		"body":[
-			"\\sdef{${1:string%definition}}{${2:body}}"
-		]
-	},
-
-
-	"showattached":{
-		"prefix":"showattached",
-		"body":[
-			"\\showattached"
-		]
-	},
-
-
-	"showoutlines":{
-		"prefix":"showoutlines",
-		"body":[
-			"\\showoutlines"
-		]
-	},
-
-
-	"attach[]":{
-		"prefix":"attach",
-		"body":[
-			"\\attach[${1:name}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +32,8 @@
 		"prefix":"DDDview",
 		"body":[
 			"\\DDDview[${1:view name}][${2:keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +41,8 @@
 		"prefix":"defaultpageactions",
 		"body":[
 			"\\defaultpageactions[${1:additional action specs}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +50,8 @@
 		"prefix":"defaultpageduration",
 		"body":[
 			"\\defaultpageduration[${1:duration}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +59,8 @@
 		"prefix":"defaultpagerotate",
 		"body":[
 			"\\defaultpagerotate[${1:rotation spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +68,26 @@
 		"prefix":"dljavascript",
 		"body":[
 			"\\dljavascript[${2:name}]{${1:script%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"duplexdisplay":{
+		"prefix":"duplexdisplay",
+		"body":[
+			"\\duplexdisplay"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullscreen":{
+		"prefix":"fullscreen",
+		"body":[
+			"\\fullscreen"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +95,35 @@
 		"prefix":"hlink",
 		"body":[
 			"\\hlink[${2:action spec}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"initpageattributes":{
+		"prefix":"initpageattributes",
+		"body":[
+			"\\initpageattributes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lininglinks":{
+		"prefix":"lininglinks",
+		"body":[
+			"\\lininglinks"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nolininglinks":{
+		"prefix":"nolininglinks",
+		"body":[
+			"\\nolininglinks"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +131,8 @@
 		"prefix":"openaction",
 		"body":[
 			"\\openaction[${1:action spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +140,17 @@
 		"prefix":"pageactions",
 		"body":[
 			"\\pageactions[${1:additional action specs}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pageattributes":{
+		"prefix":"pageattributes",
+		"body":[
+			"\\pageattributes"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +158,8 @@
 		"prefix":"pageduration",
 		"body":[
 			"\\pageduration[${1:duration}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +167,8 @@
 		"prefix":"pagerotate",
 		"body":[
 			"\\pagerotate[${1:rotation spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +176,8 @@
 		"prefix":"pdfaction",
 		"body":[
 			"\\pdfaction[${1:action spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +185,8 @@
 		"prefix":"render",
 		"body":[
 			"\\render[${2:name}][${3:options%keyvals}]{${1:appearance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +194,17 @@
 		"prefix":"render",
 		"body":[
 			"\\render[${2:name}]{${1:appearance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renditionautoplay":{
+		"prefix":"renditionautoplay",
+		"body":[
+			"\\renditionautoplay"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +212,8 @@
 		"prefix":"RM",
 		"body":[
 			"\\RM[${2:name}][${3:options%keyvals}]{${1:appearance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +221,35 @@
 		"prefix":"RM",
 		"body":[
 			"\\RM[${2:name}]{${1:appearance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sdef{}{}":{
+		"prefix":"sdef",
+		"body":[
+			"\\sdef{${1:string%definition}}{${2:body}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showattached":{
+		"prefix":"showattached",
+		"body":[
+			"\\showattached"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showoutlines":{
+		"prefix":"showoutlines",
+		"body":[
+			"\\showoutlines"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +257,8 @@
 		"prefix":"transition",
 		"body":[
 			"\\transition[${1:transition spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,6 +266,7 @@
 		"prefix":"transitions",
 		"body":[
 			"\\transitions[${1:transition spec}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

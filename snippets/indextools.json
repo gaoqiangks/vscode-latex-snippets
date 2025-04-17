@@ -1,11 +1,21 @@
 {
 
 
+	"makeindex[]":{
+		"prefix":"makeindex",
+		"body":[
+			"\\makeindex[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"indexsetup{}":{
 		"prefix":"indexsetup",
 		"body":[
 			"\\indexsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,111 +23,8 @@
 		"prefix":"splitindexoptions",
 		"body":[
 			"\\splitindexoptions{${1:splitindex option}}"
-		]
-	},
-
-
-	"indexprologue{}":{
-		"prefix":"indexprologue",
-		"body":[
-			"\\indexprologue{${1:text}}"
-		]
-	},
-
-
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex"
-		]
-	},
-
-
-	"alsoname":{
-		"prefix":"alsoname",
-		"body":[
-			"\\alsoname"
-		]
-	},
-
-
-	"innotenumber{}{}":{
-		"prefix":"innotenumber",
-		"body":[
-			"\\innotenumber{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"innote{}":{
-		"prefix":"innote",
-		"body":[
-			"\\innote{${1:text}}"
-		]
-	},
-
-
-	"seealso{}{}":{
-		"prefix":"seealso",
-		"body":[
-			"\\seealso{${1:text}}{${2:page}}"
-		]
-	},
-
-
-	"seename":{
-		"prefix":"seename",
-		"body":[
-			"\\seename"
-		]
-	},
-
-
-	"see{}{}":{
-		"prefix":"see",
-		"body":[
-			"\\see{${1:text}}{${2:page}}"
-		]
-	},
-
-
-	"nindex{}":{
-		"prefix":"nindex",
-		"body":[
-			"\\nindex{${1:entry}}"
-		]
-	},
-
-
-	"nnumberindex{}":{
-		"prefix":"nnumberindex",
-		"body":[
-			"\\nnumberindex{${1:entry}}"
-		]
-	},
-
-
-	"nindex{}":{
-		"prefix":"nindex",
-		"body":[
-			"\\nindex{${1:entry}}"
-		]
-	},
-
-
-	"nnumberindex{}":{
-		"prefix":"nnumberindex",
-		"body":[
-			"\\nnumberindex{${1:entry}}"
-		]
-	},
-
-
-	"makeindex[]":{
-		"prefix":"makeindex",
-		"body":[
-			"\\makeindex[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"index",
 		"body":[
 			"\\index[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"indexprologue{}":{
+		"prefix":"indexprologue",
+		"body":[
+			"\\indexprologue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,17 @@
 		"prefix":"indexprologue",
 		"body":[
 			"\\indexprologue[${2:spacing}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printindex":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +68,62 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex[name"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"alsoname":{
+		"prefix":"alsoname",
+		"body":[
+			"\\alsoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"innotenumber{}{}":{
+		"prefix":"innotenumber",
+		"body":[
+			"\\innotenumber{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"innote{}":{
+		"prefix":"innote",
+		"body":[
+			"\\innote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seealso{}{}":{
+		"prefix":"seealso",
+		"body":[
+			"\\seealso{${1:text}}{${2:page}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seename":{
+		"prefix":"seename",
+		"body":[
+			"\\seename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"see{}{}":{
+		"prefix":"see",
+		"body":[
+			"\\see{${1:text}}{${2:page}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +131,17 @@
 		"prefix":"nindex",
 		"body":[
 			"\\nindex[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nindex{}":{
+		"prefix":"nindex",
+		"body":[
+			"\\nindex{${1:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +149,17 @@
 		"prefix":"nnumberindex",
 		"body":[
 			"\\nnumberindex[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nnumberindex{}":{
+		"prefix":"nnumberindex",
+		"body":[
+			"\\nnumberindex{${1:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +167,17 @@
 		"prefix":"nindex",
 		"body":[
 			"\\nindex[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nindex{}":{
+		"prefix":"nindex",
+		"body":[
+			"\\nindex{${1:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,6 +185,16 @@
 		"prefix":"nnumberindex",
 		"body":[
 			"\\nnumberindex[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nnumberindex{}":{
+		"prefix":"nnumberindex",
+		"body":[
+			"\\nnumberindex{${1:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"DefaultAnimal",
 		"body":[
 			"\\DefaultAnimal{${1:animal%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"DucksayOptions",
 		"body":[
 			"\\DucksayOptions{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"AnimalOptions",
 		"body":[
 			"\\AnimalOptions{${1:animal}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"ducksay{}":{
-		"prefix":"ducksay",
-		"body":[
-			"\\ducksay{${1:message}}"
-		]
-	},
-
-
-	"duckthink{}":{
-		"prefix":"duckthink",
-		"body":[
-			"\\duckthink{${1:message}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"*AnimalOptions",
 		"body":[
 			"\\AnimalOptions*{${1:animal}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ducksay{}":{
+		"prefix":"ducksay",
+		"body":[
+			"\\ducksay{${1:message}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"ducksay",
 		"body":[
 			"\\ducksay[${2:options%keyvals}]{${1:message}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"duckthink{}":{
+		"prefix":"duckthink",
+		"body":[
+			"\\duckthink{${1:message}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"duckthink",
 		"body":[
 			"\\duckthink[${2:options%keyvals}]{${1:message}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

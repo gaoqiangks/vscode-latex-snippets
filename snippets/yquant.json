@@ -5,7 +5,8 @@
 		"prefix":"useyquantlanguage",
 		"body":[
 			"\\useyquantlanguage{${1:language%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"clippathhorz",
 		"body":[
 			"\\clippathhorz{${1:path code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"clippathvert",
 		"body":[
 			"\\clippathvert{${1:path code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,511 +32,8 @@
 		"prefix":"clippath",
 		"body":[
 			"\\clippath{${1:path code}}"
-		]
-	},
-
-
-	"pgfshapeclippath{}{}":{
-		"prefix":"pgfshapeclippath",
-		"body":[
-			"\\pgfshapeclippath{${1:shape}}{${2:options}}"
-		]
-	},
-
-
-	"pgfreferencednodename":{
-		"prefix":"pgfreferencednodename",
-		"body":[
-			"\\pgfreferencednodename"
-		]
-	},
-
-
-	"pgfshapeclippathresult":{
-		"prefix":"pgfshapeclippathresult",
-		"body":[
-			"\\pgfshapeclippathresult"
-		]
-	},
-
-
-	"pgfshapeclippathhorzresult":{
-		"prefix":"pgfshapeclippathhorzresult",
-		"body":[
-			"\\pgfshapeclippathhorzresult"
-		]
-	},
-
-
-	"pgfshapeclippathvertresult":{
-		"prefix":"pgfshapeclippathvertresult",
-		"body":[
-			"\\pgfshapeclippathvertresult"
-		]
-	},
-
-
-	"ifhorz{}{}":{
-		"prefix":"ifhorz",
-		"body":[
-			"\\ifhorz{${1:true}}{${2:false}}"
-		]
-	},
-
-
-	"pgfdecorationsegmentfromto":{
-		"prefix":"pgfdecorationsegmentfromto",
-		"body":[
-			"\\pgfdecorationsegmentfromto"
-		]
-	},
-
-
-	"ifyquanthorz{}{}":{
-		"prefix":"ifyquanthorz",
-		"body":[
-			"\\ifyquanthorz{${1:if horz}}{${2:if vert}}"
-		]
-	},
-
-
-	"len":{
-		"prefix":"len",
-		"body":[
-			"\\len"
-		]
-	},
-
-
-	"reg":{
-		"prefix":"reg",
-		"body":[
-			"\\reg"
-		]
-	},
-
-
-	"idx":{
-		"prefix":"idx",
-		"body":[
-			"\\idx"
-		]
-	},
-
-
-	"regidx":{
-		"prefix":"regidx",
-		"body":[
-			"\\regidx"
-		]
-	},
-
-
-	"ifinmulti":{
-		"prefix":"ifinmulti",
-		"body":[
-			"\\ifinmulti"
-		]
-	},
-
-
-	"ifallowmain":{
-		"prefix":"ifallowmain",
-		"body":[
-			"\\ifallowmain"
-		]
-	},
-
-
-	"registers{}":{
-		"prefix":"registers",
-		"body":[
-			"\\registers{${1:registers}}"
-		]
-	},
-
-
-	"ifyquantmeasuring":{
-		"prefix":"ifyquantmeasuring",
-		"body":[
-			"\\ifyquantmeasuring"
-		]
-	},
-
-
-	"yquantmeasuringtrue":{
-		"prefix":"yquantmeasuringtrue",
-		"body":[
-			"\\yquantmeasuringtrue"
-		]
-	},
-
-
-	"yquantmeasuringfalse":{
-		"prefix":"yquantmeasuringfalse",
-		"body":[
-			"\\yquantmeasuringfalse"
-		]
-	},
-
-
-	"yquantset{}":{
-		"prefix":"yquantset",
-		"body":[
-			"\\yquantset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"yquantsecondpass{}":{
-		"prefix":"yquantsecondpass",
-		"body":[
-			"\\yquantsecondpass{${1:code}}"
-		]
-	},
-
-
-	"yquantesecondpass{}":{
-		"prefix":"yquantesecondpass",
-		"body":[
-			"\\yquantesecondpass{${1:code}}"
-		]
-	},
-
-
-	"yquantescape{}":{
-		"prefix":"yquantescape",
-		"body":[
-			"\\yquantescape{${1:code}}"
-		]
-	},
-
-
-	"yquanteescape{}":{
-		"prefix":"yquanteescape",
-		"body":[
-			"\\yquanteescape{${1:code}}"
-		]
-	},
-
-
-	"yquantimportcommand{}":{
-		"prefix":"yquantimportcommand",
-		"body":[
-			"\\yquantimportcommand{${1:file}}"
-		]
-	},
-
-
-	"yquantimportpath":{
-		"prefix":"yquantimportpath",
-		"body":[
-			"\\yquantimportpath"
-		]
-	},
-
-
-	"yquantimport{}":{
-		"prefix":"yquantimport",
-		"body":[
-			"\\yquantimport{${1:file}}"
-		]
-	},
-
-
-	"ifvalid":{
-		"prefix":"ifvalid",
-		"body":[
-			"\\ifvalid"
-		]
-	},
-
-
-	"wirexpos":{
-		"prefix":"wirexpos",
-		"body":[
-			"\\wirexpos"
-		]
-	},
-
-
-	"wirexprevpos":{
-		"prefix":"wirexprevpos",
-		"body":[
-			"\\wirexprevpos"
-		]
-	},
-
-
-	"wiretype":{
-		"prefix":"wiretype",
-		"body":[
-			"\\wiretype"
-		]
-	},
-
-
-	"wirelast":{
-		"prefix":"wirelast",
-		"body":[
-			"\\wirelast"
-		]
-	},
-
-
-	"Ifnum":{
-		"prefix":"Ifnum",
-		"body":[
-			"\\Ifnum"
-		]
-	},
-
-
-	"Ifcase":{
-		"prefix":"Ifcase",
-		"body":[
-			"\\Ifcase"
-		]
-	},
-
-
-	"Or":{
-		"prefix":"Or",
-		"body":[
-			"\\Or"
-		]
-	},
-
-
-	"Else":{
-		"prefix":"Else",
-		"body":[
-			"\\Else"
-		]
-	},
-
-
-	"Fi":{
-		"prefix":"Fi",
-		"body":[
-			"\\Fi"
-		]
-	},
-
-
-	"Unless":{
-		"prefix":"Unless",
-		"body":[
-			"\\Unless"
-		]
-	},
-
-
-	"The":{
-		"prefix":"The",
-		"body":[
-			"\\The"
-		]
-	},
-
-
-	"nonaffectedpgfshapeclippathhorzresult":{
-		"prefix":"nonaffectedpgfshapeclippathhorzresult",
-		"body":[
-			"\\nonaffectedpgfshapeclippathhorzresult"
-		]
-	},
-
-
-	"wirestyle":{
-		"prefix":"wirestyle",
-		"body":[
-			"\\wirestyle"
-		]
-	},
-
-
-	"wireclipping":{
-		"prefix":"wireclipping",
-		"body":[
-			"\\wireclipping"
-		]
-	},
-
-
-	"yquantdefinegate{}{}":{
-		"prefix":"yquantdefinegate",
-		"body":[
-			"\\yquantdefinegate{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"yquantredefinegate{}{}":{
-		"prefix":"yquantredefinegate",
-		"body":[
-			"\\yquantredefinegate{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"yquantdefinebox{}{}":{
-		"prefix":"yquantdefinebox",
-		"body":[
-			"\\yquantdefinebox{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"yquantdefinemultibox{}{}":{
-		"prefix":"yquantdefinemultibox",
-		"body":[
-			"\\yquantdefinemultibox{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"yquantredefinebox{}{}":{
-		"prefix":"yquantredefinebox",
-		"body":[
-			"\\yquantredefinebox{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"yquantredefinemultibox{}{}":{
-		"prefix":"yquantredefinemultibox",
-		"body":[
-			"\\yquantredefinemultibox{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"circuit{}":{
-		"prefix":"circuit",
-		"body":[
-			"\\circuit{${1:content}}"
-		]
-	},
-
-
-	"equals":{
-		"prefix":"equals",
-		"body":[
-			"\\equals"
-		]
-	},
-
-
-	"shiftright":{
-		"prefix":"shiftright",
-		"body":[
-			"\\shiftright"
-		]
-	},
-
-
-	"m":{
-		"prefix":"m",
-		"body":[
-			"\\m"
-		]
-	},
-
-
-	"txt":{
-		"prefix":"txt",
-		"body":[
-			"\\txt"
-		]
-	},
-
-
-	"meter":{
-		"prefix":"meter",
-		"body":[
-			"\\meter"
-		]
-	},
-
-
-	"dmeter":{
-		"prefix":"dmeter",
-		"body":[
-			"\\dmeter"
-		]
-	},
-
-
-	"dmeterwide":{
-		"prefix":"dmeterwide",
-		"body":[
-			"\\dmeterwide"
-		]
-	},
-
-
-	"qasmimport{}":{
-		"prefix":"qasmimport",
-		"body":[
-			"\\qasmimport{${1:file}}"
-		]
-	},
-
-
-	"qasmname{}":{
-		"prefix":"qasmname",
-		"body":[
-			"\\qasmname{${1:arg}}"
-		]
-	},
-
-
-	"yquantimport*{}":{
-		"prefix":"*yquantimport",
-		"body":[
-			"\\yquantimport*{${1:file}}"
-		]
-	},
-
-
-	"yquantimport*[]{}":{
-		"prefix":"*yquantimport",
-		"body":[
-			"\\yquantimport*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"equals*":{
-		"prefix":"*equals",
-		"body":[
-			"\\equals*"
-		]
-	},
-
-
-	"equals*[]":{
-		"prefix":"*equals",
-		"body":[
-			"\\equals*[${1:content}]"
-		]
-	},
-
-
-	"shiftright*":{
-		"prefix":"*shiftright",
-		"body":[
-			"\\shiftright*"
-		]
-	},
-
-
-	"shiftright*[]":{
-		"prefix":"*shiftright",
-		"body":[
-			"\\shiftright*[${1:where}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +41,242 @@
 		"prefix":"inheritclippath",
 		"body":[
 			"\\inheritclippath[${1:from=shape}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfshapeclippath{}{}":{
+		"prefix":"pgfshapeclippath",
+		"body":[
+			"\\pgfshapeclippath{${1:shape}}{${2:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfreferencednodename":{
+		"prefix":"pgfreferencednodename",
+		"body":[
+			"\\pgfreferencednodename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfshapeclippathresult":{
+		"prefix":"pgfshapeclippathresult",
+		"body":[
+			"\\pgfshapeclippathresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfshapeclippathhorzresult":{
+		"prefix":"pgfshapeclippathhorzresult",
+		"body":[
+			"\\pgfshapeclippathhorzresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfshapeclippathvertresult":{
+		"prefix":"pgfshapeclippathvertresult",
+		"body":[
+			"\\pgfshapeclippathvertresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifhorz{}{}":{
+		"prefix":"ifhorz",
+		"body":[
+			"\\ifhorz{${1:true}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfdecorationsegmentfromto":{
+		"prefix":"pgfdecorationsegmentfromto",
+		"body":[
+			"\\pgfdecorationsegmentfromto"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifyquanthorz{}{}":{
+		"prefix":"ifyquanthorz",
+		"body":[
+			"\\ifyquanthorz{${1:if horz}}{${2:if vert}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"len":{
+		"prefix":"len",
+		"body":[
+			"\\len"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reg":{
+		"prefix":"reg",
+		"body":[
+			"\\reg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"idx":{
+		"prefix":"idx",
+		"body":[
+			"\\idx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"regidx":{
+		"prefix":"regidx",
+		"body":[
+			"\\regidx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifinmulti":{
+		"prefix":"ifinmulti",
+		"body":[
+			"\\ifinmulti"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifallowmain":{
+		"prefix":"ifallowmain",
+		"body":[
+			"\\ifallowmain"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"registers{}":{
+		"prefix":"registers",
+		"body":[
+			"\\registers{${1:registers}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifyquantmeasuring":{
+		"prefix":"ifyquantmeasuring",
+		"body":[
+			"\\ifyquantmeasuring"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantmeasuringtrue":{
+		"prefix":"yquantmeasuringtrue",
+		"body":[
+			"\\yquantmeasuringtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantmeasuringfalse":{
+		"prefix":"yquantmeasuringfalse",
+		"body":[
+			"\\yquantmeasuringfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantset{}":{
+		"prefix":"yquantset",
+		"body":[
+			"\\yquantset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantsecondpass{}":{
+		"prefix":"yquantsecondpass",
+		"body":[
+			"\\yquantsecondpass{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantesecondpass{}":{
+		"prefix":"yquantesecondpass",
+		"body":[
+			"\\yquantesecondpass{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantescape{}":{
+		"prefix":"yquantescape",
+		"body":[
+			"\\yquantescape{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquanteescape{}":{
+		"prefix":"yquanteescape",
+		"body":[
+			"\\yquanteescape{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantimportcommand{}":{
+		"prefix":"yquantimportcommand",
+		"body":[
+			"\\yquantimportcommand{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantimportpath":{
+		"prefix":"yquantimportpath",
+		"body":[
+			"\\yquantimportpath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantimport{}":{
+		"prefix":"yquantimport",
+		"body":[
+			"\\yquantimport{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +284,170 @@
 		"prefix":"yquantimport",
 		"body":[
 			"\\yquantimport[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantimport*{}":{
+		"prefix":"*yquantimport",
+		"body":[
+			"\\yquantimport*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"yquantimport*[]{}":{
+		"prefix":"*yquantimport",
+		"body":[
+			"\\yquantimport*[${2:options%keyvals}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ifvalid":{
+		"prefix":"ifvalid",
+		"body":[
+			"\\ifvalid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wirexpos":{
+		"prefix":"wirexpos",
+		"body":[
+			"\\wirexpos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wirexprevpos":{
+		"prefix":"wirexprevpos",
+		"body":[
+			"\\wirexprevpos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wiretype":{
+		"prefix":"wiretype",
+		"body":[
+			"\\wiretype"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wirelast":{
+		"prefix":"wirelast",
+		"body":[
+			"\\wirelast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifnum":{
+		"prefix":"Ifnum",
+		"body":[
+			"\\Ifnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ifcase":{
+		"prefix":"Ifcase",
+		"body":[
+			"\\Ifcase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Or":{
+		"prefix":"Or",
+		"body":[
+			"\\Or"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Else":{
+		"prefix":"Else",
+		"body":[
+			"\\Else"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Fi":{
+		"prefix":"Fi",
+		"body":[
+			"\\Fi"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Unless":{
+		"prefix":"Unless",
+		"body":[
+			"\\Unless"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"The":{
+		"prefix":"The",
+		"body":[
+			"\\The"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonaffectedpgfshapeclippathhorzresult":{
+		"prefix":"nonaffectedpgfshapeclippathhorzresult",
+		"body":[
+			"\\nonaffectedpgfshapeclippathhorzresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wirestyle":{
+		"prefix":"wirestyle",
+		"body":[
+			"\\wirestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wireclipping":{
+		"prefix":"wireclipping",
+		"body":[
+			"\\wireclipping"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantdefinegate{}{}":{
+		"prefix":"yquantdefinegate",
+		"body":[
+			"\\yquantdefinegate{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +455,17 @@
 		"prefix":"yquantdefinegate",
 		"body":[
 			"\\yquantdefinegate{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantredefinegate{}{}":{
+		"prefix":"yquantredefinegate",
+		"body":[
+			"\\yquantredefinegate{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +473,17 @@
 		"prefix":"yquantredefinegate",
 		"body":[
 			"\\yquantredefinegate{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantdefinebox{}{}":{
+		"prefix":"yquantdefinebox",
+		"body":[
+			"\\yquantdefinebox{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +491,17 @@
 		"prefix":"yquantdefinebox",
 		"body":[
 			"\\yquantdefinebox{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantdefinemultibox{}{}":{
+		"prefix":"yquantdefinemultibox",
+		"body":[
+			"\\yquantdefinemultibox{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +509,17 @@
 		"prefix":"yquantdefinemultibox",
 		"body":[
 			"\\yquantdefinemultibox{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantredefinebox{}{}":{
+		"prefix":"yquantredefinebox",
+		"body":[
+			"\\yquantredefinebox{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +527,17 @@
 		"prefix":"yquantredefinebox",
 		"body":[
 			"\\yquantredefinebox{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"yquantredefinemultibox{}{}":{
+		"prefix":"yquantredefinemultibox",
+		"body":[
+			"\\yquantredefinemultibox{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +545,17 @@
 		"prefix":"yquantredefinemultibox",
 		"body":[
 			"\\yquantredefinemultibox{${1:name}}[${3:style}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"circuit{}":{
+		"prefix":"circuit",
+		"body":[
+			"\\circuit{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +563,17 @@
 		"prefix":"circuit",
 		"body":[
 			"\\circuit[${2:style}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"equals":{
+		"prefix":"equals",
+		"body":[
+			"\\equals"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +581,35 @@
 		"prefix":"equals",
 		"body":[
 			"\\equals[${1:content}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"equals*":{
+		"prefix":"*equals",
+		"body":[
+			"\\equals*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"equals*[]":{
+		"prefix":"*equals",
+		"body":[
+			"\\equals*[${1:content}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shiftright":{
+		"prefix":"shiftright",
+		"body":[
+			"\\shiftright"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +617,89 @@
 		"prefix":"shiftright",
 		"body":[
 			"\\shiftright[${1:where}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"shiftright*":{
+		"prefix":"*shiftright",
+		"body":[
+			"\\shiftright*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shiftright*[]":{
+		"prefix":"*shiftright",
+		"body":[
+			"\\shiftright*[${1:where}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"m":{
+		"prefix":"m",
+		"body":[
+			"\\m"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"txt":{
+		"prefix":"txt",
+		"body":[
+			"\\txt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"meter":{
+		"prefix":"meter",
+		"body":[
+			"\\meter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dmeter":{
+		"prefix":"dmeter",
+		"body":[
+			"\\dmeter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dmeterwide":{
+		"prefix":"dmeterwide",
+		"body":[
+			"\\dmeterwide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qasmimport{}":{
+		"prefix":"qasmimport",
+		"body":[
+			"\\qasmimport{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qasmname{}":{
+		"prefix":"qasmname",
+		"body":[
+			"\\qasmname{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -631,27 +709,19 @@
 			"\\begin{yquant}",
 				"\t$1",
 			"\\end{yquant}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"yquantgroup":{
-		"prefix":"yquantgroup",
+	"yquant[]":{
+		"prefix":"yquant",
 		"body":[
-			"\\begin{yquantgroup}",
-				"\t$1",
-			"\\end{yquantgroup}"
-		]
-	},
-
-
-	"qasm":{
-		"prefix":"qasm",
-		"body":[
-			"\\begin{qasm}",
-				"\t$1",
-			"\\end{qasm}"
-		]
+			"\\begin{yquant}",
+				"\t[${1:options%keyvals}]",
+			"\\end{yquant}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -661,37 +731,19 @@
 			"\\begin{yquant*}",
 				"\t$1",
 			"\\end{yquant*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"yquantgroup*":{
-		"prefix":"*yquantgroup",
-		"body":[
-			"\\begin{yquantgroup*}",
-				"\t$1",
-			"\\end{yquantgroup*}"
-		]
-	},
-
-
-	"yquant":{
-		"prefix":"yquant",
-		"body":[
-			"\\begin{yquant}",
-				"\t$1",
-			"\\end{yquant}"
-		]
-	},
-
-
-	"yquant*":{
-		"prefix":"yquant",
+	"yquant*[]":{
+		"prefix":"*yquant",
 		"body":[
 			"\\begin{yquant*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{yquant*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -701,16 +753,51 @@
 			"\\begin{yquantgroup}",
 				"\t$1",
 			"\\end{yquantgroup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yquantgroup[]":{
+		"prefix":"yquantgroup",
+		"body":[
+			"\\begin{yquantgroup}",
+				"\t[${1:options%keyvals}]",
+			"\\end{yquantgroup}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"yquantgroup*":{
-		"prefix":"yquantgroup",
+		"prefix":"*yquantgroup",
 		"body":[
 			"\\begin{yquantgroup*}",
 				"\t$1",
 			"\\end{yquantgroup*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"yquantgroup*[]":{
+		"prefix":"*yquantgroup",
+		"body":[
+			"\\begin{yquantgroup*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{yquantgroup*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"qasm":{
+		"prefix":"qasm",
+		"body":[
+			"\\begin{qasm}",
+				"\t$1",
+			"\\end{qasm}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

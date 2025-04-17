@@ -5,7 +5,8 @@
 		"prefix":"decimaldate",
 		"body":[
 			"\\decimaldate{${1:day}}{${2:month}}{${3:year}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,23 +14,8 @@
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}"
-		]
-	},
-
-
-	"eventpoint{}{}":{
-		"prefix":"eventpoint",
-		"body":[
-			"\\eventpoint{${1:date}}{${2:label%text}}"
-		]
-	},
-
-
-	"event{}{}":{
-		"prefix":"event",
-		"body":[
-			"\\event{${1:end-date}}{${2:label%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +23,8 @@
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +32,8 @@
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +41,8 @@
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +50,17 @@
 		"prefix":"eventspan",
 		"body":[
 			"\\eventspan{${1:begin-date}}{${2:end-date}}{${3:label%text}}[${4:fill}][${5:opacity}][${6:bar-thickness}][${7:indicator}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eventpoint{}{}":{
+		"prefix":"eventpoint",
+		"body":[
+			"\\eventpoint{${1:date}}{${2:label%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +68,8 @@
 		"prefix":"eventpoint",
 		"body":[
 			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,7 +77,8 @@
 		"prefix":"eventpoint",
 		"body":[
 			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +86,17 @@
 		"prefix":"eventpoint",
 		"body":[
 			"\\eventpoint{${1:date}}{${2:label%text}}[${3:fill}][${4:opacity}][${5:height}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"event{}{}":{
+		"prefix":"event",
+		"body":[
+			"\\event{${1:end-date}}{${2:label%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,86 +104,95 @@
 		"prefix":"event",
 		"body":[
 			"\\event[${3:begin-date}]{${1:end-date}}{${2:label%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"chronology":{
+	"chronology{}{}{}":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t{${1:year-start}}{${2:year-stop}}{${3:width}}",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"chronology":{
+	"chronology{}{}{}[]":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t{${1:year-start}}{${2:year-stop}}{${3:width}}[${4:scaling}]",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"chronology":{
+	"chronology[]{}{}{}":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t[${4:step}]{${1:year-start}}{${2:year-stop}}{${3:width}}",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"chronology":{
+	"chronology[]{}{}{}[]":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t[${4:step}]{${1:year-start}}{${2:year-stop}}{${3:width}}[${5:scaling}]",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"chronology":{
-		"prefix":"chronology",
+	"chronology*{}{}{}":{
+		"prefix":"*chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t*{${1:year-start}}{${2:year-stop}}{${3:width}}",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"chronology":{
-		"prefix":"chronology",
+	"chronology*{}{}{}[]":{
+		"prefix":"*chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t*{${1:year-start}}{${2:year-stop}}{${3:width}}[${4:scaling}]",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"chronology":{
-		"prefix":"chronology",
+	"chronology*[]{}{}{}":{
+		"prefix":"*chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t*[${4:step}]{${1:year-start}}{${2:year-stop}}{${3:width}}",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"chronology":{
-		"prefix":"chronology",
+	"chronology*[]{}{}{}[]":{
+		"prefix":"*chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t*[${4:step}]{${1:year-start}}{${2:year-stop}}{${3:width}}[${5:scaling}]",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"SimpleTextField",
 		"body":[
 			"\\SimpleTextField{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"SimpleTextFieldReadonly",
 		"body":[
 			"\\SimpleTextFieldReadonly{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"SimpleGET",
 		"body":[
 			"\\SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}"
-		]
-	},
-
-
-	"SimplePOST{}{}{}{}{}{}":{
-		"prefix":"SimplePOST",
-		"body":[
-			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}"
-		]
-	},
-
-
-	"ErrorField":{
-		"prefix":"ErrorField",
-		"body":[
-			"\\ErrorField"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"SimpleGET",
 		"body":[
 			"\\SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}[${5:target}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SimplePOST{}{}{}{}{}{}":{
+		"prefix":"SimplePOST",
+		"body":[
+			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +50,16 @@
 		"prefix":"SimplePOST",
 		"body":[
 			"\\SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}[${7:target}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ErrorField":{
+		"prefix":"ErrorField",
+		"body":[
+			"\\ErrorField"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

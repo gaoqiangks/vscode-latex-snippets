@@ -5,7 +5,8 @@
 		"prefix":"RegisterTrackCounter",
 		"body":[
 			"\\RegisterTrackCounter{${1:track counter}}{${2:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"RegisterMultipleTrackCounters",
 		"body":[
 			"\\RegisterMultipleTrackCounters{${1:trackcounter1,trackcounter2,...}}{${2:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,103 +23,8 @@
 		"prefix":"ObtainTrackedValue",
 		"body":[
 			"\\ObtainTrackedValue{${1:track level}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"ObtainTrackedValueExp{}{}":{
-		"prefix":"ObtainTrackedValueExp",
-		"body":[
-			"\\ObtainTrackedValueExp{${1:track level}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"tracklabel{}":{
-		"prefix":"tracklabel",
-		"body":[
-			"\\tracklabel{${1:label}}"
-		]
-	},
-
-
-	"ObtainTrackedValueByLabel{}{}":{
-		"prefix":"ObtainTrackedValueByLabel",
-		"body":[
-			"\\ObtainTrackedValueByLabel{${1:label}}{${2:tracked counter}}"
-		]
-	},
-
-
-	"AddToTrackedCounters{}{}":{
-		"prefix":"AddToTrackedCounters",
-		"body":[
-			"\\AddToTrackedCounters{${1:trackedcounter1,trackedcounter2,...}}{${2:counter value}}"
-		]
-	},
-
-
-	"CloseTrackFileForWrite":{
-		"prefix":"CloseTrackFileForWrite",
-		"body":[
-			"\\CloseTrackFileForWrite"
-		]
-	},
-
-
-	"GetStoredValues":{
-		"prefix":"GetStoredValues",
-		"body":[
-			"\\GetStoredValues"
-		]
-	},
-
-
-	"LoadTrackedValues":{
-		"prefix":"LoadTrackedValues",
-		"body":[
-			"\\LoadTrackedValues"
-		]
-	},
-
-
-	"OpenTrackFileForWrite{}":{
-		"prefix":"OpenTrackFileForWrite",
-		"body":[
-			"\\OpenTrackFileForWrite{${1:file}}"
-		]
-	},
-
-
-	"StoreCounterValues{}":{
-		"prefix":"StoreCounterValues",
-		"body":[
-			"\\StoreCounterValues{${1:arg}}"
-		]
-	},
-
-
-	"TrackCounters":{
-		"prefix":"TrackCounters",
-		"body":[
-			"\\TrackCounters"
-		]
-	},
-
-
-	"tracklabel*{}":{
-		"prefix":"*tracklabel",
-		"body":[
-			"\\tracklabel*{${1:label}}"
-		]
-	},
-
-
-	"tracklabel*[]{}":{
-		"prefix":"*tracklabel",
-		"body":[
-			"\\tracklabel*[${2:counter}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"ObtainTrackedValue",
 		"body":[
 			"\\ObtainTrackedValue[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ObtainTrackedValueExp{}{}":{
+		"prefix":"ObtainTrackedValueExp",
+		"body":[
+			"\\ObtainTrackedValueExp{${1:track level}}{${2:tracked counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,17 @@
 		"prefix":"ObtainTrackedValueExp",
 		"body":[
 			"\\ObtainTrackedValueExp[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tracklabel{}":{
+		"prefix":"tracklabel",
+		"body":[
+			"\\tracklabel{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +68,35 @@
 		"prefix":"tracklabel",
 		"body":[
 			"\\tracklabel[${2:counter}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tracklabel*{}":{
+		"prefix":"*tracklabel",
+		"body":[
+			"\\tracklabel*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tracklabel*[]{}":{
+		"prefix":"*tracklabel",
+		"body":[
+			"\\tracklabel*[${2:counter}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ObtainTrackedValueByLabel{}{}":{
+		"prefix":"ObtainTrackedValueByLabel",
+		"body":[
+			"\\ObtainTrackedValueByLabel{${1:label}}{${2:tracked counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,6 +104,70 @@
 		"prefix":"ObtainTrackedValueByLabel",
 		"body":[
 			"\\ObtainTrackedValueByLabel[${3:counter}]{${1:label}}{${2:tracked counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddToTrackedCounters{}{}":{
+		"prefix":"AddToTrackedCounters",
+		"body":[
+			"\\AddToTrackedCounters{${1:trackedcounter1,trackedcounter2,...}}{${2:counter value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CloseTrackFileForWrite":{
+		"prefix":"CloseTrackFileForWrite",
+		"body":[
+			"\\CloseTrackFileForWrite"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetStoredValues":{
+		"prefix":"GetStoredValues",
+		"body":[
+			"\\GetStoredValues"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoadTrackedValues":{
+		"prefix":"LoadTrackedValues",
+		"body":[
+			"\\LoadTrackedValues"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OpenTrackFileForWrite{}":{
+		"prefix":"OpenTrackFileForWrite",
+		"body":[
+			"\\OpenTrackFileForWrite{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StoreCounterValues{}":{
+		"prefix":"StoreCounterValues",
+		"body":[
+			"\\StoreCounterValues{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TrackCounters":{
+		"prefix":"TrackCounters",
+		"body":[
+			"\\TrackCounters"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

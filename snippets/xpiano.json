@@ -5,15 +5,8 @@
 		"prefix":"keyboard",
 		"body":[
 			"\\keyboard{${1:notes}}"
-		]
-	},
-
-
-	"keyboardsetup{}":{
-		"prefix":"keyboardsetup",
-		"body":[
-			"\\keyboardsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"keyboard",
 		"body":[
 			"\\keyboard[${2:options%keyvals}]{${1:notes}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"keyboardsetup{}":{
+		"prefix":"keyboardsetup",
+		"body":[
+			"\\keyboardsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

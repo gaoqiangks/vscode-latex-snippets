@@ -5,7 +5,8 @@
 		"prefix":"fourscripts",
 		"body":[
 			"\\fourscripts{${1:arg}}{${2:lsup}}{${3:lsub}}{${4:rsup}}{${5:rsub}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"lrsubscripts",
 		"body":[
 			"\\lrsubscripts{${1:arg}}{${2:lsub}}{${3:rsub}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"lrsuperscripts",
 		"body":[
 			"\\lrsuperscripts{${1:arg}}{${2:lsup}}{${3:rsup}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,143 +32,8 @@
 		"prefix":"twolscripts",
 		"body":[
 			"\\twolscripts{${1:arg}}{${2:lsup}}{${3:lsub}}"
-		]
-	},
-
-
-	"tworscripts{}{}{}":{
-		"prefix":"tworscripts",
-		"body":[
-			"\\tworscripts{${1:arg}}{${2:rsup}}{${3:rsub}}"
-		]
-	},
-
-
-	"lsubscript{}{}":{
-		"prefix":"lsubscript",
-		"body":[
-			"\\lsubscript{${1:arg}}{${2:lsub}}"
-		]
-	},
-
-
-	"lsuperscript{}{}":{
-		"prefix":"lsuperscript",
-		"body":[
-			"\\lsuperscript{${1:arg}}{${2:lsup}}"
-		]
-	},
-
-
-	"rsubscript{}{}":{
-		"prefix":"rsubscript",
-		"body":[
-			"\\rsubscript{${1:arg}}{${2:rsub}}"
-		]
-	},
-
-
-	"rsuperscript{}{}":{
-		"prefix":"rsuperscript",
-		"body":[
-			"\\rsuperscript{${1:arg}}{${2:rsup}}"
-		]
-	},
-
-
-	"largerSkips":{
-		"prefix":"largerSkips",
-		"body":[
-			"\\largerSkips"
-		]
-	},
-
-
-	"setDblLSkip{}":{
-		"prefix":"setDblLSkip",
-		"body":[
-			"\\setDblLSkip{${1:skip%l}}"
-		]
-	},
-
-
-	"setDblRSkip{}":{
-		"prefix":"setDblRSkip",
-		"body":[
-			"\\setDblRSkip{${1:skip%l}}"
-		]
-	},
-
-
-	"setSingleLSkip{}":{
-		"prefix":"setSingleLSkip",
-		"body":[
-			"\\setSingleLSkip{${1:skip%l}}"
-		]
-	},
-
-
-	"setSingleRSkip{}":{
-		"prefix":"setSingleRSkip",
-		"body":[
-			"\\setSingleRSkip{${1:skip%l}}"
-		]
-	},
-
-
-	"fourscriptsC{}{}{}{}{}{}{}":{
-		"prefix":"fourscriptsC",
-		"body":[
-			"\\fourscriptsC{${1:arg}}{${2:lsup}}{${3:lsub}}{${4:rsup}}{${5:rsub}}{${6:lskip%l}}{${7:rskip%l}}"
-		]
-	},
-
-
-	"lrsubscriptsC{}{}{}{}{}":{
-		"prefix":"lrsubscriptsC",
-		"body":[
-			"\\lrsubscriptsC{${1:arg}}{${2:lsub}}{${3:rsub}}{${4:lskip%l}}{${5:rskip%l}}"
-		]
-	},
-
-
-	"lrsuperscriptsC{}{}{}{}{}":{
-		"prefix":"lrsuperscriptsC",
-		"body":[
-			"\\lrsuperscriptsC{${1:arg}}{${2:lsup}}{${3:rsup}}{${4:lskip%l}}{${5:rskip%l}}"
-		]
-	},
-
-
-	"dblleftscriptskip":{
-		"prefix":"dblleftscriptskip",
-		"body":[
-			"\\dblleftscriptskip"
-		]
-	},
-
-
-	"dblrightscriptskip":{
-		"prefix":"dblrightscriptskip",
-		"body":[
-			"\\dblrightscriptskip"
-		]
-	},
-
-
-	"singleleftscriptskip":{
-		"prefix":"singleleftscriptskip",
-		"body":[
-			"\\singleleftscriptskip"
-		]
-	},
-
-
-	"singlerightscriptskip":{
-		"prefix":"singlerightscriptskip",
-		"body":[
-			"\\singlerightscriptskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +41,17 @@
 		"prefix":"twolscripts",
 		"body":[
 			"\\twolscripts[${4:skip%l}]{${1:arg}}{${2:lsup}}{${3:lsub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tworscripts{}{}{}":{
+		"prefix":"tworscripts",
+		"body":[
+			"\\tworscripts{${1:arg}}{${2:rsup}}{${3:rsub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +59,17 @@
 		"prefix":"tworscripts",
 		"body":[
 			"\\tworscripts[${4:skip%l}]{${1:arg}}{${2:rsup}}{${3:rsub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lsubscript{}{}":{
+		"prefix":"lsubscript",
+		"body":[
+			"\\lsubscript{${1:arg}}{${2:lsub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +77,17 @@
 		"prefix":"lsubscript",
 		"body":[
 			"\\lsubscript[${3:skip%l}]{${1:arg}}{${2:lsub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lsuperscript{}{}":{
+		"prefix":"lsuperscript",
+		"body":[
+			"\\lsuperscript{${1:arg}}{${2:lsup}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +95,17 @@
 		"prefix":"lsuperscript",
 		"body":[
 			"\\lsuperscript[${3:skip%l}]{${1:arg}}{${2:lsup}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rsubscript{}{}":{
+		"prefix":"rsubscript",
+		"body":[
+			"\\rsubscript{${1:arg}}{${2:rsub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +113,17 @@
 		"prefix":"rsubscript",
 		"body":[
 			"\\rsubscript[${3:skip%l}]{${1:arg}}{${2:rsub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rsuperscript{}{}":{
+		"prefix":"rsuperscript",
+		"body":[
+			"\\rsuperscript{${1:arg}}{${2:rsup}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,6 +131,115 @@
 		"prefix":"rsuperscript",
 		"body":[
 			"\\rsuperscript[${3:skip%l}]{${1:arg}}{${2:rsup}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"largerSkips":{
+		"prefix":"largerSkips",
+		"body":[
+			"\\largerSkips"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setDblLSkip{}":{
+		"prefix":"setDblLSkip",
+		"body":[
+			"\\setDblLSkip{${1:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setDblRSkip{}":{
+		"prefix":"setDblRSkip",
+		"body":[
+			"\\setDblRSkip{${1:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setSingleLSkip{}":{
+		"prefix":"setSingleLSkip",
+		"body":[
+			"\\setSingleLSkip{${1:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setSingleRSkip{}":{
+		"prefix":"setSingleRSkip",
+		"body":[
+			"\\setSingleRSkip{${1:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fourscriptsC{}{}{}{}{}{}{}":{
+		"prefix":"fourscriptsC",
+		"body":[
+			"\\fourscriptsC{${1:arg}}{${2:lsup}}{${3:lsub}}{${4:rsup}}{${5:rsub}}{${6:lskip%l}}{${7:rskip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lrsubscriptsC{}{}{}{}{}":{
+		"prefix":"lrsubscriptsC",
+		"body":[
+			"\\lrsubscriptsC{${1:arg}}{${2:lsub}}{${3:rsub}}{${4:lskip%l}}{${5:rskip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lrsuperscriptsC{}{}{}{}{}":{
+		"prefix":"lrsuperscriptsC",
+		"body":[
+			"\\lrsuperscriptsC{${1:arg}}{${2:lsup}}{${3:rsup}}{${4:lskip%l}}{${5:rskip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dblleftscriptskip":{
+		"prefix":"dblleftscriptskip",
+		"body":[
+			"\\dblleftscriptskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dblrightscriptskip":{
+		"prefix":"dblrightscriptskip",
+		"body":[
+			"\\dblrightscriptskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"singleleftscriptskip":{
+		"prefix":"singleleftscriptskip",
+		"body":[
+			"\\singleleftscriptskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"singlerightscriptskip":{
+		"prefix":"singlerightscriptskip",
+		"body":[
+			"\\singlerightscriptskip"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

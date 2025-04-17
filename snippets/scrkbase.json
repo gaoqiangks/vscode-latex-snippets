@@ -5,7 +5,8 @@
 		"prefix":"KOMAProcessOptions",
 		"body":[
 			"\\KOMAProcessOptions"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"KOMAExecuteOptions",
 		"body":[
 			"\\KOMAExecuteOptions{${1:option list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"KOMAoptions",
 		"body":[
 			"\\KOMAoptions{${1:option list%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"KOMAoption",
 		"body":[
 			"\\KOMAoption{${1:option}}{${2:value list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,151 +41,8 @@
 		"prefix":"KOMAoptionsOf",
 		"body":[
 			"\\KOMAoptionsOf{${1:file with ext%file}}"
-		]
-	},
-
-
-	"KOMAoptionOf{}{}":{
-		"prefix":"KOMAoptionOf",
-		"body":[
-			"\\KOMAoptionOf{${1:file with ext%file}}{${2:option}}"
-		]
-	},
-
-
-	"AfterKOMAoptions":{
-		"prefix":"AfterKOMAoptions",
-		"body":[
-			"\\AfterKOMAoptions"
-		]
-	},
-
-
-	"IfExistskomafont{}{}{}":{
-		"prefix":"IfExistskomafont",
-		"body":[
-			"\\IfExistskomafont{${1:element}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"IfIsAliaskomafont{}{}{}":{
-		"prefix":"IfIsAliaskomafont",
-		"body":[
-			"\\IfIsAliaskomafont{${1:element}}{${2:then code}}{${3:else code}}"
-		]
-	},
-
-
-	"setkomafont{}{}":{
-		"prefix":"setkomafont",
-		"body":[
-			"\\setkomafont{${1:element%keyvals}}{${2:commands}}"
-		]
-	},
-
-
-	"addtokomafont{}{}":{
-		"prefix":"addtokomafont",
-		"body":[
-			"\\addtokomafont{${1:element%keyvals}}{${2:commands}}"
-		]
-	},
-
-
-	"usekomafont{}":{
-		"prefix":"usekomafont",
-		"body":[
-			"\\usekomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"usesizeofkomafont{}":{
-		"prefix":"usesizeofkomafont",
-		"body":[
-			"\\usesizeofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"usefamilyofkomafont{}":{
-		"prefix":"usefamilyofkomafont",
-		"body":[
-			"\\usefamilyofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"useseriesofkomafont{}":{
-		"prefix":"useseriesofkomafont",
-		"body":[
-			"\\useseriesofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"useshapeofkomafont{}":{
-		"prefix":"useshapeofkomafont",
-		"body":[
-			"\\useshapeofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"useencodingofkomafont{}":{
-		"prefix":"useencodingofkomafont",
-		"body":[
-			"\\useencodingofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"usefontofkomafont{}":{
-		"prefix":"usefontofkomafont",
-		"body":[
-			"\\usefontofkomafont{${1:element%keyvals}}"
-		]
-	},
-
-
-	"addtokomafontrelaxlist{}":{
-		"prefix":"addtokomafontrelaxlist",
-		"body":[
-			"\\addtokomafontrelaxlist{${1:macro}}"
-		]
-	},
-
-
-	"addtokomafontgobblelist{}":{
-		"prefix":"addtokomafontgobblelist",
-		"body":[
-			"\\addtokomafontgobblelist{${1:macro}}"
-		]
-	},
-
-
-	"addtokomafontonearglist{}":{
-		"prefix":"addtokomafontonearglist",
-		"body":[
-			"\\addtokomafontonearglist{${1:macro}}"
-		]
-	},
-
-
-	"newkomafont{}{}":{
-		"prefix":"newkomafont",
-		"body":[
-			"\\newkomafont{${1:element}}{${2:default}}"
-		]
-	},
-
-
-	"aliaskomafont{}{}":{
-		"prefix":"aliaskomafont",
-		"body":[
-			"\\aliaskomafont{${1:alias}}{${2:element}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +50,17 @@
 		"prefix":"KOMAoptionsOf",
 		"body":[
 			"\\KOMAoptionsOf[${2:prefix}]{${1:file with ext%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"KOMAoptionOf{}{}":{
+		"prefix":"KOMAoptionOf",
+		"body":[
+			"\\KOMAoptionOf{${1:file with ext%file}}{${2:option}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +68,152 @@
 		"prefix":"KOMAoptionsOf",
 		"body":[
 			"\\KOMAoptionsOf[${3:prefix}]{${1:file with ext%file}}{${2:option}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AfterKOMAoptions":{
+		"prefix":"AfterKOMAoptions",
+		"body":[
+			"\\AfterKOMAoptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExistskomafont{}{}{}":{
+		"prefix":"IfExistskomafont",
+		"body":[
+			"\\IfExistskomafont{${1:element}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfIsAliaskomafont{}{}{}":{
+		"prefix":"IfIsAliaskomafont",
+		"body":[
+			"\\IfIsAliaskomafont{${1:element}}{${2:then code}}{${3:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setkomafont{}{}":{
+		"prefix":"setkomafont",
+		"body":[
+			"\\setkomafont{${1:element%keyvals}}{${2:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtokomafont{}{}":{
+		"prefix":"addtokomafont",
+		"body":[
+			"\\addtokomafont{${1:element%keyvals}}{${2:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usekomafont{}":{
+		"prefix":"usekomafont",
+		"body":[
+			"\\usekomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usesizeofkomafont{}":{
+		"prefix":"usesizeofkomafont",
+		"body":[
+			"\\usesizeofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usefamilyofkomafont{}":{
+		"prefix":"usefamilyofkomafont",
+		"body":[
+			"\\usefamilyofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useseriesofkomafont{}":{
+		"prefix":"useseriesofkomafont",
+		"body":[
+			"\\useseriesofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useshapeofkomafont{}":{
+		"prefix":"useshapeofkomafont",
+		"body":[
+			"\\useshapeofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useencodingofkomafont{}":{
+		"prefix":"useencodingofkomafont",
+		"body":[
+			"\\useencodingofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usefontofkomafont{}":{
+		"prefix":"usefontofkomafont",
+		"body":[
+			"\\usefontofkomafont{${1:element%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtokomafontrelaxlist{}":{
+		"prefix":"addtokomafontrelaxlist",
+		"body":[
+			"\\addtokomafontrelaxlist{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtokomafontgobblelist{}":{
+		"prefix":"addtokomafontgobblelist",
+		"body":[
+			"\\addtokomafontgobblelist{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtokomafontonearglist{}":{
+		"prefix":"addtokomafontonearglist",
+		"body":[
+			"\\addtokomafontonearglist{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newkomafont{}{}":{
+		"prefix":"newkomafont",
+		"body":[
+			"\\newkomafont{${1:element}}{${2:default}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,6 +221,16 @@
 		"prefix":"newkomafont",
 		"body":[
 			"\\newkomafont[${3:warning}]{${1:element}}{${2:default}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"aliaskomafont{}{}":{
+		"prefix":"aliaskomafont",
+		"body":[
+			"\\aliaskomafont{${1:alias}}{${2:element}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

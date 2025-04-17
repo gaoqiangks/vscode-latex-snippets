@@ -5,47 +5,8 @@
 		"prefix":"verbfilebox",
 		"body":[
 			"\\verbfilebox{${1:file}}"
-		]
-	},
-
-
-	"theverbbox":{
-		"prefix":"theverbbox",
-		"body":[
-			"\\theverbbox"
-		]
-	},
-
-
-	"boxtopsep":{
-		"prefix":"boxtopsep",
-		"body":[
-			"\\boxtopsep"
-		]
-	},
-
-
-	"boxbottomsep":{
-		"prefix":"boxbottomsep",
-		"body":[
-			"\\boxbottomsep"
-		]
-	},
-
-
-	"addvbuffer{}":{
-		"prefix":"addvbuffer",
-		"body":[
-			"\\addvbuffer{${1:object}}"
-		]
-	},
-
-
-	"verbfilenobox{}":{
-		"prefix":"verbfilenobox",
-		"body":[
-			"\\verbfilenobox{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,44 @@
 		"prefix":"verbfilebox",
 		"body":[
 			"\\verbfilebox[${2:pre-commands}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"theverbbox":{
+		"prefix":"theverbbox",
+		"body":[
+			"\\theverbbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxtopsep":{
+		"prefix":"boxtopsep",
+		"body":[
+			"\\boxtopsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxbottomsep":{
+		"prefix":"boxbottomsep",
+		"body":[
+			"\\boxbottomsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addvbuffer{}":{
+		"prefix":"addvbuffer",
+		"body":[
+			"\\addvbuffer{${1:object}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"addvbuffer",
 		"body":[
 			"\\addvbuffer[${2:length}]{${1:object}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"verbfilenobox{}":{
+		"prefix":"verbfilenobox",
+		"body":[
+			"\\verbfilenobox{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"verbfilenobox",
 		"body":[
 			"\\verbfilenobox[${2:pre-commands}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -79,47 +88,41 @@
 			"\\begin{verbbox}",
 				"\t$1",
 			"\\end{verbbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"myverbbox":{
-		"prefix":"myverbbox",
-		"body":[
-			"\\begin{myverbbox}",
-				"\t$1",
-			"\\end{myverbbox}"
-		]
-	},
-
-
-	"verbnobox":{
-		"prefix":"verbnobox",
-		"body":[
-			"\\begin{verbnobox}",
-				"\t$1",
-			"\\end{verbnobox}"
-		]
-	},
-
-
-	"verbbox":{
+	"verbbox[]":{
 		"prefix":"verbbox",
 		"body":[
 			"\\begin{verbbox}",
-				"\t$1",
+				"\t[${1:pre-commands}]",
 			"\\end{verbbox}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"myverbbox":{
+	"myverbbox{}":{
 		"prefix":"myverbbox",
 		"body":[
 			"\\begin{myverbbox}",
-				"\t$1",
+				"\t{${1:token%cmd}}",
 			"\\end{myverbbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"myverbbox[]{}":{
+		"prefix":"myverbbox",
+		"body":[
+			"\\begin{myverbbox}",
+				"\t[${2:pre-commands}]{${1:token%cmd}}",
+			"\\end{myverbbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -129,6 +132,18 @@
 			"\\begin{verbnobox}",
 				"\t$1",
 			"\\end{verbnobox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbnobox[]":{
+		"prefix":"verbnobox",
+		"body":[
+			"\\begin{verbnobox}",
+				"\t[${1:pre-commands}]",
+			"\\end{verbnobox}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

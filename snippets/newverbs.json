@@ -5,175 +5,8 @@
 		"prefix":"newverbcommand",
 		"body":[
 			"\\newverbcommand{${1:cmd}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"renewverbcommand{}{}{}":{
-		"prefix":"renewverbcommand",
-		"body":[
-			"\\renewverbcommand{${1:cmd}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"provideverbcommand{}{}{}":{
-		"prefix":"provideverbcommand",
-		"body":[
-			"\\provideverbcommand{${1:cmd}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"qverb||":{
-		"prefix":"qverb",
-		"body":[
-			"\\qverb|${1:verb text}|"
-		]
-	},
-
-
-	"qverbbeginquote":{
-		"prefix":"qverbbeginquote",
-		"body":[
-			"\\qverbbeginquote"
-		]
-	},
-
-
-	"qverbendquote":{
-		"prefix":"qverbendquote",
-		"body":[
-			"\\qverbendquote"
-		]
-	},
-
-
-	"fverb||":{
-		"prefix":"fverb",
-		"body":[
-			"\\fverb|${1:verb text}|"
-		]
-	},
-
-
-	"MakeSpecialShortVerb{}{}":{
-		"prefix":"MakeSpecialShortVerb",
-		"body":[
-			"\\MakeSpecialShortVerb{${1:verb cmd}}{${2:\\character}}"
-		]
-	},
-
-
-	"collectverb{}{}":{
-		"prefix":"collectverb",
-		"body":[
-			"\\collectverb{${1:code}}{${2:verb text}}"
-		]
-	},
-
-
-	"Collectverb{}{}":{
-		"prefix":"Collectverb",
-		"body":[
-			"\\Collectverb{${1:code}}{${2:verb text}}"
-		]
-	},
-
-
-	"collectverbenv{}":{
-		"prefix":"collectverbenv",
-		"body":[
-			"\\collectverbenv{${1:code}}"
-		]
-	},
-
-
-	"Collectverbenv{}":{
-		"prefix":"Collectverbenv",
-		"body":[
-			"\\Collectverbenv{${1:code}}"
-		]
-	},
-
-
-	"newverbsfont":{
-		"prefix":"newverbsfont",
-		"body":[
-			"\\newverbsfont"
-		]
-	},
-
-
-	"verbdef{}{}":{
-		"prefix":"verbdef",
-		"body":[
-			"\\verbdef{${1:cmd}}{${2:verb text}}"
-		]
-	},
-
-
-	"Verbdef{}{}":{
-		"prefix":"Verbdef",
-		"body":[
-			"\\Verbdef{${1:cmd}}{${2:verb text}}"
-		]
-	},
-
-
-	"MakeSpecialShortVerb*{}{}":{
-		"prefix":"*MakeSpecialShortVerb",
-		"body":[
-			"\\MakeSpecialShortVerb*{${1:verb cmd}}{${2:\\character}}"
-		]
-	},
-
-
-	"collectverb*{}{}":{
-		"prefix":"*collectverb",
-		"body":[
-			"\\collectverb*{${1:code}}{${2:verb text}}"
-		]
-	},
-
-
-	"Collectverb*{}{}":{
-		"prefix":"*Collectverb",
-		"body":[
-			"\\Collectverb*{${1:code}}{${2:verb text}}"
-		]
-	},
-
-
-	"collectverbenv*{}":{
-		"prefix":"*collectverbenv",
-		"body":[
-			"\\collectverbenv*{${1:code}}"
-		]
-	},
-
-
-	"Collectverbenv*{}":{
-		"prefix":"*Collectverbenv",
-		"body":[
-			"\\Collectverbenv*{${1:code}}"
-		]
-	},
-
-
-	"verbdef*{}{}":{
-		"prefix":"*verbdef",
-		"body":[
-			"\\verbdef*{${1:cmd}}{${2:verb text}}"
-		]
-	},
-
-
-	"Verbdef*{}{}":{
-		"prefix":"*Verbdef",
-		"body":[
-			"\\Verbdef*{${1:cmd}}{${2:verb text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +14,17 @@
 		"prefix":"newverbcommand",
 		"body":[
 			"\\newverbcommand{${1:cmd}}[${4:verbcmd}]{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewverbcommand{}{}{}":{
+		"prefix":"renewverbcommand",
+		"body":[
+			"\\renewverbcommand{${1:cmd}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +32,17 @@
 		"prefix":"renewverbcommand",
 		"body":[
 			"\\renewverbcommand{${1:cmd}}[${4:verbcmd}]{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideverbcommand{}{}{}":{
+		"prefix":"provideverbcommand",
+		"body":[
+			"\\provideverbcommand{${1:cmd}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,6 +50,178 @@
 		"prefix":"provideverbcommand",
 		"body":[
 			"\\provideverbcommand{${1:cmd}}[${4:verbcmd}]{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"qverb||":{
+		"prefix":"qverb",
+		"body":[
+			"\\qverb|${1:verb text}|"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qverbbeginquote":{
+		"prefix":"qverbbeginquote",
+		"body":[
+			"\\qverbbeginquote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qverbendquote":{
+		"prefix":"qverbendquote",
+		"body":[
+			"\\qverbendquote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fverb||":{
+		"prefix":"fverb",
+		"body":[
+			"\\fverb|${1:verb text}|"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeSpecialShortVerb{}{}":{
+		"prefix":"MakeSpecialShortVerb",
+		"body":[
+			"\\MakeSpecialShortVerb{${1:verb cmd}}{${2:\\character}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeSpecialShortVerb*{}{}":{
+		"prefix":"*MakeSpecialShortVerb",
+		"body":[
+			"\\MakeSpecialShortVerb*{${1:verb cmd}}{${2:\\character}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"collectverb{}{}":{
+		"prefix":"collectverb",
+		"body":[
+			"\\collectverb{${1:code}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"collectverb*{}{}":{
+		"prefix":"*collectverb",
+		"body":[
+			"\\collectverb*{${1:code}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Collectverb{}{}":{
+		"prefix":"Collectverb",
+		"body":[
+			"\\Collectverb{${1:code}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Collectverb*{}{}":{
+		"prefix":"*Collectverb",
+		"body":[
+			"\\Collectverb*{${1:code}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"collectverbenv{}":{
+		"prefix":"collectverbenv",
+		"body":[
+			"\\collectverbenv{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"collectverbenv*{}":{
+		"prefix":"*collectverbenv",
+		"body":[
+			"\\collectverbenv*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Collectverbenv{}":{
+		"prefix":"Collectverbenv",
+		"body":[
+			"\\Collectverbenv{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Collectverbenv*{}":{
+		"prefix":"*Collectverbenv",
+		"body":[
+			"\\Collectverbenv*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newverbsfont":{
+		"prefix":"newverbsfont",
+		"body":[
+			"\\newverbsfont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbdef{}{}":{
+		"prefix":"verbdef",
+		"body":[
+			"\\verbdef{${1:cmd}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbdef*{}{}":{
+		"prefix":"*verbdef",
+		"body":[
+			"\\verbdef*{${1:cmd}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Verbdef{}{}":{
+		"prefix":"Verbdef",
+		"body":[
+			"\\Verbdef{${1:cmd}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Verbdef*{}{}":{
+		"prefix":"*Verbdef",
+		"body":[
+			"\\Verbdef*{${1:cmd}}{${2:verb text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

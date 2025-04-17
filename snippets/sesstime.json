@@ -5,303 +5,8 @@
 		"prefix":"timingconfigure",
 		"body":[
 			"\\timingconfigure{${1:options%keyvals}}"
-		]
-	},
-
-
-	"timingstart{}":{
-		"prefix":"timingstart",
-		"body":[
-			"\\timingstart{${1:abstime}}"
-		]
-	},
-
-
-	"timingsplit{}":{
-		"prefix":"timingsplit",
-		"body":[
-			"\\timingsplit{${1:abstime}}"
-		]
-	},
-
-
-	"timingstop{}":{
-		"prefix":"timingstop",
-		"body":[
-			"\\timingstop{${1:abstime}}"
-		]
-	},
-
-
-	"timingnext{}":{
-		"prefix":"timingnext",
-		"body":[
-			"\\timingnext{${1:abstime}}"
-		]
-	},
-
-
-	"timinglapse{}":{
-		"prefix":"timinglapse",
-		"body":[
-			"\\timinglapse{${1:reltime}}"
-		]
-	},
-
-
-	"timinggauge{}":{
-		"prefix":"timinggauge",
-		"body":[
-			"\\timinggauge{${1:abstime}}"
-		]
-	},
-
-
-	"timingblocktotal":{
-		"prefix":"timingblocktotal",
-		"body":[
-			"\\timingblocktotal"
-		]
-	},
-
-
-	"timingchapter":{
-		"prefix":"timingchapter",
-		"body":[
-			"\\timingchapter"
-		]
-	},
-
-
-	"timingchapterend":{
-		"prefix":"timingchapterend",
-		"body":[
-			"\\timingchapterend"
-		]
-	},
-
-
-	"timingchapterlabel{}":{
-		"prefix":"timingchapterlabel",
-		"body":[
-			"\\timingchapterlabel{${1:chapterlabel%special}}"
-		]
-	},
-
-
-	"timingchaptertotal{}":{
-		"prefix":"timingchaptertotal",
-		"body":[
-			"\\timingchaptertotal{${1:chapterlabel%special}}"
-		]
-	},
-
-
-	"timingreturn":{
-		"prefix":"timingreturn",
-		"body":[
-			"\\timingreturn"
-		]
-	},
-
-
-	"timingsession":{
-		"prefix":"timingsession",
-		"body":[
-			"\\timingsession"
-		]
-	},
-
-
-	"timingsessionend":{
-		"prefix":"timingsessionend",
-		"body":[
-			"\\timingsessionend"
-		]
-	},
-
-
-	"timinglistofsessions":{
-		"prefix":"timinglistofsessions",
-		"body":[
-			"\\timinglistofsessions"
-		]
-	},
-
-
-	"timingcomment{}":{
-		"prefix":"timingcomment",
-		"body":[
-			"\\timingcomment{${1:comment%text}}"
-		]
-	},
-
-
-	"timingif{}":{
-		"prefix":"timingif",
-		"body":[
-			"\\timingif{${1:code}}"
-		]
-	},
-
-
-	"timingprint{}":{
-		"prefix":"timingprint",
-		"body":[
-			"\\timingprint{${1:arg}}"
-		]
-	},
-
-
-	"timingprintblock{}{}{}":{
-		"prefix":"timingprintblock",
-		"body":[
-			"\\timingprintblock{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"timingprintchapter{}":{
-		"prefix":"timingprintchapter",
-		"body":[
-			"\\timingprintchapter{${1:arg}}"
-		]
-	},
-
-
-	"timingprintmark{}":{
-		"prefix":"timingprintmark",
-		"body":[
-			"\\timingprintmark{${1:arg}}"
-		]
-	},
-
-
-	"timingprintremark{}":{
-		"prefix":"timingprintremark",
-		"body":[
-			"\\timingprintremark{${1:arg}}"
-		]
-	},
-
-
-	"timingprintsession{}{}":{
-		"prefix":"timingprintsession",
-		"body":[
-			"\\timingprintsession{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"timingsessionline{}{}{}{}{}":{
-		"prefix":"timingsessionline",
-		"body":[
-			"\\timingsessionline{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
-		]
-	},
-
-
-	"timingsessiontotal{}":{
-		"prefix":"timingsessiontotal",
-		"body":[
-			"\\timingsessiontotal{${1:arg}}"
-		]
-	},
-
-
-	"timingstart*{}":{
-		"prefix":"*timingstart",
-		"body":[
-			"\\timingstart*{${1:reltime}}"
-		]
-	},
-
-
-	"timingstart*[]{}":{
-		"prefix":"*timingstart",
-		"body":[
-			"\\timingstart*[${2:cond%keyvals}]{${1:reltime}}"
-		]
-	},
-
-
-	"timingsplit*{}":{
-		"prefix":"*timingsplit",
-		"body":[
-			"\\timingsplit*{${1:reltime}}"
-		]
-	},
-
-
-	"timingsplit*[]{}":{
-		"prefix":"*timingsplit",
-		"body":[
-			"\\timingsplit*[${2:cond%keyvals}]{${1:reltime}}"
-		]
-	},
-
-
-	"timingstop*{}":{
-		"prefix":"*timingstop",
-		"body":[
-			"\\timingstop*{${1:reltime}}"
-		]
-	},
-
-
-	"timingstop*[]{}":{
-		"prefix":"*timingstop",
-		"body":[
-			"\\timingstop*[${2:cond%keyvals}]{${1:reltime}}"
-		]
-	},
-
-
-	"timingnext*{}":{
-		"prefix":"*timingnext",
-		"body":[
-			"\\timingnext*{${1:reltime}}"
-		]
-	},
-
-
-	"timingnext*[]{}":{
-		"prefix":"*timingnext",
-		"body":[
-			"\\timingnext*[${2:cond%keyvals}]{${1:reltime}}"
-		]
-	},
-
-
-	"timingblocktotal*":{
-		"prefix":"*timingblocktotal",
-		"body":[
-			"\\timingblocktotal*"
-		]
-	},
-
-
-	"timingblocktotal*[]":{
-		"prefix":"*timingblocktotal",
-		"body":[
-			"\\timingblocktotal*[${1:error}]"
-		]
-	},
-
-
-	"timingchaptertotal*{}":{
-		"prefix":"*timingchaptertotal",
-		"body":[
-			"\\timingchaptertotal*{${1:chapterlabel%special}}"
-		]
-	},
-
-
-	"timingchapterlabel*[]{}":{
-		"prefix":"*timingchapterlabel",
-		"body":[
-			"\\timingchapterlabel*[${2:error}]{${1:chapterlabel%special}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +14,17 @@
 		"prefix":"timingconfigure",
 		"body":[
 			"\\timingconfigure[${2:cond}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingstart{}":{
+		"prefix":"timingstart",
+		"body":[
+			"\\timingstart{${1:abstime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +32,35 @@
 		"prefix":"timingstart",
 		"body":[
 			"\\timingstart[${2:cond%keyvals}]{${1:abstime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingstart*{}":{
+		"prefix":"*timingstart",
+		"body":[
+			"\\timingstart*{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingstart*[]{}":{
+		"prefix":"*timingstart",
+		"body":[
+			"\\timingstart*[${2:cond%keyvals}]{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingsplit{}":{
+		"prefix":"timingsplit",
+		"body":[
+			"\\timingsplit{${1:abstime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +68,35 @@
 		"prefix":"timingsplit",
 		"body":[
 			"\\timingsplit[${2:cond%keyvals}]{${1:abstime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingsplit*{}":{
+		"prefix":"*timingsplit",
+		"body":[
+			"\\timingsplit*{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingsplit*[]{}":{
+		"prefix":"*timingsplit",
+		"body":[
+			"\\timingsplit*[${2:cond%keyvals}]{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingstop{}":{
+		"prefix":"timingstop",
+		"body":[
+			"\\timingstop{${1:abstime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +104,35 @@
 		"prefix":"timingstop",
 		"body":[
 			"\\timingstop[${2:cond%keyvals}]{${1:abstime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingstop*{}":{
+		"prefix":"*timingstop",
+		"body":[
+			"\\timingstop*{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingstop*[]{}":{
+		"prefix":"*timingstop",
+		"body":[
+			"\\timingstop*[${2:cond%keyvals}]{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingnext{}":{
+		"prefix":"timingnext",
+		"body":[
+			"\\timingnext{${1:abstime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +140,35 @@
 		"prefix":"timingnext",
 		"body":[
 			"\\timingnext[${2:cond%keyvals}]{${1:abstime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingnext*{}":{
+		"prefix":"*timingnext",
+		"body":[
+			"\\timingnext*{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingnext*[]{}":{
+		"prefix":"*timingnext",
+		"body":[
+			"\\timingnext*[${2:cond%keyvals}]{${1:reltime}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timinglapse{}":{
+		"prefix":"timinglapse",
+		"body":[
+			"\\timinglapse{${1:reltime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +176,17 @@
 		"prefix":"timinglapse",
 		"body":[
 			"\\timinglapse[${2:cond%keyvals}]{${1:reltime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timinggauge{}":{
+		"prefix":"timinggauge",
+		"body":[
+			"\\timinggauge{${1:abstime}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +194,17 @@
 		"prefix":"timinggauge",
 		"body":[
 			"\\timinggauge[${2:cond%keyvals}]{${1:abstime}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingblocktotal":{
+		"prefix":"timingblocktotal",
+		"body":[
+			"\\timingblocktotal"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +212,35 @@
 		"prefix":"timingblocktotal",
 		"body":[
 			"\\timingblocktotal[${1:error}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingblocktotal*":{
+		"prefix":"*timingblocktotal",
+		"body":[
+			"\\timingblocktotal*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingblocktotal*[]":{
+		"prefix":"*timingblocktotal",
+		"body":[
+			"\\timingblocktotal*[${1:error}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingchapter":{
+		"prefix":"timingchapter",
+		"body":[
+			"\\timingchapter"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,7 +248,17 @@
 		"prefix":"timingchapter",
 		"body":[
 			"\\timingchapter[${1:cond%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingchapterend":{
+		"prefix":"timingchapterend",
+		"body":[
+			"\\timingchapterend"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +266,26 @@
 		"prefix":"timingchapterend",
 		"body":[
 			"\\timingchapterend[${1:cond%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingchapterlabel{}":{
+		"prefix":"timingchapterlabel",
+		"body":[
+			"\\timingchapterlabel{${1:chapterlabel%special}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingchaptertotal{}":{
+		"prefix":"timingchaptertotal",
+		"body":[
+			"\\timingchaptertotal{${1:chapterlabel%special}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,7 +293,44 @@
 		"prefix":"timingchapterlabel",
 		"body":[
 			"\\timingchapterlabel[${2:error}]{${1:chapterlabel%special}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingchaptertotal*{}":{
+		"prefix":"*timingchaptertotal",
+		"body":[
+			"\\timingchaptertotal*{${1:chapterlabel%special}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingchapterlabel*[]{}":{
+		"prefix":"*timingchapterlabel",
+		"body":[
+			"\\timingchapterlabel*[${2:error}]{${1:chapterlabel%special}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"timingreturn":{
+		"prefix":"timingreturn",
+		"body":[
+			"\\timingreturn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingsession":{
+		"prefix":"timingsession",
+		"body":[
+			"\\timingsession"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +338,17 @@
 		"prefix":"timingsession",
 		"body":[
 			"\\timingsession[${1:cond%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingsessionend":{
+		"prefix":"timingsessionend",
+		"body":[
+			"\\timingsessionend"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -405,7 +356,26 @@
 		"prefix":"timingsessionend",
 		"body":[
 			"\\timingsessionend[${1:cond%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timinglistofsessions":{
+		"prefix":"timinglistofsessions",
+		"body":[
+			"\\timinglistofsessions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingcomment{}":{
+		"prefix":"timingcomment",
+		"body":[
+			"\\timingcomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,7 +383,17 @@
 		"prefix":"timingcomment",
 		"body":[
 			"\\timingcomment[${2:cond%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingif{}":{
+		"prefix":"timingif",
+		"body":[
+			"\\timingif{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +401,17 @@
 		"prefix":"timingif",
 		"body":[
 			"\\timingif[${2:cond%keyvals}]{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingprint{}":{
+		"prefix":"timingprint",
+		"body":[
+			"\\timingprint{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -429,7 +419,71 @@
 		"prefix":"timingprint",
 		"body":[
 			"\\timingprint[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timingprintblock{}{}{}":{
+		"prefix":"timingprintblock",
+		"body":[
+			"\\timingprintblock{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingprintchapter{}":{
+		"prefix":"timingprintchapter",
+		"body":[
+			"\\timingprintchapter{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingprintmark{}":{
+		"prefix":"timingprintmark",
+		"body":[
+			"\\timingprintmark{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingprintremark{}":{
+		"prefix":"timingprintremark",
+		"body":[
+			"\\timingprintremark{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingprintsession{}{}":{
+		"prefix":"timingprintsession",
+		"body":[
+			"\\timingprintsession{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingsessionline{}{}{}{}{}":{
+		"prefix":"timingsessionline",
+		"body":[
+			"\\timingsessionline{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timingsessiontotal{}":{
+		"prefix":"timingsessiontotal",
+		"body":[
+			"\\timingsessiontotal{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -437,6 +491,7 @@
 		"prefix":"timingsessiontotal",
 		"body":[
 			"\\timingsessiontotal[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

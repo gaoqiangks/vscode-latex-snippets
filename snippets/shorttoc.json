@@ -5,7 +5,8 @@
 		"prefix":"shorttableofcontents",
 		"body":[
 			"\\shorttableofcontents{${1:title%text}}{${2:depth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"shorttoc",
 		"body":[
 			"\\shorttoc{${1:title%text}}{${2:depth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,15 +23,8 @@
 		"prefix":"anothertableofcontents",
 		"body":[
 			"\\anothertableofcontents{${1:document}}{${2:title%text}}{${3:depth}}"
-		]
-	},
-
-
-	"anothertoc{}{}{}":{
-		"prefix":"anothertoc",
-		"body":[
-			"\\anothertoc{${1:document}}{${2:title%text}}{${3:depth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"anothertableofcontents",
 		"body":[
 			"\\anothertableofcontents[${4:suffix}]{${1:document}}{${2:title%text}}{${3:depth}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"anothertoc{}{}{}":{
+		"prefix":"anothertoc",
+		"body":[
+			"\\anothertoc{${1:document}}{${2:title%text}}{${3:depth}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"anothertoc",
 		"body":[
 			"\\anothertoc[${4:suffix}]{${1:document}}{${2:title%text}}{${3:depth}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

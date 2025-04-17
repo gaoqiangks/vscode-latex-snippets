@@ -1,67 +1,12 @@
 {
 
 
-	"part(){}":{
-		"prefix":"part",
-		"body":[
-			"\\part(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"section(){}":{
-		"prefix":"section",
-		"body":[
-			"\\section(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subsection(){}":{
-		"prefix":"subsection",
-		"body":[
-			"\\subsection(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subsubsection(){}":{
-		"prefix":"subsubsection",
-		"body":[
-			"\\subsubsection(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"paragraph(){}":{
-		"prefix":"paragraph",
-		"body":[
-			"\\paragraph(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"subparagraph(){}":{
-		"prefix":"subparagraph",
-		"body":[
-			"\\subparagraph(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
-	"chapter(){}":{
-		"prefix":"chapter",
-		"body":[
-			"\\chapter(${2:pdf outline entry}){${1:title}}"
-		]
-	},
-
-
 	"part[][]{}":{
 		"prefix":"part",
 		"body":[
 			"\\part[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +14,17 @@
 		"prefix":"part",
 		"body":[
 			"\\part[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"part(){}":{
+		"prefix":"part",
+		"body":[
+			"\\part(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +32,8 @@
 		"prefix":"section",
 		"body":[
 			"\\section[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +41,17 @@
 		"prefix":"section",
 		"body":[
 			"\\section[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"section(){}":{
+		"prefix":"section",
+		"body":[
+			"\\section(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +59,8 @@
 		"prefix":"subsection",
 		"body":[
 			"\\subsection[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"subsection",
 		"body":[
 			"\\subsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subsection(){}":{
+		"prefix":"subsection",
+		"body":[
+			"\\subsection(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,8 @@
 		"prefix":"subsubsection",
 		"body":[
 			"\\subsubsection[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +95,17 @@
 		"prefix":"subsubsection",
 		"body":[
 			"\\subsubsection[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subsubsection(){}":{
+		"prefix":"subsubsection",
+		"body":[
+			"\\subsubsection(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +113,8 @@
 		"prefix":"paragraph",
 		"body":[
 			"\\paragraph[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +122,17 @@
 		"prefix":"paragraph",
 		"body":[
 			"\\paragraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"paragraph(){}":{
+		"prefix":"paragraph",
+		"body":[
+			"\\paragraph(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +140,8 @@
 		"prefix":"subparagraph",
 		"body":[
 			"\\subparagraph[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +149,17 @@
 		"prefix":"subparagraph",
 		"body":[
 			"\\subparagraph[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subparagraph(){}":{
+		"prefix":"subparagraph",
+		"body":[
+			"\\subparagraph(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +167,8 @@
 		"prefix":"chapter",
 		"body":[
 			"\\chapter[${2:short title}][${3:outline entry}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,6 +176,16 @@
 		"prefix":"chapter",
 		"body":[
 			"\\chapter[${2:short title}](${3:pdf outline entry}){${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chapter(){}":{
+		"prefix":"chapter",
+		"body":[
+			"\\chapter(${2:pdf outline entry}){${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"svgsetup",
 		"body":[
 			"\\svgsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"svgpath",
 		"body":[
 			"\\svgpath{${1:path%URL}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,15 +23,8 @@
 		"prefix":"includesvg",
 		"body":[
 			"\\includesvg{${1:imagefile}}"
-		]
-	},
-
-
-	"includeinkscape{}":{
-		"prefix":"includeinkscape",
-		"body":[
-			"\\includeinkscape{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"includesvg",
 		"body":[
 			"\\includesvg[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includeinkscape{}":{
+		"prefix":"includeinkscape",
+		"body":[
+			"\\includeinkscape{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"includeinkscape",
 		"body":[
 			"\\includeinkscape[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

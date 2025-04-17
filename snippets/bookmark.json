@@ -5,7 +5,8 @@
 		"prefix":"bookmarksetup",
 		"body":[
 			"\\bookmarksetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"bookmarksetupnext",
 		"body":[
 			"\\bookmarksetupnext{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,47 +23,8 @@
 		"prefix":"bookmark",
 		"body":[
 			"\\bookmark{${1:title%text}}"
-		]
-	},
-
-
-	"bookmarkdefinestyle{}{}":{
-		"prefix":"bookmarkdefinestyle",
-		"body":[
-			"\\bookmarkdefinestyle{${1:name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"bookmarkget{}":{
-		"prefix":"bookmarkget",
-		"body":[
-			"\\bookmarkget{${1:option%keyvals}}"
-		]
-	},
-
-
-	"BookmarkAtEnd{}":{
-		"prefix":"BookmarkAtEnd",
-		"body":[
-			"\\BookmarkAtEnd{${1:code}}"
-		]
-	},
-
-
-	"BookmarkDriverDefault":{
-		"prefix":"BookmarkDriverDefault",
-		"body":[
-			"\\BookmarkDriverDefault"
-		]
-	},
-
-
-	"calc{}":{
-		"prefix":"calc",
-		"body":[
-			"\\calc{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +32,52 @@
 		"prefix":"bookmark",
 		"body":[
 			"\\bookmark[${2:options%keyvals}]{${1:title%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bookmarkdefinestyle{}{}":{
+		"prefix":"bookmarkdefinestyle",
+		"body":[
+			"\\bookmarkdefinestyle{${1:name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bookmarkget{}":{
+		"prefix":"bookmarkget",
+		"body":[
+			"\\bookmarkget{${1:option%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BookmarkAtEnd{}":{
+		"prefix":"BookmarkAtEnd",
+		"body":[
+			"\\BookmarkAtEnd{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BookmarkDriverDefault":{
+		"prefix":"BookmarkDriverDefault",
+		"body":[
+			"\\BookmarkDriverDefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"calc{}":{
+		"prefix":"calc",
+		"body":[
+			"\\calc{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"PackageInfoNoLine",
 		"body":[
 			"\\PackageInfoNoLine{${1:package name}}{${2:info text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,87 +14,8 @@
 		"prefix":"ObsoleteCS",
 		"body":[
 			"\\ObsoleteCS{${1:csname}}{${2:suggestions%text}}"
-		]
-	},
-
-
-	"ObsoleteEnv{}{}":{
-		"prefix":"ObsoleteEnv",
-		"body":[
-			"\\ObsoleteEnv{${1:envname}}{${2:suggestions%text}}"
-		]
-	},
-
-
-	"ObsoletePackage{}{}":{
-		"prefix":"ObsoletePackage",
-		"body":[
-			"\\ObsoletePackage{${1:package name}}{${2:alternative%text}}"
-		]
-	},
-
-
-	"SuggestedPackage{}":{
-		"prefix":"SuggestedPackage",
-		"body":[
-			"\\SuggestedPackage{${1:package name}}"
-		]
-	},
-
-
-	"IncompatiblePackages{}{}{}":{
-		"prefix":"IncompatiblePackages",
-		"body":[
-			"\\IncompatiblePackages{${1:package1}}{${2:package2}}{${3:hint%text}}"
-		]
-	},
-
-
-	"ObsoleteClass{}{}":{
-		"prefix":"ObsoleteClass",
-		"body":[
-			"\\ObsoleteClass{${1:class name}}{${2:alternative%text}}"
-		]
-	},
-
-
-	"BadFileLoadOrder{}{}":{
-		"prefix":"BadFileLoadOrder",
-		"body":[
-			"\\BadFileLoadOrder{${1:file1}}{${2:file2}}"
-		]
-	},
-
-
-	"NotAnEnvironment{}":{
-		"prefix":"NotAnEnvironment",
-		"body":[
-			"\\NotAnEnvironment{${1:command}}"
-		]
-	},
-
-
-	"NotASwitch{}":{
-		"prefix":"NotASwitch",
-		"body":[
-			"\\NotASwitch{${1:command}}"
-		]
-	},
-
-
-	"FBsuboheight":{
-		"prefix":"FBsuboheight",
-		"body":[
-			"\\FBsuboheight"
-		]
-	},
-
-
-	"NagDeclareFloat{}":{
-		"prefix":"NagDeclareFloat",
-		"body":[
-			"\\NagDeclareFloat{${1:float name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +23,17 @@
 		"prefix":"ObsoleteCS",
 		"body":[
 			"\\ObsoleteCS[${3:reason%text}]{${1:csname}}{${2:suggestions%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ObsoleteEnv{}{}":{
+		"prefix":"ObsoleteEnv",
+		"body":[
+			"\\ObsoleteEnv{${1:envname}}{${2:suggestions%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +41,17 @@
 		"prefix":"ObsoleteEnv",
 		"body":[
 			"\\ObsoleteEnv[${3:reason%text}]{${1:envname}}{${2:suggestions%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ObsoletePackage{}{}":{
+		"prefix":"ObsoletePackage",
+		"body":[
+			"\\ObsoletePackage{${1:package name}}{${2:alternative%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +59,17 @@
 		"prefix":"ObsoletePackage",
 		"body":[
 			"\\ObsoletePackage[${3:reason%text}]{${1:package name}}{${2:alternative%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SuggestedPackage{}":{
+		"prefix":"SuggestedPackage",
+		"body":[
+			"\\SuggestedPackage{${1:package name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +77,17 @@
 		"prefix":"SuggestedPackage",
 		"body":[
 			"\\SuggestedPackage[${2:reason%text}]{${1:package name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IncompatiblePackages{}{}{}":{
+		"prefix":"IncompatiblePackages",
+		"body":[
+			"\\IncompatiblePackages{${1:package1}}{${2:package2}}{${3:hint%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +95,17 @@
 		"prefix":"IncompatiblePackages",
 		"body":[
 			"\\IncompatiblePackages[${4:reason%text}]{${1:package name}}{${2:package2}}{${3:hint%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ObsoleteClass{}{}":{
+		"prefix":"ObsoleteClass",
+		"body":[
+			"\\ObsoleteClass{${1:class name}}{${2:alternative%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +113,17 @@
 		"prefix":"ObsoleteClass",
 		"body":[
 			"\\ObsoleteClass[${3:reason%text}]{${1:class name}}{${2:alternative%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BadFileLoadOrder{}{}":{
+		"prefix":"BadFileLoadOrder",
+		"body":[
+			"\\BadFileLoadOrder{${1:file1}}{${2:file2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,6 +131,43 @@
 		"prefix":"BadFileLoadOrder",
 		"body":[
 			"\\BadFileLoadOrder[${3:reason%text}]{${1:file1}}{${2:file2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NotAnEnvironment{}":{
+		"prefix":"NotAnEnvironment",
+		"body":[
+			"\\NotAnEnvironment{${1:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NotASwitch{}":{
+		"prefix":"NotASwitch",
+		"body":[
+			"\\NotASwitch{${1:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FBsuboheight":{
+		"prefix":"FBsuboheight",
+		"body":[
+			"\\FBsuboheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NagDeclareFloat{}":{
+		"prefix":"NagDeclareFloat",
+		"body":[
+			"\\NagDeclareFloat{${1:float name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

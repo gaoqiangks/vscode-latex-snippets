@@ -5,7 +5,8 @@
 		"prefix":"pgfparserparse",
 		"body":[
 			"\\pgfparserparse{${1:parser name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,87 +14,8 @@
 		"prefix":"pgfparserdef",
 		"body":[
 			"\\pgfparserdef{${1:parser name}}{${2:state}}{${3:symbol meaning}}{${4:action}}"
-		]
-	},
-
-
-	"pgfparserlet{}{}{}{}":{
-		"prefix":"pgfparserlet",
-		"body":[
-			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}{${4:meaning2}}"
-		]
-	},
-
-
-	"pgfparserdefunknown{}{}{}":{
-		"prefix":"pgfparserdefunknown",
-		"body":[
-			"\\pgfparserdefunknown{${1:parser name}}{${2:state}}{${3:action}}"
-		]
-	},
-
-
-	"pgfparserdeffinal{}{}":{
-		"prefix":"pgfparserdeffinal",
-		"body":[
-			"\\pgfparserdeffinal{${1:parser name}}{${2:action}}"
-		]
-	},
-
-
-	"pgfparserswitch{}":{
-		"prefix":"pgfparserswitch",
-		"body":[
-			"\\pgfparserswitch{${1:state}}"
-		]
-	},
-
-
-	"pgfparserifmark{}{}{}":{
-		"prefix":"pgfparserifmark",
-		"body":[
-			"\\pgfparserifmark{${1:arg}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"pgfparserreinsert":{
-		"prefix":"pgfparserreinsert",
-		"body":[
-			"\\pgfparserreinsert"
-		]
-	},
-
-
-	"pgfparserstate":{
-		"prefix":"pgfparserstate",
-		"body":[
-			"\\pgfparserstate"
-		]
-	},
-
-
-	"pgfparsertoken":{
-		"prefix":"pgfparsertoken",
-		"body":[
-			"\\pgfparsertoken"
-		]
-	},
-
-
-	"pgfparserletter":{
-		"prefix":"pgfparserletter",
-		"body":[
-			"\\pgfparserletter"
-		]
-	},
-
-
-	"pgfparserset{}":{
-		"prefix":"pgfparserset",
-		"body":[
-			"\\pgfparserset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +23,17 @@
 		"prefix":"pgfparserdef",
 		"body":[
 			"\\pgfparserdef{${1:parser name}}{${2:state}}{${3:symbol meaning}}[${5:args}]{${4:action}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfparserlet{}{}{}{}":{
+		"prefix":"pgfparserlet",
+		"body":[
+			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}{${4:meaning2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +41,88 @@
 		"prefix":"pgfparserlet",
 		"body":[
 			"\\pgfparserlet{${1:parser1}}{${2:state1}}{${3:meaning1}}[${5:opt1}][${6:opt2}]{${4:meaning2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfparserdefunknown{}{}{}":{
+		"prefix":"pgfparserdefunknown",
+		"body":[
+			"\\pgfparserdefunknown{${1:parser name}}{${2:state}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserdeffinal{}{}":{
+		"prefix":"pgfparserdeffinal",
+		"body":[
+			"\\pgfparserdeffinal{${1:parser name}}{${2:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserswitch{}":{
+		"prefix":"pgfparserswitch",
+		"body":[
+			"\\pgfparserswitch{${1:state}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserifmark{}{}{}":{
+		"prefix":"pgfparserifmark",
+		"body":[
+			"\\pgfparserifmark{${1:arg}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserreinsert":{
+		"prefix":"pgfparserreinsert",
+		"body":[
+			"\\pgfparserreinsert"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserstate":{
+		"prefix":"pgfparserstate",
+		"body":[
+			"\\pgfparserstate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparsertoken":{
+		"prefix":"pgfparsertoken",
+		"body":[
+			"\\pgfparsertoken"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserletter":{
+		"prefix":"pgfparserletter",
+		"body":[
+			"\\pgfparserletter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfparserset{}":{
+		"prefix":"pgfparserset",
+		"body":[
+			"\\pgfparserset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

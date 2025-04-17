@@ -5,39 +5,8 @@
 		"prefix":"fetchJson",
 		"body":[
 			"\\fetchJson{${1:URL}}"
-		]
-	},
-
-
-	"fetchJsonUsingFile{}":{
-		"prefix":"fetchJsonUsingFile",
-		"body":[
-			"\\fetchJsonUsingFile{${1:JSON file%file}}"
-		]
-	},
-
-
-	"fetchJsonUsingQuery{}{}":{
-		"prefix":"fetchJsonUsingQuery",
-		"body":[
-			"\\fetchJsonUsingQuery{${1:URL}}{${2:key1,key2,...}}"
-		]
-	},
-
-
-	"fetchRss{}{}":{
-		"prefix":"fetchRss",
-		"body":[
-			"\\fetchRss{${1:URL}}{${2:limit}}"
-		]
-	},
-
-
-	"fetchImage{}":{
-		"prefix":"fetchImage",
-		"body":[
-			"\\fetchImage{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"fetchJson",
 		"body":[
 			"\\fetchJson{${1:URL}}[${2:key1,key2,...}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fetchJsonUsingFile{}":{
+		"prefix":"fetchJsonUsingFile",
+		"body":[
+			"\\fetchJsonUsingFile{${1:JSON file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +32,26 @@
 		"prefix":"fetchJsonUsingFile",
 		"body":[
 			"\\fetchJsonUsingFile{${1:JSON file%file}}[${2:key1,key2,...}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fetchJsonUsingQuery{}{}":{
+		"prefix":"fetchJsonUsingQuery",
+		"body":[
+			"\\fetchJsonUsingQuery{${1:URL}}{${2:key1,key2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fetchRss{}{}":{
+		"prefix":"fetchRss",
+		"body":[
+			"\\fetchRss{${1:URL}}{${2:limit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,8 @@
 		"prefix":"fetchRss",
 		"body":[
 			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +68,17 @@
 		"prefix":"fetchRss",
 		"body":[
 			"\\fetchRss{${1:URL}}{${2:limit}}[${3:feedinfokey1,...}][${4:entrykey1,...}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fetchImage{}":{
+		"prefix":"fetchImage",
+		"body":[
+			"\\fetchImage{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"fetchImage",
 		"body":[
 			"\\fetchImage{${1:URL}}[${2:width in cm}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,6 +95,7 @@
 		"prefix":"fetchImage",
 		"body":[
 			"\\fetchImage{${1:URL}}[${2:width in cm}][${3:height in cm}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"NewAdigraph",
 		"body":[
 			"\\NewAdigraph{${1:name}}{${2:nodes}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,583 +14,8 @@
 		"prefix":"NewAdigraph",
 		"body":[
 			"\\NewAdigraph{${1:name}}{${2:nodes}}{${3:edges}}"
-		]
-	},
-
-
-	"RenewAdigraph{}{}":{
-		"prefix":"RenewAdigraph",
-		"body":[
-			"\\RenewAdigraph{${1:name}}{${2:nodes}}"
-		]
-	},
-
-
-	"RenewAdigraph{}{}{}":{
-		"prefix":"RenewAdigraph",
-		"body":[
-			"\\RenewAdigraph{${1:name}}{${2:nodes}}{${3:edges}}"
-		]
-	},
-
-
-	"EnableAdigraphs":{
-		"prefix":"EnableAdigraphs",
-		"body":[
-			"\\EnableAdigraphs"
-		]
-	},
-
-
-	"DisableAdigraphs":{
-		"prefix":"DisableAdigraphs",
-		"body":[
-			"\\DisableAdigraphs"
-		]
-	},
-
-
-	"AdigraphApplyKleenePlusEdgeBuilder{}":{
-		"prefix":"AdigraphApplyKleenePlusEdgeBuilder",
-		"body":[
-			"\\AdigraphApplyKleenePlusEdgeBuilder{${1:element}}"
-		]
-	},
-
-
-	"AdigraphBackwardPathColor":{
-		"prefix":"AdigraphBackwardPathColor",
-		"body":[
-			"\\AdigraphBackwardPathColor"
-		]
-	},
-
-
-	"AdigraphBackwardPathWidth":{
-		"prefix":"AdigraphBackwardPathWidth",
-		"body":[
-			"\\AdigraphBackwardPathWidth"
-		]
-	},
-
-
-	"AdigraphBuildEdge{}{}{}{}":{
-		"prefix":"AdigraphBuildEdge",
-		"body":[
-			"\\AdigraphBuildEdge{${1:edge nodes}}{${2:weight}}{${3:label}}{${4:label pos}}"
-		]
-	},
-
-
-	"AdigraphBuildEdgeWrapper{}{}{}{}":{
-		"prefix":"AdigraphBuildEdgeWrapper",
-		"body":[
-			"\\AdigraphBuildEdgeWrapper{${1:edge nodes}}{${2:weight}}{${3:label}}{${4:label pos}}"
-		]
-	},
-
-
-	"AdigraphBuildNode{}{}{}":{
-		"prefix":"AdigraphBuildNode",
-		"body":[
-			"\\AdigraphBuildNode{${1:node name}}{${2:list of coords}}{${3:label}}"
-		]
-	},
-
-
-	"AdigraphBuildNodeWrapper{}{}{}":{
-		"prefix":"AdigraphBuildNodeWrapper",
-		"body":[
-			"\\AdigraphBuildNodeWrapper{${1:node name}}{${2:list of coords}}{${3:label}}"
-		]
-	},
-
-
-	"AdigraphBuildPath{}{}{}{}":{
-		"prefix":"AdigraphBuildPath",
-		"body":[
-			"\\AdigraphBuildPath{${1:nodes}}{${2:units}}{${3:colors}}{${4:widths}}"
-		]
-	},
-
-
-	"AdigraphCalculateInclination{}{}{}":{
-		"prefix":"AdigraphCalculateInclination",
-		"body":[
-			"\\AdigraphCalculateInclination{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"AdigraphCalculateOrientation{}{}{}":{
-		"prefix":"AdigraphCalculateOrientation",
-		"body":[
-			"\\AdigraphCalculateOrientation{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"AdigraphCountPaths{}":{
-		"prefix":"AdigraphCountPaths",
-		"body":[
-			"\\AdigraphCountPaths{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphCurrentElaboratingEdge":{
-		"prefix":"AdigraphCurrentElaboratingEdge",
-		"body":[
-			"\\AdigraphCurrentElaboratingEdge"
-		]
-	},
-
-
-	"AdigraphCurrentNode":{
-		"prefix":"AdigraphCurrentNode",
-		"body":[
-			"\\AdigraphCurrentNode"
-		]
-	},
-
-
-	"AdigraphCutBuilder{}":{
-		"prefix":"AdigraphCutBuilder",
-		"body":[
-			"\\AdigraphCutBuilder{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphCyan":{
-		"prefix":"AdigraphCyan",
-		"body":[
-			"\\AdigraphCyan"
-		]
-	},
-
-
-	"AdigraphDefaultColor":{
-		"prefix":"AdigraphDefaultColor",
-		"body":[
-			"\\AdigraphDefaultColor"
-		]
-	},
-
-
-	"AdigraphDefaultWidth":{
-		"prefix":"AdigraphDefaultWidth",
-		"body":[
-			"\\AdigraphDefaultWidth"
-		]
-	},
-
-
-	"AdigraphDrawEdge{}{}":{
-		"prefix":"AdigraphDrawEdge",
-		"body":[
-			"\\AdigraphDrawEdge{${1:nodeID1}}{${2:nodeID2}}"
-		]
-	},
-
-
-	"AdigraphDrawNode{}":{
-		"prefix":"AdigraphDrawNode",
-		"body":[
-			"\\AdigraphDrawNode{${1:nodeID}}"
-		]
-	},
-
-
-	"AdigraphEdgeBuilder{}":{
-		"prefix":"AdigraphEdgeBuilder",
-		"body":[
-			"\\AdigraphEdgeBuilder{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphEdgeDrawer{}":{
-		"prefix":"AdigraphEdgeDrawer",
-		"body":[
-			"\\AdigraphEdgeDrawer{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphEdgeList":{
-		"prefix":"AdigraphEdgeList",
-		"body":[
-			"\\AdigraphEdgeList"
-		]
-	},
-
-
-	"AdigraphElaboratePathColors{}{}":{
-		"prefix":"AdigraphElaboratePathColors",
-		"body":[
-			"\\AdigraphElaboratePathColors{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"AdigraphElaboratePathWidth{}{}":{
-		"prefix":"AdigraphElaboratePathWidth",
-		"body":[
-			"\\AdigraphElaboratePathWidth{${1:forward width}}{${2:backward width}}"
-		]
-	},
-
-
-	"AdigraphElaboratePath{}{}":{
-		"prefix":"AdigraphElaboratePath",
-		"body":[
-			"\\AdigraphElaboratePath{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"AdigraphExecuteCutBuilder{}{}{}":{
-		"prefix":"AdigraphExecuteCutBuilder",
-		"body":[
-			"\\AdigraphExecuteCutBuilder{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"AdigraphFirstEdgeRenormalizer{}":{
-		"prefix":"AdigraphFirstEdgeRenormalizer",
-		"body":[
-			"\\AdigraphFirstEdgeRenormalizer{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphFirstNode":{
-		"prefix":"AdigraphFirstNode",
-		"body":[
-			"\\AdigraphFirstNode"
-		]
-	},
-
-
-	"AdigraphForwardPathColor":{
-		"prefix":"AdigraphForwardPathColor",
-		"body":[
-			"\\AdigraphForwardPathColor"
-		]
-	},
-
-
-	"AdigraphForwardPathWidth":{
-		"prefix":"AdigraphForwardPathWidth",
-		"body":[
-			"\\AdigraphForwardPathWidth"
-		]
-	},
-
-
-	"AdigraphGenerateNodeName{}":{
-		"prefix":"AdigraphGenerateNodeName",
-		"body":[
-			"\\AdigraphGenerateNodeName{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphKleenePlusEdgeBuilder{}":{
-		"prefix":"AdigraphKleenePlusEdgeBuilder",
-		"body":[
-			"\\AdigraphKleenePlusEdgeBuilder{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphKleeneStarEdgeBuilder{}":{
-		"prefix":"AdigraphKleeneStarEdgeBuilder",
-		"body":[
-			"\\AdigraphKleeneStarEdgeBuilder{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphLastParsedNode":{
-		"prefix":"AdigraphLastParsedNode",
-		"body":[
-			"\\AdigraphLastParsedNode"
-		]
-	},
-
-
-	"AdigraphMemorizeEdge{}{}":{
-		"prefix":"AdigraphMemorizeEdge",
-		"body":[
-			"\\AdigraphMemorizeEdge{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"AdigraphMemorizeNode{}":{
-		"prefix":"AdigraphMemorizeNode",
-		"body":[
-			"\\AdigraphMemorizeNode{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphNodeBuilder{}":{
-		"prefix":"AdigraphNodeBuilder",
-		"body":[
-			"\\AdigraphNodeBuilder{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphNodeCounterSecondWrapper{}":{
-		"prefix":"AdigraphNodeCounterSecondWrapper",
-		"body":[
-			"\\AdigraphNodeCounterSecondWrapper{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphNodeCounterWrapper{}{}{}{}":{
-		"prefix":"AdigraphNodeCounterWrapper",
-		"body":[
-			"\\AdigraphNodeCounterWrapper{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
-	},
-
-
-	"AdigraphNodeCounter{}":{
-		"prefix":"AdigraphNodeCounter",
-		"body":[
-			"\\AdigraphNodeCounter{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphNodeList":{
-		"prefix":"AdigraphNodeList",
-		"body":[
-			"\\AdigraphNodeList"
-		]
-	},
-
-
-	"AdigraphNodeName":{
-		"prefix":"AdigraphNodeName",
-		"body":[
-			"\\AdigraphNodeName"
-		]
-	},
-
-
-	"AdigraphNodesCounter{}":{
-		"prefix":"AdigraphNodesCounter",
-		"body":[
-			"\\AdigraphNodesCounter{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphPathBuilder{}{}{}{}{}{}{}":{
-		"prefix":"AdigraphPathBuilder",
-		"body":[
-			"\\AdigraphPathBuilder{${1:node1}}{${2:node2}}{${3:units}}{${4:forward color}}{${5:backward color}}{${6:forward width}}{${7:backward width}}"
-		]
-	},
-
-
-	"AdigraphProcessAugmentingPathsList{}":{
-		"prefix":"AdigraphProcessAugmentingPathsList",
-		"body":[
-			"\\AdigraphProcessAugmentingPathsList{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphProcessAugmentingPaths{}":{
-		"prefix":"AdigraphProcessAugmentingPaths",
-		"body":[
-			"\\AdigraphProcessAugmentingPaths{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphProcessCuts{}":{
-		"prefix":"AdigraphProcessCuts",
-		"body":[
-			"\\AdigraphProcessCuts{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphProcessEdges{}":{
-		"prefix":"AdigraphProcessEdges",
-		"body":[
-			"\\AdigraphProcessEdges{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphProcessNodes{}":{
-		"prefix":"AdigraphProcessNodes",
-		"body":[
-			"\\AdigraphProcessNodes{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphProcessPaths{}":{
-		"prefix":"AdigraphProcessPaths",
-		"body":[
-			"\\AdigraphProcessPaths{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphRed":{
-		"prefix":"AdigraphRed",
-		"body":[
-			"\\AdigraphRed"
-		]
-	},
-
-
-	"AdigraphRom{}":{
-		"prefix":"AdigraphRom",
-		"body":[
-			"\\AdigraphRom{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphSecondEdgeRenormalizer{}":{
-		"prefix":"AdigraphSecondEdgeRenormalizer",
-		"body":[
-			"\\AdigraphSecondEdgeRenormalizer{${1:arg}}"
-		]
-	},
-
-
-	"AdigraphSecondNode":{
-		"prefix":"AdigraphSecondNode",
-		"body":[
-			"\\AdigraphSecondNode"
-		]
-	},
-
-
-	"AdigraphSimpleSum{}{}{}":{
-		"prefix":"AdigraphSimpleSum",
-		"body":[
-			"\\AdigraphSimpleSum{${1:num1}}{${2:num2}}{${3:cmd}}"
-		]
-	},
-
-
-	"AdigraphTempList":{
-		"prefix":"AdigraphTempList",
-		"body":[
-			"\\AdigraphTempList"
-		]
-	},
-
-
-	"AdigraphTextualZero":{
-		"prefix":"AdigraphTextualZero",
-		"body":[
-			"\\AdigraphTextualZero"
-		]
-	},
-
-
-	"AdigraphTwinEdgeWeight":{
-		"prefix":"AdigraphTwinEdgeWeight",
-		"body":[
-			"\\AdigraphTwinEdgeWeight"
-		]
-	},
-
-
-	"AdigraphWeightA":{
-		"prefix":"AdigraphWeightA",
-		"body":[
-			"\\AdigraphWeightA"
-		]
-	},
-
-
-	"AdigraphWeightB":{
-		"prefix":"AdigraphWeightB",
-		"body":[
-			"\\AdigraphWeightB"
-		]
-	},
-
-
-	"AdigraphZero":{
-		"prefix":"AdigraphZero",
-		"body":[
-			"\\AdigraphZero"
-		]
-	},
-
-
-	"Adigraph{}{}{}{}{}{}":{
-		"prefix":"Adigraph",
-		"body":[
-			"\\Adigraph{${1:vertices}}{${2:edges}}{${3:paths}}{${4:cuts}}{${5:current paths}}{${6:style}}"
-		]
-	},
-
-
-	"sumOfOrientations{}":{
-		"prefix":"sumOfOrientations",
-		"body":[
-			"\\sumOfOrientations{${1:arg1}}"
-		]
-	},
-
-
-	"theAdigraphAdjacentNodes":{
-		"prefix":"theAdigraphAdjacentNodes",
-		"body":[
-			"\\theAdigraphAdjacentNodes"
-		]
-	},
-
-
-	"theAdigraphCurrentNodeCounter":{
-		"prefix":"theAdigraphCurrentNodeCounter",
-		"body":[
-			"\\theAdigraphCurrentNodeCounter"
-		]
-	},
-
-
-	"theAdigraphCurrentPathNumber":{
-		"prefix":"theAdigraphCurrentPathNumber",
-		"body":[
-			"\\theAdigraphCurrentPathNumber"
-		]
-	},
-
-
-	"theAdigraphNumberOfPaths":{
-		"prefix":"theAdigraphNumberOfPaths",
-		"body":[
-			"\\theAdigraphNumberOfPaths"
-		]
-	},
-
-
-	"theAdigraphTotalNodeCounter":{
-		"prefix":"theAdigraphTotalNodeCounter",
-		"body":[
-			"\\theAdigraphTotalNodeCounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +23,26 @@
 		"prefix":"NewAdigraph",
 		"body":[
 			"\\NewAdigraph{${1:name}}{${2:nodes}}{${3:edges}}[${4:edge style}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewAdigraph{}{}":{
+		"prefix":"RenewAdigraph",
+		"body":[
+			"\\RenewAdigraph{${1:name}}{${2:nodes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RenewAdigraph{}{}{}":{
+		"prefix":"RenewAdigraph",
+		"body":[
+			"\\RenewAdigraph{${1:name}}{${2:nodes}}{${3:edges}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,6 +50,637 @@
 		"prefix":"RenewAdigraph",
 		"body":[
 			"\\RenewAdigraph{${1:name}}{${2:nodes}}{${3:edges}}[${4:edge style}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EnableAdigraphs":{
+		"prefix":"EnableAdigraphs",
+		"body":[
+			"\\EnableAdigraphs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisableAdigraphs":{
+		"prefix":"DisableAdigraphs",
+		"body":[
+			"\\DisableAdigraphs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphApplyKleenePlusEdgeBuilder{}":{
+		"prefix":"AdigraphApplyKleenePlusEdgeBuilder",
+		"body":[
+			"\\AdigraphApplyKleenePlusEdgeBuilder{${1:element}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBackwardPathColor":{
+		"prefix":"AdigraphBackwardPathColor",
+		"body":[
+			"\\AdigraphBackwardPathColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBackwardPathWidth":{
+		"prefix":"AdigraphBackwardPathWidth",
+		"body":[
+			"\\AdigraphBackwardPathWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBuildEdge{}{}{}{}":{
+		"prefix":"AdigraphBuildEdge",
+		"body":[
+			"\\AdigraphBuildEdge{${1:edge nodes}}{${2:weight}}{${3:label}}{${4:label pos}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBuildEdgeWrapper{}{}{}{}":{
+		"prefix":"AdigraphBuildEdgeWrapper",
+		"body":[
+			"\\AdigraphBuildEdgeWrapper{${1:edge nodes}}{${2:weight}}{${3:label}}{${4:label pos}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBuildNode{}{}{}":{
+		"prefix":"AdigraphBuildNode",
+		"body":[
+			"\\AdigraphBuildNode{${1:node name}}{${2:list of coords}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBuildNodeWrapper{}{}{}":{
+		"prefix":"AdigraphBuildNodeWrapper",
+		"body":[
+			"\\AdigraphBuildNodeWrapper{${1:node name}}{${2:list of coords}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphBuildPath{}{}{}{}":{
+		"prefix":"AdigraphBuildPath",
+		"body":[
+			"\\AdigraphBuildPath{${1:nodes}}{${2:units}}{${3:colors}}{${4:widths}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCalculateInclination{}{}{}":{
+		"prefix":"AdigraphCalculateInclination",
+		"body":[
+			"\\AdigraphCalculateInclination{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCalculateOrientation{}{}{}":{
+		"prefix":"AdigraphCalculateOrientation",
+		"body":[
+			"\\AdigraphCalculateOrientation{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCountPaths{}":{
+		"prefix":"AdigraphCountPaths",
+		"body":[
+			"\\AdigraphCountPaths{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCurrentElaboratingEdge":{
+		"prefix":"AdigraphCurrentElaboratingEdge",
+		"body":[
+			"\\AdigraphCurrentElaboratingEdge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCurrentNode":{
+		"prefix":"AdigraphCurrentNode",
+		"body":[
+			"\\AdigraphCurrentNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCutBuilder{}":{
+		"prefix":"AdigraphCutBuilder",
+		"body":[
+			"\\AdigraphCutBuilder{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphCyan":{
+		"prefix":"AdigraphCyan",
+		"body":[
+			"\\AdigraphCyan"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphDefaultColor":{
+		"prefix":"AdigraphDefaultColor",
+		"body":[
+			"\\AdigraphDefaultColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphDefaultWidth":{
+		"prefix":"AdigraphDefaultWidth",
+		"body":[
+			"\\AdigraphDefaultWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphDrawEdge{}{}":{
+		"prefix":"AdigraphDrawEdge",
+		"body":[
+			"\\AdigraphDrawEdge{${1:nodeID1}}{${2:nodeID2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphDrawNode{}":{
+		"prefix":"AdigraphDrawNode",
+		"body":[
+			"\\AdigraphDrawNode{${1:nodeID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphEdgeBuilder{}":{
+		"prefix":"AdigraphEdgeBuilder",
+		"body":[
+			"\\AdigraphEdgeBuilder{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphEdgeDrawer{}":{
+		"prefix":"AdigraphEdgeDrawer",
+		"body":[
+			"\\AdigraphEdgeDrawer{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphEdgeList":{
+		"prefix":"AdigraphEdgeList",
+		"body":[
+			"\\AdigraphEdgeList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphElaboratePathColors{}{}":{
+		"prefix":"AdigraphElaboratePathColors",
+		"body":[
+			"\\AdigraphElaboratePathColors{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphElaboratePathWidth{}{}":{
+		"prefix":"AdigraphElaboratePathWidth",
+		"body":[
+			"\\AdigraphElaboratePathWidth{${1:forward width}}{${2:backward width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphElaboratePath{}{}":{
+		"prefix":"AdigraphElaboratePath",
+		"body":[
+			"\\AdigraphElaboratePath{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphExecuteCutBuilder{}{}{}":{
+		"prefix":"AdigraphExecuteCutBuilder",
+		"body":[
+			"\\AdigraphExecuteCutBuilder{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphFirstEdgeRenormalizer{}":{
+		"prefix":"AdigraphFirstEdgeRenormalizer",
+		"body":[
+			"\\AdigraphFirstEdgeRenormalizer{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphFirstNode":{
+		"prefix":"AdigraphFirstNode",
+		"body":[
+			"\\AdigraphFirstNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphForwardPathColor":{
+		"prefix":"AdigraphForwardPathColor",
+		"body":[
+			"\\AdigraphForwardPathColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphForwardPathWidth":{
+		"prefix":"AdigraphForwardPathWidth",
+		"body":[
+			"\\AdigraphForwardPathWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphGenerateNodeName{}":{
+		"prefix":"AdigraphGenerateNodeName",
+		"body":[
+			"\\AdigraphGenerateNodeName{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphKleenePlusEdgeBuilder{}":{
+		"prefix":"AdigraphKleenePlusEdgeBuilder",
+		"body":[
+			"\\AdigraphKleenePlusEdgeBuilder{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphKleeneStarEdgeBuilder{}":{
+		"prefix":"AdigraphKleeneStarEdgeBuilder",
+		"body":[
+			"\\AdigraphKleeneStarEdgeBuilder{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphLastParsedNode":{
+		"prefix":"AdigraphLastParsedNode",
+		"body":[
+			"\\AdigraphLastParsedNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphMemorizeEdge{}{}":{
+		"prefix":"AdigraphMemorizeEdge",
+		"body":[
+			"\\AdigraphMemorizeEdge{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphMemorizeNode{}":{
+		"prefix":"AdigraphMemorizeNode",
+		"body":[
+			"\\AdigraphMemorizeNode{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeBuilder{}":{
+		"prefix":"AdigraphNodeBuilder",
+		"body":[
+			"\\AdigraphNodeBuilder{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeCounterSecondWrapper{}":{
+		"prefix":"AdigraphNodeCounterSecondWrapper",
+		"body":[
+			"\\AdigraphNodeCounterSecondWrapper{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeCounterWrapper{}{}{}{}":{
+		"prefix":"AdigraphNodeCounterWrapper",
+		"body":[
+			"\\AdigraphNodeCounterWrapper{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeCounter{}":{
+		"prefix":"AdigraphNodeCounter",
+		"body":[
+			"\\AdigraphNodeCounter{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeList":{
+		"prefix":"AdigraphNodeList",
+		"body":[
+			"\\AdigraphNodeList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodeName":{
+		"prefix":"AdigraphNodeName",
+		"body":[
+			"\\AdigraphNodeName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphNodesCounter{}":{
+		"prefix":"AdigraphNodesCounter",
+		"body":[
+			"\\AdigraphNodesCounter{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphPathBuilder{}{}{}{}{}{}{}":{
+		"prefix":"AdigraphPathBuilder",
+		"body":[
+			"\\AdigraphPathBuilder{${1:node1}}{${2:node2}}{${3:units}}{${4:forward color}}{${5:backward color}}{${6:forward width}}{${7:backward width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessAugmentingPathsList{}":{
+		"prefix":"AdigraphProcessAugmentingPathsList",
+		"body":[
+			"\\AdigraphProcessAugmentingPathsList{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessAugmentingPaths{}":{
+		"prefix":"AdigraphProcessAugmentingPaths",
+		"body":[
+			"\\AdigraphProcessAugmentingPaths{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessCuts{}":{
+		"prefix":"AdigraphProcessCuts",
+		"body":[
+			"\\AdigraphProcessCuts{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessEdges{}":{
+		"prefix":"AdigraphProcessEdges",
+		"body":[
+			"\\AdigraphProcessEdges{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessNodes{}":{
+		"prefix":"AdigraphProcessNodes",
+		"body":[
+			"\\AdigraphProcessNodes{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphProcessPaths{}":{
+		"prefix":"AdigraphProcessPaths",
+		"body":[
+			"\\AdigraphProcessPaths{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphRed":{
+		"prefix":"AdigraphRed",
+		"body":[
+			"\\AdigraphRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphRom{}":{
+		"prefix":"AdigraphRom",
+		"body":[
+			"\\AdigraphRom{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphSecondEdgeRenormalizer{}":{
+		"prefix":"AdigraphSecondEdgeRenormalizer",
+		"body":[
+			"\\AdigraphSecondEdgeRenormalizer{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphSecondNode":{
+		"prefix":"AdigraphSecondNode",
+		"body":[
+			"\\AdigraphSecondNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphSimpleSum{}{}{}":{
+		"prefix":"AdigraphSimpleSum",
+		"body":[
+			"\\AdigraphSimpleSum{${1:num1}}{${2:num2}}{${3:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphTempList":{
+		"prefix":"AdigraphTempList",
+		"body":[
+			"\\AdigraphTempList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphTextualZero":{
+		"prefix":"AdigraphTextualZero",
+		"body":[
+			"\\AdigraphTextualZero"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphTwinEdgeWeight":{
+		"prefix":"AdigraphTwinEdgeWeight",
+		"body":[
+			"\\AdigraphTwinEdgeWeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphWeightA":{
+		"prefix":"AdigraphWeightA",
+		"body":[
+			"\\AdigraphWeightA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphWeightB":{
+		"prefix":"AdigraphWeightB",
+		"body":[
+			"\\AdigraphWeightB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AdigraphZero":{
+		"prefix":"AdigraphZero",
+		"body":[
+			"\\AdigraphZero"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Adigraph{}{}{}{}{}{}":{
+		"prefix":"Adigraph",
+		"body":[
+			"\\Adigraph{${1:vertices}}{${2:edges}}{${3:paths}}{${4:cuts}}{${5:current paths}}{${6:style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sumOfOrientations{}":{
+		"prefix":"sumOfOrientations",
+		"body":[
+			"\\sumOfOrientations{${1:arg1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theAdigraphAdjacentNodes":{
+		"prefix":"theAdigraphAdjacentNodes",
+		"body":[
+			"\\theAdigraphAdjacentNodes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theAdigraphCurrentNodeCounter":{
+		"prefix":"theAdigraphCurrentNodeCounter",
+		"body":[
+			"\\theAdigraphCurrentNodeCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theAdigraphCurrentPathNumber":{
+		"prefix":"theAdigraphCurrentPathNumber",
+		"body":[
+			"\\theAdigraphCurrentPathNumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theAdigraphNumberOfPaths":{
+		"prefix":"theAdigraphNumberOfPaths",
+		"body":[
+			"\\theAdigraphNumberOfPaths"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theAdigraphTotalNodeCounter":{
+		"prefix":"theAdigraphTotalNodeCounter",
+		"body":[
+			"\\theAdigraphTotalNodeCounter"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

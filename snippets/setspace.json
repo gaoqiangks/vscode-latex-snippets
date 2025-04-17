@@ -5,7 +5,8 @@
 		"prefix":"singlespacing",
 		"body":[
 			"\\singlespacing"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"onehalfspacing",
 		"body":[
 			"\\onehalfspacing"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"doublespacing",
 		"body":[
 			"\\doublespacing"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"SetSinglespace",
 		"body":[
 			"\\SetSinglespace{${1:factor}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"setstretch",
 		"body":[
 			"\\setstretch{${1:factor}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"displayskipstretch",
 		"body":[
 			"\\displayskipstretch"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"setdisplayskipstretch",
 		"body":[
 			"\\setdisplayskipstretch{${1:factor}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -63,37 +70,8 @@
 			"\\begin{singlespace}",
 				"\t$1",
 			"\\end{singlespace}"
-		]
-	},
-
-
-	"doublespace":{
-		"prefix":"doublespace",
-		"body":[
-			"\\begin{doublespace}",
-				"\t$1",
-			"\\end{doublespace}"
-		]
-	},
-
-
-	"onehalfspace":{
-		"prefix":"onehalfspace",
-		"body":[
-			"\\begin{onehalfspace}",
-				"\t$1",
-			"\\end{onehalfspace}"
-		]
-	},
-
-
-	"spacing":{
-		"prefix":"spacing",
-		"body":[
-			"\\begin{spacing}",
-				"\t$1",
-			"\\end{spacing}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -103,6 +81,40 @@
 			"\\begin{singlespace*}",
 				"\t$1",
 			"\\end{singlespace*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"doublespace":{
+		"prefix":"doublespace",
+		"body":[
+			"\\begin{doublespace}",
+				"\t$1",
+			"\\end{doublespace}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"onehalfspace":{
+		"prefix":"onehalfspace",
+		"body":[
+			"\\begin{onehalfspace}",
+				"\t$1",
+			"\\end{onehalfspace}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spacing{}":{
+		"prefix":"spacing",
+		"body":[
+			"\\begin{spacing}",
+				"\t{${1:factor}}",
+			"\\end{spacing}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

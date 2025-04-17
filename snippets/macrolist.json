@@ -5,7 +5,8 @@
 		"prefix":"macronewlist",
 		"body":[
 			"\\macronewlist{${1:listname%specialDef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"macrolistexists",
 		"body":[
 			"\\macrolistexists{${1:listname%keyvals}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"macrolistelement",
 		"body":[
 			"\\macrolistelement{${1:listname%keyvals}}{${2:position}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"macrolistindexof",
 		"body":[
 			"\\macrolistindexof{${1:listname%keyvals}}{${2:element}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"macrolistcontains",
 		"body":[
 			"\\macrolistcontains{${1:listname%keyvals}}{${2:element}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,63 +50,8 @@
 		"prefix":"macrolistadd",
 		"body":[
 			"\\macrolistadd{${1:listname%keyvals}}{${2:element}}"
-		]
-	},
-
-
-	"macrolisteadd{}{}":{
-		"prefix":"macrolisteadd",
-		"body":[
-			"\\macrolisteadd{${1:listname%keyvals}}{${2:element}}"
-		]
-	},
-
-
-	"macrolistremove{}{}":{
-		"prefix":"macrolistremove",
-		"body":[
-			"\\macrolistremove{${1:listname%keyvals}}{${2:position}}"
-		]
-	},
-
-
-	"macrolistremovelast{}":{
-		"prefix":"macrolistremovelast",
-		"body":[
-			"\\macrolistremovelast{${1:listname%keyvals}}"
-		]
-	},
-
-
-	"macrolistclear{}":{
-		"prefix":"macrolistclear",
-		"body":[
-			"\\macrolistclear{${1:listname%keyvals}}"
-		]
-	},
-
-
-	"macrolistsize{}":{
-		"prefix":"macrolistsize",
-		"body":[
-			"\\macrolistsize{${1:listname%keyvals}}"
-		]
-	},
-
-
-	"macrolistforeach{}{}{}":{
-		"prefix":"macrolistforeach",
-		"body":[
-			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}{${3:action}}"
-		]
-	},
-
-
-	"macrolistjoin{}{}":{
-		"prefix":"macrolistjoin",
-		"body":[
-			"\\macrolistjoin{${1:listname%keyvals}}{${2:joiner}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +59,17 @@
 		"prefix":"macrolistadd",
 		"body":[
 			"\\macrolistadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"macrolisteadd{}{}":{
+		"prefix":"macrolisteadd",
+		"body":[
+			"\\macrolisteadd{${1:listname%keyvals}}{${2:element}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,53 @@
 		"prefix":"macrolisteadd",
 		"body":[
 			"\\macrolisteadd{${1:listname%keyvals}}[${3:position}]{${2:element}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"macrolistremove{}{}":{
+		"prefix":"macrolistremove",
+		"body":[
+			"\\macrolistremove{${1:listname%keyvals}}{${2:position}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"macrolistremovelast{}":{
+		"prefix":"macrolistremovelast",
+		"body":[
+			"\\macrolistremovelast{${1:listname%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"macrolistclear{}":{
+		"prefix":"macrolistclear",
+		"body":[
+			"\\macrolistclear{${1:listname%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"macrolistsize{}":{
+		"prefix":"macrolistsize",
+		"body":[
+			"\\macrolistsize{${1:listname%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"macrolistforeach{}{}{}":{
+		"prefix":"macrolistforeach",
+		"body":[
+			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +131,16 @@
 		"prefix":"macrolistforeach",
 		"body":[
 			"\\macrolistforeach{${1:listname%keyvals}}{${2:cmd}}[${4:begin}][${5:end}]{${3:action}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"macrolistjoin{}{}":{
+		"prefix":"macrolistjoin",
+		"body":[
+			"\\macrolistjoin{${1:listname%keyvals}}{${2:joiner}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

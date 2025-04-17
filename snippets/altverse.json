@@ -5,103 +5,8 @@
 		"prefix":"Vbreak",
 		"body":[
 			"\\Vbreak{${1:envname}}"
-		]
-	},
-
-
-	"Vhead{}":{
-		"prefix":"Vhead",
-		"body":[
-			"\\Vhead{${1:header%text}}"
-		]
-	},
-
-
-	"VCtitle":{
-		"prefix":"VCtitle",
-		"body":[
-			"\\VCtitle"
-		]
-	},
-
-
-	"Vctitle":{
-		"prefix":"Vctitle",
-		"body":[
-			"\\Vctitle"
-		]
-	},
-
-
-	"VLtitle":{
-		"prefix":"VLtitle",
-		"body":[
-			"\\VLtitle"
-		]
-	},
-
-
-	"Vstars":{
-		"prefix":"Vstars",
-		"body":[
-			"\\Vstars"
-		]
-	},
-
-
-	"Vsub{}":{
-		"prefix":"Vsub",
-		"body":[
-			"\\Vsub{${1:subheader%text}}"
-		]
-	},
-
-
-	"Vto{}":{
-		"prefix":"Vto",
-		"body":[
-			"\\Vto{${1:dedication%text}}"
-		]
-	},
-
-
-	"Vat{}":{
-		"prefix":"Vat",
-		"body":[
-			"\\Vat{${1:annotation%text}}"
-		]
-	},
-
-
-	"VheadFormat":{
-		"prefix":"VheadFormat",
-		"body":[
-			"\\VheadFormat"
-		]
-	},
-
-
-	"VheadSize":{
-		"prefix":"VheadSize",
-		"body":[
-			"\\VheadSize"
-		]
-	},
-
-
-	"VtoFormat":{
-		"prefix":"VtoFormat",
-		"body":[
-			"\\VtoFormat"
-		]
-	},
-
-
-	"VatFormat":{
-		"prefix":"VatFormat",
-		"body":[
-			"\\VatFormat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,17 @@
 		"prefix":"Vindent",
 		"body":[
 			"\\Vindent[${1:inches}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Vhead{}":{
+		"prefix":"Vhead",
+		"body":[
+			"\\Vhead{${1:header%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +32,107 @@
 		"prefix":"Vhead",
 		"body":[
 			"\\Vhead[${2:short header%text}]{${1:header%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VCtitle":{
+		"prefix":"VCtitle",
+		"body":[
+			"\\VCtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vctitle":{
+		"prefix":"Vctitle",
+		"body":[
+			"\\Vctitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VLtitle":{
+		"prefix":"VLtitle",
+		"body":[
+			"\\VLtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vstars":{
+		"prefix":"Vstars",
+		"body":[
+			"\\Vstars"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vsub{}":{
+		"prefix":"Vsub",
+		"body":[
+			"\\Vsub{${1:subheader%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vto{}":{
+		"prefix":"Vto",
+		"body":[
+			"\\Vto{${1:dedication%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vat{}":{
+		"prefix":"Vat",
+		"body":[
+			"\\Vat{${1:annotation%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VheadFormat":{
+		"prefix":"VheadFormat",
+		"body":[
+			"\\VheadFormat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VheadSize":{
+		"prefix":"VheadSize",
+		"body":[
+			"\\VheadSize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VtoFormat":{
+		"prefix":"VtoFormat",
+		"body":[
+			"\\VtoFormat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VatFormat":{
+		"prefix":"VatFormat",
+		"body":[
+			"\\VatFormat"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,7 +142,19 @@
 			"\\begin{Verse}",
 				"\t$1",
 			"\\end{Verse}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Verse[]":{
+		"prefix":"Verse",
+		"body":[
+			"\\begin{Verse}",
+				"\t[${1:line prefix code}]",
+			"\\end{Verse}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -137,7 +164,19 @@
 			"\\begin{VERSE}",
 				"\t$1",
 			"\\end{VERSE}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VERSE[]":{
+		"prefix":"VERSE",
+		"body":[
+			"\\begin{VERSE}",
+				"\t[${1:line prefix code}]",
+			"\\end{VERSE}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -147,36 +186,18 @@
 			"\\begin{Verse*}",
 				"\t$1",
 			"\\end{Verse*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Verse":{
-		"prefix":"Verse",
-		"body":[
-			"\\begin{Verse}",
-				"\t$1",
-			"\\end{Verse}"
-		]
-	},
-
-
-	"VERSE":{
-		"prefix":"VERSE",
-		"body":[
-			"\\begin{VERSE}",
-				"\t$1",
-			"\\end{VERSE}"
-		]
-	},
-
-
-	"Verse*":{
-		"prefix":"Verse",
+	"Verse*[]":{
+		"prefix":"*Verse",
 		"body":[
 			"\\begin{Verse*}",
-				"\t$1",
+				"\t[${1:line prefix code}]",
 			"\\end{Verse*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

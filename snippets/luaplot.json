@@ -5,15 +5,8 @@
 		"prefix":"luaplot",
 		"body":[
 			"\\luaplot{${1:function%definition}}"
-		]
-	},
-
-
-	"luatikzpath{}{}{}{}":{
-		"prefix":"luatikzpath",
-		"body":[
-			"\\luatikzpath{${1:function%definition}}{${2:xmin}}{${3:xmax}}{${4:plot points}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"luaplot",
 		"body":[
 			"\\luaplot[${2:options%keyvals}]{${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luatikzpath{}{}{}{}":{
+		"prefix":"luatikzpath",
+		"body":[
+			"\\luatikzpath{${1:function%definition}}{${2:xmin}}{${3:xmax}}{${4:plot points}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

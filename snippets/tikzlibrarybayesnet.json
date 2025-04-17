@@ -5,55 +5,8 @@
 		"prefix":"factor",
 		"body":[
 			"\\factor{${1:name}}{${2:caption%text}}{${3:inputs}}{${4:outputs}}"
-		]
-	},
-
-
-	"plate{}{}{}":{
-		"prefix":"plate",
-		"body":[
-			"\\plate{${1:name}}{${2:fitlist}}{${3:caption%text}}"
-		]
-	},
-
-
-	"gate{}{}{}":{
-		"prefix":"gate",
-		"body":[
-			"\\gate{${1:name}}{${2:fitlist}}{${3:inputs}}"
-		]
-	},
-
-
-	"vgate{}{}{}{}{}{}":{
-		"prefix":"vgate",
-		"body":[
-			"\\vgate{${1:name}}{${2:fitlist-left}}{${3:caption-left%text}}{${4:fitlist-right}}{${5:caption-right%text}}{${6:inputs}}"
-		]
-	},
-
-
-	"hgate{}{}{}{}{}{}":{
-		"prefix":"hgate",
-		"body":[
-			"\\hgate{${1:name}}{${2:fitlist-top}}{${3:caption-top%text}}{${4:fitlist-bottom}}{${5:caption-bottom%text}}{${6:inputs}}"
-		]
-	},
-
-
-	"edge{}{}":{
-		"prefix":"edge",
-		"body":[
-			"\\edge{${1:inputs}}{${2:outputs}}"
-		]
-	},
-
-
-	"factoredge{}{}{}":{
-		"prefix":"factoredge",
-		"body":[
-			"\\factoredge{${1:inputs}}{${2:factors}}{${3:outputs}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"factor",
 		"body":[
 			"\\factor[${5:TikZ keys}]{${1:name}}{${2:caption%text}}{${3:inputs}}{${4:outputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plate{}{}{}":{
+		"prefix":"plate",
+		"body":[
+			"\\plate{${1:name}}{${2:fitlist}}{${3:caption%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +32,17 @@
 		"prefix":"plate",
 		"body":[
 			"\\plate[${4:TikZ keys}]{${1:name}}{${2:fitlist}}{${3:caption%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gate{}{}{}":{
+		"prefix":"gate",
+		"body":[
+			"\\gate{${1:name}}{${2:fitlist}}{${3:inputs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +50,17 @@
 		"prefix":"gate",
 		"body":[
 			"\\gate[${4:TikZ keys}]{${1:name}}{${2:fitlist}}{${3:inputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vgate{}{}{}{}{}{}":{
+		"prefix":"vgate",
+		"body":[
+			"\\vgate{${1:name}}{${2:fitlist-left}}{${3:caption-left%text}}{${4:fitlist-right}}{${5:caption-right%text}}{${6:inputs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +68,17 @@
 		"prefix":"vgate",
 		"body":[
 			"\\vgate[${7:TikZ keys}]{${1:name}}{${2:fitlist-left}}{${3:caption-left%text}}{${4:fitlist-right}}{${5:caption-right%text}}{${6:inputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hgate{}{}{}{}{}{}":{
+		"prefix":"hgate",
+		"body":[
+			"\\hgate{${1:name}}{${2:fitlist-top}}{${3:caption-top%text}}{${4:fitlist-bottom}}{${5:caption-bottom%text}}{${6:inputs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +86,17 @@
 		"prefix":"hgate",
 		"body":[
 			"\\hgate[${7:TikZ keys}]{${1:name}}{${2:fitlist-top}}{${3:caption-top%text}}{${4:fitlist-bottom}}{${5:caption-bottom%text}}{${6:inputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"edge{}{}":{
+		"prefix":"edge",
+		"body":[
+			"\\edge{${1:inputs}}{${2:outputs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +104,17 @@
 		"prefix":"edge",
 		"body":[
 			"\\edge[${3:TikZ keys}]{${1:inputs}}{${2:outputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"factoredge{}{}{}":{
+		"prefix":"factoredge",
+		"body":[
+			"\\factoredge{${1:inputs}}{${2:factors}}{${3:outputs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +122,7 @@
 		"prefix":"factoredge",
 		"body":[
 			"\\factoredge[${4:TikZ keys}]{${1:inputs}}{${2:factors}}{${3:outputs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

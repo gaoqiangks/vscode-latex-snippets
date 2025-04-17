@@ -5,7 +5,8 @@
 		"prefix":"NewConcept",
 		"body":[
 			"\\NewConcept{${1:concept key}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ConceptOption",
 		"body":[
 			"\\ConceptOption{${1:concept key}}{${2:option%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ConceptName",
 		"body":[
 			"\\ConceptName{${1:concept key}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,39 +32,8 @@
 		"prefix":"ConceptName^",
 		"body":[
 			"\\ConceptName^{${1:concept key}}"
-		]
-	},
-
-
-	"ConceptName^*{}":{
-		"prefix":"ConceptName^",
-		"body":[
-			"\\ConceptName^*{${1:concept key}}"
-		]
-	},
-
-
-	"ConceptSymbol{}":{
-		"prefix":"ConceptSymbol",
-		"body":[
-			"\\ConceptSymbol{${1:concept key}}"
-		]
-	},
-
-
-	"ConceptSymbols{}{}":{
-		"prefix":"ConceptSymbols",
-		"body":[
-			"\\ConceptSymbols{${1:concept key}}{${2:symbol indices}}"
-		]
-	},
-
-
-	"ConceptNameAndSymbols{}{}":{
-		"prefix":"ConceptNameAndSymbols",
-		"body":[
-			"\\ConceptNameAndSymbols{${1:concept key}}{${2:symbol indices}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +41,26 @@
 		"prefix":"*ConceptName",
 		"body":[
 			"\\ConceptName*{${1:concept key}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ConceptName^*{}":{
+		"prefix":"ConceptName^*",
+		"body":[
+			"\\ConceptName^*{${1:concept key}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ConceptSymbol{}":{
+		"prefix":"ConceptSymbol",
+		"body":[
+			"\\ConceptSymbol{${1:concept key}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +68,17 @@
 		"prefix":"ConceptSymbol",
 		"body":[
 			"\\ConceptSymbol{${1:concept key}}[${2:symbol index}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ConceptSymbols{}{}":{
+		"prefix":"ConceptSymbols",
+		"body":[
+			"\\ConceptSymbols{${1:concept key}}{${2:symbol indices}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +86,8 @@
 		"prefix":"ConceptSymbols",
 		"body":[
 			"\\ConceptSymbols{${1:concept key}}[${3:separator}]{${2:symbol indices}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +95,17 @@
 		"prefix":"ConceptSymbols",
 		"body":[
 			"\\ConceptSymbols{${1:concept key}}[${3:separator}][${4:last separator}]{${2:symbol indices}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ConceptNameAndSymbols{}{}":{
+		"prefix":"ConceptNameAndSymbols",
+		"body":[
+			"\\ConceptNameAndSymbols{${1:concept key}}{${2:symbol indices}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"ConceptNameAndSymbols",
 		"body":[
 			"\\ConceptNameAndSymbols{${1:concept key}}[${3:separator}]{${2:symbol indices}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,6 +122,7 @@
 		"prefix":"ConceptNameAndSymbols",
 		"body":[
 			"\\ConceptNameAndSymbols{${1:concept key}}[${3:separator}][${4:last separator}]{${2:symbol indices}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

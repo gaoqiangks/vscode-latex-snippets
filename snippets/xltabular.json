@@ -5,7 +5,8 @@
 		"prefix":"endfirstfoot",
 		"body":[
 			"\\endfirstfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"endlastfoot",
 		"body":[
 			"\\endlastfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"endfirsthead",
 		"body":[
 			"\\endfirsthead"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"endfoot",
 		"body":[
 			"\\endfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,26 +41,29 @@
 		"prefix":"endhead",
 		"body":[
 			"\\endhead"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"xltabular":{
+	"xltabular{}{}":{
 		"prefix":"xltabular",
 		"body":[
 			"\\begin{xltabular}",
-				"\t$1",
+				"\t{${1:width}}{${2:preamble}}",
 			"\\end{xltabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"xltabular":{
+	"xltabular[]{}{}":{
 		"prefix":"xltabular",
 		"body":[
 			"\\begin{xltabular}",
-				"\t$1",
+				"\t[${3:hPos}]{${1:width}}{${2:preamble}}",
 			"\\end{xltabular}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,71 +5,8 @@
 		"prefix":"paren",
 		"body":[
 			"\\paren(${1:expression in parenthesis})"
-		]
-	},
-
-
-	"paren<expression in angle brackets>":{
-		"prefix":"paren<expression in angle brackets>",
-		"body":[
-			"\\paren<expression in angle brackets>"
-		]
-	},
-
-
-	"paren{}":{
-		"prefix":"paren",
-		"body":[
-			"\\paren{${1:expression in curly braces}}"
-		]
-	},
-
-
-	"backtick":{
-		"prefix":"backtick",
-		"body":[
-			"\\backtick"
-		]
-	},
-
-
-	"parenMakeBacktickActiveParen":{
-		"prefix":"parenMakeBacktickActiveParen",
-		"body":[
-			"\\parenMakeBacktickActiveParen"
-		]
-	},
-
-
-	"parenMakeNormalBacktick":{
-		"prefix":"parenMakeNormalBacktick",
-		"body":[
-			"\\parenMakeNormalBacktick"
-		]
-	},
-
-
-	"parenRegister{}{}{}{}{}":{
-		"prefix":"parenRegister",
-		"body":[
-			"\\parenRegister{${1:name}}{${2:delim1%definition}}{${3:delim2%definition}}{${4:display delim1%definition}}{${5:display delim2%definition}}"
-		]
-	},
-
-
-	"parenRegsiterSimpleBraces{}":{
-		"prefix":"parenRegsiterSimpleBraces",
-		"body":[
-			"\\parenRegsiterSimpleBraces{${1:name}}"
-		]
-	},
-
-
-	"parenRegisterDefaults":{
-		"prefix":"parenRegisterDefaults",
-		"body":[
-			"\\parenRegisterDefaults"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,31 +14,8 @@
 		"prefix":"*paren",
 		"body":[
 			"\\paren*(${1:expression in parenthesis})"
-		]
-	},
-
-
-	"paren*[]":{
-		"prefix":"*paren",
-		"body":[
-			"\\paren*[${1:expression in brackets}]"
-		]
-	},
-
-
-	"paren*<expression in angle brackets>":{
-		"prefix":"*paren",
-		"body":[
-			"\\paren*<expression in angle brackets>"
-		]
-	},
-
-
-	"paren*{}":{
-		"prefix":"*paren",
-		"body":[
-			"\\paren*{${1:expression in curly braces}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -109,6 +23,106 @@
 		"prefix":"paren",
 		"body":[
 			"\\paren[${1:expression in brackets}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"paren*[]":{
+		"prefix":"*paren",
+		"body":[
+			"\\paren*[${1:expression in brackets}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"paren<expression in angle brackets>":{
+		"prefix":"paren<expression in angle brackets>",
+		"body":[
+			"\\paren<expression in angle brackets>"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paren*<expression in angle brackets>":{
+		"prefix":"*paren<expression in angle brackets>",
+		"body":[
+			"\\paren*<expression in angle brackets>"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"paren{}":{
+		"prefix":"paren",
+		"body":[
+			"\\paren{${1:expression in curly braces}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paren*{}":{
+		"prefix":"*paren",
+		"body":[
+			"\\paren*{${1:expression in curly braces}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"backtick":{
+		"prefix":"backtick",
+		"body":[
+			"\\backtick"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parenMakeBacktickActiveParen":{
+		"prefix":"parenMakeBacktickActiveParen",
+		"body":[
+			"\\parenMakeBacktickActiveParen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parenMakeNormalBacktick":{
+		"prefix":"parenMakeNormalBacktick",
+		"body":[
+			"\\parenMakeNormalBacktick"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parenRegister{}{}{}{}{}":{
+		"prefix":"parenRegister",
+		"body":[
+			"\\parenRegister{${1:name}}{${2:delim1%definition}}{${3:delim2%definition}}{${4:display delim1%definition}}{${5:display delim2%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parenRegsiterSimpleBraces{}":{
+		"prefix":"parenRegsiterSimpleBraces",
+		"body":[
+			"\\parenRegsiterSimpleBraces{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parenRegisterDefaults":{
+		"prefix":"parenRegisterDefaults",
+		"body":[
+			"\\parenRegisterDefaults"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

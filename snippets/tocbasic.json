@@ -5,7 +5,8 @@
 		"prefix":"Ifattoclist",
 		"body":[
 			"\\Ifattoclist{${1:extension}}{${2:then code}}{${3:else code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,431 +14,8 @@
 		"prefix":"addtotoclist",
 		"body":[
 			"\\addtotoclist{${1:extension}}"
-		]
-	},
-
-
-	"owneroftoc{}":{
-		"prefix":"owneroftoc",
-		"body":[
-			"\\owneroftoc{${1:arg}}"
-		]
-	},
-
-
-	"categoryoftoc{}":{
-		"prefix":"categoryoftoc",
-		"body":[
-			"\\categoryoftoc{${1:arg}}"
-		]
-	},
-
-
-	"AtAddToTocList{}":{
-		"prefix":"AtAddToTocList",
-		"body":[
-			"\\AtAddToTocList{${1:commands}}"
-		]
-	},
-
-
-	"removefromtoclist{}":{
-		"prefix":"removefromtoclist",
-		"body":[
-			"\\removefromtoclist{${1:extension}}"
-		]
-	},
-
-
-	"doforeachtocfile{}":{
-		"prefix":"doforeachtocfile",
-		"body":[
-			"\\doforeachtocfile{${1:commands}}"
-		]
-	},
-
-
-	"addtoeachtocfile{}":{
-		"prefix":"addtoeachtocfile",
-		"body":[
-			"\\addtoeachtocfile{${1:content}}"
-		]
-	},
-
-
-	"addcontentslinetoeachtocfile{}{}":{
-		"prefix":"addcontentslinetoeachtocfile",
-		"body":[
-			"\\addcontentslinetoeachtocfile{${1:level}}{${2:text}}"
-		]
-	},
-
-
-	"addxcontentsline{}{}{}":{
-		"prefix":"addxcontentsline",
-		"body":[
-			"\\addxcontentsline{${1:extension}}{${2:level}}{${3:text}}"
-		]
-	},
-
-
-	"nonumberline":{
-		"prefix":"nonumberline",
-		"body":[
-			"\\nonumberline"
-		]
-	},
-
-
-	"addxcontentslinetoeachtocfile{}{}":{
-		"prefix":"addxcontentslinetoeachtocfile",
-		"body":[
-			"\\addxcontentslinetoeachtocfile{${1:level}}{${2:text}}"
-		]
-	},
-
-
-	"BeforeStartingTOC{}":{
-		"prefix":"BeforeStartingTOC",
-		"body":[
-			"\\BeforeStartingTOC{${1:commands}}"
-		]
-	},
-
-
-	"AfterStartingTOC{}":{
-		"prefix":"AfterStartingTOC",
-		"body":[
-			"\\AfterStartingTOC{${1:commands}}"
-		]
-	},
-
-
-	"listoftoc{}":{
-		"prefix":"listoftoc",
-		"body":[
-			"\\listoftoc{${1:extension}}"
-		]
-	},
-
-
-	"listofname":{
-		"prefix":"listofname",
-		"body":[
-			"\\listofname"
-		]
-	},
-
-
-	"listofeachtoc":{
-		"prefix":"listofeachtoc",
-		"body":[
-			"\\listofeachtoc"
-		]
-	},
-
-
-	"BeforeTOCHead{}":{
-		"prefix":"BeforeTOCHead",
-		"body":[
-			"\\BeforeTOCHead{${1:commands}}"
-		]
-	},
-
-
-	"AfterTOCHead{}":{
-		"prefix":"AfterTOCHead",
-		"body":[
-			"\\AfterTOCHead{${1:commands}}"
-		]
-	},
-
-
-	"deftocheading{}{}":{
-		"prefix":"deftocheading",
-		"body":[
-			"\\deftocheading{${1:extension}}{${2:definition}}"
-		]
-	},
-
-
-	"setuptoc{}{}":{
-		"prefix":"setuptoc",
-		"body":[
-			"\\setuptoc{${1:extension}}{${2:feature list%keyvals}}"
-		]
-	},
-
-
-	"unsettoc{}{}":{
-		"prefix":"unsettoc",
-		"body":[
-			"\\unsettoc{${1:extension}}{${2:feature list%keyvals}}"
-		]
-	},
-
-
-	"Iftocfeature{}{}{}{}":{
-		"prefix":"Iftocfeature",
-		"body":[
-			"\\Iftocfeature{${1:extension}}{${2:feature%keyvals}}{${3:then code}}{${4:else code}}"
-		]
-	},
-
-
-	"tocbasicautomode":{
-		"prefix":"tocbasicautomode",
-		"body":[
-			"\\tocbasicautomode"
-		]
-	},
-
-
-	"DeclareNewTOC{}":{
-		"prefix":"DeclareNewTOC",
-		"body":[
-			"\\DeclareNewTOC{${1:extension}}"
-		]
-	},
-
-
-	"usetocbasicnumberline":{
-		"prefix":"usetocbasicnumberline",
-		"body":[
-			"\\usetocbasicnumberline"
-		]
-	},
-
-
-	"TOCEntryStyleInitCode{}{}":{
-		"prefix":"TOCEntryStyleInitCode",
-		"body":[
-			"\\TOCEntryStyleInitCode{${1:style}}{${2:initial code}}"
-		]
-	},
-
-
-	"TOCEntryStyleStartInitCode{}{}":{
-		"prefix":"TOCEntryStyleStartInitCode",
-		"body":[
-			"\\TOCEntryStyleStartInitCode{${1:style}}{${2:initial code}}"
-		]
-	},
-
-
-	"DefineTOCEntryBooleanOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryBooleanOption",
-		"body":[
-			"\\DefineTOCEntryBooleanOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryCommandOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryCommandOption",
-		"body":[
-			"\\DefineTOCEntryCommandOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryIfOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryIfOption",
-		"body":[
-			"\\DefineTOCEntryIfOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryLengthOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryLengthOption",
-		"body":[
-			"\\DefineTOCEntryLengthOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryListOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryListOption",
-		"body":[
-			"\\DefineTOCEntryListOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryNumberOption{}{}{}{}":{
-		"prefix":"DefineTOCEntryNumberOption",
-		"body":[
-			"\\DefineTOCEntryNumberOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
-	},
-
-
-	"DefineTOCEntryOption{}{}":{
-		"prefix":"DefineTOCEntryOption",
-		"body":[
-			"\\DefineTOCEntryOption{${1:option}}{${2:code}}"
-		]
-	},
-
-
-	"AddToDeclareTOCEntryStylePreCheckNeeds{}":{
-		"prefix":"AddToDeclareTOCEntryStylePreCheckNeeds",
-		"body":[
-			"\\AddToDeclareTOCEntryStylePreCheckNeeds{${1:code}}"
-		]
-	},
-
-
-	"PreToDeclareTOCEntryStylePreCheckNeeds{}":{
-		"prefix":"PreToDeclareTOCEntryStylePreCheckNeeds",
-		"body":[
-			"\\PreToDeclareTOCEntryStylePreCheckNeeds{${1:code}}"
-		]
-	},
-
-
-	"TOCEntryStyleNeedsCommandByOption{}{}{}{}{}":{
-		"prefix":"TOCEntryStyleNeedsCommandByOption",
-		"body":[
-			"\\TOCEntryStyleNeedsCommandByOption{${1:option}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
-		]
-	},
-
-
-	"DeclareTOCEntryStyle{}{}":{
-		"prefix":"DeclareTOCEntryStyle",
-		"body":[
-			"\\DeclareTOCEntryStyle{${1:style}}{${2:command code}}"
-		]
-	},
-
-
-	"CloneTOCEntryStyle{}{}":{
-		"prefix":"CloneTOCEntryStyle",
-		"body":[
-			"\\CloneTOCEntryStyle{${1:style}}{${2:new style}}"
-		]
-	},
-
-
-	"DeclareTOCStyleEntry{}{}":{
-		"prefix":"DeclareTOCStyleEntry",
-		"body":[
-			"\\DeclareTOCStyleEntry{${1:style}}{${2:entry level}}"
-		]
-	},
-
-
-	"DeclareTOCStyleEntries{}{}":{
-		"prefix":"DeclareTOCStyleEntries",
-		"body":[
-			"\\DeclareTOCStyleEntries{${1:style}}{${2:entry level}}"
-		]
-	},
-
-
-	"LastTOCLevelWasHigher":{
-		"prefix":"LastTOCLevelWasHigher",
-		"body":[
-			"\\LastTOCLevelWasHigher"
-		]
-	},
-
-
-	"LastTOCLevelWasSame":{
-		"prefix":"LastTOCLevelWasSame",
-		"body":[
-			"\\LastTOCLevelWasSame"
-		]
-	},
-
-
-	"LastTOCLevelWasLower":{
-		"prefix":"LastTOCLevelWasLower",
-		"body":[
-			"\\LastTOCLevelWasLower"
-		]
-	},
-
-
-	"TOCLineLeaderFill":{
-		"prefix":"TOCLineLeaderFill",
-		"body":[
-			"\\TOCLineLeaderFill"
-		]
-	},
-
-
-	"MakeMarkcase{}":{
-		"prefix":"MakeMarkcase",
-		"body":[
-			"\\MakeMarkcase{${1:text}}"
-		]
-	},
-
-
-	"parttocdepth":{
-		"prefix":"parttocdepth",
-		"body":[
-			"\\parttocdepth"
-		]
-	},
-
-
-	"sectiontocdepth":{
-		"prefix":"sectiontocdepth",
-		"body":[
-			"\\sectiontocdepth"
-		]
-	},
-
-
-	"subsectiontocdepth":{
-		"prefix":"subsectiontocdepth",
-		"body":[
-			"\\subsectiontocdepth"
-		]
-	},
-
-
-	"subsubsectiontocdepth":{
-		"prefix":"subsubsectiontocdepth",
-		"body":[
-			"\\subsubsectiontocdepth"
-		]
-	},
-
-
-	"paragraphtocdepth":{
-		"prefix":"paragraphtocdepth",
-		"body":[
-			"\\paragraphtocdepth"
-		]
-	},
-
-
-	"subparagraphtocdepth":{
-		"prefix":"subparagraphtocdepth",
-		"body":[
-			"\\subparagraphtocdepth"
-		]
-	},
-
-
-	"listoftoc*{}":{
-		"prefix":"*listoftoc",
-		"body":[
-			"\\listoftoc*{${1:extension}}"
-		]
-	},
-
-
-	"TOCEntryStyleInitCode*{}{}":{
-		"prefix":"*TOCEntryStyleInitCode",
-		"body":[
-			"\\TOCEntryStyleInitCode*{${1:style}}{${2:initial code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,7 +23,35 @@
 		"prefix":"addtotoclist",
 		"body":[
 			"\\addtotoclist[${2:owner}]{${1:extension}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"owneroftoc{}":{
+		"prefix":"owneroftoc",
+		"body":[
+			"\\owneroftoc{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"categoryoftoc{}":{
+		"prefix":"categoryoftoc",
+		"body":[
+			"\\categoryoftoc{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtAddToTocList{}":{
+		"prefix":"AtAddToTocList",
+		"body":[
+			"\\AtAddToTocList{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +59,17 @@
 		"prefix":"AtAddToTocList",
 		"body":[
 			"\\AtAddToTocList[${2:owner}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"removefromtoclist{}":{
+		"prefix":"removefromtoclist",
+		"body":[
+			"\\removefromtoclist{${1:extension}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +77,17 @@
 		"prefix":"removefromtoclist",
 		"body":[
 			"\\removefromtoclist[${2:owner}]{${1:extension}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"doforeachtocfile{}":{
+		"prefix":"doforeachtocfile",
+		"body":[
+			"\\doforeachtocfile{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +95,17 @@
 		"prefix":"doforeachtocfile",
 		"body":[
 			"\\doforeachtocfile[${2:owner}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtoeachtocfile{}":{
+		"prefix":"addtoeachtocfile",
+		"body":[
+			"\\addtoeachtocfile{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +113,17 @@
 		"prefix":"addtoeachtocfile",
 		"body":[
 			"\\addtoeachtocfile[${2:owner}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addcontentslinetoeachtocfile{}{}":{
+		"prefix":"addcontentslinetoeachtocfile",
+		"body":[
+			"\\addcontentslinetoeachtocfile{${1:level}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +131,17 @@
 		"prefix":"addcontentslinetoeachtocfile",
 		"body":[
 			"\\addcontentslinetoeachtocfile[${3:owner}]{${1:level}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addxcontentsline{}{}{}":{
+		"prefix":"addxcontentsline",
+		"body":[
+			"\\addxcontentsline{${1:extension}}{${2:level}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +149,26 @@
 		"prefix":"addxcontentsline",
 		"body":[
 			"\\addxcontentsline{${1:extension}}{${2:level}}[${4:section number}]{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nonumberline":{
+		"prefix":"nonumberline",
+		"body":[
+			"\\nonumberline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addxcontentslinetoeachtocfile{}{}":{
+		"prefix":"addxcontentslinetoeachtocfile",
+		"body":[
+			"\\addxcontentslinetoeachtocfile{${1:level}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +176,8 @@
 		"prefix":"addxcontentslinetoeachtocfile",
 		"body":[
 			"\\addxcontentslinetoeachtocfile{${1:level}}[${3:section number}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -509,7 +185,8 @@
 		"prefix":"addxcontentslinetoeachtocfile",
 		"body":[
 			"\\addxcontentslinetoeachtocfile[${3:owner}]{${1:level}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -517,7 +194,17 @@
 		"prefix":"addxcontentslinetoeachtocfile",
 		"body":[
 			"\\addxcontentslinetoeachtocfile[${3:owner}]{${1:level}}[${4:section number}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BeforeStartingTOC{}":{
+		"prefix":"BeforeStartingTOC",
+		"body":[
+			"\\BeforeStartingTOC{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +212,17 @@
 		"prefix":"BeforeStartingTOC",
 		"body":[
 			"\\BeforeStartingTOC[${2:extension}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AfterStartingTOC{}":{
+		"prefix":"AfterStartingTOC",
+		"body":[
+			"\\AfterStartingTOC{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +230,17 @@
 		"prefix":"AfterStartingTOC",
 		"body":[
 			"\\AfterStartingTOC[${2:extension}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listoftoc{}":{
+		"prefix":"listoftoc",
+		"body":[
+			"\\listoftoc{${1:extension}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +248,35 @@
 		"prefix":"listoftoc",
 		"body":[
 			"\\listoftoc[${2:list-of title}]{${1:extension}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listoftoc*{}":{
+		"prefix":"*listoftoc",
+		"body":[
+			"\\listoftoc*{${1:extension}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listofname":{
+		"prefix":"listofname",
+		"body":[
+			"\\listofname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofeachtoc":{
+		"prefix":"listofeachtoc",
+		"body":[
+			"\\listofeachtoc"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +284,17 @@
 		"prefix":"listofeachtoc",
 		"body":[
 			"\\listofeachtoc[${1:owner}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BeforeTOCHead{}":{
+		"prefix":"BeforeTOCHead",
+		"body":[
+			"\\BeforeTOCHead{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +302,17 @@
 		"prefix":"BeforeTOCHead",
 		"body":[
 			"\\BeforeTOCHead[${2:extension}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AfterTOCHead{}":{
+		"prefix":"AfterTOCHead",
+		"body":[
+			"\\AfterTOCHead{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +320,62 @@
 		"prefix":"AfterTOCHead",
 		"body":[
 			"\\AfterTOCHead[${2:extension}]{${1:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"deftocheading{}{}":{
+		"prefix":"deftocheading",
+		"body":[
+			"\\deftocheading{${1:extension}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setuptoc{}{}":{
+		"prefix":"setuptoc",
+		"body":[
+			"\\setuptoc{${1:extension}}{${2:feature list%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unsettoc{}{}":{
+		"prefix":"unsettoc",
+		"body":[
+			"\\unsettoc{${1:extension}}{${2:feature list%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Iftocfeature{}{}{}{}":{
+		"prefix":"Iftocfeature",
+		"body":[
+			"\\Iftocfeature{${1:extension}}{${2:feature%keyvals}}{${3:then code}}{${4:else code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocbasicautomode":{
+		"prefix":"tocbasicautomode",
+		"body":[
+			"\\tocbasicautomode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareNewTOC{}":{
+		"prefix":"DeclareNewTOC",
+		"body":[
+			"\\DeclareNewTOC{${1:extension}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +383,17 @@
 		"prefix":"DeclareNewTOC",
 		"body":[
 			"\\DeclareNewTOC[${2:options%keyvals}]{${1:extension}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usetocbasicnumberline":{
+		"prefix":"usetocbasicnumberline",
+		"body":[
+			"\\usetocbasicnumberline"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +401,44 @@
 		"prefix":"usetocbasicnumberline",
 		"body":[
 			"\\usetocbasicnumberline[${1:code}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TOCEntryStyleInitCode{}{}":{
+		"prefix":"TOCEntryStyleInitCode",
+		"body":[
+			"\\TOCEntryStyleInitCode{${1:style}}{${2:initial code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TOCEntryStyleInitCode*{}{}":{
+		"prefix":"*TOCEntryStyleInitCode",
+		"body":[
+			"\\TOCEntryStyleInitCode*{${1:style}}{${2:initial code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"TOCEntryStyleStartInitCode{}{}":{
+		"prefix":"TOCEntryStyleStartInitCode",
+		"body":[
+			"\\TOCEntryStyleStartInitCode{${1:style}}{${2:initial code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineTOCEntryBooleanOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryBooleanOption",
+		"body":[
+			"\\DefineTOCEntryBooleanOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +446,17 @@
 		"prefix":"DefineTOCEntryBooleanOption",
 		"body":[
 			"\\DefineTOCEntryBooleanOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryCommandOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryCommandOption",
+		"body":[
+			"\\DefineTOCEntryCommandOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +464,17 @@
 		"prefix":"DefineTOCEntryCommandOption",
 		"body":[
 			"\\DefineTOCEntryCommandOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryIfOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryIfOption",
+		"body":[
+			"\\DefineTOCEntryIfOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +482,17 @@
 		"prefix":"DefineTOCEntryIfOption",
 		"body":[
 			"\\DefineTOCEntryIfOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryLengthOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryLengthOption",
+		"body":[
+			"\\DefineTOCEntryLengthOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +500,17 @@
 		"prefix":"DefineTOCEntryLengthOption",
 		"body":[
 			"\\DefineTOCEntryLengthOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryListOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryListOption",
+		"body":[
+			"\\DefineTOCEntryListOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +518,17 @@
 		"prefix":"DefineTOCEntryListOption",
 		"body":[
 			"\\DefineTOCEntryListOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryNumberOption{}{}{}{}":{
+		"prefix":"DefineTOCEntryNumberOption",
+		"body":[
+			"\\DefineTOCEntryNumberOption{${1:option}}{${2:prefix}}{${3:postfix}}{${4:description}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -629,7 +536,17 @@
 		"prefix":"DefineTOCEntryNumberOption",
 		"body":[
 			"\\DefineTOCEntryNumberOption{${1:option}}[${5:default}]{${2:prefix}}{${3:postfix}}{${4:description}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DefineTOCEntryOption{}{}":{
+		"prefix":"DefineTOCEntryOption",
+		"body":[
+			"\\DefineTOCEntryOption{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +554,44 @@
 		"prefix":"DefineTOCEntryOption",
 		"body":[
 			"\\DefineTOCEntryOption{${1:option}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddToDeclareTOCEntryStylePreCheckNeeds{}":{
+		"prefix":"AddToDeclareTOCEntryStylePreCheckNeeds",
+		"body":[
+			"\\AddToDeclareTOCEntryStylePreCheckNeeds{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PreToDeclareTOCEntryStylePreCheckNeeds{}":{
+		"prefix":"PreToDeclareTOCEntryStylePreCheckNeeds",
+		"body":[
+			"\\PreToDeclareTOCEntryStylePreCheckNeeds{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TOCEntryStyleNeedsCommandByOption{}{}{}{}{}":{
+		"prefix":"TOCEntryStyleNeedsCommandByOption",
+		"body":[
+			"\\TOCEntryStyleNeedsCommandByOption{${1:option}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareTOCEntryStyle{}{}":{
+		"prefix":"DeclareTOCEntryStyle",
+		"body":[
+			"\\DeclareTOCEntryStyle{${1:style}}{${2:command code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -645,7 +599,26 @@
 		"prefix":"DeclareTOCEntryStyle",
 		"body":[
 			"\\DeclareTOCEntryStyle{${1:style}}[${3:initial code}]{${2:command code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CloneTOCEntryStyle{}{}":{
+		"prefix":"CloneTOCEntryStyle",
+		"body":[
+			"\\CloneTOCEntryStyle{${1:style}}{${2:new style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareTOCStyleEntry{}{}":{
+		"prefix":"DeclareTOCStyleEntry",
+		"body":[
+			"\\DeclareTOCStyleEntry{${1:style}}{${2:entry level}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +626,17 @@
 		"prefix":"DeclareTOCStyleEntry",
 		"body":[
 			"\\DeclareTOCStyleEntry[${3:option list%keyvals}]{${1:style}}{${2:entry level}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTOCStyleEntries{}{}":{
+		"prefix":"DeclareTOCStyleEntries",
+		"body":[
+			"\\DeclareTOCStyleEntries{${1:style}}{${2:entry level}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +644,44 @@
 		"prefix":"DeclareTOCStyleEntries",
 		"body":[
 			"\\DeclareTOCStyleEntries[${3:option list%keyvals}]{${1:style}}{${2:entry level}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LastTOCLevelWasHigher":{
+		"prefix":"LastTOCLevelWasHigher",
+		"body":[
+			"\\LastTOCLevelWasHigher"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastTOCLevelWasSame":{
+		"prefix":"LastTOCLevelWasSame",
+		"body":[
+			"\\LastTOCLevelWasSame"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastTOCLevelWasLower":{
+		"prefix":"LastTOCLevelWasLower",
+		"body":[
+			"\\LastTOCLevelWasLower"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TOCLineLeaderFill":{
+		"prefix":"TOCLineLeaderFill",
+		"body":[
+			"\\TOCLineLeaderFill"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,6 +689,70 @@
 		"prefix":"TOCLineLeaderFill",
 		"body":[
 			"\\TOCLineLeaderFill[${1:leader}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeMarkcase{}":{
+		"prefix":"MakeMarkcase",
+		"body":[
+			"\\MakeMarkcase{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parttocdepth":{
+		"prefix":"parttocdepth",
+		"body":[
+			"\\parttocdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectiontocdepth":{
+		"prefix":"sectiontocdepth",
+		"body":[
+			"\\sectiontocdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsectiontocdepth":{
+		"prefix":"subsectiontocdepth",
+		"body":[
+			"\\subsectiontocdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubsectiontocdepth":{
+		"prefix":"subsubsectiontocdepth",
+		"body":[
+			"\\subsubsectiontocdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paragraphtocdepth":{
+		"prefix":"paragraphtocdepth",
+		"body":[
+			"\\paragraphtocdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subparagraphtocdepth":{
+		"prefix":"subparagraphtocdepth",
+		"body":[
+			"\\subparagraphtocdepth"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

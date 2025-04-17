@@ -5,7 +5,8 @@
 		"prefix":"PDFcontainer",
 		"body":[
 			"\\PDFcontainer"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"savepicture",
 		"body":[
 			"\\savepicture{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,15 +23,8 @@
 		"prefix":"usepicture",
 		"body":[
 			"\\usepicture{${1:name}}"
-		]
-	},
-
-
-	"thepspicture":{
-		"prefix":"thepspicture",
-		"body":[
-			"\\thepspicture"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"usepicture",
 		"body":[
 			"\\usepicture[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thepspicture":{
+		"prefix":"thepspicture",
+		"body":[
+			"\\thepspicture"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,16 +52,18 @@
 			"\\begin{postscript}",
 				"\t$1",
 			"\\end{postscript}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"postscript":{
+	"postscript[]":{
 		"prefix":"postscript",
 		"body":[
 			"\\begin{postscript}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{postscript}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

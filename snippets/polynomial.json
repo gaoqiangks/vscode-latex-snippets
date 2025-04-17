@@ -5,23 +5,8 @@
 		"prefix":"polynomial",
 		"body":[
 			"\\polynomial{${1:coeff1,coeff2,...}}"
-		]
-	},
-
-
-	"polynomialfrac{}{}":{
-		"prefix":"polynomialfrac",
-		"body":[
-			"\\polynomialfrac{${1:numerator coeffs}}{${2:denominator coeffs}}"
-		]
-	},
-
-
-	"polynomialstyle{}":{
-		"prefix":"polynomialstyle",
-		"body":[
-			"\\polynomialstyle{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"polynomial",
 		"body":[
 			"\\polynomial[${2:options%keyvals}]{${1:coeff1,coeff2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"polynomialfrac{}{}":{
+		"prefix":"polynomialfrac",
+		"body":[
+			"\\polynomialfrac{${1:numerator coeffs}}{${2:denominator coeffs}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +32,16 @@
 		"prefix":"polynomialfrac",
 		"body":[
 			"\\polynomialfrac[${3:options%keyvals}]{${1:numerator coeffs}}{${2:denominator coeffs}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"polynomialstyle{}":{
+		"prefix":"polynomialstyle",
+		"body":[
+			"\\polynomialstyle{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"zlabel",
 		"body":[
 			"\\zlabel{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"zkvlabel",
 		"body":[
 			"\\zkvlabel{${1:keyvals}}{${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"zref",
 		"body":[
 			"\\zref{${1:label}}"
-		]
-	},
-
-
-	"zpageref{}":{
-		"prefix":"zpageref",
-		"body":[
-			"\\zpageref{${1:label}}"
-		]
-	},
-
-
-	"zrefused{}":{
-		"prefix":"zrefused",
-		"body":[
-			"\\zrefused{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"zref",
 		"body":[
 			"\\zref[${2:propname%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zpageref{}":{
+		"prefix":"zpageref",
+		"body":[
+			"\\zpageref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zrefused{}":{
+		"prefix":"zrefused",
+		"body":[
+			"\\zrefused{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

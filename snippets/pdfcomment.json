@@ -5,135 +5,8 @@
 		"prefix":"pdfcomment",
 		"body":[
 			"\\pdfcomment{${1:comment%text}}"
-		]
-	},
-
-
-	"pdfmargincomment{}":{
-		"prefix":"pdfmargincomment",
-		"body":[
-			"\\pdfmargincomment{${1:comment%text}}"
-		]
-	},
-
-
-	"textHT{}":{
-		"prefix":"textHT",
-		"body":[
-			"\\textHT{${1:text}}"
-		]
-	},
-
-
-	"textLF{}":{
-		"prefix":"textLF",
-		"body":[
-			"\\textLF{${1:text}}"
-		]
-	},
-
-
-	"textCR{}":{
-		"prefix":"textCR",
-		"body":[
-			"\\textCR{${1:text}}"
-		]
-	},
-
-
-	"pdfmarkupcomment{}{}":{
-		"prefix":"pdfmarkupcomment",
-		"body":[
-			"\\pdfmarkupcomment{${1:markup text%text}}{${2:comment%text}}"
-		]
-	},
-
-
-	"pdffreetextcomment{}":{
-		"prefix":"pdffreetextcomment",
-		"body":[
-			"\\pdffreetextcomment{${1:comment%text}}"
-		]
-	},
-
-
-	"pdfsquarecomment{}":{
-		"prefix":"pdfsquarecomment",
-		"body":[
-			"\\pdfsquarecomment{${1:comment%text}}"
-		]
-	},
-
-
-	"pdfcirclecomment{}":{
-		"prefix":"pdfcirclecomment",
-		"body":[
-			"\\pdfcirclecomment{${1:comment%text}}"
-		]
-	},
-
-
-	"pdflinecomment{}":{
-		"prefix":"pdflinecomment",
-		"body":[
-			"\\pdflinecomment{${1:comment%text}}"
-		]
-	},
-
-
-	"pdftooltip{}{}":{
-		"prefix":"pdftooltip",
-		"body":[
-			"\\pdftooltip{${1:object}}{${2:comment%text}}"
-		]
-	},
-
-
-	"pdfcommentsetup{}":{
-		"prefix":"pdfcommentsetup",
-		"body":[
-			"\\pdfcommentsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"listofpdfcomments":{
-		"prefix":"listofpdfcomments",
-		"body":[
-			"\\listofpdfcomments"
-		]
-	},
-
-
-	"setliststyle{}":{
-		"prefix":"setliststyle",
-		"body":[
-			"\\setliststyle{${1:name}}"
-		]
-	},
-
-
-	"defineliststyle{}{}":{
-		"prefix":"defineliststyle",
-		"body":[
-			"\\defineliststyle{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"defineavatar{}{}":{
-		"prefix":"defineavatar",
-		"body":[
-			"\\defineavatar{${1:name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"definestyle{}{}":{
-		"prefix":"definestyle",
-		"body":[
-			"\\definestyle{${1:name}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +14,17 @@
 		"prefix":"pdfcomment",
 		"body":[
 			"\\pdfcomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfmargincomment{}":{
+		"prefix":"pdfmargincomment",
+		"body":[
+			"\\pdfmargincomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +32,44 @@
 		"prefix":"pdfmargincomment",
 		"body":[
 			"\\pdfmargincomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textHT{}":{
+		"prefix":"textHT",
+		"body":[
+			"\\textHT{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLF{}":{
+		"prefix":"textLF",
+		"body":[
+			"\\textLF{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCR{}":{
+		"prefix":"textCR",
+		"body":[
+			"\\textCR{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfmarkupcomment{}{}":{
+		"prefix":"pdfmarkupcomment",
+		"body":[
+			"\\pdfmarkupcomment{${1:markup text%text}}{${2:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +77,17 @@
 		"prefix":"pdfmarkupcomment",
 		"body":[
 			"\\pdfmarkupcomment[${3:options%keyvals}]{${1:markup text%text}}{${2:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdffreetextcomment{}":{
+		"prefix":"pdffreetextcomment",
+		"body":[
+			"\\pdffreetextcomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +95,17 @@
 		"prefix":"pdffreetextcomment",
 		"body":[
 			"\\pdffreetextcomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfsquarecomment{}":{
+		"prefix":"pdfsquarecomment",
+		"body":[
+			"\\pdfsquarecomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +113,17 @@
 		"prefix":"pdfsquarecomment",
 		"body":[
 			"\\pdfsquarecomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfcirclecomment{}":{
+		"prefix":"pdfcirclecomment",
+		"body":[
+			"\\pdfcirclecomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +131,17 @@
 		"prefix":"pdfcirclecomment",
 		"body":[
 			"\\pdfcirclecomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdflinecomment{}":{
+		"prefix":"pdflinecomment",
+		"body":[
+			"\\pdflinecomment{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +149,17 @@
 		"prefix":"pdflinecomment",
 		"body":[
 			"\\pdflinecomment[${2:options%keyvals}]{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdftooltip{}{}":{
+		"prefix":"pdftooltip",
+		"body":[
+			"\\pdftooltip{${1:object}}{${2:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +167,26 @@
 		"prefix":"pdftooltip",
 		"body":[
 			"\\pdftooltip[${3:options%keyvals}]{${1:object}}{${2:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfcommentsetup{}":{
+		"prefix":"pdfcommentsetup",
+		"body":[
+			"\\pdfcommentsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofpdfcomments":{
+		"prefix":"listofpdfcomments",
+		"body":[
+			"\\listofpdfcomments"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +194,44 @@
 		"prefix":"listofpdfcomments",
 		"body":[
 			"\\listofpdfcomments[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setliststyle{}":{
+		"prefix":"setliststyle",
+		"body":[
+			"\\setliststyle{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defineliststyle{}{}":{
+		"prefix":"defineliststyle",
+		"body":[
+			"\\defineliststyle{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defineavatar{}{}":{
+		"prefix":"defineavatar",
+		"body":[
+			"\\defineavatar{${1:name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definestyle{}{}":{
+		"prefix":"definestyle",
+		"body":[
+			"\\definestyle{${1:name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -215,16 +241,18 @@
 			"\\begin{pdfsidelinecomment}",
 				"\t$1",
 			"\\end{pdfsidelinecomment}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pdfsidelinecomment":{
+	"pdfsidelinecomment[]":{
 		"prefix":"pdfsidelinecomment",
 		"body":[
 			"\\begin{pdfsidelinecomment}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{pdfsidelinecomment}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

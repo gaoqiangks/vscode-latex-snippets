@@ -5,23 +5,8 @@
 		"prefix":"MoveEqLeft",
 		"body":[
 			"\\MoveEqLeft"
-		]
-	},
-
-
-	"everybeforeautobreak{}":{
-		"prefix":"everybeforeautobreak",
-		"body":[
-			"\\everybeforeautobreak{${1:tokens}}"
-		]
-	},
-
-
-	"everyaftereautobreak{}":{
-		"prefix":"everyaftereautobreak",
-		"body":[
-			"\\everyaftereautobreak{${1:tokens}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"MoveEqLeft",
 		"body":[
 			"\\MoveEqLeft[${1:length%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"everybeforeautobreak{}":{
+		"prefix":"everybeforeautobreak",
+		"body":[
+			"\\everybeforeautobreak{${1:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"everyaftereautobreak{}":{
+		"prefix":"everyaftereautobreak",
+		"body":[
+			"\\everyaftereautobreak{${1:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -39,6 +43,7 @@
 			"\\begin{autobreak}",
 				"\t$1",
 			"\\end{autobreak}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

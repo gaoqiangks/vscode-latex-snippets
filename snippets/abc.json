@@ -5,47 +5,8 @@
 		"prefix":"abcinput",
 		"body":[
 			"\\abcinput{${1:file}}"
-		]
-	},
-
-
-	"abcwidth":{
-		"prefix":"abcwidth",
-		"body":[
-			"\\abcwidth"
-		]
-	},
-
-
-	"normalabcoutputfile":{
-		"prefix":"normalabcoutputfile",
-		"body":[
-			"\\normalabcoutputfile"
-		]
-	},
-
-
-	"normalmupoutputfile":{
-		"prefix":"normalmupoutputfile",
-		"body":[
-			"\\normalmupoutputfile"
-		]
-	},
-
-
-	"mupinput{}":{
-		"prefix":"mupinput",
-		"body":[
-			"\\mupinput{${1:file}}"
-		]
-	},
-
-
-	"mupwidth":{
-		"prefix":"mupwidth",
-		"body":[
-			"\\mupwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,44 @@
 		"prefix":"abcinput",
 		"body":[
 			"\\abcinput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"abcwidth":{
+		"prefix":"abcwidth",
+		"body":[
+			"\\abcwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalabcoutputfile":{
+		"prefix":"normalabcoutputfile",
+		"body":[
+			"\\normalabcoutputfile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalmupoutputfile":{
+		"prefix":"normalmupoutputfile",
+		"body":[
+			"\\normalmupoutputfile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mupinput{}":{
+		"prefix":"mupinput",
+		"body":[
+			"\\mupinput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"mupinput",
 		"body":[
 			"\\mupinput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mupwidth":{
+		"prefix":"mupwidth",
+		"body":[
+			"\\mupwidth"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,27 +79,19 @@
 			"\\begin{abc}",
 				"\t$1",
 			"\\end{abc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"mup":{
-		"prefix":"mup",
-		"body":[
-			"\\begin{mup}",
-				"\t$1",
-			"\\end{mup}"
-		]
-	},
-
-
-	"abc":{
+	"abc[]":{
 		"prefix":"abc",
 		"body":[
 			"\\begin{abc}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{abc}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,6 +101,18 @@
 			"\\begin{mup}",
 				"\t$1",
 			"\\end{mup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mup[]":{
+		"prefix":"mup",
+		"body":[
+			"\\begin{mup}",
+				"\t[${1:options%keyvals}]",
+			"\\end{mup}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

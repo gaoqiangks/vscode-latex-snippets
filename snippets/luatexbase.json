@@ -5,7 +5,8 @@
 		"prefix":"CatcodeTableIniTeX",
 		"body":[
 			"\\CatcodeTableIniTeX"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"CatcodeTableString",
 		"body":[
 			"\\CatcodeTableString"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"CatcodeTableLaTeX",
 		"body":[
 			"\\CatcodeTableLaTeX"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"CatcodeTableLaTeXAtLetter",
 		"body":[
 			"\\CatcodeTableLaTeXAtLetter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"CatcodeTableOther",
 		"body":[
 			"\\CatcodeTableOther"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"CatcodeTableExpl",
 		"body":[
 			"\\CatcodeTableExpl"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"SetCatcodeRange",
 		"body":[
 			"\\SetCatcodeRange{${1:start}}{${2:end}}{${3:catcode}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"EndCatcodeRegime",
 		"body":[
 			"\\EndCatcodeRegime"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"PushCatcodeTableNumStack",
 		"body":[
 			"\\PushCatcodeTableNumStack"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"PopCatcodeTableNumStack",
 		"body":[
 			"\\PopCatcodeTableNumStack"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"newluatexcatcodetable",
 		"body":[
 			"\\newluatexcatcodetable{${1:catcodetable%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"setcatcodetable",
 		"body":[
 			"\\setcatcodetable"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"setluatexcatcodetable",
 		"body":[
 			"\\setluatexcatcodetable"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,55 +122,8 @@
 		"prefix":"RequireLuaModule",
 		"body":[
 			"\\RequireLuaModule{${1:file}}"
-		]
-	},
-
-
-	"newluatexattribute{}":{
-		"prefix":"newluatexattribute",
-		"body":[
-			"\\newluatexattribute{${1:attribute}}"
-		]
-	},
-
-
-	"setluatexattribute{}{}":{
-		"prefix":"setluatexattribute",
-		"body":[
-			"\\setluatexattribute{${1:attribute}}{${2:value}}"
-		]
-	},
-
-
-	"unsetluatexattribute{}":{
-		"prefix":"unsetluatexattribute",
-		"body":[
-			"\\unsetluatexattribute{${1:attribute}}"
-		]
-	},
-
-
-	"luatexluaescapestring{}":{
-		"prefix":"luatexluaescapestring",
-		"body":[
-			"\\luatexluaescapestring{${1:TeX code}}"
-		]
-	},
-
-
-	"luatexlatelua{}":{
-		"prefix":"luatexlatelua",
-		"body":[
-			"\\luatexlatelua{${1:lua code}}"
-		]
-	},
-
-
-	"luatexscantextokens":{
-		"prefix":"luatexscantextokens",
-		"body":[
-			"\\luatexscantextokens"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +131,61 @@
 		"prefix":"RequireLuaModule",
 		"body":[
 			"\\RequireLuaModule{${1:file}}[${2:info}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newluatexattribute{}":{
+		"prefix":"newluatexattribute",
+		"body":[
+			"\\newluatexattribute{${1:attribute}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setluatexattribute{}{}":{
+		"prefix":"setluatexattribute",
+		"body":[
+			"\\setluatexattribute{${1:attribute}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unsetluatexattribute{}":{
+		"prefix":"unsetluatexattribute",
+		"body":[
+			"\\unsetluatexattribute{${1:attribute}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luatexluaescapestring{}":{
+		"prefix":"luatexluaescapestring",
+		"body":[
+			"\\luatexluaescapestring{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luatexlatelua{}":{
+		"prefix":"luatexlatelua",
+		"body":[
+			"\\luatexlatelua{${1:lua code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luatexscantextokens":{
+		"prefix":"luatexscantextokens",
+		"body":[
+			"\\luatexscantextokens"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"version",
 		"body":[
 			"\\version{${1:version}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"degreeprogramme",
 		"body":[
 			"\\degreeprogramme{${1:programme-name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"matrnumber",
 		"body":[
 			"\\matrnumber{${1:matriculation-number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"supervisor",
 		"body":[
 			"\\supervisor{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"cosupervisor",
 		"body":[
 			"\\cosupervisor{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"advisor",
 		"body":[
 			"\\advisor{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"coadvisor",
 		"body":[
 			"\\coadvisor{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"department",
 		"body":[
 			"\\department{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,55 +77,8 @@
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:name}}"
-		]
-	},
-
-
-	"external{}":{
-		"prefix":"external",
-		"body":[
-			"\\external{${1:name}}"
-		]
-	},
-
-
-	"location{}":{
-		"prefix":"location",
-		"body":[
-			"\\location{${1:name-of-town}}"
-		]
-	},
-
-
-	"authorshipDeclaration":{
-		"prefix":"authorshipDeclaration",
-		"body":[
-			"\\authorshipDeclaration"
-		]
-	},
-
-
-	"signatureBox{}":{
-		"prefix":"signatureBox",
-		"body":[
-			"\\signatureBox{${1:signature-name}}"
-		]
-	},
-
-
-	"summarybox{}{}":{
-		"prefix":"summarybox",
-		"body":[
-			"\\summarybox{${1:label text%text}}{${2:text}}"
-		]
-	},
-
-
-	"headingdot":{
-		"prefix":"headingdot",
-		"body":[
-			"\\headingdot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +86,35 @@
 		"prefix":"institute",
 		"body":[
 			"\\institute[${2:short-name}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"external{}":{
+		"prefix":"external",
+		"body":[
+			"\\external{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"location{}":{
+		"prefix":"location",
+		"body":[
+			"\\location{${1:name-of-town}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authorshipDeclaration":{
+		"prefix":"authorshipDeclaration",
+		"body":[
+			"\\authorshipDeclaration"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +122,17 @@
 		"prefix":"authorshipDeclaration",
 		"body":[
 			"\\authorshipDeclaration[${1:location}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"signatureBox{}":{
+		"prefix":"signatureBox",
+		"body":[
+			"\\signatureBox{${1:signature-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,57 +140,37 @@
 		"prefix":"signatureBox",
 		"body":[
 			"\\signatureBox[${2:width}]{${1:signature-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"acknowledgements":{
-		"prefix":"acknowledgements",
+	"summarybox{}{}":{
+		"prefix":"summarybox",
 		"body":[
-			"\\begin{acknowledgements}",
-				"\t$1",
-			"\\end{acknowledgements}"
-		]
+			"\\summarybox{${1:label text%text}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"resq":{
-		"prefix":"resq",
+	"headingdot":{
+		"prefix":"headingdot",
 		"body":[
-			"\\begin{resq}",
-				"\t$1",
-			"\\end{resq}"
-		]
+			"\\headingdot"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"hyp":{
-		"prefix":"hyp",
-		"body":[
-			"\\begin{hyp}",
-				"\t$1",
-			"\\end{hyp}"
-		]
-	},
-
-
-	"summary":{
-		"prefix":"summary",
-		"body":[
-			"\\begin{summary}",
-				"\t$1",
-			"\\end{summary}"
-		]
-	},
-
-
-	"abstract":{
+	"abstract[]":{
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-				"\t$1",
+				"\t[${1:language}]",
 			"\\end{abstract}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -201,7 +180,19 @@
 			"\\begin{acknowledgements}",
 				"\t$1",
 			"\\end{acknowledgements}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"acknowledgements[]":{
+		"prefix":"acknowledgements",
+		"body":[
+			"\\begin{acknowledgements}",
+				"\t[${1:language}]",
+			"\\end{acknowledgements}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -211,7 +202,19 @@
 			"\\begin{resq}",
 				"\t$1",
 			"\\end{resq}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resq[]":{
+		"prefix":"resq",
+		"body":[
+			"\\begin{resq}",
+				"\t[${1:heading%text}]",
+			"\\end{resq}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,6 +224,29 @@
 			"\\begin{hyp}",
 				"\t$1",
 			"\\end{hyp}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hyp[]":{
+		"prefix":"hyp",
+		"body":[
+			"\\begin{hyp}",
+				"\t[${1:heading%text}]",
+			"\\end{hyp}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"summary{}":{
+		"prefix":"summary",
+		"body":[
+			"\\begin{summary}",
+				"\t{${1:label text%text}}",
+			"\\end{summary}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

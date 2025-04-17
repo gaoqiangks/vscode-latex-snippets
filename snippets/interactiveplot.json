@@ -5,7 +5,8 @@
 		"prefix":"iplot",
 		"body":[
 			"\\iplot{${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"iplot",
 		"body":[
 			"\\iplot[${2:options%keyvals}]{${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -23,27 +25,19 @@
 			"\\begin{iplotdd}",
 				"\t$1",
 			"\\end{iplotdd}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"iplotddd":{
-		"prefix":"iplotddd",
-		"body":[
-			"\\begin{iplotddd}",
-				"\t$1",
-			"\\end{iplotddd}"
-		]
-	},
-
-
-	"iplotdd":{
+	"iplotdd[]":{
 		"prefix":"iplotdd",
 		"body":[
 			"\\begin{iplotdd}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{iplotdd}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,6 +47,18 @@
 			"\\begin{iplotddd}",
 				"\t$1",
 			"\\end{iplotddd}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iplotddd[]":{
+		"prefix":"iplotddd",
+		"body":[
+			"\\begin{iplotddd}",
+				"\t[${1:options%keyvals}]",
+			"\\end{iplotddd}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

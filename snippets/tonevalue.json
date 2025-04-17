@@ -5,111 +5,8 @@
 		"prefix":"untpoint",
 		"body":[
 			"\\untpoint{${1:tone value}}{${2:tone name}}"
-		]
-	},
-
-
-	"linkuntpoints{{}{}}{{}{}}":{
-		"prefix":"linkuntpoints",
-		"body":[
-			"\\linkuntpoints{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
-		]
-	},
-
-
-	"drawuntpoint{}{}{}{}{}{}{}{}":{
-		"prefix":"drawuntpoint",
-		"body":[
-			"\\drawuntpoint{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
-		]
-	},
-
-
-	"len":{
-		"prefix":"len",
-		"body":[
-			"\\len"
-		]
-	},
-
-
-	"sendiauToListStr{}":{
-		"prefix":"sendiauToListStr",
-		"body":[
-			"\\sendiauToListStr{${1:arg}}"
-		]
-	},
-
-
-	"sendiaulistStr":{
-		"prefix":"sendiaulistStr",
-		"body":[
-			"\\sendiaulistStr"
-		]
-	},
-
-
-	"sendiaulist":{
-		"prefix":"sendiaulist",
-		"body":[
-			"\\sendiaulist"
-		]
-	},
-
-
-	"thesumOfPitchHeights":{
-		"prefix":"thesumOfPitchHeights",
-		"body":[
-			"\\thesumOfPitchHeights"
-		]
-	},
-
-
-	"toneVisualisationFontCmd":{
-		"prefix":"toneVisualisationFontCmd",
-		"body":[
-			"\\toneVisualisationFontCmd"
-		]
-	},
-
-
-	"xend":{
-		"prefix":"xend",
-		"body":[
-			"\\xend"
-		]
-	},
-
-
-	"xjoinbycomma":{
-		"prefix":"xjoinbycomma",
-		"body":[
-			"\\xjoinbycomma"
-		]
-	},
-
-
-	"xstart":{
-		"prefix":"xstart",
-		"body":[
-			"\\xstart"
-		]
-	},
-
-
-	"yend":{
-		"prefix":"yend",
-		"body":[
-			"\\yend"
-		]
-	},
-
-
-	"ystart":{
-		"prefix":"ystart",
-		"body":[
-			"\\ystart"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +14,17 @@
 		"prefix":"untpoint",
 		"body":[
 			"\\untpoint[${3:options%keyvals}]{${1:tone value}}{${2:tone name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"linkuntpoints{{}{}}{{}{}}":{
+		"prefix":"linkuntpoints",
+		"body":[
+			"\\linkuntpoints{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"linkuntpoints",
 		"body":[
 			"\\linkuntpoints[${5:options}]{{${1:toneval1}}{${2:tonename1}}}{{${3:toneval2}}{${4:tonename2}}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawuntpoint{}{}{}{}{}{}{}{}":{
+		"prefix":"drawuntpoint",
+		"body":[
+			"\\drawuntpoint{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,107 @@
 		"prefix":"drawuntpoint",
 		"body":[
 			"\\drawuntpoint[${9:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}{${6:arg6}}{${7:arg7}}{${8:arg8}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"len":{
+		"prefix":"len",
+		"body":[
+			"\\len"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sendiauToListStr{}":{
+		"prefix":"sendiauToListStr",
+		"body":[
+			"\\sendiauToListStr{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sendiaulistStr":{
+		"prefix":"sendiaulistStr",
+		"body":[
+			"\\sendiaulistStr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sendiaulist":{
+		"prefix":"sendiaulist",
+		"body":[
+			"\\sendiaulist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesumOfPitchHeights":{
+		"prefix":"thesumOfPitchHeights",
+		"body":[
+			"\\thesumOfPitchHeights"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toneVisualisationFontCmd":{
+		"prefix":"toneVisualisationFontCmd",
+		"body":[
+			"\\toneVisualisationFontCmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xend":{
+		"prefix":"xend",
+		"body":[
+			"\\xend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xjoinbycomma":{
+		"prefix":"xjoinbycomma",
+		"body":[
+			"\\xjoinbycomma"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xstart":{
+		"prefix":"xstart",
+		"body":[
+			"\\xstart"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yend":{
+		"prefix":"yend",
+		"body":[
+			"\\yend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ystart":{
+		"prefix":"ystart",
+		"body":[
+			"\\ystart"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -143,16 +160,18 @@
 			"\\begin{untVisualisation}",
 				"\t$1",
 			"\\end{untVisualisation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"untVisualisation":{
+	"untVisualisation[]":{
 		"prefix":"untVisualisation",
 		"body":[
 			"\\begin{untVisualisation}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{untVisualisation}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

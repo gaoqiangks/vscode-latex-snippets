@@ -5,39 +5,8 @@
 		"prefix":"bubblesort",
 		"body":[
 			"\\bubblesort{${1:list}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"doublebubblesort{}{}{}{}":{
-		"prefix":"doublebubblesort",
-		"body":[
-			"\\doublebubblesort{${1:list1}}{${2:macro1%cmd}}{${3:list2}}{${4:macro2%cmd}}"
-		]
-	},
-
-
-	"bubblesortflag":{
-		"prefix":"bubblesortflag",
-		"body":[
-			"\\bubblesortflag"
-		]
-	},
-
-
-	"realSort{}{}":{
-		"prefix":"realSort",
-		"body":[
-			"\\realSort{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"alphSort{}{}":{
-		"prefix":"alphSort",
-		"body":[
-			"\\alphSort{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"bubblesort",
 		"body":[
 			"\\bubblesort[${3:comparator cmd}]{${1:list}}{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"doublebubblesort{}{}{}{}":{
+		"prefix":"doublebubblesort",
+		"body":[
+			"\\doublebubblesort{${1:list1}}{${2:macro1%cmd}}{${3:list2}}{${4:macro2%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +32,34 @@
 		"prefix":"doublebubblesort",
 		"body":[
 			"\\doublebubblesort[${5:comparator cmd}]{${1:list1}}{${2:macro1%cmd}}{${3:list2}}{${4:macro2%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bubblesortflag":{
+		"prefix":"bubblesortflag",
+		"body":[
+			"\\bubblesortflag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"realSort{}{}":{
+		"prefix":"realSort",
+		"body":[
+			"\\realSort{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alphSort{}{}":{
+		"prefix":"alphSort",
+		"body":[
+			"\\alphSort{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

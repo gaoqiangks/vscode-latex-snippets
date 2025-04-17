@@ -1,19 +1,21 @@
 {
 
 
-	"stackbin{}{}":{
-		"prefix":"stackbin",
-		"body":[
-			"\\stackbin{${1:above}}{${2:bin}}"
-		]
-	},
-
-
 	"stackrel[]{}{}":{
 		"prefix":"stackrel",
 		"body":[
 			"\\stackrel[${3:sub}]{${1:above}}{${2:rel}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stackbin{}{}":{
+		"prefix":"stackbin",
+		"body":[
+			"\\stackbin{${1:above}}{${2:bin}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +23,7 @@
 		"prefix":"stackbin",
 		"body":[
 			"\\stackbin[${3:sub}]{${1:above}}{${2:bin}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

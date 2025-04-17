@@ -5,271 +5,8 @@
 		"prefix":"BusinessCard",
 		"body":[
 			"\\BusinessCard{${1:front side%text}}"
-		]
-	},
-
-
-	"IndexCard{}":{
-		"prefix":"IndexCard",
-		"body":[
-			"\\IndexCard{${1:front side%text}}"
-		]
-	},
-
-
-	"FlashCard{}":{
-		"prefix":"FlashCard",
-		"body":[
-			"\\FlashCard{${1:front side%text}}"
-		]
-	},
-
-
-	"CurrentIC":{
-		"prefix":"CurrentIC",
-		"body":[
-			"\\CurrentIC"
-		]
-	},
-
-
-	"CurrentFC":{
-		"prefix":"CurrentFC",
-		"body":[
-			"\\CurrentFC"
-		]
-	},
-
-
-	"TotalIC":{
-		"prefix":"TotalIC",
-		"body":[
-			"\\TotalIC"
-		]
-	},
-
-
-	"TotalFC":{
-		"prefix":"TotalFC",
-		"body":[
-			"\\TotalFC"
-		]
-	},
-
-
-	"MakeBC":{
-		"prefix":"MakeBC",
-		"body":[
-			"\\MakeBC"
-		]
-	},
-
-
-	"MakeIC":{
-		"prefix":"MakeIC",
-		"body":[
-			"\\MakeIC"
-		]
-	},
-
-
-	"MakeFC":{
-		"prefix":"MakeFC",
-		"body":[
-			"\\MakeFC"
-		]
-	},
-
-
-	"Transverse":{
-		"prefix":"Transverse",
-		"body":[
-			"\\Transverse"
-		]
-	},
-
-
-	"NoTransverse":{
-		"prefix":"NoTransverse",
-		"body":[
-			"\\NoTransverse"
-		]
-	},
-
-
-	"BCdim{}{}":{
-		"prefix":"BCdim",
-		"body":[
-			"\\BCdim{${1:h-size}}{${2:v-size}}"
-		]
-	},
-
-
-	"ICdim{}{}":{
-		"prefix":"ICdim",
-		"body":[
-			"\\ICdim{${1:h-size}}{${2:v-size}}"
-		]
-	},
-
-
-	"FCdim{}{}":{
-		"prefix":"FCdim",
-		"body":[
-			"\\FCdim{${1:h-size}}{${2:v-size}}"
-		]
-	},
-
-
-	"CardGap{}{}":{
-		"prefix":"CardGap",
-		"body":[
-			"\\CardGap{${1:h-gap}}{${2:v-gap}}"
-		]
-	},
-
-
-	"AutoGapInner":{
-		"prefix":"AutoGapInner",
-		"body":[
-			"\\AutoGapInner"
-		]
-	},
-
-
-	"AutoGapTotal":{
-		"prefix":"AutoGapTotal",
-		"body":[
-			"\\AutoGapTotal"
-		]
-	},
-
-
-	"NoAutoGap":{
-		"prefix":"NoAutoGap",
-		"body":[
-			"\\NoAutoGap"
-		]
-	},
-
-
-	"CropCrosses":{
-		"prefix":"CropCrosses",
-		"body":[
-			"\\CropCrosses"
-		]
-	},
-
-
-	"CropSegments":{
-		"prefix":"CropSegments",
-		"body":[
-			"\\CropSegments"
-		]
-	},
-
-
-	"CropLines":{
-		"prefix":"CropLines",
-		"body":[
-			"\\CropLines"
-		]
-	},
-
-
-	"CropDots":{
-		"prefix":"CropDots",
-		"body":[
-			"\\CropDots"
-		]
-	},
-
-
-	"NoCropMarks":{
-		"prefix":"NoCropMarks",
-		"body":[
-			"\\NoCropMarks"
-		]
-	},
-
-
-	"SegmentLength{}":{
-		"prefix":"SegmentLength",
-		"body":[
-			"\\SegmentLength{${1:length}}"
-		]
-	},
-
-
-	"LineThickness{}":{
-		"prefix":"LineThickness",
-		"body":[
-			"\\LineThickness{${1:thickness}}"
-		]
-	},
-
-
-	"DotSize{}":{
-		"prefix":"DotSize",
-		"body":[
-			"\\DotSize{${1:size}}"
-		]
-	},
-
-
-	"CropColor{}":{
-		"prefix":"CropColor",
-		"body":[
-			"\\CropColor{${1:color}}"
-		]
-	},
-
-
-	"MakeBC*":{
-		"prefix":"*MakeBC",
-		"body":[
-			"\\MakeBC*"
-		]
-	},
-
-
-	"MakeBC*[]":{
-		"prefix":"*MakeBC",
-		"body":[
-			"\\MakeBC*[${1:options%keyvals}]"
-		]
-	},
-
-
-	"MakeIC*":{
-		"prefix":"*MakeIC",
-		"body":[
-			"\\MakeIC*"
-		]
-	},
-
-
-	"MakeIC*[]":{
-		"prefix":"*MakeIC",
-		"body":[
-			"\\MakeIC*[${1:options%keyvals}]"
-		]
-	},
-
-
-	"MakeFC*":{
-		"prefix":"*MakeFC",
-		"body":[
-			"\\MakeFC*"
-		]
-	},
-
-
-	"MakeFC*[]":{
-		"prefix":"*MakeFC",
-		"body":[
-			"\\MakeFC*[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +14,17 @@
 		"prefix":"BusinessCard",
 		"body":[
 			"\\BusinessCard{${1:front side%text}}[${2:back side%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IndexCard{}":{
+		"prefix":"IndexCard",
+		"body":[
+			"\\IndexCard{${1:front side%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +32,17 @@
 		"prefix":"IndexCard",
 		"body":[
 			"\\IndexCard{${1:front side%text}}[${2:back side%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FlashCard{}":{
+		"prefix":"FlashCard",
+		"body":[
+			"\\FlashCard{${1:front side%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +50,53 @@
 		"prefix":"FlashCard",
 		"body":[
 			"\\FlashCard{${1:front side%text}}[${2:back side%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CurrentIC":{
+		"prefix":"CurrentIC",
+		"body":[
+			"\\CurrentIC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurrentFC":{
+		"prefix":"CurrentFC",
+		"body":[
+			"\\CurrentFC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalIC":{
+		"prefix":"TotalIC",
+		"body":[
+			"\\TotalIC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalFC":{
+		"prefix":"TotalFC",
+		"body":[
+			"\\TotalFC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeBC":{
+		"prefix":"MakeBC",
+		"body":[
+			"\\MakeBC"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +104,35 @@
 		"prefix":"MakeBC",
 		"body":[
 			"\\MakeBC[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeBC*":{
+		"prefix":"*MakeBC",
+		"body":[
+			"\\MakeBC*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MakeBC*[]":{
+		"prefix":"*MakeBC",
+		"body":[
+			"\\MakeBC*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MakeIC":{
+		"prefix":"MakeIC",
+		"body":[
+			"\\MakeIC"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +140,35 @@
 		"prefix":"MakeIC",
 		"body":[
 			"\\MakeIC[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeIC*":{
+		"prefix":"*MakeIC",
+		"body":[
+			"\\MakeIC*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MakeIC*[]":{
+		"prefix":"*MakeIC",
+		"body":[
+			"\\MakeIC*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MakeFC":{
+		"prefix":"MakeFC",
+		"body":[
+			"\\MakeFC"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,6 +176,187 @@
 		"prefix":"MakeFC",
 		"body":[
 			"\\MakeFC[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MakeFC*":{
+		"prefix":"*MakeFC",
+		"body":[
+			"\\MakeFC*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MakeFC*[]":{
+		"prefix":"*MakeFC",
+		"body":[
+			"\\MakeFC*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Transverse":{
+		"prefix":"Transverse",
+		"body":[
+			"\\Transverse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NoTransverse":{
+		"prefix":"NoTransverse",
+		"body":[
+			"\\NoTransverse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BCdim{}{}":{
+		"prefix":"BCdim",
+		"body":[
+			"\\BCdim{${1:h-size}}{${2:v-size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ICdim{}{}":{
+		"prefix":"ICdim",
+		"body":[
+			"\\ICdim{${1:h-size}}{${2:v-size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FCdim{}{}":{
+		"prefix":"FCdim",
+		"body":[
+			"\\FCdim{${1:h-size}}{${2:v-size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CardGap{}{}":{
+		"prefix":"CardGap",
+		"body":[
+			"\\CardGap{${1:h-gap}}{${2:v-gap}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AutoGapInner":{
+		"prefix":"AutoGapInner",
+		"body":[
+			"\\AutoGapInner"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AutoGapTotal":{
+		"prefix":"AutoGapTotal",
+		"body":[
+			"\\AutoGapTotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NoAutoGap":{
+		"prefix":"NoAutoGap",
+		"body":[
+			"\\NoAutoGap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CropCrosses":{
+		"prefix":"CropCrosses",
+		"body":[
+			"\\CropCrosses"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CropSegments":{
+		"prefix":"CropSegments",
+		"body":[
+			"\\CropSegments"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CropLines":{
+		"prefix":"CropLines",
+		"body":[
+			"\\CropLines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CropDots":{
+		"prefix":"CropDots",
+		"body":[
+			"\\CropDots"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NoCropMarks":{
+		"prefix":"NoCropMarks",
+		"body":[
+			"\\NoCropMarks"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SegmentLength{}":{
+		"prefix":"SegmentLength",
+		"body":[
+			"\\SegmentLength{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LineThickness{}":{
+		"prefix":"LineThickness",
+		"body":[
+			"\\LineThickness{${1:thickness}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DotSize{}":{
+		"prefix":"DotSize",
+		"body":[
+			"\\DotSize{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CropColor{}":{
+		"prefix":"CropColor",
+		"body":[
+			"\\CropColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

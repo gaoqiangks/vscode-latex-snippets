@@ -5,7 +5,8 @@
 		"prefix":"authorandname",
 		"body":[
 			"\\authorandname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"contentheight",
 		"body":[
 			"\\contentheight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"contentwidth",
 		"body":[
 			"\\contentwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"footer",
 		"body":[
 			"\\footer{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"footergraphics",
 		"body":[
 			"\\footergraphics{${1:graphics code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,79 +50,8 @@
 		"prefix":"footerhsep",
 		"body":[
 			"\\footerhsep"
-		]
-	},
-
-
-	"footerqrcode{}":{
-		"prefix":"footerqrcode",
-		"body":[
-			"\\footerqrcode{${1:URL}}"
-		]
-	},
-
-
-	"inst{}":{
-		"prefix":"inst",
-		"body":[
-			"\\inst{${1:arg}}"
-		]
-	},
-
-
-	"institute{}":{
-		"prefix":"institute",
-		"body":[
-			"\\institute{${1:institute%text}}"
-		]
-	},
-
-
-	"raggedfooter":{
-		"prefix":"raggedfooter",
-		"body":[
-			"\\raggedfooter"
-		]
-	},
-
-
-	"raggedtitle":{
-		"prefix":"raggedtitle",
-		"body":[
-			"\\raggedtitle"
-		]
-	},
-
-
-	"titlegraphic{}":{
-		"prefix":"titlegraphic",
-		"body":[
-			"\\titlegraphic{${1:graphics code}}"
-		]
-	},
-
-
-	"BFHarraystretch":{
-		"prefix":"BFHarraystretch",
-		"body":[
-			"\\BFHarraystretch"
-		]
-	},
-
-
-	"BFHarrayrulewidth":{
-		"prefix":"BFHarrayrulewidth",
-		"body":[
-			"\\BFHarrayrulewidth"
-		]
-	},
-
-
-	"setupBfhTabular":{
-		"prefix":"setupBfhTabular",
-		"body":[
-			"\\setupBfhTabular"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,36 +59,121 @@
 		"prefix":"*footerqrcode",
 		"body":[
 			"\\footerqrcode*{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"bfhTabular":{
+	"footerqrcode{}":{
+		"prefix":"footerqrcode",
+		"body":[
+			"\\footerqrcode{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inst{}":{
+		"prefix":"inst",
+		"body":[
+			"\\inst{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"institute{}":{
+		"prefix":"institute",
+		"body":[
+			"\\institute{${1:institute%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"raggedfooter":{
+		"prefix":"raggedfooter",
+		"body":[
+			"\\raggedfooter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"raggedtitle":{
+		"prefix":"raggedtitle",
+		"body":[
+			"\\raggedtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlegraphic{}":{
+		"prefix":"titlegraphic",
+		"body":[
+			"\\titlegraphic{${1:graphics code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BFHarraystretch":{
+		"prefix":"BFHarraystretch",
+		"body":[
+			"\\BFHarraystretch"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BFHarrayrulewidth":{
+		"prefix":"BFHarrayrulewidth",
+		"body":[
+			"\\BFHarrayrulewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setupBfhTabular":{
+		"prefix":"setupBfhTabular",
+		"body":[
+			"\\setupBfhTabular"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bfhTabular{}":{
 		"prefix":"bfhTabular",
 		"body":[
 			"\\begin{bfhTabular}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{bfhTabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bfhTblr":{
+	"bfhTabular[]{}":{
+		"prefix":"bfhTabular",
+		"body":[
+			"\\begin{bfhTabular}",
+				"\t[${2:pos}]{${1:preamble}}",
+			"\\end{bfhTabular}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bfhTblr{}":{
 		"prefix":"bfhTblr",
 		"body":[
 			"\\begin{bfhTblr}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{bfhTblr}"
-		]
-	},
-
-
-	"bfhTabular":{
-		"prefix":"bfhTabular",
-		"body":[
-			"\\begin{bfhTabular}",
-				"\t$1",
-			"\\end{bfhTabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

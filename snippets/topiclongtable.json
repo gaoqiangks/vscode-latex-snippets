@@ -5,7 +5,8 @@
 		"prefix":"endfirstfoot",
 		"body":[
 			"\\endfirstfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"endlastfoot",
 		"body":[
 			"\\endlastfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"endfirsthead",
 		"body":[
 			"\\endfirsthead"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"endfoot",
 		"body":[
 			"\\endfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"endhead",
 		"body":[
 			"\\endhead"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,39 +50,8 @@
 		"prefix":"Topic",
 		"body":[
 			"\\Topic"
-		]
-	},
-
-
-	"TopicLine":{
-		"prefix":"TopicLine",
-		"body":[
-			"\\TopicLine"
-		]
-	},
-
-
-	"TopicSetContinuationCode{}":{
-		"prefix":"TopicSetContinuationCode",
-		"body":[
-			"\\TopicSetContinuationCode{${1:code}}"
-		]
-	},
-
-
-	"TopicSetVPos{}":{
-		"prefix":"TopicSetVPos",
-		"body":[
-			"\\TopicSetVPos{${1:vpos%keyvals}}"
-		]
-	},
-
-
-	"TopicSetWidth{}":{
-		"prefix":"TopicSetWidth",
-		"body":[
-			"\\TopicSetWidth{${1:width spec%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,16 +59,54 @@
 		"prefix":"Topic",
 		"body":[
 			"\\Topic[${1:content}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"topiclongtable":{
+	"TopicLine":{
+		"prefix":"TopicLine",
+		"body":[
+			"\\TopicLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TopicSetContinuationCode{}":{
+		"prefix":"TopicSetContinuationCode",
+		"body":[
+			"\\TopicSetContinuationCode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TopicSetVPos{}":{
+		"prefix":"TopicSetVPos",
+		"body":[
+			"\\TopicSetVPos{${1:vpos%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TopicSetWidth{}":{
+		"prefix":"TopicSetWidth",
+		"body":[
+			"\\TopicSetWidth{${1:width spec%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topiclongtable{}":{
 		"prefix":"topiclongtable",
 		"body":[
 			"\\begin{topiclongtable}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{topiclongtable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

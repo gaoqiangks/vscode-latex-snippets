@@ -5,191 +5,8 @@
 		"prefix":"crefthe",
 		"body":[
 			"\\crefthe{${1:labellist}}"
-		]
-	},
-
-
-	"Crefthe{}":{
-		"prefix":"Crefthe",
-		"body":[
-			"\\Crefthe{${1:labellist}}"
-		]
-	},
-
-
-	"namecrefthe{}":{
-		"prefix":"namecrefthe",
-		"body":[
-			"\\namecrefthe{${1:labellist}}"
-		]
-	},
-
-
-	"nameCrefthe{}":{
-		"prefix":"nameCrefthe",
-		"body":[
-			"\\nameCrefthe{${1:labellist}}"
-		]
-	},
-
-
-	"namecrefsthe{}":{
-		"prefix":"namecrefsthe",
-		"body":[
-			"\\namecrefsthe{${1:labellist}}"
-		]
-	},
-
-
-	"nameCrefsthe{}":{
-		"prefix":"nameCrefsthe",
-		"body":[
-			"\\nameCrefsthe{${1:labellist}}"
-		]
-	},
-
-
-	"cpagerefthe{}":{
-		"prefix":"cpagerefthe",
-		"body":[
-			"\\cpagerefthe{${1:labellist}}"
-		]
-	},
-
-
-	"Cpagerefthe{}":{
-		"prefix":"Cpagerefthe",
-		"body":[
-			"\\Cpagerefthe{${1:labellist}}"
-		]
-	},
-
-
-	"crefthemark{}":{
-		"prefix":"crefthemark",
-		"body":[
-			"\\crefthemark{${1:text}}"
-		]
-	},
-
-
-	"crefthename{}{}{}":{
-		"prefix":"crefthename",
-		"body":[
-			"\\crefthename{${1:type}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"Crefthename{}{}{}":{
-		"prefix":"Crefthename",
-		"body":[
-			"\\Crefthename{${1:type}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"crefthevariantname{}{}":{
-		"prefix":"crefthevariantname",
-		"body":[
-			"\\crefthevariantname{${1:type}}{${2:settings}}"
-		]
-	},
-
-
-	"Crefthevariantname{}{}":{
-		"prefix":"Crefthevariantname",
-		"body":[
-			"\\Crefthevariantname{${1:type}}{${2:settings}}"
-		]
-	},
-
-
-	"setcrefname{}{}":{
-		"prefix":"setcrefname",
-		"body":[
-			"\\setcrefname{${1:type}}{${2:settings}}"
-		]
-	},
-
-
-	"setCrefname{}{}":{
-		"prefix":"setCrefname",
-		"body":[
-			"\\setCrefname{${1:type}}{${2:settings}}"
-		]
-	},
-
-
-	"crefthepatchname{}":{
-		"prefix":"crefthepatchname",
-		"body":[
-			"\\crefthepatchname{${1:counters}}"
-		]
-	},
-
-
-	"crefthe*{}":{
-		"prefix":"*crefthe",
-		"body":[
-			"\\crefthe*{${1:labellist}}"
-		]
-	},
-
-
-	"crefthe*[]{}":{
-		"prefix":"*crefthe",
-		"body":[
-			"\\crefthe*[${2:prep}]{${1:labellist}}"
-		]
-	},
-
-
-	"Crefthe*{}":{
-		"prefix":"*Crefthe",
-		"body":[
-			"\\Crefthe*{${1:labellist}}"
-		]
-	},
-
-
-	"Crefthe*[]{}":{
-		"prefix":"*Crefthe",
-		"body":[
-			"\\Crefthe*[${2:prep}]{${1:labellist}}"
-		]
-	},
-
-
-	"cref*[]{}":{
-		"prefix":"*cref",
-		"body":[
-			"\\cref*[${2:prep}]{${1:labellist}}"
-		]
-	},
-
-
-	"Cref*[]{}":{
-		"prefix":"*Cref",
-		"body":[
-			"\\Cref*[${2:prep}]{${1:labellist}}"
-		]
-	},
-
-
-	"cref*[]{}":{
-		"prefix":"*cref",
-		"body":[
-			"\\cref*[${2:prep}]{${1:labellist}}"
-		]
-	},
-
-
-	"Cref*[]{}":{
-		"prefix":"*Cref",
-		"body":[
-			"\\Cref*[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +14,35 @@
 		"prefix":"crefthe",
 		"body":[
 			"\\crefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"crefthe*{}":{
+		"prefix":"*crefthe",
+		"body":[
+			"\\crefthe*{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"crefthe*[]{}":{
+		"prefix":"*crefthe",
+		"body":[
+			"\\crefthe*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Crefthe{}":{
+		"prefix":"Crefthe",
+		"body":[
+			"\\Crefthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +50,35 @@
 		"prefix":"Crefthe",
 		"body":[
 			"\\Crefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Crefthe*{}":{
+		"prefix":"*Crefthe",
+		"body":[
+			"\\Crefthe*{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Crefthe*[]{}":{
+		"prefix":"*Crefthe",
+		"body":[
+			"\\Crefthe*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"namecrefthe{}":{
+		"prefix":"namecrefthe",
+		"body":[
+			"\\namecrefthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +86,17 @@
 		"prefix":"namecrefthe",
 		"body":[
 			"\\namecrefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nameCrefthe{}":{
+		"prefix":"nameCrefthe",
+		"body":[
+			"\\nameCrefthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +104,17 @@
 		"prefix":"nameCrefthe",
 		"body":[
 			"\\nameCrefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"namecrefsthe{}":{
+		"prefix":"namecrefsthe",
+		"body":[
+			"\\namecrefsthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +122,17 @@
 		"prefix":"namecrefsthe",
 		"body":[
 			"\\namecrefsthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nameCrefsthe{}":{
+		"prefix":"nameCrefsthe",
+		"body":[
+			"\\nameCrefsthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +140,17 @@
 		"prefix":"nameCrefsthe",
 		"body":[
 			"\\nameCrefsthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cpagerefthe{}":{
+		"prefix":"cpagerefthe",
+		"body":[
+			"\\cpagerefthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +158,17 @@
 		"prefix":"cpagerefthe",
 		"body":[
 			"\\cpagerefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cpagerefthe{}":{
+		"prefix":"Cpagerefthe",
+		"body":[
+			"\\Cpagerefthe{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +176,26 @@
 		"prefix":"Cpagerefthe",
 		"body":[
 			"\\Cpagerefthe[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"crefthemark{}":{
+		"prefix":"crefthemark",
+		"body":[
+			"\\crefthemark{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"crefthename{}{}{}":{
+		"prefix":"crefthename",
+		"body":[
+			"\\crefthename{${1:type}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +203,17 @@
 		"prefix":"crefthename",
 		"body":[
 			"\\crefthename{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Crefthename{}{}{}":{
+		"prefix":"Crefthename",
+		"body":[
+			"\\Crefthename{${1:type}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +221,53 @@
 		"prefix":"Crefthename",
 		"body":[
 			"\\Crefthename{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"crefthevariantname{}{}":{
+		"prefix":"crefthevariantname",
+		"body":[
+			"\\crefthevariantname{${1:type}}{${2:settings}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Crefthevariantname{}{}":{
+		"prefix":"Crefthevariantname",
+		"body":[
+			"\\Crefthevariantname{${1:type}}{${2:settings}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setcrefname{}{}":{
+		"prefix":"setcrefname",
+		"body":[
+			"\\setcrefname{${1:type}}{${2:settings}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setCrefname{}{}":{
+		"prefix":"setCrefname",
+		"body":[
+			"\\setCrefname{${1:type}}{${2:settings}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"crefthepatchname{}":{
+		"prefix":"crefthepatchname",
+		"body":[
+			"\\crefthepatchname{${1:counters}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +275,17 @@
 		"prefix":"cref",
 		"body":[
 			"\\cref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cref*[]{}":{
+		"prefix":"*cref",
+		"body":[
+			"\\cref*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -285,7 +293,17 @@
 		"prefix":"Cref",
 		"body":[
 			"\\Cref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cref*[]{}":{
+		"prefix":"*Cref",
+		"body":[
+			"\\Cref*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -293,7 +311,8 @@
 		"prefix":"namecref",
 		"body":[
 			"\\namecref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -301,7 +320,8 @@
 		"prefix":"nameCref",
 		"body":[
 			"\\nameCref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +329,8 @@
 		"prefix":"namecrefs",
 		"body":[
 			"\\namecrefs[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -317,7 +338,8 @@
 		"prefix":"nameCrefs",
 		"body":[
 			"\\nameCrefs[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -325,7 +347,8 @@
 		"prefix":"cpageref",
 		"body":[
 			"\\cpageref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +356,8 @@
 		"prefix":"Cpageref",
 		"body":[
 			"\\Cpageref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +365,8 @@
 		"prefix":"crefname",
 		"body":[
 			"\\crefname{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -349,7 +374,8 @@
 		"prefix":"Crefname",
 		"body":[
 			"\\Crefname{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -357,7 +383,17 @@
 		"prefix":"cref",
 		"body":[
 			"\\cref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cref*[]{}":{
+		"prefix":"*cref",
+		"body":[
+			"\\cref*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -365,7 +401,17 @@
 		"prefix":"Cref",
 		"body":[
 			"\\Cref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cref*[]{}":{
+		"prefix":"*Cref",
+		"body":[
+			"\\Cref*[${2:prep}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -373,7 +419,8 @@
 		"prefix":"namecref",
 		"body":[
 			"\\namecref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -381,7 +428,8 @@
 		"prefix":"nameCref",
 		"body":[
 			"\\nameCref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -389,7 +437,8 @@
 		"prefix":"namecrefs",
 		"body":[
 			"\\namecrefs[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -397,7 +446,8 @@
 		"prefix":"nameCrefs",
 		"body":[
 			"\\nameCrefs[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +455,8 @@
 		"prefix":"cpageref",
 		"body":[
 			"\\cpageref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -413,7 +464,8 @@
 		"prefix":"Cpageref",
 		"body":[
 			"\\Cpageref[${2:prep}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -421,7 +473,8 @@
 		"prefix":"crefname",
 		"body":[
 			"\\crefname{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,6 +482,7 @@
 		"prefix":"Crefname",
 		"body":[
 			"\\Crefname{${1:type}}[${4:prep1}]{${2:singular}}[${5:prep2}]{${3:plural}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

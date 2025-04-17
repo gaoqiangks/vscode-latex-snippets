@@ -5,7 +5,8 @@
 		"prefix":"ding",
 		"body":[
 			"\\ding{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"dingfill",
 		"body":[
 			"\\dingfill{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"dingline",
 		"body":[
 			"\\dingline{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Pifont",
 		"body":[
 			"\\Pifont{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Pisymbol",
 		"body":[
 			"\\Pisymbol{${1:family}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"Pifill",
 		"body":[
 			"\\Pifill{${1:family}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,46 +59,51 @@
 		"prefix":"Piline",
 		"body":[
 			"\\Piline{${1:family}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dinglist":{
+	"dinglist{}":{
 		"prefix":"dinglist",
 		"body":[
 			"\\begin{dinglist}",
-				"\t$1",
+				"\t{${1:number}}",
 			"\\end{dinglist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dingautolist":{
+	"dingautolist{}":{
 		"prefix":"dingautolist",
 		"body":[
 			"\\begin{dingautolist}",
-				"\t$1",
+				"\t{${1:number}}",
 			"\\end{dingautolist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Pilist":{
+	"Pilist{}{}":{
 		"prefix":"Pilist",
 		"body":[
 			"\\begin{Pilist}",
-				"\t$1",
+				"\t{${1:family}}{${2:number}}",
 			"\\end{Pilist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Piautolist":{
+	"Piautolist{}{}":{
 		"prefix":"Piautolist",
 		"body":[
 			"\\begin{Piautolist}",
-				"\t$1",
+				"\t{${1:family}}{${2:number}}",
 			"\\end{Piautolist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

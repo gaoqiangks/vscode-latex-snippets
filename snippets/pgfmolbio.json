@@ -5,199 +5,8 @@
 		"prefix":"pgfmolbioset",
 		"body":[
 			"\\pgfmolbioset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"pmbprotocolsizes{}{}":{
-		"prefix":"pmbprotocolsizes",
-		"body":[
-			"\\pmbprotocolsizes{${1:x}}{${2:y}}"
-		]
-	},
-
-
-	"pmbchromatogram{}":{
-		"prefix":"pmbchromatogram",
-		"body":[
-			"\\pmbchromatogram{${1:scf file%file}}"
-		]
-	},
-
-
-	"addfeature{}{}{}":{
-		"prefix":"addfeature",
-		"body":[
-			"\\addfeature{${1:type}}{${2:start}}{${3:stop}}"
-		]
-	},
-
-
-	"setfeaturestyle{}{}":{
-		"prefix":"setfeaturestyle",
-		"body":[
-			"\\setfeaturestyle{${1:type}}{${2:style list}}"
-		]
-	},
-
-
-	"setfeaturestylealias{}{}":{
-		"prefix":"setfeaturestylealias",
-		"body":[
-			"\\setfeaturestylealias{${1:new type}}{${2:existing type}}"
-		]
-	},
-
-
-	"setfeatureshape{}{}":{
-		"prefix":"setfeatureshape",
-		"body":[
-			"\\setfeatureshape{${1:type}}{${2:TikZ code}}"
-		]
-	},
-
-
-	"xLeft":{
-		"prefix":"xLeft",
-		"body":[
-			"\\xLeft"
-		]
-	},
-
-
-	"xMid":{
-		"prefix":"xMid",
-		"body":[
-			"\\xMid"
-		]
-	},
-
-
-	"xRight":{
-		"prefix":"xRight",
-		"body":[
-			"\\xRight"
-		]
-	},
-
-
-	"yMid":{
-		"prefix":"yMid",
-		"body":[
-			"\\yMid"
-		]
-	},
-
-
-	"pmbdomvalueof{}":{
-		"prefix":"pmbdomvalueof",
-		"body":[
-			"\\pmbdomvalueof{${1:key%plain}}"
-		]
-	},
-
-
-	"featureSequence":{
-		"prefix":"featureSequence",
-		"body":[
-			"\\featureSequence"
-		]
-	},
-
-
-	"residueNumber":{
-		"prefix":"residueNumber",
-		"body":[
-			"\\residueNumber"
-		]
-	},
-
-
-	"currentResidue":{
-		"prefix":"currentResidue",
-		"body":[
-			"\\currentResidue"
-		]
-	},
-
-
-	"setfeatureshapealias{}{}":{
-		"prefix":"setfeatureshapealias",
-		"body":[
-			"\\setfeatureshapealias{${1:new type}}{${2:existing type}}"
-		]
-	},
-
-
-	"setfeaturealias{}{}":{
-		"prefix":"setfeaturealias",
-		"body":[
-			"\\setfeaturealias{${1:new type}}{${2:existing type}}"
-		]
-	},
-
-
-	"setdisulfidefeatures{}":{
-		"prefix":"setdisulfidefeatures",
-		"body":[
-			"\\setdisulfidefeatures{${1:key list}}"
-		]
-	},
-
-
-	"adddisulfidefeatures{}":{
-		"prefix":"adddisulfidefeatures",
-		"body":[
-			"\\adddisulfidefeatures{${1:key list}}"
-		]
-	},
-
-
-	"removedisulfidefeatures{}":{
-		"prefix":"removedisulfidefeatures",
-		"body":[
-			"\\removedisulfidefeatures{${1:key list}}"
-		]
-	},
-
-
-	"setfeatureprintfunction{}{}":{
-		"prefix":"setfeatureprintfunction",
-		"body":[
-			"\\setfeatureprintfunction{${1:key list}}{${2:Lua function}}"
-		]
-	},
-
-
-	"removefeatureprintfunction{}":{
-		"prefix":"removefeatureprintfunction",
-		"body":[
-			"\\removefeatureprintfunction{${1:key list}}"
-		]
-	},
-
-
-	"pmbdomdrawfeature{}":{
-		"prefix":"pmbdomdrawfeature",
-		"body":[
-			"\\pmbdomdrawfeature{${1:type}}"
-		]
-	},
-
-
-	"inputuniprot{}":{
-		"prefix":"inputuniprot",
-		"body":[
-			"\\inputuniprot{${1:Uniprot file%file}}"
-		]
-	},
-
-
-	"inputgff{}":{
-		"prefix":"inputgff",
-		"body":[
-			"\\inputgff{${1:gff file%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +14,26 @@
 		"prefix":"pgfmolbioset",
 		"body":[
 			"\\pgfmolbioset[${2:module}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pmbprotocolsizes{}{}":{
+		"prefix":"pmbprotocolsizes",
+		"body":[
+			"\\pmbprotocolsizes{${1:x}}{${2:y}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pmbchromatogram{}":{
+		"prefix":"pmbchromatogram",
+		"body":[
+			"\\pmbchromatogram{${1:scf file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +41,17 @@
 		"prefix":"pmbchromatogram",
 		"body":[
 			"\\pmbchromatogram[${2:options%keyvals}]{${1:scf file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addfeature{}{}{}":{
+		"prefix":"addfeature",
+		"body":[
+			"\\addfeature{${1:type}}{${2:start}}{${3:stop}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,26 +59,218 @@
 		"prefix":"addfeature",
 		"body":[
 			"\\addfeature[${4:options%keyvals}]{${1:type}}{${2:start}}{${3:stop}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"pmbdomains":{
-		"prefix":"pmbdomains",
+	"setfeaturestyle{}{}":{
+		"prefix":"setfeaturestyle",
 		"body":[
-			"\\begin{pmbdomains}",
-				"\t$1",
-			"\\end{pmbdomains}"
-		]
+			"\\setfeaturestyle{${1:type}}{${2:style list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pmbdomains":{
+	"setfeaturestylealias{}{}":{
+		"prefix":"setfeaturestylealias",
+		"body":[
+			"\\setfeaturestylealias{${1:new type}}{${2:existing type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfeatureshape{}{}":{
+		"prefix":"setfeatureshape",
+		"body":[
+			"\\setfeatureshape{${1:type}}{${2:TikZ code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xLeft":{
+		"prefix":"xLeft",
+		"body":[
+			"\\xLeft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xMid":{
+		"prefix":"xMid",
+		"body":[
+			"\\xMid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xRight":{
+		"prefix":"xRight",
+		"body":[
+			"\\xRight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yMid":{
+		"prefix":"yMid",
+		"body":[
+			"\\yMid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pmbdomvalueof{}":{
+		"prefix":"pmbdomvalueof",
+		"body":[
+			"\\pmbdomvalueof{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"featureSequence":{
+		"prefix":"featureSequence",
+		"body":[
+			"\\featureSequence"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"residueNumber":{
+		"prefix":"residueNumber",
+		"body":[
+			"\\residueNumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currentResidue":{
+		"prefix":"currentResidue",
+		"body":[
+			"\\currentResidue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfeatureshapealias{}{}":{
+		"prefix":"setfeatureshapealias",
+		"body":[
+			"\\setfeatureshapealias{${1:new type}}{${2:existing type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfeaturealias{}{}":{
+		"prefix":"setfeaturealias",
+		"body":[
+			"\\setfeaturealias{${1:new type}}{${2:existing type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setdisulfidefeatures{}":{
+		"prefix":"setdisulfidefeatures",
+		"body":[
+			"\\setdisulfidefeatures{${1:key list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adddisulfidefeatures{}":{
+		"prefix":"adddisulfidefeatures",
+		"body":[
+			"\\adddisulfidefeatures{${1:key list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removedisulfidefeatures{}":{
+		"prefix":"removedisulfidefeatures",
+		"body":[
+			"\\removedisulfidefeatures{${1:key list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfeatureprintfunction{}{}":{
+		"prefix":"setfeatureprintfunction",
+		"body":[
+			"\\setfeatureprintfunction{${1:key list}}{${2:Lua function}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removefeatureprintfunction{}":{
+		"prefix":"removefeatureprintfunction",
+		"body":[
+			"\\removefeatureprintfunction{${1:key list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pmbdomdrawfeature{}":{
+		"prefix":"pmbdomdrawfeature",
+		"body":[
+			"\\pmbdomdrawfeature{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inputuniprot{}":{
+		"prefix":"inputuniprot",
+		"body":[
+			"\\inputuniprot{${1:Uniprot file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inputgff{}":{
+		"prefix":"inputgff",
+		"body":[
+			"\\inputgff{${1:gff file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pmbdomains{}":{
 		"prefix":"pmbdomains",
 		"body":[
 			"\\begin{pmbdomains}",
-				"\t$1",
+				"\t{${1:sequence length}}",
 			"\\end{pmbdomains}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pmbdomains[]{}":{
+		"prefix":"pmbdomains",
+		"body":[
+			"\\begin{pmbdomains}",
+				"\t[${2:options%keyvals}]{${1:sequence length}}",
+			"\\end{pmbdomains}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

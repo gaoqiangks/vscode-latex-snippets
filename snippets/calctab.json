@@ -5,87 +5,8 @@
 		"prefix":"amount",
 		"body":[
 			"\\amount{${1:description%text}}{${2:value}}"
-		]
-	},
-
-
-	"perc{}{}":{
-		"prefix":"perc",
-		"body":[
-			"\\perc{${1:description%text}}{${2:percentage}}"
-		]
-	},
-
-
-	"add{}":{
-		"prefix":"add",
-		"body":[
-			"\\add{${1:description%text}}"
-		]
-	},
-
-
-	"inrule":{
-		"prefix":"inrule",
-		"body":[
-			"\\inrule"
-		]
-	},
-
-
-	"amount{}{}{}":{
-		"prefix":"amount",
-		"body":[
-			"\\amount{${1:description%text}}{${2:value1}}{${3:value2}}"
-		]
-	},
-
-
-	"ctcurrency{}":{
-		"prefix":"ctcurrency",
-		"body":[
-			"\\ctcurrency{${1:text}}"
-		]
-	},
-
-
-	"ctdescription{}":{
-		"prefix":"ctdescription",
-		"body":[
-			"\\ctdescription{${1:text}}"
-		]
-	},
-
-
-	"ctontranslation{}":{
-		"prefix":"ctontranslation",
-		"body":[
-			"\\ctontranslation{${1:on translation}}"
-		]
-	},
-
-
-	"ctheaderone{}":{
-		"prefix":"ctheaderone",
-		"body":[
-			"\\ctheaderone{${1:header%text}}"
-		]
-	},
-
-
-	"ctheadertwo{}":{
-		"prefix":"ctheadertwo",
-		"body":[
-			"\\ctheadertwo{${1:header%text}}"
-		]
-	},
-
-
-	"ctsep":{
-		"prefix":"ctsep",
-		"body":[
-			"\\ctsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"amount",
 		"body":[
 			"\\amount[${3:options%keyvals}]{${1:description%text}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"perc{}{}":{
+		"prefix":"perc",
+		"body":[
+			"\\perc{${1:description%text}}{${2:percentage}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,17 @@
 		"prefix":"perc",
 		"body":[
 			"\\perc[${3:options%keyvals}]{${1:description%text}}{${2:percentage}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"add{}":{
+		"prefix":"add",
+		"body":[
+			"\\add{${1:description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +50,26 @@
 		"prefix":"add",
 		"body":[
 			"\\add[${2:options%keyvals}]{${1:description%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inrule":{
+		"prefix":"inrule",
+		"body":[
+			"\\inrule"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amount{}{}{}":{
+		"prefix":"amount",
+		"body":[
+			"\\amount{${1:description%text}}{${2:value1}}{${3:value2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,62 @@
 		"prefix":"amount",
 		"body":[
 			"\\amount[${4:options%keyvals}]{${1:description%text}}{${2:value1}}{${3:value2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ctcurrency{}":{
+		"prefix":"ctcurrency",
+		"body":[
+			"\\ctcurrency{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ctdescription{}":{
+		"prefix":"ctdescription",
+		"body":[
+			"\\ctdescription{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ctontranslation{}":{
+		"prefix":"ctontranslation",
+		"body":[
+			"\\ctontranslation{${1:on translation}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ctheaderone{}":{
+		"prefix":"ctheaderone",
+		"body":[
+			"\\ctheaderone{${1:header%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ctheadertwo{}":{
+		"prefix":"ctheadertwo",
+		"body":[
+			"\\ctheadertwo{${1:header%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ctsep":{
+		"prefix":"ctsep",
+		"body":[
+			"\\ctsep"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,7 +142,19 @@
 			"\\begin{calctab}",
 				"\t$1",
 			"\\end{calctab}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"calctab[]":{
+		"prefix":"calctab",
+		"body":[
+			"\\begin{calctab}",
+				"\t[${1:description%text}]",
+			"\\end{calctab}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -137,16 +164,7 @@
 			"\\begin{xcalctab}",
 				"\t$1",
 			"\\end{xcalctab}"
-		]
-	},
-
-
-	"calctab":{
-		"prefix":"calctab",
-		"body":[
-			"\\begin{calctab}",
-				"\t$1",
-			"\\end{calctab}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,71 +5,8 @@
 		"prefix":"eqparbox",
 		"body":[
 			"\\eqparbox{${1:tag}}{${2:text}}"
-		]
-	},
-
-
-	"eqmakebox{}":{
-		"prefix":"eqmakebox",
-		"body":[
-			"\\eqmakebox{${1:text}}"
-		]
-	},
-
-
-	"eqframebox{}":{
-		"prefix":"eqframebox",
-		"body":[
-			"\\eqframebox{${1:text}}"
-		]
-	},
-
-
-	"eqsavebox{}{}":{
-		"prefix":"eqsavebox",
-		"body":[
-			"\\eqsavebox{${1:cmd}}{${2:text}}"
-		]
-	},
-
-
-	"eqboxwidth{}":{
-		"prefix":"eqboxwidth",
-		"body":[
-			"\\eqboxwidth{${1:tag}}"
-		]
-	},
-
-
-	"eqsetminwidth{}{}":{
-		"prefix":"eqsetminwidth",
-		"body":[
-			"\\eqsetminwidth{${1:tag}}{${2:width}}"
-		]
-	},
-
-
-	"eqsetmaxwidth{}{}":{
-		"prefix":"eqsetmaxwidth",
-		"body":[
-			"\\eqsetmaxwidth{${1:tag}}{${2:width}}"
-		]
-	},
-
-
-	"eqsetminwidthto{}{}":{
-		"prefix":"eqsetminwidthto",
-		"body":[
-			"\\eqsetminwidthto{${1:tag}}{${2:text}}"
-		]
-	},
-
-
-	"eqsetmaxwidthto{}{}":{
-		"prefix":"eqsetmaxwidthto",
-		"body":[
-			"\\eqsetmaxwidthto{${1:tag}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,8 @@
 		"prefix":"eqparbox",
 		"body":[
 			"\\eqparbox[${3:position}]{${1:tag}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +23,8 @@
 		"prefix":"eqparbox",
 		"body":[
 			"\\eqparbox[${3:position}][${4:height}]{${1:tag}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +32,17 @@
 		"prefix":"eqparbox",
 		"body":[
 			"\\eqparbox[${3:position}][${4:height}][${5:inner-pos}]{${1:tag}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqmakebox{}":{
+		"prefix":"eqmakebox",
+		"body":[
+			"\\eqmakebox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +50,8 @@
 		"prefix":"eqmakebox",
 		"body":[
 			"\\eqmakebox[${2:tag}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +59,17 @@
 		"prefix":"eqmakebox",
 		"body":[
 			"\\eqmakebox[${2:tag}][${3:position}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqframebox{}":{
+		"prefix":"eqframebox",
+		"body":[
+			"\\eqframebox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,8 @@
 		"prefix":"eqframebox",
 		"body":[
 			"\\eqframebox[${2:tag}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +86,17 @@
 		"prefix":"eqframebox",
 		"body":[
 			"\\eqframebox[${2:tag}][${3:position}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqsavebox{}{}":{
+		"prefix":"eqsavebox",
+		"body":[
+			"\\eqsavebox{${1:cmd}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +104,8 @@
 		"prefix":"eqsavebox",
 		"body":[
 			"\\eqsavebox{${1:cmd}}[${3:tag}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,46 +113,96 @@
 		"prefix":"eqsavebox",
 		"body":[
 			"\\eqsavebox{${1:cmd}}[${3:tag}][${4:position}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"eqminipage":{
-		"prefix":"eqminipage",
+	"eqboxwidth{}":{
+		"prefix":"eqboxwidth",
 		"body":[
-			"\\begin{eqminipage}",
-				"\t$1",
-			"\\end{eqminipage}"
-		]
+			"\\eqboxwidth{${1:tag}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"eqminipage":{
-		"prefix":"eqminipage",
+	"eqsetminwidth{}{}":{
+		"prefix":"eqsetminwidth",
 		"body":[
-			"\\begin{eqminipage}",
-				"\t$1",
-			"\\end{eqminipage}"
-		]
+			"\\eqsetminwidth{${1:tag}}{${2:width}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"eqminipage":{
-		"prefix":"eqminipage",
+	"eqsetmaxwidth{}{}":{
+		"prefix":"eqsetmaxwidth",
 		"body":[
-			"\\begin{eqminipage}",
-				"\t$1",
-			"\\end{eqminipage}"
-		]
+			"\\eqsetmaxwidth{${1:tag}}{${2:width}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"eqminipage":{
+	"eqsetminwidthto{}{}":{
+		"prefix":"eqsetminwidthto",
+		"body":[
+			"\\eqsetminwidthto{${1:tag}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqsetmaxwidthto{}{}":{
+		"prefix":"eqsetmaxwidthto",
+		"body":[
+			"\\eqsetmaxwidthto{${1:tag}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqminipage{}":{
 		"prefix":"eqminipage",
 		"body":[
 			"\\begin{eqminipage}",
-				"\t$1",
+				"\t{${1:tag}}",
 			"\\end{eqminipage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqminipage[]{}":{
+		"prefix":"eqminipage",
+		"body":[
+			"\\begin{eqminipage}",
+				"\t[${2:position}]{${1:tag}}",
+			"\\end{eqminipage}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqminipage[][]{}":{
+		"prefix":"eqminipage",
+		"body":[
+			"\\begin{eqminipage}",
+				"\t[${2:position}][${3:height}]{${1:tag}}",
+			"\\end{eqminipage}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqminipage[][][]{}":{
+		"prefix":"eqminipage",
+		"body":[
+			"\\begin{eqminipage}",
+				"\t[${2:position}][${3:height}][${4:inner-pos}]{${1:tag}}",
+			"\\end{eqminipage}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

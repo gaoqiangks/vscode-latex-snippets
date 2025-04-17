@@ -5,7 +5,8 @@
 		"prefix":"mscset",
 		"body":[
 			"\\mscset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,1079 +14,8 @@
 		"prefix":"nextlevel",
 		"body":[
 			"\\nextlevel"
-		]
-	},
-
-
-	"declinst{}{}{}":{
-		"prefix":"declinst",
-		"body":[
-			"\\declinst{${1:nickname}}{${2:instance name above}}{${3:instance name within}}"
-		]
-	},
-
-
-	"mess{}{}{}":{
-		"prefix":"mess",
-		"body":[
-			"\\mess{${1:name}}{${2:sender}}{${3:receiver}}"
-		]
-	},
-
-
-	"msccomment{}{}":{
-		"prefix":"msccomment",
-		"body":[
-			"\\msccomment{${1:text}}{${2:instance}}"
-		]
-	},
-
-
-	"action{}{}":{
-		"prefix":"action",
-		"body":[
-			"\\action{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"naction{}{}":{
-		"prefix":"naction",
-		"body":[
-			"\\naction{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"settimer{}{}":{
-		"prefix":"settimer",
-		"body":[
-			"\\settimer{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"timeout{}{}":{
-		"prefix":"timeout",
-		"body":[
-			"\\timeout{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"stoptimer{}{}":{
-		"prefix":"stoptimer",
-		"body":[
-			"\\stoptimer{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"settimeout{}{}":{
-		"prefix":"settimeout",
-		"body":[
-			"\\settimeout{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"setstoptimer{}{}":{
-		"prefix":"setstoptimer",
-		"body":[
-			"\\setstoptimer{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"mscmark{}{}":{
-		"prefix":"mscmark",
-		"body":[
-			"\\mscmark{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"measure{}{}{}":{
-		"prefix":"measure",
-		"body":[
-			"\\measure{${1:name}}{${2:instance1}}{${3:instance2}}"
-		]
-	},
-
-
-	"measurestart{}{}{}":{
-		"prefix":"measurestart",
-		"body":[
-			"\\measurestart{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"measureend{}{}{}":{
-		"prefix":"measureend",
-		"body":[
-			"\\measureend{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"lost{}{}{}":{
-		"prefix":"lost",
-		"body":[
-			"\\lost{${1:name}}{${2:gate}}{${3:instance}}"
-		]
-	},
-
-
-	"found{}{}{}":{
-		"prefix":"found",
-		"body":[
-			"\\found{${1:name}}{${2:gate}}{${3:instance}}"
-		]
-	},
-
-
-	"condition{}{}":{
-		"prefix":"condition",
-		"body":[
-			"\\condition{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"ncondition{}{}":{
-		"prefix":"ncondition",
-		"body":[
-			"\\ncondition{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"order{}{}":{
-		"prefix":"order",
-		"body":[
-			"\\order{${1:sender}}{${2:receiver}}"
-		]
-	},
-
-
-	"regionstart{}{}":{
-		"prefix":"regionstart",
-		"body":[
-			"\\regionstart{${1:type}}{${2:instance}}"
-		]
-	},
-
-
-	"regionend{}":{
-		"prefix":"regionend",
-		"body":[
-			"\\regionend{${1:instance}}"
-		]
-	},
-
-
-	"dummyinst{}":{
-		"prefix":"dummyinst",
-		"body":[
-			"\\dummyinst{${1:created instance}}"
-		]
-	},
-
-
-	"startinst{}{}{}":{
-		"prefix":"startinst",
-		"body":[
-			"\\startinst{${1:instance name}}{${2:text above}}{${3:text inside}}"
-		]
-	},
-
-
-	"create{}{}{}{}{}":{
-		"prefix":"create",
-		"body":[
-			"\\create{${1:name}}{${2:creator}}{${3:instance name}}{${4:text above}}{${5:text inside}}"
-		]
-	},
-
-
-	"stop{}":{
-		"prefix":"stop",
-		"body":[
-			"\\stop{${1:instance}}"
-		]
-	},
-
-
-	"referencestart{}{}{}{}":{
-		"prefix":"referencestart",
-		"body":[
-			"\\referencestart{${1:nickname}}{${2:text}}{${3:left instance}}{${4:right instance}}"
-		]
-	},
-
-
-	"referenceend{}":{
-		"prefix":"referenceend",
-		"body":[
-			"\\referenceend{${1:nickname}}"
-		]
-	},
-
-
-	"inlinestart{}{}{}{}":{
-		"prefix":"inlinestart",
-		"body":[
-			"\\inlinestart{${1:nickname}}{${2:operator}}{${3:left instance}}{${4:right instance}}"
-		]
-	},
-
-
-	"inlineseparator{}":{
-		"prefix":"inlineseparator",
-		"body":[
-			"\\inlineseparator{${1:nickname}}"
-		]
-	},
-
-
-	"inlineend{}":{
-		"prefix":"inlineend",
-		"body":[
-			"\\inlineend{${1:nickname}}"
-		]
-	},
-
-
-	"gate{}{}":{
-		"prefix":"gate",
-		"body":[
-			"\\gate{${1:gate name}}{${2:instance name}}"
-		]
-	},
-
-
-	"hmscstartsymbol{}":{
-		"prefix":"hmscstartsymbol",
-		"body":[
-			"\\hmscstartsymbol{${1:nickname}}"
-		]
-	},
-
-
-	"hmscstartsymbol{}()":{
-		"prefix":"hmscstartsymbol",
-		"body":[
-			"\\hmscstartsymbol{${1:nickname}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"hmscendsymbol{}":{
-		"prefix":"hmscendsymbol",
-		"body":[
-			"\\hmscendsymbol{${1:nickname}}"
-		]
-	},
-
-
-	"hmscendsymbol{}()":{
-		"prefix":"hmscendsymbol",
-		"body":[
-			"\\hmscendsymbol{${1:nickname}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"hmscreference{}{}":{
-		"prefix":"hmscreference",
-		"body":[
-			"\\hmscreference{${1:nickname}}{${2:text}}"
-		]
-	},
-
-
-	"hmscreference{}{}()":{
-		"prefix":"hmscreference",
-		"body":[
-			"\\hmscreference{${1:nickname}}{${2:text}}(${3:x},${4:y})"
-		]
-	},
-
-
-	"hmsccondition{}{}":{
-		"prefix":"hmsccondition",
-		"body":[
-			"\\hmsccondition{${1:nickname}}{${2:text}}"
-		]
-	},
-
-
-	"hmsccondition{}{}()":{
-		"prefix":"hmsccondition",
-		"body":[
-			"\\hmsccondition{${1:nickname}}{${2:text}}(${3:x},${4:y})"
-		]
-	},
-
-
-	"hmscconnection{}":{
-		"prefix":"hmscconnection",
-		"body":[
-			"\\hmscconnection{${1:nickname}}"
-		]
-	},
-
-
-	"hmscconnection{}()":{
-		"prefix":"hmscconnection",
-		"body":[
-			"\\hmscconnection{${1:nickname}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"reference{}()":{
-		"prefix":"reference",
-		"body":[
-			"\\reference{${1:text}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"separator{}":{
-		"prefix":"separator",
-		"body":[
-			"\\separator{${1:y}}"
-		]
-	},
-
-
-	"mscdocreferenceheight":{
-		"prefix":"mscdocreferenceheight",
-		"body":[
-			"\\mscdocreferenceheight"
-		]
-	},
-
-
-	"mscdocreferencewidth":{
-		"prefix":"mscdocreferencewidth",
-		"body":[
-			"\\mscdocreferencewidth"
-		]
-	},
-
-
-	"topnamedist":{
-		"prefix":"topnamedist",
-		"body":[
-			"\\topnamedist"
-		]
-	},
-
-
-	"coregionstart{}":{
-		"prefix":"coregionstart",
-		"body":[
-			"\\coregionstart{${1:nickname}}"
-		]
-	},
-
-
-	"coregionend{}":{
-		"prefix":"coregionend",
-		"body":[
-			"\\coregionend{${1:nickname}}"
-		]
-	},
-
-
-	"mscget{}":{
-		"prefix":"mscget",
-		"body":[
-			"\\mscget{${1:option}}"
-		]
-	},
-
-
-	"actionheight":{
-		"prefix":"actionheight",
-		"body":[
-			"\\actionheight"
-		]
-	},
-
-
-	"actionwidth":{
-		"prefix":"actionwidth",
-		"body":[
-			"\\actionwidth"
-		]
-	},
-
-
-	"addDdraw{}{}{}{}":{
-		"prefix":"addDdraw",
-		"body":[
-			"\\addDdraw{${1:instance1}}{${2:instance2}}{${3:level}}{${4:code}}"
-		]
-	},
-
-
-	"adddraw{}{}{}":{
-		"prefix":"adddraw",
-		"body":[
-			"\\adddraw{${1:instance}}{${2:level}}{${3:code}}"
-		]
-	},
-
-
-	"bottomfootdist":{
-		"prefix":"bottomfootdist",
-		"body":[
-			"\\bottomfootdist"
-		]
-	},
-
-
-	"conditionheight":{
-		"prefix":"conditionheight",
-		"body":[
-			"\\conditionheight"
-		]
-	},
-
-
-	"conditionoverlap":{
-		"prefix":"conditionoverlap",
-		"body":[
-			"\\conditionoverlap"
-		]
-	},
-
-
-	"drawframe{}":{
-		"prefix":"drawframe",
-		"body":[
-			"\\drawframe{${1:yes|no}}"
-		]
-	},
-
-
-	"drawinstfoot{}":{
-		"prefix":"drawinstfoot",
-		"body":[
-			"\\drawinstfoot{${1:yes|no}}"
-		]
-	},
-
-
-	"drawinsthead{}":{
-		"prefix":"drawinsthead",
-		"body":[
-			"\\drawinsthead{${1:yes|no}}"
-		]
-	},
-
-
-	"envinstdist":{
-		"prefix":"envinstdist",
-		"body":[
-			"\\envinstdist"
-		]
-	},
-
-
-	"firstlevelheight":{
-		"prefix":"firstlevelheight",
-		"body":[
-			"\\firstlevelheight"
-		]
-	},
-
-
-	"gatesymbolradius":{
-		"prefix":"gatesymbolradius",
-		"body":[
-			"\\gatesymbolradius"
-		]
-	},
-
-
-	"hmscconditionheight":{
-		"prefix":"hmscconditionheight",
-		"body":[
-			"\\hmscconditionheight"
-		]
-	},
-
-
-	"hmscconditionwidth":{
-		"prefix":"hmscconditionwidth",
-		"body":[
-			"\\hmscconditionwidth"
-		]
-	},
-
-
-	"hmscconnectionradius":{
-		"prefix":"hmscconnectionradius",
-		"body":[
-			"\\hmscconnectionradius"
-		]
-	},
-
-
-	"hmsckeywordstyle":{
-		"prefix":"hmsckeywordstyle",
-		"body":[
-			"\\hmsckeywordstyle"
-		]
-	},
-
-
-	"hmscreferenceheight":{
-		"prefix":"hmscreferenceheight",
-		"body":[
-			"\\hmscreferenceheight"
-		]
-	},
-
-
-	"hmscreferencewidth":{
-		"prefix":"hmscreferencewidth",
-		"body":[
-			"\\hmscreferencewidth"
-		]
-	},
-
-
-	"hmscstartsymbolwidth":{
-		"prefix":"hmscstartsymbolwidth",
-		"body":[
-			"\\hmscstartsymbolwidth"
-		]
-	},
-
-
-	"inlineoverlap":{
-		"prefix":"inlineoverlap",
-		"body":[
-			"\\inlineoverlap"
-		]
-	},
-
-
-	"instbarwidth":{
-		"prefix":"instbarwidth",
-		"body":[
-			"\\instbarwidth"
-		]
-	},
-
-
-	"instdist":{
-		"prefix":"instdist",
-		"body":[
-			"\\instdist"
-		]
-	},
-
-
-	"instfootheight":{
-		"prefix":"instfootheight",
-		"body":[
-			"\\instfootheight"
-		]
-	},
-
-
-	"instheadheight":{
-		"prefix":"instheadheight",
-		"body":[
-			"\\instheadheight"
-		]
-	},
-
-
-	"inststart":{
-		"prefix":"inststart",
-		"body":[
-			"\\inststart"
-		]
-	},
-
-
-	"inststop":{
-		"prefix":"inststop",
-		"body":[
-			"\\inststop"
-		]
-	},
-
-
-	"instwidth":{
-		"prefix":"instwidth",
-		"body":[
-			"\\instwidth"
-		]
-	},
-
-
-	"labeldist":{
-		"prefix":"labeldist",
-		"body":[
-			"\\labeldist"
-		]
-	},
-
-
-	"lastlevelheight":{
-		"prefix":"lastlevelheight",
-		"body":[
-			"\\lastlevelheight"
-		]
-	},
-
-
-	"leftnamedist":{
-		"prefix":"leftnamedist",
-		"body":[
-			"\\leftnamedist"
-		]
-	},
-
-
-	"levelheight":{
-		"prefix":"levelheight",
-		"body":[
-			"\\levelheight"
-		]
-	},
-
-
-	"lostsymbolradius":{
-		"prefix":"lostsymbolradius",
-		"body":[
-			"\\lostsymbolradius"
-		]
-	},
-
-
-	"markdist":{
-		"prefix":"markdist",
-		"body":[
-			"\\markdist"
-		]
-	},
-
-
-	"measuredist":{
-		"prefix":"measuredist",
-		"body":[
-			"\\measuredist"
-		]
-	},
-
-
-	"measuresymbolwidth":{
-		"prefix":"measuresymbolwidth",
-		"body":[
-			"\\measuresymbolwidth"
-		]
-	},
-
-
-	"messarrowscale{}":{
-		"prefix":"messarrowscale",
-		"body":[
-			"\\messarrowscale{${1:factor}}"
-		]
-	},
-
-
-	"msccommentdist":{
-		"prefix":"msccommentdist",
-		"body":[
-			"\\msccommentdist"
-		]
-	},
-
-
-	"mscdockeywordstyle":{
-		"prefix":"mscdockeywordstyle",
-		"body":[
-			"\\mscdockeywordstyle"
-		]
-	},
-
-
-	"mscdockeywordstyle{}":{
-		"prefix":"mscdockeywordstyle",
-		"body":[
-			"\\mscdockeywordstyle{${1:arg1}}"
-		]
-	},
-
-
-	"mscgetx{}{}":{
-		"prefix":"mscgetx",
-		"body":[
-			"\\mscgetx{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"mscgety{}{}":{
-		"prefix":"mscgety",
-		"body":[
-			"\\mscgety{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"msckeywordstyle{}":{
-		"prefix":"msckeywordstyle",
-		"body":[
-			"\\msckeywordstyle{${1:text}}"
-		]
-	},
-
-
-	"mscunit":{
-		"prefix":"mscunit",
-		"body":[
-			"\\mscunit"
-		]
-	},
-
-
-	"nogrid":{
-		"prefix":"nogrid",
-		"body":[
-			"\\nogrid"
-		]
-	},
-
-
-	"referenceoverlap":{
-		"prefix":"referenceoverlap",
-		"body":[
-			"\\referenceoverlap"
-		]
-	},
-
-
-	"regionbarwidth":{
-		"prefix":"regionbarwidth",
-		"body":[
-			"\\regionbarwidth"
-		]
-	},
-
-
-	"selfmesswidth":{
-		"prefix":"selfmesswidth",
-		"body":[
-			"\\selfmesswidth"
-		]
-	},
-
-
-	"sethmsckeyword{}":{
-		"prefix":"sethmsckeyword",
-		"body":[
-			"\\sethmsckeyword{${1:keyword}}"
-		]
-	},
-
-
-	"setmscdockeyword{}":{
-		"prefix":"setmscdockeyword",
-		"body":[
-			"\\setmscdockeyword{${1:keyword}}"
-		]
-	},
-
-
-	"setmsckeyword{}":{
-		"prefix":"setmsckeyword",
-		"body":[
-			"\\setmsckeyword{${1:keyword}}"
-		]
-	},
-
-
-	"setmscscale{}":{
-		"prefix":"setmscscale",
-		"body":[
-			"\\setmscscale{${1:factor}}"
-		]
-	},
-
-
-	"setmscvalues{}":{
-		"prefix":"setmscvalues",
-		"body":[
-			"\\setmscvalues{${1:large|${2:normal}|small}}"
-		]
-	},
-
-
-	"showgrid":{
-		"prefix":"showgrid",
-		"body":[
-			"\\showgrid"
-		]
-	},
-
-
-	"stopwidth":{
-		"prefix":"stopwidth",
-		"body":[
-			"\\stopwidth"
-		]
-	},
-
-
-	"thickness":{
-		"prefix":"thickness",
-		"body":[
-			"\\thickness"
-		]
-	},
-
-
-	"timerwidth":{
-		"prefix":"timerwidth",
-		"body":[
-			"\\timerwidth"
-		]
-	},
-
-
-	"topheaddist":{
-		"prefix":"topheaddist",
-		"body":[
-			"\\topheaddist"
-		]
-	},
-
-
-	"declinst*{}{}{}":{
-		"prefix":"*declinst",
-		"body":[
-			"\\declinst*{${1:nickname}}{${2:instance name above}}{${3:instance name within}}"
-		]
-	},
-
-
-	"mess*{}{}{}":{
-		"prefix":"*mess",
-		"body":[
-			"\\mess*{${1:name}}{${2:sender}}{${3:receiver}}"
-		]
-	},
-
-
-	"mess*{}{}{}[]":{
-		"prefix":"*mess",
-		"body":[
-			"\\mess*{${1:name}}{${2:sender}}{${3:receiver}}[${4:level offset}]"
-		]
-	},
-
-
-	"mess*[]{}{}{}":{
-		"prefix":"*mess",
-		"body":[
-			"\\mess*[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}"
-		]
-	},
-
-
-	"mess*[]{}{}{}[]":{
-		"prefix":"*mess",
-		"body":[
-			"\\mess*[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}[${5:level offset}]"
-		]
-	},
-
-
-	"action*{}{}":{
-		"prefix":"*action",
-		"body":[
-			"\\action*{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"action*[]{}{}":{
-		"prefix":"*action",
-		"body":[
-			"\\action*[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"naction*{}{}":{
-		"prefix":"*naction",
-		"body":[
-			"\\naction*{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"naction*[]{}{}":{
-		"prefix":"*naction",
-		"body":[
-			"\\naction*[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
-	},
-
-
-	"measure*{}{}{}":{
-		"prefix":"*measure",
-		"body":[
-			"\\measure*{${1:name}}{${2:instance1}}{${3:instance2}}"
-		]
-	},
-
-
-	"measure*{}{}{}[]":{
-		"prefix":"*measure",
-		"body":[
-			"\\measure*{${1:name}}{${2:instance1}}{${3:instance2}}[${4:offset}]"
-		]
-	},
-
-
-	"measure*[]{}{}{}":{
-		"prefix":"*measure",
-		"body":[
-			"\\measure*[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}"
-		]
-	},
-
-
-	"measure*[]{}{}{}[]":{
-		"prefix":"*measure",
-		"body":[
-			"\\measure*[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}[${5:offset}]"
-		]
-	},
-
-
-	"measurestart*{}{}{}":{
-		"prefix":"*measurestart",
-		"body":[
-			"\\measurestart*{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"measurestart*[]{}{}{}":{
-		"prefix":"*measurestart",
-		"body":[
-			"\\measurestart*[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"measureend*{}{}{}":{
-		"prefix":"*measureend",
-		"body":[
-			"\\measureend*{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"measureend*[]{}{}{}":{
-		"prefix":"*measureend",
-		"body":[
-			"\\measureend*[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
-		]
-	},
-
-
-	"condition*{}{}":{
-		"prefix":"*condition",
-		"body":[
-			"\\condition*{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"condition*[]{}{}":{
-		"prefix":"*condition",
-		"body":[
-			"\\condition*[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"ncondition*{}{}":{
-		"prefix":"*ncondition",
-		"body":[
-			"\\ncondition*{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"ncondition*[]{}{}":{
-		"prefix":"*ncondition",
-		"body":[
-			"\\ncondition*[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
-		]
-	},
-
-
-	"stop*{}":{
-		"prefix":"*stop",
-		"body":[
-			"\\stop*{${1:instance}}"
-		]
-	},
-
-
-	"stop*[]{}":{
-		"prefix":"*stop",
-		"body":[
-			"\\stop*[${2:options%keyvals}]{${1:instance}}"
-		]
-	},
-
-
-	"inlineend*{}":{
-		"prefix":"*inlineend",
-		"body":[
-			"\\inlineend*{${1:nickname}}"
-		]
-	},
-
-
-	"inlineend*[]{}":{
-		"prefix":"*inlineend",
-		"body":[
-			"\\inlineend*[${2:options%keyvals}]{${1:nickname}}"
-		]
-	},
-
-
-	"gate*{}{}":{
-		"prefix":"*gate",
-		"body":[
-			"\\gate*{${1:gate name}}{${2:instance name}}"
-		]
-	},
-
-
-	"gate*[]{}{}":{
-		"prefix":"*gate",
-		"body":[
-			"\\gate*[${3:options%keyvals}]{${1:gate name}}{${2:instance name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1093,7 +23,35 @@
 		"prefix":"nextlevel",
 		"body":[
 			"\\nextlevel[${1:level offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declinst{}{}{}":{
+		"prefix":"declinst",
+		"body":[
+			"\\declinst{${1:nickname}}{${2:instance name above}}{${3:instance name within}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"declinst*{}{}{}":{
+		"prefix":"*declinst",
+		"body":[
+			"\\declinst*{${1:nickname}}{${2:instance name above}}{${3:instance name within}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mess{}{}{}":{
+		"prefix":"mess",
+		"body":[
+			"\\mess{${1:name}}{${2:sender}}{${3:receiver}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1101,7 +59,8 @@
 		"prefix":"mess",
 		"body":[
 			"\\mess{${1:name}}{${2:sender}}{${3:receiver}}[${4:level offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1109,7 +68,8 @@
 		"prefix":"mess",
 		"body":[
 			"\\mess[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1117,7 +77,53 @@
 		"prefix":"mess",
 		"body":[
 			"\\mess[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}[${5:level offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mess*{}{}{}":{
+		"prefix":"*mess",
+		"body":[
+			"\\mess*{${1:name}}{${2:sender}}{${3:receiver}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mess*{}{}{}[]":{
+		"prefix":"*mess",
+		"body":[
+			"\\mess*{${1:name}}{${2:sender}}{${3:receiver}}[${4:level offset}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mess*[]{}{}{}":{
+		"prefix":"*mess",
+		"body":[
+			"\\mess*[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mess*[]{}{}{}[]":{
+		"prefix":"*mess",
+		"body":[
+			"\\mess*[${4:options%keyvals}]{${1:name}}{${2:sender}}{${3:receiver}}[${5:level offset}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"msccomment{}{}":{
+		"prefix":"msccomment",
+		"body":[
+			"\\msccomment{${1:text}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1125,7 +131,17 @@
 		"prefix":"msccomment",
 		"body":[
 			"\\msccomment[${3:options%keyvals}]{${1:text}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"action{}{}":{
+		"prefix":"action",
+		"body":[
+			"\\action{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1133,7 +149,35 @@
 		"prefix":"action",
 		"body":[
 			"\\action[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"action*{}{}":{
+		"prefix":"*action",
+		"body":[
+			"\\action*{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"action*[]{}{}":{
+		"prefix":"*action",
+		"body":[
+			"\\action*[${3:options%keyvals}]{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"naction{}{}":{
+		"prefix":"naction",
+		"body":[
+			"\\naction{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1141,7 +185,35 @@
 		"prefix":"naction",
 		"body":[
 			"\\naction[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"naction*{}{}":{
+		"prefix":"*naction",
+		"body":[
+			"\\naction*{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"naction*[]{}{}":{
+		"prefix":"*naction",
+		"body":[
+			"\\naction*[${3:options%keyvals}]{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settimer{}{}":{
+		"prefix":"settimer",
+		"body":[
+			"\\settimer{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1149,7 +221,17 @@
 		"prefix":"settimer",
 		"body":[
 			"\\settimer[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"timeout{}{}":{
+		"prefix":"timeout",
+		"body":[
+			"\\timeout{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1157,7 +239,17 @@
 		"prefix":"settimer",
 		"body":[
 			"\\settimer[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stoptimer{}{}":{
+		"prefix":"stoptimer",
+		"body":[
+			"\\stoptimer{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1165,7 +257,17 @@
 		"prefix":"settimer",
 		"body":[
 			"\\settimer[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"settimeout{}{}":{
+		"prefix":"settimeout",
+		"body":[
+			"\\settimeout{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1173,7 +275,8 @@
 		"prefix":"settimeout",
 		"body":[
 			"\\settimeout{${1:name}}{${2:instance}}[${3:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1181,7 +284,8 @@
 		"prefix":"settimeout",
 		"body":[
 			"\\settimeout[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1189,7 +293,17 @@
 		"prefix":"settimeout",
 		"body":[
 			"\\settimeout[${3:options%keyvals}]{${1:name}}{${2:instance}}[${4:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setstoptimer{}{}":{
+		"prefix":"setstoptimer",
+		"body":[
+			"\\setstoptimer{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1197,7 +311,8 @@
 		"prefix":"setstoptimer",
 		"body":[
 			"\\setstoptimer{${1:name}}{${2:instance}}[${3:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1205,7 +320,8 @@
 		"prefix":"setstoptimer",
 		"body":[
 			"\\setstoptimer[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1213,7 +329,17 @@
 		"prefix":"setstoptimer",
 		"body":[
 			"\\setstoptimer[${3:options%keyvals}]{${1:name}}{${2:instance}}[${4:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mscmark{}{}":{
+		"prefix":"mscmark",
+		"body":[
+			"\\mscmark{${1:name}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1221,7 +347,17 @@
 		"prefix":"mscmark",
 		"body":[
 			"\\mscmark[${3:options%keyvals}]{${1:name}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"measure{}{}{}":{
+		"prefix":"measure",
+		"body":[
+			"\\measure{${1:name}}{${2:instance1}}{${3:instance2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1229,7 +365,8 @@
 		"prefix":"measure",
 		"body":[
 			"\\measure{${1:name}}{${2:instance1}}{${3:instance2}}[${4:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1237,7 +374,8 @@
 		"prefix":"measure",
 		"body":[
 			"\\measure[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1245,7 +383,53 @@
 		"prefix":"measure",
 		"body":[
 			"\\measure[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}[${5:offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"measure*{}{}{}":{
+		"prefix":"*measure",
+		"body":[
+			"\\measure*{${1:name}}{${2:instance1}}{${3:instance2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measure*{}{}{}[]":{
+		"prefix":"*measure",
+		"body":[
+			"\\measure*{${1:name}}{${2:instance1}}{${3:instance2}}[${4:offset}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measure*[]{}{}{}":{
+		"prefix":"*measure",
+		"body":[
+			"\\measure*[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measure*[]{}{}{}[]":{
+		"prefix":"*measure",
+		"body":[
+			"\\measure*[${4:options%keyvals}]{${1:name}}{${2:instance1}}{${3:instance2}}[${5:offset}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measurestart{}{}{}":{
+		"prefix":"measurestart",
+		"body":[
+			"\\measurestart{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1253,7 +437,35 @@
 		"prefix":"measurestart",
 		"body":[
 			"\\measurestart[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"measurestart*{}{}{}":{
+		"prefix":"*measurestart",
+		"body":[
+			"\\measurestart*{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measurestart*[]{}{}{}":{
+		"prefix":"*measurestart",
+		"body":[
+			"\\measurestart*[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measureend{}{}{}":{
+		"prefix":"measureend",
+		"body":[
+			"\\measureend{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1261,7 +473,35 @@
 		"prefix":"measureend",
 		"body":[
 			"\\measureend[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"measureend*{}{}{}":{
+		"prefix":"*measureend",
+		"body":[
+			"\\measureend*{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"measureend*[]{}{}{}":{
+		"prefix":"*measureend",
+		"body":[
+			"\\measureend*[${4:options%keyvals}]{${1:name}}{${2:instance}}{${3:gate}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"lost{}{}{}":{
+		"prefix":"lost",
+		"body":[
+			"\\lost{${1:name}}{${2:gate}}{${3:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1269,7 +509,17 @@
 		"prefix":"lost",
 		"body":[
 			"\\lost[${4:options%keyvals}]{${1:name}}{${2:gate}}{${3:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"found{}{}{}":{
+		"prefix":"found",
+		"body":[
+			"\\found{${1:name}}{${2:gate}}{${3:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1277,7 +527,17 @@
 		"prefix":"found",
 		"body":[
 			"\\found[${4:options%keyvals}]{${1:name}}{${2:gate}}{${3:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"condition{}{}":{
+		"prefix":"condition",
+		"body":[
+			"\\condition{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1285,7 +545,35 @@
 		"prefix":"condition",
 		"body":[
 			"\\condition[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"condition*{}{}":{
+		"prefix":"*condition",
+		"body":[
+			"\\condition*{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"condition*[]{}{}":{
+		"prefix":"*condition",
+		"body":[
+			"\\condition*[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncondition{}{}":{
+		"prefix":"ncondition",
+		"body":[
+			"\\ncondition{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1293,7 +581,35 @@
 		"prefix":"ncondition",
 		"body":[
 			"\\ncondition[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ncondition*{}{}":{
+		"prefix":"*ncondition",
+		"body":[
+			"\\ncondition*{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ncondition*[]{}{}":{
+		"prefix":"*ncondition",
+		"body":[
+			"\\ncondition*[${3:options%keyvals}]{${1:text}}{${2:instance list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"order{}{}":{
+		"prefix":"order",
+		"body":[
+			"\\order{${1:sender}}{${2:receiver}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1301,7 +617,8 @@
 		"prefix":"order",
 		"body":[
 			"\\order{${1:sender}}{${2:receiver}}[${3:level offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1309,7 +626,8 @@
 		"prefix":"order",
 		"body":[
 			"\\order[${3:options%keyvals}]{${1:sender}}{${2:receiver}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1317,7 +635,17 @@
 		"prefix":"order",
 		"body":[
 			"\\order[${3:options%keyvals}]{${1:sender}}{${2:receiver}}[${4:level offset}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"regionstart{}{}":{
+		"prefix":"regionstart",
+		"body":[
+			"\\regionstart{${1:type}}{${2:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1325,7 +653,26 @@
 		"prefix":"regionstart",
 		"body":[
 			"\\regionstart[${3:options%keyvals}]{${1:type}}{${2:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"regionend{}":{
+		"prefix":"regionend",
+		"body":[
+			"\\regionend{${1:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dummyinst{}":{
+		"prefix":"dummyinst",
+		"body":[
+			"\\dummyinst{${1:created instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1333,7 +680,17 @@
 		"prefix":"dummyinst",
 		"body":[
 			"\\dummyinst[${2:options%keyvals}]{${1:created instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"startinst{}{}{}":{
+		"prefix":"startinst",
+		"body":[
+			"\\startinst{${1:instance name}}{${2:text above}}{${3:text inside}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1341,7 +698,17 @@
 		"prefix":"startinst",
 		"body":[
 			"\\startinst[${4:options%keyvals}]{${1:instance name}}{${2:text above}}{${3:text inside}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"create{}{}{}{}{}":{
+		"prefix":"create",
+		"body":[
+			"\\create{${1:name}}{${2:creator}}{${3:instance name}}{${4:text above}}{${5:text inside}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1349,7 +716,17 @@
 		"prefix":"create",
 		"body":[
 			"\\create[${6:options%keyvals}]{${1:name}}{${2:creator}}{${3:instance name}}{${4:text above}}{${5:text inside}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stop{}":{
+		"prefix":"stop",
+		"body":[
+			"\\stop{${1:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1357,7 +734,35 @@
 		"prefix":"stop",
 		"body":[
 			"\\stop[${2:options%keyvals}]{${1:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stop*{}":{
+		"prefix":"*stop",
+		"body":[
+			"\\stop*{${1:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"stop*[]{}":{
+		"prefix":"*stop",
+		"body":[
+			"\\stop*[${2:options%keyvals}]{${1:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"referencestart{}{}{}{}":{
+		"prefix":"referencestart",
+		"body":[
+			"\\referencestart{${1:nickname}}{${2:text}}{${3:left instance}}{${4:right instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1365,7 +770,17 @@
 		"prefix":"referencestart",
 		"body":[
 			"\\referencestart[${5:options%keyvals}]{${1:nickname}}{${2:text}}{${3:left instance}}{${4:right instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"referenceend{}":{
+		"prefix":"referenceend",
+		"body":[
+			"\\referenceend{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1373,7 +788,17 @@
 		"prefix":"referenceend",
 		"body":[
 			"\\referenceend[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inlinestart{}{}{}{}":{
+		"prefix":"inlinestart",
+		"body":[
+			"\\inlinestart{${1:nickname}}{${2:operator}}{${3:left instance}}{${4:right instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1381,7 +806,17 @@
 		"prefix":"inlinestart",
 		"body":[
 			"\\inlinestart[${5:options%keyvals}]{${1:nickname}}{${2:operator}}{${3:left instance}}{${4:right instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inlineseparator{}":{
+		"prefix":"inlineseparator",
+		"body":[
+			"\\inlineseparator{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1389,7 +824,17 @@
 		"prefix":"inlineseparator",
 		"body":[
 			"\\inlineseparator[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inlineend{}":{
+		"prefix":"inlineend",
+		"body":[
+			"\\inlineend{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1397,7 +842,35 @@
 		"prefix":"inlineend",
 		"body":[
 			"\\inlineend[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inlineend*{}":{
+		"prefix":"*inlineend",
+		"body":[
+			"\\inlineend*{${1:nickname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inlineend*[]{}":{
+		"prefix":"*inlineend",
+		"body":[
+			"\\inlineend*[${2:options%keyvals}]{${1:nickname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gate{}{}":{
+		"prefix":"gate",
+		"body":[
+			"\\gate{${1:gate name}}{${2:instance name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +878,44 @@
 		"prefix":"gate",
 		"body":[
 			"\\gate[${3:options%keyvals}]{${1:gate name}}{${2:instance name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gate*{}{}":{
+		"prefix":"*gate",
+		"body":[
+			"\\gate*{${1:gate name}}{${2:instance name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gate*[]{}{}":{
+		"prefix":"*gate",
+		"body":[
+			"\\gate*[${3:options%keyvals}]{${1:gate name}}{${2:instance name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hmscstartsymbol{}":{
+		"prefix":"hmscstartsymbol",
+		"body":[
+			"\\hmscstartsymbol{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscstartsymbol{}()":{
+		"prefix":"hmscstartsymbol",
+		"body":[
+			"\\hmscstartsymbol{${1:nickname}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +923,8 @@
 		"prefix":"hmscstartsymbol",
 		"body":[
 			"\\hmscstartsymbol[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1421,7 +932,26 @@
 		"prefix":"hmscstartsymbol",
 		"body":[
 			"\\hmscstartsymbol[${2:options%keyvals}]{${1:nickname}}(${3:x},${4:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmscendsymbol{}":{
+		"prefix":"hmscendsymbol",
+		"body":[
+			"\\hmscendsymbol{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscendsymbol{}()":{
+		"prefix":"hmscendsymbol",
+		"body":[
+			"\\hmscendsymbol{${1:nickname}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1429,7 +959,8 @@
 		"prefix":"hmscendsymbol",
 		"body":[
 			"\\hmscendsymbol[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1437,7 +968,26 @@
 		"prefix":"hmscendsymbol",
 		"body":[
 			"\\hmscendsymbol[${2:options%keyvals}]{${1:nickname}}(${3:x},${4:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmscreference{}{}":{
+		"prefix":"hmscreference",
+		"body":[
+			"\\hmscreference{${1:nickname}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscreference{}{}()":{
+		"prefix":"hmscreference",
+		"body":[
+			"\\hmscreference{${1:nickname}}{${2:text}}(${3:x},${4:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1445,7 +995,8 @@
 		"prefix":"hmscreference",
 		"body":[
 			"\\hmscreference[${3:options%keyvals}]{${1:nickname}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1453,7 +1004,26 @@
 		"prefix":"hmscreference",
 		"body":[
 			"\\hmscreference[${3:options%keyvals}]{${1:nickname}}{${2:text}}(${4:x},${5:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmsccondition{}{}":{
+		"prefix":"hmsccondition",
+		"body":[
+			"\\hmsccondition{${1:nickname}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmsccondition{}{}()":{
+		"prefix":"hmsccondition",
+		"body":[
+			"\\hmsccondition{${1:nickname}}{${2:text}}(${3:x},${4:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1461,7 +1031,8 @@
 		"prefix":"hmsccondition",
 		"body":[
 			"\\hmsccondition[${3:options%keyvals}]{${1:nickname}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1469,7 +1040,26 @@
 		"prefix":"hmsccondition",
 		"body":[
 			"\\hmsccondition[${3:options%keyvals}]{${1:nickname}}{${2:text}}(${4:x},${5:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmscconnection{}":{
+		"prefix":"hmscconnection",
+		"body":[
+			"\\hmscconnection{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscconnection{}()":{
+		"prefix":"hmscconnection",
+		"body":[
+			"\\hmscconnection{${1:nickname}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1477,7 +1067,8 @@
 		"prefix":"hmscconnection",
 		"body":[
 			"\\hmscconnection[${2:options%keyvals}]{${1:nickname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1485,96 +1076,700 @@
 		"prefix":"hmscconnection",
 		"body":[
 			"\\hmscconnection[${2:options%keyvals}]{${1:nickname}}(${3:x},${4:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"msc":{
+	"reference{}()":{
+		"prefix":"reference",
+		"body":[
+			"\\reference{${1:text}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"separator{}":{
+		"prefix":"separator",
+		"body":[
+			"\\separator{${1:y}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscdocreferenceheight":{
+		"prefix":"mscdocreferenceheight",
+		"body":[
+			"\\mscdocreferenceheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscdocreferencewidth":{
+		"prefix":"mscdocreferencewidth",
+		"body":[
+			"\\mscdocreferencewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topnamedist":{
+		"prefix":"topnamedist",
+		"body":[
+			"\\topnamedist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coregionstart{}":{
+		"prefix":"coregionstart",
+		"body":[
+			"\\coregionstart{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coregionend{}":{
+		"prefix":"coregionend",
+		"body":[
+			"\\coregionend{${1:nickname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscget{}":{
+		"prefix":"mscget",
+		"body":[
+			"\\mscget{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"actionheight":{
+		"prefix":"actionheight",
+		"body":[
+			"\\actionheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"actionwidth":{
+		"prefix":"actionwidth",
+		"body":[
+			"\\actionwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addDdraw{}{}{}{}":{
+		"prefix":"addDdraw",
+		"body":[
+			"\\addDdraw{${1:instance1}}{${2:instance2}}{${3:level}}{${4:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adddraw{}{}{}":{
+		"prefix":"adddraw",
+		"body":[
+			"\\adddraw{${1:instance}}{${2:level}}{${3:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bottomfootdist":{
+		"prefix":"bottomfootdist",
+		"body":[
+			"\\bottomfootdist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conditionheight":{
+		"prefix":"conditionheight",
+		"body":[
+			"\\conditionheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conditionoverlap":{
+		"prefix":"conditionoverlap",
+		"body":[
+			"\\conditionoverlap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawframe{}":{
+		"prefix":"drawframe",
+		"body":[
+			"\\drawframe{${1:yes|no}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawinstfoot{}":{
+		"prefix":"drawinstfoot",
+		"body":[
+			"\\drawinstfoot{${1:yes|no}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawinsthead{}":{
+		"prefix":"drawinsthead",
+		"body":[
+			"\\drawinsthead{${1:yes|no}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"envinstdist":{
+		"prefix":"envinstdist",
+		"body":[
+			"\\envinstdist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firstlevelheight":{
+		"prefix":"firstlevelheight",
+		"body":[
+			"\\firstlevelheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gatesymbolradius":{
+		"prefix":"gatesymbolradius",
+		"body":[
+			"\\gatesymbolradius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscconditionheight":{
+		"prefix":"hmscconditionheight",
+		"body":[
+			"\\hmscconditionheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscconditionwidth":{
+		"prefix":"hmscconditionwidth",
+		"body":[
+			"\\hmscconditionwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscconnectionradius":{
+		"prefix":"hmscconnectionradius",
+		"body":[
+			"\\hmscconnectionradius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmsckeywordstyle":{
+		"prefix":"hmsckeywordstyle",
+		"body":[
+			"\\hmsckeywordstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscreferenceheight":{
+		"prefix":"hmscreferenceheight",
+		"body":[
+			"\\hmscreferenceheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscreferencewidth":{
+		"prefix":"hmscreferencewidth",
+		"body":[
+			"\\hmscreferencewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmscstartsymbolwidth":{
+		"prefix":"hmscstartsymbolwidth",
+		"body":[
+			"\\hmscstartsymbolwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inlineoverlap":{
+		"prefix":"inlineoverlap",
+		"body":[
+			"\\inlineoverlap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instbarwidth":{
+		"prefix":"instbarwidth",
+		"body":[
+			"\\instbarwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instdist":{
+		"prefix":"instdist",
+		"body":[
+			"\\instdist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instfootheight":{
+		"prefix":"instfootheight",
+		"body":[
+			"\\instfootheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instheadheight":{
+		"prefix":"instheadheight",
+		"body":[
+			"\\instheadheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inststart":{
+		"prefix":"inststart",
+		"body":[
+			"\\inststart"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inststop":{
+		"prefix":"inststop",
+		"body":[
+			"\\inststop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instwidth":{
+		"prefix":"instwidth",
+		"body":[
+			"\\instwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labeldist":{
+		"prefix":"labeldist",
+		"body":[
+			"\\labeldist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lastlevelheight":{
+		"prefix":"lastlevelheight",
+		"body":[
+			"\\lastlevelheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"leftnamedist":{
+		"prefix":"leftnamedist",
+		"body":[
+			"\\leftnamedist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"levelheight":{
+		"prefix":"levelheight",
+		"body":[
+			"\\levelheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lostsymbolradius":{
+		"prefix":"lostsymbolradius",
+		"body":[
+			"\\lostsymbolradius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"markdist":{
+		"prefix":"markdist",
+		"body":[
+			"\\markdist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"measuredist":{
+		"prefix":"measuredist",
+		"body":[
+			"\\measuredist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"measuresymbolwidth":{
+		"prefix":"measuresymbolwidth",
+		"body":[
+			"\\measuresymbolwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"messarrowscale{}":{
+		"prefix":"messarrowscale",
+		"body":[
+			"\\messarrowscale{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"msccommentdist":{
+		"prefix":"msccommentdist",
+		"body":[
+			"\\msccommentdist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscdockeywordstyle":{
+		"prefix":"mscdockeywordstyle",
+		"body":[
+			"\\mscdockeywordstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscdockeywordstyle{}":{
+		"prefix":"mscdockeywordstyle",
+		"body":[
+			"\\mscdockeywordstyle{${1:arg1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscgetx{}{}":{
+		"prefix":"mscgetx",
+		"body":[
+			"\\mscgetx{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscgety{}{}":{
+		"prefix":"mscgety",
+		"body":[
+			"\\mscgety{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"msckeywordstyle{}":{
+		"prefix":"msckeywordstyle",
+		"body":[
+			"\\msckeywordstyle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mscunit":{
+		"prefix":"mscunit",
+		"body":[
+			"\\mscunit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nogrid":{
+		"prefix":"nogrid",
+		"body":[
+			"\\nogrid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"referenceoverlap":{
+		"prefix":"referenceoverlap",
+		"body":[
+			"\\referenceoverlap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"regionbarwidth":{
+		"prefix":"regionbarwidth",
+		"body":[
+			"\\regionbarwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selfmesswidth":{
+		"prefix":"selfmesswidth",
+		"body":[
+			"\\selfmesswidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sethmsckeyword{}":{
+		"prefix":"sethmsckeyword",
+		"body":[
+			"\\sethmsckeyword{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setmscdockeyword{}":{
+		"prefix":"setmscdockeyword",
+		"body":[
+			"\\setmscdockeyword{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setmsckeyword{}":{
+		"prefix":"setmsckeyword",
+		"body":[
+			"\\setmsckeyword{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setmscscale{}":{
+		"prefix":"setmscscale",
+		"body":[
+			"\\setmscscale{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setmscvalues{}":{
+		"prefix":"setmscvalues",
+		"body":[
+			"\\setmscvalues{${1:large|${2:normal}|small}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showgrid":{
+		"prefix":"showgrid",
+		"body":[
+			"\\showgrid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopwidth":{
+		"prefix":"stopwidth",
+		"body":[
+			"\\stopwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickness":{
+		"prefix":"thickness",
+		"body":[
+			"\\thickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"timerwidth":{
+		"prefix":"timerwidth",
+		"body":[
+			"\\timerwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topheaddist":{
+		"prefix":"topheaddist",
+		"body":[
+			"\\topheaddist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"msc{}":{
 		"prefix":"msc",
 		"body":[
 			"\\begin{msc}",
-				"\t$1",
+				"\t{${1:name%text}}",
 			"\\end{msc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"hmsc":{
+	"msc[]{}":{
+		"prefix":"msc",
+		"body":[
+			"\\begin{msc}",
+				"\t[${2:options%keyvals}]{${1:name%text}}",
+			"\\end{msc}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"msc[][]{}":{
+		"prefix":"msc",
+		"body":[
+			"\\begin{msc}",
+				"\t[${2:options%keyvals}][${3:pos}]{${1:name%text}}",
+			"\\end{msc}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmsc{}":{
 		"prefix":"hmsc",
 		"body":[
 			"\\begin{hmsc}",
-				"\t$1",
+				"\t{${1:name%text}}",
 			"\\end{hmsc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"hmsc":{
+	"hmsc{}()()":{
 		"prefix":"hmsc",
 		"body":[
 			"\\begin{hmsc}",
-				"\t$1",
+				"\t{${1:name%text}}(${2:llx},${3:lly})(${4:urx},${5:ury})",
 			"\\end{hmsc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"mscdoc":{
+	"hmsc[]{}":{
+		"prefix":"hmsc",
+		"body":[
+			"\\begin{hmsc}",
+				"\t[${2:options%keyvals}]{${1:name%text}}",
+			"\\end{hmsc}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hmsc[]{}()()":{
+		"prefix":"hmsc",
+		"body":[
+			"\\begin{hmsc}",
+				"\t[${2:options%keyvals}]{${1:name%text}}(${3:llx},${4:lly})(${5:urx},${6:ury})",
+			"\\end{hmsc}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mscdoc{}()()":{
 		"prefix":"mscdoc",
 		"body":[
 			"\\begin{mscdoc}",
-				"\t$1",
+				"\t{${1:name%text}}(${2:llx},${3:lly})(${4:urx},${5:ury})",
 			"\\end{mscdoc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"msc":{
-		"prefix":"msc",
-		"body":[
-			"\\begin{msc}",
-				"\t$1",
-			"\\end{msc}"
-		]
-	},
-
-
-	"msc":{
-		"prefix":"msc",
-		"body":[
-			"\\begin{msc}",
-				"\t$1",
-			"\\end{msc}"
-		]
-	},
-
-
-	"hmsc":{
-		"prefix":"hmsc",
-		"body":[
-			"\\begin{hmsc}",
-				"\t$1",
-			"\\end{hmsc}"
-		]
-	},
-
-
-	"hmsc":{
-		"prefix":"hmsc",
-		"body":[
-			"\\begin{hmsc}",
-				"\t$1",
-			"\\end{hmsc}"
-		]
-	},
-
-
-	"mscdoc":{
+	"mscdoc[]{}()()":{
 		"prefix":"mscdoc",
 		"body":[
 			"\\begin{mscdoc}",
-				"\t$1",
+				"\t[${2:headerpos}]{${1:name%text}}(${3:llx},${4:lly})(${5:urx},${6:ury})",
 			"\\end{mscdoc}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"acknowledgmentsname",
 		"body":[
 			"\\acknowledgmentsname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,135 +14,8 @@
 		"prefix":"addauthortolabel",
 		"body":[
 			"\\addauthortolabel{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"address{}":{
-		"prefix":"address",
-		"body":[
-			"\\address{${1:affiliation}}"
-		]
-	},
-
-
-	"affil{}":{
-		"prefix":"affil",
-		"body":[
-			"\\affil{${1:affiliation}}"
-		]
-	},
-
-
-	"affiliation{}":{
-		"prefix":"affiliation",
-		"body":[
-			"\\affiliation{${1:affiliation}}"
-		]
-	},
-
-
-	"altaffiliation{}":{
-		"prefix":"altaffiliation",
-		"body":[
-			"\\altaffiliation{${1:affiliation}}"
-		]
-	},
-
-
-	"collaboration{}":{
-		"prefix":"collaboration",
-		"body":[
-			"\\collaboration{${1:name}}"
-		]
-	},
-
-
-	"corr{}{}":{
-		"prefix":"corr",
-		"body":[
-			"\\corr{${1:text1%text}}{${2:text2%text}}"
-		]
-	},
-
-
-	"ead{}":{
-		"prefix":"ead",
-		"body":[
-			"\\ead{${1:email%URL}}"
-		]
-	},
-
-
-	"email{}":{
-		"prefix":"email",
-		"body":[
-			"\\email{${1:email%URL}}"
-		]
-	},
-
-
-	"homepage{}":{
-		"prefix":"homepage",
-		"body":[
-			"\\homepage{${1:URL}}"
-		]
-	},
-
-
-	"ins{}":{
-		"prefix":"ins",
-		"body":[
-			"\\ins{${1:text}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:keywords}}"
-		]
-	},
-
-
-	"nocontentsline{}{}{}":{
-		"prefix":"nocontentsline",
-		"body":[
-			"\\nocontentsline{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"openone":{
-		"prefix":"openone",
-		"body":[
-			"\\openone"
-		]
-	},
-
-
-	"orcid{}":{
-		"prefix":"orcid",
-		"body":[
-			"\\orcid{${1:ORCID}}"
-		]
-	},
-
-
-	"Quantum":{
-		"prefix":"Quantum",
-		"body":[
-			"\\Quantum"
-		]
-	},
-
-
-	"quantumarticleversion":{
-		"prefix":"quantumarticleversion",
-		"body":[
-			"\\quantumarticleversion"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +23,17 @@
 		"prefix":"address",
 		"body":[
 			"\\address[${2:id}]{${1:affiliation}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"address{}":{
+		"prefix":"address",
+		"body":[
+			"\\address{${1:affiliation}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +41,35 @@
 		"prefix":"affil",
 		"body":[
 			"\\affil[${2:id}]{${1:affiliation}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"affil{}":{
+		"prefix":"affil",
+		"body":[
+			"\\affil{${1:affiliation}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"affiliation{}":{
+		"prefix":"affiliation",
+		"body":[
+			"\\affiliation{${1:affiliation}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"altaffiliation{}":{
+		"prefix":"altaffiliation",
+		"body":[
+			"\\altaffiliation{${1:affiliation}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +77,26 @@
 		"prefix":"author",
 		"body":[
 			"\\author[${2:id}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"collaboration{}":{
+		"prefix":"collaboration",
+		"body":[
+			"\\collaboration{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"corr{}{}":{
+		"prefix":"corr",
+		"body":[
+			"\\corr{${1:text1%text}}{${2:text2%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +104,17 @@
 		"prefix":"ead",
 		"body":[
 			"\\ead[${2:url}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ead{}":{
+		"prefix":"ead",
+		"body":[
+			"\\ead{${1:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +122,17 @@
 		"prefix":"email",
 		"body":[
 			"\\email[${2:prefix}]{${1:email%URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"email{}":{
+		"prefix":"email",
+		"body":[
+			"\\email{${1:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +140,53 @@
 		"prefix":"homepage",
 		"body":[
 			"\\homepage[${2:prefix}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"homepage{}":{
+		"prefix":"homepage",
+		"body":[
+			"\\homepage{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ins{}":{
+		"prefix":"ins",
+		"body":[
+			"\\ins{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:keywords}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nocontentsline{}{}{}":{
+		"prefix":"nocontentsline",
+		"body":[
+			"\\nocontentsline{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"openone":{
+		"prefix":"openone",
+		"body":[
+			"\\openone"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +194,35 @@
 		"prefix":"orcid",
 		"body":[
 			"\\orcid[${2:prefix}]{${1:ORCID}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"orcid{}":{
+		"prefix":"orcid",
+		"body":[
+			"\\orcid{${1:ORCID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Quantum":{
+		"prefix":"Quantum",
+		"body":[
+			"\\Quantum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quantumarticleversion":{
+		"prefix":"quantumarticleversion",
+		"body":[
+			"\\quantumarticleversion"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +230,8 @@
 		"prefix":"thanks",
 		"body":[
 			"\\thanks[${2:prefix}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -215,6 +241,7 @@
 			"\\begin{acknowledgements}",
 				"\t$1",
 			"\\end{acknowledgements}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,55 +5,8 @@
 		"prefix":"lbezier",
 		"body":[
 			"\\lbezier(${1:x0},${2:y0})(${3:x1},${4:y1})"
-		]
-	},
-
-
-	"cbezier()()()()":{
-		"prefix":"cbezier",
-		"body":[
-			"\\cbezier(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})"
-		]
-	},
-
-
-	"rqbezier()()()()":{
-		"prefix":"rqbezier",
-		"body":[
-			"\\rqbezier(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:weight})"
-		]
-	},
-
-
-	"setweightscale{}":{
-		"prefix":"setweightscale",
-		"body":[
-			"\\setweightscale{${1:number}}"
-		]
-	},
-
-
-	"resetweightscale":{
-		"prefix":"resetweightscale",
-		"body":[
-			"\\resetweightscale"
-		]
-	},
-
-
-	"botscale":{
-		"prefix":"botscale",
-		"body":[
-			"\\botscale"
-		]
-	},
-
-
-	"theweightscale":{
-		"prefix":"theweightscale",
-		"body":[
-			"\\theweightscale"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"lbezier",
 		"body":[
 			"\\lbezier[${1:n}](${2:x0},${3:y0})(${4:x1},${5:y1})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cbezier()()()()":{
+		"prefix":"cbezier",
+		"body":[
+			"\\cbezier(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +32,17 @@
 		"prefix":"cbezier",
 		"body":[
 			"\\cbezier[${1:n}](${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rqbezier()()()()":{
+		"prefix":"rqbezier",
+		"body":[
+			"\\rqbezier(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:weight})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +50,43 @@
 		"prefix":"rqbezier",
 		"body":[
 			"\\rqbezier[${1:n}](${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})(${8:weight})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setweightscale{}":{
+		"prefix":"setweightscale",
+		"body":[
+			"\\setweightscale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetweightscale":{
+		"prefix":"resetweightscale",
+		"body":[
+			"\\resetweightscale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"botscale":{
+		"prefix":"botscale",
+		"body":[
+			"\\botscale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theweightscale":{
+		"prefix":"theweightscale",
+		"body":[
+			"\\theweightscale"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"ProcessOptionsBeamer",
 		"body":[
 			"\\ProcessOptionsBeamer"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ExecuteOptionsBeamer",
 		"body":[
 			"\\ExecuteOptionsBeamer{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"DeclareOptionBeamer",
 		"body":[
 			"\\DeclareOptionBeamer{${1:option}}{${2:definition}}"
-		]
-	},
-
-
-	"defbeameroption{}{}":{
-		"prefix":"defbeameroption",
-		"body":[
-			"\\defbeameroption{${1:option%specialDef}}{${2:definition}}"
-		]
-	},
-
-
-	"setbeameroption{}":{
-		"prefix":"setbeameroption",
-		"body":[
-			"\\setbeameroption{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"DeclareOptionBeamer",
 		"body":[
 			"\\DeclareOptionBeamer{${1:option}}[${3:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defbeameroption{}{}":{
+		"prefix":"defbeameroption",
+		"body":[
+			"\\defbeameroption{${1:option%specialDef}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setbeameroption{}":{
+		"prefix":"setbeameroption",
+		"body":[
+			"\\setbeameroption{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

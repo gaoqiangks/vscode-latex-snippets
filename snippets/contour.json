@@ -5,23 +5,8 @@
 		"prefix":"contour",
 		"body":[
 			"\\contour{${1:color}}{${2:text}}"
-		]
-	},
-
-
-	"contourlength{}":{
-		"prefix":"contourlength",
-		"body":[
-			"\\contourlength{${1:length}}"
-		]
-	},
-
-
-	"contournumber{}":{
-		"prefix":"contournumber",
-		"body":[
-			"\\contournumber{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,8 @@
 		"prefix":"*contour",
 		"body":[
 			"\\contour*{${1:color}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -37,6 +23,25 @@
 		"prefix":"contour",
 		"body":[
 			"\\contour[${3:number}]{${1:color}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"contourlength{}":{
+		"prefix":"contourlength",
+		"body":[
+			"\\contourlength{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"contournumber{}":{
+		"prefix":"contournumber",
+		"body":[
+			"\\contournumber{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

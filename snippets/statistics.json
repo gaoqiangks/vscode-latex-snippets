@@ -5,167 +5,8 @@
 		"prefix":"statisticssetup",
 		"body":[
 			"\\statisticssetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"StatsTable{}":{
-		"prefix":"StatsTable",
-		"body":[
-			"\\StatsTable{${1:data source}}"
-		]
-	},
-
-
-	"IN":{
-		"prefix":"IN",
-		"body":[
-			"\\IN"
-		]
-	},
-
-
-	"currentcolumn":{
-		"prefix":"currentcolumn",
-		"body":[
-			"\\currentcolumn"
-		]
-	},
-
-
-	"valuename":{
-		"prefix":"valuename",
-		"body":[
-			"\\valuename"
-		]
-	},
-
-
-	"countname":{
-		"prefix":"countname",
-		"body":[
-			"\\countname"
-		]
-	},
-
-
-	"freqname":{
-		"prefix":"freqname",
-		"body":[
-			"\\freqname"
-		]
-	},
-
-
-	"iccname":{
-		"prefix":"iccname",
-		"body":[
-			"\\iccname"
-		]
-	},
-
-
-	"icfname":{
-		"prefix":"icfname",
-		"body":[
-			"\\icfname"
-		]
-	},
-
-
-	"dccname":{
-		"prefix":"dccname",
-		"body":[
-			"\\dccname"
-		]
-	},
-
-
-	"dcfname":{
-		"prefix":"dcfname",
-		"body":[
-			"\\dcfname"
-		]
-	},
-
-
-	"firsthline":{
-		"prefix":"firsthline",
-		"body":[
-			"\\firsthline"
-		]
-	},
-
-
-	"lasthline":{
-		"prefix":"lasthline",
-		"body":[
-			"\\lasthline"
-		]
-	},
-
-
-	"StatsGraph{}":{
-		"prefix":"StatsGraph",
-		"body":[
-			"\\StatsGraph{${1:data source}}"
-		]
-	},
-
-
-	"ccountname":{
-		"prefix":"ccountname",
-		"body":[
-			"\\ccountname"
-		]
-	},
-
-
-	"cfreqname":{
-		"prefix":"cfreqname",
-		"body":[
-			"\\cfreqname"
-		]
-	},
-
-
-	"min":{
-		"prefix":"min",
-		"body":[
-			"\\min"
-		]
-	},
-
-
-	"max":{
-		"prefix":"max",
-		"body":[
-			"\\max"
-		]
-	},
-
-
-	"range":{
-		"prefix":"range",
-		"body":[
-			"\\range"
-		]
-	},
-
-
-	"xstep":{
-		"prefix":"xstep",
-		"body":[
-			"\\xstep"
-		]
-	},
-
-
-	"total":{
-		"prefix":"total",
-		"body":[
-			"\\total"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +14,17 @@
 		"prefix":"statisticssetup",
 		"body":[
 			"\\statisticssetup[${2:module}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StatsTable{}":{
+		"prefix":"StatsTable",
+		"body":[
+			"\\StatsTable{${1:data source}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +32,8 @@
 		"prefix":"StatsTable",
 		"body":[
 			"\\StatsTable[${2:options%keyvals}]{${1:data source}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +41,8 @@
 		"prefix":"StatsTable",
 		"body":[
 			"\\StatsTable{${1:data source}}[${2:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +50,116 @@
 		"prefix":"StatsTable",
 		"body":[
 			"\\StatsTable[${2:options%keyvals}]{${1:data source}}[${3:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IN":{
+		"prefix":"IN",
+		"body":[
+			"\\IN"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currentcolumn":{
+		"prefix":"currentcolumn",
+		"body":[
+			"\\currentcolumn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"valuename":{
+		"prefix":"valuename",
+		"body":[
+			"\\valuename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"countname":{
+		"prefix":"countname",
+		"body":[
+			"\\countname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"freqname":{
+		"prefix":"freqname",
+		"body":[
+			"\\freqname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iccname":{
+		"prefix":"iccname",
+		"body":[
+			"\\iccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"icfname":{
+		"prefix":"icfname",
+		"body":[
+			"\\icfname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dccname":{
+		"prefix":"dccname",
+		"body":[
+			"\\dccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dcfname":{
+		"prefix":"dcfname",
+		"body":[
+			"\\dcfname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firsthline":{
+		"prefix":"firsthline",
+		"body":[
+			"\\firsthline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lasthline":{
+		"prefix":"lasthline",
+		"body":[
+			"\\lasthline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StatsGraph{}":{
+		"prefix":"StatsGraph",
+		"body":[
+			"\\StatsGraph{${1:data source}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +167,8 @@
 		"prefix":"StatsGraph",
 		"body":[
 			"\\StatsGraph[${2:options%keyvals}]{${1:data source}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +176,8 @@
 		"prefix":"StatsGraph",
 		"body":[
 			"\\StatsGraph{${1:data source}}[${2:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,6 +185,70 @@
 		"prefix":"StatsGraph",
 		"body":[
 			"\\StatsGraph[${2:options%keyvals}]{${1:data source}}[${3:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ccountname":{
+		"prefix":"ccountname",
+		"body":[
+			"\\ccountname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cfreqname":{
+		"prefix":"cfreqname",
+		"body":[
+			"\\cfreqname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"min":{
+		"prefix":"min",
+		"body":[
+			"\\min"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"max":{
+		"prefix":"max",
+		"body":[
+			"\\max"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"range":{
+		"prefix":"range",
+		"body":[
+			"\\range"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xstep":{
+		"prefix":"xstep",
+		"body":[
+			"\\xstep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"total":{
+		"prefix":"total",
+		"body":[
+			"\\total"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

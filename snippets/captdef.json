@@ -5,7 +5,8 @@
 		"prefix":"DeclareCaption",
 		"body":[
 			"\\DeclareCaption{${1:command}}{${2:counter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,15 +14,8 @@
 		"prefix":"figcaption",
 		"body":[
 			"\\figcaption{${1:text}}"
-		]
-	},
-
-
-	"tabcaption{}":{
-		"prefix":"tabcaption",
-		"body":[
-			"\\tabcaption{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +23,17 @@
 		"prefix":"figcaption",
 		"body":[
 			"\\figcaption[${2:short text%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tabcaption{}":{
+		"prefix":"tabcaption",
+		"body":[
+			"\\tabcaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +41,7 @@
 		"prefix":"tabcaption",
 		"body":[
 			"\\tabcaption[${2:short text%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,87 +5,8 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
-		]
-	},
-
-
-	"note{}":{
-		"prefix":"note",
-		"body":[
-			"\\note{${1:text}}"
-		]
-	},
-
-
-	"comment{}":{
-		"prefix":"comment",
-		"body":[
-			"\\comment{${1:text}}"
-		]
-	},
-
-
-	"fixed{}":{
-		"prefix":"fixed",
-		"body":[
-			"\\fixed{${1:text}}"
-		]
-	},
-
-
-	"placeholder{}":{
-		"prefix":"placeholder",
-		"body":[
-			"\\placeholder{${1:text}}"
-		]
-	},
-
-
-	"zebratodo{}":{
-		"prefix":"zebratodo",
-		"body":[
-			"\\zebratodo{${1:text%todo}}"
-		]
-	},
-
-
-	"zebranote{}":{
-		"prefix":"zebranote",
-		"body":[
-			"\\zebranote{${1:text}}"
-		]
-	},
-
-
-	"zebracomment{}":{
-		"prefix":"zebracomment",
-		"body":[
-			"\\zebracomment{${1:text}}"
-		]
-	},
-
-
-	"zebrafixed{}":{
-		"prefix":"zebrafixed",
-		"body":[
-			"\\zebrafixed{${1:text}}"
-		]
-	},
-
-
-	"zebraplaceholder{}":{
-		"prefix":"zebraplaceholder",
-		"body":[
-			"\\zebraplaceholder{${1:text}}"
-		]
-	},
-
-
-	"zebranewnote{}{}":{
-		"prefix":"zebranewnote",
-		"body":[
-			"\\zebranewnote{${1:note name}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo[${2:name}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"note{}":{
+		"prefix":"note",
+		"body":[
+			"\\note{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,17 @@
 		"prefix":"note",
 		"body":[
 			"\\note[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"comment{}":{
+		"prefix":"comment",
+		"body":[
+			"\\comment{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +50,17 @@
 		"prefix":"comment",
 		"body":[
 			"\\comment[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fixed{}":{
+		"prefix":"fixed",
+		"body":[
+			"\\fixed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +68,17 @@
 		"prefix":"fixed",
 		"body":[
 			"\\fixed[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeholder{}":{
+		"prefix":"placeholder",
+		"body":[
+			"\\placeholder{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +86,17 @@
 		"prefix":"placeholder",
 		"body":[
 			"\\placeholder[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebratodo{}":{
+		"prefix":"zebratodo",
+		"body":[
+			"\\zebratodo{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +104,17 @@
 		"prefix":"zebratodo",
 		"body":[
 			"\\zebratodo[${2:name}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebranote{}":{
+		"prefix":"zebranote",
+		"body":[
+			"\\zebranote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +122,17 @@
 		"prefix":"zebranote",
 		"body":[
 			"\\zebranote[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebracomment{}":{
+		"prefix":"zebracomment",
+		"body":[
+			"\\zebracomment{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +140,17 @@
 		"prefix":"zebracomment",
 		"body":[
 			"\\zebracomment[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebrafixed{}":{
+		"prefix":"zebrafixed",
+		"body":[
+			"\\zebrafixed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +158,17 @@
 		"prefix":"zebrafixed",
 		"body":[
 			"\\zebrafixed[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebraplaceholder{}":{
+		"prefix":"zebraplaceholder",
+		"body":[
+			"\\zebraplaceholder{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +176,16 @@
 		"prefix":"zebraplaceholder",
 		"body":[
 			"\\zebraplaceholder[${2:name}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zebranewnote{}{}":{
+		"prefix":"zebranewnote",
+		"body":[
+			"\\zebranewnote{${1:note name}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

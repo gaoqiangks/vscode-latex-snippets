@@ -5,7 +5,8 @@
 		"prefix":"mode<mode specification>",
 		"body":[
 			"\\mode<mode specification>{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mode",
 		"body":[
 			"\\mode{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,39 +23,8 @@
 		"prefix":"mode<mode specification>",
 		"body":[
 			"\\mode<mode specification>"
-		]
-	},
-
-
-	"includeslide{}":{
-		"prefix":"includeslide",
-		"body":[
-			"\\includeslide{${1:label name}}"
-		]
-	},
-
-
-	"setjobnamebeamerversion{}":{
-		"prefix":"setjobnamebeamerversion",
-		"body":[
-			"\\setjobnamebeamerversion{${1:filename without extension%file}}"
-		]
-	},
-
-
-	"thebeamerpauses":{
-		"prefix":"thebeamerpauses",
-		"body":[
-			"\\thebeamerpauses"
-		]
-	},
-
-
-	"jobnamebeamerversion":{
-		"prefix":"jobnamebeamerversion",
-		"body":[
-			"\\jobnamebeamerversion"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,17 @@
 		"prefix":"*mode",
 		"body":[
 			"\\mode*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"includeslide{}":{
+		"prefix":"includeslide",
+		"body":[
+			"\\includeslide{${1:label name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +50,34 @@
 		"prefix":"includeslide",
 		"body":[
 			"\\includeslide[${2:options%keyvals}]{${1:label name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setjobnamebeamerversion{}":{
+		"prefix":"setjobnamebeamerversion",
+		"body":[
+			"\\setjobnamebeamerversion{${1:filename without extension%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebeamerpauses":{
+		"prefix":"thebeamerpauses",
+		"body":[
+			"\\thebeamerpauses"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"jobnamebeamerversion":{
+		"prefix":"jobnamebeamerversion",
+		"body":[
+			"\\jobnamebeamerversion"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

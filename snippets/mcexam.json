@@ -5,7 +5,8 @@
 		"prefix":"mctheversion",
 		"body":[
 			"\\mctheversion"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mcexamoptions",
 		"body":[
 			"\\mcexamoptions{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,103 +23,8 @@
 		"prefix":"question",
 		"body":[
 			"\\question"
-		]
-	},
-
-
-	"answer":{
-		"prefix":"answer",
-		"body":[
-			"\\answer"
-		]
-	},
-
-
-	"answer{}{}":{
-		"prefix":"answer",
-		"body":[
-			"\\answer{${1:n}}{${2:answer}}"
-		]
-	},
-
-
-	"answernum{}":{
-		"prefix":"answernum",
-		"body":[
-			"\\answernum{${1:n}}"
-		]
-	},
-
-
-	"mcifoutput{}{}":{
-		"prefix":"mcifoutput",
-		"body":[
-			"\\mcifoutput{${1:output type%keyvals}}{${2:text}}"
-		]
-	},
-
-
-	"mcsetupConcept{}":{
-		"prefix":"mcsetupConcept",
-		"body":[
-			"\\mcsetupConcept{${1:keyvals}}"
-		]
-	},
-
-
-	"mcsetupExam{}":{
-		"prefix":"mcsetupExam",
-		"body":[
-			"\\mcsetupExam{${1:keyvals}}"
-		]
-	},
-
-
-	"mcsetupKey{}":{
-		"prefix":"mcsetupKey",
-		"body":[
-			"\\mcsetupKey{${1:keyvals}}"
-		]
-	},
-
-
-	"mcsetupAnswers{}":{
-		"prefix":"mcsetupAnswers",
-		"body":[
-			"\\mcsetupAnswers{${1:keyvals}}"
-		]
-	},
-
-
-	"mcsetupAnalysis{}":{
-		"prefix":"mcsetupAnalysis",
-		"body":[
-			"\\mcsetupAnalysis{${1:keyvals}}"
-		]
-	},
-
-
-	"mcversionlabelfmt":{
-		"prefix":"mcversionlabelfmt",
-		"body":[
-			"\\mcversionlabelfmt"
-		]
-	},
-
-
-	"mcquestionlabelfmt":{
-		"prefix":"mcquestionlabelfmt",
-		"body":[
-			"\\mcquestionlabelfmt"
-		]
-	},
-
-
-	"mcanswerlabelfmt":{
-		"prefix":"mcanswerlabelfmt",
-		"body":[
-			"\\mcanswerlabelfmt"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"question",
 		"body":[
 			"\\question[${1:option%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"answer":{
+		"prefix":"answer",
+		"body":[
+			"\\answer"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,17 @@
 		"prefix":"answer",
 		"body":[
 			"\\answer[${1:mark}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"answer{}{}":{
+		"prefix":"answer",
+		"body":[
+			"\\answer{${1:n}}{${2:answer}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +68,26 @@
 		"prefix":"answer",
 		"body":[
 			"\\answer[${3:mark}]{${1:n}}{${2:answer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"answernum{}":{
+		"prefix":"answernum",
+		"body":[
+			"\\answernum{${1:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcifoutput{}{}":{
+		"prefix":"mcifoutput",
+		"body":[
+			"\\mcifoutput{${1:output type%keyvals}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +95,80 @@
 		"prefix":"mcifoutput",
 		"body":[
 			"\\mcifoutput[${3:versions}]{${1:output type%keyvals}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mcsetupConcept{}":{
+		"prefix":"mcsetupConcept",
+		"body":[
+			"\\mcsetupConcept{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcsetupExam{}":{
+		"prefix":"mcsetupExam",
+		"body":[
+			"\\mcsetupExam{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcsetupKey{}":{
+		"prefix":"mcsetupKey",
+		"body":[
+			"\\mcsetupKey{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcsetupAnswers{}":{
+		"prefix":"mcsetupAnswers",
+		"body":[
+			"\\mcsetupAnswers{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcsetupAnalysis{}":{
+		"prefix":"mcsetupAnalysis",
+		"body":[
+			"\\mcsetupAnalysis{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcversionlabelfmt":{
+		"prefix":"mcversionlabelfmt",
+		"body":[
+			"\\mcversionlabelfmt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcquestionlabelfmt":{
+		"prefix":"mcquestionlabelfmt",
+		"body":[
+			"\\mcquestionlabelfmt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcanswerlabelfmt":{
+		"prefix":"mcanswerlabelfmt",
+		"body":[
+			"\\mcanswerlabelfmt"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -159,7 +178,8 @@
 			"\\begin{mcquestions}",
 				"\t$1",
 			"\\end{mcquestions}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -169,7 +189,19 @@
 			"\\begin{mcanswerslist}",
 				"\t$1",
 			"\\end{mcanswerslist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcanswerslist[]":{
+		"prefix":"mcanswerslist",
+		"body":[
+			"\\begin{mcanswerslist}",
+				"\t[${1:option%keyvals}]",
+			"\\end{mcanswerslist}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -179,7 +211,19 @@
 			"\\begin{mcanswers}",
 				"\t$1",
 			"\\end{mcanswers}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mcanswers[]":{
+		"prefix":"mcanswers",
+		"body":[
+			"\\begin{mcanswers}",
+				"\t[${1:option%keyvals}]",
+			"\\end{mcanswers}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +233,8 @@
 			"\\begin{mcquestioninstruction}",
 				"\t$1",
 			"\\end{mcquestioninstruction}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -199,7 +244,8 @@
 			"\\begin{mcexplanation}",
 				"\t$1",
 			"\\end{mcexplanation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -209,46 +255,29 @@
 			"\\begin{mcnotes}",
 				"\t$1",
 			"\\end{mcnotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"mcanswerslist":{
-		"prefix":"mcanswerslist",
-		"body":[
-			"\\begin{mcanswerslist}",
-				"\t$1",
-			"\\end{mcanswerslist}"
-		]
-	},
-
-
-	"mcanswers":{
-		"prefix":"mcanswers",
-		"body":[
-			"\\begin{mcanswers}",
-				"\t$1",
-			"\\end{mcanswers}"
-		]
-	},
-
-
-	"mcquestions":{
+	"mcquestions[]":{
 		"prefix":"mcquestions",
 		"body":[
 			"\\begin{mcquestions}",
-				"\t$1",
+				"\t[${1:R file ext}]",
 			"\\end{mcquestions}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"mcquestions":{
+	"mcquestions[]":{
 		"prefix":"mcquestions",
 		"body":[
 			"\\begin{mcquestions}",
-				"\t$1",
+				"\t[${1:R file ext}]",
 			"\\end{mcquestions}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

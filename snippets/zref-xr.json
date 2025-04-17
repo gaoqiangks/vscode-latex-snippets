@@ -5,31 +5,8 @@
 		"prefix":"zexternaldocument",
 		"body":[
 			"\\zexternaldocument{${1:file}}"
-		]
-	},
-
-
-	"zxrsetup{}":{
-		"prefix":"zxrsetup",
-		"body":[
-			"\\zxrsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"zexternaldocument*{}":{
-		"prefix":"*zexternaldocument",
-		"body":[
-			"\\zexternaldocument*{${1:file}}"
-		]
-	},
-
-
-	"zexternaldocument*[]{}[]":{
-		"prefix":"*zexternaldocument",
-		"body":[
-			"\\zexternaldocument*[${2:prefix}]{${1:file}}[${3:url}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +14,34 @@
 		"prefix":"zexternaldocument",
 		"body":[
 			"\\zexternaldocument[${2:prefix}]{${1:file}}[${3:url}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zexternaldocument*{}":{
+		"prefix":"*zexternaldocument",
+		"body":[
+			"\\zexternaldocument*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zexternaldocument*[]{}[]":{
+		"prefix":"*zexternaldocument",
+		"body":[
+			"\\zexternaldocument*[${2:prefix}]{${1:file}}[${3:url}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zxrsetup{}":{
+		"prefix":"zxrsetup",
+		"body":[
+			"\\zxrsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

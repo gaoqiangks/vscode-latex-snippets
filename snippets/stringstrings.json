@@ -5,7 +5,8 @@
 		"prefix":"thestring",
 		"body":[
 			"\\thestring"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"theresult",
 		"body":[
 			"\\theresult"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"Treatments",
 		"body":[
 			"\\Treatments{${1:U-mode}}{${2:l-mode}}{${3:p-mode}}{${4:n-mode}}{${5:s-mode}}{${6:b-mode}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"defaultTreatments",
 		"body":[
 			"\\defaultTreatments"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,383 +41,8 @@
 		"prefix":"encodetoken",
 		"body":[
 			"\\encodetoken{${1:token}}"
-		]
-	},
-
-
-	"decodetoken{}":{
-		"prefix":"decodetoken",
-		"body":[
-			"\\decodetoken{${1:token}}"
-		]
-	},
-
-
-	"substring{}{}{}":{
-		"prefix":"substring",
-		"body":[
-			"\\substring{${1:string}}{${2:min}}{${3:max}}"
-		]
-	},
-
-
-	"caseupper{}":{
-		"prefix":"caseupper",
-		"body":[
-			"\\caseupper{${1:string}}"
-		]
-	},
-
-
-	"caselower{}":{
-		"prefix":"caselower",
-		"body":[
-			"\\caselower{${1:string}}"
-		]
-	},
-
-
-	"solelyuppercase{}":{
-		"prefix":"solelyuppercase",
-		"body":[
-			"\\solelyuppercase{${1:string}}"
-		]
-	},
-
-
-	"solelylowercase{}":{
-		"prefix":"solelylowercase",
-		"body":[
-			"\\solelylowercase{${1:string}}"
-		]
-	},
-
-
-	"changecase{}":{
-		"prefix":"changecase",
-		"body":[
-			"\\changecase{${1:string}}"
-		]
-	},
-
-
-	"noblanks{}":{
-		"prefix":"noblanks",
-		"body":[
-			"\\noblanks{${1:string}}"
-		]
-	},
-
-
-	"nosymbolsnumerals{}":{
-		"prefix":"nosymbolsnumerals",
-		"body":[
-			"\\nosymbolsnumerals{${1:string}}"
-		]
-	},
-
-
-	"alphabetic{}":{
-		"prefix":"alphabetic",
-		"body":[
-			"\\alphabetic{${1:string}}"
-		]
-	},
-
-
-	"capitalize{}":{
-		"prefix":"capitalize",
-		"body":[
-			"\\capitalize{${1:string}}"
-		]
-	},
-
-
-	"capitalizewords{}":{
-		"prefix":"capitalizewords",
-		"body":[
-			"\\capitalizewords{${1:string}}"
-		]
-	},
-
-
-	"capitalizetitle{}":{
-		"prefix":"capitalizetitle",
-		"body":[
-			"\\capitalizetitle{${1:string}}"
-		]
-	},
-
-
-	"addlcword{}":{
-		"prefix":"addlcword",
-		"body":[
-			"\\addlcword{${1:word}}"
-		]
-	},
-
-
-	"addlcwords{}":{
-		"prefix":"addlcwords",
-		"body":[
-			"\\addlcwords{${1:word1 word2 word3 . . . }}"
-		]
-	},
-
-
-	"resetlcwords":{
-		"prefix":"resetlcwords",
-		"body":[
-			"\\resetlcwords"
-		]
-	},
-
-
-	"reversestring{}":{
-		"prefix":"reversestring",
-		"body":[
-			"\\reversestring{${1:string}}"
-		]
-	},
-
-
-	"convertchar{}{}{}":{
-		"prefix":"convertchar",
-		"body":[
-			"\\convertchar{${1:string}}{${2:from-char}}{${3:to-string}}"
-		]
-	},
-
-
-	"convertword{}{}{}":{
-		"prefix":"convertword",
-		"body":[
-			"\\convertword{${1:string}}{${2:from-string}}{${3:to-string}}"
-		]
-	},
-
-
-	"rotateword{}":{
-		"prefix":"rotateword",
-		"body":[
-			"\\rotateword{${1:string}}"
-		]
-	},
-
-
-	"removeword{}":{
-		"prefix":"removeword",
-		"body":[
-			"\\removeword{${1:string}}"
-		]
-	},
-
-
-	"getnextword{}":{
-		"prefix":"getnextword",
-		"body":[
-			"\\getnextword{${1:string}}"
-		]
-	},
-
-
-	"getaword{}{}":{
-		"prefix":"getaword",
-		"body":[
-			"\\getaword{${1:string}}{${2:n}}"
-		]
-	},
-
-
-	"rotateleadingspaces{}":{
-		"prefix":"rotateleadingspaces",
-		"body":[
-			"\\rotateleadingspaces{${1:string}}"
-		]
-	},
-
-
-	"removeleadingspaces{}":{
-		"prefix":"removeleadingspaces",
-		"body":[
-			"\\removeleadingspaces{${1:string}}"
-		]
-	},
-
-
-	"stringencode{}":{
-		"prefix":"stringencode",
-		"body":[
-			"\\stringencode{${1:string}}"
-		]
-	},
-
-
-	"stringdecode{}":{
-		"prefix":"stringdecode",
-		"body":[
-			"\\stringdecode{${1:string}}"
-		]
-	},
-
-
-	"gobblechar{}":{
-		"prefix":"gobblechar",
-		"body":[
-			"\\gobblechar{${1:string}}"
-		]
-	},
-
-
-	"gobblechars{}{}":{
-		"prefix":"gobblechars",
-		"body":[
-			"\\gobblechars{${1:string}}{${2:n}}"
-		]
-	},
-
-
-	"retokenize{}":{
-		"prefix":"retokenize",
-		"body":[
-			"\\retokenize{${1:string}}"
-		]
-	},
-
-
-	"stringlength{}":{
-		"prefix":"stringlength",
-		"body":[
-			"\\stringlength{${1:string}}"
-		]
-	},
-
-
-	"findchars{}{}":{
-		"prefix":"findchars",
-		"body":[
-			"\\findchars{${1:string}}{${2:match-char}}"
-		]
-	},
-
-
-	"findwords{}{}":{
-		"prefix":"findwords",
-		"body":[
-			"\\findwords{${1:string}}{${2:match-string}}"
-		]
-	},
-
-
-	"whereischar{}{}":{
-		"prefix":"whereischar",
-		"body":[
-			"\\whereischar{${1:string}}{${2:match-char}}"
-		]
-	},
-
-
-	"whereisword{}{}":{
-		"prefix":"whereisword",
-		"body":[
-			"\\whereisword{${1:string}}{${2:match-string}}"
-		]
-	},
-
-
-	"wordcount{}":{
-		"prefix":"wordcount",
-		"body":[
-			"\\wordcount{${1:string}}"
-		]
-	},
-
-
-	"getargs{}":{
-		"prefix":"getargs",
-		"body":[
-			"\\getargs{${1:string}}"
-		]
-	},
-
-
-	"isnextbyte{}{}":{
-		"prefix":"isnextbyte",
-		"body":[
-			"\\isnextbyte{${1:match-byte}}{${2:string}}"
-		]
-	},
-
-
-	"testmatchingchar{}{}{}":{
-		"prefix":"testmatchingchar",
-		"body":[
-			"\\testmatchingchar{${1:string}}{${2:n}}{${3:match-char}}"
-		]
-	},
-
-
-	"testcapitalized{}":{
-		"prefix":"testcapitalized",
-		"body":[
-			"\\testcapitalized{${1:string}}"
-		]
-	},
-
-
-	"testuncapitalized{}":{
-		"prefix":"testuncapitalized",
-		"body":[
-			"\\testuncapitalized{${1:string}}"
-		]
-	},
-
-
-	"testleadingalpha{}":{
-		"prefix":"testleadingalpha",
-		"body":[
-			"\\testleadingalpha{${1:string}}"
-		]
-	},
-
-
-	"testuppercase{}":{
-		"prefix":"testuppercase",
-		"body":[
-			"\\testuppercase{${1:string}}"
-		]
-	},
-
-
-	"testsolelyuppercase{}":{
-		"prefix":"testsolelyuppercase",
-		"body":[
-			"\\testsolelyuppercase{${1:string}}"
-		]
-	},
-
-
-	"testlowercase{}":{
-		"prefix":"testlowercase",
-		"body":[
-			"\\testlowercase{${1:string}}"
-		]
-	},
-
-
-	"testsolelylowercase{}":{
-		"prefix":"testsolelylowercase",
-		"body":[
-			"\\testsolelylowercase{${1:string}}"
-		]
-	},
-
-
-	"testalphabetic{}":{
-		"prefix":"testalphabetic",
-		"body":[
-			"\\testalphabetic{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +50,17 @@
 		"prefix":"encodetoken",
 		"body":[
 			"\\encodetoken[${2:index}]{${1:token}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"decodetoken{}":{
+		"prefix":"decodetoken",
+		"body":[
+			"\\decodetoken{${1:token}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -429,7 +68,17 @@
 		"prefix":"decodetoken",
 		"body":[
 			"\\decodetoken[${2:index}]{${1:token}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"substring{}{}{}":{
+		"prefix":"substring",
+		"body":[
+			"\\substring{${1:string}}{${2:min}}{${3:max}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -437,7 +86,17 @@
 		"prefix":"substring",
 		"body":[
 			"\\substring[${4:mode%keyvals}]{${1:string}}{${2:min}}{${3:max}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"caseupper{}":{
+		"prefix":"caseupper",
+		"body":[
+			"\\caseupper{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,7 +104,17 @@
 		"prefix":"caseupper",
 		"body":[
 			"\\caseupper[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"caselower{}":{
+		"prefix":"caselower",
+		"body":[
+			"\\caselower{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +122,17 @@
 		"prefix":"caselower",
 		"body":[
 			"\\caselower[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"solelyuppercase{}":{
+		"prefix":"solelyuppercase",
+		"body":[
+			"\\solelyuppercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +140,17 @@
 		"prefix":"solelyuppercase",
 		"body":[
 			"\\solelyuppercase[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"solelylowercase{}":{
+		"prefix":"solelylowercase",
+		"body":[
+			"\\solelylowercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +158,17 @@
 		"prefix":"solelylowercase",
 		"body":[
 			"\\solelylowercase[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"changecase{}":{
+		"prefix":"changecase",
+		"body":[
+			"\\changecase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +176,17 @@
 		"prefix":"changecase",
 		"body":[
 			"\\changecase[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"noblanks{}":{
+		"prefix":"noblanks",
+		"body":[
+			"\\noblanks{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +194,17 @@
 		"prefix":"noblanks",
 		"body":[
 			"\\noblanks[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nosymbolsnumerals{}":{
+		"prefix":"nosymbolsnumerals",
+		"body":[
+			"\\nosymbolsnumerals{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +212,17 @@
 		"prefix":"nosymbolsnumerals",
 		"body":[
 			"\\nosymbolsnumerals[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"alphabetic{}":{
+		"prefix":"alphabetic",
+		"body":[
+			"\\alphabetic{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +230,17 @@
 		"prefix":"alphabetic",
 		"body":[
 			"\\alphabetic[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"capitalize{}":{
+		"prefix":"capitalize",
+		"body":[
+			"\\capitalize{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +248,17 @@
 		"prefix":"capitalize",
 		"body":[
 			"\\capitalize[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"capitalizewords{}":{
+		"prefix":"capitalizewords",
+		"body":[
+			"\\capitalizewords{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +266,17 @@
 		"prefix":"capitalizewords",
 		"body":[
 			"\\capitalizewords[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"capitalizetitle{}":{
+		"prefix":"capitalizetitle",
+		"body":[
+			"\\capitalizetitle{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +284,44 @@
 		"prefix":"capitalizetitle",
 		"body":[
 			"\\capitalizetitle[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addlcword{}":{
+		"prefix":"addlcword",
+		"body":[
+			"\\addlcword{${1:word}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addlcwords{}":{
+		"prefix":"addlcwords",
+		"body":[
+			"\\addlcwords{${1:word1 word2 word3 . . . }}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetlcwords":{
+		"prefix":"resetlcwords",
+		"body":[
+			"\\resetlcwords"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reversestring{}":{
+		"prefix":"reversestring",
+		"body":[
+			"\\reversestring{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +329,17 @@
 		"prefix":"reversestring",
 		"body":[
 			"\\reversestring[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"convertchar{}{}{}":{
+		"prefix":"convertchar",
+		"body":[
+			"\\convertchar{${1:string}}{${2:from-char}}{${3:to-string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +347,17 @@
 		"prefix":"convertchar",
 		"body":[
 			"\\convertchar[${4:mode%keyvals}]{${1:string}}{${2:from-char}}{${3:to-string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"convertword{}{}{}":{
+		"prefix":"convertword",
+		"body":[
+			"\\convertword{${1:string}}{${2:from-string}}{${3:to-string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +365,17 @@
 		"prefix":"convertword",
 		"body":[
 			"\\convertword[${4:mode%keyvals}]{${1:string}}{${2:from-string}}{${3:to-string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rotateword{}":{
+		"prefix":"rotateword",
+		"body":[
+			"\\rotateword{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +383,17 @@
 		"prefix":"rotateword",
 		"body":[
 			"\\rotateword[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"removeword{}":{
+		"prefix":"removeword",
+		"body":[
+			"\\removeword{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +401,17 @@
 		"prefix":"removeword",
 		"body":[
 			"\\removeword[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getnextword{}":{
+		"prefix":"getnextword",
+		"body":[
+			"\\getnextword{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +419,17 @@
 		"prefix":"getnextword",
 		"body":[
 			"\\getnextword[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getaword{}{}":{
+		"prefix":"getaword",
+		"body":[
+			"\\getaword{${1:string}}{${2:n}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +437,17 @@
 		"prefix":"getaword",
 		"body":[
 			"\\getaword[${3:mode%keyvals}]{${1:string}}{${2:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rotateleadingspaces{}":{
+		"prefix":"rotateleadingspaces",
+		"body":[
+			"\\rotateleadingspaces{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +455,17 @@
 		"prefix":"rotateleadingspaces",
 		"body":[
 			"\\rotateleadingspaces[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"removeleadingspaces{}":{
+		"prefix":"removeleadingspaces",
+		"body":[
+			"\\removeleadingspaces{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +473,17 @@
 		"prefix":"removeleadingspaces",
 		"body":[
 			"\\removeleadingspaces[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stringencode{}":{
+		"prefix":"stringencode",
+		"body":[
+			"\\stringencode{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +491,17 @@
 		"prefix":"stringencode",
 		"body":[
 			"\\stringencode[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stringdecode{}":{
+		"prefix":"stringdecode",
+		"body":[
+			"\\stringdecode{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +509,17 @@
 		"prefix":"stringdecode",
 		"body":[
 			"\\stringdecode[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gobblechar{}":{
+		"prefix":"gobblechar",
+		"body":[
+			"\\gobblechar{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +527,17 @@
 		"prefix":"gobblechar",
 		"body":[
 			"\\gobblechar[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gobblechars{}{}":{
+		"prefix":"gobblechars",
+		"body":[
+			"\\gobblechars{${1:string}}{${2:n}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -629,7 +545,17 @@
 		"prefix":"gobblechars",
 		"body":[
 			"\\gobblechars[${3:mode%keyvals}]{${1:string}}{${2:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"retokenize{}":{
+		"prefix":"retokenize",
+		"body":[
+			"\\retokenize{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +563,17 @@
 		"prefix":"retokenize",
 		"body":[
 			"\\retokenize[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stringlength{}":{
+		"prefix":"stringlength",
+		"body":[
+			"\\stringlength{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -645,7 +581,17 @@
 		"prefix":"stringlength",
 		"body":[
 			"\\stringlength[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"findchars{}{}":{
+		"prefix":"findchars",
+		"body":[
+			"\\findchars{${1:string}}{${2:match-char}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +599,17 @@
 		"prefix":"findchars",
 		"body":[
 			"\\findchars[${3:mode%keyvals}]{${1:string}}{${2:match-char}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"findwords{}{}":{
+		"prefix":"findwords",
+		"body":[
+			"\\findwords{${1:string}}{${2:match-string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +617,17 @@
 		"prefix":"findwords",
 		"body":[
 			"\\findwords[${3:mode%keyvals}]{${1:string}}{${2:match-string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"whereischar{}{}":{
+		"prefix":"whereischar",
+		"body":[
+			"\\whereischar{${1:string}}{${2:match-char}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,7 +635,17 @@
 		"prefix":"whereischar",
 		"body":[
 			"\\whereischar[${3:mode%keyvals}]{${1:string}}{${2:match-char}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"whereisword{}{}":{
+		"prefix":"whereisword",
+		"body":[
+			"\\whereisword{${1:string}}{${2:match-string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +653,17 @@
 		"prefix":"whereisword",
 		"body":[
 			"\\whereisword[${3:mode%keyvals}]{${1:string}}{${2:match-string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wordcount{}":{
+		"prefix":"wordcount",
+		"body":[
+			"\\wordcount{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +671,17 @@
 		"prefix":"wordcount",
 		"body":[
 			"\\wordcount[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getargs{}":{
+		"prefix":"getargs",
+		"body":[
+			"\\getargs{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -693,7 +689,17 @@
 		"prefix":"getargs",
 		"body":[
 			"\\getargs[${2:mode%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"isnextbyte{}{}":{
+		"prefix":"isnextbyte",
+		"body":[
+			"\\isnextbyte{${1:match-byte}}{${2:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -701,6 +707,88 @@
 		"prefix":"isnextbyte",
 		"body":[
 			"\\isnextbyte[${3:mode%keyvals}]{${1:match-byte}}{${2:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"testmatchingchar{}{}{}":{
+		"prefix":"testmatchingchar",
+		"body":[
+			"\\testmatchingchar{${1:string}}{${2:n}}{${3:match-char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testcapitalized{}":{
+		"prefix":"testcapitalized",
+		"body":[
+			"\\testcapitalized{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testuncapitalized{}":{
+		"prefix":"testuncapitalized",
+		"body":[
+			"\\testuncapitalized{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testleadingalpha{}":{
+		"prefix":"testleadingalpha",
+		"body":[
+			"\\testleadingalpha{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testuppercase{}":{
+		"prefix":"testuppercase",
+		"body":[
+			"\\testuppercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testsolelyuppercase{}":{
+		"prefix":"testsolelyuppercase",
+		"body":[
+			"\\testsolelyuppercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testlowercase{}":{
+		"prefix":"testlowercase",
+		"body":[
+			"\\testlowercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testsolelylowercase{}":{
+		"prefix":"testsolelylowercase",
+		"body":[
+			"\\testsolelylowercase{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"testalphabetic{}":{
+		"prefix":"testalphabetic",
+		"body":[
+			"\\testalphabetic{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

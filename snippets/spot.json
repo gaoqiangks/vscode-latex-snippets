@@ -5,191 +5,8 @@
 		"prefix":"spot",
 		"body":[
 			"\\spot{${1:text}}"
-		]
-	},
-
-
-	"spot(){}":{
-		"prefix":"spot",
-		"body":[
-			"\\spot(${2:node name}){${1:text}}"
-		]
-	},
-
-
-	"spot<overlay spec>{}":{
-		"prefix":"spot<overlay spec>",
-		"body":[
-			"\\spot<overlay spec>{${1:text}}"
-		]
-	},
-
-
-	"spot<overlay spec>(){}":{
-		"prefix":"spot<overlay spec>",
-		"body":[
-			"\\spot<overlay spec>(${2:node name}){${1:text}}"
-		]
-	},
-
-
-	"setspotlightcolor{}":{
-		"prefix":"setspotlightcolor",
-		"body":[
-			"\\setspotlightcolor{${1:color}}"
-		]
-	},
-
-
-	"resetspotlightcolor":{
-		"prefix":"resetspotlightcolor",
-		"body":[
-			"\\resetspotlightcolor"
-		]
-	},
-
-
-	"spotlightcolor":{
-		"prefix":"spotlightcolor",
-		"body":[
-			"\\spotlightcolor"
-		]
-	},
-
-
-	"setspotlightstyle{}":{
-		"prefix":"setspotlightstyle",
-		"body":[
-			"\\setspotlightstyle{${1:node options%keyvals}}"
-		]
-	},
-
-
-	"resetspotlightstyle":{
-		"prefix":"resetspotlightstyle",
-		"body":[
-			"\\resetspotlightstyle"
-		]
-	},
-
-
-	"spotlightnodeoptions":{
-		"prefix":"spotlightnodeoptions",
-		"body":[
-			"\\spotlightnodeoptions"
-		]
-	},
-
-
-	"dospots":{
-		"prefix":"dospots",
-		"body":[
-			"\\dospots"
-		]
-	},
-
-
-	"dospotsheader":{
-		"prefix":"dospotsheader",
-		"body":[
-			"\\dospotsheader"
-		]
-	},
-
-
-	"dospotsfooter":{
-		"prefix":"dospotsfooter",
-		"body":[
-			"\\dospotsfooter"
-		]
-	},
-
-
-	"AtEndFrame{}":{
-		"prefix":"AtEndFrame",
-		"body":[
-			"\\AtEndFrame{${1:code}}"
-		]
-	},
-
-
-	"AtEveryBeginFrame{}":{
-		"prefix":"AtEveryBeginFrame",
-		"body":[
-			"\\AtEveryBeginFrame{${1:code}}"
-		]
-	},
-
-
-	"AtEveryEndFrame{}":{
-		"prefix":"AtEveryEndFrame",
-		"body":[
-			"\\AtEveryEndFrame{${1:code}}"
-		]
-	},
-
-
-	"spot*{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*{${1:text}}"
-		]
-	},
-
-
-	"spot*[]{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*[${2:node options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"spot*(){}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*(${2:node name}){${1:text}}"
-		]
-	},
-
-
-	"spot*()[]{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*(${3:node name})[${2:node options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"spot*<overlay spec>{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*<overlay spec>{${1:text}}"
-		]
-	},
-
-
-	"spot*<overlay spec>[]{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*<overlay spec>[${2:node options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"spot*<overlay spec>(){}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*<overlay spec>(${2:node name}){${1:text}}"
-		]
-	},
-
-
-	"spot*<overlay spec>()[]{}":{
-		"prefix":"*spot",
-		"body":[
-			"\\spot*<overlay spec>(${3:node name})[${2:node options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +14,17 @@
 		"prefix":"spot",
 		"body":[
 			"\\spot[${2:node options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"spot(){}":{
+		"prefix":"spot",
+		"body":[
+			"\\spot(${2:node name}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +32,17 @@
 		"prefix":"spot",
 		"body":[
 			"\\spot(${3:node name})[${2:node options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"spot<overlay spec>{}":{
+		"prefix":"spot<overlay spec>",
+		"body":[
+			"\\spot<overlay spec>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +50,17 @@
 		"prefix":"spot<overlay spec>",
 		"body":[
 			"\\spot<overlay spec>[${2:node options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"spot<overlay spec>(){}":{
+		"prefix":"spot<overlay spec>",
+		"body":[
+			"\\spot<overlay spec>(${2:node name}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,6 +68,187 @@
 		"prefix":"spot<overlay spec>",
 		"body":[
 			"\\spot<overlay spec>(${3:node name})[${2:node options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"spot*{}":{
+		"prefix":"*spot",
+		"body":[
+			"\\spot*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*[]{}":{
+		"prefix":"*spot",
+		"body":[
+			"\\spot*[${2:node options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*(){}":{
+		"prefix":"*spot",
+		"body":[
+			"\\spot*(${2:node name}){${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*()[]{}":{
+		"prefix":"*spot",
+		"body":[
+			"\\spot*(${3:node name})[${2:node options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*<overlay spec>{}":{
+		"prefix":"*spot<overlay spec>",
+		"body":[
+			"\\spot*<overlay spec>{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*<overlay spec>[]{}":{
+		"prefix":"*spot<overlay spec>",
+		"body":[
+			"\\spot*<overlay spec>[${2:node options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*<overlay spec>(){}":{
+		"prefix":"*spot<overlay spec>",
+		"body":[
+			"\\spot*<overlay spec>(${2:node name}){${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"spot*<overlay spec>()[]{}":{
+		"prefix":"*spot<overlay spec>",
+		"body":[
+			"\\spot*<overlay spec>(${3:node name})[${2:node options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setspotlightcolor{}":{
+		"prefix":"setspotlightcolor",
+		"body":[
+			"\\setspotlightcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetspotlightcolor":{
+		"prefix":"resetspotlightcolor",
+		"body":[
+			"\\resetspotlightcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spotlightcolor":{
+		"prefix":"spotlightcolor",
+		"body":[
+			"\\spotlightcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setspotlightstyle{}":{
+		"prefix":"setspotlightstyle",
+		"body":[
+			"\\setspotlightstyle{${1:node options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetspotlightstyle":{
+		"prefix":"resetspotlightstyle",
+		"body":[
+			"\\resetspotlightstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spotlightnodeoptions":{
+		"prefix":"spotlightnodeoptions",
+		"body":[
+			"\\spotlightnodeoptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dospots":{
+		"prefix":"dospots",
+		"body":[
+			"\\dospots"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dospotsheader":{
+		"prefix":"dospotsheader",
+		"body":[
+			"\\dospotsheader"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dospotsfooter":{
+		"prefix":"dospotsfooter",
+		"body":[
+			"\\dospotsfooter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndFrame{}":{
+		"prefix":"AtEndFrame",
+		"body":[
+			"\\AtEndFrame{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEveryBeginFrame{}":{
+		"prefix":"AtEveryBeginFrame",
+		"body":[
+			"\\AtEveryBeginFrame{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEveryEndFrame{}":{
+		"prefix":"AtEveryEndFrame",
+		"body":[
+			"\\AtEveryEndFrame{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

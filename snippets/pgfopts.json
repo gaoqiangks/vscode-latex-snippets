@@ -5,15 +5,8 @@
 		"prefix":"ProcessPgfOptions",
 		"body":[
 			"\\ProcessPgfOptions{${1:path}}"
-		]
-	},
-
-
-	"ProcessPgfPackageOptions{}":{
-		"prefix":"ProcessPgfPackageOptions",
-		"body":[
-			"\\ProcessPgfPackageOptions{${1:path}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"*ProcessPgfOptions",
 		"body":[
 			"\\ProcessPgfOptions*{${1:path}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ProcessPgfPackageOptions{}":{
+		"prefix":"ProcessPgfPackageOptions",
+		"body":[
+			"\\ProcessPgfPackageOptions{${1:path}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +32,7 @@
 		"prefix":"*ProcessPgfPackageOptions",
 		"body":[
 			"\\ProcessPgfPackageOptions*{${1:path}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

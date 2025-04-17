@@ -5,7 +5,8 @@
 		"prefix":"thline",
 		"body":[
 			"\\thline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"thline",
 		"body":[
 			"\\thline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"setlstracking",
 		"body":[
 			"\\setlstracking{${1:value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"texttracking",
 		"body":[
 			"\\texttracking{${1:value}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,16 +41,18 @@
 		"prefix":"thline",
 		"body":[
 			"\\thline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"proof":{
+	"proof[]":{
 		"prefix":"proof",
 		"body":[
 			"\\begin{proof}",
-				"\t$1",
+				"\t[${1:heading%text}]",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

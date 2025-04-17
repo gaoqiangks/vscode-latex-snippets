@@ -5,71 +5,8 @@
 		"prefix":"fancyqr",
 		"body":[
 			"\\fancyqr{${1:URL}}"
-		]
-	},
-
-
-	"fancyqrset{}":{
-		"prefix":"fancyqrset",
-		"body":[
-			"\\fancyqrset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"FancyQrDoNotPrintSquare{}{}":{
-		"prefix":"FancyQrDoNotPrintSquare",
-		"body":[
-			"\\FancyQrDoNotPrintSquare{${1:x}}{${2:y}}"
-		]
-	},
-
-
-	"FancyQrRoundCut":{
-		"prefix":"FancyQrRoundCut",
-		"body":[
-			"\\FancyQrRoundCut"
-		]
-	},
-
-
-	"FancyQrHardCut":{
-		"prefix":"FancyQrHardCut",
-		"body":[
-			"\\FancyQrHardCut"
-		]
-	},
-
-
-	"FancyQrLoad{}":{
-		"prefix":"FancyQrLoad",
-		"body":[
-			"\\FancyQrLoad{${1:style-name%keyvals}}"
-		]
-	},
-
-
-	"FancyQrLoadDefault":{
-		"prefix":"FancyQrLoadDefault",
-		"body":[
-			"\\FancyQrLoadDefault"
-		]
-	},
-
-
-	"fancyqr*{}":{
-		"prefix":"*fancyqr",
-		"body":[
-			"\\fancyqr*{${1:URL}}"
-		]
-	},
-
-
-	"fancyqr*[]{}":{
-		"prefix":"*fancyqr",
-		"body":[
-			"\\fancyqr*[${2:options%keyvals}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +14,79 @@
 		"prefix":"fancyqr",
 		"body":[
 			"\\fancyqr[${2:options%keyvals}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fancyqr*{}":{
+		"prefix":"*fancyqr",
+		"body":[
+			"\\fancyqr*{${1:URL}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancyqr*[]{}":{
+		"prefix":"*fancyqr",
+		"body":[
+			"\\fancyqr*[${2:options%keyvals}]{${1:URL}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancyqrset{}":{
+		"prefix":"fancyqrset",
+		"body":[
+			"\\fancyqrset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyQrDoNotPrintSquare{}{}":{
+		"prefix":"FancyQrDoNotPrintSquare",
+		"body":[
+			"\\FancyQrDoNotPrintSquare{${1:x}}{${2:y}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyQrRoundCut":{
+		"prefix":"FancyQrRoundCut",
+		"body":[
+			"\\FancyQrRoundCut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyQrHardCut":{
+		"prefix":"FancyQrHardCut",
+		"body":[
+			"\\FancyQrHardCut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyQrLoad{}":{
+		"prefix":"FancyQrLoad",
+		"body":[
+			"\\FancyQrLoad{${1:style-name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyQrLoadDefault":{
+		"prefix":"FancyQrLoadDefault",
+		"body":[
+			"\\FancyQrLoadDefault"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

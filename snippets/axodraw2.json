@@ -5,7 +5,8 @@
 		"prefix":"B2Text",
 		"body":[
 			"\\B2Text"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"G2Text",
 		"body":[
 			"\\G2Text"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"C2Text",
 		"body":[
 			"\\C2Text"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"AxoGrid",
 		"body":[
 			"\\AxoGrid(${3:x},${4:y})(${5:xsize},${6:ysize})(${7:xdivs},${8:ydivs}){${1:color}}{${2:linewidth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,2767 +41,8 @@
 		"prefix":"Line",
 		"body":[
 			"\\Line(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"DoubleLine()(){}":{
-		"prefix":"DoubleLine",
-		"body":[
-			"\\DoubleLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:linesep}}"
-		]
-	},
-
-
-	"DashLine()(){}":{
-		"prefix":"DashLine",
-		"body":[
-			"\\DashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleLine()(){}{}":{
-		"prefix":"DashDoubleLine",
-		"body":[
-			"\\DashDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"Arc()()":{
-		"prefix":"Arc",
-		"body":[
-			"\\Arc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"CArc()()":{
-		"prefix":"CArc",
-		"body":[
-			"\\CArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"DoubleArc()(){}":{
-		"prefix":"DoubleArc",
-		"body":[
-			"\\DoubleArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
-		]
-	},
-
-
-	"DoubleCArc()(){}":{
-		"prefix":"DoubleCArc",
-		"body":[
-			"\\DoubleCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
-		]
-	},
-
-
-	"DashArc()(){}":{
-		"prefix":"DashArc",
-		"body":[
-			"\\DashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashCArc()(){}":{
-		"prefix":"DashCArc",
-		"body":[
-			"\\DashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleArc()(){}{}":{
-		"prefix":"DashDoubleArc",
-		"body":[
-			"\\DashDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleCArc()(){}{}":{
-		"prefix":"DashDoubleCArc",
-		"body":[
-			"\\DashDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"Bezier()()()()":{
-		"prefix":"Bezier",
-		"body":[
-			"\\Bezier(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})(${7:x4},${8:y4})"
-		]
-	},
-
-
-	"DoubleBezier()()()(){}":{
-		"prefix":"DoubleBezier",
-		"body":[
-			"\\DoubleBezier(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4}){${1:linesep}}"
-		]
-	},
-
-
-	"DashBezier()()()(){}":{
-		"prefix":"DashBezier",
-		"body":[
-			"\\DashBezier(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleBezier()()()(){}{}":{
-		"prefix":"DashDoubleBezier",
-		"body":[
-			"\\DashDoubleBezier(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})(${9:x4},${10:y4}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"Curve{}":{
-		"prefix":"Curve",
-		"body":[
-			"\\Curve{${1:(${2:x1},${3:y1})(${4:x2},${5:y2})...}}"
-		]
-	},
-
-
-	"DashCurve{}{}":{
-		"prefix":"DashCurve",
-		"body":[
-			"\\DashCurve{${1:(${3:x1},${4:y1})(${5:x2},${6:y2})...}}{${2:dashsize}}"
-		]
-	},
-
-
-	"Gluon()(){}{}":{
-		"prefix":"Gluon",
-		"body":[
-			"\\Gluon(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoubleGluon()(){}{}{}":{
-		"prefix":"DoubleGluon",
-		"body":[
-			"\\DoubleGluon(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashGluon()(){}{}{}":{
-		"prefix":"DashGluon",
-		"body":[
-			"\\DashGluon(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGluon()(){}{}{}{}":{
-		"prefix":"DashDoubleGluon",
-		"body":[
-			"\\DashDoubleGluon(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"GluonArc()(){}{}":{
-		"prefix":"GluonArc",
-		"body":[
-			"\\GluonArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"GlueArc()(){}{}":{
-		"prefix":"GlueArc",
-		"body":[
-			"\\GlueArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"GluonArcn()(){}{}":{
-		"prefix":"GluonArcn",
-		"body":[
-			"\\GluonArcn(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"GlueArcn()(){}{}":{
-		"prefix":"GlueArcn",
-		"body":[
-			"\\GlueArcn(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoubleGluonArc()(){}{}{}":{
-		"prefix":"DoubleGluonArc",
-		"body":[
-			"\\DoubleGluonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DoubleGlueArc()(){}{}{}":{
-		"prefix":"DoubleGlueArc",
-		"body":[
-			"\\DoubleGlueArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DoubleGluonArcn()(){}{}{}":{
-		"prefix":"DoubleGluonArcn",
-		"body":[
-			"\\DoubleGluonArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DoubleGlueArcn()(){}{}{}":{
-		"prefix":"DoubleGlueArcn",
-		"body":[
-			"\\DoubleGlueArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashGluonArc()(){}{}{}":{
-		"prefix":"DashGluonArc",
-		"body":[
-			"\\DashGluonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashGlueArc()(){}{}{}":{
-		"prefix":"DashGlueArc",
-		"body":[
-			"\\DashGlueArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashGluonArcn()(){}{}{}":{
-		"prefix":"DashGluonArcn",
-		"body":[
-			"\\DashGluonArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashGlueArcn()(){}{}{}":{
-		"prefix":"DashGlueArcn",
-		"body":[
-			"\\DashGlueArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGluonArc()(){}{}{}{}":{
-		"prefix":"DashDoubleGluonArc",
-		"body":[
-			"\\DashDoubleGluonArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGlueArc()(){}{}{}{}":{
-		"prefix":"DashDoubleGlueArc",
-		"body":[
-			"\\DashDoubleGlueArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGluonArcn()(){}{}{}{}":{
-		"prefix":"DashDoubleGluonArcn",
-		"body":[
-			"\\DashDoubleGluonArcn(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGlueArcn()(){}{}{}{}":{
-		"prefix":"DashDoubleGlueArcn",
-		"body":[
-			"\\DashDoubleGlueArcn(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"GluonCirc()(){}{}":{
-		"prefix":"GluonCirc",
-		"body":[
-			"\\GluonCirc(${3:x},${4:y})(${5:radius},${6:phase}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoubleGluonCirc()(){}{}{}":{
-		"prefix":"DoubleGluonCirc",
-		"body":[
-			"\\DoubleGluonCirc(${4:x},${5:y})(${6:radius},${7:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashGluonCirc()(){}{}{}":{
-		"prefix":"DashGluonCirc",
-		"body":[
-			"\\DashGluonCirc(${4:x},${5:y})(${6:radius},${7:phase}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleGluonCirc()(){}{}{}{}":{
-		"prefix":"DashDoubleGluonCirc",
-		"body":[
-			"\\DashDoubleGluonCirc(${5:x},${6:y})(${7:radius},${8:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"Photon()(){}{}":{
-		"prefix":"Photon",
-		"body":[
-			"\\Photon(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoublePhoton()(){}{}{}":{
-		"prefix":"DoublePhoton",
-		"body":[
-			"\\DoublePhoton(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashPhoton()(){}{}{}":{
-		"prefix":"DashPhoton",
-		"body":[
-			"\\DashPhoton(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoublePhoton()(){}{}{}{}":{
-		"prefix":"DashDoublePhoton",
-		"body":[
-			"\\DashDoublePhoton(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"PhotonArc()(){}{}":{
-		"prefix":"PhotonArc",
-		"body":[
-			"\\PhotonArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoublePhotonArc()(){}{}{}":{
-		"prefix":"DoublePhotonArc",
-		"body":[
-			"\\DoublePhotonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashPhotonArc()(){}{}{}":{
-		"prefix":"DashPhotonArc",
-		"body":[
-			"\\DashPhotonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoublePhotonArc()(){}{}{}{}":{
-		"prefix":"DashDoublePhotonArc",
-		"body":[
-			"\\DashDoublePhotonArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"ZigZag()(){}{}":{
-		"prefix":"ZigZag",
-		"body":[
-			"\\ZigZag(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoubleZigZag()(){}{}{}":{
-		"prefix":"DoubleZigZag",
-		"body":[
-			"\\DoubleZigZag(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashZigZag()(){}{}{}":{
-		"prefix":"DashZigZag",
-		"body":[
-			"\\DashZigZag(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleZigZag()(){}{}{}{}":{
-		"prefix":"DashDoubleZigZag",
-		"body":[
-			"\\DashDoubleZigZag(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"ZigZagArc()(){}{}":{
-		"prefix":"ZigZagArc",
-		"body":[
-			"\\ZigZagArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
-		]
-	},
-
-
-	"DoubleZigZagArc()(){}{}{}":{
-		"prefix":"DoubleZigZagArc",
-		"body":[
-			"\\DoubleZigZagArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
-	},
-
-
-	"DashZigZagArc()(){}{}{}":{
-		"prefix":"DashZigZagArc",
-		"body":[
-			"\\DashZigZagArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
-	},
-
-
-	"DashDoubleZigZagArc()(){}{}{}{}":{
-		"prefix":"DashDoubleZigZagArc",
-		"body":[
-			"\\DashDoubleZigZagArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
-	},
-
-
-	"Vertex(){}":{
-		"prefix":"Vertex",
-		"body":[
-			"\\Vertex(${2:x},${3:y}){${1:radius}}"
-		]
-	},
-
-
-	"FCirc(){}":{
-		"prefix":"FCirc",
-		"body":[
-			"\\FCirc(${2:x},${3:y}){${1:radius}}"
-		]
-	},
-
-
-	"ECirc(){}":{
-		"prefix":"ECirc",
-		"body":[
-			"\\ECirc(${2:x},${3:y}){${1:radius}}"
-		]
-	},
-
-
-	"BCirc(){}":{
-		"prefix":"BCirc",
-		"body":[
-			"\\BCirc(${2:x},${3:y}){${1:radius}}"
-		]
-	},
-
-
-	"GCirc(){}{}":{
-		"prefix":"GCirc",
-		"body":[
-			"\\GCirc(${3:x},${4:y}){${1:radius}}{${2:grayscale}}"
-		]
-	},
-
-
-	"CCirc(){}{}{}":{
-		"prefix":"CCirc",
-		"body":[
-			"\\CCirc(${4:x},${5:y}){${1:radius}}{${2:bound color}}{${3:fill color}}"
-		]
-	},
-
-
-	"Oval()()()":{
-		"prefix":"Oval",
-		"body":[
-			"\\Oval(${1:x},${2:y})(${3:half-height},${4:half-width})(${5:angle})"
-		]
-	},
-
-
-	"FOval()()()":{
-		"prefix":"FOval",
-		"body":[
-			"\\FOval(${1:x},${2:y})(${3:half-height},${4:half-width})(${5:angle})"
-		]
-	},
-
-
-	"GOval()()(){}":{
-		"prefix":"GOval",
-		"body":[
-			"\\GOval(${2:x},${3:y})(${4:half-height},${5:half-width})(${6:angle}){${1:grayscale}}"
-		]
-	},
-
-
-	"COval()()(){}{}":{
-		"prefix":"COval",
-		"body":[
-			"\\COval(${3:x},${4:y})(${5:half-height},${6:half-width})(${7:angle}){${1:bound color}}{${2:fill color}}"
-		]
-	},
-
-
-	"EBox()()":{
-		"prefix":"EBox",
-		"body":[
-			"\\EBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"FBox()()":{
-		"prefix":"FBox",
-		"body":[
-			"\\FBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"BBox()()":{
-		"prefix":"BBox",
-		"body":[
-			"\\BBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"GBox()(){}":{
-		"prefix":"GBox",
-		"body":[
-			"\\GBox(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:grayscale}}"
-		]
-	},
-
-
-	"CBox()(){}{}":{
-		"prefix":"CBox",
-		"body":[
-			"\\CBox(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:bound color}}{${2:fill color}}"
-		]
-	},
-
-
-	"EBoxc()()":{
-		"prefix":"EBoxc",
-		"body":[
-			"\\EBoxc(${1:x},${2:y})(${3:width},${4:height})"
-		]
-	},
-
-
-	"Boxc()()":{
-		"prefix":"Boxc",
-		"body":[
-			"\\Boxc(${1:x},${2:y})(${3:width},${4:height})"
-		]
-	},
-
-
-	"FBoxc()()":{
-		"prefix":"FBoxc",
-		"body":[
-			"\\FBoxc(${1:x},${2:y})(${3:width},${4:height})"
-		]
-	},
-
-
-	"BBoxc()()":{
-		"prefix":"BBoxc",
-		"body":[
-			"\\BBoxc(${1:x},${2:y})(${3:width},${4:height})"
-		]
-	},
-
-
-	"GBoxc()(){}":{
-		"prefix":"GBoxc",
-		"body":[
-			"\\GBoxc(${2:x},${3:y})(${4:width},${5:height}){${1:grayscale}}"
-		]
-	},
-
-
-	"CBoxc()(){}{}":{
-		"prefix":"CBoxc",
-		"body":[
-			"\\CBoxc(${3:x},${4:y})(${5:width},${6:height}){${1:bound color}}{${2:fill color}}"
-		]
-	},
-
-
-	"RotatedBox()(){}{}":{
-		"prefix":"RotatedBox",
-		"body":[
-			"\\RotatedBox(${3:x},${4:y})(${5:width},${6:height}){${1:angle}}{${2:color}}"
-		]
-	},
-
-
-	"FilledRotatedBox()(){}{}":{
-		"prefix":"FilledRotatedBox",
-		"body":[
-			"\\FilledRotatedBox(${3:x},${4:y})(${5:width},${6:height}){${1:angle}}{${2:color}}"
-		]
-	},
-
-
-	"ETri()()()":{
-		"prefix":"ETri",
-		"body":[
-			"\\ETri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
-		]
-	},
-
-
-	"FTri()()()":{
-		"prefix":"FTri",
-		"body":[
-			"\\FTri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
-		]
-	},
-
-
-	"BTri()()()":{
-		"prefix":"BTri",
-		"body":[
-			"\\BTri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
-		]
-	},
-
-
-	"GTri()()(){}":{
-		"prefix":"GTri",
-		"body":[
-			"\\GTri(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3}){${1:grayscale}}"
-		]
-	},
-
-
-	"CTri()()(){}{}":{
-		"prefix":"CTri",
-		"body":[
-			"\\CTri(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3}){${1:bound color}}{${2:fill color}}"
-		]
-	},
-
-
-	"Polygon{}{}":{
-		"prefix":"Polygon",
-		"body":[
-			"\\Polygon{${1:(${3:x1},${4:y1}),(${5:x2},${6:y2}),...}}{${2:color}}"
-		]
-	},
-
-
-	"FilledPolygon{}{}":{
-		"prefix":"FilledPolygon",
-		"body":[
-			"\\FilledPolygon{${1:(${3:x1},${4:y1}),(${5:x2},${6:y2}),...}}{${2:color}}"
-		]
-	},
-
-
-	"LinAxis()()()":{
-		"prefix":"LinAxis",
-		"body":[
-			"\\LinAxis(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:divs},${6:subdivs},${7:hashsize},${8:offset},${9:width})"
-		]
-	},
-
-
-	"LogAxis()()()":{
-		"prefix":"LogAxis",
-		"body":[
-			"\\LogAxis(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:divs},${6:hashsize},${7:offset},${8:width})"
-		]
-	},
-
-
-	"Text(){}":{
-		"prefix":"Text",
-		"body":[
-			"\\Text(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"Text()(){}":{
-		"prefix":"Text",
-		"body":[
-			"\\Text(${2:x},${3:y})(${4:angle}){${1:text}}"
-		]
-	},
-
-
-	"rText(){}":{
-		"prefix":"rText",
-		"body":[
-			"\\rText(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"RText()(){}":{
-		"prefix":"RText",
-		"body":[
-			"\\RText(${2:x},${3:y})(${4:angle}){${1:text}}"
-		]
-	},
-
-
-	"SetPFont{}{}":{
-		"prefix":"SetPFont",
-		"body":[
-			"\\SetPFont{${1:postscript font%keyvals}}{${2:size}}"
-		]
-	},
-
-
-	"PText()(){}":{
-		"prefix":"PText",
-		"body":[
-			"\\PText(${2:x},${3:y})(${4:angle}){${1:text}}"
-		]
-	},
-
-
-	"BText(){}":{
-		"prefix":"BText",
-		"body":[
-			"\\BText(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"GText(){}{}":{
-		"prefix":"GText",
-		"body":[
-			"\\GText(${3:x},${4:y}){${1:grayscale}}{${2:text}}"
-		]
-	},
-
-
-	"CText(){}{}{}":{
-		"prefix":"CText",
-		"body":[
-			"\\CText(${4:x},${5:y}){${1:bound color}}{${2:fill color}}{${3:text}}"
-		]
-	},
-
-
-	"BTwoText(){}{}":{
-		"prefix":"BTwoText",
-		"body":[
-			"\\BTwoText(${3:x},${4:y}){${1:text1%text}}{${2:text2%text}}"
-		]
-	},
-
-
-	"GTwoText(){}{}{}":{
-		"prefix":"GTwoText",
-		"body":[
-			"\\GTwoText(${4:x},${5:y}){${1:grayscale}}{${2:text1%text}}{${3:text2%text}}"
-		]
-	},
-
-
-	"CTwoText(){}{}{}{}":{
-		"prefix":"CTwoText",
-		"body":[
-			"\\CTwoText(${5:x},${6:y}){${1:bound color}}{${2:fill color}}{${3:text1%text}}{${4:text2%text}}"
-		]
-	},
-
-
-	"ArrowLine()()":{
-		"prefix":"ArrowLine",
-		"body":[
-			"\\ArrowLine(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"LongArrow()()":{
-		"prefix":"LongArrow",
-		"body":[
-			"\\LongArrow(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"ArrowDoubleLine()(){}":{
-		"prefix":"ArrowDoubleLine",
-		"body":[
-			"\\ArrowDoubleLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:linesep}}"
-		]
-	},
-
-
-	"DashArrowLine()(){}":{
-		"prefix":"DashArrowLine",
-		"body":[
-			"\\DashArrowLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashLine()(){}":{
-		"prefix":"ArrowDashLine",
-		"body":[
-			"\\ArrowDashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashArrowDoubleLine()(){}{}":{
-		"prefix":"DashArrowDoubleLine",
-		"body":[
-			"\\DashArrowDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashDoubleLine()(){}{}":{
-		"prefix":"ArrowDashDoubleLine",
-		"body":[
-			"\\ArrowDashDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"DashLongArrowLine()(){}":{
-		"prefix":"DashLongArrowLine",
-		"body":[
-			"\\DashLongArrowLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongArrowDashLine()(){}":{
-		"prefix":"LongArrowDashLine",
-		"body":[
-			"\\LongArrowDashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongArrowDash()(){}":{
-		"prefix":"LongArrowDash",
-		"body":[
-			"\\LongArrowDash(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashLongArrow()(){}":{
-		"prefix":"DashLongArrow",
-		"body":[
-			"\\DashLongArrow(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongArrowArcn()()":{
-		"prefix":"LongArrowArcn",
-		"body":[
-			"\\LongArrowArcn(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"ArrowArcn()()":{
-		"prefix":"ArrowArcn",
-		"body":[
-			"\\ArrowArcn(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"LongArrowArc()()":{
-		"prefix":"LongArrowArc",
-		"body":[
-			"\\LongArrowArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"ArrowArc()()":{
-		"prefix":"ArrowArc",
-		"body":[
-			"\\ArrowArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"ArrowCArc()()":{
-		"prefix":"ArrowCArc",
-		"body":[
-			"\\ArrowCArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
-		]
-	},
-
-
-	"DashArrowArcn()(){}":{
-		"prefix":"DashArrowArcn",
-		"body":[
-			"\\DashArrowArcn(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashArcn()(){}":{
-		"prefix":"ArrowDashArcn",
-		"body":[
-			"\\ArrowDashArcn(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashArrowArc()(){}":{
-		"prefix":"DashArrowArc",
-		"body":[
-			"\\DashArrowArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"DashArrowCArc()(){}":{
-		"prefix":"DashArrowCArc",
-		"body":[
-			"\\DashArrowCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashArc()(){}":{
-		"prefix":"ArrowDashArc",
-		"body":[
-			"\\ArrowDashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashCArc()(){}":{
-		"prefix":"ArrowDashCArc",
-		"body":[
-			"\\ArrowDashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongDashArrowArc()(){}":{
-		"prefix":"LongDashArrowArc",
-		"body":[
-			"\\LongDashArrowArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongDashArrowCArc()(){}":{
-		"prefix":"LongDashArrowCArc",
-		"body":[
-			"\\LongDashArrowCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongArrowDashArc()(){}":{
-		"prefix":"LongArrowDashArc",
-		"body":[
-			"\\LongArrowDashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"LongArrowDashCArc()(){}":{
-		"prefix":"LongArrowDashCArc",
-		"body":[
-			"\\LongArrowDashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
-		]
-	},
-
-
-	"ArrowDoubleArc()(){}":{
-		"prefix":"ArrowDoubleArc",
-		"body":[
-			"\\ArrowDoubleArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
-		]
-	},
-
-
-	"ArrowDoubleCArc()(){}":{
-		"prefix":"ArrowDoubleCArc",
-		"body":[
-			"\\ArrowDoubleCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
-		]
-	},
-
-
-	"ArrowDashDoubleArc()(){}{}":{
-		"prefix":"ArrowDashDoubleArc",
-		"body":[
-			"\\ArrowDashDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"ArrowDashDoubleCArc()(){}{}":{
-		"prefix":"ArrowDashDoubleCArc",
-		"body":[
-			"\\ArrowDashDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"DashArrowDoubleArc()(){}{}":{
-		"prefix":"DashArrowDoubleArc",
-		"body":[
-			"\\DashArrowDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"DashArrowDoubleCArc()(){}{}":{
-		"prefix":"DashArrowDoubleCArc",
-		"body":[
-			"\\DashArrowDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
-	},
-
-
-	"SetDashSize{}":{
-		"prefix":"SetDashSize",
-		"body":[
-			"\\SetDashSize{${1:number}}"
-		]
-	},
-
-
-	"SetLineSep{}":{
-		"prefix":"SetLineSep",
-		"body":[
-			"\\SetLineSep{${1:number}}"
-		]
-	},
-
-
-	"SetSep{}":{
-		"prefix":"SetSep",
-		"body":[
-			"\\SetSep{${1:number}}"
-		]
-	},
-
-
-	"SetWidth{}":{
-		"prefix":"SetWidth",
-		"body":[
-			"\\SetWidth{${1:number}}"
-		]
-	},
-
-
-	"SetArrowAspect{}":{
-		"prefix":"SetArrowAspect",
-		"body":[
-			"\\SetArrowAspect{${1:number}}"
-		]
-	},
-
-
-	"SetArrowInset{}":{
-		"prefix":"SetArrowInset",
-		"body":[
-			"\\SetArrowInset{${1:number}}"
-		]
-	},
-
-
-	"SetArrowPosition{}":{
-		"prefix":"SetArrowPosition",
-		"body":[
-			"\\SetArrowPosition{${1:number}}"
-		]
-	},
-
-
-	"SetArrowScale{}":{
-		"prefix":"SetArrowScale",
-		"body":[
-			"\\SetArrowScale{${1:number}}"
-		]
-	},
-
-
-	"DefaultArrowScale{}":{
-		"prefix":"DefaultArrowScale",
-		"body":[
-			"\\DefaultArrowScale{${1:number}}"
-		]
-	},
-
-
-	"SetArrowStroke{}":{
-		"prefix":"SetArrowStroke",
-		"body":[
-			"\\SetArrowStroke{${1:number}}"
-		]
-	},
-
-
-	"SetArrowSize{}":{
-		"prefix":"SetArrowSize",
-		"body":[
-			"\\SetArrowSize{${1:number}}"
-		]
-	},
-
-
-	"canvasScaleOnept":{
-		"prefix":"canvasScaleOnept",
-		"body":[
-			"\\canvasScaleOnept"
-		]
-	},
-
-
-	"canvasScaleObjectScale":{
-		"prefix":"canvasScaleObjectScale",
-		"body":[
-			"\\canvasScaleObjectScale"
-		]
-	},
-
-
-	"canvasScaleUnitLength":{
-		"prefix":"canvasScaleUnitLength",
-		"body":[
-			"\\canvasScaleUnitLength"
-		]
-	},
-
-
-	"SetScale{}":{
-		"prefix":"SetScale",
-		"body":[
-			"\\SetScale{${1:number}}"
-		]
-	},
-
-
-	"SetTextScale{}":{
-		"prefix":"SetTextScale",
-		"body":[
-			"\\SetTextScale{${1:number}}"
-		]
-	},
-
-
-	"SetCanvasScale{}":{
-		"prefix":"SetCanvasScale",
-		"body":[
-			"\\SetCanvasScale{${1:number}}"
-		]
-	},
-
-
-	"ifPSTextScalesLikeGraphics":{
-		"prefix":"ifPSTextScalesLikeGraphics",
-		"body":[
-			"\\ifPSTextScalesLikeGraphics"
-		]
-	},
-
-
-	"PSTextScalesLikeGraphicsfalse":{
-		"prefix":"PSTextScalesLikeGraphicsfalse",
-		"body":[
-			"\\PSTextScalesLikeGraphicsfalse"
-		]
-	},
-
-
-	"PSTextScalesLikeGraphicstrue":{
-		"prefix":"PSTextScalesLikeGraphicstrue",
-		"body":[
-			"\\PSTextScalesLikeGraphicstrue"
-		]
-	},
-
-
-	"SetOffset()":{
-		"prefix":"SetOffset",
-		"body":[
-			"\\SetOffset(${1:x},${2:y})"
-		]
-	},
-
-
-	"SetScaledOffset()":{
-		"prefix":"SetScaledOffset",
-		"body":[
-			"\\SetScaledOffset(${1:x},${2:y})"
-		]
-	},
-
-
-	"SetColor{}":{
-		"prefix":"SetColor",
-		"body":[
-			"\\SetColor{${1:color}}"
-		]
-	},
-
-
-	"SetObjectScale{}":{
-		"prefix":"SetObjectScale",
-		"body":[
-			"\\SetObjectScale{${1:number}}"
-		]
-	},
-
-
-	"textGreenYellow":{
-		"prefix":"textGreenYellow",
-		"body":[
-			"\\textGreenYellow"
-		]
-	},
-
-
-	"textYellow":{
-		"prefix":"textYellow",
-		"body":[
-			"\\textYellow"
-		]
-	},
-
-
-	"textGoldenrod":{
-		"prefix":"textGoldenrod",
-		"body":[
-			"\\textGoldenrod"
-		]
-	},
-
-
-	"textDandelion":{
-		"prefix":"textDandelion",
-		"body":[
-			"\\textDandelion"
-		]
-	},
-
-
-	"textApricot":{
-		"prefix":"textApricot",
-		"body":[
-			"\\textApricot"
-		]
-	},
-
-
-	"textPeach":{
-		"prefix":"textPeach",
-		"body":[
-			"\\textPeach"
-		]
-	},
-
-
-	"textMelon":{
-		"prefix":"textMelon",
-		"body":[
-			"\\textMelon"
-		]
-	},
-
-
-	"textYellowOrange":{
-		"prefix":"textYellowOrange",
-		"body":[
-			"\\textYellowOrange"
-		]
-	},
-
-
-	"textOrange":{
-		"prefix":"textOrange",
-		"body":[
-			"\\textOrange"
-		]
-	},
-
-
-	"textBurntOrange":{
-		"prefix":"textBurntOrange",
-		"body":[
-			"\\textBurntOrange"
-		]
-	},
-
-
-	"textBittersweet":{
-		"prefix":"textBittersweet",
-		"body":[
-			"\\textBittersweet"
-		]
-	},
-
-
-	"textRedOrange":{
-		"prefix":"textRedOrange",
-		"body":[
-			"\\textRedOrange"
-		]
-	},
-
-
-	"textMahogany":{
-		"prefix":"textMahogany",
-		"body":[
-			"\\textMahogany"
-		]
-	},
-
-
-	"textMaroon":{
-		"prefix":"textMaroon",
-		"body":[
-			"\\textMaroon"
-		]
-	},
-
-
-	"textBrickRed":{
-		"prefix":"textBrickRed",
-		"body":[
-			"\\textBrickRed"
-		]
-	},
-
-
-	"textRed":{
-		"prefix":"textRed",
-		"body":[
-			"\\textRed"
-		]
-	},
-
-
-	"textOrangeRed":{
-		"prefix":"textOrangeRed",
-		"body":[
-			"\\textOrangeRed"
-		]
-	},
-
-
-	"textRubineRed":{
-		"prefix":"textRubineRed",
-		"body":[
-			"\\textRubineRed"
-		]
-	},
-
-
-	"textWildStrawberry":{
-		"prefix":"textWildStrawberry",
-		"body":[
-			"\\textWildStrawberry"
-		]
-	},
-
-
-	"textSalmon":{
-		"prefix":"textSalmon",
-		"body":[
-			"\\textSalmon"
-		]
-	},
-
-
-	"textCarnationPink":{
-		"prefix":"textCarnationPink",
-		"body":[
-			"\\textCarnationPink"
-		]
-	},
-
-
-	"textMagenta":{
-		"prefix":"textMagenta",
-		"body":[
-			"\\textMagenta"
-		]
-	},
-
-
-	"textVioletRed":{
-		"prefix":"textVioletRed",
-		"body":[
-			"\\textVioletRed"
-		]
-	},
-
-
-	"textRhodamine":{
-		"prefix":"textRhodamine",
-		"body":[
-			"\\textRhodamine"
-		]
-	},
-
-
-	"textMulberry":{
-		"prefix":"textMulberry",
-		"body":[
-			"\\textMulberry"
-		]
-	},
-
-
-	"textRedViolet":{
-		"prefix":"textRedViolet",
-		"body":[
-			"\\textRedViolet"
-		]
-	},
-
-
-	"textFuchsia":{
-		"prefix":"textFuchsia",
-		"body":[
-			"\\textFuchsia"
-		]
-	},
-
-
-	"textLavender":{
-		"prefix":"textLavender",
-		"body":[
-			"\\textLavender"
-		]
-	},
-
-
-	"textThistle":{
-		"prefix":"textThistle",
-		"body":[
-			"\\textThistle"
-		]
-	},
-
-
-	"textOrchid":{
-		"prefix":"textOrchid",
-		"body":[
-			"\\textOrchid"
-		]
-	},
-
-
-	"textDarkOrchid":{
-		"prefix":"textDarkOrchid",
-		"body":[
-			"\\textDarkOrchid"
-		]
-	},
-
-
-	"textPurple":{
-		"prefix":"textPurple",
-		"body":[
-			"\\textPurple"
-		]
-	},
-
-
-	"textPlum":{
-		"prefix":"textPlum",
-		"body":[
-			"\\textPlum"
-		]
-	},
-
-
-	"textViolet":{
-		"prefix":"textViolet",
-		"body":[
-			"\\textViolet"
-		]
-	},
-
-
-	"textRoyalPurple":{
-		"prefix":"textRoyalPurple",
-		"body":[
-			"\\textRoyalPurple"
-		]
-	},
-
-
-	"textBlueViolet":{
-		"prefix":"textBlueViolet",
-		"body":[
-			"\\textBlueViolet"
-		]
-	},
-
-
-	"textPeriwinkle":{
-		"prefix":"textPeriwinkle",
-		"body":[
-			"\\textPeriwinkle"
-		]
-	},
-
-
-	"textCadetBlue":{
-		"prefix":"textCadetBlue",
-		"body":[
-			"\\textCadetBlue"
-		]
-	},
-
-
-	"textCornflowerBlue":{
-		"prefix":"textCornflowerBlue",
-		"body":[
-			"\\textCornflowerBlue"
-		]
-	},
-
-
-	"textMidnightBlue":{
-		"prefix":"textMidnightBlue",
-		"body":[
-			"\\textMidnightBlue"
-		]
-	},
-
-
-	"textNavyBlue":{
-		"prefix":"textNavyBlue",
-		"body":[
-			"\\textNavyBlue"
-		]
-	},
-
-
-	"textRoyalBlue":{
-		"prefix":"textRoyalBlue",
-		"body":[
-			"\\textRoyalBlue"
-		]
-	},
-
-
-	"textBlue":{
-		"prefix":"textBlue",
-		"body":[
-			"\\textBlue"
-		]
-	},
-
-
-	"textCerulean":{
-		"prefix":"textCerulean",
-		"body":[
-			"\\textCerulean"
-		]
-	},
-
-
-	"textCyan":{
-		"prefix":"textCyan",
-		"body":[
-			"\\textCyan"
-		]
-	},
-
-
-	"textProcessBlue":{
-		"prefix":"textProcessBlue",
-		"body":[
-			"\\textProcessBlue"
-		]
-	},
-
-
-	"textSkyBlue":{
-		"prefix":"textSkyBlue",
-		"body":[
-			"\\textSkyBlue"
-		]
-	},
-
-
-	"textTurquoise":{
-		"prefix":"textTurquoise",
-		"body":[
-			"\\textTurquoise"
-		]
-	},
-
-
-	"textTealBlue":{
-		"prefix":"textTealBlue",
-		"body":[
-			"\\textTealBlue"
-		]
-	},
-
-
-	"textAquamarine":{
-		"prefix":"textAquamarine",
-		"body":[
-			"\\textAquamarine"
-		]
-	},
-
-
-	"textBlueGreen":{
-		"prefix":"textBlueGreen",
-		"body":[
-			"\\textBlueGreen"
-		]
-	},
-
-
-	"textEmerald":{
-		"prefix":"textEmerald",
-		"body":[
-			"\\textEmerald"
-		]
-	},
-
-
-	"textJungleGreen":{
-		"prefix":"textJungleGreen",
-		"body":[
-			"\\textJungleGreen"
-		]
-	},
-
-
-	"textSeaGreen":{
-		"prefix":"textSeaGreen",
-		"body":[
-			"\\textSeaGreen"
-		]
-	},
-
-
-	"textGreen":{
-		"prefix":"textGreen",
-		"body":[
-			"\\textGreen"
-		]
-	},
-
-
-	"textForestGreen":{
-		"prefix":"textForestGreen",
-		"body":[
-			"\\textForestGreen"
-		]
-	},
-
-
-	"textPineGreen":{
-		"prefix":"textPineGreen",
-		"body":[
-			"\\textPineGreen"
-		]
-	},
-
-
-	"textLimeGreen":{
-		"prefix":"textLimeGreen",
-		"body":[
-			"\\textLimeGreen"
-		]
-	},
-
-
-	"textYellowGreen":{
-		"prefix":"textYellowGreen",
-		"body":[
-			"\\textYellowGreen"
-		]
-	},
-
-
-	"textSpringGreen":{
-		"prefix":"textSpringGreen",
-		"body":[
-			"\\textSpringGreen"
-		]
-	},
-
-
-	"textOliveGreen":{
-		"prefix":"textOliveGreen",
-		"body":[
-			"\\textOliveGreen"
-		]
-	},
-
-
-	"textRawSienna":{
-		"prefix":"textRawSienna",
-		"body":[
-			"\\textRawSienna"
-		]
-	},
-
-
-	"textSepia":{
-		"prefix":"textSepia",
-		"body":[
-			"\\textSepia"
-		]
-	},
-
-
-	"textBrown":{
-		"prefix":"textBrown",
-		"body":[
-			"\\textBrown"
-		]
-	},
-
-
-	"textTan":{
-		"prefix":"textTan",
-		"body":[
-			"\\textTan"
-		]
-	},
-
-
-	"textGray":{
-		"prefix":"textGray",
-		"body":[
-			"\\textGray"
-		]
-	},
-
-
-	"textBlack":{
-		"prefix":"textBlack",
-		"body":[
-			"\\textBlack"
-		]
-	},
-
-
-	"textWhite":{
-		"prefix":"textWhite",
-		"body":[
-			"\\textWhite"
-		]
-	},
-
-
-	"textLightYellow":{
-		"prefix":"textLightYellow",
-		"body":[
-			"\\textLightYellow"
-		]
-	},
-
-
-	"textLightRed":{
-		"prefix":"textLightRed",
-		"body":[
-			"\\textLightRed"
-		]
-	},
-
-
-	"textLightBlue":{
-		"prefix":"textLightBlue",
-		"body":[
-			"\\textLightBlue"
-		]
-	},
-
-
-	"textLightGray":{
-		"prefix":"textLightGray",
-		"body":[
-			"\\textLightGray"
-		]
-	},
-
-
-	"textVeryLightBlue":{
-		"prefix":"textVeryLightBlue",
-		"body":[
-			"\\textVeryLightBlue"
-		]
-	},
-
-
-	"GreenYellow{}":{
-		"prefix":"GreenYellow",
-		"body":[
-			"\\GreenYellow{${1:text}}"
-		]
-	},
-
-
-	"Yellow{}":{
-		"prefix":"Yellow",
-		"body":[
-			"\\Yellow{${1:text}}"
-		]
-	},
-
-
-	"Goldenrod{}":{
-		"prefix":"Goldenrod",
-		"body":[
-			"\\Goldenrod{${1:text}}"
-		]
-	},
-
-
-	"Dandelion{}":{
-		"prefix":"Dandelion",
-		"body":[
-			"\\Dandelion{${1:text}}"
-		]
-	},
-
-
-	"Apricot{}":{
-		"prefix":"Apricot",
-		"body":[
-			"\\Apricot{${1:text}}"
-		]
-	},
-
-
-	"Peach{}":{
-		"prefix":"Peach",
-		"body":[
-			"\\Peach{${1:text}}"
-		]
-	},
-
-
-	"Melon{}":{
-		"prefix":"Melon",
-		"body":[
-			"\\Melon{${1:text}}"
-		]
-	},
-
-
-	"YellowOrange{}":{
-		"prefix":"YellowOrange",
-		"body":[
-			"\\YellowOrange{${1:text}}"
-		]
-	},
-
-
-	"Orange{}":{
-		"prefix":"Orange",
-		"body":[
-			"\\Orange{${1:text}}"
-		]
-	},
-
-
-	"BurntOrange{}":{
-		"prefix":"BurntOrange",
-		"body":[
-			"\\BurntOrange{${1:text}}"
-		]
-	},
-
-
-	"Bittersweet{}":{
-		"prefix":"Bittersweet",
-		"body":[
-			"\\Bittersweet{${1:text}}"
-		]
-	},
-
-
-	"RedOrange{}":{
-		"prefix":"RedOrange",
-		"body":[
-			"\\RedOrange{${1:text}}"
-		]
-	},
-
-
-	"Mahogany{}":{
-		"prefix":"Mahogany",
-		"body":[
-			"\\Mahogany{${1:text}}"
-		]
-	},
-
-
-	"Maroon{}":{
-		"prefix":"Maroon",
-		"body":[
-			"\\Maroon{${1:text}}"
-		]
-	},
-
-
-	"BrickRed{}":{
-		"prefix":"BrickRed",
-		"body":[
-			"\\BrickRed{${1:text}}"
-		]
-	},
-
-
-	"Red{}":{
-		"prefix":"Red",
-		"body":[
-			"\\Red{${1:text}}"
-		]
-	},
-
-
-	"OrangeRed{}":{
-		"prefix":"OrangeRed",
-		"body":[
-			"\\OrangeRed{${1:text}}"
-		]
-	},
-
-
-	"RubineRed{}":{
-		"prefix":"RubineRed",
-		"body":[
-			"\\RubineRed{${1:text}}"
-		]
-	},
-
-
-	"WildStrawberry{}":{
-		"prefix":"WildStrawberry",
-		"body":[
-			"\\WildStrawberry{${1:text}}"
-		]
-	},
-
-
-	"Salmon{}":{
-		"prefix":"Salmon",
-		"body":[
-			"\\Salmon{${1:text}}"
-		]
-	},
-
-
-	"CarnationPink{}":{
-		"prefix":"CarnationPink",
-		"body":[
-			"\\CarnationPink{${1:text}}"
-		]
-	},
-
-
-	"Magenta{}":{
-		"prefix":"Magenta",
-		"body":[
-			"\\Magenta{${1:text}}"
-		]
-	},
-
-
-	"VioletRed{}":{
-		"prefix":"VioletRed",
-		"body":[
-			"\\VioletRed{${1:text}}"
-		]
-	},
-
-
-	"Rhodamine{}":{
-		"prefix":"Rhodamine",
-		"body":[
-			"\\Rhodamine{${1:text}}"
-		]
-	},
-
-
-	"Mulberry{}":{
-		"prefix":"Mulberry",
-		"body":[
-			"\\Mulberry{${1:text}}"
-		]
-	},
-
-
-	"RedViolet{}":{
-		"prefix":"RedViolet",
-		"body":[
-			"\\RedViolet{${1:text}}"
-		]
-	},
-
-
-	"Fuchsia{}":{
-		"prefix":"Fuchsia",
-		"body":[
-			"\\Fuchsia{${1:text}}"
-		]
-	},
-
-
-	"Lavender{}":{
-		"prefix":"Lavender",
-		"body":[
-			"\\Lavender{${1:text}}"
-		]
-	},
-
-
-	"Thistle{}":{
-		"prefix":"Thistle",
-		"body":[
-			"\\Thistle{${1:text}}"
-		]
-	},
-
-
-	"Orchid{}":{
-		"prefix":"Orchid",
-		"body":[
-			"\\Orchid{${1:text}}"
-		]
-	},
-
-
-	"DarkOrchid{}":{
-		"prefix":"DarkOrchid",
-		"body":[
-			"\\DarkOrchid{${1:text}}"
-		]
-	},
-
-
-	"Purple{}":{
-		"prefix":"Purple",
-		"body":[
-			"\\Purple{${1:text}}"
-		]
-	},
-
-
-	"Plum{}":{
-		"prefix":"Plum",
-		"body":[
-			"\\Plum{${1:text}}"
-		]
-	},
-
-
-	"Violet{}":{
-		"prefix":"Violet",
-		"body":[
-			"\\Violet{${1:text}}"
-		]
-	},
-
-
-	"RoyalPurple{}":{
-		"prefix":"RoyalPurple",
-		"body":[
-			"\\RoyalPurple{${1:text}}"
-		]
-	},
-
-
-	"BlueViolet{}":{
-		"prefix":"BlueViolet",
-		"body":[
-			"\\BlueViolet{${1:text}}"
-		]
-	},
-
-
-	"Periwinkle{}":{
-		"prefix":"Periwinkle",
-		"body":[
-			"\\Periwinkle{${1:text}}"
-		]
-	},
-
-
-	"CadetBlue{}":{
-		"prefix":"CadetBlue",
-		"body":[
-			"\\CadetBlue{${1:text}}"
-		]
-	},
-
-
-	"CornflowerBlue{}":{
-		"prefix":"CornflowerBlue",
-		"body":[
-			"\\CornflowerBlue{${1:text}}"
-		]
-	},
-
-
-	"MidnightBlue{}":{
-		"prefix":"MidnightBlue",
-		"body":[
-			"\\MidnightBlue{${1:text}}"
-		]
-	},
-
-
-	"NavyBlue{}":{
-		"prefix":"NavyBlue",
-		"body":[
-			"\\NavyBlue{${1:text}}"
-		]
-	},
-
-
-	"RoyalBlue{}":{
-		"prefix":"RoyalBlue",
-		"body":[
-			"\\RoyalBlue{${1:text}}"
-		]
-	},
-
-
-	"Blue{}":{
-		"prefix":"Blue",
-		"body":[
-			"\\Blue{${1:text}}"
-		]
-	},
-
-
-	"Cerulean{}":{
-		"prefix":"Cerulean",
-		"body":[
-			"\\Cerulean{${1:text}}"
-		]
-	},
-
-
-	"Cyan{}":{
-		"prefix":"Cyan",
-		"body":[
-			"\\Cyan{${1:text}}"
-		]
-	},
-
-
-	"ProcessBlue{}":{
-		"prefix":"ProcessBlue",
-		"body":[
-			"\\ProcessBlue{${1:text}}"
-		]
-	},
-
-
-	"SkyBlue{}":{
-		"prefix":"SkyBlue",
-		"body":[
-			"\\SkyBlue{${1:text}}"
-		]
-	},
-
-
-	"Turquoise{}":{
-		"prefix":"Turquoise",
-		"body":[
-			"\\Turquoise{${1:text}}"
-		]
-	},
-
-
-	"TealBlue{}":{
-		"prefix":"TealBlue",
-		"body":[
-			"\\TealBlue{${1:text}}"
-		]
-	},
-
-
-	"Aquamarine{}":{
-		"prefix":"Aquamarine",
-		"body":[
-			"\\Aquamarine{${1:text}}"
-		]
-	},
-
-
-	"BlueGreen{}":{
-		"prefix":"BlueGreen",
-		"body":[
-			"\\BlueGreen{${1:text}}"
-		]
-	},
-
-
-	"Emerald{}":{
-		"prefix":"Emerald",
-		"body":[
-			"\\Emerald{${1:text}}"
-		]
-	},
-
-
-	"JungleGreen{}":{
-		"prefix":"JungleGreen",
-		"body":[
-			"\\JungleGreen{${1:text}}"
-		]
-	},
-
-
-	"SeaGreen{}":{
-		"prefix":"SeaGreen",
-		"body":[
-			"\\SeaGreen{${1:text}}"
-		]
-	},
-
-
-	"Green{}":{
-		"prefix":"Green",
-		"body":[
-			"\\Green{${1:text}}"
-		]
-	},
-
-
-	"ForestGreen{}":{
-		"prefix":"ForestGreen",
-		"body":[
-			"\\ForestGreen{${1:text}}"
-		]
-	},
-
-
-	"PineGreen{}":{
-		"prefix":"PineGreen",
-		"body":[
-			"\\PineGreen{${1:text}}"
-		]
-	},
-
-
-	"LimeGreen{}":{
-		"prefix":"LimeGreen",
-		"body":[
-			"\\LimeGreen{${1:text}}"
-		]
-	},
-
-
-	"YellowGreen{}":{
-		"prefix":"YellowGreen",
-		"body":[
-			"\\YellowGreen{${1:text}}"
-		]
-	},
-
-
-	"SpringGreen{}":{
-		"prefix":"SpringGreen",
-		"body":[
-			"\\SpringGreen{${1:text}}"
-		]
-	},
-
-
-	"OliveGreen{}":{
-		"prefix":"OliveGreen",
-		"body":[
-			"\\OliveGreen{${1:text}}"
-		]
-	},
-
-
-	"RawSienna{}":{
-		"prefix":"RawSienna",
-		"body":[
-			"\\RawSienna{${1:text}}"
-		]
-	},
-
-
-	"Sepia{}":{
-		"prefix":"Sepia",
-		"body":[
-			"\\Sepia{${1:text}}"
-		]
-	},
-
-
-	"Brown{}":{
-		"prefix":"Brown",
-		"body":[
-			"\\Brown{${1:text}}"
-		]
-	},
-
-
-	"Tan{}":{
-		"prefix":"Tan",
-		"body":[
-			"\\Tan{${1:text}}"
-		]
-	},
-
-
-	"Gray{}":{
-		"prefix":"Gray",
-		"body":[
-			"\\Gray{${1:text}}"
-		]
-	},
-
-
-	"Black{}":{
-		"prefix":"Black",
-		"body":[
-			"\\Black{${1:text}}"
-		]
-	},
-
-
-	"White{}":{
-		"prefix":"White",
-		"body":[
-			"\\White{${1:text}}"
-		]
-	},
-
-
-	"LightYellow{}":{
-		"prefix":"LightYellow",
-		"body":[
-			"\\LightYellow{${1:text}}"
-		]
-	},
-
-
-	"LightRed{}":{
-		"prefix":"LightRed",
-		"body":[
-			"\\LightRed{${1:text}}"
-		]
-	},
-
-
-	"LightBlue{}":{
-		"prefix":"LightBlue",
-		"body":[
-			"\\LightBlue{${1:text}}"
-		]
-	},
-
-
-	"LightGray{}":{
-		"prefix":"LightGray",
-		"body":[
-			"\\LightGray{${1:text}}"
-		]
-	},
-
-
-	"VeryLightBlue{}":{
-		"prefix":"VeryLightBlue",
-		"body":[
-			"\\VeryLightBlue{${1:text}}"
-		]
-	},
-
-
-	"AXOputPDF{}":{
-		"prefix":"AXOputPDF",
-		"body":[
-			"\\AXOputPDF{${1:pdf code}}"
-		]
-	},
-
-
-	"AXOputPS{}":{
-		"prefix":"AXOputPS",
-		"body":[
-			"\\AXOputPS{${1:ps code}}"
-		]
-	},
-
-
-	"AXOspecial{}":{
-		"prefix":"AXOspecial",
-		"body":[
-			"\\AXOspecial{${1:ps code}}"
-		]
-	},
-
-
-	"AssignDecDiv{}{}{}":{
-		"prefix":"AssignDecDiv",
-		"body":[
-			"\\AssignDecDiv{${1:variable}}{${2:integer1}}{${3:integer2}}"
-		]
-	},
-
-
-	"AxoPut(){}":{
-		"prefix":"AxoPut",
-		"body":[
-			"\\AxoPut(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"SetPoint{}()":{
-		"prefix":"SetPoint",
-		"body":[
-			"\\SetPoint{${1:name}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"SetTmpBoxTwo{}{}":{
-		"prefix":"SetTmpBoxTwo",
-		"body":[
-			"\\SetTmpBoxTwo{${1:contents1}}{${2:contents2}}"
-		]
-	},
-
-
-	"SetTmpBox{}":{
-		"prefix":"SetTmpBox",
-		"body":[
-			"\\SetTmpBox{${1:contents}}"
-		]
-	},
-
-
-	"UseCurrentPSFont":{
-		"prefix":"UseCurrentPSFont",
-		"body":[
-			"\\UseCurrentPSFont"
-		]
-	},
-
-
-	"axoarrowsize":{
-		"prefix":"axoarrowsize",
-		"body":[
-			"\\axoarrowsize"
-		]
-	},
-
-
-	"axocanvas":{
-		"prefix":"axocanvas",
-		"body":[
-			"\\axocanvas"
-		]
-	},
-
-
-	"axofontsize":{
-		"prefix":"axofontsize",
-		"body":[
-			"\\axofontsize"
-		]
-	},
-
-
-	"axohelp":{
-		"prefix":"axohelp",
-		"body":[
-			"\\axohelp"
-		]
-	},
-
-
-	"axominusone":{
-		"prefix":"axominusone",
-		"body":[
-			"\\axominusone"
-		]
-	},
-
-
-	"axoone":{
-		"prefix":"axoone",
-		"body":[
-			"\\axoone"
-		]
-	},
-
-
-	"axoparray(){}":{
-		"prefix":"axoparray",
-		"body":[
-			"\\axoparray(${2:x},${3:y}){${1:arg}}"
-		]
-	},
-
-
-	"axoscale":{
-		"prefix":"axoscale",
-		"body":[
-			"\\axoscale"
-		]
-	},
-
-
-	"axoscalePT":{
-		"prefix":"axoscalePT",
-		"body":[
-			"\\axoscalePT"
-		]
-	},
-
-
-	"axoscaleTT":{
-		"prefix":"axoscaleTT",
-		"body":[
-			"\\axoscaleTT"
-		]
-	},
-
-
-	"axotextscale":{
-		"prefix":"axotextscale",
-		"body":[
-			"\\axotextscale"
-		]
-	},
-
-
-	"axounitlength":{
-		"prefix":"axounitlength",
-		"body":[
-			"\\axounitlength"
-		]
-	},
-
-
-	"axowidth":{
-		"prefix":"axowidth",
-		"body":[
-			"\\axowidth"
-		]
-	},
-
-
-	"axoxo":{
-		"prefix":"axoxo",
-		"body":[
-			"\\axoxo"
-		]
-	},
-
-
-	"axoxoff":{
-		"prefix":"axoxoff",
-		"body":[
-			"\\axoxoff"
-		]
-	},
-
-
-	"axoyo":{
-		"prefix":"axoyo",
-		"body":[
-			"\\axoyo"
-		]
-	},
-
-
-	"axoyoff":{
-		"prefix":"axoyoff",
-		"body":[
-			"\\axoyoff"
-		]
-	},
-
-
-	"axozero":{
-		"prefix":"axozero",
-		"body":[
-			"\\axozero"
-		]
-	},
-
-
-	"contentspdf":{
-		"prefix":"contentspdf",
-		"body":[
-			"\\contentspdf"
-		]
-	},
-
-
-	"contentspdfNoOffset":{
-		"prefix":"contentspdfNoOffset",
-		"body":[
-			"\\contentspdfNoOffset"
-		]
-	},
-
-
-	"defWithOption{}{}{}":{
-		"prefix":"defWithOption",
-		"body":[
-			"\\defWithOption{${1:csname}}{${2:args}}{${3:definition}}"
-		]
-	},
-
-
-	"defineaxofont{}{}":{
-		"prefix":"defineaxofont",
-		"body":[
-			"\\defineaxofont{${1:user-visible font name}}{${2:LaTeX font name}}"
-		]
-	},
-
-
-	"getaxohelp{}{}":{
-		"prefix":"getaxohelp",
-		"body":[
-			"\\getaxohelp{${1:csname}}{${2:spec}}"
-		]
-	},
-
-
-	"getoneline{}{}":{
-		"prefix":"getoneline",
-		"body":[
-			"\\getoneline{${1:csname}}{${2:input stream num}}"
-		]
-	},
-
-
-	"newcolor{}{}":{
-		"prefix":"newcolor",
-		"body":[
-			"\\newcolor{${1:color%specialDef}}{${2:CMYK}}"
-		]
-	},
-
-
-	"putLen(){}":{
-		"prefix":"putLen",
-		"body":[
-			"\\putLen(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"useX{}":{
-		"prefix":"useX",
-		"body":[
-			"\\useX{${1:point name}}"
-		]
-	},
-
-
-	"useY{}":{
-		"prefix":"useY",
-		"body":[
-			"\\useY{${1:point name}}"
-		]
-	},
-
-
-	"ifAXONotImplemented":{
-		"prefix":"ifAXONotImplemented",
-		"body":[
-			"\\ifAXONotImplemented"
-		]
-	},
-
-
-	"AXONotImplementedtrue":{
-		"prefix":"AXONotImplementedtrue",
-		"body":[
-			"\\AXONotImplementedtrue"
-		]
-	},
-
-
-	"AXONotImplementedfalse":{
-		"prefix":"AXONotImplementedfalse",
-		"body":[
-			"\\AXONotImplementedfalse"
-		]
-	},
-
-
-	"bpinsp":{
-		"prefix":"bpinsp",
-		"body":[
-			"\\bpinsp"
-		]
-	},
-
-
-	"ptinsp":{
-		"prefix":"ptinsp",
-		"body":[
-			"\\ptinsp"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2805,7 +50,17 @@
 		"prefix":"Line",
 		"body":[
 			"\\Line[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleLine()(){}":{
+		"prefix":"DoubleLine",
+		"body":[
+			"\\DoubleLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2813,7 +68,17 @@
 		"prefix":"DoubleLine",
 		"body":[
 			"\\DoubleLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashLine()(){}":{
+		"prefix":"DashLine",
+		"body":[
+			"\\DashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2821,7 +86,17 @@
 		"prefix":"DashLine",
 		"body":[
 			"\\DashLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleLine()(){}{}":{
+		"prefix":"DashDoubleLine",
+		"body":[
+			"\\DashDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2829,7 +104,17 @@
 		"prefix":"DashDoubleLine",
 		"body":[
 			"\\DashDoubleLine[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Arc()()":{
+		"prefix":"Arc",
+		"body":[
+			"\\Arc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2837,7 +122,17 @@
 		"prefix":"Arc",
 		"body":[
 			"\\Arc[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CArc()()":{
+		"prefix":"CArc",
+		"body":[
+			"\\CArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2845,7 +140,17 @@
 		"prefix":"CArc",
 		"body":[
 			"\\CArc[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleArc()(){}":{
+		"prefix":"DoubleArc",
+		"body":[
+			"\\DoubleArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2853,7 +158,17 @@
 		"prefix":"DoubleArc",
 		"body":[
 			"\\DoubleArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleCArc()(){}":{
+		"prefix":"DoubleCArc",
+		"body":[
+			"\\DoubleCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2861,7 +176,17 @@
 		"prefix":"DoubleCArc",
 		"body":[
 			"\\DoubleCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArc()(){}":{
+		"prefix":"DashArc",
+		"body":[
+			"\\DashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2869,7 +194,17 @@
 		"prefix":"DashArc",
 		"body":[
 			"\\DashArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashCArc()(){}":{
+		"prefix":"DashCArc",
+		"body":[
+			"\\DashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2877,7 +212,17 @@
 		"prefix":"DashCArc",
 		"body":[
 			"\\DashCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleArc()(){}{}":{
+		"prefix":"DashDoubleArc",
+		"body":[
+			"\\DashDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2885,7 +230,17 @@
 		"prefix":"DashDoubleArc",
 		"body":[
 			"\\DashDoubleArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleCArc()(){}{}":{
+		"prefix":"DashDoubleCArc",
+		"body":[
+			"\\DashDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2893,7 +248,17 @@
 		"prefix":"DashDoubleCArc",
 		"body":[
 			"\\DashDoubleCArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Bezier()()()()":{
+		"prefix":"Bezier",
+		"body":[
+			"\\Bezier(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})(${7:x4},${8:y4})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2901,7 +266,17 @@
 		"prefix":"Bezier",
 		"body":[
 			"\\Bezier[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleBezier()()()(){}":{
+		"prefix":"DoubleBezier",
+		"body":[
+			"\\DoubleBezier(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2909,7 +284,17 @@
 		"prefix":"DoubleBezier",
 		"body":[
 			"\\DoubleBezier[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})(${9:x4},${10:y4}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashBezier()()()(){}":{
+		"prefix":"DashBezier",
+		"body":[
+			"\\DashBezier(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2917,7 +302,17 @@
 		"prefix":"DashBezier",
 		"body":[
 			"\\DashBezier[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})(${9:x4},${10:y4}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleBezier()()()(){}{}":{
+		"prefix":"DashDoubleBezier",
+		"body":[
+			"\\DashDoubleBezier(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3})(${9:x4},${10:y4}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2925,7 +320,35 @@
 		"prefix":"DashDoubleBezier",
 		"body":[
 			"\\DashDoubleBezier[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2})(${8:x3},${9:y3})(${10:x4},${11:y4}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Curve{}":{
+		"prefix":"Curve",
+		"body":[
+			"\\Curve{${1:(${2:x1},${3:y1})(${4:x2},${5:y2})...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DashCurve{}{}":{
+		"prefix":"DashCurve",
+		"body":[
+			"\\DashCurve{${1:(${3:x1},${4:y1})(${5:x2},${6:y2})...}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Gluon()(){}{}":{
+		"prefix":"Gluon",
+		"body":[
+			"\\Gluon(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2933,7 +356,17 @@
 		"prefix":"Gluon",
 		"body":[
 			"\\Gluon[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGluon()(){}{}{}":{
+		"prefix":"DoubleGluon",
+		"body":[
+			"\\DoubleGluon(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2941,7 +374,17 @@
 		"prefix":"DoubleGluon",
 		"body":[
 			"\\DoubleGluon[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGluon()(){}{}{}":{
+		"prefix":"DashGluon",
+		"body":[
+			"\\DashGluon(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2949,7 +392,17 @@
 		"prefix":"DashGluon",
 		"body":[
 			"\\DashGluon[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGluon()(){}{}{}{}":{
+		"prefix":"DashDoubleGluon",
+		"body":[
+			"\\DashDoubleGluon(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2957,7 +410,17 @@
 		"prefix":"DashDoubleGluon",
 		"body":[
 			"\\DashDoubleGluon[${5:options%keyvals}](${6:x1},${7:y1})(${8:x2},${9:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GluonArc()(){}{}":{
+		"prefix":"GluonArc",
+		"body":[
+			"\\GluonArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2965,7 +428,17 @@
 		"prefix":"GluonArc",
 		"body":[
 			"\\GluonArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlueArc()(){}{}":{
+		"prefix":"GlueArc",
+		"body":[
+			"\\GlueArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2973,7 +446,17 @@
 		"prefix":"GlueArc",
 		"body":[
 			"\\GlueArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GluonArcn()(){}{}":{
+		"prefix":"GluonArcn",
+		"body":[
+			"\\GluonArcn(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2981,7 +464,17 @@
 		"prefix":"GluonArcn",
 		"body":[
 			"\\GluonArcn[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlueArcn()(){}{}":{
+		"prefix":"GlueArcn",
+		"body":[
+			"\\GlueArcn(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2989,7 +482,17 @@
 		"prefix":"GlueArcn",
 		"body":[
 			"\\GlueArcn[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGluonArc()(){}{}{}":{
+		"prefix":"DoubleGluonArc",
+		"body":[
+			"\\DoubleGluonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2997,7 +500,17 @@
 		"prefix":"DoubleGluonArc",
 		"body":[
 			"\\DoubleGluonArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGlueArc()(){}{}{}":{
+		"prefix":"DoubleGlueArc",
+		"body":[
+			"\\DoubleGlueArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3005,7 +518,17 @@
 		"prefix":"DoubleGlueArc",
 		"body":[
 			"\\DoubleGlueArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGluonArcn()(){}{}{}":{
+		"prefix":"DoubleGluonArcn",
+		"body":[
+			"\\DoubleGluonArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3013,7 +536,17 @@
 		"prefix":"DoubleGluonArcn",
 		"body":[
 			"\\DoubleGluonArcn[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGlueArcn()(){}{}{}":{
+		"prefix":"DoubleGlueArcn",
+		"body":[
+			"\\DoubleGlueArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3021,7 +554,17 @@
 		"prefix":"DoubleGlueArcn",
 		"body":[
 			"\\DoubleGlueArcn[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGluonArc()(){}{}{}":{
+		"prefix":"DashGluonArc",
+		"body":[
+			"\\DashGluonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3029,7 +572,17 @@
 		"prefix":"DashGluonArc",
 		"body":[
 			"\\DashGluonArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGlueArc()(){}{}{}":{
+		"prefix":"DashGlueArc",
+		"body":[
+			"\\DashGlueArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3037,7 +590,17 @@
 		"prefix":"DashGlueArc",
 		"body":[
 			"\\DashGlueArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGluonArcn()(){}{}{}":{
+		"prefix":"DashGluonArcn",
+		"body":[
+			"\\DashGluonArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3045,7 +608,17 @@
 		"prefix":"DashGluonArcn",
 		"body":[
 			"\\DashGluonArcn[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGlueArcn()(){}{}{}":{
+		"prefix":"DashGlueArcn",
+		"body":[
+			"\\DashGlueArcn(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3053,7 +626,17 @@
 		"prefix":"DashGlueArcn",
 		"body":[
 			"\\DashGlueArcn[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGluonArc()(){}{}{}{}":{
+		"prefix":"DashDoubleGluonArc",
+		"body":[
+			"\\DashDoubleGluonArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3061,7 +644,17 @@
 		"prefix":"DashDoubleGluonArc",
 		"body":[
 			"\\DashDoubleGluonArc[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGlueArc()(){}{}{}{}":{
+		"prefix":"DashDoubleGlueArc",
+		"body":[
+			"\\DashDoubleGlueArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3069,7 +662,17 @@
 		"prefix":"DashDoubleGlueArc",
 		"body":[
 			"\\DashDoubleGlueArc[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGluonArcn()(){}{}{}{}":{
+		"prefix":"DashDoubleGluonArcn",
+		"body":[
+			"\\DashDoubleGluonArcn(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3077,7 +680,17 @@
 		"prefix":"DashDoubleGluonArcn",
 		"body":[
 			"\\DashDoubleGluonArcn[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGlueArcn()(){}{}{}{}":{
+		"prefix":"DashDoubleGlueArcn",
+		"body":[
+			"\\DashDoubleGlueArcn(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3085,7 +698,17 @@
 		"prefix":"DashDoubleGlueArcn",
 		"body":[
 			"\\DashDoubleGlueArcn[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GluonCirc()(){}{}":{
+		"prefix":"GluonCirc",
+		"body":[
+			"\\GluonCirc(${3:x},${4:y})(${5:radius},${6:phase}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3093,7 +716,17 @@
 		"prefix":"GluonCirc",
 		"body":[
 			"\\GluonCirc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:phase}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleGluonCirc()(){}{}{}":{
+		"prefix":"DoubleGluonCirc",
+		"body":[
+			"\\DoubleGluonCirc(${4:x},${5:y})(${6:radius},${7:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3101,7 +734,17 @@
 		"prefix":"DoubleGluonCirc",
 		"body":[
 			"\\DoubleGluonCirc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashGluonCirc()(){}{}{}":{
+		"prefix":"DashGluonCirc",
+		"body":[
+			"\\DashGluonCirc(${4:x},${5:y})(${6:radius},${7:phase}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3109,7 +752,17 @@
 		"prefix":"DashGluonCirc",
 		"body":[
 			"\\DashGluonCirc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:phase}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleGluonCirc()(){}{}{}{}":{
+		"prefix":"DashDoubleGluonCirc",
+		"body":[
+			"\\DashDoubleGluonCirc(${5:x},${6:y})(${7:radius},${8:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3117,7 +770,17 @@
 		"prefix":"DashDoubleGluonCirc",
 		"body":[
 			"\\DashDoubleGluonCirc[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:phase}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Photon()(){}{}":{
+		"prefix":"Photon",
+		"body":[
+			"\\Photon(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3125,7 +788,17 @@
 		"prefix":"Photon",
 		"body":[
 			"\\Photon[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoublePhoton()(){}{}{}":{
+		"prefix":"DoublePhoton",
+		"body":[
+			"\\DoublePhoton(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3133,7 +806,17 @@
 		"prefix":"DoublePhoton",
 		"body":[
 			"\\DoublePhoton[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashPhoton()(){}{}{}":{
+		"prefix":"DashPhoton",
+		"body":[
+			"\\DashPhoton(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3141,7 +824,17 @@
 		"prefix":"DashPhoton",
 		"body":[
 			"\\DashPhoton[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoublePhoton()(){}{}{}{}":{
+		"prefix":"DashDoublePhoton",
+		"body":[
+			"\\DashDoublePhoton(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3149,7 +842,17 @@
 		"prefix":"DashDoublePhoton",
 		"body":[
 			"\\DashDoublePhoton[${5:options%keyvals}](${6:x1},${7:y1})(${8:x2},${9:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PhotonArc()(){}{}":{
+		"prefix":"PhotonArc",
+		"body":[
+			"\\PhotonArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3157,7 +860,17 @@
 		"prefix":"PhotonArc",
 		"body":[
 			"\\PhotonArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoublePhotonArc()(){}{}{}":{
+		"prefix":"DoublePhotonArc",
+		"body":[
+			"\\DoublePhotonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3165,7 +878,17 @@
 		"prefix":"DoublePhotonArc",
 		"body":[
 			"\\DoublePhotonArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashPhotonArc()(){}{}{}":{
+		"prefix":"DashPhotonArc",
+		"body":[
+			"\\DashPhotonArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3173,7 +896,17 @@
 		"prefix":"DashPhotonArc",
 		"body":[
 			"\\DashPhotonArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoublePhotonArc()(){}{}{}{}":{
+		"prefix":"DashDoublePhotonArc",
+		"body":[
+			"\\DashDoublePhotonArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3181,7 +914,17 @@
 		"prefix":"DashDoublePhotonArc",
 		"body":[
 			"\\DashDoublePhotonArc[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ZigZag()(){}{}":{
+		"prefix":"ZigZag",
+		"body":[
+			"\\ZigZag(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3189,7 +932,17 @@
 		"prefix":"ZigZag",
 		"body":[
 			"\\ZigZag[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleZigZag()(){}{}{}":{
+		"prefix":"DoubleZigZag",
+		"body":[
+			"\\DoubleZigZag(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3197,7 +950,17 @@
 		"prefix":"DoubleZigZag",
 		"body":[
 			"\\DoubleZigZag[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashZigZag()(){}{}{}":{
+		"prefix":"DashZigZag",
+		"body":[
+			"\\DashZigZag(${4:x1},${5:y1})(${6:x2},${7:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3205,7 +968,17 @@
 		"prefix":"DashZigZag",
 		"body":[
 			"\\DashZigZag[${4:options%keyvals}](${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleZigZag()(){}{}{}{}":{
+		"prefix":"DashDoubleZigZag",
+		"body":[
+			"\\DashDoubleZigZag(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3213,7 +986,17 @@
 		"prefix":"DashDoubleZigZag",
 		"body":[
 			"\\DashDoubleZigZag[${5:options%keyvals}](${6:x1},${7:y1})(${8:x2},${9:y2}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ZigZagArc()(){}{}":{
+		"prefix":"ZigZagArc",
+		"body":[
+			"\\ZigZagArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:amplitude}}{${2:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3221,7 +1004,17 @@
 		"prefix":"ZigZagArc",
 		"body":[
 			"\\ZigZagArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoubleZigZagArc()(){}{}{}":{
+		"prefix":"DoubleZigZagArc",
+		"body":[
+			"\\DoubleZigZagArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3229,7 +1022,17 @@
 		"prefix":"DoubleZigZagArc",
 		"body":[
 			"\\DoubleZigZagArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashZigZagArc()(){}{}{}":{
+		"prefix":"DashZigZagArc",
+		"body":[
+			"\\DashZigZagArc(${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3237,7 +1040,17 @@
 		"prefix":"DashZigZagArc",
 		"body":[
 			"\\DashZigZagArc[${4:options%keyvals}](${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashDoubleZigZagArc()(){}{}{}{}":{
+		"prefix":"DashDoubleZigZagArc",
+		"body":[
+			"\\DashDoubleZigZagArc(${5:x},${6:y})(${7:radius},${8:start-angle},${9:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3245,7 +1058,305 @@
 		"prefix":"DashDoubleZigZagArc",
 		"body":[
 			"\\DashDoubleZigZagArc[${5:options%keyvals}](${6:x},${7:y})(${8:radius},${9:start-angle},${10:end-angle}){${1:amplitude}}{${2:number}}{${3:linesep}}{${4:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Vertex(){}":{
+		"prefix":"Vertex",
+		"body":[
+			"\\Vertex(${2:x},${3:y}){${1:radius}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FCirc(){}":{
+		"prefix":"FCirc",
+		"body":[
+			"\\FCirc(${2:x},${3:y}){${1:radius}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ECirc(){}":{
+		"prefix":"ECirc",
+		"body":[
+			"\\ECirc(${2:x},${3:y}){${1:radius}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BCirc(){}":{
+		"prefix":"BCirc",
+		"body":[
+			"\\BCirc(${2:x},${3:y}){${1:radius}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GCirc(){}{}":{
+		"prefix":"GCirc",
+		"body":[
+			"\\GCirc(${3:x},${4:y}){${1:radius}}{${2:grayscale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CCirc(){}{}{}":{
+		"prefix":"CCirc",
+		"body":[
+			"\\CCirc(${4:x},${5:y}){${1:radius}}{${2:bound color}}{${3:fill color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Oval()()()":{
+		"prefix":"Oval",
+		"body":[
+			"\\Oval(${1:x},${2:y})(${3:half-height},${4:half-width})(${5:angle})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FOval()()()":{
+		"prefix":"FOval",
+		"body":[
+			"\\FOval(${1:x},${2:y})(${3:half-height},${4:half-width})(${5:angle})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GOval()()(){}":{
+		"prefix":"GOval",
+		"body":[
+			"\\GOval(${2:x},${3:y})(${4:half-height},${5:half-width})(${6:angle}){${1:grayscale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"COval()()(){}{}":{
+		"prefix":"COval",
+		"body":[
+			"\\COval(${3:x},${4:y})(${5:half-height},${6:half-width})(${7:angle}){${1:bound color}}{${2:fill color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EBox()()":{
+		"prefix":"EBox",
+		"body":[
+			"\\EBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FBox()()":{
+		"prefix":"FBox",
+		"body":[
+			"\\FBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BBox()()":{
+		"prefix":"BBox",
+		"body":[
+			"\\BBox(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GBox()(){}":{
+		"prefix":"GBox",
+		"body":[
+			"\\GBox(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:grayscale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CBox()(){}{}":{
+		"prefix":"CBox",
+		"body":[
+			"\\CBox(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:bound color}}{${2:fill color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EBoxc()()":{
+		"prefix":"EBoxc",
+		"body":[
+			"\\EBoxc(${1:x},${2:y})(${3:width},${4:height})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Boxc()()":{
+		"prefix":"Boxc",
+		"body":[
+			"\\Boxc(${1:x},${2:y})(${3:width},${4:height})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FBoxc()()":{
+		"prefix":"FBoxc",
+		"body":[
+			"\\FBoxc(${1:x},${2:y})(${3:width},${4:height})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BBoxc()()":{
+		"prefix":"BBoxc",
+		"body":[
+			"\\BBoxc(${1:x},${2:y})(${3:width},${4:height})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GBoxc()(){}":{
+		"prefix":"GBoxc",
+		"body":[
+			"\\GBoxc(${2:x},${3:y})(${4:width},${5:height}){${1:grayscale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CBoxc()(){}{}":{
+		"prefix":"CBoxc",
+		"body":[
+			"\\CBoxc(${3:x},${4:y})(${5:width},${6:height}){${1:bound color}}{${2:fill color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RotatedBox()(){}{}":{
+		"prefix":"RotatedBox",
+		"body":[
+			"\\RotatedBox(${3:x},${4:y})(${5:width},${6:height}){${1:angle}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FilledRotatedBox()(){}{}":{
+		"prefix":"FilledRotatedBox",
+		"body":[
+			"\\FilledRotatedBox(${3:x},${4:y})(${5:width},${6:height}){${1:angle}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ETri()()()":{
+		"prefix":"ETri",
+		"body":[
+			"\\ETri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FTri()()()":{
+		"prefix":"FTri",
+		"body":[
+			"\\FTri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BTri()()()":{
+		"prefix":"BTri",
+		"body":[
+			"\\BTri(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GTri()()(){}":{
+		"prefix":"GTri",
+		"body":[
+			"\\GTri(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3}){${1:grayscale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CTri()()(){}{}":{
+		"prefix":"CTri",
+		"body":[
+			"\\CTri(${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3}){${1:bound color}}{${2:fill color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Polygon{}{}":{
+		"prefix":"Polygon",
+		"body":[
+			"\\Polygon{${1:(${3:x1},${4:y1}),(${5:x2},${6:y2}),...}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FilledPolygon{}{}":{
+		"prefix":"FilledPolygon",
+		"body":[
+			"\\FilledPolygon{${1:(${3:x1},${4:y1}),(${5:x2},${6:y2}),...}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LinAxis()()()":{
+		"prefix":"LinAxis",
+		"body":[
+			"\\LinAxis(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:divs},${6:subdivs},${7:hashsize},${8:offset},${9:width})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LogAxis()()()":{
+		"prefix":"LogAxis",
+		"body":[
+			"\\LogAxis(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:divs},${6:hashsize},${7:offset},${8:width})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Text(){}":{
+		"prefix":"Text",
+		"body":[
+			"\\Text(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3253,7 +1364,17 @@
 		"prefix":"Text",
 		"body":[
 			"\\Text(${3:x},${4:y})[${2:pos}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Text()(){}":{
+		"prefix":"Text",
+		"body":[
+			"\\Text(${2:x},${3:y})(${4:angle}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3261,7 +1382,17 @@
 		"prefix":"Text",
 		"body":[
 			"\\Text(${3:x},${4:y})(${5:angle})[${2:pos}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rText(){}":{
+		"prefix":"rText",
+		"body":[
+			"\\rText(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3269,7 +1400,8 @@
 		"prefix":"rText",
 		"body":[
 			"\\rText(${3:x},${4:y})[${2:mode}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3277,7 +1409,17 @@
 		"prefix":"rText",
 		"body":[
 			"\\rText(${4:x},${5:y})[${2:mode}][${3:rotation}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RText()(){}":{
+		"prefix":"RText",
+		"body":[
+			"\\RText(${2:x},${3:y})(${4:angle}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3285,7 +1427,26 @@
 		"prefix":"RText",
 		"body":[
 			"\\RText(${3:x},${4:y})[${2:pos}](${5:angle}){${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetPFont{}{}":{
+		"prefix":"SetPFont",
+		"body":[
+			"\\SetPFont{${1:postscript font%keyvals}}{${2:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PText()(){}":{
+		"prefix":"PText",
+		"body":[
+			"\\PText(${2:x},${3:y})(${4:angle}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3293,7 +1454,71 @@
 		"prefix":"PText",
 		"body":[
 			"\\PText(${3:x},${4:y})(${5:angle})[${2:pos}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BText(){}":{
+		"prefix":"BText",
+		"body":[
+			"\\BText(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GText(){}{}":{
+		"prefix":"GText",
+		"body":[
+			"\\GText(${3:x},${4:y}){${1:grayscale}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CText(){}{}{}":{
+		"prefix":"CText",
+		"body":[
+			"\\CText(${4:x},${5:y}){${1:bound color}}{${2:fill color}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BTwoText(){}{}":{
+		"prefix":"BTwoText",
+		"body":[
+			"\\BTwoText(${3:x},${4:y}){${1:text1%text}}{${2:text2%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GTwoText(){}{}{}":{
+		"prefix":"GTwoText",
+		"body":[
+			"\\GTwoText(${4:x},${5:y}){${1:grayscale}}{${2:text1%text}}{${3:text2%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CTwoText(){}{}{}{}":{
+		"prefix":"CTwoText",
+		"body":[
+			"\\CTwoText(${5:x},${6:y}){${1:bound color}}{${2:fill color}}{${3:text1%text}}{${4:text2%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ArrowLine()()":{
+		"prefix":"ArrowLine",
+		"body":[
+			"\\ArrowLine(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3301,7 +1526,17 @@
 		"prefix":"ArrowLine",
 		"body":[
 			"\\ArrowLine[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrow()()":{
+		"prefix":"LongArrow",
+		"body":[
+			"\\LongArrow(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3309,7 +1544,17 @@
 		"prefix":"LongArrow",
 		"body":[
 			"\\LongArrow[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDoubleLine()(){}":{
+		"prefix":"ArrowDoubleLine",
+		"body":[
+			"\\ArrowDoubleLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3317,7 +1562,17 @@
 		"prefix":"ArrowDoubleLine",
 		"body":[
 			"\\ArrowDoubleLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowLine()(){}":{
+		"prefix":"DashArrowLine",
+		"body":[
+			"\\DashArrowLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3325,7 +1580,17 @@
 		"prefix":"DashArrowLine",
 		"body":[
 			"\\DashArrowLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashLine()(){}":{
+		"prefix":"ArrowDashLine",
+		"body":[
+			"\\ArrowDashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3333,7 +1598,17 @@
 		"prefix":"ArrowDashLine",
 		"body":[
 			"\\ArrowDashLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowDoubleLine()(){}{}":{
+		"prefix":"DashArrowDoubleLine",
+		"body":[
+			"\\DashArrowDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3341,7 +1616,17 @@
 		"prefix":"DashArrowDoubleLine",
 		"body":[
 			"\\DashArrowDoubleLine[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashDoubleLine()(){}{}":{
+		"prefix":"ArrowDashDoubleLine",
+		"body":[
+			"\\ArrowDashDoubleLine(${3:x1},${4:y1})(${5:x2},${6:y2}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3349,7 +1634,17 @@
 		"prefix":"ArrowDashDoubleLine",
 		"body":[
 			"\\ArrowDashDoubleLine[${3:options%keyvals}](${4:x1},${5:y1})(${6:x2},${7:y2}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashLongArrowLine()(){}":{
+		"prefix":"DashLongArrowLine",
+		"body":[
+			"\\DashLongArrowLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3357,7 +1652,17 @@
 		"prefix":"DashLongArrowLine",
 		"body":[
 			"\\DashLongArrowLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowDashLine()(){}":{
+		"prefix":"LongArrowDashLine",
+		"body":[
+			"\\LongArrowDashLine(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3365,7 +1670,17 @@
 		"prefix":"LongArrowDashLine",
 		"body":[
 			"\\LongArrowDashLine[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowDash()(){}":{
+		"prefix":"LongArrowDash",
+		"body":[
+			"\\LongArrowDash(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3373,7 +1688,17 @@
 		"prefix":"LongArrowDash",
 		"body":[
 			"\\LongArrowDash[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashLongArrow()(){}":{
+		"prefix":"DashLongArrow",
+		"body":[
+			"\\DashLongArrow(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3381,7 +1706,17 @@
 		"prefix":"DashLongArrow",
 		"body":[
 			"\\DashLongArrow[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowArcn()()":{
+		"prefix":"LongArrowArcn",
+		"body":[
+			"\\LongArrowArcn(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3389,7 +1724,17 @@
 		"prefix":"LongArrowArcn",
 		"body":[
 			"\\LongArrowArcn[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowArcn()()":{
+		"prefix":"ArrowArcn",
+		"body":[
+			"\\ArrowArcn(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3397,7 +1742,17 @@
 		"prefix":"ArrowArcn",
 		"body":[
 			"\\ArrowArcn[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowArc()()":{
+		"prefix":"LongArrowArc",
+		"body":[
+			"\\LongArrowArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3405,7 +1760,17 @@
 		"prefix":"LongArrowArc",
 		"body":[
 			"\\LongArrowArc[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowArc()()":{
+		"prefix":"ArrowArc",
+		"body":[
+			"\\ArrowArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3413,7 +1778,17 @@
 		"prefix":"ArrowArc",
 		"body":[
 			"\\ArrowArc[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowCArc()()":{
+		"prefix":"ArrowCArc",
+		"body":[
+			"\\ArrowCArc(${1:x},${2:y})(${3:radius},${4:start-angle},${5:end-angle})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3421,7 +1796,17 @@
 		"prefix":"ArrowCArc",
 		"body":[
 			"\\ArrowCArc[${1:options%keyvals}](${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowArcn()(){}":{
+		"prefix":"DashArrowArcn",
+		"body":[
+			"\\DashArrowArcn(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3429,7 +1814,17 @@
 		"prefix":"DashArrowArcn",
 		"body":[
 			"\\DashArrowArcn[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashArcn()(){}":{
+		"prefix":"ArrowDashArcn",
+		"body":[
+			"\\ArrowDashArcn(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3437,7 +1832,17 @@
 		"prefix":"ArrowDashArcn",
 		"body":[
 			"\\ArrowDashArcn[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowArc()(){}":{
+		"prefix":"DashArrowArc",
+		"body":[
+			"\\DashArrowArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3445,7 +1850,17 @@
 		"prefix":"DashArrowArc",
 		"body":[
 			"\\DashArrowArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowCArc()(){}":{
+		"prefix":"DashArrowCArc",
+		"body":[
+			"\\DashArrowCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3453,7 +1868,17 @@
 		"prefix":"DashArrowCArc",
 		"body":[
 			"\\DashArrowCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashArc()(){}":{
+		"prefix":"ArrowDashArc",
+		"body":[
+			"\\ArrowDashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3461,7 +1886,17 @@
 		"prefix":"ArrowDashArc",
 		"body":[
 			"\\ArrowDashArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashCArc()(){}":{
+		"prefix":"ArrowDashCArc",
+		"body":[
+			"\\ArrowDashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3469,7 +1904,17 @@
 		"prefix":"ArrowDashCArc",
 		"body":[
 			"\\ArrowDashCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongDashArrowArc()(){}":{
+		"prefix":"LongDashArrowArc",
+		"body":[
+			"\\LongDashArrowArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3477,7 +1922,17 @@
 		"prefix":"LongDashArrowArc",
 		"body":[
 			"\\LongDashArrowArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongDashArrowCArc()(){}":{
+		"prefix":"LongDashArrowCArc",
+		"body":[
+			"\\LongDashArrowCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3485,7 +1940,17 @@
 		"prefix":"LongDashArrowCArc",
 		"body":[
 			"\\LongDashArrowCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowDashArc()(){}":{
+		"prefix":"LongArrowDashArc",
+		"body":[
+			"\\LongArrowDashArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3493,7 +1958,17 @@
 		"prefix":"LongArrowDashArc",
 		"body":[
 			"\\LongArrowDashArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LongArrowDashCArc()(){}":{
+		"prefix":"LongArrowDashCArc",
+		"body":[
+			"\\LongArrowDashCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3501,7 +1976,17 @@
 		"prefix":"LongArrowDashCArc",
 		"body":[
 			"\\LongArrowDashCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDoubleArc()(){}":{
+		"prefix":"ArrowDoubleArc",
+		"body":[
+			"\\ArrowDoubleArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3509,7 +1994,17 @@
 		"prefix":"ArrowDoubleArc",
 		"body":[
 			"\\ArrowDoubleArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDoubleCArc()(){}":{
+		"prefix":"ArrowDoubleCArc",
+		"body":[
+			"\\ArrowDoubleCArc(${2:x},${3:y})(${4:radius},${5:start-angle},${6:end-angle}){${1:linesep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3517,7 +2012,17 @@
 		"prefix":"ArrowDoubleCArc",
 		"body":[
 			"\\ArrowDoubleCArc[${2:options%keyvals}](${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashDoubleArc()(){}{}":{
+		"prefix":"ArrowDashDoubleArc",
+		"body":[
+			"\\ArrowDashDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3525,7 +2030,17 @@
 		"prefix":"ArrowDashDoubleArc",
 		"body":[
 			"\\ArrowDashDoubleArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ArrowDashDoubleCArc()(){}{}":{
+		"prefix":"ArrowDashDoubleCArc",
+		"body":[
+			"\\ArrowDashDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3533,7 +2048,17 @@
 		"prefix":"ArrowDashDoubleCArc",
 		"body":[
 			"\\ArrowDashDoubleCArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowDoubleArc()(){}{}":{
+		"prefix":"DashArrowDoubleArc",
+		"body":[
+			"\\DashArrowDoubleArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3541,7 +2066,17 @@
 		"prefix":"DashArrowDoubleArc",
 		"body":[
 			"\\DashArrowDoubleArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DashArrowDoubleCArc()(){}{}":{
+		"prefix":"DashArrowDoubleCArc",
+		"body":[
+			"\\DashArrowDoubleCArc(${3:x},${4:y})(${5:radius},${6:start-angle},${7:end-angle}){${1:linesep}}{${2:dashsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3549,26 +2084,1937 @@
 		"prefix":"DashArrowDoubleCArc",
 		"body":[
 			"\\DashArrowDoubleCArc[${3:options%keyvals}](${4:x},${5:y})(${6:radius},${7:start-angle},${8:end-angle}){${1:linesep}}{${2:dashsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"axopicture":{
-		"prefix":"axopicture",
+	"SetDashSize{}":{
+		"prefix":"SetDashSize",
 		"body":[
-			"\\begin{axopicture}",
-				"\t$1",
-			"\\end{axopicture}"
-		]
+			"\\SetDashSize{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"axopicture":{
+	"SetLineSep{}":{
+		"prefix":"SetLineSep",
+		"body":[
+			"\\SetLineSep{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetSep{}":{
+		"prefix":"SetSep",
+		"body":[
+			"\\SetSep{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetWidth{}":{
+		"prefix":"SetWidth",
+		"body":[
+			"\\SetWidth{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowAspect{}":{
+		"prefix":"SetArrowAspect",
+		"body":[
+			"\\SetArrowAspect{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowInset{}":{
+		"prefix":"SetArrowInset",
+		"body":[
+			"\\SetArrowInset{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowPosition{}":{
+		"prefix":"SetArrowPosition",
+		"body":[
+			"\\SetArrowPosition{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowScale{}":{
+		"prefix":"SetArrowScale",
+		"body":[
+			"\\SetArrowScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefaultArrowScale{}":{
+		"prefix":"DefaultArrowScale",
+		"body":[
+			"\\DefaultArrowScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowStroke{}":{
+		"prefix":"SetArrowStroke",
+		"body":[
+			"\\SetArrowStroke{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetArrowSize{}":{
+		"prefix":"SetArrowSize",
+		"body":[
+			"\\SetArrowSize{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"canvasScaleOnept":{
+		"prefix":"canvasScaleOnept",
+		"body":[
+			"\\canvasScaleOnept"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"canvasScaleObjectScale":{
+		"prefix":"canvasScaleObjectScale",
+		"body":[
+			"\\canvasScaleObjectScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"canvasScaleUnitLength":{
+		"prefix":"canvasScaleUnitLength",
+		"body":[
+			"\\canvasScaleUnitLength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetScale{}":{
+		"prefix":"SetScale",
+		"body":[
+			"\\SetScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetTextScale{}":{
+		"prefix":"SetTextScale",
+		"body":[
+			"\\SetTextScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetCanvasScale{}":{
+		"prefix":"SetCanvasScale",
+		"body":[
+			"\\SetCanvasScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifPSTextScalesLikeGraphics":{
+		"prefix":"ifPSTextScalesLikeGraphics",
+		"body":[
+			"\\ifPSTextScalesLikeGraphics"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSTextScalesLikeGraphicsfalse":{
+		"prefix":"PSTextScalesLikeGraphicsfalse",
+		"body":[
+			"\\PSTextScalesLikeGraphicsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSTextScalesLikeGraphicstrue":{
+		"prefix":"PSTextScalesLikeGraphicstrue",
+		"body":[
+			"\\PSTextScalesLikeGraphicstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetOffset()":{
+		"prefix":"SetOffset",
+		"body":[
+			"\\SetOffset(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetScaledOffset()":{
+		"prefix":"SetScaledOffset",
+		"body":[
+			"\\SetScaledOffset(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetColor{}":{
+		"prefix":"SetColor",
+		"body":[
+			"\\SetColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetObjectScale{}":{
+		"prefix":"SetObjectScale",
+		"body":[
+			"\\SetObjectScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textGreenYellow":{
+		"prefix":"textGreenYellow",
+		"body":[
+			"\\textGreenYellow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textYellow":{
+		"prefix":"textYellow",
+		"body":[
+			"\\textYellow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textGoldenrod":{
+		"prefix":"textGoldenrod",
+		"body":[
+			"\\textGoldenrod"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textDandelion":{
+		"prefix":"textDandelion",
+		"body":[
+			"\\textDandelion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textApricot":{
+		"prefix":"textApricot",
+		"body":[
+			"\\textApricot"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textPeach":{
+		"prefix":"textPeach",
+		"body":[
+			"\\textPeach"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMelon":{
+		"prefix":"textMelon",
+		"body":[
+			"\\textMelon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textYellowOrange":{
+		"prefix":"textYellowOrange",
+		"body":[
+			"\\textYellowOrange"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textOrange":{
+		"prefix":"textOrange",
+		"body":[
+			"\\textOrange"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBurntOrange":{
+		"prefix":"textBurntOrange",
+		"body":[
+			"\\textBurntOrange"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBittersweet":{
+		"prefix":"textBittersweet",
+		"body":[
+			"\\textBittersweet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRedOrange":{
+		"prefix":"textRedOrange",
+		"body":[
+			"\\textRedOrange"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMahogany":{
+		"prefix":"textMahogany",
+		"body":[
+			"\\textMahogany"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMaroon":{
+		"prefix":"textMaroon",
+		"body":[
+			"\\textMaroon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBrickRed":{
+		"prefix":"textBrickRed",
+		"body":[
+			"\\textBrickRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRed":{
+		"prefix":"textRed",
+		"body":[
+			"\\textRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textOrangeRed":{
+		"prefix":"textOrangeRed",
+		"body":[
+			"\\textOrangeRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRubineRed":{
+		"prefix":"textRubineRed",
+		"body":[
+			"\\textRubineRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textWildStrawberry":{
+		"prefix":"textWildStrawberry",
+		"body":[
+			"\\textWildStrawberry"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textSalmon":{
+		"prefix":"textSalmon",
+		"body":[
+			"\\textSalmon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCarnationPink":{
+		"prefix":"textCarnationPink",
+		"body":[
+			"\\textCarnationPink"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMagenta":{
+		"prefix":"textMagenta",
+		"body":[
+			"\\textMagenta"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textVioletRed":{
+		"prefix":"textVioletRed",
+		"body":[
+			"\\textVioletRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRhodamine":{
+		"prefix":"textRhodamine",
+		"body":[
+			"\\textRhodamine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMulberry":{
+		"prefix":"textMulberry",
+		"body":[
+			"\\textMulberry"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRedViolet":{
+		"prefix":"textRedViolet",
+		"body":[
+			"\\textRedViolet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textFuchsia":{
+		"prefix":"textFuchsia",
+		"body":[
+			"\\textFuchsia"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLavender":{
+		"prefix":"textLavender",
+		"body":[
+			"\\textLavender"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textThistle":{
+		"prefix":"textThistle",
+		"body":[
+			"\\textThistle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textOrchid":{
+		"prefix":"textOrchid",
+		"body":[
+			"\\textOrchid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textDarkOrchid":{
+		"prefix":"textDarkOrchid",
+		"body":[
+			"\\textDarkOrchid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textPurple":{
+		"prefix":"textPurple",
+		"body":[
+			"\\textPurple"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textPlum":{
+		"prefix":"textPlum",
+		"body":[
+			"\\textPlum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textViolet":{
+		"prefix":"textViolet",
+		"body":[
+			"\\textViolet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRoyalPurple":{
+		"prefix":"textRoyalPurple",
+		"body":[
+			"\\textRoyalPurple"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBlueViolet":{
+		"prefix":"textBlueViolet",
+		"body":[
+			"\\textBlueViolet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textPeriwinkle":{
+		"prefix":"textPeriwinkle",
+		"body":[
+			"\\textPeriwinkle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCadetBlue":{
+		"prefix":"textCadetBlue",
+		"body":[
+			"\\textCadetBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCornflowerBlue":{
+		"prefix":"textCornflowerBlue",
+		"body":[
+			"\\textCornflowerBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textMidnightBlue":{
+		"prefix":"textMidnightBlue",
+		"body":[
+			"\\textMidnightBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textNavyBlue":{
+		"prefix":"textNavyBlue",
+		"body":[
+			"\\textNavyBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRoyalBlue":{
+		"prefix":"textRoyalBlue",
+		"body":[
+			"\\textRoyalBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBlue":{
+		"prefix":"textBlue",
+		"body":[
+			"\\textBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCerulean":{
+		"prefix":"textCerulean",
+		"body":[
+			"\\textCerulean"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textCyan":{
+		"prefix":"textCyan",
+		"body":[
+			"\\textCyan"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textProcessBlue":{
+		"prefix":"textProcessBlue",
+		"body":[
+			"\\textProcessBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textSkyBlue":{
+		"prefix":"textSkyBlue",
+		"body":[
+			"\\textSkyBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textTurquoise":{
+		"prefix":"textTurquoise",
+		"body":[
+			"\\textTurquoise"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textTealBlue":{
+		"prefix":"textTealBlue",
+		"body":[
+			"\\textTealBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textAquamarine":{
+		"prefix":"textAquamarine",
+		"body":[
+			"\\textAquamarine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBlueGreen":{
+		"prefix":"textBlueGreen",
+		"body":[
+			"\\textBlueGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textEmerald":{
+		"prefix":"textEmerald",
+		"body":[
+			"\\textEmerald"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textJungleGreen":{
+		"prefix":"textJungleGreen",
+		"body":[
+			"\\textJungleGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textSeaGreen":{
+		"prefix":"textSeaGreen",
+		"body":[
+			"\\textSeaGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textGreen":{
+		"prefix":"textGreen",
+		"body":[
+			"\\textGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textForestGreen":{
+		"prefix":"textForestGreen",
+		"body":[
+			"\\textForestGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textPineGreen":{
+		"prefix":"textPineGreen",
+		"body":[
+			"\\textPineGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLimeGreen":{
+		"prefix":"textLimeGreen",
+		"body":[
+			"\\textLimeGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textYellowGreen":{
+		"prefix":"textYellowGreen",
+		"body":[
+			"\\textYellowGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textSpringGreen":{
+		"prefix":"textSpringGreen",
+		"body":[
+			"\\textSpringGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textOliveGreen":{
+		"prefix":"textOliveGreen",
+		"body":[
+			"\\textOliveGreen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textRawSienna":{
+		"prefix":"textRawSienna",
+		"body":[
+			"\\textRawSienna"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textSepia":{
+		"prefix":"textSepia",
+		"body":[
+			"\\textSepia"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBrown":{
+		"prefix":"textBrown",
+		"body":[
+			"\\textBrown"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textTan":{
+		"prefix":"textTan",
+		"body":[
+			"\\textTan"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textGray":{
+		"prefix":"textGray",
+		"body":[
+			"\\textGray"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textBlack":{
+		"prefix":"textBlack",
+		"body":[
+			"\\textBlack"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textWhite":{
+		"prefix":"textWhite",
+		"body":[
+			"\\textWhite"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLightYellow":{
+		"prefix":"textLightYellow",
+		"body":[
+			"\\textLightYellow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLightRed":{
+		"prefix":"textLightRed",
+		"body":[
+			"\\textLightRed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLightBlue":{
+		"prefix":"textLightBlue",
+		"body":[
+			"\\textLightBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textLightGray":{
+		"prefix":"textLightGray",
+		"body":[
+			"\\textLightGray"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textVeryLightBlue":{
+		"prefix":"textVeryLightBlue",
+		"body":[
+			"\\textVeryLightBlue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreenYellow{}":{
+		"prefix":"GreenYellow",
+		"body":[
+			"\\GreenYellow{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Yellow{}":{
+		"prefix":"Yellow",
+		"body":[
+			"\\Yellow{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Goldenrod{}":{
+		"prefix":"Goldenrod",
+		"body":[
+			"\\Goldenrod{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Dandelion{}":{
+		"prefix":"Dandelion",
+		"body":[
+			"\\Dandelion{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Apricot{}":{
+		"prefix":"Apricot",
+		"body":[
+			"\\Apricot{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Peach{}":{
+		"prefix":"Peach",
+		"body":[
+			"\\Peach{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Melon{}":{
+		"prefix":"Melon",
+		"body":[
+			"\\Melon{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"YellowOrange{}":{
+		"prefix":"YellowOrange",
+		"body":[
+			"\\YellowOrange{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Orange{}":{
+		"prefix":"Orange",
+		"body":[
+			"\\Orange{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BurntOrange{}":{
+		"prefix":"BurntOrange",
+		"body":[
+			"\\BurntOrange{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Bittersweet{}":{
+		"prefix":"Bittersweet",
+		"body":[
+			"\\Bittersweet{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RedOrange{}":{
+		"prefix":"RedOrange",
+		"body":[
+			"\\RedOrange{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Mahogany{}":{
+		"prefix":"Mahogany",
+		"body":[
+			"\\Mahogany{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Maroon{}":{
+		"prefix":"Maroon",
+		"body":[
+			"\\Maroon{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BrickRed{}":{
+		"prefix":"BrickRed",
+		"body":[
+			"\\BrickRed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Red{}":{
+		"prefix":"Red",
+		"body":[
+			"\\Red{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OrangeRed{}":{
+		"prefix":"OrangeRed",
+		"body":[
+			"\\OrangeRed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RubineRed{}":{
+		"prefix":"RubineRed",
+		"body":[
+			"\\RubineRed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WildStrawberry{}":{
+		"prefix":"WildStrawberry",
+		"body":[
+			"\\WildStrawberry{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Salmon{}":{
+		"prefix":"Salmon",
+		"body":[
+			"\\Salmon{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CarnationPink{}":{
+		"prefix":"CarnationPink",
+		"body":[
+			"\\CarnationPink{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Magenta{}":{
+		"prefix":"Magenta",
+		"body":[
+			"\\Magenta{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VioletRed{}":{
+		"prefix":"VioletRed",
+		"body":[
+			"\\VioletRed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Rhodamine{}":{
+		"prefix":"Rhodamine",
+		"body":[
+			"\\Rhodamine{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Mulberry{}":{
+		"prefix":"Mulberry",
+		"body":[
+			"\\Mulberry{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RedViolet{}":{
+		"prefix":"RedViolet",
+		"body":[
+			"\\RedViolet{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Fuchsia{}":{
+		"prefix":"Fuchsia",
+		"body":[
+			"\\Fuchsia{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Lavender{}":{
+		"prefix":"Lavender",
+		"body":[
+			"\\Lavender{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Thistle{}":{
+		"prefix":"Thistle",
+		"body":[
+			"\\Thistle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Orchid{}":{
+		"prefix":"Orchid",
+		"body":[
+			"\\Orchid{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DarkOrchid{}":{
+		"prefix":"DarkOrchid",
+		"body":[
+			"\\DarkOrchid{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Purple{}":{
+		"prefix":"Purple",
+		"body":[
+			"\\Purple{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Plum{}":{
+		"prefix":"Plum",
+		"body":[
+			"\\Plum{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Violet{}":{
+		"prefix":"Violet",
+		"body":[
+			"\\Violet{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RoyalPurple{}":{
+		"prefix":"RoyalPurple",
+		"body":[
+			"\\RoyalPurple{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BlueViolet{}":{
+		"prefix":"BlueViolet",
+		"body":[
+			"\\BlueViolet{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Periwinkle{}":{
+		"prefix":"Periwinkle",
+		"body":[
+			"\\Periwinkle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CadetBlue{}":{
+		"prefix":"CadetBlue",
+		"body":[
+			"\\CadetBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CornflowerBlue{}":{
+		"prefix":"CornflowerBlue",
+		"body":[
+			"\\CornflowerBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MidnightBlue{}":{
+		"prefix":"MidnightBlue",
+		"body":[
+			"\\MidnightBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NavyBlue{}":{
+		"prefix":"NavyBlue",
+		"body":[
+			"\\NavyBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RoyalBlue{}":{
+		"prefix":"RoyalBlue",
+		"body":[
+			"\\RoyalBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Blue{}":{
+		"prefix":"Blue",
+		"body":[
+			"\\Blue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cerulean{}":{
+		"prefix":"Cerulean",
+		"body":[
+			"\\Cerulean{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cyan{}":{
+		"prefix":"Cyan",
+		"body":[
+			"\\Cyan{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProcessBlue{}":{
+		"prefix":"ProcessBlue",
+		"body":[
+			"\\ProcessBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SkyBlue{}":{
+		"prefix":"SkyBlue",
+		"body":[
+			"\\SkyBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Turquoise{}":{
+		"prefix":"Turquoise",
+		"body":[
+			"\\Turquoise{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TealBlue{}":{
+		"prefix":"TealBlue",
+		"body":[
+			"\\TealBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Aquamarine{}":{
+		"prefix":"Aquamarine",
+		"body":[
+			"\\Aquamarine{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BlueGreen{}":{
+		"prefix":"BlueGreen",
+		"body":[
+			"\\BlueGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Emerald{}":{
+		"prefix":"Emerald",
+		"body":[
+			"\\Emerald{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JungleGreen{}":{
+		"prefix":"JungleGreen",
+		"body":[
+			"\\JungleGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SeaGreen{}":{
+		"prefix":"SeaGreen",
+		"body":[
+			"\\SeaGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Green{}":{
+		"prefix":"Green",
+		"body":[
+			"\\Green{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForestGreen{}":{
+		"prefix":"ForestGreen",
+		"body":[
+			"\\ForestGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PineGreen{}":{
+		"prefix":"PineGreen",
+		"body":[
+			"\\PineGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LimeGreen{}":{
+		"prefix":"LimeGreen",
+		"body":[
+			"\\LimeGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"YellowGreen{}":{
+		"prefix":"YellowGreen",
+		"body":[
+			"\\YellowGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpringGreen{}":{
+		"prefix":"SpringGreen",
+		"body":[
+			"\\SpringGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OliveGreen{}":{
+		"prefix":"OliveGreen",
+		"body":[
+			"\\OliveGreen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RawSienna{}":{
+		"prefix":"RawSienna",
+		"body":[
+			"\\RawSienna{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Sepia{}":{
+		"prefix":"Sepia",
+		"body":[
+			"\\Sepia{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Brown{}":{
+		"prefix":"Brown",
+		"body":[
+			"\\Brown{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Tan{}":{
+		"prefix":"Tan",
+		"body":[
+			"\\Tan{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Gray{}":{
+		"prefix":"Gray",
+		"body":[
+			"\\Gray{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Black{}":{
+		"prefix":"Black",
+		"body":[
+			"\\Black{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"White{}":{
+		"prefix":"White",
+		"body":[
+			"\\White{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LightYellow{}":{
+		"prefix":"LightYellow",
+		"body":[
+			"\\LightYellow{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LightRed{}":{
+		"prefix":"LightRed",
+		"body":[
+			"\\LightRed{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LightBlue{}":{
+		"prefix":"LightBlue",
+		"body":[
+			"\\LightBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LightGray{}":{
+		"prefix":"LightGray",
+		"body":[
+			"\\LightGray{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VeryLightBlue{}":{
+		"prefix":"VeryLightBlue",
+		"body":[
+			"\\VeryLightBlue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AXOputPDF{}":{
+		"prefix":"AXOputPDF",
+		"body":[
+			"\\AXOputPDF{${1:pdf code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AXOputPS{}":{
+		"prefix":"AXOputPS",
+		"body":[
+			"\\AXOputPS{${1:ps code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AXOspecial{}":{
+		"prefix":"AXOspecial",
+		"body":[
+			"\\AXOspecial{${1:ps code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AssignDecDiv{}{}{}":{
+		"prefix":"AssignDecDiv",
+		"body":[
+			"\\AssignDecDiv{${1:variable}}{${2:integer1}}{${3:integer2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AxoPut(){}":{
+		"prefix":"AxoPut",
+		"body":[
+			"\\AxoPut(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetPoint{}()":{
+		"prefix":"SetPoint",
+		"body":[
+			"\\SetPoint{${1:name}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetTmpBoxTwo{}{}":{
+		"prefix":"SetTmpBoxTwo",
+		"body":[
+			"\\SetTmpBoxTwo{${1:contents1}}{${2:contents2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetTmpBox{}":{
+		"prefix":"SetTmpBox",
+		"body":[
+			"\\SetTmpBox{${1:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UseCurrentPSFont":{
+		"prefix":"UseCurrentPSFont",
+		"body":[
+			"\\UseCurrentPSFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoarrowsize":{
+		"prefix":"axoarrowsize",
+		"body":[
+			"\\axoarrowsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axocanvas":{
+		"prefix":"axocanvas",
+		"body":[
+			"\\axocanvas"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axofontsize":{
+		"prefix":"axofontsize",
+		"body":[
+			"\\axofontsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axohelp":{
+		"prefix":"axohelp",
+		"body":[
+			"\\axohelp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axominusone":{
+		"prefix":"axominusone",
+		"body":[
+			"\\axominusone"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoone":{
+		"prefix":"axoone",
+		"body":[
+			"\\axoone"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoparray(){}":{
+		"prefix":"axoparray",
+		"body":[
+			"\\axoparray(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoscale":{
+		"prefix":"axoscale",
+		"body":[
+			"\\axoscale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoscalePT":{
+		"prefix":"axoscalePT",
+		"body":[
+			"\\axoscalePT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoscaleTT":{
+		"prefix":"axoscaleTT",
+		"body":[
+			"\\axoscaleTT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axotextscale":{
+		"prefix":"axotextscale",
+		"body":[
+			"\\axotextscale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axounitlength":{
+		"prefix":"axounitlength",
+		"body":[
+			"\\axounitlength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axowidth":{
+		"prefix":"axowidth",
+		"body":[
+			"\\axowidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoxo":{
+		"prefix":"axoxo",
+		"body":[
+			"\\axoxo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoxoff":{
+		"prefix":"axoxoff",
+		"body":[
+			"\\axoxoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoyo":{
+		"prefix":"axoyo",
+		"body":[
+			"\\axoyo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axoyoff":{
+		"prefix":"axoyoff",
+		"body":[
+			"\\axoyoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axozero":{
+		"prefix":"axozero",
+		"body":[
+			"\\axozero"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"contentspdf":{
+		"prefix":"contentspdf",
+		"body":[
+			"\\contentspdf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"contentspdfNoOffset":{
+		"prefix":"contentspdfNoOffset",
+		"body":[
+			"\\contentspdfNoOffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defWithOption{}{}{}":{
+		"prefix":"defWithOption",
+		"body":[
+			"\\defWithOption{${1:csname}}{${2:args}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defineaxofont{}{}":{
+		"prefix":"defineaxofont",
+		"body":[
+			"\\defineaxofont{${1:user-visible font name}}{${2:LaTeX font name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getaxohelp{}{}":{
+		"prefix":"getaxohelp",
+		"body":[
+			"\\getaxohelp{${1:csname}}{${2:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getoneline{}{}":{
+		"prefix":"getoneline",
+		"body":[
+			"\\getoneline{${1:csname}}{${2:input stream num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newcolor{}{}":{
+		"prefix":"newcolor",
+		"body":[
+			"\\newcolor{${1:color%specialDef}}{${2:CMYK}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"putLen(){}":{
+		"prefix":"putLen",
+		"body":[
+			"\\putLen(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useX{}":{
+		"prefix":"useX",
+		"body":[
+			"\\useX{${1:point name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useY{}":{
+		"prefix":"useY",
+		"body":[
+			"\\useY{${1:point name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifAXONotImplemented":{
+		"prefix":"ifAXONotImplemented",
+		"body":[
+			"\\ifAXONotImplemented"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AXONotImplementedtrue":{
+		"prefix":"AXONotImplementedtrue",
+		"body":[
+			"\\AXONotImplementedtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AXONotImplementedfalse":{
+		"prefix":"AXONotImplementedfalse",
+		"body":[
+			"\\AXONotImplementedfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bpinsp":{
+		"prefix":"bpinsp",
+		"body":[
+			"\\bpinsp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptinsp":{
+		"prefix":"ptinsp",
+		"body":[
+			"\\ptinsp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axopicture()":{
 		"prefix":"axopicture",
 		"body":[
 			"\\begin{axopicture}",
-				"\t$1",
+				"\t(${1:x},${2:y})",
 			"\\end{axopicture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axopicture()()":{
+		"prefix":"axopicture",
+		"body":[
+			"\\begin{axopicture}",
+				"\t(${1:x},${2:y})(${3:xoffset},${4:yoffset})",
+			"\\end{axopicture}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

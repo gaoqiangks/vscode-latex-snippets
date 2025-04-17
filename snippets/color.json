@@ -5,79 +5,8 @@
 		"prefix":"textcolor",
 		"body":[
 			"\\textcolor{${1:color}}{${2:text}}"
-		]
-	},
-
-
-	"mathcolor{}{}":{
-		"prefix":"mathcolor",
-		"body":[
-			"\\mathcolor{${1:color}}{${2:math}}"
-		]
-	},
-
-
-	"pagecolor{}":{
-		"prefix":"pagecolor",
-		"body":[
-			"\\pagecolor{${1:color}}"
-		]
-	},
-
-
-	"nopagecolor":{
-		"prefix":"nopagecolor",
-		"body":[
-			"\\nopagecolor"
-		]
-	},
-
-
-	"definecolor{}{}{}":{
-		"prefix":"definecolor",
-		"body":[
-			"\\definecolor{${1:name%specialDef}}{${2:model}}{${3:color-spec}}"
-		]
-	},
-
-
-	"DefineNamedColor{}{}{}{}":{
-		"prefix":"DefineNamedColor",
-		"body":[
-			"\\DefineNamedColor{${1:type}}{${2:name}}{${3:model}}{${4:spec}}"
-		]
-	},
-
-
-	"normalcolor":{
-		"prefix":"normalcolor",
-		"body":[
-			"\\normalcolor"
-		]
-	},
-
-
-	"color{}":{
-		"prefix":"color",
-		"body":[
-			"\\color{${1:color}}"
-		]
-	},
-
-
-	"colorbox{}{}":{
-		"prefix":"colorbox",
-		"body":[
-			"\\colorbox{${1:color}}{${2:text}}"
-		]
-	},
-
-
-	"fcolorbox{}{}{}":{
-		"prefix":"fcolorbox",
-		"body":[
-			"\\fcolorbox{${1:border-color}}{${2:fill-color}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,17 @@
 		"prefix":"textcolor",
 		"body":[
 			"\\textcolor[${3:model}]{${1:color}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mathcolor{}{}":{
+		"prefix":"mathcolor",
+		"body":[
+			"\\mathcolor{${1:color}}{${2:math}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +32,53 @@
 		"prefix":"mathcolor",
 		"body":[
 			"\\mathcolor[${3:model}]{${1:color}}{${2:math}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pagecolor{}":{
+		"prefix":"pagecolor",
+		"body":[
+			"\\pagecolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nopagecolor":{
+		"prefix":"nopagecolor",
+		"body":[
+			"\\nopagecolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definecolor{}{}{}":{
+		"prefix":"definecolor",
+		"body":[
+			"\\definecolor{${1:name%specialDef}}{${2:model}}{${3:color-spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineNamedColor{}{}{}{}":{
+		"prefix":"DefineNamedColor",
+		"body":[
+			"\\DefineNamedColor{${1:type}}{${2:name}}{${3:model}}{${4:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalcolor":{
+		"prefix":"normalcolor",
+		"body":[
+			"\\normalcolor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +86,17 @@
 		"prefix":"color",
 		"body":[
 			"\\color[${2:model}]{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"color{}":{
+		"prefix":"color",
+		"body":[
+			"\\color{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +104,17 @@
 		"prefix":"colorbox",
 		"body":[
 			"\\colorbox[${3:model}]{${1:color}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"colorbox{}{}":{
+		"prefix":"colorbox",
+		"body":[
+			"\\colorbox{${1:color}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,6 +122,16 @@
 		"prefix":"fcolorbox",
 		"body":[
 			"\\fcolorbox[${4:model}]{${1:border-color}}{${2:fill-color}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fcolorbox{}{}{}":{
+		"prefix":"fcolorbox",
+		"body":[
+			"\\fcolorbox{${1:border-color}}{${2:fill-color}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

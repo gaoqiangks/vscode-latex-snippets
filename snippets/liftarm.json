@@ -5,31 +5,8 @@
 		"prefix":"liftarm",
 		"body":[
 			"\\liftarm{${1:point}}{${2:length%plain}}{${3:angle}}"
-		]
-	},
-
-
-	"liftarmconstruct{}":{
-		"prefix":"liftarmconstruct",
-		"body":[
-			"\\liftarmconstruct{${1:commands}}"
-		]
-	},
-
-
-	"liftarmconstructclear":{
-		"prefix":"liftarmconstructclear",
-		"body":[
-			"\\liftarmconstructclear"
-		]
-	},
-
-
-	"liftarmanimate{}{}{}":{
-		"prefix":"liftarmanimate",
-		"body":[
-			"\\liftarmanimate{${1:frame rate}}{${2:list}}{${3:commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,35 @@
 		"prefix":"liftarm",
 		"body":[
 			"\\liftarm[${4:options%keyvals}]{${1:point}}{${2:length%plain}}{${3:angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"liftarmconstruct{}":{
+		"prefix":"liftarmconstruct",
+		"body":[
+			"\\liftarmconstruct{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"liftarmconstructclear":{
+		"prefix":"liftarmconstructclear",
+		"body":[
+			"\\liftarmconstructclear"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"liftarmanimate{}{}{}":{
+		"prefix":"liftarmanimate",
+		"body":[
+			"\\liftarmanimate{${1:frame rate}}{${2:list}}{${3:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"liftarmanimate",
 		"body":[
 			"\\liftarmanimate[${4:options%keyvals}]{${1:frame rate}}{${2:list}}{${3:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -55,16 +61,18 @@
 			"\\begin{liftarmconnect}",
 				"\t$1",
 			"\\end{liftarmconnect}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"liftarmconnect":{
+	"liftarmconnect[]":{
 		"prefix":"liftarmconnect",
 		"body":[
 			"\\begin{liftarmconnect}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{liftarmconnect}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

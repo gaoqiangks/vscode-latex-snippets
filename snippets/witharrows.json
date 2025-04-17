@@ -5,7 +5,8 @@
 		"prefix":"WithArrowsOptions",
 		"body":[
 			"\\WithArrowsOptions{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,79 +14,8 @@
 		"prefix":"Arrow",
 		"body":[
 			"\\Arrow{${1:label%plain}}"
-		]
-	},
-
-
-	"MultiArrow{}{}":{
-		"prefix":"MultiArrow",
-		"body":[
-			"\\MultiArrow{${1:row1,row2,...}}{${2:label%plain}}"
-		]
-	},
-
-
-	"WithArrowsLastEnv":{
-		"prefix":"WithArrowsLastEnv",
-		"body":[
-			"\\WithArrowsLastEnv"
-		]
-	},
-
-
-	"tag{}":{
-		"prefix":"tag",
-		"body":[
-			"\\tag{${1:label%plain}}"
-		]
-	},
-
-
-	"notag":{
-		"prefix":"notag",
-		"body":[
-			"\\notag"
-		]
-	},
-
-
-	"tagnextline":{
-		"prefix":"tagnextline",
-		"body":[
-			"\\tagnextline"
-		]
-	},
-
-
-	"WithArrowsRightX":{
-		"prefix":"WithArrowsRightX",
-		"body":[
-			"\\WithArrowsRightX"
-		]
-	},
-
-
-	"WithArrowsNewStyle{}{}":{
-		"prefix":"WithArrowsNewStyle",
-		"body":[
-			"\\WithArrowsNewStyle{${1:style name%specialDef}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"WithArrowsNbLines":{
-		"prefix":"WithArrowsNbLines",
-		"body":[
-			"\\WithArrowsNbLines"
-		]
-	},
-
-
-	"tag*{}":{
-		"prefix":"*tag",
-		"body":[
-			"\\tag*{${1:label%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +23,89 @@
 		"prefix":"Arrow",
 		"body":[
 			"\\Arrow[${2:options%keyvals}]{${1:label%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MultiArrow{}{}":{
+		"prefix":"MultiArrow",
+		"body":[
+			"\\MultiArrow{${1:row1,row2,...}}{${2:label%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WithArrowsLastEnv":{
+		"prefix":"WithArrowsLastEnv",
+		"body":[
+			"\\WithArrowsLastEnv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tag{}":{
+		"prefix":"tag",
+		"body":[
+			"\\tag{${1:label%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tag*{}":{
+		"prefix":"*tag",
+		"body":[
+			"\\tag*{${1:label%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"notag":{
+		"prefix":"notag",
+		"body":[
+			"\\notag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tagnextline":{
+		"prefix":"tagnextline",
+		"body":[
+			"\\tagnextline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WithArrowsRightX":{
+		"prefix":"WithArrowsRightX",
+		"body":[
+			"\\WithArrowsRightX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WithArrowsNewStyle{}{}":{
+		"prefix":"WithArrowsNewStyle",
+		"body":[
+			"\\WithArrowsNewStyle{${1:style name%specialDef}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WithArrowsNbLines":{
+		"prefix":"WithArrowsNbLines",
+		"body":[
+			"\\WithArrowsNbLines"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -103,7 +115,19 @@
 			"\\begin{WithArrows}",
 				"\t$1",
 			"\\end{WithArrows}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WithArrows[]":{
+		"prefix":"WithArrows",
+		"body":[
+			"\\begin{WithArrows}",
+				"\t[${1:options%keyvals}]",
+			"\\end{WithArrows}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -113,7 +137,19 @@
 			"\\begin{DispWithArrows}",
 				"\t$1",
 			"\\end{DispWithArrows}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DispWithArrows[]":{
+		"prefix":"DispWithArrows",
+		"body":[
+			"\\begin{DispWithArrows}",
+				"\t[${1:options%keyvals}]",
+			"\\end{DispWithArrows}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -123,36 +159,18 @@
 			"\\begin{DispWithArrows*}",
 				"\t$1",
 			"\\end{DispWithArrows*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"WithArrows":{
-		"prefix":"WithArrows",
-		"body":[
-			"\\begin{WithArrows}",
-				"\t$1",
-			"\\end{WithArrows}"
-		]
-	},
-
-
-	"DispWithArrows":{
-		"prefix":"DispWithArrows",
-		"body":[
-			"\\begin{DispWithArrows}",
-				"\t$1",
-			"\\end{DispWithArrows}"
-		]
-	},
-
-
-	"DispWithArrows*":{
-		"prefix":"DispWithArrows",
+	"DispWithArrows*[]":{
+		"prefix":"*DispWithArrows",
 		"body":[
 			"\\begin{DispWithArrows*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{DispWithArrows*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

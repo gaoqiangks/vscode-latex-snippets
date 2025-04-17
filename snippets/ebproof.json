@@ -5,95 +5,8 @@
 		"prefix":"hypo",
 		"body":[
 			"\\hypo{${1:text%plain}}"
-		]
-	},
-
-
-	"ellipsis{}{}":{
-		"prefix":"ellipsis",
-		"body":[
-			"\\ellipsis{${1:label}}{${2:text%plain}}"
-		]
-	},
-
-
-	"rewrite{}":{
-		"prefix":"rewrite",
-		"body":[
-			"\\rewrite{${1:code}}"
-		]
-	},
-
-
-	"treebox":{
-		"prefix":"treebox",
-		"body":[
-			"\\treebox"
-		]
-	},
-
-
-	"treemark{}":{
-		"prefix":"treemark",
-		"body":[
-			"\\treemark{${1:name}}"
-		]
-	},
-
-
-	"delims{}{}":{
-		"prefix":"delims",
-		"body":[
-			"\\delims{${1:left}}{${2:right}}"
-		]
-	},
-
-
-	"overlay":{
-		"prefix":"overlay",
-		"body":[
-			"\\overlay"
-		]
-	},
-
-
-	"ebproofset{}":{
-		"prefix":"ebproofset",
-		"body":[
-			"\\ebproofset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"set{}":{
-		"prefix":"set",
-		"body":[
-			"\\set{${1:options%keyvals}}"
-		]
-	},
-
-
-	"ebproofnewstyle{}{}":{
-		"prefix":"ebproofnewstyle",
-		"body":[
-			"\\ebproofnewstyle{${1:name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"inserttext":{
-		"prefix":"inserttext",
-		"body":[
-			"\\inserttext"
-		]
-	},
-
-
-	"ebproofnewrulestyle{}{}":{
-		"prefix":"ebproofnewrulestyle",
-		"body":[
-			"\\ebproofnewrulestyle{${1:name}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,107 @@
 		"prefix":"hypo",
 		"body":[
 			"\\hypo[${2:options%keyvals}]{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ellipsis{}{}":{
+		"prefix":"ellipsis",
+		"body":[
+			"\\ellipsis{${1:label}}{${2:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rewrite{}":{
+		"prefix":"rewrite",
+		"body":[
+			"\\rewrite{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"treebox":{
+		"prefix":"treebox",
+		"body":[
+			"\\treebox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"treemark{}":{
+		"prefix":"treemark",
+		"body":[
+			"\\treemark{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"delims{}{}":{
+		"prefix":"delims",
+		"body":[
+			"\\delims{${1:left}}{${2:right}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"overlay":{
+		"prefix":"overlay",
+		"body":[
+			"\\overlay"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ebproofset{}":{
+		"prefix":"ebproofset",
+		"body":[
+			"\\ebproofset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"set{}":{
+		"prefix":"set",
+		"body":[
+			"\\set{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ebproofnewstyle{}{}":{
+		"prefix":"ebproofnewstyle",
+		"body":[
+			"\\ebproofnewstyle{${1:name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inserttext":{
+		"prefix":"inserttext",
+		"body":[
+			"\\inserttext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ebproofnewrulestyle{}{}":{
+		"prefix":"ebproofnewrulestyle",
+		"body":[
+			"\\ebproofnewrulestyle{${1:name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,7 +124,19 @@
 			"\\begin{prooftree}",
 				"\t$1",
 			"\\end{prooftree}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prooftree[]":{
+		"prefix":"prooftree",
+		"body":[
+			"\\begin{prooftree}",
+				"\t[${1:options%keyvals}]",
+			"\\end{prooftree}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -121,26 +146,18 @@
 			"\\begin{prooftree*}",
 				"\t$1",
 			"\\end{prooftree*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"prooftree":{
-		"prefix":"prooftree",
-		"body":[
-			"\\begin{prooftree}",
-				"\t$1",
-			"\\end{prooftree}"
-		]
-	},
-
-
-	"prooftree*":{
-		"prefix":"prooftree",
+	"prooftree*[]":{
+		"prefix":"*prooftree",
 		"body":[
 			"\\begin{prooftree*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{prooftree*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

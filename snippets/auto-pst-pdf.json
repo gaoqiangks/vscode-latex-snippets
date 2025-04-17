@@ -5,7 +5,8 @@
 		"prefix":"OnlyIfFileExists",
 		"body":[
 			"\\OnlyIfFileExists{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"NotIfFileExists",
 		"body":[
 			"\\NotIfFileExists{${1:file}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"matlabfig",
 		"body":[
 			"\\matlabfig{${1:file}}"
-		]
-	},
-
-
-	"mathfig{}":{
-		"prefix":"mathfig",
-		"body":[
-			"\\mathfig{${1:file}}"
-		]
-	},
-
-
-	"psfragfig{}":{
-		"prefix":"psfragfig",
-		"body":[
-			"\\psfragfig{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"matlabfig",
 		"body":[
 			"\\matlabfig[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mathfig{}":{
+		"prefix":"mathfig",
+		"body":[
+			"\\mathfig{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"mathfig",
 		"body":[
 			"\\mathfig[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psfragfig{}":{
+		"prefix":"psfragfig",
+		"body":[
+			"\\psfragfig{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"psfragfig",
 		"body":[
 			"\\psfragfig[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

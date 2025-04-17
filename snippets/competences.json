@@ -5,7 +5,8 @@
 		"prefix":"declareprefix",
 		"body":[
 			"\\declareprefix{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"declarecompetence",
 		"body":[
 			"\\declarecompetence{${1:competence}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,167 +23,8 @@
 		"prefix":"addGlobalCompetence",
 		"body":[
 			"\\addGlobalCompetence{${1:competence}}"
-		]
-	},
-
-
-	"addcompetence{}":{
-		"prefix":"addcompetence",
-		"body":[
-			"\\addcompetence{${1:competence}}"
-		]
-	},
-
-
-	"tableaupartie{}":{
-		"prefix":"tableaupartie",
-		"body":[
-			"\\tableaupartie{${1:partie}}"
-		]
-	},
-
-
-	"tableauprefix{}":{
-		"prefix":"tableauprefix",
-		"body":[
-			"\\tableauprefix{${1:partie1,partie2,...}}"
-		]
-	},
-
-
-	"cstotal":{
-		"prefix":"cstotal",
-		"body":[
-			"\\cstotal"
-		]
-	},
-
-
-	"getCurrentSectionNumber":{
-		"prefix":"getCurrentSectionNumber",
-		"body":[
-			"\\getCurrentSectionNumber"
-		]
-	},
-
-
-	"getCurrentpartiedocument":{
-		"prefix":"getCurrentpartiedocument",
-		"body":[
-			"\\getCurrentpartiedocument"
-		]
-	},
-
-
-	"gptotal":{
-		"prefix":"gptotal",
-		"body":[
-			"\\gptotal"
-		]
-	},
-
-
-	"gtotal":{
-		"prefix":"gtotal",
-		"body":[
-			"\\gtotal"
-		]
-	},
-
-
-	"ifcompexists{}{}{}":{
-		"prefix":"ifcompexists",
-		"body":[
-			"\\ifcompexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"ifpartexists{}{}{}":{
-		"prefix":"ifpartexists",
-		"body":[
-			"\\ifpartexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"ifquestexists{}{}{}":{
-		"prefix":"ifquestexists",
-		"body":[
-			"\\ifquestexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"partie":{
-		"prefix":"partie",
-		"body":[
-			"\\partie"
-		]
-	},
-
-
-	"pctotal":{
-		"prefix":"pctotal",
-		"body":[
-			"\\pctotal"
-		]
-	},
-
-
-	"pftotal":{
-		"prefix":"pftotal",
-		"body":[
-			"\\pftotal"
-		]
-	},
-
-
-	"ptotal":{
-		"prefix":"ptotal",
-		"body":[
-			"\\ptotal"
-		]
-	},
-
-
-	"quest":{
-		"prefix":"quest",
-		"body":[
-			"\\quest"
-		]
-	},
-
-
-	"sumcspartie{}{}":{
-		"prefix":"sumcspartie",
-		"body":[
-			"\\sumcspartie{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"sumpfpartie{}{}":{
-		"prefix":"sumpfpartie",
-		"body":[
-			"\\sumpfpartie{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"tableaucompetences":{
-		"prefix":"tableaucompetences",
-		"body":[
-			"\\tableaucompetences"
-		]
-	},
-
-
-	"total":{
-		"prefix":"total",
-		"body":[
-			"\\total"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +32,17 @@
 		"prefix":"addGlobalCompetence",
 		"body":[
 			"\\addGlobalCompetence[${2:value}]{${1:competence}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addcompetence{}":{
+		"prefix":"addcompetence",
+		"body":[
+			"\\addcompetence{${1:competence}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,6 +50,178 @@
 		"prefix":"addcompetence",
 		"body":[
 			"\\addcompetence[${2:value}]{${1:competence}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tableaupartie{}":{
+		"prefix":"tableaupartie",
+		"body":[
+			"\\tableaupartie{${1:partie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tableauprefix{}":{
+		"prefix":"tableauprefix",
+		"body":[
+			"\\tableauprefix{${1:partie1,partie2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cstotal":{
+		"prefix":"cstotal",
+		"body":[
+			"\\cstotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getCurrentSectionNumber":{
+		"prefix":"getCurrentSectionNumber",
+		"body":[
+			"\\getCurrentSectionNumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getCurrentpartiedocument":{
+		"prefix":"getCurrentpartiedocument",
+		"body":[
+			"\\getCurrentpartiedocument"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gptotal":{
+		"prefix":"gptotal",
+		"body":[
+			"\\gptotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gtotal":{
+		"prefix":"gtotal",
+		"body":[
+			"\\gtotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcompexists{}{}{}":{
+		"prefix":"ifcompexists",
+		"body":[
+			"\\ifcompexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpartexists{}{}{}":{
+		"prefix":"ifpartexists",
+		"body":[
+			"\\ifpartexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifquestexists{}{}{}":{
+		"prefix":"ifquestexists",
+		"body":[
+			"\\ifquestexists{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"partie":{
+		"prefix":"partie",
+		"body":[
+			"\\partie"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pctotal":{
+		"prefix":"pctotal",
+		"body":[
+			"\\pctotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pftotal":{
+		"prefix":"pftotal",
+		"body":[
+			"\\pftotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptotal":{
+		"prefix":"ptotal",
+		"body":[
+			"\\ptotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quest":{
+		"prefix":"quest",
+		"body":[
+			"\\quest"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sumcspartie{}{}":{
+		"prefix":"sumcspartie",
+		"body":[
+			"\\sumcspartie{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sumpfpartie{}{}":{
+		"prefix":"sumpfpartie",
+		"body":[
+			"\\sumpfpartie{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tableaucompetences":{
+		"prefix":"tableaucompetences",
+		"body":[
+			"\\tableaucompetences"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"total":{
+		"prefix":"total",
+		"body":[
+			"\\total"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

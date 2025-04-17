@@ -5,7 +5,8 @@
 		"prefix":"fakesubscript",
 		"body":[
 			"\\fakesubscript{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,55 +14,8 @@
 		"prefix":"fakesuperscript",
 		"body":[
 			"\\fakesuperscript{${1:text%plain}}"
-		]
-	},
-
-
-	"realsubscript{}":{
-		"prefix":"realsubscript",
-		"body":[
-			"\\realsubscript{${1:text%plain}}"
-		]
-	},
-
-
-	"realsuperscript{}":{
-		"prefix":"realsuperscript",
-		"body":[
-			"\\realsuperscript{${1:text%plain}}"
-		]
-	},
-
-
-	"footnotemarkfont":{
-		"prefix":"footnotemarkfont",
-		"body":[
-			"\\footnotemarkfont"
-		]
-	},
-
-
-	"textsubsuperscript{}{}":{
-		"prefix":"textsubsuperscript",
-		"body":[
-			"\\textsubsuperscript{${1:sub}}{${2:super}}"
-		]
-	},
-
-
-	"textsupersubscript{}{}":{
-		"prefix":"textsupersubscript",
-		"body":[
-			"\\textsupersubscript{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"subsupersep":{
-		"prefix":"subsupersep",
-		"body":[
-			"\\subsupersep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +23,8 @@
 		"prefix":"*textsubscript",
 		"body":[
 			"\\textsubscript*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -77,39 +32,44 @@
 		"prefix":"*textsuperscript",
 		"body":[
 			"\\textsuperscript*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"textsubsuperscript*{}{}":{
-		"prefix":"*textsubsuperscript",
+	"realsubscript{}":{
+		"prefix":"realsubscript",
 		"body":[
-			"\\textsubsuperscript*{${1:sub}}{${2:super}}"
-		]
+			"\\realsubscript{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"textsubsuperscript*[]{}{}":{
-		"prefix":"*textsubsuperscript",
+	"realsuperscript{}":{
+		"prefix":"realsuperscript",
 		"body":[
-			"\\textsubsuperscript*[${3:align%keyvals}]{${1:sub}}{${2:super}}"
-		]
+			"\\realsuperscript{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"textsupersubscript*{}{}":{
-		"prefix":"*textsupersubscript",
+	"footnotemarkfont":{
+		"prefix":"footnotemarkfont",
 		"body":[
-			"\\textsupersubscript*{${1:super}}{${2:sub}}"
-		]
+			"\\footnotemarkfont"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"textsupersubscript*[]{}{}":{
-		"prefix":"*textsupersubscript",
+	"textsubsuperscript{}{}":{
+		"prefix":"textsubsuperscript",
 		"body":[
-			"\\textsupersubscript*[${3:align%keyvals}]{${1:super}}{${2:sub}}"
-		]
+			"\\textsubsuperscript{${1:sub}}{${2:super}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,35 @@
 		"prefix":"textsubsuperscript",
 		"body":[
 			"\\textsubsuperscript[${3:align%keyvals}]{${1:sub}}{${2:super}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsubsuperscript*{}{}":{
+		"prefix":"*textsubsuperscript",
+		"body":[
+			"\\textsubsuperscript*{${1:sub}}{${2:super}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"textsubsuperscript*[]{}{}":{
+		"prefix":"*textsubsuperscript",
+		"body":[
+			"\\textsubsuperscript*[${3:align%keyvals}]{${1:sub}}{${2:super}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"textsupersubscript{}{}":{
+		"prefix":"textsupersubscript",
+		"body":[
+			"\\textsupersubscript{${1:super}}{${2:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +113,34 @@
 		"prefix":"textsupersubscript",
 		"body":[
 			"\\textsupersubscript[${3:align%keyvals}]{${1:super}}{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsupersubscript*{}{}":{
+		"prefix":"*textsupersubscript",
+		"body":[
+			"\\textsupersubscript*{${1:super}}{${2:sub}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"textsupersubscript*[]{}{}":{
+		"prefix":"*textsupersubscript",
+		"body":[
+			"\\textsupersubscript*[${3:align%keyvals}]{${1:super}}{${2:sub}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subsupersep":{
+		"prefix":"subsupersep",
+		"body":[
+			"\\subsupersep"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

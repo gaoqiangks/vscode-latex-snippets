@@ -5,7 +5,8 @@
 		"prefix":"DisplaySolutions",
 		"body":[
 			"\\DisplaySolutions"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"SolutionsOnly",
 		"body":[
 			"\\SolutionsOnly"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"makesetdefaults",
 		"body":[
 			"\\makesetdefaults{${1:}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"spritesets",
 		"body":[
 			"\\spritesets{${1:}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,871 +41,8 @@
 		"prefix":"makeset",
 		"body":[
 			"\\makeset{${1:name}}{${2:file}}"
-		]
-	},
-
-
-	"phead":{
-		"prefix":"phead",
-		"body":[
-			"\\phead"
-		]
-	},
-
-
-	"about{}":{
-		"prefix":"about",
-		"body":[
-			"\\about{${1:text}}"
-		]
-	},
-
-
-	"buildall":{
-		"prefix":"buildall",
-		"body":[
-			"\\buildall"
-		]
-	},
-
-
-	"sprite":{
-		"prefix":"sprite",
-		"body":[
-			"\\sprite"
-		]
-	},
-
-
-	"exec{}":{
-		"prefix":"exec",
-		"body":[
-			"\\exec{${1:code}}"
-		]
-	},
-
-
-	"DeclareExerciseCommand{}{}":{
-		"prefix":"DeclareExerciseCommand",
-		"body":[
-			"\\DeclareExerciseCommand{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"exclude{}{}":{
-		"prefix":"exclude",
-		"body":[
-			"\\exclude{${1:file}}{${2:list of numbers}}"
-		]
-	},
-
-
-	"select{}{}":{
-		"prefix":"select",
-		"body":[
-			"\\select{${1:file}}{${2:list of numbers}}"
-		]
-	},
-
-
-	"buildset{}":{
-		"prefix":"buildset",
-		"body":[
-			"\\buildset{${1:name}}"
-		]
-	},
-
-
-	"setName":{
-		"prefix":"setName",
-		"body":[
-			"\\setName"
-		]
-	},
-
-
-	"buildsets{}":{
-		"prefix":"buildsets",
-		"body":[
-			"\\buildsets{${1:list of names}}"
-		]
-	},
-
-
-	"buildtags{}{}":{
-		"prefix":"buildtags",
-		"body":[
-			"\\buildtags{${1:list of tags}}{${2:list of sets}}"
-		]
-	},
-
-
-	"buildsprite{}":{
-		"prefix":"buildsprite",
-		"body":[
-			"\\buildsprite{${1:list of sets}}"
-		]
-	},
-
-
-	"pplabel{}":{
-		"prefix":"pplabel",
-		"body":[
-			"\\pplabel{${1:label}}"
-		]
-	},
-
-
-	"ppref{}":{
-		"prefix":"ppref",
-		"body":[
-			"\\ppref{${1:label}}"
-		]
-	},
-
-
-	"ppgref{}":{
-		"prefix":"ppgref",
-		"body":[
-			"\\ppgref{${1:label}}"
-		]
-	},
-
-
-	"pref{}":{
-		"prefix":"pref",
-		"body":[
-			"\\pref{${1:label}}"
-		]
-	},
-
-
-	"pgref{}":{
-		"prefix":"pgref",
-		"body":[
-			"\\pgref{${1:label}}"
-		]
-	},
-
-
-	"HideTags{}":{
-		"prefix":"HideTags",
-		"body":[
-			"\\HideTags{${1:list of tags}}"
-		]
-	},
-
-
-	"ShowAllTags":{
-		"prefix":"ShowAllTags",
-		"body":[
-			"\\ShowAllTags"
-		]
-	},
-
-
-	"exercisenote{}":{
-		"prefix":"exercisenote",
-		"body":[
-			"\\exercisenote{${1:text}}"
-		]
-	},
-
-
-	"ShowNumbers":{
-		"prefix":"ShowNumbers",
-		"body":[
-			"\\ShowNumbers"
-		]
-	},
-
-
-	"ShowTags":{
-		"prefix":"ShowTags",
-		"body":[
-			"\\ShowTags"
-		]
-	},
-
-
-	"ShowFilenames":{
-		"prefix":"ShowFilenames",
-		"body":[
-			"\\ShowFilenames"
-		]
-	},
-
-
-	"exercisebanksetup{}":{
-		"prefix":"exercisebanksetup",
-		"body":[
-			"\\exercisebanksetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"translateExBank{}":{
-		"prefix":"translateExBank",
-		"body":[
-			"\\translateExBank{${1:keyvals}}"
-		]
-	},
-
-
-	"nextproblem{}":{
-		"prefix":"nextproblem",
-		"body":[
-			"\\nextproblem{${1:options%keyvals}}"
-		]
-	},
-
-
-	"totalpoints":{
-		"prefix":"totalpoints",
-		"body":[
-			"\\totalpoints"
-		]
-	},
-
-
-	"exercisepoints":{
-		"prefix":"exercisepoints",
-		"body":[
-			"\\exercisepoints"
-		]
-	},
-
-
-	"PartProblemHeaderSuffix":{
-		"prefix":"PartProblemHeaderSuffix",
-		"body":[
-			"\\PartProblemHeaderSuffix"
-		]
-	},
-
-
-	"PostPPHeader":{
-		"prefix":"PostPPHeader",
-		"body":[
-			"\\PostPPHeader"
-		]
-	},
-
-
-	"BeginPartproblem":{
-		"prefix":"BeginPartproblem",
-		"body":[
-			"\\BeginPartproblem"
-		]
-	},
-
-
-	"VeryBeginPartproblem":{
-		"prefix":"VeryBeginPartproblem",
-		"body":[
-			"\\VeryBeginPartproblem"
-		]
-	},
-
-
-	"InputExercise":{
-		"prefix":"InputExercise",
-		"body":[
-			"\\InputExercise"
-		]
-	},
-
-
-	"BeginProblem":{
-		"prefix":"BeginProblem",
-		"body":[
-			"\\BeginProblem"
-		]
-	},
-
-
-	"EndProblem":{
-		"prefix":"EndProblem",
-		"body":[
-			"\\EndProblem"
-		]
-	},
-
-
-	"BeginBuildset":{
-		"prefix":"BeginBuildset",
-		"body":[
-			"\\BeginBuildset"
-		]
-	},
-
-
-	"EndBuildset":{
-		"prefix":"EndBuildset",
-		"body":[
-			"\\EndBuildset"
-		]
-	},
-
-
-	"ownLineNoSpacesGotIt":{
-		"prefix":"ownLineNoSpacesGotIt",
-		"body":[
-			"\\ownLineNoSpacesGotIt"
-		]
-	},
-
-
-	"exercisebankversion":{
-		"prefix":"exercisebankversion",
-		"body":[
-			"\\exercisebankversion"
-		]
-	},
-
-
-	"exercisebankbuild":{
-		"prefix":"exercisebankbuild",
-		"body":[
-			"\\exercisebankbuild"
-		]
-	},
-
-
-	"thisfilepath":{
-		"prefix":"thisfilepath",
-		"body":[
-			"\\thisfilepath"
-		]
-	},
-
-
-	"exerciseFile":{
-		"prefix":"exerciseFile",
-		"body":[
-			"\\exerciseFile"
-		]
-	},
-
-
-	"theproblemcounter":{
-		"prefix":"theproblemcounter",
-		"body":[
-			"\\theproblemcounter"
-		]
-	},
-
-
-	"thepartproblemcounter":{
-		"prefix":"thepartproblemcounter",
-		"body":[
-			"\\thepartproblemcounter"
-		]
-	},
-
-
-	"pMarginBelow":{
-		"prefix":"pMarginBelow",
-		"body":[
-			"\\pMarginBelow"
-		]
-	},
-
-
-	"pMarginAbove":{
-		"prefix":"pMarginAbove",
-		"body":[
-			"\\pMarginAbove"
-		]
-	},
-
-
-	"pMarginLeft":{
-		"prefix":"pMarginLeft",
-		"body":[
-			"\\pMarginLeft"
-		]
-	},
-
-
-	"ppMarginBelow":{
-		"prefix":"ppMarginBelow",
-		"body":[
-			"\\ppMarginBelow"
-		]
-	},
-
-
-	"ppMarginAbove":{
-		"prefix":"ppMarginAbove",
-		"body":[
-			"\\ppMarginAbove"
-		]
-	},
-
-
-	"ppMargin":{
-		"prefix":"ppMargin",
-		"body":[
-			"\\ppMargin"
-		]
-	},
-
-
-	"introOutdent":{
-		"prefix":"introOutdent",
-		"body":[
-			"\\introOutdent"
-		]
-	},
-
-
-	"AtNextPar{}":{
-		"prefix":"AtNextPar",
-		"body":[
-			"\\AtNextPar{${1:code}}"
-		]
-	},
-
-
-	"buildex{}":{
-		"prefix":"buildex",
-		"body":[
-			"\\buildex{${1:file}}"
-		]
-	},
-
-
-	"continueLoop":{
-		"prefix":"continueLoop",
-		"body":[
-			"\\continueLoop"
-		]
-	},
-
-
-	"csvlist":{
-		"prefix":"csvlist",
-		"body":[
-			"\\csvlist"
-		]
-	},
-
-
-	"csvsets":{
-		"prefix":"csvsets",
-		"body":[
-			"\\csvsets"
-		]
-	},
-
-
-	"csvtags":{
-		"prefix":"csvtags",
-		"body":[
-			"\\csvtags"
-		]
-	},
-
-
-	"emptyList":{
-		"prefix":"emptyList",
-		"body":[
-			"\\emptyList"
-		]
-	},
-
-
-	"exerciseFileInfo":{
-		"prefix":"exerciseFileInfo",
-		"body":[
-			"\\exerciseFileInfo"
-		]
-	},
-
-
-	"exfile":{
-		"prefix":"exfile",
-		"body":[
-			"\\exfile"
-		]
-	},
-
-
-	"figuresPath":{
-		"prefix":"figuresPath",
-		"body":[
-			"\\figuresPath"
-		]
-	},
-
-
-	"fileInputBase":{
-		"prefix":"fileInputBase",
-		"body":[
-			"\\fileInputBase"
-		]
-	},
-
-
-	"fileInputPath":{
-		"prefix":"fileInputPath",
-		"body":[
-			"\\fileInputPath"
-		]
-	},
-
-
-	"haystack":{
-		"prefix":"haystack",
-		"body":[
-			"\\haystack"
-		]
-	},
-
-
-	"ifppMode{}":{
-		"prefix":"ifppMode",
-		"body":[
-			"\\ifppMode{${1:arg}}"
-		]
-	},
-
-
-	"ignoreOutlineSpaces":{
-		"prefix":"ignoreOutlineSpaces",
-		"body":[
-			"\\ignoreOutlineSpaces"
-		]
-	},
-
-
-	"incl{}":{
-		"prefix":"incl",
-		"body":[
-			"\\incl{${1:file}}"
-		]
-	},
-
-
-	"introarg":{
-		"prefix":"introarg",
-		"body":[
-			"\\introarg"
-		]
-	},
-
-
-	"ipm{}":{
-		"prefix":"ipm",
-		"body":[
-			"\\ipm{${1:arg}}"
-		]
-	},
-
-
-	"isFalse":{
-		"prefix":"isFalse",
-		"body":[
-			"\\isFalse"
-		]
-	},
-
-
-	"isInList":{
-		"prefix":"isInList",
-		"body":[
-			"\\isInList"
-		]
-	},
-
-
-	"isppMode{}{}":{
-		"prefix":"isppMode",
-		"body":[
-			"\\isppMode{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"isTrue":{
-		"prefix":"isTrue",
-		"body":[
-			"\\isTrue"
-		]
-	},
-
-
-	"keystring":{
-		"prefix":"keystring",
-		"body":[
-			"\\keystring"
-		]
-	},
-
-
-	"listarg":{
-		"prefix":"listarg",
-		"body":[
-			"\\listarg"
-		]
-	},
-
-
-	"marginw":{
-		"prefix":"marginw",
-		"body":[
-			"\\marginw"
-		]
-	},
-
-
-	"markeverypar":{
-		"prefix":"markeverypar",
-		"body":[
-			"\\markeverypar"
-		]
-	},
-
-
-	"mname":{
-		"prefix":"mname",
-		"body":[
-			"\\mname"
-		]
-	},
-
-
-	"ncArgs":{
-		"prefix":"ncArgs",
-		"body":[
-			"\\ncArgs"
-		]
-	},
-
-
-	"needle":{
-		"prefix":"needle",
-		"body":[
-			"\\needle"
-		]
-	},
-
-
-	"nextprobargs":{
-		"prefix":"nextprobargs",
-		"body":[
-			"\\nextprobargs"
-		]
-	},
-
-
-	"nextproblems{}":{
-		"prefix":"nextproblems",
-		"body":[
-			"\\nextproblems{${1:arg}}"
-		]
-	},
-
-
-	"nohead":{
-		"prefix":"nohead",
-		"body":[
-			"\\nohead"
-		]
-	},
-
-
-	"numppex":{
-		"prefix":"numppex",
-		"body":[
-			"\\numppex"
-		]
-	},
-
-
-	"obeyOutlineSpaces":{
-		"prefix":"obeyOutlineSpaces",
-		"body":[
-			"\\obeyOutlineSpaces"
-		]
-	},
-
-
-	"orderedselect{}{}":{
-		"prefix":"orderedselect",
-		"body":[
-			"\\orderedselect{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ppList":{
-		"prefix":"ppList",
-		"body":[
-			"\\ppList"
-		]
-	},
-
-
-	"ppMode":{
-		"prefix":"ppMode",
-		"body":[
-			"\\ppMode"
-		]
-	},
-
-
-	"pppref{}":{
-		"prefix":"pppref",
-		"body":[
-			"\\pppref{${1:arg1}}"
-		]
-	},
-
-
-	"pptag":{
-		"prefix":"pptag",
-		"body":[
-			"\\pptag"
-		]
-	},
-
-
-	"removebs{}":{
-		"prefix":"removebs",
-		"body":[
-			"\\removebs{${1:arg1}}"
-		]
-	},
-
-
-	"resetnextproblems":{
-		"prefix":"resetnextproblems",
-		"body":[
-			"\\resetnextproblems"
-		]
-	},
-
-
-	"setmacro":{
-		"prefix":"setmacro",
-		"body":[
-			"\\setmacro"
-		]
-	},
-
-
-	"showhideproblem{}":{
-		"prefix":"showhideproblem",
-		"body":[
-			"\\showhideproblem{${1:arg}}"
-		]
-	},
-
-
-	"shownextchar{}":{
-		"prefix":"shownextchar",
-		"body":[
-			"\\shownextchar{${1:arg}}"
-		]
-	},
-
-
-	"skeys":{
-		"prefix":"skeys",
-		"body":[
-			"\\skeys"
-		]
-	},
-
-
-	"solutionMarginAbove":{
-		"prefix":"solutionMarginAbove",
-		"body":[
-			"\\solutionMarginAbove"
-		]
-	},
-
-
-	"squeeze":{
-		"prefix":"squeeze",
-		"body":[
-			"\\squeeze"
-		]
-	},
-
-
-	"stopfilbreak":{
-		"prefix":"stopfilbreak",
-		"body":[
-			"\\stopfilbreak"
-		]
-	},
-
-
-	"strif{}{}":{
-		"prefix":"strif",
-		"body":[
-			"\\strif{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"themetacounter":{
-		"prefix":"themetacounter",
-		"body":[
-			"\\themetacounter"
-		]
-	},
-
-
-	"thenumppInFile":{
-		"prefix":"thenumppInFile",
-		"body":[
-			"\\thenumppInFile"
-		]
-	},
-
-
-	"theset":{
-		"prefix":"theset",
-		"body":[
-			"\\theset"
-		]
-	},
-
-
-	"thissetid":{
-		"prefix":"thissetid",
-		"body":[
-			"\\thissetid"
-		]
-	},
-
-
-	"tmpargs":{
-		"prefix":"tmpargs",
-		"body":[
-			"\\tmpargs"
-		]
-	},
-
-
-	"whenfalse":{
-		"prefix":"whenfalse",
-		"body":[
-			"\\whenfalse"
-		]
-	},
-
-
-	"whentrue":{
-		"prefix":"whentrue",
-		"body":[
-			"\\whentrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -909,7 +50,44 @@
 		"prefix":"makeset",
 		"body":[
 			"\\makeset[${3:options%keyvals}]{${1:name}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"phead":{
+		"prefix":"phead",
+		"body":[
+			"\\phead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"about{}":{
+		"prefix":"about",
+		"body":[
+			"\\about{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildall":{
+		"prefix":"buildall",
+		"body":[
+			"\\buildall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sprite":{
+		"prefix":"sprite",
+		"body":[
+			"\\sprite"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -917,7 +95,26 @@
 		"prefix":"sprite",
 		"body":[
 			"\\sprite[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"exec{}":{
+		"prefix":"exec",
+		"body":[
+			"\\exec{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseCommand{}{}":{
+		"prefix":"DeclareExerciseCommand",
+		"body":[
+			"\\DeclareExerciseCommand{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -925,7 +122,35 @@
 		"prefix":"DeclareExerciseCommand",
 		"body":[
 			"\\DeclareExerciseCommand{${1:cmd}}[${3:args}]{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"exclude{}{}":{
+		"prefix":"exclude",
+		"body":[
+			"\\exclude{${1:file}}{${2:list of numbers}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"select{}{}":{
+		"prefix":"select",
+		"body":[
+			"\\select{${1:file}}{${2:list of numbers}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildset{}":{
+		"prefix":"buildset",
+		"body":[
+			"\\buildset{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -933,7 +158,26 @@
 		"prefix":"buildset",
 		"body":[
 			"\\buildset[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setName":{
+		"prefix":"setName",
+		"body":[
+			"\\setName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildsets{}":{
+		"prefix":"buildsets",
+		"body":[
+			"\\buildsets{${1:list of names}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -941,7 +185,881 @@
 		"prefix":"buildsets",
 		"body":[
 			"\\buildsets[${2:options%keyvals}]{${1:list of sets}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"buildtags{}{}":{
+		"prefix":"buildtags",
+		"body":[
+			"\\buildtags{${1:list of tags}}{${2:list of sets}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildsprite{}":{
+		"prefix":"buildsprite",
+		"body":[
+			"\\buildsprite{${1:list of sets}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pplabel{}":{
+		"prefix":"pplabel",
+		"body":[
+			"\\pplabel{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppref{}":{
+		"prefix":"ppref",
+		"body":[
+			"\\ppref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppgref{}":{
+		"prefix":"ppgref",
+		"body":[
+			"\\ppgref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pref{}":{
+		"prefix":"pref",
+		"body":[
+			"\\pref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgref{}":{
+		"prefix":"pgref",
+		"body":[
+			"\\pgref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HideTags{}":{
+		"prefix":"HideTags",
+		"body":[
+			"\\HideTags{${1:list of tags}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowAllTags":{
+		"prefix":"ShowAllTags",
+		"body":[
+			"\\ShowAllTags"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exercisenote{}":{
+		"prefix":"exercisenote",
+		"body":[
+			"\\exercisenote{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowNumbers":{
+		"prefix":"ShowNumbers",
+		"body":[
+			"\\ShowNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowTags":{
+		"prefix":"ShowTags",
+		"body":[
+			"\\ShowTags"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowFilenames":{
+		"prefix":"ShowFilenames",
+		"body":[
+			"\\ShowFilenames"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exercisebanksetup{}":{
+		"prefix":"exercisebanksetup",
+		"body":[
+			"\\exercisebanksetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"translateExBank{}":{
+		"prefix":"translateExBank",
+		"body":[
+			"\\translateExBank{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextproblem{}":{
+		"prefix":"nextproblem",
+		"body":[
+			"\\nextproblem{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"totalpoints":{
+		"prefix":"totalpoints",
+		"body":[
+			"\\totalpoints"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exercisepoints":{
+		"prefix":"exercisepoints",
+		"body":[
+			"\\exercisepoints"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PartProblemHeaderSuffix":{
+		"prefix":"PartProblemHeaderSuffix",
+		"body":[
+			"\\PartProblemHeaderSuffix"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PostPPHeader":{
+		"prefix":"PostPPHeader",
+		"body":[
+			"\\PostPPHeader"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeginPartproblem":{
+		"prefix":"BeginPartproblem",
+		"body":[
+			"\\BeginPartproblem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VeryBeginPartproblem":{
+		"prefix":"VeryBeginPartproblem",
+		"body":[
+			"\\VeryBeginPartproblem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InputExercise":{
+		"prefix":"InputExercise",
+		"body":[
+			"\\InputExercise"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeginProblem":{
+		"prefix":"BeginProblem",
+		"body":[
+			"\\BeginProblem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EndProblem":{
+		"prefix":"EndProblem",
+		"body":[
+			"\\EndProblem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeginBuildset":{
+		"prefix":"BeginBuildset",
+		"body":[
+			"\\BeginBuildset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EndBuildset":{
+		"prefix":"EndBuildset",
+		"body":[
+			"\\EndBuildset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ownLineNoSpacesGotIt":{
+		"prefix":"ownLineNoSpacesGotIt",
+		"body":[
+			"\\ownLineNoSpacesGotIt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exercisebankversion":{
+		"prefix":"exercisebankversion",
+		"body":[
+			"\\exercisebankversion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exercisebankbuild":{
+		"prefix":"exercisebankbuild",
+		"body":[
+			"\\exercisebankbuild"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thisfilepath":{
+		"prefix":"thisfilepath",
+		"body":[
+			"\\thisfilepath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exerciseFile":{
+		"prefix":"exerciseFile",
+		"body":[
+			"\\exerciseFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theproblemcounter":{
+		"prefix":"theproblemcounter",
+		"body":[
+			"\\theproblemcounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thepartproblemcounter":{
+		"prefix":"thepartproblemcounter",
+		"body":[
+			"\\thepartproblemcounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pMarginBelow":{
+		"prefix":"pMarginBelow",
+		"body":[
+			"\\pMarginBelow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pMarginAbove":{
+		"prefix":"pMarginAbove",
+		"body":[
+			"\\pMarginAbove"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pMarginLeft":{
+		"prefix":"pMarginLeft",
+		"body":[
+			"\\pMarginLeft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppMarginBelow":{
+		"prefix":"ppMarginBelow",
+		"body":[
+			"\\ppMarginBelow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppMarginAbove":{
+		"prefix":"ppMarginAbove",
+		"body":[
+			"\\ppMarginAbove"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppMargin":{
+		"prefix":"ppMargin",
+		"body":[
+			"\\ppMargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"introOutdent":{
+		"prefix":"introOutdent",
+		"body":[
+			"\\introOutdent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtNextPar{}":{
+		"prefix":"AtNextPar",
+		"body":[
+			"\\AtNextPar{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildex{}":{
+		"prefix":"buildex",
+		"body":[
+			"\\buildex{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"continueLoop":{
+		"prefix":"continueLoop",
+		"body":[
+			"\\continueLoop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvlist":{
+		"prefix":"csvlist",
+		"body":[
+			"\\csvlist"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvsets":{
+		"prefix":"csvsets",
+		"body":[
+			"\\csvsets"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvtags":{
+		"prefix":"csvtags",
+		"body":[
+			"\\csvtags"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emptyList":{
+		"prefix":"emptyList",
+		"body":[
+			"\\emptyList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exerciseFileInfo":{
+		"prefix":"exerciseFileInfo",
+		"body":[
+			"\\exerciseFileInfo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exfile":{
+		"prefix":"exfile",
+		"body":[
+			"\\exfile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figuresPath":{
+		"prefix":"figuresPath",
+		"body":[
+			"\\figuresPath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileInputBase":{
+		"prefix":"fileInputBase",
+		"body":[
+			"\\fileInputBase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileInputPath":{
+		"prefix":"fileInputPath",
+		"body":[
+			"\\fileInputPath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"haystack":{
+		"prefix":"haystack",
+		"body":[
+			"\\haystack"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifppMode{}":{
+		"prefix":"ifppMode",
+		"body":[
+			"\\ifppMode{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ignoreOutlineSpaces":{
+		"prefix":"ignoreOutlineSpaces",
+		"body":[
+			"\\ignoreOutlineSpaces"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"incl{}":{
+		"prefix":"incl",
+		"body":[
+			"\\incl{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"introarg":{
+		"prefix":"introarg",
+		"body":[
+			"\\introarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ipm{}":{
+		"prefix":"ipm",
+		"body":[
+			"\\ipm{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isFalse":{
+		"prefix":"isFalse",
+		"body":[
+			"\\isFalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isInList":{
+		"prefix":"isInList",
+		"body":[
+			"\\isInList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isppMode{}{}":{
+		"prefix":"isppMode",
+		"body":[
+			"\\isppMode{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isTrue":{
+		"prefix":"isTrue",
+		"body":[
+			"\\isTrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keystring":{
+		"prefix":"keystring",
+		"body":[
+			"\\keystring"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listarg":{
+		"prefix":"listarg",
+		"body":[
+			"\\listarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marginw":{
+		"prefix":"marginw",
+		"body":[
+			"\\marginw"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"markeverypar":{
+		"prefix":"markeverypar",
+		"body":[
+			"\\markeverypar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mname":{
+		"prefix":"mname",
+		"body":[
+			"\\mname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncArgs":{
+		"prefix":"ncArgs",
+		"body":[
+			"\\ncArgs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"needle":{
+		"prefix":"needle",
+		"body":[
+			"\\needle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextprobargs":{
+		"prefix":"nextprobargs",
+		"body":[
+			"\\nextprobargs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextproblems{}":{
+		"prefix":"nextproblems",
+		"body":[
+			"\\nextproblems{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nohead":{
+		"prefix":"nohead",
+		"body":[
+			"\\nohead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numppex":{
+		"prefix":"numppex",
+		"body":[
+			"\\numppex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"obeyOutlineSpaces":{
+		"prefix":"obeyOutlineSpaces",
+		"body":[
+			"\\obeyOutlineSpaces"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"orderedselect{}{}":{
+		"prefix":"orderedselect",
+		"body":[
+			"\\orderedselect{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppList":{
+		"prefix":"ppList",
+		"body":[
+			"\\ppList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ppMode":{
+		"prefix":"ppMode",
+		"body":[
+			"\\ppMode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pppref{}":{
+		"prefix":"pppref",
+		"body":[
+			"\\pppref{${1:arg1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pptag":{
+		"prefix":"pptag",
+		"body":[
+			"\\pptag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removebs{}":{
+		"prefix":"removebs",
+		"body":[
+			"\\removebs{${1:arg1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetnextproblems":{
+		"prefix":"resetnextproblems",
+		"body":[
+			"\\resetnextproblems"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setmacro":{
+		"prefix":"setmacro",
+		"body":[
+			"\\setmacro"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showhideproblem{}":{
+		"prefix":"showhideproblem",
+		"body":[
+			"\\showhideproblem{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shownextchar{}":{
+		"prefix":"shownextchar",
+		"body":[
+			"\\shownextchar{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skeys":{
+		"prefix":"skeys",
+		"body":[
+			"\\skeys"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solutionMarginAbove":{
+		"prefix":"solutionMarginAbove",
+		"body":[
+			"\\solutionMarginAbove"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squeeze":{
+		"prefix":"squeeze",
+		"body":[
+			"\\squeeze"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stopfilbreak":{
+		"prefix":"stopfilbreak",
+		"body":[
+			"\\stopfilbreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"strif{}{}":{
+		"prefix":"strif",
+		"body":[
+			"\\strif{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"themetacounter":{
+		"prefix":"themetacounter",
+		"body":[
+			"\\themetacounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thenumppInFile":{
+		"prefix":"thenumppInFile",
+		"body":[
+			"\\thenumppInFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theset":{
+		"prefix":"theset",
+		"body":[
+			"\\theset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thissetid":{
+		"prefix":"thissetid",
+		"body":[
+			"\\thissetid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tmpargs":{
+		"prefix":"tmpargs",
+		"body":[
+			"\\tmpargs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"whenfalse":{
+		"prefix":"whenfalse",
+		"body":[
+			"\\whenfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"whentrue":{
+		"prefix":"whentrue",
+		"body":[
+			"\\whentrue"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -951,7 +1069,8 @@
 			"\\begin{problem}",
 				"\t$1",
 			"\\end{problem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -961,7 +1080,8 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -971,6 +1091,7 @@
 			"\\begin{intro}",
 				"\t$1",
 			"\\end{intro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

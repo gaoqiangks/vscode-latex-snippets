@@ -5,23 +5,8 @@
 		"prefix":"osdafootnote",
 		"body":[
 			"\\osdafootnote"
-		]
-	},
-
-
-	"osdanotice":{
-		"prefix":"osdanotice",
-		"body":[
-			"\\osdanotice"
-		]
-	},
-
-
-	"osdaset{}":{
-		"prefix":"osdaset",
-		"body":[
-			"\\osdaset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"osdafootnote",
 		"body":[
 			"\\osdafootnote[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"osdanotice":{
+		"prefix":"osdanotice",
+		"body":[
+			"\\osdanotice"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +32,16 @@
 		"prefix":"osdanotice",
 		"body":[
 			"\\osdanotice[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"osdaset{}":{
+		"prefix":"osdaset",
+		"body":[
+			"\\osdaset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,247 +5,8 @@
 		"prefix":"super",
 		"body":[
 			"\\super{${1:content}}"
-		]
-	},
-
-
-	"sub{}":{
-		"prefix":"sub",
-		"body":[
-			"\\sub{${1:content}}"
-		]
-	},
-
-
-	"llastwd":{
-		"prefix":"llastwd",
-		"body":[
-			"\\llastwd"
-		]
-	},
-
-
-	"clastwd":{
-		"prefix":"clastwd",
-		"body":[
-			"\\clastwd"
-		]
-	},
-
-
-	"rlastwd":{
-		"prefix":"rlastwd",
-		"body":[
-			"\\rlastwd"
-		]
-	},
-
-
-	"supersub{}{}":{
-		"prefix":"supersub",
-		"body":[
-			"\\supersub{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"superwd":{
-		"prefix":"superwd",
-		"body":[
-			"\\superwd"
-		]
-	},
-
-
-	"subwd":{
-		"prefix":"subwd",
-		"body":[
-			"\\subwd"
-		]
-	},
-
-
-	"maxwd":{
-		"prefix":"maxwd",
-		"body":[
-			"\\maxwd"
-		]
-	},
-
-
-	"spb{}{}":{
-		"prefix":"spb",
-		"body":[
-			"\\spb{${1:super}}{${2:sub}}"
-		]
-	},
-
-
-	"defspbstyle{}{}":{
-		"prefix":"defspbstyle",
-		"body":[
-			"\\defspbstyle{${1:style name}}{${2:keyvals}}"
-		]
-	},
-
-
-	"spbifmath{}{}":{
-		"prefix":"spbifmath",
-		"body":[
-			"\\spbifmath{${1:math code%formula}}{${2:text code}}"
-		]
-	},
-
-
-	"spbshortkv{}{}":{
-		"prefix":"spbshortkv",
-		"body":[
-			"\\spbshortkv{${1:short opt%specialDef}}{${2:keyval%keyvals}}"
-		]
-	},
-
-
-	"sp{}":{
-		"prefix":"sp",
-		"body":[
-			"\\sp{${1:content}}"
-		]
-	},
-
-
-	"sb{}":{
-		"prefix":"sb",
-		"body":[
-			"\\sb{${1:content}}"
-		]
-	},
-
-
-	"sp{}":{
-		"prefix":"sp",
-		"body":[
-			"\\sp{${1:content}}"
-		]
-	},
-
-
-	"sb{}":{
-		"prefix":"sb",
-		"body":[
-			"\\sb{${1:content}}"
-		]
-	},
-
-
-	"textsuperscript{}":{
-		"prefix":"textsuperscript",
-		"body":[
-			"\\textsuperscript{${1:content}}"
-		]
-	},
-
-
-	"textsubscript{}":{
-		"prefix":"textsubscript",
-		"body":[
-			"\\textsubscript{${1:content}}"
-		]
-	},
-
-
-	"textsuperscript{}":{
-		"prefix":"textsuperscript",
-		"body":[
-			"\\textsuperscript{${1:content}}"
-		]
-	},
-
-
-	"textsubscript{}":{
-		"prefix":"textsubscript",
-		"body":[
-			"\\textsubscript{${1:content}}"
-		]
-	},
-
-
-	"sp{}":{
-		"prefix":"sp",
-		"body":[
-			"\\sp{${1:content}}"
-		]
-	},
-
-
-	"sb{}":{
-		"prefix":"sb",
-		"body":[
-			"\\sb{${1:content}}"
-		]
-	},
-
-
-	"textsuperscript{}":{
-		"prefix":"textsuperscript",
-		"body":[
-			"\\textsuperscript{${1:content}}"
-		]
-	},
-
-
-	"textsubscript{}":{
-		"prefix":"textsubscript",
-		"body":[
-			"\\textsubscript{${1:content}}"
-		]
-	},
-
-
-	"sp{}":{
-		"prefix":"sp",
-		"body":[
-			"\\sp{${1:content}}"
-		]
-	},
-
-
-	"sb{}":{
-		"prefix":"sb",
-		"body":[
-			"\\sb{${1:content}}"
-		]
-	},
-
-
-	"textsuperscript{}":{
-		"prefix":"textsuperscript",
-		"body":[
-			"\\textsuperscript{${1:content}}"
-		]
-	},
-
-
-	"textsubscript{}":{
-		"prefix":"textsubscript",
-		"body":[
-			"\\textsubscript{${1:content}}"
-		]
-	},
-
-
-	"spbset{}":{
-		"prefix":"spbset",
-		"body":[
-			"\\spbset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"fnmarkfont":{
-		"prefix":"fnmarkfont",
-		"body":[
-			"\\fnmarkfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +14,8 @@
 		"prefix":"super",
 		"body":[
 			"\\super[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -261,7 +23,8 @@
 		"prefix":"super",
 		"body":[
 			"\\super[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +32,17 @@
 		"prefix":"super",
 		"body":[
 			"\\super{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sub{}":{
+		"prefix":"sub",
+		"body":[
+			"\\sub{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +50,8 @@
 		"prefix":"sub",
 		"body":[
 			"\\sub[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +59,8 @@
 		"prefix":"sub",
 		"body":[
 			"\\sub[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -293,7 +68,44 @@
 		"prefix":"sub",
 		"body":[
 			"\\sub{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"llastwd":{
+		"prefix":"llastwd",
+		"body":[
+			"\\llastwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clastwd":{
+		"prefix":"clastwd",
+		"body":[
+			"\\clastwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rlastwd":{
+		"prefix":"rlastwd",
+		"body":[
+			"\\rlastwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"supersub{}{}":{
+		"prefix":"supersub",
+		"body":[
+			"\\supersub{${1:super}}{${2:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +113,8 @@
 		"prefix":"supersub",
 		"body":[
 			"\\supersub[${3:keyvals}]{${1:super}}{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +122,8 @@
 		"prefix":"supersub",
 		"body":[
 			"\\supersub[${3:keyvals}][${4:height,depth}]{${1:super}}{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -317,7 +131,44 @@
 		"prefix":"supersub",
 		"body":[
 			"\\supersub{${1:super}}{${2:sub}}[${3:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"superwd":{
+		"prefix":"superwd",
+		"body":[
+			"\\superwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subwd":{
+		"prefix":"subwd",
+		"body":[
+			"\\subwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maxwd":{
+		"prefix":"maxwd",
+		"body":[
+			"\\maxwd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spb{}{}":{
+		"prefix":"spb",
+		"body":[
+			"\\spb{${1:super}}{${2:sub}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +176,8 @@
 		"prefix":"spb",
 		"body":[
 			"\\spb[${3:keyvals}]{${1:super}}{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +185,8 @@
 		"prefix":"spb",
 		"body":[
 			"\\spb[${3:keyvals}][${4:height,depth}]{${1:super}}{${2:sub}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +194,44 @@
 		"prefix":"spb",
 		"body":[
 			"\\spb{${1:super}}{${2:sub}}[${3:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defspbstyle{}{}":{
+		"prefix":"defspbstyle",
+		"body":[
+			"\\defspbstyle{${1:style name}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spbifmath{}{}":{
+		"prefix":"spbifmath",
+		"body":[
+			"\\spbifmath{${1:math code%formula}}{${2:text code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spbshortkv{}{}":{
+		"prefix":"spbshortkv",
+		"body":[
+			"\\spbshortkv{${1:short opt%specialDef}}{${2:keyval%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sp{}":{
+		"prefix":"sp",
+		"body":[
+			"\\sp{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +239,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -357,7 +248,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,7 +257,17 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sb{}":{
+		"prefix":"sb",
+		"body":[
+			"\\sb{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,7 +275,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -381,7 +284,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -389,7 +293,17 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sp{}":{
+		"prefix":"sp",
+		"body":[
+			"\\sp{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +311,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +320,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -413,7 +329,17 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sb{}":{
+		"prefix":"sb",
+		"body":[
+			"\\sb{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +347,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,7 +356,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -437,7 +365,17 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsuperscript{}":{
+		"prefix":"textsuperscript",
+		"body":[
+			"\\textsuperscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,7 +383,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -453,7 +392,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -461,7 +401,17 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsubscript{}":{
+		"prefix":"textsubscript",
+		"body":[
+			"\\textsubscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +419,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -477,7 +428,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -485,7 +437,17 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsuperscript{}":{
+		"prefix":"textsuperscript",
+		"body":[
+			"\\textsuperscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +455,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -501,7 +464,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -509,7 +473,17 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsubscript{}":{
+		"prefix":"textsubscript",
+		"body":[
+			"\\textsubscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +491,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -525,7 +500,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -533,7 +509,17 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sp{}":{
+		"prefix":"sp",
+		"body":[
+			"\\sp{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +527,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -549,7 +536,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -557,7 +545,17 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sb{}":{
+		"prefix":"sb",
+		"body":[
+			"\\sb{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +563,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -573,7 +572,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -581,7 +581,17 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsuperscript{}":{
+		"prefix":"textsuperscript",
+		"body":[
+			"\\textsuperscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +599,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -597,7 +608,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -605,7 +617,17 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsubscript{}":{
+		"prefix":"textsubscript",
+		"body":[
+			"\\textsubscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +635,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -621,7 +644,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -629,7 +653,17 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sp{}":{
+		"prefix":"sp",
+		"body":[
+			"\\sp{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +671,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -645,7 +680,8 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -653,7 +689,17 @@
 		"prefix":"sp",
 		"body":[
 			"\\sp{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sb{}":{
+		"prefix":"sb",
+		"body":[
+			"\\sb{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +707,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -669,7 +716,8 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -677,7 +725,17 @@
 		"prefix":"sb",
 		"body":[
 			"\\sb{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsuperscript{}":{
+		"prefix":"textsuperscript",
+		"body":[
+			"\\textsuperscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +743,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -693,7 +752,8 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -701,7 +761,17 @@
 		"prefix":"textsuperscript",
 		"body":[
 			"\\textsuperscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textsubscript{}":{
+		"prefix":"textsubscript",
+		"body":[
+			"\\textsubscript{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -709,7 +779,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -717,7 +788,8 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -725,6 +797,25 @@
 		"prefix":"textsubscript",
 		"body":[
 			"\\textsubscript{${1:content}}[${2:keyvals%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"spbset{}":{
+		"prefix":"spbset",
+		"body":[
+			"\\spbset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fnmarkfont":{
+		"prefix":"fnmarkfont",
+		"body":[
+			"\\fnmarkfont"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

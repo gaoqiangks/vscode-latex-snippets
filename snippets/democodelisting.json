@@ -5,63 +5,8 @@
 		"prefix":"DisplayCode",
 		"body":[
 			"\\DisplayCode{${1:st-name}}"
-		]
-	},
-
-
-	"DemoCode{}":{
-		"prefix":"DemoCode",
-		"body":[
-			"\\DemoCode{${1:st-name}}"
-		]
-	},
-
-
-	"TabbedDemoCode{}":{
-		"prefix":"TabbedDemoCode",
-		"body":[
-			"\\TabbedDemoCode{${1:st-name}}"
-		]
-	},
-
-
-	"setdclisting{}":{
-		"prefix":"setdclisting",
-		"body":[
-			"\\setdclisting{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setdcpar{}":{
-		"prefix":"setdcpar",
-		"body":[
-			"\\setdcpar{${1:options}}"
-		]
-	},
-
-
-	"DisplayCodeB{}":{
-		"prefix":"DisplayCodeB",
-		"body":[
-			"\\DisplayCodeB{${1:st-name}}"
-		]
-	},
-
-
-	"DemoCodeB{}":{
-		"prefix":"DemoCodeB",
-		"body":[
-			"\\DemoCodeB{${1:st-name}}"
-		]
-	},
-
-
-	"TabbedDemoCodeB{}":{
-		"prefix":"TabbedDemoCodeB",
-		"body":[
-			"\\TabbedDemoCodeB{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,17 @@
 		"prefix":"DisplayCode",
 		"body":[
 			"\\DisplayCode[${2:options%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DemoCode{}":{
+		"prefix":"DemoCode",
+		"body":[
+			"\\DemoCode{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +32,8 @@
 		"prefix":"DemoCode",
 		"body":[
 			"\\DemoCode[${2:options%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +41,8 @@
 		"prefix":"DemoCode",
 		"body":[
 			"\\DemoCode{${1:st-name}}[${2:length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +50,17 @@
 		"prefix":"DemoCode",
 		"body":[
 			"\\DemoCode[${2:options%keyvals}]{${1:st-name}}[${3:length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TabbedDemoCode{}":{
+		"prefix":"TabbedDemoCode",
+		"body":[
+			"\\TabbedDemoCode{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,8 @@
 		"prefix":"TabbedDemoCode",
 		"body":[
 			"\\TabbedDemoCode[${2:options%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +77,8 @@
 		"prefix":"TabbedDemoCode",
 		"body":[
 			"\\TabbedDemoCode{${1:st-name}}[${2:length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +86,35 @@
 		"prefix":"TabbedDemoCode",
 		"body":[
 			"\\TabbedDemoCode[${2:options%keyvals}]{${1:st-name}}[${3:length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setdclisting{}":{
+		"prefix":"setdclisting",
+		"body":[
+			"\\setdclisting{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setdcpar{}":{
+		"prefix":"setdcpar",
+		"body":[
+			"\\setdcpar{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisplayCodeB{}":{
+		"prefix":"DisplayCodeB",
+		"body":[
+			"\\DisplayCodeB{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +122,17 @@
 		"prefix":"DisplayCodeB",
 		"body":[
 			"\\DisplayCodeB[${2:options}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DemoCodeB{}":{
+		"prefix":"DemoCodeB",
+		"body":[
+			"\\DemoCodeB{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +140,17 @@
 		"prefix":"DemoCodeB",
 		"body":[
 			"\\DemoCodeB[${2:options}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TabbedDemoCodeB{}":{
+		"prefix":"TabbedDemoCodeB",
+		"body":[
+			"\\TabbedDemoCodeB{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"TabbedDemoCodeB",
 		"body":[
 			"\\TabbedDemoCodeB[${2:options}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -151,26 +169,29 @@
 			"\\begin{stcode}",
 				"\t$1",
 			"\\end{stcode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"verbsc":{
+	"stcode[]":{
+		"prefix":"stcode",
+		"body":[
+			"\\begin{stcode}",
+				"\t[${1:options%keyvals}]",
+			"\\end{stcode}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"verbsc{}":{
 		"prefix":"verbsc",
 		"body":[
 			"\\begin{verbsc}",
-				"\t$1",
+				"\t{${1:options}}",
 			"\\end{verbsc}"
-		]
-	},
-
-
-	"stcode":{
-		"prefix":"stcode",
-		"body":[
-			"\\begin{stcode}",
-				"\t$1",
-			"\\end{stcode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

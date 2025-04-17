@@ -5,55 +5,8 @@
 		"prefix":"longitem",
 		"body":[
 			"\\longitem"
-		]
-	},
-
-
-	"eqlistinit":{
-		"prefix":"eqlistinit",
-		"body":[
-			"\\eqlistinit"
-		]
-	},
-
-
-	"eqliststarinit":{
-		"prefix":"eqliststarinit",
-		"body":[
-			"\\eqliststarinit"
-		]
-	},
-
-
-	"eqlistinitpar":{
-		"prefix":"eqlistinitpar",
-		"body":[
-			"\\eqlistinitpar"
-		]
-	},
-
-
-	"eqlistlabel":{
-		"prefix":"eqlistlabel",
-		"body":[
-			"\\eqlistlabel"
-		]
-	},
-
-
-	"eqlistauto{}":{
-		"prefix":"eqlistauto",
-		"body":[
-			"\\eqlistauto{${1:max length%l}}"
-		]
-	},
-
-
-	"eqlistnoauto":{
-		"prefix":"eqlistnoauto",
-		"body":[
-			"\\eqlistnoauto"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,62 @@
 		"prefix":"longitem",
 		"body":[
 			"\\longitem[${1:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqlistinit":{
+		"prefix":"eqlistinit",
+		"body":[
+			"\\eqlistinit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqliststarinit":{
+		"prefix":"eqliststarinit",
+		"body":[
+			"\\eqliststarinit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqlistinitpar":{
+		"prefix":"eqlistinitpar",
+		"body":[
+			"\\eqlistinitpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqlistlabel":{
+		"prefix":"eqlistlabel",
+		"body":[
+			"\\eqlistlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqlistauto{}":{
+		"prefix":"eqlistauto",
+		"body":[
+			"\\eqlistauto{${1:max length%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqlistnoauto":{
+		"prefix":"eqlistnoauto",
+		"body":[
+			"\\eqlistnoauto"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,27 +79,19 @@
 			"\\begin{eqlist}",
 				"\t$1",
 			"\\end{eqlist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Eqlist":{
-		"prefix":"Eqlist",
+	"eqlist[]":{
+		"prefix":"eqlist",
 		"body":[
-			"\\begin{Eqlist}",
-				"\t$1",
-			"\\end{Eqlist}"
-		]
-	},
-
-
-	"Eqlist*":{
-		"prefix":"Eqlist",
-		"body":[
-			"\\begin{Eqlist*}",
-				"\t$1",
-			"\\end{Eqlist*}"
-		]
+			"\\begin{eqlist}",
+				"\t[${1:code}]",
+			"\\end{eqlist}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,46 +101,62 @@
 			"\\begin{eqlist*}",
 				"\t$1",
 			"\\end{eqlist*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"eqlist":{
-		"prefix":"eqlist",
-		"body":[
-			"\\begin{eqlist}",
-				"\t$1",
-			"\\end{eqlist}"
-		]
-	},
-
-
-	"eqlist*":{
-		"prefix":"eqlist",
+	"eqlist*[]":{
+		"prefix":"*eqlist",
 		"body":[
 			"\\begin{eqlist*}",
-				"\t$1",
+				"\t[${1:code}]",
 			"\\end{eqlist*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Eqlist":{
+	"Eqlist{}":{
 		"prefix":"Eqlist",
 		"body":[
 			"\\begin{Eqlist}",
-				"\t$1",
+				"\t{${1:tag}}",
 			"\\end{Eqlist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Eqlist*":{
+	"Eqlist[]{}":{
 		"prefix":"Eqlist",
 		"body":[
+			"\\begin{Eqlist}",
+				"\t[${2:code}]{${1:tag}}",
+			"\\end{Eqlist}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Eqlist*{}":{
+		"prefix":"*Eqlist",
+		"body":[
 			"\\begin{Eqlist*}",
-				"\t$1",
+				"\t{${1:tag}}",
 			"\\end{Eqlist*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Eqlist*[]{}":{
+		"prefix":"*Eqlist",
+		"body":[
+			"\\begin{Eqlist*}",
+				"\t[${2:code}]{${1:tag}}",
+			"\\end{Eqlist*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,15 +5,8 @@
 		"prefix":"tsvtemplate",
 		"body":[
 			"\\tsvtemplate{${1:template}}{${2:file}}"
-		]
-	},
-
-
-	"applytemplate{}{}{}{}":{
-		"prefix":"applytemplate",
-		"body":[
-			"\\applytemplate{${1:separator}}{${2:colnames}}{${3:template}}{${4:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,26 +14,38 @@
 		"prefix":"tsvtemplate",
 		"body":[
 			"\\tsvtemplate[${3:colname1,colname2,...}]{${1:template}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tsv template":{
-		"prefix":"tsv template",
+	"applytemplate{}{}{}{}":{
+		"prefix":"applytemplate",
 		"body":[
-			"\\begin{tsv template}",
-				"\t$1",
-			"\\end{tsv template}"
-		]
+			"\\applytemplate{${1:separator}}{${2:colnames}}{${3:template}}{${4:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tsv template":{
+	"tsv template{}":{
 		"prefix":"tsv template",
 		"body":[
 			"\\begin{tsv template}",
-				"\t$1",
+				"\t{${1:file}}",
 			"\\end{tsv template}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tsv template[]{}":{
+		"prefix":"tsv template",
+		"body":[
+			"\\begin{tsv template}",
+				"\t[${2:colname1,colname2,...}]{${1:file}}",
+			"\\end{tsv template}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

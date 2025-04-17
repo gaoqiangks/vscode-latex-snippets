@@ -5,7 +5,8 @@
 		"prefix":"PDIP",
 		"body":[
 			"\\PDIP(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"pctPDIP",
 		"body":[
 			"\\pctPDIP(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"TQFP",
 		"body":[
 			"\\TQFP(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"pctTQFP",
 		"body":[
 			"\\pctTQFP(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"PLCC",
 		"body":[
 			"\\PLCC(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"pctPLCC",
 		"body":[
 			"\\pctPLCC(${2:pincount}){${1:pinarray}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"FormatPinLabel",
 		"body":[
 			"\\FormatPinLabel{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,39 +68,8 @@
 		"prefix":"CASE",
 		"body":[
 			"\\CASE(${2:arg1}){${1:arg2}}"
-		]
-	},
-
-
-	"GENFOUREDGE(){}{}{}":{
-		"prefix":"GENFOUREDGE",
-		"body":[
-			"\\GENFOUREDGE(${4:arg1}){${1:arg2}}{${2:arg3}}{${3:arg4}}"
-		]
-	},
-
-
-	"pardefault":{
-		"prefix":"pardefault",
-		"body":[
-			"\\pardefault"
-		]
-	},
-
-
-	"neverindent":{
-		"prefix":"neverindent",
-		"body":[
-			"\\neverindent"
-		]
-	},
-
-
-	"autoindent":{
-		"prefix":"autoindent",
-		"body":[
-			"\\autoindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,6 +77,43 @@
 		"prefix":"PIN",
 		"body":[
 			"\\PIN[${3:arg1}](${4:arg2}){${1:arg3}}{${2:arg4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GENFOUREDGE(){}{}{}":{
+		"prefix":"GENFOUREDGE",
+		"body":[
+			"\\GENFOUREDGE(${4:arg1}){${1:arg2}}{${2:arg3}}{${3:arg4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pardefault":{
+		"prefix":"pardefault",
+		"body":[
+			"\\pardefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"neverindent":{
+		"prefix":"neverindent",
+		"body":[
+			"\\neverindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"autoindent":{
+		"prefix":"autoindent",
+		"body":[
+			"\\autoindent"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

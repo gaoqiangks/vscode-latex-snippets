@@ -5,55 +5,8 @@
 		"prefix":"course",
 		"body":[
 			"\\course{${1:title}}"
-		]
-	},
-
-
-	"lecture{}{}":{
-		"prefix":"lecture",
-		"body":[
-			"\\lecture{${1:title}}{${2:PDF file%file}}"
-		]
-	},
-
-
-	"lecturetitle{}":{
-		"prefix":"lecturetitle",
-		"body":[
-			"\\lecturetitle{${1:title}}"
-		]
-	},
-
-
-	"lectureslides{}":{
-		"prefix":"lectureslides",
-		"body":[
-			"\\lectureslides{${1:PDF file%file}}"
-		]
-	},
-
-
-	"tocline{}":{
-		"prefix":"tocline",
-		"body":[
-			"\\tocline{${1:arg}}"
-		]
-	},
-
-
-	"createdAt{}":{
-		"prefix":"createdAt",
-		"body":[
-			"\\createdAt{${1:text}}"
-		]
-	},
-
-
-	"orientation":{
-		"prefix":"orientation",
-		"body":[
-			"\\orientation"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"course",
 		"body":[
 			"\\course[${2:footnote%text}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lecture{}{}":{
+		"prefix":"lecture",
+		"body":[
+			"\\lecture{${1:title}}{${2:PDF file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +32,8 @@
 		"prefix":"lecture",
 		"body":[
 			"\\lecture{${1:title}}[${3:start}]{${2:PDF file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,7 +41,26 @@
 		"prefix":"lecture",
 		"body":[
 			"\\lecture{${1:title}}[${3:start}][${4:end}]{${2:PDF file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lecturetitle{}":{
+		"prefix":"lecturetitle",
+		"body":[
+			"\\lecturetitle{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lectureslides{}":{
+		"prefix":"lectureslides",
+		"body":[
+			"\\lectureslides{${1:PDF file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +68,8 @@
 		"prefix":"lectureslides",
 		"body":[
 			"\\lectureslides[${2:start}]{${1:PDF file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,6 +77,34 @@
 		"prefix":"lectureslides",
 		"body":[
 			"\\lectureslides[${2:start}][${3:end}]{${1:PDF file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tocline{}":{
+		"prefix":"tocline",
+		"body":[
+			"\\tocline{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"createdAt{}":{
+		"prefix":"createdAt",
+		"body":[
+			"\\createdAt{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"orientation":{
+		"prefix":"orientation",
+		"body":[
+			"\\orientation"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,23 +5,8 @@
 		"prefix":"makeSimpleRandomNumberList",
 		"body":[
 			"\\makeSimpleRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
-		]
-	},
-
-
-	"makeRandomNumberList{}{}{}":{
-		"prefix":"makeRandomNumberList",
-		"body":[
-			"\\makeRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
-		]
-	},
-
-
-	"getNumberFromList{}":{
-		"prefix":"getNumberFromList",
-		"body":[
-			"\\getNumberFromList{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"makeSimpleRandomNumberList",
 		"body":[
 			"\\makeSimpleRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"makeRandomNumberList{}{}{}":{
+		"prefix":"makeRandomNumberList",
+		"body":[
+			"\\makeRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +32,16 @@
 		"prefix":"makeRandomNumberList",
 		"body":[
 			"\\makeRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getNumberFromList{}":{
+		"prefix":"getNumberFromList",
+		"body":[
+			"\\getNumberFromList{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

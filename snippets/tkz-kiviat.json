@@ -5,15 +5,8 @@
 		"prefix":"tkzKiviatDiagram",
 		"body":[
 			"\\tkzKiviatDiagram{${1:name1,name2,...}}"
-		]
-	},
-
-
-	"tkzKiviatDiagramFromFile{}":{
-		"prefix":"tkzKiviatDiagramFromFile",
-		"body":[
-			"\\tkzKiviatDiagramFromFile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,8 @@
 		"prefix":"tkzKiviatDiagram",
 		"body":[
 			"\\tkzKiviatDiagram[${2:options%keyvals}]{${1:name1,name2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -29,7 +23,8 @@
 		"prefix":"tkzKiviatLine",
 		"body":[
 			"\\tkzKiviatLine[${2:options%keyvals}]{${1:num1,num2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +32,8 @@
 		"prefix":"tkzKiviatLineFromFile",
 		"body":[
 			"\\tkzKiviatLineFromFile[${3:options%keyvals}]{${1:file1%file}}{${2:file2%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +41,17 @@
 		"prefix":"tkzKiviatGrad",
 		"body":[
 			"\\tkzKiviatGrad[${1:options%keyvals}](${2:integer})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzKiviatDiagramFromFile{}":{
+		"prefix":"tkzKiviatDiagramFromFile",
+		"body":[
+			"\\tkzKiviatDiagramFromFile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +59,7 @@
 		"prefix":"tkzKiviatDiagramFromFile",
 		"body":[
 			"\\tkzKiviatDiagramFromFile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

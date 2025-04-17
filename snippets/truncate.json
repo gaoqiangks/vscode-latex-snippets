@@ -5,15 +5,8 @@
 		"prefix":"truncate",
 		"body":[
 			"\\truncate{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"TruncateMarker":{
-		"prefix":"TruncateMarker",
-		"body":[
-			"\\TruncateMarker"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"truncate",
 		"body":[
 			"\\truncate[${3:marker}]{${1:width}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TruncateMarker":{
+		"prefix":"TruncateMarker",
+		"body":[
+			"\\TruncateMarker"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

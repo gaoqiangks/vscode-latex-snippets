@@ -5,55 +5,8 @@
 		"prefix":"LoadOASymbolPackage",
 		"body":[
 			"\\LoadOASymbolPackage{${1:package%keyvals}}"
-		]
-	},
-
-
-	"DeclareOpenAccessFieldUrl{}{}":{
-		"prefix":"DeclareOpenAccessFieldUrl",
-		"body":[
-			"\\DeclareOpenAccessFieldUrl{${1:field}}{${2:URL spec%URL}}"
-		]
-	},
-
-
-	"UndeclareOpenAccessFieldUrl{}":{
-		"prefix":"UndeclareOpenAccessFieldUrl",
-		"body":[
-			"\\UndeclareOpenAccessFieldUrl{${1:field}}"
-		]
-	},
-
-
-	"DeclareOpenAccessEprintUrl{}{}":{
-		"prefix":"DeclareOpenAccessEprintUrl",
-		"body":[
-			"\\DeclareOpenAccessEprintUrl{${1:eprint type}}{${2:URL spec%URL}}"
-		]
-	},
-
-
-	"DeclareOpenAccessEprintAlias{}{}":{
-		"prefix":"DeclareOpenAccessEprintAlias",
-		"body":[
-			"\\DeclareOpenAccessEprintAlias{${1:alias}}{${2:eprint type}}"
-		]
-	},
-
-
-	"UndeclareOpenAccessEprintUrl{}":{
-		"prefix":"UndeclareOpenAccessEprintUrl",
-		"body":[
-			"\\UndeclareOpenAccessEprintUrl{${1:eprint type}}"
-		]
-	},
-
-
-	"DeclareOpenAccessUrlFieldPriority{}":{
-		"prefix":"DeclareOpenAccessUrlFieldPriority",
-		"body":[
-			"\\DeclareOpenAccessUrlFieldPriority{${1:field1,field2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"LoadOASymbolPackage",
 		"body":[
 			"\\LoadOASymbolPackage[${2:symbol}]{${1:package%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareOpenAccessFieldUrl{}{}":{
+		"prefix":"DeclareOpenAccessFieldUrl",
+		"body":[
+			"\\DeclareOpenAccessFieldUrl{${1:field}}{${2:URL spec%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +32,26 @@
 		"prefix":"DeclareOpenAccessFieldUrl",
 		"body":[
 			"\\DeclareOpenAccessFieldUrl[${3:openness}]{${1:field}}{${2:URL spec%URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"UndeclareOpenAccessFieldUrl{}":{
+		"prefix":"UndeclareOpenAccessFieldUrl",
+		"body":[
+			"\\UndeclareOpenAccessFieldUrl{${1:field}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareOpenAccessEprintUrl{}{}":{
+		"prefix":"DeclareOpenAccessEprintUrl",
+		"body":[
+			"\\DeclareOpenAccessEprintUrl{${1:eprint type}}{${2:URL spec%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +59,34 @@
 		"prefix":"DeclareOpenAccessEprintUrl",
 		"body":[
 			"\\DeclareOpenAccessEprintUrl[${3:openness}]{${1:eprint type}}{${2:URL spec%URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareOpenAccessEprintAlias{}{}":{
+		"prefix":"DeclareOpenAccessEprintAlias",
+		"body":[
+			"\\DeclareOpenAccessEprintAlias{${1:alias}}{${2:eprint type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UndeclareOpenAccessEprintUrl{}":{
+		"prefix":"UndeclareOpenAccessEprintUrl",
+		"body":[
+			"\\UndeclareOpenAccessEprintUrl{${1:eprint type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareOpenAccessUrlFieldPriority{}":{
+		"prefix":"DeclareOpenAccessUrlFieldPriority",
+		"body":[
+			"\\DeclareOpenAccessUrlFieldPriority{${1:field1,field2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,127 +5,8 @@
 		"prefix":"startchronology",
 		"body":[
 			"\\startchronology"
-		]
-	},
-
-
-	"stopchronology":{
-		"prefix":"stopchronology",
-		"body":[
-			"\\stopchronology"
-		]
-	},
-
-
-	"chronoevent{}{}":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent{${1:year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoevent{}{}":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent{${1:month/year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoevent{}{}":{
-		"prefix":"chronoevent",
-		"body":[
-			"\\chronoevent{${1:day/month/year}}{${2:label text}}"
-		]
-	},
-
-
-	"chronoperiode{}{}{}":{
-		"prefix":"chronoperiode",
-		"body":[
-			"\\chronoperiode{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
-		]
-	},
-
-
-	"chronoperiodecoloralternation{}":{
-		"prefix":"chronoperiodecoloralternation",
-		"body":[
-			"\\chronoperiodecoloralternation{${1:color1,color2,...}}"
-		]
-	},
-
-
-	"restartchronoperiodecolor":{
-		"prefix":"restartchronoperiodecolor",
-		"body":[
-			"\\restartchronoperiodecolor"
-		]
-	},
-
-
-	"chronograduation{}":{
-		"prefix":"chronograduation",
-		"body":[
-			"\\chronograduation{${1:integer}}"
-		]
-	},
-
-
-	"definechronoevent{}":{
-		"prefix":"definechronoevent",
-		"body":[
-			"\\definechronoevent{${1:name}}"
-		]
-	},
-
-
-	"definechronoperiode{}":{
-		"prefix":"definechronoperiode",
-		"body":[
-			"\\definechronoperiode{${1:name}}"
-		]
-	},
-
-
-	"setupchronology{}":{
-		"prefix":"setupchronology",
-		"body":[
-			"\\setupchronology{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronoevent{}":{
-		"prefix":"setupchronoevent",
-		"body":[
-			"\\setupchronoevent{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronoperiode{}":{
-		"prefix":"setupchronoperiode",
-		"body":[
-			"\\setupchronoperiode{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setupchronograduation{}":{
-		"prefix":"setupchronograduation",
-		"body":[
-			"\\setupchronograduation{${1:options%keyvals}}"
-		]
-	},
-
-
-	"chronoperiodcolor":{
-		"prefix":"chronoperiodcolor",
-		"body":[
-			"\\chronoperiodcolor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +14,44 @@
 		"prefix":"startchronology",
 		"body":[
 			"\\startchronology[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stopchronology":{
+		"prefix":"stopchronology",
+		"body":[
+			"\\stopchronology"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chronoevent{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent{${1:year}}{${2:label text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chronoevent{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent{${1:month/year}}{${2:label text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chronoevent{}{}":{
+		"prefix":"chronoevent",
+		"body":[
+			"\\chronoevent{${1:day/month/year}}{${2:label text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +59,8 @@
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent[${3:options}]{${1:year}}{${2:label text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +68,8 @@
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent[${3:options}]{${1:month/year}}{${2:label text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +77,17 @@
 		"prefix":"chronoevent",
 		"body":[
 			"\\chronoevent[${3:options}]{${1:day/month/year}}{${2:label text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chronoperiode{}{}{}":{
+		"prefix":"chronoperiode",
+		"body":[
+			"\\chronoperiode{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +95,26 @@
 		"prefix":"chronoperiode",
 		"body":[
 			"\\chronoperiode[${4:options%keyvals}]{${1:start-year}}{${2:end-year}}{${3:label text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chronoperiodecoloralternation{}":{
+		"prefix":"chronoperiodecoloralternation",
+		"body":[
+			"\\chronoperiodecoloralternation{${1:color1,color2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restartchronoperiodecolor":{
+		"prefix":"restartchronoperiodecolor",
+		"body":[
+			"\\restartchronoperiodecolor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +122,17 @@
 		"prefix":"restartchronoperiodecolor",
 		"body":[
 			"\\restartchronoperiodecolor[${1:color}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chronograduation{}":{
+		"prefix":"chronograduation",
+		"body":[
+			"\\chronograduation{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +140,8 @@
 		"prefix":"chronograduation",
 		"body":[
 			"\\chronograduation[${2:periode|event}]{${1:integer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +149,17 @@
 		"prefix":"chronograduation",
 		"body":[
 			"\\chronograduation[${2:periode|event}][${3:options%keyvals}]{${1:integer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"definechronoevent{}":{
+		"prefix":"definechronoevent",
+		"body":[
+			"\\definechronoevent{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +167,17 @@
 		"prefix":"definechronoevent",
 		"body":[
 			"\\definechronoevent{${1:name}}[${2:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"definechronoperiode{}":{
+		"prefix":"definechronoperiode",
+		"body":[
+			"\\definechronoperiode{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +185,26 @@
 		"prefix":"definechronoperiode",
 		"body":[
 			"\\definechronoperiode{${1:name}}[${2:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setupchronology{}":{
+		"prefix":"setupchronology",
+		"body":[
+			"\\setupchronology{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setupchronoevent{}":{
+		"prefix":"setupchronoevent",
+		"body":[
+			"\\setupchronoevent{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +212,17 @@
 		"prefix":"setupchronoevent",
 		"body":[
 			"\\setupchronoevent[${2:name}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setupchronoperiode{}":{
+		"prefix":"setupchronoperiode",
+		"body":[
+			"\\setupchronoperiode{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +230,17 @@
 		"prefix":"setupchronoperiode",
 		"body":[
 			"\\setupchronoperiode[${2:name}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setupchronograduation{}":{
+		"prefix":"setupchronograduation",
+		"body":[
+			"\\setupchronograduation{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +248,17 @@
 		"prefix":"setupchronograduation",
 		"body":[
 			"\\setupchronograduation[${2:periode|event}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chronoperiodcolor":{
+		"prefix":"chronoperiodcolor",
+		"body":[
+			"\\chronoperiodcolor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -239,16 +268,18 @@
 			"\\begin{chronology}",
 				"\t$1",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"chronology":{
+	"chronology[]":{
 		"prefix":"chronology",
 		"body":[
 			"\\begin{chronology}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{chronology}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,247 +5,8 @@
 		"prefix":"flJSStr",
 		"body":[
 			"\\flJSStr{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"defineJSStr{}{}":{
-		"prefix":"defineJSStr",
-		"body":[
-			"\\defineJSStr{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"fieldJSStr{}{}":{
-		"prefix":"fieldJSStr",
-		"body":[
-			"\\fieldJSStr{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"dlJSStr{}{}":{
-		"prefix":"dlJSStr",
-		"body":[
-			"\\dlJSStr{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"cs{}":{
-		"prefix":"cs",
-		"body":[
-			"\\cs{${1:csname}}"
-		]
-	},
-
-
-	"eqbs":{
-		"prefix":"eqbs",
-		"body":[
-			"\\eqbs"
-		]
-	},
-
-
-	"jslit":{
-		"prefix":"jslit",
-		"body":[
-			"\\jslit"
-		]
-	},
-
-
-	"OpenAction{}":{
-		"prefix":"OpenAction",
-		"body":[
-			"\\OpenAction{${1:action code}}"
-		]
-	},
-
-
-	"thisPageAction{}{}":{
-		"prefix":"thisPageAction",
-		"body":[
-			"\\thisPageAction{${1:open script}}{${2:close script}}"
-		]
-	},
-
-
-	"JS{}":{
-		"prefix":"JS",
-		"body":[
-			"\\JS{${1:string}}"
-		]
-	},
-
-
-	"Named{}":{
-		"prefix":"Named",
-		"body":[
-			"\\Named{${1:string}}"
-		]
-	},
-
-
-	"makeJSspecials":{
-		"prefix":"makeJSspecials",
-		"body":[
-			"\\makeJSspecials"
-		]
-	},
-
-
-	"ifpdfmarkup":{
-		"prefix":"ifpdfmarkup",
-		"body":[
-			"\\ifpdfmarkup"
-		]
-	},
-
-
-	"pdfmarkuptrue":{
-		"prefix":"pdfmarkuptrue",
-		"body":[
-			"\\pdfmarkuptrue"
-		]
-	},
-
-
-	"pdfmarkupfalse":{
-		"prefix":"pdfmarkupfalse",
-		"body":[
-			"\\pdfmarkupfalse"
-		]
-	},
-
-
-	"ifthereisdjs":{
-		"prefix":"ifthereisdjs",
-		"body":[
-			"\\ifthereisdjs"
-		]
-	},
-
-
-	"thereisdjstrue":{
-		"prefix":"thereisdjstrue",
-		"body":[
-			"\\thereisdjstrue"
-		]
-	},
-
-
-	"thereisdjsfalse":{
-		"prefix":"thereisdjsfalse",
-		"body":[
-			"\\thereisdjsfalse"
-		]
-	},
-
-
-	"ifpdfspaces":{
-		"prefix":"ifpdfspaces",
-		"body":[
-			"\\ifpdfspaces"
-		]
-	},
-
-
-	"pdfspacestrue":{
-		"prefix":"pdfspacestrue",
-		"body":[
-			"\\pdfspacestrue"
-		]
-	},
-
-
-	"pdfspacesfalse":{
-		"prefix":"pdfspacesfalse",
-		"body":[
-			"\\pdfspacesfalse"
-		]
-	},
-
-
-	"ifisdljs":{
-		"prefix":"ifisdljs",
-		"body":[
-			"\\ifisdljs"
-		]
-	},
-
-
-	"isdljstrue":{
-		"prefix":"isdljstrue",
-		"body":[
-			"\\isdljstrue"
-		]
-	},
-
-
-	"isdljsfalse":{
-		"prefix":"isdljsfalse",
-		"body":[
-			"\\isdljsfalse"
-		]
-	},
-
-
-	"ifdlfortypeset":{
-		"prefix":"ifdlfortypeset",
-		"body":[
-			"\\ifdlfortypeset"
-		]
-	},
-
-
-	"dlfortypesettrue":{
-		"prefix":"dlfortypesettrue",
-		"body":[
-			"\\dlfortypesettrue"
-		]
-	},
-
-
-	"dlfortypesetfalse":{
-		"prefix":"dlfortypesetfalse",
-		"body":[
-			"\\dlfortypesetfalse"
-		]
-	},
-
-
-	"flJSStr*{}{}":{
-		"prefix":"*flJSStr",
-		"body":[
-			"\\flJSStr*{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"flJSStr*[]{}{}":{
-		"prefix":"*flJSStr",
-		"body":[
-			"\\flJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"dlJSStr*{}{}":{
-		"prefix":"*dlJSStr",
-		"body":[
-			"\\dlJSStr*{${1:cmd}}{${2:JS string%definition}}"
-		]
-	},
-
-
-	"dlJSStr*[]{}{}":{
-		"prefix":"*dlJSStr",
-		"body":[
-			"\\dlJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +14,53 @@
 		"prefix":"flJSStr",
 		"body":[
 			"\\flJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"flJSStr*{}{}":{
+		"prefix":"*flJSStr",
+		"body":[
+			"\\flJSStr*{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"flJSStr*[]{}{}":{
+		"prefix":"*flJSStr",
+		"body":[
+			"\\flJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"defineJSStr{}{}":{
+		"prefix":"defineJSStr",
+		"body":[
+			"\\defineJSStr{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fieldJSStr{}{}":{
+		"prefix":"fieldJSStr",
+		"body":[
+			"\\fieldJSStr{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dlJSStr{}{}":{
+		"prefix":"dlJSStr",
+		"body":[
+			"\\dlJSStr{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,106 +68,342 @@
 		"prefix":"dlJSStr",
 		"body":[
 			"\\dlJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"insDLJS":{
+	"dlJSStr*{}{}":{
+		"prefix":"*dlJSStr",
+		"body":[
+			"\\dlJSStr*{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"dlJSStr*[]{}{}":{
+		"prefix":"*dlJSStr",
+		"body":[
+			"\\dlJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cs{}":{
+		"prefix":"cs",
+		"body":[
+			"\\cs{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqbs":{
+		"prefix":"eqbs",
+		"body":[
+			"\\eqbs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"jslit":{
+		"prefix":"jslit",
+		"body":[
+			"\\jslit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OpenAction{}":{
+		"prefix":"OpenAction",
+		"body":[
+			"\\OpenAction{${1:action code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thisPageAction{}{}":{
+		"prefix":"thisPageAction",
+		"body":[
+			"\\thisPageAction{${1:open script}}{${2:close script}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JS{}":{
+		"prefix":"JS",
+		"body":[
+			"\\JS{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Named{}":{
+		"prefix":"Named",
+		"body":[
+			"\\Named{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeJSspecials":{
+		"prefix":"makeJSspecials",
+		"body":[
+			"\\makeJSspecials"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpdfmarkup":{
+		"prefix":"ifpdfmarkup",
+		"body":[
+			"\\ifpdfmarkup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfmarkuptrue":{
+		"prefix":"pdfmarkuptrue",
+		"body":[
+			"\\pdfmarkuptrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfmarkupfalse":{
+		"prefix":"pdfmarkupfalse",
+		"body":[
+			"\\pdfmarkupfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifthereisdjs":{
+		"prefix":"ifthereisdjs",
+		"body":[
+			"\\ifthereisdjs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thereisdjstrue":{
+		"prefix":"thereisdjstrue",
+		"body":[
+			"\\thereisdjstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thereisdjsfalse":{
+		"prefix":"thereisdjsfalse",
+		"body":[
+			"\\thereisdjsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpdfspaces":{
+		"prefix":"ifpdfspaces",
+		"body":[
+			"\\ifpdfspaces"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfspacestrue":{
+		"prefix":"pdfspacestrue",
+		"body":[
+			"\\pdfspacestrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfspacesfalse":{
+		"prefix":"pdfspacesfalse",
+		"body":[
+			"\\pdfspacesfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifisdljs":{
+		"prefix":"ifisdljs",
+		"body":[
+			"\\ifisdljs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isdljstrue":{
+		"prefix":"isdljstrue",
+		"body":[
+			"\\isdljstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isdljsfalse":{
+		"prefix":"isdljsfalse",
+		"body":[
+			"\\isdljsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifdlfortypeset":{
+		"prefix":"ifdlfortypeset",
+		"body":[
+			"\\ifdlfortypeset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dlfortypesettrue":{
+		"prefix":"dlfortypesettrue",
+		"body":[
+			"\\dlfortypesettrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dlfortypesetfalse":{
+		"prefix":"dlfortypesetfalse",
+		"body":[
+			"\\dlfortypesetfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insDLJS{}{}":{
 		"prefix":"insDLJS",
 		"body":[
 			"\\begin{insDLJS}",
-				"\t$1",
+				"\t{${1:base name}}{${2:script name}}",
 			"\\end{insDLJS}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"insDLJS*":{
+	"insDLJS[]{}{}":{
 		"prefix":"insDLJS",
 		"body":[
-			"\\begin{insDLJS*}",
-				"\t$1",
-			"\\end{insDLJS*}"
-		]
+			"\\begin{insDLJS}",
+				"\t[${3:JS var}]{${1:base name}}{${2:script name}}",
+			"\\end{insDLJS}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"newsegment":{
+	"insDLJS*{}":{
+		"prefix":"*insDLJS",
+		"body":[
+			"\\begin{insDLJS*}",
+				"\t{${1:base name}}",
+			"\\end{insDLJS*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"insDLJS*[]{}":{
+		"prefix":"*insDLJS",
+		"body":[
+			"\\begin{insDLJS*}",
+				"\t[${2:JS var}]{${1:base name}}",
+			"\\end{insDLJS*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newsegment{}":{
 		"prefix":"newsegment",
 		"body":[
 			"\\begin{newsegment}",
-				"\t$1",
+				"\t{${1:script name}}",
 			"\\end{newsegment}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"execJS":{
+	"execJS{}":{
 		"prefix":"execJS",
 		"body":[
 			"\\begin{execJS}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{execJS}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"defineJS":{
+	"defineJS{}":{
 		"prefix":"defineJS",
 		"body":[
 			"\\begin{defineJS}",
-				"\t$1",
+				"\t{${1:cmd}}",
 			"\\end{defineJS}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"defineJS*":{
-		"prefix":"defineJS",
-		"body":[
-			"\\begin{defineJS*}",
-				"\t$1",
-			"\\end{defineJS*}"
-		]
-	},
-
-
-	"insDLJS":{
-		"prefix":"insDLJS",
-		"body":[
-			"\\begin{insDLJS}",
-				"\t$1",
-			"\\end{insDLJS}"
-		]
-	},
-
-
-	"insDLJS*":{
-		"prefix":"insDLJS",
-		"body":[
-			"\\begin{insDLJS*}",
-				"\t$1",
-			"\\end{insDLJS*}"
-		]
-	},
-
-
-	"defineJS":{
+	"defineJS[]{}":{
 		"prefix":"defineJS",
 		"body":[
 			"\\begin{defineJS}",
-				"\t$1",
+				"\t[${2:chngCats}]{${1:cmd}}",
 			"\\end{defineJS}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"defineJS*":{
-		"prefix":"defineJS",
+	"defineJS*{}":{
+		"prefix":"*defineJS",
 		"body":[
 			"\\begin{defineJS*}",
-				"\t$1",
+				"\t{${1:cmd}}",
 			"\\end{defineJS*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"defineJS*[]{}":{
+		"prefix":"*defineJS",
+		"body":[
+			"\\begin{defineJS*}",
+				"\t[${2:chngCats}]{${1:cmd}}",
+			"\\end{defineJS*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

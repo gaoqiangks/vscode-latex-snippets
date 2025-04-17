@@ -5,7 +5,8 @@
 		"prefix":"MultiLineIndent",
 		"body":[
 			"\\MultiLineIndent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"MultiLineStarIndent",
 		"body":[
 			"\\MultiLineStarIndent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"SystemColSep",
 		"body":[
 			"\\SystemColSep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"SystemBraceSep",
 		"body":[
 			"\\SystemBraceSep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"SystemStarIndent",
 		"body":[
 			"\\SystemStarIndent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,37 +52,30 @@
 			"\\begin{Equation}",
 				"\t$1",
 			"\\end{Equation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"MultiLine":{
-		"prefix":"MultiLine",
+	"Equation[]":{
+		"prefix":"Equation",
 		"body":[
-			"\\begin{MultiLine}",
-				"\t$1",
-			"\\end{MultiLine}"
-		]
+			"\\begin{Equation}",
+				"\t[${1:label}]",
+			"\\end{Equation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"System":{
-		"prefix":"System",
+	"equation[]":{
+		"prefix":"equation",
 		"body":[
-			"\\begin{System}",
-				"\t$1",
-			"\\end{System}"
-		]
-	},
-
-
-	"EqSystem":{
-		"prefix":"EqSystem",
-		"body":[
-			"\\begin{EqSystem}",
-				"\t$1",
-			"\\end{EqSystem}"
-		]
+			"\\begin{equation}",
+				"\t[${1:label}]",
+			"\\end{equation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -87,57 +85,8 @@
 			"\\begin{equation*}",
 				"\t$1",
 			"\\end{equation*}"
-		]
-	},
-
-
-	"MultiLine*":{
-		"prefix":"*MultiLine",
-		"body":[
-			"\\begin{MultiLine*}",
-				"\t$1",
-			"\\end{MultiLine*}"
-		]
-	},
-
-
-	"System*":{
-		"prefix":"*System",
-		"body":[
-			"\\begin{System*}",
-				"\t$1",
-			"\\end{System*}"
-		]
-	},
-
-
-	"EqSystem*":{
-		"prefix":"*EqSystem",
-		"body":[
-			"\\begin{EqSystem*}",
-				"\t$1",
-			"\\end{EqSystem*}"
-		]
-	},
-
-
-	"Equation":{
-		"prefix":"Equation",
-		"body":[
-			"\\begin{Equation}",
-				"\t$1",
-			"\\end{Equation}"
-		]
-	},
-
-
-	"equation":{
-		"prefix":"equation",
-		"body":[
-			"\\begin{equation}",
-				"\t$1",
-			"\\end{equation}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -147,7 +96,30 @@
 			"\\begin{MultiLine}",
 				"\t$1",
 			"\\end{MultiLine}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MultiLine[]":{
+		"prefix":"MultiLine",
+		"body":[
+			"\\begin{MultiLine}",
+				"\t[${1:label}]",
+			"\\end{MultiLine}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MultiLine*":{
+		"prefix":"*MultiLine",
+		"body":[
+			"\\begin{MultiLine*}",
+				"\t$1",
+			"\\end{MultiLine*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -157,7 +129,30 @@
 			"\\begin{System}",
 				"\t$1",
 			"\\end{System}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"System[]":{
+		"prefix":"System",
+		"body":[
+			"\\begin{System}",
+				"\t[${1:label}]",
+			"\\end{System}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"System*":{
+		"prefix":"*System",
+		"body":[
+			"\\begin{System*}",
+				"\t$1",
+			"\\end{System*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -167,16 +162,40 @@
 			"\\begin{EqSystem}",
 				"\t$1",
 			"\\end{EqSystem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EqSystem[]":{
+		"prefix":"EqSystem",
+		"body":[
+			"\\begin{EqSystem}",
+				"\t[${1:label}]",
+			"\\end{EqSystem}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"EqSystem*":{
-		"prefix":"EqSystem",
+		"prefix":"*EqSystem",
 		"body":[
 			"\\begin{EqSystem*}",
 				"\t$1",
 			"\\end{EqSystem*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"EqSystem*[]":{
+		"prefix":"*EqSystem",
+		"body":[
+			"\\begin{EqSystem*}",
+				"\t[${1:label}]",
+			"\\end{EqSystem*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

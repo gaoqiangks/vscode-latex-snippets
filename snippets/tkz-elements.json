@@ -5,7 +5,8 @@
 		"prefix":"tkzGetNodes",
 		"body":[
 			"\\tkzGetNodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tkzUseLua",
 		"body":[
 			"\\tkzUseLua{${1:variable}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,15 +23,8 @@
 		"prefix":"tkzDN",
 		"body":[
 			"\\tkzDN{${1:r}}"
-		]
-	},
-
-
-	"tkzDrawLuaEllipse()":{
-		"prefix":"tkzDrawLuaEllipse",
-		"body":[
-			"\\tkzDrawLuaEllipse(${1:pt1},${2:pt2},${3:pt3})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"tkzDN",
 		"body":[
 			"\\tkzDN[${2:n}]{${1:r}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzDrawLuaEllipse()":{
+		"prefix":"tkzDrawLuaEllipse",
+		"body":[
+			"\\tkzDrawLuaEllipse(${1:pt1},${2:pt2},${3:pt3})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"tkzDrawLuaEllipse",
 		"body":[
 			"\\tkzDrawLuaEllipse[${1:options}](${2:pt1},${3:pt2},${4:pt3})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -55,6 +61,7 @@
 			"\\begin{tkzelements}",
 				"\t$1",
 			"\\end{tkzelements}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

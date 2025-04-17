@@ -5,7 +5,8 @@
 		"prefix":"tagged",
 		"body":[
 			"\\tagged{${1:tag list}}{${2:source text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"untagged",
 		"body":[
 			"\\untagged{${1:tag list}}{${2:alt text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"iftagged",
 		"body":[
 			"\\iftagged{${1:tag list}}{${2:source text}}{${3:alt text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"usetag",
 		"body":[
 			"\\usetag{${1:tag list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"droptag",
 		"body":[
 			"\\droptag{${1:tag list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"taggedy",
 		"body":[
 			"\\taggedy"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,26 +59,29 @@
 		"prefix":"taggedn",
 		"body":[
 			"\\taggedn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"taggedblock":{
+	"taggedblock{}":{
 		"prefix":"taggedblock",
 		"body":[
 			"\\begin{taggedblock}",
-				"\t$1",
+				"\t{${1:tag list}}",
 			"\\end{taggedblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"untaggedblock":{
+	"untaggedblock{}":{
 		"prefix":"untaggedblock",
 		"body":[
 			"\\begin{untaggedblock}",
-				"\t$1",
+				"\t{${1:tag list}}",
 			"\\end{untaggedblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

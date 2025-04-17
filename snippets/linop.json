@@ -5,111 +5,8 @@
 		"prefix":"op",
 		"body":[
 			"\\op{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
-	},
-
-
-	"hc{}{}{}{}":{
-		"prefix":"hc",
-		"body":[
-			"\\hc{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
-	},
-
-
-	"linopconjugate":{
-		"prefix":"linopconjugate",
-		"body":[
-			"\\linopconjugate"
-		]
-	},
-
-
-	"linopspacewide":{
-		"prefix":"linopspacewide",
-		"body":[
-			"\\linopspacewide"
-		]
-	},
-
-
-	"linopspacewidehc":{
-		"prefix":"linopspacewidehc",
-		"body":[
-			"\\linopspacewidehc"
-		]
-	},
-
-
-	"linopstyle":{
-		"prefix":"linopstyle",
-		"body":[
-			"\\linopstyle"
-		]
-	},
-
-
-	"linopstylewide":{
-		"prefix":"linopstylewide",
-		"body":[
-			"\\linopstylewide"
-		]
-	},
-
-
-	"linopsubscript":{
-		"prefix":"linopsubscript",
-		"body":[
-			"\\linopsubscript"
-		]
-	},
-
-
-	"linopsuperscript":{
-		"prefix":"linopsuperscript",
-		"body":[
-			"\\linopsuperscript"
-		]
-	},
-
-
-	"linopsuperscripthc":{
-		"prefix":"linopsuperscripthc",
-		"body":[
-			"\\linopsuperscripthc"
-		]
-	},
-
-
-	"op*{}{}{}{}":{
-		"prefix":"*op",
-		"body":[
-			"\\op*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
-	},
-
-
-	"op*[]{}{}{}{}":{
-		"prefix":"*op",
-		"body":[
-			"\\op*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
-	},
-
-
-	"hc*{}{}{}{}":{
-		"prefix":"*hc",
-		"body":[
-			"\\hc*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
-	},
-
-
-	"hc*[]{}{}{}{}":{
-		"prefix":"*hc",
-		"body":[
-			"\\hc*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +14,35 @@
 		"prefix":"op",
 		"body":[
 			"\\op[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"op*{}{}{}{}":{
+		"prefix":"*op",
+		"body":[
+			"\\op*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"op*[]{}{}{}{}":{
+		"prefix":"*op",
+		"body":[
+			"\\op*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hc{}{}{}{}":{
+		"prefix":"hc",
+		"body":[
+			"\\hc{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +50,97 @@
 		"prefix":"hc",
 		"body":[
 			"\\hc[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hc*{}{}{}{}":{
+		"prefix":"*hc",
+		"body":[
+			"\\hc*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hc*[]{}{}{}{}":{
+		"prefix":"*hc",
+		"body":[
+			"\\hc*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"linopconjugate":{
+		"prefix":"linopconjugate",
+		"body":[
+			"\\linopconjugate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopspacewide":{
+		"prefix":"linopspacewide",
+		"body":[
+			"\\linopspacewide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopspacewidehc":{
+		"prefix":"linopspacewidehc",
+		"body":[
+			"\\linopspacewidehc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopstyle":{
+		"prefix":"linopstyle",
+		"body":[
+			"\\linopstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopstylewide":{
+		"prefix":"linopstylewide",
+		"body":[
+			"\\linopstylewide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopsubscript":{
+		"prefix":"linopsubscript",
+		"body":[
+			"\\linopsubscript"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopsuperscript":{
+		"prefix":"linopsuperscript",
+		"body":[
+			"\\linopsuperscript"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linopsuperscripthc":{
+		"prefix":"linopsuperscripthc",
+		"body":[
+			"\\linopsuperscripthc"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,231 +5,8 @@
 		"prefix":"csvreader",
 		"body":[
 			"\\csvreader{${1:file}}{${2:assignments}}{${3:command list%definition}}"
-		]
-	},
-
-
-	"csvcoli":{
-		"prefix":"csvcoli",
-		"body":[
-			"\\csvcoli"
-		]
-	},
-
-
-	"csvcolii":{
-		"prefix":"csvcolii",
-		"body":[
-			"\\csvcolii"
-		]
-	},
-
-
-	"csvcoliii":{
-		"prefix":"csvcoliii",
-		"body":[
-			"\\csvcoliii"
-		]
-	},
-
-
-	"csvcoliv":{
-		"prefix":"csvcoliv",
-		"body":[
-			"\\csvcoliv"
-		]
-	},
-
-
-	"csvcolv":{
-		"prefix":"csvcolv",
-		"body":[
-			"\\csvcolv"
-		]
-	},
-
-
-	"csvloop{}":{
-		"prefix":"csvloop",
-		"body":[
-			"\\csvloop{${1:options%keyvals}}"
-		]
-	},
-
-
-	"csvautotabular{}":{
-		"prefix":"csvautotabular",
-		"body":[
-			"\\csvautotabular{${1:file}}"
-		]
-	},
-
-
-	"csvautolongtable{}":{
-		"prefix":"csvautolongtable",
-		"body":[
-			"\\csvautolongtable{${1:file}}"
-		]
-	},
-
-
-	"csvautobooktabular{}":{
-		"prefix":"csvautobooktabular",
-		"body":[
-			"\\csvautobooktabular{${1:file}}"
-		]
-	},
-
-
-	"csvautobooklongtable{}":{
-		"prefix":"csvautobooklongtable",
-		"body":[
-			"\\csvautobooklongtable{${1:file}}"
-		]
-	},
-
-
-	"csvset{}":{
-		"prefix":"csvset",
-		"body":[
-			"\\csvset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"csvstyle{}{}":{
-		"prefix":"csvstyle",
-		"body":[
-			"\\csvstyle{${1:key name%specialDef}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"csvnames{}{}":{
-		"prefix":"csvnames",
-		"body":[
-			"\\csvnames{${1:key name%specialDef}}{${2:assignments%definition}}"
-		]
-	},
-
-
-	"csvheadset{}":{
-		"prefix":"csvheadset",
-		"body":[
-			"\\csvheadset{${1:assignments%definition}}"
-		]
-	},
-
-
-	"csviffirstrow{}{}":{
-		"prefix":"csviffirstrow",
-		"body":[
-			"\\csviffirstrow{${1:then}}{${2:else}}"
-		]
-	},
-
-
-	"csvifoddrow{}{}":{
-		"prefix":"csvifoddrow",
-		"body":[
-			"\\csvifoddrow{${1:then}}{${2:else}}"
-		]
-	},
-
-
-	"csvfilteraccept":{
-		"prefix":"csvfilteraccept",
-		"body":[
-			"\\csvfilteraccept"
-		]
-	},
-
-
-	"csvfilterreject":{
-		"prefix":"csvfilterreject",
-		"body":[
-			"\\csvfilterreject"
-		]
-	},
-
-
-	"csvline":{
-		"prefix":"csvline",
-		"body":[
-			"\\csvline"
-		]
-	},
-
-
-	"thecsvrow":{
-		"prefix":"thecsvrow",
-		"body":[
-			"\\thecsvrow"
-		]
-	},
-
-
-	"thecsvcol":{
-		"prefix":"thecsvcol",
-		"body":[
-			"\\thecsvcol"
-		]
-	},
-
-
-	"thecsvinputline":{
-		"prefix":"thecsvinputline",
-		"body":[
-			"\\thecsvinputline"
-		]
-	},
-
-
-	"csvlinetotablerow":{
-		"prefix":"csvlinetotablerow",
-		"body":[
-			"\\csvlinetotablerow"
-		]
-	},
-
-
-	"ifcsvstrcmp{}{}{}{}":{
-		"prefix":"ifcsvstrcmp",
-		"body":[
-			"\\ifcsvstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifcsvnotstrcmp{}{}{}{}":{
-		"prefix":"ifcsvnotstrcmp",
-		"body":[
-			"\\ifcsvnotstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifcsvstrequal{}{}{}{}":{
-		"prefix":"ifcsvstrequal",
-		"body":[
-			"\\ifcsvstrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifcsvprostrequal{}{}{}{}":{
-		"prefix":"ifcsvprostrequal",
-		"body":[
-			"\\ifcsvprostrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"tabularnewline":{
-		"prefix":"tabularnewline",
-		"body":[
-			"\\tabularnewline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +14,71 @@
 		"prefix":"csvreader",
 		"body":[
 			"\\csvreader[${4:options%keyvals}]{${1:file}}{${2:assignments}}{${3:command list%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvcoli":{
+		"prefix":"csvcoli",
+		"body":[
+			"\\csvcoli"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvcolii":{
+		"prefix":"csvcolii",
+		"body":[
+			"\\csvcolii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvcoliii":{
+		"prefix":"csvcoliii",
+		"body":[
+			"\\csvcoliii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvcoliv":{
+		"prefix":"csvcoliv",
+		"body":[
+			"\\csvcoliv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvcolv":{
+		"prefix":"csvcolv",
+		"body":[
+			"\\csvcolv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvloop{}":{
+		"prefix":"csvloop",
+		"body":[
+			"\\csvloop{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvautotabular{}":{
+		"prefix":"csvautotabular",
+		"body":[
+			"\\csvautotabular{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +86,17 @@
 		"prefix":"csvautotabular",
 		"body":[
 			"\\csvautotabular[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvautolongtable{}":{
+		"prefix":"csvautolongtable",
+		"body":[
+			"\\csvautolongtable{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +104,17 @@
 		"prefix":"csvautolongtable",
 		"body":[
 			"\\csvautolongtable[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvautobooktabular{}":{
+		"prefix":"csvautobooktabular",
+		"body":[
+			"\\csvautobooktabular{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +122,17 @@
 		"prefix":"csvautobooktabular",
 		"body":[
 			"\\csvautobooktabular[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvautobooklongtable{}":{
+		"prefix":"csvautobooklongtable",
+		"body":[
+			"\\csvautobooklongtable{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,6 +140,169 @@
 		"prefix":"csvautobooklongtable",
 		"body":[
 			"\\csvautobooklongtable[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvset{}":{
+		"prefix":"csvset",
+		"body":[
+			"\\csvset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvstyle{}{}":{
+		"prefix":"csvstyle",
+		"body":[
+			"\\csvstyle{${1:key name%specialDef}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvnames{}{}":{
+		"prefix":"csvnames",
+		"body":[
+			"\\csvnames{${1:key name%specialDef}}{${2:assignments%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvheadset{}":{
+		"prefix":"csvheadset",
+		"body":[
+			"\\csvheadset{${1:assignments%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csviffirstrow{}{}":{
+		"prefix":"csviffirstrow",
+		"body":[
+			"\\csviffirstrow{${1:then}}{${2:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvifoddrow{}{}":{
+		"prefix":"csvifoddrow",
+		"body":[
+			"\\csvifoddrow{${1:then}}{${2:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvfilteraccept":{
+		"prefix":"csvfilteraccept",
+		"body":[
+			"\\csvfilteraccept"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvfilterreject":{
+		"prefix":"csvfilterreject",
+		"body":[
+			"\\csvfilterreject"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvline":{
+		"prefix":"csvline",
+		"body":[
+			"\\csvline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thecsvrow":{
+		"prefix":"thecsvrow",
+		"body":[
+			"\\thecsvrow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thecsvcol":{
+		"prefix":"thecsvcol",
+		"body":[
+			"\\thecsvcol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thecsvinputline":{
+		"prefix":"thecsvinputline",
+		"body":[
+			"\\thecsvinputline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvlinetotablerow":{
+		"prefix":"csvlinetotablerow",
+		"body":[
+			"\\csvlinetotablerow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcsvstrcmp{}{}{}{}":{
+		"prefix":"ifcsvstrcmp",
+		"body":[
+			"\\ifcsvstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcsvnotstrcmp{}{}{}{}":{
+		"prefix":"ifcsvnotstrcmp",
+		"body":[
+			"\\ifcsvnotstrcmp{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcsvstrequal{}{}{}{}":{
+		"prefix":"ifcsvstrequal",
+		"body":[
+			"\\ifcsvstrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcsvprostrequal{}{}{}{}":{
+		"prefix":"ifcsvprostrequal",
+		"body":[
+			"\\ifcsvprostrequal{${1:stringA}}{${2:stringB}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tabularnewline":{
+		"prefix":"tabularnewline",
+		"body":[
+			"\\tabularnewline"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

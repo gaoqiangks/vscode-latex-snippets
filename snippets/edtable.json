@@ -1,22 +1,24 @@
 {
 
 
-	"edtable":{
+	"edtable{}{}":{
 		"prefix":"edtable",
 		"body":[
 			"\\begin{edtable}",
-				"\t$1",
+				"\t{${1:table envname}}{${2:preamble}}",
 			"\\end{edtable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"edtable":{
+	"edtable[]{}{}":{
 		"prefix":"edtable",
 		"body":[
 			"\\begin{edtable}",
-				"\t$1",
+				"\t[$ or $$%plain]{${1:array envname}}{${2:preamble}}",
 			"\\end{edtable}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

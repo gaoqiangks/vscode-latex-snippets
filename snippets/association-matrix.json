@@ -5,7 +5,8 @@
 		"prefix":"amxrow",
 		"body":[
 			"\\amxrow{${1:key%plain}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"amxcol",
 		"body":[
 			"\\amxcol{${1:key%plain}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"amxassociate",
 		"body":[
 			"\\amxassociate{${1:col-key}}{${2:row-key}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"amxrows",
 		"body":[
 			"\\amxrows"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"amxcols",
 		"body":[
 			"\\amxcols"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"amxrowtext",
 		"body":[
 			"\\amxrowtext{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"amxcoltext",
 		"body":[
 			"\\amxcoltext{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,63 +68,8 @@
 		"prefix":"amxgenerate",
 		"body":[
 			"\\amxgenerate"
-		]
-	},
-
-
-	"amxsetTopCorner{}":{
-		"prefix":"amxsetTopCorner",
-		"body":[
-			"\\amxsetTopCorner{${1:heading%text}}"
-		]
-	},
-
-
-	"amxsetColumnHeading{}":{
-		"prefix":"amxsetColumnHeading",
-		"body":[
-			"\\amxsetColumnHeading{${1:render-command}}"
-		]
-	},
-
-
-	"amxsetRowFormat{}":{
-		"prefix":"amxsetRowFormat",
-		"body":[
-			"\\amxsetRowFormat{${1:render-command}}"
-		]
-	},
-
-
-	"amxsetRowFormatHighlighted{}":{
-		"prefix":"amxsetRowFormatHighlighted",
-		"body":[
-			"\\amxsetRowFormatHighlighted{${1:render-command}}"
-		]
-	},
-
-
-	"amxsetIndicator{}":{
-		"prefix":"amxsetIndicator",
-		"body":[
-			"\\amxsetIndicator{${1:indicator}}"
-		]
-	},
-
-
-	"amxsetIndicatorHighlighted{}{}":{
-		"prefix":"amxsetIndicatorHighlighted",
-		"body":[
-			"\\amxsetIndicatorHighlighted{${1:hl-indicator}}{${2:ot-indicator}}"
-		]
-	},
-
-
-	"amxReset":{
-		"prefix":"amxReset",
-		"body":[
-			"\\amxReset"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +77,70 @@
 		"prefix":"amxgenerate",
 		"body":[
 			"\\amxgenerate[${1:row-key}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"amxsetTopCorner{}":{
+		"prefix":"amxsetTopCorner",
+		"body":[
+			"\\amxsetTopCorner{${1:heading%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxsetColumnHeading{}":{
+		"prefix":"amxsetColumnHeading",
+		"body":[
+			"\\amxsetColumnHeading{${1:render-command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxsetRowFormat{}":{
+		"prefix":"amxsetRowFormat",
+		"body":[
+			"\\amxsetRowFormat{${1:render-command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxsetRowFormatHighlighted{}":{
+		"prefix":"amxsetRowFormatHighlighted",
+		"body":[
+			"\\amxsetRowFormatHighlighted{${1:render-command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxsetIndicator{}":{
+		"prefix":"amxsetIndicator",
+		"body":[
+			"\\amxsetIndicator{${1:indicator}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxsetIndicatorHighlighted{}{}":{
+		"prefix":"amxsetIndicatorHighlighted",
+		"body":[
+			"\\amxsetIndicatorHighlighted{${1:hl-indicator}}{${2:ot-indicator}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amxReset":{
+		"prefix":"amxReset",
+		"body":[
+			"\\amxReset"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

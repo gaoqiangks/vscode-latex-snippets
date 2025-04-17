@@ -5,255 +5,8 @@
 		"prefix":"vref",
 		"body":[
 			"\\vref{${1:label}}"
-		]
-	},
-
-
-	"vpageref{}":{
-		"prefix":"vpageref",
-		"body":[
-			"\\vpageref{${1:label}}"
-		]
-	},
-
-
-	"vrefrange{}{}":{
-		"prefix":"vrefrange",
-		"body":[
-			"\\vrefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"vpagerefrange{}{}":{
-		"prefix":"vpagerefrange",
-		"body":[
-			"\\vpagerefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"vrefpagenum{}{}":{
-		"prefix":"vrefpagenum",
-		"body":[
-			"\\vrefpagenum{${1:cmd}}{${2:label%ref}}"
-		]
-	},
-
-
-	"vpagerefcompare{}{}{}{}":{
-		"prefix":"vpagerefcompare",
-		"body":[
-			"\\vpagerefcompare{${1:label1%ref}}{${2:label2%ref}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"vpagerefnearby{}{}{}":{
-		"prefix":"vpagerefnearby",
-		"body":[
-			"\\vpagerefnearby{${1:label}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"labelformat{}{}":{
-		"prefix":"labelformat",
-		"body":[
-			"\\labelformat{${1:counter}}{${2:argument}}"
-		]
-	},
-
-
-	"Vref{}":{
-		"prefix":"Vref",
-		"body":[
-			"\\Vref{${1:label}}"
-		]
-	},
-
-
-	"Ref{}":{
-		"prefix":"Ref",
-		"body":[
-			"\\Ref{${1:label}}"
-		]
-	},
-
-
-	"thevpagerefnum":{
-		"prefix":"thevpagerefnum",
-		"body":[
-			"\\thevpagerefnum"
-		]
-	},
-
-
-	"reftextbefore":{
-		"prefix":"reftextbefore",
-		"body":[
-			"\\reftextbefore"
-		]
-	},
-
-
-	"reftextfacebefore":{
-		"prefix":"reftextfacebefore",
-		"body":[
-			"\\reftextfacebefore"
-		]
-	},
-
-
-	"reftextafter":{
-		"prefix":"reftextafter",
-		"body":[
-			"\\reftextafter"
-		]
-	},
-
-
-	"reftextfaceafter":{
-		"prefix":"reftextfaceafter",
-		"body":[
-			"\\reftextfaceafter"
-		]
-	},
-
-
-	"reftextcurrent":{
-		"prefix":"reftextcurrent",
-		"body":[
-			"\\reftextcurrent"
-		]
-	},
-
-
-	"reftextfaraway{}":{
-		"prefix":"reftextfaraway",
-		"body":[
-			"\\reftextfaraway{${1:label}}"
-		]
-	},
-
-
-	"reftextvario{}{}":{
-		"prefix":"reftextvario",
-		"body":[
-			"\\reftextvario{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"reftextpagerange{}{}":{
-		"prefix":"reftextpagerange",
-		"body":[
-			"\\reftextpagerange{${1:label1%ref}}{${2:label2%ref}}"
-		]
-	},
-
-
-	"reftextlabelrange{}{}":{
-		"prefix":"reftextlabelrange",
-		"body":[
-			"\\reftextlabelrange{${1:label1%ref}}{${2:label2%ref}}"
-		]
-	},
-
-
-	"vrefformat":{
-		"prefix":"vrefformat",
-		"body":[
-			"\\vrefformat"
-		]
-	},
-
-
-	"Vrefformat":{
-		"prefix":"Vrefformat",
-		"body":[
-			"\\Vrefformat"
-		]
-	},
-
-
-	"vrefrangeformat":{
-		"prefix":"vrefrangeformat",
-		"body":[
-			"\\vrefrangeformat"
-		]
-	},
-
-
-	"fullrefformat":{
-		"prefix":"fullrefformat",
-		"body":[
-			"\\fullrefformat"
-		]
-	},
-
-
-	"vrefdefaultformat":{
-		"prefix":"vrefdefaultformat",
-		"body":[
-			"\\vrefdefaultformat"
-		]
-	},
-
-
-	"Vrefdefaultformat":{
-		"prefix":"Vrefdefaultformat",
-		"body":[
-			"\\Vrefdefaultformat"
-		]
-	},
-
-
-	"vrefrangedefaultformat":{
-		"prefix":"vrefrangedefaultformat",
-		"body":[
-			"\\vrefrangedefaultformat"
-		]
-	},
-
-
-	"fullrefdefaultformat":{
-		"prefix":"fullrefdefaultformat",
-		"body":[
-			"\\fullrefdefaultformat"
-		]
-	},
-
-
-	"vrefwarning":{
-		"prefix":"vrefwarning",
-		"body":[
-			"\\vrefwarning"
-		]
-	},
-
-
-	"vrefshowerrors":{
-		"prefix":"vrefshowerrors",
-		"body":[
-			"\\vrefshowerrors"
-		]
-	},
-
-
-	"fullref{}":{
-		"prefix":"fullref",
-		"body":[
-			"\\fullref{${1:label}}"
-		]
-	},
-
-
-	"vpagerefcomparenearby{}{}{}{}":{
-		"prefix":"vpagerefcomparenearby",
-		"body":[
-			"\\vpagerefcomparenearby{${1:label1%ref}}{${2:label2%ref}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +14,17 @@
 		"prefix":"*vref",
 		"body":[
 			"\\vref*{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"vpageref{}":{
+		"prefix":"vpageref",
+		"body":[
+			"\\vpageref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,47 +32,8 @@
 		"prefix":"*vpageref",
 		"body":[
 			"\\vpageref*{${1:label}}"
-		]
-	},
-
-
-	"vpageref*[]{}":{
-		"prefix":"*vpageref",
-		"body":[
-			"\\vpageref*[${2:samepage}]{${1:label}}"
-		]
-	},
-
-
-	"vpageref*[][]{}":{
-		"prefix":"*vpageref",
-		"body":[
-			"\\vpageref*[${2:samepage}][${3:otherpage}]{${1:label}}"
-		]
-	},
-
-
-	"vpagerefrange*{}{}":{
-		"prefix":"*vpagerefrange",
-		"body":[
-			"\\vpagerefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"vpagerefrange*[]{}{}":{
-		"prefix":"*vpagerefrange",
-		"body":[
-			"\\vpagerefrange*[${3:same page text}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"Vref*{}":{
-		"prefix":"*Vref",
-		"body":[
-			"\\Vref*{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -317,7 +41,17 @@
 		"prefix":"vpageref",
 		"body":[
 			"\\vpageref[${2:samepage}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vpageref*[]{}":{
+		"prefix":"*vpageref",
+		"body":[
+			"\\vpageref*[${2:samepage}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -325,7 +59,26 @@
 		"prefix":"vpageref",
 		"body":[
 			"\\vpageref[${2:samepage}][${3:otherpage}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vpageref*[][]{}":{
+		"prefix":"*vpageref",
+		"body":[
+			"\\vpageref*[${2:samepage}][${3:otherpage}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"vrefrange{}{}":{
+		"prefix":"vrefrange",
+		"body":[
+			"\\vrefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +86,26 @@
 		"prefix":"vrefrange",
 		"body":[
 			"\\vrefrange[${3:same page text}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vpagerefrange{}{}":{
+		"prefix":"vpagerefrange",
+		"body":[
+			"\\vpagerefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vpagerefrange*{}{}":{
+		"prefix":"*vpagerefrange",
+		"body":[
+			"\\vpagerefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -341,6 +113,277 @@
 		"prefix":"vpagerefrange",
 		"body":[
 			"\\vpagerefrange[${3:same page text}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vpagerefrange*[]{}{}":{
+		"prefix":"*vpagerefrange",
+		"body":[
+			"\\vpagerefrange*[${3:same page text}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"vrefpagenum{}{}":{
+		"prefix":"vrefpagenum",
+		"body":[
+			"\\vrefpagenum{${1:cmd}}{${2:label%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vpagerefcompare{}{}{}{}":{
+		"prefix":"vpagerefcompare",
+		"body":[
+			"\\vpagerefcompare{${1:label1%ref}}{${2:label2%ref}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vpagerefnearby{}{}{}":{
+		"prefix":"vpagerefnearby",
+		"body":[
+			"\\vpagerefnearby{${1:label}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelformat{}{}":{
+		"prefix":"labelformat",
+		"body":[
+			"\\labelformat{${1:counter}}{${2:argument}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vref{}":{
+		"prefix":"Vref",
+		"body":[
+			"\\Vref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vref*{}":{
+		"prefix":"*Vref",
+		"body":[
+			"\\Vref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Ref{}":{
+		"prefix":"Ref",
+		"body":[
+			"\\Ref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thevpagerefnum":{
+		"prefix":"thevpagerefnum",
+		"body":[
+			"\\thevpagerefnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextbefore":{
+		"prefix":"reftextbefore",
+		"body":[
+			"\\reftextbefore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextfacebefore":{
+		"prefix":"reftextfacebefore",
+		"body":[
+			"\\reftextfacebefore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextafter":{
+		"prefix":"reftextafter",
+		"body":[
+			"\\reftextafter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextfaceafter":{
+		"prefix":"reftextfaceafter",
+		"body":[
+			"\\reftextfaceafter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextcurrent":{
+		"prefix":"reftextcurrent",
+		"body":[
+			"\\reftextcurrent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextfaraway{}":{
+		"prefix":"reftextfaraway",
+		"body":[
+			"\\reftextfaraway{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextvario{}{}":{
+		"prefix":"reftextvario",
+		"body":[
+			"\\reftextvario{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextpagerange{}{}":{
+		"prefix":"reftextpagerange",
+		"body":[
+			"\\reftextpagerange{${1:label1%ref}}{${2:label2%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reftextlabelrange{}{}":{
+		"prefix":"reftextlabelrange",
+		"body":[
+			"\\reftextlabelrange{${1:label1%ref}}{${2:label2%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefformat":{
+		"prefix":"vrefformat",
+		"body":[
+			"\\vrefformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vrefformat":{
+		"prefix":"Vrefformat",
+		"body":[
+			"\\Vrefformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefrangeformat":{
+		"prefix":"vrefrangeformat",
+		"body":[
+			"\\vrefrangeformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullrefformat":{
+		"prefix":"fullrefformat",
+		"body":[
+			"\\fullrefformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefdefaultformat":{
+		"prefix":"vrefdefaultformat",
+		"body":[
+			"\\vrefdefaultformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vrefdefaultformat":{
+		"prefix":"Vrefdefaultformat",
+		"body":[
+			"\\Vrefdefaultformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefrangedefaultformat":{
+		"prefix":"vrefrangedefaultformat",
+		"body":[
+			"\\vrefrangedefaultformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullrefdefaultformat":{
+		"prefix":"fullrefdefaultformat",
+		"body":[
+			"\\fullrefdefaultformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefwarning":{
+		"prefix":"vrefwarning",
+		"body":[
+			"\\vrefwarning"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vrefshowerrors":{
+		"prefix":"vrefshowerrors",
+		"body":[
+			"\\vrefshowerrors"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullref{}":{
+		"prefix":"fullref",
+		"body":[
+			"\\fullref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vpagerefcomparenearby{}{}{}{}":{
+		"prefix":"vpagerefcomparenearby",
+		"body":[
+			"\\vpagerefcomparenearby{${1:label1%ref}}{${2:label2%ref}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

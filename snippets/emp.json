@@ -5,7 +5,8 @@
 		"prefix":"empuse",
 		"body":[
 			"\\empuse{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"empTeX",
 		"body":[
 			"\\empTeX{${1:LaTeX prelude%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"empaddtoTeX",
 		"body":[
 			"\\empaddtoTeX{${1:LaTeX code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"empprelude",
 		"body":[
 			"\\empprelude{${1:METAPOST prelude%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"empaddtoprelude",
 		"body":[
 			"\\empaddtoprelude{${1:METAPOST code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"empwrite",
 		"body":[
 			"\\empwrite{${1:METAPOST code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"theempfig",
 		"body":[
 			"\\theempfig"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"theempfile",
 		"body":[
 			"\\theempfile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,27 +79,63 @@
 			"\\begin{empfile}",
 				"\t$1",
 			"\\end{empfile}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"emp":{
+	"empfile[]":{
+		"prefix":"empfile",
+		"body":[
+			"\\begin{empfile}",
+				"\t[${1:METAPOST file%file}]",
+			"\\end{empfile}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"emp()":{
 		"prefix":"emp",
 		"body":[
 			"\\begin{emp}",
-				"\t$1",
+				"\t(${1:width},${2:height})",
 			"\\end{emp}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"empdef":{
+	"emp[]()":{
+		"prefix":"emp",
+		"body":[
+			"\\begin{emp}",
+				"\t[${1:name}](${2:width},${3:height})",
+			"\\end{emp}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"empdef()":{
 		"prefix":"empdef",
 		"body":[
 			"\\begin{empdef}",
-				"\t$1",
+				"\t(${1:width},${2:height})",
 			"\\end{empdef}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"empdef[]()":{
+		"prefix":"empdef",
+		"body":[
+			"\\begin{empdef}",
+				"\t[${1:name}](${2:width},${3:height})",
+			"\\end{empdef}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,56 +145,29 @@
 			"\\begin{empcmds}",
 				"\t$1",
 			"\\end{empcmds}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"empgraph":{
+	"empgraph()":{
 		"prefix":"empgraph",
 		"body":[
 			"\\begin{empgraph}",
-				"\t$1",
+				"\t(${1:width},${2:height})",
 			"\\end{empgraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"empfile":{
-		"prefix":"empfile",
-		"body":[
-			"\\begin{empfile}",
-				"\t$1",
-			"\\end{empfile}"
-		]
-	},
-
-
-	"emp":{
-		"prefix":"emp",
-		"body":[
-			"\\begin{emp}",
-				"\t$1",
-			"\\end{emp}"
-		]
-	},
-
-
-	"empdef":{
-		"prefix":"empdef",
-		"body":[
-			"\\begin{empdef}",
-				"\t$1",
-			"\\end{empdef}"
-		]
-	},
-
-
-	"empgraph":{
+	"empgraph[]()":{
 		"prefix":"empgraph",
 		"body":[
 			"\\begin{empgraph}",
-				"\t$1",
+				"\t[${1:name}](${2:width},${3:height})",
 			"\\end{empgraph}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

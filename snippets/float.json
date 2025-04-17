@@ -5,47 +5,8 @@
 		"prefix":"newfloat",
 		"body":[
 			"\\newfloat{${1:float type%envname}}{${2:placement}}{${3:ext}}"
-		]
-	},
-
-
-	"floatstyle{}":{
-		"prefix":"floatstyle",
-		"body":[
-			"\\floatstyle{${1:default style%keyvals}}"
-		]
-	},
-
-
-	"floatname{}{}":{
-		"prefix":"floatname",
-		"body":[
-			"\\floatname{${1:float type}}{${2:name}}"
-		]
-	},
-
-
-	"floatplacement{}{}":{
-		"prefix":"floatplacement",
-		"body":[
-			"\\floatplacement{${1:float type}}{${2:default placement}}"
-		]
-	},
-
-
-	"restylefloat{}":{
-		"prefix":"restylefloat",
-		"body":[
-			"\\restylefloat{${1:float type}}"
-		]
-	},
-
-
-	"listof{}{}":{
-		"prefix":"listof",
-		"body":[
-			"\\listof{${1:float type}}{${2:title}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +14,52 @@
 		"prefix":"newfloat",
 		"body":[
 			"\\newfloat{${1:float type%envname}}{${2:placement}}{${3:ext}}[${4:within}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"floatstyle{}":{
+		"prefix":"floatstyle",
+		"body":[
+			"\\floatstyle{${1:default style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"floatname{}{}":{
+		"prefix":"floatname",
+		"body":[
+			"\\floatname{${1:float type}}{${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"floatplacement{}{}":{
+		"prefix":"floatplacement",
+		"body":[
+			"\\floatplacement{${1:float type}}{${2:default placement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restylefloat{}":{
+		"prefix":"restylefloat",
+		"body":[
+			"\\restylefloat{${1:float type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listof{}{}":{
+		"prefix":"listof",
+		"body":[
+			"\\listof{${1:float type}}{${2:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

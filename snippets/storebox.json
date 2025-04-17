@@ -5,7 +5,8 @@
 		"prefix":"newstorebox",
 		"body":[
 			"\\newstorebox{${1:boxname%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"storebox",
 		"body":[
 			"\\storebox{${1:boxname}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"usestorebox",
 		"body":[
 			"\\usestorebox{${1:boxname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,16 +32,18 @@
 		"prefix":"ifstorebox",
 		"body":[
 			"\\ifstorebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"storebox":{
+	"storebox{}":{
 		"prefix":"storebox",
 		"body":[
 			"\\begin{storebox}",
-				"\t$1",
+				"\t{${1:boxname}}",
 			"\\end{storebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

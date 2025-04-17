@@ -5,7 +5,8 @@
 		"prefix":"logicpuzzlesetup",
 		"body":[
 			"\\logicpuzzlesetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"setcell",
 		"body":[
 			"\\setcell{${1:column}}{${2:row}}{${3:element}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"setcells",
 		"body":[
 			"\\setcells{${1:col1/row1,col2/row2,...}}{${2:element}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,1375 +32,8 @@
 		"prefix":"setbigcell",
 		"body":[
 			"\\setbigcell{${1:column}}{${2:row}}{${3:element}}"
-		]
-	},
-
-
-	"setrow{}{}":{
-		"prefix":"setrow",
-		"body":[
-			"\\setrow{${1:row}}{${2:element list}}"
-		]
-	},
-
-
-	"setcolorrow{}{}":{
-		"prefix":"setcolorrow",
-		"body":[
-			"\\setcolorrow{${1:row}}{${2:element list}}"
-		]
-	},
-
-
-	"setcolumn{}{}":{
-		"prefix":"setcolumn",
-		"body":[
-			"\\setcolumn{${1:column}}{${2:element list}}"
-		]
-	},
-
-
-	"setcolorcolumn{}{}":{
-		"prefix":"setcolorcolumn",
-		"body":[
-			"\\setcolorcolumn{${1:column}}{${2:element list}}"
-		]
-	},
-
-
-	"setrule{}{}{}":{
-		"prefix":"setrule",
-		"body":[
-			"\\setrule{${1:column}}{${2:row}}{${3:rule%formula}}"
-		]
-	},
-
-
-	"fillcell{}{}":{
-		"prefix":"fillcell",
-		"body":[
-			"\\fillcell{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"fillrow{}{}":{
-		"prefix":"fillrow",
-		"body":[
-			"\\fillrow{${1:row}}{${2:csv list of 0 and 1}}"
-		]
-	},
-
-
-	"fillcolumn{}{}":{
-		"prefix":"fillcolumn",
-		"body":[
-			"\\fillcolumn{${1:column}}{${2:csv list of 0 and 1}}"
-		]
-	},
-
-
-	"filldiagonals":{
-		"prefix":"filldiagonals",
-		"body":[
-			"\\filldiagonals"
-		]
-	},
-
-
-	"framearea{}{}":{
-		"prefix":"framearea",
-		"body":[
-			"\\framearea{${1:color}}{${2:TikZ path}}"
-		]
-	},
-
-
-	"fillarea{}{}":{
-		"prefix":"fillarea",
-		"body":[
-			"\\fillarea{${1:color}}{${2:TikZ path}}"
-		]
-	},
-
-
-	"colorarea{}{}":{
-		"prefix":"colorarea",
-		"body":[
-			"\\colorarea{${1:color}}{${2:TikZ path}}"
-		]
-	},
-
-
-	"framepuzzle":{
-		"prefix":"framepuzzle",
-		"body":[
-			"\\framepuzzle"
-		]
-	},
-
-
-	"tikzpath{}{}{}":{
-		"prefix":"tikzpath",
-		"body":[
-			"\\tikzpath{${1:column}}{${2:row}}{${3:direction list}}"
-		]
-	},
-
-
-	"xtikzpath{}{}{}":{
-		"prefix":"xtikzpath",
-		"body":[
-			"\\xtikzpath{${1:column}}{${2:row}}{${3:dir1/len1,dir2/len2,...}}"
-		]
-	},
-
-
-	"titleformat{}":{
-		"prefix":"titleformat",
-		"body":[
-			"\\titleformat{${1:format}}"
-		]
-	},
-
-
-	"puzzlecounter":{
-		"prefix":"puzzlecounter",
-		"body":[
-			"\\puzzlecounter"
-		]
-	},
-
-
-	"setpuzzlecounter{}":{
-		"prefix":"setpuzzlecounter",
-		"body":[
-			"\\setpuzzlecounter{${1:number}}"
-		]
-	},
-
-
-	"definecounterstyle{}{}":{
-		"prefix":"definecounterstyle",
-		"body":[
-			"\\definecounterstyle{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"setgridlinestyle{}":{
-		"prefix":"setgridlinestyle",
-		"body":[
-			"\\setgridlinestyle{${1:style}}"
-		]
-	},
-
-
-	"setnormallinewidth{}":{
-		"prefix":"setnormallinewidth",
-		"body":[
-			"\\setnormallinewidth{${1:width}}"
-		]
-	},
-
-
-	"setthicklinewidth{}":{
-		"prefix":"setthicklinewidth",
-		"body":[
-			"\\setthicklinewidth{${1:width}}"
-		]
-	},
-
-
-	"ddsudokucell{}{}{}":{
-		"prefix":"ddsudokucell",
-		"body":[
-			"\\ddsudokucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"ddsudokusetup{}":{
-		"prefix":"ddsudokusetup",
-		"body":[
-			"\\ddsudokusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"placeship{}{}{}{}":{
-		"prefix":"placeship",
-		"body":[
-			"\\placeship{${1:direction%keyvals}}{${2:column}}{${3:row}}{${4:length}}"
-		]
-	},
-
-
-	"placesegment{}{}{}":{
-		"prefix":"placesegment",
-		"body":[
-			"\\placesegment{${1:column}}{${2:row}}{${3:ship segment}}"
-		]
-	},
-
-
-	"Ship":{
-		"prefix":"Ship",
-		"body":[
-			"\\Ship"
-		]
-	},
-
-
-	"ShipC":{
-		"prefix":"ShipC",
-		"body":[
-			"\\ShipC"
-		]
-	},
-
-
-	"ShipL":{
-		"prefix":"ShipL",
-		"body":[
-			"\\ShipL"
-		]
-	},
-
-
-	"ShipR":{
-		"prefix":"ShipR",
-		"body":[
-			"\\ShipR"
-		]
-	},
-
-
-	"ShipB":{
-		"prefix":"ShipB",
-		"body":[
-			"\\ShipB"
-		]
-	},
-
-
-	"ShipT":{
-		"prefix":"ShipT",
-		"body":[
-			"\\ShipT"
-		]
-	},
-
-
-	"Island":{
-		"prefix":"Island",
-		"body":[
-			"\\Island"
-		]
-	},
-
-
-	"Water":{
-		"prefix":"Water",
-		"body":[
-			"\\Water"
-		]
-	},
-
-
-	"placewater{}{}":{
-		"prefix":"placewater",
-		"body":[
-			"\\placewater{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"placeisland{}{}":{
-		"prefix":"placeisland",
-		"body":[
-			"\\placeisland{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"shipH{}":{
-		"prefix":"shipH",
-		"body":[
-			"\\shipH{${1:number list}}"
-		]
-	},
-
-
-	"shipV{}":{
-		"prefix":"shipV",
-		"body":[
-			"\\shipV{${1:number list}}"
-		]
-	},
-
-
-	"shipbox{}":{
-		"prefix":"shipbox",
-		"body":[
-			"\\shipbox{${1:number list}}"
-		]
-	},
-
-
-	"battleshipsetup{}":{
-		"prefix":"battleshipsetup",
-		"body":[
-			"\\battleshipsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"classicgame{}":{
-		"prefix":"classicgame",
-		"body":[
-			"\\classicgame{${1:csv list}}"
-		]
-	},
-
-
-	"valueH{}":{
-		"prefix":"valueH",
-		"body":[
-			"\\valueH{${1:number list}}"
-		]
-	},
-
-
-	"valueV{}":{
-		"prefix":"valueV",
-		"body":[
-			"\\valueV{${1:number list}}"
-		]
-	},
-
-
-	"sumH{}":{
-		"prefix":"sumH",
-		"body":[
-			"\\sumH{${1:number list}}"
-		]
-	},
-
-
-	"sumV{}":{
-		"prefix":"sumV",
-		"body":[
-			"\\sumV{${1:number list}}"
-		]
-	},
-
-
-	"bokkususetup{}":{
-		"prefix":"bokkususetup",
-		"body":[
-			"\\bokkususetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"bridgesrow{}{}":{
-		"prefix":"bridgesrow",
-		"body":[
-			"\\bridgesrow{${1:row}}{${2:number list}}"
-		]
-	},
-
-
-	"bridgescolumn{}{}":{
-		"prefix":"bridgescolumn",
-		"body":[
-			"\\bridgescolumn{${1:column}}{${2:number list}}"
-		]
-	},
-
-
-	"bridge{}":{
-		"prefix":"bridge",
-		"body":[
-			"\\bridge{${1:TikZ path}}"
-		]
-	},
-
-
-	"bridgessetup{}":{
-		"prefix":"bridgessetup",
-		"body":[
-			"\\bridgessetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"chaossudokucell{}{}{}":{
-		"prefix":"chaossudokucell",
-		"body":[
-			"\\chaossudokucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"chaossudokusetup{}":{
-		"prefix":"chaossudokusetup",
-		"body":[
-			"\\chaossudokusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"fourwindscell{}{}{}":{
-		"prefix":"fourwindscell",
-		"body":[
-			"\\fourwindscell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"fourwindssetup{}":{
-		"prefix":"fourwindssetup",
-		"body":[
-			"\\fourwindssetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"hakyuucell{}{}{}":{
-		"prefix":"hakyuucell",
-		"body":[
-			"\\hakyuucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"hakyuusetup{}":{
-		"prefix":"hakyuusetup",
-		"body":[
-			"\\hakyuusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"hitorisetup{}":{
-		"prefix":"hitorisetup",
-		"body":[
-			"\\hitorisetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"kakurorow{}{}":{
-		"prefix":"kakurorow",
-		"body":[
-			"\\kakurorow{${1:row}}{${2:csv list}}"
-		]
-	},
-
-
-	"kakurocolumn{}{}":{
-		"prefix":"kakurocolumn",
-		"body":[
-			"\\kakurocolumn{${1:column}}{${2:csv list}}"
-		]
-	},
-
-
-	"KKR{}{}":{
-		"prefix":"KKR",
-		"body":[
-			"\\KKR{${1:sumV}}{${2:sumH}}"
-		]
-	},
-
-
-	"Black":{
-		"prefix":"Black",
-		"body":[
-			"\\Black"
-		]
-	},
-
-
-	"kakurosetup{}":{
-		"prefix":"kakurosetup",
-		"body":[
-			"\\kakurosetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"kendokucell{}{}{}":{
-		"prefix":"kendokucell",
-		"body":[
-			"\\kendokucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"kendokusetup{}":{
-		"prefix":"kendokusetup",
-		"body":[
-			"\\kendokusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"killersudokucell{}{}{}":{
-		"prefix":"killersudokucell",
-		"body":[
-			"\\killersudokucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"killersudokusetup{}":{
-		"prefix":"killersudokusetup",
-		"body":[
-			"\\killersudokusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"laserH{}":{
-		"prefix":"laserH",
-		"body":[
-			"\\laserH{${1:number list}}"
-		]
-	},
-
-
-	"laserV{}":{
-		"prefix":"laserV",
-		"body":[
-			"\\laserV{${1:number list}}"
-		]
-	},
-
-
-	"mirrorH{}":{
-		"prefix":"mirrorH",
-		"body":[
-			"\\mirrorH{${1:number list}}"
-		]
-	},
-
-
-	"mirrorV{}":{
-		"prefix":"mirrorV",
-		"body":[
-			"\\mirrorV{${1:number list}}"
-		]
-	},
-
-
-	"placearrow{}{}{}":{
-		"prefix":"placearrow",
-		"body":[
-			"\\placearrow{${1:column}}{${2:row}}{${3:direction%keyvals}}"
-		]
-	},
-
-
-	"placecross{}{}":{
-		"prefix":"placecross",
-		"body":[
-			"\\placecross{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"placemirror{}{}{}":{
-		"prefix":"placemirror",
-		"body":[
-			"\\placemirror{${1:column}}{${2:row}}{${3:direction%keyvals}}"
-		]
-	},
-
-
-	"laser{}":{
-		"prefix":"laser",
-		"body":[
-			"\\laser{${1:TikZ path}}"
-		]
-	},
-
-
-	"laserbeamsetup{}":{
-		"prefix":"laserbeamsetup",
-		"body":[
-			"\\laserbeamsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"magiclabyrinthcell{}{}{}":{
-		"prefix":"magiclabyrinthcell",
-		"body":[
-			"\\magiclabyrinthcell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"mlline{}":{
-		"prefix":"mlline",
-		"body":[
-			"\\mlline{${1:TikZ path}}"
-		]
-	},
-
-
-	"magiclabyrinthsetup{}":{
-		"prefix":"magiclabyrinthsetup",
-		"body":[
-			"\\magiclabyrinthsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"plusH{}":{
-		"prefix":"plusH",
-		"body":[
-			"\\plusH{${1:number list}}"
-		]
-	},
-
-
-	"minusH{}":{
-		"prefix":"minusH",
-		"body":[
-			"\\minusH{${1:number list}}"
-		]
-	},
-
-
-	"plusV{}":{
-		"prefix":"plusV",
-		"body":[
-			"\\plusV{${1:number list}}"
-		]
-	},
-
-
-	"minusV{}":{
-		"prefix":"minusV",
-		"body":[
-			"\\minusV{${1:number list}}"
-		]
-	},
-
-
-	"magnetsH{}":{
-		"prefix":"magnetsH",
-		"body":[
-			"\\magnetsH{${1:number list}}"
-		]
-	},
-
-
-	"magnetsV{}":{
-		"prefix":"magnetsV",
-		"body":[
-			"\\magnetsV{${1:number list}}"
-		]
-	},
-
-
-	"PMH{}":{
-		"prefix":"PMH",
-		"body":[
-			"\\PMH{${1:col1/row1,col2/row2,...}}"
-		]
-	},
-
-
-	"MPH{}":{
-		"prefix":"MPH",
-		"body":[
-			"\\MPH{${1:col1/row1,col2/row2,...}}"
-		]
-	},
-
-
-	"PMV{}":{
-		"prefix":"PMV",
-		"body":[
-			"\\PMV{${1:col1/row1,col2/row2,...}}"
-		]
-	},
-
-
-	"MPV{}":{
-		"prefix":"MPV",
-		"body":[
-			"\\MPV{${1:col1/row1,col2/row2,...}}"
-		]
-	},
-
-
-	"magnetssetup{}":{
-		"prefix":"magnetssetup",
-		"body":[
-			"\\magnetssetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"masyucell{}{}{}":{
-		"prefix":"masyucell",
-		"body":[
-			"\\masyucell{${1:column}}{${2:row}}{${3:element}}"
-		]
-	},
-
-
-	"MasyuW":{
-		"prefix":"MasyuW",
-		"body":[
-			"\\MasyuW"
-		]
-	},
-
-
-	"MasyuB":{
-		"prefix":"MasyuB",
-		"body":[
-			"\\MasyuB"
-		]
-	},
-
-
-	"masyuline{}":{
-		"prefix":"masyuline",
-		"body":[
-			"\\masyuline{${1:TikZ path}}"
-		]
-	},
-
-
-	"masyusetup{}":{
-		"prefix":"masyusetup",
-		"body":[
-			"\\masyusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"Mine":{
-		"prefix":"Mine",
-		"body":[
-			"\\Mine"
-		]
-	},
-
-
-	"minesweepersetup{}":{
-		"prefix":"minesweepersetup",
-		"body":[
-			"\\minesweepersetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"nonogramrow{}{}":{
-		"prefix":"nonogramrow",
-		"body":[
-			"\\nonogramrow{${1:row}}{${2:col1/len1,col2/len2,...}}"
-		]
-	},
-
-
-	"nonogramcolumn{}{}":{
-		"prefix":"nonogramcolumn",
-		"body":[
-			"\\nonogramcolumn{${1:column}}{${2:row1/len1,row2/len2,...}}"
-		]
-	},
-
-
-	"nonogramV{}":{
-		"prefix":"nonogramV",
-		"body":[
-			"\\nonogramV{${1:csv list}}"
-		]
-	},
-
-
-	"nonogramH{}":{
-		"prefix":"nonogramH",
-		"body":[
-			"\\nonogramH{${1:csv list}}"
-		]
-	},
-
-
-	"puzzlestrut":{
-		"prefix":"puzzlestrut",
-		"body":[
-			"\\puzzlestrut"
-		]
-	},
-
-
-	"nonogramsetup{}":{
-		"prefix":"nonogramsetup",
-		"body":[
-			"\\nonogramsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"numberlinkcell{}{}{}":{
-		"prefix":"numberlinkcell",
-		"body":[
-			"\\numberlinkcell{${1:column}}{${2:row}}{${3:element}}"
-		]
-	},
-
-
-	"link{}":{
-		"prefix":"link",
-		"body":[
-			"\\link{${1:TikZ path}}"
-		]
-	},
-
-
-	"numberlinksetup{}":{
-		"prefix":"numberlinksetup",
-		"body":[
-			"\\numberlinksetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"resukocell{}{}{}":{
-		"prefix":"resukocell",
-		"body":[
-			"\\resukocell{${1:column}}{${2:row}}{${3:element}}"
-		]
-	},
-
-
-	"Straight":{
-		"prefix":"Straight",
-		"body":[
-			"\\Straight"
-		]
-	},
-
-
-	"StraightH":{
-		"prefix":"StraightH",
-		"body":[
-			"\\StraightH"
-		]
-	},
-
-
-	"StraightV":{
-		"prefix":"StraightV",
-		"body":[
-			"\\StraightV"
-		]
-	},
-
-
-	"Cross":{
-		"prefix":"Cross",
-		"body":[
-			"\\Cross"
-		]
-	},
-
-
-	"CrossH":{
-		"prefix":"CrossH",
-		"body":[
-			"\\CrossH"
-		]
-	},
-
-
-	"CrossV":{
-		"prefix":"CrossV",
-		"body":[
-			"\\CrossV"
-		]
-	},
-
-
-	"CurveTL":{
-		"prefix":"CurveTL",
-		"body":[
-			"\\CurveTL"
-		]
-	},
-
-
-	"CurveTR":{
-		"prefix":"CurveTR",
-		"body":[
-			"\\CurveTR"
-		]
-	},
-
-
-	"CurveBL":{
-		"prefix":"CurveBL",
-		"body":[
-			"\\CurveBL"
-		]
-	},
-
-
-	"CurveBR":{
-		"prefix":"CurveBR",
-		"body":[
-			"\\CurveBR"
-		]
-	},
-
-
-	"Graveltrap":{
-		"prefix":"Graveltrap",
-		"body":[
-			"\\Graveltrap"
-		]
-	},
-
-
-	"pitlane{}{}{}":{
-		"prefix":"pitlane",
-		"body":[
-			"\\pitlane{${1:column}}{${2:row}}{${3:direction%keyvals}}"
-		]
-	},
-
-
-	"parkinglot{}{}":{
-		"prefix":"parkinglot",
-		"body":[
-			"\\parkinglot{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"trackH{}":{
-		"prefix":"trackH",
-		"body":[
-			"\\trackH{${1:csv list}}"
-		]
-	},
-
-
-	"trackV{}":{
-		"prefix":"trackV",
-		"body":[
-			"\\trackV{${1:csv list}}"
-		]
-	},
-
-
-	"track{}":{
-		"prefix":"track",
-		"body":[
-			"\\track{${1:TikZ path}}"
-		]
-	},
-
-
-	"resukosetup{}":{
-		"prefix":"resukosetup",
-		"body":[
-			"\\resukosetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"Diamond":{
-		"prefix":"Diamond",
-		"body":[
-			"\\Diamond"
-		]
-	},
-
-
-	"schatzsuchesetup{}":{
-		"prefix":"schatzsuchesetup",
-		"body":[
-			"\\schatzsuchesetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"skylineT{}":{
-		"prefix":"skylineT",
-		"body":[
-			"\\skylineT{${1:number list}}"
-		]
-	},
-
-
-	"skylineB{}":{
-		"prefix":"skylineB",
-		"body":[
-			"\\skylineB{${1:number list}}"
-		]
-	},
-
-
-	"skylineL{}":{
-		"prefix":"skylineL",
-		"body":[
-			"\\skylineL{${1:number list}}"
-		]
-	},
-
-
-	"skylineR{}":{
-		"prefix":"skylineR",
-		"body":[
-			"\\skylineR{${1:number list}}"
-		]
-	},
-
-
-	"skylinecell{}{}{}":{
-		"prefix":"skylinecell",
-		"body":[
-			"\\skylinecell{${1:column}}{${2:row}}{${3:height}}"
-		]
-	},
-
-
-	"skylinesetup{}":{
-		"prefix":"skylinesetup",
-		"body":[
-			"\\skylinesetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"slitherlinkcell{}{}{}":{
-		"prefix":"slitherlinkcell",
-		"body":[
-			"\\slitherlinkcell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"slitherlinksetup{}":{
-		"prefix":"slitherlinksetup",
-		"body":[
-			"\\slitherlinksetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"starbattlecell{}{}{}":{
-		"prefix":"starbattlecell",
-		"body":[
-			"\\starbattlecell{${1:column}}{${2:row}}{${3:element}}"
-		]
-	},
-
-
-	"starbattlesetup{}":{
-		"prefix":"starbattlesetup",
-		"body":[
-			"\\starbattlesetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"starsH{}":{
-		"prefix":"starsH",
-		"body":[
-			"\\starsH{${1:number list}}"
-		]
-	},
-
-
-	"starsV{}":{
-		"prefix":"starsV",
-		"body":[
-			"\\starsV{${1:number list}}"
-		]
-	},
-
-
-	"Star":{
-		"prefix":"Star",
-		"body":[
-			"\\Star"
-		]
-	},
-
-
-	"Right":{
-		"prefix":"Right",
-		"body":[
-			"\\Right"
-		]
-	},
-
-
-	"RightUp":{
-		"prefix":"RightUp",
-		"body":[
-			"\\RightUp"
-		]
-	},
-
-
-	"Up":{
-		"prefix":"Up",
-		"body":[
-			"\\Up"
-		]
-	},
-
-
-	"LeftUp":{
-		"prefix":"LeftUp",
-		"body":[
-			"\\LeftUp"
-		]
-	},
-
-
-	"Left":{
-		"prefix":"Left",
-		"body":[
-			"\\Left"
-		]
-	},
-
-
-	"LeftDown":{
-		"prefix":"LeftDown",
-		"body":[
-			"\\LeftDown"
-		]
-	},
-
-
-	"Down":{
-		"prefix":"Down",
-		"body":[
-			"\\Down"
-		]
-	},
-
-
-	"RightDown":{
-		"prefix":"RightDown",
-		"body":[
-			"\\RightDown"
-		]
-	},
-
-
-	"starsandarrowssetup{}":{
-		"prefix":"starsandarrowssetup",
-		"body":[
-			"\\starsandarrowssetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"lpsudokucell{}{}{}":{
-		"prefix":"lpsudokucell",
-		"body":[
-			"\\lpsudokucell{${1:column}}{${2:row}}{${3:number}}"
-		]
-	},
-
-
-	"lpsudokusetup{}":{
-		"prefix":"lpsudokusetup",
-		"body":[
-			"\\lpsudokusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"Cloud":{
-		"prefix":"Cloud",
-		"body":[
-			"\\Cloud"
-		]
-	},
-
-
-	"Moon":{
-		"prefix":"Moon",
-		"body":[
-			"\\Moon"
-		]
-	},
-
-
-	"MoonT":{
-		"prefix":"MoonT",
-		"body":[
-			"\\MoonT"
-		]
-	},
-
-
-	"MoonB":{
-		"prefix":"MoonB",
-		"body":[
-			"\\MoonB"
-		]
-	},
-
-
-	"MoonR":{
-		"prefix":"MoonR",
-		"body":[
-			"\\MoonR"
-		]
-	},
-
-
-	"MoonL":{
-		"prefix":"MoonL",
-		"body":[
-			"\\MoonL"
-		]
-	},
-
-
-	"MoonTR":{
-		"prefix":"MoonTR",
-		"body":[
-			"\\MoonTR"
-		]
-	},
-
-
-	"MoonTL":{
-		"prefix":"MoonTL",
-		"body":[
-			"\\MoonTL"
-		]
-	},
-
-
-	"MoonBR":{
-		"prefix":"MoonBR",
-		"body":[
-			"\\MoonBR"
-		]
-	},
-
-
-	"MoonBL":{
-		"prefix":"MoonBL",
-		"body":[
-			"\\MoonBL"
-		]
-	},
-
-
-	"sunandmoonsetup{}":{
-		"prefix":"sunandmoonsetup",
-		"body":[
-			"\\sunandmoonsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"tentH{}":{
-		"prefix":"tentH",
-		"body":[
-			"\\tentH{${1:number list}}"
-		]
-	},
-
-
-	"tentV{}":{
-		"prefix":"tentV",
-		"body":[
-			"\\tentV{${1:number list}}"
-		]
-	},
-
-
-	"Tree":{
-		"prefix":"Tree",
-		"body":[
-			"\\Tree"
-		]
-	},
-
-
-	"Tent":{
-		"prefix":"Tent",
-		"body":[
-			"\\Tent"
-		]
-	},
-
-
-	"tentsandtreessetup{}":{
-		"prefix":"tentsandtreessetup",
-		"body":[
-			"\\tentsandtreessetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"tunnelH{}":{
-		"prefix":"tunnelH",
-		"body":[
-			"\\tunnelH{${1:number list}}"
-		]
-	},
-
-
-	"tunnelV{}":{
-		"prefix":"tunnelV",
-		"body":[
-			"\\tunnelV{${1:number list}}"
-		]
-	},
-
-
-	"portal{}{}":{
-		"prefix":"portal",
-		"body":[
-			"\\portal{${1:column}}{${2:row}}"
-		]
-	},
-
-
-	"tube{}":{
-		"prefix":"tube",
-		"body":[
-			"\\tube{${1:TikZ path}}"
-		]
-	},
-
-
-	"tunnelsetup{}":{
-		"prefix":"tunnelsetup",
-		"body":[
-			"\\tunnelsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setTikZpreset{}":{
-		"prefix":"setTikZpreset",
-		"body":[
-			"\\setTikZpreset{${1:TikZ keys}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +41,89 @@
 		"prefix":"setbigcell",
 		"body":[
 			"\\setbigcell[${4:fontsize}]{${1:column}}{${2:row}}{${3:element}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setrow{}{}":{
+		"prefix":"setrow",
+		"body":[
+			"\\setrow{${1:row}}{${2:element list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setcolorrow{}{}":{
+		"prefix":"setcolorrow",
+		"body":[
+			"\\setcolorrow{${1:row}}{${2:element list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setcolumn{}{}":{
+		"prefix":"setcolumn",
+		"body":[
+			"\\setcolumn{${1:column}}{${2:element list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setcolorcolumn{}{}":{
+		"prefix":"setcolorcolumn",
+		"body":[
+			"\\setcolorcolumn{${1:column}}{${2:element list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setrule{}{}{}":{
+		"prefix":"setrule",
+		"body":[
+			"\\setrule{${1:column}}{${2:row}}{${3:rule%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fillcell{}{}":{
+		"prefix":"fillcell",
+		"body":[
+			"\\fillcell{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fillrow{}{}":{
+		"prefix":"fillrow",
+		"body":[
+			"\\fillrow{${1:row}}{${2:csv list of 0 and 1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fillcolumn{}{}":{
+		"prefix":"fillcolumn",
+		"body":[
+			"\\fillcolumn{${1:column}}{${2:csv list of 0 and 1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filldiagonals":{
+		"prefix":"filldiagonals",
+		"body":[
+			"\\filldiagonals"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +131,44 @@
 		"prefix":"filldiagonals",
 		"body":[
 			"\\filldiagonals[${1:color}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"framearea{}{}":{
+		"prefix":"framearea",
+		"body":[
+			"\\framearea{${1:color}}{${2:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fillarea{}{}":{
+		"prefix":"fillarea",
+		"body":[
+			"\\fillarea{${1:color}}{${2:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"colorarea{}{}":{
+		"prefix":"colorarea",
+		"body":[
+			"\\colorarea{${1:color}}{${2:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"framepuzzle":{
+		"prefix":"framepuzzle",
+		"body":[
+			"\\framepuzzle"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1421,7 +176,332 @@
 		"prefix":"framepuzzle",
 		"body":[
 			"\\framepuzzle[${1:color}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzpath{}{}{}":{
+		"prefix":"tikzpath",
+		"body":[
+			"\\tikzpath{${1:column}}{${2:row}}{${3:direction list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xtikzpath{}{}{}":{
+		"prefix":"xtikzpath",
+		"body":[
+			"\\xtikzpath{${1:column}}{${2:row}}{${3:dir1/len1,dir2/len2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleformat{}":{
+		"prefix":"titleformat",
+		"body":[
+			"\\titleformat{${1:format}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"puzzlecounter":{
+		"prefix":"puzzlecounter",
+		"body":[
+			"\\puzzlecounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpuzzlecounter{}":{
+		"prefix":"setpuzzlecounter",
+		"body":[
+			"\\setpuzzlecounter{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definecounterstyle{}{}":{
+		"prefix":"definecounterstyle",
+		"body":[
+			"\\definecounterstyle{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setgridlinestyle{}":{
+		"prefix":"setgridlinestyle",
+		"body":[
+			"\\setgridlinestyle{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setnormallinewidth{}":{
+		"prefix":"setnormallinewidth",
+		"body":[
+			"\\setnormallinewidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setthicklinewidth{}":{
+		"prefix":"setthicklinewidth",
+		"body":[
+			"\\setthicklinewidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddsudokucell{}{}{}":{
+		"prefix":"ddsudokucell",
+		"body":[
+			"\\ddsudokucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddsudokusetup{}":{
+		"prefix":"ddsudokusetup",
+		"body":[
+			"\\ddsudokusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placeship{}{}{}{}":{
+		"prefix":"placeship",
+		"body":[
+			"\\placeship{${1:direction%keyvals}}{${2:column}}{${3:row}}{${4:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placesegment{}{}{}":{
+		"prefix":"placesegment",
+		"body":[
+			"\\placesegment{${1:column}}{${2:row}}{${3:ship segment}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ship":{
+		"prefix":"Ship",
+		"body":[
+			"\\Ship"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShipC":{
+		"prefix":"ShipC",
+		"body":[
+			"\\ShipC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShipL":{
+		"prefix":"ShipL",
+		"body":[
+			"\\ShipL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShipR":{
+		"prefix":"ShipR",
+		"body":[
+			"\\ShipR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShipB":{
+		"prefix":"ShipB",
+		"body":[
+			"\\ShipB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShipT":{
+		"prefix":"ShipT",
+		"body":[
+			"\\ShipT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Island":{
+		"prefix":"Island",
+		"body":[
+			"\\Island"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Water":{
+		"prefix":"Water",
+		"body":[
+			"\\Water"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placewater{}{}":{
+		"prefix":"placewater",
+		"body":[
+			"\\placewater{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placeisland{}{}":{
+		"prefix":"placeisland",
+		"body":[
+			"\\placeisland{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shipH{}":{
+		"prefix":"shipH",
+		"body":[
+			"\\shipH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shipV{}":{
+		"prefix":"shipV",
+		"body":[
+			"\\shipV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shipbox{}":{
+		"prefix":"shipbox",
+		"body":[
+			"\\shipbox{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"battleshipsetup{}":{
+		"prefix":"battleshipsetup",
+		"body":[
+			"\\battleshipsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"classicgame{}":{
+		"prefix":"classicgame",
+		"body":[
+			"\\classicgame{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"valueH{}":{
+		"prefix":"valueH",
+		"body":[
+			"\\valueH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"valueV{}":{
+		"prefix":"valueV",
+		"body":[
+			"\\valueV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sumH{}":{
+		"prefix":"sumH",
+		"body":[
+			"\\sumH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sumV{}":{
+		"prefix":"sumV",
+		"body":[
+			"\\sumV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bokkususetup{}":{
+		"prefix":"bokkususetup",
+		"body":[
+			"\\bokkususetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bridgesrow{}{}":{
+		"prefix":"bridgesrow",
+		"body":[
+			"\\bridgesrow{${1:row}}{${2:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bridgescolumn{}{}":{
+		"prefix":"bridgescolumn",
+		"body":[
+			"\\bridgescolumn{${1:column}}{${2:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bridge{}":{
+		"prefix":"bridge",
+		"body":[
+			"\\bridge{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1429,7 +509,233 @@
 		"prefix":"bridge",
 		"body":[
 			"\\bridge[${2:options}]{${1:TikZ path}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bridgessetup{}":{
+		"prefix":"bridgessetup",
+		"body":[
+			"\\bridgessetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaossudokucell{}{}{}":{
+		"prefix":"chaossudokucell",
+		"body":[
+			"\\chaossudokucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaossudokusetup{}":{
+		"prefix":"chaossudokusetup",
+		"body":[
+			"\\chaossudokusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fourwindscell{}{}{}":{
+		"prefix":"fourwindscell",
+		"body":[
+			"\\fourwindscell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fourwindssetup{}":{
+		"prefix":"fourwindssetup",
+		"body":[
+			"\\fourwindssetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hakyuucell{}{}{}":{
+		"prefix":"hakyuucell",
+		"body":[
+			"\\hakyuucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hakyuusetup{}":{
+		"prefix":"hakyuusetup",
+		"body":[
+			"\\hakyuusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hitorisetup{}":{
+		"prefix":"hitorisetup",
+		"body":[
+			"\\hitorisetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kakurorow{}{}":{
+		"prefix":"kakurorow",
+		"body":[
+			"\\kakurorow{${1:row}}{${2:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kakurocolumn{}{}":{
+		"prefix":"kakurocolumn",
+		"body":[
+			"\\kakurocolumn{${1:column}}{${2:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"KKR{}{}":{
+		"prefix":"KKR",
+		"body":[
+			"\\KKR{${1:sumV}}{${2:sumH}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Black":{
+		"prefix":"Black",
+		"body":[
+			"\\Black"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kakurosetup{}":{
+		"prefix":"kakurosetup",
+		"body":[
+			"\\kakurosetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kendokucell{}{}{}":{
+		"prefix":"kendokucell",
+		"body":[
+			"\\kendokucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kendokusetup{}":{
+		"prefix":"kendokusetup",
+		"body":[
+			"\\kendokusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"killersudokucell{}{}{}":{
+		"prefix":"killersudokucell",
+		"body":[
+			"\\killersudokucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"killersudokusetup{}":{
+		"prefix":"killersudokusetup",
+		"body":[
+			"\\killersudokusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"laserH{}":{
+		"prefix":"laserH",
+		"body":[
+			"\\laserH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"laserV{}":{
+		"prefix":"laserV",
+		"body":[
+			"\\laserV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mirrorH{}":{
+		"prefix":"mirrorH",
+		"body":[
+			"\\mirrorH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mirrorV{}":{
+		"prefix":"mirrorV",
+		"body":[
+			"\\mirrorV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placearrow{}{}{}":{
+		"prefix":"placearrow",
+		"body":[
+			"\\placearrow{${1:column}}{${2:row}}{${3:direction%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placecross{}{}":{
+		"prefix":"placecross",
+		"body":[
+			"\\placecross{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placemirror{}{}{}":{
+		"prefix":"placemirror",
+		"body":[
+			"\\placemirror{${1:column}}{${2:row}}{${3:direction%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"laser{}":{
+		"prefix":"laser",
+		"body":[
+			"\\laser{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1437,7 +743,881 @@
 		"prefix":"laser",
 		"body":[
 			"\\laser[${2:color}]{${1:TikZ path}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"laserbeamsetup{}":{
+		"prefix":"laserbeamsetup",
+		"body":[
+			"\\laserbeamsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magiclabyrinthcell{}{}{}":{
+		"prefix":"magiclabyrinthcell",
+		"body":[
+			"\\magiclabyrinthcell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mlline{}":{
+		"prefix":"mlline",
+		"body":[
+			"\\mlline{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magiclabyrinthsetup{}":{
+		"prefix":"magiclabyrinthsetup",
+		"body":[
+			"\\magiclabyrinthsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"plusH{}":{
+		"prefix":"plusH",
+		"body":[
+			"\\plusH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minusH{}":{
+		"prefix":"minusH",
+		"body":[
+			"\\minusH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"plusV{}":{
+		"prefix":"plusV",
+		"body":[
+			"\\plusV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minusV{}":{
+		"prefix":"minusV",
+		"body":[
+			"\\minusV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magnetsH{}":{
+		"prefix":"magnetsH",
+		"body":[
+			"\\magnetsH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magnetsV{}":{
+		"prefix":"magnetsV",
+		"body":[
+			"\\magnetsV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PMH{}":{
+		"prefix":"PMH",
+		"body":[
+			"\\PMH{${1:col1/row1,col2/row2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPH{}":{
+		"prefix":"MPH",
+		"body":[
+			"\\MPH{${1:col1/row1,col2/row2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PMV{}":{
+		"prefix":"PMV",
+		"body":[
+			"\\PMV{${1:col1/row1,col2/row2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MPV{}":{
+		"prefix":"MPV",
+		"body":[
+			"\\MPV{${1:col1/row1,col2/row2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magnetssetup{}":{
+		"prefix":"magnetssetup",
+		"body":[
+			"\\magnetssetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"masyucell{}{}{}":{
+		"prefix":"masyucell",
+		"body":[
+			"\\masyucell{${1:column}}{${2:row}}{${3:element}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MasyuW":{
+		"prefix":"MasyuW",
+		"body":[
+			"\\MasyuW"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MasyuB":{
+		"prefix":"MasyuB",
+		"body":[
+			"\\MasyuB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"masyuline{}":{
+		"prefix":"masyuline",
+		"body":[
+			"\\masyuline{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"masyusetup{}":{
+		"prefix":"masyusetup",
+		"body":[
+			"\\masyusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Mine":{
+		"prefix":"Mine",
+		"body":[
+			"\\Mine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minesweepersetup{}":{
+		"prefix":"minesweepersetup",
+		"body":[
+			"\\minesweepersetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogramrow{}{}":{
+		"prefix":"nonogramrow",
+		"body":[
+			"\\nonogramrow{${1:row}}{${2:col1/len1,col2/len2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogramcolumn{}{}":{
+		"prefix":"nonogramcolumn",
+		"body":[
+			"\\nonogramcolumn{${1:column}}{${2:row1/len1,row2/len2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogramV{}":{
+		"prefix":"nonogramV",
+		"body":[
+			"\\nonogramV{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogramH{}":{
+		"prefix":"nonogramH",
+		"body":[
+			"\\nonogramH{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"puzzlestrut":{
+		"prefix":"puzzlestrut",
+		"body":[
+			"\\puzzlestrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogramsetup{}":{
+		"prefix":"nonogramsetup",
+		"body":[
+			"\\nonogramsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numberlinkcell{}{}{}":{
+		"prefix":"numberlinkcell",
+		"body":[
+			"\\numberlinkcell{${1:column}}{${2:row}}{${3:element}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"link{}":{
+		"prefix":"link",
+		"body":[
+			"\\link{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numberlinksetup{}":{
+		"prefix":"numberlinksetup",
+		"body":[
+			"\\numberlinksetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resukocell{}{}{}":{
+		"prefix":"resukocell",
+		"body":[
+			"\\resukocell{${1:column}}{${2:row}}{${3:element}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Straight":{
+		"prefix":"Straight",
+		"body":[
+			"\\Straight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StraightH":{
+		"prefix":"StraightH",
+		"body":[
+			"\\StraightH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StraightV":{
+		"prefix":"StraightV",
+		"body":[
+			"\\StraightV"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cross":{
+		"prefix":"Cross",
+		"body":[
+			"\\Cross"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CrossH":{
+		"prefix":"CrossH",
+		"body":[
+			"\\CrossH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CrossV":{
+		"prefix":"CrossV",
+		"body":[
+			"\\CrossV"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurveTL":{
+		"prefix":"CurveTL",
+		"body":[
+			"\\CurveTL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurveTR":{
+		"prefix":"CurveTR",
+		"body":[
+			"\\CurveTR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurveBL":{
+		"prefix":"CurveBL",
+		"body":[
+			"\\CurveBL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurveBR":{
+		"prefix":"CurveBR",
+		"body":[
+			"\\CurveBR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Graveltrap":{
+		"prefix":"Graveltrap",
+		"body":[
+			"\\Graveltrap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pitlane{}{}{}":{
+		"prefix":"pitlane",
+		"body":[
+			"\\pitlane{${1:column}}{${2:row}}{${3:direction%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parkinglot{}{}":{
+		"prefix":"parkinglot",
+		"body":[
+			"\\parkinglot{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trackH{}":{
+		"prefix":"trackH",
+		"body":[
+			"\\trackH{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trackV{}":{
+		"prefix":"trackV",
+		"body":[
+			"\\trackV{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"track{}":{
+		"prefix":"track",
+		"body":[
+			"\\track{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resukosetup{}":{
+		"prefix":"resukosetup",
+		"body":[
+			"\\resukosetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Diamond":{
+		"prefix":"Diamond",
+		"body":[
+			"\\Diamond"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"schatzsuchesetup{}":{
+		"prefix":"schatzsuchesetup",
+		"body":[
+			"\\schatzsuchesetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylineT{}":{
+		"prefix":"skylineT",
+		"body":[
+			"\\skylineT{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylineB{}":{
+		"prefix":"skylineB",
+		"body":[
+			"\\skylineB{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylineL{}":{
+		"prefix":"skylineL",
+		"body":[
+			"\\skylineL{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylineR{}":{
+		"prefix":"skylineR",
+		"body":[
+			"\\skylineR{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylinecell{}{}{}":{
+		"prefix":"skylinecell",
+		"body":[
+			"\\skylinecell{${1:column}}{${2:row}}{${3:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skylinesetup{}":{
+		"prefix":"skylinesetup",
+		"body":[
+			"\\skylinesetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slitherlinkcell{}{}{}":{
+		"prefix":"slitherlinkcell",
+		"body":[
+			"\\slitherlinkcell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slitherlinksetup{}":{
+		"prefix":"slitherlinksetup",
+		"body":[
+			"\\slitherlinksetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starbattlecell{}{}{}":{
+		"prefix":"starbattlecell",
+		"body":[
+			"\\starbattlecell{${1:column}}{${2:row}}{${3:element}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starbattlesetup{}":{
+		"prefix":"starbattlesetup",
+		"body":[
+			"\\starbattlesetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starsH{}":{
+		"prefix":"starsH",
+		"body":[
+			"\\starsH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starsV{}":{
+		"prefix":"starsV",
+		"body":[
+			"\\starsV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Star":{
+		"prefix":"Star",
+		"body":[
+			"\\Star"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Right":{
+		"prefix":"Right",
+		"body":[
+			"\\Right"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RightUp":{
+		"prefix":"RightUp",
+		"body":[
+			"\\RightUp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Up":{
+		"prefix":"Up",
+		"body":[
+			"\\Up"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftUp":{
+		"prefix":"LeftUp",
+		"body":[
+			"\\LeftUp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Left":{
+		"prefix":"Left",
+		"body":[
+			"\\Left"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftDown":{
+		"prefix":"LeftDown",
+		"body":[
+			"\\LeftDown"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Down":{
+		"prefix":"Down",
+		"body":[
+			"\\Down"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RightDown":{
+		"prefix":"RightDown",
+		"body":[
+			"\\RightDown"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starsandarrowssetup{}":{
+		"prefix":"starsandarrowssetup",
+		"body":[
+			"\\starsandarrowssetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpsudokucell{}{}{}":{
+		"prefix":"lpsudokucell",
+		"body":[
+			"\\lpsudokucell{${1:column}}{${2:row}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpsudokusetup{}":{
+		"prefix":"lpsudokusetup",
+		"body":[
+			"\\lpsudokusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cloud":{
+		"prefix":"Cloud",
+		"body":[
+			"\\Cloud"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Moon":{
+		"prefix":"Moon",
+		"body":[
+			"\\Moon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonT":{
+		"prefix":"MoonT",
+		"body":[
+			"\\MoonT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonB":{
+		"prefix":"MoonB",
+		"body":[
+			"\\MoonB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonR":{
+		"prefix":"MoonR",
+		"body":[
+			"\\MoonR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonL":{
+		"prefix":"MoonL",
+		"body":[
+			"\\MoonL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonTR":{
+		"prefix":"MoonTR",
+		"body":[
+			"\\MoonTR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonTL":{
+		"prefix":"MoonTL",
+		"body":[
+			"\\MoonTL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonBR":{
+		"prefix":"MoonBR",
+		"body":[
+			"\\MoonBR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MoonBL":{
+		"prefix":"MoonBL",
+		"body":[
+			"\\MoonBL"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sunandmoonsetup{}":{
+		"prefix":"sunandmoonsetup",
+		"body":[
+			"\\sunandmoonsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tentH{}":{
+		"prefix":"tentH",
+		"body":[
+			"\\tentH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tentV{}":{
+		"prefix":"tentV",
+		"body":[
+			"\\tentV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Tree":{
+		"prefix":"Tree",
+		"body":[
+			"\\Tree"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Tent":{
+		"prefix":"Tent",
+		"body":[
+			"\\Tent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tentsandtreessetup{}":{
+		"prefix":"tentsandtreessetup",
+		"body":[
+			"\\tentsandtreessetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tunnelH{}":{
+		"prefix":"tunnelH",
+		"body":[
+			"\\tunnelH{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tunnelV{}":{
+		"prefix":"tunnelV",
+		"body":[
+			"\\tunnelV{${1:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"portal{}{}":{
+		"prefix":"portal",
+		"body":[
+			"\\portal{${1:column}}{${2:row}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tube{}":{
+		"prefix":"tube",
+		"body":[
+			"\\tube{${1:TikZ path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tunnelsetup{}":{
+		"prefix":"tunnelsetup",
+		"body":[
+			"\\tunnelsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setTikZpreset{}":{
+		"prefix":"setTikZpreset",
+		"body":[
+			"\\setTikZpreset{${1:TikZ keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1447,7 +1627,19 @@
 			"\\begin{logicpuzzle}",
 				"\t$1",
 			"\\end{logicpuzzle}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"logicpuzzle[]":{
+		"prefix":"logicpuzzle",
+		"body":[
+			"\\begin{logicpuzzle}",
+				"\t[${1:options%keyvals}]",
+			"\\end{logicpuzzle}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1457,7 +1649,8 @@
 			"\\begin{puzzlebackground}",
 				"\t$1",
 			"\\end{puzzlebackground}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1467,7 +1660,8 @@
 			"\\begin{puzzleforeground}",
 				"\t$1",
 			"\\end{puzzleforeground}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1477,297 +1671,19 @@
 			"\\begin{ddsudoku}",
 				"\t$1",
 			"\\end{ddsudoku}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"battleship":{
-		"prefix":"battleship",
-		"body":[
-			"\\begin{battleship}",
-				"\t$1",
-			"\\end{battleship}"
-		]
-	},
-
-
-	"bokkusu":{
-		"prefix":"bokkusu",
-		"body":[
-			"\\begin{bokkusu}",
-				"\t$1",
-			"\\end{bokkusu}"
-		]
-	},
-
-
-	"bridges":{
-		"prefix":"bridges",
-		"body":[
-			"\\begin{bridges}",
-				"\t$1",
-			"\\end{bridges}"
-		]
-	},
-
-
-	"chaossudoku":{
-		"prefix":"chaossudoku",
-		"body":[
-			"\\begin{chaossudoku}",
-				"\t$1",
-			"\\end{chaossudoku}"
-		]
-	},
-
-
-	"fourwinds":{
-		"prefix":"fourwinds",
-		"body":[
-			"\\begin{fourwinds}",
-				"\t$1",
-			"\\end{fourwinds}"
-		]
-	},
-
-
-	"hakyuu":{
-		"prefix":"hakyuu",
-		"body":[
-			"\\begin{hakyuu}",
-				"\t$1",
-			"\\end{hakyuu}"
-		]
-	},
-
-
-	"hitori":{
-		"prefix":"hitori",
-		"body":[
-			"\\begin{hitori}",
-				"\t$1",
-			"\\end{hitori}"
-		]
-	},
-
-
-	"kakuro":{
-		"prefix":"kakuro",
-		"body":[
-			"\\begin{kakuro}",
-				"\t$1",
-			"\\end{kakuro}"
-		]
-	},
-
-
-	"kendoku":{
-		"prefix":"kendoku",
-		"body":[
-			"\\begin{kendoku}",
-				"\t$1",
-			"\\end{kendoku}"
-		]
-	},
-
-
-	"killersudoku":{
-		"prefix":"killersudoku",
-		"body":[
-			"\\begin{killersudoku}",
-				"\t$1",
-			"\\end{killersudoku}"
-		]
-	},
-
-
-	"laserbeam":{
-		"prefix":"laserbeam",
-		"body":[
-			"\\begin{laserbeam}",
-				"\t$1",
-			"\\end{laserbeam}"
-		]
-	},
-
-
-	"magiclabyrinth":{
-		"prefix":"magiclabyrinth",
-		"body":[
-			"\\begin{magiclabyrinth}",
-				"\t$1",
-			"\\end{magiclabyrinth}"
-		]
-	},
-
-
-	"magnets":{
-		"prefix":"magnets",
-		"body":[
-			"\\begin{magnets}",
-				"\t$1",
-			"\\end{magnets}"
-		]
-	},
-
-
-	"masyu":{
-		"prefix":"masyu",
-		"body":[
-			"\\begin{masyu}",
-				"\t$1",
-			"\\end{masyu}"
-		]
-	},
-
-
-	"minesweeper":{
-		"prefix":"minesweeper",
-		"body":[
-			"\\begin{minesweeper}",
-				"\t$1",
-			"\\end{minesweeper}"
-		]
-	},
-
-
-	"nonogram":{
-		"prefix":"nonogram",
-		"body":[
-			"\\begin{nonogram}",
-				"\t$1",
-			"\\end{nonogram}"
-		]
-	},
-
-
-	"numberlink":{
-		"prefix":"numberlink",
-		"body":[
-			"\\begin{numberlink}",
-				"\t$1",
-			"\\end{numberlink}"
-		]
-	},
-
-
-	"resuko":{
-		"prefix":"resuko",
-		"body":[
-			"\\begin{resuko}",
-				"\t$1",
-			"\\end{resuko}"
-		]
-	},
-
-
-	"schatzsuche":{
-		"prefix":"schatzsuche",
-		"body":[
-			"\\begin{schatzsuche}",
-				"\t$1",
-			"\\end{schatzsuche}"
-		]
-	},
-
-
-	"skyline":{
-		"prefix":"skyline",
-		"body":[
-			"\\begin{skyline}",
-				"\t$1",
-			"\\end{skyline}"
-		]
-	},
-
-
-	"slitherlink":{
-		"prefix":"slitherlink",
-		"body":[
-			"\\begin{slitherlink}",
-				"\t$1",
-			"\\end{slitherlink}"
-		]
-	},
-
-
-	"starbattle":{
-		"prefix":"starbattle",
-		"body":[
-			"\\begin{starbattle}",
-				"\t$1",
-			"\\end{starbattle}"
-		]
-	},
-
-
-	"starsandarrows":{
-		"prefix":"starsandarrows",
-		"body":[
-			"\\begin{starsandarrows}",
-				"\t$1",
-			"\\end{starsandarrows}"
-		]
-	},
-
-
-	"lpsudoku":{
-		"prefix":"lpsudoku",
-		"body":[
-			"\\begin{lpsudoku}",
-				"\t$1",
-			"\\end{lpsudoku}"
-		]
-	},
-
-
-	"sunandmoon":{
-		"prefix":"sunandmoon",
-		"body":[
-			"\\begin{sunandmoon}",
-				"\t$1",
-			"\\end{sunandmoon}"
-		]
-	},
-
-
-	"tentsandtrees":{
-		"prefix":"tentsandtrees",
-		"body":[
-			"\\begin{tentsandtrees}",
-				"\t$1",
-			"\\end{tentsandtrees}"
-		]
-	},
-
-
-	"tunnel":{
-		"prefix":"tunnel",
-		"body":[
-			"\\begin{tunnel}",
-				"\t$1",
-			"\\end{tunnel}"
-		]
-	},
-
-
-	"logicpuzzle":{
-		"prefix":"logicpuzzle",
-		"body":[
-			"\\begin{logicpuzzle}",
-				"\t$1",
-			"\\end{logicpuzzle}"
-		]
-	},
-
-
-	"ddsudoku":{
+	"ddsudoku[]":{
 		"prefix":"ddsudoku",
 		"body":[
 			"\\begin{ddsudoku}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{ddsudoku}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1777,7 +1693,19 @@
 			"\\begin{battleship}",
 				"\t$1",
 			"\\end{battleship}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"battleship[]":{
+		"prefix":"battleship",
+		"body":[
+			"\\begin{battleship}",
+				"\t[${1:options%keyvals}]",
+			"\\end{battleship}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1787,7 +1715,19 @@
 			"\\begin{bokkusu}",
 				"\t$1",
 			"\\end{bokkusu}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bokkusu[]":{
+		"prefix":"bokkusu",
+		"body":[
+			"\\begin{bokkusu}",
+				"\t[${1:options%keyvals}]",
+			"\\end{bokkusu}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1797,7 +1737,19 @@
 			"\\begin{bridges}",
 				"\t$1",
 			"\\end{bridges}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bridges[]":{
+		"prefix":"bridges",
+		"body":[
+			"\\begin{bridges}",
+				"\t[${1:options%keyvals}]",
+			"\\end{bridges}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1807,7 +1759,19 @@
 			"\\begin{chaossudoku}",
 				"\t$1",
 			"\\end{chaossudoku}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaossudoku[]":{
+		"prefix":"chaossudoku",
+		"body":[
+			"\\begin{chaossudoku}",
+				"\t[${1:options%keyvals}]",
+			"\\end{chaossudoku}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1817,7 +1781,19 @@
 			"\\begin{fourwinds}",
 				"\t$1",
 			"\\end{fourwinds}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fourwinds[]":{
+		"prefix":"fourwinds",
+		"body":[
+			"\\begin{fourwinds}",
+				"\t[${1:options%keyvals}]",
+			"\\end{fourwinds}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1827,7 +1803,19 @@
 			"\\begin{hakyuu}",
 				"\t$1",
 			"\\end{hakyuu}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hakyuu[]":{
+		"prefix":"hakyuu",
+		"body":[
+			"\\begin{hakyuu}",
+				"\t[${1:options%keyvals}]",
+			"\\end{hakyuu}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1837,7 +1825,19 @@
 			"\\begin{hitori}",
 				"\t$1",
 			"\\end{hitori}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hitori[]":{
+		"prefix":"hitori",
+		"body":[
+			"\\begin{hitori}",
+				"\t[${1:options%keyvals}]",
+			"\\end{hitori}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1847,7 +1847,19 @@
 			"\\begin{kakuro}",
 				"\t$1",
 			"\\end{kakuro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kakuro[]":{
+		"prefix":"kakuro",
+		"body":[
+			"\\begin{kakuro}",
+				"\t[${1:options%keyvals}]",
+			"\\end{kakuro}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1857,7 +1869,19 @@
 			"\\begin{kendoku}",
 				"\t$1",
 			"\\end{kendoku}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"kendoku[]":{
+		"prefix":"kendoku",
+		"body":[
+			"\\begin{kendoku}",
+				"\t[${1:options%keyvals}]",
+			"\\end{kendoku}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1867,7 +1891,19 @@
 			"\\begin{killersudoku}",
 				"\t$1",
 			"\\end{killersudoku}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"killersudoku[]":{
+		"prefix":"killersudoku",
+		"body":[
+			"\\begin{killersudoku}",
+				"\t[${1:options%keyvals}]",
+			"\\end{killersudoku}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1877,7 +1913,19 @@
 			"\\begin{laserbeam}",
 				"\t$1",
 			"\\end{laserbeam}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"laserbeam[]":{
+		"prefix":"laserbeam",
+		"body":[
+			"\\begin{laserbeam}",
+				"\t[${1:options%keyvals}]",
+			"\\end{laserbeam}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1887,7 +1935,19 @@
 			"\\begin{magiclabyrinth}",
 				"\t$1",
 			"\\end{magiclabyrinth}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magiclabyrinth[]":{
+		"prefix":"magiclabyrinth",
+		"body":[
+			"\\begin{magiclabyrinth}",
+				"\t[${1:options%keyvals}]",
+			"\\end{magiclabyrinth}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1897,7 +1957,19 @@
 			"\\begin{magnets}",
 				"\t$1",
 			"\\end{magnets}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"magnets[]":{
+		"prefix":"magnets",
+		"body":[
+			"\\begin{magnets}",
+				"\t[${1:options%keyvals}]",
+			"\\end{magnets}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1907,7 +1979,19 @@
 			"\\begin{masyu}",
 				"\t$1",
 			"\\end{masyu}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"masyu[]":{
+		"prefix":"masyu",
+		"body":[
+			"\\begin{masyu}",
+				"\t[${1:options%keyvals}]",
+			"\\end{masyu}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1917,7 +2001,19 @@
 			"\\begin{minesweeper}",
 				"\t$1",
 			"\\end{minesweeper}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minesweeper[]":{
+		"prefix":"minesweeper",
+		"body":[
+			"\\begin{minesweeper}",
+				"\t[${1:options%keyvals}]",
+			"\\end{minesweeper}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1927,7 +2023,19 @@
 			"\\begin{nonogram}",
 				"\t$1",
 			"\\end{nonogram}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nonogram[]":{
+		"prefix":"nonogram",
+		"body":[
+			"\\begin{nonogram}",
+				"\t[${1:options%keyvals}]",
+			"\\end{nonogram}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1937,7 +2045,19 @@
 			"\\begin{numberlink}",
 				"\t$1",
 			"\\end{numberlink}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numberlink[]":{
+		"prefix":"numberlink",
+		"body":[
+			"\\begin{numberlink}",
+				"\t[${1:options%keyvals}]",
+			"\\end{numberlink}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1947,7 +2067,19 @@
 			"\\begin{resuko}",
 				"\t$1",
 			"\\end{resuko}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resuko[]":{
+		"prefix":"resuko",
+		"body":[
+			"\\begin{resuko}",
+				"\t[${1:options%keyvals}]",
+			"\\end{resuko}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1957,7 +2089,19 @@
 			"\\begin{schatzsuche}",
 				"\t$1",
 			"\\end{schatzsuche}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"schatzsuche[]":{
+		"prefix":"schatzsuche",
+		"body":[
+			"\\begin{schatzsuche}",
+				"\t[${1:options%keyvals}]",
+			"\\end{schatzsuche}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1967,7 +2111,19 @@
 			"\\begin{skyline}",
 				"\t$1",
 			"\\end{skyline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skyline[]":{
+		"prefix":"skyline",
+		"body":[
+			"\\begin{skyline}",
+				"\t[${1:options%keyvals}]",
+			"\\end{skyline}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1977,7 +2133,19 @@
 			"\\begin{slitherlink}",
 				"\t$1",
 			"\\end{slitherlink}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slitherlink[]":{
+		"prefix":"slitherlink",
+		"body":[
+			"\\begin{slitherlink}",
+				"\t[${1:options%keyvals}]",
+			"\\end{slitherlink}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1987,7 +2155,19 @@
 			"\\begin{starbattle}",
 				"\t$1",
 			"\\end{starbattle}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starbattle[]":{
+		"prefix":"starbattle",
+		"body":[
+			"\\begin{starbattle}",
+				"\t[${1:options%keyvals}]",
+			"\\end{starbattle}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1997,7 +2177,19 @@
 			"\\begin{starsandarrows}",
 				"\t$1",
 			"\\end{starsandarrows}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starsandarrows[]":{
+		"prefix":"starsandarrows",
+		"body":[
+			"\\begin{starsandarrows}",
+				"\t[${1:options%keyvals}]",
+			"\\end{starsandarrows}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2007,7 +2199,19 @@
 			"\\begin{lpsudoku}",
 				"\t$1",
 			"\\end{lpsudoku}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lpsudoku[]":{
+		"prefix":"lpsudoku",
+		"body":[
+			"\\begin{lpsudoku}",
+				"\t[${1:options%keyvals}]",
+			"\\end{lpsudoku}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2017,7 +2221,19 @@
 			"\\begin{sunandmoon}",
 				"\t$1",
 			"\\end{sunandmoon}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sunandmoon[]":{
+		"prefix":"sunandmoon",
+		"body":[
+			"\\begin{sunandmoon}",
+				"\t[${1:options%keyvals}]",
+			"\\end{sunandmoon}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2027,7 +2243,19 @@
 			"\\begin{tentsandtrees}",
 				"\t$1",
 			"\\end{tentsandtrees}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tentsandtrees[]":{
+		"prefix":"tentsandtrees",
+		"body":[
+			"\\begin{tentsandtrees}",
+				"\t[${1:options%keyvals}]",
+			"\\end{tentsandtrees}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2037,6 +2265,18 @@
 			"\\begin{tunnel}",
 				"\t$1",
 			"\\end{tunnel}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tunnel[]":{
+		"prefix":"tunnel",
+		"body":[
+			"\\begin{tunnel}",
+				"\t[${1:options%keyvals}]",
+			"\\end{tunnel}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

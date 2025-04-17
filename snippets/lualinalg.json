@@ -5,7 +5,8 @@
 		"prefix":"vectorNew",
 		"body":[
 			"\\vectorNew{${1:name}}{${2:entries}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,471 +14,8 @@
 		"prefix":"vectorPrint",
 		"body":[
 			"\\vectorPrint{${1:vector}}"
-		]
-	},
-
-
-	"vectorGetCoordinate{}{}":{
-		"prefix":"vectorGetCoordinate",
-		"body":[
-			"\\vectorGetCoordinate{${1:vector}}{${2:index}}"
-		]
-	},
-
-
-	"vectorSetCoordinate{}{}{}":{
-		"prefix":"vectorSetCoordinate",
-		"body":[
-			"\\vectorSetCoordinate{${1:vector}}{${2:index}}{${3:value}}"
-		]
-	},
-
-
-	"vectorCopy{}{}":{
-		"prefix":"vectorCopy",
-		"body":[
-			"\\vectorCopy{${1:name}}{${2:vector}}"
-		]
-	},
-
-
-	"vectorEql{}{}":{
-		"prefix":"vectorEql",
-		"body":[
-			"\\vectorEql{${1:vector1}}{${2:vector2}}"
-		]
-	},
-
-
-	"vectorAdd{}{}{}":{
-		"prefix":"vectorAdd",
-		"body":[
-			"\\vectorAdd{${1:name}}{${2:vector1}}{${3:vector2}}"
-		]
-	},
-
-
-	"vectorSub{}{}{}":{
-		"prefix":"vectorSub",
-		"body":[
-			"\\vectorSub{${1:name}}{${2:vector1}}{${3:vector2}}"
-		]
-	},
-
-
-	"vectorMulNum{}{}{}":{
-		"prefix":"vectorMulNum",
-		"body":[
-			"\\vectorMulNum{${1:name}}{${2:vector}}{${3:number}}"
-		]
-	},
-
-
-	"vectorDot{}{}":{
-		"prefix":"vectorDot",
-		"body":[
-			"\\vectorDot{${1:vector1}}{${2:vector2}}"
-		]
-	},
-
-
-	"vectorCross{}{}{}":{
-		"prefix":"vectorCross",
-		"body":[
-			"\\vectorCross{${1:name}}{${2:vector1}}{${3:vector2}}"
-		]
-	},
-
-
-	"vectorSumNorm{}":{
-		"prefix":"vectorSumNorm",
-		"body":[
-			"\\vectorSumNorm{${1:vector}}"
-		]
-	},
-
-
-	"vectorEuclidNorm{}":{
-		"prefix":"vectorEuclidNorm",
-		"body":[
-			"\\vectorEuclidNorm{${1:vector}}"
-		]
-	},
-
-
-	"vectorpNorm{}{}":{
-		"prefix":"vectorpNorm",
-		"body":[
-			"\\vectorpNorm{${1:vector}}{${2:p}}"
-		]
-	},
-
-
-	"vectorSupNorm{}":{
-		"prefix":"vectorSupNorm",
-		"body":[
-			"\\vectorSupNorm{${1:vector}}"
-		]
-	},
-
-
-	"vectorCreateRandom{}{}{}{}":{
-		"prefix":"vectorCreateRandom",
-		"body":[
-			"\\vectorCreateRandom{${1:name}}{${2:dimension}}{${3:a}}{${4:b}}"
-		]
-	},
-
-
-	"vectorOp{}{}":{
-		"prefix":"vectorOp",
-		"body":[
-			"\\vectorOp{${1:name}}{${2:expression}}"
-		]
-	},
-
-
-	"vectorGetAngle{}{}":{
-		"prefix":"vectorGetAngle",
-		"body":[
-			"\\vectorGetAngle{${1:vector1}}{${2:vector2}}"
-		]
-	},
-
-
-	"vectorParse{}":{
-		"prefix":"vectorParse",
-		"body":[
-			"\\vectorParse{${1:vector}}"
-		]
-	},
-
-
-	"vectorGramSchmidt{}":{
-		"prefix":"vectorGramSchmidt",
-		"body":[
-			"\\vectorGramSchmidt{${1:list of vectors}}"
-		]
-	},
-
-
-	"vectorGramSchmidtSteps{}":{
-		"prefix":"vectorGramSchmidtSteps",
-		"body":[
-			"\\vectorGramSchmidtSteps{${1:list of vectors}}"
-		]
-	},
-
-
-	"matrixNew{}{}":{
-		"prefix":"matrixNew",
-		"body":[
-			"\\matrixNew{${1:name}}{${2:entries}}"
-		]
-	},
-
-
-	"matrixPrint{}":{
-		"prefix":"matrixPrint",
-		"body":[
-			"\\matrixPrint{${1:matrix}}"
-		]
-	},
-
-
-	"matrixNumRows{}":{
-		"prefix":"matrixNumRows",
-		"body":[
-			"\\matrixNumRows{${1:matrix}}"
-		]
-	},
-
-
-	"matrixNumCols{}":{
-		"prefix":"matrixNumCols",
-		"body":[
-			"\\matrixNumCols{${1:matrix}}"
-		]
-	},
-
-
-	"matrixGetElement{}{}{}":{
-		"prefix":"matrixGetElement",
-		"body":[
-			"\\matrixGetElement{${1:matrix}}{${2:i}}{${3:j}}"
-		]
-	},
-
-
-	"matrixAdd{}{}{}":{
-		"prefix":"matrixAdd",
-		"body":[
-			"\\matrixAdd{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixSub{}{}{}":{
-		"prefix":"matrixSub",
-		"body":[
-			"\\matrixSub{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixMulNum{}{}{}":{
-		"prefix":"matrixMulNum",
-		"body":[
-			"\\matrixMulNum{${1:name}}{${2:number}}{${3:matrix}}"
-		]
-	},
-
-
-	"matrixMul{}{}{}":{
-		"prefix":"matrixMul",
-		"body":[
-			"\\matrixMul{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixPow{}{}{}":{
-		"prefix":"matrixPow",
-		"body":[
-			"\\matrixPow{${1:name}}{${2:matrix}}{${3:power}}"
-		]
-	},
-
-
-	"matrixInvert{}{}":{
-		"prefix":"matrixInvert",
-		"body":[
-			"\\matrixInvert{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixTrace{}":{
-		"prefix":"matrixTrace",
-		"body":[
-			"\\matrixTrace{${1:matrix}}"
-		]
-	},
-
-
-	"matrixConjugate{}{}":{
-		"prefix":"matrixConjugate",
-		"body":[
-			"\\matrixConjugate{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixConjugateT{}{}":{
-		"prefix":"matrixConjugateT",
-		"body":[
-			"\\matrixConjugateT{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixNormOne{}":{
-		"prefix":"matrixNormOne",
-		"body":[
-			"\\matrixNormOne{${1:matrix}}"
-		]
-	},
-
-
-	"matrixNormInfty{}":{
-		"prefix":"matrixNormInfty",
-		"body":[
-			"\\matrixNormInfty{${1:matrix}}"
-		]
-	},
-
-
-	"matrixNormMax{}":{
-		"prefix":"matrixNormMax",
-		"body":[
-			"\\matrixNormMax{${1:matrix}}"
-		]
-	},
-
-
-	"matrixNormF{}":{
-		"prefix":"matrixNormF",
-		"body":[
-			"\\matrixNormF{${1:matrix}}"
-		]
-	},
-
-
-	"matrixRank{}":{
-		"prefix":"matrixRank",
-		"body":[
-			"\\matrixRank{${1:matrix}}"
-		]
-	},
-
-
-	"matrixDet{}":{
-		"prefix":"matrixDet",
-		"body":[
-			"\\matrixDet{${1:matrix}}"
-		]
-	},
-
-
-	"matrixTranspose{}{}":{
-		"prefix":"matrixTranspose",
-		"body":[
-			"\\matrixTranspose{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixSetElement{}{}{}{}":{
-		"prefix":"matrixSetElement",
-		"body":[
-			"\\matrixSetElement{${1:matrix}}{${2:i}}{${3:j}}{${4:value}}"
-		]
-	},
-
-
-	"matrixSubmatrix{}{}{}{}{}{}":{
-		"prefix":"matrixSubmatrix",
-		"body":[
-			"\\matrixSubmatrix{${1:name}}{${2:matrix}}{${3:i}}{${4:j}}{${5:k}}{${6:l}}"
-		]
-	},
-
-
-	"matrixConcatH{}{}{}":{
-		"prefix":"matrixConcatH",
-		"body":[
-			"\\matrixConcatH{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixConcatV{}{}{}":{
-		"prefix":"matrixConcatV",
-		"body":[
-			"\\matrixConcatV{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixOp{}{}":{
-		"prefix":"matrixOp",
-		"body":[
-			"\\matrixOp{${1:matrix}}{${2:expression}}"
-		]
-	},
-
-
-	"matrixCopy{}{}":{
-		"prefix":"matrixCopy",
-		"body":[
-			"\\matrixCopy{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixEql{}{}":{
-		"prefix":"matrixEql",
-		"body":[
-			"\\matrixEql{${1:matrix1}}{${2:matrix2}}"
-		]
-	},
-
-
-	"matrixCreateRandom{}{}{}{}{}":{
-		"prefix":"matrixCreateRandom",
-		"body":[
-			"\\matrixCreateRandom{${1:name}}{${2:i}}{${3:j}}{${4:k}}{${5:l}}"
-		]
-	},
-
-
-	"matrixSwapRows{}{}{}{}":{
-		"prefix":"matrixSwapRows",
-		"body":[
-			"\\matrixSwapRows{${1:name}}{${2:matrix}}{${3:row1}}{${4:row2}}"
-		]
-	},
-
-
-	"matrixMulRow{}{}{}{}":{
-		"prefix":"matrixMulRow",
-		"body":[
-			"\\matrixMulRow{${1:name}}{${2:matrix}}{${3:row}}{${4:number}}"
-		]
-	},
-
-
-	"matrixMulAddRow{}{}{}{}{}":{
-		"prefix":"matrixMulAddRow",
-		"body":[
-			"\\matrixMulAddRow{${1:name}}{${2:matrix}}{${3:row1}}{${4:number}}{${5:row2}}"
-		]
-	},
-
-
-	"matrixSwapCols{}{}{}{}":{
-		"prefix":"matrixSwapCols",
-		"body":[
-			"\\matrixSwapCols{${1:name}}{${2:matrix}}{${3:col1}}{${4:col2}}"
-		]
-	},
-
-
-	"matrixMulCol{}{}{}{}":{
-		"prefix":"matrixMulCol",
-		"body":[
-			"\\matrixMulCol{${1:name}}{${2:matrix}}{${3:col}}{${4:number}}"
-		]
-	},
-
-
-	"matrixMulAddCol{}{}{}{}{}":{
-		"prefix":"matrixMulAddCol",
-		"body":[
-			"\\matrixMulAddCol{${1:name}}{${2:matrix}}{${3:col1}}{${4:number}}{${5:col2}}"
-		]
-	},
-
-
-	"matrixRREF{}{}":{
-		"prefix":"matrixRREF",
-		"body":[
-			"\\matrixRREF{${1:name}}{${2:matrix}}"
-		]
-	},
-
-
-	"matrixRREFSteps{}":{
-		"prefix":"matrixRREFSteps",
-		"body":[
-			"\\matrixRREFSteps{${1:matrix}}"
-		]
-	},
-
-
-	"matrixGaussJordan{}{}{}":{
-		"prefix":"matrixGaussJordan",
-		"body":[
-			"\\matrixGaussJordan{${1:name}}{${2:matrix1}}{${3:matrix2}}"
-		]
-	},
-
-
-	"matrixGaussJordanSteps{}{}":{
-		"prefix":"matrixGaussJordanSteps",
-		"body":[
-			"\\matrixGaussJordanSteps{${1:matrix1}}{${2:matrix2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +23,170 @@
 		"prefix":"vectorPrint",
 		"body":[
 			"\\vectorPrint[${2:truncate=integer}]{${1:vector}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vectorGetCoordinate{}{}":{
+		"prefix":"vectorGetCoordinate",
+		"body":[
+			"\\vectorGetCoordinate{${1:vector}}{${2:index}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorSetCoordinate{}{}{}":{
+		"prefix":"vectorSetCoordinate",
+		"body":[
+			"\\vectorSetCoordinate{${1:vector}}{${2:index}}{${3:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorCopy{}{}":{
+		"prefix":"vectorCopy",
+		"body":[
+			"\\vectorCopy{${1:name}}{${2:vector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorEql{}{}":{
+		"prefix":"vectorEql",
+		"body":[
+			"\\vectorEql{${1:vector1}}{${2:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorAdd{}{}{}":{
+		"prefix":"vectorAdd",
+		"body":[
+			"\\vectorAdd{${1:name}}{${2:vector1}}{${3:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorSub{}{}{}":{
+		"prefix":"vectorSub",
+		"body":[
+			"\\vectorSub{${1:name}}{${2:vector1}}{${3:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorMulNum{}{}{}":{
+		"prefix":"vectorMulNum",
+		"body":[
+			"\\vectorMulNum{${1:name}}{${2:vector}}{${3:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorDot{}{}":{
+		"prefix":"vectorDot",
+		"body":[
+			"\\vectorDot{${1:vector1}}{${2:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorCross{}{}{}":{
+		"prefix":"vectorCross",
+		"body":[
+			"\\vectorCross{${1:name}}{${2:vector1}}{${3:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorSumNorm{}":{
+		"prefix":"vectorSumNorm",
+		"body":[
+			"\\vectorSumNorm{${1:vector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorEuclidNorm{}":{
+		"prefix":"vectorEuclidNorm",
+		"body":[
+			"\\vectorEuclidNorm{${1:vector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorpNorm{}{}":{
+		"prefix":"vectorpNorm",
+		"body":[
+			"\\vectorpNorm{${1:vector}}{${2:p}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorSupNorm{}":{
+		"prefix":"vectorSupNorm",
+		"body":[
+			"\\vectorSupNorm{${1:vector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorCreateRandom{}{}{}{}":{
+		"prefix":"vectorCreateRandom",
+		"body":[
+			"\\vectorCreateRandom{${1:name}}{${2:dimension}}{${3:a}}{${4:b}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorOp{}{}":{
+		"prefix":"vectorOp",
+		"body":[
+			"\\vectorOp{${1:name}}{${2:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorGetAngle{}{}":{
+		"prefix":"vectorGetAngle",
+		"body":[
+			"\\vectorGetAngle{${1:vector1}}{${2:vector2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorParse{}":{
+		"prefix":"vectorParse",
+		"body":[
+			"\\vectorParse{${1:vector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vectorGramSchmidt{}":{
+		"prefix":"vectorGramSchmidt",
+		"body":[
+			"\\vectorGramSchmidt{${1:list of vectors}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +194,17 @@
 		"prefix":"vectorGramSchmidt",
 		"body":[
 			"\\vectorGramSchmidt[${2:options%keyvals}]{${1:list of vectors}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vectorGramSchmidtSteps{}":{
+		"prefix":"vectorGramSchmidtSteps",
+		"body":[
+			"\\vectorGramSchmidtSteps{${1:list of vectors}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +212,26 @@
 		"prefix":"vectorGramSchmidtSteps",
 		"body":[
 			"\\vectorGramSchmidtSteps[${2:options%keyvals}]{${1:list of vectors}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"matrixNew{}{}":{
+		"prefix":"matrixNew",
+		"body":[
+			"\\matrixNew{${1:name}}{${2:entries}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixPrint{}":{
+		"prefix":"matrixPrint",
+		"body":[
+			"\\matrixPrint{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +239,323 @@
 		"prefix":"matrixPrint",
 		"body":[
 			"\\matrixPrint[${2:options%keyvals}]{${1:matrix}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"matrixNumRows{}":{
+		"prefix":"matrixNumRows",
+		"body":[
+			"\\matrixNumRows{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixNumCols{}":{
+		"prefix":"matrixNumCols",
+		"body":[
+			"\\matrixNumCols{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixGetElement{}{}{}":{
+		"prefix":"matrixGetElement",
+		"body":[
+			"\\matrixGetElement{${1:matrix}}{${2:i}}{${3:j}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixAdd{}{}{}":{
+		"prefix":"matrixAdd",
+		"body":[
+			"\\matrixAdd{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixSub{}{}{}":{
+		"prefix":"matrixSub",
+		"body":[
+			"\\matrixSub{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMulNum{}{}{}":{
+		"prefix":"matrixMulNum",
+		"body":[
+			"\\matrixMulNum{${1:name}}{${2:number}}{${3:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMul{}{}{}":{
+		"prefix":"matrixMul",
+		"body":[
+			"\\matrixMul{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixPow{}{}{}":{
+		"prefix":"matrixPow",
+		"body":[
+			"\\matrixPow{${1:name}}{${2:matrix}}{${3:power}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixInvert{}{}":{
+		"prefix":"matrixInvert",
+		"body":[
+			"\\matrixInvert{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixTrace{}":{
+		"prefix":"matrixTrace",
+		"body":[
+			"\\matrixTrace{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixConjugate{}{}":{
+		"prefix":"matrixConjugate",
+		"body":[
+			"\\matrixConjugate{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixConjugateT{}{}":{
+		"prefix":"matrixConjugateT",
+		"body":[
+			"\\matrixConjugateT{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixNormOne{}":{
+		"prefix":"matrixNormOne",
+		"body":[
+			"\\matrixNormOne{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixNormInfty{}":{
+		"prefix":"matrixNormInfty",
+		"body":[
+			"\\matrixNormInfty{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixNormMax{}":{
+		"prefix":"matrixNormMax",
+		"body":[
+			"\\matrixNormMax{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixNormF{}":{
+		"prefix":"matrixNormF",
+		"body":[
+			"\\matrixNormF{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixRank{}":{
+		"prefix":"matrixRank",
+		"body":[
+			"\\matrixRank{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixDet{}":{
+		"prefix":"matrixDet",
+		"body":[
+			"\\matrixDet{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixTranspose{}{}":{
+		"prefix":"matrixTranspose",
+		"body":[
+			"\\matrixTranspose{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixSetElement{}{}{}{}":{
+		"prefix":"matrixSetElement",
+		"body":[
+			"\\matrixSetElement{${1:matrix}}{${2:i}}{${3:j}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixSubmatrix{}{}{}{}{}{}":{
+		"prefix":"matrixSubmatrix",
+		"body":[
+			"\\matrixSubmatrix{${1:name}}{${2:matrix}}{${3:i}}{${4:j}}{${5:k}}{${6:l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixConcatH{}{}{}":{
+		"prefix":"matrixConcatH",
+		"body":[
+			"\\matrixConcatH{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixConcatV{}{}{}":{
+		"prefix":"matrixConcatV",
+		"body":[
+			"\\matrixConcatV{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixOp{}{}":{
+		"prefix":"matrixOp",
+		"body":[
+			"\\matrixOp{${1:matrix}}{${2:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixCopy{}{}":{
+		"prefix":"matrixCopy",
+		"body":[
+			"\\matrixCopy{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixEql{}{}":{
+		"prefix":"matrixEql",
+		"body":[
+			"\\matrixEql{${1:matrix1}}{${2:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixCreateRandom{}{}{}{}{}":{
+		"prefix":"matrixCreateRandom",
+		"body":[
+			"\\matrixCreateRandom{${1:name}}{${2:i}}{${3:j}}{${4:k}}{${5:l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixSwapRows{}{}{}{}":{
+		"prefix":"matrixSwapRows",
+		"body":[
+			"\\matrixSwapRows{${1:name}}{${2:matrix}}{${3:row1}}{${4:row2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMulRow{}{}{}{}":{
+		"prefix":"matrixMulRow",
+		"body":[
+			"\\matrixMulRow{${1:name}}{${2:matrix}}{${3:row}}{${4:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMulAddRow{}{}{}{}{}":{
+		"prefix":"matrixMulAddRow",
+		"body":[
+			"\\matrixMulAddRow{${1:name}}{${2:matrix}}{${3:row1}}{${4:number}}{${5:row2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixSwapCols{}{}{}{}":{
+		"prefix":"matrixSwapCols",
+		"body":[
+			"\\matrixSwapCols{${1:name}}{${2:matrix}}{${3:col1}}{${4:col2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMulCol{}{}{}{}":{
+		"prefix":"matrixMulCol",
+		"body":[
+			"\\matrixMulCol{${1:name}}{${2:matrix}}{${3:col}}{${4:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixMulAddCol{}{}{}{}{}":{
+		"prefix":"matrixMulAddCol",
+		"body":[
+			"\\matrixMulAddCol{${1:name}}{${2:matrix}}{${3:col1}}{${4:number}}{${5:col2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixRREF{}{}":{
+		"prefix":"matrixRREF",
+		"body":[
+			"\\matrixRREF{${1:name}}{${2:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixRREFSteps{}":{
+		"prefix":"matrixRREFSteps",
+		"body":[
+			"\\matrixRREFSteps{${1:matrix}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +563,26 @@
 		"prefix":"matrixRREFSteps",
 		"body":[
 			"\\matrixRREFSteps[${2:options%keyvals}]{${1:matrix}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"matrixGaussJordan{}{}{}":{
+		"prefix":"matrixGaussJordan",
+		"body":[
+			"\\matrixGaussJordan{${1:name}}{${2:matrix1}}{${3:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixGaussJordanSteps{}{}":{
+		"prefix":"matrixGaussJordanSteps",
+		"body":[
+			"\\matrixGaussJordanSteps{${1:matrix1}}{${2:matrix2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,6 +590,7 @@
 		"prefix":"matrixGaussJordanSteps",
 		"body":[
 			"\\matrixGaussJordanSteps[${3:options%keyvals}]{${1:matrix1}}{${2:matrix2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

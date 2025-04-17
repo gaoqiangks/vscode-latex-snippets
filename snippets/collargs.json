@@ -5,15 +5,8 @@
 		"prefix":"CollectArguments",
 		"body":[
 			"\\CollectArguments{${1:argspec}}{${2:next-code}}"
-		]
-	},
-
-
-	"CollectArgumentsRaw{}{}{}":{
-		"prefix":"CollectArgumentsRaw",
-		"body":[
-			"\\CollectArgumentsRaw{${1:option-setting code}}{${2:argspec}}{${3:next-code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"CollectArguments",
 		"body":[
 			"\\CollectArguments[${3:options%keyvals}]{${1:argspec}}{${2:next-code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CollectArgumentsRaw{}{}{}":{
+		"prefix":"CollectArgumentsRaw",
+		"body":[
+			"\\CollectArgumentsRaw{${1:option-setting code}}{${2:argspec}}{${3:next-code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

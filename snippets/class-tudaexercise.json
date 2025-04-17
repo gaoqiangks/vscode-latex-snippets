@@ -5,255 +5,8 @@
 		"prefix":"MechEngArrow",
 		"body":[
 			"\\MechEngArrow{${1:Länge}}"
-		]
-	},
-
-
-	"term{}":{
-		"prefix":"term",
-		"body":[
-			"\\term{${1:Semester}}"
-		]
-	},
-
-
-	"sheetnumber{}":{
-		"prefix":"sheetnumber",
-		"body":[
-			"\\sheetnumber{${1:Nummer des Übungsblatts}}"
-		]
-	},
-
-
-	"thetask":{
-		"prefix":"thetask",
-		"body":[
-			"\\thetask"
-		]
-	},
-
-
-	"thesubtask":{
-		"prefix":"thesubtask",
-		"body":[
-			"\\thesubtask"
-		]
-	},
-
-
-	"ConfigureHeadline{}":{
-		"prefix":"ConfigureHeadline",
-		"body":[
-			"\\ConfigureHeadline{${1:keyvals}}"
-		]
-	},
-
-
-	"ShortTitle":{
-		"prefix":"ShortTitle",
-		"body":[
-			"\\ShortTitle"
-		]
-	},
-
-
-	"StudentID":{
-		"prefix":"StudentID",
-		"body":[
-			"\\StudentID"
-		]
-	},
-
-
-	"StudentName":{
-		"prefix":"StudentName",
-		"body":[
-			"\\StudentName"
-		]
-	},
-
-
-	"IfSolutionT{}":{
-		"prefix":"IfSolutionT",
-		"body":[
-			"\\IfSolutionT{${1:true code}}"
-		]
-	},
-
-
-	"IfSolutionF{}":{
-		"prefix":"IfSolutionF",
-		"body":[
-			"\\IfSolutionF{${1:false code}}"
-		]
-	},
-
-
-	"IfSolutionTF{}{}":{
-		"prefix":"IfSolutionTF",
-		"body":[
-			"\\IfSolutionTF{${1:true code}}{${2:false code}}"
-		]
-	},
-
-
-	"creditformat{}":{
-		"prefix":"creditformat",
-		"body":[
-			"\\creditformat{${1:text}}"
-		]
-	},
-
-
-	"creditformatsum{}":{
-		"prefix":"creditformatsum",
-		"body":[
-			"\\creditformatsum{${1:text}}"
-		]
-	},
-
-
-	"PointName":{
-		"prefix":"PointName",
-		"body":[
-			"\\PointName"
-		]
-	},
-
-
-	"PointsName":{
-		"prefix":"PointsName",
-		"body":[
-			"\\PointsName"
-		]
-	},
-
-
-	"pointformat{}":{
-		"prefix":"pointformat",
-		"body":[
-			"\\pointformat{${1:text}}"
-		]
-	},
-
-
-	"getPoints{}":{
-		"prefix":"getPoints",
-		"body":[
-			"\\getPoints{${1:Nummer}}"
-		]
-	},
-
-
-	"getPointsTotal":{
-		"prefix":"getPointsTotal",
-		"body":[
-			"\\getPointsTotal"
-		]
-	},
-
-
-	"refPoints{}":{
-		"prefix":"refPoints",
-		"body":[
-			"\\refPoints{${1:label}}"
-		]
-	},
-
-
-	"mapPoints{}":{
-		"prefix":"mapPoints",
-		"body":[
-			"\\mapPoints{${1:code%text}}"
-		]
-	},
-
-
-	"authorandname":{
-		"prefix":"authorandname",
-		"body":[
-			"\\authorandname"
-		]
-	},
-
-
-	"institution{}":{
-		"prefix":"institution",
-		"body":[
-			"\\institution{${1:Einrichtung}}"
-		]
-	},
-
-
-	"sheetsep":{
-		"prefix":"sheetsep",
-		"body":[
-			"\\sheetsep"
-		]
-	},
-
-
-	"solutionsep":{
-		"prefix":"solutionsep",
-		"body":[
-			"\\solutionsep"
-		]
-	},
-
-
-	"StudentIDname":{
-		"prefix":"StudentIDname",
-		"body":[
-			"\\StudentIDname"
-		]
-	},
-
-
-	"StudentIDsep":{
-		"prefix":"StudentIDsep",
-		"body":[
-			"\\StudentIDsep"
-		]
-	},
-
-
-	"StudentNamesep":{
-		"prefix":"StudentNamesep",
-		"body":[
-			"\\StudentNamesep"
-		]
-	},
-
-
-	"subtaskformat":{
-		"prefix":"subtaskformat",
-		"body":[
-			"\\subtaskformat"
-		]
-	},
-
-
-	"taskformat":{
-		"prefix":"taskformat",
-		"body":[
-			"\\taskformat"
-		]
-	},
-
-
-	"tasksep":{
-		"prefix":"tasksep",
-		"body":[
-			"\\tasksep"
-		]
-	},
-
-
-	"titleimage{}":{
-		"prefix":"titleimage",
-		"body":[
-			"\\titleimage{${1:graphics code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,15 +14,8 @@
 		"prefix":"*MechEngArrow",
 		"body":[
 			"\\MechEngArrow*{${1:Länge}}"
-		]
-	},
-
-
-	"mapPoints*{}":{
-		"prefix":"*mapPoints",
-		"body":[
-			"\\mapPoints*{${1:code%text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -277,27 +23,340 @@
 		"prefix":"title",
 		"body":[
 			"\\title[${2:Kurztitel für die Kopfzeile%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"task":{
+	"term{}":{
+		"prefix":"term",
+		"body":[
+			"\\term{${1:Semester}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sheetnumber{}":{
+		"prefix":"sheetnumber",
+		"body":[
+			"\\sheetnumber{${1:Nummer des Übungsblatts}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thetask":{
+		"prefix":"thetask",
+		"body":[
+			"\\thetask"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubtask":{
+		"prefix":"thesubtask",
+		"body":[
+			"\\thesubtask"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ConfigureHeadline{}":{
+		"prefix":"ConfigureHeadline",
+		"body":[
+			"\\ConfigureHeadline{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShortTitle":{
+		"prefix":"ShortTitle",
+		"body":[
+			"\\ShortTitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StudentID":{
+		"prefix":"StudentID",
+		"body":[
+			"\\StudentID"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StudentName":{
+		"prefix":"StudentName",
+		"body":[
+			"\\StudentName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionT{}":{
+		"prefix":"IfSolutionT",
+		"body":[
+			"\\IfSolutionT{${1:true code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionF{}":{
+		"prefix":"IfSolutionF",
+		"body":[
+			"\\IfSolutionF{${1:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionTF{}{}":{
+		"prefix":"IfSolutionTF",
+		"body":[
+			"\\IfSolutionTF{${1:true code}}{${2:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"creditformat{}":{
+		"prefix":"creditformat",
+		"body":[
+			"\\creditformat{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"creditformatsum{}":{
+		"prefix":"creditformatsum",
+		"body":[
+			"\\creditformatsum{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PointName":{
+		"prefix":"PointName",
+		"body":[
+			"\\PointName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PointsName":{
+		"prefix":"PointsName",
+		"body":[
+			"\\PointsName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pointformat{}":{
+		"prefix":"pointformat",
+		"body":[
+			"\\pointformat{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getPoints{}":{
+		"prefix":"getPoints",
+		"body":[
+			"\\getPoints{${1:Nummer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getPointsTotal":{
+		"prefix":"getPointsTotal",
+		"body":[
+			"\\getPointsTotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refPoints{}":{
+		"prefix":"refPoints",
+		"body":[
+			"\\refPoints{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mapPoints{}":{
+		"prefix":"mapPoints",
+		"body":[
+			"\\mapPoints{${1:code%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mapPoints*{}":{
+		"prefix":"*mapPoints",
+		"body":[
+			"\\mapPoints*{${1:code%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"authorandname":{
+		"prefix":"authorandname",
+		"body":[
+			"\\authorandname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"institution{}":{
+		"prefix":"institution",
+		"body":[
+			"\\institution{${1:Einrichtung}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sheetsep":{
+		"prefix":"sheetsep",
+		"body":[
+			"\\sheetsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solutionsep":{
+		"prefix":"solutionsep",
+		"body":[
+			"\\solutionsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StudentIDname":{
+		"prefix":"StudentIDname",
+		"body":[
+			"\\StudentIDname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StudentIDsep":{
+		"prefix":"StudentIDsep",
+		"body":[
+			"\\StudentIDsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StudentNamesep":{
+		"prefix":"StudentNamesep",
+		"body":[
+			"\\StudentNamesep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtaskformat":{
+		"prefix":"subtaskformat",
+		"body":[
+			"\\subtaskformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"taskformat":{
+		"prefix":"taskformat",
+		"body":[
+			"\\taskformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tasksep":{
+		"prefix":"tasksep",
+		"body":[
+			"\\tasksep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleimage{}":{
+		"prefix":"titleimage",
+		"body":[
+			"\\titleimage{${1:graphics code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"task{}":{
 		"prefix":"task",
 		"body":[
 			"\\begin{task}",
-				"\t$1",
+				"\t{${1:Überschrift%text}}",
 			"\\end{task}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"task*":{
+	"task[]{}":{
 		"prefix":"task",
 		"body":[
+			"\\begin{task}",
+				"\t[${2:Optionen%keyvals}]{${1:Überschrift%text}}",
+			"\\end{task}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"task*{}":{
+		"prefix":"*task",
+		"body":[
 			"\\begin{task*}",
-				"\t$1",
+				"\t{${1:Aufgabentitel%text}}",
 			"\\end{task*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"task*[]{}":{
+		"prefix":"*task",
+		"body":[
+			"\\begin{task*}",
+				"\t[${2:Optionen%keyvals}]{${1:Aufgabentitel%text}}",
+			"\\end{task*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -307,17 +366,41 @@
 			"\\begin{subtask}",
 				"\t$1",
 			"\\end{subtask}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subtask*":{
+	"subtask[]":{
 		"prefix":"subtask",
 		"body":[
+			"\\begin{subtask}",
+				"\t[${1:Optionen%keyvals}]",
+			"\\end{subtask}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtask*{}":{
+		"prefix":"*subtask",
+		"body":[
 			"\\begin{subtask*}",
-				"\t$1",
+				"\t{${1:Titel der Teilaufgabe%text}}",
 			"\\end{subtask*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subtask*[]{}":{
+		"prefix":"*subtask",
+		"body":[
+			"\\begin{subtask*}",
+				"\t[${2:Optionen%keyvals}]{${1:Titel der Teilaufgabe%text}}",
+			"\\end{subtask*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -327,7 +410,8 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -337,46 +421,7 @@
 			"\\begin{solution*}",
 				"\t$1",
 			"\\end{solution*}"
-		]
-	},
-
-
-	"task":{
-		"prefix":"task",
-		"body":[
-			"\\begin{task}",
-				"\t$1",
-			"\\end{task}"
-		]
-	},
-
-
-	"task*":{
-		"prefix":"task",
-		"body":[
-			"\\begin{task*}",
-				"\t$1",
-			"\\end{task*}"
-		]
-	},
-
-
-	"subtask":{
-		"prefix":"subtask",
-		"body":[
-			"\\begin{subtask}",
-				"\t$1",
-			"\\end{subtask}"
-		]
-	},
-
-
-	"subtask*":{
-		"prefix":"subtask",
-		"body":[
-			"\\begin{subtask*}",
-				"\t$1",
-			"\\end{subtask*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

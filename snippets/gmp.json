@@ -5,7 +5,8 @@
 		"prefix":"gmpoptions",
 		"body":[
 			"\\gmpoptions{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,71 +14,8 @@
 		"prefix":"usempxclass",
 		"body":[
 			"\\usempxclass{${1:class}}"
-		]
-	},
-
-
-	"usempxpackage{}":{
-		"prefix":"usempxpackage",
-		"body":[
-			"\\usempxpackage{${1:package}}"
-		]
-	},
-
-
-	"resetmpxpackages":{
-		"prefix":"resetmpxpackages",
-		"body":[
-			"\\resetmpxpackages"
-		]
-	},
-
-
-	"mpxcommands{}":{
-		"prefix":"mpxcommands",
-		"body":[
-			"\\mpxcommands{${1:commands}}"
-		]
-	},
-
-
-	"resetmpxcommands":{
-		"prefix":"resetmpxcommands",
-		"body":[
-			"\\resetmpxcommands"
-		]
-	},
-
-
-	"mpdim{}":{
-		"prefix":"mpdim",
-		"body":[
-			"\\mpdim{${1:dimen param}}"
-		]
-	},
-
-
-	"usempost{}":{
-		"prefix":"usempost",
-		"body":[
-			"\\usempost{${1:string}}"
-		]
-	},
-
-
-	"btex":{
-		"prefix":"btex",
-		"body":[
-			"\\btex"
-		]
-	},
-
-
-	"verbatimtex":{
-		"prefix":"verbatimtex",
-		"body":[
-			"\\verbatimtex"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +23,17 @@
 		"prefix":"usempxclass",
 		"body":[
 			"\\usempxclass[${2:options}]{${1:class}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usempxpackage{}":{
+		"prefix":"usempxpackage",
+		"body":[
+			"\\usempxpackage{${1:package}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +41,53 @@
 		"prefix":"usempxpackage",
 		"body":[
 			"\\usempxpackage[${2:options}]{${1:package}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"resetmpxpackages":{
+		"prefix":"resetmpxpackages",
+		"body":[
+			"\\resetmpxpackages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpxcommands{}":{
+		"prefix":"mpxcommands",
+		"body":[
+			"\\mpxcommands{${1:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetmpxcommands":{
+		"prefix":"resetmpxcommands",
+		"body":[
+			"\\resetmpxcommands"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpdim{}":{
+		"prefix":"mpdim",
+		"body":[
+			"\\mpdim{${1:dimen param}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usempost{}":{
+		"prefix":"usempost",
+		"body":[
+			"\\usempost{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +95,26 @@
 		"prefix":"usempost",
 		"body":[
 			"\\usempost[${2:options%keyvals}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"btex":{
+		"prefix":"btex",
+		"body":[
+			"\\btex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbatimtex":{
+		"prefix":"verbatimtex",
+		"body":[
+			"\\verbatimtex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,7 +124,19 @@
 			"\\begin{mpost}",
 				"\t$1",
 			"\\end{mpost}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpost[]":{
+		"prefix":"mpost",
+		"body":[
+			"\\begin{mpost}",
+				"\t[${1:options%keyvals}]",
+			"\\end{mpost}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -121,26 +146,18 @@
 			"\\begin{mpost*}",
 				"\t$1",
 			"\\end{mpost*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"mpost":{
-		"prefix":"mpost",
-		"body":[
-			"\\begin{mpost}",
-				"\t$1",
-			"\\end{mpost}"
-		]
-	},
-
-
-	"mpost*":{
-		"prefix":"mpost",
+	"mpost*[]":{
+		"prefix":"*mpost",
 		"body":[
 			"\\begin{mpost*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{mpost*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

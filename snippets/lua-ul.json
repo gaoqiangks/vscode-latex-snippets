@@ -5,87 +5,8 @@
 		"prefix":"underLine",
 		"body":[
 			"\\underLine{${1:text}}"
-		]
-	},
-
-
-	"highLight{}":{
-		"prefix":"highLight",
-		"body":[
-			"\\highLight{${1:text}}"
-		]
-	},
-
-
-	"strikeThrough{}":{
-		"prefix":"strikeThrough",
-		"body":[
-			"\\strikeThrough{${1:text}}"
-		]
-	},
-
-
-	"ul{}":{
-		"prefix":"ul",
-		"body":[
-			"\\ul{${1:text}}"
-		]
-	},
-
-
-	"textul{}":{
-		"prefix":"textul",
-		"body":[
-			"\\textul{${1:text}}"
-		]
-	},
-
-
-	"hl{}":{
-		"prefix":"hl",
-		"body":[
-			"\\hl{${1:text}}"
-		]
-	},
-
-
-	"texthl{}":{
-		"prefix":"texthl",
-		"body":[
-			"\\texthl{${1:text}}"
-		]
-	},
-
-
-	"st{}":{
-		"prefix":"st",
-		"body":[
-			"\\st{${1:text}}"
-		]
-	},
-
-
-	"textst{}":{
-		"prefix":"textst",
-		"body":[
-			"\\textst{${1:text}}"
-		]
-	},
-
-
-	"LuaULSetHighLightColor{}":{
-		"prefix":"LuaULSetHighLightColor",
-		"body":[
-			"\\LuaULSetHighLightColor{${1:color}}"
-		]
-	},
-
-
-	"newunderlinetype{}{}":{
-		"prefix":"newunderlinetype",
-		"body":[
-			"\\newunderlinetype{${1:cmd}}{${2:leaderscmd%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"underLine",
 		"body":[
 			"\\underLine[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"highLight{}":{
+		"prefix":"highLight",
+		"body":[
+			"\\highLight{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,17 @@
 		"prefix":"highLight",
 		"body":[
 			"\\highLight[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"strikeThrough{}":{
+		"prefix":"strikeThrough",
+		"body":[
+			"\\strikeThrough{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +50,17 @@
 		"prefix":"strikeThrough",
 		"body":[
 			"\\strikeThrough[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ul{}":{
+		"prefix":"ul",
+		"body":[
+			"\\ul{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +68,17 @@
 		"prefix":"ul",
 		"body":[
 			"\\ul[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textul{}":{
+		"prefix":"textul",
+		"body":[
+			"\\textul{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +86,17 @@
 		"prefix":"textul",
 		"body":[
 			"\\textul[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hl{}":{
+		"prefix":"hl",
+		"body":[
+			"\\hl{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +104,17 @@
 		"prefix":"hl",
 		"body":[
 			"\\hl[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"texthl{}":{
+		"prefix":"texthl",
+		"body":[
+			"\\texthl{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +122,17 @@
 		"prefix":"texthl",
 		"body":[
 			"\\texthl[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"st{}":{
+		"prefix":"st",
+		"body":[
+			"\\st{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +140,17 @@
 		"prefix":"st",
 		"body":[
 			"\\st[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textst{}":{
+		"prefix":"textst",
+		"body":[
+			"\\textst{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +158,26 @@
 		"prefix":"textst",
 		"body":[
 			"\\textst[${2:color}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LuaULSetHighLightColor{}":{
+		"prefix":"LuaULSetHighLightColor",
+		"body":[
+			"\\LuaULSetHighLightColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newunderlinetype{}{}":{
+		"prefix":"newunderlinetype",
+		"body":[
+			"\\newunderlinetype{${1:cmd}}{${2:leaderscmd%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +185,7 @@
 		"prefix":"newunderlinetype",
 		"body":[
 			"\\newunderlinetype{${1:cmd}}[${3:context specifier}]{${2:leaderscmd%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

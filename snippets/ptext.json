@@ -5,7 +5,8 @@
 		"prefix":"setptextdefault",
 		"body":[
 			"\\setptextdefault{${1:range}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"ptext",
 		"body":[
 			"\\ptext"
-		]
-	},
-
-
-	"ChangePtextPar":{
-		"prefix":"ChangePtextPar",
-		"body":[
-			"\\ChangePtextPar"
-		]
-	},
-
-
-	"ptext*":{
-		"prefix":"*ptext",
-		"body":[
-			"\\ptext*"
-		]
-	},
-
-
-	"ptext*[]":{
-		"prefix":"*ptext",
-		"body":[
-			"\\ptext*[${1:range}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +23,34 @@
 		"prefix":"ptext",
 		"body":[
 			"\\ptext[${1:range}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ptext*":{
+		"prefix":"*ptext",
+		"body":[
+			"\\ptext*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ptext*[]":{
+		"prefix":"*ptext",
+		"body":[
+			"\\ptext*[${1:range}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ChangePtextPar":{
+		"prefix":"ChangePtextPar",
+		"body":[
+			"\\ChangePtextPar"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

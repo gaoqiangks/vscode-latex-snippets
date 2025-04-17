@@ -5,127 +5,8 @@
 		"prefix":"hcrcircnum",
 		"body":[
 			"\\hcrcircnum{${1:number}}"
-		]
-	},
-
-
-	"hcrcircnumsetup{}":{
-		"prefix":"hcrcircnumsetup",
-		"body":[
-			"\\hcrcircnumsetup{${1:options}}"
-		]
-	},
-
-
-	"restorehcrcircnumsetup":{
-		"prefix":"restorehcrcircnumsetup",
-		"body":[
-			"\\restorehcrcircnumsetup"
-		]
-	},
-
-
-	"hzcircnum{}":{
-		"prefix":"hzcircnum",
-		"body":[
-			"\\hzcircnum{${1:number}}"
-		]
-	},
-
-
-	"hzcircnumsetup{}":{
-		"prefix":"hzcircnumsetup",
-		"body":[
-			"\\hzcircnumsetup{${1:args%keyvals}}"
-		]
-	},
-
-
-	"restorehzcircnumsetup":{
-		"prefix":"restorehzcircnumsetup",
-		"body":[
-			"\\restorehzcircnumsetup"
-		]
-	},
-
-
-	"tikzcircnum{}":{
-		"prefix":"tikzcircnum",
-		"body":[
-			"\\tikzcircnum{${1:number}}"
-		]
-	},
-
-
-	"tikzcircnumsetup{}":{
-		"prefix":"tikzcircnumsetup",
-		"body":[
-			"\\tikzcircnumsetup{${1:options}}"
-		]
-	},
-
-
-	"settikzcircnumsetup{}":{
-		"prefix":"settikzcircnumsetup",
-		"body":[
-			"\\settikzcircnumsetup{${1:options}}"
-		]
-	},
-
-
-	"restoretikzcircnumsetup":{
-		"prefix":"restoretikzcircnumsetup",
-		"body":[
-			"\\restoretikzcircnumsetup"
-		]
-	},
-
-
-	"declaretikzcircnumsmallsetup":{
-		"prefix":"declaretikzcircnumsmallsetup",
-		"body":[
-			"\\declaretikzcircnumsmallsetup"
-		]
-	},
-
-
-	"declaretikzcircnumbigsetup":{
-		"prefix":"declaretikzcircnumbigsetup",
-		"body":[
-			"\\declaretikzcircnumbigsetup"
-		]
-	},
-
-
-	"circnum{}":{
-		"prefix":"circnum",
-		"body":[
-			"\\circnum{${1:number}}"
-		]
-	},
-
-
-	"circnumsetup{}":{
-		"prefix":"circnumsetup",
-		"body":[
-			"\\circnumsetup{${1:options}}"
-		]
-	},
-
-
-	"restorecircnumsetup":{
-		"prefix":"restorecircnumsetup",
-		"body":[
-			"\\restorecircnumsetup"
-		]
-	},
-
-
-	"Cnum{}":{
-		"prefix":"Cnum",
-		"body":[
-			"\\Cnum{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,63 +14,8 @@
 		"prefix":"*hcrcircnum",
 		"body":[
 			"\\hcrcircnum*{${1:number}}"
-		]
-	},
-
-
-	"hcrcircnum*[]{}":{
-		"prefix":"*hcrcircnum",
-		"body":[
-			"\\hcrcircnum*[${2:options}]{${1:number}}"
-		]
-	},
-
-
-	"hzcircnum*{}":{
-		"prefix":"*hzcircnum",
-		"body":[
-			"\\hzcircnum*{${1:number}}"
-		]
-	},
-
-
-	"hzcircnum*[]{}":{
-		"prefix":"*hzcircnum",
-		"body":[
-			"\\hzcircnum*[${2:args%keyvals}]{${1:number}}"
-		]
-	},
-
-
-	"tikzcircnum*{}":{
-		"prefix":"*tikzcircnum",
-		"body":[
-			"\\tikzcircnum*{${1:number}}"
-		]
-	},
-
-
-	"tikzcircnum*[]{}":{
-		"prefix":"*tikzcircnum",
-		"body":[
-			"\\tikzcircnum*[${2:options}]{${1:number}}"
-		]
-	},
-
-
-	"circnum*{}":{
-		"prefix":"*circnum",
-		"body":[
-			"\\circnum*{${1:number}}"
-		]
-	},
-
-
-	"circnum*[]{}":{
-		"prefix":"*circnum",
-		"body":[
-			"\\circnum*[${2:options}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -197,7 +23,53 @@
 		"prefix":"hcrcircnum",
 		"body":[
 			"\\hcrcircnum[${2:options}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hcrcircnum*[]{}":{
+		"prefix":"*hcrcircnum",
+		"body":[
+			"\\hcrcircnum*[${2:options}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hcrcircnumsetup{}":{
+		"prefix":"hcrcircnumsetup",
+		"body":[
+			"\\hcrcircnumsetup{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorehcrcircnumsetup":{
+		"prefix":"restorehcrcircnumsetup",
+		"body":[
+			"\\restorehcrcircnumsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hzcircnum{}":{
+		"prefix":"hzcircnum",
+		"body":[
+			"\\hzcircnum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hzcircnum*{}":{
+		"prefix":"*hzcircnum",
+		"body":[
+			"\\hzcircnum*{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -205,7 +77,53 @@
 		"prefix":"hzcircnum",
 		"body":[
 			"\\hzcircnum[${2:args%keyvals}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hzcircnum*[]{}":{
+		"prefix":"*hzcircnum",
+		"body":[
+			"\\hzcircnum*[${2:args%keyvals}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hzcircnumsetup{}":{
+		"prefix":"hzcircnumsetup",
+		"body":[
+			"\\hzcircnumsetup{${1:args%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorehzcircnumsetup":{
+		"prefix":"restorehzcircnumsetup",
+		"body":[
+			"\\restorehzcircnumsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzcircnum{}":{
+		"prefix":"tikzcircnum",
+		"body":[
+			"\\tikzcircnum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzcircnum*{}":{
+		"prefix":"*tikzcircnum",
+		"body":[
+			"\\tikzcircnum*{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -213,7 +131,26 @@
 		"prefix":"tikzcircnum",
 		"body":[
 			"\\tikzcircnum[${2:options}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzcircnum*[]{}":{
+		"prefix":"*tikzcircnum",
+		"body":[
+			"\\tikzcircnum*[${2:options}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tikzcircnumsetup{}":{
+		"prefix":"tikzcircnumsetup",
+		"body":[
+			"\\tikzcircnumsetup{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +158,53 @@
 		"prefix":"tikzcircnumonce",
 		"body":[
 			"\\tikzcircnumonce[${2:options}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"settikzcircnumsetup{}":{
+		"prefix":"settikzcircnumsetup",
+		"body":[
+			"\\settikzcircnumsetup{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoretikzcircnumsetup":{
+		"prefix":"restoretikzcircnumsetup",
+		"body":[
+			"\\restoretikzcircnumsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"declaretikzcircnumsmallsetup":{
+		"prefix":"declaretikzcircnumsmallsetup",
+		"body":[
+			"\\declaretikzcircnumsmallsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"declaretikzcircnumbigsetup":{
+		"prefix":"declaretikzcircnumbigsetup",
+		"body":[
+			"\\declaretikzcircnumbigsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circnum{}":{
+		"prefix":"circnum",
+		"body":[
+			"\\circnum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,6 +212,52 @@
 		"prefix":"circnum",
 		"body":[
 			"\\circnum[${2:options}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"circnum*{}":{
+		"prefix":"*circnum",
+		"body":[
+			"\\circnum*{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"circnum*[]{}":{
+		"prefix":"*circnum",
+		"body":[
+			"\\circnum*[${2:options}]{${1:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"circnumsetup{}":{
+		"prefix":"circnumsetup",
+		"body":[
+			"\\circnumsetup{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorecircnumsetup":{
+		"prefix":"restorecircnumsetup",
+		"body":[
+			"\\restorecircnumsetup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Cnum{}":{
+		"prefix":"Cnum",
+		"body":[
+			"\\Cnum{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

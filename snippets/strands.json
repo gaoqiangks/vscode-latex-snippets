@@ -5,143 +5,8 @@
 		"prefix":"vpartition",
 		"body":[
 			"\\vpartition{${1:sorted blocks}}"
-		]
-	},
-
-
-	"arcpartition{}":{
-		"prefix":"arcpartition",
-		"body":[
-			"\\arcpartition{${1:sorted blocks}}"
-		]
-	},
-
-
-	"permutation{}":{
-		"prefix":"permutation",
-		"body":[
-			"\\permutation{${1:images of 1 to n}}"
-		]
-	},
-
-
-	"tiedpair{}{}":{
-		"prefix":"tiedpair",
-		"body":[
-			"\\tiedpair{${1:permutation}}{${2:set partition}}"
-		]
-	},
-
-
-	"tie{}":{
-		"prefix":"tie",
-		"body":[
-			"\\tie{${1:dots}}"
-		]
-	},
-
-
-	"strands{}":{
-		"prefix":"strands",
-		"body":[
-			"\\strands{${1:generators}}"
-		]
-	},
-
-
-	"getelem{}{}{}":{
-		"prefix":"getelem",
-		"body":[
-			"\\getelem{${1:list}}{${2:index}}{${3:name}}"
-		]
-	},
-
-
-	"decoratestrands":{
-		"prefix":"decoratestrands",
-		"body":[
-			"\\decoratestrands"
-		]
-	},
-
-
-	"vvpartition{}":{
-		"prefix":"vvpartition",
-		"body":[
-			"\\vvpartition{${1:sorted blocks}}"
-		]
-	},
-
-
-	"bbackstrands":{
-		"prefix":"bbackstrands",
-		"body":[
-			"\\bbackstrands"
-		]
-	},
-
-
-	"lleftstrand":{
-		"prefix":"lleftstrand",
-		"body":[
-			"\\lleftstrand"
-		]
-	},
-
-
-	"rrightstrand":{
-		"prefix":"rrightstrand",
-		"body":[
-			"\\rrightstrand"
-		]
-	},
-
-
-	"ccrossback":{
-		"prefix":"ccrossback",
-		"body":[
-			"\\ccrossback"
-		]
-	},
-
-
-	"bbraidgen":{
-		"prefix":"bbraidgen",
-		"body":[
-			"\\bbraidgen"
-		]
-	},
-
-
-	"ttanglegen":{
-		"prefix":"ttanglegen",
-		"body":[
-			"\\ttanglegen"
-		]
-	},
-
-
-	"aaddgen":{
-		"prefix":"aaddgen",
-		"body":[
-			"\\aaddgen"
-		]
-	},
-
-
-	"thelevelscounter":{
-		"prefix":"thelevelscounter",
-		"body":[
-			"\\thelevelscounter"
-		]
-	},
-
-
-	"sstrands{}":{
-		"prefix":"sstrands",
-		"body":[
-			"\\sstrands{${1:generators}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,17 @@
 		"prefix":"vpartition",
 		"body":[
 			"\\vpartition[${2:options%keyvals}]{${1:sorted blocks}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"arcpartition{}":{
+		"prefix":"arcpartition",
+		"body":[
+			"\\arcpartition{${1:sorted blocks}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +32,17 @@
 		"prefix":"arcpartition",
 		"body":[
 			"\\arcpartition[${2:options%keyvals}]{${1:sorted blocks}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"permutation{}":{
+		"prefix":"permutation",
+		"body":[
+			"\\permutation{${1:images of 1 to n}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +50,17 @@
 		"prefix":"permutation",
 		"body":[
 			"\\permutation[${2:options%keyvals}]{${1:images of 1 to n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tiedpair{}{}":{
+		"prefix":"tiedpair",
+		"body":[
+			"\\tiedpair{${1:permutation}}{${2:set partition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +68,17 @@
 		"prefix":"tiedpair",
 		"body":[
 			"\\tiedpair[${3:options%keyvals}]{${1:permutation}}{${2:set partition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tie{}":{
+		"prefix":"tie",
+		"body":[
+			"\\tie{${1:dots}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +86,17 @@
 		"prefix":"tie",
 		"body":[
 			"\\tie[${2:options%keyvals}]{${1:dots}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"strands{}":{
+		"prefix":"strands",
+		"body":[
+			"\\strands{${1:generators}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +104,26 @@
 		"prefix":"strands",
 		"body":[
 			"\\strands[${2:options%keyvals}]{${1:generators}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getelem{}{}{}":{
+		"prefix":"getelem",
+		"body":[
+			"\\getelem{${1:list}}{${2:index}}{${3:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"decoratestrands":{
+		"prefix":"decoratestrands",
+		"body":[
+			"\\decoratestrands"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +131,17 @@
 		"prefix":"decoratestrands",
 		"body":[
 			"\\decoratestrands[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vvpartition{}":{
+		"prefix":"vvpartition",
+		"body":[
+			"\\vvpartition{${1:sorted blocks}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +149,17 @@
 		"prefix":"vvpartition",
 		"body":[
 			"\\vvpartition[${2:options}]{${1:sorted blocks}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bbackstrands":{
+		"prefix":"bbackstrands",
+		"body":[
+			"\\bbackstrands"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +167,17 @@
 		"prefix":"bbackstrands",
 		"body":[
 			"\\bbackstrands[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lleftstrand":{
+		"prefix":"lleftstrand",
+		"body":[
+			"\\lleftstrand"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +185,17 @@
 		"prefix":"lleftstrand",
 		"body":[
 			"\\lleftstrand[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rrightstrand":{
+		"prefix":"rrightstrand",
+		"body":[
+			"\\rrightstrand"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +203,17 @@
 		"prefix":"rrightstrand",
 		"body":[
 			"\\rrightstrand[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ccrossback":{
+		"prefix":"ccrossback",
+		"body":[
+			"\\ccrossback"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +221,17 @@
 		"prefix":"ccrossback",
 		"body":[
 			"\\ccrossback[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bbraidgen":{
+		"prefix":"bbraidgen",
+		"body":[
+			"\\bbraidgen"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +239,17 @@
 		"prefix":"bbraidgen",
 		"body":[
 			"\\bbraidgen[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ttanglegen":{
+		"prefix":"ttanglegen",
+		"body":[
+			"\\ttanglegen"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +257,17 @@
 		"prefix":"ttanglegen",
 		"body":[
 			"\\ttanglegen[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"aaddgen":{
+		"prefix":"aaddgen",
+		"body":[
+			"\\aaddgen"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +275,26 @@
 		"prefix":"aaddgen",
 		"body":[
 			"\\aaddgen[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thelevelscounter":{
+		"prefix":"thelevelscounter",
+		"body":[
+			"\\thelevelscounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sstrands{}":{
+		"prefix":"sstrands",
+		"body":[
+			"\\sstrands{${1:generators}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,6 +302,7 @@
 		"prefix":"sstrands",
 		"body":[
 			"\\sstrands[${2:options}]{${1:generators}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -1,22 +1,24 @@
 {
 
 
-	"minipagewithmarginpars":{
+	"minipagewithmarginpars{}":{
 		"prefix":"minipagewithmarginpars",
 		"body":[
 			"\\begin{minipagewithmarginpars}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{minipagewithmarginpars}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"minipagewithmarginpars":{
+	"minipagewithmarginpars[]{}":{
 		"prefix":"minipagewithmarginpars",
 		"body":[
 			"\\begin{minipagewithmarginpars}",
-				"\t$1",
+				"\t[${2:position}]{${1:width}}",
 			"\\end{minipagewithmarginpars}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

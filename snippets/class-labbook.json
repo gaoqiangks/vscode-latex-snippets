@@ -5,7 +5,8 @@
 		"prefix":"theHexperiment",
 		"body":[
 			"\\theHexperiment"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"theHlabday",
 		"body":[
 			"\\theHlabday"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"theHsubexperiment",
 		"body":[
 			"\\theHsubexperiment"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"theHsubfigure",
 		"body":[
 			"\\theHsubfigure"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"labday",
 		"body":[
 			"\\labday"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,87 +50,8 @@
 		"prefix":"experiment",
 		"body":[
 			"\\experiment{${1:title}}"
-		]
-	},
-
-
-	"subexperiment{}":{
-		"prefix":"subexperiment",
-		"body":[
-			"\\subexperiment{${1:title}}"
-		]
-	},
-
-
-	"newexperiment{}{}":{
-		"prefix":"newexperiment",
-		"body":[
-			"\\newexperiment{${1:abbrev}}{${2:long form%text}}"
-		]
-	},
-
-
-	"newsubexperiment{}{}":{
-		"prefix":"newsubexperiment",
-		"body":[
-			"\\newsubexperiment{${1:abbrev}}{${2:long form%text}}"
-		]
-	},
-
-
-	"experimentmark{}":{
-		"prefix":"experimentmark",
-		"body":[
-			"\\experimentmark{${1:code}}"
-		]
-	},
-
-
-	"subexperimentmark{}":{
-		"prefix":"subexperimentmark",
-		"body":[
-			"\\subexperimentmark{${1:code}}"
-		]
-	},
-
-
-	"theexperiment":{
-		"prefix":"theexperiment",
-		"body":[
-			"\\theexperiment"
-		]
-	},
-
-
-	"thelabday":{
-		"prefix":"thelabday",
-		"body":[
-			"\\thelabday"
-		]
-	},
-
-
-	"thesubexperiment":{
-		"prefix":"thesubexperiment",
-		"body":[
-			"\\thesubexperiment"
-		]
-	},
-
-
-	"experiment*{}":{
-		"prefix":"*experiment",
-		"body":[
-			"\\experiment*{${1:title}}"
-		]
-	},
-
-
-	"subexperiment*{}":{
-		"prefix":"*subexperiment",
-		"body":[
-			"\\subexperiment*{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +59,26 @@
 		"prefix":"experiment",
 		"body":[
 			"\\experiment[${2:short title}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"experiment*{}":{
+		"prefix":"*experiment",
+		"body":[
+			"\\experiment*{${1:title}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"subexperiment{}":{
+		"prefix":"subexperiment",
+		"body":[
+			"\\subexperiment{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +86,26 @@
 		"prefix":"subexperiment",
 		"body":[
 			"\\subexperiment[${2:short title}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subexperiment*{}":{
+		"prefix":"*subexperiment",
+		"body":[
+			"\\subexperiment*{${1:title}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newexperiment{}{}":{
+		"prefix":"newexperiment",
+		"body":[
+			"\\newexperiment{${1:abbrev}}{${2:long form%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +113,17 @@
 		"prefix":"newexperiment",
 		"body":[
 			"\\newexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newsubexperiment{}{}":{
+		"prefix":"newsubexperiment",
+		"body":[
+			"\\newsubexperiment{${1:abbrev}}{${2:long form%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,6 +131,52 @@
 		"prefix":"newsubexperiment",
 		"body":[
 			"\\newsubexperiment{${1:abbrev}}[${3:short form%text}]{${2:long form%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"experimentmark{}":{
+		"prefix":"experimentmark",
+		"body":[
+			"\\experimentmark{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subexperimentmark{}":{
+		"prefix":"subexperimentmark",
+		"body":[
+			"\\subexperimentmark{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theexperiment":{
+		"prefix":"theexperiment",
+		"body":[
+			"\\theexperiment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thelabday":{
+		"prefix":"thelabday",
+		"body":[
+			"\\thelabday"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubexperiment":{
+		"prefix":"thesubexperiment",
+		"body":[
+			"\\thesubexperiment"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

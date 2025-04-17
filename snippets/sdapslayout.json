@@ -5,23 +5,8 @@
 		"prefix":"choice",
 		"body":[
 			"\\choice{${1:text}}"
-		]
-	},
-
-
-	"question{}":{
-		"prefix":"question",
-		"body":[
-			"\\question{${1:text}}"
-		]
-	},
-
-
-	"range{}{}{}{}":{
-		"prefix":"range",
-		"body":[
-			"\\range{${1:question%text}}{${2:lower%text}}{${3:upper%text}}{${4:other%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"choice",
 		"body":[
 			"\\choice[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"question{}":{
+		"prefix":"question",
+		"body":[
+			"\\question{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"question",
 		"body":[
 			"\\question[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"range{}{}{}{}":{
+		"prefix":"range",
+		"body":[
+			"\\range{${1:question%text}}{${2:lower%text}}{${3:upper%text}}{${4:other%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"range",
 		"body":[
 			"\\range[${5:options%keyvals}]{${1:question%text}}{${2:lower%text}}{${3:upper%text}}{${4:other%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -55,37 +61,19 @@
 			"\\begin{choicearray}",
 				"\t$1",
 			"\\end{choicearray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"optionarray":{
-		"prefix":"optionarray",
-		"body":[
-			"\\begin{optionarray}",
-				"\t$1",
-			"\\end{optionarray}"
-		]
-	},
-
-
-	"rangearray":{
-		"prefix":"rangearray",
-		"body":[
-			"\\begin{rangearray}",
-				"\t$1",
-			"\\end{rangearray}"
-		]
-	},
-
-
-	"choicearray":{
+	"choicearray[]":{
 		"prefix":"choicearray",
 		"body":[
 			"\\begin{choicearray}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{choicearray}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -95,7 +83,19 @@
 			"\\begin{optionarray}",
 				"\t$1",
 			"\\end{optionarray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionarray[]":{
+		"prefix":"optionarray",
+		"body":[
+			"\\begin{optionarray}",
+				"\t[${1:options%keyvals}]",
+			"\\end{optionarray}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -105,6 +105,18 @@
 			"\\begin{rangearray}",
 				"\t$1",
 			"\\end{rangearray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rangearray[]":{
+		"prefix":"rangearray",
+		"body":[
+			"\\begin{rangearray}",
+				"\t[${1:options%keyvals}]",
+			"\\end{rangearray}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

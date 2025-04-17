@@ -5,7 +5,8 @@
 		"prefix":"toftagstart",
 		"body":[
 			"\\toftagstart{${1:tag1,tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"toftagstop",
 		"body":[
 			"\\toftagstop{${1:tag1,tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"toftagthis",
 		"body":[
 			"\\toftagthis{${1:tag1,tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tofuntagthis",
 		"body":[
 			"\\tofuntagthis{${1:tag1,tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,55 +41,8 @@
 		"prefix":"nexttocwithtags",
 		"body":[
 			"\\nexttocwithtags{${1:required-tag1,required-tag2,...}}{${2:excluded-tag1,excluded-tag2,...}}"
-		]
-	},
-
-
-	"nexttocwithtags{}*{}":{
-		"prefix":"nexttocwithtags",
-		"body":[
-			"\\nexttocwithtags{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
-		]
-	},
-
-
-	"tableoftaggedcontents{}{}":{
-		"prefix":"tableoftaggedcontents",
-		"body":[
-			"\\tableoftaggedcontents{${1:required-tag1,required-tag2,...}}{${2:excluded-tag1,excluded-tag2,...}}"
-		]
-	},
-
-
-	"tableoftaggedcontents{}*{}":{
-		"prefix":"tableoftaggedcontents",
-		"body":[
-			"\\tableoftaggedcontents{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
-		]
-	},
-
-
-	"tableof{}":{
-		"prefix":"tableof",
-		"body":[
-			"\\tableof{${1:required-tag1,required-tag2,...}}"
-		]
-	},
-
-
-	"tablenotof{}":{
-		"prefix":"tablenotof",
-		"body":[
-			"\\tablenotof{${1:excluded-tag1,excluded-tag2,...}}"
-		]
-	},
-
-
-	"tofOpenTocFileForWrite":{
-		"prefix":"tofOpenTocFileForWrite",
-		"body":[
-			"\\tofOpenTocFileForWrite"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +50,17 @@
 		"prefix":"*nexttocwithtags",
 		"body":[
 			"\\nexttocwithtags*{${1:required-tag1,required-tag2,...}}{${2:excluded-tag1,excluded-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nexttocwithtags{}*{}":{
+		"prefix":"nexttocwithtags",
+		"body":[
+			"\\nexttocwithtags{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"*nexttocwithtags",
 		"body":[
 			"\\nexttocwithtags*{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tableoftaggedcontents{}{}":{
+		"prefix":"tableoftaggedcontents",
+		"body":[
+			"\\tableoftaggedcontents{${1:required-tag1,required-tag2,...}}{${2:excluded-tag1,excluded-tag2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,17 @@
 		"prefix":"*tableoftaggedcontents",
 		"body":[
 			"\\tableoftaggedcontents*{${1:required-tag1,required-tag2,...}}{${2:excluded-tag1,excluded-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tableoftaggedcontents{}*{}":{
+		"prefix":"tableoftaggedcontents",
+		"body":[
+			"\\tableoftaggedcontents{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +104,17 @@
 		"prefix":"*tableoftaggedcontents",
 		"body":[
 			"\\tableoftaggedcontents*{${1:required-tag1,required-tag2,...}}*{${2:excluded-tag1,excluded-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tableof{}":{
+		"prefix":"tableof",
+		"body":[
+			"\\tableof{${1:required-tag1,required-tag2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +122,17 @@
 		"prefix":"*tableof",
 		"body":[
 			"\\tableof*{${1:required-tag1,required-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tablenotof{}":{
+		"prefix":"tablenotof",
+		"body":[
+			"\\tablenotof{${1:excluded-tag1,excluded-tag2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,6 +140,16 @@
 		"prefix":"*tablenotof",
 		"body":[
 			"\\tablenotof*{${1:excluded-tag1,excluded-tag2,...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tofOpenTocFileForWrite":{
+		"prefix":"tofOpenTocFileForWrite",
+		"body":[
+			"\\tofOpenTocFileForWrite"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,39 +5,8 @@
 		"prefix":"settransparency",
 		"body":[
 			"\\settransparency{${1:ca}}{${2:CA}}{${3:content%text}}"
-		]
-	},
-
-
-	"settransparency*{}{}{}":{
-		"prefix":"*settransparency",
-		"body":[
-			"\\settransparency*{${1:ca}}{${2:CA}}{${3:content%text}}"
-		]
-	},
-
-
-	"settransparency*{}{}[]{}":{
-		"prefix":"*settransparency",
-		"body":[
-			"\\settransparency*{${1:ca}}{${2:CA}}[${4:PDF KVs}]{${3:content%text}}"
-		]
-	},
-
-
-	"settransparency*[]{}{}{}":{
-		"prefix":"*settransparency",
-		"body":[
-			"\\settransparency*[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}{${3:content%text}}"
-		]
-	},
-
-
-	"settransparency*[]{}{}[]{}":{
-		"prefix":"*settransparency",
-		"body":[
-			"\\settransparency*[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}[${5:PDF KVs}]{${3:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,8 @@
 		"prefix":"settransparency",
 		"body":[
 			"\\settransparency{${1:ca}}{${2:CA}}[${4:PDF KVs}]{${3:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +23,8 @@
 		"prefix":"settransparency",
 		"body":[
 			"\\settransparency[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}{${3:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,86 +32,131 @@
 		"prefix":"settransparency",
 		"body":[
 			"\\settransparency[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}[${5:PDF KVs}]{${3:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"settransparency":{
+	"settransparency*{}{}{}":{
+		"prefix":"*settransparency",
+		"body":[
+			"\\settransparency*{${1:ca}}{${2:CA}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settransparency*{}{}[]{}":{
+		"prefix":"*settransparency",
+		"body":[
+			"\\settransparency*{${1:ca}}{${2:CA}}[${4:PDF KVs}]{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settransparency*[]{}{}{}":{
+		"prefix":"*settransparency",
+		"body":[
+			"\\settransparency*[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settransparency*[]{}{}[]{}":{
+		"prefix":"*settransparency",
+		"body":[
+			"\\settransparency*[${4:blend mode%keyvals}]{${1:ca}}{${2:CA}}[${5:PDF KVs}]{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settransparency{}{}":{
 		"prefix":"settransparency",
 		"body":[
 			"\\begin{settransparency}",
-				"\t$1",
+				"\t{${1:ca}}{${2:CA}}",
 			"\\end{settransparency}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"settransparency*":{
-		"prefix":"settransparency",
-		"body":[
-			"\\begin{settransparency*}",
-				"\t$1",
-			"\\end{settransparency*}"
-		]
-	},
-
-
-	"settransparency":{
+	"settransparency{}{}[]":{
 		"prefix":"settransparency",
 		"body":[
 			"\\begin{settransparency}",
-				"\t$1",
+				"\t{${1:ca}}{${2:CA}}[${3:PDF KVs}]",
 			"\\end{settransparency}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"settransparency":{
+	"settransparency[]{}{}":{
 		"prefix":"settransparency",
 		"body":[
 			"\\begin{settransparency}",
-				"\t$1",
+				"\t[${3:blend mode%keyvals}]{${1:ca}}{${2:CA}}",
 			"\\end{settransparency}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"settransparency":{
+	"settransparency[]{}{}[]":{
 		"prefix":"settransparency",
 		"body":[
 			"\\begin{settransparency}",
-				"\t$1",
+				"\t[${3:blend mode%keyvals}]{${1:ca}}{${2:CA}}[${4:PDF KVs}]",
 			"\\end{settransparency}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"settransparency*":{
-		"prefix":"settransparency",
+	"settransparency*{}{}":{
+		"prefix":"*settransparency",
 		"body":[
 			"\\begin{settransparency*}",
-				"\t$1",
+				"\t{${1:ca}}{${2:CA}}",
 			"\\end{settransparency*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"settransparency*":{
-		"prefix":"settransparency",
+	"settransparency*{}{}[]":{
+		"prefix":"*settransparency",
 		"body":[
 			"\\begin{settransparency*}",
-				"\t$1",
+				"\t{${1:ca}}{${2:CA}}[${3:PDF KVs}]",
 			"\\end{settransparency*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"settransparency*":{
-		"prefix":"settransparency",
+	"settransparency*[]{}{}":{
+		"prefix":"*settransparency",
 		"body":[
 			"\\begin{settransparency*}",
-				"\t$1",
+				"\t[${3:blend mode%keyvals}]{${1:ca}}{${2:CA}}",
 			"\\end{settransparency*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settransparency*[]{}{}[]":{
+		"prefix":"*settransparency",
+		"body":[
+			"\\begin{settransparency*}",
+				"\t[${3:blend mode%keyvals}]{${1:ca}}{${2:CA}}[${4:PDF KVs}]",
+			"\\end{settransparency*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

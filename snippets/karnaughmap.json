@@ -5,175 +5,8 @@
 		"prefix":"karnaughmap",
 		"body":[
 			"\\karnaughmap{${1:entries}}"
-		]
-	},
-
-
-	"karnaughmapcolorfield{}{}{}":{
-		"prefix":"karnaughmapcolorfield",
-		"body":[
-			"\\karnaughmapcolorfield{${1:map size}}{${2:field string}}{${3:color}}"
-		]
-	},
-
-
-	"karnaughmapCellEntries":{
-		"prefix":"karnaughmapCellEntries",
-		"body":[
-			"\\karnaughmapCellEntries"
-		]
-	},
-
-
-	"karnaughmapHighlightField{}{}":{
-		"prefix":"karnaughmapHighlightField",
-		"body":[
-			"\\karnaughmapHighlightField{${1:coordinates}}{${2:color}}"
-		]
-	},
-
-
-	"karnaughmapNumCol":{
-		"prefix":"karnaughmapNumCol",
-		"body":[
-			"\\karnaughmapNumCol"
-		]
-	},
-
-
-	"karnaughmapNumRow":{
-		"prefix":"karnaughmapNumRow",
-		"body":[
-			"\\karnaughmapNumRow"
-		]
-	},
-
-
-	"karnaughmapNumVar":{
-		"prefix":"karnaughmapNumVar",
-		"body":[
-			"\\karnaughmapNumVar"
-		]
-	},
-
-
-	"karnaughmapPCCColumnSpecifier":{
-		"prefix":"karnaughmapPCCColumnSpecifier",
-		"body":[
-			"\\karnaughmapPCCColumnSpecifier"
-		]
-	},
-
-
-	"karnaughmapPrintCellContents{}{}{}{}{}":{
-		"prefix":"karnaughmapPrintCellContents",
-		"body":[
-			"\\karnaughmapPrintCellContents{${1:xoffset}}{${2:yoffset}}{${3:size}}{${4:rowsize}}{${5:function}}"
-		]
-	},
-
-
-	"karnaughmapPrintIndex":{
-		"prefix":"karnaughmapPrintIndex",
-		"body":[
-			"\\karnaughmapPrintIndex"
-		]
-	},
-
-
-	"karnaughmapPrintValue{}":{
-		"prefix":"karnaughmapPrintValue",
-		"body":[
-			"\\karnaughmapPrintValue{${1:input string}}"
-		]
-	},
-
-
-	"karnaughmapShadeMapfieldFOUR{}{}":{
-		"prefix":"karnaughmapShadeMapfieldFOUR",
-		"body":[
-			"\\karnaughmapShadeMapfieldFOUR{${1:decimal number}}{${2:color}}"
-		]
-	},
-
-
-	"karnaughmapShadeMapfieldTHREE{}{}":{
-		"prefix":"karnaughmapShadeMapfieldTHREE",
-		"body":[
-			"\\karnaughmapShadeMapfieldTHREE{${1:decimal number}}{${2:color}}"
-		]
-	},
-
-
-	"karnaughmapShadeMapfieldTWO{}{}":{
-		"prefix":"karnaughmapShadeMapfieldTWO",
-		"body":[
-			"\\karnaughmapShadeMapfieldTWO{${1:decimal number}}{${2:color}}"
-		]
-	},
-
-
-	"karnaughmapSize":{
-		"prefix":"karnaughmapSize",
-		"body":[
-			"\\karnaughmapSize"
-		]
-	},
-
-
-	"karnaughmapVarLabelB":{
-		"prefix":"karnaughmapVarLabelB",
-		"body":[
-			"\\karnaughmapVarLabelB"
-		]
-	},
-
-
-	"karnaughmapVarLabelD":{
-		"prefix":"karnaughmapVarLabelD",
-		"body":[
-			"\\karnaughmapVarLabelD"
-		]
-	},
-
-
-	"karnaughmapVariableBaseBias":{
-		"prefix":"karnaughmapVariableBaseBias",
-		"body":[
-			"\\karnaughmapVariableBaseBias"
-		]
-	},
-
-
-	"karnaughmapVariableLeftBias":{
-		"prefix":"karnaughmapVariableLeftBias",
-		"body":[
-			"\\karnaughmapVariableLeftBias"
-		]
-	},
-
-
-	"karnaughmapVariableTopBias":{
-		"prefix":"karnaughmapVariableTopBias",
-		"body":[
-			"\\karnaughmapVariableTopBias"
-		]
-	},
-
-
-	"thekarnaughmapIdxCounter":{
-		"prefix":"thekarnaughmapIdxCounter",
-		"body":[
-			"\\thekarnaughmapIdxCounter"
-		]
-	},
-
-
-	"thekarnaughmapStrCounter":{
-		"prefix":"thekarnaughmapStrCounter",
-		"body":[
-			"\\thekarnaughmapStrCounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +14,17 @@
 		"prefix":"karnaughmap",
 		"body":[
 			"\\karnaughmap[${2:options%keyvals}]{${1:entries}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapcolorfield{}{}{}":{
+		"prefix":"karnaughmapcolorfield",
+		"body":[
+			"\\karnaughmapcolorfield{${1:map size}}{${2:field string}}{${3:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +32,8 @@
 		"prefix":"karnaughmapcolorfield",
 		"body":[
 			"\\karnaughmapcolorfield[${4:TikZ keys}]{${1:map size}}{${2:field string}}{${3:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +41,26 @@
 		"prefix":"setkarnaughmap",
 		"body":[
 			"\\setkarnaughmap[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapCellEntries":{
+		"prefix":"karnaughmapCellEntries",
+		"body":[
+			"\\karnaughmapCellEntries"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapHighlightField{}{}":{
+		"prefix":"karnaughmapHighlightField",
+		"body":[
+			"\\karnaughmapHighlightField{${1:coordinates}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +68,53 @@
 		"prefix":"karnaughmapHighlightField",
 		"body":[
 			"\\karnaughmapHighlightField[${3:options}]{${1:coordinates}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapNumCol":{
+		"prefix":"karnaughmapNumCol",
+		"body":[
+			"\\karnaughmapNumCol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapNumRow":{
+		"prefix":"karnaughmapNumRow",
+		"body":[
+			"\\karnaughmapNumRow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapNumVar":{
+		"prefix":"karnaughmapNumVar",
+		"body":[
+			"\\karnaughmapNumVar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapPCCColumnSpecifier":{
+		"prefix":"karnaughmapPCCColumnSpecifier",
+		"body":[
+			"\\karnaughmapPCCColumnSpecifier"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapPrintCellContents{}{}{}{}{}":{
+		"prefix":"karnaughmapPrintCellContents",
+		"body":[
+			"\\karnaughmapPrintCellContents{${1:xoffset}}{${2:yoffset}}{${3:size}}{${4:rowsize}}{${5:function}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +122,17 @@
 		"prefix":"karnaughmapPrintCellContents",
 		"body":[
 			"\\karnaughmapPrintCellContents[${6:node pos}]{${1:xoffset}}{${2:yoffset}}{${3:size}}{${4:rowsize}}{${5:function}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapPrintIndex":{
+		"prefix":"karnaughmapPrintIndex",
+		"body":[
+			"\\karnaughmapPrintIndex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +140,17 @@
 		"prefix":"karnaughmapPrintIndex",
 		"body":[
 			"\\karnaughmapPrintIndex[${1:numBits}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapPrintValue{}":{
+		"prefix":"karnaughmapPrintValue",
+		"body":[
+			"\\karnaughmapPrintValue{${1:input string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +158,17 @@
 		"prefix":"karnaughmapPrintValue",
 		"body":[
 			"\\karnaughmapPrintValue[${2:value}]{${1:input string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapShadeMapfieldFOUR{}{}":{
+		"prefix":"karnaughmapShadeMapfieldFOUR",
+		"body":[
+			"\\karnaughmapShadeMapfieldFOUR{${1:decimal number}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +176,17 @@
 		"prefix":"karnaughmapShadeMapfieldFOUR",
 		"body":[
 			"\\karnaughmapShadeMapfieldFOUR[${3:options}]{${1:decimal number}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapShadeMapfieldTHREE{}{}":{
+		"prefix":"karnaughmapShadeMapfieldTHREE",
+		"body":[
+			"\\karnaughmapShadeMapfieldTHREE{${1:decimal number}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +194,17 @@
 		"prefix":"karnaughmapShadeMapfieldTHREE",
 		"body":[
 			"\\karnaughmapShadeMapfieldTHREE[${3:options}]{${1:decimal number}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapShadeMapfieldTWO{}{}":{
+		"prefix":"karnaughmapShadeMapfieldTWO",
+		"body":[
+			"\\karnaughmapShadeMapfieldTWO{${1:decimal number}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,6 +212,79 @@
 		"prefix":"karnaughmapShadeMapfieldTWO",
 		"body":[
 			"\\karnaughmapShadeMapfieldTWO[${3:options}]{${1:decimal number}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"karnaughmapSize":{
+		"prefix":"karnaughmapSize",
+		"body":[
+			"\\karnaughmapSize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapVarLabelB":{
+		"prefix":"karnaughmapVarLabelB",
+		"body":[
+			"\\karnaughmapVarLabelB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapVarLabelD":{
+		"prefix":"karnaughmapVarLabelD",
+		"body":[
+			"\\karnaughmapVarLabelD"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapVariableBaseBias":{
+		"prefix":"karnaughmapVariableBaseBias",
+		"body":[
+			"\\karnaughmapVariableBaseBias"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapVariableLeftBias":{
+		"prefix":"karnaughmapVariableLeftBias",
+		"body":[
+			"\\karnaughmapVariableLeftBias"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"karnaughmapVariableTopBias":{
+		"prefix":"karnaughmapVariableTopBias",
+		"body":[
+			"\\karnaughmapVariableTopBias"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thekarnaughmapIdxCounter":{
+		"prefix":"thekarnaughmapIdxCounter",
+		"body":[
+			"\\thekarnaughmapIdxCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thekarnaughmapStrCounter":{
+		"prefix":"thekarnaughmapStrCounter",
+		"body":[
+			"\\thekarnaughmapStrCounter"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

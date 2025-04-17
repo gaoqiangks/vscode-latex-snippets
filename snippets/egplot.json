@@ -5,7 +5,8 @@
 		"prefix":"egpwrite",
 		"body":[
 			"\\egpwrite{${1:gnuplot code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"egpprelude",
 		"body":[
 			"\\egpprelude{${1:gnuplot prelude%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"egpaddtoprelude",
 		"body":[
 			"\\egpaddtoprelude{${1:gnuplot code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,119 +32,8 @@
 		"prefix":"egpuse",
 		"body":[
 			"\\egpuse{${1:name}}"
-		]
-	},
-
-
-	"egpfigprelude{}":{
-		"prefix":"egpfigprelude",
-		"body":[
-			"\\egpfigprelude{${1:gnuplot prelude%definition}}"
-		]
-	},
-
-
-	"egpaddtofigprelude{}":{
-		"prefix":"egpaddtofigprelude",
-		"body":[
-			"\\egpaddtofigprelude{${1:gnuplot code%definition}}"
-		]
-	},
-
-
-	"egpfigepilog{}":{
-		"prefix":"egpfigepilog",
-		"body":[
-			"\\egpfigepilog{${1:gnuplot epilog%definition}}"
-		]
-	},
-
-
-	"egpaddtofigepilog{}":{
-		"prefix":"egpaddtofigepilog",
-		"body":[
-			"\\egpaddtofigepilog{${1:gnuplot code%definition}}"
-		]
-	},
-
-
-	"egpcalc{}":{
-		"prefix":"egpcalc",
-		"body":[
-			"\\egpcalc{${1:gnuplot expr%definition}}"
-		]
-	},
-
-
-	"egpuseval{}":{
-		"prefix":"egpuseval",
-		"body":[
-			"\\egpuseval{${1:name%definition}}"
-		]
-	},
-
-
-	"egpshowval{}":{
-		"prefix":"egpshowval",
-		"body":[
-			"\\egpshowval{${1:gnuplot expr%definition}}"
-		]
-	},
-
-
-	"egpassign{}{}":{
-		"prefix":"egpassign",
-		"body":[
-			"\\egpassign{${1:variable%definition}}{${2:gnuplot expr%definition}}"
-		]
-	},
-
-
-	"theegpcalc":{
-		"prefix":"theegpcalc",
-		"body":[
-			"\\theegpcalc"
-		]
-	},
-
-
-	"theegpfig":{
-		"prefix":"theegpfig",
-		"body":[
-			"\\theegpfig"
-		]
-	},
-
-
-	"theegpfile":{
-		"prefix":"theegpfile",
-		"body":[
-			"\\theegpfile"
-		]
-	},
-
-
-	"theegpfilename":{
-		"prefix":"theegpfilename",
-		"body":[
-			"\\theegpfilename"
-		]
-	},
-
-
-	"theegpfilenum":{
-		"prefix":"theegpfilenum",
-		"body":[
-			"\\theegpfilenum"
-		]
-	},
-
-
-	"egpcomment":{
-		"prefix":"egpcomment",
-		"body":[
-			"\\egpcomment"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +41,53 @@
 		"prefix":"egpuse",
 		"body":[
 			"\\egpuse[${2:keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"egpfigprelude{}":{
+		"prefix":"egpfigprelude",
+		"body":[
+			"\\egpfigprelude{${1:gnuplot prelude%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpaddtofigprelude{}":{
+		"prefix":"egpaddtofigprelude",
+		"body":[
+			"\\egpaddtofigprelude{${1:gnuplot code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpfigepilog{}":{
+		"prefix":"egpfigepilog",
+		"body":[
+			"\\egpfigepilog{${1:gnuplot epilog%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpaddtofigepilog{}":{
+		"prefix":"egpaddtofigepilog",
+		"body":[
+			"\\egpaddtofigepilog{${1:gnuplot code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpcalc{}":{
+		"prefix":"egpcalc",
+		"body":[
+			"\\egpcalc{${1:gnuplot expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +95,26 @@
 		"prefix":"egpcalc",
 		"body":[
 			"\\egpcalc[${2:name%definition}]{${1:gnuplot expr%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"egpuseval{}":{
+		"prefix":"egpuseval",
+		"body":[
+			"\\egpuseval{${1:name%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpshowval{}":{
+		"prefix":"egpshowval",
+		"body":[
+			"\\egpshowval{${1:gnuplot expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +122,71 @@
 		"prefix":"egpshowval",
 		"body":[
 			"\\egpshowval[${2:name%definition}]{${1:gnuplot expr%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"egpassign{}{}":{
+		"prefix":"egpassign",
+		"body":[
+			"\\egpassign{${1:variable%definition}}{${2:gnuplot expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theegpcalc":{
+		"prefix":"theegpcalc",
+		"body":[
+			"\\theegpcalc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theegpfig":{
+		"prefix":"theegpfig",
+		"body":[
+			"\\theegpfig"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theegpfile":{
+		"prefix":"theegpfile",
+		"body":[
+			"\\theegpfile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theegpfilename":{
+		"prefix":"theegpfilename",
+		"body":[
+			"\\theegpfilename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theegpfilenum":{
+		"prefix":"theegpfilenum",
+		"body":[
+			"\\theegpfilenum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpcomment":{
+		"prefix":"egpcomment",
+		"body":[
+			"\\egpcomment"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -175,7 +196,19 @@
 			"\\begin{egpfile}",
 				"\t$1",
 			"\\end{egpfile}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"egpfile[]":{
+		"prefix":"egpfile",
+		"body":[
+			"\\begin{egpfile}",
+				"\t[${1:gnuplot file%file}]",
+			"\\end{egpfile}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -185,7 +218,8 @@
 			"\\begin{egpcmds}",
 				"\t$1",
 			"\\end{egpcmds}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -195,56 +229,51 @@
 			"\\begin{egp}",
 				"\t$1",
 			"\\end{egp}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"egpx":{
+	"egp[]":{
+		"prefix":"egp",
+		"body":[
+			"\\begin{egp}",
+				"\t[${1:name}]",
+			"\\end{egp}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"egpx{}":{
 		"prefix":"egpx",
 		"body":[
 			"\\begin{egpx}",
-				"\t$1",
+				"\t{${1:keyvals}}",
 			"\\end{egpx}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"egpdef":{
+	"egpx[]{}":{
+		"prefix":"egpx",
+		"body":[
+			"\\begin{egpx}",
+				"\t[${2:name}]{${1:keyvals}}",
+			"\\end{egpx}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"egpdef{}":{
 		"prefix":"egpdef",
 		"body":[
 			"\\begin{egpdef}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{egpdef}"
-		]
-	},
-
-
-	"egpfile":{
-		"prefix":"egpfile",
-		"body":[
-			"\\begin{egpfile}",
-				"\t$1",
-			"\\end{egpfile}"
-		]
-	},
-
-
-	"egp":{
-		"prefix":"egp",
-		"body":[
-			"\\begin{egp}",
-				"\t$1",
-			"\\end{egp}"
-		]
-	},
-
-
-	"egpx":{
-		"prefix":"egpx",
-		"body":[
-			"\\begin{egpx}",
-				"\t$1",
-			"\\end{egpx}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

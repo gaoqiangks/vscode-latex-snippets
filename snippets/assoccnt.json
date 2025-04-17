@@ -5,223 +5,8 @@
 		"prefix":"setcounter",
 		"body":[
 			"\\setcounter{${1:counter}}{${2:value}}"
-		]
-	},
-
-
-	"DeclareAssociatedCounters{}{}":{
-		"prefix":"DeclareAssociatedCounters",
-		"body":[
-			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
-		]
-	},
-
-
-	"AddAssociatedCounters{}{}":{
-		"prefix":"AddAssociatedCounters",
-		"body":[
-			"\\AddAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
-		]
-	},
-
-
-	"RemoveAssociatedCounter{}{}":{
-		"prefix":"RemoveAssociatedCounter",
-		"body":[
-			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:associated counter}}"
-		]
-	},
-
-
-	"RemoveAssociatedCounters{}{}":{
-		"prefix":"RemoveAssociatedCounters",
-		"body":[
-			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
-		]
-	},
-
-
-	"ClearAssociatedCounters{}":{
-		"prefix":"ClearAssociatedCounters",
-		"body":[
-			"\\ClearAssociatedCounters{${1:driver counter}}"
-		]
-	},
-
-
-	"AddDriverCounter{}":{
-		"prefix":"AddDriverCounter",
-		"body":[
-			"\\AddDriverCounter{${1:driver counter name}}"
-		]
-	},
-
-
-	"ClearDriverCounter":{
-		"prefix":"ClearDriverCounter",
-		"body":[
-			"\\ClearDriverCounter"
-		]
-	},
-
-
-	"IsAssociatedToCounter{}{}{}{}":{
-		"prefix":"IsAssociatedToCounter",
-		"body":[
-			"\\IsAssociatedToCounter{${1:driver counter}}{${2:associated counter}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"GetDriverCounter{}":{
-		"prefix":"GetDriverCounter",
-		"body":[
-			"\\GetDriverCounter{${1:counter}}"
-		]
-	},
-
-
-	"IsAssociatedCounter{}{}{}":{
-		"prefix":"IsAssociatedCounter",
-		"body":[
-			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsDriverCounter{}{}{}":{
-		"prefix":"IsDriverCounter",
-		"body":[
-			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsSuspendedCounter{}{}{}":{
-		"prefix":"IsSuspendedCounter",
-		"body":[
-			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"AssociatedDriverCounterInfo{}":{
-		"prefix":"AssociatedDriverCounterInfo",
-		"body":[
-			"\\AssociatedDriverCounterInfo{${1:counter}}"
-		]
-	},
-
-
-	"LastAddedToCounter":{
-		"prefix":"LastAddedToCounter",
-		"body":[
-			"\\LastAddedToCounter"
-		]
-	},
-
-
-	"LastSteppedCounter":{
-		"prefix":"LastSteppedCounter",
-		"body":[
-			"\\LastSteppedCounter"
-		]
-	},
-
-
-	"LastRefSteppedCounter":{
-		"prefix":"LastRefSteppedCounter",
-		"body":[
-			"\\LastRefSteppedCounter"
-		]
-	},
-
-
-	"LastSetCounter":{
-		"prefix":"LastSetCounter",
-		"body":[
-			"\\LastSetCounter"
-		]
-	},
-
-
-	"PrettyPrintCounterName{}":{
-		"prefix":"PrettyPrintCounterName",
-		"body":[
-			"\\PrettyPrintCounterName{${1:counter}}"
-		]
-	},
-
-
-	"GeneralCounterInfoColor":{
-		"prefix":"GeneralCounterInfoColor",
-		"body":[
-			"\\GeneralCounterInfoColor"
-		]
-	},
-
-
-	"DriverCounterInfoColor":{
-		"prefix":"DriverCounterInfoColor",
-		"body":[
-			"\\DriverCounterInfoColor"
-		]
-	},
-
-
-	"AssociatedCounterInfoColor":{
-		"prefix":"AssociatedCounterInfoColor",
-		"body":[
-			"\\AssociatedCounterInfoColor"
-		]
-	},
-
-
-	"SuspendCounters{}":{
-		"prefix":"SuspendCounters",
-		"body":[
-			"\\SuspendCounters{${1:counters list}}"
-		]
-	},
-
-
-	"ResumeSuspendedCounters":{
-		"prefix":"ResumeSuspendedCounters",
-		"body":[
-			"\\ResumeSuspendedCounters"
-		]
-	},
-
-
-	"AssociationStatistics":{
-		"prefix":"AssociationStatistics",
-		"body":[
-			"\\AssociationStatistics"
-		]
-	},
-
-
-	"ClearAssociatedCountersList{}":{
-		"prefix":"ClearAssociatedCountersList",
-		"body":[
-			"\\ClearAssociatedCountersList{${1:associated counters list}}"
-		]
-	},
-
-
-	"ClearDriverCountersList":{
-		"prefix":"ClearDriverCountersList",
-		"body":[
-			"\\ClearDriverCountersList"
-		]
-	},
-
-
-	"IsInResetList{}{}{}{}":{
-		"prefix":"IsInResetList",
-		"body":[
-			"\\IsInResetList{${1:arg1}}{${2:arg2}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +14,170 @@
 		"prefix":"setcounter",
 		"body":[
 			"\\setcounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareAssociatedCounters{}{}":{
+		"prefix":"DeclareAssociatedCounters",
+		"body":[
+			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddAssociatedCounters{}{}":{
+		"prefix":"AddAssociatedCounters",
+		"body":[
+			"\\AddAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveAssociatedCounter{}{}":{
+		"prefix":"RemoveAssociatedCounter",
+		"body":[
+			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:associated counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveAssociatedCounters{}{}":{
+		"prefix":"RemoveAssociatedCounters",
+		"body":[
+			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:associated counters list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearAssociatedCounters{}":{
+		"prefix":"ClearAssociatedCounters",
+		"body":[
+			"\\ClearAssociatedCounters{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddDriverCounter{}":{
+		"prefix":"AddDriverCounter",
+		"body":[
+			"\\AddDriverCounter{${1:driver counter name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearDriverCounter":{
+		"prefix":"ClearDriverCounter",
+		"body":[
+			"\\ClearDriverCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsAssociatedToCounter{}{}{}{}":{
+		"prefix":"IsAssociatedToCounter",
+		"body":[
+			"\\IsAssociatedToCounter{${1:driver counter}}{${2:associated counter}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetDriverCounter{}":{
+		"prefix":"GetDriverCounter",
+		"body":[
+			"\\GetDriverCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsAssociatedCounter{}{}{}":{
+		"prefix":"IsAssociatedCounter",
+		"body":[
+			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsDriverCounter{}{}{}":{
+		"prefix":"IsDriverCounter",
+		"body":[
+			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsSuspendedCounter{}{}{}":{
+		"prefix":"IsSuspendedCounter",
+		"body":[
+			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AssociatedDriverCounterInfo{}":{
+		"prefix":"AssociatedDriverCounterInfo",
+		"body":[
+			"\\AssociatedDriverCounterInfo{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastAddedToCounter":{
+		"prefix":"LastAddedToCounter",
+		"body":[
+			"\\LastAddedToCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastSteppedCounter":{
+		"prefix":"LastSteppedCounter",
+		"body":[
+			"\\LastSteppedCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastRefSteppedCounter":{
+		"prefix":"LastRefSteppedCounter",
+		"body":[
+			"\\LastRefSteppedCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastSetCounter":{
+		"prefix":"LastSetCounter",
+		"body":[
+			"\\LastSetCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrettyPrintCounterName{}":{
+		"prefix":"PrettyPrintCounterName",
+		"body":[
+			"\\PrettyPrintCounterName{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,6 +185,88 @@
 		"prefix":"PrettyPrintCounterName",
 		"body":[
 			"\\PrettyPrintCounterName[${2:options%keyvals}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GeneralCounterInfoColor":{
+		"prefix":"GeneralCounterInfoColor",
+		"body":[
+			"\\GeneralCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DriverCounterInfoColor":{
+		"prefix":"DriverCounterInfoColor",
+		"body":[
+			"\\DriverCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AssociatedCounterInfoColor":{
+		"prefix":"AssociatedCounterInfoColor",
+		"body":[
+			"\\AssociatedCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SuspendCounters{}":{
+		"prefix":"SuspendCounters",
+		"body":[
+			"\\SuspendCounters{${1:counters list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResumeSuspendedCounters":{
+		"prefix":"ResumeSuspendedCounters",
+		"body":[
+			"\\ResumeSuspendedCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AssociationStatistics":{
+		"prefix":"AssociationStatistics",
+		"body":[
+			"\\AssociationStatistics"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearAssociatedCountersList{}":{
+		"prefix":"ClearAssociatedCountersList",
+		"body":[
+			"\\ClearAssociatedCountersList{${1:associated counters list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearDriverCountersList":{
+		"prefix":"ClearDriverCountersList",
+		"body":[
+			"\\ClearDriverCountersList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsInResetList{}{}{}{}":{
+		"prefix":"IsInResetList",
+		"body":[
+			"\\IsInResetList{${1:arg1}}{${2:arg2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -1,123 +1,12 @@
 {
 
 
-	"slidesmag{}":{
-		"prefix":"slidesmag",
-		"body":[
-			"\\slidesmag{${1:factor}}"
-		]
-	},
-
-
-	"slidestyle{}":{
-		"prefix":"slidestyle",
-		"body":[
-			"\\slidestyle{${1:style%keyvals}}"
-		]
-	},
-
-
-	"fromslide{}{}":{
-		"prefix":"fromslide",
-		"body":[
-			"\\fromslide{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
-	"toslide{}{}":{
-		"prefix":"toslide",
-		"body":[
-			"\\toslide{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
-	"onlyslide{}{}":{
-		"prefix":"onlyslide",
-		"body":[
-			"\\onlyslide{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
-	"slidewidth":{
-		"prefix":"slidewidth",
-		"body":[
-			"\\slidewidth"
-		]
-	},
-
-
-	"slideheight":{
-		"prefix":"slideheight",
-		"body":[
-			"\\slideheight"
-		]
-	},
-
-
-	"theslide":{
-		"prefix":"theslide",
-		"body":[
-			"\\theslide"
-		]
-	},
-
-
-	"thesubslide":{
-		"prefix":"thesubslide",
-		"body":[
-			"\\thesubslide"
-		]
-	},
-
-
-	"theslidelabel":{
-		"prefix":"theslidelabel",
-		"body":[
-			"\\theslidelabel"
-		]
-	},
-
-
-	"slidesadjust{}{}":{
-		"prefix":"slidesadjust",
-		"body":[
-			"\\slidesadjust{${1:hadjust}}{${2:vadjust}}"
-		]
-	},
-
-
-	"fromslide*{}{}":{
-		"prefix":"*fromslide",
-		"body":[
-			"\\fromslide*{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
-	"toslide*{}{}":{
-		"prefix":"*toslide",
-		"body":[
-			"\\toslide*{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
-	"onlyslide*{}{}":{
-		"prefix":"*onlyslide",
-		"body":[
-			"\\onlyslide*{${1:slide number}}{${2:material%text}}"
-		]
-	},
-
-
 	"title[]{}":{
 		"prefix":"title",
 		"body":[
 			"\\title[${2:short title%text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +14,80 @@
 		"prefix":"author",
 		"body":[
 			"\\author[${2:short author}]{${1:names}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"slidesmag{}":{
+		"prefix":"slidesmag",
+		"body":[
+			"\\slidesmag{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slidestyle{}":{
+		"prefix":"slidestyle",
+		"body":[
+			"\\slidestyle{${1:style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromslide{}{}":{
+		"prefix":"fromslide",
+		"body":[
+			"\\fromslide{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fromslide*{}{}":{
+		"prefix":"*fromslide",
+		"body":[
+			"\\fromslide*{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toslide{}{}":{
+		"prefix":"toslide",
+		"body":[
+			"\\toslide{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toslide*{}{}":{
+		"prefix":"*toslide",
+		"body":[
+			"\\toslide*{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"onlyslide{}{}":{
+		"prefix":"onlyslide",
+		"body":[
+			"\\onlyslide{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"onlyslide*{}{}":{
+		"prefix":"*onlyslide",
+		"body":[
+			"\\onlyslide*{${1:slide number}}{${2:material%text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -133,17 +95,84 @@
 		"prefix":"tableofcontents",
 		"body":[
 			"\\tableofcontents[${1:<fromsec>.<${2:fromsubsec}>-<${3:tosec}>.<${4:tosubsec}>}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"slide":{
+	"slidewidth":{
+		"prefix":"slidewidth",
+		"body":[
+			"\\slidewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slideheight":{
+		"prefix":"slideheight",
+		"body":[
+			"\\slideheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theslide":{
+		"prefix":"theslide",
+		"body":[
+			"\\theslide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubslide":{
+		"prefix":"thesubslide",
+		"body":[
+			"\\thesubslide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theslidelabel":{
+		"prefix":"theslidelabel",
+		"body":[
+			"\\theslidelabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slidesadjust{}{}":{
+		"prefix":"slidesadjust",
+		"body":[
+			"\\slidesadjust{${1:hadjust}}{${2:vadjust}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slide{}":{
 		"prefix":"slide",
 		"body":[
 			"\\begin{slide}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{slide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slide[]{}":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t[${2:style%keyvals}]{${1:title%text}}",
+			"\\end{slide}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -153,36 +182,29 @@
 			"\\begin{notes}",
 				"\t$1",
 			"\\end{notes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"multislide":{
+	"multislide{}{}":{
 		"prefix":"multislide",
 		"body":[
 			"\\begin{multislide}",
-				"\t$1",
+				"\t{${1:sub-slides}}{${2:title%text}}",
 			"\\end{multislide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\begin{slide}",
-				"\t$1",
-			"\\end{slide}"
-		]
-	},
-
-
-	"multislide":{
+	"multislide[]{}{}":{
 		"prefix":"multislide",
 		"body":[
 			"\\begin{multislide}",
-				"\t$1",
+				"\t[${3:style%keyvals}]{${1:sub-slides}}{${2:title%text}}",
 			"\\end{multislide}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

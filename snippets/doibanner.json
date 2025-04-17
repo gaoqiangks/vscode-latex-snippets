@@ -5,39 +5,8 @@
 		"prefix":"doibanner",
 		"body":[
 			"\\doibanner{${1:DOI}}"
-		]
-	},
-
-
-	"doiurl{}":{
-		"prefix":"doiurl",
-		"body":[
-			"\\doiurl{${1:DOI}}"
-		]
-	},
-
-
-	"doibanner*{}":{
-		"prefix":"*doibanner",
-		"body":[
-			"\\doibanner*{${1:DOI}}"
-		]
-	},
-
-
-	"doibanner*[]{}":{
-		"prefix":"*doibanner",
-		"body":[
-			"\\doibanner*[${2:options}]{${1:DOI}}"
-		]
-	},
-
-
-	"doiurl*{}":{
-		"prefix":"*doiurl",
-		"body":[
-			"\\doiurl*{${1:DOI}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +14,43 @@
 		"prefix":"doibanner",
 		"body":[
 			"\\doibanner[${2:options}]{${1:DOI}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"doibanner*{}":{
+		"prefix":"*doibanner",
+		"body":[
+			"\\doibanner*{${1:DOI}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"doibanner*[]{}":{
+		"prefix":"*doibanner",
+		"body":[
+			"\\doibanner*[${2:options}]{${1:DOI}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"doiurl{}":{
+		"prefix":"doiurl",
+		"body":[
+			"\\doiurl{${1:DOI}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"doiurl*{}":{
+		"prefix":"*doiurl",
+		"body":[
+			"\\doiurl*{${1:DOI}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

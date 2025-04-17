@@ -5,7 +5,8 @@
 		"prefix":"sympy",
 		"body":[
 			"\\sympy{${1:Sympy code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"percent",
 		"body":[
 			"\\percent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,15 +23,8 @@
 		"prefix":"sympyplot",
 		"body":[
 			"\\sympyplot{${1:graphics obj, keyword args%definition}}"
-		]
-	},
-
-
-	"sympytexindent":{
-		"prefix":"sympytexindent",
-		"body":[
-			"\\sympytexindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,8 @@
 		"prefix":"sympyplot",
 		"body":[
 			"\\sympyplot[${2:options%keyvals}]{${1:graphics obj, keyword args%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +41,17 @@
 		"prefix":"sympyplot",
 		"body":[
 			"\\sympyplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sympytexindent":{
+		"prefix":"sympytexindent",
+		"body":[
+			"\\sympytexindent"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,7 +61,8 @@
 			"\\begin{sympyblock}",
 				"\t$1",
 			"\\end{sympyblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -65,7 +72,8 @@
 			"\\begin{sympysilent}",
 				"\t$1",
 			"\\end{sympysilent}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -75,7 +83,8 @@
 			"\\begin{sympyverbatim}",
 				"\t$1",
 			"\\end{sympyverbatim}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,6 +94,7 @@
 			"\\begin{comment}",
 				"\t$1",
 			"\\end{comment}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,16 +5,18 @@
 		"prefix":"getchunk",
 		"body":[
 			"\\getchunk{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"chunk":{
+	"chunk{}":{
 		"prefix":"chunk",
 		"body":[
 			"\\begin{chunk}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{chunk}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

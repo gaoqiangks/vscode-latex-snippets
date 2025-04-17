@@ -5,7 +5,8 @@
 		"prefix":"fdusetup",
 		"body":[
 			"\\fdusetup{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"makecoveri",
 		"body":[
 			"\\makecoveri"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"makecoverii",
 		"body":[
 			"\\makecoverii"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,39 +32,8 @@
 		"prefix":"makecoveriii",
 		"body":[
 			"\\makecoveriii"
-		]
-	},
-
-
-	"DeclareCoverTemplate{}{}":{
-		"prefix":"DeclareCoverTemplate",
-		"body":[
-			"\\DeclareCoverTemplate{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"theoremsymbol{}":{
-		"prefix":"theoremsymbol",
-		"body":[
-			"\\theoremsymbol{${1:symbol}}"
-		]
-	},
-
-
-	"newtheorem*{}{}":{
-		"prefix":"*newtheorem",
-		"body":[
-			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
-		]
-	},
-
-
-	"newtheorem*[]{}{}":{
-		"prefix":"*newtheorem",
-		"body":[
-			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +41,44 @@
 		"prefix":"newtheorem",
 		"body":[
 			"\\newtheorem[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtheorem*{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*{${1:envname}}{${2:title%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newtheorem*[]{}{}":{
+		"prefix":"*newtheorem",
+		"body":[
+			"\\newtheorem*[${3:options%keyvals}]{${1:envname}}{${2:title%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeclareCoverTemplate{}{}":{
+		"prefix":"DeclareCoverTemplate",
+		"body":[
+			"\\DeclareCoverTemplate{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theoremsymbol{}":{
+		"prefix":"theoremsymbol",
+		"body":[
+			"\\theoremsymbol{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,7 +88,19 @@
 			"\\begin{notation}",
 				"\t$1",
 			"\\end{notation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notation[]":{
+		"prefix":"notation",
+		"body":[
+			"\\begin{notation}",
+				"\t[${1:cols}]",
+			"\\end{notation}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -89,7 +110,8 @@
 			"\\begin{acknowledgements}",
 				"\t$1",
 			"\\end{acknowledgements}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -99,87 +121,19 @@
 			"\\begin{axiom}",
 				"\t$1",
 			"\\end{axiom}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"corollary":{
-		"prefix":"corollary",
-		"body":[
-			"\\begin{corollary}",
-				"\t$1",
-			"\\end{corollary}"
-		]
-	},
-
-
-	"definition":{
-		"prefix":"definition",
-		"body":[
-			"\\begin{definition}",
-				"\t$1",
-			"\\end{definition}"
-		]
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-				"\t$1",
-			"\\end{example}"
-		]
-	},
-
-
-	"lemma":{
-		"prefix":"lemma",
-		"body":[
-			"\\begin{lemma}",
-				"\t$1",
-			"\\end{lemma}"
-		]
-	},
-
-
-	"proof":{
-		"prefix":"proof",
-		"body":[
-			"\\begin{proof}",
-				"\t$1",
-			"\\end{proof}"
-		]
-	},
-
-
-	"theorem":{
-		"prefix":"theorem",
-		"body":[
-			"\\begin{theorem}",
-				"\t$1",
-			"\\end{theorem}"
-		]
-	},
-
-
-	"notation":{
-		"prefix":"notation",
-		"body":[
-			"\\begin{notation}",
-				"\t$1",
-			"\\end{notation}"
-		]
-	},
-
-
-	"axiom":{
+	"axiom[]":{
 		"prefix":"axiom",
 		"body":[
 			"\\begin{axiom}",
-				"\t$1",
+				"\t[${1:subheading%text}]",
 			"\\end{axiom}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +143,19 @@
 			"\\begin{corollary}",
 				"\t$1",
 			"\\end{corollary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"corollary[]":{
+		"prefix":"corollary",
+		"body":[
+			"\\begin{corollary}",
+				"\t[${1:subheading%text}]",
+			"\\end{corollary}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -199,7 +165,19 @@
 			"\\begin{definition}",
 				"\t$1",
 			"\\end{definition}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definition[]":{
+		"prefix":"definition",
+		"body":[
+			"\\begin{definition}",
+				"\t[${1:subheading%text}]",
+			"\\end{definition}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -209,7 +187,19 @@
 			"\\begin{example}",
 				"\t$1",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"example[]":{
+		"prefix":"example",
+		"body":[
+			"\\begin{example}",
+				"\t[${1:subheading%text}]",
+			"\\end{example}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -219,7 +209,19 @@
 			"\\begin{lemma}",
 				"\t$1",
 			"\\end{lemma}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lemma[]":{
+		"prefix":"lemma",
+		"body":[
+			"\\begin{lemma}",
+				"\t[${1:subheading%text}]",
+			"\\end{lemma}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,7 +231,19 @@
 			"\\begin{proof}",
 				"\t$1",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proof[]":{
+		"prefix":"proof",
+		"body":[
+			"\\begin{proof}",
+				"\t[${1:subheading%text}]",
+			"\\end{proof}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -239,6 +253,18 @@
 			"\\begin{theorem}",
 				"\t$1",
 			"\\end{theorem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theorem[]":{
+		"prefix":"theorem",
+		"body":[
+			"\\begin{theorem}",
+				"\t[${1:subheading%text}]",
+			"\\end{theorem}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

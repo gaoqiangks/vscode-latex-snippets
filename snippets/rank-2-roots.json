@@ -5,7 +5,8 @@
 		"prefix":"weightLength",
 		"body":[
 			"\\weightLength"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"weightRadius",
 		"body":[
 			"\\weightRadius"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"gradingDot",
 		"body":[
 			"\\gradingDot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"AutoSizeWeightLatticetrue",
 		"body":[
 			"\\AutoSizeWeightLatticetrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,26 +41,29 @@
 		"prefix":"AutoSizeWeightLatticefalse",
 		"body":[
 			"\\AutoSizeWeightLatticefalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"rootSystem":{
+	"rootSystem{}":{
 		"prefix":"rootSystem",
 		"body":[
 			"\\begin{rootSystem}",
-				"\t$1",
+				"\t{${1:type%keyvals}}",
 			"\\end{rootSystem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"rootSystem":{
+	"rootSystem[]{}":{
 		"prefix":"rootSystem",
 		"body":[
 			"\\begin{rootSystem}",
-				"\t$1",
+				"\t[${2:options}]{${1:type%keyvals}}",
 			"\\end{rootSystem}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

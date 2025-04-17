@@ -5,7 +5,8 @@
 		"prefix":"DefineCurrency",
 		"body":[
 			"\\DefineCurrency{${1:ISO}}{${2:maps%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"CurrencySetup",
 		"body":[
 			"\\CurrencySetup{${1:maps%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"CurrencySetupAppend",
 		"body":[
 			"\\CurrencySetupAppend{${1:maps%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"currencyunit",
 		"body":[
 			"\\currencyunit"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,23 +41,8 @@
 		"prefix":"displayCurrency",
 		"body":[
 			"\\displayCurrency{${1:ISO}}{${2:value}}"
-		]
-	},
-
-
-	"displayCurrencySymbol{}":{
-		"prefix":"displayCurrencySymbol",
-		"body":[
-			"\\displayCurrencySymbol{${1:ISO}}"
-		]
-	},
-
-
-	"SetPrecision":{
-		"prefix":"SetPrecision",
-		"body":[
-			"\\SetPrecision"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +50,17 @@
 		"prefix":"displayCurrency",
 		"body":[
 			"\\displayCurrency{${1:ISO}}[${3:options}]{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"displayCurrencySymbol{}":{
+		"prefix":"displayCurrencySymbol",
+		"body":[
+			"\\displayCurrencySymbol{${1:ISO}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +68,16 @@
 		"prefix":"displayCurrencySymbol",
 		"body":[
 			"\\displayCurrencySymbol{${1:ISO}}[${2:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetPrecision":{
+		"prefix":"SetPrecision",
+		"body":[
+			"\\SetPrecision"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

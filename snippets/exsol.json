@@ -5,7 +5,8 @@
 		"prefix":"exercisename",
 		"body":[
 			"\\exercisename"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"exercisesname",
 		"body":[
 			"\\exercisesname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"seriesname",
 		"body":[
 			"\\seriesname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"solutionname",
 		"body":[
 			"\\solutionname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"solutionsname",
 		"body":[
 			"\\solutionsname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"loadSolutions",
 		"body":[
 			"\\loadSolutions"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,17 +61,41 @@
 			"\\begin{exercises}",
 				"\t$1",
 			"\\end{exercises}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"exerciseseries":{
+	"exercises[]":{
+		"prefix":"exercises",
+		"body":[
+			"\\begin{exercises}",
+				"\t[${1:options%keyvals}]",
+			"\\end{exercises}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"exerciseseries{}":{
 		"prefix":"exerciseseries",
 		"body":[
 			"\\begin{exerciseseries}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{exerciseseries}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exerciseseries[]{}":{
+		"prefix":"exerciseseries",
+		"body":[
+			"\\begin{exerciseseries}",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
+			"\\end{exerciseseries}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -75,7 +105,8 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +116,8 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -95,7 +127,8 @@
 			"\\begin{informulacollection}",
 				"\t$1",
 			"\\end{informulacollection}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -105,26 +138,7 @@
 			"\\begin{informulacollectiononly}",
 				"\t$1",
 			"\\end{informulacollectiononly}"
-		]
-	},
-
-
-	"exercises":{
-		"prefix":"exercises",
-		"body":[
-			"\\begin{exercises}",
-				"\t$1",
-			"\\end{exercises}"
-		]
-	},
-
-
-	"exerciseseries":{
-		"prefix":"exerciseseries",
-		"body":[
-			"\\begin{exerciseseries}",
-				"\t$1",
-			"\\end{exerciseseries}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"wrapoverhang",
 		"body":[
 			"\\wrapoverhang"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,56 +14,62 @@
 		"prefix":"WFclear",
 		"body":[
 			"\\WFclear"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wrapfigure":{
+	"wrapfigure{}{}":{
 		"prefix":"wrapfigure",
 		"body":[
 			"\\begin{wrapfigure}",
-				"\t$1",
+				"\t{${1:position}}{${2:width}}",
 			"\\end{wrapfigure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wraptable":{
+	"wrapfigure[]{}[]{}":{
+		"prefix":"wrapfigure",
+		"body":[
+			"\\begin{wrapfigure}",
+				"\t[${3:lineheight}]{${1:position}}[${4:overhang%l}]{${2:width}}",
+			"\\end{wrapfigure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wraptable{}{}":{
 		"prefix":"wraptable",
 		"body":[
 			"\\begin{wraptable}",
-				"\t$1",
+				"\t{${1:position}}{${2:width}}",
 			"\\end{wraptable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wrapfloat":{
+	"wraptable[]{}[]{}":{
+		"prefix":"wraptable",
+		"body":[
+			"\\begin{wraptable}",
+				"\t[${3:lineheight}]{${1:position}}[${4:overhang%l}]{${2:width}}",
+			"\\end{wraptable}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wrapfloat{}{}{}":{
 		"prefix":"wrapfloat",
 		"body":[
 			"\\begin{wrapfloat}",
-				"\t$1",
+				"\t{${1:floatname}}{${2:position}}{${3:width}}",
 			"\\end{wrapfloat}"
-		]
-	},
-
-
-	"wrapfigure":{
-		"prefix":"wrapfigure",
-		"body":[
-			"\\begin{wrapfigure}",
-				"\t$1",
-			"\\end{wrapfigure}"
-		]
-	},
-
-
-	"wraptable":{
-		"prefix":"wraptable",
-		"body":[
-			"\\begin{wraptable}",
-				"\t$1",
-			"\\end{wraptable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

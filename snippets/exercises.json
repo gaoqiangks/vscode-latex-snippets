@@ -5,7 +5,8 @@
 		"prefix":"totalpoints",
 		"body":[
 			"\\totalpoints"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"exercisenewpage",
 		"body":[
 			"\\exercisenewpage"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"solutionnewpage",
 		"body":[
 			"\\solutionnewpage"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ifsolutionthenelse",
 		"body":[
 			"\\ifsolutionthenelse{${1:then}}{${2:else}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"thei",
 		"body":[
 			"\\thei"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,27 +52,19 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-				"\t$1",
-			"\\end{solution}"
-		]
-	},
-
-
-	"exercise":{
+	"exercise[]":{
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-				"\t$1",
+				"\t[${1:points}]",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,6 +74,18 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solution[]":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t[${1:space%l}]",
+			"\\end{solution}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

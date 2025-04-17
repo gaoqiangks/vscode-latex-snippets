@@ -5,7 +5,8 @@
 		"prefix":"leadONE",
 		"body":[
 			"\\leadONE{${1:backref}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"leadTWO",
 		"body":[
 			"\\leadTWO{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"name",
 		"body":[
 			"\\name{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"hang",
 		"body":[
 			"\\hang"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"theindex",
 		"body":[
 			"\\theindex"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"thebackindex",
 		"body":[
 			"\\thebackindex"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"thekey",
 		"body":[
 			"\\thekey"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"gprefix",
 		"body":[
 			"\\gprefix"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"altindent",
 		"body":[
 			"\\altindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"keylabelwidth",
 		"body":[
 			"\\keylabelwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"oldparindent",
 		"body":[
 			"\\oldparindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"keytitle",
 		"body":[
 			"\\keytitle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,16 +113,18 @@
 		"prefix":"keytitle",
 		"body":[
 			"\\keytitle[${2:it}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"key":{
+	"key{}":{
 		"prefix":"key",
 		"body":[
 			"\\begin{key}",
-				"\t$1",
+				"\t{${1:prefix}}",
 			"\\end{key}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

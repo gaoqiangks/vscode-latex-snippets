@@ -5,15 +5,8 @@
 		"prefix":"psCalculate",
 		"body":[
 			"\\psCalculate{${1:expr%definition}}"
-		]
-	},
-
-
-	"pscalculate{}":{
-		"prefix":"pscalculate",
-		"body":[
-			"\\pscalculate{${1:expr%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"psCalculate",
 		"body":[
 			"\\psCalculate[${2:siunitx options%keyvals}]{${1:expr%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pscalculate{}":{
+		"prefix":"pscalculate",
+		"body":[
+			"\\pscalculate{${1:expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

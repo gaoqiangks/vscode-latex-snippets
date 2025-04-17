@@ -5,7 +5,8 @@
 		"prefix":"sepfootnotecontent",
 		"body":[
 			"\\sepfootnotecontent{${1:key%specialDef}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"sepfootnote",
 		"body":[
 			"\\sepfootnote{${1:key%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"sepfootnotemark",
 		"body":[
 			"\\sepfootnotemark{${1:key%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"sepfootnotetext",
 		"body":[
 			"\\sepfootnotetext{${1:key%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"printsepfootnote",
 		"body":[
 			"\\printsepfootnote{${1:key%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"sepfootquicknote",
 		"body":[
 			"\\sepfootquicknote{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,39 +59,8 @@
 		"prefix":"newfootnotes",
 		"body":[
 			"\\newfootnotes{${1:prefix}}"
-		]
-	},
-
-
-	"newsymbolfootnotes{}":{
-		"prefix":"newsymbolfootnotes",
-		"body":[
-			"\\newsymbolfootnotes{${1:prefix}}"
-		]
-	},
-
-
-	"newendnotes{}":{
-		"prefix":"newendnotes",
-		"body":[
-			"\\newendnotes{${1:prefix}}"
-		]
-	},
-
-
-	"newcommentnotes{}":{
-		"prefix":"newcommentnotes",
-		"body":[
-			"\\newcommentnotes{${1:prefix}}"
-		]
-	},
-
-
-	"newsymbolcommentnotes{}":{
-		"prefix":"newsymbolcommentnotes",
-		"body":[
-			"\\newsymbolcommentnotes{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +68,17 @@
 		"prefix":"*newfootnotes",
 		"body":[
 			"\\newfootnotes*{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newsymbolfootnotes{}":{
+		"prefix":"newsymbolfootnotes",
+		"body":[
+			"\\newsymbolfootnotes{${1:prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +86,35 @@
 		"prefix":"newsymbolfootnotes",
 		"body":[
 			"\\newsymbolfootnotes[${2:counter}]{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newendnotes{}":{
+		"prefix":"newendnotes",
+		"body":[
+			"\\newendnotes{${1:prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newcommentnotes{}":{
+		"prefix":"newcommentnotes",
+		"body":[
+			"\\newcommentnotes{${1:prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newsymbolcommentnotes{}":{
+		"prefix":"newsymbolcommentnotes",
+		"body":[
+			"\\newsymbolcommentnotes{${1:prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +122,7 @@
 		"prefix":"newsymbolcommentnotes",
 		"body":[
 			"\\newsymbolcommentnotes[${2:counter}]{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

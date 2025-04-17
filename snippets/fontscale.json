@@ -5,119 +5,8 @@
 		"prefix":"fontscalesetup",
 		"body":[
 			"\\fontscalesetup{${1:keyvals}}"
-		]
-	},
-
-
-	"CurrentFontStep":{
-		"prefix":"CurrentFontStep",
-		"body":[
-			"\\CurrentFontStep"
-		]
-	},
-
-
-	"CurrentFontScale":{
-		"prefix":"CurrentFontScale",
-		"body":[
-			"\\CurrentFontScale"
-		]
-	},
-
-
-	"CurrentFontSize":{
-		"prefix":"CurrentFontSize",
-		"body":[
-			"\\CurrentFontSize"
-		]
-	},
-
-
-	"CurrentFontBaselineskip":{
-		"prefix":"CurrentFontBaselineskip",
-		"body":[
-			"\\CurrentFontBaselineskip"
-		]
-	},
-
-
-	"SetFontStep{}":{
-		"prefix":"SetFontStep",
-		"body":[
-			"\\SetFontStep{${1:number}}"
-		]
-	},
-
-
-	"SetFontScale{}":{
-		"prefix":"SetFontScale",
-		"body":[
-			"\\SetFontScale{${1:number}}"
-		]
-	},
-
-
-	"SetFontSize{}":{
-		"prefix":"SetFontSize",
-		"body":[
-			"\\SetFontSize{${1:dimen}}"
-		]
-	},
-
-
-	"ScaleFont{}":{
-		"prefix":"ScaleFont",
-		"body":[
-			"\\ScaleFont{${1:number}}"
-		]
-	},
-
-
-	"SetFontSizeBaselineskip{}{}":{
-		"prefix":"SetFontSizeBaselineskip",
-		"body":[
-			"\\SetFontSizeBaselineskip{${1:dimen}}{${2:skip%l}}"
-		]
-	},
-
-
-	"SetFontBaselineskip{}":{
-		"prefix":"SetFontBaselineskip",
-		"body":[
-			"\\SetFontBaselineskip{${1:skip%l}}"
-		]
-	},
-
-
-	"PrintFontSizeParameters":{
-		"prefix":"PrintFontSizeParameters",
-		"body":[
-			"\\PrintFontSizeParameters"
-		]
-	},
-
-
-	"PrintAllFontSizeParameters":{
-		"prefix":"PrintAllFontSizeParameters",
-		"body":[
-			"\\PrintAllFontSizeParameters"
-		]
-	},
-
-
-	"PrintSampleText{}":{
-		"prefix":"PrintSampleText",
-		"body":[
-			"\\PrintSampleText{${1:text}}"
-		]
-	},
-
-
-	"PrintFontSizeCommand":{
-		"prefix":"PrintFontSizeCommand",
-		"body":[
-			"\\PrintFontSizeCommand"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +14,53 @@
 		"prefix":"*fontscalesetup",
 		"body":[
 			"\\fontscalesetup*{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"CurrentFontStep":{
+		"prefix":"CurrentFontStep",
+		"body":[
+			"\\CurrentFontStep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurrentFontScale":{
+		"prefix":"CurrentFontScale",
+		"body":[
+			"\\CurrentFontScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurrentFontSize":{
+		"prefix":"CurrentFontSize",
+		"body":[
+			"\\CurrentFontSize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CurrentFontBaselineskip":{
+		"prefix":"CurrentFontBaselineskip",
+		"body":[
+			"\\CurrentFontBaselineskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetFontStep{}":{
+		"prefix":"SetFontStep",
+		"body":[
+			"\\SetFontStep{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +68,17 @@
 		"prefix":"*SetFontStep",
 		"body":[
 			"\\SetFontStep*{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SetFontScale{}":{
+		"prefix":"SetFontScale",
+		"body":[
+			"\\SetFontScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +86,17 @@
 		"prefix":"*SetFontScale",
 		"body":[
 			"\\SetFontScale*{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SetFontSize{}":{
+		"prefix":"SetFontSize",
+		"body":[
+			"\\SetFontSize{${1:dimen}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +104,35 @@
 		"prefix":"*SetFontSize",
 		"body":[
 			"\\SetFontSize*{${1:dimen}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ScaleFont{}":{
+		"prefix":"ScaleFont",
+		"body":[
+			"\\ScaleFont{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetFontSizeBaselineskip{}{}":{
+		"prefix":"SetFontSizeBaselineskip",
+		"body":[
+			"\\SetFontSizeBaselineskip{${1:dimen}}{${2:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetFontBaselineskip{}":{
+		"prefix":"SetFontBaselineskip",
+		"body":[
+			"\\SetFontBaselineskip{${1:skip%l}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +140,35 @@
 		"prefix":"*SetFontBaselineskip",
 		"body":[
 			"\\SetFontBaselineskip*{${1:skip%l}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PrintFontSizeParameters":{
+		"prefix":"PrintFontSizeParameters",
+		"body":[
+			"\\PrintFontSizeParameters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintAllFontSizeParameters":{
+		"prefix":"PrintAllFontSizeParameters",
+		"body":[
+			"\\PrintAllFontSizeParameters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintSampleText{}":{
+		"prefix":"PrintSampleText",
+		"body":[
+			"\\PrintSampleText{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +176,16 @@
 		"prefix":"*PrintSampleText",
 		"body":[
 			"\\PrintSampleText*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PrintFontSizeCommand":{
+		"prefix":"PrintFontSizeCommand",
+		"body":[
+			"\\PrintFontSizeCommand"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

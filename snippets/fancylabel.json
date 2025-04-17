@@ -5,159 +5,8 @@
 		"prefix":"fancylabel",
 		"body":[
 			"\\fancylabel{${1:marker%labeldef}}"
-		]
-	},
-
-
-	"fancysublabel{}{}":{
-		"prefix":"fancysublabel",
-		"body":[
-			"\\fancysublabel{${1:marker%labeldef}}{${2:submarker}}"
-		]
-	},
-
-
-	"fancyref{}":{
-		"prefix":"fancyref",
-		"body":[
-			"\\fancyref{${1:marker%ref}}"
-		]
-	},
-
-
-	"fancysubref{}{}":{
-		"prefix":"fancysubref",
-		"body":[
-			"\\fancysubref{${1:marker%ref}}{${2:submarker}}"
-		]
-	},
-
-
-	"fancylabelformatdefault":{
-		"prefix":"fancylabelformatdefault",
-		"body":[
-			"\\fancylabelformatdefault"
-		]
-	},
-
-
-	"fancysublabelformatdefault":{
-		"prefix":"fancysublabelformatdefault",
-		"body":[
-			"\\fancysublabelformatdefault"
-		]
-	},
-
-
-	"fancyonlysublabelformatdefault":{
-		"prefix":"fancyonlysublabelformatdefault",
-		"body":[
-			"\\fancyonlysublabelformatdefault"
-		]
-	},
-
-
-	"fancylabelNewLabelEvent":{
-		"prefix":"fancylabelNewLabelEvent",
-		"body":[
-			"\\fancylabelNewLabelEvent"
-		]
-	},
-
-
-	"fancylabelShowLabelEvent":{
-		"prefix":"fancylabelShowLabelEvent",
-		"body":[
-			"\\fancylabelShowLabelEvent"
-		]
-	},
-
-
-	"fancylabelShowRefEvent":{
-		"prefix":"fancylabelShowRefEvent",
-		"body":[
-			"\\fancylabelShowRefEvent"
-		]
-	},
-
-
-	"thefancylabel":{
-		"prefix":"thefancylabel",
-		"body":[
-			"\\thefancylabel"
-		]
-	},
-
-
-	"thefancysublabel":{
-		"prefix":"thefancysublabel",
-		"body":[
-			"\\thefancysublabel"
-		]
-	},
-
-
-	"fancylabel*{}":{
-		"prefix":"*fancylabel",
-		"body":[
-			"\\fancylabel*{${1:marker%labeldef}}"
-		]
-	},
-
-
-	"fancylabel*[]{}":{
-		"prefix":"*fancylabel",
-		"body":[
-			"\\fancylabel*[${2:family}]{${1:marker%labeldef}}"
-		]
-	},
-
-
-	"fancysublabel*{}{}":{
-		"prefix":"*fancysublabel",
-		"body":[
-			"\\fancysublabel*{${1:marker%labeldef}}{${2:submarker}}"
-		]
-	},
-
-
-	"fancysublabel*[]{}{}":{
-		"prefix":"*fancysublabel",
-		"body":[
-			"\\fancysublabel*[${3:family}]{${1:marker%labeldef}}{${2:submarker}}"
-		]
-	},
-
-
-	"fancyref*{}":{
-		"prefix":"*fancyref",
-		"body":[
-			"\\fancyref*{${1:marker%ref}}"
-		]
-	},
-
-
-	"fancyref*[]{}":{
-		"prefix":"*fancyref",
-		"body":[
-			"\\fancyref*[${2:family}]{${1:marker%ref}}"
-		]
-	},
-
-
-	"fancysubref*{}{}":{
-		"prefix":"*fancysubref",
-		"body":[
-			"\\fancysubref*{${1:marker%ref}}{${2:submarker}}"
-		]
-	},
-
-
-	"fancysubref*[]{}{}":{
-		"prefix":"*fancysubref",
-		"body":[
-			"\\fancysubref*[${3:family}]{${1:marker%ref}}{${2:submarker}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +14,35 @@
 		"prefix":"fancylabel",
 		"body":[
 			"\\fancylabel[${2:family}]{${1:marker%labeldef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fancylabel*{}":{
+		"prefix":"*fancylabel",
+		"body":[
+			"\\fancylabel*{${1:marker%labeldef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancylabel*[]{}":{
+		"prefix":"*fancylabel",
+		"body":[
+			"\\fancylabel*[${2:family}]{${1:marker%labeldef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancysublabel{}{}":{
+		"prefix":"fancysublabel",
+		"body":[
+			"\\fancysublabel{${1:marker%labeldef}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +50,35 @@
 		"prefix":"fancysublabel",
 		"body":[
 			"\\fancysublabel[${3:family}]{${1:marker%labeldef}}{${2:submarker}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fancysublabel*{}{}":{
+		"prefix":"*fancysublabel",
+		"body":[
+			"\\fancysublabel*{${1:marker%labeldef}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancysublabel*[]{}{}":{
+		"prefix":"*fancysublabel",
+		"body":[
+			"\\fancysublabel*[${3:family}]{${1:marker%labeldef}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancyref{}":{
+		"prefix":"fancyref",
+		"body":[
+			"\\fancyref{${1:marker%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +86,35 @@
 		"prefix":"fancyref",
 		"body":[
 			"\\fancyref[${2:family}]{${1:marker%ref}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fancyref*{}":{
+		"prefix":"*fancyref",
+		"body":[
+			"\\fancyref*{${1:marker%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancyref*[]{}":{
+		"prefix":"*fancyref",
+		"body":[
+			"\\fancyref*[${2:family}]{${1:marker%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancysubref{}{}":{
+		"prefix":"fancysubref",
+		"body":[
+			"\\fancysubref{${1:marker%ref}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,6 +122,97 @@
 		"prefix":"fancysubref",
 		"body":[
 			"\\fancysubref[${3:family}]{${1:marker%ref}}{${2:submarker}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fancysubref*{}{}":{
+		"prefix":"*fancysubref",
+		"body":[
+			"\\fancysubref*{${1:marker%ref}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancysubref*[]{}{}":{
+		"prefix":"*fancysubref",
+		"body":[
+			"\\fancysubref*[${3:family}]{${1:marker%ref}}{${2:submarker}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fancylabelformatdefault":{
+		"prefix":"fancylabelformatdefault",
+		"body":[
+			"\\fancylabelformatdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancysublabelformatdefault":{
+		"prefix":"fancysublabelformatdefault",
+		"body":[
+			"\\fancysublabelformatdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancyonlysublabelformatdefault":{
+		"prefix":"fancyonlysublabelformatdefault",
+		"body":[
+			"\\fancyonlysublabelformatdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancylabelNewLabelEvent":{
+		"prefix":"fancylabelNewLabelEvent",
+		"body":[
+			"\\fancylabelNewLabelEvent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancylabelShowLabelEvent":{
+		"prefix":"fancylabelShowLabelEvent",
+		"body":[
+			"\\fancylabelShowLabelEvent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancylabelShowRefEvent":{
+		"prefix":"fancylabelShowRefEvent",
+		"body":[
+			"\\fancylabelShowRefEvent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thefancylabel":{
+		"prefix":"thefancylabel",
+		"body":[
+			"\\thefancylabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thefancysublabel":{
+		"prefix":"thefancysublabel",
+		"body":[
+			"\\thefancysublabel"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"ForEach",
 		"body":[
 			"\\ForEach{${1:separator}}{${2:function}}{${3:list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"thislevelitem",
 		"body":[
 			"\\thislevelitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"thislevelcount",
 		"body":[
 			"\\thislevelcount"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ForEachX",
 		"body":[
 			"\\ForEachX{${1:separator}}{${2:function}}{${3:list token}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"ForEachSublevel",
 		"body":[
 			"\\ForEachSublevel{${1:separator}}{${2:function}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ExitForEach",
 		"body":[
 			"\\ExitForEach"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,79 +59,8 @@
 		"prefix":"ForArray",
 		"body":[
 			"\\ForArray{${1:sep list}}{${2:sublevel tok}}{${3:func list sep}}{${4:func list}}{${5:array}}"
-		]
-	},
-
-
-	"thislevelmarker":{
-		"prefix":"thislevelmarker",
-		"body":[
-			"\\thislevelmarker"
-		]
-	},
-
-
-	"thislevelnr":{
-		"prefix":"thislevelnr",
-		"body":[
-			"\\thislevelnr"
-		]
-	},
-
-
-	"ExitForEachLevels{}{}":{
-		"prefix":"ExitForEachLevels",
-		"body":[
-			"\\ExitForEachLevels{${1:start level}}{${2:num of levels}}"
-		]
-	},
-
-
-	"DefineArrayVar{}{}{}{}{}{}":{
-		"prefix":"DefineArrayVar",
-		"body":[
-			"\\DefineArrayVar{${1:name}}{${2:varnamesep}}{${3:varlistsep}}{${4:varlist}}{${5:varcontentlistsep}}{${6:varcontent}}"
-		]
-	},
-
-
-	"DefineArrayVars{}{}{}{}{}{}{}":{
-		"prefix":"DefineArrayVars",
-		"body":[
-			"\\DefineArrayVars{${1:varlistsep}}{${2:arraydefsep}}{${3:arraynamesep}}{${4:contentsep}}{${5:varnamesep}}{${6:varlist}}{${7:contentlist}}"
-		]
-	},
-
-
-	"DefineArrayDefault{}{}{}{}{}":{
-		"prefix":"DefineArrayDefault",
-		"body":[
-			"\\DefineArrayDefault{${1:arraylistsep}}{${2:varnamesep}}{${3:indexvar}}{${4:defaultvar}}{${5:arraylist}}"
-		]
-	},
-
-
-	"DefineArrayVarTo{}{}{}{}{}":{
-		"prefix":"DefineArrayVarTo",
-		"body":[
-			"\\DefineArrayVarTo{${1:varlistsep}}{${2:varnamesep}}{${3:array name}}{${4:content}}{${5:varlist}}"
-		]
-	},
-
-
-	"CommandForEach{}{}{}":{
-		"prefix":"CommandForEach",
-		"body":[
-			"\\CommandForEach{${1:varlist sep}}{${2:command}}{${3:var list}}"
-		]
-	},
-
-
-	"FunctionForEach{}{}{}":{
-		"prefix":"FunctionForEach",
-		"body":[
-			"\\FunctionForEach{${1:varlist sep}}{${2:command}}{${3:var list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,6 +68,88 @@
 		"prefix":"ForArray",
 		"body":[
 			"\\ForArray{${1:sep list}}[${6:marker list}]{${2:sublevel tok}}{${3:func list sep}}{${4:func list}}{${5:array}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thislevelmarker":{
+		"prefix":"thislevelmarker",
+		"body":[
+			"\\thislevelmarker"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thislevelnr":{
+		"prefix":"thislevelnr",
+		"body":[
+			"\\thislevelnr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExitForEachLevels{}{}":{
+		"prefix":"ExitForEachLevels",
+		"body":[
+			"\\ExitForEachLevels{${1:start level}}{${2:num of levels}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineArrayVar{}{}{}{}{}{}":{
+		"prefix":"DefineArrayVar",
+		"body":[
+			"\\DefineArrayVar{${1:name}}{${2:varnamesep}}{${3:varlistsep}}{${4:varlist}}{${5:varcontentlistsep}}{${6:varcontent}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineArrayVars{}{}{}{}{}{}{}":{
+		"prefix":"DefineArrayVars",
+		"body":[
+			"\\DefineArrayVars{${1:varlistsep}}{${2:arraydefsep}}{${3:arraynamesep}}{${4:contentsep}}{${5:varnamesep}}{${6:varlist}}{${7:contentlist}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineArrayDefault{}{}{}{}{}":{
+		"prefix":"DefineArrayDefault",
+		"body":[
+			"\\DefineArrayDefault{${1:arraylistsep}}{${2:varnamesep}}{${3:indexvar}}{${4:defaultvar}}{${5:arraylist}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineArrayVarTo{}{}{}{}{}":{
+		"prefix":"DefineArrayVarTo",
+		"body":[
+			"\\DefineArrayVarTo{${1:varlistsep}}{${2:varnamesep}}{${3:array name}}{${4:content}}{${5:varlist}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CommandForEach{}{}{}":{
+		"prefix":"CommandForEach",
+		"body":[
+			"\\CommandForEach{${1:varlist sep}}{${2:command}}{${3:var list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FunctionForEach{}{}{}":{
+		"prefix":"FunctionForEach",
+		"body":[
+			"\\FunctionForEach{${1:varlist sep}}{${2:command}}{${3:var list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

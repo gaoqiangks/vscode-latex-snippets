@@ -5,7 +5,8 @@
 		"prefix":"ifperl",
 		"body":[
 			"\\ifperl"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"perltrue",
 		"body":[
 			"\\perltrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"perlfalse",
 		"body":[
 			"\\perlfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,135 +32,8 @@
 		"prefix":"perlnewcommand",
 		"body":[
 			"\\perlnewcommand{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"perlrenewcommand{}{}":{
-		"prefix":"perlrenewcommand",
-		"body":[
-			"\\perlrenewcommand{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"perlnewenvironment{}{}{}":{
-		"prefix":"perlnewenvironment",
-		"body":[
-			"\\perlnewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlrenewenvironment{}{}{}":{
-		"prefix":"perlrenewenvironment",
-		"body":[
-			"\\perlrenewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perldo{}":{
-		"prefix":"perldo",
-		"body":[
-			"\\perldo{${1:perl code%definition}}"
-		]
-	},
-
-
-	"perlnewcommand*{}{}":{
-		"prefix":"*perlnewcommand",
-		"body":[
-			"\\perlnewcommand*{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"perlnewcommand*{}[]{}":{
-		"prefix":"*perlnewcommand",
-		"body":[
-			"\\perlnewcommand*{${1:command}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"perlnewcommand*{}[][]{}":{
-		"prefix":"*perlnewcommand",
-		"body":[
-			"\\perlnewcommand*{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"perlrenewcommand*{}{}":{
-		"prefix":"*perlrenewcommand",
-		"body":[
-			"\\perlrenewcommand*{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"perlrenewcommand*{}[]{}":{
-		"prefix":"*perlrenewcommand",
-		"body":[
-			"\\perlrenewcommand*{${1:command}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"perlrenewcommand*{}[][]{}":{
-		"prefix":"*perlrenewcommand",
-		"body":[
-			"\\perlrenewcommand*{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"perlnewenvironment*{}[][]{}{}":{
-		"prefix":"*perlnewenvironment",
-		"body":[
-			"\\perlnewenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlnewenvironment*{}[]{}{}":{
-		"prefix":"*perlnewenvironment",
-		"body":[
-			"\\perlnewenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlnewenvironment*{}{}{}":{
-		"prefix":"*perlnewenvironment",
-		"body":[
-			"\\perlnewenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlrenewenvironment*{}[][]{}{}":{
-		"prefix":"*perlrenewenvironment",
-		"body":[
-			"\\perlrenewenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlrenewenvironment*{}[]{}{}":{
-		"prefix":"*perlrenewenvironment",
-		"body":[
-			"\\perlrenewenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"perlrenewenvironment*{}{}{}":{
-		"prefix":"*perlrenewenvironment",
-		"body":[
-			"\\perlrenewenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +41,8 @@
 		"prefix":"perlnewcommand",
 		"body":[
 			"\\perlnewcommand{${1:command}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +50,44 @@
 		"prefix":"perlnewcommand",
 		"body":[
 			"\\perlnewcommand{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"perlnewcommand*{}{}":{
+		"prefix":"*perlnewcommand",
+		"body":[
+			"\\perlnewcommand*{${1:command}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlnewcommand*{}[]{}":{
+		"prefix":"*perlnewcommand",
+		"body":[
+			"\\perlnewcommand*{${1:command}}[${3:args}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlnewcommand*{}[][]{}":{
+		"prefix":"*perlnewcommand",
+		"body":[
+			"\\perlnewcommand*{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlrenewcommand{}{}":{
+		"prefix":"perlrenewcommand",
+		"body":[
+			"\\perlrenewcommand{${1:command}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +95,8 @@
 		"prefix":"perlrenewcommand",
 		"body":[
 			"\\perlrenewcommand{${1:command}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +104,35 @@
 		"prefix":"perlrenewcommand",
 		"body":[
 			"\\perlrenewcommand{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"perlrenewcommand*{}{}":{
+		"prefix":"*perlrenewcommand",
+		"body":[
+			"\\perlrenewcommand*{${1:command}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlrenewcommand*{}[]{}":{
+		"prefix":"*perlrenewcommand",
+		"body":[
+			"\\perlrenewcommand*{${1:command}}[${3:args}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlrenewcommand*{}[][]{}":{
+		"prefix":"*perlrenewcommand",
+		"body":[
+			"\\perlrenewcommand*{${1:command}}[${3:args}][${4:default}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -197,7 +140,8 @@
 		"prefix":"perlnewenvironment",
 		"body":[
 			"\\perlnewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +149,44 @@
 		"prefix":"perlnewenvironment",
 		"body":[
 			"\\perlnewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"perlnewenvironment{}{}{}":{
+		"prefix":"perlnewenvironment",
+		"body":[
+			"\\perlnewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"perlnewenvironment*{}[][]{}{}":{
+		"prefix":"*perlnewenvironment",
+		"body":[
+			"\\perlnewenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlnewenvironment*{}[]{}{}":{
+		"prefix":"*perlnewenvironment",
+		"body":[
+			"\\perlnewenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlnewenvironment*{}{}{}":{
+		"prefix":"*perlnewenvironment",
+		"body":[
+			"\\perlnewenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -213,7 +194,8 @@
 		"prefix":"perlrenewenvironment",
 		"body":[
 			"\\perlrenewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,6 +203,52 @@
 		"prefix":"perlrenewenvironment",
 		"body":[
 			"\\perlrenewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"perlrenewenvironment{}{}{}":{
+		"prefix":"perlrenewenvironment",
+		"body":[
+			"\\perlrenewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"perlrenewenvironment*{}[][]{}{}":{
+		"prefix":"*perlrenewenvironment",
+		"body":[
+			"\\perlrenewenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlrenewenvironment*{}[]{}{}":{
+		"prefix":"*perlrenewenvironment",
+		"body":[
+			"\\perlrenewenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perlrenewenvironment*{}{}{}":{
+		"prefix":"*perlrenewenvironment",
+		"body":[
+			"\\perlrenewenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"perldo{}":{
+		"prefix":"perldo",
+		"body":[
+			"\\perldo{${1:perl code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

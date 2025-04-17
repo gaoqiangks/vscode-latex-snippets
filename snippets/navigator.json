@@ -5,7 +5,8 @@
 		"prefix":"finishpdffile",
 		"body":[
 			"\\finishpdffile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,199 +14,8 @@
 		"prefix":"anchor",
 		"body":[
 			"\\anchor{${1:name}}"
-		]
-	},
-
-
-	"anchorname{}":{
-		"prefix":"anchorname",
-		"body":[
-			"\\anchorname{${1:name}}"
-		]
-	},
-
-
-	"outline{}{}":{
-		"prefix":"outline",
-		"body":[
-			"\\outline{${1:level}}{${2:title%plain}}"
-		]
-	},
-
-
-	"pdfdef{}{}":{
-		"prefix":"pdfdef",
-		"body":[
-			"\\pdfdef{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"jumplink{}{}":{
-		"prefix":"jumplink",
-		"body":[
-			"\\jumplink{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"urllink{}{}":{
-		"prefix":"urllink",
-		"body":[
-			"\\urllink{${1:URL}}{${2:text}}"
-		]
-	},
-
-
-	"javascriptlink{}{}":{
-		"prefix":"javascriptlink",
-		"body":[
-			"\\javascriptlink{${1:JavaScript code}}{${2:text}}"
-		]
-	},
-
-
-	"actionlink{}{}":{
-		"prefix":"actionlink",
-		"body":[
-			"\\actionlink{${1:name}}{${2:text}}"
-		]
-	},
-
-
-	"rawactionlink{}{}":{
-		"prefix":"rawactionlink",
-		"body":[
-			"\\rawactionlink{${1:PDF code}}{${2:text}}"
-		]
-	},
-
-
-	"annotation{}{}":{
-		"prefix":"annotation",
-		"body":[
-			"\\annotation{${1:PDF code}}{${2:text}}"
-		]
-	},
-
-
-	"urlaction{}{}":{
-		"prefix":"urlaction",
-		"body":[
-			"\\urlaction{${1:name}}{${2:URL}}"
-		]
-	},
-
-
-	"javascriptaction{}{}":{
-		"prefix":"javascriptaction",
-		"body":[
-			"\\javascriptaction{${1:name}}{${2:JavaScript code}}"
-		]
-	},
-
-
-	"embeddedfile{}{}":{
-		"prefix":"embeddedfile",
-		"body":[
-			"\\embeddedfile{${1:object name}}{${2:file}}"
-		]
-	},
-
-
-	"openfilelink{}{}":{
-		"prefix":"openfilelink",
-		"body":[
-			"\\openfilelink{${1:file}}{${2:text}}"
-		]
-	},
-
-
-	"pdfobject{}{}":{
-		"prefix":"pdfobject",
-		"body":[
-			"\\pdfobject{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"pdfdictobject{}{}":{
-		"prefix":"pdfdictobject",
-		"body":[
-			"\\pdfdictobject{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"pdfstreamobject{}{}":{
-		"prefix":"pdfstreamobject",
-		"body":[
-			"\\pdfstreamobject{${1:name}}{${2:stream}}"
-		]
-	},
-
-
-	"pdffileobject{}{}":{
-		"prefix":"pdffileobject",
-		"body":[
-			"\\pdffileobject{${1:name}}{${2:file}}"
-		]
-	},
-
-
-	"pdfreserveobject{}":{
-		"prefix":"pdfreserveobject",
-		"body":[
-			"\\pdfreserveobject{${1:name}}"
-		]
-	},
-
-
-	"pdfensureobject{}":{
-		"prefix":"pdfensureobject",
-		"body":[
-			"\\pdfensureobject{${1:name}}"
-		]
-	},
-
-
-	"pdfobjectnumber{}":{
-		"prefix":"pdfobjectnumber",
-		"body":[
-			"\\pdfobjectnumber{${1:name}}"
-		]
-	},
-
-
-	"pdfrefobject{}":{
-		"prefix":"pdfrefobject",
-		"body":[
-			"\\pdfrefobject{${1:name}}"
-		]
-	},
-
-
-	"pdfobjectstatus{}":{
-		"prefix":"pdfobjectstatus",
-		"body":[
-			"\\pdfobjectstatus{${1:name}}"
-		]
-	},
-
-
-	"ifpdfobject{}{}{}":{
-		"prefix":"ifpdfobject",
-		"body":[
-			"\\ifpdfobject{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"pdfstring{}":{
-		"prefix":"pdfstring",
-		"body":[
-			"\\pdfstring{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +23,26 @@
 		"prefix":"anchor",
 		"body":[
 			"\\anchor[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"anchorname{}":{
+		"prefix":"anchorname",
+		"body":[
+			"\\anchorname{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outline{}{}":{
+		"prefix":"outline",
+		"body":[
+			"\\outline{${1:level}}{${2:title%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +50,8 @@
 		"prefix":"outline",
 		"body":[
 			"\\outline[${3:options%keyvals}]{${1:level}}{${2:title%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,7 +59,8 @@
 		"prefix":"outline",
 		"body":[
 			"\\outline{${1:level}}[${3:name}]{${2:title%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +68,17 @@
 		"prefix":"outline",
 		"body":[
 			"\\outline[${3:options%keyvals}]{${1:level}}[${4:name}]{${2:title%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfdef{}{}":{
+		"prefix":"pdfdef",
+		"body":[
+			"\\pdfdef{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +86,17 @@
 		"prefix":"pdfdef",
 		"body":[
 			"\\pdfdef{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"jumplink{}{}":{
+		"prefix":"jumplink",
+		"body":[
+			"\\jumplink{${1:name}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +104,17 @@
 		"prefix":"jumplink",
 		"body":[
 			"\\jumplink[${3:options%keyvals}]{${1:name}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"urllink{}{}":{
+		"prefix":"urllink",
+		"body":[
+			"\\urllink{${1:URL}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +122,17 @@
 		"prefix":"urllink",
 		"body":[
 			"\\urllink[${3:options%keyvals}]{${1:URL}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"javascriptlink{}{}":{
+		"prefix":"javascriptlink",
+		"body":[
+			"\\javascriptlink{${1:JavaScript code}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +140,17 @@
 		"prefix":"javascriptlink",
 		"body":[
 			"\\javascriptlink[${3:options%keyvals}]{${1:JavaScript code}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"actionlink{}{}":{
+		"prefix":"actionlink",
+		"body":[
+			"\\actionlink{${1:name}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +158,17 @@
 		"prefix":"actionlink",
 		"body":[
 			"\\actionlink[${3:options%keyvals}]{${1:name}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rawactionlink{}{}":{
+		"prefix":"rawactionlink",
+		"body":[
+			"\\rawactionlink{${1:PDF code}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +176,17 @@
 		"prefix":"rawactionlink",
 		"body":[
 			"\\rawactionlink[${3:options%keyvals}]{${1:PDF code}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"annotation{}{}":{
+		"prefix":"annotation",
+		"body":[
+			"\\annotation{${1:PDF code}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +194,35 @@
 		"prefix":"annotation",
 		"body":[
 			"\\annotation[${3:options%keyvals}]{${1:PDF code}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"urlaction{}{}":{
+		"prefix":"urlaction",
+		"body":[
+			"\\urlaction{${1:name}}{${2:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"javascriptaction{}{}":{
+		"prefix":"javascriptaction",
+		"body":[
+			"\\javascriptaction{${1:name}}{${2:JavaScript code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embeddedfile{}{}":{
+		"prefix":"embeddedfile",
+		"body":[
+			"\\embeddedfile{${1:object name}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +230,8 @@
 		"prefix":"embeddedfile",
 		"body":[
 			"\\embeddedfile[${3:description}]{${1:object name}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +239,8 @@
 		"prefix":"embeddedfile",
 		"body":[
 			"\\embeddedfile{${1:object name}}[${3:alt filename}]{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -317,7 +248,17 @@
 		"prefix":"embeddedfile",
 		"body":[
 			"\\embeddedfile[${3:description}]{${1:object name}}[${4:alt filename}]{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"openfilelink{}{}":{
+		"prefix":"openfilelink",
+		"body":[
+			"\\openfilelink{${1:file}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +266,8 @@
 		"prefix":"openfilelink",
 		"body":[
 			"\\openfilelink[${3:options%keyvals}]{${1:file}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +275,8 @@
 		"prefix":"openfilelink",
 		"body":[
 			"\\openfilelink{${1:file}}[${3:page}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +284,35 @@
 		"prefix":"openfilelink",
 		"body":[
 			"\\openfilelink[${3:options%keyvals}]{${1:file}}[${4:page}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfobject{}{}":{
+		"prefix":"pdfobject",
+		"body":[
+			"\\pdfobject{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfdictobject{}{}":{
+		"prefix":"pdfdictobject",
+		"body":[
+			"\\pdfdictobject{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfstreamobject{}{}":{
+		"prefix":"pdfstreamobject",
+		"body":[
+			"\\pdfstreamobject{${1:name}}{${2:stream}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +320,17 @@
 		"prefix":"pdfstreamobject",
 		"body":[
 			"\\pdfstreamobject[${3:raw code}]{${1:name}}{${2:stream}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdffileobject{}{}":{
+		"prefix":"pdffileobject",
+		"body":[
+			"\\pdffileobject{${1:name}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,6 +338,70 @@
 		"prefix":"pdffileobject",
 		"body":[
 			"\\pdffileobject[${3:raw code}]{${1:name}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pdfreserveobject{}":{
+		"prefix":"pdfreserveobject",
+		"body":[
+			"\\pdfreserveobject{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfensureobject{}":{
+		"prefix":"pdfensureobject",
+		"body":[
+			"\\pdfensureobject{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfobjectnumber{}":{
+		"prefix":"pdfobjectnumber",
+		"body":[
+			"\\pdfobjectnumber{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfrefobject{}":{
+		"prefix":"pdfrefobject",
+		"body":[
+			"\\pdfrefobject{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfobjectstatus{}":{
+		"prefix":"pdfobjectstatus",
+		"body":[
+			"\\pdfobjectstatus{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpdfobject{}{}{}":{
+		"prefix":"ifpdfobject",
+		"body":[
+			"\\ifpdfobject{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfstring{}":{
+		"prefix":"pdfstring",
+		"body":[
+			"\\pdfstring{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

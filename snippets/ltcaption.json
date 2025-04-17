@@ -5,7 +5,8 @@
 		"prefix":"LTcapskip",
 		"body":[
 			"\\LTcapskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"LTcapleft",
 		"body":[
 			"\\LTcapleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"LTcapright",
 		"body":[
 			"\\LTcapright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"LTcapmarginstrue",
 		"body":[
 			"\\LTcapmarginstrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"LTcapmarginsfalse",
 		"body":[
 			"\\LTcapmarginsfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"CaptionLabelFont",
 		"body":[
 			"\\CaptionLabelFont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"CaptionLabelSeparator",
 		"body":[
 			"\\CaptionLabelSeparator"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"CaptionTextFont",
 		"body":[
 			"\\CaptionTextFont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,26 +77,29 @@
 		"prefix":"LTcaptype",
 		"body":[
 			"\\LTcaptype"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"longtable*":{
-		"prefix":"longtable",
+	"longtable*{}":{
+		"prefix":"*longtable",
 		"body":[
 			"\\begin{longtable*}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{longtable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"longtable*":{
-		"prefix":"longtable",
+	"longtable*[]{}":{
+		"prefix":"*longtable",
 		"body":[
 			"\\begin{longtable*}",
-				"\t$1",
+				"\t[${2:alignment}]{${1:preamble}}",
 			"\\end{longtable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

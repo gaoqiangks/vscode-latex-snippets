@@ -5,7 +5,8 @@
 		"prefix":"ghssetup",
 		"body":[
 			"\\ghssetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,71 +14,8 @@
 		"prefix":"ghs",
 		"body":[
 			"\\ghs{${1:type}}{${2:number}}"
-		]
-	},
-
-
-	"ghspic{}":{
-		"prefix":"ghspic",
-		"body":[
-			"\\ghspic{${1:name}}"
-		]
-	},
-
-
-	"ghslistall":{
-		"prefix":"ghslistall",
-		"body":[
-			"\\ghslistall"
-		]
-	},
-
-
-	"GHSfahrenheit":{
-		"prefix":"GHSfahrenheit",
-		"body":[
-			"\\GHSfahrenheit"
-		]
-	},
-
-
-	"GHScelsius":{
-		"prefix":"GHScelsius",
-		"body":[
-			"\\GHScelsius"
-		]
-	},
-
-
-	"GHSkilogram":{
-		"prefix":"GHSkilogram",
-		"body":[
-			"\\GHSkilogram"
-		]
-	},
-
-
-	"GHSpounds":{
-		"prefix":"GHSpounds",
-		"body":[
-			"\\GHSpounds"
-		]
-	},
-
-
-	"ghs*{}{}":{
-		"prefix":"*ghs",
-		"body":[
-			"\\ghs*{${1:type}}{${2:number}}"
-		]
-	},
-
-
-	"ghs*[]{}{}":{
-		"prefix":"*ghs",
-		"body":[
-			"\\ghs*[${3:options%keyvals}]{${1:type}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +23,35 @@
 		"prefix":"ghs",
 		"body":[
 			"\\ghs[${3:options%keyvals}]{${1:type}}{${2:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ghs*{}{}":{
+		"prefix":"*ghs",
+		"body":[
+			"\\ghs*{${1:type}}{${2:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ghs*[]{}{}":{
+		"prefix":"*ghs",
+		"body":[
+			"\\ghs*[${3:options%keyvals}]{${1:type}}{${2:number}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ghspic{}":{
+		"prefix":"ghspic",
+		"body":[
+			"\\ghspic{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +59,17 @@
 		"prefix":"ghspic",
 		"body":[
 			"\\ghspic[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ghslistall":{
+		"prefix":"ghslistall",
+		"body":[
+			"\\ghslistall"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,6 +77,43 @@
 		"prefix":"ghslistall",
 		"body":[
 			"\\ghslistall[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GHSfahrenheit":{
+		"prefix":"GHSfahrenheit",
+		"body":[
+			"\\GHSfahrenheit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GHScelsius":{
+		"prefix":"GHScelsius",
+		"body":[
+			"\\GHScelsius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GHSkilogram":{
+		"prefix":"GHSkilogram",
+		"body":[
+			"\\GHSkilogram"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GHSpounds":{
+		"prefix":"GHSpounds",
+		"body":[
+			"\\GHSpounds"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

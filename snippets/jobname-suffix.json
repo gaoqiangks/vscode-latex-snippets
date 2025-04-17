@@ -5,7 +5,8 @@
 		"prefix":"JobnameSuffix",
 		"body":[
 			"\\JobnameSuffix"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"IfSuffixTF",
 		"body":[
 			"\\IfSuffixTF{${1:true condition}}{${2:false condition}}"
-		]
-	},
-
-
-	"IfSuffixT{}":{
-		"prefix":"IfSuffixT",
-		"body":[
-			"\\IfSuffixT{${1:true condition}}"
-		]
-	},
-
-
-	"IfSuffixF{}":{
-		"prefix":"IfSuffixF",
-		"body":[
-			"\\IfSuffixF{${1:false condition}}"
-		]
-	},
-
-
-	"OverrideSuffix{}":{
-		"prefix":"OverrideSuffix",
-		"body":[
-			"\\OverrideSuffix{${1:suffix}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +23,17 @@
 		"prefix":"IfSuffixTF",
 		"body":[
 			"\\IfSuffixTF[${3:suffixes}]{${1:true condition}}{${2:false condition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IfSuffixT{}":{
+		"prefix":"IfSuffixT",
+		"body":[
+			"\\IfSuffixT{${1:true condition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +41,17 @@
 		"prefix":"IfSuffixT",
 		"body":[
 			"\\IfSuffixT[${2:suffixes}]{${1:true condition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IfSuffixF{}":{
+		"prefix":"IfSuffixF",
+		"body":[
+			"\\IfSuffixF{${1:false condition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"IfSuffixF",
 		"body":[
 			"\\IfSuffixF[${2:suffixes}]{${1:false condition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"OverrideSuffix{}":{
+		"prefix":"OverrideSuffix",
+		"body":[
+			"\\OverrideSuffix{${1:suffix}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,16 +79,18 @@
 			"\\begin{IfSuffix}",
 				"\t$1",
 			"\\end{IfSuffix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"IfSuffix":{
+	"IfSuffix[]":{
 		"prefix":"IfSuffix",
 		"body":[
 			"\\begin{IfSuffix}",
-				"\t$1",
+				"\t[${1:suffixes}]",
 			"\\end{IfSuffix}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

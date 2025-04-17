@@ -5,79 +5,8 @@
 		"prefix":"note",
 		"body":[
 			"\\note{${1:height}}{${2:text}}"
-		]
-	},
-
-
-	"bnote{}{}":{
-		"prefix":"bnote",
-		"body":[
-			"\\bnote{${1:height}}{${2:text}}"
-		]
-	},
-
-
-	"cnote{}{}":{
-		"prefix":"cnote",
-		"body":[
-			"\\cnote{${1:height}}{${2:text}}"
-		]
-	},
-
-
-	"tnote{}{}":{
-		"prefix":"tnote",
-		"body":[
-			"\\tnote{${1:height}}{${2:text}}"
-		]
-	},
-
-
-	"sourcedoc{}":{
-		"prefix":"sourcedoc",
-		"body":[
-			"\\sourcedoc{${1:file%file}}"
-		]
-	},
-
-
-	"pagegrid":{
-		"prefix":"pagegrid",
-		"body":[
-			"\\pagegrid"
-		]
-	},
-
-
-	"gsetlength{}{}":{
-		"prefix":"gsetlength",
-		"body":[
-			"\\gsetlength{${1:length macro}}{${2:length}}"
-		]
-	},
-
-
-	"thenote":{
-		"prefix":"thenote",
-		"body":[
-			"\\thenote"
-		]
-	},
-
-
-	"resettrim":{
-		"prefix":"resettrim",
-		"body":[
-			"\\resettrim"
-		]
-	},
-
-
-	"ssout{}":{
-		"prefix":"ssout",
-		"body":[
-			"\\ssout{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,53 @@
 		"prefix":"note",
 		"body":[
 			"\\note[${3:alignment%keyvals}]{${1:height}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bnote{}{}":{
+		"prefix":"bnote",
+		"body":[
+			"\\bnote{${1:height}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cnote{}{}":{
+		"prefix":"cnote",
+		"body":[
+			"\\cnote{${1:height}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tnote{}{}":{
+		"prefix":"tnote",
+		"body":[
+			"\\tnote{${1:height}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sourcedoc{}":{
+		"prefix":"sourcedoc",
+		"body":[
+			"\\sourcedoc{${1:file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagegrid":{
+		"prefix":"pagegrid",
+		"body":[
+			"\\pagegrid"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +68,8 @@
 		"prefix":"pagegrid",
 		"body":[
 			"\\pagegrid[${1:TikZ settings}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +77,35 @@
 		"prefix":"pagegrid",
 		"body":[
 			"\\pagegrid[${1:TikZ settings}][${2:steps}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gsetlength{}{}":{
+		"prefix":"gsetlength",
+		"body":[
+			"\\gsetlength{${1:length macro}}{${2:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thenote":{
+		"prefix":"thenote",
+		"body":[
+			"\\thenote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resettrim":{
+		"prefix":"resettrim",
+		"body":[
+			"\\resettrim"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,17 +113,39 @@
 		"prefix":"resettrim",
 		"body":[
 			"\\resettrim[${1:length}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"page":{
+	"ssout{}":{
+		"prefix":"ssout",
+		"body":[
+			"\\ssout{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"page{}":{
 		"prefix":"page",
 		"body":[
 			"\\begin{page}",
-				"\t$1",
+				"\t{${1:page number}}",
 			"\\end{page}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"page[]{}":{
+		"prefix":"page",
+		"body":[
+			"\\begin{page}",
+				"\t[${2:options%keyvals}]{${1:page number}}",
+			"\\end{page}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -129,7 +155,8 @@
 			"\\begin{leftnotes}",
 				"\t$1",
 			"\\end{leftnotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -139,7 +166,8 @@
 			"\\begin{rightnotes}",
 				"\t$1",
 			"\\end{rightnotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +177,19 @@
 			"\\begin{insertpage}",
 				"\t$1",
 			"\\end{insertpage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertpage[]":{
+		"prefix":"insertpage",
+		"body":[
+			"\\begin{insertpage}",
+				"\t[${1:heading%text}]",
+			"\\end{insertpage}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -159,26 +199,7 @@
 			"\\begin{listofnotes}",
 				"\t$1",
 			"\\end{listofnotes}"
-		]
-	},
-
-
-	"page":{
-		"prefix":"page",
-		"body":[
-			"\\begin{page}",
-				"\t$1",
-			"\\end{page}"
-		]
-	},
-
-
-	"insertpage":{
-		"prefix":"insertpage",
-		"body":[
-			"\\begin{insertpage}",
-				"\t$1",
-			"\\end{insertpage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

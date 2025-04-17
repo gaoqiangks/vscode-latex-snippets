@@ -5,7 +5,8 @@
 		"prefix":"mmzset",
 		"body":[
 			"\\mmzset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mmznext",
 		"body":[
 			"\\mmznext{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"nommzkeys",
 		"body":[
 			"\\nommzkeys{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,415 +32,8 @@
 		"prefix":"mmz",
 		"body":[
 			"\\mmz{${1:code%text}}"
-		]
-	},
-
-
-	"nommz{}":{
-		"prefix":"nommz",
-		"body":[
-			"\\nommz{${1:code%text}}"
-		]
-	},
-
-
-	"mmzContext":{
-		"prefix":"mmzContext",
-		"body":[
-			"\\mmzContext"
-		]
-	},
-
-
-	"mmzContextExtra":{
-		"prefix":"mmzContextExtra",
-		"body":[
-			"\\mmzContextExtra"
-		]
-	},
-
-
-	"mmzNoRef{}":{
-		"prefix":"mmzNoRef",
-		"body":[
-			"\\mmzNoRef{${1:label}}"
-		]
-	},
-
-
-	"mmzForceNoRef{}":{
-		"prefix":"mmzForceNoRef",
-		"body":[
-			"\\mmzForceNoRef{${1:label}}"
-		]
-	},
-
-
-	"mmzAbort":{
-		"prefix":"mmzAbort",
-		"body":[
-			"\\mmzAbort"
-		]
-	},
-
-
-	"mmzUnmemoizable":{
-		"prefix":"mmzUnmemoizable",
-		"body":[
-			"\\mmzUnmemoizable"
-		]
-	},
-
-
-	"ifmmzUnmemoizable":{
-		"prefix":"ifmmzUnmemoizable",
-		"body":[
-			"\\ifmmzUnmemoizable"
-		]
-	},
-
-
-	"Memoize{}{}":{
-		"prefix":"Memoize",
-		"body":[
-			"\\Memoize{${1:key%plain}}{${2:code}}"
-		]
-	},
-
-
-	"mmzAtBeginMemoization":{
-		"prefix":"mmzAtBeginMemoization",
-		"body":[
-			"\\mmzAtBeginMemoization"
-		]
-	},
-
-
-	"mmzAtEndMemoization":{
-		"prefix":"mmzAtEndMemoization",
-		"body":[
-			"\\mmzAtEndMemoization"
-		]
-	},
-
-
-	"mmzAtEndMemoizationExtra":{
-		"prefix":"mmzAtEndMemoizationExtra",
-		"body":[
-			"\\mmzAtEndMemoizationExtra"
-		]
-	},
-
-
-	"mmzAfterMemoization":{
-		"prefix":"mmzAfterMemoization",
-		"body":[
-			"\\mmzAfterMemoization"
-		]
-	},
-
-
-	"mmzAfterMemoizationExtra":{
-		"prefix":"mmzAfterMemoizationExtra",
-		"body":[
-			"\\mmzAfterMemoizationExtra"
-		]
-	},
-
-
-	"mmzCMemo":{
-		"prefix":"mmzCMemo",
-		"body":[
-			"\\mmzCMemo"
-		]
-	},
-
-
-	"mmzCCMemo":{
-		"prefix":"mmzCCMemo",
-		"body":[
-			"\\mmzCCMemo"
-		]
-	},
-
-
-	"ifmemoize":{
-		"prefix":"ifmemoize",
-		"body":[
-			"\\ifmemoize"
-		]
-	},
-
-
-	"memoizetrue":{
-		"prefix":"memoizetrue",
-		"body":[
-			"\\memoizetrue"
-		]
-	},
-
-
-	"memoizefalse":{
-		"prefix":"memoizefalse",
-		"body":[
-			"\\memoizefalse"
-		]
-	},
-
-
-	"ifmemoizing":{
-		"prefix":"ifmemoizing",
-		"body":[
-			"\\ifmemoizing"
-		]
-	},
-
-
-	"ifinmemoize":{
-		"prefix":"ifinmemoize",
-		"body":[
-			"\\ifinmemoize"
-		]
-	},
-
-
-	"mmzSingleExternDriver{}":{
-		"prefix":"mmzSingleExternDriver",
-		"body":[
-			"\\mmzSingleExternDriver{${1:code}}"
-		]
-	},
-
-
-	"mmzExternalizeBox{}{}":{
-		"prefix":"mmzExternalizeBox",
-		"body":[
-			"\\mmzExternalizeBox{${1:box}}{${2:token register}}"
-		]
-	},
-
-
-	"ifmmzkeepexterns":{
-		"prefix":"ifmmzkeepexterns",
-		"body":[
-			"\\ifmmzkeepexterns"
-		]
-	},
-
-
-	"mmzkeepexternstrue":{
-		"prefix":"mmzkeepexternstrue",
-		"body":[
-			"\\mmzkeepexternstrue"
-		]
-	},
-
-
-	"mmzkeepexternsfalse":{
-		"prefix":"mmzkeepexternsfalse",
-		"body":[
-			"\\mmzkeepexternsfalse"
-		]
-	},
-
-
-	"IfMemoizing{}{}{}":{
-		"prefix":"IfMemoizing",
-		"body":[
-			"\\IfMemoizing{${1:name}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"memoizinggrouplevel":{
-		"prefix":"memoizinggrouplevel",
-		"body":[
-			"\\memoizinggrouplevel"
-		]
-	},
-
-
-	"mmzRegularPages":{
-		"prefix":"mmzRegularPages",
-		"body":[
-			"\\mmzRegularPages"
-		]
-	},
-
-
-	"mmzExternPages":{
-		"prefix":"mmzExternPages",
-		"body":[
-			"\\mmzExternPages"
-		]
-	},
-
-
-	"mmzExtraPages":{
-		"prefix":"mmzExtraPages",
-		"body":[
-			"\\mmzExtraPages"
-		]
-	},
-
-
-	"mmzTracingOn":{
-		"prefix":"mmzTracingOn",
-		"body":[
-			"\\mmzTracingOn"
-		]
-	},
-
-
-	"mmzTracingOff":{
-		"prefix":"mmzTracingOff",
-		"body":[
-			"\\mmzTracingOff"
-		]
-	},
-
-
-	"mmzThisContext":{
-		"prefix":"mmzThisContext",
-		"body":[
-			"\\mmzThisContext"
-		]
-	},
-
-
-	"mmzMemo":{
-		"prefix":"mmzMemo",
-		"body":[
-			"\\mmzMemo"
-		]
-	},
-
-
-	"mmzSource":{
-		"prefix":"mmzSource",
-		"body":[
-			"\\mmzSource"
-		]
-	},
-
-
-	"mmzResource{}":{
-		"prefix":"mmzResource",
-		"body":[
-			"\\mmzResource{${1:file}}"
-		]
-	},
-
-
-	"mmzIncludeExtern{}{}{}{}{}{}{}{}{}":{
-		"prefix":"mmzIncludeExtern",
-		"body":[
-			"\\mmzIncludeExtern{${1:seq}}{${2:\\hbox|\\vbox}}{${3:width}}{${4:height}}{${5:depth}}{${6:left}}{${7:bot}}{${8:right}}{${9:top}}"
-		]
-	},
-
-
-	"mmzLabel{}{}":{
-		"prefix":"mmzLabel",
-		"body":[
-			"\\mmzLabel{${1:key%plain}}{${2:value}}"
-		]
-	},
-
-
-	"mmzEndMemo":{
-		"prefix":"mmzEndMemo",
-		"body":[
-			"\\mmzEndMemo"
-		]
-	},
-
-
-	"mmzOutputDirectory":{
-		"prefix":"mmzOutputDirectory",
-		"body":[
-			"\\mmzOutputDirectory"
-		]
-	},
-
-
-	"mmzUsedCMemo{}":{
-		"prefix":"mmzUsedCMemo",
-		"body":[
-			"\\mmzUsedCMemo{${1:filename}}"
-		]
-	},
-
-
-	"mmzUsedCCMemo{}":{
-		"prefix":"mmzUsedCCMemo",
-		"body":[
-			"\\mmzUsedCCMemo{${1:filename}}"
-		]
-	},
-
-
-	"mmzUsedExtern{}":{
-		"prefix":"mmzUsedExtern",
-		"body":[
-			"\\mmzUsedExtern{${1:filename}}"
-		]
-	},
-
-
-	"mmzNewCMemo{}":{
-		"prefix":"mmzNewCMemo",
-		"body":[
-			"\\mmzNewCMemo{${1:filename}}"
-		]
-	},
-
-
-	"mmzNewCCMemo{}":{
-		"prefix":"mmzNewCCMemo",
-		"body":[
-			"\\mmzNewCCMemo{${1:filename}}"
-		]
-	},
-
-
-	"mmzNewExtern{}{}{}{}":{
-		"prefix":"mmzNewExtern",
-		"body":[
-			"\\mmzNewExtern{${1:filename}}{${2:page num}}{${3:width}}{${4:height}}"
-		]
-	},
-
-
-	"mmzPrefix{}":{
-		"prefix":"mmzPrefix",
-		"body":[
-			"\\mmzPrefix{${1:path prefix}}"
-		]
-	},
-
-
-	"mmzAutoInit":{
-		"prefix":"mmzAutoInit",
-		"body":[
-			"\\mmzAutoInit"
-		]
-	},
-
-
-	"mmzPgfAtBeginMemoization":{
-		"prefix":"mmzPgfAtBeginMemoization",
-		"body":[
-			"\\mmzPgfAtBeginMemoization"
-		]
-	},
-
-
-	"mmzPgfAtEndMemoization":{
-		"prefix":"mmzPgfAtEndMemoization",
-		"body":[
-			"\\mmzPgfAtEndMemoization"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,7 +41,17 @@
 		"prefix":"mmz",
 		"body":[
 			"\\mmz[${2:options%keyvals}]{${1:code%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nommz{}":{
+		"prefix":"nommz",
+		"body":[
+			"\\nommz{${1:code%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +59,242 @@
 		"prefix":"nommz",
 		"body":[
 			"\\nommz[${2:options%keyvals}]{${1:code%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mmzContext":{
+		"prefix":"mmzContext",
+		"body":[
+			"\\mmzContext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzContextExtra":{
+		"prefix":"mmzContextExtra",
+		"body":[
+			"\\mmzContextExtra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzNoRef{}":{
+		"prefix":"mmzNoRef",
+		"body":[
+			"\\mmzNoRef{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzForceNoRef{}":{
+		"prefix":"mmzForceNoRef",
+		"body":[
+			"\\mmzForceNoRef{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAbort":{
+		"prefix":"mmzAbort",
+		"body":[
+			"\\mmzAbort"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzUnmemoizable":{
+		"prefix":"mmzUnmemoizable",
+		"body":[
+			"\\mmzUnmemoizable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmmzUnmemoizable":{
+		"prefix":"ifmmzUnmemoizable",
+		"body":[
+			"\\ifmmzUnmemoizable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Memoize{}{}":{
+		"prefix":"Memoize",
+		"body":[
+			"\\Memoize{${1:key%plain}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAtBeginMemoization":{
+		"prefix":"mmzAtBeginMemoization",
+		"body":[
+			"\\mmzAtBeginMemoization"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAtEndMemoization":{
+		"prefix":"mmzAtEndMemoization",
+		"body":[
+			"\\mmzAtEndMemoization"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAtEndMemoizationExtra":{
+		"prefix":"mmzAtEndMemoizationExtra",
+		"body":[
+			"\\mmzAtEndMemoizationExtra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAfterMemoization":{
+		"prefix":"mmzAfterMemoization",
+		"body":[
+			"\\mmzAfterMemoization"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAfterMemoizationExtra":{
+		"prefix":"mmzAfterMemoizationExtra",
+		"body":[
+			"\\mmzAfterMemoizationExtra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzCMemo":{
+		"prefix":"mmzCMemo",
+		"body":[
+			"\\mmzCMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzCCMemo":{
+		"prefix":"mmzCCMemo",
+		"body":[
+			"\\mmzCCMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmemoize":{
+		"prefix":"ifmemoize",
+		"body":[
+			"\\ifmemoize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"memoizetrue":{
+		"prefix":"memoizetrue",
+		"body":[
+			"\\memoizetrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"memoizefalse":{
+		"prefix":"memoizefalse",
+		"body":[
+			"\\memoizefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmemoizing":{
+		"prefix":"ifmemoizing",
+		"body":[
+			"\\ifmemoizing"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifinmemoize":{
+		"prefix":"ifinmemoize",
+		"body":[
+			"\\ifinmemoize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzSingleExternDriver{}":{
+		"prefix":"mmzSingleExternDriver",
+		"body":[
+			"\\mmzSingleExternDriver{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzExternalizeBox{}{}":{
+		"prefix":"mmzExternalizeBox",
+		"body":[
+			"\\mmzExternalizeBox{${1:box}}{${2:token register}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmmzkeepexterns":{
+		"prefix":"ifmmzkeepexterns",
+		"body":[
+			"\\ifmmzkeepexterns"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzkeepexternstrue":{
+		"prefix":"mmzkeepexternstrue",
+		"body":[
+			"\\mmzkeepexternstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzkeepexternsfalse":{
+		"prefix":"mmzkeepexternsfalse",
+		"body":[
+			"\\mmzkeepexternsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfMemoizing{}{}{}":{
+		"prefix":"IfMemoizing",
+		"body":[
+			"\\IfMemoizing{${1:name}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +302,224 @@
 		"prefix":"IfMemoizing",
 		"body":[
 			"\\IfMemoizing[${4:offset}]{${1:name}}{${2:true code}}{${3:false code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"memoizinggrouplevel":{
+		"prefix":"memoizinggrouplevel",
+		"body":[
+			"\\memoizinggrouplevel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzRegularPages":{
+		"prefix":"mmzRegularPages",
+		"body":[
+			"\\mmzRegularPages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzExternPages":{
+		"prefix":"mmzExternPages",
+		"body":[
+			"\\mmzExternPages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzExtraPages":{
+		"prefix":"mmzExtraPages",
+		"body":[
+			"\\mmzExtraPages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzTracingOn":{
+		"prefix":"mmzTracingOn",
+		"body":[
+			"\\mmzTracingOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzTracingOff":{
+		"prefix":"mmzTracingOff",
+		"body":[
+			"\\mmzTracingOff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzThisContext":{
+		"prefix":"mmzThisContext",
+		"body":[
+			"\\mmzThisContext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzMemo":{
+		"prefix":"mmzMemo",
+		"body":[
+			"\\mmzMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzSource":{
+		"prefix":"mmzSource",
+		"body":[
+			"\\mmzSource"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzResource{}":{
+		"prefix":"mmzResource",
+		"body":[
+			"\\mmzResource{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzIncludeExtern{}{}{}{}{}{}{}{}{}":{
+		"prefix":"mmzIncludeExtern",
+		"body":[
+			"\\mmzIncludeExtern{${1:seq}}{${2:\\hbox|\\vbox}}{${3:width}}{${4:height}}{${5:depth}}{${6:left}}{${7:bot}}{${8:right}}{${9:top}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzLabel{}{}":{
+		"prefix":"mmzLabel",
+		"body":[
+			"\\mmzLabel{${1:key%plain}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzEndMemo":{
+		"prefix":"mmzEndMemo",
+		"body":[
+			"\\mmzEndMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzOutputDirectory":{
+		"prefix":"mmzOutputDirectory",
+		"body":[
+			"\\mmzOutputDirectory"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzUsedCMemo{}":{
+		"prefix":"mmzUsedCMemo",
+		"body":[
+			"\\mmzUsedCMemo{${1:filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzUsedCCMemo{}":{
+		"prefix":"mmzUsedCCMemo",
+		"body":[
+			"\\mmzUsedCCMemo{${1:filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzUsedExtern{}":{
+		"prefix":"mmzUsedExtern",
+		"body":[
+			"\\mmzUsedExtern{${1:filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzNewCMemo{}":{
+		"prefix":"mmzNewCMemo",
+		"body":[
+			"\\mmzNewCMemo{${1:filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzNewCCMemo{}":{
+		"prefix":"mmzNewCCMemo",
+		"body":[
+			"\\mmzNewCCMemo{${1:filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzNewExtern{}{}{}{}":{
+		"prefix":"mmzNewExtern",
+		"body":[
+			"\\mmzNewExtern{${1:filename}}{${2:page num}}{${3:width}}{${4:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzPrefix{}":{
+		"prefix":"mmzPrefix",
+		"body":[
+			"\\mmzPrefix{${1:path prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzAutoInit":{
+		"prefix":"mmzAutoInit",
+		"body":[
+			"\\mmzAutoInit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzPgfAtBeginMemoization":{
+		"prefix":"mmzPgfAtBeginMemoization",
+		"body":[
+			"\\mmzPgfAtBeginMemoization"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzPgfAtEndMemoization":{
+		"prefix":"mmzPgfAtEndMemoization",
+		"body":[
+			"\\mmzPgfAtEndMemoization"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -471,27 +529,19 @@
 			"\\begin{memoize}",
 				"\t$1",
 			"\\end{memoize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"nomemoize":{
-		"prefix":"nomemoize",
-		"body":[
-			"\\begin{nomemoize}",
-				"\t$1",
-			"\\end{nomemoize}"
-		]
-	},
-
-
-	"memoize":{
+	"memoize[]":{
 		"prefix":"memoize",
 		"body":[
 			"\\begin{memoize}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{memoize}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -501,6 +551,18 @@
 			"\\begin{nomemoize}",
 				"\t$1",
 			"\\end{nomemoize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nomemoize[]":{
+		"prefix":"nomemoize",
+		"body":[
+			"\\begin{nomemoize}",
+				"\t[${1:options%keyvals}]",
+			"\\end{nomemoize}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

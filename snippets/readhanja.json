@@ -5,47 +5,8 @@
 		"prefix":"readhanjahangulfont",
 		"body":[
 			"\\readhanjahangulfont{${1:font}}"
-		]
-	},
-
-
-	"readhanjaraise{}":{
-		"prefix":"readhanjaraise",
-		"body":[
-			"\\readhanjaraise{${1:dimen}}"
-		]
-	},
-
-
-	"readhanjalocate{}":{
-		"prefix":"readhanjalocate",
-		"body":[
-			"\\readhanjalocate{${1:options}}"
-		]
-	},
-
-
-	"readhanjaunit{}":{
-		"prefix":"readhanjaunit",
-		"body":[
-			"\\readhanjaunit{${1:options}}"
-		]
-	},
-
-
-	"readhanjareading{}{}":{
-		"prefix":"readhanjareading",
-		"body":[
-			"\\readhanjareading{${1:hanja}}{${2:reading}}"
-		]
-	},
-
-
-	"readhanjadictionary{}{}":{
-		"prefix":"readhanjadictionary",
-		"body":[
-			"\\readhanjadictionary{${1:hanja}}{${2:reading}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,8 @@
 		"prefix":"readhanjahangulfont",
 		"body":[
 			"\\readhanjahangulfont[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +23,8 @@
 		"prefix":"readhanjahangulfont",
 		"body":[
 			"\\readhanjahangulfont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +32,53 @@
 		"prefix":"readhanjahangulfont",
 		"body":[
 			"\\readhanjahangulfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readhanjaraise{}":{
+		"prefix":"readhanjaraise",
+		"body":[
+			"\\readhanjaraise{${1:dimen}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readhanjalocate{}":{
+		"prefix":"readhanjalocate",
+		"body":[
+			"\\readhanjalocate{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readhanjaunit{}":{
+		"prefix":"readhanjaunit",
+		"body":[
+			"\\readhanjaunit{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readhanjareading{}{}":{
+		"prefix":"readhanjareading",
+		"body":[
+			"\\readhanjareading{${1:hanja}}{${2:reading}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readhanjadictionary{}{}":{
+		"prefix":"readhanjadictionary",
+		"body":[
+			"\\readhanjadictionary{${1:hanja}}{${2:reading}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,6 +88,7 @@
 			"\\begin{readhanja}",
 				"\t$1",
 			"\\end{readhanja}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

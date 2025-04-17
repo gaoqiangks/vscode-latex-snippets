@@ -5,79 +5,8 @@
 		"prefix":"bnfprod",
 		"body":[
 			"\\bnfprod{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"bnfmore{}":{
-		"prefix":"bnfmore",
-		"body":[
-			"\\bnfmore{${1:definition}}"
-		]
-	},
-
-
-	"bnfpn{}":{
-		"prefix":"bnfpn",
-		"body":[
-			"\\bnfpn{${1:name}}"
-		]
-	},
-
-
-	"bnfts{}":{
-		"prefix":"bnfts",
-		"body":[
-			"\\bnfts{${1:string}}"
-		]
-	},
-
-
-	"bnftd{}":{
-		"prefix":"bnftd",
-		"body":[
-			"\\bnftd{${1:phrase}}"
-		]
-	},
-
-
-	"bnfes":{
-		"prefix":"bnfes",
-		"body":[
-			"\\bnfes"
-		]
-	},
-
-
-	"bnfsk":{
-		"prefix":"bnfsk",
-		"body":[
-			"\\bnfsk"
-		]
-	},
-
-
-	"bnfor":{
-		"prefix":"bnfor",
-		"body":[
-			"\\bnfor"
-		]
-	},
-
-
-	"bnfsp":{
-		"prefix":"bnfsp",
-		"body":[
-			"\\bnfsp"
-		]
-	},
-
-
-	"bnfpo":{
-		"prefix":"bnfpo",
-		"body":[
-			"\\bnfpo"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,17 @@
 		"prefix":"*bnfprod",
 		"body":[
 			"\\bnfprod*{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bnfmore{}":{
+		"prefix":"bnfmore",
+		"body":[
+			"\\bnfmore{${1:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +32,80 @@
 		"prefix":"*bnfmore",
 		"body":[
 			"\\bnfmore*{${1:definition}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bnfpn{}":{
+		"prefix":"bnfpn",
+		"body":[
+			"\\bnfpn{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfts{}":{
+		"prefix":"bnfts",
+		"body":[
+			"\\bnfts{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnftd{}":{
+		"prefix":"bnftd",
+		"body":[
+			"\\bnftd{${1:phrase}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfes":{
+		"prefix":"bnfes",
+		"body":[
+			"\\bnfes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfsk":{
+		"prefix":"bnfsk",
+		"body":[
+			"\\bnfsk"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfor":{
+		"prefix":"bnfor",
+		"body":[
+			"\\bnfor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfsp":{
+		"prefix":"bnfsp",
+		"body":[
+			"\\bnfsp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnfpo":{
+		"prefix":"bnfpo",
+		"body":[
+			"\\bnfpo"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -103,7 +115,8 @@
 			"\\begin{bnf}",
 				"\t$1",
 			"\\end{bnf}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -113,6 +126,7 @@
 			"\\begin{bnf*}",
 				"\t$1",
 			"\\end{bnf*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

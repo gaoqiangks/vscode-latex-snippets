@@ -5,31 +5,8 @@
 		"prefix":"coverimage",
 		"body":[
 			"\\coverimage{${1:imagefile}}"
-		]
-	},
-
-
-	"epubpage":{
-		"prefix":"epubpage",
-		"body":[
-			"\\epubpage"
-		]
-	},
-
-
-	"DeclareLanguageEbook{}{}":{
-		"prefix":"DeclareLanguageEbook",
-		"body":[
-			"\\DeclareLanguageEbook{${1:lang name}}{${2:lang code}}"
-		]
-	},
-
-
-	"GetLanguage":{
-		"prefix":"GetLanguage",
-		"body":[
-			"\\GetLanguage"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +14,34 @@
 		"prefix":"coverimage",
 		"body":[
 			"\\coverimage[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"epubpage":{
+		"prefix":"epubpage",
+		"body":[
+			"\\epubpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLanguageEbook{}{}":{
+		"prefix":"DeclareLanguageEbook",
+		"body":[
+			"\\DeclareLanguageEbook{${1:lang name}}{${2:lang code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetLanguage":{
+		"prefix":"GetLanguage",
+		"body":[
+			"\\GetLanguage"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -1,27 +1,21 @@
 {
 
 
-	"cref*[]{}":{
-		"prefix":"*cref",
-		"body":[
-			"\\cref*[${2:option%keyvals}]{${1:labellist}}"
-		]
-	},
-
-
-	"Cref*[]{}":{
-		"prefix":"*Cref",
-		"body":[
-			"\\Cref*[${2:option%keyvals}]{${1:labellist}}"
-		]
-	},
-
-
 	"cref[]{}":{
 		"prefix":"cref",
 		"body":[
 			"\\cref[${2:option%keyvals}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cref*[]{}":{
+		"prefix":"*cref",
+		"body":[
+			"\\cref*[${2:option%keyvals}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -29,6 +23,16 @@
 		"prefix":"Cref",
 		"body":[
 			"\\Cref[${2:option%keyvals}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cref*[]{}":{
+		"prefix":"*Cref",
+		"body":[
+			"\\Cref*[${2:option%keyvals}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

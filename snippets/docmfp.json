@@ -5,7 +5,8 @@
 		"prefix":"DescribeRoutine",
 		"body":[
 			"\\DescribeRoutine{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"routinestring",
 		"body":[
 			"\\routinestring"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"routineheadname",
 		"body":[
 			"\\routineheadname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"DescribeVariable",
 		"body":[
 			"\\DescribeVariable{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"variablestring",
 		"body":[
 			"\\variablestring"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"variableheadname",
 		"body":[
 			"\\variableheadname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"Describe",
 		"body":[
 			"\\Describe{${1:head}}{${2:flag}}{${3:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"PrintMfpName",
 		"body":[
 			"\\PrintMfpName{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"SpecialMainMfpIndex",
 		"body":[
 			"\\SpecialMainMfpIndex{${1:name}}{${2:string}}{${3:heading}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,36 +86,40 @@
 		"prefix":"SpecialMfpIndex",
 		"body":[
 			"\\SpecialMfpIndex{${1:name}}{${2:string}}{${3:heading}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"routine":{
+	"routine{}":{
 		"prefix":"routine",
 		"body":[
 			"\\begin{routine}",
-				"\t$1",
+				"\t{${1:macro}}",
 			"\\end{routine}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"variable":{
+	"variable{}":{
 		"prefix":"variable",
 		"body":[
 			"\\begin{variable}",
-				"\t$1",
+				"\t{${1:variable}}",
 			"\\end{variable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Code":{
+	"Code{}{}{}":{
 		"prefix":"Code",
 		"body":[
 			"\\begin{Code}",
-				"\t$1",
+				"\t{${1:head}}{${2:flag}}{${3:name}}",
 			"\\end{Code}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

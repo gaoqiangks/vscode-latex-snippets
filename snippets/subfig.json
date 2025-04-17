@@ -5,111 +5,8 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure{${1:body%text}}"
-		]
-	},
-
-
-	"subtable{}":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable{${1:body%text}}"
-		]
-	},
-
-
-	"Subref{}":{
-		"prefix":"Subref",
-		"body":[
-			"\\Subref{${1:label}}"
-		]
-	},
-
-
-	"newsubfloat{}":{
-		"prefix":"newsubfloat",
-		"body":[
-			"\\newsubfloat{${1:float name}}"
-		]
-	},
-
-
-	"DeclareCaptionListOfFormat{}{}":{
-		"prefix":"DeclareCaptionListOfFormat",
-		"body":[
-			"\\DeclareCaptionListOfFormat{${1:keyword}}{${2:code}}"
-		]
-	},
-
-
-	"DeclareSubrefFormat{}{}":{
-		"prefix":"DeclareSubrefFormat",
-		"body":[
-			"\\DeclareSubrefFormat{${1:keyword}}{${2:code}}"
-		]
-	},
-
-
-	"subfloat{}":{
-		"prefix":"subfloat",
-		"body":[
-			"\\subfloat{${1:body%text}}"
-		]
-	},
-
-
-	"subref{}":{
-		"prefix":"subref",
-		"body":[
-			"\\subref{${1:label}}"
-		]
-	},
-
-
-	"listsubcaptions":{
-		"prefix":"listsubcaptions",
-		"body":[
-			"\\listsubcaptions"
-		]
-	},
-
-
-	"thesubfigure":{
-		"prefix":"thesubfigure",
-		"body":[
-			"\\thesubfigure"
-		]
-	},
-
-
-	"thesubtable":{
-		"prefix":"thesubtable",
-		"body":[
-			"\\thesubtable"
-		]
-	},
-
-
-	"subfigurename":{
-		"prefix":"subfigurename",
-		"body":[
-			"\\subfigurename"
-		]
-	},
-
-
-	"subtablename":{
-		"prefix":"subtablename",
-		"body":[
-			"\\subtablename"
-		]
-	},
-
-
-	"subref*{}":{
-		"prefix":"*subref",
-		"body":[
-			"\\subref*{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +14,8 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure[${2:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +23,17 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtable{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable{${1:body%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +41,8 @@
 		"prefix":"subtable",
 		"body":[
 			"\\subtable[${2:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +50,26 @@
 		"prefix":"subtable",
 		"body":[
 			"\\subtable[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Subref{}":{
+		"prefix":"Subref",
+		"body":[
+			"\\Subref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newsubfloat{}":{
+		"prefix":"newsubfloat",
+		"body":[
+			"\\newsubfloat{${1:float name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +77,35 @@
 		"prefix":"newsubfloat",
 		"body":[
 			"\\newsubfloat[${2:kv-list}]{${1:float name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareCaptionListOfFormat{}{}":{
+		"prefix":"DeclareCaptionListOfFormat",
+		"body":[
+			"\\DeclareCaptionListOfFormat{${1:keyword}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareSubrefFormat{}{}":{
+		"prefix":"DeclareSubrefFormat",
+		"body":[
+			"\\DeclareSubrefFormat{${1:keyword}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfloat{}":{
+		"prefix":"subfloat",
+		"body":[
+			"\\subfloat{${1:body%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +113,8 @@
 		"prefix":"subfloat",
 		"body":[
 			"\\subfloat[${2:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,6 +122,70 @@
 		"prefix":"subfloat",
 		"body":[
 			"\\subfloat[${2:listentry%text}][${3:subcaption%text}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subref{}":{
+		"prefix":"subref",
+		"body":[
+			"\\subref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subref*{}":{
+		"prefix":"*subref",
+		"body":[
+			"\\subref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listsubcaptions":{
+		"prefix":"listsubcaptions",
+		"body":[
+			"\\listsubcaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubfigure":{
+		"prefix":"thesubfigure",
+		"body":[
+			"\\thesubfigure"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubtable":{
+		"prefix":"thesubtable",
+		"body":[
+			"\\thesubtable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigurename":{
+		"prefix":"subfigurename",
+		"body":[
+			"\\subfigurename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtablename":{
+		"prefix":"subtablename",
+		"body":[
+			"\\subtablename"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

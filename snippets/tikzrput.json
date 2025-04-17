@@ -5,39 +5,8 @@
 		"prefix":"rput",
 		"body":[
 			"\\rput(${2:x},${3:y}){${1:object%text}}"
-		]
-	},
-
-
-	"rput{}(){}":{
-		"prefix":"rput",
-		"body":[
-			"\\rput{${1:angle}}(${3:x},${4:y}){${2:object%text}}"
-		]
-	},
-
-
-	"tikzrputPtVirCode":{
-		"prefix":"tikzrputPtVirCode",
-		"body":[
-			"\\tikzrputPtVirCode"
-		]
-	},
-
-
-	"tikzrputAtCode":{
-		"prefix":"tikzrputAtCode",
-		"body":[
-			"\\tikzrputAtCode"
-		]
-	},
-
-
-	"tikzrputTwoPtCode":{
-		"prefix":"tikzrputTwoPtCode",
-		"body":[
-			"\\tikzrputTwoPtCode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"rput",
 		"body":[
 			"\\rput[${2:refpoint}](${3:x},${4:y}){${1:object%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rput{}(){}":{
+		"prefix":"rput",
+		"body":[
+			"\\rput{${1:angle}}(${3:x},${4:y}){${2:object%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +32,34 @@
 		"prefix":"rput",
 		"body":[
 			"\\rput[${3:refpoint}]{${1:angle}}(${4:x},${5:y}){${2:object%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzrputPtVirCode":{
+		"prefix":"tikzrputPtVirCode",
+		"body":[
+			"\\tikzrputPtVirCode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzrputAtCode":{
+		"prefix":"tikzrputAtCode",
+		"body":[
+			"\\tikzrputAtCode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzrputTwoPtCode":{
+		"prefix":"tikzrputTwoPtCode",
+		"body":[
+			"\\tikzrputTwoPtCode"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

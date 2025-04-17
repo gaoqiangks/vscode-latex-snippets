@@ -5,39 +5,8 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo{${1:text%todo}}"
-		]
-	},
-
-
-	"todoarea{}{}":{
-		"prefix":"todoarea",
-		"body":[
-			"\\todoarea{${1:note text%todo}}{${2:highlighted text}}"
-		]
-	},
-
-
-	"missingfigure{}":{
-		"prefix":"missingfigure",
-		"body":[
-			"\\missingfigure{${1:text%todo}}"
-		]
-	},
-
-
-	"listoftodos":{
-		"prefix":"listoftodos",
-		"body":[
-			"\\listoftodos"
-		]
-	},
-
-
-	"todototoc":{
-		"prefix":"todototoc",
-		"body":[
-			"\\todototoc"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"todo",
 		"body":[
 			"\\todo[${2:options%keyvals}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"todoarea{}{}":{
+		"prefix":"todoarea",
+		"body":[
+			"\\todoarea{${1:note text%todo}}{${2:highlighted text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +32,17 @@
 		"prefix":"todoarea",
 		"body":[
 			"\\todoarea[${3:options%keyvals}]{${1:note text%todo}}{${2:highlighted text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"missingfigure{}":{
+		"prefix":"missingfigure",
+		"body":[
+			"\\missingfigure{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +50,17 @@
 		"prefix":"missingfigure",
 		"body":[
 			"\\missingfigure[${2:options%keyvals}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listoftodos":{
+		"prefix":"listoftodos",
+		"body":[
+			"\\listoftodos"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +68,16 @@
 		"prefix":"listoftodos",
 		"body":[
 			"\\listoftodos[${1:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"todototoc":{
+		"prefix":"todototoc",
+		"body":[
+			"\\todototoc"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

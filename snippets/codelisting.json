@@ -5,79 +5,8 @@
 		"prefix":"tscode",
 		"body":[
 			"\\tscode{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo{}":{
-		"prefix":"tsdemo",
-		"body":[
-			"\\tsdemo{${1:st-name}}"
-		]
-	},
-
-
-	"tsresult{}":{
-		"prefix":"tsresult",
-		"body":[
-			"\\tsresult{${1:st-name}}"
-		]
-	},
-
-
-	"setcodekeys{}":{
-		"prefix":"setcodekeys",
-		"body":[
-			"\\setcodekeys{${1:code-keys%keyvals}}"
-		]
-	},
-
-
-	"tscode*{}":{
-		"prefix":"*tscode",
-		"body":[
-			"\\tscode*{${1:st-name}}"
-		]
-	},
-
-
-	"tscode*[]{}":{
-		"prefix":"*tscode",
-		"body":[
-			"\\tscode*[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo*{}":{
-		"prefix":"*tsdemo",
-		"body":[
-			"\\tsdemo*{${1:st-name}}"
-		]
-	},
-
-
-	"tsdemo*[]{}":{
-		"prefix":"*tsdemo",
-		"body":[
-			"\\tsdemo*[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
-	},
-
-
-	"tsresult*{}":{
-		"prefix":"*tsresult",
-		"body":[
-			"\\tsresult*{${1:st-name}}"
-		]
-	},
-
-
-	"tsresult*[]{}":{
-		"prefix":"*tsresult",
-		"body":[
-			"\\tsresult*[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,35 @@
 		"prefix":"tscode",
 		"body":[
 			"\\tscode[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tscode*{}":{
+		"prefix":"*tscode",
+		"body":[
+			"\\tscode*{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tscode*[]{}":{
+		"prefix":"*tscode",
+		"body":[
+			"\\tscode*[${2:code-keys%keyvals}]{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tsdemo{}":{
+		"prefix":"tsdemo",
+		"body":[
+			"\\tsdemo{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +50,35 @@
 		"prefix":"tsdemo",
 		"body":[
 			"\\tsdemo[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tsdemo*{}":{
+		"prefix":"*tsdemo",
+		"body":[
+			"\\tsdemo*{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tsdemo*[]{}":{
+		"prefix":"*tsdemo",
+		"body":[
+			"\\tsdemo*[${2:code-keys%keyvals}]{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tsresult{}":{
+		"prefix":"tsresult",
+		"body":[
+			"\\tsresult{${1:st-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +86,35 @@
 		"prefix":"tsresult",
 		"body":[
 			"\\tsresult[${2:code-keys%keyvals}]{${1:st-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tsresult*{}":{
+		"prefix":"*tsresult",
+		"body":[
+			"\\tsresult*{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tsresult*[]{}":{
+		"prefix":"*tsresult",
+		"body":[
+			"\\tsresult*[${2:code-keys%keyvals}]{${1:st-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setcodekeys{}":{
+		"prefix":"setcodekeys",
+		"body":[
+			"\\setcodekeys{${1:code-keys%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,16 +124,18 @@
 			"\\begin{codestore}",
 				"\t$1",
 			"\\end{codestore}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"codestore":{
+	"codestore[]":{
 		"prefix":"codestore",
 		"body":[
 			"\\begin{codestore}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{codestore}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"alter",
 		"body":[
 			"\\alter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"name",
 		"body":[
 			"\\name{${1:taxon name}}"
-		]
-	},
-
-
-	"edknamestyle":{
-		"prefix":"edknamestyle",
-		"body":[
-			"\\edknamestyle"
-		]
-	},
-
-
-	"alterindent":{
-		"prefix":"alterindent",
-		"body":[
-			"\\alterindent"
-		]
-	},
-
-
-	"taxonrightskip":{
-		"prefix":"taxonrightskip",
-		"body":[
-			"\\taxonrightskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +23,35 @@
 		"prefix":"name",
 		"body":[
 			"\\name[${2:prefix}]{${1:taxon name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"edknamestyle":{
+		"prefix":"edknamestyle",
+		"body":[
+			"\\edknamestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alterindent":{
+		"prefix":"alterindent",
+		"body":[
+			"\\alterindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"taxonrightskip":{
+		"prefix":"taxonrightskip",
+		"body":[
+			"\\taxonrightskip"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,16 +61,18 @@
 			"\\begin{Key}",
 				"\t$1",
 			"\\end{Key}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Key":{
+	"Key[]":{
 		"prefix":"Key",
 		"body":[
 			"\\begin{Key}",
-				"\t$1",
+				"\t[${1:prefix}]",
 			"\\end{Key}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

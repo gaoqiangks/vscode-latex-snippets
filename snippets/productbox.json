@@ -5,7 +5,8 @@
 		"prefix":"ProductBoxSet",
 		"body":[
 			"\\ProductBoxSet{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ProductBoxThreeDStartHook",
 		"body":[
 			"\\ProductBoxThreeDStartHook"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ProductBoxThreeDEndHook",
 		"body":[
 			"\\ProductBoxThreeDEndHook"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,7 +34,19 @@
 			"\\begin{ProductBox}",
 				"\t$1",
 			"\\end{ProductBox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProductBox[]":{
+		"prefix":"ProductBox",
+		"body":[
+			"\\begin{ProductBox}",
+				"\t[${1:options%keyvals}]",
+			"\\end{ProductBox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -41,7 +56,19 @@
 			"\\begin{FrontFace}",
 				"\t$1",
 			"\\end{FrontFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FrontFace[]":{
+		"prefix":"FrontFace",
+		"body":[
+			"\\begin{FrontFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{FrontFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -51,7 +78,19 @@
 			"\\begin{BackFace}",
 				"\t$1",
 			"\\end{BackFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BackFace[]":{
+		"prefix":"BackFace",
+		"body":[
+			"\\begin{BackFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{BackFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +100,19 @@
 			"\\begin{LeftFace}",
 				"\t$1",
 			"\\end{LeftFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftFace[]":{
+		"prefix":"LeftFace",
+		"body":[
+			"\\begin{LeftFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{LeftFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -71,7 +122,19 @@
 			"\\begin{RightFace}",
 				"\t$1",
 			"\\end{RightFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RightFace[]":{
+		"prefix":"RightFace",
+		"body":[
+			"\\begin{RightFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{RightFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -81,7 +144,19 @@
 			"\\begin{TopFace}",
 				"\t$1",
 			"\\end{TopFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TopFace[]":{
+		"prefix":"TopFace",
+		"body":[
+			"\\begin{TopFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{TopFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -91,7 +166,19 @@
 			"\\begin{BottomFace}",
 				"\t$1",
 			"\\end{BottomFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BottomFace[]":{
+		"prefix":"BottomFace",
+		"body":[
+			"\\begin{BottomFace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{BottomFace}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +188,8 @@
 			"\\begin{Front}",
 				"\t$1",
 			"\\end{Front}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,7 +199,8 @@
 			"\\begin{Back}",
 				"\t$1",
 			"\\end{Back}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -121,7 +210,8 @@
 			"\\begin{Left}",
 				"\t$1",
 			"\\end{Left}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -131,7 +221,8 @@
 			"\\begin{Right}",
 				"\t$1",
 			"\\end{Right}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +232,8 @@
 			"\\begin{Top}",
 				"\t$1",
 			"\\end{Top}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -151,76 +243,7 @@
 			"\\begin{Bottom}",
 				"\t$1",
 			"\\end{Bottom}"
-		]
-	},
-
-
-	"ProductBox":{
-		"prefix":"ProductBox",
-		"body":[
-			"\\begin{ProductBox}",
-				"\t$1",
-			"\\end{ProductBox}"
-		]
-	},
-
-
-	"FrontFace":{
-		"prefix":"FrontFace",
-		"body":[
-			"\\begin{FrontFace}",
-				"\t$1",
-			"\\end{FrontFace}"
-		]
-	},
-
-
-	"BackFace":{
-		"prefix":"BackFace",
-		"body":[
-			"\\begin{BackFace}",
-				"\t$1",
-			"\\end{BackFace}"
-		]
-	},
-
-
-	"LeftFace":{
-		"prefix":"LeftFace",
-		"body":[
-			"\\begin{LeftFace}",
-				"\t$1",
-			"\\end{LeftFace}"
-		]
-	},
-
-
-	"RightFace":{
-		"prefix":"RightFace",
-		"body":[
-			"\\begin{RightFace}",
-				"\t$1",
-			"\\end{RightFace}"
-		]
-	},
-
-
-	"TopFace":{
-		"prefix":"TopFace",
-		"body":[
-			"\\begin{TopFace}",
-				"\t$1",
-			"\\end{TopFace}"
-		]
-	},
-
-
-	"BottomFace":{
-		"prefix":"BottomFace",
-		"body":[
-			"\\begin{BottomFace}",
-				"\t$1",
-			"\\end{BottomFace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

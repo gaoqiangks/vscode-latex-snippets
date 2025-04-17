@@ -5,47 +5,8 @@
 		"prefix":"brick",
 		"body":[
 			"\\brick{${1:length%plain}}{${2:width%plain}}"
-		]
-	},
-
-
-	"wallbrick{}{}":{
-		"prefix":"wallbrick",
-		"body":[
-			"\\wallbrick{${1:length%plain}}{${2:width%plain}}"
-		]
-	},
-
-
-	"newrow":{
-		"prefix":"newrow",
-		"body":[
-			"\\newrow"
-		]
-	},
-
-
-	"thebrickx":{
-		"prefix":"thebrickx",
-		"body":[
-			"\\thebrickx"
-		]
-	},
-
-
-	"thebricky":{
-		"prefix":"thebricky",
-		"body":[
-			"\\thebricky"
-		]
-	},
-
-
-	"thebrickz":{
-		"prefix":"thebrickz",
-		"body":[
-			"\\thebrickz"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,17 @@
 		"prefix":"brick",
 		"body":[
 			"\\brick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wallbrick{}{}":{
+		"prefix":"wallbrick",
+		"body":[
+			"\\wallbrick{${1:length%plain}}{${2:width%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,44 @@
 		"prefix":"wallbrick",
 		"body":[
 			"\\wallbrick[${3:options%keyvals}]{${1:length%plain}}{${2:width%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newrow":{
+		"prefix":"newrow",
+		"body":[
+			"\\newrow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebrickx":{
+		"prefix":"thebrickx",
+		"body":[
+			"\\thebrickx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebricky":{
+		"prefix":"thebricky",
+		"body":[
+			"\\thebricky"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebrickz":{
+		"prefix":"thebrickz",
+		"body":[
+			"\\thebrickz"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,6 +79,7 @@
 			"\\begin{wall}",
 				"\t$1",
 			"\\end{wall}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,23 +5,8 @@
 		"prefix":"violinsetoptions",
 		"body":[
 			"\\violinsetoptions{${1:pgfplots options}}"
-		]
-	},
-
-
-	"violinplot{}":{
-		"prefix":"violinplot",
-		"body":[
-			"\\violinplot{${1:filename%file}}"
-		]
-	},
-
-
-	"violinplotwholefile{}":{
-		"prefix":"violinplotwholefile",
-		"body":[
-			"\\violinplotwholefile{${1:filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"violinsetoptions",
 		"body":[
 			"\\violinsetoptions[${2:package-specific options%keyvals}]{${1:pgfplots options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"violinplot{}":{
+		"prefix":"violinplot",
+		"body":[
+			"\\violinplot{${1:filename%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"violinplot",
 		"body":[
 			"\\violinplot[${2:options%keyvals}]{${1:filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"violinplotwholefile{}":{
+		"prefix":"violinplotwholefile",
+		"body":[
+			"\\violinplotwholefile{${1:filename%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"violinplotwholefile",
 		"body":[
 			"\\violinplotwholefile[${2:options%keyvals}]{${1:filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

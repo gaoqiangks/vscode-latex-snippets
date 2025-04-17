@@ -5,167 +5,8 @@
 		"prefix":"frametitle",
 		"body":[
 			"\\frametitle{${1:title}}"
-		]
-	},
-
-
-	"frametitle<overlay specification>{}":{
-		"prefix":"frametitle<overlay specification>",
-		"body":[
-			"\\frametitle<overlay specification>{${1:title}}"
-		]
-	},
-
-
-	"insertframetitle":{
-		"prefix":"insertframetitle",
-		"body":[
-			"\\insertframetitle"
-		]
-	},
-
-
-	"insertshortframetitle":{
-		"prefix":"insertshortframetitle",
-		"body":[
-			"\\insertshortframetitle"
-		]
-	},
-
-
-	"framesubtitle{}":{
-		"prefix":"framesubtitle",
-		"body":[
-			"\\framesubtitle{${1:title}}"
-		]
-	},
-
-
-	"framesubtitle<overlay specification>{}":{
-		"prefix":"framesubtitle<overlay specification>",
-		"body":[
-			"\\framesubtitle<overlay specification>{${1:title}}"
-		]
-	},
-
-
-	"insertframesubtitle":{
-		"prefix":"insertframesubtitle",
-		"body":[
-			"\\insertframesubtitle"
-		]
-	},
-
-
-	"alert{}":{
-		"prefix":"alert",
-		"body":[
-			"\\alert{${1:highlighted text%text}}"
-		]
-	},
-
-
-	"alert<overlay specification>{}":{
-		"prefix":"alert<overlay specification>",
-		"body":[
-			"\\alert<overlay specification>{${1:highlighted text%text}}"
-		]
-	},
-
-
-	"structure{}":{
-		"prefix":"structure",
-		"body":[
-			"\\structure{${1:text}}"
-		]
-	},
-
-
-	"structure<overlay specification>{}":{
-		"prefix":"structure<overlay specification>",
-		"body":[
-			"\\structure<overlay specification>{${1:text}}"
-		]
-	},
-
-
-	"insertblocktitle":{
-		"prefix":"insertblocktitle",
-		"body":[
-			"\\insertblocktitle"
-		]
-	},
-
-
-	"insertenumlabel":{
-		"prefix":"insertenumlabel",
-		"body":[
-			"\\insertenumlabel"
-		]
-	},
-
-
-	"insertsubenumlabel":{
-		"prefix":"insertsubenumlabel",
-		"body":[
-			"\\insertsubenumlabel"
-		]
-	},
-
-
-	"insertsubsubenumlabel":{
-		"prefix":"insertsubsubenumlabel",
-		"body":[
-			"\\insertsubsubenumlabel"
-		]
-	},
-
-
-	"insertdescriptionitem":{
-		"prefix":"insertdescriptionitem",
-		"body":[
-			"\\insertdescriptionitem"
-		]
-	},
-
-
-	"bibitem<overlay specification>{}":{
-		"prefix":"bibitem<overlay specification>",
-		"body":[
-			"\\bibitem<overlay specification>{${1:citekey}}"
-		]
-	},
-
-
-	"insertbiblabel":{
-		"prefix":"insertbiblabel",
-		"body":[
-			"\\insertbiblabel"
-		]
-	},
-
-
-	"insertcaptionname":{
-		"prefix":"insertcaptionname",
-		"body":[
-			"\\insertcaptionname"
-		]
-	},
-
-
-	"insertcaptionnumber":{
-		"prefix":"insertcaptionnumber",
-		"body":[
-			"\\insertcaptionnumber"
-		]
-	},
-
-
-	"insertcaption":{
-		"prefix":"insertcaption",
-		"body":[
-			"\\insertcaption"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +14,17 @@
 		"prefix":"frametitle",
 		"body":[
 			"\\frametitle[${2:short title}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"frametitle<overlay specification>{}":{
+		"prefix":"frametitle<overlay specification>",
+		"body":[
+			"\\frametitle<overlay specification>{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +32,26 @@
 		"prefix":"frametitle<overlay specification>",
 		"body":[
 			"\\frametitle<overlay specification>[${2:short title}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"insertframetitle":{
+		"prefix":"insertframetitle",
+		"body":[
+			"\\insertframetitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshortframetitle":{
+		"prefix":"insertshortframetitle",
+		"body":[
+			"\\insertshortframetitle"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +59,116 @@
 		"prefix":"insertshortframetitle",
 		"body":[
 			"\\insertshortframetitle[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"framesubtitle{}":{
+		"prefix":"framesubtitle",
+		"body":[
+			"\\framesubtitle{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"framesubtitle<overlay specification>{}":{
+		"prefix":"framesubtitle<overlay specification>",
+		"body":[
+			"\\framesubtitle<overlay specification>{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertframesubtitle":{
+		"prefix":"insertframesubtitle",
+		"body":[
+			"\\insertframesubtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alert{}":{
+		"prefix":"alert",
+		"body":[
+			"\\alert{${1:highlighted text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alert<overlay specification>{}":{
+		"prefix":"alert<overlay specification>",
+		"body":[
+			"\\alert<overlay specification>{${1:highlighted text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"structure{}":{
+		"prefix":"structure",
+		"body":[
+			"\\structure{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"structure<overlay specification>{}":{
+		"prefix":"structure<overlay specification>",
+		"body":[
+			"\\structure<overlay specification>{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertblocktitle":{
+		"prefix":"insertblocktitle",
+		"body":[
+			"\\insertblocktitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertenumlabel":{
+		"prefix":"insertenumlabel",
+		"body":[
+			"\\insertenumlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertsubenumlabel":{
+		"prefix":"insertsubenumlabel",
+		"body":[
+			"\\insertsubenumlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertsubsubenumlabel":{
+		"prefix":"insertsubsubenumlabel",
+		"body":[
+			"\\insertsubsubenumlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertdescriptionitem":{
+		"prefix":"insertdescriptionitem",
+		"body":[
+			"\\insertdescriptionitem"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +176,53 @@
 		"prefix":"bibitem<overlay specification>",
 		"body":[
 			"\\bibitem<overlay specification>[${2:citation text}]{${1:citekey}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bibitem<overlay specification>{}":{
+		"prefix":"bibitem<overlay specification>",
+		"body":[
+			"\\bibitem<overlay specification>{${1:citekey}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertbiblabel":{
+		"prefix":"insertbiblabel",
+		"body":[
+			"\\insertbiblabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertcaptionname":{
+		"prefix":"insertcaptionname",
+		"body":[
+			"\\insertcaptionname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertcaptionnumber":{
+		"prefix":"insertcaptionnumber",
+		"body":[
+			"\\insertcaptionnumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertcaption":{
+		"prefix":"insertcaption",
+		"body":[
+			"\\insertcaption"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -207,17 +232,19 @@
 			"\\begin{alertenv}",
 				"\t$1",
 			"\\end{alertenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"alertenv":{
+	"alertenv<>":{
 		"prefix":"alertenv",
 		"body":[
 			"\\begin{alertenv}",
-				"\t$1",
+				"\t<${1:overlay specification}>",
 			"\\end{alertenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -227,136 +254,150 @@
 			"\\begin{structureenv}",
 				"\t$1",
 			"\\end{structureenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"structureenv":{
+	"structureenv<>":{
 		"prefix":"structureenv",
 		"body":[
 			"\\begin{structureenv}",
-				"\t$1",
+				"\t<${1:overlay specification}>",
 			"\\end{structureenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"block":{
+	"block{}":{
 		"prefix":"block",
 		"body":[
 			"\\begin{block}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{block}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"block":{
+	"block<>{}":{
 		"prefix":"block",
 		"body":[
 			"\\begin{block}",
-				"\t$1",
+				"\t<${2:action specification}>{${1:title%text}}",
 			"\\end{block}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"block":{
+	"block{}<>":{
 		"prefix":"block",
 		"body":[
 			"\\begin{block}",
-				"\t$1",
+				"\t{${1:title%text}}<${2:action specification}>",
 			"\\end{block}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"alertblock":{
+	"alertblock{}":{
 		"prefix":"alertblock",
 		"body":[
 			"\\begin{alertblock}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{alertblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"alertblock":{
+	"alertblock<>{}":{
 		"prefix":"alertblock",
 		"body":[
 			"\\begin{alertblock}",
-				"\t$1",
+				"\t<${2:action specification}>{${1:title%text}}",
 			"\\end{alertblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"alertblock":{
+	"alertblock{}<>":{
 		"prefix":"alertblock",
 		"body":[
 			"\\begin{alertblock}",
-				"\t$1",
+				"\t{${1:title%text}}<${2:action specification}>",
 			"\\end{alertblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"exampleblock":{
+	"exampleblock{}":{
 		"prefix":"exampleblock",
 		"body":[
 			"\\begin{exampleblock}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{exampleblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"exampleblock":{
+	"exampleblock<>{}<>":{
 		"prefix":"exampleblock",
 		"body":[
 			"\\begin{exampleblock}",
-				"\t$1",
+				"\t<${2:action specification}>{${1:title%text}}<${3:overlay specification}>",
 			"\\end{exampleblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"abstract":{
+	"abstract<>":{
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-				"\t$1",
+				"\t<${1:action specification}>",
 			"\\end{abstract}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"verse":{
+	"verse<>":{
 		"prefix":"verse",
 		"body":[
 			"\\begin{verse}",
-				"\t$1",
+				"\t<${1:action specification}>",
 			"\\end{verse}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"quotation":{
+	"quotation<>":{
 		"prefix":"quotation",
 		"body":[
 			"\\begin{quotation}",
-				"\t$1",
+				"\t<${1:action specification}>",
 			"\\end{quotation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"quote":{
+	"quote<>":{
 		"prefix":"quote",
 		"body":[
 			"\\begin{quote}",
-				"\t$1",
+				"\t<${1:action specification}>",
 			"\\end{quote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

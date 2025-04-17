@@ -5,7 +5,8 @@
 		"prefix":"thegentryctr",
 		"body":[
 			"\\thegentryctr"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"gentryidx",
 		"body":[
 			"\\gentryidx"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"gentrycode",
 		"body":[
 			"\\gentrycode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"gentryidxu",
 		"body":[
 			"\\gentryidxu"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"gentryidxs",
 		"body":[
 			"\\gentryidxs"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"gentrytitle",
 		"body":[
 			"\\gentrytitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"nextidx",
 		"body":[
 			"\\nextidx"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"thegentries",
 		"body":[
 			"\\thegentries"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"gentrycount",
 		"body":[
 			"\\gentrycount"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"gentryheader",
 		"body":[
 			"\\gentryheader{${1:counterIdx}}{${2:fixedIdx}}{${3:code}}{${4:title%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"gentryshouldoutput",
 		"body":[
 			"\\gentryshouldoutput"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"gentryfooter",
 		"body":[
 			"\\gentryfooter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"thefncounter",
 		"body":[
 			"\\thefncounter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"outputfootnotes",
 		"body":[
 			"\\outputfootnotes{${1:maxIdx}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,36 +131,40 @@
 		"prefix":"noentryfoot",
 		"body":[
 			"\\noentryfoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"gentry":{
+	"gentry{}":{
 		"prefix":"gentry",
 		"body":[
 			"\\begin{gentry}",
-				"\t$1",
+				"\t{${1:entrylabel}}",
 			"\\end{gentry}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"gentry":{
+	"gentry[]{}":{
 		"prefix":"gentry",
 		"body":[
 			"\\begin{gentry}",
-				"\t$1",
+				"\t[${2:index}]{${1:entrylabel}}",
 			"\\end{gentry}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"gentry":{
+	"gentry[]{}[]":{
 		"prefix":"gentry",
 		"body":[
 			"\\begin{gentry}",
-				"\t$1",
+				"\t[${2:index}]{${1:entrylabel}}[${3:title%text}]",
 			"\\end{gentry}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

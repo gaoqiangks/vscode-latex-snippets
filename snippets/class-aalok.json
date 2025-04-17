@@ -5,31 +5,8 @@
 		"prefix":"orcid",
 		"body":[
 			"\\orcid{${1:orcid क्रमांक}}"
-		]
-	},
-
-
-	"citetitleyear{}":{
-		"prefix":"citetitleyear",
-		"body":[
-			"\\citetitleyear{${1:bibid}}"
-		]
-	},
-
-
-	"orcidlogo":{
-		"prefix":"orcidlogo",
-		"body":[
-			"\\orcidlogo"
-		]
-	},
-
-
-	"orcidno":{
-		"prefix":"orcidno",
-		"body":[
-			"\\orcidno"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,8 @@
 		"prefix":"citetitleyear",
 		"body":[
 			"\\citetitleyear[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,6 +23,34 @@
 		"prefix":"citetitleyear",
 		"body":[
 			"\\citetitleyear[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citetitleyear{}":{
+		"prefix":"citetitleyear",
+		"body":[
+			"\\citetitleyear{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"orcidlogo":{
+		"prefix":"orcidlogo",
+		"body":[
+			"\\orcidlogo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"orcidno":{
+		"prefix":"orcidno",
+		"body":[
+			"\\orcidno"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

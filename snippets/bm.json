@@ -5,7 +5,8 @@
 		"prefix":"bm",
 		"body":[
 			"\\bm{${1:math expression}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"hm",
 		"body":[
 			"\\hm{${1:math expression}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"bmdefine",
 		"body":[
 			"\\bmdefine{${1:cmd}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"hmdefine",
 		"body":[
 			"\\hmdefine{${1:cmd}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"boldsymbol",
 		"body":[
 			"\\boldsymbol{${1:math expression}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,31 +50,8 @@
 		"prefix":"heavysymbol",
 		"body":[
 			"\\heavysymbol{${1:math expression}}"
-		]
-	},
-
-
-	"DeclareBoldMathCommand{}{}":{
-		"prefix":"DeclareBoldMathCommand",
-		"body":[
-			"\\DeclareBoldMathCommand{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"bmmax":{
-		"prefix":"bmmax",
-		"body":[
-			"\\bmmax"
-		]
-	},
-
-
-	"hmmax":{
-		"prefix":"hmmax",
-		"body":[
-			"\\hmmax"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +59,34 @@
 		"prefix":"DeclareBoldMathCommand",
 		"body":[
 			"\\DeclareBoldMathCommand[${3:math version%keyvals}]{${1:cmd}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareBoldMathCommand{}{}":{
+		"prefix":"DeclareBoldMathCommand",
+		"body":[
+			"\\DeclareBoldMathCommand{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bmmax":{
+		"prefix":"bmmax",
+		"body":[
+			"\\bmmax"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmmax":{
+		"prefix":"hmmax",
+		"body":[
+			"\\hmmax"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

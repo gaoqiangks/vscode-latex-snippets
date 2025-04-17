@@ -5,23 +5,8 @@
 		"prefix":"mhtikzinput",
 		"body":[
 			"\\mhtikzinput{${1:file}}"
-		]
-	},
-
-
-	"cmhtikzinput{}":{
-		"prefix":"cmhtikzinput",
-		"body":[
-			"\\cmhtikzinput{${1:file}}"
-		]
-	},
-
-
-	"libusetikzlibrary{}":{
-		"prefix":"libusetikzlibrary",
-		"body":[
-			"\\libusetikzlibrary{${1:library}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"mhtikzinput",
 		"body":[
 			"\\mhtikzinput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cmhtikzinput{}":{
+		"prefix":"cmhtikzinput",
+		"body":[
+			"\\cmhtikzinput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +32,16 @@
 		"prefix":"cmhtikzinput",
 		"body":[
 			"\\cmhtikzinput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"libusetikzlibrary{}":{
+		"prefix":"libusetikzlibrary",
+		"body":[
+			"\\libusetikzlibrary{${1:library}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

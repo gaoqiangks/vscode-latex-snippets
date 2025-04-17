@@ -5,47 +5,8 @@
 		"prefix":"dbox",
 		"body":[
 			"\\dbox{${1:text}}"
-		]
-	},
-
-
-	"lbox{}":{
-		"prefix":"lbox",
-		"body":[
-			"\\lbox{${1:text}}"
-		]
-	},
-
-
-	"dlbox{}":{
-		"prefix":"dlbox",
-		"body":[
-			"\\dlbox{${1:text}}"
-		]
-	},
-
-
-	"dashlength":{
-		"prefix":"dashlength",
-		"body":[
-			"\\dashlength"
-		]
-	},
-
-
-	"dashdash":{
-		"prefix":"dashdash",
-		"body":[
-			"\\dashdash"
-		]
-	},
-
-
-	"layersize":{
-		"prefix":"layersize",
-		"body":[
-			"\\layersize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,8 @@
 		"prefix":"dashbox",
 		"body":[
 			"\\dashbox[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +23,17 @@
 		"prefix":"dashbox",
 		"body":[
 			"\\dashbox[${2:width}][${3:pos}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lbox{}":{
+		"prefix":"lbox",
+		"body":[
+			"\\lbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +41,17 @@
 		"prefix":"lbox",
 		"body":[
 			"\\lbox[${2:layers}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dlbox{}":{
+		"prefix":"dlbox",
+		"body":[
+			"\\dlbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +59,34 @@
 		"prefix":"dlbox",
 		"body":[
 			"\\dlbox[${2:layers}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dashlength":{
+		"prefix":"dashlength",
+		"body":[
+			"\\dashlength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dashdash":{
+		"prefix":"dashdash",
+		"body":[
+			"\\dashdash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"layersize":{
+		"prefix":"layersize",
+		"body":[
+			"\\layersize"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

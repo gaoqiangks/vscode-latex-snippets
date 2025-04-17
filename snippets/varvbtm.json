@@ -5,95 +5,8 @@
 		"prefix":"newtabverbatim",
 		"body":[
 			"\\newtabverbatim{${1:envname}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
-	},
-
-
-	"renewtabverbatim{}{}{}{}{}":{
-		"prefix":"renewtabverbatim",
-		"body":[
-			"\\renewtabverbatim{${1:envname}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
-	},
-
-
-	"VVBbegintab":{
-		"prefix":"VVBbegintab",
-		"body":[
-			"\\VVBbegintab"
-		]
-	},
-
-
-	"VVBendtab":{
-		"prefix":"VVBendtab",
-		"body":[
-			"\\VVBendtab"
-		]
-	},
-
-
-	"VVBprintFF":{
-		"prefix":"VVBprintFF",
-		"body":[
-			"\\VVBprintFF"
-		]
-	},
-
-
-	"VVBprintFFas{}":{
-		"prefix":"VVBprintFFas",
-		"body":[
-			"\\VVBprintFFas{${1:string}}"
-		]
-	},
-
-
-	"VVBbreakatFF":{
-		"prefix":"VVBbreakatFF",
-		"body":[
-			"\\VVBbreakatFF"
-		]
-	},
-
-
-	"VVBbreakatFFonly":{
-		"prefix":"VVBbreakatFFonly",
-		"body":[
-			"\\VVBbreakatFFonly"
-		]
-	},
-
-
-	"VVBnonverb{}":{
-		"prefix":"VVBnonverb",
-		"body":[
-			"\\VVBnonverb{${1:\\character}}"
-		]
-	},
-
-
-	"VVBnonverbmath":{
-		"prefix":"VVBnonverbmath",
-		"body":[
-			"\\VVBnonverbmath"
-		]
-	},
-
-
-	"newverbatiminput{}{}{}{}{}":{
-		"prefix":"newverbatiminput",
-		"body":[
-			"\\newverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
-	},
-
-
-	"renewverbatiminput{}{}{}{}{}":{
-		"prefix":"renewverbatiminput",
-		"body":[
-			"\\renewverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,8 @@
 		"prefix":"newtabverbatim",
 		"body":[
 			"\\newtabverbatim{${1:envname}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +23,17 @@
 		"prefix":"newtabverbatim",
 		"body":[
 			"\\newtabverbatim{${1:envname}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewtabverbatim{}{}{}{}{}":{
+		"prefix":"renewtabverbatim",
+		"body":[
+			"\\renewtabverbatim{${1:envname}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +41,8 @@
 		"prefix":"renewtabverbatim",
 		"body":[
 			"\\renewtabverbatim{${1:envname}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +50,80 @@
 		"prefix":"renewtabverbatim",
 		"body":[
 			"\\renewtabverbatim{${1:envname}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VVBbegintab":{
+		"prefix":"VVBbegintab",
+		"body":[
+			"\\VVBbegintab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBendtab":{
+		"prefix":"VVBendtab",
+		"body":[
+			"\\VVBendtab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBprintFF":{
+		"prefix":"VVBprintFF",
+		"body":[
+			"\\VVBprintFF"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBprintFFas{}":{
+		"prefix":"VVBprintFFas",
+		"body":[
+			"\\VVBprintFFas{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBbreakatFF":{
+		"prefix":"VVBbreakatFF",
+		"body":[
+			"\\VVBbreakatFF"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBbreakatFFonly":{
+		"prefix":"VVBbreakatFFonly",
+		"body":[
+			"\\VVBbreakatFFonly"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBnonverb{}":{
+		"prefix":"VVBnonverb",
+		"body":[
+			"\\VVBnonverb{${1:\\character}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VVBnonverbmath":{
+		"prefix":"VVBnonverbmath",
+		"body":[
+			"\\VVBnonverbmath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +131,17 @@
 		"prefix":"VVBnonverbmath",
 		"body":[
 			"\\VVBnonverbmath[${1:\\character}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newverbatiminput{}{}{}{}{}":{
+		"prefix":"newverbatiminput",
+		"body":[
+			"\\newverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +149,8 @@
 		"prefix":"newverbatiminput",
 		"body":[
 			"\\newverbatiminput{${1:cmd}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +158,17 @@
 		"prefix":"newverbatiminput",
 		"body":[
 			"\\newverbatiminput{${1:cmd}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewverbatiminput{}{}{}{}{}":{
+		"prefix":"renewverbatiminput",
+		"body":[
+			"\\renewverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"renewverbatiminput",
 		"body":[
 			"\\renewverbatiminput{${1:cmd}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,6 +185,7 @@
 		"prefix":"renewverbatiminput",
 		"body":[
 			"\\renewverbatiminput{${1:cmd}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,231 +5,8 @@
 		"prefix":"ednote",
 		"body":[
 			"\\ednote{${1:text%todo}}"
-		]
-	},
-
-
-	"Ednote{}":{
-		"prefix":"Ednote",
-		"body":[
-			"\\Ednote{${1:text%todo}}"
-		]
-	},
-
-
-	"edissue{}":{
-		"prefix":"edissue",
-		"body":[
-			"\\edissue{${1:text%todo}}"
-		]
-	},
-
-
-	"edIssue{}":{
-		"prefix":"edIssue",
-		"body":[
-			"\\edIssue{${1:text%todo}}"
-		]
-	},
-
-
-	"tweak{}":{
-		"prefix":"tweak",
-		"body":[
-			"\\tweak{${1:text%todo}}"
-		]
-	},
-
-
-	"Tweak{}":{
-		"prefix":"Tweak",
-		"body":[
-			"\\Tweak{${1:text%todo}}"
-		]
-	},
-
-
-	"edstubURI{}":{
-		"prefix":"edstubURI",
-		"body":[
-			"\\edstubURI{${1:URI}}"
-		]
-	},
-
-
-	"ednoteshape":{
-		"prefix":"ednoteshape",
-		"body":[
-			"\\ednoteshape"
-		]
-	},
-
-
-	"ifshowednotes":{
-		"prefix":"ifshowednotes",
-		"body":[
-			"\\ifshowednotes"
-		]
-	},
-
-
-	"showednotestrue":{
-		"prefix":"showednotestrue",
-		"body":[
-			"\\showednotestrue"
-		]
-	},
-
-
-	"showednotesfalse":{
-		"prefix":"showednotesfalse",
-		"body":[
-			"\\showednotesfalse"
-		]
-	},
-
-
-	"ifmargins":{
-		"prefix":"ifmargins",
-		"body":[
-			"\\ifmargins"
-		]
-	},
-
-
-	"marginstrue":{
-		"prefix":"marginstrue",
-		"body":[
-			"\\marginstrue"
-		]
-	},
-
-
-	"marginsfalse":{
-		"prefix":"marginsfalse",
-		"body":[
-			"\\marginsfalse"
-		]
-	},
-
-
-	"theednote":{
-		"prefix":"theednote",
-		"body":[
-			"\\theednote"
-		]
-	},
-
-
-	"ednotelabel{}":{
-		"prefix":"ednotelabel",
-		"body":[
-			"\\ednotelabel{${1:text}}"
-		]
-	},
-
-
-	"ednotemargin{}":{
-		"prefix":"ednotemargin",
-		"body":[
-			"\\ednotemargin{${1:text}}"
-		]
-	},
-
-
-	"tweaklabel{}":{
-		"prefix":"tweaklabel",
-		"body":[
-			"\\tweaklabel{${1:text}}"
-		]
-	},
-
-
-	"tweakmargin{}":{
-		"prefix":"tweakmargin",
-		"body":[
-			"\\tweakmargin{${1:text}}"
-		]
-	},
-
-
-	"edissuelabel{}":{
-		"prefix":"edissuelabel",
-		"body":[
-			"\\edissuelabel{${1:text}}"
-		]
-	},
-
-
-	"edissuemargin{}":{
-		"prefix":"edissuemargin",
-		"body":[
-			"\\edissuemargin{${1:text}}"
-		]
-	},
-
-
-	"newpartmargins{}{}":{
-		"prefix":"newpartmargins",
-		"body":[
-			"\\newpartmargins{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"oldpartlabels{}{}":{
-		"prefix":"oldpartlabels",
-		"body":[
-			"\\oldpartlabels{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"oldpartmargins{}{}":{
-		"prefix":"oldpartmargins",
-		"body":[
-			"\\oldpartmargins{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"todolabels{}{}":{
-		"prefix":"todolabels",
-		"body":[
-			"\\todolabels{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"todomargins{}{}":{
-		"prefix":"todomargins",
-		"body":[
-			"\\todomargins{${1:text1}}{${2:text2}}"
-		]
-	},
-
-
-	"ifhref":{
-		"prefix":"ifhref",
-		"body":[
-			"\\ifhref"
-		]
-	},
-
-
-	"hreftrue":{
-		"prefix":"hreftrue",
-		"body":[
-			"\\hreftrue"
-		]
-	},
-
-
-	"hreffalse":{
-		"prefix":"hreffalse",
-		"body":[
-			"\\hreffalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +14,17 @@
 		"prefix":"ednote",
 		"body":[
 			"\\ednote[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Ednote{}":{
+		"prefix":"Ednote",
+		"body":[
+			"\\Ednote{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +32,17 @@
 		"prefix":"Ednote",
 		"body":[
 			"\\Ednote[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"edissue{}":{
+		"prefix":"edissue",
+		"body":[
+			"\\edissue{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +50,17 @@
 		"prefix":"edissue",
 		"body":[
 			"\\edissue[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"edIssue{}":{
+		"prefix":"edIssue",
+		"body":[
+			"\\edIssue{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +68,17 @@
 		"prefix":"edIssue",
 		"body":[
 			"\\edIssue[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tweak{}":{
+		"prefix":"tweak",
+		"body":[
+			"\\tweak{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +86,17 @@
 		"prefix":"tweak",
 		"body":[
 			"\\tweak[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Tweak{}":{
+		"prefix":"Tweak",
+		"body":[
+			"\\Tweak{${1:text%todo}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,97 +104,325 @@
 		"prefix":"Tweak",
 		"body":[
 			"\\Tweak[${2:label}]{${1:text%todo}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"todo":{
+	"edstubURI{}":{
+		"prefix":"edstubURI",
+		"body":[
+			"\\edstubURI{${1:URI}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ednoteshape":{
+		"prefix":"ednoteshape",
+		"body":[
+			"\\ednoteshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifshowednotes":{
+		"prefix":"ifshowednotes",
+		"body":[
+			"\\ifshowednotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showednotestrue":{
+		"prefix":"showednotestrue",
+		"body":[
+			"\\showednotestrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showednotesfalse":{
+		"prefix":"showednotesfalse",
+		"body":[
+			"\\showednotesfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmargins":{
+		"prefix":"ifmargins",
+		"body":[
+			"\\ifmargins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marginstrue":{
+		"prefix":"marginstrue",
+		"body":[
+			"\\marginstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marginsfalse":{
+		"prefix":"marginsfalse",
+		"body":[
+			"\\marginsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theednote":{
+		"prefix":"theednote",
+		"body":[
+			"\\theednote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ednotelabel{}":{
+		"prefix":"ednotelabel",
+		"body":[
+			"\\ednotelabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ednotemargin{}":{
+		"prefix":"ednotemargin",
+		"body":[
+			"\\ednotemargin{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tweaklabel{}":{
+		"prefix":"tweaklabel",
+		"body":[
+			"\\tweaklabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tweakmargin{}":{
+		"prefix":"tweakmargin",
+		"body":[
+			"\\tweakmargin{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"edissuelabel{}":{
+		"prefix":"edissuelabel",
+		"body":[
+			"\\edissuelabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"edissuemargin{}":{
+		"prefix":"edissuemargin",
+		"body":[
+			"\\edissuemargin{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newpartmargins{}{}":{
+		"prefix":"newpartmargins",
+		"body":[
+			"\\newpartmargins{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"oldpartlabels{}{}":{
+		"prefix":"oldpartlabels",
+		"body":[
+			"\\oldpartlabels{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"oldpartmargins{}{}":{
+		"prefix":"oldpartmargins",
+		"body":[
+			"\\oldpartmargins{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todolabels{}{}":{
+		"prefix":"todolabels",
+		"body":[
+			"\\todolabels{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todomargins{}{}":{
+		"prefix":"todomargins",
+		"body":[
+			"\\todomargins{${1:text1}}{${2:text2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifhref":{
+		"prefix":"ifhref",
+		"body":[
+			"\\ifhref"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hreftrue":{
+		"prefix":"hreftrue",
+		"body":[
+			"\\hreftrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hreffalse":{
+		"prefix":"hreffalse",
+		"body":[
+			"\\hreffalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"todo{}":{
 		"prefix":"todo",
 		"body":[
 			"\\begin{todo}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{todo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Todo":{
+	"Todo{}":{
 		"prefix":"Todo",
 		"body":[
 			"\\begin{Todo}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{Todo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"todolist":{
+	"todolist{}":{
 		"prefix":"todolist",
 		"body":[
 			"\\begin{todolist}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{todolist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Todolist":{
+	"Todolist{}":{
 		"prefix":"Todolist",
 		"body":[
 			"\\begin{Todolist}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{Todolist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"newpart":{
+	"newpart{}":{
 		"prefix":"newpart",
 		"body":[
 			"\\begin{newpart}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{newpart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Newpart":{
+	"Newpart{}":{
 		"prefix":"Newpart",
 		"body":[
 			"\\begin{Newpart}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{Newpart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"oldpart":{
+	"oldpart{}":{
 		"prefix":"oldpart",
 		"body":[
 			"\\begin{oldpart}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{oldpart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Oldpart":{
+	"Oldpart{}":{
 		"prefix":"Oldpart",
 		"body":[
 			"\\begin{Oldpart}",
-				"\t$1",
+				"\t{${1:comment%text}}",
 			"\\end{Oldpart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"edstub":{
+	"edstub{}":{
 		"prefix":"edstub",
 		"body":[
 			"\\begin{edstub}",
-				"\t$1",
+				"\t{${1:file}}",
 			"\\end{edstub}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"edstub[]{}":{
+		"prefix":"edstub",
+		"body":[
+			"\\begin{edstub}",
+				"\t[${2:desc}]{${1:file}}",
+			"\\end{edstub}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -377,16 +432,7 @@
 			"\\begin{musings}",
 				"\t$1",
 			"\\end{musings}"
-		]
-	},
-
-
-	"edstub":{
-		"prefix":"edstub",
-		"body":[
-			"\\begin{edstub}",
-				"\t$1",
-			"\\end{edstub}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

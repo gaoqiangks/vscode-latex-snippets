@@ -5,39 +5,8 @@
 		"prefix":"lfbox",
 		"body":[
 			"\\lfbox{${1:content%text}}"
-		]
-	},
-
-
-	"newfboxstyle{}{}":{
-		"prefix":"newfboxstyle",
-		"body":[
-			"\\newfboxstyle{${1:name%specialDef}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"fboxset{}":{
-		"prefix":"fboxset",
-		"body":[
-			"\\fboxset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"optionlengthlimit{}{}{}":{
-		"prefix":"optionlengthlimit",
-		"body":[
-			"\\optionlengthlimit{${1:length}}{${2:min}}{${3:max}}"
-		]
-	},
-
-
-	"optionradiuslimit{}{}{}{}":{
-		"prefix":"optionradiuslimit",
-		"body":[
-			"\\optionradiuslimit{${1:r1}}{${2:r2}}{${3:min}}{${4:max}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,44 @@
 		"prefix":"lfbox",
 		"body":[
 			"\\lfbox[${2:options%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newfboxstyle{}{}":{
+		"prefix":"newfboxstyle",
+		"body":[
+			"\\newfboxstyle{${1:name%specialDef}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fboxset{}":{
+		"prefix":"fboxset",
+		"body":[
+			"\\fboxset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionlengthlimit{}{}{}":{
+		"prefix":"optionlengthlimit",
+		"body":[
+			"\\optionlengthlimit{${1:length}}{${2:min}}{${3:max}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionradiuslimit{}{}{}{}":{
+		"prefix":"optionradiuslimit",
+		"body":[
+			"\\optionradiuslimit{${1:r1}}{${2:r2}}{${3:min}}{${4:max}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,16 +61,18 @@
 			"\\begin{longfbox}",
 				"\t$1",
 			"\\end{longfbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"longfbox":{
+	"longfbox[]":{
 		"prefix":"longfbox",
 		"body":[
 			"\\begin{longfbox}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{longfbox}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

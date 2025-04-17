@@ -5,7 +5,8 @@
 		"prefix":"gprKeys",
 		"body":[
 			"\\gprKeys{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,103 +14,8 @@
 		"prefix":"gprName",
 		"body":[
 			"\\gprName{${1:name}}"
-		]
-	},
-
-
-	"gprRef{}":{
-		"prefix":"gprRef",
-		"body":[
-			"\\gprRef{${1:name}}"
-		]
-	},
-
-
-	"gprYear{}":{
-		"prefix":"gprYear",
-		"body":[
-			"\\gprYear{${1:year}}"
-		]
-	},
-
-
-	"gprYears{}":{
-		"prefix":"gprYears",
-		"body":[
-			"\\gprYears{${1:year range}}"
-		]
-	},
-
-
-	"gprHeader":{
-		"prefix":"gprHeader",
-		"body":[
-			"\\gprHeader"
-		]
-	},
-
-
-	"gprID":{
-		"prefix":"gprID",
-		"body":[
-			"\\gprID"
-		]
-	},
-
-
-	"gprStyledName":{
-		"prefix":"gprStyledName",
-		"body":[
-			"\\gprStyledName"
-		]
-	},
-
-
-	"gprFullName":{
-		"prefix":"gprFullName",
-		"body":[
-			"\\gprFullName"
-		]
-	},
-
-
-	"gprGivenName":{
-		"prefix":"gprGivenName",
-		"body":[
-			"\\gprGivenName"
-		]
-	},
-
-
-	"gprPatronymic":{
-		"prefix":"gprPatronymic",
-		"body":[
-			"\\gprPatronymic"
-		]
-	},
-
-
-	"gprSurname":{
-		"prefix":"gprSurname",
-		"body":[
-			"\\gprSurname"
-		]
-	},
-
-
-	"gprByname":{
-		"prefix":"gprByname",
-		"body":[
-			"\\gprByname"
-		]
-	},
-
-
-	"gprSpouse":{
-		"prefix":"gprSpouse",
-		"body":[
-			"\\gprSpouse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,39 +23,17 @@
 		"prefix":"*gprName",
 		"body":[
 			"\\gprName*{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"gprRef*{}":{
-		"prefix":"*gprRef",
+	"gprRef{}":{
+		"prefix":"gprRef",
 		"body":[
-			"\\gprRef*{${1:name}}"
-		]
-	},
-
-
-	"gprRef*[]{}":{
-		"prefix":"*gprRef",
-		"body":[
-			"\\gprRef*[${2:id}]{${1:name}}"
-		]
-	},
-
-
-	"gprYear*{}":{
-		"prefix":"*gprYear",
-		"body":[
-			"\\gprYear*{${1:year}}"
-		]
-	},
-
-
-	"gprYears*{}":{
-		"prefix":"*gprYears",
-		"body":[
-			"\\gprYears*{${1:year range}}"
-		]
+			"\\gprRef{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,66 +41,208 @@
 		"prefix":"gprRef",
 		"body":[
 			"\\gprRef[${2:id}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"gprProfile":{
+	"gprRef*{}":{
+		"prefix":"*gprRef",
+		"body":[
+			"\\gprRef*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gprRef*[]{}":{
+		"prefix":"*gprRef",
+		"body":[
+			"\\gprRef*[${2:id}]{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gprYear{}":{
+		"prefix":"gprYear",
+		"body":[
+			"\\gprYear{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprYear*{}":{
+		"prefix":"*gprYear",
+		"body":[
+			"\\gprYear*{${1:year}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gprYears{}":{
+		"prefix":"gprYears",
+		"body":[
+			"\\gprYears{${1:year range}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprYears*{}":{
+		"prefix":"*gprYears",
+		"body":[
+			"\\gprYears*{${1:year range}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gprHeader":{
+		"prefix":"gprHeader",
+		"body":[
+			"\\gprHeader"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprID":{
+		"prefix":"gprID",
+		"body":[
+			"\\gprID"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprStyledName":{
+		"prefix":"gprStyledName",
+		"body":[
+			"\\gprStyledName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprFullName":{
+		"prefix":"gprFullName",
+		"body":[
+			"\\gprFullName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprGivenName":{
+		"prefix":"gprGivenName",
+		"body":[
+			"\\gprGivenName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprPatronymic":{
+		"prefix":"gprPatronymic",
+		"body":[
+			"\\gprPatronymic"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprSurname":{
+		"prefix":"gprSurname",
+		"body":[
+			"\\gprSurname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprByname":{
+		"prefix":"gprByname",
+		"body":[
+			"\\gprByname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprSpouse":{
+		"prefix":"gprSpouse",
+		"body":[
+			"\\gprSpouse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gprProfile{}":{
 		"prefix":"gprProfile",
 		"body":[
 			"\\begin{gprProfile}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{gprProfile}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"gprProfile*":{
+	"gprProfile{}[]":{
 		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t{${1:name}}[${2:life events}]",
+			"\\end{gprProfile}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gprProfile[]{}":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t[${2:options%keyvals}]{${1:name}}",
+			"\\end{gprProfile}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gprProfile[]{}[]":{
+		"prefix":"gprProfile",
+		"body":[
+			"\\begin{gprProfile}",
+				"\t[${2:options%keyvals}]{${1:name}}[${3:life events}]",
+			"\\end{gprProfile}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gprProfile*{}":{
+		"prefix":"*gprProfile",
 		"body":[
 			"\\begin{gprProfile*}",
-				"\t$1",
+				"\t{${1:options%keyvals}}",
 			"\\end{gprProfile*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"gprProfile":{
-		"prefix":"gprProfile",
-		"body":[
-			"\\begin{gprProfile}",
-				"\t$1",
-			"\\end{gprProfile}"
-		]
-	},
-
-
-	"gprProfile":{
-		"prefix":"gprProfile",
-		"body":[
-			"\\begin{gprProfile}",
-				"\t$1",
-			"\\end{gprProfile}"
-		]
-	},
-
-
-	"gprProfile":{
-		"prefix":"gprProfile",
-		"body":[
-			"\\begin{gprProfile}",
-				"\t$1",
-			"\\end{gprProfile}"
-		]
-	},
-
-
-	"gprProfile*":{
-		"prefix":"gprProfile",
+	"gprProfile*{}[]":{
+		"prefix":"*gprProfile",
 		"body":[
 			"\\begin{gprProfile*}",
-				"\t$1",
+				"\t{${1:options%keyvals}}[${2:life events}]",
 			"\\end{gprProfile*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

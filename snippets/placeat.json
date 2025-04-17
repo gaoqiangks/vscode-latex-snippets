@@ -5,143 +5,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat(${2:x},${3:y}){${1:content}}"
-		]
-	},
-
-
-	"placeat{}{}{}":{
-		"prefix":"placeat",
-		"body":[
-			"\\placeat{${1:x}}{${2:y}}{${3:content}}"
-		]
-	},
-
-
-	"placeminipageat{}{}{}":{
-		"prefix":"placeminipageat",
-		"body":[
-			"\\placeminipageat{${1:x}}{${2:y}}{${3:content}}"
-		]
-	},
-
-
-	"placeatsetup{}":{
-		"prefix":"placeatsetup",
-		"body":[
-			"\\placeatsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"placelineat()()":{
-		"prefix":"placelineat",
-		"body":[
-			"\\placelineat(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"placearrowat()()":{
-		"prefix":"placearrowat",
-		"body":[
-			"\\placearrowat(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"placecircleat(){}":{
-		"prefix":"placecircleat",
-		"body":[
-			"\\placecircleat(${2:x},${3:y}){${1:r}}"
-		]
-	},
-
-
-	"placefilledcircleat(){}":{
-		"prefix":"placefilledcircleat",
-		"body":[
-			"\\placefilledcircleat(${2:x},${3:y}){${1:r}}"
-		]
-	},
-
-
-	"placesquareat(){}":{
-		"prefix":"placesquareat",
-		"body":[
-			"\\placesquareat(${2:x},${3:y}){${1:r}}"
-		]
-	},
-
-
-	"placerectangleat()()":{
-		"prefix":"placerectangleat",
-		"body":[
-			"\\placerectangleat(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"placefilledrectangleat()()":{
-		"prefix":"placefilledrectangleat",
-		"body":[
-			"\\placefilledrectangleat(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"placecurveat()()()()":{
-		"prefix":"placecurveat",
-		"body":[
-			"\\placecurveat(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})(${7:x4},${8:y4})"
-		]
-	},
-
-
-	"placeroundedat()()":{
-		"prefix":"placeroundedat",
-		"body":[
-			"\\placeroundedat(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"placeatthreenumbers{}{}{}":{
-		"prefix":"placeatthreenumbers",
-		"body":[
-			"\\placeatthreenumbers{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"firstof{}{}":{
-		"prefix":"firstof",
-		"body":[
-			"\\firstof{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"secondof{}{}":{
-		"prefix":"secondof",
-		"body":[
-			"\\secondof{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"drawgridnum":{
-		"prefix":"drawgridnum",
-		"body":[
-			"\\drawgridnum"
-		]
-	},
-
-
-	"drawgrid":{
-		"prefix":"drawgrid",
-		"body":[
-			"\\drawgrid"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat(${3:x},${4:y}){${1:content}}[${2:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +23,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat(${3:x},${4:y})[${2:content-left}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +32,17 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat(${4:x},${5:y})[${2:content-left}]{${1:content}}[${3:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeat{}{}{}":{
+		"prefix":"placeat",
+		"body":[
+			"\\placeat{${1:x}}{${2:y}}{${3:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +50,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat{${1:x}}{${2:y}}{${3:content}}[${4:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +59,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat{${1:x}}{${2:y}}[${4:content-left}]{${3:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +68,8 @@
 		"prefix":"placeat",
 		"body":[
 			"\\placeat{${1:x}}{${2:y}}[${4:content-left}]{${3:content}}[${5:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +77,8 @@
 		"prefix":"placerelto",
 		"body":[
 			"\\placerelto[${2:name}](${3:x},${4:y}){${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +86,8 @@
 		"prefix":"placerelto",
 		"body":[
 			"\\placerelto[${2:name}](${4:x},${5:y}){${1:content}}[${3:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +95,8 @@
 		"prefix":"placerelto",
 		"body":[
 			"\\placerelto[${4:name}]{${1:x}}{${2:y}}{${3:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +104,17 @@
 		"prefix":"placerelto",
 		"body":[
 			"\\placerelto[${4:name}]{${1:x}}{${2:y}}{${3:content}}[${5:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeminipageat{}{}{}":{
+		"prefix":"placeminipageat",
+		"body":[
+			"\\placeminipageat{${1:x}}{${2:y}}{${3:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +122,26 @@
 		"prefix":"placeminipageat",
 		"body":[
 			"\\placeminipageat{${1:x}}{${2:y}}[${4:width}]{${3:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeatsetup{}":{
+		"prefix":"placeatsetup",
+		"body":[
+			"\\placeatsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placelineat()()":{
+		"prefix":"placelineat",
+		"body":[
+			"\\placelineat(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +149,17 @@
 		"prefix":"placelineat",
 		"body":[
 			"\\placelineat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placearrowat()()":{
+		"prefix":"placearrowat",
+		"body":[
+			"\\placearrowat(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +167,17 @@
 		"prefix":"placearrowat",
 		"body":[
 			"\\placearrowat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placecircleat(){}":{
+		"prefix":"placecircleat",
+		"body":[
+			"\\placecircleat(${2:x},${3:y}){${1:r}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +185,17 @@
 		"prefix":"placecircleat",
 		"body":[
 			"\\placecircleat[${2:color}](${3:x},${4:y}){${1:r}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placefilledcircleat(){}":{
+		"prefix":"placefilledcircleat",
+		"body":[
+			"\\placefilledcircleat(${2:x},${3:y}){${1:r}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +203,17 @@
 		"prefix":"placefilledcircleat",
 		"body":[
 			"\\placefilledcircleat[${2:color}](${3:x},${4:y}){${1:r}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placesquareat(){}":{
+		"prefix":"placesquareat",
+		"body":[
+			"\\placesquareat(${2:x},${3:y}){${1:r}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +221,17 @@
 		"prefix":"placesquareat",
 		"body":[
 			"\\placesquareat[${2:color}](${3:x},${4:y}){${1:r}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placerectangleat()()":{
+		"prefix":"placerectangleat",
+		"body":[
+			"\\placerectangleat(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +239,17 @@
 		"prefix":"placerectangleat",
 		"body":[
 			"\\placerectangleat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placefilledrectangleat()()":{
+		"prefix":"placefilledrectangleat",
+		"body":[
+			"\\placefilledrectangleat(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +257,17 @@
 		"prefix":"placefilledrectangleat",
 		"body":[
 			"\\placefilledrectangleat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placecurveat()()()()":{
+		"prefix":"placecurveat",
+		"body":[
+			"\\placecurveat(${1:x1},${2:y1})(${3:x2},${4:y2})(${5:x3},${6:y3})(${7:x4},${8:y4})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +275,17 @@
 		"prefix":"placecurveat",
 		"body":[
 			"\\placecurveat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3})(${8:x4},${9:y4})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeroundedat()()":{
+		"prefix":"placeroundedat",
+		"body":[
+			"\\placeroundedat(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,6 +293,52 @@
 		"prefix":"placeroundedat",
 		"body":[
 			"\\placeroundedat[${1:color}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeatthreenumbers{}{}{}":{
+		"prefix":"placeatthreenumbers",
+		"body":[
+			"\\placeatthreenumbers{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firstof{}{}":{
+		"prefix":"firstof",
+		"body":[
+			"\\firstof{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"secondof{}{}":{
+		"prefix":"secondof",
+		"body":[
+			"\\secondof{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawgridnum":{
+		"prefix":"drawgridnum",
+		"body":[
+			"\\drawgridnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawgrid":{
+		"prefix":"drawgrid",
+		"body":[
+			"\\drawgrid"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

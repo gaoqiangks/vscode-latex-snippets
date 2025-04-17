@@ -5,7 +5,8 @@
 		"prefix":"useavremulibrary",
 		"body":[
 			"\\useavremulibrary{${1:list of libraries}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,119 +14,8 @@
 		"prefix":"avrloadc",
 		"body":[
 			"\\avrloadc{${1:file}}"
-		]
-	},
-
-
-	"avrcompile{}":{
-		"prefix":"avrcompile",
-		"body":[
-			"\\avrcompile{${1:file}}"
-		]
-	},
-
-
-	"avrloadihex{}":{
-		"prefix":"avrloadihex",
-		"body":[
-			"\\avrloadihex{${1:file}}"
-		]
-	},
-
-
-	"ifavrbreak":{
-		"prefix":"ifavrbreak",
-		"body":[
-			"\\ifavrbreak"
-		]
-	},
-
-
-	"avrbreaktrue":{
-		"prefix":"avrbreaktrue",
-		"body":[
-			"\\avrbreaktrue"
-		]
-	},
-
-
-	"avrbreakfalse":{
-		"prefix":"avrbreakfalse",
-		"body":[
-			"\\avrbreakfalse"
-		]
-	},
-
-
-	"avrstep":{
-		"prefix":"avrstep",
-		"body":[
-			"\\avrstep"
-		]
-	},
-
-
-	"avrrun":{
-		"prefix":"avrrun",
-		"body":[
-			"\\avrrun"
-		]
-	},
-
-
-	"avrsinglestep":{
-		"prefix":"avrsinglestep",
-		"body":[
-			"\\avrsinglestep"
-		]
-	},
-
-
-	"avrinstrcount":{
-		"prefix":"avrinstrcount",
-		"body":[
-			"\\avrinstrcount"
-		]
-	},
-
-
-	"avrUDR":{
-		"prefix":"avrUDR",
-		"body":[
-			"\\avrUDR"
-		]
-	},
-
-
-	"avrUDRclear":{
-		"prefix":"avrUDRclear",
-		"body":[
-			"\\avrUDRclear"
-		]
-	},
-
-
-	"avrdrawiter{}":{
-		"prefix":"avrdrawiter",
-		"body":[
-			"\\avrdrawiter{${1:arg}}"
-		]
-	},
-
-
-	"avrdrawSize{}{}":{
-		"prefix":"avrdrawSize",
-		"body":[
-			"\\avrdrawSize{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"avrdrawppm{}":{
-		"prefix":"avrdrawppm",
-		"body":[
-			"\\avrdrawppm{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +23,17 @@
 		"prefix":"avrloadc",
 		"body":[
 			"\\avrloadc[${2:compiler options}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avrcompile{}":{
+		"prefix":"avrcompile",
+		"body":[
+			"\\avrcompile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +41,53 @@
 		"prefix":"avrcompile",
 		"body":[
 			"\\avrcompile[${2:compiler options}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avrloadihex{}":{
+		"prefix":"avrloadihex",
+		"body":[
+			"\\avrloadihex{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifavrbreak":{
+		"prefix":"ifavrbreak",
+		"body":[
+			"\\ifavrbreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrbreaktrue":{
+		"prefix":"avrbreaktrue",
+		"body":[
+			"\\avrbreaktrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrbreakfalse":{
+		"prefix":"avrbreakfalse",
+		"body":[
+			"\\avrbreakfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrstep":{
+		"prefix":"avrstep",
+		"body":[
+			"\\avrstep"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,6 +95,79 @@
 		"prefix":"avrstep",
 		"body":[
 			"\\avrstep[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avrrun":{
+		"prefix":"avrrun",
+		"body":[
+			"\\avrrun"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrsinglestep":{
+		"prefix":"avrsinglestep",
+		"body":[
+			"\\avrsinglestep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrinstrcount":{
+		"prefix":"avrinstrcount",
+		"body":[
+			"\\avrinstrcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrUDR":{
+		"prefix":"avrUDR",
+		"body":[
+			"\\avrUDR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrUDRclear":{
+		"prefix":"avrUDRclear",
+		"body":[
+			"\\avrUDRclear"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrdrawiter{}":{
+		"prefix":"avrdrawiter",
+		"body":[
+			"\\avrdrawiter{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrdrawSize{}{}":{
+		"prefix":"avrdrawSize",
+		"body":[
+			"\\avrdrawSize{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"avrdrawppm{}":{
+		"prefix":"avrdrawppm",
+		"body":[
+			"\\avrdrawppm{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

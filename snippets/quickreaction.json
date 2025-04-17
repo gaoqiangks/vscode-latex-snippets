@@ -5,15 +5,8 @@
 		"prefix":"quickarrow",
 		"body":[
 			"\\quickarrow"
-		]
-	},
-
-
-	"fixrow":{
-		"prefix":"fixrow",
-		"body":[
-			"\\fixrow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,8 @@
 		"prefix":"quickarrow",
 		"body":[
 			"\\quickarrow[${1:above}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -29,7 +23,17 @@
 		"prefix":"quickarrow",
 		"body":[
 			"\\quickarrow[${1:above}][${2:below}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fixrow":{
+		"prefix":"fixrow",
+		"body":[
+			"\\fixrow"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -39,26 +43,29 @@
 			"\\begin{quickreaction}",
 				"\t$1",
 			"\\end{quickreaction}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"quickreaction":{
+	"quickreaction[]":{
 		"prefix":"quickreaction",
 		"body":[
 			"\\begin{quickreaction}",
-				"\t$1",
+				"\t[${1:opt1}]",
 			"\\end{quickreaction}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"quickreaction":{
+	"quickreaction[][]":{
 		"prefix":"quickreaction",
 		"body":[
 			"\\begin{quickreaction}",
-				"\t$1",
+				"\t[${1:opt1}][${2:opt2}]",
 			"\\end{quickreaction}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

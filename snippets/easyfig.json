@@ -5,39 +5,8 @@
 		"prefix":"Figure",
 		"body":[
 			"\\Figure{${1:imagefile}}"
-		]
-	},
-
-
-	"easyfigdefault{}":{
-		"prefix":"easyfigdefault",
-		"body":[
-			"\\easyfigdefault{${1:options%keyvals}}"
-		]
-	},
-
-
-	"Figure*{}":{
-		"prefix":"*Figure",
-		"body":[
-			"\\Figure*{${1:imagefile}}"
-		]
-	},
-
-
-	"Figure*[]{}":{
-		"prefix":"*Figure",
-		"body":[
-			"\\Figure*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"easyfigdefault*{}":{
-		"prefix":"*easyfigdefault",
-		"body":[
-			"\\easyfigdefault*{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +14,43 @@
 		"prefix":"Figure",
 		"body":[
 			"\\Figure[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Figure*{}":{
+		"prefix":"*Figure",
+		"body":[
+			"\\Figure*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Figure*[]{}":{
+		"prefix":"*Figure",
+		"body":[
+			"\\Figure*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"easyfigdefault{}":{
+		"prefix":"easyfigdefault",
+		"body":[
+			"\\easyfigdefault{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"easyfigdefault*{}":{
+		"prefix":"*easyfigdefault",
+		"body":[
+			"\\easyfigdefault*{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

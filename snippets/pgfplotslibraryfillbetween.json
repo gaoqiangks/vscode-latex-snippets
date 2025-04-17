@@ -5,23 +5,8 @@
 		"prefix":"tikzsegmentindex",
 		"body":[
 			"\\tikzsegmentindex"
-		]
-	},
-
-
-	"tikzgetnamedpath{}":{
-		"prefix":"tikzgetnamedpath",
-		"body":[
-			"\\tikzgetnamedpath{${1:path name}}"
-		]
-	},
-
-
-	"tikznamecurrentpath{}":{
-		"prefix":"tikznamecurrentpath",
-		"body":[
-			"\\tikznamecurrentpath{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"tikzfillbetween",
 		"body":[
 			"\\tikzfillbetween[${2:options%keyvals}]{${1:draw style}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzgetnamedpath{}":{
+		"prefix":"tikzgetnamedpath",
+		"body":[
+			"\\tikzgetnamedpath{${1:path name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikznamecurrentpath{}":{
+		"prefix":"tikznamecurrentpath",
+		"body":[
+			"\\tikznamecurrentpath{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +41,7 @@
 		"prefix":"tikzpathintersectionsegments",
 		"body":[
 			"\\tikzpathintersectionsegments[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

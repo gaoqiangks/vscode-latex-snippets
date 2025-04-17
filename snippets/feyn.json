@@ -5,7 +5,8 @@
 		"prefix":"feyn",
 		"body":[
 			"\\feyn{${1:chars}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Feyn",
 		"body":[
 			"\\Feyn{${1:chars}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"FEYN",
 		"body":[
 			"\\FEYN{${1:chars}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,183 +32,8 @@
 		"prefix":"momentum",
 		"body":[
 			"\\momentum{${1:chars}}{${2:text}}"
-		]
-	},
-
-
-	"belowl{}":{
-		"prefix":"belowl",
-		"body":[
-			"\\belowl{${1:chars}}"
-		]
-	},
-
-
-	"belowr{}":{
-		"prefix":"belowr",
-		"body":[
-			"\\belowr{${1:chars}}"
-		]
-	},
-
-
-	"Diagram{}":{
-		"prefix":"Diagram",
-		"body":[
-			"\\Diagram{${1:array}}"
-		]
-	},
-
-
-	"DIAGRAM{}":{
-		"prefix":"DIAGRAM",
-		"body":[
-			"\\DIAGRAM{${1:array}}"
-		]
-	},
-
-
-	"maxis{}":{
-		"prefix":"maxis",
-		"body":[
-			"\\maxis{${1:arg}}"
-		]
-	},
-
-
-	"vertexlabel":{
-		"prefix":"vertexlabel",
-		"body":[
-			"\\vertexlabel"
-		]
-	},
-
-
-	"feynstrut{}{}":{
-		"prefix":"feynstrut",
-		"body":[
-			"\\feynstrut{${1:height}}{${2:depth}}"
-		]
-	},
-
-
-	"annotate{}{}{}":{
-		"prefix":"annotate",
-		"body":[
-			"\\annotate{${1:x}}{${2:y}}{${3:text}}"
-		]
-	},
-
-
-	"tannotate{}{}{}":{
-		"prefix":"tannotate",
-		"body":[
-			"\\tannotate{${1:x}}{${2:y}}{${3:text}}"
-		]
-	},
-
-
-	"FeynSpaceChar":{
-		"prefix":"FeynSpaceChar",
-		"body":[
-			"\\FeynSpaceChar"
-		]
-	},
-
-
-	"FeynxSpaceChar":{
-		"prefix":"FeynxSpaceChar",
-		"body":[
-			"\\FeynxSpaceChar"
-		]
-	},
-
-
-	"wfermion":{
-		"prefix":"wfermion",
-		"body":[
-			"\\wfermion"
-		]
-	},
-
-
-	"hfermion":{
-		"prefix":"hfermion",
-		"body":[
-			"\\hfermion"
-		]
-	},
-
-
-	"shfermion":{
-		"prefix":"shfermion",
-		"body":[
-			"\\shfermion"
-		]
-	},
-
-
-	"whfermion":{
-		"prefix":"whfermion",
-		"body":[
-			"\\whfermion"
-		]
-	},
-
-
-	"gvcropped":{
-		"prefix":"gvcropped",
-		"body":[
-			"\\gvcropped"
-		]
-	},
-
-
-	"bigbosonloop":{
-		"prefix":"bigbosonloop",
-		"body":[
-			"\\bigbosonloop"
-		]
-	},
-
-
-	"smallbosonloop":{
-		"prefix":"smallbosonloop",
-		"body":[
-			"\\smallbosonloop"
-		]
-	},
-
-
-	"bigbosonloopA":{
-		"prefix":"bigbosonloopA",
-		"body":[
-			"\\bigbosonloopA"
-		]
-	},
-
-
-	"smallbosonloopA":{
-		"prefix":"smallbosonloopA",
-		"body":[
-			"\\smallbosonloopA"
-		]
-	},
-
-
-	"bigbosonloopV":{
-		"prefix":"bigbosonloopV",
-		"body":[
-			"\\bigbosonloopV"
-		]
-	},
-
-
-	"smallbosonloopV":{
-		"prefix":"smallbosonloopV",
-		"body":[
-			"\\smallbosonloopV"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +41,35 @@
 		"prefix":"momentum",
 		"body":[
 			"\\momentum[${3:pos%keyvals}]{${1:chars}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"belowl{}":{
+		"prefix":"belowl",
+		"body":[
+			"\\belowl{${1:chars}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"belowr{}":{
+		"prefix":"belowr",
+		"body":[
+			"\\belowr{${1:chars}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Diagram{}":{
+		"prefix":"Diagram",
+		"body":[
+			"\\Diagram{${1:array}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +77,17 @@
 		"prefix":"Diagram",
 		"body":[
 			"\\Diagram[${2:alignment%keyvals}]{${1:array}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DIAGRAM{}":{
+		"prefix":"DIAGRAM",
+		"body":[
+			"\\DIAGRAM{${1:array}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,6 +95,169 @@
 		"prefix":"DIAGRAM",
 		"body":[
 			"\\DIAGRAM[${2:alignment%keyvals}]{${1:array}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"maxis{}":{
+		"prefix":"maxis",
+		"body":[
+			"\\maxis{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vertexlabel":{
+		"prefix":"vertexlabel",
+		"body":[
+			"\\vertexlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"feynstrut{}{}":{
+		"prefix":"feynstrut",
+		"body":[
+			"\\feynstrut{${1:height}}{${2:depth}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"annotate{}{}{}":{
+		"prefix":"annotate",
+		"body":[
+			"\\annotate{${1:x}}{${2:y}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tannotate{}{}{}":{
+		"prefix":"tannotate",
+		"body":[
+			"\\tannotate{${1:x}}{${2:y}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FeynSpaceChar":{
+		"prefix":"FeynSpaceChar",
+		"body":[
+			"\\FeynSpaceChar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FeynxSpaceChar":{
+		"prefix":"FeynxSpaceChar",
+		"body":[
+			"\\FeynxSpaceChar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wfermion":{
+		"prefix":"wfermion",
+		"body":[
+			"\\wfermion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hfermion":{
+		"prefix":"hfermion",
+		"body":[
+			"\\hfermion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shfermion":{
+		"prefix":"shfermion",
+		"body":[
+			"\\shfermion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"whfermion":{
+		"prefix":"whfermion",
+		"body":[
+			"\\whfermion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gvcropped":{
+		"prefix":"gvcropped",
+		"body":[
+			"\\gvcropped"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bigbosonloop":{
+		"prefix":"bigbosonloop",
+		"body":[
+			"\\bigbosonloop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallbosonloop":{
+		"prefix":"smallbosonloop",
+		"body":[
+			"\\smallbosonloop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bigbosonloopA":{
+		"prefix":"bigbosonloopA",
+		"body":[
+			"\\bigbosonloopA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallbosonloopA":{
+		"prefix":"smallbosonloopA",
+		"body":[
+			"\\smallbosonloopA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bigbosonloopV":{
+		"prefix":"bigbosonloopV",
+		"body":[
+			"\\bigbosonloopV"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallbosonloopV":{
+		"prefix":"smallbosonloopV",
+		"body":[
+			"\\smallbosonloopV"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

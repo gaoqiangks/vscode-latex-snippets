@@ -5,7 +5,8 @@
 		"prefix":"instruction",
 		"body":[
 			"\\instruction{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"choir",
 		"body":[
 			"\\choir{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"lsenparen",
 		"body":[
 			"\\lsenparen{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"mkinstruction",
 		"body":[
 			"\\mkinstruction{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"mkchoir",
 		"body":[
 			"\\mkchoir{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"mklsenparens",
 		"body":[
 			"\\mklsenparens"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"mklsenparen",
 		"body":[
 			"\\mklsenparen{${1:open paren}}{${2:closing paren}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -63,16 +70,18 @@
 			"\\begin{prechorus}",
 				"\t$1",
 			"\\end{prechorus}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"prechorus":{
+	"prechorus[]":{
 		"prefix":"prechorus",
 		"body":[
 			"\\begin{prechorus}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{prechorus}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

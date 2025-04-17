@@ -5,7 +5,8 @@
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}[${2:skipA}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"itemLabel",
 		"body":[
 			"\\itemLabel{${1:label}}[${2:skipA}][${3:skipB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -31,16 +34,18 @@
 			"\\begin{easylist}",
 				"\t$1",
 			"\\end{easylist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"easylist":{
+	"easylist[]":{
 		"prefix":"easylist",
 		"body":[
 			"\\begin{easylist}",
-				"\t$1",
+				"\t[${1:style%keyvals}]",
 			"\\end{easylist}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

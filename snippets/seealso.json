@@ -5,7 +5,8 @@
 		"prefix":"seepage",
 		"body":[
 			"\\seepage{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"seealsopage",
 		"body":[
 			"\\seealsopage{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"seenopage",
 		"body":[
 			"\\seenopage{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"seealsonopage",
 		"body":[
 			"\\seealsonopage{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"see",
 		"body":[
 			"\\see{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"seealso",
 		"body":[
 			"\\seealso{${1:entry}}{${2:page number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"SeealsoPrintList",
 		"body":[
 			"\\SeealsoPrintList"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,15 +68,8 @@
 		"prefix":"seealsosetup",
 		"body":[
 			"\\seealsosetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"SeealsoGobble{}":{
-		"prefix":"SeealsoGobble",
-		"body":[
-			"\\SeealsoGobble{${1:char}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +77,16 @@
 		"prefix":"seealsosetup",
 		"body":[
 			"\\seealsosetup[${2:seelists}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SeealsoGobble{}":{
+		"prefix":"SeealsoGobble",
+		"body":[
+			"\\SeealsoGobble{${1:char}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

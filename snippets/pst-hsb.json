@@ -5,15 +5,8 @@
 		"prefix":"psparametricplotHSB",
 		"body":[
 			"\\psparametricplotHSB{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
-	},
-
-
-	"pslineHSB()()":{
-		"prefix":"pslineHSB",
-		"body":[
-			"\\pslineHSB(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"psparametricplotHSB",
 		"body":[
 			"\\psparametricplotHSB[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pslineHSB()()":{
+		"prefix":"pslineHSB",
+		"body":[
+			"\\pslineHSB(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +32,7 @@
 		"prefix":"pslineHSB",
 		"body":[
 			"\\pslineHSB[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

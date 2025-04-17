@@ -5,7 +5,8 @@
 		"prefix":"ColTextColor",
 		"body":[
 			"\\ColTextColor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ColSubTextColor",
 		"body":[
 			"\\ColSubTextColor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"zapf",
 		"body":[
 			"\\zapf"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Allergens",
 		"body":[
 			"\\Allergens{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Entry",
 		"body":[
 			"\\Entry{${1:left%text}}{${2:right%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"Entrycount",
 		"body":[
 			"\\Entrycount{${1:left%text}}{${2:right%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"Expl",
 		"body":[
 			"\\Expl{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"ColSubText",
 		"body":[
 			"\\ColSubText{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"ColText",
 		"body":[
 			"\\ColText{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,66 +86,73 @@
 		"prefix":"themenucount",
 		"body":[
 			"\\themenucount"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Group":{
+	"Group{}":{
 		"prefix":"Group",
 		"body":[
 			"\\begin{Group}",
-				"\t$1",
+				"\t{${1:heading%text}}",
 			"\\end{Group}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Group*":{
-		"prefix":"Group",
+	"Group*{}":{
+		"prefix":"*Group",
 		"body":[
 			"\\begin{Group*}",
-				"\t$1",
+				"\t{${1:heading%text}}",
 			"\\end{Group*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"menugroup":{
+	"menugroup{}{}":{
 		"prefix":"menugroup",
 		"body":[
 			"\\begin{menugroup}",
-				"\t$1",
+				"\t{${1:heading1%text}}{${2:heading2%text}}",
 			"\\end{menugroup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"menugroup*":{
-		"prefix":"menugroup",
+	"menugroup*{}{}":{
+		"prefix":"*menugroup",
 		"body":[
 			"\\begin{menugroup*}",
-				"\t$1",
+				"\t{${1:heading1%text}}{${2:heading2%text}}",
 			"\\end{menugroup*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"menugroupsc":{
+	"menugroupsc{}{}":{
 		"prefix":"menugroupsc",
 		"body":[
 			"\\begin{menugroupsc}",
-				"\t$1",
+				"\t{${1:heading1%text}}{${2:heading2%text}}",
 			"\\end{menugroupsc}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"menugroupsc*":{
-		"prefix":"menugroupsc",
+	"menugroupsc*{}{}":{
+		"prefix":"*menugroupsc",
 		"body":[
 			"\\begin{menugroupsc*}",
-				"\t$1",
+				"\t{${1:heading1%text}}{${2:heading2%text}}",
 			"\\end{menugroupsc*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"tikzdatavisualizationset",
 		"body":[
 			"\\tikzdatavisualizationset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tikzdvdeclarestylesheetcolorseries",
 		"body":[
 			"\\tikzdvdeclarestylesheetcolorseries{${1:name}}{${2:color model}}{${3:init color}}{${4:step}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"pgfdatapoint",
 		"body":[
 			"\\pgfdatapoint"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"pgfdata",
 		"body":[
 			"\\pgfdata"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,119 +41,8 @@
 		"prefix":"pgfdata",
 		"body":[
 			"\\pgfdata{${1:inline data}}"
-		]
-	},
-
-
-	"pgfdeclaredataformat{}{}{}{}{}{}{}":{
-		"prefix":"pgfdeclaredataformat",
-		"body":[
-			"\\pgfdeclaredataformat{${1:name}}{${2:catcode code}}{${3:start code}}{${4:line args}}{${5:line code}}{${6:emptyline code}}{${7:end code}}"
-		]
-	},
-
-
-	"pgfdvdeclarestylesheet{}{}":{
-		"prefix":"pgfdvdeclarestylesheet",
-		"body":[
-			"\\pgfdvdeclarestylesheet{${1:name}}{${2:keyvals}}"
-		]
-	},
-
-
-	"pgfooclass{}{}":{
-		"prefix":"pgfooclass",
-		"body":[
-			"\\pgfooclass{${1:class name}}{${2:body}}"
-		]
-	},
-
-
-	"pgfooclass(){}{}":{
-		"prefix":"pgfooclass",
-		"body":[
-			"\\pgfooclass(${3:list of superclasses}){${1:class name}}{${2:body}}"
-		]
-	},
-
-
-	"pgfoogc":{
-		"prefix":"pgfoogc",
-		"body":[
-			"\\pgfoogc"
-		]
-	},
-
-
-	"pgfoothis":{
-		"prefix":"pgfoothis",
-		"body":[
-			"\\pgfoothis"
-		]
-	},
-
-
-	"pgfooset{}{}":{
-		"prefix":"pgfooset",
-		"body":[
-			"\\pgfooset{${1:attribute}}{${2:value}}"
-		]
-	},
-
-
-	"pgfooeset{}{}":{
-		"prefix":"pgfooeset",
-		"body":[
-			"\\pgfooeset{${1:attribute}}{${2:value}}"
-		]
-	},
-
-
-	"pgfooappend{}{}":{
-		"prefix":"pgfooappend",
-		"body":[
-			"\\pgfooappend{${1:attribute}}{${2:value}}"
-		]
-	},
-
-
-	"pgfooprefix{}{}":{
-		"prefix":"pgfooprefix",
-		"body":[
-			"\\pgfooprefix{${1:attribute}}{${2:value}}"
-		]
-	},
-
-
-	"pgfoolet{}{}":{
-		"prefix":"pgfoolet",
-		"body":[
-			"\\pgfoolet{${1:attribute}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"pgfoovalueof{}":{
-		"prefix":"pgfoovalueof",
-		"body":[
-			"\\pgfoovalueof{${1:attribute}}"
-		]
-	},
-
-
-	"pgfooget{}{}":{
-		"prefix":"pgfooget",
-		"body":[
-			"\\pgfooget{${1:attribute}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"pgfooobj{}":{
-		"prefix":"pgfooobj",
-		"body":[
-			"\\pgfooobj{${1:id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +50,8 @@
 		"prefix":"pgfdata",
 		"body":[
 			"\\pgfdata[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,6 +59,133 @@
 		"prefix":"pgfdata",
 		"body":[
 			"\\pgfdata[${2:options%keyvals}]{${1:inline data}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfdeclaredataformat{}{}{}{}{}{}{}":{
+		"prefix":"pgfdeclaredataformat",
+		"body":[
+			"\\pgfdeclaredataformat{${1:name}}{${2:catcode code}}{${3:start code}}{${4:line args}}{${5:line code}}{${6:emptyline code}}{${7:end code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfdvdeclarestylesheet{}{}":{
+		"prefix":"pgfdvdeclarestylesheet",
+		"body":[
+			"\\pgfdvdeclarestylesheet{${1:name}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooclass{}{}":{
+		"prefix":"pgfooclass",
+		"body":[
+			"\\pgfooclass{${1:class name}}{${2:body}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooclass(){}{}":{
+		"prefix":"pgfooclass",
+		"body":[
+			"\\pgfooclass(${3:list of superclasses}){${1:class name}}{${2:body}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfoogc":{
+		"prefix":"pgfoogc",
+		"body":[
+			"\\pgfoogc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfoothis":{
+		"prefix":"pgfoothis",
+		"body":[
+			"\\pgfoothis"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooset{}{}":{
+		"prefix":"pgfooset",
+		"body":[
+			"\\pgfooset{${1:attribute}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooeset{}{}":{
+		"prefix":"pgfooeset",
+		"body":[
+			"\\pgfooeset{${1:attribute}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooappend{}{}":{
+		"prefix":"pgfooappend",
+		"body":[
+			"\\pgfooappend{${1:attribute}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooprefix{}{}":{
+		"prefix":"pgfooprefix",
+		"body":[
+			"\\pgfooprefix{${1:attribute}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfoolet{}{}":{
+		"prefix":"pgfoolet",
+		"body":[
+			"\\pgfoolet{${1:attribute}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfoovalueof{}":{
+		"prefix":"pgfoovalueof",
+		"body":[
+			"\\pgfoovalueof{${1:attribute}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooget{}{}":{
+		"prefix":"pgfooget",
+		"body":[
+			"\\pgfooget{${1:attribute}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfooobj{}":{
+		"prefix":"pgfooobj",
+		"body":[
+			"\\pgfooobj{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

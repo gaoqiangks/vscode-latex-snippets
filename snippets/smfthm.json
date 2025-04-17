@@ -5,7 +5,8 @@
 		"prefix":"NoSwapTheoremNumbers",
 		"body":[
 			"\\NoSwapTheoremNumbers"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"NumberTheoremsAs",
 		"body":[
 			"\\NumberTheoremsAs{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"NumberTheoremsIn",
 		"body":[
 			"\\NumberTheoremsIn{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"SwapTheoremNumbers",
 		"body":[
 			"\\SwapTheoremNumbers"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"thesmfthm",
 		"body":[
 			"\\thesmfthm"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,7 +52,19 @@
 			"\\begin{theo}",
 				"\t$1",
 			"\\end{theo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theo[]":{
+		"prefix":"theo",
+		"body":[
+			"\\begin{theo}",
+				"\t[${1:header%text}]",
+			"\\end{theo}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -57,7 +74,19 @@
 			"\\begin{prop}",
 				"\t$1",
 			"\\end{prop}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prop[]":{
+		"prefix":"prop",
+		"body":[
+			"\\begin{prop}",
+				"\t[${1:header%text}]",
+			"\\end{prop}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -67,7 +96,19 @@
 			"\\begin{conj}",
 				"\t$1",
 			"\\end{conj}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conj[]":{
+		"prefix":"conj",
+		"body":[
+			"\\begin{conj}",
+				"\t[${1:header%text}]",
+			"\\end{conj}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,7 +118,19 @@
 			"\\begin{coro}",
 				"\t$1",
 			"\\end{coro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coro[]":{
+		"prefix":"coro",
+		"body":[
+			"\\begin{coro}",
+				"\t[${1:header%text}]",
+			"\\end{coro}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -87,7 +140,19 @@
 			"\\begin{lemm}",
 				"\t$1",
 			"\\end{lemm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lemm[]":{
+		"prefix":"lemm",
+		"body":[
+			"\\begin{lemm}",
+				"\t[${1:header%text}]",
+			"\\end{lemm}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -97,7 +162,19 @@
 			"\\begin{defi}",
 				"\t$1",
 			"\\end{defi}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defi[]":{
+		"prefix":"defi",
+		"body":[
+			"\\begin{defi}",
+				"\t[${1:header%text}]",
+			"\\end{defi}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -107,7 +184,19 @@
 			"\\begin{rema}",
 				"\t$1",
 			"\\end{rema}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rema[]":{
+		"prefix":"rema",
+		"body":[
+			"\\begin{rema}",
+				"\t[${1:header%text}]",
+			"\\end{rema}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,106 +206,40 @@
 			"\\begin{exem}",
 				"\t$1",
 			"\\end{exem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"enonce":{
+	"exem[]":{
+		"prefix":"exem",
+		"body":[
+			"\\begin{exem}",
+				"\t[${1:header%text}]",
+			"\\end{exem}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"enonce{}":{
 		"prefix":"enonce",
 		"body":[
 			"\\begin{enonce}",
-				"\t$1",
+				"\t{${1:theorem name}}",
 			"\\end{enonce}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"enonce*":{
-		"prefix":"enonce",
+	"enonce*{}":{
+		"prefix":"*enonce",
 		"body":[
 			"\\begin{enonce*}",
-				"\t$1",
+				"\t{${1:theorem name}}",
 			"\\end{enonce*}"
-		]
-	},
-
-
-	"theo":{
-		"prefix":"theo",
-		"body":[
-			"\\begin{theo}",
-				"\t$1",
-			"\\end{theo}"
-		]
-	},
-
-
-	"prop":{
-		"prefix":"prop",
-		"body":[
-			"\\begin{prop}",
-				"\t$1",
-			"\\end{prop}"
-		]
-	},
-
-
-	"conj":{
-		"prefix":"conj",
-		"body":[
-			"\\begin{conj}",
-				"\t$1",
-			"\\end{conj}"
-		]
-	},
-
-
-	"coro":{
-		"prefix":"coro",
-		"body":[
-			"\\begin{coro}",
-				"\t$1",
-			"\\end{coro}"
-		]
-	},
-
-
-	"lemm":{
-		"prefix":"lemm",
-		"body":[
-			"\\begin{lemm}",
-				"\t$1",
-			"\\end{lemm}"
-		]
-	},
-
-
-	"defi":{
-		"prefix":"defi",
-		"body":[
-			"\\begin{defi}",
-				"\t$1",
-			"\\end{defi}"
-		]
-	},
-
-
-	"rema":{
-		"prefix":"rema",
-		"body":[
-			"\\begin{rema}",
-				"\t$1",
-			"\\end{rema}"
-		]
-	},
-
-
-	"exem":{
-		"prefix":"exem",
-		"body":[
-			"\\begin{exem}",
-				"\t$1",
-			"\\end{exem}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,87 +5,8 @@
 		"prefix":"multiputlist",
 		"body":[
 			"\\multiputlist(${2:x},${3:y})(${4:Δx},${5:Δy}){${1:item1,item2,...}}"
-		]
-	},
-
-
-	"lopoff":{
-		"prefix":"lopoff",
-		"body":[
-			"\\lopoff"
-		]
-	},
-
-
-	"matrixput()(){}(){}{}":{
-		"prefix":"matrixput",
-		"body":[
-			"\\matrixput(${4:x},${5:y})(${6:Δx1},${7:Δy1}){${1:n1}}(${8:Δx2},${9:Δy2}){${2:n2}}{${3:object}}"
-		]
-	},
-
-
-	"grid()()":{
-		"prefix":"grid",
-		"body":[
-			"\\grid(${1:width},${2:height})(${3:Δwidth},${4:Δheight})"
-		]
-	},
-
-
-	"dashlinestretch":{
-		"prefix":"dashlinestretch",
-		"body":[
-			"\\dashlinestretch"
-		]
-	},
-
-
-	"drawlinestretch":{
-		"prefix":"drawlinestretch",
-		"body":[
-			"\\drawlinestretch"
-		]
-	},
-
-
-	"lineslope":{
-		"prefix":"lineslope",
-		"body":[
-			"\\lineslope"
-		]
-	},
-
-
-	"jput(){}":{
-		"prefix":"jput",
-		"body":[
-			"\\jput(${2:x},${3:y}){${1:object}}"
-		]
-	},
-
-
-	"picsquare":{
-		"prefix":"picsquare",
-		"body":[
-			"\\picsquare"
-		]
-	},
-
-
-	"putfile{}{}":{
-		"prefix":"putfile",
-		"body":[
-			"\\putfile{${1:file}}{${2:object}}"
-		]
-	},
-
-
-	"sqrtandstuff{}{}{}":{
-		"prefix":"sqrtandstuff",
-		"body":[
-			"\\sqrtandstuff{${1:Δx}}{${2:Δy}}{${3:dotgap}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,35 @@
 		"prefix":"multiputlist",
 		"body":[
 			"\\multiputlist(${3:x},${4:y})(${5:Δx},${6:Δy})[${2:pos}]{${1:item1,item2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lopoff":{
+		"prefix":"lopoff",
+		"body":[
+			"\\lopoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixput()(){}(){}{}":{
+		"prefix":"matrixput",
+		"body":[
+			"\\matrixput(${4:x},${5:y})(${6:Δx1},${7:Δy1}){${1:n1}}(${8:Δx2},${9:Δy2}){${2:n2}}{${3:object}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grid()()":{
+		"prefix":"grid",
+		"body":[
+			"\\grid(${1:width},${2:height})(${3:Δwidth},${4:Δheight})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,27 +50,137 @@
 		"prefix":"grid",
 		"body":[
 			"\\grid(${2:width},${3:height})(${4:Δwidth},${5:Δheight})[${1:x0,y0}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"dottedjoin":{
+	"dashlinestretch":{
+		"prefix":"dashlinestretch",
+		"body":[
+			"\\dashlinestretch"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawlinestretch":{
+		"prefix":"drawlinestretch",
+		"body":[
+			"\\drawlinestretch"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lineslope":{
+		"prefix":"lineslope",
+		"body":[
+			"\\lineslope"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"jput(){}":{
+		"prefix":"jput",
+		"body":[
+			"\\jput(${2:x},${3:y}){${1:object}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"picsquare":{
+		"prefix":"picsquare",
+		"body":[
+			"\\picsquare"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"putfile{}{}":{
+		"prefix":"putfile",
+		"body":[
+			"\\putfile{${1:file}}{${2:object}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sqrtandstuff{}{}{}":{
+		"prefix":"sqrtandstuff",
+		"body":[
+			"\\sqrtandstuff{${1:Δx}}{${2:Δy}}{${3:dotgap}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dottedjoin{}":{
 		"prefix":"dottedjoin",
 		"body":[
 			"\\begin{dottedjoin}",
-				"\t$1",
+				"\t{${1:dotgap}}",
 			"\\end{dottedjoin}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dashjoin":{
+	"dottedjoin[]{}":{
+		"prefix":"dottedjoin",
+		"body":[
+			"\\begin{dottedjoin}",
+				"\t[${2:character}]{${1:dotgap}}",
+			"\\end{dottedjoin}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dashjoin{}":{
 		"prefix":"dashjoin",
 		"body":[
 			"\\begin{dashjoin}",
-				"\t$1",
+				"\t{${1:dashlength}}",
 			"\\end{dashjoin}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dashjoin{}[]":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t{${1:dashlength}}[${2:dashgap}]",
+			"\\end{dashjoin}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dashjoin[]{}":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t[${2:stretch}]{${1:dashlength}}",
+			"\\end{dashjoin}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dashjoin[]{}[]":{
+		"prefix":"dashjoin",
+		"body":[
+			"\\begin{dashjoin}",
+				"\t[${2:stretch}]{${1:dashlength}}[${3:dashgap}]",
+			"\\end{dashjoin}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -131,56 +190,18 @@
 			"\\begin{drawjoin}",
 				"\t$1",
 			"\\end{drawjoin}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dottedjoin":{
-		"prefix":"dottedjoin",
-		"body":[
-			"\\begin{dottedjoin}",
-				"\t$1",
-			"\\end{dottedjoin}"
-		]
-	},
-
-
-	"dashjoin":{
-		"prefix":"dashjoin",
-		"body":[
-			"\\begin{dashjoin}",
-				"\t$1",
-			"\\end{dashjoin}"
-		]
-	},
-
-
-	"dashjoin":{
-		"prefix":"dashjoin",
-		"body":[
-			"\\begin{dashjoin}",
-				"\t$1",
-			"\\end{dashjoin}"
-		]
-	},
-
-
-	"dashjoin":{
-		"prefix":"dashjoin",
-		"body":[
-			"\\begin{dashjoin}",
-				"\t$1",
-			"\\end{dashjoin}"
-		]
-	},
-
-
-	"drawjoin":{
+	"drawjoin[]":{
 		"prefix":"drawjoin",
 		"body":[
 			"\\begin{drawjoin}",
-				"\t$1",
+				"\t[${1:stretch}]",
 			"\\end{drawjoin}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

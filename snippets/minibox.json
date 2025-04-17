@@ -5,15 +5,8 @@
 		"prefix":"minibox",
 		"body":[
 			"\\minibox{${1:text}}"
-		]
-	},
-
-
-	"miniboxsetup{}":{
-		"prefix":"miniboxsetup",
-		"body":[
-			"\\miniboxsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"minibox",
 		"body":[
 			"\\minibox[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"miniboxsetup{}":{
+		"prefix":"miniboxsetup",
+		"body":[
+			"\\miniboxsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

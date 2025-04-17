@@ -5,7 +5,8 @@
 		"prefix":"Rtilde",
 		"body":[
 			"\\Rtilde"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Rcmd",
 		"body":[
 			"\\Rcmd{${1:R command%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,63 +23,8 @@
 		"prefix":"Rvalue",
 		"body":[
 			"\\Rvalue{${1:expr}}"
-		]
-	},
-
-
-	"Rtable{}{}":{
-		"prefix":"Rtable",
-		"body":[
-			"\\Rtable{${1:col1,col2,...%definition}}{${2:number of rows}}"
-		]
-	},
-
-
-	"Rset{}{}":{
-		"prefix":"Rset",
-		"body":[
-			"\\Rset{${1:variable}}{${2:expr}}"
-		]
-	},
-
-
-	"Rcode{}":{
-		"prefix":"Rcode",
-		"body":[
-			"\\Rcode{${1:R code%definition}}"
-		]
-	},
-
-
-	"Rvalue*{}":{
-		"prefix":"*Rvalue",
-		"body":[
-			"\\Rvalue*{${1:expr}}"
-		]
-	},
-
-
-	"Rvalue*[]{}":{
-		"prefix":"*Rvalue",
-		"body":[
-			"\\Rvalue*[${2:sig figs}]{${1:expr}}"
-		]
-	},
-
-
-	"Rset*{}{}":{
-		"prefix":"*Rset",
-		"body":[
-			"\\Rset*{${1:variable}}{${2:expr}}"
-		]
-	},
-
-
-	"Rset*[]{}{}":{
-		"prefix":"*Rset",
-		"body":[
-			"\\Rset*[${3:sig figs}]{${1:variable}}{${2:expr}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +32,44 @@
 		"prefix":"Rvalue",
 		"body":[
 			"\\Rvalue[${2:sig figs}]{${1:expr}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rvalue*{}":{
+		"prefix":"*Rvalue",
+		"body":[
+			"\\Rvalue*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Rvalue*[]{}":{
+		"prefix":"*Rvalue",
+		"body":[
+			"\\Rvalue*[${2:sig figs}]{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Rtable{}{}":{
+		"prefix":"Rtable",
+		"body":[
+			"\\Rtable{${1:col1,col2,...%definition}}{${2:number of rows}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Rset{}{}":{
+		"prefix":"Rset",
+		"body":[
+			"\\Rset{${1:variable}}{${2:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,6 +77,34 @@
 		"prefix":"Rset",
 		"body":[
 			"\\Rset[${3:sig figs}]{${1:variable}}{${2:expr}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rset*{}{}":{
+		"prefix":"*Rset",
+		"body":[
+			"\\Rset*{${1:variable}}{${2:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Rset*[]{}{}":{
+		"prefix":"*Rset",
+		"body":[
+			"\\Rset*[${3:sig figs}]{${1:variable}}{${2:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Rcode{}":{
+		"prefix":"Rcode",
+		"body":[
+			"\\Rcode{${1:R code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

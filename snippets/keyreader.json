@@ -5,167 +5,8 @@
 		"prefix":"krddefinekeys",
 		"body":[
 			"\\krddefinekeys{${1:kfamily}}{${2:keylist%plain}}"
-		]
-	},
-
-
-	"krdsetkeys{}{}":{
-		"prefix":"krdsetkeys",
-		"body":[
-			"\\krdsetkeys{${1:families}}{${2:keyvals}}"
-		]
-	},
-
-
-	"krdsetrmkeys{}":{
-		"prefix":"krdsetrmkeys",
-		"body":[
-			"\\krdsetrmkeys{${1:families}}"
-		]
-	},
-
-
-	"krdpresetkeys{}{}":{
-		"prefix":"krdpresetkeys",
-		"body":[
-			"\\krdpresetkeys{${1:family}}{${2:head keys}}"
-		]
-	},
-
-
-	"krdpostsetkeys{}{}":{
-		"prefix":"krdpostsetkeys",
-		"body":[
-			"\\krdpostsetkeys{${1:family}}{${2:tail keys}}"
-		]
-	},
-
-
-	"krddisablekeys{}{}":{
-		"prefix":"krddisablekeys",
-		"body":[
-			"\\krddisablekeys{${1:family}}{${2:keys}}"
-		]
-	},
-
-
-	"krdDeclareOption{}{}":{
-		"prefix":"krdDeclareOption",
-		"body":[
-			"\\krdDeclareOption{${1:key%plain}}{${2:function}}"
-		]
-	},
-
-
-	"krdExecuteOptions{}":{
-		"prefix":"krdExecuteOptions",
-		"body":[
-			"\\krdExecuteOptions{${1:keyvals}}"
-		]
-	},
-
-
-	"krdProcessOptions":{
-		"prefix":"krdProcessOptions",
-		"body":[
-			"\\krdProcessOptions"
-		]
-	},
-
-
-	"savevaluekeys{}{}":{
-		"prefix":"savevaluekeys",
-		"body":[
-			"\\savevaluekeys{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"krddefinekeys*{}{}":{
-		"prefix":"*krddefinekeys",
-		"body":[
-			"\\krddefinekeys*{${1:kfamily}}{${2:keylist%plain}}"
-		]
-	},
-
-
-	"krddefinekeys*{}[]{}":{
-		"prefix":"*krddefinekeys",
-		"body":[
-			"\\krddefinekeys*{${1:kfamily}}[${3:mprefix}]{${2:keylist%plain}}"
-		]
-	},
-
-
-	"krddefinekeys*[]{}{}":{
-		"prefix":"*krddefinekeys",
-		"body":[
-			"\\krddefinekeys*[${3:kprefix}]{${1:kfamily}}{${2:keylist%plain}}"
-		]
-	},
-
-
-	"krddefinekeys*[]{}[]{}":{
-		"prefix":"*krddefinekeys",
-		"body":[
-			"\\krddefinekeys*[${3:kprefix}]{${1:kfamily}}[${4:mprefix}]{${2:keylist%plain}}"
-		]
-	},
-
-
-	"krdsetkeys*{}{}":{
-		"prefix":"*krdsetkeys",
-		"body":[
-			"\\krdsetkeys*{${1:families}}{${2:keyvals}}"
-		]
-	},
-
-
-	"krdsetkeys*[]{}[]{}":{
-		"prefix":"*krdsetkeys",
-		"body":[
-			"\\krdsetkeys*[${3:kprefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
-	},
-
-
-	"krdsetrmkeys*{}":{
-		"prefix":"*krdsetrmkeys",
-		"body":[
-			"\\krdsetrmkeys*{${1:families}}"
-		]
-	},
-
-
-	"krdsetrmkeys*[]{}[]":{
-		"prefix":"*krdsetrmkeys",
-		"body":[
-			"\\krdsetrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
-	},
-
-
-	"krdDeclareOption*{}":{
-		"prefix":"*krdDeclareOption",
-		"body":[
-			"\\krdDeclareOption*{${1:function}}"
-		]
-	},
-
-
-	"krdProcessOptions*":{
-		"prefix":"*krdProcessOptions",
-		"body":[
-			"\\krdProcessOptions*"
-		]
-	},
-
-
-	"krdProcessOptions*[]<>[]":{
-		"prefix":"*krdProcessOptions",
-		"body":[
-			"\\krdProcessOptions*[${1:prefix}]<${3:families}>[${2:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +14,8 @@
 		"prefix":"krddefinekeys",
 		"body":[
 			"\\krddefinekeys{${1:kfamily}}[${3:mprefix}]{${2:keylist%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +23,8 @@
 		"prefix":"krddefinekeys",
 		"body":[
 			"\\krddefinekeys[${3:kprefix}]{${1:kfamily}}{${2:keylist%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +32,53 @@
 		"prefix":"krddefinekeys",
 		"body":[
 			"\\krddefinekeys[${3:kprefix}]{${1:kfamily}}[${4:mprefix}]{${2:keylist%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krddefinekeys*{}{}":{
+		"prefix":"*krddefinekeys",
+		"body":[
+			"\\krddefinekeys*{${1:kfamily}}{${2:keylist%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krddefinekeys*{}[]{}":{
+		"prefix":"*krddefinekeys",
+		"body":[
+			"\\krddefinekeys*{${1:kfamily}}[${3:mprefix}]{${2:keylist%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krddefinekeys*[]{}{}":{
+		"prefix":"*krddefinekeys",
+		"body":[
+			"\\krddefinekeys*[${3:kprefix}]{${1:kfamily}}{${2:keylist%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krddefinekeys*[]{}[]{}":{
+		"prefix":"*krddefinekeys",
+		"body":[
+			"\\krddefinekeys*[${3:kprefix}]{${1:kfamily}}[${4:mprefix}]{${2:keylist%plain}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdsetkeys{}{}":{
+		"prefix":"krdsetkeys",
+		"body":[
+			"\\krdsetkeys{${1:families}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +86,35 @@
 		"prefix":"krdsetkeys",
 		"body":[
 			"\\krdsetkeys[${3:kprefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdsetkeys*{}{}":{
+		"prefix":"*krdsetkeys",
+		"body":[
+			"\\krdsetkeys*{${1:families}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdsetkeys*[]{}[]{}":{
+		"prefix":"*krdsetkeys",
+		"body":[
+			"\\krdsetkeys*[${3:kprefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdsetrmkeys{}":{
+		"prefix":"krdsetrmkeys",
+		"body":[
+			"\\krdsetrmkeys{${1:families}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +122,35 @@
 		"prefix":"krdsetrmkeys",
 		"body":[
 			"\\krdsetrmkeys[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdsetrmkeys*{}":{
+		"prefix":"*krdsetrmkeys",
+		"body":[
+			"\\krdsetrmkeys*{${1:families}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdsetrmkeys*[]{}[]":{
+		"prefix":"*krdsetrmkeys",
+		"body":[
+			"\\krdsetrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdpresetkeys{}{}":{
+		"prefix":"krdpresetkeys",
+		"body":[
+			"\\krdpresetkeys{${1:family}}{${2:head keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +158,17 @@
 		"prefix":"krdpresetkeys",
 		"body":[
 			"\\krdpresetkeys[${3:prefix}]{${1:family}}{${2:head keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdpostsetkeys{}{}":{
+		"prefix":"krdpostsetkeys",
+		"body":[
+			"\\krdpostsetkeys{${1:family}}{${2:tail keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +176,17 @@
 		"prefix":"krdpostsetkeys",
 		"body":[
 			"\\krdpostsetkeys[${3:prefix}]{${1:family}}{${2:tail keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krddisablekeys{}{}":{
+		"prefix":"krddisablekeys",
+		"body":[
+			"\\krddisablekeys{${1:family}}{${2:keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +194,17 @@
 		"prefix":"krddisablekeys",
 		"body":[
 			"\\krddisablekeys[${3:prefix}]{${1:family}}{${2:keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdDeclareOption{}{}":{
+		"prefix":"krdDeclareOption",
+		"body":[
+			"\\krdDeclareOption{${1:key%plain}}{${2:function}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +212,26 @@
 		"prefix":"krdDeclareOption",
 		"body":[
 			"\\krdDeclareOption[${3:prefix}]<${5:family}>{${1:key%plain}}[${4:default}]{${2:function}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdDeclareOption*{}":{
+		"prefix":"*krdDeclareOption",
+		"body":[
+			"\\krdDeclareOption*{${1:function}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdExecuteOptions{}":{
+		"prefix":"krdExecuteOptions",
+		"body":[
+			"\\krdExecuteOptions{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +239,17 @@
 		"prefix":"krdExecuteOptions",
 		"body":[
 			"\\krdExecuteOptions[${2:prefix}]<${4:families}>[${3:ignored keys}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdProcessOptions":{
+		"prefix":"krdProcessOptions",
+		"body":[
+			"\\krdProcessOptions"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +257,35 @@
 		"prefix":"krdProcessOptions",
 		"body":[
 			"\\krdProcessOptions[${1:prefix}]<${3:families}>[${2:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"krdProcessOptions*":{
+		"prefix":"*krdProcessOptions",
+		"body":[
+			"\\krdProcessOptions*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"krdProcessOptions*[]<>[]":{
+		"prefix":"*krdProcessOptions",
+		"body":[
+			"\\krdProcessOptions*[${1:prefix}]<${3:families}>[${2:ignored keys}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"savevaluekeys{}{}":{
+		"prefix":"savevaluekeys",
+		"body":[
+			"\\savevaluekeys{${1:family}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,6 +293,7 @@
 		"prefix":"savevaluekeys",
 		"body":[
 			"\\savevaluekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

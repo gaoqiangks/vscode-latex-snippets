@@ -5,55 +5,8 @@
 		"prefix":"sparkbottomline",
 		"body":[
 			"\\sparkbottomline"
-		]
-	},
-
-
-	"sparklinethickness":{
-		"prefix":"sparklinethickness",
-		"body":[
-			"\\sparklinethickness"
-		]
-	},
-
-
-	"sparkdotwidth":{
-		"prefix":"sparkdotwidth",
-		"body":[
-			"\\sparkdotwidth"
-		]
-	},
-
-
-	"sparkspikewidth":{
-		"prefix":"sparkspikewidth",
-		"body":[
-			"\\sparkspikewidth"
-		]
-	},
-
-
-	"sparkbottomlinethickness":{
-		"prefix":"sparkbottomlinethickness",
-		"body":[
-			"\\sparkbottomlinethickness"
-		]
-	},
-
-
-	"sparklineclipsep":{
-		"prefix":"sparklineclipsep",
-		"body":[
-			"\\sparklineclipsep"
-		]
-	},
-
-
-	"sparklineheight":{
-		"prefix":"sparklineheight",
-		"body":[
-			"\\sparklineheight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,16 +14,72 @@
 		"prefix":"sparkbottomline",
 		"body":[
 			"\\sparkbottomline[${1:length%plain}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"sparkline":{
+	"sparklinethickness":{
+		"prefix":"sparklinethickness",
+		"body":[
+			"\\sparklinethickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparkdotwidth":{
+		"prefix":"sparkdotwidth",
+		"body":[
+			"\\sparkdotwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparkspikewidth":{
+		"prefix":"sparkspikewidth",
+		"body":[
+			"\\sparkspikewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparkbottomlinethickness":{
+		"prefix":"sparkbottomlinethickness",
+		"body":[
+			"\\sparkbottomlinethickness"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparklineclipsep":{
+		"prefix":"sparklineclipsep",
+		"body":[
+			"\\sparklineclipsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparklineheight":{
+		"prefix":"sparklineheight",
+		"body":[
+			"\\sparklineheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sparkline{}":{
 		"prefix":"sparkline",
 		"body":[
 			"\\begin{sparkline}",
-				"\t$1",
+				"\t{${1:width%plain}}",
 			"\\end{sparkline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

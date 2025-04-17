@@ -5,7 +5,8 @@
 		"prefix":"topI",
 		"body":[
 			"\\topI"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"endtopI",
 		"body":[
 			"\\endtopI"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"topII",
 		"body":[
 			"\\topII"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"endtopII",
 		"body":[
 			"\\endtopII"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,15 +41,8 @@
 		"prefix":"tabcap",
 		"body":[
 			"\\tabcap{${1:text}}"
-		]
-	},
-
-
-	"figcap{}":{
-		"prefix":"figcap",
-		"body":[
-			"\\figcap{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"tabcap",
 		"body":[
 			"\\tabcap[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"figcap{}":{
+		"prefix":"figcap",
+		"body":[
+			"\\figcap{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,16 +68,18 @@
 		"prefix":"figcap",
 		"body":[
 			"\\figcap[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"topfloat":{
+	"topfloat{}":{
 		"prefix":"topfloat",
 		"body":[
 			"\\begin{topfloat}",
-				"\t$1",
+				"\t{${1:number}}",
 			"\\end{topfloat}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

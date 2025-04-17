@@ -5,7 +5,8 @@
 		"prefix":"turnbox",
 		"body":[
 			"\\turnbox{${1:angle}}{${2:contents}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"rotFPtop",
 		"body":[
 			"\\rotFPtop"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"rotFPbot",
 		"body":[
 			"\\rotFPbot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,47 +34,8 @@
 			"\\begin{sidewaystable}",
 				"\t$1",
 			"\\end{sidewaystable}"
-		]
-	},
-
-
-	"sidewaysfigure":{
-		"prefix":"sidewaysfigure",
-		"body":[
-			"\\begin{sidewaysfigure}",
-				"\t$1",
-			"\\end{sidewaysfigure}"
-		]
-	},
-
-
-	"sideways":{
-		"prefix":"sideways",
-		"body":[
-			"\\begin{sideways}",
-				"\t$1",
-			"\\end{sideways}"
-		]
-	},
-
-
-	"turn":{
-		"prefix":"turn",
-		"body":[
-			"\\begin{turn}",
-				"\t$1",
-			"\\end{turn}"
-		]
-	},
-
-
-	"rotate":{
-		"prefix":"rotate",
-		"body":[
-			"\\begin{rotate}",
-				"\t$1",
-			"\\end{rotate}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -81,7 +45,19 @@
 			"\\begin{sidewaystable*}",
 				"\t$1",
 			"\\end{sidewaystable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sidewaysfigure":{
+		"prefix":"sidewaysfigure",
+		"body":[
+			"\\begin{sidewaysfigure}",
+				"\t$1",
+			"\\end{sidewaysfigure}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -91,6 +67,40 @@
 			"\\begin{sidewaysfigure*}",
 				"\t$1",
 			"\\end{sidewaysfigure*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sideways":{
+		"prefix":"sideways",
+		"body":[
+			"\\begin{sideways}",
+				"\t$1",
+			"\\end{sideways}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"turn{}":{
+		"prefix":"turn",
+		"body":[
+			"\\begin{turn}",
+				"\t{${1:angle}}",
+			"\\end{turn}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rotate{}":{
+		"prefix":"rotate",
+		"body":[
+			"\\begin{rotate}",
+				"\t{${1:angle}}",
+			"\\end{rotate}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

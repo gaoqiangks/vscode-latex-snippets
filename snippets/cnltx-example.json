@@ -5,7 +5,8 @@
 		"prefix":"code",
 		"body":[
 			"\\code{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"verbcode",
 		"body":[
 			"\\verbcode|${1:text}|"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,383 +23,8 @@
 		"prefix":"cs",
 		"body":[
 			"\\cs{${1:name}}"
-		]
-	},
-
-
-	"csidx{}":{
-		"prefix":"csidx",
-		"body":[
-			"\\csidx{${1:name}}"
-		]
-	},
-
-
-	"env{}":{
-		"prefix":"env",
-		"body":[
-			"\\env{${1:name}}"
-		]
-	},
-
-
-	"envidx{}":{
-		"prefix":"envidx",
-		"body":[
-			"\\envidx{${1:name}}"
-		]
-	},
-
-
-	"beginend{}":{
-		"prefix":"beginend",
-		"body":[
-			"\\beginend{${1:text}}"
-		]
-	},
-
-
-	"beginenv":{
-		"prefix":"beginenv",
-		"body":[
-			"\\beginenv"
-		]
-	},
-
-
-	"endenv":{
-		"prefix":"endenv",
-		"body":[
-			"\\endenv"
-		]
-	},
-
-
-	"meta{}":{
-		"prefix":"meta",
-		"body":[
-			"\\meta{${1:meta}}"
-		]
-	},
-
-
-	"marg{}":{
-		"prefix":"marg",
-		"body":[
-			"\\marg{${1:arg}}"
-		]
-	},
-
-
-	"Marg{}":{
-		"prefix":"Marg",
-		"body":[
-			"\\Marg{${1:arg}}"
-		]
-	},
-
-
-	"oarg{}":{
-		"prefix":"oarg",
-		"body":[
-			"\\oarg{${1:arg}}"
-		]
-	},
-
-
-	"Oarg{}":{
-		"prefix":"Oarg",
-		"body":[
-			"\\Oarg{${1:arg}}"
-		]
-	},
-
-
-	"darg{}":{
-		"prefix":"darg",
-		"body":[
-			"\\darg{${1:arg}}"
-		]
-	},
-
-
-	"Darg{}":{
-		"prefix":"Darg",
-		"body":[
-			"\\Darg{${1:arg}}"
-		]
-	},
-
-
-	"sarg":{
-		"prefix":"sarg",
-		"body":[
-			"\\sarg"
-		]
-	},
-
-
-	"newarg{}{}{}":{
-		"prefix":"newarg",
-		"body":[
-			"\\newarg{${1:cmd}}{${2:left delim}}{${3:right delim}}"
-		]
-	},
-
-
-	"option{}":{
-		"prefix":"option",
-		"body":[
-			"\\option{${1:name}}"
-		]
-	},
-
-
-	"optionidx{}":{
-		"prefix":"optionidx",
-		"body":[
-			"\\optionidx{${1:name}}"
-		]
-	},
-
-
-	"module{}":{
-		"prefix":"module",
-		"body":[
-			"\\module{${1:name}}"
-		]
-	},
-
-
-	"moduleidx{}":{
-		"prefix":"moduleidx",
-		"body":[
-			"\\moduleidx{${1:name}}"
-		]
-	},
-
-
-	"key{}{}":{
-		"prefix":"key",
-		"body":[
-			"\\key{${1:name}}{${2:value}}"
-		]
-	},
-
-
-	"keyis{}{}":{
-		"prefix":"keyis",
-		"body":[
-			"\\keyis{${1:name}}{${2:value}}"
-		]
-	},
-
-
-	"choices{}":{
-		"prefix":"choices",
-		"body":[
-			"\\choices{${1:list of choices}}"
-		]
-	},
-
-
-	"choicekey{}{}":{
-		"prefix":"choicekey",
-		"body":[
-			"\\choicekey{${1:name}}{${2:list of choices}}"
-		]
-	},
-
-
-	"boolkey{}":{
-		"prefix":"boolkey",
-		"body":[
-			"\\boolkey{${1:name}}"
-		]
-	},
-
-
-	"default{}":{
-		"prefix":"default",
-		"body":[
-			"\\default{${1:value}}"
-		]
-	},
-
-
-	"pkg{}":{
-		"prefix":"pkg",
-		"body":[
-			"\\pkg{${1:package}}"
-		]
-	},
-
-
-	"pkgidx{}":{
-		"prefix":"pkgidx",
-		"body":[
-			"\\pkgidx{${1:package}}"
-		]
-	},
-
-
-	"cls{}":{
-		"prefix":"cls",
-		"body":[
-			"\\cls{${1:class}}"
-		]
-	},
-
-
-	"clsidx{}":{
-		"prefix":"clsidx",
-		"body":[
-			"\\clsidx{${1:class}}"
-		]
-	},
-
-
-	"bnd{}":{
-		"prefix":"bnd",
-		"body":[
-			"\\bnd{${1:bundle}}"
-		]
-	},
-
-
-	"bnd{}":{
-		"prefix":"bnd",
-		"body":[
-			"\\bnd{${1:bundle}}"
-		]
-	},
-
-
-	"inputexample{}":{
-		"prefix":"inputexample",
-		"body":[
-			"\\inputexample{${1:file}}"
-		]
-	},
-
-
-	"inputsidebyside{}":{
-		"prefix":"inputsidebyside",
-		"body":[
-			"\\inputsidebyside{${1:file}}"
-		]
-	},
-
-
-	"inputsourcecode{}":{
-		"prefix":"inputsourcecode",
-		"body":[
-			"\\inputsourcecode{${1:file}}"
-		]
-	},
-
-
-	"implementation{}":{
-		"prefix":"implementation",
-		"body":[
-			"\\implementation{${1:file}}"
-		]
-	},
-
-
-	"newinputsourcefilecmd{}":{
-		"prefix":"newinputsourcefilecmd",
-		"body":[
-			"\\newinputsourcefilecmd{${1:cmd}}"
-		]
-	},
-
-
-	"newsourcecodeenv{}":{
-		"prefix":"newsourcecodeenv",
-		"body":[
-			"\\newsourcecodeenv{${1:envname}}"
-		]
-	},
-
-
-	"codefont":{
-		"prefix":"codefont",
-		"body":[
-			"\\codefont"
-		]
-	},
-
-
-	"sourceformat":{
-		"prefix":"sourceformat",
-		"body":[
-			"\\sourceformat"
-		]
-	},
-
-
-	"exampleformat":{
-		"prefix":"exampleformat",
-		"body":[
-			"\\exampleformat"
-		]
-	},
-
-
-	"versionnoteformat":{
-		"prefix":"versionnoteformat",
-		"body":[
-			"\\versionnoteformat"
-		]
-	},
-
-
-	"packageformat":{
-		"prefix":"packageformat",
-		"body":[
-			"\\packageformat"
-		]
-	},
-
-
-	"classformat":{
-		"prefix":"classformat",
-		"body":[
-			"\\classformat"
-		]
-	},
-
-
-	"argumentformat":{
-		"prefix":"argumentformat",
-		"body":[
-			"\\argumentformat"
-		]
-	},
-
-
-	"indexcs{}":{
-		"prefix":"indexcs",
-		"body":[
-			"\\indexcs{${1:name}}"
-		]
-	},
-
-
-	"indexenv{}":{
-		"prefix":"indexenv",
-		"body":[
-			"\\indexenv{${1:name}}"
-		]
-	},
-
-
-	"MakePercentComment":{
-		"prefix":"MakePercentComment",
-		"body":[
-			"\\MakePercentComment"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -405,7 +32,26 @@
 		"prefix":"*cs",
 		"body":[
 			"\\cs*{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"csidx{}":{
+		"prefix":"csidx",
+		"body":[
+			"\\csidx{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"env{}":{
+		"prefix":"env",
+		"body":[
+			"\\env{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,7 +59,35 @@
 		"prefix":"*env",
 		"body":[
 			"\\env*{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"envidx{}":{
+		"prefix":"envidx",
+		"body":[
+			"\\envidx{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beginend{}":{
+		"prefix":"beginend",
+		"body":[
+			"\\beginend{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beginenv":{
+		"prefix":"beginenv",
+		"body":[
+			"\\beginenv"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +95,17 @@
 		"prefix":"*beginenv",
 		"body":[
 			"\\beginenv*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"endenv":{
+		"prefix":"endenv",
+		"body":[
+			"\\endenv"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -429,63 +113,89 @@
 		"prefix":"*endenv",
 		"body":[
 			"\\endenv*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"option*{}":{
-		"prefix":"*option",
+	"meta{}":{
+		"prefix":"meta",
 		"body":[
-			"\\option*{${1:name}}"
-		]
+			"\\meta{${1:meta}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"module*{}":{
-		"prefix":"*module",
+	"marg{}":{
+		"prefix":"marg",
 		"body":[
-			"\\module*{${1:name}}"
-		]
+			"\\marg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"key*{}{}":{
-		"prefix":"*key",
+	"Marg{}":{
+		"prefix":"Marg",
 		"body":[
-			"\\key*{${1:name}}{${2:value}}"
-		]
+			"\\Marg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"keyis*{}{}":{
-		"prefix":"*keyis",
+	"oarg{}":{
+		"prefix":"oarg",
 		"body":[
-			"\\keyis*{${1:name}}{${2:value}}"
-		]
+			"\\oarg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pkg*{}":{
-		"prefix":"*pkg",
+	"Oarg{}":{
+		"prefix":"Oarg",
 		"body":[
-			"\\pkg*{${1:package}}"
-		]
+			"\\Oarg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"cls*{}":{
-		"prefix":"*cls",
+	"darg{}":{
+		"prefix":"darg",
 		"body":[
-			"\\cls*{${1:class}}"
-		]
+			"\\darg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bnd*{}":{
-		"prefix":"*bnd",
+	"Darg{}":{
+		"prefix":"Darg",
 		"body":[
-			"\\bnd*{${1:bundle}}"
-		]
+			"\\Darg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sarg":{
+		"prefix":"sarg",
+		"body":[
+			"\\sarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newarg{}{}{}":{
+		"prefix":"newarg",
+		"body":[
+			"\\newarg{${1:cmd}}{${2:left delim}}{${3:right delim}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +203,224 @@
 		"prefix":"newarg",
 		"body":[
 			"\\newarg[${4:formatting}]{${1:cmd}}{${2:left delim}}{${3:right delim}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"option{}":{
+		"prefix":"option",
+		"body":[
+			"\\option{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"option*{}":{
+		"prefix":"*option",
+		"body":[
+			"\\option*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"optionidx{}":{
+		"prefix":"optionidx",
+		"body":[
+			"\\optionidx{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"module{}":{
+		"prefix":"module",
+		"body":[
+			"\\module{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"module*{}":{
+		"prefix":"*module",
+		"body":[
+			"\\module*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"moduleidx{}":{
+		"prefix":"moduleidx",
+		"body":[
+			"\\moduleidx{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"key{}{}":{
+		"prefix":"key",
+		"body":[
+			"\\key{${1:name}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"key*{}{}":{
+		"prefix":"*key",
+		"body":[
+			"\\key*{${1:name}}{${2:value}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"keyis{}{}":{
+		"prefix":"keyis",
+		"body":[
+			"\\keyis{${1:name}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keyis*{}{}":{
+		"prefix":"*keyis",
+		"body":[
+			"\\keyis*{${1:name}}{${2:value}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"choices{}":{
+		"prefix":"choices",
+		"body":[
+			"\\choices{${1:list of choices}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"choicekey{}{}":{
+		"prefix":"choicekey",
+		"body":[
+			"\\choicekey{${1:name}}{${2:list of choices}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boolkey{}":{
+		"prefix":"boolkey",
+		"body":[
+			"\\boolkey{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"default{}":{
+		"prefix":"default",
+		"body":[
+			"\\default{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pkg{}":{
+		"prefix":"pkg",
+		"body":[
+			"\\pkg{${1:package}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pkg*{}":{
+		"prefix":"*pkg",
+		"body":[
+			"\\pkg*{${1:package}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pkgidx{}":{
+		"prefix":"pkgidx",
+		"body":[
+			"\\pkgidx{${1:package}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cls{}":{
+		"prefix":"cls",
+		"body":[
+			"\\cls{${1:class}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cls*{}":{
+		"prefix":"*cls",
+		"body":[
+			"\\cls*{${1:class}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"clsidx{}":{
+		"prefix":"clsidx",
+		"body":[
+			"\\clsidx{${1:class}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnd{}":{
+		"prefix":"bnd",
+		"body":[
+			"\\bnd{${1:bundle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bnd*{}":{
+		"prefix":"*bnd",
+		"body":[
+			"\\bnd*{${1:bundle}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bnd{}":{
+		"prefix":"bnd",
+		"body":[
+			"\\bnd{${1:bundle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inputexample{}":{
+		"prefix":"inputexample",
+		"body":[
+			"\\inputexample{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +428,17 @@
 		"prefix":"inputexample",
 		"body":[
 			"\\inputexample[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputsidebyside{}":{
+		"prefix":"inputsidebyside",
+		"body":[
+			"\\inputsidebyside{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +446,17 @@
 		"prefix":"inputsidebyside",
 		"body":[
 			"\\inputsidebyside[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputsourcecode{}":{
+		"prefix":"inputsourcecode",
+		"body":[
+			"\\inputsourcecode{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +464,17 @@
 		"prefix":"inputsourcecode",
 		"body":[
 			"\\inputsourcecode[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"implementation{}":{
+		"prefix":"implementation",
+		"body":[
+			"\\implementation{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +482,17 @@
 		"prefix":"implementation",
 		"body":[
 			"\\implementation[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newinputsourcefilecmd{}":{
+		"prefix":"newinputsourcefilecmd",
+		"body":[
+			"\\newinputsourcefilecmd{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +500,17 @@
 		"prefix":"newinputsourcefilecmd",
 		"body":[
 			"\\newinputsourcefilecmd[${2:options%keyvals}]{${1:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newsourcecodeenv{}":{
+		"prefix":"newsourcecodeenv",
+		"body":[
+			"\\newsourcecodeenv{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +518,98 @@
 		"prefix":"newsourcecodeenv",
 		"body":[
 			"\\newsourcecodeenv[${2:options%keyvals}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"codefont":{
+		"prefix":"codefont",
+		"body":[
+			"\\codefont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sourceformat":{
+		"prefix":"sourceformat",
+		"body":[
+			"\\sourceformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exampleformat":{
+		"prefix":"exampleformat",
+		"body":[
+			"\\exampleformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"versionnoteformat":{
+		"prefix":"versionnoteformat",
+		"body":[
+			"\\versionnoteformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"packageformat":{
+		"prefix":"packageformat",
+		"body":[
+			"\\packageformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"classformat":{
+		"prefix":"classformat",
+		"body":[
+			"\\classformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"argumentformat":{
+		"prefix":"argumentformat",
+		"body":[
+			"\\argumentformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexcs{}":{
+		"prefix":"indexcs",
+		"body":[
+			"\\indexcs{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"indexenv{}":{
+		"prefix":"indexenv",
+		"body":[
+			"\\indexenv{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePercentComment":{
+		"prefix":"MakePercentComment",
+		"body":[
+			"\\MakePercentComment"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -551,47 +619,19 @@
 			"\\begin{example}",
 				"\t$1",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sidebyside":{
-		"prefix":"sidebyside",
-		"body":[
-			"\\begin{sidebyside}",
-				"\t$1",
-			"\\end{sidebyside}"
-		]
-	},
-
-
-	"sourcecode":{
-		"prefix":"sourcecode",
-		"body":[
-			"\\begin{sourcecode}",
-				"\t$1",
-			"\\end{sourcecode}"
-		]
-	},
-
-
-	"bash":{
-		"prefix":"bash",
-		"body":[
-			"\\begin{bash}",
-				"\t$1",
-			"\\end{bash}"
-		]
-	},
-
-
-	"example":{
+	"example[]":{
 		"prefix":"example",
 		"body":[
 			"\\begin{example}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{example}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -601,7 +641,19 @@
 			"\\begin{sidebyside}",
 				"\t$1",
 			"\\end{sidebyside}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sidebyside[]":{
+		"prefix":"sidebyside",
+		"body":[
+			"\\begin{sidebyside}",
+				"\t[${1:options%keyvals}]",
+			"\\end{sidebyside}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -611,7 +663,19 @@
 			"\\begin{sourcecode}",
 				"\t$1",
 			"\\end{sourcecode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sourcecode[]":{
+		"prefix":"sourcecode",
+		"body":[
+			"\\begin{sourcecode}",
+				"\t[${1:options%keyvals}]",
+			"\\end{sourcecode}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -621,6 +685,18 @@
 			"\\begin{bash}",
 				"\t$1",
 			"\\end{bash}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bash[]":{
+		"prefix":"bash",
+		"body":[
+			"\\begin{bash}",
+				"\t[${1:options%keyvals}]",
+			"\\end{bash}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

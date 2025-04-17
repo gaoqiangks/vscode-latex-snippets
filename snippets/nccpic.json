@@ -5,7 +5,8 @@
 		"prefix":"ipic",
 		"body":[
 			"\\ipic{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"draftgraphics",
 		"body":[
 			"\\draftgraphics"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"finalgraphics",
 		"body":[
 			"\\finalgraphics"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,15 +32,8 @@
 		"prefix":"putimage",
 		"body":[
 			"\\putimage(${2:x},${3:y}){${1:imagefile}}"
-		]
-	},
-
-
-	"putimage()(){}":{
-		"prefix":"putimage",
-		"body":[
-			"\\putimage(${2:x},${3:y})(${4:xshift},${5:yshift}){${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +41,17 @@
 		"prefix":"putimage",
 		"body":[
 			"\\putimage(${3:x},${4:y})[${2:width,height}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"putimage()(){}":{
+		"prefix":"putimage",
+		"body":[
+			"\\putimage(${2:x},${3:y})(${4:xshift},${5:yshift}){${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +59,7 @@
 		"prefix":"putimage",
 		"body":[
 			"\\putimage(${3:x},${4:y})[${2:width,height}](${5:xshift},${6:yshift}){${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

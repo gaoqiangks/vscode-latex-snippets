@@ -5,7 +5,8 @@
 		"prefix":"bigtimes",
 		"body":[
 			"\\bigtimes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"nuparrow",
 		"body":[
 			"\\nuparrow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,103 +23,8 @@
 		"prefix":"ndownarrow",
 		"body":[
 			"\\ndownarrow"
-		]
-	},
-
-
-	"NewShadedTheorem{}{}":{
-		"prefix":"NewShadedTheorem",
-		"body":[
-			"\\NewShadedTheorem{${1:envname}}{${2:caption}}"
-		]
-	},
-
-
-	"theoremframecommand":{
-		"prefix":"theoremframecommand",
-		"body":[
-			"\\theoremframecommand"
-		]
-	},
-
-
-	"InsertTheoremBreak":{
-		"prefix":"InsertTheoremBreak",
-		"body":[
-			"\\InsertTheoremBreak"
-		]
-	},
-
-
-	"MathIndent":{
-		"prefix":"MathIndent",
-		"body":[
-			"\\MathIndent"
-		]
-	},
-
-
-	"SetMathIndent{}":{
-		"prefix":"SetMathIndent",
-		"body":[
-			"\\SetMathIndent{${1:math code}}"
-		]
-	},
-
-
-	"AddtoMathIndent{}":{
-		"prefix":"AddtoMathIndent",
-		"body":[
-			"\\AddtoMathIndent{${1:math code}}"
-		]
-	},
-
-
-	"PopMathIndent":{
-		"prefix":"PopMathIndent",
-		"body":[
-			"\\PopMathIndent"
-		]
-	},
-
-
-	"DeclareMathSet{}":{
-		"prefix":"DeclareMathSet",
-		"body":[
-			"\\DeclareMathSet{${1:identifier}}"
-		]
-	},
-
-
-	"ProvidePGFPagesFourOnOneWithSpaceForNotes":{
-		"prefix":"ProvidePGFPagesFourOnOneWithSpaceForNotes",
-		"body":[
-			"\\ProvidePGFPagesFourOnOneWithSpaceForNotes"
-		]
-	},
-
-
-	"OverloadUnderscoreInMath":{
-		"prefix":"OverloadUnderscoreInMath",
-		"body":[
-			"\\OverloadUnderscoreInMath"
-		]
-	},
-
-
-	"InsertTheoremBreak*":{
-		"prefix":"*InsertTheoremBreak",
-		"body":[
-			"\\InsertTheoremBreak*"
-		]
-	},
-
-
-	"PopMathIndent*":{
-		"prefix":"*PopMathIndent",
-		"body":[
-			"\\PopMathIndent*"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"NewShadedTheorem",
 		"body":[
 			"\\NewShadedTheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewShadedTheorem{}{}":{
+		"prefix":"NewShadedTheorem",
+		"body":[
+			"\\NewShadedTheorem{${1:envname}}{${2:caption}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,89 @@
 		"prefix":"NewShadedTheorem",
 		"body":[
 			"\\NewShadedTheorem{${1:envname}}{${2:caption}}[${3:within}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"theoremframecommand":{
+		"prefix":"theoremframecommand",
+		"body":[
+			"\\theoremframecommand"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InsertTheoremBreak":{
+		"prefix":"InsertTheoremBreak",
+		"body":[
+			"\\InsertTheoremBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InsertTheoremBreak*":{
+		"prefix":"*InsertTheoremBreak",
+		"body":[
+			"\\InsertTheoremBreak*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MathIndent":{
+		"prefix":"MathIndent",
+		"body":[
+			"\\MathIndent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetMathIndent{}":{
+		"prefix":"SetMathIndent",
+		"body":[
+			"\\SetMathIndent{${1:math code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoMathIndent{}":{
+		"prefix":"AddtoMathIndent",
+		"body":[
+			"\\AddtoMathIndent{${1:math code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PopMathIndent":{
+		"prefix":"PopMathIndent",
+		"body":[
+			"\\PopMathIndent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PopMathIndent*":{
+		"prefix":"*PopMathIndent",
+		"body":[
+			"\\PopMathIndent*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeclareMathSet{}":{
+		"prefix":"DeclareMathSet",
+		"body":[
+			"\\DeclareMathSet{${1:identifier}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,6 +140,25 @@
 		"prefix":"DeclareMathSet",
 		"body":[
 			"\\DeclareMathSet[${2:options%keyvals}]{${1:identifier}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvidePGFPagesFourOnOneWithSpaceForNotes":{
+		"prefix":"ProvidePGFPagesFourOnOneWithSpaceForNotes",
+		"body":[
+			"\\ProvidePGFPagesFourOnOneWithSpaceForNotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OverloadUnderscoreInMath":{
+		"prefix":"OverloadUnderscoreInMath",
+		"body":[
+			"\\OverloadUnderscoreInMath"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

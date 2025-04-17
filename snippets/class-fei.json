@@ -5,7 +5,17 @@
 		"prefix":"GlsSetXdyLanguage",
 		"body":[
 			"\\GlsSetXdyLanguage{${1:language}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyLanguage[]{}":{
+		"prefix":"GlsSetXdyLanguage",
+		"body":[
+			"\\GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -13,7 +23,8 @@
 		"prefix":"GlsSetXdyCodePage",
 		"body":[
 			"\\GlsSetXdyCodePage{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +32,8 @@
 		"prefix":"GlsAddXdyCounters",
 		"body":[
 			"\\GlsAddXdyCounters{${1:counter list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +41,8 @@
 		"prefix":"GlsAddXdyAttribute",
 		"body":[
 			"\\GlsAddXdyAttribute{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +50,17 @@
 		"prefix":"GlsAddXdyLocation",
 		"body":[
 			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyLocation[]{}{}":{
+		"prefix":"GlsAddXdyLocation",
+		"body":[
+			"\\GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +68,8 @@
 		"prefix":"GlsSetXdyLocationClassOrder",
 		"body":[
 			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +77,8 @@
 		"prefix":"GlsSetXdyMinRangeLength",
 		"body":[
 			"\\GlsSetXdyMinRangeLength{${1:integer}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +86,8 @@
 		"prefix":"GlsSetXdyFirstLetterAfterDigits",
 		"body":[
 			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +95,8 @@
 		"prefix":"GlsSetXdyNumberGroupOrder",
 		"body":[
 			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +104,8 @@
 		"prefix":"GlsAddLetterGroup",
 		"body":[
 			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +113,8 @@
 		"prefix":"GlsAddSortRule",
 		"body":[
 			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +122,8 @@
 		"prefix":"GlsAddXdyAlphabet",
 		"body":[
 			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +131,8 @@
 		"prefix":"GlsAddXdyStyle",
 		"body":[
 			"\\GlsAddXdyStyle{${1:xindy style}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +140,8 @@
 		"prefix":"GlsSetXdyStyles",
 		"body":[
 			"\\GlsSetXdyStyles{${1:xindy styles}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,1687 +149,8 @@
 		"prefix":"printsymbols",
 		"body":[
 			"\\printsymbols"
-		]
-	},
-
-
-	"glsxtrnewsymbol{}{}":{
-		"prefix":"glsxtrnewsymbol",
-		"body":[
-			"\\glsxtrnewsymbol{${1:label}}{${2:symbol}}"
-		]
-	},
-
-
-	"printunsrtsymbols":{
-		"prefix":"printunsrtsymbols",
-		"body":[
-			"\\printunsrtsymbols"
-		]
-	},
-
-
-	"GlsSetXdyLanguage{}":{
-		"prefix":"GlsSetXdyLanguage",
-		"body":[
-			"\\GlsSetXdyLanguage{${1:language}}"
-		]
-	},
-
-
-	"GlsSetXdyCodePage{}":{
-		"prefix":"GlsSetXdyCodePage",
-		"body":[
-			"\\GlsSetXdyCodePage{${1:code}}"
-		]
-	},
-
-
-	"GlsAddXdyCounters{}":{
-		"prefix":"GlsAddXdyCounters",
-		"body":[
-			"\\GlsAddXdyCounters{${1:counter list}}"
-		]
-	},
-
-
-	"GlsAddXdyAttribute{}":{
-		"prefix":"GlsAddXdyAttribute",
-		"body":[
-			"\\GlsAddXdyAttribute{${1:name}}"
-		]
-	},
-
-
-	"GlsAddXdyLocation{}{}":{
-		"prefix":"GlsAddXdyLocation",
-		"body":[
-			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsSetXdyLocationClassOrder{}":{
-		"prefix":"GlsSetXdyLocationClassOrder",
-		"body":[
-			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
-		]
-	},
-
-
-	"GlsSetXdyMinRangeLength{}":{
-		"prefix":"GlsSetXdyMinRangeLength",
-		"body":[
-			"\\GlsSetXdyMinRangeLength{${1:integer}}"
-		]
-	},
-
-
-	"GlsSetXdyFirstLetterAfterDigits{}":{
-		"prefix":"GlsSetXdyFirstLetterAfterDigits",
-		"body":[
-			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
-		]
-	},
-
-
-	"GlsSetXdyNumberGroupOrder{}":{
-		"prefix":"GlsSetXdyNumberGroupOrder",
-		"body":[
-			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
-		]
-	},
-
-
-	"GlsAddLetterGroup{}{}":{
-		"prefix":"GlsAddLetterGroup",
-		"body":[
-			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddSortRule{}{}":{
-		"prefix":"GlsAddSortRule",
-		"body":[
-			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddXdyAlphabet{}{}":{
-		"prefix":"GlsAddXdyAlphabet",
-		"body":[
-			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsAddXdyStyle{}":{
-		"prefix":"GlsAddXdyStyle",
-		"body":[
-			"\\GlsAddXdyStyle{${1:xindy style}}"
-		]
-	},
-
-
-	"GlsSetXdyStyles{}":{
-		"prefix":"GlsSetXdyStyles",
-		"body":[
-			"\\GlsSetXdyStyles{${1:xindy styles}}"
-		]
-	},
-
-
-	"printacronyms":{
-		"prefix":"printacronyms",
-		"body":[
-			"\\printacronyms"
-		]
-	},
-
-
-	"printunsrtacronyms":{
-		"prefix":"printunsrtacronyms",
-		"body":[
-			"\\printunsrtacronyms"
-		]
-	},
-
-
-	"GlsSetXdyLanguage{}":{
-		"prefix":"GlsSetXdyLanguage",
-		"body":[
-			"\\GlsSetXdyLanguage{${1:language}}"
-		]
-	},
-
-
-	"GlsSetXdyCodePage{}":{
-		"prefix":"GlsSetXdyCodePage",
-		"body":[
-			"\\GlsSetXdyCodePage{${1:code}}"
-		]
-	},
-
-
-	"GlsAddXdyCounters{}":{
-		"prefix":"GlsAddXdyCounters",
-		"body":[
-			"\\GlsAddXdyCounters{${1:counter list}}"
-		]
-	},
-
-
-	"GlsAddXdyAttribute{}":{
-		"prefix":"GlsAddXdyAttribute",
-		"body":[
-			"\\GlsAddXdyAttribute{${1:name}}"
-		]
-	},
-
-
-	"GlsAddXdyLocation{}{}":{
-		"prefix":"GlsAddXdyLocation",
-		"body":[
-			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsSetXdyLocationClassOrder{}":{
-		"prefix":"GlsSetXdyLocationClassOrder",
-		"body":[
-			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
-		]
-	},
-
-
-	"GlsSetXdyMinRangeLength{}":{
-		"prefix":"GlsSetXdyMinRangeLength",
-		"body":[
-			"\\GlsSetXdyMinRangeLength{${1:integer}}"
-		]
-	},
-
-
-	"GlsSetXdyFirstLetterAfterDigits{}":{
-		"prefix":"GlsSetXdyFirstLetterAfterDigits",
-		"body":[
-			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
-		]
-	},
-
-
-	"GlsSetXdyNumberGroupOrder{}":{
-		"prefix":"GlsSetXdyNumberGroupOrder",
-		"body":[
-			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
-		]
-	},
-
-
-	"GlsAddLetterGroup{}{}":{
-		"prefix":"GlsAddLetterGroup",
-		"body":[
-			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddSortRule{}{}":{
-		"prefix":"GlsAddSortRule",
-		"body":[
-			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddXdyAlphabet{}{}":{
-		"prefix":"GlsAddXdyAlphabet",
-		"body":[
-			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsAddXdyStyle{}":{
-		"prefix":"GlsAddXdyStyle",
-		"body":[
-			"\\GlsAddXdyStyle{${1:xindy style}}"
-		]
-	},
-
-
-	"GlsSetXdyStyles{}":{
-		"prefix":"GlsSetXdyStyles",
-		"body":[
-			"\\GlsSetXdyStyles{${1:xindy styles}}"
-		]
-	},
-
-
-	"GlsSetXdyLanguage{}":{
-		"prefix":"GlsSetXdyLanguage",
-		"body":[
-			"\\GlsSetXdyLanguage{${1:language}}"
-		]
-	},
-
-
-	"GlsSetXdyCodePage{}":{
-		"prefix":"GlsSetXdyCodePage",
-		"body":[
-			"\\GlsSetXdyCodePage{${1:code}}"
-		]
-	},
-
-
-	"GlsAddXdyCounters{}":{
-		"prefix":"GlsAddXdyCounters",
-		"body":[
-			"\\GlsAddXdyCounters{${1:counter list}}"
-		]
-	},
-
-
-	"GlsAddXdyAttribute{}":{
-		"prefix":"GlsAddXdyAttribute",
-		"body":[
-			"\\GlsAddXdyAttribute{${1:name}}"
-		]
-	},
-
-
-	"GlsAddXdyLocation{}{}":{
-		"prefix":"GlsAddXdyLocation",
-		"body":[
-			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsSetXdyLocationClassOrder{}":{
-		"prefix":"GlsSetXdyLocationClassOrder",
-		"body":[
-			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
-		]
-	},
-
-
-	"GlsSetXdyMinRangeLength{}":{
-		"prefix":"GlsSetXdyMinRangeLength",
-		"body":[
-			"\\GlsSetXdyMinRangeLength{${1:integer}}"
-		]
-	},
-
-
-	"GlsSetXdyFirstLetterAfterDigits{}":{
-		"prefix":"GlsSetXdyFirstLetterAfterDigits",
-		"body":[
-			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
-		]
-	},
-
-
-	"GlsSetXdyNumberGroupOrder{}":{
-		"prefix":"GlsSetXdyNumberGroupOrder",
-		"body":[
-			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
-		]
-	},
-
-
-	"GlsAddLetterGroup{}{}":{
-		"prefix":"GlsAddLetterGroup",
-		"body":[
-			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddSortRule{}{}":{
-		"prefix":"GlsAddSortRule",
-		"body":[
-			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GlsAddXdyAlphabet{}{}":{
-		"prefix":"GlsAddXdyAlphabet",
-		"body":[
-			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"GlsAddXdyStyle{}":{
-		"prefix":"GlsAddXdyStyle",
-		"body":[
-			"\\GlsAddXdyStyle{${1:xindy style}}"
-		]
-	},
-
-
-	"GlsSetXdyStyles{}":{
-		"prefix":"GlsSetXdyStyles",
-		"body":[
-			"\\GlsSetXdyStyles{${1:xindy styles}}"
-		]
-	},
-
-
-	"newabbr{}{}{}":{
-		"prefix":"newabbr",
-		"body":[
-			"\\newabbr{${1:label}}{${2:short}}{${3:long}}"
-		]
-	},
-
-
-	"advisor{}":{
-		"prefix":"advisor",
-		"body":[
-			"\\advisor{${1:name}}"
-		]
-	},
-
-
-	"anexos":{
-		"prefix":"anexos",
-		"body":[
-			"\\anexos"
-		]
-	},
-
-
-	"cftdesenhoaftersnum":{
-		"prefix":"cftdesenhoaftersnum",
-		"body":[
-			"\\cftdesenhoaftersnum"
-		]
-	},
-
-
-	"cftdesenhoname":{
-		"prefix":"cftdesenhoname",
-		"body":[
-			"\\cftdesenhoname"
-		]
-	},
-
-
-	"cftdiagramaaftersnum":{
-		"prefix":"cftdiagramaaftersnum",
-		"body":[
-			"\\cftdiagramaaftersnum"
-		]
-	},
-
-
-	"cftdiagramaname":{
-		"prefix":"cftdiagramaname",
-		"body":[
-			"\\cftdiagramaname"
-		]
-	},
-
-
-	"cftesquemaaftersnum":{
-		"prefix":"cftesquemaaftersnum",
-		"body":[
-			"\\cftesquemaaftersnum"
-		]
-	},
-
-
-	"cftesquemaname":{
-		"prefix":"cftesquemaname",
-		"body":[
-			"\\cftesquemaname"
-		]
-	},
-
-
-	"cftfluxogramaaftersnum":{
-		"prefix":"cftfluxogramaaftersnum",
-		"body":[
-			"\\cftfluxogramaaftersnum"
-		]
-	},
-
-
-	"cftfluxogramaname":{
-		"prefix":"cftfluxogramaname",
-		"body":[
-			"\\cftfluxogramaname"
-		]
-	},
-
-
-	"cftfotografiaaftersnum":{
-		"prefix":"cftfotografiaaftersnum",
-		"body":[
-			"\\cftfotografiaaftersnum"
-		]
-	},
-
-
-	"cftfotografianame":{
-		"prefix":"cftfotografianame",
-		"body":[
-			"\\cftfotografianame"
-		]
-	},
-
-
-	"cftgraficoaftersnum":{
-		"prefix":"cftgraficoaftersnum",
-		"body":[
-			"\\cftgraficoaftersnum"
-		]
-	},
-
-
-	"cftgraficoname":{
-		"prefix":"cftgraficoname",
-		"body":[
-			"\\cftgraficoname"
-		]
-	},
-
-
-	"cftmapaaftersnum":{
-		"prefix":"cftmapaaftersnum",
-		"body":[
-			"\\cftmapaaftersnum"
-		]
-	},
-
-
-	"cftmapaname":{
-		"prefix":"cftmapaname",
-		"body":[
-			"\\cftmapaname"
-		]
-	},
-
-
-	"cftorganogramaaftersnum":{
-		"prefix":"cftorganogramaaftersnum",
-		"body":[
-			"\\cftorganogramaaftersnum"
-		]
-	},
-
-
-	"cftorganogramaname":{
-		"prefix":"cftorganogramaname",
-		"body":[
-			"\\cftorganogramaname"
-		]
-	},
-
-
-	"cftplantaaftersnum":{
-		"prefix":"cftplantaaftersnum",
-		"body":[
-			"\\cftplantaaftersnum"
-		]
-	},
-
-
-	"cftplantaname":{
-		"prefix":"cftplantaname",
-		"body":[
-			"\\cftplantaname"
-		]
-	},
-
-
-	"cftquadroaftersnum":{
-		"prefix":"cftquadroaftersnum",
-		"body":[
-			"\\cftquadroaftersnum"
-		]
-	},
-
-
-	"cftquadroname":{
-		"prefix":"cftquadroname",
-		"body":[
-			"\\cftquadroname"
-		]
-	},
-
-
-	"cftretratoaftersnum":{
-		"prefix":"cftretratoaftersnum",
-		"body":[
-			"\\cftretratoaftersnum"
-		]
-	},
-
-
-	"cftretratoname":{
-		"prefix":"cftretratoname",
-		"body":[
-			"\\cftretratoname"
-		]
-	},
-
-
-	"cidade{}":{
-		"prefix":"cidade",
-		"body":[
-			"\\cidade{${1:cidade%text}}"
-		]
-	},
-
-
-	"citefloat{}":{
-		"prefix":"citefloat",
-		"body":[
-			"\\citefloat{${1:bibid}}"
-		]
-	},
-
-
-	"citeonline{}":{
-		"prefix":"citeonline",
-		"body":[
-			"\\citeonline{${1:bibid}}"
-		]
-	},
-
-
-	"curso{}":{
-		"prefix":"curso",
-		"body":[
-			"\\curso{${1:curso}}"
-		]
-	},
-
-
-	"dedicatoria{}":{
-		"prefix":"dedicatoria",
-		"body":[
-			"\\dedicatoria{${1:text}}"
-		]
-	},
-
-
-	"desenhoname":{
-		"prefix":"desenhoname",
-		"body":[
-			"\\desenhoname"
-		]
-	},
-
-
-	"diagramaname":{
-		"prefix":"diagramaname",
-		"body":[
-			"\\diagramaname"
-		]
-	},
-
-
-	"epig{}{}":{
-		"prefix":"epig",
-		"body":[
-			"\\epig{${1:citacao%text}}{${2:Autor}}"
-		]
-	},
-
-
-	"esquemaname":{
-		"prefix":"esquemaname",
-		"body":[
-			"\\esquemaname"
-		]
-	},
-
-
-	"fichacatalografica":{
-		"prefix":"fichacatalografica",
-		"body":[
-			"\\fichacatalografica"
-		]
-	},
-
-
-	"fluxogramaname":{
-		"prefix":"fluxogramaname",
-		"body":[
-			"\\fluxogramaname"
-		]
-	},
-
-
-	"folhadeaprovacao":{
-		"prefix":"folhadeaprovacao",
-		"body":[
-			"\\folhadeaprovacao"
-		]
-	},
-
-
-	"fotografianame":{
-		"prefix":"fotografianame",
-		"body":[
-			"\\fotografianame"
-		]
-	},
-
-
-	"graficoname":{
-		"prefix":"graficoname",
-		"body":[
-			"\\graficoname"
-		]
-	},
-
-
-	"instituicao{}":{
-		"prefix":"instituicao",
-		"body":[
-			"\\instituicao{${1:instituição%text}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:keywords%text}}"
-		]
-	},
-
-
-	"mapaname":{
-		"prefix":"mapaname",
-		"body":[
-			"\\mapaname"
-		]
-	},
-
-
-	"organogramaname":{
-		"prefix":"organogramaname",
-		"body":[
-			"\\organogramaname"
-		]
-	},
-
-
-	"palavraschave{}":{
-		"prefix":"palavraschave",
-		"body":[
-			"\\palavraschave{${1:text}}"
-		]
-	},
-
-
-	"plantaname":{
-		"prefix":"plantaname",
-		"body":[
-			"\\plantaname"
-		]
-	},
-
-
-	"quadroname":{
-		"prefix":"quadroname",
-		"body":[
-			"\\quadroname"
-		]
-	},
-
-
-	"reformchapapp":{
-		"prefix":"reformchapapp",
-		"body":[
-			"\\reformchapapp"
-		]
-	},
-
-
-	"retratoname":{
-		"prefix":"retratoname",
-		"body":[
-			"\\retratoname"
-		]
-	},
-
-
-	"smallcaption{}":{
-		"prefix":"smallcaption",
-		"body":[
-			"\\smallcaption{${1:text}}"
-		]
-	},
-
-
-	"subtitulo{}":{
-		"prefix":"subtitulo",
-		"body":[
-			"\\subtitulo{${1:text}}"
-		]
-	},
-
-
-	"tocnumwidth":{
-		"prefix":"tocnumwidth",
-		"body":[
-			"\\tocnumwidth"
-		]
-	},
-
-
-	"DH":{
-		"prefix":"DH",
-		"body":[
-			"\\DH"
-		]
-	},
-
-
-	"dh":{
-		"prefix":"dh",
-		"body":[
-			"\\dh"
-		]
-	},
-
-
-	"dj":{
-		"prefix":"dj",
-		"body":[
-			"\\dj"
-		]
-	},
-
-
-	"DJ":{
-		"prefix":"DJ",
-		"body":[
-			"\\DJ"
-		]
-	},
-
-
-	"guillemetleft":{
-		"prefix":"guillemetleft",
-		"body":[
-			"\\guillemetleft"
-		]
-	},
-
-
-	"guillemetright":{
-		"prefix":"guillemetright",
-		"body":[
-			"\\guillemetright"
-		]
-	},
-
-
-	"guillemotleft":{
-		"prefix":"guillemotleft",
-		"body":[
-			"\\guillemotleft"
-		]
-	},
-
-
-	"guillemotright":{
-		"prefix":"guillemotright",
-		"body":[
-			"\\guillemotright"
-		]
-	},
-
-
-	"guilsinglleft":{
-		"prefix":"guilsinglleft",
-		"body":[
-			"\\guilsinglleft"
-		]
-	},
-
-
-	"guilsinglright":{
-		"prefix":"guilsinglright",
-		"body":[
-			"\\guilsinglright"
-		]
-	},
-
-
-	"Hwithstroke":{
-		"prefix":"Hwithstroke",
-		"body":[
-			"\\Hwithstroke"
-		]
-	},
-
-
-	"hwithstroke":{
-		"prefix":"hwithstroke",
-		"body":[
-			"\\hwithstroke"
-		]
-	},
-
-
-	"k{}":{
-		"prefix":"k",
-		"body":[
-			"\\k{${1:arg}}"
-		]
-	},
-
-
-	"NG":{
-		"prefix":"NG",
-		"body":[
-			"\\NG"
-		]
-	},
-
-
-	"ng":{
-		"prefix":"ng",
-		"body":[
-			"\\ng"
-		]
-	},
-
-
-	"quotedblbase":{
-		"prefix":"quotedblbase",
-		"body":[
-			"\\quotedblbase"
-		]
-	},
-
-
-	"quotesinglbase":{
-		"prefix":"quotesinglbase",
-		"body":[
-			"\\quotesinglbase"
-		]
-	},
-
-
-	"textogonekcentered{}":{
-		"prefix":"textogonekcentered",
-		"body":[
-			"\\textogonekcentered{${1:arg}}"
-		]
-	},
-
-
-	"textquotedbl":{
-		"prefix":"textquotedbl",
-		"body":[
-			"\\textquotedbl"
-		]
-	},
-
-
-	"th":{
-		"prefix":"th",
-		"body":[
-			"\\th"
-		]
-	},
-
-
-	"TH":{
-		"prefix":"TH",
-		"body":[
-			"\\TH"
-		]
-	},
-
-
-	"captionsenglish":{
-		"prefix":"captionsenglish",
-		"body":[
-			"\\captionsenglish"
-		]
-	},
-
-
-	"dateenglish":{
-		"prefix":"dateenglish",
-		"body":[
-			"\\dateenglish"
-		]
-	},
-
-
-	"extrasenglish":{
-		"prefix":"extrasenglish",
-		"body":[
-			"\\extrasenglish"
-		]
-	},
-
-
-	"noextrasenglish":{
-		"prefix":"noextrasenglish",
-		"body":[
-			"\\noextrasenglish"
-		]
-	},
-
-
-	"englishhyphenmins":{
-		"prefix":"englishhyphenmins",
-		"body":[
-			"\\englishhyphenmins"
-		]
-	},
-
-
-	"britishhyphenmins":{
-		"prefix":"britishhyphenmins",
-		"body":[
-			"\\britishhyphenmins"
-		]
-	},
-
-
-	"americanhyphenmins":{
-		"prefix":"americanhyphenmins",
-		"body":[
-			"\\americanhyphenmins"
-		]
-	},
-
-
-	"prefacename":{
-		"prefix":"prefacename",
-		"body":[
-			"\\prefacename"
-		]
-	},
-
-
-	"bibname":{
-		"prefix":"bibname",
-		"body":[
-			"\\bibname"
-		]
-	},
-
-
-	"chaptername":{
-		"prefix":"chaptername",
-		"body":[
-			"\\chaptername"
-		]
-	},
-
-
-	"enclname":{
-		"prefix":"enclname",
-		"body":[
-			"\\enclname"
-		]
-	},
-
-
-	"ccname":{
-		"prefix":"ccname",
-		"body":[
-			"\\ccname"
-		]
-	},
-
-
-	"headtoname":{
-		"prefix":"headtoname",
-		"body":[
-			"\\headtoname"
-		]
-	},
-
-
-	"seename":{
-		"prefix":"seename",
-		"body":[
-			"\\seename"
-		]
-	},
-
-
-	"alsoname":{
-		"prefix":"alsoname",
-		"body":[
-			"\\alsoname"
-		]
-	},
-
-
-	"proofname":{
-		"prefix":"proofname",
-		"body":[
-			"\\proofname"
-		]
-	},
-
-
-	"glossaryname":{
-		"prefix":"glossaryname",
-		"body":[
-			"\\glossaryname"
-		]
-	},
-
-
-	"captionsbrazil":{
-		"prefix":"captionsbrazil",
-		"body":[
-			"\\captionsbrazil"
-		]
-	},
-
-
-	"datebrazil":{
-		"prefix":"datebrazil",
-		"body":[
-			"\\datebrazil"
-		]
-	},
-
-
-	"extrasbrazil":{
-		"prefix":"extrasbrazil",
-		"body":[
-			"\\extrasbrazil"
-		]
-	},
-
-
-	"noextrasbrazil":{
-		"prefix":"noextrasbrazil",
-		"body":[
-			"\\noextrasbrazil"
-		]
-	},
-
-
-	"ord":{
-		"prefix":"ord",
-		"body":[
-			"\\ord"
-		]
-	},
-
-
-	"orda":{
-		"prefix":"orda",
-		"body":[
-			"\\orda"
-		]
-	},
-
-
-	"ro":{
-		"prefix":"ro",
-		"body":[
-			"\\ro"
-		]
-	},
-
-
-	"ra":{
-		"prefix":"ra",
-		"body":[
-			"\\ra"
-		]
-	},
-
-
-	"Entrada{}":{
-		"prefix":"Entrada",
-		"body":[
-			"\\Entrada{${1:Entrada}}"
-		]
-	},
-
-
-	"Saida{}":{
-		"prefix":"Saida",
-		"body":[
-			"\\Saida{${1:Saída}}"
-		]
-	},
-
-
-	"Dados{}":{
-		"prefix":"Dados",
-		"body":[
-			"\\Dados{${1:Dados}}"
-		]
-	},
-
-
-	"Resultado{}":{
-		"prefix":"Resultado",
-		"body":[
-			"\\Resultado{${1:Resultado}}"
-		]
-	},
-
-
-	"Ate":{
-		"prefix":"Ate",
-		"body":[
-			"\\Ate"
-		]
-	},
-
-
-	"KwRetorna{}":{
-		"prefix":"KwRetorna",
-		"body":[
-			"\\KwRetorna{${1:val}}"
-		]
-	},
-
-
-	"Retorna{}":{
-		"prefix":"Retorna",
-		"body":[
-			"\\Retorna{${1:val}}"
-		]
-	},
-
-
-	"Inicio{}":{
-		"prefix":"Inicio",
-		"body":[
-			"\\Inicio{${1:inside block}}"
-		]
-	},
-
-
-	"Repita{}{}":{
-		"prefix":"Repita",
-		"body":[
-			"\\Repita{${1:stop condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lRepita{}{}":{
-		"prefix":"lRepita",
-		"body":[
-			"\\lRepita{${1:stop condition}}{${2:line of the loop}}"
-		]
-	},
-
-
-	"eSe{}{}{}":{
-		"prefix":"eSe",
-		"body":[
-			"\\eSe{${1:condition}}{${2:then block}}{${3:else block}}"
-		]
-	},
-
-
-	"Se{}{}":{
-		"prefix":"Se",
-		"body":[
-			"\\Se{${1:condition}}{${2:then block}}"
-		]
-	},
-
-
-	"uSe{}{}":{
-		"prefix":"uSe",
-		"body":[
-			"\\uSe{${1:condition}}{${2:then block without end}}"
-		]
-	},
-
-
-	"lSe{}{}":{
-		"prefix":"lSe",
-		"body":[
-			"\\lSe{${1:condition}}{${2:then’s line text}}"
-		]
-	},
-
-
-	"Senao{}":{
-		"prefix":"Senao",
-		"body":[
-			"\\Senao{${1:else block}}"
-		]
-	},
-
-
-	"uSenao{}":{
-		"prefix":"uSenao",
-		"body":[
-			"\\uSenao{${1:else block without else}}"
-		]
-	},
-
-
-	"lSenao{}":{
-		"prefix":"lSenao",
-		"body":[
-			"\\lSenao{${1:else’s line text}}"
-		]
-	},
-
-
-	"SenaoSe{}{}":{
-		"prefix":"SenaoSe",
-		"body":[
-			"\\SenaoSe{${1:condition}}{${2:elseif block}}"
-		]
-	},
-
-
-	"uSenaoSe{}{}":{
-		"prefix":"uSenaoSe",
-		"body":[
-			"\\uSenaoSe{${1:condition}}{${2:elseif block without end}}"
-		]
-	},
-
-
-	"lSenaoSe{}{}":{
-		"prefix":"lSenaoSe",
-		"body":[
-			"\\lSenaoSe{${1:condition}}{${2:elseif’s line text}}"
-		]
-	},
-
-
-	"Selec{}{}":{
-		"prefix":"Selec",
-		"body":[
-			"\\Selec{${1:condition}}{${2:switch block}}"
-		]
-	},
-
-
-	"Caso{}{}":{
-		"prefix":"Caso",
-		"body":[
-			"\\Caso{${1:a case}}{${2:case block}}"
-		]
-	},
-
-
-	"uCaso{}{}":{
-		"prefix":"uCaso",
-		"body":[
-			"\\uCaso{${1:a case}}{${2:case block without end}}"
-		]
-	},
-
-
-	"lCaso{}{}":{
-		"prefix":"lCaso",
-		"body":[
-			"\\lCaso{${1:a case}}{${2:case’s line}}"
-		]
-	},
-
-
-	"Outro{}":{
-		"prefix":"Outro",
-		"body":[
-			"\\Outro{${1:otherwise block}}"
-		]
-	},
-
-
-	"lOutro{}":{
-		"prefix":"lOutro",
-		"body":[
-			"\\lOutro{${1:otherwise’s line}}"
-		]
-	},
-
-
-	"Para{}{}":{
-		"prefix":"Para",
-		"body":[
-			"\\Para{${1:condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lPara{}{}":{
-		"prefix":"lPara",
-		"body":[
-			"\\lPara{${1:condition}}{${2:line text loop}}"
-		]
-	},
-
-
-	"ParaPar{}{}":{
-		"prefix":"ParaPar",
-		"body":[
-			"\\ParaPar{${1:condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lParaPar{}{}":{
-		"prefix":"lParaPar",
-		"body":[
-			"\\lParaPar{${1:condition}}{${2:line text loop}}"
-		]
-	},
-
-
-	"ParaCada{}{}":{
-		"prefix":"ParaCada",
-		"body":[
-			"\\ParaCada{${1:condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lParaCada{}{}":{
-		"prefix":"lParaCada",
-		"body":[
-			"\\lParaCada{${1:condition}}{${2:line text loop}}"
-		]
-	},
-
-
-	"ParaTodo{}{}":{
-		"prefix":"ParaTodo",
-		"body":[
-			"\\ParaTodo{${1:condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lParaTodo{}{}":{
-		"prefix":"lParaTodo",
-		"body":[
-			"\\lParaTodo{${1:condition}}{${2:line text loop}}"
-		]
-	},
-
-
-	"Enqto{}{}":{
-		"prefix":"Enqto",
-		"body":[
-			"\\Enqto{${1:stop condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"lEnqto{}{}":{
-		"prefix":"lEnqto",
-		"body":[
-			"\\lEnqto{${1:stop condition}}{${2:text loop}}"
-		]
-	},
-
-
-	"FirstWordUpper{}":{
-		"prefix":"FirstWordUpper",
-		"body":[
-			"\\FirstWordUpper{${1:text}}"
-		]
-	},
-
-
-	"FirstWordSC{}":{
-		"prefix":"FirstWordSC",
-		"body":[
-			"\\FirstWordSC{${1:text}}"
-		]
-	},
-
-
-	"FirstWordLCSC{}":{
-		"prefix":"FirstWordLCSC",
-		"body":[
-			"\\FirstWordLCSC{${1:text}}"
-		]
-	},
-
-
-	"smartuppercase{}":{
-		"prefix":"smartuppercase",
-		"body":[
-			"\\smartuppercase{${1:text}}"
-		]
-	},
-
-
-	"smartlowercase{}":{
-		"prefix":"smartlowercase",
-		"body":[
-			"\\smartlowercase{${1:text}}"
-		]
-	},
-
-
-	"smartlcsc{}":{
-		"prefix":"smartlcsc",
-		"body":[
-			"\\smartlcsc{${1:text}}"
-		]
-	},
-
-
-	"smartsc{}":{
-		"prefix":"smartsc",
-		"body":[
-			"\\smartsc{${1:text}}"
-		]
-	},
-
-
-	"UpperOrSC{}":{
-		"prefix":"UpperOrSC",
-		"body":[
-			"\\UpperOrSC{${1:text}}"
-		]
-	},
-
-
-	"NormalOrSC{}":{
-		"prefix":"NormalOrSC",
-		"body":[
-			"\\NormalOrSC{${1:text}}"
-		]
-	},
-
-
-	"iffieldregex{}{}{}{}":{
-		"prefix":"iffieldregex",
-		"body":[
-			"\\iffieldregex{${1:field}}{${2:regex}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"iffieldendswithpunct{}{}{}":{
-		"prefix":"iffieldendswithpunct",
-		"body":[
-			"\\iffieldendswithpunct{${1:field}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfGivenIsInitial{}{}":{
-		"prefix":"IfGivenIsInitial",
-		"body":[
-			"\\IfGivenIsInitial{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"abntnum{}":{
-		"prefix":"abntnum",
-		"body":[
-			"\\abntnum{${1:number}}"
-		]
-	},
-
-
-	"bibnameunderscore":{
-		"prefix":"bibnameunderscore",
-		"body":[
-			"\\bibnameunderscore"
-		]
-	},
-
-
-	"nopunctdash":{
-		"prefix":"nopunctdash",
-		"body":[
-			"\\nopunctdash"
-		]
-	},
-
-
-	"UpperOrSCCite{}":{
-		"prefix":"UpperOrSCCite",
-		"body":[
-			"\\UpperOrSCCite{${1:text}}"
-		]
-	},
-
-
-	"NormalOrSCCite{}":{
-		"prefix":"NormalOrSCCite",
-		"body":[
-			"\\NormalOrSCCite{${1:text}}"
-		]
-	},
-
-
-	"IfGivenIsInit{}{}":{
-		"prefix":"IfGivenIsInit",
-		"body":[
-			"\\IfGivenIsInit{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FirstWord{}":{
-		"prefix":"FirstWord",
-		"body":[
-			"\\FirstWord{${1:text}}"
-		]
-	},
-
-
-	"addapud":{
-		"prefix":"addapud",
-		"body":[
-			"\\addapud"
-		]
-	},
-
-
-	"apud{}{}":{
-		"prefix":"apud",
-		"body":[
-			"\\apud{${1:bibid}}{${2:bibid}}"
-		]
-	},
-
-
-	"apud(){}{}":{
-		"prefix":"apud",
-		"body":[
-			"\\apud(${3:post}){${1:bibid}}{${2:bibid}}"
-		]
-	},
-
-
-	"apud()(){}{}":{
-		"prefix":"apud",
-		"body":[
-			"\\apud(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
-		]
-	},
-
-
-	"plaincite{}":{
-		"prefix":"plaincite",
-		"body":[
-			"\\plaincite{${1:bibid}}"
-		]
-	},
-
-
-	"citelastname{}":{
-		"prefix":"citelastname",
-		"body":[
-			"\\citelastname{${1:bibid}}"
-		]
-	},
-
-
-	"textapud{}{}":{
-		"prefix":"textapud",
-		"body":[
-			"\\textapud{${1:bibid}}{${2:bibid}}"
-		]
-	},
-
-
-	"citeyearorsh*[][]{}":{
-		"prefix":"*citeyearorsh",
-		"body":[
-			"\\citeyearorsh*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearorsh*[]{}":{
-		"prefix":"*citeyearorsh",
-		"body":[
-			"\\citeyearorsh*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearorsh*{}":{
-		"prefix":"*citeyearorsh",
-		"body":[
-			"\\citeyearorsh*{${1:bibid}}"
-		]
-	},
-
-
-	"GlsSetXdyLanguage[]{}":{
-		"prefix":"GlsSetXdyLanguage",
-		"body":[
-			"\\GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
-		]
-	},
-
-
-	"GlsAddXdyLocation[]{}{}":{
-		"prefix":"GlsAddXdyLocation",
-		"body":[
-			"\\GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1805,7 +158,17 @@
 		"prefix":"printsymbols",
 		"body":[
 			"\\printsymbols[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"glsxtrnewsymbol{}{}":{
+		"prefix":"glsxtrnewsymbol",
+		"body":[
+			"\\glsxtrnewsymbol{${1:label}}{${2:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1813,7 +176,17 @@
 		"prefix":"glsxtrnewsymbol",
 		"body":[
 			"\\glsxtrnewsymbol[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printunsrtsymbols":{
+		"prefix":"printunsrtsymbols",
+		"body":[
+			"\\printunsrtsymbols"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1821,7 +194,17 @@
 		"prefix":"printunsrtsymbols",
 		"body":[
 			"\\printunsrtsymbols[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyLanguage{}":{
+		"prefix":"GlsSetXdyLanguage",
+		"body":[
+			"\\GlsSetXdyLanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1829,7 +212,44 @@
 		"prefix":"GlsSetXdyLanguage",
 		"body":[
 			"\\GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyCodePage{}":{
+		"prefix":"GlsSetXdyCodePage",
+		"body":[
+			"\\GlsSetXdyCodePage{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyCounters{}":{
+		"prefix":"GlsAddXdyCounters",
+		"body":[
+			"\\GlsAddXdyCounters{${1:counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAttribute{}":{
+		"prefix":"GlsAddXdyAttribute",
+		"body":[
+			"\\GlsAddXdyAttribute{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyLocation{}{}":{
+		"prefix":"GlsAddXdyLocation",
+		"body":[
+			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1837,7 +257,98 @@
 		"prefix":"GlsAddXdyLocation",
 		"body":[
 			"\\GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyLocationClassOrder{}":{
+		"prefix":"GlsSetXdyLocationClassOrder",
+		"body":[
+			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyMinRangeLength{}":{
+		"prefix":"GlsSetXdyMinRangeLength",
+		"body":[
+			"\\GlsSetXdyMinRangeLength{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyFirstLetterAfterDigits{}":{
+		"prefix":"GlsSetXdyFirstLetterAfterDigits",
+		"body":[
+			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyNumberGroupOrder{}":{
+		"prefix":"GlsSetXdyNumberGroupOrder",
+		"body":[
+			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddLetterGroup{}{}":{
+		"prefix":"GlsAddLetterGroup",
+		"body":[
+			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddSortRule{}{}":{
+		"prefix":"GlsAddSortRule",
+		"body":[
+			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAlphabet{}{}":{
+		"prefix":"GlsAddXdyAlphabet",
+		"body":[
+			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyStyle{}":{
+		"prefix":"GlsAddXdyStyle",
+		"body":[
+			"\\GlsAddXdyStyle{${1:xindy style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyStyles{}":{
+		"prefix":"GlsSetXdyStyles",
+		"body":[
+			"\\GlsSetXdyStyles{${1:xindy styles}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printacronyms":{
+		"prefix":"printacronyms",
+		"body":[
+			"\\printacronyms"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1845,7 +356,17 @@
 		"prefix":"printacronyms",
 		"body":[
 			"\\printacronyms[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printunsrtacronyms":{
+		"prefix":"printunsrtacronyms",
+		"body":[
+			"\\printunsrtacronyms"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1853,7 +374,17 @@
 		"prefix":"printunsrtacronyms",
 		"body":[
 			"\\printunsrtacronyms[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyLanguage{}":{
+		"prefix":"GlsSetXdyLanguage",
+		"body":[
+			"\\GlsSetXdyLanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1861,7 +392,44 @@
 		"prefix":"GlsSetXdyLanguage",
 		"body":[
 			"\\GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyCodePage{}":{
+		"prefix":"GlsSetXdyCodePage",
+		"body":[
+			"\\GlsSetXdyCodePage{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyCounters{}":{
+		"prefix":"GlsAddXdyCounters",
+		"body":[
+			"\\GlsAddXdyCounters{${1:counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAttribute{}":{
+		"prefix":"GlsAddXdyAttribute",
+		"body":[
+			"\\GlsAddXdyAttribute{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyLocation{}{}":{
+		"prefix":"GlsAddXdyLocation",
+		"body":[
+			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1869,7 +437,98 @@
 		"prefix":"GlsAddXdyLocation",
 		"body":[
 			"\\GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyLocationClassOrder{}":{
+		"prefix":"GlsSetXdyLocationClassOrder",
+		"body":[
+			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyMinRangeLength{}":{
+		"prefix":"GlsSetXdyMinRangeLength",
+		"body":[
+			"\\GlsSetXdyMinRangeLength{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyFirstLetterAfterDigits{}":{
+		"prefix":"GlsSetXdyFirstLetterAfterDigits",
+		"body":[
+			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyNumberGroupOrder{}":{
+		"prefix":"GlsSetXdyNumberGroupOrder",
+		"body":[
+			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddLetterGroup{}{}":{
+		"prefix":"GlsAddLetterGroup",
+		"body":[
+			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddSortRule{}{}":{
+		"prefix":"GlsAddSortRule",
+		"body":[
+			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAlphabet{}{}":{
+		"prefix":"GlsAddXdyAlphabet",
+		"body":[
+			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyStyle{}":{
+		"prefix":"GlsAddXdyStyle",
+		"body":[
+			"\\GlsAddXdyStyle{${1:xindy style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyStyles{}":{
+		"prefix":"GlsSetXdyStyles",
+		"body":[
+			"\\GlsSetXdyStyles{${1:xindy styles}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyLanguage{}":{
+		"prefix":"GlsSetXdyLanguage",
+		"body":[
+			"\\GlsSetXdyLanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1877,7 +536,44 @@
 		"prefix":"GlsSetXdyLanguage",
 		"body":[
 			"\\GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyCodePage{}":{
+		"prefix":"GlsSetXdyCodePage",
+		"body":[
+			"\\GlsSetXdyCodePage{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyCounters{}":{
+		"prefix":"GlsAddXdyCounters",
+		"body":[
+			"\\GlsAddXdyCounters{${1:counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAttribute{}":{
+		"prefix":"GlsAddXdyAttribute",
+		"body":[
+			"\\GlsAddXdyAttribute{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyLocation{}{}":{
+		"prefix":"GlsAddXdyLocation",
+		"body":[
+			"\\GlsAddXdyLocation{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1885,7 +581,98 @@
 		"prefix":"GlsAddXdyLocation",
 		"body":[
 			"\\GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GlsSetXdyLocationClassOrder{}":{
+		"prefix":"GlsSetXdyLocationClassOrder",
+		"body":[
+			"\\GlsSetXdyLocationClassOrder{${1:location names}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyMinRangeLength{}":{
+		"prefix":"GlsSetXdyMinRangeLength",
+		"body":[
+			"\\GlsSetXdyMinRangeLength{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyFirstLetterAfterDigits{}":{
+		"prefix":"GlsSetXdyFirstLetterAfterDigits",
+		"body":[
+			"\\GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyNumberGroupOrder{}":{
+		"prefix":"GlsSetXdyNumberGroupOrder",
+		"body":[
+			"\\GlsSetXdyNumberGroupOrder{${1:relative location}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddLetterGroup{}{}":{
+		"prefix":"GlsAddLetterGroup",
+		"body":[
+			"\\GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddSortRule{}{}":{
+		"prefix":"GlsAddSortRule",
+		"body":[
+			"\\GlsAddSortRule{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyAlphabet{}{}":{
+		"prefix":"GlsAddXdyAlphabet",
+		"body":[
+			"\\GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsAddXdyStyle{}":{
+		"prefix":"GlsAddXdyStyle",
+		"body":[
+			"\\GlsAddXdyStyle{${1:xindy style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlsSetXdyStyles{}":{
+		"prefix":"GlsSetXdyStyles",
+		"body":[
+			"\\GlsSetXdyStyles{${1:xindy styles}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newabbr{}{}{}":{
+		"prefix":"newabbr",
+		"body":[
+			"\\newabbr{${1:label}}{${2:short}}{${3:long}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1893,7 +680,1403 @@
 		"prefix":"newabbr",
 		"body":[
 			"\\newabbr[${4:options%keyvals}]{${1:label}}{${2:short}}{${3:long}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"advisor{}":{
+		"prefix":"advisor",
+		"body":[
+			"\\advisor{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"anexos":{
+		"prefix":"anexos",
+		"body":[
+			"\\anexos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftdesenhoaftersnum":{
+		"prefix":"cftdesenhoaftersnum",
+		"body":[
+			"\\cftdesenhoaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftdesenhoname":{
+		"prefix":"cftdesenhoname",
+		"body":[
+			"\\cftdesenhoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftdiagramaaftersnum":{
+		"prefix":"cftdiagramaaftersnum",
+		"body":[
+			"\\cftdiagramaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftdiagramaname":{
+		"prefix":"cftdiagramaname",
+		"body":[
+			"\\cftdiagramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftesquemaaftersnum":{
+		"prefix":"cftesquemaaftersnum",
+		"body":[
+			"\\cftesquemaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftesquemaname":{
+		"prefix":"cftesquemaname",
+		"body":[
+			"\\cftesquemaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftfluxogramaaftersnum":{
+		"prefix":"cftfluxogramaaftersnum",
+		"body":[
+			"\\cftfluxogramaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftfluxogramaname":{
+		"prefix":"cftfluxogramaname",
+		"body":[
+			"\\cftfluxogramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftfotografiaaftersnum":{
+		"prefix":"cftfotografiaaftersnum",
+		"body":[
+			"\\cftfotografiaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftfotografianame":{
+		"prefix":"cftfotografianame",
+		"body":[
+			"\\cftfotografianame"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftgraficoaftersnum":{
+		"prefix":"cftgraficoaftersnum",
+		"body":[
+			"\\cftgraficoaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftgraficoname":{
+		"prefix":"cftgraficoname",
+		"body":[
+			"\\cftgraficoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftmapaaftersnum":{
+		"prefix":"cftmapaaftersnum",
+		"body":[
+			"\\cftmapaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftmapaname":{
+		"prefix":"cftmapaname",
+		"body":[
+			"\\cftmapaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftorganogramaaftersnum":{
+		"prefix":"cftorganogramaaftersnum",
+		"body":[
+			"\\cftorganogramaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftorganogramaname":{
+		"prefix":"cftorganogramaname",
+		"body":[
+			"\\cftorganogramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftplantaaftersnum":{
+		"prefix":"cftplantaaftersnum",
+		"body":[
+			"\\cftplantaaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftplantaname":{
+		"prefix":"cftplantaname",
+		"body":[
+			"\\cftplantaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftquadroaftersnum":{
+		"prefix":"cftquadroaftersnum",
+		"body":[
+			"\\cftquadroaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftquadroname":{
+		"prefix":"cftquadroname",
+		"body":[
+			"\\cftquadroname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftretratoaftersnum":{
+		"prefix":"cftretratoaftersnum",
+		"body":[
+			"\\cftretratoaftersnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cftretratoname":{
+		"prefix":"cftretratoname",
+		"body":[
+			"\\cftretratoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cidade{}":{
+		"prefix":"cidade",
+		"body":[
+			"\\cidade{${1:cidade%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citefloat{}":{
+		"prefix":"citefloat",
+		"body":[
+			"\\citefloat{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citeonline{}":{
+		"prefix":"citeonline",
+		"body":[
+			"\\citeonline{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curso{}":{
+		"prefix":"curso",
+		"body":[
+			"\\curso{${1:curso}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dedicatoria{}":{
+		"prefix":"dedicatoria",
+		"body":[
+			"\\dedicatoria{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"desenhoname":{
+		"prefix":"desenhoname",
+		"body":[
+			"\\desenhoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"diagramaname":{
+		"prefix":"diagramaname",
+		"body":[
+			"\\diagramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"epig{}{}":{
+		"prefix":"epig",
+		"body":[
+			"\\epig{${1:citacao%text}}{${2:Autor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"esquemaname":{
+		"prefix":"esquemaname",
+		"body":[
+			"\\esquemaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fichacatalografica":{
+		"prefix":"fichacatalografica",
+		"body":[
+			"\\fichacatalografica"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fluxogramaname":{
+		"prefix":"fluxogramaname",
+		"body":[
+			"\\fluxogramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"folhadeaprovacao":{
+		"prefix":"folhadeaprovacao",
+		"body":[
+			"\\folhadeaprovacao"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fotografianame":{
+		"prefix":"fotografianame",
+		"body":[
+			"\\fotografianame"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"graficoname":{
+		"prefix":"graficoname",
+		"body":[
+			"\\graficoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"instituicao{}":{
+		"prefix":"instituicao",
+		"body":[
+			"\\instituicao{${1:instituição%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:keywords%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mapaname":{
+		"prefix":"mapaname",
+		"body":[
+			"\\mapaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"organogramaname":{
+		"prefix":"organogramaname",
+		"body":[
+			"\\organogramaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"palavraschave{}":{
+		"prefix":"palavraschave",
+		"body":[
+			"\\palavraschave{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"plantaname":{
+		"prefix":"plantaname",
+		"body":[
+			"\\plantaname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quadroname":{
+		"prefix":"quadroname",
+		"body":[
+			"\\quadroname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reformchapapp":{
+		"prefix":"reformchapapp",
+		"body":[
+			"\\reformchapapp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"retratoname":{
+		"prefix":"retratoname",
+		"body":[
+			"\\retratoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallcaption{}":{
+		"prefix":"smallcaption",
+		"body":[
+			"\\smallcaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtitulo{}":{
+		"prefix":"subtitulo",
+		"body":[
+			"\\subtitulo{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocnumwidth":{
+		"prefix":"tocnumwidth",
+		"body":[
+			"\\tocnumwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DH":{
+		"prefix":"DH",
+		"body":[
+			"\\DH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dh":{
+		"prefix":"dh",
+		"body":[
+			"\\dh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dj":{
+		"prefix":"dj",
+		"body":[
+			"\\dj"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DJ":{
+		"prefix":"DJ",
+		"body":[
+			"\\DJ"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetleft":{
+		"prefix":"guillemetleft",
+		"body":[
+			"\\guillemetleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetright":{
+		"prefix":"guillemetright",
+		"body":[
+			"\\guillemetright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotleft":{
+		"prefix":"guillemotleft",
+		"body":[
+			"\\guillemotleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotright":{
+		"prefix":"guillemotright",
+		"body":[
+			"\\guillemotright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglleft":{
+		"prefix":"guilsinglleft",
+		"body":[
+			"\\guilsinglleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglright":{
+		"prefix":"guilsinglright",
+		"body":[
+			"\\guilsinglright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hwithstroke":{
+		"prefix":"Hwithstroke",
+		"body":[
+			"\\Hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hwithstroke":{
+		"prefix":"hwithstroke",
+		"body":[
+			"\\hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"k{}":{
+		"prefix":"k",
+		"body":[
+			"\\k{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NG":{
+		"prefix":"NG",
+		"body":[
+			"\\NG"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ng":{
+		"prefix":"ng",
+		"body":[
+			"\\ng"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotedblbase":{
+		"prefix":"quotedblbase",
+		"body":[
+			"\\quotedblbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotesinglbase":{
+		"prefix":"quotesinglbase",
+		"body":[
+			"\\quotesinglbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textogonekcentered{}":{
+		"prefix":"textogonekcentered",
+		"body":[
+			"\\textogonekcentered{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textquotedbl":{
+		"prefix":"textquotedbl",
+		"body":[
+			"\\textquotedbl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"th":{
+		"prefix":"th",
+		"body":[
+			"\\th"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TH":{
+		"prefix":"TH",
+		"body":[
+			"\\TH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"captionsenglish":{
+		"prefix":"captionsenglish",
+		"body":[
+			"\\captionsenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dateenglish":{
+		"prefix":"dateenglish",
+		"body":[
+			"\\dateenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extrasenglish":{
+		"prefix":"extrasenglish",
+		"body":[
+			"\\extrasenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noextrasenglish":{
+		"prefix":"noextrasenglish",
+		"body":[
+			"\\noextrasenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"englishhyphenmins":{
+		"prefix":"englishhyphenmins",
+		"body":[
+			"\\englishhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"britishhyphenmins":{
+		"prefix":"britishhyphenmins",
+		"body":[
+			"\\britishhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"americanhyphenmins":{
+		"prefix":"americanhyphenmins",
+		"body":[
+			"\\americanhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prefacename":{
+		"prefix":"prefacename",
+		"body":[
+			"\\prefacename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bibname":{
+		"prefix":"bibname",
+		"body":[
+			"\\bibname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaptername":{
+		"prefix":"chaptername",
+		"body":[
+			"\\chaptername"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enclname":{
+		"prefix":"enclname",
+		"body":[
+			"\\enclname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccname":{
+		"prefix":"ccname",
+		"body":[
+			"\\ccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headtoname":{
+		"prefix":"headtoname",
+		"body":[
+			"\\headtoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seename":{
+		"prefix":"seename",
+		"body":[
+			"\\seename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alsoname":{
+		"prefix":"alsoname",
+		"body":[
+			"\\alsoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proofname":{
+		"prefix":"proofname",
+		"body":[
+			"\\proofname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"glossaryname":{
+		"prefix":"glossaryname",
+		"body":[
+			"\\glossaryname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"captionsbrazil":{
+		"prefix":"captionsbrazil",
+		"body":[
+			"\\captionsbrazil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"datebrazil":{
+		"prefix":"datebrazil",
+		"body":[
+			"\\datebrazil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extrasbrazil":{
+		"prefix":"extrasbrazil",
+		"body":[
+			"\\extrasbrazil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noextrasbrazil":{
+		"prefix":"noextrasbrazil",
+		"body":[
+			"\\noextrasbrazil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ord":{
+		"prefix":"ord",
+		"body":[
+			"\\ord"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"orda":{
+		"prefix":"orda",
+		"body":[
+			"\\orda"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ro":{
+		"prefix":"ro",
+		"body":[
+			"\\ro"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ra":{
+		"prefix":"ra",
+		"body":[
+			"\\ra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Entrada{}":{
+		"prefix":"Entrada",
+		"body":[
+			"\\Entrada{${1:Entrada}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Saida{}":{
+		"prefix":"Saida",
+		"body":[
+			"\\Saida{${1:Saída}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Dados{}":{
+		"prefix":"Dados",
+		"body":[
+			"\\Dados{${1:Dados}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Resultado{}":{
+		"prefix":"Resultado",
+		"body":[
+			"\\Resultado{${1:Resultado}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ate":{
+		"prefix":"Ate",
+		"body":[
+			"\\Ate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"KwRetorna{}":{
+		"prefix":"KwRetorna",
+		"body":[
+			"\\KwRetorna{${1:val}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Retorna{}":{
+		"prefix":"Retorna",
+		"body":[
+			"\\Retorna{${1:val}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Inicio{}":{
+		"prefix":"Inicio",
+		"body":[
+			"\\Inicio{${1:inside block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Repita{}{}":{
+		"prefix":"Repita",
+		"body":[
+			"\\Repita{${1:stop condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lRepita{}{}":{
+		"prefix":"lRepita",
+		"body":[
+			"\\lRepita{${1:stop condition}}{${2:line of the loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eSe{}{}{}":{
+		"prefix":"eSe",
+		"body":[
+			"\\eSe{${1:condition}}{${2:then block}}{${3:else block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Se{}{}":{
+		"prefix":"Se",
+		"body":[
+			"\\Se{${1:condition}}{${2:then block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uSe{}{}":{
+		"prefix":"uSe",
+		"body":[
+			"\\uSe{${1:condition}}{${2:then block without end}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lSe{}{}":{
+		"prefix":"lSe",
+		"body":[
+			"\\lSe{${1:condition}}{${2:then’s line text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Senao{}":{
+		"prefix":"Senao",
+		"body":[
+			"\\Senao{${1:else block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uSenao{}":{
+		"prefix":"uSenao",
+		"body":[
+			"\\uSenao{${1:else block without else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lSenao{}":{
+		"prefix":"lSenao",
+		"body":[
+			"\\lSenao{${1:else’s line text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SenaoSe{}{}":{
+		"prefix":"SenaoSe",
+		"body":[
+			"\\SenaoSe{${1:condition}}{${2:elseif block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uSenaoSe{}{}":{
+		"prefix":"uSenaoSe",
+		"body":[
+			"\\uSenaoSe{${1:condition}}{${2:elseif block without end}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lSenaoSe{}{}":{
+		"prefix":"lSenaoSe",
+		"body":[
+			"\\lSenaoSe{${1:condition}}{${2:elseif’s line text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Selec{}{}":{
+		"prefix":"Selec",
+		"body":[
+			"\\Selec{${1:condition}}{${2:switch block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Caso{}{}":{
+		"prefix":"Caso",
+		"body":[
+			"\\Caso{${1:a case}}{${2:case block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uCaso{}{}":{
+		"prefix":"uCaso",
+		"body":[
+			"\\uCaso{${1:a case}}{${2:case block without end}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lCaso{}{}":{
+		"prefix":"lCaso",
+		"body":[
+			"\\lCaso{${1:a case}}{${2:case’s line}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Outro{}":{
+		"prefix":"Outro",
+		"body":[
+			"\\Outro{${1:otherwise block}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lOutro{}":{
+		"prefix":"lOutro",
+		"body":[
+			"\\lOutro{${1:otherwise’s line}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Para{}{}":{
+		"prefix":"Para",
+		"body":[
+			"\\Para{${1:condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lPara{}{}":{
+		"prefix":"lPara",
+		"body":[
+			"\\lPara{${1:condition}}{${2:line text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ParaPar{}{}":{
+		"prefix":"ParaPar",
+		"body":[
+			"\\ParaPar{${1:condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lParaPar{}{}":{
+		"prefix":"lParaPar",
+		"body":[
+			"\\lParaPar{${1:condition}}{${2:line text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ParaCada{}{}":{
+		"prefix":"ParaCada",
+		"body":[
+			"\\ParaCada{${1:condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lParaCada{}{}":{
+		"prefix":"lParaCada",
+		"body":[
+			"\\lParaCada{${1:condition}}{${2:line text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ParaTodo{}{}":{
+		"prefix":"ParaTodo",
+		"body":[
+			"\\ParaTodo{${1:condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lParaTodo{}{}":{
+		"prefix":"lParaTodo",
+		"body":[
+			"\\lParaTodo{${1:condition}}{${2:line text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Enqto{}{}":{
+		"prefix":"Enqto",
+		"body":[
+			"\\Enqto{${1:stop condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lEnqto{}{}":{
+		"prefix":"lEnqto",
+		"body":[
+			"\\lEnqto{${1:stop condition}}{${2:text loop}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FirstWordUpper{}":{
+		"prefix":"FirstWordUpper",
+		"body":[
+			"\\FirstWordUpper{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FirstWordSC{}":{
+		"prefix":"FirstWordSC",
+		"body":[
+			"\\FirstWordSC{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FirstWordLCSC{}":{
+		"prefix":"FirstWordLCSC",
+		"body":[
+			"\\FirstWordLCSC{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smartuppercase{}":{
+		"prefix":"smartuppercase",
+		"body":[
+			"\\smartuppercase{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smartlowercase{}":{
+		"prefix":"smartlowercase",
+		"body":[
+			"\\smartlowercase{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smartlcsc{}":{
+		"prefix":"smartlcsc",
+		"body":[
+			"\\smartlcsc{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smartsc{}":{
+		"prefix":"smartsc",
+		"body":[
+			"\\smartsc{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UpperOrSC{}":{
+		"prefix":"UpperOrSC",
+		"body":[
+			"\\UpperOrSC{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NormalOrSC{}":{
+		"prefix":"NormalOrSC",
+		"body":[
+			"\\NormalOrSC{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iffieldregex{}{}{}{}":{
+		"prefix":"iffieldregex",
+		"body":[
+			"\\iffieldregex{${1:field}}{${2:regex}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iffieldendswithpunct{}{}{}":{
+		"prefix":"iffieldendswithpunct",
+		"body":[
+			"\\iffieldendswithpunct{${1:field}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfGivenIsInitial{}{}":{
+		"prefix":"IfGivenIsInitial",
+		"body":[
+			"\\IfGivenIsInitial{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"abntnum{}":{
+		"prefix":"abntnum",
+		"body":[
+			"\\abntnum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bibnameunderscore":{
+		"prefix":"bibnameunderscore",
+		"body":[
+			"\\bibnameunderscore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nopunctdash":{
+		"prefix":"nopunctdash",
+		"body":[
+			"\\nopunctdash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UpperOrSCCite{}":{
+		"prefix":"UpperOrSCCite",
+		"body":[
+			"\\UpperOrSCCite{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NormalOrSCCite{}":{
+		"prefix":"NormalOrSCCite",
+		"body":[
+			"\\NormalOrSCCite{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfGivenIsInit{}{}":{
+		"prefix":"IfGivenIsInit",
+		"body":[
+			"\\IfGivenIsInit{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FirstWord{}":{
+		"prefix":"FirstWord",
+		"body":[
+			"\\FirstWord{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addapud":{
+		"prefix":"addapud",
+		"body":[
+			"\\addapud"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"apud{}{}":{
+		"prefix":"apud",
+		"body":[
+			"\\apud{${1:bibid}}{${2:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"apud(){}{}":{
+		"prefix":"apud",
+		"body":[
+			"\\apud(${3:post}){${1:bibid}}{${2:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"apud()(){}{}":{
+		"prefix":"apud",
+		"body":[
+			"\\apud(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1901,7 +2084,8 @@
 		"prefix":"apud",
 		"body":[
 			"\\apud(${5:pre})(${6:post})[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1909,7 +2093,8 @@
 		"prefix":"apud",
 		"body":[
 			"\\apud[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1917,7 +2102,8 @@
 		"prefix":"apud",
 		"body":[
 			"\\apud[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1925,7 +2111,8 @@
 		"prefix":"apud",
 		"body":[
 			"\\apud(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1933,7 +2120,8 @@
 		"prefix":"plaincite",
 		"body":[
 			"\\plaincite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1941,7 +2129,17 @@
 		"prefix":"plaincite",
 		"body":[
 			"\\plaincite[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plaincite{}":{
+		"prefix":"plaincite",
+		"body":[
+			"\\plaincite{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1949,7 +2147,8 @@
 		"prefix":"citelastname",
 		"body":[
 			"\\citelastname[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1957,7 +2156,26 @@
 		"prefix":"citelastname",
 		"body":[
 			"\\citelastname[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citelastname{}":{
+		"prefix":"citelastname",
+		"body":[
+			"\\citelastname{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textapud{}{}":{
+		"prefix":"textapud",
+		"body":[
+			"\\textapud{${1:bibid}}{${2:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1965,7 +2183,8 @@
 		"prefix":"textapud",
 		"body":[
 			"\\textapud{${1:bibid}}[${3:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1973,7 +2192,8 @@
 		"prefix":"textapud",
 		"body":[
 			"\\textapud[${3:post}]{${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1981,7 +2201,8 @@
 		"prefix":"textapud",
 		"body":[
 			"\\textapud[${3:post}]{${1:bibid}}[${4:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1989,7 +2210,35 @@
 		"prefix":"textapud",
 		"body":[
 			"\\textapud[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeyearorsh*[][]{}":{
+		"prefix":"*citeyearorsh",
+		"body":[
+			"\\citeyearorsh*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeyearorsh*[]{}":{
+		"prefix":"*citeyearorsh",
+		"body":[
+			"\\citeyearorsh*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeyearorsh*{}":{
+		"prefix":"*citeyearorsh",
+		"body":[
+			"\\citeyearorsh*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -1999,7 +2248,8 @@
 			"\\begin{agradecimentos}",
 				"\t$1",
 			"\\end{agradecimentos}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2009,7 +2259,19 @@
 			"\\begin{axioma}",
 				"\t$1",
 			"\\end{axioma}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"axioma[]":{
+		"prefix":"axioma",
+		"body":[
+			"\\begin{axioma}",
+				"\t[${1:heading%text}]",
+			"\\end{axioma}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2019,7 +2281,19 @@
 			"\\begin{conjectura}",
 				"\t$1",
 			"\\end{conjectura}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conjectura[]":{
+		"prefix":"conjectura",
+		"body":[
+			"\\begin{conjectura}",
+				"\t[${1:heading%text}]",
+			"\\end{conjectura}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2029,7 +2303,19 @@
 			"\\begin{corolario}",
 				"\t$1",
 			"\\end{corolario}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"corolario[]":{
+		"prefix":"corolario",
+		"body":[
+			"\\begin{corolario}",
+				"\t[${1:heading%text}]",
+			"\\end{corolario}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2039,7 +2325,19 @@
 			"\\begin{definicao}",
 				"\t$1",
 			"\\end{definicao}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"definicao[]":{
+		"prefix":"definicao",
+		"body":[
+			"\\begin{definicao}",
+				"\t[${1:heading%text}]",
+			"\\end{definicao}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2049,7 +2347,8 @@
 			"\\begin{desenho}",
 				"\t$1",
 			"\\end{desenho}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2059,7 +2358,8 @@
 			"\\begin{diagrama}",
 				"\t$1",
 			"\\end{diagrama}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2069,7 +2369,8 @@
 			"\\begin{epigrafe}",
 				"\t$1",
 			"\\end{epigrafe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2079,7 +2380,8 @@
 			"\\begin{esquema}",
 				"\t$1",
 			"\\end{esquema}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2089,7 +2391,19 @@
 			"\\begin{exemplo}",
 				"\t$1",
 			"\\end{exemplo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exemplo[]":{
+		"prefix":"exemplo",
+		"body":[
+			"\\begin{exemplo}",
+				"\t[${1:heading%text}]",
+			"\\end{exemplo}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2099,7 +2413,8 @@
 			"\\begin{fluxograma}",
 				"\t$1",
 			"\\end{fluxograma}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2109,7 +2424,8 @@
 			"\\begin{folhaderosto}",
 				"\t$1",
 			"\\end{folhaderosto}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2119,7 +2435,8 @@
 			"\\begin{fotografia}",
 				"\t$1",
 			"\\end{fotografia}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2129,7 +2446,8 @@
 			"\\begin{grafico}",
 				"\t$1",
 			"\\end{grafico}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2139,7 +2457,19 @@
 			"\\begin{hipotese}",
 				"\t$1",
 			"\\end{hipotese}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hipotese[]":{
+		"prefix":"hipotese",
+		"body":[
+			"\\begin{hipotese}",
+				"\t[${1:heading%text}]",
+			"\\end{hipotese}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2149,7 +2479,19 @@
 			"\\begin{lema}",
 				"\t$1",
 			"\\end{lema}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lema[]":{
+		"prefix":"lema",
+		"body":[
+			"\\begin{lema}",
+				"\t[${1:heading%text}]",
+			"\\end{lema}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2159,7 +2501,8 @@
 			"\\begin{mapa}",
 				"\t$1",
 			"\\end{mapa}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2169,7 +2512,8 @@
 			"\\begin{organograma}",
 				"\t$1",
 			"\\end{organograma}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2179,7 +2523,19 @@
 			"\\begin{paradoxo}",
 				"\t$1",
 			"\\end{paradoxo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paradoxo[]":{
+		"prefix":"paradoxo",
+		"body":[
+			"\\begin{paradoxo}",
+				"\t[${1:heading%text}]",
+			"\\end{paradoxo}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2189,7 +2545,8 @@
 			"\\begin{planta}",
 				"\t$1",
 			"\\end{planta}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2199,7 +2556,19 @@
 			"\\begin{proposicao}",
 				"\t$1",
 			"\\end{proposicao}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proposicao[]":{
+		"prefix":"proposicao",
+		"body":[
+			"\\begin{proposicao}",
+				"\t[${1:heading%text}]",
+			"\\end{proposicao}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2209,7 +2578,19 @@
 			"\\begin{prova}",
 				"\t$1",
 			"\\end{prova}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prova[]":{
+		"prefix":"prova",
+		"body":[
+			"\\begin{prova}",
+				"\t[${1:heading%text}]",
+			"\\end{prova}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2219,7 +2600,8 @@
 			"\\begin{quadro}",
 				"\t$1",
 			"\\end{quadro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2229,7 +2611,8 @@
 			"\\begin{resumo}",
 				"\t$1",
 			"\\end{resumo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2239,7 +2622,8 @@
 			"\\begin{retrato}",
 				"\t$1",
 			"\\end{retrato}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2249,116 +2633,18 @@
 			"\\begin{teorema}",
 				"\t$1",
 			"\\end{teorema}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"axioma":{
-		"prefix":"axioma",
-		"body":[
-			"\\begin{axioma}",
-				"\t$1",
-			"\\end{axioma}"
-		]
-	},
-
-
-	"conjectura":{
-		"prefix":"conjectura",
-		"body":[
-			"\\begin{conjectura}",
-				"\t$1",
-			"\\end{conjectura}"
-		]
-	},
-
-
-	"corolario":{
-		"prefix":"corolario",
-		"body":[
-			"\\begin{corolario}",
-				"\t$1",
-			"\\end{corolario}"
-		]
-	},
-
-
-	"definicao":{
-		"prefix":"definicao",
-		"body":[
-			"\\begin{definicao}",
-				"\t$1",
-			"\\end{definicao}"
-		]
-	},
-
-
-	"exemplo":{
-		"prefix":"exemplo",
-		"body":[
-			"\\begin{exemplo}",
-				"\t$1",
-			"\\end{exemplo}"
-		]
-	},
-
-
-	"hipotese":{
-		"prefix":"hipotese",
-		"body":[
-			"\\begin{hipotese}",
-				"\t$1",
-			"\\end{hipotese}"
-		]
-	},
-
-
-	"lema":{
-		"prefix":"lema",
-		"body":[
-			"\\begin{lema}",
-				"\t$1",
-			"\\end{lema}"
-		]
-	},
-
-
-	"paradoxo":{
-		"prefix":"paradoxo",
-		"body":[
-			"\\begin{paradoxo}",
-				"\t$1",
-			"\\end{paradoxo}"
-		]
-	},
-
-
-	"proposicao":{
-		"prefix":"proposicao",
-		"body":[
-			"\\begin{proposicao}",
-				"\t$1",
-			"\\end{proposicao}"
-		]
-	},
-
-
-	"prova":{
-		"prefix":"prova",
-		"body":[
-			"\\begin{prova}",
-				"\t$1",
-			"\\end{prova}"
-		]
-	},
-
-
-	"teorema":{
+	"teorema[]":{
 		"prefix":"teorema",
 		"body":[
 			"\\begin{teorema}",
-				"\t$1",
+				"\t[${1:heading%text}]",
 			"\\end{teorema}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

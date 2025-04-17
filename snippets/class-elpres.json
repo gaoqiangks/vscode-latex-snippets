@@ -5,7 +5,8 @@
 		"prefix":"distance",
 		"body":[
 			"\\distance{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"auvimm",
 		"body":[
 			"\\auvimm{${1:text}}{${2:media file%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"fromlinktext",
 		"body":[
 			"\\fromlinktext{${1:text}}{${2:link label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"totargettext",
 		"body":[
 			"\\totargettext{${1:text}}{${2:link label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"slidetitlecolor",
 		"body":[
 			"\\slidetitlecolor{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"pagenrconst",
 		"body":[
 			"\\pagenrconst"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"fontna",
 		"body":[
 			"\\fontna"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"screenformat",
 		"body":[
 			"\\screenformat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"navigation",
 		"body":[
 			"\\navigation"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"abstand",
 		"body":[
 			"\\abstand{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -87,7 +97,19 @@
 			"\\begin{psli}",
 				"\t$1",
 			"\\end{psli}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psli[]":{
+		"prefix":"psli",
+		"body":[
+			"\\begin{psli}",
+				"\t[${1:heading%text}]",
+			"\\end{psli}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -97,7 +119,8 @@
 			"\\begin{rsli}",
 				"\t$1",
 			"\\end{rsli}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -107,7 +130,8 @@
 			"\\begin{citemize}",
 				"\t$1",
 			"\\end{citemize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +141,8 @@
 			"\\begin{cenumerate}",
 				"\t$1",
 			"\\end{cenumerate}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,16 +152,7 @@
 			"\\begin{cdescription}",
 				"\t$1",
 			"\\end{cdescription}"
-		]
-	},
-
-
-	"psli":{
-		"prefix":"psli",
-		"body":[
-			"\\begin{psli}",
-				"\t$1",
-			"\\end{psli}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

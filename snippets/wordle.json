@@ -1,42 +1,46 @@
 {
 
 
-	"WordleGrid":{
+	"WordleGrid{}":{
 		"prefix":"WordleGrid",
 		"body":[
 			"\\begin{WordleGrid}",
-				"\t$1",
+				"\t{${1:word%text}}",
 			"\\end{WordleGrid}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"GrilleSutom":{
-		"prefix":"GrilleSutom",
-		"body":[
-			"\\begin{GrilleSutom}",
-				"\t$1",
-			"\\end{GrilleSutom}"
-		]
-	},
-
-
-	"WordleGrid":{
+	"WordleGrid[]{}":{
 		"prefix":"WordleGrid",
 		"body":[
 			"\\begin{WordleGrid}",
-				"\t$1",
+				"\t[${2:keyvals}]{${1:word%text}}",
 			"\\end{WordleGrid}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"GrilleSutom":{
+	"GrilleSutom{}":{
 		"prefix":"GrilleSutom",
 		"body":[
 			"\\begin{GrilleSutom}",
-				"\t$1",
+				"\t{${1:mot%text}}",
 			"\\end{GrilleSutom}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GrilleSutom[]{}":{
+		"prefix":"GrilleSutom",
+		"body":[
+			"\\begin{GrilleSutom}",
+				"\t[${2:clés%keyvals}]{${1:mot%text}}",
+			"\\end{GrilleSutom}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

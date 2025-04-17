@@ -5,7 +5,8 @@
 		"prefix":"newpgfornamentfamily",
 		"body":[
 			"\\newpgfornamentfamily{${1:family%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,167 +14,8 @@
 		"prefix":"pgfornament",
 		"body":[
 			"\\pgfornament{${1:ornament number}}"
-		]
-	},
-
-
-	"pgfornamentline{}{}{}{}":{
-		"prefix":"pgfornamentline",
-		"body":[
-			"\\pgfornamentline{${1:point1}}{${2:point2}}{${3:number}}{${4:ornament number}}"
-		]
-	},
-
-
-	"pgfornamenthline{}{}{}{}":{
-		"prefix":"pgfornamenthline",
-		"body":[
-			"\\pgfornamenthline{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
-		]
-	},
-
-
-	"pgfornamentvline{}{}{}{}":{
-		"prefix":"pgfornamentvline",
-		"body":[
-			"\\pgfornamentvline{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
-		]
-	},
-
-
-	"getornamentlength{}{}{}{}":{
-		"prefix":"getornamentlength",
-		"body":[
-			"\\getornamentlength{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
-		]
-	},
-
-
-	"resetpgfornamentstyle":{
-		"prefix":"resetpgfornamentstyle",
-		"body":[
-			"\\resetpgfornamentstyle"
-		]
-	},
-
-
-	"callornament{}":{
-		"prefix":"callornament",
-		"body":[
-			"\\callornament{${1:file}}"
-		]
-	},
-
-
-	"pgfornamentscale":{
-		"prefix":"pgfornamentscale",
-		"body":[
-			"\\pgfornamentscale"
-		]
-	},
-
-
-	"pgfornamentwidth":{
-		"prefix":"pgfornamentwidth",
-		"body":[
-			"\\pgfornamentwidth"
-		]
-	},
-
-
-	"pgfornamentheight":{
-		"prefix":"pgfornamentheight",
-		"body":[
-			"\\pgfornamentheight"
-		]
-	},
-
-
-	"pgfornamentcolor":{
-		"prefix":"pgfornamentcolor",
-		"body":[
-			"\\pgfornamentcolor"
-		]
-	},
-
-
-	"pgfornamentopacity":{
-		"prefix":"pgfornamentopacity",
-		"body":[
-			"\\pgfornamentopacity"
-		]
-	},
-
-
-	"pgfornamentanchor":{
-		"prefix":"pgfornamentanchor",
-		"body":[
-			"\\pgfornamentanchor"
-		]
-	},
-
-
-	"pgfornamentydelta":{
-		"prefix":"pgfornamentydelta",
-		"body":[
-			"\\pgfornamentydelta"
-		]
-	},
-
-
-	"ornamenttopos":{
-		"prefix":"ornamenttopos",
-		"body":[
-			"\\ornamenttopos"
-		]
-	},
-
-
-	"ornamenttoanchor":{
-		"prefix":"ornamenttoanchor",
-		"body":[
-			"\\ornamenttoanchor"
-		]
-	},
-
-
-	"ornamenttosymmetry":{
-		"prefix":"ornamenttosymmetry",
-		"body":[
-			"\\ornamenttosymmetry"
-		]
-	},
-
-
-	"ornamentlen":{
-		"prefix":"ornamentlen",
-		"body":[
-			"\\ornamentlen"
-		]
-	},
-
-
-	"pgfOrnamentsObject":{
-		"prefix":"pgfOrnamentsObject",
-		"body":[
-			"\\pgfOrnamentsObject"
-		]
-	},
-
-
-	"OrnamentsFamily":{
-		"prefix":"OrnamentsFamily",
-		"body":[
-			"\\OrnamentsFamily"
-		]
-	},
-
-
-	"SavedOrnamentsFamily":{
-		"prefix":"SavedOrnamentsFamily",
-		"body":[
-			"\\SavedOrnamentsFamily"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +23,17 @@
 		"prefix":"pgfornament",
 		"body":[
 			"\\pgfornament[${2:options%keyvals}]{${1:ornament number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfornamentline{}{}{}{}":{
+		"prefix":"pgfornamentline",
+		"body":[
+			"\\pgfornamentline{${1:point1}}{${2:point2}}{${3:number}}{${4:ornament number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,16 +41,189 @@
 		"prefix":"pgfornamentline",
 		"body":[
 			"\\pgfornamentline[${5:options%keyvals}]{${1:point1}}{${2:point2}}{${3:number}}{${4:ornament number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"newfamily":{
+	"pgfornamenthline{}{}{}{}":{
+		"prefix":"pgfornamenthline",
+		"body":[
+			"\\pgfornamenthline{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentvline{}{}{}{}":{
+		"prefix":"pgfornamentvline",
+		"body":[
+			"\\pgfornamentvline{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getornamentlength{}{}{}{}":{
+		"prefix":"getornamentlength",
+		"body":[
+			"\\getornamentlength{${1:anchor1}}{${2:anchor2}}{${3:direction}}{${4:ornament number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetpgfornamentstyle":{
+		"prefix":"resetpgfornamentstyle",
+		"body":[
+			"\\resetpgfornamentstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"callornament{}":{
+		"prefix":"callornament",
+		"body":[
+			"\\callornament{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentscale":{
+		"prefix":"pgfornamentscale",
+		"body":[
+			"\\pgfornamentscale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentwidth":{
+		"prefix":"pgfornamentwidth",
+		"body":[
+			"\\pgfornamentwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentheight":{
+		"prefix":"pgfornamentheight",
+		"body":[
+			"\\pgfornamentheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentcolor":{
+		"prefix":"pgfornamentcolor",
+		"body":[
+			"\\pgfornamentcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentopacity":{
+		"prefix":"pgfornamentopacity",
+		"body":[
+			"\\pgfornamentopacity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentanchor":{
+		"prefix":"pgfornamentanchor",
+		"body":[
+			"\\pgfornamentanchor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfornamentydelta":{
+		"prefix":"pgfornamentydelta",
+		"body":[
+			"\\pgfornamentydelta"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ornamenttopos":{
+		"prefix":"ornamenttopos",
+		"body":[
+			"\\ornamenttopos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ornamenttoanchor":{
+		"prefix":"ornamenttoanchor",
+		"body":[
+			"\\ornamenttoanchor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ornamenttosymmetry":{
+		"prefix":"ornamenttosymmetry",
+		"body":[
+			"\\ornamenttosymmetry"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ornamentlen":{
+		"prefix":"ornamentlen",
+		"body":[
+			"\\ornamentlen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfOrnamentsObject":{
+		"prefix":"pgfOrnamentsObject",
+		"body":[
+			"\\pgfOrnamentsObject"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OrnamentsFamily":{
+		"prefix":"OrnamentsFamily",
+		"body":[
+			"\\OrnamentsFamily"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SavedOrnamentsFamily":{
+		"prefix":"SavedOrnamentsFamily",
+		"body":[
+			"\\SavedOrnamentsFamily"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newfamily[]":{
 		"prefix":"newfamily",
 		"body":[
 			"\\begin{newfamily}",
-				"\t$1",
+				"\t[${1:family%keyvals}]",
 			"\\end{newfamily}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,31 +5,8 @@
 		"prefix":"psmagneticfield",
 		"body":[
 			"\\psmagneticfield(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"psmagneticfieldThreeD()()":{
-		"prefix":"psmagneticfieldThreeD",
-		"body":[
-			"\\psmagneticfieldThreeD(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"psBarMagnet":{
-		"prefix":"psBarMagnet",
-		"body":[
-			"\\psBarMagnet"
-		]
-	},
-
-
-	"psBarMagnet()":{
-		"prefix":"psBarMagnet",
-		"body":[
-			"\\psBarMagnet(${1:x},${2:y})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"psmagneticfield",
 		"body":[
 			"\\psmagneticfield[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psmagneticfieldThreeD()()":{
+		"prefix":"psmagneticfieldThreeD",
+		"body":[
+			"\\psmagneticfieldThreeD(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,26 @@
 		"prefix":"psmagneticfieldThreeD",
 		"body":[
 			"\\psmagneticfieldThreeD[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBarMagnet":{
+		"prefix":"psBarMagnet",
+		"body":[
+			"\\psBarMagnet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psBarMagnet()":{
+		"prefix":"psBarMagnet",
+		"body":[
+			"\\psBarMagnet(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"psBarMagnet",
 		"body":[
 			"\\psBarMagnet[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"psBarMagnet",
 		"body":[
 			"\\psBarMagnet[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -1,18 +1,20 @@
 {
 
 
-	"nicefrac{}{}":{
-		"prefix":"nicefrac",
-		"body":[
-			"\\nicefrac{${1:num%:translatable}}{${2:den%:translatable}}"
-		]
-	},
-
-
 	"nicefrac[]{}{}":{
 		"prefix":"nicefrac",
 		"body":[
 			"\\nicefrac[${3:fontcmd%:translatable}]{${1:num%:translatable}}{${2:den%:translatable}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nicefrac{}{}":{
+		"prefix":"nicefrac",
+		"body":[
+			"\\nicefrac{${1:num%:translatable}}{${2:den%:translatable}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

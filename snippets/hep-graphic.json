@@ -5,7 +5,8 @@
 		"prefix":"graphicpath",
 		"body":[
 			"\\graphicpath{${1:path%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"includetikz",
 		"body":[
 			"\\includetikz{${1:file}}"
-		]
-	},
-
-
-	"includefeynman{}":{
-		"prefix":"includefeynman",
-		"body":[
-			"\\includefeynman{${1:file}}"
-		]
-	},
-
-
-	"includetikz*{}":{
-		"prefix":"*includetikz",
-		"body":[
-			"\\includetikz*{${1:file}}"
-		]
-	},
-
-
-	"includetikz*[]{}":{
-		"prefix":"*includetikz",
-		"body":[
-			"\\includetikz*[${2:width%plain}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +23,34 @@
 		"prefix":"includetikz",
 		"body":[
 			"\\includetikz[${2:width%plain}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includetikz*{}":{
+		"prefix":"*includetikz",
+		"body":[
+			"\\includetikz*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"includetikz*[]{}":{
+		"prefix":"*includetikz",
+		"body":[
+			"\\includetikz*[${2:width%plain}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"includefeynman{}":{
+		"prefix":"includefeynman",
+		"body":[
+			"\\includefeynman{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

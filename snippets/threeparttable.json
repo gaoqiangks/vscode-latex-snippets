@@ -5,7 +5,8 @@
 		"prefix":"tnote",
 		"body":[
 			"\\tnote{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"TPTminimum",
 		"body":[
 			"\\TPTminimum"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"TPToverlap",
 		"body":[
 			"\\TPToverlap"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"TPTrlap",
 		"body":[
 			"\\TPTrlap"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"TPTtagStyle",
 		"body":[
 			"\\TPTtagStyle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"TPTnoteLabel",
 		"body":[
 			"\\TPTnoteLabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"TPTnoteSettings",
 		"body":[
 			"\\TPTnoteSettings"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"TPTdoTablenotes",
 		"body":[
 			"\\TPTdoTablenotes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,37 +79,19 @@
 			"\\begin{threeparttable}",
 				"\t$1",
 			"\\end{threeparttable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"measuredfigure":{
-		"prefix":"measuredfigure",
-		"body":[
-			"\\begin{measuredfigure}",
-				"\t$1",
-			"\\end{measuredfigure}"
-		]
-	},
-
-
-	"tablenotes":{
-		"prefix":"tablenotes",
-		"body":[
-			"\\begin{tablenotes}",
-				"\t$1",
-			"\\end{tablenotes}"
-		]
-	},
-
-
-	"threeparttable":{
+	"threeparttable[]":{
 		"prefix":"threeparttable",
 		"body":[
 			"\\begin{threeparttable}",
-				"\t$1",
+				"\t[${1:pos%keyvals}]",
 			"\\end{threeparttable}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -111,7 +101,19 @@
 			"\\begin{measuredfigure}",
 				"\t$1",
 			"\\end{measuredfigure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"measuredfigure[]":{
+		"prefix":"measuredfigure",
+		"body":[
+			"\\begin{measuredfigure}",
+				"\t[${1:pos%keyvals}]",
+			"\\end{measuredfigure}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -121,6 +123,18 @@
 			"\\begin{tablenotes}",
 				"\t$1",
 			"\\end{tablenotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablenotes[]":{
+		"prefix":"tablenotes",
+		"body":[
+			"\\begin{tablenotes}",
+				"\t[${1:options%keyvals}]",
+			"\\end{tablenotes}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

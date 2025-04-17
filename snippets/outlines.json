@@ -1,43 +1,12 @@
 {
 
 
-	"outlinei":{
-		"prefix":"outlinei",
-		"body":[
-			"\\outlinei"
-		]
-	},
-
-
-	"outlineii":{
-		"prefix":"outlineii",
-		"body":[
-			"\\outlineii"
-		]
-	},
-
-
-	"outlineiii":{
-		"prefix":"outlineiii",
-		"body":[
-			"\\outlineiii"
-		]
-	},
-
-
-	"outlineiiii":{
-		"prefix":"outlineiiii",
-		"body":[
-			"\\outlineiiii"
-		]
-	},
-
-
 	"1[]":{
 		"prefix":"1",
 		"body":[
 			"\\1[${1:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +14,8 @@
 		"prefix":"2",
 		"body":[
 			"\\2[${1:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +23,8 @@
 		"prefix":"3",
 		"body":[
 			"\\3[${1:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +32,44 @@
 		"prefix":"4",
 		"body":[
 			"\\4[${1:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"outlinei":{
+		"prefix":"outlinei",
+		"body":[
+			"\\outlinei"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outlineii":{
+		"prefix":"outlineii",
+		"body":[
+			"\\outlineii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outlineiii":{
+		"prefix":"outlineiii",
+		"body":[
+			"\\outlineiii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outlineiiii":{
+		"prefix":"outlineiiii",
+		"body":[
+			"\\outlineiiii"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,16 +79,18 @@
 			"\\begin{outline}",
 				"\t$1",
 			"\\end{outline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"outline":{
+	"outline[]":{
 		"prefix":"outline",
 		"body":[
 			"\\begin{outline}",
-				"\t$1",
+				"\t[${1:style%keyvals}]",
 			"\\end{outline}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

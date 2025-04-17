@@ -5,7 +5,8 @@
 		"prefix":"lecturename",
 		"body":[
 			"\\lecturename"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"autorecitazione",
 		"body":[
 			"\\autorecitazione"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"structureA",
 		"body":[
 			"\\structureA"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"structureB",
 		"body":[
 			"\\structureB"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,55 +41,8 @@
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"sidegraphics{}{}":{
-		"prefix":"sidegraphics",
-		"body":[
-			"\\sidegraphics{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"sidegraphics<overlay specification>{}{}":{
-		"prefix":"sidegraphics<overlay specification>",
-		"body":[
-			"\\sidegraphics<overlay specification>{${1:imagefile}}{${2:TikZ options}}"
-		]
-	},
-
-
-	"lectureinfoot":{
-		"prefix":"lectureinfoot",
-		"body":[
-			"\\lectureinfoot"
-		]
-	},
-
-
-	"frametitlesidebar":{
-		"prefix":"frametitlesidebar",
-		"body":[
-			"\\frametitlesidebar"
-		]
-	},
-
-
-	"mail{}":{
-		"prefix":"mail",
-		"body":[
-			"\\mail{${1:address%text}}"
-		]
-	},
-
-
-	"datelecture":{
-		"prefix":"datelecture",
-		"body":[
-			"\\datelecture"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +50,17 @@
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sidegraphics{}{}":{
+		"prefix":"sidegraphics",
+		"body":[
+			"\\sidegraphics{${1:imagefile}}{${2:TikZ options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"sidegraphics",
 		"body":[
 			"\\sidegraphics[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sidegraphics<overlay specification>{}{}":{
+		"prefix":"sidegraphics<overlay specification>",
+		"body":[
+			"\\sidegraphics<overlay specification>{${1:imagefile}}{${2:TikZ options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,44 @@
 		"prefix":"sidegraphics<overlay specification>",
 		"body":[
 			"\\sidegraphics<overlay specification>[${3:options%keyvals}]{${1:imagefile}}{${2:TikZ options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lectureinfoot":{
+		"prefix":"lectureinfoot",
+		"body":[
+			"\\lectureinfoot"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"frametitlesidebar":{
+		"prefix":"frametitlesidebar",
+		"body":[
+			"\\frametitlesidebar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mail{}":{
+		"prefix":"mail",
+		"body":[
+			"\\mail{${1:address%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"datelecture":{
+		"prefix":"datelecture",
+		"body":[
+			"\\datelecture"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -119,56 +133,62 @@
 			"\\begin{citazione}",
 				"\t$1",
 			"\\end{citazione}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"citazione":{
+	"citazione<>":{
 		"prefix":"citazione",
 		"body":[
 			"\\begin{citazione}",
-				"\t$1",
+				"\t<${1:action specification}>",
 			"\\end{citazione}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"citazione":{
+	"citazione[]":{
 		"prefix":"citazione",
 		"body":[
 			"\\begin{citazione}",
-				"\t$1",
+				"\t[${1:author%text}]",
 			"\\end{citazione}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"citazione":{
+	"citazione<>[]":{
 		"prefix":"citazione",
 		"body":[
 			"\\begin{citazione}",
-				"\t$1",
+				"\t<${2:action specification}>[${1:author%text}]",
 			"\\end{citazione}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"quotation":{
+	"quotation[]":{
 		"prefix":"quotation",
 		"body":[
 			"\\begin{quotation}",
-				"\t$1",
+				"\t[${1:author%text}]",
 			"\\end{quotation}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"quotation":{
+	"quotation<>[]":{
 		"prefix":"quotation",
 		"body":[
 			"\\begin{quotation}",
-				"\t$1",
+				"\t<${2:action specification}>[${1:author%text}]",
 			"\\end{quotation}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

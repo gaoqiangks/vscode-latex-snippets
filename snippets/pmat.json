@@ -5,7 +5,8 @@
 		"prefix":"pmatcross",
 		"body":[
 			"\\pmatcross"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"pmatnocross",
 		"body":[
 			"\\pmatnocross"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"pmatget",
 		"body":[
 			"\\pmatget{${1:parameter 0-6}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,16 +32,18 @@
 		"prefix":"pmatset",
 		"body":[
 			"\\pmatset{${1:parameter 0-6}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pmat":{
+	"pmat{}{}{}":{
 		"prefix":"pmat",
 		"body":[
 			"\\begin{pmat}",
-				"\t$1",
+				"\t{${1:ldelim}}{${2:vline-spec}}{${3:rdelim}}",
 			"\\end{pmat}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

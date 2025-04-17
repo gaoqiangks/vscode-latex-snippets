@@ -5,63 +5,8 @@
 		"prefix":"indices",
 		"body":[
 			"\\indices{${1:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor{}{}":{
-		"prefix":"tensor",
-		"body":[
-			"\\tensor{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"indexmarker":{
-		"prefix":"indexmarker",
-		"body":[
-			"\\indexmarker"
-		]
-	},
-
-
-	"nuclide{}":{
-		"prefix":"nuclide",
-		"body":[
-			"\\nuclide{${1:symbol%formula}}"
-		]
-	},
-
-
-	"nuclideFont":{
-		"prefix":"nuclideFont",
-		"body":[
-			"\\nuclideFont"
-		]
-	},
-
-
-	"massnumFont":{
-		"prefix":"massnumFont",
-		"body":[
-			"\\massnumFont"
-		]
-	},
-
-
-	"tensorSmash":{
-		"prefix":"tensorSmash",
-		"body":[
-			"\\tensorSmash"
-		]
-	},
-
-
-	"tensorStrut":{
-		"prefix":"tensorStrut",
-		"body":[
-			"\\tensorStrut"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,23 +14,17 @@
 		"prefix":"*indices",
 		"body":[
 			"\\indices*{${1:^sup1_sub1^sup2_sub2...}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"tensor*{}{}":{
-		"prefix":"*tensor",
+	"tensor{}{}":{
+		"prefix":"tensor",
 		"body":[
-			"\\tensor*{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
-	},
-
-
-	"tensor*[]{}{}":{
-		"prefix":"*tensor",
-		"body":[
-			"\\tensor*[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
+			"\\tensor{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +32,44 @@
 		"prefix":"tensor",
 		"body":[
 			"\\tensor[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tensor*{}{}":{
+		"prefix":"*tensor",
+		"body":[
+			"\\tensor*{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tensor*[]{}{}":{
+		"prefix":"*tensor",
+		"body":[
+			"\\tensor*[${3:pre-indices}]{${1:symbol}}{${2:^sup1_sub1^sup2_sub2...}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"indexmarker":{
+		"prefix":"indexmarker",
+		"body":[
+			"\\indexmarker"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nuclide{}":{
+		"prefix":"nuclide",
+		"body":[
+			"\\nuclide{${1:symbol%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +77,8 @@
 		"prefix":"nuclide",
 		"body":[
 			"\\nuclide[${2:mass no%formula}]{${1:symbol%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,6 +86,43 @@
 		"prefix":"nuclide",
 		"body":[
 			"\\nuclide[${2:mass no%formula}][${3:atomic no%formula}]{${1:symbol%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuclideFont":{
+		"prefix":"nuclideFont",
+		"body":[
+			"\\nuclideFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"massnumFont":{
+		"prefix":"massnumFont",
+		"body":[
+			"\\massnumFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tensorSmash":{
+		"prefix":"tensorSmash",
+		"body":[
+			"\\tensorSmash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tensorStrut":{
+		"prefix":"tensorStrut",
+		"body":[
+			"\\tensorStrut"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

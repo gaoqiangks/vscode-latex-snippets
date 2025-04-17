@@ -5,63 +5,8 @@
 		"prefix":"codefile",
 		"body":[
 			"\\codefile{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"cvfile{}{}":{
-		"prefix":"cvfile",
-		"body":[
-			"\\cvfile{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"codeset{}":{
-		"prefix":"codeset",
-		"body":[
-			"\\codeset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"thecvcounter":{
-		"prefix":"thecvcounter",
-		"body":[
-			"\\thecvcounter"
-		]
-	},
-
-
-	"codefile*{}{}":{
-		"prefix":"*codefile",
-		"body":[
-			"\\codefile*{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"codefile*[]{}{}":{
-		"prefix":"*codefile",
-		"body":[
-			"\\codefile*[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"cvfile*{}{}":{
-		"prefix":"*cvfile",
-		"body":[
-			"\\cvfile*{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"cvfile*[]{}{}":{
-		"prefix":"*cvfile",
-		"body":[
-			"\\cvfile*[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,35 @@
 		"prefix":"codefile",
 		"body":[
 			"\\codefile[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"codefile*{}{}":{
+		"prefix":"*codefile",
+		"body":[
+			"\\codefile*{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"codefile*[]{}{}":{
+		"prefix":"*codefile",
+		"body":[
+			"\\codefile*[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cvfile{}{}":{
+		"prefix":"cvfile",
+		"body":[
+			"\\cvfile{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,86 +50,131 @@
 		"prefix":"cvfile",
 		"body":[
 			"\\cvfile[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"codebox":{
+	"cvfile*{}{}":{
+		"prefix":"*cvfile",
+		"body":[
+			"\\cvfile*{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cvfile*[]{}{}":{
+		"prefix":"*cvfile",
+		"body":[
+			"\\cvfile*[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"codeset{}":{
+		"prefix":"codeset",
+		"body":[
+			"\\codeset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thecvcounter":{
+		"prefix":"thecvcounter",
+		"body":[
+			"\\thecvcounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"codebox{}":{
 		"prefix":"codebox",
 		"body":[
 			"\\begin{codebox}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{codebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"codebox*":{
-		"prefix":"codebox",
-		"body":[
-			"\\begin{codebox*}",
-				"\t$1",
-			"\\end{codebox*}"
-		]
-	},
-
-
-	"codeview":{
-		"prefix":"codeview",
-		"body":[
-			"\\begin{codeview}",
-				"\t$1",
-			"\\end{codeview}"
-		]
-	},
-
-
-	"codeview*":{
-		"prefix":"codeview",
-		"body":[
-			"\\begin{codeview*}",
-				"\t$1",
-			"\\end{codeview*}"
-		]
-	},
-
-
-	"codebox":{
+	"codebox[]{}":{
 		"prefix":"codebox",
 		"body":[
 			"\\begin{codebox}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
 			"\\end{codebox}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"codebox*":{
-		"prefix":"codebox",
+	"codebox*{}":{
+		"prefix":"*codebox",
 		"body":[
 			"\\begin{codebox*}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{codebox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"codeview":{
+	"codebox*[]{}":{
+		"prefix":"*codebox",
+		"body":[
+			"\\begin{codebox*}",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
+			"\\end{codebox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"codeview{}":{
 		"prefix":"codeview",
 		"body":[
 			"\\begin{codeview}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{codeview}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"codeview*":{
+	"codeview[]{}":{
 		"prefix":"codeview",
 		"body":[
+			"\\begin{codeview}",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
+			"\\end{codeview}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"codeview*{}":{
+		"prefix":"*codeview",
+		"body":[
 			"\\begin{codeview*}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{codeview*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"codeview*[]{}":{
+		"prefix":"*codeview",
+		"body":[
+			"\\begin{codeview*}",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
+			"\\end{codeview*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

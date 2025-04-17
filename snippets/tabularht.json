@@ -5,31 +5,8 @@
 		"prefix":"interrowspace",
 		"body":[
 			"\\interrowspace{${1:height spec%keyvals}}"
-		]
-	},
-
-
-	"interrowfill":{
-		"prefix":"interrowfill",
-		"body":[
-			"\\interrowfill"
-		]
-	},
-
-
-	"interrowstart":{
-		"prefix":"interrowstart",
-		"body":[
-			"\\interrowstart"
-		]
-	},
-
-
-	"interrowstop":{
-		"prefix":"interrowstop",
-		"body":[
-			"\\interrowstop"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"interrowspace",
 		"body":[
 			"\\interrowspace[${2:line num list}]{${1:height spec%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"interrowfill":{
+		"prefix":"interrowfill",
+		"body":[
+			"\\interrowfill"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"interrowfill",
 		"body":[
 			"\\interrowfill[${1:line num list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"interrowstart":{
+		"prefix":"interrowstart",
+		"body":[
+			"\\interrowstart"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,46 +50,60 @@
 		"prefix":"interrowstart",
 		"body":[
 			"\\interrowstart[${1:line num list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tabularht":{
+	"interrowstop":{
+		"prefix":"interrowstop",
+		"body":[
+			"\\interrowstop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tabularht{}{}":{
 		"prefix":"tabularht",
 		"body":[
 			"\\begin{tabularht}",
-				"\t$1",
+				"\t{${1:height spec%keyvals}}{${2:preamble}}",
 			"\\end{tabularht}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabularht*":{
-		"prefix":"tabularht",
+	"tabularht*{}{}{}":{
+		"prefix":"*tabularht",
 		"body":[
 			"\\begin{tabularht*}",
-				"\t$1",
+				"\t{${1:height spec%keyvals}}{${2:width}}{${3:preamble}}",
 			"\\end{tabularht*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"arrayht":{
+	"arrayht{}{}":{
 		"prefix":"arrayht",
 		"body":[
 			"\\begin{arrayht}",
-				"\t$1",
+				"\t{${1:height spec%keyvals}}{${2:preamble}}",
 			"\\end{arrayht}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tabularhtx":{
+	"tabularhtx{}{}{}":{
 		"prefix":"tabularhtx",
 		"body":[
 			"\\begin{tabularhtx}",
-				"\t$1",
+				"\t{${1:height spec%keyvals}}{${2:width}}{${3:preamble}}",
 			"\\end{tabularhtx}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,63 +5,8 @@
 		"prefix":"bibliographyunit",
 		"body":[
 			"\\bibliographyunit"
-		]
-	},
-
-
-	"putbib":{
-		"prefix":"putbib",
-		"body":[
-			"\\putbib"
-		]
-	},
-
-
-	"defaultbibliography{}":{
-		"prefix":"defaultbibliography",
-		"body":[
-			"\\defaultbibliography{${1:bib file}}"
-		]
-	},
-
-
-	"defaultbibliographystyle{}":{
-		"prefix":"defaultbibliographystyle",
-		"body":[
-			"\\defaultbibliographystyle{${1:style%keyvals}}"
-		]
-	},
-
-
-	"cite*{}":{
-		"prefix":"*cite",
-		"body":[
-			"\\cite*{${1:bibid}}"
-		]
-	},
-
-
-	"nocite*{}":{
-		"prefix":"*nocite",
-		"body":[
-			"\\nocite*{${1:bibid}}"
-		]
-	},
-
-
-	"bibliography*{}":{
-		"prefix":"*bibliography",
-		"body":[
-			"\\bibliography*{${1:bib file}}"
-		]
-	},
-
-
-	"bibliographystyle*{}":{
-		"prefix":"*bibliographystyle",
-		"body":[
-			"\\bibliographystyle*{${1:style%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,35 @@
 		"prefix":"bibliographyunit",
 		"body":[
 			"\\bibliographyunit[${1:unit}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cite*{}":{
+		"prefix":"*cite",
+		"body":[
+			"\\cite*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nocite*{}":{
+		"prefix":"*nocite",
+		"body":[
+			"\\nocite*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"putbib":{
+		"prefix":"putbib",
+		"body":[
+			"\\putbib"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +50,44 @@
 		"prefix":"putbib",
 		"body":[
 			"\\putbib[${1:bib file}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defaultbibliography{}":{
+		"prefix":"defaultbibliography",
+		"body":[
+			"\\defaultbibliography{${1:bib file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultbibliographystyle{}":{
+		"prefix":"defaultbibliographystyle",
+		"body":[
+			"\\defaultbibliographystyle{${1:style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bibliography*{}":{
+		"prefix":"*bibliography",
+		"body":[
+			"\\bibliography*{${1:bib file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bibliographystyle*{}":{
+		"prefix":"*bibliographystyle",
+		"body":[
+			"\\bibliographystyle*{${1:style%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -87,16 +97,18 @@
 			"\\begin{bibunit}",
 				"\t$1",
 			"\\end{bibunit}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bibunit":{
+	"bibunit[]":{
 		"prefix":"bibunit",
 		"body":[
 			"\\begin{bibunit}",
-				"\t$1",
+				"\t[${1:style%keyvals}]",
 			"\\end{bibunit}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

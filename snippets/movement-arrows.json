@@ -5,103 +5,8 @@
 		"prefix":"mkword",
 		"body":[
 			"\\mkword{${1:word%text}}"
-		]
-	},
-
-
-	"mvarrow{}{}":{
-		"prefix":"mvarrow",
-		"body":[
-			"\\mvarrow{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink{}{}":{
-		"prefix":"mvlink",
-		"body":[
-			"\\mvlink{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"setarrowstyle{}":{
-		"prefix":"setarrowstyle",
-		"body":[
-			"\\setarrowstyle{${1:style}}"
-		]
-	},
-
-
-	"arrowheight":{
-		"prefix":"arrowheight",
-		"body":[
-			"\\arrowheight"
-		]
-	},
-
-
-	"extraexheight":{
-		"prefix":"extraexheight",
-		"body":[
-			"\\extraexheight"
-		]
-	},
-
-
-	"glarrowheight":{
-		"prefix":"glarrowheight",
-		"body":[
-			"\\glarrowheight"
-		]
-	},
-
-
-	"arrowstrut":{
-		"prefix":"arrowstrut",
-		"body":[
-			"\\arrowstrut"
-		]
-	},
-
-
-	"arrowgloss":{
-		"prefix":"arrowgloss",
-		"body":[
-			"\\arrowgloss"
-		]
-	},
-
-
-	"mvarrow*{}{}":{
-		"prefix":"*mvarrow",
-		"body":[
-			"\\mvarrow*{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvarrow*[]{}{}":{
-		"prefix":"*mvarrow",
-		"body":[
-			"\\mvarrow*[${3:options}]{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink*{}{}":{
-		"prefix":"*mvlink",
-		"body":[
-			"\\mvlink*{${1:start}}{${2:end}}"
-		]
-	},
-
-
-	"mvlink*[]{}{}":{
-		"prefix":"*mvlink",
-		"body":[
-			"\\mvlink*[${3:options}]{${1:start}}{${2:end}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,17 @@
 		"prefix":"mkword",
 		"body":[
 			"\\mkword[${2:name}]{${1:word%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mvarrow{}{}":{
+		"prefix":"mvarrow",
+		"body":[
+			"\\mvarrow{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +32,35 @@
 		"prefix":"mvarrow",
 		"body":[
 			"\\mvarrow[${3:options}]{${1:start}}{${2:end}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mvarrow*{}{}":{
+		"prefix":"*mvarrow",
+		"body":[
+			"\\mvarrow*{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mvarrow*[]{}{}":{
+		"prefix":"*mvarrow",
+		"body":[
+			"\\mvarrow*[${3:options}]{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mvlink{}{}":{
+		"prefix":"mvlink",
+		"body":[
+			"\\mvlink{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +68,79 @@
 		"prefix":"mvlink",
 		"body":[
 			"\\mvlink[${3:options}]{${1:start}}{${2:end}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mvlink*{}{}":{
+		"prefix":"*mvlink",
+		"body":[
+			"\\mvlink*{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mvlink*[]{}{}":{
+		"prefix":"*mvlink",
+		"body":[
+			"\\mvlink*[${3:options}]{${1:start}}{${2:end}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setarrowstyle{}":{
+		"prefix":"setarrowstyle",
+		"body":[
+			"\\setarrowstyle{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arrowheight":{
+		"prefix":"arrowheight",
+		"body":[
+			"\\arrowheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extraexheight":{
+		"prefix":"extraexheight",
+		"body":[
+			"\\extraexheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"glarrowheight":{
+		"prefix":"glarrowheight",
+		"body":[
+			"\\glarrowheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arrowstrut":{
+		"prefix":"arrowstrut",
+		"body":[
+			"\\arrowstrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arrowgloss":{
+		"prefix":"arrowgloss",
+		"body":[
+			"\\arrowgloss"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

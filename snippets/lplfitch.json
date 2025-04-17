@@ -5,7 +5,8 @@
 		"prefix":"fitchprf",
 		"body":[
 			"\\fitchprf{${1:premises}}{${2:body}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"subproof",
 		"body":[
 			"\\subproof{${1:premises}}{${2:body}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"brokenform",
 		"body":[
 			"\\brokenform{${1:expr1%formula}}{${2:expr2%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"formula",
 		"body":[
 			"\\formula{${1:expr%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,327 +41,8 @@
 		"prefix":"pline",
 		"body":[
 			"\\pline{${1:expr%formula}}"
-		]
-	},
-
-
-	"boxedsubproof{}{}{}":{
-		"prefix":"boxedsubproof",
-		"body":[
-			"\\boxedsubproof{${1:boxed expr%formula}}{${2:premise%formula}}{${3:body}}"
-		]
-	},
-
-
-	"fpline{}":{
-		"prefix":"fpline",
-		"body":[
-			"\\fpline{${1:expr%formula}}"
-		]
-	},
-
-
-	"tline{}":{
-		"prefix":"tline",
-		"body":[
-			"\\tline{${1:text}}"
-		]
-	},
-
-
-	"lif":{
-		"prefix":"lif",
-		"body":[
-			"\\lif"
-		]
-	},
-
-
-	"liff":{
-		"prefix":"liff",
-		"body":[
-			"\\liff"
-		]
-	},
-
-
-	"lfalse":{
-		"prefix":"lfalse",
-		"body":[
-			"\\lfalse"
-		]
-	},
-
-
-	"lall":{
-		"prefix":"lall",
-		"body":[
-			"\\lall"
-		]
-	},
-
-
-	"lis":{
-		"prefix":"lis",
-		"body":[
-			"\\lis"
-		]
-	},
-
-
-	"exi{}{}":{
-		"prefix":"exi",
-		"body":[
-			"\\exi{${1:var%formula}}{${2:formula}}"
-		]
-	},
-
-
-	"uni{}{}":{
-		"prefix":"uni",
-		"body":[
-			"\\uni{${1:var%formula}}{${2:formula}}"
-		]
-	},
-
-
-	"landi{}":{
-		"prefix":"landi",
-		"body":[
-			"\\landi{${1:line nums}}"
-		]
-	},
-
-
-	"lande{}":{
-		"prefix":"lande",
-		"body":[
-			"\\lande{${1:line num}}"
-		]
-	},
-
-
-	"lori{}":{
-		"prefix":"lori",
-		"body":[
-			"\\lori{${1:line num}}"
-		]
-	},
-
-
-	"lore{}{}{}":{
-		"prefix":"lore",
-		"body":[
-			"\\lore{${1:num1}}{${2:nums2}}{${3:nums3}}"
-		]
-	},
-
-
-	"lnoti{}":{
-		"prefix":"lnoti",
-		"body":[
-			"\\lnoti{${1:line nums}}"
-		]
-	},
-
-
-	"lnote{}":{
-		"prefix":"lnote",
-		"body":[
-			"\\lnote{${1:line num}}"
-		]
-	},
-
-
-	"lfalsei{}{}":{
-		"prefix":"lfalsei",
-		"body":[
-			"\\lfalsei{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"lfalsee{}":{
-		"prefix":"lfalsee",
-		"body":[
-			"\\lfalsee{${1:line num}}"
-		]
-	},
-
-
-	"lifi{}":{
-		"prefix":"lifi",
-		"body":[
-			"\\lifi{${1:line nums}}"
-		]
-	},
-
-
-	"life{}{}":{
-		"prefix":"life",
-		"body":[
-			"\\life{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"liffi{}{}":{
-		"prefix":"liffi",
-		"body":[
-			"\\liffi{${1:nums1}}{${2:nums2}}"
-		]
-	},
-
-
-	"liffe{}{}":{
-		"prefix":"liffe",
-		"body":[
-			"\\liffe{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"reit{}":{
-		"prefix":"reit",
-		"body":[
-			"\\reit{${1:line num}}"
-		]
-	},
-
-
-	"eqi":{
-		"prefix":"eqi",
-		"body":[
-			"\\eqi"
-		]
-	},
-
-
-	"eqe{}{}":{
-		"prefix":"eqe",
-		"body":[
-			"\\eqe{${1:num1}}{${2:num2}}"
-		]
-	},
-
-
-	"lalli{}":{
-		"prefix":"lalli",
-		"body":[
-			"\\lalli{${1:line nums}}"
-		]
-	},
-
-
-	"lalle{}":{
-		"prefix":"lalle",
-		"body":[
-			"\\lalle{${1:line num}}"
-		]
-	},
-
-
-	"lexii{}":{
-		"prefix":"lexii",
-		"body":[
-			"\\lexii{${1:line num}}"
-		]
-	},
-
-
-	"lexie{}{}":{
-		"prefix":"lexie",
-		"body":[
-			"\\lexie{${1:num1}}{${2:nums2}}"
-		]
-	},
-
-
-	"fitcharg{}{}":{
-		"prefix":"fitcharg",
-		"body":[
-			"\\fitcharg{${1:body}}{${2:conclusion}}"
-		]
-	},
-
-
-	"fitchctx{}":{
-		"prefix":"fitchctx",
-		"body":[
-			"\\fitchctx{${1:body}}"
-		]
-	},
-
-
-	"ellipsesline":{
-		"prefix":"ellipsesline",
-		"body":[
-			"\\ellipsesline"
-		]
-	},
-
-
-	"quant{}{}{}":{
-		"prefix":"quant",
-		"body":[
-			"\\quant{${1:quantifier%formula}}{${2:var%formula}}{${3:formula}}"
-		]
-	},
-
-
-	"intro{}":{
-		"prefix":"intro",
-		"body":[
-			"\\intro{${1:arg}}"
-		]
-	},
-
-
-	"elim{}":{
-		"prefix":"elim",
-		"body":[
-			"\\elim{${1:arg}}"
-		]
-	},
-
-
-	"fitchargwidth":{
-		"prefix":"fitchargwidth",
-		"body":[
-			"\\fitchargwidth"
-		]
-	},
-
-
-	"fitchprfwidth":{
-		"prefix":"fitchprfwidth",
-		"body":[
-			"\\fitchprfwidth"
-		]
-	},
-
-
-	"fitchctxwidth":{
-		"prefix":"fitchctxwidth",
-		"body":[
-			"\\fitchctxwidth"
-		]
-	},
-
-
-	"fitchsep":{
-		"prefix":"fitchsep",
-		"body":[
-			"\\fitchsep"
-		]
-	},
-
-
-	"slider":{
-		"prefix":"slider",
-		"body":[
-			"\\slider"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +50,8 @@
 		"prefix":"pline",
 		"body":[
 			"\\pline{${1:expr%formula}}[${2:justification}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -373,7 +59,8 @@
 		"prefix":"pline",
 		"body":[
 			"\\pline[${2:label}]{${1:expr%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -381,7 +68,17 @@
 		"prefix":"pline",
 		"body":[
 			"\\pline[${2:label}]{${1:expr%formula}}[${3:justification}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"boxedsubproof{}{}{}":{
+		"prefix":"boxedsubproof",
+		"body":[
+			"\\boxedsubproof{${1:boxed expr%formula}}{${2:premise%formula}}{${3:body}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,7 +86,17 @@
 		"prefix":"boxedsubproof",
 		"body":[
 			"\\boxedsubproof[${4:label}]{${1:boxed expr%formula}}{${2:premise%formula}}{${3:body}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fpline{}":{
+		"prefix":"fpline",
+		"body":[
+			"\\fpline{${1:expr%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +104,8 @@
 		"prefix":"fpline",
 		"body":[
 			"\\fpline{${1:expr%formula}}[${2:justification}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +113,8 @@
 		"prefix":"fpline",
 		"body":[
 			"\\fpline[${2:label}]{${1:expr%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -413,7 +122,17 @@
 		"prefix":"fpline",
 		"body":[
 			"\\fpline[${2:label}]{${1:expr%formula}}[${3:justification}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tline{}":{
+		"prefix":"tline",
+		"body":[
+			"\\tline{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,6 +140,340 @@
 		"prefix":"tline",
 		"body":[
 			"\\tline[${2:label}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lif":{
+		"prefix":"lif",
+		"body":[
+			"\\lif"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"liff":{
+		"prefix":"liff",
+		"body":[
+			"\\liff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lfalse":{
+		"prefix":"lfalse",
+		"body":[
+			"\\lfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lall":{
+		"prefix":"lall",
+		"body":[
+			"\\lall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lis":{
+		"prefix":"lis",
+		"body":[
+			"\\lis"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exi{}{}":{
+		"prefix":"exi",
+		"body":[
+			"\\exi{${1:var%formula}}{${2:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uni{}{}":{
+		"prefix":"uni",
+		"body":[
+			"\\uni{${1:var%formula}}{${2:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"landi{}":{
+		"prefix":"landi",
+		"body":[
+			"\\landi{${1:line nums}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lande{}":{
+		"prefix":"lande",
+		"body":[
+			"\\lande{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lori{}":{
+		"prefix":"lori",
+		"body":[
+			"\\lori{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lore{}{}{}":{
+		"prefix":"lore",
+		"body":[
+			"\\lore{${1:num1}}{${2:nums2}}{${3:nums3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lnoti{}":{
+		"prefix":"lnoti",
+		"body":[
+			"\\lnoti{${1:line nums}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lnote{}":{
+		"prefix":"lnote",
+		"body":[
+			"\\lnote{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lfalsei{}{}":{
+		"prefix":"lfalsei",
+		"body":[
+			"\\lfalsei{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lfalsee{}":{
+		"prefix":"lfalsee",
+		"body":[
+			"\\lfalsee{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lifi{}":{
+		"prefix":"lifi",
+		"body":[
+			"\\lifi{${1:line nums}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"life{}{}":{
+		"prefix":"life",
+		"body":[
+			"\\life{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"liffi{}{}":{
+		"prefix":"liffi",
+		"body":[
+			"\\liffi{${1:nums1}}{${2:nums2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"liffe{}{}":{
+		"prefix":"liffe",
+		"body":[
+			"\\liffe{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reit{}":{
+		"prefix":"reit",
+		"body":[
+			"\\reit{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqi":{
+		"prefix":"eqi",
+		"body":[
+			"\\eqi"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqe{}{}":{
+		"prefix":"eqe",
+		"body":[
+			"\\eqe{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lalli{}":{
+		"prefix":"lalli",
+		"body":[
+			"\\lalli{${1:line nums}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lalle{}":{
+		"prefix":"lalle",
+		"body":[
+			"\\lalle{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lexii{}":{
+		"prefix":"lexii",
+		"body":[
+			"\\lexii{${1:line num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lexie{}{}":{
+		"prefix":"lexie",
+		"body":[
+			"\\lexie{${1:num1}}{${2:nums2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitcharg{}{}":{
+		"prefix":"fitcharg",
+		"body":[
+			"\\fitcharg{${1:body}}{${2:conclusion}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchctx{}":{
+		"prefix":"fitchctx",
+		"body":[
+			"\\fitchctx{${1:body}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ellipsesline":{
+		"prefix":"ellipsesline",
+		"body":[
+			"\\ellipsesline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quant{}{}{}":{
+		"prefix":"quant",
+		"body":[
+			"\\quant{${1:quantifier%formula}}{${2:var%formula}}{${3:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"intro{}":{
+		"prefix":"intro",
+		"body":[
+			"\\intro{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"elim{}":{
+		"prefix":"elim",
+		"body":[
+			"\\elim{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchargwidth":{
+		"prefix":"fitchargwidth",
+		"body":[
+			"\\fitchargwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchprfwidth":{
+		"prefix":"fitchprfwidth",
+		"body":[
+			"\\fitchprfwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchctxwidth":{
+		"prefix":"fitchctxwidth",
+		"body":[
+			"\\fitchctxwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchsep":{
+		"prefix":"fitchsep",
+		"body":[
+			"\\fitchsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"slider":{
+		"prefix":"slider",
+		"body":[
+			"\\slider"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

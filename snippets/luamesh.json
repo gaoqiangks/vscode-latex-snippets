@@ -5,191 +5,8 @@
 		"prefix":"buildMeshBW",
 		"body":[
 			"\\buildMeshBW{${1:<list of points> or <file>}}"
-		]
-	},
-
-
-	"buildMeshBWinc{}{}{}":{
-		"prefix":"buildMeshBWinc",
-		"body":[
-			"\\buildMeshBWinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"drawPointsMesh{}":{
-		"prefix":"drawPointsMesh",
-		"body":[
-			"\\drawPointsMesh{${1:<list of points> or <file>}}"
-		]
-	},
-
-
-	"drawPointsMeshinc{}{}{}":{
-		"prefix":"drawPointsMeshinc",
-		"body":[
-			"\\drawPointsMeshinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"meshAddPointBW{}{}":{
-		"prefix":"meshAddPointBW",
-		"body":[
-			"\\meshAddPointBW{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}"
-		]
-	},
-
-
-	"meshAddPointBWinc{}{}{}{}":{
-		"prefix":"meshAddPointBWinc",
-		"body":[
-			"\\meshAddPointBWinc{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}{${3:code before}}{${4:code after}}"
-		]
-	},
-
-
-	"meshPolygon{}":{
-		"prefix":"meshPolygon",
-		"body":[
-			"\\meshPolygon{${1:<list of points> or <file>}}"
-		]
-	},
-
-
-	"meshPolygonInc{}{}{}":{
-		"prefix":"meshPolygonInc",
-		"body":[
-			"\\meshPolygonInc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"luameshmpcolor":{
-		"prefix":"luameshmpcolor",
-		"body":[
-			"\\luameshmpcolor"
-		]
-	},
-
-
-	"luameshmpcolorBack":{
-		"prefix":"luameshmpcolorBack",
-		"body":[
-			"\\luameshmpcolorBack"
-		]
-	},
-
-
-	"luameshmpcolorBbox":{
-		"prefix":"luameshmpcolorBbox",
-		"body":[
-			"\\luameshmpcolorBbox"
-		]
-	},
-
-
-	"luameshmpcolorCircle":{
-		"prefix":"luameshmpcolorCircle",
-		"body":[
-			"\\luameshmpcolorCircle"
-		]
-	},
-
-
-	"luameshmpcolorNew":{
-		"prefix":"luameshmpcolorNew",
-		"body":[
-			"\\luameshmpcolorNew"
-		]
-	},
-
-
-	"luameshmpcolorPoly":{
-		"prefix":"luameshmpcolorPoly",
-		"body":[
-			"\\luameshmpcolorPoly"
-		]
-	},
-
-
-	"buildVoronoiBW{}":{
-		"prefix":"buildVoronoiBW",
-		"body":[
-			"\\buildVoronoiBW{${1:<list of points> or <file>}}"
-		]
-	},
-
-
-	"buildVoronoiBWinc{}{}{}":{
-		"prefix":"buildVoronoiBWinc",
-		"body":[
-			"\\buildVoronoiBWinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"luameshmpcolorVoronoi":{
-		"prefix":"luameshmpcolorVoronoi",
-		"body":[
-			"\\luameshmpcolorVoronoi"
-		]
-	},
-
-
-	"drawGmsh{}":{
-		"prefix":"drawGmsh",
-		"body":[
-			"\\drawGmsh{${1:file}}"
-		]
-	},
-
-
-	"drawGmshinc{}{}{}":{
-		"prefix":"drawGmshinc",
-		"body":[
-			"\\drawGmshinc{${1:file}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"gmshVoronoi{}":{
-		"prefix":"gmshVoronoi",
-		"body":[
-			"\\gmshVoronoi{${1:file}}"
-		]
-	},
-
-
-	"gmshVoronoiinc{}{}{}":{
-		"prefix":"gmshVoronoiinc",
-		"body":[
-			"\\gmshVoronoiinc{${1:file}}{${2:code before}}{${3:code after}}"
-		]
-	},
-
-
-	"CircumPoint":{
-		"prefix":"CircumPoint",
-		"body":[
-			"\\CircumPoint"
-		]
-	},
-
-
-	"MeshPoint":{
-		"prefix":"MeshPoint",
-		"body":[
-			"\\MeshPoint"
-		]
-	},
-
-
-	"NewPoint":{
-		"prefix":"NewPoint",
-		"body":[
-			"\\NewPoint"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +14,17 @@
 		"prefix":"buildMeshBW",
 		"body":[
 			"\\buildMeshBW[${2:options}]{${1:<list of points> or <file>}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"buildMeshBWinc{}{}{}":{
+		"prefix":"buildMeshBWinc",
+		"body":[
+			"\\buildMeshBWinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +32,17 @@
 		"prefix":"buildMeshBWinc",
 		"body":[
 			"\\buildMeshBWinc[${4:options}]{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawPointsMesh{}":{
+		"prefix":"drawPointsMesh",
+		"body":[
+			"\\drawPointsMesh{${1:<list of points> or <file>}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +50,17 @@
 		"prefix":"drawPointsMesh",
 		"body":[
 			"\\drawPointsMesh[${2:options}]{${1:<list of points> or <file>}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawPointsMeshinc{}{}{}":{
+		"prefix":"drawPointsMeshinc",
+		"body":[
+			"\\drawPointsMeshinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +68,17 @@
 		"prefix":"drawPointsMeshinc",
 		"body":[
 			"\\drawPointsMeshinc[${4:options}]{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"meshAddPointBW{}{}":{
+		"prefix":"meshAddPointBW",
+		"body":[
+			"\\meshAddPointBW{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +86,17 @@
 		"prefix":"meshAddPointBW",
 		"body":[
 			"\\meshAddPointBW[${3:options}]{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"meshAddPointBWinc{}{}{}{}":{
+		"prefix":"meshAddPointBWinc",
+		"body":[
+			"\\meshAddPointBWinc{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}{${3:code before}}{${4:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +104,17 @@
 		"prefix":"meshAddPointBWinc",
 		"body":[
 			"\\meshAddPointBWinc[${5:options}]{${1:<list of points> or <file>}}{${2:<point> or <number of line>}}{${3:code before}}{${4:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"meshPolygon{}":{
+		"prefix":"meshPolygon",
+		"body":[
+			"\\meshPolygon{${1:<list of points> or <file>}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +122,17 @@
 		"prefix":"meshPolygon",
 		"body":[
 			"\\meshPolygon[${2:options}]{${1:<list of points> or <file>}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"meshPolygonInc{}{}{}":{
+		"prefix":"meshPolygonInc",
+		"body":[
+			"\\meshPolygonInc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +140,71 @@
 		"prefix":"meshPolygonInc",
 		"body":[
 			"\\meshPolygonInc[${4:options}]{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luameshmpcolor":{
+		"prefix":"luameshmpcolor",
+		"body":[
+			"\\luameshmpcolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luameshmpcolorBack":{
+		"prefix":"luameshmpcolorBack",
+		"body":[
+			"\\luameshmpcolorBack"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luameshmpcolorBbox":{
+		"prefix":"luameshmpcolorBbox",
+		"body":[
+			"\\luameshmpcolorBbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luameshmpcolorCircle":{
+		"prefix":"luameshmpcolorCircle",
+		"body":[
+			"\\luameshmpcolorCircle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luameshmpcolorNew":{
+		"prefix":"luameshmpcolorNew",
+		"body":[
+			"\\luameshmpcolorNew"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"luameshmpcolorPoly":{
+		"prefix":"luameshmpcolorPoly",
+		"body":[
+			"\\luameshmpcolorPoly"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildVoronoiBW{}":{
+		"prefix":"buildVoronoiBW",
+		"body":[
+			"\\buildVoronoiBW{${1:<list of points> or <file>}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +212,17 @@
 		"prefix":"buildVoronoiBW",
 		"body":[
 			"\\buildVoronoiBW[${2:options}]{${1:<list of points> or <file>}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"buildVoronoiBWinc{}{}{}":{
+		"prefix":"buildVoronoiBWinc",
+		"body":[
+			"\\buildVoronoiBWinc{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +230,26 @@
 		"prefix":"buildVoronoiBWinc",
 		"body":[
 			"\\buildVoronoiBWinc[${4:options}]{${1:<list of points> or <file>}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"luameshmpcolorVoronoi":{
+		"prefix":"luameshmpcolorVoronoi",
+		"body":[
+			"\\luameshmpcolorVoronoi"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"drawGmsh{}":{
+		"prefix":"drawGmsh",
+		"body":[
+			"\\drawGmsh{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +257,17 @@
 		"prefix":"drawGmsh",
 		"body":[
 			"\\drawGmsh[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawGmshinc{}{}{}":{
+		"prefix":"drawGmshinc",
+		"body":[
+			"\\drawGmshinc{${1:file}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +275,17 @@
 		"prefix":"drawGmshinc",
 		"body":[
 			"\\drawGmshinc[${4:options%keyvals}]{${1:file}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gmshVoronoi{}":{
+		"prefix":"gmshVoronoi",
+		"body":[
+			"\\gmshVoronoi{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +293,17 @@
 		"prefix":"gmshVoronoi",
 		"body":[
 			"\\gmshVoronoi[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gmshVoronoiinc{}{}{}":{
+		"prefix":"gmshVoronoiinc",
+		"body":[
+			"\\gmshVoronoiinc{${1:file}}{${2:code before}}{${3:code after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,6 +311,34 @@
 		"prefix":"gmshVoronoiinc",
 		"body":[
 			"\\gmshVoronoiinc[${4:options%keyvals}]{${1:file}}{${2:code before}}{${3:code after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CircumPoint":{
+		"prefix":"CircumPoint",
+		"body":[
+			"\\CircumPoint"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MeshPoint":{
+		"prefix":"MeshPoint",
+		"body":[
+			"\\MeshPoint"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewPoint":{
+		"prefix":"NewPoint",
+		"body":[
+			"\\NewPoint"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

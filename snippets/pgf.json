@@ -5,7 +5,8 @@
 		"prefix":"pgfplotstreamstart",
 		"body":[
 			"\\pgfplotstreamstart"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"pgfplotstreampoint",
 		"body":[
 			"\\pgfplotstreampoint{${1:point}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"pgfplotstreampointoutlier",
 		"body":[
 			"\\pgfplotstreampointoutlier{${1:point}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"pgfplotstreampointundefined",
 		"body":[
 			"\\pgfplotstreampointundefined"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"pgfplotstreamnewdataset",
 		"body":[
 			"\\pgfplotstreamnewdataset"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"pgfplotstreamspecial",
 		"body":[
 			"\\pgfplotstreamspecial{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"pgfplotstreamend",
 		"body":[
 			"\\pgfplotstreamend"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"pgfdeclareplothandler",
 		"body":[
 			"\\pgfdeclareplothandler{${1:macro%cmd}}{${2:args}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"pgfsetlinetofirstplotpoint",
 		"body":[
 			"\\pgfsetlinetofirstplotpoint"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"pgfsetmovetofirstplotpoint",
 		"body":[
 			"\\pgfsetmovetofirstplotpoint"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"pgfplothandlerlineto",
 		"body":[
 			"\\pgfplothandlerlineto"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"pgfplothandlerpolygon",
 		"body":[
 			"\\pgfplothandlerpolygon"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"pgfplothandlerdiscard",
 		"body":[
 			"\\pgfplothandlerdiscard"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"pgfplothandlerrecord",
 		"body":[
 			"\\pgfplothandlerrecord{${1:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"pgfplotxyfile",
 		"body":[
 			"\\pgfplotxyfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"pgfplotxyzfile",
 		"body":[
 			"\\pgfplotxyzfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,415 +149,8 @@
 		"prefix":"pgfplotgnuplot",
 		"body":[
 			"\\pgfplotgnuplot{${1:gnuplot function}}"
-		]
-	},
-
-
-	"pgfplotfunction{}{}{}":{
-		"prefix":"pgfplotfunction",
-		"body":[
-			"\\pgfplotfunction{${1:variable%cmd}}{${2:sample list}}{${3:point}}"
-		]
-	},
-
-
-	"pgfnodeparttextbox":{
-		"prefix":"pgfnodeparttextbox",
-		"body":[
-			"\\pgfnodeparttextbox"
-		]
-	},
-
-
-	"pgfmultipartnode{}{}{}{}":{
-		"prefix":"pgfmultipartnode",
-		"body":[
-			"\\pgfmultipartnode{${1:shape}}{${2:anchor}}{${3:name}}{${4:path usage cmd}}"
-		]
-	},
-
-
-	"pgfnode{}{}{}{}{}":{
-		"prefix":"pgfnode",
-		"body":[
-			"\\pgfnode{${1:shape}}{${2:anchor}}{${3:label text}}{${4:name}}{${5:path usage cmd}}"
-		]
-	},
-
-
-	"pgfpositionnodelater{}":{
-		"prefix":"pgfpositionnodelater",
-		"body":[
-			"\\pgfpositionnodelater{${1:macro}}"
-		]
-	},
-
-
-	"pgfpositionnodelatername":{
-		"prefix":"pgfpositionnodelatername",
-		"body":[
-			"\\pgfpositionnodelatername"
-		]
-	},
-
-
-	"pgfpositionnodelaterminx":{
-		"prefix":"pgfpositionnodelaterminx",
-		"body":[
-			"\\pgfpositionnodelaterminx"
-		]
-	},
-
-
-	"pgfpositionnodelatermaxx":{
-		"prefix":"pgfpositionnodelatermaxx",
-		"body":[
-			"\\pgfpositionnodelatermaxx"
-		]
-	},
-
-
-	"pgfpositionnodelaterminy":{
-		"prefix":"pgfpositionnodelaterminy",
-		"body":[
-			"\\pgfpositionnodelaterminy"
-		]
-	},
-
-
-	"pgfpositionnodelatermaxy":{
-		"prefix":"pgfpositionnodelatermaxy",
-		"body":[
-			"\\pgfpositionnodelatermaxy"
-		]
-	},
-
-
-	"ifpgflatenodepositioning":{
-		"prefix":"ifpgflatenodepositioning",
-		"body":[
-			"\\ifpgflatenodepositioning"
-		]
-	},
-
-
-	"pgflatenodepositioningtrue":{
-		"prefix":"pgflatenodepositioningtrue",
-		"body":[
-			"\\pgflatenodepositioningtrue"
-		]
-	},
-
-
-	"pgflatenodepositioningfalse":{
-		"prefix":"pgflatenodepositioningfalse",
-		"body":[
-			"\\pgflatenodepositioningfalse"
-		]
-	},
-
-
-	"pgfpositionnodelaterbox":{
-		"prefix":"pgfpositionnodelaterbox",
-		"body":[
-			"\\pgfpositionnodelaterbox"
-		]
-	},
-
-
-	"pgfpositionnodenow{}":{
-		"prefix":"pgfpositionnodenow",
-		"body":[
-			"\\pgfpositionnodenow{${1:coordinate}}"
-		]
-	},
-
-
-	"pgffakenode{}":{
-		"prefix":"pgffakenode",
-		"body":[
-			"\\pgffakenode{${1:node name}}"
-		]
-	},
-
-
-	"pgfnodepostsetupcode{}{}":{
-		"prefix":"pgfnodepostsetupcode",
-		"body":[
-			"\\pgfnodepostsetupcode{${1:node name}}{${2:code}}"
-		]
-	},
-
-
-	"pgfnodealias{}{}":{
-		"prefix":"pgfnodealias",
-		"body":[
-			"\\pgfnodealias{${1:new name}}{${2:existing name}}"
-		]
-	},
-
-
-	"pgfnoderename{}{}":{
-		"prefix":"pgfnoderename",
-		"body":[
-			"\\pgfnoderename{${1:new name}}{${2:existing name}}"
-		]
-	},
-
-
-	"pgfcoordinate{}{}":{
-		"prefix":"pgfcoordinate",
-		"body":[
-			"\\pgfcoordinate{${1:name}}{${2:coordinate}}"
-		]
-	},
-
-
-	"pgfdeclaregenericanchor{}{}":{
-		"prefix":"pgfdeclaregenericanchor",
-		"body":[
-			"\\pgfdeclaregenericanchor{${1:anchor}}{${2:code}}"
-		]
-	},
-
-
-	"pgfpointanchor{}{}":{
-		"prefix":"pgfpointanchor",
-		"body":[
-			"\\pgfpointanchor{${1:node}}{${2:anchor}}"
-		]
-	},
-
-
-	"pgfpointshapeborder{}{}":{
-		"prefix":"pgfpointshapeborder",
-		"body":[
-			"\\pgfpointshapeborder{${1:node}}{${2:point}}"
-		]
-	},
-
-
-	"pgfgetnodeparts{}{}":{
-		"prefix":"pgfgetnodeparts",
-		"body":[
-			"\\pgfgetnodeparts{${1:macro}}{${2:shape name}}"
-		]
-	},
-
-
-	"pgfdeclareshape{}{}":{
-		"prefix":"pgfdeclareshape",
-		"body":[
-			"\\pgfdeclareshape{${1:shape name}}{${2:shape spec}}"
-		]
-	},
-
-
-	"ifpgfshapeborderusesincircle":{
-		"prefix":"ifpgfshapeborderusesincircle",
-		"body":[
-			"\\ifpgfshapeborderusesincircle"
-		]
-	},
-
-
-	"pgfshapeborderusesincircletrue":{
-		"prefix":"pgfshapeborderusesincircletrue",
-		"body":[
-			"\\pgfshapeborderusesincircletrue"
-		]
-	},
-
-
-	"pgfshapeborderusesincirclefalse":{
-		"prefix":"pgfshapeborderusesincirclefalse",
-		"body":[
-			"\\pgfshapeborderusesincirclefalse"
-		]
-	},
-
-
-	"nodeparts{}":{
-		"prefix":"nodeparts",
-		"body":[
-			"\\nodeparts{${1:list of node parts}}"
-		]
-	},
-
-
-	"savedanchor{}{}":{
-		"prefix":"savedanchor",
-		"body":[
-			"\\savedanchor{${1:cmd}}{${2:code}}"
-		]
-	},
-
-
-	"saveddimen{}{}":{
-		"prefix":"saveddimen",
-		"body":[
-			"\\saveddimen{${1:cmd}}{${2:code}}"
-		]
-	},
-
-
-	"savedmacro{}{}":{
-		"prefix":"savedmacro",
-		"body":[
-			"\\savedmacro{${1:cmd}}{${2:code}}"
-		]
-	},
-
-
-	"addtosavedmacro{}":{
-		"prefix":"addtosavedmacro",
-		"body":[
-			"\\addtosavedmacro{${1:macro}}"
-		]
-	},
-
-
-	"anchor{}{}":{
-		"prefix":"anchor",
-		"body":[
-			"\\anchor{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"deferredanchor{}{}":{
-		"prefix":"deferredanchor",
-		"body":[
-			"\\deferredanchor{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"anchorborder{}":{
-		"prefix":"anchorborder",
-		"body":[
-			"\\anchorborder{${1:code}}"
-		]
-	},
-
-
-	"backgroundpath{}":{
-		"prefix":"backgroundpath",
-		"body":[
-			"\\backgroundpath{${1:code}}"
-		]
-	},
-
-
-	"foregroundpath{}":{
-		"prefix":"foregroundpath",
-		"body":[
-			"\\foregroundpath{${1:code}}"
-		]
-	},
-
-
-	"behindbackgroundpath{}":{
-		"prefix":"behindbackgroundpath",
-		"body":[
-			"\\behindbackgroundpath{${1:code}}"
-		]
-	},
-
-
-	"beforebackgroundpath{}":{
-		"prefix":"beforebackgroundpath",
-		"body":[
-			"\\beforebackgroundpath{${1:code}}"
-		]
-	},
-
-
-	"behindforegroundpath{}":{
-		"prefix":"behindforegroundpath",
-		"body":[
-			"\\behindforegroundpath{${1:code}}"
-		]
-	},
-
-
-	"beforeforegroundpath{}":{
-		"prefix":"beforeforegroundpath",
-		"body":[
-			"\\beforeforegroundpath{${1:code}}"
-		]
-	},
-
-
-	"inheritsavedanchors":{
-		"prefix":"inheritsavedanchors",
-		"body":[
-			"\\inheritsavedanchors"
-		]
-	},
-
-
-	"inheritbehindbackgroundpath":{
-		"prefix":"inheritbehindbackgroundpath",
-		"body":[
-			"\\inheritbehindbackgroundpath"
-		]
-	},
-
-
-	"inheritbackgroundpath":{
-		"prefix":"inheritbackgroundpath",
-		"body":[
-			"\\inheritbackgroundpath"
-		]
-	},
-
-
-	"inheritbeforebackgroundpath":{
-		"prefix":"inheritbeforebackgroundpath",
-		"body":[
-			"\\inheritbeforebackgroundpath"
-		]
-	},
-
-
-	"inheritbehindforegroundpath":{
-		"prefix":"inheritbehindforegroundpath",
-		"body":[
-			"\\inheritbehindforegroundpath"
-		]
-	},
-
-
-	"inheritforegroundpath":{
-		"prefix":"inheritforegroundpath",
-		"body":[
-			"\\inheritforegroundpath"
-		]
-	},
-
-
-	"inheritbeforeforegroundpath":{
-		"prefix":"inheritbeforeforegroundpath",
-		"body":[
-			"\\inheritbeforeforegroundpath"
-		]
-	},
-
-
-	"inheritanchor":{
-		"prefix":"inheritanchor",
-		"body":[
-			"\\inheritanchor"
-		]
-	},
-
-
-	"inheritanchorborder":{
-		"prefix":"inheritanchorborder",
-		"body":[
-			"\\inheritanchorborder"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +158,395 @@
 		"prefix":"pgfplotgnuplot",
 		"body":[
 			"\\pgfplotgnuplot[${2:prefix}]{${1:gnuplot function}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfplotfunction{}{}{}":{
+		"prefix":"pgfplotfunction",
+		"body":[
+			"\\pgfplotfunction{${1:variable%cmd}}{${2:sample list}}{${3:point}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfnodeparttextbox":{
+		"prefix":"pgfnodeparttextbox",
+		"body":[
+			"\\pgfnodeparttextbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfmultipartnode{}{}{}{}":{
+		"prefix":"pgfmultipartnode",
+		"body":[
+			"\\pgfmultipartnode{${1:shape}}{${2:anchor}}{${3:name}}{${4:path usage cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfnode{}{}{}{}{}":{
+		"prefix":"pgfnode",
+		"body":[
+			"\\pgfnode{${1:shape}}{${2:anchor}}{${3:label text}}{${4:name}}{${5:path usage cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelater{}":{
+		"prefix":"pgfpositionnodelater",
+		"body":[
+			"\\pgfpositionnodelater{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelatername":{
+		"prefix":"pgfpositionnodelatername",
+		"body":[
+			"\\pgfpositionnodelatername"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelaterminx":{
+		"prefix":"pgfpositionnodelaterminx",
+		"body":[
+			"\\pgfpositionnodelaterminx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelatermaxx":{
+		"prefix":"pgfpositionnodelatermaxx",
+		"body":[
+			"\\pgfpositionnodelatermaxx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelaterminy":{
+		"prefix":"pgfpositionnodelaterminy",
+		"body":[
+			"\\pgfpositionnodelaterminy"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelatermaxy":{
+		"prefix":"pgfpositionnodelatermaxy",
+		"body":[
+			"\\pgfpositionnodelatermaxy"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpgflatenodepositioning":{
+		"prefix":"ifpgflatenodepositioning",
+		"body":[
+			"\\ifpgflatenodepositioning"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgflatenodepositioningtrue":{
+		"prefix":"pgflatenodepositioningtrue",
+		"body":[
+			"\\pgflatenodepositioningtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgflatenodepositioningfalse":{
+		"prefix":"pgflatenodepositioningfalse",
+		"body":[
+			"\\pgflatenodepositioningfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodelaterbox":{
+		"prefix":"pgfpositionnodelaterbox",
+		"body":[
+			"\\pgfpositionnodelaterbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpositionnodenow{}":{
+		"prefix":"pgfpositionnodenow",
+		"body":[
+			"\\pgfpositionnodenow{${1:coordinate}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgffakenode{}":{
+		"prefix":"pgffakenode",
+		"body":[
+			"\\pgffakenode{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfnodepostsetupcode{}{}":{
+		"prefix":"pgfnodepostsetupcode",
+		"body":[
+			"\\pgfnodepostsetupcode{${1:node name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfnodealias{}{}":{
+		"prefix":"pgfnodealias",
+		"body":[
+			"\\pgfnodealias{${1:new name}}{${2:existing name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfnoderename{}{}":{
+		"prefix":"pgfnoderename",
+		"body":[
+			"\\pgfnoderename{${1:new name}}{${2:existing name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfcoordinate{}{}":{
+		"prefix":"pgfcoordinate",
+		"body":[
+			"\\pgfcoordinate{${1:name}}{${2:coordinate}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfdeclaregenericanchor{}{}":{
+		"prefix":"pgfdeclaregenericanchor",
+		"body":[
+			"\\pgfdeclaregenericanchor{${1:anchor}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpointanchor{}{}":{
+		"prefix":"pgfpointanchor",
+		"body":[
+			"\\pgfpointanchor{${1:node}}{${2:anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfpointshapeborder{}{}":{
+		"prefix":"pgfpointshapeborder",
+		"body":[
+			"\\pgfpointshapeborder{${1:node}}{${2:point}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfgetnodeparts{}{}":{
+		"prefix":"pgfgetnodeparts",
+		"body":[
+			"\\pgfgetnodeparts{${1:macro}}{${2:shape name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfdeclareshape{}{}":{
+		"prefix":"pgfdeclareshape",
+		"body":[
+			"\\pgfdeclareshape{${1:shape name}}{${2:shape spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpgfshapeborderusesincircle":{
+		"prefix":"ifpgfshapeborderusesincircle",
+		"body":[
+			"\\ifpgfshapeborderusesincircle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfshapeborderusesincircletrue":{
+		"prefix":"pgfshapeborderusesincircletrue",
+		"body":[
+			"\\pgfshapeborderusesincircletrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfshapeborderusesincirclefalse":{
+		"prefix":"pgfshapeborderusesincirclefalse",
+		"body":[
+			"\\pgfshapeborderusesincirclefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nodeparts{}":{
+		"prefix":"nodeparts",
+		"body":[
+			"\\nodeparts{${1:list of node parts}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savedanchor{}{}":{
+		"prefix":"savedanchor",
+		"body":[
+			"\\savedanchor{${1:cmd}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"saveddimen{}{}":{
+		"prefix":"saveddimen",
+		"body":[
+			"\\saveddimen{${1:cmd}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savedmacro{}{}":{
+		"prefix":"savedmacro",
+		"body":[
+			"\\savedmacro{${1:cmd}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtosavedmacro{}":{
+		"prefix":"addtosavedmacro",
+		"body":[
+			"\\addtosavedmacro{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"anchor{}{}":{
+		"prefix":"anchor",
+		"body":[
+			"\\anchor{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"deferredanchor{}{}":{
+		"prefix":"deferredanchor",
+		"body":[
+			"\\deferredanchor{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"anchorborder{}":{
+		"prefix":"anchorborder",
+		"body":[
+			"\\anchorborder{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"backgroundpath{}":{
+		"prefix":"backgroundpath",
+		"body":[
+			"\\backgroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"foregroundpath{}":{
+		"prefix":"foregroundpath",
+		"body":[
+			"\\foregroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"behindbackgroundpath{}":{
+		"prefix":"behindbackgroundpath",
+		"body":[
+			"\\behindbackgroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beforebackgroundpath{}":{
+		"prefix":"beforebackgroundpath",
+		"body":[
+			"\\beforebackgroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"behindforegroundpath{}":{
+		"prefix":"behindforegroundpath",
+		"body":[
+			"\\behindforegroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beforeforegroundpath{}":{
+		"prefix":"beforeforegroundpath",
+		"body":[
+			"\\beforeforegroundpath{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inheritsavedanchors":{
+		"prefix":"inheritsavedanchors",
+		"body":[
+			"\\inheritsavedanchors"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +554,17 @@
 		"prefix":"inheritsavedanchors",
 		"body":[
 			"\\inheritsavedanchors[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritbehindbackgroundpath":{
+		"prefix":"inheritbehindbackgroundpath",
+		"body":[
+			"\\inheritbehindbackgroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +572,17 @@
 		"prefix":"inheritbehindbackgroundpath",
 		"body":[
 			"\\inheritbehindbackgroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritbackgroundpath":{
+		"prefix":"inheritbackgroundpath",
+		"body":[
+			"\\inheritbackgroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +590,17 @@
 		"prefix":"inheritbackgroundpath",
 		"body":[
 			"\\inheritbackgroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritbeforebackgroundpath":{
+		"prefix":"inheritbeforebackgroundpath",
+		"body":[
+			"\\inheritbeforebackgroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +608,17 @@
 		"prefix":"inheritbeforebackgroundpath",
 		"body":[
 			"\\inheritbeforebackgroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritbehindforegroundpath":{
+		"prefix":"inheritbehindforegroundpath",
+		"body":[
+			"\\inheritbehindforegroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +626,17 @@
 		"prefix":"inheritbehindforegroundpath",
 		"body":[
 			"\\inheritbehindforegroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritforegroundpath":{
+		"prefix":"inheritforegroundpath",
+		"body":[
+			"\\inheritforegroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +644,17 @@
 		"prefix":"inheritforegroundpath",
 		"body":[
 			"\\inheritforegroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritbeforeforegroundpath":{
+		"prefix":"inheritbeforeforegroundpath",
+		"body":[
+			"\\inheritbeforeforegroundpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +662,17 @@
 		"prefix":"inheritbeforeforegroundpath",
 		"body":[
 			"\\inheritbeforeforegroundpath[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritanchor":{
+		"prefix":"inheritanchor",
+		"body":[
+			"\\inheritanchor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +680,17 @@
 		"prefix":"inheritanchor",
 		"body":[
 			"\\inheritanchor[${3:from={${1:shape name}}}]{${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inheritanchorborder":{
+		"prefix":"inheritanchorborder",
+		"body":[
+			"\\inheritanchorborder"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,6 +698,7 @@
 		"prefix":"inheritanchorborder",
 		"body":[
 			"\\inheritanchorborder[${2:from={${1:shape name}}}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

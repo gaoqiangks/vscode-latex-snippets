@@ -5,7 +5,8 @@
 		"prefix":"panel",
 		"body":[
 			"\\panel{${1:width}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,71 +14,8 @@
 		"prefix":"graphic",
 		"body":[
 			"\\graphic{${1:imagefile}}"
-		]
-	},
-
-
-	"graphics{}":{
-		"prefix":"graphics",
-		"body":[
-			"\\graphics{${1:file path}}"
-		]
-	},
-
-
-	"figurehspace":{
-		"prefix":"figurehspace",
-		"body":[
-			"\\figurehspace"
-		]
-	},
-
-
-	"figurevspace":{
-		"prefix":"figurevspace",
-		"body":[
-			"\\figurevspace"
-		]
-	},
-
-
-	"panelhspace":{
-		"prefix":"panelhspace",
-		"body":[
-			"\\panelhspace"
-		]
-	},
-
-
-	"panelvspace":{
-		"prefix":"panelvspace",
-		"body":[
-			"\\panelvspace"
-		]
-	},
-
-
-	"tablehspace":{
-		"prefix":"tablehspace",
-		"body":[
-			"\\tablehspace"
-		]
-	},
-
-
-	"tablevspace":{
-		"prefix":"tablevspace",
-		"body":[
-			"\\tablevspace"
-		]
-	},
-
-
-	"tikzsetnextfilename{}":{
-		"prefix":"tikzsetnextfilename",
-		"body":[
-			"\\tikzsetnextfilename{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,66 +23,145 @@
 		"prefix":"graphic",
 		"body":[
 			"\\graphic[${2:width}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"figures":{
+	"graphics{}":{
+		"prefix":"graphics",
+		"body":[
+			"\\graphics{${1:file path}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figurehspace":{
+		"prefix":"figurehspace",
+		"body":[
+			"\\figurehspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figurevspace":{
+		"prefix":"figurevspace",
+		"body":[
+			"\\figurevspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelhspace":{
+		"prefix":"panelhspace",
+		"body":[
+			"\\panelhspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelvspace":{
+		"prefix":"panelvspace",
+		"body":[
+			"\\panelvspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablehspace":{
+		"prefix":"tablehspace",
+		"body":[
+			"\\tablehspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablevspace":{
+		"prefix":"tablevspace",
+		"body":[
+			"\\tablevspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzsetnextfilename{}":{
+		"prefix":"tikzsetnextfilename",
+		"body":[
+			"\\tikzsetnextfilename{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figures{}":{
 		"prefix":"figures",
 		"body":[
 			"\\begin{figures}",
-				"\t$1",
+				"\t{${1:width%plain}}",
 			"\\end{figures}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"panels":{
-		"prefix":"panels",
-		"body":[
-			"\\begin{panels}",
-				"\t$1",
-			"\\end{panels}"
-		]
-	},
-
-
-	"tables":{
-		"prefix":"tables",
-		"body":[
-			"\\begin{tables}",
-				"\t$1",
-			"\\end{tables}"
-		]
-	},
-
-
-	"figures":{
+	"figures[]{}":{
 		"prefix":"figures",
 		"body":[
 			"\\begin{figures}",
-				"\t$1",
+				"\t[${2:alignment}]{${1:width%plain}}",
 			"\\end{figures}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"panels":{
+	"panels{}":{
 		"prefix":"panels",
 		"body":[
 			"\\begin{panels}",
-				"\t$1",
+				"\t{${1:width%plain}}",
 			"\\end{panels}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tables":{
+	"panels[]{}":{
+		"prefix":"panels",
+		"body":[
+			"\\begin{panels}",
+				"\t[${2:alignment}]{${1:width%plain}}",
+			"\\end{panels}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tables{}":{
 		"prefix":"tables",
 		"body":[
 			"\\begin{tables}",
-				"\t$1",
+				"\t{${1:width%plain}}",
 			"\\end{tables}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tables[]{}":{
+		"prefix":"tables",
+		"body":[
+			"\\begin{tables}",
+				"\t[${2:alignment}]{${1:width%plain}}",
+			"\\end{tables}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

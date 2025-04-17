@@ -1,155 +1,12 @@
 {
 
 
-	"setfnsymbol{}":{
-		"prefix":"setfnsymbol",
+	"DefineFNsymbols{}[]{}":{
+		"prefix":"DefineFNsymbols",
 		"body":[
-			"\\setfnsymbol{${1:set name%keyvals}}"
-		]
-	},
-
-
-	"mpfootnotemark":{
-		"prefix":"mpfootnotemark",
-		"body":[
-			"\\mpfootnotemark"
-		]
-	},
-
-
-	"footref{}":{
-		"prefix":"footref",
-		"body":[
-			"\\footref{${1:label}}"
-		]
-	},
-
-
-	"footnotelayout":{
-		"prefix":"footnotelayout",
-		"body":[
-			"\\footnotelayout"
-		]
-	},
-
-
-	"footglue":{
-		"prefix":"footglue",
-		"body":[
-			"\\footglue"
-		]
-	},
-
-
-	"footnotebaselineskip":{
-		"prefix":"footnotebaselineskip",
-		"body":[
-			"\\footnotebaselineskip"
-		]
-	},
-
-
-	"fudgefactor":{
-		"prefix":"fudgefactor",
-		"body":[
-			"\\fudgefactor"
-		]
-	},
-
-
-	"makefootnoteparagraph":{
-		"prefix":"makefootnoteparagraph",
-		"body":[
-			"\\makefootnoteparagraph"
-		]
-	},
-
-
-	"makehboxofhboxes":{
-		"prefix":"makehboxofhboxes",
-		"body":[
-			"\\makehboxofhboxes"
-		]
-	},
-
-
-	"removehboxes":{
-		"prefix":"removehboxes",
-		"body":[
-			"\\removehboxes"
-		]
-	},
-
-
-	"footnotehint":{
-		"prefix":"footnotehint",
-		"body":[
-			"\\footnotehint"
-		]
-	},
-
-
-	"footnotemargin":{
-		"prefix":"footnotemargin",
-		"body":[
-			"\\footnotemargin"
-		]
-	},
-
-
-	"hangfootparskip":{
-		"prefix":"hangfootparskip",
-		"body":[
-			"\\hangfootparskip"
-		]
-	},
-
-
-	"hangfootparindent":{
-		"prefix":"hangfootparindent",
-		"body":[
-			"\\hangfootparindent"
-		]
-	},
-
-
-	"mpfootnoterule":{
-		"prefix":"mpfootnoterule",
-		"body":[
-			"\\mpfootnoterule"
-		]
-	},
-
-
-	"pagefootnoterule":{
-		"prefix":"pagefootnoterule",
-		"body":[
-			"\\pagefootnoterule"
-		]
-	},
-
-
-	"splitfootnoterule":{
-		"prefix":"splitfootnoterule",
-		"body":[
-			"\\splitfootnoterule"
-		]
-	},
-
-
-	"multiplefootnotemarker":{
-		"prefix":"multiplefootnotemarker",
-		"body":[
-			"\\multiplefootnotemarker"
-		]
-	},
-
-
-	"multfootsep":{
-		"prefix":"multfootsep",
-		"body":[
-			"\\multfootsep"
-		]
+			"\\DefineFNsymbols{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,15 +14,26 @@
 		"prefix":"*DefineFNsymbols",
 		"body":[
 			"\\DefineFNsymbols*{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"DefineFNsymbols{}[]{}":{
-		"prefix":"DefineFNsymbols",
+	"setfnsymbol{}":{
+		"prefix":"setfnsymbol",
 		"body":[
-			"\\DefineFNsymbols{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
-		]
+			"\\setfnsymbol{${1:set name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpfootnotemark":{
+		"prefix":"mpfootnotemark",
+		"body":[
+			"\\mpfootnotemark"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,6 +41,160 @@
 		"prefix":"mpfootnotemark",
 		"body":[
 			"\\mpfootnotemark[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"footref{}":{
+		"prefix":"footref",
+		"body":[
+			"\\footref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotelayout":{
+		"prefix":"footnotelayout",
+		"body":[
+			"\\footnotelayout"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footglue":{
+		"prefix":"footglue",
+		"body":[
+			"\\footglue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotebaselineskip":{
+		"prefix":"footnotebaselineskip",
+		"body":[
+			"\\footnotebaselineskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fudgefactor":{
+		"prefix":"fudgefactor",
+		"body":[
+			"\\fudgefactor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makefootnoteparagraph":{
+		"prefix":"makefootnoteparagraph",
+		"body":[
+			"\\makefootnoteparagraph"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makehboxofhboxes":{
+		"prefix":"makehboxofhboxes",
+		"body":[
+			"\\makehboxofhboxes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removehboxes":{
+		"prefix":"removehboxes",
+		"body":[
+			"\\removehboxes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotehint":{
+		"prefix":"footnotehint",
+		"body":[
+			"\\footnotehint"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotemargin":{
+		"prefix":"footnotemargin",
+		"body":[
+			"\\footnotemargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hangfootparskip":{
+		"prefix":"hangfootparskip",
+		"body":[
+			"\\hangfootparskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hangfootparindent":{
+		"prefix":"hangfootparindent",
+		"body":[
+			"\\hangfootparindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpfootnoterule":{
+		"prefix":"mpfootnoterule",
+		"body":[
+			"\\mpfootnoterule"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagefootnoterule":{
+		"prefix":"pagefootnoterule",
+		"body":[
+			"\\pagefootnoterule"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"splitfootnoterule":{
+		"prefix":"splitfootnoterule",
+		"body":[
+			"\\splitfootnoterule"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multiplefootnotemarker":{
+		"prefix":"multiplefootnotemarker",
+		"body":[
+			"\\multiplefootnotemarker"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multfootsep":{
+		"prefix":"multfootsep",
+		"body":[
+			"\\multfootsep"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

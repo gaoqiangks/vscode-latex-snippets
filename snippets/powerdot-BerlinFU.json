@@ -5,7 +5,8 @@
 		"prefix":"inst",
 		"body":[
 			"\\inst{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"framelogo",
 		"body":[
 			"\\framelogo{${1:graphics code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"insertframelogo",
 		"body":[
 			"\\insertframelogo"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"titlelogo",
 		"body":[
 			"\\titlelogo{${1:graphics code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"inserttitlelogo",
 		"body":[
 			"\\inserttitlelogo"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"fachbereich",
 		"body":[
 			"\\fachbereich{${1:fachbereich}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"insertfachbereich",
 		"body":[
 			"\\insertfachbereich"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"insertsubtitle",
 		"body":[
 			"\\insertsubtitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"institute",
 		"body":[
 			"\\institute{${1:institute}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"insertinstitute",
 		"body":[
 			"\\insertinstitute"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,39 +104,8 @@
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic{${1:imagefile}}"
-		]
-	},
-
-
-	"inserttitlegraphic":{
-		"prefix":"inserttitlegraphic",
-		"body":[
-			"\\inserttitlegraphic"
-		]
-	},
-
-
-	"LaTeXcentering":{
-		"prefix":"LaTeXcentering",
-		"body":[
-			"\\LaTeXcentering"
-		]
-	},
-
-
-	"LaTeXraggedleft":{
-		"prefix":"LaTeXraggedleft",
-		"body":[
-			"\\LaTeXraggedleft"
-		]
-	},
-
-
-	"LaTeXraggedright":{
-		"prefix":"LaTeXraggedright",
-		"body":[
-			"\\LaTeXraggedright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,67 +113,176 @@
 		"prefix":"titlegraphic",
 		"body":[
 			"\\titlegraphic[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"titleslide":{
+	"inserttitlegraphic":{
+		"prefix":"inserttitlegraphic",
+		"body":[
+			"\\inserttitlegraphic"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LaTeXcentering":{
+		"prefix":"LaTeXcentering",
+		"body":[
+			"\\LaTeXcentering"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LaTeXraggedleft":{
+		"prefix":"LaTeXraggedleft",
+		"body":[
+			"\\LaTeXraggedleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LaTeXraggedright":{
+		"prefix":"LaTeXraggedright",
+		"body":[
+			"\\LaTeXraggedright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleslide{}":{
 		"prefix":"titleslide",
 		"body":[
 			"\\begin{titleslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{titleslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"basic":{
+	"titleslide[]{}":{
+		"prefix":"titleslide",
+		"body":[
+			"\\begin{titleslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{titleslide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"basic{}":{
 		"prefix":"basic",
 		"body":[
 			"\\begin{basic}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{basic}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wideslide":{
+	"basic[]{}":{
+		"prefix":"basic",
+		"body":[
+			"\\begin{basic}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{basic}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wideslide{}":{
 		"prefix":"wideslide",
 		"body":[
 			"\\begin{wideslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{wideslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"slide":{
+	"wideslide[]{}":{
+		"prefix":"wideslide",
+		"body":[
+			"\\begin{wideslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{wideslide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"slide{}":{
 		"prefix":"slide",
 		"body":[
 			"\\begin{slide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{slide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sectionslide":{
+	"slide[]{}":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{slide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sectionslide{}":{
 		"prefix":"sectionslide",
 		"body":[
 			"\\begin{sectionslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{sectionslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sectionwideslide":{
+	"sectionslide[]{}":{
+		"prefix":"sectionslide",
+		"body":[
+			"\\begin{sectionslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{sectionslide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sectionwideslide{}":{
 		"prefix":"sectionwideslide",
 		"body":[
 			"\\begin{sectionwideslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{sectionwideslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionwideslide[]{}":{
+		"prefix":"sectionwideslide",
+		"body":[
+			"\\begin{sectionwideslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{sectionwideslide}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -203,7 +292,8 @@
 			"\\begin{LaTeXflushleft}",
 				"\t$1",
 			"\\end{LaTeXflushleft}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +303,8 @@
 			"\\begin{LaTeXflushleft}",
 				"\t$1",
 			"\\end{LaTeXflushleft}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -223,66 +314,7 @@
 			"\\begin{LaTeXcenter}",
 				"\t$1",
 			"\\end{LaTeXcenter}"
-		]
-	},
-
-
-	"titleslide":{
-		"prefix":"titleslide",
-		"body":[
-			"\\begin{titleslide}",
-				"\t$1",
-			"\\end{titleslide}"
-		]
-	},
-
-
-	"basic":{
-		"prefix":"basic",
-		"body":[
-			"\\begin{basic}",
-				"\t$1",
-			"\\end{basic}"
-		]
-	},
-
-
-	"wideslide":{
-		"prefix":"wideslide",
-		"body":[
-			"\\begin{wideslide}",
-				"\t$1",
-			"\\end{wideslide}"
-		]
-	},
-
-
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\begin{slide}",
-				"\t$1",
-			"\\end{slide}"
-		]
-	},
-
-
-	"sectionslide":{
-		"prefix":"sectionslide",
-		"body":[
-			"\\begin{sectionslide}",
-				"\t$1",
-			"\\end{sectionslide}"
-		]
-	},
-
-
-	"sectionwideslide":{
-		"prefix":"sectionwideslide",
-		"body":[
-			"\\begin{sectionwideslide}",
-				"\t$1",
-			"\\end{sectionwideslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

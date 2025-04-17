@@ -5,7 +5,8 @@
 		"prefix":"xsbox",
 		"body":[
 			"\\xsbox{${1:name}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,39 +14,8 @@
 		"prefix":"xsavebox",
 		"body":[
 			"\\xsavebox{${1:name}}{${2:content%text}}"
-		]
-	},
-
-
-	"xusebox{}":{
-		"prefix":"xusebox",
-		"body":[
-			"\\xusebox{${1:name}}"
-		]
-	},
-
-
-	"xsavebox*{}{}":{
-		"prefix":"*xsavebox",
-		"body":[
-			"\\xsavebox*{${1:name}}{${2:content%text}}"
-		]
-	},
-
-
-	"xsavebox*{}[]{}":{
-		"prefix":"*xsavebox",
-		"body":[
-			"\\xsavebox*{${1:name}}[${3:width}]{${2:content%text}}"
-		]
-	},
-
-
-	"xsavebox*{}[][]{}":{
-		"prefix":"*xsavebox",
-		"body":[
-			"\\xsavebox*{${1:name}}[${3:width}][${4:position}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,8 @@
 		"prefix":"xsavebox",
 		"body":[
 			"\\xsavebox{${1:name}}[${3:width}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,26 +32,65 @@
 		"prefix":"xsavebox",
 		"body":[
 			"\\xsavebox{${1:name}}[${3:width}][${4:position}]{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"xlrbox":{
+	"xsavebox*{}{}":{
+		"prefix":"*xsavebox",
+		"body":[
+			"\\xsavebox*{${1:name}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xsavebox*{}[]{}":{
+		"prefix":"*xsavebox",
+		"body":[
+			"\\xsavebox*{${1:name}}[${3:width}]{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xsavebox*{}[][]{}":{
+		"prefix":"*xsavebox",
+		"body":[
+			"\\xsavebox*{${1:name}}[${3:width}][${4:position}]{${2:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xusebox{}":{
+		"prefix":"xusebox",
+		"body":[
+			"\\xusebox{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xlrbox{}":{
 		"prefix":"xlrbox",
 		"body":[
 			"\\begin{xlrbox}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{xlrbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"xlrbox*":{
-		"prefix":"xlrbox",
+	"xlrbox*{}":{
+		"prefix":"*xlrbox",
 		"body":[
 			"\\begin{xlrbox*}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{xlrbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

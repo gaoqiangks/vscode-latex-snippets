@@ -5,7 +5,8 @@
 		"prefix":"setchoices",
 		"body":[
 			"\\setchoices{${1:键值列表%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"AddChoicesCounter",
 		"body":[
 			"\\AddChoicesCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,16 +25,18 @@
 			"\\begin{choices}",
 				"\t$1",
 			"\\end{choices}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"choices":{
+	"choices[]":{
 		"prefix":"choices",
 		"body":[
 			"\\begin{choices}",
-				"\t$1",
+				"\t[${1:键值列表%keyvals}]",
 			"\\end{choices}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

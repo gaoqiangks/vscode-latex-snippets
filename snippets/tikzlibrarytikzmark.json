@@ -5,103 +5,8 @@
 		"prefix":"tikzmark",
 		"body":[
 			"\\tikzmark{${1:name}}"
-		]
-	},
-
-
-	"pgfmark{}":{
-		"prefix":"pgfmark",
-		"body":[
-			"\\pgfmark{${1:name}}"
-		]
-	},
-
-
-	"iftikzmark{}{}{}":{
-		"prefix":"iftikzmark",
-		"body":[
-			"\\iftikzmark{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"iftikzmarkexists{}":{
-		"prefix":"iftikzmarkexists",
-		"body":[
-			"\\iftikzmarkexists{${1:name}}"
-		]
-	},
-
-
-	"iftikzmarkoncurrentpage{}":{
-		"prefix":"iftikzmarkoncurrentpage",
-		"body":[
-			"\\iftikzmarkoncurrentpage{${1:name}}"
-		]
-	},
-
-
-	"iftikzmarkonpage{}{}":{
-		"prefix":"iftikzmarkonpage",
-		"body":[
-			"\\iftikzmarkonpage{${1:name}}{${2:page}}"
-		]
-	},
-
-
-	"tikzmarknode{}{}":{
-		"prefix":"tikzmarknode",
-		"body":[
-			"\\tikzmarknode{${1:name}}{${2:contents}}"
-		]
-	},
-
-
-	"subnode{}{}":{
-		"prefix":"subnode",
-		"body":[
-			"\\subnode{${1:name}}{${2:content}}"
-		]
-	},
-
-
-	"SaveNode{}":{
-		"prefix":"SaveNode",
-		"body":[
-			"\\SaveNode{${1:name}}"
-		]
-	},
-
-
-	"usetikzmarklibrary{}":{
-		"prefix":"usetikzmarklibrary",
-		"body":[
-			"\\usetikzmarklibrary{${1:library%keyvals}}"
-		]
-	},
-
-
-	"StartHighlighting":{
-		"prefix":"StartHighlighting",
-		"body":[
-			"\\StartHighlighting"
-		]
-	},
-
-
-	"StopHighlighting":{
-		"prefix":"StopHighlighting",
-		"body":[
-			"\\StopHighlighting"
-		]
-	},
-
-
-	"Highlight{}":{
-		"prefix":"Highlight",
-		"body":[
-			"\\Highlight{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,62 @@
 		"prefix":"tikzmark",
 		"body":[
 			"\\tikzmark[${2:drawing command}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pgfmark{}":{
+		"prefix":"pgfmark",
+		"body":[
+			"\\pgfmark{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iftikzmark{}{}{}":{
+		"prefix":"iftikzmark",
+		"body":[
+			"\\iftikzmark{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iftikzmarkexists{}":{
+		"prefix":"iftikzmarkexists",
+		"body":[
+			"\\iftikzmarkexists{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iftikzmarkoncurrentpage{}":{
+		"prefix":"iftikzmarkoncurrentpage",
+		"body":[
+			"\\iftikzmarkoncurrentpage{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iftikzmarkonpage{}{}":{
+		"prefix":"iftikzmarkonpage",
+		"body":[
+			"\\iftikzmarkonpage{${1:name}}{${2:page}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzmarknode{}{}":{
+		"prefix":"tikzmarknode",
+		"body":[
+			"\\tikzmarknode{${1:name}}{${2:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,17 @@
 		"prefix":"tikzmarknode",
 		"body":[
 			"\\tikzmarknode[${3:options%keyvals}]{${1:name}}{${2:contents}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subnode{}{}":{
+		"prefix":"subnode",
+		"body":[
+			"\\subnode{${1:name}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +95,17 @@
 		"prefix":"subnode",
 		"body":[
 			"\\subnode[${3:options%keyvals}]{${1:name}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SaveNode{}":{
+		"prefix":"SaveNode",
+		"body":[
+			"\\SaveNode{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +113,26 @@
 		"prefix":"SaveNode",
 		"body":[
 			"\\SaveNode[${2:group name}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usetikzmarklibrary{}":{
+		"prefix":"usetikzmarklibrary",
+		"body":[
+			"\\usetikzmarklibrary{${1:library%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StartHighlighting":{
+		"prefix":"StartHighlighting",
+		"body":[
+			"\\StartHighlighting"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +140,26 @@
 		"prefix":"StartHighlighting",
 		"body":[
 			"\\StartHighlighting[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StopHighlighting":{
+		"prefix":"StopHighlighting",
+		"body":[
+			"\\StopHighlighting"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Highlight{}":{
+		"prefix":"Highlight",
+		"body":[
+			"\\Highlight{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"Highlight",
 		"body":[
 			"\\Highlight[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -159,16 +178,18 @@
 			"\\begin{tikzmarkmath}",
 				"\t$1",
 			"\\end{tikzmarkmath}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tikzmarkmath":{
+	"tikzmarkmath[]":{
 		"prefix":"tikzmarkmath",
 		"body":[
 			"\\begin{tikzmarkmath}",
-				"\t$1",
+				"\t[${1:prefix}]",
 			"\\end{tikzmarkmath}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"setoutputdir",
 		"body":[
 			"\\setoutputdir{${1:directory%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"BeforeStream",
 		"body":[
 			"\\BeforeStream"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"dottotexCutFile",
 		"body":[
 			"\\dottotexCutFile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"dottotexgraphicsinclude",
 		"body":[
 			"\\dottotexgraphicsinclude"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"dottotexgraphicsprocess",
 		"body":[
 			"\\dottotexgraphicsprocess"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,26 +52,29 @@
 			"\\begin{dot2tex}",
 				"\t$1",
 			"\\end{dot2tex}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dottotexverbatimwrite":{
+	"dot2tex[]":{
+		"prefix":"dot2tex",
+		"body":[
+			"\\begin{dot2tex}",
+				"\t[${1:options%keyvals}]",
+			"\\end{dot2tex}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dottotexverbatimwrite{}":{
 		"prefix":"dottotexverbatimwrite",
 		"body":[
 			"\\begin{dottotexverbatimwrite}",
-				"\t$1",
+				"\t{${1:file}}",
 			"\\end{dottotexverbatimwrite}"
-		]
-	},
-
-
-	"dot2tex":{
-		"prefix":"dot2tex",
-		"body":[
-			"\\begin{dot2tex}",
-				"\t$1",
-			"\\end{dot2tex}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

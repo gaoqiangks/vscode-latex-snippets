@@ -5,231 +5,8 @@
 		"prefix":"digiCap",
 		"body":[
 			"\\digiCap{${1:imagefile}}{${2:caption%text}}"
-		]
-	},
-
-
-	"graphicHeight":{
-		"prefix":"graphicHeight",
-		"body":[
-			"\\graphicHeight"
-		]
-	},
-
-
-	"graphicWidth":{
-		"prefix":"graphicWidth",
-		"body":[
-			"\\graphicWidth"
-		]
-	},
-
-
-	"opcolorbox{}":{
-		"prefix":"opcolorbox",
-		"body":[
-			"\\opcolorbox{${1:text}}"
-		]
-	},
-
-
-	"presentationOrder{}":{
-		"prefix":"presentationOrder",
-		"body":[
-			"\\presentationOrder{${1:name1,name2,...}}"
-		]
-	},
-
-
-	"digiDisplaySpace{}{}":{
-		"prefix":"digiDisplaySpace",
-		"body":[
-			"\\digiDisplaySpace{${1:height}}{${2:width}}"
-		]
-	},
-
-
-	"insertCaptions":{
-		"prefix":"insertCaptions",
-		"body":[
-			"\\insertCaptions"
-		]
-	},
-
-
-	"insertThumbs{}{}":{
-		"prefix":"insertThumbs",
-		"body":[
-			"\\insertThumbs{${1:rows}}{${2:columns}}"
-		]
-	},
-
-
-	"dcFirstOpt{}":{
-		"prefix":"dcFirstOpt",
-		"body":[
-			"\\dcFirstOpt{${1:pos keyvals%keyvals}}"
-		]
-	},
-
-
-	"dcSecondOpt{}":{
-		"prefix":"dcSecondOpt",
-		"body":[
-			"\\dcSecondOpt{${1:design keyvals%keyvals}}"
-		]
-	},
-
-
-	"useRollovers":{
-		"prefix":"useRollovers",
-		"body":[
-			"\\useRollovers"
-		]
-	},
-
-
-	"noRollovers":{
-		"prefix":"noRollovers",
-		"body":[
-			"\\noRollovers"
-		]
-	},
-
-
-	"longCapFmt{}":{
-		"prefix":"longCapFmt",
-		"body":[
-			"\\longCapFmt{${1:format cmds}}"
-		]
-	},
-
-
-	"shortCapFmt{}":{
-		"prefix":"shortCapFmt",
-		"body":[
-			"\\shortCapFmt{${1:format cmds}}"
-		]
-	},
-
-
-	"setThumbAppearances{}":{
-		"prefix":"setThumbAppearances",
-		"body":[
-			"\\setThumbAppearances{${1:keyvals}}"
-		]
-	},
-
-
-	"setWidthOfThumbs{}":{
-		"prefix":"setWidthOfThumbs",
-		"body":[
-			"\\setWidthOfThumbs{${1:width}}"
-		]
-	},
-
-
-	"addvspacetorows{}":{
-		"prefix":"addvspacetorows",
-		"body":[
-			"\\addvspacetorows{${1:length}}"
-		]
-	},
-
-
-	"digiDSWidth":{
-		"prefix":"digiDSWidth",
-		"body":[
-			"\\digiDSWidth"
-		]
-	},
-
-
-	"digiDSHeight":{
-		"prefix":"digiDSHeight",
-		"body":[
-			"\\digiDSHeight"
-		]
-	},
-
-
-	"insertPhotos":{
-		"prefix":"insertPhotos",
-		"body":[
-			"\\insertPhotos"
-		]
-	},
-
-
-	"normalAppr{}":{
-		"prefix":"normalAppr",
-		"body":[
-			"\\normalAppr{${1:arg}}"
-		]
-	},
-
-
-	"downAppr{}":{
-		"prefix":"downAppr",
-		"body":[
-			"\\downAppr{${1:arg}}"
-		]
-	},
-
-
-	"rolloverAppr{}":{
-		"prefix":"rolloverAppr",
-		"body":[
-			"\\rolloverAppr{${1:arg}}"
-		]
-	},
-
-
-	"digiCapsPresets{}":{
-		"prefix":"digiCapsPresets",
-		"body":[
-			"\\digiCapsPresets{${1:arg}}"
-		]
-	},
-
-
-	"hiddenPresets":{
-		"prefix":"hiddenPresets",
-		"body":[
-			"\\hiddenPresets"
-		]
-	},
-
-
-	"digiCap*{}{}":{
-		"prefix":"*digiCap",
-		"body":[
-			"\\digiCap*{${1:imagefile}}{${2:caption%text}}"
-		]
-	},
-
-
-	"digiCap*{}[]{}":{
-		"prefix":"*digiCap",
-		"body":[
-			"\\digiCap*{${1:imagefile}}[${3:design keyvals}]{${2:caption%text}}"
-		]
-	},
-
-
-	"digiCap*[]{}{}":{
-		"prefix":"*digiCap",
-		"body":[
-			"\\digiCap*[${3:pos keyvals%keyvals}]{${1:imagefile}}{${2:caption%text}}"
-		]
-	},
-
-
-	"digiCap*[]{}[]{}":{
-		"prefix":"*digiCap",
-		"body":[
-			"\\digiCap*[${3:pos keyvals%keyvals}]{${1:imagefile}}[${4:design keyvals}]{${2:caption%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +14,8 @@
 		"prefix":"digiCap",
 		"body":[
 			"\\digiCap{${1:imagefile}}[${3:design keyvals}]{${2:caption%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +23,8 @@
 		"prefix":"digiCap",
 		"body":[
 			"\\digiCap[${3:pos keyvals%keyvals}]{${1:imagefile}}{${2:caption%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +32,71 @@
 		"prefix":"digiCap",
 		"body":[
 			"\\digiCap[${3:pos keyvals%keyvals}]{${1:imagefile}}[${4:design keyvals}]{${2:caption%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"digiCap*{}{}":{
+		"prefix":"*digiCap",
+		"body":[
+			"\\digiCap*{${1:imagefile}}{${2:caption%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"digiCap*{}[]{}":{
+		"prefix":"*digiCap",
+		"body":[
+			"\\digiCap*{${1:imagefile}}[${3:design keyvals}]{${2:caption%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"digiCap*[]{}{}":{
+		"prefix":"*digiCap",
+		"body":[
+			"\\digiCap*[${3:pos keyvals%keyvals}]{${1:imagefile}}{${2:caption%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"digiCap*[]{}[]{}":{
+		"prefix":"*digiCap",
+		"body":[
+			"\\digiCap*[${3:pos keyvals%keyvals}]{${1:imagefile}}[${4:design keyvals}]{${2:caption%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"graphicHeight":{
+		"prefix":"graphicHeight",
+		"body":[
+			"\\graphicHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"graphicWidth":{
+		"prefix":"graphicWidth",
+		"body":[
+			"\\graphicWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"opcolorbox{}":{
+		"prefix":"opcolorbox",
+		"body":[
+			"\\opcolorbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +104,53 @@
 		"prefix":"opcolorbox",
 		"body":[
 			"\\opcolorbox[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"presentationOrder{}":{
+		"prefix":"presentationOrder",
+		"body":[
+			"\\presentationOrder{${1:name1,name2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"digiDisplaySpace{}{}":{
+		"prefix":"digiDisplaySpace",
+		"body":[
+			"\\digiDisplaySpace{${1:height}}{${2:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertCaptions":{
+		"prefix":"insertCaptions",
+		"body":[
+			"\\insertCaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertThumbs{}{}":{
+		"prefix":"insertThumbs",
+		"body":[
+			"\\insertThumbs{${1:rows}}{${2:columns}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dcFirstOpt{}":{
+		"prefix":"dcFirstOpt",
+		"body":[
+			"\\dcFirstOpt{${1:pos keyvals%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +158,17 @@
 		"prefix":"dcFirstOpt",
 		"body":[
 			"\\dcFirstOpt[${2:name}]{${1:pos keyvals%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dcSecondOpt{}":{
+		"prefix":"dcSecondOpt",
+		"body":[
+			"\\dcSecondOpt{${1:design keyvals%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +176,53 @@
 		"prefix":"dcSecondOpt",
 		"body":[
 			"\\dcSecondOpt[${2:name}]{${1:design keyvals%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"useRollovers":{
+		"prefix":"useRollovers",
+		"body":[
+			"\\useRollovers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noRollovers":{
+		"prefix":"noRollovers",
+		"body":[
+			"\\noRollovers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"longCapFmt{}":{
+		"prefix":"longCapFmt",
+		"body":[
+			"\\longCapFmt{${1:format cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shortCapFmt{}":{
+		"prefix":"shortCapFmt",
+		"body":[
+			"\\shortCapFmt{${1:format cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setThumbAppearances{}":{
+		"prefix":"setThumbAppearances",
+		"body":[
+			"\\setThumbAppearances{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,6 +230,97 @@
 		"prefix":"setThumbAppearances",
 		"body":[
 			"\\setThumbAppearances[${2:name}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setWidthOfThumbs{}":{
+		"prefix":"setWidthOfThumbs",
+		"body":[
+			"\\setWidthOfThumbs{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addvspacetorows{}":{
+		"prefix":"addvspacetorows",
+		"body":[
+			"\\addvspacetorows{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"digiDSWidth":{
+		"prefix":"digiDSWidth",
+		"body":[
+			"\\digiDSWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"digiDSHeight":{
+		"prefix":"digiDSHeight",
+		"body":[
+			"\\digiDSHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertPhotos":{
+		"prefix":"insertPhotos",
+		"body":[
+			"\\insertPhotos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalAppr{}":{
+		"prefix":"normalAppr",
+		"body":[
+			"\\normalAppr{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"downAppr{}":{
+		"prefix":"downAppr",
+		"body":[
+			"\\downAppr{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rolloverAppr{}":{
+		"prefix":"rolloverAppr",
+		"body":[
+			"\\rolloverAppr{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"digiCapsPresets{}":{
+		"prefix":"digiCapsPresets",
+		"body":[
+			"\\digiCapsPresets{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hiddenPresets":{
+		"prefix":"hiddenPresets",
+		"body":[
+			"\\hiddenPresets"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

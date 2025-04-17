@@ -5,55 +5,8 @@
 		"prefix":"fitbox",
 		"body":[
 			"\\fitbox{${1:content%text}}"
-		]
-	},
-
-
-	"fitboxset{}":{
-		"prefix":"fitboxset",
-		"body":[
-			"\\fitboxset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"fitboxnatwidth":{
-		"prefix":"fitboxnatwidth",
-		"body":[
-			"\\fitboxnatwidth"
-		]
-	},
-
-
-	"fitboxnatheight":{
-		"prefix":"fitboxnatheight",
-		"body":[
-			"\\fitboxnatheight"
-		]
-	},
-
-
-	"SetFitboxLayout{}{}":{
-		"prefix":"SetFitboxLayout",
-		"body":[
-			"\\SetFitboxLayout{${1:rows}}{${2:columns}}"
-		]
-	},
-
-
-	"fitbox*{}":{
-		"prefix":"*fitbox",
-		"body":[
-			"\\fitbox*{${1:content%text}}"
-		]
-	},
-
-
-	"fitbox*[]{}":{
-		"prefix":"*fitbox",
-		"body":[
-			"\\fitbox*[${2:options%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,62 @@
 		"prefix":"fitbox",
 		"body":[
 			"\\fitbox[${2:options%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fitbox*{}":{
+		"prefix":"*fitbox",
+		"body":[
+			"\\fitbox*{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fitbox*[]{}":{
+		"prefix":"*fitbox",
+		"body":[
+			"\\fitbox*[${2:options%keyvals}]{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fitboxset{}":{
+		"prefix":"fitboxset",
+		"body":[
+			"\\fitboxset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitboxnatwidth":{
+		"prefix":"fitboxnatwidth",
+		"body":[
+			"\\fitboxnatwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitboxnatheight":{
+		"prefix":"fitboxnatheight",
+		"body":[
+			"\\fitboxnatheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetFitboxLayout{}{}":{
+		"prefix":"SetFitboxLayout",
+		"body":[
+			"\\SetFitboxLayout{${1:rows}}{${2:columns}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +77,7 @@
 		"prefix":"SetFitboxLayout",
 		"body":[
 			"\\SetFitboxLayout[${3:options%keyvals}]{${1:rows}}{${2:columns}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

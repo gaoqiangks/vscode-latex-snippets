@@ -5,7 +5,8 @@
 		"prefix":"iftest",
 		"body":[
 			"\\iftest{${1:test directive}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"nottest",
 		"body":[
 			"\\nottest{${1:test directive}}{${2:not true}}{${3:not false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"expandtwice",
 		"body":[
 			"\\expandtwice{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"cnltxat",
 		"body":[
 			"\\cnltxat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"cnltxletterat",
 		"body":[
 			"\\cnltxletterat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"cnltxotherat",
 		"body":[
 			"\\cnltxotherat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"cnltxbang",
 		"body":[
 			"\\cnltxbang"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"cnltxequal",
 		"body":[
 			"\\cnltxequal"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"setcnltx",
 		"body":[
 			"\\setcnltx{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"DeclareCounterRepresentation",
 		"body":[
 			"\\DeclareCounterRepresentation{${1:cmd}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"newcounterrepresentation",
 		"body":[
 			"\\newcounterrepresentation{${1:cmd}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"providecounterrepresentation",
 		"body":[
 			"\\providecounterrepresentation{${1:cmd}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"renewcounterrepresentation",
 		"body":[
 			"\\renewcounterrepresentation{${1:cmd}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,103 +122,8 @@
 		"prefix":"newexpandablecmd",
 		"body":[
 			"\\newexpandablecmd{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"renewexpandablecmd{}{}":{
-		"prefix":"renewexpandablecmd",
-		"body":[
-			"\\renewexpandablecmd{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"provideexpandablecmd{}{}":{
-		"prefix":"provideexpandablecmd",
-		"body":[
-			"\\provideexpandablecmd{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"definecolorscheme{}{}":{
-		"prefix":"definecolorscheme",
-		"body":[
-			"\\definecolorscheme{${1:name}}{${2:color assignments}}"
-		]
-	},
-
-
-	"newexpandablecmd*{}{}":{
-		"prefix":"*newexpandablecmd",
-		"body":[
-			"\\newexpandablecmd*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"newexpandablecmd*{}[]{}":{
-		"prefix":"*newexpandablecmd",
-		"body":[
-			"\\newexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"newexpandablecmd*{}[][]{}":{
-		"prefix":"*newexpandablecmd",
-		"body":[
-			"\\newexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"renewexpandablecmd*{}{}":{
-		"prefix":"*renewexpandablecmd",
-		"body":[
-			"\\renewexpandablecmd*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"renewexpandablecmd*{}[]{}":{
-		"prefix":"*renewexpandablecmd",
-		"body":[
-			"\\renewexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"renewexpandablecmd*{}[][]{}":{
-		"prefix":"*renewexpandablecmd",
-		"body":[
-			"\\renewexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
-	},
-
-
-	"provideexpandablecmd*{}{}":{
-		"prefix":"*provideexpandablecmd",
-		"body":[
-			"\\provideexpandablecmd*{${1:cmd}}{${2:definition}}"
-		]
-	},
-
-
-	"provideexpandablecmd*{}[]{}":{
-		"prefix":"*provideexpandablecmd",
-		"body":[
-			"\\provideexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
-	},
-
-
-	"provideexpandablecmd*{}[][]{}":{
-		"prefix":"*provideexpandablecmd",
-		"body":[
-			"\\provideexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +131,8 @@
 		"prefix":"newexpandablecmd",
 		"body":[
 			"\\newexpandablecmd{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +140,44 @@
 		"prefix":"newexpandablecmd",
 		"body":[
 			"\\newexpandablecmd{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newexpandablecmd*{}{}":{
+		"prefix":"*newexpandablecmd",
+		"body":[
+			"\\newexpandablecmd*{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newexpandablecmd*{}[]{}":{
+		"prefix":"*newexpandablecmd",
+		"body":[
+			"\\newexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newexpandablecmd*{}[][]{}":{
+		"prefix":"*newexpandablecmd",
+		"body":[
+			"\\newexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewexpandablecmd{}{}":{
+		"prefix":"renewexpandablecmd",
+		"body":[
+			"\\renewexpandablecmd{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +185,8 @@
 		"prefix":"renewexpandablecmd",
 		"body":[
 			"\\renewexpandablecmd{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +194,44 @@
 		"prefix":"renewexpandablecmd",
 		"body":[
 			"\\renewexpandablecmd{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewexpandablecmd*{}{}":{
+		"prefix":"*renewexpandablecmd",
+		"body":[
+			"\\renewexpandablecmd*{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewexpandablecmd*{}[]{}":{
+		"prefix":"*renewexpandablecmd",
+		"body":[
+			"\\renewexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewexpandablecmd*{}[][]{}":{
+		"prefix":"*renewexpandablecmd",
+		"body":[
+			"\\renewexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideexpandablecmd{}{}":{
+		"prefix":"provideexpandablecmd",
+		"body":[
+			"\\provideexpandablecmd{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +239,8 @@
 		"prefix":"provideexpandablecmd",
 		"body":[
 			"\\provideexpandablecmd{${1:cmd}}[${3:args}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,6 +248,43 @@
 		"prefix":"provideexpandablecmd",
 		"body":[
 			"\\provideexpandablecmd{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideexpandablecmd*{}{}":{
+		"prefix":"*provideexpandablecmd",
+		"body":[
+			"\\provideexpandablecmd*{${1:cmd}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideexpandablecmd*{}[]{}":{
+		"prefix":"*provideexpandablecmd",
+		"body":[
+			"\\provideexpandablecmd*{${1:cmd}}[${3:args}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideexpandablecmd*{}[][]{}":{
+		"prefix":"*provideexpandablecmd",
+		"body":[
+			"\\provideexpandablecmd*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"definecolorscheme{}{}":{
+		"prefix":"definecolorscheme",
+		"body":[
+			"\\definecolorscheme{${1:name}}{${2:color assignments}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

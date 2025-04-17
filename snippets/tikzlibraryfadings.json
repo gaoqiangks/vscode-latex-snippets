@@ -5,7 +5,8 @@
 		"prefix":"tikzfading",
 		"body":[
 			"\\tikzfading[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -15,16 +16,18 @@
 			"\\begin{tikzfadingfrompicture}",
 				"\t$1",
 			"\\end{tikzfadingfrompicture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tikzfadingfrompicture":{
+	"tikzfadingfrompicture[]":{
 		"prefix":"tikzfadingfrompicture",
 		"body":[
 			"\\begin{tikzfadingfrompicture}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tikzfadingfrompicture}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

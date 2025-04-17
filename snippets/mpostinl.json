@@ -5,7 +5,8 @@
 		"prefix":"mpostsetup",
 		"body":[
 			"\\mpostsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,63 +14,8 @@
 		"prefix":"mpostuse",
 		"body":[
 			"\\mpostuse{${1:label}}"
-		]
-	},
-
-
-	"mpostgetname{}":{
-		"prefix":"mpostgetname",
-		"body":[
-			"\\mpostgetname{${1:label}}"
-		]
-	},
-
-
-	"mpostfigurename":{
-		"prefix":"mpostfigurename",
-		"body":[
-			"\\mpostfigurename"
-		]
-	},
-
-
-	"mpostplaceholder{}":{
-		"prefix":"mpostplaceholder",
-		"body":[
-			"\\mpostplaceholder{${1:name}}"
-		]
-	},
-
-
-	"mpostdisplaylabel{}":{
-		"prefix":"mpostdisplaylabel",
-		"body":[
-			"\\mpostdisplaylabel{${1:label}}"
-		]
-	},
-
-
-	"mpostfilename":{
-		"prefix":"mpostfilename",
-		"body":[
-			"\\mpostfilename"
-		]
-	},
-
-
-	"mpostfile{}":{
-		"prefix":"mpostfile",
-		"body":[
-			"\\mpostfile{${1:file}}"
-		]
-	},
-
-
-	"mpostdone":{
-		"prefix":"mpostdone",
-		"body":[
-			"\\mpostdone"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +23,35 @@
 		"prefix":"mpostuse",
 		"body":[
 			"\\mpostuse[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mpostgetname{}":{
+		"prefix":"mpostgetname",
+		"body":[
+			"\\mpostgetname{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpostfigurename":{
+		"prefix":"mpostfigurename",
+		"body":[
+			"\\mpostfigurename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpostplaceholder{}":{
+		"prefix":"mpostplaceholder",
+		"body":[
+			"\\mpostplaceholder{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +59,35 @@
 		"prefix":"mpostplaceholder",
 		"body":[
 			"\\mpostplaceholder[${2:type%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mpostdisplaylabel{}":{
+		"prefix":"mpostdisplaylabel",
+		"body":[
+			"\\mpostdisplaylabel{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpostfilename":{
+		"prefix":"mpostfilename",
+		"body":[
+			"\\mpostfilename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpostfile{}":{
+		"prefix":"mpostfile",
+		"body":[
+			"\\mpostfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +95,17 @@
 		"prefix":"mpostfile",
 		"body":[
 			"\\mpostfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mpostdone":{
+		"prefix":"mpostdone",
+		"body":[
+			"\\mpostdone"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -103,37 +115,19 @@
 			"\\begin{mpostfig}",
 				"\t$1",
 			"\\end{mpostfig}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"mpostdef":{
-		"prefix":"mpostdef",
-		"body":[
-			"\\begin{mpostdef}",
-				"\t$1",
-			"\\end{mpostdef}"
-		]
-	},
-
-
-	"mposttex":{
-		"prefix":"mposttex",
-		"body":[
-			"\\begin{mposttex}",
-				"\t$1",
-			"\\end{mposttex}"
-		]
-	},
-
-
-	"mpostfig":{
+	"mpostfig[]":{
 		"prefix":"mpostfig",
 		"body":[
 			"\\begin{mpostfig}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{mpostfig}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -143,7 +137,19 @@
 			"\\begin{mpostdef}",
 				"\t$1",
 			"\\end{mpostdef}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpostdef[]":{
+		"prefix":"mpostdef",
+		"body":[
+			"\\begin{mpostdef}",
+				"\t[${1:options%keyvals}]",
+			"\\end{mpostdef}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -153,6 +159,18 @@
 			"\\begin{mposttex}",
 				"\t$1",
 			"\\end{mposttex}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mposttex[]":{
+		"prefix":"mposttex",
+		"body":[
+			"\\begin{mposttex}",
+				"\t[${1:options%keyvals}]",
+			"\\end{mposttex}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

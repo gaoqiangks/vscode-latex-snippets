@@ -1,139 +1,12 @@
 {
 
 
-	"makecommand{}{}":{
-		"prefix":"makecommand",
-		"body":[
-			"\\makecommand{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"provideenvironment{}{}{}":{
-		"prefix":"provideenvironment",
-		"body":[
-			"\\provideenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment{}{}{}":{
-		"prefix":"makeenvironment",
-		"body":[
-			"\\makeenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"providelength{}":{
-		"prefix":"providelength",
-		"body":[
-			"\\providelength{${1:cmd}}"
-		]
-	},
-
-
-	"makelength{}":{
-		"prefix":"makelength",
-		"body":[
-			"\\makelength{${1:cmd}}"
-		]
-	},
-
-
-	"providecounter{}":{
-		"prefix":"providecounter",
-		"body":[
-			"\\providecounter{${1:counter name}}"
-		]
-	},
-
-
-	"makecounter{}":{
-		"prefix":"makecounter",
-		"body":[
-			"\\makecounter{${1:counter name}}"
-		]
-	},
-
-
-	"makecommand*{}[][]{}":{
-		"prefix":"*makecommand",
-		"body":[
-			"\\makecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand*{}[]{}":{
-		"prefix":"*makecommand",
-		"body":[
-			"\\makecommand*{${1:cmd}}[${3:args}]{${2:def}}"
-		]
-	},
-
-
-	"makecommand*{}{}":{
-		"prefix":"*makecommand",
-		"body":[
-			"\\makecommand*{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"provideenvironment*{}[][]{}{}":{
-		"prefix":"*provideenvironment",
-		"body":[
-			"\\provideenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment*{}[]{}{}":{
-		"prefix":"*provideenvironment",
-		"body":[
-			"\\provideenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"provideenvironment*{}{}{}":{
-		"prefix":"*provideenvironment",
-		"body":[
-			"\\provideenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment*{}[][]{}{}":{
-		"prefix":"*makeenvironment",
-		"body":[
-			"\\makeenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment*{}[]{}{}":{
-		"prefix":"*makeenvironment",
-		"body":[
-			"\\makeenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"makeenvironment*{}{}{}":{
-		"prefix":"*makeenvironment",
-		"body":[
-			"\\makeenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
 	"makecommand{}[][]{}":{
 		"prefix":"makecommand",
 		"body":[
 			"\\makecommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +14,44 @@
 		"prefix":"makecommand",
 		"body":[
 			"\\makecommand{${1:cmd}}[${3:args}]{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"makecommand{}{}":{
+		"prefix":"makecommand",
+		"body":[
+			"\\makecommand{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makecommand*{}[][]{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"makecommand*{}[]{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}[${3:args}]{${2:def}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"makecommand*{}{}":{
+		"prefix":"*makecommand",
+		"body":[
+			"\\makecommand*{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -149,7 +59,8 @@
 		"prefix":"provideenvironment",
 		"body":[
 			"\\provideenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +68,44 @@
 		"prefix":"provideenvironment",
 		"body":[
 			"\\provideenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideenvironment{}{}{}":{
+		"prefix":"provideenvironment",
+		"body":[
+			"\\provideenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"provideenvironment*{}[][]{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideenvironment*{}[]{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideenvironment*{}{}{}":{
+		"prefix":"*provideenvironment",
+		"body":[
+			"\\provideenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -165,7 +113,8 @@
 		"prefix":"makeenvironment",
 		"body":[
 			"\\makeenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,6 +122,79 @@
 		"prefix":"makeenvironment",
 		"body":[
 			"\\makeenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"makeenvironment{}{}{}":{
+		"prefix":"makeenvironment",
+		"body":[
+			"\\makeenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeenvironment*{}[][]{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"makeenvironment*{}[]{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"makeenvironment*{}{}{}":{
+		"prefix":"*makeenvironment",
+		"body":[
+			"\\makeenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"providelength{}":{
+		"prefix":"providelength",
+		"body":[
+			"\\providelength{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makelength{}":{
+		"prefix":"makelength",
+		"body":[
+			"\\makelength{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"providecounter{}":{
+		"prefix":"providecounter",
+		"body":[
+			"\\providecounter{${1:counter name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makecounter{}":{
+		"prefix":"makecounter",
+		"body":[
+			"\\makecounter{${1:counter name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,263 +5,8 @@
 		"prefix":"assert",
 		"body":[
 			"\\assert{${1:assertion%text}}"
-		]
-	},
-
-
-	"StrukTeX":{
-		"prefix":"StrukTeX",
-		"body":[
-			"\\StrukTeX"
-		]
-	},
-
-
-	"sProofOn":{
-		"prefix":"sProofOn",
-		"body":[
-			"\\sProofOn"
-		]
-	},
-
-
-	"sProofOff":{
-		"prefix":"sProofOff",
-		"body":[
-			"\\sProofOff"
-		]
-	},
-
-
-	"PositionNSS{}":{
-		"prefix":"PositionNSS",
-		"body":[
-			"\\PositionNSS{${1:position}}"
-		]
-	},
-
-
-	"assign{}":{
-		"prefix":"assign",
-		"body":[
-			"\\assign{${1:content%text}}"
-		]
-	},
-
-
-	"declarationtitle":{
-		"prefix":"declarationtitle",
-		"body":[
-			"\\declarationtitle"
-		]
-	},
-
-
-	"description{}{}":{
-		"prefix":"description",
-		"body":[
-			"\\description{${1:variable name}}{${2:description%text}}"
-		]
-	},
-
-
-	"descriptionindent":{
-		"prefix":"descriptionindent",
-		"body":[
-			"\\descriptionindent"
-		]
-	},
-
-
-	"descriptionwidth":{
-		"prefix":"descriptionwidth",
-		"body":[
-			"\\descriptionwidth"
-		]
-	},
-
-
-	"descriptionsep":{
-		"prefix":"descriptionsep",
-		"body":[
-			"\\descriptionsep"
-		]
-	},
-
-
-	"sub{}":{
-		"prefix":"sub",
-		"body":[
-			"\\sub{${1:text}}"
-		]
-	},
-
-
-	"return{}":{
-		"prefix":"return",
-		"body":[
-			"\\return{${1:text}}"
-		]
-	},
-
-
-	"while{}":{
-		"prefix":"while",
-		"body":[
-			"\\while{${1:text}}"
-		]
-	},
-
-
-	"whileend":{
-		"prefix":"whileend",
-		"body":[
-			"\\whileend"
-		]
-	},
-
-
-	"until{}":{
-		"prefix":"until",
-		"body":[
-			"\\until{${1:text}}"
-		]
-	},
-
-
-	"untilend":{
-		"prefix":"untilend",
-		"body":[
-			"\\untilend"
-		]
-	},
-
-
-	"forallin{}":{
-		"prefix":"forallin",
-		"body":[
-			"\\forallin{${1:text}}"
-		]
-	},
-
-
-	"forallinend":{
-		"prefix":"forallinend",
-		"body":[
-			"\\forallinend"
-		]
-	},
-
-
-	"forever":{
-		"prefix":"forever",
-		"body":[
-			"\\forever"
-		]
-	},
-
-
-	"foreverend":{
-		"prefix":"foreverend",
-		"body":[
-			"\\foreverend"
-		]
-	},
-
-
-	"exit{}":{
-		"prefix":"exit",
-		"body":[
-			"\\exit{${1:text}}"
-		]
-	},
-
-
-	"ifthenelse{}{}{}{}{}":{
-		"prefix":"ifthenelse",
-		"body":[
-			"\\ifthenelse{${1:left angle}}{${2:right angle}}{${3:condition%text}}{${4:left text%text}}{${5:right text%text}}"
-		]
-	},
-
-
-	"change":{
-		"prefix":"change",
-		"body":[
-			"\\change"
-		]
-	},
-
-
-	"ifend":{
-		"prefix":"ifend",
-		"body":[
-			"\\ifend"
-		]
-	},
-
-
-	"case{}{}{}{}":{
-		"prefix":"case",
-		"body":[
-			"\\case{${1:angle}}{${2:num cases}}{${3:condition%text}}{${4:case1 text%text}}"
-		]
-	},
-
-
-	"switch{}":{
-		"prefix":"switch",
-		"body":[
-			"\\switch{${1:case-n text%text}}"
-		]
-	},
-
-
-	"caseend":{
-		"prefix":"caseend",
-		"body":[
-			"\\caseend"
-		]
-	},
-
-
-	"inparallel{}{}":{
-		"prefix":"inparallel",
-		"body":[
-			"\\inparallel{${1:num tasks}}{${2:task1 description%text}}"
-		]
-	},
-
-
-	"task{}":{
-		"prefix":"task",
-		"body":[
-			"\\task{${1:task-n description%text}}"
-		]
-	},
-
-
-	"inparallelend":{
-		"prefix":"inparallelend",
-		"body":[
-			"\\inparallelend"
-		]
-	},
-
-
-	"CenterNssFile{}":{
-		"prefix":"CenterNssFile",
-		"body":[
-			"\\CenterNssFile{${1:file}}"
-		]
-	},
-
-
-	"centernssfile{}":{
-		"prefix":"centernssfile",
-		"body":[
-			"\\centernssfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +14,53 @@
 		"prefix":"assert",
 		"body":[
 			"\\assert[${2:height}]{${1:assertion%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StrukTeX":{
+		"prefix":"StrukTeX",
+		"body":[
+			"\\StrukTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sProofOn":{
+		"prefix":"sProofOn",
+		"body":[
+			"\\sProofOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sProofOff":{
+		"prefix":"sProofOff",
+		"body":[
+			"\\sProofOff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PositionNSS{}":{
+		"prefix":"PositionNSS",
+		"body":[
+			"\\PositionNSS{${1:position}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"assign{}":{
+		"prefix":"assign",
+		"body":[
+			"\\assign{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +68,62 @@
 		"prefix":"assign",
 		"body":[
 			"\\assign[${2:height}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declarationtitle":{
+		"prefix":"declarationtitle",
+		"body":[
+			"\\declarationtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"description{}{}":{
+		"prefix":"description",
+		"body":[
+			"\\description{${1:variable name}}{${2:description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"descriptionindent":{
+		"prefix":"descriptionindent",
+		"body":[
+			"\\descriptionindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"descriptionwidth":{
+		"prefix":"descriptionwidth",
+		"body":[
+			"\\descriptionwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"descriptionsep":{
+		"prefix":"descriptionsep",
+		"body":[
+			"\\descriptionsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sub{}":{
+		"prefix":"sub",
+		"body":[
+			"\\sub{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +131,17 @@
 		"prefix":"sub",
 		"body":[
 			"\\sub[${2:height}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"return{}":{
+		"prefix":"return",
+		"body":[
+			"\\return{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +149,17 @@
 		"prefix":"return",
 		"body":[
 			"\\return[${2:height}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"while{}":{
+		"prefix":"while",
+		"body":[
+			"\\while{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +167,26 @@
 		"prefix":"while",
 		"body":[
 			"\\while[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"whileend":{
+		"prefix":"whileend",
+		"body":[
+			"\\whileend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"until{}":{
+		"prefix":"until",
+		"body":[
+			"\\until{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +194,26 @@
 		"prefix":"until",
 		"body":[
 			"\\until[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"untilend":{
+		"prefix":"untilend",
+		"body":[
+			"\\untilend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"forallin{}":{
+		"prefix":"forallin",
+		"body":[
+			"\\forallin{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +221,26 @@
 		"prefix":"forallin",
 		"body":[
 			"\\forallin[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"forallinend":{
+		"prefix":"forallinend",
+		"body":[
+			"\\forallinend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"forever":{
+		"prefix":"forever",
+		"body":[
+			"\\forever"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +248,26 @@
 		"prefix":"forever",
 		"body":[
 			"\\forever[${1:width}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"foreverend":{
+		"prefix":"foreverend",
+		"body":[
+			"\\foreverend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"exit{}":{
+		"prefix":"exit",
+		"body":[
+			"\\exit{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +275,17 @@
 		"prefix":"exit",
 		"body":[
 			"\\exit[${2:height}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifthenelse{}{}{}{}{}":{
+		"prefix":"ifthenelse",
+		"body":[
+			"\\ifthenelse{${1:left angle}}{${2:right angle}}{${3:condition%text}}{${4:left text%text}}{${5:right text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +293,35 @@
 		"prefix":"ifthenelse",
 		"body":[
 			"\\ifthenelse[${6:height}]{${1:left angle}}{${2:right angle}}{${3:condition%text}}{${4:left text%text}}{${5:right text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"change":{
+		"prefix":"change",
+		"body":[
+			"\\change"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifend":{
+		"prefix":"ifend",
+		"body":[
+			"\\ifend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"case{}{}{}{}":{
+		"prefix":"case",
+		"body":[
+			"\\case{${1:angle}}{${2:num cases}}{${3:condition%text}}{${4:case1 text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +329,17 @@
 		"prefix":"case",
 		"body":[
 			"\\case[${5:height}]{${1:angle}}{${2:num cases}}{${3:condition%text}}{${4:case1 text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"switch{}":{
+		"prefix":"switch",
+		"body":[
+			"\\switch{${1:case-n text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +347,26 @@
 		"prefix":"switch",
 		"body":[
 			"\\switch[${2:position}]{${1:case-n text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"caseend":{
+		"prefix":"caseend",
+		"body":[
+			"\\caseend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inparallel{}{}":{
+		"prefix":"inparallel",
+		"body":[
+			"\\inparallel{${1:num tasks}}{${2:task1 description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +374,17 @@
 		"prefix":"inparallel",
 		"body":[
 			"\\inparallel[${3:height}]{${1:num tasks}}{${2:task1 description%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"task{}":{
+		"prefix":"task",
+		"body":[
+			"\\task{${1:task-n description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,17 +392,57 @@
 		"prefix":"task",
 		"body":[
 			"\\task[${2:position}]{${1:task-n description%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"struktogramm":{
+	"inparallelend":{
+		"prefix":"inparallelend",
+		"body":[
+			"\\inparallelend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CenterNssFile{}":{
+		"prefix":"CenterNssFile",
+		"body":[
+			"\\CenterNssFile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centernssfile{}":{
+		"prefix":"centernssfile",
+		"body":[
+			"\\centernssfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"struktogramm()":{
 		"prefix":"struktogramm",
 		"body":[
 			"\\begin{struktogramm}",
-				"\t$1",
+				"\t(${1:width},${2:height})",
 			"\\end{struktogramm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"struktogramm()[]":{
+		"prefix":"struktogramm",
+		"body":[
+			"\\begin{struktogramm}",
+				"\t(${2:width},${3:height})[${1:title%text}]",
+			"\\end{struktogramm}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -393,7 +452,19 @@
 			"\\begin{declaration}",
 				"\t$1",
 			"\\end{declaration}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"declaration[]":{
+		"prefix":"declaration",
+		"body":[
+			"\\begin{declaration}",
+				"\t[${1:title%text}]",
+			"\\end{declaration}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -403,26 +474,7 @@
 			"\\begin{centernss}",
 				"\t$1",
 			"\\end{centernss}"
-		]
-	},
-
-
-	"struktogramm":{
-		"prefix":"struktogramm",
-		"body":[
-			"\\begin{struktogramm}",
-				"\t$1",
-			"\\end{struktogramm}"
-		]
-	},
-
-
-	"declaration":{
-		"prefix":"declaration",
-		"body":[
-			"\\begin{declaration}",
-				"\t$1",
-			"\\end{declaration}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

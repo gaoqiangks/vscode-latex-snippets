@@ -5,87 +5,8 @@
 		"prefix":"poster",
 		"body":[
 			"\\poster{${1:stuff%text}}"
-		]
-	},
-
-
-	"PosterPage":{
-		"prefix":"PosterPage",
-		"body":[
-			"\\PosterPage"
-		]
-	},
-
-
-	"POSTERclip":{
-		"prefix":"POSTERclip",
-		"body":[
-			"\\POSTERclip"
-		]
-	},
-
-
-	"POSTERcrop":{
-		"prefix":"POSTERcrop",
-		"body":[
-			"\\POSTERcrop"
-		]
-	},
-
-
-	"POSTERhcenter":{
-		"prefix":"POSTERhcenter",
-		"body":[
-			"\\POSTERhcenter"
-		]
-	},
-
-
-	"POSTERimageheight":{
-		"prefix":"POSTERimageheight",
-		"body":[
-			"\\POSTERimageheight"
-		]
-	},
-
-
-	"POSTERimagewidth":{
-		"prefix":"POSTERimagewidth",
-		"body":[
-			"\\POSTERimagewidth"
-		]
-	},
-
-
-	"POSTERlandscape":{
-		"prefix":"POSTERlandscape",
-		"body":[
-			"\\POSTERlandscape"
-		]
-	},
-
-
-	"POSTERpaperheight":{
-		"prefix":"POSTERpaperheight",
-		"body":[
-			"\\POSTERpaperheight"
-		]
-	},
-
-
-	"POSTERpaperwidth":{
-		"prefix":"POSTERpaperwidth",
-		"body":[
-			"\\POSTERpaperwidth"
-		]
-	},
-
-
-	"POSTERvcenter":{
-		"prefix":"POSTERvcenter",
-		"body":[
-			"\\POSTERvcenter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"poster",
 		"body":[
 			"\\poster[${2:options%keyvals}]{${1:stuff%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PosterPage":{
+		"prefix":"PosterPage",
+		"body":[
+			"\\PosterPage"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,89 @@
 		"prefix":"PosterPage",
 		"body":[
 			"\\PosterPage[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"POSTERclip":{
+		"prefix":"POSTERclip",
+		"body":[
+			"\\POSTERclip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERcrop":{
+		"prefix":"POSTERcrop",
+		"body":[
+			"\\POSTERcrop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERhcenter":{
+		"prefix":"POSTERhcenter",
+		"body":[
+			"\\POSTERhcenter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERimageheight":{
+		"prefix":"POSTERimageheight",
+		"body":[
+			"\\POSTERimageheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERimagewidth":{
+		"prefix":"POSTERimagewidth",
+		"body":[
+			"\\POSTERimagewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERlandscape":{
+		"prefix":"POSTERlandscape",
+		"body":[
+			"\\POSTERlandscape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERpaperheight":{
+		"prefix":"POSTERpaperheight",
+		"body":[
+			"\\POSTERpaperheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERpaperwidth":{
+		"prefix":"POSTERpaperwidth",
+		"body":[
+			"\\POSTERpaperwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"POSTERvcenter":{
+		"prefix":"POSTERvcenter",
+		"body":[
+			"\\POSTERvcenter"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -111,16 +124,18 @@
 			"\\begin{Poster}",
 				"\t$1",
 			"\\end{Poster}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Poster":{
+	"Poster[]":{
 		"prefix":"Poster",
 		"body":[
 			"\\begin{Poster}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{Poster}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

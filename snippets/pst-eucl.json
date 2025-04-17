@@ -5,7 +5,8 @@
 		"prefix":"pstAbscissa",
 		"body":[
 			"\\pstAbscissa{${1:A}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"pstOrdinate",
 		"body":[
 			"\\pstOrdinate{${1:A}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,1967 +23,8 @@
 		"prefix":"pstMoveNode",
 		"body":[
 			"\\pstMoveNode(${3:dx},${4:dy}){${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstSegmentMark{}{}":{
-		"prefix":"pstSegmentMark",
-		"body":[
-			"\\pstSegmentMark{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstLabelAB{}{}{}":{
-		"prefix":"pstLabelAB",
-		"body":[
-			"\\pstLabelAB{${1:A}}{${2:B}}{${3:label}}"
-		]
-	},
-
-
-	"pstTriangle(){}(){}(){}":{
-		"prefix":"pstTriangle",
-		"body":[
-			"\\pstTriangle(${4:x1},${5:y1}){${1:A}}(${6:x2},${7:y2}){${2:B}}(${8:x3},${9:y3}){${3:C}}"
-		]
-	},
-
-
-	"pstTriangleSSS(){}(){}{}":{
-		"prefix":"pstTriangleSSS",
-		"body":[
-			"\\pstTriangleSSS(${4:pos}){${1:A}}(${5:a},${6:b},${7:c}){${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleSAS(){}(){}{}":{
-		"prefix":"pstTriangleSAS",
-		"body":[
-			"\\pstTriangleSAS(${4:pos}){${1:A}}(${5:b},${6:∠A},${7:c}){${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleAAS(){}(){}{}":{
-		"prefix":"pstTriangleAAS",
-		"body":[
-			"\\pstTriangleAAS(${4:pos}){${1:A}}(${5:∠C},${6:∠A},${7:c}){${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleASA(){}(){}{}":{
-		"prefix":"pstTriangleASA",
-		"body":[
-			"\\pstTriangleASA(${4:pos}){${1:A}}(${5:∠A},${6:c},${7:∠B}){${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleIC{}{}{}":{
-		"prefix":"pstTriangleIC",
-		"body":[
-			"\\pstTriangleIC{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleOC{}{}{}":{
-		"prefix":"pstTriangleOC",
-		"body":[
-			"\\pstTriangleOC{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstTriangleGC{}{}{}{}":{
-		"prefix":"pstTriangleGC",
-		"body":[
-			"\\pstTriangleGC{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
-		]
-	},
-
-
-	"pstTriangleHC{}{}{}{}":{
-		"prefix":"pstTriangleHC",
-		"body":[
-			"\\pstTriangleHC{${1:A}}{${2:B}}{${3:C}}{${4:H}}"
-		]
-	},
-
-
-	"pstTriangleEC{}{}{}{}":{
-		"prefix":"pstTriangleEC",
-		"body":[
-			"\\pstTriangleEC{${1:A}}{${2:B}}{${3:C}}{${4:E}}"
-		]
-	},
-
-
-	"pstTriangleNC{}{}{}{}":{
-		"prefix":"pstTriangleNC",
-		"body":[
-			"\\pstTriangleNC{${1:A}}{${2:B}}{${3:C}}{${4:N}}"
-		]
-	},
-
-
-	"pstTriangleLC{}{}{}{}":{
-		"prefix":"pstTriangleLC",
-		"body":[
-			"\\pstTriangleLC{${1:A}}{${2:B}}{${3:C}}{${4:L}}"
-		]
-	},
-
-
-	"pstRightAngle{}{}{}":{
-		"prefix":"pstRightAngle",
-		"body":[
-			"\\pstRightAngle{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstMarkAngle{}{}{}{}":{
-		"prefix":"pstMarkAngle",
-		"body":[
-			"\\pstMarkAngle{${1:A}}{${2:B}}{${3:C}}{${4:label}}"
-		]
-	},
-
-
-	"pstLineAB{}{}":{
-		"prefix":"pstLineAB",
-		"body":[
-			"\\pstLineAB{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstLine{}{}":{
-		"prefix":"pstLine",
-		"body":[
-			"\\pstLine{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstLine{}()":{
-		"prefix":"pstLine",
-		"body":[
-			"\\pstLine{${1:A}}(${2:x},${3:y})"
-		]
-	},
-
-
-	"pstLine(){}":{
-		"prefix":"pstLine",
-		"body":[
-			"\\pstLine(${2:x},${3:y}){${1:B}}"
-		]
-	},
-
-
-	"pstLine()()":{
-		"prefix":"pstLine",
-		"body":[
-			"\\pstLine(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"pstLineAA{}{}{}":{
-		"prefix":"pstLineAA",
-		"body":[
-			"\\pstLineAA{${1:A}}{${2:angle}}{${3:B}}"
-		]
-	},
-
-
-	"pstLineAA(){}{}":{
-		"prefix":"pstLineAA",
-		"body":[
-			"\\pstLineAA(${3:x},${4:y}){${1:angle}}{${2:B}}"
-		]
-	},
-
-
-	"pstLineAS{}{}{}":{
-		"prefix":"pstLineAS",
-		"body":[
-			"\\pstLineAS{${1:A}}{${2:gradient}}{${3:B}}"
-		]
-	},
-
-
-	"pstLineAS(){}{}":{
-		"prefix":"pstLineAS",
-		"body":[
-			"\\pstLineAS(${3:x},${4:y}){${1:gradient}}{${2:B}}"
-		]
-	},
-
-
-	"pstLineCoef{}{}{}":{
-		"prefix":"pstLineCoef",
-		"body":[
-			"\\pstLineCoef{${1:a,b,c}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstLineAbsNode{}{}{}{}":{
-		"prefix":"pstLineAbsNode",
-		"body":[
-			"\\pstLineAbsNode{${1:A}}{${2:B}}{${3:x}}{${4:C}}"
-		]
-	},
-
-
-	"pstLineOrdNode{}{}{}{}":{
-		"prefix":"pstLineOrdNode",
-		"body":[
-			"\\pstLineOrdNode{${1:A}}{${2:B}}{${3:y}}{${4:C}}"
-		]
-	},
-
-
-	"pstProportionNode{}{}{}{}{}":{
-		"prefix":"pstProportionNode",
-		"body":[
-			"\\pstProportionNode{${1:A}}{${2:B}}{${3:λ}}{${4:C}}{${5:C'}}"
-		]
-	},
-
-
-	"pstBisectorAOB{}{}{}{}{}":{
-		"prefix":"pstBisectorAOB",
-		"body":[
-			"\\pstBisectorAOB{${1:A}}{${2:O}}{${3:B}}{${4:T1}}{${5:T2}}"
-		]
-	},
-
-
-	"pstFourthHarmonicNode{}{}{}{}":{
-		"prefix":"pstFourthHarmonicNode",
-		"body":[
-			"\\pstFourthHarmonicNode{${1:A}}{${2:B}}{${3:C}}{${4:X}}"
-		]
-	},
-
-
-	"pstLocateAB{}{}{}{}":{
-		"prefix":"pstLocateAB",
-		"body":[
-			"\\pstLocateAB{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
-		]
-	},
-
-
-	"pstExtendAB{}{}{}{}":{
-		"prefix":"pstExtendAB",
-		"body":[
-			"\\pstExtendAB{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
-		]
-	},
-
-
-	"pstInversion{}{}{}{}":{
-		"prefix":"pstInversion",
-		"body":[
-			"\\pstInversion{${1:O}}{${2:A}}{${3:C}}{${4:C'}}"
-		]
-	},
-
-
-	"pstGoldenMean{}{}{}":{
-		"prefix":"pstGoldenMean",
-		"body":[
-			"\\pstGoldenMean{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstGeometricMean{}{}{}{}{}":{
-		"prefix":"pstGeometricMean",
-		"body":[
-			"\\pstGeometricMean{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
-		]
-	},
-
-
-	"pstHarmonicMean{}{}{}{}{}":{
-		"prefix":"pstHarmonicMean",
-		"body":[
-			"\\pstHarmonicMean{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
-		]
-	},
-
-
-	"pstDistAB{}{}":{
-		"prefix":"pstDistAB",
-		"body":[
-			"\\pstDistAB{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstDistVal{}":{
-		"prefix":"pstDistVal",
-		"body":[
-			"\\pstDistVal{${1:l}}"
-		]
-	},
-
-
-	"pstDistCalc{}":{
-		"prefix":"pstDistCalc",
-		"body":[
-			"\\pstDistCalc{${1:expr%definition}}"
-		]
-	},
-
-
-	"pstDist{}{}":{
-		"prefix":"pstDist",
-		"body":[
-			"\\pstDist{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstDistConst{}":{
-		"prefix":"pstDistConst",
-		"body":[
-			"\\pstDistConst{${1:l}}"
-		]
-	},
-
-
-	"pstDistExpr{}":{
-		"prefix":"pstDistExpr",
-		"body":[
-			"\\pstDistExpr{${1:expr%definition}}"
-		]
-	},
-
-
-	"pstDistCoef{}":{
-		"prefix":"pstDistCoef",
-		"body":[
-			"\\pstDistCoef{${1:distance}}"
-		]
-	},
-
-
-	"pstUserDist{}":{
-		"prefix":"pstUserDist",
-		"body":[
-			"\\pstUserDist{${1:distance}}"
-		]
-	},
-
-
-	"pstScreenDist{}":{
-		"prefix":"pstScreenDist",
-		"body":[
-			"\\pstScreenDist{${1:distance}}"
-		]
-	},
-
-
-	"pstDistMul{}{}{}":{
-		"prefix":"pstDistMul",
-		"body":[
-			"\\pstDistMul{${1:A}}{${2:B}}{${3:λ}}"
-		]
-	},
-
-
-	"pstDistAdd{}{}{}{}":{
-		"prefix":"pstDistAdd",
-		"body":[
-			"\\pstDistAdd{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstDistAddVal{}{}{}{}":{
-		"prefix":"pstDistAddVal",
-		"body":[
-			"\\pstDistAddVal{${1:A}}{${2:B}}{${3:λ}}{${4:L}}"
-		]
-	},
-
-
-	"pstDistAddCoef{}{}{}{}{}{}":{
-		"prefix":"pstDistAddCoef",
-		"body":[
-			"\\pstDistAddCoef{${1:A}}{${2:B}}{${3:λ1}}{${4:C}}{${5:D}}{${6:λ2}}"
-		]
-	},
-
-
-	"pstDistSub{}{}{}{}":{
-		"prefix":"pstDistSub",
-		"body":[
-			"\\pstDistSub{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstDistSubVal{}{}{}{}":{
-		"prefix":"pstDistSubVal",
-		"body":[
-			"\\pstDistSubVal{${1:A}}{${2:B}}{${3:λ}}{${4:L}}"
-		]
-	},
-
-
-	"pstDistSubCoef{}{}{}{}{}{}":{
-		"prefix":"pstDistSubCoef",
-		"body":[
-			"\\pstDistSubCoef{${1:A}}{${2:B}}{${3:λ1}}{${4:C}}{${5:D}}{${6:λ2}}"
-		]
-	},
-
-
-	"pstDistDiv{}{}{}{}":{
-		"prefix":"pstDistDiv",
-		"body":[
-			"\\pstDistDiv{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstDistABC{}{}{}":{
-		"prefix":"pstDistABC",
-		"body":[
-			"\\pstDistABC{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstCircleOA{}{}":{
-		"prefix":"pstCircleOA",
-		"body":[
-			"\\pstCircleOA{${1:O}}{${2:A}}"
-		]
-	},
-
-
-	"pstCircleAB{}{}":{
-		"prefix":"pstCircleAB",
-		"body":[
-			"\\pstCircleAB{${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstCircleABR{}{}{}{}":{
-		"prefix":"pstCircleABR",
-		"body":[
-			"\\pstCircleABR{${1:A}}{${2:B}}{${3:R}}{${4:O}}"
-		]
-	},
-
-
-	"pstArcOAB{}{}{}":{
-		"prefix":"pstArcOAB",
-		"body":[
-			"\\pstArcOAB{${1:O}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstArcnOAB{}{}{}":{
-		"prefix":"pstArcnOAB",
-		"body":[
-			"\\pstArcnOAB{${1:O}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstCircleNode{}{}{}{}":{
-		"prefix":"pstCircleNode",
-		"body":[
-			"\\pstCircleNode{${1:O}}{${2:A}}{${3:θ}}{${4:X}}"
-		]
-	},
-
-
-	"pstCircleRotNode{}{}{}":{
-		"prefix":"pstCircleRotNode",
-		"body":[
-			"\\pstCircleRotNode{${1:O}}{${2:A}}{${3:X}}"
-		]
-	},
-
-
-	"pstCircleChordNode{}{}{}{}":{
-		"prefix":"pstCircleChordNode",
-		"body":[
-			"\\pstCircleChordNode{${1:O}}{${2:A}}{${3:L}}{${4:X}}"
-		]
-	},
-
-
-	"pstCircleAbsNode{}{}{}{}{}":{
-		"prefix":"pstCircleAbsNode",
-		"body":[
-			"\\pstCircleAbsNode{${1:O}}{${2:A}}{${3:x}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstCircleOrdNode{}{}{}{}{}":{
-		"prefix":"pstCircleOrdNode",
-		"body":[
-			"\\pstCircleOrdNode{${1:O}}{${2:A}}{${3:y}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstCurvAbsNode{}{}{}{}":{
-		"prefix":"pstCurvAbsNode",
-		"body":[
-			"\\pstCurvAbsNode{${1:O}}{${2:A}}{${3:B}}{${4:abscissa}}"
-		]
-	},
-
-
-	"pstCircleTangentLine{}{}{}":{
-		"prefix":"pstCircleTangentLine",
-		"body":[
-			"\\pstCircleTangentLine{${1:O}}{${2:A}}{${3:T}}"
-		]
-	},
-
-
-	"pstCircleTangentNode{}{}{}{}{}":{
-		"prefix":"pstCircleTangentNode",
-		"body":[
-			"\\pstCircleTangentNode{${1:O}}{${2:A}}{${3:P}}{${4:T1}}{${5:T2}}"
-		]
-	},
-
-
-	"pstCircleExternalCommonTangent{}{}{}{}{}{}{}{}":{
-		"prefix":"pstCircleExternalCommonTangent",
-		"body":[
-			"\\pstCircleExternalCommonTangent{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
-		]
-	},
-
-
-	"pstCircleInternalCommonTangent{}{}{}{}{}{}{}{}":{
-		"prefix":"pstCircleInternalCommonTangent",
-		"body":[
-			"\\pstCircleInternalCommonTangent{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
-		]
-	},
-
-
-	"pstCircleRadicalAxis{}{}{}{}{}{}":{
-		"prefix":"pstCircleRadicalAxis",
-		"body":[
-			"\\pstCircleRadicalAxis{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:C}}{${6:D}}"
-		]
-	},
-
-
-	"pstETriangleAB{}{}{}":{
-		"prefix":"pstETriangleAB",
-		"body":[
-			"\\pstETriangleAB{${1:A}}{${2:B}}{${3:C}}"
-		]
-	},
-
-
-	"pstSquareAB{}{}{}{}":{
-		"prefix":"pstSquareAB",
-		"body":[
-			"\\pstSquareAB{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstRegularPolygonAB{}{}{}{}":{
-		"prefix":"pstRegularPolygonAB",
-		"body":[
-			"\\pstRegularPolygonAB{${1:A0}}{${2:A1}}{${3:n}}{${4:A2,A3,...}}"
-		]
-	},
-
-
-	"pstRegularPolygonOA{}{}{}{}":{
-		"prefix":"pstRegularPolygonOA",
-		"body":[
-			"\\pstRegularPolygonOA{${1:O}}{${2:A0}}{${3:n}}{${4:A1,A2,...}}"
-		]
-	},
-
-
-	"pstGenericCurve{}{}{}":{
-		"prefix":"pstGenericCurve",
-		"body":[
-			"\\pstGenericCurve{${1:radical}}{${2:n1}}{${3:n2}}"
-		]
-	},
-
-
-	"pstEllipse()()":{
-		"prefix":"pstEllipse",
-		"body":[
-			"\\pstEllipse(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstEllipseNode()(){}{}":{
-		"prefix":"pstEllipseNode",
-		"body":[
-			"\\pstEllipseNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:P}}"
-		]
-	},
-
-
-	"pstEllipseRotNode()(){}":{
-		"prefix":"pstEllipseRotNode",
-		"body":[
-			"\\pstEllipseRotNode(${2:O})(${3:a},${4:b}){${1:P}}"
-		]
-	},
-
-
-	"pstEllipseAbsNode()(){}{}{}":{
-		"prefix":"pstEllipseAbsNode",
-		"body":[
-			"\\pstEllipseAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstEllipseOrdNode()(){}{}{}":{
-		"prefix":"pstEllipseOrdNode",
-		"body":[
-			"\\pstEllipseOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstEllipseFocusNode()(){}{}":{
-		"prefix":"pstEllipseFocusNode",
-		"body":[
-			"\\pstEllipseFocusNode(${3:O})(${4:a},${5:b}){${1:A}}{${2:B}}"
-		]
-	},
-
-
-	"pstEllipseDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstEllipseDirectrixLine",
-		"body":[
-			"\\pstEllipseDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstEllipseLineInter()(){}{}{}{}":{
-		"prefix":"pstEllipseLineInter",
-		"body":[
-			"\\pstEllipseLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstEllipsePolarNode()(){}{}{}":{
-		"prefix":"pstEllipsePolarNode",
-		"body":[
-			"\\pstEllipsePolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstEllipseTangentNode()(){}{}{}":{
-		"prefix":"pstEllipseTangentNode",
-		"body":[
-			"\\pstEllipseTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralEllipse()()":{
-		"prefix":"pstGeneralEllipse",
-		"body":[
-			"\\pstGeneralEllipse(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstGeneralEllipseFle{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralEllipseFle",
-		"body":[
-			"\\pstGeneralEllipseFle{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
-		]
-	},
-
-
-	"pstGeneralEllipseFFN{}{}{}{}{}":{
-		"prefix":"pstGeneralEllipseFFN",
-		"body":[
-			"\\pstGeneralEllipseFFN{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
-		]
-	},
-
-
-	"pstGeneralEllipseCoef{}{}{}{}":{
-		"prefix":"pstGeneralEllipseCoef",
-		"body":[
-			"\\pstGeneralEllipseCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
-		]
-	},
-
-
-	"pstGeneralEllipseABCDE{}{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralEllipseABCDE",
-		"body":[
-			"\\pstGeneralEllipseABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
-		]
-	},
-
-
-	"pstGeneralEllipseNode()(){}{}":{
-		"prefix":"pstGeneralEllipseNode",
-		"body":[
-			"\\pstGeneralEllipseNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
-		]
-	},
-
-
-	"pstGeneralEllipseRotNode()(){}":{
-		"prefix":"pstGeneralEllipseRotNode",
-		"body":[
-			"\\pstGeneralEllipseRotNode(${2:O})(${3:a},${4:b}){${1:A}}"
-		]
-	},
-
-
-	"pstGeneralEllipseAbsNode()(){}{}{}":{
-		"prefix":"pstGeneralEllipseAbsNode",
-		"body":[
-			"\\pstGeneralEllipseAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralEllipseOrdNode()(){}{}{}":{
-		"prefix":"pstGeneralEllipseOrdNode",
-		"body":[
-			"\\pstGeneralEllipseOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralEllipseFocusNode()(){}{}{}":{
-		"prefix":"pstGeneralEllipseFocusNode",
-		"body":[
-			"\\pstGeneralEllipseFocusNode(${4:O})(${5:a},${6:b}){${1:t}}{${2:F1}}{${3:F2}}"
-		]
-	},
-
-
-	"pstGeneralEllipseDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstGeneralEllipseDirectrixLine",
-		"body":[
-			"\\pstGeneralEllipseDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstGeneralEllipseLineInter()(){}{}{}{}":{
-		"prefix":"pstGeneralEllipseLineInter",
-		"body":[
-			"\\pstGeneralEllipseLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstGeneralEllipsePolarNode()(){}{}{}":{
-		"prefix":"pstGeneralEllipsePolarNode",
-		"body":[
-			"\\pstGeneralEllipsePolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstGeneralEllipseTangentNode()(){}{}{}":{
-		"prefix":"pstGeneralEllipseTangentNode",
-		"body":[
-			"\\pstGeneralEllipseTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstParabola(){}{}{}":{
-		"prefix":"pstParabola",
-		"body":[
-			"\\pstParabola(${4:O}){${1:p}}{${2:x1}}{${3:x2}}"
-		]
-	},
-
-
-	"pstParabolaNode(){}{}{}":{
-		"prefix":"pstParabolaNode",
-		"body":[
-			"\\pstParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
-	},
-
-
-	"pstParabolaAbsNode(){}{}{}":{
-		"prefix":"pstParabolaAbsNode",
-		"body":[
-			"\\pstParabolaAbsNode(${4:O}){${1:p}}{${2:x}}{${3:A}}"
-		]
-	},
-
-
-	"pstParabolaOrdNode(){}{}{}{}":{
-		"prefix":"pstParabolaOrdNode",
-		"body":[
-			"\\pstParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstParabolaFocusNode(){}{}":{
-		"prefix":"pstParabolaFocusNode",
-		"body":[
-			"\\pstParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
-		]
-	},
-
-
-	"pstParabolaDirectrixLine(){}{}{}":{
-		"prefix":"pstParabolaDirectrixLine",
-		"body":[
-			"\\pstParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
-	},
-
-
-	"pstParabolaLineInter(){}{}{}{}{}":{
-		"prefix":"pstParabolaLineInter",
-		"body":[
-			"\\pstParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstParabolaPolarNode(){}{}{}{}":{
-		"prefix":"pstParabolaPolarNode",
-		"body":[
-			"\\pstParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstParabolaPolarNode(){}(){}{}{}":{
-		"prefix":"pstParabolaPolarNode",
-		"body":[
-			"\\pstParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstParabolaTangentNode(){}{}{}{}":{
-		"prefix":"pstParabolaTangentNode",
-		"body":[
-			"\\pstParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstIParabola(){}{}{}":{
-		"prefix":"pstIParabola",
-		"body":[
-			"\\pstIParabola(${4:O}){${1:p}}{${2:y1}}{${3:y2}}"
-		]
-	},
-
-
-	"pstIParabolaNode(){}{}{}":{
-		"prefix":"pstIParabolaNode",
-		"body":[
-			"\\pstIParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
-	},
-
-
-	"pstIParabolaAbsNode(){}{}{}{}":{
-		"prefix":"pstIParabolaAbsNode",
-		"body":[
-			"\\pstIParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstIParabolaOrdNode(){}{}{}":{
-		"prefix":"pstIParabolaOrdNode",
-		"body":[
-			"\\pstIParabolaOrdNode(${4:O}){${1:p}}{${2:y}}{${3:A}}"
-		]
-	},
-
-
-	"pstIParabolaFocusNode(){}{}":{
-		"prefix":"pstIParabolaFocusNode",
-		"body":[
-			"\\pstIParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
-		]
-	},
-
-
-	"pstIParabolaDirectrixLine(){}{}{}":{
-		"prefix":"pstIParabolaDirectrixLine",
-		"body":[
-			"\\pstIParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
-	},
-
-
-	"pstIParabolaLineInter(){}{}{}{}{}":{
-		"prefix":"pstIParabolaLineInter",
-		"body":[
-			"\\pstIParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstIParabolaPolarNode(){}{}{}{}":{
-		"prefix":"pstIParabolaPolarNode",
-		"body":[
-			"\\pstIParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstIParabolaPolarNode(){}(){}{}{}":{
-		"prefix":"pstIParabolaPolarNode",
-		"body":[
-			"\\pstIParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstIParabolaTangentNode(){}{}{}{}":{
-		"prefix":"pstIParabolaTangentNode",
-		"body":[
-			"\\pstIParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralParabola(){}{}{}":{
-		"prefix":"pstGeneralParabola",
-		"body":[
-			"\\pstGeneralParabola(${4:O}){${1:p}}{${2:x1}}{${3:x2}}"
-		]
-	},
-
-
-	"pstGeneralParabolaNode(){}{}{}":{
-		"prefix":"pstGeneralParabolaNode",
-		"body":[
-			"\\pstGeneralParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
-	},
-
-
-	"pstGeneralParabolaAbsNode(){}{}{}{}":{
-		"prefix":"pstGeneralParabolaAbsNode",
-		"body":[
-			"\\pstGeneralParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralParabolaOrdNode(){}{}{}{}":{
-		"prefix":"pstGeneralParabolaOrdNode",
-		"body":[
-			"\\pstGeneralParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralParabolaFl{}{}{}{}{}{}":{
-		"prefix":"pstGeneralParabolaFl",
-		"body":[
-			"\\pstGeneralParabolaFl{${1:F}}{${2:A}}{${3:B}}{${4:O}}{${5:p}}{${6:θ}}"
-		]
-	},
-
-
-	"pstGeneralParabolaCoef{}{}{}{}":{
-		"prefix":"pstGeneralParabolaCoef",
-		"body":[
-			"\\pstGeneralParabolaCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:p}}{${4:θ}}"
-		]
-	},
-
-
-	"pstGeneralParabolaABCDE{}{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralParabolaABCDE",
-		"body":[
-			"\\pstGeneralParabolaABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:p}}{${8:θ}}"
-		]
-	},
-
-
-	"pstGeneralParabolaFocusNode(){}{}":{
-		"prefix":"pstGeneralParabolaFocusNode",
-		"body":[
-			"\\pstGeneralParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
-		]
-	},
-
-
-	"pstGeneralParabolaDirectrixLine(){}{}{}":{
-		"prefix":"pstGeneralParabolaDirectrixLine",
-		"body":[
-			"\\pstGeneralParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
-	},
-
-
-	"pstGeneralParabolaLineInter(){}{}{}{}{}":{
-		"prefix":"pstGeneralParabolaLineInter",
-		"body":[
-			"\\pstGeneralParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstGeneralParabolaPolarNode(){}{}{}{}":{
-		"prefix":"pstGeneralParabolaPolarNode",
-		"body":[
-			"\\pstGeneralParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstGeneralParabolaPolarNode(){}(){}{}{}":{
-		"prefix":"pstGeneralParabolaPolarNode",
-		"body":[
-			"\\pstGeneralParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstGeneralParabolaTangentNode(){}{}{}{}":{
-		"prefix":"pstGeneralParabolaTangentNode",
-		"body":[
-			"\\pstGeneralParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralIParabola(){}{}{}":{
-		"prefix":"pstGeneralIParabola",
-		"body":[
-			"\\pstGeneralIParabola(${4:O}){${1:p}}{${2:y1}}{${3:y2}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaNode(){}{}{}":{
-		"prefix":"pstGeneralIParabolaNode",
-		"body":[
-			"\\pstGeneralIParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaAbsNode(){}{}{}{}":{
-		"prefix":"pstGeneralIParabolaAbsNode",
-		"body":[
-			"\\pstGeneralIParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaOrdNode(){}{}{}{}":{
-		"prefix":"pstGeneralIParabolaOrdNode",
-		"body":[
-			"\\pstGeneralIParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaFocusNode(){}{}":{
-		"prefix":"pstGeneralIParabolaFocusNode",
-		"body":[
-			"\\pstGeneralIParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaDirectrixLine(){}{}{}":{
-		"prefix":"pstGeneralIParabolaDirectrixLine",
-		"body":[
-			"\\pstGeneralIParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaLineInter(){}{}{}{}{}":{
-		"prefix":"pstGeneralIParabolaLineInter",
-		"body":[
-			"\\pstGeneralIParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaPolarNode(){}{}{}{}":{
-		"prefix":"pstGeneralIParabolaPolarNode",
-		"body":[
-			"\\pstGeneralIParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaPolarNode(){}(){}{}{}":{
-		"prefix":"pstGeneralIParabolaPolarNode",
-		"body":[
-			"\\pstGeneralIParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
-	},
-
-
-	"pstGeneralIParabolaTangentNode(){}{}{}{}":{
-		"prefix":"pstGeneralIParabolaTangentNode",
-		"body":[
-			"\\pstGeneralIParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstHyperbola()()":{
-		"prefix":"pstHyperbola",
-		"body":[
-			"\\pstHyperbola(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstHyperbolaNode()(){}{}":{
-		"prefix":"pstHyperbolaNode",
-		"body":[
-			"\\pstHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
-		]
-	},
-
-
-	"pstHyperbolaAbsNode()(){}{}{}":{
-		"prefix":"pstHyperbolaAbsNode",
-		"body":[
-			"\\pstHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstHyperbolaOrdNode()(){}{}{}":{
-		"prefix":"pstHyperbolaOrdNode",
-		"body":[
-			"\\pstHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstHyperbolaFocusNode()(){}{}":{
-		"prefix":"pstHyperbolaFocusNode",
-		"body":[
-			"\\pstHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
-		]
-	},
-
-
-	"pstHyperbolaDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstHyperbolaDirectrixLine",
-		"body":[
-			"\\pstHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstHyperbolaAsymptoteLine()(){}{}":{
-		"prefix":"pstHyperbolaAsymptoteLine",
-		"body":[
-			"\\pstHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
-		]
-	},
-
-
-	"pstHyperbolaLineInter()(){}{}{}{}":{
-		"prefix":"pstHyperbolaLineInter",
-		"body":[
-			"\\pstHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstHyperbolaPolarNode()(){}{}{}":{
-		"prefix":"pstHyperbolaPolarNode",
-		"body":[
-			"\\pstHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstHyperbolaTangentNode()(){}{}{}":{
-		"prefix":"pstHyperbolaTangentNode",
-		"body":[
-			"\\pstHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstIHyperbola()()":{
-		"prefix":"pstIHyperbola",
-		"body":[
-			"\\pstIHyperbola(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstIHyperbolaNode()(){}{}":{
-		"prefix":"pstIHyperbolaNode",
-		"body":[
-			"\\pstIHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
-		]
-	},
-
-
-	"pstIHyperbolaAbsNode()(){}{}{}":{
-		"prefix":"pstIHyperbolaAbsNode",
-		"body":[
-			"\\pstIHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstIHyperbolaOrdNode()(){}{}{}":{
-		"prefix":"pstIHyperbolaOrdNode",
-		"body":[
-			"\\pstIHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstIHyperbolaFocusNode()(){}{}":{
-		"prefix":"pstIHyperbolaFocusNode",
-		"body":[
-			"\\pstIHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
-		]
-	},
-
-
-	"pstIHyperbolaDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstIHyperbolaDirectrixLine",
-		"body":[
-			"\\pstIHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstIHyperbolaAsymptoteLine()(){}{}":{
-		"prefix":"pstIHyperbolaAsymptoteLine",
-		"body":[
-			"\\pstIHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
-		]
-	},
-
-
-	"pstIHyperbolaLineInter()(){}{}{}{}":{
-		"prefix":"pstIHyperbolaLineInter",
-		"body":[
-			"\\pstIHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstIHyperbolaPolarNode()(){}{}{}":{
-		"prefix":"pstIHyperbolaPolarNode",
-		"body":[
-			"\\pstIHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstIHyperbolaTangentNode()(){}{}{}":{
-		"prefix":"pstIHyperbolaTangentNode",
-		"body":[
-			"\\pstIHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralHyperbola()()":{
-		"prefix":"pstGeneralHyperbola",
-		"body":[
-			"\\pstGeneralHyperbola(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstGeneralHyperbolaFle{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaFle",
-		"body":[
-			"\\pstGeneralHyperbolaFle{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaFFN{}{}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaFFN",
-		"body":[
-			"\\pstGeneralHyperbolaFFN{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaCoef{}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaCoef",
-		"body":[
-			"\\pstGeneralHyperbolaCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaABCDE{}{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaABCDE",
-		"body":[
-			"\\pstGeneralHyperbolaABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaNode()(){}{}":{
-		"prefix":"pstGeneralHyperbolaNode",
-		"body":[
-			"\\pstGeneralHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaAbsNode()(){}{}{}":{
-		"prefix":"pstGeneralHyperbolaAbsNode",
-		"body":[
-			"\\pstGeneralHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaOrdNode()(){}{}{}":{
-		"prefix":"pstGeneralHyperbolaOrdNode",
-		"body":[
-			"\\pstGeneralHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaFocusNode()(){}{}":{
-		"prefix":"pstGeneralHyperbolaFocusNode",
-		"body":[
-			"\\pstGeneralHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaVertexNode()(){}{}":{
-		"prefix":"pstGeneralHyperbolaVertexNode",
-		"body":[
-			"\\pstGeneralHyperbolaVertexNode(${3:O})(${4:a},${5:b}){${1:V1}}{${2:V2}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaDirectrixLine",
-		"body":[
-			"\\pstGeneralHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaLineInter()(){}{}{}{}":{
-		"prefix":"pstGeneralHyperbolaLineInter",
-		"body":[
-			"\\pstGeneralHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaPolarNode()(){}{}{}":{
-		"prefix":"pstGeneralHyperbolaPolarNode",
-		"body":[
-			"\\pstGeneralHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaTangentNode()(){}{}{}":{
-		"prefix":"pstGeneralHyperbolaTangentNode",
-		"body":[
-			"\\pstGeneralHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbola()()":{
-		"prefix":"pstGeneralIHyperbola",
-		"body":[
-			"\\pstGeneralIHyperbola(${1:O})(${2:a},${3:b})"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaNode()(){}{}":{
-		"prefix":"pstGeneralIHyperbolaNode",
-		"body":[
-			"\\pstGeneralIHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaAbsNode()(){}{}{}":{
-		"prefix":"pstGeneralIHyperbolaAbsNode",
-		"body":[
-			"\\pstGeneralIHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaOrdNode()(){}{}{}":{
-		"prefix":"pstGeneralIHyperbolaOrdNode",
-		"body":[
-			"\\pstGeneralIHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaFocusNode()(){}{}":{
-		"prefix":"pstGeneralIHyperbolaFocusNode",
-		"body":[
-			"\\pstGeneralIHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaVertexNode()(){}{}":{
-		"prefix":"pstGeneralIHyperbolaVertexNode",
-		"body":[
-			"\\pstGeneralIHyperbolaVertexNode(${3:O})(${4:a},${5:b}){${1:V1}}{${2:V2}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaDirectrixLine()(){}{}{}{}":{
-		"prefix":"pstGeneralIHyperbolaDirectrixLine",
-		"body":[
-			"\\pstGeneralIHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaAsymptoteLine()(){}{}":{
-		"prefix":"pstGeneralIHyperbolaAsymptoteLine",
-		"body":[
-			"\\pstGeneralIHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaLineInter()(){}{}{}{}":{
-		"prefix":"pstGeneralIHyperbolaLineInter",
-		"body":[
-			"\\pstGeneralIHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaPolarNode()(){}{}{}":{
-		"prefix":"pstGeneralIHyperbolaPolarNode",
-		"body":[
-			"\\pstGeneralIHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
-	},
-
-
-	"pstGeneralIHyperbolaTangentNode()(){}{}{}":{
-		"prefix":"pstGeneralIHyperbolaTangentNode",
-		"body":[
-			"\\pstGeneralIHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralConicEquation{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralConicEquation",
-		"body":[
-			"\\pstGeneralConicEquation{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}{${7:a,b,c,d,e,f}}"
-		]
-	},
-
-
-	"pstGeneralEllipseEquation()(){}":{
-		"prefix":"pstGeneralEllipseEquation",
-		"body":[
-			"\\pstGeneralEllipseEquation(${2:O})(${3:a},${4:b}){${1:a,b,c,d,e,f}}"
-		]
-	},
-
-
-	"pstGeneralHyperbolaEquation()(){}":{
-		"prefix":"pstGeneralHyperbolaEquation",
-		"body":[
-			"\\pstGeneralHyperbolaEquation(${2:O})(${3:a},${4:b}){${1:a,b,c,d,e,f}}"
-		]
-	},
-
-
-	"pstGeneralParabolaEquation(){}{}":{
-		"prefix":"pstGeneralParabolaEquation",
-		"body":[
-			"\\pstGeneralParabolaEquation(${3:O}){${1:p}}{${2:a,b,c,d,e,f}}"
-		]
-	},
-
-
-	"pstGeneralConicLineInter{}{}{}{}{}":{
-		"prefix":"pstGeneralConicLineInter",
-		"body":[
-			"\\pstGeneralConicLineInter{${1:A}}{${2:B}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}"
-		]
-	},
-
-
-	"pstGeneralConicCircleInter{}{}{}{}{}{}{}":{
-		"prefix":"pstGeneralConicCircleInter",
-		"body":[
-			"\\pstGeneralConicCircleInter{${1:O}}{${2:A}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}{${6:E}}{${7:F}}"
-		]
-	},
-
-
-	"pstGeneralConicEllipseInter()(){}{}{}{}{}":{
-		"prefix":"pstGeneralConicEllipseInter",
-		"body":[
-			"\\pstGeneralConicEllipseInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
-	},
-
-
-	"pstGeneralConicHyperbolaInter()(){}{}{}{}{}":{
-		"prefix":"pstGeneralConicHyperbolaInter",
-		"body":[
-			"\\pstGeneralConicHyperbolaInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
-	},
-
-
-	"pstGeneralConicIHyperbolaInter()(){}{}{}{}{}":{
-		"prefix":"pstGeneralConicIHyperbolaInter",
-		"body":[
-			"\\pstGeneralConicIHyperbolaInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
-	},
-
-
-	"pstGeneralConicParabolaInter(){}{}{}{}{}{}":{
-		"prefix":"pstGeneralConicParabolaInter",
-		"body":[
-			"\\pstGeneralConicParabolaInter(${7:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
-		]
-	},
-
-
-	"pstGeneralConicIParabolaInter(){}{}{}{}{}{}":{
-		"prefix":"pstGeneralConicIParabolaInter",
-		"body":[
-			"\\pstGeneralConicIParabolaInter(${7:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
-		]
-	},
-
-
-	"pstGeneralConicInter{}{}{}{}{}{}":{
-		"prefix":"pstGeneralConicInter",
-		"body":[
-			"\\pstGeneralConicInter{${1:a,b,c,d,e,f}}{${2:a',b',c',d',e',f'}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
-		]
-	},
-
-
-	"pstGeneralConicTangentLine{}{}{}":{
-		"prefix":"pstGeneralConicTangentLine",
-		"body":[
-			"\\pstGeneralConicTangentLine{${1:A}}{${2:a,b,c,d,e,f}}{${3:B}}"
-		]
-	},
-
-
-	"pstGeneralConicTangentChord{}{}{}{}":{
-		"prefix":"pstGeneralConicTangentChord",
-		"body":[
-			"\\pstGeneralConicTangentChord{${1:T}}{${2:a,b,c,d,e,f}}{${3:A}}{${4:B}}"
-		]
-	},
-
-
-	"pstSymO{}{}":{
-		"prefix":"pstSymO",
-		"body":[
-			"\\pstSymO{${1:O}}{${2:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstOrtSym{}{}{}":{
-		"prefix":"pstOrtSym",
-		"body":[
-			"\\pstOrtSym{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstRotation{}{}":{
-		"prefix":"pstRotation",
-		"body":[
-			"\\pstRotation{${1:O}}{${2:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstAngleAOB{}{}{}":{
-		"prefix":"pstAngleAOB",
-		"body":[
-			"\\pstAngleAOB{${1:A}}{${2:O}}{${3:B}}"
-		]
-	},
-
-
-	"pstTranslation{}{}{}":{
-		"prefix":"pstTranslation",
-		"body":[
-			"\\pstTranslation{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstHomO{}{}":{
-		"prefix":"pstHomO",
-		"body":[
-			"\\pstHomO{${1:O}}{${2:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstProjection{}{}{}":{
-		"prefix":"pstProjection",
-		"body":[
-			"\\pstProjection{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
-	},
-
-
-	"pstMiddleAB{}{}{}":{
-		"prefix":"pstMiddleAB",
-		"body":[
-			"\\pstMiddleAB{${1:A}}{${2:B}}{${3:I}}"
-		]
-	},
-
-
-	"pstCGravABC{}{}{}{}":{
-		"prefix":"pstCGravABC",
-		"body":[
-			"\\pstCGravABC{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
-		]
-	},
-
-
-	"pstCircleABC{}{}{}{}":{
-		"prefix":"pstCircleABC",
-		"body":[
-			"\\pstCircleABC{${1:A}}{${2:B}}{${3:C}}{${4:O}}"
-		]
-	},
-
-
-	"pstMediatorAB{}{}{}{}":{
-		"prefix":"pstMediatorAB",
-		"body":[
-			"\\pstMediatorAB{${1:A}}{${2:B}}{${3:I}}{${4:M}}"
-		]
-	},
-
-
-	"pstBissectBAC{}{}{}{}":{
-		"prefix":"pstBissectBAC",
-		"body":[
-			"\\pstBissectBAC{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
-		]
-	},
-
-
-	"pstOutBissectBAC{}{}{}{}":{
-		"prefix":"pstOutBissectBAC",
-		"body":[
-			"\\pstOutBissectBAC{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
-		]
-	},
-
-
-	"pstInterLL{}{}{}{}{}":{
-		"prefix":"pstInterLL",
-		"body":[
-			"\\pstInterLL{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:M}}"
-		]
-	},
-
-
-	"pstInterLC{}{}{}{}{}{}":{
-		"prefix":"pstInterLC",
-		"body":[
-			"\\pstInterLC{${1:A}}{${2:B}}{${3:O}}{${4:C}}{${5:M1}}{${6:M2}}"
-		]
-	},
-
-
-	"pstInterCC{}{}{}{}{}{}":{
-		"prefix":"pstInterCC",
-		"body":[
-			"\\pstInterCC{${1:O1}}{${2:B}}{${3:O2}}{${4:C}}{${5:M1}}{${6:M2}}"
-		]
-	},
-
-
-	"pstInterFF{}{}{}{}":{
-		"prefix":"pstInterFF",
-		"body":[
-			"\\pstInterFF{${1:f%definition}}{${2:g%definition}}{${3:x0}}{${4:M}}"
-		]
-	},
-
-
-	"pstInterFL{}{}{}{}{}":{
-		"prefix":"pstInterFL",
-		"body":[
-			"\\pstInterFL{${1:f%definition}}{${2:A}}{${3:B}}{${4:x0}}{${5:M}}"
-		]
-	},
-
-
-	"pstInterFC{}{}{}{}{}":{
-		"prefix":"pstInterFC",
-		"body":[
-			"\\pstInterFC{${1:f%definition}}{${2:O}}{${3:A}}{${4:x0}}{${5:M}}"
-		]
-	},
-
-
-	"psGetDistanceAB()(){}":{
-		"prefix":"psGetDistanceAB",
-		"body":[
-			"\\psGetDistanceAB(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:name}}"
-		]
-	},
-
-
-	"psGetAngleABC()()(){}":{
-		"prefix":"psGetAngleABC",
-		"body":[
-			"\\psGetAngleABC(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3}){${1:name}}"
-		]
-	},
-
-
-	"MarkArrow":{
-		"prefix":"MarkArrow",
-		"body":[
-			"\\MarkArrow"
-		]
-	},
-
-
-	"MarkArroww":{
-		"prefix":"MarkArroww",
-		"body":[
-			"\\MarkArroww"
-		]
-	},
-
-
-	"MarkArrowww":{
-		"prefix":"MarkArrowww",
-		"body":[
-			"\\MarkArrowww"
-		]
-	},
-
-
-	"MarkCirc":{
-		"prefix":"MarkCirc",
-		"body":[
-			"\\MarkCirc"
-		]
-	},
-
-
-	"MarkCros":{
-		"prefix":"MarkCros",
-		"body":[
-			"\\MarkCros"
-		]
-	},
-
-
-	"MarkCross":{
-		"prefix":"MarkCross",
-		"body":[
-			"\\MarkCross"
-		]
-	},
-
-
-	"MarkHash":{
-		"prefix":"MarkHash",
-		"body":[
-			"\\MarkHash"
-		]
-	},
-
-
-	"MarkHashh":{
-		"prefix":"MarkHashh",
-		"body":[
-			"\\MarkHashh"
-		]
-	},
-
-
-	"MarkHashhh":{
-		"prefix":"MarkHashhh",
-		"body":[
-			"\\MarkHashhh"
-		]
-	},
-
-
-	"SegSymLst":{
-		"prefix":"SegSymLst",
-		"body":[
-			"\\SegSymLst"
-		]
-	},
-
-
-	"pstParseArg{}{}{}":{
-		"prefix":"pstParseArg",
-		"body":[
-			"\\pstParseArg{${1:prefix}}{${2:element list}}{${3:value list}}"
-		]
-	},
-
-
-	"pstShowCoor{}":{
-		"prefix":"pstShowCoor",
-		"body":[
-			"\\pstShowCoor{${1:A}}"
-		]
-	},
-
-
-	"pstslash":{
-		"prefix":"pstslash",
-		"body":[
-			"\\pstslash"
-		]
-	},
-
-
-	"pstslashh":{
-		"prefix":"pstslashh",
-		"body":[
-			"\\pstslashh"
-		]
-	},
-
-
-	"pstslashhh":{
-		"prefix":"pstslashhh",
-		"body":[
-			"\\pstslashhh"
-		]
-	},
-
-
-	"pstslashslash":{
-		"prefix":"pstslashslash",
-		"body":[
-			"\\pstslashslash"
-		]
-	},
-
-
-	"pstslashslashslash":{
-		"prefix":"pstslashslashslash",
-		"body":[
-			"\\pstslashslashslash"
-		]
-	},
-
-
-	"resetEUCLvalues":{
-		"prefix":"resetEUCLvalues",
-		"body":[
-			"\\resetEUCLvalues"
-		]
-	},
-
-
-	"psMarkHashLength":{
-		"prefix":"psMarkHashLength",
-		"body":[
-			"\\psMarkHashLength"
-		]
-	},
-
-
-	"psMarkHashSep":{
-		"prefix":"psMarkHashSep",
-		"body":[
-			"\\psMarkHashSep"
-		]
-	},
-
-
-	"pstLabelAB*{}{}{}":{
-		"prefix":"*pstLabelAB",
-		"body":[
-			"\\pstLabelAB*{${1:A}}{${2:B}}{${3:label}}"
-		]
-	},
-
-
-	"pstLabelAB*[]{}{}{}":{
-		"prefix":"*pstLabelAB",
-		"body":[
-			"\\pstLabelAB*[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1989,7 +32,17 @@
 		"prefix":"pstMoveNode",
 		"body":[
 			"\\pstMoveNode[${3:options%keyvals}](${4:dx},${5:dy}){${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstSegmentMark{}{}":{
+		"prefix":"pstSegmentMark",
+		"body":[
+			"\\pstSegmentMark{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1997,7 +50,17 @@
 		"prefix":"pstSegmentMark",
 		"body":[
 			"\\pstSegmentMark[${3:options%keyvals}]{${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLabelAB{}{}{}":{
+		"prefix":"pstLabelAB",
+		"body":[
+			"\\pstLabelAB{${1:A}}{${2:B}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2005,7 +68,35 @@
 		"prefix":"pstLabelAB",
 		"body":[
 			"\\pstLabelAB[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLabelAB*{}{}{}":{
+		"prefix":"*pstLabelAB",
+		"body":[
+			"\\pstLabelAB*{${1:A}}{${2:B}}{${3:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pstLabelAB*[]{}{}{}":{
+		"prefix":"*pstLabelAB",
+		"body":[
+			"\\pstLabelAB*[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pstTriangle(){}(){}(){}":{
+		"prefix":"pstTriangle",
+		"body":[
+			"\\pstTriangle(${4:x1},${5:y1}){${1:A}}(${6:x2},${7:y2}){${2:B}}(${8:x3},${9:y3}){${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2013,7 +104,17 @@
 		"prefix":"pstTriangle",
 		"body":[
 			"\\pstTriangle[${4:options%keyvals}](${5:x1},${6:y1}){${1:A}}(${7:x2},${8:y2}){${2:B}}(${9:x3},${10:y3}){${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleSSS(){}(){}{}":{
+		"prefix":"pstTriangleSSS",
+		"body":[
+			"\\pstTriangleSSS(${4:pos}){${1:A}}(${5:a},${6:b},${7:c}){${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2021,7 +122,17 @@
 		"prefix":"pstTriangleSSS",
 		"body":[
 			"\\pstTriangleSSS[${4:options%keyvals}](${5:pos}){${1:A}}(${6:a},${7:b},${8:c}){${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleSAS(){}(){}{}":{
+		"prefix":"pstTriangleSAS",
+		"body":[
+			"\\pstTriangleSAS(${4:pos}){${1:A}}(${5:b},${6:∠A},${7:c}){${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2029,7 +140,17 @@
 		"prefix":"pstTriangleSAS",
 		"body":[
 			"\\pstTriangleSAS[${4:options%keyvals}](${5:pos}){${1:A}}(${6:b},${7:∠A},${8:c}){${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleAAS(){}(){}{}":{
+		"prefix":"pstTriangleAAS",
+		"body":[
+			"\\pstTriangleAAS(${4:pos}){${1:A}}(${5:∠C},${6:∠A},${7:c}){${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2037,7 +158,17 @@
 		"prefix":"pstTriangleAAS",
 		"body":[
 			"\\pstTriangleAAS[${4:options%keyvals}](${5:pos}){${1:A}}(${6:∠C},${7:∠A},${8:c}){${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleASA(){}(){}{}":{
+		"prefix":"pstTriangleASA",
+		"body":[
+			"\\pstTriangleASA(${4:pos}){${1:A}}(${5:∠A},${6:c},${7:∠B}){${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2045,7 +176,17 @@
 		"prefix":"pstTriangleASA",
 		"body":[
 			"\\pstTriangleASA[${4:options%keyvals}](${5:pos}){${1:A}}(${6:∠A},${7:c},${8:∠B}){${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleIC{}{}{}":{
+		"prefix":"pstTriangleIC",
+		"body":[
+			"\\pstTriangleIC{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2053,7 +194,8 @@
 		"prefix":"pstTriangleIC",
 		"body":[
 			"\\pstTriangleIC{${1:A}}{${2:B}}{${3:C}}[${4:I}][${5:H}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2061,7 +203,8 @@
 		"prefix":"pstTriangleIC",
 		"body":[
 			"\\pstTriangleIC[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2069,7 +212,17 @@
 		"prefix":"pstTriangleIC",
 		"body":[
 			"\\pstTriangleIC[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}[${5:I}][${6:H}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleOC{}{}{}":{
+		"prefix":"pstTriangleOC",
+		"body":[
+			"\\pstTriangleOC{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2077,7 +230,8 @@
 		"prefix":"pstTriangleOC",
 		"body":[
 			"\\pstTriangleOC{${1:A}}{${2:B}}{${3:C}}[${4:O}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2085,7 +239,8 @@
 		"prefix":"pstTriangleOC",
 		"body":[
 			"\\pstTriangleOC[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2093,7 +248,17 @@
 		"prefix":"pstTriangleOC",
 		"body":[
 			"\\pstTriangleOC[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}[${5:O}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleGC{}{}{}{}":{
+		"prefix":"pstTriangleGC",
+		"body":[
+			"\\pstTriangleGC{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2101,7 +266,8 @@
 		"prefix":"pstTriangleGC",
 		"body":[
 			"\\pstTriangleGC{${1:A}}{${2:B}}{${3:C}}{${4:G}}[${5:M1}][${6:M2}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2109,7 +275,8 @@
 		"prefix":"pstTriangleGC",
 		"body":[
 			"\\pstTriangleGC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2117,7 +284,17 @@
 		"prefix":"pstTriangleGC",
 		"body":[
 			"\\pstTriangleGC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:G}}[${6:M1}][${7:M2}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleHC{}{}{}{}":{
+		"prefix":"pstTriangleHC",
+		"body":[
+			"\\pstTriangleHC{${1:A}}{${2:B}}{${3:C}}{${4:H}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2125,7 +302,8 @@
 		"prefix":"pstTriangleHC",
 		"body":[
 			"\\pstTriangleHC{${1:A}}{${2:B}}{${3:C}}{${4:H}}[${5:H1}][${6:H2}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2133,7 +311,8 @@
 		"prefix":"pstTriangleHC",
 		"body":[
 			"\\pstTriangleHC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:H}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2141,7 +320,17 @@
 		"prefix":"pstTriangleHC",
 		"body":[
 			"\\pstTriangleHC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:H}}[${6:H1}][${7:H2}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleEC{}{}{}{}":{
+		"prefix":"pstTriangleEC",
+		"body":[
+			"\\pstTriangleEC{${1:A}}{${2:B}}{${3:C}}{${4:E}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2149,7 +338,8 @@
 		"prefix":"pstTriangleEC",
 		"body":[
 			"\\pstTriangleEC{${1:A}}{${2:B}}{${3:C}}{${4:E}}[${5:T1}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2157,7 +347,8 @@
 		"prefix":"pstTriangleEC",
 		"body":[
 			"\\pstTriangleEC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:E}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2165,7 +356,17 @@
 		"prefix":"pstTriangleEC",
 		"body":[
 			"\\pstTriangleEC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:E}}[${6:T1}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleNC{}{}{}{}":{
+		"prefix":"pstTriangleNC",
+		"body":[
+			"\\pstTriangleNC{${1:A}}{${2:B}}{${3:C}}{${4:N}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2173,7 +374,8 @@
 		"prefix":"pstTriangleNC",
 		"body":[
 			"\\pstTriangleNC{${1:A}}{${2:B}}{${3:C}}{${4:N}}[${5:M1}][${6:M2}][${7:M3}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2181,7 +383,8 @@
 		"prefix":"pstTriangleNC",
 		"body":[
 			"\\pstTriangleNC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:N}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2189,7 +392,17 @@
 		"prefix":"pstTriangleNC",
 		"body":[
 			"\\pstTriangleNC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:N}}[${6:M1}][${7:M2}][${8:M3}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstTriangleLC{}{}{}{}":{
+		"prefix":"pstTriangleLC",
+		"body":[
+			"\\pstTriangleLC{${1:A}}{${2:B}}{${3:C}}{${4:L}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2197,7 +410,8 @@
 		"prefix":"pstTriangleLC",
 		"body":[
 			"\\pstTriangleLC{${1:A}}{${2:B}}{${3:C}}{${4:L}}[${5:S1}][${6:S2}][${7:S3}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2205,7 +419,8 @@
 		"prefix":"pstTriangleLC",
 		"body":[
 			"\\pstTriangleLC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:L}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2213,7 +428,17 @@
 		"prefix":"pstTriangleLC",
 		"body":[
 			"\\pstTriangleLC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:L}}[${6:S1}][${7:S2}][${8:S3}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstRightAngle{}{}{}":{
+		"prefix":"pstRightAngle",
+		"body":[
+			"\\pstRightAngle{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2221,7 +446,17 @@
 		"prefix":"pstRightAngle",
 		"body":[
 			"\\pstRightAngle[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstMarkAngle{}{}{}{}":{
+		"prefix":"pstMarkAngle",
+		"body":[
+			"\\pstMarkAngle{${1:A}}{${2:B}}{${3:C}}{${4:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2229,7 +464,17 @@
 		"prefix":"pstMarkAngle",
 		"body":[
 			"\\pstMarkAngle[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAB{}{}":{
+		"prefix":"pstLineAB",
+		"body":[
+			"\\pstLineAB{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2237,7 +482,17 @@
 		"prefix":"pstLineAB",
 		"body":[
 			"\\pstLineAB[${3:options%keyvals}]{${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLine{}{}":{
+		"prefix":"pstLine",
+		"body":[
+			"\\pstLine{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2245,7 +500,17 @@
 		"prefix":"pstLine",
 		"body":[
 			"\\pstLine[${3:options%keyvals}]{${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLine{}()":{
+		"prefix":"pstLine",
+		"body":[
+			"\\pstLine{${1:A}}(${2:x},${3:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2253,7 +518,17 @@
 		"prefix":"pstLine",
 		"body":[
 			"\\pstLine[${2:options%keyvals}]{${1:A}}(${3:x},${4:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLine(){}":{
+		"prefix":"pstLine",
+		"body":[
+			"\\pstLine(${2:x},${3:y}){${1:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2261,7 +536,17 @@
 		"prefix":"pstLine",
 		"body":[
 			"\\pstLine[${2:options%keyvals}](${3:x},${4:y}){${1:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLine()()":{
+		"prefix":"pstLine",
+		"body":[
+			"\\pstLine(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2269,7 +554,17 @@
 		"prefix":"pstLine",
 		"body":[
 			"\\pstLine[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAA{}{}{}":{
+		"prefix":"pstLineAA",
+		"body":[
+			"\\pstLineAA{${1:A}}{${2:angle}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2277,7 +572,17 @@
 		"prefix":"pstLineAA",
 		"body":[
 			"\\pstLineAA[${4:options%keyvals}]{${1:A}}{${2:angle}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAA(){}{}":{
+		"prefix":"pstLineAA",
+		"body":[
+			"\\pstLineAA(${3:x},${4:y}){${1:angle}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2285,7 +590,17 @@
 		"prefix":"pstLineAA",
 		"body":[
 			"\\pstLineAA[${3:options%keyvals}](${4:x},${5:y}){${1:angle}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAS{}{}{}":{
+		"prefix":"pstLineAS",
+		"body":[
+			"\\pstLineAS{${1:A}}{${2:gradient}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2293,7 +608,17 @@
 		"prefix":"pstLineAS",
 		"body":[
 			"\\pstLineAS[${4:options%keyvals}]{${1:A}}{${2:gradient}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAS(){}{}":{
+		"prefix":"pstLineAS",
+		"body":[
+			"\\pstLineAS(${3:x},${4:y}){${1:gradient}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2301,7 +626,17 @@
 		"prefix":"pstLineAS",
 		"body":[
 			"\\pstLineAS[${3:options%keyvals}](${4:x},${5:y}){${1:gradient}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineCoef{}{}{}":{
+		"prefix":"pstLineCoef",
+		"body":[
+			"\\pstLineCoef{${1:a,b,c}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2309,7 +644,17 @@
 		"prefix":"pstLineCoef",
 		"body":[
 			"\\pstLineCoef[${4:options%keyvals}]{${1:a,b,c}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineAbsNode{}{}{}{}":{
+		"prefix":"pstLineAbsNode",
+		"body":[
+			"\\pstLineAbsNode{${1:A}}{${2:B}}{${3:x}}{${4:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2317,7 +662,17 @@
 		"prefix":"pstLineAbsNode",
 		"body":[
 			"\\pstLineAbsNode[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:x}}{${4:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLineOrdNode{}{}{}{}":{
+		"prefix":"pstLineOrdNode",
+		"body":[
+			"\\pstLineOrdNode{${1:A}}{${2:B}}{${3:y}}{${4:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2325,7 +680,17 @@
 		"prefix":"pstLineOrdNode",
 		"body":[
 			"\\pstLineOrdNode[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:y}}{${4:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstProportionNode{}{}{}{}{}":{
+		"prefix":"pstProportionNode",
+		"body":[
+			"\\pstProportionNode{${1:A}}{${2:B}}{${3:λ}}{${4:C}}{${5:C'}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2333,7 +698,17 @@
 		"prefix":"pstProportionNode",
 		"body":[
 			"\\pstProportionNode[${6:options%keyvals}]{${1:A}}{${2:B}}{${3:λ}}{${4:C}}{${5:C'}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstBisectorAOB{}{}{}{}{}":{
+		"prefix":"pstBisectorAOB",
+		"body":[
+			"\\pstBisectorAOB{${1:A}}{${2:O}}{${3:B}}{${4:T1}}{${5:T2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2341,7 +716,17 @@
 		"prefix":"pstBisectorAOB",
 		"body":[
 			"\\pstBisectorAOB[${6:options%keyvals}]{${1:A}}{${2:O}}{${3:B}}{${4:T1}}{${5:T2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstFourthHarmonicNode{}{}{}{}":{
+		"prefix":"pstFourthHarmonicNode",
+		"body":[
+			"\\pstFourthHarmonicNode{${1:A}}{${2:B}}{${3:C}}{${4:X}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2349,7 +734,17 @@
 		"prefix":"pstFourthHarmonicNode",
 		"body":[
 			"\\pstFourthHarmonicNode[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:X}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstLocateAB{}{}{}{}":{
+		"prefix":"pstLocateAB",
+		"body":[
+			"\\pstLocateAB{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2357,7 +752,17 @@
 		"prefix":"pstLocateAB",
 		"body":[
 			"\\pstLocateAB[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstExtendAB{}{}{}{}":{
+		"prefix":"pstExtendAB",
+		"body":[
+			"\\pstExtendAB{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2365,7 +770,17 @@
 		"prefix":"pstExtendAB",
 		"body":[
 			"\\pstExtendAB[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:L}}{${4:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInversion{}{}{}{}":{
+		"prefix":"pstInversion",
+		"body":[
+			"\\pstInversion{${1:O}}{${2:A}}{${3:C}}{${4:C'}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2373,7 +788,17 @@
 		"prefix":"pstInversion",
 		"body":[
 			"\\pstInversion[${5:options%keyvals}]{${1:O}}{${2:A}}{${3:C}}{${4:C'}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGoldenMean{}{}{}":{
+		"prefix":"pstGoldenMean",
+		"body":[
+			"\\pstGoldenMean{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2381,7 +806,17 @@
 		"prefix":"pstGoldenMean",
 		"body":[
 			"\\pstGoldenMean[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeometricMean{}{}{}{}{}":{
+		"prefix":"pstGeometricMean",
+		"body":[
+			"\\pstGeometricMean{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2389,7 +824,17 @@
 		"prefix":"pstGeometricMean",
 		"body":[
 			"\\pstGeometricMean[${6:options%keyvals}]{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHarmonicMean{}{}{}{}{}":{
+		"prefix":"pstHarmonicMean",
+		"body":[
+			"\\pstHarmonicMean{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2397,7 +842,179 @@
 		"prefix":"pstHarmonicMean",
 		"body":[
 			"\\pstHarmonicMean[${6:options%keyvals}]{${1:A}}{${2:B}}{${3:L1}}{${4:L2}}{${5:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstDistAB{}{}":{
+		"prefix":"pstDistAB",
+		"body":[
+			"\\pstDistAB{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistVal{}":{
+		"prefix":"pstDistVal",
+		"body":[
+			"\\pstDistVal{${1:l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistCalc{}":{
+		"prefix":"pstDistCalc",
+		"body":[
+			"\\pstDistCalc{${1:expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDist{}{}":{
+		"prefix":"pstDist",
+		"body":[
+			"\\pstDist{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistConst{}":{
+		"prefix":"pstDistConst",
+		"body":[
+			"\\pstDistConst{${1:l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistExpr{}":{
+		"prefix":"pstDistExpr",
+		"body":[
+			"\\pstDistExpr{${1:expr%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistCoef{}":{
+		"prefix":"pstDistCoef",
+		"body":[
+			"\\pstDistCoef{${1:distance}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstUserDist{}":{
+		"prefix":"pstUserDist",
+		"body":[
+			"\\pstUserDist{${1:distance}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstScreenDist{}":{
+		"prefix":"pstScreenDist",
+		"body":[
+			"\\pstScreenDist{${1:distance}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistMul{}{}{}":{
+		"prefix":"pstDistMul",
+		"body":[
+			"\\pstDistMul{${1:A}}{${2:B}}{${3:λ}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistAdd{}{}{}{}":{
+		"prefix":"pstDistAdd",
+		"body":[
+			"\\pstDistAdd{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistAddVal{}{}{}{}":{
+		"prefix":"pstDistAddVal",
+		"body":[
+			"\\pstDistAddVal{${1:A}}{${2:B}}{${3:λ}}{${4:L}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistAddCoef{}{}{}{}{}{}":{
+		"prefix":"pstDistAddCoef",
+		"body":[
+			"\\pstDistAddCoef{${1:A}}{${2:B}}{${3:λ1}}{${4:C}}{${5:D}}{${6:λ2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistSub{}{}{}{}":{
+		"prefix":"pstDistSub",
+		"body":[
+			"\\pstDistSub{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistSubVal{}{}{}{}":{
+		"prefix":"pstDistSubVal",
+		"body":[
+			"\\pstDistSubVal{${1:A}}{${2:B}}{${3:λ}}{${4:L}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistSubCoef{}{}{}{}{}{}":{
+		"prefix":"pstDistSubCoef",
+		"body":[
+			"\\pstDistSubCoef{${1:A}}{${2:B}}{${3:λ1}}{${4:C}}{${5:D}}{${6:λ2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistDiv{}{}{}{}":{
+		"prefix":"pstDistDiv",
+		"body":[
+			"\\pstDistDiv{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstDistABC{}{}{}":{
+		"prefix":"pstDistABC",
+		"body":[
+			"\\pstDistABC{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstCircleOA{}{}":{
+		"prefix":"pstCircleOA",
+		"body":[
+			"\\pstCircleOA{${1:O}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2405,7 +1022,8 @@
 		"prefix":"pstCircleOA",
 		"body":[
 			"\\pstCircleOA{${1:O}}{${2:A}}[${3:angleA}][${4:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2413,7 +1031,8 @@
 		"prefix":"pstCircleOA",
 		"body":[
 			"\\pstCircleOA[${3:options%keyvals}]{${1:O}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2421,7 +1040,17 @@
 		"prefix":"pstCircleOA",
 		"body":[
 			"\\pstCircleOA[${3:options%keyvals}]{${1:O}}{${2:A}}[${4:angleA}][${5:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleAB{}{}":{
+		"prefix":"pstCircleAB",
+		"body":[
+			"\\pstCircleAB{${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2429,7 +1058,8 @@
 		"prefix":"pstCircleAB",
 		"body":[
 			"\\pstCircleAB{${1:A}}{${2:B}}[${3:angleA}][${4:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2437,7 +1067,8 @@
 		"prefix":"pstCircleAB",
 		"body":[
 			"\\pstCircleAB[${3:options%keyvals}]{${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2445,7 +1076,17 @@
 		"prefix":"pstCircleAB",
 		"body":[
 			"\\pstCircleAB[${3:options%keyvals}]{${1:A}}{${2:B}}[${4:angleA}][${5:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleABR{}{}{}{}":{
+		"prefix":"pstCircleABR",
+		"body":[
+			"\\pstCircleABR{${1:A}}{${2:B}}{${3:R}}{${4:O}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2453,7 +1094,17 @@
 		"prefix":"pstCircleABR",
 		"body":[
 			"\\pstCircleABR[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:R}}{${4:O}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstArcOAB{}{}{}":{
+		"prefix":"pstArcOAB",
+		"body":[
+			"\\pstArcOAB{${1:O}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2461,7 +1112,17 @@
 		"prefix":"pstArcOAB",
 		"body":[
 			"\\pstArcOAB[${4:options%keyvals}]{${1:O}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstArcnOAB{}{}{}":{
+		"prefix":"pstArcnOAB",
+		"body":[
+			"\\pstArcnOAB{${1:O}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2469,7 +1130,17 @@
 		"prefix":"pstArcnOAB",
 		"body":[
 			"\\pstArcnOAB[${4:options%keyvals}]{${1:O}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleNode{}{}{}{}":{
+		"prefix":"pstCircleNode",
+		"body":[
+			"\\pstCircleNode{${1:O}}{${2:A}}{${3:θ}}{${4:X}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2477,7 +1148,17 @@
 		"prefix":"pstCircleNode",
 		"body":[
 			"\\pstCircleNode[${5:options%keyvals}]{${1:O}}{${2:A}}{${3:θ}}{${4:X}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleRotNode{}{}{}":{
+		"prefix":"pstCircleRotNode",
+		"body":[
+			"\\pstCircleRotNode{${1:O}}{${2:A}}{${3:X}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2485,7 +1166,17 @@
 		"prefix":"pstCircleRotNode",
 		"body":[
 			"\\pstCircleRotNode[${4:options%keyvals}]{${1:O}}{${2:A}}{${3:X}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleChordNode{}{}{}{}":{
+		"prefix":"pstCircleChordNode",
+		"body":[
+			"\\pstCircleChordNode{${1:O}}{${2:A}}{${3:L}}{${4:X}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2493,7 +1184,17 @@
 		"prefix":"pstCircleChordNode",
 		"body":[
 			"\\pstCircleChordNode[${5:options%keyvals}]{${1:O}}{${2:A}}{${3:L}}{${4:X}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleAbsNode{}{}{}{}{}":{
+		"prefix":"pstCircleAbsNode",
+		"body":[
+			"\\pstCircleAbsNode{${1:O}}{${2:A}}{${3:x}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2501,7 +1202,17 @@
 		"prefix":"pstCircleAbsNode",
 		"body":[
 			"\\pstCircleAbsNode[${6:options%keyvals}]{${1:O}}{${2:A}}{${3:x}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleOrdNode{}{}{}{}{}":{
+		"prefix":"pstCircleOrdNode",
+		"body":[
+			"\\pstCircleOrdNode{${1:O}}{${2:A}}{${3:y}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2509,7 +1220,17 @@
 		"prefix":"pstCircleOrdNode",
 		"body":[
 			"\\pstCircleOrdNode[${6:options%keyvals}]{${1:O}}{${2:A}}{${3:y}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCurvAbsNode{}{}{}{}":{
+		"prefix":"pstCurvAbsNode",
+		"body":[
+			"\\pstCurvAbsNode{${1:O}}{${2:A}}{${3:B}}{${4:abscissa}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2517,7 +1238,17 @@
 		"prefix":"pstCurvAbsNode",
 		"body":[
 			"\\pstCurvAbsNode[${5:options%keyvals}]{${1:O}}{${2:A}}{${3:B}}{${4:abscissa}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleTangentLine{}{}{}":{
+		"prefix":"pstCircleTangentLine",
+		"body":[
+			"\\pstCircleTangentLine{${1:O}}{${2:A}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2525,7 +1256,17 @@
 		"prefix":"pstCircleTangentLine",
 		"body":[
 			"\\pstCircleTangentLine[${4:options%keyvals}]{${1:O}}{${2:A}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleTangentNode{}{}{}{}{}":{
+		"prefix":"pstCircleTangentNode",
+		"body":[
+			"\\pstCircleTangentNode{${1:O}}{${2:A}}{${3:P}}{${4:T1}}{${5:T2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2533,7 +1274,17 @@
 		"prefix":"pstCircleTangentNode",
 		"body":[
 			"\\pstCircleTangentNode[${6:options%keyvals}]{${1:O}}{${2:A}}{${3:P}}{${4:T1}}{${5:T2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleExternalCommonTangent{}{}{}{}{}{}{}{}":{
+		"prefix":"pstCircleExternalCommonTangent",
+		"body":[
+			"\\pstCircleExternalCommonTangent{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2541,7 +1292,17 @@
 		"prefix":"pstCircleExternalCommonTangent",
 		"body":[
 			"\\pstCircleExternalCommonTangent[${9:options%keyvals}]{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleInternalCommonTangent{}{}{}{}{}{}{}{}":{
+		"prefix":"pstCircleInternalCommonTangent",
+		"body":[
+			"\\pstCircleInternalCommonTangent{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2549,7 +1310,17 @@
 		"prefix":"pstCircleInternalCommonTangent",
 		"body":[
 			"\\pstCircleInternalCommonTangent[${9:options%keyvals}]{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:T1}}{${6:T2}}{${7:T3}}{${8:T4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleRadicalAxis{}{}{}{}{}{}":{
+		"prefix":"pstCircleRadicalAxis",
+		"body":[
+			"\\pstCircleRadicalAxis{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:C}}{${6:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2557,7 +1328,17 @@
 		"prefix":"pstCircleRadicalAxis",
 		"body":[
 			"\\pstCircleRadicalAxis[${7:options%keyvals}]{${1:O1}}{${2:A}}{${3:O2}}{${4:B}}{${5:C}}{${6:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstETriangleAB{}{}{}":{
+		"prefix":"pstETriangleAB",
+		"body":[
+			"\\pstETriangleAB{${1:A}}{${2:B}}{${3:C}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2565,7 +1346,17 @@
 		"prefix":"pstETriangleAB",
 		"body":[
 			"\\pstETriangleAB[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstSquareAB{}{}{}{}":{
+		"prefix":"pstSquareAB",
+		"body":[
+			"\\pstSquareAB{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2573,7 +1364,17 @@
 		"prefix":"pstSquareAB",
 		"body":[
 			"\\pstSquareAB[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstRegularPolygonAB{}{}{}{}":{
+		"prefix":"pstRegularPolygonAB",
+		"body":[
+			"\\pstRegularPolygonAB{${1:A0}}{${2:A1}}{${3:n}}{${4:A2,A3,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2581,7 +1382,17 @@
 		"prefix":"pstRegularPolygonAB",
 		"body":[
 			"\\pstRegularPolygonAB[${5:options%keyvals}]{${1:A0}}{${2:A1}}{${3:n}}{${4:A2,A3,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstRegularPolygonOA{}{}{}{}":{
+		"prefix":"pstRegularPolygonOA",
+		"body":[
+			"\\pstRegularPolygonOA{${1:O}}{${2:A0}}{${3:n}}{${4:A1,A2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2589,7 +1400,17 @@
 		"prefix":"pstRegularPolygonOA",
 		"body":[
 			"\\pstRegularPolygonOA[${5:options%keyvals}]{${1:O}}{${2:A0}}{${3:n}}{${4:A1,A2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGenericCurve{}{}{}":{
+		"prefix":"pstGenericCurve",
+		"body":[
+			"\\pstGenericCurve{${1:radical}}{${2:n1}}{${3:n2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2597,7 +1418,17 @@
 		"prefix":"pstGenericCurve",
 		"body":[
 			"\\pstGenericCurve[${4:options%keyvals}]{${1:radical}}{${2:n1}}{${3:n2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipse()()":{
+		"prefix":"pstEllipse",
+		"body":[
+			"\\pstEllipse(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2605,7 +1436,8 @@
 		"prefix":"pstEllipse",
 		"body":[
 			"\\pstEllipse(${3:O})(${4:a},${5:b})[${1:angleA}][${2:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2613,7 +1445,8 @@
 		"prefix":"pstEllipse",
 		"body":[
 			"\\pstEllipse[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2621,7 +1454,17 @@
 		"prefix":"pstEllipse",
 		"body":[
 			"\\pstEllipse[${1:options%keyvals}](${4:O})(${5:a},${6:b})[${2:angleA}][${3:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseNode()(){}{}":{
+		"prefix":"pstEllipseNode",
+		"body":[
+			"\\pstEllipseNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:P}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2629,7 +1472,17 @@
 		"prefix":"pstEllipseNode",
 		"body":[
 			"\\pstEllipseNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:P}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseRotNode()(){}":{
+		"prefix":"pstEllipseRotNode",
+		"body":[
+			"\\pstEllipseRotNode(${2:O})(${3:a},${4:b}){${1:P}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2637,7 +1490,17 @@
 		"prefix":"pstEllipseRotNode",
 		"body":[
 			"\\pstEllipseRotNode[${2:options%keyvals}](${3:O})(${4:a},${5:b}){${1:P}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseAbsNode()(){}{}{}":{
+		"prefix":"pstEllipseAbsNode",
+		"body":[
+			"\\pstEllipseAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2645,7 +1508,17 @@
 		"prefix":"pstEllipseAbsNode",
 		"body":[
 			"\\pstEllipseAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseOrdNode()(){}{}{}":{
+		"prefix":"pstEllipseOrdNode",
+		"body":[
+			"\\pstEllipseOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2653,7 +1526,17 @@
 		"prefix":"pstEllipseOrdNode",
 		"body":[
 			"\\pstEllipseOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseFocusNode()(){}{}":{
+		"prefix":"pstEllipseFocusNode",
+		"body":[
+			"\\pstEllipseFocusNode(${3:O})(${4:a},${5:b}){${1:A}}{${2:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2661,7 +1544,17 @@
 		"prefix":"pstEllipseFocusNode",
 		"body":[
 			"\\pstEllipseFocusNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstEllipseDirectrixLine",
+		"body":[
+			"\\pstEllipseDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2669,7 +1562,17 @@
 		"prefix":"pstEllipseDirectrixLine",
 		"body":[
 			"\\pstEllipseDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseLineInter()(){}{}{}{}":{
+		"prefix":"pstEllipseLineInter",
+		"body":[
+			"\\pstEllipseLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2677,7 +1580,17 @@
 		"prefix":"pstEllipseLineInter",
 		"body":[
 			"\\pstEllipseLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipsePolarNode()(){}{}{}":{
+		"prefix":"pstEllipsePolarNode",
+		"body":[
+			"\\pstEllipsePolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2685,7 +1598,17 @@
 		"prefix":"pstEllipsePolarNode",
 		"body":[
 			"\\pstEllipsePolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstEllipseTangentNode()(){}{}{}":{
+		"prefix":"pstEllipseTangentNode",
+		"body":[
+			"\\pstEllipseTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2693,7 +1616,17 @@
 		"prefix":"pstEllipseTangentNode",
 		"body":[
 			"\\pstEllipseTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipse()()":{
+		"prefix":"pstGeneralEllipse",
+		"body":[
+			"\\pstGeneralEllipse(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2701,7 +1634,8 @@
 		"prefix":"pstGeneralEllipse",
 		"body":[
 			"\\pstGeneralEllipse(${2:O})(${3:a},${4:b})[${1:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2709,7 +1643,8 @@
 		"prefix":"pstGeneralEllipse",
 		"body":[
 			"\\pstGeneralEllipse(${4:O})(${5:a},${6:b})[${1:θ}][${2:angleA}][${3:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2717,7 +1652,8 @@
 		"prefix":"pstGeneralEllipse",
 		"body":[
 			"\\pstGeneralEllipse[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2725,7 +1661,8 @@
 		"prefix":"pstGeneralEllipse",
 		"body":[
 			"\\pstGeneralEllipse[${1:options%keyvals}](${3:O})(${4:a},${5:b})[${2:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2733,7 +1670,17 @@
 		"prefix":"pstGeneralEllipse",
 		"body":[
 			"\\pstGeneralEllipse[${1:options%keyvals}](${5:O})(${6:a},${7:b})[${2:θ}][${3:angleA}][${4:angleB}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseFle{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralEllipseFle",
+		"body":[
+			"\\pstGeneralEllipseFle{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2741,7 +1688,17 @@
 		"prefix":"pstGeneralEllipseFle",
 		"body":[
 			"\\pstGeneralEllipseFle[${8:options%keyvals}]{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseFFN{}{}{}{}{}":{
+		"prefix":"pstGeneralEllipseFFN",
+		"body":[
+			"\\pstGeneralEllipseFFN{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2749,7 +1706,17 @@
 		"prefix":"pstGeneralEllipseFFN",
 		"body":[
 			"\\pstGeneralEllipseFFN[${6:options%keyvals}]{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseCoef{}{}{}{}":{
+		"prefix":"pstGeneralEllipseCoef",
+		"body":[
+			"\\pstGeneralEllipseCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2757,7 +1724,17 @@
 		"prefix":"pstGeneralEllipseCoef",
 		"body":[
 			"\\pstGeneralEllipseCoef[${5:options%keyvals}]{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseABCDE{}{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralEllipseABCDE",
+		"body":[
+			"\\pstGeneralEllipseABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2765,7 +1742,17 @@
 		"prefix":"pstGeneralEllipseABCDE",
 		"body":[
 			"\\pstGeneralEllipseABCDE[${9:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseNode()(){}{}":{
+		"prefix":"pstGeneralEllipseNode",
+		"body":[
+			"\\pstGeneralEllipseNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2773,7 +1760,8 @@
 		"prefix":"pstGeneralEllipseNode",
 		"body":[
 			"\\pstGeneralEllipseNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2781,7 +1769,8 @@
 		"prefix":"pstGeneralEllipseNode",
 		"body":[
 			"\\pstGeneralEllipseNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2789,7 +1778,17 @@
 		"prefix":"pstGeneralEllipseNode",
 		"body":[
 			"\\pstGeneralEllipseNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseRotNode()(){}":{
+		"prefix":"pstGeneralEllipseRotNode",
+		"body":[
+			"\\pstGeneralEllipseRotNode(${2:O})(${3:a},${4:b}){${1:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2797,7 +1796,8 @@
 		"prefix":"pstGeneralEllipseRotNode",
 		"body":[
 			"\\pstGeneralEllipseRotNode(${3:O})(${4:a},${5:b})[${2:θ}]{${1:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2805,7 +1805,8 @@
 		"prefix":"pstGeneralEllipseRotNode",
 		"body":[
 			"\\pstGeneralEllipseRotNode[${2:options%keyvals}](${3:O})(${4:a},${5:b}){${1:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2813,7 +1814,17 @@
 		"prefix":"pstGeneralEllipseRotNode",
 		"body":[
 			"\\pstGeneralEllipseRotNode[${2:options%keyvals}](${4:O})(${5:a},${6:b})[${3:θ}]{${1:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseAbsNode()(){}{}{}":{
+		"prefix":"pstGeneralEllipseAbsNode",
+		"body":[
+			"\\pstGeneralEllipseAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2821,7 +1832,8 @@
 		"prefix":"pstGeneralEllipseAbsNode",
 		"body":[
 			"\\pstGeneralEllipseAbsNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2829,7 +1841,8 @@
 		"prefix":"pstGeneralEllipseAbsNode",
 		"body":[
 			"\\pstGeneralEllipseAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2837,7 +1850,17 @@
 		"prefix":"pstGeneralEllipseAbsNode",
 		"body":[
 			"\\pstGeneralEllipseAbsNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseOrdNode()(){}{}{}":{
+		"prefix":"pstGeneralEllipseOrdNode",
+		"body":[
+			"\\pstGeneralEllipseOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2845,7 +1868,8 @@
 		"prefix":"pstGeneralEllipseOrdNode",
 		"body":[
 			"\\pstGeneralEllipseOrdNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2853,7 +1877,8 @@
 		"prefix":"pstGeneralEllipseOrdNode",
 		"body":[
 			"\\pstGeneralEllipseOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2861,7 +1886,17 @@
 		"prefix":"pstGeneralEllipseOrdNode",
 		"body":[
 			"\\pstGeneralEllipseOrdNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseFocusNode()(){}{}{}":{
+		"prefix":"pstGeneralEllipseFocusNode",
+		"body":[
+			"\\pstGeneralEllipseFocusNode(${4:O})(${5:a},${6:b}){${1:t}}{${2:F1}}{${3:F2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2869,7 +1904,8 @@
 		"prefix":"pstGeneralEllipseFocusNode",
 		"body":[
 			"\\pstGeneralEllipseFocusNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:t}}{${2:F1}}{${3:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2877,7 +1913,8 @@
 		"prefix":"pstGeneralEllipseFocusNode",
 		"body":[
 			"\\pstGeneralEllipseFocusNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:t}}{${2:F1}}{${3:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2885,7 +1922,17 @@
 		"prefix":"pstGeneralEllipseFocusNode",
 		"body":[
 			"\\pstGeneralEllipseFocusNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:t}}{${2:F1}}{${3:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstGeneralEllipseDirectrixLine",
+		"body":[
+			"\\pstGeneralEllipseDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2893,7 +1940,8 @@
 		"prefix":"pstGeneralEllipseDirectrixLine",
 		"body":[
 			"\\pstGeneralEllipseDirectrixLine(${6:O})(${7:a},${8:b})[${5:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2901,7 +1949,8 @@
 		"prefix":"pstGeneralEllipseDirectrixLine",
 		"body":[
 			"\\pstGeneralEllipseDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2909,7 +1958,17 @@
 		"prefix":"pstGeneralEllipseDirectrixLine",
 		"body":[
 			"\\pstGeneralEllipseDirectrixLine[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseLineInter()(){}{}{}{}":{
+		"prefix":"pstGeneralEllipseLineInter",
+		"body":[
+			"\\pstGeneralEllipseLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2917,7 +1976,8 @@
 		"prefix":"pstGeneralEllipseLineInter",
 		"body":[
 			"\\pstGeneralEllipseLineInter(${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2925,7 +1985,8 @@
 		"prefix":"pstGeneralEllipseLineInter",
 		"body":[
 			"\\pstGeneralEllipseLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2933,7 +1994,17 @@
 		"prefix":"pstGeneralEllipseLineInter",
 		"body":[
 			"\\pstGeneralEllipseLineInter[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipsePolarNode()(){}{}{}":{
+		"prefix":"pstGeneralEllipsePolarNode",
+		"body":[
+			"\\pstGeneralEllipsePolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2941,7 +2012,8 @@
 		"prefix":"pstGeneralEllipsePolarNode",
 		"body":[
 			"\\pstGeneralEllipsePolarNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2949,7 +2021,8 @@
 		"prefix":"pstGeneralEllipsePolarNode",
 		"body":[
 			"\\pstGeneralEllipsePolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2957,7 +2030,17 @@
 		"prefix":"pstGeneralEllipsePolarNode",
 		"body":[
 			"\\pstGeneralEllipsePolarNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseTangentNode()(){}{}{}":{
+		"prefix":"pstGeneralEllipseTangentNode",
+		"body":[
+			"\\pstGeneralEllipseTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2965,7 +2048,8 @@
 		"prefix":"pstGeneralEllipseTangentNode",
 		"body":[
 			"\\pstGeneralEllipseTangentNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2973,7 +2057,8 @@
 		"prefix":"pstGeneralEllipseTangentNode",
 		"body":[
 			"\\pstGeneralEllipseTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -2981,7 +2066,17 @@
 		"prefix":"pstGeneralEllipseTangentNode",
 		"body":[
 			"\\pstGeneralEllipseTangentNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabola(){}{}{}":{
+		"prefix":"pstParabola",
+		"body":[
+			"\\pstParabola(${4:O}){${1:p}}{${2:x1}}{${3:x2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2989,7 +2084,17 @@
 		"prefix":"pstParabola",
 		"body":[
 			"\\pstParabola[${4:options%keyvals}](${5:O}){${1:p}}{${2:x1}}{${3:x2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaNode(){}{}{}":{
+		"prefix":"pstParabolaNode",
+		"body":[
+			"\\pstParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2997,7 +2102,17 @@
 		"prefix":"pstParabolaNode",
 		"body":[
 			"\\pstParabolaNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaAbsNode(){}{}{}":{
+		"prefix":"pstParabolaAbsNode",
+		"body":[
+			"\\pstParabolaAbsNode(${4:O}){${1:p}}{${2:x}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3005,7 +2120,17 @@
 		"prefix":"pstParabolaAbsNode",
 		"body":[
 			"\\pstParabolaAbsNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:x}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaOrdNode(){}{}{}{}":{
+		"prefix":"pstParabolaOrdNode",
+		"body":[
+			"\\pstParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3013,7 +2138,17 @@
 		"prefix":"pstParabolaOrdNode",
 		"body":[
 			"\\pstParabolaOrdNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaFocusNode(){}{}":{
+		"prefix":"pstParabolaFocusNode",
+		"body":[
+			"\\pstParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3021,7 +2156,17 @@
 		"prefix":"pstParabolaFocusNode",
 		"body":[
 			"\\pstParabolaFocusNode[${3:options%keyvals}](${4:O}){${1:p}}{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaDirectrixLine(){}{}{}":{
+		"prefix":"pstParabolaDirectrixLine",
+		"body":[
+			"\\pstParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3029,7 +2174,35 @@
 		"prefix":"pstParabolaDirectrixLine",
 		"body":[
 			"\\pstParabolaDirectrixLine[${4:options%keyvals}](${5:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaLineInter(){}{}{}{}{}":{
+		"prefix":"pstParabolaLineInter",
+		"body":[
+			"\\pstParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstParabolaPolarNode(){}{}{}{}":{
+		"prefix":"pstParabolaPolarNode",
+		"body":[
+			"\\pstParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstParabolaPolarNode(){}(){}{}{}":{
+		"prefix":"pstParabolaPolarNode",
+		"body":[
+			"\\pstParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3037,7 +2210,8 @@
 		"prefix":"pstParabolaPolarNode",
 		"body":[
 			"\\pstParabolaPolarNode(${7:O}){${1:p}}(${8:F})[${5:Lx}][${6:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3045,7 +2219,8 @@
 		"prefix":"pstParabolaPolarNode",
 		"body":[
 			"\\pstParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3053,7 +2228,8 @@
 		"prefix":"pstParabolaPolarNode",
 		"body":[
 			"\\pstParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}(${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3061,7 +2237,17 @@
 		"prefix":"pstParabolaPolarNode",
 		"body":[
 			"\\pstParabolaPolarNode[${5:options%keyvals}](${8:O}){${1:p}}(${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstParabolaTangentNode(){}{}{}{}":{
+		"prefix":"pstParabolaTangentNode",
+		"body":[
+			"\\pstParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3069,7 +2255,17 @@
 		"prefix":"pstParabolaTangentNode",
 		"body":[
 			"\\pstParabolaTangentNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabola(){}{}{}":{
+		"prefix":"pstIParabola",
+		"body":[
+			"\\pstIParabola(${4:O}){${1:p}}{${2:y1}}{${3:y2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3077,7 +2273,17 @@
 		"prefix":"pstIParabola",
 		"body":[
 			"\\pstIParabola[${4:options%keyvals}](${5:O}){${1:p}}{${2:y1}}{${3:y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaNode(){}{}{}":{
+		"prefix":"pstIParabolaNode",
+		"body":[
+			"\\pstIParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3085,7 +2291,17 @@
 		"prefix":"pstIParabolaNode",
 		"body":[
 			"\\pstIParabolaNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaAbsNode(){}{}{}{}":{
+		"prefix":"pstIParabolaAbsNode",
+		"body":[
+			"\\pstIParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3093,7 +2309,17 @@
 		"prefix":"pstIParabolaAbsNode",
 		"body":[
 			"\\pstIParabolaAbsNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaOrdNode(){}{}{}":{
+		"prefix":"pstIParabolaOrdNode",
+		"body":[
+			"\\pstIParabolaOrdNode(${4:O}){${1:p}}{${2:y}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3101,7 +2327,17 @@
 		"prefix":"pstIParabolaOrdNode",
 		"body":[
 			"\\pstIParabolaOrdNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:y}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaFocusNode(){}{}":{
+		"prefix":"pstIParabolaFocusNode",
+		"body":[
+			"\\pstIParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3109,7 +2345,17 @@
 		"prefix":"pstIParabolaFocusNode",
 		"body":[
 			"\\pstIParabolaFocusNode[${3:options%keyvals}](${4:O}){${1:p}}{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaDirectrixLine(){}{}{}":{
+		"prefix":"pstIParabolaDirectrixLine",
+		"body":[
+			"\\pstIParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3117,7 +2363,17 @@
 		"prefix":"pstIParabolaDirectrixLine",
 		"body":[
 			"\\pstIParabolaDirectrixLine[${4:options%keyvals}](${5:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaLineInter(){}{}{}{}{}":{
+		"prefix":"pstIParabolaLineInter",
+		"body":[
+			"\\pstIParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3125,7 +2381,26 @@
 		"prefix":"pstIParabolaLineInter",
 		"body":[
 			"\\pstIParabolaLineInter[${6:options%keyvals}](${7:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaPolarNode(){}{}{}{}":{
+		"prefix":"pstIParabolaPolarNode",
+		"body":[
+			"\\pstIParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstIParabolaPolarNode(){}(){}{}{}":{
+		"prefix":"pstIParabolaPolarNode",
+		"body":[
+			"\\pstIParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3133,7 +2408,8 @@
 		"prefix":"pstIParabolaPolarNode",
 		"body":[
 			"\\pstIParabolaPolarNode(${7:O}){${1:p}}(${8:F})[${5:Lx}][${6:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3141,7 +2417,8 @@
 		"prefix":"pstIParabolaPolarNode",
 		"body":[
 			"\\pstIParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3149,7 +2426,8 @@
 		"prefix":"pstIParabolaPolarNode",
 		"body":[
 			"\\pstIParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}(${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3157,7 +2435,17 @@
 		"prefix":"pstIParabolaPolarNode",
 		"body":[
 			"\\pstIParabolaPolarNode[${5:options%keyvals}](${8:O}){${1:p}}(${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIParabolaTangentNode(){}{}{}{}":{
+		"prefix":"pstIParabolaTangentNode",
+		"body":[
+			"\\pstIParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3165,7 +2453,17 @@
 		"prefix":"pstIParabolaTangentNode",
 		"body":[
 			"\\pstIParabolaTangentNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabola(){}{}{}":{
+		"prefix":"pstGeneralParabola",
+		"body":[
+			"\\pstGeneralParabola(${4:O}){${1:p}}{${2:x1}}{${3:x2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3173,7 +2471,8 @@
 		"prefix":"pstGeneralParabola",
 		"body":[
 			"\\pstGeneralParabola(${5:O}){${1:p}}[${4:θ}]{${2:x1}}{${3:x2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3181,7 +2480,8 @@
 		"prefix":"pstGeneralParabola",
 		"body":[
 			"\\pstGeneralParabola[${4:options%keyvals}](${5:O}){${1:p}}{${2:x1}}{${3:x2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3189,7 +2489,17 @@
 		"prefix":"pstGeneralParabola",
 		"body":[
 			"\\pstGeneralParabola[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:x1}}{${3:x2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaNode(){}{}{}":{
+		"prefix":"pstGeneralParabolaNode",
+		"body":[
+			"\\pstGeneralParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3197,7 +2507,8 @@
 		"prefix":"pstGeneralParabolaNode",
 		"body":[
 			"\\pstGeneralParabolaNode(${5:O}){${1:p}}[${4:θ}]{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3205,7 +2516,8 @@
 		"prefix":"pstGeneralParabolaNode",
 		"body":[
 			"\\pstGeneralParabolaNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3213,7 +2525,17 @@
 		"prefix":"pstGeneralParabolaNode",
 		"body":[
 			"\\pstGeneralParabolaNode[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaAbsNode(){}{}{}{}":{
+		"prefix":"pstGeneralParabolaAbsNode",
+		"body":[
+			"\\pstGeneralParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3221,7 +2543,8 @@
 		"prefix":"pstGeneralParabolaAbsNode",
 		"body":[
 			"\\pstGeneralParabolaAbsNode(${6:O}){${1:p}}[${5:θ}]{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3229,7 +2552,8 @@
 		"prefix":"pstGeneralParabolaAbsNode",
 		"body":[
 			"\\pstGeneralParabolaAbsNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3237,7 +2561,17 @@
 		"prefix":"pstGeneralParabolaAbsNode",
 		"body":[
 			"\\pstGeneralParabolaAbsNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaOrdNode(){}{}{}{}":{
+		"prefix":"pstGeneralParabolaOrdNode",
+		"body":[
+			"\\pstGeneralParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3245,7 +2579,8 @@
 		"prefix":"pstGeneralParabolaOrdNode",
 		"body":[
 			"\\pstGeneralParabolaOrdNode(${6:O}){${1:p}}[${5:θ}]{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3253,7 +2588,8 @@
 		"prefix":"pstGeneralParabolaOrdNode",
 		"body":[
 			"\\pstGeneralParabolaOrdNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3261,7 +2597,17 @@
 		"prefix":"pstGeneralParabolaOrdNode",
 		"body":[
 			"\\pstGeneralParabolaOrdNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaFl{}{}{}{}{}{}":{
+		"prefix":"pstGeneralParabolaFl",
+		"body":[
+			"\\pstGeneralParabolaFl{${1:F}}{${2:A}}{${3:B}}{${4:O}}{${5:p}}{${6:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3269,7 +2615,17 @@
 		"prefix":"pstGeneralParabolaFl",
 		"body":[
 			"\\pstGeneralParabolaFl[${7:options%keyvals}]{${1:F}}{${2:A}}{${3:B}}{${4:O}}{${5:p}}{${6:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaCoef{}{}{}{}":{
+		"prefix":"pstGeneralParabolaCoef",
+		"body":[
+			"\\pstGeneralParabolaCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:p}}{${4:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3277,7 +2633,17 @@
 		"prefix":"pstGeneralParabolaCoef",
 		"body":[
 			"\\pstGeneralParabolaCoef[${5:options%keyvals}]{${1:a,b,c,d,e,f}}{${2:O}}{${3:p}}{${4:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaABCDE{}{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralParabolaABCDE",
+		"body":[
+			"\\pstGeneralParabolaABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:p}}{${8:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3285,7 +2651,17 @@
 		"prefix":"pstGeneralParabolaABCDE",
 		"body":[
 			"\\pstGeneralParabolaABCDE[${9:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:p}}{${8:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaFocusNode(){}{}":{
+		"prefix":"pstGeneralParabolaFocusNode",
+		"body":[
+			"\\pstGeneralParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3293,7 +2669,8 @@
 		"prefix":"pstGeneralParabolaFocusNode",
 		"body":[
 			"\\pstGeneralParabolaFocusNode(${4:O}){${1:p}}[${3:θ}]{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3301,7 +2678,8 @@
 		"prefix":"pstGeneralParabolaFocusNode",
 		"body":[
 			"\\pstGeneralParabolaFocusNode[${3:options%keyvals}](${4:O}){${1:p}}{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3309,7 +2687,17 @@
 		"prefix":"pstGeneralParabolaFocusNode",
 		"body":[
 			"\\pstGeneralParabolaFocusNode[${3:options%keyvals}](${5:O}){${1:p}}[${4:θ}]{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaDirectrixLine(){}{}{}":{
+		"prefix":"pstGeneralParabolaDirectrixLine",
+		"body":[
+			"\\pstGeneralParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3317,7 +2705,8 @@
 		"prefix":"pstGeneralParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralParabolaDirectrixLine(${5:O}){${1:p}}[${4:θ}]{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3325,7 +2714,8 @@
 		"prefix":"pstGeneralParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralParabolaDirectrixLine[${4:options%keyvals}](${5:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3333,7 +2723,17 @@
 		"prefix":"pstGeneralParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralParabolaDirectrixLine[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaLineInter(){}{}{}{}{}":{
+		"prefix":"pstGeneralParabolaLineInter",
+		"body":[
+			"\\pstGeneralParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3341,7 +2741,8 @@
 		"prefix":"pstGeneralParabolaLineInter",
 		"body":[
 			"\\pstGeneralParabolaLineInter(${7:O}){${1:p}}[${6:θ}]{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3349,7 +2750,8 @@
 		"prefix":"pstGeneralParabolaLineInter",
 		"body":[
 			"\\pstGeneralParabolaLineInter[${6:options%keyvals}](${7:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3357,7 +2759,17 @@
 		"prefix":"pstGeneralParabolaLineInter",
 		"body":[
 			"\\pstGeneralParabolaLineInter[${6:options%keyvals}](${8:O}){${1:p}}[${7:θ}]{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaPolarNode(){}{}{}{}":{
+		"prefix":"pstGeneralParabolaPolarNode",
+		"body":[
+			"\\pstGeneralParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3365,7 +2777,17 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode(${6:O}){${1:p}}[${5:θ}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaPolarNode(){}(){}{}{}":{
+		"prefix":"pstGeneralParabolaPolarNode",
+		"body":[
+			"\\pstGeneralParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3373,7 +2795,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode(${6:O}){${1:p}}[${5:θ}](${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3381,7 +2804,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode(${7:O}){${1:p}}(${8:F})[${5:Lx}][${6:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3389,7 +2813,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode(${8:O}){${1:p}}[${5:θ}](${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3397,7 +2822,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3405,7 +2831,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3413,7 +2840,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}(${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3421,7 +2849,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}](${8:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3429,7 +2858,8 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${8:O}){${1:p}}(${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3437,7 +2867,17 @@
 		"prefix":"pstGeneralParabolaPolarNode",
 		"body":[
 			"\\pstGeneralParabolaPolarNode[${5:options%keyvals}](${9:O}){${1:p}}[${6:θ}](${10:F})[${7:Lx}][${8:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaTangentNode(){}{}{}{}":{
+		"prefix":"pstGeneralParabolaTangentNode",
+		"body":[
+			"\\pstGeneralParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3445,7 +2885,8 @@
 		"prefix":"pstGeneralParabolaTangentNode",
 		"body":[
 			"\\pstGeneralParabolaTangentNode(${6:O}){${1:p}}[${5:θ}]{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3453,7 +2894,8 @@
 		"prefix":"pstGeneralParabolaTangentNode",
 		"body":[
 			"\\pstGeneralParabolaTangentNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3461,7 +2903,17 @@
 		"prefix":"pstGeneralParabolaTangentNode",
 		"body":[
 			"\\pstGeneralParabolaTangentNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabola(){}{}{}":{
+		"prefix":"pstGeneralIParabola",
+		"body":[
+			"\\pstGeneralIParabola(${4:O}){${1:p}}{${2:y1}}{${3:y2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3469,7 +2921,8 @@
 		"prefix":"pstGeneralIParabola",
 		"body":[
 			"\\pstGeneralIParabola[${4:options%keyvals}](${5:O}){${1:p}}{${2:y1}}{${3:y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3477,7 +2930,8 @@
 		"prefix":"pstGeneralIParabola",
 		"body":[
 			"\\pstGeneralIParabola(${5:O}){${1:p}}[${4:θ}]{${2:y1}}{${3:y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3485,7 +2939,17 @@
 		"prefix":"pstGeneralIParabola",
 		"body":[
 			"\\pstGeneralIParabola[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:y1}}{${3:y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaNode(){}{}{}":{
+		"prefix":"pstGeneralIParabolaNode",
+		"body":[
+			"\\pstGeneralIParabolaNode(${4:O}){${1:p}}{${2:t}}{${3:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3493,7 +2957,8 @@
 		"prefix":"pstGeneralIParabolaNode",
 		"body":[
 			"\\pstGeneralIParabolaNode[${4:options%keyvals}](${5:O}){${1:p}}{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3501,7 +2966,8 @@
 		"prefix":"pstGeneralIParabolaNode",
 		"body":[
 			"\\pstGeneralIParabolaNode(${5:O}){${1:p}}[${4:θ}]{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3509,7 +2975,17 @@
 		"prefix":"pstGeneralIParabolaNode",
 		"body":[
 			"\\pstGeneralIParabolaNode[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:t}}{${3:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaAbsNode(){}{}{}{}":{
+		"prefix":"pstGeneralIParabolaAbsNode",
+		"body":[
+			"\\pstGeneralIParabolaAbsNode(${5:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3517,7 +2993,8 @@
 		"prefix":"pstGeneralIParabolaAbsNode",
 		"body":[
 			"\\pstGeneralIParabolaAbsNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3525,7 +3002,8 @@
 		"prefix":"pstGeneralIParabolaAbsNode",
 		"body":[
 			"\\pstGeneralIParabolaAbsNode(${6:O}){${1:p}}[${5:θ}]{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3533,7 +3011,17 @@
 		"prefix":"pstGeneralIParabolaAbsNode",
 		"body":[
 			"\\pstGeneralIParabolaAbsNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:x}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaOrdNode(){}{}{}{}":{
+		"prefix":"pstGeneralIParabolaOrdNode",
+		"body":[
+			"\\pstGeneralIParabolaOrdNode(${5:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3541,7 +3029,8 @@
 		"prefix":"pstGeneralIParabolaOrdNode",
 		"body":[
 			"\\pstGeneralIParabolaOrdNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3549,7 +3038,8 @@
 		"prefix":"pstGeneralIParabolaOrdNode",
 		"body":[
 			"\\pstGeneralIParabolaOrdNode(${6:O}){${1:p}}[${5:θ}]{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3557,7 +3047,17 @@
 		"prefix":"pstGeneralIParabolaOrdNode",
 		"body":[
 			"\\pstGeneralIParabolaOrdNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:y}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaFocusNode(){}{}":{
+		"prefix":"pstGeneralIParabolaFocusNode",
+		"body":[
+			"\\pstGeneralIParabolaFocusNode(${3:O}){${1:p}}{${2:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3565,7 +3065,8 @@
 		"prefix":"pstGeneralIParabolaFocusNode",
 		"body":[
 			"\\pstGeneralIParabolaFocusNode[${3:options%keyvals}](${4:O}){${1:p}}{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3573,7 +3074,8 @@
 		"prefix":"pstGeneralIParabolaFocusNode",
 		"body":[
 			"\\pstGeneralIParabolaFocusNode(${4:O}){${1:p}}[${3:θ}]{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3581,7 +3083,17 @@
 		"prefix":"pstGeneralIParabolaFocusNode",
 		"body":[
 			"\\pstGeneralIParabolaFocusNode[${3:options%keyvals}](${5:O}){${1:p}}[${4:θ}]{${2:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaDirectrixLine(){}{}{}":{
+		"prefix":"pstGeneralIParabolaDirectrixLine",
+		"body":[
+			"\\pstGeneralIParabolaDirectrixLine(${4:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3589,7 +3101,8 @@
 		"prefix":"pstGeneralIParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIParabolaDirectrixLine[${4:options%keyvals}](${5:O}){${1:p}}{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3597,7 +3110,8 @@
 		"prefix":"pstGeneralIParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIParabolaDirectrixLine(${5:O}){${1:p}}[${4:θ}]{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3605,7 +3119,17 @@
 		"prefix":"pstGeneralIParabolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIParabolaDirectrixLine[${4:options%keyvals}](${6:O}){${1:p}}[${5:θ}]{${2:Lx}}{${3:Ly}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaLineInter(){}{}{}{}{}":{
+		"prefix":"pstGeneralIParabolaLineInter",
+		"body":[
+			"\\pstGeneralIParabolaLineInter(${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3613,7 +3137,8 @@
 		"prefix":"pstGeneralIParabolaLineInter",
 		"body":[
 			"\\pstGeneralIParabolaLineInter[${6:options%keyvals}](${7:O}){${1:p}}{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3621,7 +3146,8 @@
 		"prefix":"pstGeneralIParabolaLineInter",
 		"body":[
 			"\\pstGeneralIParabolaLineInter(${7:O}){${1:p}}[${6:θ}]{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3629,7 +3155,17 @@
 		"prefix":"pstGeneralIParabolaLineInter",
 		"body":[
 			"\\pstGeneralIParabolaLineInter[${6:options%keyvals}](${8:O}){${1:p}}[${7:θ}]{${2:A}}{${3:B}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaPolarNode(){}{}{}{}":{
+		"prefix":"pstGeneralIParabolaPolarNode",
+		"body":[
+			"\\pstGeneralIParabolaPolarNode(${5:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3637,7 +3173,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3645,7 +3182,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode(${6:O}){${1:p}}[${5:θ}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3653,7 +3191,17 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaPolarNode(){}(){}{}{}":{
+		"prefix":"pstGeneralIParabolaPolarNode",
+		"body":[
+			"\\pstGeneralIParabolaPolarNode(${5:O}){${1:p}}(${6:F}){${2:A}}{${3:B}}{${4:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3661,7 +3209,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${6:O}){${1:p}}(${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3669,7 +3218,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode(${6:O}){${1:p}}[${5:θ}](${7:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3677,7 +3227,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}](${8:F}){${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3685,7 +3236,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode(${7:O}){${1:p}}(${8:F})[${5:Lx}][${6:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3693,7 +3245,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${8:O}){${1:p}}(${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3701,7 +3254,8 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode(${8:O}){${1:p}}[${5:θ}](${9:F})[${6:Lx}][${7:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3709,7 +3263,17 @@
 		"prefix":"pstGeneralIParabolaPolarNode",
 		"body":[
 			"\\pstGeneralIParabolaPolarNode[${5:options%keyvals}](${9:O}){${1:p}}[${6:θ}](${10:F})[${7:Lx}][${8:Ly}]{${2:A}}{${3:B}}{${4:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIParabolaTangentNode(){}{}{}{}":{
+		"prefix":"pstGeneralIParabolaTangentNode",
+		"body":[
+			"\\pstGeneralIParabolaTangentNode(${5:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3717,7 +3281,8 @@
 		"prefix":"pstGeneralIParabolaTangentNode",
 		"body":[
 			"\\pstGeneralIParabolaTangentNode[${5:options%keyvals}](${6:O}){${1:p}}{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3725,7 +3290,8 @@
 		"prefix":"pstGeneralIParabolaTangentNode",
 		"body":[
 			"\\pstGeneralIParabolaTangentNode(${6:O}){${1:p}}[${5:θ}]{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3733,7 +3299,17 @@
 		"prefix":"pstGeneralIParabolaTangentNode",
 		"body":[
 			"\\pstGeneralIParabolaTangentNode[${5:options%keyvals}](${7:O}){${1:p}}[${6:θ}]{${2:T}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbola()()":{
+		"prefix":"pstHyperbola",
+		"body":[
+			"\\pstHyperbola(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3741,7 +3317,8 @@
 		"prefix":"pstHyperbola",
 		"body":[
 			"\\pstHyperbola(${2:O})(${3:a},${4:b})[${1:angleX}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3749,7 +3326,8 @@
 		"prefix":"pstHyperbola",
 		"body":[
 			"\\pstHyperbola[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3757,7 +3335,17 @@
 		"prefix":"pstHyperbola",
 		"body":[
 			"\\pstHyperbola[${1:options%keyvals}](${3:O})(${4:a},${5:b})[${2:angleX}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaNode()(){}{}":{
+		"prefix":"pstHyperbolaNode",
+		"body":[
+			"\\pstHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3765,7 +3353,17 @@
 		"prefix":"pstHyperbolaNode",
 		"body":[
 			"\\pstHyperbolaNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaAbsNode()(){}{}{}":{
+		"prefix":"pstHyperbolaAbsNode",
+		"body":[
+			"\\pstHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3773,7 +3371,17 @@
 		"prefix":"pstHyperbolaAbsNode",
 		"body":[
 			"\\pstHyperbolaAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaOrdNode()(){}{}{}":{
+		"prefix":"pstHyperbolaOrdNode",
+		"body":[
+			"\\pstHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3781,7 +3389,17 @@
 		"prefix":"pstHyperbolaOrdNode",
 		"body":[
 			"\\pstHyperbolaOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaFocusNode()(){}{}":{
+		"prefix":"pstHyperbolaFocusNode",
+		"body":[
+			"\\pstHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3789,7 +3407,17 @@
 		"prefix":"pstHyperbolaFocusNode",
 		"body":[
 			"\\pstHyperbolaFocusNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstHyperbolaDirectrixLine",
+		"body":[
+			"\\pstHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3797,7 +3425,17 @@
 		"prefix":"pstHyperbolaDirectrixLine",
 		"body":[
 			"\\pstHyperbolaDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaAsymptoteLine()(){}{}":{
+		"prefix":"pstHyperbolaAsymptoteLine",
+		"body":[
+			"\\pstHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3805,7 +3443,17 @@
 		"prefix":"pstHyperbolaAsymptoteLine",
 		"body":[
 			"\\pstHyperbolaAsymptoteLine[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:L1}}{${2:L2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaLineInter()(){}{}{}{}":{
+		"prefix":"pstHyperbolaLineInter",
+		"body":[
+			"\\pstHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3813,7 +3461,17 @@
 		"prefix":"pstHyperbolaLineInter",
 		"body":[
 			"\\pstHyperbolaLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaPolarNode()(){}{}{}":{
+		"prefix":"pstHyperbolaPolarNode",
+		"body":[
+			"\\pstHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3821,7 +3479,17 @@
 		"prefix":"pstHyperbolaPolarNode",
 		"body":[
 			"\\pstHyperbolaPolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHyperbolaTangentNode()(){}{}{}":{
+		"prefix":"pstHyperbolaTangentNode",
+		"body":[
+			"\\pstHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3829,7 +3497,17 @@
 		"prefix":"pstHyperbolaTangentNode",
 		"body":[
 			"\\pstHyperbolaTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbola()()":{
+		"prefix":"pstIHyperbola",
+		"body":[
+			"\\pstIHyperbola(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3837,7 +3515,8 @@
 		"prefix":"pstIHyperbola",
 		"body":[
 			"\\pstIHyperbola(${2:O})(${3:a},${4:b})[${1:angleY}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3845,7 +3524,8 @@
 		"prefix":"pstIHyperbola",
 		"body":[
 			"\\pstIHyperbola[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3853,7 +3533,17 @@
 		"prefix":"pstIHyperbola",
 		"body":[
 			"\\pstIHyperbola[${1:options%keyvals}](${3:O})(${4:a},${5:b})[${2:angleY}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaNode()(){}{}":{
+		"prefix":"pstIHyperbolaNode",
+		"body":[
+			"\\pstIHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3861,7 +3551,17 @@
 		"prefix":"pstIHyperbolaNode",
 		"body":[
 			"\\pstIHyperbolaNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaAbsNode()(){}{}{}":{
+		"prefix":"pstIHyperbolaAbsNode",
+		"body":[
+			"\\pstIHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3869,7 +3569,17 @@
 		"prefix":"pstIHyperbolaAbsNode",
 		"body":[
 			"\\pstIHyperbolaAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaOrdNode()(){}{}{}":{
+		"prefix":"pstIHyperbolaOrdNode",
+		"body":[
+			"\\pstIHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3877,7 +3587,17 @@
 		"prefix":"pstIHyperbolaOrdNode",
 		"body":[
 			"\\pstIHyperbolaOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaFocusNode()(){}{}":{
+		"prefix":"pstIHyperbolaFocusNode",
+		"body":[
+			"\\pstIHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3885,7 +3605,17 @@
 		"prefix":"pstIHyperbolaFocusNode",
 		"body":[
 			"\\pstIHyperbolaFocusNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstIHyperbolaDirectrixLine",
+		"body":[
+			"\\pstIHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3893,7 +3623,17 @@
 		"prefix":"pstIHyperbolaDirectrixLine",
 		"body":[
 			"\\pstIHyperbolaDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaAsymptoteLine()(){}{}":{
+		"prefix":"pstIHyperbolaAsymptoteLine",
+		"body":[
+			"\\pstIHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3901,7 +3641,17 @@
 		"prefix":"pstIHyperbolaAsymptoteLine",
 		"body":[
 			"\\pstIHyperbolaAsymptoteLine[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:L1}}{${2:L2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaLineInter()(){}{}{}{}":{
+		"prefix":"pstIHyperbolaLineInter",
+		"body":[
+			"\\pstIHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3909,7 +3659,17 @@
 		"prefix":"pstIHyperbolaLineInter",
 		"body":[
 			"\\pstIHyperbolaLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaPolarNode()(){}{}{}":{
+		"prefix":"pstIHyperbolaPolarNode",
+		"body":[
+			"\\pstIHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3917,7 +3677,17 @@
 		"prefix":"pstIHyperbolaPolarNode",
 		"body":[
 			"\\pstIHyperbolaPolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstIHyperbolaTangentNode()(){}{}{}":{
+		"prefix":"pstIHyperbolaTangentNode",
+		"body":[
+			"\\pstIHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3925,7 +3695,17 @@
 		"prefix":"pstIHyperbolaTangentNode",
 		"body":[
 			"\\pstIHyperbolaTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbola()()":{
+		"prefix":"pstGeneralHyperbola",
+		"body":[
+			"\\pstGeneralHyperbola(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3933,7 +3713,8 @@
 		"prefix":"pstGeneralHyperbola",
 		"body":[
 			"\\pstGeneralHyperbola(${2:O})(${3:a},${4:b})[${1:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3941,7 +3722,8 @@
 		"prefix":"pstGeneralHyperbola",
 		"body":[
 			"\\pstGeneralHyperbola(${3:O})(${4:a},${5:b})[${1:θ}][${2:angleX}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3949,7 +3731,8 @@
 		"prefix":"pstGeneralHyperbola",
 		"body":[
 			"\\pstGeneralHyperbola[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3957,7 +3740,8 @@
 		"prefix":"pstGeneralHyperbola",
 		"body":[
 			"\\pstGeneralHyperbola[${1:options%keyvals}](${3:O})(${4:a},${5:b})[${2:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -3965,7 +3749,17 @@
 		"prefix":"pstGeneralHyperbola",
 		"body":[
 			"\\pstGeneralHyperbola[${1:options%keyvals}](${4:O})(${5:a},${6:b})[${2:θ}][${3:angleX}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaFle{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaFle",
+		"body":[
+			"\\pstGeneralHyperbolaFle{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3973,7 +3767,17 @@
 		"prefix":"pstGeneralHyperbolaFle",
 		"body":[
 			"\\pstGeneralHyperbolaFle[${8:options%keyvals}]{${1:F}}{${2:A}}{${3:B}}{${4:e}}{${5:O}}{${6:Rab}}{${7:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaFFN{}{}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaFFN",
+		"body":[
+			"\\pstGeneralHyperbolaFFN{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3981,7 +3785,17 @@
 		"prefix":"pstGeneralHyperbolaFFN",
 		"body":[
 			"\\pstGeneralHyperbolaFFN[${6:options%keyvals}]{${1:F1}}{${2:F2}}{${3:O}}{${4:Rab}}{${5:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaCoef{}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaCoef",
+		"body":[
+			"\\pstGeneralHyperbolaCoef{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3989,7 +3803,17 @@
 		"prefix":"pstGeneralHyperbolaCoef",
 		"body":[
 			"\\pstGeneralHyperbolaCoef[${5:options%keyvals}]{${1:a,b,c,d,e,f}}{${2:O}}{${3:Rab}}{${4:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaABCDE{}{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaABCDE",
+		"body":[
+			"\\pstGeneralHyperbolaABCDE{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -3997,7 +3821,17 @@
 		"prefix":"pstGeneralHyperbolaABCDE",
 		"body":[
 			"\\pstGeneralHyperbolaABCDE[${9:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:O}}{${7:Rab}}{${8:θ}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaNode()(){}{}":{
+		"prefix":"pstGeneralHyperbolaNode",
+		"body":[
+			"\\pstGeneralHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4005,7 +3839,8 @@
 		"prefix":"pstGeneralHyperbolaNode",
 		"body":[
 			"\\pstGeneralHyperbolaNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4013,7 +3848,8 @@
 		"prefix":"pstGeneralHyperbolaNode",
 		"body":[
 			"\\pstGeneralHyperbolaNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4021,7 +3857,17 @@
 		"prefix":"pstGeneralHyperbolaNode",
 		"body":[
 			"\\pstGeneralHyperbolaNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaAbsNode()(){}{}{}":{
+		"prefix":"pstGeneralHyperbolaAbsNode",
+		"body":[
+			"\\pstGeneralHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4029,7 +3875,8 @@
 		"prefix":"pstGeneralHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralHyperbolaAbsNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4037,7 +3884,8 @@
 		"prefix":"pstGeneralHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralHyperbolaAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4045,7 +3893,17 @@
 		"prefix":"pstGeneralHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralHyperbolaAbsNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaOrdNode()(){}{}{}":{
+		"prefix":"pstGeneralHyperbolaOrdNode",
+		"body":[
+			"\\pstGeneralHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4053,7 +3911,8 @@
 		"prefix":"pstGeneralHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralHyperbolaOrdNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4061,7 +3920,8 @@
 		"prefix":"pstGeneralHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralHyperbolaOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4069,7 +3929,17 @@
 		"prefix":"pstGeneralHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralHyperbolaOrdNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaFocusNode()(){}{}":{
+		"prefix":"pstGeneralHyperbolaFocusNode",
+		"body":[
+			"\\pstGeneralHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4077,7 +3947,8 @@
 		"prefix":"pstGeneralHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralHyperbolaFocusNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4085,7 +3956,8 @@
 		"prefix":"pstGeneralHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralHyperbolaFocusNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4093,7 +3965,17 @@
 		"prefix":"pstGeneralHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralHyperbolaFocusNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaVertexNode()(){}{}":{
+		"prefix":"pstGeneralHyperbolaVertexNode",
+		"body":[
+			"\\pstGeneralHyperbolaVertexNode(${3:O})(${4:a},${5:b}){${1:V1}}{${2:V2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4101,7 +3983,8 @@
 		"prefix":"pstGeneralHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralHyperbolaVertexNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4109,7 +3992,8 @@
 		"prefix":"pstGeneralHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralHyperbolaVertexNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4117,7 +4001,17 @@
 		"prefix":"pstGeneralHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralHyperbolaVertexNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaDirectrixLine",
+		"body":[
+			"\\pstGeneralHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4125,7 +4019,8 @@
 		"prefix":"pstGeneralHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralHyperbolaDirectrixLine(${6:O})(${7:a},${8:b})[${5:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4133,7 +4028,8 @@
 		"prefix":"pstGeneralHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralHyperbolaDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4141,7 +4037,17 @@
 		"prefix":"pstGeneralHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralHyperbolaDirectrixLine[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaLineInter()(){}{}{}{}":{
+		"prefix":"pstGeneralHyperbolaLineInter",
+		"body":[
+			"\\pstGeneralHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4149,7 +4055,8 @@
 		"prefix":"pstGeneralHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralHyperbolaLineInter(${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4157,7 +4064,8 @@
 		"prefix":"pstGeneralHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralHyperbolaLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4165,7 +4073,17 @@
 		"prefix":"pstGeneralHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralHyperbolaLineInter[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaPolarNode()(){}{}{}":{
+		"prefix":"pstGeneralHyperbolaPolarNode",
+		"body":[
+			"\\pstGeneralHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4173,7 +4091,8 @@
 		"prefix":"pstGeneralHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralHyperbolaPolarNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4181,7 +4100,8 @@
 		"prefix":"pstGeneralHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralHyperbolaPolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4189,7 +4109,17 @@
 		"prefix":"pstGeneralHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralHyperbolaPolarNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaTangentNode()(){}{}{}":{
+		"prefix":"pstGeneralHyperbolaTangentNode",
+		"body":[
+			"\\pstGeneralHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4197,7 +4127,8 @@
 		"prefix":"pstGeneralHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralHyperbolaTangentNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4205,7 +4136,8 @@
 		"prefix":"pstGeneralHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralHyperbolaTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4213,7 +4145,17 @@
 		"prefix":"pstGeneralHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralHyperbolaTangentNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbola()()":{
+		"prefix":"pstGeneralIHyperbola",
+		"body":[
+			"\\pstGeneralIHyperbola(${1:O})(${2:a},${3:b})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4221,7 +4163,8 @@
 		"prefix":"pstGeneralIHyperbola",
 		"body":[
 			"\\pstGeneralIHyperbola(${2:O})(${3:a},${4:b})[${1:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4229,7 +4172,8 @@
 		"prefix":"pstGeneralIHyperbola",
 		"body":[
 			"\\pstGeneralIHyperbola(${3:O})(${4:a},${5:b})[${1:θ}][${2:angleY}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4237,7 +4181,8 @@
 		"prefix":"pstGeneralIHyperbola",
 		"body":[
 			"\\pstGeneralIHyperbola[${1:options%keyvals}](${2:O})(${3:a},${4:b})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4245,7 +4190,8 @@
 		"prefix":"pstGeneralIHyperbola",
 		"body":[
 			"\\pstGeneralIHyperbola[${1:options%keyvals}](${3:O})(${4:a},${5:b})[${2:θ}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4253,7 +4199,17 @@
 		"prefix":"pstGeneralIHyperbola",
 		"body":[
 			"\\pstGeneralIHyperbola[${1:options%keyvals}](${4:O})(${5:a},${6:b})[${2:θ}][${3:angleY}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaNode()(){}{}":{
+		"prefix":"pstGeneralIHyperbolaNode",
+		"body":[
+			"\\pstGeneralIHyperbolaNode(${3:O})(${4:a},${5:b}){${1:t}}{${2:A}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4261,7 +4217,8 @@
 		"prefix":"pstGeneralIHyperbolaNode",
 		"body":[
 			"\\pstGeneralIHyperbolaNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4269,7 +4226,8 @@
 		"prefix":"pstGeneralIHyperbolaNode",
 		"body":[
 			"\\pstGeneralIHyperbolaNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4277,7 +4235,17 @@
 		"prefix":"pstGeneralIHyperbolaNode",
 		"body":[
 			"\\pstGeneralIHyperbolaNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:t}}{${2:A}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaAbsNode()(){}{}{}":{
+		"prefix":"pstGeneralIHyperbolaAbsNode",
+		"body":[
+			"\\pstGeneralIHyperbolaAbsNode(${4:O})(${5:a},${6:b}){${1:x}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4285,7 +4253,8 @@
 		"prefix":"pstGeneralIHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralIHyperbolaAbsNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4293,7 +4262,8 @@
 		"prefix":"pstGeneralIHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralIHyperbolaAbsNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4301,7 +4271,17 @@
 		"prefix":"pstGeneralIHyperbolaAbsNode",
 		"body":[
 			"\\pstGeneralIHyperbolaAbsNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:x}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaOrdNode()(){}{}{}":{
+		"prefix":"pstGeneralIHyperbolaOrdNode",
+		"body":[
+			"\\pstGeneralIHyperbolaOrdNode(${4:O})(${5:a},${6:b}){${1:y}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4309,7 +4289,8 @@
 		"prefix":"pstGeneralIHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralIHyperbolaOrdNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4317,7 +4298,8 @@
 		"prefix":"pstGeneralIHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralIHyperbolaOrdNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4325,7 +4307,17 @@
 		"prefix":"pstGeneralIHyperbolaOrdNode",
 		"body":[
 			"\\pstGeneralIHyperbolaOrdNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:y}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaFocusNode()(){}{}":{
+		"prefix":"pstGeneralIHyperbolaFocusNode",
+		"body":[
+			"\\pstGeneralIHyperbolaFocusNode(${3:O})(${4:a},${5:b}){${1:F1}}{${2:F2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4333,7 +4325,8 @@
 		"prefix":"pstGeneralIHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralIHyperbolaFocusNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4341,7 +4334,8 @@
 		"prefix":"pstGeneralIHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralIHyperbolaFocusNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4349,7 +4343,17 @@
 		"prefix":"pstGeneralIHyperbolaFocusNode",
 		"body":[
 			"\\pstGeneralIHyperbolaFocusNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:F1}}{${2:F2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaVertexNode()(){}{}":{
+		"prefix":"pstGeneralIHyperbolaVertexNode",
+		"body":[
+			"\\pstGeneralIHyperbolaVertexNode(${3:O})(${4:a},${5:b}){${1:V1}}{${2:V2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4357,7 +4361,8 @@
 		"prefix":"pstGeneralIHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralIHyperbolaVertexNode(${4:O})(${5:a},${6:b})[${3:θ}]{${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4365,7 +4370,8 @@
 		"prefix":"pstGeneralIHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralIHyperbolaVertexNode[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4373,7 +4379,17 @@
 		"prefix":"pstGeneralIHyperbolaVertexNode",
 		"body":[
 			"\\pstGeneralIHyperbolaVertexNode[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:V1}}{${2:V2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaDirectrixLine()(){}{}{}{}":{
+		"prefix":"pstGeneralIHyperbolaDirectrixLine",
+		"body":[
+			"\\pstGeneralIHyperbolaDirectrixLine(${5:O})(${6:a},${7:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4381,7 +4397,8 @@
 		"prefix":"pstGeneralIHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIHyperbolaDirectrixLine(${6:O})(${7:a},${8:b})[${5:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4389,7 +4406,8 @@
 		"prefix":"pstGeneralIHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIHyperbolaDirectrixLine[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4397,7 +4415,17 @@
 		"prefix":"pstGeneralIHyperbolaDirectrixLine",
 		"body":[
 			"\\pstGeneralIHyperbolaDirectrixLine[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:Lx}}{${2:Ly}}{${3:Rx}}{${4:Ry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaAsymptoteLine()(){}{}":{
+		"prefix":"pstGeneralIHyperbolaAsymptoteLine",
+		"body":[
+			"\\pstGeneralIHyperbolaAsymptoteLine(${3:O})(${4:a},${5:b}){${1:L1}}{${2:L2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4405,7 +4433,8 @@
 		"prefix":"pstGeneralIHyperbolaAsymptoteLine",
 		"body":[
 			"\\pstGeneralIHyperbolaAsymptoteLine(${4:O})(${5:a},${6:b})[${3:θ}]{${1:L1}}{${2:L2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4413,7 +4442,8 @@
 		"prefix":"pstGeneralIHyperbolaAsymptoteLine",
 		"body":[
 			"\\pstGeneralIHyperbolaAsymptoteLine[${3:options%keyvals}](${4:O})(${5:a},${6:b}){${1:L1}}{${2:L2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4421,7 +4451,17 @@
 		"prefix":"pstGeneralIHyperbolaAsymptoteLine",
 		"body":[
 			"\\pstGeneralIHyperbolaAsymptoteLine[${3:options%keyvals}](${5:O})(${6:a},${7:b})[${4:θ}]{${1:L1}}{${2:L2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaLineInter()(){}{}{}{}":{
+		"prefix":"pstGeneralIHyperbolaLineInter",
+		"body":[
+			"\\pstGeneralIHyperbolaLineInter(${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4429,7 +4469,8 @@
 		"prefix":"pstGeneralIHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralIHyperbolaLineInter(${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4437,7 +4478,8 @@
 		"prefix":"pstGeneralIHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralIHyperbolaLineInter[${5:options%keyvals}](${6:O})(${7:a},${8:b}){${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4445,7 +4487,17 @@
 		"prefix":"pstGeneralIHyperbolaLineInter",
 		"body":[
 			"\\pstGeneralIHyperbolaLineInter[${5:options%keyvals}](${7:O})(${8:a},${9:b})[${6:θ}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaPolarNode()(){}{}{}":{
+		"prefix":"pstGeneralIHyperbolaPolarNode",
+		"body":[
+			"\\pstGeneralIHyperbolaPolarNode(${4:O})(${5:a},${6:b}){${1:A}}{${2:B}}{${3:T}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4453,7 +4505,8 @@
 		"prefix":"pstGeneralIHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralIHyperbolaPolarNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4461,7 +4514,8 @@
 		"prefix":"pstGeneralIHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralIHyperbolaPolarNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4469,7 +4523,17 @@
 		"prefix":"pstGeneralIHyperbolaPolarNode",
 		"body":[
 			"\\pstGeneralIHyperbolaPolarNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:A}}{${2:B}}{${3:T}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralIHyperbolaTangentNode()(){}{}{}":{
+		"prefix":"pstGeneralIHyperbolaTangentNode",
+		"body":[
+			"\\pstGeneralIHyperbolaTangentNode(${4:O})(${5:a},${6:b}){${1:T}}{${2:A}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4477,7 +4541,8 @@
 		"prefix":"pstGeneralIHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralIHyperbolaTangentNode(${5:O})(${6:a},${7:b})[${4:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4485,7 +4550,8 @@
 		"prefix":"pstGeneralIHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralIHyperbolaTangentNode[${4:options%keyvals}](${5:O})(${6:a},${7:b}){${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4493,7 +4559,17 @@
 		"prefix":"pstGeneralIHyperbolaTangentNode",
 		"body":[
 			"\\pstGeneralIHyperbolaTangentNode[${4:options%keyvals}](${6:O})(${7:a},${8:b})[${5:θ}]{${1:T}}{${2:A}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicEquation{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralConicEquation",
+		"body":[
+			"\\pstGeneralConicEquation{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}{${7:a,b,c,d,e,f}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4501,7 +4577,17 @@
 		"prefix":"pstGeneralConicEquation",
 		"body":[
 			"\\pstGeneralConicEquation[${8:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}{${7:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralEllipseEquation()(){}":{
+		"prefix":"pstGeneralEllipseEquation",
+		"body":[
+			"\\pstGeneralEllipseEquation(${2:O})(${3:a},${4:b}){${1:a,b,c,d,e,f}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4509,7 +4595,8 @@
 		"prefix":"pstGeneralEllipseEquation",
 		"body":[
 			"\\pstGeneralEllipseEquation[${2:options%keyvals}](${3:O})(${4:a},${5:b}){${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4517,7 +4604,8 @@
 		"prefix":"pstGeneralEllipseEquation",
 		"body":[
 			"\\pstGeneralEllipseEquation(${3:O})(${4:a},${5:b})[${2:θ}]{${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4525,7 +4613,17 @@
 		"prefix":"pstGeneralEllipseEquation",
 		"body":[
 			"\\pstGeneralEllipseEquation[${2:options%keyvals}](${4:O})(${5:a},${6:b})[${3:θ}]{${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralHyperbolaEquation()(){}":{
+		"prefix":"pstGeneralHyperbolaEquation",
+		"body":[
+			"\\pstGeneralHyperbolaEquation(${2:O})(${3:a},${4:b}){${1:a,b,c,d,e,f}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4533,7 +4631,8 @@
 		"prefix":"pstGeneralHyperbolaEquation",
 		"body":[
 			"\\pstGeneralHyperbolaEquation(${3:O})(${4:a},${5:b})[${2:θ}]{${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4541,7 +4640,8 @@
 		"prefix":"pstGeneralHyperbolaEquation",
 		"body":[
 			"\\pstGeneralHyperbolaEquation[${2:options%keyvals}](${3:O})(${4:a},${5:b}){${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4549,7 +4649,17 @@
 		"prefix":"pstGeneralHyperbolaEquation",
 		"body":[
 			"\\pstGeneralHyperbolaEquation[${2:options%keyvals}](${4:O})(${5:a},${6:b})[${3:θ}]{${1:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralParabolaEquation(){}{}":{
+		"prefix":"pstGeneralParabolaEquation",
+		"body":[
+			"\\pstGeneralParabolaEquation(${3:O}){${1:p}}{${2:a,b,c,d,e,f}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4557,7 +4667,8 @@
 		"prefix":"pstGeneralParabolaEquation",
 		"body":[
 			"\\pstGeneralParabolaEquation(${4:O}){${1:p}}[${3:θ}]{${2:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4565,7 +4676,8 @@
 		"prefix":"pstGeneralParabolaEquation",
 		"body":[
 			"\\pstGeneralParabolaEquation[${3:options%keyvals}](${4:O}){${1:p}}{${2:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4573,7 +4685,17 @@
 		"prefix":"pstGeneralParabolaEquation",
 		"body":[
 			"\\pstGeneralParabolaEquation[${3:options%keyvals}](${5:O}){${1:p}}[${4:θ}]{${2:a,b,c,d,e,f}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicLineInter{}{}{}{}{}":{
+		"prefix":"pstGeneralConicLineInter",
+		"body":[
+			"\\pstGeneralConicLineInter{${1:A}}{${2:B}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4581,7 +4703,17 @@
 		"prefix":"pstGeneralConicLineInter",
 		"body":[
 			"\\pstGeneralConicLineInter[${6:options%keyvals}]{${1:A}}{${2:B}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicCircleInter{}{}{}{}{}{}{}":{
+		"prefix":"pstGeneralConicCircleInter",
+		"body":[
+			"\\pstGeneralConicCircleInter{${1:O}}{${2:A}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}{${6:E}}{${7:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4589,7 +4721,17 @@
 		"prefix":"pstGeneralConicCircleInter",
 		"body":[
 			"\\pstGeneralConicCircleInter[${8:options%keyvals}]{${1:O}}{${2:A}}{${3:a,b,c,d,e,f}}{${4:C}}{${5:D}}{${6:E}}{${7:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicEllipseInter()(){}{}{}{}{}":{
+		"prefix":"pstGeneralConicEllipseInter",
+		"body":[
+			"\\pstGeneralConicEllipseInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4597,7 +4739,17 @@
 		"prefix":"pstGeneralConicEllipseInter",
 		"body":[
 			"\\pstGeneralConicEllipseInter[${6:options%keyvals}](${7:O})(${8:m},${9:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicHyperbolaInter()(){}{}{}{}{}":{
+		"prefix":"pstGeneralConicHyperbolaInter",
+		"body":[
+			"\\pstGeneralConicHyperbolaInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4605,7 +4757,17 @@
 		"prefix":"pstGeneralConicHyperbolaInter",
 		"body":[
 			"\\pstGeneralConicHyperbolaInter[${6:options%keyvals}](${7:O})(${8:m},${9:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicIHyperbolaInter()(){}{}{}{}{}":{
+		"prefix":"pstGeneralConicIHyperbolaInter",
+		"body":[
+			"\\pstGeneralConicIHyperbolaInter(${6:O})(${7:m},${8:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4613,7 +4775,17 @@
 		"prefix":"pstGeneralConicIHyperbolaInter",
 		"body":[
 			"\\pstGeneralConicIHyperbolaInter[${6:options%keyvals}](${7:O})(${8:m},${9:n}){${1:a,b,c,d,e,f}}{${2:C}}{${3:D}}{${4:E}}{${5:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicParabolaInter(){}{}{}{}{}{}":{
+		"prefix":"pstGeneralConicParabolaInter",
+		"body":[
+			"\\pstGeneralConicParabolaInter(${7:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4621,7 +4793,17 @@
 		"prefix":"pstGeneralConicParabolaInter",
 		"body":[
 			"\\pstGeneralConicParabolaInter[${7:options%keyvals}](${8:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicIParabolaInter(){}{}{}{}{}{}":{
+		"prefix":"pstGeneralConicIParabolaInter",
+		"body":[
+			"\\pstGeneralConicIParabolaInter(${7:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4629,7 +4811,26 @@
 		"prefix":"pstGeneralConicIParabolaInter",
 		"body":[
 			"\\pstGeneralConicIParabolaInter[${7:options%keyvals}](${8:O}){${1:p}}{${2:a,b,c,d,e,f}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicInter{}{}{}{}{}{}":{
+		"prefix":"pstGeneralConicInter",
+		"body":[
+			"\\pstGeneralConicInter{${1:a,b,c,d,e,f}}{${2:a',b',c',d',e',f'}}{${3:C}}{${4:D}}{${5:E}}{${6:F}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstGeneralConicTangentLine{}{}{}":{
+		"prefix":"pstGeneralConicTangentLine",
+		"body":[
+			"\\pstGeneralConicTangentLine{${1:A}}{${2:a,b,c,d,e,f}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4637,7 +4838,17 @@
 		"prefix":"pstGeneralConicTangentLine",
 		"body":[
 			"\\pstGeneralConicTangentLine[${4:options%keyvals}]{${1:A}}{${2:a,b,c,d,e,f}}{${3:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstGeneralConicTangentChord{}{}{}{}":{
+		"prefix":"pstGeneralConicTangentChord",
+		"body":[
+			"\\pstGeneralConicTangentChord{${1:T}}{${2:a,b,c,d,e,f}}{${3:A}}{${4:B}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4645,7 +4856,17 @@
 		"prefix":"pstGeneralConicTangentChord",
 		"body":[
 			"\\pstGeneralConicTangentChord[${5:options%keyvals}]{${1:T}}{${2:a,b,c,d,e,f}}{${3:A}}{${4:B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstSymO{}{}":{
+		"prefix":"pstSymO",
+		"body":[
+			"\\pstSymO{${1:O}}{${2:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4653,7 +4874,8 @@
 		"prefix":"pstSymO",
 		"body":[
 			"\\pstSymO{${1:O}}{${2:M1,...,Mn}}[${3:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4661,7 +4883,8 @@
 		"prefix":"pstSymO",
 		"body":[
 			"\\pstSymO[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4669,7 +4892,17 @@
 		"prefix":"pstSymO",
 		"body":[
 			"\\pstSymO[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstOrtSym{}{}{}":{
+		"prefix":"pstOrtSym",
+		"body":[
+			"\\pstOrtSym{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4677,7 +4910,8 @@
 		"prefix":"pstOrtSym",
 		"body":[
 			"\\pstOrtSym{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4685,7 +4919,8 @@
 		"prefix":"pstOrtSym",
 		"body":[
 			"\\pstOrtSym[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4693,7 +4928,17 @@
 		"prefix":"pstOrtSym",
 		"body":[
 			"\\pstOrtSym[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${5:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstRotation{}{}":{
+		"prefix":"pstRotation",
+		"body":[
+			"\\pstRotation{${1:O}}{${2:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4701,7 +4946,8 @@
 		"prefix":"pstRotation",
 		"body":[
 			"\\pstRotation{${1:O}}{${2:M1,...,Mn}}[${3:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4709,7 +4955,8 @@
 		"prefix":"pstRotation",
 		"body":[
 			"\\pstRotation[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4717,7 +4964,26 @@
 		"prefix":"pstRotation",
 		"body":[
 			"\\pstRotation[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstAngleAOB{}{}{}":{
+		"prefix":"pstAngleAOB",
+		"body":[
+			"\\pstAngleAOB{${1:A}}{${2:O}}{${3:B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstTranslation{}{}{}":{
+		"prefix":"pstTranslation",
+		"body":[
+			"\\pstTranslation{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4725,7 +4991,8 @@
 		"prefix":"pstTranslation",
 		"body":[
 			"\\pstTranslation{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4733,7 +5000,8 @@
 		"prefix":"pstTranslation",
 		"body":[
 			"\\pstTranslation[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4741,7 +5009,17 @@
 		"prefix":"pstTranslation",
 		"body":[
 			"\\pstTranslation[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${5:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstHomO{}{}":{
+		"prefix":"pstHomO",
+		"body":[
+			"\\pstHomO{${1:O}}{${2:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4749,7 +5027,8 @@
 		"prefix":"pstHomO",
 		"body":[
 			"\\pstHomO{${1:O}}{${2:M1,...,Mn}}[${3:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4757,7 +5036,8 @@
 		"prefix":"pstHomO",
 		"body":[
 			"\\pstHomO[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4765,7 +5045,17 @@
 		"prefix":"pstHomO",
 		"body":[
 			"\\pstHomO[${3:options%keyvals}]{${1:O}}{${2:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstProjection{}{}{}":{
+		"prefix":"pstProjection",
+		"body":[
+			"\\pstProjection{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4773,7 +5063,8 @@
 		"prefix":"pstProjection",
 		"body":[
 			"\\pstProjection{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${4:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4781,7 +5072,8 @@
 		"prefix":"pstProjection",
 		"body":[
 			"\\pstProjection[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -4789,7 +5081,17 @@
 		"prefix":"pstProjection",
 		"body":[
 			"\\pstProjection[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:M1,...,Mn}}[${5:M1',...,Mn'}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstMiddleAB{}{}{}":{
+		"prefix":"pstMiddleAB",
+		"body":[
+			"\\pstMiddleAB{${1:A}}{${2:B}}{${3:I}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4797,7 +5099,17 @@
 		"prefix":"pstMiddleAB",
 		"body":[
 			"\\pstMiddleAB[${4:options%keyvals}]{${1:A}}{${2:B}}{${3:I}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCGravABC{}{}{}{}":{
+		"prefix":"pstCGravABC",
+		"body":[
+			"\\pstCGravABC{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4805,7 +5117,17 @@
 		"prefix":"pstCGravABC",
 		"body":[
 			"\\pstCGravABC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:G}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstCircleABC{}{}{}{}":{
+		"prefix":"pstCircleABC",
+		"body":[
+			"\\pstCircleABC{${1:A}}{${2:B}}{${3:C}}{${4:O}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4813,7 +5135,17 @@
 		"prefix":"pstCircleABC",
 		"body":[
 			"\\pstCircleABC[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:O}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstMediatorAB{}{}{}{}":{
+		"prefix":"pstMediatorAB",
+		"body":[
+			"\\pstMediatorAB{${1:A}}{${2:B}}{${3:I}}{${4:M}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4821,7 +5153,17 @@
 		"prefix":"pstMediatorAB",
 		"body":[
 			"\\pstMediatorAB[${5:options%keyvals}]{${1:A}}{${2:B}}{${3:I}}{${4:M}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstBissectBAC{}{}{}{}":{
+		"prefix":"pstBissectBAC",
+		"body":[
+			"\\pstBissectBAC{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4829,7 +5171,17 @@
 		"prefix":"pstBissectBAC",
 		"body":[
 			"\\pstBissectBAC[${5:options%keyvals}]{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstOutBissectBAC{}{}{}{}":{
+		"prefix":"pstOutBissectBAC",
+		"body":[
+			"\\pstOutBissectBAC{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4837,7 +5189,17 @@
 		"prefix":"pstOutBissectBAC",
 		"body":[
 			"\\pstOutBissectBAC[${5:options%keyvals}]{${1:B}}{${2:A}}{${3:C}}{${4:N}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterLL{}{}{}{}{}":{
+		"prefix":"pstInterLL",
+		"body":[
+			"\\pstInterLL{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:M}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4845,7 +5207,17 @@
 		"prefix":"pstInterLL",
 		"body":[
 			"\\pstInterLL[${6:options%keyvals}]{${1:A}}{${2:B}}{${3:C}}{${4:D}}{${5:M}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterLC{}{}{}{}{}{}":{
+		"prefix":"pstInterLC",
+		"body":[
+			"\\pstInterLC{${1:A}}{${2:B}}{${3:O}}{${4:C}}{${5:M1}}{${6:M2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4853,7 +5225,17 @@
 		"prefix":"pstInterLC",
 		"body":[
 			"\\pstInterLC[${7:options%keyvals}]{${1:A}}{${2:B}}{${3:O}}{${4:C}}{${5:M1}}{${6:M2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterCC{}{}{}{}{}{}":{
+		"prefix":"pstInterCC",
+		"body":[
+			"\\pstInterCC{${1:O1}}{${2:B}}{${3:O2}}{${4:C}}{${5:M1}}{${6:M2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4861,7 +5243,17 @@
 		"prefix":"pstInterCC",
 		"body":[
 			"\\pstInterCC[${7:options%keyvals}]{${1:O1}}{${2:B}}{${3:O2}}{${4:C}}{${5:M1}}{${6:M2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterFF{}{}{}{}":{
+		"prefix":"pstInterFF",
+		"body":[
+			"\\pstInterFF{${1:f%definition}}{${2:g%definition}}{${3:x0}}{${4:M}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4869,7 +5261,17 @@
 		"prefix":"pstInterFF",
 		"body":[
 			"\\pstInterFF[${5:options%keyvals}]{${1:f%definition}}{${2:g%definition}}{${3:x0}}{${4:M}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterFL{}{}{}{}{}":{
+		"prefix":"pstInterFL",
+		"body":[
+			"\\pstInterFL{${1:f%definition}}{${2:A}}{${3:B}}{${4:x0}}{${5:M}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4877,7 +5279,17 @@
 		"prefix":"pstInterFL",
 		"body":[
 			"\\pstInterFL[${6:options%keyvals}]{${1:f%definition}}{${2:A}}{${3:B}}{${4:x0}}{${5:M}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstInterFC{}{}{}{}{}":{
+		"prefix":"pstInterFC",
+		"body":[
+			"\\pstInterFC{${1:f%definition}}{${2:O}}{${3:A}}{${4:x0}}{${5:M}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4885,7 +5297,17 @@
 		"prefix":"pstInterFC",
 		"body":[
 			"\\pstInterFC[${6:options%keyvals}]{${1:f%definition}}{${2:O}}{${3:A}}{${4:x0}}{${5:M}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGetDistanceAB()(){}":{
+		"prefix":"psGetDistanceAB",
+		"body":[
+			"\\psGetDistanceAB(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4893,7 +5315,17 @@
 		"prefix":"psGetDistanceAB",
 		"body":[
 			"\\psGetDistanceAB[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGetAngleABC()()(){}":{
+		"prefix":"psGetAngleABC",
+		"body":[
+			"\\psGetAngleABC(${2:x1},${3:y1})(${4:x2},${5:y2})(${6:x3},${7:y3}){${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -4901,6 +5333,187 @@
 		"prefix":"psGetAngleABC",
 		"body":[
 			"\\psGetAngleABC[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2})(${7:x3},${8:y3}){${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MarkArrow":{
+		"prefix":"MarkArrow",
+		"body":[
+			"\\MarkArrow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkArroww":{
+		"prefix":"MarkArroww",
+		"body":[
+			"\\MarkArroww"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkArrowww":{
+		"prefix":"MarkArrowww",
+		"body":[
+			"\\MarkArrowww"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkCirc":{
+		"prefix":"MarkCirc",
+		"body":[
+			"\\MarkCirc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkCros":{
+		"prefix":"MarkCros",
+		"body":[
+			"\\MarkCros"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkCross":{
+		"prefix":"MarkCross",
+		"body":[
+			"\\MarkCross"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkHash":{
+		"prefix":"MarkHash",
+		"body":[
+			"\\MarkHash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkHashh":{
+		"prefix":"MarkHashh",
+		"body":[
+			"\\MarkHashh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MarkHashhh":{
+		"prefix":"MarkHashhh",
+		"body":[
+			"\\MarkHashhh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SegSymLst":{
+		"prefix":"SegSymLst",
+		"body":[
+			"\\SegSymLst"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstParseArg{}{}{}":{
+		"prefix":"pstParseArg",
+		"body":[
+			"\\pstParseArg{${1:prefix}}{${2:element list}}{${3:value list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstShowCoor{}":{
+		"prefix":"pstShowCoor",
+		"body":[
+			"\\pstShowCoor{${1:A}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstslash":{
+		"prefix":"pstslash",
+		"body":[
+			"\\pstslash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstslashh":{
+		"prefix":"pstslashh",
+		"body":[
+			"\\pstslashh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstslashhh":{
+		"prefix":"pstslashhh",
+		"body":[
+			"\\pstslashhh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstslashslash":{
+		"prefix":"pstslashslash",
+		"body":[
+			"\\pstslashslash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstslashslashslash":{
+		"prefix":"pstslashslashslash",
+		"body":[
+			"\\pstslashslashslash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetEUCLvalues":{
+		"prefix":"resetEUCLvalues",
+		"body":[
+			"\\resetEUCLvalues"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psMarkHashLength":{
+		"prefix":"psMarkHashLength",
+		"body":[
+			"\\psMarkHashLength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psMarkHashSep":{
+		"prefix":"psMarkHashSep",
+		"body":[
+			"\\psMarkHashSep"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

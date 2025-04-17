@@ -5,7 +5,8 @@
 		"prefix":"hangingindent",
 		"body":[
 			"\\hangingindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"hangingleftmargin",
 		"body":[
 			"\\hangingleftmargin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"labeledleftmargin",
 		"body":[
 			"\\labeledleftmargin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,7 +34,8 @@
 			"\\begin{hangingpar}",
 				"\t$1",
 			"\\end{hangingpar}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -41,7 +45,8 @@
 			"\\begin{hanginglist}",
 				"\t$1",
 			"\\end{hanginglist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -51,36 +56,40 @@
 			"\\begin{compacthang}",
 				"\t$1",
 			"\\end{compacthang}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"labeledpar":{
+	"labeledpar{}{}":{
 		"prefix":"labeledpar",
 		"body":[
 			"\\begin{labeledpar}",
-				"\t$1",
+				"\t{${1:widest-label}}{${2:label}}",
 			"\\end{labeledpar}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"labeledlist":{
+	"labeledlist{}":{
 		"prefix":"labeledlist",
 		"body":[
 			"\\begin{labeledlist}",
-				"\t$1",
+				"\t{${1:widest-label}}",
 			"\\end{labeledlist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"compactlabel":{
+	"compactlabel{}":{
 		"prefix":"compactlabel",
 		"body":[
 			"\\begin{compactlabel}",
-				"\t$1",
+				"\t{${1:widest-label}}",
 			"\\end{compactlabel}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

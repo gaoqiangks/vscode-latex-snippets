@@ -5,7 +5,8 @@
 		"prefix":"mmzset",
 		"body":[
 			"\\mmzset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mmznext",
 		"body":[
 			"\\mmznext{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"nommzkeys",
 		"body":[
 			"\\nommzkeys{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,159 +32,8 @@
 		"prefix":"mmz",
 		"body":[
 			"\\mmz{${1:code%text}}"
-		]
-	},
-
-
-	"nommz{}":{
-		"prefix":"nommz",
-		"body":[
-			"\\nommz{${1:code%text}}"
-		]
-	},
-
-
-	"ifmemoize":{
-		"prefix":"ifmemoize",
-		"body":[
-			"\\ifmemoize"
-		]
-	},
-
-
-	"memoizetrue":{
-		"prefix":"memoizetrue",
-		"body":[
-			"\\memoizetrue"
-		]
-	},
-
-
-	"memoizefalse":{
-		"prefix":"memoizefalse",
-		"body":[
-			"\\memoizefalse"
-		]
-	},
-
-
-	"ifmemoizing":{
-		"prefix":"ifmemoizing",
-		"body":[
-			"\\ifmemoizing"
-		]
-	},
-
-
-	"ifinmemoize":{
-		"prefix":"ifinmemoize",
-		"body":[
-			"\\ifinmemoize"
-		]
-	},
-
-
-	"IfMemoizing{}{}{}":{
-		"prefix":"IfMemoizing",
-		"body":[
-			"\\IfMemoizing{${1:name}}{${2:true code}}{${3:false code}}"
-		]
-	},
-
-
-	"mmzAbort":{
-		"prefix":"mmzAbort",
-		"body":[
-			"\\mmzAbort"
-		]
-	},
-
-
-	"mmzUnmemoizable":{
-		"prefix":"mmzUnmemoizable",
-		"body":[
-			"\\mmzUnmemoizable"
-		]
-	},
-
-
-	"mmzNoRef{}":{
-		"prefix":"mmzNoRef",
-		"body":[
-			"\\mmzNoRef{${1:label}}"
-		]
-	},
-
-
-	"mmzForceNoRef{}":{
-		"prefix":"mmzForceNoRef",
-		"body":[
-			"\\mmzForceNoRef{${1:label}}"
-		]
-	},
-
-
-	"mmzContext":{
-		"prefix":"mmzContext",
-		"body":[
-			"\\mmzContext"
-		]
-	},
-
-
-	"mmzContextExtra":{
-		"prefix":"mmzContextExtra",
-		"body":[
-			"\\mmzContextExtra"
-		]
-	},
-
-
-	"mmzCMemo":{
-		"prefix":"mmzCMemo",
-		"body":[
-			"\\mmzCMemo"
-		]
-	},
-
-
-	"mmzCCMemo":{
-		"prefix":"mmzCCMemo",
-		"body":[
-			"\\mmzCCMemo"
-		]
-	},
-
-
-	"mmzExternPages":{
-		"prefix":"mmzExternPages",
-		"body":[
-			"\\mmzExternPages"
-		]
-	},
-
-
-	"mmzExtraPages":{
-		"prefix":"mmzExtraPages",
-		"body":[
-			"\\mmzExtraPages"
-		]
-	},
-
-
-	"mmzTracingOn":{
-		"prefix":"mmzTracingOn",
-		"body":[
-			"\\mmzTracingOn"
-		]
-	},
-
-
-	"mmzTracingOff":{
-		"prefix":"mmzTracingOff",
-		"body":[
-			"\\mmzTracingOff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +41,17 @@
 		"prefix":"mmz",
 		"body":[
 			"\\mmz[${2:options%keyvals}]{${1:code%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nommz{}":{
+		"prefix":"nommz",
+		"body":[
+			"\\nommz{${1:code%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +59,62 @@
 		"prefix":"nommz",
 		"body":[
 			"\\nommz[${2:options%keyvals}]{${1:code%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifmemoize":{
+		"prefix":"ifmemoize",
+		"body":[
+			"\\ifmemoize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"memoizetrue":{
+		"prefix":"memoizetrue",
+		"body":[
+			"\\memoizetrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"memoizefalse":{
+		"prefix":"memoizefalse",
+		"body":[
+			"\\memoizefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmemoizing":{
+		"prefix":"ifmemoizing",
+		"body":[
+			"\\ifmemoizing"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifinmemoize":{
+		"prefix":"ifinmemoize",
+		"body":[
+			"\\ifinmemoize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfMemoizing{}{}{}":{
+		"prefix":"IfMemoizing",
+		"body":[
+			"\\IfMemoizing{${1:name}}{${2:true code}}{${3:false code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +122,116 @@
 		"prefix":"IfMemoizing",
 		"body":[
 			"\\IfMemoizing[${4:offset}]{${1:name}}{${2:true code}}{${3:false code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mmzAbort":{
+		"prefix":"mmzAbort",
+		"body":[
+			"\\mmzAbort"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzUnmemoizable":{
+		"prefix":"mmzUnmemoizable",
+		"body":[
+			"\\mmzUnmemoizable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzNoRef{}":{
+		"prefix":"mmzNoRef",
+		"body":[
+			"\\mmzNoRef{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzForceNoRef{}":{
+		"prefix":"mmzForceNoRef",
+		"body":[
+			"\\mmzForceNoRef{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzContext":{
+		"prefix":"mmzContext",
+		"body":[
+			"\\mmzContext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzContextExtra":{
+		"prefix":"mmzContextExtra",
+		"body":[
+			"\\mmzContextExtra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzCMemo":{
+		"prefix":"mmzCMemo",
+		"body":[
+			"\\mmzCMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzCCMemo":{
+		"prefix":"mmzCCMemo",
+		"body":[
+			"\\mmzCCMemo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzExternPages":{
+		"prefix":"mmzExternPages",
+		"body":[
+			"\\mmzExternPages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzExtraPages":{
+		"prefix":"mmzExtraPages",
+		"body":[
+			"\\mmzExtraPages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzTracingOn":{
+		"prefix":"mmzTracingOn",
+		"body":[
+			"\\mmzTracingOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mmzTracingOff":{
+		"prefix":"mmzTracingOff",
+		"body":[
+			"\\mmzTracingOff"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -215,27 +241,19 @@
 			"\\begin{memoize}",
 				"\t$1",
 			"\\end{memoize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"nomemoize":{
-		"prefix":"nomemoize",
-		"body":[
-			"\\begin{nomemoize}",
-				"\t$1",
-			"\\end{nomemoize}"
-		]
-	},
-
-
-	"memoize":{
+	"memoize[]":{
 		"prefix":"memoize",
 		"body":[
 			"\\begin{memoize}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{memoize}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,6 +263,18 @@
 			"\\begin{nomemoize}",
 				"\t$1",
 			"\\end{nomemoize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nomemoize[]":{
+		"prefix":"nomemoize",
+		"body":[
+			"\\begin{nomemoize}",
+				"\t[${1:options%keyvals}]",
+			"\\end{nomemoize}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

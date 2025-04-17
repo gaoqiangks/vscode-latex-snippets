@@ -5,7 +5,8 @@
 		"prefix":"IncludeTests",
 		"body":[
 			"\\IncludeTests{${1:pattern list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"TestErrors",
 		"body":[
 			"\\TestErrors{${1:pattern list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"LogTests",
 		"body":[
 			"\\LogTests{${1:file ext}}{${2:keywordlist1}}{${3:keywordlist2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"LogClose",
 		"body":[
 			"\\LogClose{${1:file ext}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,87 +41,8 @@
 		"prefix":"Expect",
 		"body":[
 			"\\Expect{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ExpectIfThen{}":{
-		"prefix":"ExpectIfThen",
-		"body":[
-			"\\ExpectIfThen{${1:condition}}"
-		]
-	},
-
-
-	"InRange{}{}":{
-		"prefix":"InRange",
-		"body":[
-			"\\InRange{${1:dimen1%l}}{${2:dimen2%l}}"
-		]
-	},
-
-
-	"NearTo{}":{
-		"prefix":"NearTo",
-		"body":[
-			"\\NearTo{${1:dimen%l}}"
-		]
-	},
-
-
-	"SaveValueFile{}":{
-		"prefix":"SaveValueFile",
-		"body":[
-			"\\SaveValueFile{${1:file name%file}}"
-		]
-	},
-
-
-	"CloseValueFile":{
-		"prefix":"CloseValueFile",
-		"body":[
-			"\\CloseValueFile"
-		]
-	},
-
-
-	"SaveValue{}{}":{
-		"prefix":"SaveValue",
-		"body":[
-			"\\SaveValue{${1:cmd}}{${2:arg}}"
-		]
-	},
-
-
-	"SaveValue{}*{}":{
-		"prefix":"SaveValue",
-		"body":[
-			"\\SaveValue{${1:cmd}}*{${2:arg}}"
-		]
-	},
-
-
-	"InternalSetValue":{
-		"prefix":"InternalSetValue",
-		"body":[
-			"\\InternalSetValue"
-		]
-	},
-
-
-	"SavedValue":{
-		"prefix":"SavedValue",
-		"body":[
-			"\\SavedValue"
-		]
-	},
-
-
-	"CalledName":{
-		"prefix":"CalledName",
-		"body":[
-			"\\CalledName"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +50,8 @@
 		"prefix":"*Expect",
 		"body":[
 			"\\Expect*{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -133,7 +59,35 @@
 		"prefix":"*Expect",
 		"body":[
 			"\\Expect*{${1:arg1}}*{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ExpectIfThen{}":{
+		"prefix":"ExpectIfThen",
+		"body":[
+			"\\ExpectIfThen{${1:condition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InRange{}{}":{
+		"prefix":"InRange",
+		"body":[
+			"\\InRange{${1:dimen1%l}}{${2:dimen2%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NearTo{}":{
+		"prefix":"NearTo",
+		"body":[
+			"\\NearTo{${1:dimen%l}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,26 +95,92 @@
 		"prefix":"NearTo",
 		"body":[
 			"\\NearTo[${2:opt dimen%l}]{${1:dimen%l}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"qstest":{
+	"SaveValueFile{}":{
+		"prefix":"SaveValueFile",
+		"body":[
+			"\\SaveValueFile{${1:file name%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CloseValueFile":{
+		"prefix":"CloseValueFile",
+		"body":[
+			"\\CloseValueFile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SaveValue{}{}":{
+		"prefix":"SaveValue",
+		"body":[
+			"\\SaveValue{${1:cmd}}{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SaveValue{}*{}":{
+		"prefix":"SaveValue",
+		"body":[
+			"\\SaveValue{${1:cmd}}*{${2:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InternalSetValue":{
+		"prefix":"InternalSetValue",
+		"body":[
+			"\\InternalSetValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SavedValue":{
+		"prefix":"SavedValue",
+		"body":[
+			"\\SavedValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CalledName":{
+		"prefix":"CalledName",
+		"body":[
+			"\\CalledName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qstest{}{}":{
 		"prefix":"qstest",
 		"body":[
 			"\\begin{qstest}",
-				"\t$1",
+				"\t{${1:test name}}{${2:keywordlist}}",
 			"\\end{qstest}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ExpectCallSequence":{
+	"ExpectCallSequence{}":{
 		"prefix":"ExpectCallSequence",
 		"body":[
 			"\\begin{ExpectCallSequence}",
-				"\t$1",
+				"\t{${1:call sequence}}",
 			"\\end{ExpectCallSequence}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

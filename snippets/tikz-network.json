@@ -5,95 +5,8 @@
 		"prefix":"Vertex",
 		"body":[
 			"\\Vertex{${1:name}}"
-		]
-	},
-
-
-	"Edge()()":{
-		"prefix":"Edge",
-		"body":[
-			"\\Edge(${1:vertex1})(${2:vertex2})"
-		]
-	},
-
-
-	"Text{}":{
-		"prefix":"Text",
-		"body":[
-			"\\Text{${1:text}}"
-		]
-	},
-
-
-	"Vertices{}":{
-		"prefix":"Vertices",
-		"body":[
-			"\\Vertices{${1:file}}"
-		]
-	},
-
-
-	"Edges{}":{
-		"prefix":"Edges",
-		"body":[
-			"\\Edges{${1:file}}"
-		]
-	},
-
-
-	"SetDefaultUnit{}":{
-		"prefix":"SetDefaultUnit",
-		"body":[
-			"\\SetDefaultUnit{${1:unit}}"
-		]
-	},
-
-
-	"SetDistanceScale{}":{
-		"prefix":"SetDistanceScale",
-		"body":[
-			"\\SetDistanceScale{${1:number}}"
-		]
-	},
-
-
-	"SetLayerDistance{}":{
-		"prefix":"SetLayerDistance",
-		"body":[
-			"\\SetLayerDistance{${1:length}}"
-		]
-	},
-
-
-	"EdgesNotInBG":{
-		"prefix":"EdgesNotInBG",
-		"body":[
-			"\\EdgesNotInBG"
-		]
-	},
-
-
-	"EdgesInBG":{
-		"prefix":"EdgesInBG",
-		"body":[
-			"\\EdgesInBG"
-		]
-	},
-
-
-	"SetPlaneWidth{}":{
-		"prefix":"SetPlaneWidth",
-		"body":[
-			"\\SetPlaneWidth{${1:width}}"
-		]
-	},
-
-
-	"SetPlaneHeight{}":{
-		"prefix":"SetPlaneHeight",
-		"body":[
-			"\\SetPlaneHeight{${1:height}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,17 @@
 		"prefix":"Vertex",
 		"body":[
 			"\\Vertex[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Edge()()":{
+		"prefix":"Edge",
+		"body":[
+			"\\Edge(${1:vertex1})(${2:vertex2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +32,17 @@
 		"prefix":"Edge",
 		"body":[
 			"\\Edge[${1:options%keyvals}](${2:vertex1})(${3:vertex2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Text{}":{
+		"prefix":"Text",
+		"body":[
+			"\\Text{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +50,17 @@
 		"prefix":"Text",
 		"body":[
 			"\\Text[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Vertices{}":{
+		"prefix":"Vertices",
+		"body":[
+			"\\Vertices{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +68,17 @@
 		"prefix":"Vertices",
 		"body":[
 			"\\Vertices[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Edges{}":{
+		"prefix":"Edges",
+		"body":[
+			"\\Edges{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +86,8 @@
 		"prefix":"Edges",
 		"body":[
 			"\\Edges[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +95,35 @@
 		"prefix":"Plane",
 		"body":[
 			"\\Plane[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetDefaultUnit{}":{
+		"prefix":"SetDefaultUnit",
+		"body":[
+			"\\SetDefaultUnit{${1:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetDistanceScale{}":{
+		"prefix":"SetDistanceScale",
+		"body":[
+			"\\SetDistanceScale{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetLayerDistance{}":{
+		"prefix":"SetLayerDistance",
+		"body":[
+			"\\SetLayerDistance{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +131,8 @@
 		"prefix":"SetCoordinates",
 		"body":[
 			"\\SetCoordinates[${1:specs%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +140,8 @@
 		"prefix":"SetVertexStyle",
 		"body":[
 			"\\SetVertexStyle[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +149,26 @@
 		"prefix":"SetEdgeStyle",
 		"body":[
 			"\\SetEdgeStyle[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EdgesNotInBG":{
+		"prefix":"EdgesNotInBG",
+		"body":[
+			"\\EdgesNotInBG"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EdgesInBG":{
+		"prefix":"EdgesInBG",
+		"body":[
+			"\\EdgesInBG"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +176,8 @@
 		"prefix":"SetTextStyle",
 		"body":[
 			"\\SetTextStyle[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +185,26 @@
 		"prefix":"SetPlaneStyle",
 		"body":[
 			"\\SetPlaneStyle[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetPlaneWidth{}":{
+		"prefix":"SetPlaneWidth",
+		"body":[
+			"\\SetPlaneWidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetPlaneHeight{}":{
+		"prefix":"SetPlaneHeight",
+		"body":[
+			"\\SetPlaneHeight{${1:height}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -191,6 +214,7 @@
 			"\\begin{Layer}",
 				"\t$1",
 			"\\end{Layer}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

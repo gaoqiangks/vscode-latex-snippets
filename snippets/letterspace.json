@@ -5,39 +5,8 @@
 		"prefix":"textls",
 		"body":[
 			"\\textls{${1:text}}"
-		]
-	},
-
-
-	"lsstyle":{
-		"prefix":"lsstyle",
-		"body":[
-			"\\lsstyle"
-		]
-	},
-
-
-	"lslig{}":{
-		"prefix":"lslig",
-		"body":[
-			"\\lslig{${1:ligature}}"
-		]
-	},
-
-
-	"textls*{}":{
-		"prefix":"*textls",
-		"body":[
-			"\\textls*{${1:text}}"
-		]
-	},
-
-
-	"textls*[]{}":{
-		"prefix":"*textls",
-		"body":[
-			"\\textls*[${2:amount}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +14,43 @@
 		"prefix":"textls",
 		"body":[
 			"\\textls[${2:amount}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textls*{}":{
+		"prefix":"*textls",
+		"body":[
+			"\\textls*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"textls*[]{}":{
+		"prefix":"*textls",
+		"body":[
+			"\\textls*[${2:amount}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"lsstyle":{
+		"prefix":"lsstyle",
+		"body":[
+			"\\lsstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lslig{}":{
+		"prefix":"lslig",
+		"body":[
+			"\\lslig{${1:ligature}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

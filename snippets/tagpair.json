@@ -5,7 +5,8 @@
 		"prefix":"pairing",
 		"body":[
 			"\\pairing{${1:upper text%text}}{${2:lower text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"bottomline",
 		"body":[
 			"\\bottomline{${1:bottom text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"narrowraggedleft",
 		"body":[
 			"\\narrowraggedleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,16 +34,18 @@
 			"\\begin{pairingline}",
 				"\t$1",
 			"\\end{pairingline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"taggedline":{
+	"taggedline{}":{
 		"prefix":"taggedline",
 		"body":[
 			"\\begin{taggedline}",
-				"\t$1",
+				"\t{${1:tag}}",
 			"\\end{taggedline}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

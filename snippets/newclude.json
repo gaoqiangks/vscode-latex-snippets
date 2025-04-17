@@ -1,267 +1,12 @@
 {
 
 
-	"AtBeginInclude{}":{
-		"prefix":"AtBeginInclude",
-		"body":[
-			"\\AtBeginInclude{${1:tokens}}"
-		]
-	},
-
-
-	"AtEndInclude{}":{
-		"prefix":"AtEndInclude",
-		"body":[
-			"\\AtEndInclude{${1:tokens}}"
-		]
-	},
-
-
-	"IncludeSurround":{
-		"prefix":"IncludeSurround",
-		"body":[
-			"\\IncludeSurround"
-		]
-	},
-
-
-	"DefaultIncludeSurround":{
-		"prefix":"DefaultIncludeSurround",
-		"body":[
-			"\\DefaultIncludeSurround"
-		]
-	},
-
-
-	"includeall":{
-		"prefix":"includeall",
-		"body":[
-			"\\includeall"
-		]
-	},
-
-
-	"IncludeEnv{}{}{}":{
-		"prefix":"IncludeEnv",
-		"body":[
-			"\\IncludeEnv{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IfAllowed{}{}{}":{
-		"prefix":"IfAllowed",
-		"body":[
-			"\\IfAllowed{${1:part name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IncludeName":{
-		"prefix":"IncludeName",
-		"body":[
-			"\\IncludeName"
-		]
-	},
-
-
-	"ParentName":{
-		"prefix":"ParentName",
-		"body":[
-			"\\ParentName"
-		]
-	},
-
-
-	"DeclareFormattingPackage{}":{
-		"prefix":"DeclareFormattingPackage",
-		"body":[
-			"\\DeclareFormattingPackage{${1:package name}}"
-		]
-	},
-
-
-	"ifSkipPreamble":{
-		"prefix":"ifSkipPreamble",
-		"body":[
-			"\\ifSkipPreamble"
-		]
-	},
-
-
-	"SkipPreambletrue":{
-		"prefix":"SkipPreambletrue",
-		"body":[
-			"\\SkipPreambletrue"
-		]
-	},
-
-
-	"SkipPreamblefalse":{
-		"prefix":"SkipPreamblefalse",
-		"body":[
-			"\\SkipPreamblefalse"
-		]
-	},
-
-
-	"Disable{}":{
-		"prefix":"Disable",
-		"body":[
-			"\\Disable{${1:tokens}}"
-		]
-	},
-
-
-	"DisableAll":{
-		"prefix":"DisableAll",
-		"body":[
-			"\\DisableAll"
-		]
-	},
-
-
-	"NextAux":{
-		"prefix":"NextAux",
-		"body":[
-			"\\NextAux"
-		]
-	},
-
-
-	"DynamicAux":{
-		"prefix":"DynamicAux",
-		"body":[
-			"\\DynamicAux"
-		]
-	},
-
-
-	"StaticAux{}":{
-		"prefix":"StaticAux",
-		"body":[
-			"\\StaticAux{${1:number of streams}}"
-		]
-	},
-
-
-	"InitWheel{}":{
-		"prefix":"InitWheel",
-		"body":[
-			"\\InitWheel{${1:cmd}}"
-		]
-	},
-
-
-	"DefWheel{}{}":{
-		"prefix":"DefWheel",
-		"body":[
-			"\\DefWheel{${1:cmd}}{${2:spokes}}"
-		]
-	},
-
-
-	"Roll{}":{
-		"prefix":"Roll",
-		"body":[
-			"\\Roll{${1:wheel}}"
-		]
-	},
-
-
-	"Top{}":{
-		"prefix":"Top",
-		"body":[
-			"\\Top{${1:wheel}}"
-		]
-	},
-
-
-	"AddSpokes{}{}":{
-		"prefix":"AddSpokes",
-		"body":[
-			"\\AddSpokes{${1:wheel}}{${2:spokes}}"
-		]
-	},
-
-
-	"IfTop{}{}{}{}":{
-		"prefix":"IfTop",
-		"body":[
-			"\\IfTop{${1:wheel}}{${2:spoke}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"include*[]{}":{
-		"prefix":"*include",
-		"body":[
-			"\\include*[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"include*[]{}[]":{
-		"prefix":"*include",
-		"body":[
-			"\\include*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"IncludeEnv*{}{}{}":{
-		"prefix":"*IncludeEnv",
-		"body":[
-			"\\IncludeEnv*{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IncludeEnv*[]{}{}{}":{
-		"prefix":"*IncludeEnv",
-		"body":[
-			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
-		]
-	},
-
-
-	"IncludeEnv*[]{}{}{}[]":{
-		"prefix":"*IncludeEnv",
-		"body":[
-			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
-		]
-	},
-
-
-	"includedoc*[]{}":{
-		"prefix":"*includedoc",
-		"body":[
-			"\\includedoc*[${2:prehook}]{${1:file}}"
-		]
-	},
-
-
-	"includedoc*[]{}[]":{
-		"prefix":"*includedoc",
-		"body":[
-			"\\includedoc*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
-	"includedocskip*[]{}[]":{
-		"prefix":"*includedocskip",
-		"body":[
-			"\\includedocskip*[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
-	},
-
-
 	"include[]{}":{
 		"prefix":"include",
 		"body":[
 			"\\include[${2:prehook}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +14,80 @@
 		"prefix":"include",
 		"body":[
 			"\\include[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"include*[]{}":{
+		"prefix":"*include",
+		"body":[
+			"\\include*[${2:prehook}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"include*[]{}[]":{
+		"prefix":"*include",
+		"body":[
+			"\\include*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AtBeginInclude{}":{
+		"prefix":"AtBeginInclude",
+		"body":[
+			"\\AtBeginInclude{${1:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtEndInclude{}":{
+		"prefix":"AtEndInclude",
+		"body":[
+			"\\AtEndInclude{${1:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IncludeSurround":{
+		"prefix":"IncludeSurround",
+		"body":[
+			"\\IncludeSurround"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefaultIncludeSurround":{
+		"prefix":"DefaultIncludeSurround",
+		"body":[
+			"\\DefaultIncludeSurround"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"includeall":{
+		"prefix":"includeall",
+		"body":[
+			"\\includeall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IncludeEnv{}{}{}":{
+		"prefix":"IncludeEnv",
+		"body":[
+			"\\IncludeEnv{${1:file}}{${2:envname}}{${3:instance}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +95,8 @@
 		"prefix":"IncludeEnv",
 		"body":[
 			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +104,35 @@
 		"prefix":"IncludeEnv",
 		"body":[
 			"\\IncludeEnv[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IncludeEnv*{}{}{}":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*{${1:file}}{${2:envname}}{${3:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IncludeEnv*[]{}{}{}":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IncludeEnv*[]{}{}{}[]":{
+		"prefix":"*IncludeEnv",
+		"body":[
+			"\\IncludeEnv*[${4:prehook}]{${1:file}}{${2:envname}}{${3:instance}}[${5:posthook}]"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -293,7 +140,8 @@
 		"prefix":"includedoc",
 		"body":[
 			"\\includedoc[${2:prehook}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -301,7 +149,26 @@
 		"prefix":"includedoc",
 		"body":[
 			"\\includedoc[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includedoc*[]{}":{
+		"prefix":"*includedoc",
+		"body":[
+			"\\includedoc*[${2:prehook}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"includedoc*[]{}[]":{
+		"prefix":"*includedoc",
+		"body":[
+			"\\includedoc*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -309,6 +176,178 @@
 		"prefix":"includedocskip",
 		"body":[
 			"\\includedocskip[${2:prehook}]{${1:file}}[${3:posthook}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"includedocskip*[]{}[]":{
+		"prefix":"*includedocskip",
+		"body":[
+			"\\includedocskip*[${2:prehook}]{${1:file}}[${3:posthook}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IfAllowed{}{}{}":{
+		"prefix":"IfAllowed",
+		"body":[
+			"\\IfAllowed{${1:part name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IncludeName":{
+		"prefix":"IncludeName",
+		"body":[
+			"\\IncludeName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ParentName":{
+		"prefix":"ParentName",
+		"body":[
+			"\\ParentName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareFormattingPackage{}":{
+		"prefix":"DeclareFormattingPackage",
+		"body":[
+			"\\DeclareFormattingPackage{${1:package name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifSkipPreamble":{
+		"prefix":"ifSkipPreamble",
+		"body":[
+			"\\ifSkipPreamble"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SkipPreambletrue":{
+		"prefix":"SkipPreambletrue",
+		"body":[
+			"\\SkipPreambletrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SkipPreamblefalse":{
+		"prefix":"SkipPreamblefalse",
+		"body":[
+			"\\SkipPreamblefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Disable{}":{
+		"prefix":"Disable",
+		"body":[
+			"\\Disable{${1:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisableAll":{
+		"prefix":"DisableAll",
+		"body":[
+			"\\DisableAll"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NextAux":{
+		"prefix":"NextAux",
+		"body":[
+			"\\NextAux"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DynamicAux":{
+		"prefix":"DynamicAux",
+		"body":[
+			"\\DynamicAux"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StaticAux{}":{
+		"prefix":"StaticAux",
+		"body":[
+			"\\StaticAux{${1:number of streams}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InitWheel{}":{
+		"prefix":"InitWheel",
+		"body":[
+			"\\InitWheel{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefWheel{}{}":{
+		"prefix":"DefWheel",
+		"body":[
+			"\\DefWheel{${1:cmd}}{${2:spokes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Roll{}":{
+		"prefix":"Roll",
+		"body":[
+			"\\Roll{${1:wheel}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Top{}":{
+		"prefix":"Top",
+		"body":[
+			"\\Top{${1:wheel}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddSpokes{}{}":{
+		"prefix":"AddSpokes",
+		"body":[
+			"\\AddSpokes{${1:wheel}}{${2:spokes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfTop{}{}{}{}":{
+		"prefix":"IfTop",
+		"body":[
+			"\\IfTop{${1:wheel}}{${2:spoke}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"nto",
 		"body":[
 			"\\nto{${1:num1}}{${2:num2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ito",
 		"body":[
 			"\\ito{${1:num}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"oto",
 		"body":[
 			"\\oto{${1:num}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,39 +32,8 @@
 		"prefix":"setOTMstyle",
 		"body":[
 			"\\setOTMstyle{${1:style}}"
-		]
-	},
-
-
-	"newOTMstyle{}{}":{
-		"prefix":"newOTMstyle",
-		"body":[
-			"\\newOTMstyle{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"getOTMparameter{}":{
-		"prefix":"getOTMparameter",
-		"body":[
-			"\\getOTMparameter{${1:param}}"
-		]
-	},
-
-
-	"renewOTMstyle{}{}":{
-		"prefix":"renewOTMstyle",
-		"body":[
-			"\\renewOTMstyle{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"newOTMparameter{}{}{}":{
-		"prefix":"newOTMparameter",
-		"body":[
-			"\\newOTMparameter{${1:style}}{${2:param}}{${3:value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +41,17 @@
 		"prefix":"setOTMstyle",
 		"body":[
 			"\\setOTMstyle[${2:params%keyvals}]{${1:style}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newOTMstyle{}{}":{
+		"prefix":"newOTMstyle",
+		"body":[
+			"\\newOTMstyle{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +59,26 @@
 		"prefix":"newOTMstyle",
 		"body":[
 			"\\newOTMstyle[${3:params}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getOTMparameter{}":{
+		"prefix":"getOTMparameter",
+		"body":[
+			"\\getOTMparameter{${1:param}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewOTMstyle{}{}":{
+		"prefix":"renewOTMstyle",
+		"body":[
+			"\\renewOTMstyle{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,6 +86,16 @@
 		"prefix":"newOTMstyle",
 		"body":[
 			"\\newOTMstyle[${3:params}]{${1:name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newOTMparameter{}{}{}":{
+		"prefix":"newOTMparameter",
+		"body":[
+			"\\newOTMparameter{${1:style}}{${2:param}}{${3:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

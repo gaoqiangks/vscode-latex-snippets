@@ -5,7 +5,8 @@
 		"prefix":"ditaacaption",
 		"body":[
 			"\\ditaacaption"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ditaadir",
 		"body":[
 			"\\ditaadir"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ditaafigwidth",
 		"body":[
 			"\\ditaafigwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ditaafile",
 		"body":[
 			"\\ditaafile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,26 +41,29 @@
 		"prefix":"ditaastem",
 		"body":[
 			"\\ditaastem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ditaa":{
+	"ditaa{}{}":{
 		"prefix":"ditaa",
 		"body":[
 			"\\begin{ditaa}",
-				"\t$1",
+				"\t{${1:caption%text}}{${2:name}}",
 			"\\end{ditaa}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ditaa":{
+	"ditaa[]{}{}":{
 		"prefix":"ditaa",
 		"body":[
 			"\\begin{ditaa}",
-				"\t$1",
+				"\t[${3:width}]{${1:caption%text}}{${2:name}}",
 			"\\end{ditaa}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

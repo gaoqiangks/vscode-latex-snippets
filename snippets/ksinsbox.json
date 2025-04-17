@@ -5,39 +5,8 @@
 		"prefix":"ksinsbox",
 		"body":[
 			"\\ksinsbox{${1:content%text}}"
-		]
-	},
-
-
-	"InsertBoxL{}{}":{
-		"prefix":"InsertBoxL",
-		"body":[
-			"\\InsertBoxL{${1:lines}}{${2:content%text}}"
-		]
-	},
-
-
-	"InsertBoxR{}{}":{
-		"prefix":"InsertBoxR",
-		"body":[
-			"\\InsertBoxR{${1:lines}}{${2:content%text}}"
-		]
-	},
-
-
-	"InsertBoxC{}{}":{
-		"prefix":"InsertBoxC",
-		"body":[
-			"\\InsertBoxC{${1:lines}}{${2:content%text}}"
-		]
-	},
-
-
-	"MoveBelowBox":{
-		"prefix":"MoveBelowBox",
-		"body":[
-			"\\MoveBelowBox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,8 @@
 		"prefix":"ksinsbox",
 		"body":[
 			"\\ksinsbox[${2:pos%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +23,17 @@
 		"prefix":"ksinsbox",
 		"body":[
 			"\\ksinsbox[${2:pos%keyvals}][${3:number}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"InsertBoxL{}{}":{
+		"prefix":"InsertBoxL",
+		"body":[
+			"\\InsertBoxL{${1:lines}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +41,17 @@
 		"prefix":"InsertBoxL",
 		"body":[
 			"\\InsertBoxL{${1:lines}}{${2:content%text}}[${3:correction}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"InsertBoxR{}{}":{
+		"prefix":"InsertBoxR",
+		"body":[
+			"\\InsertBoxR{${1:lines}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,17 @@
 		"prefix":"InsertBoxR",
 		"body":[
 			"\\InsertBoxR{${1:lines}}{${2:content%text}}[${3:correction}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"InsertBoxC{}{}":{
+		"prefix":"InsertBoxC",
+		"body":[
+			"\\InsertBoxC{${1:lines}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +77,16 @@
 		"prefix":"InsertBoxC",
 		"body":[
 			"\\InsertBoxC{${1:lines}}{${2:content%text}}[${3:correction}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MoveBelowBox":{
+		"prefix":"MoveBelowBox",
+		"body":[
+			"\\MoveBelowBox"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

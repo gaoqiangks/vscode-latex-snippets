@@ -5,47 +5,8 @@
 		"prefix":"inputpygmented",
 		"body":[
 			"\\inputpygmented{${1:file}}"
-		]
-	},
-
-
-	"pyginline||":{
-		"prefix":"pyginline",
-		"body":[
-			"\\pyginline|${1:code}|"
-		]
-	},
-
-
-	"setpygmented{}":{
-		"prefix":"setpygmented",
-		"body":[
-			"\\setpygmented{${1:options%keyvals}}"
-		]
-	},
-
-
-	"widest(){}{}":{
-		"prefix":"widest",
-		"body":[
-			"\\widest(${3:string list}){${1:code}}{${2:cmd}}"
-		]
-	},
-
-
-	"VerbatimOutAppend":{
-		"prefix":"VerbatimOutAppend",
-		"body":[
-			"\\VerbatimOutAppend"
-		]
-	},
-
-
-	"FormatLineNumber{}":{
-		"prefix":"FormatLineNumber",
-		"body":[
-			"\\FormatLineNumber{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,17 @@
 		"prefix":"inputpygmented",
 		"body":[
 			"\\inputpygmented[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pyginline||":{
+		"prefix":"pyginline",
+		"body":[
+			"\\pyginline|${1:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,44 @@
 		"prefix":"pyginline",
 		"body":[
 			"\\pyginline[${1:options}]|${2:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setpygmented{}":{
+		"prefix":"setpygmented",
+		"body":[
+			"\\setpygmented{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"widest(){}{}":{
+		"prefix":"widest",
+		"body":[
+			"\\widest(${3:string list}){${1:code}}{${2:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimOutAppend":{
+		"prefix":"VerbatimOutAppend",
+		"body":[
+			"\\VerbatimOutAppend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatLineNumber{}":{
+		"prefix":"FormatLineNumber",
+		"body":[
+			"\\FormatLineNumber{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,7 +79,19 @@
 			"\\begin{pygmented}",
 				"\t$1",
 			"\\end{pygmented}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pygmented[]":{
+		"prefix":"pygmented",
+		"body":[
+			"\\begin{pygmented}",
+				"\t[${1:options%keyvals}]",
+			"\\end{pygmented}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -81,16 +101,7 @@
 			"\\begin{VerbatimOutAppend}",
 				"\t$1",
 			"\\end{VerbatimOutAppend}"
-		]
-	},
-
-
-	"pygmented":{
-		"prefix":"pygmented",
-		"body":[
-			"\\begin{pygmented}",
-				"\t$1",
-			"\\end{pygmented}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

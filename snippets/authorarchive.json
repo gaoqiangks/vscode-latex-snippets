@@ -5,7 +5,8 @@
 		"prefix":"authorsetup",
 		"body":[
 			"\\authorsetup{${1:option%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"authorcrfont",
 		"body":[
 			"\\authorcrfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"authorat",
 		"body":[
 			"\\authorat{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"authorwidth",
 		"body":[
 			"\\authorwidth{${1:width}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"BibTeX",
 		"body":[
 			"\\BibTeX"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -47,7 +52,19 @@
 			"\\begin{enumerate*}",
 				"\t$1",
 			"\\end{enumerate*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"enumerate*[]":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{enumerate*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -57,7 +74,19 @@
 			"\\begin{itemize*}",
 				"\t$1",
 			"\\end{itemize*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"itemize*[]":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{itemize*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -67,36 +96,18 @@
 			"\\begin{description*}",
 				"\t$1",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"enumerate*":{
-		"prefix":"enumerate",
-		"body":[
-			"\\begin{enumerate*}",
-				"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize",
-		"body":[
-			"\\begin{itemize*}",
-				"\t$1",
-			"\\end{itemize*}"
-		]
-	},
-
-
-	"description*":{
-		"prefix":"description",
+	"description*[]":{
+		"prefix":"*description",
 		"body":[
 			"\\begin{description*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

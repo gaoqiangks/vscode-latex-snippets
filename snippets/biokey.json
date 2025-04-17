@@ -5,7 +5,8 @@
 		"prefix":"AAAN",
 		"body":[
 			"\\AAAN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"AAN",
 		"body":[
 			"\\AAN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"AN",
 		"body":[
 			"\\AN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Ap",
 		"body":[
 			"\\Ap"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"DD",
 		"body":[
 			"\\DD{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"FK",
 		"body":[
 			"\\FK{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"KOM",
 		"body":[
 			"\\KOM{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"OTSTUP",
 		"body":[
 			"\\OTSTUP"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"SameDecl",
 		"body":[
 			"\\SameDecl"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"SE",
 		"body":[
 			"\\SE{${1:label}}{${2:reflabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"SHRIFTN",
 		"body":[
 			"\\SHRIFTN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"SHRIFTZ",
 		"body":[
 			"\\SHRIFTZ"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"SS",
 		"body":[
 			"\\SS{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"SSYLKA",
 		"body":[
 			"\\SSYLKA{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"STEZA",
 		"body":[
 			"\\STEZA{${1:label}}{${2:reflabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"TE",
 		"body":[
 			"\\TE{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"TEZA",
 		"body":[
 			"\\TEZA{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"VPRAVO",
 		"body":[
 			"\\VPRAVO{${1:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"ZZZ",
 		"body":[
 			"\\ZZZ{${1:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -159,7 +178,8 @@
 			"\\begin{biokey}",
 				"\t$1",
 			"\\end{biokey}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -169,27 +189,19 @@
 			"\\begin{SDVIG}",
 				"\t$1",
 			"\\end{SDVIG}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"LE":{
-		"prefix":"LE",
-		"body":[
-			"\\begin{LE}",
-				"\t$1",
-			"\\end{LE}"
-		]
-	},
-
-
-	"SDVIG":{
+	"SDVIG[]":{
 		"prefix":"SDVIG",
 		"body":[
 			"\\begin{SDVIG}",
-				"\t$1",
+				"\t[${1:indent factor}]",
 			"\\end{SDVIG}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -199,6 +211,18 @@
 			"\\begin{LE}",
 				"\t$1",
 			"\\end{LE}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LE[]":{
+		"prefix":"LE",
+		"body":[
+			"\\begin{LE}",
+				"\t[${1:indent factor}]",
+			"\\end{LE}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

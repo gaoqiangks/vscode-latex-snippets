@@ -5,255 +5,8 @@
 		"prefix":"com",
 		"body":[
 			"\\com{${1:text}}"
-		]
-	},
-
-
-	"jus{}":{
-		"prefix":"jus",
-		"body":[
-			"\\jus{${1:text}}"
-		]
-	},
-
-
-	"startblock{}":{
-		"prefix":"startblock",
-		"body":[
-			"\\startblock{${1:text}}"
-		]
-	},
-
-
-	"finishblock{}":{
-		"prefix":"finishblock",
-		"body":[
-			"\\finishblock{${1:text}}"
-		]
-	},
-
-
-	"ribbonpagebreak":{
-		"prefix":"ribbonpagebreak",
-		"body":[
-			"\\ribbonpagebreak"
-		]
-	},
-
-
-	"continueblock{}":{
-		"prefix":"continueblock",
-		"body":[
-			"\\continueblock{${1:text}}"
-		]
-	},
-
-
-	"moveribbons{}":{
-		"prefix":"moveribbons",
-		"body":[
-			"\\moveribbons{${1:ribbon1,ribbon2,...}}"
-		]
-	},
-
-
-	"swapribbons{}{}":{
-		"prefix":"swapribbons",
-		"body":[
-			"\\swapribbons{${1:name1,name2,...}}{${2:name'1,name'2,...}}"
-		]
-	},
-
-
-	"moveboxes{}":{
-		"prefix":"moveboxes",
-		"body":[
-			"\\moveboxes{${1:box1,box2,...}}"
-		]
-	},
-
-
-	"extendboxes{}":{
-		"prefix":"extendboxes",
-		"body":[
-			"\\extendboxes{${1:box1,box2,...}}"
-		]
-	},
-
-
-	"jusColor":{
-		"prefix":"jusColor",
-		"body":[
-			"\\jusColor"
-		]
-	},
-
-
-	"comColor":{
-		"prefix":"comColor",
-		"body":[
-			"\\comColor"
-		]
-	},
-
-
-	"ribColor":{
-		"prefix":"ribColor",
-		"body":[
-			"\\ribColor"
-		]
-	},
-
-
-	"varribColor":{
-		"prefix":"varribColor",
-		"body":[
-			"\\varribColor"
-		]
-	},
-
-
-	"ribTextColor":{
-		"prefix":"ribTextColor",
-		"body":[
-			"\\ribTextColor"
-		]
-	},
-
-
-	"boxTextColor":{
-		"prefix":"boxTextColor",
-		"body":[
-			"\\boxTextColor"
-		]
-	},
-
-
-	"guideTextColor":{
-		"prefix":"guideTextColor",
-		"body":[
-			"\\guideTextColor"
-		]
-	},
-
-
-	"defaultStepHeight":{
-		"prefix":"defaultStepHeight",
-		"body":[
-			"\\defaultStepHeight"
-		]
-	},
-
-
-	"defaultRowHeight":{
-		"prefix":"defaultRowHeight",
-		"body":[
-			"\\defaultRowHeight"
-		]
-	},
-
-
-	"ribTextVOffset":{
-		"prefix":"ribTextVOffset",
-		"body":[
-			"\\ribTextVOffset"
-		]
-	},
-
-
-	"boxTextVOffset":{
-		"prefix":"boxTextVOffset",
-		"body":[
-			"\\boxTextVOffset"
-		]
-	},
-
-
-	"boxTextHOffset":{
-		"prefix":"boxTextHOffset",
-		"body":[
-			"\\boxTextHOffset"
-		]
-	},
-
-
-	"guideTextVOffset":{
-		"prefix":"guideTextVOffset",
-		"body":[
-			"\\guideTextVOffset"
-		]
-	},
-
-
-	"roundingRadius":{
-		"prefix":"roundingRadius",
-		"body":[
-			"\\roundingRadius"
-		]
-	},
-
-
-	"boxRoundingRadius":{
-		"prefix":"boxRoundingRadius",
-		"body":[
-			"\\boxRoundingRadius"
-		]
-	},
-
-
-	"blockLineWidth":{
-		"prefix":"blockLineWidth",
-		"body":[
-			"\\blockLineWidth"
-		]
-	},
-
-
-	"boxLineWidth":{
-		"prefix":"boxLineWidth",
-		"body":[
-			"\\boxLineWidth"
-		]
-	},
-
-
-	"shadowHeight":{
-		"prefix":"shadowHeight",
-		"body":[
-			"\\shadowHeight"
-		]
-	},
-
-
-	"shadowColor":{
-		"prefix":"shadowColor",
-		"body":[
-			"\\shadowColor"
-		]
-	},
-
-
-	"zigzagHeight":{
-		"prefix":"zigzagHeight",
-		"body":[
-			"\\zigzagHeight"
-		]
-	},
-
-
-	"zigzagLength":{
-		"prefix":"zigzagLength",
-		"body":[
-			"\\zigzagLength"
-		]
-	},
-
-
-	"twistiness":{
-		"prefix":"twistiness",
-		"body":[
-			"\\twistiness"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +14,17 @@
 		"prefix":"com",
 		"body":[
 			"\\com[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"jus{}":{
+		"prefix":"jus",
+		"body":[
+			"\\jus{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +32,17 @@
 		"prefix":"jus",
 		"body":[
 			"\\jus[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"startblock{}":{
+		"prefix":"startblock",
+		"body":[
+			"\\startblock{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +50,17 @@
 		"prefix":"startblock",
 		"body":[
 			"\\startblock[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"finishblock{}":{
+		"prefix":"finishblock",
+		"body":[
+			"\\finishblock{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +68,26 @@
 		"prefix":"finishblock",
 		"body":[
 			"\\finishblock[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ribbonpagebreak":{
+		"prefix":"ribbonpagebreak",
+		"body":[
+			"\\ribbonpagebreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"continueblock{}":{
+		"prefix":"continueblock",
+		"body":[
+			"\\continueblock{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +95,242 @@
 		"prefix":"continueblock",
 		"body":[
 			"\\continueblock[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"moveribbons{}":{
+		"prefix":"moveribbons",
+		"body":[
+			"\\moveribbons{${1:ribbon1,ribbon2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"swapribbons{}{}":{
+		"prefix":"swapribbons",
+		"body":[
+			"\\swapribbons{${1:name1,name2,...}}{${2:name'1,name'2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moveboxes{}":{
+		"prefix":"moveboxes",
+		"body":[
+			"\\moveboxes{${1:box1,box2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extendboxes{}":{
+		"prefix":"extendboxes",
+		"body":[
+			"\\extendboxes{${1:box1,box2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"jusColor":{
+		"prefix":"jusColor",
+		"body":[
+			"\\jusColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"comColor":{
+		"prefix":"comColor",
+		"body":[
+			"\\comColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ribColor":{
+		"prefix":"ribColor",
+		"body":[
+			"\\ribColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"varribColor":{
+		"prefix":"varribColor",
+		"body":[
+			"\\varribColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ribTextColor":{
+		"prefix":"ribTextColor",
+		"body":[
+			"\\ribTextColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxTextColor":{
+		"prefix":"boxTextColor",
+		"body":[
+			"\\boxTextColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guideTextColor":{
+		"prefix":"guideTextColor",
+		"body":[
+			"\\guideTextColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultStepHeight":{
+		"prefix":"defaultStepHeight",
+		"body":[
+			"\\defaultStepHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultRowHeight":{
+		"prefix":"defaultRowHeight",
+		"body":[
+			"\\defaultRowHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ribTextVOffset":{
+		"prefix":"ribTextVOffset",
+		"body":[
+			"\\ribTextVOffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxTextVOffset":{
+		"prefix":"boxTextVOffset",
+		"body":[
+			"\\boxTextVOffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxTextHOffset":{
+		"prefix":"boxTextHOffset",
+		"body":[
+			"\\boxTextHOffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guideTextVOffset":{
+		"prefix":"guideTextVOffset",
+		"body":[
+			"\\guideTextVOffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"roundingRadius":{
+		"prefix":"roundingRadius",
+		"body":[
+			"\\roundingRadius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxRoundingRadius":{
+		"prefix":"boxRoundingRadius",
+		"body":[
+			"\\boxRoundingRadius"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blockLineWidth":{
+		"prefix":"blockLineWidth",
+		"body":[
+			"\\blockLineWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxLineWidth":{
+		"prefix":"boxLineWidth",
+		"body":[
+			"\\boxLineWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowHeight":{
+		"prefix":"shadowHeight",
+		"body":[
+			"\\shadowHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowColor":{
+		"prefix":"shadowColor",
+		"body":[
+			"\\shadowColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zigzagHeight":{
+		"prefix":"zigzagHeight",
+		"body":[
+			"\\zigzagHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zigzagLength":{
+		"prefix":"zigzagLength",
+		"body":[
+			"\\zigzagLength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"twistiness":{
+		"prefix":"twistiness",
+		"body":[
+			"\\twistiness"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -303,16 +340,18 @@
 			"\\begin{ribbonproof}",
 				"\t$1",
 			"\\end{ribbonproof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ribbonproof":{
+	"ribbonproof[]":{
 		"prefix":"ribbonproof",
 		"body":[
 			"\\begin{ribbonproof}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{ribbonproof}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

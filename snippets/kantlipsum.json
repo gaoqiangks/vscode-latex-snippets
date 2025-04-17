@@ -5,47 +5,8 @@
 		"prefix":"kant",
 		"body":[
 			"\\kant"
-		]
-	},
-
-
-	"kantdef{}{}":{
-		"prefix":"kantdef",
-		"body":[
-			"\\kantdef{${1:cmd}}{${2:num}}"
-		]
-	},
-
-
-	"kant*":{
-		"prefix":"*kant",
-		"body":[
-			"\\kant*"
-		]
-	},
-
-
-	"kant*[]":{
-		"prefix":"*kant",
-		"body":[
-			"\\kant*[${1:num}]"
-		]
-	},
-
-
-	"kant*[]":{
-		"prefix":"*kant",
-		"body":[
-			"\\kant*[${1:num-num}]"
-		]
-	},
-
-
-	"kant*[][]":{
-		"prefix":"*kant",
-		"body":[
-			"\\kant*[${1:num}][${2:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,8 @@
 		"prefix":"kant",
 		"body":[
 			"\\kant[${1:num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +23,8 @@
 		"prefix":"kant",
 		"body":[
 			"\\kant[${1:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +32,53 @@
 		"prefix":"kant",
 		"body":[
 			"\\kant[${1:num}][${2:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"kant*":{
+		"prefix":"*kant",
+		"body":[
+			"\\kant*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"kant*[]":{
+		"prefix":"*kant",
+		"body":[
+			"\\kant*[${1:num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"kant*[]":{
+		"prefix":"*kant",
+		"body":[
+			"\\kant*[${1:num-num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"kant*[][]":{
+		"prefix":"*kant",
+		"body":[
+			"\\kant*[${1:num}][${2:num-num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"kantdef{}{}":{
+		"prefix":"kantdef",
+		"body":[
+			"\\kantdef{${1:cmd}}{${2:num}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +86,7 @@
 		"prefix":"kantdef",
 		"body":[
 			"\\kantdef{${1:cmd}}{${2:num}}[${3:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

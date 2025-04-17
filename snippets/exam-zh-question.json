@@ -5,7 +5,8 @@
 		"prefix":"questionsetup",
 		"body":[
 			"\\questionsetup{${1:键值列表%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,87 +14,8 @@
 		"prefix":"paren",
 		"body":[
 			"\\paren"
-		]
-	},
-
-
-	"AddQuestionCounter{}{}":{
-		"prefix":"AddQuestionCounter",
-		"body":[
-			"\\AddQuestionCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
-		]
-	},
-
-
-	"circlednumber{}":{
-		"prefix":"circlednumber",
-		"body":[
-			"\\circlednumber{${1:数字或计数器名字}}"
-		]
-	},
-
-
-	"fillin":{
-		"prefix":"fillin",
-		"body":[
-			"\\fillin"
-		]
-	},
-
-
-	"fillinsetup{}":{
-		"prefix":"fillinsetup",
-		"body":[
-			"\\fillinsetup{${1:键值列表%keyvals}}"
-		]
-	},
-
-
-	"AddFillinCounter{}{}":{
-		"prefix":"AddFillinCounter",
-		"body":[
-			"\\AddFillinCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
-		]
-	},
-
-
-	"score{}":{
-		"prefix":"score",
-		"body":[
-			"\\score{${1:分数}}"
-		]
-	},
-
-
-	"circlednumber*{}":{
-		"prefix":"*circlednumber",
-		"body":[
-			"\\circlednumber*{${1:数字或计数器名字}}"
-		]
-	},
-
-
-	"fillin*":{
-		"prefix":"*fillin",
-		"body":[
-			"\\fillin*"
-		]
-	},
-
-
-	"fillin*[]":{
-		"prefix":"*fillin",
-		"body":[
-			"\\fillin*[${1:答案}]"
-		]
-	},
-
-
-	"fillin*[][]":{
-		"prefix":"*fillin",
-		"body":[
-			"\\fillin*[${1:键值列表%keyvals}][${2:答案}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +23,44 @@
 		"prefix":"paren",
 		"body":[
 			"\\paren[${1:答案}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddQuestionCounter{}{}":{
+		"prefix":"AddQuestionCounter",
+		"body":[
+			"\\AddQuestionCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circlednumber{}":{
+		"prefix":"circlednumber",
+		"body":[
+			"\\circlednumber{${1:数字或计数器名字}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circlednumber*{}":{
+		"prefix":"*circlednumber",
+		"body":[
+			"\\circlednumber*{${1:数字或计数器名字}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fillin":{
+		"prefix":"fillin",
+		"body":[
+			"\\fillin"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +68,8 @@
 		"prefix":"fillin",
 		"body":[
 			"\\fillin[${1:答案}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +77,62 @@
 		"prefix":"fillin",
 		"body":[
 			"\\fillin[${1:键值列表%keyvals}][${2:答案}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fillin*":{
+		"prefix":"*fillin",
+		"body":[
+			"\\fillin*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fillin*[]":{
+		"prefix":"*fillin",
+		"body":[
+			"\\fillin*[${1:答案}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fillin*[][]":{
+		"prefix":"*fillin",
+		"body":[
+			"\\fillin*[${1:键值列表%keyvals}][${2:答案}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fillinsetup{}":{
+		"prefix":"fillinsetup",
+		"body":[
+			"\\fillinsetup{${1:键值列表%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddFillinCounter{}{}":{
+		"prefix":"AddFillinCounter",
+		"body":[
+			"\\AddFillinCounter{${1:LaTeX command%cmd}}{${2:internal command%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"score{}":{
+		"prefix":"score",
+		"body":[
+			"\\score{${1:分数}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,37 +142,19 @@
 			"\\begin{question}",
 				"\t$1",
 			"\\end{question}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"problem":{
-		"prefix":"problem",
-		"body":[
-			"\\begin{problem}",
-				"\t$1",
-			"\\end{problem}"
-		]
-	},
-
-
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-				"\t$1",
-			"\\end{solution}"
-		]
-	},
-
-
-	"question":{
+	"question[]":{
 		"prefix":"question",
 		"body":[
 			"\\begin{question}",
-				"\t$1",
+				"\t[${1:键值列表%keyvals}]",
 			"\\end{question}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -167,7 +164,19 @@
 			"\\begin{problem}",
 				"\t$1",
 			"\\end{problem}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"problem[]":{
+		"prefix":"problem",
+		"body":[
+			"\\begin{problem}",
+				"\t[${1:键值列表%keyvals}]",
+			"\\end{problem}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -177,6 +186,18 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solution[]":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t[${1:键值列表%keyvals}]",
+			"\\end{solution}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"xsimsetup",
 		"body":[
 			"\\xsimsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"DeclareExerciseType",
 		"body":[
 			"\\DeclareExerciseType{${1:type}}{${2:parameters%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"numberofexercises",
 		"body":[
 			"\\numberofexercises"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,1263 +32,8 @@
 		"prefix":"DeclareExerciseParameter",
 		"body":[
 			"\\DeclareExerciseParameter{${1:parameter%specialDef}}"
-		]
-	},
-
-
-	"SetExerciseParameter{}{}{}":{
-		"prefix":"SetExerciseParameter",
-		"body":[
-			"\\SetExerciseParameter{${1:type}}{${2:parameter}}{${3:value}}"
-		]
-	},
-
-
-	"SetExerciseParameters{}{}":{
-		"prefix":"SetExerciseParameters",
-		"body":[
-			"\\SetExerciseParameters{${1:type}}{${2:parameters}}"
-		]
-	},
-
-
-	"DeclareExerciseProperty{}":{
-		"prefix":"DeclareExerciseProperty",
-		"body":[
-			"\\DeclareExerciseProperty{${1:property%specialDef}}"
-		]
-	},
-
-
-	"DeclareExercisePropertyAlias{}{}":{
-		"prefix":"DeclareExercisePropertyAlias",
-		"body":[
-			"\\DeclareExercisePropertyAlias{${1:property1%specialDef}}{${2:property2}}"
-		]
-	},
-
-
-	"DeclareExerciseGoal{}":{
-		"prefix":"DeclareExerciseGoal",
-		"body":[
-			"\\DeclareExerciseGoal{${1:goal%specialDef}}"
-		]
-	},
-
-
-	"TotalExerciseTypeGoal{}{}{}{}":{
-		"prefix":"TotalExerciseTypeGoal",
-		"body":[
-			"\\TotalExerciseTypeGoal{${1:type}}{${2:goal}}{${3:singular}}{${4:plural}}"
-		]
-	},
-
-
-	"TotalExerciseTypeGoals{}{}{}{}":{
-		"prefix":"TotalExerciseTypeGoals",
-		"body":[
-			"\\TotalExerciseTypeGoals{${1:type}}{${2:list of goals}}{${3:singular}}{${4:plural}}"
-		]
-	},
-
-
-	"TotalExerciseGoal{}{}{}":{
-		"prefix":"TotalExerciseGoal",
-		"body":[
-			"\\TotalExerciseGoal{${1:goal}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"TotalExerciseGoals{}{}{}":{
-		"prefix":"TotalExerciseGoals",
-		"body":[
-			"\\TotalExerciseGoals{${1:list of goals}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"AddtoExerciseTypeGoal{}{}{}":{
-		"prefix":"AddtoExerciseTypeGoal",
-		"body":[
-			"\\AddtoExerciseTypeGoal{${1:type}}{${2:goal}}{${3:value}}"
-		]
-	},
-
-
-	"AddtoExerciseTypeGoalPrint{}{}{}{}{}":{
-		"prefix":"AddtoExerciseTypeGoalPrint",
-		"body":[
-			"\\AddtoExerciseTypeGoalPrint{${1:type}}{${2:goal}}{${3:value}}{${4:singular}}{${5:plural}}"
-		]
-	},
-
-
-	"AddtoExerciseGoal{}{}":{
-		"prefix":"AddtoExerciseGoal",
-		"body":[
-			"\\AddtoExerciseGoal{${1:goal}}{${2:value}}"
-		]
-	},
-
-
-	"AddtoExerciseGoalPrint{}{}{}{}":{
-		"prefix":"AddtoExerciseGoalPrint",
-		"body":[
-			"\\AddtoExerciseGoalPrint{${1:goal}}{${2:value}}{${3:singular}}{${4:plural}}"
-		]
-	},
-
-
-	"ExerciseGoalValuePrint{}{}{}":{
-		"prefix":"ExerciseGoalValuePrint",
-		"body":[
-			"\\ExerciseGoalValuePrint{${1:value}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"printgoal{}":{
-		"prefix":"printgoal",
-		"body":[
-			"\\printgoal{${1:value}}"
-		]
-	},
-
-
-	"printpoints{}":{
-		"prefix":"printpoints",
-		"body":[
-			"\\printpoints{${1:type}}"
-		]
-	},
-
-
-	"printtotalpoints":{
-		"prefix":"printtotalpoints",
-		"body":[
-			"\\printtotalpoints"
-		]
-	},
-
-
-	"addpoints{}":{
-		"prefix":"addpoints",
-		"body":[
-			"\\addpoints{${1:value}}"
-		]
-	},
-
-
-	"points{}":{
-		"prefix":"points",
-		"body":[
-			"\\points{${1:value}}"
-		]
-	},
-
-
-	"printbonus{}":{
-		"prefix":"printbonus",
-		"body":[
-			"\\printbonus{${1:type}}"
-		]
-	},
-
-
-	"printtotalbonus":{
-		"prefix":"printtotalbonus",
-		"body":[
-			"\\printtotalbonus"
-		]
-	},
-
-
-	"addbonus{}":{
-		"prefix":"addbonus",
-		"body":[
-			"\\addbonus{${1:value}}"
-		]
-	},
-
-
-	"DeclareExerciseTagging{}":{
-		"prefix":"DeclareExerciseTagging",
-		"body":[
-			"\\DeclareExerciseTagging{${1:tag%specialDef}}"
-		]
-	},
-
-
-	"ProvideExerciseTagging{}":{
-		"prefix":"ProvideExerciseTagging",
-		"body":[
-			"\\ProvideExerciseTagging{${1:tag%specialDef}}"
-		]
-	},
-
-
-	"printexercise{}{}":{
-		"prefix":"printexercise",
-		"body":[
-			"\\printexercise{${1:type}}{${2:list of ids}}"
-		]
-	},
-
-
-	"xprintexercise{}{}":{
-		"prefix":"xprintexercise",
-		"body":[
-			"\\xprintexercise{${1:type}}{${2:list of ids}}"
-		]
-	},
-
-
-	"DeclareExerciseCollection{}":{
-		"prefix":"DeclareExerciseCollection",
-		"body":[
-			"\\DeclareExerciseCollection{${1:name}}"
-		]
-	},
-
-
-	"activatecollection{}":{
-		"prefix":"activatecollection",
-		"body":[
-			"\\activatecollection{${1:collection name}}"
-		]
-	},
-
-
-	"deactivatecollection{}":{
-		"prefix":"deactivatecollection",
-		"body":[
-			"\\deactivatecollection{${1:collection name}}"
-		]
-	},
-
-
-	"collectexercises{}":{
-		"prefix":"collectexercises",
-		"body":[
-			"\\collectexercises{${1:collection name}}"
-		]
-	},
-
-
-	"collectexercisesstop{}":{
-		"prefix":"collectexercisesstop",
-		"body":[
-			"\\collectexercisesstop{${1:collection name}}"
-		]
-	},
-
-
-	"printcollection{}":{
-		"prefix":"printcollection",
-		"body":[
-			"\\printcollection{${1:collection name}}"
-		]
-	},
-
-
-	"printrandomexercises{}":{
-		"prefix":"printrandomexercises",
-		"body":[
-			"\\printrandomexercises{${1:number}}"
-		]
-	},
-
-
-	"printsolutionstype{}":{
-		"prefix":"printsolutionstype",
-		"body":[
-			"\\printsolutionstype{${1:type}}"
-		]
-	},
-
-
-	"printsolutions":{
-		"prefix":"printsolutions",
-		"body":[
-			"\\printsolutions"
-		]
-	},
-
-
-	"printallsolutions":{
-		"prefix":"printallsolutions",
-		"body":[
-			"\\printallsolutions"
-		]
-	},
-
-
-	"printsolution{}{}":{
-		"prefix":"printsolution",
-		"body":[
-			"\\printsolution{${1:type}}{${2:id}}"
-		]
-	},
-
-
-	"xprintsolution{}{}":{
-		"prefix":"xprintsolution",
-		"body":[
-			"\\xprintsolution{${1:type}}{${2:id}}"
-		]
-	},
-
-
-	"gradingtable":{
-		"prefix":"gradingtable",
-		"body":[
-			"\\gradingtable"
-		]
-	},
-
-
-	"IfExerciseGoalTF{}{}{}{}":{
-		"prefix":"IfExerciseGoalTF",
-		"body":[
-			"\\IfExerciseGoalTF{${1:goal}}{${2:relation and value}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfExerciseGoalT{}{}{}":{
-		"prefix":"IfExerciseGoalT",
-		"body":[
-			"\\IfExerciseGoalT{${1:goal}}{${2:relation and value}}{${3:true}}"
-		]
-	},
-
-
-	"IfExerciseGoalF{}{}{}":{
-		"prefix":"IfExerciseGoalF",
-		"body":[
-			"\\IfExerciseGoalF{${1:goal}}{${2:relation and value}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseGoalSingularTF{}{}{}":{
-		"prefix":"IfExerciseGoalSingularTF",
-		"body":[
-			"\\IfExerciseGoalSingularTF{${1:goal}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseGoalSingularT{}{}":{
-		"prefix":"IfExerciseGoalSingularT",
-		"body":[
-			"\\IfExerciseGoalSingularT{${1:goal}}{${2:true}}"
-		]
-	},
-
-
-	"IfExerciseGoalSingularF{}{}":{
-		"prefix":"IfExerciseGoalSingularF",
-		"body":[
-			"\\IfExerciseGoalSingularF{${1:goal}}{${2:false}}"
-		]
-	},
-
-
-	"IfExerciseTypeGoalsSumTF{}{}{}{}{}":{
-		"prefix":"IfExerciseTypeGoalsSumTF",
-		"body":[
-			"\\IfExerciseTypeGoalsSumTF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}{${5:false}}"
-		]
-	},
-
-
-	"IfExerciseTypeGoalsSumT{}{}{}{}":{
-		"prefix":"IfExerciseTypeGoalsSumT",
-		"body":[
-			"\\IfExerciseTypeGoalsSumT{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}"
-		]
-	},
-
-
-	"IfExerciseTypeGoalsSumF{}{}{}{}":{
-		"prefix":"IfExerciseTypeGoalsSumF",
-		"body":[
-			"\\IfExerciseTypeGoalsSumF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:false}}"
-		]
-	},
-
-
-	"IfExerciseGoalsSumTF{}{}{}{}{}":{
-		"prefix":"IfExerciseGoalsSumTF",
-		"body":[
-			"\\IfExerciseGoalsSumTF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}{${5:false}}"
-		]
-	},
-
-
-	"IfExerciseGoalsSumT{}{}{}{}":{
-		"prefix":"IfExerciseGoalsSumT",
-		"body":[
-			"\\IfExerciseGoalsSumT{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}"
-		]
-	},
-
-
-	"IfExerciseGoalsSumF{}{}{}{}":{
-		"prefix":"IfExerciseGoalsSumF",
-		"body":[
-			"\\IfExerciseGoalsSumF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:false}}"
-		]
-	},
-
-
-	"TotalExerciseTypeGoal{}{}{}{}":{
-		"prefix":"TotalExerciseTypeGoal",
-		"body":[
-			"\\TotalExerciseTypeGoal{${1:goal}}{${2:type}}{${3:singular}}{${4:plural}}"
-		]
-	},
-
-
-	"TotalExerciseGoal{}{}{}":{
-		"prefix":"TotalExerciseGoal",
-		"body":[
-			"\\TotalExerciseGoal{${1:goal}}{${2:singular}}{${3:plural}}"
-		]
-	},
-
-
-	"IfExercisePropertyExistTF{}{}{}":{
-		"prefix":"IfExercisePropertyExistTF",
-		"body":[
-			"\\IfExercisePropertyExistTF{${1:property}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExercisePropertyExistT{}{}":{
-		"prefix":"IfExercisePropertyExistT",
-		"body":[
-			"\\IfExercisePropertyExistT{${1:property}}{${2:true}}"
-		]
-	},
-
-
-	"IfExercisePropertyExistF{}{}":{
-		"prefix":"IfExercisePropertyExistF",
-		"body":[
-			"\\IfExercisePropertyExistF{${1:property}}{${2:false}}"
-		]
-	},
-
-
-	"IfExercisePropertySetTF{}{}{}":{
-		"prefix":"IfExercisePropertySetTF",
-		"body":[
-			"\\IfExercisePropertySetTF{${1:property}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExercisePropertySetT{}{}":{
-		"prefix":"IfExercisePropertySetT",
-		"body":[
-			"\\IfExercisePropertySetT{${1:property}}{${2:true}}"
-		]
-	},
-
-
-	"IfExercisePropertySetF{}{}":{
-		"prefix":"IfExercisePropertySetF",
-		"body":[
-			"\\IfExercisePropertySetF{${1:property}}{${2:false}}"
-		]
-	},
-
-
-	"GetExerciseProperty{}":{
-		"prefix":"GetExerciseProperty",
-		"body":[
-			"\\GetExerciseProperty{${1:property}}"
-		]
-	},
-
-
-	"GetExercisePropertyTF{}{}{}":{
-		"prefix":"GetExercisePropertyTF",
-		"body":[
-			"\\GetExercisePropertyTF{${1:property}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"GetExercisePropertyT{}{}":{
-		"prefix":"GetExercisePropertyT",
-		"body":[
-			"\\GetExercisePropertyT{${1:property}}{${2:true}}"
-		]
-	},
-
-
-	"GetExercisePropertyF{}{}":{
-		"prefix":"GetExercisePropertyF",
-		"body":[
-			"\\GetExercisePropertyF{${1:property}}{${2:false}}"
-		]
-	},
-
-
-	"GetExerciseBody{}":{
-		"prefix":"GetExerciseBody",
-		"body":[
-			"\\GetExerciseBody{${1:exercise|solution}}"
-		]
-	},
-
-
-	"GetExerciseIdForProperty{}{}":{
-		"prefix":"GetExerciseIdForProperty",
-		"body":[
-			"\\GetExerciseIdForProperty{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"GetExerciseTypeForProperty{}{}":{
-		"prefix":"GetExerciseTypeForProperty",
-		"body":[
-			"\\GetExerciseTypeForProperty{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"SetExerciseProperty{}{}":{
-		"prefix":"SetExerciseProperty",
-		"body":[
-			"\\SetExerciseProperty{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"SetExpandedExerciseProperty{}{}":{
-		"prefix":"SetExpandedExerciseProperty",
-		"body":[
-			"\\SetExpandedExerciseProperty{${1:property}}{${2:value}}"
-		]
-	},
-
-
-	"ExerciseSetProperty{}{}{}{}":{
-		"prefix":"ExerciseSetProperty",
-		"body":[
-			"\\ExerciseSetProperty{${1:type}}{${2:id}}{${3:property}}{${4:value}}"
-		]
-	},
-
-
-	"ExerciseSetExpandedProperty{}{}{}{}":{
-		"prefix":"ExerciseSetExpandedProperty",
-		"body":[
-			"\\ExerciseSetExpandedProperty{${1:type}}{${2:id}}{${3:property}}{${4:value}}"
-		]
-	},
-
-
-	"IfExerciseBooleanPropertyTF{}{}{}":{
-		"prefix":"IfExerciseBooleanPropertyTF",
-		"body":[
-			"\\IfExerciseBooleanPropertyTF{${1:property}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseBooleanPropertyT{}{}":{
-		"prefix":"IfExerciseBooleanPropertyT",
-		"body":[
-			"\\IfExerciseBooleanPropertyT{${1:property}}{${2:true}}"
-		]
-	},
-
-
-	"IfExerciseBooleanPropertyF{}{}":{
-		"prefix":"IfExerciseBooleanPropertyF",
-		"body":[
-			"\\IfExerciseBooleanPropertyF{${1:property}}{${2:false}}"
-		]
-	},
-
-
-	"GetExerciseAliasProperty{}":{
-		"prefix":"GetExerciseAliasProperty",
-		"body":[
-			"\\GetExerciseAliasProperty{${1:property}}"
-		]
-	},
-
-
-	"SaveExerciseProperty{}{}":{
-		"prefix":"SaveExerciseProperty",
-		"body":[
-			"\\SaveExerciseProperty{${1:property}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"GlobalSaveExerciseProperty{}{}":{
-		"prefix":"GlobalSaveExerciseProperty",
-		"body":[
-			"\\GlobalSaveExerciseProperty{${1:property}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"ExercisePropertyIfSetTF{}{}{}{}{}":{
-		"prefix":"ExercisePropertyIfSetTF",
-		"body":[
-			"\\ExercisePropertyIfSetTF{${1:type}}{${2:id}}{${3:property}}{${4:true}}{${5:false}}"
-		]
-	},
-
-
-	"ExercisePropertyIfSetT{}{}{}{}":{
-		"prefix":"ExercisePropertyIfSetT",
-		"body":[
-			"\\ExercisePropertyIfSetT{${1:type}}{${2:id}}{${3:property}}{${4:true}}"
-		]
-	},
-
-
-	"ExercisePropertyIfSetF{}{}{}{}":{
-		"prefix":"ExercisePropertyIfSetF",
-		"body":[
-			"\\ExercisePropertyIfSetF{${1:type}}{${2:id}}{${3:property}}{${4:false}}"
-		]
-	},
-
-
-	"ExercisePropertyGet{}{}{}":{
-		"prefix":"ExercisePropertyGet",
-		"body":[
-			"\\ExercisePropertyGet{${1:type}}{${2:id}}{${3:property}}"
-		]
-	},
-
-
-	"ExercisePropertyGetAlias{}{}{}":{
-		"prefix":"ExercisePropertyGetAlias",
-		"body":[
-			"\\ExercisePropertyGetAlias{${1:type}}{${2:id}}{${3:property}}"
-		]
-	},
-
-
-	"ExercisePropertySave{}{}{}{}":{
-		"prefix":"ExercisePropertySave",
-		"body":[
-			"\\ExercisePropertySave{${1:type}}{${2:id}}{${3:property}}{${4:macro%cmd}}"
-		]
-	},
-
-
-	"ExercisePropertyGlobalSave{}{}{}{}":{
-		"prefix":"ExercisePropertyGlobalSave",
-		"body":[
-			"\\ExercisePropertyGlobalSave{${1:type}}{${2:id}}{${3:property}}{${4:macro%cmd}}"
-		]
-	},
-
-
-	"GetExerciseParameter{}":{
-		"prefix":"GetExerciseParameter",
-		"body":[
-			"\\GetExerciseParameter{${1:parameter}}"
-		]
-	},
-
-
-	"GetExerciseParameterTF{}{}{}":{
-		"prefix":"GetExerciseParameterTF",
-		"body":[
-			"\\GetExerciseParameterTF{${1:parameter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"GetExerciseParameterT{}{}":{
-		"prefix":"GetExerciseParameterT",
-		"body":[
-			"\\GetExerciseParameterT{${1:parameter}}{${2:true}}"
-		]
-	},
-
-
-	"GetExerciseParameterF{}{}":{
-		"prefix":"GetExerciseParameterF",
-		"body":[
-			"\\GetExerciseParameterF{${1:parameter}}{${2:false}}"
-		]
-	},
-
-
-	"GetExerciseName":{
-		"prefix":"GetExerciseName",
-		"body":[
-			"\\GetExerciseName"
-		]
-	},
-
-
-	"GetExerciseHeadingF{}":{
-		"prefix":"GetExerciseHeadingF",
-		"body":[
-			"\\GetExerciseHeadingF{${1:false}}"
-		]
-	},
-
-
-	"ExerciseParameterGet{}{}":{
-		"prefix":"ExerciseParameterGet",
-		"body":[
-			"\\ExerciseParameterGet{${1:type}}{${2:parameter}}"
-		]
-	},
-
-
-	"IfExerciseParameterSetTF{}{}{}":{
-		"prefix":"IfExerciseParameterSetTF",
-		"body":[
-			"\\IfExerciseParameterSetTF{${1:parameter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseParameterSetT{}{}":{
-		"prefix":"IfExerciseParameterSetT",
-		"body":[
-			"\\IfExerciseParameterSetT{${1:parameter}}{${2:true}}"
-		]
-	},
-
-
-	"IfExerciseParameterSetF{}{}":{
-		"prefix":"IfExerciseParameterSetF",
-		"body":[
-			"\\IfExerciseParameterSetF{${1:parameter}}{${2:false}}"
-		]
-	},
-
-
-	"ExerciseParameterIfSetTF{}{}{}{}":{
-		"prefix":"ExerciseParameterIfSetTF",
-		"body":[
-			"\\ExerciseParameterIfSetTF{${1:type}}{${2:parameter}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ExerciseParameterIfSetT{}{}{}":{
-		"prefix":"ExerciseParameterIfSetT",
-		"body":[
-			"\\ExerciseParameterIfSetT{${1:type}}{${2:parameter}}{${3:true}}"
-		]
-	},
-
-
-	"ExerciseParameterIfSetF{}{}{}":{
-		"prefix":"ExerciseParameterIfSetF",
-		"body":[
-			"\\ExerciseParameterIfSetF{${1:type}}{${2:parameter}}{${3:false}}"
-		]
-	},
-
-
-	"ForEachExerciseTag{}{}":{
-		"prefix":"ForEachExerciseTag",
-		"body":[
-			"\\ForEachExerciseTag{${1:type}}{${2:code}}"
-		]
-	},
-
-
-	"ListExerciseTags{}{}":{
-		"prefix":"ListExerciseTags",
-		"body":[
-			"\\ListExerciseTags{${1:type}}{${2:between}}"
-		]
-	},
-
-
-	"UseExerciseTags{}{}{}{}":{
-		"prefix":"UseExerciseTags",
-		"body":[
-			"\\UseExerciseTags{${1:type}}{${2:between two}}{${3:between}}{${4:between last two}}"
-		]
-	},
-
-
-	"IfExerciseTagSetTF{}{}{}":{
-		"prefix":"IfExerciseTagSetTF",
-		"body":[
-			"\\IfExerciseTagSetTF{${1:value}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseTagSetT{}{}":{
-		"prefix":"IfExerciseTagSetT",
-		"body":[
-			"\\IfExerciseTagSetT{${1:value}}{${2:true}}"
-		]
-	},
-
-
-	"IfExerciseTagSetF{}{}":{
-		"prefix":"IfExerciseTagSetF",
-		"body":[
-			"\\IfExerciseTagSetF{${1:value}}{${2:false}}"
-		]
-	},
-
-
-	"IfExerciseTopicSetTF{}{}{}":{
-		"prefix":"IfExerciseTopicSetTF",
-		"body":[
-			"\\IfExerciseTopicSetTF{${1:value}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfExerciseTopicSetT{}{}":{
-		"prefix":"IfExerciseTopicSetT",
-		"body":[
-			"\\IfExerciseTopicSetT{${1:value}}{${2:true}}"
-		]
-	},
-
-
-	"IfExerciseTopicSetF{}{}":{
-		"prefix":"IfExerciseTopicSetF",
-		"body":[
-			"\\IfExerciseTopicSetF{${1:value}}{${2:false}}"
-		]
-	},
-
-
-	"UseExerciseTemplate{}{}":{
-		"prefix":"UseExerciseTemplate",
-		"body":[
-			"\\UseExerciseTemplate{${1:type}}{${2:name}}"
-		]
-	},
-
-
-	"ExerciseType":{
-		"prefix":"ExerciseType",
-		"body":[
-			"\\ExerciseType"
-		]
-	},
-
-
-	"ExerciseID":{
-		"prefix":"ExerciseID",
-		"body":[
-			"\\ExerciseID"
-		]
-	},
-
-
-	"ExerciseText":{
-		"prefix":"ExerciseText",
-		"body":[
-			"\\ExerciseText"
-		]
-	},
-
-
-	"ExerciseCollection":{
-		"prefix":"ExerciseCollection",
-		"body":[
-			"\\ExerciseCollection"
-		]
-	},
-
-
-	"numberofusedexercises":{
-		"prefix":"numberofusedexercises",
-		"body":[
-			"\\numberofusedexercises"
-		]
-	},
-
-
-	"ExerciseTableType{}":{
-		"prefix":"ExerciseTableType",
-		"body":[
-			"\\ExerciseTableType{${1:code}}"
-		]
-	},
-
-
-	"IfInsideSolutionTF{}{}":{
-		"prefix":"IfInsideSolutionTF",
-		"body":[
-			"\\IfInsideSolutionTF{${1:true}}{${2:false}}"
-		]
-	},
-
-
-	"IfInsideSolutionT{}":{
-		"prefix":"IfInsideSolutionT",
-		"body":[
-			"\\IfInsideSolutionT{${1:true}}"
-		]
-	},
-
-
-	"IfInsideSolutionF{}":{
-		"prefix":"IfInsideSolutionF",
-		"body":[
-			"\\IfInsideSolutionF{${1:false}}"
-		]
-	},
-
-
-	"IfSolutionPrintTF{}{}":{
-		"prefix":"IfSolutionPrintTF",
-		"body":[
-			"\\IfSolutionPrintTF{${1:true}}{${2:false}}"
-		]
-	},
-
-
-	"IfSolutionPrintT{}":{
-		"prefix":"IfSolutionPrintT",
-		"body":[
-			"\\IfSolutionPrintT{${1:true}}"
-		]
-	},
-
-
-	"IfSolutionPrintF{}":{
-		"prefix":"IfSolutionPrintF",
-		"body":[
-			"\\IfSolutionPrintF{${1:false}}"
-		]
-	},
-
-
-	"IfExistSolutionTF{}{}":{
-		"prefix":"IfExistSolutionTF",
-		"body":[
-			"\\IfExistSolutionTF{${1:true}}{${2:false}}"
-		]
-	},
-
-
-	"IfExistSolutionT{}":{
-		"prefix":"IfExistSolutionT",
-		"body":[
-			"\\IfExistSolutionT{${1:true}}"
-		]
-	},
-
-
-	"IfExistSolutionF{}":{
-		"prefix":"IfExistSolutionF",
-		"body":[
-			"\\IfExistSolutionF{${1:false}}"
-		]
-	},
-
-
-	"ForEachPrintedExerciseByType{}":{
-		"prefix":"ForEachPrintedExerciseByType",
-		"body":[
-			"\\ForEachPrintedExerciseByType{${1:code}}"
-		]
-	},
-
-
-	"ForEachUsedExerciseByType{}":{
-		"prefix":"ForEachUsedExerciseByType",
-		"body":[
-			"\\ForEachUsedExerciseByType{${1:code}}"
-		]
-	},
-
-
-	"ForEachUsedExerciseByOrder{}":{
-		"prefix":"ForEachUsedExerciseByOrder",
-		"body":[
-			"\\ForEachUsedExerciseByOrder{${1:code}}"
-		]
-	},
-
-
-	"ForEachPrintedExerciseByID{}":{
-		"prefix":"ForEachPrintedExerciseByID",
-		"body":[
-			"\\ForEachPrintedExerciseByID{${1:code}}"
-		]
-	},
-
-
-	"ForEachUsedExerciseByID{}":{
-		"prefix":"ForEachUsedExerciseByID",
-		"body":[
-			"\\ForEachUsedExerciseByID{${1:code}}"
-		]
-	},
-
-
-	"XSIMprint{}{}{}":{
-		"prefix":"XSIMprint",
-		"body":[
-			"\\XSIMprint{${1:exercise|solution}}{${2:type}}{${3:id}}"
-		]
-	},
-
-
-	"XSIMxprint{}{}{}":{
-		"prefix":"XSIMxprint",
-		"body":[
-			"\\XSIMxprint{${1:exercise|solution}}{${2:type}}{${3:id}}"
-		]
-	},
-
-
-	"XSIMtranslate{}":{
-		"prefix":"XSIMtranslate",
-		"body":[
-			"\\XSIMtranslate{${1:keyword}}"
-		]
-	},
-
-
-	"XSIMexpandcode{}":{
-		"prefix":"XSIMexpandcode",
-		"body":[
-			"\\XSIMexpandcode{${1:code}}"
-		]
-	},
-
-
-	"XSIMifchapterTF{}{}":{
-		"prefix":"XSIMifchapterTF",
-		"body":[
-			"\\XSIMifchapterTF{${1:true}}{${2:false}}"
-		]
-	},
-
-
-	"XSIMifchapterT{}":{
-		"prefix":"XSIMifchapterT",
-		"body":[
-			"\\XSIMifchapterT{${1:true}}"
-		]
-	},
-
-
-	"XSIMifchapterF{}":{
-		"prefix":"XSIMifchapterF",
-		"body":[
-			"\\XSIMifchapterF{${1:false}}"
-		]
-	},
-
-
-	"XSIMmixedcase{}":{
-		"prefix":"XSIMmixedcase",
-		"body":[
-			"\\XSIMmixedcase{${1:code}}"
-		]
-	},
-
-
-	"XSIMifeqTF{}{}{}{}":{
-		"prefix":"XSIMifeqTF",
-		"body":[
-			"\\XSIMifeqTF{${1:code1}}{${2:code2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"XSIMifeqT{}{}{}":{
-		"prefix":"XSIMifeqT",
-		"body":[
-			"\\XSIMifeqT{${1:code1}}{${2:code2}}{${3:true}}"
-		]
-	},
-
-
-	"XSIMifeqF{}{}{}":{
-		"prefix":"XSIMifeqF",
-		"body":[
-			"\\XSIMifeqF{${1:code1}}{${2:code2}}{${3:false}}"
-		]
-	},
-
-
-	"XSIMifblankTF{}{}{}":{
-		"prefix":"XSIMifblankTF",
-		"body":[
-			"\\XSIMifblankTF{${1:code}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"XSIMifblankT{}{}":{
-		"prefix":"XSIMifblankT",
-		"body":[
-			"\\XSIMifblankT{${1:code}}{${2:true}}"
-		]
-	},
-
-
-	"XSIMifblankF{}{}":{
-		"prefix":"XSIMifblankF",
-		"body":[
-			"\\XSIMifblankF{${1:code}}{${2:false}}"
-		]
-	},
-
-
-	"XSIMatbegindocument{}":{
-		"prefix":"XSIMatbegindocument",
-		"body":[
-			"\\XSIMatbegindocument{${1:code}}"
-		]
-	},
-
-
-	"XSIMatenddocument{}":{
-		"prefix":"XSIMatenddocument",
-		"body":[
-			"\\XSIMatenddocument{${1:code}}"
-		]
-	},
-
-
-	"DeclareExerciseEnvironmentTemplate{}{}{}":{
-		"prefix":"DeclareExerciseEnvironmentTemplate",
-		"body":[
-			"\\DeclareExerciseEnvironmentTemplate{${1:name}}{${2:begin code}}{${3:end code}}"
-		]
-	},
-
-
-	"DeclareExerciseHeadingTemplate{}{}":{
-		"prefix":"DeclareExerciseHeadingTemplate",
-		"body":[
-			"\\DeclareExerciseHeadingTemplate{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"DeclareExerciseTableTemplate{}{}":{
-		"prefix":"DeclareExerciseTableTemplate",
-		"body":[
-			"\\DeclareExerciseTableTemplate{${1:name}}{${2:code}}"
-		]
-	},
-
-
-	"xsimstyle{}":{
-		"prefix":"xsimstyle",
-		"body":[
-			"\\xsimstyle{${1:style name}}"
-		]
-	},
-
-
-	"loadxsimstyle{}":{
-		"prefix":"loadxsimstyle",
-		"body":[
-			"\\loadxsimstyle{${1:list of style names}}"
-		]
-	},
-
-
-	"DeclareExerciseTranslation{}{}{}":{
-		"prefix":"DeclareExerciseTranslation",
-		"body":[
-			"\\DeclareExerciseTranslation{${1:language}}{${2:keyword}}{${3:translation}}"
-		]
-	},
-
-
-	"DeclareExerciseTranslations{}{}":{
-		"prefix":"DeclareExerciseTranslations",
-		"body":[
-			"\\DeclareExerciseTranslations{${1:keyword}}{${2:translations}}"
-		]
-	},
-
-
-	"XSIMtranslate{}":{
-		"prefix":"XSIMtranslate",
-		"body":[
-			"\\XSIMtranslate{${1:keyword}}"
-		]
-	},
-
-
-	"ForEachExerciseTranslation{}":{
-		"prefix":"ForEachExerciseTranslation",
-		"body":[
-			"\\ForEachExerciseTranslation{${1:code}}"
-		]
-	},
-
-
-	"blank{}":{
-		"prefix":"blank",
-		"body":[
-			"\\blank{${1:text}}"
-		]
-	},
-
-
-	"ExerciseTableCode":{
-		"prefix":"ExerciseTableCode",
-		"body":[
-			"\\ExerciseTableCode"
-		]
-	},
-
-
-	"numberofcolumns":{
-		"prefix":"numberofcolumns",
-		"body":[
-			"\\numberofcolumns"
-		]
-	},
-
-
-	"theexercise":{
-		"prefix":"theexercise",
-		"body":[
-			"\\theexercise"
-		]
-	},
-
-
-	"ParameterValue":{
-		"prefix":"ParameterValue",
-		"body":[
-			"\\ParameterValue"
-		]
-	},
-
-
-	"PropertyValue":{
-		"prefix":"PropertyValue",
-		"body":[
-			"\\PropertyValue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1293,7 +41,35 @@
 		"prefix":"*DeclareExerciseParameter",
 		"body":[
 			"\\DeclareExerciseParameter*{${1:parameter%specialDef}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SetExerciseParameter{}{}{}":{
+		"prefix":"SetExerciseParameter",
+		"body":[
+			"\\SetExerciseParameter{${1:type}}{${2:parameter}}{${3:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetExerciseParameters{}{}":{
+		"prefix":"SetExerciseParameters",
+		"body":[
+			"\\SetExerciseParameters{${1:type}}{${2:parameters}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseProperty{}":{
+		"prefix":"DeclareExerciseProperty",
+		"body":[
+			"\\DeclareExerciseProperty{${1:property%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1301,7 +77,143 @@
 		"prefix":"*DeclareExerciseProperty",
 		"body":[
 			"\\DeclareExerciseProperty*{${1:property%specialDef}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeclareExercisePropertyAlias{}{}":{
+		"prefix":"DeclareExercisePropertyAlias",
+		"body":[
+			"\\DeclareExercisePropertyAlias{${1:property1%specialDef}}{${2:property2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseGoal{}":{
+		"prefix":"DeclareExerciseGoal",
+		"body":[
+			"\\DeclareExerciseGoal{${1:goal%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseTypeGoal{}{}{}{}":{
+		"prefix":"TotalExerciseTypeGoal",
+		"body":[
+			"\\TotalExerciseTypeGoal{${1:type}}{${2:goal}}{${3:singular}}{${4:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseTypeGoals{}{}{}{}":{
+		"prefix":"TotalExerciseTypeGoals",
+		"body":[
+			"\\TotalExerciseTypeGoals{${1:type}}{${2:list of goals}}{${3:singular}}{${4:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseGoal{}{}{}":{
+		"prefix":"TotalExerciseGoal",
+		"body":[
+			"\\TotalExerciseGoal{${1:goal}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseGoals{}{}{}":{
+		"prefix":"TotalExerciseGoals",
+		"body":[
+			"\\TotalExerciseGoals{${1:list of goals}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoExerciseTypeGoal{}{}{}":{
+		"prefix":"AddtoExerciseTypeGoal",
+		"body":[
+			"\\AddtoExerciseTypeGoal{${1:type}}{${2:goal}}{${3:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoExerciseTypeGoalPrint{}{}{}{}{}":{
+		"prefix":"AddtoExerciseTypeGoalPrint",
+		"body":[
+			"\\AddtoExerciseTypeGoalPrint{${1:type}}{${2:goal}}{${3:value}}{${4:singular}}{${5:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoExerciseGoal{}{}":{
+		"prefix":"AddtoExerciseGoal",
+		"body":[
+			"\\AddtoExerciseGoal{${1:goal}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddtoExerciseGoalPrint{}{}{}{}":{
+		"prefix":"AddtoExerciseGoalPrint",
+		"body":[
+			"\\AddtoExerciseGoalPrint{${1:goal}}{${2:value}}{${3:singular}}{${4:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseGoalValuePrint{}{}{}":{
+		"prefix":"ExerciseGoalValuePrint",
+		"body":[
+			"\\ExerciseGoalValuePrint{${1:value}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printgoal{}":{
+		"prefix":"printgoal",
+		"body":[
+			"\\printgoal{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printpoints{}":{
+		"prefix":"printpoints",
+		"body":[
+			"\\printpoints{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printtotalpoints":{
+		"prefix":"printtotalpoints",
+		"body":[
+			"\\printtotalpoints"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addpoints{}":{
+		"prefix":"addpoints",
+		"body":[
+			"\\addpoints{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1309,7 +221,44 @@
 		"prefix":"*addpoints",
 		"body":[
 			"\\addpoints*{${1:value}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"points{}":{
+		"prefix":"points",
+		"body":[
+			"\\points{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printbonus{}":{
+		"prefix":"printbonus",
+		"body":[
+			"\\printbonus{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printtotalbonus":{
+		"prefix":"printtotalbonus",
+		"body":[
+			"\\printtotalbonus"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addbonus{}":{
+		"prefix":"addbonus",
+		"body":[
+			"\\addbonus{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1317,79 +266,53 @@
 		"prefix":"*addbonus",
 		"body":[
 			"\\addbonus*{${1:value}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"printsolutionstype*{}":{
-		"prefix":"*printsolutionstype",
+	"DeclareExerciseTagging{}":{
+		"prefix":"DeclareExerciseTagging",
 		"body":[
-			"\\printsolutionstype*{${1:type}}"
-		]
+			"\\DeclareExerciseTagging{${1:tag%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"printsolutionstype*[]{}":{
-		"prefix":"*printsolutionstype",
+	"ProvideExerciseTagging{}":{
+		"prefix":"ProvideExerciseTagging",
 		"body":[
-			"\\printsolutionstype*[${2:options%keyvals}]{${1:type}}"
-		]
+			"\\ProvideExerciseTagging{${1:tag%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"printsolutions*":{
-		"prefix":"*printsolutions",
+	"printexercise{}{}":{
+		"prefix":"printexercise",
 		"body":[
-			"\\printsolutions*"
-		]
+			"\\printexercise{${1:type}}{${2:list of ids}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"printsolutions*[]":{
-		"prefix":"*printsolutions",
+	"xprintexercise{}{}":{
+		"prefix":"xprintexercise",
 		"body":[
-			"\\printsolutions*[${1:options%keyvals}]"
-		]
+			"\\xprintexercise{${1:type}}{${2:list of ids}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"printallsolutions*":{
-		"prefix":"*printallsolutions",
+	"DeclareExerciseCollection{}":{
+		"prefix":"DeclareExerciseCollection",
 		"body":[
-			"\\printallsolutions*"
-		]
-	},
-
-
-	"printallsolutions*[]":{
-		"prefix":"*printallsolutions",
-		"body":[
-			"\\printallsolutions*[${1:options%keyvals}]"
-		]
-	},
-
-
-	"xsimstyle*{}":{
-		"prefix":"*xsimstyle",
-		"body":[
-			"\\xsimstyle*{${1:style name}}"
-		]
-	},
-
-
-	"blank*{}":{
-		"prefix":"*blank",
-		"body":[
-			"\\blank*{${1:text}}"
-		]
-	},
-
-
-	"blank*[]{}":{
-		"prefix":"*blank",
-		"body":[
-			"\\blank*[${2:options%keyvals}]{${1:text}}"
-		]
+			"\\DeclareExerciseCollection{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1397,7 +320,53 @@
 		"prefix":"DeclareExerciseCollection",
 		"body":[
 			"\\DeclareExerciseCollection[${2:tag values}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"activatecollection{}":{
+		"prefix":"activatecollection",
+		"body":[
+			"\\activatecollection{${1:collection name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"deactivatecollection{}":{
+		"prefix":"deactivatecollection",
+		"body":[
+			"\\deactivatecollection{${1:collection name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"collectexercises{}":{
+		"prefix":"collectexercises",
+		"body":[
+			"\\collectexercises{${1:collection name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"collectexercisesstop{}":{
+		"prefix":"collectexercisesstop",
+		"body":[
+			"\\collectexercisesstop{${1:collection name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printcollection{}":{
+		"prefix":"printcollection",
+		"body":[
+			"\\printcollection{${1:collection name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +374,17 @@
 		"prefix":"printcollection",
 		"body":[
 			"\\printcollection[${2:options%keyvals}]{${1:collection name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printrandomexercises{}":{
+		"prefix":"printrandomexercises",
+		"body":[
+			"\\printrandomexercises{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +392,17 @@
 		"prefix":"printrandomexercises",
 		"body":[
 			"\\printrandomexercises[${2:options%keyvals}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printsolutionstype{}":{
+		"prefix":"printsolutionstype",
+		"body":[
+			"\\printsolutionstype{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1421,7 +410,35 @@
 		"prefix":"printsolutionstype",
 		"body":[
 			"\\printsolutionstype[${2:options%keyvals}]{${1:type}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printsolutionstype*{}":{
+		"prefix":"*printsolutionstype",
+		"body":[
+			"\\printsolutionstype*{${1:type}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printsolutionstype*[]{}":{
+		"prefix":"*printsolutionstype",
+		"body":[
+			"\\printsolutionstype*[${2:options%keyvals}]{${1:type}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printsolutions":{
+		"prefix":"printsolutions",
+		"body":[
+			"\\printsolutions"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1429,7 +446,35 @@
 		"prefix":"printsolutions",
 		"body":[
 			"\\printsolutions[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printsolutions*":{
+		"prefix":"*printsolutions",
+		"body":[
+			"\\printsolutions*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printsolutions*[]":{
+		"prefix":"*printsolutions",
+		"body":[
+			"\\printsolutions*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printallsolutions":{
+		"prefix":"printallsolutions",
+		"body":[
+			"\\printallsolutions"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1437,7 +482,35 @@
 		"prefix":"printallsolutions",
 		"body":[
 			"\\printallsolutions[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printallsolutions*":{
+		"prefix":"*printallsolutions",
+		"body":[
+			"\\printallsolutions*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printallsolutions*[]":{
+		"prefix":"*printallsolutions",
+		"body":[
+			"\\printallsolutions*[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printsolution{}{}":{
+		"prefix":"printsolution",
+		"body":[
+			"\\printsolution{${1:type}}{${2:id}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1445,7 +518,26 @@
 		"prefix":"printsolution",
 		"body":[
 			"\\printsolution[${3:options%keyvals}]{${1:type}}{${2:id}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xprintsolution{}{}":{
+		"prefix":"xprintsolution",
+		"body":[
+			"\\xprintsolution{${1:type}}{${2:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gradingtable":{
+		"prefix":"gradingtable",
+		"body":[
+			"\\gradingtable"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1453,7 +545,1034 @@
 		"prefix":"gradingtable",
 		"body":[
 			"\\gradingtable[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IfExerciseGoalTF{}{}{}{}":{
+		"prefix":"IfExerciseGoalTF",
+		"body":[
+			"\\IfExerciseGoalTF{${1:goal}}{${2:relation and value}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalT{}{}{}":{
+		"prefix":"IfExerciseGoalT",
+		"body":[
+			"\\IfExerciseGoalT{${1:goal}}{${2:relation and value}}{${3:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalF{}{}{}":{
+		"prefix":"IfExerciseGoalF",
+		"body":[
+			"\\IfExerciseGoalF{${1:goal}}{${2:relation and value}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalSingularTF{}{}{}":{
+		"prefix":"IfExerciseGoalSingularTF",
+		"body":[
+			"\\IfExerciseGoalSingularTF{${1:goal}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalSingularT{}{}":{
+		"prefix":"IfExerciseGoalSingularT",
+		"body":[
+			"\\IfExerciseGoalSingularT{${1:goal}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalSingularF{}{}":{
+		"prefix":"IfExerciseGoalSingularF",
+		"body":[
+			"\\IfExerciseGoalSingularF{${1:goal}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTypeGoalsSumTF{}{}{}{}{}":{
+		"prefix":"IfExerciseTypeGoalsSumTF",
+		"body":[
+			"\\IfExerciseTypeGoalsSumTF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}{${5:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTypeGoalsSumT{}{}{}{}":{
+		"prefix":"IfExerciseTypeGoalsSumT",
+		"body":[
+			"\\IfExerciseTypeGoalsSumT{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTypeGoalsSumF{}{}{}{}":{
+		"prefix":"IfExerciseTypeGoalsSumF",
+		"body":[
+			"\\IfExerciseTypeGoalsSumF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalsSumTF{}{}{}{}{}":{
+		"prefix":"IfExerciseGoalsSumTF",
+		"body":[
+			"\\IfExerciseGoalsSumTF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}{${5:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalsSumT{}{}{}{}":{
+		"prefix":"IfExerciseGoalsSumT",
+		"body":[
+			"\\IfExerciseGoalsSumT{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseGoalsSumF{}{}{}{}":{
+		"prefix":"IfExerciseGoalsSumF",
+		"body":[
+			"\\IfExerciseGoalsSumF{${1:type}}{${2:list of goals}}{${3:relation and value}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseTypeGoal{}{}{}{}":{
+		"prefix":"TotalExerciseTypeGoal",
+		"body":[
+			"\\TotalExerciseTypeGoal{${1:goal}}{${2:type}}{${3:singular}}{${4:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalExerciseGoal{}{}{}":{
+		"prefix":"TotalExerciseGoal",
+		"body":[
+			"\\TotalExerciseGoal{${1:goal}}{${2:singular}}{${3:plural}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertyExistTF{}{}{}":{
+		"prefix":"IfExercisePropertyExistTF",
+		"body":[
+			"\\IfExercisePropertyExistTF{${1:property}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertyExistT{}{}":{
+		"prefix":"IfExercisePropertyExistT",
+		"body":[
+			"\\IfExercisePropertyExistT{${1:property}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertyExistF{}{}":{
+		"prefix":"IfExercisePropertyExistF",
+		"body":[
+			"\\IfExercisePropertyExistF{${1:property}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertySetTF{}{}{}":{
+		"prefix":"IfExercisePropertySetTF",
+		"body":[
+			"\\IfExercisePropertySetTF{${1:property}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertySetT{}{}":{
+		"prefix":"IfExercisePropertySetT",
+		"body":[
+			"\\IfExercisePropertySetT{${1:property}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExercisePropertySetF{}{}":{
+		"prefix":"IfExercisePropertySetF",
+		"body":[
+			"\\IfExercisePropertySetF{${1:property}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseProperty{}":{
+		"prefix":"GetExerciseProperty",
+		"body":[
+			"\\GetExerciseProperty{${1:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExercisePropertyTF{}{}{}":{
+		"prefix":"GetExercisePropertyTF",
+		"body":[
+			"\\GetExercisePropertyTF{${1:property}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExercisePropertyT{}{}":{
+		"prefix":"GetExercisePropertyT",
+		"body":[
+			"\\GetExercisePropertyT{${1:property}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExercisePropertyF{}{}":{
+		"prefix":"GetExercisePropertyF",
+		"body":[
+			"\\GetExercisePropertyF{${1:property}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseBody{}":{
+		"prefix":"GetExerciseBody",
+		"body":[
+			"\\GetExerciseBody{${1:exercise|solution}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseIdForProperty{}{}":{
+		"prefix":"GetExerciseIdForProperty",
+		"body":[
+			"\\GetExerciseIdForProperty{${1:property}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseTypeForProperty{}{}":{
+		"prefix":"GetExerciseTypeForProperty",
+		"body":[
+			"\\GetExerciseTypeForProperty{${1:property}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetExerciseProperty{}{}":{
+		"prefix":"SetExerciseProperty",
+		"body":[
+			"\\SetExerciseProperty{${1:property}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetExpandedExerciseProperty{}{}":{
+		"prefix":"SetExpandedExerciseProperty",
+		"body":[
+			"\\SetExpandedExerciseProperty{${1:property}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseSetProperty{}{}{}{}":{
+		"prefix":"ExerciseSetProperty",
+		"body":[
+			"\\ExerciseSetProperty{${1:type}}{${2:id}}{${3:property}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseSetExpandedProperty{}{}{}{}":{
+		"prefix":"ExerciseSetExpandedProperty",
+		"body":[
+			"\\ExerciseSetExpandedProperty{${1:type}}{${2:id}}{${3:property}}{${4:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseBooleanPropertyTF{}{}{}":{
+		"prefix":"IfExerciseBooleanPropertyTF",
+		"body":[
+			"\\IfExerciseBooleanPropertyTF{${1:property}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseBooleanPropertyT{}{}":{
+		"prefix":"IfExerciseBooleanPropertyT",
+		"body":[
+			"\\IfExerciseBooleanPropertyT{${1:property}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseBooleanPropertyF{}{}":{
+		"prefix":"IfExerciseBooleanPropertyF",
+		"body":[
+			"\\IfExerciseBooleanPropertyF{${1:property}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseAliasProperty{}":{
+		"prefix":"GetExerciseAliasProperty",
+		"body":[
+			"\\GetExerciseAliasProperty{${1:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SaveExerciseProperty{}{}":{
+		"prefix":"SaveExerciseProperty",
+		"body":[
+			"\\SaveExerciseProperty{${1:property}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlobalSaveExerciseProperty{}{}":{
+		"prefix":"GlobalSaveExerciseProperty",
+		"body":[
+			"\\GlobalSaveExerciseProperty{${1:property}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyIfSetTF{}{}{}{}{}":{
+		"prefix":"ExercisePropertyIfSetTF",
+		"body":[
+			"\\ExercisePropertyIfSetTF{${1:type}}{${2:id}}{${3:property}}{${4:true}}{${5:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyIfSetT{}{}{}{}":{
+		"prefix":"ExercisePropertyIfSetT",
+		"body":[
+			"\\ExercisePropertyIfSetT{${1:type}}{${2:id}}{${3:property}}{${4:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyIfSetF{}{}{}{}":{
+		"prefix":"ExercisePropertyIfSetF",
+		"body":[
+			"\\ExercisePropertyIfSetF{${1:type}}{${2:id}}{${3:property}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyGet{}{}{}":{
+		"prefix":"ExercisePropertyGet",
+		"body":[
+			"\\ExercisePropertyGet{${1:type}}{${2:id}}{${3:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyGetAlias{}{}{}":{
+		"prefix":"ExercisePropertyGetAlias",
+		"body":[
+			"\\ExercisePropertyGetAlias{${1:type}}{${2:id}}{${3:property}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertySave{}{}{}{}":{
+		"prefix":"ExercisePropertySave",
+		"body":[
+			"\\ExercisePropertySave{${1:type}}{${2:id}}{${3:property}}{${4:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExercisePropertyGlobalSave{}{}{}{}":{
+		"prefix":"ExercisePropertyGlobalSave",
+		"body":[
+			"\\ExercisePropertyGlobalSave{${1:type}}{${2:id}}{${3:property}}{${4:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseParameter{}":{
+		"prefix":"GetExerciseParameter",
+		"body":[
+			"\\GetExerciseParameter{${1:parameter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseParameterTF{}{}{}":{
+		"prefix":"GetExerciseParameterTF",
+		"body":[
+			"\\GetExerciseParameterTF{${1:parameter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseParameterT{}{}":{
+		"prefix":"GetExerciseParameterT",
+		"body":[
+			"\\GetExerciseParameterT{${1:parameter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseParameterF{}{}":{
+		"prefix":"GetExerciseParameterF",
+		"body":[
+			"\\GetExerciseParameterF{${1:parameter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseName":{
+		"prefix":"GetExerciseName",
+		"body":[
+			"\\GetExerciseName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetExerciseHeadingF{}":{
+		"prefix":"GetExerciseHeadingF",
+		"body":[
+			"\\GetExerciseHeadingF{${1:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseParameterGet{}{}":{
+		"prefix":"ExerciseParameterGet",
+		"body":[
+			"\\ExerciseParameterGet{${1:type}}{${2:parameter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseParameterSetTF{}{}{}":{
+		"prefix":"IfExerciseParameterSetTF",
+		"body":[
+			"\\IfExerciseParameterSetTF{${1:parameter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseParameterSetT{}{}":{
+		"prefix":"IfExerciseParameterSetT",
+		"body":[
+			"\\IfExerciseParameterSetT{${1:parameter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseParameterSetF{}{}":{
+		"prefix":"IfExerciseParameterSetF",
+		"body":[
+			"\\IfExerciseParameterSetF{${1:parameter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseParameterIfSetTF{}{}{}{}":{
+		"prefix":"ExerciseParameterIfSetTF",
+		"body":[
+			"\\ExerciseParameterIfSetTF{${1:type}}{${2:parameter}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseParameterIfSetT{}{}{}":{
+		"prefix":"ExerciseParameterIfSetT",
+		"body":[
+			"\\ExerciseParameterIfSetT{${1:type}}{${2:parameter}}{${3:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseParameterIfSetF{}{}{}":{
+		"prefix":"ExerciseParameterIfSetF",
+		"body":[
+			"\\ExerciseParameterIfSetF{${1:type}}{${2:parameter}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachExerciseTag{}{}":{
+		"prefix":"ForEachExerciseTag",
+		"body":[
+			"\\ForEachExerciseTag{${1:type}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ListExerciseTags{}{}":{
+		"prefix":"ListExerciseTags",
+		"body":[
+			"\\ListExerciseTags{${1:type}}{${2:between}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UseExerciseTags{}{}{}{}":{
+		"prefix":"UseExerciseTags",
+		"body":[
+			"\\UseExerciseTags{${1:type}}{${2:between two}}{${3:between}}{${4:between last two}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTagSetTF{}{}{}":{
+		"prefix":"IfExerciseTagSetTF",
+		"body":[
+			"\\IfExerciseTagSetTF{${1:value}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTagSetT{}{}":{
+		"prefix":"IfExerciseTagSetT",
+		"body":[
+			"\\IfExerciseTagSetT{${1:value}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTagSetF{}{}":{
+		"prefix":"IfExerciseTagSetF",
+		"body":[
+			"\\IfExerciseTagSetF{${1:value}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTopicSetTF{}{}{}":{
+		"prefix":"IfExerciseTopicSetTF",
+		"body":[
+			"\\IfExerciseTopicSetTF{${1:value}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTopicSetT{}{}":{
+		"prefix":"IfExerciseTopicSetT",
+		"body":[
+			"\\IfExerciseTopicSetT{${1:value}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExerciseTopicSetF{}{}":{
+		"prefix":"IfExerciseTopicSetF",
+		"body":[
+			"\\IfExerciseTopicSetF{${1:value}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UseExerciseTemplate{}{}":{
+		"prefix":"UseExerciseTemplate",
+		"body":[
+			"\\UseExerciseTemplate{${1:type}}{${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseType":{
+		"prefix":"ExerciseType",
+		"body":[
+			"\\ExerciseType"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseID":{
+		"prefix":"ExerciseID",
+		"body":[
+			"\\ExerciseID"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseText":{
+		"prefix":"ExerciseText",
+		"body":[
+			"\\ExerciseText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseCollection":{
+		"prefix":"ExerciseCollection",
+		"body":[
+			"\\ExerciseCollection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numberofusedexercises":{
+		"prefix":"numberofusedexercises",
+		"body":[
+			"\\numberofusedexercises"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ExerciseTableType{}":{
+		"prefix":"ExerciseTableType",
+		"body":[
+			"\\ExerciseTableType{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInsideSolutionTF{}{}":{
+		"prefix":"IfInsideSolutionTF",
+		"body":[
+			"\\IfInsideSolutionTF{${1:true}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInsideSolutionT{}":{
+		"prefix":"IfInsideSolutionT",
+		"body":[
+			"\\IfInsideSolutionT{${1:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInsideSolutionF{}":{
+		"prefix":"IfInsideSolutionF",
+		"body":[
+			"\\IfInsideSolutionF{${1:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionPrintTF{}{}":{
+		"prefix":"IfSolutionPrintTF",
+		"body":[
+			"\\IfSolutionPrintTF{${1:true}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionPrintT{}":{
+		"prefix":"IfSolutionPrintT",
+		"body":[
+			"\\IfSolutionPrintT{${1:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfSolutionPrintF{}":{
+		"prefix":"IfSolutionPrintF",
+		"body":[
+			"\\IfSolutionPrintF{${1:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExistSolutionTF{}{}":{
+		"prefix":"IfExistSolutionTF",
+		"body":[
+			"\\IfExistSolutionTF{${1:true}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExistSolutionT{}":{
+		"prefix":"IfExistSolutionT",
+		"body":[
+			"\\IfExistSolutionT{${1:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExistSolutionF{}":{
+		"prefix":"IfExistSolutionF",
+		"body":[
+			"\\IfExistSolutionF{${1:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachPrintedExerciseByType{}":{
+		"prefix":"ForEachPrintedExerciseByType",
+		"body":[
+			"\\ForEachPrintedExerciseByType{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachUsedExerciseByType{}":{
+		"prefix":"ForEachUsedExerciseByType",
+		"body":[
+			"\\ForEachUsedExerciseByType{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachUsedExerciseByOrder{}":{
+		"prefix":"ForEachUsedExerciseByOrder",
+		"body":[
+			"\\ForEachUsedExerciseByOrder{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachPrintedExerciseByID{}":{
+		"prefix":"ForEachPrintedExerciseByID",
+		"body":[
+			"\\ForEachPrintedExerciseByID{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachUsedExerciseByID{}":{
+		"prefix":"ForEachUsedExerciseByID",
+		"body":[
+			"\\ForEachUsedExerciseByID{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMprint{}{}{}":{
+		"prefix":"XSIMprint",
+		"body":[
+			"\\XSIMprint{${1:exercise|solution}}{${2:type}}{${3:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMxprint{}{}{}":{
+		"prefix":"XSIMxprint",
+		"body":[
+			"\\XSIMxprint{${1:exercise|solution}}{${2:type}}{${3:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMtranslate{}":{
+		"prefix":"XSIMtranslate",
+		"body":[
+			"\\XSIMtranslate{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMexpandcode{}":{
+		"prefix":"XSIMexpandcode",
+		"body":[
+			"\\XSIMexpandcode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifchapterTF{}{}":{
+		"prefix":"XSIMifchapterTF",
+		"body":[
+			"\\XSIMifchapterTF{${1:true}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifchapterT{}":{
+		"prefix":"XSIMifchapterT",
+		"body":[
+			"\\XSIMifchapterT{${1:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifchapterF{}":{
+		"prefix":"XSIMifchapterF",
+		"body":[
+			"\\XSIMifchapterF{${1:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMmixedcase{}":{
+		"prefix":"XSIMmixedcase",
+		"body":[
+			"\\XSIMmixedcase{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifeqTF{}{}{}{}":{
+		"prefix":"XSIMifeqTF",
+		"body":[
+			"\\XSIMifeqTF{${1:code1}}{${2:code2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifeqT{}{}{}":{
+		"prefix":"XSIMifeqT",
+		"body":[
+			"\\XSIMifeqT{${1:code1}}{${2:code2}}{${3:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifeqF{}{}{}":{
+		"prefix":"XSIMifeqF",
+		"body":[
+			"\\XSIMifeqF{${1:code1}}{${2:code2}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifblankTF{}{}{}":{
+		"prefix":"XSIMifblankTF",
+		"body":[
+			"\\XSIMifblankTF{${1:code}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifblankT{}{}":{
+		"prefix":"XSIMifblankT",
+		"body":[
+			"\\XSIMifblankT{${1:code}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMifblankF{}{}":{
+		"prefix":"XSIMifblankF",
+		"body":[
+			"\\XSIMifblankF{${1:code}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMatbegindocument{}":{
+		"prefix":"XSIMatbegindocument",
+		"body":[
+			"\\XSIMatbegindocument{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMatenddocument{}":{
+		"prefix":"XSIMatenddocument",
+		"body":[
+			"\\XSIMatenddocument{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseEnvironmentTemplate{}{}{}":{
+		"prefix":"DeclareExerciseEnvironmentTemplate",
+		"body":[
+			"\\DeclareExerciseEnvironmentTemplate{${1:name}}{${2:begin code}}{${3:end code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseHeadingTemplate{}{}":{
+		"prefix":"DeclareExerciseHeadingTemplate",
+		"body":[
+			"\\DeclareExerciseHeadingTemplate{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseTableTemplate{}{}":{
+		"prefix":"DeclareExerciseTableTemplate",
+		"body":[
+			"\\DeclareExerciseTableTemplate{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xsimstyle{}":{
+		"prefix":"xsimstyle",
+		"body":[
+			"\\xsimstyle{${1:style name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xsimstyle*{}":{
+		"prefix":"*xsimstyle",
+		"body":[
+			"\\xsimstyle*{${1:style name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"loadxsimstyle{}":{
+		"prefix":"loadxsimstyle",
+		"body":[
+			"\\loadxsimstyle{${1:list of style names}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseTranslation{}{}{}":{
+		"prefix":"DeclareExerciseTranslation",
+		"body":[
+			"\\DeclareExerciseTranslation{${1:language}}{${2:keyword}}{${3:translation}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareExerciseTranslations{}{}":{
+		"prefix":"DeclareExerciseTranslations",
+		"body":[
+			"\\DeclareExerciseTranslations{${1:keyword}}{${2:translations}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XSIMtranslate{}":{
+		"prefix":"XSIMtranslate",
+		"body":[
+			"\\XSIMtranslate{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ForEachExerciseTranslation{}":{
+		"prefix":"ForEachExerciseTranslation",
+		"body":[
+			"\\ForEachExerciseTranslation{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blank{}":{
+		"prefix":"blank",
+		"body":[
+			"\\blank{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1461,7 +1580,71 @@
 		"prefix":"blank",
 		"body":[
 			"\\blank[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"blank*{}":{
+		"prefix":"*blank",
+		"body":[
+			"\\blank*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"blank*[]{}":{
+		"prefix":"*blank",
+		"body":[
+			"\\blank*[${2:options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ExerciseTableCode":{
+		"prefix":"ExerciseTableCode",
+		"body":[
+			"\\ExerciseTableCode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numberofcolumns":{
+		"prefix":"numberofcolumns",
+		"body":[
+			"\\numberofcolumns"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theexercise":{
+		"prefix":"theexercise",
+		"body":[
+			"\\theexercise"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ParameterValue":{
+		"prefix":"ParameterValue",
+		"body":[
+			"\\ParameterValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PropertyValue":{
+		"prefix":"PropertyValue",
+		"body":[
+			"\\PropertyValue"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1471,27 +1654,19 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"solution":{
-		"prefix":"solution",
-		"body":[
-			"\\begin{solution}",
-				"\t$1",
-			"\\end{solution}"
-		]
-	},
-
-
-	"exercise":{
+	"exercise[]":{
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-				"\t$1",
+				"\t[${1:properties%keyvals}]",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1501,6 +1676,18 @@
 			"\\begin{solution}",
 				"\t$1",
 			"\\end{solution}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"solution[]":{
+		"prefix":"solution",
+		"body":[
+			"\\begin{solution}",
+				"\t[${1:options%keyvals}]",
+			"\\end{solution}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

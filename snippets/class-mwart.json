@@ -5,175 +5,8 @@
 		"prefix":"SetSectionFormatting",
 		"body":[
 			"\\SetSectionFormatting{${1:nazwa polecenia}}{${2:odstęp przed}}{${3:nagłówek}}{${4:odstęp p}}"
-		]
-	},
-
-
-	"DeclareSectioningCommand{}{}":{
-		"prefix":"DeclareSectioningCommand",
-		"body":[
-			"\\DeclareSectioningCommand{${1:nazwa polecenia}}{${2:odstęp przed}}"
-		]
-	},
-
-
-	"captionsettings":{
-		"prefix":"captionsettings",
-		"body":[
-			"\\captionsettings"
-		]
-	},
-
-
-	"centeredlast":{
-		"prefix":"centeredlast",
-		"body":[
-			"\\centeredlast"
-		]
-	},
-
-
-	"figuresettings":{
-		"prefix":"figuresettings",
-		"body":[
-			"\\figuresettings"
-		]
-	},
-
-
-	"FormatBlockHeading{}":{
-		"prefix":"FormatBlockHeading",
-		"body":[
-			"\\FormatBlockHeading{${1:dekl}}"
-		]
-	},
-
-
-	"FormatChapterHeading{}{}{}":{
-		"prefix":"FormatChapterHeading",
-		"body":[
-			"\\FormatChapterHeading{${1:odstęp}}{${2:dekl num}}{${3:dekl tyt}}"
-		]
-	},
-
-
-	"FormatHangHeading{}":{
-		"prefix":"FormatHangHeading",
-		"body":[
-			"\\FormatHangHeading{${1:dekl}}"
-		]
-	},
-
-
-	"FormatRigidChapterHeading{}{}{}{}":{
-		"prefix":"FormatRigidChapterHeading",
-		"body":[
-			"\\FormatRigidChapterHeading{${1:wys}}{${2:odstęp}}{${3:dekl num}}{${4:dekl tyt}}"
-		]
-	},
-
-
-	"FormatRunInHeading{}":{
-		"prefix":"FormatRunInHeading",
-		"body":[
-			"\\FormatRunInHeading{${1:dekl}}"
-		]
-	},
-
-
-	"HeadingNumber":{
-		"prefix":"HeadingNumber",
-		"body":[
-			"\\HeadingNumber"
-		]
-	},
-
-
-	"HeadingNumberedfalse":{
-		"prefix":"HeadingNumberedfalse",
-		"body":[
-			"\\HeadingNumberedfalse"
-		]
-	},
-
-
-	"HeadingNumberedtrue":{
-		"prefix":"HeadingNumberedtrue",
-		"body":[
-			"\\HeadingNumberedtrue"
-		]
-	},
-
-
-	"HeadingRHeadText":{
-		"prefix":"HeadingRHeadText",
-		"body":[
-			"\\HeadingRHeadText"
-		]
-	},
-
-
-	"HeadingText":{
-		"prefix":"HeadingText",
-		"body":[
-			"\\HeadingText"
-		]
-	},
-
-
-	"HeadingTOCText":{
-		"prefix":"HeadingTOCText",
-		"body":[
-			"\\HeadingTOCText"
-		]
-	},
-
-
-	"ifHeadingNumbered":{
-		"prefix":"ifHeadingNumbered",
-		"body":[
-			"\\ifHeadingNumbered"
-		]
-	},
-
-
-	"partmark{}":{
-		"prefix":"partmark",
-		"body":[
-			"\\partmark{${1:code}}"
-		]
-	},
-
-
-	"secondarysize":{
-		"prefix":"secondarysize",
-		"body":[
-			"\\secondarysize"
-		]
-	},
-
-
-	"sectsettings":{
-		"prefix":"sectsettings",
-		"body":[
-			"\\sectsettings"
-		]
-	},
-
-
-	"tablesettings":{
-		"prefix":"tablesettings",
-		"body":[
-			"\\tablesettings"
-		]
-	},
-
-
-	"titlesettings":{
-		"prefix":"titlesettings",
-		"body":[
-			"\\titlesettings"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +14,17 @@
 		"prefix":"SetSectionFormatting",
 		"body":[
 			"\\SetSectionFormatting[${5:flagi%keyvals}]{${1:nazwa polecenia}}{${2:odstęp przed}}{${3:nagłówek}}{${4:odstęp p}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareSectioningCommand{}{}":{
+		"prefix":"DeclareSectioningCommand",
+		"body":[
+			"\\DeclareSectioningCommand{${1:nazwa polecenia}}{${2:odstęp przed}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,6 +32,187 @@
 		"prefix":"DeclareSectioningCommand",
 		"body":[
 			"\\DeclareSectioningCommand[${3:flag%keyvals}]{${1:nazwa polecenia}}{${2:odstęp przed}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"captionsettings":{
+		"prefix":"captionsettings",
+		"body":[
+			"\\captionsettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centeredlast":{
+		"prefix":"centeredlast",
+		"body":[
+			"\\centeredlast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figuresettings":{
+		"prefix":"figuresettings",
+		"body":[
+			"\\figuresettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatBlockHeading{}":{
+		"prefix":"FormatBlockHeading",
+		"body":[
+			"\\FormatBlockHeading{${1:dekl}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatChapterHeading{}{}{}":{
+		"prefix":"FormatChapterHeading",
+		"body":[
+			"\\FormatChapterHeading{${1:odstęp}}{${2:dekl num}}{${3:dekl tyt}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatHangHeading{}":{
+		"prefix":"FormatHangHeading",
+		"body":[
+			"\\FormatHangHeading{${1:dekl}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatRigidChapterHeading{}{}{}{}":{
+		"prefix":"FormatRigidChapterHeading",
+		"body":[
+			"\\FormatRigidChapterHeading{${1:wys}}{${2:odstęp}}{${3:dekl num}}{${4:dekl tyt}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FormatRunInHeading{}":{
+		"prefix":"FormatRunInHeading",
+		"body":[
+			"\\FormatRunInHeading{${1:dekl}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingNumber":{
+		"prefix":"HeadingNumber",
+		"body":[
+			"\\HeadingNumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingNumberedfalse":{
+		"prefix":"HeadingNumberedfalse",
+		"body":[
+			"\\HeadingNumberedfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingNumberedtrue":{
+		"prefix":"HeadingNumberedtrue",
+		"body":[
+			"\\HeadingNumberedtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingRHeadText":{
+		"prefix":"HeadingRHeadText",
+		"body":[
+			"\\HeadingRHeadText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingText":{
+		"prefix":"HeadingText",
+		"body":[
+			"\\HeadingText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HeadingTOCText":{
+		"prefix":"HeadingTOCText",
+		"body":[
+			"\\HeadingTOCText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifHeadingNumbered":{
+		"prefix":"ifHeadingNumbered",
+		"body":[
+			"\\ifHeadingNumbered"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"partmark{}":{
+		"prefix":"partmark",
+		"body":[
+			"\\partmark{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"secondarysize":{
+		"prefix":"secondarysize",
+		"body":[
+			"\\secondarysize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectsettings":{
+		"prefix":"sectsettings",
+		"body":[
+			"\\sectsettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablesettings":{
+		"prefix":"tablesettings",
+		"body":[
+			"\\tablesettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlesettings":{
+		"prefix":"titlesettings",
+		"body":[
+			"\\titlesettings"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

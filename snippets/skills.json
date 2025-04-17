@@ -5,7 +5,8 @@
 		"prefix":"skilldef",
 		"body":[
 			"\\skilldef{${1:label}}{${2:reference}}{${3:description%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,255 +14,8 @@
 		"prefix":"skillquestion",
 		"body":[
 			"\\skillquestion"
-		]
-	},
-
-
-	"skills{}":{
-		"prefix":"skills",
-		"body":[
-			"\\skills{${1:skill1,skill2,...}}"
-		]
-	},
-
-
-	"globalskills{}":{
-		"prefix":"globalskills",
-		"body":[
-			"\\globalskills{${1:skill1,skill2,...}}"
-		]
-	},
-
-
-	"skillstable":{
-		"prefix":"skillstable",
-		"body":[
-			"\\skillstable"
-		]
-	},
-
-
-	"putglobalskills":{
-		"prefix":"putglobalskills",
-		"body":[
-			"\\putglobalskills"
-		]
-	},
-
-
-	"skillssep":{
-		"prefix":"skillssep",
-		"body":[
-			"\\skillssep"
-		]
-	},
-
-
-	"skillsinmargin":{
-		"prefix":"skillsinmargin",
-		"body":[
-			"\\skillsinmargin"
-		]
-	},
-
-
-	"skillsinleftmargin":{
-		"prefix":"skillsinleftmargin",
-		"body":[
-			"\\skillsinleftmargin"
-		]
-	},
-
-
-	"skillsinrightmargin":{
-		"prefix":"skillsinrightmargin",
-		"body":[
-			"\\skillsinrightmargin"
-		]
-	},
-
-
-	"noskillsinmargin":{
-		"prefix":"noskillsinmargin",
-		"body":[
-			"\\noskillsinmargin"
-		]
-	},
-
-
-	"noskillsinrightmargin":{
-		"prefix":"noskillsinrightmargin",
-		"body":[
-			"\\noskillsinrightmargin"
-		]
-	},
-
-
-	"skillsinmarginvadjust{}":{
-		"prefix":"skillsinmarginvadjust",
-		"body":[
-			"\\skillsinmarginvadjust{${1:length}}"
-		]
-	},
-
-
-	"bracketedskills":{
-		"prefix":"bracketedskills",
-		"body":[
-			"\\bracketedskills"
-		]
-	},
-
-
-	"nobracketedskills":{
-		"prefix":"nobracketedskills",
-		"body":[
-			"\\nobracketedskills"
-		]
-	},
-
-
-	"boxedskills":{
-		"prefix":"boxedskills",
-		"body":[
-			"\\boxedskills"
-		]
-	},
-
-
-	"noboxedskills":{
-		"prefix":"noboxedskills",
-		"body":[
-			"\\noboxedskills"
-		]
-	},
-
-
-	"onlyskills":{
-		"prefix":"onlyskills",
-		"body":[
-			"\\onlyskills"
-		]
-	},
-
-
-	"notonlyskills":{
-		"prefix":"notonlyskills",
-		"body":[
-			"\\notonlyskills"
-		]
-	},
-
-
-	"skillsenclosement{}{}":{
-		"prefix":"skillsenclosement",
-		"body":[
-			"\\skillsenclosement{${1:opening}}{${2:closing}}"
-		]
-	},
-
-
-	"skilllevelname":{
-		"prefix":"skilllevelname",
-		"body":[
-			"\\skilllevelname"
-		]
-	},
-
-
-	"FrenchLocalization":{
-		"prefix":"FrenchLocalization",
-		"body":[
-			"\\FrenchLocalization"
-		]
-	},
-
-
-	"PrintingSkillsConfiguration":{
-		"prefix":"PrintingSkillsConfiguration",
-		"body":[
-			"\\PrintingSkillsConfiguration"
-		]
-	},
-
-
-	"defaultskillsclosing":{
-		"prefix":"defaultskillsclosing",
-		"body":[
-			"\\defaultskillsclosing"
-		]
-	},
-
-
-	"defaultskillsenclosement":{
-		"prefix":"defaultskillsenclosement",
-		"body":[
-			"\\defaultskillsenclosement"
-		]
-	},
-
-
-	"defaultskillsopening":{
-		"prefix":"defaultskillsopening",
-		"body":[
-			"\\defaultskillsopening"
-		]
-	},
-
-
-	"globalskill{}":{
-		"prefix":"globalskill",
-		"body":[
-			"\\globalskill{${1:arg}}"
-		]
-	},
-
-
-	"glsgobblenumber{}":{
-		"prefix":"glsgobblenumber",
-		"body":[
-			"\\glsgobblenumber{${1:arg}}"
-		]
-	},
-
-
-	"multiskills{}":{
-		"prefix":"multiskills",
-		"body":[
-			"\\multiskills{${1:arg1}}"
-		]
-	},
-
-
-	"skillcounter":{
-		"prefix":"skillcounter",
-		"body":[
-			"\\skillcounter"
-		]
-	},
-
-
-	"skillsclosing":{
-		"prefix":"skillsclosing",
-		"body":[
-			"\\skillsclosing"
-		]
-	},
-
-
-	"skillsopening":{
-		"prefix":"skillsopening",
-		"body":[
-			"\\skillsopening"
-		]
-	},
-
-
-	"skill{}":{
-		"prefix":"skill",
-		"body":[
-			"\\skill{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +23,8 @@
 		"prefix":"skillquestion",
 		"body":[
 			"\\skillquestion[${1:skill1,skill2,...}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -277,7 +32,35 @@
 		"prefix":"skillquestion",
 		"body":[
 			"\\skillquestion[${1:skill1,skill2,...}][${2:points}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"skills{}":{
+		"prefix":"skills",
+		"body":[
+			"\\skills{${1:skill1,skill2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"globalskills{}":{
+		"prefix":"globalskills",
+		"body":[
+			"\\globalskills{${1:skill1,skill2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillstable":{
+		"prefix":"skillstable",
+		"body":[
+			"\\skillstable"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +68,206 @@
 		"prefix":"skillstable",
 		"body":[
 			"\\skillstable[${1:sort type%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"putglobalskills":{
+		"prefix":"putglobalskills",
+		"body":[
+			"\\putglobalskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillssep":{
+		"prefix":"skillssep",
+		"body":[
+			"\\skillssep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsinmargin":{
+		"prefix":"skillsinmargin",
+		"body":[
+			"\\skillsinmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsinleftmargin":{
+		"prefix":"skillsinleftmargin",
+		"body":[
+			"\\skillsinleftmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsinrightmargin":{
+		"prefix":"skillsinrightmargin",
+		"body":[
+			"\\skillsinrightmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noskillsinmargin":{
+		"prefix":"noskillsinmargin",
+		"body":[
+			"\\noskillsinmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noskillsinrightmargin":{
+		"prefix":"noskillsinrightmargin",
+		"body":[
+			"\\noskillsinrightmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsinmarginvadjust{}":{
+		"prefix":"skillsinmarginvadjust",
+		"body":[
+			"\\skillsinmarginvadjust{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bracketedskills":{
+		"prefix":"bracketedskills",
+		"body":[
+			"\\bracketedskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nobracketedskills":{
+		"prefix":"nobracketedskills",
+		"body":[
+			"\\nobracketedskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxedskills":{
+		"prefix":"boxedskills",
+		"body":[
+			"\\boxedskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noboxedskills":{
+		"prefix":"noboxedskills",
+		"body":[
+			"\\noboxedskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"onlyskills":{
+		"prefix":"onlyskills",
+		"body":[
+			"\\onlyskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notonlyskills":{
+		"prefix":"notonlyskills",
+		"body":[
+			"\\notonlyskills"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsenclosement{}{}":{
+		"prefix":"skillsenclosement",
+		"body":[
+			"\\skillsenclosement{${1:opening}}{${2:closing}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skilllevelname":{
+		"prefix":"skilllevelname",
+		"body":[
+			"\\skilllevelname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FrenchLocalization":{
+		"prefix":"FrenchLocalization",
+		"body":[
+			"\\FrenchLocalization"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintingSkillsConfiguration":{
+		"prefix":"PrintingSkillsConfiguration",
+		"body":[
+			"\\PrintingSkillsConfiguration"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultskillsclosing":{
+		"prefix":"defaultskillsclosing",
+		"body":[
+			"\\defaultskillsclosing"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultskillsenclosement":{
+		"prefix":"defaultskillsenclosement",
+		"body":[
+			"\\defaultskillsenclosement"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultskillsopening":{
+		"prefix":"defaultskillsopening",
+		"body":[
+			"\\defaultskillsopening"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"globalskill{}":{
+		"prefix":"globalskill",
+		"body":[
+			"\\globalskill{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +275,62 @@
 		"prefix":"globalskill",
 		"body":[
 			"\\globalskill[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"glsgobblenumber{}":{
+		"prefix":"glsgobblenumber",
+		"body":[
+			"\\glsgobblenumber{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multiskills{}":{
+		"prefix":"multiskills",
+		"body":[
+			"\\multiskills{${1:arg1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillcounter":{
+		"prefix":"skillcounter",
+		"body":[
+			"\\skillcounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsclosing":{
+		"prefix":"skillsclosing",
+		"body":[
+			"\\skillsclosing"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skillsopening":{
+		"prefix":"skillsopening",
+		"body":[
+			"\\skillsopening"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skill{}":{
+		"prefix":"skill",
+		"body":[
+			"\\skill{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -303,16 +340,18 @@
 			"\\begin{skillquestions}",
 				"\t$1",
 			"\\end{skillquestions}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"skillquestions":{
+	"skillquestions[]":{
 		"prefix":"skillquestions",
 		"body":[
 			"\\begin{skillquestions}",
-				"\t$1",
+				"\t[${1:skill1,skill2,...}]",
 			"\\end{skillquestions}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

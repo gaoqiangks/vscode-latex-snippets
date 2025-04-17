@@ -5,143 +5,8 @@
 		"prefix":"newindex",
 		"body":[
 			"\\newindex{${1:shortcut}}"
-		]
-	},
-
-
-	"sindex{}":{
-		"prefix":"sindex",
-		"body":[
-			"\\sindex{${1:entry}}"
-		]
-	},
-
-
-	"AtWriteToIndex{}{}":{
-		"prefix":"AtWriteToIndex",
-		"body":[
-			"\\AtWriteToIndex{${1:shortcut}}{${2:code}}"
-		]
-	},
-
-
-	"AtNextWriteToIndex{}{}":{
-		"prefix":"AtNextWriteToIndex",
-		"body":[
-			"\\AtNextWriteToIndex{${1:shortcut}}{${2:code}}"
-		]
-	},
-
-
-	"newprotectedindex{}":{
-		"prefix":"newprotectedindex",
-		"body":[
-			"\\newprotectedindex{${1:shortcut}}"
-		]
-	},
-
-
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex"
-		]
-	},
-
-
-	"printsubindex":{
-		"prefix":"printsubindex",
-		"body":[
-			"\\printsubindex"
-		]
-	},
-
-
-	"setindexpreamble{}":{
-		"prefix":"setindexpreamble",
-		"body":[
-			"\\setindexpreamble{${1:preamble%text}}"
-		]
-	},
-
-
-	"useindexpreamble":{
-		"prefix":"useindexpreamble",
-		"body":[
-			"\\useindexpreamble"
-		]
-	},
-
-
-	"indexshortcut":{
-		"prefix":"indexshortcut",
-		"body":[
-			"\\indexshortcut"
-		]
-	},
-
-
-	"extendtheindex{}{}{}{}":{
-		"prefix":"extendtheindex",
-		"body":[
-			"\\extendtheindex{${1:before begin}}{${2:after begin}}{${3:before end}}{${4:after end}}"
-		]
-	},
-
-
-	"printindices":{
-		"prefix":"printindices",
-		"body":[
-			"\\printindices"
-		]
-	},
-
-
-	"see{}{}":{
-		"prefix":"see",
-		"body":[
-			"\\see{${1:text}}{${2:page number}}"
-		]
-	},
-
-
-	"seealso{}{}":{
-		"prefix":"seealso",
-		"body":[
-			"\\seealso{${1:text}}{${2:page number}}"
-		]
-	},
-
-
-	"seename":{
-		"prefix":"seename",
-		"body":[
-			"\\seename"
-		]
-	},
-
-
-	"alsoname":{
-		"prefix":"alsoname",
-		"body":[
-			"\\alsoname"
-		]
-	},
-
-
-	"printindex*":{
-		"prefix":"*printindex",
-		"body":[
-			"\\printindex*"
-		]
-	},
-
-
-	"printsubindex*":{
-		"prefix":"*printsubindex",
-		"body":[
-			"\\printsubindex*"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,17 @@
 		"prefix":"newindex",
 		"body":[
 			"\\newindex[${2:index name}]{${1:shortcut}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sindex{}":{
+		"prefix":"sindex",
+		"body":[
+			"\\sindex{${1:entry}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +32,8 @@
 		"prefix":"sindex",
 		"body":[
 			"\\sindex[${2:shortcut}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +41,35 @@
 		"prefix":"index",
 		"body":[
 			"\\index[${2:shortcut}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AtWriteToIndex{}{}":{
+		"prefix":"AtWriteToIndex",
+		"body":[
+			"\\AtWriteToIndex{${1:shortcut}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AtNextWriteToIndex{}{}":{
+		"prefix":"AtNextWriteToIndex",
+		"body":[
+			"\\AtNextWriteToIndex{${1:shortcut}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newprotectedindex{}":{
+		"prefix":"newprotectedindex",
+		"body":[
+			"\\newprotectedindex{${1:shortcut}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +77,17 @@
 		"prefix":"newprotectedindex",
 		"body":[
 			"\\newprotectedindex[${2:index name}]{${1:shortcut}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printindex":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +95,8 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex[${1:shortcut}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +104,44 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex[${1:shortcut}][${2:index name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printindex*":{
+		"prefix":"*printindex",
+		"body":[
+			"\\printindex*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printsubindex":{
+		"prefix":"printsubindex",
+		"body":[
+			"\\printsubindex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printsubindex*":{
+		"prefix":"*printsubindex",
+		"body":[
+			"\\printsubindex*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setindexpreamble{}":{
+		"prefix":"setindexpreamble",
+		"body":[
+			"\\setindexpreamble{${1:preamble%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +149,17 @@
 		"prefix":"setindexpreamble",
 		"body":[
 			"\\setindexpreamble[${2:shortcut}]{${1:preamble%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"useindexpreamble":{
+		"prefix":"useindexpreamble",
+		"body":[
+			"\\useindexpreamble"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,6 +167,70 @@
 		"prefix":"useindexpreamble",
 		"body":[
 			"\\useindexpreamble[${1:commands}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"indexshortcut":{
+		"prefix":"indexshortcut",
+		"body":[
+			"\\indexshortcut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extendtheindex{}{}{}{}":{
+		"prefix":"extendtheindex",
+		"body":[
+			"\\extendtheindex{${1:before begin}}{${2:after begin}}{${3:before end}}{${4:after end}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printindices":{
+		"prefix":"printindices",
+		"body":[
+			"\\printindices"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"see{}{}":{
+		"prefix":"see",
+		"body":[
+			"\\see{${1:text}}{${2:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seealso{}{}":{
+		"prefix":"seealso",
+		"body":[
+			"\\seealso{${1:text}}{${2:page number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seename":{
+		"prefix":"seename",
+		"body":[
+			"\\seename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alsoname":{
+		"prefix":"alsoname",
+		"body":[
+			"\\alsoname"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

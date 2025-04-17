@@ -5,31 +5,8 @@
 		"prefix":"cropbox",
 		"body":[
 			"\\cropbox{${1:content%text}}"
-		]
-	},
-
-
-	"cropboxsep{}":{
-		"prefix":"cropboxsep",
-		"body":[
-			"\\cropboxsep{${1:length}}"
-		]
-	},
-
-
-	"croplinewidth{}":{
-		"prefix":"croplinewidth",
-		"body":[
-			"\\croplinewidth{${1:length}}"
-		]
-	},
-
-
-	"croplinelength{}":{
-		"prefix":"croplinelength",
-		"body":[
-			"\\croplinelength{${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,8 @@
 		"prefix":"cropbox",
 		"body":[
 			"\\cropbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,6 +23,34 @@
 		"prefix":"cropbox",
 		"body":[
 			"\\cropbox[${2:width}][${3:height}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cropboxsep{}":{
+		"prefix":"cropboxsep",
+		"body":[
+			"\\cropboxsep{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"croplinewidth{}":{
+		"prefix":"croplinewidth",
+		"body":[
+			"\\croplinewidth{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"croplinelength{}":{
+		"prefix":"croplinelength",
+		"body":[
+			"\\croplinelength{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

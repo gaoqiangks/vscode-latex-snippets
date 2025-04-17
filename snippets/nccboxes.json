@@ -5,127 +5,8 @@
 		"prefix":"jhbox",
 		"body":[
 			"\\jhbox{${1:prototype}}{${2:text}}"
-		]
-	},
-
-
-	"jvbox{}{}":{
-		"prefix":"jvbox",
-		"body":[
-			"\\jvbox{${1:prototype}}{${2:text}}"
-		]
-	},
-
-
-	"jparbox{}{}{}":{
-		"prefix":"jparbox",
-		"body":[
-			"\\jparbox{${1:prototype}}{${2:text}}{${3:width}}"
-		]
-	},
-
-
-	"addbox{}{}{}":{
-		"prefix":"addbox",
-		"body":[
-			"\\addbox{${1:height-adjust%l}}{${2:depth-adjust%l}}{${3:text}}"
-		]
-	},
-
-
-	"pbox{}":{
-		"prefix":"pbox",
-		"body":[
-			"\\pbox{${1:body%text}}"
-		]
-	},
-
-
-	"picbox{}":{
-		"prefix":"picbox",
-		"body":[
-			"\\picbox{${1:picture code}}"
-		]
-	},
-
-
-	"Strutletter":{
-		"prefix":"Strutletter",
-		"body":[
-			"\\Strutletter"
-		]
-	},
-
-
-	"tstrut":{
-		"prefix":"tstrut",
-		"body":[
-			"\\tstrut"
-		]
-	},
-
-
-	"bstrut":{
-		"prefix":"bstrut",
-		"body":[
-			"\\bstrut"
-		]
-	},
-
-
-	"tbstrut":{
-		"prefix":"tbstrut",
-		"body":[
-			"\\tbstrut"
-		]
-	},
-
-
-	"Strutstretch":{
-		"prefix":"Strutstretch",
-		"body":[
-			"\\Strutstretch"
-		]
-	},
-
-
-	"cbox{}":{
-		"prefix":"cbox",
-		"body":[
-			"\\cbox{${1:body%text}}"
-		]
-	},
-
-
-	"cboxstyle":{
-		"prefix":"cboxstyle",
-		"body":[
-			"\\cboxstyle"
-		]
-	},
-
-
-	"tc{}":{
-		"prefix":"tc",
-		"body":[
-			"\\tc{${1:field%text}}"
-		]
-	},
-
-
-	"cbox*{}":{
-		"prefix":"*cbox",
-		"body":[
-			"\\cbox*{${1:body%text}}"
-		]
-	},
-
-
-	"cbox*[]{}":{
-		"prefix":"*cbox",
-		"body":[
-			"\\cbox*[${2:pos}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +14,17 @@
 		"prefix":"jhbox",
 		"body":[
 			"\\jhbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"jvbox{}{}":{
+		"prefix":"jvbox",
+		"body":[
+			"\\jvbox{${1:prototype}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +32,17 @@
 		"prefix":"jvbox",
 		"body":[
 			"\\jvbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"jparbox{}{}{}":{
+		"prefix":"jparbox",
+		"body":[
+			"\\jparbox{${1:prototype}}{${2:text}}{${3:width}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +50,26 @@
 		"prefix":"jparbox",
 		"body":[
 			"\\jparbox{${1:prototype}}[${4:pos%keyvals}]{${2:width}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addbox{}{}{}":{
+		"prefix":"addbox",
+		"body":[
+			"\\addbox{${1:height-adjust%l}}{${2:depth-adjust%l}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pbox{}":{
+		"prefix":"pbox",
+		"body":[
+			"\\pbox{${1:body%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +77,71 @@
 		"prefix":"pbox",
 		"body":[
 			"\\pbox[${2:pos}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"picbox{}":{
+		"prefix":"picbox",
+		"body":[
+			"\\picbox{${1:picture code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Strutletter":{
+		"prefix":"Strutletter",
+		"body":[
+			"\\Strutletter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tstrut":{
+		"prefix":"tstrut",
+		"body":[
+			"\\tstrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bstrut":{
+		"prefix":"bstrut",
+		"body":[
+			"\\bstrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tbstrut":{
+		"prefix":"tbstrut",
+		"body":[
+			"\\tbstrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Strutstretch":{
+		"prefix":"Strutstretch",
+		"body":[
+			"\\Strutstretch"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cbox{}":{
+		"prefix":"cbox",
+		"body":[
+			"\\cbox{${1:body%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +149,43 @@
 		"prefix":"cbox",
 		"body":[
 			"\\cbox[${2:pos}]{${1:body%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cbox*{}":{
+		"prefix":"*cbox",
+		"body":[
+			"\\cbox*{${1:body%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cbox*[]{}":{
+		"prefix":"*cbox",
+		"body":[
+			"\\cbox*[${2:pos}]{${1:body%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"cboxstyle":{
+		"prefix":"cboxstyle",
+		"body":[
+			"\\cboxstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tc{}":{
+		"prefix":"tc",
+		"body":[
+			"\\tc{${1:field%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

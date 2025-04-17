@@ -5,223 +5,8 @@
 		"prefix":"setkeys",
 		"body":[
 			"\\setkeys{${1:families}}{${2:keyvals}}"
-		]
-	},
-
-
-	"setrmkeys{}":{
-		"prefix":"setrmkeys",
-		"body":[
-			"\\setrmkeys{${1:families}}"
-		]
-	},
-
-
-	"savevalue{}":{
-		"prefix":"savevalue",
-		"body":[
-			"\\savevalue{${1:key%plain}}"
-		]
-	},
-
-
-	"gsavevalue{}":{
-		"prefix":"gsavevalue",
-		"body":[
-			"\\gsavevalue{${1:key%plain}}"
-		]
-	},
-
-
-	"savekeys{}{}":{
-		"prefix":"savekeys",
-		"body":[
-			"\\savekeys{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"gsavekeys{}{}":{
-		"prefix":"gsavekeys",
-		"body":[
-			"\\gsavekeys{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"delsavekeys{}{}":{
-		"prefix":"delsavekeys",
-		"body":[
-			"\\delsavekeys{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"gdelsavekeys{}{}":{
-		"prefix":"gdelsavekeys",
-		"body":[
-			"\\gdelsavekeys{${1:family}}{${2:keyvals}}"
-		]
-	},
-
-
-	"unsavekeys{}":{
-		"prefix":"unsavekeys",
-		"body":[
-			"\\unsavekeys{${1:family}}"
-		]
-	},
-
-
-	"gunsavekeys{}":{
-		"prefix":"gunsavekeys",
-		"body":[
-			"\\gunsavekeys{${1:family}}"
-		]
-	},
-
-
-	"global{}":{
-		"prefix":"global",
-		"body":[
-			"\\global{${1:key%plain}}"
-		]
-	},
-
-
-	"usevalue{}":{
-		"prefix":"usevalue",
-		"body":[
-			"\\usevalue{${1:key%plain}}"
-		]
-	},
-
-
-	"presetkeys{}{}{}":{
-		"prefix":"presetkeys",
-		"body":[
-			"\\presetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"gpresetkeys{}{}{}":{
-		"prefix":"gpresetkeys",
-		"body":[
-			"\\gpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"delpresetkeys{}{}{}":{
-		"prefix":"delpresetkeys",
-		"body":[
-			"\\delpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"gdelpresetkeys{}{}{}":{
-		"prefix":"gdelpresetkeys",
-		"body":[
-			"\\gdelpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
-	},
-
-
-	"unpresetkeys{}":{
-		"prefix":"unpresetkeys",
-		"body":[
-			"\\unpresetkeys{${1:family}}"
-		]
-	},
-
-
-	"gunpresetkeys{}":{
-		"prefix":"gunpresetkeys",
-		"body":[
-			"\\gunpresetkeys{${1:family}}"
-		]
-	},
-
-
-	"DeclareOptionX{}{}":{
-		"prefix":"DeclareOptionX",
-		"body":[
-			"\\DeclareOptionX{${1:key%plain}}{${2:function}}"
-		]
-	},
-
-
-	"ExecuteOptionsX{}":{
-		"prefix":"ExecuteOptionsX",
-		"body":[
-			"\\ExecuteOptionsX{${1:keyvals}}"
-		]
-	},
-
-
-	"ProcessOptionsX":{
-		"prefix":"ProcessOptionsX",
-		"body":[
-			"\\ProcessOptionsX"
-		]
-	},
-
-
-	"setkeys*{}{}":{
-		"prefix":"*setkeys",
-		"body":[
-			"\\setkeys*{${1:families}}{${2:keyvals}}"
-		]
-	},
-
-
-	"setkeys*[]{}[]{}":{
-		"prefix":"*setkeys",
-		"body":[
-			"\\setkeys*[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
-	},
-
-
-	"setrmkeys*{}":{
-		"prefix":"*setrmkeys",
-		"body":[
-			"\\setrmkeys*{${1:families}}"
-		]
-	},
-
-
-	"setrmkeys*[]{}[]":{
-		"prefix":"*setrmkeys",
-		"body":[
-			"\\setrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
-	},
-
-
-	"DeclareOptionX*{}":{
-		"prefix":"*DeclareOptionX",
-		"body":[
-			"\\DeclareOptionX*{${1:function}}"
-		]
-	},
-
-
-	"ProcessOptionsX*":{
-		"prefix":"*ProcessOptionsX",
-		"body":[
-			"\\ProcessOptionsX*"
-		]
-	},
-
-
-	"ProcessOptionsX*[]<>[]":{
-		"prefix":"*ProcessOptionsX",
-		"body":[
-			"\\ProcessOptionsX*[${1:prefix}]<${3:families}>[${2:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +14,35 @@
 		"prefix":"setkeys",
 		"body":[
 			"\\setkeys[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setkeys*{}{}":{
+		"prefix":"*setkeys",
+		"body":[
+			"\\setkeys*{${1:families}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setkeys*[]{}[]{}":{
+		"prefix":"*setkeys",
+		"body":[
+			"\\setkeys*[${3:prefix}]{${1:families}}[${4:ignored keys}]{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setrmkeys{}":{
+		"prefix":"setrmkeys",
+		"body":[
+			"\\setrmkeys{${1:families}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +50,53 @@
 		"prefix":"setrmkeys",
 		"body":[
 			"\\setrmkeys[${2:prefix}]{${1:families}}[${3:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setrmkeys*{}":{
+		"prefix":"*setrmkeys",
+		"body":[
+			"\\setrmkeys*{${1:families}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setrmkeys*[]{}[]":{
+		"prefix":"*setrmkeys",
+		"body":[
+			"\\setrmkeys*[${2:prefix}]{${1:families}}[${3:ignored keys}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"savevalue{}":{
+		"prefix":"savevalue",
+		"body":[
+			"\\savevalue{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gsavevalue{}":{
+		"prefix":"gsavevalue",
+		"body":[
+			"\\gsavevalue{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savekeys{}{}":{
+		"prefix":"savekeys",
+		"body":[
+			"\\savekeys{${1:family}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +104,17 @@
 		"prefix":"savekeys",
 		"body":[
 			"\\savekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gsavekeys{}{}":{
+		"prefix":"gsavekeys",
+		"body":[
+			"\\gsavekeys{${1:family}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +122,17 @@
 		"prefix":"gsavekeys",
 		"body":[
 			"\\gsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"delsavekeys{}{}":{
+		"prefix":"delsavekeys",
+		"body":[
+			"\\delsavekeys{${1:family}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +140,17 @@
 		"prefix":"delsavekeys",
 		"body":[
 			"\\delsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gdelsavekeys{}{}":{
+		"prefix":"gdelsavekeys",
+		"body":[
+			"\\gdelsavekeys{${1:family}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +158,17 @@
 		"prefix":"gdelsavekeys",
 		"body":[
 			"\\gdelsavekeys[${3:prefix}]{${1:family}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"unsavekeys{}":{
+		"prefix":"unsavekeys",
+		"body":[
+			"\\unsavekeys{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +176,17 @@
 		"prefix":"unsavekeys",
 		"body":[
 			"\\unsavekeys[${2:prefix}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gunsavekeys{}":{
+		"prefix":"gunsavekeys",
+		"body":[
+			"\\gunsavekeys{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +194,35 @@
 		"prefix":"gunsavekeys",
 		"body":[
 			"\\gunsavekeys[${2:prefix}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"global{}":{
+		"prefix":"global",
+		"body":[
+			"\\global{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usevalue{}":{
+		"prefix":"usevalue",
+		"body":[
+			"\\usevalue{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"presetkeys{}{}{}":{
+		"prefix":"presetkeys",
+		"body":[
+			"\\presetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +230,17 @@
 		"prefix":"presetkeys",
 		"body":[
 			"\\presetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gpresetkeys{}{}{}":{
+		"prefix":"gpresetkeys",
+		"body":[
+			"\\gpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +248,17 @@
 		"prefix":"gpresetkeys",
 		"body":[
 			"\\gpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"delpresetkeys{}{}{}":{
+		"prefix":"delpresetkeys",
+		"body":[
+			"\\delpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +266,17 @@
 		"prefix":"delpresetkeys",
 		"body":[
 			"\\delpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gdelpresetkeys{}{}{}":{
+		"prefix":"gdelpresetkeys",
+		"body":[
+			"\\gdelpresetkeys{${1:family}}{${2:head keys}}{${3:tail keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +284,17 @@
 		"prefix":"gdelpresetkeys",
 		"body":[
 			"\\gdelpresetkeys[${4:prefix}]{${1:family}}{${2:head keys}}{${3:tail keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"unpresetkeys{}":{
+		"prefix":"unpresetkeys",
+		"body":[
+			"\\unpresetkeys{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +302,17 @@
 		"prefix":"unpresetkeys",
 		"body":[
 			"\\unpresetkeys[${2:prefix}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gunpresetkeys{}":{
+		"prefix":"gunpresetkeys",
+		"body":[
+			"\\gunpresetkeys{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +320,17 @@
 		"prefix":"gunpresetkeys",
 		"body":[
 			"\\gunpresetkeys[${2:prefix}]{${1:family}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareOptionX{}{}":{
+		"prefix":"DeclareOptionX",
+		"body":[
+			"\\DeclareOptionX{${1:key%plain}}{${2:function}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +338,26 @@
 		"prefix":"DeclareOptionX",
 		"body":[
 			"\\DeclareOptionX[${3:prefix}]<${5:family}>{${1:key%plain}}[${4:default}]{${2:function}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareOptionX*{}":{
+		"prefix":"*DeclareOptionX",
+		"body":[
+			"\\DeclareOptionX*{${1:function}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ExecuteOptionsX{}":{
+		"prefix":"ExecuteOptionsX",
+		"body":[
+			"\\ExecuteOptionsX{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +365,17 @@
 		"prefix":"ExecuteOptionsX",
 		"body":[
 			"\\ExecuteOptionsX[${2:prefix}]<${4:families}>[${3:ignored keys}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProcessOptionsX":{
+		"prefix":"ProcessOptionsX",
+		"body":[
+			"\\ProcessOptionsX"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,6 +383,25 @@
 		"prefix":"ProcessOptionsX",
 		"body":[
 			"\\ProcessOptionsX[${1:prefix}]<${3:families}>[${2:ignored keys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProcessOptionsX*":{
+		"prefix":"*ProcessOptionsX",
+		"body":[
+			"\\ProcessOptionsX*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ProcessOptionsX*[]<>[]":{
+		"prefix":"*ProcessOptionsX",
+		"body":[
+			"\\ProcessOptionsX*[${1:prefix}]<${3:families}>[${2:ignored keys}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

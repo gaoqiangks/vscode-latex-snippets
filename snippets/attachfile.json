@@ -5,39 +5,8 @@
 		"prefix":"attachfile",
 		"body":[
 			"\\attachfile{${1:file}}"
-		]
-	},
-
-
-	"noattachfile":{
-		"prefix":"noattachfile",
-		"body":[
-			"\\noattachfile"
-		]
-	},
-
-
-	"notextattachfile{}":{
-		"prefix":"notextattachfile",
-		"body":[
-			"\\notextattachfile{${1:text}}"
-		]
-	},
-
-
-	"textattachfile{}{}":{
-		"prefix":"textattachfile",
-		"body":[
-			"\\textattachfile{${1:file}}{${2:text}}"
-		]
-	},
-
-
-	"attachfilesetup{}":{
-		"prefix":"attachfilesetup",
-		"body":[
-			"\\attachfilesetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"attachfile",
 		"body":[
 			"\\attachfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"noattachfile":{
+		"prefix":"noattachfile",
+		"body":[
+			"\\noattachfile"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +32,17 @@
 		"prefix":"noattachfile",
 		"body":[
 			"\\noattachfile[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"notextattachfile{}":{
+		"prefix":"notextattachfile",
+		"body":[
+			"\\notextattachfile{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +50,17 @@
 		"prefix":"notextattachfile",
 		"body":[
 			"\\notextattachfile[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textattachfile{}{}":{
+		"prefix":"textattachfile",
+		"body":[
+			"\\textattachfile{${1:file}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +68,16 @@
 		"prefix":"textattachfile",
 		"body":[
 			"\\textattachfile[${3:options%keyvals}]{${1:file}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"attachfilesetup{}":{
+		"prefix":"attachfilesetup",
+		"body":[
+			"\\attachfilesetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,103 +5,8 @@
 		"prefix":"tikzexternalize",
 		"body":[
 			"\\tikzexternalize"
-		]
-	},
-
-
-	"tikzsetnextfilename{}":{
-		"prefix":"tikzsetnextfilename",
-		"body":[
-			"\\tikzsetnextfilename{${1:file name%file}}"
-		]
-	},
-
-
-	"tikzsetexternalprefix{}":{
-		"prefix":"tikzsetexternalprefix",
-		"body":[
-			"\\tikzsetexternalprefix{${1:prefix}}"
-		]
-	},
-
-
-	"tikzsetfigurename{}":{
-		"prefix":"tikzsetfigurename",
-		"body":[
-			"\\tikzsetfigurename{${1:name}}"
-		]
-	},
-
-
-	"tikzappendtofigurename{}":{
-		"prefix":"tikzappendtofigurename",
-		"body":[
-			"\\tikzappendtofigurename{${1:suffix}}"
-		]
-	},
-
-
-	"tikz":{
-		"prefix":"tikz",
-		"body":[
-			"\\tikz"
-		]
-	},
-
-
-	"tikzset{}":{
-		"prefix":"tikzset",
-		"body":[
-			"\\tikzset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"beginpgfgraphicnamed{}":{
-		"prefix":"beginpgfgraphicnamed",
-		"body":[
-			"\\beginpgfgraphicnamed{${1:file name prefix}}"
-		]
-	},
-
-
-	"endpgfgraphicnamed":{
-		"prefix":"endpgfgraphicnamed",
-		"body":[
-			"\\endpgfgraphicnamed"
-		]
-	},
-
-
-	"tikzifinpicture{}{}":{
-		"prefix":"tikzifinpicture",
-		"body":[
-			"\\tikzifinpicture{${1:in code}}{${2:out code}}"
-		]
-	},
-
-
-	"pgfincludeexternalgraphics{}":{
-		"prefix":"pgfincludeexternalgraphics",
-		"body":[
-			"\\pgfincludeexternalgraphics{${1:imagefile}}"
-		]
-	},
-
-
-	"pgfexternalreaddpth{}":{
-		"prefix":"pgfexternalreaddpth",
-		"body":[
-			"\\pgfexternalreaddpth{${1:imagefile}}"
-		]
-	},
-
-
-	"pgfretval":{
-		"prefix":"pgfretval",
-		"body":[
-			"\\pgfretval"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,53 @@
 		"prefix":"tikzexternalize",
 		"body":[
 			"\\tikzexternalize[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzsetnextfilename{}":{
+		"prefix":"tikzsetnextfilename",
+		"body":[
+			"\\tikzsetnextfilename{${1:file name%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzsetexternalprefix{}":{
+		"prefix":"tikzsetexternalprefix",
+		"body":[
+			"\\tikzsetexternalprefix{${1:prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzsetfigurename{}":{
+		"prefix":"tikzsetfigurename",
+		"body":[
+			"\\tikzsetfigurename{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzappendtofigurename{}":{
+		"prefix":"tikzappendtofigurename",
+		"body":[
+			"\\tikzappendtofigurename{${1:suffix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikz":{
+		"prefix":"tikz",
+		"body":[
+			"\\tikz"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +68,71 @@
 		"prefix":"tikz",
 		"body":[
 			"\\tikz[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzset{}":{
+		"prefix":"tikzset",
+		"body":[
+			"\\tikzset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beginpgfgraphicnamed{}":{
+		"prefix":"beginpgfgraphicnamed",
+		"body":[
+			"\\beginpgfgraphicnamed{${1:file name prefix}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endpgfgraphicnamed":{
+		"prefix":"endpgfgraphicnamed",
+		"body":[
+			"\\endpgfgraphicnamed"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzifinpicture{}{}":{
+		"prefix":"tikzifinpicture",
+		"body":[
+			"\\tikzifinpicture{${1:in code}}{${2:out code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfincludeexternalgraphics{}":{
+		"prefix":"pgfincludeexternalgraphics",
+		"body":[
+			"\\pgfincludeexternalgraphics{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfexternalreaddpth{}":{
+		"prefix":"pgfexternalreaddpth",
+		"body":[
+			"\\pgfexternalreaddpth{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pgfretval":{
+		"prefix":"pgfretval",
+		"body":[
+			"\\pgfretval"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,16 +142,18 @@
 			"\\begin{tikzpicture}",
 				"\t$1",
 			"\\end{tikzpicture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tikzpicture":{
+	"tikzpicture[]":{
 		"prefix":"tikzpicture",
 		"body":[
 			"\\begin{tikzpicture}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tikzpicture}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

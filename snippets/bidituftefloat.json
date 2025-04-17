@@ -5,7 +5,8 @@
 		"prefix":"floatalignment",
 		"body":[
 			"\\floatalignment"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"forcerectofloat",
 		"body":[
 			"\\forcerectofloat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"forceversofloat",
 		"body":[
 			"\\forceversofloat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"gsetlength",
 		"body":[
 			"\\gsetlength{${1:length cmd}}{${2:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"morefloats",
 		"body":[
 			"\\morefloats"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"newlinetospace",
 		"body":[
 			"\\newlinetospace{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"setcaptionfont",
 		"body":[
 			"\\setcaptionfont{${1:font commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"setfloatalignment",
 		"body":[
 			"\\setfloatalignment{${1:pos%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,7 +79,8 @@
 			"\\begin{fullwidth}",
 				"\t$1",
 			"\\end{fullwidth}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -81,27 +90,19 @@
 			"\\begin{marginfigure}",
 				"\t$1",
 			"\\end{marginfigure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"margintable":{
-		"prefix":"margintable",
-		"body":[
-			"\\begin{margintable}",
-				"\t$1",
-			"\\end{margintable}"
-		]
-	},
-
-
-	"marginfigure":{
+	"marginfigure[]":{
 		"prefix":"marginfigure",
 		"body":[
 			"\\begin{marginfigure}",
-				"\t$1",
+				"\t[${1:offset%l}]",
 			"\\end{marginfigure}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -111,6 +112,18 @@
 			"\\begin{margintable}",
 				"\t$1",
 			"\\end{margintable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"margintable[]":{
+		"prefix":"margintable",
+		"body":[
+			"\\begin{margintable}",
+				"\t[${1:offset%l}]",
+			"\\end{margintable}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

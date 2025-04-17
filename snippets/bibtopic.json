@@ -5,7 +5,8 @@
 		"prefix":"btPrintCited",
 		"body":[
 			"\\btPrintCited"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"btPrintNotCited",
 		"body":[
 			"\\btPrintNotCited"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"btPrintAll",
 		"body":[
 			"\\btPrintAll"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"thebtauxfile",
 		"body":[
 			"\\thebtauxfile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"btBegThbCmd",
 		"body":[
 			"\\btBegThbCmd"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"btCiteSect",
 		"body":[
 			"\\btCiteSect{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"btGetVal",
 		"body":[
 			"\\btGetVal{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"btRef",
 		"body":[
 			"\\btRef{${1:key%plain}}{${2:type}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,17 +77,30 @@
 		"prefix":"btretval",
 		"body":[
 			"\\btretval"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"btSect":{
+	"btSect{}":{
 		"prefix":"btSect",
 		"body":[
 			"\\begin{btSect}",
-				"\t$1",
+				"\t{${1:bib file}}",
 			"\\end{btSect}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"btSect[]{}":{
+		"prefix":"btSect",
+		"body":[
+			"\\begin{btSect}",
+				"\t[${2:style}]{${1:bib file}}",
+			"\\end{btSect}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -89,16 +110,7 @@
 			"\\begin{btUnit}",
 				"\t$1",
 			"\\end{btUnit}"
-		]
-	},
-
-
-	"btSect":{
-		"prefix":"btSect",
-		"body":[
-			"\\begin{btSect}",
-				"\t$1",
-			"\\end{btSect}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

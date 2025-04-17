@@ -5,127 +5,8 @@
 		"prefix":"ProvidesPackageSVN",
 		"body":[
 			"\\ProvidesPackageSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
-		]
-	},
-
-
-	"ProvidesClassSVN{}":{
-		"prefix":"ProvidesClassSVN",
-		"body":[
-			"\\ProvidesClassSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
-		]
-	},
-
-
-	"ProvidesFileSVN{}":{
-		"prefix":"ProvidesFileSVN",
-		"body":[
-			"\\ProvidesFileSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
-		]
-	},
-
-
-	"rev":{
-		"prefix":"rev",
-		"body":[
-			"\\rev"
-		]
-	},
-
-
-	"Rev":{
-		"prefix":"Rev",
-		"body":[
-			"\\Rev"
-		]
-	},
-
-
-	"revinfo":{
-		"prefix":"revinfo",
-		"body":[
-			"\\revinfo"
-		]
-	},
-
-
-	"filebase":{
-		"prefix":"filebase",
-		"body":[
-			"\\filebase"
-		]
-	},
-
-
-	"fileext":{
-		"prefix":"fileext",
-		"body":[
-			"\\fileext"
-		]
-	},
-
-
-	"filename":{
-		"prefix":"filename",
-		"body":[
-			"\\filename"
-		]
-	},
-
-
-	"filedate":{
-		"prefix":"filedate",
-		"body":[
-			"\\filedate"
-		]
-	},
-
-
-	"filerev":{
-		"prefix":"filerev",
-		"body":[
-			"\\filerev"
-		]
-	},
-
-
-	"fileversion":{
-		"prefix":"fileversion",
-		"body":[
-			"\\fileversion"
-		]
-	},
-
-
-	"filetoday":{
-		"prefix":"filetoday",
-		"body":[
-			"\\filetoday"
-		]
-	},
-
-
-	"GetFileInfoSVN{}":{
-		"prefix":"GetFileInfoSVN",
-		"body":[
-			"\\GetFileInfoSVN{${1:name}}"
-		]
-	},
-
-
-	"DefineFileInfoSVN":{
-		"prefix":"DefineFileInfoSVN",
-		"body":[
-			"\\DefineFileInfoSVN"
-		]
-	},
-
-
-	"GetFileInfoSVN*":{
-		"prefix":"*GetFileInfoSVN",
-		"body":[
-			"\\GetFileInfoSVN*"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +14,8 @@
 		"prefix":"ProvidesPackageSVN",
 		"body":[
 			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +23,8 @@
 		"prefix":"ProvidesPackageSVN",
 		"body":[
 			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +32,17 @@
 		"prefix":"ProvidesPackageSVN",
 		"body":[
 			"\\ProvidesPackageSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvidesClassSVN{}":{
+		"prefix":"ProvidesClassSVN",
+		"body":[
+			"\\ProvidesClassSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +50,8 @@
 		"prefix":"ProvidesClassSVN",
 		"body":[
 			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +59,8 @@
 		"prefix":"ProvidesClassSVN",
 		"body":[
 			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +68,17 @@
 		"prefix":"ProvidesClassSVN",
 		"body":[
 			"\\ProvidesClassSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvidesFileSVN{}":{
+		"prefix":"ProvidesFileSVN",
+		"body":[
+			"\\ProvidesFileSVN{$Id: %<name%> %<revision%> %<date%> %<time%> %<author%>$}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +86,8 @@
 		"prefix":"ProvidesFileSVN",
 		"body":[
 			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +95,8 @@
 		"prefix":"ProvidesFileSVN",
 		"body":[
 			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +104,125 @@
 		"prefix":"ProvidesFileSVN",
 		"body":[
 			"\\ProvidesFileSVN[${1:filename}]{$Id: %<keywords%>$}[${2:version}][${3:description}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rev":{
+		"prefix":"rev",
+		"body":[
+			"\\rev"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Rev":{
+		"prefix":"Rev",
+		"body":[
+			"\\Rev"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"revinfo":{
+		"prefix":"revinfo",
+		"body":[
+			"\\revinfo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filebase":{
+		"prefix":"filebase",
+		"body":[
+			"\\filebase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileext":{
+		"prefix":"fileext",
+		"body":[
+			"\\fileext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filename":{
+		"prefix":"filename",
+		"body":[
+			"\\filename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filedate":{
+		"prefix":"filedate",
+		"body":[
+			"\\filedate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filerev":{
+		"prefix":"filerev",
+		"body":[
+			"\\filerev"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileversion":{
+		"prefix":"fileversion",
+		"body":[
+			"\\fileversion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filetoday":{
+		"prefix":"filetoday",
+		"body":[
+			"\\filetoday"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetFileInfoSVN{}":{
+		"prefix":"GetFileInfoSVN",
+		"body":[
+			"\\GetFileInfoSVN{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetFileInfoSVN*":{
+		"prefix":"*GetFileInfoSVN",
+		"body":[
+			"\\GetFileInfoSVN*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DefineFileInfoSVN":{
+		"prefix":"DefineFileInfoSVN",
+		"body":[
+			"\\DefineFileInfoSVN"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,6 +230,7 @@
 		"prefix":"DefineFileInfoSVN",
 		"body":[
 			"\\DefineFileInfoSVN[${1:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

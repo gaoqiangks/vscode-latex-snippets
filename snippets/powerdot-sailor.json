@@ -1,142 +1,156 @@
 {
 
 
-	"titleslide":{
+	"titleslide{}":{
 		"prefix":"titleslide",
 		"body":[
 			"\\begin{titleslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{titleslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"basic":{
-		"prefix":"basic",
-		"body":[
-			"\\begin{basic}",
-				"\t$1",
-			"\\end{basic}"
-		]
-	},
-
-
-	"topframe":{
-		"prefix":"topframe",
-		"body":[
-			"\\begin{topframe}",
-				"\t$1",
-			"\\end{topframe}"
-		]
-	},
-
-
-	"wideslide":{
-		"prefix":"wideslide",
-		"body":[
-			"\\begin{wideslide}",
-				"\t$1",
-			"\\end{wideslide}"
-		]
-	},
-
-
-	"slide":{
-		"prefix":"slide",
-		"body":[
-			"\\begin{slide}",
-				"\t$1",
-			"\\end{slide}"
-		]
-	},
-
-
-	"sectionslide":{
-		"prefix":"sectionslide",
-		"body":[
-			"\\begin{sectionslide}",
-				"\t$1",
-			"\\end{sectionslide}"
-		]
-	},
-
-
-	"sectionwideslide":{
-		"prefix":"sectionwideslide",
-		"body":[
-			"\\begin{sectionwideslide}",
-				"\t$1",
-			"\\end{sectionwideslide}"
-		]
-	},
-
-
-	"titleslide":{
+	"titleslide[]{}":{
 		"prefix":"titleslide",
 		"body":[
 			"\\begin{titleslide}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:title}}",
 			"\\end{titleslide}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"basic":{
+	"basic{}":{
 		"prefix":"basic",
 		"body":[
 			"\\begin{basic}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{basic}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"topframe":{
+	"basic[]{}":{
+		"prefix":"basic",
+		"body":[
+			"\\begin{basic}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{basic}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"topframe{}":{
 		"prefix":"topframe",
 		"body":[
 			"\\begin{topframe}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{topframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wideslide":{
+	"topframe[]{}":{
+		"prefix":"topframe",
+		"body":[
+			"\\begin{topframe}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{topframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wideslide{}":{
 		"prefix":"wideslide",
 		"body":[
 			"\\begin{wideslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{wideslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"slide":{
+	"wideslide[]{}":{
+		"prefix":"wideslide",
+		"body":[
+			"\\begin{wideslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{wideslide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"slide{}":{
 		"prefix":"slide",
 		"body":[
 			"\\begin{slide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{slide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sectionslide":{
+	"slide[]{}":{
+		"prefix":"slide",
+		"body":[
+			"\\begin{slide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{slide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sectionslide{}":{
 		"prefix":"sectionslide",
 		"body":[
 			"\\begin{sectionslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{sectionslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sectionwideslide":{
+	"sectionslide[]{}":{
+		"prefix":"sectionslide",
+		"body":[
+			"\\begin{sectionslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{sectionslide}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sectionwideslide{}":{
 		"prefix":"sectionwideslide",
 		"body":[
 			"\\begin{sectionwideslide}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{sectionwideslide}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionwideslide[]{}":{
+		"prefix":"sectionwideslide",
+		"body":[
+			"\\begin{sectionwideslide}",
+				"\t[${2:options%keyvals}]{${1:title}}",
+			"\\end{sectionwideslide}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

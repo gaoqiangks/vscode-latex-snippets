@@ -5,255 +5,8 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure{${1:figure%text}}"
-		]
-	},
-
-
-	"subtable{}":{
-		"prefix":"subtable",
-		"body":[
-			"\\subtable{${1:figure%text}}"
-		]
-	},
-
-
-	"thesubfigure":{
-		"prefix":"thesubfigure",
-		"body":[
-			"\\thesubfigure"
-		]
-	},
-
-
-	"thesubtable":{
-		"prefix":"thesubtable",
-		"body":[
-			"\\thesubtable"
-		]
-	},
-
-
-	"subfigtopskip":{
-		"prefix":"subfigtopskip",
-		"body":[
-			"\\subfigtopskip"
-		]
-	},
-
-
-	"subfigcapskip":{
-		"prefix":"subfigcapskip",
-		"body":[
-			"\\subfigcapskip"
-		]
-	},
-
-
-	"subfigcaptopadj":{
-		"prefix":"subfigcaptopadj",
-		"body":[
-			"\\subfigcaptopadj"
-		]
-	},
-
-
-	"subfigbottomskip":{
-		"prefix":"subfigbottomskip",
-		"body":[
-			"\\subfigbottomskip"
-		]
-	},
-
-
-	"subfigcapmargin":{
-		"prefix":"subfigcapmargin",
-		"body":[
-			"\\subfigcapmargin"
-		]
-	},
-
-
-	"subfiglabelskip":{
-		"prefix":"subfiglabelskip",
-		"body":[
-			"\\subfiglabelskip"
-		]
-	},
-
-
-	"subref{}":{
-		"prefix":"subref",
-		"body":[
-			"\\subref{${1:label}}"
-		]
-	},
-
-
-	"Subref{}":{
-		"prefix":"Subref",
-		"body":[
-			"\\Subref{${1:label}}"
-		]
-	},
-
-
-	"listsubcaptions":{
-		"prefix":"listsubcaptions",
-		"body":[
-			"\\listsubcaptions"
-		]
-	},
-
-
-	"ifsubfiguretopcap":{
-		"prefix":"ifsubfiguretopcap",
-		"body":[
-			"\\ifsubfiguretopcap"
-		]
-	},
-
-
-	"subfiguretopcaptrue":{
-		"prefix":"subfiguretopcaptrue",
-		"body":[
-			"\\subfiguretopcaptrue"
-		]
-	},
-
-
-	"subfiguretopcapfalse":{
-		"prefix":"subfiguretopcapfalse",
-		"body":[
-			"\\subfiguretopcapfalse"
-		]
-	},
-
-
-	"ifsubtabletopcap":{
-		"prefix":"ifsubtabletopcap",
-		"body":[
-			"\\ifsubtabletopcap"
-		]
-	},
-
-
-	"subtabletopcaptrue":{
-		"prefix":"subtabletopcaptrue",
-		"body":[
-			"\\subtabletopcaptrue"
-		]
-	},
-
-
-	"subtabletopcapfalse":{
-		"prefix":"subtabletopcapfalse",
-		"body":[
-			"\\subtabletopcapfalse"
-		]
-	},
-
-
-	"iffiguretopcap":{
-		"prefix":"iffiguretopcap",
-		"body":[
-			"\\iffiguretopcap"
-		]
-	},
-
-
-	"figuretopcaptrue":{
-		"prefix":"figuretopcaptrue",
-		"body":[
-			"\\figuretopcaptrue"
-		]
-	},
-
-
-	"figuretopcapfalse":{
-		"prefix":"figuretopcapfalse",
-		"body":[
-			"\\figuretopcapfalse"
-		]
-	},
-
-
-	"figureotopcapfalse":{
-		"prefix":"figureotopcapfalse",
-		"body":[
-			"\\figureotopcapfalse"
-		]
-	},
-
-
-	"iftabletopcap":{
-		"prefix":"iftabletopcap",
-		"body":[
-			"\\iftabletopcap"
-		]
-	},
-
-
-	"tabletopcaptrue":{
-		"prefix":"tabletopcaptrue",
-		"body":[
-			"\\tabletopcaptrue"
-		]
-	},
-
-
-	"tabletopcapfalse":{
-		"prefix":"tabletopcapfalse",
-		"body":[
-			"\\tabletopcapfalse"
-		]
-	},
-
-
-	"label(){}":{
-		"prefix":"label",
-		"body":[
-			"\\label(${2:bookmark}){${1:key%labeldef}}"
-		]
-	},
-
-
-	"subcapfont":{
-		"prefix":"subcapfont",
-		"body":[
-			"\\subcapfont"
-		]
-	},
-
-
-	"subcaplabelfont":{
-		"prefix":"subcaplabelfont",
-		"body":[
-			"\\subcaplabelfont"
-		]
-	},
-
-
-	"subcapsize":{
-		"prefix":"subcapsize",
-		"body":[
-			"\\subcapsize"
-		]
-	},
-
-
-	"thelofdepth":{
-		"prefix":"thelofdepth",
-		"body":[
-			"\\thelofdepth"
-		]
-	},
-
-
-	"thelotdepth":{
-		"prefix":"thelotdepth",
-		"body":[
-			"\\thelotdepth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +14,8 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure[${2:caption%text}]{${1:figure%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +23,17 @@
 		"prefix":"subfigure",
 		"body":[
 			"\\subfigure[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtable{}":{
+		"prefix":"subtable",
+		"body":[
+			"\\subtable{${1:figure%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +41,8 @@
 		"prefix":"subtable",
 		"body":[
 			"\\subtable[${2:caption%text}]{${1:figure%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,6 +50,277 @@
 		"prefix":"subtable",
 		"body":[
 			"\\subtable[${2:listentry%text}][${3:caption%text}]{${1:figure%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thesubfigure":{
+		"prefix":"thesubfigure",
+		"body":[
+			"\\thesubfigure"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubtable":{
+		"prefix":"thesubtable",
+		"body":[
+			"\\thesubtable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigtopskip":{
+		"prefix":"subfigtopskip",
+		"body":[
+			"\\subfigtopskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigcapskip":{
+		"prefix":"subfigcapskip",
+		"body":[
+			"\\subfigcapskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigcaptopadj":{
+		"prefix":"subfigcaptopadj",
+		"body":[
+			"\\subfigcaptopadj"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigbottomskip":{
+		"prefix":"subfigbottomskip",
+		"body":[
+			"\\subfigbottomskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfigcapmargin":{
+		"prefix":"subfigcapmargin",
+		"body":[
+			"\\subfigcapmargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfiglabelskip":{
+		"prefix":"subfiglabelskip",
+		"body":[
+			"\\subfiglabelskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subref{}":{
+		"prefix":"subref",
+		"body":[
+			"\\subref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Subref{}":{
+		"prefix":"Subref",
+		"body":[
+			"\\Subref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listsubcaptions":{
+		"prefix":"listsubcaptions",
+		"body":[
+			"\\listsubcaptions"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifsubfiguretopcap":{
+		"prefix":"ifsubfiguretopcap",
+		"body":[
+			"\\ifsubfiguretopcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfiguretopcaptrue":{
+		"prefix":"subfiguretopcaptrue",
+		"body":[
+			"\\subfiguretopcaptrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subfiguretopcapfalse":{
+		"prefix":"subfiguretopcapfalse",
+		"body":[
+			"\\subfiguretopcapfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifsubtabletopcap":{
+		"prefix":"ifsubtabletopcap",
+		"body":[
+			"\\ifsubtabletopcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtabletopcaptrue":{
+		"prefix":"subtabletopcaptrue",
+		"body":[
+			"\\subtabletopcaptrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtabletopcapfalse":{
+		"prefix":"subtabletopcapfalse",
+		"body":[
+			"\\subtabletopcapfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iffiguretopcap":{
+		"prefix":"iffiguretopcap",
+		"body":[
+			"\\iffiguretopcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figuretopcaptrue":{
+		"prefix":"figuretopcaptrue",
+		"body":[
+			"\\figuretopcaptrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figuretopcapfalse":{
+		"prefix":"figuretopcapfalse",
+		"body":[
+			"\\figuretopcapfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figureotopcapfalse":{
+		"prefix":"figureotopcapfalse",
+		"body":[
+			"\\figureotopcapfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iftabletopcap":{
+		"prefix":"iftabletopcap",
+		"body":[
+			"\\iftabletopcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tabletopcaptrue":{
+		"prefix":"tabletopcaptrue",
+		"body":[
+			"\\tabletopcaptrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tabletopcapfalse":{
+		"prefix":"tabletopcapfalse",
+		"body":[
+			"\\tabletopcapfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"label(){}":{
+		"prefix":"label",
+		"body":[
+			"\\label(${2:bookmark}){${1:key%labeldef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcapfont":{
+		"prefix":"subcapfont",
+		"body":[
+			"\\subcapfont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcaplabelfont":{
+		"prefix":"subcaplabelfont",
+		"body":[
+			"\\subcaplabelfont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subcapsize":{
+		"prefix":"subcapsize",
+		"body":[
+			"\\subcapsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thelofdepth":{
+		"prefix":"thelofdepth",
+		"body":[
+			"\\thelofdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thelotdepth":{
+		"prefix":"thelotdepth",
+		"body":[
+			"\\thelotdepth"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,167 +5,8 @@
 		"prefix":"inputSAScode",
 		"body":[
 			"\\inputSAScode{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput{}":{
-		"prefix":"inputSASoutput",
-		"body":[
-			"\\inputSASoutput{${1:file}}"
-		]
-	},
-
-
-	"inputRcode{}":{
-		"prefix":"inputRcode",
-		"body":[
-			"\\inputRcode{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput{}":{
-		"prefix":"inputRoutput",
-		"body":[
-			"\\inputRoutput{${1:file}}"
-		]
-	},
-
-
-	"SASinline||":{
-		"prefix":"SASinline",
-		"body":[
-			"\\SASinline|${1:code}|"
-		]
-	},
-
-
-	"Rinline||":{
-		"prefix":"Rinline",
-		"body":[
-			"\\Rinline|${1:code}|"
-		]
-	},
-
-
-	"lstlgrindeffile":{
-		"prefix":"lstlgrindeffile",
-		"body":[
-			"\\lstlgrindeffile"
-		]
-	},
-
-
-	"lstdefineformat{}{}":{
-		"prefix":"lstdefineformat",
-		"body":[
-			"\\lstdefineformat{${1:name}}{${2:format}}"
-		]
-	},
-
-
-	"lstformatfiles":{
-		"prefix":"lstformatfiles",
-		"body":[
-			"\\lstformatfiles"
-		]
-	},
-
-
-	"SnRRcodename":{
-		"prefix":"SnRRcodename",
-		"body":[
-			"\\SnRRcodename"
-		]
-	},
-
-
-	"SnRSAScodename":{
-		"prefix":"SnRSAScodename",
-		"body":[
-			"\\SnRSAScodename"
-		]
-	},
-
-
-	"SnRRoutputname":{
-		"prefix":"SnRRoutputname",
-		"body":[
-			"\\SnRRoutputname"
-		]
-	},
-
-
-	"SnRSASoutputname":{
-		"prefix":"SnRSASoutputname",
-		"body":[
-			"\\SnRSASoutputname"
-		]
-	},
-
-
-	"inputSAScode*{}":{
-		"prefix":"*inputSAScode",
-		"body":[
-			"\\inputSAScode*{${1:file}}"
-		]
-	},
-
-
-	"inputSAScode*[]{}":{
-		"prefix":"*inputSAScode",
-		"body":[
-			"\\inputSAScode*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput*{}":{
-		"prefix":"*inputSASoutput",
-		"body":[
-			"\\inputSASoutput*{${1:file}}"
-		]
-	},
-
-
-	"inputSASoutput*[]{}":{
-		"prefix":"*inputSASoutput",
-		"body":[
-			"\\inputSASoutput*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRcode*{}":{
-		"prefix":"*inputRcode",
-		"body":[
-			"\\inputRcode*{${1:file}}"
-		]
-	},
-
-
-	"inputRcode*[]{}":{
-		"prefix":"*inputRcode",
-		"body":[
-			"\\inputRcode*[${2:options%keyvals}]{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput*{}":{
-		"prefix":"*inputRoutput",
-		"body":[
-			"\\inputRoutput*{${1:file}}"
-		]
-	},
-
-
-	"inputRoutput*[]{}":{
-		"prefix":"*inputRoutput",
-		"body":[
-			"\\inputRoutput*[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +14,35 @@
 		"prefix":"inputSAScode",
 		"body":[
 			"\\inputSAScode[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputSAScode*{}":{
+		"prefix":"*inputSAScode",
+		"body":[
+			"\\inputSAScode*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputSAScode*[]{}":{
+		"prefix":"*inputSAScode",
+		"body":[
+			"\\inputSAScode*[${2:options%keyvals}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputSASoutput{}":{
+		"prefix":"inputSASoutput",
+		"body":[
+			"\\inputSASoutput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +50,35 @@
 		"prefix":"inputSASoutput",
 		"body":[
 			"\\inputSASoutput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputSASoutput*{}":{
+		"prefix":"*inputSASoutput",
+		"body":[
+			"\\inputSASoutput*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputSASoutput*[]{}":{
+		"prefix":"*inputSASoutput",
+		"body":[
+			"\\inputSASoutput*[${2:options%keyvals}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputRcode{}":{
+		"prefix":"inputRcode",
+		"body":[
+			"\\inputRcode{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +86,35 @@
 		"prefix":"inputRcode",
 		"body":[
 			"\\inputRcode[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputRcode*{}":{
+		"prefix":"*inputRcode",
+		"body":[
+			"\\inputRcode*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputRcode*[]{}":{
+		"prefix":"*inputRcode",
+		"body":[
+			"\\inputRcode*[${2:options%keyvals}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputRoutput{}":{
+		"prefix":"inputRoutput",
+		"body":[
+			"\\inputRoutput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +122,35 @@
 		"prefix":"inputRoutput",
 		"body":[
 			"\\inputRoutput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputRoutput*{}":{
+		"prefix":"*inputRoutput",
+		"body":[
+			"\\inputRoutput*{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputRoutput*[]{}":{
+		"prefix":"*inputRoutput",
+		"body":[
+			"\\inputRoutput*[${2:options%keyvals}]{${1:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SASinline||":{
+		"prefix":"SASinline",
+		"body":[
+			"\\SASinline|${1:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +158,17 @@
 		"prefix":"SASinline",
 		"body":[
 			"\\SASinline[${1:options}]|${2:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rinline||":{
+		"prefix":"Rinline",
+		"body":[
+			"\\Rinline|${1:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +176,71 @@
 		"prefix":"Rinline",
 		"body":[
 			"\\Rinline[${1:options}]|${2:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lstlgrindeffile":{
+		"prefix":"lstlgrindeffile",
+		"body":[
+			"\\lstlgrindeffile"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lstdefineformat{}{}":{
+		"prefix":"lstdefineformat",
+		"body":[
+			"\\lstdefineformat{${1:name}}{${2:format}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lstformatfiles":{
+		"prefix":"lstformatfiles",
+		"body":[
+			"\\lstformatfiles"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SnRRcodename":{
+		"prefix":"SnRRcodename",
+		"body":[
+			"\\SnRRcodename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SnRSAScodename":{
+		"prefix":"SnRSAScodename",
+		"body":[
+			"\\SnRSAScodename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SnRRoutputname":{
+		"prefix":"SnRRoutputname",
+		"body":[
+			"\\SnRRoutputname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SnRSASoutputname":{
+		"prefix":"SnRSASoutputname",
+		"body":[
+			"\\SnRSASoutputname"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -223,37 +250,19 @@
 			"\\begin{SAScode}",
 				"\t$1",
 			"\\end{SAScode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"SASoutput":{
-		"prefix":"SASoutput",
+	"SAScode[]":{
+		"prefix":"SAScode",
 		"body":[
-			"\\begin{SASoutput}",
-				"\t$1",
-			"\\end{SASoutput}"
-		]
-	},
-
-
-	"Rcode":{
-		"prefix":"Rcode",
-		"body":[
-			"\\begin{Rcode}",
-				"\t$1",
-			"\\end{Rcode}"
-		]
-	},
-
-
-	"Routput":{
-		"prefix":"Routput",
-		"body":[
-			"\\begin{Routput}",
-				"\t$1",
-			"\\end{Routput}"
-		]
+			"\\begin{SAScode}",
+				"\t[${1:options%keyvals}]",
+			"\\end{SAScode}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -263,57 +272,19 @@
 			"\\begin{SAScode*}",
 				"\t$1",
 			"\\end{SAScode*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"SASoutput*":{
-		"prefix":"*SASoutput",
-		"body":[
-			"\\begin{SASoutput*}",
-				"\t$1",
-			"\\end{SASoutput*}"
-		]
-	},
-
-
-	"Rcode*":{
-		"prefix":"*Rcode",
-		"body":[
-			"\\begin{Rcode*}",
-				"\t$1",
-			"\\end{Rcode*}"
-		]
-	},
-
-
-	"Routput*":{
-		"prefix":"*Routput",
-		"body":[
-			"\\begin{Routput*}",
-				"\t$1",
-			"\\end{Routput*}"
-		]
-	},
-
-
-	"SAScode":{
-		"prefix":"SAScode",
-		"body":[
-			"\\begin{SAScode}",
-				"\t$1",
-			"\\end{SAScode}"
-		]
-	},
-
-
-	"SAScode*":{
-		"prefix":"SAScode",
+	"SAScode*[]":{
+		"prefix":"*SAScode",
 		"body":[
 			"\\begin{SAScode*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{SAScode*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -323,17 +294,41 @@
 			"\\begin{SASoutput}",
 				"\t$1",
 			"\\end{SASoutput}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SASoutput[]":{
+		"prefix":"SASoutput",
+		"body":[
+			"\\begin{SASoutput}",
+				"\t[${1:options%keyvals}]",
+			"\\end{SASoutput}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"SASoutput*":{
-		"prefix":"SASoutput",
+		"prefix":"*SASoutput",
 		"body":[
 			"\\begin{SASoutput*}",
 				"\t$1",
 			"\\end{SASoutput*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SASoutput*[]":{
+		"prefix":"*SASoutput",
+		"body":[
+			"\\begin{SASoutput*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{SASoutput*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -343,17 +338,41 @@
 			"\\begin{Rcode}",
 				"\t$1",
 			"\\end{Rcode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Rcode[]":{
+		"prefix":"Rcode",
+		"body":[
+			"\\begin{Rcode}",
+				"\t[${1:options%keyvals}]",
+			"\\end{Rcode}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"Rcode*":{
-		"prefix":"Rcode",
+		"prefix":"*Rcode",
 		"body":[
 			"\\begin{Rcode*}",
 				"\t$1",
 			"\\end{Rcode*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Rcode*[]":{
+		"prefix":"*Rcode",
+		"body":[
+			"\\begin{Rcode*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{Rcode*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -363,16 +382,40 @@
 			"\\begin{Routput}",
 				"\t$1",
 			"\\end{Routput}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Routput[]":{
+		"prefix":"Routput",
+		"body":[
+			"\\begin{Routput}",
+				"\t[${1:options%keyvals}]",
+			"\\end{Routput}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"Routput*":{
-		"prefix":"Routput",
+		"prefix":"*Routput",
 		"body":[
 			"\\begin{Routput*}",
 				"\t$1",
 			"\\end{Routput*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Routput*[]":{
+		"prefix":"*Routput",
+		"body":[
+			"\\begin{Routput*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{Routput*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

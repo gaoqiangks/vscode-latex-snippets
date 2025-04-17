@@ -5,191 +5,8 @@
 		"prefix":"attachfile",
 		"body":[
 			"\\attachfile{${1:file}}"
-		]
-	},
-
-
-	"bmstyle{}{}":{
-		"prefix":"bmstyle",
-		"body":[
-			"\\bmstyle{${1:level}}{${2:style%keyvals}}"
-		]
-	},
-
-
-	"backrefcolor{}":{
-		"prefix":"backrefcolor",
-		"body":[
-			"\\backrefcolor{${1:color}}"
-		]
-	},
-
-
-	"embeddedcolor{}":{
-		"prefix":"embeddedcolor",
-		"body":[
-			"\\embeddedcolor{${1:color}}"
-		]
-	},
-
-
-	"footnotecolor{}":{
-		"prefix":"footnotecolor",
-		"body":[
-			"\\footnotecolor{${1:color}}"
-		]
-	},
-
-
-	"tablenotecolor{}":{
-		"prefix":"tablenotecolor",
-		"body":[
-			"\\tablenotecolor{${1:color}}"
-		]
-	},
-
-
-	"backrefbordercolor{}":{
-		"prefix":"backrefbordercolor",
-		"body":[
-			"\\backrefbordercolor{${1:R G B}}"
-		]
-	},
-
-
-	"embeddedbordercolor{}":{
-		"prefix":"embeddedbordercolor",
-		"body":[
-			"\\embeddedbordercolor{${1:R G B}}"
-		]
-	},
-
-
-	"footnotebordercolor{}":{
-		"prefix":"footnotebordercolor",
-		"body":[
-			"\\footnotebordercolor{${1:R G B}}"
-		]
-	},
-
-
-	"tablenotebordercolor{}":{
-		"prefix":"tablenotebordercolor",
-		"body":[
-			"\\tablenotebordercolor{${1:R G B}}"
-		]
-	},
-
-
-	"embedfile{}":{
-		"prefix":"embedfile",
-		"body":[
-			"\\embedfile{${1:file}}"
-		]
-	},
-
-
-	"evenboxesstring{}":{
-		"prefix":"evenboxesstring",
-		"body":[
-			"\\evenboxesstring{${1:text%plain}}"
-		]
-	},
-
-
-	"file{}{}":{
-		"prefix":"file",
-		"body":[
-			"\\file{${1:file}}{${2:description}}"
-		]
-	},
-
-
-	"goto{}":{
-		"prefix":"goto",
-		"body":[
-			"\\goto{${1:text}}"
-		]
-	},
-
-
-	"gotoparent{}{}":{
-		"prefix":"gotoparent",
-		"body":[
-			"\\gotoparent{${1:destination}}{${2:text}}"
-		]
-	},
-
-
-	"listofattachments":{
-		"prefix":"listofattachments",
-		"body":[
-			"\\listofattachments"
-		]
-	},
-
-
-	"loaformat{}{}{}{}":{
-		"prefix":"loaformat",
-		"body":[
-			"\\loaformat{${1:ID}}{${2:type}}{${3:file}}{${4:options}}"
-		]
-	},
-
-
-	"odest{}{}":{
-		"prefix":"odest",
-		"body":[
-			"\\odest{${1:name}}{${2:offset%l}}"
-		]
-	},
-
-
-	"openaction{}":{
-		"prefix":"openaction",
-		"body":[
-			"\\openaction{${1:action}}"
-		]
-	},
-
-
-	"pagelabel{}":{
-		"prefix":"pagelabel",
-		"body":[
-			"\\pagelabel{${1:pagelabel}}"
-		]
-	},
-
-
-	"runattachment{}{}":{
-		"prefix":"runattachment",
-		"body":[
-			"\\runattachment{${1:ID}}{${2:text}}"
-		]
-	},
-
-
-	"currentpoint{}":{
-		"prefix":"currentpoint",
-		"body":[
-			"\\currentpoint{${1:linewidth}}"
-		]
-	},
-
-
-	"debug{}":{
-		"prefix":"debug",
-		"body":[
-			"\\debug{${1:warning%text}}"
-		]
-	},
-
-
-	"point":{
-		"prefix":"point",
-		"body":[
-			"\\point"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +14,98 @@
 		"prefix":"attachfile",
 		"body":[
 			"\\attachfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bmstyle{}{}":{
+		"prefix":"bmstyle",
+		"body":[
+			"\\bmstyle{${1:level}}{${2:style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"backrefcolor{}":{
+		"prefix":"backrefcolor",
+		"body":[
+			"\\backrefcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embeddedcolor{}":{
+		"prefix":"embeddedcolor",
+		"body":[
+			"\\embeddedcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotecolor{}":{
+		"prefix":"footnotecolor",
+		"body":[
+			"\\footnotecolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablenotecolor{}":{
+		"prefix":"tablenotecolor",
+		"body":[
+			"\\tablenotecolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"backrefbordercolor{}":{
+		"prefix":"backrefbordercolor",
+		"body":[
+			"\\backrefbordercolor{${1:R G B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embeddedbordercolor{}":{
+		"prefix":"embeddedbordercolor",
+		"body":[
+			"\\embeddedbordercolor{${1:R G B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotebordercolor{}":{
+		"prefix":"footnotebordercolor",
+		"body":[
+			"\\footnotebordercolor{${1:R G B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablenotebordercolor{}":{
+		"prefix":"tablenotebordercolor",
+		"body":[
+			"\\tablenotebordercolor{${1:R G B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embedfile{}":{
+		"prefix":"embedfile",
+		"body":[
+			"\\embedfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +113,35 @@
 		"prefix":"embedfile",
 		"body":[
 			"\\embedfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"evenboxesstring{}":{
+		"prefix":"evenboxesstring",
+		"body":[
+			"\\evenboxesstring{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"file{}{}":{
+		"prefix":"file",
+		"body":[
+			"\\file{${1:file}}{${2:description}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"goto{}":{
+		"prefix":"goto",
+		"body":[
+			"\\goto{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +149,62 @@
 		"prefix":"goto",
 		"body":[
 			"\\goto[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gotoparent{}{}":{
+		"prefix":"gotoparent",
+		"body":[
+			"\\gotoparent{${1:destination}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofattachments":{
+		"prefix":"listofattachments",
+		"body":[
+			"\\listofattachments"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"loaformat{}{}{}{}":{
+		"prefix":"loaformat",
+		"body":[
+			"\\loaformat{${1:ID}}{${2:type}}{${3:file}}{${4:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"odest{}{}":{
+		"prefix":"odest",
+		"body":[
+			"\\odest{${1:name}}{${2:offset%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"openaction{}":{
+		"prefix":"openaction",
+		"body":[
+			"\\openaction{${1:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagelabel{}":{
+		"prefix":"pagelabel",
+		"body":[
+			"\\pagelabel{${1:pagelabel}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,6 +212,43 @@
 		"prefix":"pagelabel",
 		"body":[
 			"\\pagelabel[${2:page}]{${1:pagelabel}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"runattachment{}{}":{
+		"prefix":"runattachment",
+		"body":[
+			"\\runattachment{${1:ID}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currentpoint{}":{
+		"prefix":"currentpoint",
+		"body":[
+			"\\currentpoint{${1:linewidth}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"debug{}":{
+		"prefix":"debug",
+		"body":[
+			"\\debug{${1:warning%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"point":{
+		"prefix":"point",
+		"body":[
+			"\\point"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

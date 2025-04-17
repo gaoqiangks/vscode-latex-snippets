@@ -5,7 +5,8 @@
 		"prefix":"readdef",
 		"body":[
 			"\\readdef{${1:file}}{${2:data-macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,167 +14,8 @@
 		"prefix":"readrecordarray",
 		"body":[
 			"\\readrecordarray{${1:file}}{${2:array-identifier%cmd}}"
-		]
-	},
-
-
-	"typesetarray{}":{
-		"prefix":"typesetarray",
-		"body":[
-			"\\typesetarray{${1:array-identifier}}"
-		]
-	},
-
-
-	"readarraysepchar{}":{
-		"prefix":"readarraysepchar",
-		"body":[
-			"\\readarraysepchar{${1:parsing-separator-char}}"
-		]
-	},
-
-
-	"readarrayinitvalue":{
-		"prefix":"readarrayinitvalue",
-		"body":[
-			"\\readarrayinitvalue"
-		]
-	},
-
-
-	"typesetcell{}":{
-		"prefix":"typesetcell",
-		"body":[
-			"\\typesetcell{${1:arg}}"
-		]
-	},
-
-
-	"typesetplanesepchar":{
-		"prefix":"typesetplanesepchar",
-		"body":[
-			"\\typesetplanesepchar"
-		]
-	},
-
-
-	"typesetrowsepchar":{
-		"prefix":"typesetrowsepchar",
-		"body":[
-			"\\typesetrowsepchar"
-		]
-	},
-
-
-	"typesetcolsepchar":{
-		"prefix":"typesetcolsepchar",
-		"body":[
-			"\\typesetcolsepchar"
-		]
-	},
-
-
-	"nocheckbounds":{
-		"prefix":"nocheckbounds",
-		"body":[
-			"\\nocheckbounds"
-		]
-	},
-
-
-	"checkbounds":{
-		"prefix":"checkbounds",
-		"body":[
-			"\\checkbounds"
-		]
-	},
-
-
-	"hypercheckbounds":{
-		"prefix":"hypercheckbounds",
-		"body":[
-			"\\hypercheckbounds"
-		]
-	},
-
-
-	"ifignoreblankreadarrayrecords":{
-		"prefix":"ifignoreblankreadarrayrecords",
-		"body":[
-			"\\ifignoreblankreadarrayrecords"
-		]
-	},
-
-
-	"ignoreblankreadarrayrecordstrue":{
-		"prefix":"ignoreblankreadarrayrecordstrue",
-		"body":[
-			"\\ignoreblankreadarrayrecordstrue"
-		]
-	},
-
-
-	"ignoreblankreadarrayrecordsfalse":{
-		"prefix":"ignoreblankreadarrayrecordsfalse",
-		"body":[
-			"\\ignoreblankreadarrayrecordsfalse"
-		]
-	},
-
-
-	"nrows":{
-		"prefix":"nrows",
-		"body":[
-			"\\nrows"
-		]
-	},
-
-
-	"ncols":{
-		"prefix":"ncols",
-		"body":[
-			"\\ncols"
-		]
-	},
-
-
-	"nrecords":{
-		"prefix":"nrecords",
-		"body":[
-			"\\nrecords"
-		]
-	},
-
-
-	"ArrayRecord":{
-		"prefix":"ArrayRecord",
-		"body":[
-			"\\ArrayRecord"
-		]
-	},
-
-
-	"readarraybackslash":{
-		"prefix":"readarraybackslash",
-		"body":[
-			"\\readarraybackslash"
-		]
-	},
-
-
-	"readarray*{}{}[]":{
-		"prefix":"*readarray",
-		"body":[
-			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
-		]
-	},
-
-
-	"readarray*{}{}[]":{
-		"prefix":"*readarray",
-		"body":[
-			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +23,8 @@
 		"prefix":"readarray",
 		"body":[
 			"\\readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +32,26 @@
 		"prefix":"readarray",
 		"body":[
 			"\\readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readarray*{}{}[]":{
+		"prefix":"*readarray",
+		"body":[
+			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"readarray*{}{}[]":{
+		"prefix":"*readarray",
+		"body":[
+			"\\readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -197,7 +59,8 @@
 		"prefix":"initarray",
 		"body":[
 			"\\initarray{${1:array-identifier%cmd}}[${2:rows,columns}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +68,8 @@
 		"prefix":"initarray",
 		"body":[
 			"\\initarray{${1:array-identifier%cmd}}[${2:planes,rows,columns}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +77,8 @@
 		"prefix":"mergearray",
 		"body":[
 			"\\mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:row,column}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +86,17 @@
 		"prefix":"mergearray",
 		"body":[
 			"\\mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:plane,row,column}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"typesetarray{}":{
+		"prefix":"typesetarray",
+		"body":[
+			"\\typesetarray{${1:array-identifier}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +104,8 @@
 		"prefix":"arraytomacro",
 		"body":[
 			"\\arraytomacro{${1:array-identifier}}[${3:row,column}]{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +113,8 @@
 		"prefix":"arraytomacro",
 		"body":[
 			"\\arraytomacro{${1:array-identifier}}[${3:plane,row,column}]{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +122,8 @@
 		"prefix":"setvalue",
 		"body":[
 			"\\setvalue{${1:array-identifier}}[${3:row,column}]{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +131,152 @@
 		"prefix":"setvalue",
 		"body":[
 			"\\setvalue{${1:array-identifier}}[${3:plane,row,column}]{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readarraysepchar{}":{
+		"prefix":"readarraysepchar",
+		"body":[
+			"\\readarraysepchar{${1:parsing-separator-char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readarrayinitvalue":{
+		"prefix":"readarrayinitvalue",
+		"body":[
+			"\\readarrayinitvalue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"typesetcell{}":{
+		"prefix":"typesetcell",
+		"body":[
+			"\\typesetcell{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"typesetplanesepchar":{
+		"prefix":"typesetplanesepchar",
+		"body":[
+			"\\typesetplanesepchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"typesetrowsepchar":{
+		"prefix":"typesetrowsepchar",
+		"body":[
+			"\\typesetrowsepchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"typesetcolsepchar":{
+		"prefix":"typesetcolsepchar",
+		"body":[
+			"\\typesetcolsepchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nocheckbounds":{
+		"prefix":"nocheckbounds",
+		"body":[
+			"\\nocheckbounds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"checkbounds":{
+		"prefix":"checkbounds",
+		"body":[
+			"\\checkbounds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hypercheckbounds":{
+		"prefix":"hypercheckbounds",
+		"body":[
+			"\\hypercheckbounds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifignoreblankreadarrayrecords":{
+		"prefix":"ifignoreblankreadarrayrecords",
+		"body":[
+			"\\ifignoreblankreadarrayrecords"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ignoreblankreadarrayrecordstrue":{
+		"prefix":"ignoreblankreadarrayrecordstrue",
+		"body":[
+			"\\ignoreblankreadarrayrecordstrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ignoreblankreadarrayrecordsfalse":{
+		"prefix":"ignoreblankreadarrayrecordsfalse",
+		"body":[
+			"\\ignoreblankreadarrayrecordsfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nrows":{
+		"prefix":"nrows",
+		"body":[
+			"\\nrows"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ncols":{
+		"prefix":"ncols",
+		"body":[
+			"\\ncols"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nrecords":{
+		"prefix":"nrecords",
+		"body":[
+			"\\nrecords"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ArrayRecord":{
+		"prefix":"ArrayRecord",
+		"body":[
+			"\\ArrayRecord"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,6 +284,16 @@
 		"prefix":"ArrayRecord",
 		"body":[
 			"\\ArrayRecord[${1:record}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readarraybackslash":{
+		"prefix":"readarraybackslash",
+		"body":[
+			"\\readarraybackslash"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

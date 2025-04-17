@@ -5,239 +5,8 @@
 		"prefix":"bookcovercomponent",
 		"body":[
 			"\\bookcovercomponent{${1:type%keyvals}}{${2:part}}{${3:content}}"
-		]
-	},
-
-
-	"partheight":{
-		"prefix":"partheight",
-		"body":[
-			"\\partheight"
-		]
-	},
-
-
-	"partwidth":{
-		"prefix":"partwidth",
-		"body":[
-			"\\partwidth"
-		]
-	},
-
-
-	"coverheight":{
-		"prefix":"coverheight",
-		"body":[
-			"\\coverheight"
-		]
-	},
-
-
-	"coverwidth":{
-		"prefix":"coverwidth",
-		"body":[
-			"\\coverwidth"
-		]
-	},
-
-
-	"spinewidth":{
-		"prefix":"spinewidth",
-		"body":[
-			"\\spinewidth"
-		]
-	},
-
-
-	"flapwidth":{
-		"prefix":"flapwidth",
-		"body":[
-			"\\flapwidth"
-		]
-	},
-
-
-	"wrapwidth":{
-		"prefix":"wrapwidth",
-		"body":[
-			"\\wrapwidth"
-		]
-	},
-
-
-	"bleedwidth":{
-		"prefix":"bleedwidth",
-		"body":[
-			"\\bleedwidth"
-		]
-	},
-
-
-	"marklength":{
-		"prefix":"marklength",
-		"body":[
-			"\\marklength"
-		]
-	},
-
-
-	"markthick":{
-		"prefix":"markthick",
-		"body":[
-			"\\markthick"
-		]
-	},
-
-
-	"bookcoverdescgeometry{}":{
-		"prefix":"bookcoverdescgeometry",
-		"body":[
-			"\\bookcoverdescgeometry{${1:geometry parameters%keyvals}}"
-		]
-	},
-
-
-	"showbookcoverparameters":{
-		"prefix":"showbookcoverparameters",
-		"body":[
-			"\\showbookcoverparameters"
-		]
-	},
-
-
-	"bookcovertrimmedpart{}":{
-		"prefix":"bookcovertrimmedpart",
-		"body":[
-			"\\bookcovertrimmedpart{${1:trimmed part}}"
-		]
-	},
-
-
-	"bookcovertrimmedpart{}":{
-		"prefix":"bookcovertrimmedpart",
-		"body":[
-			"\\bookcovertrimmedpart{${1:trimmed part}}"
-		]
-	},
-
-
-	"setbookcover{}":{
-		"prefix":"setbookcover",
-		"body":[
-			"\\setbookcover{${1:options%keyvals}}"
-		]
-	},
-
-
-	"newbookcoverpart{}{}":{
-		"prefix":"newbookcoverpart",
-		"body":[
-			"\\newbookcoverpart{${1:new part}}{${2:setting}}"
-		]
-	},
-
-
-	"renewbookcoverpart{}{}":{
-		"prefix":"renewbookcoverpart",
-		"body":[
-			"\\renewbookcoverpart{${1:defined part}}{${2:setting}}"
-		]
-	},
-
-
-	"setpartposx{}":{
-		"prefix":"setpartposx",
-		"body":[
-			"\\setpartposx{${1:coord x}}"
-		]
-	},
-
-
-	"setpartposy{}":{
-		"prefix":"setpartposy",
-		"body":[
-			"\\setpartposy{${1:coord y}}"
-		]
-	},
-
-
-	"setpartwidth{}":{
-		"prefix":"setpartwidth",
-		"body":[
-			"\\setpartwidth{${1:width}}"
-		]
-	},
-
-
-	"setpartheight{}":{
-		"prefix":"setpartheight",
-		"body":[
-			"\\setpartheight{${1:height}}"
-		]
-	},
-
-
-	"settrimmedpart{}{}{}{}":{
-		"prefix":"settrimmedpart",
-		"body":[
-			"\\settrimmedpart{${1:width minus}}{${2:height minus}}{${3:shift x}}{${4:shift y}}"
-		]
-	},
-
-
-	"newnamebookcoverpart{}{}":{
-		"prefix":"newnamebookcoverpart",
-		"body":[
-			"\\newnamebookcoverpart{${1:new part}}{${2:defined part}}"
-		]
-	},
-
-
-	"letnamebookcoverpart{}{}":{
-		"prefix":"letnamebookcoverpart",
-		"body":[
-			"\\letnamebookcoverpart{${1:new part}}{${2:defined part}}"
-		]
-	},
-
-
-	"newbookcovercomponenttype{}{}":{
-		"prefix":"newbookcovercomponenttype",
-		"body":[
-			"\\newbookcovercomponenttype{${1:new type%specialDef}}{${2:formatting}}"
-		]
-	},
-
-
-	"renewbookcovercomponenttype{}{}":{
-		"prefix":"renewbookcovercomponenttype",
-		"body":[
-			"\\renewbookcovercomponenttype{${1:defined type}}{${2:formatting}}"
-		]
-	},
-
-
-	"newnamebookcovercomponenttype{}{}":{
-		"prefix":"newnamebookcovercomponenttype",
-		"body":[
-			"\\newnamebookcovercomponenttype{${1:new type%specialDef}}{${2:defined type}}"
-		]
-	},
-
-
-	"letnamebookcovercomponenttype{}{}":{
-		"prefix":"letnamebookcovercomponenttype",
-		"body":[
-			"\\letnamebookcovercomponenttype{${1:new type%specialDef}}{${2:defined type}}"
-		]
-	},
-
-
-	"makebookcover":{
-		"prefix":"makebookcover",
-		"body":[
-			"\\makebookcover"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +14,125 @@
 		"prefix":"bookcovercomponent",
 		"body":[
 			"\\bookcovercomponent{${1:type%keyvals}}{${2:part}}[${4:left,bottom,right,top}]{${3:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"partheight":{
+		"prefix":"partheight",
+		"body":[
+			"\\partheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"partwidth":{
+		"prefix":"partwidth",
+		"body":[
+			"\\partwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coverheight":{
+		"prefix":"coverheight",
+		"body":[
+			"\\coverheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coverwidth":{
+		"prefix":"coverwidth",
+		"body":[
+			"\\coverwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spinewidth":{
+		"prefix":"spinewidth",
+		"body":[
+			"\\spinewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flapwidth":{
+		"prefix":"flapwidth",
+		"body":[
+			"\\flapwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wrapwidth":{
+		"prefix":"wrapwidth",
+		"body":[
+			"\\wrapwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bleedwidth":{
+		"prefix":"bleedwidth",
+		"body":[
+			"\\bleedwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marklength":{
+		"prefix":"marklength",
+		"body":[
+			"\\marklength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"markthick":{
+		"prefix":"markthick",
+		"body":[
+			"\\markthick"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bookcoverdescgeometry{}":{
+		"prefix":"bookcoverdescgeometry",
+		"body":[
+			"\\bookcoverdescgeometry{${1:geometry parameters%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showbookcoverparameters":{
+		"prefix":"showbookcoverparameters",
+		"body":[
+			"\\showbookcoverparameters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bookcovertrimmedpart{}":{
+		"prefix":"bookcovertrimmedpart",
+		"body":[
+			"\\bookcovertrimmedpart{${1:trimmed part}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +140,17 @@
 		"prefix":"bookcovertrimmedpart",
 		"body":[
 			"\\bookcovertrimmedpart{${1:trimmed part}}[${2:left,bottom,right,top}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bookcovertrimmedpart{}":{
+		"prefix":"bookcovertrimmedpart",
+		"body":[
+			"\\bookcovertrimmedpart{${1:trimmed part}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +158,98 @@
 		"prefix":"bookcovertrimmedpart",
 		"body":[
 			"\\bookcovertrimmedpart{${1:trimmed part}}[${2:left,bottom,right,top}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setbookcover{}":{
+		"prefix":"setbookcover",
+		"body":[
+			"\\setbookcover{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newbookcoverpart{}{}":{
+		"prefix":"newbookcoverpart",
+		"body":[
+			"\\newbookcoverpart{${1:new part}}{${2:setting}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewbookcoverpart{}{}":{
+		"prefix":"renewbookcoverpart",
+		"body":[
+			"\\renewbookcoverpart{${1:defined part}}{${2:setting}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpartposx{}":{
+		"prefix":"setpartposx",
+		"body":[
+			"\\setpartposx{${1:coord x}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpartposy{}":{
+		"prefix":"setpartposy",
+		"body":[
+			"\\setpartposy{${1:coord y}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpartwidth{}":{
+		"prefix":"setpartwidth",
+		"body":[
+			"\\setpartwidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpartheight{}":{
+		"prefix":"setpartheight",
+		"body":[
+			"\\setpartheight{${1:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"settrimmedpart{}{}{}{}":{
+		"prefix":"settrimmedpart",
+		"body":[
+			"\\settrimmedpart{${1:width minus}}{${2:height minus}}{${3:shift x}}{${4:shift y}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newnamebookcoverpart{}{}":{
+		"prefix":"newnamebookcoverpart",
+		"body":[
+			"\\newnamebookcoverpart{${1:new part}}{${2:defined part}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letnamebookcoverpart{}{}":{
+		"prefix":"letnamebookcoverpart",
+		"body":[
+			"\\letnamebookcoverpart{${1:new part}}{${2:defined part}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +257,53 @@
 		"prefix":"letnamebookcoverpart",
 		"body":[
 			"\\letnamebookcoverpart{${1:new part}}{${2:defined part}}[${3:left,bottom,right,top}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newbookcovercomponenttype{}{}":{
+		"prefix":"newbookcovercomponenttype",
+		"body":[
+			"\\newbookcovercomponenttype{${1:new type%specialDef}}{${2:formatting}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewbookcovercomponenttype{}{}":{
+		"prefix":"renewbookcovercomponenttype",
+		"body":[
+			"\\renewbookcovercomponenttype{${1:defined type}}{${2:formatting}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newnamebookcovercomponenttype{}{}":{
+		"prefix":"newnamebookcovercomponenttype",
+		"body":[
+			"\\newnamebookcovercomponenttype{${1:new type%specialDef}}{${2:defined type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letnamebookcovercomponenttype{}{}":{
+		"prefix":"letnamebookcovercomponenttype",
+		"body":[
+			"\\letnamebookcovercomponenttype{${1:new type%specialDef}}{${2:defined type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makebookcover":{
+		"prefix":"makebookcover",
+		"body":[
+			"\\makebookcover"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -279,17 +313,30 @@
 			"\\begin{bookcover}",
 				"\t$1",
 			"\\end{bookcover}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bookcoverelement":{
+	"bookcoverelement{}{}":{
 		"prefix":"bookcoverelement",
 		"body":[
 			"\\begin{bookcoverelement}",
-				"\t$1",
+				"\t{${1:type%keyvals}}{${2:part}}",
 			"\\end{bookcoverelement}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bookcoverelement{}{}[]":{
+		"prefix":"bookcoverelement",
+		"body":[
+			"\\begin{bookcoverelement}",
+				"\t{${1:type%keyvals}}{${2:part}}[${3:left,bottom,right,top}]",
+			"\\end{bookcoverelement}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -299,16 +346,7 @@
 			"\\begin{bookcoverdescription}",
 				"\t$1",
 			"\\end{bookcoverdescription}"
-		]
-	},
-
-
-	"bookcoverelement":{
-		"prefix":"bookcoverelement",
-		"body":[
-			"\\begin{bookcoverelement}",
-				"\t$1",
-			"\\end{bookcoverelement}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"adjustbox",
 		"body":[
 			"\\adjustbox{${1:options%keyvals}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,775 +14,8 @@
 		"prefix":"adjustimage",
 		"body":[
 			"\\adjustimage{${1:options%keyvals}}{${2:imagefile}}"
-		]
-	},
-
-
-	"newadjustboxenv{}{}":{
-		"prefix":"newadjustboxenv",
-		"body":[
-			"\\newadjustboxenv{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewadjustboxenv{}{}":{
-		"prefix":"renewadjustboxenv",
-		"body":[
-			"\\renewadjustboxenv{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"provideadjustboxenv{}{}":{
-		"prefix":"provideadjustboxenv",
-		"body":[
-			"\\provideadjustboxenv{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"declareadjustboxenv{}{}":{
-		"prefix":"declareadjustboxenv",
-		"body":[
-			"\\declareadjustboxenv{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newadjustboxcmd{}{}":{
-		"prefix":"newadjustboxcmd",
-		"body":[
-			"\\newadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewadjustboxcmd{}{}":{
-		"prefix":"renewadjustboxcmd",
-		"body":[
-			"\\renewadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"provideadjustboxcmd{}{}":{
-		"prefix":"provideadjustboxcmd",
-		"body":[
-			"\\provideadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"declareadjustboxcmd{}{}":{
-		"prefix":"declareadjustboxcmd",
-		"body":[
-			"\\declareadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newadjustimage{}{}":{
-		"prefix":"newadjustimage",
-		"body":[
-			"\\newadjustimage{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewadjustimage{}{}":{
-		"prefix":"renewadjustimage",
-		"body":[
-			"\\renewadjustimage{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"provideadjustimage{}{}":{
-		"prefix":"provideadjustimage",
-		"body":[
-			"\\provideadjustimage{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"declareadjustimage{}{}":{
-		"prefix":"declareadjustimage",
-		"body":[
-			"\\declareadjustimage{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"NewAdjustImage{}{}{}":{
-		"prefix":"NewAdjustImage",
-		"body":[
-			"\\NewAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"RenewAdjustImage{}{}{}":{
-		"prefix":"RenewAdjustImage",
-		"body":[
-			"\\RenewAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"ProvideAdjustImage{}{}{}":{
-		"prefix":"ProvideAdjustImage",
-		"body":[
-			"\\ProvideAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareAdjustImage{}{}{}":{
-		"prefix":"DeclareAdjustImage",
-		"body":[
-			"\\DeclareAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"adjustboxset{}":{
-		"prefix":"adjustboxset",
-		"body":[
-			"\\adjustboxset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"bgimagebox{}":{
-		"prefix":"bgimagebox",
-		"body":[
-			"\\bgimagebox{${1:imagefile}}"
-		]
-	},
-
-
-	"fgimagebox{}":{
-		"prefix":"fgimagebox",
-		"body":[
-			"\\fgimagebox{${1:imagefile}}"
-		]
-	},
-
-
-	"backgroundbox{}":{
-		"prefix":"backgroundbox",
-		"body":[
-			"\\backgroundbox{${1:content%text}}"
-		]
-	},
-
-
-	"foregroundbox{}":{
-		"prefix":"foregroundbox",
-		"body":[
-			"\\foregroundbox{${1:content%text}}"
-		]
-	},
-
-
-	"Width":{
-		"prefix":"Width",
-		"body":[
-			"\\Width"
-		]
-	},
-
-
-	"Height":{
-		"prefix":"Height",
-		"body":[
-			"\\Height"
-		]
-	},
-
-
-	"Depth":{
-		"prefix":"Depth",
-		"body":[
-			"\\Depth"
-		]
-	},
-
-
-	"Totalheight":{
-		"prefix":"Totalheight",
-		"body":[
-			"\\Totalheight"
-		]
-	},
-
-
-	"smallestside":{
-		"prefix":"smallestside",
-		"body":[
-			"\\smallestside"
-		]
-	},
-
-
-	"largestside":{
-		"prefix":"largestside",
-		"body":[
-			"\\largestside"
-		]
-	},
-
-
-	"Smallestside":{
-		"prefix":"Smallestside",
-		"body":[
-			"\\Smallestside"
-		]
-	},
-
-
-	"Largestside":{
-		"prefix":"Largestside",
-		"body":[
-			"\\Largestside"
-		]
-	},
-
-
-	"minsizebox{}{}{}":{
-		"prefix":"minsizebox",
-		"body":[
-			"\\minsizebox{${1:width}}{${2:height}}{${3:content%text}}"
-		]
-	},
-
-
-	"maxsizebox{}{}{}":{
-		"prefix":"maxsizebox",
-		"body":[
-			"\\maxsizebox{${1:width}}{${2:height}}{${3:content%text}}"
-		]
-	},
-
-
-	"rndcornersbox{}{}":{
-		"prefix":"rndcornersbox",
-		"body":[
-			"\\rndcornersbox{${1:length}}{${2:content%text}}"
-		]
-	},
-
-
-	"rndframebox{}{}":{
-		"prefix":"rndframebox",
-		"body":[
-			"\\rndframebox{${1:length}}{${2:content%text}}"
-		]
-	},
-
-
-	"rndfbox{}{}":{
-		"prefix":"rndfbox",
-		"body":[
-			"\\rndfbox{${1:length}}{${2:content%text}}"
-		]
-	},
-
-
-	"adjboxvtop":{
-		"prefix":"adjboxvtop",
-		"body":[
-			"\\adjboxvtop"
-		]
-	},
-
-
-	"adjboxvbottom":{
-		"prefix":"adjboxvbottom",
-		"body":[
-			"\\adjboxvbottom"
-		]
-	},
-
-
-	"adjboxvcenter":{
-		"prefix":"adjboxvcenter",
-		"body":[
-			"\\adjboxvcenter"
-		]
-	},
-
-
-	"centerbox{}":{
-		"prefix":"centerbox",
-		"body":[
-			"\\centerbox{${1:content%text}}"
-		]
-	},
-
-
-	"leftalignbox{}":{
-		"prefix":"leftalignbox",
-		"body":[
-			"\\leftalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"rightalignbox{}":{
-		"prefix":"rightalignbox",
-		"body":[
-			"\\rightalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"innersidebox{}":{
-		"prefix":"innersidebox",
-		"body":[
-			"\\innersidebox{${1:content%text}}"
-		]
-	},
-
-
-	"outersidebox{}":{
-		"prefix":"outersidebox",
-		"body":[
-			"\\outersidebox{${1:content%text}}"
-		]
-	},
-
-
-	"centerpagebox{}":{
-		"prefix":"centerpagebox",
-		"body":[
-			"\\centerpagebox{${1:content%text}}"
-		]
-	},
-
-
-	"pagecenterbox{}":{
-		"prefix":"pagecenterbox",
-		"body":[
-			"\\pagecenterbox{${1:content%text}}"
-		]
-	},
-
-
-	"pageleftalignbox{}":{
-		"prefix":"pageleftalignbox",
-		"body":[
-			"\\pageleftalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"pagerightalignbox{}":{
-		"prefix":"pagerightalignbox",
-		"body":[
-			"\\pagerightalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"pageinnerbox{}":{
-		"prefix":"pageinnerbox",
-		"body":[
-			"\\pageinnerbox{${1:content%text}}"
-		]
-	},
-
-
-	"pageouterbox{}":{
-		"prefix":"pageouterbox",
-		"body":[
-			"\\pageouterbox{${1:content%text}}"
-		]
-	},
-
-
-	"textareacenterbox{}":{
-		"prefix":"textareacenterbox",
-		"body":[
-			"\\textareacenterbox{${1:content%text}}"
-		]
-	},
-
-
-	"textarealeftalignbox{}":{
-		"prefix":"textarealeftalignbox",
-		"body":[
-			"\\textarealeftalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"textarearightalignbox{}":{
-		"prefix":"textarearightalignbox",
-		"body":[
-			"\\textarearightalignbox{${1:content%text}}"
-		]
-	},
-
-
-	"textareainnerbox{}":{
-		"prefix":"textareainnerbox",
-		"body":[
-			"\\textareainnerbox{${1:content%text}}"
-		]
-	},
-
-
-	"textareaouterbox{}":{
-		"prefix":"textareaouterbox",
-		"body":[
-			"\\textareaouterbox{${1:content%text}}"
-		]
-	},
-
-
-	"lapbox{}{}":{
-		"prefix":"lapbox",
-		"body":[
-			"\\lapbox{${1:length}}{${2:content%text}}"
-		]
-	},
-
-
-	"bgcolorbox{}":{
-		"prefix":"bgcolorbox",
-		"body":[
-			"\\bgcolorbox{${1:color}}"
-		]
-	},
-
-
-	"pwidth":{
-		"prefix":"pwidth",
-		"body":[
-			"\\pwidth"
-		]
-	},
-
-
-	"pheight":{
-		"prefix":"pheight",
-		"body":[
-			"\\pheight"
-		]
-	},
-
-
-	"pdepth":{
-		"prefix":"pdepth",
-		"body":[
-			"\\pdepth"
-		]
-	},
-
-
-	"ptotalheight":{
-		"prefix":"ptotalheight",
-		"body":[
-			"\\ptotalheight"
-		]
-	},
-
-
-	"pdfpxdimen":{
-		"prefix":"pdfpxdimen",
-		"body":[
-			"\\pdfpxdimen"
-		]
-	},
-
-
-	"stackbox{}":{
-		"prefix":"stackbox",
-		"body":[
-			"\\stackbox{${1:content%text}}"
-		]
-	},
-
-
-	"adjnofloat":{
-		"prefix":"adjnofloat",
-		"body":[
-			"\\adjnofloat"
-		]
-	},
-
-
-	"endadjnofloat":{
-		"prefix":"endadjnofloat",
-		"body":[
-			"\\endadjnofloat"
-		]
-	},
-
-
-	"phantombox{}{}{}":{
-		"prefix":"phantombox",
-		"body":[
-			"\\phantombox{${1:width}}{${2:height}}{${3:depth}}"
-		]
-	},
-
-
-	"newadjustboxkey{}{}":{
-		"prefix":"newadjustboxkey",
-		"body":[
-			"\\newadjustboxkey{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"renewadjustboxkey{}{}":{
-		"prefix":"renewadjustboxkey",
-		"body":[
-			"\\renewadjustboxkey{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"provideadjustboxkey{}{}":{
-		"prefix":"provideadjustboxkey",
-		"body":[
-			"\\provideadjustboxkey{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"defadjustboxkey{}{}":{
-		"prefix":"defadjustboxkey",
-		"body":[
-			"\\defadjustboxkey{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"newadjustboxenv*{}{}":{
-		"prefix":"*newadjustboxenv",
-		"body":[
-			"\\newadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newadjustboxenv*{}[][]{}":{
-		"prefix":"*newadjustboxenv",
-		"body":[
-			"\\newadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewadjustboxenv*{}{}":{
-		"prefix":"*renewadjustboxenv",
-		"body":[
-			"\\renewadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewadjustboxenv*{}[][]{}":{
-		"prefix":"*renewadjustboxenv",
-		"body":[
-			"\\renewadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
-	},
-
-
-	"provideadjustboxenv*{}{}":{
-		"prefix":"*provideadjustboxenv",
-		"body":[
-			"\\provideadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"provideadjustboxenv*{}[][]{}":{
-		"prefix":"*provideadjustboxenv",
-		"body":[
-			"\\provideadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
-	},
-
-
-	"declareadjustboxenv*{}{}":{
-		"prefix":"*declareadjustboxenv",
-		"body":[
-			"\\declareadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"declareadjustboxenv*{}[][]{}":{
-		"prefix":"*declareadjustboxenv",
-		"body":[
-			"\\declareadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
-	},
-
-
-	"adjustboxset*{}":{
-		"prefix":"*adjustboxset",
-		"body":[
-			"\\adjustboxset*{${1:options%keyvals}}"
-		]
-	},
-
-
-	"bgimagebox*{}":{
-		"prefix":"*bgimagebox",
-		"body":[
-			"\\bgimagebox*{${1:imagefile}}"
-		]
-	},
-
-
-	"bgimagebox*[]{}":{
-		"prefix":"*bgimagebox",
-		"body":[
-			"\\bgimagebox*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"fgimagebox*{}":{
-		"prefix":"*fgimagebox",
-		"body":[
-			"\\fgimagebox*{${1:imagefile}}"
-		]
-	},
-
-
-	"fgimagebox*[]{}":{
-		"prefix":"*fgimagebox",
-		"body":[
-			"\\fgimagebox*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"backgroundbox*{}":{
-		"prefix":"*backgroundbox",
-		"body":[
-			"\\backgroundbox*{${1:content%text}}"
-		]
-	},
-
-
-	"backgroundbox*[]{}":{
-		"prefix":"*backgroundbox",
-		"body":[
-			"\\backgroundbox*[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"foregroundbox*{}":{
-		"prefix":"*foregroundbox",
-		"body":[
-			"\\foregroundbox*{${1:content%text}}"
-		]
-	},
-
-
-	"foregroundbox*[]{}":{
-		"prefix":"*foregroundbox",
-		"body":[
-			"\\foregroundbox*[${2:options%keyvals}]{${1:content%text}}"
-		]
-	},
-
-
-	"minsizebox*{}{}{}":{
-		"prefix":"*minsizebox",
-		"body":[
-			"\\minsizebox*{${1:width}}{${2:totalheight%l}}{${3:content%text}}"
-		]
-	},
-
-
-	"maxsizebox*{}{}{}":{
-		"prefix":"*maxsizebox",
-		"body":[
-			"\\maxsizebox*{${1:width}}{${2:totalheight%l}}{${3:content%text}}"
-		]
-	},
-
-
-	"bgcolorbox*{}":{
-		"prefix":"*bgcolorbox",
-		"body":[
-			"\\bgcolorbox*{${1:color macro}}"
-		]
-	},
-
-
-	"newadjustboxkey*{}{}":{
-		"prefix":"*newadjustboxkey",
-		"body":[
-			"\\newadjustboxkey*{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"newadjustboxkey*{}[]{}":{
-		"prefix":"*newadjustboxkey",
-		"body":[
-			"\\newadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
-		]
-	},
-
-
-	"renewadjustboxkey*{}{}":{
-		"prefix":"*renewadjustboxkey",
-		"body":[
-			"\\renewadjustboxkey*{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"renewadjustboxkey*{}[]{}":{
-		"prefix":"*renewadjustboxkey",
-		"body":[
-			"\\renewadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
-		]
-	},
-
-
-	"provideadjustboxkey*{}{}":{
-		"prefix":"*provideadjustboxkey",
-		"body":[
-			"\\provideadjustboxkey*{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"provideadjustboxkey*{}[]{}":{
-		"prefix":"*provideadjustboxkey",
-		"body":[
-			"\\provideadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
-		]
-	},
-
-
-	"defadjustboxkey*{}{}":{
-		"prefix":"*defadjustboxkey",
-		"body":[
-			"\\defadjustboxkey*{${1:keyname}}{${2:code}}"
-		]
-	},
-
-
-	"defadjustboxkey*{}[]{}":{
-		"prefix":"*defadjustboxkey",
-		"body":[
-			"\\defadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -789,7 +23,17 @@
 		"prefix":"adjincludegraphics",
 		"body":[
 			"\\adjincludegraphics[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newadjustboxenv{}{}":{
+		"prefix":"newadjustboxenv",
+		"body":[
+			"\\newadjustboxenv{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +41,35 @@
 		"prefix":"newadjustboxenv",
 		"body":[
 			"\\newadjustboxenv{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newadjustboxenv*{}{}":{
+		"prefix":"*newadjustboxenv",
+		"body":[
+			"\\newadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newadjustboxenv*{}[][]{}":{
+		"prefix":"*newadjustboxenv",
+		"body":[
+			"\\newadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewadjustboxenv{}{}":{
+		"prefix":"renewadjustboxenv",
+		"body":[
+			"\\renewadjustboxenv{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -805,7 +77,35 @@
 		"prefix":"renewadjustboxenv",
 		"body":[
 			"\\renewadjustboxenv{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewadjustboxenv*{}{}":{
+		"prefix":"*renewadjustboxenv",
+		"body":[
+			"\\renewadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewadjustboxenv*{}[][]{}":{
+		"prefix":"*renewadjustboxenv",
+		"body":[
+			"\\renewadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideadjustboxenv{}{}":{
+		"prefix":"provideadjustboxenv",
+		"body":[
+			"\\provideadjustboxenv{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -813,7 +113,35 @@
 		"prefix":"provideadjustboxenv",
 		"body":[
 			"\\provideadjustboxenv{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideadjustboxenv*{}{}":{
+		"prefix":"*provideadjustboxenv",
+		"body":[
+			"\\provideadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideadjustboxenv*{}[][]{}":{
+		"prefix":"*provideadjustboxenv",
+		"body":[
+			"\\provideadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"declareadjustboxenv{}{}":{
+		"prefix":"declareadjustboxenv",
+		"body":[
+			"\\declareadjustboxenv{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -821,7 +149,35 @@
 		"prefix":"declareadjustboxenv",
 		"body":[
 			"\\declareadjustboxenv{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declareadjustboxenv*{}{}":{
+		"prefix":"*declareadjustboxenv",
+		"body":[
+			"\\declareadjustboxenv*{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"declareadjustboxenv*{}[][]{}":{
+		"prefix":"*declareadjustboxenv",
+		"body":[
+			"\\declareadjustboxenv*{${1:envname}}[${3:num}][${4:default}]{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newadjustboxcmd{}{}":{
+		"prefix":"newadjustboxcmd",
+		"body":[
+			"\\newadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -829,7 +185,17 @@
 		"prefix":"newadjustboxcmd",
 		"body":[
 			"\\newadjustboxcmd{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewadjustboxcmd{}{}":{
+		"prefix":"renewadjustboxcmd",
+		"body":[
+			"\\renewadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -837,7 +203,17 @@
 		"prefix":"renewadjustboxcmd",
 		"body":[
 			"\\renewadjustboxcmd{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideadjustboxcmd{}{}":{
+		"prefix":"provideadjustboxcmd",
+		"body":[
+			"\\provideadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -845,7 +221,17 @@
 		"prefix":"provideadjustboxcmd",
 		"body":[
 			"\\provideadjustboxcmd{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declareadjustboxcmd{}{}":{
+		"prefix":"declareadjustboxcmd",
+		"body":[
+			"\\declareadjustboxcmd{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -853,7 +239,17 @@
 		"prefix":"declareadjustboxcmd",
 		"body":[
 			"\\declareadjustboxcmd{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newadjustimage{}{}":{
+		"prefix":"newadjustimage",
+		"body":[
+			"\\newadjustimage{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -861,7 +257,17 @@
 		"prefix":"newadjustimage",
 		"body":[
 			"\\newadjustimage{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewadjustimage{}{}":{
+		"prefix":"renewadjustimage",
+		"body":[
+			"\\renewadjustimage{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -869,7 +275,17 @@
 		"prefix":"renewadjustimage",
 		"body":[
 			"\\renewadjustimage{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideadjustimage{}{}":{
+		"prefix":"provideadjustimage",
+		"body":[
+			"\\provideadjustimage{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -877,7 +293,17 @@
 		"prefix":"provideadjustimage",
 		"body":[
 			"\\provideadjustimage{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declareadjustimage{}{}":{
+		"prefix":"declareadjustimage",
+		"body":[
+			"\\declareadjustimage{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -885,7 +311,71 @@
 		"prefix":"declareadjustimage",
 		"body":[
 			"\\declareadjustimage{${1:cmd}}[${3:num}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewAdjustImage{}{}{}":{
+		"prefix":"NewAdjustImage",
+		"body":[
+			"\\NewAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RenewAdjustImage{}{}{}":{
+		"prefix":"RenewAdjustImage",
+		"body":[
+			"\\RenewAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProvideAdjustImage{}{}{}":{
+		"prefix":"ProvideAdjustImage",
+		"body":[
+			"\\ProvideAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareAdjustImage{}{}{}":{
+		"prefix":"DeclareAdjustImage",
+		"body":[
+			"\\DeclareAdjustImage{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adjustboxset{}":{
+		"prefix":"adjustboxset",
+		"body":[
+			"\\adjustboxset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adjustboxset*{}":{
+		"prefix":"*adjustboxset",
+		"body":[
+			"\\adjustboxset*{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bgimagebox{}":{
+		"prefix":"bgimagebox",
+		"body":[
+			"\\bgimagebox{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -893,7 +383,35 @@
 		"prefix":"bgimagebox",
 		"body":[
 			"\\bgimagebox[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgimagebox*{}":{
+		"prefix":"*bgimagebox",
+		"body":[
+			"\\bgimagebox*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bgimagebox*[]{}":{
+		"prefix":"*bgimagebox",
+		"body":[
+			"\\bgimagebox*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fgimagebox{}":{
+		"prefix":"fgimagebox",
+		"body":[
+			"\\fgimagebox{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -901,7 +419,35 @@
 		"prefix":"fgimagebox",
 		"body":[
 			"\\fgimagebox[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fgimagebox*{}":{
+		"prefix":"*fgimagebox",
+		"body":[
+			"\\fgimagebox*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fgimagebox*[]{}":{
+		"prefix":"*fgimagebox",
+		"body":[
+			"\\fgimagebox*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"backgroundbox{}":{
+		"prefix":"backgroundbox",
+		"body":[
+			"\\backgroundbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -909,7 +455,35 @@
 		"prefix":"backgroundbox",
 		"body":[
 			"\\backgroundbox[${2:options%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"backgroundbox*{}":{
+		"prefix":"*backgroundbox",
+		"body":[
+			"\\backgroundbox*{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"backgroundbox*[]{}":{
+		"prefix":"*backgroundbox",
+		"body":[
+			"\\backgroundbox*[${2:options%keyvals}]{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"foregroundbox{}":{
+		"prefix":"foregroundbox",
+		"body":[
+			"\\foregroundbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -917,7 +491,197 @@
 		"prefix":"foregroundbox",
 		"body":[
 			"\\foregroundbox[${2:options%keyvals}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"foregroundbox*{}":{
+		"prefix":"*foregroundbox",
+		"body":[
+			"\\foregroundbox*{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"foregroundbox*[]{}":{
+		"prefix":"*foregroundbox",
+		"body":[
+			"\\foregroundbox*[${2:options%keyvals}]{${1:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Width":{
+		"prefix":"Width",
+		"body":[
+			"\\Width"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Height":{
+		"prefix":"Height",
+		"body":[
+			"\\Height"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Depth":{
+		"prefix":"Depth",
+		"body":[
+			"\\Depth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Totalheight":{
+		"prefix":"Totalheight",
+		"body":[
+			"\\Totalheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallestside":{
+		"prefix":"smallestside",
+		"body":[
+			"\\smallestside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"largestside":{
+		"prefix":"largestside",
+		"body":[
+			"\\largestside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Smallestside":{
+		"prefix":"Smallestside",
+		"body":[
+			"\\Smallestside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Largestside":{
+		"prefix":"Largestside",
+		"body":[
+			"\\Largestside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minsizebox{}{}{}":{
+		"prefix":"minsizebox",
+		"body":[
+			"\\minsizebox{${1:width}}{${2:height}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minsizebox*{}{}{}":{
+		"prefix":"*minsizebox",
+		"body":[
+			"\\minsizebox*{${1:width}}{${2:totalheight%l}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"maxsizebox{}{}{}":{
+		"prefix":"maxsizebox",
+		"body":[
+			"\\maxsizebox{${1:width}}{${2:height}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maxsizebox*{}{}{}":{
+		"prefix":"*maxsizebox",
+		"body":[
+			"\\maxsizebox*{${1:width}}{${2:totalheight%l}}{${3:content%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"rndcornersbox{}{}":{
+		"prefix":"rndcornersbox",
+		"body":[
+			"\\rndcornersbox{${1:length}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rndframebox{}{}":{
+		"prefix":"rndframebox",
+		"body":[
+			"\\rndframebox{${1:length}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rndfbox{}{}":{
+		"prefix":"rndfbox",
+		"body":[
+			"\\rndfbox{${1:length}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adjboxvtop":{
+		"prefix":"adjboxvtop",
+		"body":[
+			"\\adjboxvtop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adjboxvbottom":{
+		"prefix":"adjboxvbottom",
+		"body":[
+			"\\adjboxvbottom"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"adjboxvcenter":{
+		"prefix":"adjboxvcenter",
+		"body":[
+			"\\adjboxvcenter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centerbox{}":{
+		"prefix":"centerbox",
+		"body":[
+			"\\centerbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -925,7 +689,17 @@
 		"prefix":"centerbox",
 		"body":[
 			"\\centerbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"leftalignbox{}":{
+		"prefix":"leftalignbox",
+		"body":[
+			"\\leftalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -933,7 +707,17 @@
 		"prefix":"leftalignbox",
 		"body":[
 			"\\leftalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rightalignbox{}":{
+		"prefix":"rightalignbox",
+		"body":[
+			"\\rightalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -941,7 +725,17 @@
 		"prefix":"rightalignbox",
 		"body":[
 			"\\rightalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"innersidebox{}":{
+		"prefix":"innersidebox",
+		"body":[
+			"\\innersidebox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -949,7 +743,17 @@
 		"prefix":"innersidebox",
 		"body":[
 			"\\innersidebox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"outersidebox{}":{
+		"prefix":"outersidebox",
+		"body":[
+			"\\outersidebox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -957,7 +761,17 @@
 		"prefix":"outersidebox",
 		"body":[
 			"\\outersidebox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"centerpagebox{}":{
+		"prefix":"centerpagebox",
+		"body":[
+			"\\centerpagebox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -965,7 +779,17 @@
 		"prefix":"centerpagebox",
 		"body":[
 			"\\centerpagebox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pagecenterbox{}":{
+		"prefix":"pagecenterbox",
+		"body":[
+			"\\pagecenterbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -973,7 +797,17 @@
 		"prefix":"pagecenterbox",
 		"body":[
 			"\\pagecenterbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pageleftalignbox{}":{
+		"prefix":"pageleftalignbox",
+		"body":[
+			"\\pageleftalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -981,7 +815,17 @@
 		"prefix":"pageleftalignbox",
 		"body":[
 			"\\pageleftalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pagerightalignbox{}":{
+		"prefix":"pagerightalignbox",
+		"body":[
+			"\\pagerightalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -989,7 +833,17 @@
 		"prefix":"pagerightalignbox",
 		"body":[
 			"\\pagerightalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pageinnerbox{}":{
+		"prefix":"pageinnerbox",
+		"body":[
+			"\\pageinnerbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -997,7 +851,17 @@
 		"prefix":"pageinnerbox",
 		"body":[
 			"\\pageinnerbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pageouterbox{}":{
+		"prefix":"pageouterbox",
+		"body":[
+			"\\pageouterbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1005,7 +869,17 @@
 		"prefix":"pageouterbox",
 		"body":[
 			"\\pageouterbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textareacenterbox{}":{
+		"prefix":"textareacenterbox",
+		"body":[
+			"\\textareacenterbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1013,7 +887,17 @@
 		"prefix":"textareacenterbox",
 		"body":[
 			"\\textareacenterbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textarealeftalignbox{}":{
+		"prefix":"textarealeftalignbox",
+		"body":[
+			"\\textarealeftalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1021,7 +905,17 @@
 		"prefix":"textarealeftalignbox",
 		"body":[
 			"\\textarealeftalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textarearightalignbox{}":{
+		"prefix":"textarearightalignbox",
+		"body":[
+			"\\textarearightalignbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1029,7 +923,17 @@
 		"prefix":"textarearightalignbox",
 		"body":[
 			"\\textarearightalignbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textareainnerbox{}":{
+		"prefix":"textareainnerbox",
+		"body":[
+			"\\textareainnerbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1037,7 +941,17 @@
 		"prefix":"textareainnerbox",
 		"body":[
 			"\\textareainnerbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textareaouterbox{}":{
+		"prefix":"textareaouterbox",
+		"body":[
+			"\\textareaouterbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1045,7 +959,17 @@
 		"prefix":"textareaouterbox",
 		"body":[
 			"\\textareaouterbox[${2:width}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lapbox{}{}":{
+		"prefix":"lapbox",
+		"body":[
+			"\\lapbox{${1:length}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1053,7 +977,17 @@
 		"prefix":"lapbox",
 		"body":[
 			"\\lapbox[${3:width}]{${1:length}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgcolorbox{}":{
+		"prefix":"bgcolorbox",
+		"body":[
+			"\\bgcolorbox{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1061,7 +995,71 @@
 		"prefix":"bgcolorbox",
 		"body":[
 			"\\bgcolorbox[${2:model}]{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgcolorbox*{}":{
+		"prefix":"*bgcolorbox",
+		"body":[
+			"\\bgcolorbox*{${1:color macro}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pwidth":{
+		"prefix":"pwidth",
+		"body":[
+			"\\pwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pheight":{
+		"prefix":"pheight",
+		"body":[
+			"\\pheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdepth":{
+		"prefix":"pdepth",
+		"body":[
+			"\\pdepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptotalheight":{
+		"prefix":"ptotalheight",
+		"body":[
+			"\\ptotalheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfpxdimen":{
+		"prefix":"pdfpxdimen",
+		"body":[
+			"\\pdfpxdimen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stackbox{}":{
+		"prefix":"stackbox",
+		"body":[
+			"\\stackbox{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1069,7 +1067,8 @@
 		"prefix":"stackbox",
 		"body":[
 			"\\stackbox[${2:halign}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1077,7 +1076,44 @@
 		"prefix":"stackbox",
 		"body":[
 			"\\stackbox[${2:halign}][${3:valign}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"adjnofloat":{
+		"prefix":"adjnofloat",
+		"body":[
+			"\\adjnofloat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endadjnofloat":{
+		"prefix":"endadjnofloat",
+		"body":[
+			"\\endadjnofloat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phantombox{}{}{}":{
+		"prefix":"phantombox",
+		"body":[
+			"\\phantombox{${1:width}}{${2:height}}{${3:depth}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newadjustboxkey{}{}":{
+		"prefix":"newadjustboxkey",
+		"body":[
+			"\\newadjustboxkey{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1085,7 +1121,35 @@
 		"prefix":"newadjustboxkey",
 		"body":[
 			"\\newadjustboxkey{${1:keyname}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newadjustboxkey*{}{}":{
+		"prefix":"*newadjustboxkey",
+		"body":[
+			"\\newadjustboxkey*{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newadjustboxkey*{}[]{}":{
+		"prefix":"*newadjustboxkey",
+		"body":[
+			"\\newadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewadjustboxkey{}{}":{
+		"prefix":"renewadjustboxkey",
+		"body":[
+			"\\renewadjustboxkey{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1093,7 +1157,35 @@
 		"prefix":"renewadjustboxkey",
 		"body":[
 			"\\renewadjustboxkey{${1:keyname}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewadjustboxkey*{}{}":{
+		"prefix":"*renewadjustboxkey",
+		"body":[
+			"\\renewadjustboxkey*{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewadjustboxkey*{}[]{}":{
+		"prefix":"*renewadjustboxkey",
+		"body":[
+			"\\renewadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideadjustboxkey{}{}":{
+		"prefix":"provideadjustboxkey",
+		"body":[
+			"\\provideadjustboxkey{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1101,7 +1193,35 @@
 		"prefix":"provideadjustboxkey",
 		"body":[
 			"\\provideadjustboxkey{${1:keyname}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"provideadjustboxkey*{}{}":{
+		"prefix":"*provideadjustboxkey",
+		"body":[
+			"\\provideadjustboxkey*{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"provideadjustboxkey*{}[]{}":{
+		"prefix":"*provideadjustboxkey",
+		"body":[
+			"\\provideadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"defadjustboxkey{}{}":{
+		"prefix":"defadjustboxkey",
+		"body":[
+			"\\defadjustboxkey{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1109,97 +1229,213 @@
 		"prefix":"defadjustboxkey",
 		"body":[
 			"\\defadjustboxkey{${1:keyname}}[${3:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"adjustbox":{
+	"defadjustboxkey*{}{}":{
+		"prefix":"*defadjustboxkey",
+		"body":[
+			"\\defadjustboxkey*{${1:keyname}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"defadjustboxkey*{}[]{}":{
+		"prefix":"*defadjustboxkey",
+		"body":[
+			"\\defadjustboxkey*{${1:keyname}}[${3:default}]{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"adjustbox{}":{
 		"prefix":"adjustbox",
 		"body":[
 			"\\begin{adjustbox}",
-				"\t$1",
+				"\t{${1:options%keyvals}}",
 			"\\end{adjustbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bgimagebox":{
+	"bgimagebox{}":{
 		"prefix":"bgimagebox",
 		"body":[
 			"\\begin{bgimagebox}",
-				"\t$1",
+				"\t{${1:imagefile}}",
 			"\\end{bgimagebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bgimagebox*":{
+	"bgimagebox[]{}":{
 		"prefix":"bgimagebox",
 		"body":[
-			"\\begin{bgimagebox*}",
-				"\t$1",
-			"\\end{bgimagebox*}"
-		]
+			"\\begin{bgimagebox}",
+				"\t[${2:options%keyvals}]{${1:imagefile}}",
+			"\\end{bgimagebox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"fgimagebox":{
+	"bgimagebox*{}":{
+		"prefix":"*bgimagebox",
+		"body":[
+			"\\begin{bgimagebox*}",
+				"\t{${1:imagefile}}",
+			"\\end{bgimagebox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bgimagebox*[]{}":{
+		"prefix":"*bgimagebox",
+		"body":[
+			"\\begin{bgimagebox*}",
+				"\t[${2:options%keyvals}]{${1:imagefile}}",
+			"\\end{bgimagebox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fgimagebox{}":{
 		"prefix":"fgimagebox",
 		"body":[
 			"\\begin{fgimagebox}",
-				"\t$1",
+				"\t{${1:imagefile}}",
 			"\\end{fgimagebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"fgimagebox*":{
+	"fgimagebox[]{}":{
 		"prefix":"fgimagebox",
 		"body":[
-			"\\begin{fgimagebox*}",
-				"\t$1",
-			"\\end{fgimagebox*}"
-		]
+			"\\begin{fgimagebox}",
+				"\t[${2:options%keyvals}]{${1:imagefile}}",
+			"\\end{fgimagebox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"backgroundbox":{
+	"fgimagebox*{}":{
+		"prefix":"*fgimagebox",
+		"body":[
+			"\\begin{fgimagebox*}",
+				"\t{${1:imagefile}}",
+			"\\end{fgimagebox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fgimagebox*[]{}":{
+		"prefix":"*fgimagebox",
+		"body":[
+			"\\begin{fgimagebox*}",
+				"\t[${2:options%keyvals}]{${1:imagefile}}",
+			"\\end{fgimagebox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"backgroundbox{}":{
 		"prefix":"backgroundbox",
 		"body":[
 			"\\begin{backgroundbox}",
-				"\t$1",
+				"\t{${1:content%text}}",
 			"\\end{backgroundbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"backgroundbox*":{
+	"backgroundbox[]{}":{
 		"prefix":"backgroundbox",
 		"body":[
-			"\\begin{backgroundbox*}",
-				"\t$1",
-			"\\end{backgroundbox*}"
-		]
+			"\\begin{backgroundbox}",
+				"\t[${2:options%keyvals}]{${1:content%text}}",
+			"\\end{backgroundbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"foregroundbox":{
+	"backgroundbox*{}":{
+		"prefix":"*backgroundbox",
+		"body":[
+			"\\begin{backgroundbox*}",
+				"\t{${1:content%text}}",
+			"\\end{backgroundbox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"backgroundbox*[]{}":{
+		"prefix":"*backgroundbox",
+		"body":[
+			"\\begin{backgroundbox*}",
+				"\t[${2:options%keyvals}]{${1:content%text}}",
+			"\\end{backgroundbox*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"foregroundbox{}":{
 		"prefix":"foregroundbox",
 		"body":[
 			"\\begin{foregroundbox}",
-				"\t$1",
+				"\t{${1:content%text}}",
 			"\\end{foregroundbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"foregroundbox*":{
+	"foregroundbox[]{}":{
 		"prefix":"foregroundbox",
 		"body":[
+			"\\begin{foregroundbox}",
+				"\t[${2:options%keyvals}]{${1:content%text}}",
+			"\\end{foregroundbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"foregroundbox*{}":{
+		"prefix":"*foregroundbox",
+		"body":[
 			"\\begin{foregroundbox*}",
-				"\t$1",
+				"\t{${1:content%text}}",
 			"\\end{foregroundbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"foregroundbox*[]{}":{
+		"prefix":"*foregroundbox",
+		"body":[
+			"\\begin{foregroundbox*}",
+				"\t[${2:options%keyvals}]{${1:content%text}}",
+			"\\end{foregroundbox*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -1209,7 +1445,19 @@
 			"\\begin{centerbox}",
 				"\t$1",
 			"\\end{centerbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centerbox[]":{
+		"prefix":"centerbox",
+		"body":[
+			"\\begin{centerbox}",
+				"\t[${1:width}]",
+			"\\end{centerbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1219,7 +1467,19 @@
 			"\\begin{leftalignbox}",
 				"\t$1",
 			"\\end{leftalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"leftalignbox[]":{
+		"prefix":"leftalignbox",
+		"body":[
+			"\\begin{leftalignbox}",
+				"\t[${1:width}]",
+			"\\end{leftalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1229,7 +1489,19 @@
 			"\\begin{rightalignbox}",
 				"\t$1",
 			"\\end{rightalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rightalignbox[]":{
+		"prefix":"rightalignbox",
+		"body":[
+			"\\begin{rightalignbox}",
+				"\t[${1:width}]",
+			"\\end{rightalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1239,7 +1511,19 @@
 			"\\begin{innersidebox}",
 				"\t$1",
 			"\\end{innersidebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"innersidebox[]":{
+		"prefix":"innersidebox",
+		"body":[
+			"\\begin{innersidebox}",
+				"\t[${1:width}]",
+			"\\end{innersidebox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1249,7 +1533,19 @@
 			"\\begin{outersidebox}",
 				"\t$1",
 			"\\end{outersidebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"outersidebox[]":{
+		"prefix":"outersidebox",
+		"body":[
+			"\\begin{outersidebox}",
+				"\t[${1:width}]",
+			"\\end{outersidebox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1259,7 +1555,19 @@
 			"\\begin{centerpagebox}",
 				"\t$1",
 			"\\end{centerpagebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centerpagebox[]":{
+		"prefix":"centerpagebox",
+		"body":[
+			"\\begin{centerpagebox}",
+				"\t[${1:width}]",
+			"\\end{centerpagebox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1269,7 +1577,19 @@
 			"\\begin{pagecenterbox}",
 				"\t$1",
 			"\\end{pagecenterbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagecenterbox[]":{
+		"prefix":"pagecenterbox",
+		"body":[
+			"\\begin{pagecenterbox}",
+				"\t[${1:width}]",
+			"\\end{pagecenterbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1279,7 +1599,19 @@
 			"\\begin{pageleftalignbox}",
 				"\t$1",
 			"\\end{pageleftalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pageleftalignbox[]":{
+		"prefix":"pageleftalignbox",
+		"body":[
+			"\\begin{pageleftalignbox}",
+				"\t[${1:width}]",
+			"\\end{pageleftalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1289,7 +1621,19 @@
 			"\\begin{pagerightalignbox}",
 				"\t$1",
 			"\\end{pagerightalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagerightalignbox[]":{
+		"prefix":"pagerightalignbox",
+		"body":[
+			"\\begin{pagerightalignbox}",
+				"\t[${1:width}]",
+			"\\end{pagerightalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1299,7 +1643,19 @@
 			"\\begin{pageinnerbox}",
 				"\t$1",
 			"\\end{pageinnerbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pageinnerbox[]":{
+		"prefix":"pageinnerbox",
+		"body":[
+			"\\begin{pageinnerbox}",
+				"\t[${1:width}]",
+			"\\end{pageinnerbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1309,7 +1665,19 @@
 			"\\begin{pageouterbox}",
 				"\t$1",
 			"\\end{pageouterbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pageouterbox[]":{
+		"prefix":"pageouterbox",
+		"body":[
+			"\\begin{pageouterbox}",
+				"\t[${1:width}]",
+			"\\end{pageouterbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1319,7 +1687,19 @@
 			"\\begin{textareacenterbox}",
 				"\t$1",
 			"\\end{textareacenterbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textareacenterbox[]":{
+		"prefix":"textareacenterbox",
+		"body":[
+			"\\begin{textareacenterbox}",
+				"\t[${1:width}]",
+			"\\end{textareacenterbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1329,7 +1709,19 @@
 			"\\begin{textarealeftalignbox}",
 				"\t$1",
 			"\\end{textarealeftalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textarealeftalignbox[]":{
+		"prefix":"textarealeftalignbox",
+		"body":[
+			"\\begin{textarealeftalignbox}",
+				"\t[${1:width}]",
+			"\\end{textarealeftalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1339,7 +1731,19 @@
 			"\\begin{textarearightalignbox}",
 				"\t$1",
 			"\\end{textarearightalignbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textarearightalignbox[]":{
+		"prefix":"textarearightalignbox",
+		"body":[
+			"\\begin{textarearightalignbox}",
+				"\t[${1:width}]",
+			"\\end{textarearightalignbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1349,7 +1753,19 @@
 			"\\begin{textareainnerbox}",
 				"\t$1",
 			"\\end{textareainnerbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textareainnerbox[]":{
+		"prefix":"textareainnerbox",
+		"body":[
+			"\\begin{textareainnerbox}",
+				"\t[${1:width}]",
+			"\\end{textareainnerbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1359,27 +1775,52 @@
 			"\\begin{textareaouterbox}",
 				"\t$1",
 			"\\end{textareaouterbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bgcolorbox":{
+	"textareaouterbox[]":{
+		"prefix":"textareaouterbox",
+		"body":[
+			"\\begin{textareaouterbox}",
+				"\t[${1:width}]",
+			"\\end{textareaouterbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgcolorbox{}":{
 		"prefix":"bgcolorbox",
 		"body":[
 			"\\begin{bgcolorbox}",
-				"\t$1",
+				"\t{${1:color}}",
 			"\\end{bgcolorbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bgcolorbox*":{
+	"bgcolorbox[]{}":{
 		"prefix":"bgcolorbox",
 		"body":[
+			"\\begin{bgcolorbox}",
+				"\t[${2:model}]{${1:color}}",
+			"\\end{bgcolorbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bgcolorbox*{}":{
+		"prefix":"*bgcolorbox",
+		"body":[
 			"\\begin{bgcolorbox*}",
-				"\t$1",
+				"\t{${1:color mcro}}",
 			"\\end{bgcolorbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -1389,286 +1830,40 @@
 			"\\begin{stackbox}",
 				"\t$1",
 			"\\end{stackbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"adjnofloat":{
+	"stackbox[]":{
+		"prefix":"stackbox",
+		"body":[
+			"\\begin{stackbox}",
+				"\t[${1:halign}]",
+			"\\end{stackbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stackbox[][]":{
+		"prefix":"stackbox",
+		"body":[
+			"\\begin{stackbox}",
+				"\t[${1:halign}][${2:valign}]",
+			"\\end{stackbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"adjnofloat{}":{
 		"prefix":"adjnofloat",
 		"body":[
 			"\\begin{adjnofloat}",
-				"\t$1",
+				"\t{${1:float type}}",
 			"\\end{adjnofloat}"
-		]
-	},
-
-
-	"bgimagebox":{
-		"prefix":"bgimagebox",
-		"body":[
-			"\\begin{bgimagebox}",
-				"\t$1",
-			"\\end{bgimagebox}"
-		]
-	},
-
-
-	"bgimagebox*":{
-		"prefix":"bgimagebox",
-		"body":[
-			"\\begin{bgimagebox*}",
-				"\t$1",
-			"\\end{bgimagebox*}"
-		]
-	},
-
-
-	"fgimagebox":{
-		"prefix":"fgimagebox",
-		"body":[
-			"\\begin{fgimagebox}",
-				"\t$1",
-			"\\end{fgimagebox}"
-		]
-	},
-
-
-	"fgimagebox*":{
-		"prefix":"fgimagebox",
-		"body":[
-			"\\begin{fgimagebox*}",
-				"\t$1",
-			"\\end{fgimagebox*}"
-		]
-	},
-
-
-	"backgroundbox":{
-		"prefix":"backgroundbox",
-		"body":[
-			"\\begin{backgroundbox}",
-				"\t$1",
-			"\\end{backgroundbox}"
-		]
-	},
-
-
-	"backgroundbox*":{
-		"prefix":"backgroundbox",
-		"body":[
-			"\\begin{backgroundbox*}",
-				"\t$1",
-			"\\end{backgroundbox*}"
-		]
-	},
-
-
-	"foregroundbox":{
-		"prefix":"foregroundbox",
-		"body":[
-			"\\begin{foregroundbox}",
-				"\t$1",
-			"\\end{foregroundbox}"
-		]
-	},
-
-
-	"foregroundbox*":{
-		"prefix":"foregroundbox",
-		"body":[
-			"\\begin{foregroundbox*}",
-				"\t$1",
-			"\\end{foregroundbox*}"
-		]
-	},
-
-
-	"centerbox":{
-		"prefix":"centerbox",
-		"body":[
-			"\\begin{centerbox}",
-				"\t$1",
-			"\\end{centerbox}"
-		]
-	},
-
-
-	"leftalignbox":{
-		"prefix":"leftalignbox",
-		"body":[
-			"\\begin{leftalignbox}",
-				"\t$1",
-			"\\end{leftalignbox}"
-		]
-	},
-
-
-	"rightalignbox":{
-		"prefix":"rightalignbox",
-		"body":[
-			"\\begin{rightalignbox}",
-				"\t$1",
-			"\\end{rightalignbox}"
-		]
-	},
-
-
-	"innersidebox":{
-		"prefix":"innersidebox",
-		"body":[
-			"\\begin{innersidebox}",
-				"\t$1",
-			"\\end{innersidebox}"
-		]
-	},
-
-
-	"outersidebox":{
-		"prefix":"outersidebox",
-		"body":[
-			"\\begin{outersidebox}",
-				"\t$1",
-			"\\end{outersidebox}"
-		]
-	},
-
-
-	"centerpagebox":{
-		"prefix":"centerpagebox",
-		"body":[
-			"\\begin{centerpagebox}",
-				"\t$1",
-			"\\end{centerpagebox}"
-		]
-	},
-
-
-	"pagecenterbox":{
-		"prefix":"pagecenterbox",
-		"body":[
-			"\\begin{pagecenterbox}",
-				"\t$1",
-			"\\end{pagecenterbox}"
-		]
-	},
-
-
-	"pageleftalignbox":{
-		"prefix":"pageleftalignbox",
-		"body":[
-			"\\begin{pageleftalignbox}",
-				"\t$1",
-			"\\end{pageleftalignbox}"
-		]
-	},
-
-
-	"pagerightalignbox":{
-		"prefix":"pagerightalignbox",
-		"body":[
-			"\\begin{pagerightalignbox}",
-				"\t$1",
-			"\\end{pagerightalignbox}"
-		]
-	},
-
-
-	"pageinnerbox":{
-		"prefix":"pageinnerbox",
-		"body":[
-			"\\begin{pageinnerbox}",
-				"\t$1",
-			"\\end{pageinnerbox}"
-		]
-	},
-
-
-	"pageouterbox":{
-		"prefix":"pageouterbox",
-		"body":[
-			"\\begin{pageouterbox}",
-				"\t$1",
-			"\\end{pageouterbox}"
-		]
-	},
-
-
-	"textareacenterbox":{
-		"prefix":"textareacenterbox",
-		"body":[
-			"\\begin{textareacenterbox}",
-				"\t$1",
-			"\\end{textareacenterbox}"
-		]
-	},
-
-
-	"textarealeftalignbox":{
-		"prefix":"textarealeftalignbox",
-		"body":[
-			"\\begin{textarealeftalignbox}",
-				"\t$1",
-			"\\end{textarealeftalignbox}"
-		]
-	},
-
-
-	"textarearightalignbox":{
-		"prefix":"textarearightalignbox",
-		"body":[
-			"\\begin{textarearightalignbox}",
-				"\t$1",
-			"\\end{textarearightalignbox}"
-		]
-	},
-
-
-	"textareainnerbox":{
-		"prefix":"textareainnerbox",
-		"body":[
-			"\\begin{textareainnerbox}",
-				"\t$1",
-			"\\end{textareainnerbox}"
-		]
-	},
-
-
-	"textareaouterbox":{
-		"prefix":"textareaouterbox",
-		"body":[
-			"\\begin{textareaouterbox}",
-				"\t$1",
-			"\\end{textareaouterbox}"
-		]
-	},
-
-
-	"bgcolorbox":{
-		"prefix":"bgcolorbox",
-		"body":[
-			"\\begin{bgcolorbox}",
-				"\t$1",
-			"\\end{bgcolorbox}"
-		]
-	},
-
-
-	"stackbox":{
-		"prefix":"stackbox",
-		"body":[
-			"\\begin{stackbox}",
-				"\t$1",
-			"\\end{stackbox}"
-		]
-	},
-
-
-	"stackbox":{
-		"prefix":"stackbox",
-		"body":[
-			"\\begin{stackbox}",
-				"\t$1",
-			"\\end{stackbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

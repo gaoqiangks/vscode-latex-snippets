@@ -5,7 +5,8 @@
 		"prefix":"thesubequation",
 		"body":[
 			"\\thesubequation"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,27 +14,30 @@
 		"prefix":"themainequation",
 		"body":[
 			"\\themainequation"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"numcases":{
+	"numcases{}":{
 		"prefix":"numcases",
 		"body":[
 			"\\begin{numcases}",
-				"\t$1",
+				"\t{${1:left side}}",
 			"\\end{numcases}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subnumcases":{
+	"subnumcases{}":{
 		"prefix":"subnumcases",
 		"body":[
 			"\\begin{subnumcases}",
-				"\t$1",
+				"\t{${1:left side}}",
 			"\\end{subnumcases}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -43,7 +47,8 @@
 			"\\begin{subequations}",
 				"\t$1",
 			"\\end{subequations}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +58,7 @@
 			"\\begin{subeqnarray}",
 				"\t$1",
 			"\\end{subeqnarray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

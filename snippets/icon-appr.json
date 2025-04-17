@@ -5,39 +5,8 @@
 		"prefix":"embedIcon",
 		"body":[
 			"\\embedIcon{${1:imagefile}}"
-		]
-	},
-
-
-	"csOf{}":{
-		"prefix":"csOf",
-		"body":[
-			"\\csOf{${1:name}}"
-		]
-	},
-
-
-	"heightOf{}":{
-		"prefix":"heightOf",
-		"body":[
-			"\\heightOf{${1:name}}"
-		]
-	},
-
-
-	"widthOf{}":{
-		"prefix":"widthOf",
-		"body":[
-			"\\widthOf{${1:name}}"
-		]
-	},
-
-
-	"sortitem{}":{
-		"prefix":"sortitem",
-		"body":[
-			"\\sortitem{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,44 @@
 		"prefix":"embedIcon",
 		"body":[
 			"\\embedIcon[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csOf{}":{
+		"prefix":"csOf",
+		"body":[
+			"\\csOf{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"heightOf{}":{
+		"prefix":"heightOf",
+		"body":[
+			"\\heightOf{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"widthOf{}":{
+		"prefix":"widthOf",
+		"body":[
+			"\\widthOf{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sortitem{}":{
+		"prefix":"sortitem",
+		"body":[
+			"\\sortitem{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"sortitem",
 		"body":[
 			"\\sortitem[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -63,7 +70,8 @@
 			"\\begin{embedding}",
 				"\t$1",
 			"\\end{embedding}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -73,6 +81,7 @@
 			"\\begin{sortedlist}",
 				"\t$1",
 			"\\end{sortedlist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

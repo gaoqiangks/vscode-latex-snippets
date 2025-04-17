@@ -5,7 +5,8 @@
 		"prefix":"IfDefined",
 		"body":[
 			"\\IfDefined{${1:command}}{${2:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"IfUndefined",
 		"body":[
 			"\\IfUndefined{${1:command}}{${2:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"IfElseDefined",
 		"body":[
 			"\\IfElseDefined{${1:command}}{${2:code-defined}}{${3:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"IfElseUndefined",
 		"body":[
 			"\\IfElseUndefined{${1:command}}{${2:code-undefined}}{${3:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"IfMultDefined",
 		"body":[
 			"\\IfMultDefined{${1:list of commands%cmd}}{${2:code-defined}}{${3:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"IfDraft",
 		"body":[
 			"\\IfDraft{${1:draft-mode-active code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"IfNotDraft",
 		"body":[
 			"\\IfNotDraft{${1:draft-mode-disabled code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"IfNotDraftElse",
 		"body":[
 			"\\IfNotDraftElse{${1:draft-mode-active code}}{${2:draft-mode-disabled code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"IfPackageLoaded",
 		"body":[
 			"\\IfPackageLoaded{${1:package}}{${2:is-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"IfPackageNotLoaded",
 		"body":[
 			"\\IfPackageNotLoaded{${1:package}}{${2:is-not-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"IfPackagesLoaded",
 		"body":[
 			"\\IfPackagesLoaded{${1:list of packages}}{${2:all-are-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"IfPackagesNotLoaded",
 		"body":[
 			"\\IfPackagesNotLoaded{${1:list of packages}}{${2:none-are-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"IfElsePackageLoaded",
 		"body":[
 			"\\IfElsePackageLoaded{${1:package}}{${2:is-loaded code}}{${3:is-not-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"ExecuteAfterPackage",
 		"body":[
 			"\\ExecuteAfterPackage{${1:package}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"ExecuteBeforePackage",
 		"body":[
 			"\\ExecuteBeforePackage{${1:package}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"IfTikzLibraryLoaded",
 		"body":[
 			"\\IfTikzLibraryLoaded{${1:library}}{${2:if-loaded code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"IfColumntypeDefined",
 		"body":[
 			"\\IfColumntypeDefined{${1:column type}}{${2:code-defined}}{${3:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"IfColumntypesDefined",
 		"body":[
 			"\\IfColumntypesDefined{${1:column type}}{${2:code-undefined}}{${3:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"IfColorDefined",
 		"body":[
 			"\\IfColorDefined{${1:color}}{${2:code-defined}}{${3:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"IfColorsDefined",
 		"body":[
 			"\\IfColorsDefined{${1:color}}{${2:code-undefined}}{${3:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +185,8 @@
 		"prefix":"IfMathVersionDefined",
 		"body":[
 			"\\IfMathVersionDefined{${1:font version}}{${2:code-defined}}{${3:code-undefined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +194,8 @@
 		"prefix":"IfGlossariesStyleDefined",
 		"body":[
 			"\\IfGlossariesStyleDefined{${1:style name}}{${2:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +203,8 @@
 		"prefix":"IfBibEnvironmentDefined",
 		"body":[
 			"\\IfBibEnvironmentDefined{${1:envname}}{${2:code-defined}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +212,8 @@
 		"prefix":"SetTemplateDefinition",
 		"body":[
 			"\\SetTemplateDefinition{${1:group}}{${2:property}}{${3:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +221,8 @@
 		"prefix":"UseDefinition",
 		"body":[
 			"\\UseDefinition{${1:group}}{${2:property}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +230,8 @@
 		"prefix":"CheckIfColumntypeDefined",
 		"body":[
 			"\\CheckIfColumntypeDefined{${1:column type}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,6 +239,7 @@
 		"prefix":"isColumntypeDefined",
 		"body":[
 			"\\isColumntypeDefined{${1:column type}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

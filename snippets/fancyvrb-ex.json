@@ -5,27 +5,52 @@
 		"prefix":"showgrid",
 		"body":[
 			"\\showgrid"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PCenterExample":{
+	"PCenterExample()()":{
 		"prefix":"PCenterExample",
 		"body":[
 			"\\begin{PCenterExample}",
-				"\t$1",
+				"\t(${1:x1},${2:y1})(${3:x2},${4:y2})",
 			"\\end{PCenterExample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PSideBySideExample":{
+	"PCenterExample[]()()":{
+		"prefix":"PCenterExample",
+		"body":[
+			"\\begin{PCenterExample}",
+				"\t[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})",
+			"\\end{PCenterExample}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PSideBySideExample()()":{
 		"prefix":"PSideBySideExample",
 		"body":[
 			"\\begin{PSideBySideExample}",
-				"\t$1",
+				"\t(${1:x1},${2:y1})(${3:x2},${4:y2})",
 			"\\end{PSideBySideExample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSideBySideExample[]()()":{
+		"prefix":"PSideBySideExample",
+		"body":[
+			"\\begin{PSideBySideExample}",
+				"\t[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})",
+			"\\end{PSideBySideExample}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -35,57 +60,19 @@
 			"\\begin{Example}",
 				"\t$1",
 			"\\end{Example}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"CenterExample":{
-		"prefix":"CenterExample",
-		"body":[
-			"\\begin{CenterExample}",
-				"\t$1",
-			"\\end{CenterExample}"
-		]
-	},
-
-
-	"SideBySideExample":{
-		"prefix":"SideBySideExample",
-		"body":[
-			"\\begin{SideBySideExample}",
-				"\t$1",
-			"\\end{SideBySideExample}"
-		]
-	},
-
-
-	"PCenterExample":{
-		"prefix":"PCenterExample",
-		"body":[
-			"\\begin{PCenterExample}",
-				"\t$1",
-			"\\end{PCenterExample}"
-		]
-	},
-
-
-	"PSideBySideExample":{
-		"prefix":"PSideBySideExample",
-		"body":[
-			"\\begin{PSideBySideExample}",
-				"\t$1",
-			"\\end{PSideBySideExample}"
-		]
-	},
-
-
-	"Example":{
+	"Example[]":{
 		"prefix":"Example",
 		"body":[
 			"\\begin{Example}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{Example}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -95,7 +82,19 @@
 			"\\begin{CenterExample}",
 				"\t$1",
 			"\\end{CenterExample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CenterExample[]":{
+		"prefix":"CenterExample",
+		"body":[
+			"\\begin{CenterExample}",
+				"\t[${1:options%keyvals}]",
+			"\\end{CenterExample}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -105,6 +104,18 @@
 			"\\begin{SideBySideExample}",
 				"\t$1",
 			"\\end{SideBySideExample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SideBySideExample[]":{
+		"prefix":"SideBySideExample",
+		"body":[
+			"\\begin{SideBySideExample}",
+				"\t[${1:options%keyvals}]",
+			"\\end{SideBySideExample}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

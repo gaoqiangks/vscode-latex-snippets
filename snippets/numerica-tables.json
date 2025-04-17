@@ -1,43 +1,12 @@
 {
 
 
-	"tabulate*[]{}[]":{
-		"prefix":"*tabulate",
-		"body":[
-			"\\tabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"tabulate*[]{}[][]":{
-		"prefix":"*tabulate",
-		"body":[
-			"\\tabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
-	"nmcTabulate*[]{}[]":{
-		"prefix":"*nmcTabulate",
-		"body":[
-			"\\nmcTabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
-	},
-
-
-	"nmcTabulate*[]{}[][]":{
-		"prefix":"*nmcTabulate",
-		"body":[
-			"\\nmcTabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
-	},
-
-
 	"tabulate[]{}[]":{
 		"prefix":"tabulate",
 		"body":[
 			"\\tabulate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +14,26 @@
 		"prefix":"tabulate",
 		"body":[
 			"\\tabulate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tabulate*[]{}[]":{
+		"prefix":"*tabulate",
+		"body":[
+			"\\tabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tabulate*[]{}[][]":{
+		"prefix":"*tabulate",
+		"body":[
+			"\\tabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -53,7 +41,8 @@
 		"prefix":"nmcTabulate",
 		"body":[
 			"\\nmcTabulate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,6 +50,25 @@
 		"prefix":"nmcTabulate",
 		"body":[
 			"\\nmcTabulate[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nmcTabulate*[]{}[]":{
+		"prefix":"*nmcTabulate",
+		"body":[
+			"\\nmcTabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nmcTabulate*[]{}[][]":{
+		"prefix":"*nmcTabulate",
+		"body":[
+			"\\nmcTabulate*[${2:settings%keyvals}]{${1:expression}}[${3:vv-list%formula}][${4:num format}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

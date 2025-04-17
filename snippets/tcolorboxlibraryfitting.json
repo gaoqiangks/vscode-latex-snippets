@@ -5,111 +5,8 @@
 		"prefix":"tcboxfit",
 		"body":[
 			"\\tcboxfit{${1:box content%text}}"
-		]
-	},
-
-
-	"newtcboxfit{}{}":{
-		"prefix":"newtcboxfit",
-		"body":[
-			"\\newtcboxfit{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewtcboxfit{}{}":{
-		"prefix":"renewtcboxfit",
-		"body":[
-			"\\renewtcboxfit{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareTCBoxFit{}{}{}":{
-		"prefix":"DeclareTCBoxFit",
-		"body":[
-			"\\DeclareTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"NewTCBoxFit{}{}{}":{
-		"prefix":"NewTCBoxFit",
-		"body":[
-			"\\NewTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"RenewTCBoxFit{}{}{}":{
-		"prefix":"RenewTCBoxFit",
-		"body":[
-			"\\RenewTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"ProvideTCBoxFit{}{}{}":{
-		"prefix":"ProvideTCBoxFit",
-		"body":[
-			"\\ProvideTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareTotalTCBoxFit{}{}{}{}":{
-		"prefix":"DeclareTotalTCBoxFit",
-		"body":[
-			"\\DeclareTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
-	},
-
-
-	"NewTotalTCBoxFit{}{}{}{}":{
-		"prefix":"NewTotalTCBoxFit",
-		"body":[
-			"\\NewTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
-	},
-
-
-	"RenewTotalTCBoxFit{}{}{}{}":{
-		"prefix":"RenewTotalTCBoxFit",
-		"body":[
-			"\\RenewTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
-	},
-
-
-	"ProvideTotalTCBoxFit{}{}{}{}":{
-		"prefix":"ProvideTotalTCBoxFit",
-		"body":[
-			"\\ProvideTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
-	},
-
-
-	"tcbfitdim":{
-		"prefix":"tcbfitdim",
-		"body":[
-			"\\tcbfitdim"
-		]
-	},
-
-
-	"tcbfontsize{}":{
-		"prefix":"tcbfontsize",
-		"body":[
-			"\\tcbfontsize{${1:factor}}"
-		]
-	},
-
-
-	"tcbfitsteps":{
-		"prefix":"tcbfitsteps",
-		"body":[
-			"\\tcbfitsteps"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +14,17 @@
 		"prefix":"tcboxfit",
 		"body":[
 			"\\tcboxfit[${2:options%keyvals}]{${1:box content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtcboxfit{}{}":{
+		"prefix":"newtcboxfit",
+		"body":[
+			"\\newtcboxfit{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +32,8 @@
 		"prefix":"newtcboxfit",
 		"body":[
 			"\\newtcboxfit{${1:cmd}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +41,8 @@
 		"prefix":"newtcboxfit",
 		"body":[
 			"\\newtcboxfit{${1:cmd}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +50,8 @@
 		"prefix":"newtcboxfit",
 		"body":[
 			"\\newtcboxfit[${3:init options}]{${1:cmd}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +59,8 @@
 		"prefix":"newtcboxfit",
 		"body":[
 			"\\newtcboxfit[${3:init options}]{${1:cmd}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +68,17 @@
 		"prefix":"newtcboxfit",
 		"body":[
 			"\\newtcboxfit[${3:init options}]{${1:cmd}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewtcboxfit{}{}":{
+		"prefix":"renewtcboxfit",
+		"body":[
+			"\\renewtcboxfit{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +86,8 @@
 		"prefix":"renewtcboxfit",
 		"body":[
 			"\\renewtcboxfit{${1:cmd}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +95,8 @@
 		"prefix":"renewtcboxfit",
 		"body":[
 			"\\renewtcboxfit{${1:cmd}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +104,8 @@
 		"prefix":"renewtcboxfit",
 		"body":[
 			"\\renewtcboxfit[${3:init options}]{${1:cmd}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +113,8 @@
 		"prefix":"renewtcboxfit",
 		"body":[
 			"\\renewtcboxfit[${3:init options}]{${1:cmd}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +122,17 @@
 		"prefix":"renewtcboxfit",
 		"body":[
 			"\\renewtcboxfit[${3:init options}]{${1:cmd}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTCBoxFit{}{}{}":{
+		"prefix":"DeclareTCBoxFit",
+		"body":[
+			"\\DeclareTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +140,17 @@
 		"prefix":"DeclareTCBoxFit",
 		"body":[
 			"\\DeclareTCBoxFit[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewTCBoxFit{}{}{}":{
+		"prefix":"NewTCBoxFit",
+		"body":[
+			"\\NewTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +158,17 @@
 		"prefix":"NewTCBoxFit",
 		"body":[
 			"\\NewTCBoxFit[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewTCBoxFit{}{}{}":{
+		"prefix":"RenewTCBoxFit",
+		"body":[
+			"\\RenewTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +176,17 @@
 		"prefix":"RenewTCBoxFit",
 		"body":[
 			"\\RenewTCBoxFit[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideTCBoxFit{}{}{}":{
+		"prefix":"ProvideTCBoxFit",
+		"body":[
+			"\\ProvideTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +194,17 @@
 		"prefix":"ProvideTCBoxFit",
 		"body":[
 			"\\ProvideTCBoxFit[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTotalTCBoxFit{}{}{}{}":{
+		"prefix":"DeclareTotalTCBoxFit",
+		"body":[
+			"\\DeclareTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +212,17 @@
 		"prefix":"DeclareTotalTCBoxFit",
 		"body":[
 			"\\DeclareTotalTCBoxFit[${5:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewTotalTCBoxFit{}{}{}{}":{
+		"prefix":"NewTotalTCBoxFit",
+		"body":[
+			"\\NewTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +230,17 @@
 		"prefix":"NewTotalTCBoxFit",
 		"body":[
 			"\\NewTotalTCBoxFit[${5:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewTotalTCBoxFit{}{}{}{}":{
+		"prefix":"RenewTotalTCBoxFit",
+		"body":[
+			"\\RenewTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +248,17 @@
 		"prefix":"RenewTotalTCBoxFit",
 		"body":[
 			"\\RenewTotalTCBoxFit[${5:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideTotalTCBoxFit{}{}{}{}":{
+		"prefix":"ProvideTotalTCBoxFit",
+		"body":[
+			"\\ProvideTotalTCBoxFit{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,6 +266,34 @@
 		"prefix":"ProvideTotalTCBoxFit",
 		"body":[
 			"\\ProvideTotalTCBoxFit[${5:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}{${4:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tcbfitdim":{
+		"prefix":"tcbfitdim",
+		"body":[
+			"\\tcbfitdim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbfontsize{}":{
+		"prefix":"tcbfontsize",
+		"body":[
+			"\\tcbfontsize{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbfitsteps":{
+		"prefix":"tcbfitsteps",
+		"body":[
+			"\\tcbfitsteps"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

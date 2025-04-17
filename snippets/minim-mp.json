@@ -5,7 +5,8 @@
 		"prefix":"mplibtextextlabel",
 		"body":[
 			"\\mplibtextextlabel{${1:choice%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mplibshowlog",
 		"body":[
 			"\\mplibshowlog{${1:choice%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"mplibcodeinherit",
 		"body":[
 			"\\mplibcodeinherit{${1:choice%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"mplibsetformat",
 		"body":[
 			"\\mplibsetformat{${1:format name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"mplibnumbersystem",
 		"body":[
 			"\\mplibnumbersystem{${1:type%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,135 +50,8 @@
 		"prefix":"everymplib",
 		"body":[
 			"\\everymplib{${1:metapost code}}"
-		]
-	},
-
-
-	"everyendmplib{}":{
-		"prefix":"everyendmplib",
-		"body":[
-			"\\everyendmplib{${1:metapost code%definition}}"
-		]
-	},
-
-
-	"newmetapostenvironment{}":{
-		"prefix":"newmetapostenvironment",
-		"body":[
-			"\\newmetapostenvironment{${1:envname}}"
-		]
-	},
-
-
-	"mpcolor{}":{
-		"prefix":"mpcolor",
-		"body":[
-			"\\mpcolor{${1:color}}"
-		]
-	},
-
-
-	"directmetapost{}":{
-		"prefix":"directmetapost",
-		"body":[
-			"\\directmetapost{${1:metapost code}}"
-		]
-	},
-
-
-	"newmetapostinstance{}":{
-		"prefix":"newmetapostinstance",
-		"body":[
-			"\\newmetapostinstance{${1:cmd}}"
-		]
-	},
-
-
-	"voidbox":{
-		"prefix":"voidbox",
-		"body":[
-			"\\voidbox"
-		]
-	},
-
-
-	"ignore{}":{
-		"prefix":"ignore",
-		"body":[
-			"\\ignore{${1:arg}}"
-		]
-	},
-
-
-	"unbrace{}":{
-		"prefix":"unbrace",
-		"body":[
-			"\\unbrace{${1:arg}}"
-		]
-	},
-
-
-	"firstoftwo{}{}":{
-		"prefix":"firstoftwo",
-		"body":[
-			"\\firstoftwo{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"secondoftwo{}{}":{
-		"prefix":"secondoftwo",
-		"body":[
-			"\\secondoftwo{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"nextif":{
-		"prefix":"nextif",
-		"body":[
-			"\\nextif"
-		]
-	},
-
-
-	"nextifx":{
-		"prefix":"nextifx",
-		"body":[
-			"\\nextifx"
-		]
-	},
-
-
-	"nextifcat":{
-		"prefix":"nextifcat",
-		"body":[
-			"\\nextifcat"
-		]
-	},
-
-
-	"splitcommalist{}{}":{
-		"prefix":"splitcommalist",
-		"body":[
-			"\\splitcommalist{${1:code}}{${2:list}}"
-		]
-	},
-
-
-	"unset":{
-		"prefix":"unset",
-		"body":[
-			"\\unset"
-		]
-	},
-
-
-	"setluachunkname{}{}":{
-		"prefix":"setluachunkname",
-		"body":[
-			"\\setluachunkname{${1:cmd}}{${2:actual name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +59,17 @@
 		"prefix":"everymplib",
 		"body":[
 			"\\everymplib[${2:instance name}]{${1:metapost code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"everyendmplib{}":{
+		"prefix":"everyendmplib",
+		"body":[
+			"\\everyendmplib{${1:metapost code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +77,17 @@
 		"prefix":"everyendmplib",
 		"body":[
 			"\\everyendmplib[${2:instance name}]{${1:metapost code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newmetapostenvironment{}":{
+		"prefix":"newmetapostenvironment",
+		"body":[
+			"\\newmetapostenvironment{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +95,26 @@
 		"prefix":"newmetapostenvironment",
 		"body":[
 			"\\newmetapostenvironment[${2:options}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mpcolor{}":{
+		"prefix":"mpcolor",
+		"body":[
+			"\\mpcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"directmetapost{}":{
+		"prefix":"directmetapost",
+		"body":[
+			"\\directmetapost{${1:metapost code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +122,17 @@
 		"prefix":"directmetapost",
 		"body":[
 			"\\directmetapost[${2:options}]{${1:metapost code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newmetapostinstance{}":{
+		"prefix":"newmetapostinstance",
+		"body":[
+			"\\newmetapostinstance{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +140,80 @@
 		"prefix":"newmetapostinstance",
 		"body":[
 			"\\newmetapostinstance[${2:options}]{${1:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"voidbox":{
+		"prefix":"voidbox",
+		"body":[
+			"\\voidbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ignore{}":{
+		"prefix":"ignore",
+		"body":[
+			"\\ignore{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unbrace{}":{
+		"prefix":"unbrace",
+		"body":[
+			"\\unbrace{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firstoftwo{}{}":{
+		"prefix":"firstoftwo",
+		"body":[
+			"\\firstoftwo{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"secondoftwo{}{}":{
+		"prefix":"secondoftwo",
+		"body":[
+			"\\secondoftwo{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextif":{
+		"prefix":"nextif",
+		"body":[
+			"\\nextif"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextifx":{
+		"prefix":"nextifx",
+		"body":[
+			"\\nextifx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nextifcat":{
+		"prefix":"nextifcat",
+		"body":[
+			"\\nextifcat"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +221,35 @@
 		"prefix":"withoptions",
 		"body":[
 			"\\withoptions[${2:default}]{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"splitcommalist{}{}":{
+		"prefix":"splitcommalist",
+		"body":[
+			"\\splitcommalist{${1:code}}{${2:list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unset":{
+		"prefix":"unset",
+		"body":[
+			"\\unset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setluachunkname{}{}":{
+		"prefix":"setluachunkname",
+		"body":[
+			"\\setluachunkname{${1:cmd}}{${2:actual name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -231,16 +259,18 @@
 			"\\begin{metapost}",
 				"\t$1",
 			"\\end{metapost}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"metapost":{
+	"metapost[]":{
 		"prefix":"metapost",
 		"body":[
 			"\\begin{metapost}",
-				"\t$1",
+				"\t[${1:options}]",
 			"\\end{metapost}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

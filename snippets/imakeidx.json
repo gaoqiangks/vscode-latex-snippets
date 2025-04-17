@@ -1,11 +1,21 @@
 {
 
 
+	"makeindex[]":{
+		"prefix":"makeindex",
+		"body":[
+			"\\makeindex[${1:options%keyvals}]"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"indexsetup{}":{
 		"prefix":"indexsetup",
 		"body":[
 			"\\indexsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +23,8 @@
 		"prefix":"splitindexoptions",
 		"body":[
 			"\\splitindexoptions{${1:splitindex options}}"
-		]
-	},
-
-
-	"indexprologue{}":{
-		"prefix":"indexprologue",
-		"body":[
-			"\\indexprologue{${1:text}}"
-		]
-	},
-
-
-	"printindex":{
-		"prefix":"printindex",
-		"body":[
-			"\\printindex"
-		]
-	},
-
-
-	"makeindex[]":{
-		"prefix":"makeindex",
-		"body":[
-			"\\makeindex[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"index",
 		"body":[
 			"\\index[${2:name}]{${1:entry}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"indexprologue{}":{
+		"prefix":"indexprologue",
+		"body":[
+			"\\indexprologue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"indexprologue",
 		"body":[
 			"\\indexprologue[${2:spacing}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printindex":{
+		"prefix":"printindex",
+		"body":[
+			"\\printindex"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"printindex",
 		"body":[
 			"\\printindex[${1:name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"h",
 		"body":[
 			"\\h"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"labyrinthset",
 		"body":[
 			"\\labyrinthset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"putsymbol",
 		"body":[
 			"\\putsymbol(${2:x},${3:y}){${1:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"plus",
 		"body":[
 			"\\plus"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"minus",
 		"body":[
 			"\\minus"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ast",
 		"body":[
 			"\\ast"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,39 +59,8 @@
 		"prefix":"labyrinthsolution",
 		"body":[
 			"\\labyrinthsolution(${2:x},${3:y}){${1:solution code}}"
-		]
-	},
-
-
-	"solutionset{}":{
-		"prefix":"solutionset",
-		"body":[
-			"\\solutionset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"autosolution()(){}":{
-		"prefix":"autosolution",
-		"body":[
-			"\\autosolution(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:first direction}}"
-		]
-	},
-
-
-	"solutionpath":{
-		"prefix":"solutionpath",
-		"body":[
-			"\\solutionpath"
-		]
-	},
-
-
-	"truncdiv{}{}":{
-		"prefix":"truncdiv",
-		"body":[
-			"\\truncdiv{${1:num1}}{${2:num2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +68,26 @@
 		"prefix":"labyrinthsolution",
 		"body":[
 			"\\labyrinthsolution[${2:options%keyvals}](${3:x},${4:y}){${1:solution code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"solutionset{}":{
+		"prefix":"solutionset",
+		"body":[
+			"\\solutionset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"autosolution()(){}":{
+		"prefix":"autosolution",
+		"body":[
+			"\\autosolution(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:first direction}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,26 +95,47 @@
 		"prefix":"autosolution",
 		"body":[
 			"\\autosolution[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:first direction}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"labyrinth":{
-		"prefix":"labyrinth",
+	"solutionpath":{
+		"prefix":"solutionpath",
 		"body":[
-			"\\begin{labyrinth}",
-				"\t$1",
-			"\\end{labyrinth}"
-		]
+			"\\solutionpath"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"labyrinth":{
+	"truncdiv{}{}":{
+		"prefix":"truncdiv",
+		"body":[
+			"\\truncdiv{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labyrinth{}{}":{
 		"prefix":"labyrinth",
 		"body":[
 			"\\begin{labyrinth}",
-				"\t$1",
+				"\t{${1:width%plain}}{${2:height%plain}}",
 			"\\end{labyrinth}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labyrinth[]{}{}":{
+		"prefix":"labyrinth",
+		"body":[
+			"\\begin{labyrinth}",
+				"\t[${3:options%keyvals}]{${1:width%plain}}{${2:height%plain}}",
+			"\\end{labyrinth}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

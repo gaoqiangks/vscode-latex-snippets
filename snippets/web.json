@@ -5,7 +5,8 @@
 		"prefix":"ui",
 		"body":[
 			"\\ui{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"screensize",
 		"body":[
 			"\\screensize{${1:height}}{${2:width}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,2575 +23,8 @@
 		"prefix":"margins",
 		"body":[
 			"\\margins{${1:left}}{${2:right}}{${3:top}}{${4:bottom}}"
-		]
-	},
-
-
-	"setScreensizeFromGraphic{}":{
-		"prefix":"setScreensizeFromGraphic",
-		"body":[
-			"\\setScreensizeFromGraphic{${1:imagefile}}"
-		]
-	},
-
-
-	"addtoWebHeight{}":{
-		"prefix":"addtoWebHeight",
-		"body":[
-			"\\addtoWebHeight{${1:length}}"
-		]
-	},
-
-
-	"addtoWebWidth{}":{
-		"prefix":"addtoWebWidth",
-		"body":[
-			"\\addtoWebWidth{${1:length}}"
-		]
-	},
-
-
-	"panelwidth{}":{
-		"prefix":"panelwidth",
-		"body":[
-			"\\panelwidth{${1:width}}"
-		]
-	},
-
-
-	"lheader{}":{
-		"prefix":"lheader",
-		"body":[
-			"\\lheader{${1:text}}"
-		]
-	},
-
-
-	"cheader{}":{
-		"prefix":"cheader",
-		"body":[
-			"\\cheader{${1:text}}"
-		]
-	},
-
-
-	"rheader{}":{
-		"prefix":"rheader",
-		"body":[
-			"\\rheader{${1:text}}"
-		]
-	},
-
-
-	"lfooter{}":{
-		"prefix":"lfooter",
-		"body":[
-			"\\lfooter{${1:text}}"
-		]
-	},
-
-
-	"cfooter{}":{
-		"prefix":"cfooter",
-		"body":[
-			"\\cfooter{${1:text}}"
-		]
-	},
-
-
-	"rfooter{}":{
-		"prefix":"rfooter",
-		"body":[
-			"\\rfooter{${1:text}}"
-		]
-	},
-
-
-	"headerformat{}":{
-		"prefix":"headerformat",
-		"body":[
-			"\\headerformat{${1:font commands}}"
-		]
-	},
-
-
-	"footerformat{}":{
-		"prefix":"footerformat",
-		"body":[
-			"\\footerformat{${1:font commands}}"
-		]
-	},
-
-
-	"webheadwrapper{}":{
-		"prefix":"webheadwrapper",
-		"body":[
-			"\\webheadwrapper{${1:code}}"
-		]
-	},
-
-
-	"webfootwrapper{}":{
-		"prefix":"webfootwrapper",
-		"body":[
-			"\\webfootwrapper{${1:code}}"
-		]
-	},
-
-
-	"clearHeaders":{
-		"prefix":"clearHeaders",
-		"body":[
-			"\\clearHeaders"
-		]
-	},
-
-
-	"restoreHeaders":{
-		"prefix":"restoreHeaders",
-		"body":[
-			"\\restoreHeaders"
-		]
-	},
-
-
-	"clearFooters":{
-		"prefix":"clearFooters",
-		"body":[
-			"\\clearFooters"
-		]
-	},
-
-
-	"restoreFooters":{
-		"prefix":"restoreFooters",
-		"body":[
-			"\\restoreFooters"
-		]
-	},
-
-
-	"headersOnSectionPage":{
-		"prefix":"headersOnSectionPage",
-		"body":[
-			"\\headersOnSectionPage"
-		]
-	},
-
-
-	"noHeadersOnSectionPage":{
-		"prefix":"noHeadersOnSectionPage",
-		"body":[
-			"\\noHeadersOnSectionPage"
-		]
-	},
-
-
-	"subject{}":{
-		"prefix":"subject",
-		"body":[
-			"\\subject{${1:subject%text}}"
-		]
-	},
-
-
-	"university{}":{
-		"prefix":"university",
-		"body":[
-			"\\university{${1:university%text}}"
-		]
-	},
-
-
-	"email{}":{
-		"prefix":"email",
-		"body":[
-			"\\email{${1:email%URL}}"
-		]
-	},
-
-
-	"version{}":{
-		"prefix":"version",
-		"body":[
-			"\\version{${1:version}}"
-		]
-	},
-
-
-	"copyrightyears{}":{
-		"prefix":"copyrightyears",
-		"body":[
-			"\\copyrightyears{${1:years}}"
-		]
-	},
-
-
-	"universityColor{}":{
-		"prefix":"universityColor",
-		"body":[
-			"\\universityColor{${1:color}}"
-		]
-	},
-
-
-	"titleColor{}":{
-		"prefix":"titleColor",
-		"body":[
-			"\\titleColor{${1:color}}"
-		]
-	},
-
-
-	"authorColor{}":{
-		"prefix":"authorColor",
-		"body":[
-			"\\authorColor{${1:color}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:word1,word2,...%text}}"
-		]
-	},
-
-
-	"topTitlePage":{
-		"prefix":"topTitlePage",
-		"body":[
-			"\\topTitlePage"
-		]
-	},
-
-
-	"titlepageTrailer":{
-		"prefix":"titlepageTrailer",
-		"body":[
-			"\\titlepageTrailer"
-		]
-	},
-
-
-	"optionalPageMatter{}":{
-		"prefix":"optionalPageMatter",
-		"body":[
-			"\\optionalPageMatter{${1:content%text}}"
-		]
-	},
-
-
-	"nocopyright":{
-		"prefix":"nocopyright",
-		"body":[
-			"\\nocopyright"
-		]
-	},
-
-
-	"minimumskip":{
-		"prefix":"minimumskip",
-		"body":[
-			"\\minimumskip"
-		]
-	},
-
-
-	"copyrightLabel{}":{
-		"prefix":"copyrightLabel",
-		"body":[
-			"\\copyrightLabel{${1:text}}"
-		]
-	},
-
-
-	"revisionLabel{}":{
-		"prefix":"revisionLabel",
-		"body":[
-			"\\revisionLabel{${1:text}}"
-		]
-	},
-
-
-	"versionLabel{}":{
-		"prefix":"versionLabel",
-		"body":[
-			"\\versionLabel{${1:text}}"
-		]
-	},
-
-
-	"webtitle":{
-		"prefix":"webtitle",
-		"body":[
-			"\\webtitle"
-		]
-	},
-
-
-	"webauthor":{
-		"prefix":"webauthor",
-		"body":[
-			"\\webauthor"
-		]
-	},
-
-
-	"websubject":{
-		"prefix":"websubject",
-		"body":[
-			"\\websubject"
-		]
-	},
-
-
-	"webkeywords":{
-		"prefix":"webkeywords",
-		"body":[
-			"\\webkeywords"
-		]
-	},
-
-
-	"webuniversity":{
-		"prefix":"webuniversity",
-		"body":[
-			"\\webuniversity"
-		]
-	},
-
-
-	"webemail":{
-		"prefix":"webemail",
-		"body":[
-			"\\webemail"
-		]
-	},
-
-
-	"webversion":{
-		"prefix":"webversion",
-		"body":[
-			"\\webversion"
-		]
-	},
-
-
-	"webcopyrightyears":{
-		"prefix":"webcopyrightyears",
-		"body":[
-			"\\webcopyrightyears"
-		]
-	},
-
-
-	"directoryName{}":{
-		"prefix":"directoryName",
-		"body":[
-			"\\directoryName{${1:name%text}}"
-		]
-	},
-
-
-	"tocName{}":{
-		"prefix":"tocName",
-		"body":[
-			"\\tocName{${1:name%text}}"
-		]
-	},
-
-
-	"dirContentLink{}":{
-		"prefix":"dirContentLink",
-		"body":[
-			"\\dirContentLink{${1:text}}"
-		]
-	},
-
-
-	"formatWordDirectory{}":{
-		"prefix":"formatWordDirectory",
-		"body":[
-			"\\formatWordDirectory{${1:font commands}}"
-		]
-	},
-
-
-	"formatDirectoryItems{}":{
-		"prefix":"formatDirectoryItems",
-		"body":[
-			"\\formatDirectoryItems{${1:font commands}}"
-		]
-	},
-
-
-	"removeDirTOC":{
-		"prefix":"removeDirTOC",
-		"body":[
-			"\\removeDirTOC"
-		]
-	},
-
-
-	"removeDirArticle":{
-		"prefix":"removeDirArticle",
-		"body":[
-			"\\removeDirArticle"
-		]
-	},
-
-
-	"addtoDirList{}":{
-		"prefix":"addtoDirList",
-		"body":[
-			"\\addtoDirList{${1:new item%text}}"
-		]
-	},
-
-
-	"dirTOCItem":{
-		"prefix":"dirTOCItem",
-		"body":[
-			"\\dirTOCItem"
-		]
-	},
-
-
-	"dirArticleItem":{
-		"prefix":"dirArticleItem",
-		"body":[
-			"\\dirArticleItem"
-		]
-	},
-
-
-	"priorDirMatter{}":{
-		"prefix":"priorDirMatter",
-		"body":[
-			"\\priorDirMatter{${1:content%text}}"
-		]
-	},
-
-
-	"afterDirMatter{}":{
-		"prefix":"afterDirMatter",
-		"body":[
-			"\\afterDirMatter{${1:content%text}}"
-		]
-	},
-
-
-	"priorDirList{}":{
-		"prefix":"priorDirList",
-		"body":[
-			"\\priorDirList{${1:content%text}}"
-		]
-	},
-
-
-	"afterDirList{}":{
-		"prefix":"afterDirList",
-		"body":[
-			"\\afterDirList{${1:content%text}}"
-		]
-	},
-
-
-	"directoryhook{}":{
-		"prefix":"directoryhook",
-		"body":[
-			"\\directoryhook{${1:code}}"
-		]
-	},
-
-
-	"tocindent{}":{
-		"prefix":"tocindent",
-		"body":[
-			"\\tocindent{${1:indent}}"
-		]
-	},
-
-
-	"widestNumber{}":{
-		"prefix":"widestNumber",
-		"body":[
-			"\\widestNumber{${1:number}}"
-		]
-	},
-
-
-	"tocColor{}":{
-		"prefix":"tocColor",
-		"body":[
-			"\\tocColor{${1:color}}"
-		]
-	},
-
-
-	"coverpagemargin":{
-		"prefix":"coverpagemargin",
-		"body":[
-			"\\coverpagemargin"
-		]
-	},
-
-
-	"makeinlinetitle":{
-		"prefix":"makeinlinetitle",
-		"body":[
-			"\\makeinlinetitle"
-		]
-	},
-
-
-	"NaviBarOn":{
-		"prefix":"NaviBarOn",
-		"body":[
-			"\\NaviBarOn"
-		]
-	},
-
-
-	"NaviBarOff":{
-		"prefix":"NaviBarOff",
-		"body":[
-			"\\NaviBarOff"
-		]
-	},
-
-
-	"navibarTextColor{}":{
-		"prefix":"navibarTextColor",
-		"body":[
-			"\\navibarTextColor{${1:color}}"
-		]
-	},
-
-
-	"navibarBgColor{}":{
-		"prefix":"navibarBgColor",
-		"body":[
-			"\\navibarBgColor{${1:color}}"
-		]
-	},
-
-
-	"navibariconHeight{}":{
-		"prefix":"navibariconHeight",
-		"body":[
-			"\\navibariconHeight{${1:height}}"
-		]
-	},
-
-
-	"navibariconWidth{}":{
-		"prefix":"navibariconWidth",
-		"body":[
-			"\\navibariconWidth{${1:width}}"
-		]
-	},
-
-
-	"newNaviIcon{}{}{}{}{}":{
-		"prefix":"newNaviIcon",
-		"body":[
-			"\\newNaviIcon{${1:cmd}}{${2:width}}{${3:height}}{${4:text}}{${5:action%definition}}"
-		]
-	},
-
-
-	"insertnaviiconhere{}":{
-		"prefix":"insertnaviiconhere",
-		"body":[
-			"\\insertnaviiconhere{${1:code}}"
-		]
-	},
-
-
-	"insertnaviiconhereafter{}":{
-		"prefix":"insertnaviiconhereafter",
-		"body":[
-			"\\insertnaviiconhereafter{${1:code}}"
-		]
-	},
-
-
-	"ArrowUp{}":{
-		"prefix":"ArrowUp",
-		"body":[
-			"\\ArrowUp{${1:code}}"
-		]
-	},
-
-
-	"ArrowDown{}":{
-		"prefix":"ArrowDown",
-		"body":[
-			"\\ArrowDown{${1:code}}"
-		]
-	},
-
-
-	"defaultpageheader":{
-		"prefix":"defaultpageheader",
-		"body":[
-			"\\defaultpageheader"
-		]
-	},
-
-
-	"directionIconTextColor{}":{
-		"prefix":"directionIconTextColor",
-		"body":[
-			"\\directionIconTextColor{${1:color}}"
-		]
-	},
-
-
-	"directionIconBgColor{}":{
-		"prefix":"directionIconBgColor",
-		"body":[
-			"\\directionIconBgColor{${1:color}}"
-		]
-	},
-
-
-	"panelNaviGroup":{
-		"prefix":"panelNaviGroup",
-		"body":[
-			"\\panelNaviGroup"
-		]
-	},
-
-
-	"ifeqforpaper":{
-		"prefix":"ifeqforpaper",
-		"body":[
-			"\\ifeqforpaper"
-		]
-	},
-
-
-	"eqforpapertrue":{
-		"prefix":"eqforpapertrue",
-		"body":[
-			"\\eqforpapertrue"
-		]
-	},
-
-
-	"eqforpaperfalse":{
-		"prefix":"eqforpaperfalse",
-		"body":[
-			"\\eqforpaperfalse"
-		]
-	},
-
-
-	"useFullWidthForPaper":{
-		"prefix":"useFullWidthForPaper",
-		"body":[
-			"\\useFullWidthForPaper"
-		]
-	},
-
-
-	"prtscr{}{}":{
-		"prefix":"prtscr",
-		"body":[
-			"\\prtscr{${1:print text%text}}{${2:screen text%text}}"
-		]
-	},
-
-
-	"NewPage":{
-		"prefix":"NewPage",
-		"body":[
-			"\\NewPage"
-		]
-	},
-
-
-	"template{}":{
-		"prefix":"template",
-		"body":[
-			"\\template{${1:imagefile}}"
-		]
-	},
-
-
-	"textBgColor{}":{
-		"prefix":"textBgColor",
-		"body":[
-			"\\textBgColor{${1:color}}"
-		]
-	},
-
-
-	"AddToTemplate{}":{
-		"prefix":"AddToTemplate",
-		"body":[
-			"\\AddToTemplate{${1:template name}}"
-		]
-	},
-
-
-	"paneltemplate{}":{
-		"prefix":"paneltemplate",
-		"body":[
-			"\\paneltemplate{${1:imagefile}}"
-		]
-	},
-
-
-	"panelBgColor{}":{
-		"prefix":"panelBgColor",
-		"body":[
-			"\\panelBgColor{${1:color}}"
-		]
-	},
-
-
-	"AddToPanelTemplate{}":{
-		"prefix":"AddToPanelTemplate",
-		"body":[
-			"\\AddToPanelTemplate{${1:template name}}"
-		]
-	},
-
-
-	"buildpanel{}":{
-		"prefix":"buildpanel",
-		"body":[
-			"\\buildpanel{${1:content%text}}"
-		]
-	},
-
-
-	"minPanelWidth{}":{
-		"prefix":"minPanelWidth",
-		"body":[
-			"\\minPanelWidth{${1:length}}"
-		]
-	},
-
-
-	"disableTemplate{}":{
-		"prefix":"disableTemplate",
-		"body":[
-			"\\disableTemplate{${1:template name}}"
-		]
-	},
-
-
-	"enableTemplate{}":{
-		"prefix":"enableTemplate",
-		"body":[
-			"\\enableTemplate{${1:template name}}"
-		]
-	},
-
-
-	"disablePanelTemplate{}":{
-		"prefix":"disablePanelTemplate",
-		"body":[
-			"\\disablePanelTemplate{${1:template name}}"
-		]
-	},
-
-
-	"enablePanelTemplate{}":{
-		"prefix":"enablePanelTemplate",
-		"body":[
-			"\\enablePanelTemplate{${1:template name}}"
-		]
-	},
-
-
-	"ClearTextTemplate":{
-		"prefix":"ClearTextTemplate",
-		"body":[
-			"\\ClearTextTemplate"
-		]
-	},
-
-
-	"ClearPanelTemplate":{
-		"prefix":"ClearPanelTemplate",
-		"body":[
-			"\\ClearPanelTemplate"
-		]
-	},
-
-
-	"ClearBuildPanel":{
-		"prefix":"ClearBuildPanel",
-		"body":[
-			"\\ClearBuildPanel"
-		]
-	},
-
-
-	"ClearAllTemplates":{
-		"prefix":"ClearAllTemplates",
-		"body":[
-			"\\ClearAllTemplates"
-		]
-	},
-
-
-	"ClearTextTemplateBuffer":{
-		"prefix":"ClearTextTemplateBuffer",
-		"body":[
-			"\\ClearTextTemplateBuffer"
-		]
-	},
-
-
-	"ClearPanelTemplateBuffer":{
-		"prefix":"ClearPanelTemplateBuffer",
-		"body":[
-			"\\ClearPanelTemplateBuffer"
-		]
-	},
-
-
-	"aboveTopTitleSkip{}":{
-		"prefix":"aboveTopTitleSkip",
-		"body":[
-			"\\aboveTopTitleSkip{${1:skip}}"
-		]
-	},
-
-
-	"noFinalDot":{
-		"prefix":"noFinalDot",
-		"body":[
-			"\\noFinalDot"
-		]
-	},
-
-
-	"tocPartTitle{}":{
-		"prefix":"tocPartTitle",
-		"body":[
-			"\\tocPartTitle{${1:TeX code}}"
-		]
-	},
-
-
-	"formatPartTitle{}":{
-		"prefix":"formatPartTitle",
-		"body":[
-			"\\formatPartTitle{${1:TeX code}}"
-		]
-	},
-
-
-	"restorePartTitleFormat":{
-		"prefix":"restorePartTitleFormat",
-		"body":[
-			"\\restorePartTitleFormat"
-		]
-	},
-
-
-	"noPartNumbers":{
-		"prefix":"noPartNumbers",
-		"body":[
-			"\\noPartNumbers"
-		]
-	},
-
-
-	"formatChapterNumber{}":{
-		"prefix":"formatChapterNumber",
-		"body":[
-			"\\formatChapterNumber{${1:TeX code}}"
-		]
-	},
-
-
-	"formatChapterTitle{}":{
-		"prefix":"formatChapterTitle",
-		"body":[
-			"\\formatChapterTitle{${1:TeX code}}"
-		]
-	},
-
-
-	"DeclareDocInfo{}":{
-		"prefix":"DeclareDocInfo",
-		"body":[
-			"\\DeclareDocInfo{${1:keyvals}}"
-		]
-	},
-
-
-	"DeclarePageLayout{}":{
-		"prefix":"DeclarePageLayout",
-		"body":[
-			"\\DeclarePageLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"universityLayout{}":{
-		"prefix":"universityLayout",
-		"body":[
-			"\\universityLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"titleLayout{}":{
-		"prefix":"titleLayout",
-		"body":[
-			"\\titleLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"authorLayout{}":{
-		"prefix":"authorLayout",
-		"body":[
-			"\\authorLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"topTitlePageProportion{}":{
-		"prefix":"topTitlePageProportion",
-		"body":[
-			"\\topTitlePageProportion{${1:factor}}"
-		]
-	},
-
-
-	"DesignTitlePageTrailer{}":{
-		"prefix":"DesignTitlePageTrailer",
-		"body":[
-			"\\DesignTitlePageTrailer{${1:keyvals}}"
-		]
-	},
-
-
-	"selectTocDings{}":{
-		"prefix":"selectTocDings",
-		"body":[
-			"\\selectTocDings{${1:keyvals}}"
-		]
-	},
-
-
-	"selectColors{}":{
-		"prefix":"selectColors",
-		"body":[
-			"\\selectColors{${1:keyvals}}"
-		]
-	},
-
-
-	"noSectionNumbers":{
-		"prefix":"noSectionNumbers",
-		"body":[
-			"\\noSectionNumbers"
-		]
-	},
-
-
-	"tocLayout{}":{
-		"prefix":"tocLayout",
-		"body":[
-			"\\tocLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"sectionLayout{}":{
-		"prefix":"sectionLayout",
-		"body":[
-			"\\sectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"subsectionLayout{}":{
-		"prefix":"subsectionLayout",
-		"body":[
-			"\\subsectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"subsubsectionLayout{}":{
-		"prefix":"subsubsectionLayout",
-		"body":[
-			"\\subsubsectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"shadowhoffset{}":{
-		"prefix":"shadowhoffset",
-		"body":[
-			"\\shadowhoffset{${1:length}}"
-		]
-	},
-
-
-	"shadowvoffset{}":{
-		"prefix":"shadowvoffset",
-		"body":[
-			"\\shadowvoffset{${1:length}}"
-		]
-	},
-
-
-	"customSecHead{}":{
-		"prefix":"customSecHead",
-		"body":[
-			"\\customSecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"customSubsecHead{}":{
-		"prefix":"customSubsecHead",
-		"body":[
-			"\\customSubsecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"customSubsubsecHead{}":{
-		"prefix":"customSubsubsecHead",
-		"body":[
-			"\\customSubsubsecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"preparedLabel{}":{
-		"prefix":"preparedLabel",
-		"body":[
-			"\\preparedLabel{${1:text}}"
-		]
-	},
-
-
-	"prepared{}":{
-		"prefix":"prepared",
-		"body":[
-			"\\prepared{${1:date}}"
-		]
-	},
-
-
-	"talkdate{}":{
-		"prefix":"talkdate",
-		"body":[
-			"\\talkdate{${1:date}}"
-		]
-	},
-
-
-	"webtalkdate":{
-		"prefix":"webtalkdate",
-		"body":[
-			"\\webtalkdate"
-		]
-	},
-
-
-	"talkdateLabel{}":{
-		"prefix":"talkdateLabel",
-		"body":[
-			"\\talkdateLabel{${1:text}}"
-		]
-	},
-
-
-	"talksite{}":{
-		"prefix":"talksite",
-		"body":[
-			"\\talksite{${1:site}}"
-		]
-	},
-
-
-	"customUniversity{}":{
-		"prefix":"customUniversity",
-		"body":[
-			"\\customUniversity{${1:TeX code}}"
-		]
-	},
-
-
-	"customTitle{}":{
-		"prefix":"customTitle",
-		"body":[
-			"\\customTitle{${1:TeX code}}"
-		]
-	},
-
-
-	"customAuthor{}":{
-		"prefix":"customAuthor",
-		"body":[
-			"\\customAuthor{${1:TeX code}}"
-		]
-	},
-
-
-	"customToc{}":{
-		"prefix":"customToc",
-		"body":[
-			"\\customToc{${1:TeX code}}"
-		]
-	},
-
-
-	"halignuniversity":{
-		"prefix":"halignuniversity",
-		"body":[
-			"\\halignuniversity"
-		]
-	},
-
-
-	"haligntitle":{
-		"prefix":"haligntitle",
-		"body":[
-			"\\haligntitle"
-		]
-	},
-
-
-	"halignauthor":{
-		"prefix":"halignauthor",
-		"body":[
-			"\\halignauthor"
-		]
-	},
-
-
-	"halignsection":{
-		"prefix":"halignsection",
-		"body":[
-			"\\halignsection"
-		]
-	},
-
-
-	"halignsubsection":{
-		"prefix":"halignsubsection",
-		"body":[
-			"\\halignsubsection"
-		]
-	},
-
-
-	"halignsubsubsection":{
-		"prefix":"halignsubsubsection",
-		"body":[
-			"\\halignsubsubsection"
-		]
-	},
-
-
-	"haligntoc":{
-		"prefix":"haligntoc",
-		"body":[
-			"\\haligntoc"
-		]
-	},
-
-
-	"subsubDefaultDing{}":{
-		"prefix":"subsubDefaultDing",
-		"body":[
-			"\\subsubDefaultDing{${1:symbol}}"
-		]
-	},
-
-
-	"sectionTitle":{
-		"prefix":"sectionTitle",
-		"body":[
-			"\\sectionTitle"
-		]
-	},
-
-
-	"sectionAuthor":{
-		"prefix":"sectionAuthor",
-		"body":[
-			"\\sectionAuthor"
-		]
-	},
-
-
-	"sectionUniversity":{
-		"prefix":"sectionUniversity",
-		"body":[
-			"\\sectionUniversity"
-		]
-	},
-
-
-	"sectionToc":{
-		"prefix":"sectionToc",
-		"body":[
-			"\\sectionToc"
-		]
-	},
-
-
-	"ifShadow":{
-		"prefix":"ifShadow",
-		"body":[
-			"\\ifShadow"
-		]
-	},
-
-
-	"Shadowtrue":{
-		"prefix":"Shadowtrue",
-		"body":[
-			"\\Shadowtrue"
-		]
-	},
-
-
-	"Shadowfalse":{
-		"prefix":"Shadowfalse",
-		"body":[
-			"\\Shadowfalse"
-		]
-	},
-
-
-	"useSectionNumbers":{
-		"prefix":"useSectionNumbers",
-		"body":[
-			"\\useSectionNumbers"
-		]
-	},
-
-
-	"dDingToc{}":{
-		"prefix":"dDingToc",
-		"body":[
-			"\\dDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"ddDingToc{}":{
-		"prefix":"ddDingToc",
-		"body":[
-			"\\ddDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"dddDingToc{}":{
-		"prefix":"dddDingToc",
-		"body":[
-			"\\dddDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"dDingTocColor{}":{
-		"prefix":"dDingTocColor",
-		"body":[
-			"\\dDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"ddDingTocColor{}":{
-		"prefix":"ddDingTocColor",
-		"body":[
-			"\\ddDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"dddDingTocColor{}":{
-		"prefix":"dddDingTocColor",
-		"body":[
-			"\\dddDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"DeclareDocInfo{}":{
-		"prefix":"DeclareDocInfo",
-		"body":[
-			"\\DeclareDocInfo{${1:keyvals}}"
-		]
-	},
-
-
-	"DeclarePageLayout{}":{
-		"prefix":"DeclarePageLayout",
-		"body":[
-			"\\DeclarePageLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"universityLayout{}":{
-		"prefix":"universityLayout",
-		"body":[
-			"\\universityLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"titleLayout{}":{
-		"prefix":"titleLayout",
-		"body":[
-			"\\titleLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"authorLayout{}":{
-		"prefix":"authorLayout",
-		"body":[
-			"\\authorLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"topTitlePageProportion{}":{
-		"prefix":"topTitlePageProportion",
-		"body":[
-			"\\topTitlePageProportion{${1:factor}}"
-		]
-	},
-
-
-	"DesignTitlePageTrailer{}":{
-		"prefix":"DesignTitlePageTrailer",
-		"body":[
-			"\\DesignTitlePageTrailer{${1:keyvals}}"
-		]
-	},
-
-
-	"selectTocDings{}":{
-		"prefix":"selectTocDings",
-		"body":[
-			"\\selectTocDings{${1:keyvals}}"
-		]
-	},
-
-
-	"selectColors{}":{
-		"prefix":"selectColors",
-		"body":[
-			"\\selectColors{${1:keyvals}}"
-		]
-	},
-
-
-	"noSectionNumbers":{
-		"prefix":"noSectionNumbers",
-		"body":[
-			"\\noSectionNumbers"
-		]
-	},
-
-
-	"tocLayout{}":{
-		"prefix":"tocLayout",
-		"body":[
-			"\\tocLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"sectionLayout{}":{
-		"prefix":"sectionLayout",
-		"body":[
-			"\\sectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"subsectionLayout{}":{
-		"prefix":"subsectionLayout",
-		"body":[
-			"\\subsectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"subsubsectionLayout{}":{
-		"prefix":"subsubsectionLayout",
-		"body":[
-			"\\subsubsectionLayout{${1:keyvals}}"
-		]
-	},
-
-
-	"shadowhoffset{}":{
-		"prefix":"shadowhoffset",
-		"body":[
-			"\\shadowhoffset{${1:length}}"
-		]
-	},
-
-
-	"shadowvoffset{}":{
-		"prefix":"shadowvoffset",
-		"body":[
-			"\\shadowvoffset{${1:length}}"
-		]
-	},
-
-
-	"customSecHead{}":{
-		"prefix":"customSecHead",
-		"body":[
-			"\\customSecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"customSubsecHead{}":{
-		"prefix":"customSubsecHead",
-		"body":[
-			"\\customSubsecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"customSubsubsecHead{}":{
-		"prefix":"customSubsubsecHead",
-		"body":[
-			"\\customSubsubsecHead{${1:TeX code}}"
-		]
-	},
-
-
-	"preparedLabel{}":{
-		"prefix":"preparedLabel",
-		"body":[
-			"\\preparedLabel{${1:text}}"
-		]
-	},
-
-
-	"prepared{}":{
-		"prefix":"prepared",
-		"body":[
-			"\\prepared{${1:date}}"
-		]
-	},
-
-
-	"talkdate{}":{
-		"prefix":"talkdate",
-		"body":[
-			"\\talkdate{${1:date}}"
-		]
-	},
-
-
-	"webtalkdate":{
-		"prefix":"webtalkdate",
-		"body":[
-			"\\webtalkdate"
-		]
-	},
-
-
-	"talkdateLabel{}":{
-		"prefix":"talkdateLabel",
-		"body":[
-			"\\talkdateLabel{${1:text}}"
-		]
-	},
-
-
-	"talksite{}":{
-		"prefix":"talksite",
-		"body":[
-			"\\talksite{${1:site}}"
-		]
-	},
-
-
-	"customUniversity{}":{
-		"prefix":"customUniversity",
-		"body":[
-			"\\customUniversity{${1:TeX code}}"
-		]
-	},
-
-
-	"customTitle{}":{
-		"prefix":"customTitle",
-		"body":[
-			"\\customTitle{${1:TeX code}}"
-		]
-	},
-
-
-	"customAuthor{}":{
-		"prefix":"customAuthor",
-		"body":[
-			"\\customAuthor{${1:TeX code}}"
-		]
-	},
-
-
-	"customToc{}":{
-		"prefix":"customToc",
-		"body":[
-			"\\customToc{${1:TeX code}}"
-		]
-	},
-
-
-	"halignuniversity":{
-		"prefix":"halignuniversity",
-		"body":[
-			"\\halignuniversity"
-		]
-	},
-
-
-	"haligntitle":{
-		"prefix":"haligntitle",
-		"body":[
-			"\\haligntitle"
-		]
-	},
-
-
-	"halignauthor":{
-		"prefix":"halignauthor",
-		"body":[
-			"\\halignauthor"
-		]
-	},
-
-
-	"halignsection":{
-		"prefix":"halignsection",
-		"body":[
-			"\\halignsection"
-		]
-	},
-
-
-	"halignsubsection":{
-		"prefix":"halignsubsection",
-		"body":[
-			"\\halignsubsection"
-		]
-	},
-
-
-	"halignsubsubsection":{
-		"prefix":"halignsubsubsection",
-		"body":[
-			"\\halignsubsubsection"
-		]
-	},
-
-
-	"haligntoc":{
-		"prefix":"haligntoc",
-		"body":[
-			"\\haligntoc"
-		]
-	},
-
-
-	"subsubDefaultDing{}":{
-		"prefix":"subsubDefaultDing",
-		"body":[
-			"\\subsubDefaultDing{${1:symbol}}"
-		]
-	},
-
-
-	"sectionTitle":{
-		"prefix":"sectionTitle",
-		"body":[
-			"\\sectionTitle"
-		]
-	},
-
-
-	"sectionAuthor":{
-		"prefix":"sectionAuthor",
-		"body":[
-			"\\sectionAuthor"
-		]
-	},
-
-
-	"sectionUniversity":{
-		"prefix":"sectionUniversity",
-		"body":[
-			"\\sectionUniversity"
-		]
-	},
-
-
-	"sectionToc":{
-		"prefix":"sectionToc",
-		"body":[
-			"\\sectionToc"
-		]
-	},
-
-
-	"ifShadow":{
-		"prefix":"ifShadow",
-		"body":[
-			"\\ifShadow"
-		]
-	},
-
-
-	"Shadowtrue":{
-		"prefix":"Shadowtrue",
-		"body":[
-			"\\Shadowtrue"
-		]
-	},
-
-
-	"Shadowfalse":{
-		"prefix":"Shadowfalse",
-		"body":[
-			"\\Shadowfalse"
-		]
-	},
-
-
-	"useSectionNumbers":{
-		"prefix":"useSectionNumbers",
-		"body":[
-			"\\useSectionNumbers"
-		]
-	},
-
-
-	"dDingToc{}":{
-		"prefix":"dDingToc",
-		"body":[
-			"\\dDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"ddDingToc{}":{
-		"prefix":"ddDingToc",
-		"body":[
-			"\\ddDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"dddDingToc{}":{
-		"prefix":"dddDingToc",
-		"body":[
-			"\\dddDingToc{${1:symbol}}"
-		]
-	},
-
-
-	"dDingTocColor{}":{
-		"prefix":"dDingTocColor",
-		"body":[
-			"\\dDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"ddDingTocColor{}":{
-		"prefix":"ddDingTocColor",
-		"body":[
-			"\\ddDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"dddDingTocColor{}":{
-		"prefix":"dddDingTocColor",
-		"body":[
-			"\\dddDingTocColor{${1:color}}"
-		]
-	},
-
-
-	"BGColorAndGraphic":{
-		"prefix":"BGColorAndGraphic",
-		"body":[
-			"\\BGColorAndGraphic"
-		]
-	},
-
-
-	"BGColorAndGraphicFullWidth":{
-		"prefix":"BGColorAndGraphicFullWidth",
-		"body":[
-			"\\BGColorAndGraphicFullWidth"
-		]
-	},
-
-
-	"InitLayout":{
-		"prefix":"InitLayout",
-		"body":[
-			"\\InitLayout"
-		]
-	},
-
-
-	"aboveOPMvspace":{
-		"prefix":"aboveOPMvspace",
-		"body":[
-			"\\aboveOPMvspace"
-		]
-	},
-
-
-	"addToWebHWError":{
-		"prefix":"addToWebHWError",
-		"body":[
-			"\\addToWebHWError"
-		]
-	},
-
-
-	"addtofullwidthtemplateArgs{}":{
-		"prefix":"addtofullwidthtemplateArgs",
-		"body":[
-			"\\addtofullwidthtemplateArgs{${1:arg}}"
-		]
-	},
-
-
-	"addtopaneltemplateArgs{}":{
-		"prefix":"addtopaneltemplateArgs",
-		"body":[
-			"\\addtopaneltemplateArgs{${1:arg}}"
-		]
-	},
-
-
-	"addtotemplateArgs{}":{
-		"prefix":"addtotemplateArgs",
-		"body":[
-			"\\addtotemplateArgs{${1:arg}}"
-		]
-	},
-
-
-	"aebwritelastpage":{
-		"prefix":"aebwritelastpage",
-		"body":[
-			"\\aebwritelastpage"
-		]
-	},
-
-
-	"allowTransparency":{
-		"prefix":"allowTransparency",
-		"body":[
-			"\\allowTransparency"
-		]
-	},
-
-
-	"bWebCustomize":{
-		"prefix":"bWebCustomize",
-		"body":[
-			"\\bWebCustomize"
-		]
-	},
-
-
-	"calculatefullwidth":{
-		"prefix":"calculatefullwidth",
-		"body":[
-			"\\calculatefullwidth"
-		]
-	},
-
-
-	"centertextonpage":{
-		"prefix":"centertextonpage",
-		"body":[
-			"\\centertextonpage"
-		]
-	},
-
-
-	"chkpanelgroup":{
-		"prefix":"chkpanelgroup",
-		"body":[
-			"\\chkpanelgroup"
-		]
-	},
-
-
-	"clearfullwidthtemplateArgs":{
-		"prefix":"clearfullwidthtemplateArgs",
-		"body":[
-			"\\clearfullwidthtemplateArgs"
-		]
-	},
-
-
-	"clearpaneltemplateArgs":{
-		"prefix":"clearpaneltemplateArgs",
-		"body":[
-			"\\clearpaneltemplateArgs"
-		]
-	},
-
-
-	"cleartemplateArgs":{
-		"prefix":"cleartemplateArgs",
-		"body":[
-			"\\cleartemplateArgs"
-		]
-	},
-
-
-	"currLeftMarg":{
-		"prefix":"currLeftMarg",
-		"body":[
-			"\\currLeftMarg"
-		]
-	},
-
-
-	"currPanelWidth":{
-		"prefix":"currPanelWidth",
-		"body":[
-			"\\currPanelWidth"
-		]
-	},
-
-
-	"currTopMarg":{
-		"prefix":"currTopMarg",
-		"body":[
-			"\\currTopMarg"
-		]
-	},
-
-
-	"cyrCommand":{
-		"prefix":"cyrCommand",
-		"body":[
-			"\\cyrCommand"
-		]
-	},
-
-
-	"disablePanels{}":{
-		"prefix":"disablePanels",
-		"body":[
-			"\\disablePanels{${1:arg}}"
-		]
-	},
-
-
-	"disableScreens{}":{
-		"prefix":"disableScreens",
-		"body":[
-			"\\disableScreens{${1:arg}}"
-		]
-	},
-
-
-	"eWebCustomize":{
-		"prefix":"eWebCustomize",
-		"body":[
-			"\\eWebCustomize"
-		]
-	},
-
-
-	"forceSubSubNumbers":{
-		"prefix":"forceSubSubNumbers",
-		"body":[
-			"\\forceSubSubNumbers"
-		]
-	},
-
-
-	"fullscreenwidth":{
-		"prefix":"fullscreenwidth",
-		"body":[
-			"\\fullscreenwidth"
-		]
-	},
-
-
-	"fullscreenwidthadj":{
-		"prefix":"fullscreenwidthadj",
-		"body":[
-			"\\fullscreenwidthadj"
-		]
-	},
-
-
-	"fullwidthtemplate{}{}":{
-		"prefix":"fullwidthtemplate",
-		"body":[
-			"\\fullwidthtemplate{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"get":{
-		"prefix":"get",
-		"body":[
-			"\\get"
-		]
-	},
-
-
-	"getDimsFromGraphic{}{}{}{}":{
-		"prefix":"getDimsFromGraphic",
-		"body":[
-			"\\getDimsFromGraphic{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
-	},
-
-
-	"getargsii":{
-		"prefix":"getargsii",
-		"body":[
-			"\\getargsii"
-		]
-	},
-
-
-	"getargs{}{}":{
-		"prefix":"getargs",
-		"body":[
-			"\\getargs{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"hproportionwebauthor":{
-		"prefix":"hproportionwebauthor",
-		"body":[
-			"\\hproportionwebauthor"
-		]
-	},
-
-
-	"hproportionwebtitle":{
-		"prefix":"hproportionwebtitle",
-		"body":[
-			"\\hproportionwebtitle"
-		]
-	},
-
-
-	"hproportionwebuniversity":{
-		"prefix":"hproportionwebuniversity",
-		"body":[
-			"\\hproportionwebuniversity"
-		]
-	},
-
-
-	"incby":{
-		"prefix":"incby",
-		"body":[
-			"\\incby"
-		]
-	},
-
-
-	"inputWebCfg":{
-		"prefix":"inputWebCfg",
-		"body":[
-			"\\inputWebCfg"
-		]
-	},
-
-
-	"insNaviBar":{
-		"prefix":"insNaviBar",
-		"body":[
-			"\\insNaviBar"
-		]
-	},
-
-
-	"insertwebtoc":{
-		"prefix":"insertwebtoc",
-		"body":[
-			"\\insertwebtoc"
-		]
-	},
-
-
-	"isChapter":{
-		"prefix":"isChapter",
-		"body":[
-			"\\isChapter"
-		]
-	},
-
-
-	"listAddToPanelTemplates":{
-		"prefix":"listAddToPanelTemplates",
-		"body":[
-			"\\listAddToPanelTemplates"
-		]
-	},
-
-
-	"listAddToTemplates":{
-		"prefix":"listAddToTemplates",
-		"body":[
-			"\\listAddToTemplates"
-		]
-	},
-
-
-	"loadwebpro":{
-		"prefix":"loadwebpro",
-		"body":[
-			"\\loadwebpro"
-		]
-	},
-
-
-	"makeFullwidthhead":{
-		"prefix":"makeFullwidthhead",
-		"body":[
-			"\\makeFullwidthhead"
-		]
-	},
-
-
-	"maketitlepostamble":{
-		"prefix":"maketitlepostamble",
-		"body":[
-			"\\maketitlepostamble"
-		]
-	},
-
-
-	"maketitlepreamble":{
-		"prefix":"maketitlepreamble",
-		"body":[
-			"\\maketitlepreamble"
-		]
-	},
-
-
-	"marginsize":{
-		"prefix":"marginsize",
-		"body":[
-			"\\marginsize"
-		]
-	},
-
-
-	"maxtextscreentext":{
-		"prefix":"maxtextscreentext",
-		"body":[
-			"\\maxtextscreentext"
-		]
-	},
-
-
-	"newBottomMarg":{
-		"prefix":"newBottomMarg",
-		"body":[
-			"\\newBottomMarg"
-		]
-	},
-
-
-	"newLeftMarg":{
-		"prefix":"newLeftMarg",
-		"body":[
-			"\\newLeftMarg"
-		]
-	},
-
-
-	"newPanelWidth":{
-		"prefix":"newPanelWidth",
-		"body":[
-			"\\newPanelWidth"
-		]
-	},
-
-
-	"newRightMarg":{
-		"prefix":"newRightMarg",
-		"body":[
-			"\\newRightMarg"
-		]
-	},
-
-
-	"newTopMarg":{
-		"prefix":"newTopMarg",
-		"body":[
-			"\\newTopMarg"
-		]
-	},
-
-
-	"nocopyrightNotice":{
-		"prefix":"nocopyrightNotice",
-		"body":[
-			"\\nocopyrightNotice"
-		]
-	},
-
-
-	"nocopyrightsymbol":{
-		"prefix":"nocopyrightsymbol",
-		"body":[
-			"\\nocopyrightsymbol"
-		]
-	},
-
-
-	"norevisionLabel":{
-		"prefix":"norevisionLabel",
-		"body":[
-			"\\norevisionLabel"
-		]
-	},
-
-
-	"optionalpagematter":{
-		"prefix":"optionalpagematter",
-		"body":[
-			"\\optionalpagematter"
-		]
-	},
-
-
-	"origpaperheight":{
-		"prefix":"origpaperheight",
-		"body":[
-			"\\origpaperheight"
-		]
-	},
-
-
-	"origpaperwidth":{
-		"prefix":"origpaperwidth",
-		"body":[
-			"\\origpaperwidth"
-		]
-	},
-
-
-	"panelIconGroup":{
-		"prefix":"panelIconGroup",
-		"body":[
-			"\\panelIconGroup"
-		]
-	},
-
-
-	"panelNavigroupWidth":{
-		"prefix":"panelNavigroupWidth",
-		"body":[
-			"\\panelNavigroupWidth"
-		]
-	},
-
-
-	"panelSep":{
-		"prefix":"panelSep",
-		"body":[
-			"\\panelSep"
-		]
-	},
-
-
-	"panelgroupHeight{}":{
-		"prefix":"panelgroupHeight",
-		"body":[
-			"\\panelgroupHeight{${1:arg}}"
-		]
-	},
-
-
-	"panelgroupSep{}":{
-		"prefix":"panelgroupSep",
-		"body":[
-			"\\panelgroupSep{${1:arg}}"
-		]
-	},
-
-
-	"panelgroupWidth{}":{
-		"prefix":"panelgroupWidth",
-		"body":[
-			"\\panelgroupWidth{${1:arg}}"
-		]
-	},
-
-
-	"panelrowsep":{
-		"prefix":"panelrowsep",
-		"body":[
-			"\\panelrowsep"
-		]
-	},
-
-
-	"panelscreenwidth":{
-		"prefix":"panelscreenwidth",
-		"body":[
-			"\\panelscreenwidth"
-		]
-	},
-
-
-	"panelsep{}":{
-		"prefix":"panelsep",
-		"body":[
-			"\\panelsep{${1:arg}}"
-		]
-	},
-
-
-	"pdfLang{}":{
-		"prefix":"pdfLang",
-		"body":[
-			"\\pdfLang{${1:arg}}"
-		]
-	},
-
-
-	"placePanelTemplateInLayer{}":{
-		"prefix":"placePanelTemplateInLayer",
-		"body":[
-			"\\placePanelTemplateInLayer{${1:arg}}"
-		]
-	},
-
-
-	"placeScreenNavibar":{
-		"prefix":"placeScreenNavibar",
-		"body":[
-			"\\placeScreenNavibar"
-		]
-	},
-
-
-	"placeTemplateInLayer{}":{
-		"prefix":"placeTemplateInLayer",
-		"body":[
-			"\\placeTemplateInLayer{${1:arg}}"
-		]
-	},
-
-
-	"popFromFullWidthPage":{
-		"prefix":"popFromFullWidthPage",
-		"body":[
-			"\\popFromFullWidthPage"
-		]
-	},
-
-
-	"prtscrA{}{}":{
-		"prefix":"prtscrA",
-		"body":[
-			"\\prtscrA{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"prtscrV":{
-		"prefix":"prtscrV",
-		"body":[
-			"\\prtscrV"
-		]
-	},
-
-
-	"pushToFullWidthPage":{
-		"prefix":"pushToFullWidthPage",
-		"body":[
-			"\\pushToFullWidthPage"
-		]
-	},
-
-
-	"removehereaftericon":{
-		"prefix":"removehereaftericon",
-		"body":[
-			"\\removehereaftericon"
-		]
-	},
-
-
-	"resetmargins{}{}{}{}":{
-		"prefix":"resetmargins",
-		"body":[
-			"\\resetmargins{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
-	},
-
-
-	"restoreElements{}":{
-		"prefix":"restoreElements",
-		"body":[
-			"\\restoreElements{${1:arg}}"
-		]
-	},
-
-
-	"restorePanels{}":{
-		"prefix":"restorePanels",
-		"body":[
-			"\\restorePanels{${1:arg}}"
-		]
-	},
-
-
-	"restoreSavedHead":{
-		"prefix":"restoreSavedHead",
-		"body":[
-			"\\restoreSavedHead"
-		]
-	},
-
-
-	"restoreScreens{}":{
-		"prefix":"restoreScreens",
-		"body":[
-			"\\restoreScreens{${1:arg}}"
-		]
-	},
-
-
-	"restorenormalsettings":{
-		"prefix":"restorenormalsettings",
-		"body":[
-			"\\restorenormalsettings"
-		]
-	},
-
-
-	"saveClearElements{}":{
-		"prefix":"saveClearElements",
-		"body":[
-			"\\saveClearElements{${1:arg}}"
-		]
-	},
-
-
-	"saveElements{}":{
-		"prefix":"saveElements",
-		"body":[
-			"\\saveElements{${1:arg}}"
-		]
-	},
-
-
-	"setPageDevice{}{}":{
-		"prefix":"setPageDevice",
-		"body":[
-			"\\setPageDevice{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"shortwebsubject":{
-		"prefix":"shortwebsubject",
-		"body":[
-			"\\shortwebsubject"
-		]
-	},
-
-
-	"shortwebtitle":{
-		"prefix":"shortwebtitle",
-		"body":[
-			"\\shortwebtitle"
-		]
-	},
-
-
-	"stdPanelBG":{
-		"prefix":"stdPanelBG",
-		"body":[
-			"\\stdPanelBG"
-		]
-	},
-
-
-	"stdbldpanel":{
-		"prefix":"stdbldpanel",
-		"body":[
-			"\\stdbldpanel"
-		]
-	},
-
-
-	"templatedefaults":{
-		"prefix":"templatedefaults",
-		"body":[
-			"\\templatedefaults"
-		]
-	},
-
-
-	"textscreenwidth":{
-		"prefix":"textscreenwidth",
-		"body":[
-			"\\textscreenwidth"
-		]
-	},
-
-
-	"thewebemail":{
-		"prefix":"thewebemail",
-		"body":[
-			"\\thewebemail"
-		]
-	},
-
-
-	"tightsettings":{
-		"prefix":"tightsettings",
-		"body":[
-			"\\tightsettings"
-		]
-	},
-
-
-	"titleauthorproportion":{
-		"prefix":"titleauthorproportion",
-		"body":[
-			"\\titleauthorproportion"
-		]
-	},
-
-
-	"tocIndentByNumber{}":{
-		"prefix":"tocIndentByNumber",
-		"body":[
-			"\\tocIndentByNumber{${1:arg}}"
-		]
-	},
-
-
-	"tocindentByNumber":{
-		"prefix":"tocindentByNumber",
-		"body":[
-			"\\tocindentByNumber"
-		]
-	},
-
-
-	"trailerFontSize":{
-		"prefix":"trailerFontSize",
-		"body":[
-			"\\trailerFontSize"
-		]
-	},
-
-
-	"useStandardPanel":{
-		"prefix":"useStandardPanel",
-		"body":[
-			"\\useStandardPanel"
-		]
-	},
-
-
-	"vspaceAfterDirName":{
-		"prefix":"vspaceAfterDirName",
-		"body":[
-			"\\vspaceAfterDirName"
-		]
-	},
-
-
-	"webArg":{
-		"prefix":"webArg",
-		"body":[
-			"\\webArg"
-		]
-	},
-
-
-	"webNotPaneledWarning":{
-		"prefix":"webNotPaneledWarning",
-		"body":[
-			"\\webNotPaneledWarning"
-		]
-	},
-
-
-	"webSaveMargDim":{
-		"prefix":"webSaveMargDim",
-		"body":[
-			"\\webSaveMargDim"
-		]
-	},
-
-
-	"webSaveSSDim":{
-		"prefix":"webSaveSSDim",
-		"body":[
-			"\\webSaveSSDim"
-		]
-	},
-
-
-	"webdirectory":{
-		"prefix":"webdirectory",
-		"body":[
-			"\\webdirectory"
-		]
-	},
-
-
-	"websetheadheight":{
-		"prefix":"websetheadheight",
-		"body":[
-			"\\websetheadheight"
-		]
-	},
-
-
-	"webtableofcontents":{
-		"prefix":"webtableofcontents",
-		"body":[
-			"\\webtableofcontents"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2597,7 +32,17 @@
 		"prefix":"margins",
 		"body":[
 			"\\margins[${5:panel width}]{${1:left}}{${2:right}}{${3:top}}{${4:bottom}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setScreensizeFromGraphic{}":{
+		"prefix":"setScreensizeFromGraphic",
+		"body":[
+			"\\setScreensizeFromGraphic{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2605,7 +50,287 @@
 		"prefix":"setScreensizeFromGraphic",
 		"body":[
 			"\\setScreensizeFromGraphic[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtoWebHeight{}":{
+		"prefix":"addtoWebHeight",
+		"body":[
+			"\\addtoWebHeight{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtoWebWidth{}":{
+		"prefix":"addtoWebWidth",
+		"body":[
+			"\\addtoWebWidth{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelwidth{}":{
+		"prefix":"panelwidth",
+		"body":[
+			"\\panelwidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lheader{}":{
+		"prefix":"lheader",
+		"body":[
+			"\\lheader{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cheader{}":{
+		"prefix":"cheader",
+		"body":[
+			"\\cheader{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rheader{}":{
+		"prefix":"rheader",
+		"body":[
+			"\\rheader{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lfooter{}":{
+		"prefix":"lfooter",
+		"body":[
+			"\\lfooter{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cfooter{}":{
+		"prefix":"cfooter",
+		"body":[
+			"\\cfooter{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rfooter{}":{
+		"prefix":"rfooter",
+		"body":[
+			"\\rfooter{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headerformat{}":{
+		"prefix":"headerformat",
+		"body":[
+			"\\headerformat{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footerformat{}":{
+		"prefix":"footerformat",
+		"body":[
+			"\\footerformat{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webheadwrapper{}":{
+		"prefix":"webheadwrapper",
+		"body":[
+			"\\webheadwrapper{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webfootwrapper{}":{
+		"prefix":"webfootwrapper",
+		"body":[
+			"\\webfootwrapper{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearHeaders":{
+		"prefix":"clearHeaders",
+		"body":[
+			"\\clearHeaders"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoreHeaders":{
+		"prefix":"restoreHeaders",
+		"body":[
+			"\\restoreHeaders"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearFooters":{
+		"prefix":"clearFooters",
+		"body":[
+			"\\clearFooters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoreFooters":{
+		"prefix":"restoreFooters",
+		"body":[
+			"\\restoreFooters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headersOnSectionPage":{
+		"prefix":"headersOnSectionPage",
+		"body":[
+			"\\headersOnSectionPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noHeadersOnSectionPage":{
+		"prefix":"noHeadersOnSectionPage",
+		"body":[
+			"\\noHeadersOnSectionPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subject{}":{
+		"prefix":"subject",
+		"body":[
+			"\\subject{${1:subject%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"university{}":{
+		"prefix":"university",
+		"body":[
+			"\\university{${1:university%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"email{}":{
+		"prefix":"email",
+		"body":[
+			"\\email{${1:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"version{}":{
+		"prefix":"version",
+		"body":[
+			"\\version{${1:version}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"copyrightyears{}":{
+		"prefix":"copyrightyears",
+		"body":[
+			"\\copyrightyears{${1:years}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"universityColor{}":{
+		"prefix":"universityColor",
+		"body":[
+			"\\universityColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleColor{}":{
+		"prefix":"titleColor",
+		"body":[
+			"\\titleColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authorColor{}":{
+		"prefix":"authorColor",
+		"body":[
+			"\\authorColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:word1,word2,...%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topTitlePage":{
+		"prefix":"topTitlePage",
+		"body":[
+			"\\topTitlePage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlepageTrailer":{
+		"prefix":"titlepageTrailer",
+		"body":[
+			"\\titlepageTrailer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionalPageMatter{}":{
+		"prefix":"optionalPageMatter",
+		"body":[
+			"\\optionalPageMatter{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2613,7 +338,368 @@
 		"prefix":"optionalPageMatter",
 		"body":[
 			"\\optionalPageMatter[${2:vspace}]{${1:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nocopyright":{
+		"prefix":"nocopyright",
+		"body":[
+			"\\nocopyright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minimumskip":{
+		"prefix":"minimumskip",
+		"body":[
+			"\\minimumskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"copyrightLabel{}":{
+		"prefix":"copyrightLabel",
+		"body":[
+			"\\copyrightLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"revisionLabel{}":{
+		"prefix":"revisionLabel",
+		"body":[
+			"\\revisionLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"versionLabel{}":{
+		"prefix":"versionLabel",
+		"body":[
+			"\\versionLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webtitle":{
+		"prefix":"webtitle",
+		"body":[
+			"\\webtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webauthor":{
+		"prefix":"webauthor",
+		"body":[
+			"\\webauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"websubject":{
+		"prefix":"websubject",
+		"body":[
+			"\\websubject"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webkeywords":{
+		"prefix":"webkeywords",
+		"body":[
+			"\\webkeywords"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webuniversity":{
+		"prefix":"webuniversity",
+		"body":[
+			"\\webuniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webemail":{
+		"prefix":"webemail",
+		"body":[
+			"\\webemail"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webversion":{
+		"prefix":"webversion",
+		"body":[
+			"\\webversion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webcopyrightyears":{
+		"prefix":"webcopyrightyears",
+		"body":[
+			"\\webcopyrightyears"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"directoryName{}":{
+		"prefix":"directoryName",
+		"body":[
+			"\\directoryName{${1:name%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocName{}":{
+		"prefix":"tocName",
+		"body":[
+			"\\tocName{${1:name%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dirContentLink{}":{
+		"prefix":"dirContentLink",
+		"body":[
+			"\\dirContentLink{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formatWordDirectory{}":{
+		"prefix":"formatWordDirectory",
+		"body":[
+			"\\formatWordDirectory{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formatDirectoryItems{}":{
+		"prefix":"formatDirectoryItems",
+		"body":[
+			"\\formatDirectoryItems{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removeDirTOC":{
+		"prefix":"removeDirTOC",
+		"body":[
+			"\\removeDirTOC"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removeDirArticle":{
+		"prefix":"removeDirArticle",
+		"body":[
+			"\\removeDirArticle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtoDirList{}":{
+		"prefix":"addtoDirList",
+		"body":[
+			"\\addtoDirList{${1:new item%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dirTOCItem":{
+		"prefix":"dirTOCItem",
+		"body":[
+			"\\dirTOCItem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dirArticleItem":{
+		"prefix":"dirArticleItem",
+		"body":[
+			"\\dirArticleItem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"priorDirMatter{}":{
+		"prefix":"priorDirMatter",
+		"body":[
+			"\\priorDirMatter{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"afterDirMatter{}":{
+		"prefix":"afterDirMatter",
+		"body":[
+			"\\afterDirMatter{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"priorDirList{}":{
+		"prefix":"priorDirList",
+		"body":[
+			"\\priorDirList{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"afterDirList{}":{
+		"prefix":"afterDirList",
+		"body":[
+			"\\afterDirList{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"directoryhook{}":{
+		"prefix":"directoryhook",
+		"body":[
+			"\\directoryhook{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocindent{}":{
+		"prefix":"tocindent",
+		"body":[
+			"\\tocindent{${1:indent}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"widestNumber{}":{
+		"prefix":"widestNumber",
+		"body":[
+			"\\widestNumber{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocColor{}":{
+		"prefix":"tocColor",
+		"body":[
+			"\\tocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"coverpagemargin":{
+		"prefix":"coverpagemargin",
+		"body":[
+			"\\coverpagemargin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeinlinetitle":{
+		"prefix":"makeinlinetitle",
+		"body":[
+			"\\makeinlinetitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NaviBarOn":{
+		"prefix":"NaviBarOn",
+		"body":[
+			"\\NaviBarOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NaviBarOff":{
+		"prefix":"NaviBarOff",
+		"body":[
+			"\\NaviBarOff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"navibarTextColor{}":{
+		"prefix":"navibarTextColor",
+		"body":[
+			"\\navibarTextColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"navibarBgColor{}":{
+		"prefix":"navibarBgColor",
+		"body":[
+			"\\navibarBgColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"navibariconHeight{}":{
+		"prefix":"navibariconHeight",
+		"body":[
+			"\\navibariconHeight{${1:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"navibariconWidth{}":{
+		"prefix":"navibariconWidth",
+		"body":[
+			"\\navibariconWidth{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newNaviIcon{}{}{}{}{}":{
+		"prefix":"newNaviIcon",
+		"body":[
+			"\\newNaviIcon{${1:cmd}}{${2:width}}{${3:height}}{${4:text}}{${5:action%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2621,7 +707,143 @@
 		"prefix":"newNaviIcon",
 		"body":[
 			"\\newNaviIcon[${6:m|${7:j}|l}]{${1:cmd}}{${2:width}}{${3:height}}{${4:text}}{${5:action%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"insertnaviiconhere{}":{
+		"prefix":"insertnaviiconhere",
+		"body":[
+			"\\insertnaviiconhere{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertnaviiconhereafter{}":{
+		"prefix":"insertnaviiconhereafter",
+		"body":[
+			"\\insertnaviiconhereafter{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ArrowUp{}":{
+		"prefix":"ArrowUp",
+		"body":[
+			"\\ArrowUp{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ArrowDown{}":{
+		"prefix":"ArrowDown",
+		"body":[
+			"\\ArrowDown{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultpageheader":{
+		"prefix":"defaultpageheader",
+		"body":[
+			"\\defaultpageheader"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"directionIconTextColor{}":{
+		"prefix":"directionIconTextColor",
+		"body":[
+			"\\directionIconTextColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"directionIconBgColor{}":{
+		"prefix":"directionIconBgColor",
+		"body":[
+			"\\directionIconBgColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelNaviGroup":{
+		"prefix":"panelNaviGroup",
+		"body":[
+			"\\panelNaviGroup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifeqforpaper":{
+		"prefix":"ifeqforpaper",
+		"body":[
+			"\\ifeqforpaper"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqforpapertrue":{
+		"prefix":"eqforpapertrue",
+		"body":[
+			"\\eqforpapertrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqforpaperfalse":{
+		"prefix":"eqforpaperfalse",
+		"body":[
+			"\\eqforpaperfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useFullWidthForPaper":{
+		"prefix":"useFullWidthForPaper",
+		"body":[
+			"\\useFullWidthForPaper"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prtscr{}{}":{
+		"prefix":"prtscr",
+		"body":[
+			"\\prtscr{${1:print text%text}}{${2:screen text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewPage":{
+		"prefix":"NewPage",
+		"body":[
+			"\\NewPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"template{}":{
+		"prefix":"template",
+		"body":[
+			"\\template{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2629,7 +851,35 @@
 		"prefix":"template",
 		"body":[
 			"\\template[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"textBgColor{}":{
+		"prefix":"textBgColor",
+		"body":[
+			"\\textBgColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddToTemplate{}":{
+		"prefix":"AddToTemplate",
+		"body":[
+			"\\AddToTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"paneltemplate{}":{
+		"prefix":"paneltemplate",
+		"body":[
+			"\\paneltemplate{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2637,7 +887,1745 @@
 		"prefix":"paneltemplate",
 		"body":[
 			"\\paneltemplate[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"panelBgColor{}":{
+		"prefix":"panelBgColor",
+		"body":[
+			"\\panelBgColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddToPanelTemplate{}":{
+		"prefix":"AddToPanelTemplate",
+		"body":[
+			"\\AddToPanelTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buildpanel{}":{
+		"prefix":"buildpanel",
+		"body":[
+			"\\buildpanel{${1:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minPanelWidth{}":{
+		"prefix":"minPanelWidth",
+		"body":[
+			"\\minPanelWidth{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"disableTemplate{}":{
+		"prefix":"disableTemplate",
+		"body":[
+			"\\disableTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enableTemplate{}":{
+		"prefix":"enableTemplate",
+		"body":[
+			"\\enableTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"disablePanelTemplate{}":{
+		"prefix":"disablePanelTemplate",
+		"body":[
+			"\\disablePanelTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enablePanelTemplate{}":{
+		"prefix":"enablePanelTemplate",
+		"body":[
+			"\\enablePanelTemplate{${1:template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearTextTemplate":{
+		"prefix":"ClearTextTemplate",
+		"body":[
+			"\\ClearTextTemplate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearPanelTemplate":{
+		"prefix":"ClearPanelTemplate",
+		"body":[
+			"\\ClearPanelTemplate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearBuildPanel":{
+		"prefix":"ClearBuildPanel",
+		"body":[
+			"\\ClearBuildPanel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearAllTemplates":{
+		"prefix":"ClearAllTemplates",
+		"body":[
+			"\\ClearAllTemplates"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearTextTemplateBuffer":{
+		"prefix":"ClearTextTemplateBuffer",
+		"body":[
+			"\\ClearTextTemplateBuffer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearPanelTemplateBuffer":{
+		"prefix":"ClearPanelTemplateBuffer",
+		"body":[
+			"\\ClearPanelTemplateBuffer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aboveTopTitleSkip{}":{
+		"prefix":"aboveTopTitleSkip",
+		"body":[
+			"\\aboveTopTitleSkip{${1:skip}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noFinalDot":{
+		"prefix":"noFinalDot",
+		"body":[
+			"\\noFinalDot"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocPartTitle{}":{
+		"prefix":"tocPartTitle",
+		"body":[
+			"\\tocPartTitle{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formatPartTitle{}":{
+		"prefix":"formatPartTitle",
+		"body":[
+			"\\formatPartTitle{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorePartTitleFormat":{
+		"prefix":"restorePartTitleFormat",
+		"body":[
+			"\\restorePartTitleFormat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noPartNumbers":{
+		"prefix":"noPartNumbers",
+		"body":[
+			"\\noPartNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formatChapterNumber{}":{
+		"prefix":"formatChapterNumber",
+		"body":[
+			"\\formatChapterNumber{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"formatChapterTitle{}":{
+		"prefix":"formatChapterTitle",
+		"body":[
+			"\\formatChapterTitle{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareDocInfo{}":{
+		"prefix":"DeclareDocInfo",
+		"body":[
+			"\\DeclareDocInfo{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclarePageLayout{}":{
+		"prefix":"DeclarePageLayout",
+		"body":[
+			"\\DeclarePageLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"universityLayout{}":{
+		"prefix":"universityLayout",
+		"body":[
+			"\\universityLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleLayout{}":{
+		"prefix":"titleLayout",
+		"body":[
+			"\\titleLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authorLayout{}":{
+		"prefix":"authorLayout",
+		"body":[
+			"\\authorLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topTitlePageProportion{}":{
+		"prefix":"topTitlePageProportion",
+		"body":[
+			"\\topTitlePageProportion{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DesignTitlePageTrailer{}":{
+		"prefix":"DesignTitlePageTrailer",
+		"body":[
+			"\\DesignTitlePageTrailer{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectTocDings{}":{
+		"prefix":"selectTocDings",
+		"body":[
+			"\\selectTocDings{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectColors{}":{
+		"prefix":"selectColors",
+		"body":[
+			"\\selectColors{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noSectionNumbers":{
+		"prefix":"noSectionNumbers",
+		"body":[
+			"\\noSectionNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocLayout{}":{
+		"prefix":"tocLayout",
+		"body":[
+			"\\tocLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionLayout{}":{
+		"prefix":"sectionLayout",
+		"body":[
+			"\\sectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsectionLayout{}":{
+		"prefix":"subsectionLayout",
+		"body":[
+			"\\subsectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubsectionLayout{}":{
+		"prefix":"subsubsectionLayout",
+		"body":[
+			"\\subsubsectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowhoffset{}":{
+		"prefix":"shadowhoffset",
+		"body":[
+			"\\shadowhoffset{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowvoffset{}":{
+		"prefix":"shadowvoffset",
+		"body":[
+			"\\shadowvoffset{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSecHead{}":{
+		"prefix":"customSecHead",
+		"body":[
+			"\\customSecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSubsecHead{}":{
+		"prefix":"customSubsecHead",
+		"body":[
+			"\\customSubsecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSubsubsecHead{}":{
+		"prefix":"customSubsubsecHead",
+		"body":[
+			"\\customSubsubsecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preparedLabel{}":{
+		"prefix":"preparedLabel",
+		"body":[
+			"\\preparedLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prepared{}":{
+		"prefix":"prepared",
+		"body":[
+			"\\prepared{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talkdate{}":{
+		"prefix":"talkdate",
+		"body":[
+			"\\talkdate{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webtalkdate":{
+		"prefix":"webtalkdate",
+		"body":[
+			"\\webtalkdate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talkdateLabel{}":{
+		"prefix":"talkdateLabel",
+		"body":[
+			"\\talkdateLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talksite{}":{
+		"prefix":"talksite",
+		"body":[
+			"\\talksite{${1:site}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customUniversity{}":{
+		"prefix":"customUniversity",
+		"body":[
+			"\\customUniversity{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customTitle{}":{
+		"prefix":"customTitle",
+		"body":[
+			"\\customTitle{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customAuthor{}":{
+		"prefix":"customAuthor",
+		"body":[
+			"\\customAuthor{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customToc{}":{
+		"prefix":"customToc",
+		"body":[
+			"\\customToc{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignuniversity":{
+		"prefix":"halignuniversity",
+		"body":[
+			"\\halignuniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"haligntitle":{
+		"prefix":"haligntitle",
+		"body":[
+			"\\haligntitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignauthor":{
+		"prefix":"halignauthor",
+		"body":[
+			"\\halignauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsection":{
+		"prefix":"halignsection",
+		"body":[
+			"\\halignsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsubsection":{
+		"prefix":"halignsubsection",
+		"body":[
+			"\\halignsubsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsubsubsection":{
+		"prefix":"halignsubsubsection",
+		"body":[
+			"\\halignsubsubsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"haligntoc":{
+		"prefix":"haligntoc",
+		"body":[
+			"\\haligntoc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubDefaultDing{}":{
+		"prefix":"subsubDefaultDing",
+		"body":[
+			"\\subsubDefaultDing{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionTitle":{
+		"prefix":"sectionTitle",
+		"body":[
+			"\\sectionTitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionAuthor":{
+		"prefix":"sectionAuthor",
+		"body":[
+			"\\sectionAuthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionUniversity":{
+		"prefix":"sectionUniversity",
+		"body":[
+			"\\sectionUniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionToc":{
+		"prefix":"sectionToc",
+		"body":[
+			"\\sectionToc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifShadow":{
+		"prefix":"ifShadow",
+		"body":[
+			"\\ifShadow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Shadowtrue":{
+		"prefix":"Shadowtrue",
+		"body":[
+			"\\Shadowtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Shadowfalse":{
+		"prefix":"Shadowfalse",
+		"body":[
+			"\\Shadowfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useSectionNumbers":{
+		"prefix":"useSectionNumbers",
+		"body":[
+			"\\useSectionNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dDingToc{}":{
+		"prefix":"dDingToc",
+		"body":[
+			"\\dDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddDingToc{}":{
+		"prefix":"ddDingToc",
+		"body":[
+			"\\ddDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dddDingToc{}":{
+		"prefix":"dddDingToc",
+		"body":[
+			"\\dddDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dDingTocColor{}":{
+		"prefix":"dDingTocColor",
+		"body":[
+			"\\dDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddDingTocColor{}":{
+		"prefix":"ddDingTocColor",
+		"body":[
+			"\\ddDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dddDingTocColor{}":{
+		"prefix":"dddDingTocColor",
+		"body":[
+			"\\dddDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareDocInfo{}":{
+		"prefix":"DeclareDocInfo",
+		"body":[
+			"\\DeclareDocInfo{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclarePageLayout{}":{
+		"prefix":"DeclarePageLayout",
+		"body":[
+			"\\DeclarePageLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"universityLayout{}":{
+		"prefix":"universityLayout",
+		"body":[
+			"\\universityLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleLayout{}":{
+		"prefix":"titleLayout",
+		"body":[
+			"\\titleLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authorLayout{}":{
+		"prefix":"authorLayout",
+		"body":[
+			"\\authorLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"topTitlePageProportion{}":{
+		"prefix":"topTitlePageProportion",
+		"body":[
+			"\\topTitlePageProportion{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DesignTitlePageTrailer{}":{
+		"prefix":"DesignTitlePageTrailer",
+		"body":[
+			"\\DesignTitlePageTrailer{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectTocDings{}":{
+		"prefix":"selectTocDings",
+		"body":[
+			"\\selectTocDings{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectColors{}":{
+		"prefix":"selectColors",
+		"body":[
+			"\\selectColors{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noSectionNumbers":{
+		"prefix":"noSectionNumbers",
+		"body":[
+			"\\noSectionNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocLayout{}":{
+		"prefix":"tocLayout",
+		"body":[
+			"\\tocLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionLayout{}":{
+		"prefix":"sectionLayout",
+		"body":[
+			"\\sectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsectionLayout{}":{
+		"prefix":"subsectionLayout",
+		"body":[
+			"\\subsectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubsectionLayout{}":{
+		"prefix":"subsubsectionLayout",
+		"body":[
+			"\\subsubsectionLayout{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowhoffset{}":{
+		"prefix":"shadowhoffset",
+		"body":[
+			"\\shadowhoffset{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowvoffset{}":{
+		"prefix":"shadowvoffset",
+		"body":[
+			"\\shadowvoffset{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSecHead{}":{
+		"prefix":"customSecHead",
+		"body":[
+			"\\customSecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSubsecHead{}":{
+		"prefix":"customSubsecHead",
+		"body":[
+			"\\customSubsecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customSubsubsecHead{}":{
+		"prefix":"customSubsubsecHead",
+		"body":[
+			"\\customSubsubsecHead{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preparedLabel{}":{
+		"prefix":"preparedLabel",
+		"body":[
+			"\\preparedLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prepared{}":{
+		"prefix":"prepared",
+		"body":[
+			"\\prepared{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talkdate{}":{
+		"prefix":"talkdate",
+		"body":[
+			"\\talkdate{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webtalkdate":{
+		"prefix":"webtalkdate",
+		"body":[
+			"\\webtalkdate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talkdateLabel{}":{
+		"prefix":"talkdateLabel",
+		"body":[
+			"\\talkdateLabel{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"talksite{}":{
+		"prefix":"talksite",
+		"body":[
+			"\\talksite{${1:site}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customUniversity{}":{
+		"prefix":"customUniversity",
+		"body":[
+			"\\customUniversity{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customTitle{}":{
+		"prefix":"customTitle",
+		"body":[
+			"\\customTitle{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customAuthor{}":{
+		"prefix":"customAuthor",
+		"body":[
+			"\\customAuthor{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"customToc{}":{
+		"prefix":"customToc",
+		"body":[
+			"\\customToc{${1:TeX code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignuniversity":{
+		"prefix":"halignuniversity",
+		"body":[
+			"\\halignuniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"haligntitle":{
+		"prefix":"haligntitle",
+		"body":[
+			"\\haligntitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignauthor":{
+		"prefix":"halignauthor",
+		"body":[
+			"\\halignauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsection":{
+		"prefix":"halignsection",
+		"body":[
+			"\\halignsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsubsection":{
+		"prefix":"halignsubsection",
+		"body":[
+			"\\halignsubsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"halignsubsubsection":{
+		"prefix":"halignsubsubsection",
+		"body":[
+			"\\halignsubsubsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"haligntoc":{
+		"prefix":"haligntoc",
+		"body":[
+			"\\haligntoc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubDefaultDing{}":{
+		"prefix":"subsubDefaultDing",
+		"body":[
+			"\\subsubDefaultDing{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionTitle":{
+		"prefix":"sectionTitle",
+		"body":[
+			"\\sectionTitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionAuthor":{
+		"prefix":"sectionAuthor",
+		"body":[
+			"\\sectionAuthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionUniversity":{
+		"prefix":"sectionUniversity",
+		"body":[
+			"\\sectionUniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sectionToc":{
+		"prefix":"sectionToc",
+		"body":[
+			"\\sectionToc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifShadow":{
+		"prefix":"ifShadow",
+		"body":[
+			"\\ifShadow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Shadowtrue":{
+		"prefix":"Shadowtrue",
+		"body":[
+			"\\Shadowtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Shadowfalse":{
+		"prefix":"Shadowfalse",
+		"body":[
+			"\\Shadowfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useSectionNumbers":{
+		"prefix":"useSectionNumbers",
+		"body":[
+			"\\useSectionNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dDingToc{}":{
+		"prefix":"dDingToc",
+		"body":[
+			"\\dDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddDingToc{}":{
+		"prefix":"ddDingToc",
+		"body":[
+			"\\ddDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dddDingToc{}":{
+		"prefix":"dddDingToc",
+		"body":[
+			"\\dddDingToc{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dDingTocColor{}":{
+		"prefix":"dDingTocColor",
+		"body":[
+			"\\dDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ddDingTocColor{}":{
+		"prefix":"ddDingTocColor",
+		"body":[
+			"\\ddDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dddDingTocColor{}":{
+		"prefix":"dddDingTocColor",
+		"body":[
+			"\\dddDingTocColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BGColorAndGraphic":{
+		"prefix":"BGColorAndGraphic",
+		"body":[
+			"\\BGColorAndGraphic"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BGColorAndGraphicFullWidth":{
+		"prefix":"BGColorAndGraphicFullWidth",
+		"body":[
+			"\\BGColorAndGraphicFullWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"InitLayout":{
+		"prefix":"InitLayout",
+		"body":[
+			"\\InitLayout"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aboveOPMvspace":{
+		"prefix":"aboveOPMvspace",
+		"body":[
+			"\\aboveOPMvspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addToWebHWError":{
+		"prefix":"addToWebHWError",
+		"body":[
+			"\\addToWebHWError"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtofullwidthtemplateArgs{}":{
+		"prefix":"addtofullwidthtemplateArgs",
+		"body":[
+			"\\addtofullwidthtemplateArgs{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtopaneltemplateArgs{}":{
+		"prefix":"addtopaneltemplateArgs",
+		"body":[
+			"\\addtopaneltemplateArgs{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addtotemplateArgs{}":{
+		"prefix":"addtotemplateArgs",
+		"body":[
+			"\\addtotemplateArgs{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aebwritelastpage":{
+		"prefix":"aebwritelastpage",
+		"body":[
+			"\\aebwritelastpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allowTransparency":{
+		"prefix":"allowTransparency",
+		"body":[
+			"\\allowTransparency"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bWebCustomize":{
+		"prefix":"bWebCustomize",
+		"body":[
+			"\\bWebCustomize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"calculatefullwidth":{
+		"prefix":"calculatefullwidth",
+		"body":[
+			"\\calculatefullwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"centertextonpage":{
+		"prefix":"centertextonpage",
+		"body":[
+			"\\centertextonpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chkpanelgroup":{
+		"prefix":"chkpanelgroup",
+		"body":[
+			"\\chkpanelgroup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearfullwidthtemplateArgs":{
+		"prefix":"clearfullwidthtemplateArgs",
+		"body":[
+			"\\clearfullwidthtemplateArgs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearpaneltemplateArgs":{
+		"prefix":"clearpaneltemplateArgs",
+		"body":[
+			"\\clearpaneltemplateArgs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cleartemplateArgs":{
+		"prefix":"cleartemplateArgs",
+		"body":[
+			"\\cleartemplateArgs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currLeftMarg":{
+		"prefix":"currLeftMarg",
+		"body":[
+			"\\currLeftMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currPanelWidth":{
+		"prefix":"currPanelWidth",
+		"body":[
+			"\\currPanelWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currTopMarg":{
+		"prefix":"currTopMarg",
+		"body":[
+			"\\currTopMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cyrCommand":{
+		"prefix":"cyrCommand",
+		"body":[
+			"\\cyrCommand"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"disablePanels{}":{
+		"prefix":"disablePanels",
+		"body":[
+			"\\disablePanels{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"disableScreens{}":{
+		"prefix":"disableScreens",
+		"body":[
+			"\\disableScreens{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eWebCustomize":{
+		"prefix":"eWebCustomize",
+		"body":[
+			"\\eWebCustomize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"forceSubSubNumbers":{
+		"prefix":"forceSubSubNumbers",
+		"body":[
+			"\\forceSubSubNumbers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullscreenwidth":{
+		"prefix":"fullscreenwidth",
+		"body":[
+			"\\fullscreenwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullscreenwidthadj":{
+		"prefix":"fullscreenwidthadj",
+		"body":[
+			"\\fullscreenwidthadj"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullwidthtemplate{}{}":{
+		"prefix":"fullwidthtemplate",
+		"body":[
+			"\\fullwidthtemplate{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"get":{
+		"prefix":"get",
+		"body":[
+			"\\get"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getDimsFromGraphic{}{}{}{}":{
+		"prefix":"getDimsFromGraphic",
+		"body":[
+			"\\getDimsFromGraphic{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getargsii":{
+		"prefix":"getargsii",
+		"body":[
+			"\\getargsii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getargs{}{}":{
+		"prefix":"getargs",
+		"body":[
+			"\\getargs{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hproportionwebauthor":{
+		"prefix":"hproportionwebauthor",
+		"body":[
+			"\\hproportionwebauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hproportionwebtitle":{
+		"prefix":"hproportionwebtitle",
+		"body":[
+			"\\hproportionwebtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hproportionwebuniversity":{
+		"prefix":"hproportionwebuniversity",
+		"body":[
+			"\\hproportionwebuniversity"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"incby":{
+		"prefix":"incby",
+		"body":[
+			"\\incby"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inputWebCfg":{
+		"prefix":"inputWebCfg",
+		"body":[
+			"\\inputWebCfg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insNaviBar":{
+		"prefix":"insNaviBar",
+		"body":[
+			"\\insNaviBar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertwebtoc":{
+		"prefix":"insertwebtoc",
+		"body":[
+			"\\insertwebtoc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"isChapter":{
+		"prefix":"isChapter",
+		"body":[
+			"\\isChapter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listAddToPanelTemplates":{
+		"prefix":"listAddToPanelTemplates",
+		"body":[
+			"\\listAddToPanelTemplates"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listAddToTemplates":{
+		"prefix":"listAddToTemplates",
+		"body":[
+			"\\listAddToTemplates"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"loadwebpro":{
+		"prefix":"loadwebpro",
+		"body":[
+			"\\loadwebpro"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeFullwidthhead":{
+		"prefix":"makeFullwidthhead",
+		"body":[
+			"\\makeFullwidthhead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maketitlepostamble":{
+		"prefix":"maketitlepostamble",
+		"body":[
+			"\\maketitlepostamble"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maketitlepreamble":{
+		"prefix":"maketitlepreamble",
+		"body":[
+			"\\maketitlepreamble"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"marginsize":{
+		"prefix":"marginsize",
+		"body":[
+			"\\marginsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maxtextscreentext":{
+		"prefix":"maxtextscreentext",
+		"body":[
+			"\\maxtextscreentext"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newBottomMarg":{
+		"prefix":"newBottomMarg",
+		"body":[
+			"\\newBottomMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newLeftMarg":{
+		"prefix":"newLeftMarg",
+		"body":[
+			"\\newLeftMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newPanelWidth":{
+		"prefix":"newPanelWidth",
+		"body":[
+			"\\newPanelWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newRightMarg":{
+		"prefix":"newRightMarg",
+		"body":[
+			"\\newRightMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newTopMarg":{
+		"prefix":"newTopMarg",
+		"body":[
+			"\\newTopMarg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nocopyrightNotice":{
+		"prefix":"nocopyrightNotice",
+		"body":[
+			"\\nocopyrightNotice"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nocopyrightsymbol":{
+		"prefix":"nocopyrightsymbol",
+		"body":[
+			"\\nocopyrightsymbol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"norevisionLabel":{
+		"prefix":"norevisionLabel",
+		"body":[
+			"\\norevisionLabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionalpagematter":{
+		"prefix":"optionalpagematter",
+		"body":[
+			"\\optionalpagematter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"origpaperheight":{
+		"prefix":"origpaperheight",
+		"body":[
+			"\\origpaperheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"origpaperwidth":{
+		"prefix":"origpaperwidth",
+		"body":[
+			"\\origpaperwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelIconGroup":{
+		"prefix":"panelIconGroup",
+		"body":[
+			"\\panelIconGroup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelNavigroupWidth":{
+		"prefix":"panelNavigroupWidth",
+		"body":[
+			"\\panelNavigroupWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelSep":{
+		"prefix":"panelSep",
+		"body":[
+			"\\panelSep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelgroupHeight{}":{
+		"prefix":"panelgroupHeight",
+		"body":[
+			"\\panelgroupHeight{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelgroupSep{}":{
+		"prefix":"panelgroupSep",
+		"body":[
+			"\\panelgroupSep{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelgroupWidth{}":{
+		"prefix":"panelgroupWidth",
+		"body":[
+			"\\panelgroupWidth{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelrowsep":{
+		"prefix":"panelrowsep",
+		"body":[
+			"\\panelrowsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelscreenwidth":{
+		"prefix":"panelscreenwidth",
+		"body":[
+			"\\panelscreenwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"panelsep{}":{
+		"prefix":"panelsep",
+		"body":[
+			"\\panelsep{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfLang{}":{
+		"prefix":"pdfLang",
+		"body":[
+			"\\pdfLang{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2645,7 +2633,26 @@
 		"prefix":"placePanelTemplateInLayer",
 		"body":[
 			"\\placePanelTemplateInLayer[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placePanelTemplateInLayer{}":{
+		"prefix":"placePanelTemplateInLayer",
+		"body":[
+			"\\placePanelTemplateInLayer{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placeScreenNavibar":{
+		"prefix":"placeScreenNavibar",
+		"body":[
+			"\\placeScreenNavibar"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2653,7 +2660,62 @@
 		"prefix":"placeTemplateInLayer",
 		"body":[
 			"\\placeTemplateInLayer[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"placeTemplateInLayer{}":{
+		"prefix":"placeTemplateInLayer",
+		"body":[
+			"\\placeTemplateInLayer{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"popFromFullWidthPage":{
+		"prefix":"popFromFullWidthPage",
+		"body":[
+			"\\popFromFullWidthPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prtscrA{}{}":{
+		"prefix":"prtscrA",
+		"body":[
+			"\\prtscrA{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prtscrV":{
+		"prefix":"prtscrV",
+		"body":[
+			"\\prtscrV"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pushToFullWidthPage":{
+		"prefix":"pushToFullWidthPage",
+		"body":[
+			"\\pushToFullWidthPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"removehereaftericon":{
+		"prefix":"removehereaftericon",
+		"body":[
+			"\\removehereaftericon"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2661,7 +2723,80 @@
 		"prefix":"resetmargins",
 		"body":[
 			"\\resetmargins[${5:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"resetmargins{}{}{}{}":{
+		"prefix":"resetmargins",
+		"body":[
+			"\\resetmargins{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoreElements{}":{
+		"prefix":"restoreElements",
+		"body":[
+			"\\restoreElements{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorePanels{}":{
+		"prefix":"restorePanels",
+		"body":[
+			"\\restorePanels{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoreSavedHead":{
+		"prefix":"restoreSavedHead",
+		"body":[
+			"\\restoreSavedHead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restoreScreens{}":{
+		"prefix":"restoreScreens",
+		"body":[
+			"\\restoreScreens{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"restorenormalsettings":{
+		"prefix":"restorenormalsettings",
+		"body":[
+			"\\restorenormalsettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"saveClearElements{}":{
+		"prefix":"saveClearElements",
+		"body":[
+			"\\saveClearElements{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"saveElements{}":{
+		"prefix":"saveElements",
+		"body":[
+			"\\saveElements{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2669,7 +2804,206 @@
 		"prefix":"setPageDevice",
 		"body":[
 			"\\setPageDevice[${3:opt}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setPageDevice{}{}":{
+		"prefix":"setPageDevice",
+		"body":[
+			"\\setPageDevice{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shortwebsubject":{
+		"prefix":"shortwebsubject",
+		"body":[
+			"\\shortwebsubject"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shortwebtitle":{
+		"prefix":"shortwebtitle",
+		"body":[
+			"\\shortwebtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stdPanelBG":{
+		"prefix":"stdPanelBG",
+		"body":[
+			"\\stdPanelBG"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stdbldpanel":{
+		"prefix":"stdbldpanel",
+		"body":[
+			"\\stdbldpanel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"templatedefaults":{
+		"prefix":"templatedefaults",
+		"body":[
+			"\\templatedefaults"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textscreenwidth":{
+		"prefix":"textscreenwidth",
+		"body":[
+			"\\textscreenwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thewebemail":{
+		"prefix":"thewebemail",
+		"body":[
+			"\\thewebemail"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tightsettings":{
+		"prefix":"tightsettings",
+		"body":[
+			"\\tightsettings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titleauthorproportion":{
+		"prefix":"titleauthorproportion",
+		"body":[
+			"\\titleauthorproportion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocIndentByNumber{}":{
+		"prefix":"tocIndentByNumber",
+		"body":[
+			"\\tocIndentByNumber{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tocindentByNumber":{
+		"prefix":"tocindentByNumber",
+		"body":[
+			"\\tocindentByNumber"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"trailerFontSize":{
+		"prefix":"trailerFontSize",
+		"body":[
+			"\\trailerFontSize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useStandardPanel":{
+		"prefix":"useStandardPanel",
+		"body":[
+			"\\useStandardPanel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vspaceAfterDirName":{
+		"prefix":"vspaceAfterDirName",
+		"body":[
+			"\\vspaceAfterDirName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webArg":{
+		"prefix":"webArg",
+		"body":[
+			"\\webArg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webNotPaneledWarning":{
+		"prefix":"webNotPaneledWarning",
+		"body":[
+			"\\webNotPaneledWarning"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webSaveMargDim":{
+		"prefix":"webSaveMargDim",
+		"body":[
+			"\\webSaveMargDim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webSaveSSDim":{
+		"prefix":"webSaveSSDim",
+		"body":[
+			"\\webSaveSSDim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webdirectory":{
+		"prefix":"webdirectory",
+		"body":[
+			"\\webdirectory"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"websetheadheight":{
+		"prefix":"websetheadheight",
+		"body":[
+			"\\websetheadheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"webtableofcontents":{
+		"prefix":"webtableofcontents",
+		"body":[
+			"\\webtableofcontents"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2679,7 +3013,8 @@
 			"\\begin{forscreen}",
 				"\t$1",
 			"\\end{forscreen}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2689,7 +3024,8 @@
 			"\\begin{forpaper}",
 				"\t$1",
 			"\\end{forpaper}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2699,6 +3035,7 @@
 			"\\begin{Fullwidthtext}",
 				"\t$1",
 			"\\end{Fullwidthtext}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

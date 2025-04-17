@@ -5,55 +5,8 @@
 		"prefix":"termfile",
 		"body":[
 			"\\termfile{${1:title%text}}{${2:file}}"
-		]
-	},
-
-
-	"termset{}":{
-		"prefix":"termset",
-		"body":[
-			"\\termset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"UbuntuMin":{
-		"prefix":"UbuntuMin",
-		"body":[
-			"\\UbuntuMin"
-		]
-	},
-
-
-	"UbuntuClose":{
-		"prefix":"UbuntuClose",
-		"body":[
-			"\\UbuntuClose"
-		]
-	},
-
-
-	"UbuntuMax":{
-		"prefix":"UbuntuMax",
-		"body":[
-			"\\UbuntuMax"
-		]
-	},
-
-
-	"WindowsLogo":{
-		"prefix":"WindowsLogo",
-		"body":[
-			"\\WindowsLogo"
-		]
-	},
-
-
-	"termfile*[][]{}{}":{
-		"prefix":"*termfile",
-		"body":[
-			"\\termfile*[${3:options%keyvals}][${4:comments%text}]{${1:title%text}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,36 +14,94 @@
 		"prefix":"termfile",
 		"body":[
 			"\\termfile[${3:options%keyvals}]{${1:title%text}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"terminal":{
+	"termfile*[][]{}{}":{
+		"prefix":"*termfile",
+		"body":[
+			"\\termfile*[${3:options%keyvals}][${4:comments%text}]{${1:title%text}}{${2:file}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"termset{}":{
+		"prefix":"termset",
+		"body":[
+			"\\termset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UbuntuMin":{
+		"prefix":"UbuntuMin",
+		"body":[
+			"\\UbuntuMin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UbuntuClose":{
+		"prefix":"UbuntuClose",
+		"body":[
+			"\\UbuntuClose"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UbuntuMax":{
+		"prefix":"UbuntuMax",
+		"body":[
+			"\\UbuntuMax"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WindowsLogo":{
+		"prefix":"WindowsLogo",
+		"body":[
+			"\\WindowsLogo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"terminal{}":{
 		"prefix":"terminal",
 		"body":[
 			"\\begin{terminal}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{terminal}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"terminal":{
+	"terminal[]{}":{
 		"prefix":"terminal",
 		"body":[
 			"\\begin{terminal}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:title%text}}",
 			"\\end{terminal}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"terminal*":{
-		"prefix":"terminal",
+	"terminal*[][]{}":{
+		"prefix":"*terminal",
 		"body":[
 			"\\begin{terminal*}",
-				"\t$1",
+				"\t[${2:options%keyvals}][${3:comments%text}]{${1:title%text}}",
 			"\\end{terminal*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

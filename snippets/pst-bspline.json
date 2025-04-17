@@ -5,151 +5,8 @@
 		"prefix":"psBsplineNodes",
 		"body":[
 			"\\psBsplineNodes{${1:node-root}}{${2:top-index}}"
-		]
-	},
-
-
-	"psBsplineNodesE{}{}":{
-		"prefix":"psBsplineNodesE",
-		"body":[
-			"\\psBsplineNodesE{${1:node-root}}{${2:top-index}}"
-		]
-	},
-
-
-	"psBsplineNodesC{}{}":{
-		"prefix":"psBsplineNodesC",
-		"body":[
-			"\\psBsplineNodesC{${1:node-root}}{${2:top-index}}"
-		]
-	},
-
-
-	"bspcurvepoints{}{}{}":{
-		"prefix":"bspcurvepoints",
-		"body":[
-			"\\bspcurvepoints{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
-		]
-	},
-
-
-	"bspcurvepointsE{}{}{}":{
-		"prefix":"bspcurvepointsE",
-		"body":[
-			"\\bspcurvepointsE{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
-		]
-	},
-
-
-	"bspNode{}{}{}{}":{
-		"prefix":"bspNode",
-		"body":[
-			"\\bspNode{${1:control-point-root}}{${2:top-index}}{${3:t}}{${4:node-name}}"
-		]
-	},
-
-
-	"bspFnNode{}{}{}{}":{
-		"prefix":"bspFnNode",
-		"body":[
-			"\\bspFnNode{${1:control-point-root}}{${2:top-index}}{${3:x0}}{${4:node-name}}"
-		]
-	},
-
-
-	"psBsplineInterp{}{}":{
-		"prefix":"psBsplineInterp",
-		"body":[
-			"\\psBsplineInterp{${1:node-root}}{${2:index}}"
-		]
-	},
-
-
-	"psBsplineInterpC{}{}":{
-		"prefix":"psBsplineInterpC",
-		"body":[
-			"\\psBsplineInterpC{${1:node-root}}{${2:index}}"
-		]
-	},
-
-
-	"bspcurvenodes{}{}":{
-		"prefix":"bspcurvenodes",
-		"body":[
-			"\\bspcurvenodes{${1:node-root1}}{${2:node-root2}}"
-		]
-	},
-
-
-	"thickBspline{}{}{}{}":{
-		"prefix":"thickBspline",
-		"body":[
-			"\\thickBspline{${1:node-root}}{${2:nsegments}}{${3:thickness}}{${4:graphic}}"
-		]
-	},
-
-
-	"thickBEspline{}{}{}{}{}{}":{
-		"prefix":"thickBEspline",
-		"body":[
-			"\\thickBEspline{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
-		]
-	},
-
-
-	"thickBdraw{}{}{}{}{}":{
-		"prefix":"thickBdraw",
-		"body":[
-			"\\thickBdraw{${1:node-root}}{${2:max-thickness}}{${3:min-thickness}}{${4:angle}}{${5:graphic}}"
-		]
-	},
-
-
-	"thickBsplinePen{}{}{}{}{}{}":{
-		"prefix":"thickBsplinePen",
-		"body":[
-			"\\thickBsplinePen{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
-		]
-	},
-
-
-	"thickBsplinePenE{}{}{}{}{}{}":{
-		"prefix":"thickBsplinePenE",
-		"body":[
-			"\\thickBsplinePenE{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
-		]
-	},
-
-
-	"refreshbspopts":{
-		"prefix":"refreshbspopts",
-		"body":[
-			"\\refreshbspopts"
-		]
-	},
-
-
-	"psBsplineMain":{
-		"prefix":"psBsplineMain",
-		"body":[
-			"\\psBsplineMain"
-		]
-	},
-
-
-	"pnodesX":{
-		"prefix":"pnodesX",
-		"body":[
-			"\\pnodesX"
-		]
-	},
-
-
-	"noderoot":{
-		"prefix":"noderoot",
-		"body":[
-			"\\noderoot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +14,17 @@
 		"prefix":"psBsplineNodes",
 		"body":[
 			"\\psBsplineNodes[${3:options%keyvals}]{${1:node-root}}{${2:top-index}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBsplineNodesE{}{}":{
+		"prefix":"psBsplineNodesE",
+		"body":[
+			"\\psBsplineNodesE{${1:node-root}}{${2:top-index}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +32,17 @@
 		"prefix":"psBsplineNodesE",
 		"body":[
 			"\\psBsplineNodesE[${3:options%keyvals}]{${1:node-root}}{${2:top-index}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBsplineNodesC{}{}":{
+		"prefix":"psBsplineNodesC",
+		"body":[
+			"\\psBsplineNodesC{${1:node-root}}{${2:top-index}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +50,17 @@
 		"prefix":"psBsplineNodesC",
 		"body":[
 			"\\psBsplineNodesC[${3:options%keyvals}]{${1:node-root}}{${2:top-index}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bspcurvepoints{}{}{}":{
+		"prefix":"bspcurvepoints",
+		"body":[
+			"\\bspcurvepoints{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +68,17 @@
 		"prefix":"bspcurvepoints",
 		"body":[
 			"\\bspcurvepoints[${4:options%keyvals}]{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bspcurvepointsE{}{}{}":{
+		"prefix":"bspcurvepointsE",
+		"body":[
+			"\\bspcurvepointsE{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +86,89 @@
 		"prefix":"bspcurvepointsE",
 		"body":[
 			"\\bspcurvepointsE[${4:options%keyvals}]{${1:source-name}}{${2:source-max-index}}{${3:dest-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bspNode{}{}{}{}":{
+		"prefix":"bspNode",
+		"body":[
+			"\\bspNode{${1:control-point-root}}{${2:top-index}}{${3:t}}{${4:node-name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bspFnNode{}{}{}{}":{
+		"prefix":"bspFnNode",
+		"body":[
+			"\\bspFnNode{${1:control-point-root}}{${2:top-index}}{${3:x0}}{${4:node-name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psBsplineInterp{}{}":{
+		"prefix":"psBsplineInterp",
+		"body":[
+			"\\psBsplineInterp{${1:node-root}}{${2:index}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psBsplineInterpC{}{}":{
+		"prefix":"psBsplineInterpC",
+		"body":[
+			"\\psBsplineInterpC{${1:node-root}}{${2:index}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bspcurvenodes{}{}":{
+		"prefix":"bspcurvenodes",
+		"body":[
+			"\\bspcurvenodes{${1:node-root1}}{${2:node-root2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickBspline{}{}{}{}":{
+		"prefix":"thickBspline",
+		"body":[
+			"\\thickBspline{${1:node-root}}{${2:nsegments}}{${3:thickness}}{${4:graphic}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickBEspline{}{}{}{}{}{}":{
+		"prefix":"thickBEspline",
+		"body":[
+			"\\thickBEspline{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickBdraw{}{}{}{}{}":{
+		"prefix":"thickBdraw",
+		"body":[
+			"\\thickBdraw{${1:node-root}}{${2:max-thickness}}{${3:min-thickness}}{${4:angle}}{${5:graphic}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickBsplinePen{}{}{}{}{}{}":{
+		"prefix":"thickBsplinePen",
+		"body":[
+			"\\thickBsplinePen{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +176,17 @@
 		"prefix":"thickBsplinePen",
 		"body":[
 			"\\thickBsplinePen[${7:options%keyvals}]{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thickBsplinePenE{}{}{}{}{}{}":{
+		"prefix":"thickBsplinePenE",
+		"body":[
+			"\\thickBsplinePenE{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,6 +194,43 @@
 		"prefix":"thickBsplinePenE",
 		"body":[
 			"\\thickBsplinePenE[${7:options%keyvals}]{${1:node-root}}{${2:nsegments}}{${3:max-thickness}}{${4:min-thickness}}{${5:angle}}{${6:graphic}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"refreshbspopts":{
+		"prefix":"refreshbspopts",
+		"body":[
+			"\\refreshbspopts"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psBsplineMain":{
+		"prefix":"psBsplineMain",
+		"body":[
+			"\\psBsplineMain"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pnodesX":{
+		"prefix":"pnodesX",
+		"body":[
+			"\\pnodesX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noderoot":{
+		"prefix":"noderoot",
+		"body":[
+			"\\noderoot"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

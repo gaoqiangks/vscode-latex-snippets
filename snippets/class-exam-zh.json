@@ -5,87 +5,8 @@
 		"prefix":"ExamPrintAnswerSet",
 		"body":[
 			"\\ExamPrintAnswerSet{${1:keyvals}}"
-		]
-	},
-
-
-	"ExamPrintAnswer":{
-		"prefix":"ExamPrintAnswer",
-		"body":[
-			"\\ExamPrintAnswer"
-		]
-	},
-
-
-	"examsetup{}":{
-		"prefix":"examsetup",
-		"body":[
-			"\\examsetup{${1:键值列表%keyvals}}"
-		]
-	},
-
-
-	"information{}":{
-		"prefix":"information",
-		"body":[
-			"\\information{${1:信息内容%text}}"
-		]
-	},
-
-
-	"warning{}":{
-		"prefix":"warning",
-		"body":[
-			"\\warning{${1:警告%text}}"
-		]
-	},
-
-
-	"secret":{
-		"prefix":"secret",
-		"body":[
-			"\\secret"
-		]
-	},
-
-
-	"subject{}":{
-		"prefix":"subject",
-		"body":[
-			"\\subject{${1:科目%text}}"
-		]
-	},
-
-
-	"draftpaper":{
-		"prefix":"draftpaper",
-		"body":[
-			"\\draftpaper"
-		]
-	},
-
-
-	"examsquare{}":{
-		"prefix":"examsquare",
-		"body":[
-			"\\examsquare{${1:方格个数}}"
-		]
-	},
-
-
-	"scoringbox":{
-		"prefix":"scoringbox",
-		"body":[
-			"\\scoringbox"
-		]
-	},
-
-
-	"scoringbox*":{
-		"prefix":"*scoringbox",
-		"body":[
-			"\\scoringbox*"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,35 @@
 		"prefix":"ExamPrintAnswerSet",
 		"body":[
 			"\\ExamPrintAnswerSet[${2:cmd list}]{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ExamPrintAnswer":{
+		"prefix":"ExamPrintAnswer",
+		"body":[
+			"\\ExamPrintAnswer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"examsetup{}":{
+		"prefix":"examsetup",
+		"body":[
+			"\\examsetup{${1:键值列表%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"information{}":{
+		"prefix":"information",
+		"body":[
+			"\\information{${1:信息内容%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +50,26 @@
 		"prefix":"information",
 		"body":[
 			"\\information[${2:分隔符}]{${1:信息内容%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"warning{}":{
+		"prefix":"warning",
+		"body":[
+			"\\warning{${1:警告%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"secret":{
+		"prefix":"secret",
+		"body":[
+			"\\secret"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +77,17 @@
 		"prefix":"secret",
 		"body":[
 			"\\secret[${1:格式命令}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subject{}":{
+		"prefix":"subject",
+		"body":[
+			"\\subject{${1:科目%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +95,17 @@
 		"prefix":"subject",
 		"body":[
 			"\\subject[${2:宽度}]{${1:科目%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"draftpaper":{
+		"prefix":"draftpaper",
+		"body":[
+			"\\draftpaper"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +113,17 @@
 		"prefix":"draftpaper",
 		"body":[
 			"\\draftpaper[${1:参数列表%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"examsquare{}":{
+		"prefix":"examsquare",
+		"body":[
+			"\\examsquare{${1:方格个数}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +131,26 @@
 		"prefix":"examsquare",
 		"body":[
 			"\\examsquare[${2:参数列表%keyvals}]{${1:方格个数}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"scoringbox":{
+		"prefix":"scoringbox",
+		"body":[
+			"\\scoringbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scoringbox*":{
+		"prefix":"*scoringbox",
+		"body":[
+			"\\scoringbox*"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -143,7 +160,30 @@
 			"\\begin{notice}",
 				"\t$1",
 			"\\end{notice}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"notice[]":{
+		"prefix":"notice",
+		"body":[
+			"\\begin{notice}",
+				"\t[${1:键值列表 1%keyvals}]",
+			"\\end{notice}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"notice[][]":{
+		"prefix":"notice",
+		"body":[
+			"\\begin{notice}",
+				"\t[${1:键值列表 1%keyvals}][${2:键值列表 2}]",
+			"\\end{notice}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -153,7 +193,8 @@
 			"\\begin{step}",
 				"\t$1",
 			"\\end{step}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -163,7 +204,8 @@
 			"\\begin{method}",
 				"\t$1",
 			"\\end{method}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,26 +215,7 @@
 			"\\begin{case}",
 				"\t$1",
 			"\\end{case}"
-		]
-	},
-
-
-	"notice":{
-		"prefix":"notice",
-		"body":[
-			"\\begin{notice}",
-				"\t$1",
-			"\\end{notice}"
-		]
-	},
-
-
-	"notice":{
-		"prefix":"notice",
-		"body":[
-			"\\begin{notice}",
-				"\t$1",
-			"\\end{notice}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

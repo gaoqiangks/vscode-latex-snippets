@@ -5,55 +5,8 @@
 		"prefix":"skp",
 		"body":[
 			"\\skp"
-		]
-	},
-
-
-	"del{}":{
-		"prefix":"del",
-		"body":[
-			"\\del{${1:phrase%text}}"
-		]
-	},
-
-
-	"yel{}":{
-		"prefix":"yel",
-		"body":[
-			"\\yel{${1:phrase%text}}"
-		]
-	},
-
-
-	"add{}":{
-		"prefix":"add",
-		"body":[
-			"\\add{${1:phrase%text}}"
-		]
-	},
-
-
-	"rep{}{}":{
-		"prefix":"rep",
-		"body":[
-			"\\rep{${1:phrase%text}}{${2:replacement}}"
-		]
-	},
-
-
-	"com{}":{
-		"prefix":"com",
-		"body":[
-			"\\com{${1:comment%text}}"
-		]
-	},
-
-
-	"hilite{}":{
-		"prefix":"hilite",
-		"body":[
-			"\\hilite{${1:phrase%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,26 @@
 		"prefix":"skp",
 		"body":[
 			"\\skp[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"del{}":{
+		"prefix":"del",
+		"body":[
+			"\\del{${1:phrase%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yel{}":{
+		"prefix":"yel",
+		"body":[
+			"\\yel{${1:phrase%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +41,44 @@
 		"prefix":"yel",
 		"body":[
 			"\\yel[${2:comment%text}]{${1:phrase%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"add{}":{
+		"prefix":"add",
+		"body":[
+			"\\add{${1:phrase%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rep{}{}":{
+		"prefix":"rep",
+		"body":[
+			"\\rep{${1:phrase%text}}{${2:replacement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"com{}":{
+		"prefix":"com",
+		"body":[
+			"\\com{${1:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hilite{}":{
+		"prefix":"hilite",
+		"body":[
+			"\\hilite{${1:phrase%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +86,7 @@
 		"prefix":"hilite",
 		"body":[
 			"\\hilite[${2:options%keyvals}]{${1:phrase%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

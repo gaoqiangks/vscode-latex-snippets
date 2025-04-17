@@ -1,107 +1,12 @@
 {
 
 
-	"AddEmph{}{}":{
-		"prefix":"AddEmph",
-		"body":[
-			"\\AddEmph{${1:o}}{${2:c}}"
-		]
-	},
-
-
-	"ChangeEmph{}{}":{
-		"prefix":"ChangeEmph",
-		"body":[
-			"\\ChangeEmph{${1:o}}{${2:c}}"
-		]
-	},
-
-
-	"RenewEmph{}{}":{
-		"prefix":"RenewEmph",
-		"body":[
-			"\\RenewEmph{${1:o}}{${2:c}}"
-		]
-	},
-
-
-	"DeleteEmph{}{}":{
-		"prefix":"DeleteEmph",
-		"body":[
-			"\\DeleteEmph{${1:o}}{${2:c}}"
-		]
-	},
-
-
-	"DeleteOpEmph{}":{
-		"prefix":"DeleteOpEmph",
-		"body":[
-			"\\DeleteOpEmph{${1:o}}"
-		]
-	},
-
-
-	"DeleteClEmph{}":{
-		"prefix":"DeleteClEmph",
-		"body":[
-			"\\DeleteClEmph{${1:c}}"
-		]
-	},
-
-
-	"EmbracMakeKnown{}":{
-		"prefix":"EmbracMakeKnown",
-		"body":[
-			"\\EmbracMakeKnown{${1:cmd}}"
-		]
-	},
-
-
-	"EmbracOff":{
-		"prefix":"EmbracOff",
-		"body":[
-			"\\EmbracOff"
-		]
-	},
-
-
-	"EmbracOn":{
-		"prefix":"EmbracOn",
-		"body":[
-			"\\EmbracOn"
-		]
-	},
-
-
-	"emb{}{}{}":{
-		"prefix":"emb",
-		"body":[
-			"\\emb{${1:open}}{${2:close}}{${3:text}}"
-		]
-	},
-
-
-	"embparen{}":{
-		"prefix":"embparen",
-		"body":[
-			"\\embparen{${1:text}}"
-		]
-	},
-
-
-	"embbracket{}":{
-		"prefix":"embbracket",
-		"body":[
-			"\\embbracket{${1:text}}"
-		]
-	},
-
-
 	"emph*{}":{
 		"prefix":"*emph",
 		"body":[
 			"\\emph*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -109,7 +14,8 @@
 		"prefix":"*textit",
 		"body":[
 			"\\textit*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -117,7 +23,8 @@
 		"prefix":"*textsl",
 		"body":[
 			"\\textsl*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -125,7 +32,17 @@
 		"prefix":"*textsi",
 		"body":[
 			"\\textsi*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AddEmph{}{}":{
+		"prefix":"AddEmph",
+		"body":[
+			"\\AddEmph{${1:o}}{${2:c}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,17 @@
 		"prefix":"AddEmph",
 		"body":[
 			"\\AddEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ChangeEmph{}{}":{
+		"prefix":"ChangeEmph",
+		"body":[
+			"\\ChangeEmph{${1:o}}{${2:c}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +68,17 @@
 		"prefix":"ChangeEmph",
 		"body":[
 			"\\ChangeEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewEmph{}{}":{
+		"prefix":"RenewEmph",
+		"body":[
+			"\\RenewEmph{${1:o}}{${2:c}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +86,17 @@
 		"prefix":"RenewEmph",
 		"body":[
 			"\\RenewEmph{${1:o}}[${3:io-kern,oo-kern}]{${2:c}}[${4:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeleteEmph{}{}":{
+		"prefix":"DeleteEmph",
+		"body":[
+			"\\DeleteEmph{${1:o}}{${2:c}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +104,8 @@
 		"prefix":"AddOpEmph",
 		"body":[
 			"\\AddOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +113,8 @@
 		"prefix":"AddClEmph",
 		"body":[
 			"\\AddClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +122,8 @@
 		"prefix":"ChangeOpEmph",
 		"body":[
 			"\\ChangeOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +131,8 @@
 		"prefix":"ChangeClEmph",
 		"body":[
 			"\\ChangeClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +140,8 @@
 		"prefix":"RenewOpEmph",
 		"body":[
 			"\\RenewOpEmph{${1:o}}[${2:io-kern,oo-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,6 +149,79 @@
 		"prefix":"RenewClEmph",
 		"body":[
 			"\\RenewClEmph{${1:c}}[${2:ic-kern,oc-kern}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeleteOpEmph{}":{
+		"prefix":"DeleteOpEmph",
+		"body":[
+			"\\DeleteOpEmph{${1:o}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeleteClEmph{}":{
+		"prefix":"DeleteClEmph",
+		"body":[
+			"\\DeleteClEmph{${1:c}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EmbracMakeKnown{}":{
+		"prefix":"EmbracMakeKnown",
+		"body":[
+			"\\EmbracMakeKnown{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EmbracOff":{
+		"prefix":"EmbracOff",
+		"body":[
+			"\\EmbracOff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EmbracOn":{
+		"prefix":"EmbracOn",
+		"body":[
+			"\\EmbracOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emb{}{}{}":{
+		"prefix":"emb",
+		"body":[
+			"\\emb{${1:open}}{${2:close}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embparen{}":{
+		"prefix":"embparen",
+		"body":[
+			"\\embparen{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"embbracket{}":{
+		"prefix":"embbracket",
+		"body":[
+			"\\embbracket{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

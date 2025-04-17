@@ -5,23 +5,8 @@
 		"prefix":"printcolorvalue",
 		"body":[
 			"\\printcolorvalue{${1:color}}"
-		]
-	},
-
-
-	"colorsample{}":{
-		"prefix":"colorsample",
-		"body":[
-			"\\colorsample{${1:color}}"
-		]
-	},
-
-
-	"colorpalette{}":{
-		"prefix":"colorpalette",
-		"body":[
-			"\\colorpalette{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"printcolorvalue",
 		"body":[
 			"\\printcolorvalue[${2:model}]{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"colorsample{}":{
+		"prefix":"colorsample",
+		"body":[
+			"\\colorsample{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"colorsample",
 		"body":[
 			"\\colorsample[${2:model}][${3:textcolor%color}][${4:box width%l}]{${1:color}}[${5:title%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"colorpalette{}":{
+		"prefix":"colorpalette",
+		"body":[
+			"\\colorpalette{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +50,7 @@
 		"prefix":"colorpalette",
 		"body":[
 			"\\colorpalette[${2:options%keyvals}]{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

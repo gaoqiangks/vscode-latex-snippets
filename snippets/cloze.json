@@ -5,231 +5,8 @@
 		"prefix":"cloze",
 		"body":[
 			"\\cloze{${1:text}}"
-		]
-	},
-
-
-	"clozesetfont{}":{
-		"prefix":"clozesetfont",
-		"body":[
-			"\\clozesetfont{${1:font}}"
-		]
-	},
-
-
-	"clozefix{}":{
-		"prefix":"clozefix",
-		"body":[
-			"\\clozefix{${1:text}}"
-		]
-	},
-
-
-	"clozenol{}":{
-		"prefix":"clozenol",
-		"body":[
-			"\\clozenol{${1:text}}"
-		]
-	},
-
-
-	"clozefil{}":{
-		"prefix":"clozefil",
-		"body":[
-			"\\clozefil{${1:text}}"
-		]
-	},
-
-
-	"clozeparcmd{}":{
-		"prefix":"clozeparcmd",
-		"body":[
-			"\\clozeparcmd{${1:text}}"
-		]
-	},
-
-
-	"clozeline":{
-		"prefix":"clozeline",
-		"body":[
-			"\\clozeline"
-		]
-	},
-
-
-	"clozelinefil":{
-		"prefix":"clozelinefil",
-		"body":[
-			"\\clozelinefil"
-		]
-	},
-
-
-	"clozestrike{}{}":{
-		"prefix":"clozestrike",
-		"body":[
-			"\\clozestrike{${1:wrong text%text}}{${2:correct text%text}}"
-		]
-	},
-
-
-	"clozesetoption{}{}":{
-		"prefix":"clozesetoption",
-		"body":[
-			"\\clozesetoption{${1:option}}{${2:value}}"
-		]
-	},
-
-
-	"clozeset{}":{
-		"prefix":"clozeset",
-		"body":[
-			"\\clozeset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"clozereset":{
-		"prefix":"clozereset",
-		"body":[
-			"\\clozereset"
-		]
-	},
-
-
-	"clozeshow":{
-		"prefix":"clozeshow",
-		"body":[
-			"\\clozeshow"
-		]
-	},
-
-
-	"clozehide":{
-		"prefix":"clozehide",
-		"body":[
-			"\\clozehide"
-		]
-	},
-
-
-	"ifclozeshow":{
-		"prefix":"ifclozeshow",
-		"body":[
-			"\\ifclozeshow"
-		]
-	},
-
-
-	"clozeshowtrue":{
-		"prefix":"clozeshowtrue",
-		"body":[
-			"\\clozeshowtrue"
-		]
-	},
-
-
-	"clozeshowfalse":{
-		"prefix":"clozeshowfalse",
-		"body":[
-			"\\clozeshowfalse"
-		]
-	},
-
-
-	"ClozeSetToGlobal":{
-		"prefix":"ClozeSetToGlobal",
-		"body":[
-			"\\ClozeSetToGlobal"
-		]
-	},
-
-
-	"ClozeSetToLocal":{
-		"prefix":"ClozeSetToLocal",
-		"body":[
-			"\\ClozeSetToLocal"
-		]
-	},
-
-
-	"ClozeGetOption{}":{
-		"prefix":"ClozeGetOption",
-		"body":[
-			"\\ClozeGetOption{${1:arg}}"
-		]
-	},
-
-
-	"ClozeColor{}":{
-		"prefix":"ClozeColor",
-		"body":[
-			"\\ClozeColor{${1:color}}"
-		]
-	},
-
-
-	"ClozeStartMarker{}":{
-		"prefix":"ClozeStartMarker",
-		"body":[
-			"\\ClozeStartMarker{${1:arg}}"
-		]
-	},
-
-
-	"ClozeStopMarker{}":{
-		"prefix":"ClozeStopMarker",
-		"body":[
-			"\\ClozeStopMarker{${1:arg}}"
-		]
-	},
-
-
-	"ClozeMargin{}":{
-		"prefix":"ClozeMargin",
-		"body":[
-			"\\ClozeMargin{${1:arg}}"
-		]
-	},
-
-
-	"clozefont":{
-		"prefix":"clozefont",
-		"body":[
-			"\\clozefont"
-		]
-	},
-
-
-	"ClozeSetLocalOptions{}":{
-		"prefix":"ClozeSetLocalOptions",
-		"body":[
-			"\\ClozeSetLocalOptions{${1:options%keyvals}}"
-		]
-	},
-
-
-	"ClozeTextColor{}":{
-		"prefix":"ClozeTextColor",
-		"body":[
-			"\\ClozeTextColor{${1:color}}"
-		]
-	},
-
-
-	"ClozeStrikeLine":{
-		"prefix":"ClozeStrikeLine",
-		"body":[
-			"\\ClozeStrikeLine"
-		]
-	},
-
-
-	"ClozeBox":{
-		"prefix":"ClozeBox",
-		"body":[
-			"\\ClozeBox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +14,26 @@
 		"prefix":"cloze",
 		"body":[
 			"\\cloze[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozesetfont{}":{
+		"prefix":"clozesetfont",
+		"body":[
+			"\\clozesetfont{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozefix{}":{
+		"prefix":"clozefix",
+		"body":[
+			"\\clozefix{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +41,17 @@
 		"prefix":"clozefix",
 		"body":[
 			"\\clozefix[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozenol{}":{
+		"prefix":"clozenol",
+		"body":[
+			"\\clozenol{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +59,17 @@
 		"prefix":"clozenol",
 		"body":[
 			"\\clozenol[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozefil{}":{
+		"prefix":"clozefil",
+		"body":[
+			"\\clozefil{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +77,8 @@
 		"prefix":"clozefil",
 		"body":[
 			"\\clozefil[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +86,17 @@
 		"prefix":"clozeextend",
 		"body":[
 			"\\clozeextend[${1:spaces}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozeparcmd{}":{
+		"prefix":"clozeparcmd",
+		"body":[
+			"\\clozeparcmd{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +104,17 @@
 		"prefix":"clozeparcmd",
 		"body":[
 			"\\clozeparcmd[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozeline":{
+		"prefix":"clozeline",
+		"body":[
+			"\\clozeline"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +122,17 @@
 		"prefix":"clozeline",
 		"body":[
 			"\\clozeline[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozelinefil":{
+		"prefix":"clozelinefil",
+		"body":[
+			"\\clozelinefil"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +140,17 @@
 		"prefix":"clozelinefil",
 		"body":[
 			"\\clozelinefil[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozestrike{}{}":{
+		"prefix":"clozestrike",
+		"body":[
+			"\\clozestrike{${1:wrong text%text}}{${2:correct text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +158,188 @@
 		"prefix":"clozestrike",
 		"body":[
 			"\\clozestrike[${3:options%keyvals}]{${1:wrong text%text}}{${2:correct text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozesetoption{}{}":{
+		"prefix":"clozesetoption",
+		"body":[
+			"\\clozesetoption{${1:option}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozeset{}":{
+		"prefix":"clozeset",
+		"body":[
+			"\\clozeset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozereset":{
+		"prefix":"clozereset",
+		"body":[
+			"\\clozereset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozeshow":{
+		"prefix":"clozeshow",
+		"body":[
+			"\\clozeshow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozehide":{
+		"prefix":"clozehide",
+		"body":[
+			"\\clozehide"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifclozeshow":{
+		"prefix":"ifclozeshow",
+		"body":[
+			"\\ifclozeshow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozeshowtrue":{
+		"prefix":"clozeshowtrue",
+		"body":[
+			"\\clozeshowtrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozeshowfalse":{
+		"prefix":"clozeshowfalse",
+		"body":[
+			"\\clozeshowfalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeSetToGlobal":{
+		"prefix":"ClozeSetToGlobal",
+		"body":[
+			"\\ClozeSetToGlobal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeSetToLocal":{
+		"prefix":"ClozeSetToLocal",
+		"body":[
+			"\\ClozeSetToLocal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeGetOption{}":{
+		"prefix":"ClozeGetOption",
+		"body":[
+			"\\ClozeGetOption{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeColor{}":{
+		"prefix":"ClozeColor",
+		"body":[
+			"\\ClozeColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeStartMarker{}":{
+		"prefix":"ClozeStartMarker",
+		"body":[
+			"\\ClozeStartMarker{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeStopMarker{}":{
+		"prefix":"ClozeStopMarker",
+		"body":[
+			"\\ClozeStopMarker{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeMargin{}":{
+		"prefix":"ClozeMargin",
+		"body":[
+			"\\ClozeMargin{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozefont":{
+		"prefix":"clozefont",
+		"body":[
+			"\\clozefont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeSetLocalOptions{}":{
+		"prefix":"ClozeSetLocalOptions",
+		"body":[
+			"\\ClozeSetLocalOptions{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeTextColor{}":{
+		"prefix":"ClozeTextColor",
+		"body":[
+			"\\ClozeTextColor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeStrikeLine":{
+		"prefix":"ClozeStrikeLine",
+		"body":[
+			"\\ClozeStrikeLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClozeBox":{
+		"prefix":"ClozeBox",
+		"body":[
+			"\\ClozeBox"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -311,47 +349,19 @@
 			"\\begin{clozepar}",
 				"\t$1",
 			"\\end{clozepar}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"clozebox":{
-		"prefix":"clozebox",
-		"body":[
-			"\\begin{clozebox}",
-				"\t$1",
-			"\\end{clozebox}"
-		]
-	},
-
-
-	"clozebox":{
-		"prefix":"clozebox",
-		"body":[
-			"\\begin{clozebox}",
-				"\t$1",
-			"\\end{clozebox}"
-		]
-	},
-
-
-	"clozespace":{
-		"prefix":"clozespace",
-		"body":[
-			"\\begin{clozespace}",
-				"\t$1",
-			"\\end{clozespace}"
-		]
-	},
-
-
-	"clozepar":{
+	"clozepar[]":{
 		"prefix":"clozepar",
 		"body":[
 			"\\begin{clozepar}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{clozepar}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -361,17 +371,41 @@
 			"\\begin{clozebox}",
 				"\t$1",
 			"\\end{clozebox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"clozebox":{
+	"clozebox[]":{
 		"prefix":"clozebox",
 		"body":[
 			"\\begin{clozebox}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{clozebox}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clozebox*":{
+		"prefix":"*clozebox",
+		"body":[
+			"\\begin{clozebox}",
+				"\t*",
+			"\\end{clozebox}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"clozebox*[]":{
+		"prefix":"*clozebox",
+		"body":[
+			"\\begin{clozebox}",
+				"\t*[${1:options%keyvals}]",
+			"\\end{clozebox}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -381,6 +415,18 @@
 			"\\begin{clozespace}",
 				"\t$1",
 			"\\end{clozespace}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clozespace[]":{
+		"prefix":"clozespace",
+		"body":[
+			"\\begin{clozespace}",
+				"\t[${1:options%keyvals}]",
+			"\\end{clozespace}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

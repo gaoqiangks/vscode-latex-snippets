@@ -5,7 +5,8 @@
 		"prefix":"wrapstuffset",
 		"body":[
 			"\\wrapstuffset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"wrapstuffclear",
 		"body":[
 			"\\wrapstuffclear"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,16 +25,18 @@
 			"\\begin{wrapstuff}",
 				"\t$1",
 			"\\end{wrapstuff}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wrapstuff":{
+	"wrapstuff[]":{
 		"prefix":"wrapstuff",
 		"body":[
 			"\\begin{wrapstuff}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{wrapstuff}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

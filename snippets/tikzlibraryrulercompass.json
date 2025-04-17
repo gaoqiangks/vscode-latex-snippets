@@ -5,7 +5,8 @@
 		"prefix":"thepointlabels",
 		"body":[
 			"\\thepointlabels"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"point",
 		"body":[
 			"\\point{${1:path1}}{${2:path2}}{${3:intersection}}"
-		]
-	},
-
-
-	"ruler{}{}":{
-		"prefix":"ruler",
-		"body":[
-			"\\ruler{${1:point1}}{${2:point2}}"
-		]
-	},
-
-
-	"compass{}{}":{
-		"prefix":"compass",
-		"body":[
-			"\\compass{${1:point1}}{${2:point2}}"
-		]
-	},
-
-
-	"constrain":{
-		"prefix":"constrain",
-		"body":[
-			"\\constrain"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +23,17 @@
 		"prefix":"point",
 		"body":[
 			"\\point[${4:styles}]{${1:path1}}{${2:path2}}{${3:intersection}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ruler{}{}":{
+		"prefix":"ruler",
+		"body":[
+			"\\ruler{${1:point1}}{${2:point2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +41,17 @@
 		"prefix":"ruler",
 		"body":[
 			"\\ruler[${3:styles}]{${1:point1}}{${2:point2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"compass{}{}":{
+		"prefix":"compass",
+		"body":[
+			"\\compass{${1:point1}}{${2:point2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +59,16 @@
 		"prefix":"compass",
 		"body":[
 			"\\compass[${3:styles}]{${1:point1}}{${2:point2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"constrain":{
+		"prefix":"constrain",
+		"body":[
+			"\\constrain"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

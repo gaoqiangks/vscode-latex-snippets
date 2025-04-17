@@ -5,215 +5,8 @@
 		"prefix":"hypo",
 		"body":[
 			"\\hypo{${1:label}}{${2:formula%plain}}"
-		]
-	},
-
-
-	"have{}{}":{
-		"prefix":"have",
-		"body":[
-			"\\have{${1:label}}{${2:formula%plain}}"
-		]
-	},
-
-
-	"open":{
-		"prefix":"open",
-		"body":[
-			"\\open"
-		]
-	},
-
-
-	"close":{
-		"prefix":"close",
-		"body":[
-			"\\close"
-		]
-	},
-
-
-	"r{}":{
-		"prefix":"r",
-		"body":[
-			"\\r{${1:ref list}}"
-		]
-	},
-
-
-	"ii{}":{
-		"prefix":"ii",
-		"body":[
-			"\\ii{${1:ref list}}"
-		]
-	},
-
-
-	"ie{}":{
-		"prefix":"ie",
-		"body":[
-			"\\ie{${1:ref list}}"
-		]
-	},
-
-
-	"ai{}":{
-		"prefix":"ai",
-		"body":[
-			"\\ai{${1:ref list}}"
-		]
-	},
-
-
-	"ae{}":{
-		"prefix":"ae",
-		"body":[
-			"\\ae{${1:ref list}}"
-		]
-	},
-
-
-	"oi{}":{
-		"prefix":"oi",
-		"body":[
-			"\\oi{${1:ref list}}"
-		]
-	},
-
-
-	"oe{}":{
-		"prefix":"oe",
-		"body":[
-			"\\oe{${1:ref list}}"
-		]
-	},
-
-
-	"ni{}":{
-		"prefix":"ni",
-		"body":[
-			"\\ni{${1:ref list}}"
-		]
-	},
-
-
-	"ne{}":{
-		"prefix":"ne",
-		"body":[
-			"\\ne{${1:ref list}}"
-		]
-	},
-
-
-	"be{}":{
-		"prefix":"be",
-		"body":[
-			"\\be{${1:ref list}}"
-		]
-	},
-
-
-	"nne{}":{
-		"prefix":"nne",
-		"body":[
-			"\\nne{${1:ref list}}"
-		]
-	},
-
-
-	"Ai{}":{
-		"prefix":"Ai",
-		"body":[
-			"\\Ai{${1:ref list}}"
-		]
-	},
-
-
-	"Ae{}":{
-		"prefix":"Ae",
-		"body":[
-			"\\Ae{${1:ref list}}"
-		]
-	},
-
-
-	"Ei{}":{
-		"prefix":"Ei",
-		"body":[
-			"\\Ei{${1:ref list}}"
-		]
-	},
-
-
-	"Ee{}":{
-		"prefix":"Ee",
-		"body":[
-			"\\Ee{${1:ref list}}"
-		]
-	},
-
-
-	"guard{}":{
-		"prefix":"guard",
-		"body":[
-			"\\guard{${1:guard}}"
-		]
-	},
-
-
-	"by{}{}":{
-		"prefix":"by",
-		"body":[
-			"\\by{${1:text}}{${2:ref list}}"
-		]
-	},
-
-
-	"ndref{}":{
-		"prefix":"ndref",
-		"body":[
-			"\\ndref{${1:ref list}}"
-		]
-	},
-
-
-	"hypocont{}":{
-		"prefix":"hypocont",
-		"body":[
-			"\\hypocont{${1:formula%plain}}"
-		]
-	},
-
-
-	"havecont{}":{
-		"prefix":"havecont",
-		"body":[
-			"\\havecont{${1:formula%plain}}"
-		]
-	},
-
-
-	"ndrules":{
-		"prefix":"ndrules",
-		"body":[
-			"\\ndrules"
-		]
-	},
-
-
-	"ndjustformat":{
-		"prefix":"ndjustformat",
-		"body":[
-			"\\ndjustformat"
-		]
-	},
-
-
-	"ndrefformat":{
-		"prefix":"ndrefformat",
-		"body":[
-			"\\ndrefformat"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +14,8 @@
 		"prefix":"hypo",
 		"body":[
 			"\\hypo[${3:symbol}]{${1:label}}{${2:formula%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,7 +23,17 @@
 		"prefix":"hypo",
 		"body":[
 			"\\hypo[${3:symbol}][${4:offset}]{${1:label}}{${2:formula%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"have{}{}":{
+		"prefix":"have",
+		"body":[
+			"\\have{${1:label}}{${2:formula%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +41,8 @@
 		"prefix":"have",
 		"body":[
 			"\\have[${3:symbol}]{${1:label}}{${2:formula%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +50,17 @@
 		"prefix":"have",
 		"body":[
 			"\\have[${3:symbol}][${4:offset}]{${1:label}}{${2:formula%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"open":{
+		"prefix":"open",
+		"body":[
+			"\\open"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +68,17 @@
 		"prefix":"open",
 		"body":[
 			"\\open[${1:guard}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"close":{
+		"prefix":"close",
+		"body":[
+			"\\close"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +86,152 @@
 		"prefix":"close",
 		"body":[
 			"\\close[${1:guard}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"r{}":{
+		"prefix":"r",
+		"body":[
+			"\\r{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ii{}":{
+		"prefix":"ii",
+		"body":[
+			"\\ii{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ie{}":{
+		"prefix":"ie",
+		"body":[
+			"\\ie{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ai{}":{
+		"prefix":"ai",
+		"body":[
+			"\\ai{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ae{}":{
+		"prefix":"ae",
+		"body":[
+			"\\ae{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"oi{}":{
+		"prefix":"oi",
+		"body":[
+			"\\oi{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"oe{}":{
+		"prefix":"oe",
+		"body":[
+			"\\oe{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ni{}":{
+		"prefix":"ni",
+		"body":[
+			"\\ni{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ne{}":{
+		"prefix":"ne",
+		"body":[
+			"\\ne{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"be{}":{
+		"prefix":"be",
+		"body":[
+			"\\be{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nne{}":{
+		"prefix":"nne",
+		"body":[
+			"\\nne{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ai{}":{
+		"prefix":"Ai",
+		"body":[
+			"\\Ai{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ae{}":{
+		"prefix":"Ae",
+		"body":[
+			"\\Ae{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ei{}":{
+		"prefix":"Ei",
+		"body":[
+			"\\Ei{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Ee{}":{
+		"prefix":"Ee",
+		"body":[
+			"\\Ee{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guard{}":{
+		"prefix":"guard",
+		"body":[
+			"\\guard{${1:guard}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +239,71 @@
 		"prefix":"guard",
 		"body":[
 			"\\guard[${2:n}]{${1:guard}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"by{}{}":{
+		"prefix":"by",
+		"body":[
+			"\\by{${1:text}}{${2:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ndref{}":{
+		"prefix":"ndref",
+		"body":[
+			"\\ndref{${1:ref list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hypocont{}":{
+		"prefix":"hypocont",
+		"body":[
+			"\\hypocont{${1:formula%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"havecont{}":{
+		"prefix":"havecont",
+		"body":[
+			"\\havecont{${1:formula%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ndrules":{
+		"prefix":"ndrules",
+		"body":[
+			"\\ndrules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ndjustformat":{
+		"prefix":"ndjustformat",
+		"body":[
+			"\\ndjustformat"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ndrefformat":{
+		"prefix":"ndrefformat",
+		"body":[
+			"\\ndrefformat"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -279,7 +313,19 @@
 			"\\begin{nd}",
 				"\t$1",
 			"\\end{nd}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nd[]":{
+		"prefix":"nd",
+		"body":[
+			"\\begin{nd}",
+				"\t[${1:options%keyvals}]",
+			"\\end{nd}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -289,7 +335,19 @@
 			"\\begin{fitchproof}",
 				"\t$1",
 			"\\end{fitchproof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fitchproof[]":{
+		"prefix":"fitchproof",
+		"body":[
+			"\\begin{fitchproof}",
+				"\t[${1:options%keyvals}]",
+			"\\end{fitchproof}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -299,7 +357,19 @@
 			"\\begin{ndresume}",
 				"\t$1",
 			"\\end{ndresume}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ndresume[]":{
+		"prefix":"ndresume",
+		"body":[
+			"\\begin{ndresume}",
+				"\t[${1:options%keyvals}]",
+			"\\end{ndresume}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,46 +379,18 @@
 			"\\begin{fitchproof*}",
 				"\t$1",
 			"\\end{fitchproof*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"nd":{
-		"prefix":"nd",
-		"body":[
-			"\\begin{nd}",
-				"\t$1",
-			"\\end{nd}"
-		]
-	},
-
-
-	"fitchproof":{
-		"prefix":"fitchproof",
-		"body":[
-			"\\begin{fitchproof}",
-				"\t$1",
-			"\\end{fitchproof}"
-		]
-	},
-
-
-	"ndresume":{
-		"prefix":"ndresume",
-		"body":[
-			"\\begin{ndresume}",
-				"\t$1",
-			"\\end{ndresume}"
-		]
-	},
-
-
-	"fitchproof*":{
-		"prefix":"fitchproof",
+	"fitchproof*[]":{
+		"prefix":"*fitchproof",
 		"body":[
 			"\\begin{fitchproof*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{fitchproof*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

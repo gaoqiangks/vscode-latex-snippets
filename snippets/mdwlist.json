@@ -5,7 +5,8 @@
 		"prefix":"desclabelstyle",
 		"body":[
 			"\\desclabelstyle{${1:style}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"desclabelwidth",
 		"body":[
 			"\\desclabelwidth{${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"multilinelabel",
 		"body":[
 			"\\multilinelabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"nextlinelabel",
 		"body":[
 			"\\nextlinelabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"pushlabel",
 		"body":[
 			"\\pushlabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,15 +50,8 @@
 		"prefix":"resume",
 		"body":[
 			"\\resume{${1:envname}}"
-		]
-	},
-
-
-	"suspend{}":{
-		"prefix":"suspend",
-		"body":[
-			"\\suspend{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"resume",
 		"body":[
 			"\\resume[${2:magicname}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"suspend{}":{
+		"prefix":"suspend",
+		"body":[
+			"\\suspend{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"suspend",
 		"body":[
 			"\\suspend[${2:magicname}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -79,7 +88,8 @@
 			"\\begin{description*}",
 				"\t$1",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -89,7 +99,8 @@
 			"\\begin{enumerate*}",
 				"\t$1",
 			"\\end{enumerate*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -99,6 +110,7 @@
 			"\\begin{itemize*}",
 				"\t$1",
 			"\\end{itemize*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

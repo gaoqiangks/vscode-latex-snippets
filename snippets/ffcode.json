@@ -5,7 +5,8 @@
 		"prefix":"ff",
 		"body":[
 			"\\ff{${1:code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -15,16 +16,18 @@
 			"\\begin{ffcode}",
 				"\t$1",
 			"\\end{ffcode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ffcode":{
+	"ffcode[]":{
 		"prefix":"ffcode",
 		"body":[
 			"\\begin{ffcode}",
-				"\t$1",
+				"\t[${1:listings options}]",
 			"\\end{ffcode}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

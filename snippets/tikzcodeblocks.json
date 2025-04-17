@@ -5,7 +5,8 @@
 		"prefix":"setcolor",
 		"body":[
 			"\\setcolor{${1:name%specialDef}}{${2:hex color code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"dropdown",
 		"body":[
 			"\\dropdown{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,207 +23,8 @@
 		"prefix":"intbox",
 		"body":[
 			"\\intbox{${1:text}}"
-		]
-	},
-
-
-	"stringbox{}":{
-		"prefix":"stringbox",
-		"body":[
-			"\\stringbox{${1:text}}"
-		]
-	},
-
-
-	"boolbox{}":{
-		"prefix":"boolbox",
-		"body":[
-			"\\boolbox{${1:text}}"
-		]
-	},
-
-
-	"bild{}":{
-		"prefix":"bild",
-		"body":[
-			"\\bild{${1:content}}"
-		]
-	},
-
-
-	"emptyled":{
-		"prefix":"emptyled",
-		"body":[
-			"\\emptyled"
-		]
-	},
-
-
-	"fullled":{
-		"prefix":"fullled",
-		"body":[
-			"\\fullled"
-		]
-	},
-
-
-	"X":{
-		"prefix":"X",
-		"body":[
-			"\\X"
-		]
-	},
-
-
-	"0":{
-		"prefix":"0",
-		"body":[
-			"\\0"
-		]
-	},
-
-
-	"wenndann{}{}{}":{
-		"prefix":"wenndann",
-		"body":[
-			"\\wenndann{${1:text}}{${2:then node code}}{${3:node name}}"
-		]
-	},
-
-
-	"wenndannsonst{}{}{}{}":{
-		"prefix":"wenndannsonst",
-		"body":[
-			"\\wenndannsonst{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
-	},
-
-
-	"schleife{}{}{}{}":{
-		"prefix":"schleife",
-		"body":[
-			"\\schleife{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
-	},
-
-
-	"ifthenblocks{}{}{}":{
-		"prefix":"ifthenblocks",
-		"body":[
-			"\\ifthenblocks{${1:text}}{${2:then node code}}{${3:node name}}"
-		]
-	},
-
-
-	"ifthenelseblocks{}{}{}{}":{
-		"prefix":"ifthenelseblocks",
-		"body":[
-			"\\ifthenelseblocks{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
-	},
-
-
-	"loopblocks{}{}{}{}":{
-		"prefix":"loopblocks",
-		"body":[
-			"\\loopblocks{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
-	},
-
-
-	"einruecken{}":{
-		"prefix":"einruecken",
-		"body":[
-			"\\einruecken{${1:nodes}}"
-		]
-	},
-
-
-	"moveindent{}":{
-		"prefix":"moveindent",
-		"body":[
-			"\\moveindent{${1:nodes}}"
-		]
-	},
-
-
-	"usb":{
-		"prefix":"usb",
-		"body":[
-			"\\usb"
-		]
-	},
-
-
-	"farbe{}":{
-		"prefix":"farbe",
-		"body":[
-			"\\farbe{${1:color}}"
-		]
-	},
-
-
-	"setupquotes":{
-		"prefix":"setupquotes",
-		"body":[
-			"\\setupquotes"
-		]
-	},
-
-
-	"myspace":{
-		"prefix":"myspace",
-		"body":[
-			"\\myspace"
-		]
-	},
-
-
-	"myshift":{
-		"prefix":"myshift",
-		"body":[
-			"\\myshift"
-		]
-	},
-
-
-	"blockhspace":{
-		"prefix":"blockhspace",
-		"body":[
-			"\\blockhspace"
-		]
-	},
-
-
-	"blockhspaceoben":{
-		"prefix":"blockhspaceoben",
-		"body":[
-			"\\blockhspaceoben"
-		]
-	},
-
-
-	"blockhspaceunten":{
-		"prefix":"blockhspaceunten",
-		"body":[
-			"\\blockhspaceunten"
-		]
-	},
-
-
-	"blockvspace":{
-		"prefix":"blockvspace",
-		"body":[
-			"\\blockvspace"
-		]
-	},
-
-
-	"dreieckseite":{
-		"prefix":"dreieckseite",
-		"body":[
-			"\\dreieckseite"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +32,17 @@
 		"prefix":"intbox",
 		"body":[
 			"\\intbox[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stringbox{}":{
+		"prefix":"stringbox",
+		"body":[
+			"\\stringbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +50,17 @@
 		"prefix":"stringbox",
 		"body":[
 			"\\stringbox[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"boolbox{}":{
+		"prefix":"boolbox",
+		"body":[
+			"\\boolbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +68,17 @@
 		"prefix":"boolbox",
 		"body":[
 			"\\boolbox[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bild{}":{
+		"prefix":"bild",
+		"body":[
+			"\\bild{${1:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +86,53 @@
 		"prefix":"bild",
 		"body":[
 			"\\bild[${2:scale}]{${1:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"emptyled":{
+		"prefix":"emptyled",
+		"body":[
+			"\\emptyled"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullled":{
+		"prefix":"fullled",
+		"body":[
+			"\\fullled"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"X":{
+		"prefix":"X",
+		"body":[
+			"\\X"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"0":{
+		"prefix":"0",
+		"body":[
+			"\\0"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wenndann{}{}{}":{
+		"prefix":"wenndann",
+		"body":[
+			"\\wenndann{${1:text}}{${2:then node code}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +140,17 @@
 		"prefix":"wenndann",
 		"body":[
 			"\\wenndann[${4:options%keyvals}]{${1:text}}{${2:then node code}}{${3:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wenndannsonst{}{}{}{}":{
+		"prefix":"wenndannsonst",
+		"body":[
+			"\\wenndannsonst{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +158,17 @@
 		"prefix":"wenndannsonst",
 		"body":[
 			"\\wenndannsonst[${5:options%keyvals}]{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"schleife{}{}{}{}":{
+		"prefix":"schleife",
+		"body":[
+			"\\schleife{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +176,17 @@
 		"prefix":"schleife",
 		"body":[
 			"\\schleife[${5:options%keyvals}]{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifthenblocks{}{}{}":{
+		"prefix":"ifthenblocks",
+		"body":[
+			"\\ifthenblocks{${1:text}}{${2:then node code}}{${3:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +194,17 @@
 		"prefix":"ifthenblocks",
 		"body":[
 			"\\ifthenblocks[${4:options%keyvals}]{${1:text}}{${2:then node code}}{${3:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifthenelseblocks{}{}{}{}":{
+		"prefix":"ifthenelseblocks",
+		"body":[
+			"\\ifthenelseblocks{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +212,17 @@
 		"prefix":"ifthenelseblocks",
 		"body":[
 			"\\ifthenelseblocks[${5:options%keyvals}]{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"loopblocks{}{}{}{}":{
+		"prefix":"loopblocks",
+		"body":[
+			"\\loopblocks{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,6 +230,115 @@
 		"prefix":"loopblocks",
 		"body":[
 			"\\loopblocks[${5:options%keyvals}]{${1:text}}{${2:then node code}}{${3:else node code}}{${4:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"einruecken{}":{
+		"prefix":"einruecken",
+		"body":[
+			"\\einruecken{${1:nodes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moveindent{}":{
+		"prefix":"moveindent",
+		"body":[
+			"\\moveindent{${1:nodes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usb":{
+		"prefix":"usb",
+		"body":[
+			"\\usb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"farbe{}":{
+		"prefix":"farbe",
+		"body":[
+			"\\farbe{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setupquotes":{
+		"prefix":"setupquotes",
+		"body":[
+			"\\setupquotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"myspace":{
+		"prefix":"myspace",
+		"body":[
+			"\\myspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"myshift":{
+		"prefix":"myshift",
+		"body":[
+			"\\myshift"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blockhspace":{
+		"prefix":"blockhspace",
+		"body":[
+			"\\blockhspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blockhspaceoben":{
+		"prefix":"blockhspaceoben",
+		"body":[
+			"\\blockhspaceoben"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blockhspaceunten":{
+		"prefix":"blockhspaceunten",
+		"body":[
+			"\\blockhspaceunten"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blockvspace":{
+		"prefix":"blockvspace",
+		"body":[
+			"\\blockvspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dreieckseite":{
+		"prefix":"dreieckseite",
+		"body":[
+			"\\dreieckseite"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,39 +5,8 @@
 		"prefix":"phonenumber",
 		"body":[
 			"\\phonenumber{${1:number}}"
-		]
-	},
-
-
-	"setphonenumbers{}":{
-		"prefix":"setphonenumbers",
-		"body":[
-			"\\setphonenumbers{${1:options%keyvals}}"
-		]
-	},
-
-
-	"AreaCodesGeographic":{
-		"prefix":"AreaCodesGeographic",
-		"body":[
-			"\\AreaCodesGeographic"
-		]
-	},
-
-
-	"AreaCodesNonGeographic":{
-		"prefix":"AreaCodesNonGeographic",
-		"body":[
-			"\\AreaCodesNonGeographic"
-		]
-	},
-
-
-	"CountryCodes":{
-		"prefix":"CountryCodes",
-		"body":[
-			"\\CountryCodes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,8 @@
 		"prefix":"phonenumber",
 		"body":[
 			"\\phonenumber{${1:number}}[${2:extension}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +23,8 @@
 		"prefix":"phonenumber",
 		"body":[
 			"\\phonenumber[${2:options%keyvals}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +32,26 @@
 		"prefix":"phonenumber",
 		"body":[
 			"\\phonenumber[${2:options%keyvals}]{${1:number}}[${3:extension}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setphonenumbers{}":{
+		"prefix":"setphonenumbers",
+		"body":[
+			"\\setphonenumbers{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AreaCodesGeographic":{
+		"prefix":"AreaCodesGeographic",
+		"body":[
+			"\\AreaCodesGeographic"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,17 @@
 		"prefix":"AreaCodesGeographic",
 		"body":[
 			"\\AreaCodesGeographic[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AreaCodesNonGeographic":{
+		"prefix":"AreaCodesNonGeographic",
+		"body":[
+			"\\AreaCodesNonGeographic"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +77,16 @@
 		"prefix":"AreaCodesNonGeographic",
 		"body":[
 			"\\AreaCodesNonGeographic[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CountryCodes":{
+		"prefix":"CountryCodes",
+		"body":[
+			"\\CountryCodes"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

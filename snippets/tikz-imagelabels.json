@@ -5,16 +5,18 @@
 		"prefix":"imagelabelset",
 		"body":[
 			"\\imagelabelset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"annotationimage":{
+	"annotationimage{}{}":{
 		"prefix":"annotationimage",
 		"body":[
 			"\\begin{annotationimage}",
-				"\t$1",
+				"\t{${1:options%keyvals}}{${2:imagefile}}",
 			"\\end{annotationimage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

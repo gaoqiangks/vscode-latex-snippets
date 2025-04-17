@@ -5,7 +5,8 @@
 		"prefix":"gamestretch",
 		"body":[
 			"\\gamestretch"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"sgcolsep",
 		"body":[
 			"\\sgcolsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"sglabelsep",
 		"body":[
 			"\\sglabelsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ifirpawcgl",
 		"body":[
 			"\\ifirpawcgl"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"irpawcgltrue",
 		"body":[
 			"\\irpawcgltrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"irpawcglfalse",
 		"body":[
 			"\\irpawcglfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"ifirplwcgl",
 		"body":[
 			"\\ifirplwcgl"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"irplwcgltrue",
 		"body":[
 			"\\irplwcgltrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"irplwcglfalse",
 		"body":[
 			"\\irplwcglfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"ifgamemath",
 		"body":[
 			"\\ifgamemath"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"gamemathtrue",
 		"body":[
 			"\\gamemathtrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"gamemathfalse",
 		"body":[
 			"\\gamemathfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"ifgamevalign",
 		"body":[
 			"\\ifgamevalign"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"gamevaligntrue",
 		"body":[
 			"\\gamevaligntrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"gamevalignfalse",
 		"body":[
 			"\\gamevalignfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"ifssual",
 		"body":[
 			"\\ifssual"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"ssualtrue",
 		"body":[
 			"\\ssualtrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"ssualfalse",
 		"body":[
 			"\\ssualfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"sglinecolor",
 		"body":[
 			"\\sglinecolor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,86 +176,95 @@
 		"prefix":"sgtextcolor",
 		"body":[
 			"\\sgtextcolor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"game":{
+	"game{}{}":{
 		"prefix":"game",
 		"body":[
 			"\\begin{game}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}",
 			"\\end{game}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"game*":{
-		"prefix":"game",
-		"body":[
-			"\\begin{game*}",
-				"\t$1",
-			"\\end{game*}"
-		]
-	},
-
-
-	"game":{
+	"game{}{}[]":{
 		"prefix":"game",
 		"body":[
 			"\\begin{game}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}[${3:game label}]",
 			"\\end{game}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"game":{
+	"game{}{}[][]":{
 		"prefix":"game",
 		"body":[
 			"\\begin{game}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}]",
 			"\\end{game}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"game":{
+	"game{}{}[][][]":{
 		"prefix":"game",
 		"body":[
 			"\\begin{game}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}][${5:game label}]",
 			"\\end{game}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"game*":{
-		"prefix":"game",
+	"game*{}{}":{
+		"prefix":"*game",
 		"body":[
 			"\\begin{game*}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}",
 			"\\end{game*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"game*":{
-		"prefix":"game",
+	"game*{}{}[]":{
+		"prefix":"*game",
 		"body":[
 			"\\begin{game*}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}[${3:game label}]",
 			"\\end{game*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"game*":{
-		"prefix":"game",
+	"game*{}{}[][]":{
+		"prefix":"*game",
 		"body":[
 			"\\begin{game*}",
-				"\t$1",
+				"\t{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}]",
 			"\\end{game*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"game*{}{}[][][]":{
+		"prefix":"*game",
+		"body":[
+			"\\begin{game*}",
+				"\t{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}][${5:game label}]",
+			"\\end{game*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

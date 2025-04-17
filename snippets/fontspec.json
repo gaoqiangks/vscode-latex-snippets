@@ -5,7 +5,8 @@
 		"prefix":"liningnums",
 		"body":[
 			"\\liningnums{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"strong",
 		"body":[
 			"\\strong{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"strongfontdeclare",
 		"body":[
 			"\\strongfontdeclare{${1:font-switching list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"strongreset",
 		"body":[
 			"\\strongreset"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,591 +41,8 @@
 		"prefix":"setmainfont",
 		"body":[
 			"\\setmainfont{${1:font}}"
-		]
-	},
-
-
-	"setromanfont{}":{
-		"prefix":"setromanfont",
-		"body":[
-			"\\setromanfont{${1:font}}"
-		]
-	},
-
-
-	"setsansfont{}":{
-		"prefix":"setsansfont",
-		"body":[
-			"\\setsansfont{${1:font}}"
-		]
-	},
-
-
-	"setmonofont{}":{
-		"prefix":"setmonofont",
-		"body":[
-			"\\setmonofont{${1:font}}"
-		]
-	},
-
-
-	"newfontfamily{}{}":{
-		"prefix":"newfontfamily",
-		"body":[
-			"\\newfontfamily{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"setfontfamily{}{}":{
-		"prefix":"setfontfamily",
-		"body":[
-			"\\setfontfamily{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"renewfontfamily{}{}":{
-		"prefix":"renewfontfamily",
-		"body":[
-			"\\renewfontfamily{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"providefontfamily{}{}":{
-		"prefix":"providefontfamily",
-		"body":[
-			"\\providefontfamily{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"fontspec{}":{
-		"prefix":"fontspec",
-		"body":[
-			"\\fontspec{${1:font}}"
-		]
-	},
-
-
-	"IfFontExistsTF{}{}{}":{
-		"prefix":"IfFontExistsTF",
-		"body":[
-			"\\IfFontExistsTF{${1:font name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"newfontface{}{}":{
-		"prefix":"newfontface",
-		"body":[
-			"\\newfontface{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"setfontface{}{}":{
-		"prefix":"setfontface",
-		"body":[
-			"\\setfontface{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"renewfontface{}{}":{
-		"prefix":"renewfontface",
-		"body":[
-			"\\renewfontface{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"providefontface{}{}":{
-		"prefix":"providefontface",
-		"body":[
-			"\\providefontface{${1:cmd}}{${2:font}}"
-		]
-	},
-
-
-	"setmathrm{}":{
-		"prefix":"setmathrm",
-		"body":[
-			"\\setmathrm{${1:font}}"
-		]
-	},
-
-
-	"setmathsf{}":{
-		"prefix":"setmathsf",
-		"body":[
-			"\\setmathsf{${1:font}}"
-		]
-	},
-
-
-	"setmathtt{}":{
-		"prefix":"setmathtt",
-		"body":[
-			"\\setmathtt{${1:font}}"
-		]
-	},
-
-
-	"setboldmathrm{}":{
-		"prefix":"setboldmathrm",
-		"body":[
-			"\\setboldmathrm{${1:font}}"
-		]
-	},
-
-
-	"defaultfontfeatures{}":{
-		"prefix":"defaultfontfeatures",
-		"body":[
-			"\\defaultfontfeatures{${1:font features%keyvals}}"
-		]
-	},
-
-
-	"IfFontFeatureActiveTF{}{}{}":{
-		"prefix":"IfFontFeatureActiveTF",
-		"body":[
-			"\\IfFontFeatureActiveTF{${1:font feature}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"addfontfeatures{}":{
-		"prefix":"addfontfeatures",
-		"body":[
-			"\\addfontfeatures{${1:font features%keyvals}}"
-		]
-	},
-
-
-	"addfontfeature{}":{
-		"prefix":"addfontfeature",
-		"body":[
-			"\\addfontfeature{${1:font features%keyvals}}"
-		]
-	},
-
-
-	"EncodingAccent{}{}":{
-		"prefix":"EncodingAccent",
-		"body":[
-			"\\EncodingAccent{${1:cmd}}{${2:code}}"
-		]
-	},
-
-
-	"EncodingSymbol{}{}":{
-		"prefix":"EncodingSymbol",
-		"body":[
-			"\\EncodingSymbol{${1:cmd}}{${2:code}}"
-		]
-	},
-
-
-	"EncodingComposite{}{}{}":{
-		"prefix":"EncodingComposite",
-		"body":[
-			"\\EncodingComposite{${1:cmd}}{${2:letter}}{${3:slot}}"
-		]
-	},
-
-
-	"EncodingCompositeCommand(){}{}":{
-		"prefix":"EncodingCompositeCommand",
-		"body":[
-			"\\EncodingCompositeCommand(${3:cmd}){${1:letter}}{${2:code}}"
-		]
-	},
-
-
-	"UndeclareSymbol{}":{
-		"prefix":"UndeclareSymbol",
-		"body":[
-			"\\UndeclareSymbol{${1:cmd}}"
-		]
-	},
-
-
-	"UndeclareAccent{}":{
-		"prefix":"UndeclareAccent",
-		"body":[
-			"\\UndeclareAccent{${1:cmd}}"
-		]
-	},
-
-
-	"UndeclareCommand{}":{
-		"prefix":"UndeclareCommand",
-		"body":[
-			"\\UndeclareCommand{${1:cmd}}"
-		]
-	},
-
-
-	"UndeclareComposite{}{}":{
-		"prefix":"UndeclareComposite",
-		"body":[
-			"\\UndeclareComposite{${1:cmd}}{${2:letter}}"
-		]
-	},
-
-
-	"newAATfeature{}{}{}{}":{
-		"prefix":"newAATfeature",
-		"body":[
-			"\\newAATfeature{${1:feature}}{${2:option}}{${3:feature code}}{${4:selector code}}"
-		]
-	},
-
-
-	"newopentypefeature{}{}{}":{
-		"prefix":"newopentypefeature",
-		"body":[
-			"\\newopentypefeature{${1:feature}}{${2:option}}{${3:feature tag}}"
-		]
-	},
-
-
-	"newfontfeature{}{}":{
-		"prefix":"newfontfeature",
-		"body":[
-			"\\newfontfeature{${1:name}}{${2:input string}}"
-		]
-	},
-
-
-	"newfontscript{}{}":{
-		"prefix":"newfontscript",
-		"body":[
-			"\\newfontscript{${1:fontspec name}}{${2:OpenType tag list}}"
-		]
-	},
-
-
-	"newfontlanguage{}{}":{
-		"prefix":"newfontlanguage",
-		"body":[
-			"\\newfontlanguage{${1:fontspec name}}{${2:OpenType tag list}}"
-		]
-	},
-
-
-	"aliasfontfeature{}{}":{
-		"prefix":"aliasfontfeature",
-		"body":[
-			"\\aliasfontfeature{${1:existing name}}{${2:new name}}"
-		]
-	},
-
-
-	"aliasfontfeatureoption{}{}{}":{
-		"prefix":"aliasfontfeatureoption",
-		"body":[
-			"\\aliasfontfeatureoption{${1:font feature}}{${2:existing name}}{${3:new name}}"
-		]
-	},
-
-
-	"cyrillicencoding":{
-		"prefix":"cyrillicencoding",
-		"body":[
-			"\\cyrillicencoding"
-		]
-	},
-
-
-	"latinencoding":{
-		"prefix":"latinencoding",
-		"body":[
-			"\\latinencoding"
-		]
-	},
-
-
-	"UTFencname":{
-		"prefix":"UTFencname",
-		"body":[
-			"\\UTFencname"
-		]
-	},
-
-
-	"emfontdeclare{}":{
-		"prefix":"emfontdeclare",
-		"body":[
-			"\\emfontdeclare{${1:font-switching list}}"
-		]
-	},
-
-
-	"FontspecSetCheckBoolFalse":{
-		"prefix":"FontspecSetCheckBoolFalse",
-		"body":[
-			"\\FontspecSetCheckBoolFalse"
-		]
-	},
-
-
-	"FontspecSetCheckBoolTrue":{
-		"prefix":"FontspecSetCheckBoolTrue",
-		"body":[
-			"\\FontspecSetCheckBoolTrue"
-		]
-	},
-
-
-	"scitdefault":{
-		"prefix":"scitdefault",
-		"body":[
-			"\\scitdefault"
-		]
-	},
-
-
-	"scsldefault":{
-		"prefix":"scsldefault",
-		"body":[
-			"\\scsldefault"
-		]
-	},
-
-
-	"scswdefault":{
-		"prefix":"scswdefault",
-		"body":[
-			"\\scswdefault"
-		]
-	},
-
-
-	"UnicodeEncodingName":{
-		"prefix":"UnicodeEncodingName",
-		"body":[
-			"\\UnicodeEncodingName"
-		]
-	},
-
-
-	"UnicodeFontTeXLigatures":{
-		"prefix":"UnicodeFontTeXLigatures",
-		"body":[
-			"\\UnicodeFontTeXLigatures"
-		]
-	},
-
-
-	"UnicodeFontFile{}{}":{
-		"prefix":"UnicodeFontFile",
-		"body":[
-			"\\UnicodeFontFile{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"UnicodeFontName{}{}":{
-		"prefix":"UnicodeFontName",
-		"body":[
-			"\\UnicodeFontName{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"DeclareUnicodeAccent{}{}{}":{
-		"prefix":"DeclareUnicodeAccent",
-		"body":[
-			"\\DeclareUnicodeAccent{${1:cmd}}{${2:encoding}}{${3:char code}}"
-		]
-	},
-
-
-	"DeclareUnicodeCommand{}{}":{
-		"prefix":"DeclareUnicodeCommand",
-		"body":[
-			"\\DeclareUnicodeCommand{${1:command}}{${2:slot}}"
-		]
-	},
-
-
-	"DeclareUnicodeComposite{}{}{}":{
-		"prefix":"DeclareUnicodeComposite",
-		"body":[
-			"\\DeclareUnicodeComposite{${1:cmd}}{${2:letter}}{${3:definition}}"
-		]
-	},
-
-
-	"DeclareUnicodeSymbol{}{}":{
-		"prefix":"DeclareUnicodeSymbol",
-		"body":[
-			"\\DeclareUnicodeSymbol{${1:command}}{${2:definition}}"
-		]
-	},
-
-
-	"textquotedbl":{
-		"prefix":"textquotedbl",
-		"body":[
-			"\\textquotedbl"
-		]
-	},
-
-
-	"guillemetleft":{
-		"prefix":"guillemetleft",
-		"body":[
-			"\\guillemetleft"
-		]
-	},
-
-
-	"guillemotleft":{
-		"prefix":"guillemotleft",
-		"body":[
-			"\\guillemotleft"
-		]
-	},
-
-
-	"guillemetright":{
-		"prefix":"guillemetright",
-		"body":[
-			"\\guillemetright"
-		]
-	},
-
-
-	"guillemotright":{
-		"prefix":"guillemotright",
-		"body":[
-			"\\guillemotright"
-		]
-	},
-
-
-	"DH":{
-		"prefix":"DH",
-		"body":[
-			"\\DH"
-		]
-	},
-
-
-	"TH":{
-		"prefix":"TH",
-		"body":[
-			"\\TH"
-		]
-	},
-
-
-	"dh":{
-		"prefix":"dh",
-		"body":[
-			"\\dh"
-		]
-	},
-
-
-	"th":{
-		"prefix":"th",
-		"body":[
-			"\\th"
-		]
-	},
-
-
-	"DJ":{
-		"prefix":"DJ",
-		"body":[
-			"\\DJ"
-		]
-	},
-
-
-	"dj":{
-		"prefix":"dj",
-		"body":[
-			"\\dj"
-		]
-	},
-
-
-	"NG":{
-		"prefix":"NG",
-		"body":[
-			"\\NG"
-		]
-	},
-
-
-	"ng":{
-		"prefix":"ng",
-		"body":[
-			"\\ng"
-		]
-	},
-
-
-	"quotesinglbase":{
-		"prefix":"quotesinglbase",
-		"body":[
-			"\\quotesinglbase"
-		]
-	},
-
-
-	"quotedblbase":{
-		"prefix":"quotedblbase",
-		"body":[
-			"\\quotedblbase"
-		]
-	},
-
-
-	"guilsinglleft":{
-		"prefix":"guilsinglleft",
-		"body":[
-			"\\guilsinglleft"
-		]
-	},
-
-
-	"guilsinglright":{
-		"prefix":"guilsinglright",
-		"body":[
-			"\\guilsinglright"
-		]
-	},
-
-
-	"Hwithstroke":{
-		"prefix":"Hwithstroke",
-		"body":[
-			"\\Hwithstroke"
-		]
-	},
-
-
-	"hwithstroke":{
-		"prefix":"hwithstroke",
-		"body":[
-			"\\hwithstroke"
-		]
-	},
-
-
-	"k{}":{
-		"prefix":"k",
-		"body":[
-			"\\k{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -629,7 +50,8 @@
 		"prefix":"setmainfont",
 		"body":[
 			"\\setmainfont[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -637,7 +59,8 @@
 		"prefix":"setmainfont",
 		"body":[
 			"\\setmainfont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -645,7 +68,17 @@
 		"prefix":"setmainfont",
 		"body":[
 			"\\setmainfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setromanfont{}":{
+		"prefix":"setromanfont",
+		"body":[
+			"\\setromanfont{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +86,8 @@
 		"prefix":"setromanfont",
 		"body":[
 			"\\setromanfont[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -661,7 +95,8 @@
 		"prefix":"setromanfont",
 		"body":[
 			"\\setromanfont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -669,7 +104,17 @@
 		"prefix":"setromanfont",
 		"body":[
 			"\\setromanfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setsansfont{}":{
+		"prefix":"setsansfont",
+		"body":[
+			"\\setsansfont{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +122,8 @@
 		"prefix":"setsansfont",
 		"body":[
 			"\\setsansfont[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -685,7 +131,8 @@
 		"prefix":"setsansfont",
 		"body":[
 			"\\setsansfont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -693,7 +140,17 @@
 		"prefix":"setsansfont",
 		"body":[
 			"\\setsansfont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setmonofont{}":{
+		"prefix":"setmonofont",
+		"body":[
+			"\\setmonofont{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -701,7 +158,8 @@
 		"prefix":"setmonofont",
 		"body":[
 			"\\setmonofont[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -709,7 +167,8 @@
 		"prefix":"setmonofont",
 		"body":[
 			"\\setmonofont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -717,7 +176,17 @@
 		"prefix":"setmonofont",
 		"body":[
 			"\\setmonofont[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newfontfamily{}{}":{
+		"prefix":"newfontfamily",
+		"body":[
+			"\\newfontfamily{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -725,7 +194,8 @@
 		"prefix":"newfontfamily",
 		"body":[
 			"\\newfontfamily{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -733,7 +203,8 @@
 		"prefix":"newfontfamily",
 		"body":[
 			"\\newfontfamily{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -741,7 +212,17 @@
 		"prefix":"newfontfamily",
 		"body":[
 			"\\newfontfamily{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setfontfamily{}{}":{
+		"prefix":"setfontfamily",
+		"body":[
+			"\\setfontfamily{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -749,7 +230,8 @@
 		"prefix":"setfontfamily",
 		"body":[
 			"\\setfontfamily{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -757,7 +239,8 @@
 		"prefix":"setfontfamily",
 		"body":[
 			"\\setfontfamily{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -765,7 +248,17 @@
 		"prefix":"setfontfamily",
 		"body":[
 			"\\setfontfamily{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewfontfamily{}{}":{
+		"prefix":"renewfontfamily",
+		"body":[
+			"\\renewfontfamily{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -773,7 +266,8 @@
 		"prefix":"renewfontfamily",
 		"body":[
 			"\\renewfontfamily{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -781,7 +275,8 @@
 		"prefix":"renewfontfamily",
 		"body":[
 			"\\renewfontfamily{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -789,7 +284,17 @@
 		"prefix":"renewfontfamily",
 		"body":[
 			"\\renewfontfamily{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"providefontfamily{}{}":{
+		"prefix":"providefontfamily",
+		"body":[
+			"\\providefontfamily{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +302,8 @@
 		"prefix":"providefontfamily",
 		"body":[
 			"\\providefontfamily{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -805,7 +311,8 @@
 		"prefix":"providefontfamily",
 		"body":[
 			"\\providefontfamily{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -813,7 +320,17 @@
 		"prefix":"providefontfamily",
 		"body":[
 			"\\providefontfamily{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fontspec{}":{
+		"prefix":"fontspec",
+		"body":[
+			"\\fontspec{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -821,7 +338,8 @@
 		"prefix":"fontspec",
 		"body":[
 			"\\fontspec[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -829,7 +347,8 @@
 		"prefix":"fontspec",
 		"body":[
 			"\\fontspec{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -837,7 +356,26 @@
 		"prefix":"fontspec",
 		"body":[
 			"\\fontspec[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IfFontExistsTF{}{}{}":{
+		"prefix":"IfFontExistsTF",
+		"body":[
+			"\\IfFontExistsTF{${1:font name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newfontface{}{}":{
+		"prefix":"newfontface",
+		"body":[
+			"\\newfontface{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -845,7 +383,8 @@
 		"prefix":"newfontface",
 		"body":[
 			"\\newfontface{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -853,7 +392,8 @@
 		"prefix":"newfontface",
 		"body":[
 			"\\newfontface{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -861,7 +401,17 @@
 		"prefix":"newfontface",
 		"body":[
 			"\\newfontface{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setfontface{}{}":{
+		"prefix":"setfontface",
+		"body":[
+			"\\setfontface{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -869,7 +419,8 @@
 		"prefix":"setfontface",
 		"body":[
 			"\\setfontface{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -877,7 +428,8 @@
 		"prefix":"setfontface",
 		"body":[
 			"\\setfontface{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -885,7 +437,17 @@
 		"prefix":"setfontface",
 		"body":[
 			"\\setfontface{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewfontface{}{}":{
+		"prefix":"renewfontface",
+		"body":[
+			"\\renewfontface{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -893,7 +455,8 @@
 		"prefix":"renewfontface",
 		"body":[
 			"\\renewfontface{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -901,7 +464,8 @@
 		"prefix":"renewfontface",
 		"body":[
 			"\\renewfontface{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -909,7 +473,17 @@
 		"prefix":"renewfontface",
 		"body":[
 			"\\renewfontface{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"providefontface{}{}":{
+		"prefix":"providefontface",
+		"body":[
+			"\\providefontface{${1:cmd}}{${2:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -917,7 +491,8 @@
 		"prefix":"providefontface",
 		"body":[
 			"\\providefontface{${1:cmd}}[${3:font features}]{${2:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -925,7 +500,8 @@
 		"prefix":"providefontface",
 		"body":[
 			"\\providefontface{${1:cmd}}{${2:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -933,7 +509,17 @@
 		"prefix":"providefontface",
 		"body":[
 			"\\providefontface{${1:cmd}}[${3:font features}]{${2:font}}[${4:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setmathrm{}":{
+		"prefix":"setmathrm",
+		"body":[
+			"\\setmathrm{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -941,7 +527,8 @@
 		"prefix":"setmathrm",
 		"body":[
 			"\\setmathrm[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -949,7 +536,8 @@
 		"prefix":"setmathrm",
 		"body":[
 			"\\setmathrm{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -957,7 +545,17 @@
 		"prefix":"setmathrm",
 		"body":[
 			"\\setmathrm[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setmathsf{}":{
+		"prefix":"setmathsf",
+		"body":[
+			"\\setmathsf{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -965,7 +563,8 @@
 		"prefix":"setmathsf",
 		"body":[
 			"\\setmathsf[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -973,7 +572,8 @@
 		"prefix":"setmathsf",
 		"body":[
 			"\\setmathsf{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -981,7 +581,17 @@
 		"prefix":"setmathsf",
 		"body":[
 			"\\setmathsf[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setmathtt{}":{
+		"prefix":"setmathtt",
+		"body":[
+			"\\setmathtt{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -989,7 +599,8 @@
 		"prefix":"setmathtt",
 		"body":[
 			"\\setmathtt[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -997,7 +608,8 @@
 		"prefix":"setmathtt",
 		"body":[
 			"\\setmathtt{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1005,7 +617,17 @@
 		"prefix":"setmathtt",
 		"body":[
 			"\\setmathtt[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setboldmathrm{}":{
+		"prefix":"setboldmathrm",
+		"body":[
+			"\\setboldmathrm{${1:font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1013,7 +635,8 @@
 		"prefix":"setboldmathrm",
 		"body":[
 			"\\setboldmathrm[${2:font features}]{${1:font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1021,7 +644,8 @@
 		"prefix":"setboldmathrm",
 		"body":[
 			"\\setboldmathrm{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1029,7 +653,17 @@
 		"prefix":"setboldmathrm",
 		"body":[
 			"\\setboldmathrm[${2:font features}]{${1:font}}[${3:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defaultfontfeatures{}":{
+		"prefix":"defaultfontfeatures",
+		"body":[
+			"\\defaultfontfeatures{${1:font features%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1037,7 +671,35 @@
 		"prefix":"defaultfontfeatures",
 		"body":[
 			"\\defaultfontfeatures[${2:font name list}]{${1:font features%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IfFontFeatureActiveTF{}{}{}":{
+		"prefix":"IfFontFeatureActiveTF",
+		"body":[
+			"\\IfFontFeatureActiveTF{${1:font feature}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addfontfeatures{}":{
+		"prefix":"addfontfeatures",
+		"body":[
+			"\\addfontfeatures{${1:font features%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addfontfeature{}":{
+		"prefix":"addfontfeature",
+		"body":[
+			"\\addfontfeature{${1:font features%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1045,7 +707,476 @@
 		"prefix":"EncodingCommand",
 		"body":[
 			"\\EncodingCommand{${1:cmd}}[${3:num}][${4:default}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EncodingAccent{}{}":{
+		"prefix":"EncodingAccent",
+		"body":[
+			"\\EncodingAccent{${1:cmd}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EncodingSymbol{}{}":{
+		"prefix":"EncodingSymbol",
+		"body":[
+			"\\EncodingSymbol{${1:cmd}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EncodingComposite{}{}{}":{
+		"prefix":"EncodingComposite",
+		"body":[
+			"\\EncodingComposite{${1:cmd}}{${2:letter}}{${3:slot}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EncodingCompositeCommand(){}{}":{
+		"prefix":"EncodingCompositeCommand",
+		"body":[
+			"\\EncodingCompositeCommand(${3:cmd}){${1:letter}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UndeclareSymbol{}":{
+		"prefix":"UndeclareSymbol",
+		"body":[
+			"\\UndeclareSymbol{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UndeclareAccent{}":{
+		"prefix":"UndeclareAccent",
+		"body":[
+			"\\UndeclareAccent{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UndeclareCommand{}":{
+		"prefix":"UndeclareCommand",
+		"body":[
+			"\\UndeclareCommand{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UndeclareComposite{}{}":{
+		"prefix":"UndeclareComposite",
+		"body":[
+			"\\UndeclareComposite{${1:cmd}}{${2:letter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newAATfeature{}{}{}{}":{
+		"prefix":"newAATfeature",
+		"body":[
+			"\\newAATfeature{${1:feature}}{${2:option}}{${3:feature code}}{${4:selector code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newopentypefeature{}{}{}":{
+		"prefix":"newopentypefeature",
+		"body":[
+			"\\newopentypefeature{${1:feature}}{${2:option}}{${3:feature tag}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newfontfeature{}{}":{
+		"prefix":"newfontfeature",
+		"body":[
+			"\\newfontfeature{${1:name}}{${2:input string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newfontscript{}{}":{
+		"prefix":"newfontscript",
+		"body":[
+			"\\newfontscript{${1:fontspec name}}{${2:OpenType tag list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newfontlanguage{}{}":{
+		"prefix":"newfontlanguage",
+		"body":[
+			"\\newfontlanguage{${1:fontspec name}}{${2:OpenType tag list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aliasfontfeature{}{}":{
+		"prefix":"aliasfontfeature",
+		"body":[
+			"\\aliasfontfeature{${1:existing name}}{${2:new name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aliasfontfeatureoption{}{}{}":{
+		"prefix":"aliasfontfeatureoption",
+		"body":[
+			"\\aliasfontfeatureoption{${1:font feature}}{${2:existing name}}{${3:new name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cyrillicencoding":{
+		"prefix":"cyrillicencoding",
+		"body":[
+			"\\cyrillicencoding"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"latinencoding":{
+		"prefix":"latinencoding",
+		"body":[
+			"\\latinencoding"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UTFencname":{
+		"prefix":"UTFencname",
+		"body":[
+			"\\UTFencname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"emfontdeclare{}":{
+		"prefix":"emfontdeclare",
+		"body":[
+			"\\emfontdeclare{${1:font-switching list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FontspecSetCheckBoolFalse":{
+		"prefix":"FontspecSetCheckBoolFalse",
+		"body":[
+			"\\FontspecSetCheckBoolFalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FontspecSetCheckBoolTrue":{
+		"prefix":"FontspecSetCheckBoolTrue",
+		"body":[
+			"\\FontspecSetCheckBoolTrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scitdefault":{
+		"prefix":"scitdefault",
+		"body":[
+			"\\scitdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scsldefault":{
+		"prefix":"scsldefault",
+		"body":[
+			"\\scsldefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scswdefault":{
+		"prefix":"scswdefault",
+		"body":[
+			"\\scswdefault"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UnicodeEncodingName":{
+		"prefix":"UnicodeEncodingName",
+		"body":[
+			"\\UnicodeEncodingName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UnicodeFontTeXLigatures":{
+		"prefix":"UnicodeFontTeXLigatures",
+		"body":[
+			"\\UnicodeFontTeXLigatures"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UnicodeFontFile{}{}":{
+		"prefix":"UnicodeFontFile",
+		"body":[
+			"\\UnicodeFontFile{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UnicodeFontName{}{}":{
+		"prefix":"UnicodeFontName",
+		"body":[
+			"\\UnicodeFontName{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareUnicodeAccent{}{}{}":{
+		"prefix":"DeclareUnicodeAccent",
+		"body":[
+			"\\DeclareUnicodeAccent{${1:cmd}}{${2:encoding}}{${3:char code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareUnicodeCommand{}{}":{
+		"prefix":"DeclareUnicodeCommand",
+		"body":[
+			"\\DeclareUnicodeCommand{${1:command}}{${2:slot}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareUnicodeComposite{}{}{}":{
+		"prefix":"DeclareUnicodeComposite",
+		"body":[
+			"\\DeclareUnicodeComposite{${1:cmd}}{${2:letter}}{${3:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareUnicodeSymbol{}{}":{
+		"prefix":"DeclareUnicodeSymbol",
+		"body":[
+			"\\DeclareUnicodeSymbol{${1:command}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textquotedbl":{
+		"prefix":"textquotedbl",
+		"body":[
+			"\\textquotedbl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetleft":{
+		"prefix":"guillemetleft",
+		"body":[
+			"\\guillemetleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotleft":{
+		"prefix":"guillemotleft",
+		"body":[
+			"\\guillemotleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetright":{
+		"prefix":"guillemetright",
+		"body":[
+			"\\guillemetright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotright":{
+		"prefix":"guillemotright",
+		"body":[
+			"\\guillemotright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DH":{
+		"prefix":"DH",
+		"body":[
+			"\\DH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TH":{
+		"prefix":"TH",
+		"body":[
+			"\\TH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dh":{
+		"prefix":"dh",
+		"body":[
+			"\\dh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"th":{
+		"prefix":"th",
+		"body":[
+			"\\th"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DJ":{
+		"prefix":"DJ",
+		"body":[
+			"\\DJ"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dj":{
+		"prefix":"dj",
+		"body":[
+			"\\dj"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NG":{
+		"prefix":"NG",
+		"body":[
+			"\\NG"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ng":{
+		"prefix":"ng",
+		"body":[
+			"\\ng"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotesinglbase":{
+		"prefix":"quotesinglbase",
+		"body":[
+			"\\quotesinglbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotedblbase":{
+		"prefix":"quotedblbase",
+		"body":[
+			"\\quotedblbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglleft":{
+		"prefix":"guilsinglleft",
+		"body":[
+			"\\guilsinglleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglright":{
+		"prefix":"guilsinglright",
+		"body":[
+			"\\guilsinglright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hwithstroke":{
+		"prefix":"Hwithstroke",
+		"body":[
+			"\\Hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hwithstroke":{
+		"prefix":"hwithstroke",
+		"body":[
+			"\\hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"k{}":{
+		"prefix":"k",
+		"body":[
+			"\\k{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1055,6 +1186,7 @@
 			"\\begin{strongenv}",
 				"\t$1",
 			"\\end{strongenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

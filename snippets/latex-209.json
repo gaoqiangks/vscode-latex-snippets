@@ -1,18 +1,20 @@
 {
 
 
-	"documentstyle{}":{
-		"prefix":"documentstyle",
-		"body":[
-			"\\documentstyle{${1:style}}"
-		]
-	},
-
-
 	"documentstyle[]{}":{
 		"prefix":"documentstyle",
 		"body":[
 			"\\documentstyle[${2:options}]{${1:style}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"documentstyle{}":{
+		"prefix":"documentstyle",
+		"body":[
+			"\\documentstyle{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

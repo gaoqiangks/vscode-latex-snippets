@@ -5,7 +5,8 @@
 		"prefix":"texthl",
 		"body":[
 			"\\texthl{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"obhlraisedim",
 		"body":[
 			"\\obhlraisedim"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"obhlheight",
 		"body":[
 			"\\obhlheight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"obhlcolor",
 		"body":[
 			"\\obhlcolor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"setpagenode",
 		"body":[
 			"\\setpagenode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"stanzaskip",
 		"body":[
 			"\\stanzaskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,16 +61,18 @@
 			"\\begin{hverse}",
 				"\t$1",
 			"\\end{hverse}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"hverse":{
+	"hverse[]":{
 		"prefix":"hverse",
 		"body":[
 			"\\begin{hverse}",
-				"\t$1",
+				"\t[${1:code}]",
 			"\\end{hverse}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

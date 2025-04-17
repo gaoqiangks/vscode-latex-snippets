@@ -1,11 +1,21 @@
 {
 
 
+	"dataplot[]{}":{
+		"prefix":"dataplot",
+		"body":[
+			"\\dataplot[${2:options%keyvals}]{${1:macro}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"dataplot{}":{
 		"prefix":"dataplot",
 		"body":[
 			"\\dataplot{${1:macro}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,511 +23,8 @@
 		"prefix":"endpsgraph",
 		"body":[
 			"\\endpsgraph"
-		]
-	},
-
-
-	"fileplot{}":{
-		"prefix":"fileplot",
-		"body":[
-			"\\fileplot{${1:file}}"
-		]
-	},
-
-
-	"ifSpecialLabelsDone":{
-		"prefix":"ifSpecialLabelsDone",
-		"body":[
-			"\\ifSpecialLabelsDone"
-		]
-	},
-
-
-	"listplot{}":{
-		"prefix":"listplot",
-		"body":[
-			"\\listplot{${1:data}}"
-		]
-	},
-
-
-	"parametricplot{}{}{}":{
-		"prefix":"parametricplot",
-		"body":[
-			"\\parametricplot{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psaxes()()()":{
-		"prefix":"psaxes",
-		"body":[
-			"\\psaxes(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})"
-		]
-	},
-
-
-	"psaxes{}()()()":{
-		"prefix":"psaxes",
-		"body":[
-			"\\psaxes{${1:arrows}}(${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})"
-		]
-	},
-
-
-	"psBoxplot{}":{
-		"prefix":"psBoxplot",
-		"body":[
-			"\\psBoxplot{${1:macro}}"
-		]
-	},
-
-
-	"psCoordinates()":{
-		"prefix":"psCoordinates",
-		"body":[
-			"\\psCoordinates(${1:x},${2:y})"
-		]
-	},
-
-
-	"psdataplot{}":{
-		"prefix":"psdataplot",
-		"body":[
-			"\\psdataplot{${1:macro}}"
-		]
-	},
-
-
-	"psfileplot{}":{
-		"prefix":"psfileplot",
-		"body":[
-			"\\psfileplot{${1:file}}"
-		]
-	},
-
-
-	"psFixpoint{}{}{}":{
-		"prefix":"psFixpoint",
-		"body":[
-			"\\psFixpoint{${1:x0}}{${2:f(${4:x})}}{${3:n}}"
-		]
-	},
-
-
-	"psgraph()()(){}{}":{
-		"prefix":"psgraph",
-		"body":[
-			"\\psgraph(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:xlength%l}}{${2:ylength%l}}"
-		]
-	},
-
-
-	"psgraph{}()()(){}{}":{
-		"prefix":"psgraph",
-		"body":[
-			"\\psgraph{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${2:xlength%l}}{${3:ylength%l}}"
-		]
-	},
-
-
-	"psgraphLLx":{
-		"prefix":"psgraphLLx",
-		"body":[
-			"\\psgraphLLx"
-		]
-	},
-
-
-	"psgraphLLy":{
-		"prefix":"psgraphLLy",
-		"body":[
-			"\\psgraphLLy"
-		]
-	},
-
-
-	"psgraphURx":{
-		"prefix":"psgraphURx",
-		"body":[
-			"\\psgraphURx"
-		]
-	},
-
-
-	"psgraphURy":{
-		"prefix":"psgraphURy",
-		"body":[
-			"\\psgraphURy"
-		]
-	},
-
-
-	"pshlabel":{
-		"prefix":"pshlabel",
-		"body":[
-			"\\pshlabel"
-		]
-	},
-
-
-	"pslegend{}":{
-		"prefix":"pslegend",
-		"body":[
-			"\\pslegend{${1:text}}"
-		]
-	},
-
-
-	"pslistplot{}":{
-		"prefix":"pslistplot",
-		"body":[
-			"\\pslistplot{${1:data}}"
-		]
-	},
-
-
-	"psNewton{}{}{}":{
-		"prefix":"psNewton",
-		"body":[
-			"\\psNewton{${1:x0}}{${2:f(${4:x})}}{${3:n}}"
-		]
-	},
-
-
-	"psparametricplot{}{}{}":{
-		"prefix":"psparametricplot",
-		"body":[
-			"\\psparametricplot{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psPi":{
-		"prefix":"psPi",
-		"body":[
-			"\\psPi"
-		]
-	},
-
-
-	"psPiFour":{
-		"prefix":"psPiFour",
-		"body":[
-			"\\psPiFour"
-		]
-	},
-
-
-	"psPiH":{
-		"prefix":"psPiH",
-		"body":[
-			"\\psPiH"
-		]
-	},
-
-
-	"psPiTwo":{
-		"prefix":"psPiTwo",
-		"body":[
-			"\\psPiTwo"
-		]
-	},
-
-
-	"psplot{}{}{}":{
-		"prefix":"psplot",
-		"body":[
-			"\\psplot{${1:xmin}}{${2:xmax}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psplotinit{}":{
-		"prefix":"psplotinit",
-		"body":[
-			"\\psplotinit{${1:arg}}"
-		]
-	},
-
-
-	"psplotstyle":{
-		"prefix":"psplotstyle",
-		"body":[
-			"\\psplotstyle"
-		]
-	},
-
-
-	"psPutXLabel{}":{
-		"prefix":"psPutXLabel",
-		"body":[
-			"\\psPutXLabel{${1:arg}}"
-		]
-	},
-
-
-	"psPutYLabel{}":{
-		"prefix":"psPutYLabel",
-		"body":[
-			"\\psPutYLabel{${1:arg}}"
-		]
-	},
-
-
-	"psreadDataColumn{}{}{}{}":{
-		"prefix":"psreadDataColumn",
-		"body":[
-			"\\psreadDataColumn{${1:colNo}}{${2:delim}}{${3:macro%cmd}}{${4:file%file}}"
-		]
-	},
-
-
-	"psResetPlotValues":{
-		"prefix":"psResetPlotValues",
-		"body":[
-			"\\psResetPlotValues"
-		]
-	},
-
-
-	"psrotatebox{}{}":{
-		"prefix":"psrotatebox",
-		"body":[
-			"\\psrotatebox{${1:angle}}{${2:contents}}"
-		]
-	},
-
-
-	"pstRadUnit":{
-		"prefix":"pstRadUnit",
-		"body":[
-			"\\pstRadUnit"
-		]
-	},
-
-
-	"pstRadUnitInv":{
-		"prefix":"pstRadUnitInv",
-		"body":[
-			"\\pstRadUnitInv"
-		]
-	},
-
-
-	"pstScalePoints(){}{}":{
-		"prefix":"pstScalePoints",
-		"body":[
-			"\\pstScalePoints(${3:xscale},${4:yscale}){${1:xPS}}{${2:yPS}}"
-		]
-	},
-
-
-	"pstXPSScale":{
-		"prefix":"pstXPSScale",
-		"body":[
-			"\\pstXPSScale"
-		]
-	},
-
-
-	"pstXScale":{
-		"prefix":"pstXScale",
-		"body":[
-			"\\pstXScale"
-		]
-	},
-
-
-	"pstYPSScale":{
-		"prefix":"pstYPSScale",
-		"body":[
-			"\\pstYPSScale"
-		]
-	},
-
-
-	"pstYScale":{
-		"prefix":"pstYScale",
-		"body":[
-			"\\pstYScale"
-		]
-	},
-
-
-	"psVectorfield()(){}":{
-		"prefix":"psVectorfield",
-		"body":[
-			"\\psVectorfield(${2:%<x0},${3:y0%>})(${4:%<x1},${5:y1%>}){${1:f'(${6:x},${7:y})}}"
-		]
-	},
-
-
-	"psvlabel":{
-		"prefix":"psvlabel",
-		"body":[
-			"\\psvlabel"
-		]
-	},
-
-
-	"psxlabelsep":{
-		"prefix":"psxlabelsep",
-		"body":[
-			"\\psxlabelsep"
-		]
-	},
-
-
-	"psxsubticklinestyle":{
-		"prefix":"psxsubticklinestyle",
-		"body":[
-			"\\psxsubticklinestyle"
-		]
-	},
-
-
-	"psxTick(){}":{
-		"prefix":"psxTick",
-		"body":[
-			"\\psxTick(${2:x value}){${1:label}}"
-		]
-	},
-
-
-	"psxTick{}(){}":{
-		"prefix":"psxTick",
-		"body":[
-			"\\psxTick{${1:rotation}}(${3:x value}){${2:label}}"
-		]
-	},
-
-
-	"psxticklinestyle":{
-		"prefix":"psxticklinestyle",
-		"body":[
-			"\\psxticklinestyle"
-		]
-	},
-
-
-	"psylabelsep":{
-		"prefix":"psylabelsep",
-		"body":[
-			"\\psylabelsep"
-		]
-	},
-
-
-	"psysubticklinestyle":{
-		"prefix":"psysubticklinestyle",
-		"body":[
-			"\\psysubticklinestyle"
-		]
-	},
-
-
-	"psyTick(){}":{
-		"prefix":"psyTick",
-		"body":[
-			"\\psyTick(${2:y value}){${1:label}}"
-		]
-	},
-
-
-	"psyTick{}(){}":{
-		"prefix":"psyTick",
-		"body":[
-			"\\psyTick{${1:rotation}}(${3:y value}){${2:label}}"
-		]
-	},
-
-
-	"psyticklinestyle":{
-		"prefix":"psyticklinestyle",
-		"body":[
-			"\\psyticklinestyle"
-		]
-	},
-
-
-	"readdata{}{}":{
-		"prefix":"readdata",
-		"body":[
-			"\\readdata{${1:macro%cmd}}{${2:file%file}}"
-		]
-	},
-
-
-	"setDefaulthLabels":{
-		"prefix":"setDefaulthLabels",
-		"body":[
-			"\\setDefaulthLabels"
-		]
-	},
-
-
-	"setDefaultvLabels":{
-		"prefix":"setDefaultvLabels",
-		"body":[
-			"\\setDefaultvLabels"
-		]
-	},
-
-
-	"setFractionhLabels":{
-		"prefix":"setFractionhLabels",
-		"body":[
-			"\\setFractionhLabels"
-		]
-	},
-
-
-	"setFractionvLabels":{
-		"prefix":"setFractionvLabels",
-		"body":[
-			"\\setFractionvLabels"
-		]
-	},
-
-
-	"setTrighLabels":{
-		"prefix":"setTrighLabels",
-		"body":[
-			"\\setTrighLabels"
-		]
-	},
-
-
-	"setTrigvLabels":{
-		"prefix":"setTrigvLabels",
-		"body":[
-			"\\setTrigvLabels"
-		]
-	},
-
-
-	"SpecialLabelsDonefalse":{
-		"prefix":"SpecialLabelsDonefalse",
-		"body":[
-			"\\SpecialLabelsDonefalse"
-		]
-	},
-
-
-	"SpecialLabelsDonetrue":{
-		"prefix":"SpecialLabelsDonetrue",
-		"body":[
-			"\\SpecialLabelsDonetrue"
-		]
-	},
-
-
-	"dataplot[]{}":{
-		"prefix":"dataplot",
-		"body":[
-			"\\dataplot[${2:options%keyvals}]{${1:macro}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +32,26 @@
 		"prefix":"fileplot",
 		"body":[
 			"\\fileplot[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fileplot{}":{
+		"prefix":"fileplot",
+		"body":[
+			"\\fileplot{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifSpecialLabelsDone":{
+		"prefix":"ifSpecialLabelsDone",
+		"body":[
+			"\\ifSpecialLabelsDone"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +59,17 @@
 		"prefix":"listplot",
 		"body":[
 			"\\listplot[${2:options%keyvals}]{${1:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listplot{}":{
+		"prefix":"listplot",
+		"body":[
+			"\\listplot{${1:data}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +77,8 @@
 		"prefix":"parametricplot",
 		"body":[
 			"\\parametricplot[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}[${5:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -549,7 +86,8 @@
 		"prefix":"parametricplot",
 		"body":[
 			"\\parametricplot[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -557,7 +95,26 @@
 		"prefix":"parametricplot",
 		"body":[
 			"\\parametricplot{${1:tmin}}{${2:tmax}}[${4:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"parametricplot{}{}{}":{
+		"prefix":"parametricplot",
+		"body":[
+			"\\parametricplot{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psaxes()()()":{
+		"prefix":"psaxes",
+		"body":[
+			"\\psaxes(${1:x0},${2:y0})(${3:x1},${4:y1})(${5:x2},${6:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +122,8 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2})[${1:Xlabel,Xangle}][${2:Ylabel,Yangle}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -573,7 +131,8 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes[${1:options%keyvals}](${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -581,7 +140,8 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes[${1:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2})[${2:Xlabel,Xangle}][${3:Ylabel,Yangle}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -589,7 +149,8 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes[${2:options%keyvals}]{${1:arrows}}(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -597,7 +158,17 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes[${2:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2})[${3:Xlabel,Xangle}][${4:Ylabel,Yangle}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psaxes{}()()()":{
+		"prefix":"psaxes",
+		"body":[
+			"\\psaxes{${1:arrows}}(${2:x0},${3:y0})(${4:x1},${5:y1})(${6:x2},${7:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +176,8 @@
 		"prefix":"psaxes",
 		"body":[
 			"\\psaxes{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2})[${2:Xlabel,Xangle}][${3:Ylabel,Yangle}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -613,7 +185,26 @@
 		"prefix":"psBoxplot",
 		"body":[
 			"\\psBoxplot[${2:options%keyvals}]{${1:macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBoxplot{}":{
+		"prefix":"psBoxplot",
+		"body":[
+			"\\psBoxplot{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psCoordinates()":{
+		"prefix":"psCoordinates",
+		"body":[
+			"\\psCoordinates(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +212,8 @@
 		"prefix":"psCoordinates",
 		"body":[
 			"\\psCoordinates[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -629,7 +221,17 @@
 		"prefix":"psdataplot",
 		"body":[
 			"\\psdataplot[${2:options%keyvals}]{${1:macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psdataplot{}":{
+		"prefix":"psdataplot",
+		"body":[
+			"\\psdataplot{${1:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +239,17 @@
 		"prefix":"psfileplot",
 		"body":[
 			"\\psfileplot[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psfileplot{}":{
+		"prefix":"psfileplot",
+		"body":[
+			"\\psfileplot{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -645,7 +257,26 @@
 		"prefix":"psFixpoint",
 		"body":[
 			"\\psFixpoint[${4:options}]{${1:x0}}{${2:f(${5:x})}}{${3:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psFixpoint{}{}{}":{
+		"prefix":"psFixpoint",
+		"body":[
+			"\\psFixpoint{${1:x0}}{${2:f(${4:x})}}{${3:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraph()()(){}{}":{
+		"prefix":"psgraph",
+		"body":[
+			"\\psgraph(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:xlength%l}}{${2:ylength%l}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +284,8 @@
 		"prefix":"psgraph",
 		"body":[
 			"\\psgraph[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${1:xlength%l}}{${2:ylength%l}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -661,7 +293,62 @@
 		"prefix":"psgraph",
 		"body":[
 			"\\psgraph[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2}){${2:xlength%l}}{${3:ylength%l}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psgraph{}()()(){}{}":{
+		"prefix":"psgraph",
+		"body":[
+			"\\psgraph{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${2:xlength%l}}{${3:ylength%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraphLLx":{
+		"prefix":"psgraphLLx",
+		"body":[
+			"\\psgraphLLx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraphLLy":{
+		"prefix":"psgraphLLy",
+		"body":[
+			"\\psgraphLLy"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraphURx":{
+		"prefix":"psgraphURx",
+		"body":[
+			"\\psgraphURx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraphURy":{
+		"prefix":"psgraphURy",
+		"body":[
+			"\\psgraphURy"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pshlabel":{
+		"prefix":"pshlabel",
+		"body":[
+			"\\pshlabel"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,7 +356,8 @@
 		"prefix":"pslegend",
 		"body":[
 			"\\pslegend[${2:reference}](${3:xoffset},${4:yoffset}){${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -677,7 +365,17 @@
 		"prefix":"pslegend",
 		"body":[
 			"\\pslegend[${2:reference}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pslegend{}":{
+		"prefix":"pslegend",
+		"body":[
+			"\\pslegend{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +383,17 @@
 		"prefix":"pslistplot",
 		"body":[
 			"\\pslistplot[${2:options%keyvals}]{${1:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pslistplot{}":{
+		"prefix":"pslistplot",
+		"body":[
+			"\\pslistplot{${1:data}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -693,7 +401,8 @@
 		"prefix":"psNewton",
 		"body":[
 			"\\psNewton[${4:options}]{${1:x_0}}{${2:f(${5:x})}}{${3:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -701,7 +410,8 @@
 		"prefix":"psNewton",
 		"body":[
 			"\\psNewton[${4:options}]{${1:x0}}{${2:f(${6:x})}}[${5:f'(${7:x})}]{${3:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -709,7 +419,17 @@
 		"prefix":"psNewton",
 		"body":[
 			"\\psNewton{${1:x0}}{${2:f(${5:x})}}[${4:f'(${6:x})}]{${3:n}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psNewton{}{}{}":{
+		"prefix":"psNewton",
+		"body":[
+			"\\psNewton{${1:x0}}{${2:f(${4:x})}}{${3:n}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -717,7 +437,8 @@
 		"prefix":"psparametricplot",
 		"body":[
 			"\\psparametricplot[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}[${5:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -725,7 +446,8 @@
 		"prefix":"psparametricplot",
 		"body":[
 			"\\psparametricplot[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -733,7 +455,53 @@
 		"prefix":"psparametricplot",
 		"body":[
 			"\\psparametricplot{${1:tmin}}{${2:tmax}}[${4:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psparametricplot{}{}{}":{
+		"prefix":"psparametricplot",
+		"body":[
+			"\\psparametricplot{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPi":{
+		"prefix":"psPi",
+		"body":[
+			"\\psPi"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPiFour":{
+		"prefix":"psPiFour",
+		"body":[
+			"\\psPiFour"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPiH":{
+		"prefix":"psPiH",
+		"body":[
+			"\\psPiH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPiTwo":{
+		"prefix":"psPiTwo",
+		"body":[
+			"\\psPiTwo"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -741,7 +509,8 @@
 		"prefix":"psplot",
 		"body":[
 			"\\psplot[${4:options%keyvals}]{${1:xmin}}{${2:xmax}}[${5:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -749,7 +518,8 @@
 		"prefix":"psplot",
 		"body":[
 			"\\psplot[${4:options%keyvals}]{${1:xmin}}{${2:xmax}}{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -757,7 +527,53 @@
 		"prefix":"psplot",
 		"body":[
 			"\\psplot{${1:xmin}}{${2:xmax}}[${4:PS commands}]{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psplot{}{}{}":{
+		"prefix":"psplot",
+		"body":[
+			"\\psplot{${1:xmin}}{${2:xmax}}{${3:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psplotinit{}":{
+		"prefix":"psplotinit",
+		"body":[
+			"\\psplotinit{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psplotstyle":{
+		"prefix":"psplotstyle",
+		"body":[
+			"\\psplotstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPutXLabel{}":{
+		"prefix":"psPutXLabel",
+		"body":[
+			"\\psPutXLabel{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psPutYLabel{}":{
+		"prefix":"psPutYLabel",
+		"body":[
+			"\\psPutYLabel{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +581,107 @@
 		"prefix":"psreadDataColumn",
 		"body":[
 			"\\psreadDataColumn[${5:options%keyvals}]{${1:colNo}}{${2:delim}}{${3:macro%cmd}}{${4:file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psreadDataColumn{}{}{}{}":{
+		"prefix":"psreadDataColumn",
+		"body":[
+			"\\psreadDataColumn{${1:colNo}}{${2:delim}}{${3:macro%cmd}}{${4:file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psResetPlotValues":{
+		"prefix":"psResetPlotValues",
+		"body":[
+			"\\psResetPlotValues"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psrotatebox{}{}":{
+		"prefix":"psrotatebox",
+		"body":[
+			"\\psrotatebox{${1:angle}}{${2:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstRadUnit":{
+		"prefix":"pstRadUnit",
+		"body":[
+			"\\pstRadUnit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstRadUnitInv":{
+		"prefix":"pstRadUnitInv",
+		"body":[
+			"\\pstRadUnitInv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstScalePoints(){}{}":{
+		"prefix":"pstScalePoints",
+		"body":[
+			"\\pstScalePoints(${3:xscale},${4:yscale}){${1:xPS}}{${2:yPS}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstXPSScale":{
+		"prefix":"pstXPSScale",
+		"body":[
+			"\\pstXPSScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstXScale":{
+		"prefix":"pstXScale",
+		"body":[
+			"\\pstXScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstYPSScale":{
+		"prefix":"pstYPSScale",
+		"body":[
+			"\\pstYPSScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstYScale":{
+		"prefix":"pstYScale",
+		"body":[
+			"\\pstYScale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psVectorfield()(){}":{
+		"prefix":"psVectorfield",
+		"body":[
+			"\\psVectorfield(${2:%<x0},${3:y0%>})(${4:%<x1},${5:y1%>}){${1:f'(${6:x},${7:y})}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -773,7 +689,44 @@
 		"prefix":"psVectorfield",
 		"body":[
 			"\\psVectorfield[${2:options}](${3:%<x0},${4:y0%>})(${5:%<x1},${6:y1%>}){${1:f'(${7:x},${8:y})}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psvlabel":{
+		"prefix":"psvlabel",
+		"body":[
+			"\\psvlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psxlabelsep":{
+		"prefix":"psxlabelsep",
+		"body":[
+			"\\psxlabelsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psxsubticklinestyle":{
+		"prefix":"psxsubticklinestyle",
+		"body":[
+			"\\psxsubticklinestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psxTick(){}":{
+		"prefix":"psxTick",
+		"body":[
+			"\\psxTick(${2:x value}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +734,8 @@
 		"prefix":"psxTick",
 		"body":[
 			"\\psxTick[${2:options%keyvals}](${3:x value}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -789,7 +743,53 @@
 		"prefix":"psxTick",
 		"body":[
 			"\\psxTick[${3:options%keyvals}]{${1:rotation}}(${4:x value}){${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psxTick{}(){}":{
+		"prefix":"psxTick",
+		"body":[
+			"\\psxTick{${1:rotation}}(${3:x value}){${2:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psxticklinestyle":{
+		"prefix":"psxticklinestyle",
+		"body":[
+			"\\psxticklinestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psylabelsep":{
+		"prefix":"psylabelsep",
+		"body":[
+			"\\psylabelsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psysubticklinestyle":{
+		"prefix":"psysubticklinestyle",
+		"body":[
+			"\\psysubticklinestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psyTick(){}":{
+		"prefix":"psyTick",
+		"body":[
+			"\\psyTick(${2:y value}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +797,8 @@
 		"prefix":"psyTick",
 		"body":[
 			"\\psyTick[${2:options%keyvals}](${3:y value}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -805,7 +806,35 @@
 		"prefix":"psyTick",
 		"body":[
 			"\\psyTick[${3:options%keyvals}]{${1:rotation}}(${4:y value}){${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psyTick{}(){}":{
+		"prefix":"psyTick",
+		"body":[
+			"\\psyTick{${1:rotation}}(${3:y value}){${2:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psyticklinestyle":{
+		"prefix":"psyticklinestyle",
+		"body":[
+			"\\psyticklinestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"readdata{}{}":{
+		"prefix":"readdata",
+		"body":[
+			"\\readdata{${1:macro%cmd}}{${2:file%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -813,7 +842,8 @@
 		"prefix":"readdata",
 		"body":[
 			"\\readdata[${3:options%keyvals}]{${1:macro%cmd}}{${2:file%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -821,86 +851,167 @@
 		"prefix":"savedata",
 		"body":[
 			"\\savedata{${1:macro%cmd}}[${2:data}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"psgraph":{
+	"setDefaulthLabels":{
+		"prefix":"setDefaulthLabels",
+		"body":[
+			"\\setDefaulthLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setDefaultvLabels":{
+		"prefix":"setDefaultvLabels",
+		"body":[
+			"\\setDefaultvLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setFractionhLabels":{
+		"prefix":"setFractionhLabels",
+		"body":[
+			"\\setFractionhLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setFractionvLabels":{
+		"prefix":"setFractionvLabels",
+		"body":[
+			"\\setFractionvLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setTrighLabels":{
+		"prefix":"setTrighLabels",
+		"body":[
+			"\\setTrighLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setTrigvLabels":{
+		"prefix":"setTrigvLabels",
+		"body":[
+			"\\setTrigvLabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialLabelsDonefalse":{
+		"prefix":"SpecialLabelsDonefalse",
+		"body":[
+			"\\SpecialLabelsDonefalse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialLabelsDonetrue":{
+		"prefix":"SpecialLabelsDonetrue",
+		"body":[
+			"\\SpecialLabelsDonetrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psgraph()()(){}{}":{
 		"prefix":"psgraph",
 		"body":[
 			"\\begin{psgraph}",
-				"\t$1",
+				"\t(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:xlength%l}}{${2:ylength%l}}",
 			"\\end{psgraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"psgraph":{
+	"psgraph[]()()(){}{}":{
 		"prefix":"psgraph",
 		"body":[
 			"\\begin{psgraph}",
-				"\t$1",
+				"\t[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${1:xlength%l}}{${2:ylength%l}}",
 			"\\end{psgraph}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"psgraph*":{
-		"prefix":"psgraph",
-		"body":[
-			"\\begin{psgraph*}",
-				"\t$1",
-			"\\end{psgraph*}"
-		]
-	},
-
-
-	"psgraph*":{
-		"prefix":"psgraph",
-		"body":[
-			"\\begin{psgraph*}",
-				"\t$1",
-			"\\end{psgraph*}"
-		]
-	},
-
-
-	"psgraph":{
+	"psgraph[]{}()()(){}{}":{
 		"prefix":"psgraph",
 		"body":[
 			"\\begin{psgraph}",
-				"\t$1",
+				"\t[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2}){${2:xlength%l}}{${3:ylength%l}}",
 			"\\end{psgraph}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"psgraph":{
+	"psgraph{}()()(){}{}":{
 		"prefix":"psgraph",
 		"body":[
 			"\\begin{psgraph}",
-				"\t$1",
+				"\t{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${2:xlength%l}}{${3:ylength%l}}",
 			"\\end{psgraph}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"psgraph*":{
-		"prefix":"psgraph",
+	"psgraph*()()(){}{}":{
+		"prefix":"*psgraph",
 		"body":[
 			"\\begin{psgraph*}",
-				"\t$1",
+				"\t(${3:x0},${4:y0})(${5:x1},${6:y1})(${7:x2},${8:y2}){${1:xlength%l}}{${2:ylength%l}}",
 			"\\end{psgraph*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"psgraph*":{
-		"prefix":"psgraph",
+	"psgraph*[]()()(){}{}":{
+		"prefix":"*psgraph",
 		"body":[
 			"\\begin{psgraph*}",
-				"\t$1",
+				"\t[${3:options%keyvals}](${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${1:xlength%l}}{${2:ylength%l}}",
 			"\\end{psgraph*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psgraph*[]{}()()(){}{}":{
+		"prefix":"*psgraph",
+		"body":[
+			"\\begin{psgraph*}",
+				"\t[${4:options%keyvals}]{${1:arrows}}(${5:x0},${6:y0})(${7:x1},${8:y1})(${9:x2},${10:y2}){${2:xlength%l}}{${3:ylength%l}}",
+			"\\end{psgraph*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psgraph*{}()()(){}{}":{
+		"prefix":"*psgraph",
+		"body":[
+			"\\begin{psgraph*}",
+				"\t{${1:arrows}}(${4:x0},${5:y0})(${6:x1},${7:y1})(${8:x2},${9:y2}){${2:xlength%l}}{${3:ylength%l}}",
+			"\\end{psgraph*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"lyluatex",
 		"body":[
 			"\\lyluatex"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"lyFilename",
 		"body":[
 			"\\lyFilename{${1:filename}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"lyIntertext",
 		"body":[
 			"\\lyIntertext{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"lyVersion",
 		"body":[
 			"\\lyVersion{${1:version}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,87 +41,8 @@
 		"prefix":"includely",
 		"body":[
 			"\\includely{${1:file}}"
-		]
-	},
-
-
-	"musicxmlfile{}":{
-		"prefix":"musicxmlfile",
-		"body":[
-			"\\musicxmlfile{${1:file}}"
-		]
-	},
-
-
-	"lyscorebegin":{
-		"prefix":"lyscorebegin",
-		"body":[
-			"\\lyscorebegin"
-		]
-	},
-
-
-	"lyscoreend":{
-		"prefix":"lyscoreend",
-		"body":[
-			"\\lyscoreend"
-		]
-	},
-
-
-	"lysetverbenv{}{}":{
-		"prefix":"lysetverbenv",
-		"body":[
-			"\\lysetverbenv{${1:begdef}}{${2:enddef}}"
-		]
-	},
-
-
-	"lyenv{}":{
-		"prefix":"lyenv",
-		"body":[
-			"\\lyenv{${1:envname}}"
-		]
-	},
-
-
-	"lynewenvironment{}{}{}":{
-		"prefix":"lynewenvironment",
-		"body":[
-			"\\lynewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
-		]
-	},
-
-
-	"lily{}":{
-		"prefix":"lily",
-		"body":[
-			"\\lily{${1:score}}"
-		]
-	},
-
-
-	"lyscore{}":{
-		"prefix":"lyscore",
-		"body":[
-			"\\lyscore{${1:option%keyvals}}"
-		]
-	},
-
-
-	"lilypondfile{}":{
-		"prefix":"lilypondfile",
-		"body":[
-			"\\lilypondfile{${1:file}}"
-		]
-	},
-
-
-	"lilypond{}":{
-		"prefix":"lilypond",
-		"body":[
-			"\\lilypond{${1:score}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +50,17 @@
 		"prefix":"includely",
 		"body":[
 			"\\includely[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"musicxmlfile{}":{
+		"prefix":"musicxmlfile",
+		"body":[
+			"\\musicxmlfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +68,53 @@
 		"prefix":"musicxmlfile",
 		"body":[
 			"\\musicxmlfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lyscorebegin":{
+		"prefix":"lyscorebegin",
+		"body":[
+			"\\lyscorebegin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lyscoreend":{
+		"prefix":"lyscoreend",
+		"body":[
+			"\\lyscoreend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lysetverbenv{}{}":{
+		"prefix":"lysetverbenv",
+		"body":[
+			"\\lysetverbenv{${1:begdef}}{${2:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lyenv{}":{
+		"prefix":"lyenv",
+		"body":[
+			"\\lyenv{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lynewenvironment{}{}{}":{
+		"prefix":"lynewenvironment",
+		"body":[
+			"\\lynewenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +122,8 @@
 		"prefix":"lynewenvironment",
 		"body":[
 			"\\lynewenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +131,17 @@
 		"prefix":"lynewenvironment",
 		"body":[
 			"\\lynewenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lily{}":{
+		"prefix":"lily",
+		"body":[
+			"\\lily{${1:score}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +149,26 @@
 		"prefix":"lily",
 		"body":[
 			"\\lily[${2:options%keyvals}]{${1:score}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lyscore{}":{
+		"prefix":"lyscore",
+		"body":[
+			"\\lyscore{${1:option%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lilypondfile{}":{
+		"prefix":"lilypondfile",
+		"body":[
+			"\\lilypondfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +176,17 @@
 		"prefix":"lilypondfile",
 		"body":[
 			"\\lilypondfile[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lilypond{}":{
+		"prefix":"lilypond",
+		"body":[
+			"\\lilypond{${1:score}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,17 +194,19 @@
 		"prefix":"lilypond",
 		"body":[
 			"\\lilypond[${2:options%keyvals}]{${1:score}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"lysavefrag":{
+	"lysavefrag{}":{
 		"prefix":"lysavefrag",
 		"body":[
 			"\\begin{lysavefrag}",
-				"\t$1",
+				"\t{${1:filename%file}}",
 			"\\end{lysavefrag}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -193,27 +216,19 @@
 			"\\begin{ly}",
 				"\t$1",
 			"\\end{ly}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"lilypond":{
-		"prefix":"lilypond",
-		"body":[
-			"\\begin{lilypond}",
-				"\t$1",
-			"\\end{lilypond}"
-		]
-	},
-
-
-	"ly":{
+	"ly[]":{
 		"prefix":"ly",
 		"body":[
 			"\\begin{ly}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{ly}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -223,6 +238,18 @@
 			"\\begin{lilypond}",
 				"\t$1",
 			"\\end{lilypond}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lilypond[]":{
+		"prefix":"lilypond",
+		"body":[
+			"\\begin{lilypond}",
+				"\t[${1:options%keyvals}]",
+			"\\end{lilypond}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,143 +5,8 @@
 		"prefix":"tkzTabInit",
 		"body":[
 			"\\tkzTabInit{${1:expr1/height1,expr2/height2,...}}{${2:expr1,expr2,...}}"
-		]
-	},
-
-
-	"tkzTab{}{}{}{}":{
-		"prefix":"tkzTab",
-		"body":[
-			"\\tkzTab{${1:list1}}{${2:list2}}{${3:list3%formula}}{${4:list4}}"
-		]
-	},
-
-
-	"tkzTabLine{}":{
-		"prefix":"tkzTabLine",
-		"body":[
-			"\\tkzTabLine{${1:symbol1,symbol2,...%formula}}"
-		]
-	},
-
-
-	"tkzTabVar{}":{
-		"prefix":"tkzTabVar",
-		"body":[
-			"\\tkzTabVar{${1:symbol1/expr,symbol2/expr1/expr2,...}}"
-		]
-	},
-
-
-	"tkzTabVal{}{}{}{}{}":{
-		"prefix":"tkzTabVal",
-		"body":[
-			"\\tkzTabVal{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
-		]
-	},
-
-
-	"tkzTabIma{}{}{}{}{}":{
-		"prefix":"tkzTabIma",
-		"body":[
-			"\\tkzTabIma{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
-		]
-	},
-
-
-	"tkzTabImaFrom{}{}{}{}":{
-		"prefix":"tkzTabImaFrom",
-		"body":[
-			"\\tkzTabImaFrom{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
-	},
-
-
-	"tkzTabTan{}{}{}{}":{
-		"prefix":"tkzTabTan",
-		"body":[
-			"\\tkzTabTan{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
-	},
-
-
-	"tkzTabTanFrom{}{}{}{}":{
-		"prefix":"tkzTabTanFrom",
-		"body":[
-			"\\tkzTabTanFrom{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
-	},
-
-
-	"tkzTabSlope{}":{
-		"prefix":"tkzTabSlope",
-		"body":[
-			"\\tkzTabSlope{${1:num1/leftexpr1/rightexpr1,num2/leftexpr2/rightexpr3,...}}"
-		]
-	},
-
-
-	"tkzTabSetup":{
-		"prefix":"tkzTabSetup",
-		"body":[
-			"\\tkzTabSetup"
-		]
-	},
-
-
-	"stripspaces{}":{
-		"prefix":"stripspaces",
-		"body":[
-			"\\stripspaces{${1:arg}}"
-		]
-	},
-
-
-	"tkzDrawArrow":{
-		"prefix":"tkzDrawArrow",
-		"body":[
-			"\\tkzDrawArrow"
-		]
-	},
-
-
-	"tkzTabDefaultArrowStyle":{
-		"prefix":"tkzTabDefaultArrowStyle",
-		"body":[
-			"\\tkzTabDefaultArrowStyle"
-		]
-	},
-
-
-	"tkzTabDefaultBackgroundColor":{
-		"prefix":"tkzTabDefaultBackgroundColor",
-		"body":[
-			"\\tkzTabDefaultBackgroundColor"
-		]
-	},
-
-
-	"tkzTabDefaultLineWidth":{
-		"prefix":"tkzTabDefaultLineWidth",
-		"body":[
-			"\\tkzTabDefaultLineWidth"
-		]
-	},
-
-
-	"tkzTabDefaultSep":{
-		"prefix":"tkzTabDefaultSep",
-		"body":[
-			"\\tkzTabDefaultSep"
-		]
-	},
-
-
-	"tkzTabDefaultWritingColor":{
-		"prefix":"tkzTabDefaultWritingColor",
-		"body":[
-			"\\tkzTabDefaultWritingColor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,17 @@
 		"prefix":"tkzTabInit",
 		"body":[
 			"\\tkzTabInit[${3:options%keyvals}]{${1:expr1/height1,expr2/height2,...}}{${2:expr1,expr2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTab{}{}{}{}":{
+		"prefix":"tkzTab",
+		"body":[
+			"\\tkzTab{${1:list1}}{${2:list2}}{${3:list3%formula}}{${4:list4}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +32,17 @@
 		"prefix":"tkzTab",
 		"body":[
 			"\\tkzTab[${5:options%keyvals}]{${1:list1}}{${2:list2}}{${3:list3%formula}}{${4:list4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabLine{}":{
+		"prefix":"tkzTabLine",
+		"body":[
+			"\\tkzTabLine{${1:symbol1,symbol2,...%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +50,17 @@
 		"prefix":"tkzTabLine",
 		"body":[
 			"\\tkzTabLine[${2:options%keyvals}]{${1:symbol1,symbol2,...%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabVar{}":{
+		"prefix":"tkzTabVar",
+		"body":[
+			"\\tkzTabVar{${1:symbol1/expr,symbol2/expr1/expr2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +68,17 @@
 		"prefix":"tkzTabVar",
 		"body":[
 			"\\tkzTabVar[${2:options%keyvals}]{${1:symbol1/expr,symbol2/expr1/expr2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabVal{}{}{}{}{}":{
+		"prefix":"tkzTabVal",
+		"body":[
+			"\\tkzTabVal{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +86,17 @@
 		"prefix":"tkzTabVal",
 		"body":[
 			"\\tkzTabVal[${6:options%keyvals}]{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabIma{}{}{}{}{}":{
+		"prefix":"tkzTabIma",
+		"body":[
+			"\\tkzTabIma{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +104,17 @@
 		"prefix":"tkzTabIma",
 		"body":[
 			"\\tkzTabIma[${6:options%keyvals}]{${1:start}}{${2:finish}}{${3:position}}{${4:antecedent}}{${5:image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabImaFrom{}{}{}{}":{
+		"prefix":"tkzTabImaFrom",
+		"body":[
+			"\\tkzTabImaFrom{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +122,17 @@
 		"prefix":"tkzTabImaFrom",
 		"body":[
 			"\\tkzTabImaFrom[${5:options%keyvals}]{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabTan{}{}{}{}":{
+		"prefix":"tkzTabTan",
+		"body":[
+			"\\tkzTabTan{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +140,17 @@
 		"prefix":"tkzTabTan",
 		"body":[
 			"\\tkzTabTan[${5:options%keyvals}]{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabTanFrom{}{}{}{}":{
+		"prefix":"tkzTabTanFrom",
+		"body":[
+			"\\tkzTabTanFrom{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +158,26 @@
 		"prefix":"tkzTabTanFrom",
 		"body":[
 			"\\tkzTabTanFrom[${5:options%keyvals}]{${1:start}}{${2:finish}}{${3:antecedent}}{${4:image}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tkzTabSlope{}":{
+		"prefix":"tkzTabSlope",
+		"body":[
+			"\\tkzTabSlope{${1:num1/leftexpr1/rightexpr1,num2/leftexpr2/rightexpr3,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabSetup":{
+		"prefix":"tkzTabSetup",
+		"body":[
+			"\\tkzTabSetup"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +185,8 @@
 		"prefix":"tkzTabSetup",
 		"body":[
 			"\\tkzTabSetup[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,6 +194,70 @@
 		"prefix":"tkzTabColors",
 		"body":[
 			"\\tkzTabColors[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stripspaces{}":{
+		"prefix":"stripspaces",
+		"body":[
+			"\\stripspaces{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzDrawArrow":{
+		"prefix":"tkzDrawArrow",
+		"body":[
+			"\\tkzDrawArrow"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabDefaultArrowStyle":{
+		"prefix":"tkzTabDefaultArrowStyle",
+		"body":[
+			"\\tkzTabDefaultArrowStyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabDefaultBackgroundColor":{
+		"prefix":"tkzTabDefaultBackgroundColor",
+		"body":[
+			"\\tkzTabDefaultBackgroundColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabDefaultLineWidth":{
+		"prefix":"tkzTabDefaultLineWidth",
+		"body":[
+			"\\tkzTabDefaultLineWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabDefaultSep":{
+		"prefix":"tkzTabDefaultSep",
+		"body":[
+			"\\tkzTabDefaultSep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tkzTabDefaultWritingColor":{
+		"prefix":"tkzTabDefaultWritingColor",
+		"body":[
+			"\\tkzTabDefaultWritingColor"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"opencutleft",
 		"body":[
 			"\\opencutleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"opencutright",
 		"body":[
 			"\\opencutright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"opencutcenter",
 		"body":[
 			"\\opencutcenter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"cutfuzz",
 		"body":[
 			"\\cutfuzz"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"pageinwindow",
 		"body":[
 			"\\pageinwindow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"windowpagestuff",
 		"body":[
 			"\\windowpagestuff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"picinwindow",
 		"body":[
 			"\\picinwindow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,26 +68,29 @@
 		"prefix":"putstuffinpic",
 		"body":[
 			"\\putstuffinpic"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"cutout":{
+	"cutout{}{}{}{}":{
 		"prefix":"cutout",
 		"body":[
 			"\\begin{cutout}",
-				"\t$1",
+				"\t{${1:num top}}{${2:left width}}{${3:right width}}{${4:num cut}}",
 			"\\end{cutout}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"shapedcutout":{
+	"shapedcutout{}{}{}":{
 		"prefix":"shapedcutout",
 		"body":[
 			"\\begin{shapedcutout}",
-				"\t$1",
+				"\t{${1:num top}}{${2:num cut}}{${3:shape sec}}",
 			"\\end{shapedcutout}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

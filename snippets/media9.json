@@ -5,23 +5,8 @@
 		"prefix":"includemedia",
 		"body":[
 			"\\includemedia{${1:poster text%text}}{${2:file or URL%file}}"
-		]
-	},
-
-
-	"addmediapath{}":{
-		"prefix":"addmediapath",
-		"body":[
-			"\\addmediapath{${1:directory}}"
-		]
-	},
-
-
-	"mediabutton{}":{
-		"prefix":"mediabutton",
-		"body":[
-			"\\mediabutton{${1:button text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"includemedia",
 		"body":[
 			"\\includemedia[${3:options%keyvals}]{${1:poster text%text}}{${2:file or URL%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addmediapath{}":{
+		"prefix":"addmediapath",
+		"body":[
+			"\\addmediapath{${1:directory}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mediabutton{}":{
+		"prefix":"mediabutton",
+		"body":[
+			"\\mediabutton{${1:button text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +41,7 @@
 		"prefix":"mediabutton",
 		"body":[
 			"\\mediabutton[${2:options%keyvals}]{${1:button text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

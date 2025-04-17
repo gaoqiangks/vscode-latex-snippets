@@ -5,743 +5,8 @@
 		"prefix":"wire",
 		"body":[
 			"\\wire(${1:A})(${2:B})"
-		]
-	},
-
-
-	"tension()(){}":{
-		"prefix":"tension",
-		"body":[
-			"\\tension(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"ground()":{
-		"prefix":"ground",
-		"body":[
-			"\\ground(${1:A})"
-		]
-	},
-
-
-	"ground{}()":{
-		"prefix":"ground",
-		"body":[
-			"\\ground{${1:angle}}(${2:A})"
-		]
-	},
-
-
-	"resistor()(){}":{
-		"prefix":"resistor",
-		"body":[
-			"\\resistor(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"RFLine()(){}":{
-		"prefix":"RFLine",
-		"body":[
-			"\\RFLine(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"capacitor()(){}":{
-		"prefix":"capacitor",
-		"body":[
-			"\\capacitor(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"battery()(){}":{
-		"prefix":"battery",
-		"body":[
-			"\\battery(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"coil()(){}":{
-		"prefix":"coil",
-		"body":[
-			"\\coil(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"Ucc()(){}":{
-		"prefix":"Ucc",
-		"body":[
-			"\\Ucc(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"Icc()(){}":{
-		"prefix":"Icc",
-		"body":[
-			"\\Icc(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"switch()(){}":{
-		"prefix":"switch",
-		"body":[
-			"\\switch(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"arrowswitch()(){}":{
-		"prefix":"arrowswitch",
-		"body":[
-			"\\arrowswitch(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"diode()(){}":{
-		"prefix":"diode",
-		"body":[
-			"\\diode(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"Zener()(){}":{
-		"prefix":"Zener",
-		"body":[
-			"\\Zener(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"lamp()(){}":{
-		"prefix":"lamp",
-		"body":[
-			"\\lamp(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"circledipole()(){}":{
-		"prefix":"circledipole",
-		"body":[
-			"\\circledipole(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"LED()(){}":{
-		"prefix":"LED",
-		"body":[
-			"\\LED(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"SQUID()(){}":{
-		"prefix":"SQUID",
-		"body":[
-			"\\SQUID(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"RelayNOP()(){}":{
-		"prefix":"RelayNOP",
-		"body":[
-			"\\RelayNOP(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"Suppressor()(){}":{
-		"prefix":"Suppressor",
-		"body":[
-			"\\Suppressor(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"Arrestor()(){}":{
-		"prefix":"Arrestor",
-		"body":[
-			"\\Arrestor(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"cell()(){}":{
-		"prefix":"cell",
-		"body":[
-			"\\cell(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"igbt()(){}":{
-		"prefix":"igbt",
-		"body":[
-			"\\igbt(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"OA()()()":{
-		"prefix":"OA",
-		"body":[
-			"\\OA(${1:A})(${2:B})(${3:C})"
-		]
-	},
-
-
-	"GM()()()":{
-		"prefix":"GM",
-		"body":[
-			"\\GM(${1:A})(${2:B})(${3:C})"
-		]
-	},
-
-
-	"Tswitch()()()":{
-		"prefix":"Tswitch",
-		"body":[
-			"\\Tswitch(${1:A})(${2:B})(${3:C})"
-		]
-	},
-
-
-	"potentiometer()()()":{
-		"prefix":"potentiometer",
-		"body":[
-			"\\potentiometer(${1:A})(${2:B})(${3:C})"
-		]
-	},
-
-
-	"transistor()()()":{
-		"prefix":"transistor",
-		"body":[
-			"\\transistor(${1:A})(${2:B})(${3:C})"
-		]
-	},
-
-
-	"quadripole()()()(){}":{
-		"prefix":"quadripole",
-		"body":[
-			"\\quadripole(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
-		]
-	},
-
-
-	"transformer()()()(){}":{
-		"prefix":"transformer",
-		"body":[
-			"\\transformer(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
-		]
-	},
-
-
-	"newtransformer()()()(){}":{
-		"prefix":"newtransformer",
-		"body":[
-			"\\newtransformer(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
-		]
-	},
-
-
-	"newtransformerquad()()()(){}":{
-		"prefix":"newtransformerquad",
-		"body":[
-			"\\newtransformerquad(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
-		]
-	},
-
-
-	"optoCoupler()()()(){}":{
-		"prefix":"optoCoupler",
-		"body":[
-			"\\optoCoupler(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
-		]
-	},
-
-
-	"multidipole()()":{
-		"prefix":"multidipole",
-		"body":[
-			"\\multidipole(${1:A})(${2:B})"
-		]
-	},
-
-
-	"OpenDipol()(){}":{
-		"prefix":"OpenDipol",
-		"body":[
-			"\\OpenDipol(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"OpenTripol()(){}":{
-		"prefix":"OpenTripol",
-		"body":[
-			"\\OpenTripol(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"dashpot()(){}":{
-		"prefix":"dashpot",
-		"body":[
-			"\\dashpot(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newground()":{
-		"prefix":"newground",
-		"body":[
-			"\\newground(${1:A})"
-		]
-	},
-
-
-	"newground{}()":{
-		"prefix":"newground",
-		"body":[
-			"\\newground{${1:angle}}(${2:A})"
-		]
-	},
-
-
-	"newdiode()(){}":{
-		"prefix":"newdiode",
-		"body":[
-			"\\newdiode(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newZener()(){}":{
-		"prefix":"newZener",
-		"body":[
-			"\\newZener(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newLED()(){}":{
-		"prefix":"newLED",
-		"body":[
-			"\\newLED(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newSwitch()(){}":{
-		"prefix":"newSwitch",
-		"body":[
-			"\\newSwitch(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newcapacitor()(){}":{
-		"prefix":"newcapacitor",
-		"body":[
-			"\\newcapacitor(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"newarmature()(){}":{
-		"prefix":"newarmature",
-		"body":[
-			"\\newarmature(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"vdc()(){}":{
-		"prefix":"vdc",
-		"body":[
-			"\\vdc(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"vac()(){}":{
-		"prefix":"vac",
-		"body":[
-			"\\vac(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"antenna()":{
-		"prefix":"antenna",
-		"body":[
-			"\\antenna(${1:A})"
-		]
-	},
-
-
-	"antenna{}()":{
-		"prefix":"antenna",
-		"body":[
-			"\\antenna{${1:angle}}(${2:A})"
-		]
-	},
-
-
-	"oscillator(){}{}":{
-		"prefix":"oscillator",
-		"body":[
-			"\\oscillator(${3:A}){${1:label}}{${2:pstricks options}}"
-		]
-	},
-
-
-	"filter()(){}":{
-		"prefix":"filter",
-		"body":[
-			"\\filter(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"isolator()(){}":{
-		"prefix":"isolator",
-		"body":[
-			"\\isolator(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"freqmult()(){}":{
-		"prefix":"freqmult",
-		"body":[
-			"\\freqmult(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"phaseshifter()(){}":{
-		"prefix":"phaseshifter",
-		"body":[
-			"\\phaseshifter(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"vco()(){}":{
-		"prefix":"vco",
-		"body":[
-			"\\vco(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"amplifier()(){}":{
-		"prefix":"amplifier",
-		"body":[
-			"\\amplifier(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"detector()(){}":{
-		"prefix":"detector",
-		"body":[
-			"\\detector(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"attenuator()(){}":{
-		"prefix":"attenuator",
-		"body":[
-			"\\attenuator(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"mixer()()(){}{}":{
-		"prefix":"mixer",
-		"body":[
-			"\\mixer(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
-		]
-	},
-
-
-	"splitter()()(){}{}":{
-		"prefix":"splitter",
-		"body":[
-			"\\splitter(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
-		]
-	},
-
-
-	"circulator{}()()(){}{}":{
-		"prefix":"circulator",
-		"body":[
-			"\\circulator{${1:angle}}(${4:A})(${5:B})(${6:C}){${2:label}}{${3:pstricks options}}"
-		]
-	},
-
-
-	"agc()()(){}{}":{
-		"prefix":"agc",
-		"body":[
-			"\\agc(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
-		]
-	},
-
-
-	"coupler()()()(){}{}":{
-		"prefix":"coupler",
-		"body":[
-			"\\coupler(${3:A})(${4:B})(${5:C})(${6:D}){${1:label}}{${2:pstricks options}}"
-		]
-	},
-
-
-	"logic{}":{
-		"prefix":"logic",
-		"body":[
-			"\\logic{${1:label}}"
-		]
-	},
-
-
-	"logic(){}":{
-		"prefix":"logic",
-		"body":[
-			"\\logic(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicnot(){}":{
-		"prefix":"logicnot",
-		"body":[
-			"\\logicnot(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicand(){}":{
-		"prefix":"logicand",
-		"body":[
-			"\\logicand(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicor(){}":{
-		"prefix":"logicor",
-		"body":[
-			"\\logicor(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicxor(){}":{
-		"prefix":"logicxor",
-		"body":[
-			"\\logicxor(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicff(){}":{
-		"prefix":"logicff",
-		"body":[
-			"\\logicff(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"logicic(){}":{
-		"prefix":"logicic",
-		"body":[
-			"\\logicic(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"sevensegmentdisplay(){}":{
-		"prefix":"sevensegmentdisplay",
-		"body":[
-			"\\sevensegmentdisplay(${2:x},${3:y}){${1:label}}"
-		]
-	},
-
-
-	"xic()":{
-		"prefix":"xic",
-		"body":[
-			"\\xic(${1:x},${2:y})"
-		]
-	},
-
-
-	"xio()":{
-		"prefix":"xio",
-		"body":[
-			"\\xio(${1:x},${2:y})"
-		]
-	},
-
-
-	"ote()":{
-		"prefix":"ote",
-		"body":[
-			"\\ote(${1:x},${2:y})"
-		]
-	},
-
-
-	"osr()":{
-		"prefix":"osr",
-		"body":[
-			"\\osr(${1:x},${2:y})"
-		]
-	},
-
-
-	"res()":{
-		"prefix":"res",
-		"body":[
-			"\\res(${1:x},${2:y})"
-		]
-	},
-
-
-	"swpb()":{
-		"prefix":"swpb",
-		"body":[
-			"\\swpb(${1:x},${2:y})"
-		]
-	},
-
-
-	"swtog()":{
-		"prefix":"swtog",
-		"body":[
-			"\\swtog(${1:x},${2:y})"
-		]
-	},
-
-
-	"contact()":{
-		"prefix":"contact",
-		"body":[
-			"\\contact(${1:x},${2:y})"
-		]
-	},
-
-
-	"armature()":{
-		"prefix":"armature",
-		"body":[
-			"\\armature(${1:x},${2:y})"
-		]
-	},
-
-
-	"newCircDipole{}":{
-		"prefix":"newCircDipole",
-		"body":[
-			"\\newCircDipole{${1:name}}"
-		]
-	},
-
-
-	"icheight":{
-		"prefix":"icheight",
-		"body":[
-			"\\icheight"
-		]
-	},
-
-
-	"icwidth":{
-		"prefix":"icwidth",
-		"body":[
-			"\\icwidth"
-		]
-	},
-
-
-	"icleft":{
-		"prefix":"icleft",
-		"body":[
-			"\\icleft"
-		]
-	},
-
-
-	"icmid":{
-		"prefix":"icmid",
-		"body":[
-			"\\icmid"
-		]
-	},
-
-
-	"icright":{
-		"prefix":"icright",
-		"body":[
-			"\\icright"
-		]
-	},
-
-
-	"node()":{
-		"prefix":"node",
-		"body":[
-			"\\node(${1:x},${2:y})"
-		]
-	},
-
-
-	"modulator()(){}":{
-		"prefix":"modulator",
-		"body":[
-			"\\modulator(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"plug{}()":{
-		"prefix":"plug",
-		"body":[
-			"\\plug{${1:angle}}(${2:A})"
-		]
-	},
-
-
-	"ampsinu()(){}":{
-		"prefix":"ampsinu",
-		"body":[
-			"\\ampsinu(${2:A})(${3:B}){${1:label}}"
-		]
-	},
-
-
-	"powermeter()()(){}":{
-		"prefix":"powermeter",
-		"body":[
-			"\\powermeter(${2:A})(${3:B})(${4:C}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -749,7 +14,17 @@
 		"prefix":"wire",
 		"body":[
 			"\\wire[${1:options%keyvals}](${2:A})(${3:B})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tension()(){}":{
+		"prefix":"tension",
+		"body":[
+			"\\tension(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -757,7 +32,26 @@
 		"prefix":"tension",
 		"body":[
 			"\\tension[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ground()":{
+		"prefix":"ground",
+		"body":[
+			"\\ground(${1:A})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ground{}()":{
+		"prefix":"ground",
+		"body":[
+			"\\ground{${1:angle}}(${2:A})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +59,8 @@
 		"prefix":"ground",
 		"body":[
 			"\\ground[${1:options%keyvals}](${2:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -773,7 +68,17 @@
 		"prefix":"ground",
 		"body":[
 			"\\ground[${2:options%keyvals}]{${1:angle}}(${3:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"resistor()(){}":{
+		"prefix":"resistor",
+		"body":[
+			"\\resistor(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +86,17 @@
 		"prefix":"resistor",
 		"body":[
 			"\\resistor[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RFLine()(){}":{
+		"prefix":"RFLine",
+		"body":[
+			"\\RFLine(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -789,7 +104,17 @@
 		"prefix":"RFLine",
 		"body":[
 			"\\RFLine[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"capacitor()(){}":{
+		"prefix":"capacitor",
+		"body":[
+			"\\capacitor(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +122,17 @@
 		"prefix":"capacitor",
 		"body":[
 			"\\capacitor[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"battery()(){}":{
+		"prefix":"battery",
+		"body":[
+			"\\battery(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -805,7 +140,17 @@
 		"prefix":"battery",
 		"body":[
 			"\\battery[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"coil()(){}":{
+		"prefix":"coil",
+		"body":[
+			"\\coil(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -813,7 +158,17 @@
 		"prefix":"coil",
 		"body":[
 			"\\coil[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Ucc()(){}":{
+		"prefix":"Ucc",
+		"body":[
+			"\\Ucc(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -821,7 +176,17 @@
 		"prefix":"Ucc",
 		"body":[
 			"\\Ucc[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Icc()(){}":{
+		"prefix":"Icc",
+		"body":[
+			"\\Icc(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -829,7 +194,17 @@
 		"prefix":"Icc",
 		"body":[
 			"\\Icc[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"switch()(){}":{
+		"prefix":"switch",
+		"body":[
+			"\\switch(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -837,7 +212,17 @@
 		"prefix":"switch",
 		"body":[
 			"\\switch[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"arrowswitch()(){}":{
+		"prefix":"arrowswitch",
+		"body":[
+			"\\arrowswitch(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -845,7 +230,17 @@
 		"prefix":"arrowswitch",
 		"body":[
 			"\\arrowswitch[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"diode()(){}":{
+		"prefix":"diode",
+		"body":[
+			"\\diode(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -853,7 +248,17 @@
 		"prefix":"diode",
 		"body":[
 			"\\diode[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Zener()(){}":{
+		"prefix":"Zener",
+		"body":[
+			"\\Zener(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -861,7 +266,17 @@
 		"prefix":"Zener",
 		"body":[
 			"\\Zener[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lamp()(){}":{
+		"prefix":"lamp",
+		"body":[
+			"\\lamp(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -869,7 +284,17 @@
 		"prefix":"lamp",
 		"body":[
 			"\\lamp[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"circledipole()(){}":{
+		"prefix":"circledipole",
+		"body":[
+			"\\circledipole(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -877,7 +302,17 @@
 		"prefix":"circledipole",
 		"body":[
 			"\\circledipole[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LED()(){}":{
+		"prefix":"LED",
+		"body":[
+			"\\LED(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -885,7 +320,17 @@
 		"prefix":"LED",
 		"body":[
 			"\\LED[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SQUID()(){}":{
+		"prefix":"SQUID",
+		"body":[
+			"\\SQUID(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -893,7 +338,17 @@
 		"prefix":"SQUID",
 		"body":[
 			"\\SQUID[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RelayNOP()(){}":{
+		"prefix":"RelayNOP",
+		"body":[
+			"\\RelayNOP(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -901,7 +356,17 @@
 		"prefix":"RelayNOP",
 		"body":[
 			"\\RelayNOP[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Suppressor()(){}":{
+		"prefix":"Suppressor",
+		"body":[
+			"\\Suppressor(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -909,7 +374,17 @@
 		"prefix":"Suppressor",
 		"body":[
 			"\\Suppressor[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Arrestor()(){}":{
+		"prefix":"Arrestor",
+		"body":[
+			"\\Arrestor(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -917,7 +392,17 @@
 		"prefix":"Arrestor",
 		"body":[
 			"\\Arrestor[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cell()(){}":{
+		"prefix":"cell",
+		"body":[
+			"\\cell(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -925,7 +410,17 @@
 		"prefix":"cell",
 		"body":[
 			"\\cell[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"igbt()(){}":{
+		"prefix":"igbt",
+		"body":[
+			"\\igbt(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -933,7 +428,17 @@
 		"prefix":"igbt",
 		"body":[
 			"\\igbt[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"OA()()()":{
+		"prefix":"OA",
+		"body":[
+			"\\OA(${1:A})(${2:B})(${3:C})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -941,7 +446,17 @@
 		"prefix":"OA",
 		"body":[
 			"\\OA[${1:options%keyvals}](${2:A})(${3:B})(${4:C})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GM()()()":{
+		"prefix":"GM",
+		"body":[
+			"\\GM(${1:A})(${2:B})(${3:C})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -949,7 +464,17 @@
 		"prefix":"GM",
 		"body":[
 			"\\GM[${1:options%keyvals}](${2:A})(${3:B})(${4:C})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Tswitch()()()":{
+		"prefix":"Tswitch",
+		"body":[
+			"\\Tswitch(${1:A})(${2:B})(${3:C})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -957,7 +482,17 @@
 		"prefix":"Tswitch",
 		"body":[
 			"\\Tswitch[${1:options%keyvals}](${2:A})(${3:B})(${4:C})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"potentiometer()()()":{
+		"prefix":"potentiometer",
+		"body":[
+			"\\potentiometer(${1:A})(${2:B})(${3:C})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -965,7 +500,17 @@
 		"prefix":"potentiometer",
 		"body":[
 			"\\potentiometer[${1:options%keyvals}](${2:A})(${3:B})(${4:C})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"transistor()()()":{
+		"prefix":"transistor",
+		"body":[
+			"\\transistor(${1:A})(${2:B})(${3:C})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -973,7 +518,17 @@
 		"prefix":"transistor",
 		"body":[
 			"\\transistor[${1:options%keyvals}](${2:A})(${3:B})(${4:C})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"quadripole()()()(){}":{
+		"prefix":"quadripole",
+		"body":[
+			"\\quadripole(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -981,7 +536,17 @@
 		"prefix":"quadripole",
 		"body":[
 			"\\quadripole[${2:options%keyvals}](${3:A})(${4:B})(${5:C})(${6:D}){${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"transformer()()()(){}":{
+		"prefix":"transformer",
+		"body":[
+			"\\transformer(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -989,7 +554,17 @@
 		"prefix":"transformer",
 		"body":[
 			"\\transformer[${2:options%keyvals}](${3:A})(${4:B})(${5:C})(${6:D}){${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtransformer()()()(){}":{
+		"prefix":"newtransformer",
+		"body":[
+			"\\newtransformer(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -997,7 +572,17 @@
 		"prefix":"newtransformer",
 		"body":[
 			"\\newtransformer[${2:options%keyvals}](${3:A})(${4:B})(${5:C})(${6:D}){${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtransformerquad()()()(){}":{
+		"prefix":"newtransformerquad",
+		"body":[
+			"\\newtransformerquad(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1005,7 +590,17 @@
 		"prefix":"newtransformerquad",
 		"body":[
 			"\\newtransformerquad[${2:options%keyvals}](${3:A})(${4:B})(${5:C})(${6:D}){${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"optoCoupler()()()(){}":{
+		"prefix":"optoCoupler",
+		"body":[
+			"\\optoCoupler(${2:A})(${3:B})(${4:C})(${5:D}){${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1013,7 +608,17 @@
 		"prefix":"optoCoupler",
 		"body":[
 			"\\optoCoupler[${2:options%keyvals}](${3:A})(${4:B})(${5:C})(${6:D}){${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"multidipole()()":{
+		"prefix":"multidipole",
+		"body":[
+			"\\multidipole(${1:A})(${2:B})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1021,7 +626,17 @@
 		"prefix":"multidipole",
 		"body":[
 			"\\multidipole[${1:options%keyvals}](${2:A})(${3:B})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"OpenDipol()(){}":{
+		"prefix":"OpenDipol",
+		"body":[
+			"\\OpenDipol(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1029,7 +644,17 @@
 		"prefix":"OpenDipol",
 		"body":[
 			"\\OpenDipol[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"OpenTripol()(){}":{
+		"prefix":"OpenTripol",
+		"body":[
+			"\\OpenTripol(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1037,7 +662,17 @@
 		"prefix":"OpenTripol",
 		"body":[
 			"\\OpenTripol[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dashpot()(){}":{
+		"prefix":"dashpot",
+		"body":[
+			"\\dashpot(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1045,7 +680,26 @@
 		"prefix":"dashpot",
 		"body":[
 			"\\dashpot[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newground()":{
+		"prefix":"newground",
+		"body":[
+			"\\newground(${1:A})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newground{}()":{
+		"prefix":"newground",
+		"body":[
+			"\\newground{${1:angle}}(${2:A})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1053,7 +707,8 @@
 		"prefix":"newground",
 		"body":[
 			"\\newground[${1:options%keyvals}](${2:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1061,7 +716,17 @@
 		"prefix":"newground",
 		"body":[
 			"\\newground[${2:options%keyvals}]{${1:angle}}(${3:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newdiode()(){}":{
+		"prefix":"newdiode",
+		"body":[
+			"\\newdiode(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1069,7 +734,17 @@
 		"prefix":"newdiode",
 		"body":[
 			"\\newdiode[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newZener()(){}":{
+		"prefix":"newZener",
+		"body":[
+			"\\newZener(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1077,7 +752,17 @@
 		"prefix":"newZener",
 		"body":[
 			"\\newZener[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newLED()(){}":{
+		"prefix":"newLED",
+		"body":[
+			"\\newLED(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1085,7 +770,17 @@
 		"prefix":"newLED",
 		"body":[
 			"\\newLED[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newSwitch()(){}":{
+		"prefix":"newSwitch",
+		"body":[
+			"\\newSwitch(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1093,7 +788,17 @@
 		"prefix":"newSwitch",
 		"body":[
 			"\\newSwitch[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newcapacitor()(){}":{
+		"prefix":"newcapacitor",
+		"body":[
+			"\\newcapacitor(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1101,7 +806,17 @@
 		"prefix":"newcapacitor",
 		"body":[
 			"\\newcapacitor[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newarmature()(){}":{
+		"prefix":"newarmature",
+		"body":[
+			"\\newarmature(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1109,7 +824,17 @@
 		"prefix":"newarmature",
 		"body":[
 			"\\newarmature[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vdc()(){}":{
+		"prefix":"vdc",
+		"body":[
+			"\\vdc(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1117,7 +842,17 @@
 		"prefix":"vdc",
 		"body":[
 			"\\vdc[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vac()(){}":{
+		"prefix":"vac",
+		"body":[
+			"\\vac(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1125,7 +860,26 @@
 		"prefix":"vac",
 		"body":[
 			"\\vac[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"antenna()":{
+		"prefix":"antenna",
+		"body":[
+			"\\antenna(${1:A})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"antenna{}()":{
+		"prefix":"antenna",
+		"body":[
+			"\\antenna{${1:angle}}(${2:A})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1133,7 +887,8 @@
 		"prefix":"antenna",
 		"body":[
 			"\\antenna[${1:options%keyvals}](${2:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1141,7 +896,17 @@
 		"prefix":"antenna",
 		"body":[
 			"\\antenna[${2:options%keyvals}]{${1:angle}}(${3:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"oscillator(){}{}":{
+		"prefix":"oscillator",
+		"body":[
+			"\\oscillator(${3:A}){${1:label}}{${2:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1149,7 +914,17 @@
 		"prefix":"oscillator",
 		"body":[
 			"\\oscillator[${3:options%keyvals}](${4:A}){${1:label}}{${2:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"filter()(){}":{
+		"prefix":"filter",
+		"body":[
+			"\\filter(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1157,7 +932,17 @@
 		"prefix":"filter",
 		"body":[
 			"\\filter[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"isolator()(){}":{
+		"prefix":"isolator",
+		"body":[
+			"\\isolator(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1165,7 +950,17 @@
 		"prefix":"isolator",
 		"body":[
 			"\\isolator[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"freqmult()(){}":{
+		"prefix":"freqmult",
+		"body":[
+			"\\freqmult(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1173,7 +968,17 @@
 		"prefix":"freqmult",
 		"body":[
 			"\\freqmult[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"phaseshifter()(){}":{
+		"prefix":"phaseshifter",
+		"body":[
+			"\\phaseshifter(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1181,7 +986,17 @@
 		"prefix":"phaseshifter",
 		"body":[
 			"\\phaseshifter[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vco()(){}":{
+		"prefix":"vco",
+		"body":[
+			"\\vco(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1189,7 +1004,17 @@
 		"prefix":"vco",
 		"body":[
 			"\\vco[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"amplifier()(){}":{
+		"prefix":"amplifier",
+		"body":[
+			"\\amplifier(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1197,7 +1022,17 @@
 		"prefix":"amplifier",
 		"body":[
 			"\\amplifier[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"detector()(){}":{
+		"prefix":"detector",
+		"body":[
+			"\\detector(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1205,7 +1040,17 @@
 		"prefix":"detector",
 		"body":[
 			"\\detector[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"attenuator()(){}":{
+		"prefix":"attenuator",
+		"body":[
+			"\\attenuator(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1213,7 +1058,17 @@
 		"prefix":"attenuator",
 		"body":[
 			"\\attenuator[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mixer()()(){}{}":{
+		"prefix":"mixer",
+		"body":[
+			"\\mixer(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1221,7 +1076,17 @@
 		"prefix":"mixer",
 		"body":[
 			"\\mixer[${3:options%keyvals}](${4:A})(${5:B})(${6:C}){${1:label}}{${2:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"splitter()()(){}{}":{
+		"prefix":"splitter",
+		"body":[
+			"\\splitter(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1229,7 +1094,17 @@
 		"prefix":"splitter",
 		"body":[
 			"\\splitter[${3:options%keyvals}](${4:A})(${5:B})(${6:C}){${1:label}}{${2:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"circulator{}()()(){}{}":{
+		"prefix":"circulator",
+		"body":[
+			"\\circulator{${1:angle}}(${4:A})(${5:B})(${6:C}){${2:label}}{${3:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1237,7 +1112,17 @@
 		"prefix":"circulator",
 		"body":[
 			"\\circulator[${4:options%keyvals}]{${1:angle}}(${5:A})(${6:B})(${7:C}){${2:label}}{${3:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"agc()()(){}{}":{
+		"prefix":"agc",
+		"body":[
+			"\\agc(${3:A})(${4:B})(${5:C}){${1:label}}{${2:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1245,7 +1130,17 @@
 		"prefix":"agc",
 		"body":[
 			"\\agc[${3:options%keyvals}](${4:A})(${5:B})(${6:C}){${1:label}}{${2:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"coupler()()()(){}{}":{
+		"prefix":"coupler",
+		"body":[
+			"\\coupler(${3:A})(${4:B})(${5:C})(${6:D}){${1:label}}{${2:pstricks options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1253,7 +1148,26 @@
 		"prefix":"coupler",
 		"body":[
 			"\\coupler[${3:options%keyvals}](${4:A})(${5:B})(${6:C})(${7:D}){${1:label}}{${2:pstricks options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logic{}":{
+		"prefix":"logic",
+		"body":[
+			"\\logic{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"logic(){}":{
+		"prefix":"logic",
+		"body":[
+			"\\logic(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1261,7 +1175,8 @@
 		"prefix":"logic",
 		"body":[
 			"\\logic[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1269,7 +1184,17 @@
 		"prefix":"logic",
 		"body":[
 			"\\logic[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicnot(){}":{
+		"prefix":"logicnot",
+		"body":[
+			"\\logicnot(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1277,7 +1202,17 @@
 		"prefix":"logicnot",
 		"body":[
 			"\\logicnot[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicand(){}":{
+		"prefix":"logicand",
+		"body":[
+			"\\logicand(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1285,7 +1220,17 @@
 		"prefix":"logicand",
 		"body":[
 			"\\logicand[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicor(){}":{
+		"prefix":"logicor",
+		"body":[
+			"\\logicor(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1293,7 +1238,17 @@
 		"prefix":"logicor",
 		"body":[
 			"\\logicor[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicxor(){}":{
+		"prefix":"logicxor",
+		"body":[
+			"\\logicxor(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1301,7 +1256,17 @@
 		"prefix":"logicxor",
 		"body":[
 			"\\logicxor[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicff(){}":{
+		"prefix":"logicff",
+		"body":[
+			"\\logicff(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1309,7 +1274,17 @@
 		"prefix":"logicff",
 		"body":[
 			"\\logicff[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"logicic(){}":{
+		"prefix":"logicic",
+		"body":[
+			"\\logicic(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1317,7 +1292,17 @@
 		"prefix":"logicic",
 		"body":[
 			"\\logicic[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sevensegmentdisplay(){}":{
+		"prefix":"sevensegmentdisplay",
+		"body":[
+			"\\sevensegmentdisplay(${2:x},${3:y}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1325,7 +1310,17 @@
 		"prefix":"sevensegmentdisplay",
 		"body":[
 			"\\sevensegmentdisplay[${2:options%keyvals}](${3:x},${4:y}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xic()":{
+		"prefix":"xic",
+		"body":[
+			"\\xic(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1333,7 +1328,17 @@
 		"prefix":"xic",
 		"body":[
 			"\\xic[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xio()":{
+		"prefix":"xio",
+		"body":[
+			"\\xio(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1341,7 +1346,17 @@
 		"prefix":"xio",
 		"body":[
 			"\\xio[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ote()":{
+		"prefix":"ote",
+		"body":[
+			"\\ote(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1349,7 +1364,17 @@
 		"prefix":"ote",
 		"body":[
 			"\\ote[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"osr()":{
+		"prefix":"osr",
+		"body":[
+			"\\osr(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1357,7 +1382,17 @@
 		"prefix":"osr",
 		"body":[
 			"\\osr[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"res()":{
+		"prefix":"res",
+		"body":[
+			"\\res(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1365,7 +1400,17 @@
 		"prefix":"res",
 		"body":[
 			"\\res[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"swpb()":{
+		"prefix":"swpb",
+		"body":[
+			"\\swpb(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1373,7 +1418,17 @@
 		"prefix":"swpb",
 		"body":[
 			"\\swpb[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"swtog()":{
+		"prefix":"swtog",
+		"body":[
+			"\\swtog(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1381,7 +1436,17 @@
 		"prefix":"swtog",
 		"body":[
 			"\\swtog[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"contact()":{
+		"prefix":"contact",
+		"body":[
+			"\\contact(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1389,7 +1454,17 @@
 		"prefix":"contact",
 		"body":[
 			"\\contact[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"armature()":{
+		"prefix":"armature",
+		"body":[
+			"\\armature(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1397,7 +1472,17 @@
 		"prefix":"armature",
 		"body":[
 			"\\armature[${1:options%keyvals}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newCircDipole{}":{
+		"prefix":"newCircDipole",
+		"body":[
+			"\\newCircDipole{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +1490,71 @@
 		"prefix":"newCircDipole",
 		"body":[
 			"\\newCircDipole[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"icheight":{
+		"prefix":"icheight",
+		"body":[
+			"\\icheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"icwidth":{
+		"prefix":"icwidth",
+		"body":[
+			"\\icwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"icleft":{
+		"prefix":"icleft",
+		"body":[
+			"\\icleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"icmid":{
+		"prefix":"icmid",
+		"body":[
+			"\\icmid"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"icright":{
+		"prefix":"icright",
+		"body":[
+			"\\icright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"node()":{
+		"prefix":"node",
+		"body":[
+			"\\node(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"modulator()(){}":{
+		"prefix":"modulator",
+		"body":[
+			"\\modulator(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +1562,17 @@
 		"prefix":"modulator",
 		"body":[
 			"\\modulator[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plug{}()":{
+		"prefix":"plug",
+		"body":[
+			"\\plug{${1:angle}}(${2:A})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1421,7 +1580,17 @@
 		"prefix":"plug",
 		"body":[
 			"\\plug[${2:options%keyvals}]{${1:angle}}(${3:A})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ampsinu()(){}":{
+		"prefix":"ampsinu",
+		"body":[
+			"\\ampsinu(${2:A})(${3:B}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1429,7 +1598,17 @@
 		"prefix":"ampsinu",
 		"body":[
 			"\\ampsinu[${2:options%keyvals}](${3:A})(${4:B}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"powermeter()()(){}":{
+		"prefix":"powermeter",
+		"body":[
+			"\\powermeter(${2:A})(${3:B})(${4:C}){${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1437,6 +1616,7 @@
 		"prefix":"powermeter",
 		"body":[
 			"\\powermeter[${2:options%keyvals}](${3:A})(${4:B})(${5:C}){${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

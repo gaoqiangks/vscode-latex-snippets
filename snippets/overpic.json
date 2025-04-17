@@ -5,46 +5,51 @@
 		"prefix":"setOverpic",
 		"body":[
 			"\\setOverpic{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"overpic":{
+	"overpic{}":{
 		"prefix":"overpic",
 		"body":[
 			"\\begin{overpic}",
-				"\t$1",
+				"\t{${1:file}}",
 			"\\end{overpic}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Overpic":{
-		"prefix":"Overpic",
-		"body":[
-			"\\begin{Overpic}",
-				"\t$1",
-			"\\end{Overpic}"
-		]
-	},
-
-
-	"overpic":{
+	"overpic[]{}":{
 		"prefix":"overpic",
 		"body":[
 			"\\begin{overpic}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:file}}",
 			"\\end{overpic}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"Overpic":{
+	"Overpic{}":{
 		"prefix":"Overpic",
 		"body":[
 			"\\begin{Overpic}",
-				"\t$1",
+				"\t{${1:tex-code}}",
 			"\\end{Overpic}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Overpic[]{}":{
+		"prefix":"Overpic",
+		"body":[
+			"\\begin{Overpic}",
+				"\t[${2:options%keyvals}]{${1:tex-code}}",
+			"\\end{Overpic}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

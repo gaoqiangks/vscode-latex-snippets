@@ -5,7 +5,8 @@
 		"prefix":"xvec",
 		"body":[
 			"\\xvec{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mat",
 		"body":[
 			"\\mat{${1:letter%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,255 +23,8 @@
 		"prefix":"tder",
 		"body":[
 			"\\tder{${1:func}}{${2:var}}"
-		]
-	},
-
-
-	"oi{}{}":{
-		"prefix":"oi",
-		"body":[
-			"\\oi{${1:left%formula}}{${2:right%formula}}"
-		]
-	},
-
-
-	"ci{}{}":{
-		"prefix":"ci",
-		"body":[
-			"\\ci{${1:left%formula}}{${2:right%formula}}"
-		]
-	},
-
-
-	"rci{}{}":{
-		"prefix":"rci",
-		"body":[
-			"\\rci{${1:left%formula}}{${2:right%formula}}"
-		]
-	},
-
-
-	"lci{}{}":{
-		"prefix":"lci",
-		"body":[
-			"\\lci{${1:left%formula}}{${2:right%formula}}"
-		]
-	},
-
-
-	"dif{}":{
-		"prefix":"dif",
-		"body":[
-			"\\dif{${1:arg}}"
-		]
-	},
-
-
-	"hlf":{
-		"prefix":"hlf",
-		"body":[
-			"\\hlf"
-		]
-	},
-
-
-	"degree":{
-		"prefix":"degree",
-		"body":[
-			"\\degree"
-		]
-	},
-
-
-	"hem":{
-		"prefix":"hem",
-		"body":[
-			"\\hem"
-		]
-	},
-
-
-	"htwoem":{
-		"prefix":"htwoem",
-		"body":[
-			"\\htwoem"
-		]
-	},
-
-
-	"htem":{
-		"prefix":"htem",
-		"body":[
-			"\\htem"
-		]
-	},
-
-
-	"oover{}":{
-		"prefix":"oover",
-		"body":[
-			"\\oover{${1:arg%formula}}"
-		]
-	},
-
-
-	"realn":{
-		"prefix":"realn",
-		"body":[
-			"\\realn"
-		]
-	},
-
-
-	"compn":{
-		"prefix":"compn",
-		"body":[
-			"\\compn"
-		]
-	},
-
-
-	"inte":{
-		"prefix":"inte",
-		"body":[
-			"\\inte"
-		]
-	},
-
-
-	"ratin":{
-		"prefix":"ratin",
-		"body":[
-			"\\ratin"
-		]
-	},
-
-
-	"natun":{
-		"prefix":"natun",
-		"body":[
-			"\\natun"
-		]
-	},
-
-
-	"nnzero":{
-		"prefix":"nnzero",
-		"body":[
-			"\\nnzero"
-		]
-	},
-
-
-	"impem":{
-		"prefix":"impem",
-		"body":[
-			"\\impem"
-		]
-	},
-
-
-	"rot":{
-		"prefix":"rot",
-		"body":[
-			"\\rot"
-		]
-	},
-
-
-	"lapl":{
-		"prefix":"lapl",
-		"body":[
-			"\\lapl"
-		]
-	},
-
-
-	"varun{}{}":{
-		"prefix":"varun",
-		"body":[
-			"\\varun{${1:var%formula}}{${2:unit%formula}}"
-		]
-	},
-
-
-	"unit{}":{
-		"prefix":"unit",
-		"body":[
-			"\\unit{${1:unit}}"
-		]
-	},
-
-
-	"expv{}":{
-		"prefix":"expv",
-		"body":[
-			"\\expv{${1:arg}}"
-		]
-	},
-
-
-	"ceil{}":{
-		"prefix":"ceil",
-		"body":[
-			"\\ceil{${1:arg}}"
-		]
-	},
-
-
-	"floor{}":{
-		"prefix":"floor",
-		"body":[
-			"\\floor{${1:arg}}"
-		]
-	},
-
-
-	"df":{
-		"prefix":"df",
-		"body":[
-			"\\df"
-		]
-	},
-
-
-	"allset{}":{
-		"prefix":"allset",
-		"body":[
-			"\\allset{${1:n}}"
-		]
-	},
-
-
-	"allsetzero{}":{
-		"prefix":"allsetzero",
-		"body":[
-			"\\allsetzero{${1:n}}"
-		]
-	},
-
-
-	"cclass":{
-		"prefix":"cclass",
-		"body":[
-			"\\cclass"
-		]
-	},
-
-
-	"ccof{}":{
-		"prefix":"ccof",
-		"body":[
-			"\\ccof{${1:superscript}}"
-		]
-	},
-
-
-	"ccinf":{
-		"prefix":"ccinf",
-		"body":[
-			"\\ccinf"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +32,80 @@
 		"prefix":"tder",
 		"body":[
 			"\\tder[${3:order}]{${1:func}}{${2:var}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"oi{}{}":{
+		"prefix":"oi",
+		"body":[
+			"\\oi{${1:left%formula}}{${2:right%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ci{}{}":{
+		"prefix":"ci",
+		"body":[
+			"\\ci{${1:left%formula}}{${2:right%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rci{}{}":{
+		"prefix":"rci",
+		"body":[
+			"\\rci{${1:left%formula}}{${2:right%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lci{}{}":{
+		"prefix":"lci",
+		"body":[
+			"\\lci{${1:left%formula}}{${2:right%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dif{}":{
+		"prefix":"dif",
+		"body":[
+			"\\dif{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hlf":{
+		"prefix":"hlf",
+		"body":[
+			"\\hlf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"degree":{
+		"prefix":"degree",
+		"body":[
+			"\\degree"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hem":{
+		"prefix":"hem",
+		"body":[
+			"\\hem"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,6 +113,214 @@
 		"prefix":"hem",
 		"body":[
 			"\\hem[${1:width}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"htwoem":{
+		"prefix":"htwoem",
+		"body":[
+			"\\htwoem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"htem":{
+		"prefix":"htem",
+		"body":[
+			"\\htem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"oover{}":{
+		"prefix":"oover",
+		"body":[
+			"\\oover{${1:arg%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"realn":{
+		"prefix":"realn",
+		"body":[
+			"\\realn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"compn":{
+		"prefix":"compn",
+		"body":[
+			"\\compn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inte":{
+		"prefix":"inte",
+		"body":[
+			"\\inte"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ratin":{
+		"prefix":"ratin",
+		"body":[
+			"\\ratin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"natun":{
+		"prefix":"natun",
+		"body":[
+			"\\natun"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nnzero":{
+		"prefix":"nnzero",
+		"body":[
+			"\\nnzero"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"impem":{
+		"prefix":"impem",
+		"body":[
+			"\\impem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rot":{
+		"prefix":"rot",
+		"body":[
+			"\\rot"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lapl":{
+		"prefix":"lapl",
+		"body":[
+			"\\lapl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"varun{}{}":{
+		"prefix":"varun",
+		"body":[
+			"\\varun{${1:var%formula}}{${2:unit%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unit{}":{
+		"prefix":"unit",
+		"body":[
+			"\\unit{${1:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"expv{}":{
+		"prefix":"expv",
+		"body":[
+			"\\expv{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ceil{}":{
+		"prefix":"ceil",
+		"body":[
+			"\\ceil{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"floor{}":{
+		"prefix":"floor",
+		"body":[
+			"\\floor{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"df":{
+		"prefix":"df",
+		"body":[
+			"\\df"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allset{}":{
+		"prefix":"allset",
+		"body":[
+			"\\allset{${1:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allsetzero{}":{
+		"prefix":"allsetzero",
+		"body":[
+			"\\allsetzero{${1:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cclass":{
+		"prefix":"cclass",
+		"body":[
+			"\\cclass"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccof{}":{
+		"prefix":"ccof",
+		"body":[
+			"\\ccof{${1:superscript}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccinf":{
+		"prefix":"ccinf",
+		"body":[
+			"\\ccinf"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

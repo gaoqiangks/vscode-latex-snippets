@@ -5,7 +5,8 @@
 		"prefix":"keyindexfile",
 		"body":[
 			"\\keyindexfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"keyindexformat",
 		"body":[
 			"\\keyindexformat{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"missingkeyindexformat",
 		"body":[
 			"\\missingkeyindexformat{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"keyindexcommand",
 		"body":[
 			"\\keyindexcommand{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"keyindexprint",
 		"body":[
 			"\\keyindexprint{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,23 +50,8 @@
 		"prefix":"keyindexonly",
 		"body":[
 			"\\keyindexonly{${1:key%plain}}"
-		]
-	},
-
-
-	"keyindex{}":{
-		"prefix":"keyindex",
-		"body":[
-			"\\keyindex{${1:key%plain}}"
-		]
-	},
-
-
-	"keyindexentry{}{}{}":{
-		"prefix":"keyindexentry",
-		"body":[
-			"\\keyindexentry{${1:key%plain}}{${2:print text}}{${3:index text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,17 @@
 		"prefix":"keyindexonly",
 		"body":[
 			"\\keyindexonly[${2:index option}]{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"keyindex{}":{
+		"prefix":"keyindex",
+		"body":[
+			"\\keyindex{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +77,16 @@
 		"prefix":"keyindex",
 		"body":[
 			"\\keyindex[${2:index option}]{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"keyindexentry{}{}{}":{
+		"prefix":"keyindexentry",
+		"body":[
+			"\\keyindexentry{${1:key%plain}}{${2:print text}}{${3:index text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

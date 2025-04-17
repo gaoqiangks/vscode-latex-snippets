@@ -5,55 +5,8 @@
 		"prefix":"graphfile",
 		"body":[
 			"\\graphfile{${1:imagefile}}"
-		]
-	},
-
-
-	"FigureDefaultPlacement{}":{
-		"prefix":"FigureDefaultPlacement",
-		"body":[
-			"\\FigureDefaultPlacement{${1:placement}}"
-		]
-	},
-
-
-	"thesubfigure":{
-		"prefix":"thesubfigure",
-		"body":[
-			"\\thesubfigure"
-		]
-	},
-
-
-	"graphfile*{}":{
-		"prefix":"*graphfile",
-		"body":[
-			"\\graphfile*{${1:imagefile}}"
-		]
-	},
-
-
-	"graphfile*{}[]":{
-		"prefix":"*graphfile",
-		"body":[
-			"\\graphfile*{${1:imagefile}}[${2:subcaption%text}]"
-		]
-	},
-
-
-	"graphfile*[]{}":{
-		"prefix":"*graphfile",
-		"body":[
-			"\\graphfile*[${2:height}]{${1:imagefile}}"
-		]
-	},
-
-
-	"graphfile*[]{}[]":{
-		"prefix":"*graphfile",
-		"body":[
-			"\\graphfile*[${2:height}]{${1:imagefile}}[${3:subcaption%text}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,8 @@
 		"prefix":"graphfile",
 		"body":[
 			"\\graphfile{${1:imagefile}}[${2:subcaption%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +23,8 @@
 		"prefix":"graphfile",
 		"body":[
 			"\\graphfile[${2:width}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,46 +32,105 @@
 		"prefix":"graphfile",
 		"body":[
 			"\\graphfile[${2:width}]{${1:imagefile}}[${3:subcaption%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"Figure":{
-		"prefix":"Figure",
+	"graphfile*{}":{
+		"prefix":"*graphfile",
 		"body":[
-			"\\begin{Figure}",
-				"\t$1",
-			"\\end{Figure}"
-		]
+			"\\graphfile*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Figure":{
-		"prefix":"Figure",
+	"graphfile*{}[]":{
+		"prefix":"*graphfile",
 		"body":[
-			"\\begin{Figure}",
-				"\t$1",
-			"\\end{Figure}"
-		]
+			"\\graphfile*{${1:imagefile}}[${2:subcaption%text}]"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Figure":{
-		"prefix":"Figure",
+	"graphfile*[]{}":{
+		"prefix":"*graphfile",
 		"body":[
-			"\\begin{Figure}",
-				"\t$1",
-			"\\end{Figure}"
-		]
+			"\\graphfile*[${2:height}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Figure":{
+	"graphfile*[]{}[]":{
+		"prefix":"*graphfile",
+		"body":[
+			"\\graphfile*[${2:height}]{${1:imagefile}}[${3:subcaption%text}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"FigureDefaultPlacement{}":{
+		"prefix":"FigureDefaultPlacement",
+		"body":[
+			"\\FigureDefaultPlacement{${1:placement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesubfigure":{
+		"prefix":"thesubfigure",
+		"body":[
+			"\\thesubfigure"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Figure{}":{
 		"prefix":"Figure",
 		"body":[
 			"\\begin{Figure}",
-				"\t$1",
+				"\t{${1:caption%text}}",
 			"\\end{Figure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Figure{}[]":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t{${1:caption%text}}[${2:label}]",
+			"\\end{Figure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Figure[]{}":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t[${2:placement}]{${1:caption%text}}",
+			"\\end{Figure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Figure[]{}[]":{
+		"prefix":"Figure",
+		"body":[
+			"\\begin{Figure}",
+				"\t[${2:placement}]{${1:caption%text}}[${3:label}]",
+			"\\end{Figure}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

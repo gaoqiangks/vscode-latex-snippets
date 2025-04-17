@@ -5,7 +5,8 @@
 		"prefix":"embedaspict",
 		"body":[
 			"\\embedaspict{${1:LaTeX content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"moodleset",
 		"body":[
 			"\\moodleset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"setcategory",
 		"body":[
 			"\\setcategory{${1:category name%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,127 +32,8 @@
 		"prefix":"setsubcategory",
 		"body":[
 			"\\setsubcategory{${1:subcategory name%text}}"
-		]
-	},
-
-
-	"blank":{
-		"prefix":"blank",
-		"body":[
-			"\\blank"
-		]
-	},
-
-
-	"htmlonly{}":{
-		"prefix":"htmlonly",
-		"body":[
-			"\\htmlonly{${1:HTML content}}"
-		]
-	},
-
-
-	"htmlregister{}":{
-		"prefix":"htmlregister",
-		"body":[
-			"\\htmlregister{${1:cmd}}"
-		]
-	},
-
-
-	"moodleregisternewcommands":{
-		"prefix":"moodleregisternewcommands",
-		"body":[
-			"\\moodleregisternewcommands"
-		]
-	},
-
-
-	"ghostscriptcommand{}":{
-		"prefix":"ghostscriptcommand",
-		"body":[
-			"\\ghostscriptcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"imagemagickcommand{}":{
-		"prefix":"imagemagickcommand",
-		"body":[
-			"\\imagemagickcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"optipngcommand{}":{
-		"prefix":"optipngcommand",
-		"body":[
-			"\\optipngcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"PDFtoSVGcommand{}":{
-		"prefix":"PDFtoSVGcommand",
-		"body":[
-			"\\PDFtoSVGcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"SVGtoPDFcommand{}":{
-		"prefix":"SVGtoPDFcommand",
-		"body":[
-			"\\SVGtoPDFcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"optiSVGcommand{}":{
-		"prefix":"optiSVGcommand",
-		"body":[
-			"\\optiSVGcommand{${1:executable filename}}"
-		]
-	},
-
-
-	"verbatiminput{}":{
-		"prefix":"verbatiminput",
-		"body":[
-			"\\verbatiminput{${1:file}}"
-		]
-	},
-
-
-	"VerbatimInput{}":{
-		"prefix":"VerbatimInput",
-		"body":[
-			"\\VerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"BVerbatimInput{}":{
-		"prefix":"BVerbatimInput",
-		"body":[
-			"\\BVerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"LVerbatimInput{}":{
-		"prefix":"LVerbatimInput",
-		"body":[
-			"\\LVerbatimInput{${1:file}}"
-		]
-	},
-
-
-	"inputminted{}{}":{
-		"prefix":"inputminted",
-		"body":[
-			"\\inputminted{${1:language}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +41,8 @@
 		"prefix":"*item",
 		"body":[
 			"\\item*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -165,7 +50,26 @@
 		"prefix":"item",
 		"body":[
 			"\\item[${1:options}]*"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"blank":{
+		"prefix":"blank",
+		"body":[
+			"\\blank"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"htmlonly{}":{
+		"prefix":"htmlonly",
+		"body":[
+			"\\htmlonly{${1:HTML content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +77,98 @@
 		"prefix":"htmlonly",
 		"body":[
 			"\\htmlonly[${2:LaTeX content%text}]{${1:HTML content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"htmlregister{}":{
+		"prefix":"htmlregister",
+		"body":[
+			"\\htmlregister{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moodleregisternewcommands":{
+		"prefix":"moodleregisternewcommands",
+		"body":[
+			"\\moodleregisternewcommands"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ghostscriptcommand{}":{
+		"prefix":"ghostscriptcommand",
+		"body":[
+			"\\ghostscriptcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"imagemagickcommand{}":{
+		"prefix":"imagemagickcommand",
+		"body":[
+			"\\imagemagickcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optipngcommand{}":{
+		"prefix":"optipngcommand",
+		"body":[
+			"\\optipngcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PDFtoSVGcommand{}":{
+		"prefix":"PDFtoSVGcommand",
+		"body":[
+			"\\PDFtoSVGcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SVGtoPDFcommand{}":{
+		"prefix":"SVGtoPDFcommand",
+		"body":[
+			"\\SVGtoPDFcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optiSVGcommand{}":{
+		"prefix":"optiSVGcommand",
+		"body":[
+			"\\optiSVGcommand{${1:executable filename}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbatiminput{}":{
+		"prefix":"verbatiminput",
+		"body":[
+			"\\verbatiminput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimInput{}":{
+		"prefix":"VerbatimInput",
+		"body":[
+			"\\VerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +176,17 @@
 		"prefix":"VerbatimInput",
 		"body":[
 			"\\VerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BVerbatimInput{}":{
+		"prefix":"BVerbatimInput",
+		"body":[
+			"\\BVerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +194,17 @@
 		"prefix":"BVerbatimInput",
 		"body":[
 			"\\BVerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LVerbatimInput{}":{
+		"prefix":"LVerbatimInput",
+		"body":[
+			"\\LVerbatimInput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +212,17 @@
 		"prefix":"LVerbatimInput",
 		"body":[
 			"\\LVerbatimInput[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputminted{}{}":{
+		"prefix":"inputminted",
+		"body":[
+			"\\inputminted{${1:language}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,226 +230,249 @@
 		"prefix":"inputminted",
 		"body":[
 			"\\inputminted[${3:options%keyvals}]{${1:language}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"quiz":{
+	"quiz{}":{
 		"prefix":"quiz",
 		"body":[
 			"\\begin{quiz}",
-				"\t$1",
+				"\t{${1:category name%text}}",
 			"\\end{quiz}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"truefalse":{
-		"prefix":"truefalse",
-		"body":[
-			"\\begin{truefalse}",
-				"\t$1",
-			"\\end{truefalse}"
-		]
-	},
-
-
-	"multi":{
-		"prefix":"multi",
-		"body":[
-			"\\begin{multi}",
-				"\t$1",
-			"\\end{multi}"
-		]
-	},
-
-
-	"numerical":{
-		"prefix":"numerical",
-		"body":[
-			"\\begin{numerical}",
-				"\t$1",
-			"\\end{numerical}"
-		]
-	},
-
-
-	"shortanswer":{
-		"prefix":"shortanswer",
-		"body":[
-			"\\begin{shortanswer}",
-				"\t$1",
-			"\\end{shortanswer}"
-		]
-	},
-
-
-	"essay":{
-		"prefix":"essay",
-		"body":[
-			"\\begin{essay}",
-				"\t$1",
-			"\\end{essay}"
-		]
-	},
-
-
-	"matching":{
-		"prefix":"matching",
-		"body":[
-			"\\begin{matching}",
-				"\t$1",
-			"\\end{matching}"
-		]
-	},
-
-
-	"cloze":{
-		"prefix":"cloze",
-		"body":[
-			"\\begin{cloze}",
-				"\t$1",
-			"\\end{cloze}"
-		]
-	},
-
-
-	"description":{
-		"prefix":"description",
-		"body":[
-			"\\begin{description}",
-				"\t$1",
-			"\\end{description}"
-		]
-	},
-
-
-	"":{
-		"prefix":"",
-		"body":[
-			"\\begin{}",
-				"\t$1",
-			"\\end{}"
-		]
-	},
-
-
-	"":{
-		"prefix":"",
-		"body":[
-			"\\begin{}",
-				"\t$1",
-			"\\end{}"
-		]
-	},
-
-
-	"quiz":{
+	"quiz[]{}":{
 		"prefix":"quiz",
 		"body":[
 			"\\begin{quiz}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:category name%text}}",
 			"\\end{quiz}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"truefalse":{
+	"truefalse{}":{
 		"prefix":"truefalse",
 		"body":[
 			"\\begin{truefalse}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{truefalse}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"multi":{
+	"truefalse[]{}":{
+		"prefix":"truefalse",
+		"body":[
+			"\\begin{truefalse}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{truefalse}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"multi{}":{
 		"prefix":"multi",
 		"body":[
 			"\\begin{multi}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{multi}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"numerical":{
+	"multi[]{}":{
+		"prefix":"multi",
+		"body":[
+			"\\begin{multi}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{multi}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"numerical{}":{
 		"prefix":"numerical",
 		"body":[
 			"\\begin{numerical}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{numerical}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"shortanswer":{
+	"numerical[]{}":{
+		"prefix":"numerical",
+		"body":[
+			"\\begin{numerical}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{numerical}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"shortanswer{}":{
 		"prefix":"shortanswer",
 		"body":[
 			"\\begin{shortanswer}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{shortanswer}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"essay":{
+	"shortanswer[]{}":{
+		"prefix":"shortanswer",
+		"body":[
+			"\\begin{shortanswer}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{shortanswer}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"essay{}":{
 		"prefix":"essay",
 		"body":[
 			"\\begin{essay}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{essay}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"matching":{
+	"essay[]{}":{
+		"prefix":"essay",
+		"body":[
+			"\\begin{essay}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{essay}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"matching{}":{
 		"prefix":"matching",
 		"body":[
 			"\\begin{matching}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{matching}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"cloze":{
+	"matching[]{}":{
+		"prefix":"matching",
+		"body":[
+			"\\begin{matching}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{matching}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cloze{}":{
 		"prefix":"cloze",
 		"body":[
 			"\\begin{cloze}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{cloze}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"description":{
+	"cloze[]{}":{
+		"prefix":"cloze",
+		"body":[
+			"\\begin{cloze}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{cloze}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"description{}":{
 		"prefix":"description",
 		"body":[
 			"\\begin{description}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{description}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"":{
-		"prefix":"",
+	"description[]{}":{
+		"prefix":"description",
 		"body":[
-			"\\begin{}",
-				"\t$1",
-			"\\end{}"
-		]
+			"\\begin{description}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{description}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"":{
+	"{}":{
 		"prefix":"",
 		"body":[
 			"\\begin{}",
-				"\t$1",
+				"\t{${1:question name%text}}",
 			"\\end{}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"[]{}":{
+		"prefix":"",
+		"body":[
+			"\\begin{}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"{}":{
+		"prefix":"",
+		"body":[
+			"\\begin{}",
+				"\t{${1:question name%text}}",
+			"\\end{}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"[]{}":{
+		"prefix":"",
+		"body":[
+			"\\begin{}",
+				"\t[${2:options%keyvals}]{${1:question name%text}}",
+			"\\end{}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

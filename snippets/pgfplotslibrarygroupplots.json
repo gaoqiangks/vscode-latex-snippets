@@ -5,7 +5,8 @@
 		"prefix":"nextgroupplot",
 		"body":[
 			"\\nextgroupplot"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"nextgroupplot",
 		"body":[
 			"\\nextgroupplot[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -23,16 +25,18 @@
 			"\\begin{groupplot}",
 				"\t$1",
 			"\\end{groupplot}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"groupplot":{
+	"groupplot[]":{
 		"prefix":"groupplot",
 		"body":[
 			"\\begin{groupplot}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{groupplot}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

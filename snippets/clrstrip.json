@@ -5,26 +5,29 @@
 		"prefix":"colorstripSet",
 		"body":[
 			"\\colorstripSet{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"colorstrip":{
+	"colorstrip{}[]":{
 		"prefix":"colorstrip",
 		"body":[
 			"\\begin{colorstrip}",
-				"\t$1",
+				"\t{${1:color}}[${2:keyvals}]",
 			"\\end{colorstrip}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"colorstrip":{
+	"colorstrip[]{}[]":{
 		"prefix":"colorstrip",
 		"body":[
 			"\\begin{colorstrip}",
-				"\t$1",
+				"\t[${2:model}]{${1:color}}[${3:keyvals}]",
 			"\\end{colorstrip}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

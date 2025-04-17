@@ -5,103 +5,8 @@
 		"prefix":"mint",
 		"body":[
 			"\\mint{${1:language}}|${2:code}|"
-		]
-	},
-
-
-	"mintinline{}||":{
-		"prefix":"mintinline",
-		"body":[
-			"\\mintinline{${1:language}}|${2:code}|"
-		]
-	},
-
-
-	"inputminted{}{}":{
-		"prefix":"inputminted",
-		"body":[
-			"\\inputminted{${1:language}}{${2:file}}"
-		]
-	},
-
-
-	"usemintedstyle{}":{
-		"prefix":"usemintedstyle",
-		"body":[
-			"\\usemintedstyle{${1:pygments style}}"
-		]
-	},
-
-
-	"setminted{}":{
-		"prefix":"setminted",
-		"body":[
-			"\\setminted{${1:options%keyvals}}"
-		]
-	},
-
-
-	"setmintedinline{}":{
-		"prefix":"setmintedinline",
-		"body":[
-			"\\setmintedinline{${1:options%keyvals}}"
-		]
-	},
-
-
-	"listoflistings":{
-		"prefix":"listoflistings",
-		"body":[
-			"\\listoflistings"
-		]
-	},
-
-
-	"listingscaption":{
-		"prefix":"listingscaption",
-		"body":[
-			"\\listingscaption"
-		]
-	},
-
-
-	"listoflistingscaption":{
-		"prefix":"listoflistingscaption",
-		"body":[
-			"\\listoflistingscaption"
-		]
-	},
-
-
-	"newminted{}{}":{
-		"prefix":"newminted",
-		"body":[
-			"\\newminted{${1:language}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newmint{}{}":{
-		"prefix":"newmint",
-		"body":[
-			"\\newmint{${1:language}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newmintinline{}{}":{
-		"prefix":"newmintinline",
-		"body":[
-			"\\newmintinline{${1:language}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newmintedfile{}{}":{
-		"prefix":"newmintedfile",
-		"body":[
-			"\\newmintedfile{${1:language}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,17 @@
 		"prefix":"mint",
 		"body":[
 			"\\mint[${2:options}]{${1:language}}|${3:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mintinline{}||":{
+		"prefix":"mintinline",
+		"body":[
+			"\\mintinline{${1:language}}|${2:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +32,17 @@
 		"prefix":"mintinline",
 		"body":[
 			"\\mintinline[${2:options}]{${1:language}}|${3:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inputminted{}{}":{
+		"prefix":"inputminted",
+		"body":[
+			"\\inputminted{${1:language}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +50,17 @@
 		"prefix":"inputminted",
 		"body":[
 			"\\inputminted[${3:options%keyvals}]{${1:language}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usemintedstyle{}":{
+		"prefix":"usemintedstyle",
+		"body":[
+			"\\usemintedstyle{${1:pygments style}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +68,17 @@
 		"prefix":"usemintedstyle",
 		"body":[
 			"\\usemintedstyle[${2:language}]{${1:pygments style}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setminted{}":{
+		"prefix":"setminted",
+		"body":[
+			"\\setminted{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +86,17 @@
 		"prefix":"setminted",
 		"body":[
 			"\\setminted[${2:language}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setmintedinline{}":{
+		"prefix":"setmintedinline",
+		"body":[
+			"\\setmintedinline{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +104,44 @@
 		"prefix":"setmintedinline",
 		"body":[
 			"\\setmintedinline[${2:language}]{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listoflistings":{
+		"prefix":"listoflistings",
+		"body":[
+			"\\listoflistings"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listingscaption":{
+		"prefix":"listingscaption",
+		"body":[
+			"\\listingscaption"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listoflistingscaption":{
+		"prefix":"listoflistingscaption",
+		"body":[
+			"\\listoflistingscaption"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newminted{}{}":{
+		"prefix":"newminted",
+		"body":[
+			"\\newminted{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +149,17 @@
 		"prefix":"newminted",
 		"body":[
 			"\\newminted[${3:envname}]{${1:language}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newmint{}{}":{
+		"prefix":"newmint",
+		"body":[
+			"\\newmint{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +167,17 @@
 		"prefix":"newmint",
 		"body":[
 			"\\newmint[${3:macro name}]{${1:language}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newmintinline{}{}":{
+		"prefix":"newmintinline",
+		"body":[
+			"\\newmintinline{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +185,17 @@
 		"prefix":"newmintinline",
 		"body":[
 			"\\newmintinline[${3:macro name}]{${1:language}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newmintedfile{}{}":{
+		"prefix":"newmintedfile",
+		"body":[
+			"\\newmintedfile{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,17 +203,30 @@
 		"prefix":"newmintedfile",
 		"body":[
 			"\\newmintedfile[${3:macro name}]{${1:language}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"minted":{
+	"minted{}":{
 		"prefix":"minted",
 		"body":[
 			"\\begin{minted}",
-				"\t$1",
+				"\t{${1:language}}",
 			"\\end{minted}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"minted[]{}":{
+		"prefix":"minted",
+		"body":[
+			"\\begin{minted}",
+				"\t[${2:options%keyvals}]{${1:language}}",
+			"\\end{minted}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -201,26 +236,18 @@
 			"\\begin{listing}",
 				"\t$1",
 			"\\end{listing}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"minted":{
-		"prefix":"minted",
-		"body":[
-			"\\begin{minted}",
-				"\t$1",
-			"\\end{minted}"
-		]
-	},
-
-
-	"listing":{
+	"listing[]":{
 		"prefix":"listing",
 		"body":[
 			"\\begin{listing}",
-				"\t$1",
+				"\t[${1:placement}]",
 			"\\end{listing}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

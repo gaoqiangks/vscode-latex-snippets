@@ -5,87 +5,8 @@
 		"prefix":"setupRefEnums",
 		"body":[
 			"\\setupRefEnums{${1:EnumID%special}}{${2:PrintName}}"
-		]
-	},
-
-
-	"defRefEnum{}{}{}":{
-		"prefix":"defRefEnum",
-		"body":[
-			"\\defRefEnum{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
-		]
-	},
-
-
-	"defRefEnumHelper{}{}":{
-		"prefix":"defRefEnumHelper",
-		"body":[
-			"\\defRefEnumHelper{${1:EnumID}}{${2:FullName%text}}"
-		]
-	},
-
-
-	"defRefEnumInline{}{}{}":{
-		"prefix":"defRefEnumInline",
-		"body":[
-			"\\defRefEnumInline{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
-		]
-	},
-
-
-	"refEnumFull{}{}":{
-		"prefix":"refEnumFull",
-		"body":[
-			"\\refEnumFull{${1:EnumID%special}}{${2:LabelID}}"
-		]
-	},
-
-
-	"refEnumFullP{}{}":{
-		"prefix":"refEnumFullP",
-		"body":[
-			"\\refEnumFullP{${1:EnumID%special}}{${2:LabelID}}"
-		]
-	},
-
-
-	"refEnumFullT{}{}":{
-		"prefix":"refEnumFullT",
-		"body":[
-			"\\refEnumFullT{${1:EnumID%special}}{${2:LabelID}}"
-		]
-	},
-
-
-	"refEnum{}{}":{
-		"prefix":"refEnum",
-		"body":[
-			"\\refEnum{${1:EnumID%special}}{${2:LabelID}}"
-		]
-	},
-
-
-	"refenumenclosing{}":{
-		"prefix":"refenumenclosing",
-		"body":[
-			"\\refenumenclosing{${1:arg}}"
-		]
-	},
-
-
-	"refenuminlineenclosing{}":{
-		"prefix":"refenuminlineenclosing",
-		"body":[
-			"\\refenuminlineenclosing{${1:arg}}"
-		]
-	},
-
-
-	"labelname{}":{
-		"prefix":"labelname",
-		"body":[
-			"\\labelname{${1:LabelID}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"setupRefEnums",
 		"body":[
 			"\\setupRefEnums[${3:separator}]{${1:EnumID%special}}{${2:PrintName}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defRefEnum{}{}{}":{
+		"prefix":"defRefEnum",
+		"body":[
+			"\\defRefEnum{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,26 @@
 		"prefix":"defRefEnum",
 		"body":[
 			"\\defRefEnum[${4:wrap csname}]{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defRefEnumHelper{}{}":{
+		"prefix":"defRefEnumHelper",
+		"body":[
+			"\\defRefEnumHelper{${1:EnumID}}{${2:FullName%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defRefEnumInline{}{}{}":{
+		"prefix":"defRefEnumInline",
+		"body":[
+			"\\defRefEnumInline{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +59,70 @@
 		"prefix":"defRefEnumInline",
 		"body":[
 			"\\defRefEnumInline[${4:wrap csname}]{${1:EnumID%special}}{${2:FullName%text}}{${3:LabelID}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"refEnumFull{}{}":{
+		"prefix":"refEnumFull",
+		"body":[
+			"\\refEnumFull{${1:EnumID%special}}{${2:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refEnumFullP{}{}":{
+		"prefix":"refEnumFullP",
+		"body":[
+			"\\refEnumFullP{${1:EnumID%special}}{${2:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refEnumFullT{}{}":{
+		"prefix":"refEnumFullT",
+		"body":[
+			"\\refEnumFullT{${1:EnumID%special}}{${2:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refEnum{}{}":{
+		"prefix":"refEnum",
+		"body":[
+			"\\refEnum{${1:EnumID%special}}{${2:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refenumenclosing{}":{
+		"prefix":"refenumenclosing",
+		"body":[
+			"\\refenumenclosing{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refenuminlineenclosing{}":{
+		"prefix":"refenuminlineenclosing",
+		"body":[
+			"\\refenuminlineenclosing{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelname{}":{
+		"prefix":"labelname",
+		"body":[
+			"\\labelname{${1:LabelID}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

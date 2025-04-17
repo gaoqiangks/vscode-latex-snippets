@@ -5,215 +5,8 @@
 		"prefix":"absbox",
 		"body":[
 			"\\absbox"
-		]
-	},
-
-
-	"accepted{}":{
-		"prefix":"accepted",
-		"body":[
-			"\\accepted{${1:date}}"
-		]
-	},
-
-
-	"affiliation{}":{
-		"prefix":"affiliation",
-		"body":[
-			"\\affiliation{${1:affiliation%text}}"
-		]
-	},
-
-
-	"altaffiliation{}":{
-		"prefix":"altaffiliation",
-		"body":[
-			"\\altaffiliation{${1:affiliation%text}}"
-		]
-	},
-
-
-	"andname":{
-		"prefix":"andname",
-		"body":[
-			"\\andname"
-		]
-	},
-
-
-	"blankaffiliation":{
-		"prefix":"blankaffiliation",
-		"body":[
-			"\\blankaffiliation"
-		]
-	},
-
-
-	"collaboration{}":{
-		"prefix":"collaboration",
-		"body":[
-			"\\collaboration{${1:collaboration%text}}"
-		]
-	},
-
-
-	"doauthor{}{}{}":{
-		"prefix":"doauthor",
-		"body":[
-			"\\doauthor{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"eid{}":{
-		"prefix":"eid",
-		"body":[
-			"\\eid{${1:eid}}"
-		]
-	},
-
-
-	"email{}":{
-		"prefix":"email",
-		"body":[
-			"\\email{${1:email address%URL}}"
-		]
-	},
-
-
-	"endpage{}":{
-		"prefix":"endpage",
-		"body":[
-			"\\endpage{${1:endpage}}"
-		]
-	},
-
-
-	"firstname{}":{
-		"prefix":"firstname",
-		"body":[
-			"\\firstname{${1:firstname}}"
-		]
-	},
-
-
-	"homepage{}":{
-		"prefix":"homepage",
-		"body":[
-			"\\homepage{${1:URL}}"
-		]
-	},
-
-
-	"issuenumber{}":{
-		"prefix":"issuenumber",
-		"body":[
-			"\\issuenumber{${1:number}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:word1; word2; ...%text}}"
-		]
-	},
-
-
-	"noaffiliation":{
-		"prefix":"noaffiliation",
-		"body":[
-			"\\noaffiliation"
-		]
-	},
-
-
-	"pacs{}":{
-		"prefix":"pacs",
-		"body":[
-			"\\pacs{${1:PACS codes}}"
-		]
-	},
-
-
-	"preprint{}":{
-		"prefix":"preprint",
-		"body":[
-			"\\preprint{${1:text%plain}}"
-		]
-	},
-
-
-	"published{}":{
-		"prefix":"published",
-		"body":[
-			"\\published{${1:date}}"
-		]
-	},
-
-
-	"received{}":{
-		"prefix":"received",
-		"body":[
-			"\\received{${1:date}}"
-		]
-	},
-
-
-	"revised{}":{
-		"prefix":"revised",
-		"body":[
-			"\\revised{${1:date}}"
-		]
-	},
-
-
-	"startpage{}":{
-		"prefix":"startpage",
-		"body":[
-			"\\startpage{${1:startpage}}"
-		]
-	},
-
-
-	"surname{}":{
-		"prefix":"surname",
-		"body":[
-			"\\surname{${1:surname}}"
-		]
-	},
-
-
-	"theaffil":{
-		"prefix":"theaffil",
-		"body":[
-			"\\theaffil"
-		]
-	},
-
-
-	"thecollab":{
-		"prefix":"thecollab",
-		"body":[
-			"\\thecollab"
-		]
-	},
-
-
-	"volumenumber{}":{
-		"prefix":"volumenumber",
-		"body":[
-			"\\volumenumber{${1:number}}"
-		]
-	},
-
-
-	"volumeyear{}":{
-		"prefix":"volumeyear",
-		"body":[
-			"\\volumeyear{${1:year}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +14,26 @@
 		"prefix":"accepted",
 		"body":[
 			"\\accepted[${2:optional text%text}]{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"accepted{}":{
+		"prefix":"accepted",
+		"body":[
+			"\\accepted{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"affiliation{}":{
+		"prefix":"affiliation",
+		"body":[
+			"\\affiliation{${1:affiliation%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +41,62 @@
 		"prefix":"altaffiliation",
 		"body":[
 			"\\altaffiliation[${2:optional text%text}]{${1:affiliation%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"altaffiliation{}":{
+		"prefix":"altaffiliation",
+		"body":[
+			"\\altaffiliation{${1:affiliation%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"andname":{
+		"prefix":"andname",
+		"body":[
+			"\\andname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"blankaffiliation":{
+		"prefix":"blankaffiliation",
+		"body":[
+			"\\blankaffiliation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"collaboration{}":{
+		"prefix":"collaboration",
+		"body":[
+			"\\collaboration{${1:collaboration%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"doauthor{}{}{}":{
+		"prefix":"doauthor",
+		"body":[
+			"\\doauthor{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eid{}":{
+		"prefix":"eid",
+		"body":[
+			"\\eid{${1:eid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +104,35 @@
 		"prefix":"email",
 		"body":[
 			"\\email[${2:optional text%text}]{${1:email address%URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"email{}":{
+		"prefix":"email",
+		"body":[
+			"\\email{${1:email address%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endpage{}":{
+		"prefix":"endpage",
+		"body":[
+			"\\endpage{${1:endpage}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"firstname{}":{
+		"prefix":"firstname",
+		"body":[
+			"\\firstname{${1:firstname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +140,62 @@
 		"prefix":"homepage",
 		"body":[
 			"\\homepage[${2:optional text%text}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"homepage{}":{
+		"prefix":"homepage",
+		"body":[
+			"\\homepage{${1:URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"issuenumber{}":{
+		"prefix":"issuenumber",
+		"body":[
+			"\\issuenumber{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:word1; word2; ...%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noaffiliation":{
+		"prefix":"noaffiliation",
+		"body":[
+			"\\noaffiliation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pacs{}":{
+		"prefix":"pacs",
+		"body":[
+			"\\pacs{${1:PACS codes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preprint{}":{
+		"prefix":"preprint",
+		"body":[
+			"\\preprint{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +203,17 @@
 		"prefix":"published",
 		"body":[
 			"\\published[${2:optional text%text}]{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"published{}":{
+		"prefix":"published",
+		"body":[
+			"\\published{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +221,17 @@
 		"prefix":"received",
 		"body":[
 			"\\received[${2:optional text%text}]{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"received{}":{
+		"prefix":"received",
+		"body":[
+			"\\received{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,6 +239,70 @@
 		"prefix":"revised",
 		"body":[
 			"\\revised[${2:optional text%text}]{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"revised{}":{
+		"prefix":"revised",
+		"body":[
+			"\\revised{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startpage{}":{
+		"prefix":"startpage",
+		"body":[
+			"\\startpage{${1:startpage}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"surname{}":{
+		"prefix":"surname",
+		"body":[
+			"\\surname{${1:surname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theaffil":{
+		"prefix":"theaffil",
+		"body":[
+			"\\theaffil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thecollab":{
+		"prefix":"thecollab",
+		"body":[
+			"\\thecollab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"volumenumber{}":{
+		"prefix":"volumenumber",
+		"body":[
+			"\\volumenumber{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"volumeyear{}":{
+		"prefix":"volumeyear",
+		"body":[
+			"\\volumeyear{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,31 +5,8 @@
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem{${1:envname}}{${2:thm name}}"
-		]
-	},
-
-
-	"Label{}":{
-		"prefix":"Label",
-		"body":[
-			"\\Label{${1:key}}"
-		]
-	},
-
-
-	"proofname":{
-		"prefix":"proofname",
-		"body":[
-			"\\proofname"
-		]
-	},
-
-
-	"theoremsymbol{}":{
-		"prefix":"theoremsymbol",
-		"body":[
-			"\\theoremsymbol{${1:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,8 @@
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +23,8 @@
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem{${1:envname}}{${2:thm name}}[${3:counter within}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +32,8 @@
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}[${4:counter within}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +41,17 @@
 		"prefix":"definetheorem",
 		"body":[
 			"\\definetheorem{${1:envname}}[${3:thm plural name}]{${2:thm name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Label{}":{
+		"prefix":"Label",
+		"body":[
+			"\\Label{${1:key}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,26 @@
 		"prefix":"theoremmarkup",
 		"body":[
 			"\\theoremmarkup[${1:header font}][${2:body font}][${3:symbol}][${4:indent}][${5:separator}][${6:numbering}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"proofname":{
+		"prefix":"proofname",
+		"body":[
+			"\\proofname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theoremsymbol{}":{
+		"prefix":"theoremsymbol",
+		"body":[
+			"\\theoremsymbol{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,6 +88,7 @@
 			"\\begin{proof}",
 				"\t$1",
 			"\\end{proof}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

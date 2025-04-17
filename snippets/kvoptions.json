@@ -5,95 +5,8 @@
 		"prefix":"ProcessKeyvalOptions",
 		"body":[
 			"\\ProcessKeyvalOptions{${1:family}}"
-		]
-	},
-
-
-	"ProcessLocalKeyvalOptions{}":{
-		"prefix":"ProcessLocalKeyvalOptions",
-		"body":[
-			"\\ProcessLocalKeyvalOptions{${1:family}}"
-		]
-	},
-
-
-	"SetupKeyvalOptions{}":{
-		"prefix":"SetupKeyvalOptions",
-		"body":[
-			"\\SetupKeyvalOptions{${1:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareStringOption{}":{
-		"prefix":"DeclareStringOption",
-		"body":[
-			"\\DeclareStringOption{${1:key%plain}}"
-		]
-	},
-
-
-	"DeclareBoolOption{}":{
-		"prefix":"DeclareBoolOption",
-		"body":[
-			"\\DeclareBoolOption{${1:key%plain}}"
-		]
-	},
-
-
-	"DeclareComplementaryOption{}{}":{
-		"prefix":"DeclareComplementaryOption",
-		"body":[
-			"\\DeclareComplementaryOption{${1:key%plain}}{${2:parent}}"
-		]
-	},
-
-
-	"DeclareVoidOption{}{}":{
-		"prefix":"DeclareVoidOption",
-		"body":[
-			"\\DeclareVoidOption{${1:key%plain}}{${2:code}}"
-		]
-	},
-
-
-	"DeclareDefaultOption{}":{
-		"prefix":"DeclareDefaultOption",
-		"body":[
-			"\\DeclareDefaultOption{${1:code}}"
-		]
-	},
-
-
-	"DeclareLocalOption{}":{
-		"prefix":"DeclareLocalOption",
-		"body":[
-			"\\DeclareLocalOption{${1:option}}"
-		]
-	},
-
-
-	"DeclareLocalOptions{}":{
-		"prefix":"DeclareLocalOptions",
-		"body":[
-			"\\DeclareLocalOptions{${1:options}}"
-		]
-	},
-
-
-	"DisableKeyvalOption{}{}":{
-		"prefix":"DisableKeyvalOption",
-		"body":[
-			"\\DisableKeyvalOption{${1:family}}{${2:key%plain}}"
-		]
-	},
-
-
-	"AddToKeyvalOption{}{}{}":{
-		"prefix":"AddToKeyvalOption",
-		"body":[
-			"\\AddToKeyvalOption{${1:family}}{${2:key%plain}}{${3:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,17 @@
 		"prefix":"*ProcessKeyvalOptions",
 		"body":[
 			"\\ProcessKeyvalOptions*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ProcessLocalKeyvalOptions{}":{
+		"prefix":"ProcessLocalKeyvalOptions",
+		"body":[
+			"\\ProcessLocalKeyvalOptions{${1:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,15 +32,26 @@
 		"prefix":"*ProcessLocalKeyvalOptions",
 		"body":[
 			"\\ProcessLocalKeyvalOptions*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"AddToKeyvalOption*{}{}":{
-		"prefix":"*AddToKeyvalOption",
+	"SetupKeyvalOptions{}":{
+		"prefix":"SetupKeyvalOptions",
 		"body":[
-			"\\AddToKeyvalOption*{${1:key%plain}}{${2:code}}"
-		]
+			"\\SetupKeyvalOptions{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareStringOption{}":{
+		"prefix":"DeclareStringOption",
+		"body":[
+			"\\DeclareStringOption{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +59,17 @@
 		"prefix":"DeclareStringOption",
 		"body":[
 			"\\DeclareStringOption[${2:init}]{${1:key%plain}}[${3:default}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareBoolOption{}":{
+		"prefix":"DeclareBoolOption",
+		"body":[
+			"\\DeclareBoolOption{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +77,62 @@
 		"prefix":"DeclareBoolOption",
 		"body":[
 			"\\DeclareBoolOption[${2:init}]{${1:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareComplementaryOption{}{}":{
+		"prefix":"DeclareComplementaryOption",
+		"body":[
+			"\\DeclareComplementaryOption{${1:key%plain}}{${2:parent}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareVoidOption{}{}":{
+		"prefix":"DeclareVoidOption",
+		"body":[
+			"\\DeclareVoidOption{${1:key%plain}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareDefaultOption{}":{
+		"prefix":"DeclareDefaultOption",
+		"body":[
+			"\\DeclareDefaultOption{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLocalOption{}":{
+		"prefix":"DeclareLocalOption",
+		"body":[
+			"\\DeclareLocalOption{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLocalOptions{}":{
+		"prefix":"DeclareLocalOptions",
+		"body":[
+			"\\DeclareLocalOptions{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisableKeyvalOption{}{}":{
+		"prefix":"DisableKeyvalOption",
+		"body":[
+			"\\DisableKeyvalOption{${1:family}}{${2:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,6 +140,25 @@
 		"prefix":"DisableKeyvalOption",
 		"body":[
 			"\\DisableKeyvalOption[${3:options%keyvals}]{${1:family}}{${2:key%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddToKeyvalOption{}{}{}":{
+		"prefix":"AddToKeyvalOption",
+		"body":[
+			"\\AddToKeyvalOption{${1:family}}{${2:key%plain}}{${3:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddToKeyvalOption*{}{}":{
+		"prefix":"*AddToKeyvalOption",
+		"body":[
+			"\\AddToKeyvalOption*{${1:key%plain}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,26 +5,29 @@
 		"prefix":"bibliststyle",
 		"body":[
 			"\\bibliststyle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"biblist":{
+	"biblist{}":{
 		"prefix":"biblist",
 		"body":[
 			"\\begin{biblist}",
-				"\t$1",
+				"\t{${1:prototype}}",
 			"\\end{biblist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"biblist":{
+	"biblist[]{}":{
 		"prefix":"biblist",
 		"body":[
 			"\\begin{biblist}",
-				"\t$1",
+				"\t[${2:starting num}]{${1:prototype}}",
 			"\\end{biblist}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

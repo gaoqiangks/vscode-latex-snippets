@@ -5,7 +5,8 @@
 		"prefix":"definecollection",
 		"body":[
 			"\\definecollection{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,36 +14,40 @@
 		"prefix":"includecollection",
 		"body":[
 			"\\includecollection{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"collect*":{
-		"prefix":"collect",
+	"collect*{}{}{}{}{}":{
+		"prefix":"*collect",
 		"body":[
 			"\\begin{collect*}",
-				"\t$1",
+				"\t{${1:name}}{${2:before}}{${3:after}}{${4:before-col}}{${5:after-col}}",
 			"\\end{collect*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"collect":{
+	"collect{}{}{}":{
 		"prefix":"collect",
 		"body":[
 			"\\begin{collect}",
-				"\t$1",
+				"\t{${1:name}}{${2:before-col}}{${3:after-col}}",
 			"\\end{collect}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"collectinmacro":{
+	"collectinmacro{}{}{}":{
 		"prefix":"collectinmacro",
 		"body":[
 			"\\begin{collectinmacro}",
-				"\t$1",
+				"\t{${1:macro%cmd}}{${2:before}}{${3:after}}",
 			"\\end{collectinmacro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

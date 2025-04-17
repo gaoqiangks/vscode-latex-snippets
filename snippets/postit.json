@@ -5,23 +5,8 @@
 		"prefix":"MiniPostIt",
 		"body":[
 			"\\MiniPostIt{${1:contenu%text}}"
-		]
-	},
-
-
-	"MiniPostIt*{}":{
-		"prefix":"*MiniPostIt",
-		"body":[
-			"\\MiniPostIt*{${1:contenu%text}}"
-		]
-	},
-
-
-	"MiniPostIt*[]{}":{
-		"prefix":"*MiniPostIt",
-		"body":[
-			"\\MiniPostIt*[${2:color}]{${1:contenu%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,26 @@
 		"prefix":"MiniPostIt",
 		"body":[
 			"\\MiniPostIt[${2:color}]{${1:contenu%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MiniPostIt*{}":{
+		"prefix":"*MiniPostIt",
+		"body":[
+			"\\MiniPostIt*{${1:contenu%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"MiniPostIt*[]{}":{
+		"prefix":"*MiniPostIt",
+		"body":[
+			"\\MiniPostIt*[${2:color}]{${1:contenu%text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -39,57 +43,41 @@
 			"\\begin{PostIt}",
 				"\t$1",
 			"\\end{PostIt}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PostIt":{
+	"PostIt<>":{
 		"prefix":"PostIt",
 		"body":[
 			"\\begin{PostIt}",
-				"\t$1",
+				"\t<${1:options tcbox}>",
 			"\\end{PostIt}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PostItNote":{
-		"prefix":"PostItNote",
-		"body":[
-			"\\begin{PostItNote}",
-				"\t$1",
-			"\\end{PostItNote}"
-		]
-	},
-
-
-	"PostItNote":{
-		"prefix":"PostItNote",
-		"body":[
-			"\\begin{PostItNote}",
-				"\t$1",
-			"\\end{PostItNote}"
-		]
-	},
-
-
-	"PostIt":{
+	"PostIt[]":{
 		"prefix":"PostIt",
 		"body":[
 			"\\begin{PostIt}",
-				"\t$1",
+				"\t[${1:clés%keyvals}]",
 			"\\end{PostIt}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"PostIt":{
+	"PostIt[]<>":{
 		"prefix":"PostIt",
 		"body":[
 			"\\begin{PostIt}",
-				"\t$1",
+				"\t[${1:clés%keyvals}]<${2:options tcbox}>",
 			"\\end{PostIt}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -99,16 +87,40 @@
 			"\\begin{PostItNote}",
 				"\t$1",
 			"\\end{PostItNote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PostItNote":{
+	"PostItNote<>":{
 		"prefix":"PostItNote",
 		"body":[
 			"\\begin{PostItNote}",
-				"\t$1",
+				"\t<${1:tcbox options}>",
 			"\\end{PostItNote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PostItNote[]":{
+		"prefix":"PostItNote",
+		"body":[
+			"\\begin{PostItNote}",
+				"\t[${1:options%keyvals}]",
+			"\\end{PostItNote}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PostItNote[]<>":{
+		"prefix":"PostItNote",
+		"body":[
+			"\\begin{PostItNote}",
+				"\t[${1:options%keyvals}]<${2:tcbox options}>",
+			"\\end{PostItNote}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

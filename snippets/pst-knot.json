@@ -5,15 +5,8 @@
 		"prefix":"psKnot",
 		"body":[
 			"\\psKnot(${2:x},${3:y}){${1:knot type}}"
-		]
-	},
-
-
-	"psBorromean(){}{}":{
-		"prefix":"psBorromean",
-		"body":[
-			"\\psBorromean(${3:x},${4:y}){${1:circle radius}}{${2:inner radius}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"psKnot",
 		"body":[
 			"\\psKnot[${2:options%keyvals}](${3:x},${4:y}){${1:knot type}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBorromean(){}{}":{
+		"prefix":"psBorromean",
+		"body":[
+			"\\psBorromean(${3:x},${4:y}){${1:circle radius}}{${2:inner radius}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +32,7 @@
 		"prefix":"psBorromean",
 		"body":[
 			"\\psBorromean[${3:options%keyvals}](${4:x},${5:y}){${1:circle radius}}{${2:inner radius}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

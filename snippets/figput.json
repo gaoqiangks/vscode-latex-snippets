@@ -5,47 +5,8 @@
 		"prefix":"FigPut",
 		"body":[
 			"\\FigPut{${1:fig_name,fig_ht}}"
-		]
-	},
-
-
-	"SetInnerMargin{}":{
-		"prefix":"SetInnerMargin",
-		"body":[
-			"\\SetInnerMargin{${1:length}}"
-		]
-	},
-
-
-	"SetOuterMargin{}":{
-		"prefix":"SetOuterMargin",
-		"body":[
-			"\\SetOuterMargin{${1:length}}"
-		]
-	},
-
-
-	"NeverSkip":{
-		"prefix":"NeverSkip",
-		"body":[
-			"\\NeverSkip"
-		]
-	},
-
-
-	"AllowSkip":{
-		"prefix":"AllowSkip",
-		"body":[
-			"\\AllowSkip"
-		]
-	},
-
-
-	"LoadFigureCode{}":{
-		"prefix":"LoadFigureCode",
-		"body":[
-			"\\LoadFigureCode{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,26 +14,74 @@
 		"prefix":"FigPut",
 		"body":[
 			"\\FigPut{${1:fig_name,fig_ht}}[${2:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"figput":{
-		"prefix":"figput",
+	"SetInnerMargin{}":{
+		"prefix":"SetInnerMargin",
 		"body":[
-			"\\begin{figput}",
-				"\t$1",
-			"\\end{figput}"
-		]
+			"\\SetInnerMargin{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"figput":{
+	"SetOuterMargin{}":{
+		"prefix":"SetOuterMargin",
+		"body":[
+			"\\SetOuterMargin{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NeverSkip":{
+		"prefix":"NeverSkip",
+		"body":[
+			"\\NeverSkip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AllowSkip":{
+		"prefix":"AllowSkip",
+		"body":[
+			"\\AllowSkip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoadFigureCode{}":{
+		"prefix":"LoadFigureCode",
+		"body":[
+			"\\LoadFigureCode{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figput{}":{
 		"prefix":"figput",
 		"body":[
 			"\\begin{figput}",
-				"\t$1",
+				"\t{${1:fig_name,fig_ht}}",
 			"\\end{figput}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"figput{}[]":{
+		"prefix":"figput",
+		"body":[
+			"\\begin{figput}",
+				"\t{${1:fig_name,fig_ht}}[${2:options}]",
+			"\\end{figput}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

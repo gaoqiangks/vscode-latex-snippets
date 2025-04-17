@@ -5,7 +5,8 @@
 		"prefix":"listalgorithmname",
 		"body":[
 			"\\listalgorithmname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"listofalgorithms",
 		"body":[
 			"\\listofalgorithms"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,16 +25,18 @@
 			"\\begin{algorithm}",
 				"\t$1",
 			"\\end{algorithm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"algorithm":{
+	"algorithm[]":{
 		"prefix":"algorithm",
 		"body":[
 			"\\begin{algorithm}",
-				"\t$1",
+				"\t[${1:placement}]",
 			"\\end{algorithm}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

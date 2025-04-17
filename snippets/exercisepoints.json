@@ -5,7 +5,8 @@
 		"prefix":"points",
 		"body":[
 			"\\points{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"itempoints",
 		"body":[
 			"\\itempoints{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"setitempointsunit",
 		"body":[
 			"\\setitempointsunit{${1:singular}}{${2:plural}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"numberofexercises",
 		"body":[
 			"\\numberofexercises"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"totalpoints",
 		"body":[
 			"\\totalpoints"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"getpoints",
 		"body":[
 			"\\getpoints{${1:exercise number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"bonuspoints",
 		"body":[
 			"\\bonuspoints{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"getbonuspoints",
 		"body":[
 			"\\getbonuspoints"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"totalpointswithbonus",
 		"body":[
 			"\\totalpointswithbonus"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"AtBeginExercise",
 		"body":[
 			"\\AtBeginExercise{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"AtEndExercise",
 		"body":[
 			"\\AtEndExercise{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"currentexercisetitle",
 		"body":[
 			"\\currentexercisetitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"currentexercisenumber",
 		"body":[
 			"\\currentexercisenumber"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"currentexercisepoints",
 		"body":[
 			"\\currentexercisepoints"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"AtBeginSubexercise",
 		"body":[
 			"\\AtBeginSubexercise{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"AtEndSubexercise",
 		"body":[
 			"\\AtEndSubexercise{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"currentsubexercisenumber",
 		"body":[
 			"\\currentsubexercisenumber"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"currentsubexercisepoints",
 		"body":[
 			"\\currentsubexercisepoints"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"currentsubexercisetitle",
 		"body":[
 			"\\currentsubexercisetitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -159,27 +178,19 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subexercise":{
-		"prefix":"subexercise",
-		"body":[
-			"\\begin{subexercise}",
-				"\t$1",
-			"\\end{subexercise}"
-		]
-	},
-
-
-	"exercise":{
+	"exercise[]":{
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-				"\t$1",
+				"\t[${1:title%text}]",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,6 +200,18 @@
 			"\\begin{subexercise}",
 				"\t$1",
 			"\\end{subexercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subexercise[]":{
+		"prefix":"subexercise",
+		"body":[
+			"\\begin{subexercise}",
+				"\t[${1:title%text}]",
+			"\\end{subexercise}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

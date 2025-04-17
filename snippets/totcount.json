@@ -5,39 +5,8 @@
 		"prefix":"regtotcounter",
 		"body":[
 			"\\regtotcounter{${1:counter}}"
-		]
-	},
-
-
-	"newtotcounter{}":{
-		"prefix":"newtotcounter",
-		"body":[
-			"\\newtotcounter{${1:counter}}"
-		]
-	},
-
-
-	"total{}":{
-		"prefix":"total",
-		"body":[
-			"\\total{${1:counter}}"
-		]
-	},
-
-
-	"totvalue{}":{
-		"prefix":"totvalue",
-		"body":[
-			"\\totvalue{${1:counter}}"
-		]
-	},
-
-
-	"usetotcountfile{}":{
-		"prefix":"usetotcountfile",
-		"body":[
-			"\\usetotcountfile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,17 @@
 		"prefix":"regtotcounter",
 		"body":[
 			"\\regtotcounter[${2:options%keyvals}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtotcounter{}":{
+		"prefix":"newtotcounter",
+		"body":[
+			"\\newtotcounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +32,34 @@
 		"prefix":"newtotcounter",
 		"body":[
 			"\\newtotcounter[${2:option%keyvals}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"total{}":{
+		"prefix":"total",
+		"body":[
+			"\\total{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"totvalue{}":{
+		"prefix":"totvalue",
+		"body":[
+			"\\totvalue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usetotcountfile{}":{
+		"prefix":"usetotcountfile",
+		"body":[
+			"\\usetotcountfile{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

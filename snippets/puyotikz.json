@@ -5,7 +5,8 @@
 		"prefix":"puyosmallscale",
 		"body":[
 			"\\puyosmallscale"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"puyobigscale",
 		"body":[
 			"\\puyobigscale"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,31 +23,8 @@
 		"prefix":"puyoboard",
 		"body":[
 			"\\puyoboard{${1:board string}}{${2:next puyos string}}"
-		]
-	},
-
-
-	"puyomarker{}":{
-		"prefix":"puyomarker",
-		"body":[
-			"\\puyomarker{${1:marker string}}"
-		]
-	},
-
-
-	"puyogrid{}":{
-		"prefix":"puyogrid",
-		"body":[
-			"\\puyogrid{${1:board string}}"
-		]
-	},
-
-
-	"puyocolor{}{}":{
-		"prefix":"puyocolor",
-		"body":[
-			"\\puyocolor{${1:name}}{${2:r,g,b}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +32,26 @@
 		"prefix":"puyoboard",
 		"body":[
 			"\\puyoboard[${3:options%keyvals}]{${1:board string}}{${2:next puyos string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"puyomarker{}":{
+		"prefix":"puyomarker",
+		"body":[
+			"\\puyomarker{${1:marker string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"puyogrid{}":{
+		"prefix":"puyogrid",
+		"body":[
+			"\\puyogrid{${1:board string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"puyogrid",
 		"body":[
 			"\\puyogrid[${2:options%keyvals}]{${1:board string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"puyocolor{}{}":{
+		"prefix":"puyocolor",
+		"body":[
+			"\\puyocolor{${1:name}}{${2:r,g,b}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -71,16 +79,18 @@
 			"\\begin{puyotikz}",
 				"\t$1",
 			"\\end{puyotikz}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"puyotikz":{
+	"puyotikz[]":{
 		"prefix":"puyotikz",
 		"body":[
 			"\\begin{puyotikz}",
-				"\t$1",
+				"\t[${1:scale}]",
 			"\\end{puyotikz}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

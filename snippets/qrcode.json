@@ -5,31 +5,8 @@
 		"prefix":"qrcode",
 		"body":[
 			"\\qrcode{${1:URL}}"
-		]
-	},
-
-
-	"qrset{}":{
-		"prefix":"qrset",
-		"body":[
-			"\\qrset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"qrcode*{}":{
-		"prefix":"*qrcode",
-		"body":[
-			"\\qrcode*{${1:URL}}"
-		]
-	},
-
-
-	"qrcode*[]{}":{
-		"prefix":"*qrcode",
-		"body":[
-			"\\qrcode*[${2:options%keyvals}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +14,34 @@
 		"prefix":"qrcode",
 		"body":[
 			"\\qrcode[${2:options%keyvals}]{${1:URL}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"qrcode*{}":{
+		"prefix":"*qrcode",
+		"body":[
+			"\\qrcode*{${1:URL}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"qrcode*[]{}":{
+		"prefix":"*qrcode",
+		"body":[
+			"\\qrcode*[${2:options%keyvals}]{${1:URL}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"qrset{}":{
+		"prefix":"qrset",
+		"body":[
+			"\\qrset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

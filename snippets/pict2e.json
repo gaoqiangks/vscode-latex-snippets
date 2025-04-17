@@ -5,7 +5,8 @@
 		"prefix":"line",
 		"body":[
 			"\\line(${2:x},${3:y}){${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"vector",
 		"body":[
 			"\\vector(${2:x},${3:y}){${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,223 +23,8 @@
 		"prefix":"circle",
 		"body":[
 			"\\circle{${1:diameter}}"
-		]
-	},
-
-
-	"oval()":{
-		"prefix":"oval",
-		"body":[
-			"\\oval(${1:x},${2:y})"
-		]
-	},
-
-
-	"maxovalrad":{
-		"prefix":"maxovalrad",
-		"body":[
-			"\\maxovalrad"
-		]
-	},
-
-
-	"bezier{}()()()":{
-		"prefix":"bezier",
-		"body":[
-			"\\bezier{${1:n}}(${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
-		]
-	},
-
-
-	"qbezier()()()":{
-		"prefix":"qbezier",
-		"body":[
-			"\\qbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})"
-		]
-	},
-
-
-	"cbezier()()()()":{
-		"prefix":"cbezier",
-		"body":[
-			"\\cbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})(${7:dx},${8:dy})"
-		]
-	},
-
-
-	"qbeziermax":{
-		"prefix":"qbeziermax",
-		"body":[
-			"\\qbeziermax"
-		]
-	},
-
-
-	"arc{}":{
-		"prefix":"arc",
-		"body":[
-			"\\arc{${1:radius}}"
-		]
-	},
-
-
-	"Line()()":{
-		"prefix":"Line",
-		"body":[
-			"\\Line(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"Vector()()":{
-		"prefix":"Vector",
-		"body":[
-			"\\Vector(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
-	},
-
-
-	"moveto()":{
-		"prefix":"moveto",
-		"body":[
-			"\\moveto(${1:x},${2:y})"
-		]
-	},
-
-
-	"lineto()":{
-		"prefix":"lineto",
-		"body":[
-			"\\lineto(${1:x},${2:y})"
-		]
-	},
-
-
-	"curveto()()()":{
-		"prefix":"curveto",
-		"body":[
-			"\\curveto(${1:x2},${2:y2})(${3:x3},${4:y3})(${5:x4},${6:y4})"
-		]
-	},
-
-
-	"circlearc{}{}{}{}{}":{
-		"prefix":"circlearc",
-		"body":[
-			"\\circlearc{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
-		]
-	},
-
-
-	"closepath":{
-		"prefix":"closepath",
-		"body":[
-			"\\closepath"
-		]
-	},
-
-
-	"strokepath":{
-		"prefix":"strokepath",
-		"body":[
-			"\\strokepath"
-		]
-	},
-
-
-	"fillpath":{
-		"prefix":"fillpath",
-		"body":[
-			"\\fillpath"
-		]
-	},
-
-
-	"buttcap":{
-		"prefix":"buttcap",
-		"body":[
-			"\\buttcap"
-		]
-	},
-
-
-	"roundcap":{
-		"prefix":"roundcap",
-		"body":[
-			"\\roundcap"
-		]
-	},
-
-
-	"squarecap":{
-		"prefix":"squarecap",
-		"body":[
-			"\\squarecap"
-		]
-	},
-
-
-	"miterjoin":{
-		"prefix":"miterjoin",
-		"body":[
-			"\\miterjoin"
-		]
-	},
-
-
-	"roundjoin":{
-		"prefix":"roundjoin",
-		"body":[
-			"\\roundjoin"
-		]
-	},
-
-
-	"beveljoin":{
-		"prefix":"beveljoin",
-		"body":[
-			"\\beveljoin"
-		]
-	},
-
-
-	"thicklines":{
-		"prefix":"thicklines",
-		"body":[
-			"\\thicklines"
-		]
-	},
-
-
-	"thinlines":{
-		"prefix":"thinlines",
-		"body":[
-			"\\thinlines"
-		]
-	},
-
-
-	"ltxarrows":{
-		"prefix":"ltxarrows",
-		"body":[
-			"\\ltxarrows"
-		]
-	},
-
-
-	"pstarrows":{
-		"prefix":"pstarrows",
-		"body":[
-			"\\pstarrows"
-		]
-	},
-
-
-	"OriginalPictureCmds":{
-		"prefix":"OriginalPictureCmds",
-		"body":[
-			"\\OriginalPictureCmds"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,23 +32,17 @@
 		"prefix":"*circle",
 		"body":[
 			"\\circle*{${1:diameter}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"arc*{}":{
-		"prefix":"*arc",
+	"oval()":{
+		"prefix":"oval",
 		"body":[
-			"\\arc*{${1:radius}}"
-		]
-	},
-
-
-	"arc*[]{}":{
-		"prefix":"*arc",
-		"body":[
-			"\\arc*[${2:angle1,angle2}]{${1:radius}}"
-		]
+			"\\oval(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +50,8 @@
 		"prefix":"oval",
 		"body":[
 			"\\oval[${1:radius}](${2:x},${3:y})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -277,7 +59,8 @@
 		"prefix":"oval",
 		"body":[
 			"\\oval(${2:x},${3:y})[${1:pos}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +68,35 @@
 		"prefix":"oval",
 		"body":[
 			"\\oval[${1:radius}](${3:x},${4:y})[${2:pos}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"maxovalrad":{
+		"prefix":"maxovalrad",
+		"body":[
+			"\\maxovalrad"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bezier{}()()()":{
+		"prefix":"bezier",
+		"body":[
+			"\\bezier{${1:n}}(${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qbezier()()()":{
+		"prefix":"qbezier",
+		"body":[
+			"\\qbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +104,17 @@
 		"prefix":"qbezier",
 		"body":[
 			"\\qbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cbezier()()()()":{
+		"prefix":"cbezier",
+		"body":[
+			"\\cbezier(${1:ax},${2:ay})(${3:bx},${4:by})(${5:cx},${6:cy})(${7:dx},${8:dy})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +122,26 @@
 		"prefix":"cbezier",
 		"body":[
 			"\\cbezier[${1:n}](${2:ax},${3:ay})(${4:bx},${5:by})(${6:cx},${7:cy})(${8:dx},${9:dy})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"qbeziermax":{
+		"prefix":"qbeziermax",
+		"body":[
+			"\\qbeziermax"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arc{}":{
+		"prefix":"arc",
+		"body":[
+			"\\arc{${1:radius}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +149,80 @@
 		"prefix":"arc",
 		"body":[
 			"\\arc[${2:angle1,angle2}]{${1:radius}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"arc*{}":{
+		"prefix":"*arc",
+		"body":[
+			"\\arc*{${1:radius}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"arc*[]{}":{
+		"prefix":"*arc",
+		"body":[
+			"\\arc*[${2:angle1,angle2}]{${1:radius}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Line()()":{
+		"prefix":"Line",
+		"body":[
+			"\\Line(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vector()()":{
+		"prefix":"Vector",
+		"body":[
+			"\\Vector(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moveto()":{
+		"prefix":"moveto",
+		"body":[
+			"\\moveto(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lineto()":{
+		"prefix":"lineto",
+		"body":[
+			"\\lineto(${1:x},${2:y})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curveto()()()":{
+		"prefix":"curveto",
+		"body":[
+			"\\curveto(${1:x2},${2:y2})(${3:x3},${4:y3})(${5:x4},${6:y4})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circlearc{}{}{}{}{}":{
+		"prefix":"circlearc",
+		"body":[
+			"\\circlearc{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,6 +230,133 @@
 		"prefix":"circlearc",
 		"body":[
 			"\\circlearc[${6:n}]{${1:x}}{${2:y}}{${3:radius}}{${4:angle1}}{${5:angle2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"closepath":{
+		"prefix":"closepath",
+		"body":[
+			"\\closepath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"strokepath":{
+		"prefix":"strokepath",
+		"body":[
+			"\\strokepath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fillpath":{
+		"prefix":"fillpath",
+		"body":[
+			"\\fillpath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"buttcap":{
+		"prefix":"buttcap",
+		"body":[
+			"\\buttcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"roundcap":{
+		"prefix":"roundcap",
+		"body":[
+			"\\roundcap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squarecap":{
+		"prefix":"squarecap",
+		"body":[
+			"\\squarecap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"miterjoin":{
+		"prefix":"miterjoin",
+		"body":[
+			"\\miterjoin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"roundjoin":{
+		"prefix":"roundjoin",
+		"body":[
+			"\\roundjoin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"beveljoin":{
+		"prefix":"beveljoin",
+		"body":[
+			"\\beveljoin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thicklines":{
+		"prefix":"thicklines",
+		"body":[
+			"\\thicklines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thinlines":{
+		"prefix":"thinlines",
+		"body":[
+			"\\thinlines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ltxarrows":{
+		"prefix":"ltxarrows",
+		"body":[
+			"\\ltxarrows"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstarrows":{
+		"prefix":"pstarrows",
+		"body":[
+			"\\pstarrows"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OriginalPictureCmds":{
+		"prefix":"OriginalPictureCmds",
+		"body":[
+			"\\OriginalPictureCmds"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

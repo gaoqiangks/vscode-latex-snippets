@@ -5,7 +5,8 @@
 		"prefix":"MyLogo",
 		"body":[
 			"\\MyLogo{${1:logo text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"LogoOn",
 		"body":[
 			"\\LogoOn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,55 +23,8 @@
 		"prefix":"LogoOff",
 		"body":[
 			"\\LogoOff"
-		]
-	},
-
-
-	"foilhead{}":{
-		"prefix":"foilhead",
-		"body":[
-			"\\foilhead{${1:title}}"
-		]
-	},
-
-
-	"rotatefoilhead{}":{
-		"prefix":"rotatefoilhead",
-		"body":[
-			"\\rotatefoilhead{${1:title}}"
-		]
-	},
-
-
-	"endfoil":{
-		"prefix":"endfoil",
-		"body":[
-			"\\endfoil"
-		]
-	},
-
-
-	"FoilTeX":{
-		"prefix":"FoilTeX",
-		"body":[
-			"\\FoilTeX"
-		]
-	},
-
-
-	"bm{}":{
-		"prefix":"bm",
-		"body":[
-			"\\bm{${1:text%plain}}"
-		]
-	},
-
-
-	"bmstyle{}{}":{
-		"prefix":"bmstyle",
-		"body":[
-			"\\bmstyle{${1:text%formula}}{${2:more text%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +32,17 @@
 		"prefix":"foilhead",
 		"body":[
 			"\\foilhead[${2:dimension%l}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"foilhead{}":{
+		"prefix":"foilhead",
+		"body":[
+			"\\foilhead{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +50,53 @@
 		"prefix":"rotatefoilhead",
 		"body":[
 			"\\rotatefoilhead[${2:dimension%l}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rotatefoilhead{}":{
+		"prefix":"rotatefoilhead",
+		"body":[
+			"\\rotatefoilhead{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endfoil":{
+		"prefix":"endfoil",
+		"body":[
+			"\\endfoil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FoilTeX":{
+		"prefix":"FoilTeX",
+		"body":[
+			"\\FoilTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bm{}":{
+		"prefix":"bm",
+		"body":[
+			"\\bm{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bmstyle{}{}":{
+		"prefix":"bmstyle",
+		"body":[
+			"\\bmstyle{${1:text%formula}}{${2:more text%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -95,7 +106,8 @@
 			"\\begin{boldequation}",
 				"\t$1",
 			"\\end{boldequation}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -105,7 +117,8 @@
 			"\\begin{boldequation*}",
 				"\t$1",
 			"\\end{boldequation*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -115,7 +128,19 @@
 			"\\begin{Theorem*}",
 				"\t$1",
 			"\\end{Theorem*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Theorem*[]":{
+		"prefix":"*Theorem",
+		"body":[
+			"\\begin{Theorem*}",
+				"\t[${1:heading%text}]",
+			"\\end{Theorem*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -125,7 +150,19 @@
 			"\\begin{Lemma*}",
 				"\t$1",
 			"\\end{Lemma*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Lemma*[]":{
+		"prefix":"*Lemma",
+		"body":[
+			"\\begin{Lemma*}",
+				"\t[${1:heading%text}]",
+			"\\end{Lemma*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -135,7 +172,19 @@
 			"\\begin{Corollary*}",
 				"\t$1",
 			"\\end{Corollary*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Corollary*[]":{
+		"prefix":"*Corollary",
+		"body":[
+			"\\begin{Corollary*}",
+				"\t[${1:heading%text}]",
+			"\\end{Corollary*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -145,7 +194,19 @@
 			"\\begin{Proposition*}",
 				"\t$1",
 			"\\end{Proposition*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Proposition*[]":{
+		"prefix":"*Proposition",
+		"body":[
+			"\\begin{Proposition*}",
+				"\t[${1:heading%text}]",
+			"\\end{Proposition*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -155,56 +216,18 @@
 			"\\begin{Definition*}",
 				"\t$1",
 			"\\end{Definition*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"Theorem*":{
-		"prefix":"Theorem",
-		"body":[
-			"\\begin{Theorem*}",
-				"\t$1",
-			"\\end{Theorem*}"
-		]
-	},
-
-
-	"Lemma*":{
-		"prefix":"Lemma",
-		"body":[
-			"\\begin{Lemma*}",
-				"\t$1",
-			"\\end{Lemma*}"
-		]
-	},
-
-
-	"Corollary*":{
-		"prefix":"Corollary",
-		"body":[
-			"\\begin{Corollary*}",
-				"\t$1",
-			"\\end{Corollary*}"
-		]
-	},
-
-
-	"Proposition*":{
-		"prefix":"Proposition",
-		"body":[
-			"\\begin{Proposition*}",
-				"\t$1",
-			"\\end{Proposition*}"
-		]
-	},
-
-
-	"Definition*":{
-		"prefix":"Definition",
+	"Definition*[]":{
+		"prefix":"*Definition",
 		"body":[
 			"\\begin{Definition*}",
-				"\t$1",
+				"\t[${1:heading%text}]",
 			"\\end{Definition*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

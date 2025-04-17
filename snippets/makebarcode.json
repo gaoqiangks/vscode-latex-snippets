@@ -5,31 +5,8 @@
 		"prefix":"barcode",
 		"body":[
 			"\\barcode{${1:code}}"
-		]
-	},
-
-
-	"HPlabel{}":{
-		"prefix":"HPlabel",
-		"body":[
-			"\\HPlabel{${1:code}}"
-		]
-	},
-
-
-	"ITFbarcode{}":{
-		"prefix":"ITFbarcode",
-		"body":[
-			"\\ITFbarcode{${1:code}}"
-		]
-	},
-
-
-	"BarcodeSanitize":{
-		"prefix":"BarcodeSanitize",
-		"body":[
-			"\\BarcodeSanitize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,26 @@
 		"prefix":"barcode",
 		"body":[
 			"\\barcode[${2:options%keyvals}]{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"HPlabel{}":{
+		"prefix":"HPlabel",
+		"body":[
+			"\\HPlabel{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ITFbarcode{}":{
+		"prefix":"ITFbarcode",
+		"body":[
+			"\\ITFbarcode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +41,16 @@
 		"prefix":"ITFbarcode",
 		"body":[
 			"\\ITFbarcode[${2:options%keyvals}]{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BarcodeSanitize":{
+		"prefix":"BarcodeSanitize",
+		"body":[
+			"\\BarcodeSanitize"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

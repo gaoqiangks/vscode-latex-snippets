@@ -5,31 +5,8 @@
 		"prefix":"deduce",
 		"body":[
 			"\\deduce{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
-	},
-
-
-	"infer{}{}":{
-		"prefix":"infer",
-		"body":[
-			"\\infer{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
-	},
-
-
-	"infer*{}{}":{
-		"prefix":"*infer",
-		"body":[
-			"\\infer*{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
-	},
-
-
-	"infer*[]{}{}":{
-		"prefix":"*infer",
-		"body":[
-			"\\infer*[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"deduce",
 		"body":[
 			"\\deduce[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"infer{}{}":{
+		"prefix":"infer",
+		"body":[
+			"\\infer{${1:conclusions%formula}}{${2:premises%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"infer",
 		"body":[
 			"\\infer[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"infer*{}{}":{
+		"prefix":"*infer",
+		"body":[
+			"\\infer*{${1:conclusions%formula}}{${2:premises%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"infer*[]{}{}":{
+		"prefix":"*infer",
+		"body":[
+			"\\infer*[${3:label%formula}]{${1:conclusions%formula}}{${2:premises%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -1,52 +1,57 @@
 {
 
 
-	"saveenv":{
+	"saveenv{}":{
 		"prefix":"saveenv",
 		"body":[
 			"\\begin{saveenv}",
-				"\t$1",
+				"\t{${1:macro%cmd}}",
 			"\\end{saveenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"saveenvghost":{
+	"saveenvghost{}":{
 		"prefix":"saveenvghost",
 		"body":[
 			"\\begin{saveenvghost}",
-				"\t$1",
+				"\t{${1:macro%cmd}}",
 			"\\end{saveenvghost}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"saveenvkeeplast":{
+	"saveenvkeeplast{}":{
 		"prefix":"saveenvkeeplast",
 		"body":[
 			"\\begin{saveenvkeeplast}",
-				"\t$1",
+				"\t{${1:macro%cmd}}",
 			"\\end{saveenvkeeplast}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"saveenvreinsert":{
+	"saveenvreinsert{}{}":{
 		"prefix":"saveenvreinsert",
 		"body":[
 			"\\begin{saveenvreinsert}",
-				"\t$1",
+				"\t{${1:macro%cmd}}{${2:code}}",
 			"\\end{saveenvreinsert}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"saveenvkeeplastreinsert":{
+	"saveenvkeeplastreinsert{}{}":{
 		"prefix":"saveenvkeeplastreinsert",
 		"body":[
 			"\\begin{saveenvkeeplastreinsert}",
-				"\t$1",
+				"\t{${1:macro%cmd}}{${2:code}}",
 			"\\end{saveenvkeeplastreinsert}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

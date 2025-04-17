@@ -5,295 +5,8 @@
 		"prefix":"shapepar",
 		"body":[
 			"\\shapepar{${1:shape spec}}"
-		]
-	},
-
-
-	"Shapepar{}":{
-		"prefix":"Shapepar",
-		"body":[
-			"\\Shapepar{${1:shape spec}}"
-		]
-	},
-
-
-	"cutout{}()":{
-		"prefix":"cutout",
-		"body":[
-			"\\cutout{${1:side%keyvals}}(${2:hoffset},${3:voffset})"
-		]
-	},
-
-
-	"squareshape":{
-		"prefix":"squareshape",
-		"body":[
-			"\\squareshape"
-		]
-	},
-
-
-	"squarepar":{
-		"prefix":"squarepar",
-		"body":[
-			"\\squarepar"
-		]
-	},
-
-
-	"circleshape":{
-		"prefix":"circleshape",
-		"body":[
-			"\\circleshape"
-		]
-	},
-
-
-	"circlepar":{
-		"prefix":"circlepar",
-		"body":[
-			"\\circlepar"
-		]
-	},
-
-
-	"CDlabshape":{
-		"prefix":"CDlabshape",
-		"body":[
-			"\\CDlabshape"
-		]
-	},
-
-
-	"CDlabel":{
-		"prefix":"CDlabel",
-		"body":[
-			"\\CDlabel"
-		]
-	},
-
-
-	"diamondshape":{
-		"prefix":"diamondshape",
-		"body":[
-			"\\diamondshape"
-		]
-	},
-
-
-	"diamondpar":{
-		"prefix":"diamondpar",
-		"body":[
-			"\\diamondpar"
-		]
-	},
-
-
-	"heartshape":{
-		"prefix":"heartshape",
-		"body":[
-			"\\heartshape"
-		]
-	},
-
-
-	"heartpar":{
-		"prefix":"heartpar",
-		"body":[
-			"\\heartpar"
-		]
-	},
-
-
-	"starshape":{
-		"prefix":"starshape",
-		"body":[
-			"\\starshape"
-		]
-	},
-
-
-	"starpar":{
-		"prefix":"starpar",
-		"body":[
-			"\\starpar"
-		]
-	},
-
-
-	"hexagonshape":{
-		"prefix":"hexagonshape",
-		"body":[
-			"\\hexagonshape"
-		]
-	},
-
-
-	"hexagonpar":{
-		"prefix":"hexagonpar",
-		"body":[
-			"\\hexagonpar"
-		]
-	},
-
-
-	"nutshape":{
-		"prefix":"nutshape",
-		"body":[
-			"\\nutshape"
-		]
-	},
-
-
-	"nutpar":{
-		"prefix":"nutpar",
-		"body":[
-			"\\nutpar"
-		]
-	},
-
-
-	"rectangleshape{}{}":{
-		"prefix":"rectangleshape",
-		"body":[
-			"\\rectangleshape{${1:height}}{${2:width}}"
-		]
-	},
-
-
-	"cutoutsep":{
-		"prefix":"cutoutsep",
-		"body":[
-			"\\cutoutsep"
-		]
-	},
-
-
-	"cutoutsepstretch":{
-		"prefix":"cutoutsepstretch",
-		"body":[
-			"\\cutoutsepstretch"
-		]
-	},
-
-
-	"RefineBaselines":{
-		"prefix":"RefineBaselines",
-		"body":[
-			"\\RefineBaselines"
-		]
-	},
-
-
-	"ScaleMaxTries":{
-		"prefix":"ScaleMaxTries",
-		"body":[
-			"\\ScaleMaxTries"
-		]
-	},
-
-
-	"SmallestGap":{
-		"prefix":"SmallestGap",
-		"body":[
-			"\\SmallestGap"
-		]
-	},
-
-
-	"SmallGap":{
-		"prefix":"SmallGap",
-		"body":[
-			"\\SmallGap"
-		]
-	},
-
-
-	"SmallestSegment":{
-		"prefix":"SmallestSegment",
-		"body":[
-			"\\SmallestSegment"
-		]
-	},
-
-
-	"Pointless{}":{
-		"prefix":"Pointless",
-		"body":[
-			"\\Pointless{${1:dimen}}"
-		]
-	},
-
-
-	"AbsVal{}":{
-		"prefix":"AbsVal",
-		"body":[
-			"\\AbsVal{${1:dimen}}"
-		]
-	},
-
-
-	"fpdivide{}{}":{
-		"prefix":"fpdivide",
-		"body":[
-			"\\fpdivide{${1:dimen1}}{${2:dimen2}}"
-		]
-	},
-
-
-	"sqrtofdim{}":{
-		"prefix":"sqrtofdim",
-		"body":[
-			"\\sqrtofdim{${1:dimen}}"
-		]
-	},
-
-
-	"specA":{
-		"prefix":"specA",
-		"body":[
-			"\\specA"
-		]
-	},
-
-
-	"specB":{
-		"prefix":"specB",
-		"body":[
-			"\\specB"
-		]
-	},
-
-
-	"sqrtcount":{
-		"prefix":"sqrtcount",
-		"body":[
-			"\\sqrtcount"
-		]
-	},
-
-
-	"sqrtofcount":{
-		"prefix":"sqrtofcount",
-		"body":[
-			"\\sqrtofcount"
-		]
-	},
-
-
-	"squinitial{}{}":{
-		"prefix":"squinitial",
-		"body":[
-			"\\squinitial{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"squiterate":{
-		"prefix":"squiterate",
-		"body":[
-			"\\squiterate"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +14,17 @@
 		"prefix":"shapepar",
 		"body":[
 			"\\shapepar[${2:scale len}]{${1:shape spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Shapepar{}":{
+		"prefix":"Shapepar",
+		"body":[
+			"\\Shapepar{${1:shape spec}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,6 +32,322 @@
 		"prefix":"Shapepar",
 		"body":[
 			"\\Shapepar[${2:scale len}]{${1:shape spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cutout{}()":{
+		"prefix":"cutout",
+		"body":[
+			"\\cutout{${1:side%keyvals}}(${2:hoffset},${3:voffset})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squareshape":{
+		"prefix":"squareshape",
+		"body":[
+			"\\squareshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squarepar":{
+		"prefix":"squarepar",
+		"body":[
+			"\\squarepar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circleshape":{
+		"prefix":"circleshape",
+		"body":[
+			"\\circleshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"circlepar":{
+		"prefix":"circlepar",
+		"body":[
+			"\\circlepar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CDlabshape":{
+		"prefix":"CDlabshape",
+		"body":[
+			"\\CDlabshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CDlabel":{
+		"prefix":"CDlabel",
+		"body":[
+			"\\CDlabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"diamondshape":{
+		"prefix":"diamondshape",
+		"body":[
+			"\\diamondshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"diamondpar":{
+		"prefix":"diamondpar",
+		"body":[
+			"\\diamondpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"heartshape":{
+		"prefix":"heartshape",
+		"body":[
+			"\\heartshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"heartpar":{
+		"prefix":"heartpar",
+		"body":[
+			"\\heartpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starshape":{
+		"prefix":"starshape",
+		"body":[
+			"\\starshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starpar":{
+		"prefix":"starpar",
+		"body":[
+			"\\starpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hexagonshape":{
+		"prefix":"hexagonshape",
+		"body":[
+			"\\hexagonshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hexagonpar":{
+		"prefix":"hexagonpar",
+		"body":[
+			"\\hexagonpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nutshape":{
+		"prefix":"nutshape",
+		"body":[
+			"\\nutshape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nutpar":{
+		"prefix":"nutpar",
+		"body":[
+			"\\nutpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rectangleshape{}{}":{
+		"prefix":"rectangleshape",
+		"body":[
+			"\\rectangleshape{${1:height}}{${2:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cutoutsep":{
+		"prefix":"cutoutsep",
+		"body":[
+			"\\cutoutsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cutoutsepstretch":{
+		"prefix":"cutoutsepstretch",
+		"body":[
+			"\\cutoutsepstretch"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RefineBaselines":{
+		"prefix":"RefineBaselines",
+		"body":[
+			"\\RefineBaselines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ScaleMaxTries":{
+		"prefix":"ScaleMaxTries",
+		"body":[
+			"\\ScaleMaxTries"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SmallestGap":{
+		"prefix":"SmallestGap",
+		"body":[
+			"\\SmallestGap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SmallGap":{
+		"prefix":"SmallGap",
+		"body":[
+			"\\SmallGap"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SmallestSegment":{
+		"prefix":"SmallestSegment",
+		"body":[
+			"\\SmallestSegment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Pointless{}":{
+		"prefix":"Pointless",
+		"body":[
+			"\\Pointless{${1:dimen}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AbsVal{}":{
+		"prefix":"AbsVal",
+		"body":[
+			"\\AbsVal{${1:dimen}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fpdivide{}{}":{
+		"prefix":"fpdivide",
+		"body":[
+			"\\fpdivide{${1:dimen1}}{${2:dimen2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sqrtofdim{}":{
+		"prefix":"sqrtofdim",
+		"body":[
+			"\\sqrtofdim{${1:dimen}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specA":{
+		"prefix":"specA",
+		"body":[
+			"\\specA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specB":{
+		"prefix":"specB",
+		"body":[
+			"\\specB"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sqrtcount":{
+		"prefix":"sqrtcount",
+		"body":[
+			"\\sqrtcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sqrtofcount":{
+		"prefix":"sqrtofcount",
+		"body":[
+			"\\sqrtofcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squinitial{}{}":{
+		"prefix":"squinitial",
+		"body":[
+			"\\squinitial{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"squiterate":{
+		"prefix":"squiterate",
+		"body":[
+			"\\squiterate"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,135 +5,8 @@
 		"prefix":"fetch",
 		"body":[
 			"\\fetch{${1:name}}"
-		]
-	},
-
-
-	"print{}":{
-		"prefix":"print",
-		"body":[
-			"\\print{${1:expr}}"
-		]
-	},
-
-
-	"vprint{}":{
-		"prefix":"vprint",
-		"body":[
-			"\\vprint{${1:expr}}"
-		]
-	},
-
-
-	"lprint{}":{
-		"prefix":"lprint",
-		"body":[
-			"\\lprint{${1:expr}}"
-		]
-	},
-
-
-	"parseforest{}":{
-		"prefix":"parseforest",
-		"body":[
-			"\\parseforest{${1:expr}}"
-		]
-	},
-
-
-	"forestresult":{
-		"prefix":"forestresult",
-		"body":[
-			"\\forestresult"
-		]
-	},
-
-
-	"parseshrub{}":{
-		"prefix":"parseshrub",
-		"body":[
-			"\\parseshrub{${1:expr}}"
-		]
-	},
-
-
-	"shrubresult":{
-		"prefix":"shrubresult",
-		"body":[
-			"\\shrubresult"
-		]
-	},
-
-
-	"whatis{}":{
-		"prefix":"whatis",
-		"body":[
-			"\\whatis{${1:expr}}"
-		]
-	},
-
-
-	"printshrub{}":{
-		"prefix":"printshrub",
-		"body":[
-			"\\printshrub{${1:expr}}"
-		]
-	},
-
-
-	"printtree{}":{
-		"prefix":"printtree",
-		"body":[
-			"\\printtree{${1:expr}}"
-		]
-	},
-
-
-	"print*{}":{
-		"prefix":"*print",
-		"body":[
-			"\\print*{${1:expr}}"
-		]
-	},
-
-
-	"vprint*{}":{
-		"prefix":"*vprint",
-		"body":[
-			"\\vprint*{${1:expr}}"
-		]
-	},
-
-
-	"parseforest*{}":{
-		"prefix":"*parseforest",
-		"body":[
-			"\\parseforest*{${1:expr}}"
-		]
-	},
-
-
-	"parseshrub*{}":{
-		"prefix":"*parseshrub",
-		"body":[
-			"\\parseshrub*{${1:expr}}"
-		]
-	},
-
-
-	"printshrub*{}":{
-		"prefix":"*printshrub",
-		"body":[
-			"\\printshrub*{${1:expr}}"
-		]
-	},
-
-
-	"printtree*{}":{
-		"prefix":"*printtree",
-		"body":[
-			"\\printtree*{${1:expr}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +14,53 @@
 		"prefix":"store",
 		"body":[
 			"\\store{${1:name}}[${2:alt-name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"print{}":{
+		"prefix":"print",
+		"body":[
+			"\\print{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"print*{}":{
+		"prefix":"*print",
+		"body":[
+			"\\print*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"vprint{}":{
+		"prefix":"vprint",
+		"body":[
+			"\\vprint{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vprint*{}":{
+		"prefix":"*vprint",
+		"body":[
+			"\\vprint*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"lprint{}":{
+		"prefix":"lprint",
+		"body":[
+			"\\lprint{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +68,107 @@
 		"prefix":"lprint",
 		"body":[
 			"\\lprint{${1:expr}}[${2:low,upp}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"parseforest{}":{
+		"prefix":"parseforest",
+		"body":[
+			"\\parseforest{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parseforest*{}":{
+		"prefix":"*parseforest",
+		"body":[
+			"\\parseforest*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"forestresult":{
+		"prefix":"forestresult",
+		"body":[
+			"\\forestresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parseshrub{}":{
+		"prefix":"parseshrub",
+		"body":[
+			"\\parseshrub{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"parseshrub*{}":{
+		"prefix":"*parseshrub",
+		"body":[
+			"\\parseshrub*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"shrubresult":{
+		"prefix":"shrubresult",
+		"body":[
+			"\\shrubresult"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"whatis{}":{
+		"prefix":"whatis",
+		"body":[
+			"\\whatis{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printshrub{}":{
+		"prefix":"printshrub",
+		"body":[
+			"\\printshrub{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printshrub*{}":{
+		"prefix":"*printshrub",
+		"body":[
+			"\\printshrub*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"printtree{}":{
+		"prefix":"printtree",
+		"body":[
+			"\\printtree{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printtree*{}":{
+		"prefix":"*printtree",
+		"body":[
+			"\\printtree*{${1:expr}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -159,6 +178,7 @@
 			"\\begin{CAS}",
 				"\t$1",
 			"\\end{CAS}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

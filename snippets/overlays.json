@@ -5,7 +5,8 @@
 		"prefix":"alert",
 		"body":[
 			"\\alert{${1:overlay specification}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"visible",
 		"body":[
 			"\\visible{${1:overlay specification}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"only",
 		"body":[
 			"\\only{${1:overlay specification}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"savecounterbetweenoverlays",
 		"body":[
 			"\\savecounterbetweenoverlays{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"saveseriesbetweenoverlays",
 		"body":[
 			"\\saveseriesbetweenoverlays{${1:series name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"overlaysoff",
 		"body":[
 			"\\overlaysoff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"alertsoff",
 		"body":[
 			"\\alertsoff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"psalert",
 		"body":[
 			"\\psalert{${1:overlay specification}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,26 +77,29 @@
 		"prefix":"psvisible",
 		"body":[
 			"\\psvisible{${1:overlay specification}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"overlays":{
+	"overlays{}":{
 		"prefix":"overlays",
 		"body":[
 			"\\begin{overlays}",
-				"\t$1",
+				"\t{${1:number}}",
 			"\\end{overlays}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"fragileoverlays":{
+	"fragileoverlays{}":{
 		"prefix":"fragileoverlays",
 		"body":[
 			"\\begin{fragileoverlays}",
-				"\t$1",
+				"\t{${1:number}}",
 			"\\end{fragileoverlays}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"termlabel",
 		"body":[
 			"\\termlabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"termlabelfont",
 		"body":[
 			"\\termlabelfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"termindent",
 		"body":[
 			"\\termindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,17 +34,8 @@
 			"\\begin{termlist}",
 				"\t$1",
 			"\\end{termlist}"
-		]
-	},
-
-
-	"term":{
-		"prefix":"term",
-		"body":[
-			"\\begin{term}",
-				"\t$1",
-			"\\end{term}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -51,7 +45,19 @@
 			"\\begin{termlist*}",
 				"\t$1",
 			"\\end{termlist*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"term":{
+		"prefix":"term",
+		"body":[
+			"\\begin{term}",
+				"\t$1",
+			"\\end{term}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +67,7 @@
 			"\\begin{term*}",
 				"\t$1",
 			"\\end{term*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

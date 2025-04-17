@@ -5,7 +5,8 @@
 		"prefix":"setocgtabularheader",
 		"body":[
 			"\\setocgtabularheader{${1:column name}}{${2:header%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"toggleocgs",
 		"body":[
 			"\\toggleocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"showocgs{}{}":{
-		"prefix":"showocgs",
-		"body":[
-			"\\showocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"hideocgs{}{}":{
-		"prefix":"hideocgs",
-		"body":[
-			"\\hideocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
-	},
-
-
-	"setocgs{}{}{}{}":{
-		"prefix":"setocgs",
-		"body":[
-			"\\setocgs{${1:tlayerid1 ...}}{${2:slayerid1 ...}}{${3:hlayerid1 ...}}{${4:display}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +23,17 @@
 		"prefix":"toggleocgs",
 		"body":[
 			"\\toggleocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"showocgs{}{}":{
+		"prefix":"showocgs",
+		"body":[
+			"\\showocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +41,17 @@
 		"prefix":"showocgs",
 		"body":[
 			"\\showocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hideocgs{}{}":{
+		"prefix":"hideocgs",
+		"body":[
+			"\\hideocgs{${1:layerid1 layerid2 ...}}{${2:display}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"hideocgs",
 		"body":[
 			"\\hideocgs[${3:option%keyvals}]{${1:layerid1 layerid2 ...}}{${2:display}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setocgs{}{}{}{}":{
+		"prefix":"setocgs",
+		"body":[
+			"\\setocgs{${1:tlayerid1 ...}}{${2:slayerid1 ...}}{${3:hlayerid1 ...}}{${4:display}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,46 +77,51 @@
 		"prefix":"setocgs",
 		"body":[
 			"\\setocgs[${5:option%keyvals}]{${1:tlayerid1 ...}}{${2:slayerid1 ...}}{${3:hlayerid1 ...}}{${4:display}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"ocgtabular":{
+	"ocgtabular{}{}{}":{
 		"prefix":"ocgtabular",
 		"body":[
 			"\\begin{ocgtabular}",
-				"\t$1",
+				"\t{${1:cols}}{${2:database}}{${3:options}}",
 			"\\end{ocgtabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ocg":{
-		"prefix":"ocg",
-		"body":[
-			"\\begin{ocg}",
-				"\t$1",
-			"\\end{ocg}"
-		]
-	},
-
-
-	"ocgtabular":{
+	"ocgtabular[]{}{}{}":{
 		"prefix":"ocgtabular",
 		"body":[
 			"\\begin{ocgtabular}",
-				"\t$1",
+				"\t[${4:pos}]{${1:cols}}{${2:database}}{${3:options}}",
 			"\\end{ocgtabular}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"ocg":{
+	"ocg{}{}{}":{
 		"prefix":"ocg",
 		"body":[
 			"\\begin{ocg}",
-				"\t$1",
+				"\t{${1:layer name}}{${2:layer id}}{${3:initial visibility}}",
 			"\\end{ocg}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ocg[]{}{}{}":{
+		"prefix":"ocg",
+		"body":[
+			"\\begin{ocg}",
+				"\t[${4:options%keyvals}]{${1:layer name}}{${2:layer id}}{${3:initial visibility}}",
+			"\\end{ocg}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

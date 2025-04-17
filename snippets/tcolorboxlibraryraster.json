@@ -5,7 +5,8 @@
 		"prefix":"thetcbrasternum",
 		"body":[
 			"\\thetcbrasternum"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"thetcbrastercolumn",
 		"body":[
 			"\\thetcbrastercolumn"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"thetcbrasterrow",
 		"body":[
 			"\\thetcbrasterrow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tcbitem",
 		"body":[
 			"\\tcbitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"tcbitem",
 		"body":[
 			"\\tcbitem[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -47,47 +52,19 @@
 			"\\begin{tcbraster}",
 				"\t$1",
 			"\\end{tcbraster}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tcbitemize":{
-		"prefix":"tcbitemize",
-		"body":[
-			"\\begin{tcbitemize}",
-				"\t$1",
-			"\\end{tcbitemize}"
-		]
-	},
-
-
-	"tcboxedraster":{
-		"prefix":"tcboxedraster",
-		"body":[
-			"\\begin{tcboxedraster}",
-				"\t$1",
-			"\\end{tcboxedraster}"
-		]
-	},
-
-
-	"tcboxeditemize":{
-		"prefix":"tcboxeditemize",
-		"body":[
-			"\\begin{tcboxeditemize}",
-				"\t$1",
-			"\\end{tcboxeditemize}"
-		]
-	},
-
-
-	"tcbraster":{
+	"tcbraster[]":{
 		"prefix":"tcbraster",
 		"body":[
 			"\\begin{tcbraster}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tcbraster}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -97,26 +74,62 @@
 			"\\begin{tcbitemize}",
 				"\t$1",
 			"\\end{tcbitemize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tcboxedraster":{
+	"tcbitemize[]":{
+		"prefix":"tcbitemize",
+		"body":[
+			"\\begin{tcbitemize}",
+				"\t[${1:options%keyvals}]",
+			"\\end{tcbitemize}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tcboxedraster{}":{
 		"prefix":"tcboxedraster",
 		"body":[
 			"\\begin{tcboxedraster}",
-				"\t$1",
+				"\t{${1:box options}}",
 			"\\end{tcboxedraster}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tcboxeditemize":{
+	"tcboxedraster[]{}":{
+		"prefix":"tcboxedraster",
+		"body":[
+			"\\begin{tcboxedraster}",
+				"\t[${2:raster options%keyvals}]{${1:box options}}",
+			"\\end{tcboxedraster}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tcboxeditemize{}":{
 		"prefix":"tcboxeditemize",
 		"body":[
 			"\\begin{tcboxeditemize}",
-				"\t$1",
+				"\t{${1:box options}}",
 			"\\end{tcboxeditemize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcboxeditemize[]{}":{
+		"prefix":"tcboxeditemize",
+		"body":[
+			"\\begin{tcboxeditemize}",
+				"\t[${2:raster options%keyvals}]{${1:box options}}",
+			"\\end{tcboxeditemize}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"ytableausetup",
 		"body":[
 			"\\ytableausetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"none",
 		"body":[
 			"\\none"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"ytableaushort",
 		"body":[
 			"\\ytableaushort{${1:line1,line2,...%formula}}"
-		]
-	},
-
-
-	"ytableaushort{}":{
-		"prefix":"ytableaushort",
-		"body":[
-			"\\ytableaushort{${1:line1,line2,...%plain}}"
-		]
-	},
-
-
-	"ydiagram{}":{
-		"prefix":"ydiagram",
-		"body":[
-			"\\ydiagram{${1:offset+num1,num2,...}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"ytableaushort",
 		"body":[
 			"\\ytableaushort[${2:formatting%formula}]{${1:line1,line2,...%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ytableaushort{}":{
+		"prefix":"ytableaushort",
+		"body":[
+			"\\ytableaushort{${1:line1,line2,...%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"ytableaushort",
 		"body":[
 			"\\ytableaushort[${2:formatting%plain}]{${1:line1,line2,...%plain}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ydiagram{}":{
+		"prefix":"ydiagram",
+		"body":[
+			"\\ydiagram{${1:offset+num1,num2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -63,16 +70,18 @@
 			"\\begin{ytableau}",
 				"\t$1",
 			"\\end{ytableau}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ytableau":{
+	"ytableau[]":{
 		"prefix":"ytableau",
 		"body":[
 			"\\begin{ytableau}",
-				"\t$1",
+				"\t[${1:formatting%formula}]",
 			"\\end{ytableau}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

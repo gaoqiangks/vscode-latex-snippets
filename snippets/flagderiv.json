@@ -5,7 +5,8 @@
 		"prefix":"introduce",
 		"body":[
 			"\\introduce{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"assume",
 		"body":[
 			"\\assume{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"step",
 		"body":[
 			"\\step{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,159 +32,8 @@
 		"prefix":"conclude",
 		"body":[
 			"\\conclude{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"skipsteps{}{}{}":{
-		"prefix":"skipsteps",
-		"body":[
-			"\\skipsteps{${1:number}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"done":{
-		"prefix":"done",
-		"body":[
-			"\\done"
-		]
-	},
-
-
-	"derivskip":{
-		"prefix":"derivskip",
-		"body":[
-			"\\derivskip"
-		]
-	},
-
-
-	"introsymb":{
-		"prefix":"introsymb",
-		"body":[
-			"\\introsymb"
-		]
-	},
-
-
-	"thestepcount":{
-		"prefix":"thestepcount",
-		"body":[
-			"\\thestepcount"
-		]
-	},
-
-
-	"thesteplabel":{
-		"prefix":"thesteplabel",
-		"body":[
-			"\\thesteplabel"
-		]
-	},
-
-
-	"inlcmnts":{
-		"prefix":"inlcmnts",
-		"body":[
-			"\\inlcmnts"
-		]
-	},
-
-
-	"noinlcmnts":{
-		"prefix":"noinlcmnts",
-		"body":[
-			"\\noinlcmnts"
-		]
-	},
-
-
-	"theinlcmnt":{
-		"prefix":"theinlcmnt",
-		"body":[
-			"\\theinlcmnt"
-		]
-	},
-
-
-	"tablehead":{
-		"prefix":"tablehead",
-		"body":[
-			"\\tablehead"
-		]
-	},
-
-
-	"tablefirsthead":{
-		"prefix":"tablefirsthead",
-		"body":[
-			"\\tablefirsthead"
-		]
-	},
-
-
-	"endfoot":{
-		"prefix":"endfoot",
-		"body":[
-			"\\endfoot"
-		]
-	},
-
-
-	"endlastfoot":{
-		"prefix":"endlastfoot",
-		"body":[
-			"\\endlastfoot"
-		]
-	},
-
-
-	"introduce*{}{}{}":{
-		"prefix":"*introduce",
-		"body":[
-			"\\introduce*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"assume*{}{}{}":{
-		"prefix":"*assume",
-		"body":[
-			"\\assume*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"step*{}{}{}":{
-		"prefix":"*step",
-		"body":[
-			"\\step*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"conclude*{}{}{}":{
-		"prefix":"*conclude",
-		"body":[
-			"\\conclude*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"conclude*[]{}{}{}":{
-		"prefix":"*conclude",
-		"body":[
-			"\\conclude*[${4:number}]{${1:custom label}}{${2:formula}}{${3:comment%text}}"
-		]
-	},
-
-
-	"skipsteps*{}{}":{
-		"prefix":"*skipsteps",
-		"body":[
-			"\\skipsteps*{${1:formula}}{${2:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +41,80 @@
 		"prefix":"conclude",
 		"body":[
 			"\\conclude[${4:number}]{${1:label}}{${2:formula}}{${3:comment%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"introduce*{}{}{}":{
+		"prefix":"*introduce",
+		"body":[
+			"\\introduce*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"assume*{}{}{}":{
+		"prefix":"*assume",
+		"body":[
+			"\\assume*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"step*{}{}{}":{
+		"prefix":"*step",
+		"body":[
+			"\\step*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"conclude*{}{}{}":{
+		"prefix":"*conclude",
+		"body":[
+			"\\conclude*{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"conclude*[]{}{}{}":{
+		"prefix":"*conclude",
+		"body":[
+			"\\conclude*[${4:number}]{${1:custom label}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"skipsteps{}{}{}":{
+		"prefix":"skipsteps",
+		"body":[
+			"\\skipsteps{${1:number}}{${2:formula}}{${3:comment%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"skipsteps*{}{}":{
+		"prefix":"*skipsteps",
+		"body":[
+			"\\skipsteps*{${1:formula}}{${2:comment%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"done":{
+		"prefix":"done",
+		"body":[
+			"\\done"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +122,107 @@
 		"prefix":"done",
 		"body":[
 			"\\done[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"derivskip":{
+		"prefix":"derivskip",
+		"body":[
+			"\\derivskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"introsymb":{
+		"prefix":"introsymb",
+		"body":[
+			"\\introsymb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thestepcount":{
+		"prefix":"thestepcount",
+		"body":[
+			"\\thestepcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thesteplabel":{
+		"prefix":"thesteplabel",
+		"body":[
+			"\\thesteplabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"inlcmnts":{
+		"prefix":"inlcmnts",
+		"body":[
+			"\\inlcmnts"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noinlcmnts":{
+		"prefix":"noinlcmnts",
+		"body":[
+			"\\noinlcmnts"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theinlcmnt":{
+		"prefix":"theinlcmnt",
+		"body":[
+			"\\theinlcmnt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablehead":{
+		"prefix":"tablehead",
+		"body":[
+			"\\tablehead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablefirsthead":{
+		"prefix":"tablefirsthead",
+		"body":[
+			"\\tablefirsthead"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endfoot":{
+		"prefix":"endfoot",
+		"body":[
+			"\\endfoot"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endlastfoot":{
+		"prefix":"endlastfoot",
+		"body":[
+			"\\endlastfoot"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -207,7 +232,19 @@
 			"\\begin{flagderiv}",
 				"\t$1",
 			"\\end{flagderiv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flagderiv[]":{
+		"prefix":"flagderiv",
+		"body":[
+			"\\begin{flagderiv}",
+				"\t[${1:label prefix}]",
+			"\\end{flagderiv}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -217,26 +254,18 @@
 			"\\begin{flagderiv*}",
 				"\t$1",
 			"\\end{flagderiv*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"flagderiv":{
-		"prefix":"flagderiv",
-		"body":[
-			"\\begin{flagderiv}",
-				"\t$1",
-			"\\end{flagderiv}"
-		]
-	},
-
-
-	"flagderiv*":{
-		"prefix":"flagderiv",
+	"flagderiv*[]":{
+		"prefix":"*flagderiv",
 		"body":[
 			"\\begin{flagderiv*}",
-				"\t$1",
+				"\t[${1:label prefix}]",
 			"\\end{flagderiv*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

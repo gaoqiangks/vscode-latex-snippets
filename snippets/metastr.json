@@ -5,7 +5,8 @@
 		"prefix":"metadef",
 		"body":[
 			"\\metadef{${1:reg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,159 +14,8 @@
 		"prefix":"metaset",
 		"body":[
 			"\\metaset{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metasetlang{}":{
-		"prefix":"metasetlang",
-		"body":[
-			"\\metasetlang{${1:ln-CN}}"
-		]
-	},
-
-
-	"metaunset{}":{
-		"prefix":"metaunset",
-		"body":[
-			"\\metaunset{${1:reg}}"
-		]
-	},
-
-
-	"metaappend{}{}":{
-		"prefix":"metaappend",
-		"body":[
-			"\\metaappend{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metaprepend{}{}":{
-		"prefix":"metaprepend",
-		"body":[
-			"\\metaprepend{${1:reg}}{${2:def}}"
-		]
-	},
-
-
-	"metaaddsep{}{}{}":{
-		"prefix":"metaaddsep",
-		"body":[
-			"\\metaaddsep{${1:reg}}{${2:sep}}{${3:def}}"
-		]
-	},
-
-
-	"metawritepdfinfo":{
-		"prefix":"metawritepdfinfo",
-		"body":[
-			"\\metawritepdfinfo"
-		]
-	},
-
-
-	"metawritepdfaux":{
-		"prefix":"metawritepdfaux",
-		"body":[
-			"\\metawritepdfaux"
-		]
-	},
-
-
-	"metawritepdfpreamble":{
-		"prefix":"metawritepdfpreamble",
-		"body":[
-			"\\metawritepdfpreamble"
-		]
-	},
-
-
-	"metawritepdfcontact":{
-		"prefix":"metawritepdfcontact",
-		"body":[
-			"\\metawritepdfcontact"
-		]
-	},
-
-
-	"metawritepdfrights":{
-		"prefix":"metawritepdfrights",
-		"body":[
-			"\\metawritepdfrights"
-		]
-	},
-
-
-	"metawritepdf":{
-		"prefix":"metawritepdf",
-		"body":[
-			"\\metawritepdf"
-		]
-	},
-
-
-	"metacopyright{}":{
-		"prefix":"metacopyright",
-		"body":[
-			"\\metacopyright{${1:preset%keyvals}}"
-		]
-	},
-
-
-	"metalicense{}":{
-		"prefix":"metalicense",
-		"body":[
-			"\\metalicense{${1:preset%keyvals}}"
-		]
-	},
-
-
-	"metalicensecc{}":{
-		"prefix":"metalicensecc",
-		"body":[
-			"\\metalicensecc{${1:license%keyvals}}"
-		]
-	},
-
-
-	"metaterm":{
-		"prefix":"metaterm",
-		"body":[
-			"\\metaterm"
-		]
-	},
-
-
-	"metasetup{}":{
-		"prefix":"metasetup",
-		"body":[
-			"\\metasetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"metacomma":{
-		"prefix":"metacomma",
-		"body":[
-			"\\metacomma"
-		]
-	},
-
-
-	"metatilde":{
-		"prefix":"metatilde",
-		"body":[
-			"\\metatilde"
-		]
-	},
-
-
-	"metasetlang*{}":{
-		"prefix":"*metasetlang",
-		"body":[
-			"\\metasetlang*{${1:ln-CN}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +23,26 @@
 		"prefix":"metaset",
 		"body":[
 			"\\metaset[${3:var}]{${1:reg}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metasetlang{}":{
+		"prefix":"metasetlang",
+		"body":[
+			"\\metasetlang{${1:ln-CN}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metasetlang*{}":{
+		"prefix":"*metasetlang",
+		"body":[
+			"\\metasetlang*{${1:ln-CN}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -181,7 +50,8 @@
 		"prefix":"metaget",
 		"body":[
 			"\\metaget[${3:var}]{${1:reg}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +59,17 @@
 		"prefix":"metaif",
 		"body":[
 			"\\metaif[${4:}]{${1:reg}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metaunset{}":{
+		"prefix":"metaunset",
+		"body":[
+			"\\metaunset{${1:reg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +77,17 @@
 		"prefix":"metaunset",
 		"body":[
 			"\\metaunset[${2:var}]{${1:reg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metaappend{}{}":{
+		"prefix":"metaappend",
+		"body":[
+			"\\metaappend{${1:reg}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +95,17 @@
 		"prefix":"metaappend",
 		"body":[
 			"\\metaappend[${3:var}]{${1:reg}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metaprepend{}{}":{
+		"prefix":"metaprepend",
+		"body":[
+			"\\metaprepend{${1:reg}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +113,17 @@
 		"prefix":"metaprepend",
 		"body":[
 			"\\metaprepend[${3:var}]{${1:reg}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metaaddsep{}{}{}":{
+		"prefix":"metaaddsep",
+		"body":[
+			"\\metaaddsep{${1:reg}}{${2:sep}}{${3:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +131,8 @@
 		"prefix":"metaaddsep",
 		"body":[
 			"\\metaaddsep[${4:var}]{${1:reg}}{${2:sep}}{${3:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,7 +140,8 @@
 		"prefix":"metapick",
 		"body":[
 			"\\metapick[${2:var}]{${1:reg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +149,8 @@
 		"prefix":"metaifpick",
 		"body":[
 			"\\metaifpick[${4:var}]{${1:reg}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -245,7 +158,8 @@
 		"prefix":"metacompose",
 		"body":[
 			"\\metacompose[${5:var}]{${1:reg}}{${2:prefix}}{${3:postfix}}{${4:empty}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +167,8 @@
 		"prefix":"metatitleline",
 		"body":[
 			"\\metatitleline[${2:var}]{${1:reg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -261,7 +176,98 @@
 		"prefix":"metatitlelinetwo",
 		"body":[
 			"\\metatitlelinetwo[${3:var1}]{${1:reg1}}[${4:var2}]{${2:reg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metawritepdfinfo":{
+		"prefix":"metawritepdfinfo",
+		"body":[
+			"\\metawritepdfinfo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metawritepdfaux":{
+		"prefix":"metawritepdfaux",
+		"body":[
+			"\\metawritepdfaux"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metawritepdfpreamble":{
+		"prefix":"metawritepdfpreamble",
+		"body":[
+			"\\metawritepdfpreamble"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metawritepdfcontact":{
+		"prefix":"metawritepdfcontact",
+		"body":[
+			"\\metawritepdfcontact"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metawritepdfrights":{
+		"prefix":"metawritepdfrights",
+		"body":[
+			"\\metawritepdfrights"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metawritepdf":{
+		"prefix":"metawritepdf",
+		"body":[
+			"\\metawritepdf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metacopyright{}":{
+		"prefix":"metacopyright",
+		"body":[
+			"\\metacopyright{${1:preset%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metalicense{}":{
+		"prefix":"metalicense",
+		"body":[
+			"\\metalicense{${1:preset%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metalicensecc{}":{
+		"prefix":"metalicensecc",
+		"body":[
+			"\\metalicensecc{${1:license%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metaterm":{
+		"prefix":"metaterm",
+		"body":[
+			"\\metaterm"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +275,8 @@
 		"prefix":"metatranslate",
 		"body":[
 			"\\metatranslate[${2:ln}]{${1:term}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -277,6 +284,34 @@
 		"prefix":"metasetterm",
 		"body":[
 			"\\metasetterm[${3:ln}]{${1:reg}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"metasetup{}":{
+		"prefix":"metasetup",
+		"body":[
+			"\\metasetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metacomma":{
+		"prefix":"metacomma",
+		"body":[
+			"\\metacomma"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"metatilde":{
+		"prefix":"metatilde",
+		"body":[
+			"\\metatilde"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

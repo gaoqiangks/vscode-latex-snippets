@@ -5,31 +5,8 @@
 		"prefix":"longdivision",
 		"body":[
 			"\\longdivision{${1:dividend}}{${2:divisor}}"
-		]
-	},
-
-
-	"intlongdivision{}{}":{
-		"prefix":"intlongdivision",
-		"body":[
-			"\\intlongdivision{${1:dividend}}{${2:divisor}}"
-		]
-	},
-
-
-	"longdivisionkeys{}":{
-		"prefix":"longdivisionkeys",
-		"body":[
-			"\\longdivisionkeys{${1:options%keyvals}}"
-		]
-	},
-
-
-	"longdivisiondefinestyle{}{}":{
-		"prefix":"longdivisiondefinestyle",
-		"body":[
-			"\\longdivisiondefinestyle{${1:style name}}{${2:definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"longdivision",
 		"body":[
 			"\\longdivision[${3:options%keyvals}]{${1:dividend}}{${2:divisor}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"intlongdivision{}{}":{
+		"prefix":"intlongdivision",
+		"body":[
+			"\\intlongdivision{${1:dividend}}{${2:divisor}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"intlongdivision",
 		"body":[
 			"\\intlongdivision[${3:options%keyvals}]{${1:dividend}}{${2:divisor}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"longdivisionkeys{}":{
+		"prefix":"longdivisionkeys",
+		"body":[
+			"\\longdivisionkeys{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"longdivisiondefinestyle{}{}":{
+		"prefix":"longdivisiondefinestyle",
+		"body":[
+			"\\longdivisiondefinestyle{${1:style name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

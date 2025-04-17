@@ -5,7 +5,8 @@
 		"prefix":"GreItalic",
 		"body":[
 			"\\GreItalic{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"GreSmallCaps",
 		"body":[
 			"\\GreSmallCaps{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"GreBold",
 		"body":[
 			"\\GreBold{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"GreTypewriter",
 		"body":[
 			"\\GreTypewriter{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"GreUnderline",
 		"body":[
 			"\\GreUnderline{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"GreColored",
 		"body":[
 			"\\GreColored{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"gresetlinecolor",
 		"body":[
 			"\\gresetlinecolor{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"GreScoreId",
 		"body":[
 			"\\GreScoreId"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"GregorioTeXAPIVersion",
 		"body":[
 			"\\GregorioTeXAPIVersion{${1:version}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"GreNewLine",
 		"body":[
 			"\\GreNewLine"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"GreNewParLine",
 		"body":[
 			"\\GreNewParLine"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"GreFinalNewLine",
 		"body":[
 			"\\GreFinalNewLine"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"greillumination",
 		"body":[
 			"\\greillumination{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,2183 +122,8 @@
 		"prefix":"greannotation",
 		"body":[
 			"\\greannotation{${1:text}}"
-		]
-	},
-
-
-	"gresetannotationby{}":{
-		"prefix":"gresetannotationby",
-		"body":[
-			"\\gresetannotationby{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetannotationvalign{}":{
-		"prefix":"gresetannotationvalign",
-		"body":[
-			"\\gresetannotationvalign{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreMode{}{}{}":{
-		"prefix":"GreMode",
-		"body":[
-			"\\GreMode{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"gresetmodenumbersystem{}":{
-		"prefix":"gresetmodenumbersystem",
-		"body":[
-			"\\gresetmodenumbersystem{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreModeNumber{}":{
-		"prefix":"GreModeNumber",
-		"body":[
-			"\\GreModeNumber{${1:integer 1-8}}"
-		]
-	},
-
-
-	"GreAnnotationLines{}{}":{
-		"prefix":"GreAnnotationLines",
-		"body":[
-			"\\GreAnnotationLines{${1:line1%text}}{${2:line2%text}}"
-		]
-	},
-
-
-	"grecommentary{}":{
-		"prefix":"grecommentary",
-		"body":[
-			"\\grecommentary{${1:text}}"
-		]
-	},
-
-
-	"gresetabovelinestext{}":{
-		"prefix":"gresetabovelinestext",
-		"body":[
-			"\\gresetabovelinestext{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreSetTextAboveLines{}":{
-		"prefix":"GreSetTextAboveLines",
-		"body":[
-			"\\GreSetTextAboveLines{${1:text}}"
-		]
-	},
-
-
-	"GreSetNabcAboveLines{}":{
-		"prefix":"GreSetNabcAboveLines",
-		"body":[
-			"\\GreSetNabcAboveLines{${1:Nabc names}}"
-		]
-	},
-
-
-	"gresetlines{}":{
-		"prefix":"gresetlines",
-		"body":[
-			"\\gresetlines{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreFuseTwo{}{}":{
-		"prefix":"GreFuseTwo",
-		"body":[
-			"\\GreFuseTwo{${1:glyph1}}{${2:glyph2}}"
-		]
-	},
-
-
-	"GreFuse":{
-		"prefix":"GreFuse",
-		"body":[
-			"\\GreFuse"
-		]
-	},
-
-
-	"grechangeglyph{}{}{}":{
-		"prefix":"grechangeglyph",
-		"body":[
-			"\\grechangeglyph{${1:glyph name}}{${2:font name}}{${3:glyph or variant name}}"
-		]
-	},
-
-
-	"grechangecavumglyph{}{}{}{}{}":{
-		"prefix":"grechangecavumglyph",
-		"body":[
-			"\\grechangecavumglyph{${1:glyph name}}{${2:font name}}{${3:glyph or variant name}}{${4:hollow font name}}{${5:hollow glyph or variant name}}"
-		]
-	},
-
-
-	"greresetglyph{}":{
-		"prefix":"greresetglyph",
-		"body":[
-			"\\greresetglyph{${1:glyph name}}"
-		]
-	},
-
-
-	"greresetcavumglyph{}":{
-		"prefix":"greresetcavumglyph",
-		"body":[
-			"\\greresetcavumglyph{${1:glyph name}}"
-		]
-	},
-
-
-	"gresettranslationcentering{}":{
-		"prefix":"gresettranslationcentering",
-		"body":[
-			"\\gresettranslationcentering{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetbreakintranslation{}":{
-		"prefix":"gresetbreakintranslation",
-		"body":[
-			"\\gresetbreakintranslation{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresettranslation{}":{
-		"prefix":"gresettranslation",
-		"body":[
-			"\\gresettranslation{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreWriteTranslation{}":{
-		"prefix":"GreWriteTranslation",
-		"body":[
-			"\\GreWriteTranslation{${1:text}}"
-		]
-	},
-
-
-	"GreWriteTranslationWithCenterBeginning{}":{
-		"prefix":"GreWriteTranslationWithCenterBeginning",
-		"body":[
-			"\\GreWriteTranslationWithCenterBeginning{${1:text}}"
-		]
-	},
-
-
-	"GreTranslationCenterEnd":{
-		"prefix":"GreTranslationCenterEnd",
-		"body":[
-			"\\GreTranslationCenterEnd"
-		]
-	},
-
-
-	"gresetlastline{}":{
-		"prefix":"gresetlastline",
-		"body":[
-			"\\gresetlastline{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetlineheightexpansion{}":{
-		"prefix":"gresetlineheightexpansion",
-		"body":[
-			"\\gresetlineheightexpansion{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetnoteadditionalspacelinestext{}":{
-		"prefix":"gresetnoteadditionalspacelinestext",
-		"body":[
-			"\\gresetnoteadditionalspacelinestext{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreBeginScore{}{}{}{}{}{}{}{}":{
-		"prefix":"GreBeginScore",
-		"body":[
-			"\\GreBeginScore{${1:id}}{${2:high height}}{${3:low height}}{${4:translation:0 or 1}}{${5:abovelines:0 or 1}}{${6:filename}}{${7:staff lines}}{${8:before code}}"
-		]
-	},
-
-
-	"GreEndScore":{
-		"prefix":"GreEndScore",
-		"body":[
-			"\\GreEndScore"
-		]
-	},
-
-
-	"GreLastOfLine":{
-		"prefix":"GreLastOfLine",
-		"body":[
-			"\\GreLastOfLine"
-		]
-	},
-
-
-	"GreLastOfScore":{
-		"prefix":"GreLastOfScore",
-		"body":[
-			"\\GreLastOfScore"
-		]
-	},
-
-
-	"gresetbolshifts{}":{
-		"prefix":"gresetbolshifts",
-		"body":[
-			"\\gresetbolshifts{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"greseteolshifts{}":{
-		"prefix":"greseteolshifts",
-		"body":[
-			"\\greseteolshifts{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreSuppressEolCustos":{
-		"prefix":"GreSuppressEolCustos",
-		"body":[
-			"\\GreSuppressEolCustos"
-		]
-	},
-
-
-	"greseteolcustos{}":{
-		"prefix":"greseteolcustos",
-		"body":[
-			"\\greseteolcustos{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreResetEolCustos":{
-		"prefix":"GreResetEolCustos",
-		"body":[
-			"\\GreResetEolCustos"
-		]
-	},
-
-
-	"greseteolcustosbeforeeuouae{}":{
-		"prefix":"greseteolcustosbeforeeuouae",
-		"body":[
-			"\\greseteolcustosbeforeeuouae{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetbreakbeforeeuouae{}":{
-		"prefix":"gresetbreakbeforeeuouae",
-		"body":[
-			"\\gresetbreakbeforeeuouae{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreAdHocSpaceEndOfElement{}{}{}":{
-		"prefix":"GreAdHocSpaceEndOfElement",
-		"body":[
-			"\\GreAdHocSpaceEndOfElement{${1:factor}}{0 or 1}{${2:number of notes}}"
-		]
-	},
-
-
-	"GreEndOfElement{}{}{}":{
-		"prefix":"GreEndOfElement",
-		"body":[
-			"\\GreEndOfElement{${1:integer}}{0 or 1}{${2:number of notes}}"
-		]
-	},
-
-
-	"GreEndOfGlyph{}":{
-		"prefix":"GreEndOfGlyph",
-		"body":[
-			"\\GreEndOfGlyph{${1:integer}}"
-		]
-	},
-
-
-	"GreBeginNLBArea{}{}":{
-		"prefix":"GreBeginNLBArea",
-		"body":[
-			"\\GreBeginNLBArea{${1:in neumes: 0 or 1}}{${2:from translation centering: 0 or 1}}"
-		]
-	},
-
-
-	"GreEndNLBArea{}{}":{
-		"prefix":"GreEndNLBArea",
-		"body":[
-			"\\GreEndNLBArea{${1:integer}}{0 or 1}"
-		]
-	},
-
-
-	"gresetbreakineuouae{}":{
-		"prefix":"gresetbreakineuouae",
-		"body":[
-			"\\gresetbreakineuouae{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreBeginEUOUAE{}":{
-		"prefix":"GreBeginEUOUAE",
-		"body":[
-			"\\GreBeginEUOUAE{${1:integer}}"
-		]
-	},
-
-
-	"GreEndEUOUAE{}":{
-		"prefix":"GreEndEUOUAE",
-		"body":[
-			"\\GreEndEUOUAE{${1:integer}}"
-		]
-	},
-
-
-	"gretilde":{
-		"prefix":"gretilde",
-		"body":[
-			"\\gretilde"
-		]
-	},
-
-
-	"gresetgregoriofont{}":{
-		"prefix":"gresetgregoriofont",
-		"body":[
-			"\\gresetgregoriofont{${1:font name}}"
-		]
-	},
-
-
-	"gresetgregoriofontscaled{}{}":{
-		"prefix":"gresetgregoriofontscaled",
-		"body":[
-			"\\gresetgregoriofontscaled{${1:font name}}{${2:scale}}"
-		]
-	},
-
-
-	"GreCPVirgaReversaAscendensOnDLine{}":{
-		"prefix":"GreCPVirgaReversaAscendensOnDLine",
-		"body":[
-			"\\GreCPVirgaReversaAscendensOnDLine{${1:code}}"
-		]
-	},
-
-
-	"greloadholehollowfonts{}":{
-		"prefix":"greloadholehollowfonts",
-		"body":[
-			"\\greloadholehollowfonts{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"grechangestyle{}{}":{
-		"prefix":"grechangestyle",
-		"body":[
-			"\\grechangestyle{${1:element%keyvals}}{${2:code}}"
-		]
-	},
-
-
-	"grechangestaffsize{}":{
-		"prefix":"grechangestaffsize",
-		"body":[
-			"\\grechangestaffsize{${1:integer}}"
-		]
-	},
-
-
-	"gresetheadercapture{}{}{}":{
-		"prefix":"gresetheadercapture",
-		"body":[
-			"\\gresetheadercapture{${1:gabc header name}}{${2:csname}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"GreHeader{}{}":{
-		"prefix":"GreHeader",
-		"body":[
-			"\\GreHeader{${1:header name}}{${2:header value}}"
-		]
-	},
-
-
-	"gresetgregpath{}":{
-		"prefix":"gresetgregpath",
-		"body":[
-			"\\gresetgregpath{${1:file path%file}}"
-		]
-	},
-
-
-	"gresetcompilegabc{}":{
-		"prefix":"gresetcompilegabc",
-		"body":[
-			"\\gresetcompilegabc{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gregorioscore{}":{
-		"prefix":"gregorioscore",
-		"body":[
-			"\\gregorioscore{${1:file}}"
-		]
-	},
-
-
-	"gabcsnippet{}":{
-		"prefix":"gabcsnippet",
-		"body":[
-			"\\gabcsnippet{${1:gabc}}"
-		]
-	},
-
-
-	"GreHyph":{
-		"prefix":"GreHyph",
-		"body":[
-			"\\GreHyph"
-		]
-	},
-
-
-	"greseteolhyphen{}":{
-		"prefix":"greseteolhyphen",
-		"body":[
-			"\\greseteolhyphen{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresethyphen{}":{
-		"prefix":"gresethyphen",
-		"body":[
-			"\\gresethyphen{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreBeginHeaders":{
-		"prefix":"GreBeginHeaders",
-		"body":[
-			"\\GreBeginHeaders"
-		]
-	},
-
-
-	"grebeforeheaders{}":{
-		"prefix":"grebeforeheaders",
-		"body":[
-			"\\grebeforeheaders{${1:code}}"
-		]
-	},
-
-
-	"GreEndHeaders":{
-		"prefix":"GreEndHeaders",
-		"body":[
-			"\\GreEndHeaders"
-		]
-	},
-
-
-	"greafterheaders{}":{
-		"prefix":"greafterheaders",
-		"body":[
-			"\\greafterheaders{${1:code}}"
-		]
-	},
-
-
-	"GreForceBreak":{
-		"prefix":"GreForceBreak",
-		"body":[
-			"\\GreForceBreak"
-		]
-	},
-
-
-	"GreNoBreak":{
-		"prefix":"GreNoBreak",
-		"body":[
-			"\\GreNoBreak"
-		]
-	},
-
-
-	"grechangestafflinethickness{}":{
-		"prefix":"grechangestafflinethickness",
-		"body":[
-			"\\grechangestafflinethickness{${1:integer}}"
-		]
-	},
-
-
-	"grebolshiftcleftype{}":{
-		"prefix":"grebolshiftcleftype",
-		"body":[
-			"\\grebolshiftcleftype{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"grelocalbolshiftcleftype":{
-		"prefix":"grelocalbolshiftcleftype",
-		"body":[
-			"\\grelocalbolshiftcleftype"
-		]
-	},
-
-
-	"GreProtrusionFactor{}":{
-		"prefix":"GreProtrusionFactor",
-		"body":[
-			"\\GreProtrusionFactor{${1:character}}"
-		]
-	},
-
-
-	"gresetprotrusionfactor{}{}":{
-		"prefix":"gresetprotrusionfactor",
-		"body":[
-			"\\gresetprotrusionfactor{${1:choice%keyvals}}{${2:factor}}"
-		]
-	},
-
-
-	"GreProtrusion{}{}":{
-		"prefix":"GreProtrusion",
-		"body":[
-			"\\GreProtrusion{${1:factor}}{${2:content}}"
-		]
-	},
-
-
-	"gresetledgerlineheuristic{}":{
-		"prefix":"gresetledgerlineheuristic",
-		"body":[
-			"\\gresetledgerlineheuristic{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreSupposeHighLedgerLine":{
-		"prefix":"GreSupposeHighLedgerLine",
-		"body":[
-			"\\GreSupposeHighLedgerLine"
-		]
-	},
-
-
-	"GreSupposeLowLedgerLine":{
-		"prefix":"GreSupposeLowLedgerLine",
-		"body":[
-			"\\GreSupposeLowLedgerLine"
-		]
-	},
-
-
-	"grechangedim{}{}{}":{
-		"prefix":"grechangedim",
-		"body":[
-			"\\grechangedim{${1:dim name}}{${2:distance}}{${3:choice%keyvals}}"
-		]
-	},
-
-
-	"grechangecount{}{}":{
-		"prefix":"grechangecount",
-		"body":[
-			"\\grechangecount{${1:count name%keyvals}}{${2:value}}"
-		]
-	},
-
-
-	"grescaledim{}{}":{
-		"prefix":"grescaledim",
-		"body":[
-			"\\grescaledim{${1:dim name}}{${2:choice%keyvals}}"
-		]
-	},
-
-
-	"grechangenextscorelinedim{}{}{}{}":{
-		"prefix":"grechangenextscorelinedim",
-		"body":[
-			"\\grechangenextscorelinedim{${1:line numbers}}{${2:dim name}}{${3:distance}}{${4:choice%keyvals}}"
-		]
-	},
-
-
-	"grechangenextscorelinecount{}{}{}":{
-		"prefix":"grechangenextscorelinecount",
-		"body":[
-			"\\grechangenextscorelinecount{${1:line numbers}}{${2:count name%keyvals}}{${3:value}}"
-		]
-	},
-
-
-	"greconffactor":{
-		"prefix":"greconffactor",
-		"body":[
-			"\\greconffactor"
-		]
-	},
-
-
-	"greloadspaceconf{}":{
-		"prefix":"greloadspaceconf",
-		"body":[
-			"\\greloadspaceconf{${1:config file id}}"
-		]
-	},
-
-
-	"gresetglyphstyle{}":{
-		"prefix":"gresetglyphstyle",
-		"body":[
-			"\\gresetglyphstyle{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"grebarbracewidth":{
-		"prefix":"grebarbracewidth",
-		"body":[
-			"\\grebarbracewidth"
-		]
-	},
-
-
-	"greprintsigns{}{}":{
-		"prefix":"greprintsigns",
-		"body":[
-			"\\greprintsigns{${1:choice%keyvals}}{${2:enable|disable}}"
-		]
-	},
-
-
-	"GreDiscretionary{}{}{}":{
-		"prefix":"GreDiscretionary",
-		"body":[
-			"\\GreDiscretionary{${1:integer}}{${2:first arg}}{${3:third arg}}"
-		]
-	},
-
-
-	"gresetclef{}":{
-		"prefix":"gresetclef",
-		"body":[
-			"\\gresetclef{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreSetLinesClef{}{}{}{}{}{}{}":{
-		"prefix":"GreSetLinesClef",
-		"body":[
-			"\\GreSetLinesClef{${1:type}}{${2:line}}{0 or 1}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
-		]
-	},
-
-
-	"GreSetLargestClef{}{}{}{}{}{}":{
-		"prefix":"GreSetLargestClef",
-		"body":[
-			"\\GreSetLargestClef{${1:type}}{${2:line}}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
-		]
-	},
-
-
-	"GreInitialClefPosition{}{}":{
-		"prefix":"GreInitialClefPosition",
-		"body":[
-			"\\GreInitialClefPosition{${1:primary line}}{${2:secondary line}}"
-		]
-	},
-
-
-	"GreSetInitialClef{}{}{}{}{}{}{}":{
-		"prefix":"GreSetInitialClef",
-		"body":[
-			"\\GreSetInitialClef{${1:type}}{${2:line}}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}{0 or 1}"
-		]
-	},
-
-
-	"GreChangeClef{}{}{}{}{}{}{}":{
-		"prefix":"GreChangeClef",
-		"body":[
-			"\\GreChangeClef{${1:type}}{${2:line}}{0 or 1}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
-		]
-	},
-
-
-	"GreCustos{}{}":{
-		"prefix":"GreCustos",
-		"body":[
-			"\\GreCustos{${1:height}}{${2:choice%keyvals}}"
-		]
-	},
-
-
-	"GreFinalCustos{}{}":{
-		"prefix":"GreFinalCustos",
-		"body":[
-			"\\GreFinalCustos{${1:height}}{${2:choice%keyvals}}"
-		]
-	},
-
-
-	"GreNextCustos{}{}":{
-		"prefix":"GreNextCustos",
-		"body":[
-			"\\GreNextCustos{${1:height}}{${2:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetcustosalteration{}":{
-		"prefix":"gresetcustosalteration",
-		"body":[
-			"\\gresetcustosalteration{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetbracerendering{}":{
-		"prefix":"gresetbracerendering",
-		"body":[
-			"\\gresetbracerendering{${1:metapost|font}}"
-		]
-	},
-
-
-	"GreOverCurlyBrace{}{}{}{}{}":{
-		"prefix":"GreOverCurlyBrace",
-		"body":[
-			"\\GreOverCurlyBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}{0 or 1}"
-		]
-	},
-
-
-	"GreOverBrace{}{}{}{}":{
-		"prefix":"GreOverBrace",
-		"body":[
-			"\\GreOverBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}"
-		]
-	},
-
-
-	"GreUnderBrace{}{}{}{}":{
-		"prefix":"GreUnderBrace",
-		"body":[
-			"\\GreUnderBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}"
-		]
-	},
-
-
-	"grebracemetapostpreamble{}":{
-		"prefix":"grebracemetapostpreamble",
-		"body":[
-			"\\grebracemetapostpreamble{${1:width}}"
-		]
-	},
-
-
-	"greslurheight":{
-		"prefix":"greslurheight",
-		"body":[
-			"\\greslurheight"
-		]
-	},
-
-
-	"GreSlur{}{}{}{}{}{}":{
-		"prefix":"GreSlur",
-		"body":[
-			"\\GreSlur{${1:height}}{${2:integer}}{${3:integer}}{${4:hdimen}}{${5:vdimen}}{${6:end height}}"
-		]
-	},
-
-
-	"GreVarBraceLength{}":{
-		"prefix":"GreVarBraceLength",
-		"body":[
-			"\\GreVarBraceLength{${1:id}}"
-		]
-	},
-
-
-	"GreVarBraceSavePos{}{}{}":{
-		"prefix":"GreVarBraceSavePos",
-		"body":[
-			"\\GreVarBraceSavePos{${1:id}}{${2:integer}}{${3:integer}}"
-		]
-	},
-
-
-	"GrePunctumMora{}{}{}{}":{
-		"prefix":"GrePunctumMora",
-		"body":[
-			"\\GrePunctumMora{${1:height}}{${2:integer}}{0 or 1}{0 or 1}"
-		]
-	},
-
-
-	"GreAugmentumDuplex{}{}{}":{
-		"prefix":"GreAugmentumDuplex",
-		"body":[
-			"\\GreAugmentumDuplex{${1:height1}}{${2:height2}}{0 or 1}"
-		]
-	},
-
-
-	"GreLowChoralSign{}{}{}":{
-		"prefix":"GreLowChoralSign",
-		"body":[
-			"\\GreLowChoralSign{${1:height}}{${2:sign}}{0 or 1}"
-		]
-	},
-
-
-	"GreHighChoralSign{}{}{}":{
-		"prefix":"GreHighChoralSign",
-		"body":[
-			"\\GreHighChoralSign{${1:height}}{${2:sign}}{0 or 1}"
-		]
-	},
-
-
-	"GreVEpisema{}{}":{
-		"prefix":"GreVEpisema",
-		"body":[
-			"\\GreVEpisema{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreBarBrace{}":{
-		"prefix":"GreBarBrace",
-		"body":[
-			"\\GreBarBrace{${1:type}}"
-		]
-	},
-
-
-	"GreBarVEpisema{}":{
-		"prefix":"GreBarVEpisema",
-		"body":[
-			"\\GreBarVEpisema{${1:type}}"
-		]
-	},
-
-
-	"GreAccentus{}{}":{
-		"prefix":"GreAccentus",
-		"body":[
-			"\\GreAccentus{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreSemicirculus{}{}":{
-		"prefix":"GreSemicirculus",
-		"body":[
-			"\\GreSemicirculus{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreCirculus{}{}":{
-		"prefix":"GreCirculus",
-		"body":[
-			"\\GreCirculus{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreReversedAccentus{}{}":{
-		"prefix":"GreReversedAccentus",
-		"body":[
-			"\\GreReversedAccentus{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreReversedSemicirculus{}{}":{
-		"prefix":"GreReversedSemicirculus",
-		"body":[
-			"\\GreReversedSemicirculus{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreMusicaFictaFlat{}{}":{
-		"prefix":"GreMusicaFictaFlat",
-		"body":[
-			"\\GreMusicaFictaFlat{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreMusicaFictaNatural{}{}":{
-		"prefix":"GreMusicaFictaNatural",
-		"body":[
-			"\\GreMusicaFictaNatural{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreMusicaFictaSharp{}{}":{
-		"prefix":"GreMusicaFictaSharp",
-		"body":[
-			"\\GreMusicaFictaSharp{${1:height}}{${2:type}}"
-		]
-	},
-
-
-	"GreAdditionalLine{}{}{}":{
-		"prefix":"GreAdditionalLine",
-		"body":[
-			"\\GreAdditionalLine{${1:type}}{${2:ambitus}}{${3:episema}}"
-		]
-	},
-
-
-	"GreDrawAdditionalLine{}{}{}{}{}{}":{
-		"prefix":"GreDrawAdditionalLine",
-		"body":[
-			"\\GreDrawAdditionalLine{0 or 1}{${1:distance}}{${2:integer}}{${3:distance}}{${4:integer}}{${5:distance}}"
-		]
-	},
-
-
-	"GreHEpisema{}{}{}{}{}{}{}{}{}":{
-		"prefix":"GreHEpisema",
-		"body":[
-			"\\GreHEpisema{${1:height}}{${2:type}}{${3:ambitus}}{${4:integer}}{${5:choice}}{${6:integer}}{${7:code}}{${8:nudge}}{${9:integer}}"
-		]
-	},
-
-
-	"gresethepisema{}":{
-		"prefix":"gresethepisema",
-		"body":[
-			"\\gresethepisema{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreHEpisemaBridge{}{}{}{}{}{}":{
-		"prefix":"GreHEpisemaBridge",
-		"body":[
-			"\\GreHEpisemaBridge{${1:height}}{0 or 1}{${2:integer}}{${3:code}}{${4:nudge}}{${5:integer}}"
-		]
-	},
-
-
-	"gresetlinesbehinddottedbar{}":{
-		"prefix":"gresetlinesbehinddottedbar",
-		"body":[
-			"\\gresetlinesbehinddottedbar{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreInVirgula{}{}{}":{
-		"prefix":"GreInVirgula",
-		"body":[
-			"\\GreInVirgula{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreVirgula{}{}{}":{
-		"prefix":"GreVirgula",
-		"body":[
-			"\\GreVirgula{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInVirgulaHigh{}{}{}":{
-		"prefix":"GreInVirgulaHigh",
-		"body":[
-			"\\GreInVirgulaHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreVirgulaHigh{}{}{}":{
-		"prefix":"GreVirgulaHigh",
-		"body":[
-			"\\GreVirgulaHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInVirgulaParen{}{}{}":{
-		"prefix":"GreInVirgulaParen",
-		"body":[
-			"\\GreInVirgulaParen{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreVirgulaParen{}{}{}":{
-		"prefix":"GreVirgulaParen",
-		"body":[
-			"\\GreVirgulaParen{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInVirgulaParenHigh{}{}{}":{
-		"prefix":"GreInVirgulaParenHigh",
-		"body":[
-			"\\GreInVirgulaParenHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreVirgulaParenHigh{}{}{}":{
-		"prefix":"GreVirgulaParenHigh",
-		"body":[
-			"\\GreVirgulaParenHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinimis{}{}{}":{
-		"prefix":"GreInDivisioMinimis",
-		"body":[
-			"\\GreInDivisioMinimis{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinimis{}{}{}":{
-		"prefix":"GreDivisioMinimis",
-		"body":[
-			"\\GreDivisioMinimis{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinimisHigh{}{}{}":{
-		"prefix":"GreInDivisioMinimisHigh",
-		"body":[
-			"\\GreInDivisioMinimisHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinimisHigh{}{}{}":{
-		"prefix":"GreDivisioMinimisHigh",
-		"body":[
-			"\\GreDivisioMinimisHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinima{}{}{}":{
-		"prefix":"GreInDivisioMinima",
-		"body":[
-			"\\GreInDivisioMinima{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinima{}{}{}":{
-		"prefix":"GreDivisioMinima",
-		"body":[
-			"\\GreDivisioMinima{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinimaHigh{}{}{}":{
-		"prefix":"GreInDivisioMinimaHigh",
-		"body":[
-			"\\GreInDivisioMinimaHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinimaHigh{}{}{}":{
-		"prefix":"GreDivisioMinimaHigh",
-		"body":[
-			"\\GreDivisioMinimaHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinimaParen{}{}{}":{
-		"prefix":"GreInDivisioMinimaParen",
-		"body":[
-			"\\GreInDivisioMinimaParen{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinimaParen{}{}{}":{
-		"prefix":"GreDivisioMinimaParen",
-		"body":[
-			"\\GreDivisioMinimaParen{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinimaParenHigh{}{}{}":{
-		"prefix":"GreInDivisioMinimaParenHigh",
-		"body":[
-			"\\GreInDivisioMinimaParenHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreDivisioMinimaParenHigh{}{}{}":{
-		"prefix":"GreDivisioMinimaParenHigh",
-		"body":[
-			"\\GreDivisioMinimaParenHigh{0 or 1}{${1:code}}{0 or 1}"
-		]
-	},
-
-
-	"GreInDivisioMinor{}{}":{
-		"prefix":"GreInDivisioMinor",
-		"body":[
-			"\\GreInDivisioMinor{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreDivisioMinor{}{}":{
-		"prefix":"GreDivisioMinor",
-		"body":[
-			"\\GreDivisioMinor{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreInDivisioMaior{}{}":{
-		"prefix":"GreInDivisioMaior",
-		"body":[
-			"\\GreInDivisioMaior{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreDivisioMaior{}{}":{
-		"prefix":"GreDivisioMaior",
-		"body":[
-			"\\GreDivisioMaior{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreInDivisioMaiorDotted{}{}":{
-		"prefix":"GreInDivisioMaiorDotted",
-		"body":[
-			"\\GreInDivisioMaiorDotted{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreDivisioMaiorDotted{}{}":{
-		"prefix":"GreDivisioMaiorDotted",
-		"body":[
-			"\\GreDivisioMaiorDotted{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreDominica{}{}{}":{
-		"prefix":"GreDominica",
-		"body":[
-			"\\GreDominica{${1:type}}{0 or 1}{${2:code}}"
-		]
-	},
-
-
-	"GreInDominica{}{}{}":{
-		"prefix":"GreInDominica",
-		"body":[
-			"\\GreInDominica{${1:type}}{0 or 1}{${2:code}}"
-		]
-	},
-
-
-	"GreInDivisioFinalis{}{}":{
-		"prefix":"GreInDivisioFinalis",
-		"body":[
-			"\\GreInDivisioFinalis{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"GreDivisioFinalis{}{}":{
-		"prefix":"GreDivisioFinalis",
-		"body":[
-			"\\GreDivisioFinalis{0 or 1}{${1:code}}"
-		]
-	},
-
-
-	"gresetshiftaftermora{}":{
-		"prefix":"gresetshiftaftermora",
-		"body":[
-			"\\gresetshiftaftermora{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreFinalDivisioFinalis{}":{
-		"prefix":"GreFinalDivisioFinalis",
-		"body":[
-			"\\GreFinalDivisioFinalis{0 or 1}"
-		]
-	},
-
-
-	"GreFinalDivisioMaior{}":{
-		"prefix":"GreFinalDivisioMaior",
-		"body":[
-			"\\GreFinalDivisioMaior{0 or 1}"
-		]
-	},
-
-
-	"gresetlinesbehindpunctumcavum{}":{
-		"prefix":"gresetlinesbehindpunctumcavum",
-		"body":[
-			"\\gresetlinesbehindpunctumcavum{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetlinesbehindalteration{}":{
-		"prefix":"gresetlinesbehindalteration",
-		"body":[
-			"\\gresetlinesbehindalteration{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreFlat{}{}{}{}{}":{
-		"prefix":"GreFlat",
-		"body":[
-			"\\GreFlat{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"GreFlatParen{}{}{}{}{}":{
-		"prefix":"GreFlatParen",
-		"body":[
-			"\\GreFlatParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"GreNatural{}{}{}{}{}":{
-		"prefix":"GreNatural",
-		"body":[
-			"\\GreNatural{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"GreNaturalParen{}{}{}{}{}":{
-		"prefix":"GreNaturalParen",
-		"body":[
-			"\\GreNaturalParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"GreSharp{}{}{}{}{}":{
-		"prefix":"GreSharp",
-		"body":[
-			"\\GreSharp{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"GreSharpParen{}{}{}{}{}":{
-		"prefix":"GreSharpParen",
-		"body":[
-			"\\GreSharpParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
-		]
-	},
-
-
-	"gresetpunctumcavum{}":{
-		"prefix":"gresetpunctumcavum",
-		"body":[
-			"\\gresetpunctumcavum{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreCavum{}":{
-		"prefix":"GreCavum",
-		"body":[
-			"\\GreCavum{${1:glyph name}}"
-		]
-	},
-
-
-	"GreBracket{}{}{}{}":{
-		"prefix":"GreBracket",
-		"body":[
-			"\\GreBracket{0 or 1}{${1:lowest height}}{${2:highest height}}{${3:info string}}"
-		]
-	},
-
-
-	"gresetpointandclick{}":{
-		"prefix":"gresetpointandclick",
-		"body":[
-			"\\gresetpointandclick{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreGlyphHeights{}{}":{
-		"prefix":"GreGlyphHeights",
-		"body":[
-			"\\GreGlyphHeights{${1:high height}}{${2:low height}}"
-		]
-	},
-
-
-	"GreGlyph{}{}{}{}{}{}{}":{
-		"prefix":"GreGlyph",
-		"body":[
-			"\\GreGlyph{${1:char}}{${2:glyphnum}}{${3:code}}{${4:integer}}{${5:before code}}{${6:after code}}{${7:info string}}"
-		]
-	},
-
-
-	"gresetlyrics{}":{
-		"prefix":"gresetlyrics",
-		"body":[
-			"\\gresetlyrics{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetnotes{}":{
-		"prefix":"gresetnotes",
-		"body":[
-			"\\gresetnotes{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreFirstWord{}":{
-		"prefix":"GreFirstWord",
-		"body":[
-			"\\GreFirstWord{${1:text}}"
-		]
-	},
-
-
-	"GreFirstSyllable{}":{
-		"prefix":"GreFirstSyllable",
-		"body":[
-			"\\GreFirstSyllable{${1:text}}"
-		]
-	},
-
-
-	"GreFirstSyllableInitial{}":{
-		"prefix":"GreFirstSyllableInitial",
-		"body":[
-			"\\GreFirstSyllableInitial{${1:letter}}"
-		]
-	},
-
-
-	"GreElision{}":{
-		"prefix":"GreElision",
-		"body":[
-			"\\GreElision{${1:text}}"
-		]
-	},
-
-
-	"GreSetFixedTextFormat{}":{
-		"prefix":"GreSetFixedTextFormat",
-		"body":[
-			"\\GreSetFixedTextFormat{${1:integer}}"
-		]
-	},
-
-
-	"GreSetFixedNextTextFormat{}":{
-		"prefix":"GreSetFixedNextTextFormat",
-		"body":[
-			"\\GreSetFixedNextTextFormat{${1:integer}}"
-		]
-	},
-
-
-	"GreUnstyled{}":{
-		"prefix":"GreUnstyled",
-		"body":[
-			"\\GreUnstyled{${1:text}}"
-		]
-	},
-
-
-	"GreGABCForceCenters":{
-		"prefix":"GreGABCForceCenters",
-		"body":[
-			"\\GreGABCForceCenters"
-		]
-	},
-
-
-	"GreGABCNextForceCenters":{
-		"prefix":"GreGABCNextForceCenters",
-		"body":[
-			"\\GreGABCNextForceCenters"
-		]
-	},
-
-
-	"gresetgabcforcecenters{}":{
-		"prefix":"gresetgabcforcecenters",
-		"body":[
-			"\\gresetgabcforcecenters{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreSetThisSyllable{}{}{}{}{}":{
-		"prefix":"GreSetThisSyllable",
-		"body":[
-			"\\GreSetThisSyllable{${1:first letters}}{${2:middle letters}}{${3:end letters}}{${4:first letter}}{${5:all but first letters}}"
-		]
-	},
-
-
-	"GreSetNextSyllable{}{}{}{}{}":{
-		"prefix":"GreSetNextSyllable",
-		"body":[
-			"\\GreSetNextSyllable{${1:first letters}}{${2:middle letters}}{${3:end letters}}{${4:first letter}}{${5:all but first letters}}"
-		]
-	},
-
-
-	"gresetlyriccentering{}":{
-		"prefix":"gresetlyriccentering",
-		"body":[
-			"\\gresetlyriccentering{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetclivisalignment{}":{
-		"prefix":"gresetclivisalignment",
-		"body":[
-			"\\gresetclivisalignment{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"gresetemptyfirstsyllablehyphen{}":{
-		"prefix":"gresetemptyfirstsyllablehyphen",
-		"body":[
-			"\\gresetemptyfirstsyllablehyphen{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreForceHyphen":{
-		"prefix":"GreForceHyphen",
-		"body":[
-			"\\GreForceHyphen"
-		]
-	},
-
-
-	"GreEmptyFirstSyllableHyphen":{
-		"prefix":"GreEmptyFirstSyllableHyphen",
-		"body":[
-			"\\GreEmptyFirstSyllableHyphen"
-		]
-	},
-
-
-	"gresetunbreakablesyllablenotes{}{}{}":{
-		"prefix":"gresetunbreakablesyllablenotes",
-		"body":[
-			"\\gresetunbreakablesyllablenotes{${1:int1}}{${2:int2}}{${3:int3}}"
-		]
-	},
-
-
-	"GreSyllableNoteCount{}":{
-		"prefix":"GreSyllableNoteCount",
-		"body":[
-			"\\GreSyllableNoteCount{${1:integer}}"
-		]
-	},
-
-
-	"gresetsyllablerewriting{}":{
-		"prefix":"gresetsyllablerewriting",
-		"body":[
-			"\\gresetsyllablerewriting{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreClearSyllableText":{
-		"prefix":"GreClearSyllableText",
-		"body":[
-			"\\GreClearSyllableText"
-		]
-	},
-
-
-	"GreSyllable{}{}{}{}{}{}{}{}{}":{
-		"prefix":"GreSyllable",
-		"body":[
-			"\\GreSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:notes}}"
-		]
-	},
-
-
-	"GreNextSyllableBeginsEUOUAE{}{}":{
-		"prefix":"GreNextSyllableBeginsEUOUAE",
-		"body":[
-			"\\GreNextSyllableBeginsEUOUAE{${1:id}}{0 or 1}"
-		]
-	},
-
-
-	"GreLastSyllableBeforeEUOUAE{}{}":{
-		"prefix":"GreLastSyllableBeforeEUOUAE",
-		"body":[
-			"\\GreLastSyllableBeforeEUOUAE{${1:id}}{0 or 1}"
-		]
-	},
-
-
-	"gresetbarspacing{}":{
-		"prefix":"gresetbarspacing",
-		"body":[
-			"\\gresetbarspacing{${1:choice%keyvals}}"
-		]
-	},
-
-
-	"GreBarSyllable{}{}{}{}{}{}{}{}{}":{
-		"prefix":"GreBarSyllable",
-		"body":[
-			"\\GreBarSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:bar line}}"
-		]
-	},
-
-
-	"GreNoNoteSyllable{}{}{}{}{}{}{}{}{}":{
-		"prefix":"GreNoNoteSyllable",
-		"body":[
-			"\\GreNoNoteSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:bar line}}"
-		]
-	},
-
-
-	"gresetinitiallines{}":{
-		"prefix":"gresetinitiallines",
-		"body":[
-			"\\gresetinitiallines{${1:number}}"
-		]
-	},
-
-
-	"GreSetFirstSyllableText{}{}{}{}{}{}":{
-		"prefix":"GreSetFirstSyllableText",
-		"body":[
-			"\\GreSetFirstSyllableText{${1:initial}}{${2:first letter}}{${3:other letters}}{${4:sep initial parts}}{${5:nosep initial parts}}{${6:extra macros}}"
-		]
-	},
-
-
-	"GreSetNoFirstSyllableText":{
-		"prefix":"GreSetNoFirstSyllableText",
-		"body":[
-			"\\GreSetNoFirstSyllableText"
-		]
-	},
-
-
-	"GreUpcomingNewLineForcesCustos{}":{
-		"prefix":"GreUpcomingNewLineForcesCustos",
-		"body":[
-			"\\GreUpcomingNewLineForcesCustos{0 or 1}"
-		]
-	},
-
-
-	"GreScoreOpening{}{}{}{}{}":{
-		"prefix":"GreScoreOpening",
-		"body":[
-			"\\GreScoreOpening{${1:after init code}}{${2:after notes code}}{${3:before init code}}{${4:syllable cs}}{${5:first syllable code}}"
-		]
-	},
-
-
-	"gredefsymbol{}{}{}":{
-		"prefix":"gredefsymbol",
-		"body":[
-			"\\gredefsymbol{${1:csname}}{${2:font name}}{${3:glyph name or code point}}"
-		]
-	},
-
-
-	"gredefsizedsymbol{}{}{}":{
-		"prefix":"gredefsizedsymbol",
-		"body":[
-			"\\gredefsizedsymbol{${1:csname}}{${2:font name}}{${3:glyph name or code point}}"
-		]
-	},
-
-
-	"greABar{}":{
-		"prefix":"greABar",
-		"body":[
-			"\\greABar{${1:size}}"
-		]
-	},
-
-
-	"greRBar{}":{
-		"prefix":"greRBar",
-		"body":[
-			"\\greRBar{${1:size}}"
-		]
-	},
-
-
-	"greVBar{}":{
-		"prefix":"greVBar",
-		"body":[
-			"\\greVBar{${1:size}}"
-		]
-	},
-
-
-	"greABarSlant{}":{
-		"prefix":"greABarSlant",
-		"body":[
-			"\\greABarSlant{${1:size}}"
-		]
-	},
-
-
-	"greRBarSlant{}":{
-		"prefix":"greRBarSlant",
-		"body":[
-			"\\greRBarSlant{${1:size}}"
-		]
-	},
-
-
-	"greVBarSlant{}":{
-		"prefix":"greVBarSlant",
-		"body":[
-			"\\greVBarSlant{${1:size}}"
-		]
-	},
-
-
-	"greABarSC{}":{
-		"prefix":"greABarSC",
-		"body":[
-			"\\greABarSC{${1:size}}"
-		]
-	},
-
-
-	"greRBarSC{}":{
-		"prefix":"greRBarSC",
-		"body":[
-			"\\greRBarSC{${1:size}}"
-		]
-	},
-
-
-	"greVBarSC{}":{
-		"prefix":"greVBarSC",
-		"body":[
-			"\\greVBarSC{${1:size}}"
-		]
-	},
-
-
-	"greABarSmall{}":{
-		"prefix":"greABarSmall",
-		"body":[
-			"\\greABarSmall{${1:size}}"
-		]
-	},
-
-
-	"greRBarSmall{}":{
-		"prefix":"greRBarSmall",
-		"body":[
-			"\\greRBarSmall{${1:size}}"
-		]
-	},
-
-
-	"greVBarSmall{}":{
-		"prefix":"greVBarSmall",
-		"body":[
-			"\\greVBarSmall{${1:size}}"
-		]
-	},
-
-
-	"greABarSmallSlant{}":{
-		"prefix":"greABarSmallSlant",
-		"body":[
-			"\\greABarSmallSlant{${1:size}}"
-		]
-	},
-
-
-	"greRBarSmallSlant{}":{
-		"prefix":"greRBarSmallSlant",
-		"body":[
-			"\\greRBarSmallSlant{${1:size}}"
-		]
-	},
-
-
-	"greVBarSmallSlant{}":{
-		"prefix":"greVBarSmallSlant",
-		"body":[
-			"\\greVBarSmallSlant{${1:size}}"
-		]
-	},
-
-
-	"greABarSmallSC{}":{
-		"prefix":"greABarSmallSC",
-		"body":[
-			"\\greABarSmallSC{${1:size}}"
-		]
-	},
-
-
-	"greRBarSmallSC{}":{
-		"prefix":"greRBarSmallSC",
-		"body":[
-			"\\greRBarSmallSC{${1:size}}"
-		]
-	},
-
-
-	"greVBarSmallSC{}":{
-		"prefix":"greVBarSmallSC",
-		"body":[
-			"\\greVBarSmallSC{${1:size}}"
-		]
-	},
-
-
-	"greABarCaption{}":{
-		"prefix":"greABarCaption",
-		"body":[
-			"\\greABarCaption{${1:size}}"
-		]
-	},
-
-
-	"greRBarCaption{}":{
-		"prefix":"greRBarCaption",
-		"body":[
-			"\\greRBarCaption{${1:size}}"
-		]
-	},
-
-
-	"greVBarCaption{}":{
-		"prefix":"greVBarCaption",
-		"body":[
-			"\\greVBarCaption{${1:size}}"
-		]
-	},
-
-
-	"greABarCaptionSlant{}":{
-		"prefix":"greABarCaptionSlant",
-		"body":[
-			"\\greABarCaptionSlant{${1:size}}"
-		]
-	},
-
-
-	"greRBarCaptionSlant{}":{
-		"prefix":"greRBarCaptionSlant",
-		"body":[
-			"\\greRBarCaptionSlant{${1:size}}"
-		]
-	},
-
-
-	"greVBarCaptionSlant{}":{
-		"prefix":"greVBarCaptionSlant",
-		"body":[
-			"\\greVBarCaptionSlant{${1:size}}"
-		]
-	},
-
-
-	"greABarCaptionSC{}":{
-		"prefix":"greABarCaptionSC",
-		"body":[
-			"\\greABarCaptionSC{${1:size}}"
-		]
-	},
-
-
-	"greRBarCaptionSC{}":{
-		"prefix":"greRBarCaptionSC",
-		"body":[
-			"\\greRBarCaptionSC{${1:size}}"
-		]
-	},
-
-
-	"greVBarCaptionSC{}":{
-		"prefix":"greVBarCaptionSC",
-		"body":[
-			"\\greVBarCaptionSC{${1:size}}"
-		]
-	},
-
-
-	"greABarAlt{}":{
-		"prefix":"greABarAlt",
-		"body":[
-			"\\greABarAlt{${1:size}}"
-		]
-	},
-
-
-	"greRBarAlt{}":{
-		"prefix":"greRBarAlt",
-		"body":[
-			"\\greRBarAlt{${1:size}}"
-		]
-	},
-
-
-	"greVBarAlt{}":{
-		"prefix":"greVBarAlt",
-		"body":[
-			"\\greVBarAlt{${1:size}}"
-		]
-	},
-
-
-	"grebarredsymbol{}{}{}{}{}":{
-		"prefix":"grebarredsymbol",
-		"body":[
-			"\\grebarredsymbol{${1:definition}}{${2:symbol}}{${3:size}}{${4:hshift}}{${5:vshift}}"
-		]
-	},
-
-
-	"gredefbarredsymbol{}{}{}{}{}{}":{
-		"prefix":"gredefbarredsymbol",
-		"body":[
-			"\\gredefbarredsymbol{${1:csname}}{${2:definition}}{${3:symbol}}{${4:size}}{${5:hshift}}{${6:vshift}}"
-		]
-	},
-
-
-	"gresimpledefbarredsymbol{}{}":{
-		"prefix":"gresimpledefbarredsymbol",
-		"body":[
-			"\\gresimpledefbarredsymbol{${1:A, R, or V}}{${2:left shift}}"
-		]
-	},
-
-
-	"ABar":{
-		"prefix":"ABar",
-		"body":[
-			"\\ABar"
-		]
-	},
-
-
-	"VBar":{
-		"prefix":"VBar",
-		"body":[
-			"\\VBar"
-		]
-	},
-
-
-	"RBar":{
-		"prefix":"RBar",
-		"body":[
-			"\\RBar"
-		]
-	},
-
-
-	"grelatexsimpledefbarredsymbol{}{}{}{}{}":{
-		"prefix":"grelatexsimpledefbarredsymbol",
-		"body":[
-			"\\grelatexsimpledefbarredsymbol{${1:A, R, or V}}{${2:upmedium shift}}{${3:itmedium shift}}{${4:upbold shift}}{${5:itbold shift}}"
-		]
-	},
-
-
-	"gothRbar":{
-		"prefix":"gothRbar",
-		"body":[
-			"\\gothRbar"
-		]
-	},
-
-
-	"gothVbar":{
-		"prefix":"gothVbar",
-		"body":[
-			"\\gothVbar"
-		]
-	},
-
-
-	"GreDagger":{
-		"prefix":"GreDagger",
-		"body":[
-			"\\GreDagger"
-		]
-	},
-
-
-	"grecross":{
-		"prefix":"grecross",
-		"body":[
-			"\\grecross"
-		]
-	},
-
-
-	"grealtcross":{
-		"prefix":"grealtcross",
-		"body":[
-			"\\grealtcross"
-		]
-	},
-
-
-	"greheightstar":{
-		"prefix":"greheightstar",
-		"body":[
-			"\\greheightstar"
-		]
-	},
-
-
-	"gresixstar":{
-		"prefix":"gresixstar",
-		"body":[
-			"\\gresixstar"
-		]
-	},
-
-
-	"GreStar":{
-		"prefix":"GreStar",
-		"body":[
-			"\\GreStar"
-		]
-	},
-
-
-	"greLineOne{}":{
-		"prefix":"greLineOne",
-		"body":[
-			"\\greLineOne{${1:size}}"
-		]
-	},
-
-
-	"greLineTwo{}":{
-		"prefix":"greLineTwo",
-		"body":[
-			"\\greLineTwo{${1:size}}"
-		]
-	},
-
-
-	"greLineThree{}":{
-		"prefix":"greLineThree",
-		"body":[
-			"\\greLineThree{${1:size}}"
-		]
-	},
-
-
-	"greLineFour{}":{
-		"prefix":"greLineFour",
-		"body":[
-			"\\greLineFour{${1:size}}"
-		]
-	},
-
-
-	"greLineFive{}":{
-		"prefix":"greLineFive",
-		"body":[
-			"\\greLineFive{${1:size}}"
-		]
-	},
-
-
-	"greseparator{}{}":{
-		"prefix":"greseparator",
-		"body":[
-			"\\greseparator{${1:integer 1-5}}{${2:size}}"
-		]
-	},
-
-
-	"greOrnamentOne{}":{
-		"prefix":"greOrnamentOne",
-		"body":[
-			"\\greOrnamentOne{${1:size}}"
-		]
-	},
-
-
-	"greOrnamentTwo{}":{
-		"prefix":"greOrnamentTwo",
-		"body":[
-			"\\greOrnamentTwo{${1:size}}"
-		]
-	},
-
-
-	"greornamentation{}{}":{
-		"prefix":"greornamentation",
-		"body":[
-			"\\greornamentation{${1:integer 1-2}}{${2:size}}"
-		]
-	},
-
-
-	"gresetspecial{}{}":{
-		"prefix":"gresetspecial",
-		"body":[
-			"\\gresetspecial{${1:text%plain}}{${2:code}}"
-		]
-	},
-
-
-	"greunsetspecial{}":{
-		"prefix":"greunsetspecial",
-		"body":[
-			"\\greunsetspecial{${1:text%plain}}"
-		]
-	},
-
-
-	"GreSpecial{}":{
-		"prefix":"GreSpecial",
-		"body":[
-			"\\GreSpecial{${1:text%plain}}"
-		]
-	},
-
-
-	"gresetnabcfont{}{}":{
-		"prefix":"gresetnabcfont",
-		"body":[
-			"\\gresetnabcfont{${1:font name%keyvals}}{${2:size}}"
-		]
-	},
-
-
-	"GreNABCChar{}":{
-		"prefix":"GreNABCChar",
-		"body":[
-			"\\GreNABCChar{${1:nabc code}}"
-		]
-	},
-
-
-	"gresetnabc{}{}":{
-		"prefix":"gresetnabc",
-		"body":[
-			"\\gresetnabc{${1:nabc voice number}}{${2:choice%keyvals}}"
-		]
-	},
-
-
-	"GreNABCNeumes{}{}{}{}":{
-		"prefix":"GreNABCNeumes",
-		"body":[
-			"\\GreNABCNeumes{${1:line}}{${2:nabc code}}{${3:high pitch}}{${4:low pitch}}"
-		]
-	},
-
-
-	"GreScoreNABCLines{}":{
-		"prefix":"GreScoreNABCLines",
-		"body":[
-			"\\GreScoreNABCLines{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2293,7 +131,71 @@
 		"prefix":"greannotation",
 		"body":[
 			"\\greannotation[${2:alignment%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gresetannotationby{}":{
+		"prefix":"gresetannotationby",
+		"body":[
+			"\\gresetannotationby{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetannotationvalign{}":{
+		"prefix":"gresetannotationvalign",
+		"body":[
+			"\\gresetannotationvalign{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreMode{}{}{}":{
+		"prefix":"GreMode",
+		"body":[
+			"\\GreMode{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetmodenumbersystem{}":{
+		"prefix":"gresetmodenumbersystem",
+		"body":[
+			"\\gresetmodenumbersystem{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreModeNumber{}":{
+		"prefix":"GreModeNumber",
+		"body":[
+			"\\GreModeNumber{${1:integer 1-8}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreAnnotationLines{}{}":{
+		"prefix":"GreAnnotationLines",
+		"body":[
+			"\\GreAnnotationLines{${1:line1%text}}{${2:line2%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grecommentary{}":{
+		"prefix":"grecommentary",
+		"body":[
+			"\\grecommentary{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2301,7 +203,368 @@
 		"prefix":"grecommentary",
 		"body":[
 			"\\grecommentary[${2:distance}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gresetabovelinestext{}":{
+		"prefix":"gresetabovelinestext",
+		"body":[
+			"\\gresetabovelinestext{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetTextAboveLines{}":{
+		"prefix":"GreSetTextAboveLines",
+		"body":[
+			"\\GreSetTextAboveLines{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetNabcAboveLines{}":{
+		"prefix":"GreSetNabcAboveLines",
+		"body":[
+			"\\GreSetNabcAboveLines{${1:Nabc names}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlines{}":{
+		"prefix":"gresetlines",
+		"body":[
+			"\\gresetlines{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFuseTwo{}{}":{
+		"prefix":"GreFuseTwo",
+		"body":[
+			"\\GreFuseTwo{${1:glyph1}}{${2:glyph2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFuse":{
+		"prefix":"GreFuse",
+		"body":[
+			"\\GreFuse"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangeglyph{}{}{}":{
+		"prefix":"grechangeglyph",
+		"body":[
+			"\\grechangeglyph{${1:glyph name}}{${2:font name}}{${3:glyph or variant name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangecavumglyph{}{}{}{}{}":{
+		"prefix":"grechangecavumglyph",
+		"body":[
+			"\\grechangecavumglyph{${1:glyph name}}{${2:font name}}{${3:glyph or variant name}}{${4:hollow font name}}{${5:hollow glyph or variant name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greresetglyph{}":{
+		"prefix":"greresetglyph",
+		"body":[
+			"\\greresetglyph{${1:glyph name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greresetcavumglyph{}":{
+		"prefix":"greresetcavumglyph",
+		"body":[
+			"\\greresetcavumglyph{${1:glyph name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresettranslationcentering{}":{
+		"prefix":"gresettranslationcentering",
+		"body":[
+			"\\gresettranslationcentering{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbreakintranslation{}":{
+		"prefix":"gresetbreakintranslation",
+		"body":[
+			"\\gresetbreakintranslation{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresettranslation{}":{
+		"prefix":"gresettranslation",
+		"body":[
+			"\\gresettranslation{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreWriteTranslation{}":{
+		"prefix":"GreWriteTranslation",
+		"body":[
+			"\\GreWriteTranslation{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreWriteTranslationWithCenterBeginning{}":{
+		"prefix":"GreWriteTranslationWithCenterBeginning",
+		"body":[
+			"\\GreWriteTranslationWithCenterBeginning{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreTranslationCenterEnd":{
+		"prefix":"GreTranslationCenterEnd",
+		"body":[
+			"\\GreTranslationCenterEnd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlastline{}":{
+		"prefix":"gresetlastline",
+		"body":[
+			"\\gresetlastline{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlineheightexpansion{}":{
+		"prefix":"gresetlineheightexpansion",
+		"body":[
+			"\\gresetlineheightexpansion{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetnoteadditionalspacelinestext{}":{
+		"prefix":"gresetnoteadditionalspacelinestext",
+		"body":[
+			"\\gresetnoteadditionalspacelinestext{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBeginScore{}{}{}{}{}{}{}{}":{
+		"prefix":"GreBeginScore",
+		"body":[
+			"\\GreBeginScore{${1:id}}{${2:high height}}{${3:low height}}{${4:translation:0 or 1}}{${5:abovelines:0 or 1}}{${6:filename}}{${7:staff lines}}{${8:before code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndScore":{
+		"prefix":"GreEndScore",
+		"body":[
+			"\\GreEndScore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreLastOfLine":{
+		"prefix":"GreLastOfLine",
+		"body":[
+			"\\GreLastOfLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreLastOfScore":{
+		"prefix":"GreLastOfScore",
+		"body":[
+			"\\GreLastOfScore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbolshifts{}":{
+		"prefix":"gresetbolshifts",
+		"body":[
+			"\\gresetbolshifts{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greseteolshifts{}":{
+		"prefix":"greseteolshifts",
+		"body":[
+			"\\greseteolshifts{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSuppressEolCustos":{
+		"prefix":"GreSuppressEolCustos",
+		"body":[
+			"\\GreSuppressEolCustos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greseteolcustos{}":{
+		"prefix":"greseteolcustos",
+		"body":[
+			"\\greseteolcustos{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreResetEolCustos":{
+		"prefix":"GreResetEolCustos",
+		"body":[
+			"\\GreResetEolCustos"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greseteolcustosbeforeeuouae{}":{
+		"prefix":"greseteolcustosbeforeeuouae",
+		"body":[
+			"\\greseteolcustosbeforeeuouae{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbreakbeforeeuouae{}":{
+		"prefix":"gresetbreakbeforeeuouae",
+		"body":[
+			"\\gresetbreakbeforeeuouae{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreAdHocSpaceEndOfElement{}{}{}":{
+		"prefix":"GreAdHocSpaceEndOfElement",
+		"body":[
+			"\\GreAdHocSpaceEndOfElement{${1:factor}}{0 or 1}{${2:number of notes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndOfElement{}{}{}":{
+		"prefix":"GreEndOfElement",
+		"body":[
+			"\\GreEndOfElement{${1:integer}}{0 or 1}{${2:number of notes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndOfGlyph{}":{
+		"prefix":"GreEndOfGlyph",
+		"body":[
+			"\\GreEndOfGlyph{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBeginNLBArea{}{}":{
+		"prefix":"GreBeginNLBArea",
+		"body":[
+			"\\GreBeginNLBArea{${1:in neumes: 0 or 1}}{${2:from translation centering: 0 or 1}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndNLBArea{}{}":{
+		"prefix":"GreEndNLBArea",
+		"body":[
+			"\\GreEndNLBArea{${1:integer}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbreakineuouae{}":{
+		"prefix":"gresetbreakineuouae",
+		"body":[
+			"\\gresetbreakineuouae{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBeginEUOUAE{}":{
+		"prefix":"GreBeginEUOUAE",
+		"body":[
+			"\\GreBeginEUOUAE{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndEUOUAE{}":{
+		"prefix":"GreEndEUOUAE",
+		"body":[
+			"\\GreEndEUOUAE{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gretilde":{
+		"prefix":"gretilde",
+		"body":[
+			"\\gretilde"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetgregoriofont{}":{
+		"prefix":"gresetgregoriofont",
+		"body":[
+			"\\gresetgregoriofont{${1:font name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2309,7 +572,17 @@
 		"prefix":"gresetgregoriofont",
 		"body":[
 			"\\gresetgregoriofont[${2:alt font}]{${1:font name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gresetgregoriofontscaled{}{}":{
+		"prefix":"gresetgregoriofontscaled",
+		"body":[
+			"\\gresetgregoriofontscaled{${1:font name}}{${2:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2317,7 +590,35 @@
 		"prefix":"gresetgregoriofontscaled",
 		"body":[
 			"\\gresetgregoriofontscaled[${3:alt font}]{${1:font name}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GreCPVirgaReversaAscendensOnDLine{}":{
+		"prefix":"GreCPVirgaReversaAscendensOnDLine",
+		"body":[
+			"\\GreCPVirgaReversaAscendensOnDLine{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greloadholehollowfonts{}":{
+		"prefix":"greloadholehollowfonts",
+		"body":[
+			"\\greloadholehollowfonts{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangestyle{}{}":{
+		"prefix":"grechangestyle",
+		"body":[
+			"\\grechangestyle{${1:element%keyvals}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2325,7 +626,62 @@
 		"prefix":"grechangestyle",
 		"body":[
 			"\\grechangestyle{${1:element%keyvals}}{${2:on code}}[${3:off code}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"grechangestaffsize{}":{
+		"prefix":"grechangestaffsize",
+		"body":[
+			"\\grechangestaffsize{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetheadercapture{}{}{}":{
+		"prefix":"gresetheadercapture",
+		"body":[
+			"\\gresetheadercapture{${1:gabc header name}}{${2:csname}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreHeader{}{}":{
+		"prefix":"GreHeader",
+		"body":[
+			"\\GreHeader{${1:header name}}{${2:header value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetgregpath{}":{
+		"prefix":"gresetgregpath",
+		"body":[
+			"\\gresetgregpath{${1:file path%file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetcompilegabc{}":{
+		"prefix":"gresetcompilegabc",
+		"body":[
+			"\\gresetcompilegabc{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gregorioscore{}":{
+		"prefix":"gregorioscore",
+		"body":[
+			"\\gregorioscore{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2333,7 +689,377 @@
 		"prefix":"gregorioscore",
 		"body":[
 			"\\gregorioscore[${2:option%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gabcsnippet{}":{
+		"prefix":"gabcsnippet",
+		"body":[
+			"\\gabcsnippet{${1:gabc}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreHyph":{
+		"prefix":"GreHyph",
+		"body":[
+			"\\GreHyph"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greseteolhyphen{}":{
+		"prefix":"greseteolhyphen",
+		"body":[
+			"\\greseteolhyphen{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresethyphen{}":{
+		"prefix":"gresethyphen",
+		"body":[
+			"\\gresethyphen{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBeginHeaders":{
+		"prefix":"GreBeginHeaders",
+		"body":[
+			"\\GreBeginHeaders"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grebeforeheaders{}":{
+		"prefix":"grebeforeheaders",
+		"body":[
+			"\\grebeforeheaders{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEndHeaders":{
+		"prefix":"GreEndHeaders",
+		"body":[
+			"\\GreEndHeaders"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greafterheaders{}":{
+		"prefix":"greafterheaders",
+		"body":[
+			"\\greafterheaders{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreForceBreak":{
+		"prefix":"GreForceBreak",
+		"body":[
+			"\\GreForceBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNoBreak":{
+		"prefix":"GreNoBreak",
+		"body":[
+			"\\GreNoBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangestafflinethickness{}":{
+		"prefix":"grechangestafflinethickness",
+		"body":[
+			"\\grechangestafflinethickness{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grebolshiftcleftype{}":{
+		"prefix":"grebolshiftcleftype",
+		"body":[
+			"\\grebolshiftcleftype{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grelocalbolshiftcleftype":{
+		"prefix":"grelocalbolshiftcleftype",
+		"body":[
+			"\\grelocalbolshiftcleftype"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreProtrusionFactor{}":{
+		"prefix":"GreProtrusionFactor",
+		"body":[
+			"\\GreProtrusionFactor{${1:character}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetprotrusionfactor{}{}":{
+		"prefix":"gresetprotrusionfactor",
+		"body":[
+			"\\gresetprotrusionfactor{${1:choice%keyvals}}{${2:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreProtrusion{}{}":{
+		"prefix":"GreProtrusion",
+		"body":[
+			"\\GreProtrusion{${1:factor}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetledgerlineheuristic{}":{
+		"prefix":"gresetledgerlineheuristic",
+		"body":[
+			"\\gresetledgerlineheuristic{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSupposeHighLedgerLine":{
+		"prefix":"GreSupposeHighLedgerLine",
+		"body":[
+			"\\GreSupposeHighLedgerLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSupposeLowLedgerLine":{
+		"prefix":"GreSupposeLowLedgerLine",
+		"body":[
+			"\\GreSupposeLowLedgerLine"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangedim{}{}{}":{
+		"prefix":"grechangedim",
+		"body":[
+			"\\grechangedim{${1:dim name}}{${2:distance}}{${3:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangecount{}{}":{
+		"prefix":"grechangecount",
+		"body":[
+			"\\grechangecount{${1:count name%keyvals}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grescaledim{}{}":{
+		"prefix":"grescaledim",
+		"body":[
+			"\\grescaledim{${1:dim name}}{${2:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangenextscorelinedim{}{}{}{}":{
+		"prefix":"grechangenextscorelinedim",
+		"body":[
+			"\\grechangenextscorelinedim{${1:line numbers}}{${2:dim name}}{${3:distance}}{${4:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grechangenextscorelinecount{}{}{}":{
+		"prefix":"grechangenextscorelinecount",
+		"body":[
+			"\\grechangenextscorelinecount{${1:line numbers}}{${2:count name%keyvals}}{${3:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greconffactor":{
+		"prefix":"greconffactor",
+		"body":[
+			"\\greconffactor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greloadspaceconf{}":{
+		"prefix":"greloadspaceconf",
+		"body":[
+			"\\greloadspaceconf{${1:config file id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetglyphstyle{}":{
+		"prefix":"gresetglyphstyle",
+		"body":[
+			"\\gresetglyphstyle{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grebarbracewidth":{
+		"prefix":"grebarbracewidth",
+		"body":[
+			"\\grebarbracewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greprintsigns{}{}":{
+		"prefix":"greprintsigns",
+		"body":[
+			"\\greprintsigns{${1:choice%keyvals}}{${2:enable|disable}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDiscretionary{}{}{}":{
+		"prefix":"GreDiscretionary",
+		"body":[
+			"\\GreDiscretionary{${1:integer}}{${2:first arg}}{${3:third arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetclef{}":{
+		"prefix":"gresetclef",
+		"body":[
+			"\\gresetclef{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetLinesClef{}{}{}{}{}{}{}":{
+		"prefix":"GreSetLinesClef",
+		"body":[
+			"\\GreSetLinesClef{${1:type}}{${2:line}}{0 or 1}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetLargestClef{}{}{}{}{}{}":{
+		"prefix":"GreSetLargestClef",
+		"body":[
+			"\\GreSetLargestClef{${1:type}}{${2:line}}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInitialClefPosition{}{}":{
+		"prefix":"GreInitialClefPosition",
+		"body":[
+			"\\GreInitialClefPosition{${1:primary line}}{${2:secondary line}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetInitialClef{}{}{}{}{}{}{}":{
+		"prefix":"GreSetInitialClef",
+		"body":[
+			"\\GreSetInitialClef{${1:type}}{${2:line}}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreChangeClef{}{}{}{}{}{}{}":{
+		"prefix":"GreChangeClef",
+		"body":[
+			"\\GreChangeClef{${1:type}}{${2:line}}{0 or 1}{${3:height}}{${4:secondary type}}{${5:secondary line}}{${6:secondary height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreCustos{}{}":{
+		"prefix":"GreCustos",
+		"body":[
+			"\\GreCustos{${1:height}}{${2:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFinalCustos{}{}":{
+		"prefix":"GreFinalCustos",
+		"body":[
+			"\\GreFinalCustos{${1:height}}{${2:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNextCustos{}{}":{
+		"prefix":"GreNextCustos",
+		"body":[
+			"\\GreNextCustos{${1:height}}{${2:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetcustosalteration{}":{
+		"prefix":"gresetcustosalteration",
+		"body":[
+			"\\gresetcustosalteration{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbracerendering{}":{
+		"prefix":"gresetbracerendering",
+		"body":[
+			"\\gresetbracerendering{${1:metapost|font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -2341,6 +1067,1573 @@
 		"prefix":"gresetbracerendering",
 		"body":[
 			"\\gresetbracerendering[${2:option%keyvals}]{${1:metapost|font}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"GreOverCurlyBrace{}{}{}{}{}":{
+		"prefix":"GreOverCurlyBrace",
+		"body":[
+			"\\GreOverCurlyBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreOverBrace{}{}{}{}":{
+		"prefix":"GreOverBrace",
+		"body":[
+			"\\GreOverBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreUnderBrace{}{}{}{}":{
+		"prefix":"GreUnderBrace",
+		"body":[
+			"\\GreUnderBrace{${1:width}}{${2:vshift}}{${3:hshift}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grebracemetapostpreamble{}":{
+		"prefix":"grebracemetapostpreamble",
+		"body":[
+			"\\grebracemetapostpreamble{${1:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greslurheight":{
+		"prefix":"greslurheight",
+		"body":[
+			"\\greslurheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSlur{}{}{}{}{}{}":{
+		"prefix":"GreSlur",
+		"body":[
+			"\\GreSlur{${1:height}}{${2:integer}}{${3:integer}}{${4:hdimen}}{${5:vdimen}}{${6:end height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVarBraceLength{}":{
+		"prefix":"GreVarBraceLength",
+		"body":[
+			"\\GreVarBraceLength{${1:id}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVarBraceSavePos{}{}{}":{
+		"prefix":"GreVarBraceSavePos",
+		"body":[
+			"\\GreVarBraceSavePos{${1:id}}{${2:integer}}{${3:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GrePunctumMora{}{}{}{}":{
+		"prefix":"GrePunctumMora",
+		"body":[
+			"\\GrePunctumMora{${1:height}}{${2:integer}}{0 or 1}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreAugmentumDuplex{}{}{}":{
+		"prefix":"GreAugmentumDuplex",
+		"body":[
+			"\\GreAugmentumDuplex{${1:height1}}{${2:height2}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreLowChoralSign{}{}{}":{
+		"prefix":"GreLowChoralSign",
+		"body":[
+			"\\GreLowChoralSign{${1:height}}{${2:sign}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreHighChoralSign{}{}{}":{
+		"prefix":"GreHighChoralSign",
+		"body":[
+			"\\GreHighChoralSign{${1:height}}{${2:sign}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVEpisema{}{}":{
+		"prefix":"GreVEpisema",
+		"body":[
+			"\\GreVEpisema{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBarBrace{}":{
+		"prefix":"GreBarBrace",
+		"body":[
+			"\\GreBarBrace{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBarVEpisema{}":{
+		"prefix":"GreBarVEpisema",
+		"body":[
+			"\\GreBarVEpisema{${1:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreAccentus{}{}":{
+		"prefix":"GreAccentus",
+		"body":[
+			"\\GreAccentus{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSemicirculus{}{}":{
+		"prefix":"GreSemicirculus",
+		"body":[
+			"\\GreSemicirculus{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreCirculus{}{}":{
+		"prefix":"GreCirculus",
+		"body":[
+			"\\GreCirculus{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreReversedAccentus{}{}":{
+		"prefix":"GreReversedAccentus",
+		"body":[
+			"\\GreReversedAccentus{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreReversedSemicirculus{}{}":{
+		"prefix":"GreReversedSemicirculus",
+		"body":[
+			"\\GreReversedSemicirculus{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreMusicaFictaFlat{}{}":{
+		"prefix":"GreMusicaFictaFlat",
+		"body":[
+			"\\GreMusicaFictaFlat{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreMusicaFictaNatural{}{}":{
+		"prefix":"GreMusicaFictaNatural",
+		"body":[
+			"\\GreMusicaFictaNatural{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreMusicaFictaSharp{}{}":{
+		"prefix":"GreMusicaFictaSharp",
+		"body":[
+			"\\GreMusicaFictaSharp{${1:height}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreAdditionalLine{}{}{}":{
+		"prefix":"GreAdditionalLine",
+		"body":[
+			"\\GreAdditionalLine{${1:type}}{${2:ambitus}}{${3:episema}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDrawAdditionalLine{}{}{}{}{}{}":{
+		"prefix":"GreDrawAdditionalLine",
+		"body":[
+			"\\GreDrawAdditionalLine{0 or 1}{${1:distance}}{${2:integer}}{${3:distance}}{${4:integer}}{${5:distance}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreHEpisema{}{}{}{}{}{}{}{}{}":{
+		"prefix":"GreHEpisema",
+		"body":[
+			"\\GreHEpisema{${1:height}}{${2:type}}{${3:ambitus}}{${4:integer}}{${5:choice}}{${6:integer}}{${7:code}}{${8:nudge}}{${9:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresethepisema{}":{
+		"prefix":"gresethepisema",
+		"body":[
+			"\\gresethepisema{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreHEpisemaBridge{}{}{}{}{}{}":{
+		"prefix":"GreHEpisemaBridge",
+		"body":[
+			"\\GreHEpisemaBridge{${1:height}}{0 or 1}{${2:integer}}{${3:code}}{${4:nudge}}{${5:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlinesbehinddottedbar{}":{
+		"prefix":"gresetlinesbehinddottedbar",
+		"body":[
+			"\\gresetlinesbehinddottedbar{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInVirgula{}{}{}":{
+		"prefix":"GreInVirgula",
+		"body":[
+			"\\GreInVirgula{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVirgula{}{}{}":{
+		"prefix":"GreVirgula",
+		"body":[
+			"\\GreVirgula{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInVirgulaHigh{}{}{}":{
+		"prefix":"GreInVirgulaHigh",
+		"body":[
+			"\\GreInVirgulaHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVirgulaHigh{}{}{}":{
+		"prefix":"GreVirgulaHigh",
+		"body":[
+			"\\GreVirgulaHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInVirgulaParen{}{}{}":{
+		"prefix":"GreInVirgulaParen",
+		"body":[
+			"\\GreInVirgulaParen{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVirgulaParen{}{}{}":{
+		"prefix":"GreVirgulaParen",
+		"body":[
+			"\\GreVirgulaParen{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInVirgulaParenHigh{}{}{}":{
+		"prefix":"GreInVirgulaParenHigh",
+		"body":[
+			"\\GreInVirgulaParenHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreVirgulaParenHigh{}{}{}":{
+		"prefix":"GreVirgulaParenHigh",
+		"body":[
+			"\\GreVirgulaParenHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinimis{}{}{}":{
+		"prefix":"GreInDivisioMinimis",
+		"body":[
+			"\\GreInDivisioMinimis{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinimis{}{}{}":{
+		"prefix":"GreDivisioMinimis",
+		"body":[
+			"\\GreDivisioMinimis{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinimisHigh{}{}{}":{
+		"prefix":"GreInDivisioMinimisHigh",
+		"body":[
+			"\\GreInDivisioMinimisHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinimisHigh{}{}{}":{
+		"prefix":"GreDivisioMinimisHigh",
+		"body":[
+			"\\GreDivisioMinimisHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinima{}{}{}":{
+		"prefix":"GreInDivisioMinima",
+		"body":[
+			"\\GreInDivisioMinima{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinima{}{}{}":{
+		"prefix":"GreDivisioMinima",
+		"body":[
+			"\\GreDivisioMinima{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinimaHigh{}{}{}":{
+		"prefix":"GreInDivisioMinimaHigh",
+		"body":[
+			"\\GreInDivisioMinimaHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinimaHigh{}{}{}":{
+		"prefix":"GreDivisioMinimaHigh",
+		"body":[
+			"\\GreDivisioMinimaHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinimaParen{}{}{}":{
+		"prefix":"GreInDivisioMinimaParen",
+		"body":[
+			"\\GreInDivisioMinimaParen{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinimaParen{}{}{}":{
+		"prefix":"GreDivisioMinimaParen",
+		"body":[
+			"\\GreDivisioMinimaParen{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinimaParenHigh{}{}{}":{
+		"prefix":"GreInDivisioMinimaParenHigh",
+		"body":[
+			"\\GreInDivisioMinimaParenHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinimaParenHigh{}{}{}":{
+		"prefix":"GreDivisioMinimaParenHigh",
+		"body":[
+			"\\GreDivisioMinimaParenHigh{0 or 1}{${1:code}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMinor{}{}":{
+		"prefix":"GreInDivisioMinor",
+		"body":[
+			"\\GreInDivisioMinor{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMinor{}{}":{
+		"prefix":"GreDivisioMinor",
+		"body":[
+			"\\GreDivisioMinor{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMaior{}{}":{
+		"prefix":"GreInDivisioMaior",
+		"body":[
+			"\\GreInDivisioMaior{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMaior{}{}":{
+		"prefix":"GreDivisioMaior",
+		"body":[
+			"\\GreDivisioMaior{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioMaiorDotted{}{}":{
+		"prefix":"GreInDivisioMaiorDotted",
+		"body":[
+			"\\GreInDivisioMaiorDotted{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioMaiorDotted{}{}":{
+		"prefix":"GreDivisioMaiorDotted",
+		"body":[
+			"\\GreDivisioMaiorDotted{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDominica{}{}{}":{
+		"prefix":"GreDominica",
+		"body":[
+			"\\GreDominica{${1:type}}{0 or 1}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDominica{}{}{}":{
+		"prefix":"GreInDominica",
+		"body":[
+			"\\GreInDominica{${1:type}}{0 or 1}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreInDivisioFinalis{}{}":{
+		"prefix":"GreInDivisioFinalis",
+		"body":[
+			"\\GreInDivisioFinalis{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDivisioFinalis{}{}":{
+		"prefix":"GreDivisioFinalis",
+		"body":[
+			"\\GreDivisioFinalis{0 or 1}{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetshiftaftermora{}":{
+		"prefix":"gresetshiftaftermora",
+		"body":[
+			"\\gresetshiftaftermora{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFinalDivisioFinalis{}":{
+		"prefix":"GreFinalDivisioFinalis",
+		"body":[
+			"\\GreFinalDivisioFinalis{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFinalDivisioMaior{}":{
+		"prefix":"GreFinalDivisioMaior",
+		"body":[
+			"\\GreFinalDivisioMaior{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlinesbehindpunctumcavum{}":{
+		"prefix":"gresetlinesbehindpunctumcavum",
+		"body":[
+			"\\gresetlinesbehindpunctumcavum{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlinesbehindalteration{}":{
+		"prefix":"gresetlinesbehindalteration",
+		"body":[
+			"\\gresetlinesbehindalteration{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFlat{}{}{}{}{}":{
+		"prefix":"GreFlat",
+		"body":[
+			"\\GreFlat{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFlatParen{}{}{}{}{}":{
+		"prefix":"GreFlatParen",
+		"body":[
+			"\\GreFlatParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNatural{}{}{}{}{}":{
+		"prefix":"GreNatural",
+		"body":[
+			"\\GreNatural{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNaturalParen{}{}{}{}{}":{
+		"prefix":"GreNaturalParen",
+		"body":[
+			"\\GreNaturalParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSharp{}{}{}{}{}":{
+		"prefix":"GreSharp",
+		"body":[
+			"\\GreSharp{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSharpParen{}{}{}{}{}":{
+		"prefix":"GreSharpParen",
+		"body":[
+			"\\GreSharpParen{${1:height}}{0 or 1}{${2:before code}}{${3:after code}}{${4:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetpunctumcavum{}":{
+		"prefix":"gresetpunctumcavum",
+		"body":[
+			"\\gresetpunctumcavum{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreCavum{}":{
+		"prefix":"GreCavum",
+		"body":[
+			"\\GreCavum{${1:glyph name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBracket{}{}{}{}":{
+		"prefix":"GreBracket",
+		"body":[
+			"\\GreBracket{0 or 1}{${1:lowest height}}{${2:highest height}}{${3:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetpointandclick{}":{
+		"prefix":"gresetpointandclick",
+		"body":[
+			"\\gresetpointandclick{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreGlyphHeights{}{}":{
+		"prefix":"GreGlyphHeights",
+		"body":[
+			"\\GreGlyphHeights{${1:high height}}{${2:low height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreGlyph{}{}{}{}{}{}{}":{
+		"prefix":"GreGlyph",
+		"body":[
+			"\\GreGlyph{${1:char}}{${2:glyphnum}}{${3:code}}{${4:integer}}{${5:before code}}{${6:after code}}{${7:info string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlyrics{}":{
+		"prefix":"gresetlyrics",
+		"body":[
+			"\\gresetlyrics{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetnotes{}":{
+		"prefix":"gresetnotes",
+		"body":[
+			"\\gresetnotes{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFirstWord{}":{
+		"prefix":"GreFirstWord",
+		"body":[
+			"\\GreFirstWord{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFirstSyllable{}":{
+		"prefix":"GreFirstSyllable",
+		"body":[
+			"\\GreFirstSyllable{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreFirstSyllableInitial{}":{
+		"prefix":"GreFirstSyllableInitial",
+		"body":[
+			"\\GreFirstSyllableInitial{${1:letter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreElision{}":{
+		"prefix":"GreElision",
+		"body":[
+			"\\GreElision{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetFixedTextFormat{}":{
+		"prefix":"GreSetFixedTextFormat",
+		"body":[
+			"\\GreSetFixedTextFormat{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetFixedNextTextFormat{}":{
+		"prefix":"GreSetFixedNextTextFormat",
+		"body":[
+			"\\GreSetFixedNextTextFormat{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreUnstyled{}":{
+		"prefix":"GreUnstyled",
+		"body":[
+			"\\GreUnstyled{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreGABCForceCenters":{
+		"prefix":"GreGABCForceCenters",
+		"body":[
+			"\\GreGABCForceCenters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreGABCNextForceCenters":{
+		"prefix":"GreGABCNextForceCenters",
+		"body":[
+			"\\GreGABCNextForceCenters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetgabcforcecenters{}":{
+		"prefix":"gresetgabcforcecenters",
+		"body":[
+			"\\gresetgabcforcecenters{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetThisSyllable{}{}{}{}{}":{
+		"prefix":"GreSetThisSyllable",
+		"body":[
+			"\\GreSetThisSyllable{${1:first letters}}{${2:middle letters}}{${3:end letters}}{${4:first letter}}{${5:all but first letters}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetNextSyllable{}{}{}{}{}":{
+		"prefix":"GreSetNextSyllable",
+		"body":[
+			"\\GreSetNextSyllable{${1:first letters}}{${2:middle letters}}{${3:end letters}}{${4:first letter}}{${5:all but first letters}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetlyriccentering{}":{
+		"prefix":"gresetlyriccentering",
+		"body":[
+			"\\gresetlyriccentering{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetclivisalignment{}":{
+		"prefix":"gresetclivisalignment",
+		"body":[
+			"\\gresetclivisalignment{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetemptyfirstsyllablehyphen{}":{
+		"prefix":"gresetemptyfirstsyllablehyphen",
+		"body":[
+			"\\gresetemptyfirstsyllablehyphen{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreForceHyphen":{
+		"prefix":"GreForceHyphen",
+		"body":[
+			"\\GreForceHyphen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreEmptyFirstSyllableHyphen":{
+		"prefix":"GreEmptyFirstSyllableHyphen",
+		"body":[
+			"\\GreEmptyFirstSyllableHyphen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetunbreakablesyllablenotes{}{}{}":{
+		"prefix":"gresetunbreakablesyllablenotes",
+		"body":[
+			"\\gresetunbreakablesyllablenotes{${1:int1}}{${2:int2}}{${3:int3}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSyllableNoteCount{}":{
+		"prefix":"GreSyllableNoteCount",
+		"body":[
+			"\\GreSyllableNoteCount{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetsyllablerewriting{}":{
+		"prefix":"gresetsyllablerewriting",
+		"body":[
+			"\\gresetsyllablerewriting{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreClearSyllableText":{
+		"prefix":"GreClearSyllableText",
+		"body":[
+			"\\GreClearSyllableText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSyllable{}{}{}{}{}{}{}{}{}":{
+		"prefix":"GreSyllable",
+		"body":[
+			"\\GreSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:notes}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNextSyllableBeginsEUOUAE{}{}":{
+		"prefix":"GreNextSyllableBeginsEUOUAE",
+		"body":[
+			"\\GreNextSyllableBeginsEUOUAE{${1:id}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreLastSyllableBeforeEUOUAE{}{}":{
+		"prefix":"GreLastSyllableBeforeEUOUAE",
+		"body":[
+			"\\GreLastSyllableBeforeEUOUAE{${1:id}}{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetbarspacing{}":{
+		"prefix":"gresetbarspacing",
+		"body":[
+			"\\gresetbarspacing{${1:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreBarSyllable{}{}{}{}{}{}{}{}{}":{
+		"prefix":"GreBarSyllable",
+		"body":[
+			"\\GreBarSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:bar line}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNoNoteSyllable{}{}{}{}{}{}{}{}{}":{
+		"prefix":"GreNoNoteSyllable",
+		"body":[
+			"\\GreNoNoteSyllable{${1:macro}}{${2:}}{${3:style cs}}{0 or 1}{${4:macros}}{${5:info string}}{${6:integer pair}}{${7:other macros}}{${8:bar line}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetinitiallines{}":{
+		"prefix":"gresetinitiallines",
+		"body":[
+			"\\gresetinitiallines{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetFirstSyllableText{}{}{}{}{}{}":{
+		"prefix":"GreSetFirstSyllableText",
+		"body":[
+			"\\GreSetFirstSyllableText{${1:initial}}{${2:first letter}}{${3:other letters}}{${4:sep initial parts}}{${5:nosep initial parts}}{${6:extra macros}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSetNoFirstSyllableText":{
+		"prefix":"GreSetNoFirstSyllableText",
+		"body":[
+			"\\GreSetNoFirstSyllableText"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreUpcomingNewLineForcesCustos{}":{
+		"prefix":"GreUpcomingNewLineForcesCustos",
+		"body":[
+			"\\GreUpcomingNewLineForcesCustos{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreScoreOpening{}{}{}{}{}":{
+		"prefix":"GreScoreOpening",
+		"body":[
+			"\\GreScoreOpening{${1:after init code}}{${2:after notes code}}{${3:before init code}}{${4:syllable cs}}{${5:first syllable code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gredefsymbol{}{}{}":{
+		"prefix":"gredefsymbol",
+		"body":[
+			"\\gredefsymbol{${1:csname}}{${2:font name}}{${3:glyph name or code point}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gredefsizedsymbol{}{}{}":{
+		"prefix":"gredefsizedsymbol",
+		"body":[
+			"\\gredefsizedsymbol{${1:csname}}{${2:font name}}{${3:glyph name or code point}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABar{}":{
+		"prefix":"greABar",
+		"body":[
+			"\\greABar{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBar{}":{
+		"prefix":"greRBar",
+		"body":[
+			"\\greRBar{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBar{}":{
+		"prefix":"greVBar",
+		"body":[
+			"\\greVBar{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarSlant{}":{
+		"prefix":"greABarSlant",
+		"body":[
+			"\\greABarSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarSlant{}":{
+		"prefix":"greRBarSlant",
+		"body":[
+			"\\greRBarSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarSlant{}":{
+		"prefix":"greVBarSlant",
+		"body":[
+			"\\greVBarSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarSC{}":{
+		"prefix":"greABarSC",
+		"body":[
+			"\\greABarSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarSC{}":{
+		"prefix":"greRBarSC",
+		"body":[
+			"\\greRBarSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarSC{}":{
+		"prefix":"greVBarSC",
+		"body":[
+			"\\greVBarSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarSmall{}":{
+		"prefix":"greABarSmall",
+		"body":[
+			"\\greABarSmall{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarSmall{}":{
+		"prefix":"greRBarSmall",
+		"body":[
+			"\\greRBarSmall{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarSmall{}":{
+		"prefix":"greVBarSmall",
+		"body":[
+			"\\greVBarSmall{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarSmallSlant{}":{
+		"prefix":"greABarSmallSlant",
+		"body":[
+			"\\greABarSmallSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarSmallSlant{}":{
+		"prefix":"greRBarSmallSlant",
+		"body":[
+			"\\greRBarSmallSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarSmallSlant{}":{
+		"prefix":"greVBarSmallSlant",
+		"body":[
+			"\\greVBarSmallSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarSmallSC{}":{
+		"prefix":"greABarSmallSC",
+		"body":[
+			"\\greABarSmallSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarSmallSC{}":{
+		"prefix":"greRBarSmallSC",
+		"body":[
+			"\\greRBarSmallSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarSmallSC{}":{
+		"prefix":"greVBarSmallSC",
+		"body":[
+			"\\greVBarSmallSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarCaption{}":{
+		"prefix":"greABarCaption",
+		"body":[
+			"\\greABarCaption{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarCaption{}":{
+		"prefix":"greRBarCaption",
+		"body":[
+			"\\greRBarCaption{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarCaption{}":{
+		"prefix":"greVBarCaption",
+		"body":[
+			"\\greVBarCaption{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarCaptionSlant{}":{
+		"prefix":"greABarCaptionSlant",
+		"body":[
+			"\\greABarCaptionSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarCaptionSlant{}":{
+		"prefix":"greRBarCaptionSlant",
+		"body":[
+			"\\greRBarCaptionSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarCaptionSlant{}":{
+		"prefix":"greVBarCaptionSlant",
+		"body":[
+			"\\greVBarCaptionSlant{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarCaptionSC{}":{
+		"prefix":"greABarCaptionSC",
+		"body":[
+			"\\greABarCaptionSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarCaptionSC{}":{
+		"prefix":"greRBarCaptionSC",
+		"body":[
+			"\\greRBarCaptionSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarCaptionSC{}":{
+		"prefix":"greVBarCaptionSC",
+		"body":[
+			"\\greVBarCaptionSC{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greABarAlt{}":{
+		"prefix":"greABarAlt",
+		"body":[
+			"\\greABarAlt{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greRBarAlt{}":{
+		"prefix":"greRBarAlt",
+		"body":[
+			"\\greRBarAlt{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greVBarAlt{}":{
+		"prefix":"greVBarAlt",
+		"body":[
+			"\\greVBarAlt{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grebarredsymbol{}{}{}{}{}":{
+		"prefix":"grebarredsymbol",
+		"body":[
+			"\\grebarredsymbol{${1:definition}}{${2:symbol}}{${3:size}}{${4:hshift}}{${5:vshift}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gredefbarredsymbol{}{}{}{}{}{}":{
+		"prefix":"gredefbarredsymbol",
+		"body":[
+			"\\gredefbarredsymbol{${1:csname}}{${2:definition}}{${3:symbol}}{${4:size}}{${5:hshift}}{${6:vshift}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresimpledefbarredsymbol{}{}":{
+		"prefix":"gresimpledefbarredsymbol",
+		"body":[
+			"\\gresimpledefbarredsymbol{${1:A, R, or V}}{${2:left shift}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ABar":{
+		"prefix":"ABar",
+		"body":[
+			"\\ABar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VBar":{
+		"prefix":"VBar",
+		"body":[
+			"\\VBar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RBar":{
+		"prefix":"RBar",
+		"body":[
+			"\\RBar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grelatexsimpledefbarredsymbol{}{}{}{}{}":{
+		"prefix":"grelatexsimpledefbarredsymbol",
+		"body":[
+			"\\grelatexsimpledefbarredsymbol{${1:A, R, or V}}{${2:upmedium shift}}{${3:itmedium shift}}{${4:upbold shift}}{${5:itbold shift}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gothRbar":{
+		"prefix":"gothRbar",
+		"body":[
+			"\\gothRbar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gothVbar":{
+		"prefix":"gothVbar",
+		"body":[
+			"\\gothVbar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreDagger":{
+		"prefix":"GreDagger",
+		"body":[
+			"\\GreDagger"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grecross":{
+		"prefix":"grecross",
+		"body":[
+			"\\grecross"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grealtcross":{
+		"prefix":"grealtcross",
+		"body":[
+			"\\grealtcross"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greheightstar":{
+		"prefix":"greheightstar",
+		"body":[
+			"\\greheightstar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresixstar":{
+		"prefix":"gresixstar",
+		"body":[
+			"\\gresixstar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreStar":{
+		"prefix":"GreStar",
+		"body":[
+			"\\GreStar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greLineOne{}":{
+		"prefix":"greLineOne",
+		"body":[
+			"\\greLineOne{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greLineTwo{}":{
+		"prefix":"greLineTwo",
+		"body":[
+			"\\greLineTwo{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greLineThree{}":{
+		"prefix":"greLineThree",
+		"body":[
+			"\\greLineThree{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greLineFour{}":{
+		"prefix":"greLineFour",
+		"body":[
+			"\\greLineFour{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greLineFive{}":{
+		"prefix":"greLineFive",
+		"body":[
+			"\\greLineFive{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greseparator{}{}":{
+		"prefix":"greseparator",
+		"body":[
+			"\\greseparator{${1:integer 1-5}}{${2:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greOrnamentOne{}":{
+		"prefix":"greOrnamentOne",
+		"body":[
+			"\\greOrnamentOne{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greOrnamentTwo{}":{
+		"prefix":"greOrnamentTwo",
+		"body":[
+			"\\greOrnamentTwo{${1:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greornamentation{}{}":{
+		"prefix":"greornamentation",
+		"body":[
+			"\\greornamentation{${1:integer 1-2}}{${2:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetspecial{}{}":{
+		"prefix":"gresetspecial",
+		"body":[
+			"\\gresetspecial{${1:text%plain}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"greunsetspecial{}":{
+		"prefix":"greunsetspecial",
+		"body":[
+			"\\greunsetspecial{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreSpecial{}":{
+		"prefix":"GreSpecial",
+		"body":[
+			"\\GreSpecial{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetnabcfont{}{}":{
+		"prefix":"gresetnabcfont",
+		"body":[
+			"\\gresetnabcfont{${1:font name%keyvals}}{${2:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNABCChar{}":{
+		"prefix":"GreNABCChar",
+		"body":[
+			"\\GreNABCChar{${1:nabc code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gresetnabc{}{}":{
+		"prefix":"gresetnabc",
+		"body":[
+			"\\gresetnabc{${1:nabc voice number}}{${2:choice%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreNABCNeumes{}{}{}{}":{
+		"prefix":"GreNABCNeumes",
+		"body":[
+			"\\GreNABCNeumes{${1:line}}{${2:nabc code}}{${3:high pitch}}{${4:low pitch}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GreScoreNABCLines{}":{
+		"prefix":"GreScoreNABCLines",
+		"body":[
+			"\\GreScoreNABCLines{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

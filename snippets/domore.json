@@ -5,47 +5,8 @@
 		"prefix":"StopDoing",
 		"body":[
 			"\\StopDoing"
-		]
-	},
-
-
-	"DoWithAllOf{}{}":{
-		"prefix":"DoWithAllOf",
-		"body":[
-			"\\DoWithAllOf{${1:repeat}}{${2:<arg1><arg2>...<${3:argN}>}}"
-		]
-	},
-
-
-	"DoWithAllIn{}{}":{
-		"prefix":"DoWithAllIn",
-		"body":[
-			"\\DoWithAllIn{${1:repeat}}{${2:list macro}}"
-		]
-	},
-
-
-	"ifltx":{
-		"prefix":"ifltx",
-		"body":[
-			"\\ifltx"
-		]
-	},
-
-
-	"PushCatMakeLetterAt":{
-		"prefix":"PushCatMakeLetterAt",
-		"body":[
-			"\\PushCatMakeLetterAt"
-		]
-	},
-
-
-	"PopLetterCatAt":{
-		"prefix":"PopLetterCatAt",
-		"body":[
-			"\\PopLetterCatAt"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,8 @@
 		"prefix":"setdo",
 		"body":[
 			"\\setdo[${2:digit}]{${1:do%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,6 +23,52 @@
 		"prefix":"setdo",
 		"body":[
 			"\\setdo[${2:digit}][${3:default}]{${1:do%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DoWithAllOf{}{}":{
+		"prefix":"DoWithAllOf",
+		"body":[
+			"\\DoWithAllOf{${1:repeat}}{${2:<arg1><arg2>...<${3:argN}>}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DoWithAllIn{}{}":{
+		"prefix":"DoWithAllIn",
+		"body":[
+			"\\DoWithAllIn{${1:repeat}}{${2:list macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifltx":{
+		"prefix":"ifltx",
+		"body":[
+			"\\ifltx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PushCatMakeLetterAt":{
+		"prefix":"PushCatMakeLetterAt",
+		"body":[
+			"\\PushCatMakeLetterAt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PopLetterCatAt":{
+		"prefix":"PopLetterCatAt",
+		"body":[
+			"\\PopLetterCatAt"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

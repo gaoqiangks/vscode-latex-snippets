@@ -5,7 +5,8 @@
 		"prefix":"asyset",
 		"body":[
 			"\\asyset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"getfontsize",
 		"body":[
 			"\\getfontsize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"asylistingfile",
 		"body":[
 			"\\asylistingfile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"RequireAsyRecompile",
 		"body":[
 			"\\RequireAsyRecompile"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"AsyCompileIfNecessary",
 		"body":[
 			"\\AsyCompileIfNecessary"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ASYPICcomparefiles",
 		"body":[
 			"\\ASYPICcomparefiles{${1:file1%file}}{${2:file2%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"copyfile",
 		"body":[
 			"\\copyfile{${1:file1%file}}{${2:file2%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,17 +68,19 @@
 		"prefix":"deletefile",
 		"body":[
 			"\\deletefile{${1:file%file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"asypicture":{
+	"asypicture{}":{
 		"prefix":"asypicture",
 		"body":[
 			"\\begin{asypicture}",
-				"\t$1",
+				"\t{${1:keyvals}}",
 			"\\end{asypicture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -81,6 +90,7 @@
 			"\\begin{asyheader}",
 				"\t$1",
 			"\\end{asyheader}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

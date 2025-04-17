@@ -5,7 +5,8 @@
 		"prefix":"cjklanguagename",
 		"body":[
 			"\\cjklanguagename{${1:lang-id}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"UTFJ",
 		"body":[
 			"\\UTFJ{${1:hex number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,447 +23,8 @@
 		"prefix":"pxDeclareCJKEncoding",
 		"body":[
 			"\\pxDeclareCJKEncoding{${1:h-encoding}}{${2:v-encoding}}"
-		]
-	},
-
-
-	"pxDeclareBasicCJKFamily{}{}{}{}{}":{
-		"prefix":"pxDeclareBasicCJKFamily",
-		"body":[
-			"\\pxDeclareBasicCJKFamily{${1:encoding}}{${2:mc-m}}{${3:gt-m}}{${4:mc-bx}}{${5:gt-bx}}"
-		]
-	},
-
-
-	"pxDeclareExtraCJKFamily{}{}{}{}":{
-		"prefix":"pxDeclareExtraCJKFamily",
-		"body":[
-			"\\pxDeclareExtraCJKFamily{${1:encoding}}{${2:family}}{${3:font-m}}{${4:font-bx}}"
-		]
-	},
-
-
-	"pxDeclareBasicCJKFallback{}{}{}":{
-		"prefix":"pxDeclareBasicCJKFallback",
-		"body":[
-			"\\pxDeclareBasicCJKFallback{${1:encoding}}{${2:family}}{${3:series}}"
-		]
-	},
-
-
-	"pxDeclareBasicCJKShape{}{}{}{}":{
-		"prefix":"pxDeclareBasicCJKShape",
-		"body":[
-			"\\pxDeclareBasicCJKShape{${1:encoding}}{${2:family}}{${3:series}}{${4:font}}"
-		]
-	},
-
-
-	"pxDeclareCJKShape{}{}{}{}{}":{
-		"prefix":"pxDeclareCJKShape",
-		"body":[
-			"\\pxDeclareCJKShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:font}}"
-		]
-	},
-
-
-	"pxDefineFontSubst{}{}":{
-		"prefix":"pxDefineFontSubst",
-		"body":[
-			"\\pxDefineFontSubst{${1:sym}}{${2:text}}"
-		]
-	},
-
-
-	"pxFontSubst{}":{
-		"prefix":"pxFontSubst",
-		"body":[
-			"\\pxFontSubst{${1:spec}}"
-		]
-	},
-
-
-	"pxDeclareExtraCJKShapeBF{}{}{}{}{}{}":{
-		"prefix":"pxDeclareExtraCJKShapeBF",
-		"body":[
-			"\\pxDeclareExtraCJKShapeBF{${1:encoding}}{${2:shape}}{${3:mc-m}}{${4:gt-m}}{${5:mc-bx}}{${6:gt-bx}}"
-		]
-	},
-
-
-	"pxForceFontDeclaration":{
-		"prefix":"pxForceFontDeclaration",
-		"body":[
-			"\\pxForceFontDeclaration"
-		]
-	},
-
-
-	"pxDeclareKanjiFamily{}{}":{
-		"prefix":"pxDeclareKanjiFamily",
-		"body":[
-			"\\pxDeclareKanjiFamily{${1:encoding}}{${2:family}}"
-		]
-	},
-
-
-	"pxDeclareFontShape{}{}{}{}{}":{
-		"prefix":"pxDeclareFontShape",
-		"body":[
-			"\\pxDeclareFontShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:spec}}"
-		]
-	},
-
-
-	"pxUndeclareFontShape{}{}{}{}":{
-		"prefix":"pxUndeclareFontShape",
-		"body":[
-			"\\pxUndeclareFontShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}"
-		]
-	},
-
-
-	"pxDeclareEncodingDispatcher{}{}":{
-		"prefix":"pxDeclareEncodingDispatcher",
-		"body":[
-			"\\pxDeclareEncodingDispatcher{${1:encoding}}{${2:text}}"
-		]
-	},
-
-
-	"pxDispatchEncodings{}":{
-		"prefix":"pxDispatchEncodings",
-		"body":[
-			"\\pxDispatchEncodings{${1:enc1,enc2,...}}"
-		]
-	},
-
-
-	"pxIsEncodingDispatched{}":{
-		"prefix":"pxIsEncodingDispatched",
-		"body":[
-			"\\pxIsEncodingDispatched{${1:encoding}}"
-		]
-	},
-
-
-	"pxBothEncodingsFromName{}{}{}":{
-		"prefix":"pxBothEncodingsFromName",
-		"body":[
-			"\\pxBothEncodingsFromName{${1:\\CSyoko}}{${2:\\CState}}{${3:encoding}}"
-		]
-	},
-
-
-	"pxEncodingFromName{}":{
-		"prefix":"pxEncodingFromName",
-		"body":[
-			"\\pxEncodingFromName{${1:encoding}}"
-		]
-	},
-
-
-	"pxTateEncodingFromName{}":{
-		"prefix":"pxTateEncodingFromName",
-		"body":[
-			"\\pxTateEncodingFromName{${1:encoding}}"
-		]
-	},
-
-
-	"pxSetEncodingName{}{}{}":{
-		"prefix":"pxSetEncodingName",
-		"body":[
-			"\\pxSetEncodingName{${1:encoding}}{${2:h-encoding}}{${3:v-encoding}}"
-		]
-	},
-
-
-	"pxDeclareCJKEncodingNE{}":{
-		"prefix":"pxDeclareCJKEncodingNE",
-		"body":[
-			"\\pxDeclareCJKEncodingNE{${1:encoding}}"
-		]
-	},
-
-
-	"pxDeclareExtraCJKFamilyNE{}{}{}{}{}{}":{
-		"prefix":"pxDeclareExtraCJKFamilyNE",
-		"body":[
-			"\\pxDeclareExtraCJKFamilyNE{${1:encoding}}{${2:family}}{${3:h-m}}{${4:h-bx}}{${5:v-m}}{${6:v-bx}}"
-		]
-	},
-
-
-	"pxDeclareBasicCJKShapeNE{}{}{}{}{}":{
-		"prefix":"pxDeclareBasicCJKShapeNE",
-		"body":[
-			"\\pxDeclareBasicCJKShapeNE{${1:encoding}}{${2:family}}{${3:series}}{${4:h-font}}{${5:v-font}}"
-		]
-	},
-
-
-	"pxDeclareCJKShapeNE{}{}{}{}{}{}":{
-		"prefix":"pxDeclareCJKShapeNE",
-		"body":[
-			"\\pxDeclareCJKShapeNE{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:h-font}}{${6:v-font}}"
-		]
-	},
-
-
-	"pxDeclareJSFEncoding{}{}{}":{
-		"prefix":"pxDeclareJSFEncoding",
-		"body":[
-			"\\pxDeclareJSFEncoding{${1:h-encoding}}{${2:v-encoding}}{${3:sfid,...}}"
-		]
-	},
-
-
-	"DeclareJSFFamily{}{}{}":{
-		"prefix":"DeclareJSFFamily",
-		"body":[
-			"\\DeclareJSFFamily{${1:encoding}}{${2:family}}{${3:body}}"
-		]
-	},
-
-
-	"AppendToJSFFamily{}{}{}":{
-		"prefix":"AppendToJSFFamily",
-		"body":[
-			"\\AppendToJSFFamily{${1:encoding}}{${2:family}}{${3:body}}"
-		]
-	},
-
-
-	"JSFBasicShapeSet{}{}":{
-		"prefix":"JSFBasicShapeSet",
-		"body":[
-			"\\JSFBasicShapeSet{${1:font-m-n}}{${2:font-bx-n}}"
-		]
-	},
-
-
-	"JSFFallback{}":{
-		"prefix":"JSFFallback",
-		"body":[
-			"\\JSFFallback{${1:series}}"
-		]
-	},
-
-
-	"JSFBasicShape{}{}":{
-		"prefix":"JSFBasicShape",
-		"body":[
-			"\\JSFBasicShape{${1:series}}{${2:font-n}}"
-		]
-	},
-
-
-	"JSFShape{}{}{}":{
-		"prefix":"JSFShape",
-		"body":[
-			"\\JSFShape{${1:series}}{${2:shape}}{${3:font}}"
-		]
-	},
-
-
-	"JSFShapeRaw{}{}{}":{
-		"prefix":"JSFShapeRaw",
-		"body":[
-			"\\JSFShapeRaw{${1:series}}{${2:shape}}{${3:spec}}"
-		]
-	},
-
-
-	"pxStdYEnc":{
-		"prefix":"pxStdYEnc",
-		"body":[
-			"\\pxStdYEnc"
-		]
-	},
-
-
-	"pxStdTEnc":{
-		"prefix":"pxStdTEnc",
-		"body":[
-			"\\pxStdTEnc"
-		]
-	},
-
-
-	"selectjaencoding{}":{
-		"prefix":"selectjaencoding",
-		"body":[
-			"\\selectjaencoding{${1:encoding}}"
-		]
-	},
-
-
-	"normaljaencoding":{
-		"prefix":"normaljaencoding",
-		"body":[
-			"\\normaljaencoding"
-		]
-	},
-
-
-	"standardjaencoding":{
-		"prefix":"standardjaencoding",
-		"body":[
-			"\\standardjaencoding"
-		]
-	},
-
-
-	"pxBDHookEncSwitchOTF":{
-		"prefix":"pxBDHookEncSwitchOTF",
-		"body":[
-			"\\pxBDHookEncSwitchOTF"
-		]
-	},
-
-
-	"pxEncSwitchOTF":{
-		"prefix":"pxEncSwitchOTF",
-		"body":[
-			"\\pxEncSwitchOTF"
-		]
-	},
-
-
-	"captionsenglish":{
-		"prefix":"captionsenglish",
-		"body":[
-			"\\captionsenglish"
-		]
-	},
-
-
-	"dateenglish":{
-		"prefix":"dateenglish",
-		"body":[
-			"\\dateenglish"
-		]
-	},
-
-
-	"extrasenglish":{
-		"prefix":"extrasenglish",
-		"body":[
-			"\\extrasenglish"
-		]
-	},
-
-
-	"noextrasenglish":{
-		"prefix":"noextrasenglish",
-		"body":[
-			"\\noextrasenglish"
-		]
-	},
-
-
-	"englishhyphenmins":{
-		"prefix":"englishhyphenmins",
-		"body":[
-			"\\englishhyphenmins"
-		]
-	},
-
-
-	"britishhyphenmins":{
-		"prefix":"britishhyphenmins",
-		"body":[
-			"\\britishhyphenmins"
-		]
-	},
-
-
-	"americanhyphenmins":{
-		"prefix":"americanhyphenmins",
-		"body":[
-			"\\americanhyphenmins"
-		]
-	},
-
-
-	"prefacename":{
-		"prefix":"prefacename",
-		"body":[
-			"\\prefacename"
-		]
-	},
-
-
-	"bibname":{
-		"prefix":"bibname",
-		"body":[
-			"\\bibname"
-		]
-	},
-
-
-	"chaptername":{
-		"prefix":"chaptername",
-		"body":[
-			"\\chaptername"
-		]
-	},
-
-
-	"enclname":{
-		"prefix":"enclname",
-		"body":[
-			"\\enclname"
-		]
-	},
-
-
-	"ccname":{
-		"prefix":"ccname",
-		"body":[
-			"\\ccname"
-		]
-	},
-
-
-	"headtoname":{
-		"prefix":"headtoname",
-		"body":[
-			"\\headtoname"
-		]
-	},
-
-
-	"seename":{
-		"prefix":"seename",
-		"body":[
-			"\\seename"
-		]
-	},
-
-
-	"alsoname":{
-		"prefix":"alsoname",
-		"body":[
-			"\\alsoname"
-		]
-	},
-
-
-	"proofname":{
-		"prefix":"proofname",
-		"body":[
-			"\\proofname"
-		]
-	},
-
-
-	"glossaryname":{
-		"prefix":"glossaryname",
-		"body":[
-			"\\glossaryname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +32,17 @@
 		"prefix":"*pxDeclareCJKEncoding",
 		"body":[
 			"\\pxDeclareCJKEncoding*{${1:h-encoding}}{${2:v-encoding}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxDeclareBasicCJKFamily{}{}{}{}{}":{
+		"prefix":"pxDeclareBasicCJKFamily",
+		"body":[
+			"\\pxDeclareBasicCJKFamily{${1:encoding}}{${2:mc-m}}{${3:gt-m}}{${4:mc-bx}}{${5:gt-bx}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +50,17 @@
 		"prefix":"*pxDeclareBasicCJKFamily",
 		"body":[
 			"\\pxDeclareBasicCJKFamily*{${1:encoding}}{${2:mc-m}}{${3:gt-m}}{${4:mc-bx}}{${5:gt-bx}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxDeclareExtraCJKFamily{}{}{}{}":{
+		"prefix":"pxDeclareExtraCJKFamily",
+		"body":[
+			"\\pxDeclareExtraCJKFamily{${1:encoding}}{${2:family}}{${3:font-m}}{${4:font-bx}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +68,170 @@
 		"prefix":"*pxDeclareExtraCJKFamily",
 		"body":[
 			"\\pxDeclareExtraCJKFamily*{${1:encoding}}{${2:family}}{${3:font-m}}{${4:font-bx}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxDeclareBasicCJKFallback{}{}{}":{
+		"prefix":"pxDeclareBasicCJKFallback",
+		"body":[
+			"\\pxDeclareBasicCJKFallback{${1:encoding}}{${2:family}}{${3:series}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareBasicCJKShape{}{}{}{}":{
+		"prefix":"pxDeclareBasicCJKShape",
+		"body":[
+			"\\pxDeclareBasicCJKShape{${1:encoding}}{${2:family}}{${3:series}}{${4:font}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareCJKShape{}{}{}{}{}":{
+		"prefix":"pxDeclareCJKShape",
+		"body":[
+			"\\pxDeclareCJKShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:font}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDefineFontSubst{}{}":{
+		"prefix":"pxDefineFontSubst",
+		"body":[
+			"\\pxDefineFontSubst{${1:sym}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxFontSubst{}":{
+		"prefix":"pxFontSubst",
+		"body":[
+			"\\pxFontSubst{${1:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareExtraCJKShapeBF{}{}{}{}{}{}":{
+		"prefix":"pxDeclareExtraCJKShapeBF",
+		"body":[
+			"\\pxDeclareExtraCJKShapeBF{${1:encoding}}{${2:shape}}{${3:mc-m}}{${4:gt-m}}{${5:mc-bx}}{${6:gt-bx}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxForceFontDeclaration":{
+		"prefix":"pxForceFontDeclaration",
+		"body":[
+			"\\pxForceFontDeclaration"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareKanjiFamily{}{}":{
+		"prefix":"pxDeclareKanjiFamily",
+		"body":[
+			"\\pxDeclareKanjiFamily{${1:encoding}}{${2:family}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareFontShape{}{}{}{}{}":{
+		"prefix":"pxDeclareFontShape",
+		"body":[
+			"\\pxDeclareFontShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxUndeclareFontShape{}{}{}{}":{
+		"prefix":"pxUndeclareFontShape",
+		"body":[
+			"\\pxUndeclareFontShape{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareEncodingDispatcher{}{}":{
+		"prefix":"pxDeclareEncodingDispatcher",
+		"body":[
+			"\\pxDeclareEncodingDispatcher{${1:encoding}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDispatchEncodings{}":{
+		"prefix":"pxDispatchEncodings",
+		"body":[
+			"\\pxDispatchEncodings{${1:enc1,enc2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxIsEncodingDispatched{}":{
+		"prefix":"pxIsEncodingDispatched",
+		"body":[
+			"\\pxIsEncodingDispatched{${1:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxBothEncodingsFromName{}{}{}":{
+		"prefix":"pxBothEncodingsFromName",
+		"body":[
+			"\\pxBothEncodingsFromName{${1:\\CSyoko}}{${2:\\CState}}{${3:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxEncodingFromName{}":{
+		"prefix":"pxEncodingFromName",
+		"body":[
+			"\\pxEncodingFromName{${1:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxTateEncodingFromName{}":{
+		"prefix":"pxTateEncodingFromName",
+		"body":[
+			"\\pxTateEncodingFromName{${1:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxSetEncodingName{}{}{}":{
+		"prefix":"pxSetEncodingName",
+		"body":[
+			"\\pxSetEncodingName{${1:encoding}}{${2:h-encoding}}{${3:v-encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxDeclareCJKEncodingNE{}":{
+		"prefix":"pxDeclareCJKEncodingNE",
+		"body":[
+			"\\pxDeclareCJKEncodingNE{${1:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +239,17 @@
 		"prefix":"*pxDeclareCJKEncodingNE",
 		"body":[
 			"\\pxDeclareCJKEncodingNE*{${1:encoding}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxDeclareExtraCJKFamilyNE{}{}{}{}{}{}":{
+		"prefix":"pxDeclareExtraCJKFamilyNE",
+		"body":[
+			"\\pxDeclareExtraCJKFamilyNE{${1:encoding}}{${2:family}}{${3:h-m}}{${4:h-bx}}{${5:v-m}}{${6:v-bx}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +257,17 @@
 		"prefix":"*pxDeclareExtraCJKFamilyNE",
 		"body":[
 			"\\pxDeclareExtraCJKFamilyNE*{${1:encoding}}{${2:family}}{${3:h-m}}{${4:h-bx}}{${5:v-m}}{${6:v-bx}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxDeclareBasicCJKShapeNE{}{}{}{}{}":{
+		"prefix":"pxDeclareBasicCJKShapeNE",
+		"body":[
+			"\\pxDeclareBasicCJKShapeNE{${1:encoding}}{${2:family}}{${3:series}}{${4:h-font}}{${5:v-font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,31 +275,35 @@
 		"prefix":"*pxDeclareBasicCJKShapeNE",
 		"body":[
 			"\\pxDeclareBasicCJKShapeNE*{${1:encoding}}{${2:family}}{${3:series}}{${4:h-font}}{${5:v-font}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"JSFBasicShapeSet*{}{}":{
-		"prefix":"*JSFBasicShapeSet",
+	"pxDeclareCJKShapeNE{}{}{}{}{}{}":{
+		"prefix":"pxDeclareCJKShapeNE",
 		"body":[
-			"\\JSFBasicShapeSet*{${1:font-m-n}}{${2:font-bx-n}}"
-		]
+			"\\pxDeclareCJKShapeNE{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:h-font}}{${6:v-font}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"JSFBasicShape*{}{}":{
-		"prefix":"*JSFBasicShape",
+	"pxDeclareJSFEncoding{}{}{}":{
+		"prefix":"pxDeclareJSFEncoding",
 		"body":[
-			"\\JSFBasicShape*{${1:series}}{${2:font-n}}"
-		]
+			"\\pxDeclareJSFEncoding{${1:h-encoding}}{${2:v-encoding}}{${3:sfid,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"JSFShape*{}{}{}":{
-		"prefix":"*JSFShape",
+	"DeclareJSFFamily{}{}{}":{
+		"prefix":"DeclareJSFFamily",
 		"body":[
-			"\\JSFShape*{${1:series}}{${2:shape}}{${3:font}}"
-		]
+			"\\DeclareJSFFamily{${1:encoding}}{${2:family}}{${3:body}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +311,17 @@
 		"prefix":"DeclareJSFFamily",
 		"body":[
 			"\\DeclareJSFFamily{${1:encoding}}{${2:family}}[${4:sfid,...}]{${3:body}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AppendToJSFFamily{}{}{}":{
+		"prefix":"AppendToJSFFamily",
+		"body":[
+			"\\AppendToJSFFamily{${1:encoding}}{${2:family}}{${3:body}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,6 +329,295 @@
 		"prefix":"AppendToJSFFamily",
 		"body":[
 			"\\AppendToJSFFamily{${1:encoding}}{${2:family}}[${4:sfid,...}]{${3:body}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"JSFBasicShapeSet{}{}":{
+		"prefix":"JSFBasicShapeSet",
+		"body":[
+			"\\JSFBasicShapeSet{${1:font-m-n}}{${2:font-bx-n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JSFBasicShapeSet*{}{}":{
+		"prefix":"*JSFBasicShapeSet",
+		"body":[
+			"\\JSFBasicShapeSet*{${1:font-m-n}}{${2:font-bx-n}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"JSFFallback{}":{
+		"prefix":"JSFFallback",
+		"body":[
+			"\\JSFFallback{${1:series}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JSFBasicShape{}{}":{
+		"prefix":"JSFBasicShape",
+		"body":[
+			"\\JSFBasicShape{${1:series}}{${2:font-n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JSFBasicShape*{}{}":{
+		"prefix":"*JSFBasicShape",
+		"body":[
+			"\\JSFBasicShape*{${1:series}}{${2:font-n}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"JSFShape{}{}{}":{
+		"prefix":"JSFShape",
+		"body":[
+			"\\JSFShape{${1:series}}{${2:shape}}{${3:font}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"JSFShape*{}{}{}":{
+		"prefix":"*JSFShape",
+		"body":[
+			"\\JSFShape*{${1:series}}{${2:shape}}{${3:font}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"JSFShapeRaw{}{}{}":{
+		"prefix":"JSFShapeRaw",
+		"body":[
+			"\\JSFShapeRaw{${1:series}}{${2:shape}}{${3:spec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxStdYEnc":{
+		"prefix":"pxStdYEnc",
+		"body":[
+			"\\pxStdYEnc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxStdTEnc":{
+		"prefix":"pxStdTEnc",
+		"body":[
+			"\\pxStdTEnc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectjaencoding{}":{
+		"prefix":"selectjaencoding",
+		"body":[
+			"\\selectjaencoding{${1:encoding}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normaljaencoding":{
+		"prefix":"normaljaencoding",
+		"body":[
+			"\\normaljaencoding"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"standardjaencoding":{
+		"prefix":"standardjaencoding",
+		"body":[
+			"\\standardjaencoding"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxBDHookEncSwitchOTF":{
+		"prefix":"pxBDHookEncSwitchOTF",
+		"body":[
+			"\\pxBDHookEncSwitchOTF"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxEncSwitchOTF":{
+		"prefix":"pxEncSwitchOTF",
+		"body":[
+			"\\pxEncSwitchOTF"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"captionsenglish":{
+		"prefix":"captionsenglish",
+		"body":[
+			"\\captionsenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dateenglish":{
+		"prefix":"dateenglish",
+		"body":[
+			"\\dateenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extrasenglish":{
+		"prefix":"extrasenglish",
+		"body":[
+			"\\extrasenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noextrasenglish":{
+		"prefix":"noextrasenglish",
+		"body":[
+			"\\noextrasenglish"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"englishhyphenmins":{
+		"prefix":"englishhyphenmins",
+		"body":[
+			"\\englishhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"britishhyphenmins":{
+		"prefix":"britishhyphenmins",
+		"body":[
+			"\\britishhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"americanhyphenmins":{
+		"prefix":"americanhyphenmins",
+		"body":[
+			"\\americanhyphenmins"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prefacename":{
+		"prefix":"prefacename",
+		"body":[
+			"\\prefacename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bibname":{
+		"prefix":"bibname",
+		"body":[
+			"\\bibname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chaptername":{
+		"prefix":"chaptername",
+		"body":[
+			"\\chaptername"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"enclname":{
+		"prefix":"enclname",
+		"body":[
+			"\\enclname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ccname":{
+		"prefix":"ccname",
+		"body":[
+			"\\ccname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headtoname":{
+		"prefix":"headtoname",
+		"body":[
+			"\\headtoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"seename":{
+		"prefix":"seename",
+		"body":[
+			"\\seename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alsoname":{
+		"prefix":"alsoname",
+		"body":[
+			"\\alsoname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"proofname":{
+		"prefix":"proofname",
+		"body":[
+			"\\proofname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"glossaryname":{
+		"prefix":"glossaryname",
+		"body":[
+			"\\glossaryname"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

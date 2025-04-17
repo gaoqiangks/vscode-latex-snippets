@@ -1,35 +1,12 @@
 {
 
 
-	"usesmartdiagramlibrary{}":{
-		"prefix":"usesmartdiagramlibrary",
-		"body":[
-			"\\usesmartdiagramlibrary{${1:library}}"
-		]
-	},
-
-
-	"smartdiagramconnect{}{}":{
-		"prefix":"smartdiagramconnect",
-		"body":[
-			"\\smartdiagramconnect{${1:arrow options}}{${2:start module/end module}}"
-		]
-	},
-
-
-	"smartdiagramset{}":{
-		"prefix":"smartdiagramset",
-		"body":[
-			"\\smartdiagramset{${1:options%keyvals}}"
-		]
-	},
-
-
 	"smartdiagram[]{}":{
 		"prefix":"smartdiagram",
 		"body":[
 			"\\smartdiagram[${2:type%keyvals}]{${1:list of items}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"smartdiagramanimated",
 		"body":[
 			"\\smartdiagramanimated[${2:type%keyvals}]{${1:list of items}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"usesmartdiagramlibrary{}":{
+		"prefix":"usesmartdiagramlibrary",
+		"body":[
+			"\\usesmartdiagramlibrary{${1:library}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"smartdiagramadd",
 		"body":[
 			"\\smartdiagramadd[${3:type%keyvals}]{${1:list of items}}{${2:list of additions}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"smartdiagramconnect{}{}":{
+		"prefix":"smartdiagramconnect",
+		"body":[
+			"\\smartdiagramconnect{${1:arrow options}}{${2:start module/end module}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smartdiagramset{}":{
+		"prefix":"smartdiagramset",
+		"body":[
+			"\\smartdiagramset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

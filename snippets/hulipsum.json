@@ -5,79 +5,8 @@
 		"prefix":"hulipsum",
 		"body":[
 			"\\hulipsum"
-		]
-	},
-
-
-	"sethulipsumdefault{}":{
-		"prefix":"sethulipsumdefault",
-		"body":[
-			"\\sethulipsumdefault{${1:num}}"
-		]
-	},
-
-
-	"sethulipsumdefault{}":{
-		"prefix":"sethulipsumdefault",
-		"body":[
-			"\\sethulipsumdefault{${1:num-num}}"
-		]
-	},
-
-
-	"hulipsumexp":{
-		"prefix":"hulipsumexp",
-		"body":[
-			"\\hulipsumexp"
-		]
-	},
-
-
-	"hulipsumdocument":{
-		"prefix":"hulipsumdocument",
-		"body":[
-			"\\hulipsumdocument"
-		]
-	},
-
-
-	"hulipsum*":{
-		"prefix":"*hulipsum",
-		"body":[
-			"\\hulipsum*"
-		]
-	},
-
-
-	"hulipsum*[]":{
-		"prefix":"*hulipsum",
-		"body":[
-			"\\hulipsum*[${1:num}]"
-		]
-	},
-
-
-	"hulipsum*[]":{
-		"prefix":"*hulipsum",
-		"body":[
-			"\\hulipsum*[${1:num-num}]"
-		]
-	},
-
-
-	"hulipsumsave*[]":{
-		"prefix":"*hulipsumsave",
-		"body":[
-			"\\hulipsumsave*[${1:num}]"
-		]
-	},
-
-
-	"hulipsumsave*[]":{
-		"prefix":"*hulipsumsave",
-		"body":[
-			"\\hulipsumsave*[${1:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +14,8 @@
 		"prefix":"hulipsum",
 		"body":[
 			"\\hulipsum[${1:num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +23,53 @@
 		"prefix":"hulipsum",
 		"body":[
 			"\\hulipsum[${1:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hulipsum*":{
+		"prefix":"*hulipsum",
+		"body":[
+			"\\hulipsum*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hulipsum*[]":{
+		"prefix":"*hulipsum",
+		"body":[
+			"\\hulipsum*[${1:num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hulipsum*[]":{
+		"prefix":"*hulipsum",
+		"body":[
+			"\\hulipsum*[${1:num-num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sethulipsumdefault{}":{
+		"prefix":"sethulipsumdefault",
+		"body":[
+			"\\sethulipsumdefault{${1:num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sethulipsumdefault{}":{
+		"prefix":"sethulipsumdefault",
+		"body":[
+			"\\sethulipsumdefault{${1:num-num}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +77,8 @@
 		"prefix":"hulipsumsave",
 		"body":[
 			"\\hulipsumsave[${1:num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +86,44 @@
 		"prefix":"hulipsumsave",
 		"body":[
 			"\\hulipsumsave[${1:num-num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hulipsumsave*[]":{
+		"prefix":"*hulipsumsave",
+		"body":[
+			"\\hulipsumsave*[${1:num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hulipsumsave*[]":{
+		"prefix":"*hulipsumsave",
+		"body":[
+			"\\hulipsumsave*[${1:num-num}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"hulipsumexp":{
+		"prefix":"hulipsumexp",
+		"body":[
+			"\\hulipsumexp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hulipsumdocument":{
+		"prefix":"hulipsumdocument",
+		"body":[
+			"\\hulipsumdocument"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,6 +131,7 @@
 		"prefix":"hulipsumdocument",
 		"body":[
 			"\\hulipsumdocument[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

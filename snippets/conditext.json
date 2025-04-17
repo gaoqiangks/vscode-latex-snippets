@@ -5,159 +5,8 @@
 		"prefix":"setcondispace",
 		"body":[
 			"\\setcondispace{${1:propriété de condition}}"
-		]
-	},
-
-
-	"newcondifield{}":{
-		"prefix":"newcondifield",
-		"body":[
-			"\\newcondifield{${1:nouveau domaine de condition}}"
-		]
-	},
-
-
-	"newcondiprop{}{}":{
-		"prefix":"newcondiprop",
-		"body":[
-			"\\newcondiprop{${1:domaine de condition}}{${2:nouvelle propriété de condition}}"
-		]
-	},
-
-
-	"setimplicitcondifield{}":{
-		"prefix":"setimplicitcondifield",
-		"body":[
-			"\\setimplicitcondifield{${1:domaine de condition}}"
-		]
-	},
-
-
-	"miniconditext{}":{
-		"prefix":"miniconditext",
-		"body":[
-			"\\miniconditext{${1:forme-substituable}}"
-		]
-	},
-
-
-	"setminicondiprop{}{}":{
-		"prefix":"setminicondiprop",
-		"body":[
-			"\\setminicondiprop{${1:i-ix}}{${2:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropi{}":{
-		"prefix":"setminicondipropi",
-		"body":[
-			"\\setminicondipropi{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropii{}":{
-		"prefix":"setminicondipropii",
-		"body":[
-			"\\setminicondipropii{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropiii{}":{
-		"prefix":"setminicondipropiii",
-		"body":[
-			"\\setminicondipropiii{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropiv{}":{
-		"prefix":"setminicondipropiv",
-		"body":[
-			"\\setminicondipropiv{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropv{}":{
-		"prefix":"setminicondipropv",
-		"body":[
-			"\\setminicondipropv{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropvi{}":{
-		"prefix":"setminicondipropvi",
-		"body":[
-			"\\setminicondipropvi{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropvii{}":{
-		"prefix":"setminicondipropvii",
-		"body":[
-			"\\setminicondipropvii{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropviii{}":{
-		"prefix":"setminicondipropviii",
-		"body":[
-			"\\setminicondipropviii{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"setminicondipropix{}":{
-		"prefix":"setminicondipropix",
-		"body":[
-			"\\setminicondipropix{${1:propriété de condition redéfinie}}"
-		]
-	},
-
-
-	"resettingminicondiprops":{
-		"prefix":"resettingminicondiprops",
-		"body":[
-			"\\resettingminicondiprops"
-		]
-	},
-
-
-	"setminicondispace{}":{
-		"prefix":"setminicondispace",
-		"body":[
-			"\\setminicondispace{${1:propriété de condition}}"
-		]
-	},
-
-
-	"setcondispace*{}":{
-		"prefix":"*setcondispace",
-		"body":[
-			"\\setcondispace*{${1:propriété de condition}}"
-		]
-	},
-
-
-	"setcondispace*[]{}":{
-		"prefix":"*setcondispace",
-		"body":[
-			"\\setcondispace*[${2:domaine de condition}]{${1:propriété de condition}}"
-		]
-	},
-
-
-	"newcondifield*{}":{
-		"prefix":"*newcondifield",
-		"body":[
-			"\\newcondifield*{${1:nouveau domaine de condition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,46 +14,222 @@
 		"prefix":"setcondispace",
 		"body":[
 			"\\setcondispace[${2:domaine de condition}]{${1:propriété de condition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"conditext":{
-		"prefix":"conditext",
+	"setcondispace*{}":{
+		"prefix":"*setcondispace",
 		"body":[
-			"\\begin{conditext}",
-				"\t$1",
-			"\\end{conditext}"
-		]
+			"\\setcondispace*{${1:propriété de condition}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"conditext":{
-		"prefix":"conditext",
+	"setcondispace*[]{}":{
+		"prefix":"*setcondispace",
 		"body":[
-			"\\begin{conditext}",
-				"\t$1",
-			"\\end{conditext}"
-		]
+			"\\setcondispace*[${2:domaine de condition}]{${1:propriété de condition}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"conditext":{
-		"prefix":"conditext",
+	"newcondifield{}":{
+		"prefix":"newcondifield",
 		"body":[
-			"\\begin{conditext}",
-				"\t$1",
-			"\\end{conditext}"
-		]
+			"\\newcondifield{${1:nouveau domaine de condition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"conditext":{
+	"newcondifield*{}":{
+		"prefix":"*newcondifield",
+		"body":[
+			"\\newcondifield*{${1:nouveau domaine de condition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newcondiprop{}{}":{
+		"prefix":"newcondiprop",
+		"body":[
+			"\\newcondiprop{${1:domaine de condition}}{${2:nouvelle propriété de condition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setimplicitcondifield{}":{
+		"prefix":"setimplicitcondifield",
+		"body":[
+			"\\setimplicitcondifield{${1:domaine de condition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"miniconditext{}":{
+		"prefix":"miniconditext",
+		"body":[
+			"\\miniconditext{${1:forme-substituable}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondiprop{}{}":{
+		"prefix":"setminicondiprop",
+		"body":[
+			"\\setminicondiprop{${1:i-ix}}{${2:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropi{}":{
+		"prefix":"setminicondipropi",
+		"body":[
+			"\\setminicondipropi{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropii{}":{
+		"prefix":"setminicondipropii",
+		"body":[
+			"\\setminicondipropii{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropiii{}":{
+		"prefix":"setminicondipropiii",
+		"body":[
+			"\\setminicondipropiii{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropiv{}":{
+		"prefix":"setminicondipropiv",
+		"body":[
+			"\\setminicondipropiv{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropv{}":{
+		"prefix":"setminicondipropv",
+		"body":[
+			"\\setminicondipropv{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropvi{}":{
+		"prefix":"setminicondipropvi",
+		"body":[
+			"\\setminicondipropvi{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropvii{}":{
+		"prefix":"setminicondipropvii",
+		"body":[
+			"\\setminicondipropvii{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropviii{}":{
+		"prefix":"setminicondipropviii",
+		"body":[
+			"\\setminicondipropviii{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondipropix{}":{
+		"prefix":"setminicondipropix",
+		"body":[
+			"\\setminicondipropix{${1:propriété de condition redéfinie}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resettingminicondiprops":{
+		"prefix":"resettingminicondiprops",
+		"body":[
+			"\\resettingminicondiprops"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setminicondispace{}":{
+		"prefix":"setminicondispace",
+		"body":[
+			"\\setminicondispace{${1:propriété de condition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conditext{}":{
 		"prefix":"conditext",
 		"body":[
 			"\\begin{conditext}",
-				"\t$1",
+				"\t{${1:propriété de condition}}",
 			"\\end{conditext}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conditext[]{}":{
+		"prefix":"conditext",
+		"body":[
+			"\\begin{conditext}",
+				"\t[${2:domaine de condition}]{${1:propriété de condition}}",
+			"\\end{conditext}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"conditext{}*":{
+		"prefix":"conditext",
+		"body":[
+			"\\begin{conditext}",
+				"\t{${1:propriété de condition}}*",
+			"\\end{conditext}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conditext[]{}*":{
+		"prefix":"conditext",
+		"body":[
+			"\\begin{conditext}",
+				"\t[${2:domaine de condition}]{${1:propriété de condition}}*",
+			"\\end{conditext}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

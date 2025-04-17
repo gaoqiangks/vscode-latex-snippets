@@ -1,27 +1,21 @@
 {
 
 
-	"unit{}":{
-		"prefix":"unit",
-		"body":[
-			"\\unit{${1:dimension}}"
-		]
-	},
-
-
-	"unitfrac{}{}":{
-		"prefix":"unitfrac",
-		"body":[
-			"\\unitfrac{${1:num%:translatable}}{${2:den%:translatable}}"
-		]
-	},
-
-
 	"unit[]{}":{
 		"prefix":"unit",
 		"body":[
 			"\\unit[${2:value}]{${1:dimension}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"unit{}":{
+		"prefix":"unit",
+		"body":[
+			"\\unit{${1:dimension}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +23,16 @@
 		"prefix":"unitfrac",
 		"body":[
 			"\\unitfrac[${3:value%:translatable}]{${1:num%:translatable}}{${2:den%:translatable}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"unitfrac{}{}":{
+		"prefix":"unitfrac",
+		"body":[
+			"\\unitfrac{${1:num%:translatable}}{${2:den%:translatable}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

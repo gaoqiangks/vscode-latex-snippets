@@ -5,183 +5,8 @@
 		"prefix":"eqnmarkbox",
 		"body":[
 			"\\eqnmarkbox{${1:node name}}{${2:equation terms}}"
-		]
-	},
-
-
-	"eqnmark{}{}":{
-		"prefix":"eqnmark",
-		"body":[
-			"\\eqnmark{${1:node name}}{${2:equation terms}}"
-		]
-	},
-
-
-	"annotate{}{}{}":{
-		"prefix":"annotate",
-		"body":[
-			"\\annotate{${1:annotate keys%keyvals}}{${2:node names}}{${3:text}}"
-		]
-	},
-
-
-	"annotatetwo{}{}{}{}":{
-		"prefix":"annotatetwo",
-		"body":[
-			"\\annotatetwo{${1:annotate keys%keyvals}}{${2:node name1}}{${3:node name2}}{${4:text}}"
-		]
-	},
-
-
-	"addvalue{}{}":{
-		"prefix":"addvalue",
-		"body":[
-			"\\addvalue{${1:node name}}{${2:color}}"
-		]
-	},
-
-
-	"EAlabelanchor":{
-		"prefix":"EAlabelanchor",
-		"body":[
-			"\\EAlabelanchor"
-		]
-	},
-
-
-	"EAmarkanchor":{
-		"prefix":"EAmarkanchor",
-		"body":[
-			"\\EAmarkanchor"
-		]
-	},
-
-
-	"EAwesteast":{
-		"prefix":"EAwesteast",
-		"body":[
-			"\\EAwesteast"
-		]
-	},
-
-
-	"EAxshift":{
-		"prefix":"EAxshift",
-		"body":[
-			"\\EAxshift"
-		]
-	},
-
-
-	"eqnannotateCurrentNode":{
-		"prefix":"eqnannotateCurrentNode",
-		"body":[
-			"\\eqnannotateCurrentNode"
-		]
-	},
-
-
-	"eqnannotationfont":{
-		"prefix":"eqnannotationfont",
-		"body":[
-			"\\eqnannotationfont"
-		]
-	},
-
-
-	"eqnannotationstrut":{
-		"prefix":"eqnannotationstrut",
-		"body":[
-			"\\eqnannotationstrut"
-		]
-	},
-
-
-	"eqncolor{}{}":{
-		"prefix":"eqncolor",
-		"body":[
-			"\\eqncolor{${1:color}}{${2:math}}"
-		]
-	},
-
-
-	"eqnhighlight{}{}":{
-		"prefix":"eqnhighlight",
-		"body":[
-			"\\eqnhighlight{${1:color}}{${2:math}}"
-		]
-	},
-
-
-	"eqnhighlightcolorbox{}{}":{
-		"prefix":"eqnhighlightcolorbox",
-		"body":[
-			"\\eqnhighlightcolorbox{${1:color}}{${2:math}}"
-		]
-	},
-
-
-	"eqnhighlightfbox{}{}":{
-		"prefix":"eqnhighlightfbox",
-		"body":[
-			"\\eqnhighlightfbox{${1:color}}{${2:math}}"
-		]
-	},
-
-
-	"eqnhighlightheight":{
-		"prefix":"eqnhighlightheight",
-		"body":[
-			"\\eqnhighlightheight"
-		]
-	},
-
-
-	"eqnhighlightshade":{
-		"prefix":"eqnhighlightshade",
-		"body":[
-			"\\eqnhighlightshade"
-		]
-	},
-
-
-	"extractfirst{}{}":{
-		"prefix":"extractfirst",
-		"body":[
-			"\\extractfirst{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"swapNorthSouth{}":{
-		"prefix":"swapNorthSouth",
-		"body":[
-			"\\swapNorthSouth{${1:anchor}}"
-		]
-	},
-
-
-	"swapWestEast{}":{
-		"prefix":"swapWestEast",
-		"body":[
-			"\\swapWestEast{${1:anchor}}"
-		]
-	},
-
-
-	"theeqnannotatenode":{
-		"prefix":"theeqnannotatenode",
-		"body":[
-			"\\theeqnannotatenode"
-		]
-	},
-
-
-	"usevalue{}":{
-		"prefix":"usevalue",
-		"body":[
-			"\\usevalue{${1:node name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +14,17 @@
 		"prefix":"eqnmarkbox",
 		"body":[
 			"\\eqnmarkbox[${3:color}]{${1:node name}}{${2:equation terms}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqnmark{}{}":{
+		"prefix":"eqnmark",
+		"body":[
+			"\\eqnmark{${1:node name}}{${2:equation terms}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +32,17 @@
 		"prefix":"eqnmark",
 		"body":[
 			"\\eqnmark[${3:color}]{${1:node name}}{${2:equation terms}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"annotate{}{}{}":{
+		"prefix":"annotate",
+		"body":[
+			"\\annotate{${1:annotate keys%keyvals}}{${2:node names}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +50,17 @@
 		"prefix":"annotate",
 		"body":[
 			"\\annotate[${4:TikZ options}]{${1:annotate keys%keyvals}}{${2:node names}}{${3:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"annotatetwo{}{}{}{}":{
+		"prefix":"annotatetwo",
+		"body":[
+			"\\annotatetwo{${1:annotate keys%keyvals}}{${2:node name1}}{${3:node name2}}{${4:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,6 +68,178 @@
 		"prefix":"annotatetwo",
 		"body":[
 			"\\annotatetwo[${5:TikZ options}]{${1:annotate keys%keyvals}}{${2:node name1}}{${3:node name2}}{${4:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addvalue{}{}":{
+		"prefix":"addvalue",
+		"body":[
+			"\\addvalue{${1:node name}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EAlabelanchor":{
+		"prefix":"EAlabelanchor",
+		"body":[
+			"\\EAlabelanchor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EAmarkanchor":{
+		"prefix":"EAmarkanchor",
+		"body":[
+			"\\EAmarkanchor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EAwesteast":{
+		"prefix":"EAwesteast",
+		"body":[
+			"\\EAwesteast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EAxshift":{
+		"prefix":"EAxshift",
+		"body":[
+			"\\EAxshift"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnannotateCurrentNode":{
+		"prefix":"eqnannotateCurrentNode",
+		"body":[
+			"\\eqnannotateCurrentNode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnannotationfont":{
+		"prefix":"eqnannotationfont",
+		"body":[
+			"\\eqnannotationfont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnannotationstrut":{
+		"prefix":"eqnannotationstrut",
+		"body":[
+			"\\eqnannotationstrut"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqncolor{}{}":{
+		"prefix":"eqncolor",
+		"body":[
+			"\\eqncolor{${1:color}}{${2:math}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnhighlight{}{}":{
+		"prefix":"eqnhighlight",
+		"body":[
+			"\\eqnhighlight{${1:color}}{${2:math}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnhighlightcolorbox{}{}":{
+		"prefix":"eqnhighlightcolorbox",
+		"body":[
+			"\\eqnhighlightcolorbox{${1:color}}{${2:math}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnhighlightfbox{}{}":{
+		"prefix":"eqnhighlightfbox",
+		"body":[
+			"\\eqnhighlightfbox{${1:color}}{${2:math}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnhighlightheight":{
+		"prefix":"eqnhighlightheight",
+		"body":[
+			"\\eqnhighlightheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqnhighlightshade":{
+		"prefix":"eqnhighlightshade",
+		"body":[
+			"\\eqnhighlightshade"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extractfirst{}{}":{
+		"prefix":"extractfirst",
+		"body":[
+			"\\extractfirst{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"swapNorthSouth{}":{
+		"prefix":"swapNorthSouth",
+		"body":[
+			"\\swapNorthSouth{${1:anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"swapWestEast{}":{
+		"prefix":"swapWestEast",
+		"body":[
+			"\\swapWestEast{${1:anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theeqnannotatenode":{
+		"prefix":"theeqnannotatenode",
+		"body":[
+			"\\theeqnannotatenode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usevalue{}":{
+		"prefix":"usevalue",
+		"body":[
+			"\\usevalue{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

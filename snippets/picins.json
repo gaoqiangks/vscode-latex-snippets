@@ -5,7 +5,8 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,199 +14,8 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic(${2:width},${3:height}){${1:graphics}}"
-		]
-	},
-
-
-	"parpic()(){}":{
-		"prefix":"parpic",
-		"body":[
-			"\\parpic(${2:width},${3:height})(${4:xoffset},${5:yoffset}){${1:graphics}}"
-		]
-	},
-
-
-	"hpic{}":{
-		"prefix":"hpic",
-		"body":[
-			"\\hpic{${1:graphics}}"
-		]
-	},
-
-
-	"hpic(){}":{
-		"prefix":"hpic",
-		"body":[
-			"\\hpic(${2:width},${3:height}){${1:graphics}}"
-		]
-	},
-
-
-	"hpic()(){}":{
-		"prefix":"hpic",
-		"body":[
-			"\\hpic(${2:width},${3:height})(${4:xoffset},${5:yoffset}){${1:graphics}}"
-		]
-	},
-
-
-	"picskip{}":{
-		"prefix":"picskip",
-		"body":[
-			"\\picskip{${1:n}}"
-		]
-	},
-
-
-	"pichskip{}":{
-		"prefix":"pichskip",
-		"body":[
-			"\\pichskip{${1:length}}"
-		]
-	},
-
-
-	"shadowthickness{}":{
-		"prefix":"shadowthickness",
-		"body":[
-			"\\shadowthickness{${1:length}}"
-		]
-	},
-
-
-	"dashlength{}":{
-		"prefix":"dashlength",
-		"body":[
-			"\\dashlength{${1:length}}"
-		]
-	},
-
-
-	"boxlength{}":{
-		"prefix":"boxlength",
-		"body":[
-			"\\boxlength{${1:length}}"
-		]
-	},
-
-
-	"piccaption{}":{
-		"prefix":"piccaption",
-		"body":[
-			"\\piccaption{${1:text}}"
-		]
-	},
-
-
-	"newcaption{}":{
-		"prefix":"newcaption",
-		"body":[
-			"\\newcaption{${1:text}}"
-		]
-	},
-
-
-	"piccaptionoutside":{
-		"prefix":"piccaptionoutside",
-		"body":[
-			"\\piccaptionoutside"
-		]
-	},
-
-
-	"piccaptioninside":{
-		"prefix":"piccaptioninside",
-		"body":[
-			"\\piccaptioninside"
-		]
-	},
-
-
-	"piccaptionside":{
-		"prefix":"piccaptionside",
-		"body":[
-			"\\piccaptionside"
-		]
-	},
-
-
-	"piccaptiontopside":{
-		"prefix":"piccaptiontopside",
-		"body":[
-			"\\piccaptiontopside"
-		]
-	},
-
-
-	"picchangemode":{
-		"prefix":"picchangemode",
-		"body":[
-			"\\picchangemode"
-		]
-	},
-
-
-	"nopicchangemode":{
-		"prefix":"nopicchangemode",
-		"body":[
-			"\\nopicchangemode"
-		]
-	},
-
-
-	"ptoti":{
-		"prefix":"ptoti",
-		"body":[
-			"\\ptoti"
-		]
-	},
-
-
-	"ptotii":{
-		"prefix":"ptotii",
-		"body":[
-			"\\ptotii"
-		]
-	},
-
-
-	"Rahmen(){}":{
-		"prefix":"Rahmen",
-		"body":[
-			"\\Rahmen(${2:x},${3:y}){${1:arg}}"
-		]
-	},
-
-
-	"Schatten(){}":{
-		"prefix":"Schatten",
-		"body":[
-			"\\Schatten(${2:x},${3:y}){${1:arg}}"
-		]
-	},
-
-
-	"Oval(){}":{
-		"prefix":"Oval",
-		"body":[
-			"\\Oval(${2:x},${3:y}){${1:arg}}"
-		]
-	},
-
-
-	"Strich(){}":{
-		"prefix":"Strich",
-		"body":[
-			"\\Strich(${2:x},${3:y}){${1:arg}}"
-		]
-	},
-
-
-	"Kasten(){}":{
-		"prefix":"Kasten",
-		"body":[
-			"\\Kasten(${2:x},${3:y}){${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +23,8 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic(${3:width},${4:height})[${2:opts}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +32,17 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic(${4:width},${5:height})[${2:opts}][${3:pos}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"parpic()(){}":{
+		"prefix":"parpic",
+		"body":[
+			"\\parpic(${2:width},${3:height})(${4:xoffset},${5:yoffset}){${1:graphics}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +50,8 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic(${3:width},${4:height})(${5:xoffset},${6:yoffset})[${2:opts}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +59,26 @@
 		"prefix":"parpic",
 		"body":[
 			"\\parpic(${4:width},${5:height})(${6:xoffset},${7:yoffset})[${2:opts}][${3:pos}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hpic{}":{
+		"prefix":"hpic",
+		"body":[
+			"\\hpic{${1:graphics}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hpic(){}":{
+		"prefix":"hpic",
+		"body":[
+			"\\hpic(${2:width},${3:height}){${1:graphics}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +86,8 @@
 		"prefix":"hpic",
 		"body":[
 			"\\hpic(${3:width},${4:height})[${2:opts}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +95,17 @@
 		"prefix":"hpic",
 		"body":[
 			"\\hpic(${4:width},${5:height})[${2:opts}][${3:pos}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hpic()(){}":{
+		"prefix":"hpic",
+		"body":[
+			"\\hpic(${2:width},${3:height})(${4:xoffset},${5:yoffset}){${1:graphics}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +113,8 @@
 		"prefix":"hpic",
 		"body":[
 			"\\hpic(${3:width},${4:height})(${5:xoffset},${6:yoffset})[${2:opts}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +122,62 @@
 		"prefix":"hpic",
 		"body":[
 			"\\hpic(${4:width},${5:height})(${6:xoffset},${7:yoffset})[${2:opts}][${3:pos}]{${1:graphics}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"picskip{}":{
+		"prefix":"picskip",
+		"body":[
+			"\\picskip{${1:n}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pichskip{}":{
+		"prefix":"pichskip",
+		"body":[
+			"\\pichskip{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowthickness{}":{
+		"prefix":"shadowthickness",
+		"body":[
+			"\\shadowthickness{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dashlength{}":{
+		"prefix":"dashlength",
+		"body":[
+			"\\dashlength{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boxlength{}":{
+		"prefix":"boxlength",
+		"body":[
+			"\\boxlength{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"piccaption{}":{
+		"prefix":"piccaption",
+		"body":[
+			"\\piccaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +185,17 @@
 		"prefix":"piccaption",
 		"body":[
 			"\\piccaption[${2:short text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newcaption{}":{
+		"prefix":"newcaption",
+		"body":[
+			"\\newcaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +203,125 @@
 		"prefix":"newcaption",
 		"body":[
 			"\\newcaption[${2:short text}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"piccaptionoutside":{
+		"prefix":"piccaptionoutside",
+		"body":[
+			"\\piccaptionoutside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"piccaptioninside":{
+		"prefix":"piccaptioninside",
+		"body":[
+			"\\piccaptioninside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"piccaptionside":{
+		"prefix":"piccaptionside",
+		"body":[
+			"\\piccaptionside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"piccaptiontopside":{
+		"prefix":"piccaptiontopside",
+		"body":[
+			"\\piccaptiontopside"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"picchangemode":{
+		"prefix":"picchangemode",
+		"body":[
+			"\\picchangemode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nopicchangemode":{
+		"prefix":"nopicchangemode",
+		"body":[
+			"\\nopicchangemode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptoti":{
+		"prefix":"ptoti",
+		"body":[
+			"\\ptoti"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptotii":{
+		"prefix":"ptotii",
+		"body":[
+			"\\ptotii"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Rahmen(){}":{
+		"prefix":"Rahmen",
+		"body":[
+			"\\Rahmen(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Schatten(){}":{
+		"prefix":"Schatten",
+		"body":[
+			"\\Schatten(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Oval(){}":{
+		"prefix":"Oval",
+		"body":[
+			"\\Oval(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Strich(){}":{
+		"prefix":"Strich",
+		"body":[
+			"\\Strich(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Kasten(){}":{
+		"prefix":"Kasten",
+		"body":[
+			"\\Kasten(${2:x},${3:y}){${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -295,47 +331,19 @@
 			"\\begin{frameenv}",
 				"\t$1",
 			"\\end{frameenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"dashenv":{
-		"prefix":"dashenv",
-		"body":[
-			"\\begin{dashenv}",
-				"\t$1",
-			"\\end{dashenv}"
-		]
-	},
-
-
-	"ovalenv":{
-		"prefix":"ovalenv",
-		"body":[
-			"\\begin{ovalenv}",
-				"\t$1",
-			"\\end{ovalenv}"
-		]
-	},
-
-
-	"shadowenv":{
-		"prefix":"shadowenv",
-		"body":[
-			"\\begin{shadowenv}",
-				"\t$1",
-			"\\end{shadowenv}"
-		]
-	},
-
-
-	"frameenv":{
+	"frameenv[]":{
 		"prefix":"frameenv",
 		"body":[
 			"\\begin{frameenv}",
-				"\t$1",
+				"\t[${1:width}]",
 			"\\end{frameenv}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -345,7 +353,19 @@
 			"\\begin{dashenv}",
 				"\t$1",
 			"\\end{dashenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dashenv[]":{
+		"prefix":"dashenv",
+		"body":[
+			"\\begin{dashenv}",
+				"\t[${1:width}]",
+			"\\end{dashenv}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -355,7 +375,19 @@
 			"\\begin{ovalenv}",
 				"\t$1",
 			"\\end{ovalenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ovalenv[]":{
+		"prefix":"ovalenv",
+		"body":[
+			"\\begin{ovalenv}",
+				"\t[${1:width}]",
+			"\\end{ovalenv}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,6 +397,18 @@
 			"\\begin{shadowenv}",
 				"\t$1",
 			"\\end{shadowenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadowenv[]":{
+		"prefix":"shadowenv",
+		"body":[
+			"\\begin{shadowenv}",
+				"\t[${1:width}]",
+			"\\end{shadowenv}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -1,42 +1,46 @@
 {
 
 
-	"restatable":{
+	"restatable[]{}{}":{
 		"prefix":"restatable",
 		"body":[
 			"\\begin{restatable}",
-				"\t$1",
+				"\t[${3:options%keyvals}]{${1:envname}}{${2:cmd name}}",
 			"\\end{restatable}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"restatable*":{
-		"prefix":"restatable",
-		"body":[
-			"\\begin{restatable*}",
-				"\t$1",
-			"\\end{restatable*}"
-		]
-	},
-
-
-	"restatable":{
+	"restatable{}{}":{
 		"prefix":"restatable",
 		"body":[
 			"\\begin{restatable}",
-				"\t$1",
+				"\t{${1:envname}}{${2:cmd name}}",
 			"\\end{restatable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"restatable*":{
-		"prefix":"restatable",
+	"restatable*[]{}{}":{
+		"prefix":"*restatable",
 		"body":[
 			"\\begin{restatable*}",
-				"\t$1",
+				"\t[${3:options%keyvals}]{${1:envname}}{${2:cmd name}}",
 			"\\end{restatable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"restatable*{}{}":{
+		"prefix":"*restatable",
+		"body":[
+			"\\begin{restatable*}",
+				"\t{${1:envname}}{${2:cmd name}}",
+			"\\end{restatable*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"showcoordstrue",
 		"body":[
 			"\\showcoordstrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"showcoordsfalse",
 		"body":[
 			"\\showcoordsfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ncoord",
 		"body":[
 			"\\ncoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"pincoord",
 		"body":[
 			"\\pincoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"dotcoord",
 		"body":[
 			"\\dotcoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"dotpincoord",
 		"body":[
 			"\\dotpincoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"odotcoord",
 		"body":[
 			"\\odotcoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"odotpincoord",
 		"body":[
 			"\\odotpincoord(${1:coord})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,39 +77,8 @@
 		"prefix":"pathcross",
 		"body":[
 			"\\pathcross{${1:coordA}}{${2:coordB}}{${3:path-name}}"
-		]
-	},
-
-
-	"pathcross*{}{}{}":{
-		"prefix":"*pathcross",
-		"body":[
-			"\\pathcross*{${1:coordA}}{${2:coordB}}{${3:path-name}}"
-		]
-	},
-
-
-	"pathcross*{}{}{}[]":{
-		"prefix":"*pathcross",
-		"body":[
-			"\\pathcross*{${1:coordA}}{${2:coordB}}{${3:path-name}}[${4:width}]"
-		]
-	},
-
-
-	"pathcross*[]{}{}{}":{
-		"prefix":"*pathcross",
-		"body":[
-			"\\pathcross*[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}"
-		]
-	},
-
-
-	"pathcross*[]{}{}{}[]":{
-		"prefix":"*pathcross",
-		"body":[
-			"\\pathcross*[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}[${5:width}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,8 @@
 		"prefix":"pathcross",
 		"body":[
 			"\\pathcross{${1:coordA}}{${2:coordB}}{${3:path-name}}[${4:width}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +95,8 @@
 		"prefix":"pathcross",
 		"body":[
 			"\\pathcross[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,6 +104,43 @@
 		"prefix":"pathcross",
 		"body":[
 			"\\pathcross[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}[${5:width}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pathcross*{}{}{}":{
+		"prefix":"*pathcross",
+		"body":[
+			"\\pathcross*{${1:coordA}}{${2:coordB}}{${3:path-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pathcross*{}{}{}[]":{
+		"prefix":"*pathcross",
+		"body":[
+			"\\pathcross*{${1:coordA}}{${2:coordB}}{${3:path-name}}[${4:width}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pathcross*[]{}{}{}":{
+		"prefix":"*pathcross",
+		"body":[
+			"\\pathcross*[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pathcross*[]{}{}{}[]":{
+		"prefix":"*pathcross",
+		"body":[
+			"\\pathcross*[${4:cross-name}]{${1:coordA}}{${2:coordB}}{${3:path-name}}[${5:width}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

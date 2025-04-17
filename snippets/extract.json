@@ -5,7 +5,8 @@
 		"prefix":"extractionlabel",
 		"body":[
 			"\\extractionlabel{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"extractline",
 		"body":[
 			"\\extractline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"*extractline",
 		"body":[
 			"\\extractline*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -31,17 +34,19 @@
 			"\\begin{extract}",
 				"\t$1",
 			"\\end{extract}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"extractskip":{
-		"prefix":"extractskip",
+	"extract[]":{
+		"prefix":"extract",
 		"body":[
-			"\\begin{extractskip}",
-				"\t$1",
-			"\\end{extractskip}"
-		]
+			"\\begin{extract}",
+				"\t[${1:name}]",
+			"\\end{extract}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -51,27 +56,19 @@
 			"\\begin{extract*}",
 				"\t$1",
 			"\\end{extract*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"extract":{
-		"prefix":"extract",
-		"body":[
-			"\\begin{extract}",
-				"\t$1",
-			"\\end{extract}"
-		]
-	},
-
-
-	"extract*":{
-		"prefix":"extract",
+	"extract*[]":{
+		"prefix":"*extract",
 		"body":[
 			"\\begin{extract*}",
-				"\t$1",
+				"\t[${1:name}]",
 			"\\end{extract*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -81,6 +78,18 @@
 			"\\begin{extractskip}",
 				"\t$1",
 			"\\end{extractskip}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extractskip[]":{
+		"prefix":"extractskip",
+		"body":[
+			"\\begin{extractskip}",
+				"\t[${1:name}]",
+			"\\end{extractskip}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

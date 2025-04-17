@@ -5,7 +5,8 @@
 		"prefix":"tikzfeynmanset",
 		"body":[
 			"\\tikzfeynmanset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,23 +14,8 @@
 		"prefix":"diagram",
 		"body":[
 			"\\diagram{${1:contents}}"
-		]
-	},
-
-
-	"diagram*{}":{
-		"prefix":"*diagram",
-		"body":[
-			"\\diagram*{${1:contents}}"
-		]
-	},
-
-
-	"diagram*[]{}":{
-		"prefix":"*diagram",
-		"body":[
-			"\\diagram*[${2:options%keyvals}]{${1:contents}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +23,26 @@
 		"prefix":"diagram",
 		"body":[
 			"\\diagram[${2:options%keyvals}]{${1:contents}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"diagram*{}":{
+		"prefix":"*diagram",
+		"body":[
+			"\\diagram*{${1:contents}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"diagram*[]{}":{
+		"prefix":"*diagram",
+		"body":[
+			"\\diagram*[${2:options%keyvals}]{${1:contents}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -47,16 +52,18 @@
 			"\\begin{feynman}",
 				"\t$1",
 			"\\end{feynman}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"feynman":{
+	"feynman[]":{
 		"prefix":"feynman",
 		"body":[
 			"\\begin{feynman}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{feynman}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

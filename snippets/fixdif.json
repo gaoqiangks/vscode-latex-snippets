@@ -5,7 +5,8 @@
 		"prefix":"resetdfont",
 		"body":[
 			"\\resetdfont{${1:math font cmd%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,39 +14,8 @@
 		"prefix":"letdif",
 		"body":[
 			"\\letdif{${1:cmd}}{${2:csname}}"
-		]
-	},
-
-
-	"partialnondif":{
-		"prefix":"partialnondif",
-		"body":[
-			"\\partialnondif"
-		]
-	},
-
-
-	"newdif{}{}":{
-		"prefix":"newdif",
-		"body":[
-			"\\newdif{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"renewdif{}{}":{
-		"prefix":"renewdif",
-		"body":[
-			"\\renewdif{${1:cmd}}{${2:def}}"
-		]
-	},
-
-
-	"mathdif{}":{
-		"prefix":"mathdif",
-		"body":[
-			"\\mathdif{${1:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,26 @@
 		"prefix":"*letdif",
 		"body":[
 			"\\letdif*{${1:cmd}}{${2:csname}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"partialnondif":{
+		"prefix":"partialnondif",
+		"body":[
+			"\\partialnondif"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newdif{}{}":{
+		"prefix":"newdif",
+		"body":[
+			"\\newdif{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +50,17 @@
 		"prefix":"*newdif",
 		"body":[
 			"\\newdif*{${1:cmd}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"renewdif{}{}":{
+		"prefix":"renewdif",
+		"body":[
+			"\\renewdif{${1:cmd}}{${2:def}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +68,17 @@
 		"prefix":"*renewdif",
 		"body":[
 			"\\renewdif*{${1:cmd}}{${2:def}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mathdif{}":{
+		"prefix":"mathdif",
+		"body":[
+			"\\mathdif{${1:symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +86,7 @@
 		"prefix":"*mathdif",
 		"body":[
 			"\\mathdif*{${1:symbol}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

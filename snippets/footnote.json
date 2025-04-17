@@ -5,7 +5,8 @@
 		"prefix":"savenotes",
 		"body":[
 			"\\savenotes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"spewnotes",
 		"body":[
 			"\\spewnotes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"makesavenoteenv",
 		"body":[
 			"\\makesavenoteenv{${1:environment}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"makesavenoteenv",
 		"body":[
 			"\\makesavenoteenv[${2:new_envname%envname}]{${1:environment}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -39,17 +43,41 @@
 			"\\begin{savenotes}",
 				"\t$1",
 			"\\end{savenotes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"minipage*":{
-		"prefix":"minipage",
+	"minipage*{}":{
+		"prefix":"*minipage",
 		"body":[
 			"\\begin{minipage*}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{minipage*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"minipage*[]{}":{
+		"prefix":"*minipage",
+		"body":[
+			"\\begin{minipage*}",
+				"\t[${2:position%keyvals}]{${1:width}}",
+			"\\end{minipage*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"minipage*[][][]{}":{
+		"prefix":"*minipage",
+		"body":[
+			"\\begin{minipage*}",
+				"\t[${2:position%keyvals}][${3:height}][${4:inner-pos}]{${1:width}}",
+			"\\end{minipage*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -59,7 +87,19 @@
 			"\\begin{footnote}",
 				"\t$1",
 			"\\end{footnote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnote[]":{
+		"prefix":"footnote",
+		"body":[
+			"\\begin{footnote}",
+				"\t[${1:number}]",
+			"\\end{footnote}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,36 +109,7 @@
 			"\\begin{footnotetext}",
 				"\t$1",
 			"\\end{footnotetext}"
-		]
-	},
-
-
-	"minipage*":{
-		"prefix":"minipage",
-		"body":[
-			"\\begin{minipage*}",
-				"\t$1",
-			"\\end{minipage*}"
-		]
-	},
-
-
-	"minipage*":{
-		"prefix":"minipage",
-		"body":[
-			"\\begin{minipage*}",
-				"\t$1",
-			"\\end{minipage*}"
-		]
-	},
-
-
-	"footnote":{
-		"prefix":"footnote",
-		"body":[
-			"\\begin{footnote}",
-				"\t$1",
-			"\\end{footnote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

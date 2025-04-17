@@ -5,103 +5,8 @@
 		"prefix":"C",
 		"body":[
 			"\\C"
-		]
-	},
-
-
-	"Cl{}":{
-		"prefix":"Cl",
-		"body":[
-			"\\Cl{${1:label%specialDef}}"
-		]
-	},
-
-
-	"Cr{}":{
-		"prefix":"Cr",
-		"body":[
-			"\\Cr{${1:label%keyvals}}"
-		]
-	},
-
-
-	"pagerefconstant{}":{
-		"prefix":"pagerefconstant",
-		"body":[
-			"\\pagerefconstant{${1:label%keyvals}}"
-		]
-	},
-
-
-	"resetconstant":{
-		"prefix":"resetconstant",
-		"body":[
-			"\\resetconstant"
-		]
-	},
-
-
-	"newconstantfamily{}{}":{
-		"prefix":"newconstantfamily",
-		"body":[
-			"\\newconstantfamily{${1:family name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewconstantfamily{}{}":{
-		"prefix":"renewconstantfamily",
-		"body":[
-			"\\renewconstantfamily{${1:family name}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"newlabelconstant{}{{}{}{}}":{
-		"prefix":"newlabelconstant",
-		"body":[
-			"\\newlabelconstant{${1:label}}{{${2:number}}{${3:page}}{${4:family}}}"
-		]
-	},
-
-
-	"refconstant{}":{
-		"prefix":"refconstant",
-		"body":[
-			"\\refconstant{${1:label}}"
-		]
-	},
-
-
-	"familyconstant{}":{
-		"prefix":"familyconstant",
-		"body":[
-			"\\familyconstant{${1:label}}"
-		]
-	},
-
-
-	"counterconstant{}":{
-		"prefix":"counterconstant",
-		"body":[
-			"\\counterconstant{${1:label}}"
-		]
-	},
-
-
-	"refstepcounterconstant{}":{
-		"prefix":"refstepcounterconstant",
-		"body":[
-			"\\refstepcounterconstant{${1:counter}}"
-		]
-	},
-
-
-	"labelconstant{}{}":{
-		"prefix":"labelconstant",
-		"body":[
-			"\\labelconstant{${1:label}}{${2:family}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +14,17 @@
 		"prefix":"C",
 		"body":[
 			"\\C[${1:family}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cl{}":{
+		"prefix":"Cl",
+		"body":[
+			"\\Cl{${1:label%specialDef}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +32,35 @@
 		"prefix":"Cl",
 		"body":[
 			"\\Cl[${2:family}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cr{}":{
+		"prefix":"Cr",
+		"body":[
+			"\\Cr{${1:label%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pagerefconstant{}":{
+		"prefix":"pagerefconstant",
+		"body":[
+			"\\pagerefconstant{${1:label%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetconstant":{
+		"prefix":"resetconstant",
+		"body":[
+			"\\resetconstant"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +68,79 @@
 		"prefix":"resetconstant",
 		"body":[
 			"\\resetconstant[${1:family}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newconstantfamily{}{}":{
+		"prefix":"newconstantfamily",
+		"body":[
+			"\\newconstantfamily{${1:family name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewconstantfamily{}{}":{
+		"prefix":"renewconstantfamily",
+		"body":[
+			"\\renewconstantfamily{${1:family name}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newlabelconstant{}{{}{}{}}":{
+		"prefix":"newlabelconstant",
+		"body":[
+			"\\newlabelconstant{${1:label}}{{${2:number}}{${3:page}}{${4:family}}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refconstant{}":{
+		"prefix":"refconstant",
+		"body":[
+			"\\refconstant{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"familyconstant{}":{
+		"prefix":"familyconstant",
+		"body":[
+			"\\familyconstant{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"counterconstant{}":{
+		"prefix":"counterconstant",
+		"body":[
+			"\\counterconstant{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"refstepcounterconstant{}":{
+		"prefix":"refstepcounterconstant",
+		"body":[
+			"\\refstepcounterconstant{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelconstant{}{}":{
+		"prefix":"labelconstant",
+		"body":[
+			"\\labelconstant{${1:label}}{${2:family}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

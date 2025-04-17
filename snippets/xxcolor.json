@@ -5,7 +5,8 @@
 		"prefix":"colorcurrentmixin",
 		"body":[
 			"\\colorcurrentmixin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"newcolormixin",
 		"body":[
 			"\\newcolormixin{${1:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,16 +23,18 @@
 		"prefix":"applycolormixins",
 		"body":[
 			"\\applycolormixins{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"colormixin":{
+	"colormixin{}":{
 		"prefix":"colormixin",
 		"body":[
 			"\\begin{colormixin}",
-				"\t$1",
+				"\t{${1:mix-in specification}}",
 			"\\end{colormixin}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

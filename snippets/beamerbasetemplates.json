@@ -5,71 +5,8 @@
 		"prefix":"usebeamertemplate",
 		"body":[
 			"\\usebeamertemplate{${1:element name}}"
-		]
-	},
-
-
-	"expandbeamertemplate{}":{
-		"prefix":"expandbeamertemplate",
-		"body":[
-			"\\expandbeamertemplate{${1:beamer template name}}"
-		]
-	},
-
-
-	"ifbeamertemplateempty{}{}{}":{
-		"prefix":"ifbeamertemplateempty",
-		"body":[
-			"\\ifbeamertemplateempty{${1:beamer template name}}{${2:executed if empty}}{${3:executed otherwise}}"
-		]
-	},
-
-
-	"defbeamertemplate<mode specification>*{}{}{}":{
-		"prefix":"defbeamertemplate<mode specification>",
-		"body":[
-			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplate{}{}{}":{
-		"prefix":"defbeamertemplate",
-		"body":[
-			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
-		]
-	},
-
-
-	"defbeamertemplatealias{}{}{}":{
-		"prefix":"defbeamertemplatealias",
-		"body":[
-			"\\defbeamertemplatealias{${1:element name}}{${2:new predefined option name}}{${3:existing predefined option name}}"
-		]
-	},
-
-
-	"defbeamertemplateparent{}{}{}":{
-		"prefix":"defbeamertemplateparent",
-		"body":[
-			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}{${3:args for children}}"
-		]
-	},
-
-
-	"setbeamertemplate{}{}":{
-		"prefix":"setbeamertemplate",
-		"body":[
-			"\\setbeamertemplate{${1:element name}}{${2:arguments}}"
-		]
-	},
-
-
-	"addtobeamertemplate{}{}{}":{
-		"prefix":"addtobeamertemplate",
-		"body":[
-			"\\addtobeamertemplate{${1:element name}}{${2:pre-text%text}}{${3:post-text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,8 @@
 		"prefix":"*usebeamertemplate",
 		"body":[
 			"\\usebeamertemplate*{${1:element name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -85,7 +23,8 @@
 		"prefix":"*usebeamertemplate",
 		"body":[
 			"\\usebeamertemplate**{${1:element name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -93,47 +32,80 @@
 		"prefix":"*usebeamertemplate",
 		"body":[
 			"\\usebeamertemplate***{${1:element name}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"expandbeamertemplate{}":{
+		"prefix":"expandbeamertemplate",
+		"body":[
+			"\\expandbeamertemplate{${1:beamer template name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifbeamertemplateempty{}{}{}":{
+		"prefix":"ifbeamertemplateempty",
+		"body":[
+			"\\ifbeamertemplateempty{${1:beamer template name}}{${2:executed if empty}}{${3:executed otherwise}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
 	"defbeamertemplate<mode specification>*{}{}[][]{}[]{}":{
-		"prefix":"defbeamertemplate<mode specification>",
+		"prefix":"defbeamertemplate<mode specification>*",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"defbeamertemplate<mode specification>*{}{}[]{}[]{}":{
-		"prefix":"defbeamertemplate<mode specification>",
+		"prefix":"defbeamertemplate<mode specification>*",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"defbeamertemplate<mode specification>*{}{}{}[]{}":{
-		"prefix":"defbeamertemplate<mode specification>",
+		"prefix":"defbeamertemplate<mode specification>*",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"defbeamertemplate<mode specification>*{}{}[][]{}":{
-		"prefix":"defbeamertemplate<mode specification>",
+		"prefix":"defbeamertemplate<mode specification>*",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
 	"defbeamertemplate<mode specification>*{}{}[]{}":{
-		"prefix":"defbeamertemplate<mode specification>",
+		"prefix":"defbeamertemplate<mode specification>*",
 		"body":[
 			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defbeamertemplate<mode specification>*{}{}{}":{
+		"prefix":"defbeamertemplate<mode specification>*",
+		"body":[
+			"\\defbeamertemplate<mode specification>*{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +113,8 @@
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:argument number}][${6:default optional argument}]{${3:predefined text}}[${7:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +122,8 @@
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${5:default optional argument}]{${3:predefined text}}[${6:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +131,8 @@
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}[${5:action}]{${4:action command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +140,8 @@
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}][${5:default optional argument}]{${3:predefined text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +149,26 @@
 		"prefix":"defbeamertemplate",
 		"body":[
 			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}[${4:argument number}]{${3:predefined text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defbeamertemplate{}{}{}":{
+		"prefix":"defbeamertemplate",
+		"body":[
+			"\\defbeamertemplate{${1:element name}}{${2:predefined option}}{${3:predefined text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defbeamertemplatealias{}{}{}":{
+		"prefix":"defbeamertemplatealias",
+		"body":[
+			"\\defbeamertemplatealias{${1:element name}}{${2:new predefined option name}}{${3:existing predefined option name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +176,8 @@
 		"prefix":"defbeamertemplateparent",
 		"body":[
 			"\\defbeamertemplateparent{${1:parent template}}[${4:predefined option}]{${2:child template list}}[${5:args}][${6:default}]{${3:arguments for children}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +185,26 @@
 		"prefix":"defbeamertemplateparent",
 		"body":[
 			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}[${4:args}][${5:default}]{${3:args for children}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"defbeamertemplateparent{}{}{}":{
+		"prefix":"defbeamertemplateparent",
+		"body":[
+			"\\defbeamertemplateparent{${1:parent template}}{${2:child template list}}{${3:args for children}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setbeamertemplate{}{}":{
+		"prefix":"setbeamertemplate",
+		"body":[
+			"\\setbeamertemplate{${1:element name}}{${2:arguments}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +212,8 @@
 		"prefix":"setbeamertemplate",
 		"body":[
 			"\\setbeamertemplate{${1:element name}}[${2:predefined option}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,6 +221,16 @@
 		"prefix":"setbeamertemplate",
 		"body":[
 			"\\setbeamertemplate{${1:element name}}[${3:predefined option}]{${2:arguments}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtobeamertemplate{}{}{}":{
+		"prefix":"addtobeamertemplate",
+		"body":[
+			"\\addtobeamertemplate{${1:element name}}{${2:pre-text%text}}{${3:post-text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

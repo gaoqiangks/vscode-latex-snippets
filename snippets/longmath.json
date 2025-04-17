@@ -5,7 +5,8 @@
 		"prefix":"lleft",
 		"body":[
 			"\\lleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mleft",
 		"body":[
 			"\\mleft"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"mmbin",
 		"body":[
 			"\\mmbin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"mmiddle",
 		"body":[
 			"\\mmiddle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"mmop",
 		"body":[
 			"\\mmop"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"mmord",
 		"body":[
 			"\\mmord"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"mmpunct",
 		"body":[
 			"\\mmpunct"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"mmrel",
 		"body":[
 			"\\mmrel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"mright",
 		"body":[
 			"\\mright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"rright",
 		"body":[
 			"\\rright"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"delimiterprefix",
 		"body":[
 			"\\delimiterprefix{${1:prefix}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"delimiterscale",
 		"body":[
 			"\\delimiterscale"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"ignorelimits",
 		"body":[
 			"\\ignorelimits"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"includelimits",
 		"body":[
 			"\\includelimits"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"longmathlinesep",
 		"body":[
 			"\\longmathlinesep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"pulldelimiter",
 		"body":[
 			"\\pulldelimiter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,46 +149,51 @@
 		"prefix":"pushdelimiter",
 		"body":[
 			"\\pushdelimiter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"longmath":{
+	"longmath{}":{
 		"prefix":"longmath",
 		"body":[
 			"\\begin{longmath}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{longmath}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"longmath*":{
-		"prefix":"longmath",
-		"body":[
-			"\\begin{longmath*}",
-				"\t$1",
-			"\\end{longmath*}"
-		]
-	},
-
-
-	"longmath":{
+	"longmath[]{}":{
 		"prefix":"longmath",
 		"body":[
 			"\\begin{longmath}",
-				"\t$1",
+				"\t[${2:align%keyvals}]{${1:width}}",
 			"\\end{longmath}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"longmath*":{
-		"prefix":"longmath",
+	"longmath*{}":{
+		"prefix":"*longmath",
 		"body":[
 			"\\begin{longmath*}",
-				"\t$1",
+				"\t{${1:width}}",
 			"\\end{longmath*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"longmath*[]{}":{
+		"prefix":"*longmath",
+		"body":[
+			"\\begin{longmath*}",
+				"\t[${2:align%keyvals}]{${1:width}}",
+			"\\end{longmath*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

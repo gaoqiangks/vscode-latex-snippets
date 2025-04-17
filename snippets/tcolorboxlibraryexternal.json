@@ -5,7 +5,8 @@
 		"prefix":"tcbEXTERNALIZE",
 		"body":[
 			"\\tcbEXTERNALIZE"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tcbifexternal",
 		"body":[
 			"\\tcbifexternal{${1:true}}{${2:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"newtcbexternalizeenvironment",
 		"body":[
 			"\\newtcbexternalizeenvironment{${1:newenv%envname}}{${2:env}}{${3:options%keyvals}}{${4:begdef}}{${5:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"renewtcbexternalizeenvironment",
 		"body":[
 			"\\renewtcbexternalizeenvironment{${1:newenv%envname}}{${2:env}}{${3:options%keyvals}}{${4:begdef}}{${5:enddef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"newtcbexternalizetcolorbox",
 		"body":[
 			"\\newtcbexternalizetcolorbox{${1:newenv%envname}}{${2:env}}{${3:options%keyvals}}{${4:begin end options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"renewtcbexternalizetcolorbox",
 		"body":[
 			"\\renewtcbexternalizetcolorbox{${1:newenv%envname}}{${2:env}}{${3:options%keyvals}}{${4:begin end options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,66 +59,73 @@
 		"prefix":"tcbiffileprocess",
 		"body":[
 			"\\tcbiffileprocess{${1:condition}}{${2:source}}{${3:md5-file}}{${4:target}}{${5:true}}{${6:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tcbexternal":{
+	"tcbexternal{}":{
 		"prefix":"tcbexternal",
 		"body":[
 			"\\begin{tcbexternal}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{tcbexternal}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"extcolorbox":{
-		"prefix":"extcolorbox",
-		"body":[
-			"\\begin{extcolorbox}",
-				"\t$1",
-			"\\end{extcolorbox}"
-		]
-	},
-
-
-	"extikzpicture":{
-		"prefix":"extikzpicture",
-		"body":[
-			"\\begin{extikzpicture}",
-				"\t$1",
-			"\\end{extikzpicture}"
-		]
-	},
-
-
-	"tcbexternal":{
+	"tcbexternal[]{}":{
 		"prefix":"tcbexternal",
 		"body":[
 			"\\begin{tcbexternal}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:name}}",
 			"\\end{tcbexternal}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"extcolorbox":{
+	"extcolorbox{}":{
 		"prefix":"extcolorbox",
 		"body":[
 			"\\begin{extcolorbox}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{extcolorbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"extikzpicture":{
+	"extcolorbox[]{}[]":{
+		"prefix":"extcolorbox",
+		"body":[
+			"\\begin{extcolorbox}",
+				"\t[${2:options%keyvals}]{${1:name}}[${3:tcolorbox options}]",
+			"\\end{extcolorbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"extikzpicture{}":{
 		"prefix":"extikzpicture",
 		"body":[
 			"\\begin{extikzpicture}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{extikzpicture}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extikzpicture[]{}[]":{
+		"prefix":"extikzpicture",
+		"body":[
+			"\\begin{extikzpicture}",
+				"\t[${2:options%keyvals}]{${1:name}}[${3:tikz options}]",
+			"\\end{extikzpicture}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

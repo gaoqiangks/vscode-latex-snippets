@@ -5,7 +5,8 @@
 		"prefix":"degree",
 		"body":[
 			"\\degree{${1:degree%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"gradyear",
 		"body":[
 			"\\gradyear{${1:year}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"department",
 		"body":[
 			"\\department{${1:department%text}}"
-		]
-	},
-
-
-	"copyrighttext{}":{
-		"prefix":"copyrighttext",
-		"body":[
-			"\\copyrighttext{${1:text}}"
-		]
-	},
-
-
-	"headerstyle{}":{
-		"prefix":"headerstyle",
-		"body":[
-			"\\headerstyle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +32,26 @@
 		"prefix":"department",
 		"body":[
 			"\\department[${2:pre text%text}]{${1:department%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"copyrighttext{}":{
+		"prefix":"copyrighttext",
+		"body":[
+			"\\copyrighttext{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headerstyle{}":{
+		"prefix":"headerstyle",
+		"body":[
+			"\\headerstyle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -55,7 +61,8 @@
 			"\\begin{dedication}",
 				"\t$1",
 			"\\end{dedication}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -65,6 +72,7 @@
 			"\\begin{acknowledgements}",
 				"\t$1",
 			"\\end{acknowledgements}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,63 +5,8 @@
 		"prefix":"info",
 		"body":[
 			"\\info{${1:image-name}}{${2:category}}{${3:subcategory}}"
-		]
-	},
-
-
-	"chitimages{}":{
-		"prefix":"chitimages",
-		"body":[
-			"\\chitimages{${1:counter}}"
-		]
-	},
-
-
-	"doublechitimages{}":{
-		"prefix":"doublechitimages",
-		"body":[
-			"\\doublechitimages{${1:counter}}"
-		]
-	},
-
-
-	"dice{}{}{}":{
-		"prefix":"dice",
-		"body":[
-			"\\dice{${1:name}}{${2:name}}{${3:list}}"
-		]
-	},
-
-
-	"multimathsep":{
-		"prefix":"multimathsep",
-		"body":[
-			"\\multimathsep"
-		]
-	},
-
-
-	"multidisplaymathsep":{
-		"prefix":"multidisplaymathsep",
-		"body":[
-			"\\multidisplaymathsep"
-		]
-	},
-
-
-	"multimathsep":{
-		"prefix":"multimathsep",
-		"body":[
-			"\\multimathsep"
-		]
-	},
-
-
-	"multidisplaymathsep":{
-		"prefix":"multidisplaymathsep",
-		"body":[
-			"\\multidisplaymathsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,17 @@
 		"prefix":"*info",
 		"body":[
 			"\\info*{${1:image-name}}{${2:category}}{${3:subcategory}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chitimages{}":{
+		"prefix":"chitimages",
+		"body":[
+			"\\chitimages{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +32,8 @@
 		"prefix":"chitimages",
 		"body":[
 			"\\chitimages[${2:faction}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +41,17 @@
 		"prefix":"chitimages",
 		"body":[
 			"\\chitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"doublechitimages{}":{
+		"prefix":"doublechitimages",
+		"body":[
+			"\\doublechitimages{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +59,8 @@
 		"prefix":"doublechitimages",
 		"body":[
 			"\\doublechitimages[${2:faction}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"doublechitimages",
 		"body":[
 			"\\doublechitimages[${2:faction}][${3:TikZ keys}]{${1:counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dice{}{}{}":{
+		"prefix":"dice",
+		"body":[
+			"\\dice{${1:name}}{${2:name}}{${3:list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,8 @@
 		"prefix":"dice",
 		"body":[
 			"\\dice[${4:tikz-options}]{${1:name}}{${2:name}}{${3:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +95,44 @@
 		"prefix":"dice",
 		"body":[
 			"\\dice[${4:tikz-options}][${5:node-options}]{${1:name}}{${2:name}}{${3:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"multimathsep":{
+		"prefix":"multimathsep",
+		"body":[
+			"\\multimathsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multidisplaymathsep":{
+		"prefix":"multidisplaymathsep",
+		"body":[
+			"\\multidisplaymathsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multimathsep":{
+		"prefix":"multimathsep",
+		"body":[
+			"\\multimathsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"multidisplaymathsep":{
+		"prefix":"multidisplaymathsep",
+		"body":[
+			"\\multidisplaymathsep"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,137 +142,41 @@
 			"\\begin{imagelist}",
 				"\t$1",
 			"\\end{imagelist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"boardimage":{
-		"prefix":"boardimage",
-		"body":[
-			"\\begin{boardimage}",
-				"\t$1",
-			"\\end{boardimage}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"multimath":{
-		"prefix":"multimath",
-		"body":[
-			"\\begin{multimath}",
-				"\t$1",
-			"\\end{multimath}"
-		]
-	},
-
-
-	"multidisplaymath":{
-		"prefix":"multidisplaymath",
-		"body":[
-			"\\begin{multidisplaymath}",
-				"\t$1",
-			"\\end{multidisplaymath}"
-		]
-	},
-
-
-	"multimath":{
-		"prefix":"multimath",
-		"body":[
-			"\\begin{multimath}",
-				"\t$1",
-			"\\end{multimath}"
-		]
-	},
-
-
-	"multidisplaymath":{
-		"prefix":"multidisplaymath",
-		"body":[
-			"\\begin{multidisplaymath}",
-				"\t$1",
-			"\\end{multidisplaymath}"
-		]
-	},
-
-
-	"imagelist":{
+	"imagelist[]":{
 		"prefix":"imagelist",
 		"body":[
 			"\\begin{imagelist}",
-				"\t$1",
+				"\t[${1:jobname}]",
 			"\\end{imagelist}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"boardimage":{
+	"boardimage{}{}":{
 		"prefix":"boardimage",
 		"body":[
 			"\\begin{boardimage}",
-				"\t$1",
+				"\t{${1:image-name}}{${2:subcategory}}",
 			"\\end{boardimage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"boardimage[]{}{}":{
+		"prefix":"boardimage",
+		"body":[
+			"\\begin{boardimage}",
+				"\t[${3:classification}]{${1:image-name}}{${2:subcategory}}",
+			"\\end{boardimage}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -267,7 +186,151 @@
 			"\\begin{standaloneframe}",
 				"\t$1",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"standaloneframe<>":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t<${1:overlay spec}>",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"standaloneframe<>[]":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t<${2:overlay spec}>[${1:<default overlay spec>}]",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe<>[][]":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t<${3:overlay spec}>[${1:<default overlay spec>}][${2:options}]",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe<>[][]{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t<${4:overlay spec}>[${2:<default overlay spec>}][${3:options}]{${1:title}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe<>[][]{}{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t<${5:overlay spec}>[${3:<default overlay spec>}][${4:options}]{${1:title}}{${2:subtitle%text}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[]":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${1:<default overlay spec>}]",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[][]":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${1:<default overlay spec>}][${2:options}]",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[][]{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${2:<default overlay spec>}][${3:options}]{${1:title}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[][]{}{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${3:<default overlay spec>}][${4:options}]{${1:title}}{${2:subtitle%text}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[]":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${1:options}]",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[]{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${2:options}]{${1:title}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe[]{}{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t[${3:options}]{${1:title}}{${2:subtitle%text}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"standaloneframe{}":{
+		"prefix":"standaloneframe",
+		"body":[
+			"\\begin{standaloneframe}",
+				"\t{${1:title}}",
+			"\\end{standaloneframe}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,206 +340,194 @@
 			"\\begin{standaloneframe}",
 				"\t$1",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe<>":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t<${1:overlay spec}>",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe<>[]":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t<${2:overlay spec}>[${1:<default overlay spec>}]",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe<>[][]":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t<${3:overlay spec}>[${1:<default overlay spec>}][${2:options}]",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe<>[][]{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t<${4:overlay spec}>[${2:<default overlay spec>}][${3:options}]{${1:title}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe<>[][]{}{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t<${5:overlay spec}>[${3:<default overlay spec>}][${4:options}]{${1:title}}{${2:subtitle%text}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[]":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${1:<default overlay spec>}]",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[][]":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${1:<default overlay spec>}][${2:options}]",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[][]{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${2:<default overlay spec>}][${3:options}]{${1:title}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[][]{}{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${3:<default overlay spec>}][${4:options}]{${1:title}}{${2:subtitle%text}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[]":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${1:options}]",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[]{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${2:options}]{${1:title}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe[]{}{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t[${3:options}]{${1:title}}{${2:subtitle%text}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"standaloneframe":{
+	"standaloneframe{}":{
 		"prefix":"standaloneframe",
 		"body":[
 			"\\begin{standaloneframe}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{standaloneframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
-		"prefix":"standaloneframe",
+	"multimath":{
+		"prefix":"multimath",
 		"body":[
-			"\\begin{standaloneframe}",
+			"\\begin{multimath}",
 				"\t$1",
-			"\\end{standaloneframe}"
-		]
+			"\\end{multimath}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
-		"prefix":"standaloneframe",
+	"multidisplaymath":{
+		"prefix":"multidisplaymath",
 		"body":[
-			"\\begin{standaloneframe}",
+			"\\begin{multidisplaymath}",
 				"\t$1",
-			"\\end{standaloneframe}"
-		]
+			"\\end{multidisplaymath}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
-		"prefix":"standaloneframe",
+	"multimath":{
+		"prefix":"multimath",
 		"body":[
-			"\\begin{standaloneframe}",
+			"\\begin{multimath}",
 				"\t$1",
-			"\\end{standaloneframe}"
-		]
+			"\\end{multimath}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"standaloneframe":{
-		"prefix":"standaloneframe",
+	"multidisplaymath":{
+		"prefix":"multidisplaymath",
 		"body":[
-			"\\begin{standaloneframe}",
+			"\\begin{multidisplaymath}",
 				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
-	},
-
-
-	"standaloneframe":{
-		"prefix":"standaloneframe",
-		"body":[
-			"\\begin{standaloneframe}",
-				"\t$1",
-			"\\end{standaloneframe}"
-		]
+			"\\end{multidisplaymath}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

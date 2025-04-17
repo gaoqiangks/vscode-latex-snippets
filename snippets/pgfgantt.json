@@ -5,7 +5,8 @@
 		"prefix":"ganttset",
 		"body":[
 			"\\ganttset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"newgantttimeslotformat",
 		"body":[
 			"\\newgantttimeslotformat{${1:name}}{${2:converter code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,271 +23,8 @@
 		"prefix":"ganttnewline",
 		"body":[
 			"\\ganttnewline"
-		]
-	},
-
-
-	"ganttalignnewline":{
-		"prefix":"ganttalignnewline",
-		"body":[
-			"\\ganttalignnewline"
-		]
-	},
-
-
-	"gantttitle{}{}":{
-		"prefix":"gantttitle",
-		"body":[
-			"\\gantttitle{${1:label}}{${2:number of time slots}}"
-		]
-	},
-
-
-	"gantttitlelist{}{}":{
-		"prefix":"gantttitlelist",
-		"body":[
-			"\\gantttitlelist{${1:pgffor list}}{${2:length of each element}}"
-		]
-	},
-
-
-	"gantttitlecalendar{}":{
-		"prefix":"gantttitlecalendar",
-		"body":[
-			"\\gantttitlecalendar{${1:calendar lines}}"
-		]
-	},
-
-
-	"currentweek":{
-		"prefix":"currentweek",
-		"body":[
-			"\\currentweek"
-		]
-	},
-
-
-	"startyear":{
-		"prefix":"startyear",
-		"body":[
-			"\\startyear"
-		]
-	},
-
-
-	"startmonth":{
-		"prefix":"startmonth",
-		"body":[
-			"\\startmonth"
-		]
-	},
-
-
-	"startday":{
-		"prefix":"startday",
-		"body":[
-			"\\startday"
-		]
-	},
-
-
-	"ganttvrule{}{}":{
-		"prefix":"ganttvrule",
-		"body":[
-			"\\ganttvrule{${1:label%text}}{${2:tss}}"
-		]
-	},
-
-
-	"ganttbar{}{}{}":{
-		"prefix":"ganttbar",
-		"body":[
-			"\\ganttbar{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
-	},
-
-
-	"ganttgroup{}{}{}":{
-		"prefix":"ganttgroup",
-		"body":[
-			"\\ganttgroup{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
-	},
-
-
-	"ganttmilestone{}{}":{
-		"prefix":"ganttmilestone",
-		"body":[
-			"\\ganttmilestone{${1:label%text}}{${2:tss}}"
-		]
-	},
-
-
-	"ganttlinkedbar{}{}{}":{
-		"prefix":"ganttlinkedbar",
-		"body":[
-			"\\ganttlinkedbar{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
-	},
-
-
-	"ganttlinkedgroup{}{}{}":{
-		"prefix":"ganttlinkedgroup",
-		"body":[
-			"\\ganttlinkedgroup{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
-	},
-
-
-	"ganttlinkedmilestone{}{}":{
-		"prefix":"ganttlinkedmilestone",
-		"body":[
-			"\\ganttlinkedmilestone{${1:label%text}}{${2:tss}}"
-		]
-	},
-
-
-	"newganttchartelement{}{}":{
-		"prefix":"newganttchartelement",
-		"body":[
-			"\\newganttchartelement{${1:name}}{${2:new default keyvals}}"
-		]
-	},
-
-
-	"ganttlink{}{}":{
-		"prefix":"ganttlink",
-		"body":[
-			"\\ganttlink{${1:start element name}}{${2:end element name}}"
-		]
-	},
-
-
-	"newganttlinktype{}{}":{
-		"prefix":"newganttlinktype",
-		"body":[
-			"\\newganttlinktype{${1:type%specialDef}}{${2:TikZ code}}"
-		]
-	},
-
-
-	"ganttsetstartanchor{}":{
-		"prefix":"ganttsetstartanchor",
-		"body":[
-			"\\ganttsetstartanchor{${1:anchor}}"
-		]
-	},
-
-
-	"ganttsetendanchor{}":{
-		"prefix":"ganttsetendanchor",
-		"body":[
-			"\\ganttsetendanchor{${1:anchor}}"
-		]
-	},
-
-
-	"xLeft":{
-		"prefix":"xLeft",
-		"body":[
-			"\\xLeft"
-		]
-	},
-
-
-	"yUpper":{
-		"prefix":"yUpper",
-		"body":[
-			"\\yUpper"
-		]
-	},
-
-
-	"xRight":{
-		"prefix":"xRight",
-		"body":[
-			"\\xRight"
-		]
-	},
-
-
-	"yLower":{
-		"prefix":"yLower",
-		"body":[
-			"\\yLower"
-		]
-	},
-
-
-	"ganttlinklabel":{
-		"prefix":"ganttlinklabel",
-		"body":[
-			"\\ganttlinklabel"
-		]
-	},
-
-
-	"ganttvalueof{}":{
-		"prefix":"ganttvalueof",
-		"body":[
-			"\\ganttvalueof{${1:key%plain}}"
-		]
-	},
-
-
-	"newganttlinktypealias{}{}":{
-		"prefix":"newganttlinktypealias",
-		"body":[
-			"\\newganttlinktypealias{${1:new type%specialDef}}{${2:existing type}}"
-		]
-	},
-
-
-	"setganttlinklabel{}{}":{
-		"prefix":"setganttlinklabel",
-		"body":[
-			"\\setganttlinklabel{${1:type%keyvals}}{${2:label%text}}"
-		]
-	},
-
-
-	"endofdecade":{
-		"prefix":"endofdecade",
-		"body":[
-			"\\endofdecade"
-		]
-	},
-
-
-	"querydecade":{
-		"prefix":"querydecade",
-		"body":[
-			"\\querydecade"
-		]
-	},
-
-
-	"gantttitlecalendar*{}{}{}":{
-		"prefix":"*gantttitlecalendar",
-		"body":[
-			"\\gantttitlecalendar*{${1:start tss}}{${2:end tss}}{${3:calendar lines}}"
-		]
-	},
-
-
-	"gantttitlecalendar*[]{}{}{}":{
-		"prefix":"*gantttitlecalendar",
-		"body":[
-			"\\gantttitlecalendar*[${4:options%keyvals}]{${1:start tss}}{${2:end tss}}{${3:calendar lines}}"
-		]
-	},
-
-
-	"newganttchartelement*{}{}":{
-		"prefix":"*newganttchartelement",
-		"body":[
-			"\\newganttchartelement*{${1:name}}{${2:new default keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +32,26 @@
 		"prefix":"ganttnewline",
 		"body":[
 			"\\ganttnewline[${1:TikZ options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttalignnewline":{
+		"prefix":"ganttalignnewline",
+		"body":[
+			"\\ganttalignnewline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gantttitle{}{}":{
+		"prefix":"gantttitle",
+		"body":[
+			"\\gantttitle{${1:label}}{${2:number of time slots}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +59,17 @@
 		"prefix":"gantttitle",
 		"body":[
 			"\\gantttitle[${3:options%keyvals}]{${1:label}}{${2:number of time slots}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gantttitlelist{}{}":{
+		"prefix":"gantttitlelist",
+		"body":[
+			"\\gantttitlelist{${1:pgffor list}}{${2:length of each element}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +77,17 @@
 		"prefix":"gantttitlelist",
 		"body":[
 			"\\gantttitlelist[${3:options%keyvals}]{${1:pgffor list}}{${2:length of each element}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gantttitlecalendar{}":{
+		"prefix":"gantttitlecalendar",
+		"body":[
+			"\\gantttitlecalendar{${1:calendar lines}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +95,71 @@
 		"prefix":"gantttitlecalendar",
 		"body":[
 			"\\gantttitlecalendar[${2:options%keyvals}]{${1:calendar lines}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gantttitlecalendar*{}{}{}":{
+		"prefix":"*gantttitlecalendar",
+		"body":[
+			"\\gantttitlecalendar*{${1:start tss}}{${2:end tss}}{${3:calendar lines}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"gantttitlecalendar*[]{}{}{}":{
+		"prefix":"*gantttitlecalendar",
+		"body":[
+			"\\gantttitlecalendar*[${4:options%keyvals}]{${1:start tss}}{${2:end tss}}{${3:calendar lines}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"currentweek":{
+		"prefix":"currentweek",
+		"body":[
+			"\\currentweek"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startyear":{
+		"prefix":"startyear",
+		"body":[
+			"\\startyear"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startmonth":{
+		"prefix":"startmonth",
+		"body":[
+			"\\startmonth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"startday":{
+		"prefix":"startday",
+		"body":[
+			"\\startday"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttvrule{}{}":{
+		"prefix":"ganttvrule",
+		"body":[
+			"\\ganttvrule{${1:label%text}}{${2:tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +167,17 @@
 		"prefix":"ganttvrule",
 		"body":[
 			"\\ganttvrule[${3:options%keyvals}]{${1:label%text}}{${2:tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttbar{}{}{}":{
+		"prefix":"ganttbar",
+		"body":[
+			"\\ganttbar{${1:label%text}}{${2:start tss}}{${3:end tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +185,17 @@
 		"prefix":"ganttbar",
 		"body":[
 			"\\ganttbar[${4:options%keyvals}]{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttgroup{}{}{}":{
+		"prefix":"ganttgroup",
+		"body":[
+			"\\ganttgroup{${1:label%text}}{${2:start tss}}{${3:end tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +203,17 @@
 		"prefix":"ganttgroup",
 		"body":[
 			"\\ganttgroup[${4:options%keyvals}]{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttmilestone{}{}":{
+		"prefix":"ganttmilestone",
+		"body":[
+			"\\ganttmilestone{${1:label%text}}{${2:tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +221,17 @@
 		"prefix":"ganttmilestone",
 		"body":[
 			"\\ganttmilestone[${3:options%keyvals}]{${1:label%text}}{${2:tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttlinkedbar{}{}{}":{
+		"prefix":"ganttlinkedbar",
+		"body":[
+			"\\ganttlinkedbar{${1:label%text}}{${2:start tss}}{${3:end tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +239,17 @@
 		"prefix":"ganttlinkedbar",
 		"body":[
 			"\\ganttlinkedbar[${4:options%keyvals}]{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttlinkedgroup{}{}{}":{
+		"prefix":"ganttlinkedgroup",
+		"body":[
+			"\\ganttlinkedgroup{${1:label%text}}{${2:start tss}}{${3:end tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +257,17 @@
 		"prefix":"ganttlinkedgroup",
 		"body":[
 			"\\ganttlinkedgroup[${4:options%keyvals}]{${1:label%text}}{${2:start tss}}{${3:end tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ganttlinkedmilestone{}{}":{
+		"prefix":"ganttlinkedmilestone",
+		"body":[
+			"\\ganttlinkedmilestone{${1:label%text}}{${2:tss}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,7 +275,35 @@
 		"prefix":"ganttlinkedmilestone",
 		"body":[
 			"\\ganttlinkedmilestone[${3:options%keyvals}]{${1:label%text}}{${2:tss}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newganttchartelement{}{}":{
+		"prefix":"newganttchartelement",
+		"body":[
+			"\\newganttchartelement{${1:name}}{${2:new default keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newganttchartelement*{}{}":{
+		"prefix":"*newganttchartelement",
+		"body":[
+			"\\newganttchartelement*{${1:name}}{${2:new default keyvals}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ganttlink{}{}":{
+		"prefix":"ganttlink",
+		"body":[
+			"\\ganttlink{${1:start element name}}{${2:end element name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,26 +311,146 @@
 		"prefix":"ganttlink",
 		"body":[
 			"\\ganttlink[${3:options%keyvals}]{${1:start element name}}{${2:end element name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"ganttchart":{
-		"prefix":"ganttchart",
+	"newganttlinktype{}{}":{
+		"prefix":"newganttlinktype",
 		"body":[
-			"\\begin{ganttchart}",
-				"\t$1",
-			"\\end{ganttchart}"
-		]
+			"\\newganttlinktype{${1:type%specialDef}}{${2:TikZ code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"ganttchart":{
+	"ganttsetstartanchor{}":{
+		"prefix":"ganttsetstartanchor",
+		"body":[
+			"\\ganttsetstartanchor{${1:anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttsetendanchor{}":{
+		"prefix":"ganttsetendanchor",
+		"body":[
+			"\\ganttsetendanchor{${1:anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xLeft":{
+		"prefix":"xLeft",
+		"body":[
+			"\\xLeft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yUpper":{
+		"prefix":"yUpper",
+		"body":[
+			"\\yUpper"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xRight":{
+		"prefix":"xRight",
+		"body":[
+			"\\xRight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yLower":{
+		"prefix":"yLower",
+		"body":[
+			"\\yLower"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttlinklabel":{
+		"prefix":"ganttlinklabel",
+		"body":[
+			"\\ganttlinklabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttvalueof{}":{
+		"prefix":"ganttvalueof",
+		"body":[
+			"\\ganttvalueof{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"newganttlinktypealias{}{}":{
+		"prefix":"newganttlinktypealias",
+		"body":[
+			"\\newganttlinktypealias{${1:new type%specialDef}}{${2:existing type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setganttlinklabel{}{}":{
+		"prefix":"setganttlinklabel",
+		"body":[
+			"\\setganttlinklabel{${1:type%keyvals}}{${2:label%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endofdecade":{
+		"prefix":"endofdecade",
+		"body":[
+			"\\endofdecade"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"querydecade":{
+		"prefix":"querydecade",
+		"body":[
+			"\\querydecade"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttchart{}{}":{
 		"prefix":"ganttchart",
 		"body":[
 			"\\begin{ganttchart}",
-				"\t$1",
+				"\t{${1:start tss}}{${2:end tss}}",
 			"\\end{ganttchart}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ganttchart[]{}{}":{
+		"prefix":"ganttchart",
+		"body":[
+			"\\begin{ganttchart}",
+				"\t[${3:options%keyvals}]{${1:start tss}}{${2:end tss}}",
+			"\\end{ganttchart}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

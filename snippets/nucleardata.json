@@ -5,7 +5,8 @@
 		"prefix":"nucsymbol",
 		"body":[
 			"\\nucsymbol{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"nucname",
 		"body":[
 			"\\nucname{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"nucName",
 		"body":[
 			"\\nucName{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"nucz",
 		"body":[
 			"\\nucz{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,183 +41,8 @@
 		"prefix":"nuchalflife",
 		"body":[
 			"\\nuchalflife{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nuchalfvalue{}{}":{
-		"prefix":"nuchalfvalue",
-		"body":[
-			"\\nuchalfvalue{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nuchalfunit{}{}":{
-		"prefix":"nuchalfunit",
-		"body":[
-			"\\nuchalfunit{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucspin{}{}":{
-		"prefix":"nucspin",
-		"body":[
-			"\\nucspin{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucamassu{}{}":{
-		"prefix":"nucamassu",
-		"body":[
-			"\\nucamassu{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucamassmev{}{}":{
-		"prefix":"nucamassmev",
-		"body":[
-			"\\nucamassmev{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucamasskev{}{}":{
-		"prefix":"nucamasskev",
-		"body":[
-			"\\nucamasskev{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nuclearmassu{}{}":{
-		"prefix":"nuclearmassu",
-		"body":[
-			"\\nuclearmassu{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nuclearmassmev{}{}":{
-		"prefix":"nuclearmassmev",
-		"body":[
-			"\\nuclearmassmev{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nuclearmasskev{}{}":{
-		"prefix":"nuclearmasskev",
-		"body":[
-			"\\nuclearmasskev{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucexcess{}{}":{
-		"prefix":"nucexcess",
-		"body":[
-			"\\nucexcess{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucbea{}{}":{
-		"prefix":"nucbea",
-		"body":[
-			"\\nucbea{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucisotopes{}":{
-		"prefix":"nucisotopes",
-		"body":[
-			"\\nucisotopes{${1:name}}"
-		]
-	},
-
-
-	"nucQalpha{}{}":{
-		"prefix":"nucQalpha",
-		"body":[
-			"\\nucQalpha{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucQbeta{}{}":{
-		"prefix":"nucQbeta",
-		"body":[
-			"\\nucQbeta{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucQposi{}{}":{
-		"prefix":"nucQposi",
-		"body":[
-			"\\nucQposi{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucQec{}{}":{
-		"prefix":"nucQec",
-		"body":[
-			"\\nucQec{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucisalpha{}{}":{
-		"prefix":"nucisalpha",
-		"body":[
-			"\\nucisalpha{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucisbeta{}{}":{
-		"prefix":"nucisbeta",
-		"body":[
-			"\\nucisbeta{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucisposi{}{}":{
-		"prefix":"nucisposi",
-		"body":[
-			"\\nucisposi{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucisec{}{}":{
-		"prefix":"nucisec",
-		"body":[
-			"\\nucisec{${1:name}}{${2:mass number}}"
-		]
-	},
-
-
-	"nucAran{}":{
-		"prefix":"nucAran",
-		"body":[
-			"\\nucAran{${1:name}}"
-		]
-	},
-
-
-	"nucrandom{}":{
-		"prefix":"nucrandom",
-		"body":[
-			"\\nucrandom{${1:list size}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +50,17 @@
 		"prefix":"nuchalflife",
 		"body":[
 			"\\nuchalflife[${3:unit%keyvals}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuchalfvalue{}{}":{
+		"prefix":"nuchalfvalue",
+		"body":[
+			"\\nuchalfvalue{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +68,17 @@
 		"prefix":"nuchalfvalue",
 		"body":[
 			"\\nuchalfvalue[${3:unit%keyvals}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuchalfunit{}{}":{
+		"prefix":"nuchalfunit",
+		"body":[
+			"\\nuchalfunit{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +86,26 @@
 		"prefix":"nuchalfunit",
 		"body":[
 			"\\nuchalfunit[${3:unit%keyvals}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucspin{}{}":{
+		"prefix":"nucspin",
+		"body":[
+			"\\nucspin{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucamassu{}{}":{
+		"prefix":"nucamassu",
+		"body":[
+			"\\nucamassu{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +113,17 @@
 		"prefix":"nucamassu",
 		"body":[
 			"\\nucamassu[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucamassmev{}{}":{
+		"prefix":"nucamassmev",
+		"body":[
+			"\\nucamassmev{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +131,17 @@
 		"prefix":"nucamassmev",
 		"body":[
 			"\\nucamassmev[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucamasskev{}{}":{
+		"prefix":"nucamasskev",
+		"body":[
+			"\\nucamasskev{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +149,17 @@
 		"prefix":"nucamasskev",
 		"body":[
 			"\\nucamasskev[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuclearmassu{}{}":{
+		"prefix":"nuclearmassu",
+		"body":[
+			"\\nuclearmassu{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +167,17 @@
 		"prefix":"nuclearmassu",
 		"body":[
 			"\\nuclearmassu[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuclearmassmev{}{}":{
+		"prefix":"nuclearmassmev",
+		"body":[
+			"\\nuclearmassmev{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +185,17 @@
 		"prefix":"nuclearmassmev",
 		"body":[
 			"\\nuclearmassmev[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nuclearmasskev{}{}":{
+		"prefix":"nuclearmasskev",
+		"body":[
+			"\\nuclearmasskev{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +203,17 @@
 		"prefix":"nuclearmasskev",
 		"body":[
 			"\\nuclearmasskev[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucexcess{}{}":{
+		"prefix":"nucexcess",
+		"body":[
+			"\\nucexcess{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +221,17 @@
 		"prefix":"nucexcess",
 		"body":[
 			"\\nucexcess[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucbea{}{}":{
+		"prefix":"nucbea",
+		"body":[
+			"\\nucbea{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +239,26 @@
 		"prefix":"nucbea",
 		"body":[
 			"\\nucbea[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucisotopes{}":{
+		"prefix":"nucisotopes",
+		"body":[
+			"\\nucisotopes{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucQalpha{}{}":{
+		"prefix":"nucQalpha",
+		"body":[
+			"\\nucQalpha{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +266,17 @@
 		"prefix":"nucQalpha",
 		"body":[
 			"\\nucQalpha[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucQbeta{}{}":{
+		"prefix":"nucQbeta",
+		"body":[
+			"\\nucQbeta{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +284,17 @@
 		"prefix":"nucQbeta",
 		"body":[
 			"\\nucQbeta[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucQposi{}{}":{
+		"prefix":"nucQposi",
+		"body":[
+			"\\nucQposi{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +302,17 @@
 		"prefix":"nucQposi",
 		"body":[
 			"\\nucQposi[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucQec{}{}":{
+		"prefix":"nucQec",
+		"body":[
+			"\\nucQec{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +320,62 @@
 		"prefix":"nucQec",
 		"body":[
 			"\\nucQec[${3:rnd}]{${1:name}}{${2:mass number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nucisalpha{}{}":{
+		"prefix":"nucisalpha",
+		"body":[
+			"\\nucisalpha{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucisbeta{}{}":{
+		"prefix":"nucisbeta",
+		"body":[
+			"\\nucisbeta{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucisposi{}{}":{
+		"prefix":"nucisposi",
+		"body":[
+			"\\nucisposi{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucisec{}{}":{
+		"prefix":"nucisec",
+		"body":[
+			"\\nucisec{${1:name}}{${2:mass number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucAran{}":{
+		"prefix":"nucAran",
+		"body":[
+			"\\nucAran{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nucrandom{}":{
+		"prefix":"nucrandom",
+		"body":[
+			"\\nucrandom{${1:list size}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,6 +383,7 @@
 		"prefix":"nucrandom",
 		"body":[
 			"\\nucrandom[${2:0 or 1}]{${1:list size}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

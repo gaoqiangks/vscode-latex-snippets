@@ -1,1147 +1,21 @@
 {
 
 
-	"NewDocumentCounter{}":{
-		"prefix":"NewDocumentCounter",
-		"body":[
-			"\\NewDocumentCounter{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"DeclareDocumentCounter{}":{
-		"prefix":"DeclareDocumentCounter",
-		"body":[
-			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"SetDocumentCounter{}{}":{
-		"prefix":"SetDocumentCounter",
-		"body":[
-			"\\SetDocumentCounter{${1:counter}}{${2:value}}"
-		]
-	},
-
-
-	"StepDownCounter{}":{
-		"prefix":"StepDownCounter",
-		"body":[
-			"\\StepDownCounter{${1:counter}}"
-		]
-	},
-
-
-	"SubtractFromCounter{}{}":{
-		"prefix":"SubtractFromCounter",
-		"body":[
-			"\\SubtractFromCounter{${1:counter}}{${2:delta value}}"
-		]
-	},
-
-
-	"CopyDocumentCounters{}{}":{
-		"prefix":"CopyDocumentCounters",
-		"body":[
-			"\\CopyDocumentCounters{${1:source counter}}{${2:target counter}}"
-		]
-	},
-
-
-	"SwapDocumentCounters{}{}":{
-		"prefix":"SwapDocumentCounters",
-		"body":[
-			"\\SwapDocumentCounters{${1:counter1}}{${2:counter2}}"
-		]
-	},
-
-
-	"SyncCounters{}":{
-		"prefix":"SyncCounters",
-		"body":[
-			"\\SyncCounters{${1:driver counter}}"
-		]
-	},
-
-
-	"IfIsDocumentCounterTF{}{}{}":{
-		"prefix":"IfIsDocumentCounterTF",
-		"body":[
-			"\\IfIsDocumentCounterTF{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfIsDocumentCounterT{}{}":{
-		"prefix":"IfIsDocumentCounterT",
-		"body":[
-			"\\IfIsDocumentCounterT{${1:name}}{${2:true}}"
-		]
-	},
-
-
-	"IfIsDocumentCounterF{}{}":{
-		"prefix":"IfIsDocumentCounterF",
-		"body":[
-			"\\IfIsDocumentCounterF{${1:name}}{${2:false}}"
-		]
-	},
-
-
-	"LastAddedToCounter":{
-		"prefix":"LastAddedToCounter",
-		"body":[
-			"\\LastAddedToCounter"
-		]
-	},
-
-
-	"LastSteppedCounter":{
-		"prefix":"LastSteppedCounter",
-		"body":[
-			"\\LastSteppedCounter"
-		]
-	},
-
-
-	"LastRefSteppedCounter":{
-		"prefix":"LastRefSteppedCounter",
-		"body":[
-			"\\LastRefSteppedCounter"
-		]
-	},
-
-
-	"LastSetCounter":{
-		"prefix":"LastSetCounter",
-		"body":[
-			"\\LastSetCounter"
-		]
-	},
-
-
-	"LastCounterValue":{
-		"prefix":"LastCounterValue",
-		"body":[
-			"\\LastCounterValue"
-		]
-	},
-
-
-	"RemoveFromReset{}{}":{
-		"prefix":"RemoveFromReset",
-		"body":[
-			"\\RemoveFromReset{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"RemoveFromFullReset{}{}":{
-		"prefix":"RemoveFromFullReset",
-		"body":[
-			"\\RemoveFromFullReset{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"ClearCounterResetList{}":{
-		"prefix":"ClearCounterResetList",
-		"body":[
-			"\\ClearCounterResetList{${1:driver counter}}"
-		]
-	},
-
-
-	"AddToReset{}{}":{
-		"prefix":"AddToReset",
-		"body":[
-			"\\AddToReset{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"countersresetlistcount{}":{
-		"prefix":"countersresetlistcount",
-		"body":[
-			"\\countersresetlistcount{${1:counter}}"
-		]
-	},
-
-
-	"getresetlistcount":{
-		"prefix":"getresetlistcount",
-		"body":[
-			"\\getresetlistcount"
-		]
-	},
-
-
-	"CounterFullResetList{}":{
-		"prefix":"CounterFullResetList",
-		"body":[
-			"\\CounterFullResetList{${1:counter}}"
-		]
-	},
-
-
-	"IfInResetListTF{}{}{}{}":{
-		"prefix":"IfInResetListTF",
-		"body":[
-			"\\IfInResetListTF{${1:resetting counter}}{${2:counter}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"IfInResetListT{}{}{}":{
-		"prefix":"IfInResetListT",
-		"body":[
-			"\\IfInResetListT{${1:resetting counter}}{${2:counter}}{${3:true}}"
-		]
-	},
-
-
-	"IfInResetListF{}{}{}":{
-		"prefix":"IfInResetListF",
-		"body":[
-			"\\IfInResetListF{${1:resetting counter}}{${2:counter}}{${3:false}}"
-		]
-	},
-
-
-	"DisplayResetList{}":{
-		"prefix":"DisplayResetList",
-		"body":[
-			"\\DisplayResetList{${1:resetting counter}}"
-		]
-	},
-
-
-	"ShowResetList{}":{
-		"prefix":"ShowResetList",
-		"body":[
-			"\\ShowResetList{${1:resetting counter}}"
-		]
-	},
-
-
-	"GetAllResetLists":{
-		"prefix":"GetAllResetLists",
-		"body":[
-			"\\GetAllResetLists"
-		]
-	},
-
-
-	"GetParentCounter{}":{
-		"prefix":"GetParentCounter",
-		"body":[
-			"\\GetParentCounter{${1:counter}}"
-		]
-	},
-
-
-	"LoopAddtoCounters{}{}":{
-		"prefix":"LoopAddtoCounters",
-		"body":[
-			"\\LoopAddtoCounters{${1:counter1,counter2,...}}{${2:increment}}"
-		]
-	},
-
-
-	"LoopResetCounters{}":{
-		"prefix":"LoopResetCounters",
-		"body":[
-			"\\LoopResetCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"LoopRefstepCounters{}":{
-		"prefix":"LoopRefstepCounters",
-		"body":[
-			"\\LoopRefstepCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"LoopSetCounters{}{}":{
-		"prefix":"LoopSetCounters",
-		"body":[
-			"\\LoopSetCounters{${1:counter1,counter2,...}}{${2:value}}"
-		]
-	},
-
-
-	"LoopStepCounters{}":{
-		"prefix":"LoopStepCounters",
-		"body":[
-			"\\LoopStepCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"LoopCountersFunction{}{}":{
-		"prefix":"LoopCountersFunction",
-		"body":[
-			"\\LoopCountersFunction{${1:counter1,counter2,...}}{${2:macro}}"
-		]
-	},
-
-
-	"LoopCounterResetList{}{}":{
-		"prefix":"LoopCounterResetList",
-		"body":[
-			"\\LoopCounterResetList{${1:counter}}{${2:macro}}"
-		]
-	},
-
-
-	"LoopFullCounterResetList{}{}":{
-		"prefix":"LoopFullCounterResetList",
-		"body":[
-			"\\LoopFullCounterResetList{${1:counter}}{${2:macro}}"
-		]
-	},
-
-
-	"CounterWithin{}{}":{
-		"prefix":"CounterWithin",
-		"body":[
-			"\\CounterWithin{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"CounterWithout{}{}":{
-		"prefix":"CounterWithout",
-		"body":[
-			"\\CounterWithout{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"BinaryValue{}":{
-		"prefix":"BinaryValue",
-		"body":[
-			"\\BinaryValue{${1:counter}}"
-		]
-	},
-
-
-	"hexValue{}":{
-		"prefix":"hexValue",
-		"body":[
-			"\\hexValue{${1:counter}}"
-		]
-	},
-
-
-	"HexValue{}":{
-		"prefix":"HexValue",
-		"body":[
-			"\\HexValue{${1:counter}}"
-		]
-	},
-
-
-	"OctalValue{}":{
-		"prefix":"OctalValue",
-		"body":[
-			"\\OctalValue{${1:counter}}"
-		]
-	},
-
-
-	"xalphalph{}":{
-		"prefix":"xalphalph",
-		"body":[
-			"\\xalphalph{${1:counter}}"
-		]
-	},
-
-
-	"xAlphAlph{}":{
-		"prefix":"xAlphAlph",
-		"body":[
-			"\\xAlphAlph{${1:counter}}"
-		]
-	},
-
-
-	"CounterFormat{}":{
-		"prefix":"CounterFormat",
-		"body":[
-			"\\CounterFormat{${1:counter1!format1,counter2!format2,...}}"
-		]
-	},
-
-
-	"StoreCounterFormats{}":{
-		"prefix":"StoreCounterFormats",
-		"body":[
-			"\\StoreCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
-	},
-
-
-	"AddCounterFormats{}":{
-		"prefix":"AddCounterFormats",
-		"body":[
-			"\\AddCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
-	},
-
-
-	"RemoveCounterFormats{}":{
-		"prefix":"RemoveCounterFormats",
-		"body":[
-			"\\RemoveCounterFormats{${1:shorthand1,shorthand2,...}}"
-		]
-	},
-
-
-	"DeclareAssociatedCounters{}{}":{
-		"prefix":"DeclareAssociatedCounters",
-		"body":[
-			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"AddAssociatedCounters{}{}":{
-		"prefix":"AddAssociatedCounters",
-		"body":[
-			"\\AddAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"RemoveAssociatedCounter{}{}":{
-		"prefix":"RemoveAssociatedCounter",
-		"body":[
-			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:assoc counter}}"
-		]
-	},
-
-
-	"RemoveAssociatedCounters{}{}":{
-		"prefix":"RemoveAssociatedCounters",
-		"body":[
-			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"ClearAssociatedCounters{}":{
-		"prefix":"ClearAssociatedCounters",
-		"body":[
-			"\\ClearAssociatedCounters{${1:driver counter}}"
-		]
-	},
-
-
-	"DeclareTotalAssociatedCounters{}{}":{
-		"prefix":"DeclareTotalAssociatedCounters",
-		"body":[
-			"\\DeclareTotalAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
-		]
-	},
-
-
-	"AddDriverCounter{}":{
-		"prefix":"AddDriverCounter",
-		"body":[
-			"\\AddDriverCounter{${1:driver counter}}"
-		]
-	},
-
-
-	"RemoveDriverCounter{}":{
-		"prefix":"RemoveDriverCounter",
-		"body":[
-			"\\RemoveDriverCounter{${1:driver counter}}"
-		]
-	},
-
-
-	"ClearDriverCounters":{
-		"prefix":"ClearDriverCounters",
-		"body":[
-			"\\ClearDriverCounters"
-		]
-	},
-
-
-	"IsAssociatedToCounter{}{}{}{}":{
-		"prefix":"IsAssociatedToCounter",
-		"body":[
-			"\\IsAssociatedToCounter{${1:driver counter}}{${2:assoc counter}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"GetDriverCounter{}":{
-		"prefix":"GetDriverCounter",
-		"body":[
-			"\\GetDriverCounter{${1:counter}}"
-		]
-	},
-
-
-	"IsAssociatedCounter{}{}{}":{
-		"prefix":"IsAssociatedCounter",
-		"body":[
-			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsDriverCounter{}{}{}":{
-		"prefix":"IsDriverCounter",
-		"body":[
-			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"DeclareCoupledCounters{}":{
-		"prefix":"DeclareCoupledCounters",
-		"body":[
-			"\\DeclareCoupledCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"DeclareCoupledCountersGroup{}":{
-		"prefix":"DeclareCoupledCountersGroup",
-		"body":[
-			"\\DeclareCoupledCountersGroup{${1:group name}}"
-		]
-	},
-
-
-	"RemoveCoupledCounters{}":{
-		"prefix":"RemoveCoupledCounters",
-		"body":[
-			"\\RemoveCoupledCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"AddCoupledCounters{}":{
-		"prefix":"AddCoupledCounters",
-		"body":[
-			"\\AddCoupledCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"ClearCoupledCounters{}":{
-		"prefix":"ClearCoupledCounters",
-		"body":[
-			"\\ClearCoupledCounters{${1:options%keyvals}}"
-		]
-	},
-
-
-	"ClearAllCoupledCounters":{
-		"prefix":"ClearAllCoupledCounters",
-		"body":[
-			"\\ClearAllCoupledCounters"
-		]
-	},
-
-
-	"IsCoupledCounterTF{}{}{}":{
-		"prefix":"IsCoupledCounterTF",
-		"body":[
-			"\\IsCoupledCounterTF{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsCoupledCounterT{}{}":{
-		"prefix":"IsCoupledCounterT",
-		"body":[
-			"\\IsCoupledCounterT{${1:counter}}{${2:true}}"
-		]
-	},
-
-
-	"IsCoupledCounterF{}{}":{
-		"prefix":"IsCoupledCounterF",
-		"body":[
-			"\\IsCoupledCounterF{${1:counter}}{${2:false}}"
-		]
-	},
-
-
-	"DeclarePeriodicCounter{}{}":{
-		"prefix":"DeclarePeriodicCounter",
-		"body":[
-			"\\DeclarePeriodicCounter{${1:counter}}{${2:threshold value}}"
-		]
-	},
-
-
-	"AddPeriodicCounter{}{}":{
-		"prefix":"AddPeriodicCounter",
-		"body":[
-			"\\AddPeriodicCounter{${1:counter}}{${2:threshold value}}"
-		]
-	},
-
-
-	"RemovePeriodicCounter{}":{
-		"prefix":"RemovePeriodicCounter",
-		"body":[
-			"\\RemovePeriodicCounter{${1:counter}}"
-		]
-	},
-
-
-	"RemovePeriodicCounter{}":{
-		"prefix":"RemovePeriodicCounter",
-		"body":[
-			"\\RemovePeriodicCounter{${1:counter}}"
-		]
-	},
-
-
-	"RemoveAllPeriodicCounters":{
-		"prefix":"RemoveAllPeriodicCounters",
-		"body":[
-			"\\RemoveAllPeriodicCounters"
-		]
-	},
-
-
-	"ChangePeriodicCounterCondition{}{}":{
-		"prefix":"ChangePeriodicCounterCondition",
-		"body":[
-			"\\ChangePeriodicCounterCondition{${1:counter}}{${2:threshold value}}"
-		]
-	},
-
-
-	"IsPeriodicCounterTF{}{}{}":{
-		"prefix":"IsPeriodicCounterTF",
-		"body":[
-			"\\IsPeriodicCounterTF{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsPeriodicCounterT{}{}":{
-		"prefix":"IsPeriodicCounterT",
-		"body":[
-			"\\IsPeriodicCounterT{${1:counter}}{${2:true}}"
-		]
-	},
-
-
-	"IsPeriodicCounterF{}{}":{
-		"prefix":"IsPeriodicCounterF",
-		"body":[
-			"\\IsPeriodicCounterF{${1:counter}}{${2:false}}"
-		]
-	},
-
-
-	"SuspendCounters{}":{
-		"prefix":"SuspendCounters",
-		"body":[
-			"\\SuspendCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"CascadeSuspendCounters{}":{
-		"prefix":"CascadeSuspendCounters",
-		"body":[
-			"\\CascadeSuspendCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"ResumeSuspendedCounters{}":{
-		"prefix":"ResumeSuspendedCounters",
-		"body":[
-			"\\ResumeSuspendedCounters{${1:counter1,counter2,...}}"
-		]
-	},
-
-
-	"ResumeAllSuspendedCounters":{
-		"prefix":"ResumeAllSuspendedCounters",
-		"body":[
-			"\\ResumeAllSuspendedCounters"
-		]
-	},
-
-
-	"IsSuspendedCounter{}{}{}":{
-		"prefix":"IsSuspendedCounter",
-		"body":[
-			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"RegisterTotalDocumentCounter{}":{
-		"prefix":"RegisterTotalDocumentCounter",
-		"body":[
-			"\\RegisterTotalDocumentCounter{${1:total counter}}"
-		]
-	},
-
-
-	"TotalCounterInternalName{}":{
-		"prefix":"TotalCounterInternalName",
-		"body":[
-			"\\TotalCounterInternalName{${1:counter}}"
-		]
-	},
-
-
-	"TotalCounterInternalNameExp{}":{
-		"prefix":"TotalCounterInternalNameExp",
-		"body":[
-			"\\TotalCounterInternalNameExp{${1:counter}}"
-		]
-	},
-
-
-	"TotalValue{}":{
-		"prefix":"TotalValue",
-		"body":[
-			"\\TotalValue{${1:counter}}"
-		]
-	},
-
-
-	"IsTotalCounterTF{}{}{}":{
-		"prefix":"IsTotalCounterTF",
-		"body":[
-			"\\IsTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsTotalCounterT{}{}":{
-		"prefix":"IsTotalCounterT",
-		"body":[
-			"\\IsTotalCounterT{${1:counter}}{${2:true}}"
-		]
-	},
-
-
-	"IsTotalCounterF{}{}":{
-		"prefix":"IsTotalCounterF",
-		"body":[
-			"\\IsTotalCounterF{${1:counter}}{${2:false}}"
-		]
-	},
-
-
-	"NewTotalDocumentCounter{}":{
-		"prefix":"NewTotalDocumentCounter",
-		"body":[
-			"\\NewTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
-		]
-	},
-
-
-	"DeclareTotalDocumentCounter{}":{
-		"prefix":"DeclareTotalDocumentCounter",
-		"body":[
-			"\\DeclareTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
-		]
-	},
-
-
-	"IsSuperTotalCounterTF{}{}{}":{
-		"prefix":"IsSuperTotalCounterTF",
-		"body":[
-			"\\IsSuperTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsSuperTotalCounterT{}{}":{
-		"prefix":"IsSuperTotalCounterT",
-		"body":[
-			"\\IsSuperTotalCounterT{${1:counter}}{${2:true}}"
-		]
-	},
-
-
-	"IsSuperTotalCounterF{}{}":{
-		"prefix":"IsSuperTotalCounterF",
-		"body":[
-			"\\IsSuperTotalCounterF{${1:counter}}{${2:false}}"
-		]
-	},
-
-
-	"LaTeXLabel{}":{
-		"prefix":"LaTeXLabel",
-		"body":[
-			"\\LaTeXLabel{${1:key}}"
-		]
-	},
-
-
-	"RegisterPreLabelHook{}":{
-		"prefix":"RegisterPreLabelHook",
-		"body":[
-			"\\RegisterPreLabelHook{${1:cmd1,cmd2,...}}"
-		]
-	},
-
-
-	"RegisterPostLabelHook{}":{
-		"prefix":"RegisterPostLabelHook",
-		"body":[
-			"\\RegisterPostLabelHook{${1:cmd1,cmd2,...}}"
-		]
-	},
-
-
-	"ClearPostLabelHook":{
-		"prefix":"ClearPostLabelHook",
-		"body":[
-			"\\ClearPostLabelHook"
-		]
-	},
-
-
-	"ClearPreLabelHook":{
-		"prefix":"ClearPreLabelHook",
-		"body":[
-			"\\ClearPreLabelHook"
-		]
-	},
-
-
-	"AddLanguageMappings{}{}":{
-		"prefix":"AddLanguageMappings",
-		"body":[
-			"\\AddLanguageMappings{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"AssociatedCounterInfoColor":{
-		"prefix":"AssociatedCounterInfoColor",
-		"body":[
-			"\\AssociatedCounterInfoColor"
-		]
-	},
-
-
-	"ClearCounterFormats":{
-		"prefix":"ClearCounterFormats",
-		"body":[
-			"\\ClearCounterFormats"
-		]
-	},
-
-
-	"DeclareBackupCountersGroupName{}":{
-		"prefix":"DeclareBackupCountersGroupName",
-		"body":[
-			"\\DeclareBackupCountersGroupName{${1:arg}}"
-		]
-	},
-
-
-	"DeclareLanguageMappings{}{}":{
-		"prefix":"DeclareLanguageMappings",
-		"body":[
-			"\\DeclareLanguageMappings{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"DeclareLanguageMap{}":{
-		"prefix":"DeclareLanguageMap",
-		"body":[
-			"\\DeclareLanguageMap{${1:arg}}"
-		]
-	},
-
-
-	"DriverCounterInfoColor":{
-		"prefix":"DriverCounterInfoColor",
-		"body":[
-			"\\DriverCounterInfoColor"
-		]
-	},
-
-
-	"EnableNumberofrunsTF{}{}":{
-		"prefix":"EnableNumberofrunsTF",
-		"body":[
-			"\\EnableNumberofrunsTF{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"GeneralCounterInfoColor":{
-		"prefix":"GeneralCounterInfoColor",
-		"body":[
-			"\\GeneralCounterInfoColor"
-		]
-	},
-
-
-	"GetParentCounterChain{}":{
-		"prefix":"GetParentCounterChain",
-		"body":[
-			"\\GetParentCounterChain{${1:arg}}"
-		]
-	},
-
-
-	"IfExistsDriverCounterList{}{}{}":{
-		"prefix":"IfExistsDriverCounterList",
-		"body":[
-			"\\IfExistsDriverCounterList{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsBackupCounterF{}{}":{
-		"prefix":"IsBackupCounterF",
-		"body":[
-			"\\IsBackupCounterF{${1:name}}{${2:false}}"
-		]
-	},
-
-
-	"IsBackupCounterGroupF{}{}":{
-		"prefix":"IsBackupCounterGroupF",
-		"body":[
-			"\\IsBackupCounterGroupF{${1:name}}{${2:false}}"
-		]
-	},
-
-
-	"IsBackupCounterGroupTF{}{}{}":{
-		"prefix":"IsBackupCounterGroupTF",
-		"body":[
-			"\\IsBackupCounterGroupTF{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsBackupCounterGroupT{}{}":{
-		"prefix":"IsBackupCounterGroupT",
-		"body":[
-			"\\IsBackupCounterGroupT{${1:name}}{${2:true}}"
-		]
-	},
-
-
-	"IsBackupCounterTF{}{}{}":{
-		"prefix":"IsBackupCounterTF",
-		"body":[
-			"\\IsBackupCounterTF{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsBackupCounterT{}{}":{
-		"prefix":"IsBackupCounterT",
-		"body":[
-			"\\IsBackupCounterT{${1:name}}{${2:true}}"
-		]
-	},
-
-
-	"IsBackupStateF{}{}":{
-		"prefix":"IsBackupStateF",
-		"body":[
-			"\\IsBackupStateF{${1:name}}{${2:false}}"
-		]
-	},
-
-
-	"IsBackupStateTF{}{}{}":{
-		"prefix":"IsBackupStateTF",
-		"body":[
-			"\\IsBackupStateTF{${1:name}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IsBackupStateT{}{}":{
-		"prefix":"IsBackupStateT",
-		"body":[
-			"\\IsBackupStateT{${1:name}}{${2:true}}"
-		]
-	},
-
-
-	"NewContainer{}":{
-		"prefix":"NewContainer",
-		"body":[
-			"\\NewContainer{${1:name}}"
-		]
-	},
-
-
-	"PrettyPrintCounterName{}{}":{
-		"prefix":"PrettyPrintCounterName",
-		"body":[
-			"\\PrettyPrintCounterName{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ProvideOriginalLabelCommands":{
-		"prefix":"ProvideOriginalLabelCommands",
-		"body":[
-			"\\ProvideOriginalLabelCommands"
-		]
-	},
-
-
-	"RedefineLabelCommand":{
-		"prefix":"RedefineLabelCommand",
-		"body":[
-			"\\RedefineLabelCommand"
-		]
-	},
-
-
-	"RunLabelHooks{}":{
-		"prefix":"RunLabelHooks",
-		"body":[
-			"\\RunLabelHooks{${1:arg}}"
-		]
-	},
-
-
-	"RunPostLabelHooks{}":{
-		"prefix":"RunPostLabelHooks",
-		"body":[
-			"\\RunPostLabelHooks{${1:arg}}"
-		]
-	},
-
-
-	"RunPreLabelHooks{}":{
-		"prefix":"RunPreLabelHooks",
-		"body":[
-			"\\RunPreLabelHooks{${1:arg}}"
-		]
-	},
-
-
-	"ShowAllAssociatedCounters":{
-		"prefix":"ShowAllAssociatedCounters",
-		"body":[
-			"\\ShowAllAssociatedCounters"
-		]
-	},
-
-
-	"ShowAssociatedCountersList{}":{
-		"prefix":"ShowAssociatedCountersList",
-		"body":[
-			"\\ShowAssociatedCountersList{${1:arg}}"
-		]
-	},
-
-
-	"ShowCounterFormats":{
-		"prefix":"ShowCounterFormats",
-		"body":[
-			"\\ShowCounterFormats"
-		]
-	},
-
-
-	"ShowDriverCounterList":{
-		"prefix":"ShowDriverCounterList",
-		"body":[
-			"\\ShowDriverCounterList"
-		]
-	},
-
-
-	"ShowLanguageMappings{}":{
-		"prefix":"ShowLanguageMappings",
-		"body":[
-			"\\ShowLanguageMappings{${1:arg}}"
-		]
-	},
-
-
-	"ShowSuspendedCounters":{
-		"prefix":"ShowSuspendedCounters",
-		"body":[
-			"\\ShowSuspendedCounters"
-		]
-	},
-
-
-	"TotalCounterInfoColor":{
-		"prefix":"TotalCounterInfoColor",
-		"body":[
-			"\\TotalCounterInfoColor"
-		]
-	},
-
-
-	"WriteCountersAtEnd":{
-		"prefix":"WriteCountersAtEnd",
-		"body":[
-			"\\WriteCountersAtEnd"
-		]
-	},
-
-
-	"showresetlist{}":{
-		"prefix":"showresetlist",
-		"body":[
-			"\\showresetlist{${1:arg}}"
-		]
-	},
-
-
-	"ClearCounterResetList*{}":{
-		"prefix":"*ClearCounterResetList",
-		"body":[
-			"\\ClearCounterResetList*{${1:driver counter}}"
-		]
-	},
-
-
-	"CounterWithin*{}{}":{
-		"prefix":"*CounterWithin",
-		"body":[
-			"\\CounterWithin*{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
-	"CounterWithout*{}{}":{
-		"prefix":"*CounterWithout",
-		"body":[
-			"\\CounterWithout*{${1:counter1,counter2,...}}{${2:driver counter}}"
-		]
-	},
-
-
 	"addtocounter{}{}[]":{
 		"prefix":"addtocounter",
 		"body":[
 			"\\addtocounter{${1:counter}}{${2:value}}[${3:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewDocumentCounter{}":{
+		"prefix":"NewDocumentCounter",
+		"body":[
+			"\\NewDocumentCounter{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1149,7 +23,8 @@
 		"prefix":"NewDocumentCounter",
 		"body":[
 			"\\NewDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1157,7 +32,8 @@
 		"prefix":"NewDocumentCounter",
 		"body":[
 			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1165,7 +41,17 @@
 		"prefix":"NewDocumentCounter",
 		"body":[
 			"\\NewDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareDocumentCounter{}":{
+		"prefix":"DeclareDocumentCounter",
+		"body":[
+			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1173,7 +59,8 @@
 		"prefix":"DeclareDocumentCounter",
 		"body":[
 			"\\DeclareDocumentCounter{${1:counter1,counter2,...}}[${2:resetting counter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1181,7 +68,8 @@
 		"prefix":"DeclareDocumentCounter",
 		"body":[
 			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1189,7 +77,17 @@
 		"prefix":"DeclareDocumentCounter",
 		"body":[
 			"\\DeclareDocumentCounter[${2:options%keyvals}]{${1:counter1,counter2,...}}[${3:resetting counter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetDocumentCounter{}{}":{
+		"prefix":"SetDocumentCounter",
+		"body":[
+			"\\SetDocumentCounter{${1:counter}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1197,7 +95,233 @@
 		"prefix":"SetDocumentCounter",
 		"body":[
 			"\\SetDocumentCounter[${3:options%keyvals}]{${1:counter}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StepDownCounter{}":{
+		"prefix":"StepDownCounter",
+		"body":[
+			"\\StepDownCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SubtractFromCounter{}{}":{
+		"prefix":"SubtractFromCounter",
+		"body":[
+			"\\SubtractFromCounter{${1:counter}}{${2:delta value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CopyDocumentCounters{}{}":{
+		"prefix":"CopyDocumentCounters",
+		"body":[
+			"\\CopyDocumentCounters{${1:source counter}}{${2:target counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SwapDocumentCounters{}{}":{
+		"prefix":"SwapDocumentCounters",
+		"body":[
+			"\\SwapDocumentCounters{${1:counter1}}{${2:counter2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SyncCounters{}":{
+		"prefix":"SyncCounters",
+		"body":[
+			"\\SyncCounters{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfIsDocumentCounterTF{}{}{}":{
+		"prefix":"IfIsDocumentCounterTF",
+		"body":[
+			"\\IfIsDocumentCounterTF{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfIsDocumentCounterT{}{}":{
+		"prefix":"IfIsDocumentCounterT",
+		"body":[
+			"\\IfIsDocumentCounterT{${1:name}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfIsDocumentCounterF{}{}":{
+		"prefix":"IfIsDocumentCounterF",
+		"body":[
+			"\\IfIsDocumentCounterF{${1:name}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastAddedToCounter":{
+		"prefix":"LastAddedToCounter",
+		"body":[
+			"\\LastAddedToCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastSteppedCounter":{
+		"prefix":"LastSteppedCounter",
+		"body":[
+			"\\LastSteppedCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastRefSteppedCounter":{
+		"prefix":"LastRefSteppedCounter",
+		"body":[
+			"\\LastRefSteppedCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastSetCounter":{
+		"prefix":"LastSetCounter",
+		"body":[
+			"\\LastSetCounter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LastCounterValue":{
+		"prefix":"LastCounterValue",
+		"body":[
+			"\\LastCounterValue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveFromReset{}{}":{
+		"prefix":"RemoveFromReset",
+		"body":[
+			"\\RemoveFromReset{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveFromFullReset{}{}":{
+		"prefix":"RemoveFromFullReset",
+		"body":[
+			"\\RemoveFromFullReset{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearCounterResetList{}":{
+		"prefix":"ClearCounterResetList",
+		"body":[
+			"\\ClearCounterResetList{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearCounterResetList*{}":{
+		"prefix":"*ClearCounterResetList",
+		"body":[
+			"\\ClearCounterResetList*{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AddToReset{}{}":{
+		"prefix":"AddToReset",
+		"body":[
+			"\\AddToReset{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"countersresetlistcount{}":{
+		"prefix":"countersresetlistcount",
+		"body":[
+			"\\countersresetlistcount{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getresetlistcount":{
+		"prefix":"getresetlistcount",
+		"body":[
+			"\\getresetlistcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CounterFullResetList{}":{
+		"prefix":"CounterFullResetList",
+		"body":[
+			"\\CounterFullResetList{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInResetListTF{}{}{}{}":{
+		"prefix":"IfInResetListTF",
+		"body":[
+			"\\IfInResetListTF{${1:resetting counter}}{${2:counter}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInResetListT{}{}{}":{
+		"prefix":"IfInResetListT",
+		"body":[
+			"\\IfInResetListT{${1:resetting counter}}{${2:counter}}{${3:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfInResetListF{}{}{}":{
+		"prefix":"IfInResetListF",
+		"body":[
+			"\\IfInResetListF{${1:resetting counter}}{${2:counter}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisplayResetList{}":{
+		"prefix":"DisplayResetList",
+		"body":[
+			"\\DisplayResetList{${1:resetting counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1205,7 +329,206 @@
 		"prefix":"DisplayResetList",
 		"body":[
 			"\\DisplayResetList[${2:separator}]{${1:resetting counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ShowResetList{}":{
+		"prefix":"ShowResetList",
+		"body":[
+			"\\ShowResetList{${1:resetting counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetAllResetLists":{
+		"prefix":"GetAllResetLists",
+		"body":[
+			"\\GetAllResetLists"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetParentCounter{}":{
+		"prefix":"GetParentCounter",
+		"body":[
+			"\\GetParentCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopAddtoCounters{}{}":{
+		"prefix":"LoopAddtoCounters",
+		"body":[
+			"\\LoopAddtoCounters{${1:counter1,counter2,...}}{${2:increment}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopResetCounters{}":{
+		"prefix":"LoopResetCounters",
+		"body":[
+			"\\LoopResetCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopRefstepCounters{}":{
+		"prefix":"LoopRefstepCounters",
+		"body":[
+			"\\LoopRefstepCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopSetCounters{}{}":{
+		"prefix":"LoopSetCounters",
+		"body":[
+			"\\LoopSetCounters{${1:counter1,counter2,...}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopStepCounters{}":{
+		"prefix":"LoopStepCounters",
+		"body":[
+			"\\LoopStepCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopCountersFunction{}{}":{
+		"prefix":"LoopCountersFunction",
+		"body":[
+			"\\LoopCountersFunction{${1:counter1,counter2,...}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopCounterResetList{}{}":{
+		"prefix":"LoopCounterResetList",
+		"body":[
+			"\\LoopCounterResetList{${1:counter}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LoopFullCounterResetList{}{}":{
+		"prefix":"LoopFullCounterResetList",
+		"body":[
+			"\\LoopFullCounterResetList{${1:counter}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CounterWithin{}{}":{
+		"prefix":"CounterWithin",
+		"body":[
+			"\\CounterWithin{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CounterWithin*{}{}":{
+		"prefix":"*CounterWithin",
+		"body":[
+			"\\CounterWithin*{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"CounterWithout{}{}":{
+		"prefix":"CounterWithout",
+		"body":[
+			"\\CounterWithout{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CounterWithout*{}{}":{
+		"prefix":"*CounterWithout",
+		"body":[
+			"\\CounterWithout*{${1:counter1,counter2,...}}{${2:driver counter}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"BinaryValue{}":{
+		"prefix":"BinaryValue",
+		"body":[
+			"\\BinaryValue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hexValue{}":{
+		"prefix":"hexValue",
+		"body":[
+			"\\hexValue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HexValue{}":{
+		"prefix":"HexValue",
+		"body":[
+			"\\HexValue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OctalValue{}":{
+		"prefix":"OctalValue",
+		"body":[
+			"\\OctalValue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xalphalph{}":{
+		"prefix":"xalphalph",
+		"body":[
+			"\\xalphalph{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xAlphAlph{}":{
+		"prefix":"xAlphAlph",
+		"body":[
+			"\\xAlphAlph{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CounterFormat{}":{
+		"prefix":"CounterFormat",
+		"body":[
+			"\\CounterFormat{${1:counter1!format1,counter2!format2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1213,7 +536,17 @@
 		"prefix":"CounterFormat",
 		"body":[
 			"\\CounterFormat[${2:options%keyvals}]{${1:counter1!format1,counter2!format2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"StoreCounterFormats{}":{
+		"prefix":"StoreCounterFormats",
+		"body":[
+			"\\StoreCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1221,7 +554,17 @@
 		"prefix":"StoreCounterFormats",
 		"body":[
 			"\\StoreCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddCounterFormats{}":{
+		"prefix":"AddCounterFormats",
+		"body":[
+			"\\AddCounterFormats{${1:shorthand1!macro1,shorthand2!macro2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1229,7 +572,26 @@
 		"prefix":"AddCounterFormats",
 		"body":[
 			"\\AddCounterFormats[${2:options%keyvals}]{${1:shorthand1!macro1,shorthand2!macro2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RemoveCounterFormats{}":{
+		"prefix":"RemoveCounterFormats",
+		"body":[
+			"\\RemoveCounterFormats{${1:shorthand1,shorthand2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareAssociatedCounters{}{}":{
+		"prefix":"DeclareAssociatedCounters",
+		"body":[
+			"\\DeclareAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1237,7 +599,17 @@
 		"prefix":"DeclareAssociatedCounters",
 		"body":[
 			"\\DeclareAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddAssociatedCounters{}{}":{
+		"prefix":"AddAssociatedCounters",
+		"body":[
+			"\\AddAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1245,7 +617,116 @@
 		"prefix":"AddAssociatedCounters",
 		"body":[
 			"\\AddAssociatedCounters[${3:options%keyvals}]{${1:driver counter}}{${2:assoc counter list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RemoveAssociatedCounter{}{}":{
+		"prefix":"RemoveAssociatedCounter",
+		"body":[
+			"\\RemoveAssociatedCounter{${1:driver counter}}{${2:assoc counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveAssociatedCounters{}{}":{
+		"prefix":"RemoveAssociatedCounters",
+		"body":[
+			"\\RemoveAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearAssociatedCounters{}":{
+		"prefix":"ClearAssociatedCounters",
+		"body":[
+			"\\ClearAssociatedCounters{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareTotalAssociatedCounters{}{}":{
+		"prefix":"DeclareTotalAssociatedCounters",
+		"body":[
+			"\\DeclareTotalAssociatedCounters{${1:driver counter}}{${2:assoc counter list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddDriverCounter{}":{
+		"prefix":"AddDriverCounter",
+		"body":[
+			"\\AddDriverCounter{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveDriverCounter{}":{
+		"prefix":"RemoveDriverCounter",
+		"body":[
+			"\\RemoveDriverCounter{${1:driver counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearDriverCounters":{
+		"prefix":"ClearDriverCounters",
+		"body":[
+			"\\ClearDriverCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsAssociatedToCounter{}{}{}{}":{
+		"prefix":"IsAssociatedToCounter",
+		"body":[
+			"\\IsAssociatedToCounter{${1:driver counter}}{${2:assoc counter}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetDriverCounter{}":{
+		"prefix":"GetDriverCounter",
+		"body":[
+			"\\GetDriverCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsAssociatedCounter{}{}{}":{
+		"prefix":"IsAssociatedCounter",
+		"body":[
+			"\\IsAssociatedCounter{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsDriverCounter{}{}{}":{
+		"prefix":"IsDriverCounter",
+		"body":[
+			"\\IsDriverCounter{${1:driver counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareCoupledCounters{}":{
+		"prefix":"DeclareCoupledCounters",
+		"body":[
+			"\\DeclareCoupledCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1253,7 +734,26 @@
 		"prefix":"DeclareCoupledCounters",
 		"body":[
 			"\\DeclareCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareCoupledCountersGroup{}":{
+		"prefix":"DeclareCoupledCountersGroup",
+		"body":[
+			"\\DeclareCoupledCountersGroup{${1:group name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveCoupledCounters{}":{
+		"prefix":"RemoveCoupledCounters",
+		"body":[
+			"\\RemoveCoupledCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1261,7 +761,17 @@
 		"prefix":"RemoveCoupledCounters",
 		"body":[
 			"\\RemoveCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddCoupledCounters{}":{
+		"prefix":"AddCoupledCounters",
+		"body":[
+			"\\AddCoupledCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1269,7 +779,98 @@
 		"prefix":"AddCoupledCounters",
 		"body":[
 			"\\AddCoupledCounters[${2:options%keyvals}]{${1:counter1,counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ClearCoupledCounters{}":{
+		"prefix":"ClearCoupledCounters",
+		"body":[
+			"\\ClearCoupledCounters{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearAllCoupledCounters":{
+		"prefix":"ClearAllCoupledCounters",
+		"body":[
+			"\\ClearAllCoupledCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsCoupledCounterTF{}{}{}":{
+		"prefix":"IsCoupledCounterTF",
+		"body":[
+			"\\IsCoupledCounterTF{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsCoupledCounterT{}{}":{
+		"prefix":"IsCoupledCounterT",
+		"body":[
+			"\\IsCoupledCounterT{${1:counter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsCoupledCounterF{}{}":{
+		"prefix":"IsCoupledCounterF",
+		"body":[
+			"\\IsCoupledCounterF{${1:counter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclarePeriodicCounter{}{}":{
+		"prefix":"DeclarePeriodicCounter",
+		"body":[
+			"\\DeclarePeriodicCounter{${1:counter}}{${2:threshold value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddPeriodicCounter{}{}":{
+		"prefix":"AddPeriodicCounter",
+		"body":[
+			"\\AddPeriodicCounter{${1:counter}}{${2:threshold value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemovePeriodicCounter{}":{
+		"prefix":"RemovePeriodicCounter",
+		"body":[
+			"\\RemovePeriodicCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemovePeriodicCounter{}":{
+		"prefix":"RemovePeriodicCounter",
+		"body":[
+			"\\RemovePeriodicCounter{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RemoveAllPeriodicCounters":{
+		"prefix":"RemoveAllPeriodicCounters",
+		"body":[
+			"\\RemoveAllPeriodicCounters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1277,7 +878,17 @@
 		"prefix":"RemoveAllPeriodicCounters",
 		"body":[
 			"\\RemoveAllPeriodicCounters[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ChangePeriodicCounterCondition{}{}":{
+		"prefix":"ChangePeriodicCounterCondition",
+		"body":[
+			"\\ChangePeriodicCounterCondition{${1:counter}}{${2:threshold value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1285,7 +896,89 @@
 		"prefix":"ChangePeriodicCounterCondition",
 		"body":[
 			"\\ChangePeriodicCounterCondition[${3:options%keyvals}]{${1:counter}}{${2:threshold value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IsPeriodicCounterTF{}{}{}":{
+		"prefix":"IsPeriodicCounterTF",
+		"body":[
+			"\\IsPeriodicCounterTF{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsPeriodicCounterT{}{}":{
+		"prefix":"IsPeriodicCounterT",
+		"body":[
+			"\\IsPeriodicCounterT{${1:counter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsPeriodicCounterF{}{}":{
+		"prefix":"IsPeriodicCounterF",
+		"body":[
+			"\\IsPeriodicCounterF{${1:counter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SuspendCounters{}":{
+		"prefix":"SuspendCounters",
+		"body":[
+			"\\SuspendCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CascadeSuspendCounters{}":{
+		"prefix":"CascadeSuspendCounters",
+		"body":[
+			"\\CascadeSuspendCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResumeSuspendedCounters{}":{
+		"prefix":"ResumeSuspendedCounters",
+		"body":[
+			"\\ResumeSuspendedCounters{${1:counter1,counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ResumeAllSuspendedCounters":{
+		"prefix":"ResumeAllSuspendedCounters",
+		"body":[
+			"\\ResumeAllSuspendedCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsSuspendedCounter{}{}{}":{
+		"prefix":"IsSuspendedCounter",
+		"body":[
+			"\\IsSuspendedCounter{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RegisterTotalDocumentCounter{}":{
+		"prefix":"RegisterTotalDocumentCounter",
+		"body":[
+			"\\RegisterTotalDocumentCounter{${1:total counter}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1293,7 +986,71 @@
 		"prefix":"RegisterTotalDocumentCounter",
 		"body":[
 			"\\RegisterTotalDocumentCounter[${2:options%keyvals}]{${1:total counter}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TotalCounterInternalName{}":{
+		"prefix":"TotalCounterInternalName",
+		"body":[
+			"\\TotalCounterInternalName{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalCounterInternalNameExp{}":{
+		"prefix":"TotalCounterInternalNameExp",
+		"body":[
+			"\\TotalCounterInternalNameExp{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalValue{}":{
+		"prefix":"TotalValue",
+		"body":[
+			"\\TotalValue{${1:counter}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsTotalCounterTF{}{}{}":{
+		"prefix":"IsTotalCounterTF",
+		"body":[
+			"\\IsTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsTotalCounterT{}{}":{
+		"prefix":"IsTotalCounterT",
+		"body":[
+			"\\IsTotalCounterT{${1:counter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsTotalCounterF{}{}":{
+		"prefix":"IsTotalCounterF",
+		"body":[
+			"\\IsTotalCounterF{${1:counter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewTotalDocumentCounter{}":{
+		"prefix":"NewTotalDocumentCounter",
+		"body":[
+			"\\NewTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1301,7 +1058,17 @@
 		"prefix":"NewTotalDocumentCounter",
 		"body":[
 			"\\NewTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTotalDocumentCounter{}":{
+		"prefix":"DeclareTotalDocumentCounter",
+		"body":[
+			"\\DeclareTotalDocumentCounter{${1:total-counter1,total-counter2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1309,7 +1076,35 @@
 		"prefix":"DeclareTotalDocumentCounter",
 		"body":[
 			"\\DeclareTotalDocumentCounter[${2:options%keyvals}]{${1:total-counter1,total-counter2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IsSuperTotalCounterTF{}{}{}":{
+		"prefix":"IsSuperTotalCounterTF",
+		"body":[
+			"\\IsSuperTotalCounterTF{${1:counter}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsSuperTotalCounterT{}{}":{
+		"prefix":"IsSuperTotalCounterT",
+		"body":[
+			"\\IsSuperTotalCounterT{${1:counter}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsSuperTotalCounterF{}{}":{
+		"prefix":"IsSuperTotalCounterF",
+		"body":[
+			"\\IsSuperTotalCounterF{${1:counter}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1317,7 +1112,8 @@
 		"prefix":"label",
 		"body":[
 			"\\label{${1:key}}[${2:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1325,7 +1121,17 @@
 		"prefix":"label",
 		"body":[
 			"\\label[${2:cleveref overrule}]{${1:key}}[${3:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LaTeXLabel{}":{
+		"prefix":"LaTeXLabel",
+		"body":[
+			"\\LaTeXLabel{${1:key}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1333,7 +1139,44 @@
 		"prefix":"LaTeXLabel",
 		"body":[
 			"\\LaTeXLabel[${2:cleveref overrule}]{${1:key}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RegisterPreLabelHook{}":{
+		"prefix":"RegisterPreLabelHook",
+		"body":[
+			"\\RegisterPreLabelHook{${1:cmd1,cmd2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RegisterPostLabelHook{}":{
+		"prefix":"RegisterPostLabelHook",
+		"body":[
+			"\\RegisterPostLabelHook{${1:cmd1,cmd2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearPostLabelHook":{
+		"prefix":"ClearPostLabelHook",
+		"body":[
+			"\\ClearPostLabelHook"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ClearPreLabelHook":{
+		"prefix":"ClearPreLabelHook",
+		"body":[
+			"\\ClearPreLabelHook"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1341,7 +1184,8 @@
 		"prefix":"AddBackupCounters",
 		"body":[
 			"\\AddBackupCounters[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1349,7 +1193,17 @@
 		"prefix":"AddFeature",
 		"body":[
 			"\\AddFeature[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddLanguageMappings{}{}":{
+		"prefix":"AddLanguageMappings",
+		"body":[
+			"\\AddLanguageMappings{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1357,7 +1211,17 @@
 		"prefix":"AssignBackupCounters",
 		"body":[
 			"\\AssignBackupCounters[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AssociatedCounterInfoColor":{
+		"prefix":"AssociatedCounterInfoColor",
+		"body":[
+			"\\AssociatedCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1365,7 +1229,8 @@
 		"prefix":"BackupCounterGroup",
 		"body":[
 			"\\BackupCounterGroup[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1373,7 +1238,8 @@
 		"prefix":"BackupCounterValues",
 		"body":[
 			"\\BackupCounterValues[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1381,7 +1247,8 @@
 		"prefix":"ClearBackupCounterGroups",
 		"body":[
 			"\\ClearBackupCounterGroups[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1389,7 +1256,8 @@
 		"prefix":"ClearBackupState",
 		"body":[
 			"\\ClearBackupState[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1397,7 +1265,44 @@
 		"prefix":"ClearCounterBackupState",
 		"body":[
 			"\\ClearCounterBackupState[${3:options}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ClearCounterFormats":{
+		"prefix":"ClearCounterFormats",
+		"body":[
+			"\\ClearCounterFormats"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareBackupCountersGroupName{}":{
+		"prefix":"DeclareBackupCountersGroupName",
+		"body":[
+			"\\DeclareBackupCountersGroupName{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLanguageMappings{}{}":{
+		"prefix":"DeclareLanguageMappings",
+		"body":[
+			"\\DeclareLanguageMappings{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareLanguageMap{}":{
+		"prefix":"DeclareLanguageMap",
+		"body":[
+			"\\DeclareLanguageMap{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +1310,143 @@
 		"prefix":"DeleteBackupCounterGroups",
 		"body":[
 			"\\DeleteBackupCounterGroups[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DriverCounterInfoColor":{
+		"prefix":"DriverCounterInfoColor",
+		"body":[
+			"\\DriverCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnableNumberofrunsTF{}{}":{
+		"prefix":"EnableNumberofrunsTF",
+		"body":[
+			"\\EnableNumberofrunsTF{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GeneralCounterInfoColor":{
+		"prefix":"GeneralCounterInfoColor",
+		"body":[
+			"\\GeneralCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetParentCounterChain{}":{
+		"prefix":"GetParentCounterChain",
+		"body":[
+			"\\GetParentCounterChain{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfExistsDriverCounterList{}{}{}":{
+		"prefix":"IfExistsDriverCounterList",
+		"body":[
+			"\\IfExistsDriverCounterList{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterF{}{}":{
+		"prefix":"IsBackupCounterF",
+		"body":[
+			"\\IsBackupCounterF{${1:name}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterGroupF{}{}":{
+		"prefix":"IsBackupCounterGroupF",
+		"body":[
+			"\\IsBackupCounterGroupF{${1:name}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterGroupTF{}{}{}":{
+		"prefix":"IsBackupCounterGroupTF",
+		"body":[
+			"\\IsBackupCounterGroupTF{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterGroupT{}{}":{
+		"prefix":"IsBackupCounterGroupT",
+		"body":[
+			"\\IsBackupCounterGroupT{${1:name}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterTF{}{}{}":{
+		"prefix":"IsBackupCounterTF",
+		"body":[
+			"\\IsBackupCounterTF{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupCounterT{}{}":{
+		"prefix":"IsBackupCounterT",
+		"body":[
+			"\\IsBackupCounterT{${1:name}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupStateF{}{}":{
+		"prefix":"IsBackupStateF",
+		"body":[
+			"\\IsBackupStateF{${1:name}}{${2:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupStateTF{}{}{}":{
+		"prefix":"IsBackupStateTF",
+		"body":[
+			"\\IsBackupStateTF{${1:name}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IsBackupStateT{}{}":{
+		"prefix":"IsBackupStateT",
+		"body":[
+			"\\IsBackupStateT{${1:name}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewContainer{}":{
+		"prefix":"NewContainer",
+		"body":[
+			"\\NewContainer{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +1454,35 @@
 		"prefix":"NewCounterHierarchy",
 		"body":[
 			"\\NewCounterHierarchy[${2:options}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PrettyPrintCounterName{}{}":{
+		"prefix":"PrettyPrintCounterName",
+		"body":[
+			"\\PrettyPrintCounterName{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ProvideOriginalLabelCommands":{
+		"prefix":"ProvideOriginalLabelCommands",
+		"body":[
+			"\\ProvideOriginalLabelCommands"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RedefineLabelCommand":{
+		"prefix":"RedefineLabelCommand",
+		"body":[
+			"\\RedefineLabelCommand"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1421,7 +1490,8 @@
 		"prefix":"RemoveCountersFromBackupGroup",
 		"body":[
 			"\\RemoveCountersFromBackupGroup[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1429,7 +1499,8 @@
 		"prefix":"RemoveFeature",
 		"body":[
 			"\\RemoveFeature[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1437,6 +1508,115 @@
 		"prefix":"RestoreBackupCounterGroup",
 		"body":[
 			"\\RestoreBackupCounterGroup[${2:options}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RunLabelHooks{}":{
+		"prefix":"RunLabelHooks",
+		"body":[
+			"\\RunLabelHooks{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RunPostLabelHooks{}":{
+		"prefix":"RunPostLabelHooks",
+		"body":[
+			"\\RunPostLabelHooks{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RunPreLabelHooks{}":{
+		"prefix":"RunPreLabelHooks",
+		"body":[
+			"\\RunPreLabelHooks{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowAllAssociatedCounters":{
+		"prefix":"ShowAllAssociatedCounters",
+		"body":[
+			"\\ShowAllAssociatedCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowAssociatedCountersList{}":{
+		"prefix":"ShowAssociatedCountersList",
+		"body":[
+			"\\ShowAssociatedCountersList{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowCounterFormats":{
+		"prefix":"ShowCounterFormats",
+		"body":[
+			"\\ShowCounterFormats"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowDriverCounterList":{
+		"prefix":"ShowDriverCounterList",
+		"body":[
+			"\\ShowDriverCounterList"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowLanguageMappings{}":{
+		"prefix":"ShowLanguageMappings",
+		"body":[
+			"\\ShowLanguageMappings{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowSuspendedCounters":{
+		"prefix":"ShowSuspendedCounters",
+		"body":[
+			"\\ShowSuspendedCounters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TotalCounterInfoColor":{
+		"prefix":"TotalCounterInfoColor",
+		"body":[
+			"\\TotalCounterInfoColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"WriteCountersAtEnd":{
+		"prefix":"WriteCountersAtEnd",
+		"body":[
+			"\\WriteCountersAtEnd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showresetlist{}":{
+		"prefix":"showresetlist",
+		"body":[
+			"\\showresetlist{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

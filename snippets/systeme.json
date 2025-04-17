@@ -5,135 +5,8 @@
 		"prefix":"systeme",
 		"body":[
 			"\\systeme{${1:eq1,eq2,...%formula}}"
-		]
-	},
-
-
-	"syslineskipcoeff{}":{
-		"prefix":"syslineskipcoeff",
-		"body":[
-			"\\syslineskipcoeff{${1:value}}"
-		]
-	},
-
-
-	"sysdelim{}{}":{
-		"prefix":"sysdelim",
-		"body":[
-			"\\sysdelim{${1:delim1%formula}}{${2:delim2%formula}}"
-		]
-	},
-
-
-	"sysequivsign{}{}":{
-		"prefix":"sysequivsign",
-		"body":[
-			"\\sysequivsign{${1:sign%formula}}{${2:substitution%formula}}"
-		]
-	},
-
-
-	"sysaddeqsign{}":{
-		"prefix":"sysaddeqsign",
-		"body":[
-			"\\sysaddeqsign{${1:sign%formula}}"
-		]
-	},
-
-
-	"sysremoveeqsign{}":{
-		"prefix":"sysremoveeqsign",
-		"body":[
-			"\\sysremoveeqsign{${1:sign%formula}}"
-		]
-	},
-
-
-	"syseqsep{}":{
-		"prefix":"syseqsep",
-		"body":[
-			"\\syseqsep{${1:character%formula}}"
-		]
-	},
-
-
-	"sysalign{}":{
-		"prefix":"sysalign",
-		"body":[
-			"\\sysalign{${1:l|${2:c}|${3:r,l}|${4:c}|r}}"
-		]
-	},
-
-
-	"syssignspace{}":{
-		"prefix":"syssignspace",
-		"body":[
-			"\\syssignspace{${1:dimen%l}}"
-		]
-	},
-
-
-	"syseqspace{}":{
-		"prefix":"syseqspace",
-		"body":[
-			"\\syseqspace{${1:dimen%l}}"
-		]
-	},
-
-
-	"sysextracolsign{}":{
-		"prefix":"sysextracolsign",
-		"body":[
-			"\\sysextracolsign{${1:sign%formula}}"
-		]
-	},
-
-
-	"syscodeextracol{}{}":{
-		"prefix":"syscodeextracol",
-		"body":[
-			"\\syscodeextracol{${1:start code}}{${2:end code}}"
-		]
-	},
-
-
-	"sysautonum{}":{
-		"prefix":"sysautonum",
-		"body":[
-			"\\sysautonum{${1:expression%formula}}"
-		]
-	},
-
-
-	"SYSeqnum":{
-		"prefix":"SYSeqnum",
-		"body":[
-			"\\SYSeqnum"
-		]
-	},
-
-
-	"sysreseteqnum":{
-		"prefix":"sysreseteqnum",
-		"body":[
-			"\\sysreseteqnum"
-		]
-	},
-
-
-	"sysnosubstitute":{
-		"prefix":"sysnosubstitute",
-		"body":[
-			"\\sysnosubstitute"
-		]
-	},
-
-
-	"sysautonum*{}":{
-		"prefix":"*sysautonum",
-		"body":[
-			"\\sysautonum*{${1:expression%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,6 +14,151 @@
 		"prefix":"systeme",
 		"body":[
 			"\\systeme[${2:alignment_chars%formula}]{${1:eq1,eq2,...%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"syslineskipcoeff{}":{
+		"prefix":"syslineskipcoeff",
+		"body":[
+			"\\syslineskipcoeff{${1:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysdelim{}{}":{
+		"prefix":"sysdelim",
+		"body":[
+			"\\sysdelim{${1:delim1%formula}}{${2:delim2%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysequivsign{}{}":{
+		"prefix":"sysequivsign",
+		"body":[
+			"\\sysequivsign{${1:sign%formula}}{${2:substitution%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysaddeqsign{}":{
+		"prefix":"sysaddeqsign",
+		"body":[
+			"\\sysaddeqsign{${1:sign%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysremoveeqsign{}":{
+		"prefix":"sysremoveeqsign",
+		"body":[
+			"\\sysremoveeqsign{${1:sign%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"syseqsep{}":{
+		"prefix":"syseqsep",
+		"body":[
+			"\\syseqsep{${1:character%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysalign{}":{
+		"prefix":"sysalign",
+		"body":[
+			"\\sysalign{${1:l|${2:c}|${3:r,l}|${4:c}|r}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"syssignspace{}":{
+		"prefix":"syssignspace",
+		"body":[
+			"\\syssignspace{${1:dimen%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"syseqspace{}":{
+		"prefix":"syseqspace",
+		"body":[
+			"\\syseqspace{${1:dimen%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysextracolsign{}":{
+		"prefix":"sysextracolsign",
+		"body":[
+			"\\sysextracolsign{${1:sign%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"syscodeextracol{}{}":{
+		"prefix":"syscodeextracol",
+		"body":[
+			"\\syscodeextracol{${1:start code}}{${2:end code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysautonum{}":{
+		"prefix":"sysautonum",
+		"body":[
+			"\\sysautonum{${1:expression%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysautonum*{}":{
+		"prefix":"*sysautonum",
+		"body":[
+			"\\sysautonum*{${1:expression%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SYSeqnum":{
+		"prefix":"SYSeqnum",
+		"body":[
+			"\\SYSeqnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysreseteqnum":{
+		"prefix":"sysreseteqnum",
+		"body":[
+			"\\sysreseteqnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sysnosubstitute":{
+		"prefix":"sysnosubstitute",
+		"body":[
+			"\\sysnosubstitute"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

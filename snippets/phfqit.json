@@ -5,7 +5,8 @@
 		"prefix":"Hs",
 		"body":[
 			"\\Hs"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Ident",
 		"body":[
 			"\\Ident"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,679 +23,8 @@
 		"prefix":"IdentProc",
 		"body":[
 			"\\IdentProc{${1:arg}}"
-		]
-	},
-
-
-	"ee^{}":{
-		"prefix":"ee^",
-		"body":[
-			"\\ee^{${1:arg}}"
-		]
-	},
-
-
-	"tr":{
-		"prefix":"tr",
-		"body":[
-			"\\tr"
-		]
-	},
-
-
-	"supp":{
-		"prefix":"supp",
-		"body":[
-			"\\supp"
-		]
-	},
-
-
-	"rank":{
-		"prefix":"rank",
-		"body":[
-			"\\rank"
-		]
-	},
-
-
-	"linspan":{
-		"prefix":"linspan",
-		"body":[
-			"\\linspan"
-		]
-	},
-
-
-	"spec":{
-		"prefix":"spec",
-		"body":[
-			"\\spec"
-		]
-	},
-
-
-	"diag":{
-		"prefix":"diag",
-		"body":[
-			"\\diag"
-		]
-	},
-
-
-	"poly":{
-		"prefix":"poly",
-		"body":[
-			"\\poly"
-		]
-	},
-
-
-	"bit{}":{
-		"prefix":"bit",
-		"body":[
-			"\\bit{0 or 1}"
-		]
-	},
-
-
-	"bitstring{}":{
-		"prefix":"bitstring",
-		"body":[
-			"\\bitstring{${1:string}}"
-		]
-	},
-
-
-	"gate{}":{
-		"prefix":"gate",
-		"body":[
-			"\\gate{${1:arg}}"
-		]
-	},
-
-
-	"AND":{
-		"prefix":"AND",
-		"body":[
-			"\\AND"
-		]
-	},
-
-
-	"XOR":{
-		"prefix":"XOR",
-		"body":[
-			"\\XOR"
-		]
-	},
-
-
-	"CNOT":{
-		"prefix":"CNOT",
-		"body":[
-			"\\CNOT"
-		]
-	},
-
-
-	"NOT":{
-		"prefix":"NOT",
-		"body":[
-			"\\NOT"
-		]
-	},
-
-
-	"NOOP":{
-		"prefix":"NOOP",
-		"body":[
-			"\\NOOP"
-		]
-	},
-
-
-	"uu()":{
-		"prefix":"uu",
-		"body":[
-			"\\uu(${1:arg})"
-		]
-	},
-
-
-	"UU()":{
-		"prefix":"UU",
-		"body":[
-			"\\UU(${1:arg})"
-		]
-	},
-
-
-	"su()":{
-		"prefix":"su",
-		"body":[
-			"\\su(${1:arg})"
-		]
-	},
-
-
-	"SU()":{
-		"prefix":"SU",
-		"body":[
-			"\\SU(${1:arg})"
-		]
-	},
-
-
-	"so()":{
-		"prefix":"so",
-		"body":[
-			"\\so(${1:arg})"
-		]
-	},
-
-
-	"SO()":{
-		"prefix":"SO",
-		"body":[
-			"\\SO(${1:arg})"
-		]
-	},
-
-
-	"SN()":{
-		"prefix":"SN",
-		"body":[
-			"\\SN(${1:arg})"
-		]
-	},
-
-
-	"ket{}":{
-		"prefix":"ket",
-		"body":[
-			"\\ket{${1:arg}}"
-		]
-	},
-
-
-	"bra{}":{
-		"prefix":"bra",
-		"body":[
-			"\\bra{${1:arg}}"
-		]
-	},
-
-
-	"braket{}{}":{
-		"prefix":"braket",
-		"body":[
-			"\\braket{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ketbra{}{}":{
-		"prefix":"ketbra",
-		"body":[
-			"\\ketbra{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"proj{}":{
-		"prefix":"proj",
-		"body":[
-			"\\proj{${1:arg}}"
-		]
-	},
-
-
-	"matrixel{}{}{}":{
-		"prefix":"matrixel",
-		"body":[
-			"\\matrixel{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"dmatrixel{}{}":{
-		"prefix":"dmatrixel",
-		"body":[
-			"\\dmatrixel{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"innerprod{}{}":{
-		"prefix":"innerprod",
-		"body":[
-			"\\innerprod{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"abs{}":{
-		"prefix":"abs",
-		"body":[
-			"\\abs{${1:arg}}"
-		]
-	},
-
-
-	"avg{}":{
-		"prefix":"avg",
-		"body":[
-			"\\avg{${1:arg}}"
-		]
-	},
-
-
-	"norm{}":{
-		"prefix":"norm",
-		"body":[
-			"\\norm{${1:arg}}"
-		]
-	},
-
-
-	"intervalc{}{}":{
-		"prefix":"intervalc",
-		"body":[
-			"\\intervalc{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervalo{}{}":{
-		"prefix":"intervalo",
-		"body":[
-			"\\intervalo{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervalco{}{}":{
-		"prefix":"intervalco",
-		"body":[
-			"\\intervalco{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervaloc{}{}":{
-		"prefix":"intervaloc",
-		"body":[
-			"\\intervaloc{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"Hmin{}":{
-		"prefix":"Hmin",
-		"body":[
-			"\\Hmin{${1:target sys}}"
-		]
-	},
-
-
-	"HH{}":{
-		"prefix":"HH",
-		"body":[
-			"\\HH{${1:target sys}}"
-		]
-	},
-
-
-	"Hzero{}":{
-		"prefix":"Hzero",
-		"body":[
-			"\\Hzero{${1:target sys}}"
-		]
-	},
-
-
-	"Hmaxf{}":{
-		"prefix":"Hmaxf",
-		"body":[
-			"\\Hmaxf{${1:target sys}}"
-		]
-	},
-
-
-	"HSym":{
-		"prefix":"HSym",
-		"body":[
-			"\\HSym"
-		]
-	},
-
-
-	"Hfn()":{
-		"prefix":"Hfn",
-		"body":[
-			"\\Hfn(${1:arg})"
-		]
-	},
-
-
-	"Hfunc()":{
-		"prefix":"Hfunc",
-		"body":[
-			"\\Hfunc(${1:arg})"
-		]
-	},
-
-
-	"Hfnbase{}{}{}()":{
-		"prefix":"Hfnbase",
-		"body":[
-			"\\Hfnbase{${1:Hsym}}{${2:sub}}{${3:sup}}(${4:arg})"
-		]
-	},
-
-
-	"DD{}{}":{
-		"prefix":"DD",
-		"body":[
-			"\\DD{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"DD_{}^{}{}{}":{
-		"prefix":"DD_",
-		"body":[
-			"\\DD_{${1:sub}}^{${2:sup}}{${3:state}}{${4:relative-to state}}"
-		]
-	},
-
-
-	"Dmax{}{}":{
-		"prefix":"Dmax",
-		"body":[
-			"\\Dmax{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"Dminz{}{}":{
-		"prefix":"Dminz",
-		"body":[
-			"\\Dminz{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"Dminf{}{}":{
-		"prefix":"Dminf",
-		"body":[
-			"\\Dminf{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"Dr{}{}":{
-		"prefix":"Dr",
-		"body":[
-			"\\Dr{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"Dminz{}{}":{
-		"prefix":"Dminz",
-		"body":[
-			"\\Dminz{${1:state}}{${2:relative-to state}}"
-		]
-	},
-
-
-	"Dsym":{
-		"prefix":"Dsym",
-		"body":[
-			"\\Dsym"
-		]
-	},
-
-
-	"Dbase{}_{}^{}{}{}":{
-		"prefix":"Dbase",
-		"body":[
-			"\\Dbase{${1:Dsym}}_{${2:sub}}^{${3:sup}}{${4:state}}{${5:relative-to state}}"
-		]
-	},
-
-
-	"DCohx{}{}{}{}{}":{
-		"prefix":"DCohx",
-		"body":[
-			"\\DCohx{${1:rho}}{${2:X}}{${3:X'}}{${4:GammaX}}{${5:GammaX'}}"
-		]
-	},
-
-
-	"emptysystem":{
-		"prefix":"emptysystem",
-		"body":[
-			"\\emptysystem"
-		]
-	},
-
-
-	"DCohxRefSystemName":{
-		"prefix":"DCohxRefSystemName",
-		"body":[
-			"\\DCohxRefSystemName"
-		]
-	},
-
-
-	"DCSym":{
-		"prefix":"DCSym",
-		"body":[
-			"\\DCSym"
-		]
-	},
-
-
-	"DCoh{}{}{}{}{}":{
-		"prefix":"DCoh",
-		"body":[
-			"\\DCoh{${1:rho}}{${2:R}}{${3:X'}}{${4:GammaR}}{${5:GammaX'}}"
-		]
-	},
-
-
-	"qitobjAddArg":{
-		"prefix":"qitobjAddArg",
-		"body":[
-			"\\qitobjAddArg"
-		]
-	},
-
-
-	"qitobjAddArgx":{
-		"prefix":"qitobjAddArgx",
-		"body":[
-			"\\qitobjAddArgx"
-		]
-	},
-
-
-	"qitobjParseDone":{
-		"prefix":"qitobjParseDone",
-		"body":[
-			"\\qitobjParseDone"
-		]
-	},
-
-
-	"qitobjDone":{
-		"prefix":"qitobjDone",
-		"body":[
-			"\\qitobjDone"
-		]
-	},
-
-
-	"DefineQitObject{}{}{}":{
-		"prefix":"DefineQitObject",
-		"body":[
-			"\\DefineQitObject{${1:name}}{${2:parse cmd}}{${3:render cmd}}"
-		]
-	},
-
-
-	"DefineTunedQitObject{}{}{}{}{}":{
-		"prefix":"DefineTunedQitObject",
-		"body":[
-			"\\DefineTunedQitObject{${1:name}}{${2:parse cmd}}{${3:render cmd}}{${4:first arg}}{${5:custom defs}}"
-		]
-	},
-
-
-	"phfqitParen":{
-		"prefix":"phfqitParen",
-		"body":[
-			"\\phfqitParen"
-		]
-	},
-
-
-	"phfqitSquareBrackets":{
-		"prefix":"phfqitSquareBrackets",
-		"body":[
-			"\\phfqitSquareBrackets"
-		]
-	},
-
-
-	"phfqitCurlyBrackets":{
-		"prefix":"phfqitCurlyBrackets",
-		"body":[
-			"\\phfqitCurlyBrackets"
-		]
-	},
-
-
-	"ket*{}":{
-		"prefix":"*ket",
-		"body":[
-			"\\ket*{${1:arg}}"
-		]
-	},
-
-
-	"bra*{}":{
-		"prefix":"*bra",
-		"body":[
-			"\\bra*{${1:arg}}"
-		]
-	},
-
-
-	"braket*{}{}":{
-		"prefix":"*braket",
-		"body":[
-			"\\braket*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ketbra*{}{}":{
-		"prefix":"*ketbra",
-		"body":[
-			"\\ketbra*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"proj*{}":{
-		"prefix":"*proj",
-		"body":[
-			"\\proj*{${1:arg}}"
-		]
-	},
-
-
-	"matrixel*{}{}{}":{
-		"prefix":"*matrixel",
-		"body":[
-			"\\matrixel*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"dmatrixel*{}{}":{
-		"prefix":"*dmatrixel",
-		"body":[
-			"\\dmatrixel*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"innerprod*{}{}":{
-		"prefix":"*innerprod",
-		"body":[
-			"\\innerprod*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"abs*{}":{
-		"prefix":"*abs",
-		"body":[
-			"\\abs*{${1:arg}}"
-		]
-	},
-
-
-	"avg*{}":{
-		"prefix":"*avg",
-		"body":[
-			"\\avg*{${1:arg}}"
-		]
-	},
-
-
-	"norm*{}":{
-		"prefix":"*norm",
-		"body":[
-			"\\norm*{${1:arg}}"
-		]
-	},
-
-
-	"intervalc*{}{}":{
-		"prefix":"*intervalc",
-		"body":[
-			"\\intervalc*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervalo*{}{}":{
-		"prefix":"*intervalo",
-		"body":[
-			"\\intervalo*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervalco*{}{}":{
-		"prefix":"*intervalco",
-		"body":[
-			"\\intervalco*{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"intervaloc*{}{}":{
-		"prefix":"*intervaloc",
-		"body":[
-			"\\intervaloc*{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -701,7 +32,8 @@
 		"prefix":"IdentProc",
 		"body":[
 			"\\IdentProc[${2:sub}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -709,7 +41,224 @@
 		"prefix":"IdentProc",
 		"body":[
 			"\\IdentProc[${2:sub from}][${3:sub to}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ee^{}":{
+		"prefix":"ee^",
+		"body":[
+			"\\ee^{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tr":{
+		"prefix":"tr",
+		"body":[
+			"\\tr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"supp":{
+		"prefix":"supp",
+		"body":[
+			"\\supp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rank":{
+		"prefix":"rank",
+		"body":[
+			"\\rank"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"linspan":{
+		"prefix":"linspan",
+		"body":[
+			"\\linspan"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spec":{
+		"prefix":"spec",
+		"body":[
+			"\\spec"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"diag":{
+		"prefix":"diag",
+		"body":[
+			"\\diag"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"poly":{
+		"prefix":"poly",
+		"body":[
+			"\\poly"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bit{}":{
+		"prefix":"bit",
+		"body":[
+			"\\bit{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bitstring{}":{
+		"prefix":"bitstring",
+		"body":[
+			"\\bitstring{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gate{}":{
+		"prefix":"gate",
+		"body":[
+			"\\gate{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AND":{
+		"prefix":"AND",
+		"body":[
+			"\\AND"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"XOR":{
+		"prefix":"XOR",
+		"body":[
+			"\\XOR"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CNOT":{
+		"prefix":"CNOT",
+		"body":[
+			"\\CNOT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NOT":{
+		"prefix":"NOT",
+		"body":[
+			"\\NOT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NOOP":{
+		"prefix":"NOOP",
+		"body":[
+			"\\NOOP"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"uu()":{
+		"prefix":"uu",
+		"body":[
+			"\\uu(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UU()":{
+		"prefix":"UU",
+		"body":[
+			"\\UU(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"su()":{
+		"prefix":"su",
+		"body":[
+			"\\su(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SU()":{
+		"prefix":"SU",
+		"body":[
+			"\\SU(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"so()":{
+		"prefix":"so",
+		"body":[
+			"\\so(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SO()":{
+		"prefix":"SO",
+		"body":[
+			"\\SO(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SN()":{
+		"prefix":"SN",
+		"body":[
+			"\\SN(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ket{}":{
+		"prefix":"ket",
+		"body":[
+			"\\ket{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -717,7 +266,26 @@
 		"prefix":"ket",
 		"body":[
 			"\\ket[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ket*{}":{
+		"prefix":"*ket",
+		"body":[
+			"\\ket*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bra{}":{
+		"prefix":"bra",
+		"body":[
+			"\\bra{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -725,7 +293,26 @@
 		"prefix":"bra",
 		"body":[
 			"\\bra[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bra*{}":{
+		"prefix":"*bra",
+		"body":[
+			"\\bra*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"braket{}{}":{
+		"prefix":"braket",
+		"body":[
+			"\\braket{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -733,7 +320,26 @@
 		"prefix":"braket",
 		"body":[
 			"\\braket[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"braket*{}{}":{
+		"prefix":"*braket",
+		"body":[
+			"\\braket*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ketbra{}{}":{
+		"prefix":"ketbra",
+		"body":[
+			"\\ketbra{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -741,7 +347,26 @@
 		"prefix":"ketbra",
 		"body":[
 			"\\ketbra[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ketbra*{}{}":{
+		"prefix":"*ketbra",
+		"body":[
+			"\\ketbra*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"proj{}":{
+		"prefix":"proj",
+		"body":[
+			"\\proj{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -749,7 +374,26 @@
 		"prefix":"proj",
 		"body":[
 			"\\proj[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"proj*{}":{
+		"prefix":"*proj",
+		"body":[
+			"\\proj*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"matrixel{}{}{}":{
+		"prefix":"matrixel",
+		"body":[
+			"\\matrixel{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -757,7 +401,26 @@
 		"prefix":"matrixel",
 		"body":[
 			"\\matrixel[${4:size cmd}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"matrixel*{}{}{}":{
+		"prefix":"*matrixel",
+		"body":[
+			"\\matrixel*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"dmatrixel{}{}":{
+		"prefix":"dmatrixel",
+		"body":[
+			"\\dmatrixel{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +428,26 @@
 		"prefix":"dmatrixel",
 		"body":[
 			"\\dmatrixel[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"dmatrixel*{}{}":{
+		"prefix":"*dmatrixel",
+		"body":[
+			"\\dmatrixel*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"innerprod{}{}":{
+		"prefix":"innerprod",
+		"body":[
+			"\\innerprod{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -773,7 +455,26 @@
 		"prefix":"innerprod",
 		"body":[
 			"\\innerprod[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"innerprod*{}{}":{
+		"prefix":"*innerprod",
+		"body":[
+			"\\innerprod*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"abs{}":{
+		"prefix":"abs",
+		"body":[
+			"\\abs{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +482,26 @@
 		"prefix":"abs",
 		"body":[
 			"\\abs[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"abs*{}":{
+		"prefix":"*abs",
+		"body":[
+			"\\abs*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"avg{}":{
+		"prefix":"avg",
+		"body":[
+			"\\avg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -789,7 +509,26 @@
 		"prefix":"avg",
 		"body":[
 			"\\avg[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avg*{}":{
+		"prefix":"*avg",
+		"body":[
+			"\\avg*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"norm{}":{
+		"prefix":"norm",
+		"body":[
+			"\\norm{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +536,26 @@
 		"prefix":"norm",
 		"body":[
 			"\\norm[${2:size cmd}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"norm*{}":{
+		"prefix":"*norm",
+		"body":[
+			"\\norm*{${1:arg}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"intervalc{}{}":{
+		"prefix":"intervalc",
+		"body":[
+			"\\intervalc{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -805,7 +563,26 @@
 		"prefix":"intervalc",
 		"body":[
 			"\\intervalc[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"intervalc*{}{}":{
+		"prefix":"*intervalc",
+		"body":[
+			"\\intervalc*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"intervalo{}{}":{
+		"prefix":"intervalo",
+		"body":[
+			"\\intervalo{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -813,7 +590,26 @@
 		"prefix":"intervalo",
 		"body":[
 			"\\intervalo[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"intervalo*{}{}":{
+		"prefix":"*intervalo",
+		"body":[
+			"\\intervalo*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"intervalco{}{}":{
+		"prefix":"intervalco",
+		"body":[
+			"\\intervalco{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -821,7 +617,26 @@
 		"prefix":"intervalco",
 		"body":[
 			"\\intervalco[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"intervalco*{}{}":{
+		"prefix":"*intervalco",
+		"body":[
+			"\\intervalco*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"intervaloc{}{}":{
+		"prefix":"intervaloc",
+		"body":[
+			"\\intervaloc{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -829,7 +644,26 @@
 		"prefix":"intervaloc",
 		"body":[
 			"\\intervaloc[${3:size cmd}]{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"intervaloc*{}{}":{
+		"prefix":"*intervaloc",
+		"body":[
+			"\\intervaloc*{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Hmin{}":{
+		"prefix":"Hmin",
+		"body":[
+			"\\Hmin{${1:target sys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -837,7 +671,8 @@
 		"prefix":"Hmin",
 		"body":[
 			"\\Hmin[${2:state}]{${1:target sys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -845,7 +680,8 @@
 		"prefix":"Hmin",
 		"body":[
 			"\\Hmin{${1:target sys}}[${2:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -853,7 +689,17 @@
 		"prefix":"Hmin",
 		"body":[
 			"\\Hmin[${2:state}][${3:epsilon}]{${1:target sys}}[${4:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"HH{}":{
+		"prefix":"HH",
+		"body":[
+			"\\HH{${1:target sys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -861,7 +707,8 @@
 		"prefix":"HH",
 		"body":[
 			"\\HH[${2:state}]{${1:target sys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -869,7 +716,8 @@
 		"prefix":"HH",
 		"body":[
 			"\\HH{${1:target sys}}[${2:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -877,7 +725,17 @@
 		"prefix":"HH",
 		"body":[
 			"\\HH[${2:state}][${3:epsilon}]{${1:target sys}}[${4:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Hzero{}":{
+		"prefix":"Hzero",
+		"body":[
+			"\\Hzero{${1:target sys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -885,7 +743,8 @@
 		"prefix":"Hzero",
 		"body":[
 			"\\Hzero[${2:state}]{${1:target sys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -893,7 +752,8 @@
 		"prefix":"Hzero",
 		"body":[
 			"\\Hzero{${1:target sys}}[${2:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -901,7 +761,17 @@
 		"prefix":"Hzero",
 		"body":[
 			"\\Hzero[${2:state}][${3:epsilon}]{${1:target sys}}[${4:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Hmaxf{}":{
+		"prefix":"Hmaxf",
+		"body":[
+			"\\Hmaxf{${1:target sys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -909,7 +779,8 @@
 		"prefix":"Hmaxf",
 		"body":[
 			"\\Hmaxf[${2:state}]{${1:target sys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -917,7 +788,8 @@
 		"prefix":"Hmaxf",
 		"body":[
 			"\\Hmaxf{${1:target sys}}[${2:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -925,7 +797,17 @@
 		"prefix":"Hmaxf",
 		"body":[
 			"\\Hmaxf[${2:state}][${3:epsilon}]{${1:target sys}}[${4:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"HSym":{
+		"prefix":"HSym",
+		"body":[
+			"\\HSym"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -933,7 +815,62 @@
 		"prefix":"Hbase",
 		"body":[
 			"\\Hbase{${1:Hsym}}{${2:subscript}}[${4:state}][${5:epsilon}]{${3:target sys}}[${6:cond sys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Hfn()":{
+		"prefix":"Hfn",
+		"body":[
+			"\\Hfn(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hfunc()":{
+		"prefix":"Hfunc",
+		"body":[
+			"\\Hfunc(${1:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hfnbase{}{}{}()":{
+		"prefix":"Hfnbase",
+		"body":[
+			"\\Hfnbase{${1:Hsym}}{${2:sub}}{${3:sup}}(${4:arg})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DD{}{}":{
+		"prefix":"DD",
+		"body":[
+			"\\DD{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DD_{}^{}{}{}":{
+		"prefix":"DD_",
+		"body":[
+			"\\DD_{${1:sub}}^{${2:sup}}{${3:state}}{${4:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Dmax{}{}":{
+		"prefix":"Dmax",
+		"body":[
+			"\\Dmax{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -941,7 +878,17 @@
 		"prefix":"Dmax",
 		"body":[
 			"\\Dmax[${3:epsilon}]{${1:state}}{${2:relative-to state}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dminz{}{}":{
+		"prefix":"Dminz",
+		"body":[
+			"\\Dminz{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -949,7 +896,17 @@
 		"prefix":"Dminz",
 		"body":[
 			"\\Dminz[${3:epsilon}]{${1:state}}{${2:relative-to state}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dminf{}{}":{
+		"prefix":"Dminf",
+		"body":[
+			"\\Dminf{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -957,7 +914,17 @@
 		"prefix":"Dminf",
 		"body":[
 			"\\Dminf[${3:epsilon}]{${1:state}}{${2:relative-to state}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dr{}{}":{
+		"prefix":"Dr",
+		"body":[
+			"\\Dr{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -965,7 +932,17 @@
 		"prefix":"Dr",
 		"body":[
 			"\\Dr[${3:epsilon}]{${1:state}}{${2:relative-to state}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dminz{}{}":{
+		"prefix":"Dminz",
+		"body":[
+			"\\Dminz{${1:state}}{${2:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -973,7 +950,35 @@
 		"prefix":"Dminz",
 		"body":[
 			"\\Dminz[${3:epsilon}]{${1:state}}{${2:relative-to state}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dsym":{
+		"prefix":"Dsym",
+		"body":[
+			"\\Dsym"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Dbase{}_{}^{}{}{}":{
+		"prefix":"Dbase",
+		"body":[
+			"\\Dbase{${1:Dsym}}_{${2:sub}}^{${3:sup}}{${4:state}}{${5:relative-to state}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DCohx{}{}{}{}{}":{
+		"prefix":"DCohx",
+		"body":[
+			"\\DCohx{${1:rho}}{${2:X}}{${3:X'}}{${4:GammaX}}{${5:GammaX'}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -981,7 +986,44 @@
 		"prefix":"DCohx",
 		"body":[
 			"\\DCohx[${6:epsilon}]{${1:rho}}{${2:X}}{${3:X'}}{${4:GammaX}}{${5:GammaX'}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"emptysystem":{
+		"prefix":"emptysystem",
+		"body":[
+			"\\emptysystem"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DCohxRefSystemName":{
+		"prefix":"DCohxRefSystemName",
+		"body":[
+			"\\DCohxRefSystemName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DCSym":{
+		"prefix":"DCSym",
+		"body":[
+			"\\DCSym"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DCoh{}{}{}{}{}":{
+		"prefix":"DCoh",
+		"body":[
+			"\\DCoh{${1:rho}}{${2:R}}{${3:X'}}{${4:GammaR}}{${5:GammaX'}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -989,7 +1031,8 @@
 		"prefix":"DCoh",
 		"body":[
 			"\\DCoh[${6:epsilon}]{${1:rho}}{${2:R}}{${3:X'}}{${4:GammaR}}{${5:GammaX'}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -997,6 +1040,88 @@
 		"prefix":"DCohbase",
 		"body":[
 			"\\DCohbase{${1:Dsym}}[${7:epsilon}]{${2:rho}}{${3:R}}{${4:X'}}{${5:GammaR}}{${6:GammaX'}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"qitobjAddArg":{
+		"prefix":"qitobjAddArg",
+		"body":[
+			"\\qitobjAddArg"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qitobjAddArgx":{
+		"prefix":"qitobjAddArgx",
+		"body":[
+			"\\qitobjAddArgx"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qitobjParseDone":{
+		"prefix":"qitobjParseDone",
+		"body":[
+			"\\qitobjParseDone"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"qitobjDone":{
+		"prefix":"qitobjDone",
+		"body":[
+			"\\qitobjDone"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineQitObject{}{}{}":{
+		"prefix":"DefineQitObject",
+		"body":[
+			"\\DefineQitObject{${1:name}}{${2:parse cmd}}{${3:render cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DefineTunedQitObject{}{}{}{}{}":{
+		"prefix":"DefineTunedQitObject",
+		"body":[
+			"\\DefineTunedQitObject{${1:name}}{${2:parse cmd}}{${3:render cmd}}{${4:first arg}}{${5:custom defs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phfqitParen":{
+		"prefix":"phfqitParen",
+		"body":[
+			"\\phfqitParen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phfqitSquareBrackets":{
+		"prefix":"phfqitSquareBrackets",
+		"body":[
+			"\\phfqitSquareBrackets"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phfqitCurlyBrackets":{
+		"prefix":"phfqitCurlyBrackets",
+		"body":[
+			"\\phfqitCurlyBrackets"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

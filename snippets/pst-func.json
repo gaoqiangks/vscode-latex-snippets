@@ -5,7 +5,8 @@
 		"prefix":"ChebyshevT",
 		"body":[
 			"\\ChebyshevT"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ChebyshevU",
 		"body":[
 			"\\ChebyshevU"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,439 +23,8 @@
 		"prefix":"psPolynomial",
 		"body":[
 			"\\psPolynomial{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psBernstein()":{
-		"prefix":"psBernstein",
-		"body":[
-			"\\psBernstein(${1:i},${2:n})"
-		]
-	},
-
-
-	"psBernstein()()":{
-		"prefix":"psBernstein",
-		"body":[
-			"\\psBernstein(${1:t0},${2:t1})(${3:i},${4:n})"
-		]
-	},
-
-
-	"psLaguerre()":{
-		"prefix":"psLaguerre",
-		"body":[
-			"\\psLaguerre(${1:x0},${2:x1})"
-		]
-	},
-
-
-	"psLegendre()":{
-		"prefix":"psLegendre",
-		"body":[
-			"\\psLegendre(${1:x0},${2:x1})"
-		]
-	},
-
-
-	"psZero(){}{}":{
-		"prefix":"psZero",
-		"body":[
-			"\\psZero(${3:x0},${4:x1}){${1:function%definition}}{${2:node name}}"
-		]
-	},
-
-
-	"psFourier{}{}":{
-		"prefix":"psFourier",
-		"body":[
-			"\\psFourier{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psBessel{}{}{}":{
-		"prefix":"psBessel",
-		"body":[
-			"\\psBessel{${1:order}}{${2:x0}}{${3:x1}}"
-		]
-	},
-
-
-	"psModBessel{}{}":{
-		"prefix":"psModBessel",
-		"body":[
-			"\\psModBessel{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psSi{}{}":{
-		"prefix":"psSi",
-		"body":[
-			"\\psSi{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"pssi{}{}":{
-		"prefix":"pssi",
-		"body":[
-			"\\pssi{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psCi{}{}":{
-		"prefix":"psCi",
-		"body":[
-			"\\psCi{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psci{}{}":{
-		"prefix":"psci",
-		"body":[
-			"\\psci{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psIntegral{}{}(){}":{
-		"prefix":"psIntegral",
-		"body":[
-			"\\psIntegral{${1:x0}}{${2:x1}}(${4:a},${5:b}){${3:function%definition}}"
-		]
-	},
-
-
-	"psCumIntegral{}{}{}":{
-		"prefix":"psCumIntegral",
-		"body":[
-			"\\psCumIntegral{${1:x0}}{${2:x1}}{${3:function%definition}}"
-		]
-	},
-
-
-	"psConv{}{}(){}{}":{
-		"prefix":"psConv",
-		"body":[
-			"\\psConv{${1:x0}}{${2:x1}}(${5:a},${6:b}){${3:function f%definition}}{${4:function g%definition}}"
-		]
-	},
-
-
-	"psGauss{}{}":{
-		"prefix":"psGauss",
-		"body":[
-			"\\psGauss{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psGaussI{}{}":{
-		"prefix":"psGaussI",
-		"body":[
-			"\\psGaussI{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psBinomial{}{}":{
-		"prefix":"psBinomial",
-		"body":[
-			"\\psBinomial{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
-	},
-
-
-	"psBinomialC{}{}":{
-		"prefix":"psBinomialC",
-		"body":[
-			"\\psBinomialC{${1:N}}{${2:probability}}"
-		]
-	},
-
-
-	"psBinomialN{}{}":{
-		"prefix":"psBinomialN",
-		"body":[
-			"\\psBinomialN{${1:N}}{${2:probability}}"
-		]
-	},
-
-
-	"psBinomialF{}{}":{
-		"prefix":"psBinomialF",
-		"body":[
-			"\\psBinomialF{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
-	},
-
-
-	"psBinomialFS{}{}":{
-		"prefix":"psBinomialFS",
-		"body":[
-			"\\psBinomialFS{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
-	},
-
-
-	"psPoisson{}{}":{
-		"prefix":"psPoisson",
-		"body":[
-			"\\psPoisson{${1:<N> or <M,N>}}{${2:lambda}}"
-		]
-	},
-
-
-	"psGammaDist{}{}":{
-		"prefix":"psGammaDist",
-		"body":[
-			"\\psGammaDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psChiIIDist{}{}":{
-		"prefix":"psChiIIDist",
-		"body":[
-			"\\psChiIIDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psTDist{}{}":{
-		"prefix":"psTDist",
-		"body":[
-			"\\psTDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psNonCentralTDist{}{}":{
-		"prefix":"psNonCentralTDist",
-		"body":[
-			"\\psNonCentralTDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psFDist{}{}":{
-		"prefix":"psFDist",
-		"body":[
-			"\\psFDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psNonCentralFDist{}{}":{
-		"prefix":"psNonCentralFDist",
-		"body":[
-			"\\psNonCentralFDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psBetaDist{}{}":{
-		"prefix":"psBetaDist",
-		"body":[
-			"\\psBetaDist{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psCauchy{}{}":{
-		"prefix":"psCauchy",
-		"body":[
-			"\\psCauchy{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psCauchyI{}{}":{
-		"prefix":"psCauchyI",
-		"body":[
-			"\\psCauchyI{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psWeibull{}{}":{
-		"prefix":"psWeibull",
-		"body":[
-			"\\psWeibull{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psWeibullI{}{}":{
-		"prefix":"psWeibullI",
-		"body":[
-			"\\psWeibullI{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psVasicek{}{}":{
-		"prefix":"psVasicek",
-		"body":[
-			"\\psVasicek{${1:x0}}{${2:x1}}"
-		]
-	},
-
-
-	"psLorenz{}":{
-		"prefix":"psLorenz",
-		"body":[
-			"\\psLorenz{${1:y data}}"
-		]
-	},
-
-
-	"psLorenz<x data>{}":{
-		"prefix":"psLorenz<x data>",
-		"body":[
-			"\\psLorenz<x data>{${1:y data}}"
-		]
-	},
-
-
-	"psLame{}":{
-		"prefix":"psLame",
-		"body":[
-			"\\psLame{${1:r}}"
-		]
-	},
-
-
-	"psThomae(){}":{
-		"prefix":"psThomae",
-		"body":[
-			"\\psThomae(${2:x0},${3:x1}){${1:points}}"
-		]
-	},
-
-
-	"psWeierstrass(){}":{
-		"prefix":"psWeierstrass",
-		"body":[
-			"\\psWeierstrass(${2:x0},${3:x1}){${1:a}}"
-		]
-	},
-
-
-	"psplotImp()(){}":{
-		"prefix":"psplotImp",
-		"body":[
-			"\\psplotImp(${2:xmin},${3:ymin})(${4:xmax},${5:ymax}){${1:function%definition}}"
-		]
-	},
-
-
-	"psVolume(){}{}":{
-		"prefix":"psVolume",
-		"body":[
-			"\\psVolume(${3:x0},${4:x1}){${1:steps}}{${2:function%definition}}"
-		]
-	},
-
-
-	"psGetZeros(){}":{
-		"prefix":"psGetZeros",
-		"body":[
-			"\\psGetZeros(${2:x0},${3:x1}){${1:function%definition}}"
-		]
-	},
-
-
-	"psLaguerreC()()":{
-		"prefix":"psLaguerreC",
-		"body":[
-			"\\psLaguerreC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
-		]
-	},
-
-
-	"psLaguerreCC()()":{
-		"prefix":"psLaguerreCC",
-		"body":[
-			"\\psLaguerreCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
-		]
-	},
-
-
-	"psLaguerreCCC()()":{
-		"prefix":"psLaguerreCCC",
-		"body":[
-			"\\psLaguerreCCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
-		]
-	},
-
-
-	"psLaguerreCCCC()()":{
-		"prefix":"psLaguerreCCCC",
-		"body":[
-			"\\psLaguerreCCCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
-		]
-	},
-
-
-	"psContourLaguerre()()":{
-		"prefix":"psContourLaguerre",
-		"body":[
-			"\\psContourLaguerre(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
-		]
-	},
-
-
-	"cplotstyle":{
-		"prefix":"cplotstyle",
-		"body":[
-			"\\cplotstyle"
-		]
-	},
-
-
-	"psCplot{}{}{}{}":{
-		"prefix":"psCplot",
-		"body":[
-			"\\psCplot{${1:x0}}{${2:x1}}{${3:vars}}{${4:function%definition}}"
-		]
-	},
-
-
-	"psLorenz*{}":{
-		"prefix":"*psLorenz",
-		"body":[
-			"\\psLorenz*{${1:y data}}"
-		]
-	},
-
-
-	"psLorenz*<x data>{}":{
-		"prefix":"*psLorenz",
-		"body":[
-			"\\psLorenz*<x data>{${1:y data}}"
-		]
-	},
-
-
-	"psLorenz*[]{}":{
-		"prefix":"*psLorenz",
-		"body":[
-			"\\psLorenz*[${2:options%keyvals}]{${1:y data}}"
-		]
-	},
-
-
-	"psLorenz*[]<>{}":{
-		"prefix":"*psLorenz",
-		"body":[
-			"\\psLorenz*[${2:options%keyvals}]<${3:x data}>{${1:y data}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +32,26 @@
 		"prefix":"psPolynomial",
 		"body":[
 			"\\psPolynomial[${3:options%keyvals}]{${1:x start}}{${2:x end}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBernstein()":{
+		"prefix":"psBernstein",
+		"body":[
+			"\\psBernstein(${1:i},${2:n})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psBernstein()()":{
+		"prefix":"psBernstein",
+		"body":[
+			"\\psBernstein(${1:t0},${2:t1})(${3:i},${4:n})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +59,8 @@
 		"prefix":"psBernstein",
 		"body":[
 			"\\psBernstein[${1:options%keyvals}](${2:i},${3:n})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -477,7 +68,17 @@
 		"prefix":"psBernstein",
 		"body":[
 			"\\psBernstein[${1:options%keyvals}](${2:t0},${3:t1})(${4:i},${5:n})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLaguerre()":{
+		"prefix":"psLaguerre",
+		"body":[
+			"\\psLaguerre(${1:x0},${2:x1})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +86,17 @@
 		"prefix":"psLaguerre",
 		"body":[
 			"\\psLaguerre[${1:options%keyvals}](${2:x0},${3:x1})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLegendre()":{
+		"prefix":"psLegendre",
+		"body":[
+			"\\psLegendre(${1:x0},${2:x1})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +104,17 @@
 		"prefix":"psLegendre",
 		"body":[
 			"\\psLegendre[${1:options%keyvals}](${2:x0},${3:x1})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psZero(){}{}":{
+		"prefix":"psZero",
+		"body":[
+			"\\psZero(${3:x0},${4:x1}){${1:function%definition}}{${2:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +122,8 @@
 		"prefix":"psZero",
 		"body":[
 			"\\psZero(${4:x0},${5:x1}){${1:functionA%definition}}[${3:functionB%definition}]{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -509,7 +131,8 @@
 		"prefix":"psZero",
 		"body":[
 			"\\psZero[${3:options%keyvals}](${4:x0},${5:x1}){${1:function%definition}}{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -517,7 +140,17 @@
 		"prefix":"psZero",
 		"body":[
 			"\\psZero[${3:options%keyvals}](${5:x0},${6:x1}){${1:functionA%definition}}[${4:functionB%definition}]{${2:node name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psFourier{}{}":{
+		"prefix":"psFourier",
+		"body":[
+			"\\psFourier{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +158,17 @@
 		"prefix":"psFourier",
 		"body":[
 			"\\psFourier[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBessel{}{}{}":{
+		"prefix":"psBessel",
+		"body":[
+			"\\psBessel{${1:order}}{${2:x0}}{${3:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +176,17 @@
 		"prefix":"psBessel",
 		"body":[
 			"\\psBessel[${4:options%keyvals}]{${1:order}}{${2:x0}}{${3:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psModBessel{}{}":{
+		"prefix":"psModBessel",
+		"body":[
+			"\\psModBessel{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +194,17 @@
 		"prefix":"psModBessel",
 		"body":[
 			"\\psModBessel[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psSi{}{}":{
+		"prefix":"psSi",
+		"body":[
+			"\\psSi{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +212,17 @@
 		"prefix":"psSi",
 		"body":[
 			"\\psSi[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pssi{}{}":{
+		"prefix":"pssi",
+		"body":[
+			"\\pssi{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +230,17 @@
 		"prefix":"pssi",
 		"body":[
 			"\\pssi[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psCi{}{}":{
+		"prefix":"psCi",
+		"body":[
+			"\\psCi{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +248,17 @@
 		"prefix":"psCi",
 		"body":[
 			"\\psCi[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psci{}{}":{
+		"prefix":"psci",
+		"body":[
+			"\\psci{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +266,17 @@
 		"prefix":"psci",
 		"body":[
 			"\\psci[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psIntegral{}{}(){}":{
+		"prefix":"psIntegral",
+		"body":[
+			"\\psIntegral{${1:x0}}{${2:x1}}(${4:a},${5:b}){${3:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +284,17 @@
 		"prefix":"psIntegral",
 		"body":[
 			"\\psIntegral[${4:options%keyvals}]{${1:x0}}{${2:x1}}(${5:a},${6:b}){${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psCumIntegral{}{}{}":{
+		"prefix":"psCumIntegral",
+		"body":[
+			"\\psCumIntegral{${1:x0}}{${2:x1}}{${3:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +302,17 @@
 		"prefix":"psCumIntegral",
 		"body":[
 			"\\psCumIntegral[${4:options%keyvals}]{${1:x0}}{${2:x1}}{${3:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psConv{}{}(){}{}":{
+		"prefix":"psConv",
+		"body":[
+			"\\psConv{${1:x0}}{${2:x1}}(${5:a},${6:b}){${3:function f%definition}}{${4:function g%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +320,17 @@
 		"prefix":"psConv",
 		"body":[
 			"\\psConv[${5:options%keyvals}]{${1:x0}}{${2:x1}}(${6:a},${7:b}){${3:function f%definition}}{${4:function g%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGauss{}{}":{
+		"prefix":"psGauss",
+		"body":[
+			"\\psGauss{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +338,17 @@
 		"prefix":"psGauss",
 		"body":[
 			"\\psGauss[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGaussI{}{}":{
+		"prefix":"psGaussI",
+		"body":[
+			"\\psGaussI{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,7 +356,17 @@
 		"prefix":"psGaussI",
 		"body":[
 			"\\psGaussI[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBinomial{}{}":{
+		"prefix":"psBinomial",
+		"body":[
+			"\\psBinomial{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -621,7 +374,17 @@
 		"prefix":"psBinomial",
 		"body":[
 			"\\psBinomial[${3:options}]{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBinomialC{}{}":{
+		"prefix":"psBinomialC",
+		"body":[
+			"\\psBinomialC{${1:N}}{${2:probability}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -629,7 +392,17 @@
 		"prefix":"psBinomialC",
 		"body":[
 			"\\psBinomialC[${3:options%keyvals}]{${1:N}}{${2:probability}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBinomialN{}{}":{
+		"prefix":"psBinomialN",
+		"body":[
+			"\\psBinomialN{${1:N}}{${2:probability}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +410,17 @@
 		"prefix":"psBinomialN",
 		"body":[
 			"\\psBinomialN[${3:options%keyvals}]{${1:N}}{${2:probability}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBinomialF{}{}":{
+		"prefix":"psBinomialF",
+		"body":[
+			"\\psBinomialF{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -645,7 +428,17 @@
 		"prefix":"psBinomialF",
 		"body":[
 			"\\psBinomialF[${3:options}]{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBinomialFS{}{}":{
+		"prefix":"psBinomialFS",
+		"body":[
+			"\\psBinomialFS{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +446,17 @@
 		"prefix":"psBinomialFS",
 		"body":[
 			"\\psBinomialFS[${3:options}]{${1:<N> or <m,N> or <m,n,N>}}{${2:probability}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psPoisson{}{}":{
+		"prefix":"psPoisson",
+		"body":[
+			"\\psPoisson{${1:<N> or <M,N>}}{${2:lambda}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +464,17 @@
 		"prefix":"psPoisson",
 		"body":[
 			"\\psPoisson[${3:options}]{${1:<N> or <M,N>}}{${2:lambda}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGammaDist{}{}":{
+		"prefix":"psGammaDist",
+		"body":[
+			"\\psGammaDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,7 +482,17 @@
 		"prefix":"psGammaDist",
 		"body":[
 			"\\psGammaDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psChiIIDist{}{}":{
+		"prefix":"psChiIIDist",
+		"body":[
+			"\\psChiIIDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +500,17 @@
 		"prefix":"psChiIIDist",
 		"body":[
 			"\\psChiIIDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psTDist{}{}":{
+		"prefix":"psTDist",
+		"body":[
+			"\\psTDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +518,17 @@
 		"prefix":"psTDist",
 		"body":[
 			"\\psTDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psNonCentralTDist{}{}":{
+		"prefix":"psNonCentralTDist",
+		"body":[
+			"\\psNonCentralTDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -693,7 +536,17 @@
 		"prefix":"psNonCentralTDist",
 		"body":[
 			"\\psNonCentralTDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psFDist{}{}":{
+		"prefix":"psFDist",
+		"body":[
+			"\\psFDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -701,7 +554,17 @@
 		"prefix":"psFDist",
 		"body":[
 			"\\psFDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psNonCentralFDist{}{}":{
+		"prefix":"psNonCentralFDist",
+		"body":[
+			"\\psNonCentralFDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -709,7 +572,17 @@
 		"prefix":"psNonCentralFDist",
 		"body":[
 			"\\psNonCentralFDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psBetaDist{}{}":{
+		"prefix":"psBetaDist",
+		"body":[
+			"\\psBetaDist{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -717,7 +590,17 @@
 		"prefix":"psBetaDist",
 		"body":[
 			"\\psBetaDist[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psCauchy{}{}":{
+		"prefix":"psCauchy",
+		"body":[
+			"\\psCauchy{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -725,7 +608,17 @@
 		"prefix":"psCauchy",
 		"body":[
 			"\\psCauchy[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psCauchyI{}{}":{
+		"prefix":"psCauchyI",
+		"body":[
+			"\\psCauchyI{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -733,7 +626,17 @@
 		"prefix":"psCauchyI",
 		"body":[
 			"\\psCauchyI[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psWeibull{}{}":{
+		"prefix":"psWeibull",
+		"body":[
+			"\\psWeibull{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -741,7 +644,17 @@
 		"prefix":"psWeibull",
 		"body":[
 			"\\psWeibull[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psWeibullI{}{}":{
+		"prefix":"psWeibullI",
+		"body":[
+			"\\psWeibullI{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -749,7 +662,17 @@
 		"prefix":"psWeibullI",
 		"body":[
 			"\\psWeibullI[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psVasicek{}{}":{
+		"prefix":"psVasicek",
+		"body":[
+			"\\psVasicek{${1:x0}}{${2:x1}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -757,7 +680,26 @@
 		"prefix":"psVasicek",
 		"body":[
 			"\\psVasicek[${3:options%keyvals}]{${1:x0}}{${2:x1}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLorenz{}":{
+		"prefix":"psLorenz",
+		"body":[
+			"\\psLorenz{${1:y data}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psLorenz<x data>{}":{
+		"prefix":"psLorenz<x data>",
+		"body":[
+			"\\psLorenz<x data>{${1:y data}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +707,8 @@
 		"prefix":"psLorenz",
 		"body":[
 			"\\psLorenz[${2:options%keyvals}]{${1:y data}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -773,7 +716,53 @@
 		"prefix":"psLorenz",
 		"body":[
 			"\\psLorenz[${2:options%keyvals}]<${3:x data}>{${1:y data}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLorenz*{}":{
+		"prefix":"*psLorenz",
+		"body":[
+			"\\psLorenz*{${1:y data}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psLorenz*<x data>{}":{
+		"prefix":"*psLorenz<x data>",
+		"body":[
+			"\\psLorenz*<x data>{${1:y data}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psLorenz*[]{}":{
+		"prefix":"*psLorenz",
+		"body":[
+			"\\psLorenz*[${2:options%keyvals}]{${1:y data}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psLorenz*[]<>{}":{
+		"prefix":"*psLorenz",
+		"body":[
+			"\\psLorenz*[${2:options%keyvals}]<${3:x data}>{${1:y data}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"psLame{}":{
+		"prefix":"psLame",
+		"body":[
+			"\\psLame{${1:r}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +770,17 @@
 		"prefix":"psLame",
 		"body":[
 			"\\psLame[${2:options%keyvals}]{${1:r}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psThomae(){}":{
+		"prefix":"psThomae",
+		"body":[
+			"\\psThomae(${2:x0},${3:x1}){${1:points}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -789,7 +788,17 @@
 		"prefix":"psThomae",
 		"body":[
 			"\\psThomae[${2:options%keyvals}](${3:x0},${4:x1}){${1:points}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psWeierstrass(){}":{
+		"prefix":"psWeierstrass",
+		"body":[
+			"\\psWeierstrass(${2:x0},${3:x1}){${1:a}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +806,8 @@
 		"prefix":"psWeierstrass",
 		"body":[
 			"\\psWeierstrass(${3:x0},${4:x1})[${2:a}]{${1:b}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -805,7 +815,8 @@
 		"prefix":"psWeierstrass",
 		"body":[
 			"\\psWeierstrass[${2:options%keyvals}](${3:x0},${4:x1}){${1:a}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -813,7 +824,17 @@
 		"prefix":"psWeierstrass",
 		"body":[
 			"\\psWeierstrass[${2:options%keyvals}](${4:x0},${5:x1})[${3:a}]{${1:b}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psplotImp()(){}":{
+		"prefix":"psplotImp",
+		"body":[
+			"\\psplotImp(${2:xmin},${3:ymin})(${4:xmax},${5:ymax}){${1:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -821,7 +842,8 @@
 		"prefix":"psplotImp",
 		"body":[
 			"\\psplotImp(${3:xmin},${4:ymin})(${5:xmax},${6:ymax})[${2:PS code}]{${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -829,7 +851,8 @@
 		"prefix":"psplotImp",
 		"body":[
 			"\\psplotImp[${2:options%keyvals}](${3:xmin},${4:ymin})(${5:xmax},${6:ymax}){${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -837,7 +860,17 @@
 		"prefix":"psplotImp",
 		"body":[
 			"\\psplotImp[${2:options%keyvals}](${4:xmin},${5:ymin})(${6:xmax},${7:ymax})[${3:PS code}]{${1:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psVolume(){}{}":{
+		"prefix":"psVolume",
+		"body":[
+			"\\psVolume(${3:x0},${4:x1}){${1:steps}}{${2:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -845,7 +878,26 @@
 		"prefix":"psVolume",
 		"body":[
 			"\\psVolume[${3:options%keyvals}](${4:x0},${5:x1}){${1:steps}}{${2:function%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGetZeros(){}":{
+		"prefix":"psGetZeros",
+		"body":[
+			"\\psGetZeros(${2:x0},${3:x1}){${1:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psLaguerreC()()":{
+		"prefix":"psLaguerreC",
+		"body":[
+			"\\psLaguerreC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -853,7 +905,17 @@
 		"prefix":"psLaguerreC",
 		"body":[
 			"\\psLaguerreC[${1:options%keyvals}](${2:xmin},${3:xmax})(${4:ymin},${5:ymax})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLaguerreCC()()":{
+		"prefix":"psLaguerreCC",
+		"body":[
+			"\\psLaguerreCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -861,7 +923,17 @@
 		"prefix":"psLaguerreCC",
 		"body":[
 			"\\psLaguerreCC[${1:options%keyvals}](${2:xmin},${3:xmax})(${4:ymin},${5:ymax})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLaguerreCCC()()":{
+		"prefix":"psLaguerreCCC",
+		"body":[
+			"\\psLaguerreCCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -869,7 +941,17 @@
 		"prefix":"psLaguerreCCC",
 		"body":[
 			"\\psLaguerreCCC[${1:options%keyvals}](${2:xmin},${3:xmax})(${4:ymin},${5:ymax})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psLaguerreCCCC()()":{
+		"prefix":"psLaguerreCCCC",
+		"body":[
+			"\\psLaguerreCCCC(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -877,7 +959,17 @@
 		"prefix":"psLaguerreCCCC",
 		"body":[
 			"\\psLaguerreCCCC[${1:options%keyvals}](${2:xmin},${3:xmax})(${4:ymin},${5:ymax})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psContourLaguerre()()":{
+		"prefix":"psContourLaguerre",
+		"body":[
+			"\\psContourLaguerre(${1:xmin},${2:xmax})(${3:ymin},${4:ymax})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -885,6 +977,25 @@
 		"prefix":"psContourLaguerre",
 		"body":[
 			"\\psContourLaguerre[${1:options%keyvals}](${2:xmin},${3:xmax})(${4:ymin},${5:ymax})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cplotstyle":{
+		"prefix":"cplotstyle",
+		"body":[
+			"\\cplotstyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psCplot{}{}{}{}":{
+		"prefix":"psCplot",
+		"body":[
+			"\\psCplot{${1:x0}}{${2:x1}}{${3:vars}}{${4:function%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

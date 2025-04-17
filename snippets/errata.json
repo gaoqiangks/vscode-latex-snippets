@@ -5,7 +5,8 @@
 		"prefix":"ifmargins",
 		"body":[
 			"\\ifmargins"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"marginstrue",
 		"body":[
 			"\\marginstrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"marginsfalse",
 		"body":[
 			"\\marginsfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"iffoots",
 		"body":[
 			"\\iffoots"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"footstrue",
 		"body":[
 			"\\footstrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"footsfalse",
 		"body":[
 			"\\footsfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"ifrecord",
 		"body":[
 			"\\ifrecord"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"recordtrue",
 		"body":[
 			"\\recordtrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"recordfalse",
 		"body":[
 			"\\recordfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,95 +86,8 @@
 		"prefix":"erratumAdd",
 		"body":[
 			"\\erratumAdd{${1:explanation%text}}{${2:new text%text}}"
-		]
-	},
-
-
-	"erratumDelete{}{}":{
-		"prefix":"erratumDelete",
-		"body":[
-			"\\erratumDelete{${1:explanation%text}}{${2:deleted text%text}}"
-		]
-	},
-
-
-	"erratumReplace{}{}{}":{
-		"prefix":"erratumReplace",
-		"body":[
-			"\\erratumReplace{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
-		]
-	},
-
-
-	"erratumItem{}{}":{
-		"prefix":"erratumItem",
-		"body":[
-			"\\erratumItem{${1:reference}}{${2:explanation%text}}"
-		]
-	},
-
-
-	"printerrata{}":{
-		"prefix":"printerrata",
-		"body":[
-			"\\printerrata{${1:file}}"
-		]
-	},
-
-
-	"PrintErrata{}":{
-		"prefix":"PrintErrata",
-		"body":[
-			"\\PrintErrata{${1:file}}"
-		]
-	},
-
-
-	"eAdd{}":{
-		"prefix":"eAdd",
-		"body":[
-			"\\eAdd{${1:text}}"
-		]
-	},
-
-
-	"eDelete{}":{
-		"prefix":"eDelete",
-		"body":[
-			"\\eDelete{${1:text}}"
-		]
-	},
-
-
-	"eReplace{}":{
-		"prefix":"eReplace",
-		"body":[
-			"\\eReplace{${1:text}}"
-		]
-	},
-
-
-	"ErratumRef":{
-		"prefix":"ErratumRef",
-		"body":[
-			"\\ErratumRef"
-		]
-	},
-
-
-	"theerratum":{
-		"prefix":"theerratum",
-		"body":[
-			"\\theerratum"
-		]
-	},
-
-
-	"ednotemessage":{
-		"prefix":"ednotemessage",
-		"body":[
-			"\\ednotemessage"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +95,17 @@
 		"prefix":"erratumAdd",
 		"body":[
 			"\\erratumAdd[${3:options%keyvals}]{${1:explanation%text}}{${2:new text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"erratumDelete{}{}":{
+		"prefix":"erratumDelete",
+		"body":[
+			"\\erratumDelete{${1:explanation%text}}{${2:deleted text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +113,17 @@
 		"prefix":"erratumDelete",
 		"body":[
 			"\\erratumDelete[${3:options%keyvals}]{${1:explanation%text}}{${2:deleted text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"erratumReplace{}{}{}":{
+		"prefix":"erratumReplace",
+		"body":[
+			"\\erratumReplace{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +131,89 @@
 		"prefix":"erratumReplace",
 		"body":[
 			"\\erratumReplace[${4:options%keyvals}]{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"erratumItem{}{}":{
+		"prefix":"erratumItem",
+		"body":[
+			"\\erratumItem{${1:reference}}{${2:explanation%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printerrata{}":{
+		"prefix":"printerrata",
+		"body":[
+			"\\printerrata{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintErrata{}":{
+		"prefix":"PrintErrata",
+		"body":[
+			"\\PrintErrata{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eAdd{}":{
+		"prefix":"eAdd",
+		"body":[
+			"\\eAdd{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eDelete{}":{
+		"prefix":"eDelete",
+		"body":[
+			"\\eDelete{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eReplace{}":{
+		"prefix":"eReplace",
+		"body":[
+			"\\eReplace{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ErratumRef":{
+		"prefix":"ErratumRef",
+		"body":[
+			"\\ErratumRef"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theerratum":{
+		"prefix":"theerratum",
+		"body":[
+			"\\theerratum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ednotemessage":{
+		"prefix":"ednotemessage",
+		"body":[
+			"\\ednotemessage"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -199,7 +223,19 @@
 			"\\begin{erratum}",
 				"\t$1",
 			"\\end{erratum}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"erratum[]":{
+		"prefix":"erratum",
+		"body":[
+			"\\begin{erratum}",
+				"\t[${1:options%keyvals}]",
+			"\\end{erratum}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -209,16 +245,7 @@
 			"\\begin{errata}",
 				"\t$1",
 			"\\end{errata}"
-		]
-	},
-
-
-	"erratum":{
-		"prefix":"erratum",
-		"body":[
-			"\\begin{erratum}",
-				"\t$1",
-			"\\end{erratum}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

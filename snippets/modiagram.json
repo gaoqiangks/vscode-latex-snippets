@@ -5,7 +5,8 @@
 		"prefix":"setmodiagram",
 		"body":[
 			"\\setmodiagram{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,39 +14,8 @@
 		"prefix":"atom",
 		"body":[
 			"\\atom{${1:left or right}}{${2:AO-spec%keyvals}}"
-		]
-	},
-
-
-	"molecule{}":{
-		"prefix":"molecule",
-		"body":[
-			"\\molecule{${1:MO-spec%keyvals}}"
-		]
-	},
-
-
-	"AO(){}{}":{
-		"prefix":"AO",
-		"body":[
-			"\\AO(${3:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
-		]
-	},
-
-
-	"connect{}":{
-		"prefix":"connect",
-		"body":[
-			"\\connect{${1:AO-connect}}"
-		]
-	},
-
-
-	"EnergyAxis":{
-		"prefix":"EnergyAxis",
-		"body":[
-			"\\EnergyAxis"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,17 @@
 		"prefix":"atom",
 		"body":[
 			"\\atom[${3:name}]{${1:left or right}}{${2:AO-spec%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"molecule{}":{
+		"prefix":"molecule",
+		"body":[
+			"\\molecule{${1:MO-spec%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +41,17 @@
 		"prefix":"molecule",
 		"body":[
 			"\\molecule[${2:name}]{${1:MO-spec%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AO(){}{}":{
+		"prefix":"AO",
+		"body":[
+			"\\AO(${3:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,8 @@
 		"prefix":"AO",
 		"body":[
 			"\\AO(${4:%<xshift%>}){${1:type}}[${3:options}]{${2:energy; el-spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,7 +68,8 @@
 		"prefix":"AO",
 		"body":[
 			"\\AO[${3:name}](${4:%<xshift%>}){${1:type}}{${2:energy; el-spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +77,26 @@
 		"prefix":"AO",
 		"body":[
 			"\\AO[${3:name}](${5:%<xshift%>}){${1:type}}[${4:options}]{${2:energy; el-spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"connect{}":{
+		"prefix":"connect",
+		"body":[
+			"\\connect{${1:AO-connect}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnergyAxis":{
+		"prefix":"EnergyAxis",
+		"body":[
+			"\\EnergyAxis"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"EnergyAxis",
 		"body":[
 			"\\EnergyAxis[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -103,16 +115,18 @@
 			"\\begin{modiagram}",
 				"\t$1",
 			"\\end{modiagram}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"modiagram":{
+	"modiagram[]":{
 		"prefix":"modiagram",
 		"body":[
 			"\\begin{modiagram}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{modiagram}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

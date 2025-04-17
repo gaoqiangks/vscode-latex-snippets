@@ -5,7 +5,8 @@
 		"prefix":"ListProperties",
 		"body":[
 			"\\ListProperties(${1:options%keyvals})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"NewList",
 		"body":[
 			"\\NewList(${1:options%keyvals})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ifPilcrow",
 		"body":[
 			"\\ifPilcrow"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Pilcrowtrue",
 		"body":[
 			"\\Pilcrowtrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Pilcrowfalse",
 		"body":[
 			"\\Pilcrowfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ifAt",
 		"body":[
 			"\\ifAt"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"Attrue",
 		"body":[
 			"\\Attrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"Atfalse",
 		"body":[
 			"\\Atfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"ifSharp",
 		"body":[
 			"\\ifSharp"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"Sharptrue",
 		"body":[
 			"\\Sharptrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"Sharpfalse",
 		"body":[
 			"\\Sharpfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"ifAmpersand",
 		"body":[
 			"\\ifAmpersand"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"Ampersandtrue",
 		"body":[
 			"\\Ampersandtrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"Ampersandfalse",
 		"body":[
 			"\\Ampersandfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"ifDubiousFigure",
 		"body":[
 			"\\ifDubiousFigure"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"DubiousFiguretrue",
 		"body":[
 			"\\DubiousFiguretrue"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"DubiousFigurefalse",
 		"body":[
 			"\\DubiousFigurefalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -143,7 +160,19 @@
 			"\\begin{easylist}",
 				"\t$1",
 			"\\end{easylist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"easylist[]":{
+		"prefix":"easylist",
+		"body":[
+			"\\begin{easylist}",
+				"\t[${1:style%keyvals}]",
+			"\\end{easylist}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -153,26 +182,18 @@
 			"\\begin{easylist}",
 				"\t$1",
 			"\\end{easylist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"easylist":{
+	"easylist[]":{
 		"prefix":"easylist",
 		"body":[
 			"\\begin{easylist}",
-				"\t$1",
+				"\t[${1:style%keyvals}]",
 			"\\end{easylist}"
-		]
-	},
-
-
-	"easylist":{
-		"prefix":"easylist",
-		"body":[
-			"\\begin{easylist}",
-				"\t$1",
-			"\\end{easylist}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

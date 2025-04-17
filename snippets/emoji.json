@@ -5,15 +5,8 @@
 		"prefix":"setemojifont",
 		"body":[
 			"\\setemojifont{${1:font}}"
-		]
-	},
-
-
-	"emoji{}":{
-		"prefix":"emoji",
-		"body":[
-			"\\emoji{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,6 +14,16 @@
 		"prefix":"setemojifont",
 		"body":[
 			"\\setemojifont{${1:font}}[${2:font features%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"emoji{}":{
+		"prefix":"emoji",
+		"body":[
+			"\\emoji{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

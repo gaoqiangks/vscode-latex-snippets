@@ -5,239 +5,8 @@
 		"prefix":"Statep",
 		"body":[
 			"\\Statep{${1:text}}"
-		]
-	},
-
-
-	"Elsif{}":{
-		"prefix":"Elsif",
-		"body":[
-			"\\Elsif{${1:text}}"
-		]
-	},
-
-
-	"Switch{}":{
-		"prefix":"Switch",
-		"body":[
-			"\\Switch{${1:expression}}"
-		]
-	},
-
-
-	"EndSwitch":{
-		"prefix":"EndSwitch",
-		"body":[
-			"\\EndSwitch"
-		]
-	},
-
-
-	"Case{}":{
-		"prefix":"Case",
-		"body":[
-			"\\Case{${1:constant-list}}"
-		]
-	},
-
-
-	"EndCase":{
-		"prefix":"EndCase",
-		"body":[
-			"\\EndCase"
-		]
-	},
-
-
-	"Otherwise":{
-		"prefix":"Otherwise",
-		"body":[
-			"\\Otherwise"
-		]
-	},
-
-
-	"EndOtherwise":{
-		"prefix":"EndOtherwise",
-		"body":[
-			"\\EndOtherwise"
-		]
-	},
-
-
-	"ForEach{}":{
-		"prefix":"ForEach",
-		"body":[
-			"\\ForEach{${1:text}}"
-		]
-	},
-
-
-	"To":{
-		"prefix":"To",
-		"body":[
-			"\\To"
-		]
-	},
-
-
-	"DownTo":{
-		"prefix":"DownTo",
-		"body":[
-			"\\DownTo"
-		]
-	},
-
-
-	"Step":{
-		"prefix":"Step",
-		"body":[
-			"\\Step"
-		]
-	},
-
-
-	"Continue":{
-		"prefix":"Continue",
-		"body":[
-			"\\Continue"
-		]
-	},
-
-
-	"Break":{
-		"prefix":"Break",
-		"body":[
-			"\\Break"
-		]
-	},
-
-
-	"True":{
-		"prefix":"True",
-		"body":[
-			"\\True"
-		]
-	},
-
-
-	"False":{
-		"prefix":"False",
-		"body":[
-			"\\False"
-		]
-	},
-
-
-	"Nil":{
-		"prefix":"Nil",
-		"body":[
-			"\\Nil"
-		]
-	},
-
-
-	"Id{}":{
-		"prefix":"Id",
-		"body":[
-			"\\Id{${1:identifier}}"
-		]
-	},
-
-
-	"Read":{
-		"prefix":"Read",
-		"body":[
-			"\\Read"
-		]
-	},
-
-
-	"Write":{
-		"prefix":"Write",
-		"body":[
-			"\\Write"
-		]
-	},
-
-
-	"Commentl{}":{
-		"prefix":"Commentl",
-		"body":[
-			"\\Commentl{${1:text}}"
-		]
-	},
-
-
-	"CommentIn{}":{
-		"prefix":"CommentIn",
-		"body":[
-			"\\CommentIn{${1:text}}"
-		]
-	},
-
-
-	"AlgSet{}":{
-		"prefix":"AlgSet",
-		"body":[
-			"\\AlgSet{${1:options%keyvals}}"
-		]
-	},
-
-
-	"CommentSymbol":{
-		"prefix":"CommentSymbol",
-		"body":[
-			"\\CommentSymbol"
-		]
-	},
-
-
-	"CommentSymbolRight":{
-		"prefix":"CommentSymbolRight",
-		"body":[
-			"\\CommentSymbolRight"
-		]
-	},
-
-
-	"AlgLanguageSet{}{}":{
-		"prefix":"AlgLanguageSet",
-		"body":[
-			"\\AlgLanguageSet{${1:language}}{${2:keyword assignments}}"
-		]
-	},
-
-
-	"SetKeyword{}{}":{
-		"prefix":"SetKeyword",
-		"body":[
-			"\\SetKeyword{${1:keyword}}{${2:value}}"
-		]
-	},
-
-
-	"Keyword{}":{
-		"prefix":"Keyword",
-		"body":[
-			"\\Keyword{${1:keyword}}"
-		]
-	},
-
-
-	"Constant{}":{
-		"prefix":"Constant",
-		"body":[
-			"\\Constant{${1:name}}"
-		]
-	},
-
-
-	"Module{}":{
-		"prefix":"Module",
-		"body":[
-			"\\Module{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +14,8 @@
 		"prefix":"Statep",
 		"body":[
 			"\\Statep{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +23,8 @@
 		"prefix":"If",
 		"body":[
 			"\\If{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -261,7 +32,8 @@
 		"prefix":"EndIf",
 		"body":[
 			"\\EndIf[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +41,17 @@
 		"prefix":"Else",
 		"body":[
 			"\\Else[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Elsif{}":{
+		"prefix":"Elsif",
+		"body":[
+			"\\Elsif{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +59,17 @@
 		"prefix":"Elsif",
 		"body":[
 			"\\Elsif{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Switch{}":{
+		"prefix":"Switch",
+		"body":[
+			"\\Switch{${1:expression}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +77,17 @@
 		"prefix":"Switch",
 		"body":[
 			"\\Switch{${1:expression}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EndSwitch":{
+		"prefix":"EndSwitch",
+		"body":[
+			"\\EndSwitch"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +95,17 @@
 		"prefix":"EndSwitch",
 		"body":[
 			"\\EndSwitch[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Case{}":{
+		"prefix":"Case",
+		"body":[
+			"\\Case{${1:constant-list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +113,17 @@
 		"prefix":"Case",
 		"body":[
 			"\\Case{${1:constant-list}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EndCase":{
+		"prefix":"EndCase",
+		"body":[
+			"\\EndCase"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +131,17 @@
 		"prefix":"EndCase",
 		"body":[
 			"\\EndCase[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Otherwise":{
+		"prefix":"Otherwise",
+		"body":[
+			"\\Otherwise"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +149,17 @@
 		"prefix":"Otherwise",
 		"body":[
 			"\\Otherwise[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EndOtherwise":{
+		"prefix":"EndOtherwise",
+		"body":[
+			"\\EndOtherwise"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +167,8 @@
 		"prefix":"EndOtherwise",
 		"body":[
 			"\\EndOtherwise[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +176,8 @@
 		"prefix":"For",
 		"body":[
 			"\\For{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +185,17 @@
 		"prefix":"EndFor",
 		"body":[
 			"\\EndFor[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ForEach{}":{
+		"prefix":"ForEach",
+		"body":[
+			"\\ForEach{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +203,8 @@
 		"prefix":"ForEach",
 		"body":[
 			"\\ForEach{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -357,7 +212,8 @@
 		"prefix":"ForAll",
 		"body":[
 			"\\ForAll{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,7 +221,8 @@
 		"prefix":"While",
 		"body":[
 			"\\While{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -373,7 +230,8 @@
 		"prefix":"EndWhile",
 		"body":[
 			"\\EndWhile[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -381,7 +239,8 @@
 		"prefix":"Repeat",
 		"body":[
 			"\\Repeat[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -389,7 +248,8 @@
 		"prefix":"Until",
 		"body":[
 			"\\Until{${1:text}}[${2:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -397,7 +257,8 @@
 		"prefix":"Loop",
 		"body":[
 			"\\Loop[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +266,107 @@
 		"prefix":"EndLoop",
 		"body":[
 			"\\EndLoop[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"To":{
+		"prefix":"To",
+		"body":[
+			"\\To"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DownTo":{
+		"prefix":"DownTo",
+		"body":[
+			"\\DownTo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Step":{
+		"prefix":"Step",
+		"body":[
+			"\\Step"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Continue":{
+		"prefix":"Continue",
+		"body":[
+			"\\Continue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Break":{
+		"prefix":"Break",
+		"body":[
+			"\\Break"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"True":{
+		"prefix":"True",
+		"body":[
+			"\\True"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"False":{
+		"prefix":"False",
+		"body":[
+			"\\False"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Nil":{
+		"prefix":"Nil",
+		"body":[
+			"\\Nil"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Id{}":{
+		"prefix":"Id",
+		"body":[
+			"\\Id{${1:identifier}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Read":{
+		"prefix":"Read",
+		"body":[
+			"\\Read"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Write":{
+		"prefix":"Write",
+		"body":[
+			"\\Write"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,7 +374,8 @@
 		"prefix":"Procedure",
 		"body":[
 			"\\Procedure{${1:name}}{${2:params}}[${3:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -421,7 +383,8 @@
 		"prefix":"EndProcedure",
 		"body":[
 			"\\EndProcedure[${1:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,7 +392,71 @@
 		"prefix":"Function",
 		"body":[
 			"\\Function{${1:name}}{${2:params}}[${3:comment%text}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Commentl{}":{
+		"prefix":"Commentl",
+		"body":[
+			"\\Commentl{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CommentIn{}":{
+		"prefix":"CommentIn",
+		"body":[
+			"\\CommentIn{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AlgSet{}":{
+		"prefix":"AlgSet",
+		"body":[
+			"\\AlgSet{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CommentSymbol":{
+		"prefix":"CommentSymbol",
+		"body":[
+			"\\CommentSymbol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CommentSymbolRight":{
+		"prefix":"CommentSymbolRight",
+		"body":[
+			"\\CommentSymbolRight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AlgLanguageSet{}{}":{
+		"prefix":"AlgLanguageSet",
+		"body":[
+			"\\AlgLanguageSet{${1:language}}{${2:keyword assignments}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetKeyword{}{}":{
+		"prefix":"SetKeyword",
+		"body":[
+			"\\SetKeyword{${1:keyword}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -437,7 +464,17 @@
 		"prefix":"SetKeyword",
 		"body":[
 			"\\SetKeyword[${3:language}]{${1:keyword}}{${2:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Keyword{}":{
+		"prefix":"Keyword",
+		"body":[
+			"\\Keyword{${1:keyword}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,6 +482,25 @@
 		"prefix":"Keyword",
 		"body":[
 			"\\Keyword[${2:language}]{${1:keyword}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Constant{}":{
+		"prefix":"Constant",
+		"body":[
+			"\\Constant{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Module{}":{
+		"prefix":"Module",
+		"body":[
+			"\\Module{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

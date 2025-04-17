@@ -5,23 +5,8 @@
 		"prefix":"rsnumber",
 		"body":[
 			"\\rsnumber{${1:number}}"
-		]
-	},
-
-
-	"rsphrase{}":{
-		"prefix":"rsphrase",
-		"body":[
-			"\\rsphrase{${1:number}}"
-		]
-	},
-
-
-	"iflanguage{}{}{}":{
-		"prefix":"iflanguage",
-		"body":[
-			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"rsnumber",
 		"body":[
 			"\\rsnumber[${2:text}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rsphrase{}":{
+		"prefix":"rsphrase",
+		"body":[
+			"\\rsphrase{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +32,16 @@
 		"prefix":"rsphrase",
 		"body":[
 			"\\rsphrase[${2:text}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"iflanguage{}{}{}":{
+		"prefix":"iflanguage",
+		"body":[
+			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,47 +5,8 @@
 		"prefix":"VautoSubF",
 		"body":[
 			"\\VautoSubF{${1:startline}}{${2:endline}}{${3:file}}{${4:caption}}{${5:label}}"
-		]
-	},
-
-
-	"VautoSfFont{}":{
-		"prefix":"VautoSfFont",
-		"body":[
-			"\\VautoSfFont{${1:font commands}}"
-		]
-	},
-
-
-	"VautoPl{}":{
-		"prefix":"VautoPl",
-		"body":[
-			"\\VautoPl{${1:placement}}"
-		]
-	},
-
-
-	"VautoLines{}":{
-		"prefix":"VautoLines",
-		"body":[
-			"\\VautoLines{${1:lines-per-page}}"
-		]
-	},
-
-
-	"VautoSubFF{}":{
-		"prefix":"VautoSubFF",
-		"body":[
-			"\\VautoSubFF{${1:font commands}}"
-		]
-	},
-
-
-	"ifsubstr{}{}{}{}":{
-		"prefix":"ifsubstr",
-		"body":[
-			"\\ifsubstr{${1:string}}{${2:substring}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,17 @@
 		"prefix":"VautoSubF",
 		"body":[
 			"\\VautoSubF[${6:lines-numbered}]{${1:startline}}{${2:endline}}{${3:file}}{${4:caption}}{${5:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VautoSfFont{}":{
+		"prefix":"VautoSfFont",
+		"body":[
+			"\\VautoSfFont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,26 @@
 		"prefix":"VautoSfFont",
 		"body":[
 			"\\VautoSfFont[${2:linenum-font-commands}]{${1:font-commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VautoPl{}":{
+		"prefix":"VautoPl",
+		"body":[
+			"\\VautoPl{${1:placement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VautoLines{}":{
+		"prefix":"VautoLines",
+		"body":[
+			"\\VautoLines{${1:lines-per-page}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,17 @@
 		"prefix":"VautoLines",
 		"body":[
 			"\\VautoLines[${2:first-page-lines}]{${1:lines-per-page}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VautoSubFF{}":{
+		"prefix":"VautoSubFF",
+		"body":[
+			"\\VautoSubFF{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +77,16 @@
 		"prefix":"VautoSubFF",
 		"body":[
 			"\\VautoSubFF[${2:linenum-font-commands}]{${1:font-commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifsubstr{}{}{}{}":{
+		"prefix":"ifsubstr",
+		"body":[
+			"\\ifsubstr{${1:string}}{${2:substring}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

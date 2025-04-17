@@ -5,71 +5,8 @@
 		"prefix":"helpgrid",
 		"body":[
 			"\\helpgrid"
-		]
-	},
-
-
-	"callout{}{}{}":{
-		"prefix":"callout",
-		"body":[
-			"\\callout{${1:center-coords}}{${2:note%text}}{${3:tip-coords}}"
-		]
-	},
-
-
-	"note{}{}":{
-		"prefix":"note",
-		"body":[
-			"\\note{${1:coords}}{${2:note%text}}"
-		]
-	},
-
-
-	"arrow{}{}":{
-		"prefix":"arrow",
-		"body":[
-			"\\arrow{${1:center-coords}}{${2:tip-coords}}"
-		]
-	},
-
-
-	"focol":{
-		"prefix":"focol",
-		"body":[
-			"\\focol"
-		]
-	},
-
-
-	"bgcol":{
-		"prefix":"bgcol",
-		"body":[
-			"\\bgcol"
-		]
-	},
-
-
-	"arcol":{
-		"prefix":"arcol",
-		"body":[
-			"\\arcol"
-		]
-	},
-
-
-	"xtic":{
-		"prefix":"xtic",
-		"body":[
-			"\\xtic"
-		]
-	},
-
-
-	"ytic":{
-		"prefix":"ytic",
-		"body":[
-			"\\ytic"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,16 +14,90 @@
 		"prefix":"helpgrid",
 		"body":[
 			"\\helpgrid[${1:color}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"annotate":{
+	"callout{}{}{}":{
+		"prefix":"callout",
+		"body":[
+			"\\callout{${1:center-coords}}{${2:note%text}}{${3:tip-coords}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"note{}{}":{
+		"prefix":"note",
+		"body":[
+			"\\note{${1:coords}}{${2:note%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arrow{}{}":{
+		"prefix":"arrow",
+		"body":[
+			"\\arrow{${1:center-coords}}{${2:tip-coords}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"focol":{
+		"prefix":"focol",
+		"body":[
+			"\\focol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bgcol":{
+		"prefix":"bgcol",
+		"body":[
+			"\\bgcol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"arcol":{
+		"prefix":"arcol",
+		"body":[
+			"\\arcol"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xtic":{
+		"prefix":"xtic",
+		"body":[
+			"\\xtic"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ytic":{
+		"prefix":"ytic",
+		"body":[
+			"\\ytic"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"annotate{}{}":{
 		"prefix":"annotate",
 		"body":[
 			"\\begin{annotate}",
-				"\t$1",
+				"\t{${1:object}}{${2:width-factor}}",
 			"\\end{annotate}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

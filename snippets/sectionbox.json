@@ -5,7 +5,8 @@
 		"prefix":"framesectionbox",
 		"body":[
 			"\\framesectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"doublesectionbox",
 		"body":[
 			"\\doublesectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"shadowsectionbox",
 		"body":[
 			"\\shadowsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"framesubsectionbox",
 		"body":[
 			"\\framesubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"doublesubsectionbox",
 		"body":[
 			"\\doublesubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"shadowsubsectionbox",
 		"body":[
 			"\\shadowsubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"framesubsubsectionbox",
 		"body":[
 			"\\framesubsubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"doublesubsubsectionbox",
 		"body":[
 			"\\doublesubsubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"shadowsubsubsectionbox",
 		"body":[
 			"\\shadowsubsubsectionbox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"colboxsep",
 		"body":[
 			"\\colboxsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"makesectionbox",
 		"body":[
 			"\\makesectionbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"makesubsectionbox",
 		"body":[
 			"\\makesubsectionbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"makesubsubsectionbox",
 		"body":[
 			"\\makesubsubsectionbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"sectboxskip",
 		"body":[
 			"\\sectboxskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"sectsavebox",
 		"body":[
 			"\\sectsavebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"subsectboxskip",
 		"body":[
 			"\\subsectboxskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"subsectmargin",
 		"body":[
 			"\\subsectmargin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"subsectsavebox",
 		"body":[
 			"\\subsectsavebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"subsubsectboxskip",
 		"body":[
 			"\\subsubsectboxskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"subsubsectmargin",
 		"body":[
 			"\\subsubsectmargin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,66 +185,73 @@
 		"prefix":"subsubsectsavebox",
 		"body":[
 			"\\subsubsectsavebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"sectionbox":{
+	"sectionbox{}":{
 		"prefix":"sectionbox",
 		"body":[
 			"\\begin{sectionbox}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{sectionbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subsectionbox":{
-		"prefix":"subsectionbox",
-		"body":[
-			"\\begin{subsectionbox}",
-				"\t$1",
-			"\\end{subsectionbox}"
-		]
-	},
-
-
-	"subsubsectionbox":{
-		"prefix":"subsubsectionbox",
-		"body":[
-			"\\begin{subsubsectionbox}",
-				"\t$1",
-			"\\end{subsubsectionbox}"
-		]
-	},
-
-
-	"sectionbox":{
+	"sectionbox[]{}":{
 		"prefix":"sectionbox",
 		"body":[
 			"\\begin{sectionbox}",
-				"\t$1",
+				"\t[${2:width}]{${1:title}}",
 			"\\end{sectionbox}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"subsectionbox":{
+	"subsectionbox{}":{
 		"prefix":"subsectionbox",
 		"body":[
 			"\\begin{subsectionbox}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{subsectionbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subsubsectionbox":{
+	"subsectionbox[]{}":{
+		"prefix":"subsectionbox",
+		"body":[
+			"\\begin{subsectionbox}",
+				"\t[${2:width}]{${1:title}}",
+			"\\end{subsectionbox}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subsubsectionbox{}":{
 		"prefix":"subsubsectionbox",
 		"body":[
 			"\\begin{subsubsectionbox}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{subsubsectionbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subsubsectionbox[]{}":{
+		"prefix":"subsubsectionbox",
+		"body":[
+			"\\begin{subsubsectionbox}",
+				"\t[${2:width}]{${1:title}}",
+			"\\end{subsubsectionbox}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

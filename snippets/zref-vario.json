@@ -5,7 +5,8 @@
 		"prefix":"zvsetup",
 		"body":[
 			"\\zvsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,159 +14,8 @@
 		"prefix":"zvref",
 		"body":[
 			"\\zvref{${1:label}}"
-		]
-	},
-
-
-	"zvpageref{}":{
-		"prefix":"zvpageref",
-		"body":[
-			"\\zvpageref{${1:label}}"
-		]
-	},
-
-
-	"zvrefrange{}{}":{
-		"prefix":"zvrefrange",
-		"body":[
-			"\\zvrefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zvpagerefrange{}{}":{
-		"prefix":"zvpagerefrange",
-		"body":[
-			"\\zvpagerefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zfullref{}":{
-		"prefix":"zfullref",
-		"body":[
-			"\\zfullref{${1:label}}"
-		]
-	},
-
-
-	"zreftextfaraway{}":{
-		"prefix":"zreftextfaraway",
-		"body":[
-			"\\zreftextfaraway{${1:label}}"
-		]
-	},
-
-
-	"zvLanguageSetup{}{}":{
-		"prefix":"zvLanguageSetup",
-		"body":[
-			"\\zvLanguageSetup{${1:language}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"zvhyperlink{}":{
-		"prefix":"zvhyperlink",
-		"body":[
-			"\\zvhyperlink{${1:text}}"
-		]
-	},
-
-
-	"zvref*{}":{
-		"prefix":"*zvref",
-		"body":[
-			"\\zvref*{${1:label}}"
-		]
-	},
-
-
-	"zvref*[]{}":{
-		"prefix":"*zvref",
-		"body":[
-			"\\zvref*[${2:options%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"zvpageref*{}":{
-		"prefix":"*zvpageref",
-		"body":[
-			"\\zvpageref*{${1:label}}"
-		]
-	},
-
-
-	"zvpageref*[]{}":{
-		"prefix":"*zvpageref",
-		"body":[
-			"\\zvpageref*[${2:options%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"zvrefrange*{}{}":{
-		"prefix":"*zvrefrange",
-		"body":[
-			"\\zvrefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zvrefrange*[]{}{}":{
-		"prefix":"*zvrefrange",
-		"body":[
-			"\\zvrefrange*[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zvpagerefrange*{}{}":{
-		"prefix":"*zvpagerefrange",
-		"body":[
-			"\\zvpagerefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zvpagerefrange*[]{}{}":{
-		"prefix":"*zvpagerefrange",
-		"body":[
-			"\\zvpagerefrange*[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
-	},
-
-
-	"zfullref*{}":{
-		"prefix":"*zfullref",
-		"body":[
-			"\\zfullref*{${1:label}}"
-		]
-	},
-
-
-	"zfullref*[]{}":{
-		"prefix":"*zfullref",
-		"body":[
-			"\\zfullref*[${2:options%keyvals}]{${1:label}}"
-		]
-	},
-
-
-	"zreftextfaraway*{}":{
-		"prefix":"*zreftextfaraway",
-		"body":[
-			"\\zreftextfaraway*{${1:label}}"
-		]
-	},
-
-
-	"zreftextfaraway*[]{}":{
-		"prefix":"*zreftextfaraway",
-		"body":[
-			"\\zreftextfaraway*[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +23,35 @@
 		"prefix":"zvref",
 		"body":[
 			"\\zvref[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zvref*{}":{
+		"prefix":"*zvref",
+		"body":[
+			"\\zvref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvref*[]{}":{
+		"prefix":"*zvref",
+		"body":[
+			"\\zvref*[${2:options%keyvals}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvpageref{}":{
+		"prefix":"zvpageref",
+		"body":[
+			"\\zvpageref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +59,35 @@
 		"prefix":"zvpageref",
 		"body":[
 			"\\zvpageref[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zvpageref*{}":{
+		"prefix":"*zvpageref",
+		"body":[
+			"\\zvpageref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvpageref*[]{}":{
+		"prefix":"*zvpageref",
+		"body":[
+			"\\zvpageref*[${2:options%keyvals}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvrefrange{}{}":{
+		"prefix":"zvrefrange",
+		"body":[
+			"\\zvrefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +95,35 @@
 		"prefix":"zvrefrange",
 		"body":[
 			"\\zvrefrange[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zvrefrange*{}{}":{
+		"prefix":"*zvrefrange",
+		"body":[
+			"\\zvrefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvrefrange*[]{}{}":{
+		"prefix":"*zvrefrange",
+		"body":[
+			"\\zvrefrange*[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvpagerefrange{}{}":{
+		"prefix":"zvpagerefrange",
+		"body":[
+			"\\zvpagerefrange{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +131,35 @@
 		"prefix":"zvpagerefrange",
 		"body":[
 			"\\zvpagerefrange[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zvpagerefrange*{}{}":{
+		"prefix":"*zvpagerefrange",
+		"body":[
+			"\\zvpagerefrange*{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvpagerefrange*[]{}{}":{
+		"prefix":"*zvpagerefrange",
+		"body":[
+			"\\zvpagerefrange*[${3:options%keyvals}]{${1:fromlabel%ref}}{${2:tolabel%ref}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zfullref{}":{
+		"prefix":"zfullref",
+		"body":[
+			"\\zfullref{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +167,35 @@
 		"prefix":"zfullref",
 		"body":[
 			"\\zfullref[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zfullref*{}":{
+		"prefix":"*zfullref",
+		"body":[
+			"\\zfullref*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zfullref*[]{}":{
+		"prefix":"*zfullref",
+		"body":[
+			"\\zfullref*[${2:options%keyvals}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zreftextfaraway{}":{
+		"prefix":"zreftextfaraway",
+		"body":[
+			"\\zreftextfaraway{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,6 +203,43 @@
 		"prefix":"zreftextfaraway",
 		"body":[
 			"\\zreftextfaraway[${2:options%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zreftextfaraway*{}":{
+		"prefix":"*zreftextfaraway",
+		"body":[
+			"\\zreftextfaraway*{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zreftextfaraway*[]{}":{
+		"prefix":"*zreftextfaraway",
+		"body":[
+			"\\zreftextfaraway*[${2:options%keyvals}]{${1:label}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zvLanguageSetup{}{}":{
+		"prefix":"zvLanguageSetup",
+		"body":[
+			"\\zvLanguageSetup{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zvhyperlink{}":{
+		"prefix":"zvhyperlink",
+		"body":[
+			"\\zvhyperlink{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

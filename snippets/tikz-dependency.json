@@ -5,7 +5,8 @@
 		"prefix":"depkeys",
 		"body":[
 			"\\depkeys{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,127 +14,8 @@
 		"prefix":"depedge",
 		"body":[
 			"\\depedge{${1:from-word}}{${2:to-word}}{${3:label}}"
-		]
-	},
-
-
-	"deproot{}{}":{
-		"prefix":"deproot",
-		"body":[
-			"\\deproot{${1:root-offset}}{${2:label}}"
-		]
-	},
-
-
-	"wordgroup{}{}{}{}":{
-		"prefix":"wordgroup",
-		"body":[
-			"\\wordgroup{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
-		]
-	},
-
-
-	"groupedge{}{}{}{}":{
-		"prefix":"groupedge",
-		"body":[
-			"\\groupedge{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
-		]
-	},
-
-
-	"depstyle{}{}":{
-		"prefix":"depstyle",
-		"body":[
-			"\\depstyle{${1:style name%specialDef}}{${2:options}}"
-		]
-	},
-
-
-	"matrixref":{
-		"prefix":"matrixref",
-		"body":[
-			"\\matrixref"
-		]
-	},
-
-
-	"wordref{}{}":{
-		"prefix":"wordref",
-		"body":[
-			"\\wordref{${1:row-offset}}{${2:word-offset}}"
-		]
-	},
-
-
-	"rootref":{
-		"prefix":"rootref",
-		"body":[
-			"\\rootref"
-		]
-	},
-
-
-	"storelabelnode{}":{
-		"prefix":"storelabelnode",
-		"body":[
-			"\\storelabelnode{${1:macro%cmd}}"
-		]
-	},
-
-
-	"storefirstcorner{}":{
-		"prefix":"storefirstcorner",
-		"body":[
-			"\\storefirstcorner{${1:macro%cmd}}"
-		]
-	},
-
-
-	"storesecondcorner{}":{
-		"prefix":"storesecondcorner",
-		"body":[
-			"\\storesecondcorner{${1:macro%cmd}}"
-		]
-	},
-
-
-	"settgtlayer":{
-		"prefix":"settgtlayer",
-		"body":[
-			"\\settgtlayer"
-		]
-	},
-
-
-	"xca":{
-		"prefix":"xca",
-		"body":[
-			"\\xca"
-		]
-	},
-
-
-	"xcb":{
-		"prefix":"xcb",
-		"body":[
-			"\\xcb"
-		]
-	},
-
-
-	"yca":{
-		"prefix":"yca",
-		"body":[
-			"\\yca"
-		]
-	},
-
-
-	"ycb":{
-		"prefix":"ycb",
-		"body":[
-			"\\ycb"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +23,17 @@
 		"prefix":"depedge",
 		"body":[
 			"\\depedge[${4:options%keyvals}]{${1:from-word}}{${2:to-word}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"deproot{}{}":{
+		"prefix":"deproot",
+		"body":[
+			"\\deproot{${1:root-offset}}{${2:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +41,17 @@
 		"prefix":"deproot",
 		"body":[
 			"\\deproot[${3:options%keyvals}]{${1:root-offset}}{${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wordgroup{}{}{}{}":{
+		"prefix":"wordgroup",
+		"body":[
+			"\\wordgroup{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +59,17 @@
 		"prefix":"wordgroup",
 		"body":[
 			"\\wordgroup[${5:options%keyvals}]{${1:row-offset}}{${2:word-offset-beg}}{${3:word-offset-end}}{${4:gid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"groupedge{}{}{}{}":{
+		"prefix":"groupedge",
+		"body":[
+			"\\groupedge{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +77,116 @@
 		"prefix":"groupedge",
 		"body":[
 			"\\groupedge[${5:options%keyvals}]{${1:from-gid}}{${2:to-gid}}{${3:label}}{${4:height}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"depstyle{}{}":{
+		"prefix":"depstyle",
+		"body":[
+			"\\depstyle{${1:style name%specialDef}}{${2:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"matrixref":{
+		"prefix":"matrixref",
+		"body":[
+			"\\matrixref"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wordref{}{}":{
+		"prefix":"wordref",
+		"body":[
+			"\\wordref{${1:row-offset}}{${2:word-offset}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rootref":{
+		"prefix":"rootref",
+		"body":[
+			"\\rootref"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"storelabelnode{}":{
+		"prefix":"storelabelnode",
+		"body":[
+			"\\storelabelnode{${1:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"storefirstcorner{}":{
+		"prefix":"storefirstcorner",
+		"body":[
+			"\\storefirstcorner{${1:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"storesecondcorner{}":{
+		"prefix":"storesecondcorner",
+		"body":[
+			"\\storesecondcorner{${1:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"settgtlayer":{
+		"prefix":"settgtlayer",
+		"body":[
+			"\\settgtlayer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xca":{
+		"prefix":"xca",
+		"body":[
+			"\\xca"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xcb":{
+		"prefix":"xcb",
+		"body":[
+			"\\xcb"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"yca":{
+		"prefix":"yca",
+		"body":[
+			"\\yca"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ycb":{
+		"prefix":"ycb",
+		"body":[
+			"\\ycb"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -175,27 +196,19 @@
 			"\\begin{dependency}",
 				"\t$1",
 			"\\end{dependency}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"deptext":{
-		"prefix":"deptext",
-		"body":[
-			"\\begin{deptext}",
-				"\t$1",
-			"\\end{deptext}"
-		]
-	},
-
-
-	"dependency":{
+	"dependency[]":{
 		"prefix":"dependency",
 		"body":[
 			"\\begin{dependency}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{dependency}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,6 +218,18 @@
 			"\\begin{deptext}",
 				"\t$1",
 			"\\end{deptext}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"deptext[]":{
+		"prefix":"deptext",
+		"body":[
+			"\\begin{deptext}",
+				"\t[${1:options%keyvals}]",
+			"\\end{deptext}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

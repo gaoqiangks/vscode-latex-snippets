@@ -5,39 +5,8 @@
 		"prefix":"zhlipsum",
 		"body":[
 			"\\zhlipsum"
-		]
-	},
-
-
-	"newzhlipsum{}{}":{
-		"prefix":"newzhlipsum",
-		"body":[
-			"\\newzhlipsum{${1:name}}{${2:paragraphs list%text}}"
-		]
-	},
-
-
-	"zhlipsum*":{
-		"prefix":"*zhlipsum",
-		"body":[
-			"\\zhlipsum*"
-		]
-	},
-
-
-	"zhlipsum*[]":{
-		"prefix":"*zhlipsum",
-		"body":[
-			"\\zhlipsum*[${1:paragraph}]"
-		]
-	},
-
-
-	"zhlipsum*[][]":{
-		"prefix":"*zhlipsum",
-		"body":[
-			"\\zhlipsum*[${1:paragraph}][${2:keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +14,8 @@
 		"prefix":"zhlipsum",
 		"body":[
 			"\\zhlipsum[${1:paragraph}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,6 +23,43 @@
 		"prefix":"zhlipsum",
 		"body":[
 			"\\zhlipsum[${1:paragraph}][${2:keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zhlipsum*":{
+		"prefix":"*zhlipsum",
+		"body":[
+			"\\zhlipsum*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zhlipsum*[]":{
+		"prefix":"*zhlipsum",
+		"body":[
+			"\\zhlipsum*[${1:paragraph}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zhlipsum*[][]":{
+		"prefix":"*zhlipsum",
+		"body":[
+			"\\zhlipsum*[${1:paragraph}][${2:keyvals}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"newzhlipsum{}{}":{
+		"prefix":"newzhlipsum",
+		"body":[
+			"\\newzhlipsum{${1:name}}{${2:paragraphs list%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

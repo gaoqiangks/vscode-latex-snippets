@@ -5,7 +5,8 @@
 		"prefix":"options",
 		"body":[
 			"\\options{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"optionsalso",
 		"body":[
 			"\\optionsalso{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"optionswithremaining",
 		"body":[
 			"\\optionswithremaining{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"option",
 		"body":[
 			"\\option{${1:option}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"letoption",
 		"body":[
 			"\\letoption{${1:option}}{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"edefoption",
 		"body":[
 			"\\edefoption{${1:option}}{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"ifoptiondefined",
 		"body":[
 			"\\ifoptiondefined{${1:option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"ifoptionvoid",
 		"body":[
 			"\\ifoptionvoid{${1:option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"ifoptionblank",
 		"body":[
 			"\\ifoptionblank{${1:option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"ifoptionequal",
 		"body":[
 			"\\ifoptionequal{${1:option}}{${2:value}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"ifoptionanyof",
 		"body":[
 			"\\ifoptionanyof{${1:option}}{${2:list}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"ifoptiontype",
 		"body":[
 			"\\ifoptiontype{${1:option}}{${2:type}}{${3:true}}{${4:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"ifoptionnil",
 		"body":[
 			"\\ifoptionnil{${1:list option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"ifoptioniscode",
 		"body":[
 			"\\ifoptioniscode{${1:option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"optionlistdo",
 		"body":[
 			"\\optionlistdo{${1:list option}}{${2:action}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"letoptionlist",
 		"body":[
 			"\\letoptionlist{${1:list option}}{${2:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"ifoptioncontains",
 		"body":[
 			"\\ifoptioncontains{${1:list option}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"optionshow",
 		"body":[
 			"\\optionshow{${1:option}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,247 +167,8 @@
 		"prefix":"optionshowall",
 		"body":[
 			"\\optionshowall"
-		]
-	},
-
-
-	"optionshowpath{}":{
-		"prefix":"optionshowpath",
-		"body":[
-			"\\optionshowpath{${1:option}}"
-		]
-	},
-
-
-	"optionerror{}{}":{
-		"prefix":"optionerror",
-		"body":[
-			"\\optionerror{${1:option}}{${2:message%text}}"
-		]
-	},
-
-
-	"optionwarning{}{}":{
-		"prefix":"optionwarning",
-		"body":[
-			"\\optionwarning{${1:option}}{${2:message%text}}"
-		]
-	},
-
-
-	"letoptiontype{}{}":{
-		"prefix":"letoptiontype",
-		"body":[
-			"\\letoptiontype{${1:option}}{${2:type}}"
-		]
-	},
-
-
-	"optionname{}":{
-		"prefix":"optionname",
-		"body":[
-			"\\optionname{${1:option}}"
-		]
-	},
-
-
-	"optionprependcode{}{}":{
-		"prefix":"optionprependcode",
-		"body":[
-			"\\optionprependcode{${1:option}}{${2:code}}"
-		]
-	},
-
-
-	"optionnewcode{}{}":{
-		"prefix":"optionnewcode",
-		"body":[
-			"\\optionnewcode{${1:option}}{${2:code}}"
-		]
-	},
-
-
-	"optionnewhandler{}{}":{
-		"prefix":"optionnewhandler",
-		"body":[
-			"\\optionnewhandler{${1:option}}{${2:code}}"
-		]
-	},
-
-
-	"optionvalue":{
-		"prefix":"optionvalue",
-		"body":[
-			"\\optionvalue"
-		]
-	},
-
-
-	"optionnovalue":{
-		"prefix":"optionnovalue",
-		"body":[
-			"\\optionnovalue"
-		]
-	},
-
-
-	"eifblank{}{}{}":{
-		"prefix":"eifblank",
-		"body":[
-			"\\eifblank{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"eifstrequal{}{}{}":{
-		"prefix":"eifstrequal",
-		"body":[
-			"\\eifstrequal{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"expandnextcmds{}{}":{
-		"prefix":"expandnextcmds",
-		"body":[
-			"\\expandnextcmds{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"expandnextsingle{}{}":{
-		"prefix":"expandnextsingle",
-		"body":[
-			"\\expandnextsingle{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"expandnext{}{}":{
-		"prefix":"expandnext",
-		"body":[
-			"\\expandnext{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"ifoptioncmd{}{}{}":{
-		"prefix":"ifoptioncmd",
-		"body":[
-			"\\ifoptioncmd{${1:option}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifoptioncolortransparent{}{}{}":{
-		"prefix":"ifoptioncolortransparent",
-		"body":[
-			"\\ifoptioncolortransparent{${1:color}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifoptionisabsolute{}{}{}":{
-		"prefix":"ifoptionisabsolute",
-		"body":[
-			"\\ifoptionisabsolute{${1:option}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"letoptionchoices{}{}":{
-		"prefix":"letoptionchoices",
-		"body":[
-			"\\letoptionchoices{${1:option}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"ontoggle{}{}":{
-		"prefix":"ontoggle",
-		"body":[
-			"\\ontoggle{${1:toggle name}}{${2:true}}"
-		]
-	},
-
-
-	"optioncolorbox{}{}":{
-		"prefix":"optioncolorbox",
-		"body":[
-			"\\optioncolorbox{${1:color}}{${2:code}}"
-		]
-	},
-
-
-	"optioncolor{}":{
-		"prefix":"optioncolor",
-		"body":[
-			"\\optioncolor{${1:color}}"
-		]
-	},
-
-
-	"optionlist{}":{
-		"prefix":"optionlist",
-		"body":[
-			"\\optionlist{${1:list option}}"
-		]
-	},
-
-
-	"optionparamcount{}":{
-		"prefix":"optionparamcount",
-		"body":[
-			"\\optionparamcount{${1:option}}"
-		]
-	},
-
-
-	"optionshowtype{}":{
-		"prefix":"optionshowtype",
-		"body":[
-			"\\optionshowtype{${1:option}}"
-		]
-	},
-
-
-	"optiontextcolor{}{}":{
-		"prefix":"optiontextcolor",
-		"body":[
-			"\\optiontextcolor{${1:color}}{${2:code}}"
-		]
-	},
-
-
-	"optiontypeout{}":{
-		"prefix":"optiontypeout",
-		"body":[
-			"\\optiontypeout{${1:option}}"
-		]
-	},
-
-
-	"optionunit{}":{
-		"prefix":"optionunit",
-		"body":[
-			"\\optionunit{${1:option}}"
-		]
-	},
-
-
-	"optionnewcode*{}{}":{
-		"prefix":"*optionnewcode",
-		"body":[
-			"\\optionnewcode*{${1:option}}{${2:code}}"
-		]
-	},
-
-
-	"optionnewhandler*{}{}":{
-		"prefix":"*optionnewhandler",
-		"body":[
-			"\\optionnewhandler*{${1:option}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,6 +176,277 @@
 		"prefix":"optionshowall",
 		"body":[
 			"\\optionshowall[${1:bool}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"optionshowpath{}":{
+		"prefix":"optionshowpath",
+		"body":[
+			"\\optionshowpath{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionerror{}{}":{
+		"prefix":"optionerror",
+		"body":[
+			"\\optionerror{${1:option}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionwarning{}{}":{
+		"prefix":"optionwarning",
+		"body":[
+			"\\optionwarning{${1:option}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letoptiontype{}{}":{
+		"prefix":"letoptiontype",
+		"body":[
+			"\\letoptiontype{${1:option}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionname{}":{
+		"prefix":"optionname",
+		"body":[
+			"\\optionname{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionprependcode{}{}":{
+		"prefix":"optionprependcode",
+		"body":[
+			"\\optionprependcode{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionnewcode{}{}":{
+		"prefix":"optionnewcode",
+		"body":[
+			"\\optionnewcode{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionnewcode*{}{}":{
+		"prefix":"*optionnewcode",
+		"body":[
+			"\\optionnewcode*{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"optionnewhandler{}{}":{
+		"prefix":"optionnewhandler",
+		"body":[
+			"\\optionnewhandler{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionnewhandler*{}{}":{
+		"prefix":"*optionnewhandler",
+		"body":[
+			"\\optionnewhandler*{${1:option}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"optionvalue":{
+		"prefix":"optionvalue",
+		"body":[
+			"\\optionvalue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionnovalue":{
+		"prefix":"optionnovalue",
+		"body":[
+			"\\optionnovalue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eifblank{}{}{}":{
+		"prefix":"eifblank",
+		"body":[
+			"\\eifblank{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eifstrequal{}{}{}":{
+		"prefix":"eifstrequal",
+		"body":[
+			"\\eifstrequal{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"expandnextcmds{}{}":{
+		"prefix":"expandnextcmds",
+		"body":[
+			"\\expandnextcmds{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"expandnextsingle{}{}":{
+		"prefix":"expandnextsingle",
+		"body":[
+			"\\expandnextsingle{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"expandnext{}{}":{
+		"prefix":"expandnext",
+		"body":[
+			"\\expandnext{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifoptioncmd{}{}{}":{
+		"prefix":"ifoptioncmd",
+		"body":[
+			"\\ifoptioncmd{${1:option}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifoptioncolortransparent{}{}{}":{
+		"prefix":"ifoptioncolortransparent",
+		"body":[
+			"\\ifoptioncolortransparent{${1:color}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifoptionisabsolute{}{}{}":{
+		"prefix":"ifoptionisabsolute",
+		"body":[
+			"\\ifoptionisabsolute{${1:option}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"letoptionchoices{}{}":{
+		"prefix":"letoptionchoices",
+		"body":[
+			"\\letoptionchoices{${1:option}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ontoggle{}{}":{
+		"prefix":"ontoggle",
+		"body":[
+			"\\ontoggle{${1:toggle name}}{${2:true}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optioncolorbox{}{}":{
+		"prefix":"optioncolorbox",
+		"body":[
+			"\\optioncolorbox{${1:color}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optioncolor{}":{
+		"prefix":"optioncolor",
+		"body":[
+			"\\optioncolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionlist{}":{
+		"prefix":"optionlist",
+		"body":[
+			"\\optionlist{${1:list option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionparamcount{}":{
+		"prefix":"optionparamcount",
+		"body":[
+			"\\optionparamcount{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionshowtype{}":{
+		"prefix":"optionshowtype",
+		"body":[
+			"\\optionshowtype{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optiontextcolor{}{}":{
+		"prefix":"optiontextcolor",
+		"body":[
+			"\\optiontextcolor{${1:color}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optiontypeout{}":{
+		"prefix":"optiontypeout",
+		"body":[
+			"\\optiontypeout{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"optionunit{}":{
+		"prefix":"optionunit",
+		"body":[
+			"\\optionunit{${1:option}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

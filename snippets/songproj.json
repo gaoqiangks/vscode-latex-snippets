@@ -5,7 +5,8 @@
 		"prefix":"longest",
 		"body":[
 			"\\longest{${1:song line}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"numbercouplets",
 		"body":[
 			"\\numbercouplets"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,23 +23,8 @@
 		"prefix":"inputsong",
 		"body":[
 			"\\inputsong{${1:file}}{${2:stanzas per slide}}"
-		]
-	},
-
-
-	"inputsong*{}{}":{
-		"prefix":"*inputsong",
-		"body":[
-			"\\inputsong*{${1:file}}{${2:stanzas per slide}}"
-		]
-	},
-
-
-	"inputsong*{}{}[]":{
-		"prefix":"*inputsong",
-		"body":[
-			"\\inputsong*{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,17 +32,48 @@
 		"prefix":"inputsong",
 		"body":[
 			"\\inputsong{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"song":{
+	"inputsong*{}{}":{
+		"prefix":"*inputsong",
+		"body":[
+			"\\inputsong*{${1:file}}{${2:stanzas per slide}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inputsong*{}{}[]":{
+		"prefix":"*inputsong",
+		"body":[
+			"\\inputsong*{${1:file}}{${2:stanzas per slide}}[${3:couplet list}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"song{}":{
 		"prefix":"song",
 		"body":[
 			"\\begin{song}",
-				"\t$1",
+				"\t{${1:stanzas per slide}}",
 			"\\end{song}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"song{}[]":{
+		"prefix":"song",
+		"body":[
+			"\\begin{song}",
+				"\t{${1:stanzas per slide}}[${2:couplet list}]",
+			"\\end{song}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -65,7 +83,8 @@
 			"\\begin{intro}",
 				"\t$1",
 			"\\end{intro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -75,7 +94,8 @@
 			"\\begin{refrain}",
 				"\t$1",
 			"\\end{refrain}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +105,8 @@
 			"\\begin{couplet}",
 				"\t$1",
 			"\\end{couplet}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -95,16 +116,7 @@
 			"\\begin{final}",
 				"\t$1",
 			"\\end{final}"
-		]
-	},
-
-
-	"song":{
-		"prefix":"song",
-		"body":[
-			"\\begin{song}",
-				"\t$1",
-			"\\end{song}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

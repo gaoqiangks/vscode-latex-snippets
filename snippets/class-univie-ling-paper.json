@@ -5,7 +5,8 @@
 		"prefix":"foreverunspace",
 		"body":[
 			"\\foreverunspace"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,17 @@
 		"prefix":"printtexte",
 		"body":[
 			"\\printtexte{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printtexte[]{}":{
+		"prefix":"printtexte",
+		"body":[
+			"\\printtexte[${2:format}]{${1:text}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -21,7 +32,8 @@
 		"prefix":"maxprtauth",
 		"body":[
 			"\\maxprtauth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +41,8 @@
 		"prefix":"apanum",
 		"body":[
 			"\\apanum{${1:num}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +50,8 @@
 		"prefix":"mkdaterangeapalong",
 		"body":[
 			"\\mkdaterangeapalong{${1:datetype}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +59,8 @@
 		"prefix":"mkdaterangeapalongextra",
 		"body":[
 			"\\mkdaterangeapalongextra{${1:datetype}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +68,8 @@
 		"prefix":"begrelateddelimcommenton",
 		"body":[
 			"\\begrelateddelimcommenton"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +77,8 @@
 		"prefix":"begrelateddelimreviewof",
 		"body":[
 			"\\begrelateddelimreviewof"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +86,8 @@
 		"prefix":"begrelateddelimreprintfrom",
 		"body":[
 			"\\begrelateddelimreprintfrom"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +95,8 @@
 		"prefix":"urldatecomma",
 		"body":[
 			"\\urldatecomma"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +104,8 @@
 		"prefix":"apashortdash",
 		"body":[
 			"\\apashortdash"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +113,26 @@
 		"prefix":"citeresetapa",
 		"body":[
 			"\\citeresetapa"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullcitebib[][]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fullcitebib[]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +140,26 @@
 		"prefix":"fullcitebib",
 		"body":[
 			"\\fullcitebib{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nptextcite[][]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcite[]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +167,8 @@
 		"prefix":"nptextcite",
 		"body":[
 			"\\nptextcite{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +176,8 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites{${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +185,8 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:pre}){${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +194,62 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nptextcites()()[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${5:pre})(${6:post})[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites()()[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet[][]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet[]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +257,53 @@
 		"prefix":"citet",
 		"body":[
 			"\\citet{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citet*[][]{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citet*[]{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citet*{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep[][]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citep[]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +311,53 @@
 		"prefix":"citep",
 		"body":[
 			"\\citep{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citep*[][]{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep*[]{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep*{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt[][]{}":{
+		"prefix":"citealt",
+		"body":[
+			"\\citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citealt[]{}":{
+		"prefix":"citealt",
+		"body":[
+			"\\citealt[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +365,53 @@
 		"prefix":"citealt",
 		"body":[
 			"\\citealt{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citealt*[][]{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt*[]{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt*{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp[][]{}":{
+		"prefix":"citealp",
+		"body":[
+			"\\citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citealp[]{}":{
+		"prefix":"citealp",
+		"body":[
+			"\\citealp[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +419,53 @@
 		"prefix":"citealp",
 		"body":[
 			"\\citealp{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citealp*[][]{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp*[]{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp*{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor[][]{}":{
+		"prefix":"citeauthor",
+		"body":[
+			"\\citeauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeauthor[]{}":{
+		"prefix":"citeauthor",
+		"body":[
+			"\\citeauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +473,53 @@
 		"prefix":"citeauthor",
 		"body":[
 			"\\citeauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citeauthor*[][]{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor*[]{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor*{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeyearpar[][]{}":{
+		"prefix":"citeyearpar",
+		"body":[
+			"\\citeyearpar[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeyearpar[]{}":{
+		"prefix":"citeyearpar",
+		"body":[
+			"\\citeyearpar[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +527,26 @@
 		"prefix":"citeyearpar",
 		"body":[
 			"\\citeyearpar{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citet[][]{}":{
+		"prefix":"Citet",
+		"body":[
+			"\\Citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citet[]{}":{
+		"prefix":"Citet",
+		"body":[
+			"\\Citet[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +554,53 @@
 		"prefix":"Citet",
 		"body":[
 			"\\Citet{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citet*[][]{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citet*[]{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citet*{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep[][]{}":{
+		"prefix":"Citep",
+		"body":[
+			"\\Citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citep[]{}":{
+		"prefix":"Citep",
+		"body":[
+			"\\Citep[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +608,53 @@
 		"prefix":"Citep",
 		"body":[
 			"\\Citep{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citep*[][]{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep*[]{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep*{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt[][]{}":{
+		"prefix":"Citealt",
+		"body":[
+			"\\Citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citealt[]{}":{
+		"prefix":"Citealt",
+		"body":[
+			"\\Citealt[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +662,53 @@
 		"prefix":"Citealt",
 		"body":[
 			"\\Citealt{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citealt*[][]{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt*[]{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt*{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp[][]{}":{
+		"prefix":"Citealp",
+		"body":[
+			"\\Citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citealp[]{}":{
+		"prefix":"Citealp",
+		"body":[
+			"\\Citealp[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +716,53 @@
 		"prefix":"Citealp",
 		"body":[
 			"\\Citealp{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citealp*[][]{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp*[]{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp*{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citefullauthor[][]{}":{
+		"prefix":"citefullauthor",
+		"body":[
+			"\\citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citefullauthor[]{}":{
+		"prefix":"citefullauthor",
+		"body":[
+			"\\citefullauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +770,26 @@
 		"prefix":"citefullauthor",
 		"body":[
 			"\\citefullauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citefullauthor[][]{}":{
+		"prefix":"Citefullauthor",
+		"body":[
+			"\\Citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citefullauthor[]{}":{
+		"prefix":"Citefullauthor",
+		"body":[
+			"\\Citefullauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -229,7 +797,8 @@
 		"prefix":"Citefullauthor",
 		"body":[
 			"\\Citefullauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +806,8 @@
 		"prefix":"citetext",
 		"body":[
 			"\\citetext{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +815,8 @@
 		"prefix":"defcitealias",
 		"body":[
 			"\\defcitealias{${1:bibid}}{${2:alias}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +824,8 @@
 		"prefix":"citetalias",
 		"body":[
 			"\\citetalias{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +833,8 @@
 		"prefix":"citepalias",
 		"body":[
 			"\\citepalias{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +842,8 @@
 		"prefix":"foreverunspace",
 		"body":[
 			"\\foreverunspace"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +851,17 @@
 		"prefix":"printtexte",
 		"body":[
 			"\\printtexte{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"printtexte[]{}":{
+		"prefix":"printtexte",
+		"body":[
+			"\\printtexte[${2:format}]{${1:text}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +869,8 @@
 		"prefix":"maxprtauth",
 		"body":[
 			"\\maxprtauth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +878,8 @@
 		"prefix":"apanum",
 		"body":[
 			"\\apanum{${1:num}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +887,8 @@
 		"prefix":"mkdaterangeapalong",
 		"body":[
 			"\\mkdaterangeapalong{${1:datetype}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +896,8 @@
 		"prefix":"mkdaterangeapalongextra",
 		"body":[
 			"\\mkdaterangeapalongextra{${1:datetype}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +905,8 @@
 		"prefix":"begrelateddelimcommenton",
 		"body":[
 			"\\begrelateddelimcommenton"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,7 +914,8 @@
 		"prefix":"begrelateddelimreviewof",
 		"body":[
 			"\\begrelateddelimreviewof"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +923,8 @@
 		"prefix":"begrelateddelimreprintfrom",
 		"body":[
 			"\\begrelateddelimreprintfrom"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +932,8 @@
 		"prefix":"urldatecomma",
 		"body":[
 			"\\urldatecomma"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +941,8 @@
 		"prefix":"apashortdash",
 		"body":[
 			"\\apashortdash"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +950,26 @@
 		"prefix":"citeresetapa",
 		"body":[
 			"\\citeresetapa"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fullcitebib[][]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fullcitebib[]{}":{
+		"prefix":"fullcitebib",
+		"body":[
+			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,7 +977,26 @@
 		"prefix":"fullcitebib",
 		"body":[
 			"\\fullcitebib{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nptextcite[][]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcite[]{}":{
+		"prefix":"nptextcite",
+		"body":[
+			"\\nptextcite[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -373,7 +1004,8 @@
 		"prefix":"nptextcite",
 		"body":[
 			"\\nptextcite{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +1013,8 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites{${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,7 +1022,8 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:pre}){${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +1031,62 @@
 		"prefix":"nptextcites",
 		"body":[
 			"\\nptextcites(${3:pre})(${4:post}){${1:bibid}}{${2:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nptextcites()()[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${5:pre})(${6:post})[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites[]{}[]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nptextcites()()[][]{}[][]{}":{
+		"prefix":"nptextcites",
+		"body":[
+			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet[][]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet[]{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +1094,53 @@
 		"prefix":"citet",
 		"body":[
 			"\\citet{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citet*[][]{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citet*[]{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citet*{}":{
+		"prefix":"*citet",
+		"body":[
+			"\\citet*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep[][]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citep[]{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -413,7 +1148,53 @@
 		"prefix":"citep",
 		"body":[
 			"\\citep{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citep*[][]{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep*[]{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep*{}":{
+		"prefix":"*citep",
+		"body":[
+			"\\citep*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt[][]{}":{
+		"prefix":"citealt",
+		"body":[
+			"\\citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citealt[]{}":{
+		"prefix":"citealt",
+		"body":[
+			"\\citealt[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -421,7 +1202,53 @@
 		"prefix":"citealt",
 		"body":[
 			"\\citealt{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citealt*[][]{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt*[]{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealt*{}":{
+		"prefix":"*citealt",
+		"body":[
+			"\\citealt*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp[][]{}":{
+		"prefix":"citealp",
+		"body":[
+			"\\citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citealp[]{}":{
+		"prefix":"citealp",
+		"body":[
+			"\\citealp[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,7 +1256,53 @@
 		"prefix":"citealp",
 		"body":[
 			"\\citealp{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citealp*[][]{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp*[]{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citealp*{}":{
+		"prefix":"*citealp",
+		"body":[
+			"\\citealp*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor[][]{}":{
+		"prefix":"citeauthor",
+		"body":[
+			"\\citeauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeauthor[]{}":{
+		"prefix":"citeauthor",
+		"body":[
+			"\\citeauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -437,7 +1310,53 @@
 		"prefix":"citeauthor",
 		"body":[
 			"\\citeauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citeauthor*[][]{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor*[]{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeauthor*{}":{
+		"prefix":"*citeauthor",
+		"body":[
+			"\\citeauthor*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeyearpar[][]{}":{
+		"prefix":"citeyearpar",
+		"body":[
+			"\\citeyearpar[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeyearpar[]{}":{
+		"prefix":"citeyearpar",
+		"body":[
+			"\\citeyearpar[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -445,7 +1364,26 @@
 		"prefix":"citeyearpar",
 		"body":[
 			"\\citeyearpar{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citet[][]{}":{
+		"prefix":"Citet",
+		"body":[
+			"\\Citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citet[]{}":{
+		"prefix":"Citet",
+		"body":[
+			"\\Citet[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -453,7 +1391,53 @@
 		"prefix":"Citet",
 		"body":[
 			"\\Citet{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citet*[][]{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citet*[]{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citet*{}":{
+		"prefix":"*Citet",
+		"body":[
+			"\\Citet*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep[][]{}":{
+		"prefix":"Citep",
+		"body":[
+			"\\Citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citep[]{}":{
+		"prefix":"Citep",
+		"body":[
+			"\\Citep[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -461,7 +1445,53 @@
 		"prefix":"Citep",
 		"body":[
 			"\\Citep{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citep*[][]{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep*[]{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citep*{}":{
+		"prefix":"*Citep",
+		"body":[
+			"\\Citep*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt[][]{}":{
+		"prefix":"Citealt",
+		"body":[
+			"\\Citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citealt[]{}":{
+		"prefix":"Citealt",
+		"body":[
+			"\\Citealt[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -469,7 +1499,53 @@
 		"prefix":"Citealt",
 		"body":[
 			"\\Citealt{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citealt*[][]{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt*[]{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealt*{}":{
+		"prefix":"*Citealt",
+		"body":[
+			"\\Citealt*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp[][]{}":{
+		"prefix":"Citealp",
+		"body":[
+			"\\Citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citealp[]{}":{
+		"prefix":"Citealp",
+		"body":[
+			"\\Citealp[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -477,7 +1553,53 @@
 		"prefix":"Citealp",
 		"body":[
 			"\\Citealp{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citealp*[][]{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp*[]{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Citealp*{}":{
+		"prefix":"*Citealp",
+		"body":[
+			"\\Citealp*{${1:bibid}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citefullauthor[][]{}":{
+		"prefix":"citefullauthor",
+		"body":[
+			"\\citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citefullauthor[]{}":{
+		"prefix":"citefullauthor",
+		"body":[
+			"\\citefullauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -485,7 +1607,26 @@
 		"prefix":"citefullauthor",
 		"body":[
 			"\\citefullauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Citefullauthor[][]{}":{
+		"prefix":"Citefullauthor",
+		"body":[
+			"\\Citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Citefullauthor[]{}":{
+		"prefix":"Citefullauthor",
+		"body":[
+			"\\Citefullauthor[${2:postnote}]{${1:bibid}}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -493,7 +1634,8 @@
 		"prefix":"Citefullauthor",
 		"body":[
 			"\\Citefullauthor{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +1643,8 @@
 		"prefix":"citetext",
 		"body":[
 			"\\citetext{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +1652,8 @@
 		"prefix":"defcitealias",
 		"body":[
 			"\\defcitealias{${1:bibid}}{${2:alias}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +1661,8 @@
 		"prefix":"citetalias",
 		"body":[
 			"\\citetalias{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +1670,8 @@
 		"prefix":"citepalias",
 		"body":[
 			"\\citepalias{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +1679,8 @@
 		"prefix":"studienkennzahl",
 		"body":[
 			"\\studienkennzahl{${1:degree program code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +1688,8 @@
 		"prefix":"matrikelnr",
 		"body":[
 			"\\matrikelnr{${1:registration number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +1697,8 @@
 		"prefix":"course",
 		"body":[
 			"\\course{${1:type%keyvals}}{${2:course title%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +1706,8 @@
 		"prefix":"semester",
 		"body":[
 			"\\semester{${1:type%keyvals}}{${2:year}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +1715,8 @@
 		"prefix":"instructor",
 		"body":[
 			"\\instructor{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +1724,8 @@
 		"prefix":"texttype",
 		"body":[
 			"\\texttype{${1:text type}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +1733,8 @@
 		"prefix":"makedeclaration",
 		"body":[
 			"\\makedeclaration"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +1742,8 @@
 		"prefix":"Expression",
 		"body":[
 			"\\Expression{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +1751,8 @@
 		"prefix":"Meaning",
 		"body":[
 			"\\Meaning{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,7 +1760,8 @@
 		"prefix":"Concept",
 		"body":[
 			"\\Concept{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -613,1183 +1769,8 @@
 		"prefix":"weblink",
 		"body":[
 			"\\weblink{${1:URL}}"
-		]
-	},
-
-
-	"SetURLDate{}":{
-		"prefix":"SetURLDate",
-		"body":[
-			"\\SetURLDate{${1:date}}"
-		]
-	},
-
-
-	"urldate{}":{
-		"prefix":"urldate",
-		"body":[
-			"\\urldate{${1:date}}"
-		]
-	},
-
-
-	"footnumwidth":{
-		"prefix":"footnumwidth",
-		"body":[
-			"\\footnumwidth"
-		]
-	},
-
-
-	"maxfn":{
-		"prefix":"maxfn",
-		"body":[
-			"\\maxfn"
-		]
-	},
-
-
-	"urlprefix":{
-		"prefix":"urlprefix",
-		"body":[
-			"\\urlprefix"
-		]
-	},
-
-
-	"DH":{
-		"prefix":"DH",
-		"body":[
-			"\\DH"
-		]
-	},
-
-
-	"dh":{
-		"prefix":"dh",
-		"body":[
-			"\\dh"
-		]
-	},
-
-
-	"dj":{
-		"prefix":"dj",
-		"body":[
-			"\\dj"
-		]
-	},
-
-
-	"DJ":{
-		"prefix":"DJ",
-		"body":[
-			"\\DJ"
-		]
-	},
-
-
-	"guillemetleft":{
-		"prefix":"guillemetleft",
-		"body":[
-			"\\guillemetleft"
-		]
-	},
-
-
-	"guillemetright":{
-		"prefix":"guillemetright",
-		"body":[
-			"\\guillemetright"
-		]
-	},
-
-
-	"guillemotleft":{
-		"prefix":"guillemotleft",
-		"body":[
-			"\\guillemotleft"
-		]
-	},
-
-
-	"guillemotright":{
-		"prefix":"guillemotright",
-		"body":[
-			"\\guillemotright"
-		]
-	},
-
-
-	"guilsinglleft":{
-		"prefix":"guilsinglleft",
-		"body":[
-			"\\guilsinglleft"
-		]
-	},
-
-
-	"guilsinglright":{
-		"prefix":"guilsinglright",
-		"body":[
-			"\\guilsinglright"
-		]
-	},
-
-
-	"Hwithstroke":{
-		"prefix":"Hwithstroke",
-		"body":[
-			"\\Hwithstroke"
-		]
-	},
-
-
-	"hwithstroke":{
-		"prefix":"hwithstroke",
-		"body":[
-			"\\hwithstroke"
-		]
-	},
-
-
-	"k{}":{
-		"prefix":"k",
-		"body":[
-			"\\k{${1:arg}}"
-		]
-	},
-
-
-	"NG":{
-		"prefix":"NG",
-		"body":[
-			"\\NG"
-		]
-	},
-
-
-	"ng":{
-		"prefix":"ng",
-		"body":[
-			"\\ng"
-		]
-	},
-
-
-	"quotedblbase":{
-		"prefix":"quotedblbase",
-		"body":[
-			"\\quotedblbase"
-		]
-	},
-
-
-	"quotesinglbase":{
-		"prefix":"quotesinglbase",
-		"body":[
-			"\\quotesinglbase"
-		]
-	},
-
-
-	"textogonekcentered{}":{
-		"prefix":"textogonekcentered",
-		"body":[
-			"\\textogonekcentered{${1:arg}}"
-		]
-	},
-
-
-	"textquotedbl":{
-		"prefix":"textquotedbl",
-		"body":[
-			"\\textquotedbl"
-		]
-	},
-
-
-	"th":{
-		"prefix":"th",
-		"body":[
-			"\\th"
-		]
-	},
-
-
-	"TH":{
-		"prefix":"TH",
-		"body":[
-			"\\TH"
-		]
-	},
-
-
-	"mkbibdateunified{}{}{}":{
-		"prefix":"mkbibdateunified",
-		"body":[
-			"\\mkbibdateunified{${1:arg1}}{${2:arg2}}{${3:arg3}}"
-		]
-	},
-
-
-	"citet*[][]{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet*[]{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet*{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*{${1:bibid}}"
-		]
-	},
-
-
-	"citep*[][]{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep*[]{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep*{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*[][]{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*[]{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*[][]{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*[]{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*[][]{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*[]{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*[][]{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*[]{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*[][]{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*[]{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*[][]{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*[]{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*[][]{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*[]{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*{${1:bibid}}"
-		]
-	},
-
-
-	"citet*[][]{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet*[]{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet*{}":{
-		"prefix":"*citet",
-		"body":[
-			"\\citet*{${1:bibid}}"
-		]
-	},
-
-
-	"citep*[][]{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep*[]{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep*{}":{
-		"prefix":"*citep",
-		"body":[
-			"\\citep*{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*[][]{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*[]{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt*{}":{
-		"prefix":"*citealt",
-		"body":[
-			"\\citealt*{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*[][]{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*[]{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp*{}":{
-		"prefix":"*citealp",
-		"body":[
-			"\\citealp*{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*[][]{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*[]{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor*{}":{
-		"prefix":"*citeauthor",
-		"body":[
-			"\\citeauthor*{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*[][]{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*[]{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet*{}":{
-		"prefix":"*Citet",
-		"body":[
-			"\\Citet*{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*[][]{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*[]{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep*{}":{
-		"prefix":"*Citep",
-		"body":[
-			"\\Citep*{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*[][]{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*[]{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt*{}":{
-		"prefix":"*Citealt",
-		"body":[
-			"\\Citealt*{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*[][]{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*[]{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp*{}":{
-		"prefix":"*Citealp",
-		"body":[
-			"\\Citealp*{${1:bibid}}"
-		]
-	},
-
-
-	"printtexte[]{}":{
-		"prefix":"printtexte",
-		"body":[
-			"\\printtexte[${2:format}]{${1:text}}"
-		]
-	},
-
-
-	"fullcitebib[][]{}":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"fullcitebib[]{}":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite[][]{}":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite[]{}":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcites()()[]{}[]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${5:pre})(${6:post})[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites[]{}[]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites[][]{}[][]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites()()[][]{}[][]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"citet[][]{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet[]{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep[][]{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep[]{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt[][]{}":{
-		"prefix":"citealt",
-		"body":[
-			"\\citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt[]{}":{
-		"prefix":"citealt",
-		"body":[
-			"\\citealt[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp[][]{}":{
-		"prefix":"citealp",
-		"body":[
-			"\\citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp[]{}":{
-		"prefix":"citealp",
-		"body":[
-			"\\citealp[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor[][]{}":{
-		"prefix":"citeauthor",
-		"body":[
-			"\\citeauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor[]{}":{
-		"prefix":"citeauthor",
-		"body":[
-			"\\citeauthor[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearpar[][]{}":{
-		"prefix":"citeyearpar",
-		"body":[
-			"\\citeyearpar[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearpar[]{}":{
-		"prefix":"citeyearpar",
-		"body":[
-			"\\citeyearpar[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet[][]{}":{
-		"prefix":"Citet",
-		"body":[
-			"\\Citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet[]{}":{
-		"prefix":"Citet",
-		"body":[
-			"\\Citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep[][]{}":{
-		"prefix":"Citep",
-		"body":[
-			"\\Citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep[]{}":{
-		"prefix":"Citep",
-		"body":[
-			"\\Citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt[][]{}":{
-		"prefix":"Citealt",
-		"body":[
-			"\\Citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt[]{}":{
-		"prefix":"Citealt",
-		"body":[
-			"\\Citealt[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp[][]{}":{
-		"prefix":"Citealp",
-		"body":[
-			"\\Citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp[]{}":{
-		"prefix":"Citealp",
-		"body":[
-			"\\Citealp[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citefullauthor[][]{}":{
-		"prefix":"citefullauthor",
-		"body":[
-			"\\citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citefullauthor[]{}":{
-		"prefix":"citefullauthor",
-		"body":[
-			"\\citefullauthor[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citefullauthor[][]{}":{
-		"prefix":"Citefullauthor",
-		"body":[
-			"\\Citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citefullauthor[]{}":{
-		"prefix":"Citefullauthor",
-		"body":[
-			"\\Citefullauthor[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"printtexte[]{}":{
-		"prefix":"printtexte",
-		"body":[
-			"\\printtexte[${2:format}]{${1:text}}"
-		]
-	},
-
-
-	"fullcitebib[][]{}":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"fullcitebib[]{}":{
-		"prefix":"fullcitebib",
-		"body":[
-			"\\fullcitebib[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite[][]{}":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcite[]{}":{
-		"prefix":"nptextcite",
-		"body":[
-			"\\nptextcite[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"nptextcites()()[]{}[]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${5:pre})(${6:post})[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites[]{}[]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:pre}]{${1:bibid}}[${4:pre}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites[][]{}[][]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"nptextcites()()[][]{}[][]{}":{
-		"prefix":"nptextcites",
-		"body":[
-			"\\nptextcites(${7:pre})(${8:post})[${3:pre}][${4:post}]{${1:bibid}}[${5:pre}][${6:post}]{${2:bibid}}"
-		]
-	},
-
-
-	"citet[][]{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citet[]{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep[][]{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citep[]{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt[][]{}":{
-		"prefix":"citealt",
-		"body":[
-			"\\citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealt[]{}":{
-		"prefix":"citealt",
-		"body":[
-			"\\citealt[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp[][]{}":{
-		"prefix":"citealp",
-		"body":[
-			"\\citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citealp[]{}":{
-		"prefix":"citealp",
-		"body":[
-			"\\citealp[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor[][]{}":{
-		"prefix":"citeauthor",
-		"body":[
-			"\\citeauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeauthor[]{}":{
-		"prefix":"citeauthor",
-		"body":[
-			"\\citeauthor[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearpar[][]{}":{
-		"prefix":"citeyearpar",
-		"body":[
-			"\\citeyearpar[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citeyearpar[]{}":{
-		"prefix":"citeyearpar",
-		"body":[
-			"\\citeyearpar[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet[][]{}":{
-		"prefix":"Citet",
-		"body":[
-			"\\Citet[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citet[]{}":{
-		"prefix":"Citet",
-		"body":[
-			"\\Citet[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep[][]{}":{
-		"prefix":"Citep",
-		"body":[
-			"\\Citep[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citep[]{}":{
-		"prefix":"Citep",
-		"body":[
-			"\\Citep[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt[][]{}":{
-		"prefix":"Citealt",
-		"body":[
-			"\\Citealt[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealt[]{}":{
-		"prefix":"Citealt",
-		"body":[
-			"\\Citealt[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp[][]{}":{
-		"prefix":"Citealp",
-		"body":[
-			"\\Citealp[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citealp[]{}":{
-		"prefix":"Citealp",
-		"body":[
-			"\\Citealp[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citefullauthor[][]{}":{
-		"prefix":"citefullauthor",
-		"body":[
-			"\\citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"citefullauthor[]{}":{
-		"prefix":"citefullauthor",
-		"body":[
-			"\\citefullauthor[${2:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citefullauthor[][]{}":{
-		"prefix":"Citefullauthor",
-		"body":[
-			"\\Citefullauthor[${2:prenote}][${3:postnote}]{${1:bibid}}"
-		]
-	},
-
-
-	"Citefullauthor[]{}":{
-		"prefix":"Citefullauthor",
-		"body":[
-			"\\Citefullauthor[${2:postnote}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1797,6 +1778,250 @@
 		"prefix":"weblink",
 		"body":[
 			"\\weblink{${1:URL}}[${2:date}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SetURLDate{}":{
+		"prefix":"SetURLDate",
+		"body":[
+			"\\SetURLDate{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"urldate{}":{
+		"prefix":"urldate",
+		"body":[
+			"\\urldate{${1:date}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnumwidth":{
+		"prefix":"footnumwidth",
+		"body":[
+			"\\footnumwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"maxfn":{
+		"prefix":"maxfn",
+		"body":[
+			"\\maxfn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"urlprefix":{
+		"prefix":"urlprefix",
+		"body":[
+			"\\urlprefix"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DH":{
+		"prefix":"DH",
+		"body":[
+			"\\DH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dh":{
+		"prefix":"dh",
+		"body":[
+			"\\dh"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dj":{
+		"prefix":"dj",
+		"body":[
+			"\\dj"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DJ":{
+		"prefix":"DJ",
+		"body":[
+			"\\DJ"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetleft":{
+		"prefix":"guillemetleft",
+		"body":[
+			"\\guillemetleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemetright":{
+		"prefix":"guillemetright",
+		"body":[
+			"\\guillemetright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotleft":{
+		"prefix":"guillemotleft",
+		"body":[
+			"\\guillemotleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guillemotright":{
+		"prefix":"guillemotright",
+		"body":[
+			"\\guillemotright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglleft":{
+		"prefix":"guilsinglleft",
+		"body":[
+			"\\guilsinglleft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"guilsinglright":{
+		"prefix":"guilsinglright",
+		"body":[
+			"\\guilsinglright"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hwithstroke":{
+		"prefix":"Hwithstroke",
+		"body":[
+			"\\Hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hwithstroke":{
+		"prefix":"hwithstroke",
+		"body":[
+			"\\hwithstroke"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"k{}":{
+		"prefix":"k",
+		"body":[
+			"\\k{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NG":{
+		"prefix":"NG",
+		"body":[
+			"\\NG"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ng":{
+		"prefix":"ng",
+		"body":[
+			"\\ng"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotedblbase":{
+		"prefix":"quotedblbase",
+		"body":[
+			"\\quotedblbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotesinglbase":{
+		"prefix":"quotesinglbase",
+		"body":[
+			"\\quotesinglbase"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textogonekcentered{}":{
+		"prefix":"textogonekcentered",
+		"body":[
+			"\\textogonekcentered{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"textquotedbl":{
+		"prefix":"textquotedbl",
+		"body":[
+			"\\textquotedbl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"th":{
+		"prefix":"th",
+		"body":[
+			"\\th"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TH":{
+		"prefix":"TH",
+		"body":[
+			"\\TH"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mkbibdateunified{}{}{}":{
+		"prefix":"mkbibdateunified",
+		"body":[
+			"\\mkbibdateunified{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

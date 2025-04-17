@@ -5,7 +5,8 @@
 		"prefix":"TO",
 		"body":[
 			"\\TO"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"EACH",
 		"body":[
 			"\\EACH"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"IN",
 		"body":[
 			"\\IN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"item",
 		"body":[
 			"\\item{${1:condition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"DEFAULT",
 		"body":[
 			"\\DEFAULT"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"CALL",
 		"body":[
 			"\\CALL{${1:function}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"ERROR",
 		"body":[
 			"\\ERROR{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"algkey",
 		"body":[
 			"\\algkey{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"RETURN",
 		"body":[
 			"\\RETURN"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,37 +86,41 @@
 		"prefix":"NIL",
 		"body":[
 			"\\NIL"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"algorithm":{
+	"algorithm{}{}":{
 		"prefix":"algorithm",
 		"body":[
 			"\\begin{algorithm}",
-				"\t$1",
+				"\t{${1:title%text}}{${2:vars%formula}}",
 			"\\end{algorithm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"IF":{
+	"IF{}":{
 		"prefix":"IF",
 		"body":[
 			"\\begin{IF}",
-				"\t$1",
+				"\t{${1:condition}}",
 			"\\end{IF}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"FOR":{
+	"FOR{}":{
 		"prefix":"FOR",
 		"body":[
 			"\\begin{FOR}",
-				"\t$1",
+				"\t{${1:condition}}",
 			"\\end{FOR}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +130,8 @@
 			"\\begin{WHILE}",
 				"\t$1",
 			"\\end{WHILE}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,7 +141,8 @@
 			"\\begin{REPEAT}",
 				"\t$1",
 			"\\end{REPEAT}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -137,6 +152,7 @@
 			"\\begin{SWITCH}",
 				"\t$1",
 			"\\end{SWITCH}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

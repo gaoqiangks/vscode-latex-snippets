@@ -5,7 +5,8 @@
 		"prefix":"testhyphens",
 		"body":[
 			"\\testhyphens"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"breakafterword",
 		"body":[
 			"\\breakafterword"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"getlastline",
 		"body":[
 			"\\getlastline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"nomorelines",
 		"body":[
 			"\\nomorelines"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -39,16 +43,18 @@
 			"\\begin{checkhyphens}",
 				"\t$1",
 			"\\end{checkhyphens}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"checkhyphens":{
+	"checkhyphens[]":{
 		"prefix":"checkhyphens",
 		"body":[
 			"\\begin{checkhyphens}",
-				"\t$1",
+				"\t[${1:left-right}]",
 			"\\end{checkhyphens}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

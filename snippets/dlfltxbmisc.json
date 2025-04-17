@@ -5,95 +5,8 @@
 		"prefix":"Arg",
 		"body":[
 			"\\Arg{${1:text%plain}}"
-		]
-	},
-
-
-	"marg{}":{
-		"prefix":"marg",
-		"body":[
-			"\\marg{${1:text%plain}}"
-		]
-	},
-
-
-	"oarg{}":{
-		"prefix":"oarg",
-		"body":[
-			"\\oarg{${1:text%plain}}"
-		]
-	},
-
-
-	"parg{}":{
-		"prefix":"parg",
-		"body":[
-			"\\parg{${1:text%plain}}"
-		]
-	},
-
-
-	"addurl{}{}":{
-		"prefix":"addurl",
-		"body":[
-			"\\addurl{${1:URL}}{${2:see below}}"
-		]
-	},
-
-
-	"addCTAN{}{}":{
-		"prefix":"addCTAN",
-		"body":[
-			"\\addCTAN{${1:URL}}{${2:see below}}"
-		]
-	},
-
-
-	"CTAN{}":{
-		"prefix":"CTAN",
-		"body":[
-			"\\CTAN{${1:path%URL}}"
-		]
-	},
-
-
-	"dbx":{
-		"prefix":"dbx",
-		"body":[
-			"\\dbx"
-		]
-	},
-
-
-	"lastlinedim":{
-		"prefix":"lastlinedim",
-		"body":[
-			"\\lastlinedim"
-		]
-	},
-
-
-	"getlastlinesize":{
-		"prefix":"getlastlinesize",
-		"body":[
-			"\\getlastlinesize"
-		]
-	},
-
-
-	"mypath":{
-		"prefix":"mypath",
-		"body":[
-			"\\mypath"
-		]
-	},
-
-
-	"href{}{}":{
-		"prefix":"href",
-		"body":[
-			"\\href{${1:URL}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,17 @@
 		"prefix":"*Arg",
 		"body":[
 			"\\Arg*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"marg{}":{
+		"prefix":"marg",
+		"body":[
+			"\\marg{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +32,17 @@
 		"prefix":"*marg",
 		"body":[
 			"\\marg*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"oarg{}":{
+		"prefix":"oarg",
+		"body":[
+			"\\oarg{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +50,17 @@
 		"prefix":"*oarg",
 		"body":[
 			"\\oarg*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"parg{}":{
+		"prefix":"parg",
+		"body":[
+			"\\parg{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +68,17 @@
 		"prefix":"*parg",
 		"body":[
 			"\\parg*{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"addurl{}{}":{
+		"prefix":"addurl",
+		"body":[
+			"\\addurl{${1:URL}}{${2:see below}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +86,17 @@
 		"prefix":"addurl",
 		"body":[
 			"\\addurl[${3:pre text}]{${1:URL}}{${2:see below}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addCTAN{}{}":{
+		"prefix":"addCTAN",
+		"body":[
+			"\\addCTAN{${1:URL}}{${2:see below}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +104,26 @@
 		"prefix":"addCTAN",
 		"body":[
 			"\\addCTAN[${3:pre text}]{${1:URL}}{${2:see below}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CTAN{}":{
+		"prefix":"CTAN",
+		"body":[
+			"\\CTAN{${1:path%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dbx":{
+		"prefix":"dbx",
+		"body":[
+			"\\dbx"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +131,44 @@
 		"prefix":"dbx",
 		"body":[
 			"\\dbx[${1:width}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"lastlinedim":{
+		"prefix":"lastlinedim",
+		"body":[
+			"\\lastlinedim"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getlastlinesize":{
+		"prefix":"getlastlinesize",
+		"body":[
+			"\\getlastlinesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mypath":{
+		"prefix":"mypath",
+		"body":[
+			"\\mypath"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"href{}{}":{
+		"prefix":"href",
+		"body":[
+			"\\href{${1:URL}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -159,7 +178,8 @@
 			"\\begin{syntax}",
 				"\t$1",
 			"\\end{syntax}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -169,6 +189,7 @@
 			"\\begin{syntax*}",
 				"\t$1",
 			"\\end{syntax*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

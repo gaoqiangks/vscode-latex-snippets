@@ -5,119 +5,8 @@
 		"prefix":"LPTNewTable",
 		"body":[
 			"\\LPTNewTable{${1:name%specialDef}}{${2:num cols}}{${3:preamble}}"
-		]
-	},
-
-
-	"LPTSetCurrentTable{}":{
-		"prefix":"LPTSetCurrentTable",
-		"body":[
-			"\\LPTSetCurrentTable{${1:table name%keyvals}}"
-		]
-	},
-
-
-	"LPTGetCurrentTable":{
-		"prefix":"LPTGetCurrentTable",
-		"body":[
-			"\\LPTGetCurrentTable"
-		]
-	},
-
-
-	"LPTAddRow":{
-		"prefix":"LPTAddRow",
-		"body":[
-			"\\LPTAddRow"
-		]
-	},
-
-
-	"LPTSetRowProp{}{}":{
-		"prefix":"LPTSetRowProp",
-		"body":[
-			"\\LPTSetRowProp{${1:index expr}}{${2:row options%keyvals}}"
-		]
-	},
-
-
-	"LPTUseTable":{
-		"prefix":"LPTUseTable",
-		"body":[
-			"\\LPTUseTable"
-		]
-	},
-
-
-	"LPTDeleteTable{}":{
-		"prefix":"LPTDeleteTable",
-		"body":[
-			"\\LPTDeleteTable{${1:table name%keyvals}}"
-		]
-	},
-
-
-	"LPTSetCell{}{}":{
-		"prefix":"LPTSetCell",
-		"body":[
-			"\\LPTSetCell{${1:index expr}}{${2:content}}"
-		]
-	},
-
-
-	"LPTFill{}{}":{
-		"prefix":"LPTFill",
-		"body":[
-			"\\LPTFill{${1:index expr}}{${2:content}}"
-		]
-	},
-
-
-	"LPTGetTableNames":{
-		"prefix":"LPTGetTableNames",
-		"body":[
-			"\\LPTGetTableNames"
-		]
-	},
-
-
-	"LPTGetTableShape":{
-		"prefix":"LPTGetTableShape",
-		"body":[
-			"\\LPTGetTableShape"
-		]
-	},
-
-
-	"LPTGetCellData{}":{
-		"prefix":"LPTGetCellData",
-		"body":[
-			"\\LPTGetCellData{${1:index expr}}"
-		]
-	},
-
-
-	"LPTGetCellShape{}":{
-		"prefix":"LPTGetCellShape",
-		"body":[
-			"\\LPTGetCellShape{${1:index expr}}"
-		]
-	},
-
-
-	"LPTGetCellParent{}":{
-		"prefix":"LPTGetCellParent",
-		"body":[
-			"\\LPTGetCellParent{${1:index expr}}"
-		]
-	},
-
-
-	"LPTGetCellMetaIndex{}{}":{
-		"prefix":"LPTGetCellMetaIndex",
-		"body":[
-			"\\LPTGetCellMetaIndex{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +14,35 @@
 		"prefix":"LPTNewTable",
 		"body":[
 			"\\LPTNewTable{${1:name%specialDef}}{${2:num cols}}{${3:preamble}}[${4:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LPTSetCurrentTable{}":{
+		"prefix":"LPTSetCurrentTable",
+		"body":[
+			"\\LPTSetCurrentTable{${1:table name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetCurrentTable":{
+		"prefix":"LPTGetCurrentTable",
+		"body":[
+			"\\LPTGetCurrentTable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTAddRow":{
+		"prefix":"LPTAddRow",
+		"body":[
+			"\\LPTAddRow"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +50,44 @@
 		"prefix":"LPTAddRow",
 		"body":[
 			"\\LPTAddRow[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LPTSetRowProp{}{}":{
+		"prefix":"LPTSetRowProp",
+		"body":[
+			"\\LPTSetRowProp{${1:index expr}}{${2:row options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTUseTable":{
+		"prefix":"LPTUseTable",
+		"body":[
+			"\\LPTUseTable"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTDeleteTable{}":{
+		"prefix":"LPTDeleteTable",
+		"body":[
+			"\\LPTDeleteTable{${1:table name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTSetCell{}{}":{
+		"prefix":"LPTSetCell",
+		"body":[
+			"\\LPTSetCell{${1:index expr}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,26 +95,92 @@
 		"prefix":"LPTSetCell",
 		"body":[
 			"\\LPTSetCell{${1:index expr}}[${3:shape}]{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"lptview":{
+	"LPTFill{}{}":{
+		"prefix":"LPTFill",
+		"body":[
+			"\\LPTFill{${1:index expr}}{${2:content}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetTableNames":{
+		"prefix":"LPTGetTableNames",
+		"body":[
+			"\\LPTGetTableNames"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetTableShape":{
+		"prefix":"LPTGetTableShape",
+		"body":[
+			"\\LPTGetTableShape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetCellData{}":{
+		"prefix":"LPTGetCellData",
+		"body":[
+			"\\LPTGetCellData{${1:index expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetCellShape{}":{
+		"prefix":"LPTGetCellShape",
+		"body":[
+			"\\LPTGetCellShape{${1:index expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetCellParent{}":{
+		"prefix":"LPTGetCellParent",
+		"body":[
+			"\\LPTGetCellParent{${1:index expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LPTGetCellMetaIndex{}{}":{
+		"prefix":"LPTGetCellMetaIndex",
+		"body":[
+			"\\LPTGetCellMetaIndex{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lptview{}":{
 		"prefix":"lptview",
 		"body":[
 			"\\begin{lptview}",
-				"\t$1",
+				"\t{${1:index expr}}",
 			"\\end{lptview}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"lptfill":{
+	"lptfill{}":{
 		"prefix":"lptfill",
 		"body":[
 			"\\begin{lptfill}",
-				"\t$1",
+				"\t{${1:index expr}}",
 			"\\end{lptfill}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

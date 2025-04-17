@@ -5,55 +5,8 @@
 		"prefix":"endpscharclip",
 		"body":[
 			"\\endpscharclip"
-		]
-	},
-
-
-	"pscharclip{}":{
-		"prefix":"pscharclip",
-		"body":[
-			"\\pscharclip{${1:text}}"
-		]
-	},
-
-
-	"pscharpath{}":{
-		"prefix":"pscharpath",
-		"body":[
-			"\\pscharpath{${1:text}}"
-		]
-	},
-
-
-	"pscharclip*[]{}":{
-		"prefix":"*pscharclip",
-		"body":[
-			"\\pscharclip*[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharclip*{}":{
-		"prefix":"*pscharclip",
-		"body":[
-			"\\pscharclip*{${1:text}}"
-		]
-	},
-
-
-	"pscharpath*[]{}":{
-		"prefix":"*pscharpath",
-		"body":[
-			"\\pscharpath*[${2:par}]{${1:text}}"
-		]
-	},
-
-
-	"pscharpath*{}":{
-		"prefix":"*pscharpath",
-		"body":[
-			"\\pscharpath*{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,35 @@
 		"prefix":"pscharclip",
 		"body":[
 			"\\pscharclip[${2:par}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pscharclip*[]{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*[${2:par}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharclip{}":{
+		"prefix":"pscharclip",
+		"body":[
+			"\\pscharclip{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pscharclip*{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -69,46 +50,78 @@
 		"prefix":"pscharpath",
 		"body":[
 			"\\pscharpath[${2:par}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"charclip":{
+	"pscharpath*[]{}":{
+		"prefix":"*pscharpath",
+		"body":[
+			"\\pscharpath*[${2:par}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharpath{}":{
+		"prefix":"pscharpath",
+		"body":[
+			"\\pscharpath{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pscharpath*{}":{
+		"prefix":"*pscharpath",
+		"body":[
+			"\\pscharpath*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"charclip[]{}":{
 		"prefix":"charclip",
 		"body":[
 			"\\begin{charclip}",
-				"\t$1",
+				"\t[${2:par}]{${1:text}}",
 			"\\end{charclip}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"charclip*":{
-		"prefix":"charclip",
+	"charclip*[]{}":{
+		"prefix":"*charclip",
 		"body":[
 			"\\begin{charclip*}",
-				"\t$1",
+				"\t[${2:par}]{${1:text}}",
 			"\\end{charclip*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"charclip":{
+	"charclip{}":{
 		"prefix":"charclip",
 		"body":[
 			"\\begin{charclip}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{charclip}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"charclip*":{
-		"prefix":"charclip",
+	"charclip*{}":{
+		"prefix":"*charclip",
 		"body":[
 			"\\begin{charclip*}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{charclip*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

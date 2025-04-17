@@ -5,7 +5,8 @@
 		"prefix":"leftheader",
 		"body":[
 			"\\leftheader{${1:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"rightheader",
 		"body":[
 			"\\rightheader{${1:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,263 +23,8 @@
 		"prefix":"photo",
 		"body":[
 			"\\photo{${1:imagefile}}"
-		]
-	},
-
-
-	"photoscale{}":{
-		"prefix":"photoscale",
-		"body":[
-			"\\photoscale{${1:scale}}"
-		]
-	},
-
-
-	"photosep":{
-		"prefix":"photosep",
-		"body":[
-			"\\photosep"
-		]
-	},
-
-
-	"headerscale{}":{
-		"prefix":"headerscale",
-		"body":[
-			"\\headerscale{${1:scale}}"
-		]
-	},
-
-
-	"headerspace":{
-		"prefix":"headerspace",
-		"body":[
-			"\\headerspace"
-		]
-	},
-
-
-	"subtitle{}":{
-		"prefix":"subtitle",
-		"body":[
-			"\\subtitle{${1:text}}"
-		]
-	},
-
-
-	"titlealignment{}":{
-		"prefix":"titlealignment",
-		"body":[
-			"\\titlealignment{${1:hpos%keyvals}}"
-		]
-	},
-
-
-	"titlespace":{
-		"prefix":"titlespace",
-		"body":[
-			"\\titlespace"
-		]
-	},
-
-
-	"titlefont{}":{
-		"prefix":"titlefont",
-		"body":[
-			"\\titlefont{${1:cmds}}"
-		]
-	},
-
-
-	"subtitlefont{}":{
-		"prefix":"subtitlefont",
-		"body":[
-			"\\subtitlefont{${1:cmds}}"
-		]
-	},
-
-
-	"makeheaders":{
-		"prefix":"makeheaders",
-		"body":[
-			"\\makeheaders"
-		]
-	},
-
-
-	"flavor{}":{
-		"prefix":"flavor",
-		"body":[
-			"\\flavor{${1:key%plain}}"
-		]
-	},
-
-
-	"makerubric{}":{
-		"prefix":"makerubric",
-		"body":[
-			"\\makerubric{${1:file}}"
-		]
-	},
-
-
-	"rubricafterspace":{
-		"prefix":"rubricafterspace",
-		"body":[
-			"\\rubricafterspace"
-		]
-	},
-
-
-	"rubricalignment{}":{
-		"prefix":"rubricalignment",
-		"body":[
-			"\\rubricalignment{${1:hpos%keyvals}}"
-		]
-	},
-
-
-	"rubricfont{}":{
-		"prefix":"rubricfont",
-		"body":[
-			"\\rubricfont{${1:cmds}}"
-		]
-	},
-
-
-	"rubricspace":{
-		"prefix":"rubricspace",
-		"body":[
-			"\\rubricspace"
-		]
-	},
-
-
-	"entry{}":{
-		"prefix":"entry",
-		"body":[
-			"\\entry{${1:contents%text}}"
-		]
-	},
-
-
-	"keyalignment{}":{
-		"prefix":"keyalignment",
-		"body":[
-			"\\keyalignment{${1:hpos%keyvals}}"
-		]
-	},
-
-
-	"keyfont":{
-		"prefix":"keyfont",
-		"body":[
-			"\\keyfont"
-		]
-	},
-
-
-	"prefix{}":{
-		"prefix":"prefix",
-		"body":[
-			"\\prefix{${1:cmds}}"
-		]
-	},
-
-
-	"noentry{}":{
-		"prefix":"noentry",
-		"body":[
-			"\\noentry{${1:key%plain}}"
-		]
-	},
-
-
-	"subrubric{}":{
-		"prefix":"subrubric",
-		"body":[
-			"\\subrubric{${1:title%text}}"
-		]
-	},
-
-
-	"subrubricalignment{}":{
-		"prefix":"subrubricalignment",
-		"body":[
-			"\\subrubricalignment{${1:hpos%keyvals}}"
-		]
-	},
-
-
-	"subrubricfont{}":{
-		"prefix":"subrubricfont",
-		"body":[
-			"\\subrubricfont{${1:cmds}}"
-		]
-	},
-
-
-	"subrubricspace":{
-		"prefix":"subrubricspace",
-		"body":[
-			"\\subrubricspace"
-		]
-	},
-
-
-	"subrubricbeforespace":{
-		"prefix":"subrubricbeforespace",
-		"body":[
-			"\\subrubricbeforespace"
-		]
-	},
-
-
-	"continuedname{}":{
-		"prefix":"continuedname",
-		"body":[
-			"\\continuedname{${1:text}}"
-		]
-	},
-
-
-	"listpubname{}":{
-		"prefix":"listpubname",
-		"body":[
-			"\\listpubname{${1:title%text}}"
-		]
-	},
-
-
-	"thebibcount":{
-		"prefix":"thebibcount",
-		"body":[
-			"\\thebibcount"
-		]
-	},
-
-
-	"thebibtotal":{
-		"prefix":"thebibtotal",
-		"body":[
-			"\\thebibtotal"
-		]
-	},
-
-
-	"entry*":{
-		"prefix":"*entry",
-		"body":[
-			"\\entry*"
-		]
-	},
-
-
-	"entry*[]":{
-		"prefix":"*entry",
-		"body":[
-			"\\entry*[${1:key%plain}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +32,98 @@
 		"prefix":"photo",
 		"body":[
 			"\\photo[${2:hpos%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"photoscale{}":{
+		"prefix":"photoscale",
+		"body":[
+			"\\photoscale{${1:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"photosep":{
+		"prefix":"photosep",
+		"body":[
+			"\\photosep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headerscale{}":{
+		"prefix":"headerscale",
+		"body":[
+			"\\headerscale{${1:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"headerspace":{
+		"prefix":"headerspace",
+		"body":[
+			"\\headerspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtitle{}":{
+		"prefix":"subtitle",
+		"body":[
+			"\\subtitle{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlealignment{}":{
+		"prefix":"titlealignment",
+		"body":[
+			"\\titlealignment{${1:hpos%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlespace":{
+		"prefix":"titlespace",
+		"body":[
+			"\\titlespace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"titlefont{}":{
+		"prefix":"titlefont",
+		"body":[
+			"\\titlefont{${1:cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtitlefont{}":{
+		"prefix":"subtitlefont",
+		"body":[
+			"\\subtitlefont{${1:cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeheaders":{
+		"prefix":"makeheaders",
+		"body":[
+			"\\makeheaders"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +131,71 @@
 		"prefix":"makeheaders",
 		"body":[
 			"\\makeheaders[${1:vpos%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"flavor{}":{
+		"prefix":"flavor",
+		"body":[
+			"\\flavor{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makerubric{}":{
+		"prefix":"makerubric",
+		"body":[
+			"\\makerubric{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rubricafterspace":{
+		"prefix":"rubricafterspace",
+		"body":[
+			"\\rubricafterspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rubricalignment{}":{
+		"prefix":"rubricalignment",
+		"body":[
+			"\\rubricalignment{${1:hpos%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rubricfont{}":{
+		"prefix":"rubricfont",
+		"body":[
+			"\\rubricfont{${1:cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rubricspace":{
+		"prefix":"rubricspace",
+		"body":[
+			"\\rubricspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"entry{}":{
+		"prefix":"entry",
+		"body":[
+			"\\entry{${1:contents%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,16 +203,153 @@
 		"prefix":"entry",
 		"body":[
 			"\\entry[${2:key%plain}]{${1:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"rubric":{
+	"entry*":{
+		"prefix":"*entry",
+		"body":[
+			"\\entry*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"entry*[]":{
+		"prefix":"*entry",
+		"body":[
+			"\\entry*[${1:key%plain}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"keyalignment{}":{
+		"prefix":"keyalignment",
+		"body":[
+			"\\keyalignment{${1:hpos%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keyfont":{
+		"prefix":"keyfont",
+		"body":[
+			"\\keyfont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"prefix{}":{
+		"prefix":"prefix",
+		"body":[
+			"\\prefix{${1:cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"noentry{}":{
+		"prefix":"noentry",
+		"body":[
+			"\\noentry{${1:key%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subrubric{}":{
+		"prefix":"subrubric",
+		"body":[
+			"\\subrubric{${1:title%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subrubricalignment{}":{
+		"prefix":"subrubricalignment",
+		"body":[
+			"\\subrubricalignment{${1:hpos%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subrubricfont{}":{
+		"prefix":"subrubricfont",
+		"body":[
+			"\\subrubricfont{${1:cmds}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subrubricspace":{
+		"prefix":"subrubricspace",
+		"body":[
+			"\\subrubricspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subrubricbeforespace":{
+		"prefix":"subrubricbeforespace",
+		"body":[
+			"\\subrubricbeforespace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"continuedname{}":{
+		"prefix":"continuedname",
+		"body":[
+			"\\continuedname{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listpubname{}":{
+		"prefix":"listpubname",
+		"body":[
+			"\\listpubname{${1:title%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebibcount":{
+		"prefix":"thebibcount",
+		"body":[
+			"\\thebibcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thebibtotal":{
+		"prefix":"thebibtotal",
+		"body":[
+			"\\thebibtotal"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rubric{}":{
 		"prefix":"rubric",
 		"body":[
 			"\\begin{rubric}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{rubric}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

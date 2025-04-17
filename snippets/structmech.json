@@ -5,7 +5,8 @@
 		"prefix":"setstructmech",
 		"body":[
 			"\\setstructmech{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,143 +14,8 @@
 		"prefix":"NodalForce",
 		"body":[
 			"\\NodalForce{${1:x,y}}"
-		]
-	},
-
-
-	"BasicForce{}{}{}":{
-		"prefix":"BasicForce",
-		"body":[
-			"\\BasicForce{${1:x1,y1}}{${2:x2,y2}}{${3:label}}"
-		]
-	},
-
-
-	"UDL{}{}":{
-		"prefix":"UDL",
-		"body":[
-			"\\UDL{${1:x1,y1}}{${2:x2,y2}}"
-		]
-	},
-
-
-	"HingeSupport{}":{
-		"prefix":"HingeSupport",
-		"body":[
-			"\\HingeSupport{${1:x,y}}"
-		]
-	},
-
-
-	"FixedSupport{}":{
-		"prefix":"FixedSupport",
-		"body":[
-			"\\FixedSupport{${1:x,y}}"
-		]
-	},
-
-
-	"RollerSupport{}":{
-		"prefix":"RollerSupport",
-		"body":[
-			"\\RollerSupport{${1:x,y}}"
-		]
-	},
-
-
-	"SliderSupport{}":{
-		"prefix":"SliderSupport",
-		"body":[
-			"\\SliderSupport{${1:x,y}}"
-		]
-	},
-
-
-	"SleeveSupport{}":{
-		"prefix":"SleeveSupport",
-		"body":[
-			"\\SleeveSupport{${1:x,y}}"
-		]
-	},
-
-
-	"Rigid{}":{
-		"prefix":"Rigid",
-		"body":[
-			"\\Rigid{${1:x,y}}"
-		]
-	},
-
-
-	"CoorOrigin{}":{
-		"prefix":"CoorOrigin",
-		"body":[
-			"\\CoorOrigin{${1:x,y}}"
-		]
-	},
-
-
-	"IForceA{}{}{}{}":{
-		"prefix":"IForceA",
-		"body":[
-			"\\IForceA{${1:x1,y1}}{${2:x2,y2}}{${3:force-lower}}{${4:force-higher}}"
-		]
-	},
-
-
-	"IForceB{}{}{}{}{}":{
-		"prefix":"IForceB",
-		"body":[
-			"\\IForceB{${1:x1,y1}}{${2:x2,y2}}{${3:moment-lower}}{${4:moment-higher}}{${5:increment}}"
-		]
-	},
-
-
-	"BeamDeformP{}{}{}{}":{
-		"prefix":"BeamDeformP",
-		"body":[
-			"\\BeamDeformP{${1:x1,y1}}{${2:x2,y2}}{${3:disp-lower}}{${4:disp-higher}}"
-		]
-	},
-
-
-	"BeamDeformR{}{}":{
-		"prefix":"BeamDeformR",
-		"body":[
-			"\\BeamDeformR{${1:x1,y1}}{${2:x2,y2}}"
-		]
-	},
-
-
-	"Dashpot{}{}":{
-		"prefix":"Dashpot",
-		"body":[
-			"\\Dashpot{${1:x1,y1}}{${2:x2,y2}}"
-		]
-	},
-
-
-	"Dashpot{}{}{}":{
-		"prefix":"Dashpot",
-		"body":[
-			"\\Dashpot{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
-		]
-	},
-
-
-	"Spring{}{}":{
-		"prefix":"Spring",
-		"body":[
-			"\\Spring{${1:x1,y1}}{${2:x2,y2}}"
-		]
-	},
-
-
-	"Spring{}{}{}":{
-		"prefix":"Spring",
-		"body":[
-			"\\Spring{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +23,8 @@
 		"prefix":"NodalForce",
 		"body":[
 			"\\NodalForce[${2:color}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +32,8 @@
 		"prefix":"NodalForce",
 		"body":[
 			"\\NodalForce[${2:color}]{${1:x,y}}[${3:Hlabel}][${4:Vlabel}][${5:Rlabel}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +41,17 @@
 		"prefix":"NodalForce",
 		"body":[
 			"\\NodalForce[${3:color}]{${1:x,y}}[${4:Hlabel}][${5:Vlabel}][${6:Rlabel}]{${2:rotation}}[${7:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BasicForce{}{}{}":{
+		"prefix":"BasicForce",
+		"body":[
+			"\\BasicForce{${1:x1,y1}}{${2:x2,y2}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +59,8 @@
 		"prefix":"BasicForce",
 		"body":[
 			"\\BasicForce[${4:number%keyvals}]{${1:x1,y1}}{${2:x2,y2}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +68,8 @@
 		"prefix":"BasicForce",
 		"body":[
 			"\\BasicForce[${5:number%keyvals}]{${1:x1,y1}}{${2:x2,y2}}{${3:label}}{${4:TikZ keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +77,17 @@
 		"prefix":"BasicForce",
 		"body":[
 			"\\BasicForce[${5:number%keyvals}]{${1:x1,y1}}{${2:x2,y2}}{${3:label}}{${4:TikZ keys}}[${6:label1}][${7:label2}][${8:label3}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"UDL{}{}":{
+		"prefix":"UDL",
+		"body":[
+			"\\UDL{${1:x1,y1}}{${2:x2,y2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +95,8 @@
 		"prefix":"UDL",
 		"body":[
 			"\\UDL[${3:F}]{${1:x1,y1}}{${2:x2,y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +104,8 @@
 		"prefix":"UDL",
 		"body":[
 			"\\UDL[${3:F}]{${1:x1,y1}}{${2:x2,y2}}[${4:label}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +113,17 @@
 		"prefix":"UDL",
 		"body":[
 			"\\UDL[${4:F}]{${1:x1,y1}}{${2:x2,y2}}[${5:label}]{${3:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"HingeSupport{}":{
+		"prefix":"HingeSupport",
+		"body":[
+			"\\HingeSupport{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +131,8 @@
 		"prefix":"HingeSupport",
 		"body":[
 			"\\HingeSupport[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +140,17 @@
 		"prefix":"HingeSupport",
 		"body":[
 			"\\HingeSupport[${3:rotation}]{${1:x,y}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FixedSupport{}":{
+		"prefix":"FixedSupport",
+		"body":[
+			"\\FixedSupport{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +158,8 @@
 		"prefix":"FixedSupport",
 		"body":[
 			"\\FixedSupport[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -253,7 +167,17 @@
 		"prefix":"FixedSupport",
 		"body":[
 			"\\FixedSupport[${3:rotation}]{${1:x,y}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RollerSupport{}":{
+		"prefix":"RollerSupport",
+		"body":[
+			"\\RollerSupport{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +185,8 @@
 		"prefix":"RollerSupport",
 		"body":[
 			"\\RollerSupport[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +194,17 @@
 		"prefix":"RollerSupport",
 		"body":[
 			"\\RollerSupport[${3:rotation}]{${1:x,y}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SliderSupport{}":{
+		"prefix":"SliderSupport",
+		"body":[
+			"\\SliderSupport{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +212,8 @@
 		"prefix":"SliderSupport",
 		"body":[
 			"\\SliderSupport[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +221,17 @@
 		"prefix":"SliderSupport",
 		"body":[
 			"\\SliderSupport[${3:rotation}]{${1:x,y}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SleeveSupport{}":{
+		"prefix":"SleeveSupport",
+		"body":[
+			"\\SleeveSupport{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +239,8 @@
 		"prefix":"SleeveSupport",
 		"body":[
 			"\\SleeveSupport[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -301,7 +248,8 @@
 		"prefix":"SleeveSupport",
 		"body":[
 			"\\SleeveSupport[${2:rotation}]{${1:x,y}}[${3:gap%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +257,17 @@
 		"prefix":"SleeveSupport",
 		"body":[
 			"\\SleeveSupport[${3:rotation}]{${1:x,y}}[${4:gap%l}]{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rigid{}":{
+		"prefix":"Rigid",
+		"body":[
+			"\\Rigid{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +275,8 @@
 		"prefix":"Rigid",
 		"body":[
 			"\\Rigid[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -325,7 +284,17 @@
 		"prefix":"Rigid",
 		"body":[
 			"\\Rigid[${3:rotation}]{${1:x,y}}{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CoorOrigin{}":{
+		"prefix":"CoorOrigin",
+		"body":[
+			"\\CoorOrigin{${1:x,y}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -333,7 +302,8 @@
 		"prefix":"CoorOrigin",
 		"body":[
 			"\\CoorOrigin[${2:rotation}]{${1:x,y}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -341,7 +311,8 @@
 		"prefix":"CoorOrigin",
 		"body":[
 			"\\CoorOrigin[${2:rotation}]{${1:x,y}}[${3:xlabel}][${4:ylabel}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -349,7 +320,17 @@
 		"prefix":"CoorOrigin",
 		"body":[
 			"\\CoorOrigin[${3:rotation}]{${1:x,y}}[${4:xlabel}][${5:ylabel}]{${2:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IForceA{}{}{}{}":{
+		"prefix":"IForceA",
+		"body":[
+			"\\IForceA{${1:x1,y1}}{${2:x2,y2}}{${3:force-lower}}{${4:force-higher}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +338,8 @@
 		"prefix":"IForceA",
 		"body":[
 			"\\IForceA[${5:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:force-lower}}{${4:force-higher}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -365,7 +347,17 @@
 		"prefix":"IForceA",
 		"body":[
 			"\\IForceA[${6:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:force-lower}}{${4:force-higher}}{${5:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"IForceB{}{}{}{}{}":{
+		"prefix":"IForceB",
+		"body":[
+			"\\IForceB{${1:x1,y1}}{${2:x2,y2}}{${3:moment-lower}}{${4:moment-higher}}{${5:increment}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -373,7 +365,8 @@
 		"prefix":"IForceB",
 		"body":[
 			"\\IForceB[${6:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:moment-lower}}{${4:moment-higher}}{${5:increment}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -381,7 +374,17 @@
 		"prefix":"IForceB",
 		"body":[
 			"\\IForceB[${7:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:moment-lower}}{${4:moment-higher}}{${5:increment}}{${6:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BeamDeformP{}{}{}{}":{
+		"prefix":"BeamDeformP",
+		"body":[
+			"\\BeamDeformP{${1:x1,y1}}{${2:x2,y2}}{${3:disp-lower}}{${4:disp-higher}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,7 +392,8 @@
 		"prefix":"BeamDeformP",
 		"body":[
 			"\\BeamDeformP[${5:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:disp-lower}}{${4:disp-higher}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -397,7 +401,8 @@
 		"prefix":"BeamDeformP",
 		"body":[
 			"\\BeamDeformP[${5:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:disp-lower}}[${6:rot-lower}]{${4:disp-higher}}[${7:rot-higher}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -405,7 +410,17 @@
 		"prefix":"BeamDeformP",
 		"body":[
 			"\\BeamDeformP[${6:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:disp-lower}}[${7:rot-lower}]{${4:disp-higher}}[${8:rot-higher}]{${5:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BeamDeformR{}{}":{
+		"prefix":"BeamDeformR",
+		"body":[
+			"\\BeamDeformR{${1:x1,y1}}{${2:x2,y2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,7 +428,8 @@
 		"prefix":"BeamDeformR",
 		"body":[
 			"\\BeamDeformR[${3:color}]{${1:x1,y1}}{${2:x2,y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -421,7 +437,8 @@
 		"prefix":"BeamDeformR",
 		"body":[
 			"\\BeamDeformR[${3:color}]{${1:x1,y1}}{${2:x2,y2}}[${4:rot-lower}][${5:rot-higher}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -429,7 +446,26 @@
 		"prefix":"BeamDeformR",
 		"body":[
 			"\\BeamDeformR[${4:color}]{${1:x1,y1}}{${2:x2,y2}}[${5:rot-lower}][${6:rot-higher}]{${3:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Dashpot{}{}":{
+		"prefix":"Dashpot",
+		"body":[
+			"\\Dashpot{${1:x1,y1}}{${2:x2,y2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Dashpot{}{}{}":{
+		"prefix":"Dashpot",
+		"body":[
+			"\\Dashpot{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -437,7 +473,8 @@
 		"prefix":"Dashpot",
 		"body":[
 			"\\Dashpot[${3:color}]{${1:x1,y1}}{${2:x2,y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -445,7 +482,26 @@
 		"prefix":"Dashpot",
 		"body":[
 			"\\Dashpot[${4:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Spring{}{}":{
+		"prefix":"Spring",
+		"body":[
+			"\\Spring{${1:x1,y1}}{${2:x2,y2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Spring{}{}{}":{
+		"prefix":"Spring",
+		"body":[
+			"\\Spring{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +509,8 @@
 		"prefix":"Spring",
 		"body":[
 			"\\Spring[${3:color}]{${1:x1,y1}}{${2:x2,y2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -461,6 +518,7 @@
 		"prefix":"Spring",
 		"body":[
 			"\\Spring[${4:color}]{${1:x1,y1}}{${2:x2,y2}}{${3:scale}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

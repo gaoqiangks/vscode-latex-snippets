@@ -5,7 +5,8 @@
 		"prefix":"ekvpNewParser",
 		"body":[
 			"\\ekvpNewParser{${1:parser}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ekvpDefType",
 		"body":[
 			"\\ekvpDefType{${1:parser}}{${2:type}}{${3:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"ekvpDefPrefix",
 		"body":[
 			"\\ekvpDefPrefix{${1:parser}}{${2:prefix}}{${3:pre}}{${4:post}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ekvpDefAutoPrefix",
 		"body":[
 			"\\ekvpDefAutoPrefix{${1:parser}}{${2:pre}}{${3:post}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"ekvpDefPrefixStore",
 		"body":[
 			"\\ekvpDefPrefixStore{${1:parser}}{${2:prefix}}{${3:cmd}}{${4:pre}}{${5:post}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ekvpDefPrefixLet",
 		"body":[
 			"\\ekvpDefPrefixLet{${1:parser}}{${2:prefix}}{${3:cmd}}{${4:pre}}{${5:post}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,183 +59,8 @@
 		"prefix":"ekvpLet",
 		"body":[
 			"\\ekvpLet{${1:parser}}{${2:type}}{${3:name1}}{${4:name2}}"
-		]
-	},
-
-
-	"ekvpValueAlwaysRequired{}":{
-		"prefix":"ekvpValueAlwaysRequired",
-		"body":[
-			"\\ekvpValueAlwaysRequired{${1:parser}}"
-		]
-	},
-
-
-	"ekvpDefNoValue{}{}":{
-		"prefix":"ekvpDefNoValue",
-		"body":[
-			"\\ekvpDefNoValue{${1:parser}}{${2:code}}"
-		]
-	},
-
-
-	"ekvpUseNoValueMarker{}{}":{
-		"prefix":"ekvpUseNoValueMarker",
-		"body":[
-			"\\ekvpUseNoValueMarker{${1:parser}}{${2:marker}}"
-		]
-	},
-
-
-	"ekvpDefNoValuePrefix{}{}{}":{
-		"prefix":"ekvpDefNoValuePrefix",
-		"body":[
-			"\\ekvpDefNoValuePrefix{${1:parser}}{${2:pre}}{${3:post}}"
-		]
-	},
-
-
-	"ekvpDefNoType{}{}":{
-		"prefix":"ekvpDefNoType",
-		"body":[
-			"\\ekvpDefNoType{${1:parser}}{${2:code}}"
-		]
-	},
-
-
-	"ekvpEOP":{
-		"prefix":"ekvpEOP",
-		"body":[
-			"\\ekvpEOP"
-		]
-	},
-
-
-	"ekvpGobbleP":{
-		"prefix":"ekvpGobbleP",
-		"body":[
-			"\\ekvpGobbleP"
-		]
-	},
-
-
-	"ekvpEOT":{
-		"prefix":"ekvpEOT",
-		"body":[
-			"\\ekvpEOT"
-		]
-	},
-
-
-	"ekvpGobbleT":{
-		"prefix":"ekvpGobbleT",
-		"body":[
-			"\\ekvpGobbleT"
-		]
-	},
-
-
-	"ekvpEOA":{
-		"prefix":"ekvpEOA",
-		"body":[
-			"\\ekvpEOA"
-		]
-	},
-
-
-	"ekvpGobbleA":{
-		"prefix":"ekvpGobbleA",
-		"body":[
-			"\\ekvpGobbleA"
-		]
-	},
-
-
-	"ekvpIfNoVal{}{}{}":{
-		"prefix":"ekvpIfNoVal",
-		"body":[
-			"\\ekvpIfNoVal{${1:arg}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ekvpAssertIf{}{}":{
-		"prefix":"ekvpAssertIf",
-		"body":[
-			"\\ekvpAssertIf{${1:if}}{${2:message%text}}"
-		]
-	},
-
-
-	"ekvpAssertIfNot{}{}":{
-		"prefix":"ekvpAssertIfNot",
-		"body":[
-			"\\ekvpAssertIfNot{${1:if}}{${2:message%text}}"
-		]
-	},
-
-
-	"ekvpAssertTF{}{}":{
-		"prefix":"ekvpAssertTF",
-		"body":[
-			"\\ekvpAssertTF{${1:if}}{${2:message%text}}"
-		]
-	},
-
-
-	"ekvpAssertTFNot{}{}":{
-		"prefix":"ekvpAssertTFNot",
-		"body":[
-			"\\ekvpAssertTFNot{${1:if}}{${2:message%text}}"
-		]
-	},
-
-
-	"ekvpAssertValue{}":{
-		"prefix":"ekvpAssertValue",
-		"body":[
-			"\\ekvpAssertValue{${1:arg}}"
-		]
-	},
-
-
-	"ekvpAssertNoValue{}":{
-		"prefix":"ekvpAssertNoValue",
-		"body":[
-			"\\ekvpAssertNoValue{${1:arg}}"
-		]
-	},
-
-
-	"ekvpAssertOneValue{}":{
-		"prefix":"ekvpAssertOneValue",
-		"body":[
-			"\\ekvpAssertOneValue{${1:arg}}"
-		]
-	},
-
-
-	"ekvpAssertTwoValues{}":{
-		"prefix":"ekvpAssertTwoValues",
-		"body":[
-			"\\ekvpAssertTwoValues{${1:arg}}"
-		]
-	},
-
-
-	"ekvpProtect{}":{
-		"prefix":"ekvpProtect",
-		"body":[
-			"\\ekvpProtect{${1:code}}"
-		]
-	},
-
-
-	"ekvpParse{}{}":{
-		"prefix":"ekvpParse",
-		"body":[
-			"\\ekvpParse{${1:parser}}{${2:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +68,125 @@
 		"prefix":"ekvpLet",
 		"body":[
 			"\\ekvpLet{${1:parser1}}{${2:type}}{${3:name1}}[${5:parser2}]{${4:name2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpValueAlwaysRequired{}":{
+		"prefix":"ekvpValueAlwaysRequired",
+		"body":[
+			"\\ekvpValueAlwaysRequired{${1:parser}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpDefNoValue{}{}":{
+		"prefix":"ekvpDefNoValue",
+		"body":[
+			"\\ekvpDefNoValue{${1:parser}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpUseNoValueMarker{}{}":{
+		"prefix":"ekvpUseNoValueMarker",
+		"body":[
+			"\\ekvpUseNoValueMarker{${1:parser}}{${2:marker}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpDefNoValuePrefix{}{}{}":{
+		"prefix":"ekvpDefNoValuePrefix",
+		"body":[
+			"\\ekvpDefNoValuePrefix{${1:parser}}{${2:pre}}{${3:post}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpDefNoType{}{}":{
+		"prefix":"ekvpDefNoType",
+		"body":[
+			"\\ekvpDefNoType{${1:parser}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpEOP":{
+		"prefix":"ekvpEOP",
+		"body":[
+			"\\ekvpEOP"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpGobbleP":{
+		"prefix":"ekvpGobbleP",
+		"body":[
+			"\\ekvpGobbleP"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpEOT":{
+		"prefix":"ekvpEOT",
+		"body":[
+			"\\ekvpEOT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpGobbleT":{
+		"prefix":"ekvpGobbleT",
+		"body":[
+			"\\ekvpGobbleT"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpEOA":{
+		"prefix":"ekvpEOA",
+		"body":[
+			"\\ekvpEOA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpGobbleA":{
+		"prefix":"ekvpGobbleA",
+		"body":[
+			"\\ekvpGobbleA"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpIfNoVal{}{}{}":{
+		"prefix":"ekvpIfNoVal",
+		"body":[
+			"\\ekvpIfNoVal{${1:arg}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpAssertIf{}{}":{
+		"prefix":"ekvpAssertIf",
+		"body":[
+			"\\ekvpAssertIf{${1:if}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +194,17 @@
 		"prefix":"ekvpAssertIf",
 		"body":[
 			"\\ekvpAssertIf[${3:marker}]{${1:if}}{${2:message%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertIfNot{}{}":{
+		"prefix":"ekvpAssertIfNot",
+		"body":[
+			"\\ekvpAssertIfNot{${1:if}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +212,17 @@
 		"prefix":"ekvpAssertIfNot",
 		"body":[
 			"\\ekvpAssertIfNot[${3:marker}]{${1:if}}{${2:message%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertTF{}{}":{
+		"prefix":"ekvpAssertTF",
+		"body":[
+			"\\ekvpAssertTF{${1:if}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +230,17 @@
 		"prefix":"ekvpAssertTF",
 		"body":[
 			"\\ekvpAssertTF[${3:marker}]{${1:if}}{${2:message%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertTFNot{}{}":{
+		"prefix":"ekvpAssertTFNot",
+		"body":[
+			"\\ekvpAssertTFNot{${1:if}}{${2:message%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +248,17 @@
 		"prefix":"ekvpAssertTFNot",
 		"body":[
 			"\\ekvpAssertTFNot[${3:marker}]{${1:if}}{${2:message%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertValue{}":{
+		"prefix":"ekvpAssertValue",
+		"body":[
+			"\\ekvpAssertValue{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +266,17 @@
 		"prefix":"ekvpAssertValue",
 		"body":[
 			"\\ekvpAssertValue[${2:marker}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertNoValue{}":{
+		"prefix":"ekvpAssertNoValue",
+		"body":[
+			"\\ekvpAssertNoValue{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +284,17 @@
 		"prefix":"ekvpAssertNoValue",
 		"body":[
 			"\\ekvpAssertNoValue[${2:marker}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertOneValue{}":{
+		"prefix":"ekvpAssertOneValue",
+		"body":[
+			"\\ekvpAssertOneValue{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +302,17 @@
 		"prefix":"ekvpAssertOneValue",
 		"body":[
 			"\\ekvpAssertOneValue[${2:marker}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpAssertTwoValues{}":{
+		"prefix":"ekvpAssertTwoValues",
+		"body":[
+			"\\ekvpAssertTwoValues{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,6 +320,25 @@
 		"prefix":"ekvpAssertTwoValues",
 		"body":[
 			"\\ekvpAssertTwoValues[${2:marker}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ekvpProtect{}":{
+		"prefix":"ekvpProtect",
+		"body":[
+			"\\ekvpProtect{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ekvpParse{}{}":{
+		"prefix":"ekvpParse",
+		"body":[
+			"\\ekvpParse{${1:parser}}{${2:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

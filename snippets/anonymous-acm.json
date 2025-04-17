@@ -5,7 +5,8 @@
 		"prefix":"authoranon",
 		"body":[
 			"\\authoranon{${1:author information%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"textanon",
 		"body":[
 			"\\textanon{${1:text}}{${2:placeholder}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"linkanon",
 		"body":[
 			"\\linkanon{${1:URL}}{${2:display link%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"textlinkanon",
 		"body":[
 			"\\textlinkanon{${1:URL}}{${2:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,31 +41,8 @@
 		"prefix":"citeanon",
 		"body":[
 			"\\citeanon{${1:bibid}}"
-		]
-	},
-
-
-	"ifAnonCondition":{
-		"prefix":"ifAnonCondition",
-		"body":[
-			"\\ifAnonCondition"
-		]
-	},
-
-
-	"AnonConditiontrue":{
-		"prefix":"AnonConditiontrue",
-		"body":[
-			"\\AnonConditiontrue"
-		]
-	},
-
-
-	"AnonConditionfalse":{
-		"prefix":"AnonConditionfalse",
-		"body":[
-			"\\AnonConditionfalse"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +50,34 @@
 		"prefix":"citeanon",
 		"body":[
 			"\\citeanon[${2:add. text}]{${1:bibid}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifAnonCondition":{
+		"prefix":"ifAnonCondition",
+		"body":[
+			"\\ifAnonCondition"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AnonConditiontrue":{
+		"prefix":"AnonConditiontrue",
+		"body":[
+			"\\AnonConditiontrue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AnonConditionfalse":{
+		"prefix":"AnonConditionfalse",
+		"body":[
+			"\\AnonConditionfalse"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

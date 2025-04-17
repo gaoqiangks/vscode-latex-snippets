@@ -5,7 +5,8 @@
 		"prefix":"fullwidthsetup",
 		"body":[
 			"\\fullwidthsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -15,16 +16,18 @@
 			"\\begin{fullwidth}",
 				"\t$1",
 			"\\end{fullwidth}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"fullwidth":{
+	"fullwidth[]":{
 		"prefix":"fullwidth",
 		"body":[
 			"\\begin{fullwidth}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{fullwidth}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

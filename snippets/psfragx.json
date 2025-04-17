@@ -5,119 +5,8 @@
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx{${1:imagefile}}"
-		]
-	},
-
-
-	"iflanguage{}{}{}":{
-		"prefix":"iflanguage",
-		"body":[
-			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"allmetacomments":{
-		"prefix":"allmetacomments",
-		"body":[
-			"\\allmetacomments"
-		]
-	},
-
-
-	"selectedmetacomments":{
-		"prefix":"selectedmetacomments",
-		"body":[
-			"\\selectedmetacomments"
-		]
-	},
-
-
-	"copypfxfromto{}{}":{
-		"prefix":"copypfxfromto",
-		"body":[
-			"\\copypfxfromto{${1:EPS file}}{${2:PFX file}}"
-		]
-	},
-
-
-	"setpfxinput{}":{
-		"prefix":"setpfxinput",
-		"body":[
-			"\\setpfxinput{${1:file}}"
-		]
-	},
-
-
-	"setpfxoutput{}":{
-		"prefix":"setpfxoutput",
-		"body":[
-			"\\setpfxoutput{${1:file}}"
-		]
-	},
-
-
-	"copypfxlines":{
-		"prefix":"copypfxlines",
-		"body":[
-			"\\copypfxlines"
-		]
-	},
-
-
-	"pfxinput{}":{
-		"prefix":"pfxinput",
-		"body":[
-			"\\pfxinput{${1:file}}"
-		]
-	},
-
-
-	"ovpinput{}":{
-		"prefix":"ovpinput",
-		"body":[
-			"\\ovpinput{${1:file}}"
-		]
-	},
-
-
-	"providecolorcommands":{
-		"prefix":"providecolorcommands",
-		"body":[
-			"\\providecolorcommands"
-		]
-	},
-
-
-	"Beforepfxinput":{
-		"prefix":"Beforepfxinput",
-		"body":[
-			"\\Beforepfxinput"
-		]
-	},
-
-
-	"Afterpfxinput":{
-		"prefix":"Afterpfxinput",
-		"body":[
-			"\\Afterpfxinput"
-		]
-	},
-
-
-	"Beforeovpinput":{
-		"prefix":"Beforeovpinput",
-		"body":[
-			"\\Beforeovpinput"
-		]
-	},
-
-
-	"Afterovpinput":{
-		"prefix":"Afterovpinput",
-		"body":[
-			"\\Afterovpinput"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +14,8 @@
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +23,8 @@
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx[${2:options%keyvals}](${3:psfrags}){${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +32,8 @@
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx[${2:options%keyvals}](${4:psfrags})<${3:fg overpic}>{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,56 +41,188 @@
 		"prefix":"includegraphicx",
 		"body":[
 			"\\includegraphicx[${2:options%keyvals}](${5:psfrags})<${4:fg overpic}>[${3:bg overpic}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"overpix":{
+	"iflanguage{}{}{}":{
+		"prefix":"iflanguage",
+		"body":[
+			"\\iflanguage{${1:language}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allmetacomments":{
+		"prefix":"allmetacomments",
+		"body":[
+			"\\allmetacomments"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"selectedmetacomments":{
+		"prefix":"selectedmetacomments",
+		"body":[
+			"\\selectedmetacomments"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"copypfxfromto{}{}":{
+		"prefix":"copypfxfromto",
+		"body":[
+			"\\copypfxfromto{${1:EPS file}}{${2:PFX file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpfxinput{}":{
+		"prefix":"setpfxinput",
+		"body":[
+			"\\setpfxinput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpfxoutput{}":{
+		"prefix":"setpfxoutput",
+		"body":[
+			"\\setpfxoutput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"copypfxlines":{
+		"prefix":"copypfxlines",
+		"body":[
+			"\\copypfxlines"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pfxinput{}":{
+		"prefix":"pfxinput",
+		"body":[
+			"\\pfxinput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ovpinput{}":{
+		"prefix":"ovpinput",
+		"body":[
+			"\\ovpinput{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"providecolorcommands":{
+		"prefix":"providecolorcommands",
+		"body":[
+			"\\providecolorcommands"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Beforepfxinput":{
+		"prefix":"Beforepfxinput",
+		"body":[
+			"\\Beforepfxinput"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Afterpfxinput":{
+		"prefix":"Afterpfxinput",
+		"body":[
+			"\\Afterpfxinput"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Beforeovpinput":{
+		"prefix":"Beforeovpinput",
+		"body":[
+			"\\Beforeovpinput"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Afterovpinput":{
+		"prefix":"Afterovpinput",
+		"body":[
+			"\\Afterovpinput"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"overpix{}":{
 		"prefix":"overpix",
 		"body":[
 			"\\begin{overpix}",
-				"\t$1",
+				"\t{${1:imagefile}}",
 			"\\end{overpix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"onlylanguage":{
+	"overpix[]{}":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t[${2:options%keyvals}]{${1:imagefile}}",
+			"\\end{overpix}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"overpix[]<>{}":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t[${2:options%keyvals}]<${3:fg overpic}>{${1:imagefile}}",
+			"\\end{overpix}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"overpix[]<>[]{}":{
+		"prefix":"overpix",
+		"body":[
+			"\\begin{overpix}",
+				"\t[${2:options%keyvals}]<${4:fg overpic}>[${3:bg overpic}]{${1:imagefile}}",
+			"\\end{overpix}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"onlylanguage{}":{
 		"prefix":"onlylanguage",
 		"body":[
 			"\\begin{onlylanguage}",
-				"\t$1",
+				"\t{${1:language}}",
 			"\\end{onlylanguage}"
-		]
-	},
-
-
-	"overpix":{
-		"prefix":"overpix",
-		"body":[
-			"\\begin{overpix}",
-				"\t$1",
-			"\\end{overpix}"
-		]
-	},
-
-
-	"overpix":{
-		"prefix":"overpix",
-		"body":[
-			"\\begin{overpix}",
-				"\t$1",
-			"\\end{overpix}"
-		]
-	},
-
-
-	"overpix":{
-		"prefix":"overpix",
-		"body":[
-			"\\begin{overpix}",
-				"\t$1",
-			"\\end{overpix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

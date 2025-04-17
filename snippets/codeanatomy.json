@@ -5,7 +5,8 @@
 		"prefix":"codeBlock",
 		"body":[
 			"\\codeBlock{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,95 +14,8 @@
 		"prefix":"cPart",
 		"body":[
 			"\\cPart{${1:node name}}{${2:code}}"
-		]
-	},
-
-
-	"iPart{}{}":{
-		"prefix":"iPart",
-		"body":[
-			"\\iPart{${1:node name}}{${2:code}}"
-		]
-	},
-
-
-	"mtPoint{}":{
-		"prefix":"mtPoint",
-		"body":[
-			"\\mtPoint{${1:node name}}"
-		]
-	},
-
-
-	"hmtPoint{}":{
-		"prefix":"hmtPoint",
-		"body":[
-			"\\hmtPoint{${1:node name}}"
-		]
-	},
-
-
-	"mbPoint{}":{
-		"prefix":"mbPoint",
-		"body":[
-			"\\mbPoint{${1:node name}}"
-		]
-	},
-
-
-	"dmbPoint{}":{
-		"prefix":"dmbPoint",
-		"body":[
-			"\\dmbPoint{${1:node name}}"
-		]
-	},
-
-
-	"extremPoint{}":{
-		"prefix":"extremPoint",
-		"body":[
-			"\\extremPoint{${1:node name}}"
-		]
-	},
-
-
-	"fitExtrem{}{}":{
-		"prefix":"fitExtrem",
-		"body":[
-			"\\fitExtrem{${1:node name}}{${2:extrem points}}"
-		]
-	},
-
-
-	"bgcode{}":{
-		"prefix":"bgcode",
-		"body":[
-			"\\bgcode{${1:code}}"
-		]
-	},
-
-
-	"ptab":{
-		"prefix":"ptab",
-		"body":[
-			"\\ptab"
-		]
-	},
-
-
-	"phspace":{
-		"prefix":"phspace",
-		"body":[
-			"\\phspace"
-		]
-	},
-
-
-	"codeAnnotation{}(){}":{
-		"prefix":"codeAnnotation",
-		"body":[
-			"\\codeAnnotation{${1:node name}}(${3:coordinate}){${2:label text%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +23,17 @@
 		"prefix":"cPart",
 		"body":[
 			"\\cPart[${3:TikZ keys}]{${1:node name}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"iPart{}{}":{
+		"prefix":"iPart",
+		"body":[
+			"\\iPart{${1:node name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +41,53 @@
 		"prefix":"iPart",
 		"body":[
 			"\\iPart[${3:TikZ keys}]{${1:node name}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"mtPoint{}":{
+		"prefix":"mtPoint",
+		"body":[
+			"\\mtPoint{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hmtPoint{}":{
+		"prefix":"hmtPoint",
+		"body":[
+			"\\hmtPoint{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mbPoint{}":{
+		"prefix":"mbPoint",
+		"body":[
+			"\\mbPoint{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"dmbPoint{}":{
+		"prefix":"dmbPoint",
+		"body":[
+			"\\dmbPoint{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"extremPoint{}":{
+		"prefix":"extremPoint",
+		"body":[
+			"\\extremPoint{${1:node name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +95,8 @@
 		"prefix":"extremPoint",
 		"body":[
 			"\\extremPoint{${1:node name}}[${2:yshift}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +104,8 @@
 		"prefix":"extremPoint",
 		"body":[
 			"\\extremPoint{${1:node name}}[${2:yshift}][${3:xshift}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,6 +113,52 @@
 		"prefix":"extremPoint",
 		"body":[
 			"\\extremPoint{${1:node name}}[${2:yshift}][${3:xshift}][${4:TikZ keys}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fitExtrem{}{}":{
+		"prefix":"fitExtrem",
+		"body":[
+			"\\fitExtrem{${1:node name}}{${2:extrem points}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bgcode{}":{
+		"prefix":"bgcode",
+		"body":[
+			"\\bgcode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ptab":{
+		"prefix":"ptab",
+		"body":[
+			"\\ptab"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phspace":{
+		"prefix":"phspace",
+		"body":[
+			"\\phspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"codeAnnotation{}(){}":{
+		"prefix":"codeAnnotation",
+		"body":[
+			"\\codeAnnotation{${1:node name}}(${3:coordinate}){${2:label text%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

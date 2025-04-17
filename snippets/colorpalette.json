@@ -5,7 +5,8 @@
 		"prefix":"newpalettetheme",
 		"body":[
 			"\\newpalettetheme{${1:theme}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"addcolortotheme",
 		"body":[
 			"\\addcolortotheme{${1:theme}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,31 +23,8 @@
 		"prefix":"newpalette",
 		"body":[
 			"\\newpalette{${1:theme}}{${2:palette}}"
-		]
-	},
-
-
-	"activepalette{}{}":{
-		"prefix":"activepalette",
-		"body":[
-			"\\activepalette{${1:theme}}{${2:palette}}"
-		]
-	},
-
-
-	"getcolor{}{}":{
-		"prefix":"getcolor",
-		"body":[
-			"\\getcolor{${1:theme}}{${2:color}}"
-		]
-	},
-
-
-	"applycolor{}{}":{
-		"prefix":"applycolor",
-		"body":[
-			"\\applycolor{${1:theme}}{${2:color}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +32,34 @@
 		"prefix":"setpalettecolor",
 		"body":[
 			"\\setpalettecolor{${1:theme}}{${2:palette}}{${3:color}}[${5:encoding}]{${4:value}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"activepalette{}{}":{
+		"prefix":"activepalette",
+		"body":[
+			"\\activepalette{${1:theme}}{${2:palette}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getcolor{}{}":{
+		"prefix":"getcolor",
+		"body":[
+			"\\getcolor{${1:theme}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"applycolor{}{}":{
+		"prefix":"applycolor",
+		"body":[
+			"\\applycolor{${1:theme}}{${2:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

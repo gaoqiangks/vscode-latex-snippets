@@ -5,7 +5,8 @@
 		"prefix":"gbsection",
 		"body":[
 			"\\gbsection{${1:id%labeldef}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"gbturn",
 		"body":[
 			"\\gbturn{${1:id%ref}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"gbturntext",
 		"body":[
 			"\\gbturntext"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"gbitem",
 		"body":[
 			"\\gbitem{${1:text}}{${2:id%ref}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"gbvillain",
 		"body":[
 			"\\gbvillain{${1:name}}{${2:skill%text}}{${3:skill level%text}}{${4:life%text}}{${5:life level%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"gbheader",
 		"body":[
 			"\\gbheader"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"gbheadtext",
 		"body":[
 			"\\gbheadtext"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"gbdebugx",
 		"body":[
 			"\\gbdebugx{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"gbdebug",
 		"body":[
 			"\\gbdebug{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,7 +88,19 @@
 			"\\begin{gbturnoptions}",
 				"\t$1",
 			"\\end{gbturnoptions}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gbturnoptions[]":{
+		"prefix":"gbturnoptions",
+		"body":[
+			"\\begin{gbturnoptions}",
+				"\t[${1:options%keyvals}]",
+			"\\end{gbturnoptions}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -89,16 +110,7 @@
 			"\\begin{gbtabbing}",
 				"\t$1",
 			"\\end{gbtabbing}"
-		]
-	},
-
-
-	"gbturnoptions":{
-		"prefix":"gbturnoptions",
-		"body":[
-			"\\begin{gbturnoptions}",
-				"\t$1",
-			"\\end{gbturnoptions}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

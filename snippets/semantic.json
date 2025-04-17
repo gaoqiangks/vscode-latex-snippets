@@ -5,7 +5,8 @@
 		"prefix":"mathlig",
 		"body":[
 			"\\mathlig{${1:characters}}{${2:ligature commands%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"mathligson",
 		"body":[
 			"\\mathligson"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"mathligsoff",
 		"body":[
 			"\\mathligsoff"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"mathligprotect",
 		"body":[
 			"\\mathligprotect{${1:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,159 +41,8 @@
 		"prefix":"inference",
 		"body":[
 			"\\inference{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
-		]
-	},
-
-
-	"setpremisesend{}":{
-		"prefix":"setpremisesend",
-		"body":[
-			"\\setpremisesend{${1:length}}"
-		]
-	},
-
-
-	"setpremisesspace{}":{
-		"prefix":"setpremisesspace",
-		"body":[
-			"\\setpremisesspace{${1:length}}"
-		]
-	},
-
-
-	"setnamespace{}":{
-		"prefix":"setnamespace",
-		"body":[
-			"\\setnamespace{${1:length}}"
-		]
-	},
-
-
-	"predicate{}":{
-		"prefix":"predicate",
-		"body":[
-			"\\predicate{${1:formula}}"
-		]
-	},
-
-
-	"predicatebegin":{
-		"prefix":"predicatebegin",
-		"body":[
-			"\\predicatebegin"
-		]
-	},
-
-
-	"predicateend":{
-		"prefix":"predicateend",
-		"body":[
-			"\\predicateend"
-		]
-	},
-
-
-	"compiler{}":{
-		"prefix":"compiler",
-		"body":[
-			"\\compiler{${1:source,machine,target}}"
-		]
-	},
-
-
-	"interpreter{}":{
-		"prefix":"interpreter",
-		"body":[
-			"\\interpreter{${1:source,language}}"
-		]
-	},
-
-
-	"program{}":{
-		"prefix":"program",
-		"body":[
-			"\\program{${1:program,language}}"
-		]
-	},
-
-
-	"machine{}":{
-		"prefix":"machine",
-		"body":[
-			"\\machine{${1:machine}}"
-		]
-	},
-
-
-	"reservestyle{}{}":{
-		"prefix":"reservestyle",
-		"body":[
-			"\\reservestyle{${1:macro%cmd}}{${2:formatting%definition}}"
-		]
-	},
-
-
-	"comp{}{}":{
-		"prefix":"comp",
-		"body":[
-			"\\comp{${1:command%plain}}{${2:environment%formula}}"
-		]
-	},
-
-
-	"eval{}{}":{
-		"prefix":"eval",
-		"body":[
-			"\\eval{${1:command%plain}}{${2:environment%formula}}"
-		]
-	},
-
-
-	"evalsymbol":{
-		"prefix":"evalsymbol",
-		"body":[
-			"\\evalsymbol"
-		]
-	},
-
-
-	"compsymbol":{
-		"prefix":"compsymbol",
-		"body":[
-			"\\compsymbol"
-		]
-	},
-
-
-	"exe{}{}":{
-		"prefix":"exe",
-		"body":[
-			"\\exe{${1:program}}{${2:data%formula}}"
-		]
-	},
-
-
-	"TestForConflict{}":{
-		"prefix":"TestForConflict",
-		"body":[
-			"\\TestForConflict{${1:command list}}"
-		]
-	},
-
-
-	"inference*{}{}":{
-		"prefix":"*inference",
-		"body":[
-			"\\inference*{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
-		]
-	},
-
-
-	"inference*[]{}{}":{
-		"prefix":"*inference",
-		"body":[
-			"\\inference*[${3:name}]{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +50,125 @@
 		"prefix":"inference",
 		"body":[
 			"\\inference[${3:name}]{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inference*{}{}":{
+		"prefix":"*inference",
+		"body":[
+			"\\inference*{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"inference*[]{}{}":{
+		"prefix":"*inference",
+		"body":[
+			"\\inference*[${3:name}]{${1:line1 \\\\ ... \\\\ lineN%formula}}{${2:conclusion%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"setpremisesend{}":{
+		"prefix":"setpremisesend",
+		"body":[
+			"\\setpremisesend{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setpremisesspace{}":{
+		"prefix":"setpremisesspace",
+		"body":[
+			"\\setpremisesspace{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setnamespace{}":{
+		"prefix":"setnamespace",
+		"body":[
+			"\\setnamespace{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"predicate{}":{
+		"prefix":"predicate",
+		"body":[
+			"\\predicate{${1:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"predicatebegin":{
+		"prefix":"predicatebegin",
+		"body":[
+			"\\predicatebegin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"predicateend":{
+		"prefix":"predicateend",
+		"body":[
+			"\\predicateend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"compiler{}":{
+		"prefix":"compiler",
+		"body":[
+			"\\compiler{${1:source,machine,target}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"interpreter{}":{
+		"prefix":"interpreter",
+		"body":[
+			"\\interpreter{${1:source,language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"program{}":{
+		"prefix":"program",
+		"body":[
+			"\\program{${1:program,language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"machine{}":{
+		"prefix":"machine",
+		"body":[
+			"\\machine{${1:machine}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"reservestyle{}{}":{
+		"prefix":"reservestyle",
+		"body":[
+			"\\reservestyle{${1:macro%cmd}}{${2:formatting%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +176,35 @@
 		"prefix":"reservestyle",
 		"body":[
 			"\\reservestyle[${3:spacing cmd}]{${1:macro%cmd}}{${2:formatting%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"comp{}{}":{
+		"prefix":"comp",
+		"body":[
+			"\\comp{${1:command%plain}}{${2:environment%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eval{}{}":{
+		"prefix":"eval",
+		"body":[
+			"\\eval{${1:command%plain}}{${2:environment%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"evalsymbol":{
+		"prefix":"evalsymbol",
+		"body":[
+			"\\evalsymbol"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +212,17 @@
 		"prefix":"evalsymbol",
 		"body":[
 			"\\evalsymbol[${1:superscript%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"compsymbol":{
+		"prefix":"compsymbol",
+		"body":[
+			"\\compsymbol"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +230,17 @@
 		"prefix":"compsymbol",
 		"body":[
 			"\\compsymbol[${1:superscript%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"exe{}{}":{
+		"prefix":"exe",
+		"body":[
+			"\\exe{${1:program}}{${2:data%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,6 +248,16 @@
 		"prefix":"exe",
 		"body":[
 			"\\exe{${1:program}}[${3:machine%formula}]{${2:data%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TestForConflict{}":{
+		"prefix":"TestForConflict",
+		"body":[
+			"\\TestForConflict{${1:command list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

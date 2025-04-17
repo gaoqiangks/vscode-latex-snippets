@@ -5,7 +5,8 @@
 		"prefix":"bboxOf",
 		"body":[
 			"\\bboxOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"llxOf",
 		"body":[
 			"\\llxOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"llyOf",
 		"body":[
 			"\\llyOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"urxOf",
 		"body":[
 			"\\urxOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"uryOf",
 		"body":[
 			"\\uryOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"heightOf",
 		"body":[
 			"\\heightOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"widthOf",
 		"body":[
 			"\\widthOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"csOf",
 		"body":[
 			"\\csOf{${1:name%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,47 +77,8 @@
 		"prefix":"insertEPS",
 		"body":[
 			"\\insertEPS{${1:name}}"
-		]
-	},
-
-
-	"previewOn":{
-		"prefix":"previewOn",
-		"body":[
-			"\\previewOn"
-		]
-	},
-
-
-	"previewOff":{
-		"prefix":"previewOff",
-		"body":[
-			"\\previewOff"
-		]
-	},
-
-
-	"ifpreview":{
-		"prefix":"ifpreview",
-		"body":[
-			"\\ifpreview"
-		]
-	},
-
-
-	"AddToEmbeddedEPSs{}":{
-		"prefix":"AddToEmbeddedEPSs",
-		"body":[
-			"\\AddToEmbeddedEPSs{${1:code}}"
-		]
-	},
-
-
-	"setSMask{}":{
-		"prefix":"setSMask",
-		"body":[
-			"\\setSMask{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +86,53 @@
 		"prefix":"insertEPS",
 		"body":[
 			"\\insertEPS[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"previewOn":{
+		"prefix":"previewOn",
+		"body":[
+			"\\previewOn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"previewOff":{
+		"prefix":"previewOff",
+		"body":[
+			"\\previewOff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifpreview":{
+		"prefix":"ifpreview",
+		"body":[
+			"\\ifpreview"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddToEmbeddedEPSs{}":{
+		"prefix":"AddToEmbeddedEPSs",
+		"body":[
+			"\\AddToEmbeddedEPSs{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setSMask{}":{
+		"prefix":"setSMask",
+		"body":[
+			"\\setSMask{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,26 +140,29 @@
 		"prefix":"setSMask",
 		"body":[
 			"\\setSMask[${2:group}]{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"createImage":{
+	"createImage{}{}":{
 		"prefix":"createImage",
 		"body":[
 			"\\begin{createImage}",
-				"\t$1",
+				"\t{${1:bbox}}{${2:name}}",
 			"\\end{createImage}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"createImage":{
+	"createImage[]{}{}":{
 		"prefix":"createImage",
 		"body":[
 			"\\begin{createImage}",
-				"\t$1",
+				"\t[${3:options%keyvals}]{${1:bbox}}{${2:name}}",
 			"\\end{createImage}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

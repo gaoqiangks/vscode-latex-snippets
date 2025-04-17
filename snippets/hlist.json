@@ -5,7 +5,8 @@
 		"prefix":"hitem",
 		"body":[
 			"\\hitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,31 +14,8 @@
 		"prefix":"hitem>",
 		"body":[
 			"\\hitem>"
-		]
-	},
-
-
-	"hitem()":{
-		"prefix":"hitem",
-		"body":[
-			"\\hitem(${1:num})"
-		]
-	},
-
-
-	"sethlist{}":{
-		"prefix":"sethlist",
-		"body":[
-			"\\sethlist{${1:keyvals}}"
-		]
-	},
-
-
-	"setdefaulthlist{}":{
-		"prefix":"setdefaulthlist",
-		"body":[
-			"\\setdefaulthlist{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,24 +23,54 @@
 		"prefix":"*hitem",
 		"body":[
 			"\\hitem*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
 	"hitem*>":{
-		"prefix":"*hitem",
+		"prefix":"*hitem>",
 		"body":[
 			"\\hitem*>"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"hlist":{
+	"hitem()":{
+		"prefix":"hitem",
+		"body":[
+			"\\hitem(${1:num})"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sethlist{}":{
+		"prefix":"sethlist",
+		"body":[
+			"\\sethlist{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setdefaulthlist{}":{
+		"prefix":"setdefaulthlist",
+		"body":[
+			"\\setdefaulthlist{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hlist{}":{
 		"prefix":"hlist",
 		"body":[
 			"\\begin{hlist}",
-				"\t$1",
+				"\t{${1:num of colums}}",
 			"\\end{hlist}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"NiceMatrixOptions",
 		"body":[
 			"\\NiceMatrixOptions{${1:keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Block",
 		"body":[
 			"\\Block{${1:i-j}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,343 +23,8 @@
 		"prefix":"Block",
 		"body":[
 			"\\Block{${1:i-j}}<${3:code}>{${2:content}}"
-		]
-	},
-
-
-	"Hline":{
-		"prefix":"Hline",
-		"body":[
-			"\\Hline"
-		]
-	},
-
-
-	"diagbox{}{}":{
-		"prefix":"diagbox",
-		"body":[
-			"\\diagbox{${1:lower}}{${2:upper}}"
-		]
-	},
-
-
-	"hdottedline":{
-		"prefix":"hdottedline",
-		"body":[
-			"\\hdottedline"
-		]
-	},
-
-
-	"cdottedline{}":{
-		"prefix":"cdottedline",
-		"body":[
-			"\\cdottedline{${1:linespec}}"
-		]
-	},
-
-
-	"CodeBefore":{
-		"prefix":"CodeBefore",
-		"body":[
-			"\\CodeBefore"
-		]
-	},
-
-
-	"Body":{
-		"prefix":"Body",
-		"body":[
-			"\\Body"
-		]
-	},
-
-
-	"cellcolor{}{}":{
-		"prefix":"cellcolor",
-		"body":[
-			"\\cellcolor{${1:color}}{${2:i-j,k-l,...}}"
-		]
-	},
-
-
-	"rectanglecolor{}{}{}":{
-		"prefix":"rectanglecolor",
-		"body":[
-			"\\rectanglecolor{${1:color}}{${2:i-j}}{${3:k-l}}"
-		]
-	},
-
-
-	"arraycolor{}":{
-		"prefix":"arraycolor",
-		"body":[
-			"\\arraycolor{${1:color}}"
-		]
-	},
-
-
-	"chessboardcolors{}{}":{
-		"prefix":"chessboardcolors",
-		"body":[
-			"\\chessboardcolors{${1:color1}}{${2:color2}}"
-		]
-	},
-
-
-	"rowcolor{}{}":{
-		"prefix":"rowcolor",
-		"body":[
-			"\\rowcolor{${1:color}}{${2:i,j-k,l-,...}}"
-		]
-	},
-
-
-	"columncolor{}{}":{
-		"prefix":"columncolor",
-		"body":[
-			"\\columncolor{${1:color}}{${2:i,j-k,l-,...}}"
-		]
-	},
-
-
-	"rowcolors{}{}{}":{
-		"prefix":"rowcolors",
-		"body":[
-			"\\rowcolors{${1:row}}{${2:color1}}{${3:color2}}"
-		]
-	},
-
-
-	"rowlistcolors{}{}":{
-		"prefix":"rowlistcolors",
-		"body":[
-			"\\rowlistcolors{${1:row}}{${2:color1,color2,...}}"
-		]
-	},
-
-
-	"RowStyle{}":{
-		"prefix":"RowStyle",
-		"body":[
-			"\\RowStyle{${1:code}}"
-		]
-	},
-
-
-	"Ldots":{
-		"prefix":"Ldots",
-		"body":[
-			"\\Ldots"
-		]
-	},
-
-
-	"Cdots":{
-		"prefix":"Cdots",
-		"body":[
-			"\\Cdots"
-		]
-	},
-
-
-	"Vdots":{
-		"prefix":"Vdots",
-		"body":[
-			"\\Vdots"
-		]
-	},
-
-
-	"Ddots":{
-		"prefix":"Ddots",
-		"body":[
-			"\\Ddots"
-		]
-	},
-
-
-	"Iddots":{
-		"prefix":"Iddots",
-		"body":[
-			"\\Iddots"
-		]
-	},
-
-
-	"iddots":{
-		"prefix":"iddots",
-		"body":[
-			"\\iddots"
-		]
-	},
-
-
-	"Hspace{}":{
-		"prefix":"Hspace",
-		"body":[
-			"\\Hspace{${1:length}}"
-		]
-	},
-
-
-	"Hdotsfor{}":{
-		"prefix":"Hdotsfor",
-		"body":[
-			"\\Hdotsfor{${1:number}}"
-		]
-	},
-
-
-	"Vdotsfor{}":{
-		"prefix":"Vdotsfor",
-		"body":[
-			"\\Vdotsfor{${1:number}}"
-		]
-	},
-
-
-	"CodeAfter":{
-		"prefix":"CodeAfter",
-		"body":[
-			"\\CodeAfter"
-		]
-	},
-
-
-	"SubMatrix{}{}{}{}":{
-		"prefix":"SubMatrix",
-		"body":[
-			"\\SubMatrix{${1:delim1}}{${2:i-j}}{${3:k-l}}{${4:delim2}}"
-		]
-	},
-
-
-	"OverBrace{}{}{}":{
-		"prefix":"OverBrace",
-		"body":[
-			"\\OverBrace{${1:i-j}}{${2:k-l}}{${3:label}}"
-		]
-	},
-
-
-	"UnderBrace{}{}{}":{
-		"prefix":"UnderBrace",
-		"body":[
-			"\\UnderBrace{${1:i-j}}{${2:k-l}}{${3:label}}"
-		]
-	},
-
-
-	"TikzEveryCell{}":{
-		"prefix":"TikzEveryCell",
-		"body":[
-			"\\TikzEveryCell{${1:TikZ keys}}"
-		]
-	},
-
-
-	"tabularnote{}":{
-		"prefix":"tabularnote",
-		"body":[
-			"\\tabularnote{${1:note%text}}"
-		]
-	},
-
-
-	"rotate":{
-		"prefix":"rotate",
-		"body":[
-			"\\rotate"
-		]
-	},
-
-
-	"ShowCellNames":{
-		"prefix":"ShowCellNames",
-		"body":[
-			"\\ShowCellNames"
-		]
-	},
-
-
-	"AutoNiceMatrix{}{}":{
-		"prefix":"AutoNiceMatrix",
-		"body":[
-			"\\AutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"pAutoNiceMatrix{}{}":{
-		"prefix":"pAutoNiceMatrix",
-		"body":[
-			"\\pAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"bAutoNiceMatrix{}{}":{
-		"prefix":"bAutoNiceMatrix",
-		"body":[
-			"\\bAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"BAutoNiceMatrix{}{}":{
-		"prefix":"BAutoNiceMatrix",
-		"body":[
-			"\\BAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"vAutoNiceMatrix{}{}":{
-		"prefix":"vAutoNiceMatrix",
-		"body":[
-			"\\vAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"VAutoNiceMatrix{}{}":{
-		"prefix":"VAutoNiceMatrix",
-		"body":[
-			"\\VAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
-		]
-	},
-
-
-	"NiceMatrixLastEnv":{
-		"prefix":"NiceMatrixLastEnv",
-		"body":[
-			"\\NiceMatrixLastEnv"
-		]
-	},
-
-
-	"OnlyMainNiceMatrix{}":{
-		"prefix":"OnlyMainNiceMatrix",
-		"body":[
-			"\\OnlyMainNiceMatrix{${1:code}}"
-		]
-	},
-
-
-	"NotEmpty":{
-		"prefix":"NotEmpty",
-		"body":[
-			"\\NotEmpty"
-		]
-	},
-
-
-	"Hspace*{}":{
-		"prefix":"*Hspace",
-		"body":[
-			"\\Hspace*{${1:length}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,7 +32,8 @@
 		"prefix":"Block",
 		"body":[
 			"\\Block[${3:options%keyvals}]{${1:i-j}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -373,7 +41,17 @@
 		"prefix":"Block",
 		"body":[
 			"\\Block[${3:options%keyvals}]{${1:i-j}}<${4:code}>{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Hline":{
+		"prefix":"Hline",
+		"body":[
+			"\\Hline"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -381,7 +59,44 @@
 		"prefix":"Hline",
 		"body":[
 			"\\Hline[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"diagbox{}{}":{
+		"prefix":"diagbox",
+		"body":[
+			"\\diagbox{${1:lower}}{${2:upper}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hdottedline":{
+		"prefix":"hdottedline",
+		"body":[
+			"\\hdottedline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cdottedline{}":{
+		"prefix":"cdottedline",
+		"body":[
+			"\\cdottedline{${1:linespec}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CodeBefore":{
+		"prefix":"CodeBefore",
+		"body":[
+			"\\CodeBefore"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -389,7 +104,26 @@
 		"prefix":"CodeBefore",
 		"body":[
 			"\\CodeBefore[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Body":{
+		"prefix":"Body",
+		"body":[
+			"\\Body"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cellcolor{}{}":{
+		"prefix":"cellcolor",
+		"body":[
+			"\\cellcolor{${1:color}}{${2:i-j,k-l,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -397,7 +131,17 @@
 		"prefix":"cellcolor",
 		"body":[
 			"\\cellcolor[${3:color_model}]{${1:color}}{${2:i-j,k-l,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rectanglecolor{}{}{}":{
+		"prefix":"rectanglecolor",
+		"body":[
+			"\\rectanglecolor{${1:color}}{${2:i-j}}{${3:k-l}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -405,7 +149,17 @@
 		"prefix":"rectanglecolor",
 		"body":[
 			"\\rectanglecolor[${4:color_model}]{${1:color}}{${2:i-j}}{${3:k-l}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"arraycolor{}":{
+		"prefix":"arraycolor",
+		"body":[
+			"\\arraycolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -413,7 +167,17 @@
 		"prefix":"arraycolor",
 		"body":[
 			"\\arraycolor[${2:color_model}]{${1:color}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chessboardcolors{}{}":{
+		"prefix":"chessboardcolors",
+		"body":[
+			"\\chessboardcolors{${1:color1}}{${2:color2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -421,7 +185,17 @@
 		"prefix":"chessboardcolors",
 		"body":[
 			"\\chessboardcolors[${3:color_model}]{${1:color1}}{${2:color2}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rowcolor{}{}":{
+		"prefix":"rowcolor",
+		"body":[
+			"\\rowcolor{${1:color}}{${2:i,j-k,l-,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -429,7 +203,17 @@
 		"prefix":"rowcolor",
 		"body":[
 			"\\rowcolor[${3:color_model}]{${1:color}}{${2:i,j-k,l-,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"columncolor{}{}":{
+		"prefix":"columncolor",
+		"body":[
+			"\\columncolor{${1:color}}{${2:i,j-k,l-,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -437,7 +221,17 @@
 		"prefix":"columncolor",
 		"body":[
 			"\\columncolor[${3:color_model}]{${1:color}}{${2:i,j-k,l-,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rowcolors{}{}{}":{
+		"prefix":"rowcolors",
+		"body":[
+			"\\rowcolors{${1:row}}{${2:color1}}{${3:color2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -445,7 +239,17 @@
 		"prefix":"rowcolors",
 		"body":[
 			"\\rowcolors[${4:color model}]{${1:row}}{${2:color1}}{${3:color2}}[${5:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rowlistcolors{}{}":{
+		"prefix":"rowlistcolors",
+		"body":[
+			"\\rowlistcolors{${1:row}}{${2:color1,color2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -453,7 +257,17 @@
 		"prefix":"rowlistcolors",
 		"body":[
 			"\\rowlistcolors[${3:color model}]{${1:row}}{${2:color1,color2,...}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RowStyle{}":{
+		"prefix":"RowStyle",
+		"body":[
+			"\\RowStyle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -461,7 +275,17 @@
 		"prefix":"RowStyle",
 		"body":[
 			"\\RowStyle[${2:options%keyvals}]{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Ldots":{
+		"prefix":"Ldots",
+		"body":[
+			"\\Ldots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -469,7 +293,17 @@
 		"prefix":"Ldots",
 		"body":[
 			"\\Ldots[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cdots":{
+		"prefix":"Cdots",
+		"body":[
+			"\\Cdots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -477,7 +311,17 @@
 		"prefix":"Cdots",
 		"body":[
 			"\\Cdots[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Vdots":{
+		"prefix":"Vdots",
+		"body":[
+			"\\Vdots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -485,7 +329,17 @@
 		"prefix":"Vdots",
 		"body":[
 			"\\Vdots[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Ddots":{
+		"prefix":"Ddots",
+		"body":[
+			"\\Ddots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -493,7 +347,17 @@
 		"prefix":"Ddots",
 		"body":[
 			"\\Ddots[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Iddots":{
+		"prefix":"Iddots",
+		"body":[
+			"\\Iddots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -501,7 +365,17 @@
 		"prefix":"Iddots",
 		"body":[
 			"\\Iddots[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"iddots":{
+		"prefix":"iddots",
+		"body":[
+			"\\iddots"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -509,7 +383,53 @@
 		"prefix":"line",
 		"body":[
 			"\\line[${3:options%keyvals}]{${1:i-j}}{${2:k-l}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Hspace{}":{
+		"prefix":"Hspace",
+		"body":[
+			"\\Hspace{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hspace*{}":{
+		"prefix":"*Hspace",
+		"body":[
+			"\\Hspace*{${1:length}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Hdotsfor{}":{
+		"prefix":"Hdotsfor",
+		"body":[
+			"\\Hdotsfor{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Vdotsfor{}":{
+		"prefix":"Vdotsfor",
+		"body":[
+			"\\Vdotsfor{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CodeAfter":{
+		"prefix":"CodeAfter",
+		"body":[
+			"\\CodeAfter"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -517,7 +437,17 @@
 		"prefix":"CodeAfter",
 		"body":[
 			"\\CodeAfter[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SubMatrix{}{}{}{}":{
+		"prefix":"SubMatrix",
+		"body":[
+			"\\SubMatrix{${1:delim1}}{${2:i-j}}{${3:k-l}}{${4:delim2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -525,7 +455,17 @@
 		"prefix":"SubMatrix",
 		"body":[
 			"\\SubMatrix{${1:delim1}}{${2:i-j}}{${3:k-l}}{${4:delim2}}[${5:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"OverBrace{}{}{}":{
+		"prefix":"OverBrace",
+		"body":[
+			"\\OverBrace{${1:i-j}}{${2:k-l}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -533,7 +473,17 @@
 		"prefix":"OverBrace",
 		"body":[
 			"\\OverBrace[${4:options%keyvals}]{${1:i-j}}{${2:k-l}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"UnderBrace{}{}{}":{
+		"prefix":"UnderBrace",
+		"body":[
+			"\\UnderBrace{${1:i-j}}{${2:k-l}}{${3:label}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -541,7 +491,17 @@
 		"prefix":"UnderBrace",
 		"body":[
 			"\\UnderBrace[${4:options%keyvals}]{${1:i-j}}{${2:k-l}}{${3:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"TikzEveryCell{}":{
+		"prefix":"TikzEveryCell",
+		"body":[
+			"\\TikzEveryCell{${1:TikZ keys}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -549,7 +509,17 @@
 		"prefix":"TikzEveryCell",
 		"body":[
 			"\\TikzEveryCell[${2:options%keyvals}]{${1:TikZ keys}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tabularnote{}":{
+		"prefix":"tabularnote",
+		"body":[
+			"\\tabularnote{${1:note%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -557,7 +527,35 @@
 		"prefix":"tabularnote",
 		"body":[
 			"\\tabularnote[${2:symbol}]{${1:note%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"rotate":{
+		"prefix":"rotate",
+		"body":[
+			"\\rotate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowCellNames":{
+		"prefix":"ShowCellNames",
+		"body":[
+			"\\ShowCellNames"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AutoNiceMatrix{}{}":{
+		"prefix":"AutoNiceMatrix",
+		"body":[
+			"\\AutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -565,7 +563,17 @@
 		"prefix":"AutoNiceMatrix",
 		"body":[
 			"\\AutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pAutoNiceMatrix{}{}":{
+		"prefix":"pAutoNiceMatrix",
+		"body":[
+			"\\pAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -573,7 +581,17 @@
 		"prefix":"pAutoNiceMatrix",
 		"body":[
 			"\\pAutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bAutoNiceMatrix{}{}":{
+		"prefix":"bAutoNiceMatrix",
+		"body":[
+			"\\bAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -581,7 +599,17 @@
 		"prefix":"bAutoNiceMatrix",
 		"body":[
 			"\\bAutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BAutoNiceMatrix{}{}":{
+		"prefix":"BAutoNiceMatrix",
+		"body":[
+			"\\BAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -589,7 +617,17 @@
 		"prefix":"BAutoNiceMatrix",
 		"body":[
 			"\\BAutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vAutoNiceMatrix{}{}":{
+		"prefix":"vAutoNiceMatrix",
+		"body":[
+			"\\vAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -597,7 +635,17 @@
 		"prefix":"vAutoNiceMatrix",
 		"body":[
 			"\\vAutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VAutoNiceMatrix{}{}":{
+		"prefix":"VAutoNiceMatrix",
+		"body":[
+			"\\VAutoNiceMatrix{${1:i-j}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -605,97 +653,233 @@
 		"prefix":"VAutoNiceMatrix",
 		"body":[
 			"\\VAutoNiceMatrix[${3:options%keyvals}]{${1:i-j}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"NiceTabular":{
+	"NiceMatrixLastEnv":{
+		"prefix":"NiceMatrixLastEnv",
+		"body":[
+			"\\NiceMatrixLastEnv"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OnlyMainNiceMatrix{}":{
+		"prefix":"OnlyMainNiceMatrix",
+		"body":[
+			"\\OnlyMainNiceMatrix{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NotEmpty":{
+		"prefix":"NotEmpty",
+		"body":[
+			"\\NotEmpty"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NiceTabular{}":{
 		"prefix":"NiceTabular",
 		"body":[
 			"\\begin{NiceTabular}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{NiceTabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"NiceTabular*":{
+	"NiceTabular[]{}":{
 		"prefix":"NiceTabular",
 		"body":[
-			"\\begin{NiceTabular*}",
-				"\t$1",
-			"\\end{NiceTabular*}"
-		]
+			"\\begin{NiceTabular}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{NiceTabular}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"NiceTabularX":{
+	"NiceTabular*{}":{
+		"prefix":"*NiceTabular",
+		"body":[
+			"\\begin{NiceTabular*}",
+				"\t{${1:preamble}}",
+			"\\end{NiceTabular*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"NiceTabular*[]{}":{
+		"prefix":"*NiceTabular",
+		"body":[
+			"\\begin{NiceTabular*}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{NiceTabular*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"NiceTabularX{}{}":{
 		"prefix":"NiceTabularX",
 		"body":[
 			"\\begin{NiceTabularX}",
-				"\t$1",
+				"\t{${1:width}}{${2:preamble}}",
 			"\\end{NiceTabularX}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"NiceArray":{
+	"NiceTabularX{}[]{}":{
+		"prefix":"NiceTabularX",
+		"body":[
+			"\\begin{NiceTabularX}",
+				"\t{${1:width}}[${3:options%keyvals}]{${2:preamble}}",
+			"\\end{NiceTabularX}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NiceArray{}":{
 		"prefix":"NiceArray",
 		"body":[
 			"\\begin{NiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{NiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pNiceArray":{
+	"NiceArray[]{}":{
+		"prefix":"NiceArray",
+		"body":[
+			"\\begin{NiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{NiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pNiceArray{}":{
 		"prefix":"pNiceArray",
 		"body":[
 			"\\begin{pNiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{pNiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bNiceArray":{
+	"pNiceArray[]{}":{
+		"prefix":"pNiceArray",
+		"body":[
+			"\\begin{pNiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{pNiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bNiceArray{}":{
 		"prefix":"bNiceArray",
 		"body":[
 			"\\begin{bNiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{bNiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"BNiceArray":{
+	"bNiceArray[]{}":{
+		"prefix":"bNiceArray",
+		"body":[
+			"\\begin{bNiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{bNiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"BNiceArray{}":{
 		"prefix":"BNiceArray",
 		"body":[
 			"\\begin{BNiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{BNiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"vNiceArray":{
+	"BNiceArray[]{}":{
+		"prefix":"BNiceArray",
+		"body":[
+			"\\begin{BNiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{BNiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"vNiceArray{}":{
 		"prefix":"vNiceArray",
 		"body":[
 			"\\begin{vNiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{vNiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"VNiceArray":{
+	"vNiceArray[]{}":{
+		"prefix":"vNiceArray",
+		"body":[
+			"\\begin{vNiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{vNiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VNiceArray{}":{
 		"prefix":"VNiceArray",
 		"body":[
 			"\\begin{VNiceArray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{VNiceArray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VNiceArray[]{}":{
+		"prefix":"VNiceArray",
+		"body":[
+			"\\begin{VNiceArray}",
+				"\t[${2:options%keyvals}]{${1:preamble}}",
+			"\\end{VNiceArray}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -705,7 +889,19 @@
 			"\\begin{NiceMatrix}",
 				"\t$1",
 			"\\end{NiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NiceMatrix[]":{
+		"prefix":"NiceMatrix",
+		"body":[
+			"\\begin{NiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{NiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -715,7 +911,19 @@
 			"\\begin{pNiceMatrix}",
 				"\t$1",
 			"\\end{pNiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pNiceMatrix[]":{
+		"prefix":"pNiceMatrix",
+		"body":[
+			"\\begin{pNiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{pNiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -725,7 +933,19 @@
 			"\\begin{bNiceMatrix}",
 				"\t$1",
 			"\\end{bNiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bNiceMatrix[]":{
+		"prefix":"bNiceMatrix",
+		"body":[
+			"\\begin{bNiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{bNiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -735,7 +955,19 @@
 			"\\begin{BNiceMatrix}",
 				"\t$1",
 			"\\end{BNiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BNiceMatrix[]":{
+		"prefix":"BNiceMatrix",
+		"body":[
+			"\\begin{BNiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{BNiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -745,7 +977,19 @@
 			"\\begin{vNiceMatrix}",
 				"\t$1",
 			"\\end{vNiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vNiceMatrix[]":{
+		"prefix":"vNiceMatrix",
+		"body":[
+			"\\begin{vNiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{vNiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -755,7 +999,19 @@
 			"\\begin{VNiceMatrix}",
 				"\t$1",
 			"\\end{VNiceMatrix}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VNiceMatrix[]":{
+		"prefix":"VNiceMatrix",
+		"body":[
+			"\\begin{VNiceMatrix}",
+				"\t[${1:options%keyvals}]",
+			"\\end{VNiceMatrix}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -765,7 +1021,19 @@
 			"\\begin{NiceMatrixBlock}",
 				"\t$1",
 			"\\end{NiceMatrixBlock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NiceMatrixBlock[]":{
+		"prefix":"NiceMatrixBlock",
+		"body":[
+			"\\begin{NiceMatrixBlock}",
+				"\t[${1:options%keyvals}]",
+			"\\end{NiceMatrixBlock}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -775,186 +1043,29 @@
 			"\\begin{TabularNote}",
 				"\t$1",
 			"\\end{TabularNote}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"NiceArrayWithDelims":{
+	"NiceArrayWithDelims{}{}{}":{
 		"prefix":"NiceArrayWithDelims",
 		"body":[
 			"\\begin{NiceArrayWithDelims}",
-				"\t$1",
+				"\t{${1:delim1}}{${2:delim2}}{${3:preamble}}",
 			"\\end{NiceArrayWithDelims}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"NiceTabular":{
-		"prefix":"NiceTabular",
-		"body":[
-			"\\begin{NiceTabular}",
-				"\t$1",
-			"\\end{NiceTabular}"
-		]
-	},
-
-
-	"NiceTabular*":{
-		"prefix":"NiceTabular",
-		"body":[
-			"\\begin{NiceTabular*}",
-				"\t$1",
-			"\\end{NiceTabular*}"
-		]
-	},
-
-
-	"NiceTabularX":{
-		"prefix":"NiceTabularX",
-		"body":[
-			"\\begin{NiceTabularX}",
-				"\t$1",
-			"\\end{NiceTabularX}"
-		]
-	},
-
-
-	"NiceArray":{
-		"prefix":"NiceArray",
-		"body":[
-			"\\begin{NiceArray}",
-				"\t$1",
-			"\\end{NiceArray}"
-		]
-	},
-
-
-	"pNiceArray":{
-		"prefix":"pNiceArray",
-		"body":[
-			"\\begin{pNiceArray}",
-				"\t$1",
-			"\\end{pNiceArray}"
-		]
-	},
-
-
-	"bNiceArray":{
-		"prefix":"bNiceArray",
-		"body":[
-			"\\begin{bNiceArray}",
-				"\t$1",
-			"\\end{bNiceArray}"
-		]
-	},
-
-
-	"BNiceArray":{
-		"prefix":"BNiceArray",
-		"body":[
-			"\\begin{BNiceArray}",
-				"\t$1",
-			"\\end{BNiceArray}"
-		]
-	},
-
-
-	"vNiceArray":{
-		"prefix":"vNiceArray",
-		"body":[
-			"\\begin{vNiceArray}",
-				"\t$1",
-			"\\end{vNiceArray}"
-		]
-	},
-
-
-	"VNiceArray":{
-		"prefix":"VNiceArray",
-		"body":[
-			"\\begin{VNiceArray}",
-				"\t$1",
-			"\\end{VNiceArray}"
-		]
-	},
-
-
-	"NiceMatrix":{
-		"prefix":"NiceMatrix",
-		"body":[
-			"\\begin{NiceMatrix}",
-				"\t$1",
-			"\\end{NiceMatrix}"
-		]
-	},
-
-
-	"pNiceMatrix":{
-		"prefix":"pNiceMatrix",
-		"body":[
-			"\\begin{pNiceMatrix}",
-				"\t$1",
-			"\\end{pNiceMatrix}"
-		]
-	},
-
-
-	"bNiceMatrix":{
-		"prefix":"bNiceMatrix",
-		"body":[
-			"\\begin{bNiceMatrix}",
-				"\t$1",
-			"\\end{bNiceMatrix}"
-		]
-	},
-
-
-	"BNiceMatrix":{
-		"prefix":"BNiceMatrix",
-		"body":[
-			"\\begin{BNiceMatrix}",
-				"\t$1",
-			"\\end{BNiceMatrix}"
-		]
-	},
-
-
-	"vNiceMatrix":{
-		"prefix":"vNiceMatrix",
-		"body":[
-			"\\begin{vNiceMatrix}",
-				"\t$1",
-			"\\end{vNiceMatrix}"
-		]
-	},
-
-
-	"VNiceMatrix":{
-		"prefix":"VNiceMatrix",
-		"body":[
-			"\\begin{VNiceMatrix}",
-				"\t$1",
-			"\\end{VNiceMatrix}"
-		]
-	},
-
-
-	"NiceMatrixBlock":{
-		"prefix":"NiceMatrixBlock",
-		"body":[
-			"\\begin{NiceMatrixBlock}",
-				"\t$1",
-			"\\end{NiceMatrixBlock}"
-		]
-	},
-
-
-	"NiceArrayWithDelims":{
+	"NiceArrayWithDelims{}{}{}[]":{
 		"prefix":"NiceArrayWithDelims",
 		"body":[
 			"\\begin{NiceArrayWithDelims}",
-				"\t$1",
+				"\t{${1:delim1}}{${2:delim2}}{${3:preamble}}[${4:options%keyvals}]",
 			"\\end{NiceArrayWithDelims}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

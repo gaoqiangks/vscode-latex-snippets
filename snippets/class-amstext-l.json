@@ -5,7 +5,8 @@
 		"prefix":"indexintro",
 		"body":[
 			"\\indexintro"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"indexfont",
 		"body":[
 			"\\indexfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"xcbtitlefont",
 		"body":[
 			"\\xcbtitlefont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"xcbdigits",
 		"body":[
 			"\\xcbdigits"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"longxcbtoprule",
 		"body":[
 			"\\longxcbtoprule"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"shortxcbendrule",
 		"body":[
 			"\\shortxcbendrule"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"xqed",
 		"body":[
 			"\\xqed{${1:symbol%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"setmathstrut",
 		"body":[
 			"\\setmathstrut"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"inclusionfont",
 		"body":[
 			"\\inclusionfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"inclusionindent",
 		"body":[
 			"\\inclusionindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,36 +95,40 @@
 		"prefix":"bibintro",
 		"body":[
 			"\\bibintro"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"framedthm":{
+	"framedthm{}":{
 		"prefix":"framedthm",
 		"body":[
 			"\\begin{framedthm}",
-				"\t$1",
+				"\t{${1:theorem-type}}",
 			"\\end{framedthm}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"inclusion":{
+	"inclusion{}":{
 		"prefix":"inclusion",
 		"body":[
 			"\\begin{inclusion}",
-				"\t$1",
+				"\t{${1:heading%text}}",
 			"\\end{inclusion}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"inchapterbibliography":{
+	"inchapterbibliography{}":{
 		"prefix":"inchapterbibliography",
 		"body":[
 			"\\begin{inchapterbibliography}",
-				"\t$1",
+				"\t{${1:widestlabel}}",
 			"\\end{inchapterbibliography}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

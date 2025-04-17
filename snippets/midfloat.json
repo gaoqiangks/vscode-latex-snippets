@@ -5,7 +5,8 @@
 		"prefix":"stripsep",
 		"body":[
 			"\\stripsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -15,16 +16,18 @@
 			"\\begin{strip}",
 				"\t$1",
 			"\\end{strip}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"strip":{
+	"strip[]":{
 		"prefix":"strip",
 		"body":[
 			"\\begin{strip}",
-				"\t$1",
+				"\t[${1:top skip/bottom skip}]",
 			"\\end{strip}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

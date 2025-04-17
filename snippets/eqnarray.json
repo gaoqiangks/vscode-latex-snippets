@@ -5,7 +5,8 @@
 		"prefix":"yesnumber",
 		"body":[
 			"\\yesnumber"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,36 +14,40 @@
 		"prefix":"eqnnum",
 		"body":[
 			"\\eqnnum{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"equationarray":{
+	"equationarray{}":{
 		"prefix":"equationarray",
 		"body":[
 			"\\begin{equationarray}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{equationarray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"equationarray":{
+	"equationarray[]{}":{
 		"prefix":"equationarray",
 		"body":[
 			"\\begin{equationarray}",
-				"\t$1",
+				"\t[${2:alignment%keyvals}]{${1:preamble}}",
 			"\\end{equationarray}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"equationarray*":{
-		"prefix":"equationarray",
+	"equationarray*[]{}":{
+		"prefix":"*equationarray",
 		"body":[
 			"\\begin{equationarray*}",
-				"\t$1",
+				"\t[${2:alignment%keyvals}]{${1:preamble}}",
 			"\\end{equationarray*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

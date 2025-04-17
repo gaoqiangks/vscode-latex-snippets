@@ -5,23 +5,8 @@
 		"prefix":"trimbox",
 		"body":[
 			"\\trimbox{${1:trim specs}}{${2:content%text}}"
-		]
-	},
-
-
-	"clipbox{}{}":{
-		"prefix":"clipbox",
-		"body":[
-			"\\clipbox{${1:clip specs}}{${2:content%text}}"
-		]
-	},
-
-
-	"marginbox{}{}":{
-		"prefix":"marginbox",
-		"body":[
-			"\\marginbox{${1:margin specs}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,17 @@
 		"prefix":"*trimbox",
 		"body":[
 			"\\trimbox*{${1:trim specs}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"clipbox{}{}":{
+		"prefix":"clipbox",
+		"body":[
+			"\\clipbox{${1:clip specs}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +32,17 @@
 		"prefix":"*clipbox",
 		"body":[
 			"\\clipbox*{${1:clip specs}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"marginbox{}{}":{
+		"prefix":"marginbox",
+		"body":[
+			"\\marginbox{${1:margin specs}}{${2:content%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,66 +50,73 @@
 		"prefix":"*marginbox",
 		"body":[
 			"\\marginbox*{${1:margin specs}}{${2:content%text}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"trimbox":{
+	"trimbox{}":{
 		"prefix":"trimbox",
 		"body":[
 			"\\begin{trimbox}",
-				"\t$1",
+				"\t{${1:trim specs}}",
 			"\\end{trimbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"trimbox*":{
-		"prefix":"trimbox",
+	"trimbox*{}":{
+		"prefix":"*trimbox",
 		"body":[
 			"\\begin{trimbox*}",
-				"\t$1",
+				"\t{${1:trim specs}}",
 			"\\end{trimbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"clipbox":{
+	"clipbox{}":{
 		"prefix":"clipbox",
 		"body":[
 			"\\begin{clipbox}",
-				"\t$1",
+				"\t{${1:clip specs}}",
 			"\\end{clipbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"clipbox*":{
-		"prefix":"clipbox",
+	"clipbox*{}":{
+		"prefix":"*clipbox",
 		"body":[
 			"\\begin{clipbox*}",
-				"\t$1",
+				"\t{${1:clip specs}}",
 			"\\end{clipbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"marginbox":{
+	"marginbox{}":{
 		"prefix":"marginbox",
 		"body":[
 			"\\begin{marginbox}",
-				"\t$1",
+				"\t{${1:margin specs}}",
 			"\\end{marginbox}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"marginbox*":{
-		"prefix":"marginbox",
+	"marginbox*{}":{
+		"prefix":"*marginbox",
 		"body":[
 			"\\begin{marginbox*}",
-				"\t$1",
+				"\t{${1:margin specs}}",
 			"\\end{marginbox*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

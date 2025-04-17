@@ -5,7 +5,8 @@
 		"prefix":"SetupDoc",
 		"body":[
 			"\\SetupDoc{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"DocInput",
 		"body":[
 			"\\DocInput{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"IndexInput",
 		"body":[
 			"\\IndexInput{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,735 +32,8 @@
 		"prefix":"DescribeMacro",
 		"body":[
 			"\\DescribeMacro{${1:macro%cmd}}"
-		]
-	},
-
-
-	"DescribeEnv{}":{
-		"prefix":"DescribeEnv",
-		"body":[
-			"\\DescribeEnv{${1:envname}}"
-		]
-	},
-
-
-	"MacrocodeTopsep":{
-		"prefix":"MacrocodeTopsep",
-		"body":[
-			"\\MacrocodeTopsep"
-		]
-	},
-
-
-	"MacroTopsep":{
-		"prefix":"MacroTopsep",
-		"body":[
-			"\\MacroTopsep"
-		]
-	},
-
-
-	"MacroIndent":{
-		"prefix":"MacroIndent",
-		"body":[
-			"\\MacroIndent"
-		]
-	},
-
-
-	"MacroFont":{
-		"prefix":"MacroFont",
-		"body":[
-			"\\MacroFont"
-		]
-	},
-
-
-	"PrintDescribeMacro{}":{
-		"prefix":"PrintDescribeMacro",
-		"body":[
-			"\\PrintDescribeMacro{${1:macro%cmd}}"
-		]
-	},
-
-
-	"PrintDescribeEnv{}":{
-		"prefix":"PrintDescribeEnv",
-		"body":[
-			"\\PrintDescribeEnv{${1:envname}}"
-		]
-	},
-
-
-	"PrintMacroName{}":{
-		"prefix":"PrintMacroName",
-		"body":[
-			"\\PrintMacroName{${1:macro%cmd}}"
-		]
-	},
-
-
-	"PrintEnvName{}":{
-		"prefix":"PrintEnvName",
-		"body":[
-			"\\PrintEnvName{${1:envname}}"
-		]
-	},
-
-
-	"NewDocElement{}{}":{
-		"prefix":"NewDocElement",
-		"body":[
-			"\\NewDocElement{${1:element}}{${2:envname}}"
-		]
-	},
-
-
-	"RenewDocElement{}{}":{
-		"prefix":"RenewDocElement",
-		"body":[
-			"\\RenewDocElement{${1:element}}{${2:envname}}"
-		]
-	},
-
-
-	"ProvideDocElement{}{}":{
-		"prefix":"ProvideDocElement",
-		"body":[
-			"\\ProvideDocElement{${1:element}}{${2:envname}}"
-		]
-	},
-
-
-	"SpecialEscapechar":{
-		"prefix":"SpecialEscapechar",
-		"body":[
-			"\\SpecialEscapechar"
-		]
-	},
-
-
-	"DisableCrossrefs":{
-		"prefix":"DisableCrossrefs",
-		"body":[
-			"\\DisableCrossrefs"
-		]
-	},
-
-
-	"EnableCrossrefs":{
-		"prefix":"EnableCrossrefs",
-		"body":[
-			"\\EnableCrossrefs"
-		]
-	},
-
-
-	"DoNotIndex{}":{
-		"prefix":"DoNotIndex",
-		"body":[
-			"\\DoNotIndex{${1:macro list%definition}}"
-		]
-	},
-
-
-	"PageIndex":{
-		"prefix":"PageIndex",
-		"body":[
-			"\\PageIndex"
-		]
-	},
-
-
-	"CodelineIndex":{
-		"prefix":"CodelineIndex",
-		"body":[
-			"\\CodelineIndex"
-		]
-	},
-
-
-	"theCodelineNo":{
-		"prefix":"theCodelineNo",
-		"body":[
-			"\\theCodelineNo"
-		]
-	},
-
-
-	"CodelineNumbered":{
-		"prefix":"CodelineNumbered",
-		"body":[
-			"\\CodelineNumbered"
-		]
-	},
-
-
-	"actualchar":{
-		"prefix":"actualchar",
-		"body":[
-			"\\actualchar"
-		]
-	},
-
-
-	"quotechar":{
-		"prefix":"quotechar",
-		"body":[
-			"\\quotechar"
-		]
-	},
-
-
-	"encapchar":{
-		"prefix":"encapchar",
-		"body":[
-			"\\encapchar"
-		]
-	},
-
-
-	"levelchar":{
-		"prefix":"levelchar",
-		"body":[
-			"\\levelchar"
-		]
-	},
-
-
-	"SpecialMainMacroIndex{}":{
-		"prefix":"SpecialMainMacroIndex",
-		"body":[
-			"\\SpecialMainMacroIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SpecialMainEnvIndex{}":{
-		"prefix":"SpecialMainEnvIndex",
-		"body":[
-			"\\SpecialMainEnvIndex{${1:envname}}"
-		]
-	},
-
-
-	"SpecialMacroIndex{}":{
-		"prefix":"SpecialMacroIndex",
-		"body":[
-			"\\SpecialMacroIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SpecialEnvIndex{}":{
-		"prefix":"SpecialEnvIndex",
-		"body":[
-			"\\SpecialEnvIndex{${1:envname}}"
-		]
-	},
-
-
-	"SpecialIndex{}":{
-		"prefix":"SpecialIndex",
-		"body":[
-			"\\SpecialIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SpecialShortIndex{}":{
-		"prefix":"SpecialShortIndex",
-		"body":[
-			"\\SpecialShortIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SpecialMainIndex{}":{
-		"prefix":"SpecialMainIndex",
-		"body":[
-			"\\SpecialMainIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SpecialUsageIndex{}":{
-		"prefix":"SpecialUsageIndex",
-		"body":[
-			"\\SpecialUsageIndex{${1:cmd}}"
-		]
-	},
-
-
-	"SortIndex{}{}":{
-		"prefix":"SortIndex",
-		"body":[
-			"\\SortIndex{${1:sort key}}{${2:index entry}}"
-		]
-	},
-
-
-	"verbatimchar":{
-		"prefix":"verbatimchar",
-		"body":[
-			"\\verbatimchar"
-		]
-	},
-
-
-	"PrintIndex":{
-		"prefix":"PrintIndex",
-		"body":[
-			"\\PrintIndex"
-		]
-	},
-
-
-	"IndexMin":{
-		"prefix":"IndexMin",
-		"body":[
-			"\\IndexMin"
-		]
-	},
-
-
-	"IndexPrologue{}":{
-		"prefix":"IndexPrologue",
-		"body":[
-			"\\IndexPrologue{${1:text}}"
-		]
-	},
-
-
-	"IndexParms":{
-		"prefix":"IndexParms",
-		"body":[
-			"\\IndexParms"
-		]
-	},
-
-
-	"main{}":{
-		"prefix":"main",
-		"body":[
-			"\\main{${1:text%plain}}"
-		]
-	},
-
-
-	"usage{}":{
-		"prefix":"usage",
-		"body":[
-			"\\usage{${1:text%plain}}"
-		]
-	},
-
-
-	"code{}":{
-		"prefix":"code",
-		"body":[
-			"\\code{${1:text%plain}}"
-		]
-	},
-
-
-	"DocstyleParms":{
-		"prefix":"DocstyleParms",
-		"body":[
-			"\\DocstyleParms"
-		]
-	},
-
-
-	"MakeShortVerb{}":{
-		"prefix":"MakeShortVerb",
-		"body":[
-			"\\MakeShortVerb{${1:\\character}}"
-		]
-	},
-
-
-	"DeleteShortVerb{}":{
-		"prefix":"DeleteShortVerb",
-		"body":[
-			"\\DeleteShortVerb{${1:\\character}}"
-		]
-	},
-
-
-	"Web":{
-		"prefix":"Web",
-		"body":[
-			"\\Web"
-		]
-	},
-
-
-	"AmSTeX":{
-		"prefix":"AmSTeX",
-		"body":[
-			"\\AmSTeX"
-		]
-	},
-
-
-	"BibTeX":{
-		"prefix":"BibTeX",
-		"body":[
-			"\\BibTeX"
-		]
-	},
-
-
-	"SliTeX":{
-		"prefix":"SliTeX",
-		"body":[
-			"\\SliTeX"
-		]
-	},
-
-
-	"PlainTeX":{
-		"prefix":"PlainTeX",
-		"body":[
-			"\\PlainTeX"
-		]
-	},
-
-
-	"meta{}":{
-		"prefix":"meta",
-		"body":[
-			"\\meta{${1:arg}}"
-		]
-	},
-
-
-	"OnlyDescription":{
-		"prefix":"OnlyDescription",
-		"body":[
-			"\\OnlyDescription"
-		]
-	},
-
-
-	"MaybeStop{}":{
-		"prefix":"MaybeStop",
-		"body":[
-			"\\MaybeStop{${1:finale code}}"
-		]
-	},
-
-
-	"StopEventually{}":{
-		"prefix":"StopEventually",
-		"body":[
-			"\\StopEventually{${1:finale code}}"
-		]
-	},
-
-
-	"Finale":{
-		"prefix":"Finale",
-		"body":[
-			"\\Finale"
-		]
-	},
-
-
-	"AlsoImplementation":{
-		"prefix":"AlsoImplementation",
-		"body":[
-			"\\AlsoImplementation"
-		]
-	},
-
-
-	"changes{}{}{}":{
-		"prefix":"changes",
-		"body":[
-			"\\changes{${1:version}}{${2:date}}{${3:text}}"
-		]
-	},
-
-
-	"generalname":{
-		"prefix":"generalname",
-		"body":[
-			"\\generalname"
-		]
-	},
-
-
-	"cs{}":{
-		"prefix":"cs",
-		"body":[
-			"\\cs{${1:csname}}"
-		]
-	},
-
-
-	"RecordChanges":{
-		"prefix":"RecordChanges",
-		"body":[
-			"\\RecordChanges"
-		]
-	},
-
-
-	"PrintChanges":{
-		"prefix":"PrintChanges",
-		"body":[
-			"\\PrintChanges"
-		]
-	},
-
-
-	"GlossaryMin":{
-		"prefix":"GlossaryMin",
-		"body":[
-			"\\GlossaryMin"
-		]
-	},
-
-
-	"GlossaryPrologue{}":{
-		"prefix":"GlossaryPrologue",
-		"body":[
-			"\\GlossaryPrologue{${1:text}}"
-		]
-	},
-
-
-	"GlossaryParms":{
-		"prefix":"GlossaryParms",
-		"body":[
-			"\\GlossaryParms"
-		]
-	},
-
-
-	"bslash":{
-		"prefix":"bslash",
-		"body":[
-			"\\bslash"
-		]
-	},
-
-
-	"MakePrivateLetters":{
-		"prefix":"MakePrivateLetters",
-		"body":[
-			"\\MakePrivateLetters"
-		]
-	},
-
-
-	"DontCheckModules":{
-		"prefix":"DontCheckModules",
-		"body":[
-			"\\DontCheckModules"
-		]
-	},
-
-
-	"CheckModules":{
-		"prefix":"CheckModules",
-		"body":[
-			"\\CheckModules"
-		]
-	},
-
-
-	"Module{}":{
-		"prefix":"Module",
-		"body":[
-			"\\Module{${1:directive}}"
-		]
-	},
-
-
-	"AltMacroFont":{
-		"prefix":"AltMacroFont",
-		"body":[
-			"\\AltMacroFont"
-		]
-	},
-
-
-	"theStandardModuleDepth":{
-		"prefix":"theStandardModuleDepth",
-		"body":[
-			"\\theStandardModuleDepth"
-		]
-	},
-
-
-	"OldMakeindex":{
-		"prefix":"OldMakeindex",
-		"body":[
-			"\\OldMakeindex"
-		]
-	},
-
-
-	"percentchar":{
-		"prefix":"percentchar",
-		"body":[
-			"\\percentchar"
-		]
-	},
-
-
-	"CharacterTable{}":{
-		"prefix":"CharacterTable",
-		"body":[
-			"\\CharacterTable{${1:contents}}"
-		]
-	},
-
-
-	"CharTableChanges":{
-		"prefix":"CharTableChanges",
-		"body":[
-			"\\CharTableChanges"
-		]
-	},
-
-
-	"CheckSum{}":{
-		"prefix":"CheckSum",
-		"body":[
-			"\\CheckSum{${1:number}}"
-		]
-	},
-
-
-	"efill":{
-		"prefix":"efill",
-		"body":[
-			"\\efill"
-		]
-	},
-
-
-	"filedate":{
-		"prefix":"filedate",
-		"body":[
-			"\\filedate"
-		]
-	},
-
-
-	"fileinfo":{
-		"prefix":"fileinfo",
-		"body":[
-			"\\fileinfo"
-		]
-	},
-
-
-	"filename":{
-		"prefix":"filename",
-		"body":[
-			"\\filename"
-		]
-	},
-
-
-	"fileversion":{
-		"prefix":"fileversion",
-		"body":[
-			"\\fileversion"
-		]
-	},
-
-
-	"GetFileInfo{}":{
-		"prefix":"GetFileInfo",
-		"body":[
-			"\\GetFileInfo{${1:file}}"
-		]
-	},
-
-
-	"LeftBraceIndex":{
-		"prefix":"LeftBraceIndex",
-		"body":[
-			"\\LeftBraceIndex"
-		]
-	},
-
-
-	"MakePercentComment":{
-		"prefix":"MakePercentComment",
-		"body":[
-			"\\MakePercentComment"
-		]
-	},
-
-
-	"MakePercentIgnore":{
-		"prefix":"MakePercentIgnore",
-		"body":[
-			"\\MakePercentIgnore"
-		]
-	},
-
-
-	"PercentIndex":{
-		"prefix":"PercentIndex",
-		"body":[
-			"\\PercentIndex"
-		]
-	},
-
-
-	"pfill":{
-		"prefix":"pfill",
-		"body":[
-			"\\pfill"
-		]
-	},
-
-
-	"RecordIndexType{}{}":{
-		"prefix":"RecordIndexType",
-		"body":[
-			"\\RecordIndexType{${1:cmd}}{${2:type}}"
-		]
-	},
-
-
-	"RecordIndexTypeAux{}{}":{
-		"prefix":"RecordIndexTypeAux",
-		"body":[
-			"\\RecordIndexTypeAux{${1:cmd}}{${2:type}}"
-		]
-	},
-
-
-	"RightBraceIndex":{
-		"prefix":"RightBraceIndex",
-		"body":[
-			"\\RightBraceIndex"
-		]
-	},
-
-
-	"ShowIndexingState":{
-		"prefix":"ShowIndexingState",
-		"body":[
-			"\\ShowIndexingState"
-		]
-	},
-
-
-	"MakeShortVerb*{}":{
-		"prefix":"*MakeShortVerb",
-		"body":[
-			"\\MakeShortVerb*{${1:\\character}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -765,7 +41,17 @@
 		"prefix":"DescribeMacro",
 		"body":[
 			"\\DescribeMacro[${2:options%keyvals}]{${1:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DescribeEnv{}":{
+		"prefix":"DescribeEnv",
+		"body":[
+			"\\DescribeEnv{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -773,7 +59,89 @@
 		"prefix":"DescribeEnv",
 		"body":[
 			"\\DescribeEnv[${2:options%keyvals}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MacrocodeTopsep":{
+		"prefix":"MacrocodeTopsep",
+		"body":[
+			"\\MacrocodeTopsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MacroTopsep":{
+		"prefix":"MacroTopsep",
+		"body":[
+			"\\MacroTopsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MacroIndent":{
+		"prefix":"MacroIndent",
+		"body":[
+			"\\MacroIndent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MacroFont":{
+		"prefix":"MacroFont",
+		"body":[
+			"\\MacroFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintDescribeMacro{}":{
+		"prefix":"PrintDescribeMacro",
+		"body":[
+			"\\PrintDescribeMacro{${1:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintDescribeEnv{}":{
+		"prefix":"PrintDescribeEnv",
+		"body":[
+			"\\PrintDescribeEnv{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintMacroName{}":{
+		"prefix":"PrintMacroName",
+		"body":[
+			"\\PrintMacroName{${1:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintEnvName{}":{
+		"prefix":"PrintEnvName",
+		"body":[
+			"\\PrintEnvName{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"NewDocElement{}{}":{
+		"prefix":"NewDocElement",
+		"body":[
+			"\\NewDocElement{${1:element}}{${2:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -781,7 +149,17 @@
 		"prefix":"NewDocElement",
 		"body":[
 			"\\NewDocElement[${3:options%keyvals}]{${1:element}}{${2:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewDocElement{}{}":{
+		"prefix":"RenewDocElement",
+		"body":[
+			"\\RenewDocElement{${1:element}}{${2:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -789,7 +167,17 @@
 		"prefix":"RenewDocElement",
 		"body":[
 			"\\RenewDocElement[${3:options%keyvals}]{${1:element}}{${2:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideDocElement{}{}":{
+		"prefix":"ProvideDocElement",
+		"body":[
+			"\\ProvideDocElement{${1:element}}{${2:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -797,7 +185,719 @@
 		"prefix":"ProvideDocElement",
 		"body":[
 			"\\ProvideDocElement[${3:options%keyvals}]{${1:element}}{${2:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SpecialEscapechar":{
+		"prefix":"SpecialEscapechar",
+		"body":[
+			"\\SpecialEscapechar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DisableCrossrefs":{
+		"prefix":"DisableCrossrefs",
+		"body":[
+			"\\DisableCrossrefs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnableCrossrefs":{
+		"prefix":"EnableCrossrefs",
+		"body":[
+			"\\EnableCrossrefs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DoNotIndex{}":{
+		"prefix":"DoNotIndex",
+		"body":[
+			"\\DoNotIndex{${1:macro list%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PageIndex":{
+		"prefix":"PageIndex",
+		"body":[
+			"\\PageIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CodelineIndex":{
+		"prefix":"CodelineIndex",
+		"body":[
+			"\\CodelineIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theCodelineNo":{
+		"prefix":"theCodelineNo",
+		"body":[
+			"\\theCodelineNo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CodelineNumbered":{
+		"prefix":"CodelineNumbered",
+		"body":[
+			"\\CodelineNumbered"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"actualchar":{
+		"prefix":"actualchar",
+		"body":[
+			"\\actualchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"quotechar":{
+		"prefix":"quotechar",
+		"body":[
+			"\\quotechar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"encapchar":{
+		"prefix":"encapchar",
+		"body":[
+			"\\encapchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"levelchar":{
+		"prefix":"levelchar",
+		"body":[
+			"\\levelchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialMainMacroIndex{}":{
+		"prefix":"SpecialMainMacroIndex",
+		"body":[
+			"\\SpecialMainMacroIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialMainEnvIndex{}":{
+		"prefix":"SpecialMainEnvIndex",
+		"body":[
+			"\\SpecialMainEnvIndex{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialMacroIndex{}":{
+		"prefix":"SpecialMacroIndex",
+		"body":[
+			"\\SpecialMacroIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialEnvIndex{}":{
+		"prefix":"SpecialEnvIndex",
+		"body":[
+			"\\SpecialEnvIndex{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialIndex{}":{
+		"prefix":"SpecialIndex",
+		"body":[
+			"\\SpecialIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialShortIndex{}":{
+		"prefix":"SpecialShortIndex",
+		"body":[
+			"\\SpecialShortIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialMainIndex{}":{
+		"prefix":"SpecialMainIndex",
+		"body":[
+			"\\SpecialMainIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SpecialUsageIndex{}":{
+		"prefix":"SpecialUsageIndex",
+		"body":[
+			"\\SpecialUsageIndex{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SortIndex{}{}":{
+		"prefix":"SortIndex",
+		"body":[
+			"\\SortIndex{${1:sort key}}{${2:index entry}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"verbatimchar":{
+		"prefix":"verbatimchar",
+		"body":[
+			"\\verbatimchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintIndex":{
+		"prefix":"PrintIndex",
+		"body":[
+			"\\PrintIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IndexMin":{
+		"prefix":"IndexMin",
+		"body":[
+			"\\IndexMin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IndexPrologue{}":{
+		"prefix":"IndexPrologue",
+		"body":[
+			"\\IndexPrologue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IndexParms":{
+		"prefix":"IndexParms",
+		"body":[
+			"\\IndexParms"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"main{}":{
+		"prefix":"main",
+		"body":[
+			"\\main{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"usage{}":{
+		"prefix":"usage",
+		"body":[
+			"\\usage{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"code{}":{
+		"prefix":"code",
+		"body":[
+			"\\code{${1:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DocstyleParms":{
+		"prefix":"DocstyleParms",
+		"body":[
+			"\\DocstyleParms"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeShortVerb{}":{
+		"prefix":"MakeShortVerb",
+		"body":[
+			"\\MakeShortVerb{${1:\\character}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakeShortVerb*{}":{
+		"prefix":"*MakeShortVerb",
+		"body":[
+			"\\MakeShortVerb*{${1:\\character}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"DeleteShortVerb{}":{
+		"prefix":"DeleteShortVerb",
+		"body":[
+			"\\DeleteShortVerb{${1:\\character}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Web":{
+		"prefix":"Web",
+		"body":[
+			"\\Web"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AmSTeX":{
+		"prefix":"AmSTeX",
+		"body":[
+			"\\AmSTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BibTeX":{
+		"prefix":"BibTeX",
+		"body":[
+			"\\BibTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SliTeX":{
+		"prefix":"SliTeX",
+		"body":[
+			"\\SliTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PlainTeX":{
+		"prefix":"PlainTeX",
+		"body":[
+			"\\PlainTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"meta{}":{
+		"prefix":"meta",
+		"body":[
+			"\\meta{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OnlyDescription":{
+		"prefix":"OnlyDescription",
+		"body":[
+			"\\OnlyDescription"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MaybeStop{}":{
+		"prefix":"MaybeStop",
+		"body":[
+			"\\MaybeStop{${1:finale code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"StopEventually{}":{
+		"prefix":"StopEventually",
+		"body":[
+			"\\StopEventually{${1:finale code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Finale":{
+		"prefix":"Finale",
+		"body":[
+			"\\Finale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AlsoImplementation":{
+		"prefix":"AlsoImplementation",
+		"body":[
+			"\\AlsoImplementation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"changes{}{}{}":{
+		"prefix":"changes",
+		"body":[
+			"\\changes{${1:version}}{${2:date}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"generalname":{
+		"prefix":"generalname",
+		"body":[
+			"\\generalname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cs{}":{
+		"prefix":"cs",
+		"body":[
+			"\\cs{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RecordChanges":{
+		"prefix":"RecordChanges",
+		"body":[
+			"\\RecordChanges"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PrintChanges":{
+		"prefix":"PrintChanges",
+		"body":[
+			"\\PrintChanges"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlossaryMin":{
+		"prefix":"GlossaryMin",
+		"body":[
+			"\\GlossaryMin"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlossaryPrologue{}":{
+		"prefix":"GlossaryPrologue",
+		"body":[
+			"\\GlossaryPrologue{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GlossaryParms":{
+		"prefix":"GlossaryParms",
+		"body":[
+			"\\GlossaryParms"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bslash":{
+		"prefix":"bslash",
+		"body":[
+			"\\bslash"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePrivateLetters":{
+		"prefix":"MakePrivateLetters",
+		"body":[
+			"\\MakePrivateLetters"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DontCheckModules":{
+		"prefix":"DontCheckModules",
+		"body":[
+			"\\DontCheckModules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CheckModules":{
+		"prefix":"CheckModules",
+		"body":[
+			"\\CheckModules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Module{}":{
+		"prefix":"Module",
+		"body":[
+			"\\Module{${1:directive}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AltMacroFont":{
+		"prefix":"AltMacroFont",
+		"body":[
+			"\\AltMacroFont"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theStandardModuleDepth":{
+		"prefix":"theStandardModuleDepth",
+		"body":[
+			"\\theStandardModuleDepth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"OldMakeindex":{
+		"prefix":"OldMakeindex",
+		"body":[
+			"\\OldMakeindex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"percentchar":{
+		"prefix":"percentchar",
+		"body":[
+			"\\percentchar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CharacterTable{}":{
+		"prefix":"CharacterTable",
+		"body":[
+			"\\CharacterTable{${1:contents}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CharTableChanges":{
+		"prefix":"CharTableChanges",
+		"body":[
+			"\\CharTableChanges"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CheckSum{}":{
+		"prefix":"CheckSum",
+		"body":[
+			"\\CheckSum{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"efill":{
+		"prefix":"efill",
+		"body":[
+			"\\efill"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filedate":{
+		"prefix":"filedate",
+		"body":[
+			"\\filedate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileinfo":{
+		"prefix":"fileinfo",
+		"body":[
+			"\\fileinfo"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"filename":{
+		"prefix":"filename",
+		"body":[
+			"\\filename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fileversion":{
+		"prefix":"fileversion",
+		"body":[
+			"\\fileversion"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GetFileInfo{}":{
+		"prefix":"GetFileInfo",
+		"body":[
+			"\\GetFileInfo{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LeftBraceIndex":{
+		"prefix":"LeftBraceIndex",
+		"body":[
+			"\\LeftBraceIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePercentComment":{
+		"prefix":"MakePercentComment",
+		"body":[
+			"\\MakePercentComment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MakePercentIgnore":{
+		"prefix":"MakePercentIgnore",
+		"body":[
+			"\\MakePercentIgnore"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PercentIndex":{
+		"prefix":"PercentIndex",
+		"body":[
+			"\\PercentIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pfill":{
+		"prefix":"pfill",
+		"body":[
+			"\\pfill"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RecordIndexType{}{}":{
+		"prefix":"RecordIndexType",
+		"body":[
+			"\\RecordIndexType{${1:cmd}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RecordIndexTypeAux{}{}":{
+		"prefix":"RecordIndexTypeAux",
+		"body":[
+			"\\RecordIndexTypeAux{${1:cmd}}{${2:type}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RightBraceIndex":{
+		"prefix":"RightBraceIndex",
+		"body":[
+			"\\RightBraceIndex"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ShowIndexingState":{
+		"prefix":"ShowIndexingState",
+		"body":[
+			"\\ShowIndexingState"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -807,37 +907,8 @@
 			"\\begin{macrocode}",
 				"\t$1",
 			"\\end{macrocode}"
-		]
-	},
-
-
-	"macro":{
-		"prefix":"macro",
-		"body":[
-			"\\begin{macro}",
-				"\t$1",
-			"\\end{macro}"
-		]
-	},
-
-
-	"environment":{
-		"prefix":"environment",
-		"body":[
-			"\\begin{environment}",
-				"\t$1",
-			"\\end{environment}"
-		]
-	},
-
-
-	"theglossary":{
-		"prefix":"theglossary",
-		"body":[
-			"\\begin{theglossary}",
-				"\t$1",
-			"\\end{theglossary}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -847,26 +918,62 @@
 			"\\begin{macrocode*}",
 				"\t$1",
 			"\\end{macrocode*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"macro":{
+	"macro{}":{
 		"prefix":"macro",
 		"body":[
 			"\\begin{macro}",
-				"\t$1",
+				"\t{${1:macro%cmd}}",
 			"\\end{macro}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"environment":{
+	"macro[]{}":{
+		"prefix":"macro",
+		"body":[
+			"\\begin{macro}",
+				"\t[${2:options%keyvals}]{${1:macro%cmd}}",
+			"\\end{macro}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"environment{}":{
 		"prefix":"environment",
 		"body":[
 			"\\begin{environment}",
-				"\t$1",
+				"\t{${1:envname}}",
 			"\\end{environment}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"environment[]{}":{
+		"prefix":"environment",
+		"body":[
+			"\\begin{environment}",
+				"\t[${2:options%keyvals}]{${1:envname}}",
+			"\\end{environment}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"theglossary":{
+		"prefix":"theglossary",
+		"body":[
+			"\\begin{theglossary}",
+				"\t$1",
+			"\\end{theglossary}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

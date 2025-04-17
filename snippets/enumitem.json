@@ -5,7 +5,8 @@
 		"prefix":"newlist",
 		"body":[
 			"\\newlist{${1:name%envname}}{${2:type%keyvals}}{${3:max-depth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"renewlist",
 		"body":[
 			"\\renewlist{${1:name%envname}}{${2:type%keyvals}}{${3:max-depth}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,95 +23,8 @@
 		"prefix":"setlist",
 		"body":[
 			"\\setlist{${1:options}}"
-		]
-	},
-
-
-	"restartlist{}":{
-		"prefix":"restartlist",
-		"body":[
-			"\\restartlist{${1:list name}}"
-		]
-	},
-
-
-	"EnumitemId":{
-		"prefix":"EnumitemId",
-		"body":[
-			"\\EnumitemId"
-		]
-	},
-
-
-	"SetLabelAlign{}{}":{
-		"prefix":"SetLabelAlign",
-		"body":[
-			"\\SetLabelAlign{${1:value}}{${2:commands}}"
-		]
-	},
-
-
-	"labelindent":{
-		"prefix":"labelindent",
-		"body":[
-			"\\labelindent"
-		]
-	},
-
-
-	"SetEnumerateShortLabel{}{}":{
-		"prefix":"SetEnumerateShortLabel",
-		"body":[
-			"\\SetEnumerateShortLabel{${1:key%plain}}{${2:replacement}}"
-		]
-	},
-
-
-	"setlistdepth{}":{
-		"prefix":"setlistdepth",
-		"body":[
-			"\\setlistdepth{${1:integer}}"
-		]
-	},
-
-
-	"AddEnumerateCounter{}{}{}":{
-		"prefix":"AddEnumerateCounter",
-		"body":[
-			"\\AddEnumerateCounter{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:widest label}}"
-		]
-	},
-
-
-	"SetEnumitemKey{}{}":{
-		"prefix":"SetEnumitemKey",
-		"body":[
-			"\\SetEnumitemKey{${1:key%specialDef}}{${2:replacement options%keyvals}}"
-		]
-	},
-
-
-	"SetEnumitemValue{}{}{}":{
-		"prefix":"SetEnumitemValue",
-		"body":[
-			"\\SetEnumitemValue{${1:key%plain}}{${2:string-value}}{${3:replacement}}"
-		]
-	},
-
-
-	"SetEnumitemSize{}{}":{
-		"prefix":"SetEnumitemSize",
-		"body":[
-			"\\SetEnumitemSize{${1:name}}{${2:selector}}"
-		]
-	},
-
-
-	"DrawEnumitemLabel":{
-		"prefix":"DrawEnumitemLabel",
-		"body":[
-			"\\DrawEnumitemLabel"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,23 +32,8 @@
 		"prefix":"*setlist",
 		"body":[
 			"\\setlist*{${1:options}}"
-		]
-	},
-
-
-	"setlist*[]{}":{
-		"prefix":"*setlist",
-		"body":[
-			"\\setlist*[${2:names, levels}]{${1:options}}"
-		]
-	},
-
-
-	"AddEnumerateCounter*{}{}{}":{
-		"prefix":"*AddEnumerateCounter",
-		"body":[
-			"\\AddEnumerateCounter*{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:integer}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -141,7 +41,125 @@
 		"prefix":"setlist",
 		"body":[
 			"\\setlist[${2:names, levels}]{${1:options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setlist*[]{}":{
+		"prefix":"*setlist",
+		"body":[
+			"\\setlist*[${2:names, levels}]{${1:options}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"restartlist{}":{
+		"prefix":"restartlist",
+		"body":[
+			"\\restartlist{${1:list name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"EnumitemId":{
+		"prefix":"EnumitemId",
+		"body":[
+			"\\EnumitemId"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetLabelAlign{}{}":{
+		"prefix":"SetLabelAlign",
+		"body":[
+			"\\SetLabelAlign{${1:value}}{${2:commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelindent":{
+		"prefix":"labelindent",
+		"body":[
+			"\\labelindent"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetEnumerateShortLabel{}{}":{
+		"prefix":"SetEnumerateShortLabel",
+		"body":[
+			"\\SetEnumerateShortLabel{${1:key%plain}}{${2:replacement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setlistdepth{}":{
+		"prefix":"setlistdepth",
+		"body":[
+			"\\setlistdepth{${1:integer}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddEnumerateCounter{}{}{}":{
+		"prefix":"AddEnumerateCounter",
+		"body":[
+			"\\AddEnumerateCounter{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:widest label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AddEnumerateCounter*{}{}{}":{
+		"prefix":"*AddEnumerateCounter",
+		"body":[
+			"\\AddEnumerateCounter*{${1:LaTeX-cmd}}{${2:internal-cmd}}{${3:integer}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SetEnumitemKey{}{}":{
+		"prefix":"SetEnumitemKey",
+		"body":[
+			"\\SetEnumitemKey{${1:key%specialDef}}{${2:replacement options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetEnumitemValue{}{}{}":{
+		"prefix":"SetEnumitemValue",
+		"body":[
+			"\\SetEnumitemValue{${1:key%plain}}{${2:string-value}}{${3:replacement}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SetEnumitemSize{}{}":{
+		"prefix":"SetEnumitemSize",
+		"body":[
+			"\\SetEnumitemSize{${1:name}}{${2:selector}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DrawEnumitemLabel":{
+		"prefix":"DrawEnumitemLabel",
+		"body":[
+			"\\DrawEnumitemLabel"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -151,7 +169,19 @@
 			"\\begin{enumerate*}",
 				"\t$1",
 			"\\end{enumerate*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"enumerate*[]":{
+		"prefix":"*enumerate",
+		"body":[
+			"\\begin{enumerate*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{enumerate*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -161,7 +191,19 @@
 			"\\begin{itemize*}",
 				"\t$1",
 			"\\end{itemize*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"itemize*[]":{
+		"prefix":"*itemize",
+		"body":[
+			"\\begin{itemize*}",
+				"\t[${1:options%keyvals}]",
+			"\\end{itemize*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -171,66 +213,51 @@
 			"\\begin{description*}",
 				"\t$1",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"enumerate*":{
-		"prefix":"enumerate",
-		"body":[
-			"\\begin{enumerate*}",
-				"\t$1",
-			"\\end{enumerate*}"
-		]
-	},
-
-
-	"itemize*":{
-		"prefix":"itemize",
-		"body":[
-			"\\begin{itemize*}",
-				"\t$1",
-			"\\end{itemize*}"
-		]
-	},
-
-
-	"description*":{
-		"prefix":"description",
+	"description*[]":{
+		"prefix":"*description",
 		"body":[
 			"\\begin{description*}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{description*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"enumerate":{
+	"enumerate[]":{
 		"prefix":"enumerate",
 		"body":[
 			"\\begin{enumerate}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{enumerate}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"itemize":{
+	"itemize[]":{
 		"prefix":"itemize",
 		"body":[
 			"\\begin{itemize}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{itemize}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"description":{
+	"description[]":{
 		"prefix":"description",
 		"body":[
 			"\\begin{description}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{description}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,47 +5,8 @@
 		"prefix":"pssavepath",
 		"body":[
 			"\\pssavepath{${1:name}}{${2:commands}}"
-		]
-	},
-
-
-	"psintersect{}{}":{
-		"prefix":"psintersect",
-		"body":[
-			"\\psintersect{${1:curveA}}{${2:curveB}}"
-		]
-	},
-
-
-	"pstracecurve{}":{
-		"prefix":"pstracecurve",
-		"body":[
-			"\\pstracecurve{${1:curve name}}"
-		]
-	},
-
-
-	"pstracecurve{}{}":{
-		"prefix":"pstracecurve",
-		"body":[
-			"\\pstracecurve{${1:intersection}}{${2:curve name}}"
-		]
-	},
-
-
-	"psGetCurvePoint{}{}":{
-		"prefix":"psGetCurvePoint",
-		"body":[
-			"\\psGetCurvePoint{${1:curve name}}{${2:macro%cmd}}"
-		]
-	},
-
-
-	"psGetIsectCenter{}{}{}":{
-		"prefix":"psGetIsectCenter",
-		"body":[
-			"\\psGetIsectCenter{${1:intersection}}{${2:curve name}}{${3:macro%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +14,17 @@
 		"prefix":"pssavepath",
 		"body":[
 			"\\pssavepath[${3:options%keyvals}]{${1:name}}{${2:commands}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psintersect{}{}":{
+		"prefix":"psintersect",
+		"body":[
+			"\\psintersect{${1:curveA}}{${2:curveB}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +32,26 @@
 		"prefix":"psintersect",
 		"body":[
 			"\\psintersect[${3:options%keyvals}]{${1:curveA}}{${2:curveB}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pstracecurve{}":{
+		"prefix":"pstracecurve",
+		"body":[
+			"\\pstracecurve{${1:curve name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pstracecurve{}{}":{
+		"prefix":"pstracecurve",
+		"body":[
+			"\\pstracecurve{${1:intersection}}{${2:curve name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +59,8 @@
 		"prefix":"pstracecurve",
 		"body":[
 			"\\pstracecurve[${2:options%keyvals}]{${1:curve name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,6 +68,25 @@
 		"prefix":"pstracecurve",
 		"body":[
 			"\\pstracecurve[${3:options%keyvals}]{${1:intersection}}{${2:curve name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psGetCurvePoint{}{}":{
+		"prefix":"psGetCurvePoint",
+		"body":[
+			"\\psGetCurvePoint{${1:curve name}}{${2:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psGetIsectCenter{}{}{}":{
+		"prefix":"psGetIsectCenter",
+		"body":[
+			"\\psGetIsectCenter{${1:intersection}}{${2:curve name}}{${3:macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

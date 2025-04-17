@@ -5,7 +5,8 @@
 		"prefix":"ingredient",
 		"body":[
 			"\\ingredient{${1:ingredient%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"energy",
 		"body":[
 			"\\energy{${1:energy}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"sidedish",
 		"body":[
 			"\\sidedish{${1:sidedish%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"hint",
 		"body":[
 			"\\hint{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"preparationtime",
 		"body":[
 			"\\preparationtime{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"modification",
 		"body":[
 			"\\modification{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"recipemargin",
 		"body":[
 			"\\recipemargin"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"ingredientfont",
 		"body":[
 			"\\ingredientfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"recipeendhook",
 		"body":[
 			"\\recipeendhook"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"recipetitlefont",
 		"body":[
 			"\\recipetitlefont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,16 +95,18 @@
 		"prefix":"recipetitle",
 		"body":[
 			"\\recipetitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"recipe":{
+	"recipe{}":{
 		"prefix":"recipe",
 		"body":[
 			"\\begin{recipe}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{recipe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

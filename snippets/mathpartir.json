@@ -5,63 +5,8 @@
 		"prefix":"inferrule",
 		"body":[
 			"\\inferrule{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"infer{}{}":{
-		"prefix":"infer",
-		"body":[
-			"\\infer{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"mprset{}":{
-		"prefix":"mprset",
-		"body":[
-			"\\mprset{${1:keyvals}}"
-		]
-	},
-
-
-	"MathparLineskip":{
-		"prefix":"MathparLineskip",
-		"body":[
-			"\\MathparLineskip"
-		]
-	},
-
-
-	"MathparNormalpar":{
-		"prefix":"MathparNormalpar",
-		"body":[
-			"\\MathparNormalpar"
-		]
-	},
-
-
-	"MathparBindings":{
-		"prefix":"MathparBindings",
-		"body":[
-			"\\MathparBindings"
-		]
-	},
-
-
-	"inferrule*[]{}{}":{
-		"prefix":"*inferrule",
-		"body":[
-			"\\inferrule*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
-		]
-	},
-
-
-	"infer*[]{}{}":{
-		"prefix":"*infer",
-		"body":[
-			"\\infer*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,26 @@
 		"prefix":"inferrule",
 		"body":[
 			"\\inferrule[${3:label%text}]{${1:premises}}{${2:conclusions}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inferrule*[]{}{}":{
+		"prefix":"*inferrule",
+		"body":[
+			"\\inferrule*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"infer{}{}":{
+		"prefix":"infer",
+		"body":[
+			"\\infer{${1:premises}}{${2:conclusions}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +41,53 @@
 		"prefix":"infer",
 		"body":[
 			"\\infer[${3:label%text}]{${1:premises}}{${2:conclusions}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"infer*[]{}{}":{
+		"prefix":"*infer",
+		"body":[
+			"\\infer*[${3:options%keyvals}]{${1:premises}}{${2:conclusions}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mprset{}":{
+		"prefix":"mprset",
+		"body":[
+			"\\mprset{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MathparLineskip":{
+		"prefix":"MathparLineskip",
+		"body":[
+			"\\MathparLineskip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MathparNormalpar":{
+		"prefix":"MathparNormalpar",
+		"body":[
+			"\\MathparNormalpar"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"MathparBindings":{
+		"prefix":"MathparBindings",
+		"body":[
+			"\\MathparBindings"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -87,6 +97,7 @@
 			"\\begin{mathpar}",
 				"\t$1",
 			"\\end{mathpar}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

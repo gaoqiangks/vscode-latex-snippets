@@ -5,15 +5,8 @@
 		"prefix":"LinkNodes",
 		"body":[
 			"\\LinkNodes{${1:expression}}"
-		]
-	},
-
-
-	"AddNode":{
-		"prefix":"AddNode",
-		"body":[
-			"\\AddNode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"LinkNodes",
 		"body":[
 			"\\LinkNodes[${2:keyvals}]{${1:expression}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddNode":{
+		"prefix":"AddNode",
+		"body":[
+			"\\AddNode"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"AddNode",
 		"body":[
 			"\\AddNode[${1:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -39,16 +43,18 @@
 			"\\begin{NodesList}",
 				"\t$1",
 			"\\end{NodesList}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"NodesList":{
+	"NodesList[]":{
 		"prefix":"NodesList",
 		"body":[
 			"\\begin{NodesList}",
-				"\t$1",
+				"\t[${1:keyvals}]",
 			"\\end{NodesList}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

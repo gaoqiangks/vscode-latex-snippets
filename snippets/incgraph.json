@@ -5,279 +5,8 @@
 		"prefix":"incgraph",
 		"body":[
 			"\\incgraph{${1:imagefile}}"
-		]
-	},
-
-
-	"incmultigraph{}{}":{
-		"prefix":"incmultigraph",
-		"body":[
-			"\\incmultigraph{${1:file name pattern}}{${2:list}}"
-		]
-	},
-
-
-	"n":{
-		"prefix":"n",
-		"body":[
-			"\\n"
-		]
-	},
-
-
-	"ni":{
-		"prefix":"ni",
-		"body":[
-			"\\ni"
-		]
-	},
-
-
-	"nn":{
-		"prefix":"nn",
-		"body":[
-			"\\nn"
-		]
-	},
-
-
-	"nt":{
-		"prefix":"nt",
-		"body":[
-			"\\nt"
-		]
-	},
-
-
-	"igrset{}":{
-		"prefix":"igrset",
-		"body":[
-			"\\igrset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"igrGetPageSize":{
-		"prefix":"igrGetPageSize",
-		"body":[
-			"\\igrGetPageSize"
-		]
-	},
-
-
-	"igrPageWidth":{
-		"prefix":"igrPageWidth",
-		"body":[
-			"\\igrPageWidth"
-		]
-	},
-
-
-	"igrPageHeight":{
-		"prefix":"igrPageHeight",
-		"body":[
-			"\\igrPageHeight"
-		]
-	},
-
-
-	"igrSetPageSize{}{}":{
-		"prefix":"igrSetPageSize",
-		"body":[
-			"\\igrSetPageSize{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"igrGetLastPage{}":{
-		"prefix":"igrGetLastPage",
-		"body":[
-			"\\igrGetLastPage{${1:file}}"
-		]
-	},
-
-
-	"igrLastPage":{
-		"prefix":"igrLastPage",
-		"body":[
-			"\\igrLastPage"
-		]
-	},
-
-
-	"igfpage{}":{
-		"prefix":"igfpage",
-		"body":[
-			"\\igfpage{${1:text}}"
-		]
-	},
-
-
-	"igrcenter{}":{
-		"prefix":"igrcenter",
-		"body":[
-			"\\igrcenter{${1:text}}"
-		]
-	},
-
-
-	"igrcenterfit{}{}{}":{
-		"prefix":"igrcenterfit",
-		"body":[
-			"\\igrcenterfit{${1:width}}{${2:height}}{${3:text}}"
-		]
-	},
-
-
-	"igrtargetset{}":{
-		"prefix":"igrtargetset",
-		"body":[
-			"\\igrtargetset{${1:hyperref anchor}}"
-		]
-	},
-
-
-	"theigrpage":{
-		"prefix":"theigrpage",
-		"body":[
-			"\\theigrpage"
-		]
-	},
-
-
-	"igrpagestyle":{
-		"prefix":"igrpagestyle",
-		"body":[
-			"\\igrpagestyle"
-		]
-	},
-
-
-	"igrmatchvalue":{
-		"prefix":"igrmatchvalue",
-		"body":[
-			"\\igrmatchvalue"
-		]
-	},
-
-
-	"igfboxset{}":{
-		"prefix":"igfboxset",
-		"body":[
-			"\\igfboxset{${1:text}}"
-		]
-	},
-
-
-	"igrboxcenter":{
-		"prefix":"igrboxcenter",
-		"body":[
-			"\\igrboxcenter"
-		]
-	},
-
-
-	"igrboxtikz":{
-		"prefix":"igrboxtikz",
-		"body":[
-			"\\igrboxtikz"
-		]
-	},
-
-
-	"igrboxtikzpage":{
-		"prefix":"igrboxtikzpage",
-		"body":[
-			"\\igrboxtikzpage"
-		]
-	},
-
-
-	"igrboxtikzcenter":{
-		"prefix":"igrboxtikzcenter",
-		"body":[
-			"\\igrboxtikzcenter"
-		]
-	},
-
-
-	"igrbox":{
-		"prefix":"igrbox",
-		"body":[
-			"\\igrbox"
-		]
-	},
-
-
-	"igrAutoTarget":{
-		"prefix":"igrAutoTarget",
-		"body":[
-			"\\igrAutoTarget"
-		]
-	},
-
-
-	"igrBoxWidth":{
-		"prefix":"igrBoxWidth",
-		"body":[
-			"\\igrBoxWidth"
-		]
-	},
-
-
-	"igrBoxHeight":{
-		"prefix":"igrBoxHeight",
-		"body":[
-			"\\igrBoxHeight"
-		]
-	},
-
-
-	"igrBoxht":{
-		"prefix":"igrBoxht",
-		"body":[
-			"\\igrBoxht"
-		]
-	},
-
-
-	"igrBoxdp":{
-		"prefix":"igrBoxdp",
-		"body":[
-			"\\igrBoxdp"
-		]
-	},
-
-
-	"igrsetmatchvalue{}{}":{
-		"prefix":"igrsetmatchvalue",
-		"body":[
-			"\\igrsetmatchvalue{${1:key%plain}}{${2:value}}"
-		]
-	},
-
-
-	"igrsetmatches{}":{
-		"prefix":"igrsetmatches",
-		"body":[
-			"\\igrsetmatches{${1:list}}"
-		]
-	},
-
-
-	"igrifmatch{}{}{}":{
-		"prefix":"igrifmatch",
-		"body":[
-			"\\igrifmatch{${1:key%plain}}{${2:then}}{${3:else}}"
-		]
-	},
-
-
-	"igrmakezerofill{}{}":{
-		"prefix":"igrmakezerofill",
-		"body":[
-			"\\igrmakezerofill{${1:macro}}{${2:digits}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +14,8 @@
 		"prefix":"incgraph",
 		"body":[
 			"\\incgraph[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -293,7 +23,17 @@
 		"prefix":"incgraph",
 		"body":[
 			"\\incgraph[${2:options%keyvals}][${3:graphics options}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"incmultigraph{}{}":{
+		"prefix":"incmultigraph",
+		"body":[
+			"\\incmultigraph{${1:file name pattern}}{${2:list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +41,8 @@
 		"prefix":"incmultigraph",
 		"body":[
 			"\\incmultigraph[${3:options%keyvals}]{${1:file name pattern}}{${2:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +50,305 @@
 		"prefix":"incmultigraph",
 		"body":[
 			"\\incmultigraph[${3:options%keyvals}][${4:graphics options}]{${1:file name pattern}}{${2:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"n":{
+		"prefix":"n",
+		"body":[
+			"\\n"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ni":{
+		"prefix":"ni",
+		"body":[
+			"\\ni"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nn":{
+		"prefix":"nn",
+		"body":[
+			"\\nn"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nt":{
+		"prefix":"nt",
+		"body":[
+			"\\nt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrset{}":{
+		"prefix":"igrset",
+		"body":[
+			"\\igrset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrGetPageSize":{
+		"prefix":"igrGetPageSize",
+		"body":[
+			"\\igrGetPageSize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrPageWidth":{
+		"prefix":"igrPageWidth",
+		"body":[
+			"\\igrPageWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrPageHeight":{
+		"prefix":"igrPageHeight",
+		"body":[
+			"\\igrPageHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrSetPageSize{}{}":{
+		"prefix":"igrSetPageSize",
+		"body":[
+			"\\igrSetPageSize{${1:width}}{${2:height}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrGetLastPage{}":{
+		"prefix":"igrGetLastPage",
+		"body":[
+			"\\igrGetLastPage{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrLastPage":{
+		"prefix":"igrLastPage",
+		"body":[
+			"\\igrLastPage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igfpage{}":{
+		"prefix":"igfpage",
+		"body":[
+			"\\igfpage{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrcenter{}":{
+		"prefix":"igrcenter",
+		"body":[
+			"\\igrcenter{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrcenterfit{}{}{}":{
+		"prefix":"igrcenterfit",
+		"body":[
+			"\\igrcenterfit{${1:width}}{${2:height}}{${3:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrtargetset{}":{
+		"prefix":"igrtargetset",
+		"body":[
+			"\\igrtargetset{${1:hyperref anchor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theigrpage":{
+		"prefix":"theigrpage",
+		"body":[
+			"\\theigrpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrpagestyle":{
+		"prefix":"igrpagestyle",
+		"body":[
+			"\\igrpagestyle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrmatchvalue":{
+		"prefix":"igrmatchvalue",
+		"body":[
+			"\\igrmatchvalue"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igfboxset{}":{
+		"prefix":"igfboxset",
+		"body":[
+			"\\igfboxset{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrboxcenter":{
+		"prefix":"igrboxcenter",
+		"body":[
+			"\\igrboxcenter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrboxtikz":{
+		"prefix":"igrboxtikz",
+		"body":[
+			"\\igrboxtikz"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrboxtikzpage":{
+		"prefix":"igrboxtikzpage",
+		"body":[
+			"\\igrboxtikzpage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrboxtikzcenter":{
+		"prefix":"igrboxtikzcenter",
+		"body":[
+			"\\igrboxtikzcenter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrbox":{
+		"prefix":"igrbox",
+		"body":[
+			"\\igrbox"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrAutoTarget":{
+		"prefix":"igrAutoTarget",
+		"body":[
+			"\\igrAutoTarget"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrBoxWidth":{
+		"prefix":"igrBoxWidth",
+		"body":[
+			"\\igrBoxWidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrBoxHeight":{
+		"prefix":"igrBoxHeight",
+		"body":[
+			"\\igrBoxHeight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrBoxht":{
+		"prefix":"igrBoxht",
+		"body":[
+			"\\igrBoxht"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrBoxdp":{
+		"prefix":"igrBoxdp",
+		"body":[
+			"\\igrBoxdp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrsetmatchvalue{}{}":{
+		"prefix":"igrsetmatchvalue",
+		"body":[
+			"\\igrsetmatchvalue{${1:key%plain}}{${2:value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrsetmatches{}":{
+		"prefix":"igrsetmatches",
+		"body":[
+			"\\igrsetmatches{${1:list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrifmatch{}{}{}":{
+		"prefix":"igrifmatch",
+		"body":[
+			"\\igrifmatch{${1:key%plain}}{${2:then}}{${3:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"igrmakezerofill{}{}":{
+		"prefix":"igrmakezerofill",
+		"body":[
+			"\\igrmakezerofill{${1:macro}}{${2:digits}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -319,16 +358,18 @@
 			"\\begin{inctext}",
 				"\t$1",
 			"\\end{inctext}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"inctext":{
+	"inctext[]":{
 		"prefix":"inctext",
 		"body":[
 			"\\begin{inctext}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{inctext}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

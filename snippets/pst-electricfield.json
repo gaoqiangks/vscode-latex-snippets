@@ -5,15 +5,8 @@
 		"prefix":"psElectricfield",
 		"body":[
 			"\\psElectricfield"
-		]
-	},
-
-
-	"psEquipotential()()":{
-		"prefix":"psEquipotential",
-		"body":[
-			"\\psEquipotential(${1:x1},${2:y1})(${3:x2},${4:y2})"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"psElectricfield",
 		"body":[
 			"\\psElectricfield[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psEquipotential()()":{
+		"prefix":"psEquipotential",
+		"body":[
+			"\\psEquipotential(${1:x1},${2:y1})(${3:x2},${4:y2})"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +32,7 @@
 		"prefix":"psEquipotential",
 		"body":[
 			"\\psEquipotential[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

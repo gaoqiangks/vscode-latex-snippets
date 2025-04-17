@@ -5,7 +5,8 @@
 		"prefix":"QueryWorkingDirectory",
 		"body":[
 			"\\QueryWorkingDirectory{${1:result cmd%cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,15 +14,8 @@
 		"prefix":"QueryFiles",
 		"body":[
 			"\\QueryFiles{${1:spec}}{${2:function}}"
-		]
-	},
-
-
-	"QueryFilesTF{}{}{}{}":{
-		"prefix":"QueryFilesTF",
-		"body":[
-			"\\QueryFilesTF{${1:spec}}{${2:function}}{${3:pre code}}{${4:empty list code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +23,17 @@
 		"prefix":"QueryFiles",
 		"body":[
 			"\\QueryFiles[${3:options%keyvals}]{${1:spec}}{${2:function}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"QueryFilesTF{}{}{}{}":{
+		"prefix":"QueryFilesTF",
+		"body":[
+			"\\QueryFilesTF{${1:spec}}{${2:function}}{${3:pre code}}{${4:empty list code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +41,7 @@
 		"prefix":"QueryFilesTF",
 		"body":[
 			"\\QueryFilesTF[${5:options%keyvals}]{${1:spec}}{${2:function}}{${3:pre code}}{${4:empty list code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

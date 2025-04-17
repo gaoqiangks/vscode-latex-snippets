@@ -1,11 +1,21 @@
 {
 
 
+	"pstextpath[](){}{}":{
+		"prefix":"pstextpath",
+		"body":[
+			"\\pstextpath[${3:pos}](${4:x},${5:y}){${1:graphics object}}{${2:text}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"pstextpath(){}{}":{
 		"prefix":"pstextpath",
 		"body":[
 			"\\pstextpath(${3:x},${4:y}){${1:graphics object}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,103 +23,8 @@
 		"prefix":"pscharpath",
 		"body":[
 			"\\pscharpath{${1:text}}"
-		]
-	},
-
-
-	"pscharclip{}":{
-		"prefix":"pscharclip",
-		"body":[
-			"\\pscharclip{${1:text}}"
-		]
-	},
-
-
-	"endpscharclip":{
-		"prefix":"endpscharclip",
-		"body":[
-			"\\endpscharclip"
-		]
-	},
-
-
-	"psCircleText{}":{
-		"prefix":"psCircleText",
-		"body":[
-			"\\psCircleText{${1:text}}"
-		]
-	},
-
-
-	"psCircleText(){}":{
-		"prefix":"psCircleText",
-		"body":[
-			"\\psCircleText(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"psWarp{}":{
-		"prefix":"psWarp",
-		"body":[
-			"\\psWarp{${1:text}}"
-		]
-	},
-
-
-	"psWarp(){}":{
-		"prefix":"psWarp",
-		"body":[
-			"\\psWarp(${2:x},${3:y}){${1:text}}"
-		]
-	},
-
-
-	"TPoffset":{
-		"prefix":"TPoffset",
-		"body":[
-			"\\TPoffset"
-		]
-	},
-
-
-	"pscharpath*{}":{
-		"prefix":"*pscharpath",
-		"body":[
-			"\\pscharpath*{${1:text}}"
-		]
-	},
-
-
-	"pscharpath*[]{}":{
-		"prefix":"*pscharpath",
-		"body":[
-			"\\pscharpath*[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"pscharclip*{}":{
-		"prefix":"*pscharclip",
-		"body":[
-			"\\pscharclip*{${1:text}}"
-		]
-	},
-
-
-	"pscharclip*[]{}":{
-		"prefix":"*pscharclip",
-		"body":[
-			"\\pscharclip*[${2:options%keyvals}]{${1:text}}"
-		]
-	},
-
-
-	"pstextpath[](){}{}":{
-		"prefix":"pstextpath",
-		"body":[
-			"\\pstextpath[${3:pos}](${4:x},${5:y}){${1:graphics object}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +32,35 @@
 		"prefix":"pscharpath",
 		"body":[
 			"\\pscharpath[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pscharpath*{}":{
+		"prefix":"*pscharpath",
+		"body":[
+			"\\pscharpath*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharpath*[]{}":{
+		"prefix":"*pscharpath",
+		"body":[
+			"\\pscharpath*[${2:options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharclip{}":{
+		"prefix":"pscharclip",
+		"body":[
+			"\\pscharclip{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +68,44 @@
 		"prefix":"pscharclip",
 		"body":[
 			"\\pscharclip[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pscharclip*{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharclip*[]{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\pscharclip*[${2:options%keyvals}]{${1:text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"endpscharclip":{
+		"prefix":"endpscharclip",
+		"body":[
+			"\\endpscharclip"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psCircleText{}":{
+		"prefix":"psCircleText",
+		"body":[
+			"\\psCircleText{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +113,17 @@
 		"prefix":"psCircleText",
 		"body":[
 			"\\psCircleText[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psCircleText(){}":{
+		"prefix":"psCircleText",
+		"body":[
+			"\\psCircleText(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +131,17 @@
 		"prefix":"psCircleText",
 		"body":[
 			"\\psCircleText[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psWarp{}":{
+		"prefix":"psWarp",
+		"body":[
+			"\\psWarp{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +149,17 @@
 		"prefix":"psWarp",
 		"body":[
 			"\\psWarp[${2:options%keyvals}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psWarp(){}":{
+		"prefix":"psWarp",
+		"body":[
+			"\\psWarp(${2:x},${3:y}){${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,46 +167,60 @@
 		"prefix":"psWarp",
 		"body":[
 			"\\psWarp[${2:options%keyvals}](${3:x},${4:y}){${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"pscharclip":{
+	"TPoffset":{
+		"prefix":"TPoffset",
+		"body":[
+			"\\TPoffset"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pscharclip{}":{
 		"prefix":"pscharclip",
 		"body":[
 			"\\begin{pscharclip}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{pscharclip}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"pscharclip*":{
-		"prefix":"pscharclip",
-		"body":[
-			"\\begin{pscharclip*}",
-				"\t$1",
-			"\\end{pscharclip*}"
-		]
-	},
-
-
-	"pscharclip":{
+	"pscharclip[]{}":{
 		"prefix":"pscharclip",
 		"body":[
 			"\\begin{pscharclip}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:text}}",
 			"\\end{pscharclip}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"pscharclip*":{
-		"prefix":"pscharclip",
+	"pscharclip*{}":{
+		"prefix":"*pscharclip",
 		"body":[
 			"\\begin{pscharclip*}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{pscharclip*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pscharclip*[]{}":{
+		"prefix":"*pscharclip",
+		"body":[
+			"\\begin{pscharclip*}",
+				"\t[${2:options%keyvals}]{${1:text}}",
+			"\\end{pscharclip*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

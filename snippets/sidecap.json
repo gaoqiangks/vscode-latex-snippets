@@ -5,7 +5,8 @@
 		"prefix":"sidecaptionsep",
 		"body":[
 			"\\sidecaptionsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"sidecaptionrelwidth",
 		"body":[
 			"\\sidecaptionrelwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"sidecaptionvpos",
 		"body":[
 			"\\sidecaptionvpos{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -31,7 +34,30 @@
 			"\\begin{SCtable}",
 				"\t$1",
 			"\\end{SCtable}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"SCtable[]":{
+		"prefix":"SCtable",
+		"body":[
+			"\\begin{SCtable}",
+				"\t[${1:rel-width}]",
+			"\\end{SCtable}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SCtable[][]":{
+		"prefix":"SCtable",
+		"body":[
+			"\\begin{SCtable}",
+				"\t[${1:rel-width}][${2:float}]",
+			"\\end{SCtable}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -41,17 +67,30 @@
 			"\\begin{SCfigure}",
 				"\t$1",
 			"\\end{SCfigure}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"wide":{
-		"prefix":"wide",
+	"SCfigure[]":{
+		"prefix":"SCfigure",
 		"body":[
-			"\\begin{wide}",
-				"\t$1",
-			"\\end{wide}"
-		]
+			"\\begin{SCfigure}",
+				"\t[${1:rel-width}]",
+			"\\end{SCfigure}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SCfigure[][]":{
+		"prefix":"SCfigure",
+		"body":[
+			"\\begin{SCfigure}",
+				"\t[${1:rel-width}][${2:float}]",
+			"\\end{SCfigure}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +100,30 @@
 			"\\begin{SCtable*}",
 				"\t$1",
 			"\\end{SCtable*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SCtable*[]":{
+		"prefix":"*SCtable",
+		"body":[
+			"\\begin{SCtable*}",
+				"\t[${1:rel-width}]",
+			"\\end{SCtable*}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SCtable*[][]":{
+		"prefix":"*SCtable",
+		"body":[
+			"\\begin{SCtable*}",
+				"\t[${1:rel-width}][${2:float}]",
+			"\\end{SCtable*}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -71,86 +133,40 @@
 			"\\begin{SCfigure*}",
 				"\t$1",
 			"\\end{SCfigure*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"SCtable":{
-		"prefix":"SCtable",
-		"body":[
-			"\\begin{SCtable}",
-				"\t$1",
-			"\\end{SCtable}"
-		]
-	},
-
-
-	"SCtable":{
-		"prefix":"SCtable",
-		"body":[
-			"\\begin{SCtable}",
-				"\t$1",
-			"\\end{SCtable}"
-		]
-	},
-
-
-	"SCfigure":{
-		"prefix":"SCfigure",
-		"body":[
-			"\\begin{SCfigure}",
-				"\t$1",
-			"\\end{SCfigure}"
-		]
-	},
-
-
-	"SCfigure":{
-		"prefix":"SCfigure",
-		"body":[
-			"\\begin{SCfigure}",
-				"\t$1",
-			"\\end{SCfigure}"
-		]
-	},
-
-
-	"SCtable*":{
-		"prefix":"SCtable",
-		"body":[
-			"\\begin{SCtable*}",
-				"\t$1",
-			"\\end{SCtable*}"
-		]
-	},
-
-
-	"SCtable*":{
-		"prefix":"SCtable",
-		"body":[
-			"\\begin{SCtable*}",
-				"\t$1",
-			"\\end{SCtable*}"
-		]
-	},
-
-
-	"SCfigure*":{
-		"prefix":"SCfigure",
+	"SCfigure*[]":{
+		"prefix":"*SCfigure",
 		"body":[
 			"\\begin{SCfigure*}",
-				"\t$1",
+				"\t[${1:rel-width}]",
 			"\\end{SCfigure*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"SCfigure*":{
-		"prefix":"SCfigure",
+	"SCfigure*[][]":{
+		"prefix":"*SCfigure",
 		"body":[
 			"\\begin{SCfigure*}",
-				"\t$1",
+				"\t[${1:rel-width}][${2:float}]",
 			"\\end{SCfigure*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"wide":{
+		"prefix":"wide",
+		"body":[
+			"\\begin{wide}",
+				"\t$1",
+			"\\end{wide}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

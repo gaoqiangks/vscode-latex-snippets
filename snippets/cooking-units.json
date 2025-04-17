@@ -5,215 +5,8 @@
 		"prefix":"cunum",
 		"body":[
 			"\\cunum{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"cunum<label>{}{}":{
-		"prefix":"cunum<label>",
-		"body":[
-			"\\cunum<label>{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"cutext{}{}":{
-		"prefix":"cutext",
-		"body":[
-			"\\cutext{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"cutext<label>{}{}":{
-		"prefix":"cutext<label>",
-		"body":[
-			"\\cutext<label>{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"Cutext{}{}":{
-		"prefix":"Cutext",
-		"body":[
-			"\\Cutext{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"Cutext<label>{}{}":{
-		"prefix":"Cutext<label>",
-		"body":[
-			"\\Cutext<label>{${1:amount}}{${2:unit}}"
-		]
-	},
-
-
-	"cuam{}":{
-		"prefix":"cuam",
-		"body":[
-			"\\cuam{${1:amount}}"
-		]
-	},
-
-
-	"cuam<label>{}":{
-		"prefix":"cuam<label>",
-		"body":[
-			"\\cuam<label>{${1:amount}}"
-		]
-	},
-
-
-	"cusetup{}":{
-		"prefix":"cusetup",
-		"body":[
-			"\\cusetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"cudeclareunitgroup{}{}":{
-		"prefix":"cudeclareunitgroup",
-		"body":[
-			"\\cudeclareunitgroup{${1:group name}}{${2:unit list}}"
-		]
-	},
-
-
-	"cuaddtounitgroup{}{}":{
-		"prefix":"cuaddtounitgroup",
-		"body":[
-			"\\cuaddtounitgroup{${1:group name}}{${2:unit list}}"
-		]
-	},
-
-
-	"culabel{}{}":{
-		"prefix":"culabel",
-		"body":[
-			"\\culabel{${1:label}}{${2:number of persons}}"
-		]
-	},
-
-
-	"curef{}":{
-		"prefix":"curef",
-		"body":[
-			"\\curef{${1:label}}"
-		]
-	},
-
-
-	"declarecookingunit{}":{
-		"prefix":"declarecookingunit",
-		"body":[
-			"\\declarecookingunit{${1:unit}}"
-		]
-	},
-
-
-	"newcookingunit{}":{
-		"prefix":"newcookingunit",
-		"body":[
-			"\\newcookingunit{${1:unit}}"
-		]
-	},
-
-
-	"providecookingunit{}":{
-		"prefix":"providecookingunit",
-		"body":[
-			"\\providecookingunit{${1:unit}}"
-		]
-	},
-
-
-	"declarecookingderivatives{}{}{}{}":{
-		"prefix":"declarecookingderivatives",
-		"body":[
-			"\\declarecookingderivatives{${1:unit list}}{${2:unit}}{${3:relation}}{${4:unit symbol}}"
-		]
-	},
-
-
-	"cudefinekeychain{}":{
-		"prefix":"cudefinekeychain",
-		"body":[
-			"\\cudefinekeychain{${1:key specs}}"
-		]
-	},
-
-
-	"cudefinesinglekey{}{}":{
-		"prefix":"cudefinesinglekey",
-		"body":[
-			"\\cudefinesinglekey{${1:key%plain}}{${2:key specs}}"
-		]
-	},
-
-
-	"cuaddtokeychain{}":{
-		"prefix":"cuaddtokeychain",
-		"body":[
-			"\\cuaddtokeychain{${1:key specs}}"
-		]
-	},
-
-
-	"cuaddsinglekeys{}{}":{
-		"prefix":"cuaddsinglekeys",
-		"body":[
-			"\\cuaddsinglekeys{${1:key%plain}}{${2:key specs}}"
-		]
-	},
-
-
-	"cudefinename{}{}":{
-		"prefix":"cudefinename",
-		"body":[
-			"\\cudefinename{${1:language}}{${2:specs}}"
-		]
-	},
-
-
-	"cudefinesymbol{}{}":{
-		"prefix":"cudefinesymbol",
-		"body":[
-			"\\cudefinesymbol{${1:language}}{${2:specs}}"
-		]
-	},
-
-
-	"cudefinephrase{}{}":{
-		"prefix":"cudefinephrase",
-		"body":[
-			"\\cudefinephrase{${1:language}}{${2:specs}}"
-		]
-	},
-
-
-	"cusetoptionfor{}{}":{
-		"prefix":"cusetoptionfor",
-		"body":[
-			"\\cusetoptionfor{${1:unit list}}{${2:options}}"
-		]
-	},
-
-
-	"cuaddoptionfor{}{}":{
-		"prefix":"cuaddoptionfor",
-		"body":[
-			"\\cuaddoptionfor{${1:unit list}}{${2:options}}"
-		]
-	},
-
-
-	"cuclearoptionfor{}":{
-		"prefix":"cuclearoptionfor",
-		"body":[
-			"\\cuclearoptionfor{${1:unit list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +14,17 @@
 		"prefix":"cunum",
 		"body":[
 			"\\cunum[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cunum<label>{}{}":{
+		"prefix":"cunum<label>",
+		"body":[
+			"\\cunum<label>{${1:amount}}{${2:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +32,8 @@
 		"prefix":"cunum<label>",
 		"body":[
 			"\\cunum<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -237,7 +41,17 @@
 		"prefix":"cunum<label>",
 		"body":[
 			"\\cunum<label>[${3:options%keyvals}]{${1:amount}}[${4:space%l}]{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cutext{}{}":{
+		"prefix":"cutext",
+		"body":[
+			"\\cutext{${1:amount}}{${2:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +59,17 @@
 		"prefix":"cutext",
 		"body":[
 			"\\cutext[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cutext<label>{}{}":{
+		"prefix":"cutext<label>",
+		"body":[
+			"\\cutext<label>{${1:amount}}{${2:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +77,17 @@
 		"prefix":"cutext<label>",
 		"body":[
 			"\\cutext<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cutext{}{}":{
+		"prefix":"Cutext",
+		"body":[
+			"\\Cutext{${1:amount}}{${2:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +95,17 @@
 		"prefix":"Cutext",
 		"body":[
 			"\\Cutext[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Cutext<label>{}{}":{
+		"prefix":"Cutext<label>",
+		"body":[
+			"\\Cutext<label>{${1:amount}}{${2:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +113,17 @@
 		"prefix":"Cutext<label>",
 		"body":[
 			"\\Cutext<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cuam{}":{
+		"prefix":"cuam",
+		"body":[
+			"\\cuam{${1:amount}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +131,17 @@
 		"prefix":"cuam",
 		"body":[
 			"\\cuam[${2:options%keyvals}]{${1:amount}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cuam<label>{}":{
+		"prefix":"cuam<label>",
+		"body":[
+			"\\cuam<label>{${1:amount}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +149,62 @@
 		"prefix":"cuam<label>",
 		"body":[
 			"\\cuam<label>[${2:options%keyvals}]{${1:amount}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cusetup{}":{
+		"prefix":"cusetup",
+		"body":[
+			"\\cusetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudeclareunitgroup{}{}":{
+		"prefix":"cudeclareunitgroup",
+		"body":[
+			"\\cudeclareunitgroup{${1:group name}}{${2:unit list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cuaddtounitgroup{}{}":{
+		"prefix":"cuaddtounitgroup",
+		"body":[
+			"\\cuaddtounitgroup{${1:group name}}{${2:unit list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"culabel{}{}":{
+		"prefix":"culabel",
+		"body":[
+			"\\culabel{${1:label}}{${2:number of persons}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curef{}":{
+		"prefix":"curef",
+		"body":[
+			"\\curef{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"declarecookingunit{}":{
+		"prefix":"declarecookingunit",
+		"body":[
+			"\\declarecookingunit{${1:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +212,17 @@
 		"prefix":"declarecookingunit",
 		"body":[
 			"\\declarecookingunit[${2:options%keyvals}]{${1:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newcookingunit{}":{
+		"prefix":"newcookingunit",
+		"body":[
+			"\\newcookingunit{${1:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +230,17 @@
 		"prefix":"newcookingunit",
 		"body":[
 			"\\newcookingunit[${2:options%keyvals}]{${1:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"providecookingunit{}":{
+		"prefix":"providecookingunit",
+		"body":[
+			"\\providecookingunit{${1:unit}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,6 +248,106 @@
 		"prefix":"providecookingunit",
 		"body":[
 			"\\providecookingunit[${2:options%keyvals}]{${1:unit}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"declarecookingderivatives{}{}{}{}":{
+		"prefix":"declarecookingderivatives",
+		"body":[
+			"\\declarecookingderivatives{${1:unit list}}{${2:unit}}{${3:relation}}{${4:unit symbol}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudefinekeychain{}":{
+		"prefix":"cudefinekeychain",
+		"body":[
+			"\\cudefinekeychain{${1:key specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudefinesinglekey{}{}":{
+		"prefix":"cudefinesinglekey",
+		"body":[
+			"\\cudefinesinglekey{${1:key%plain}}{${2:key specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cuaddtokeychain{}":{
+		"prefix":"cuaddtokeychain",
+		"body":[
+			"\\cuaddtokeychain{${1:key specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cuaddsinglekeys{}{}":{
+		"prefix":"cuaddsinglekeys",
+		"body":[
+			"\\cuaddsinglekeys{${1:key%plain}}{${2:key specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudefinename{}{}":{
+		"prefix":"cudefinename",
+		"body":[
+			"\\cudefinename{${1:language}}{${2:specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudefinesymbol{}{}":{
+		"prefix":"cudefinesymbol",
+		"body":[
+			"\\cudefinesymbol{${1:language}}{${2:specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cudefinephrase{}{}":{
+		"prefix":"cudefinephrase",
+		"body":[
+			"\\cudefinephrase{${1:language}}{${2:specs}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cusetoptionfor{}{}":{
+		"prefix":"cusetoptionfor",
+		"body":[
+			"\\cusetoptionfor{${1:unit list}}{${2:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cuaddoptionfor{}{}":{
+		"prefix":"cuaddoptionfor",
+		"body":[
+			"\\cuaddoptionfor{${1:unit list}}{${2:options}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cuclearoptionfor{}":{
+		"prefix":"cuclearoptionfor",
+		"body":[
+			"\\cuclearoptionfor{${1:unit list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

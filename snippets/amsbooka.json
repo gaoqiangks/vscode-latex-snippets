@@ -5,7 +5,8 @@
 		"prefix":"barefootnote",
 		"body":[
 			"\\barefootnote{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,16 +14,18 @@
 		"prefix":"partauthor",
 		"body":[
 			"\\partauthor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"inchapterbibliography":{
+	"inchapterbibliography{}":{
 		"prefix":"inchapterbibliography",
 		"body":[
 			"\\begin{inchapterbibliography}",
-				"\t$1",
+				"\t{${1:widest label}}",
 			"\\end{inchapterbibliography}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

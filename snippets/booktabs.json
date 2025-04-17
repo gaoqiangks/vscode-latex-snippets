@@ -5,143 +5,8 @@
 		"prefix":"toprule",
 		"body":[
 			"\\toprule"
-		]
-	},
-
-
-	"midrule":{
-		"prefix":"midrule",
-		"body":[
-			"\\midrule"
-		]
-	},
-
-
-	"bottomrule":{
-		"prefix":"bottomrule",
-		"body":[
-			"\\bottomrule"
-		]
-	},
-
-
-	"cmidrule{}":{
-		"prefix":"cmidrule",
-		"body":[
-			"\\cmidrule{${1:a-b}}"
-		]
-	},
-
-
-	"cmidrule(){}":{
-		"prefix":"cmidrule",
-		"body":[
-			"\\cmidrule(${2:trim}){${1:a-b}}"
-		]
-	},
-
-
-	"morecmidrules":{
-		"prefix":"morecmidrules",
-		"body":[
-			"\\morecmidrules"
-		]
-	},
-
-
-	"specialrule{}{}{}":{
-		"prefix":"specialrule",
-		"body":[
-			"\\specialrule{${1:line width%l}}{${2:above space}}{${3:below space}}"
-		]
-	},
-
-
-	"addlinespace":{
-		"prefix":"addlinespace",
-		"body":[
-			"\\addlinespace"
-		]
-	},
-
-
-	"heavyrulewidth":{
-		"prefix":"heavyrulewidth",
-		"body":[
-			"\\heavyrulewidth"
-		]
-	},
-
-
-	"lightrulewidth":{
-		"prefix":"lightrulewidth",
-		"body":[
-			"\\lightrulewidth"
-		]
-	},
-
-
-	"cmidrulewidth":{
-		"prefix":"cmidrulewidth",
-		"body":[
-			"\\cmidrulewidth"
-		]
-	},
-
-
-	"belowrulesep":{
-		"prefix":"belowrulesep",
-		"body":[
-			"\\belowrulesep"
-		]
-	},
-
-
-	"belowbottomsep":{
-		"prefix":"belowbottomsep",
-		"body":[
-			"\\belowbottomsep"
-		]
-	},
-
-
-	"aboverulesep":{
-		"prefix":"aboverulesep",
-		"body":[
-			"\\aboverulesep"
-		]
-	},
-
-
-	"abovetopsep":{
-		"prefix":"abovetopsep",
-		"body":[
-			"\\abovetopsep"
-		]
-	},
-
-
-	"cmidrulesep":{
-		"prefix":"cmidrulesep",
-		"body":[
-			"\\cmidrulesep"
-		]
-	},
-
-
-	"cmidrulekern":{
-		"prefix":"cmidrulekern",
-		"body":[
-			"\\cmidrulekern"
-		]
-	},
-
-
-	"defaultaddspace":{
-		"prefix":"defaultaddspace",
-		"body":[
-			"\\defaultaddspace"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,17 @@
 		"prefix":"toprule",
 		"body":[
 			"\\toprule[${1:line width%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"midrule":{
+		"prefix":"midrule",
+		"body":[
+			"\\midrule"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +32,17 @@
 		"prefix":"midrule",
 		"body":[
 			"\\midrule[${1:line width%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bottomrule":{
+		"prefix":"bottomrule",
+		"body":[
+			"\\bottomrule"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +50,26 @@
 		"prefix":"bottomrule",
 		"body":[
 			"\\bottomrule[${1:line width%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cmidrule{}":{
+		"prefix":"cmidrule",
+		"body":[
+			"\\cmidrule{${1:a-b}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrule(){}":{
+		"prefix":"cmidrule",
+		"body":[
+			"\\cmidrule(${2:trim}){${1:a-b}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +77,35 @@
 		"prefix":"cmidrule",
 		"body":[
 			"\\cmidrule[${2:line width%l}](${3:trim}){${1:a-b}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"morecmidrules":{
+		"prefix":"morecmidrules",
+		"body":[
+			"\\morecmidrules"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specialrule{}{}{}":{
+		"prefix":"specialrule",
+		"body":[
+			"\\specialrule{${1:line width%l}}{${2:above space}}{${3:below space}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"addlinespace":{
+		"prefix":"addlinespace",
+		"body":[
+			"\\addlinespace"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,6 +113,97 @@
 		"prefix":"addlinespace",
 		"body":[
 			"\\addlinespace[${1:vspace}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"heavyrulewidth":{
+		"prefix":"heavyrulewidth",
+		"body":[
+			"\\heavyrulewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lightrulewidth":{
+		"prefix":"lightrulewidth",
+		"body":[
+			"\\lightrulewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrulewidth":{
+		"prefix":"cmidrulewidth",
+		"body":[
+			"\\cmidrulewidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"belowrulesep":{
+		"prefix":"belowrulesep",
+		"body":[
+			"\\belowrulesep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"belowbottomsep":{
+		"prefix":"belowbottomsep",
+		"body":[
+			"\\belowbottomsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"aboverulesep":{
+		"prefix":"aboverulesep",
+		"body":[
+			"\\aboverulesep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"abovetopsep":{
+		"prefix":"abovetopsep",
+		"body":[
+			"\\abovetopsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrulesep":{
+		"prefix":"cmidrulesep",
+		"body":[
+			"\\cmidrulesep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"cmidrulekern":{
+		"prefix":"cmidrulekern",
+		"body":[
+			"\\cmidrulekern"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defaultaddspace":{
+		"prefix":"defaultaddspace",
+		"body":[
+			"\\defaultaddspace"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

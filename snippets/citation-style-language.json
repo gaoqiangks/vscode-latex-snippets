@@ -5,7 +5,8 @@
 		"prefix":"cslsetup",
 		"body":[
 			"\\cslsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,87 +14,8 @@
 		"prefix":"addbibresource",
 		"body":[
 			"\\addbibresource{${1:bib file}}"
-		]
-	},
-
-
-	"citep{}":{
-		"prefix":"citep",
-		"body":[
-			"\\citep{${1:keylist}}"
-		]
-	},
-
-
-	"citet{}":{
-		"prefix":"citet",
-		"body":[
-			"\\citet{${1:keylist}}"
-		]
-	},
-
-
-	"footcite{}":{
-		"prefix":"footcite",
-		"body":[
-			"\\footcite{${1:keylist}}"
-		]
-	},
-
-
-	"citeauthor{}":{
-		"prefix":"citeauthor",
-		"body":[
-			"\\citeauthor{${1:keylist}}"
-		]
-	},
-
-
-	"citeyearpar{}":{
-		"prefix":"citeyearpar",
-		"body":[
-			"\\citeyearpar{${1:keylist}}"
-		]
-	},
-
-
-	"fullcite{}":{
-		"prefix":"fullcite",
-		"body":[
-			"\\fullcite{${1:keylist}}"
-		]
-	},
-
-
-	"printbibliography":{
-		"prefix":"printbibliography",
-		"body":[
-			"\\printbibliography"
-		]
-	},
-
-
-	"newrefsection":{
-		"prefix":"newrefsection",
-		"body":[
-			"\\newrefsection"
-		]
-	},
-
-
-	"endrefsection":{
-		"prefix":"endrefsection",
-		"body":[
-			"\\endrefsection"
-		]
-	},
-
-
-	"defbibheading{}{}":{
-		"prefix":"defbibheading",
-		"body":[
-			"\\defbibheading{${1:name}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,39 +23,8 @@
 		"prefix":"*cite",
 		"body":[
 			"\\cite*[${2:options%keyvals}]{${1:keylist}}"
-		]
-	},
-
-
-	"parencite*{}":{
-		"prefix":"*parencite",
-		"body":[
-			"\\parencite*{${1:keylist}}"
-		]
-	},
-
-
-	"parencite*[]{}":{
-		"prefix":"*parencite",
-		"body":[
-			"\\parencite*[${2:options%keyvals}]{${1:keylist}}"
-		]
-	},
-
-
-	"citeyearpar*{}":{
-		"prefix":"*citeyearpar",
-		"body":[
-			"\\citeyearpar*{${1:keylist}}"
-		]
-	},
-
-
-	"citeyearpar*[]{}":{
-		"prefix":"*citeyearpar",
-		"body":[
-			"\\citeyearpar*[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -141,7 +32,35 @@
 		"prefix":"parencite",
 		"body":[
 			"\\parencite[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"parencite*{}":{
+		"prefix":"*parencite",
+		"body":[
+			"\\parencite*{${1:keylist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"parencite*[]{}":{
+		"prefix":"*parencite",
+		"body":[
+			"\\parencite*[${2:options%keyvals}]{${1:keylist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citep{}":{
+		"prefix":"citep",
+		"body":[
+			"\\citep{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +68,8 @@
 		"prefix":"citep",
 		"body":[
 			"\\citep[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +77,17 @@
 		"prefix":"textcite",
 		"body":[
 			"\\textcite[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citet{}":{
+		"prefix":"citet",
+		"body":[
+			"\\citet{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +95,17 @@
 		"prefix":"citet",
 		"body":[
 			"\\citet[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"footcite{}":{
+		"prefix":"footcite",
+		"body":[
+			"\\footcite{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +113,26 @@
 		"prefix":"footcite",
 		"body":[
 			"\\footcite[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeauthor{}":{
+		"prefix":"citeauthor",
+		"body":[
+			"\\citeauthor{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citeyearpar{}":{
+		"prefix":"citeyearpar",
+		"body":[
+			"\\citeyearpar{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +140,35 @@
 		"prefix":"citeyearpar",
 		"body":[
 			"\\citeyearpar[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"citeyearpar*{}":{
+		"prefix":"*citeyearpar",
+		"body":[
+			"\\citeyearpar*{${1:keylist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"citeyearpar*[]{}":{
+		"prefix":"*citeyearpar",
+		"body":[
+			"\\citeyearpar*[${2:options%keyvals}]{${1:keylist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fullcite{}":{
+		"prefix":"fullcite",
+		"body":[
+			"\\fullcite{${1:keylist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +176,17 @@
 		"prefix":"fullcite",
 		"body":[
 			"\\fullcite[${2:options%keyvals}]{${1:keylist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printbibliography":{
+		"prefix":"printbibliography",
+		"body":[
+			"\\printbibliography"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +194,17 @@
 		"prefix":"printbibliography",
 		"body":[
 			"\\printbibliography[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newrefsection":{
+		"prefix":"newrefsection",
+		"body":[
+			"\\newrefsection"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +212,26 @@
 		"prefix":"newrefsection",
 		"body":[
 			"\\newrefsection[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"endrefsection":{
+		"prefix":"endrefsection",
+		"body":[
+			"\\endrefsection"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"defbibheading{}{}":{
+		"prefix":"defbibheading",
+		"body":[
+			"\\defbibheading{${1:name}}{${2:code}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +239,8 @@
 		"prefix":"defbibheading",
 		"body":[
 			"\\defbibheading{${1:name}}[${3:title%text}]{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -223,16 +250,18 @@
 			"\\begin{refsection}",
 				"\t$1",
 			"\\end{refsection}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"refsection":{
+	"refsection[]":{
 		"prefix":"refsection",
 		"body":[
 			"\\begin{refsection}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{refsection}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

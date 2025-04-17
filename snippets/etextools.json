@@ -5,7 +5,8 @@
 		"prefix":"expandaftercmds",
 		"body":[
 			"\\expandaftercmds{${1:code}}{${2:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"expandnext",
 		"body":[
 			"\\expandnext{${1:code}}{${2:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"expandnexttwo",
 		"body":[
 			"\\expandnexttwo{${1:code}}{${2:control sequences}}{${3:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ExpandAftercmds",
 		"body":[
 			"\\ExpandAftercmds{${1:code}}{${2:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"ExpandNext",
 		"body":[
 			"\\ExpandNext{${1:code}}{${2:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"ExpandNextTwo",
 		"body":[
 			"\\ExpandNextTwo{${1:code}}{${2:control sequences}}{${3:control sequences}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"noexpandcs",
 		"body":[
 			"\\noexpandcs{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"noexpandafter",
 		"body":[
 			"\\noexpandafter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"thefontname",
 		"body":[
 			"\\thefontname"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"showcs",
 		"body":[
 			"\\showcs{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"showthecs",
 		"body":[
 			"\\showthecs{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"meaningcs",
 		"body":[
 			"\\meaningcs{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"ifdefcount",
 		"body":[
 			"\\ifdefcount{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"ifdeftoks",
 		"body":[
 			"\\ifdeftoks{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"ifdefskip",
 		"body":[
 			"\\ifdefskip{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"ifdefmuskip",
 		"body":[
 			"\\ifdefmuskip{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"ifdefchar",
 		"body":[
 			"\\ifdefchar{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"ifdefmathchar",
 		"body":[
 			"\\ifdefmathchar{${1:token}}{${2:true}}{${3:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,839 +167,8 @@
 		"prefix":"avoidvoid",
 		"body":[
 			"\\avoidvoid{${1:string}}"
-		]
-	},
-
-
-	"avoidvoidcs{}":{
-		"prefix":"avoidvoidcs",
-		"body":[
-			"\\avoidvoidcs{${1:csname}}"
-		]
-	},
-
-
-	"ifsingletoken{}{}{}{}":{
-		"prefix":"ifsingletoken",
-		"body":[
-			"\\ifsingletoken{${1:token}}{${2:code}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifOneToken{}{}{}":{
-		"prefix":"ifOneToken",
-		"body":[
-			"\\ifOneToken{${1:code}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifsinglechar{}{}{}{}":{
-		"prefix":"ifsinglechar",
-		"body":[
-			"\\ifsinglechar{${1:token}}{${2:string}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifOneChar{}{}{}":{
-		"prefix":"ifOneChar",
-		"body":[
-			"\\ifOneChar{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifOneCharWithBlanks{}{}{}":{
-		"prefix":"ifOneCharWithBlanks",
-		"body":[
-			"\\ifOneCharWithBlanks{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"iffirsttoken{}{}{}{}":{
-		"prefix":"iffirsttoken",
-		"body":[
-			"\\iffirsttoken{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"iffirstchar{}{}{}{}":{
-		"prefix":"iffirstchar",
-		"body":[
-			"\\iffirstchar{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifiscs{}{}{}":{
-		"prefix":"ifiscs",
-		"body":[
-			"\\ifiscs{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"detokenizeChars{}":{
-		"prefix":"detokenizeChars",
-		"body":[
-			"\\detokenizeChars{${1:token list}}"
-		]
-	},
-
-
-	"protectspace{}":{
-		"prefix":"protectspace",
-		"body":[
-			"\\protectspace{${1:code}}"
-		]
-	},
-
-
-	"ifempty{}{}{}":{
-		"prefix":"ifempty",
-		"body":[
-			"\\ifempty{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"xifempty{}{}{}":{
-		"prefix":"xifempty",
-		"body":[
-			"\\xifempty{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifnotempty{}{}{}":{
-		"prefix":"ifnotempty",
-		"body":[
-			"\\ifnotempty{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"xifblank{}{}{}":{
-		"prefix":"xifblank",
-		"body":[
-			"\\xifblank{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifnotblank{}{}{}":{
-		"prefix":"ifnotblank",
-		"body":[
-			"\\ifnotblank{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"deblank{}":{
-		"prefix":"deblank",
-		"body":[
-			"\\deblank{${1:string}}"
-		]
-	},
-
-
-	"ifstrcmp{}{}{}{}":{
-		"prefix":"ifstrcmp",
-		"body":[
-			"\\ifstrcmp{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"xifstrequal{}{}{}{}":{
-		"prefix":"xifstrequal",
-		"body":[
-			"\\xifstrequal{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"xifstrcmp{}{}{}{}":{
-		"prefix":"xifstrcmp",
-		"body":[
-			"\\xifstrcmp{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifcharupper{}{}{}":{
-		"prefix":"ifcharupper",
-		"body":[
-			"\\ifcharupper{${1:char}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifcharlower{}{}{}":{
-		"prefix":"ifcharlower",
-		"body":[
-			"\\ifcharlower{${1:char}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifuppercase{}{}{}":{
-		"prefix":"ifuppercase",
-		"body":[
-			"\\ifuppercase{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"iflowercase{}{}{}":{
-		"prefix":"iflowercase",
-		"body":[
-			"\\iflowercase{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifstrmatch{}{}{}{}":{
-		"prefix":"ifstrmatch",
-		"body":[
-			"\\ifstrmatch{${1:pattern}}{${2:string}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifstrdigit{}{}{}":{
-		"prefix":"ifstrdigit",
-		"body":[
-			"\\ifstrdigit{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"ifstrnum{}{}{}":{
-		"prefix":"ifstrnum",
-		"body":[
-			"\\ifstrnum{${1:string}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"DeclareStringFilter{}{}":{
-		"prefix":"DeclareStringFilter",
-		"body":[
-			"\\DeclareStringFilter{${1:cmd}}{${2:string}}"
-		]
-	},
-
-
-	"futuredef{}{}":{
-		"prefix":"futuredef",
-		"body":[
-			"\\futuredef{${1:cmd}}{${2:commands to expand after}}"
-		]
-	},
-
-
-	"AfterGroup{}":{
-		"prefix":"AfterGroup",
-		"body":[
-			"\\AfterGroup{${1:code}}"
-		]
-	},
-
-
-	"AfterAssignment{}":{
-		"prefix":"AfterAssignment",
-		"body":[
-			"\\AfterAssignment{${1:code}}"
-		]
-	},
-
-
-	"naturalloop{}{}":{
-		"prefix":"naturalloop",
-		"body":[
-			"\\naturalloop{${1:number}}{${2:argument}}"
-		]
-	},
-
-
-	"ifintokslist{}{}{}{}":{
-		"prefix":"ifintokslist",
-		"body":[
-			"\\ifintokslist{${1:token}}{${2:token list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"ifincharlist{}{}{}{}":{
-		"prefix":"ifincharlist",
-		"body":[
-			"\\ifincharlist{${1:token}}{${2:token list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"gettokslistindex{}{}":{
-		"prefix":"gettokslistindex",
-		"body":[
-			"\\gettokslistindex{${1:item}}{${2:token list}}"
-		]
-	},
-
-
-	"getcharlistindex{}{}":{
-		"prefix":"getcharlistindex",
-		"body":[
-			"\\getcharlistindex{${1:item}}{${2:token list}}"
-		]
-	},
-
-
-	"gettokslistcount{}":{
-		"prefix":"gettokslistcount",
-		"body":[
-			"\\gettokslistcount{${1:token list}}"
-		]
-	},
-
-
-	"gettokslisttoken{}{}":{
-		"prefix":"gettokslisttoken",
-		"body":[
-			"\\gettokslisttoken{${1:item}}{${2:token list}}"
-		]
-	},
-
-
-	"getcharlistcount{}":{
-		"prefix":"getcharlistcount",
-		"body":[
-			"\\getcharlistcount{${1:token list}}"
-		]
-	},
-
-
-	"getcharlisttoken{}{}":{
-		"prefix":"getcharlisttoken",
-		"body":[
-			"\\getcharlisttoken{${1:item}}{${2:token list}}"
-		]
-	},
-
-
-	"DeclareCmdListParser{}{}":{
-		"prefix":"DeclareCmdListParser",
-		"body":[
-			"\\DeclareCmdListParser{${1:cmd}}{${2:separator}}"
-		]
-	},
-
-
-	"breakloop{}":{
-		"prefix":"breakloop",
-		"body":[
-			"\\breakloop{${1:code}}"
-		]
-	},
-
-
-	"csvloop{}":{
-		"prefix":"csvloop",
-		"body":[
-			"\\csvloop{${1:csv list}}"
-		]
-	},
-
-
-	"listloop{}":{
-		"prefix":"listloop",
-		"body":[
-			"\\listloop{${1:list}}"
-		]
-	},
-
-
-	"toksloop{}":{
-		"prefix":"toksloop",
-		"body":[
-			"\\toksloop{${1:token list}}"
-		]
-	},
-
-
-	"forcsvloop{}":{
-		"prefix":"forcsvloop",
-		"body":[
-			"\\forcsvloop{${1:csv list}}"
-		]
-	},
-
-
-	"fortoksloop{}":{
-		"prefix":"fortoksloop",
-		"body":[
-			"\\fortoksloop{${1:token list}}"
-		]
-	},
-
-
-	"csvlistadd{}{}":{
-		"prefix":"csvlistadd",
-		"body":[
-			"\\csvlistadd{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvlistgadd{}{}":{
-		"prefix":"csvlistgadd",
-		"body":[
-			"\\csvlistgadd{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvlisteadd{}{}":{
-		"prefix":"csvlisteadd",
-		"body":[
-			"\\csvlisteadd{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvlistxadd{}{}":{
-		"prefix":"csvlistxadd",
-		"body":[
-			"\\csvlistxadd{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvtolist{}":{
-		"prefix":"csvtolist",
-		"body":[
-			"\\csvtolist{${1:csv list}}"
-		]
-	},
-
-
-	"tokstolist{}":{
-		"prefix":"tokstolist",
-		"body":[
-			"\\tokstolist{${1:token list}}"
-		]
-	},
-
-
-	"listtocsv{}":{
-		"prefix":"listtocsv",
-		"body":[
-			"\\listtocsv{${1:list}}"
-		]
-	},
-
-
-	"csvtolistadd{}{}":{
-		"prefix":"csvtolistadd",
-		"body":[
-			"\\csvtolistadd{${1:list macro}}{${2:csv list}}"
-		]
-	},
-
-
-	"tokstolistadd{}{}":{
-		"prefix":"tokstolistadd",
-		"body":[
-			"\\tokstolistadd{${1:list macro}}{${2:token list}}"
-		]
-	},
-
-
-	"ifincsvlist{}{}{}{}":{
-		"prefix":"ifincsvlist",
-		"body":[
-			"\\ifincsvlist{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"xifincsvlist{}{}{}{}":{
-		"prefix":"xifincsvlist",
-		"body":[
-			"\\xifincsvlist{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"listdel{}{}":{
-		"prefix":"listdel",
-		"body":[
-			"\\listdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"listgdel{}{}":{
-		"prefix":"listgdel",
-		"body":[
-			"\\listgdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"listedel{}{}":{
-		"prefix":"listedel",
-		"body":[
-			"\\listedel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"listxdel{}{}":{
-		"prefix":"listxdel",
-		"body":[
-			"\\listxdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvdel{}{}":{
-		"prefix":"csvdel",
-		"body":[
-			"\\csvdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvgdel{}{}":{
-		"prefix":"csvgdel",
-		"body":[
-			"\\csvgdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvedel{}{}":{
-		"prefix":"csvedel",
-		"body":[
-			"\\csvedel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"csvxdel{}{}":{
-		"prefix":"csvxdel",
-		"body":[
-			"\\csvxdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"toksdel{}{}":{
-		"prefix":"toksdel",
-		"body":[
-			"\\toksdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"toksgdel{}{}":{
-		"prefix":"toksgdel",
-		"body":[
-			"\\toksgdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"toksedel{}{}":{
-		"prefix":"toksedel",
-		"body":[
-			"\\toksedel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"toksxdel{}{}":{
-		"prefix":"toksxdel",
-		"body":[
-			"\\toksxdel{${1:list macro}}{${2:item}}"
-		]
-	},
-
-
-	"getlistindex{}{}":{
-		"prefix":"getlistindex",
-		"body":[
-			"\\getlistindex{${1:item}}{${2:list macro}}"
-		]
-	},
-
-
-	"getcsvlistindex{}{}":{
-		"prefix":"getcsvlistindex",
-		"body":[
-			"\\getcsvlistindex{${1:item}}{${2:list macro}}"
-		]
-	},
-
-
-	"interval{}{}":{
-		"prefix":"interval",
-		"body":[
-			"\\interval{${1:number}}{${2:number list}}"
-		]
-	},
-
-
-	"locinterplin{}{}{}":{
-		"prefix":"locinterplin",
-		"body":[
-			"\\locinterplin{${1:number}}{${2:sorted number list}}{${3:number list}}"
-		]
-	},
-
-
-	"avoidvoid*{}":{
-		"prefix":"*avoidvoid",
-		"body":[
-			"\\avoidvoid*{${1:string}}"
-		]
-	},
-
-
-	"avoidvoid*[]{}":{
-		"prefix":"*avoidvoid",
-		"body":[
-			"\\avoidvoid*[${2:replacement code}]{${1:string}}"
-		]
-	},
-
-
-	"avoidvoidcs*{}":{
-		"prefix":"*avoidvoidcs",
-		"body":[
-			"\\avoidvoidcs*{${1:csname}}"
-		]
-	},
-
-
-	"avoidvoidcs*[]{}":{
-		"prefix":"*avoidvoidcs",
-		"body":[
-			"\\avoidvoidcs*[${2:replacement code}]{${1:csname}}"
-		]
-	},
-
-
-	"futuredef*{}{}":{
-		"prefix":"*futuredef",
-		"body":[
-			"\\futuredef*{${1:cmd}}{${2:commands to expand after}}"
-		]
-	},
-
-
-	"futuredef*[]{}{}":{
-		"prefix":"*futuredef",
-		"body":[
-			"\\futuredef*[${3:allowed token list}]{${1:cmd}}{${2:commands to expand after}}"
-		]
-	},
-
-
-	"AfterGroup*{}":{
-		"prefix":"*AfterGroup",
-		"body":[
-			"\\AfterGroup*{${1:code}}"
-		]
-	},
-
-
-	"csvloop*{}":{
-		"prefix":"*csvloop",
-		"body":[
-			"\\csvloop*{${1:csv list}}"
-		]
-	},
-
-
-	"csvloop*[]{}":{
-		"prefix":"*csvloop",
-		"body":[
-			"\\csvloop*[${2:auxiliary cmds}]{${1:csv list}}"
-		]
-	},
-
-
-	"listloop*{}":{
-		"prefix":"*listloop",
-		"body":[
-			"\\listloop*{${1:list}}"
-		]
-	},
-
-
-	"listloop*[]{}":{
-		"prefix":"*listloop",
-		"body":[
-			"\\listloop*[${2:auxiliary cmds}]{${1:list}}"
-		]
-	},
-
-
-	"toksloop*{}":{
-		"prefix":"*toksloop",
-		"body":[
-			"\\toksloop*{${1:token list}}"
-		]
-	},
-
-
-	"toksloop*[]{}":{
-		"prefix":"*toksloop",
-		"body":[
-			"\\toksloop*[${2:auxiliary cmds}]{${1:token list}}"
-		]
-	},
-
-
-	"forcsvloop*{}":{
-		"prefix":"*forcsvloop",
-		"body":[
-			"\\forcsvloop*{${1:csv list}}"
-		]
-	},
-
-
-	"forlistloop*{}":{
-		"prefix":"*forlistloop",
-		"body":[
-			"\\forlistloop*{${1:list}}"
-		]
-	},
-
-
-	"fortoksloop*{}":{
-		"prefix":"*fortoksloop",
-		"body":[
-			"\\fortoksloop*{${1:token list}}"
-		]
-	},
-
-
-	"csvtolist*{}":{
-		"prefix":"*csvtolist",
-		"body":[
-			"\\csvtolist*{${1:csv list}}"
-		]
-	},
-
-
-	"csvtolist*[]{}":{
-		"prefix":"*csvtolist",
-		"body":[
-			"\\csvtolist*[${2:list macro}]{${1:csv list}}"
-		]
-	},
-
-
-	"tokstolist*{}":{
-		"prefix":"*tokstolist",
-		"body":[
-			"\\tokstolist*{${1:token list}}"
-		]
-	},
-
-
-	"tokstolist*[]{}":{
-		"prefix":"*tokstolist",
-		"body":[
-			"\\tokstolist*[${2:list macro}]{${1:token list}}"
-		]
-	},
-
-
-	"listtocsv*{}":{
-		"prefix":"*listtocsv",
-		"body":[
-			"\\listtocsv*{${1:list}}"
-		]
-	},
-
-
-	"listtocsv*[]{}":{
-		"prefix":"*listtocsv",
-		"body":[
-			"\\listtocsv*[${2:list macro}]{${1:list}}"
-		]
-	},
-
-
-	"csvtolistadd*{}{}":{
-		"prefix":"*csvtolistadd",
-		"body":[
-			"\\csvtolistadd*{${1:list macro}}{${2:csv list}}"
-		]
-	},
-
-
-	"tokstolistadd*{}{}":{
-		"prefix":"*tokstolistadd",
-		"body":[
-			"\\tokstolistadd*{${1:list macro}}{${2:token list}}"
-		]
-	},
-
-
-	"ifincsvlist*{}{}{}{}":{
-		"prefix":"*ifincsvlist",
-		"body":[
-			"\\ifincsvlist*{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"xifincsvlist*{}{}{}{}":{
-		"prefix":"*xifincsvlist",
-		"body":[
-			"\\xifincsvlist*{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
-		]
-	},
-
-
-	"getlistindex*{}{}":{
-		"prefix":"*getlistindex",
-		"body":[
-			"\\getlistindex*{${1:item}}{${2:list}}"
-		]
-	},
-
-
-	"getlistindex*[]{}{}":{
-		"prefix":"*getlistindex",
-		"body":[
-			"\\getlistindex*[${3:result index}]{${1:item}}{${2:list}}"
-		]
-	},
-
-
-	"getcsvlistindex*{}{}":{
-		"prefix":"*getcsvlistindex",
-		"body":[
-			"\\getcsvlistindex*{${1:item}}{${2:list}}"
-		]
-	},
-
-
-	"getcsvlistindex*[]{}{}":{
-		"prefix":"*getcsvlistindex",
-		"body":[
-			"\\getcsvlistindex*[${3:result index}]{${1:item}}{${2:list}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -989,7 +176,35 @@
 		"prefix":"avoidvoid",
 		"body":[
 			"\\avoidvoid[${2:replacement code}]{${1:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avoidvoid*{}":{
+		"prefix":"*avoidvoid",
+		"body":[
+			"\\avoidvoid*{${1:string}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"avoidvoid*[]{}":{
+		"prefix":"*avoidvoid",
+		"body":[
+			"\\avoidvoid*[${2:replacement code}]{${1:string}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"avoidvoidcs{}":{
+		"prefix":"avoidvoidcs",
+		"body":[
+			"\\avoidvoidcs{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -997,7 +212,269 @@
 		"prefix":"avoidvoidcs",
 		"body":[
 			"\\avoidvoidcs[${2:replacement code}]{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"avoidvoidcs*{}":{
+		"prefix":"*avoidvoidcs",
+		"body":[
+			"\\avoidvoidcs*{${1:csname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"avoidvoidcs*[]{}":{
+		"prefix":"*avoidvoidcs",
+		"body":[
+			"\\avoidvoidcs*[${2:replacement code}]{${1:csname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ifsingletoken{}{}{}{}":{
+		"prefix":"ifsingletoken",
+		"body":[
+			"\\ifsingletoken{${1:token}}{${2:code}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifOneToken{}{}{}":{
+		"prefix":"ifOneToken",
+		"body":[
+			"\\ifOneToken{${1:code}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifsinglechar{}{}{}{}":{
+		"prefix":"ifsinglechar",
+		"body":[
+			"\\ifsinglechar{${1:token}}{${2:string}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifOneChar{}{}{}":{
+		"prefix":"ifOneChar",
+		"body":[
+			"\\ifOneChar{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifOneCharWithBlanks{}{}{}":{
+		"prefix":"ifOneCharWithBlanks",
+		"body":[
+			"\\ifOneCharWithBlanks{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iffirsttoken{}{}{}{}":{
+		"prefix":"iffirsttoken",
+		"body":[
+			"\\iffirsttoken{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iffirstchar{}{}{}{}":{
+		"prefix":"iffirstchar",
+		"body":[
+			"\\iffirstchar{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifiscs{}{}{}":{
+		"prefix":"ifiscs",
+		"body":[
+			"\\ifiscs{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"detokenizeChars{}":{
+		"prefix":"detokenizeChars",
+		"body":[
+			"\\detokenizeChars{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"protectspace{}":{
+		"prefix":"protectspace",
+		"body":[
+			"\\protectspace{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifempty{}{}{}":{
+		"prefix":"ifempty",
+		"body":[
+			"\\ifempty{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xifempty{}{}{}":{
+		"prefix":"xifempty",
+		"body":[
+			"\\xifempty{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifnotempty{}{}{}":{
+		"prefix":"ifnotempty",
+		"body":[
+			"\\ifnotempty{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xifblank{}{}{}":{
+		"prefix":"xifblank",
+		"body":[
+			"\\xifblank{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifnotblank{}{}{}":{
+		"prefix":"ifnotblank",
+		"body":[
+			"\\ifnotblank{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"deblank{}":{
+		"prefix":"deblank",
+		"body":[
+			"\\deblank{${1:string}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifstrcmp{}{}{}{}":{
+		"prefix":"ifstrcmp",
+		"body":[
+			"\\ifstrcmp{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xifstrequal{}{}{}{}":{
+		"prefix":"xifstrequal",
+		"body":[
+			"\\xifstrequal{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xifstrcmp{}{}{}{}":{
+		"prefix":"xifstrcmp",
+		"body":[
+			"\\xifstrcmp{${1:string1}}{${2:string2}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcharupper{}{}{}":{
+		"prefix":"ifcharupper",
+		"body":[
+			"\\ifcharupper{${1:char}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifcharlower{}{}{}":{
+		"prefix":"ifcharlower",
+		"body":[
+			"\\ifcharlower{${1:char}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifuppercase{}{}{}":{
+		"prefix":"ifuppercase",
+		"body":[
+			"\\ifuppercase{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"iflowercase{}{}{}":{
+		"prefix":"iflowercase",
+		"body":[
+			"\\iflowercase{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifstrmatch{}{}{}{}":{
+		"prefix":"ifstrmatch",
+		"body":[
+			"\\ifstrmatch{${1:pattern}}{${2:string}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifstrdigit{}{}{}":{
+		"prefix":"ifstrdigit",
+		"body":[
+			"\\ifstrdigit{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifstrnum{}{}{}":{
+		"prefix":"ifstrnum",
+		"body":[
+			"\\ifstrnum{${1:string}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareStringFilter{}{}":{
+		"prefix":"DeclareStringFilter",
+		"body":[
+			"\\DeclareStringFilter{${1:cmd}}{${2:string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1005,7 +482,17 @@
 		"prefix":"DeclareStringFilter",
 		"body":[
 			"\\DeclareStringFilter[${3:\\global}]{${1:cmd}}{${2:string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"futuredef{}{}":{
+		"prefix":"futuredef",
+		"body":[
+			"\\futuredef{${1:cmd}}{${2:commands to expand after}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1013,7 +500,62 @@
 		"prefix":"futuredef",
 		"body":[
 			"\\futuredef[${3:allowed token list}]{${1:cmd}}{${2:commands to expand after}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"futuredef*{}{}":{
+		"prefix":"*futuredef",
+		"body":[
+			"\\futuredef*{${1:cmd}}{${2:commands to expand after}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"futuredef*[]{}{}":{
+		"prefix":"*futuredef",
+		"body":[
+			"\\futuredef*[${3:allowed token list}]{${1:cmd}}{${2:commands to expand after}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AfterGroup{}":{
+		"prefix":"AfterGroup",
+		"body":[
+			"\\AfterGroup{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AfterGroup*{}":{
+		"prefix":"*AfterGroup",
+		"body":[
+			"\\AfterGroup*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AfterAssignment{}":{
+		"prefix":"AfterAssignment",
+		"body":[
+			"\\AfterAssignment{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"naturalloop{}{}":{
+		"prefix":"naturalloop",
+		"body":[
+			"\\naturalloop{${1:number}}{${2:argument}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1021,7 +563,89 @@
 		"prefix":"naturalloop",
 		"body":[
 			"\\naturalloop[${3:auxiliary cmds}]{${1:number}}{${2:argument}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ifintokslist{}{}{}{}":{
+		"prefix":"ifintokslist",
+		"body":[
+			"\\ifintokslist{${1:token}}{${2:token list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifincharlist{}{}{}{}":{
+		"prefix":"ifincharlist",
+		"body":[
+			"\\ifincharlist{${1:token}}{${2:token list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gettokslistindex{}{}":{
+		"prefix":"gettokslistindex",
+		"body":[
+			"\\gettokslistindex{${1:item}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getcharlistindex{}{}":{
+		"prefix":"getcharlistindex",
+		"body":[
+			"\\getcharlistindex{${1:item}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gettokslistcount{}":{
+		"prefix":"gettokslistcount",
+		"body":[
+			"\\gettokslistcount{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gettokslisttoken{}{}":{
+		"prefix":"gettokslisttoken",
+		"body":[
+			"\\gettokslisttoken{${1:item}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getcharlistcount{}":{
+		"prefix":"getcharlistcount",
+		"body":[
+			"\\getcharlistcount{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"getcharlisttoken{}{}":{
+		"prefix":"getcharlisttoken",
+		"body":[
+			"\\getcharlisttoken{${1:item}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DeclareCmdListParser{}{}":{
+		"prefix":"DeclareCmdListParser",
+		"body":[
+			"\\DeclareCmdListParser{${1:cmd}}{${2:separator}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1029,7 +653,26 @@
 		"prefix":"DeclareCmdListParser",
 		"body":[
 			"\\DeclareCmdListParser[${3:\\global}]{${1:cmd}}{${2:separator}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"breakloop{}":{
+		"prefix":"breakloop",
+		"body":[
+			"\\breakloop{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvloop{}":{
+		"prefix":"csvloop",
+		"body":[
+			"\\csvloop{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1037,7 +680,35 @@
 		"prefix":"csvloop",
 		"body":[
 			"\\csvloop[${2:auxiliary cmds}]{${1:csv list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvloop*{}":{
+		"prefix":"*csvloop",
+		"body":[
+			"\\csvloop*{${1:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"csvloop*[]{}":{
+		"prefix":"*csvloop",
+		"body":[
+			"\\csvloop*[${2:auxiliary cmds}]{${1:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listloop{}":{
+		"prefix":"listloop",
+		"body":[
+			"\\listloop{${1:list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1045,7 +716,35 @@
 		"prefix":"listloop",
 		"body":[
 			"\\listloop[${2:auxiliary cmds}]{${1:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listloop*{}":{
+		"prefix":"*listloop",
+		"body":[
+			"\\listloop*{${1:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listloop*[]{}":{
+		"prefix":"*listloop",
+		"body":[
+			"\\listloop*[${2:auxiliary cmds}]{${1:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toksloop{}":{
+		"prefix":"toksloop",
+		"body":[
+			"\\toksloop{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1053,7 +752,116 @@
 		"prefix":"toksloop",
 		"body":[
 			"\\toksloop[${2:auxiliary cmds}]{${1:token list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toksloop*{}":{
+		"prefix":"*toksloop",
+		"body":[
+			"\\toksloop*{${1:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toksloop*[]{}":{
+		"prefix":"*toksloop",
+		"body":[
+			"\\toksloop*[${2:auxiliary cmds}]{${1:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"forcsvloop{}":{
+		"prefix":"forcsvloop",
+		"body":[
+			"\\forcsvloop{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fortoksloop{}":{
+		"prefix":"fortoksloop",
+		"body":[
+			"\\fortoksloop{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"forcsvloop*{}":{
+		"prefix":"*forcsvloop",
+		"body":[
+			"\\forcsvloop*{${1:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"forlistloop*{}":{
+		"prefix":"*forlistloop",
+		"body":[
+			"\\forlistloop*{${1:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"fortoksloop*{}":{
+		"prefix":"*fortoksloop",
+		"body":[
+			"\\fortoksloop*{${1:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"csvlistadd{}{}":{
+		"prefix":"csvlistadd",
+		"body":[
+			"\\csvlistadd{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvlistgadd{}{}":{
+		"prefix":"csvlistgadd",
+		"body":[
+			"\\csvlistgadd{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvlisteadd{}{}":{
+		"prefix":"csvlisteadd",
+		"body":[
+			"\\csvlisteadd{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvlistxadd{}{}":{
+		"prefix":"csvlistxadd",
+		"body":[
+			"\\csvlistxadd{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvtolist{}":{
+		"prefix":"csvtolist",
+		"body":[
+			"\\csvtolist{${1:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1061,7 +869,35 @@
 		"prefix":"csvtolist",
 		"body":[
 			"\\csvtolist[${2:list macro}]{${1:csv list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvtolist*{}":{
+		"prefix":"*csvtolist",
+		"body":[
+			"\\csvtolist*{${1:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"csvtolist*[]{}":{
+		"prefix":"*csvtolist",
+		"body":[
+			"\\csvtolist*[${2:list macro}]{${1:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tokstolist{}":{
+		"prefix":"tokstolist",
+		"body":[
+			"\\tokstolist{${1:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1069,7 +905,35 @@
 		"prefix":"tokstolist",
 		"body":[
 			"\\tokstolist[${2:list macro}]{${1:token list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tokstolist*{}":{
+		"prefix":"*tokstolist",
+		"body":[
+			"\\tokstolist*{${1:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tokstolist*[]{}":{
+		"prefix":"*tokstolist",
+		"body":[
+			"\\tokstolist*[${2:list macro}]{${1:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listtocsv{}":{
+		"prefix":"listtocsv",
+		"body":[
+			"\\listtocsv{${1:list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1077,7 +941,107 @@
 		"prefix":"listtocsv",
 		"body":[
 			"\\listtocsv[${2:list macro}]{${1:list}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listtocsv*{}":{
+		"prefix":"*listtocsv",
+		"body":[
+			"\\listtocsv*{${1:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listtocsv*[]{}":{
+		"prefix":"*listtocsv",
+		"body":[
+			"\\listtocsv*[${2:list macro}]{${1:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"csvtolistadd{}{}":{
+		"prefix":"csvtolistadd",
+		"body":[
+			"\\csvtolistadd{${1:list macro}}{${2:csv list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"csvtolistadd*{}{}":{
+		"prefix":"*csvtolistadd",
+		"body":[
+			"\\csvtolistadd*{${1:list macro}}{${2:csv list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tokstolistadd{}{}":{
+		"prefix":"tokstolistadd",
+		"body":[
+			"\\tokstolistadd{${1:list macro}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tokstolistadd*{}{}":{
+		"prefix":"*tokstolistadd",
+		"body":[
+			"\\tokstolistadd*{${1:list macro}}{${2:token list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ifincsvlist{}{}{}{}":{
+		"prefix":"ifincsvlist",
+		"body":[
+			"\\ifincsvlist{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xifincsvlist{}{}{}{}":{
+		"prefix":"xifincsvlist",
+		"body":[
+			"\\xifincsvlist{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifincsvlist*{}{}{}{}":{
+		"prefix":"*ifincsvlist",
+		"body":[
+			"\\ifincsvlist*{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xifincsvlist*{}{}{}{}":{
+		"prefix":"*xifincsvlist",
+		"body":[
+			"\\xifincsvlist*{${1:item}}{${2:csv list}}{${3:true}}{${4:false}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"listdel{}{}":{
+		"prefix":"listdel",
+		"body":[
+			"\\listdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1085,7 +1049,17 @@
 		"prefix":"listdel",
 		"body":[
 			"\\listdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listgdel{}{}":{
+		"prefix":"listgdel",
+		"body":[
+			"\\listgdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1093,7 +1067,17 @@
 		"prefix":"listgdel",
 		"body":[
 			"\\listgdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listedel{}{}":{
+		"prefix":"listedel",
+		"body":[
+			"\\listedel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1101,7 +1085,17 @@
 		"prefix":"listedel",
 		"body":[
 			"\\listedel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"listxdel{}{}":{
+		"prefix":"listxdel",
+		"body":[
+			"\\listxdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1109,7 +1103,17 @@
 		"prefix":"listxdel",
 		"body":[
 			"\\listxdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvdel{}{}":{
+		"prefix":"csvdel",
+		"body":[
+			"\\csvdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1117,7 +1121,17 @@
 		"prefix":"csvdel",
 		"body":[
 			"\\csvdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvgdel{}{}":{
+		"prefix":"csvgdel",
+		"body":[
+			"\\csvgdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1125,7 +1139,17 @@
 		"prefix":"csvgdel",
 		"body":[
 			"\\csvgdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvedel{}{}":{
+		"prefix":"csvedel",
+		"body":[
+			"\\csvedel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1133,7 +1157,17 @@
 		"prefix":"csvedel",
 		"body":[
 			"\\csvedel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"csvxdel{}{}":{
+		"prefix":"csvxdel",
+		"body":[
+			"\\csvxdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1141,7 +1175,17 @@
 		"prefix":"csvxdel",
 		"body":[
 			"\\csvxdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toksdel{}{}":{
+		"prefix":"toksdel",
+		"body":[
+			"\\toksdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1149,7 +1193,17 @@
 		"prefix":"toksdel",
 		"body":[
 			"\\toksdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toksgdel{}{}":{
+		"prefix":"toksgdel",
+		"body":[
+			"\\toksgdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1157,7 +1211,17 @@
 		"prefix":"toksgdel",
 		"body":[
 			"\\toksgdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toksedel{}{}":{
+		"prefix":"toksedel",
+		"body":[
+			"\\toksedel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1165,7 +1229,17 @@
 		"prefix":"toksedel",
 		"body":[
 			"\\toksedel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toksxdel{}{}":{
+		"prefix":"toksxdel",
+		"body":[
+			"\\toksxdel{${1:list macro}}{${2:item}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1173,7 +1247,17 @@
 		"prefix":"toksxdel",
 		"body":[
 			"\\toksxdel[${3:number}]{${1:list macro}}{${2:item}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getlistindex{}{}":{
+		"prefix":"getlistindex",
+		"body":[
+			"\\getlistindex{${1:item}}{${2:list macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1181,7 +1265,35 @@
 		"prefix":"getlistindex",
 		"body":[
 			"\\getlistindex[${3:result index}]{${1:item}}{${2:list macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getlistindex*{}{}":{
+		"prefix":"*getlistindex",
+		"body":[
+			"\\getlistindex*{${1:item}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"getlistindex*[]{}{}":{
+		"prefix":"*getlistindex",
+		"body":[
+			"\\getlistindex*[${3:result index}]{${1:item}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"getcsvlistindex{}{}":{
+		"prefix":"getcsvlistindex",
+		"body":[
+			"\\getcsvlistindex{${1:item}}{${2:list macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1189,6 +1301,43 @@
 		"prefix":"getcsvlistindex",
 		"body":[
 			"\\getcsvlistindex[${3:result index}]{${1:item}}{${2:list macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getcsvlistindex*{}{}":{
+		"prefix":"*getcsvlistindex",
+		"body":[
+			"\\getcsvlistindex*{${1:item}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"getcsvlistindex*[]{}{}":{
+		"prefix":"*getcsvlistindex",
+		"body":[
+			"\\getcsvlistindex*[${3:result index}]{${1:item}}{${2:list}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"interval{}{}":{
+		"prefix":"interval",
+		"body":[
+			"\\interval{${1:number}}{${2:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"locinterplin{}{}{}":{
+		"prefix":"locinterplin",
+		"body":[
+			"\\locinterplin{${1:number}}{${2:sorted number list}}{${3:number list}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

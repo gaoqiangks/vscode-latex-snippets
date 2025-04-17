@@ -5,55 +5,8 @@
 		"prefix":"KalDate",
 		"body":[
 			"\\KalDate{${1:year}}{${2:month}}{${3:day}}"
-		]
-	},
-
-
-	"KalDateStr{}{}{}":{
-		"prefix":"KalDateStr",
-		"body":[
-			"\\KalDateStr{${1:format}}{${2:delimiter}}{${3:date string}}"
-		]
-	},
-
-
-	"KalToday":{
-		"prefix":"KalToday",
-		"body":[
-			"\\KalToday"
-		]
-	},
-
-
-	"KalWeekday{}{}{}":{
-		"prefix":"KalWeekday",
-		"body":[
-			"\\KalWeekday{${1:year}}{${2:month}}{${3:day}}"
-		]
-	},
-
-
-	"KalAbbrFormat{}":{
-		"prefix":"KalAbbrFormat",
-		"body":[
-			"\\KalAbbrFormat{${1:abbreviation}}"
-		]
-	},
-
-
-	"KalDayFormat{}":{
-		"prefix":"KalDayFormat",
-		"body":[
-			"\\KalDayFormat{${1:day}}"
-		]
-	},
-
-
-	"KalYearFormat{}":{
-		"prefix":"KalYearFormat",
-		"body":[
-			"\\KalYearFormat{${1:year}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"KalDate",
 		"body":[
 			"\\KalDate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"KalDateStr{}{}{}":{
+		"prefix":"KalDateStr",
+		"body":[
+			"\\KalDateStr{${1:format}}{${2:delimiter}}{${3:date string}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +32,17 @@
 		"prefix":"KalDateStr",
 		"body":[
 			"\\KalDateStr[${4:options%keyvals}]{${1:format}}{${2:delimiter}}{${3:date string}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"KalToday":{
+		"prefix":"KalToday",
+		"body":[
+			"\\KalToday"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +50,17 @@
 		"prefix":"KalToday",
 		"body":[
 			"\\KalToday[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"KalWeekday{}{}{}":{
+		"prefix":"KalWeekday",
+		"body":[
+			"\\KalWeekday{${1:year}}{${2:month}}{${3:day}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,6 +68,34 @@
 		"prefix":"KalWeekday",
 		"body":[
 			"\\KalWeekday[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"KalAbbrFormat{}":{
+		"prefix":"KalAbbrFormat",
+		"body":[
+			"\\KalAbbrFormat{${1:abbreviation}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"KalDayFormat{}":{
+		"prefix":"KalDayFormat",
+		"body":[
+			"\\KalDayFormat{${1:day}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"KalYearFormat{}":{
+		"prefix":"KalYearFormat",
+		"body":[
+			"\\KalYearFormat{${1:year}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

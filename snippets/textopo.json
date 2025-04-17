@@ -5,1327 +5,8 @@
 		"prefix":"getsequence",
 		"body":[
 			"\\getsequence{${1:PHD}}{${2:PHD-file}}"
-		]
-	},
-
-
-	"getsequence{}{}":{
-		"prefix":"getsequence",
-		"body":[
-			"\\getsequence{${1:HMMTOP}}{${2:HMMTOP-file}}"
-		]
-	},
-
-
-	"getsequence{}{}":{
-		"prefix":"getsequence",
-		"body":[
-			"\\getsequence{${1:SwissProt}}{${2:SwissProt-file}}"
-		]
-	},
-
-
-	"getsequence{}{}":{
-		"prefix":"getsequence",
-		"body":[
-			"\\getsequence{${1:alignment}}{${2:SwissProt-file}}"
-		]
-	},
-
-
-	"MRs{}":{
-		"prefix":"MRs",
-		"body":[
-			"\\MRs{${1:start1..stop1,start2..stop2,...}}"
-		]
-	},
-
-
-	"Nterm{}":{
-		"prefix":"Nterm",
-		"body":[
-			"\\Nterm{${1:intra|extra}}"
-		]
-	},
-
-
-	"sequence{}":{
-		"prefix":"sequence",
-		"body":[
-			"\\sequence{${1:amino-acid-sequence}}"
-		]
-	},
-
-
-	"scaletopo{}":{
-		"prefix":"scaletopo",
-		"body":[
-			"\\scaletopo{${1:factor}}"
-		]
-	},
-
-
-	"loopextent{}":{
-		"prefix":"loopextent",
-		"body":[
-			"\\loopextent{${1:extent}}"
-		]
-	},
-
-
-	"flipNterm":{
-		"prefix":"flipNterm",
-		"body":[
-			"\\flipNterm"
-		]
-	},
-
-
-	"flipCterm":{
-		"prefix":"flipCterm",
-		"body":[
-			"\\flipCterm"
-		]
-	},
-
-
-	"clearMRs":{
-		"prefix":"clearMRs",
-		"body":[
-			"\\clearMRs"
-		]
-	},
-
-
-	"anchor{}":{
-		"prefix":"anchor",
-		"body":[
-			"\\anchor{${1:pos}}"
-		]
-	},
-
-
-	"membranecolors{}{}":{
-		"prefix":"membranecolors",
-		"body":[
-			"\\membranecolors{${1:border}}{${2:interior}}"
-		]
-	},
-
-
-	"borderthickness{}":{
-		"prefix":"borderthickness",
-		"body":[
-			"\\borderthickness{${1:length}}"
-		]
-	},
-
-
-	"labeloutside{}":{
-		"prefix":"labeloutside",
-		"body":[
-			"\\labeloutside{${1:text}}"
-		]
-	},
-
-
-	"labelinside{}":{
-		"prefix":"labelinside",
-		"body":[
-			"\\labelinside{${1:text}}"
-		]
-	},
-
-
-	"moveinsidelabel{}":{
-		"prefix":"moveinsidelabel",
-		"body":[
-			"\\moveinsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
-		]
-	},
-
-
-	"moveoutsidelabel{}":{
-		"prefix":"moveoutsidelabel",
-		"body":[
-			"\\moveoutsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
-		]
-	},
-
-
-	"broadenmembrane{}{}":{
-		"prefix":"broadenmembrane",
-		"body":[
-			"\\broadenmembrane{${1:left|right}}{${2:length}}"
-		]
-	},
-
-
-	"thickenmembrane{}{}":{
-		"prefix":"thickenmembrane",
-		"body":[
-			"\\thickenmembrane{${1:top|bottom}}{${2:length}}"
-		]
-	},
-
-
-	"hidemembrane":{
-		"prefix":"hidemembrane",
-		"body":[
-			"\\hidemembrane"
-		]
-	},
-
-
-	"showmembrane":{
-		"prefix":"showmembrane",
-		"body":[
-			"\\showmembrane"
-		]
-	},
-
-
-	"labelTMs{}":{
-		"prefix":"labelTMs",
-		"body":[
-			"\\labelTMs{${1:style}}"
-		]
-	},
-
-
-	"numcount":{
-		"prefix":"numcount",
-		"body":[
-			"\\numcount"
-		]
-	},
-
-
-	"alphacount":{
-		"prefix":"alphacount",
-		"body":[
-			"\\alphacount"
-		]
-	},
-
-
-	"Alphacount":{
-		"prefix":"Alphacount",
-		"body":[
-			"\\Alphacount"
-		]
-	},
-
-
-	"romancount":{
-		"prefix":"romancount",
-		"body":[
-			"\\romancount"
-		]
-	},
-
-
-	"Romancount":{
-		"prefix":"Romancount",
-		"body":[
-			"\\Romancount"
-		]
-	},
-
-
-	"labelTM{}{}":{
-		"prefix":"labelTM",
-		"body":[
-			"\\labelTM{${1:num}}{${2:label-text}}"
-		]
-	},
-
-
-	"moveTMlabel{}{}":{
-		"prefix":"moveTMlabel",
-		"body":[
-			"\\moveTMlabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
-		]
-	},
-
-
-	"TMlabelcolor{}":{
-		"prefix":"TMlabelcolor",
-		"body":[
-			"\\TMlabelcolor{${1:color}}"
-		]
-	},
-
-
-	"hideTMlabels":{
-		"prefix":"hideTMlabels",
-		"body":[
-			"\\hideTMlabels"
-		]
-	},
-
-
-	"labelloops{}":{
-		"prefix":"labelloops",
-		"body":[
-			"\\labelloops{${1:style}}"
-		]
-	},
-
-
-	"movelooplabel{}{}":{
-		"prefix":"movelooplabel",
-		"body":[
-			"\\movelooplabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
-		]
-	},
-
-
-	"looplabelcolor{}":{
-		"prefix":"looplabelcolor",
-		"body":[
-			"\\looplabelcolor{${1:color}}"
-		]
-	},
-
-
-	"hidelooplabels":{
-		"prefix":"hidelooplabels",
-		"body":[
-			"\\hidelooplabels"
-		]
-	},
-
-
-	"showNterm":{
-		"prefix":"showNterm",
-		"body":[
-			"\\showNterm"
-		]
-	},
-
-
-	"hideNterm":{
-		"prefix":"hideNterm",
-		"body":[
-			"\\hideNterm"
-		]
-	},
-
-
-	"showCterm":{
-		"prefix":"showCterm",
-		"body":[
-			"\\showCterm"
-		]
-	},
-
-
-	"hideCterm":{
-		"prefix":"hideCterm",
-		"body":[
-			"\\hideCterm"
-		]
-	},
-
-
-	"labelstyle{}{}{}{}{}{}":{
-		"prefix":"labelstyle",
-		"body":[
-			"\\labelstyle{${1:name}}{${2:shape}}{${3:frame-color}}{${4:background-color}}{${5:char-color}}{${6:legend-text}}"
-		]
-	},
-
-
-	"labelregion{}{}{}":{
-		"prefix":"labelregion",
-		"body":[
-			"\\labelregion{${1:list-of-regions}}{${2:style-name}}{${3:label-text}}"
-		]
-	},
-
-
-	"phosphorylation{}":{
-		"prefix":"phosphorylation",
-		"body":[
-			"\\phosphorylation{${1:list-of-positions}}"
-		]
-	},
-
-
-	"glycosylation{}":{
-		"prefix":"glycosylation",
-		"body":[
-			"\\glycosylation{${1:list-of-positions}}"
-		]
-	},
-
-
-	"countercolor{}":{
-		"prefix":"countercolor",
-		"body":[
-			"\\countercolor{${1:color}}"
-		]
-	},
-
-
-	"rulethickness{}":{
-		"prefix":"rulethickness",
-		"body":[
-			"\\rulethickness{${1:length}}"
-		]
-	},
-
-
-	"place{}{}":{
-		"prefix":"place",
-		"body":[
-			"\\place{${1:x%,y% }}{${2:label-text}}"
-		]
-	},
-
-
-	"addtagtoNterm{}{}{}":{
-		"prefix":"addtagtoNterm",
-		"body":[
-			"\\addtagtoNterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
-		]
-	},
-
-
-	"addtagtoCterm{}{}{}":{
-		"prefix":"addtagtoCterm",
-		"body":[
-			"\\addtagtoCterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
-		]
-	},
-
-
-	"seqstart{}":{
-		"prefix":"seqstart",
-		"body":[
-			"\\seqstart{${1:num}}"
-		]
-	},
-
-
-	"applyshading{}{}":{
-		"prefix":"applyshading",
-		"body":[
-			"\\applyshading{${1:identical}}{${2:file}}"
-		]
-	},
-
-
-	"applyshading{}{}":{
-		"prefix":"applyshading",
-		"body":[
-			"\\applyshading{${1:similar}}{${2:file}}"
-		]
-	},
-
-
-	"applyshading{}{}":{
-		"prefix":"applyshading",
-		"body":[
-			"\\applyshading{${1:functional}}{${2:group}}"
-		]
-	},
-
-
-	"shadingcolors{}":{
-		"prefix":"shadingcolors",
-		"body":[
-			"\\shadingcolors{${1:colorscheme}}"
-		]
-	},
-
-
-	"allmatchspecial":{
-		"prefix":"allmatchspecial",
-		"body":[
-			"\\allmatchspecial"
-		]
-	},
-
-
-	"allmatchspecialoff":{
-		"prefix":"allmatchspecialoff",
-		"body":[
-			"\\allmatchspecialoff"
-		]
-	},
-
-
-	"standardresidues{}{}{}{}":{
-		"prefix":"standardresidues",
-		"body":[
-			"\\standardresidues{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
-		]
-	},
-
-
-	"similarpositions{}{}{}{}":{
-		"prefix":"similarpositions",
-		"body":[
-			"\\similarpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
-		]
-	},
-
-
-	"conservedpositions{}{}{}{}":{
-		"prefix":"conservedpositions",
-		"body":[
-			"\\conservedpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
-		]
-	},
-
-
-	"invariablepositions{}{}{}{}":{
-		"prefix":"invariablepositions",
-		"body":[
-			"\\invariablepositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
-		]
-	},
-
-
-	"donotshadestartMet":{
-		"prefix":"donotshadestartMet",
-		"body":[
-			"\\donotshadestartMet"
-		]
-	},
-
-
-	"shadestartMet":{
-		"prefix":"shadestartMet",
-		"body":[
-			"\\shadestartMet"
-		]
-	},
-
-
-	"hidelegend":{
-		"prefix":"hidelegend",
-		"body":[
-			"\\hidelegend"
-		]
-	},
-
-
-	"showlegend":{
-		"prefix":"showlegend",
-		"body":[
-			"\\showlegend"
-		]
-	},
-
-
-	"movelegend{}{}":{
-		"prefix":"movelegend",
-		"body":[
-			"\\movelegend{${1:x-offset}}{${2:y-offset}}"
-		]
-	},
-
-
-	"helixstyle{}":{
-		"prefix":"helixstyle",
-		"body":[
-			"\\helixstyle{${1:style%keyvals}}"
-		]
-	},
-
-
-	"scalewheel{}":{
-		"prefix":"scalewheel",
-		"body":[
-			"\\scalewheel{${1:percent}}"
-		]
-	},
-
-
-	"symbolsize{}":{
-		"prefix":"symbolsize",
-		"body":[
-			"\\symbolsize{${1:size%keyvals}}"
-		]
-	},
-
-
-	"wheelsperline{}":{
-		"prefix":"wheelsperline",
-		"body":[
-			"\\wheelsperline{${1:num}}"
-		]
-	},
-
-
-	"viewfromextra":{
-		"prefix":"viewfromextra",
-		"body":[
-			"\\viewfromextra"
-		]
-	},
-
-
-	"viewfromintra":{
-		"prefix":"viewfromintra",
-		"body":[
-			"\\viewfromintra"
-		]
-	},
-
-
-	"showmoment":{
-		"prefix":"showmoment",
-		"body":[
-			"\\showmoment"
-		]
-	},
-
-
-	"hidemoment":{
-		"prefix":"hidemoment",
-		"body":[
-			"\\hidemoment"
-		]
-	},
-
-
-	"Hmean{}":{
-		"prefix":"Hmean",
-		"body":[
-			"\\Hmean{${1:helix-num}}"
-		]
-	},
-
-
-	"muH{}":{
-		"prefix":"muH",
-		"body":[
-			"\\muH{${1:helix-num}}"
-		]
-	},
-
-
-	"muHmean{}":{
-		"prefix":"muHmean",
-		"body":[
-			"\\muHmean{${1:helix-num}}"
-		]
-	},
-
-
-	"mudelta{}":{
-		"prefix":"mudelta",
-		"body":[
-			"\\mudelta{${1:helix-num}}"
-		]
-	},
-
-
-	"momentcolor{}":{
-		"prefix":"momentcolor",
-		"body":[
-			"\\momentcolor{${1:color}}"
-		]
-	},
-
-
-	"scalemoment{}":{
-		"prefix":"scalemoment",
-		"body":[
-			"\\scalemoment{${1:percent}}"
-		]
-	},
-
-
-	"showwheelnumbering":{
-		"prefix":"showwheelnumbering",
-		"body":[
-			"\\showwheelnumbering"
-		]
-	},
-
-
-	"hidewheelnumbering":{
-		"prefix":"hidewheelnumbering",
-		"body":[
-			"\\hidewheelnumbering"
-		]
-	},
-
-
-	"showbonds":{
-		"prefix":"showbonds",
-		"body":[
-			"\\showbonds"
-		]
-	},
-
-
-	"hidebonds":{
-		"prefix":"hidebonds",
-		"body":[
-			"\\hidebonds"
-		]
-	},
-
-
-	"setfamily{}{}":{
-		"prefix":"setfamily",
-		"body":[
-			"\\setfamily{${1:text}}{${2:family%keyvals}}"
-		]
-	},
-
-
-	"setseries{}{}":{
-		"prefix":"setseries",
-		"body":[
-			"\\setseries{${1:text}}{${2:series%keyvals}}"
-		]
-	},
-
-
-	"setshape{}{}":{
-		"prefix":"setshape",
-		"body":[
-			"\\setshape{${1:text}}{${2:shape%keyvals}}"
-		]
-	},
-
-
-	"setsize{}{}":{
-		"prefix":"setsize",
-		"body":[
-			"\\setsize{${1:text}}{${2:size%keyvals}}"
-		]
-	},
-
-
-	"setfont{}{}{}{}{}":{
-		"prefix":"setfont",
-		"body":[
-			"\\setfont{${1:text}}{${2:family}}{${3:series}}{${4:shape}}{${5:size}}"
-		]
-	},
-
-
-	"labelsrm":{
-		"prefix":"labelsrm",
-		"body":[
-			"\\labelsrm"
-		]
-	},
-
-
-	"labelstiny":{
-		"prefix":"labelstiny",
-		"body":[
-			"\\labelstiny"
-		]
-	},
-
-
-	"labelssf":{
-		"prefix":"labelssf",
-		"body":[
-			"\\labelssf"
-		]
-	},
-
-
-	"labelsscriptsize":{
-		"prefix":"labelsscriptsize",
-		"body":[
-			"\\labelsscriptsize"
-		]
-	},
-
-
-	"labelstt":{
-		"prefix":"labelstt",
-		"body":[
-			"\\labelstt"
-		]
-	},
-
-
-	"labelsfootnotesize":{
-		"prefix":"labelsfootnotesize",
-		"body":[
-			"\\labelsfootnotesize"
-		]
-	},
-
-
-	"labelsbf":{
-		"prefix":"labelsbf",
-		"body":[
-			"\\labelsbf"
-		]
-	},
-
-
-	"labelssmall":{
-		"prefix":"labelssmall",
-		"body":[
-			"\\labelssmall"
-		]
-	},
-
-
-	"labelsmd":{
-		"prefix":"labelsmd",
-		"body":[
-			"\\labelsmd"
-		]
-	},
-
-
-	"labelsnormalsize":{
-		"prefix":"labelsnormalsize",
-		"body":[
-			"\\labelsnormalsize"
-		]
-	},
-
-
-	"labelsit":{
-		"prefix":"labelsit",
-		"body":[
-			"\\labelsit"
-		]
-	},
-
-
-	"labelslarge":{
-		"prefix":"labelslarge",
-		"body":[
-			"\\labelslarge"
-		]
-	},
-
-
-	"labelssl":{
-		"prefix":"labelssl",
-		"body":[
-			"\\labelssl"
-		]
-	},
-
-
-	"labelsLarge":{
-		"prefix":"labelsLarge",
-		"body":[
-			"\\labelsLarge"
-		]
-	},
-
-
-	"labelssc":{
-		"prefix":"labelssc",
-		"body":[
-			"\\labelssc"
-		]
-	},
-
-
-	"labelsLARGE":{
-		"prefix":"labelsLARGE",
-		"body":[
-			"\\labelsLARGE"
-		]
-	},
-
-
-	"labelsup":{
-		"prefix":"labelsup",
-		"body":[
-			"\\labelsup"
-		]
-	},
-
-
-	"labelshuge":{
-		"prefix":"labelshuge",
-		"body":[
-			"\\labelshuge"
-		]
-	},
-
-
-	"labelsHuge":{
-		"prefix":"labelsHuge",
-		"body":[
-			"\\labelsHuge"
-		]
-	},
-
-
-	"membranelabelsrm":{
-		"prefix":"membranelabelsrm",
-		"body":[
-			"\\membranelabelsrm"
-		]
-	},
-
-
-	"membranelabelssf":{
-		"prefix":"membranelabelssf",
-		"body":[
-			"\\membranelabelssf"
-		]
-	},
-
-
-	"membranelabelstt":{
-		"prefix":"membranelabelstt",
-		"body":[
-			"\\membranelabelstt"
-		]
-	},
-
-
-	"membranelabelsmd":{
-		"prefix":"membranelabelsmd",
-		"body":[
-			"\\membranelabelsmd"
-		]
-	},
-
-
-	"membranelabelsbf":{
-		"prefix":"membranelabelsbf",
-		"body":[
-			"\\membranelabelsbf"
-		]
-	},
-
-
-	"membranelabelsup":{
-		"prefix":"membranelabelsup",
-		"body":[
-			"\\membranelabelsup"
-		]
-	},
-
-
-	"membranelabelsit":{
-		"prefix":"membranelabelsit",
-		"body":[
-			"\\membranelabelsit"
-		]
-	},
-
-
-	"membranelabelssl":{
-		"prefix":"membranelabelssl",
-		"body":[
-			"\\membranelabelssl"
-		]
-	},
-
-
-	"membranelabelssc":{
-		"prefix":"membranelabelssc",
-		"body":[
-			"\\membranelabelssc"
-		]
-	},
-
-
-	"membranelabelstiny":{
-		"prefix":"membranelabelstiny",
-		"body":[
-			"\\membranelabelstiny"
-		]
-	},
-
-
-	"membranelabelsscriptsize":{
-		"prefix":"membranelabelsscriptsize",
-		"body":[
-			"\\membranelabelsscriptsize"
-		]
-	},
-
-
-	"membranelabelsfootnotesize":{
-		"prefix":"membranelabelsfootnotesize",
-		"body":[
-			"\\membranelabelsfootnotesize"
-		]
-	},
-
-
-	"membranelabelssmall":{
-		"prefix":"membranelabelssmall",
-		"body":[
-			"\\membranelabelssmall"
-		]
-	},
-
-
-	"membranelabelsnormalsize":{
-		"prefix":"membranelabelsnormalsize",
-		"body":[
-			"\\membranelabelsnormalsize"
-		]
-	},
-
-
-	"membranelabelslarge":{
-		"prefix":"membranelabelslarge",
-		"body":[
-			"\\membranelabelslarge"
-		]
-	},
-
-
-	"membranelabelsLarge":{
-		"prefix":"membranelabelsLarge",
-		"body":[
-			"\\membranelabelsLarge"
-		]
-	},
-
-
-	"membranelabelsLARGE":{
-		"prefix":"membranelabelsLARGE",
-		"body":[
-			"\\membranelabelsLARGE"
-		]
-	},
-
-
-	"membranelabelshuge":{
-		"prefix":"membranelabelshuge",
-		"body":[
-			"\\membranelabelshuge"
-		]
-	},
-
-
-	"membranelabelsHuge":{
-		"prefix":"membranelabelsHuge",
-		"body":[
-			"\\membranelabelsHuge"
-		]
-	},
-
-
-	"looplabelsrm":{
-		"prefix":"looplabelsrm",
-		"body":[
-			"\\looplabelsrm"
-		]
-	},
-
-
-	"looplabelssf":{
-		"prefix":"looplabelssf",
-		"body":[
-			"\\looplabelssf"
-		]
-	},
-
-
-	"looplabelstt":{
-		"prefix":"looplabelstt",
-		"body":[
-			"\\looplabelstt"
-		]
-	},
-
-
-	"looplabelsmd":{
-		"prefix":"looplabelsmd",
-		"body":[
-			"\\looplabelsmd"
-		]
-	},
-
-
-	"looplabelsbf":{
-		"prefix":"looplabelsbf",
-		"body":[
-			"\\looplabelsbf"
-		]
-	},
-
-
-	"looplabelsup":{
-		"prefix":"looplabelsup",
-		"body":[
-			"\\looplabelsup"
-		]
-	},
-
-
-	"looplabelsit":{
-		"prefix":"looplabelsit",
-		"body":[
-			"\\looplabelsit"
-		]
-	},
-
-
-	"looplabelssl":{
-		"prefix":"looplabelssl",
-		"body":[
-			"\\looplabelssl"
-		]
-	},
-
-
-	"looplabelssc":{
-		"prefix":"looplabelssc",
-		"body":[
-			"\\looplabelssc"
-		]
-	},
-
-
-	"looplabelstiny":{
-		"prefix":"looplabelstiny",
-		"body":[
-			"\\looplabelstiny"
-		]
-	},
-
-
-	"looplabelsscriptsize":{
-		"prefix":"looplabelsscriptsize",
-		"body":[
-			"\\looplabelsscriptsize"
-		]
-	},
-
-
-	"looplabelsfootnotesize":{
-		"prefix":"looplabelsfootnotesize",
-		"body":[
-			"\\looplabelsfootnotesize"
-		]
-	},
-
-
-	"looplabelssmall":{
-		"prefix":"looplabelssmall",
-		"body":[
-			"\\looplabelssmall"
-		]
-	},
-
-
-	"looplabelsnormalsize":{
-		"prefix":"looplabelsnormalsize",
-		"body":[
-			"\\looplabelsnormalsize"
-		]
-	},
-
-
-	"looplabelslarge":{
-		"prefix":"looplabelslarge",
-		"body":[
-			"\\looplabelslarge"
-		]
-	},
-
-
-	"looplabelsLarge":{
-		"prefix":"looplabelsLarge",
-		"body":[
-			"\\looplabelsLarge"
-		]
-	},
-
-
-	"looplabelsLARGE":{
-		"prefix":"looplabelsLARGE",
-		"body":[
-			"\\looplabelsLARGE"
-		]
-	},
-
-
-	"looplabelshuge":{
-		"prefix":"looplabelshuge",
-		"body":[
-			"\\looplabelshuge"
-		]
-	},
-
-
-	"looplabelsHuge":{
-		"prefix":"looplabelsHuge",
-		"body":[
-			"\\looplabelsHuge"
-		]
-	},
-
-
-	"TMlabelsrm":{
-		"prefix":"TMlabelsrm",
-		"body":[
-			"\\TMlabelsrm"
-		]
-	},
-
-
-	"TMlabelssf":{
-		"prefix":"TMlabelssf",
-		"body":[
-			"\\TMlabelssf"
-		]
-	},
-
-
-	"TMlabelstt":{
-		"prefix":"TMlabelstt",
-		"body":[
-			"\\TMlabelstt"
-		]
-	},
-
-
-	"TMlabelsmd":{
-		"prefix":"TMlabelsmd",
-		"body":[
-			"\\TMlabelsmd"
-		]
-	},
-
-
-	"TMlabelsbf":{
-		"prefix":"TMlabelsbf",
-		"body":[
-			"\\TMlabelsbf"
-		]
-	},
-
-
-	"TMlabelsup":{
-		"prefix":"TMlabelsup",
-		"body":[
-			"\\TMlabelsup"
-		]
-	},
-
-
-	"TMlabelsit":{
-		"prefix":"TMlabelsit",
-		"body":[
-			"\\TMlabelsit"
-		]
-	},
-
-
-	"TMlabelssl":{
-		"prefix":"TMlabelssl",
-		"body":[
-			"\\TMlabelssl"
-		]
-	},
-
-
-	"TMlabelssc":{
-		"prefix":"TMlabelssc",
-		"body":[
-			"\\TMlabelssc"
-		]
-	},
-
-
-	"TMlabelstiny":{
-		"prefix":"TMlabelstiny",
-		"body":[
-			"\\TMlabelstiny"
-		]
-	},
-
-
-	"TMlabelsscriptsize":{
-		"prefix":"TMlabelsscriptsize",
-		"body":[
-			"\\TMlabelsscriptsize"
-		]
-	},
-
-
-	"TMlabelsfootnotesize":{
-		"prefix":"TMlabelsfootnotesize",
-		"body":[
-			"\\TMlabelsfootnotesize"
-		]
-	},
-
-
-	"TMlabelssmall":{
-		"prefix":"TMlabelssmall",
-		"body":[
-			"\\TMlabelssmall"
-		]
-	},
-
-
-	"TMlabelsnormalsize":{
-		"prefix":"TMlabelsnormalsize",
-		"body":[
-			"\\TMlabelsnormalsize"
-		]
-	},
-
-
-	"TMlabelslarge":{
-		"prefix":"TMlabelslarge",
-		"body":[
-			"\\TMlabelslarge"
-		]
-	},
-
-
-	"TMlabelsLarge":{
-		"prefix":"TMlabelsLarge",
-		"body":[
-			"\\TMlabelsLarge"
-		]
-	},
-
-
-	"TMlabelsLARGE":{
-		"prefix":"TMlabelsLARGE",
-		"body":[
-			"\\TMlabelsLARGE"
-		]
-	},
-
-
-	"TMlabelshuge":{
-		"prefix":"TMlabelshuge",
-		"body":[
-			"\\TMlabelshuge"
-		]
-	},
-
-
-	"TMlabelsHuge":{
-		"prefix":"TMlabelsHuge",
-		"body":[
-			"\\TMlabelsHuge"
-		]
-	},
-
-
-	"TeXtopo":{
-		"prefix":"TeXtopo",
-		"body":[
-			"\\TeXtopo"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1333,7 +14,17 @@
 		"prefix":"getsequence",
 		"body":[
 			"\\getsequence[${3:make new}]{${1:PHD}}{${2:PHD-file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getsequence{}{}":{
+		"prefix":"getsequence",
+		"body":[
+			"\\getsequence{${1:HMMTOP}}{${2:HMMTOP-file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1341,7 +32,17 @@
 		"prefix":"getsequence",
 		"body":[
 			"\\getsequence[${3:make new}]{${1:HMMTOP}}{${2:HMMTOP-file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getsequence{}{}":{
+		"prefix":"getsequence",
+		"body":[
+			"\\getsequence{${1:SwissProt}}{${2:SwissProt-file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1349,7 +50,17 @@
 		"prefix":"getsequence",
 		"body":[
 			"\\getsequence[${3:make new}]{${1:SwissProt}}{${2:SwissProt-file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"getsequence{}{}":{
+		"prefix":"getsequence",
+		"body":[
+			"\\getsequence{${1:alignment}}{${2:SwissProt-file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1357,7 +68,53 @@
 		"prefix":"getsequence",
 		"body":[
 			"\\getsequence[${3:seqnum}]{${1:alignment}}{${2:alignment-file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"MRs{}":{
+		"prefix":"MRs",
+		"body":[
+			"\\MRs{${1:start1..stop1,start2..stop2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Nterm{}":{
+		"prefix":"Nterm",
+		"body":[
+			"\\Nterm{${1:intra|extra}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sequence{}":{
+		"prefix":"sequence",
+		"body":[
+			"\\sequence{${1:amino-acid-sequence}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scaletopo{}":{
+		"prefix":"scaletopo",
+		"body":[
+			"\\scaletopo{${1:factor}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"loopextent{}":{
+		"prefix":"loopextent",
+		"body":[
+			"\\loopextent{${1:extent}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1365,7 +122,8 @@
 		"prefix":"loopextent",
 		"body":[
 			"\\loopextent{${1:extent[${2:distance}]}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1373,7 +131,8 @@
 		"prefix":"loopextent",
 		"body":[
 			"\\loopextent[${2:loop}]{${1:extent}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1381,7 +140,8 @@
 		"prefix":"loopextent",
 		"body":[
 			"\\loopextent[${2:loop}]{${1:extent[${3:distance}]}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -1389,7 +149,71 @@
 		"prefix":"loopfoot",
 		"body":[
 			"\\loopfoot{${1:loop}}{${2:direction[${3:neck}]}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flipNterm":{
+		"prefix":"flipNterm",
+		"body":[
+			"\\flipNterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flipCterm":{
+		"prefix":"flipCterm",
+		"body":[
+			"\\flipCterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearMRs":{
+		"prefix":"clearMRs",
+		"body":[
+			"\\clearMRs"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"anchor{}":{
+		"prefix":"anchor",
+		"body":[
+			"\\anchor{${1:pos}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranecolors{}{}":{
+		"prefix":"membranecolors",
+		"body":[
+			"\\membranecolors{${1:border}}{${2:interior}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"borderthickness{}":{
+		"prefix":"borderthickness",
+		"body":[
+			"\\borderthickness{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labeloutside{}":{
+		"prefix":"labeloutside",
+		"body":[
+			"\\labeloutside{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1397,7 +221,17 @@
 		"prefix":"labeloutside",
 		"body":[
 			"\\labeloutside[${2:left|right}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"labelinside{}":{
+		"prefix":"labelinside",
+		"body":[
+			"\\labelinside{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1405,7 +239,125 @@
 		"prefix":"labelinside",
 		"body":[
 			"\\labelinside[${2:left|right}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"moveinsidelabel{}":{
+		"prefix":"moveinsidelabel",
+		"body":[
+			"\\moveinsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moveoutsidelabel{}":{
+		"prefix":"moveoutsidelabel",
+		"body":[
+			"\\moveoutsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"broadenmembrane{}{}":{
+		"prefix":"broadenmembrane",
+		"body":[
+			"\\broadenmembrane{${1:left|right}}{${2:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thickenmembrane{}{}":{
+		"prefix":"thickenmembrane",
+		"body":[
+			"\\thickenmembrane{${1:top|bottom}}{${2:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidemembrane":{
+		"prefix":"hidemembrane",
+		"body":[
+			"\\hidemembrane"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showmembrane":{
+		"prefix":"showmembrane",
+		"body":[
+			"\\showmembrane"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelTMs{}":{
+		"prefix":"labelTMs",
+		"body":[
+			"\\labelTMs{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"numcount":{
+		"prefix":"numcount",
+		"body":[
+			"\\numcount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"alphacount":{
+		"prefix":"alphacount",
+		"body":[
+			"\\alphacount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Alphacount":{
+		"prefix":"Alphacount",
+		"body":[
+			"\\Alphacount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"romancount":{
+		"prefix":"romancount",
+		"body":[
+			"\\romancount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Romancount":{
+		"prefix":"Romancount",
+		"body":[
+			"\\Romancount"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelTM{}{}":{
+		"prefix":"labelTM",
+		"body":[
+			"\\labelTM{${1:num}}{${2:label-text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1413,7 +365,44 @@
 		"prefix":"labelTM",
 		"body":[
 			"\\labelTM[${3:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:num}}{${2:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"moveTMlabel{}{}":{
+		"prefix":"moveTMlabel",
+		"body":[
+			"\\moveTMlabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelcolor{}":{
+		"prefix":"TMlabelcolor",
+		"body":[
+			"\\TMlabelcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hideTMlabels":{
+		"prefix":"hideTMlabels",
+		"body":[
+			"\\hideTMlabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelloops{}":{
+		"prefix":"labelloops",
+		"body":[
+			"\\labelloops{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1421,7 +410,89 @@
 		"prefix":"labelloop",
 		"body":[
 			"\\labelloop[${3:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:num}}{${2:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"movelooplabel{}{}":{
+		"prefix":"movelooplabel",
+		"body":[
+			"\\movelooplabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelcolor{}":{
+		"prefix":"looplabelcolor",
+		"body":[
+			"\\looplabelcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidelooplabels":{
+		"prefix":"hidelooplabels",
+		"body":[
+			"\\hidelooplabels"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showNterm":{
+		"prefix":"showNterm",
+		"body":[
+			"\\showNterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hideNterm":{
+		"prefix":"hideNterm",
+		"body":[
+			"\\hideNterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showCterm":{
+		"prefix":"showCterm",
+		"body":[
+			"\\showCterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hideCterm":{
+		"prefix":"hideCterm",
+		"body":[
+			"\\hideCterm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelstyle{}{}{}{}{}{}":{
+		"prefix":"labelstyle",
+		"body":[
+			"\\labelstyle{${1:name}}{${2:shape}}{${3:frame-color}}{${4:background-color}}{${5:char-color}}{${6:legend-text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelregion{}{}{}":{
+		"prefix":"labelregion",
+		"body":[
+			"\\labelregion{${1:list-of-regions}}{${2:style-name}}{${3:label-text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1429,7 +500,53 @@
 		"prefix":"labelregion",
 		"body":[
 			"\\labelregion[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:list-of-regions}}{${2:style-name}}{${3:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"phosphorylation{}":{
+		"prefix":"phosphorylation",
+		"body":[
+			"\\phosphorylation{${1:list-of-positions}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"glycosylation{}":{
+		"prefix":"glycosylation",
+		"body":[
+			"\\glycosylation{${1:list-of-positions}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"countercolor{}":{
+		"prefix":"countercolor",
+		"body":[
+			"\\countercolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rulethickness{}":{
+		"prefix":"rulethickness",
+		"body":[
+			"\\rulethickness{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"place{}{}":{
+		"prefix":"place",
+		"body":[
+			"\\place{${1:x%,y% }}{${2:label-text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1437,7 +554,17 @@
 		"prefix":"place",
 		"body":[
 			"\\place[${3:num}]{${1:x%,y% }}{${2:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtagtoNterm{}{}{}":{
+		"prefix":"addtagtoNterm",
+		"body":[
+			"\\addtagtoNterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1445,7 +572,17 @@
 		"prefix":"addtagtoNterm",
 		"body":[
 			"\\addtagtoNterm[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"addtagtoCterm{}{}{}":{
+		"prefix":"addtagtoCterm",
+		"body":[
+			"\\addtagtoCterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1453,7 +590,26 @@
 		"prefix":"addtagtoCterm",
 		"body":[
 			"\\addtagtoCterm[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"seqstart{}":{
+		"prefix":"seqstart",
+		"body":[
+			"\\seqstart{${1:num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"applyshading{}{}":{
+		"prefix":"applyshading",
+		"body":[
+			"\\applyshading{${1:identical}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1461,7 +617,17 @@
 		"prefix":"applyshading",
 		"body":[
 			"\\applyshading[${3:num}]{${1:identical}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"applyshading{}{}":{
+		"prefix":"applyshading",
+		"body":[
+			"\\applyshading{${1:similar}}{${2:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1469,7 +635,17 @@
 		"prefix":"applyshading",
 		"body":[
 			"\\applyshading[${3:num}]{${1:similar}}{${2:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"applyshading{}{}":{
+		"prefix":"applyshading",
+		"body":[
+			"\\applyshading{${1:functional}}{${2:group}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1477,7 +653,1016 @@
 		"prefix":"applyshading",
 		"body":[
 			"\\applyshading[${3:parameter-file}]{${1:functional}}{${2:group}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"shadingcolors{}":{
+		"prefix":"shadingcolors",
+		"body":[
+			"\\shadingcolors{${1:colorscheme}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allmatchspecial":{
+		"prefix":"allmatchspecial",
+		"body":[
+			"\\allmatchspecial"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"allmatchspecialoff":{
+		"prefix":"allmatchspecialoff",
+		"body":[
+			"\\allmatchspecialoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"standardresidues{}{}{}{}":{
+		"prefix":"standardresidues",
+		"body":[
+			"\\standardresidues{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"similarpositions{}{}{}{}":{
+		"prefix":"similarpositions",
+		"body":[
+			"\\similarpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"conservedpositions{}{}{}{}":{
+		"prefix":"conservedpositions",
+		"body":[
+			"\\conservedpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"invariablepositions{}{}{}{}":{
+		"prefix":"invariablepositions",
+		"body":[
+			"\\invariablepositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"donotshadestartMet":{
+		"prefix":"donotshadestartMet",
+		"body":[
+			"\\donotshadestartMet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"shadestartMet":{
+		"prefix":"shadestartMet",
+		"body":[
+			"\\shadestartMet"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidelegend":{
+		"prefix":"hidelegend",
+		"body":[
+			"\\hidelegend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showlegend":{
+		"prefix":"showlegend",
+		"body":[
+			"\\showlegend"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"movelegend{}{}":{
+		"prefix":"movelegend",
+		"body":[
+			"\\movelegend{${1:x-offset}}{${2:y-offset}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"helixstyle{}":{
+		"prefix":"helixstyle",
+		"body":[
+			"\\helixstyle{${1:style%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scalewheel{}":{
+		"prefix":"scalewheel",
+		"body":[
+			"\\scalewheel{${1:percent}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"symbolsize{}":{
+		"prefix":"symbolsize",
+		"body":[
+			"\\symbolsize{${1:size%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"wheelsperline{}":{
+		"prefix":"wheelsperline",
+		"body":[
+			"\\wheelsperline{${1:num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"viewfromextra":{
+		"prefix":"viewfromextra",
+		"body":[
+			"\\viewfromextra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"viewfromintra":{
+		"prefix":"viewfromintra",
+		"body":[
+			"\\viewfromintra"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showmoment":{
+		"prefix":"showmoment",
+		"body":[
+			"\\showmoment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidemoment":{
+		"prefix":"hidemoment",
+		"body":[
+			"\\hidemoment"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hmean{}":{
+		"prefix":"Hmean",
+		"body":[
+			"\\Hmean{${1:helix-num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"muH{}":{
+		"prefix":"muH",
+		"body":[
+			"\\muH{${1:helix-num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"muHmean{}":{
+		"prefix":"muHmean",
+		"body":[
+			"\\muHmean{${1:helix-num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mudelta{}":{
+		"prefix":"mudelta",
+		"body":[
+			"\\mudelta{${1:helix-num}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"momentcolor{}":{
+		"prefix":"momentcolor",
+		"body":[
+			"\\momentcolor{${1:color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scalemoment{}":{
+		"prefix":"scalemoment",
+		"body":[
+			"\\scalemoment{${1:percent}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showwheelnumbering":{
+		"prefix":"showwheelnumbering",
+		"body":[
+			"\\showwheelnumbering"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidewheelnumbering":{
+		"prefix":"hidewheelnumbering",
+		"body":[
+			"\\hidewheelnumbering"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"showbonds":{
+		"prefix":"showbonds",
+		"body":[
+			"\\showbonds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hidebonds":{
+		"prefix":"hidebonds",
+		"body":[
+			"\\hidebonds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfamily{}{}":{
+		"prefix":"setfamily",
+		"body":[
+			"\\setfamily{${1:text}}{${2:family%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setseries{}{}":{
+		"prefix":"setseries",
+		"body":[
+			"\\setseries{${1:text}}{${2:series%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setshape{}{}":{
+		"prefix":"setshape",
+		"body":[
+			"\\setshape{${1:text}}{${2:shape%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setsize{}{}":{
+		"prefix":"setsize",
+		"body":[
+			"\\setsize{${1:text}}{${2:size%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setfont{}{}{}{}{}":{
+		"prefix":"setfont",
+		"body":[
+			"\\setfont{${1:text}}{${2:family}}{${3:series}}{${4:shape}}{${5:size}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsrm":{
+		"prefix":"labelsrm",
+		"body":[
+			"\\labelsrm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelstiny":{
+		"prefix":"labelstiny",
+		"body":[
+			"\\labelstiny"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelssf":{
+		"prefix":"labelssf",
+		"body":[
+			"\\labelssf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsscriptsize":{
+		"prefix":"labelsscriptsize",
+		"body":[
+			"\\labelsscriptsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelstt":{
+		"prefix":"labelstt",
+		"body":[
+			"\\labelstt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsfootnotesize":{
+		"prefix":"labelsfootnotesize",
+		"body":[
+			"\\labelsfootnotesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsbf":{
+		"prefix":"labelsbf",
+		"body":[
+			"\\labelsbf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelssmall":{
+		"prefix":"labelssmall",
+		"body":[
+			"\\labelssmall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsmd":{
+		"prefix":"labelsmd",
+		"body":[
+			"\\labelsmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsnormalsize":{
+		"prefix":"labelsnormalsize",
+		"body":[
+			"\\labelsnormalsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsit":{
+		"prefix":"labelsit",
+		"body":[
+			"\\labelsit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelslarge":{
+		"prefix":"labelslarge",
+		"body":[
+			"\\labelslarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelssl":{
+		"prefix":"labelssl",
+		"body":[
+			"\\labelssl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsLarge":{
+		"prefix":"labelsLarge",
+		"body":[
+			"\\labelsLarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelssc":{
+		"prefix":"labelssc",
+		"body":[
+			"\\labelssc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsLARGE":{
+		"prefix":"labelsLARGE",
+		"body":[
+			"\\labelsLARGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsup":{
+		"prefix":"labelsup",
+		"body":[
+			"\\labelsup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelshuge":{
+		"prefix":"labelshuge",
+		"body":[
+			"\\labelshuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelsHuge":{
+		"prefix":"labelsHuge",
+		"body":[
+			"\\labelsHuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsrm":{
+		"prefix":"membranelabelsrm",
+		"body":[
+			"\\membranelabelsrm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelssf":{
+		"prefix":"membranelabelssf",
+		"body":[
+			"\\membranelabelssf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelstt":{
+		"prefix":"membranelabelstt",
+		"body":[
+			"\\membranelabelstt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsmd":{
+		"prefix":"membranelabelsmd",
+		"body":[
+			"\\membranelabelsmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsbf":{
+		"prefix":"membranelabelsbf",
+		"body":[
+			"\\membranelabelsbf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsup":{
+		"prefix":"membranelabelsup",
+		"body":[
+			"\\membranelabelsup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsit":{
+		"prefix":"membranelabelsit",
+		"body":[
+			"\\membranelabelsit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelssl":{
+		"prefix":"membranelabelssl",
+		"body":[
+			"\\membranelabelssl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelssc":{
+		"prefix":"membranelabelssc",
+		"body":[
+			"\\membranelabelssc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelstiny":{
+		"prefix":"membranelabelstiny",
+		"body":[
+			"\\membranelabelstiny"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsscriptsize":{
+		"prefix":"membranelabelsscriptsize",
+		"body":[
+			"\\membranelabelsscriptsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsfootnotesize":{
+		"prefix":"membranelabelsfootnotesize",
+		"body":[
+			"\\membranelabelsfootnotesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelssmall":{
+		"prefix":"membranelabelssmall",
+		"body":[
+			"\\membranelabelssmall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsnormalsize":{
+		"prefix":"membranelabelsnormalsize",
+		"body":[
+			"\\membranelabelsnormalsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelslarge":{
+		"prefix":"membranelabelslarge",
+		"body":[
+			"\\membranelabelslarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsLarge":{
+		"prefix":"membranelabelsLarge",
+		"body":[
+			"\\membranelabelsLarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsLARGE":{
+		"prefix":"membranelabelsLARGE",
+		"body":[
+			"\\membranelabelsLARGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelshuge":{
+		"prefix":"membranelabelshuge",
+		"body":[
+			"\\membranelabelshuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"membranelabelsHuge":{
+		"prefix":"membranelabelsHuge",
+		"body":[
+			"\\membranelabelsHuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsrm":{
+		"prefix":"looplabelsrm",
+		"body":[
+			"\\looplabelsrm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelssf":{
+		"prefix":"looplabelssf",
+		"body":[
+			"\\looplabelssf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelstt":{
+		"prefix":"looplabelstt",
+		"body":[
+			"\\looplabelstt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsmd":{
+		"prefix":"looplabelsmd",
+		"body":[
+			"\\looplabelsmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsbf":{
+		"prefix":"looplabelsbf",
+		"body":[
+			"\\looplabelsbf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsup":{
+		"prefix":"looplabelsup",
+		"body":[
+			"\\looplabelsup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsit":{
+		"prefix":"looplabelsit",
+		"body":[
+			"\\looplabelsit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelssl":{
+		"prefix":"looplabelssl",
+		"body":[
+			"\\looplabelssl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelssc":{
+		"prefix":"looplabelssc",
+		"body":[
+			"\\looplabelssc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelstiny":{
+		"prefix":"looplabelstiny",
+		"body":[
+			"\\looplabelstiny"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsscriptsize":{
+		"prefix":"looplabelsscriptsize",
+		"body":[
+			"\\looplabelsscriptsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsfootnotesize":{
+		"prefix":"looplabelsfootnotesize",
+		"body":[
+			"\\looplabelsfootnotesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelssmall":{
+		"prefix":"looplabelssmall",
+		"body":[
+			"\\looplabelssmall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsnormalsize":{
+		"prefix":"looplabelsnormalsize",
+		"body":[
+			"\\looplabelsnormalsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelslarge":{
+		"prefix":"looplabelslarge",
+		"body":[
+			"\\looplabelslarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsLarge":{
+		"prefix":"looplabelsLarge",
+		"body":[
+			"\\looplabelsLarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsLARGE":{
+		"prefix":"looplabelsLARGE",
+		"body":[
+			"\\looplabelsLARGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelshuge":{
+		"prefix":"looplabelshuge",
+		"body":[
+			"\\looplabelshuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"looplabelsHuge":{
+		"prefix":"looplabelsHuge",
+		"body":[
+			"\\looplabelsHuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsrm":{
+		"prefix":"TMlabelsrm",
+		"body":[
+			"\\TMlabelsrm"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelssf":{
+		"prefix":"TMlabelssf",
+		"body":[
+			"\\TMlabelssf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelstt":{
+		"prefix":"TMlabelstt",
+		"body":[
+			"\\TMlabelstt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsmd":{
+		"prefix":"TMlabelsmd",
+		"body":[
+			"\\TMlabelsmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsbf":{
+		"prefix":"TMlabelsbf",
+		"body":[
+			"\\TMlabelsbf"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsup":{
+		"prefix":"TMlabelsup",
+		"body":[
+			"\\TMlabelsup"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsit":{
+		"prefix":"TMlabelsit",
+		"body":[
+			"\\TMlabelsit"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelssl":{
+		"prefix":"TMlabelssl",
+		"body":[
+			"\\TMlabelssl"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelssc":{
+		"prefix":"TMlabelssc",
+		"body":[
+			"\\TMlabelssc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelstiny":{
+		"prefix":"TMlabelstiny",
+		"body":[
+			"\\TMlabelstiny"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsscriptsize":{
+		"prefix":"TMlabelsscriptsize",
+		"body":[
+			"\\TMlabelsscriptsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsfootnotesize":{
+		"prefix":"TMlabelsfootnotesize",
+		"body":[
+			"\\TMlabelsfootnotesize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelssmall":{
+		"prefix":"TMlabelssmall",
+		"body":[
+			"\\TMlabelssmall"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsnormalsize":{
+		"prefix":"TMlabelsnormalsize",
+		"body":[
+			"\\TMlabelsnormalsize"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelslarge":{
+		"prefix":"TMlabelslarge",
+		"body":[
+			"\\TMlabelslarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsLarge":{
+		"prefix":"TMlabelsLarge",
+		"body":[
+			"\\TMlabelsLarge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsLARGE":{
+		"prefix":"TMlabelsLARGE",
+		"body":[
+			"\\TMlabelsLARGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelshuge":{
+		"prefix":"TMlabelshuge",
+		"body":[
+			"\\TMlabelshuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TMlabelsHuge":{
+		"prefix":"TMlabelsHuge",
+		"body":[
+			"\\TMlabelsHuge"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TeXtopo":{
+		"prefix":"TeXtopo",
+		"body":[
+			"\\TeXtopo"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -1487,36 +1672,40 @@
 			"\\begin{textopo}",
 				"\t$1",
 			"\\end{textopo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"helicalwheel":{
-		"prefix":"helicalwheel",
-		"body":[
-			"\\begin{helicalwheel}",
-				"\t$1",
-			"\\end{helicalwheel}"
-		]
-	},
-
-
-	"textopo":{
+	"textopo[]":{
 		"prefix":"textopo",
 		"body":[
 			"\\begin{textopo}",
-				"\t$1",
+				"\t[${1:parameter-file%file}]",
 			"\\end{textopo}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"helicalwheel":{
+	"helicalwheel{}":{
 		"prefix":"helicalwheel",
 		"body":[
 			"\\begin{helicalwheel}",
-				"\t$1",
+				"\t{${1:helix-list}}",
 			"\\end{helicalwheel}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"helicalwheel[]{}":{
+		"prefix":"helicalwheel",
+		"body":[
+			"\\begin{helicalwheel}",
+				"\t[${2:parameter-file%file}]{${1:helix-list}}",
+			"\\end{helicalwheel}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

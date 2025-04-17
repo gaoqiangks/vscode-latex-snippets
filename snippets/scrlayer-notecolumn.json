@@ -5,95 +5,8 @@
 		"prefix":"DeclareNoteColumn",
 		"body":[
 			"\\DeclareNoteColumn{${1:note-column name}}"
-		]
-	},
-
-
-	"DeclareNewNoteColumn{}":{
-		"prefix":"DeclareNewNoteColumn",
-		"body":[
-			"\\DeclareNewNoteColumn{${1:note-column name}}"
-		]
-	},
-
-
-	"ProvideNoteColumn{}":{
-		"prefix":"ProvideNoteColumn",
-		"body":[
-			"\\ProvideNoteColumn{${1:note-column name}}"
-		]
-	},
-
-
-	"RedeclareNoteColumn{}":{
-		"prefix":"RedeclareNoteColumn",
-		"body":[
-			"\\RedeclareNoteColumn{${1:note-column name}}"
-		]
-	},
-
-
-	"makenote{}":{
-		"prefix":"makenote",
-		"body":[
-			"\\makenote{${1:note%text}}"
-		]
-	},
-
-
-	"restoreinnote":{
-		"prefix":"restoreinnote",
-		"body":[
-			"\\restoreinnote"
-		]
-	},
-
-
-	"clearnotecolumn":{
-		"prefix":"clearnotecolumn",
-		"body":[
-			"\\clearnotecolumn"
-		]
-	},
-
-
-	"clearnotecolumns":{
-		"prefix":"clearnotecolumns",
-		"body":[
-			"\\clearnotecolumns"
-		]
-	},
-
-
-	"syncwithnotecolumn":{
-		"prefix":"syncwithnotecolumn",
-		"body":[
-			"\\syncwithnotecolumn"
-		]
-	},
-
-
-	"syncwithnotecolumns":{
-		"prefix":"syncwithnotecolumns",
-		"body":[
-			"\\syncwithnotecolumns"
-		]
-	},
-
-
-	"makenote*{}":{
-		"prefix":"*makenote",
-		"body":[
-			"\\makenote*{${1:note%text}}"
-		]
-	},
-
-
-	"makenote*[]{}":{
-		"prefix":"*makenote",
-		"body":[
-			"\\makenote*[${2:note-column name}]{${1:note%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +14,17 @@
 		"prefix":"DeclareNoteColumn",
 		"body":[
 			"\\DeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareNewNoteColumn{}":{
+		"prefix":"DeclareNewNoteColumn",
+		"body":[
+			"\\DeclareNewNoteColumn{${1:note-column name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +32,17 @@
 		"prefix":"DeclareNewNoteColumn",
 		"body":[
 			"\\DeclareNewNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideNoteColumn{}":{
+		"prefix":"ProvideNoteColumn",
+		"body":[
+			"\\ProvideNoteColumn{${1:note-column name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +50,17 @@
 		"prefix":"ProvideNoteColumn",
 		"body":[
 			"\\ProvideNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RedeclareNoteColumn{}":{
+		"prefix":"RedeclareNoteColumn",
+		"body":[
+			"\\RedeclareNoteColumn{${1:note-column name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +68,17 @@
 		"prefix":"RedeclareNoteColumn",
 		"body":[
 			"\\RedeclareNoteColumn[${2:options%keyvals}]{${1:note-column name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"makenote{}":{
+		"prefix":"makenote",
+		"body":[
+			"\\makenote{${1:note%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +86,44 @@
 		"prefix":"makenote",
 		"body":[
 			"\\makenote[${2:note-column name}]{${1:note%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"makenote*{}":{
+		"prefix":"*makenote",
+		"body":[
+			"\\makenote*{${1:note%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"makenote*[]{}":{
+		"prefix":"*makenote",
+		"body":[
+			"\\makenote*[${2:note-column name}]{${1:note%text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"restoreinnote":{
+		"prefix":"restoreinnote",
+		"body":[
+			"\\restoreinnote"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"clearnotecolumn":{
+		"prefix":"clearnotecolumn",
+		"body":[
+			"\\clearnotecolumn"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +131,17 @@
 		"prefix":"clearnotecolumn",
 		"body":[
 			"\\clearnotecolumn[${1:note-column name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"clearnotecolumns":{
+		"prefix":"clearnotecolumns",
+		"body":[
+			"\\clearnotecolumns"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +149,17 @@
 		"prefix":"clearnotecolumns",
 		"body":[
 			"\\clearnotecolumns[${1:note-column name list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"syncwithnotecolumn":{
+		"prefix":"syncwithnotecolumn",
+		"body":[
+			"\\syncwithnotecolumn"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +167,17 @@
 		"prefix":"syncwithnotecolumn",
 		"body":[
 			"\\syncwithnotecolumn[${1:note-column name}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"syncwithnotecolumns":{
+		"prefix":"syncwithnotecolumns",
+		"body":[
+			"\\syncwithnotecolumns"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,6 +185,7 @@
 		"prefix":"syncwithnotecolumns",
 		"body":[
 			"\\syncwithnotecolumns[${1:note-column name list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

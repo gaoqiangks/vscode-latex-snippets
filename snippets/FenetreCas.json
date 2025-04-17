@@ -5,15 +5,8 @@
 		"prefix":"LigneCalculsGeogebra",
 		"body":[
 			"\\LigneCalculsGeogebra{${1:commande}}{${2:résultat}}"
-		]
-	},
-
-
-	"LigneCalculsXcas{}{}":{
-		"prefix":"LigneCalculsXcas",
-		"body":[
-			"\\LigneCalculsXcas{${1:commande}}{${2:résultat}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"LigneCalculsGeogebra",
 		"body":[
 			"\\LigneCalculsGeogebra[${3:clés%keyvals}]{${1:commande}}{${2:résultat}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"LigneCalculsXcas{}{}":{
+		"prefix":"LigneCalculsXcas",
+		"body":[
+			"\\LigneCalculsXcas{${1:commande}}{${2:résultat}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"LigneCalculsXcas",
 		"body":[
 			"\\LigneCalculsXcas[${3:clés%keyvals}]{${1:commande}}{${2:résultat}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -39,57 +43,41 @@
 			"\\begin{CalculFormelGeogebra}",
 				"\t$1",
 			"\\end{CalculFormelGeogebra}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"CalculFormelGeogebra":{
+	"CalculFormelGeogebra<>":{
 		"prefix":"CalculFormelGeogebra",
 		"body":[
 			"\\begin{CalculFormelGeogebra}",
-				"\t$1",
+				"\t<${1:options tikz}>",
 			"\\end{CalculFormelGeogebra}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"CalculFormelXcas":{
-		"prefix":"CalculFormelXcas",
-		"body":[
-			"\\begin{CalculFormelXcas}",
-				"\t$1",
-			"\\end{CalculFormelXcas}"
-		]
-	},
-
-
-	"CalculFormelXcas":{
-		"prefix":"CalculFormelXcas",
-		"body":[
-			"\\begin{CalculFormelXcas}",
-				"\t$1",
-			"\\end{CalculFormelXcas}"
-		]
-	},
-
-
-	"CalculFormelGeogebra":{
+	"CalculFormelGeogebra[]":{
 		"prefix":"CalculFormelGeogebra",
 		"body":[
 			"\\begin{CalculFormelGeogebra}",
-				"\t$1",
+				"\t[${1:clés%keyvals}]",
 			"\\end{CalculFormelGeogebra}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"CalculFormelGeogebra":{
+	"CalculFormelGeogebra[]<>":{
 		"prefix":"CalculFormelGeogebra",
 		"body":[
 			"\\begin{CalculFormelGeogebra}",
-				"\t$1",
+				"\t[${1:clés%keyvals}]<${2:options tikz}>",
 			"\\end{CalculFormelGeogebra}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -99,16 +87,40 @@
 			"\\begin{CalculFormelXcas}",
 				"\t$1",
 			"\\end{CalculFormelXcas}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"CalculFormelXcas":{
+	"CalculFormelXcas<>":{
 		"prefix":"CalculFormelXcas",
 		"body":[
 			"\\begin{CalculFormelXcas}",
-				"\t$1",
+				"\t<${1:options tikz}>",
 			"\\end{CalculFormelXcas}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"CalculFormelXcas[]":{
+		"prefix":"CalculFormelXcas",
+		"body":[
+			"\\begin{CalculFormelXcas}",
+				"\t[${1:clés%keyvals}]",
+			"\\end{CalculFormelXcas}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"CalculFormelXcas[]<>":{
+		"prefix":"CalculFormelXcas",
+		"body":[
+			"\\begin{CalculFormelXcas}",
+				"\t[${1:clés%keyvals}]<${2:options tikz}>",
+			"\\end{CalculFormelXcas}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

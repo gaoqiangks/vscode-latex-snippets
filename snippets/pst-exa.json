@@ -5,7 +5,8 @@
 		"prefix":"hwidth",
 		"body":[
 			"\\hwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"noaccsupp",
 		"body":[
 			"\\noaccsupp{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,27 +25,19 @@
 			"\\begin{PSTcode}",
 				"\t$1",
 			"\\end{PSTcode}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"PSTexample":{
-		"prefix":"PSTexample",
-		"body":[
-			"\\begin{PSTexample}",
-				"\t$1",
-			"\\end{PSTexample}"
-		]
-	},
-
-
-	"PSTcode":{
+	"PSTcode[]":{
 		"prefix":"PSTcode",
 		"body":[
 			"\\begin{PSTcode}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{PSTcode}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,6 +47,18 @@
 			"\\begin{PSTexample}",
 				"\t$1",
 			"\\end{PSTexample}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PSTexample[]":{
+		"prefix":"PSTexample",
+		"body":[
+			"\\begin{PSTexample}",
+				"\t[${1:options%keyvals}]",
+			"\\end{PSTexample}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

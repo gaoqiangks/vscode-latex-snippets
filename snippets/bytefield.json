@@ -5,143 +5,8 @@
 		"prefix":"bitbox",
 		"body":[
 			"\\bitbox{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"wordbox{}{}":{
-		"prefix":"wordbox",
-		"body":[
-			"\\wordbox{${1:width}}{${2:text}}"
-		]
-	},
-
-
-	"bitboxes{}{}":{
-		"prefix":"bitboxes",
-		"body":[
-			"\\bitboxes{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitheader{}":{
-		"prefix":"bitheader",
-		"body":[
-			"\\bitheader{${1:bit-positions}}"
-		]
-	},
-
-
-	"skippedwords":{
-		"prefix":"skippedwords",
-		"body":[
-			"\\skippedwords"
-		]
-	},
-
-
-	"bytefieldsetup{}":{
-		"prefix":"bytefieldsetup",
-		"body":[
-			"\\bytefieldsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"amp":{
-		"prefix":"amp",
-		"body":[
-			"\\amp"
-		]
-	},
-
-
-	"bitwidth":{
-		"prefix":"bitwidth",
-		"body":[
-			"\\bitwidth"
-		]
-	},
-
-
-	"byteheight":{
-		"prefix":"byteheight",
-		"body":[
-			"\\byteheight"
-		]
-	},
-
-
-	"curlyshrinkage":{
-		"prefix":"curlyshrinkage",
-		"body":[
-			"\\curlyshrinkage"
-		]
-	},
-
-
-	"curlyspace":{
-		"prefix":"curlyspace",
-		"body":[
-			"\\curlyspace"
-		]
-	},
-
-
-	"labelspace":{
-		"prefix":"labelspace",
-		"body":[
-			"\\labelspace"
-		]
-	},
-
-
-	"heightunits":{
-		"prefix":"heightunits",
-		"body":[
-			"\\heightunits"
-		]
-	},
-
-
-	"widthunits":{
-		"prefix":"widthunits",
-		"body":[
-			"\\widthunits"
-		]
-	},
-
-
-	"bitboxes*{}{}":{
-		"prefix":"*bitboxes",
-		"body":[
-			"\\bitboxes*{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*[]{}{}":{
-		"prefix":"*bitboxes",
-		"body":[
-			"\\bitboxes*[${3:sides}]{${1:width}}{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*{}[]{}":{
-		"prefix":"*bitboxes",
-		"body":[
-			"\\bitboxes*{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
-		]
-	},
-
-
-	"bitboxes*[]{}[]{}":{
-		"prefix":"*bitboxes",
-		"body":[
-			"\\bitboxes*[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +14,8 @@
 		"prefix":"bitbox",
 		"body":[
 			"\\bitbox[${3:sides}]{${1:width}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +23,8 @@
 		"prefix":"bitbox",
 		"body":[
 			"\\bitbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +32,17 @@
 		"prefix":"bitbox",
 		"body":[
 			"\\bitbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"wordbox{}{}":{
+		"prefix":"wordbox",
+		"body":[
+			"\\wordbox{${1:width}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +50,8 @@
 		"prefix":"wordbox",
 		"body":[
 			"\\wordbox[${3:sides}]{${1:width}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +59,8 @@
 		"prefix":"wordbox",
 		"body":[
 			"\\wordbox{${1:width}}[${3:options%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -189,7 +68,17 @@
 		"prefix":"wordbox",
 		"body":[
 			"\\wordbox[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bitboxes{}{}":{
+		"prefix":"bitboxes",
+		"body":[
+			"\\bitboxes{${1:width}}{${2:tokens}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +86,8 @@
 		"prefix":"bitboxes",
 		"body":[
 			"\\bitboxes[${3:sides}]{${1:width}}{${2:tokens}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +95,8 @@
 		"prefix":"bitboxes",
 		"body":[
 			"\\bitboxes{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +104,53 @@
 		"prefix":"bitboxes",
 		"body":[
 			"\\bitboxes[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bitboxes*{}{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*{${1:width}}{${2:tokens}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bitboxes*[]{}{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*[${3:sides}]{${1:width}}{${2:tokens}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bitboxes*{}[]{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*{${1:width}}[${3:options%keyvals}]{${2:tokens}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bitboxes*[]{}[]{}":{
+		"prefix":"*bitboxes",
+		"body":[
+			"\\bitboxes*[${3:sides}]{${1:width}}[${4:options%keyvals}]{${2:tokens}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bitheader{}":{
+		"prefix":"bitheader",
+		"body":[
+			"\\bitheader{${1:bit-positions}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,66 +158,163 @@
 		"prefix":"bitheader",
 		"body":[
 			"\\bitheader[${2:options%keyvals}]{${1:bit-positions}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"bytefield":{
+	"skippedwords":{
+		"prefix":"skippedwords",
+		"body":[
+			"\\skippedwords"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bytefieldsetup{}":{
+		"prefix":"bytefieldsetup",
+		"body":[
+			"\\bytefieldsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"amp":{
+		"prefix":"amp",
+		"body":[
+			"\\amp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bitwidth":{
+		"prefix":"bitwidth",
+		"body":[
+			"\\bitwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"byteheight":{
+		"prefix":"byteheight",
+		"body":[
+			"\\byteheight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curlyshrinkage":{
+		"prefix":"curlyshrinkage",
+		"body":[
+			"\\curlyshrinkage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"curlyspace":{
+		"prefix":"curlyspace",
+		"body":[
+			"\\curlyspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"labelspace":{
+		"prefix":"labelspace",
+		"body":[
+			"\\labelspace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"heightunits":{
+		"prefix":"heightunits",
+		"body":[
+			"\\heightunits"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"widthunits":{
+		"prefix":"widthunits",
+		"body":[
+			"\\widthunits"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"bytefield{}":{
 		"prefix":"bytefield",
 		"body":[
 			"\\begin{bytefield}",
-				"\t$1",
+				"\t{${1:bit-width}}",
 			"\\end{bytefield}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"rightwordgroup":{
-		"prefix":"rightwordgroup",
-		"body":[
-			"\\begin{rightwordgroup}",
-				"\t$1",
-			"\\end{rightwordgroup}"
-		]
-	},
-
-
-	"leftwordgroup":{
-		"prefix":"leftwordgroup",
-		"body":[
-			"\\begin{leftwordgroup}",
-				"\t$1",
-			"\\end{leftwordgroup}"
-		]
-	},
-
-
-	"bytefield":{
+	"bytefield[]{}":{
 		"prefix":"bytefield",
 		"body":[
 			"\\begin{bytefield}",
-				"\t$1",
+				"\t[${2:options%keyvals}]{${1:bit-width}}",
 			"\\end{bytefield}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"rightwordgroup":{
+	"rightwordgroup{}":{
 		"prefix":"rightwordgroup",
 		"body":[
 			"\\begin{rightwordgroup}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{rightwordgroup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"leftwordgroup":{
+	"rightwordgroup[]{}":{
+		"prefix":"rightwordgroup",
+		"body":[
+			"\\begin{rightwordgroup}",
+				"\t[${2:options%keyvals}]{${1:text}}",
+			"\\end{rightwordgroup}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"leftwordgroup{}":{
 		"prefix":"leftwordgroup",
 		"body":[
 			"\\begin{leftwordgroup}",
-				"\t$1",
+				"\t{${1:text}}",
 			"\\end{leftwordgroup}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"leftwordgroup[]{}":{
+		"prefix":"leftwordgroup",
+		"body":[
+			"\\begin{leftwordgroup}",
+				"\t[${2:options%keyvals}]{${1:text}}",
+			"\\end{leftwordgroup}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

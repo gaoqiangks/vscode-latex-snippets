@@ -5,7 +5,8 @@
 		"prefix":"Ifdefined",
 		"body":[
 			"\\Ifdefined{${1:arg}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Ifelsedefined",
 		"body":[
 			"\\Ifelsedefined{${1:arg}}{${2:true code}}{${3:false code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"Ifundefined",
 		"body":[
 			"\\Ifundefined{${1:arg}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"Ifelseundefined",
 		"body":[
 			"\\Ifelseundefined{${1:arg}}{${2:true code}}{${3:false code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"Get",
 		"body":[
 			"\\Get{${1:variable}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"GetLang",
 		"body":[
 			"\\GetLang{${1:variable}}{${2:language}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,47 +59,8 @@
 		"prefix":"Set",
 		"body":[
 			"\\Set{${1:variable}}{${2:name}}"
-		]
-	},
-
-
-	"Append{}{}":{
-		"prefix":"Append",
-		"body":[
-			"\\Append{${1:variable}}{${2:text}}"
-		]
-	},
-
-
-	"Unset{}":{
-		"prefix":"Unset",
-		"body":[
-			"\\Unset{${1:variable}}"
-		]
-	},
-
-
-	"DeclareCopyright{}{}{}{}":{
-		"prefix":"DeclareCopyright",
-		"body":[
-			"\\DeclareCopyright{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
-		]
-	},
-
-
-	"Put(){}":{
-		"prefix":"Put",
-		"body":[
-			"\\Put(${2:x},${3:y}){${1:stuff}}"
-		]
-	},
-
-
-	"UseExtension{}":{
-		"prefix":"UseExtension",
-		"body":[
-			"\\UseExtension{${1:extname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,17 @@
 		"prefix":"Set",
 		"body":[
 			"\\Set[${3:language}]{${1:variable}}{${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Append{}{}":{
+		"prefix":"Append",
+		"body":[
+			"\\Append{${1:variable}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +86,17 @@
 		"prefix":"Append",
 		"body":[
 			"\\Append[${3:language}]{${1:variable}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Unset{}":{
+		"prefix":"Unset",
+		"body":[
+			"\\Unset{${1:variable}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +104,17 @@
 		"prefix":"Unset",
 		"body":[
 			"\\Unset[${2:language}]{${1:variable}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareCopyright{}{}{}{}":{
+		"prefix":"DeclareCopyright",
+		"body":[
+			"\\DeclareCopyright{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,6 +122,25 @@
 		"prefix":"DeclareCopyright",
 		"body":[
 			"\\DeclareCopyright[${5:language}]{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Put(){}":{
+		"prefix":"Put",
+		"body":[
+			"\\Put(${2:x},${3:y}){${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UseExtension{}":{
+		"prefix":"UseExtension",
+		"body":[
+			"\\UseExtension{${1:extname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

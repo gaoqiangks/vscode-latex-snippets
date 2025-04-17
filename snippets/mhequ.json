@@ -5,7 +5,8 @@
 		"prefix":"tag",
 		"body":[
 			"\\tag{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"notag",
 		"body":[
 			"\\notag"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"minilab",
 		"body":[
 			"\\minilab{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"setlabtype",
 		"body":[
 			"\\setlabtype{${1:style}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"intertext",
 		"body":[
 			"\\intertext{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"multicol",
 		"body":[
 			"\\multicol{${1:num of cols}}{${2:content}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"computelength",
 		"body":[
 			"\\computelength{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"getlength",
 		"body":[
 			"\\getlength{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"next",
 		"body":[
 			"\\next{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"MHcenter",
 		"body":[
 			"\\MHcenter"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"MHbig",
 		"body":[
 			"\\MHbig"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"openup",
 		"body":[
 			"\\openup"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"displaylines",
 		"body":[
 			"\\displaylines{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"MHsavelabel",
 		"body":[
 			"\\MHsavelabel{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"sublabeltype",
 		"body":[
 			"\\sublabeltype"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"MHgobble",
 		"body":[
 			"\\MHgobble"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"comm",
 		"body":[
 			"\\comm"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"strutdepth",
 		"body":[
 			"\\strutdepth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -151,27 +169,19 @@
 			"\\begin{equ}",
 				"\t$1",
 			"\\end{equ}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"equs":{
-		"prefix":"equs",
-		"body":[
-			"\\begin{equs}",
-				"\t$1",
-			"\\end{equs}"
-		]
-	},
-
-
-	"equ":{
+	"equ[]":{
 		"prefix":"equ",
 		"body":[
 			"\\begin{equ}",
-				"\t$1",
+				"\t[${1:label}]",
 			"\\end{equ}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,16 +191,29 @@
 			"\\begin{equs}",
 				"\t$1",
 			"\\end{equs}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"equs":{
+	"equs[]":{
 		"prefix":"equs",
 		"body":[
 			"\\begin{equs}",
-				"\t$1",
+				"\t[${1:label}]",
 			"\\end{equs}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"equs[][]":{
+		"prefix":"equs",
+		"body":[
+			"\\begin{equs}",
+				"\t[${1:num of cols}][${2:label}]",
+			"\\end{equs}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

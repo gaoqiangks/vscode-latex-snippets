@@ -1,171 +1,12 @@
 {
 
 
-	"framecode{}":{
-		"prefix":"framecode",
-		"body":[
-			"\\framecode{${1:code}}"
-		]
-	},
-
-
-	"flagvariant":{
-		"prefix":"flagvariant",
-		"body":[
-			"\\flagvariant"
-		]
-	},
-
-
-	"flagwidth":{
-		"prefix":"flagwidth",
-		"body":[
-			"\\flagwidth"
-		]
-	},
-
-
-	"flaglength":{
-		"prefix":"flaglength",
-		"body":[
-			"\\flaglength"
-		]
-	},
-
-
-	"flagframe":{
-		"prefix":"flagframe",
-		"body":[
-			"\\flagframe"
-		]
-	},
-
-
-	"framecolor":{
-		"prefix":"framecolor",
-		"body":[
-			"\\framecolor"
-		]
-	},
-
-
-	"stretchfactor":{
-		"prefix":"stretchfactor",
-		"body":[
-			"\\stretchfactor"
-		]
-	},
-
-
-	"hstripesII{}{}":{
-		"prefix":"hstripesII",
-		"body":[
-			"\\hstripesII{${1:color1%color}}{${2:color2%color}}"
-		]
-	},
-
-
-	"hstripesIII{}{}{}":{
-		"prefix":"hstripesIII",
-		"body":[
-			"\\hstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
-		]
-	},
-
-
-	"hstripesIV{}{}{}{}":{
-		"prefix":"hstripesIV",
-		"body":[
-			"\\hstripesIV{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}{${4:color4%color}}"
-		]
-	},
-
-
-	"vstripesII{}{}":{
-		"prefix":"vstripesII",
-		"body":[
-			"\\vstripesII{${1:color1%color}}{${2:color2%color}}"
-		]
-	},
-
-
-	"vstripesIII{}{}{}":{
-		"prefix":"vstripesIII",
-		"body":[
-			"\\vstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
-		]
-	},
-
-
-	"hbar{}{}{}":{
-		"prefix":"hbar",
-		"body":[
-			"\\hbar{${1:color}}{${2:ycoord}}{${3:width}}"
-		]
-	},
-
-
-	"vbar{}{}{}":{
-		"prefix":"vbar",
-		"body":[
-			"\\vbar{${1:color}}{${2:xcoord}}{${3:width}}"
-		]
-	},
-
-
-	"chevron{}{}":{
-		"prefix":"chevron",
-		"body":[
-			"\\chevron{${1:color}}{${2:xcoord}}"
-		]
-	},
-
-
-	"starV{}{}{}{}":{
-		"prefix":"starV",
-		"body":[
-			"\\starV{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
-		]
-	},
-
-
-	"starVI{}{}{}{}":{
-		"prefix":"starVI",
-		"body":[
-			"\\starVI{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
-		]
-	},
-
-
-	"starn{}{}{}{}{}":{
-		"prefix":"starn",
-		"body":[
-			"\\starn{${1:color}}{${2:coord}}{${3:outer radius}}{${4:inner radius}}{${5:angle}}"
-		]
-	},
-
-
-	"moon{}{}{}{}{}":{
-		"prefix":"moon",
-		"body":[
-			"\\moon{${1:color}}{${2:coord1}}{${3:radius1}}{${4:coord2}}{${5:radius2}}"
-		]
-	},
-
-
-	"unionjack{}{}{}{}":{
-		"prefix":"unionjack",
-		"body":[
-			"\\unionjack{${1:xcoord1}}{${2:ycoord1}}{${3:xcoord2}}{${4:ycoord2}}"
-		]
-	},
-
-
 	"worldflag[]{}":{
 		"prefix":"worldflag",
 		"body":[
 			"\\worldflag[${2:options%keyvals}]{${1:flag code}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,16 +14,198 @@
 		"prefix":"flagsdefault",
 		"body":[
 			"\\flagsdefault[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"flagdescription":{
+	"framecode{}":{
+		"prefix":"framecode",
+		"body":[
+			"\\framecode{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flagvariant":{
+		"prefix":"flagvariant",
+		"body":[
+			"\\flagvariant"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flagwidth":{
+		"prefix":"flagwidth",
+		"body":[
+			"\\flagwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flaglength":{
+		"prefix":"flaglength",
+		"body":[
+			"\\flaglength"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flagframe":{
+		"prefix":"flagframe",
+		"body":[
+			"\\flagframe"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"framecolor":{
+		"prefix":"framecolor",
+		"body":[
+			"\\framecolor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stretchfactor":{
+		"prefix":"stretchfactor",
+		"body":[
+			"\\stretchfactor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hstripesII{}{}":{
+		"prefix":"hstripesII",
+		"body":[
+			"\\hstripesII{${1:color1%color}}{${2:color2%color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hstripesIII{}{}{}":{
+		"prefix":"hstripesIII",
+		"body":[
+			"\\hstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hstripesIV{}{}{}{}":{
+		"prefix":"hstripesIV",
+		"body":[
+			"\\hstripesIV{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}{${4:color4%color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vstripesII{}{}":{
+		"prefix":"vstripesII",
+		"body":[
+			"\\vstripesII{${1:color1%color}}{${2:color2%color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vstripesIII{}{}{}":{
+		"prefix":"vstripesIII",
+		"body":[
+			"\\vstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hbar{}{}{}":{
+		"prefix":"hbar",
+		"body":[
+			"\\hbar{${1:color}}{${2:ycoord}}{${3:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"vbar{}{}{}":{
+		"prefix":"vbar",
+		"body":[
+			"\\vbar{${1:color}}{${2:xcoord}}{${3:width}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"chevron{}{}":{
+		"prefix":"chevron",
+		"body":[
+			"\\chevron{${1:color}}{${2:xcoord}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starV{}{}{}{}":{
+		"prefix":"starV",
+		"body":[
+			"\\starV{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starVI{}{}{}{}":{
+		"prefix":"starVI",
+		"body":[
+			"\\starVI{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"starn{}{}{}{}{}":{
+		"prefix":"starn",
+		"body":[
+			"\\starn{${1:color}}{${2:coord}}{${3:outer radius}}{${4:inner radius}}{${5:angle}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"moon{}{}{}{}{}":{
+		"prefix":"moon",
+		"body":[
+			"\\moon{${1:color}}{${2:coord1}}{${3:radius1}}{${4:coord2}}{${5:radius2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"unionjack{}{}{}{}":{
+		"prefix":"unionjack",
+		"body":[
+			"\\unionjack{${1:xcoord1}}{${2:ycoord1}}{${3:xcoord2}}{${4:ycoord2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"flagdescription{}":{
 		"prefix":"flagdescription",
 		"body":[
 			"\\begin{flagdescription}",
-				"\t$1",
+				"\t{${1:aspectratio}}",
 			"\\end{flagdescription}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,23 +5,8 @@
 		"prefix":"josaref",
 		"body":[
 			"\\josaref{${1:label}}"
-		]
-	},
-
-
-	"josarefcmds":{
-		"prefix":"josarefcmds",
-		"body":[
-			"\\josarefcmds"
-		]
-	},
-
-
-	"nojosarefcmds":{
-		"prefix":"nojosarefcmds",
-		"body":[
-			"\\nojosarefcmds"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,8 @@
 		"prefix":"josaref",
 		"body":[
 			"\\josaref[${2:type}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +23,8 @@
 		"prefix":"josaref",
 		"body":[
 			"\\josaref[${2:type}][${3:delim%keyvals}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +32,8 @@
 		"prefix":"ref",
 		"body":[
 			"\\ref[${2:type}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,6 +41,25 @@
 		"prefix":"ref",
 		"body":[
 			"\\ref[${2:type}][${3:delim}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"josarefcmds":{
+		"prefix":"josarefcmds",
+		"body":[
+			"\\josarefcmds"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"nojosarefcmds":{
+		"prefix":"nojosarefcmds",
+		"body":[
+			"\\nojosarefcmds"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

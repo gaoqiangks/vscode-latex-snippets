@@ -1,139 +1,21 @@
 {
 
 
-	"subtitle{}":{
-		"prefix":"subtitle",
-		"body":[
-			"\\subtitle{${1:subtitle%text}}"
-		]
-	},
-
-
-	"institute{}":{
-		"prefix":"institute",
-		"body":[
-			"\\institute{${1:institute%text}}"
-		]
-	},
-
-
-	"inserttitle":{
-		"prefix":"inserttitle",
-		"body":[
-			"\\inserttitle"
-		]
-	},
-
-
-	"insertshorttitle":{
-		"prefix":"insertshorttitle",
-		"body":[
-			"\\insertshorttitle"
-		]
-	},
-
-
-	"insertsubtitle":{
-		"prefix":"insertsubtitle",
-		"body":[
-			"\\insertsubtitle"
-		]
-	},
-
-
-	"insertshortsubtitle":{
-		"prefix":"insertshortsubtitle",
-		"body":[
-			"\\insertshortsubtitle"
-		]
-	},
-
-
-	"insertauthor":{
-		"prefix":"insertauthor",
-		"body":[
-			"\\insertauthor"
-		]
-	},
-
-
-	"insertshortauthor":{
-		"prefix":"insertshortauthor",
-		"body":[
-			"\\insertshortauthor"
-		]
-	},
-
-
-	"insertinstitute":{
-		"prefix":"insertinstitute",
-		"body":[
-			"\\insertinstitute"
-		]
-	},
-
-
-	"insertshortinstitute":{
-		"prefix":"insertshortinstitute",
-		"body":[
-			"\\insertshortinstitute"
-		]
-	},
-
-
-	"insertdate":{
-		"prefix":"insertdate",
-		"body":[
-			"\\insertdate"
-		]
-	},
-
-
-	"insertshortdate":{
-		"prefix":"insertshortdate",
-		"body":[
-			"\\insertshortdate"
-		]
-	},
-
-
-	"fancysection{}":{
-		"prefix":"fancysection",
-		"body":[
-			"\\fancysection{${1:title}}"
-		]
-	},
-
-
-	"fancysubsection{}":{
-		"prefix":"fancysubsection",
-		"body":[
-			"\\fancysubsection{${1:title}}"
-		]
-	},
-
-
-	"fancysubsubsection{}":{
-		"prefix":"fancysubsubsection",
-		"body":[
-			"\\fancysubsubsection{${1:title}}"
-		]
-	},
-
-
-	"phantomsection":{
-		"prefix":"phantomsection",
-		"body":[
-			"\\phantomsection"
-		]
-	},
-
-
 	"title[]{}":{
 		"prefix":"title",
 		"body":[
 			"\\title[${2:short title%text}]{${1:title%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"subtitle{}":{
+		"prefix":"subtitle",
+		"body":[
+			"\\subtitle{${1:subtitle%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +23,8 @@
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle[${2:short subtitle%text}]{${1:subtitle%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +32,17 @@
 		"prefix":"author",
 		"body":[
 			"\\author[${2:short author}]{${1:author}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"institute{}":{
+		"prefix":"institute",
+		"body":[
+			"\\institute{${1:institute%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +50,8 @@
 		"prefix":"institute",
 		"body":[
 			"\\institute[${2:short institute%text}]{${1:institute%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,6 +59,133 @@
 		"prefix":"date",
 		"body":[
 			"\\date[${2:short date}]{${1:date}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"inserttitle":{
+		"prefix":"inserttitle",
+		"body":[
+			"\\inserttitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshorttitle":{
+		"prefix":"insertshorttitle",
+		"body":[
+			"\\insertshorttitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertsubtitle":{
+		"prefix":"insertsubtitle",
+		"body":[
+			"\\insertsubtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshortsubtitle":{
+		"prefix":"insertshortsubtitle",
+		"body":[
+			"\\insertshortsubtitle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertauthor":{
+		"prefix":"insertauthor",
+		"body":[
+			"\\insertauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshortauthor":{
+		"prefix":"insertshortauthor",
+		"body":[
+			"\\insertshortauthor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertinstitute":{
+		"prefix":"insertinstitute",
+		"body":[
+			"\\insertinstitute"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshortinstitute":{
+		"prefix":"insertshortinstitute",
+		"body":[
+			"\\insertshortinstitute"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertdate":{
+		"prefix":"insertdate",
+		"body":[
+			"\\insertdate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"insertshortdate":{
+		"prefix":"insertshortdate",
+		"body":[
+			"\\insertshortdate"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancysection{}":{
+		"prefix":"fancysection",
+		"body":[
+			"\\fancysection{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancysubsection{}":{
+		"prefix":"fancysubsection",
+		"body":[
+			"\\fancysubsection{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fancysubsubsection{}":{
+		"prefix":"fancysubsubsection",
+		"body":[
+			"\\fancysubsubsection{${1:title}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"phantomsection":{
+		"prefix":"phantomsection",
+		"body":[
+			"\\phantomsection"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

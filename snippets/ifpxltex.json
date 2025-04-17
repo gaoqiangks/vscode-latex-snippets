@@ -5,71 +5,8 @@
 		"prefix":"pxlThisTeX",
 		"body":[
 			"\\pxlThisTeX"
-		]
-	},
-
-
-	"pxlThisLaTeX":{
-		"prefix":"pxlThisLaTeX",
-		"body":[
-			"\\pxlThisLaTeX"
-		]
-	},
-
-
-	"pxlThisPLaTeX":{
-		"prefix":"pxlThisPLaTeX",
-		"body":[
-			"\\pxlThisPLaTeX"
-		]
-	},
-
-
-	"IfpxlTeX{}{}{}":{
-		"prefix":"IfpxlTeX",
-		"body":[
-			"\\IfpxlTeX{${1:engine%keyvals}}{${2:true}}{${3:false}}"
-		]
-	},
-
-
-	"IfpxlTeXpxl{}{}{}":{
-		"prefix":"IfpxlTeXpxl",
-		"body":[
-			"\\IfpxlTeXpxl{${1:pdftex cmd}}{${2:xetex cmd}}{${3:luatex cmd}}"
-		]
-	},
-
-
-	"pxlRequireTeX{}":{
-		"prefix":"pxlRequireTeX",
-		"body":[
-			"\\pxlRequireTeX{${1:engine%keyvals}}"
-		]
-	},
-
-
-	"IfpxlTeX*{}{}":{
-		"prefix":"*IfpxlTeX",
-		"body":[
-			"\\IfpxlTeX*{${1:engine%keyvals}}{${2:code}}"
-		]
-	},
-
-
-	"IfpxlTeX*[]{}{}":{
-		"prefix":"*IfpxlTeX",
-		"body":[
-			"\\IfpxlTeX*[${3:T/F}]{${1:engine%keyvals}}{${2:code}}"
-		]
-	},
-
-
-	"IfpxlTeXpxl*{}{}{}{}":{
-		"prefix":"*IfpxlTeXpxl",
-		"body":[
-			"\\IfpxlTeXpxl*{${1:engine1%keyvals}}{${2:engine2%keyvals}}{${3:engine1 cmd}}{${4:engine2 cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,6 +14,79 @@
 		"prefix":"pxlThisTeX",
 		"body":[
 			"\\pxlThisTeX[${1:engine%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pxlThisLaTeX":{
+		"prefix":"pxlThisLaTeX",
+		"body":[
+			"\\pxlThisLaTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pxlThisPLaTeX":{
+		"prefix":"pxlThisPLaTeX",
+		"body":[
+			"\\pxlThisPLaTeX"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfpxlTeX{}{}{}":{
+		"prefix":"IfpxlTeX",
+		"body":[
+			"\\IfpxlTeX{${1:engine%keyvals}}{${2:true}}{${3:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfpxlTeX*{}{}":{
+		"prefix":"*IfpxlTeX",
+		"body":[
+			"\\IfpxlTeX*{${1:engine%keyvals}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IfpxlTeX*[]{}{}":{
+		"prefix":"*IfpxlTeX",
+		"body":[
+			"\\IfpxlTeX*[${3:T/F}]{${1:engine%keyvals}}{${2:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"IfpxlTeXpxl{}{}{}":{
+		"prefix":"IfpxlTeXpxl",
+		"body":[
+			"\\IfpxlTeXpxl{${1:pdftex cmd}}{${2:xetex cmd}}{${3:luatex cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"IfpxlTeXpxl*{}{}{}{}":{
+		"prefix":"*IfpxlTeXpxl",
+		"body":[
+			"\\IfpxlTeXpxl*{${1:engine1%keyvals}}{${2:engine2%keyvals}}{${3:engine1 cmd}}{${4:engine2 cmd}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"pxlRequireTeX{}":{
+		"prefix":"pxlRequireTeX",
+		"body":[
+			"\\pxlRequireTeX{${1:engine%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

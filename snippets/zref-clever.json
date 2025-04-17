@@ -5,87 +5,8 @@
 		"prefix":"zcref",
 		"body":[
 			"\\zcref{${1:labellist}}"
-		]
-	},
-
-
-	"zcpageref{}":{
-		"prefix":"zcpageref",
-		"body":[
-			"\\zcpageref{${1:labellist}}"
-		]
-	},
-
-
-	"zcsetup{}":{
-		"prefix":"zcsetup",
-		"body":[
-			"\\zcsetup{${1:options%keyvals}}"
-		]
-	},
-
-
-	"zcRefTypeSetup{}{}":{
-		"prefix":"zcRefTypeSetup",
-		"body":[
-			"\\zcRefTypeSetup{${1:type}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"zcDeclareLanguage{}":{
-		"prefix":"zcDeclareLanguage",
-		"body":[
-			"\\zcDeclareLanguage{${1:language}}"
-		]
-	},
-
-
-	"zcDeclareLanguageAlias{}{}":{
-		"prefix":"zcDeclareLanguageAlias",
-		"body":[
-			"\\zcDeclareLanguageAlias{${1:language alias}}{${2:aliased language}}"
-		]
-	},
-
-
-	"zcLanguageSetup{}{}":{
-		"prefix":"zcLanguageSetup",
-		"body":[
-			"\\zcLanguageSetup{${1:language}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"zcref*{}":{
-		"prefix":"*zcref",
-		"body":[
-			"\\zcref*{${1:labellist}}"
-		]
-	},
-
-
-	"zcref*[]{}":{
-		"prefix":"*zcref",
-		"body":[
-			"\\zcref*[${2:options%keyvals}]{${1:labellist}}"
-		]
-	},
-
-
-	"zcpageref*{}":{
-		"prefix":"*zcpageref",
-		"body":[
-			"\\zcpageref*{${1:labellist}}"
-		]
-	},
-
-
-	"zcpageref*[]{}":{
-		"prefix":"*zcpageref",
-		"body":[
-			"\\zcpageref*[${2:options%keyvals}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,35 @@
 		"prefix":"zcref",
 		"body":[
 			"\\zcref[${2:options%keyvals}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zcref*{}":{
+		"prefix":"*zcref",
+		"body":[
+			"\\zcref*{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zcref*[]{}":{
+		"prefix":"*zcref",
+		"body":[
+			"\\zcref*[${2:options%keyvals}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zcpageref{}":{
+		"prefix":"zcpageref",
+		"body":[
+			"\\zcpageref{${1:labellist}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +50,53 @@
 		"prefix":"zcpageref",
 		"body":[
 			"\\zcpageref[${2:options%keyvals}]{${1:labellist}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zcpageref*{}":{
+		"prefix":"*zcpageref",
+		"body":[
+			"\\zcpageref*{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zcpageref*[]{}":{
+		"prefix":"*zcpageref",
+		"body":[
+			"\\zcpageref*[${2:options%keyvals}]{${1:labellist}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"zcsetup{}":{
+		"prefix":"zcsetup",
+		"body":[
+			"\\zcsetup{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zcRefTypeSetup{}{}":{
+		"prefix":"zcRefTypeSetup",
+		"body":[
+			"\\zcRefTypeSetup{${1:type}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zcDeclareLanguage{}":{
+		"prefix":"zcDeclareLanguage",
+		"body":[
+			"\\zcDeclareLanguage{${1:language}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +104,25 @@
 		"prefix":"zcDeclareLanguage",
 		"body":[
 			"\\zcDeclareLanguage[${2:options%keyvals}]{${1:language}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"zcDeclareLanguageAlias{}{}":{
+		"prefix":"zcDeclareLanguageAlias",
+		"body":[
+			"\\zcDeclareLanguageAlias{${1:language alias}}{${2:aliased language}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"zcLanguageSetup{}{}":{
+		"prefix":"zcLanguageSetup",
+		"body":[
+			"\\zcLanguageSetup{${1:language}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

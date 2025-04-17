@@ -5,31 +5,8 @@
 		"prefix":"thistime",
 		"body":[
 			"\\thistime"
-		]
-	},
-
-
-	"settime{}":{
-		"prefix":"settime",
-		"body":[
-			"\\settime{${1:time}}"
-		]
-	},
-
-
-	"thistime*":{
-		"prefix":"*thistime",
-		"body":[
-			"\\thistime*"
-		]
-	},
-
-
-	"thistime*[]":{
-		"prefix":"*thistime",
-		"body":[
-			"\\thistime*[${1:delimiter}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,6 +14,34 @@
 		"prefix":"thistime",
 		"body":[
 			"\\thistime[${1:delimiter}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"thistime*":{
+		"prefix":"*thistime",
+		"body":[
+			"\\thistime*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"thistime*[]":{
+		"prefix":"*thistime",
+		"body":[
+			"\\thistime*[${1:delimiter}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"settime{}":{
+		"prefix":"settime",
+		"body":[
+			"\\settime{${1:time}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,31 +5,8 @@
 		"prefix":"sumline",
 		"body":[
 			"\\sumline"
-		]
-	},
-
-
-	"resetsumline":{
-		"prefix":"resetsumline",
-		"body":[
-			"\\resetsumline"
-		]
-	},
-
-
-	"leeg{}":{
-		"prefix":"leeg",
-		"body":[
-			"\\leeg{${1:text}}"
-		]
-	},
-
-
-	"checkfcolumns{}{}":{
-		"prefix":"checkfcolumns",
-		"body":[
-			"\\checkfcolumns{${1:num1}}{${2:num2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,8 @@
 		"prefix":"sumline",
 		"body":[
 			"\\sumline[${1:space-above%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,6 +23,34 @@
 		"prefix":"sumline",
 		"body":[
 			"\\sumline[${1:space-above%l}][${2:space-below%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"resetsumline":{
+		"prefix":"resetsumline",
+		"body":[
+			"\\resetsumline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"leeg{}":{
+		"prefix":"leeg",
+		"body":[
+			"\\leeg{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"checkfcolumns{}{}":{
+		"prefix":"checkfcolumns",
+		"body":[
+			"\\checkfcolumns{${1:num1}}{${2:num2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

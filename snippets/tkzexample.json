@@ -5,7 +5,8 @@
 		"prefix":"tkzexamplebox",
 		"body":[
 			"\\tkzexamplebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tkzexamplewidth",
 		"body":[
 			"\\tkzexamplewidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"tkzFileSavedPrefix",
 		"body":[
 			"\\tkzFileSavedPrefix"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tkzltxexamplebox",
 		"body":[
 			"\\tkzltxexamplebox"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"tkzltxexamplewidth",
 		"body":[
 			"\\tkzltxexamplewidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"tkzref",
 		"body":[
 			"\\tkzref"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"tkzSavedCode",
 		"body":[
 			"\\tkzSavedCode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,26 +68,29 @@
 		"prefix":"tkzSavedCode",
 		"body":[
 			"\\tkzSavedCode[${1:prefix=prefix}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tkzexample":{
+	"tkzexample[]":{
 		"prefix":"tkzexample",
 		"body":[
 			"\\begin{tkzexample}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tkzexample}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tkzltxexample":{
+	"tkzltxexample[]":{
 		"prefix":"tkzltxexample",
 		"body":[
 			"\\begin{tkzltxexample}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tkzltxexample}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

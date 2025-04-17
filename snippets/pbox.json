@@ -5,23 +5,8 @@
 		"prefix":"pbox",
 		"body":[
 			"\\pbox{${1:width}}{${2:contents%text}}"
-		]
-	},
-
-
-	"settominwidth{}{}":{
-		"prefix":"settominwidth",
-		"body":[
-			"\\settominwidth{${1:cmd}}{${2:text}}"
-		]
-	},
-
-
-	"widthofpbox{}":{
-		"prefix":"widthofpbox",
-		"body":[
-			"\\widthofpbox{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +14,8 @@
 		"prefix":"pbox",
 		"body":[
 			"\\pbox[${3:position}]{${1:width}}{${2:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +23,8 @@
 		"prefix":"pbox",
 		"body":[
 			"\\pbox[${3:position}][${4:height}]{${1:width}}{${2:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"pbox",
 		"body":[
 			"\\pbox[${3:position}][${4:height}][${5:inner-pos}]{${1:width}}{${2:contents%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"settominwidth{}{}":{
+		"prefix":"settominwidth",
+		"body":[
+			"\\settominwidth{${1:cmd}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,6 +50,16 @@
 		"prefix":"settominwidth",
 		"body":[
 			"\\settominwidth[${3:max-width}]{${1:cmd}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"widthofpbox{}":{
+		"prefix":"widthofpbox",
+		"body":[
+			"\\widthofpbox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

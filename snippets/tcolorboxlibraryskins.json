@@ -5,7 +5,8 @@
 		"prefix":"tcboxedtitlewidth",
 		"body":[
 			"\\tcboxedtitlewidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tcboxedtitleheight",
 		"body":[
 			"\\tcboxedtitleheight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"tcbstartdraftmode",
 		"body":[
 			"\\tcbstartdraftmode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tcbstopdraftmode",
 		"body":[
 			"\\tcbstopdraftmode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"tcbinterruptdraftmode",
 		"body":[
 			"\\tcbinterruptdraftmode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"tcbcontinuedraftmode",
 		"body":[
 			"\\tcbcontinuedraftmode"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,95 +59,8 @@
 		"prefix":"tcbline",
 		"body":[
 			"\\tcbline"
-		]
-	},
-
-
-	"tcboverlaplower":{
-		"prefix":"tcboverlaplower",
-		"body":[
-			"\\tcboverlaplower"
-		]
-	},
-
-
-	"tcbincludegraphics{}":{
-		"prefix":"tcbincludegraphics",
-		"body":[
-			"\\tcbincludegraphics{${1:imagefile}}"
-		]
-	},
-
-
-	"imagename":{
-		"prefix":"imagename",
-		"body":[
-			"\\imagename"
-		]
-	},
-
-
-	"tcbincludepdf{}":{
-		"prefix":"tcbincludepdf",
-		"body":[
-			"\\tcbincludepdf{${1:file}}"
-		]
-	},
-
-
-	"imagepage":{
-		"prefix":"imagepage",
-		"body":[
-			"\\imagepage"
-		]
-	},
-
-
-	"pdfpages":{
-		"prefix":"pdfpages",
-		"body":[
-			"\\pdfpages"
-		]
-	},
-
-
-	"tcbsettowidthofnode{}{}":{
-		"prefix":"tcbsettowidthofnode",
-		"body":[
-			"\\tcbsettowidthofnode{${1:register}}{${2:node}}"
-		]
-	},
-
-
-	"tcbsetmacrotowidthofnode{}{}":{
-		"prefix":"tcbsetmacrotowidthofnode",
-		"body":[
-			"\\tcbsetmacrotowidthofnode{${1:macro%cmd}}{${2:node}}"
-		]
-	},
-
-
-	"tcbsettoheightofnode{}{}":{
-		"prefix":"tcbsettoheightofnode",
-		"body":[
-			"\\tcbsettoheightofnode{${1:register}}{${2:node}}"
-		]
-	},
-
-
-	"tcbsetmacrotoheightofnode{}{}":{
-		"prefix":"tcbsetmacrotoheightofnode",
-		"body":[
-			"\\tcbsetmacrotoheightofnode{${1:macro%cmd}}{${2:node}}"
-		]
-	},
-
-
-	"tcbhypernode{}{}":{
-		"prefix":"tcbhypernode",
-		"body":[
-			"\\tcbhypernode{${1:macro}}{${2:node}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +68,26 @@
 		"prefix":"*tcbline",
 		"body":[
 			"\\tcbline*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"tcboverlaplower":{
+		"prefix":"tcboverlaplower",
+		"body":[
+			"\\tcboverlaplower"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbincludegraphics{}":{
+		"prefix":"tcbincludegraphics",
+		"body":[
+			"\\tcbincludegraphics{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +95,26 @@
 		"prefix":"tcbincludegraphics",
 		"body":[
 			"\\tcbincludegraphics[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"imagename":{
+		"prefix":"imagename",
+		"body":[
+			"\\imagename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbincludepdf{}":{
+		"prefix":"tcbincludepdf",
+		"body":[
+			"\\tcbincludepdf{${1:file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +122,71 @@
 		"prefix":"tcbincludepdf",
 		"body":[
 			"\\tcbincludepdf[${2:options%keyvals}]{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"imagepage":{
+		"prefix":"imagepage",
+		"body":[
+			"\\imagepage"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"pdfpages":{
+		"prefix":"pdfpages",
+		"body":[
+			"\\pdfpages"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbsettowidthofnode{}{}":{
+		"prefix":"tcbsettowidthofnode",
+		"body":[
+			"\\tcbsettowidthofnode{${1:register}}{${2:node}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbsetmacrotowidthofnode{}{}":{
+		"prefix":"tcbsetmacrotowidthofnode",
+		"body":[
+			"\\tcbsetmacrotowidthofnode{${1:macro%cmd}}{${2:node}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbsettoheightofnode{}{}":{
+		"prefix":"tcbsettoheightofnode",
+		"body":[
+			"\\tcbsettoheightofnode{${1:register}}{${2:node}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbsetmacrotoheightofnode{}{}":{
+		"prefix":"tcbsetmacrotoheightofnode",
+		"body":[
+			"\\tcbsetmacrotoheightofnode{${1:macro%cmd}}{${2:node}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbhypernode{}{}":{
+		"prefix":"tcbhypernode",
+		"body":[
+			"\\tcbhypernode{${1:macro}}{${2:node}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -175,7 +196,8 @@
 			"\\begin{tcbclipframe}",
 				"\t$1",
 			"\\end{tcbclipframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -185,7 +207,8 @@
 			"\\begin{tcbinvclipframe}",
 				"\t$1",
 			"\\end{tcbinvclipframe}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -195,7 +218,8 @@
 			"\\begin{tcbclipinterior}",
 				"\t$1",
 			"\\end{tcbclipinterior}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,6 +229,7 @@
 			"\\begin{tcbcliptitle}",
 				"\t$1",
 			"\\end{tcbcliptitle}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"formulierung",
 		"body":[
 			"\\formulierung{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"hand",
 		"body":[
 			"\\hand"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"jdef",
 		"body":[
 			"\\jdef"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"lonelyhand",
 		"body":[
 			"\\lonelyhand{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"lonelytriangle",
 		"body":[
 			"\\lonelytriangle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"merke",
 		"body":[
 			"\\merke{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"okay",
 		"body":[
 			"\\okay"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"settheme",
 		"body":[
 			"\\settheme{${1:thema}}{${2:datum}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"biggerparskip",
 		"body":[
 			"\\biggerparskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,63 +86,8 @@
 		"prefix":"bspname",
 		"body":[
 			"\\bspname"
-		]
-	},
-
-
-	"fall{}":{
-		"prefix":"fall",
-		"body":[
-			"\\fall{${1:definitionstext%text}}"
-		]
-	},
-
-
-	"greybox{}":{
-		"prefix":"greybox",
-		"body":[
-			"\\greybox{${1:text}}"
-		]
-	},
-
-
-	"jdef{}":{
-		"prefix":"jdef",
-		"body":[
-			"\\jdef{${1:definitionstext%text}}"
-		]
-	},
-
-
-	"lithinweis{}":{
-		"prefix":"lithinweis",
-		"body":[
-			"\\lithinweis{${1:text}}"
-		]
-	},
-
-
-	"litname":{
-		"prefix":"litname",
-		"body":[
-			"\\litname"
-		]
-	},
-
-
-	"merkename":{
-		"prefix":"merkename",
-		"body":[
-			"\\merkename"
-		]
-	},
-
-
-	"resetparskip":{
-		"prefix":"resetparskip",
-		"body":[
-			"\\resetparskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +95,17 @@
 		"prefix":"fall",
 		"body":[
 			"\\fall[${2:quelle}]{${1:definitionstext%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"fall{}":{
+		"prefix":"fall",
+		"body":[
+			"\\fall{${1:definitionstext%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +113,17 @@
 		"prefix":"greybox",
 		"body":[
 			"\\greybox[${2:width}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"greybox{}":{
+		"prefix":"greybox",
+		"body":[
+			"\\greybox{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +131,53 @@
 		"prefix":"jdef",
 		"body":[
 			"\\jdef[${2:quelle}]{${1:definitionstext%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"jdef{}":{
+		"prefix":"jdef",
+		"body":[
+			"\\jdef{${1:definitionstext%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"lithinweis{}":{
+		"prefix":"lithinweis",
+		"body":[
+			"\\lithinweis{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"litname":{
+		"prefix":"litname",
+		"body":[
+			"\\litname"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"merkename":{
+		"prefix":"merkename",
+		"body":[
+			"\\merkename"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetparskip":{
+		"prefix":"resetparskip",
+		"body":[
+			"\\resetparskip"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -167,7 +187,8 @@
 			"\\begin{aufzaehlung}",
 				"\t$1",
 			"\\end{aufzaehlung}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -177,17 +198,19 @@
 			"\\begin{beispiel}",
 				"\t$1",
 			"\\end{beispiel}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"gesetzestext":{
+	"gesetzestext{}{}":{
 		"prefix":"gesetzestext",
 		"body":[
 			"\\begin{gesetzestext}",
-				"\t$1",
+				"\t{${1:paragraph%text}}{${2:ueberschrift%text}}",
 			"\\end{gesetzestext}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +220,8 @@
 			"\\begin{hands}",
 				"\t$1",
 			"\\end{hands}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -207,7 +231,8 @@
 			"\\begin{hinweis}",
 				"\t$1",
 			"\\end{hinweis}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -217,7 +242,8 @@
 			"\\begin{stars}",
 				"\t$1",
 			"\\end{stars}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -227,7 +253,8 @@
 			"\\begin{triangles}",
 				"\t$1",
 			"\\end{triangles}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,6 +264,7 @@
 			"\\begin{uebersicht}",
 				"\t$1",
 			"\\end{uebersicht}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

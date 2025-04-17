@@ -5,87 +5,8 @@
 		"prefix":"readhanja",
 		"body":[
 			"\\readhanja{${1:hanja}}"
-		]
-	},
-
-
-	"readhanjaword{}":{
-		"prefix":"readhanjaword",
-		"body":[
-			"\\readhanjaword{${1:hanja}}"
-		]
-	},
-
-
-	"rwhanja{}":{
-		"prefix":"rwhanja",
-		"body":[
-			"\\rwhanja{${1:hanja}}"
-		]
-	},
-
-
-	"AssignReading{}{}":{
-		"prefix":"AssignReading",
-		"body":[
-			"\\AssignReading{${1:hanja}}{${2:reading}}"
-		]
-	},
-
-
-	"rpSetReading{}":{
-		"prefix":"rpSetReading",
-		"body":[
-			"\\rpSetReading{${1:hanja=reading}}"
-		]
-	},
-
-
-	"grrwhanja{}":{
-		"prefix":"grrwhanja",
-		"body":[
-			"\\grrwhanja{${1:hanja}}"
-		]
-	},
-
-
-	"rwhanjachar{}":{
-		"prefix":"rwhanjachar",
-		"body":[
-			"\\rwhanjachar{${1:hanja}}"
-		]
-	},
-
-
-	"rpRead{}":{
-		"prefix":"rpRead",
-		"body":[
-			"\\rpRead{${1:options}}"
-		]
-	},
-
-
-	"viewCodePoint{}":{
-		"prefix":"viewCodePoint",
-		"body":[
-			"\\viewCodePoint{${1:unicode char}}"
-		]
-	},
-
-
-	"showReadings{}":{
-		"prefix":"showReadings",
-		"body":[
-			"\\showReadings{${1:hanja}}"
-		]
-	},
-
-
-	"viewCodePoint*{}":{
-		"prefix":"*viewCodePoint",
-		"body":[
-			"\\viewCodePoint*{${1:unicode char}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,71 @@
 		"prefix":"readhanja",
 		"body":[
 			"\\readhanja{${1:hanja}}[${2:number}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"readhanjaword{}":{
+		"prefix":"readhanjaword",
+		"body":[
+			"\\readhanjaword{${1:hanja}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rwhanja{}":{
+		"prefix":"rwhanja",
+		"body":[
+			"\\rwhanja{${1:hanja}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AssignReading{}{}":{
+		"prefix":"AssignReading",
+		"body":[
+			"\\AssignReading{${1:hanja}}{${2:reading}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rpSetReading{}":{
+		"prefix":"rpSetReading",
+		"body":[
+			"\\rpSetReading{${1:hanja=reading}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"grrwhanja{}":{
+		"prefix":"grrwhanja",
+		"body":[
+			"\\grrwhanja{${1:hanja}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rwhanjachar{}":{
+		"prefix":"rwhanjachar",
+		"body":[
+			"\\rwhanjachar{${1:hanja}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rpRead{}":{
+		"prefix":"rpRead",
+		"body":[
+			"\\rpRead{${1:options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,6 +86,34 @@
 		"prefix":"rpRead",
 		"body":[
 			"\\rpRead{${1:options}}[${2:hanja=reading}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"viewCodePoint{}":{
+		"prefix":"viewCodePoint",
+		"body":[
+			"\\viewCodePoint{${1:unicode char}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"viewCodePoint*{}":{
+		"prefix":"*viewCodePoint",
+		"body":[
+			"\\viewCodePoint*{${1:unicode char}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"showReadings{}":{
+		"prefix":"showReadings",
+		"body":[
+			"\\showReadings{${1:hanja}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

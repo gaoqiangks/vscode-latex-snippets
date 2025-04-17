@@ -5,207 +5,8 @@
 		"prefix":"rtpara",
 		"body":[
 			"\\rtpara{${1:name%specialDef}}{${2:richtext paragraph%text}}"
-		]
-	},
-
-
-	"span{}{}":{
-		"prefix":"span",
-		"body":[
-			"\\span{${1:options%keyvals}}{${2:richtext string%text}}"
-		]
-	},
-
-
-	"useRV{}":{
-		"prefix":"useRV",
-		"body":[
-			"\\useRV{${1:name%keyvals}}"
-		]
-	},
-
-
-	"useV{}":{
-		"prefix":"useV",
-		"body":[
-			"\\useV{${1:name%keyvals}}"
-		]
-	},
-
-
-	"sub{}":{
-		"prefix":"sub",
-		"body":[
-			"\\sub{${1:text}}"
-		]
-	},
-
-
-	"sup{}":{
-		"prefix":"sup",
-		"body":[
-			"\\sup{${1:text}}"
-		]
-	},
-
-
-	"spc":{
-		"prefix":"spc",
-		"body":[
-			"\\spc"
-		]
-	},
-
-
-	"br":{
-		"prefix":"br",
-		"body":[
-			"\\br"
-		]
-	},
-
-
-	"RV{}":{
-		"prefix":"RV",
-		"body":[
-			"\\RV{${1:rich value}}"
-		]
-	},
-
-
-	"DS{}":{
-		"prefix":"DS",
-		"body":[
-			"\\DS{${1:default style}}"
-		]
-	},
-
-
-	"useDefaultDS":{
-		"prefix":"useDefaultDS",
-		"body":[
-			"\\useDefaultDS"
-		]
-	},
-
-
-	"setDefaultStyle{}{}":{
-		"prefix":"setDefaultStyle",
-		"body":[
-			"\\setDefaultStyle{${1:name%specialDef}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"useDS{}":{
-		"prefix":"useDS",
-		"body":[
-			"\\useDS{${1:name%keyvals}}"
-		]
-	},
-
-
-	"useRVContent{}":{
-		"prefix":"useRVContent",
-		"body":[
-			"\\useRVContent{${1:name%keyvals}}"
-		]
-	},
-
-
-	"useVContent{}":{
-		"prefix":"useVContent",
-		"body":[
-			"\\useVContent{${1:name%keyvals}}"
-		]
-	},
-
-
-	"displayRV{}":{
-		"prefix":"displayRV",
-		"body":[
-			"\\displayRV{${1:name%keyvals}}"
-		]
-	},
-
-
-	"displayV{}":{
-		"prefix":"displayV",
-		"body":[
-			"\\displayV{${1:name%keyvals}}"
-		]
-	},
-
-
-	"contName":{
-		"prefix":"contName",
-		"body":[
-			"\\contName"
-		]
-	},
-
-
-	"displayRtParaName":{
-		"prefix":"displayRtParaName",
-		"body":[
-			"\\displayRtParaName"
-		]
-	},
-
-
-	"makePDFSp":{
-		"prefix":"makePDFSp",
-		"body":[
-			"\\makePDFSp"
-		]
-	},
-
-
-	"makeTeXSp":{
-		"prefix":"makeTeXSp",
-		"body":[
-			"\\makeTeXSp"
-		]
-	},
-
-
-	"makeTeXSpPrnt":{
-		"prefix":"makeTeXSpPrnt",
-		"body":[
-			"\\makeTeXSpPrnt"
-		]
-	},
-
-
-	"resetRtFontKeys":{
-		"prefix":"resetRtFontKeys",
-		"body":[
-			"\\resetRtFontKeys"
-		]
-	},
-
-
-	"rtpdfSPDef":{
-		"prefix":"rtpdfSPDef",
-		"body":[
-			"\\rtpdfSPDef"
-		]
-	},
-
-
-	"rtpdfSPDefPrnt":{
-		"prefix":"rtpdfSPDefPrnt",
-		"body":[
-			"\\rtpdfSPDefPrnt"
-		]
-	},
-
-
-	"rvorvstring{}{}":{
-		"prefix":"rvorvstring",
-		"body":[
-			"\\rvorvstring{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,26 +14,254 @@
 		"prefix":"rtpara",
 		"body":[
 			"\\rtpara[${3:options%keyvals}]{${1:name%specialDef}}{${2:richtext paragraph%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"displayRtPara":{
+	"span{}{}":{
+		"prefix":"span",
+		"body":[
+			"\\span{${1:options%keyvals}}{${2:richtext string%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useRV{}":{
+		"prefix":"useRV",
+		"body":[
+			"\\useRV{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useV{}":{
+		"prefix":"useV",
+		"body":[
+			"\\useV{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sub{}":{
+		"prefix":"sub",
+		"body":[
+			"\\sub{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sup{}":{
+		"prefix":"sup",
+		"body":[
+			"\\sup{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"spc":{
+		"prefix":"spc",
+		"body":[
+			"\\spc"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"br":{
+		"prefix":"br",
+		"body":[
+			"\\br"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RV{}":{
+		"prefix":"RV",
+		"body":[
+			"\\RV{${1:rich value}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"DS{}":{
+		"prefix":"DS",
+		"body":[
+			"\\DS{${1:default style}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useDefaultDS":{
+		"prefix":"useDefaultDS",
+		"body":[
+			"\\useDefaultDS"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setDefaultStyle{}{}":{
+		"prefix":"setDefaultStyle",
+		"body":[
+			"\\setDefaultStyle{${1:name%specialDef}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useDS{}":{
+		"prefix":"useDS",
+		"body":[
+			"\\useDS{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useRVContent{}":{
+		"prefix":"useRVContent",
+		"body":[
+			"\\useRVContent{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"useVContent{}":{
+		"prefix":"useVContent",
+		"body":[
+			"\\useVContent{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"displayRV{}":{
+		"prefix":"displayRV",
+		"body":[
+			"\\displayRV{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"displayV{}":{
+		"prefix":"displayV",
+		"body":[
+			"\\displayV{${1:name%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"contName":{
+		"prefix":"contName",
+		"body":[
+			"\\contName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"displayRtParaName":{
+		"prefix":"displayRtParaName",
+		"body":[
+			"\\displayRtParaName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makePDFSp":{
+		"prefix":"makePDFSp",
+		"body":[
+			"\\makePDFSp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeTeXSp":{
+		"prefix":"makeTeXSp",
+		"body":[
+			"\\makeTeXSp"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"makeTeXSpPrnt":{
+		"prefix":"makeTeXSpPrnt",
+		"body":[
+			"\\makeTeXSpPrnt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"resetRtFontKeys":{
+		"prefix":"resetRtFontKeys",
+		"body":[
+			"\\resetRtFontKeys"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rtpdfSPDef":{
+		"prefix":"rtpdfSPDef",
+		"body":[
+			"\\rtpdfSPDef"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rtpdfSPDefPrnt":{
+		"prefix":"rtpdfSPDefPrnt",
+		"body":[
+			"\\rtpdfSPDefPrnt"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"rvorvstring{}{}":{
+		"prefix":"rvorvstring",
+		"body":[
+			"\\rvorvstring{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"displayRtPara{}":{
 		"prefix":"displayRtPara",
 		"body":[
 			"\\begin{displayRtPara}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{displayRtPara}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"displayRtPara*":{
-		"prefix":"displayRtPara",
+	"displayRtPara*{}":{
+		"prefix":"*displayRtPara",
 		"body":[
 			"\\begin{displayRtPara*}",
-				"\t$1",
+				"\t{${1:name}}",
 			"\\end{displayRtPara*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

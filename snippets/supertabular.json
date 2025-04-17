@@ -1,11 +1,21 @@
 {
 
 
+	"bottomcaption[]{}":{
+		"prefix":"bottomcaption",
+		"body":[
+			"\\bottomcaption[${2:short}]{${1:text}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"bottomcaption{}":{
 		"prefix":"bottomcaption",
 		"body":[
 			"\\bottomcaption{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +23,8 @@
 		"prefix":"setSTheight",
 		"body":[
 			"\\setSTheight{${1:value}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,79 +32,8 @@
 		"prefix":"shrinkheight",
 		"body":[
 			"\\shrinkheight{${1:length}}"
-		]
-	},
-
-
-	"tablecaption{}":{
-		"prefix":"tablecaption",
-		"body":[
-			"\\tablecaption{${1:text}}"
-		]
-	},
-
-
-	"tablefirsthead{}":{
-		"prefix":"tablefirsthead",
-		"body":[
-			"\\tablefirsthead{${1:text}}"
-		]
-	},
-
-
-	"tablehead{}":{
-		"prefix":"tablehead",
-		"body":[
-			"\\tablehead{${1:text}}"
-		]
-	},
-
-
-	"tablelasttail{}":{
-		"prefix":"tablelasttail",
-		"body":[
-			"\\tablelasttail{${1:text}}"
-		]
-	},
-
-
-	"tabletail{}":{
-		"prefix":"tabletail",
-		"body":[
-			"\\tabletail{${1:text}}"
-		]
-	},
-
-
-	"topcaption{}":{
-		"prefix":"topcaption",
-		"body":[
-			"\\topcaption{${1:text}}"
-		]
-	},
-
-
-	"sttraceon":{
-		"prefix":"sttraceon",
-		"body":[
-			"\\sttraceon"
-		]
-	},
-
-
-	"sttraceoff":{
-		"prefix":"sttraceoff",
-		"body":[
-			"\\sttraceoff"
-		]
-	},
-
-
-	"bottomcaption[]{}":{
-		"prefix":"bottomcaption",
-		"body":[
-			"\\bottomcaption[${2:short}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +41,53 @@
 		"prefix":"tablecaption",
 		"body":[
 			"\\tablecaption[${2:short}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tablecaption{}":{
+		"prefix":"tablecaption",
+		"body":[
+			"\\tablecaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablefirsthead{}":{
+		"prefix":"tablefirsthead",
+		"body":[
+			"\\tablefirsthead{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablehead{}":{
+		"prefix":"tablehead",
+		"body":[
+			"\\tablehead{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tablelasttail{}":{
+		"prefix":"tablelasttail",
+		"body":[
+			"\\tablelasttail{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tabletail{}":{
+		"prefix":"tabletail",
+		"body":[
+			"\\tabletail{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,46 +95,78 @@
 		"prefix":"topcaption",
 		"body":[
 			"\\topcaption[${2:short}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"mpsupertabular":{
+	"topcaption{}":{
+		"prefix":"topcaption",
+		"body":[
+			"\\topcaption{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sttraceon":{
+		"prefix":"sttraceon",
+		"body":[
+			"\\sttraceon"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"sttraceoff":{
+		"prefix":"sttraceoff",
+		"body":[
+			"\\sttraceoff"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mpsupertabular{}":{
 		"prefix":"mpsupertabular",
 		"body":[
 			"\\begin{mpsupertabular}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{mpsupertabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"mpsupertabular*":{
-		"prefix":"mpsupertabular",
+	"mpsupertabular*{}":{
+		"prefix":"*mpsupertabular",
 		"body":[
 			"\\begin{mpsupertabular*}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{mpsupertabular*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"supertabular":{
+	"supertabular{}":{
 		"prefix":"supertabular",
 		"body":[
 			"\\begin{supertabular}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{supertabular}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"supertabular*":{
-		"prefix":"supertabular",
+	"supertabular*{}":{
+		"prefix":"*supertabular",
 		"body":[
 			"\\begin{supertabular*}",
-				"\t$1",
+				"\t{${1:preamble}}",
 			"\\end{supertabular*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

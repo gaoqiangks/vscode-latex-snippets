@@ -5,7 +5,8 @@
 		"prefix":"SetBNFLayout",
 		"body":[
 			"\\SetBNFLayout{${1:tblr options}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"SetBNFConfig",
 		"body":[
 			"\\SetBNFConfig{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,36 +25,40 @@
 			"\\begin{bnf}",
 				"\t$1",
 			"\\end{bnf}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bnf":{
+	"bnf[]":{
 		"prefix":"bnf",
 		"body":[
 			"\\begin{bnf}",
-				"\t$1",
+				"\t[${1:tblr options}]",
 			"\\end{bnf}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"bnf":{
+	"bnf()":{
 		"prefix":"bnf",
 		"body":[
 			"\\begin{bnf}",
-				"\t$1",
+				"\t(${1:options%keyvals})",
 			"\\end{bnf}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"bnf":{
+	"bnf()[]":{
 		"prefix":"bnf",
 		"body":[
 			"\\begin{bnf}",
-				"\t$1",
+				"\t(${2:options%keyvals})[${1:tblr options}]",
 			"\\end{bnf}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

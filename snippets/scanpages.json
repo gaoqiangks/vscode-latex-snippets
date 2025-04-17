@@ -5,63 +5,8 @@
 		"prefix":"scanpage",
 		"body":[
 			"\\scanpage{${1:imagefile}}"
-		]
-	},
-
-
-	"initviewport{}{}{}{}{}":{
-		"prefix":"initviewport",
-		"body":[
-			"\\initviewport{${1:scale}}{${2:llx%l}}{${3:lly%l}}{${4:w%l}}{${5:h%l}}"
-		]
-	},
-
-
-	"whitesq(){}":{
-		"prefix":"whitesq",
-		"body":[
-			"\\whitesq(${2:x},${3:y}){${1:scale}}"
-		]
-	},
-
-
-	"whitecirc(){}":{
-		"prefix":"whitecirc",
-		"body":[
-			"\\whitecirc(${2:x},${3:y}){${1:scale}}"
-		]
-	},
-
-
-	"origpgcmd":{
-		"prefix":"origpgcmd",
-		"body":[
-			"\\origpgcmd"
-		]
-	},
-
-
-	"origpgnum":{
-		"prefix":"origpgnum",
-		"body":[
-			"\\origpgnum"
-		]
-	},
-
-
-	"putn(){}":{
-		"prefix":"putn",
-		"body":[
-			"\\putn(${2:x},${3:y}){${1:stuff}}"
-		]
-	},
-
-
-	"thegrid{}{}":{
-		"prefix":"thegrid",
-		"body":[
-			"\\thegrid{${1:width}}{${2:height}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +14,26 @@
 		"prefix":"scanpage",
 		"body":[
 			"\\scanpage[${2:options%keyvals}]{${1:imagefile}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"initviewport{}{}{}{}{}":{
+		"prefix":"initviewport",
+		"body":[
+			"\\initviewport{${1:scale}}{${2:llx%l}}{${3:lly%l}}{${4:w%l}}{${5:h%l}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"whitesq(){}":{
+		"prefix":"whitesq",
+		"body":[
+			"\\whitesq(${2:x},${3:y}){${1:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +41,17 @@
 		"prefix":"whitesq",
 		"body":[
 			"\\whitesq(${3:x},${4:y}){${1:x-scale}}[${2:y-scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"whitecirc(){}":{
+		"prefix":"whitecirc",
+		"body":[
+			"\\whitecirc(${2:x},${3:y}){${1:scale}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,6 +59,43 @@
 		"prefix":"whitecirc",
 		"body":[
 			"\\whitecirc(${3:x},${4:y}){${1:x-scale}}[${2:y-scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"origpgcmd":{
+		"prefix":"origpgcmd",
+		"body":[
+			"\\origpgcmd"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"origpgnum":{
+		"prefix":"origpgnum",
+		"body":[
+			"\\origpgnum"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"putn(){}":{
+		"prefix":"putn",
+		"body":[
+			"\\putn(${2:x},${3:y}){${1:stuff}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"thegrid{}{}":{
+		"prefix":"thegrid",
+		"body":[
+			"\\thegrid{${1:width}}{${2:height}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

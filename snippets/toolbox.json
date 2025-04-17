@@ -5,255 +5,8 @@
 		"prefix":"toolboxMakeDef",
 		"body":[
 			"\\toolboxMakeDef{${1:name}}{${2:replacement}}"
-		]
-	},
-
-
-	"toolboxFreeDef{}":{
-		"prefix":"toolboxFreeDef",
-		"body":[
-			"\\toolboxFreeDef{${1:name}}"
-		]
-	},
-
-
-	"toolboxGobbleNext{}":{
-		"prefix":"toolboxGobbleNext",
-		"body":[
-			"\\toolboxGobbleNext{${1:cmd}}"
-		]
-	},
-
-
-	"toolboxIfNextToken{}{}{}":{
-		"prefix":"toolboxIfNextToken",
-		"body":[
-			"\\toolboxIfNextToken{${1:token}}{${2:if}}{${3:else}}"
-		]
-	},
-
-
-	"toolboxToken":{
-		"prefix":"toolboxToken",
-		"body":[
-			"\\toolboxToken"
-		]
-	},
-
-
-	"toolboxIfNextGobbling{}{}{}":{
-		"prefix":"toolboxIfNextGobbling",
-		"body":[
-			"\\toolboxIfNextGobbling{${1:token}}{${2:if}}{${3:else}}"
-		]
-	},
-
-
-	"toolboxIfEmpty{}{}{}":{
-		"prefix":"toolboxIfEmpty",
-		"body":[
-			"\\toolboxIfEmpty{${1:arg}}{${2:if}}{${3:else}}"
-		]
-	},
-
-
-	"toolboxIfX{}{}{}{}":{
-		"prefix":"toolboxIfX",
-		"body":[
-			"\\toolboxIfX{${1:arg1}}{${2:arg2}}{${3:if}}{${4:else}}"
-		]
-	},
-
-
-	"toolboxIfElse{}{}{}":{
-		"prefix":"toolboxIfElse",
-		"body":[
-			"\\toolboxIfElse{${1:ifcmd}}{${2:if}}{${3:else}}"
-		]
-	},
-
-
-	"toolboxLoop{}{}":{
-		"prefix":"toolboxLoop",
-		"body":[
-			"\\toolboxLoop{${1:items}}{${2:action}}"
-		]
-	},
-
-
-	"toolboxLoopName{}{}{}":{
-		"prefix":"toolboxLoopName",
-		"body":[
-			"\\toolboxLoopName{${1:name}}{${2:items}}{${3:action}}"
-		]
-	},
-
-
-	"toolboxTokenLoop{}{}":{
-		"prefix":"toolboxTokenLoop",
-		"body":[
-			"\\toolboxTokenLoop{${1:tokens}}{${2:action}}"
-		]
-	},
-
-
-	"toolboxTokenLoopName{}{}{}":{
-		"prefix":"toolboxTokenLoopName",
-		"body":[
-			"\\toolboxTokenLoopName{${1:name}}{${2:tokens}}{${3:action}}"
-		]
-	},
-
-
-	"toolboxSpace":{
-		"prefix":"toolboxSpace",
-		"body":[
-			"\\toolboxSpace"
-		]
-	},
-
-
-	"toolboxSplitAt{}{}{}{}":{
-		"prefix":"toolboxSplitAt",
-		"body":[
-			"\\toolboxSplitAt{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
-		]
-	},
-
-
-	"toolboxMakeSplit{}{}":{
-		"prefix":"toolboxMakeSplit",
-		"body":[
-			"\\toolboxMakeSplit{${1:search}}{${2:cmd}}"
-		]
-	},
-
-
-	"toolboxFreeSplit{}":{
-		"prefix":"toolboxFreeSplit",
-		"body":[
-			"\\toolboxFreeSplit{${1:cmd}}"
-		]
-	},
-
-
-	"toolboxMakeHarmless{}":{
-		"prefix":"toolboxMakeHarmless",
-		"body":[
-			"\\toolboxMakeHarmless{${1:cmd}}"
-		]
-	},
-
-
-	"toolboxDropBrace{}":{
-		"prefix":"toolboxDropBrace",
-		"body":[
-			"\\toolboxDropBrace{${1:cmd}}"
-		]
-	},
-
-
-	"toolboxNewiftrue{}":{
-		"prefix":"toolboxNewiftrue",
-		"body":[
-			"\\toolboxNewiftrue{${1:name}}"
-		]
-	},
-
-
-	"toolboxNewiffalse{}":{
-		"prefix":"toolboxNewiffalse",
-		"body":[
-			"\\toolboxNewiffalse{${1:name}}"
-		]
-	},
-
-
-	"toolboxNewifTrue{}":{
-		"prefix":"toolboxNewifTrue",
-		"body":[
-			"\\toolboxNewifTrue{${1:name}}"
-		]
-	},
-
-
-	"toolboxNewifFalse{}":{
-		"prefix":"toolboxNewifFalse",
-		"body":[
-			"\\toolboxNewifFalse{${1:name}}"
-		]
-	},
-
-
-	"toolboxEmpty":{
-		"prefix":"toolboxEmpty",
-		"body":[
-			"\\toolboxEmpty"
-		]
-	},
-
-
-	"toolboxSpaceToken":{
-		"prefix":"toolboxSpaceToken",
-		"body":[
-			"\\toolboxSpaceToken"
-		]
-	},
-
-
-	"toolboxFirstOfTwo{}{}":{
-		"prefix":"toolboxFirstOfTwo",
-		"body":[
-			"\\toolboxFirstOfTwo{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"toolboxSecondOfTwo{}{}":{
-		"prefix":"toolboxSecondOfTwo",
-		"body":[
-			"\\toolboxSecondOfTwo{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"toolboxGobbleArg{}":{
-		"prefix":"toolboxGobbleArg",
-		"body":[
-			"\\toolboxGobbleArg{${1:arg}}"
-		]
-	},
-
-
-	"toolboxFreeDef*{}":{
-		"prefix":"*toolboxFreeDef",
-		"body":[
-			"\\toolboxFreeDef*{${1:name}}"
-		]
-	},
-
-
-	"toolboxFreeDef*[]{}":{
-		"prefix":"*toolboxFreeDef",
-		"body":[
-			"\\toolboxFreeDef*[${2:prefix}]{${1:name}}"
-		]
-	},
-
-
-	"toolboxSplitAt*{}{}{}{}":{
-		"prefix":"*toolboxSplitAt",
-		"body":[
-			"\\toolboxSplitAt*{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
-		]
-	},
-
-
-	"toolboxMakeSplit*{}{}":{
-		"prefix":"*toolboxMakeSplit",
-		"body":[
-			"\\toolboxMakeSplit*{${1:search}}{${2:cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +14,17 @@
 		"prefix":"toolboxMakeDef",
 		"body":[
 			"\\toolboxMakeDef[${3:prefix}]{${1:name}}{${2:replacement}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toolboxFreeDef{}":{
+		"prefix":"toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,6 +32,277 @@
 		"prefix":"toolboxFreeDef",
 		"body":[
 			"\\toolboxFreeDef[${2:prefix}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"toolboxFreeDef*{}":{
+		"prefix":"*toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toolboxFreeDef*[]{}":{
+		"prefix":"*toolboxFreeDef",
+		"body":[
+			"\\toolboxFreeDef*[${2:prefix}]{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toolboxGobbleNext{}":{
+		"prefix":"toolboxGobbleNext",
+		"body":[
+			"\\toolboxGobbleNext{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxIfNextToken{}{}{}":{
+		"prefix":"toolboxIfNextToken",
+		"body":[
+			"\\toolboxIfNextToken{${1:token}}{${2:if}}{${3:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxToken":{
+		"prefix":"toolboxToken",
+		"body":[
+			"\\toolboxToken"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxIfNextGobbling{}{}{}":{
+		"prefix":"toolboxIfNextGobbling",
+		"body":[
+			"\\toolboxIfNextGobbling{${1:token}}{${2:if}}{${3:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxIfEmpty{}{}{}":{
+		"prefix":"toolboxIfEmpty",
+		"body":[
+			"\\toolboxIfEmpty{${1:arg}}{${2:if}}{${3:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxIfX{}{}{}{}":{
+		"prefix":"toolboxIfX",
+		"body":[
+			"\\toolboxIfX{${1:arg1}}{${2:arg2}}{${3:if}}{${4:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxIfElse{}{}{}":{
+		"prefix":"toolboxIfElse",
+		"body":[
+			"\\toolboxIfElse{${1:ifcmd}}{${2:if}}{${3:else}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxLoop{}{}":{
+		"prefix":"toolboxLoop",
+		"body":[
+			"\\toolboxLoop{${1:items}}{${2:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxLoopName{}{}{}":{
+		"prefix":"toolboxLoopName",
+		"body":[
+			"\\toolboxLoopName{${1:name}}{${2:items}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxTokenLoop{}{}":{
+		"prefix":"toolboxTokenLoop",
+		"body":[
+			"\\toolboxTokenLoop{${1:tokens}}{${2:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxTokenLoopName{}{}{}":{
+		"prefix":"toolboxTokenLoopName",
+		"body":[
+			"\\toolboxTokenLoopName{${1:name}}{${2:tokens}}{${3:action}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxSpace":{
+		"prefix":"toolboxSpace",
+		"body":[
+			"\\toolboxSpace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxSplitAt{}{}{}{}":{
+		"prefix":"toolboxSplitAt",
+		"body":[
+			"\\toolboxSplitAt{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxSplitAt*{}{}{}{}":{
+		"prefix":"*toolboxSplitAt",
+		"body":[
+			"\\toolboxSplitAt*{${1:argument}}{${2:search}}{${3:\\beforestring%cmd}}{${4:\\afterstring%cmd}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toolboxMakeSplit{}{}":{
+		"prefix":"toolboxMakeSplit",
+		"body":[
+			"\\toolboxMakeSplit{${1:search}}{${2:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxMakeSplit*{}{}":{
+		"prefix":"*toolboxMakeSplit",
+		"body":[
+			"\\toolboxMakeSplit*{${1:search}}{${2:cmd}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"toolboxFreeSplit{}":{
+		"prefix":"toolboxFreeSplit",
+		"body":[
+			"\\toolboxFreeSplit{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxMakeHarmless{}":{
+		"prefix":"toolboxMakeHarmless",
+		"body":[
+			"\\toolboxMakeHarmless{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxDropBrace{}":{
+		"prefix":"toolboxDropBrace",
+		"body":[
+			"\\toolboxDropBrace{${1:cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxNewiftrue{}":{
+		"prefix":"toolboxNewiftrue",
+		"body":[
+			"\\toolboxNewiftrue{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxNewiffalse{}":{
+		"prefix":"toolboxNewiffalse",
+		"body":[
+			"\\toolboxNewiffalse{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxNewifTrue{}":{
+		"prefix":"toolboxNewifTrue",
+		"body":[
+			"\\toolboxNewifTrue{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxNewifFalse{}":{
+		"prefix":"toolboxNewifFalse",
+		"body":[
+			"\\toolboxNewifFalse{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxEmpty":{
+		"prefix":"toolboxEmpty",
+		"body":[
+			"\\toolboxEmpty"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxSpaceToken":{
+		"prefix":"toolboxSpaceToken",
+		"body":[
+			"\\toolboxSpaceToken"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxFirstOfTwo{}{}":{
+		"prefix":"toolboxFirstOfTwo",
+		"body":[
+			"\\toolboxFirstOfTwo{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxSecondOfTwo{}{}":{
+		"prefix":"toolboxSecondOfTwo",
+		"body":[
+			"\\toolboxSecondOfTwo{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"toolboxGobbleArg{}":{
+		"prefix":"toolboxGobbleArg",
+		"body":[
+			"\\toolboxGobbleArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

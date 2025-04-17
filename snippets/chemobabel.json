@@ -5,55 +5,8 @@
 		"prefix":"chemobabel",
 		"body":[
 			"\\chemobabel{${1:imagefile}}{${2:obabel options}}"
-		]
-	},
-
-
-	"smilesobabel{}{}":{
-		"prefix":"smilesobabel",
-		"body":[
-			"\\smilesobabel{${1:SMILES notation%definition}}{${2:obabel options}}"
-		]
-	},
-
-
-	"chemobabelimgdir":{
-		"prefix":"chemobabelimgdir",
-		"body":[
-			"\\chemobabelimgdir"
-		]
-	},
-
-
-	"chemobabel*{}":{
-		"prefix":"*chemobabel",
-		"body":[
-			"\\chemobabel*{${1:imagefile}}"
-		]
-	},
-
-
-	"chemobabel*[]{}":{
-		"prefix":"*chemobabel",
-		"body":[
-			"\\chemobabel*[${2:options%keyvals}]{${1:imagefile}}"
-		]
-	},
-
-
-	"smilesobabel*{}":{
-		"prefix":"*smilesobabel",
-		"body":[
-			"\\smilesobabel*{${1:SMILES notation%definition}}"
-		]
-	},
-
-
-	"smilesobabel*[]{}":{
-		"prefix":"*smilesobabel",
-		"body":[
-			"\\smilesobabel*[${2:options%keyvals}]{${1:SMILES notation%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,35 @@
 		"prefix":"chemobabel",
 		"body":[
 			"\\chemobabel[${3:options%keyvals}]{${1:imagefile}}{${2:obabel options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"chemobabel*{}":{
+		"prefix":"*chemobabel",
+		"body":[
+			"\\chemobabel*{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chemobabel*[]{}":{
+		"prefix":"*chemobabel",
+		"body":[
+			"\\chemobabel*[${2:options%keyvals}]{${1:imagefile}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smilesobabel{}{}":{
+		"prefix":"smilesobabel",
+		"body":[
+			"\\smilesobabel{${1:SMILES notation%definition}}{${2:obabel options}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +50,34 @@
 		"prefix":"smilesobabel",
 		"body":[
 			"\\smilesobabel[${3:options%keyvals}]{${1:SMILES notation%definition}}{${2:obabel options}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"smilesobabel*{}":{
+		"prefix":"*smilesobabel",
+		"body":[
+			"\\smilesobabel*{${1:SMILES notation%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"smilesobabel*[]{}":{
+		"prefix":"*smilesobabel",
+		"body":[
+			"\\smilesobabel*[${2:options%keyvals}]{${1:SMILES notation%definition}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"chemobabelimgdir":{
+		"prefix":"chemobabelimgdir",
+		"body":[
+			"\\chemobabelimgdir"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

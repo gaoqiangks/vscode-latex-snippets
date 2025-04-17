@@ -5,7 +5,8 @@
 		"prefix":"quotingsetup",
 		"body":[
 			"\\quotingsetup{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"quotingfont",
 		"body":[
 			"\\quotingfont"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -23,16 +25,18 @@
 			"\\begin{quoting}",
 				"\t$1",
 			"\\end{quoting}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"quoting":{
+	"quoting[]":{
 		"prefix":"quoting",
 		"body":[
 			"\\begin{quoting}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{quoting}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"theTSeval",
 		"body":[
 			"\\theTSeval"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"theTSrun",
 		"body":[
 			"\\theTSrun"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"theTSrunsilent",
 		"body":[
 			"\\theTSrunsilent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"lstinlinesafe",
 		"body":[
 			"\\lstinlinesafe|${1:code}|"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,15 +41,8 @@
 		"prefix":"eval",
 		"body":[
 			"\\eval{${1:code%definition}}"
-		]
-	},
-
-
-	"sage{}":{
-		"prefix":"sage",
-		"body":[
-			"\\sage{${1:code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"eval",
 		"body":[
 			"\\eval[${2:language}]{${1:code%definition}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sage{}":{
+		"prefix":"sage",
+		"body":[
+			"\\sage{${1:code%definition}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -63,27 +70,19 @@
 			"\\begin{run}",
 				"\t$1",
 			"\\end{run}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"runsilent":{
-		"prefix":"runsilent",
-		"body":[
-			"\\begin{runsilent}",
-				"\t$1",
-			"\\end{runsilent}"
-		]
-	},
-
-
-	"run":{
+	"run[]":{
 		"prefix":"run",
 		"body":[
 			"\\begin{run}",
-				"\t$1",
+				"\t[${1:language}]",
 			"\\end{run}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,6 +92,18 @@
 			"\\begin{runsilent}",
 				"\t$1",
 			"\\end{runsilent}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"runsilent[]":{
+		"prefix":"runsilent",
+		"body":[
+			"\\begin{runsilent}",
+				"\t[${1:language}]",
+			"\\end{runsilent}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

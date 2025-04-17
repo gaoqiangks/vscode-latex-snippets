@@ -5,215 +5,8 @@
 		"prefix":"xintCFrac",
 		"body":[
 			"\\xintCFrac{${1:A/B}}"
-		]
-	},
-
-
-	"xintGCFrac{}":{
-		"prefix":"xintGCFrac",
-		"body":[
-			"\\xintGCFrac{${1:expr}}"
-		]
-	},
-
-
-	"xintGGCFrac{}":{
-		"prefix":"xintGGCFrac",
-		"body":[
-			"\\xintGGCFrac{${1:expr}}"
-		]
-	},
-
-
-	"xintGCtoGCx{}{}{}":{
-		"prefix":"xintGCtoGCx",
-		"body":[
-			"\\xintGCtoGCx{${1:sep1}}{${2:sep2}}{${3:expr}}"
-		]
-	},
-
-
-	"xintFtoC{}":{
-		"prefix":"xintFtoC",
-		"body":[
-			"\\xintFtoC{${1:A/B}}"
-		]
-	},
-
-
-	"xintFtoCs{}":{
-		"prefix":"xintFtoCs",
-		"body":[
-			"\\xintFtoCs{${1:A/B}}"
-		]
-	},
-
-
-	"xintFtoCx{}{}":{
-		"prefix":"xintFtoCx",
-		"body":[
-			"\\xintFtoCx{${1:sep}}{${2:A/B}}"
-		]
-	},
-
-
-	"xintFtoGC{}":{
-		"prefix":"xintFtoGC",
-		"body":[
-			"\\xintFtoGC{${1:A/B}}"
-		]
-	},
-
-
-	"xintFGtoC{}{}":{
-		"prefix":"xintFGtoC",
-		"body":[
-			"\\xintFGtoC{${1:A1/B1}}{${2:A2/B2}}"
-		]
-	},
-
-
-	"xintFtoCC{}":{
-		"prefix":"xintFtoCC",
-		"body":[
-			"\\xintFtoCC{${1:A/B}}"
-		]
-	},
-
-
-	"xintCstoF{}":{
-		"prefix":"xintCstoF",
-		"body":[
-			"\\xintCstoF{${1:num1,num2,...}}"
-		]
-	},
-
-
-	"xintGCtoF{}":{
-		"prefix":"xintGCtoF",
-		"body":[
-			"\\xintGCtoF{${1:expr}}"
-		]
-	},
-
-
-	"xintCstoCv{}":{
-		"prefix":"xintCstoCv",
-		"body":[
-			"\\xintCstoCv{${1:num1,num2,...}}"
-		]
-	},
-
-
-	"xintGCtoCv{}":{
-		"prefix":"xintGCtoCv",
-		"body":[
-			"\\xintGCtoCv{${1:expr}}"
-		]
-	},
-
-
-	"xintFtoCv{}":{
-		"prefix":"xintFtoCv",
-		"body":[
-			"\\xintFtoCv{${1:A/B}}"
-		]
-	},
-
-
-	"xintFtoCCv{}":{
-		"prefix":"xintFtoCCv",
-		"body":[
-			"\\xintFtoCCv{${1:A/B}}"
-		]
-	},
-
-
-	"xintCntoF{}{}":{
-		"prefix":"xintCntoF",
-		"body":[
-			"\\xintCntoF{${1:integer}}{${2:macro}}"
-		]
-	},
-
-
-	"xintGCntoF{}{}{}":{
-		"prefix":"xintGCntoF",
-		"body":[
-			"\\xintGCntoF{${1:integer}}{${2:macro1}}{${3:macro2}}"
-		]
-	},
-
-
-	"xintCntoCs{}{}":{
-		"prefix":"xintCntoCs",
-		"body":[
-			"\\xintCntoCs{${1:integer}}{${2:macro}}"
-		]
-	},
-
-
-	"xintCntoGC{}{}":{
-		"prefix":"xintCntoGC",
-		"body":[
-			"\\xintCntoGC{${1:integer}}{${2:macro}}"
-		]
-	},
-
-
-	"xintGCntoGC{}{}{}":{
-		"prefix":"xintGCntoGC",
-		"body":[
-			"\\xintGCntoGC{${1:integer}}{${2:macro1}}{${3:macro2}}"
-		]
-	},
-
-
-	"xintCstoGC{}":{
-		"prefix":"xintCstoGC",
-		"body":[
-			"\\xintCstoGC{${1:num1,num2,...}}"
-		]
-	},
-
-
-	"xintiCstoF{}":{
-		"prefix":"xintiCstoF",
-		"body":[
-			"\\xintiCstoF{${1:integer1,integer2,...}}"
-		]
-	},
-
-
-	"xintiGCtoF{}":{
-		"prefix":"xintiGCtoF",
-		"body":[
-			"\\xintiGCtoF{${1:integer expr}}"
-		]
-	},
-
-
-	"xintiCstoCv{}":{
-		"prefix":"xintiCstoCv",
-		"body":[
-			"\\xintiCstoCv{${1:integer1,integer2,...}}"
-		]
-	},
-
-
-	"xintiGCtoCv{}":{
-		"prefix":"xintiGCtoCv",
-		"body":[
-			"\\xintiGCtoCv{${1:integer expr}}"
-		]
-	},
-
-
-	"xintGCtoGC{}":{
-		"prefix":"xintGCtoGC",
-		"body":[
-			"\\xintGCtoGC{${1:expr}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +14,17 @@
 		"prefix":"xintCFrac",
 		"body":[
 			"\\xintCFrac[${2:pos%keyvals}]{${1:A/B}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xintGCFrac{}":{
+		"prefix":"xintGCFrac",
+		"body":[
+			"\\xintGCFrac{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +32,17 @@
 		"prefix":"xintGCFrac",
 		"body":[
 			"\\xintGCFrac[${2:pos%keyvals}]{${1:expr}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xintGGCFrac{}":{
+		"prefix":"xintGGCFrac",
+		"body":[
+			"\\xintGGCFrac{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,6 +50,223 @@
 		"prefix":"xintGGCFrac",
 		"body":[
 			"\\xintGGCFrac[${2:pos%keyvals}]{${1:expr}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xintGCtoGCx{}{}{}":{
+		"prefix":"xintGCtoGCx",
+		"body":[
+			"\\xintGCtoGCx{${1:sep1}}{${2:sep2}}{${3:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoC{}":{
+		"prefix":"xintFtoC",
+		"body":[
+			"\\xintFtoC{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoCs{}":{
+		"prefix":"xintFtoCs",
+		"body":[
+			"\\xintFtoCs{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoCx{}{}":{
+		"prefix":"xintFtoCx",
+		"body":[
+			"\\xintFtoCx{${1:sep}}{${2:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoGC{}":{
+		"prefix":"xintFtoGC",
+		"body":[
+			"\\xintFtoGC{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFGtoC{}{}":{
+		"prefix":"xintFGtoC",
+		"body":[
+			"\\xintFGtoC{${1:A1/B1}}{${2:A2/B2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoCC{}":{
+		"prefix":"xintFtoCC",
+		"body":[
+			"\\xintFtoCC{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCstoF{}":{
+		"prefix":"xintCstoF",
+		"body":[
+			"\\xintCstoF{${1:num1,num2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintGCtoF{}":{
+		"prefix":"xintGCtoF",
+		"body":[
+			"\\xintGCtoF{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCstoCv{}":{
+		"prefix":"xintCstoCv",
+		"body":[
+			"\\xintCstoCv{${1:num1,num2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintGCtoCv{}":{
+		"prefix":"xintGCtoCv",
+		"body":[
+			"\\xintGCtoCv{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoCv{}":{
+		"prefix":"xintFtoCv",
+		"body":[
+			"\\xintFtoCv{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintFtoCCv{}":{
+		"prefix":"xintFtoCCv",
+		"body":[
+			"\\xintFtoCCv{${1:A/B}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCntoF{}{}":{
+		"prefix":"xintCntoF",
+		"body":[
+			"\\xintCntoF{${1:integer}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintGCntoF{}{}{}":{
+		"prefix":"xintGCntoF",
+		"body":[
+			"\\xintGCntoF{${1:integer}}{${2:macro1}}{${3:macro2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCntoCs{}{}":{
+		"prefix":"xintCntoCs",
+		"body":[
+			"\\xintCntoCs{${1:integer}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCntoGC{}{}":{
+		"prefix":"xintCntoGC",
+		"body":[
+			"\\xintCntoGC{${1:integer}}{${2:macro}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintGCntoGC{}{}{}":{
+		"prefix":"xintGCntoGC",
+		"body":[
+			"\\xintGCntoGC{${1:integer}}{${2:macro1}}{${3:macro2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintCstoGC{}":{
+		"prefix":"xintCstoGC",
+		"body":[
+			"\\xintCstoGC{${1:num1,num2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintiCstoF{}":{
+		"prefix":"xintiCstoF",
+		"body":[
+			"\\xintiCstoF{${1:integer1,integer2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintiGCtoF{}":{
+		"prefix":"xintiGCtoF",
+		"body":[
+			"\\xintiGCtoF{${1:integer expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintiCstoCv{}":{
+		"prefix":"xintiCstoCv",
+		"body":[
+			"\\xintiCstoCv{${1:integer1,integer2,...}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintiGCtoCv{}":{
+		"prefix":"xintiGCtoCv",
+		"body":[
+			"\\xintiGCtoCv{${1:integer expr}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"xintGCtoGC{}":{
+		"prefix":"xintGCtoGC",
+		"body":[
+			"\\xintGCtoGC{${1:expr}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

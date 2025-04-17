@@ -1,27 +1,12 @@
 {
 
 
-	"tikzcdset{}":{
-		"prefix":"tikzcdset",
-		"body":[
-			"\\tikzcdset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"tikzcdmatrixname":{
-		"prefix":"tikzcdmatrixname",
-		"body":[
-			"\\tikzcdmatrixname"
-		]
-	},
-
-
 	"arrow[]":{
 		"prefix":"arrow",
 		"body":[
 			"\\arrow[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -29,7 +14,8 @@
 		"prefix":"arrow",
 		"body":[
 			"\\arrow[${3:options}]{${1:direction}}{${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -37,7 +23,8 @@
 		"prefix":"arrow",
 		"body":[
 			"\\arrow[${3:options}]{${1:direction}}[${4:label options}]{${2:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +32,8 @@
 		"prefix":"ar",
 		"body":[
 			"\\ar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -53,7 +41,8 @@
 		"prefix":"rar",
 		"body":[
 			"\\rar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -61,7 +50,8 @@
 		"prefix":"rar",
 		"body":[
 			"\\rar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -69,7 +59,8 @@
 		"prefix":"lar",
 		"body":[
 			"\\lar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -77,7 +68,8 @@
 		"prefix":"lar",
 		"body":[
 			"\\lar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -85,7 +77,8 @@
 		"prefix":"dar",
 		"body":[
 			"\\dar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -93,7 +86,8 @@
 		"prefix":"dar",
 		"body":[
 			"\\dar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -101,7 +95,8 @@
 		"prefix":"uar",
 		"body":[
 			"\\uar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,7 +104,8 @@
 		"prefix":"uar",
 		"body":[
 			"\\uar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -117,7 +113,8 @@
 		"prefix":"drar",
 		"body":[
 			"\\drar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -125,7 +122,8 @@
 		"prefix":"drar",
 		"body":[
 			"\\drar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -133,7 +131,8 @@
 		"prefix":"urar",
 		"body":[
 			"\\urar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -141,7 +140,8 @@
 		"prefix":"urar",
 		"body":[
 			"\\urar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,7 +149,8 @@
 		"prefix":"dlar",
 		"body":[
 			"\\dlar[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +158,8 @@
 		"prefix":"dlar",
 		"body":[
 			"\\dlar[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +167,8 @@
 		"prefix":"ular",
 		"body":[
 			"\\ular[${1:options}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +176,26 @@
 		"prefix":"ular",
 		"body":[
 			"\\ular[${2:options}]{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"tikzcdset{}":{
+		"prefix":"tikzcdset",
+		"body":[
+			"\\tikzcdset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tikzcdmatrixname":{
+		"prefix":"tikzcdmatrixname",
+		"body":[
+			"\\tikzcdmatrixname"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -183,16 +205,18 @@
 			"\\begin{tikzcd}",
 				"\t$1",
 			"\\end{tikzcd}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"tikzcd":{
+	"tikzcd[]":{
 		"prefix":"tikzcd",
 		"body":[
 			"\\begin{tikzcd}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{tikzcd}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

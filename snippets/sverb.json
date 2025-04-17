@@ -5,7 +5,8 @@
 		"prefix":"listingsize",
 		"body":[
 			"\\listingsize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"listingindent",
 		"body":[
 			"\\listingindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"verbinput",
 		"body":[
 			"\\verbinput{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"matcher",
 		"body":[
 			"\\matcher{${1:cmd}}{${2:target}}{${3:process-cmd}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -39,37 +43,52 @@
 			"\\begin{listing}",
 				"\t$1",
 			"\\end{listing}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"listing*":{
-		"prefix":"listing",
+	"listing*{}":{
+		"prefix":"*listing",
 		"body":[
 			"\\begin{listing*}",
-				"\t$1",
+				"\t{${1:end string}}",
 			"\\end{listing*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"verbwrite":{
+	"verbwrite{}":{
 		"prefix":"verbwrite",
 		"body":[
 			"\\begin{verbwrite}",
-				"\t$1",
+				"\t{${1:file}}",
 			"\\end{verbwrite}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"demo":{
+	"demo{}":{
 		"prefix":"demo",
 		"body":[
 			"\\begin{demo}",
-				"\t$1",
+				"\t{${1:title}}",
 			"\\end{demo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"demo[]{}":{
+		"prefix":"demo",
+		"body":[
+			"\\begin{demo}",
+				"\t[${2:shape%keyvals}]{${1:title}}",
+			"\\end{demo}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -79,16 +98,7 @@
 			"\\begin{ignore}",
 				"\t$1",
 			"\\end{ignore}"
-		]
-	},
-
-
-	"demo":{
-		"prefix":"demo",
-		"body":[
-			"\\begin{demo}",
-				"\t$1",
-			"\\end{demo}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

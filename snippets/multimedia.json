@@ -1,51 +1,21 @@
 {
 
 
-	"movie{}{}":{
-		"prefix":"movie",
-		"body":[
-			"\\movie{${1:poster text%text}}{${2:movie filename%file}}"
-		]
-	},
-
-
-	"hyperlinkmovie{}{}":{
-		"prefix":"hyperlinkmovie",
-		"body":[
-			"\\hyperlinkmovie{${1:movie label}}{${2:text}}"
-		]
-	},
-
-
-	"sound{}{}":{
-		"prefix":"sound",
-		"body":[
-			"\\sound{${1:sound poster text}}{${2:sound filename%file}}"
-		]
-	},
-
-
-	"hyperlinksound{}{}":{
-		"prefix":"hyperlinksound",
-		"body":[
-			"\\hyperlinksound{${1:sound label}}{${2:text}}"
-		]
-	},
-
-
-	"hyperlinkmute{}":{
-		"prefix":"hyperlinkmute",
-		"body":[
-			"\\hyperlinkmute{${1:text}}"
-		]
-	},
-
-
 	"movie[]{}{}":{
 		"prefix":"movie",
 		"body":[
 			"\\movie[${3:options%keyvals}]{${1:poster text%text}}{${2:movie filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"movie{}{}":{
+		"prefix":"movie",
+		"body":[
+			"\\movie{${1:poster text%text}}{${2:movie filename%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,17 @@
 		"prefix":"hyperlinkmovie",
 		"body":[
 			"\\hyperlinkmovie[${3:options%keyvals}]{${1:movie label}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hyperlinkmovie{}{}":{
+		"prefix":"hyperlinkmovie",
+		"body":[
+			"\\hyperlinkmovie{${1:movie label}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +41,17 @@
 		"prefix":"sound",
 		"body":[
 			"\\sound[${3:options%keyvals}]{${1:sound poster text}}{${2:sound filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sound{}{}":{
+		"prefix":"sound",
+		"body":[
+			"\\sound{${1:sound poster text}}{${2:sound filename%file}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +59,25 @@
 		"prefix":"hyperlinksound",
 		"body":[
 			"\\hyperlinksound[${3:options%keyvals}]{${1:sound label}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"hyperlinksound{}{}":{
+		"prefix":"hyperlinksound",
+		"body":[
+			"\\hyperlinksound{${1:sound label}}{${2:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hyperlinkmute{}":{
+		"prefix":"hyperlinkmute",
+		"body":[
+			"\\hyperlinkmute{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

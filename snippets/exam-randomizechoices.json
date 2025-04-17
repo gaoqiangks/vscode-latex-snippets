@@ -5,7 +5,8 @@
 		"prefix":"setrandomizerseed",
 		"body":[
 			"\\setrandomizerseed{${1:integer}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,39 +14,8 @@
 		"prefix":"printkeytable",
 		"body":[
 			"\\printkeytable"
-		]
-	},
-
-
-	"keylistquestionname{}":{
-		"prefix":"keylistquestionname",
-		"body":[
-			"\\keylistquestionname{${1:text}}"
-		]
-	},
-
-
-	"keylistkeyname{}":{
-		"prefix":"keylistkeyname",
-		"body":[
-			"\\keylistkeyname{${1:text}}"
-		]
-	},
-
-
-	"savekeylist":{
-		"prefix":"savekeylist",
-		"body":[
-			"\\savekeylist"
-		]
-	},
-
-
-	"writekeylist{}":{
-		"prefix":"writekeylist",
-		"body":[
-			"\\writekeylist{${1:command}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +23,35 @@
 		"prefix":"printkeytable",
 		"body":[
 			"\\printkeytable[${1:range}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"keylistquestionname{}":{
+		"prefix":"keylistquestionname",
+		"body":[
+			"\\keylistquestionname{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keylistkeyname{}":{
+		"prefix":"keylistkeyname",
+		"body":[
+			"\\keylistkeyname{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"savekeylist":{
+		"prefix":"savekeylist",
+		"body":[
+			"\\savekeylist"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +59,17 @@
 		"prefix":"savekeylist",
 		"body":[
 			"\\savekeylist[${1:macro%cmd}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"writekeylist{}":{
+		"prefix":"writekeylist",
+		"body":[
+			"\\writekeylist{${1:command}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"writekeylist",
 		"body":[
 			"\\writekeylist[${2:file}]{${1:command}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -79,47 +88,19 @@
 			"\\begin{randomizechoices}",
 				"\t$1",
 			"\\end{randomizechoices}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"randomizeoneparchoices":{
-		"prefix":"randomizeoneparchoices",
-		"body":[
-			"\\begin{randomizeoneparchoices}",
-				"\t$1",
-			"\\end{randomizeoneparchoices}"
-		]
-	},
-
-
-	"randomizecheckboxes":{
-		"prefix":"randomizecheckboxes",
-		"body":[
-			"\\begin{randomizecheckboxes}",
-				"\t$1",
-			"\\end{randomizecheckboxes}"
-		]
-	},
-
-
-	"randomizeoneparcheckboxes":{
-		"prefix":"randomizeoneparcheckboxes",
-		"body":[
-			"\\begin{randomizeoneparcheckboxes}",
-				"\t$1",
-			"\\end{randomizeoneparcheckboxes}"
-		]
-	},
-
-
-	"randomizechoices":{
+	"randomizechoices[]":{
 		"prefix":"randomizechoices",
 		"body":[
 			"\\begin{randomizechoices}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{randomizechoices}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -129,7 +110,19 @@
 			"\\begin{randomizeoneparchoices}",
 				"\t$1",
 			"\\end{randomizeoneparchoices}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"randomizeoneparchoices[]":{
+		"prefix":"randomizeoneparchoices",
+		"body":[
+			"\\begin{randomizeoneparchoices}",
+				"\t[${1:options%keyvals}]",
+			"\\end{randomizeoneparchoices}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -139,7 +132,19 @@
 			"\\begin{randomizecheckboxes}",
 				"\t$1",
 			"\\end{randomizecheckboxes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"randomizecheckboxes[]":{
+		"prefix":"randomizecheckboxes",
+		"body":[
+			"\\begin{randomizecheckboxes}",
+				"\t[${1:options%keyvals}]",
+			"\\end{randomizecheckboxes}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -149,6 +154,18 @@
 			"\\begin{randomizeoneparcheckboxes}",
 				"\t$1",
 			"\\end{randomizeoneparcheckboxes}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"randomizeoneparcheckboxes[]":{
+		"prefix":"randomizeoneparcheckboxes",
+		"body":[
+			"\\begin{randomizeoneparcheckboxes}",
+				"\t[${1:options%keyvals}]",
+			"\\end{randomizeoneparcheckboxes}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

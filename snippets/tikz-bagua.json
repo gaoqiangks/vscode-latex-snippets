@@ -5,135 +5,8 @@
 		"prefix":"taiji",
 		"body":[
 			"\\taiji"
-		]
-	},
-
-
-	"xtaiji":{
-		"prefix":"xtaiji",
-		"body":[
-			"\\xtaiji"
-		]
-	},
-
-
-	"drawliangyi{}":{
-		"prefix":"drawliangyi",
-		"body":[
-			"\\drawliangyi{0 or 1}"
-		]
-	},
-
-
-	"liangyi{}":{
-		"prefix":"liangyi",
-		"body":[
-			"\\liangyi{0 or 1}"
-		]
-	},
-
-
-	"sixiang{}":{
-		"prefix":"sixiang",
-		"body":[
-			"\\sixiang{${1:binary}}"
-		]
-	},
-
-
-	"bagua{}":{
-		"prefix":"bagua",
-		"body":[
-			"\\bagua{${1:binary}}"
-		]
-	},
-
-
-	"Bagua{}":{
-		"prefix":"Bagua",
-		"body":[
-			"\\Bagua{${1:binary}}"
-		]
-	},
-
-
-	"taiji*":{
-		"prefix":"*taiji",
-		"body":[
-			"\\taiji*"
-		]
-	},
-
-
-	"taiji*[]":{
-		"prefix":"*taiji",
-		"body":[
-			"\\taiji*[${1:scale}]"
-		]
-	},
-
-
-	"xtaiji*":{
-		"prefix":"*xtaiji",
-		"body":[
-			"\\xtaiji*"
-		]
-	},
-
-
-	"xtaiji*[]":{
-		"prefix":"*xtaiji",
-		"body":[
-			"\\xtaiji*[${1:scale}]"
-		]
-	},
-
-
-	"sixiang*{}":{
-		"prefix":"*sixiang",
-		"body":[
-			"\\sixiang*{${1:decimal}}"
-		]
-	},
-
-
-	"sixiang*{}[]":{
-		"prefix":"*sixiang",
-		"body":[
-			"\\sixiang*{${1:decimal}}[${2:scale}]"
-		]
-	},
-
-
-	"bagua*{}":{
-		"prefix":"*bagua",
-		"body":[
-			"\\bagua*{${1:decimal}}"
-		]
-	},
-
-
-	"bagua*{}[]":{
-		"prefix":"*bagua",
-		"body":[
-			"\\bagua*{${1:decimal}}[${2:scale}]"
-		]
-	},
-
-
-	"Bagua*{}":{
-		"prefix":"*Bagua",
-		"body":[
-			"\\Bagua*{${1:decimal}}"
-		]
-	},
-
-
-	"Bagua*{}[]":{
-		"prefix":"*Bagua",
-		"body":[
-			"\\Bagua*{${1:decimal}}[${2:scale}]"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +14,35 @@
 		"prefix":"taiji",
 		"body":[
 			"\\taiji[${1:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"taiji*":{
+		"prefix":"*taiji",
+		"body":[
+			"\\taiji*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"taiji*[]":{
+		"prefix":"*taiji",
+		"body":[
+			"\\taiji*[${1:scale}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xtaiji":{
+		"prefix":"xtaiji",
+		"body":[
+			"\\xtaiji"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +50,35 @@
 		"prefix":"xtaiji",
 		"body":[
 			"\\xtaiji[${1:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"xtaiji*":{
+		"prefix":"*xtaiji",
+		"body":[
+			"\\xtaiji*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"xtaiji*[]":{
+		"prefix":"*xtaiji",
+		"body":[
+			"\\xtaiji*[${1:scale}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"drawliangyi{}":{
+		"prefix":"drawliangyi",
+		"body":[
+			"\\drawliangyi{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +86,17 @@
 		"prefix":"drawliangyi",
 		"body":[
 			"\\drawliangyi[${1:yshift}]{0 or 1}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"liangyi{}":{
+		"prefix":"liangyi",
+		"body":[
+			"\\liangyi{0 or 1}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +104,17 @@
 		"prefix":"liangyi",
 		"body":[
 			"\\liangyi{0 or 1}[${1:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sixiang{}":{
+		"prefix":"sixiang",
+		"body":[
+			"\\sixiang{${1:binary}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +122,35 @@
 		"prefix":"sixiang",
 		"body":[
 			"\\sixiang{${1:binary}}[${2:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sixiang*{}":{
+		"prefix":"*sixiang",
+		"body":[
+			"\\sixiang*{${1:decimal}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"sixiang*{}[]":{
+		"prefix":"*sixiang",
+		"body":[
+			"\\sixiang*{${1:decimal}}[${2:scale}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bagua{}":{
+		"prefix":"bagua",
+		"body":[
+			"\\bagua{${1:binary}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +158,35 @@
 		"prefix":"bagua",
 		"body":[
 			"\\bagua{${1:binary}}[${2:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bagua*{}":{
+		"prefix":"*bagua",
+		"body":[
+			"\\bagua*{${1:decimal}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"bagua*{}[]":{
+		"prefix":"*bagua",
+		"body":[
+			"\\bagua*{${1:decimal}}[${2:scale}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Bagua{}":{
+		"prefix":"Bagua",
+		"body":[
+			"\\Bagua{${1:binary}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +194,8 @@
 		"prefix":"Bagua",
 		"body":[
 			"\\Bagua{${1:binary}}[${2:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +203,8 @@
 		"prefix":"Bagua",
 		"body":[
 			"\\Bagua[${2:8}]{${1:octal}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,6 +212,25 @@
 		"prefix":"Bagua",
 		"body":[
 			"\\Bagua[${2:8}]{${1:octal}}[${3:scale}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Bagua*{}":{
+		"prefix":"*Bagua",
+		"body":[
+			"\\Bagua*{${1:decimal}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Bagua*{}[]":{
+		"prefix":"*Bagua",
+		"body":[
+			"\\Bagua*{${1:decimal}}[${2:scale}]"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

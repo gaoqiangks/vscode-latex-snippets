@@ -5,159 +5,8 @@
 		"prefix":"WarningsOff",
 		"body":[
 			"\\WarningsOff"
-		]
-	},
-
-
-	"ErrorsOff":{
-		"prefix":"ErrorsOff",
-		"body":[
-			"\\ErrorsOff"
-		]
-	},
-
-
-	"WarningsOn":{
-		"prefix":"WarningsOn",
-		"body":[
-			"\\WarningsOn"
-		]
-	},
-
-
-	"ErrorsOn":{
-		"prefix":"ErrorsOn",
-		"body":[
-			"\\ErrorsOn"
-		]
-	},
-
-
-	"WarningFilter{}{}":{
-		"prefix":"WarningFilter",
-		"body":[
-			"\\WarningFilter{${1:package}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter{}{}":{
-		"prefix":"ErrorFilter",
-		"body":[
-			"\\ErrorFilter{${1:package}}{${2:message}}"
-		]
-	},
-
-
-	"ActivateWarningFilters":{
-		"prefix":"ActivateWarningFilters",
-		"body":[
-			"\\ActivateWarningFilters"
-		]
-	},
-
-
-	"ActivateErrorFilters":{
-		"prefix":"ActivateErrorFilters",
-		"body":[
-			"\\ActivateErrorFilters"
-		]
-	},
-
-
-	"DeactivateWarningFilters":{
-		"prefix":"DeactivateWarningFilters",
-		"body":[
-			"\\DeactivateWarningFilters"
-		]
-	},
-
-
-	"DeactivateErrorFilters":{
-		"prefix":"DeactivateErrorFilters",
-		"body":[
-			"\\DeactivateErrorFilters"
-		]
-	},
-
-
-	"ActivateFilters":{
-		"prefix":"ActivateFilters",
-		"body":[
-			"\\ActivateFilters"
-		]
-	},
-
-
-	"DeactivateFilters":{
-		"prefix":"DeactivateFilters",
-		"body":[
-			"\\DeactivateFilters"
-		]
-	},
-
-
-	"SafeMode":{
-		"prefix":"SafeMode",
-		"body":[
-			"\\SafeMode"
-		]
-	},
-
-
-	"BoldMode":{
-		"prefix":"BoldMode",
-		"body":[
-			"\\BoldMode"
-		]
-	},
-
-
-	"WarningsOff*":{
-		"prefix":"*WarningsOff",
-		"body":[
-			"\\WarningsOff*"
-		]
-	},
-
-
-	"ErrorsOff*":{
-		"prefix":"*ErrorsOff",
-		"body":[
-			"\\ErrorsOff*"
-		]
-	},
-
-
-	"WarningFilter*{}{}":{
-		"prefix":"*WarningFilter",
-		"body":[
-			"\\WarningFilter*{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"WarningFilter*[]{}{}":{
-		"prefix":"*WarningFilter",
-		"body":[
-			"\\WarningFilter*[${3:family}]{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter*{}{}":{
-		"prefix":"*ErrorFilter",
-		"body":[
-			"\\ErrorFilter*{${1:name}}{${2:message}}"
-		]
-	},
-
-
-	"ErrorFilter*[]{}{}":{
-		"prefix":"*ErrorFilter",
-		"body":[
-			"\\ErrorFilter*[${3:family}]{${1:name}}{${2:message}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +14,26 @@
 		"prefix":"WarningsOff",
 		"body":[
 			"\\WarningsOff[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"WarningsOff*":{
+		"prefix":"*WarningsOff",
+		"body":[
+			"\\WarningsOff*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ErrorsOff":{
+		"prefix":"ErrorsOff",
+		"body":[
+			"\\ErrorsOff"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +41,26 @@
 		"prefix":"ErrorsOff",
 		"body":[
 			"\\ErrorsOff[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ErrorsOff*":{
+		"prefix":"*ErrorsOff",
+		"body":[
+			"\\ErrorsOff*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"WarningsOn":{
+		"prefix":"WarningsOn",
+		"body":[
+			"\\WarningsOn"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +68,17 @@
 		"prefix":"WarningsOn",
 		"body":[
 			"\\WarningsOn[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ErrorsOn":{
+		"prefix":"ErrorsOn",
+		"body":[
+			"\\ErrorsOn"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +86,17 @@
 		"prefix":"ErrorsOn",
 		"body":[
 			"\\ErrorsOn[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"WarningFilter{}{}":{
+		"prefix":"WarningFilter",
+		"body":[
+			"\\WarningFilter{${1:package}}{${2:message}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +104,17 @@
 		"prefix":"WarningFilter",
 		"body":[
 			"\\WarningFilter[${3:family}]{${1:package}}{${2:message}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ErrorFilter{}{}":{
+		"prefix":"ErrorFilter",
+		"body":[
+			"\\ErrorFilter{${1:package}}{${2:message}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +122,17 @@
 		"prefix":"ErrorFilter",
 		"body":[
 			"\\ErrorFilter[${3:family}]{${1:package}}{${2:message}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ActivateWarningFilters":{
+		"prefix":"ActivateWarningFilters",
+		"body":[
+			"\\ActivateWarningFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +140,17 @@
 		"prefix":"ActivateWarningFilters",
 		"body":[
 			"\\ActivateWarningFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ActivateErrorFilters":{
+		"prefix":"ActivateErrorFilters",
+		"body":[
+			"\\ActivateErrorFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +158,17 @@
 		"prefix":"ActivateErrorFilters",
 		"body":[
 			"\\ActivateErrorFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeactivateWarningFilters":{
+		"prefix":"DeactivateWarningFilters",
+		"body":[
+			"\\DeactivateWarningFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +176,17 @@
 		"prefix":"DeactivateWarningFilters",
 		"body":[
 			"\\DeactivateWarningFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeactivateErrorFilters":{
+		"prefix":"DeactivateErrorFilters",
+		"body":[
+			"\\DeactivateErrorFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +194,17 @@
 		"prefix":"DeactivateErrorFilters",
 		"body":[
 			"\\DeactivateErrorFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ActivateFilters":{
+		"prefix":"ActivateFilters",
+		"body":[
+			"\\ActivateFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +212,17 @@
 		"prefix":"ActivateFilters",
 		"body":[
 			"\\ActivateFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeactivateFilters":{
+		"prefix":"DeactivateFilters",
+		"body":[
+			"\\DeactivateFilters"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,6 +230,61 @@
 		"prefix":"DeactivateFilters",
 		"body":[
 			"\\DeactivateFilters[${1:list}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"WarningFilter*{}{}":{
+		"prefix":"*WarningFilter",
+		"body":[
+			"\\WarningFilter*{${1:name}}{${2:message}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"WarningFilter*[]{}{}":{
+		"prefix":"*WarningFilter",
+		"body":[
+			"\\WarningFilter*[${3:family}]{${1:name}}{${2:message}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ErrorFilter*{}{}":{
+		"prefix":"*ErrorFilter",
+		"body":[
+			"\\ErrorFilter*{${1:name}}{${2:message}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ErrorFilter*[]{}{}":{
+		"prefix":"*ErrorFilter",
+		"body":[
+			"\\ErrorFilter*[${3:family}]{${1:name}}{${2:message}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"SafeMode":{
+		"prefix":"SafeMode",
+		"body":[
+			"\\SafeMode"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BoldMode":{
+		"prefix":"BoldMode",
+		"body":[
+			"\\BoldMode"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

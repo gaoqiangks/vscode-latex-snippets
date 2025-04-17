@@ -5,7 +5,8 @@
 		"prefix":"tabenumitem",
 		"body":[
 			"\\tabenumitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"notabenumitem",
 		"body":[
 			"\\notabenumitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"noitem",
 		"body":[
 			"\\noitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"skipitem",
 		"body":[
 			"\\skipitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"tabenumsep",
 		"body":[
 			"\\tabenumsep"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"tabenumindent",
 		"body":[
 			"\\tabenumindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"subtabenumitem",
 		"body":[
 			"\\subtabenumitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"subitem",
 		"body":[
 			"\\subitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"restorelistitem",
 		"body":[
 			"\\restorelistitem"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,27 +88,19 @@
 			"\\begin{tabenum}",
 				"\t$1",
 			"\\end{tabenum}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"subtabenum":{
-		"prefix":"subtabenum",
-		"body":[
-			"\\begin{subtabenum}",
-				"\t$1",
-			"\\end{subtabenum}"
-		]
-	},
-
-
-	"tabenum":{
+	"tabenum[]":{
 		"prefix":"tabenum",
 		"body":[
 			"\\begin{tabenum}",
-				"\t$1",
+				"\t[${1:format}]",
 			"\\end{tabenum}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -109,6 +110,18 @@
 			"\\begin{subtabenum}",
 				"\t$1",
 			"\\end{subtabenum}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"subtabenum[]":{
+		"prefix":"subtabenum",
+		"body":[
+			"\\begin{subtabenum}",
+				"\t[${1:format}]",
+			"\\end{subtabenum}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

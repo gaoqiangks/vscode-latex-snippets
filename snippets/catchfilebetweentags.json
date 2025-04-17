@@ -5,23 +5,8 @@
 		"prefix":"CatchFileBetweenTags",
 		"body":[
 			"\\CatchFileBetweenTags{${1:csname}}{${2:file}}{${3:tag}}"
-		]
-	},
-
-
-	"ExecuteMetaData{}":{
-		"prefix":"ExecuteMetaData",
-		"body":[
-			"\\ExecuteMetaData{${1:tag}}"
-		]
-	},
-
-
-	"CatchFileBetweenDelims{}{}{}{}":{
-		"prefix":"CatchFileBetweenDelims",
-		"body":[
-			"\\CatchFileBetweenDelims{${1:csname}}{${2:file}}{${3:start delim}}{${4:stop delim}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,23 +14,17 @@
 		"prefix":"*CatchFileBetweenTags",
 		"body":[
 			"\\CatchFileBetweenTags*{${1:csname}}{${2:file}}{${3:tag}}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
-	"ExecuteMetaData*{}":{
-		"prefix":"*ExecuteMetaData",
+	"ExecuteMetaData{}":{
+		"prefix":"ExecuteMetaData",
 		"body":[
-			"\\ExecuteMetaData*{${1:tag}}"
-		]
-	},
-
-
-	"ExecuteMetaData*[]{}":{
-		"prefix":"*ExecuteMetaData",
-		"body":[
-			"\\ExecuteMetaData*[${2:file}]{${1:tag}}"
-		]
+			"\\ExecuteMetaData{${1:tag}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +32,35 @@
 		"prefix":"ExecuteMetaData",
 		"body":[
 			"\\ExecuteMetaData[${2:file}]{${1:tag}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ExecuteMetaData*{}":{
+		"prefix":"*ExecuteMetaData",
+		"body":[
+			"\\ExecuteMetaData*{${1:tag}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ExecuteMetaData*[]{}":{
+		"prefix":"*ExecuteMetaData",
+		"body":[
+			"\\ExecuteMetaData*[${2:file}]{${1:tag}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"CatchFileBetweenDelims{}{}{}{}":{
+		"prefix":"CatchFileBetweenDelims",
+		"body":[
+			"\\CatchFileBetweenDelims{${1:csname}}{${2:file}}{${3:start delim}}{${4:stop delim}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"CatchFileBetweenDelims",
 		"body":[
 			"\\CatchFileBetweenDelims{${1:csname}}{${2:file}}{${3:start delim}}{${4:stop delim}}[${5:setup}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

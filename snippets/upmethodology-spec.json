@@ -5,71 +5,8 @@
 		"prefix":"speccons",
 		"body":[
 			"\\speccons{${1:name}}{${2:prototype}}"
-		]
-	},
-
-
-	"specget{}{}":{
-		"prefix":"specget",
-		"body":[
-			"\\specget{${1:return type}}{${2:name}}"
-		]
-	},
-
-
-	"specset{}{}":{
-		"prefix":"specset",
-		"body":[
-			"\\specset{${1:name}}{${2:prototype}}"
-		]
-	},
-
-
-	"specfunc{}{}{}":{
-		"prefix":"specfunc",
-		"body":[
-			"\\specfunc{${1:return type}}{${2:name}}{${3:prototype}}"
-		]
-	},
-
-
-	"specreturn{}":{
-		"prefix":"specreturn",
-		"body":[
-			"\\specreturn{${1:description%text}}"
-		]
-	},
-
-
-	"specglobalreturn{}":{
-		"prefix":"specglobalreturn",
-		"body":[
-			"\\specglobalreturn{${1:description%text}}"
-		]
-	},
-
-
-	"specparam{}{}":{
-		"prefix":"specparam",
-		"body":[
-			"\\specparam{${1:name}}{${2:description%text}}"
-		]
-	},
-
-
-	"specendhline":{
-		"prefix":"specendhline",
-		"body":[
-			"\\specendhline"
-		]
-	},
-
-
-	"specstarthline":{
-		"prefix":"specstarthline",
-		"body":[
-			"\\specstarthline"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +14,17 @@
 		"prefix":"speccons",
 		"body":[
 			"\\speccons[${3:modifiers}]{${1:name}}{${2:prototype}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"specget{}{}":{
+		"prefix":"specget",
+		"body":[
+			"\\specget{${1:return type}}{${2:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +32,17 @@
 		"prefix":"specget",
 		"body":[
 			"\\specget[${3:modifiers}]{${1:return type}}{${2:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"specset{}{}":{
+		"prefix":"specset",
+		"body":[
+			"\\specset{${1:name}}{${2:prototype}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +50,17 @@
 		"prefix":"specset",
 		"body":[
 			"\\specset[${3:modifiers}]{${1:name}}{${2:prototype}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"specfunc{}{}{}":{
+		"prefix":"specfunc",
+		"body":[
+			"\\specfunc{${1:return type}}{${2:name}}{${3:prototype}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +68,35 @@
 		"prefix":"specfunc",
 		"body":[
 			"\\specfunc[${4:modifiers}]{${1:return type}}{${2:name}}{${3:prototype}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"specreturn{}":{
+		"prefix":"specreturn",
+		"body":[
+			"\\specreturn{${1:description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specglobalreturn{}":{
+		"prefix":"specglobalreturn",
+		"body":[
+			"\\specglobalreturn{${1:description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specparam{}{}":{
+		"prefix":"specparam",
+		"body":[
+			"\\specparam{${1:name}}{${2:description%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,46 +104,69 @@
 		"prefix":"specparam",
 		"body":[
 			"\\specparam[${3:in|${4:inout}|out}]{${1:name}}{${2:description%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"detailspec":{
+	"specendhline":{
+		"prefix":"specendhline",
+		"body":[
+			"\\specendhline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"specstarthline":{
+		"prefix":"specstarthline",
+		"body":[
+			"\\specstarthline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"detailspec{}":{
 		"prefix":"detailspec",
 		"body":[
 			"\\begin{detailspec}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{detailspec}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"detailspec*":{
-		"prefix":"detailspec",
-		"body":[
-			"\\begin{detailspec*}",
-				"\t$1",
-			"\\end{detailspec*}"
-		]
-	},
-
-
-	"detailspec":{
+	"detailspec[]{}":{
 		"prefix":"detailspec",
 		"body":[
 			"\\begin{detailspec}",
-				"\t$1",
+				"\t[${2:width}]{${1:title%text}}",
 			"\\end{detailspec}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"detailspec*":{
-		"prefix":"detailspec",
+	"detailspec*{}":{
+		"prefix":"*detailspec",
 		"body":[
 			"\\begin{detailspec*}",
-				"\t$1",
+				"\t{${1:title%text}}",
 			"\\end{detailspec*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"detailspec*[]{}":{
+		"prefix":"*detailspec",
+		"body":[
+			"\\begin{detailspec*}",
+				"\t[${2:width}]{${1:title%text}}",
+			"\\end{detailspec*}"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

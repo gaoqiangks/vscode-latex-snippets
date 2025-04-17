@@ -5,7 +5,8 @@
 		"prefix":"PreviewBorder",
 		"body":[
 			"\\PreviewBorder"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"PreviewBbAdjust",
 		"body":[
 			"\\PreviewBbAdjust"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,79 +23,8 @@
 		"prefix":"PreviewMacro",
 		"body":[
 			"\\PreviewMacro{${1:macro}}"
-		]
-	},
-
-
-	"PreviewEnvironment{}":{
-		"prefix":"PreviewEnvironment",
-		"body":[
-			"\\PreviewEnvironment{${1:envname}}"
-		]
-	},
-
-
-	"PreviewSnarfEnvironment{}":{
-		"prefix":"PreviewSnarfEnvironment",
-		"body":[
-			"\\PreviewSnarfEnvironment{${1:envname}}"
-		]
-	},
-
-
-	"PreviewOpen":{
-		"prefix":"PreviewOpen",
-		"body":[
-			"\\PreviewOpen"
-		]
-	},
-
-
-	"PreviewClose":{
-		"prefix":"PreviewClose",
-		"body":[
-			"\\PreviewClose"
-		]
-	},
-
-
-	"ifPreview":{
-		"prefix":"ifPreview",
-		"body":[
-			"\\ifPreview"
-		]
-	},
-
-
-	"PreviewMacro*{}":{
-		"prefix":"*PreviewMacro",
-		"body":[
-			"\\PreviewMacro*{${1:macro}}"
-		]
-	},
-
-
-	"PreviewMacro*[][]{}":{
-		"prefix":"*PreviewMacro",
-		"body":[
-			"\\PreviewMacro*[${2:arg spec}][${3:default}]{${1:macro}}"
-		]
-	},
-
-
-	"PreviewEnvironment*{}":{
-		"prefix":"*PreviewEnvironment",
-		"body":[
-			"\\PreviewEnvironment*{${1:envname}}"
-		]
-	},
-
-
-	"PreviewEnvironment*[][]{}":{
-		"prefix":"*PreviewEnvironment",
-		"body":[
-			"\\PreviewEnvironment*[${2:arg spec}][${3:default}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,35 @@
 		"prefix":"PreviewMacro",
 		"body":[
 			"\\PreviewMacro[${2:arg spec}]{${1:macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PreviewMacro*{}":{
+		"prefix":"*PreviewMacro",
+		"body":[
+			"\\PreviewMacro*{${1:macro}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PreviewMacro*[][]{}":{
+		"prefix":"*PreviewMacro",
+		"body":[
+			"\\PreviewMacro*[${2:arg spec}][${3:default}]{${1:macro}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PreviewEnvironment{}":{
+		"prefix":"PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +68,35 @@
 		"prefix":"PreviewEnvironment",
 		"body":[
 			"\\PreviewEnvironment[${2:arg spec}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PreviewEnvironment*{}":{
+		"prefix":"*PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment*{${1:envname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PreviewEnvironment*[][]{}":{
+		"prefix":"*PreviewEnvironment",
+		"body":[
+			"\\PreviewEnvironment*[${2:arg spec}][${3:default}]{${1:envname}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"PreviewSnarfEnvironment{}":{
+		"prefix":"PreviewSnarfEnvironment",
+		"body":[
+			"\\PreviewSnarfEnvironment{${1:envname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +104,35 @@
 		"prefix":"PreviewSnarfEnvironment",
 		"body":[
 			"\\PreviewSnarfEnvironment[${2:arg spec}]{${1:envname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PreviewOpen":{
+		"prefix":"PreviewOpen",
+		"body":[
+			"\\PreviewOpen"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"PreviewClose":{
+		"prefix":"PreviewClose",
+		"body":[
+			"\\PreviewClose"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifPreview":{
+		"prefix":"ifPreview",
+		"body":[
+			"\\ifPreview"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -127,7 +142,8 @@
 			"\\begin{preview}",
 				"\t$1",
 			"\\end{preview}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -137,6 +153,7 @@
 			"\\begin{nopreview}",
 				"\t$1",
 			"\\end{nopreview}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

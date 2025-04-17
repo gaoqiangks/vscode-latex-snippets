@@ -5,7 +5,8 @@
 		"prefix":"score",
 		"body":[
 			"\\score{${1:score}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"learningtargets",
 		"body":[
 			"\\learningtargets{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"occurrence",
 		"body":[
 			"\\occurrence{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"easy",
 		"body":[
 			"\\easy"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"medium",
 		"body":[
 			"\\medium"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"hard",
 		"body":[
 			"\\hard"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"worksheetShowFileName",
 		"body":[
 			"\\worksheetShowFileName"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"worksheetShowScore",
 		"body":[
 			"\\worksheetShowScore"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"worksheetShowLearningTargets",
 		"body":[
 			"\\worksheetShowLearningTargets"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +86,8 @@
 		"prefix":"worksheetShowDifficulty",
 		"body":[
 			"\\worksheetShowDifficulty"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +95,8 @@
 		"prefix":"worksheetShowOccurrence",
 		"body":[
 			"\\worksheetShowOccurrence"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +104,8 @@
 		"prefix":"worksheetHideFileName",
 		"body":[
 			"\\worksheetHideFileName"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"worksheetHideScore",
 		"body":[
 			"\\worksheetHideScore"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +122,8 @@
 		"prefix":"worksheetHideLearningTargets",
 		"body":[
 			"\\worksheetHideLearningTargets"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +131,8 @@
 		"prefix":"worksheetHideDifficulty",
 		"body":[
 			"\\worksheetHideDifficulty"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +140,8 @@
 		"prefix":"worksheetHideOccurrence",
 		"body":[
 			"\\worksheetHideOccurrence"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +149,8 @@
 		"prefix":"worksheetTitle",
 		"body":[
 			"\\worksheetTitle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +158,8 @@
 		"prefix":"worksheetSubTitle",
 		"body":[
 			"\\worksheetSubTitle{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"worksheetMakeTitle",
 		"body":[
 			"\\worksheetMakeTitle"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +176,8 @@
 		"prefix":"worksheetAuthors",
 		"body":[
 			"\\worksheetAuthors{${1:names}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +185,8 @@
 		"prefix":"worksheetCourseName",
 		"body":[
 			"\\worksheetCourseName{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +194,8 @@
 		"prefix":"worksheetChangelvFile",
 		"body":[
 			"\\worksheetChangelvFile{${1:file}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +203,8 @@
 		"prefix":"worksheetNoSFFamilyInHeader",
 		"body":[
 			"\\worksheetNoSFFamilyInHeader"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +212,8 @@
 		"prefix":"worksheetHideHeader",
 		"body":[
 			"\\worksheetHideHeader"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -199,16 +223,18 @@
 			"\\begin{exercise}",
 				"\t$1",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"exercise":{
+	"exercise[]":{
 		"prefix":"exercise",
 		"body":[
 			"\\begin{exercise}",
-				"\t$1",
+				"\t[${1:settings commands}]",
 			"\\end{exercise}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

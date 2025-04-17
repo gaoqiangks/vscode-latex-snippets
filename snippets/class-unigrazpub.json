@@ -5,7 +5,8 @@
 		"prefix":"edition",
 		"body":[
 			"\\edition{${1:edition%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"insertedition",
 		"body":[
 			"\\insertedition"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"insertpublishersaddress",
 		"body":[
 			"\\insertpublishersaddress"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"insertauthor",
 		"body":[
 			"\\insertauthor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"insertdate",
 		"body":[
 			"\\insertdate"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"insertpublishers",
 		"body":[
 			"\\insertpublishers"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,71 +59,8 @@
 		"prefix":"Article",
 		"body":[
 			"\\Article{${1:title}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:keywords%text}}"
-		]
-	},
-
-
-	"listofauthors":{
-		"prefix":"listofauthors",
-		"body":[
-			"\\listofauthors"
-		]
-	},
-
-
-	"HUGE":{
-		"prefix":"HUGE",
-		"body":[
-			"\\HUGE"
-		]
-	},
-
-
-	"TocAuthorEntry{}{}":{
-		"prefix":"TocAuthorEntry",
-		"body":[
-			"\\TocAuthorEntry{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"currentarticlelabel":{
-		"prefix":"currentarticlelabel",
-		"body":[
-			"\\currentarticlelabel"
-		]
-	},
-
-
-	"citeimprint{}":{
-		"prefix":"citeimprint",
-		"body":[
-			"\\citeimprint{${1:bibid}}"
-		]
-	},
-
-
-	"citearticleauthor{}":{
-		"prefix":"citearticleauthor",
-		"body":[
-			"\\citearticleauthor{${1:bibid}}"
-		]
-	},
-
-
-	"publishersaddress{}":{
-		"prefix":"publishersaddress",
-		"body":[
-			"\\publishersaddress{${1:address%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,16 +68,90 @@
 		"prefix":"Article",
 		"body":[
 			"\\Article[${2:options%keyvals}]{${1:title}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"abstract":{
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:keywords%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"listofauthors":{
+		"prefix":"listofauthors",
+		"body":[
+			"\\listofauthors"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HUGE":{
+		"prefix":"HUGE",
+		"body":[
+			"\\HUGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"TocAuthorEntry{}{}":{
+		"prefix":"TocAuthorEntry",
+		"body":[
+			"\\TocAuthorEntry{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"currentarticlelabel":{
+		"prefix":"currentarticlelabel",
+		"body":[
+			"\\currentarticlelabel"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citeimprint{}":{
+		"prefix":"citeimprint",
+		"body":[
+			"\\citeimprint{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"citearticleauthor{}":{
+		"prefix":"citearticleauthor",
+		"body":[
+			"\\citearticleauthor{${1:bibid}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"publishersaddress{}":{
+		"prefix":"publishersaddress",
+		"body":[
+			"\\publishersaddress{${1:address%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"abstract[]":{
 		"prefix":"abstract",
 		"body":[
 			"\\begin{abstract}",
-				"\t$1",
+				"\t[${1:language}]",
 			"\\end{abstract}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

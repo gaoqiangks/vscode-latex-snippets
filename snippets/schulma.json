@@ -5,7 +5,8 @@
 		"prefix":"LGS",
 		"body":[
 			"\\LGS{${1:Gleichungen%formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ehoch",
 		"body":[
 			"\\ehoch{${1:Exponent}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"diff",
 		"body":[
 			"\\diff{${1:Variable}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,47 +32,8 @@
 		"prefix":"Pkt",
 		"body":[
 			"\\Pkt{${1:x%formula}}{${2:y%formula}}"
-		]
-	},
-
-
-	"PktR{}{}{}":{
-		"prefix":"PktR",
-		"body":[
-			"\\PktR{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
-		]
-	},
-
-
-	"Vek{}{}{}":{
-		"prefix":"Vek",
-		"body":[
-			"\\Vek{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
-		]
-	},
-
-
-	"VekBr{}{}{}":{
-		"prefix":"VekBr",
-		"body":[
-			"\\VekBr{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
-		]
-	},
-
-
-	"GTRY{}":{
-		"prefix":"GTRY",
-		"body":[
-			"\\GTRY{${1:index}}"
-		]
-	},
-
-
-	"Rechenkaestchen{}{}":{
-		"prefix":"Rechenkaestchen",
-		"body":[
-			"\\Rechenkaestchen{${1:Breite}}{${2:Höhe}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,7 +41,17 @@
 		"prefix":"Pkt",
 		"body":[
 			"\\Pkt[${3:Name%formula}]{${1:x%formula}}{${2:y%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"PktR{}{}{}":{
+		"prefix":"PktR",
+		"body":[
+			"\\PktR{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -85,7 +59,35 @@
 		"prefix":"Pkt",
 		"body":[
 			"\\Pkt[${4:Name%formula}]{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Vek{}{}{}":{
+		"prefix":"Vek",
+		"body":[
+			"\\Vek{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VekBr{}{}{}":{
+		"prefix":"VekBr",
+		"body":[
+			"\\VekBr{${1:x%formula}}{${2:y%formula}}{${3:z%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"GTRY{}":{
+		"prefix":"GTRY",
+		"body":[
+			"\\GTRY{${1:index}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +95,17 @@
 		"prefix":"GTRY",
 		"body":[
 			"\\GTRY{${1:index}}[${2:term%formula}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"Rechenkaestchen{}{}":{
+		"prefix":"Rechenkaestchen",
+		"body":[
+			"\\Rechenkaestchen{${1:Breite}}{${2:Höhe}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +113,8 @@
 		"prefix":"Rechenkaestchen",
 		"body":[
 			"\\Rechenkaestchen[${3:Kästchengröße}]{${1:Breite}}{${2:Höhe}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -111,16 +124,18 @@
 			"\\begin{Kosy}",
 				"\t$1",
 			"\\end{Kosy}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"Kosy":{
+	"Kosy[]":{
 		"prefix":"Kosy",
 		"body":[
 			"\\begin{Kosy}",
-				"\t$1",
+				"\t[${1:pgfplots options%keyvals}]",
 			"\\end{Kosy}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

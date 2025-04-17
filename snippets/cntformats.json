@@ -5,135 +5,8 @@
 		"prefix":"AddCounterPattern",
 		"body":[
 			"\\AddCounterPattern{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"NewCounterPattern{}{}":{
-		"prefix":"NewCounterPattern",
-		"body":[
-			"\\NewCounterPattern{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"RenewCounterPattern{}{}":{
-		"prefix":"RenewCounterPattern",
-		"body":[
-			"\\RenewCounterPattern{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"ReadCounterFrom{}{}":{
-		"prefix":"ReadCounterFrom",
-		"body":[
-			"\\ReadCounterFrom{${1:counter}}{${2:internal cmd}}"
-		]
-	},
-
-
-	"ReadCounterPattern{}":{
-		"prefix":"ReadCounterPattern",
-		"body":[
-			"\\ReadCounterPattern{${1:pattern}}"
-		]
-	},
-
-
-	"ReadCounterPatternFrom{}":{
-		"prefix":"ReadCounterPatternFrom",
-		"body":[
-			"\\ReadCounterPatternFrom{${1:pattern macro}}"
-		]
-	},
-
-
-	"SaveCounterPattern{}{}{}":{
-		"prefix":"SaveCounterPattern",
-		"body":[
-			"\\SaveCounterPattern{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
-		]
-	},
-
-
-	"eSaveCounterPattern{}{}{}":{
-		"prefix":"eSaveCounterPattern",
-		"body":[
-			"\\eSaveCounterPattern{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
-		]
-	},
-
-
-	"SaveCounterPatternFrom{}{}{}":{
-		"prefix":"SaveCounterPatternFrom",
-		"body":[
-			"\\SaveCounterPatternFrom{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
-		]
-	},
-
-
-	"eSaveCounterPatternFrom{}{}{}":{
-		"prefix":"eSaveCounterPatternFrom",
-		"body":[
-			"\\eSaveCounterPatternFrom{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
-		]
-	},
-
-
-	"NewPatternFormat{}{}":{
-		"prefix":"NewPatternFormat",
-		"body":[
-			"\\NewPatternFormat{${1:pattern}}{${2:format}}"
-		]
-	},
-
-
-	"AddCounterPattern*{}{}":{
-		"prefix":"*AddCounterPattern",
-		"body":[
-			"\\AddCounterPattern*{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"AddCounterPattern*[]{}{}":{
-		"prefix":"*AddCounterPattern",
-		"body":[
-			"\\AddCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"NewCounterPattern*{}{}":{
-		"prefix":"*NewCounterPattern",
-		"body":[
-			"\\NewCounterPattern*{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"NewCounterPattern*[]{}{}":{
-		"prefix":"*NewCounterPattern",
-		"body":[
-			"\\NewCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"RenewCounterPattern*{}{}":{
-		"prefix":"*RenewCounterPattern",
-		"body":[
-			"\\RenewCounterPattern*{${1:counter}}{${2:pattern}}"
-		]
-	},
-
-
-	"RenewCounterPattern*[]{}{}":{
-		"prefix":"*RenewCounterPattern",
-		"body":[
-			"\\RenewCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +14,35 @@
 		"prefix":"AddCounterPattern",
 		"body":[
 			"\\AddCounterPattern[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AddCounterPattern*{}{}":{
+		"prefix":"*AddCounterPattern",
+		"body":[
+			"\\AddCounterPattern*{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AddCounterPattern*[]{}{}":{
+		"prefix":"*AddCounterPattern",
+		"body":[
+			"\\AddCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"NewCounterPattern{}{}":{
+		"prefix":"NewCounterPattern",
+		"body":[
+			"\\NewCounterPattern{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +50,35 @@
 		"prefix":"NewCounterPattern",
 		"body":[
 			"\\NewCounterPattern[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewCounterPattern*{}{}":{
+		"prefix":"*NewCounterPattern",
+		"body":[
+			"\\NewCounterPattern*{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"NewCounterPattern*[]{}{}":{
+		"prefix":"*NewCounterPattern",
+		"body":[
+			"\\NewCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RenewCounterPattern{}{}":{
+		"prefix":"RenewCounterPattern",
+		"body":[
+			"\\RenewCounterPattern{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +86,35 @@
 		"prefix":"RenewCounterPattern",
 		"body":[
 			"\\RenewCounterPattern[${3:module}]{${1:counter}}{${2:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewCounterPattern*{}{}":{
+		"prefix":"*RenewCounterPattern",
+		"body":[
+			"\\RenewCounterPattern*{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RenewCounterPattern*[]{}{}":{
+		"prefix":"*RenewCounterPattern",
+		"body":[
+			"\\RenewCounterPattern*[${3:module}]{${1:counter}}{${2:pattern}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"ReadCounterFrom{}{}":{
+		"prefix":"ReadCounterFrom",
+		"body":[
+			"\\ReadCounterFrom{${1:counter}}{${2:internal cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +122,17 @@
 		"prefix":"ReadCounterFrom",
 		"body":[
 			"\\ReadCounterFrom[${3:module}]{${1:counter}}{${2:internal cmd}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ReadCounterPattern{}":{
+		"prefix":"ReadCounterPattern",
+		"body":[
+			"\\ReadCounterPattern{${1:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +140,17 @@
 		"prefix":"ReadCounterPattern",
 		"body":[
 			"\\ReadCounterPattern[${2:module}]{${1:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ReadCounterPatternFrom{}":{
+		"prefix":"ReadCounterPatternFrom",
+		"body":[
+			"\\ReadCounterPatternFrom{${1:pattern macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +158,17 @@
 		"prefix":"ReadCounterPatternFrom",
 		"body":[
 			"\\ReadCounterPatternFrom[${2:module}]{${1:pattern macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SaveCounterPattern{}{}{}":{
+		"prefix":"SaveCounterPattern",
+		"body":[
+			"\\SaveCounterPattern{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +176,17 @@
 		"prefix":"SaveCounterPattern",
 		"body":[
 			"\\SaveCounterPattern[${4:module}]{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eSaveCounterPattern{}{}{}":{
+		"prefix":"eSaveCounterPattern",
+		"body":[
+			"\\eSaveCounterPattern{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +194,17 @@
 		"prefix":"eSaveCounterPattern",
 		"body":[
 			"\\eSaveCounterPattern[${4:module}]{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"SaveCounterPatternFrom{}{}{}":{
+		"prefix":"SaveCounterPatternFrom",
+		"body":[
+			"\\SaveCounterPatternFrom{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +212,17 @@
 		"prefix":"SaveCounterPatternFrom",
 		"body":[
 			"\\SaveCounterPatternFrom[${4:module}]{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eSaveCounterPatternFrom{}{}{}":{
+		"prefix":"eSaveCounterPatternFrom",
+		"body":[
+			"\\eSaveCounterPatternFrom{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,6 +230,16 @@
 		"prefix":"eSaveCounterPatternFrom",
 		"body":[
 			"\\eSaveCounterPatternFrom[${4:module}]{${1:cmd a%cmd}}{${2:cmd b%cmd}}{${3:pattern macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewPatternFormat{}{}":{
+		"prefix":"NewPatternFormat",
+		"body":[
+			"\\NewPatternFormat{${1:pattern}}{${2:format}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

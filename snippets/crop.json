@@ -5,31 +5,8 @@
 		"prefix":"crop",
 		"body":[
 			"\\crop"
-		]
-	},
-
-
-	"cropdef{}{}{}{}{}":{
-		"prefix":"cropdef",
-		"body":[
-			"\\cropdef{${1:ul-macro}}{${2:ur-macro}}{${3:ll-macro}}{${4:lr-macro}}{${5:mode name}}"
-		]
-	},
-
-
-	"stockwidth":{
-		"prefix":"stockwidth",
-		"body":[
-			"\\stockwidth"
-		]
-	},
-
-
-	"stockheight":{
-		"prefix":"stockheight",
-		"body":[
-			"\\stockheight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +14,17 @@
 		"prefix":"crop",
 		"body":[
 			"\\crop[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"cropdef{}{}{}{}{}":{
+		"prefix":"cropdef",
+		"body":[
+			"\\cropdef{${1:ul-macro}}{${2:ur-macro}}{${3:ll-macro}}{${4:lr-macro}}{${5:mode name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,6 +32,25 @@
 		"prefix":"cropdef",
 		"body":[
 			"\\cropdef[${6:page-info macro}]{${1:ul-macro}}{${2:ur-macro}}{${3:ll-macro}}{${4:lr-macro}}{${5:mode name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"stockwidth":{
+		"prefix":"stockwidth",
+		"body":[
+			"\\stockwidth"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"stockheight":{
+		"prefix":"stockheight",
+		"body":[
+			"\\stockheight"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

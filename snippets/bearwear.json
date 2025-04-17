@@ -1,18 +1,20 @@
 {
 
 
-	"bearwearsetup{}":{
-		"prefix":"bearwearsetup",
-		"body":[
-			"\\bearwearsetup{${1:keyvals}}"
-		]
-	},
-
-
 	"bearwear[]":{
 		"prefix":"bearwear",
 		"body":[
 			"\\bearwear[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bearwearsetup{}":{
+		"prefix":"bearwearsetup",
+		"body":[
+			"\\bearwearsetup{${1:keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

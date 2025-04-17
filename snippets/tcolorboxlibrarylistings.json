@@ -5,7 +5,8 @@
 		"prefix":"tcbinputlisting",
 		"body":[
 			"\\tcbinputlisting{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"tcbuselistingtext",
 		"body":[
 			"\\tcbuselistingtext"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"tcbuselistinglisting",
 		"body":[
 			"\\tcbuselistinglisting"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"tcbusetemplisting",
 		"body":[
 			"\\tcbusetemplisting"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,111 +41,8 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewtcblisting{}{}":{
-		"prefix":"renewtcblisting",
-		"body":[
-			"\\renewtcblisting{${1:envname}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareTCBListing{}{}{}":{
-		"prefix":"DeclareTCBListing",
-		"body":[
-			"\\DeclareTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"NewTCBListing{}{}{}":{
-		"prefix":"NewTCBListing",
-		"body":[
-			"\\NewTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"RenewTCBListing{}{}{}":{
-		"prefix":"RenewTCBListing",
-		"body":[
-			"\\RenewTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"ProvideTCBListing{}{}{}":{
-		"prefix":"ProvideTCBListing",
-		"body":[
-			"\\ProvideTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"newtcbinputlisting{}{}":{
-		"prefix":"newtcbinputlisting",
-		"body":[
-			"\\newtcbinputlisting{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"renewtcbinputlisting{}{}":{
-		"prefix":"renewtcbinputlisting",
-		"body":[
-			"\\renewtcbinputlisting{${1:cmd}}{${2:options%keyvals}}"
-		]
-	},
-
-
-	"DeclareTCBInputListing{}{}{}":{
-		"prefix":"DeclareTCBInputListing",
-		"body":[
-			"\\DeclareTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"NewTCBInputListing{}{}{}":{
-		"prefix":"NewTCBInputListing",
-		"body":[
-			"\\NewTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"RenewTCBInputListing{}{}{}":{
-		"prefix":"RenewTCBInputListing",
-		"body":[
-			"\\RenewTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"ProvideTCBInputListing{}{}{}":{
-		"prefix":"ProvideTCBInputListing",
-		"body":[
-			"\\ProvideTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
-	},
-
-
-	"thetcblisting":{
-		"prefix":"thetcblisting",
-		"body":[
-			"\\thetcblisting"
-		]
-	},
-
-
-	"tcbiffileprocess{}{}{}{}{}{}":{
-		"prefix":"tcbiffileprocess",
-		"body":[
-			"\\tcbiffileprocess{${1:condition}}{${2:source}}{${3:md5-file}}{${4:target}}{${5:true}}{${6:false}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +50,8 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting{${1:envname}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -157,7 +59,8 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting{${1:envname}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -165,7 +68,8 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting[${3:init options}]{${1:envname}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -173,7 +77,8 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting[${3:init options}]{${1:envname}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -181,7 +86,17 @@
 		"prefix":"newtcblisting",
 		"body":[
 			"\\newtcblisting[${3:init options}]{${1:envname}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewtcblisting{}{}":{
+		"prefix":"renewtcblisting",
+		"body":[
+			"\\renewtcblisting{${1:envname}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +104,8 @@
 		"prefix":"renewtcblisting",
 		"body":[
 			"\\renewtcblisting{${1:envname}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -197,7 +113,8 @@
 		"prefix":"renewtcblisting",
 		"body":[
 			"\\renewtcblisting{${1:envname}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -205,7 +122,8 @@
 		"prefix":"renewtcblisting",
 		"body":[
 			"\\renewtcblisting[${3:init options}]{${1:envname}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -213,7 +131,8 @@
 		"prefix":"renewtcblisting",
 		"body":[
 			"\\renewtcblisting[${3:init options}]{${1:envname}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +140,17 @@
 		"prefix":"renewtcblisting",
 		"body":[
 			"\\renewtcblisting[${3:init options}]{${1:envname}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTCBListing{}{}{}":{
+		"prefix":"DeclareTCBListing",
+		"body":[
+			"\\DeclareTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +158,17 @@
 		"prefix":"DeclareTCBListing",
 		"body":[
 			"\\DeclareTCBListing[${4:init options}]{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewTCBListing{}{}{}":{
+		"prefix":"NewTCBListing",
+		"body":[
+			"\\NewTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +176,17 @@
 		"prefix":"NewTCBListing",
 		"body":[
 			"\\NewTCBListing[${4:init options}]{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewTCBListing{}{}{}":{
+		"prefix":"RenewTCBListing",
+		"body":[
+			"\\RenewTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +194,17 @@
 		"prefix":"RenewTCBListing",
 		"body":[
 			"\\RenewTCBListing[${4:init options}]{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideTCBListing{}{}{}":{
+		"prefix":"ProvideTCBListing",
+		"body":[
+			"\\ProvideTCBListing{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +212,17 @@
 		"prefix":"ProvideTCBListing",
 		"body":[
 			"\\ProvideTCBListing[${4:init options}]{${1:envname}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newtcbinputlisting{}{}":{
+		"prefix":"newtcbinputlisting",
+		"body":[
+			"\\newtcbinputlisting{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +230,8 @@
 		"prefix":"newtcbinputlisting",
 		"body":[
 			"\\newtcbinputlisting{${1:cmd}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -269,7 +239,8 @@
 		"prefix":"newtcbinputlisting",
 		"body":[
 			"\\newtcbinputlisting{${1:cmd}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -277,7 +248,8 @@
 		"prefix":"newtcbinputlisting",
 		"body":[
 			"\\newtcbinputlisting[${3:init options}]{${1:cmd}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -285,7 +257,8 @@
 		"prefix":"newtcbinputlisting",
 		"body":[
 			"\\newtcbinputlisting[${3:init options}]{${1:cmd}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -293,7 +266,17 @@
 		"prefix":"newtcbinputlisting",
 		"body":[
 			"\\newtcbinputlisting[${3:init options}]{${1:cmd}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"renewtcbinputlisting{}{}":{
+		"prefix":"renewtcbinputlisting",
+		"body":[
+			"\\renewtcbinputlisting{${1:cmd}}{${2:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +284,8 @@
 		"prefix":"renewtcbinputlisting",
 		"body":[
 			"\\renewtcbinputlisting{${1:cmd}}[${3:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -309,7 +293,8 @@
 		"prefix":"renewtcbinputlisting",
 		"body":[
 			"\\renewtcbinputlisting{${1:cmd}}[${3:args}][${4:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -317,7 +302,8 @@
 		"prefix":"renewtcbinputlisting",
 		"body":[
 			"\\renewtcbinputlisting[${3:init options}]{${1:cmd}}{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -325,7 +311,8 @@
 		"prefix":"renewtcbinputlisting",
 		"body":[
 			"\\renewtcbinputlisting[${3:init options}]{${1:cmd}}[${4:args}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -333,7 +320,17 @@
 		"prefix":"renewtcbinputlisting",
 		"body":[
 			"\\renewtcbinputlisting[${3:init options}]{${1:cmd}}[${4:args}][${5:default}]{${2:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"DeclareTCBInputListing{}{}{}":{
+		"prefix":"DeclareTCBInputListing",
+		"body":[
+			"\\DeclareTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +338,17 @@
 		"prefix":"DeclareTCBInputListing",
 		"body":[
 			"\\DeclareTCBInputListing[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"NewTCBInputListing{}{}{}":{
+		"prefix":"NewTCBInputListing",
+		"body":[
+			"\\NewTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +356,17 @@
 		"prefix":"NewTCBInputListing",
 		"body":[
 			"\\NewTCBInputListing[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RenewTCBInputListing{}{}{}":{
+		"prefix":"RenewTCBInputListing",
+		"body":[
+			"\\RenewTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -357,7 +374,17 @@
 		"prefix":"RenewTCBInputListing",
 		"body":[
 			"\\RenewTCBInputListing[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"ProvideTCBInputListing{}{}{}":{
+		"prefix":"ProvideTCBInputListing",
+		"body":[
+			"\\ProvideTCBInputListing{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -365,17 +392,37 @@
 		"prefix":"ProvideTCBInputListing",
 		"body":[
 			"\\ProvideTCBInputListing[${4:init options}]{${1:cmd}}{${2:xargs}}{${3:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"tcblisting":{
+	"thetcblisting":{
+		"prefix":"thetcblisting",
+		"body":[
+			"\\thetcblisting"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcbiffileprocess{}{}{}{}{}{}":{
+		"prefix":"tcbiffileprocess",
+		"body":[
+			"\\tcbiffileprocess{${1:condition}}{${2:source}}{${3:md5-file}}{${4:target}}{${5:true}}{${6:false}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tcblisting{}":{
 		"prefix":"tcblisting",
 		"body":[
 			"\\begin{tcblisting}",
-				"\t$1",
+				"\t{${1:options%keyvals}}",
 			"\\end{tcblisting}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -385,6 +432,7 @@
 			"\\begin{tcboutputlisting}",
 				"\t$1",
 			"\\end{tcboutputlisting}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

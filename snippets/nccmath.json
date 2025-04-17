@@ -1,11 +1,21 @@
 {
 
 
+	"intertext[]{}":{
+		"prefix":"intertext",
+		"body":[
+			"\\intertext[${2:distance%l}]{${1:word or phrase%text}}"
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
 	"dmulticolumn{}{}{}":{
 		"prefix":"dmulticolumn",
 		"body":[
 			"\\dmulticolumn{${1:count}}{${2:preamble}}{${3:formula}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +23,8 @@
 		"prefix":"useshortskip",
 		"body":[
 			"\\useshortskip"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,151 +32,8 @@
 		"prefix":"nr",
 		"body":[
 			"\\nr"
-		]
-	},
-
-
-	"mrel{}":{
-		"prefix":"mrel",
-		"body":[
-			"\\mrel{${1:formula}}"
-		]
-	},
-
-
-	"underrel{}{}":{
-		"prefix":"underrel",
-		"body":[
-			"\\underrel{${1:base}}{${2:bottom}}"
-		]
-	},
-
-
-	"medmath{}":{
-		"prefix":"medmath",
-		"body":[
-			"\\medmath{${1:formula}}"
-		]
-	},
-
-
-	"medop{}":{
-		"prefix":"medop",
-		"body":[
-			"\\medop{${1:operator}}"
-		]
-	},
-
-
-	"medint{}":{
-		"prefix":"medint",
-		"body":[
-			"\\medint{${1:operator}}"
-		]
-	},
-
-
-	"medintcorr{}":{
-		"prefix":"medintcorr",
-		"body":[
-			"\\medintcorr{${1:length}}"
-		]
-	},
-
-
-	"mfrac{}{}":{
-		"prefix":"mfrac",
-		"body":[
-			"\\mfrac{${1:num}}{${2:den}}"
-		]
-	},
-
-
-	"mbinom{}{}":{
-		"prefix":"mbinom",
-		"body":[
-			"\\mbinom{${1:above}}{${2:below}}"
-		]
-	},
-
-
-	"eq{}":{
-		"prefix":"eq",
-		"body":[
-			"\\eq{${1:formula}}"
-		]
-	},
-
-
-	"eqs{}":{
-		"prefix":"eqs",
-		"body":[
-			"\\eqs{${1:formulas%formula}}"
-		]
-	},
-
-
-	"eqalign{}":{
-		"prefix":"eqalign",
-		"body":[
-			"\\eqalign{${1:formulas%formula}}"
-		]
-	},
-
-
-	"nr*":{
-		"prefix":"*nr",
-		"body":[
-			"\\nr*"
-		]
-	},
-
-
-	"nr*[]":{
-		"prefix":"*nr",
-		"body":[
-			"\\nr*[${1:dist%l}]"
-		]
-	},
-
-
-	"eq*{}":{
-		"prefix":"*eq",
-		"body":[
-			"\\eq*{${1:formula}}"
-		]
-	},
-
-
-	"eqs*{}":{
-		"prefix":"*eqs",
-		"body":[
-			"\\eqs*{${1:formulas%formula}}"
-		]
-	},
-
-
-	"eqs*[]{}":{
-		"prefix":"*eqs",
-		"body":[
-			"\\eqs*[${2:dist%l}]{${1:formulas%formula}}"
-		]
-	},
-
-
-	"eqalign*{}":{
-		"prefix":"*eqalign",
-		"body":[
-			"\\eqalign*{${1:formulas%formula}}"
-		]
-	},
-
-
-	"intertext[]{}":{
-		"prefix":"intertext",
-		"body":[
-			"\\intertext[${2:distance%l}]{${1:word or phrase%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +41,125 @@
 		"prefix":"nr",
 		"body":[
 			"\\nr[${1:dist%l}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"nr*":{
+		"prefix":"*nr",
+		"body":[
+			"\\nr*"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"nr*[]":{
+		"prefix":"*nr",
+		"body":[
+			"\\nr*[${1:dist%l}]"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"mrel{}":{
+		"prefix":"mrel",
+		"body":[
+			"\\mrel{${1:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"underrel{}{}":{
+		"prefix":"underrel",
+		"body":[
+			"\\underrel{${1:base}}{${2:bottom}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"medmath{}":{
+		"prefix":"medmath",
+		"body":[
+			"\\medmath{${1:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"medop{}":{
+		"prefix":"medop",
+		"body":[
+			"\\medop{${1:operator}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"medint{}":{
+		"prefix":"medint",
+		"body":[
+			"\\medint{${1:operator}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"medintcorr{}":{
+		"prefix":"medintcorr",
+		"body":[
+			"\\medintcorr{${1:length}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mfrac{}{}":{
+		"prefix":"mfrac",
+		"body":[
+			"\\mfrac{${1:num}}{${2:den}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"mbinom{}{}":{
+		"prefix":"mbinom",
+		"body":[
+			"\\mbinom{${1:above}}{${2:below}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eq{}":{
+		"prefix":"eq",
+		"body":[
+			"\\eq{${1:formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eq*{}":{
+		"prefix":"*eq",
+		"body":[
+			"\\eq*{${1:formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"eqs{}":{
+		"prefix":"eqs",
+		"body":[
+			"\\eqs{${1:formulas%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +167,44 @@
 		"prefix":"eqs",
 		"body":[
 			"\\eqs[${2:dist%l}]{${1:formulas%formula}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"eqs*{}":{
+		"prefix":"*eqs",
+		"body":[
+			"\\eqs*{${1:formulas%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"eqs*[]{}":{
+		"prefix":"*eqs",
+		"body":[
+			"\\eqs*[${2:dist%l}]{${1:formulas%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"eqalign{}":{
+		"prefix":"eqalign",
+		"body":[
+			"\\eqalign{${1:formulas%formula}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"eqalign*{}":{
+		"prefix":"*eqalign",
+		"body":[
+			"\\eqalign*{${1:formulas%formula}}"
+		],
+		"luasnip": {"priority": 2000} 
 	},
 
 
@@ -191,7 +214,19 @@
 			"\\begin{fleqn}",
 				"\t$1",
 			"\\end{fleqn}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"fleqn[]":{
+		"prefix":"fleqn",
+		"body":[
+			"\\begin{fleqn}",
+				"\t[${1:margin}]",
+			"\\end{fleqn}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -201,17 +236,30 @@
 			"\\begin{ceqn}",
 				"\t$1",
 			"\\end{ceqn}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"darray":{
+	"darray{}":{
 		"prefix":"darray",
 		"body":[
 			"\\begin{darray}",
-				"\t$1",
+				"\t{${1:cols}}",
 			"\\end{darray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"darray[]{}":{
+		"prefix":"darray",
+		"body":[
+			"\\begin{darray}",
+				"\t[${2:pos%keyvals}]{${1:cols}}",
+			"\\end{darray}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -221,7 +269,8 @@
 			"\\begin{medsize}",
 				"\t$1",
 			"\\end{medsize}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -231,26 +280,7 @@
 			"\\begin{mmatrix}",
 				"\t$1",
 			"\\end{mmatrix}"
-		]
-	},
-
-
-	"fleqn":{
-		"prefix":"fleqn",
-		"body":[
-			"\\begin{fleqn}",
-				"\t$1",
-			"\\end{fleqn}"
-		]
-	},
-
-
-	"darray":{
-		"prefix":"darray",
-		"body":[
-			"\\begin{darray}",
-				"\t$1",
-			"\\end{darray}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"numblock",
 		"body":[
 			"\\numblock{${1:code lines}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"nblabel",
 		"body":[
 			"\\nblabel{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"nbVlabel",
 		"body":[
 			"\\nbVlabel{${1:label}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"theblocknum",
 		"body":[
 			"\\theblocknum"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"maxblocklabelsize",
 		"body":[
 			"\\maxblocklabelsize"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"blockindent",
 		"body":[
 			"\\blockindent"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"codeblockwidth",
 		"body":[
 			"\\codeblockwidth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"parindentsave",
 		"body":[
 			"\\parindentsave"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"blocklabel",
 		"body":[
 			"\\blocklabel{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -79,16 +88,18 @@
 			"\\begin{numVblock}",
 				"\t$1",
 			"\\end{numVblock}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"numVblock":{
+	"numVblock[]":{
 		"prefix":"numVblock",
 		"body":[
 			"\\begin{numVblock}",
-				"\t$1",
+				"\t[${2:\\nbVlabel{${1:label}}}]",
 			"\\end{numVblock}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

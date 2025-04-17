@@ -5,55 +5,8 @@
 		"prefix":"readpsbardata",
 		"body":[
 			"\\readpsbardata{${1:macro%cmd}}{${2:filename%file}}"
-		]
-	},
-
-
-	"psbarchart{}":{
-		"prefix":"psbarchart",
-		"body":[
-			"\\psbarchart{${1:data macro}}"
-		]
-	},
-
-
-	"newpsbarstyle{}{}":{
-		"prefix":"newpsbarstyle",
-		"body":[
-			"\\newpsbarstyle{${1:name}}{${2:definition}}"
-		]
-	},
-
-
-	"psbarlabel{}":{
-		"prefix":"psbarlabel",
-		"body":[
-			"\\psbarlabel{${1:label}}"
-		]
-	},
-
-
-	"psbarlabelsep":{
-		"prefix":"psbarlabelsep",
-		"body":[
-			"\\psbarlabelsep"
-		]
-	},
-
-
-	"psbarscale(){}":{
-		"prefix":"psbarscale",
-		"body":[
-			"\\psbarscale(${2:scale}){${1:PostScript code}}"
-		]
-	},
-
-
-	"setbarstyle{}":{
-		"prefix":"setbarstyle",
-		"body":[
-			"\\setbarstyle{${1:style}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +14,17 @@
 		"prefix":"readpsbardata",
 		"body":[
 			"\\readpsbardata[${3:options%keyvals}]{${1:macro%cmd}}{${2:filename%file}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"psbarchart{}":{
+		"prefix":"psbarchart",
+		"body":[
+			"\\psbarchart{${1:data macro}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,6 +32,52 @@
 		"prefix":"psbarchart",
 		"body":[
 			"\\psbarchart[${2:options%keyvals}]{${1:data macro}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newpsbarstyle{}{}":{
+		"prefix":"newpsbarstyle",
+		"body":[
+			"\\newpsbarstyle{${1:name}}{${2:definition}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psbarlabel{}":{
+		"prefix":"psbarlabel",
+		"body":[
+			"\\psbarlabel{${1:label}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psbarlabelsep":{
+		"prefix":"psbarlabelsep",
+		"body":[
+			"\\psbarlabelsep"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"psbarscale(){}":{
+		"prefix":"psbarscale",
+		"body":[
+			"\\psbarscale(${2:scale}){${1:PostScript code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"setbarstyle{}":{
+		"prefix":"setbarstyle",
+		"body":[
+			"\\setbarstyle{${1:style}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

@@ -5,23 +5,8 @@
 		"prefix":"pascal",
 		"body":[
 			"\\pascal{${1:order}}"
-		]
-	},
-
-
-	"pascalset{}":{
-		"prefix":"pascalset",
-		"body":[
-			"\\pascalset{${1:options%keyvals}}"
-		]
-	},
-
-
-	"binomc{}{}":{
-		"prefix":"binomc",
-		"body":[
-			"\\binomc{${1:arg1}}{${2:arg2}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,6 +14,25 @@
 		"prefix":"pascal",
 		"body":[
 			"\\pascal[${2:options%keyvals}]{${1:order}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"pascalset{}":{
+		"prefix":"pascalset",
+		"body":[
+			"\\pascalset{${1:options%keyvals}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"binomc{}{}":{
+		"prefix":"binomc",
+		"body":[
+			"\\binomc{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

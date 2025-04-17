@@ -5,7 +5,8 @@
 		"prefix":"Underline",
 		"body":[
 			"\\Underline{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"Midline",
 		"body":[
 			"\\Midline{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"Overline",
 		"body":[
 			"\\Overline{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"UnderlineDepth",
 		"body":[
 			"\\UnderlineDepth"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"MidlineHeight",
 		"body":[
 			"\\MidlineHeight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"OverlineHeight",
 		"body":[
 			"\\OverlineHeight"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"MidlineChar",
 		"body":[
 			"\\MidlineChar{${1:char}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,7 +68,8 @@
 		"prefix":"UMOline",
 		"body":[
 			"\\UMOline{${1:height}}{${2:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -69,7 +77,8 @@
 		"prefix":"UMOlineThickness",
 		"body":[
 			"\\UMOlineThickness"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -77,31 +86,8 @@
 		"prefix":"UMOspace",
 		"body":[
 			"\\UMOspace{${1:length}}"
-		]
-	},
-
-
-	"UMOnewline":{
-		"prefix":"UMOnewline",
-		"body":[
-			"\\UMOnewline"
-		]
-	},
-
-
-	"UMOspace*{}":{
-		"prefix":"*UMOspace",
-		"body":[
-			"\\UMOspace*{${1:length}}"
-		]
-	},
-
-
-	"UMOnewline*":{
-		"prefix":"*UMOnewline",
-		"body":[
-			"\\UMOnewline*"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,6 +95,34 @@
 		"prefix":"UMOspace",
 		"body":[
 			"\\UMOspace{${1:length}}[${2:num}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"UMOspace*{}":{
+		"prefix":"*UMOspace",
+		"body":[
+			"\\UMOspace*{${1:length}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"UMOnewline":{
+		"prefix":"UMOnewline",
+		"body":[
+			"\\UMOnewline"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"UMOnewline*":{
+		"prefix":"*UMOnewline",
+		"body":[
+			"\\UMOnewline*"
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

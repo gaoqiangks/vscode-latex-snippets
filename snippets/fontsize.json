@@ -5,303 +5,8 @@
 		"prefix":"changefontsize",
 		"body":[
 			"\\changefontsize{${1:fontsize}}"
-		]
-	},
-
-
-	"generateclofile{}{}":{
-		"prefix":"generateclofile",
-		"body":[
-			"\\generateclofile{${1:name}}{${2:fontsize}}"
-		]
-	},
-
-
-	"printsamples{}{}":{
-		"prefix":"printsamples",
-		"body":[
-			"\\printsamples{${1:baselineskip}}{${2:fontsize}}"
-		]
-	},
-
-
-	"sampletext{}":{
-		"prefix":"sampletext",
-		"body":[
-			"\\sampletext{${1:text}}"
-		]
-	},
-
-
-	"tinyr":{
-		"prefix":"tinyr",
-		"body":[
-			"\\tinyr"
-		]
-	},
-
-
-	"tinyrr":{
-		"prefix":"tinyrr",
-		"body":[
-			"\\tinyrr"
-		]
-	},
-
-
-	"tinyrrr":{
-		"prefix":"tinyrrr",
-		"body":[
-			"\\tinyrrr"
-		]
-	},
-
-
-	"scriptsizer":{
-		"prefix":"scriptsizer",
-		"body":[
-			"\\scriptsizer"
-		]
-	},
-
-
-	"scriptsizerr":{
-		"prefix":"scriptsizerr",
-		"body":[
-			"\\scriptsizerr"
-		]
-	},
-
-
-	"scriptsizerrr":{
-		"prefix":"scriptsizerrr",
-		"body":[
-			"\\scriptsizerrr"
-		]
-	},
-
-
-	"footnotesizer":{
-		"prefix":"footnotesizer",
-		"body":[
-			"\\footnotesizer"
-		]
-	},
-
-
-	"footnotesizerr":{
-		"prefix":"footnotesizerr",
-		"body":[
-			"\\footnotesizerr"
-		]
-	},
-
-
-	"footnotesizerrr":{
-		"prefix":"footnotesizerrr",
-		"body":[
-			"\\footnotesizerrr"
-		]
-	},
-
-
-	"smallr":{
-		"prefix":"smallr",
-		"body":[
-			"\\smallr"
-		]
-	},
-
-
-	"smallrr":{
-		"prefix":"smallrr",
-		"body":[
-			"\\smallrr"
-		]
-	},
-
-
-	"smallrrr":{
-		"prefix":"smallrrr",
-		"body":[
-			"\\smallrrr"
-		]
-	},
-
-
-	"normalsizer":{
-		"prefix":"normalsizer",
-		"body":[
-			"\\normalsizer"
-		]
-	},
-
-
-	"normalsizerr":{
-		"prefix":"normalsizerr",
-		"body":[
-			"\\normalsizerr"
-		]
-	},
-
-
-	"normalsizerrr":{
-		"prefix":"normalsizerrr",
-		"body":[
-			"\\normalsizerrr"
-		]
-	},
-
-
-	"larger":{
-		"prefix":"larger",
-		"body":[
-			"\\larger"
-		]
-	},
-
-
-	"largerr":{
-		"prefix":"largerr",
-		"body":[
-			"\\largerr"
-		]
-	},
-
-
-	"largerrr":{
-		"prefix":"largerrr",
-		"body":[
-			"\\largerrr"
-		]
-	},
-
-
-	"Larger":{
-		"prefix":"Larger",
-		"body":[
-			"\\Larger"
-		]
-	},
-
-
-	"Largerr":{
-		"prefix":"Largerr",
-		"body":[
-			"\\Largerr"
-		]
-	},
-
-
-	"Largerrr":{
-		"prefix":"Largerrr",
-		"body":[
-			"\\Largerrr"
-		]
-	},
-
-
-	"LARGEr":{
-		"prefix":"LARGEr",
-		"body":[
-			"\\LARGEr"
-		]
-	},
-
-
-	"LARGErr":{
-		"prefix":"LARGErr",
-		"body":[
-			"\\LARGErr"
-		]
-	},
-
-
-	"LARGErrr":{
-		"prefix":"LARGErrr",
-		"body":[
-			"\\LARGErrr"
-		]
-	},
-
-
-	"huger":{
-		"prefix":"huger",
-		"body":[
-			"\\huger"
-		]
-	},
-
-
-	"hugerr":{
-		"prefix":"hugerr",
-		"body":[
-			"\\hugerr"
-		]
-	},
-
-
-	"hugerrr":{
-		"prefix":"hugerrr",
-		"body":[
-			"\\hugerrr"
-		]
-	},
-
-
-	"Huger":{
-		"prefix":"Huger",
-		"body":[
-			"\\Huger"
-		]
-	},
-
-
-	"Hugerr":{
-		"prefix":"Hugerr",
-		"body":[
-			"\\Hugerr"
-		]
-	},
-
-
-	"Hugerrr":{
-		"prefix":"Hugerrr",
-		"body":[
-			"\\Hugerrr"
-		]
-	},
-
-
-	"HUGE":{
-		"prefix":"HUGE",
-		"body":[
-			"\\HUGE"
-		]
-	},
-
-
-	"HUGEr":{
-		"prefix":"HUGEr",
-		"body":[
-			"\\HUGEr"
-		]
-	},
-
-
-	"HUGErr":{
-		"prefix":"HUGErr",
-		"body":[
-			"\\HUGErr"
-		]
-	},
-
-
-	"HUGErrr":{
-		"prefix":"HUGErrr",
-		"body":[
-			"\\HUGErrr"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -309,7 +14,17 @@
 		"prefix":"changefontsize",
 		"body":[
 			"\\changefontsize[${2:baselineskip}]{${1:fontsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"generateclofile{}{}":{
+		"prefix":"generateclofile",
+		"body":[
+			"\\generateclofile{${1:name}}{${2:fontsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -317,7 +32,17 @@
 		"prefix":"generateclofile",
 		"body":[
 			"\\generateclofile{${1:name}}[${3:baselineskip}]{${2:fontsize}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"printsamples{}{}":{
+		"prefix":"printsamples",
+		"body":[
+			"\\printsamples{${1:baselineskip}}{${2:fontsize}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -325,6 +50,322 @@
 		"prefix":"printsamples",
 		"body":[
 			"\\printsamples{${1:baselineskip}}{${2:fontsize}}[${3:sizes}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"sampletext{}":{
+		"prefix":"sampletext",
+		"body":[
+			"\\sampletext{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tinyr":{
+		"prefix":"tinyr",
+		"body":[
+			"\\tinyr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tinyrr":{
+		"prefix":"tinyrr",
+		"body":[
+			"\\tinyrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"tinyrrr":{
+		"prefix":"tinyrrr",
+		"body":[
+			"\\tinyrrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scriptsizer":{
+		"prefix":"scriptsizer",
+		"body":[
+			"\\scriptsizer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scriptsizerr":{
+		"prefix":"scriptsizerr",
+		"body":[
+			"\\scriptsizerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"scriptsizerrr":{
+		"prefix":"scriptsizerrr",
+		"body":[
+			"\\scriptsizerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotesizer":{
+		"prefix":"footnotesizer",
+		"body":[
+			"\\footnotesizer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotesizerr":{
+		"prefix":"footnotesizerr",
+		"body":[
+			"\\footnotesizerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"footnotesizerrr":{
+		"prefix":"footnotesizerrr",
+		"body":[
+			"\\footnotesizerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallr":{
+		"prefix":"smallr",
+		"body":[
+			"\\smallr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallrr":{
+		"prefix":"smallrr",
+		"body":[
+			"\\smallrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"smallrrr":{
+		"prefix":"smallrrr",
+		"body":[
+			"\\smallrrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalsizer":{
+		"prefix":"normalsizer",
+		"body":[
+			"\\normalsizer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalsizerr":{
+		"prefix":"normalsizerr",
+		"body":[
+			"\\normalsizerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"normalsizerrr":{
+		"prefix":"normalsizerrr",
+		"body":[
+			"\\normalsizerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"larger":{
+		"prefix":"larger",
+		"body":[
+			"\\larger"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"largerr":{
+		"prefix":"largerr",
+		"body":[
+			"\\largerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"largerrr":{
+		"prefix":"largerrr",
+		"body":[
+			"\\largerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Larger":{
+		"prefix":"Larger",
+		"body":[
+			"\\Larger"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Largerr":{
+		"prefix":"Largerr",
+		"body":[
+			"\\Largerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Largerrr":{
+		"prefix":"Largerrr",
+		"body":[
+			"\\Largerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LARGEr":{
+		"prefix":"LARGEr",
+		"body":[
+			"\\LARGEr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LARGErr":{
+		"prefix":"LARGErr",
+		"body":[
+			"\\LARGErr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"LARGErrr":{
+		"prefix":"LARGErrr",
+		"body":[
+			"\\LARGErrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"huger":{
+		"prefix":"huger",
+		"body":[
+			"\\huger"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hugerr":{
+		"prefix":"hugerr",
+		"body":[
+			"\\hugerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"hugerrr":{
+		"prefix":"hugerrr",
+		"body":[
+			"\\hugerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Huger":{
+		"prefix":"Huger",
+		"body":[
+			"\\Huger"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hugerr":{
+		"prefix":"Hugerr",
+		"body":[
+			"\\Hugerr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"Hugerrr":{
+		"prefix":"Hugerrr",
+		"body":[
+			"\\Hugerrr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HUGE":{
+		"prefix":"HUGE",
+		"body":[
+			"\\HUGE"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HUGEr":{
+		"prefix":"HUGEr",
+		"body":[
+			"\\HUGEr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HUGErr":{
+		"prefix":"HUGErr",
+		"body":[
+			"\\HUGErr"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"HUGErrr":{
+		"prefix":"HUGErrr",
+		"body":[
+			"\\HUGErrr"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

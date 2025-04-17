@@ -5,7 +5,8 @@
 		"prefix":"theminutes",
 		"body":[
 			"\\theminutes"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,23 +14,8 @@
 		"prefix":"print",
 		"body":[
 			"\\print{${1:text}}"
-		]
-	},
-
-
-	"plush{}":{
-		"prefix":"plush",
-		"body":[
-			"\\plush{${1:text}}"
-		]
-	},
-
-
-	"plick{}":{
-		"prefix":"plick",
-		"body":[
-			"\\plick{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +23,8 @@
 		"prefix":"flush",
 		"body":[
 			"\\flush[${1:minutes}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -45,7 +32,17 @@
 		"prefix":"click",
 		"body":[
 			"\\click[${1:minutes}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plush{}":{
+		"prefix":"plush",
+		"body":[
+			"\\plush{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +50,17 @@
 		"prefix":"plush",
 		"body":[
 			"\\plush[${2:minutes}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"plick{}":{
+		"prefix":"plick",
+		"body":[
+			"\\plick{${1:text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,6 +68,7 @@
 		"prefix":"plick",
 		"body":[
 			"\\plick[${2:minutes}]{${1:text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

@@ -5,7 +5,8 @@
 		"prefix":"gitdirectory",
 		"body":[
 			"\\gitdirectory{${1:path%definition}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"gitunsetdirectory",
 		"body":[
 			"\\gitunsetdirectory"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"gitversion",
 		"body":[
 			"\\gitversion"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"ifgitdirty",
 		"body":[
 			"\\ifgitdirty{${1:true code}}{${2:false code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"gitdate",
 		"body":[
 			"\\gitdate"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"gitauthor",
 		"body":[
 			"\\gitauthor"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,7 +59,8 @@
 		"prefix":"gitemail",
 		"body":[
 			"\\gitemail"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -61,55 +68,8 @@
 		"prefix":"dogitauthors",
 		"body":[
 			"\\dogitauthors"
-		]
-	},
-
-
-	"forgitauthors{}":{
-		"prefix":"forgitauthors",
-		"body":[
-			"\\forgitauthors{${1:csname}}"
-		]
-	},
-
-
-	"gitcommit{}{}":{
-		"prefix":"gitcommit",
-		"body":[
-			"\\gitcommit{${1:csname}}{${2:revision}}"
-		]
-	},
-
-
-	"forgitcommit{}{}":{
-		"prefix":"forgitcommit",
-		"body":[
-			"\\forgitcommit{${1:csname}}{${2:rev-spec}}"
-		]
-	},
-
-
-	"forgittag{}":{
-		"prefix":"forgittag",
-		"body":[
-			"\\forgittag{${1:csname}}"
-		]
-	},
-
-
-	"forgittagseq{}":{
-		"prefix":"forgittagseq",
-		"body":[
-			"\\forgittagseq{${1:csname}}"
-		]
-	},
-
-
-	"gittag{}{}":{
-		"prefix":"gittag",
-		"body":[
-			"\\gittag{${1:csname}}{${2:tag}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +77,17 @@
 		"prefix":"dogitauthors",
 		"body":[
 			"\\dogitauthors[${1:conjunction}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"forgitauthors{}":{
+		"prefix":"forgitauthors",
+		"body":[
+			"\\forgitauthors{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +95,17 @@
 		"prefix":"forgitauthors",
 		"body":[
 			"\\forgitauthors[${2:conjunction}]{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"gitcommit{}{}":{
+		"prefix":"gitcommit",
+		"body":[
+			"\\gitcommit{${1:csname}}{${2:revision}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +113,17 @@
 		"prefix":"gitcommit",
 		"body":[
 			"\\gitcommit[${3:format}]{${1:csname}}{${2:revision}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"forgitcommit{}{}":{
+		"prefix":"forgitcommit",
+		"body":[
+			"\\forgitcommit{${1:csname}}{${2:rev-spec}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +131,17 @@
 		"prefix":"forgitcommit",
 		"body":[
 			"\\forgitcommit[${3:format}]{${1:csname}}{${2:rev-spec}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"forgittag{}":{
+		"prefix":"forgittag",
+		"body":[
+			"\\forgittag{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +149,26 @@
 		"prefix":"forgittag",
 		"body":[
 			"\\forgittag[${2:format}]{${1:csname}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"forgittagseq{}":{
+		"prefix":"forgittagseq",
+		"body":[
+			"\\forgittagseq{${1:csname}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"gittag{}{}":{
+		"prefix":"gittag",
+		"body":[
+			"\\gittag{${1:csname}}{${2:tag}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,6 +176,7 @@
 		"prefix":"gittag",
 		"body":[
 			"\\gittag[${3:format}]{${1:csname}}{${2:tag}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

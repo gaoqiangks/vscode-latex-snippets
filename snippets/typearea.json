@@ -5,7 +5,8 @@
 		"prefix":"PaperNameToSize",
 		"body":[
 			"\\PaperNameToSize{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"ProvideUnknownPaperSizeError",
 		"body":[
 			"\\ProvideUnknownPaperSizeError{${1:type}}{${2:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,119 +23,8 @@
 		"prefix":"isopaper",
 		"body":[
 			"\\isopaper{${1:number}}"
-		]
-	},
-
-
-	"AfterCalculatingTypearea{}":{
-		"prefix":"AfterCalculatingTypearea",
-		"body":[
-			"\\AfterCalculatingTypearea{${1:code}}"
-		]
-	},
-
-
-	"activateareas":{
-		"prefix":"activateareas",
-		"body":[
-			"\\activateareas"
-		]
-	},
-
-
-	"typearea{}":{
-		"prefix":"typearea",
-		"body":[
-			"\\typearea{${1:DIV}}"
-		]
-	},
-
-
-	"recalctypearea":{
-		"prefix":"recalctypearea",
-		"body":[
-			"\\recalctypearea"
-		]
-	},
-
-
-	"storeareas{}":{
-		"prefix":"storeareas",
-		"body":[
-			"\\storeareas{${1:command}}"
-		]
-	},
-
-
-	"BeforeRestoreareas{}":{
-		"prefix":"BeforeRestoreareas",
-		"body":[
-			"\\BeforeRestoreareas{${1:code}}"
-		]
-	},
-
-
-	"AfterRestoreareas{}":{
-		"prefix":"AfterRestoreareas",
-		"body":[
-			"\\AfterRestoreareas{${1:code}}"
-		]
-	},
-
-
-	"areaset{}{}":{
-		"prefix":"areaset",
-		"body":[
-			"\\areaset{${1:width}}{${2:height}}"
-		]
-	},
-
-
-	"AfterSettingArea{}":{
-		"prefix":"AfterSettingArea",
-		"body":[
-			"\\AfterSettingArea{${1:code}}"
-		]
-	},
-
-
-	"footheight":{
-		"prefix":"footheight",
-		"body":[
-			"\\footheight"
-		]
-	},
-
-
-	"AfterCalculatingTypearea*{}":{
-		"prefix":"*AfterCalculatingTypearea",
-		"body":[
-			"\\AfterCalculatingTypearea*{${1:code}}"
-		]
-	},
-
-
-	"BeforeRestoreareas*{}":{
-		"prefix":"*BeforeRestoreareas",
-		"body":[
-			"\\BeforeRestoreareas*{${1:code}}"
-		]
-	},
-
-
-	"AfterRestoreareas*{}":{
-		"prefix":"*AfterRestoreareas",
-		"body":[
-			"\\AfterRestoreareas*{${1:code}}"
-		]
-	},
-
-
-	"AfterSettingArea*{}":{
-		"prefix":"*AfterSettingArea",
-		"body":[
-			"\\AfterSettingArea*{${1:code}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +32,44 @@
 		"prefix":"isopaper",
 		"body":[
 			"\\isopaper[${2:letter}]{${1:number}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AfterCalculatingTypearea{}":{
+		"prefix":"AfterCalculatingTypearea",
+		"body":[
+			"\\AfterCalculatingTypearea{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AfterCalculatingTypearea*{}":{
+		"prefix":"*AfterCalculatingTypearea",
+		"body":[
+			"\\AfterCalculatingTypearea*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"activateareas":{
+		"prefix":"activateareas",
+		"body":[
+			"\\activateareas"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"typearea{}":{
+		"prefix":"typearea",
+		"body":[
+			"\\typearea{${1:DIV}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +77,71 @@
 		"prefix":"typearea",
 		"body":[
 			"\\typearea[${2:BCOR}]{${1:DIV}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"recalctypearea":{
+		"prefix":"recalctypearea",
+		"body":[
+			"\\recalctypearea"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"storeareas{}":{
+		"prefix":"storeareas",
+		"body":[
+			"\\storeareas{${1:command}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeforeRestoreareas{}":{
+		"prefix":"BeforeRestoreareas",
+		"body":[
+			"\\BeforeRestoreareas{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"BeforeRestoreareas*{}":{
+		"prefix":"*BeforeRestoreareas",
+		"body":[
+			"\\BeforeRestoreareas*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"AfterRestoreareas{}":{
+		"prefix":"AfterRestoreareas",
+		"body":[
+			"\\AfterRestoreareas{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AfterRestoreareas*{}":{
+		"prefix":"*AfterRestoreareas",
+		"body":[
+			"\\AfterRestoreareas*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"areaset{}{}":{
+		"prefix":"areaset",
+		"body":[
+			"\\areaset{${1:width}}{${2:height}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,6 +149,34 @@
 		"prefix":"areaset",
 		"body":[
 			"\\areaset[${3:BCOR}]{${1:width}}{${2:height}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"AfterSettingArea{}":{
+		"prefix":"AfterSettingArea",
+		"body":[
+			"\\AfterSettingArea{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"AfterSettingArea*{}":{
+		"prefix":"*AfterSettingArea",
+		"body":[
+			"\\AfterSettingArea*{${1:code}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"footheight":{
+		"prefix":"footheight",
+		"body":[
+			"\\footheight"
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

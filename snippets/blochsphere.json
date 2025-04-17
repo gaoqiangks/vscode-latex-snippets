@@ -5,151 +5,8 @@
 		"prefix":"drawBall",
 		"body":[
 			"\\drawBall"
-		]
-	},
-
-
-	"drawBallGrid{}{}":{
-		"prefix":"drawBallGrid",
-		"body":[
-			"\\drawBallGrid{${1:lat deg sep}}{${2:long deg sep}}"
-		]
-	},
-
-
-	"setDrawingPlane{}{}":{
-		"prefix":"setDrawingPlane",
-		"body":[
-			"\\setDrawingPlane{${1:tilt angle}}{${2:rotation angle}}"
-		]
-	},
-
-
-	"setLatitudinalDrawingPlane{}":{
-		"prefix":"setLatitudinalDrawingPlane",
-		"body":[
-			"\\setLatitudinalDrawingPlane{${1:latitude}}"
-		]
-	},
-
-
-	"setLongitudinalDrawingPlane{}":{
-		"prefix":"setLongitudinalDrawingPlane",
-		"body":[
-			"\\setLongitudinalDrawingPlane{${1:longitude}}"
-		]
-	},
-
-
-	"drawCircle{}{}":{
-		"prefix":"drawCircle",
-		"body":[
-			"\\drawCircle{${1:tilt angle}}{${2:rotation angle}}"
-		]
-	},
-
-
-	"drawGreatCircle{}{}":{
-		"prefix":"drawGreatCircle",
-		"body":[
-			"\\drawGreatCircle{${1:tilt angle}}{${2:rotation angle}}"
-		]
-	},
-
-
-	"drawSmallCircle{}{}{}":{
-		"prefix":"drawSmallCircle",
-		"body":[
-			"\\drawSmallCircle{${1:tilt angle}}{${2:rotation angle}}{${3:offset latitude}}"
-		]
-	},
-
-
-	"drawLatitudeCircle{}":{
-		"prefix":"drawLatitudeCircle",
-		"body":[
-			"\\drawLatitudeCircle{${1:latitude}}"
-		]
-	},
-
-
-	"drawLongitudeCircle{}":{
-		"prefix":"drawLongitudeCircle",
-		"body":[
-			"\\drawLongitudeCircle{${1:longitude}}"
-		]
-	},
-
-
-	"drawRotationLeft{}{}{}{}":{
-		"prefix":"drawRotationLeft",
-		"body":[
-			"\\drawRotationLeft{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
-		]
-	},
-
-
-	"drawRotationRight{}{}{}{}":{
-		"prefix":"drawRotationRight",
-		"body":[
-			"\\drawRotationRight{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
-		]
-	},
-
-
-	"drawAxis{}{}":{
-		"prefix":"drawAxis",
-		"body":[
-			"\\drawAxis{${1:tilt angle}}{${2:rotation angle}}"
-		]
-	},
-
-
-	"labelPolar{}{}{}":{
-		"prefix":"labelPolar",
-		"body":[
-			"\\labelPolar{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
-		]
-	},
-
-
-	"labelLatLon{}{}{}":{
-		"prefix":"labelLatLon",
-		"body":[
-			"\\labelLatLon{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
-		]
-	},
-
-
-	"drawStatePolar{}{}{}":{
-		"prefix":"drawStatePolar",
-		"body":[
-			"\\drawStatePolar{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
-		]
-	},
-
-
-	"drawStateLatLon{}{}{}":{
-		"prefix":"drawStateLatLon",
-		"body":[
-			"\\drawStateLatLon{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
-		]
-	},
-
-
-	"computeOffset{}":{
-		"prefix":"computeOffset",
-		"body":[
-			"\\computeOffset{${1:name}}"
-		]
-	},
-
-
-	"computeVisibility{}{}{}{}":{
-		"prefix":"computeVisibility",
-		"body":[
-			"\\computeVisibility{${1:name1}}{${2:name2}}{${3:name3}}{${4:name4}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -157,7 +14,17 @@
 		"prefix":"drawBall",
 		"body":[
 			"\\drawBall[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawBallGrid{}{}":{
+		"prefix":"drawBallGrid",
+		"body":[
+			"\\drawBallGrid{${1:lat deg sep}}{${2:long deg sep}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -165,7 +32,17 @@
 		"prefix":"drawBallGrid",
 		"body":[
 			"\\drawBallGrid[${3:options%keyvals}]{${1:lat deg sep}}{${2:long deg sep}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setDrawingPlane{}{}":{
+		"prefix":"setDrawingPlane",
+		"body":[
+			"\\setDrawingPlane{${1:tilt angle}}{${2:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -173,7 +50,17 @@
 		"prefix":"setDrawingPlane",
 		"body":[
 			"\\setDrawingPlane[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setLatitudinalDrawingPlane{}":{
+		"prefix":"setLatitudinalDrawingPlane",
+		"body":[
+			"\\setLatitudinalDrawingPlane{${1:latitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -181,7 +68,17 @@
 		"prefix":"setLatitudinalDrawingPlane",
 		"body":[
 			"\\setLatitudinalDrawingPlane[${2:options%keyvals}]{${1:latitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"setLongitudinalDrawingPlane{}":{
+		"prefix":"setLongitudinalDrawingPlane",
+		"body":[
+			"\\setLongitudinalDrawingPlane{${1:longitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -189,7 +86,17 @@
 		"prefix":"setLongitudinalDrawingPlane",
 		"body":[
 			"\\setLongitudinalDrawingPlane[${2:options%keyvals}]{${1:longitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawCircle{}{}":{
+		"prefix":"drawCircle",
+		"body":[
+			"\\drawCircle{${1:tilt angle}}{${2:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -197,7 +104,17 @@
 		"prefix":"drawCircle",
 		"body":[
 			"\\drawCircle[${3:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawGreatCircle{}{}":{
+		"prefix":"drawGreatCircle",
+		"body":[
+			"\\drawGreatCircle{${1:tilt angle}}{${2:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -205,7 +122,17 @@
 		"prefix":"drawGreatCircle",
 		"body":[
 			"\\drawGreatCircle[${3:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawSmallCircle{}{}{}":{
+		"prefix":"drawSmallCircle",
+		"body":[
+			"\\drawSmallCircle{${1:tilt angle}}{${2:rotation angle}}{${3:offset latitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -213,7 +140,17 @@
 		"prefix":"drawSmallCircle",
 		"body":[
 			"\\drawSmallCircle[${4:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}{${3:offset latitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawLatitudeCircle{}":{
+		"prefix":"drawLatitudeCircle",
+		"body":[
+			"\\drawLatitudeCircle{${1:latitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -221,7 +158,17 @@
 		"prefix":"drawLatitudeCircle",
 		"body":[
 			"\\drawLatitudeCircle[${2:options%keyvals}]{${1:latitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawLongitudeCircle{}":{
+		"prefix":"drawLongitudeCircle",
+		"body":[
+			"\\drawLongitudeCircle{${1:longitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -229,7 +176,17 @@
 		"prefix":"drawLongitudeCircle",
 		"body":[
 			"\\drawLongitudeCircle[${2:options%keyvals}]{${1:longitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawRotationLeft{}{}{}{}":{
+		"prefix":"drawRotationLeft",
+		"body":[
+			"\\drawRotationLeft{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -237,7 +194,17 @@
 		"prefix":"drawRotationLeft",
 		"body":[
 			"\\drawRotationLeft[${5:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawRotationRight{}{}{}{}":{
+		"prefix":"drawRotationRight",
+		"body":[
+			"\\drawRotationRight{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -245,7 +212,17 @@
 		"prefix":"drawRotationRight",
 		"body":[
 			"\\drawRotationRight[${5:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}{${3:axis offset}}{${4:clear angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawAxis{}{}":{
+		"prefix":"drawAxis",
+		"body":[
+			"\\drawAxis{${1:tilt angle}}{${2:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -253,7 +230,17 @@
 		"prefix":"drawAxis",
 		"body":[
 			"\\drawAxis[${3:options%keyvals}]{${1:tilt angle}}{${2:rotation angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"labelPolar{}{}{}":{
+		"prefix":"labelPolar",
+		"body":[
+			"\\labelPolar{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -261,7 +248,17 @@
 		"prefix":"labelPolar",
 		"body":[
 			"\\labelPolar[${4:options%keyvals}]{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"labelLatLon{}{}{}":{
+		"prefix":"labelLatLon",
+		"body":[
+			"\\labelLatLon{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -269,7 +266,17 @@
 		"prefix":"labelLatLon",
 		"body":[
 			"\\labelLatLon[${4:options%keyvals}]{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawStatePolar{}{}{}":{
+		"prefix":"drawStatePolar",
+		"body":[
+			"\\drawStatePolar{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -277,7 +284,17 @@
 		"prefix":"drawStatePolar",
 		"body":[
 			"\\drawStatePolar[${4:options%keyvals}]{${1:TikZ label}}{${2:tilt angle}}{${3:rotation angle}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"drawStateLatLon{}{}{}":{
+		"prefix":"drawStateLatLon",
+		"body":[
+			"\\drawStateLatLon{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -285,7 +302,17 @@
 		"prefix":"drawStateLatLon",
 		"body":[
 			"\\drawStateLatLon[${4:options%keyvals}]{${1:TikZ label}}{${2:latitude}}{${3:longitude}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"computeOffset{}":{
+		"prefix":"computeOffset",
+		"body":[
+			"\\computeOffset{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -293,7 +320,17 @@
 		"prefix":"computeOffset",
 		"body":[
 			"\\computeOffset[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"computeVisibility{}{}{}{}":{
+		"prefix":"computeVisibility",
+		"body":[
+			"\\computeVisibility{${1:name1}}{${2:name2}}{${3:name3}}{${4:name4}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -301,7 +338,8 @@
 		"prefix":"computeVisibility",
 		"body":[
 			"\\computeVisibility[${5:options%keyvals}]{${1:name1}}{${2:name2}}{${3:name3}}{${4:name4}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -311,16 +349,18 @@
 			"\\begin{blochsphere}",
 				"\t$1",
 			"\\end{blochsphere}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"blochsphere":{
+	"blochsphere[]":{
 		"prefix":"blochsphere",
 		"body":[
 			"\\begin{blochsphere}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{blochsphere}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

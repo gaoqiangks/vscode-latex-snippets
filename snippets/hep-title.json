@@ -5,7 +5,8 @@
 		"prefix":"series",
 		"body":[
 			"\\series{${1:series%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"subtitle",
 		"body":[
 			"\\subtitle{${1:subtitle%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"seriesfont",
 		"body":[
 			"\\seriesfont{${1:font commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,7 +32,8 @@
 		"prefix":"titlefont",
 		"body":[
 			"\\titlefont{${1:font commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -37,7 +41,8 @@
 		"prefix":"subtitlefont",
 		"body":[
 			"\\subtitlefont{${1:font commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -45,7 +50,8 @@
 		"prefix":"affiliation",
 		"body":[
 			"\\affiliation{${1:affiliation%text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -53,287 +59,8 @@
 		"prefix":"editor",
 		"body":[
 			"\\editor{${1:editor%text}}"
-		]
-	},
-
-
-	"endorser{}":{
-		"prefix":"endorser",
-		"body":[
-			"\\endorser{${1:endorser%text}}"
-		]
-	},
-
-
-	"email{}":{
-		"prefix":"email",
-		"body":[
-			"\\email{${1:email%URL}}"
-		]
-	},
-
-
-	"authorfont{}":{
-		"prefix":"authorfont",
-		"body":[
-			"\\authorfont{${1:font commands}}"
-		]
-	},
-
-
-	"editorfont{}":{
-		"prefix":"editorfont",
-		"body":[
-			"\\editorfont{${1:font commands}}"
-		]
-	},
-
-
-	"endorserfont{}":{
-		"prefix":"endorserfont",
-		"body":[
-			"\\endorserfont{${1:font commands}}"
-		]
-	},
-
-
-	"affiliationfont{}":{
-		"prefix":"affiliationfont",
-		"body":[
-			"\\affiliationfont{${1:font commands}}"
-		]
-	},
-
-
-	"preprint{}":{
-		"prefix":"preprint",
-		"body":[
-			"\\preprint{${1:number}}"
-		]
-	},
-
-
-	"preprintfont{}":{
-		"prefix":"preprintfont",
-		"body":[
-			"\\preprintfont{${1:font commands}}"
-		]
-	},
-
-
-	"online{}{}":{
-		"prefix":"online",
-		"body":[
-			"\\online{${1:URL}}{${2:text%plain}}"
-		]
-	},
-
-
-	"keywords{}":{
-		"prefix":"keywords",
-		"body":[
-			"\\keywords{${1:keywords%text}}"
-		]
-	},
-
-
-	"placepreprint":{
-		"prefix":"placepreprint",
-		"body":[
-			"\\placepreprint"
-		]
-	},
-
-
-	"preseries{}":{
-		"prefix":"preseries",
-		"body":[
-			"\\preseries{${1:code}}"
-		]
-	},
-
-
-	"postseries{}":{
-		"prefix":"postseries",
-		"body":[
-			"\\postseries{${1:code}}"
-		]
-	},
-
-
-	"presubtitle{}":{
-		"prefix":"presubtitle",
-		"body":[
-			"\\presubtitle{${1:code}}"
-		]
-	},
-
-
-	"postsubtitle{}":{
-		"prefix":"postsubtitle",
-		"body":[
-			"\\postsubtitle{${1:code}}"
-		]
-	},
-
-
-	"preeditor{}":{
-		"prefix":"preeditor",
-		"body":[
-			"\\preeditor{${1:code}}"
-		]
-	},
-
-
-	"posteditor{}":{
-		"prefix":"posteditor",
-		"body":[
-			"\\posteditor{${1:code}}"
-		]
-	},
-
-
-	"editortitle{}{}":{
-		"prefix":"editortitle",
-		"body":[
-			"\\editortitle{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"editortitlefont{}":{
-		"prefix":"editortitlefont",
-		"body":[
-			"\\editortitlefont{${1:font commands}}"
-		]
-	},
-
-
-	"preeditortitle{}":{
-		"prefix":"preeditortitle",
-		"body":[
-			"\\preeditortitle{${1:code}}"
-		]
-	},
-
-
-	"posteditortitle{}":{
-		"prefix":"posteditortitle",
-		"body":[
-			"\\posteditortitle{${1:code}}"
-		]
-	},
-
-
-	"authortitle{}{}":{
-		"prefix":"authortitle",
-		"body":[
-			"\\authortitle{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"authortitlefont{}":{
-		"prefix":"authortitlefont",
-		"body":[
-			"\\authortitlefont{${1:font commands}}"
-		]
-	},
-
-
-	"preauthortitle{}":{
-		"prefix":"preauthortitle",
-		"body":[
-			"\\preauthortitle{${1:code}}"
-		]
-	},
-
-
-	"postauthortitle{}":{
-		"prefix":"postauthortitle",
-		"body":[
-			"\\postauthortitle{${1:code}}"
-		]
-	},
-
-
-	"preendorser{}":{
-		"prefix":"preendorser",
-		"body":[
-			"\\preendorser{${1:code}}"
-		]
-	},
-
-
-	"postendorser{}":{
-		"prefix":"postendorser",
-		"body":[
-			"\\postendorser{${1:code}}"
-		]
-	},
-
-
-	"endorsertitle{}{}":{
-		"prefix":"endorsertitle",
-		"body":[
-			"\\endorsertitle{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"preendorsertitle{}":{
-		"prefix":"preendorsertitle",
-		"body":[
-			"\\preendorsertitle{${1:code}}"
-		]
-	},
-
-
-	"postendorsertitle{}":{
-		"prefix":"postendorsertitle",
-		"body":[
-			"\\postendorsertitle{${1:code}}"
-		]
-	},
-
-
-	"endorsertitlefont{}":{
-		"prefix":"endorsertitlefont",
-		"body":[
-			"\\endorsertitlefont{${1:font commands}}"
-		]
-	},
-
-
-	"theeditors":{
-		"prefix":"theeditors",
-		"body":[
-			"\\theeditors"
-		]
-	},
-
-
-	"theendorsers":{
-		"prefix":"theendorsers",
-		"body":[
-			"\\theendorsers"
-		]
-	},
-
-
-	"theaffiliation":{
-		"prefix":"theaffiliation",
-		"body":[
-			"\\theaffiliation"
-		]
-	},
-
-
-	"datefont{}":{
-		"prefix":"datefont",
-		"body":[
-			"\\datefont{${1:font commands}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -341,7 +68,17 @@
 		"prefix":"editor",
 		"body":[
 			"\\editor[${2:affil}]{${1:editor%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"endorser{}":{
+		"prefix":"endorser",
+		"body":[
+			"\\endorser{${1:endorser%text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -349,7 +86,314 @@
 		"prefix":"endorser",
 		"body":[
 			"\\endorser[${2:affil}]{${1:endorser%text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"email{}":{
+		"prefix":"email",
+		"body":[
+			"\\email{${1:email%URL}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authorfont{}":{
+		"prefix":"authorfont",
+		"body":[
+			"\\authorfont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"editorfont{}":{
+		"prefix":"editorfont",
+		"body":[
+			"\\editorfont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endorserfont{}":{
+		"prefix":"endorserfont",
+		"body":[
+			"\\endorserfont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"affiliationfont{}":{
+		"prefix":"affiliationfont",
+		"body":[
+			"\\affiliationfont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preprint{}":{
+		"prefix":"preprint",
+		"body":[
+			"\\preprint{${1:number}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preprintfont{}":{
+		"prefix":"preprintfont",
+		"body":[
+			"\\preprintfont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"online{}{}":{
+		"prefix":"online",
+		"body":[
+			"\\online{${1:URL}}{${2:text%plain}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"keywords{}":{
+		"prefix":"keywords",
+		"body":[
+			"\\keywords{${1:keywords%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"placepreprint":{
+		"prefix":"placepreprint",
+		"body":[
+			"\\placepreprint"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preseries{}":{
+		"prefix":"preseries",
+		"body":[
+			"\\preseries{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postseries{}":{
+		"prefix":"postseries",
+		"body":[
+			"\\postseries{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"presubtitle{}":{
+		"prefix":"presubtitle",
+		"body":[
+			"\\presubtitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postsubtitle{}":{
+		"prefix":"postsubtitle",
+		"body":[
+			"\\postsubtitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preeditor{}":{
+		"prefix":"preeditor",
+		"body":[
+			"\\preeditor{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"posteditor{}":{
+		"prefix":"posteditor",
+		"body":[
+			"\\posteditor{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"editortitle{}{}":{
+		"prefix":"editortitle",
+		"body":[
+			"\\editortitle{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"editortitlefont{}":{
+		"prefix":"editortitlefont",
+		"body":[
+			"\\editortitlefont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preeditortitle{}":{
+		"prefix":"preeditortitle",
+		"body":[
+			"\\preeditortitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"posteditortitle{}":{
+		"prefix":"posteditortitle",
+		"body":[
+			"\\posteditortitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authortitle{}{}":{
+		"prefix":"authortitle",
+		"body":[
+			"\\authortitle{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"authortitlefont{}":{
+		"prefix":"authortitlefont",
+		"body":[
+			"\\authortitlefont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preauthortitle{}":{
+		"prefix":"preauthortitle",
+		"body":[
+			"\\preauthortitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postauthortitle{}":{
+		"prefix":"postauthortitle",
+		"body":[
+			"\\postauthortitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preendorser{}":{
+		"prefix":"preendorser",
+		"body":[
+			"\\preendorser{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postendorser{}":{
+		"prefix":"postendorser",
+		"body":[
+			"\\postendorser{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endorsertitle{}{}":{
+		"prefix":"endorsertitle",
+		"body":[
+			"\\endorsertitle{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"preendorsertitle{}":{
+		"prefix":"preendorsertitle",
+		"body":[
+			"\\preendorsertitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"postendorsertitle{}":{
+		"prefix":"postendorsertitle",
+		"body":[
+			"\\postendorsertitle{${1:code}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"endorsertitlefont{}":{
+		"prefix":"endorsertitlefont",
+		"body":[
+			"\\endorsertitlefont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theeditors":{
+		"prefix":"theeditors",
+		"body":[
+			"\\theeditors"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theendorsers":{
+		"prefix":"theendorsers",
+		"body":[
+			"\\theendorsers"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theaffiliation":{
+		"prefix":"theaffiliation",
+		"body":[
+			"\\theaffiliation"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"datefont{}":{
+		"prefix":"datefont",
+		"body":[
+			"\\datefont{${1:font commands}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -359,6 +403,7 @@
 			"\\begin{abstract*}",
 				"\t$1",
 			"\\end{abstract*}"
-		]
+		],
+		"luasnip": {"priority": 2000} 
 	}
 }

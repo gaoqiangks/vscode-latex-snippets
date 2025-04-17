@@ -5,15 +5,8 @@
 		"prefix":"chordbox",
 		"body":[
 			"\\chordbox{${1:chord-name%formula}}{${2:fret-positions}}"
-		]
-	},
-
-
-	"bchordbox{}{}{}":{
-		"prefix":"bchordbox",
-		"body":[
-			"\\bchordbox{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +14,17 @@
 		"prefix":"chordbox",
 		"body":[
 			"\\chordbox[${3:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"bchordbox{}{}{}":{
+		"prefix":"bchordbox",
+		"body":[
+			"\\bchordbox{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,16 +32,18 @@
 		"prefix":"bchordbox",
 		"body":[
 			"\\bchordbox[${4:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
-	"chordboxenv":{
+	"chordboxenv{}{}{}":{
 		"prefix":"chordboxenv",
 		"body":[
 			"\\begin{chordboxenv}",
-				"\t$1",
+				"\t{${1:basefret}}{${2:chord-name%formula}}{${3:fret-positions}}",
 			"\\end{chordboxenv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	}
 }

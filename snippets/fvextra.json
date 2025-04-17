@@ -5,7 +5,8 @@
 		"prefix":"fvinlineset",
 		"body":[
 			"\\fvinlineset{${1:options%keyvals}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -13,7 +14,8 @@
 		"prefix":"FancyVerbFormatInline",
 		"body":[
 			"\\FancyVerbFormatInline{${1:text%plain}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -21,7 +23,8 @@
 		"prefix":"FancyVerbFormatText",
 		"body":[
 			"\\FancyVerbFormatText"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -29,607 +32,8 @@
 		"prefix":"EscVerb",
 		"body":[
 			"\\EscVerb{${1:backslash-escaped text}}"
-		]
-	},
-
-
-	"FancyVerbWriteFileHandle":{
-		"prefix":"FancyVerbWriteFileHandle",
-		"body":[
-			"\\FancyVerbWriteFileHandle"
-		]
-	},
-
-
-	"FancyVerbDefaultWriter":{
-		"prefix":"FancyVerbDefaultWriter",
-		"body":[
-			"\\FancyVerbDefaultWriter"
-		]
-	},
-
-
-	"FancyVerbDefaultBufferer":{
-		"prefix":"FancyVerbDefaultBufferer",
-		"body":[
-			"\\FancyVerbDefaultBufferer"
-		]
-	},
-
-
-	"FancyVerbBufferLineName":{
-		"prefix":"FancyVerbBufferLineName",
-		"body":[
-			"\\FancyVerbBufferLineName"
-		]
-	},
-
-
-	"VerbatimInsertBuffer":{
-		"prefix":"VerbatimInsertBuffer",
-		"body":[
-			"\\VerbatimInsertBuffer"
-		]
-	},
-
-
-	"VerbatimClearBuffer":{
-		"prefix":"VerbatimClearBuffer",
-		"body":[
-			"\\VerbatimClearBuffer"
-		]
-	},
-
-
-	"FancyVerbBreakStart":{
-		"prefix":"FancyVerbBreakStart",
-		"body":[
-			"\\FancyVerbBreakStart"
-		]
-	},
-
-
-	"FancyVerbBreakStop":{
-		"prefix":"FancyVerbBreakStop",
-		"body":[
-			"\\FancyVerbBreakStop"
-		]
-	},
-
-
-	"FancyVerbBreakAnywhereBreak":{
-		"prefix":"FancyVerbBreakAnywhereBreak",
-		"body":[
-			"\\FancyVerbBreakAnywhereBreak"
-		]
-	},
-
-
-	"FancyVerbBreakBeforeBreak":{
-		"prefix":"FancyVerbBreakBeforeBreak",
-		"body":[
-			"\\FancyVerbBreakBeforeBreak"
-		]
-	},
-
-
-	"FancyVerbBreakAfterBreak":{
-		"prefix":"FancyVerbBreakAfterBreak",
-		"body":[
-			"\\FancyVerbBreakAfterBreak"
-		]
-	},
-
-
-	"FancyVerbBreakByTokenAnywhereBreak":{
-		"prefix":"FancyVerbBreakByTokenAnywhereBreak",
-		"body":[
-			"\\FancyVerbBreakByTokenAnywhereBreak"
-		]
-	},
-
-
-	"VerbatimPygments{}{}":{
-		"prefix":"VerbatimPygments",
-		"body":[
-			"\\VerbatimPygments{${1:literal macro%cmd}}{${2:actual macro%cmd}}"
-		]
-	},
-
-
-	"FVExtraDoSpecials":{
-		"prefix":"FVExtraDoSpecials",
-		"body":[
-			"\\FVExtraDoSpecials"
-		]
-	},
-
-
-	"FVExtraReadOArgBeforeVArg{}":{
-		"prefix":"FVExtraReadOArgBeforeVArg",
-		"body":[
-			"\\FVExtraReadOArgBeforeVArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraReadOArgBeforeVEnv{}":{
-		"prefix":"FVExtraReadOArgBeforeVEnv",
-		"body":[
-			"\\FVExtraReadOArgBeforeVEnv{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraReadVArg{}":{
-		"prefix":"FVExtraReadVArg",
-		"body":[
-			"\\FVExtraReadVArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraReadVArgSingleLine{}":{
-		"prefix":"FVExtraReadVArgSingleLine",
-		"body":[
-			"\\FVExtraReadVArgSingleLine{${1:arg}}"
-		]
-	},
-
-
-	"FVExtrapdfstringdef{}{}":{
-		"prefix":"FVExtrapdfstringdef",
-		"body":[
-			"\\FVExtrapdfstringdef{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FVExtrapdfstringdefDisableCommands":{
-		"prefix":"FVExtrapdfstringdefDisableCommands",
-		"body":[
-			"\\FVExtrapdfstringdefDisableCommands"
-		]
-	},
-
-
-	"FVExtraAlwaysUnexpanded{}":{
-		"prefix":"FVExtraAlwaysUnexpanded",
-		"body":[
-			"\\FVExtraAlwaysUnexpanded{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraRobustCommand{}{}":{
-		"prefix":"FVExtraRobustCommand",
-		"body":[
-			"\\FVExtraRobustCommand{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FVExtraUnexpandedReadStarOArgMArg{}":{
-		"prefix":"FVExtraUnexpandedReadStarOArgMArg",
-		"body":[
-			"\\FVExtraUnexpandedReadStarOArgMArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraUseVerbUnexpandedReadStarOArgMArg{}":{
-		"prefix":"FVExtraUseVerbUnexpandedReadStarOArgMArg",
-		"body":[
-			"\\FVExtraUseVerbUnexpandedReadStarOArgMArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraUnexpandedReadStarOArgBVArg{}":{
-		"prefix":"FVExtraUnexpandedReadStarOArgBVArg",
-		"body":[
-			"\\FVExtraUnexpandedReadStarOArgBVArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraUnexpandedReadStarOArgBEscVArg{}":{
-		"prefix":"FVExtraUnexpandedReadStarOArgBEscVArg",
-		"body":[
-			"\\FVExtraUnexpandedReadStarOArgBEscVArg{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraPDFStringEscapeChar{}":{
-		"prefix":"FVExtraPDFStringEscapeChar",
-		"body":[
-			"\\FVExtraPDFStringEscapeChar{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraPDFStringEscapeChars{}":{
-		"prefix":"FVExtraPDFStringEscapeChars",
-		"body":[
-			"\\FVExtraPDFStringEscapeChars{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraVerbatimDetokenize{}":{
-		"prefix":"FVExtraVerbatimDetokenize",
-		"body":[
-			"\\FVExtraVerbatimDetokenize{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraPDFStringVerbatimDetokenize{}":{
-		"prefix":"FVExtraPDFStringVerbatimDetokenize",
-		"body":[
-			"\\FVExtraPDFStringVerbatimDetokenize{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraEscapedVerbatimDetokenize{}":{
-		"prefix":"FVExtraEscapedVerbatimDetokenize",
-		"body":[
-			"\\FVExtraEscapedVerbatimDetokenize{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraPDFStringEscapedVerbatimDetokenize{}":{
-		"prefix":"FVExtraPDFStringEscapedVerbatimDetokenize",
-		"body":[
-			"\\FVExtraPDFStringEscapedVerbatimDetokenize{${1:arg}}"
-		]
-	},
-
-
-	"FVExtraDetokenizeVArg{}{}":{
-		"prefix":"FVExtraDetokenizeVArg",
-		"body":[
-			"\\FVExtraDetokenizeVArg{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FVExtraDetokenizeEscVArg{}{}":{
-		"prefix":"FVExtraDetokenizeEscVArg",
-		"body":[
-			"\\FVExtraDetokenizeEscVArg{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FVExtraDetokenizeREscVArg{}{}":{
-		"prefix":"FVExtraDetokenizeREscVArg",
-		"body":[
-			"\\FVExtraDetokenizeREscVArg{${1:arg1}}{${2:arg2}}"
-		]
-	},
-
-
-	"FVExtraRetokenizeVArg{}{}{}":{
-		"prefix":"FVExtraRetokenizeVArg",
-		"body":[
-			"\\FVExtraRetokenizeVArg{${1:macro%cmd}}{${2:code}}{${3:chars}}"
-		]
-	},
-
-
-	"FVExtraUnexpandedReadStarOArgMArgBVArg{}":{
-		"prefix":"FVExtraUnexpandedReadStarOArgMArgBVArg",
-		"body":[
-			"\\FVExtraUnexpandedReadStarOArgMArgBVArg{${1:arg}}"
-		]
-	},
-
-
-	"RobustVerb||":{
-		"prefix":"RobustVerb",
-		"body":[
-			"\\RobustVerb|${1:code}|"
-		]
-	},
-
-
-	"RobustUseVerb{}":{
-		"prefix":"RobustUseVerb",
-		"body":[
-			"\\RobustUseVerb{${1:name}}"
-		]
-	},
-
-
-	"RobustEscVerb{}":{
-		"prefix":"RobustEscVerb",
-		"body":[
-			"\\RobustEscVerb{${1:backslash-escaped text}}"
-		]
-	},
-
-
-	"FancyVerbMathSpace":{
-		"prefix":"FancyVerbMathSpace",
-		"body":[
-			"\\FancyVerbMathSpace"
-		]
-	},
-
-
-	"FancyVerbFillColor":{
-		"prefix":"FancyVerbFillColor",
-		"body":[
-			"\\FancyVerbFillColor"
-		]
-	},
-
-
-	"FancyVerbMathEscape":{
-		"prefix":"FancyVerbMathEscape",
-		"body":[
-			"\\FancyVerbMathEscape"
-		]
-	},
-
-
-	"FancyVerbBeamerOverlays":{
-		"prefix":"FancyVerbBeamerOverlays",
-		"body":[
-			"\\FancyVerbBeamerOverlays"
-		]
-	},
-
-
-	"FancyVerbCurlyQuotes":{
-		"prefix":"FancyVerbCurlyQuotes",
-		"body":[
-			"\\FancyVerbCurlyQuotes"
-		]
-	},
-
-
-	"FancyVerbHighlightColor":{
-		"prefix":"FancyVerbHighlightColor",
-		"body":[
-			"\\FancyVerbHighlightColor"
-		]
-	},
-
-
-	"FancyVerbHighlightLine{}":{
-		"prefix":"FancyVerbHighlightLine",
-		"body":[
-			"\\FancyVerbHighlightLine{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbHighlightLineNormal{}":{
-		"prefix":"FancyVerbHighlightLineNormal",
-		"body":[
-			"\\FancyVerbHighlightLineNormal{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbHighlightLineFirst{}":{
-		"prefix":"FancyVerbHighlightLineFirst",
-		"body":[
-			"\\FancyVerbHighlightLineFirst{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbHighlightLineMiddle{}":{
-		"prefix":"FancyVerbHighlightLineMiddle",
-		"body":[
-			"\\FancyVerbHighlightLineMiddle{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbHighlightLineLast{}":{
-		"prefix":"FancyVerbHighlightLineLast",
-		"body":[
-			"\\FancyVerbHighlightLineLast{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbHighlightLineSingle{}":{
-		"prefix":"FancyVerbHighlightLineSingle",
-		"body":[
-			"\\FancyVerbHighlightLineSingle{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbBreakSymbolLeft":{
-		"prefix":"FancyVerbBreakSymbolLeft",
-		"body":[
-			"\\FancyVerbBreakSymbolLeft"
-		]
-	},
-
-
-	"FancyVerbBreakSymbolRight":{
-		"prefix":"FancyVerbBreakSymbolRight",
-		"body":[
-			"\\FancyVerbBreakSymbolRight"
-		]
-	},
-
-
-	"FancyVerbBreakSymbolLeftLogic{}":{
-		"prefix":"FancyVerbBreakSymbolLeftLogic",
-		"body":[
-			"\\FancyVerbBreakSymbolLeftLogic{${1:arg}}"
-		]
-	},
-
-
-	"theFancyVerbLineBreakLast":{
-		"prefix":"theFancyVerbLineBreakLast",
-		"body":[
-			"\\theFancyVerbLineBreakLast"
-		]
-	},
-
-
-	"FancyVerbBreakSymbolRightLogic{}":{
-		"prefix":"FancyVerbBreakSymbolRightLogic",
-		"body":[
-			"\\FancyVerbBreakSymbolRightLogic{${1:arg}}"
-		]
-	},
-
-
-	"FancyVerbBreakAnywhereSymbolPre":{
-		"prefix":"FancyVerbBreakAnywhereSymbolPre",
-		"body":[
-			"\\FancyVerbBreakAnywhereSymbolPre"
-		]
-	},
-
-
-	"FancyVerbBreakAnywhereSymbolPost":{
-		"prefix":"FancyVerbBreakAnywhereSymbolPost",
-		"body":[
-			"\\FancyVerbBreakAnywhereSymbolPost"
-		]
-	},
-
-
-	"FancyVerbBreakBeforeSymbolPre":{
-		"prefix":"FancyVerbBreakBeforeSymbolPre",
-		"body":[
-			"\\FancyVerbBreakBeforeSymbolPre"
-		]
-	},
-
-
-	"FancyVerbBreakBeforeSymbolPost":{
-		"prefix":"FancyVerbBreakBeforeSymbolPost",
-		"body":[
-			"\\FancyVerbBreakBeforeSymbolPost"
-		]
-	},
-
-
-	"FancyVerbBreakAfterSymbolPre":{
-		"prefix":"FancyVerbBreakAfterSymbolPre",
-		"body":[
-			"\\FancyVerbBreakAfterSymbolPre"
-		]
-	},
-
-
-	"FancyVerbBreakAfterSymbolPost":{
-		"prefix":"FancyVerbBreakAfterSymbolPost",
-		"body":[
-			"\\FancyVerbBreakAfterSymbolPost"
-		]
-	},
-
-
-	"FancyVerbSpaceBreak":{
-		"prefix":"FancyVerbSpaceBreak",
-		"body":[
-			"\\FancyVerbSpaceBreak"
-		]
-	},
-
-
-	"FancyVerbBackgroundColor":{
-		"prefix":"FancyVerbBackgroundColor",
-		"body":[
-			"\\FancyVerbBackgroundColor"
-		]
-	},
-
-
-	"FancyVerbBackgroundColorVPhantom":{
-		"prefix":"FancyVerbBackgroundColorVPhantom",
-		"body":[
-			"\\FancyVerbBackgroundColorVPhantom"
-		]
-	},
-
-
-	"FancyVerbBackgroundColorPadding":{
-		"prefix":"FancyVerbBackgroundColorPadding",
-		"body":[
-			"\\FancyVerbBackgroundColorPadding"
-		]
-	},
-
-
-	"EscVerb*{}":{
-		"prefix":"*EscVerb",
-		"body":[
-			"\\EscVerb*{${1:backslash-escaped text}}"
-		]
-	},
-
-
-	"EscVerb*[]{}":{
-		"prefix":"*EscVerb",
-		"body":[
-			"\\EscVerb*[${2:options%keyvals}]{${1:backslash-escaped text}}"
-		]
-	},
-
-
-	"RobustVerb*||":{
-		"prefix":"*RobustVerb",
-		"body":[
-			"\\RobustVerb*|${1:code}|"
-		]
-	},
-
-
-	"RobustVerb*[]||":{
-		"prefix":"*RobustVerb",
-		"body":[
-			"\\RobustVerb*[${1:options}]|${2:code}|"
-		]
-	},
-
-
-	"RobustUseVerb*{}":{
-		"prefix":"*RobustUseVerb",
-		"body":[
-			"\\RobustUseVerb*{${1:name}}"
-		]
-	},
-
-
-	"RobustUseVerb*[]{}":{
-		"prefix":"*RobustUseVerb",
-		"body":[
-			"\\RobustUseVerb*[${2:options%keyvals}]{${1:name}}"
-		]
-	},
-
-
-	"RobustEscVerb*{}":{
-		"prefix":"*RobustEscVerb",
-		"body":[
-			"\\RobustEscVerb*{${1:backslash-escaped text}}"
-		]
-	},
-
-
-	"RobustEscVerb*[]{}":{
-		"prefix":"*RobustEscVerb",
-		"body":[
-			"\\RobustEscVerb*[${2:options%keyvals}]{${1:backslash-escaped text}}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -637,7 +41,71 @@
 		"prefix":"EscVerb",
 		"body":[
 			"\\EscVerb[${2:options%keyvals}]{${1:backslash-escaped text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"EscVerb*{}":{
+		"prefix":"*EscVerb",
+		"body":[
+			"\\EscVerb*{${1:backslash-escaped text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"EscVerb*[]{}":{
+		"prefix":"*EscVerb",
+		"body":[
+			"\\EscVerb*[${2:options%keyvals}]{${1:backslash-escaped text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"FancyVerbWriteFileHandle":{
+		"prefix":"FancyVerbWriteFileHandle",
+		"body":[
+			"\\FancyVerbWriteFileHandle"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbDefaultWriter":{
+		"prefix":"FancyVerbDefaultWriter",
+		"body":[
+			"\\FancyVerbDefaultWriter"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbDefaultBufferer":{
+		"prefix":"FancyVerbDefaultBufferer",
+		"body":[
+			"\\FancyVerbDefaultBufferer"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBufferLineName":{
+		"prefix":"FancyVerbBufferLineName",
+		"body":[
+			"\\FancyVerbBufferLineName"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimInsertBuffer":{
+		"prefix":"VerbatimInsertBuffer",
+		"body":[
+			"\\VerbatimInsertBuffer"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -645,7 +113,17 @@
 		"prefix":"VerbatimInsertBuffer",
 		"body":[
 			"\\VerbatimInsertBuffer[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"VerbatimClearBuffer":{
+		"prefix":"VerbatimClearBuffer",
+		"body":[
+			"\\VerbatimClearBuffer"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -653,7 +131,89 @@
 		"prefix":"VerbatimClearBuffer",
 		"body":[
 			"\\VerbatimClearBuffer[${1:options%keyvals}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FancyVerbBreakStart":{
+		"prefix":"FancyVerbBreakStart",
+		"body":[
+			"\\FancyVerbBreakStart"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakStop":{
+		"prefix":"FancyVerbBreakStop",
+		"body":[
+			"\\FancyVerbBreakStop"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAnywhereBreak":{
+		"prefix":"FancyVerbBreakAnywhereBreak",
+		"body":[
+			"\\FancyVerbBreakAnywhereBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakBeforeBreak":{
+		"prefix":"FancyVerbBreakBeforeBreak",
+		"body":[
+			"\\FancyVerbBreakBeforeBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAfterBreak":{
+		"prefix":"FancyVerbBreakAfterBreak",
+		"body":[
+			"\\FancyVerbBreakAfterBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakByTokenAnywhereBreak":{
+		"prefix":"FancyVerbBreakByTokenAnywhereBreak",
+		"body":[
+			"\\FancyVerbBreakByTokenAnywhereBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimPygments{}{}":{
+		"prefix":"VerbatimPygments",
+		"body":[
+			"\\VerbatimPygments{${1:literal macro%cmd}}{${2:actual macro%cmd}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraDoSpecials":{
+		"prefix":"FVExtraDoSpecials",
+		"body":[
+			"\\FVExtraDoSpecials"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraReadOArgBeforeVArg{}":{
+		"prefix":"FVExtraReadOArgBeforeVArg",
+		"body":[
+			"\\FVExtraReadOArgBeforeVArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -661,7 +221,17 @@
 		"prefix":"FVExtraReadOArgBeforeVArg",
 		"body":[
 			"\\FVExtraReadOArgBeforeVArg[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FVExtraReadOArgBeforeVEnv{}":{
+		"prefix":"FVExtraReadOArgBeforeVEnv",
+		"body":[
+			"\\FVExtraReadOArgBeforeVEnv{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -669,7 +239,206 @@
 		"prefix":"FVExtraReadOArgBeforeVEnv",
 		"body":[
 			"\\FVExtraReadOArgBeforeVEnv[${2:opt}]{${1:arg}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"FVExtraReadVArg{}":{
+		"prefix":"FVExtraReadVArg",
+		"body":[
+			"\\FVExtraReadVArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraReadVArgSingleLine{}":{
+		"prefix":"FVExtraReadVArgSingleLine",
+		"body":[
+			"\\FVExtraReadVArgSingleLine{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtrapdfstringdef{}{}":{
+		"prefix":"FVExtrapdfstringdef",
+		"body":[
+			"\\FVExtrapdfstringdef{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtrapdfstringdefDisableCommands":{
+		"prefix":"FVExtrapdfstringdefDisableCommands",
+		"body":[
+			"\\FVExtrapdfstringdefDisableCommands"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraAlwaysUnexpanded{}":{
+		"prefix":"FVExtraAlwaysUnexpanded",
+		"body":[
+			"\\FVExtraAlwaysUnexpanded{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraRobustCommand{}{}":{
+		"prefix":"FVExtraRobustCommand",
+		"body":[
+			"\\FVExtraRobustCommand{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraUnexpandedReadStarOArgMArg{}":{
+		"prefix":"FVExtraUnexpandedReadStarOArgMArg",
+		"body":[
+			"\\FVExtraUnexpandedReadStarOArgMArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraUseVerbUnexpandedReadStarOArgMArg{}":{
+		"prefix":"FVExtraUseVerbUnexpandedReadStarOArgMArg",
+		"body":[
+			"\\FVExtraUseVerbUnexpandedReadStarOArgMArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraUnexpandedReadStarOArgBVArg{}":{
+		"prefix":"FVExtraUnexpandedReadStarOArgBVArg",
+		"body":[
+			"\\FVExtraUnexpandedReadStarOArgBVArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraUnexpandedReadStarOArgBEscVArg{}":{
+		"prefix":"FVExtraUnexpandedReadStarOArgBEscVArg",
+		"body":[
+			"\\FVExtraUnexpandedReadStarOArgBEscVArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraPDFStringEscapeChar{}":{
+		"prefix":"FVExtraPDFStringEscapeChar",
+		"body":[
+			"\\FVExtraPDFStringEscapeChar{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraPDFStringEscapeChars{}":{
+		"prefix":"FVExtraPDFStringEscapeChars",
+		"body":[
+			"\\FVExtraPDFStringEscapeChars{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraVerbatimDetokenize{}":{
+		"prefix":"FVExtraVerbatimDetokenize",
+		"body":[
+			"\\FVExtraVerbatimDetokenize{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraPDFStringVerbatimDetokenize{}":{
+		"prefix":"FVExtraPDFStringVerbatimDetokenize",
+		"body":[
+			"\\FVExtraPDFStringVerbatimDetokenize{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraEscapedVerbatimDetokenize{}":{
+		"prefix":"FVExtraEscapedVerbatimDetokenize",
+		"body":[
+			"\\FVExtraEscapedVerbatimDetokenize{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraPDFStringEscapedVerbatimDetokenize{}":{
+		"prefix":"FVExtraPDFStringEscapedVerbatimDetokenize",
+		"body":[
+			"\\FVExtraPDFStringEscapedVerbatimDetokenize{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraDetokenizeVArg{}{}":{
+		"prefix":"FVExtraDetokenizeVArg",
+		"body":[
+			"\\FVExtraDetokenizeVArg{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraDetokenizeEscVArg{}{}":{
+		"prefix":"FVExtraDetokenizeEscVArg",
+		"body":[
+			"\\FVExtraDetokenizeEscVArg{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraDetokenizeREscVArg{}{}":{
+		"prefix":"FVExtraDetokenizeREscVArg",
+		"body":[
+			"\\FVExtraDetokenizeREscVArg{${1:arg1}}{${2:arg2}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraRetokenizeVArg{}{}{}":{
+		"prefix":"FVExtraRetokenizeVArg",
+		"body":[
+			"\\FVExtraRetokenizeVArg{${1:macro%cmd}}{${2:code}}{${3:chars}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FVExtraUnexpandedReadStarOArgMArgBVArg{}":{
+		"prefix":"FVExtraUnexpandedReadStarOArgMArgBVArg",
+		"body":[
+			"\\FVExtraUnexpandedReadStarOArgMArgBVArg{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"RobustVerb||":{
+		"prefix":"RobustVerb",
+		"body":[
+			"\\RobustVerb|${1:code}|"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -677,7 +446,35 @@
 		"prefix":"RobustVerb",
 		"body":[
 			"\\RobustVerb[${1:options}]|${2:code}|"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RobustVerb*||":{
+		"prefix":"*RobustVerb",
+		"body":[
+			"\\RobustVerb*|${1:code}|"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RobustVerb*[]||":{
+		"prefix":"*RobustVerb",
+		"body":[
+			"\\RobustVerb*[${1:options}]|${2:code}|"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RobustUseVerb{}":{
+		"prefix":"RobustUseVerb",
+		"body":[
+			"\\RobustUseVerb{${1:name}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -685,7 +482,35 @@
 		"prefix":"RobustUseVerb",
 		"body":[
 			"\\RobustUseVerb[${2:options%keyvals}]{${1:name}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RobustUseVerb*{}":{
+		"prefix":"*RobustUseVerb",
+		"body":[
+			"\\RobustUseVerb*{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RobustUseVerb*[]{}":{
+		"prefix":"*RobustUseVerb",
+		"body":[
+			"\\RobustUseVerb*[${2:options%keyvals}]{${1:name}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RobustEscVerb{}":{
+		"prefix":"RobustEscVerb",
+		"body":[
+			"\\RobustEscVerb{${1:backslash-escaped text}}"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -693,7 +518,269 @@
 		"prefix":"RobustEscVerb",
 		"body":[
 			"\\RobustEscVerb[${2:options%keyvals}]{${1:backslash-escaped text}}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"RobustEscVerb*{}":{
+		"prefix":"*RobustEscVerb",
+		"body":[
+			"\\RobustEscVerb*{${1:backslash-escaped text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"RobustEscVerb*[]{}":{
+		"prefix":"*RobustEscVerb",
+		"body":[
+			"\\RobustEscVerb*[${2:options%keyvals}]{${1:backslash-escaped text}}"
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"FancyVerbMathSpace":{
+		"prefix":"FancyVerbMathSpace",
+		"body":[
+			"\\FancyVerbMathSpace"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbFillColor":{
+		"prefix":"FancyVerbFillColor",
+		"body":[
+			"\\FancyVerbFillColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbMathEscape":{
+		"prefix":"FancyVerbMathEscape",
+		"body":[
+			"\\FancyVerbMathEscape"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBeamerOverlays":{
+		"prefix":"FancyVerbBeamerOverlays",
+		"body":[
+			"\\FancyVerbBeamerOverlays"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbCurlyQuotes":{
+		"prefix":"FancyVerbCurlyQuotes",
+		"body":[
+			"\\FancyVerbCurlyQuotes"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightColor":{
+		"prefix":"FancyVerbHighlightColor",
+		"body":[
+			"\\FancyVerbHighlightColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLine{}":{
+		"prefix":"FancyVerbHighlightLine",
+		"body":[
+			"\\FancyVerbHighlightLine{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLineNormal{}":{
+		"prefix":"FancyVerbHighlightLineNormal",
+		"body":[
+			"\\FancyVerbHighlightLineNormal{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLineFirst{}":{
+		"prefix":"FancyVerbHighlightLineFirst",
+		"body":[
+			"\\FancyVerbHighlightLineFirst{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLineMiddle{}":{
+		"prefix":"FancyVerbHighlightLineMiddle",
+		"body":[
+			"\\FancyVerbHighlightLineMiddle{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLineLast{}":{
+		"prefix":"FancyVerbHighlightLineLast",
+		"body":[
+			"\\FancyVerbHighlightLineLast{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbHighlightLineSingle{}":{
+		"prefix":"FancyVerbHighlightLineSingle",
+		"body":[
+			"\\FancyVerbHighlightLineSingle{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakSymbolLeft":{
+		"prefix":"FancyVerbBreakSymbolLeft",
+		"body":[
+			"\\FancyVerbBreakSymbolLeft"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakSymbolRight":{
+		"prefix":"FancyVerbBreakSymbolRight",
+		"body":[
+			"\\FancyVerbBreakSymbolRight"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakSymbolLeftLogic{}":{
+		"prefix":"FancyVerbBreakSymbolLeftLogic",
+		"body":[
+			"\\FancyVerbBreakSymbolLeftLogic{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"theFancyVerbLineBreakLast":{
+		"prefix":"theFancyVerbLineBreakLast",
+		"body":[
+			"\\theFancyVerbLineBreakLast"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakSymbolRightLogic{}":{
+		"prefix":"FancyVerbBreakSymbolRightLogic",
+		"body":[
+			"\\FancyVerbBreakSymbolRightLogic{${1:arg}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAnywhereSymbolPre":{
+		"prefix":"FancyVerbBreakAnywhereSymbolPre",
+		"body":[
+			"\\FancyVerbBreakAnywhereSymbolPre"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAnywhereSymbolPost":{
+		"prefix":"FancyVerbBreakAnywhereSymbolPost",
+		"body":[
+			"\\FancyVerbBreakAnywhereSymbolPost"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakBeforeSymbolPre":{
+		"prefix":"FancyVerbBreakBeforeSymbolPre",
+		"body":[
+			"\\FancyVerbBreakBeforeSymbolPre"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakBeforeSymbolPost":{
+		"prefix":"FancyVerbBreakBeforeSymbolPost",
+		"body":[
+			"\\FancyVerbBreakBeforeSymbolPost"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAfterSymbolPre":{
+		"prefix":"FancyVerbBreakAfterSymbolPre",
+		"body":[
+			"\\FancyVerbBreakAfterSymbolPre"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBreakAfterSymbolPost":{
+		"prefix":"FancyVerbBreakAfterSymbolPost",
+		"body":[
+			"\\FancyVerbBreakAfterSymbolPost"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbSpaceBreak":{
+		"prefix":"FancyVerbSpaceBreak",
+		"body":[
+			"\\FancyVerbSpaceBreak"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBackgroundColor":{
+		"prefix":"FancyVerbBackgroundColor",
+		"body":[
+			"\\FancyVerbBackgroundColor"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBackgroundColorVPhantom":{
+		"prefix":"FancyVerbBackgroundColorVPhantom",
+		"body":[
+			"\\FancyVerbBackgroundColorVPhantom"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"FancyVerbBackgroundColorPadding":{
+		"prefix":"FancyVerbBackgroundColorPadding",
+		"body":[
+			"\\FancyVerbBackgroundColorPadding"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -703,37 +790,19 @@
 			"\\begin{VerbEnv}",
 				"\t$1",
 			"\\end{VerbEnv}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"VerbatimWrite":{
-		"prefix":"VerbatimWrite",
-		"body":[
-			"\\begin{VerbatimWrite}",
-				"\t$1",
-			"\\end{VerbatimWrite}"
-		]
-	},
-
-
-	"VerbatimBuffer":{
-		"prefix":"VerbatimBuffer",
-		"body":[
-			"\\begin{VerbatimBuffer}",
-				"\t$1",
-			"\\end{VerbatimBuffer}"
-		]
-	},
-
-
-	"VerbEnv":{
+	"VerbEnv[]":{
 		"prefix":"VerbEnv",
 		"body":[
 			"\\begin{VerbEnv}",
-				"\t$1",
+				"\t[${1:options%keyvals}]",
 			"\\end{VerbEnv}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -743,7 +812,19 @@
 			"\\begin{VerbatimWrite}",
 				"\t$1",
 			"\\end{VerbatimWrite}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimWrite[]":{
+		"prefix":"VerbatimWrite",
+		"body":[
+			"\\begin{VerbatimWrite}",
+				"\t[${1:options%keyvals}]",
+			"\\end{VerbatimWrite}"
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -753,6 +834,18 @@
 			"\\begin{VerbatimBuffer}",
 				"\t$1",
 			"\\end{VerbatimBuffer}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"VerbatimBuffer[]":{
+		"prefix":"VerbatimBuffer",
+		"body":[
+			"\\begin{VerbatimBuffer}",
+				"\t[${1:options%keyvals}]",
+			"\\end{VerbatimBuffer}"
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }

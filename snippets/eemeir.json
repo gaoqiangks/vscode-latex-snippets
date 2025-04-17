@@ -5,87 +5,8 @@
 		"prefix":"E",
 		"body":[
 			"\\E"
-		]
-	},
-
-
-	"Em":{
-		"prefix":"Em",
-		"body":[
-			"\\Em"
-		]
-	},
-
-
-	"Eir":{
-		"prefix":"Eir",
-		"body":[
-			"\\Eir"
-		]
-	},
-
-
-	"Eirs":{
-		"prefix":"Eirs",
-		"body":[
-			"\\Eirs"
-		]
-	},
-
-
-	"swapgender":{
-		"prefix":"swapgender",
-		"body":[
-			"\\swapgender"
-		]
-	},
-
-
-	"newwordpair{}{}{}":{
-		"prefix":"newwordpair",
-		"body":[
-			"\\newwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
-		]
-	},
-
-
-	"renewwordpair{}{}{}":{
-		"prefix":"renewwordpair",
-		"body":[
-			"\\renewwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
-		]
-	},
-
-
-	"ifmale":{
-		"prefix":"ifmale",
-		"body":[
-			"\\ifmale"
-		]
-	},
-
-
-	"male":{
-		"prefix":"male",
-		"body":[
-			"\\male"
-		]
-	},
-
-
-	"female":{
-		"prefix":"female",
-		"body":[
-			"\\female"
-		]
-	},
-
-
-	"askforgender":{
-		"prefix":"askforgender",
-		"body":[
-			"\\askforgender"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -93,7 +14,17 @@
 		"prefix":"*E",
 		"body":[
 			"\\E*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Em":{
+		"prefix":"Em",
+		"body":[
+			"\\Em"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -101,7 +32,17 @@
 		"prefix":"*Em",
 		"body":[
 			"\\Em*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Eir":{
+		"prefix":"Eir",
+		"body":[
+			"\\Eir"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -109,7 +50,17 @@
 		"prefix":"*Eir",
 		"body":[
 			"\\Eir*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"Eirs":{
+		"prefix":"Eirs",
+		"body":[
+			"\\Eirs"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -117,7 +68,17 @@
 		"prefix":"*Eirs",
 		"body":[
 			"\\Eirs*"
-		]
+		],
+		"luasnip": {"priority": 2000} 
+	},
+
+
+	"swapgender":{
+		"prefix":"swapgender",
+		"body":[
+			"\\swapgender"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -125,7 +86,44 @@
 		"prefix":"swapgender",
 		"body":[
 			"\\swapgender[${1:person}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"newwordpair{}{}{}":{
+		"prefix":"newwordpair",
+		"body":[
+			"\\newwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"renewwordpair{}{}{}":{
+		"prefix":"renewwordpair",
+		"body":[
+			"\\renewwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"ifmale":{
+		"prefix":"ifmale",
+		"body":[
+			"\\ifmale"
+		],
+		"luasnip": {"priority": 3000} 
+	},
+
+
+	"male":{
+		"prefix":"male",
+		"body":[
+			"\\male"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -133,7 +131,17 @@
 		"prefix":"male",
 		"body":[
 			"\\male[${1:person}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"female":{
+		"prefix":"female",
+		"body":[
+			"\\female"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -141,7 +149,17 @@
 		"prefix":"female",
 		"body":[
 			"\\female[${1:person}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
+	},
+
+
+	"askforgender":{
+		"prefix":"askforgender",
+		"body":[
+			"\\askforgender"
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
@@ -149,7 +167,8 @@
 		"prefix":"askforgender",
 		"body":[
 			"\\askforgender[${1:person}]"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	},
 
 
@@ -159,16 +178,18 @@
 			"\\begin{swapgender}",
 				"\t$1",
 			"\\end{swapgender}"
-		]
+		],
+		"luasnip": {"priority": 3000} 
 	},
 
 
-	"swapgender":{
+	"swapgender[]":{
 		"prefix":"swapgender",
 		"body":[
 			"\\begin{swapgender}",
-				"\t$1",
+				"\t[${1:person}]",
 			"\\end{swapgender}"
-		]
+		],
+		"luasnip": {"priority": 1000} 
 	}
 }
