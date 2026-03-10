@@ -1,10 +1,5 @@
 local M = {}
 
--- Default configuration
-M.config = {
-    snippets_dir = nil, -- Must be set by user
-}
-
 -- Track loaded packages
 M.packages = {}
 
@@ -18,6 +13,25 @@ local file_exists = function(name)
         return false
     end
 end
+
+-- Get the snippets directory automatically
+local function get_snippets_dir()
+    -- Get the path of the current Lua file
+    local info = debug.getinfo(1, "S")
+    local source = info.source
+    -- source starts with '@' for files
+    if source:sub(1, 1) == '@' then
+        source = source:sub(2)
+    end
+    -- Get the directory of this file
+    local current_dir = vim.fn.fnamemodify(source, ":p:h")
+    -- The snippets directory is in the parent directory under 'snippets'
+    local snippets_dir = vim.fn.fnamemodify(current_dir, ":h") .. "/snippets"
+    return snippets_dir
+end
+
+-- Store the snippets directory
+M.snippets_dir = get_snippets_dir()
 
 -- Reload snippets based on vimtex packages
 M.reload_snippets = function()
@@ -34,17 +48,11 @@ M.reload_snippets = function()
     pkgs["_commands"] = 1
     pkgs[class] = 1
     
-    -- Check if snippets directory is configured
-    if not M.config.snippets_dir then
-        vim.notify("vscode-latex-snippets: snippets_dir not configured", vim.log.levels.WARN)
-        return
-    end
-    
     -- Load snippets for each package
     for pkg, _ in pairs(pkgs) do
         if not M.packages[pkg] then
             M.packages[pkg] = 1
-            local pkg_json = M.config.snippets_dir .. "/" .. pkg .. ".json"
+            local pkg_json = M.snippets_dir .. "/" .. pkg .. ".json"
             if file_exists(pkg_json) then
                 require("luasnip.loaders.from_vscode").load_standalone({ path = pkg_json })
             end
@@ -53,16 +61,7 @@ M.reload_snippets = function()
 end
 
 -- Setup function
-M.setup = function(user_config)
-    -- Merge user configuration with defaults
-    M.config = vim.tbl_deep_extend("force", M.config, user_config or {})
-    
-    -- Validate configuration
-    if not M.config.snippets_dir then
-        vim.notify("vscode-latex-snippets: snippets_dir must be set in setup()", vim.log.levels.ERROR)
-        return
-    end
-    
+M.setup = function()
     -- Set up autocommands
     vim.api.nvim_create_autocmd("ModeChanged", {
         pattern = "*:[nv]", -- From insert mode to normal or visual mode
