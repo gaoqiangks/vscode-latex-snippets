@@ -47,13 +47,17 @@ M.last_vimtex_state = nil
 
 -- Reload snippets based on vimtex packages
 M.reload_snippets = function()
-    if vim.b.vimtex == nil then
+    -- Check if vimtex is available
+    if not vim.b or not vim.b.vimtex then
         return
     end
 
+    local vimtex = vim.b.vimtex
+    local documentclass = vimtex.documentclass or ""
+    
     -- Create a unique identifier for the current vimtex state
-    local current_state = vim.b.vimtex.documentclass or ""
-    local pkgs = vim.b.vimtex.packages or {}
+    local current_state = documentclass
+    local pkgs = vimtex.packages or {}
 
     -- Sort package names to create a stable state identifier
     local sorted_pkgs = {}
@@ -73,19 +77,18 @@ M.reload_snippets = function()
 
     M.last_vimtex_state = current_state
 
-    -- Get packages from vimtex
-    local class = "class-" .. vim.b.vimtex.documentclass
-
     -- Always include these
     pkgs["_environments"] = 1
     pkgs["_commands"] = 1
-    pkgs[class] = 1
+    if documentclass ~= "" then
+        pkgs["class-" .. documentclass] = 1
+    end
 
     -- Collect all packages to load
     local packages_to_load = {}
     for pkg, _ in pairs(pkgs) do
         if not M.packages[pkg] then
-            M.packages[pkg] = 1
+            M.packages[pkg] = true
             local pkg_json = M.snippets_dir .. "/" .. pkg .. ".json"
             if file_exists_cached(pkg_json) then
                 table.insert(packages_to_load, pkg_json)
@@ -97,7 +100,12 @@ M.reload_snippets = function()
     if #packages_to_load > 0 then
         -- Use a single call to load all snippets
         for _, pkg_json in ipairs(packages_to_load) do
-            require("luasnip.loaders.from_vscode").load_standalone({ path = pkg_json })
+            local ok, err = pcall(function()
+                require("luasnip.loaders.from_vscode").load_standalone({ path = pkg_json })
+            end)
+            if not ok then
+                vim.notify("Failed to load snippets from " .. pkg_json .. ": " .. err, vim.log.levels.WARN)
+            end
         end
     end
 end
@@ -105,25 +113,21 @@ end
 -- Debounced version of reload_snippets to prevent excessive calls
 local reload_debounced = (function()
     local timer = nil
-    local pending = false
 
     return function()
         -- Safely stop the timer if it exists
         if timer then
-            local ok, _ = pcall(function()
+            pcall(function()
+                timer:stop()
                 timer:close()
             end)
             timer = nil
         end
 
-        if not pending then
-            pending = true
-            timer = vim.defer_fn(function()
-                M.reload_snippets()
-                pending = false
-                timer = nil
-            end, 100) -- Debounce for 100ms
-        end
+        timer = vim.defer_fn(function()
+            M.reload_snippets()
+            timer = nil
+        end, 150) -- Debounce for 150ms
     end
 end)()
 
@@ -154,16 +158,25 @@ M.setup = function()
         callback = reload_debounced,
     })
 
-    -- Also reload when entering a LaTeX buffer, but only once per buffer
+    -- Reload when entering insert mode in LaTeX files
+    vim.api.nvim_create_autocmd("ModeChanged", {
+        pattern = "*:i",
+        callback = function(args)
+            if vim.bo[args.buf].filetype == "tex" then
+                reload_debounced()
+            end
+        end,
+    })
+
+    -- Also reload when entering a LaTeX buffer
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = "*.tex",
         callback = function(args)
             local buf = args.buf
-            if not M.processed_buffers[buf] then
-                M.processed_buffers[buf] = true
-                -- Small delay to ensure vimtex is initialized
-                vim.defer_fn(reload_debounced, 50)
-            end
+            -- Use a delay to ensure vimtex is initialized
+            vim.defer_fn(function()
+                reload_debounced()
+            end, 100)
         end,
     })
 end
