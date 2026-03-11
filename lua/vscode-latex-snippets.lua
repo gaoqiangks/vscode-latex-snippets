@@ -4,6 +4,8 @@ local M = {}
 M.packages = {}
 -- Cache for file existence to avoid repeated I/O
 M.file_cache = {}
+-- Track processed buffers to avoid reloading on every BufEnter
+M.processed_buffers = {}
 
 -- More efficient file existence check with caching
 local function file_exists_cached(name)
@@ -106,8 +108,11 @@ local reload_debounced = (function()
     local pending = false
 
     return function()
+        -- Safely stop the timer if it exists
         if timer then
-            timer:close()
+            local ok, _ = pcall(function()
+                timer:close()
+            end)
             timer = nil
         end
 
@@ -116,6 +121,7 @@ local reload_debounced = (function()
             timer = vim.defer_fn(function()
                 M.reload_snippets()
                 pending = false
+                timer = nil
             end, 100) -- Debounce for 100ms
         end
     end
@@ -127,6 +133,7 @@ M.setup = function()
     M.packages = {}
     M.file_cache = {}
     M.last_vimtex_state = nil
+    M.processed_buffers = {}
 
     -- Set up autocommands with less frequent triggers
     vim.api.nvim_create_autocmd("User", {
@@ -136,24 +143,28 @@ M.setup = function()
             M.packages = {}
             M.file_cache = {}
             M.last_vimtex_state = nil
+            M.processed_buffers = {}
             reload_debounced()
         end,
     })
 
-    -- Only reload when entering insert mode, not when leaving it
+    -- Reload snippets when saving LaTeX files (in case vimtex state changed)
     vim.api.nvim_create_autocmd("BufWritePost", {
-        pattern = "*", -- Only when entering insert mode
+        pattern = "*.tex",
         callback = reload_debounced,
     })
 
-    -- Also reload when the buffer is first loaded
+    -- Also reload when entering a LaTeX buffer, but only once per buffer
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = "*.tex",
-        callback = function()
-            -- Small delay to ensure vimtex is initialized
-            vim.defer_fn(reload_debounced, 50)
+        callback = function(args)
+            local buf = args.buf
+            if not M.processed_buffers[buf] then
+                M.processed_buffers[buf] = true
+                -- Small delay to ensure vimtex is initialized
+                vim.defer_fn(reload_debounced, 50)
+            end
         end,
-        once = true,
     })
 end
 
