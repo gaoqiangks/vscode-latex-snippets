@@ -10,13 +10,13 @@ local function file_exists_cached(name)
     if M.file_cache[name] ~= nil then
         return M.file_cache[name]
     end
-    
+
     local f = io.open(name, "r")
     local exists = f ~= nil
     if f then
         io.close(f)
     end
-    
+
     M.file_cache[name] = exists
     return exists
 end
@@ -27,7 +27,7 @@ local function get_snippets_dir()
     local info = debug.getinfo(1, "S")
     local source = info.source
     -- source starts with '@' for files
-    if source:sub(1, 1) == '@' then
+    if source:sub(1, 1) == "@" then
         source = source:sub(2)
     end
     -- Get the directory of this file
@@ -48,37 +48,37 @@ M.reload_snippets = function()
     if vim.b.vimtex == nil then
         return
     end
-    
+
     -- Create a unique identifier for the current vimtex state
     local current_state = vim.b.vimtex.documentclass or ""
     local pkgs = vim.b.vimtex.packages or {}
-    
+
     -- Sort package names to create a stable state identifier
     local sorted_pkgs = {}
     for pkg, _ in pairs(pkgs) do
         table.insert(sorted_pkgs, pkg)
     end
     table.sort(sorted_pkgs)
-    
+
     for _, pkg in ipairs(sorted_pkgs) do
         current_state = current_state .. ":" .. pkg
     end
-    
+
     -- Only reload if the state has changed
     if M.last_vimtex_state == current_state then
         return
     end
-    
+
     M.last_vimtex_state = current_state
-    
+
     -- Get packages from vimtex
     local class = "class-" .. vim.b.vimtex.documentclass
-    
+
     -- Always include these
     pkgs["_environments"] = 1
     pkgs["_commands"] = 1
     pkgs[class] = 1
-    
+
     -- Collect all packages to load
     local packages_to_load = {}
     for pkg, _ in pairs(pkgs) do
@@ -90,7 +90,7 @@ M.reload_snippets = function()
             end
         end
     end
-    
+
     -- Load all snippets at once if there are any to load
     if #packages_to_load > 0 then
         -- Use a single call to load all snippets
@@ -104,13 +104,13 @@ end
 local reload_debounced = (function()
     local timer = nil
     local pending = false
-    
+
     return function()
         if timer then
             timer:close()
             timer = nil
         end
-        
+
         if not pending then
             pending = true
             timer = vim.defer_fn(function()
@@ -127,7 +127,7 @@ M.setup = function()
     M.packages = {}
     M.file_cache = {}
     M.last_vimtex_state = nil
-    
+
     -- Set up autocommands with less frequent triggers
     vim.api.nvim_create_autocmd("User", {
         pattern = "VimtexEventInitPost",
@@ -139,13 +139,13 @@ M.setup = function()
             reload_debounced()
         end,
     })
-    
+
     -- Only reload when entering insert mode, not when leaving it
-    vim.api.nvim_create_autocmd("ModeChanged", {
-        pattern = "*:i", -- Only when entering insert mode
+    vim.api.nvim_create_autocmd("BufWritePost", {
+        pattern = "*", -- Only when entering insert mode
         callback = reload_debounced,
     })
-    
+
     -- Also reload when the buffer is first loaded
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = "*.tex",
