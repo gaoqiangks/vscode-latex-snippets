@@ -84,10 +84,33 @@ M.reload_snippets = function()
         pkgs["class-" .. documentclass] = 1
     end
 
+    -- Helper function to check if a package matches any regex in a list
+    local function matches_any(package_name, regex_list)
+        for _, pattern in ipairs(regex_list) do
+            if package_name:match(pattern) then
+                return true
+            end
+        end
+        return false
+    end
+
     -- Collect all packages to load
     local packages_to_load = {}
     for pkg, _ in pairs(pkgs) do
-        if not M.packages[pkg] then
+        -- Check if package should be loaded based on included/excluded lists
+        local should_load = true
+        
+        -- First, check if it's excluded (highest priority)
+        if #M.pkgs_excluded > 0 and matches_any(pkg, M.pkgs_excluded) then
+            should_load = false
+        -- Then, check if included list is specified
+        elseif #M.pkgs_included > 0 then
+            -- If included list is not empty, only load if it matches
+            should_load = matches_any(pkg, M.pkgs_included)
+        end
+        -- If both lists are empty, load all packages
+        
+        if should_load and not M.packages[pkg] then
             M.packages[pkg] = true
             local pkg_json = M.snippets_dir .. "/" .. pkg .. ".json"
             if file_exists_cached(pkg_json) then
@@ -132,7 +155,12 @@ local reload_debounced = (function()
 end)()
 
 -- Setup function
-M.setup = function()
+M.setup = function(opts)
+    opts = opts or {}
+    -- Configuration options
+    M.pkgs_included = opts.pkgs_included or {}  -- List of regex patterns for packages to include
+    M.pkgs_excluded = opts.pkgs_excluded or {}  -- List of regex patterns for packages to exclude (higher priority)
+    
     -- Clear caches when starting
     M.packages = {}
     M.file_cache = {}
