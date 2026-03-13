@@ -54,7 +54,7 @@ M.reload_snippets = function()
 
     local vimtex = vim.b.vimtex
     local documentclass = vimtex.documentclass or ""
-    
+
     -- Create a unique identifier for the current vimtex state
     local current_state = documentclass
     local pkgs = vimtex.packages or {}
@@ -159,14 +159,14 @@ M.setup = function()
     })
 
     -- Reload when entering insert mode in LaTeX files
-    vim.api.nvim_create_autocmd("ModeChanged", {
-        pattern = "*:i",
-        callback = function(args)
-            if vim.bo[args.buf].filetype == "tex" then
-                reload_debounced()
-            end
-        end,
-    })
+    -- vim.api.nvim_create_autocmd("ModeChanged", {
+    --     pattern = "*:i",
+    --     callback = function(args)
+    --         if vim.bo[args.buf].filetype == "tex" then
+    --             reload_debounced()
+    --         end
+    --     end,
+    -- })
 
     -- Also reload when entering a LaTeX buffer
     vim.api.nvim_create_autocmd("BufEnter", {
