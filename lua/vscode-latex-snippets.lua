@@ -7,6 +7,9 @@ M.file_cache = {}
 -- Track processed buffers to avoid reloading on every BufEnter
 M.processed_buffers = {}
 
+local luasnip = require("luasnip")
+local tree_sitter_util = require("nvim-treesitter").utils
+
 -- More efficient file existence check with caching
 local function file_exists_cached(name)
     if M.file_cache[name] ~= nil then
@@ -45,6 +48,43 @@ M.snippets_dir = get_snippets_dir()
 -- Track the last vimtex state to avoid unnecessary reloads
 M.last_vimtex_state = nil
 
+M.new_commands = {}
+
+local p = luasnip.parser.parse_snippet
+
+local function generate_latex_cmds(definitions)
+    local snippets = {}
+
+    for _, def in ipairs(definitions) do
+        -- 1. 提取 Trigger (去掉开头的 \)
+        local trigger = def.cmd:gsub("^\\", "")
+        local body = "\\\\" .. trigger
+        if def.argc then
+            for i = 1, def.argc do
+                body = body .. "{#" .. i .. "}"
+            end
+        end
+
+        -- log.debug("1生成 snippet: trigger = %s, body = %s", trigger, body)
+        body = body:gsub("#(%d)", "$%1")
+        -- log.debug("2生成 snippet: trigger = %s, body = %s", trigger, body)
+
+        local snip = p({
+            trig = trigger,
+            desc = def.implementation,
+        }, body)
+
+        table.insert(snippets, snip)
+    end
+    luasnip.add_snippets("tex", snippets, {
+        type = "snippets", -- 默认为 snippets
+        key = "dynamic_latex_defs", -- 给这组 snippet 起个名，方便后续清理或更新
+    })
+
+    -- 如果你也用 plaintex，可以重复注册一次
+    luasnip.add_snippets("plaintex", snippets)
+    return snippets
+end
 -- Reload snippets based on vimtex packages
 M.reload_snippets = function()
     -- Check if vimtex is available
@@ -99,7 +139,7 @@ M.reload_snippets = function()
     for pkg, _ in pairs(pkgs) do
         -- Check if package should be loaded based on included/excluded lists
         local should_load = true
-        
+
         -- First, check if it's excluded (highest priority)
         if #M.pkgs_excluded > 0 and matches_any(pkg, M.pkgs_excluded) then
             should_load = false
@@ -109,7 +149,7 @@ M.reload_snippets = function()
             should_load = matches_any(pkg, M.pkgs_included)
         end
         -- If both lists are empty, load all packages
-        
+
         if should_load and not M.packages[pkg] then
             M.packages[pkg] = true
             local pkg_json = M.snippets_dir .. "/" .. pkg .. ".json"
@@ -131,6 +171,12 @@ M.reload_snippets = function()
             end
         end
     end
+    local tex_files = tree_sitter_util.get_tex_project_files(vim.b.vimtex.tex)
+    for _, file in pairs(tex_files) do
+        local commands = tree_sitter_util.get_newcommands(file)
+        vim.list_extend(M.new_commands, commands)
+    end
+    generate_latex_cmds(M.new_commands)
 end
 
 -- Debounced version of reload_snippets to prevent excessive calls
@@ -158,9 +204,9 @@ end)()
 M.setup = function(opts)
     opts = opts or {}
     -- Configuration options
-    M.pkgs_included = opts.pkgs_included or {}  -- List of regex patterns for packages to include
-    M.pkgs_excluded = opts.pkgs_excluded or {}  -- List of regex patterns for packages to exclude (higher priority)
-    
+    M.pkgs_included = opts.pkgs_included or {} -- List of regex patterns for packages to include
+    M.pkgs_excluded = opts.pkgs_excluded or {} -- List of regex patterns for packages to exclude (higher priority)
+
     -- Clear caches when starting
     M.packages = {}
     M.file_cache = {}
@@ -186,17 +232,6 @@ M.setup = function(opts)
         callback = reload_debounced,
     })
 
-    -- Reload when entering insert mode in LaTeX files
-    -- vim.api.nvim_create_autocmd("ModeChanged", {
-    --     pattern = "*:i",
-    --     callback = function(args)
-    --         if vim.bo[args.buf].filetype == "tex" then
-    --             reload_debounced()
-    --         end
-    --     end,
-    -- })
-
-    -- Also reload when entering a LaTeX buffer
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = "*.tex",
         callback = function(args)
