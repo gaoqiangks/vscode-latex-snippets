@@ -8,7 +8,164 @@ M.file_cache = {}
 M.processed_buffers = {}
 
 local luasnip = require("luasnip")
-local tree_sitter_util = require("nvim-treesitter").utils
+local get_packages = function()
+    local bufnr = vim.api.nvim_get_current_buf()
+    local parser = vim.treesitter.get_parser(bufnr, "latex")
+    local tree = parser:parse()[1]
+    local root = tree:root()
+
+    -- 从 queries/latex/packages.scm 加载 query
+    local query = vim.treesitter.query.get("latex", "packages")
+    log.debug("query = " .. vim.inspect(query))
+
+    local pkgs = {}
+
+    for id, node in query:iter_captures(root, bufnr, 0, -1) do
+        log.debug("id = " .. vim.inspect(id) .. ", node = " .. vim.inspect(node))
+        local name = query.captures[id]
+        if name == "pkg" then
+            local text = vim.treesitter.get_node_text(node, bufnr)
+            table.insert(pkgs, text)
+        end
+    end
+    return pkgs
+end
+
+local get_newcommands = function(filepath)
+    local parser, source
+
+    if filepath then
+        -- 1. 处理文件逻辑
+        if vim.fn.filereadable(filepath) == 0 then
+            vim.notify("File not found: " .. filepath, vim.log.levels.ERROR)
+            return {}
+        end
+        local lines = vim.fn.readfile(filepath)
+        source = table.concat(lines, "\n")
+        parser = vim.treesitter.get_string_parser(source, "latex")
+    else
+        -- 2. 处理当前 Buffer 逻辑
+        source = vim.api.nvim_get_current_buf()
+        -- 检查当前 buffer 是否为 latex
+        local ft = vim.bo[source].filetype
+        parser = vim.treesitter.get_parser(source, "latex")
+    end
+
+    local tree = parser:parse()[1]
+    local root = tree:root()
+    local command1 = [[(new_command_definition
+        declaration: (curly_group_command_name
+        command: (command_name) @cmdname)
+        argc: (brack_group_argc
+        value: (argc) @argc)
+        implementation: (curly_group)@implementation)
+        ]]
+    local command0 = [[(new_command_definition
+            declaration: (curly_group_command_name
+            command: (command_name) @cmdname)
+            .;; 锚点：中间不能有东西, 也就是说要求下一个节点必须是 implementation. 否则的话 declaration 和 implementation 之间可以有任意节点
+            implementation: (curly_group)@implementation)
+        ]]
+    local cmds = {}
+    for i = 0, 1, 1 do
+        local file = "newcommands" .. i
+        -- local query = vim.treesitter.query.get("latex", file)
+        local command_scm = (i == 0 and command0 or command1)
+        local query = vim.treesitter.query.parse("latex", command_scm)
+
+        if not query then
+            vim.notify("Query 'newcommands' not found", vim.log.levels.WARN)
+            return {}
+        end
+        -- 注意：这里的 source 在 filepath 模式下是 string，在 nil 模式下是 bufnr
+        -- Tree-sitter 的 API 能够自动识别这两者
+        local entry = {}
+        for id, node in query:iter_captures(root, bufnr, 0, -1) do
+            local name = query.captures[id]
+            if name == "pkg" then
+                local text = vim.treesitter.get_node_text(node, bufnr)
+                table.insert(pkgs, text)
+            end
+        end
+        for id, node in query:iter_captures(root, source, 0, -1) do
+            -- for id, node in pairs(match) do
+            local name = query.captures[id]
+            local text = vim.treesitter.get_node_text(node, source)
+
+            if name == "cmdname" then
+                entry.cmd = text
+            elseif name == "implementation" then
+                entry.implementation = text
+            elseif name == "argc" then
+                entry.argc = text
+            end
+            if entry.cmd and entry.implementation and (entry.argc or i == 0) then
+                table.insert(cmds, entry)
+                entry = {}
+            end
+        end
+    end
+
+    return cmds
+end
+
+local function get_tex_project_files(main_file)
+    local abs_main = vim.fn.fnamemodify(main_file, ":p")
+    local files_to_process = { abs_main }
+    local processed_files = {}
+    local result_list = {}
+
+    -- Tree-sitter Query: 匹配 \input{...} 或 \include{...}
+    -- 在 tree-sitter-latex 中，这些通常被归类为 (include) 节点
+    local include_query = vim.treesitter.query.parse(
+        "latex",
+        [[
+        (latex_include 
+        path: (curly_group_path 
+        (path) @filepath))
+        ]]
+    )
+
+    while #files_to_process > 0 do
+        local current_path = table.remove(files_to_process, 1)
+
+        -- 如果已经处理过，跳过（防止循环 input）
+        if not processed_files[current_path] and vim.fn.filereadable(current_path) == 1 then
+            processed_files[current_path] = true
+            table.insert(result_list, current_path)
+
+            -- 读取文件并解析
+            local lines = vim.fn.readfile(current_path)
+            local content = table.concat(lines, "\n")
+
+            -- 使用 string parser
+            local ok, parser = pcall(vim.treesitter.get_string_parser, content, "latex")
+            if ok then
+                local tree = parser:parse()[1]
+                local root = tree:root()
+                local current_dir = vim.fn.fnamemodify(current_path, ":h")
+
+                -- 查找所有包含的文件路径
+                for id, node in include_query:iter_captures(root, content, 0, -1) do
+                    if include_query.captures[id] == "filepath" then
+                        local rel_path = vim.treesitter.get_node_text(node, content)
+
+                        -- LaTeX 规范：如果没写 .tex 后缀，自动补全
+                        if not rel_path:match("%.tex$") then
+                            rel_path = rel_path .. ".tex"
+                        end
+
+                        -- 将路径转为绝对路径
+                        local full_path = vim.fn.simplify(current_dir .. "/" .. rel_path)
+                        table.insert(files_to_process, full_path)
+                    end
+                end
+            end
+        end
+    end
+
+    return result_list
+end
 
 -- More efficient file existence check with caching
 local function file_exists_cached(name)
@@ -171,9 +328,9 @@ M.reload_snippets = function()
             end
         end
     end
-    local tex_files = tree_sitter_util.get_tex_project_files(vim.b.vimtex.tex)
+    local tex_files = get_tex_project_files(vim.b.vimtex.tex)
     for _, file in pairs(tex_files) do
-        local commands = tree_sitter_util.get_newcommands(file)
+        local commands = get_newcommands(file)
         vim.list_extend(M.new_commands, commands)
     end
     generate_latex_cmds(M.new_commands)
