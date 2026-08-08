@@ -4,6 +4,7 @@ local uv = vim.uv or vim.loop
 local luasnip = require("luasnip")
 local parse_snippet = luasnip.parser.parse_snippet
 local snippet_proxy = require("luasnip.nodes.snippetProxy")
+local snippet_source = luasnip.snippet_source
 
 M.packages = {}
 M.base_snippets = {}
@@ -204,7 +205,7 @@ local function read_snippet_data(path)
 	return data
 end
 
-local function parse_snippet_data(data)
+local function parse_snippet_data(data, path)
 	local snippets = {}
 	for name, parts in pairs(data) do
 		if type(parts) == "table" and parts.prefix and parts.body then
@@ -224,6 +225,7 @@ local function parse_snippet_data(data)
 					if not parsed_ok then
 						return nil, ("snippet %s could not be parsed: %s"):format(name, snippet)
 					end
+					snippet._source = snippet_source.from_location(path)
 					snippets[#snippets + 1] = snippet
 				end
 			end
@@ -251,7 +253,7 @@ local function load_snippet_file(name)
 	-- Snippet objects cannot be shared by two filetypes because LuaSnip assigns
 	-- each object an id while adding it. Parse once per target filetype instead.
 	for _, filetype in ipairs(snippet_filetypes) do
-		local snippets, parse_err = parse_snippet_data(data)
+		local snippets, parse_err = parse_snippet_data(data, path)
 		if not snippets then
 			unload_snippet_file(name)
 			return false, parse_err
