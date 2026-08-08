@@ -188,8 +188,8 @@ end
 
 local function load_package_snippets(vimtex)
 	local packages = vim.tbl_keys(vimtex.packages or {})
-	packages[#packages + 1] = "_environments"
-	packages[#packages + 1] = "_commands"
+	packages[#packages + 1] = "environments"
+	packages[#packages + 1] = "commands"
 	if vimtex.documentclass and vimtex.documentclass ~= "" then
 		packages[#packages + 1] = "class-" .. vimtex.documentclass
 	end
