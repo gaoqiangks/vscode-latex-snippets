@@ -1,1433 +1,1181 @@
 {
-
-
-	"runExtCode{}{}{}":{
-		"prefix":"runExtCode",
-		"body":[
-			"\\runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runExtCode{}{}{}[]":{
-		"prefix":"runExtCode",
-		"body":[
-			"\\runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"showCode{}{}":{
-		"prefix":"showCode",
-		"body":[
-			"\\showCode{${1:lang}}{${2:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"showCode{}{}[]":{
-		"prefix":"showCode",
-		"body":[
-			"\\showCode{${1:lang}}{${2:source file%file}}[${3:first line}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"showCode{}{}[][]":{
-		"prefix":"showCode",
-		"body":[
-			"\\showCode{${1:lang}}{${2:source file%file}}[${3:first line}][${4:last line}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"includeOutput{}":{
-		"prefix":"includeOutput",
-		"body":[
-			"\\includeOutput{${1:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"includeOutput{}[]":{
-		"prefix":"includeOutput",
-		"body":[
-			"\\includeOutput{${1:output file%file}}[${2:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inln{}{}":{
-		"prefix":"inln",
-		"body":[
-			"\\inln{${1:program}}{${2:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inln{}{}[]":{
-		"prefix":"inln",
-		"body":[
-			"\\inln{${1:program}}{${2:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inln{}{}[]":{
-		"prefix":"inln",
-		"body":[
-			"\\inln{${1:program}}{${2:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inln{}{}[][]":{
-		"prefix":"inln",
-		"body":[
-			"\\inln{${1:program}}{${2:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"showChunk{}{}":{
-		"prefix":"showChunk",
-		"body":[
-			"\\showChunk{${1:language}}{${2:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"showChunk{}{}[]":{
-		"prefix":"showChunk",
-		"body":[
-			"\\showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"showChunk{}{}[][][]":{
-		"prefix":"showChunk",
-		"body":[
-			"\\showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}][${4:begin mark}][${5:end mark}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runCodeIncOut{}{}":{
-		"prefix":"runCodeIncOut",
-		"body":[
-			"\\runCodeIncOut{${1:program}}{${2:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runCodeIncOut{}{}[]":{
-		"prefix":"runCodeIncOut",
-		"body":[
-			"\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runCodeIncOut{}{}[][]":{
-		"prefix":"runCodeIncOut",
-		"body":[
-			"\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runCodeIncOut{}{}[][][]":{
-		"prefix":"runCodeIncOut",
-		"body":[
-			"\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR{}{}":{
-		"prefix":"runR",
-		"body":[
-			"\\runR{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runR{}{}[]":{
-		"prefix":"runR",
-		"body":[
-			"\\runR{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR[]{}{}":{
-		"prefix":"runR",
-		"body":[
-			"\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR[]{}{}[]":{
-		"prefix":"runR",
-		"body":[
-			"\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runRIncOut{}[]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}[][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}[][][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[][][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inlnR{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}[][]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[][]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runRChunk{}{}[]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}[][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}[][][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[][][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJulia{}{}":{
-		"prefix":"runJulia",
-		"body":[
-			"\\runJulia{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runJulia{}{}[]":{
-		"prefix":"runJulia",
-		"body":[
-			"\\runJulia{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJulia[]{}{}":{
-		"prefix":"runJulia",
-		"body":[
-			"\\runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJulia[]{}{}[]":{
-		"prefix":"runJulia",
-		"body":[
-			"\\runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut{}":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runJuliaIncOut{}[]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut{}[][]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut{}[][][]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut[]{}":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut[]{}[]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut[]{}[][]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaIncOut[]{}[][][]":{
-		"prefix":"runJuliaIncOut",
-		"body":[
-			"\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia{}":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inlnJulia{}[]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia{${1:code%definition}}[${2:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia{}[]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia{${1:code%definition}}[${2:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia{}[][]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia[]{}":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia[${2:server spec}]{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia[]{}[]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia[]{}[]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnJulia[]{}[][]":{
-		"prefix":"inlnJulia",
-		"body":[
-			"\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk{}{}":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runJuliaChunk{}{}[]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk{}{}[][]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk{}{}[][][]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk[]{}{}":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk[]{}{}[]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk[]{}{}[][]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runJuliaChunk[]{}{}[][][]":{
-		"prefix":"runJuliaChunk",
-		"body":[
-			"\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlab{}{}":{
-		"prefix":"runMatlab",
-		"body":[
-			"\\runMatlab{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runMatlab{}{}[]":{
-		"prefix":"runMatlab",
-		"body":[
-			"\\runMatlab{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlab[]{}{}":{
-		"prefix":"runMatlab",
-		"body":[
-			"\\runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlab[]{}{}[]":{
-		"prefix":"runMatlab",
-		"body":[
-			"\\runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut{}":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runMatlabIncOut{}[]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut{}[][]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut{}[][][]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut[]{}":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut[]{}[]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut[]{}[][]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabIncOut[]{}[][][]":{
-		"prefix":"runMatlabIncOut",
-		"body":[
-			"\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab{}":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inlnMatlab{}[]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab{${1:code%definition}}[${2:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab{}[]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab{${1:code%definition}}[${2:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab{}[][]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab[]{}":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab[${2:server spec}]{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab[]{}[]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab[]{}[]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnMatlab[]{}[][]":{
-		"prefix":"inlnMatlab",
-		"body":[
-			"\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk{}{}":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runMatlabChunk{}{}[]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk{}{}[][]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk{}{}[][][]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk[]{}{}":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk[]{}{}[]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk[]{}{}[][]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runMatlabChunk[]{}{}[][][]":{
-		"prefix":"runMatlabChunk",
-		"body":[
-			"\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR{}{}":{
-		"prefix":"runR",
-		"body":[
-			"\\runR{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runR{}{}[]":{
-		"prefix":"runR",
-		"body":[
-			"\\runR{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR[]{}{}":{
-		"prefix":"runR",
-		"body":[
-			"\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runR[]{}{}[]":{
-		"prefix":"runR",
-		"body":[
-			"\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runRIncOut{}[]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}[][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut{}[][][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRIncOut[]{}[][][]":{
-		"prefix":"runRIncOut",
-		"body":[
-			"\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inlnR{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR{}[][]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnR[]{}[][]":{
-		"prefix":"inlnR",
-		"body":[
-			"\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runRChunk{}{}[]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}[][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk{}{}[][][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runRChunk[]{}{}[][][]":{
-		"prefix":"runRChunk",
-		"body":[
-			"\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPython{}{}":{
-		"prefix":"runPython",
-		"body":[
-			"\\runPython{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runPython{}{}[]":{
-		"prefix":"runPython",
-		"body":[
-			"\\runPython{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPython[]{}{}":{
-		"prefix":"runPython",
-		"body":[
-			"\\runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPython[]{}{}[]":{
-		"prefix":"runPython",
-		"body":[
-			"\\runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut{}":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runPythonIncOut{}[]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut{${1:source file%file}}[${2:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut{}[][]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut{}[][][]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut[]{}":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut[${2:server spec}]{${1:source file%file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut[]{}[]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut[]{}[][]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonIncOut[]{}[][][]":{
-		"prefix":"runPythonIncOut",
-		"body":[
-			"\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython{}":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inlnPython{}[]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython{${1:code%definition}}[${2:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython{}[]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython{${1:code%definition}}[${2:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython{}[][]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython[]{}":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython[${2:server spec}]{${1:code%definition}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython[]{}[]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython[]{}[]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inlnPython[]{}[][]":{
-		"prefix":"inlnPython",
-		"body":[
-			"\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk{}{}":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"runPythonChunk{}{}[]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk{}{}[][]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk{}{}[][][]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk[]{}{}":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk[]{}{}[]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk[]{}{}[][]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonChunk[]{}{}[][][]":{
-		"prefix":"runPythonChunk",
-		"body":[
-			"\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"runPythonBatch{}{}":{
-		"prefix":"runPythonBatch",
-		"body":[
-			"\\runPythonBatch{${1:code%definition}}{${2:output file%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	}
+  "runExtCode{}{}{}": {
+    "prefix": "runExtCode",
+    "body": [
+      "\\runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runExtCode{}{}{}[]": {
+    "prefix": "runExtCode",
+    "body": [
+      "\\runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "showCode{}{}": {
+    "prefix": "showCode",
+    "body": [
+      "\\showCode{${1:lang}}{${2:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "showCode{}{}[]": {
+    "prefix": "showCode",
+    "body": [
+      "\\showCode{${1:lang}}{${2:source file%file}}[${3:first line}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "showCode{}{}[][]": {
+    "prefix": "showCode",
+    "body": [
+      "\\showCode{${1:lang}}{${2:source file%file}}[${3:first line}][${4:last line}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "includeOutput{}": {
+    "prefix": "includeOutput",
+    "body": [
+      "\\includeOutput{${1:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "includeOutput{}[]": {
+    "prefix": "includeOutput",
+    "body": [
+      "\\includeOutput{${1:output file%file}}[${2:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inln{}{}": {
+    "prefix": "inln",
+    "body": [
+      "\\inln{${1:program}}{${2:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inln{}{}[]": {
+    "prefix": "inln",
+    "body": [
+      "\\inln{${1:program}}{${2:code%definition}}[${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inln{}{}[] (2)": {
+    "prefix": "inln",
+    "body": [
+      "\\inln{${1:program}}{${2:code%definition}}[${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inln{}{}[][]": {
+    "prefix": "inln",
+    "body": [
+      "\\inln{${1:program}}{${2:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "showChunk{}{}": {
+    "prefix": "showChunk",
+    "body": [
+      "\\showChunk{${1:language}}{${2:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "showChunk{}{}[]": {
+    "prefix": "showChunk",
+    "body": [
+      "\\showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "showChunk{}{}[][][]": {
+    "prefix": "showChunk",
+    "body": [
+      "\\showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}][${4:begin mark}][${5:end mark}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runCodeIncOut{}{}": {
+    "prefix": "runCodeIncOut",
+    "body": [
+      "\\runCodeIncOut{${1:program}}{${2:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runCodeIncOut{}{}[]": {
+    "prefix": "runCodeIncOut",
+    "body": [
+      "\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runCodeIncOut{}{}[][]": {
+    "prefix": "runCodeIncOut",
+    "body": [
+      "\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runCodeIncOut{}{}[][][]": {
+    "prefix": "runCodeIncOut",
+    "body": [
+      "\\runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runR{}{}": {
+    "prefix": "runR",
+    "body": [
+      "\\runR{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runR{}{}[]": {
+    "prefix": "runR",
+    "body": [
+      "\\runR{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runR[]{}{}": {
+    "prefix": "runR",
+    "body": [
+      "\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runR[]{}{}[]": {
+    "prefix": "runR",
+    "body": [
+      "\\runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut{}": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runRIncOut{}[]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut{${1:source file%file}}[${2:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut{}[][]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut{}[][][]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut[]{}": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut[${2:server spec}]{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut[]{}[]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut[]{}[][]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRIncOut[]{}[][][]": {
+    "prefix": "runRIncOut",
+    "body": [
+      "\\runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR{}": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inlnR{}[]": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR{${1:code%definition}}[${2:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR{}[] (2)": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR{${1:code%definition}}[${2:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR{}[][]": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR[]{}": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR[${2:server spec}]{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR[]{}[]": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR[]{}[] (2)": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnR[]{}[][]": {
+    "prefix": "inlnR",
+    "body": [
+      "\\inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk{}{}": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runRChunk{}{}[]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk{}{}[][]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk{}{}[][][]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk[]{}{}": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk[]{}{}[]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk[]{}{}[][]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runRChunk[]{}{}[][][]": {
+    "prefix": "runRChunk",
+    "body": [
+      "\\runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJulia{}{}": {
+    "prefix": "runJulia",
+    "body": [
+      "\\runJulia{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runJulia{}{}[]": {
+    "prefix": "runJulia",
+    "body": [
+      "\\runJulia{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJulia[]{}{}": {
+    "prefix": "runJulia",
+    "body": [
+      "\\runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJulia[]{}{}[]": {
+    "prefix": "runJulia",
+    "body": [
+      "\\runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut{}": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runJuliaIncOut{}[]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut{}[][]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut{}[][][]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut[]{}": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut[]{}[]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut[]{}[][]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaIncOut[]{}[][][]": {
+    "prefix": "runJuliaIncOut",
+    "body": [
+      "\\runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia{}": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inlnJulia{}[]": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia{${1:code%definition}}[${2:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia{}[] (2)": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia{${1:code%definition}}[${2:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia{}[][]": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia[]{}": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia[${2:server spec}]{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia[]{}[]": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia[]{}[] (2)": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnJulia[]{}[][]": {
+    "prefix": "inlnJulia",
+    "body": [
+      "\\inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk{}{}": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runJuliaChunk{}{}[]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk{}{}[][]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk{}{}[][][]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk[]{}{}": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk[]{}{}[]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk[]{}{}[][]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runJuliaChunk[]{}{}[][][]": {
+    "prefix": "runJuliaChunk",
+    "body": [
+      "\\runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlab{}{}": {
+    "prefix": "runMatlab",
+    "body": [
+      "\\runMatlab{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runMatlab{}{}[]": {
+    "prefix": "runMatlab",
+    "body": [
+      "\\runMatlab{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlab[]{}{}": {
+    "prefix": "runMatlab",
+    "body": [
+      "\\runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlab[]{}{}[]": {
+    "prefix": "runMatlab",
+    "body": [
+      "\\runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut{}": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runMatlabIncOut{}[]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut{}[][]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut{}[][][]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut[]{}": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut[]{}[]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut[]{}[][]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabIncOut[]{}[][][]": {
+    "prefix": "runMatlabIncOut",
+    "body": [
+      "\\runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab{}": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inlnMatlab{}[]": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab{${1:code%definition}}[${2:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab{}[] (2)": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab{${1:code%definition}}[${2:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab{}[][]": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab[]{}": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab[${2:server spec}]{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab[]{}[]": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab[]{}[] (2)": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnMatlab[]{}[][]": {
+    "prefix": "inlnMatlab",
+    "body": [
+      "\\inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk{}{}": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runMatlabChunk{}{}[]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk{}{}[][]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk{}{}[][][]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk[]{}{}": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk[]{}{}[]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk[]{}{}[][]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runMatlabChunk[]{}{}[][][]": {
+    "prefix": "runMatlabChunk",
+    "body": [
+      "\\runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPython{}{}": {
+    "prefix": "runPython",
+    "body": [
+      "\\runPython{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runPython{}{}[]": {
+    "prefix": "runPython",
+    "body": [
+      "\\runPython{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPython[]{}{}": {
+    "prefix": "runPython",
+    "body": [
+      "\\runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPython[]{}{}[]": {
+    "prefix": "runPython",
+    "body": [
+      "\\runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut{}": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runPythonIncOut{}[]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut{${1:source file%file}}[${2:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut{}[][]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut{}[][][]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut[]{}": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut[${2:server spec}]{${1:source file%file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut[]{}[]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut[]{}[][]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonIncOut[]{}[][][]": {
+    "prefix": "runPythonIncOut",
+    "body": [
+      "\\runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython{}": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inlnPython{}[]": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython{${1:code%definition}}[${2:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython{}[] (2)": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython{${1:code%definition}}[${2:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython{}[][]": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython[]{}": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython[${2:server spec}]{${1:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython[]{}[]": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython[]{}[] (2)": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inlnPython[]{}[][]": {
+    "prefix": "inlnPython",
+    "body": [
+      "\\inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk{}{}": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "runPythonChunk{}{}[]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk{}{}[][]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk{}{}[][][]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk[]{}{}": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk[]{}{}[]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk[]{}{}[][]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonChunk[]{}{}[][][]": {
+    "prefix": "runPythonChunk",
+    "body": [
+      "\\runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "runPythonBatch{}{}": {
+    "prefix": "runPythonBatch",
+    "body": [
+      "\\runPythonBatch{${1:code%definition}}{${2:output file%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  }
 }

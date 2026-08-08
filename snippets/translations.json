@@ -1,398 +1,398 @@
 {
-
-
-	"DeclareLanguage{}":{
-		"prefix":"DeclareLanguage",
-		"body":[
-			"\\DeclareLanguage{${1:lang}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareLanguageAlias{}{}":{
-		"prefix":"DeclareLanguageAlias",
-		"body":[
-			"\\DeclareLanguageAlias{${1:lang2}}{${2:lang1}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareLanguageDialect{}{}":{
-		"prefix":"DeclareLanguageDialect",
-		"body":[
-			"\\DeclareLanguageDialect{${1:dialect}}{${2:lang}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"NewTranslation{}{}{}":{
-		"prefix":"NewTranslation",
-		"body":[
-			"\\NewTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"NewTranslationFallback{}{}":{
-		"prefix":"NewTranslationFallback",
-		"body":[
-			"\\NewTranslationFallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"RenewTranslation{}{}{}":{
-		"prefix":"RenewTranslation",
-		"body":[
-			"\\RenewTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"RenewTranslationFallback{}{}":{
-		"prefix":"RenewTranslationFallback",
-		"body":[
-			"\\RenewTranslationFallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ProvideTranslation{}{}{}":{
-		"prefix":"ProvideTranslation",
-		"body":[
-			"\\ProvideTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ProvideTranslationFallback{}{}":{
-		"prefix":"ProvideTranslationFallback",
-		"body":[
-			"\\ProvideTranslationFallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareTranslation{}{}{}":{
-		"prefix":"DeclareTranslation",
-		"body":[
-			"\\DeclareTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareTranslationFallback{}{}":{
-		"prefix":"DeclareTranslationFallback",
-		"body":[
-			"\\DeclareTranslationFallback{${1:key%plain}}{${2:fallback}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"definetranslation{}{}{}":{
-		"prefix":"definetranslation",
-		"body":[
-			"\\definetranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"definetranslationfallback{}{}":{
-		"prefix":"definetranslationfallback",
-		"body":[
-			"\\definetranslationfallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"redefinetranslation{}{}{}":{
-		"prefix":"redefinetranslation",
-		"body":[
-			"\\redefinetranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"redefinetranslationfallback{}{}":{
-		"prefix":"redefinetranslationfallback",
-		"body":[
-			"\\redefinetranslationfallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"addtranslation{}{}{}":{
-		"prefix":"addtranslation",
-		"body":[
-			"\\addtranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"addtranslationfallback{}{}":{
-		"prefix":"addtranslationfallback",
-		"body":[
-			"\\addtranslationfallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"declaretranslation{}{}{}":{
-		"prefix":"declaretranslation",
-		"body":[
-			"\\declaretranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"declaretranslationfallback{}{}":{
-		"prefix":"declaretranslationfallback",
-		"body":[
-			"\\declaretranslationfallback{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"IfTranslation{}{}{}{}":{
-		"prefix":"IfTranslation",
-		"body":[
-			"\\IfTranslation{${1:lang}}{${2:key%plain}}{${3:true}}{${4:false}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetTranslationFor{}{}":{
-		"prefix":"GetTranslationFor",
-		"body":[
-			"\\GetTranslationFor{${1:lang}}{${2:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetTranslation{}":{
-		"prefix":"GetTranslation",
-		"body":[
-			"\\GetTranslation{${1:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetLCTranslationFor{}{}":{
-		"prefix":"GetLCTranslationFor",
-		"body":[
-			"\\GetLCTranslationFor{${1:lang}}{${2:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetLCTranslation{}":{
-		"prefix":"GetLCTranslation",
-		"body":[
-			"\\GetLCTranslation{${1:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetTranslationForWarn{}{}":{
-		"prefix":"GetTranslationForWarn",
-		"body":[
-			"\\GetTranslationForWarn{${1:lang}}{${2:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetTranslationWarn{}":{
-		"prefix":"GetTranslationWarn",
-		"body":[
-			"\\GetTranslationWarn{${1:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetLCTranslationForWarn{}{}":{
-		"prefix":"GetLCTranslationForWarn",
-		"body":[
-			"\\GetLCTranslationForWarn{${1:lang}}{${2:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"GetLCTranslationWarn{}":{
-		"prefix":"GetLCTranslationWarn",
-		"body":[
-			"\\GetLCTranslationWarn{${1:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SaveTranslationFor{}{}{}":{
-		"prefix":"SaveTranslationFor",
-		"body":[
-			"\\SaveTranslationFor{${1:cmd}}{${2:lang}}{${3:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SaveTranslation{}{}":{
-		"prefix":"SaveTranslation",
-		"body":[
-			"\\SaveTranslation{${1:cmd}}{${2:key%plain}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LoadDictionary{}":{
-		"prefix":"LoadDictionary",
-		"body":[
-			"\\LoadDictionary{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LoadDictionaryFor{}{}":{
-		"prefix":"LoadDictionaryFor",
-		"body":[
-			"\\LoadDictionaryFor{${1:lang}}{${2:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LoadDictionaryForDialect{}{}":{
-		"prefix":"LoadDictionaryForDialect",
-		"body":[
-			"\\LoadDictionaryForDialect{${1:lang}}{${2:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"NewDictTranslation{}{}":{
-		"prefix":"NewDictTranslation",
-		"body":[
-			"\\NewDictTranslation{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"RenewDictTranslation{}{}":{
-		"prefix":"RenewDictTranslation",
-		"body":[
-			"\\RenewDictTranslation{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ProvideDictTranslation{}{}":{
-		"prefix":"ProvideDictTranslation",
-		"body":[
-			"\\ProvideDictTranslation{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareDictTranslation{}{}":{
-		"prefix":"DeclareDictTranslation",
-		"body":[
-			"\\DeclareDictTranslation{${1:key%plain}}{${2:translation}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ProvideDictionaryFor{}{}[]":{
-		"prefix":"ProvideDictionaryFor",
-		"body":[
-			"\\ProvideDictionaryFor{${1:lang}}{${2:name}}[${3:date}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"PrintDictionaryFor{}{}{}{}{}":{
-		"prefix":"PrintDictionaryFor",
-		"body":[
-			"\\PrintDictionaryFor{${1:lang}}{${2:name}}{${3:pre}}{${4:mid}}{${5:post}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"baselanguage{}":{
-		"prefix":"baselanguage",
-		"body":[
-			"\\baselanguage{${1:lang}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ifcurrentlanguage{}{}{}":{
-		"prefix":"ifcurrentlanguage",
-		"body":[
-			"\\ifcurrentlanguage{${1:lang}}{${2:true}}{${3:false}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ifcurrentlang{}":{
-		"prefix":"ifcurrentlang",
-		"body":[
-			"\\ifcurrentlang{${1:lang}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ifcurrentbaselanguage{}{}{}":{
-		"prefix":"ifcurrentbaselanguage",
-		"body":[
-			"\\ifcurrentbaselanguage{${1:lang}}{${2:true}}{${3:false}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ifcurrentbaselang{}":{
-		"prefix":"ifcurrentbaselang",
-		"body":[
-			"\\ifcurrentbaselang{${1:lang}}"
-		],
-		"luasnip": {"priority": 3000} 
-	}
+  "DeclareLanguage{}": {
+    "prefix": "DeclareLanguage",
+    "body": [
+      "\\DeclareLanguage{${1:lang}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareLanguageAlias{}{}": {
+    "prefix": "DeclareLanguageAlias",
+    "body": [
+      "\\DeclareLanguageAlias{${1:lang2}}{${2:lang1}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareLanguageDialect{}{}": {
+    "prefix": "DeclareLanguageDialect",
+    "body": [
+      "\\DeclareLanguageDialect{${1:dialect}}{${2:lang}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "NewTranslation{}{}{}": {
+    "prefix": "NewTranslation",
+    "body": [
+      "\\NewTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "NewTranslationFallback{}{}": {
+    "prefix": "NewTranslationFallback",
+    "body": [
+      "\\NewTranslationFallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "RenewTranslation{}{}{}": {
+    "prefix": "RenewTranslation",
+    "body": [
+      "\\RenewTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "RenewTranslationFallback{}{}": {
+    "prefix": "RenewTranslationFallback",
+    "body": [
+      "\\RenewTranslationFallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ProvideTranslation{}{}{}": {
+    "prefix": "ProvideTranslation",
+    "body": [
+      "\\ProvideTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ProvideTranslationFallback{}{}": {
+    "prefix": "ProvideTranslationFallback",
+    "body": [
+      "\\ProvideTranslationFallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareTranslation{}{}{}": {
+    "prefix": "DeclareTranslation",
+    "body": [
+      "\\DeclareTranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareTranslationFallback{}{}": {
+    "prefix": "DeclareTranslationFallback",
+    "body": [
+      "\\DeclareTranslationFallback{${1:key%plain}}{${2:fallback}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "definetranslation{}{}{}": {
+    "prefix": "definetranslation",
+    "body": [
+      "\\definetranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "definetranslationfallback{}{}": {
+    "prefix": "definetranslationfallback",
+    "body": [
+      "\\definetranslationfallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "redefinetranslation{}{}{}": {
+    "prefix": "redefinetranslation",
+    "body": [
+      "\\redefinetranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "redefinetranslationfallback{}{}": {
+    "prefix": "redefinetranslationfallback",
+    "body": [
+      "\\redefinetranslationfallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "addtranslation{}{}{}": {
+    "prefix": "addtranslation",
+    "body": [
+      "\\addtranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "addtranslationfallback{}{}": {
+    "prefix": "addtranslationfallback",
+    "body": [
+      "\\addtranslationfallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "declaretranslation{}{}{}": {
+    "prefix": "declaretranslation",
+    "body": [
+      "\\declaretranslation{${1:lang}}{${2:key%plain}}{${3:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "declaretranslationfallback{}{}": {
+    "prefix": "declaretranslationfallback",
+    "body": [
+      "\\declaretranslationfallback{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "IfTranslation{}{}{}{}": {
+    "prefix": "IfTranslation",
+    "body": [
+      "\\IfTranslation{${1:lang}}{${2:key%plain}}{${3:true}}{${4:false}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetTranslationFor{}{}": {
+    "prefix": "GetTranslationFor",
+    "body": [
+      "\\GetTranslationFor{${1:lang}}{${2:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetTranslation{}": {
+    "prefix": "GetTranslation",
+    "body": [
+      "\\GetTranslation{${1:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetLCTranslationFor{}{}": {
+    "prefix": "GetLCTranslationFor",
+    "body": [
+      "\\GetLCTranslationFor{${1:lang}}{${2:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetLCTranslation{}": {
+    "prefix": "GetLCTranslation",
+    "body": [
+      "\\GetLCTranslation{${1:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetTranslationForWarn{}{}": {
+    "prefix": "GetTranslationForWarn",
+    "body": [
+      "\\GetTranslationForWarn{${1:lang}}{${2:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetTranslationWarn{}": {
+    "prefix": "GetTranslationWarn",
+    "body": [
+      "\\GetTranslationWarn{${1:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetLCTranslationForWarn{}{}": {
+    "prefix": "GetLCTranslationForWarn",
+    "body": [
+      "\\GetLCTranslationForWarn{${1:lang}}{${2:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "GetLCTranslationWarn{}": {
+    "prefix": "GetLCTranslationWarn",
+    "body": [
+      "\\GetLCTranslationWarn{${1:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SaveTranslationFor{}{}{}": {
+    "prefix": "SaveTranslationFor",
+    "body": [
+      "\\SaveTranslationFor{${1:cmd}}{${2:lang}}{${3:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SaveTranslation{}{}": {
+    "prefix": "SaveTranslation",
+    "body": [
+      "\\SaveTranslation{${1:cmd}}{${2:key%plain}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "LoadDictionary{}": {
+    "prefix": "LoadDictionary",
+    "body": [
+      "\\LoadDictionary{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "LoadDictionaryFor{}{}": {
+    "prefix": "LoadDictionaryFor",
+    "body": [
+      "\\LoadDictionaryFor{${1:lang}}{${2:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "LoadDictionaryForDialect{}{}": {
+    "prefix": "LoadDictionaryForDialect",
+    "body": [
+      "\\LoadDictionaryForDialect{${1:lang}}{${2:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "NewDictTranslation{}{}": {
+    "prefix": "NewDictTranslation",
+    "body": [
+      "\\NewDictTranslation{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "RenewDictTranslation{}{}": {
+    "prefix": "RenewDictTranslation",
+    "body": [
+      "\\RenewDictTranslation{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ProvideDictTranslation{}{}": {
+    "prefix": "ProvideDictTranslation",
+    "body": [
+      "\\ProvideDictTranslation{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareDictTranslation{}{}": {
+    "prefix": "DeclareDictTranslation",
+    "body": [
+      "\\DeclareDictTranslation{${1:key%plain}}{${2:translation}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ProvideDictionaryFor{}{}[]": {
+    "prefix": "ProvideDictionaryFor",
+    "body": [
+      "\\ProvideDictionaryFor{${1:lang}}{${2:name}}[${3:date}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "PrintDictionaryFor{}{}{}{}{}": {
+    "prefix": "PrintDictionaryFor",
+    "body": [
+      "\\PrintDictionaryFor{${1:lang}}{${2:name}}{${3:pre}}{${4:mid}}{${5:post}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "baselanguage{}": {
+    "prefix": "baselanguage",
+    "body": [
+      "\\baselanguage{${1:lang}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ifcurrentlanguage{}{}{}": {
+    "prefix": "ifcurrentlanguage",
+    "body": [
+      "\\ifcurrentlanguage{${1:lang}}{${2:true}}{${3:false}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ifcurrentlang{}": {
+    "prefix": "ifcurrentlang",
+    "body": [
+      "\\ifcurrentlang{${1:lang}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ifcurrentbaselanguage{}{}{}": {
+    "prefix": "ifcurrentbaselanguage",
+    "body": [
+      "\\ifcurrentbaselanguage{${1:lang}}{${2:true}}{${3:false}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ifcurrentbaselang{}": {
+    "prefix": "ifcurrentbaselang",
+    "body": [
+      "\\ifcurrentbaselang{${1:lang}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  }
 }

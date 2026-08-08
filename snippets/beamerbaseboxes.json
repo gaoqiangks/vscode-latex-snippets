@@ -1,33 +1,33 @@
 {
-
-
-	"beamerboxesdeclarecolorscheme{}{}{}":{
-		"prefix":"beamerboxesdeclarecolorscheme",
-		"body":[
-			"\\beamerboxesdeclarecolorscheme{${1:name}}{${2:upper color}}{${3:lower color}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beamerboxesrounded{}":{
-		"prefix":"beamerboxesrounded",
-		"body":[
-			"\\begin{beamerboxesrounded}",
-				"\t{${1:head%text}}",
-			"\\end{beamerboxesrounded}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beamerboxesrounded[]{}":{
-		"prefix":"beamerboxesrounded",
-		"body":[
-			"\\begin{beamerboxesrounded}",
-				"\t[${2:options%keyvals}]{${1:head%text}}",
-			"\\end{beamerboxesrounded}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "beamerboxesdeclarecolorscheme{}{}{}": {
+    "prefix": "beamerboxesdeclarecolorscheme",
+    "body": [
+      "\\beamerboxesdeclarecolorscheme{${1:name}}{${2:upper color}}{${3:lower color}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "beamerboxesrounded{}": {
+    "prefix": "beamerboxesrounded",
+    "body": [
+      "\\begin{beamerboxesrounded}",
+      "\t{${1:head%text}}",
+      "\\end{beamerboxesrounded}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "beamerboxesrounded[]{}": {
+    "prefix": "beamerboxesrounded",
+    "body": [
+      "\\begin{beamerboxesrounded}",
+      "\t[${2:options%keyvals}]{${1:head%text}}",
+      "\\end{beamerboxesrounded}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  }
 }

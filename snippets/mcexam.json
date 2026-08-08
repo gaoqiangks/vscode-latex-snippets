@@ -1,283 +1,274 @@
 {
-
-
-	"mctheversion":{
-		"prefix":"mctheversion",
-		"body":[
-			"\\mctheversion"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcexamoptions{}":{
-		"prefix":"mcexamoptions",
-		"body":[
-			"\\mcexamoptions{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"question":{
-		"prefix":"question",
-		"body":[
-			"\\question"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"question[]":{
-		"prefix":"question",
-		"body":[
-			"\\question[${1:option%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"answer":{
-		"prefix":"answer",
-		"body":[
-			"\\answer"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"answer[]":{
-		"prefix":"answer",
-		"body":[
-			"\\answer[${1:mark}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"answer{}{}":{
-		"prefix":"answer",
-		"body":[
-			"\\answer{${1:n}}{${2:answer}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"answer[]{}{}":{
-		"prefix":"answer",
-		"body":[
-			"\\answer[${3:mark}]{${1:n}}{${2:answer}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"answernum{}":{
-		"prefix":"answernum",
-		"body":[
-			"\\answernum{${1:n}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcifoutput{}{}":{
-		"prefix":"mcifoutput",
-		"body":[
-			"\\mcifoutput{${1:output type%keyvals}}{${2:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcifoutput[]{}{}":{
-		"prefix":"mcifoutput",
-		"body":[
-			"\\mcifoutput[${3:versions}]{${1:output type%keyvals}}{${2:text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mcsetupConcept{}":{
-		"prefix":"mcsetupConcept",
-		"body":[
-			"\\mcsetupConcept{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcsetupExam{}":{
-		"prefix":"mcsetupExam",
-		"body":[
-			"\\mcsetupExam{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcsetupKey{}":{
-		"prefix":"mcsetupKey",
-		"body":[
-			"\\mcsetupKey{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcsetupAnswers{}":{
-		"prefix":"mcsetupAnswers",
-		"body":[
-			"\\mcsetupAnswers{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcsetupAnalysis{}":{
-		"prefix":"mcsetupAnalysis",
-		"body":[
-			"\\mcsetupAnalysis{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcversionlabelfmt":{
-		"prefix":"mcversionlabelfmt",
-		"body":[
-			"\\mcversionlabelfmt"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcquestionlabelfmt":{
-		"prefix":"mcquestionlabelfmt",
-		"body":[
-			"\\mcquestionlabelfmt"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcanswerlabelfmt":{
-		"prefix":"mcanswerlabelfmt",
-		"body":[
-			"\\mcanswerlabelfmt"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcquestions":{
-		"prefix":"mcquestions",
-		"body":[
-			"\\begin{mcquestions}",
-				"\t$1",
-			"\\end{mcquestions}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcanswerslist":{
-		"prefix":"mcanswerslist",
-		"body":[
-			"\\begin{mcanswerslist}",
-				"\t$1",
-			"\\end{mcanswerslist}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcanswerslist[]":{
-		"prefix":"mcanswerslist",
-		"body":[
-			"\\begin{mcanswerslist}",
-				"\t[${1:option%keyvals}]",
-			"\\end{mcanswerslist}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mcanswers":{
-		"prefix":"mcanswers",
-		"body":[
-			"\\begin{mcanswers}",
-				"\t$1",
-			"\\end{mcanswers}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcanswers[]":{
-		"prefix":"mcanswers",
-		"body":[
-			"\\begin{mcanswers}",
-				"\t[${1:option%keyvals}]",
-			"\\end{mcanswers}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mcquestioninstruction":{
-		"prefix":"mcquestioninstruction",
-		"body":[
-			"\\begin{mcquestioninstruction}",
-				"\t$1",
-			"\\end{mcquestioninstruction}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcexplanation":{
-		"prefix":"mcexplanation",
-		"body":[
-			"\\begin{mcexplanation}",
-				"\t$1",
-			"\\end{mcexplanation}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcnotes":{
-		"prefix":"mcnotes",
-		"body":[
-			"\\begin{mcnotes}",
-				"\t$1",
-			"\\end{mcnotes}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mcquestions[]":{
-		"prefix":"mcquestions",
-		"body":[
-			"\\begin{mcquestions}",
-				"\t[${1:R file ext}]",
-			"\\end{mcquestions}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mcquestions[]":{
-		"prefix":"mcquestions",
-		"body":[
-			"\\begin{mcquestions}",
-				"\t[${1:R file ext}]",
-			"\\end{mcquestions}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "mctheversion": {
+    "prefix": "mctheversion",
+    "body": [
+      "\\mctheversion"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcexamoptions{}": {
+    "prefix": "mcexamoptions",
+    "body": [
+      "\\mcexamoptions{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "question": {
+    "prefix": "question",
+    "body": [
+      "\\question"
+    ],
+    "luasnip": {
+      "priority": 3000
+    },
+    "description": "?"
+  },
+  "question[]": {
+    "prefix": "question",
+    "body": [
+      "\\question[${1:option%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    },
+    "description": "?"
+  },
+  "answer": {
+    "prefix": "answer",
+    "body": [
+      "\\answer"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "answer[]": {
+    "prefix": "answer",
+    "body": [
+      "\\answer[${1:mark}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "answer{}{}": {
+    "prefix": "answer",
+    "body": [
+      "\\answer{${1:n}}{${2:answer}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "answer[]{}{}": {
+    "prefix": "answer",
+    "body": [
+      "\\answer[${3:mark}]{${1:n}}{${2:answer}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "answernum{}": {
+    "prefix": "answernum",
+    "body": [
+      "\\answernum{${1:n}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcifoutput{}{}": {
+    "prefix": "mcifoutput",
+    "body": [
+      "\\mcifoutput{${1:output type%keyvals}}{${2:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcifoutput[]{}{}": {
+    "prefix": "mcifoutput",
+    "body": [
+      "\\mcifoutput[${3:versions}]{${1:output type%keyvals}}{${2:text}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "mcsetupConcept{}": {
+    "prefix": "mcsetupConcept",
+    "body": [
+      "\\mcsetupConcept{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcsetupExam{}": {
+    "prefix": "mcsetupExam",
+    "body": [
+      "\\mcsetupExam{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcsetupKey{}": {
+    "prefix": "mcsetupKey",
+    "body": [
+      "\\mcsetupKey{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcsetupAnswers{}": {
+    "prefix": "mcsetupAnswers",
+    "body": [
+      "\\mcsetupAnswers{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcsetupAnalysis{}": {
+    "prefix": "mcsetupAnalysis",
+    "body": [
+      "\\mcsetupAnalysis{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcversionlabelfmt": {
+    "prefix": "mcversionlabelfmt",
+    "body": [
+      "\\mcversionlabelfmt"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcquestionlabelfmt": {
+    "prefix": "mcquestionlabelfmt",
+    "body": [
+      "\\mcquestionlabelfmt"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcanswerlabelfmt": {
+    "prefix": "mcanswerlabelfmt",
+    "body": [
+      "\\mcanswerlabelfmt"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcquestions": {
+    "prefix": "mcquestions",
+    "body": [
+      "\\begin{mcquestions}",
+      "\t$1",
+      "\\end{mcquestions}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcanswerslist": {
+    "prefix": "mcanswerslist",
+    "body": [
+      "\\begin{mcanswerslist}",
+      "\t$1",
+      "\\end{mcanswerslist}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcanswerslist[]": {
+    "prefix": "mcanswerslist",
+    "body": [
+      "\\begin{mcanswerslist}",
+      "\t[${1:option%keyvals}]",
+      "\\end{mcanswerslist}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "mcanswers": {
+    "prefix": "mcanswers",
+    "body": [
+      "\\begin{mcanswers}",
+      "\t$1",
+      "\\end{mcanswers}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcanswers[]": {
+    "prefix": "mcanswers",
+    "body": [
+      "\\begin{mcanswers}",
+      "\t[${1:option%keyvals}]",
+      "\\end{mcanswers}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "mcquestioninstruction": {
+    "prefix": "mcquestioninstruction",
+    "body": [
+      "\\begin{mcquestioninstruction}",
+      "\t$1",
+      "\\end{mcquestioninstruction}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcexplanation": {
+    "prefix": "mcexplanation",
+    "body": [
+      "\\begin{mcexplanation}",
+      "\t$1",
+      "\\end{mcexplanation}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcnotes": {
+    "prefix": "mcnotes",
+    "body": [
+      "\\begin{mcnotes}",
+      "\t$1",
+      "\\end{mcnotes}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "mcquestions[]": {
+    "prefix": "mcquestions",
+    "body": [
+      "\\begin{mcquestions}",
+      "\t[${1:R file ext}]",
+      "\\end{mcquestions}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  }
 }

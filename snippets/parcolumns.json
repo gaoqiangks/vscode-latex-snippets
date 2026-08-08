@@ -1,51 +1,51 @@
 {
-
-
-	"colchunk{}":{
-		"prefix":"colchunk",
-		"body":[
-			"\\colchunk{${1:chunk%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"colchunk[]{}":{
-		"prefix":"colchunk",
-		"body":[
-			"\\colchunk[${2:column}]{${1:chunk%text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"colplacechunks":{
-		"prefix":"colplacechunks",
-		"body":[
-			"\\colplacechunks"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"parcolumns{}":{
-		"prefix":"parcolumns",
-		"body":[
-			"\\begin{parcolumns}",
-				"\t{${1:number of cols}}",
-			"\\end{parcolumns}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"parcolumns[]{}":{
-		"prefix":"parcolumns",
-		"body":[
-			"\\begin{parcolumns}",
-				"\t[${2:options%keyvals}]{${1:number of cols}}",
-			"\\end{parcolumns}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "colchunk{}": {
+    "prefix": "colchunk",
+    "body": [
+      "\\colchunk{${1:chunk%text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "colchunk[]{}": {
+    "prefix": "colchunk",
+    "body": [
+      "\\colchunk[${2:column}]{${1:chunk%text}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "colplacechunks": {
+    "prefix": "colplacechunks",
+    "body": [
+      "\\colplacechunks"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "parcolumns{}": {
+    "prefix": "parcolumns",
+    "body": [
+      "\\begin{parcolumns}",
+      "\t{${1:number of cols}}",
+      "\\end{parcolumns}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "parcolumns[]{}": {
+    "prefix": "parcolumns",
+    "body": [
+      "\\begin{parcolumns}",
+      "\t[${2:options%keyvals}]{${1:number of cols}}",
+      "\\end{parcolumns}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  }
 }

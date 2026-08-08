@@ -1,702 +1,693 @@
 {
-
-
-	"code{}":{
-		"prefix":"code",
-		"body":[
-			"\\code{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"verbcode||":{
-		"prefix":"verbcode",
-		"body":[
-			"\\verbcode|${1:text}|"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"cs{}":{
-		"prefix":"cs",
-		"body":[
-			"\\cs{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"cs*{}":{
-		"prefix":"*cs",
-		"body":[
-			"\\cs*{${1:name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"csidx{}":{
-		"prefix":"csidx",
-		"body":[
-			"\\csidx{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"env{}":{
-		"prefix":"env",
-		"body":[
-			"\\env{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"env*{}":{
-		"prefix":"*env",
-		"body":[
-			"\\env*{${1:name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"envidx{}":{
-		"prefix":"envidx",
-		"body":[
-			"\\envidx{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beginend{}":{
-		"prefix":"beginend",
-		"body":[
-			"\\beginend{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beginenv":{
-		"prefix":"beginenv",
-		"body":[
-			"\\beginenv"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beginenv*":{
-		"prefix":"*beginenv",
-		"body":[
-			"\\beginenv*"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"endenv":{
-		"prefix":"endenv",
-		"body":[
-			"\\endenv"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"endenv*":{
-		"prefix":"*endenv",
-		"body":[
-			"\\endenv*"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"meta{}":{
-		"prefix":"meta",
-		"body":[
-			"\\meta{${1:meta}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"marg{}":{
-		"prefix":"marg",
-		"body":[
-			"\\marg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Marg{}":{
-		"prefix":"Marg",
-		"body":[
-			"\\Marg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"oarg{}":{
-		"prefix":"oarg",
-		"body":[
-			"\\oarg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Oarg{}":{
-		"prefix":"Oarg",
-		"body":[
-			"\\Oarg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"darg{}":{
-		"prefix":"darg",
-		"body":[
-			"\\darg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Darg{}":{
-		"prefix":"Darg",
-		"body":[
-			"\\Darg{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sarg":{
-		"prefix":"sarg",
-		"body":[
-			"\\sarg"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newarg{}{}{}":{
-		"prefix":"newarg",
-		"body":[
-			"\\newarg{${1:cmd}}{${2:left delim}}{${3:right delim}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newarg[]{}{}{}":{
-		"prefix":"newarg",
-		"body":[
-			"\\newarg[${4:formatting}]{${1:cmd}}{${2:left delim}}{${3:right delim}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"option{}":{
-		"prefix":"option",
-		"body":[
-			"\\option{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"option*{}":{
-		"prefix":"*option",
-		"body":[
-			"\\option*{${1:name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"optionidx{}":{
-		"prefix":"optionidx",
-		"body":[
-			"\\optionidx{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"module{}":{
-		"prefix":"module",
-		"body":[
-			"\\module{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"module*{}":{
-		"prefix":"*module",
-		"body":[
-			"\\module*{${1:name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"moduleidx{}":{
-		"prefix":"moduleidx",
-		"body":[
-			"\\moduleidx{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"key{}{}":{
-		"prefix":"key",
-		"body":[
-			"\\key{${1:name}}{${2:value}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"key*{}{}":{
-		"prefix":"*key",
-		"body":[
-			"\\key*{${1:name}}{${2:value}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"keyis{}{}":{
-		"prefix":"keyis",
-		"body":[
-			"\\keyis{${1:name}}{${2:value}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"keyis*{}{}":{
-		"prefix":"*keyis",
-		"body":[
-			"\\keyis*{${1:name}}{${2:value}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"choices{}":{
-		"prefix":"choices",
-		"body":[
-			"\\choices{${1:list of choices}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"choicekey{}{}":{
-		"prefix":"choicekey",
-		"body":[
-			"\\choicekey{${1:name}}{${2:list of choices}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"boolkey{}":{
-		"prefix":"boolkey",
-		"body":[
-			"\\boolkey{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"default{}":{
-		"prefix":"default",
-		"body":[
-			"\\default{${1:value}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"pkg{}":{
-		"prefix":"pkg",
-		"body":[
-			"\\pkg{${1:package}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"pkg*{}":{
-		"prefix":"*pkg",
-		"body":[
-			"\\pkg*{${1:package}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"pkgidx{}":{
-		"prefix":"pkgidx",
-		"body":[
-			"\\pkgidx{${1:package}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"cls{}":{
-		"prefix":"cls",
-		"body":[
-			"\\cls{${1:class}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"cls*{}":{
-		"prefix":"*cls",
-		"body":[
-			"\\cls*{${1:class}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"clsidx{}":{
-		"prefix":"clsidx",
-		"body":[
-			"\\clsidx{${1:class}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"bnd{}":{
-		"prefix":"bnd",
-		"body":[
-			"\\bnd{${1:bundle}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"bnd*{}":{
-		"prefix":"*bnd",
-		"body":[
-			"\\bnd*{${1:bundle}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"bnd{}":{
-		"prefix":"bnd",
-		"body":[
-			"\\bnd{${1:bundle}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inputexample{}":{
-		"prefix":"inputexample",
-		"body":[
-			"\\inputexample{${1:file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inputexample[]{}":{
-		"prefix":"inputexample",
-		"body":[
-			"\\inputexample[${2:options%keyvals}]{${1:file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inputsidebyside{}":{
-		"prefix":"inputsidebyside",
-		"body":[
-			"\\inputsidebyside{${1:file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inputsidebyside[]{}":{
-		"prefix":"inputsidebyside",
-		"body":[
-			"\\inputsidebyside[${2:options%keyvals}]{${1:file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"inputsourcecode{}":{
-		"prefix":"inputsourcecode",
-		"body":[
-			"\\inputsourcecode{${1:file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"inputsourcecode[]{}":{
-		"prefix":"inputsourcecode",
-		"body":[
-			"\\inputsourcecode[${2:options%keyvals}]{${1:file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"implementation{}":{
-		"prefix":"implementation",
-		"body":[
-			"\\implementation{${1:file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"implementation[]{}":{
-		"prefix":"implementation",
-		"body":[
-			"\\implementation[${2:options%keyvals}]{${1:file}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"newinputsourcefilecmd{}":{
-		"prefix":"newinputsourcefilecmd",
-		"body":[
-			"\\newinputsourcefilecmd{${1:cmd}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newinputsourcefilecmd[]{}":{
-		"prefix":"newinputsourcefilecmd",
-		"body":[
-			"\\newinputsourcefilecmd[${2:options%keyvals}]{${1:cmd}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"newsourcecodeenv{}":{
-		"prefix":"newsourcecodeenv",
-		"body":[
-			"\\newsourcecodeenv{${1:envname}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newsourcecodeenv[]{}":{
-		"prefix":"newsourcecodeenv",
-		"body":[
-			"\\newsourcecodeenv[${2:options%keyvals}]{${1:envname}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"codefont":{
-		"prefix":"codefont",
-		"body":[
-			"\\codefont"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sourceformat":{
-		"prefix":"sourceformat",
-		"body":[
-			"\\sourceformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"exampleformat":{
-		"prefix":"exampleformat",
-		"body":[
-			"\\exampleformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"versionnoteformat":{
-		"prefix":"versionnoteformat",
-		"body":[
-			"\\versionnoteformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"packageformat":{
-		"prefix":"packageformat",
-		"body":[
-			"\\packageformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"classformat":{
-		"prefix":"classformat",
-		"body":[
-			"\\classformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"argumentformat":{
-		"prefix":"argumentformat",
-		"body":[
-			"\\argumentformat"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"indexcs{}":{
-		"prefix":"indexcs",
-		"body":[
-			"\\indexcs{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"indexenv{}":{
-		"prefix":"indexenv",
-		"body":[
-			"\\indexenv{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"MakePercentComment":{
-		"prefix":"MakePercentComment",
-		"body":[
-			"\\MakePercentComment"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"example":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-				"\t$1",
-			"\\end{example}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"example[]":{
-		"prefix":"example",
-		"body":[
-			"\\begin{example}",
-				"\t[${1:options%keyvals}]",
-			"\\end{example}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"sidebyside":{
-		"prefix":"sidebyside",
-		"body":[
-			"\\begin{sidebyside}",
-				"\t$1",
-			"\\end{sidebyside}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sidebyside[]":{
-		"prefix":"sidebyside",
-		"body":[
-			"\\begin{sidebyside}",
-				"\t[${1:options%keyvals}]",
-			"\\end{sidebyside}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"sourcecode":{
-		"prefix":"sourcecode",
-		"body":[
-			"\\begin{sourcecode}",
-				"\t$1",
-			"\\end{sourcecode}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sourcecode[]":{
-		"prefix":"sourcecode",
-		"body":[
-			"\\begin{sourcecode}",
-				"\t[${1:options%keyvals}]",
-			"\\end{sourcecode}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"bash":{
-		"prefix":"bash",
-		"body":[
-			"\\begin{bash}",
-				"\t$1",
-			"\\end{bash}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"bash[]":{
-		"prefix":"bash",
-		"body":[
-			"\\begin{bash}",
-				"\t[${1:options%keyvals}]",
-			"\\end{bash}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "code{}": {
+    "prefix": "code",
+    "body": [
+      "\\code{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "verbcode||": {
+    "prefix": "verbcode",
+    "body": [
+      "\\verbcode|${1:text}|"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "cs{}": {
+    "prefix": "cs",
+    "body": [
+      "\\cs{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "cs*{}": {
+    "prefix": "*cs",
+    "body": [
+      "\\cs*{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "csidx{}": {
+    "prefix": "csidx",
+    "body": [
+      "\\csidx{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "env{}": {
+    "prefix": "env",
+    "body": [
+      "\\env{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "env*{}": {
+    "prefix": "*env",
+    "body": [
+      "\\env*{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "envidx{}": {
+    "prefix": "envidx",
+    "body": [
+      "\\envidx{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "beginend{}": {
+    "prefix": "beginend",
+    "body": [
+      "\\beginend{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "beginenv": {
+    "prefix": "beginenv",
+    "body": [
+      "\\beginenv"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "beginenv*": {
+    "prefix": "*beginenv",
+    "body": [
+      "\\beginenv*"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "endenv": {
+    "prefix": "endenv",
+    "body": [
+      "\\endenv"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "endenv*": {
+    "prefix": "*endenv",
+    "body": [
+      "\\endenv*"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "meta{}": {
+    "prefix": "meta",
+    "body": [
+      "\\meta{${1:meta}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "marg{}": {
+    "prefix": "marg",
+    "body": [
+      "\\marg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "Marg{}": {
+    "prefix": "Marg",
+    "body": [
+      "\\Marg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "oarg{}": {
+    "prefix": "oarg",
+    "body": [
+      "\\oarg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "Oarg{}": {
+    "prefix": "Oarg",
+    "body": [
+      "\\Oarg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "darg{}": {
+    "prefix": "darg",
+    "body": [
+      "\\darg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "Darg{}": {
+    "prefix": "Darg",
+    "body": [
+      "\\Darg{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sarg": {
+    "prefix": "sarg",
+    "body": [
+      "\\sarg"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "newarg{}{}{}": {
+    "prefix": "newarg",
+    "body": [
+      "\\newarg{${1:cmd}}{${2:left delim}}{${3:right delim}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "newarg[]{}{}{}": {
+    "prefix": "newarg",
+    "body": [
+      "\\newarg[${4:formatting}]{${1:cmd}}{${2:left delim}}{${3:right delim}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "option{}": {
+    "prefix": "option",
+    "body": [
+      "\\option{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "option*{}": {
+    "prefix": "*option",
+    "body": [
+      "\\option*{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "optionidx{}": {
+    "prefix": "optionidx",
+    "body": [
+      "\\optionidx{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "module{}": {
+    "prefix": "module",
+    "body": [
+      "\\module{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "module*{}": {
+    "prefix": "*module",
+    "body": [
+      "\\module*{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "moduleidx{}": {
+    "prefix": "moduleidx",
+    "body": [
+      "\\moduleidx{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "key{}{}": {
+    "prefix": "key",
+    "body": [
+      "\\key{${1:name}}{${2:value}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "key*{}{}": {
+    "prefix": "*key",
+    "body": [
+      "\\key*{${1:name}}{${2:value}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "keyis{}{}": {
+    "prefix": "keyis",
+    "body": [
+      "\\keyis{${1:name}}{${2:value}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "keyis*{}{}": {
+    "prefix": "*keyis",
+    "body": [
+      "\\keyis*{${1:name}}{${2:value}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "choices{}": {
+    "prefix": "choices",
+    "body": [
+      "\\choices{${1:list of choices}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "choicekey{}{}": {
+    "prefix": "choicekey",
+    "body": [
+      "\\choicekey{${1:name}}{${2:list of choices}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "boolkey{}": {
+    "prefix": "boolkey",
+    "body": [
+      "\\boolkey{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "default{}": {
+    "prefix": "default",
+    "body": [
+      "\\default{${1:value}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "pkg{}": {
+    "prefix": "pkg",
+    "body": [
+      "\\pkg{${1:package}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "pkg*{}": {
+    "prefix": "*pkg",
+    "body": [
+      "\\pkg*{${1:package}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "pkgidx{}": {
+    "prefix": "pkgidx",
+    "body": [
+      "\\pkgidx{${1:package}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "cls{}": {
+    "prefix": "cls",
+    "body": [
+      "\\cls{${1:class}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "cls*{}": {
+    "prefix": "*cls",
+    "body": [
+      "\\cls*{${1:class}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "clsidx{}": {
+    "prefix": "clsidx",
+    "body": [
+      "\\clsidx{${1:class}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "bnd{}": {
+    "prefix": "bnd",
+    "body": [
+      "\\bnd{${1:bundle}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "bnd*{}": {
+    "prefix": "*bnd",
+    "body": [
+      "\\bnd*{${1:bundle}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "inputexample{}": {
+    "prefix": "inputexample",
+    "body": [
+      "\\inputexample{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inputexample[]{}": {
+    "prefix": "inputexample",
+    "body": [
+      "\\inputexample[${2:options%keyvals}]{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inputsidebyside{}": {
+    "prefix": "inputsidebyside",
+    "body": [
+      "\\inputsidebyside{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inputsidebyside[]{}": {
+    "prefix": "inputsidebyside",
+    "body": [
+      "\\inputsidebyside[${2:options%keyvals}]{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "inputsourcecode{}": {
+    "prefix": "inputsourcecode",
+    "body": [
+      "\\inputsourcecode{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "inputsourcecode[]{}": {
+    "prefix": "inputsourcecode",
+    "body": [
+      "\\inputsourcecode[${2:options%keyvals}]{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "implementation{}": {
+    "prefix": "implementation",
+    "body": [
+      "\\implementation{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "implementation[]{}": {
+    "prefix": "implementation",
+    "body": [
+      "\\implementation[${2:options%keyvals}]{${1:file}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "newinputsourcefilecmd{}": {
+    "prefix": "newinputsourcefilecmd",
+    "body": [
+      "\\newinputsourcefilecmd{${1:cmd}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "newinputsourcefilecmd[]{}": {
+    "prefix": "newinputsourcefilecmd",
+    "body": [
+      "\\newinputsourcefilecmd[${2:options%keyvals}]{${1:cmd}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "newsourcecodeenv{}": {
+    "prefix": "newsourcecodeenv",
+    "body": [
+      "\\newsourcecodeenv{${1:envname}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "newsourcecodeenv[]{}": {
+    "prefix": "newsourcecodeenv",
+    "body": [
+      "\\newsourcecodeenv[${2:options%keyvals}]{${1:envname}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "codefont": {
+    "prefix": "codefont",
+    "body": [
+      "\\codefont"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sourceformat": {
+    "prefix": "sourceformat",
+    "body": [
+      "\\sourceformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "exampleformat": {
+    "prefix": "exampleformat",
+    "body": [
+      "\\exampleformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "versionnoteformat": {
+    "prefix": "versionnoteformat",
+    "body": [
+      "\\versionnoteformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "packageformat": {
+    "prefix": "packageformat",
+    "body": [
+      "\\packageformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "classformat": {
+    "prefix": "classformat",
+    "body": [
+      "\\classformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "argumentformat": {
+    "prefix": "argumentformat",
+    "body": [
+      "\\argumentformat"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "indexcs{}": {
+    "prefix": "indexcs",
+    "body": [
+      "\\indexcs{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "indexenv{}": {
+    "prefix": "indexenv",
+    "body": [
+      "\\indexenv{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "MakePercentComment": {
+    "prefix": "MakePercentComment",
+    "body": [
+      "\\MakePercentComment"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "example": {
+    "prefix": "example",
+    "body": [
+      "\\begin{example}",
+      "\t$1",
+      "\\end{example}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "example[]": {
+    "prefix": "example",
+    "body": [
+      "\\begin{example}",
+      "\t[${1:options%keyvals}]",
+      "\\end{example}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "sidebyside": {
+    "prefix": "sidebyside",
+    "body": [
+      "\\begin{sidebyside}",
+      "\t$1",
+      "\\end{sidebyside}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sidebyside[]": {
+    "prefix": "sidebyside",
+    "body": [
+      "\\begin{sidebyside}",
+      "\t[${1:options%keyvals}]",
+      "\\end{sidebyside}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "sourcecode": {
+    "prefix": "sourcecode",
+    "body": [
+      "\\begin{sourcecode}",
+      "\t$1",
+      "\\end{sourcecode}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sourcecode[]": {
+    "prefix": "sourcecode",
+    "body": [
+      "\\begin{sourcecode}",
+      "\t[${1:options%keyvals}]",
+      "\\end{sourcecode}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "bash": {
+    "prefix": "bash",
+    "body": [
+      "\\begin{bash}",
+      "\t$1",
+      "\\end{bash}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "bash[]": {
+    "prefix": "bash",
+    "body": [
+      "\\begin{bash}",
+      "\t[${1:options%keyvals}]",
+      "\\end{bash}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  }
 }

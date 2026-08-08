@@ -1,372 +1,372 @@
 {
-
-
-	"framelatex{}":{
-		"prefix":"framelatex",
-		"body":[
-			"\\framelatex{${1:contents%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"refcounter{}":{
-		"prefix":"refcounter",
-		"body":[
-			"\\refcounter{${1:counter}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"thesubsectionslide":{
-		"prefix":"thesubsectionslide",
-		"body":[
-			"\\thesubsectionslide"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertframetitle":{
-		"prefix":"insertframetitle",
-		"body":[
-			"\\insertframetitle"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertframesubtitle":{
-		"prefix":"insertframesubtitle",
-		"body":[
-			"\\insertframesubtitle"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"resetcounteronoverlays{}":{
-		"prefix":"resetcounteronoverlays",
-		"body":[
-			"\\resetcounteronoverlays{${1:counter}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"resetcountonoverlays{}":{
-		"prefix":"resetcountonoverlays",
-		"body":[
-			"\\resetcountonoverlays{${1:count register}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"framewidth":{
-		"prefix":"framewidth",
-		"body":[
-			"\\framewidth"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beamerclosesubstitutedenvironement{}":{
-		"prefix":"beamerclosesubstitutedenvironement",
-		"body":[
-			"\\beamerclosesubstitutedenvironement{${1:envname}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"includeonlyframes{}":{
-		"prefix":"includeonlyframes",
-		"body":[
-			"\\includeonlyframes{${1:frame label list}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"theframenumber":{
-		"prefix":"theframenumber",
-		"body":[
-			"\\theframenumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertframenumber":{
-		"prefix":"insertframenumber",
-		"body":[
-			"\\insertframenumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertslidenumber":{
-		"prefix":"insertslidenumber",
-		"body":[
-			"\\insertslidenumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertoverlaynumber":{
-		"prefix":"insertoverlaynumber",
-		"body":[
-			"\\insertoverlaynumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"pagebreak<overlay specifications>":{
-		"prefix":"pagebreak<overlay specifications>",
-		"body":[
-			"\\pagebreak<overlay specifications>"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"nopagebreak<overlay specifications>":{
-		"prefix":"nopagebreak<overlay specifications>",
-		"body":[
-			"\\nopagebreak<overlay specifications>"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"framebreak":{
-		"prefix":"framebreak",
-		"body":[
-			"\\framebreak"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"noframebreak":{
-		"prefix":"noframebreak",
-		"body":[
-			"\\noframebreak"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"againframe{}":{
-		"prefix":"againframe",
-		"body":[
-			"\\againframe{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"againframe<overlay specification>{}":{
-		"prefix":"againframe<overlay specification>",
-		"body":[
-			"\\againframe<overlay specification>{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"againframe<overlay specification>[]{}":{
-		"prefix":"againframe<overlay specification>",
-		"body":[
-			"\\againframe<overlay specification>[${2:options}]{${1:name}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"againframe[]{}":{
-		"prefix":"againframe",
-		"body":[
-			"\\againframe[${2:options}]{${1:name}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"againframe[][]{}":{
-		"prefix":"againframe",
-		"body":[
-			"\\againframe[${2:<default overlay specification>}][${3:options}]{${1:name}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"againframe<overlay specification>[][]{}":{
-		"prefix":"againframe<overlay specification>",
-		"body":[
-			"\\againframe<overlay specification>[${2:<default overlay specification>}][${3:options}]{${1:name}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t$1",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"frame<>":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t<${1:overlay specification}>",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"frame<>[]":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t<${2:overlay specification}>[${1:<default overlay specification>}]",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame<>[][]":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t<${3:overlay specification}>[${1:<default overlay specification>}][${2:options}]",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame<>[][]{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t<${4:overlay specification}>[${2:<default overlay specification>}][${3:options}]{${1:title}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame<>[][]{}{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t<${5:overlay specification}>[${3:<default overlay specification>}][${4:options}]{${1:title}}{${2:subtitle}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[]":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${1:<default overlay specification>}]",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[][]":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${1:<default overlay specification>}][${2:options}]",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[][]{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${2:<default overlay specification>}][${3:options}]{${1:title}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[][]{}{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${3:<default overlay specification>}][${4:options}]{${1:title}}{${2:subtitle}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[]":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${1:options}]",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[]{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${2:options}]{${1:title}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame[]{}{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t[${3:options}]{${1:title}}{${2:subtitle}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"frame{}":{
-		"prefix":"frame",
-		"body":[
-			"\\begin{frame}",
-				"\t{${1:title}}",
-			"\\end{frame}"
-		],
-		"luasnip": {"priority": 3000} 
-	}
+  "framelatex{}": {
+    "prefix": "framelatex",
+    "body": [
+      "\\framelatex{${1:contents%text}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "refcounter{}": {
+    "prefix": "refcounter",
+    "body": [
+      "\\refcounter{${1:counter}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "thesubsectionslide": {
+    "prefix": "thesubsectionslide",
+    "body": [
+      "\\thesubsectionslide"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertframetitle": {
+    "prefix": "insertframetitle",
+    "body": [
+      "\\insertframetitle"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertframesubtitle": {
+    "prefix": "insertframesubtitle",
+    "body": [
+      "\\insertframesubtitle"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "resetcounteronoverlays{}": {
+    "prefix": "resetcounteronoverlays",
+    "body": [
+      "\\resetcounteronoverlays{${1:counter}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "resetcountonoverlays{}": {
+    "prefix": "resetcountonoverlays",
+    "body": [
+      "\\resetcountonoverlays{${1:count register}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "framewidth": {
+    "prefix": "framewidth",
+    "body": [
+      "\\framewidth"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "beamerclosesubstitutedenvironement{}": {
+    "prefix": "beamerclosesubstitutedenvironement",
+    "body": [
+      "\\beamerclosesubstitutedenvironement{${1:envname}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "includeonlyframes{}": {
+    "prefix": "includeonlyframes",
+    "body": [
+      "\\includeonlyframes{${1:frame label list}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "theframenumber": {
+    "prefix": "theframenumber",
+    "body": [
+      "\\theframenumber"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertframenumber": {
+    "prefix": "insertframenumber",
+    "body": [
+      "\\insertframenumber"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertslidenumber": {
+    "prefix": "insertslidenumber",
+    "body": [
+      "\\insertslidenumber"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertoverlaynumber": {
+    "prefix": "insertoverlaynumber",
+    "body": [
+      "\\insertoverlaynumber"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "pagebreak<overlay specifications>": {
+    "prefix": "pagebreak<overlay specifications>",
+    "body": [
+      "\\pagebreak<overlay specifications>"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "nopagebreak<overlay specifications>": {
+    "prefix": "nopagebreak<overlay specifications>",
+    "body": [
+      "\\nopagebreak<overlay specifications>"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "framebreak": {
+    "prefix": "framebreak",
+    "body": [
+      "\\framebreak"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "noframebreak": {
+    "prefix": "noframebreak",
+    "body": [
+      "\\noframebreak"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "againframe{}": {
+    "prefix": "againframe",
+    "body": [
+      "\\againframe{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "againframe<overlay specification>{}": {
+    "prefix": "againframe<overlay specification>",
+    "body": [
+      "\\againframe<overlay specification>{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "againframe<overlay specification>[]{}": {
+    "prefix": "againframe<overlay specification>",
+    "body": [
+      "\\againframe<overlay specification>[${2:options}]{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "againframe[]{}": {
+    "prefix": "againframe",
+    "body": [
+      "\\againframe[${2:options}]{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "againframe[][]{}": {
+    "prefix": "againframe",
+    "body": [
+      "\\againframe[${2:<default overlay specification>}][${3:options}]{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "againframe<overlay specification>[][]{}": {
+    "prefix": "againframe<overlay specification>",
+    "body": [
+      "\\againframe<overlay specification>[${2:<default overlay specification>}][${3:options}]{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t$1",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "frame<>": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t<${1:overlay specification}>",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "frame<>[]": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t<${2:overlay specification}>[${1:<default overlay specification>}]",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame<>[][]": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t<${3:overlay specification}>[${1:<default overlay specification>}][${2:options}]",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame<>[][]{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t<${4:overlay specification}>[${2:<default overlay specification>}][${3:options}]{${1:title}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame<>[][]{}{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t<${5:overlay specification}>[${3:<default overlay specification>}][${4:options}]{${1:title}}{${2:subtitle}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[]": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${1:<default overlay specification>}]",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[][]": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${1:<default overlay specification>}][${2:options}]",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[][]{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${2:<default overlay specification>}][${3:options}]{${1:title}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[][]{}{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${3:<default overlay specification>}][${4:options}]{${1:title}}{${2:subtitle}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[] (2)": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${1:options}]",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[]{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${2:options}]{${1:title}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame[]{}{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t[${3:options}]{${1:title}}{${2:subtitle}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "frame{}": {
+    "prefix": "frame",
+    "body": [
+      "\\begin{frame}",
+      "\t{${1:title}}",
+      "\\end{frame}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  }
 }

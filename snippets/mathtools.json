@@ -1,1547 +1,1560 @@
 {
-
-
-	"mathtoolsset{}":{
-		"prefix":"mathtoolsset",
-		"body":[
-			"\\mathtoolsset{${1:options}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mathllap[]{}":{
-		"prefix":"mathllap",
-		"body":[
-			"\\mathllap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mathllap{}":{
-		"prefix":"mathllap",
-		"body":[
-			"\\mathllap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mathrlap[]{}":{
-		"prefix":"mathrlap",
-		"body":[
-			"\\mathrlap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mathrlap{}":{
-		"prefix":"mathrlap",
-		"body":[
-			"\\mathrlap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mathmbox{}":{
-		"prefix":"mathmbox",
-		"body":[
-			"\\mathmbox{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mathclap[]{}":{
-		"prefix":"mathclap",
-		"body":[
-			"\\mathclap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mathclap{}":{
-		"prefix":"mathclap",
-		"body":[
-			"\\mathclap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"clap{}":{
-		"prefix":"clap",
-		"body":[
-			"\\clap{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"mathmakebox[][]{}":{
-		"prefix":"mathmakebox",
-		"body":[
-			"\\mathmakebox[${2:width}][${3:pos}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mathmakebox[]{}":{
-		"prefix":"mathmakebox",
-		"body":[
-			"\\mathmakebox[${2:width}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"mathmakebox{}":{
-		"prefix":"mathmakebox",
-		"body":[
-			"\\mathmakebox{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"cramped[]{}":{
-		"prefix":"cramped",
-		"body":[
-			"\\cramped[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"cramped{}":{
-		"prefix":"cramped",
-		"body":[
-			"\\cramped{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"crampedllap[]{}":{
-		"prefix":"crampedllap",
-		"body":[
-			"\\crampedllap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"crampedllap{}":{
-		"prefix":"crampedllap",
-		"body":[
-			"\\crampedllap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"crampedrlap[]{}":{
-		"prefix":"crampedrlap",
-		"body":[
-			"\\crampedrlap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"crampedrlap{}":{
-		"prefix":"crampedrlap",
-		"body":[
-			"\\crampedrlap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"crampedclap[]{}":{
-		"prefix":"crampedclap",
-		"body":[
-			"\\crampedclap[${2:mathstyle}]{${1:math}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"crampedclap{}":{
-		"prefix":"crampedclap",
-		"body":[
-			"\\crampedclap{${1:math}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"crampedsubstack{}":{
-		"prefix":"crampedsubstack",
-		"body":[
-			"\\crampedsubstack{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"smashoperator[]{}":{
-		"prefix":"smashoperator",
-		"body":[
-			"\\smashoperator[${2:pos%keyvals}]{${1:operator with limits}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"smashoperator{}":{
-		"prefix":"smashoperator",
-		"body":[
-			"\\smashoperator{${1:operator with limits}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"adjustlimits{}_{}{}_{}":{
-		"prefix":"adjustlimits",
-		"body":[
-			"\\adjustlimits{${1:operator1}}_{${2:limit1}}{${3:operator2}}_{${4:limit2}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SwapAboveDisplaySkip":{
-		"prefix":"SwapAboveDisplaySkip",
-		"body":[
-			"\\SwapAboveDisplaySkip"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newtagform{}[]{}{}":{
-		"prefix":"newtagform",
-		"body":[
-			"\\newtagform{${1:name}}[${4:inner format}]{${2:left}}{${3:right}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"newtagform{}{}{}":{
-		"prefix":"newtagform",
-		"body":[
-			"\\newtagform{${1:name}}{${2:left}}{${3:right}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"renewtagform{}[]{}{}":{
-		"prefix":"renewtagform",
-		"body":[
-			"\\renewtagform{${1:name}}[${4:inner format}]{${2:left}}{${3:right}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"renewtagform{}{}{}":{
-		"prefix":"renewtagform",
-		"body":[
-			"\\renewtagform{${1:name}}{${2:left}}{${3:right}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"usetagform{}":{
-		"prefix":"usetagform",
-		"body":[
-			"\\usetagform{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"refeq{}":{
-		"prefix":"refeq",
-		"body":[
-			"\\refeq{${1:label}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"noeqref{}":{
-		"prefix":"noeqref",
-		"body":[
-			"\\noeqref{${1:labellist}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xleftrightarrow{}":{
-		"prefix":"xleftrightarrow",
-		"body":[
-			"\\xleftrightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xleftrightarrow[]{}":{
-		"prefix":"xleftrightarrow",
-		"body":[
-			"\\xleftrightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xLeftarrow{}":{
-		"prefix":"xLeftarrow",
-		"body":[
-			"\\xLeftarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xLeftarrow[]{}":{
-		"prefix":"xLeftarrow",
-		"body":[
-			"\\xLeftarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xhookleftarrow{}":{
-		"prefix":"xhookleftarrow",
-		"body":[
-			"\\xhookleftarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xhookleftarrow[]{}":{
-		"prefix":"xhookleftarrow",
-		"body":[
-			"\\xhookleftarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xmapsto{}":{
-		"prefix":"xmapsto",
-		"body":[
-			"\\xmapsto{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xmapsto[]{}":{
-		"prefix":"xmapsto",
-		"body":[
-			"\\xmapsto[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xRightarrow{}":{
-		"prefix":"xRightarrow",
-		"body":[
-			"\\xRightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xRightarrow[]{}":{
-		"prefix":"xRightarrow",
-		"body":[
-			"\\xRightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xLeftrightarrow{}":{
-		"prefix":"xLeftrightarrow",
-		"body":[
-			"\\xLeftrightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xLeftrightarrow[]{}":{
-		"prefix":"xLeftrightarrow",
-		"body":[
-			"\\xLeftrightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xhookrightarrow{}":{
-		"prefix":"xhookrightarrow",
-		"body":[
-			"\\xhookrightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xhookrightarrow[]{}":{
-		"prefix":"xhookrightarrow",
-		"body":[
-			"\\xhookrightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xrightharpoondown{}":{
-		"prefix":"xrightharpoondown",
-		"body":[
-			"\\xrightharpoondown{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xrightharpoondown[]{}":{
-		"prefix":"xrightharpoondown",
-		"body":[
-			"\\xrightharpoondown[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xleftharpoondown{}":{
-		"prefix":"xleftharpoondown",
-		"body":[
-			"\\xleftharpoondown{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xleftharpoondown[]{}":{
-		"prefix":"xleftharpoondown",
-		"body":[
-			"\\xleftharpoondown[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xrightleftharpoons{}":{
-		"prefix":"xrightleftharpoons",
-		"body":[
-			"\\xrightleftharpoons{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xrightleftharpoons[]{}":{
-		"prefix":"xrightleftharpoons",
-		"body":[
-			"\\xrightleftharpoons[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xrightharpoonup{}":{
-		"prefix":"xrightharpoonup",
-		"body":[
-			"\\xrightharpoonup{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xrightharpoonup[]{}":{
-		"prefix":"xrightharpoonup",
-		"body":[
-			"\\xrightharpoonup[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xleftharpoonup{}":{
-		"prefix":"xleftharpoonup",
-		"body":[
-			"\\xleftharpoonup{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xleftharpoonup[]{}":{
-		"prefix":"xleftharpoonup",
-		"body":[
-			"\\xleftharpoonup[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xleftrightharpoons{}":{
-		"prefix":"xleftrightharpoons",
-		"body":[
-			"\\xleftrightharpoons{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xleftrightharpoons[]{}":{
-		"prefix":"xleftrightharpoons",
-		"body":[
-			"\\xleftrightharpoons[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xlongrightarrow{}":{
-		"prefix":"xlongrightarrow",
-		"body":[
-			"\\xlongrightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xlongrightarrow[]{}":{
-		"prefix":"xlongrightarrow",
-		"body":[
-			"\\xlongrightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xLongrightarrow{}":{
-		"prefix":"xLongrightarrow",
-		"body":[
-			"\\xLongrightarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xLongrightarrow[]{}":{
-		"prefix":"xLongrightarrow",
-		"body":[
-			"\\xLongrightarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xlongleftarrow{}":{
-		"prefix":"xlongleftarrow",
-		"body":[
-			"\\xlongleftarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xlongleftarrow[]{}":{
-		"prefix":"xlongleftarrow",
-		"body":[
-			"\\xlongleftarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"xLongleftarrow{}":{
-		"prefix":"xLongleftarrow",
-		"body":[
-			"\\xLongleftarrow{${1:sup}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xLongleftarrow[]{}":{
-		"prefix":"xLongleftarrow",
-		"body":[
-			"\\xLongleftarrow[${2:sub}]{${1:sup}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"underbracket[][]{}":{
-		"prefix":"underbracket",
-		"body":[
-			"\\underbracket[${2:rule thickness}][${3:bracket height}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"underbracket[]{}":{
-		"prefix":"underbracket",
-		"body":[
-			"\\underbracket[${2:rule thickness}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"underbracket{}":{
-		"prefix":"underbracket",
-		"body":[
-			"\\underbracket{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"overbracket[][]{}":{
-		"prefix":"overbracket",
-		"body":[
-			"\\overbracket[${2:rule thickness}][${3:bracket height}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"overbracket[]{}":{
-		"prefix":"overbracket",
-		"body":[
-			"\\overbracket[${2:rule thickness}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"overbracket{}":{
-		"prefix":"overbracket",
-		"body":[
-			"\\overbracket{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LaTeXunderbrace{}":{
-		"prefix":"LaTeXunderbrace",
-		"body":[
-			"\\LaTeXunderbrace{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LaTeXoverbrace{}":{
-		"prefix":"LaTeXoverbrace",
-		"body":[
-			"\\LaTeXoverbrace{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"newgathered{}{}{}{}":{
-		"prefix":"newgathered",
-		"body":[
-			"\\newgathered{${1:envname}}{${2:pre line}}{${3:post line}}{${4:after}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"renewgathered{}{}{}{}":{
-		"prefix":"renewgathered",
-		"body":[
-			"\\renewgathered{${1:envname}}{${2:pre line}}{${3:post line}}{${4:after}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"MultlinedHook":{
-		"prefix":"MultlinedHook",
-		"body":[
-			"\\MultlinedHook"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shoveleft{}":{
-		"prefix":"shoveleft",
-		"body":[
-			"\\shoveleft{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shoveleft[]{}":{
-		"prefix":"shoveleft",
-		"body":[
-			"\\shoveleft[${2:dimen}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"shoveright{}":{
-		"prefix":"shoveright",
-		"body":[
-			"\\shoveright{${1:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shoveright[]{}":{
-		"prefix":"shoveright",
-		"body":[
-			"\\shoveright[${2:dimen}]{${1:arg}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"MoveEqLeft":{
-		"prefix":"MoveEqLeft",
-		"body":[
-			"\\MoveEqLeft"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"MoveEqLeft[]":{
-		"prefix":"MoveEqLeft",
-		"body":[
-			"\\MoveEqLeft[${1:number}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"Aboxed{}":{
-		"prefix":"Aboxed",
-		"body":[
-			"\\Aboxed{${1:left hand side & right hand side}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ArrowBetweenLines":{
-		"prefix":"ArrowBetweenLines",
-		"body":[
-			"\\ArrowBetweenLines"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ArrowBetweenLines[]":{
-		"prefix":"ArrowBetweenLines",
-		"body":[
-			"\\ArrowBetweenLines[${1:symbol}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"ArrowBetweenLines*":{
-		"prefix":"*ArrowBetweenLines",
-		"body":[
-			"\\ArrowBetweenLines*"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"ArrowBetweenLines*[]":{
-		"prefix":"*ArrowBetweenLines",
-		"body":[
-			"\\ArrowBetweenLines*[${1:symbol}]"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"vdotswithin{}":{
-		"prefix":"vdotswithin",
-		"body":[
-			"\\vdotswithin{${1:symbol}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shortvdotswithin{}":{
-		"prefix":"shortvdotswithin",
-		"body":[
-			"\\shortvdotswithin{${1:symbol}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shortvdotswithin*{}":{
-		"prefix":"*shortvdotswithin",
-		"body":[
-			"\\shortvdotswithin*{${1:symbol}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"MTFlushSpaceAbove":{
-		"prefix":"MTFlushSpaceAbove",
-		"body":[
-			"\\MTFlushSpaceAbove"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"MTFlushSpaceBelow":{
-		"prefix":"MTFlushSpaceBelow",
-		"body":[
-			"\\MTFlushSpaceBelow"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"origjot":{
-		"prefix":"origjot",
-		"body":[
-			"\\origjot"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"shortintertext{}":{
-		"prefix":"shortintertext",
-		"body":[
-			"\\shortintertext{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"intertext{}":{
-		"prefix":"intertext",
-		"body":[
-			"\\intertext{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclarePairedDelimiter{}{}{}":{
-		"prefix":"DeclarePairedDelimiter",
-		"body":[
-			"\\DeclarePairedDelimiter{${1:cmd}}{${2:left delim%formula}}{${3:right delim%formula}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclarePairedDelimiterX{}[]{}{}{}":{
-		"prefix":"DeclarePairedDelimiterX",
-		"body":[
-			"\\DeclarePairedDelimiterX{${1:cmd}}[${5:args}]{${2:left delim%formula}}{${3:right delim%formula}}{${4:body%formula}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"DeclarePairedDelimiterXPP{}[]{}{}{}{}{}":{
-		"prefix":"DeclarePairedDelimiterXPP",
-		"body":[
-			"\\DeclarePairedDelimiterXPP{${1:cmd}}[${7:args}]{${2:pre code%formula}}{${3:left delim%formula}}{${4:right delim%formula}}{${5:post code%formula}}{${6:body%formula}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"reDeclarePairedDelimiterInnerWrapper{}{}{}":{
-		"prefix":"reDeclarePairedDelimiterInnerWrapper",
-		"body":[
-			"\\reDeclarePairedDelimiterInnerWrapper{${1:cmd}}{${2:star option%keyvals}}{${3:code%definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"lparen":{
-		"prefix":"lparen",
-		"body":[
-			"\\lparen"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"rparen":{
-		"prefix":"rparen",
-		"body":[
-			"\\rparen"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"vcentcolon":{
-		"prefix":"vcentcolon",
-		"body":[
-			"\\vcentcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ordinarycolon":{
-		"prefix":"ordinarycolon",
-		"body":[
-			"\\ordinarycolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"coloneqq":{
-		"prefix":"coloneqq",
-		"body":[
-			"\\coloneqq"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"eqqcolon":{
-		"prefix":"eqqcolon",
-		"body":[
-			"\\eqqcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"colonapprox":{
-		"prefix":"colonapprox",
-		"body":[
-			"\\colonapprox"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"dblcolon":{
-		"prefix":"dblcolon",
-		"body":[
-			"\\dblcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Coloneqq":{
-		"prefix":"Coloneqq",
-		"body":[
-			"\\Coloneqq"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Eqqcolon":{
-		"prefix":"Eqqcolon",
-		"body":[
-			"\\Eqqcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Colonapprox":{
-		"prefix":"Colonapprox",
-		"body":[
-			"\\Colonapprox"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"coloneq":{
-		"prefix":"coloneq",
-		"body":[
-			"\\coloneq"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"eqcolon":{
-		"prefix":"eqcolon",
-		"body":[
-			"\\eqcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"colonsim":{
-		"prefix":"colonsim",
-		"body":[
-			"\\colonsim"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Coloneq":{
-		"prefix":"Coloneq",
-		"body":[
-			"\\Coloneq"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Eqcolon":{
-		"prefix":"Eqcolon",
-		"body":[
-			"\\Eqcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Colonsim":{
-		"prefix":"Colonsim",
-		"body":[
-			"\\Colonsim"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"approxcolon":{
-		"prefix":"approxcolon",
-		"body":[
-			"\\approxcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Approxcolon":{
-		"prefix":"Approxcolon",
-		"body":[
-			"\\Approxcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"simcolon":{
-		"prefix":"simcolon",
-		"body":[
-			"\\simcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Simcolon":{
-		"prefix":"Simcolon",
-		"body":[
-			"\\Simcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"colondash":{
-		"prefix":"colondash",
-		"body":[
-			"\\colondash"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Colondash":{
-		"prefix":"Colondash",
-		"body":[
-			"\\Colondash"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"dashcolon":{
-		"prefix":"dashcolon",
-		"body":[
-			"\\dashcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Dashcolon":{
-		"prefix":"Dashcolon",
-		"body":[
-			"\\Dashcolon"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"nuparrow":{
-		"prefix":"nuparrow",
-		"body":[
-			"\\nuparrow"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ndownarrow":{
-		"prefix":"ndownarrow",
-		"body":[
-			"\\ndownarrow"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"bigtimes":{
-		"prefix":"bigtimes",
-		"body":[
-			"\\bigtimes"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"prescript{}{}{}":{
-		"prefix":"prescript",
-		"body":[
-			"\\prescript{${1:sup}}{${2:sub}}{${3:arg}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"splitfrac{}{}":{
-		"prefix":"splitfrac",
-		"body":[
-			"\\splitfrac{${1:numer}}{${2:denom}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"splitdfrac{}{}":{
-		"prefix":"splitdfrac",
-		"body":[
-			"\\splitdfrac{${1:numer}}{${2:denom}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xmathstrut{}":{
-		"prefix":"xmathstrut",
-		"body":[
-			"\\xmathstrut{${1:increase}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"xmathstrut[]{}":{
-		"prefix":"xmathstrut",
-		"body":[
-			"\\xmathstrut[${2:depth increase}]{${1:increase}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"newcases{}{}{}{}{}":{
-		"prefix":"newcases",
-		"body":[
-			"\\newcases{${1:envname}}{${2:sep}}{${3:preamble}}{${4:left}}{${5:right}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"renewcases{}{}{}{}{}":{
-		"prefix":"renewcases",
-		"body":[
-			"\\renewcases{${1:envname}}{${2:sep}}{${3:preamble}}{${4:left}}{${5:right}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"crampedsubarray{}":{
-		"prefix":"crampedsubarray",
-		"body":[
-			"\\begin{crampedsubarray}",
-				"\t{${1:col}}",
-			"\\end{crampedsubarray}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"dcases":{
-		"prefix":"dcases",
-		"body":[
-			"\\begin{dcases}",
-				"\t$1",
-			"\\end{dcases}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"dcases*":{
-		"prefix":"*dcases",
-		"body":[
-			"\\begin{dcases*}",
-				"\t$1",
-			"\\end{dcases*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"rcases":{
-		"prefix":"rcases",
-		"body":[
-			"\\begin{rcases}",
-				"\t$1",
-			"\\end{rcases}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"rcases*":{
-		"prefix":"*rcases",
-		"body":[
-			"\\begin{rcases*}",
-				"\t$1",
-			"\\end{rcases*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"drcases":{
-		"prefix":"drcases",
-		"body":[
-			"\\begin{drcases}",
-				"\t$1",
-			"\\end{drcases}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"drcases*":{
-		"prefix":"*drcases",
-		"body":[
-			"\\begin{drcases*}",
-				"\t$1",
-			"\\end{drcases*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"cases*":{
-		"prefix":"*cases",
-		"body":[
-			"\\begin{cases*}",
-				"\t$1",
-			"\\end{cases*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"matrix*[]":{
-		"prefix":"*matrix",
-		"body":[
-			"\\begin{matrix*}",
-				"\t[${1:col}]",
-			"\\end{matrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"pmatrix*[]":{
-		"prefix":"*pmatrix",
-		"body":[
-			"\\begin{pmatrix*}",
-				"\t[${1:col}]",
-			"\\end{pmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"bmatrix*[]":{
-		"prefix":"*bmatrix",
-		"body":[
-			"\\begin{bmatrix*}",
-				"\t[${1:col}]",
-			"\\end{bmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"Bmatrix*[]":{
-		"prefix":"*Bmatrix",
-		"body":[
-			"\\begin{Bmatrix*}",
-				"\t[${1:col}]",
-			"\\end{Bmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"vmatrix*[]":{
-		"prefix":"*vmatrix",
-		"body":[
-			"\\begin{vmatrix*}",
-				"\t[${1:col}]",
-			"\\end{vmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"Vmatrix*[]":{
-		"prefix":"*Vmatrix",
-		"body":[
-			"\\begin{Vmatrix*}",
-				"\t[${1:col}]",
-			"\\end{Vmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"smallmatrix*[]":{
-		"prefix":"*smallmatrix",
-		"body":[
-			"\\begin{smallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{smallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"psmallmatrix":{
-		"prefix":"psmallmatrix",
-		"body":[
-			"\\begin{psmallmatrix}",
-				"\t$1",
-			"\\end{psmallmatrix}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"psmallmatrix*[]":{
-		"prefix":"*psmallmatrix",
-		"body":[
-			"\\begin{psmallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{psmallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"bsmallmatrix":{
-		"prefix":"bsmallmatrix",
-		"body":[
-			"\\begin{bsmallmatrix}",
-				"\t$1",
-			"\\end{bsmallmatrix}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"bsmallmatrix*[]":{
-		"prefix":"*bsmallmatrix",
-		"body":[
-			"\\begin{bsmallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{bsmallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"Bsmallmatrix":{
-		"prefix":"Bsmallmatrix",
-		"body":[
-			"\\begin{Bsmallmatrix}",
-				"\t$1",
-			"\\end{Bsmallmatrix}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Bsmallmatrix*[]":{
-		"prefix":"*Bsmallmatrix",
-		"body":[
-			"\\begin{Bsmallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{Bsmallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"vsmallmatrix":{
-		"prefix":"vsmallmatrix",
-		"body":[
-			"\\begin{vsmallmatrix}",
-				"\t$1",
-			"\\end{vsmallmatrix}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"vsmallmatrix*[]":{
-		"prefix":"*vsmallmatrix",
-		"body":[
-			"\\begin{vsmallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{vsmallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"Vsmallmatrix":{
-		"prefix":"Vsmallmatrix",
-		"body":[
-			"\\begin{Vsmallmatrix}",
-				"\t$1",
-			"\\end{Vsmallmatrix}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"Vsmallmatrix*[]":{
-		"prefix":"*Vsmallmatrix",
-		"body":[
-			"\\begin{Vsmallmatrix*}",
-				"\t[${1:col}]",
-			"\\end{Vsmallmatrix*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"spreadlines{}":{
-		"prefix":"spreadlines",
-		"body":[
-			"\\begin{spreadlines}",
-				"\t{${1:dimen}}",
-			"\\end{spreadlines}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"lgathered[]":{
-		"prefix":"lgathered",
-		"body":[
-			"\\begin{lgathered}",
-				"\t[${1:pos}]",
-			"\\end{lgathered}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"rgathered[]":{
-		"prefix":"rgathered",
-		"body":[
-			"\\begin{rgathered}",
-				"\t[${1:pos}]",
-			"\\end{rgathered}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"multlined":{
-		"prefix":"multlined",
-		"body":[
-			"\\begin{multlined}",
-				"\t$1",
-			"\\end{multlined}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"multlined[][]":{
-		"prefix":"multlined",
-		"body":[
-			"\\begin{multlined}",
-				"\t[${1:pos}][${2:width}]",
-			"\\end{multlined}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "mathtoolsset{}": {
+    "prefix": "mathtoolsset",
+    "body": [
+      "\\mathtoolsset{${1:options}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "mathllap[]{}": {
+    "prefix": "mathllap",
+    "body": [
+      "\\mathllap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "mathllap{}": {
+    "prefix": "mathllap",
+    "body": [
+      "\\mathllap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "mathrlap[]{}": {
+    "prefix": "mathrlap",
+    "body": [
+      "\\mathrlap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "mathrlap{}": {
+    "prefix": "mathrlap",
+    "body": [
+      "\\mathrlap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "mathmbox{}": {
+    "prefix": "mathmbox",
+    "body": [
+      "\\mathmbox{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "mathclap[]{}": {
+    "prefix": "mathclap",
+    "body": [
+      "\\mathclap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "mathclap{}": {
+    "prefix": "mathclap",
+    "body": [
+      "\\mathclap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "clap{}": {
+    "prefix": "clap",
+    "body": [
+      "\\clap{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "mathmakebox[][]{}": {
+    "prefix": "mathmakebox",
+    "body": [
+      "\\mathmakebox[${2:width}][${3:pos}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "mathmakebox[]{}": {
+    "prefix": "mathmakebox",
+    "body": [
+      "\\mathmakebox[${2:width}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "mathmakebox{}": {
+    "prefix": "mathmakebox",
+    "body": [
+      "\\mathmakebox{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "cramped[]{}": {
+    "prefix": "cramped",
+    "body": [
+      "\\cramped[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "cramped{}": {
+    "prefix": "cramped",
+    "body": [
+      "\\cramped{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "crampedllap[]{}": {
+    "prefix": "crampedllap",
+    "body": [
+      "\\crampedllap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "crampedllap{}": {
+    "prefix": "crampedllap",
+    "body": [
+      "\\crampedllap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "crampedrlap[]{}": {
+    "prefix": "crampedrlap",
+    "body": [
+      "\\crampedrlap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "crampedrlap{}": {
+    "prefix": "crampedrlap",
+    "body": [
+      "\\crampedrlap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "crampedclap[]{}": {
+    "prefix": "crampedclap",
+    "body": [
+      "\\crampedclap[${2:mathstyle}]{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "crampedclap{}": {
+    "prefix": "crampedclap",
+    "body": [
+      "\\crampedclap{${1:math}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "crampedsubstack{}": {
+    "prefix": "crampedsubstack",
+    "body": [
+      "\\crampedsubstack{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "smashoperator[]{}": {
+    "prefix": "smashoperator",
+    "body": [
+      "\\smashoperator[${2:pos%keyvals}]{${1:operator with limits}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "smashoperator{}": {
+    "prefix": "smashoperator",
+    "body": [
+      "\\smashoperator{${1:operator with limits}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "adjustlimits{}_{}{}_{}": {
+    "prefix": "adjustlimits",
+    "body": [
+      "\\adjustlimits{${1:operator1}}_{${2:limit1}}{${3:operator2}}_{${4:limit2}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "SwapAboveDisplaySkip": {
+    "prefix": "SwapAboveDisplaySkip",
+    "body": [
+      "\\SwapAboveDisplaySkip"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "newtagform{}[]{}{}": {
+    "prefix": "newtagform",
+    "body": [
+      "\\newtagform{${1:name}}[${4:inner format}]{${2:left}}{${3:right}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "newtagform{}{}{}": {
+    "prefix": "newtagform",
+    "body": [
+      "\\newtagform{${1:name}}{${2:left}}{${3:right}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "renewtagform{}[]{}{}": {
+    "prefix": "renewtagform",
+    "body": [
+      "\\renewtagform{${1:name}}[${4:inner format}]{${2:left}}{${3:right}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "renewtagform{}{}{}": {
+    "prefix": "renewtagform",
+    "body": [
+      "\\renewtagform{${1:name}}{${2:left}}{${3:right}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "usetagform{}": {
+    "prefix": "usetagform",
+    "body": [
+      "\\usetagform{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "refeq{}": {
+    "prefix": "refeq",
+    "body": [
+      "\\refeq{${1:label}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "noeqref{}": {
+    "prefix": "noeqref",
+    "body": [
+      "\\noeqref{${1:labellist}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xleftrightarrow{}": {
+    "prefix": "xleftrightarrow",
+    "body": [
+      "\\xleftrightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xleftrightarrow[]{}": {
+    "prefix": "xleftrightarrow",
+    "body": [
+      "\\xleftrightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xLeftarrow{}": {
+    "prefix": "xLeftarrow",
+    "body": [
+      "\\xLeftarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xLeftarrow[]{}": {
+    "prefix": "xLeftarrow",
+    "body": [
+      "\\xLeftarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xhookleftarrow{}": {
+    "prefix": "xhookleftarrow",
+    "body": [
+      "\\xhookleftarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xhookleftarrow[]{}": {
+    "prefix": "xhookleftarrow",
+    "body": [
+      "\\xhookleftarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xmapsto{}": {
+    "prefix": "xmapsto",
+    "body": [
+      "\\xmapsto{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xmapsto[]{}": {
+    "prefix": "xmapsto",
+    "body": [
+      "\\xmapsto[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xRightarrow{}": {
+    "prefix": "xRightarrow",
+    "body": [
+      "\\xRightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xRightarrow[]{}": {
+    "prefix": "xRightarrow",
+    "body": [
+      "\\xRightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xLeftrightarrow{}": {
+    "prefix": "xLeftrightarrow",
+    "body": [
+      "\\xLeftrightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xLeftrightarrow[]{}": {
+    "prefix": "xLeftrightarrow",
+    "body": [
+      "\\xLeftrightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xhookrightarrow{}": {
+    "prefix": "xhookrightarrow",
+    "body": [
+      "\\xhookrightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xhookrightarrow[]{}": {
+    "prefix": "xhookrightarrow",
+    "body": [
+      "\\xhookrightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xrightharpoondown{}": {
+    "prefix": "xrightharpoondown",
+    "body": [
+      "\\xrightharpoondown{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xrightharpoondown[]{}": {
+    "prefix": "xrightharpoondown",
+    "body": [
+      "\\xrightharpoondown[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xleftharpoondown{}": {
+    "prefix": "xleftharpoondown",
+    "body": [
+      "\\xleftharpoondown{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xleftharpoondown[]{}": {
+    "prefix": "xleftharpoondown",
+    "body": [
+      "\\xleftharpoondown[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xrightleftharpoons{}": {
+    "prefix": "xrightleftharpoons",
+    "body": [
+      "\\xrightleftharpoons{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xrightleftharpoons[]{}": {
+    "prefix": "xrightleftharpoons",
+    "body": [
+      "\\xrightleftharpoons[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xrightharpoonup{}": {
+    "prefix": "xrightharpoonup",
+    "body": [
+      "\\xrightharpoonup{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xrightharpoonup[]{}": {
+    "prefix": "xrightharpoonup",
+    "body": [
+      "\\xrightharpoonup[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xleftharpoonup{}": {
+    "prefix": "xleftharpoonup",
+    "body": [
+      "\\xleftharpoonup{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xleftharpoonup[]{}": {
+    "prefix": "xleftharpoonup",
+    "body": [
+      "\\xleftharpoonup[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xleftrightharpoons{}": {
+    "prefix": "xleftrightharpoons",
+    "body": [
+      "\\xleftrightharpoons{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xleftrightharpoons[]{}": {
+    "prefix": "xleftrightharpoons",
+    "body": [
+      "\\xleftrightharpoons[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xlongrightarrow{}": {
+    "prefix": "xlongrightarrow",
+    "body": [
+      "\\xlongrightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xlongrightarrow[]{}": {
+    "prefix": "xlongrightarrow",
+    "body": [
+      "\\xlongrightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xLongrightarrow{}": {
+    "prefix": "xLongrightarrow",
+    "body": [
+      "\\xLongrightarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xLongrightarrow[]{}": {
+    "prefix": "xLongrightarrow",
+    "body": [
+      "\\xLongrightarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xlongleftarrow{}": {
+    "prefix": "xlongleftarrow",
+    "body": [
+      "\\xlongleftarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xlongleftarrow[]{}": {
+    "prefix": "xlongleftarrow",
+    "body": [
+      "\\xlongleftarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "xLongleftarrow{}": {
+    "prefix": "xLongleftarrow",
+    "body": [
+      "\\xLongleftarrow{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xLongleftarrow[]{}": {
+    "prefix": "xLongleftarrow",
+    "body": [
+      "\\xLongleftarrow[${2:sub}]{${1:sup}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "underbracket[][]{}": {
+    "prefix": "underbracket",
+    "body": [
+      "\\underbracket[${2:rule thickness}][${3:bracket height}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    },
+    "description": "⎵"
+  },
+  "underbracket[]{}": {
+    "prefix": "underbracket",
+    "body": [
+      "\\underbracket[${2:rule thickness}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    },
+    "description": "⎵"
+  },
+  "underbracket{}": {
+    "prefix": "underbracket",
+    "body": [
+      "\\underbracket{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "⎵"
+  },
+  "overbracket[][]{}": {
+    "prefix": "overbracket",
+    "body": [
+      "\\overbracket[${2:rule thickness}][${3:bracket height}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    },
+    "description": "⎴"
+  },
+  "overbracket[]{}": {
+    "prefix": "overbracket",
+    "body": [
+      "\\overbracket[${2:rule thickness}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    },
+    "description": "⎴"
+  },
+  "overbracket{}": {
+    "prefix": "overbracket",
+    "body": [
+      "\\overbracket{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "⎴"
+  },
+  "LaTeXunderbrace{}": {
+    "prefix": "LaTeXunderbrace",
+    "body": [
+      "\\LaTeXunderbrace{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "LaTeXoverbrace{}": {
+    "prefix": "LaTeXoverbrace",
+    "body": [
+      "\\LaTeXoverbrace{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "newgathered{}{}{}{}": {
+    "prefix": "newgathered",
+    "body": [
+      "\\newgathered{${1:envname}}{${2:pre line}}{${3:post line}}{${4:after}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "renewgathered{}{}{}{}": {
+    "prefix": "renewgathered",
+    "body": [
+      "\\renewgathered{${1:envname}}{${2:pre line}}{${3:post line}}{${4:after}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "MultlinedHook": {
+    "prefix": "MultlinedHook",
+    "body": [
+      "\\MultlinedHook"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shoveleft{}": {
+    "prefix": "shoveleft",
+    "body": [
+      "\\shoveleft{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shoveleft[]{}": {
+    "prefix": "shoveleft",
+    "body": [
+      "\\shoveleft[${2:dimen}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "shoveright{}": {
+    "prefix": "shoveright",
+    "body": [
+      "\\shoveright{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shoveright[]{}": {
+    "prefix": "shoveright",
+    "body": [
+      "\\shoveright[${2:dimen}]{${1:arg}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "MoveEqLeft": {
+    "prefix": "MoveEqLeft",
+    "body": [
+      "\\MoveEqLeft"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "MoveEqLeft[]": {
+    "prefix": "MoveEqLeft",
+    "body": [
+      "\\MoveEqLeft[${1:number}]"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "Aboxed{}": {
+    "prefix": "Aboxed",
+    "body": [
+      "\\Aboxed{${1:left hand side & right hand side}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "ArrowBetweenLines": {
+    "prefix": "ArrowBetweenLines",
+    "body": [
+      "\\ArrowBetweenLines"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "ArrowBetweenLines[]": {
+    "prefix": "ArrowBetweenLines",
+    "body": [
+      "\\ArrowBetweenLines[${1:symbol}]"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "ArrowBetweenLines*": {
+    "prefix": "*ArrowBetweenLines",
+    "body": [
+      "\\ArrowBetweenLines*"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "ArrowBetweenLines*[]": {
+    "prefix": "*ArrowBetweenLines",
+    "body": [
+      "\\ArrowBetweenLines*[${1:symbol}]"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "vdotswithin{}": {
+    "prefix": "vdotswithin",
+    "body": [
+      "\\vdotswithin{${1:symbol}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shortvdotswithin{}": {
+    "prefix": "shortvdotswithin",
+    "body": [
+      "\\shortvdotswithin{${1:symbol}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shortvdotswithin*{}": {
+    "prefix": "*shortvdotswithin",
+    "body": [
+      "\\shortvdotswithin*{${1:symbol}}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "MTFlushSpaceAbove": {
+    "prefix": "MTFlushSpaceAbove",
+    "body": [
+      "\\MTFlushSpaceAbove"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "MTFlushSpaceBelow": {
+    "prefix": "MTFlushSpaceBelow",
+    "body": [
+      "\\MTFlushSpaceBelow"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "origjot": {
+    "prefix": "origjot",
+    "body": [
+      "\\origjot"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "shortintertext{}": {
+    "prefix": "shortintertext",
+    "body": [
+      "\\shortintertext{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "intertext{}": {
+    "prefix": "intertext",
+    "body": [
+      "\\intertext{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "DeclarePairedDelimiter{}{}{}": {
+    "prefix": "DeclarePairedDelimiter",
+    "body": [
+      "\\DeclarePairedDelimiter{${1:cmd}}{${2:left delim%formula}}{${3:right delim%formula}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "DeclarePairedDelimiterX{}[]{}{}{}": {
+    "prefix": "DeclarePairedDelimiterX",
+    "body": [
+      "\\DeclarePairedDelimiterX{${1:cmd}}[${5:args}]{${2:left delim%formula}}{${3:right delim%formula}}{${4:body%formula}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "DeclarePairedDelimiterXPP{}[]{}{}{}{}{}": {
+    "prefix": "DeclarePairedDelimiterXPP",
+    "body": [
+      "\\DeclarePairedDelimiterXPP{${1:cmd}}[${7:args}]{${2:pre code%formula}}{${3:left delim%formula}}{${4:right delim%formula}}{${5:post code%formula}}{${6:body%formula}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "reDeclarePairedDelimiterInnerWrapper{}{}{}": {
+    "prefix": "reDeclarePairedDelimiterInnerWrapper",
+    "body": [
+      "\\reDeclarePairedDelimiterInnerWrapper{${1:cmd}}{${2:star option%keyvals}}{${3:code%definition}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "lparen": {
+    "prefix": "lparen",
+    "body": [
+      "\\lparen"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "("
+  },
+  "rparen": {
+    "prefix": "rparen",
+    "body": [
+      "\\rparen"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": ")"
+  },
+  "vcentcolon": {
+    "prefix": "vcentcolon",
+    "body": [
+      "\\vcentcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "ordinarycolon": {
+    "prefix": "ordinarycolon",
+    "body": [
+      "\\ordinarycolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "coloneqq": {
+    "prefix": "coloneqq",
+    "body": [
+      "\\coloneqq"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "eqqcolon": {
+    "prefix": "eqqcolon",
+    "body": [
+      "\\eqqcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "colonapprox": {
+    "prefix": "colonapprox",
+    "body": [
+      "\\colonapprox"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "dblcolon": {
+    "prefix": "dblcolon",
+    "body": [
+      "\\dblcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Coloneqq": {
+    "prefix": "Coloneqq",
+    "body": [
+      "\\Coloneqq"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Eqqcolon": {
+    "prefix": "Eqqcolon",
+    "body": [
+      "\\Eqqcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Colonapprox": {
+    "prefix": "Colonapprox",
+    "body": [
+      "\\Colonapprox"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "coloneq": {
+    "prefix": "coloneq",
+    "body": [
+      "\\coloneq"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "≔ (\"mathabx -txfonts\" command)"
+  },
+  "eqcolon": {
+    "prefix": "eqcolon",
+    "body": [
+      "\\eqcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "≕ (\"mathabx -txfonts\" command)"
+  },
+  "colonsim": {
+    "prefix": "colonsim",
+    "body": [
+      "\\colonsim"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Coloneq": {
+    "prefix": "Coloneq",
+    "body": [
+      "\\Coloneq"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "⩴ (\"txfonts\" command)"
+  },
+  "Eqcolon": {
+    "prefix": "Eqcolon",
+    "body": [
+      "\\Eqcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Colonsim": {
+    "prefix": "Colonsim",
+    "body": [
+      "\\Colonsim"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "approxcolon": {
+    "prefix": "approxcolon",
+    "body": [
+      "\\approxcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Approxcolon": {
+    "prefix": "Approxcolon",
+    "body": [
+      "\\Approxcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "simcolon": {
+    "prefix": "simcolon",
+    "body": [
+      "\\simcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Simcolon": {
+    "prefix": "Simcolon",
+    "body": [
+      "\\Simcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "colondash": {
+    "prefix": "colondash",
+    "body": [
+      "\\colondash"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Colondash": {
+    "prefix": "Colondash",
+    "body": [
+      "\\Colondash"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "dashcolon": {
+    "prefix": "dashcolon",
+    "body": [
+      "\\dashcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "∹ (\"txfonts -mathabx\" command)"
+  },
+  "Dashcolon": {
+    "prefix": "Dashcolon",
+    "body": [
+      "\\Dashcolon"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "nuparrow": {
+    "prefix": "nuparrow",
+    "body": [
+      "\\nuparrow"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "ndownarrow": {
+    "prefix": "ndownarrow",
+    "body": [
+      "\\ndownarrow"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "bigtimes": {
+    "prefix": "bigtimes",
+    "body": [
+      "\\bigtimes"
+    ],
+    "luasnip": {
+      "priority": 6000
+    },
+    "description": "⨉ (\"txfonts\" command)"
+  },
+  "prescript{}{}{}": {
+    "prefix": "prescript",
+    "body": [
+      "\\prescript{${1:sup}}{${2:sub}}{${3:arg}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "splitfrac{}{}": {
+    "prefix": "splitfrac",
+    "body": [
+      "\\splitfrac{${1:numer}}{${2:denom}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "splitdfrac{}{}": {
+    "prefix": "splitdfrac",
+    "body": [
+      "\\splitdfrac{${1:numer}}{${2:denom}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xmathstrut{}": {
+    "prefix": "xmathstrut",
+    "body": [
+      "\\xmathstrut{${1:increase}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "xmathstrut[]{}": {
+    "prefix": "xmathstrut",
+    "body": [
+      "\\xmathstrut[${2:depth increase}]{${1:increase}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "newcases{}{}{}{}{}": {
+    "prefix": "newcases",
+    "body": [
+      "\\newcases{${1:envname}}{${2:sep}}{${3:preamble}}{${4:left}}{${5:right}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "renewcases{}{}{}{}{}": {
+    "prefix": "renewcases",
+    "body": [
+      "\\renewcases{${1:envname}}{${2:sep}}{${3:preamble}}{${4:left}}{${5:right}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "crampedsubarray{}": {
+    "prefix": "crampedsubarray",
+    "body": [
+      "\\begin{crampedsubarray}",
+      "\t{${1:col}}",
+      "\\end{crampedsubarray}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "dcases": {
+    "prefix": "dcases",
+    "body": [
+      "\\begin{dcases}",
+      "\t$1",
+      "\\end{dcases}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "dcases*": {
+    "prefix": "*dcases",
+    "body": [
+      "\\begin{dcases*}",
+      "\t$1",
+      "\\end{dcases*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "rcases": {
+    "prefix": "rcases",
+    "body": [
+      "\\begin{rcases}",
+      "\t$1",
+      "\\end{rcases}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "rcases*": {
+    "prefix": "*rcases",
+    "body": [
+      "\\begin{rcases*}",
+      "\t$1",
+      "\\end{rcases*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "drcases": {
+    "prefix": "drcases",
+    "body": [
+      "\\begin{drcases}",
+      "\t$1",
+      "\\end{drcases}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "drcases*": {
+    "prefix": "*drcases",
+    "body": [
+      "\\begin{drcases*}",
+      "\t$1",
+      "\\end{drcases*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "cases*": {
+    "prefix": "*cases",
+    "body": [
+      "\\begin{cases*}",
+      "\t$1",
+      "\\end{cases*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "matrix*[]": {
+    "prefix": "*matrix",
+    "body": [
+      "\\begin{matrix*}",
+      "\t[${1:col}]",
+      "\\end{matrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "pmatrix*[]": {
+    "prefix": "*pmatrix",
+    "body": [
+      "\\begin{pmatrix*}",
+      "\t[${1:col}]",
+      "\\end{pmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "bmatrix*[]": {
+    "prefix": "*bmatrix",
+    "body": [
+      "\\begin{bmatrix*}",
+      "\t[${1:col}]",
+      "\\end{bmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "Bmatrix*[]": {
+    "prefix": "*Bmatrix",
+    "body": [
+      "\\begin{Bmatrix*}",
+      "\t[${1:col}]",
+      "\\end{Bmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "vmatrix*[]": {
+    "prefix": "*vmatrix",
+    "body": [
+      "\\begin{vmatrix*}",
+      "\t[${1:col}]",
+      "\\end{vmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "Vmatrix*[]": {
+    "prefix": "*Vmatrix",
+    "body": [
+      "\\begin{Vmatrix*}",
+      "\t[${1:col}]",
+      "\\end{Vmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "smallmatrix*[]": {
+    "prefix": "*smallmatrix",
+    "body": [
+      "\\begin{smallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{smallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "psmallmatrix": {
+    "prefix": "psmallmatrix",
+    "body": [
+      "\\begin{psmallmatrix}",
+      "\t$1",
+      "\\end{psmallmatrix}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "psmallmatrix*[]": {
+    "prefix": "*psmallmatrix",
+    "body": [
+      "\\begin{psmallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{psmallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "bsmallmatrix": {
+    "prefix": "bsmallmatrix",
+    "body": [
+      "\\begin{bsmallmatrix}",
+      "\t$1",
+      "\\end{bsmallmatrix}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "bsmallmatrix*[]": {
+    "prefix": "*bsmallmatrix",
+    "body": [
+      "\\begin{bsmallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{bsmallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "Bsmallmatrix": {
+    "prefix": "Bsmallmatrix",
+    "body": [
+      "\\begin{Bsmallmatrix}",
+      "\t$1",
+      "\\end{Bsmallmatrix}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Bsmallmatrix*[]": {
+    "prefix": "*Bsmallmatrix",
+    "body": [
+      "\\begin{Bsmallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{Bsmallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "vsmallmatrix": {
+    "prefix": "vsmallmatrix",
+    "body": [
+      "\\begin{vsmallmatrix}",
+      "\t$1",
+      "\\end{vsmallmatrix}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "vsmallmatrix*[]": {
+    "prefix": "*vsmallmatrix",
+    "body": [
+      "\\begin{vsmallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{vsmallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "Vsmallmatrix": {
+    "prefix": "Vsmallmatrix",
+    "body": [
+      "\\begin{Vsmallmatrix}",
+      "\t$1",
+      "\\end{Vsmallmatrix}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "Vsmallmatrix*[]": {
+    "prefix": "*Vsmallmatrix",
+    "body": [
+      "\\begin{Vsmallmatrix*}",
+      "\t[${1:col}]",
+      "\\end{Vsmallmatrix*}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "spreadlines{}": {
+    "prefix": "spreadlines",
+    "body": [
+      "\\begin{spreadlines}",
+      "\t{${1:dimen}}",
+      "\\end{spreadlines}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "lgathered[]": {
+    "prefix": "lgathered",
+    "body": [
+      "\\begin{lgathered}",
+      "\t[${1:pos}]",
+      "\\end{lgathered}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "rgathered[]": {
+    "prefix": "rgathered",
+    "body": [
+      "\\begin{rgathered}",
+      "\t[${1:pos}]",
+      "\\end{rgathered}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "multlined": {
+    "prefix": "multlined",
+    "body": [
+      "\\begin{multlined}",
+      "\t$1",
+      "\\end{multlined}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "multlined[][]": {
+    "prefix": "multlined",
+    "body": [
+      "\\begin{multlined}",
+      "\t[${1:pos}][${2:width}]",
+      "\\end{multlined}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  }
 }

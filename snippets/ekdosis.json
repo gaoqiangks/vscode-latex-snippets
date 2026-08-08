@@ -1,1007 +1,998 @@
 {
-
-
-	"ekdsetup{}":{
-		"prefix":"ekdsetup",
-		"body":[
-			"\\ekdsetup{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareWitness{}{}{}":{
-		"prefix":"DeclareWitness",
-		"body":[
-			"\\DeclareWitness{${1:unique id}}{${2:rendition}}{${3:description%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareWitness{}{}{}[]":{
-		"prefix":"DeclareWitness",
-		"body":[
-			"\\DeclareWitness{${1:unique id}}{${2:rendition}}{${3:description%text}}[${4:options%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"DeclareHand{}{}{}":{
-		"prefix":"DeclareHand",
-		"body":[
-			"\\DeclareHand{${1:unique id}}{${2:base ms.}}{${3:rendition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareHand{}{}{}[]":{
-		"prefix":"DeclareHand",
-		"body":[
-			"\\DeclareHand{${1:unique id}}{${2:base ms.}}{${3:rendition}}[${4:note}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"DeclareSource{}{}":{
-		"prefix":"DeclareSource",
-		"body":[
-			"\\DeclareSource{${1:unique label}}{${2:rendition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareScholar{}{}":{
-		"prefix":"DeclareScholar",
-		"body":[
-			"\\DeclareScholar{${1:unique id}}{${2:rendition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareScholar{}{}[]":{
-		"prefix":"DeclareScholar",
-		"body":[
-			"\\DeclareScholar{${1:unique id}}{${2:rendition}}[${3:options%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"DeclareShorthand{}{}{}":{
-		"prefix":"DeclareShorthand",
-		"body":[
-			"\\DeclareShorthand{${1:unique id}}{${2:rendition}}{${3:list of ids}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"getsiglum{}":{
-		"prefix":"getsiglum",
-		"body":[
-			"\\getsiglum{${1:list of witnesses}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SigLine{}":{
-		"prefix":"SigLine",
-		"body":[
-			"\\SigLine{${1:unique id}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"app{}":{
-		"prefix":"app",
-		"body":[
-			"\\app{${1:apparatus entries%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"app[]{}":{
-		"prefix":"app",
-		"body":[
-			"\\app[${2:type=type}]{${1:apparatus entries}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"lem{}":{
-		"prefix":"lem",
-		"body":[
-			"\\lem{${1:lemma text%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"lem[]{}":{
-		"prefix":"lem",
-		"body":[
-			"\\lem[${2:options%keyvals}]{${1:lemma text%text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"rdg{}":{
-		"prefix":"rdg",
-		"body":[
-			"\\rdg{${1:variant reading}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"rdg[]{}":{
-		"prefix":"rdg",
-		"body":[
-			"\\rdg[${2:options%keyvals}]{${1:variant reading}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"note{}":{
-		"prefix":"note",
-		"body":[
-			"\\note{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"note[]{}":{
-		"prefix":"note",
-		"body":[
-			"\\note[${2:options%keyvals}]{${1:text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"note*{}":{
-		"prefix":"*note",
-		"body":[
-			"\\note*{${1:text}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"note*[]{}":{
-		"prefix":"*note",
-		"body":[
-			"\\note*[${2:options%keyvals}]{${1:text}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"rdgGrp{}":{
-		"prefix":"rdgGrp",
-		"body":[
-			"\\rdgGrp{${1:lemma text%text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"rdgGrpe[]{}":{
-		"prefix":"rdgGrpe",
-		"body":[
-			"\\rdgGrpe[${2:type=type}]{${1:lemma text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"SetCritSymbols{}":{
-		"prefix":"SetCritSymbols",
-		"body":[
-			"\\SetCritSymbols{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"supplied{}":{
-		"prefix":"supplied",
-		"body":[
-			"\\supplied{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"surplus{}":{
-		"prefix":"surplus",
-		"body":[
-			"\\surplus{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sic{}":{
-		"prefix":"sic",
-		"body":[
-			"\\sic{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"sic*{}":{
-		"prefix":"*sic",
-		"body":[
-			"\\sic*{${1:text}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"gap{}":{
-		"prefix":"gap",
-		"body":[
-			"\\gap{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetAlignment{}":{
-		"prefix":"SetAlignment",
-		"body":[
-			"\\SetAlignment{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetHooks{}":{
-		"prefix":"SetHooks",
-		"body":[
-			"\\SetHooks{${1:list of hooks%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetLTRapp":{
-		"prefix":"SetLTRapp",
-		"body":[
-			"\\SetLTRapp"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetRTLapp":{
-		"prefix":"SetRTLapp",
-		"body":[
-			"\\SetRTLapp"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetSeparator{}":{
-		"prefix":"SetSeparator",
-		"body":[
-			"\\SetSeparator{${1:separator}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetSubseparator{}":{
-		"prefix":"SetSubseparator",
-		"body":[
-			"\\SetSubseparator{${1:subseparator}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdsep":{
-		"prefix":"ekdsep",
-		"body":[
-			"\\ekdsep"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdsubsep":{
-		"prefix":"ekdsubsep",
-		"body":[
-			"\\ekdsubsep"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetBeginApparatus{}":{
-		"prefix":"SetBeginApparatus",
-		"body":[
-			"\\SetBeginApparatus{${1:characters or commands}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetEndApparatus{}":{
-		"prefix":"SetEndApparatus",
-		"body":[
-			"\\SetEndApparatus{${1:characters}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetUnitDelimiter{}":{
-		"prefix":"SetUnitDelimiter",
-		"body":[
-			"\\SetUnitDelimiter{${1:delimiter}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetDefaultRule{}":{
-		"prefix":"SetDefaultRule",
-		"body":[
-			"\\SetDefaultRule{${1:line definition}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetApparatusLanguage{}":{
-		"prefix":"SetApparatusLanguage",
-		"body":[
-			"\\SetApparatusLanguage{${1:language}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetApparatusNoteLanguage{}":{
-		"prefix":"SetApparatusNoteLanguage",
-		"body":[
-			"\\SetApparatusNoteLanguage{${1:language}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetApparatus{}":{
-		"prefix":"SetApparatus",
-		"body":[
-			"\\SetApparatus{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"iffootnoterule":{
-		"prefix":"iffootnoterule",
-		"body":[
-			"\\iffootnoterule"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"footnoteruletrue":{
-		"prefix":"footnoteruletrue",
-		"body":[
-			"\\footnoteruletrue"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"footnoterulefalse":{
-		"prefix":"footnoterulefalse",
-		"body":[
-			"\\footnoterulefalse"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetDefaultApparatus{}":{
-		"prefix":"SetDefaultApparatus",
-		"body":[
-			"\\SetDefaultApparatus{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareApparatus{}":{
-		"prefix":"DeclareApparatus",
-		"body":[
-			"\\DeclareApparatus{${1:name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"DeclareApparatus{}[]":{
-		"prefix":"DeclareApparatus",
-		"body":[
-			"\\DeclareApparatus{${1:name}}[${2:options%keyvals}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"SetLineation{}":{
-		"prefix":"SetLineation",
-		"body":[
-			"\\SetLineation{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"innerlinenumbers":{
-		"prefix":"innerlinenumbers",
-		"body":[
-			"\\innerlinenumbers"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"outerlinenumbers":{
-		"prefix":"outerlinenumbers",
-		"body":[
-			"\\outerlinenumbers"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"vmodulolinenumbers":{
-		"prefix":"vmodulolinenumbers",
-		"body":[
-			"\\vmodulolinenumbers"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"vmodulolinenumbers[]":{
-		"prefix":"vmodulolinenumbers",
-		"body":[
-			"\\vmodulolinenumbers[${1:n}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"resetvlinenumber":{
-		"prefix":"resetvlinenumber",
-		"body":[
-			"\\resetvlinenumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"resetvlinenumber[]":{
-		"prefix":"resetvlinenumber",
-		"body":[
-			"\\resetvlinenumber[${1:n}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"setRL":{
-		"prefix":"setRL",
-		"body":[
-			"\\setRL"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"setLR":{
-		"prefix":"setLR",
-		"body":[
-			"\\setLR"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"MkBodyDivs{}{}{}{}{}{}":{
-		"prefix":"MkBodyDivs",
-		"body":[
-			"\\MkBodyDivs{${1:div1}}{${2:div2}}{${3:div3}}{${4:div4}}{${5:div5}}{${6:div6}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekddiv{}":{
-		"prefix":"ekddiv",
-		"body":[
-			"\\ekddiv{${1:keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"FormatDiv{}{}{}":{
-		"prefix":"FormatDiv",
-		"body":[
-			"\\FormatDiv{${1:n}}{${2:code before}}{${3:code after}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdmark":{
-		"prefix":"ekdmark",
-		"body":[
-			"\\ekdmark"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"endmark":{
-		"prefix":"endmark",
-		"body":[
-			"\\endmark"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdprintmark{}{}":{
-		"prefix":"ekdprintmark",
-		"body":[
-			"\\ekdprintmark{${1:selector}}{${2:signpost}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdnohfmark":{
-		"prefix":"ekdnohfmark",
-		"body":[
-			"\\ekdnohfmark"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdresethfmarks":{
-		"prefix":"ekdresethfmarks",
-		"body":[
-			"\\ekdresethfmarks"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdpb{}":{
-		"prefix":"ekdpb",
-		"body":[
-			"\\ekdpb{${1:line no}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdpb[]{}":{
-		"prefix":"ekdpb",
-		"body":[
-			"\\ekdpb[${2:page no}]{${1:line no}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"ekdpb*{}":{
-		"prefix":"*ekdpb",
-		"body":[
-			"\\ekdpb*{${1:}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"addentries{}":{
-		"prefix":"addentries",
-		"body":[
-			"\\addentries{${1:n}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"addentries[]{}":{
-		"prefix":"addentries",
-		"body":[
-			"\\addentries[${2:layer}]{${1:n}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"SetTEIFileName{}":{
-		"prefix":"SetTEIFileName",
-		"body":[
-			"\\SetTEIFileName{${1:file name%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetTEIxmlExport{}":{
-		"prefix":"SetTEIxmlExport",
-		"body":[
-			"\\SetTEIxmlExport{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"TeXtoTEI{}{}":{
-		"prefix":"TeXtoTEI",
-		"body":[
-			"\\TeXtoTEI{${1:csname}}{${2:TEI element}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"TeXtoTEI{}{}[]":{
-		"prefix":"TeXtoTEI",
-		"body":[
-			"\\TeXtoTEI{${1:csname}}{${2:TEI element}}[${3:TEI attributes}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"EnvtoTEI{}{}":{
-		"prefix":"EnvtoTEI",
-		"body":[
-			"\\EnvtoTEI{${1:envname}}{${2:TEI element}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"EnvtoTEI{}{}[]":{
-		"prefix":"EnvtoTEI",
-		"body":[
-			"\\EnvtoTEI{${1:envname}}{${2:TEI element}}[${3:TEI attributes}]"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"EnvtoTEI*{}{}":{
-		"prefix":"*EnvtoTEI",
-		"body":[
-			"\\EnvtoTEI*{${1:envname}}{${2:TEI element}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"EnvtoTEI*{}{}[]":{
-		"prefix":"*EnvtoTEI",
-		"body":[
-			"\\EnvtoTEI*{${1:envname}}{${2:TEI element}}[${3:TEI attributes}]"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"TeXtoTEIPat{}{}":{
-		"prefix":"TeXtoTEIPat",
-		"body":[
-			"\\TeXtoTEIPat{${1:TeX pattern}}{${2:TEI pattern}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"teidirect{}{}":{
-		"prefix":"teidirect",
-		"body":[
-			"\\teidirect{${1:XML element}}{${2:code}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"teidirect[]{}{}":{
-		"prefix":"teidirect",
-		"body":[
-			"\\teidirect[${3:XML attributes}]{${1:XML element}}{${2:code}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"AddxmlBibResource{}":{
-		"prefix":"AddxmlBibResource",
-		"body":[
-			"\\AddxmlBibResource{${1:file name%file}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"EkdosisColStart":{
-		"prefix":"EkdosisColStart",
-		"body":[
-			"\\EkdosisColStart"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"EkdosisColStop":{
-		"prefix":"EkdosisColStop",
-		"body":[
-			"\\EkdosisColStop"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"EkdosisOff":{
-		"prefix":"EkdosisOff",
-		"body":[
-			"\\EkdosisOff"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"EkdosisOn":{
-		"prefix":"EkdosisOn",
-		"body":[
-			"\\EkdosisOn"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"LRnum{}":{
-		"prefix":"LRnum",
-		"body":[
-			"\\LRnum{${1:number}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"NLS":{
-		"prefix":"NLS",
-		"body":[
-			"\\NLS"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"SetTEIFileName{}":{
-		"prefix":"SetTEIFileName",
-		"body":[
-			"\\SetTEIFileName{${1:arg1}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"apparatus":{
-		"prefix":"apparatus",
-		"body":[
-			"\\apparatus"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"blfootnote{}":{
-		"prefix":"blfootnote",
-		"body":[
-			"\\blfootnote{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdatbegshihook":{
-		"prefix":"ekdatbegshihook",
-		"body":[
-			"\\ekdatbegshihook"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdnohfmark":{
-		"prefix":"ekdnohfmark",
-		"body":[
-			"\\ekdnohfmark"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdpage":{
-		"prefix":"ekdpage",
-		"body":[
-			"\\ekdpage"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdverseindentlength":{
-		"prefix":"ekdverseindentlength",
-		"body":[
-			"\\ekdverseindentlength"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdosis":{
-		"prefix":"ekdosis",
-		"body":[
-			"\\begin{ekdosis}",
-				"\t$1",
-			"\\end{ekdosis}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"alignment":{
-		"prefix":"alignment",
-		"body":[
-			"\\begin{alignment}",
-				"\t$1",
-			"\\end{alignment}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"alignment[]":{
-		"prefix":"alignment",
-		"body":[
-			"\\begin{alignment}",
-				"\t[${1:options%keyvals}]",
-			"\\end{alignment}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"edition":{
-		"prefix":"edition",
-		"body":[
-			"\\begin{edition}",
-				"\t$1",
-			"\\end{edition}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"edition*":{
-		"prefix":"*edition",
-		"body":[
-			"\\begin{edition*}",
-				"\t$1",
-			"\\end{edition*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"translation":{
-		"prefix":"translation",
-		"body":[
-			"\\begin{translation}",
-				"\t$1",
-			"\\end{translation}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"translation*":{
-		"prefix":"*translation",
-		"body":[
-			"\\begin{translation*}",
-				"\t$1",
-			"\\end{translation*}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"ekdverse":{
-		"prefix":"ekdverse",
-		"body":[
-			"\\begin{ekdverse}",
-				"\t$1",
-			"\\end{ekdverse}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdverse[]":{
-		"prefix":"ekdverse",
-		"body":[
-			"\\begin{ekdverse}",
-				"\t[${1:options%keyvals}]",
-			"\\end{ekdverse}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"ekdstanza":{
-		"prefix":"ekdstanza",
-		"body":[
-			"\\begin{ekdstanza}",
-				"\t$1",
-			"\\end{ekdstanza}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ekdstanza[]":{
-		"prefix":"ekdstanza",
-		"body":[
-			"\\begin{ekdstanza}",
-				"\t[${1:options%keyvals}]",
-			"\\end{ekdstanza}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"ekdpar":{
-		"prefix":"ekdpar",
-		"body":[
-			"\\begin{ekdpar}",
-				"\t$1",
-			"\\end{ekdpar}"
-		],
-		"luasnip": {"priority": 3000} 
-	}
+  "ekdsetup{}": {
+    "prefix": "ekdsetup",
+    "body": [
+      "\\ekdsetup{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareWitness{}{}{}": {
+    "prefix": "DeclareWitness",
+    "body": [
+      "\\DeclareWitness{${1:unique id}}{${2:rendition}}{${3:description%text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareWitness{}{}{}[]": {
+    "prefix": "DeclareWitness",
+    "body": [
+      "\\DeclareWitness{${1:unique id}}{${2:rendition}}{${3:description%text}}[${4:options%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "DeclareHand{}{}{}": {
+    "prefix": "DeclareHand",
+    "body": [
+      "\\DeclareHand{${1:unique id}}{${2:base ms.}}{${3:rendition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareHand{}{}{}[]": {
+    "prefix": "DeclareHand",
+    "body": [
+      "\\DeclareHand{${1:unique id}}{${2:base ms.}}{${3:rendition}}[${4:note}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "DeclareSource{}{}": {
+    "prefix": "DeclareSource",
+    "body": [
+      "\\DeclareSource{${1:unique label}}{${2:rendition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareScholar{}{}": {
+    "prefix": "DeclareScholar",
+    "body": [
+      "\\DeclareScholar{${1:unique id}}{${2:rendition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareScholar{}{}[]": {
+    "prefix": "DeclareScholar",
+    "body": [
+      "\\DeclareScholar{${1:unique id}}{${2:rendition}}[${3:options%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "DeclareShorthand{}{}{}": {
+    "prefix": "DeclareShorthand",
+    "body": [
+      "\\DeclareShorthand{${1:unique id}}{${2:rendition}}{${3:list of ids}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "getsiglum{}": {
+    "prefix": "getsiglum",
+    "body": [
+      "\\getsiglum{${1:list of witnesses}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SigLine{}": {
+    "prefix": "SigLine",
+    "body": [
+      "\\SigLine{${1:unique id}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "app{}": {
+    "prefix": "app",
+    "body": [
+      "\\app{${1:apparatus entries%text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "app[]{}": {
+    "prefix": "app",
+    "body": [
+      "\\app[${2:type=type}]{${1:apparatus entries}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "lem{}": {
+    "prefix": "lem",
+    "body": [
+      "\\lem{${1:lemma text%text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "lem[]{}": {
+    "prefix": "lem",
+    "body": [
+      "\\lem[${2:options%keyvals}]{${1:lemma text%text}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "rdg{}": {
+    "prefix": "rdg",
+    "body": [
+      "\\rdg{${1:variant reading}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "rdg[]{}": {
+    "prefix": "rdg",
+    "body": [
+      "\\rdg[${2:options%keyvals}]{${1:variant reading}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "note{}": {
+    "prefix": "note",
+    "body": [
+      "\\note{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "note[]{}": {
+    "prefix": "note",
+    "body": [
+      "\\note[${2:options%keyvals}]{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "note*{}": {
+    "prefix": "*note",
+    "body": [
+      "\\note*{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "note*[]{}": {
+    "prefix": "*note",
+    "body": [
+      "\\note*[${2:options%keyvals}]{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "rdgGrp{}": {
+    "prefix": "rdgGrp",
+    "body": [
+      "\\rdgGrp{${1:lemma text%text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "rdgGrpe[]{}": {
+    "prefix": "rdgGrpe",
+    "body": [
+      "\\rdgGrpe[${2:type=type}]{${1:lemma text}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "SetCritSymbols{}": {
+    "prefix": "SetCritSymbols",
+    "body": [
+      "\\SetCritSymbols{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "supplied{}": {
+    "prefix": "supplied",
+    "body": [
+      "\\supplied{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "surplus{}": {
+    "prefix": "surplus",
+    "body": [
+      "\\surplus{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sic{}": {
+    "prefix": "sic",
+    "body": [
+      "\\sic{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "sic*{}": {
+    "prefix": "*sic",
+    "body": [
+      "\\sic*{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "gap{}": {
+    "prefix": "gap",
+    "body": [
+      "\\gap{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetAlignment{}": {
+    "prefix": "SetAlignment",
+    "body": [
+      "\\SetAlignment{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetHooks{}": {
+    "prefix": "SetHooks",
+    "body": [
+      "\\SetHooks{${1:list of hooks%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetLTRapp": {
+    "prefix": "SetLTRapp",
+    "body": [
+      "\\SetLTRapp"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetRTLapp": {
+    "prefix": "SetRTLapp",
+    "body": [
+      "\\SetRTLapp"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetSeparator{}": {
+    "prefix": "SetSeparator",
+    "body": [
+      "\\SetSeparator{${1:separator}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetSubseparator{}": {
+    "prefix": "SetSubseparator",
+    "body": [
+      "\\SetSubseparator{${1:subseparator}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdsep": {
+    "prefix": "ekdsep",
+    "body": [
+      "\\ekdsep"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdsubsep": {
+    "prefix": "ekdsubsep",
+    "body": [
+      "\\ekdsubsep"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetBeginApparatus{}": {
+    "prefix": "SetBeginApparatus",
+    "body": [
+      "\\SetBeginApparatus{${1:characters or commands}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetEndApparatus{}": {
+    "prefix": "SetEndApparatus",
+    "body": [
+      "\\SetEndApparatus{${1:characters}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetUnitDelimiter{}": {
+    "prefix": "SetUnitDelimiter",
+    "body": [
+      "\\SetUnitDelimiter{${1:delimiter}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetDefaultRule{}": {
+    "prefix": "SetDefaultRule",
+    "body": [
+      "\\SetDefaultRule{${1:line definition}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetApparatusLanguage{}": {
+    "prefix": "SetApparatusLanguage",
+    "body": [
+      "\\SetApparatusLanguage{${1:language}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetApparatusNoteLanguage{}": {
+    "prefix": "SetApparatusNoteLanguage",
+    "body": [
+      "\\SetApparatusNoteLanguage{${1:language}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetApparatus{}": {
+    "prefix": "SetApparatus",
+    "body": [
+      "\\SetApparatus{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "iffootnoterule": {
+    "prefix": "iffootnoterule",
+    "body": [
+      "\\iffootnoterule"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "footnoteruletrue": {
+    "prefix": "footnoteruletrue",
+    "body": [
+      "\\footnoteruletrue"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "footnoterulefalse": {
+    "prefix": "footnoterulefalse",
+    "body": [
+      "\\footnoterulefalse"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetDefaultApparatus{}": {
+    "prefix": "SetDefaultApparatus",
+    "body": [
+      "\\SetDefaultApparatus{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareApparatus{}": {
+    "prefix": "DeclareApparatus",
+    "body": [
+      "\\DeclareApparatus{${1:name}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "DeclareApparatus{}[]": {
+    "prefix": "DeclareApparatus",
+    "body": [
+      "\\DeclareApparatus{${1:name}}[${2:options%keyvals}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "SetLineation{}": {
+    "prefix": "SetLineation",
+    "body": [
+      "\\SetLineation{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "innerlinenumbers": {
+    "prefix": "innerlinenumbers",
+    "body": [
+      "\\innerlinenumbers"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "outerlinenumbers": {
+    "prefix": "outerlinenumbers",
+    "body": [
+      "\\outerlinenumbers"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "vmodulolinenumbers": {
+    "prefix": "vmodulolinenumbers",
+    "body": [
+      "\\vmodulolinenumbers"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "vmodulolinenumbers[]": {
+    "prefix": "vmodulolinenumbers",
+    "body": [
+      "\\vmodulolinenumbers[${1:n}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "resetvlinenumber": {
+    "prefix": "resetvlinenumber",
+    "body": [
+      "\\resetvlinenumber"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "resetvlinenumber[]": {
+    "prefix": "resetvlinenumber",
+    "body": [
+      "\\resetvlinenumber[${1:n}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "setRL": {
+    "prefix": "setRL",
+    "body": [
+      "\\setRL"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "setLR": {
+    "prefix": "setLR",
+    "body": [
+      "\\setLR"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "MkBodyDivs{}{}{}{}{}{}": {
+    "prefix": "MkBodyDivs",
+    "body": [
+      "\\MkBodyDivs{${1:div1}}{${2:div2}}{${3:div3}}{${4:div4}}{${5:div5}}{${6:div6}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekddiv{}": {
+    "prefix": "ekddiv",
+    "body": [
+      "\\ekddiv{${1:keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "FormatDiv{}{}{}": {
+    "prefix": "FormatDiv",
+    "body": [
+      "\\FormatDiv{${1:n}}{${2:code before}}{${3:code after}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdmark": {
+    "prefix": "ekdmark",
+    "body": [
+      "\\ekdmark"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "endmark": {
+    "prefix": "endmark",
+    "body": [
+      "\\endmark"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdprintmark{}{}": {
+    "prefix": "ekdprintmark",
+    "body": [
+      "\\ekdprintmark{${1:selector}}{${2:signpost}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdnohfmark": {
+    "prefix": "ekdnohfmark",
+    "body": [
+      "\\ekdnohfmark"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdresethfmarks": {
+    "prefix": "ekdresethfmarks",
+    "body": [
+      "\\ekdresethfmarks"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdpb{}": {
+    "prefix": "ekdpb",
+    "body": [
+      "\\ekdpb{${1:line no}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdpb[]{}": {
+    "prefix": "ekdpb",
+    "body": [
+      "\\ekdpb[${2:page no}]{${1:line no}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "ekdpb*{}": {
+    "prefix": "*ekdpb",
+    "body": [
+      "\\ekdpb*{${1:}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "addentries{}": {
+    "prefix": "addentries",
+    "body": [
+      "\\addentries{${1:n}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "addentries[]{}": {
+    "prefix": "addentries",
+    "body": [
+      "\\addentries[${2:layer}]{${1:n}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "SetTEIFileName{}": {
+    "prefix": "SetTEIFileName",
+    "body": [
+      "\\SetTEIFileName{${1:file name%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetTEIxmlExport{}": {
+    "prefix": "SetTEIxmlExport",
+    "body": [
+      "\\SetTEIxmlExport{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "TeXtoTEI{}{}": {
+    "prefix": "TeXtoTEI",
+    "body": [
+      "\\TeXtoTEI{${1:csname}}{${2:TEI element}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "TeXtoTEI{}{}[]": {
+    "prefix": "TeXtoTEI",
+    "body": [
+      "\\TeXtoTEI{${1:csname}}{${2:TEI element}}[${3:TEI attributes}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "EnvtoTEI{}{}": {
+    "prefix": "EnvtoTEI",
+    "body": [
+      "\\EnvtoTEI{${1:envname}}{${2:TEI element}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "EnvtoTEI{}{}[]": {
+    "prefix": "EnvtoTEI",
+    "body": [
+      "\\EnvtoTEI{${1:envname}}{${2:TEI element}}[${3:TEI attributes}]"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "EnvtoTEI*{}{}": {
+    "prefix": "*EnvtoTEI",
+    "body": [
+      "\\EnvtoTEI*{${1:envname}}{${2:TEI element}}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "EnvtoTEI*{}{}[]": {
+    "prefix": "*EnvtoTEI",
+    "body": [
+      "\\EnvtoTEI*{${1:envname}}{${2:TEI element}}[${3:TEI attributes}]"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "TeXtoTEIPat{}{}": {
+    "prefix": "TeXtoTEIPat",
+    "body": [
+      "\\TeXtoTEIPat{${1:TeX pattern}}{${2:TEI pattern}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "teidirect{}{}": {
+    "prefix": "teidirect",
+    "body": [
+      "\\teidirect{${1:XML element}}{${2:code}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "teidirect[]{}{}": {
+    "prefix": "teidirect",
+    "body": [
+      "\\teidirect[${3:XML attributes}]{${1:XML element}}{${2:code}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "AddxmlBibResource{}": {
+    "prefix": "AddxmlBibResource",
+    "body": [
+      "\\AddxmlBibResource{${1:file name%file}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "EkdosisColStart": {
+    "prefix": "EkdosisColStart",
+    "body": [
+      "\\EkdosisColStart"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "EkdosisColStop": {
+    "prefix": "EkdosisColStop",
+    "body": [
+      "\\EkdosisColStop"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "EkdosisOff": {
+    "prefix": "EkdosisOff",
+    "body": [
+      "\\EkdosisOff"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "EkdosisOn": {
+    "prefix": "EkdosisOn",
+    "body": [
+      "\\EkdosisOn"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "LRnum{}": {
+    "prefix": "LRnum",
+    "body": [
+      "\\LRnum{${1:number}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "NLS": {
+    "prefix": "NLS",
+    "body": [
+      "\\NLS"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "SetTEIFileName{} (2)": {
+    "prefix": "SetTEIFileName",
+    "body": [
+      "\\SetTEIFileName{${1:arg1}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "apparatus": {
+    "prefix": "apparatus",
+    "body": [
+      "\\apparatus"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "blfootnote{}": {
+    "prefix": "blfootnote",
+    "body": [
+      "\\blfootnote{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdatbegshihook": {
+    "prefix": "ekdatbegshihook",
+    "body": [
+      "\\ekdatbegshihook"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdpage": {
+    "prefix": "ekdpage",
+    "body": [
+      "\\ekdpage"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdverseindentlength": {
+    "prefix": "ekdverseindentlength",
+    "body": [
+      "\\ekdverseindentlength"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdosis": {
+    "prefix": "ekdosis",
+    "body": [
+      "\\begin{ekdosis}",
+      "\t$1",
+      "\\end{ekdosis}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "alignment": {
+    "prefix": "alignment",
+    "body": [
+      "\\begin{alignment}",
+      "\t$1",
+      "\\end{alignment}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "alignment[]": {
+    "prefix": "alignment",
+    "body": [
+      "\\begin{alignment}",
+      "\t[${1:options%keyvals}]",
+      "\\end{alignment}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "edition": {
+    "prefix": "edition",
+    "body": [
+      "\\begin{edition}",
+      "\t$1",
+      "\\end{edition}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "edition*": {
+    "prefix": "*edition",
+    "body": [
+      "\\begin{edition*}",
+      "\t$1",
+      "\\end{edition*}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "translation": {
+    "prefix": "translation",
+    "body": [
+      "\\begin{translation}",
+      "\t$1",
+      "\\end{translation}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "translation*": {
+    "prefix": "*translation",
+    "body": [
+      "\\begin{translation*}",
+      "\t$1",
+      "\\end{translation*}"
+    ],
+    "luasnip": {
+      "priority": 2000
+    }
+  },
+  "ekdverse": {
+    "prefix": "ekdverse",
+    "body": [
+      "\\begin{ekdverse}",
+      "\t$1",
+      "\\end{ekdverse}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdverse[]": {
+    "prefix": "ekdverse",
+    "body": [
+      "\\begin{ekdverse}",
+      "\t[${1:options%keyvals}]",
+      "\\end{ekdverse}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "ekdstanza": {
+    "prefix": "ekdstanza",
+    "body": [
+      "\\begin{ekdstanza}",
+      "\t$1",
+      "\\end{ekdstanza}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "ekdstanza[]": {
+    "prefix": "ekdstanza",
+    "body": [
+      "\\begin{ekdstanza}",
+      "\t[${1:options%keyvals}]",
+      "\\end{ekdstanza}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "ekdpar": {
+    "prefix": "ekdpar",
+    "body": [
+      "\\begin{ekdpar}",
+      "\t$1",
+      "\\end{ekdpar}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  }
 }

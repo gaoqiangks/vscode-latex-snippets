@@ -1,114 +1,114 @@
 {
-
-
-	"setbeamercolor{}{}":{
-		"prefix":"setbeamercolor",
-		"body":[
-			"\\setbeamercolor{${1:beamer-color name}}{${2:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"setbeamercolor*{}{}":{
-		"prefix":"*setbeamercolor",
-		"body":[
-			"\\setbeamercolor*{${1:beamer-color name}}{${2:options%keyvals}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"ifbeamercolorempty{}{}{}":{
-		"prefix":"ifbeamercolorempty",
-		"body":[
-			"\\ifbeamercolorempty{${1:beamer-color name}}{${2:if undefined}}{${3:if defined}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"ifbeamercolorempty[]{}{}{}":{
-		"prefix":"ifbeamercolorempty",
-		"body":[
-			"\\ifbeamercolorempty[${4:fg or bg%keyvals}]{${1:beamer-color name}}{${2:if undefined}}{${3:if defined}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"usebeamercolor{}":{
-		"prefix":"usebeamercolor",
-		"body":[
-			"\\usebeamercolor{${1:beamer-color name}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"usebeamercolor[]{}":{
-		"prefix":"usebeamercolor",
-		"body":[
-			"\\usebeamercolor[${2:fg or bg%keyvals}]{${1:beamer-color name}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"usebeamercolor*{}":{
-		"prefix":"*usebeamercolor",
-		"body":[
-			"\\usebeamercolor*{${1:beamer-color name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"usebeamercolor*[]{}":{
-		"prefix":"*usebeamercolor",
-		"body":[
-			"\\usebeamercolor*[${2:fg or bg%keyvals}]{${1:beamer-color name}}"
-		],
-		"luasnip": {"priority": 2000} 
-	},
-
-
-	"donotcoloroutermaths":{
-		"prefix":"donotcoloroutermaths",
-		"body":[
-			"\\donotcoloroutermaths"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"donotcolorouterdisplaymaths":{
-		"prefix":"donotcolorouterdisplaymaths",
-		"body":[
-			"\\donotcolorouterdisplaymaths"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beamercolorbox{}":{
-		"prefix":"beamercolorbox",
-		"body":[
-			"\\begin{beamercolorbox}",
-				"\t{${1:beamer color}}",
-			"\\end{beamercolorbox}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"beamercolorbox[]{}":{
-		"prefix":"beamercolorbox",
-		"body":[
-			"\\begin{beamercolorbox}",
-				"\t[${2:options%keyvals}]{${1:beamer color}}",
-			"\\end{beamercolorbox}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "setbeamercolor{}{}": {
+    "prefix": "setbeamercolor",
+    "body": [
+      "\\setbeamercolor{${1:beamer-color name}}{${2:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "setbeamercolor*{}{}": {
+    "prefix": "*setbeamercolor",
+    "body": [
+      "\\setbeamercolor*{${1:beamer-color name}}{${2:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "ifbeamercolorempty{}{}{}": {
+    "prefix": "ifbeamercolorempty",
+    "body": [
+      "\\ifbeamercolorempty{${1:beamer-color name}}{${2:if undefined}}{${3:if defined}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "ifbeamercolorempty[]{}{}{}": {
+    "prefix": "ifbeamercolorempty",
+    "body": [
+      "\\ifbeamercolorempty[${4:fg or bg%keyvals}]{${1:beamer-color name}}{${2:if undefined}}{${3:if defined}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "usebeamercolor{}": {
+    "prefix": "usebeamercolor",
+    "body": [
+      "\\usebeamercolor{${1:beamer-color name}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "usebeamercolor[]{}": {
+    "prefix": "usebeamercolor",
+    "body": [
+      "\\usebeamercolor[${2:fg or bg%keyvals}]{${1:beamer-color name}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "usebeamercolor*{}": {
+    "prefix": "*usebeamercolor",
+    "body": [
+      "\\usebeamercolor*{${1:beamer-color name}}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "usebeamercolor*[]{}": {
+    "prefix": "*usebeamercolor",
+    "body": [
+      "\\usebeamercolor*[${2:fg or bg%keyvals}]{${1:beamer-color name}}"
+    ],
+    "luasnip": {
+      "priority": 5000
+    }
+  },
+  "donotcoloroutermaths": {
+    "prefix": "donotcoloroutermaths",
+    "body": [
+      "\\donotcoloroutermaths"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "donotcolorouterdisplaymaths": {
+    "prefix": "donotcolorouterdisplaymaths",
+    "body": [
+      "\\donotcolorouterdisplaymaths"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "beamercolorbox{}": {
+    "prefix": "beamercolorbox",
+    "body": [
+      "\\begin{beamercolorbox}",
+      "\t{${1:beamer color}}",
+      "\\end{beamercolorbox}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "beamercolorbox[]{}": {
+    "prefix": "beamercolorbox",
+    "body": [
+      "\\begin{beamercolorbox}",
+      "\t[${2:options%keyvals}]{${1:beamer color}}",
+      "\\end{beamercolorbox}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  }
 }

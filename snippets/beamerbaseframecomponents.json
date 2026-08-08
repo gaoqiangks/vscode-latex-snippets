@@ -1,149 +1,149 @@
 {
-
-
-	"setbeamersize{}":{
-		"prefix":"setbeamersize",
-		"body":[
-			"\\setbeamersize{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertpagenumber":{
-		"prefix":"insertpagenumber",
-		"body":[
-			"\\insertpagenumber"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"column{}":{
-		"prefix":"column",
-		"body":[
-			"\\column{${1:column width%l}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"column[]{}":{
-		"prefix":"column",
-		"body":[
-			"\\column[${2:placement%keyvals}]{${1:column width%l}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"column<overlay specification>[]{}":{
-		"prefix":"column<overlay specification>",
-		"body":[
-			"\\column<overlay specification>[${2:placement%keyvals}]{${1:column width%l}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"insertfootnotetext":{
-		"prefix":"insertfootnotetext",
-		"body":[
-			"\\insertfootnotetext"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"insertfootnotemark":{
-		"prefix":"insertfootnotemark",
-		"body":[
-			"\\insertfootnotemark"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"footnote<overlay specification>{}":{
-		"prefix":"footnote<overlay specification>",
-		"body":[
-			"\\footnote<overlay specification>{${1:text}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"footnote<overlay specification>[]{}":{
-		"prefix":"footnote<overlay specification>",
-		"body":[
-			"\\footnote<overlay specification>[${2:options%keyvals}]{${1:text}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"columns":{
-		"prefix":"columns",
-		"body":[
-			"\\begin{columns}",
-				"\t$1",
-			"\\end{columns}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"columns[]":{
-		"prefix":"columns",
-		"body":[
-			"\\begin{columns}",
-				"\t[${1:options%keyvals}]",
-			"\\end{columns}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"columns<>[]":{
-		"prefix":"columns",
-		"body":[
-			"\\begin{columns}",
-				"\t<${2:overlay specification}>[${1:options%keyvals}]",
-			"\\end{columns}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"column{}":{
-		"prefix":"column",
-		"body":[
-			"\\begin{column}",
-				"\t{${1:column width%l}}",
-			"\\end{column}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"column[]{}":{
-		"prefix":"column",
-		"body":[
-			"\\begin{column}",
-				"\t[${2:placement%keyvals}]{${1:column width%l}}",
-			"\\end{column}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"column<>[]{}":{
-		"prefix":"column",
-		"body":[
-			"\\begin{column}",
-				"\t<${3:overlay specification}>[${2:placement%keyvals}]{${1:column width%l}}",
-			"\\end{column}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "setbeamersize{}": {
+    "prefix": "setbeamersize",
+    "body": [
+      "\\setbeamersize{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertpagenumber": {
+    "prefix": "insertpagenumber",
+    "body": [
+      "\\insertpagenumber"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "column{}": {
+    "prefix": "column",
+    "body": [
+      "\\column{${1:column width%l}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "column[]{}": {
+    "prefix": "column",
+    "body": [
+      "\\column[${2:placement%keyvals}]{${1:column width%l}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "column<overlay specification>[]{}": {
+    "prefix": "column<overlay specification>",
+    "body": [
+      "\\column<overlay specification>[${2:placement%keyvals}]{${1:column width%l}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "insertfootnotetext": {
+    "prefix": "insertfootnotetext",
+    "body": [
+      "\\insertfootnotetext"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "insertfootnotemark": {
+    "prefix": "insertfootnotemark",
+    "body": [
+      "\\insertfootnotemark"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "footnote<overlay specification>{}": {
+    "prefix": "footnote<overlay specification>",
+    "body": [
+      "\\footnote<overlay specification>{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "footnote<overlay specification>[]{}": {
+    "prefix": "footnote<overlay specification>",
+    "body": [
+      "\\footnote<overlay specification>[${2:options%keyvals}]{${1:text}}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "columns": {
+    "prefix": "columns",
+    "body": [
+      "\\begin{columns}",
+      "\t$1",
+      "\\end{columns}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "columns[]": {
+    "prefix": "columns",
+    "body": [
+      "\\begin{columns}",
+      "\t[${1:options%keyvals}]",
+      "\\end{columns}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "columns<>[]": {
+    "prefix": "columns",
+    "body": [
+      "\\begin{columns}",
+      "\t<${2:overlay specification}>[${1:options%keyvals}]",
+      "\\end{columns}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "column{} (2)": {
+    "prefix": "column",
+    "body": [
+      "\\begin{column}",
+      "\t{${1:column width%l}}",
+      "\\end{column}"
+    ],
+    "luasnip": {
+      "priority": 6000
+    }
+  },
+  "column[]{} (2)": {
+    "prefix": "column",
+    "body": [
+      "\\begin{column}",
+      "\t[${2:placement%keyvals}]{${1:column width%l}}",
+      "\\end{column}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  },
+  "column<>[]{}": {
+    "prefix": "column",
+    "body": [
+      "\\begin{column}",
+      "\t<${3:overlay specification}>[${2:placement%keyvals}]{${1:column width%l}}",
+      "\\end{column}"
+    ],
+    "luasnip": {
+      "priority": 4000
+    }
+  }
 }

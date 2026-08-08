@@ -1,69 +1,69 @@
 {
-
-
-	"invoiceoptions{}":{
-		"prefix":"invoiceoptions",
-		"body":[
-			"\\invoiceoptions{${1:options%keyvals}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"invoiceitem{}{}{}":{
-		"prefix":"invoiceitem",
-		"body":[
-			"\\invoiceitem{${1:amount}}{${2:item name%text}}{${3:unit price}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"invoiceitem[]{}{}{}":{
-		"prefix":"invoiceitem",
-		"body":[
-			"\\invoiceitem[${4:VAT}]{${1:amount}}{${2:item name%text}}{${3:unit price}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"invoicesingleitem{}{}":{
-		"prefix":"invoicesingleitem",
-		"body":[
-			"\\invoicesingleitem{${1:item name%text}}{${2:unit price}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"invoicesingleitem[]{}{}":{
-		"prefix":"invoicesingleitem",
-		"body":[
-			"\\invoicesingleitem[${3:VAT}]{${1:item name%text}}{${2:unit price}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"invoice":{
-		"prefix":"invoice",
-		"body":[
-			"\\begin{invoice}",
-				"\t$1",
-			"\\end{invoice}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"invoice[]":{
-		"prefix":"invoice",
-		"body":[
-			"\\begin{invoice}",
-				"\t[${1:options%keyvals}]",
-			"\\end{invoice}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "invoiceoptions{}": {
+    "prefix": "invoiceoptions",
+    "body": [
+      "\\invoiceoptions{${1:options%keyvals}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "invoiceitem{}{}{}": {
+    "prefix": "invoiceitem",
+    "body": [
+      "\\invoiceitem{${1:amount}}{${2:item name%text}}{${3:unit price}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "invoiceitem[]{}{}{}": {
+    "prefix": "invoiceitem",
+    "body": [
+      "\\invoiceitem[${4:VAT}]{${1:amount}}{${2:item name%text}}{${3:unit price}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "invoicesingleitem{}{}": {
+    "prefix": "invoicesingleitem",
+    "body": [
+      "\\invoicesingleitem{${1:item name%text}}{${2:unit price}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "invoicesingleitem[]{}{}": {
+    "prefix": "invoicesingleitem",
+    "body": [
+      "\\invoicesingleitem[${3:VAT}]{${1:item name%text}}{${2:unit price}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "invoice": {
+    "prefix": "invoice",
+    "body": [
+      "\\begin{invoice}",
+      "\t$1",
+      "\\end{invoice}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "invoice[]": {
+    "prefix": "invoice",
+    "body": [
+      "\\begin{invoice}",
+      "\t[${1:options%keyvals}]",
+      "\\end{invoice}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  }
 }

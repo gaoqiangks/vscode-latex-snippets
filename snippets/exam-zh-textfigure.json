@@ -1,42 +1,42 @@
 {
-
-
-	"textfigure{}{}":{
-		"prefix":"textfigure",
-		"body":[
-			"\\textfigure{${1:文本%text}}{${2:图片}}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"textfigure[]{}{}":{
-		"prefix":"textfigure",
-		"body":[
-			"\\textfigure[${3:参数列表%keyvals}]{${1:文本%text}}{${2:图片}}"
-		],
-		"luasnip": {"priority": 1000} 
-	},
-
-
-	"multifigures":{
-		"prefix":"multifigures",
-		"body":[
-			"\\begin{multifigures}",
-				"\t$1",
-			"\\end{multifigures}"
-		],
-		"luasnip": {"priority": 3000} 
-	},
-
-
-	"multifigures[]":{
-		"prefix":"multifigures",
-		"body":[
-			"\\begin{multifigures}",
-				"\t[${1:键值列表%keyvals}]",
-			"\\end{multifigures}"
-		],
-		"luasnip": {"priority": 1000} 
-	}
+  "textfigure{}{}": {
+    "prefix": "textfigure",
+    "body": [
+      "\\textfigure{${1:文本%text}}{${2:图片}}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "textfigure[]{}{}": {
+    "prefix": "textfigure",
+    "body": [
+      "\\textfigure[${3:参数列表%keyvals}]{${1:文本%text}}{${2:图片}}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  },
+  "multifigures": {
+    "prefix": "multifigures",
+    "body": [
+      "\\begin{multifigures}",
+      "\t$1",
+      "\\end{multifigures}"
+    ],
+    "luasnip": {
+      "priority": 3000
+    }
+  },
+  "multifigures[]": {
+    "prefix": "multifigures",
+    "body": [
+      "\\begin{multifigures}",
+      "\t[${1:键值列表%keyvals}]",
+      "\\end{multifigures}"
+    ],
+    "luasnip": {
+      "priority": 1000
+    }
+  }
 }
