@@ -3,9 +3,10 @@ local M = {}
 local uv = vim.uv or vim.loop
 local luasnip = require("luasnip")
 local parse_snippet = luasnip.parser.parse_snippet
+local snippet_proxy = require("luasnip.nodes.snippetProxy")
 
 M.packages = {}
-M.file_cache = {}
+M.base_snippets = {}
 M.command_cache = {}
 M.project_states = {}
 M.scan_generation = 0
@@ -37,7 +38,16 @@ local function get_command_queries()
 
 	command_queries = {}
 	for i, source in ipairs(query_sources) do
-		command_queries[i] = vim.treesitter.query.parse("latex", source)
+		local ok, query = pcall(vim.treesitter.query.parse, "latex", source)
+		if not ok then
+			command_queries = {}
+			vim.notify_once(
+				"vscode-latex-snippets: Tree-sitter LaTeX parser unavailable; dynamic command scanning is disabled",
+				vim.log.levels.WARN
+			)
+			break
+		end
+		command_queries[i] = query
 	end
 	return command_queries
 end
@@ -162,20 +172,110 @@ local function get_newcommands(path)
 	return commands, includes
 end
 
-local function file_exists_cached(path)
-	if M.file_cache[path] == nil then
-		local stat = uv.fs_stat(path)
-		M.file_cache[path] = stat ~= nil and stat.type == "file"
-	end
-	return M.file_cache[path]
-end
-
 local function get_snippets_dir()
 	local source = debug.getinfo(1, "S").source:gsub("^@", "")
 	return vim.fs.dirname(vim.fs.dirname(source)) .. "/snippets"
 end
 
 M.snippets_dir = get_snippets_dir()
+
+local snippet_filetypes = { "tex", "plaintex" }
+
+local function snippet_key(name, filetype)
+	return "vscode_latex_snippets_" .. name .. "_" .. filetype
+end
+
+local function read_snippet_data(path)
+	local stat = uv.fs_stat(path)
+	if not stat or stat.type ~= "file" then
+		return nil, "file does not exist"
+	end
+
+	local contents = read_file(path, stat.size)
+	if not contents then
+		return nil, "file could not be read"
+	end
+
+	local ok, data = pcall(vim.json.decode, contents)
+	if not ok or type(data) ~= "table" then
+		return nil, ok and "top-level value is not an object" or data
+	end
+
+	return data
+end
+
+local function parse_snippet_data(data)
+	local snippets = {}
+	for name, parts in pairs(data) do
+		if type(parts) == "table" and parts.prefix and parts.body then
+			local prefixes = type(parts.prefix) == "table" and parts.prefix or { parts.prefix }
+			local body = type(parts.body) == "table" and table.concat(parts.body, "\n") or parts.body
+			local config = parts.luasnip or {}
+			for _, prefix in ipairs(prefixes) do
+				if type(prefix) == "string" and type(body) == "string" then
+					local parsed_ok, snippet = pcall(snippet_proxy, {
+						trig = prefix,
+						name = name,
+						desc = parts.description or name,
+						wordTrig = config.wordTrig,
+						priority = config.priority,
+						snippetType = config.autotrigger and "autosnippet" or "snippet",
+					}, body)
+					if not parsed_ok then
+						return nil, ("snippet %s could not be parsed: %s"):format(name, snippet)
+					end
+					snippets[#snippets + 1] = snippet
+				end
+			end
+		end
+	end
+	return snippets
+end
+
+local function unload_snippet_file(name)
+	for _, filetype in ipairs(snippet_filetypes) do
+		luasnip.add_snippets(filetype, {}, {
+			type = "snippets",
+			key = snippet_key(name, filetype),
+		})
+	end
+end
+
+local function load_snippet_file(name)
+	local path = M.snippets_dir .. "/" .. name .. ".json"
+	local data, err = read_snippet_data(path)
+	if not data then
+		unload_snippet_file(name)
+		return false, err
+	end
+	-- Snippet objects cannot be shared by two filetypes because LuaSnip assigns
+	-- each object an id while adding it. Parse once per target filetype instead.
+	for _, filetype in ipairs(snippet_filetypes) do
+		local snippets, parse_err = parse_snippet_data(data)
+		if not snippets then
+			unload_snippet_file(name)
+			return false, parse_err
+		end
+		luasnip.add_snippets(filetype, snippets, {
+			type = "snippets",
+			key = snippet_key(name, filetype),
+		})
+	end
+	return true
+end
+
+local function load_base_snippets()
+	for _, name in ipairs({ "environments", "commands" }) do
+		if not M.base_snippets[name] then
+			local ok, err = load_snippet_file(name)
+			if ok then
+				M.base_snippets[name] = true
+			else
+				vim.notify(("Failed to load %s snippets: %s"):format(name, err), vim.log.levels.WARN)
+			end
+		end
+	end
+end
 
 local function matches_any(name, patterns)
 	for _, pattern in ipairs(patterns) do
@@ -188,23 +288,38 @@ end
 
 local function load_package_snippets(vimtex)
 	local packages = vim.tbl_keys(vimtex.packages or {})
-	packages[#packages + 1] = "environments"
-	packages[#packages + 1] = "commands"
 	if vimtex.documentclass and vimtex.documentclass ~= "" then
 		packages[#packages + 1] = "class-" .. vimtex.documentclass
 	end
 
+	local wanted = {}
 	for _, package in ipairs(packages) do
 		local enabled = not matches_any(package, M.pkgs_excluded)
 			and (#M.pkgs_included == 0 or matches_any(package, M.pkgs_included))
-		if enabled and not M.packages[package] then
-			M.packages[package] = true
-			local path = M.snippets_dir .. "/" .. package .. ".json"
-			if file_exists_cached(path) then
-				local ok, err = pcall(require("luasnip.loaders.from_vscode").load_standalone, { path = path })
-				if not ok then
-					vim.notify("Failed to load snippets from " .. path .. ": " .. err, vim.log.levels.WARN)
-				end
+		if enabled then
+			wanted[package] = true
+		end
+	end
+
+	local unloaded = false
+	for package in pairs(M.packages) do
+		if not wanted[package] then
+			unload_snippet_file(package)
+			M.packages[package] = nil
+			unloaded = true
+		end
+	end
+	if unloaded then
+		luasnip.clean_invalidated({ inv_limit = 0 })
+	end
+
+	for package in pairs(wanted) do
+		if not M.packages[package] then
+			local ok, err = load_snippet_file(package)
+			if ok then
+				M.packages[package] = true
+			elseif err ~= "file does not exist" then
+				vim.notify(("Failed to load package %s snippets: %s"):format(package, err), vim.log.levels.WARN)
 			end
 		end
 	end
@@ -355,6 +470,7 @@ end
 
 function M.reload_snippets(bufnr, force)
 	bufnr = bufnr or vim.api.nvim_get_current_buf()
+	load_base_snippets()
 	local project = get_project(bufnr)
 	if not project then
 		return
@@ -406,6 +522,7 @@ function M.setup(opts)
 	M.dynamic_commands = opts.dynamic_commands ~= false
 	M.debounce = opts.debounce or 100
 	M.scan_interval = opts.scan_interval or 1
+	load_base_snippets()
 
 	local group = vim.api.nvim_create_augroup("VscodeLatexSnippets", { clear = true })
 	vim.api.nvim_create_autocmd("User", {

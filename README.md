@@ -18,3 +18,15 @@ Project files are parsed one at a time to keep Neovim responsive on slow
 filesystems such as WSL-mounted NTFS. Unchanged files are cached by size and
 modification time. The `User VscodeLatexSnippetsReloaded` event is emitted when
 a project scan finishes.
+
+`commands.json` and `environments.json` are always loaded. Package filters only
+apply to package and document-class snippets detected by VimTeX. Package
+snippets are registered only for the `tex` and `plaintex` filetypes, and the
+active package set is replaced when switching between VimTeX projects.
+
+## Requirements
+
+- Neovim 0.10 or newer
+- LuaSnip
+- VimTeX
+- The Tree-sitter LaTeX parser when `dynamic_commands` is enabled
