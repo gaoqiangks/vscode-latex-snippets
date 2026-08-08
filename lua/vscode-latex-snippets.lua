@@ -2,7 +2,9 @@ local M = {}
 
 local uv = vim.uv or vim.loop
 local luasnip = require("luasnip")
-local parse_snippet = luasnip.parser.parse_snippet
+local insert_node = luasnip.insert_node
+local snippet = luasnip.snippet
+local text_node = luasnip.text_node
 local snippet_proxy = require("luasnip.nodes.snippetProxy")
 local snippet_source = luasnip.snippet_source
 
@@ -333,14 +335,17 @@ local function generate_latex_cmds(definitions)
 	for _, definition in ipairs(definitions) do
 		local trigger = definition.cmd:gsub("^\\", "")
 		if trigger ~= "" then
-			local body = "\\\\" .. trigger
+			local nodes = { text_node("\\" .. trigger) }
 			for i = 1, definition.argc or 0 do
-				body = body .. "{$" .. i .. "}"
+				nodes[#nodes + 1] = text_node("{")
+				nodes[#nodes + 1] = insert_node(i)
+				nodes[#nodes + 1] = text_node("}")
 			end
-			snippets[#snippets + 1] = parse_snippet({
+			nodes[#nodes + 1] = insert_node(0)
+			snippets[#snippets + 1] = snippet({
 				trig = trigger,
 				desc = definition.implementation,
-			}, body)
+			}, nodes)
 		end
 	end
 
